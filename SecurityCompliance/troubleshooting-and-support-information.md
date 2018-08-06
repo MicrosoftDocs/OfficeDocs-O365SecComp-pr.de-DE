@@ -1,0 +1,94 @@
+---
+title: Problembehandlung und Supportinformationen
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 11/17/2014
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
+description: In diesem Thema werden die Schritte zur Problembehandlung für Endbenutzer und Administratoren beschrieben, und Sie erhalten Informationen zum Kontaktieren des technischen Supports.
+ms.openlocfilehash: d6168be0580175b172616b3274f2a13f36de5d57
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22027632"
+---
+# <a name="troubleshooting-and-support-information"></a>Problembehandlung und Supportinformationen
+
+In diesem Thema werden die Schritte zur Problembehandlung für Endbenutzer und Administratoren beschrieben, und Sie erhalten Informationen zum Kontaktieren des technischen Supports.
+  
+## <a name="troubleshooting-for-users"></a>Problembehandlung für Benutzer
+
+Gelegentlich treten Probleme mit Microsoft Office Outlook auf, nachdem Sie das Add-In "Junk-E-Mail-Berichtsprogramm" hinzugefügt haben. Im Folgenden sind Probleme aufgeführt, die möglicherweise auftreten, sowie Tipps zum Behandeln dieser Probleme. 
+  
+- Das Programm reagiert nicht, wenn Sie auf **Junk-E-Mail melden** klicken
+    
+- Outlook reagiert nicht mehr, wenn Sie eine E-Mail auswählen
+    
+- Gemeldete Junk-E-Mails können nicht übermittelt werden, und es wird eine Unzustellbarkeitsnachricht angezeigt
+    
+### <a name="troubleshooting-tip"></a>Tipps zur Problembehandlung
+
+1. Schließen Sie Microsoft Office Outlook, und starten Sie die Anwendung neu.
+    
+2. Überprüfen Sie, ob Sie eine Testnachricht erstellen und senden können. Zu diesem Zweck können Sie eine Testnachricht an ein anderes E-Mail-Konto senden, für das Sie verantwortlich sind, und anschließend überprüfen, ob die E-Mail empfangen wurde.
+    
+Wenn das Problem weiterhin auftritt, wenden Sie sich an Ihren IT-Administrator.
+  
+> [!TIP]
+> Sie können Spamnachrichten auch direkt an Microsoft senden (verwenden Sie zu diesem Zweck die E-Mail-Adresse [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)). Falsch positive Ergebnisse können Sie an folgende E-Mail-Adresse senden: [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com).Weitere Informationen finden Sie unter [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+  
+## <a name="troubleshooting-for-administrators"></a>Problembehandlung für Administratoren
+
+Als Administrator können Sie auf Probleme mit Benutzern stoßen, die das Add-In "Junk-E-Mail-Berichtsprogramm" für Microsoft Office Outlook verwenden. Es folgen einige Tipps zur Lösung von Problemen, die möglicherweise auftreten. 
+  
+ **Problem:** Benutzer werden in einer Fehlermeldung wiederholt aufgefordert, ihren Systemadministrator zu kontaktieren. 
+  
+### <a name="troubleshooting-tip"></a>Tipps zur Problembehandlung
+
+1. Legen Sie den folgenden Registrierungsschlüsselwert auf "Verbose" fest:
+    
+  - **32-Bit-Version von Outlook auf einem 32-Bit-Betriebssystem:**
+    
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel
+    
+  - **32-Bit-Version von Outlook auf einem 64-Bit-Betriebssystem:**
+    
+    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Junk Email Reporting\Addins\LoggingLevel
+    
+  - **64-Bit-Version von Outlook (immer auf einem 64-Bit-Betriebssystem installiert):**
+    
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Junk Email Reporting\Addins\LoggingLevel
+    
+2. Starten Sie Microsoft Office Outlook neu, und bitten Sie die Benutzer, sich zu melden, wenn die Fehlermeldung erneut angezeigt wird.
+    
+3. Erfassen Sie die Protokollinformationen am folgenden Speicherort: 
+    
+    %LOCALAPPDATA%\Microsoft\Junk Email Reporting Add-in\SpamReporterAddinLog.txt
+    
+4. Kontaktieren Sie den technischen Support für Exchange Online Protection, und übergeben Sie den Mitarbeitern diese Protokollinformationen. 
+    
+ **Problem:** Benutzer haben festgelegt, dass sie keine Bestätigung erhalten möchten, wenn sie eine Nachricht als Junk-E-Mail melden, möchten nun jedoch eine solche Bestätigung erhalten. 
+  
+### <a name="troubleshooting-tip"></a>Tipps zur Problembehandlung
+
+1. Legen Sie den folgenden Registrierungsschlüsselwert auf "True" fest: HKEY_CURRENT_USER\Software\Microsoft\Junk E-mail Reporting\Preferences\ConfirmReportJunk
+    
+2. Starten Sie Microsoft Office Outlook neu.
+    
+## <a name="support-information"></a>Supportinformationen
+
+Wenn Sie Hilfe bei der Installation benötigen, Konfiguration oder Deinstallation des Add-Ins, wenden Sie sich an den neuen Dienst Anforderung Link auf der Seite Unterstützung im Office 365 Administrationscenter mit technischen Support. Zusätzliche Optionen, einschließlich Serviceanfrage über die Optionen zur Selbsthilfe und Telefon finden Sie unter [Hilfe und Support für EOP](eop/help-and-support-for-eop.md).
+  
+## <a name="for-more-information"></a>Weitere Informationen
+
+[Aktivieren des Berichtnachricht-add-Ins](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+  
+[Melden von Junk-E-Mails an Microsoft](report-junk-email-messages-to-microsoft.md)
+  
+
