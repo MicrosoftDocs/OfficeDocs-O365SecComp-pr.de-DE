@@ -1,0 +1,34 @@
+---
+title: Rückläufernachrichten und EOP
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
+description: Rückläufernachrichten sind die automatisierte Springeffekt Nachrichten, die von e-Mail-Servern in der Regel als Ergebnis einer eingehenden Spam gesendet werden. Die zum Backscatterer ist eine Liste der IP-Adressen, die rückläufernachrichten zu senden. Es ist eine Liste unerwünschte und wir nicht versuchen, unseren Servern aus der Backscatterer zum Entfernen.
+ms.openlocfilehash: 8f8a60715f9fb12ca53ffddc6d4fca6e9fab2ede
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22028172"
+---
+# <a name="backscatter-messages-and-eop"></a><span data-ttu-id="557c6-105">Rückläufernachrichten und EOP</span><span class="sxs-lookup"><span data-stu-id="557c6-105">Backscatter messages and EOP</span></span>
+
+<span data-ttu-id="557c6-p102">Rückläufernachrichten sind die automatischen Unzustellbarkeitsnachrichten, die von E-Mail-Servern, meist als Reaktion auf eingehende Spamnachrichten, gesendet werden. Da Exchange Online Protection (EOP) ein Spamfilterdienst ist, werden E-Mail-Nachrichten an nicht vorhandene Empfänger und andere verdächtige Ziele von dem Dienst zurückgewiesen. In diesem Fall generiert EOP eine Unzustellbarkeitsnachricht (Non-Delivery Report, NDR) und übermittelt sie zurück an den „Absender". Da Spammer häufig gefälschte oder ungültige Absenderadressen in ihren Nachrichten verwenden, verursacht die Absenderadresse, an die die Unzustellbarkeitsnachricht gesendet wird, möglicherweise eine Rückläufernachricht. Daraufhin können Postausgangsserver, die mit dem EOP-Netzwerk verbunden sind, auf der Backscatterer DNSBL (DNS Block List, DNS-basierte Sperrliste) gelistet werden. Die Backscatterer DNSBL ist eine Liste von IP-Adressen, von denen Rückläufernachrichten gesendet werden. Es ist keine Spammerliste, daher versuchen wir nicht, unsere Server aus der Backscatterer DNSBL zu löschen.</span><span class="sxs-lookup"><span data-stu-id="557c6-p102">Backscatter messages are the automated bounce messages that are sent by mail servers, typically as a result of incoming spam. Because Exchange Online Protection (EOP) is a spam filtering service, email messages sent to nonexistent recipients and to other suspicious destinations are rejected by our service. When this happens, EOP generates a non-delivery report (NDR) message and delivers it back to the "sender." Because spammers frequently use a forged or invalid "From" address in their messages, the sender address to which the NDR is sent may result in a backscatter message. When this happens, outgoing servers that are associated with the EOP network may be listed on the Backscatterer DNS Block List (DNSBL). The Backscatterer DNSBL is a list of IP addresses that send backscatter messages. It isn't a spammer list, and we don't try to remove our servers from the Backscatterer DNSBL.</span></span> 
+  
+> [!TIP]
+> <span data-ttu-id="557c6-p103">Laut den Anweisungen auf der Backscatterer-Website stellt die Verwendung des Zurückweisungsmodus für alle eingehenden E-Mails keine empfohlene Konfiguration oder Verwendung des Diensts dar. Er sollte stattdessen im sicheren Modus verwendet werden. Weitere Informationen zum Implementieren der richtigen Rückläuferkonfiguration finden Sie auf der [Website Backscatterer.org](http://www.backscatterer.org/?target=usage).</span><span class="sxs-lookup"><span data-stu-id="557c6-p103">According to the instructions on the Backscatterer website, the use of reject mode for all incoming mail isn't a recommended configuration or use of that service. It should be used in safe mode instead. For more information about implementing the correct backscatter configuration, visit the [Backscatterer.org website](http://www.backscatterer.org/?target=usage).</span></span> 
+  
+## <a name="for-more-information"></a><span data-ttu-id="557c6-116">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="557c6-116">For more information</span></span>
+
+[<span data-ttu-id="557c6-117">Der Backscatterer.org Liste von IP</span><span class="sxs-lookup"><span data-stu-id="557c6-117">The Backscatterer.org IP list</span></span>](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
+  
+<span data-ttu-id="557c6-118">Finden Sie im Eintrag "NDR-RÜCKLÄUFER" in den [erweiterten spamfilteroptionen Filteroptionen](advanced-spam-filtering-asf-options.md)</span><span class="sxs-lookup"><span data-stu-id="557c6-118">See the "NDR backscatter" entry in [Advanced spam filtering  options](advanced-spam-filtering-asf-options.md)</span></span>
+  
+
