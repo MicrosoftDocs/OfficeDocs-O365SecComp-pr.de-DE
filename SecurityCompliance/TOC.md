@@ -410,6 +410,5 @@
 ### [Senden von E-Mails an Office 365](sending-mail-to-office-365.md)
 ### [Dienste für Nicht-Kunden](services-for-non-customers.md)
 
-# 
-  [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
+# [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 für Unternehmen](https://support.office.com/office365admin)
