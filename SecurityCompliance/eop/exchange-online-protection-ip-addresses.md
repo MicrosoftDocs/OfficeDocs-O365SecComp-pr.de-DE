@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: Die folgenden Microsoft-Rechenzentrums-IP-Adresse verwendet Microsoft Exchange Online Protection (EOP) beim Senden von E-Mails, beim Empfangen von E-Mails sowie für die Portal- und Administrationsdienste von Exchange Online Protection. Damit Sie Nachrichten über EOP versenden und empfangen oder die Administrationsdienste nutzen können, müssen Sie in Ihrem Netzwerk Verbindungen von diesen IP-Adresse erlauben.
-ms.openlocfilehash: 1b5dad69fb300f36bc94c9d264492f9c9be8948f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026322"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23230007"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Exchange Online Protection-IP-Adressen
 
@@ -26,8 +26,6 @@ Die folgenden Microsoft-Rechenzentrums-IP-Adresse verwendet Microsoft Exchange O
 > Microsoft entwickelt einen REST-basierten Webdienst für die Einträge der IP-Adresse des FQDN auf dieser Seite. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B.Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können Sie herunterladen. Dieser Dienst wird irgendwann einmal die Einträge für das XML-Dokument, den RSS-Feed, die IP-Adresse und den FQDN auf dieser Seite ersetzen. Um diesem neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice). 
  
 ## <a name="eop-ip-address-ranges"></a>EOP-IP-Adressbereiche
-
-Es folgt eine vollständige Liste der EOP-IP-Adressbereiche ab **7/2/2018**. 
 
 ||||
 |:-----|:-----|:-----|
@@ -91,3 +89,4 @@ Exchange Online Protection am effizientesten E-Mails weiter und sorgt für die E
 | 216.32.180.0/23 |  | |
 | 2a01:111:f400:7 c 00:: / 54 |  | |
 ||||
+
