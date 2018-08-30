@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: In Microsoft Exchange Online Protection (EOP) können Sie die Exchange-Verwaltungskonsole verwenden, um einen Benutzer als Mitglied zu einer oder mehreren Rollengruppen hinzuzufügen, sodass er die Berechtigungen für bestimmte Verwaltungsaufgaben erhält. Darüber hinaus können Sie einen Benutzer über die Exchange-Verwaltungskonsole aus Rollengruppen entfernen.
-ms.openlocfilehash: 5d50c77c97f2c345aa3994e7fa3ecd2eea93a13a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026662"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002974"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Verwalten der Berechtigungen der Administratorrollen-Gruppenberechtigungen in EOP
   
@@ -39,9 +39,9 @@ In Microsoft Exchange Online Protection (EOP) können Sie die Exchange-Verwaltun
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>Zuweisen von Mitgliedern zu Administratorrollengruppen mithilfe der Exchange-Verwaltungskonsole
 
-1. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, klicken Sie auf die Rollengruppe, zu der Benutzer hinzugefügt werden sollen, und klicken Sie anschließend auf **Bearbeiten**![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.png).
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, klicken Sie auf die Rollengruppe, dem Sie den Benutzer oder Benutzer hinzufügen möchten, und klicken Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.gif).
     
-2. Klicken Sie unter **Mitglieder** auf Hinzufügen ![Hinzufügen (Symbol)](../media/ITPro-EAC-AddIcon.png). Das Fenster zur Auswahl von Mitgliedern wird angezeigt.
+2. Klicken Sie unter **Mitglieder** auf Hinzufügen ![Hinzufügen (Symbol)](../media/ITPro-EAC-AddIcon.gif). Das Fenster zur Auswahl von Mitgliedern wird angezeigt.
     
 3. Suchen Sie nach den Benutzern, die hinzugefügt werden sollen, oder wählen Sie die Benutzer aus der Liste aus.
     
@@ -54,9 +54,9 @@ In Microsoft Exchange Online Protection (EOP) können Sie die Exchange-Verwaltun
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Entfernen von Mitgliedern aus Administratorrollengruppen mithilfe der Exchange-Verwaltungskonsole
 
-1. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, klicken Sie auf die Rollengruppe, aus der Benutzer entfernt werden sollen, und klicken Sie anschließend auf **Bearbeiten**![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.png).
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, klicken Sie auf die Rollengruppe, die Sie aus der Benutzer entfernen möchten, und klicken Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.gif).
     
-2. Wählen Sie unterhalb von **Mitglieder** die Benutzer aus, die entfernt werden sollen, und klicken Sie auf Entfernen ![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.png).
+2. Wählen Sie unterhalb von **Mitglieder** die Benutzer aus, die entfernt werden sollen, und klicken Sie auf Entfernen ![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. Klicken Sie auf **Speichern**, um die Änderung an der Rollengruppe zu speichern und zur Seite **Administratorrollen** zurückzukehren. Überprüfen Sie im Detailfenster für die ausgewählte Rollengruppe, ob das Mitglied nicht länger unter Mitglieder aufgeführt wird, um sicherzustellen, dass der Benutzer erfolgreich aus der Administratorrollengruppe entfernt wurde. 
     

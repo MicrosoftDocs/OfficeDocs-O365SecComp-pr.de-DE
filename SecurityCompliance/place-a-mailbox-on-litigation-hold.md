@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Durch die Aktivierung des Beweissicherungsverfahrens für ein Postfach werden auch alle Postfachinhalte aufbewahrt, einschließlich gelöschter Elemente und Originalversionen geänderter Elemente. '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026442"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002844"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Aktivieren des Beweissicherungsverfahrens für ein Postfach
  
@@ -51,7 +53,7 @@ Durch die Aktivierung des Beweissicherungsverfahrens für ein Postfach werden au
 
 1. Navigieren Sie zu **Empfänger** \> **Postfächer**.
     
-2. Klicken Sie in der Liste der Benutzerpostfächer auf das Postfach, für das Sie die Beweissicherungsverfahren aktivieren möchten, und klicken Sie dann auf **Bearbeiten**![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.png).
+2. In der Liste der Benutzerpostfächer, klicken Sie auf das Postfach, das Sie für die Aufbewahrung für eventuelle Rechtsstreitigkeiten platzieren möchten, und klicken Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.gif).
     
 3. Klicken Sie auf der Eigenschaftenseite des Postfachs auf **Postfachfunktionen.**
     
@@ -124,7 +126,7 @@ Führen Sie eine der folgenden Aktionen aus, um sicherzustellen, dass Sie das Be
     
 1. Navigieren Sie zu **Empfänger** \> **Postfächer**.
     
-2. Klicken Sie in der Liste der Benutzerpostfächer auf das Postfach, dessen Einstellungen für das Beweissicherungsverfahren Sie überprüfen möchten, und klicken Sie dann auf **Bearbeiten**![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.png).
+2. In der Liste der Benutzerpostfächer, klicken Sie auf das Postfach, das Sie Einstellungen für die Aufbewahrung für eventuelle Rechtsstreitigkeiten überprüfen möchten, und klicken Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.gif).
     
 3. Klicken Sie auf der Eigenschaftenseite des Postfachs auf **Postfachfunktionen.**
     

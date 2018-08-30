@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.custom: TN2DMC
+search.appverid:
+- MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 0626a2c7bc33df3dc77d3aec8be6dbec5a96472b
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7dccab55ab86d9ecac14b7042b5a030c2415fece
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026162"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003214"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -26,7 +28,7 @@ Sie sollten DKIM zusätzlich zu SPF und DMARC verwenden, um zu verhindern, dass 
   
 Im Wesentlichen verwenden Sie einen privaten Schlüssel zum Verschlüsseln der Kopfzeile in ausgehenden E-Mails Ihrer Domäne. Sie veröffentlichen einen öffentlichen Schlüssel für die DNS-Einträge Ihrer Domäne, die empfangende Server verwenden können, um die Signatur zu entschlüsseln. Sie verwenden den öffentlichen Schlüssel, um sicherzustellen, dass die Nachrichten wirklich von Ihnen und nicht von einer Person kommen, die Ihre Domäne mit Spoofing beschädigen möchte.
   
-Office 365 richtet DKIM automatisch für erste Domänen ein. Erste Domänen sind Domänen, die Office 365 für Sie erstellt, wenn Sie sich für den Dienst registrieren, z. B. „contoso.onmicrosoft.com". Sie müssen keine weiteren Aktionen durchführen, um DKIM für Ihre erste Domäne einzurichten. Weitere Informationen zu ersten Domänen finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+Office 365 richtet DKIM automatisch für erste Domänen ein. Erste Domänen sind Domänen, die Office 365 für Sie erstellt, wenn Sie sich für den Dienst registrieren, z. B. „contoso.onmicrosoft.com". Sie müssen keine weiteren Aktionen durchführen, um DKIM für Ihre erste Domäne einzurichten. Weitere Informationen zu ersten Domänen finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 Für DKIM für Ihre benutzerdefinierte Domäne müssen Sie ebenfalls nichts weiter unternehmen. Wenn Sie DKIM nicht für Ihre benutzerdefinierte Domäne einrichten, erstellt Office 365 ein Paar aus privatem und öffentlichem Schlüssel, aktiviert die DKIM-Signierung und konfiguriert die Office 365-Standardrichtlinie für Ihre benutzerdefinierte Domäne. Obwohl dies für die meisten Office 365-Kunden ausreicht, sollten Sie DKIM unter folgenden Umständen manuell für Ihre benutzerdefinierte Domäne konfigurieren:
   
@@ -105,7 +107,7 @@ Dabei gilt Folgendes:
   contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
   ```
 
--  _initialDomain_ ist die Domäne, die Sie bei der Anmeldung für Office 365 verwendet haben. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+-  _initialDomain_ ist die Domäne, die Sie bei der Anmeldung für Office 365 verwendet haben. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Wenn Sie beispielsweise als erste Domäne „cohovineyardandwinery.onmicrosoft.com" und zwei benutzerdefinierte Domänen „cohovineyard.com" und „cohowinery.com" haben, müssten Sie zwei CNAME-Einträge für jede zusätzliche Domäne einrichten, also insgesamt vier CNAME-Einträge.
   
@@ -245,7 +247,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 
 ```
 
-In diesem Beispiel enthalten den Hostnamen und die Domäne der Werte, die auf denen der CNAME-Eintrag zeigen würde, wenn vom Domänenadministrator für fabrikam.com DKIM Signieren aktiviert wurde. Schließlich wird jede einzelne Nachricht, die von Office 365 gesendet DKIM signiert werden. Wenn Sie DKIM selbst aktivieren, wird die Domäne sein identisch mit der Domäne in der From: Adresse im in Groß-/Kleinschreibung fabrikam.com. Wenn dies nicht der Fall, wird keine Ausrichtung und wird stattdessen die erste Domäne Ihrer Organisation verwenden. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+In diesem Beispiel enthalten den Hostnamen und die Domäne der Werte, die auf denen der CNAME-Eintrag zeigen würde, wenn vom Domänenadministrator für fabrikam.com DKIM Signieren aktiviert wurde. Schließlich wird jede einzelne Nachricht, die von Office 365 gesendet DKIM signiert werden. Wenn Sie DKIM selbst aktivieren, wird die Domäne sein identisch mit der Domäne in der From: Adresse im in Groß-/Kleinschreibung fabrikam.com. Wenn dies nicht der Fall, wird keine Ausrichtung und wird stattdessen die erste Domäne Ihrer Organisation verwenden. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Einrichten von DKIM, damit ein Drittanbieterdienst E-Mails im Auftrag Ihrer benutzerdefinierten Domäne senden oder fälschen kann
 <a name="SetUp3rdPartyspoof"> </a>

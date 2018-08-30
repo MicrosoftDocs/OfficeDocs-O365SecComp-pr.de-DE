@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: 'DMARC (Domain-based Message Authentication, Reporting, and Conformance) verwendet SPF (Sender Policy Framework) und DKIM (DomainKeys Identified Mail) zum Authentifizieren von E-Mail-Absendern und um sicherzustellen, dass Ziel-E-Mail-Systeme die von Ihrer Domäne gesendeten E-Mail-Nachrichten als vertrauenswürdig einstufen. '
-ms.openlocfilehash: a95e41011e802a583ddd053d2ae4699ff46112b9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026822"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003224"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Überprüfen von E-Mails in Office 365
 
@@ -223,7 +225,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ```
 
-Alle bzw. die meisten E-Mail-Nachrichten werden zuerst an „mail.contoso.com“ weitergeleitet, da dies der primäre MX-Eintrag ist. Anschließend werden die E-Mail-Nachrichten an EOP weitergeleitet. In einigen Fällen führen Sie EOP möglicherweise gar nicht als einen MX-Eintrag auf, sondern verbinden einfach Connectors zum Weiterleiten von E-Mail-Nachrichten. EOP muss der erste Eintrag in den MX-Einträgen Ihrer Domäne sein, damit nicht bestandene DMARC-Prüfungen für Ihre Domäne erzwungen werden können.
+Alle oder die meisten, e-Mail wird zuerst an mail.contoso.com weitergeleitet werden, da die primäre MX ist, und klicken Sie dann Mail zu EOP weitergeleitet wird. In einigen Fällen möglicherweise auch nicht in allen Listen Sie EOP als einen MX-Eintrag und einfach zu verknüpfen von Connectors auf Ihre e-Mail-Adresse weiterleiten. EOP hat keinen den ersten Eintrag für die DMARC Überprüfung durchgeführt werden soll. Es wird nur die Überprüfung sichergestellt, wie wir bestimmte nicht möglich, dass alle auf-Standort/nicht-O365 Server DMARC Überprüfungen ausgeführt werden.  DMARC ist berechtigt, erzwungen werden für einen Kunden-Domäne (nicht Server), wenn Sie der DMARC TXT-Eintrag einrichten, aber der empfangende Server die Durchsetzung durchgeführt wird.  Wenn Sie EOP als der empfangende Server eingerichtet haben, ist EOP DMARC erzwingen.
+
   
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="sectionSection8"> </a>

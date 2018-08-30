@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 'Normalerweise verwenden Sie eine Verbindung zum Weiterleiten von Nachrichten aus Office 365-Organisation für Ihre lokale messaging-Umgebung. Sie können auch eine Verbindung zum Weiterleiten von Nachrichten aus Office 365 zu einer Partnerorganisation verwenden. Wenn Office 365 diese Nachrichten über den Connector können nicht übermittelt werden, sind sie Office 365 in der Warteschlange. '
-ms.openlocfilehash: 495d73524afb3ab3a34fd2f1f5f4cd747481f9d8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4effbb783d6ba8f3b33d0aed446e031193d2f2a3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027622"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002720"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Mail Flow Intelligence in Office 365
   
@@ -39,7 +41,6 @@ Office 365 generiert einen Fehler, wenn eine Nachricht nicht mithilfe eines Konn
 - [Fehlercode: 450 4.7.320 Zertifikatüberprüfungsfehler](mail-flow-intelligence-in-office-365.md#ErrorCode47320)
     
 ## <a name="error-code-450-44312-dns-query-failed"></a>Fehlercode: 450 4.4.312 DNS-Abfragefehler
-<a name="ErrorCode44312"> </a>
 
 Dieser Fehler bedeutet in der Regel, dass Office 365 versucht hat, eine Verbindung zum intelligenten Host herzustellen, der im Konnektor angegeben ist, aber die DNS-Abfrage zum Ermitteln der IP-Adressen des intelligenten Hosts ist fehlgeschlagen. Mögliche Ursachen für diesen Fehler sind:
   
@@ -54,7 +55,6 @@ Sie müssen das DNS-Problem beheben, indem Sie mit Ihrem DNS-Hostingdienst arbei
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
   
 ## <a name="error-code-450-44315-connection-timed-out"></a>Fehlercode: 450 4.4.315 Timeout bei der Verbindung
-<a name="ErrorCode44315"> </a>
 
 Dies bedeutet normalerweise, dass Office 365 keine Verbindung mit dem Ziel-Messagingserver herstellen kann. Die Fehlerdetails erläutern das Problem. Beispiel:
   
@@ -67,7 +67,6 @@ Erfahren Sie, welches Szenario für Sie gilt, und nehmen Sie die erforderlichen 
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
   
 ## <a name="error-code-450-44316-connection-refused"></a>Fehlercode: 450 4.4.316 Verbindung abgelehnt
-<a name="ErrorCode44316"> </a>
 
 Dieser Fehler bedeutet normalerweise, dass Office 365 einen Fehler beim Versuch festgestellt hat, eine Verbindung mit dem Ziel-Messagingserver herzustellen. Eine mögliche Ursache für diesen Fehler ist, dass Ihre Firewall Verbindungen von Office 365-IP-Adressen blockiert. Dieser Fehler ist möglicherweise beabsichtigt, wenn Sie Ihr lokales Messaging-System vollständig zu Office 365 migriert haben und die lokale Messaging-Umgebung herunterfahren.
   
@@ -75,7 +74,7 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Fehler beim Versuch 
     
 - Wenn keine weiteren Nachrichten an Ihre lokale Umgebung übermittelt werden sollen, klicken Sie in der Warnung auf **Jetzt korrigieren**, damit Office 365 die Nachrichten mit ungültigen Empfängern sofort ablehnen kann. Dadurch wird das Risiko verringert, dass das Kontingent für ungültige Empfänger Ihrer Organisation überschritten wird, wodurch die normale Nachrichtenübermittlung beeinträchtigt werden könnte. Alternativ können Sie das Problem mit den folgenden Anweisungen manuell beheben: 
     
-  - Deaktivieren oder löschen Sie den Connector aus Office 365 für Ihre lokale Umgebung: Office 365 Admin Center \> **Admin Center** \> **Exchange** \> **E-Mail-Fluss** \> **Connectors** \> wählen Sie den Connector aus, der für **Von** den Wert **Office 365** und für **An** den Wert **E-Mail-Server Ihrer Organisation** aufweist. Löschen Sie den Connector, indem Sie auf **Löschen**![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.png) klicken, oder deaktivieren Sie den Connector, indem Sie auf **Bearbeiten**![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.png) klicken und die Option **Aktivieren** deaktivieren.
+  - Deaktivieren oder Löschen der Verbindung von Office 365 mit der lokalen Umgebung: Office 365 Administrationscenter \> **Admin zentriert** \> **Exchange** \> **E-Mail-Fluss** \> **Connectors** \> wählen Sie die Verbindung mit dem Wert **von** **Office 365** und die **zu** **Ihrer Organisation e-Mail-Server**-Wert. Löschen Sie den Connector, indem Sie auf **Löschen**![Löschsymbol](media/ITPro-EAC-DeleteIcon.gif), oder deaktivieren Sie den Connector durch Klicken auf **Bearbeiten** ![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.gif) , und **schalten Sie ihn**deaktivieren.
     
   - Ändern Sie die akzeptierte Domäne in Office 365, die Ihrer lokalen Nachrichtenumgebung zugeordnet ist, von **Internes Relay** in **Autorisierend**. Anweisungen finden Sie unter [Manage Accepted Domains in Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx).
     
@@ -84,7 +83,6 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 einen Fehler beim Versuch 
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
   
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Fehlercode: 450 4.4.317 Fehler beim Herstellen der Verbindung mit Remote-Server
-<a name="ErrorCode44317"> </a>
 
 Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-Messagingserver verbunden ist, aber der Server mit einem sofortigen Fehler geantwortet hat oder nicht die Verbindungsanforderungen erfüllt. Die Fehlerdetails erläutern das Problem. Beispiel:
   
@@ -97,7 +95,6 @@ Dieser Fehler bedeutet normalerweise, dass Office 365 mit dem Ziel-Messagingserv
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
   
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Fehlercode: 450 4.4.318 Verbindung wurde plötzlich geschlossen
-<a name="ErrorCode44318"> </a>
 
 Dieser Fehler bedeutet normalerweise, dass Office 365 Probleme hat, mit Ihrer lokalen Messagingumgebung zu kommunizieren, sodass die Verbindung getrennt wurde. Mögliche Ursachen für diesen Fehler sind:
   
@@ -112,7 +109,6 @@ Erfahren Sie, welches Szenario für Sie gilt, und nehmen Sie die erforderlichen 
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
   
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Fehlercode: 450 4.7.320 Zertifikatüberprüfungsfehler
-<a name="ErrorCode47320"> </a>
 
 Dieser Fehler bedeutet normalerweise, dass Office 365 beim Versuch, das Zertifikat des Ziel-Messagingservers zu überprüfen, einen Fehler festgestellt hat. Die Fehlerdetails erläutern den Fehler. Beispiel:
   
@@ -127,7 +123,6 @@ Aktualisieren Sie das Zertifikat oder den Konnektor, sodass Nachrichten in der W
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.
   
 ## <a name="other-error-codes"></a>Andere Fehlercodes
-<a name="sectionSection6"> </a>
 
 Office 365 hat Probleme beim Senden von Nachrichten an Ihren lokalen Messagingserver oder Partner-Messagingserver. Verwenden Sie die Informationen zum **Zielserver** im Fehler, um das Problem in Ihrer Umgebung zu untersuchen, oder ändern Sie den Konnektor bei einem Konfigurationsfehler. 
   

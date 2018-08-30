@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Grundlegende Spam-filtereinstellungen umfassen auswählen die Aktion, die auf Nachrichten angewendet werden, die als Spam identifiziert werden und auswählen, ob Sie Nachrichten zu filtern, die in bestimmten Sprachen geschrieben oder von bestimmten Ländern oder Regionen gesendet werden.
-ms.openlocfilehash: b0a5fa1a5640bd0baab68c29d8098059a6025f7d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3e24a69dacc18272baa710c18492759f67583f4f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026532"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002964"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
   
@@ -26,7 +28,6 @@ Mit einfachen Spamfiltereinstellungen können Sie angeben, wie mit als Spam iden
 > Für Kunden der eigenständigen Exchange Online Protection (EOP)-Lösung: Standardmäßig leiten die EOP-Spamfilter als Spam erkannte Nachrichten an den Junk-E-Mail-Ordner der einzelnen Empfänger weiter. Damit die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** jedoch bei lokalen Postfächern angewendet wird, müssen Sie auf Ihren lokalen Servern Exchange-Transportregeln konfigurieren, um Spamkopfzeilen zu erkennen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
-<a name="sectionSection0"> </a>
 
 Geschätzte Zeit bis zum Abschließen des Vorgangs: 30 Minuten
   
@@ -35,7 +36,6 @@ Sie müssen Berechtigungen zugewiesen werden, bevor Sie dieses Verfahren oder Ve
 Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
   
 ## <a name="use-the-exchange-admin-center-eac-to-configure-spam-filter-policies"></a>Konfigurieren der Richtlinien für die Spamfilterung mit der Exchange-Verwaltungskonsole
-<a name="sectionSection1"> </a>
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Schutz** \> **Spamfilter**.
     
@@ -43,7 +43,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
     
   - Doppelklicken Sie auf die Standardrichtlinie, um diese unternehmensweite Richtlinie zu bearbeiten.
     
-  - Klicken Sie auf das Symbol für ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png) **Neu**, um eine neue benutzerdefinierte Richtlinie für die Spamfilterung zu erstellen, die auf Benutzer, Gruppen und Domänen in Ihrer Organisation angewendet werden kann. Die können auch vorhandene benutzerdefinierte Richtlinien bearbeiten, in dem Sie darauf doppelklicken. 
+  - Klicken Sie auf das Symbol für ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif) **Neu**, um eine neue benutzerdefinierte Richtlinie für die Spamfilterung zu erstellen, die auf Benutzer, Gruppen und Domänen in Ihrer Organisation angewendet werden kann. Die können auch vorhandene benutzerdefinierte Richtlinien bearbeiten, in dem Sie darauf doppelklicken. 
     
 3. Geben Sie für benutzerdefinierte Richtlinien einen Namen für diese Richtlinie. Optional können Sie auch eine ausführlichere Beschreibung angeben. Die Standardrichtlinie kann nicht umbenannt werden.
     
@@ -85,27 +85,27 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
     
 6. Auf der Seite **Sperrlisten** können Sie Einträge, wie z. B. Absender oder Domänen, angeben, die immer als Spam markiert werden. Der Dienst wendet die konfigurierte Spamaktion bei hoher Vertrauenswürdigkeit auf E-Mails an, die diesen Einträgen entsprechen. 
     
-  - Fügen Sie der Absendersperrliste unerwünschte Absender hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **OK**, um zur Seite **Sperrlisten** zurückzukehren. 
+  - Fügen Sie der Absendersperrliste unerwünschte Absender hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **OK**, um zur Seite **Sperrlisten** zurückzukehren. 
     
-  - Fügen Sie der Domänensperrliste unerwünschte Domänen hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **OK**, um zur Seite **Sperrlisten** zurückzukehren. 
+  - Fügen Sie der Domänensperrliste unerwünschte Domänen hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie blockieren möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf **OK**, um zur Seite **Sperrlisten** zurückzukehren. 
     
     > [!CAUTION]
     > Wenn Sie Domänen auf oberster Ebene blockieren, ist es wahrscheinlich, dass E-Mails, die Sie erhalten möchten, als Spam markiert werden. 
   
 7. Auf der Seite **Zulassungslisten** können Sie Einträge angeben, z. B. Absender oder Domänen, die immer an den Posteingang übermittelt werden. E-Mails von diesen Einträgen werden nicht vom Spamfilter verarbeitet. 
     
-  - Fügen Sie der Zulassungsliste für Absender vertrauenswürdige Absender hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf „OK", um zur Seite **Zulassungslisten** zurückzukehren. 
+  - Fügen Sie der Zulassungsliste für Absender vertrauenswürdige Absender hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Absenderadressen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf „OK", um zur Seite **Zulassungslisten** zurückzukehren. 
     
-  - Fügen Sie der Zulassungsliste für Domänen vertrauenswürdige Domänen hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf „OK", um zur Seite **Zulassungslisten** zurückzukehren. 
+  - Fügen Sie der Zulassungsliste für Domänen vertrauenswürdige Domänen hinzu. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif), und fügen Sie dann im Auswahldialogfeld die Domänen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mithilfe eines Semikolons oder einer neuen Zeile trennen. Klicken Sie auf „OK", um zur Seite **Zulassungslisten** zurückzukehren. 
     
     > [!CAUTION]
     > Wenn Sie Domänen auf oberster Ebene zulassen, ist es wahrscheinlich, dass unerwünschte E-Mails an einen Posteingang übermittelt werden. 
   
 8. Auf der Seite **Internationale Spamnachrichten** können Sie nach in bestimmten Sprachen verfassten oder aus spezifischen Ländern oder Regionen gesendeten E-Mails filtern. Es können bis zu 86 Sprachen und 250 Regionen konfiguriert werden. Der Dienst wendet dann die konfigurierte Aktion für Spam mit hoher Vertrauenswürdigkeit an. 
     
-1. Aktivieren Sie das Kontrollkästchen **Filter e-Mail-Nachrichten in den folgenden Sprachen geschrieben** , um diese Funktionalität zu aktivieren. Klicken Sie auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png), und klicken Sie dann im Dialogfeld Auswahl Stellen Ihrer Auswahl (Mehrfachauswahl wird unterstützt). Beispielsweise werden, wenn Sie zum Filtern von Nachrichten in Arabisch (AR) geschrieben, und **in Quarantäne verschobene Nachricht** die konfigurierten Aktion für vertrauenswürdige Spamnachrichten ist, in Arabisch geschriebenen Nachrichten unter Quarantäne gestellt werden. Klicken Sie auf **ok,** um in den Bereich **International Spam** zurückzugeben. 
+1. Aktivieren Sie das Kontrollkästchen **Filter e-Mail-Nachrichten in den folgenden Sprachen geschrieben** , um diese Funktionalität zu aktivieren. Klicken Sie auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und klicken Sie dann im Dialogfeld Auswahl Stellen Ihrer Auswahl (Mehrfachauswahl wird unterstützt). Beispielsweise werden, wenn Sie zum Filtern von Nachrichten in Arabisch (AR) geschrieben, und **in Quarantäne verschobene Nachricht** die konfigurierten Aktion für vertrauenswürdige Spamnachrichten ist, in Arabisch geschriebenen Nachrichten unter Quarantäne gestellt werden. Klicken Sie auf **ok,** um in den Bereich **International Spam** zurückzugeben. 
     
-2. Aktivieren Sie das Kontrollkästchen **Filter e-Mail-Nachrichten aus den folgenden Ländern oder Regionen gesendet** , um diese Funktionalität zu aktivieren. Klicken Sie auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png), und klicken Sie dann im Dialogfeld Auswahl Stellen Ihrer Auswahl (Mehrfachauswahl wird unterstützt). Beispielsweise wird Wenn Sie auswählen, dass um alle Nachrichten zu filtern, die aus Australien (AU) gesendet werden, und **in Quarantäne verschobene Nachricht** die konfigurierten Aktion für vertrauenswürdige Spamnachrichten, und klicken Sie dann auf alle Nachrichten, die aus Australien gesendet wird unter Quarantäne gestellt werden. Klicken Sie auf **ok,** um in den Bereich **International Spam** zurückzugeben. 
+2. Aktivieren Sie das Kontrollkästchen **Filter e-Mail-Nachrichten aus den folgenden Ländern oder Regionen gesendet** , um diese Funktionalität zu aktivieren. Klicken Sie auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und klicken Sie dann im Dialogfeld Auswahl Stellen Ihrer Auswahl (Mehrfachauswahl wird unterstützt). Beispielsweise wird Wenn Sie auswählen, dass um alle Nachrichten zu filtern, die aus Australien (AU) gesendet werden, und **in Quarantäne verschobene Nachricht** die konfigurierten Aktion für vertrauenswürdige Spamnachrichten, und klicken Sie dann auf alle Nachrichten, die aus Australien gesendet wird unter Quarantäne gestellt werden. Klicken Sie auf **ok,** um in den Bereich **International Spam** zurückzugeben. 
     
     > [!NOTE]
     > Wenn keine internationalen Spamoptionen ausgewählt sind, wendet der Dienst standardmäßig die normale Spamfilterung auf gesendete Nachrichten in allen Sprachen und aus allen Regionen an. Nachrichten werden untersucht und die konfigurierten Aktionen angewendet, wenn die Nachricht als Spam oder Spam mit hoher Vertrauenswürdigkeit eingestuft wird. 
@@ -143,10 +143,9 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
 11. Klicken Sie auf **Speichern**. Im Bereich auf der rechten Seite wird eine Zusammenfassung der Richtlinieneinstellungen angezeigt.
     
 > [!TIP]
->  Sie können die Kontrollkästchen in der Spalte **AKTIVIERT** aktivieren beziehungsweise deaktivieren, um Ihre benutzerdefinierten Richtlinien zu aktivieren oder zu deaktivieren. Alle Richtlinien sind standardmäßig aktiviert, und die Standardrichtlinie kann nicht deaktiviert werden. >  Um eine benutzerdefinierte Richtlinie zu löschen, wählen Sie die Richtlinie aus, klicken Sie auf das Symbol ![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.png) **Löschen**, und bestätigen Sie dann, dass Sie die Richtlinie löschen möchten. Die Standardrichtlinie kann nicht gelöscht werden. >  Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Benutzerdefinierte Richtlinien werden in der umgekehrten Reihenfolge ausgeführt, in der sie von Ihnen erstellt wurden (von der ältesten zur neuesten). Sie können die Priorität (Ausführungsreihenfolge) Ihrer benutzerdefinierten Richtlinien aber ändern, indem Sie auf den Nach-oben-Pfeil ![NACH-OBEN-TASTE (Symbol)](media/ITPro-EAC-UpArrowIcon.png) bzw. den Nach-unten-Pfeil ![NACH-UNTEN-TASTE (Symbol)](media/ITPro-EAC-DownArrowIcon.png) klicken. Die Richtlinie mit der **PRIORITÄT** **0** wird zuerst ausgeführt, gefolgt von **1**, dann **2** usw. 
+>  Sie können die Kontrollkästchen in der Spalte **AKTIVIERT** aktivieren beziehungsweise deaktivieren, um Ihre benutzerdefinierten Richtlinien zu aktivieren oder zu deaktivieren. Alle Richtlinien sind standardmäßig aktiviert, und die Standardrichtlinie kann nicht deaktiviert werden. >  Um eine benutzerdefinierte Richtlinie zu löschen, wählen Sie die Richtlinie aus, klicken Sie auf das Symbol ![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.gif) **Löschen**, und bestätigen Sie dann, dass Sie die Richtlinie löschen möchten. Die Standardrichtlinie kann nicht gelöscht werden. >  Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Benutzerdefinierte Richtlinien werden in der umgekehrten Reihenfolge ausgeführt, in der sie von Ihnen erstellt wurden (von der ältesten zur neuesten). Sie können die Priorität (Ausführungsreihenfolge) Ihrer benutzerdefinierten Richtlinien aber ändern, indem Sie auf den Nach-oben-Pfeil ![NACH-OBEN-TASTE (Symbol)](media/ITPro-EAC-UpArrowIcon.gif) bzw. den Nach-unten-Pfeil ![NACH-UNTEN-TASTE (Symbol)](media/ITPro-EAC-DownArrowIcon.gif) klicken. Die Richtlinie mit der **PRIORITÄT** **0** wird zuerst ausgeführt, gefolgt von **1**, dann **2** usw. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Konfigurieren der Richtlinien für die Spamfilterung mit Remote-PowerShell
-<a name="sectionSection2"> </a>
 
 Sie können auch konfigurieren und Anwenden von Spam-Filter-Richtlinien in PowerShell. So verwenden Sie Windows PowerShell für die Verbindung zu Exchange Online finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). Weitere Informationen zu Windows PowerShell verwenden, um die Verbindung mit Exchange Online Protection finden Sie unter [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
@@ -161,7 +160,6 @@ Sie können auch konfigurieren und Anwenden von Spam-Filter-Richtlinien in Power
 Zum Anwenden einer benutzerdefinierten Richtlinie für die Spamfilterung auf Benutzer, Gruppen und/oder Domänen verwenden Sie das Cmdlet [New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) (um eine neue Filterregel zu erstellen, die auf benutzerdefinierte Richtlinien angewendet werden kann) oder das Cmdlet [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) (um eine vorhandene Filterregel zu bearbeiten, die auf benutzerdefinierte Richtlinien angewendet werden kann). Mit dem Cmdlet [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) oder [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) können Sie die für die Richtlinie geltende Regel aktivieren oder deaktivieren. 
   
 ## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
-<a name="sectionSection3"> </a>
 
 Um sicherzustellen, dass Spam ordnungsgemäß erkannt und behandelt wird, können Sie über den Dienst eine GTUBE-Nachricht senden. Ähnlich wie die EICAR-Antivirustestdatei, beinhaltet GTUBE einen Test, mit dem Sie überprüfen können, ob der Dienst eingehende Spamnachrichten erkennt. Eine GTUBE-Nachricht sollte vom Spamfilter immer als Spam erkannt werden, und die daraufhin bezüglich der Nachricht ausgeführten Aktionen sollten den Einstellungen entsprechen, die Sie konfiguriert haben.
   
@@ -172,16 +170,8 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Optimieren Ihrer Spamfilterrichtlinie, um falsch positive Ergebnisse und falsch negative Ergebnisse zu verhindern
-<a name="sectionSection4"> </a>
 
 Sie können erweiterte Spamfilteroptionen aktivieren, wenn Sie einen aggressiveren Ansatz für die Spamfilterung verfolgen möchten. Allgemeine Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Verwenden einer Liste sicherer Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](https://go.microsoft.com/fwlink/p/?LinkId=534225). Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
-  
-## <a name="new-to-office-365"></a>Neu bei Office 365?
-<a name="sectionSection5"> </a>
-
-||
-|:-----|
-|![Das Kurzsymbol für LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Neu bei Office 365?**         Entdecken Sie die kostenlosen Videokurse für **Office 365 admins and IT pros**, präsentiert von LinkedIn Learning. |
    
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="sectionSection6"> </a>

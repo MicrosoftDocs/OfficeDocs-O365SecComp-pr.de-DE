@@ -9,14 +9,16 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 description: Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 99640e561b41e47a74e7c22f0bbdcacd0dd80bd7
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026312"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002944"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange-Verwaltungskonsole in Exchange Online Protection 
 
@@ -24,7 +26,7 @@ Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole fü
   
 Suchen Sie die Exchange 2013-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
-Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen finden Sie unter [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
   
 ## <a name="accessing-the-eac"></a>Zugreifen auf die Exchange-Verwaltungskonsole
 
@@ -33,7 +35,6 @@ In den meisten Fällen greifen EOP-Kunden über das Office 365 Admin Center auf 
 Sie können auch über den folgenden URL direkt auf das EAC-Zeichen auf der Seite zugreifen: https://admin.protection.outlook.com/ecp/\<companydomain\>. Beispiel: https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Nachdem Sie Ihre Benutzeranmeldeinformationen eingegeben haben, gelangen Sie direkt zur Exchange-Verwaltungskonsole.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Allgemeine Elemente der Benutzeroberfläche in der Exchange-Verwaltungskonsole
-<a name="BKMK_CommonUserInterfaceElements"> </a>
 
 In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Verwaltungskonsole beschrieben.
   
@@ -63,14 +64,14 @@ Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie au
   
 |**Symbol**|**Name**|**Action**|
 |:-----|:-----|:-----|
-|![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png)           <br/> |Hinzufügen, Neu  <br/> |Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.  <br/> |
-|![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.png)           <br/> |Bearbeiten  <br/> |Über dieses Symbol können Sie ein Objekt bearbeiten.  <br/> |
-|![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.png)           <br/> |Löschen  <br/> |Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.  <br/> |
-|![Suchen (Symbol)](media/ITPro-EAC-.png)           <br/> |Suche  <br/> |Über dieses Symbol können Sie ein Suchfeld öffnen, in das Sie den Suchbegriff für ein zu suchendes Objekt eingeben können.  <br/> |
-|![Aktualisieren (Symbol)](media/ITPro-EAC-RefreshIcon.png)           <br/> |Aktualisieren  <br/> |Über dieses Symbol können Sie die Listenansicht aktualisieren.  <br/> |
-|![Weitere Optionen (Symbol)](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |Weitere Optionen  <br/> |Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  <br/> |
-|![NACH-OBEN-TASTE (Symbol)](media/ITPro-EAC-UpArrowIcon.png)![NACH-UNTEN-TASTE (Symbol)](media/ITPro-EAC-DownArrowIcon.png)           <br/> |Pfeil nach oben und Pfeil nach unten  <br/> |Mithilfe dieser Symbole können Sie die Priorität eines Objekts nach oben oder unten verschieben.  <br/> |
-|![Entfernen (Symbol)](media/ITPro-EAC-RemoveIcon.png)           <br/> |Entfernen  <br/> |Über dieses Symbol können Sie Objekte aus einer Liste entfernen.  <br/> |
+|![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif)           <br/> |Hinzufügen, Neu  <br/> |Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.  <br/> |
+|![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.gif)           <br/> |Bearbeiten  <br/> |Über dieses Symbol können Sie ein Objekt bearbeiten.  <br/> |
+|![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Löschen  <br/> |Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.  <br/> |
+|![Suchen (Symbol)](media/ITPro-EAC-.gif)           <br/> |Suche  <br/> |Über dieses Symbol können Sie ein Suchfeld öffnen, in das Sie den Suchbegriff für ein zu suchendes Objekt eingeben können.  <br/> |
+|![Aktualisieren (Symbol)](media/ITPro-EAC-RefreshIcon.gif)           <br/> |Aktualisieren  <br/> |Über dieses Symbol können Sie die Listenansicht aktualisieren.  <br/> |
+|![Weitere Optionen (Symbol)](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |Weitere Optionen  <br/> |Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  <br/> |
+|![NACH-OBEN-TASTE (Symbol)](media/ITPro-EAC-UpArrowIcon.gif)![NACH-UNTEN-TASTE (Symbol)](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Pfeil nach oben und Pfeil nach unten  <br/> |Mithilfe dieser Symbole können Sie die Priorität eines Objekts nach oben oder unten verschieben.  <br/> |
+|![Entfernen (Symbol)](media/ITPro-EAC-RemoveIcon.gif)           <br/> |Entfernen  <br/> |Über dieses Symbol können Sie Objekte aus einer Liste entfernen.  <br/> |
    
 ### <a name="list-view"></a>Listenansicht
 
@@ -82,9 +83,9 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
   
 ### <a name="me-tile-and-help"></a>Ich-Kachel und Hilfe
 
-Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Über das Dropdownmenü der **Hilfe**![Hilfe (Symbol)](media/ITPro-EAC-HelpIcon.png) können Sie folgende Aktionen ausführen: 
+Über die **Ich**-Kachel können Sie sich bei der Exchange-Verwaltungskonsole abmelden und als ein anderer Benutzer anmelden. Über das Dropdownmenü der **Hilfe**![Hilfe (Symbol)](media/ITPro-EAC-HelpIcon.gif) können Sie folgende Aktionen ausführen: 
   
-1. **Hilfe** Klicken Sie auf ![Hilfe (Symbol)](media/ITPro-EAC-HelpIcon.png), damit der Inhalt der Onlinehilfe angezeigt wird. 
+1. **Hilfe** Klicken Sie auf ![Hilfe (Symbol)](media/ITPro-EAC-HelpIcon.gif), damit der Inhalt der Onlinehilfe angezeigt wird. 
     
 2. **Hilfe-Sprechblase deaktivieren** In der Hilfe-Sprechblase wird Kontexthilfe für Felder angezeigt, wenn Sie ein Objekt erstellen oder bearbeiten. Sie können die Hilfe-Sprechblase deaktivieren bzw. aktivieren, wenn sie deaktiviert ist. 
     
@@ -93,12 +94,10 @@ Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu die
 4. **Datenschutz** Klicken Sie hier, um die Datenschutzrichtlinien für Exchange Online Protection zu lesen. 
     
 ## <a name="supported-browsers"></a>Unterstützte Browser
-<a name="BKMK_SupportedBrowsers"> </a>
 
 Für eine optimale Nutzung des EAC sollten Sie immer die neuesten Browser, Office-Clients und Apps verwenden. Zudem wird empfohlen, dass Sie Softwareupdates installieren, sobald sie verfügbar werden. Weitere Informationen zu den unterstützten Browsern und zu den Systemanforderungen für den Dienst finden Sie unter [Office 365-Systemanforderungen](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
   
 ## <a name="supported-languages-in-eop"></a>Unterstützte Sprachen in EOP
-<a name="BKMK_SupportedLanguages"> </a>
 
 Die folgenden Sprachen werden für Exchange Online Protection unterstützt und zur Verfügung gestellt.
   

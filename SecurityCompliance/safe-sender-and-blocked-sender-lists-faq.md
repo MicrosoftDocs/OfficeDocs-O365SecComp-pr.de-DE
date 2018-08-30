@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird. Eine Möglichkeit hierzu ist das Erstellen von Listen mit sicheren Absendern und blockierten Absendern für die Personen in Ihrer Organisation.
-ms.openlocfilehash: fcb43f990750782788dc6f459dd5c7d296146a38
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028082"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003104"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listen sicherer und blockierter Absender in Exchange Online
 
@@ -38,7 +40,7 @@ Hinweis:
   
 Möglicherweise tritt der in KB 2590466 beschriebene Fehler auf (Die folgende Fehlermeldung wird in Outlook Web App für Exchange Server 2010 angezeigt: „Junk-E-Mail-Überprüfungsfehler"). Um dieses Problem zu beheben, deaktivieren Sie das Kontrollkästchen „E-Mails von meinen Kontakten vertrauen". Alternativ können Sie auch die Anzahl an E-Mail-Adressen reduzieren, die in dem standardmäßigen Ordner „Kontakte" enthalten sind, damit dieser Wert nicht den Grenzwert von 1.024 in Exchange Online überschreitet, der für das Attribut „MaxSafeSenders" festgelegt ist. Weitere Informationen über dieses Attribut und das Cmdlet „Set-Mailbox" finden Sie in dem folgenden Artikel:
   
-[Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
   
 ## <a name="see-also"></a>See also
 

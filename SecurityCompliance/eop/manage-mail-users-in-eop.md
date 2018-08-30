@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: e985adf5659b50cf567ea798a092f809d77ca470
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027392"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003044"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
@@ -101,7 +101,7 @@ Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden B
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>So bearbeiten oder entfernen Sie einen E-Mail-Benutzer in EAC
 
-- Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**. Klicken Sie in der Benutzerliste auf den Benutzer, den Sie anzeigen oder ändern möchten, und klicken Sie dann auf **Bearbeiten**![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.png), um die Benutzereinstellungen nach Bedarf zu aktualisieren. Sie können den Benutzernamen, Aliasnamen oder die Kontaktinformationen ändern, und Sie können ausführliche Informationen zur Benutzerrolle in der Organisation eingeben. Sie können auch einen Benutzer auswählen und dann **Entfernen**![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.png) wählen, um ihn zu löschen. 
+- Navigieren Sie in der Exchange-Verwaltungskonsole zu **Empfänger** \> **Kontakte**. In der Liste der Benutzer, klicken Sie auf den Benutzer, die Sie anzeigen oder ändern möchten, und wählen Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.gif) um die benutzereinstellungen zu aktualisieren, je nach Bedarf. Sie können des Benutzers Name, Alias oder Kontaktinformationen ändern, und können Sie detaillierte Informationen über die Rolle des Benutzers in der Organisation aufzeichnen. Sie können auch wählen einen Benutzer aus und wählen Sie dann auf **Entfernen**![Symbol "entfernen"](../media/ITPro-EAC-RemoveIcon.gif) , ihn zu löschen. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern mithilfe der Windows Remote-PowerShell
 

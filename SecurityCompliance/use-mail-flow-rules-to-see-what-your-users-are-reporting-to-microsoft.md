@@ -8,14 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: Sie können eine Exchange-Transportregel zum verhindern, dass Ihre Benutzer am Senden von e-Mail-Nachrichten an Microsoft zur Analyse und deren Verwendung in Ihrer eigenen Sicherheitsprozesse erstellen
-ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
-ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
+ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "22122585"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002623"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Verwenden von Nachrichtenflussregeln, um anzuzeigen, was Ihre Benutzer an Microsoft melden
 
@@ -33,16 +35,16 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
     
-2. Klicken Sie auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png) und wählen Sie dann **Neue Regel erstellen** aus.
+2. Klicken Sie auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif) und wählen Sie dann **Neue Regel erstellen** aus.
     
 3. Benennen Sie die Regel, und klicken Sie dann auf **Weitere Optionen**.
     
 4. Unter **Diese Regel anwenden, wenn...** können Sie **Empfänger** und anschließend **Adresse enthält eines dieser Wörter** wählen.
     
 5. Im Feld **Wörter oder Ausdrücke angeben** müssen Sie folgende Änderungen vornehmen: 
-    - Typ `abuse@messaging.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png), und geben Sie `junk@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png). Diese e-Mail-Adressen dienen zum Übermitteln von falsch negativer Nachrichten an Microsoft.
-    - Typ `phish@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png). Diese e-Mail-Adresse wird verpassten Phishing-Mails an Microsoft zu übermitteln.
-    - Typ `false_positive@messaging.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png), und geben Sie `not_junk@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.png). Diese e-Mail-Adressen werden verwendet, um falsch positiver Nachrichten an Microsoft zu übermitteln.
+    - Typ `abuse@messaging.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und geben Sie `junk@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif). Diese e-Mail-Adressen dienen zum Übermitteln von falsch negativer Nachrichten an Microsoft.
+    - Typ `phish@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif). Diese e-Mail-Adresse wird verpassten Phishing-Mails an Microsoft zu übermitteln.
+    - Typ `false_positive@messaging.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und geben Sie `not_junk@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif). Diese e-Mail-Adressen werden verwendet, um falsch positiver Nachrichten an Microsoft zu übermitteln.
     - Klicken Sie auf **OK**.
     
 6. Wählen Sie unter **Folgendes ausführen** die Option **Bcc der Nachricht an...** aus, und wählen Sie dann die Postfächer aus, in denen Sie Nachrichten erhalten möchten. 

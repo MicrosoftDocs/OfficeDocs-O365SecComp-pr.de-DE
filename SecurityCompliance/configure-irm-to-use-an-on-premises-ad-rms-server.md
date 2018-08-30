@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert.
-ms.openlocfilehash: 198d7b86b39318361a174395bc460b4a4bd35847
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027372"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002787"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
@@ -163,6 +165,6 @@ Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD und einer erfo
   
 - Verwenden Sie das Cmdlet **Test-IRMConfiguration**, um die Funktionalität von IRM zu überprüfen. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Erstellen Sie eine neue Nachricht in Outlook Web App, und versehen Sie diese mit IRM-Schutz durch Auswahl der Option **Berechtigungen festlegen** im erweiterten Menü ( ![Weitere Optionen (Symbol)](media/ITPro-EAC-MoreOptionsIcon.png)).
+- Erstellen Sie eine neue Nachricht in Outlook Web App, und versehen Sie diese mit IRM-Schutz durch Auswahl der Option **Berechtigungen festlegen** im erweiterten Menü ( ![Weitere Optionen (Symbol)](media/ITPro-EAC-MoreOptionsIcon.gif)).
     
 
