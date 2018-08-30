@@ -1,0 +1,219 @@
+---
+title: Was ist neu in Office 365-Cloud-App-Sicherheit
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.date: 8/6/2018
+ms.audience: Admin
+ms.topic: reference
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
+description: Finden Sie unter Neuigkeiten in Office 365-Cloud-App-Sicherheit
+ms.openlocfilehash: 484d46e9fef56e76e2f27d27b38a261c4ad19cc1
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22529389"
+---
+# <a name="what-is-new-in-office-365-cloud-app-security"></a><span data-ttu-id="59bff-103">Was ist neu in Office 365-Cloud-App-Sicherheit</span><span class="sxs-lookup"><span data-stu-id="59bff-103">What is new in Office 365 Cloud App Security</span></span>
+
+<span data-ttu-id="59bff-104">Lesen Sie diesen Artikel, um einen schnellen Überblick über Updates und neuen Features in Office 365-Cloud App-Sicherheit (früher als Office 365 Advanced Security Management bezeichnet) abzurufen, die von [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)bereitgestellt wird.</span><span class="sxs-lookup"><span data-stu-id="59bff-104">Read this article to get a quick overview of updates and new features in Office 365 Cloud App Security (formerly known as Office 365 Advanced Security Management), which is powered by [Microsoft Cloud App Security](https://aka.ms/whatiscas).</span></span>
+  
+<span data-ttu-id="59bff-p101">In diesem Artikel wird häufig aktualisiert, wie Features hinzugefügt oder verbessert werden. Office 365-Cloud-App-Sicherheits-Updates werden ungefähr zwei Wochen nach Microsoft Cloud App-Sicherheitsupdates freigegeben, und nicht alle Microsoft Cloud App-Sicherheitsupdates gelten für Office 365-Cloud-App-Sicherheit. Darüber hinaus können die neuen Features für mindestens eine Woche nach ihrer Veröffentlichungsdatum in der Cloud App Sicherheit in Office 365-Umgebung angezeigt wird dauern.</span><span class="sxs-lookup"><span data-stu-id="59bff-p101">This article is updated frequently, as features are added or improved. Office 365 Cloud App Security updates are released approximately two weeks after Microsoft Cloud App Security updates, and not all Microsoft Cloud App Security updates apply to Office 365 Cloud App Security. In addition, new features might take a week or more after their release date to show up in your Office 365 Cloud App Security environment.</span></span>
+  
+## <a name="office-365-cloud-app-security-release-128"></a><span data-ttu-id="59bff-108">Office 365 Cloud App-Sicherheit Version 128</span><span class="sxs-lookup"><span data-stu-id="59bff-108">Office 365 Cloud App Security release 128</span></span>
+
+ <span data-ttu-id="59bff-109">*Versionen 5 August 2018*</span><span class="sxs-lookup"><span data-stu-id="59bff-109">*Releases August 5, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-110">**Freigeben mit [Microsoft Cloud App-Sicherheit 128 freizugeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**:</span><span class="sxs-lookup"><span data-stu-id="59bff-110">**Releasing with [Microsoft Cloud App Security release 128](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p102">**App-Berechtigungen über mehrere apps** Für apps, die app-Berechtigungen erteilt wurden, können Sie jetzt sperren oder mehrere apps in eine einzelne Aktion genehmigen. Beispielsweise können alle apps, die besitzen die Berechtigung von Benutzern in Ihrer Organisation, wählen Sie alle apps, die Sie sperren möchten, und klicken Sie dann auf Sperren apps für alle Zustimmung erteilt widerrufen überprüfen und können nicht mehr Benutzer Berechtigung für diese apps.</span><span class="sxs-lookup"><span data-stu-id="59bff-p102">**App permissions across multiple apps** For apps that have been granted app permissions, you can now ban or approve multiple apps in a single action. For example, you can review all the apps that have been granted permission by users in your organization, select all the apps you want to ban, and then click ban apps to revoke all consent granted and will no longer allow users to grant permission to those apps.</span></span> 
+    
+- <span data-ttu-id="59bff-p103">**Neue vorgeschlagenen Abfrage: GDPR kann jetzt** Es wird eine neue vorgeschlagene Abfrage, mit denen Sie erkannte apps zu identifizieren, die GDPR bereit sind. GDPR wurde vor kurzem oberste Priorität für Sicherheit-Admins änderte. Mit dieser Abfrage können Sie auf einfache Weise identifizieren apps, die GDPR bereit sind, und minimieren Bedrohung Abschätzen des Risikos der apps, die nicht sind.</span><span class="sxs-lookup"><span data-stu-id="59bff-p103">**New suggested query: GDPR ready** There is a new suggested query to enable you to identify discovered apps that are GDPR ready. GDPR has recently became a top priority for security admins. This query helps you easily identify apps that are GDPR ready, and mitigate threat by assessing the risk of the apps that aren't.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-126"></a><span data-ttu-id="59bff-116">Office 365 Cloud App-Sicherheit Version 126</span><span class="sxs-lookup"><span data-stu-id="59bff-116">Office 365 Cloud App Security release 126</span></span>
+
+ <span data-ttu-id="59bff-117">*7 Juli 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-117">*Released July 7, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-118">**Mit [Microsoft Cloud App-Sicherheit Version 126](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-118">**Released with [Microsoft Cloud App Security release 126](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p104">**Automatische Wiederherstellung für verdächtigen Aktivitäten** Sie können jetzt die automatische Wiederherstellung Aktionen für verdächtigen Sitzung ausgelöst, indem die Anomalie Erkennungsrichtlinien festlegen. Mithilfe dieser Verbesserung können Sie benachrichtigt werden, sofort eine Verletzung tritt und Governance Aktionen automatisch anwenden, wie Benutzer anhalten. Weitere Informationen finden Sie unter [Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit](anomaly-detection-policies-in-ocas.md).</span><span class="sxs-lookup"><span data-stu-id="59bff-p104">**Automated remediation for suspicious activities** You can now set automatic remediation actions for suspicious session triggered by the anomaly detection policies. This enhancement enables you to be alerted instantly when a breach occurs and apply governance actions automatically, such as suspend user. For more information, see [Anomaly detection policies in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md).</span></span>
+    
+- <span data-ttu-id="59bff-p105">**Automatische Erkennung von riskant OAuth-Apps** Zusätzlich zu den vorhandenen Untersuchen des OAuth-apps, die für Ihre Umgebung verbunden ermöglicht Office 365-Cloud-App-Sicherheit jetzt festzulegenden automatische Benachrichtigung, damit Sie wissen, wann eine OAuth-app für bestimmte Kriterien erfüllt. Beispielsweise können Sie automatisch gewarnt werden, wenn es apps sind, die eine hohe Berechtigungsstufe erfordern und mehr als 50 Benutzer autorisiert wurden. Weitere Informationen finden Sie unter [Verwalten von app-Berechtigungen, die mit Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md).</span><span class="sxs-lookup"><span data-stu-id="59bff-p105">**Automated detection of risky OAuth Apps** In addition to the existing investigate of OAuth apps connected to your environment, Office 365 Cloud App Security now allows you to set automated notifications to let you know when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. For more information, see [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md).</span></span>
+    
+- <span data-ttu-id="59bff-p106">**Managed Security Service Provider Management (MSSP) unterstützen.** Office 365-Cloud-App-Sicherheit jetzt ermöglicht eine bessere Verwaltung der auf MSSPs, und ermöglicht es Ihnen, externe Partner als Administratoren mit einer der Rollen, die derzeit in Office 365-Cloud-App-Sicherheit konfigurieren. Darüber hinaus können Administratoren mit Zugriffsrechten für mehrere Mandanten jetzt auf einfache Weise zwischen den Mandanten pivotieren.</span><span class="sxs-lookup"><span data-stu-id="59bff-p106">**Managed Security Service Provider management (MSSP) support** Office 365 Cloud App Security now provides a better management experience to MSSPs, and allows you to configure external partners as administrators with any of the roles currently available in Office 365 Cloud App Security. In addition, Administrators with access rights to more than one tenant can now easily pivot between the tenants.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-124"></a><span data-ttu-id="59bff-127">Office 365 Cloud App-Sicherheit Version 124</span><span class="sxs-lookup"><span data-stu-id="59bff-127">Office 365 Cloud App Security release 124</span></span>
+
+ <span data-ttu-id="59bff-128">*10 Juni 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-128">*Released June 10, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-129">**Mit [Microsoft Cloud App-Sicherheit Version 124](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-129">**Released with [Microsoft Cloud App Security release 124](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p107">**Bereich Bereitstellungen** Unternehmen können detaillierte ermitteln, welche Benutzer zu überwachen und Schützen der Gruppenmitgliedschaft basierend. Dieses Feature kann Benutzer auswählen, deren Aktivitäten aus einem geschützten-Anwendung nicht angezeigt werden. Bereichsbasierte-Überwachung ist besonders für die Einhaltung von Vorschriften und Lizenzierung. Einige Vorschriften erfordern, dass Sie sehen davon ab, von der Überwachung von Benutzern aus bestimmten Ländern aufgrund von lokalen Vorschriften. Und Sie können weniger Benutzer innerhalb der Grenzen Ihrer Sicherheit in Office 365 Cloud App-Lizenzen bleiben überwachen.</span><span class="sxs-lookup"><span data-stu-id="59bff-p107">**Scoped deployments** Enterprise organizations can granularly determine which users to monitor and protect based on group membership. This feature enables you to select users whose activities will not show up for any of the protected applications. Scoped monitoring is especially useful for compliance and licensing. Some compliance regulations necessitate that you refrain from monitoring users from certain countries due to local regulations. And, you can monitor fewer users to stay within the limits of your Office 365 Cloud App Security licenses.</span></span> 
+    
+- <span data-ttu-id="59bff-p108">**Neue e-Mail-server** Der e-Mail-Server für Office 365-Cloud-App-Sicherheit geändert hat und andere IP-Adressbereiche verwendet. Stellen Sie sicher, dass die Benachrichtigung zu erhalten, fügen Sie die neuen IP-Adressen zu Ihrer weißen Anti-Spam-Liste. Für Organisationen, die ihre Benachrichtigung anpassen, dadurch die Cloud App-Sicherheit mit MailChimp, einem Drittanbieter-e-Mail-Dienst für Sie. Die Liste der e-Mail-Server-IP-Adressen und Anweisungen für die Arbeit mit MailChimp finden Sie unter [netzwerkanforderungen (Microsoft Cloud App-Sicherheit)](https://docs.microsoft.com/cloud-app-security/network-requirements) und [E-Mail-Einstellungen (Microsoft Cloud App-Sicherheit)](https://docs.microsoft.com/cloud-app-security/mail-settings).</span><span class="sxs-lookup"><span data-stu-id="59bff-p108">**New email server** The email server for Office 365 Cloud App Security has changed and uses different IP address ranges. To make sure you can get notifications, add the new IP addresses to your anti-spam whitelist. For organizations who customize their notifications, Cloud App Security enables this for you using MailChimp, a third-party email service. For the list of mail server IP addresses, and instructions for enabling work with MailChimp, see [Network requirements (Microsoft Cloud App Security)](https://docs.microsoft.com/cloud-app-security/network-requirements) and [Mail settings (Microsoft Cloud App Security)](https://docs.microsoft.com/cloud-app-security/mail-settings).</span></span>
+    
+## <a name="office-365-cloud-app-security-release-121"></a><span data-ttu-id="59bff-139">Office 365 Cloud App-Sicherheit Version 121</span><span class="sxs-lookup"><span data-stu-id="59bff-139">Office 365 Cloud App Security release 121</span></span>
+
+ <span data-ttu-id="59bff-140">*6 Mai 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-140">*Released May 6, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-141">**Mit [Microsoft Cloud App-Sicherheit Version 121](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-141">**Released with [Microsoft Cloud App Security release 121](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p109">**Verbesserungen bei Anomalie Erkennung der Richtlinie**. Richtlinien für Office 365 Cloud App des Wertpapiers Anomalie Erkennung wurden verbessert, um zwei neue Typen von Erkennung, die schrittweise Einführung umfassen:</span><span class="sxs-lookup"><span data-stu-id="59bff-p109">**Anomaly detection policy improvements**. Office 365 Cloud App Security's anomaly detection policies have been improved to include two new types of threat detection that are gradually rolling out:</span></span> 
+    
+  - <span data-ttu-id="59bff-p110">**Ransomware Aktivität.** Ransomware Erkennungsfunktionen sind mit Normalbetriebswerte umfassendere Schutz vor Angriffen anspruchsvolle Ransomware zur Verfügung, erweitert.</span><span class="sxs-lookup"><span data-stu-id="59bff-p110">**Ransomware activity.** Ransomware detection capabilities are extended with anomaly detection to give you more comprehensive coverage against sophisticated ransomware attacks.</span></span> 
+    
+  - <span data-ttu-id="59bff-p111">**Aktivität des Benutzers beendet.** Communicator Web Access Benutzer Aktivität ermöglicht, die Sie zum Überwachen der Konten der beendeten Benutzer möglicherweise schon im Unternehmen Applications aufgehoben, die aber, die möglicherweise auch auf bestimmte Unternehmensressourcen zugreifen.</span><span class="sxs-lookup"><span data-stu-id="59bff-p111">**Terminated user activity.** Terminated user activity enables you to monitor the accounts of terminated users who may have been de-provisioned from corporate applications, but who might still have access to certain corporate resources.</span></span> 
+    
+    <span data-ttu-id="59bff-148">Wählen Sie zum Anzeigen Ihrer [Anomalie Erkennungsrichtlinien](anomaly-detection-policies-in-ocas.md)in der Cloud App Sicherheit in Office 365-Portal **Steuerelement** \> **Richtlinien**.</span><span class="sxs-lookup"><span data-stu-id="59bff-148">To view your [Anomaly detection policies](anomaly-detection-policies-in-ocas.md), in the Office 365 Cloud App Security portal, choose **Control** \> **Policies**.</span></span>
+    
+## <a name="office-365-cloud-app-security-release-120"></a><span data-ttu-id="59bff-149">Office 365 Cloud App-Sicherheit Version 120</span><span class="sxs-lookup"><span data-stu-id="59bff-149">Office 365 Cloud App Security release 120</span></span>
+
+ <span data-ttu-id="59bff-150">*22 April 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-150">*Released April 22, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-151">**Mit [Microsoft Cloud App-Sicherheit Version 120](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-151">**Released with [Microsoft Cloud App Security release 120](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p112">**Interne Anwendungen als die Benutzeraktivitäten**. Für Office 365 und Azure Active Directory (AD Azure) werden wir nun schrittweise, die Möglichkeit zum Erkennen von interner Anwendungen als Benutzer Kontoaktivitäten, die von der Office 365 und Azure AD-Anwendung (intern und extern) durchgeführt Gang (engl.). Dadurch können Sie Richtlinien erstellen, um Sie zu warnen, wenn eine Anwendung unerwartete und nicht autorisierte Aktivitäten ausführt.</span><span class="sxs-lookup"><span data-stu-id="59bff-p112">**Internal applications as user activities**. For Office 365 and Azure Active Directory (Azure AD), we are now gradually rolling out the ability to detect internal applications as user account activities performed by the Office 365 and Azure AD applications (both internal and external). This enables you to create policies to alert you if an application performs unexpected and unauthorized activities.</span></span> 
+    
+- <span data-ttu-id="59bff-p113">**Weitere Felder in der Liste der app-Berechtigungen zu exportieren**. Beim Exportieren einer Liste der app-Berechtigungen CSV, zusätzliche Felder wie Publisher, sind die Berechtigungen Ebene und Community-Nutzung zur Unterstützung bei der Einhaltung von Vorschriften und Untersuchung Prozess enthalten.</span><span class="sxs-lookup"><span data-stu-id="59bff-p113">**More fields in app permissions list export**. When exporting an app permissions list to csv, additional fields such as publisher, permissions level and community usage are included to assist with the compliance and investigation process.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-119"></a><span data-ttu-id="59bff-157">Office 365 Cloud App-Sicherheit Version 119</span><span class="sxs-lookup"><span data-stu-id="59bff-157">Office 365 Cloud App Security release 119</span></span>
+
+ <span data-ttu-id="59bff-158">*1 April 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-158">*Released April 1, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-159">**Mit [Microsoft Cloud App-Sicherheit Version 119](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-159">**Released with [Microsoft Cloud App Security release 119](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p114">**Verbesserungen in die Cloud Discovery**. Die Cloud Discovery enthält Informationen zur Top-Benutzer und IP-Adressen können Ansicht Verwendungsdetails zu Office 365 und anderen apps vereinfacht. Weitere Informationen finden Sie finden Sie unter [Überprüfen der app Discovery Ergebnisse in Office 365-Cloud-App-Sicherheit](review-app-discovery-findings-in-ocas.md).</span><span class="sxs-lookup"><span data-stu-id="59bff-p114">**Improvements to Cloud Discovery**. The Cloud Discovery provides more information about top users and IP addresses, making it easier to view usage details about Office 365 and other apps. To learn more, see [Review app discovery findings in Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md).</span></span>
+    
+    ![Wurde aktualisiert, das Cloud-Discovery-dashboard](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
+  
+## <a name="office-365-cloud-app-security-release-118"></a><span data-ttu-id="59bff-164">Office 365 Cloud App-Sicherheit Version 118</span><span class="sxs-lookup"><span data-stu-id="59bff-164">Office 365 Cloud App Security release 118</span></span>
+
+ <span data-ttu-id="59bff-165">*18 März 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-165">*Released March 18, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-166">**Mit [Microsoft Cloud App-Sicherheit Version 118](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-166">**Released with [Microsoft Cloud App Security release 118](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p115">**Barracuda unterstützen**. Cloud-Ermittlung unterstützt jetzt Barracuda F Datenreihe Firewalls und das streaming von Barracuda F-Serie Firewall Web Log.</span><span class="sxs-lookup"><span data-stu-id="59bff-p115">**Barracuda support**. Cloud Discovery now supports Barracuda F Series firewalls and Barracuda F-Series firewall web log streaming.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-117"></a><span data-ttu-id="59bff-169">Office 365 Cloud App-Sicherheit Version 117</span><span class="sxs-lookup"><span data-stu-id="59bff-169">Office 365 Cloud App Security release 117</span></span>
+
+ <span data-ttu-id="59bff-170">*6 März 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-170">*Released March 6, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-171">**Mit [Microsoft Cloud App-Sicherheit Version 117](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-171">**Released with [Microsoft Cloud App Security release 117](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p116">**i-FILTER unterstützt wird**. Cloud-Ermittlung unterstützt jetzt i-FILTER.</span><span class="sxs-lookup"><span data-stu-id="59bff-p116">**i-FILTER support**. Cloud Discovery now supports i-FILTER.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-116"></a><span data-ttu-id="59bff-174">Office 365 Cloud App-Sicherheit Version 116</span><span class="sxs-lookup"><span data-stu-id="59bff-174">Office 365 Cloud App Security release 116</span></span>
+
+ <span data-ttu-id="59bff-175">*18 Februar 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-175">*Released February 18, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-176">**Mit [Microsoft Cloud App-Sicherheit Version 116](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-176">**Released with [Microsoft Cloud App Security release 116](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p117">**Erweiterungen der Anomalie Erkennung Richtlinien**. Normalbetriebswerte Richtlinien in Office 365-Cloud-App-Sicherheit mit neuen szenariobasierte erkannte einschließlich unmöglich Reisen, Aktivität von verdächtigen IP-Adresse erweitert wurden und mehrere fehlgeschlagene Anmeldeversuche. Die neuen Richtlinien werden automatisch aktiviert, Out-of-Box Erkennung in der Cloudumgebung bereitstellen. Darüber hinaus stellen die neuen Richtlinien weitere Daten aus dem Office 365-Cloud-App-Sicherheit Erkennung Motor die Untersuchung beschleunigen und die laufende Bedrohungen enthalten kann. Finden Sie weitere Informationen finden Sie im Microsoft Cloud App-Sicherheit-Artikel [sofortige Verhalten Analyse- und Normalbetriebswerte erhalten möchten](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy).</span><span class="sxs-lookup"><span data-stu-id="59bff-p117">**Anomaly detection policy enhancements**. Anomaly detection polices in Office 365 Cloud App Security were enhanced with new scenario-based detections including impossible travel, activity from a suspicious IP address and multiple failed login attempts. The new policies are automatically enabled, providing out-of-the-box threat detection across your cloud environment. In addition, the new policies expose more data from the Office 365 Cloud App Security detection engine, which can help speed up the investigation process and contain ongoing threats. To learn more, see the Microsoft Cloud App Security article, [Get instantaneous behavioral analytics and anomaly detection](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy).</span></span>
+    
+- <span data-ttu-id="59bff-p118">**Log Parser Unterstützung für Formate Prüfpunkt**. Die Cloud Discovery Log Parser unterstützen jetzt zwei zusätzliche Prüfpunkt-Formate: XML- und KPC.</span><span class="sxs-lookup"><span data-stu-id="59bff-p118">**Log parser support for Checkpoint formats**. The Cloud Discovery log parsers now support two additional Checkpoint formats: XML, and KPC.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-114"></a><span data-ttu-id="59bff-184">Office 365 Cloud App-Sicherheit Version 114</span><span class="sxs-lookup"><span data-stu-id="59bff-184">Office 365 Cloud App Security release 114</span></span>
+
+ <span data-ttu-id="59bff-185">*21 Januar 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-185">*Released January 21, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-186">**Mit [Microsoft Cloud App-Sicherheit Version 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-186">**Released with [Microsoft Cloud App Security release 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p119">**Dienststatus**. Sie können nun den aktuellen Status der App-Sicherheit für Office 365 Cloud Service suchen, indem Sie ihm **helfen** \> **Systemstatus**.</span><span class="sxs-lookup"><span data-stu-id="59bff-p119">**Service status**. You can now check the current Office 365 Cloud App Security service status by going to **Help** \> **System status**.</span></span> 
+    
+    ![Klicken Sie auf Hilfe \> Systemstatus zum Anzeigen des Status des Systems](media/2b496dac-ed9d-4480-83b6-85f9510d3aea.png)
+  
+- <span data-ttu-id="59bff-p120">**Benutzerdefinierte Abfragen Aktivitätsprotokolls**. Ab Version 114, ist die Möglichkeit zum Erstellen und Speichern von benutzerdefinierten Abfragen im Protokoll Aktivität schrittweise Einführung. Benutzerdefinierte Abfragen aktivieren Sie die Filtervorlagen erstellen, die für die Untersuchung im Detail wiederverwendet werden können. Darüber hinaus vorgeschlagene Abfragen wurden hinzugefügt, um die Untersuchung Out-of-Box-Vorlagen zum Filtern der Aktivitäten bieten und apps ermittelt. Vorgeschlagene Abfragen enthalten benutzerdefinierte Filter zum Identifizieren Risiken wie Identitätswechsel Aktivitäten, Administrator Aktivitäten, riskant nicht kompatible Cloud-Speicher-apps, Enterprise-apps mit schwache Verschlüsselung und Sicherheitsrisiken. Verwenden Sie die vorgeschlagenen Abfragen als Ausgangspunkt, Bedarf zu bearbeiten Sie und speichern sie Sie als eine neue Abfrage.</span><span class="sxs-lookup"><span data-stu-id="59bff-p120">**Custom queries for Activity log**. Beginning in version 114, the ability to create and save custom queries in the Activity log is rolling out gradually. Custom queries enable you to create filter templates that can be reused for deep-dive investigation. In addition, suggested queries have been added to provide out-of-the-box investigation templates to filter your activities and discovered apps. Suggested queries include custom filters to identify risks such as impersonation activities, administrator activities, risky non-compliant cloud storage apps, enterprise apps with weak encryption, and security risks. Use the suggested queries as a starting point, modify them as needed, and then save them as a new query.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-113"></a><span data-ttu-id="59bff-196">Office 365 Cloud App-Sicherheit Version 113</span><span class="sxs-lookup"><span data-stu-id="59bff-196">Office 365 Cloud App Security release 113</span></span>
+
+ <span data-ttu-id="59bff-197">*8 Januar 2018 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-197">*Released January 8, 2018*</span></span> 
+  
+ <span data-ttu-id="59bff-198">**Mit [Microsoft Cloud App-Sicherheit Version 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-198">**Released with [Microsoft Cloud App Security release 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p121">**Log Parser Unterstützung für generische Formate**. Die Cloud Discovery Log Parser unterstützen nun eine generische folgenden Formate: LEEF, CEF und W3C.</span><span class="sxs-lookup"><span data-stu-id="59bff-p121">**Log parser support for generic formats**. The Cloud Discovery log parsers now support the following generic formats: LEEF, CEF, and W3C.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-112"></a><span data-ttu-id="59bff-201">Office 365 Cloud App-Sicherheit Version 112</span><span class="sxs-lookup"><span data-stu-id="59bff-201">Office 365 Cloud App Security release 112</span></span>
+
+ <span data-ttu-id="59bff-202">*24 Dezember 2017 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-202">*Released December 24, 2017*</span></span> 
+  
+ <span data-ttu-id="59bff-203">**Mit [Microsoft Cloud App-Sicherheit Version 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-203">**Released with [Microsoft Cloud App Security release 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p122">**Relevante Erkenntnisse Papiereinzug**. Im Protokoll Aktivität können Sie nun die relevanten Erkenntnisse Papiereinzug, indem Sie auf einen Benutzer- oder IP-Adresse zugreifen.</span><span class="sxs-lookup"><span data-stu-id="59bff-p122">**Relevant insight drawer**. In the Activity log, you can now access the relevant insight drawer by clicking on a user name or IP address.</span></span> 
+    
+    ![Klicken Sie auf einen Benutzer- oder IP-Adresse der relevanten Erkenntnisse Papiereinzug im Protokoll Aktivität finden Sie unter.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
+  
+- <span data-ttu-id="59bff-p123">Die **Möglichkeit, mehrere Aktivitäten mit einem Klick anzuzeigen**. In der entsprechenden Erkenntnisse Papiereinzug können Sie das Uhrsymbol, um alle Aktivitäten ausgeführt innerhalb von 48 Stunden einer ausgewählten Aktivität anzeigen klicken.</span><span class="sxs-lookup"><span data-stu-id="59bff-p123">**Ability to view more activities with a click**. In the relevant insight drawer, you can click the clock icon to view all activities performed within 48 hours of a selected activity.</span></span> 
+    
+    ![In der entsprechenden Insights Papiereinzug können Sie das Uhrsymbol, um Aktivitäten, die innerhalb einer ausgewählten Aktivität 48 Stunden ausgeführt finden Sie unter klicken.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+  
+- <span data-ttu-id="59bff-p124">**Log Parser Verbesserungen für Juniper SRX**. Verbesserungen bei der Cloud Discovery Log Parser für Juniper SRX wurde.</span><span class="sxs-lookup"><span data-stu-id="59bff-p124">**Log parser improvements for Juniper SRX**. Improvements were made to the Cloud Discovery log parser for Juniper SRX.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-111"></a><span data-ttu-id="59bff-212">Office 365 Cloud App-Sicherheit Version 111</span><span class="sxs-lookup"><span data-stu-id="59bff-212">Office 365 Cloud App Security release 111</span></span>
+
+ <span data-ttu-id="59bff-213">*10 Dezember 2017 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-213">*Released December 10, 2017*</span></span> 
+  
+ <span data-ttu-id="59bff-214">**Mit [Microsoft Cloud App-Sicherheit Version 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-214">**Released with [Microsoft Cloud App Security release 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p125">**Zeit Filter Verbesserungen**. Zeitfilter sind nun leichter zu verwenden. Zugriff auf eine Zeitfilter, in einer Ansicht, wie etwa Aktivitätsprotokolls, Richtlinien, Benachrichtigungen, mit der erweiterten Ansicht, wählen Sie in der Liste der Filter **Datum** . Wählen Sie dann eine Option wie vor, nach oder in zwischen den Zeitfilter anwenden.</span><span class="sxs-lookup"><span data-stu-id="59bff-p125">**Time filter improvements**. Time filters are now easier to use. To access a time filter, in a view, such as Activity log, Policies, Alerts, using the Advanced view, choose **Date** in the list of filters. Then choose an option, such as before, after, or in between to apply the time filter.</span></span> 
+    
+    ![Verwenden Sie den Datumsfilter, um Informationen vor, nach oder zwischen Datumsangaben anzuzeigen.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
+  
+## <a name="office-365-cloud-app-security-release-110"></a><span data-ttu-id="59bff-220">Office 365 Cloud App-Sicherheit Version 110</span><span class="sxs-lookup"><span data-stu-id="59bff-220">Office 365 Cloud App Security release 110</span></span>
+
+ <span data-ttu-id="59bff-221">*26 November 2017 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-221">*Released November 26, 2017*</span></span> 
+  
+ <span data-ttu-id="59bff-222">**Mit [Microsoft Cloud App-Sicherheit Version 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-222">**Released with [Microsoft Cloud App Security release 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p126">**SIEM-Server-Integration jetzt erhältlich**. Verbinden Sie Ihre Server SIEM mit Office 365-Cloud-App-Sicherheit. Sie können jetzt Warnungen und Aktivitäten automatisch auf Ihrem Server SIEM Wahl senden, SIEM Agents konfigurieren. Finden Sie unter [Integrieren Ihrer SIEM Server mit Office 365-Cloud-App-Sicherheit](integrate-your-siem-server-with-office-365-cas.md).</span><span class="sxs-lookup"><span data-stu-id="59bff-p126">**SIEM server integration now generally available**. Connect your SIEM server to Office 365 Cloud App Security. You can now send alerts and activities automatically to your SIEM server of choice by configuring SIEM Agents. See [Integrate your SIEM server with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md).</span></span>
+    
+- <span data-ttu-id="59bff-p127">**Einfacher Zugriff auf Inhalte zu unterstützen**. Verwenden das neue Fragezeichen in der oberen rechten Ecke, können Sie jetzt den Hilfeinhalt von innerhalb der Seiten von der Cloud App Sicherheit in Office 365-Portal zugreifen. Jeder Link ist kontextbezogene, wobei Sie mit den Informationen, die, den Sie benötigen, basierend auf der Seite Sie sich befinden.</span><span class="sxs-lookup"><span data-stu-id="59bff-p127">**Easier access to help content**. Using the new question mark in the upper right corner, you can now access the help content from within the pages of the Office 365 Cloud App Security portal. Each link is context-sensitive, taking you to the information you need, based on the page you're on.</span></span> 
+    
+- <span data-ttu-id="59bff-p128">**Senden Sie uns Feedback**. Verwenden das Smiley in der oberen rechten Ecke, können Sie jetzt Feedback von jeder Seite des Office 365-Cloud-App-Sicherheit Portals senden. So können Sie zum Melden von Fehlern, fordern die neuen Features und Ihre Erfahrung direkt mit dem Office 365-Cloud-App-Sicherheit Team freigeben.</span><span class="sxs-lookup"><span data-stu-id="59bff-p128">**Send us feedback**. Using the smiley face in the upper right corner, you can now send feedback from every page of the Office 365 Cloud App Security portal. This enables you to report bugs, request new features and share your experience directly with the Office 365 Cloud App Security team.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-102"></a><span data-ttu-id="59bff-233">Office 365 Cloud App-Sicherheit Version 102</span><span class="sxs-lookup"><span data-stu-id="59bff-233">Office 365 Cloud App Security release 102</span></span>
+
+ <span data-ttu-id="59bff-234">*13 August 2017 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-234">*Released August 13, 2017*</span></span> 
+  
+ <span data-ttu-id="59bff-235">**Mit [Microsoft Cloud App-Sicherheit Version 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-235">**Released with [Microsoft Cloud App Security release 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p129">**Neue Untersuchung Benutzeraktionen** aktivieren ein höheres Maß an-Drilldown zum Benutzer Untersuchungen. Auf einer Seite untersuchen können und bewegen Sie den Mauszeiger auf eine Aktivität, Benutzer oder Konto als Filter anwenden, und von dort können Sie die zugehörige Aktivitäten oder Ereignisse anzeigen.</span><span class="sxs-lookup"><span data-stu-id="59bff-p129">**New user investigation actions** enable an added level of drill-down to user investigations. On an Investigate page, you can hover on an activity, user, or account and apply it as a filter, and from there, you can view related activities or events.</span></span> 
+    
+## <a name="office-365-cloud-app-security-release-100"></a><span data-ttu-id="59bff-238">Office 365 Cloud App-Sicherheit Version 100</span><span class="sxs-lookup"><span data-stu-id="59bff-238">Office 365 Cloud App Security release 100</span></span>
+
+ <span data-ttu-id="59bff-239">*17 Juli 2017 veröffentlicht*</span><span class="sxs-lookup"><span data-stu-id="59bff-239">*Released July 17, 2017*</span></span> 
+  
+ <span data-ttu-id="59bff-240">**Mit [Microsoft Cloud App-Sicherheit Version 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)Released**:</span><span class="sxs-lookup"><span data-stu-id="59bff-240">**Released with [Microsoft Cloud App Security release 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**:</span></span> 
+  
+- <span data-ttu-id="59bff-p130">**Sicherheit Extensions** ist ein neues Dashboard, in dem Sie alle Ihre Sicherheit Erweiterungen zentral für Office 365 Cloud App-Sicherheit, einschließlich API Token und SIEM Agents verwalten können. Zum Anzeigen eines Dashboards Extensions Sicherheit, gehen Sie folgendermaßen vor:</span><span class="sxs-lookup"><span data-stu-id="59bff-p130">**Security extensions** is a new dashboard where you can centrally manage all your security extensions for Office 365 Cloud App Security, including API tokens and SIEM agents. To view the Security extensions dashboard, follow these steps:</span></span> 
+    
+1. <span data-ttu-id="59bff-p131">Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.)</span><span class="sxs-lookup"><span data-stu-id="59bff-p131">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.)</span></span> 
+    
+2. <span data-ttu-id="59bff-245">Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.</span><span class="sxs-lookup"><span data-stu-id="59bff-245">Go to **Alerts** \> **Manage advanced alerts**.</span></span>
+    
+3. <span data-ttu-id="59bff-246">Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.</span><span class="sxs-lookup"><span data-stu-id="59bff-246">Choose **Go to Office 365 Cloud App Security**.</span></span>
+    
+    ![In das Wertpapier &amp; Compliance Center, wählen Sie Warnungen \> erweiterte Benachrichtigungen verwalten \> wechseln Sie zur erweiterten Sicherheit-Verwaltung](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
+  
+4. <span data-ttu-id="59bff-248">**Auswählen von** \> **Security Extensions**.</span><span class="sxs-lookup"><span data-stu-id="59bff-248">Choose **Settings** \> **Security extensions**.</span></span>
+    
+    ![Wählen Sie im Portal ASM Einstellungen \> Security-Erweiterungen](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
+  
+- <span data-ttu-id="59bff-p132">**Verbesserte analysieren**. Im Protokoll Cloud Discovery Analyse Mechanismus wurden Verbesserungen vorgenommen. Interne Fehler sind weitaus geringerer Wahrscheinlichkeit auftreten.</span><span class="sxs-lookup"><span data-stu-id="59bff-p132">**Improved parsing**. Improvements were made in the Cloud Discovery log parsing mechanism. Internal errors are significantly less likely to occur.</span></span> 
+    
+- <span data-ttu-id="59bff-p133">**Erwartete Protokollformate**. Das erwartete Format für Cloud-Discovery-Protokolle enthält nun Beispiele für sowohl Syslog und FTP-Format.</span><span class="sxs-lookup"><span data-stu-id="59bff-p133">**Expected log formats**. The expected log format for Cloud Discovery logs now provides examples for both Syslog format and FTP format.</span></span> 
+    
+## <a name="related-topics"></a><span data-ttu-id="59bff-255">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="59bff-255">Related topics</span></span>
+
+[<span data-ttu-id="59bff-256">Hilfeinhalte für Office 365-Cloud-App-Sicherheit</span><span class="sxs-lookup"><span data-stu-id="59bff-256">Office 365 Cloud App Security help content</span></span>](office-365-cas-help.md)
+  
+[<span data-ttu-id="59bff-257">Auslastung Aktivitäten nach der Einführung der Office 365-Cloud-App-Sicherheit</span><span class="sxs-lookup"><span data-stu-id="59bff-257">Utilization activities after rolling out Office 365 Cloud App Security</span></span>](utilization-activities-for-ocas.md)
+  
+[<span data-ttu-id="59bff-258">Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="59bff-258">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+  
+

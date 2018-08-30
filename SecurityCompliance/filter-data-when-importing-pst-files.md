@@ -1,0 +1,146 @@
+---
+title: Filtern von Daten beim Importieren von PST-Dateien in Office 365
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 10/24/2017
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Strat_O365_IP
+search.appverid:
+- MOE150
+- MET150
+ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
+description: 'Verwenden Sie das neue Feature für intelligente Import in den Import von Office 365-Dienst zum Filtern der Elemente, die tatsächlich an die Ziel-Postfächer importiert. Intelligente importieren können Sie die proaktiv entscheiden, welche Daten zu importieren und zu bleiben. Intelligente Import außerdem Insights auf die Daten, die Sie zu Office 365 importieren. '
+ms.openlocfilehash: 723a2e05a1f5d256e99bcf8497643435d0c98a23
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22528862"
+---
+# <a name="filter-data-when-importing-pst-files-to-office-365"></a><span data-ttu-id="347de-105">Filtern von Daten beim Importieren von PST-Dateien in Office 365</span><span class="sxs-lookup"><span data-stu-id="347de-105">Filter data when importing PST files to Office 365</span></span>
+
+<span data-ttu-id="347de-p102">Verwenden Sie das neue Feature für intelligente Import in den Import von Office 365-Dienst zum Filtern der Elemente in PST-Dateien, die tatsächlich an die Ziel-Postfächer importiert. Hier wird die Funktionsweise:</span><span class="sxs-lookup"><span data-stu-id="347de-p102">Use the new Intelligent Import feature in the Office 365 Import service to filter the items in PST files that actually get imported to the target mailboxes. Here's how it works:</span></span>
+  
+- <span data-ttu-id="347de-108">Nachdem Sie erstellen und senden einen Auftrag für Import von PST-Datei, werden PST-Dateien in einen Bereich Azure-Speicher in der Microsoft-Cloud hochgeladen.</span><span class="sxs-lookup"><span data-stu-id="347de-108">After you create and submit a PST import job, PST files are uploaded to an Azure storage area in the Microsoft cloud.</span></span>
+    
+- <span data-ttu-id="347de-109">Office 365 analysiert die Daten in die PST-Dateien auf sichere Weise durch das Identifizieren von des Alters der Postfachelemente und die verschiedenen Nachrichtentypen in PST-Dateien enthalten.</span><span class="sxs-lookup"><span data-stu-id="347de-109">Office 365 analyzes the data in the PST files, in a safe and secure manner, by identifying the age of the mailbox items and the different message types included in the PST files.</span></span>
+    
+- <span data-ttu-id="347de-p103">Wenn die Analyse abgeschlossen ist, und die Daten zum Importieren bereit sind, müssen Sie die Option zum Importieren alle Daten in die PST-Dateien oder erhöhen, die Daten, die durch Festlegen von Filtern, die steuern, welche Daten importierten ruft importiert wird. Sie können beispielsweise an:</span><span class="sxs-lookup"><span data-stu-id="347de-p103">When the analysis is complete and the data is ready to import, you have the option to import all data in the PST files as is or trim the data that's imported by setting filters that control what data gets imported. For example, you can choose to:</span></span>
+    
+  - <span data-ttu-id="347de-112">Importieren Sie nur die Elemente mit einem bestimmten Alter.</span><span class="sxs-lookup"><span data-stu-id="347de-112">Import only items of a certain age.</span></span>
+    
+  - <span data-ttu-id="347de-113">Importieren von ausgewählten Nachrichtentypen.</span><span class="sxs-lookup"><span data-stu-id="347de-113">Import selected message types.</span></span>
+    
+  - <span data-ttu-id="347de-114">Ausschließen von Nachrichten von bestimmten Personen gesendet oder empfangen.</span><span class="sxs-lookup"><span data-stu-id="347de-114">Exclude messages sent or received by specific people.</span></span>
+    
+- <span data-ttu-id="347de-115">Nach der Konfiguration der filtereinstellungen importiert Office 365 nur die Daten, die an die Ziel-Postfächer in den Importauftrag angegebenen Filterkriterien erfüllt.</span><span class="sxs-lookup"><span data-stu-id="347de-115">After you configure the filter settings, Office 365 imports only the data that meets the filtering criteria to the target mailboxes specified in the import job.</span></span>
+    
+<span data-ttu-id="347de-116">In der folgenden Grafik veranschaulicht den intelligenten importieren, und die Aufgaben, die ausgeführt werden und die Aufgaben, die von Office 365 durchgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="347de-116">The following graphic shows the Intelligent Import process, and highlights the tasks you perform and the tasks performed by Office 365.</span></span>
+  
+![Der intelligente Importvorgang in Office 365](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
+  
+## <a name="before-you-begin"></a><span data-ttu-id="347de-118">Bevor Sie beginnen</span><span class="sxs-lookup"><span data-stu-id="347de-118">Before you begin</span></span>
+
+- <span data-ttu-id="347de-p104">Die Schritte in diesem Thema wird vorausgesetzt, dass Sie einen Auftrag für Import von PST-Datei im Office 365 importieren-Dienst mithilfe von Netzwerk hochladen oder Laufwerk des Protokollversands erstellt haben. Eine schrittweise Anleitung finden Sie in den folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="347de-p104">The steps in this topic assume that you've created a PST import job in the Office 365 Import service by using network upload or drive shipping. For step-by-step instructions, see one of the following topics:</span></span>
+    
+  - [<span data-ttu-id="347de-121">Verwenden des Netzwerkuploads zum Importieren von PST-Dateien in Office 365</span><span class="sxs-lookup"><span data-stu-id="347de-121">Use network upload to import PST files to Office 365</span></span>](use-network-upload-to-import-pst-files.md)
+    
+  - [<span data-ttu-id="347de-122">Verwenden des Laufwerkversands zum Importieren von PST-Dateien in Office 365</span><span class="sxs-lookup"><span data-stu-id="347de-122">Use drive shipping to import PST files to Office 365</span></span>](use-drive-shipping-to-import-pst-files-to-office-365.md)
+    
+- <span data-ttu-id="347de-p105">Nach dem Erstellen einer Importauftrag mithilfe von Netzwerk-Upload Seite des Status für den Importauftrag für den Import in Office 365-Sicherheit &amp; Compliance Center auf festgelegt ist **Analysis ausgeführt**, was bedeutet, dass Office 365 die Daten in die PST-Dateien analysiert, die Sie hochgeladen. Klicken Sie auf **Aktualisieren**![aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) zum Aktualisieren des Status für den Importauftrag.</span><span class="sxs-lookup"><span data-stu-id="347de-p105">After you create an import job by using network upload, the status for the import job on the Import page in Office 365 Security &amp; Compliance Center is set to **Analysis in progress**, which means that Office 365 is analyzing the data in the PST files that you uploaded. Click **Refresh**![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) to update the status for the import job.</span></span> 
+    
+- <span data-ttu-id="347de-125">Für Laufwerk ausgeliefert Importaufträge werden die Daten von Office 365 analysiert nach Microsoft Mitarbeiter im Rechenzentrum Ihrer Festplatte empfangen und Hochladen von PST-Dateien in den Bereich der Azure-Speicher für Ihre Organisation.</span><span class="sxs-lookup"><span data-stu-id="347de-125">For drive shipping import jobs, the data will be analyzed by Office 365 after Microsoft data center personnel receive your hard drive and upload the PST files to the Azure storage area for your organization.</span></span>
+  
+## <a name="filter-data-that-gets-imported-to-mailboxes"></a><span data-ttu-id="347de-126">Filtern von Daten, die auf Postfächer importiert Ruft</span><span class="sxs-lookup"><span data-stu-id="347de-126">Filter data that gets imported to mailboxes</span></span>
+
+<span data-ttu-id="347de-127">Nach dem Erstellen eine PST-Datei importieren Auftrag, befolgen Sie diese Schritte, um die Daten zu filtern, bevor Sie es in Office 365 importieren.</span><span class="sxs-lookup"><span data-stu-id="347de-127">After you've created a PST import job, follow these steps to filter the data before you import it to Office 365.</span></span>
+  
+1. <span data-ttu-id="347de-128">Wechseln Sie zu [https://protection.office.com/](https://protection.office.com/) und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Office 365-Organisation.</span><span class="sxs-lookup"><span data-stu-id="347de-128">Go to [https://protection.office.com/](https://protection.office.com/) and sign in using the credentials for an administrator account in your Office 365 organization.</span></span> 
+    
+2. <span data-ttu-id="347de-129">Im linken Bereich der Office 365-Sicherheit &amp; Compliance Center, klicken Sie auf **Daten Governance** \> **Importieren**.</span><span class="sxs-lookup"><span data-stu-id="347de-129">In the left pane of the Office 365 Security &amp; Compliance Center, click **Data governance** \> **Import**.</span></span>
+    
+    <span data-ttu-id="347de-p106">Der Importaufträge für Ihre Organisation werden auf der Seite **Importieren** aufgelistet. Beachten Sie, dass der **Analyse abgeschlossen** Wert in der Spalte **Status** der Importaufträge angibt, die haben von Office 365 analysiert wurde und für die Sie importieren bereit sind.</span><span class="sxs-lookup"><span data-stu-id="347de-p106">The import jobs for your organization are listed on the **Import** page. Note that the **Analysis completed** value in the **Status** column indicates the import jobs that have been analyzed by Office 365 and are ready for you to import.</span></span> 
+    
+    ![Analyse abgeschlossen Status gibt an, dass es sich bei Office 365 die Daten in PST-Dateien analysiert hat](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
+  
+3. <span data-ttu-id="347de-133">Klicken Sie auf **importieren zu Office 365** für den Importauftrag aus, dem Sie ausführen möchten.</span><span class="sxs-lookup"><span data-stu-id="347de-133">Click **Ready to import to Office 365** for the import job that you want to complete.</span></span> 
+    
+    <span data-ttu-id="347de-134">Ausfliegen Seite wird mit Informationen zu den PST-Dateien und andere Informationen zu den Importauftrag angezeigt.</span><span class="sxs-lookup"><span data-stu-id="347de-134">A fly out page is displayed with information about the PST files and other information about the import job.</span></span>
+    
+4. <span data-ttu-id="347de-135">Klicken Sie auf **Import zu Office 365**.</span><span class="sxs-lookup"><span data-stu-id="347de-135">Click **Import to Office 365**.</span></span>
+    
+    <span data-ttu-id="347de-p107">Die Seite **Filtern die Daten** wird angezeigt. Einblicke in die Daten zu den Daten in die PST-Dateien für den Importauftrag, einschließlich Informationen über das Alter der Daten enthält.</span><span class="sxs-lookup"><span data-stu-id="347de-p107">The **Filter your data** page is displayed. It contains data insights about the data in the PST files for the import job, including information about the age of the data.</span></span> 
+    
+    ![Der Filter der Datenseite zeigt Einblicke in die Daten der PST-Dateien für den Importauftrag](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
+  
+5. <span data-ttu-id="347de-139">Basierend auf unabhängig davon, ob Sie gekürzt werden die Daten, die in Office 365,, klicken Sie unter importiert wird möchten **möchten Sie Ihre Daten filtern?**, eine der folgenden Aktionen aus:</span><span class="sxs-lookup"><span data-stu-id="347de-139">Based on whether or not you want to trim the data that's imported to Office 365, under **Do you want to filter your data?**, do one of the following:</span></span>
+    
+    <span data-ttu-id="347de-p108">a. Klicken Sie auf **Ja, ich möchte vor dem Importieren von Filtern** , um die Daten zu kürzen, die Sie importieren, und klicken Sie dann auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="347de-p108">a. Click **Yes, I want to filter it before importing** to trim the data that you import, and then click **Next**.</span></span>
+    
+    <span data-ttu-id="347de-142">Das **Importieren von Daten in Office 365-Seite** mit Detaildaten Insights aus der Analyse angezeigt wird, das Office 365 ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="347de-142">The **Import data to Office 365 page** page is displayed with detailed data insights from the analysis that Office 365 performed.</span></span> 
+    
+    ![Office 365 zeigt detaillierte Daten Einblicke in der Analyse der PST-Dateien](media/4881205f-0288-4c32-a440-37e2160295f2.png)
+  
+    <span data-ttu-id="347de-p109">Das Diagramm auf dieser Seite zeigt die Menge der Daten, die importiert werden. Informationen zu jedem Nachrichtentyp in PST-Dateien gefunden werden im Diagramm angezeigt. Sie können den Cursor über jeder Balken anzuzeigenden spezifische Informationen zu diesem Nachrichtentyp bewegen. Es ist auch ein Dropdown-Listenfeld mit verschiedenen Alter Werte basierend auf der Analyse der PST-Dateien. Wenn Sie ein Alter in der Dropdown-Liste auswählen, wird im Diagramm aktualisiert, um anzuzeigen, wie viele Daten für das ausgewählte Alter importiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="347de-p109">The graph on this page shows the amount of data that will be imported. Information about each message type found in the PST files is displayed in the graph. You can hover the cursor over each bar to display specific information about that message type. There is also a drop-down list with different age values based on the analysis of the PST files. When you select an age in the drop-down list, the graph is updated to show how much data will be imported for the selected age.</span></span> 
+    
+    <span data-ttu-id="347de-p110">b. zum Konfigurieren der Addition Filter an, um die Datenmenge zu reduzieren, die importiert wird, klicken Sie auf **Weitere Filteroptionen**.</span><span class="sxs-lookup"><span data-stu-id="347de-p110">b. To configure addition filters to reduce the amount of data that's imported, click **More filtering options**.</span></span>
+    
+    ![Konfigurieren Sie die Filter auf der Seite für weitere Optionen zu erhöhen, die Daten, die importiert werden](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
+  
+    <span data-ttu-id="347de-152">Sie können diese Filter konfigurieren:</span><span class="sxs-lookup"><span data-stu-id="347de-152">You can configure these filters:</span></span>
+    
+      - <span data-ttu-id="347de-p111">**Alter** - wählen Sie ein Alter, sodass nur Elemente vorhanden und neuer ist als der angegebene Alter sind importiert werden sollen. Finden Sie im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) darüber, wie Office 365 mit der ALTER-Buckets für den Filter **Alter** bestimmt eine Beschreibung ein.</span><span class="sxs-lookup"><span data-stu-id="347de-p111">**Age** - Select an age so only items that are newer than the specified age will be imported. See the [More information](filter-data-when-importing-pst-files.md#moreinfo) section for a description about how Office 365 determines the age buckets for the **Age** filter.</span></span> 
+    
+      - <span data-ttu-id="347de-p112">**Typ** – in diesem Abschnitt zeigt alle Nachrichtentypen, die in die PST-Dateien für den Importauftrag gefunden wurden. Deaktivieren Sie ein Kontrollkästchen neben einem Nachrichtentyp, die Sie ausschließen möchten. Beachten Sie, dass Sie den anderen Nachrichtentyp ausschließen ist nicht möglich. Finden Sie im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) erhalten Sie eine Liste der Postfachelemente, die in der anderen Kategorie enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="347de-p112">**Type** - This section shows all the message types that were found in the PST files for the import job. You can uncheck a box next to a message type that you want to exclude. Note that you can't exclude the Other message type. See the [More information](filter-data-when-importing-pst-files.md#moreinfo) section for a list of mailbox items that are included in the Other category.</span></span> 
+    
+      - <span data-ttu-id="347de-p113">**Benutzer** : Sie können Nachrichten, die gesendet oder Empfangen von bestimmten Personen werden ausschließen. Ausschließen von Personen, die in der From stehen: Feld, um: Field- oder Cc: Feld von Nachrichten, klicken Sie neben diesem Empfängertyp auf **Ausschließen von Benutzern** . Geben Sie die e-Mail-Adresse (SMTP-Adresse) der Person ein, klicken Sie auf **Hinzufügen**![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) diese zur Liste der ausgeschlossenen Benutzer für diesen Empfänger hinzufügen, und klicken Sie dann auf **Speichern** , um die Liste der ausgeschlossenen Benutzer speichern.</span><span class="sxs-lookup"><span data-stu-id="347de-p113">**Users** - You can exclude messages that are sent or received by specific people. To exclude people who appear in the From: field, To: field, or the Cc: field of messages, click **Exclude users** next to that recipient type. Type the email address (SMTP address) of the person, click **Add**![New icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) to add them to the list of excluded users for that recipient type, and then click **Save** to save the list of excluded users.</span></span> 
+    
+        > [!NOTE]
+        > <span data-ttu-id="347de-p114">Office 365 wird Einblicke in die Daten aus dem Festlegen des Filters **Personen** nicht angezeigt. Wenn Sie diesen Filter, Nachrichten von bestimmten Personen gesendet oder empfangen auszuschließen festlegen, werden diese Nachrichten während des tatsächlichen Importvorgangs ausgeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="347de-p114">Office 365 doesn't show data insights that result from setting the **People** filter. However, if you set this filter to exclude messages sent or received by specific people, those messages will be excluded during the actual import process.</span></span> 
+  
+    <span data-ttu-id="347de-p115">c. Klicken Sie auf **Übernehmen** in die Seite zum Speichern Ihrer filtereinstellungen für Ausfliegen **Weitere Filteroptionen** .</span><span class="sxs-lookup"><span data-stu-id="347de-p115">c. Click **Apply** in the **More filtering options** fly out page to save your filter settings.</span></span> 
+    
+    <span data-ttu-id="347de-p116">Die Daten, die auf der Seite **Daten importieren auf Office 365** Insights basierend auf Ihrer filtereinstellungen für aktualisiert werden, einschließlich der Gesamtmenge der Daten, die importiert werden auf der Basis Filter. Beachten Sie, dass auch eine Zusammenfassung der filtereinstellungen für angezeigt wird. Sie können **Bearbeiten** neben einen Filter zum Ändern der Einstellung bei Bedarf klicken.</span><span class="sxs-lookup"><span data-stu-id="347de-p116">The data insights on the **Import data to Office 365** page are updated based on your filter settings, including the total amount of data that will be imported based on the filter settings. Note that a summary of the filter settings is also shown. You can click **Edit** next to a filter to change the setting if necessary.</span></span> 
+    
+    ![Einblicke in die die Daten werden basierend auf Ihrer filtereinstellungen für aktualisiert.](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
+  
+    <span data-ttu-id="347de-p117">d. Klicken Sie auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="347de-p117">d. Click **Next**.</span></span>
+    
+    <span data-ttu-id="347de-p118">Anzeigen Ihrer filtereinstellungen für eine Statusseite angezeigt. In diesem Fall können Sie Filter Einstellungen bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="347de-p118">A status page is displayed showing your filter settings. Again, you can edit any of the filter settings.</span></span>
+    
+    <span data-ttu-id="347de-p119">e. Klicken Sie auf **Daten importieren** , um den Import starten. Beachten Sie, dass die Gesamtmenge der Daten, die importiert werden angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="347de-p119">e. Click **Import data** to start the import . Note that the total amount of data that will be imported is displayed.</span></span> 
+    
+    <span data-ttu-id="347de-177">oder -</span><span class="sxs-lookup"><span data-stu-id="347de-177">Or</span></span>
+    
+    <span data-ttu-id="347de-p120">a. Klicken Sie auf **Nein, ich möchte alles importieren** , um alle Daten in die PST-Dateien in Office 365 zu importieren, und klicken Sie dann auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="347de-p120">a. Click **No, I want to import everything** to import all data in the PST files to Office 365, and then click **Next**.</span></span>
+    
+    <span data-ttu-id="347de-p121">b. Klicken Sie auf der Seite **Importieren von Daten zu Office 365** klicken Sie auf **Daten importieren** , um den Import starten. Beachten Sie, dass die Gesamtmenge der Daten, die importiert werden angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="347de-p121">b. On the **Import data to Office 365** page, click **Import data** to start the import. Note that the total amount of data that will be imported is displayed.</span></span> 
+    
+6. <span data-ttu-id="347de-p122">Klicken Sie auf der Seite **Importieren** auf **Refresh** ![aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). Der Status für den Importauftrag wird in der Spalte **Status** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="347de-p122">On the **Import** page, click **Refresh** ![refresh](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). The status for the import job is displayed in the **Status** column.</span></span> 
+    
+7. <span data-ttu-id="347de-185">Klicken Sie auf dem Import der Auftrag zum Anzeigen von Ausführlichere Informationen, wie der Status für jede PST-Datei und der filtereinstellungen, die Sie konfiguriert haben.</span><span class="sxs-lookup"><span data-stu-id="347de-185">Click the import the job to display more detailed information, such as the status for each PST file and the filter settings that you configured.</span></span>
+
+  
+## <a name="more-information"></a><span data-ttu-id="347de-186">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="347de-186">More information</span></span>
+
+- <span data-ttu-id="347de-p123">Bestimmt Office 365 wie die Schritten für den Filter ALTER? Office 365 eine PST-Datei analysiert, sucht unter der gesendete oder empfangene Zeitstempel der einzelnen Elemente (wenn ein Element einen Zeitstempel gesendeten und empfangenen wurde, wird das älteste Datum ausgewählt). Klicken Sie dann Office 365 befasst sich mit den Wert des Jahres für diese Zeitstempel und vergleicht ihn mit dem aktuellen Datum das Alter des Elements bestimmt. Diese Jahren werden dann als die Werte in der Dropdown-Liste für den **Age** -Filter verwendet. Wenn eine PST-Datei Nachrichten von 2015, 2016 und 2014 aufweist, Werte in der **Age** -Filter würde beispielsweise **1 Jahr**, **2 Jahre**und **3 Jahren**sein.</span><span class="sxs-lookup"><span data-stu-id="347de-p123">How does Office 365 determine the increments for the age filter? When Office 365 analyzes a PST file, it looks at the sent or received time stamp of each item (if an item has both a sent and received timestamp, the oldest date is selected). Then Office 365 looks at the year value for that timestamp and compares it to the current date to determine the age of the item. These ages are then used as the values in the drop-down list for the **Age** filter. For example, if a PST file has messages from 2016, 2015, and 2014, then values in the **Age** filter would be **1 year**, **2 years**, and **3 years**.</span></span>
+    
+- <span data-ttu-id="347de-p124">Die folgende Tabelle enthält die Nachrichtentypen, die in der **anderen** Kategorie im **Typ** Filter auf der Seite Ausfliegen **Weitere Optionen** enthalten sind (siehe Schritt 5 b in der vorherigen Prozedur). Sie können nicht aktuell, Elemente in der Kategorie "Andere" ausgeschlossen werden beim Importieren von PST-Dateien in Office 365.</span><span class="sxs-lookup"><span data-stu-id="347de-p124">The following table lists the message types that are included in the **Other** category in the **Type** filter on the **More options** fly out page (see Step 5b in the previous procedure). Currently, you can't exclude items in the "Other" category when you import PSTs to Office 365.</span></span> 
+    
+    |<span data-ttu-id="347de-194">**ID der Nachrichtenklasse**</span><span class="sxs-lookup"><span data-stu-id="347de-194">**Message class ID**</span></span>|<span data-ttu-id="347de-195">**Postfachelemente, die diese Nachrichtenklasse verwenden**</span><span class="sxs-lookup"><span data-stu-id="347de-195">**Mailbox items that use this message class**</span></span>|
+    |:-----|:-----|
+    |<span data-ttu-id="347de-196">IPM. Aktivität</span><span class="sxs-lookup"><span data-stu-id="347de-196">IPM.Activity</span></span>  <br/> |<span data-ttu-id="347de-197">Journaleinträge</span><span class="sxs-lookup"><span data-stu-id="347de-197">Journal entries</span></span>  <br/> |
+    |<span data-ttu-id="347de-198">IPM. Dokument</span><span class="sxs-lookup"><span data-stu-id="347de-198">IPM.Document</span></span>  <br/> |<span data-ttu-id="347de-199">Dokumente und Dateien (nicht an eine e-Mail-Nachricht angefügt)</span><span class="sxs-lookup"><span data-stu-id="347de-199">Documents and files (not attached to an email message)</span></span>  <br/> |
+    |<span data-ttu-id="347de-200">IPM. Datei</span><span class="sxs-lookup"><span data-stu-id="347de-200">IPM.File</span></span>  <br/> |<span data-ttu-id="347de-201">(identisch mit IPM. Dokument)</span><span class="sxs-lookup"><span data-stu-id="347de-201">(same as IPM.Document)</span></span>  <br/> |
+    |<span data-ttu-id="347de-202">IPM. Note.IMC.Notification</span><span class="sxs-lookup"><span data-stu-id="347de-202">IPM.Note.IMC.Notification</span></span>  <br/> |<span data-ttu-id="347de-203">Berichte vom Internet Mail eine Verbindung herzustellen, ist das Exchange Server-Gateway zum Internet gesendet</span><span class="sxs-lookup"><span data-stu-id="347de-203">Reports sent by Internet Mail Connect, which is the Exchange Server gateway to the Internet</span></span>  <br/> |
+    |<span data-ttu-id="347de-204">IPM. Note.Microsoft.Fax</span><span class="sxs-lookup"><span data-stu-id="347de-204">IPM.Note.Microsoft.Fax</span></span>  <br/> |<span data-ttu-id="347de-205">Faxnachrichten</span><span class="sxs-lookup"><span data-stu-id="347de-205">Fax messages</span></span>  <br/> |
+    |<span data-ttu-id="347de-206">IPM. Note.Rules.Oof.Template.Microsoft</span><span class="sxs-lookup"><span data-stu-id="347de-206">IPM.Note.Rules.Oof.Template.Microsoft</span></span>  <br/> |<span data-ttu-id="347de-207">Abwesenheits automatische Antwortnachrichten</span><span class="sxs-lookup"><span data-stu-id="347de-207">Out-of-office auto-reply messages</span></span>  <br/> |
+    |<span data-ttu-id="347de-208">IPM. Note.Rules.ReplyTemplate.Microsoft</span><span class="sxs-lookup"><span data-stu-id="347de-208">IPM.Note.Rules.ReplyTemplate.Microsoft</span></span>  <br/> |<span data-ttu-id="347de-209">Eine Posteingangsregel gesendeten Antworten</span><span class="sxs-lookup"><span data-stu-id="347de-209">Replies sent by an inbox rule</span></span>  <br/> |
+    |<span data-ttu-id="347de-210">IPM. OLE. Klasse</span><span class="sxs-lookup"><span data-stu-id="347de-210">IPM.OLE.Class</span></span>  <br/> |<span data-ttu-id="347de-211">Ausnahmen für eine Besprechungsserie</span><span class="sxs-lookup"><span data-stu-id="347de-211">Exceptions for a recurring series</span></span>  <br/> |
+    |<span data-ttu-id="347de-212">IPM. Recall.Report</span><span class="sxs-lookup"><span data-stu-id="347de-212">IPM.Recall.Report</span></span>  <br/> |<span data-ttu-id="347de-213">Berichte zum Nachrichtenrückruf</span><span class="sxs-lookup"><span data-stu-id="347de-213">Message recall reports</span></span>  <br/> |
+    |<span data-ttu-id="347de-214">IPM. Remote</span><span class="sxs-lookup"><span data-stu-id="347de-214">IPM.Remote</span></span>  <br/> |<span data-ttu-id="347de-215">Remote-Mail-Nachrichten</span><span class="sxs-lookup"><span data-stu-id="347de-215">Remote mail messages</span></span>  <br/> |
+    |<span data-ttu-id="347de-216">IPM. Bericht</span><span class="sxs-lookup"><span data-stu-id="347de-216">IPM.Report</span></span>  <br/> |<span data-ttu-id="347de-217">Element Statusberichte</span><span class="sxs-lookup"><span data-stu-id="347de-217">Item status reports</span></span>  <br/> |

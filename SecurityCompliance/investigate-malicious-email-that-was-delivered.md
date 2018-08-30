@@ -1,0 +1,91 @@
+---
+title: Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.date: 8/6/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+description: Erfahren Sie, wie Bedrohungsanalyse zu finden und Untersuchen von böswilligen e-Mail verwenden.
+ms.openlocfilehash: 9d63bd69e11bca4bc76fa6d6d00a429ed1aac508
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22529284"
+---
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a><span data-ttu-id="f08d2-103">Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde</span><span class="sxs-lookup"><span data-stu-id="f08d2-103">Find and investigate malicious email that was delivered (Office 365 Threat Intelligence)</span></span>
+
+<span data-ttu-id="f08d2-p101">[Office 365 Bedrohungsanalyse](office-365-ti.md) können Sie Aktivitäten zu untersuchen, die Ihre Benutzer gefährden und Ausführen einer Aktion zum Schutz Ihrer Organisation. Wenn Sie in Ihrer Organisation Security Team sind, können Sie beispielsweise suchen und untersuchen verdächtigen e-Mails, die an die Benutzer übermittelt wurden. Diese Schritte können Sie mithilfe von [Explorer Bedrohung](get-started-with-ti.md#threat-explorer)durchführen.</span><span class="sxs-lookup"><span data-stu-id="f08d2-p101">[Office 365 Threat Intelligence](office-365-ti.md) enables you to investigate activities that put your users at risk and take action to protect your organization. For example, if you are part of your organization's security team, you can find and investigate suspicious email messages that were delivered to your users. You can do this by using [Threat Explorer](get-started-with-ti.md#threat-explorer).</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="f08d2-p102">Office 365 Bedrohungsanalyse ist in Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann Office 365 Bedrohungsanalyse als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).</span><span class="sxs-lookup"><span data-stu-id="f08d2-p102">Office 365 Threat Intelligence is available in Office 365 Enterprise E5. If your organization is using another Office 365 Enterprise subscription, Office 365 Threat Intelligence can be purchased as an add-on. (As a global administrator, in the Office 365 admin center, choose **Billing** \> **Add subscriptions**.) For more information, see [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) and [Buy or edit an add-on for Office 365 for business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).</span></span> 
+  
+## <a name="before-you-begin"></a><span data-ttu-id="f08d2-110">Bevor Sie beginnen...</span><span class="sxs-lookup"><span data-stu-id="f08d2-110">Before you begin...</span></span>
+
+<span data-ttu-id="f08d2-111">Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:</span><span class="sxs-lookup"><span data-stu-id="f08d2-111">Make sure that the following requirements are met:</span></span>
+  
+- <span data-ttu-id="f08d2-112">Ihre Organisation verfügt über [Office 365 Bedrohungsanalyse](office-365-ti.md) und [Zuweisen von Lizenzen für Benutzer in Office 365 für Unternehmen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).</span><span class="sxs-lookup"><span data-stu-id="f08d2-112">Your organization has [Office 365 Threat Intelligence](office-365-ti.md) and [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).</span></span>
+    
+- <span data-ttu-id="f08d2-113">[Office 365-Protokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert.</span><span class="sxs-lookup"><span data-stu-id="f08d2-113">[Office 365 audit logging](turn-audit-log-search-on-or-off.md) is turned on for your organization.</span></span> 
+    
+- <span data-ttu-id="f08d2-p103">Ihre Organisation enthält Richtlinien für Anti-Spam-, Anti-Malware, Anti-Phishing und So weiter definiert. Finden Sie unter [Bedrohung Management in die Office 365-Sicherheit &amp; Compliance Center](threat-management.md).</span><span class="sxs-lookup"><span data-stu-id="f08d2-p103">Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md).</span></span>
+    
+- <span data-ttu-id="f08d2-p104">Sie sind Administrator für Office 365 globaler oder Sie haben die Sicherheitsadministrator oder Rolle suchen und Löschen in das Wertpapier &amp; Compliance Center. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="f08d2-p104">You are an Office 365 global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Security &amp; Compliance Center. See [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+    
+## <a name="dealing-with-suspicious-emails"></a><span data-ttu-id="f08d2-118">Umgang mit verdächtigen e-Mails</span><span class="sxs-lookup"><span data-stu-id="f08d2-118">Dealing with suspicious emails</span></span>
+
+<span data-ttu-id="f08d2-p105">Angreifer möglicherweise Senden von Nachrichten an Ihre Benutzer zu testen und Phishing ihre Anmeldeinformationen und Zugriff auf Ihre Kennwörter im Unternehmen! Um dies zu vermeiden, sollten Sie die Bedrohung Protection Dienste von Office 365, einschließlich Exchange Online Protection und erweiterte Threat Protection verwenden. Es gibt jedoch Zeiten, wenn ein Angreifer senden Sie eine e-Mail an die Benutzer, die eine URL enthält kann, und nehmen Sie nur höher auf diesem Zeitpunkt URL schädlichem Inhalt (Malware usw.). Alternativ können Sie zu spät bewusst, dass ein Benutzer in Ihrer Organisation gefährdet und während der Benutzer gefährdet wurde, ein Angreifer dieses Kontos verwendet Senden von e-Mails an andere Benutzer in Ihrem Unternehmen. Als Teil des beide Szenarien bereinigen können Sie e-Mail-Nachrichten aus Posteingänge der Benutzer entfernen möchten. In solchen Situationen können Sie Threat Explorer zum Suchen und entfernen diese e-Mail-Nachrichten nutzen!</span><span class="sxs-lookup"><span data-stu-id="f08d2-p105">Malicious attackers may be sending mail to your users to try and phish their credentials and gain access to your corporate secrets! In order to prevent this, you should use the threat protection services offered by Office 365, including Exchange Online Protection and Advanced Threat Protection. However, there are times when an attacker could send mail to your users containing a URL and only later on make that URL point to malicious content (malware, etc.). Alternatively, you may realize too late that a user in your organization has been compromised, and while that user was compromised, an attacker used that account to send email to other users in your company. As part of cleaning up both of these scenarios, you may want to remove email messages from user inboxes. In situations like these, you can leverage Threat Explorer to find and remove those email messages!</span></span>
+  
+## <a name="find-and-delete-suspicious-email-that-was-delivered"></a><span data-ttu-id="f08d2-125">Suchen und Löschen von verdächtigen e-Mails, die übermittelt wurde</span><span class="sxs-lookup"><span data-stu-id="f08d2-125">Find and delete suspicious email that was delivered</span></span>
+
+> [!TIP]
+> <span data-ttu-id="f08d2-p106">[Threat Explorer](get-started-with-ti.md#threat-explorer) (auch als Explorer bezeichnet), ist ein leistungsstarker Bericht, der verschiedene Zwecke wie Suchen und Löschen von Nachrichten, identifizieren die IP-Adresse des e-Mail-Absender oder starten einen Vorfall zur weiteren Untersuchung dienen kann. Das folgende Verfahren konzentriert sich auf die Verwendung von Explorer zum Suchen und Löschen von böswilligen e-Mail-Postfächern der Empfänger.</span><span class="sxs-lookup"><span data-stu-id="f08d2-p106">[Threat Explorer](get-started-with-ti.md#threat-explorer) (also referred to as Explorer), is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipients mailboxes.</span></span> 
+  
+1. <span data-ttu-id="f08d2-p107">Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="f08d2-p107">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.</span></span> 
+    
+2. <span data-ttu-id="f08d2-130">Wählen Sie im linken Navigationsbereich **Threat Management** \> **Explorer**.</span><span class="sxs-lookup"><span data-stu-id="f08d2-130">In the left navigation, choose **Threat management** \> **Explorer**.</span></span>
+    
+3. <span data-ttu-id="f08d2-131">Wählen Sie im Menü Ansicht **Alle e-Mails**.</span><span class="sxs-lookup"><span data-stu-id="f08d2-131">In the View menu, choose **All email**.</span></span>
+    
+    ![Verwenden Sie im Menü Ansicht zwischen e-Mail- und Content-Berichte](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+  
+4. <span data-ttu-id="f08d2-133">Beachten Sie die Beschriftungen, die im Bericht wie **übermittelte**, **unbekannt**oder **den Junk-e-zugestellt**angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="f08d2-133">Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.</span></span>
+    
+    ![Anzeigen von Daten für alle e-Mails Threat Explorer](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+  
+    <span data-ttu-id="f08d2-135">(Je nach den Aktionen, die für e-Mail-Nachrichten für Ihre Organisation erstellt wurden, möglicherweise zusätzliche Bezeichnungen, beispielsweise **blockiert** oder **ersetzt**angezeigt werden.)</span><span class="sxs-lookup"><span data-stu-id="f08d2-135">(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)</span></span>
+    
+5. <span data-ttu-id="f08d2-136">Wählen Sie im Bericht **gesendet** , um nur e-Mails anzuzeigen, die im Posteingang der Benutzer am Ende aus.</span><span class="sxs-lookup"><span data-stu-id="f08d2-136">In the report, choose **Delivered** to view only emails that ended up in users' inboxes.</span></span> 
+    
+    ![Durch Klicken auf "An Junk übermittelt" entfernt diese Daten aus der Ansicht](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+  
+6. <span data-ttu-id="f08d2-138">Überprüfen Sie die **E-Mail** -Liste unterhalb des Diagramms, unterhalb des Diagramms.</span><span class="sxs-lookup"><span data-stu-id="f08d2-138">Below the chart, review the **Email** list below the chart.</span></span> 
+    
+    ![Unterhalb des Diagramms Anzeigen einer Liste von e-Mail-Nachrichten, die erkannt wurden](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+  
+7. <span data-ttu-id="f08d2-p108">Wählen Sie in der Liste ein Element, um weitere Informationen zu dieser e-Mail-Nachricht anzeigen aus. Beispielsweise können Sie die Betreffzeile zum Anzeigen von Informationen über den Absender, Empfänger, Anlagen und andere ähnliche e-Mail-Nachrichten klicken.</span><span class="sxs-lookup"><span data-stu-id="f08d2-p108">In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.</span></span>
+    
+    ![Sie können zusätzliche Informationen zu einem Element, einschließlich Details und alle Anlagen anzeigen.](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+  
+8. <span data-ttu-id="f08d2-143">Nach dem Anzeigen von Informationen zu e-Mail-Nachrichten, wählen Sie ein oder mehrere Elemente in der Liste **+ Aktionen**zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="f08d2-143">After viewing information about email messages, select one or more items in the list to activate **+ Actions**.</span></span>
+    
+9. <span data-ttu-id="f08d2-p109">Verwenden Sie die Liste **+ Aktionen** , um eine Aktion wie etwa **Verschieben auf gelöschte** Elemente anzuwenden. Dadurch werden die ausgewählten Nachrichten aus den Postfächern der Empfänger gelöscht.</span><span class="sxs-lookup"><span data-stu-id="f08d2-p109">Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This will delete the selected messages from the recipients' mailboxes.</span></span> 
+    
+    ![Wenn Sie einen oder mehrere e-Mail-Nachrichten auswählen, können Sie mehrere verfügbaren Aktionen auswählen](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+  
+## <a name="related-topics"></a><span data-ttu-id="f08d2-147">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="f08d2-147">Related topics</span></span>
+
+[<span data-ttu-id="f08d2-148">Informationen zu Bedrohungen in Office 365</span><span class="sxs-lookup"><span data-stu-id="f08d2-148">Office 365 Threat Intelligence</span></span>](office-365-ti.md)
+  
+[<span data-ttu-id="f08d2-149">Schutz gegen Bedrohungen in Office 365</span><span class="sxs-lookup"><span data-stu-id="f08d2-149">Protect against threats in Office 365</span></span>](protect-against-threats.md)
+  
+[<span data-ttu-id="f08d2-150">Anzeigen von Berichten für Office 365 erweiterte Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f08d2-150">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+  
+
