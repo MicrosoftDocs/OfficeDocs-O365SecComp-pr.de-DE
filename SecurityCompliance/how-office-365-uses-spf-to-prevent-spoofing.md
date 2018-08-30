@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: aea7f740a67ce282424efc409d25f3f135546ada
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026462"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003284"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 
@@ -124,7 +126,7 @@ Wenn Sie eine Hybridbereitstellung haben (d. h. einige Postfächer lokal und ein
 
 Verwenden Sie die Syntaxinformationen in diesem Artikel, um den SPF TXT-Eintrag für Ihre benutzerdefinierte Domäne zu erstellen. Obwohl es auch andere Optionen gibt, die hier nicht genannt werden, sind dies die am häufigsten verwendeten Syntaxoptionen. Nachdem Sie Ihren Eintrag erstellt haben, müssen Sie den Eintrag bei Ihrer Domänenregistrierungsstelle aktualisieren.
   
-Informationen zu den Domänen, die Sie für Office 365 einschließen müssen, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Verwenden Sie die [schrittweisen Anweisungen](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle. Wenn die Registrierungsstelle nicht aufgeführt ist, müssen Sie sie separat kontaktieren, um Informationen zum Aktualisieren Ihres Eintrags zu erhalten. 
+Informationen zu den Domänen, die Sie für Office 365 einschließen müssen, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Verwenden Sie die [schrittweisen Anweisungen](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) zur Aktualisierung von SPF (TXT)-Einträgen für Ihre Domänenregistrierungsstelle. Wenn die Registrierungsstelle nicht aufgeführt ist, müssen Sie sie separat kontaktieren, um Informationen zum Aktualisieren Ihres Eintrags zu erhalten. 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Syntax des SPF TXT-Eintrags für Office 365
 <a name="SPFSyntaxO365"> </a>
@@ -149,7 +151,7 @@ Dabei gilt:
     
 -  _IP address_ ist die IP-Adresse, die Sie dem SPF TXT-Eintrag hinzufügen möchten. Normalerweise ist dies die IP-Adresse des Servers für ausgehende E-Mails für Ihre Organisation. Sie können mehrere ausgehende Mailserver auflisten. Weitere Informationen finden Sie unter [Beispiel: SPF TXT-Eintrag für mehrere ausgehende lokale E-Mail-Server und Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
     
--  _domain name_ ist die Domäne, die Sie als legitimen Absender hinzufügen möchten. Eine Liste der Domänen, die Sie für Office 365 einschließen sollten, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US).
+-  _domain name_ ist die Domäne, die Sie als legitimen Absender hinzufügen möchten. Eine Liste der Domänen, die Sie für Office 365 einschließen sollten, finden Sie unter [Für SPF erforderliche externe DNS-Einträge](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US).
     
 - Die Durchsetzungsregel bietet normalerweise eine der folgenden Optionen:
     

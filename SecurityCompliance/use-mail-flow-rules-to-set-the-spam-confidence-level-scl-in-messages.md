@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence Level) einer E-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können z. B. die Spam-Inhaltsfilterung für Nachrichten umgehen, die von Mitarbeitern Ihrer Organisation gesendet werden, weil Sie darauf vertrauen, dass intern gesendete Nachrichten von Kollegen kein Spam sind. Die Verwendung von Transportregeln zur Festlegung des SCL-Wertes einer Nachricht gibt Ihnen bessere Kontrolle über den Umgang mit Spam.
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026732"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002894"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use mail flow rules to set the spam confidence level (SCL) in messages
 
@@ -34,7 +36,7 @@ Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole (EAC) zu **Nachrichtenfluss** \> **Regeln**.
     
-2. Klicken Sie auf **Neu**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png), und wählen Sie dann **Eine neue Regel erstellen** aus.
+2. Klicken Sie auf **Neu**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif), und wählen Sie dann **Eine neue Regel erstellen** aus.
     
 3. Geben Sie einen Namen für die Regel ein.
     

@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden.
-ms.openlocfilehash: 87bf6a4f1e7d0fac1f98255d222693cb4910f1a6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
+ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027662"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "23002213"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden. 
   
 > [!NOTE]
->  Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premiumfunktionen in EOP Standard-Organisationen nicht unterstützt werden, kann es sein, dass Verschiebungen zwischen EOP Premium-Organisationen fehlschlagen. >  Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt. 
+>  Einstellungen können zuverlässig an eine andere EOP Premium Organisation nur über ein EOP als eigenständige Lösung (Standard) Organisation zu einem anderen EOP Standard oder eine Exchange Enterprise CAL mit Diensten (EOP Premium) Organisation oder aus einer EOP Premium-Organisation verschoben, werden. Zum Wechseln von einer Organisation EOP Premium zu einer EOP Standard-Organisation sind möglicherweise nicht erfolgreich, da einige Premium-Features in EOP-Standard-Organisationen nicht unterstützt werden. > Diese Anweisungen sind für Organisationen, die nur zum Filtern von EOP. Zusätzliche Hinweise zur verschieben aus einer Exchange Online-Organisation in eine andere Exchange Online-Organisation sind vorhanden. Exchange Online-Organisationen sind außerhalb des Gültigkeitsbereichs für diese Anweisungen. 
   
 Im folgenden Beispiel wurde Contoso, Ltd. mit Contoso Suites zusammengeführt. Auf dem folgenden Bild ist der Prozess für das Verschieben von Domänen, E-Mail-Benutzern und Gruppen sowie Einstellungen aus der EOP-Quellorganisation (contoso.onmicrosoft.com) zur EOP-Zielorganisation (contososuites.onmicrosoft.com) dargestellt:
   

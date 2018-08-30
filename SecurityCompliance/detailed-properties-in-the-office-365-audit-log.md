@@ -1,0 +1,96 @@
+---
+title: Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll
+ms.author: markjjo
+author: markjjo
+manager: laurawi
+ms.date: 12/8/2017
+ms.audience: Admin
+ms.topic: reference
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: Strat_O365_IP
+search.appverid:
+- MOE150
+- BCS160
+- MET150
+ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
+description: Eine Beschreibung der zusätzlichen Eigenschaften, die in Office 365 enthaltenen überwachen Protokolleintrag.
+ms.openlocfilehash: 69c5565ac71715ba2cb22d93d80f7e5dd12c6440
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22529497"
+---
+# <a name="detailed-properties-in-the-office-365-audit-log"></a>Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll
+
+Wenn Sie die Ergebnisse einer Audit Log-Suche aus der Office 365-Sicherheit exportieren &amp; Compliance Center, Sie haben die Möglichkeit, alle Ergebnisse herunterladen, die die Suchkriterien erfüllen. Zu diesem Zweck **Ergebnisse exportieren** auswählen \> **Laden Sie alle Ergebnisse** auf der Seite **Audit Log Suche** in das Wertpapier &amp; Compliance Center. Weitere Informationen finden Sie unter [Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+  
+ Wenn sich alle Exportvorgangs für eine Audit Log Suche ergibt, getrennt die Rohdaten aus der Office 365 unified Überwachungsprotokoll auf ein Komma kopiert wird Werten (CSV)-Datei, die diese auf den lokalen Computer heruntergeladen wird. Diese Datei enthält zusätzliche Informationen aus dem Überwachungseintrag melden Sie sich in einer Spalte mit dem Namen **Detail**. Diese Spalte enthält eine mehrwertige Eigenschaft für mehrere Eigenschaften aus dem Audit Log Datensatz. Jede **Eigenschaft-Wert** -Paare im dieses mehrwertige Eigenschaften werden durch ein Komma getrennt. 
+  
+Die folgende Tabelle beschreibt die Eigenschaften, die eingebunden werden – je nach Office 365 service, in dem ein Ereignis erfolgt – in der Spalte mit mehreren **Detail** . Die Spalte **, die diese Eigenschaft hat, Office 365-Dienst** gibt an, den Dienst und den Typ der Aktivität (Benutzer oder Administrator), die die Eigenschaft enthält. Ausführlichere Informationen zu diesen Eigenschaften oder Eigenschaften, die nicht in diesem Thema aufgeführt sind, finden Sie unter [Office 365 Management Aktivität API-Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+  
+> [!TIP]
+> Sie können die Power-Abfrage in Excel verwenden, mehrere Spalten in dieser Spalte aufgeteilt werden, damit jede Eigenschaft eine eigenen Spalte verwendet werden. Dadurch können Sie sortieren und Filtern für ein oder mehrere dieser Eigenschaften. Finden Sie Informationen hierzu finden Sie im Abschnitt "Teilen einer Spalte durch Trennzeichen" Split [Text (Power Query) in einer Spalte](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
+  
+|**Eigenschaft**|**Beschreibung**|**Office 365-Dienst, der diese Eigenschaft hat**|
+|:-----|:-----|:-----|
+|Actor  <br/> |Der Benutzer oder Dienst Konto, das die Aktion ausgeführt. |Azure Active Directory  <br/> |
+|AddOnName  <br/> |Der Name eines Add-Ons, die hinzugefügt, entfernt oder in einem Team aktualisiert wurde. Der Typ des Add-ons in Microsoft-Teams sind ein Bot, eine Verbindung oder einer Registerkarte.  <br/> |Microsoft Teams  <br/> |
+|AddOnType  <br/> |Der Typ eines Add-Ons, die hinzugefügt, entfernt oder in einem Team aktualisiert wurde. Die folgenden Werte geben Sie den Typ des Add-Ons an.<br/> **1** – gibt ein Bot an.<br/> **2** – gibt einen Connector an.<br/> **3** - gibt eine Registerkarte an. |Microsoft Teams  <br/> |
+|AzureActiveDirectoryEventType  <br/> |Der Typ des Azure Active Directory-Ereignisses. Die folgenden Werte geben Sie den Typ des Ereignisses an.<br/> **0** – zeigt ein Konto anmelden-Ereignis.<br/> **1** – zeigt ein Azure-Anwendung Security-Ereignis. |Azure Active Directory  <br/> |
+|ChannelGuid  <br/> |Die ID eines Kanals Microsoft-Teams. Das Team, dem der DDE-Kanal in befindet, wird durch die Eigenschaften **TeamName** und **TeamGuid** identifiziert.<br/> |Microsoft Teams  <br/> |
+|ChannelName  <br/> |Der Name eines Kanals Microsoft-Teams. Das Team, dem der DDE-Kanal in befindet, wird durch die Eigenschaften **TeamName** und **TeamGuid** identifiziert.<br/> |Microsoft Teams  <br/> |
+|Client  <br/> |Clientgeräts, das Betriebssystem des Geräts und der Browser des Geräts verwendet für die Anmeldung-Ereignis (beispielsweise Nokia Lumia 920; Windows Phone 8; Internet Explorer Mobile 11).  <br/> |Azure Active Directory  <br/> |
+|ClientInfoString  <br/> |Informationen zu den e-Mail-Client, der zum Ausführen des Vorgangs, wie ein Browser-Version, Outlook-Version und mobiler Geräteinformationen verwendet wurde  <br/> |Exchange (Postfach-Aktivität)  <br/> |
+|ClientIP  <br/> |Die IP-Adresse des Geräts, das verwendet wurde, wenn die Aktivität protokolliert wurde. Die IP-Adresse wird in ein IPv4 oder IPv6-Adressformat angezeigt.  <br/> |Exchange und Azure Active Directory  <br/> |
+|ClientIPAddress  <br/> |Identisch mit ClientIP.  <br/> |SharePoint  <br/> |
+|CreationTime  <br/> |Das Datum und die Uhrzeit in koordinierter Weltzeit (UTC), wenn der Benutzer die Aktivität ausgeführt.  <br/> |All  <br/> |
+|DestinationFileExtension  <br/> |Die Erweiterung einer Datei, die kopiert oder verschoben wird. Diese Eigenschaft wird nur für die Benutzeraktivitäten FileCopied und FileMoved angezeigt.  <br/> |SharePoint  <br/> |
+|DestinationFileName  <br/> |Der Name der Datei kopiert oder verschoben. Diese Eigenschaft wird nur für die FileCopied und FileMoved Aktionen angezeigt.  <br/> |SharePoint  <br/> |
+|DestinationRelativeUrl  <br/> |Die URL des Zielordners, in dem eine Datei kopiert oder verschoben wird. Die Kombination der Werte für Eigenschaften **DestinationFileName** , die **DestinationRelativeURL**und den **SiteURL**ist identisch mit dem Wert für die **ObjectID** -Eigenschaft, die den vollständigen Pfadnamen für die Datei ist, das kopiert wurde. Diese Eigenschaft wird nur für die Benutzeraktivitäten FileCopied und FileMoved angezeigt.<br/> |SharePoint  <br/> |
+|Ereignisquelle  <br/> |Gibt an, dass ein Ereignis in SharePoint aufgetreten. Mögliche Werte sind **SharePoint-** und **ObjectModel**.<br/> |SharePoint  <br/> |
+|ExternalAccess.  <br/> |Für Exchange Admin-Aktivität gibt an, ob das Cmdlet von einem Benutzer in Ihrer Organisation, von Microsoft Datacenter Personal oder ein Dienstkonto Datacenter oder von einem delegierten Administrator ausgeführt wurde. Der Wert **"false"** gibt an, dass das Cmdlet durch eine Person in Ihrer Organisation ausgeführt wurde. Der Wert **True** gibt an, dass das Cmdlet durch Datacenter Mitarbeiter, ein Dienstkonto Datacenter oder einem delegierten Administrator ausgeführt wurde.<br/> Für Exchange-Postfach-Aktivität gibt an, ob ein Benutzer außerhalb Ihrer Organisation ein Postfach zugegriffen hat.  <br/> |Exchange  <br/> |
+|ExtendedProperties  <br/> |Die erweiterten Eigenschaften für eine des Azure Active Directory-Ereignisses.  <br/> |Azure Active Directory  <br/> |
+|ID  <br/> |Die ID des Berichts-Eintrags. Die ID identifiziert eindeutig den Eintrag Bericht.  <br/> |All  <br/> |
+|InternalLogonType  <br/> |Für die interne Verwendung reserviert.  <br/> |Exchange (Postfach-Aktivität)  <br/> |
+|ItemType  <br/> |Der Typ des Objekts, das geöffnet oder geändert wurde. Mögliche Werte sind **Datei**, **Ordner**, **Web**, **Site**, **Mandanten**und **DocumentLibrary**.<br/> |SharePoint  <br/> |
+|LoginStatus  <br/> |Bezeichnet die Login-Fehler, die möglicherweise aufgetreten sind.  <br/> |Azure Active Directory  <br/> |
+|LogonType  <br/> |Der Typ des Postfachzugriffs. Die folgenden Werte geben den Typ des Benutzers, der das Postfach zugegriffen hat.<br/><br/> **0** – gibt eine Postfachbesitzer an.<br/> **1** – gibt einem Administrator an.<br/> **2** – gibt einen Delegaten an. <br/>**3** - gibt den Transportdienst im Microsoft-Datencenter an.<br/> **4** - abtrennbar ein Dienstkonto in der Microsoft-Rechenzentrum. <br/>**6** : Gibt einen delegierten Administrator an. |Exchange (Postfach-Aktivität)  <br/> |
+|MailboxGuid  <br/> |Die Exchange-GUID des Postfachs, auf die zugegriffen wurde.  <br/> |Exchange (Postfach-Aktivität)  <br/> |
+|MailboxOwnerUPN  <br/> |Die e-Mail-Adresse der Person ein, die Besitzer des Postfachs ist, auf die zugegriffen wurde.  <br/> |Exchange (Postfach-Aktivität)  <br/> |
+|Mitglieder  <br/> |Listet die Benutzer, die hinzugefügt oder aus einem Team entfernt wurden. Die folgenden Werte geben Sie an, die dem Benutzer zugewiesene Rollentyp.<br/><br/> **1** – gibt die Rolle des Eigentümers an.<br/> **2** – gibt die Rolle an.<br/> **3** – gibt an, die Guest-Rolle. <br/><br/>Members-Eigenschaft enthält auch den Namen Ihrer Organisation und e-Mail-Adresse des Mitglieds.  <br/> |Microsoft Teams  <br/> |
+|Geänderte Eigenschaften (Name, NewValue, OldValue)  <br/> |Die Eigenschaft ist für die administrative Ereignisse, beispielsweise das Hinzufügen eines Benutzers als Mitglied einer Website oder einer Gruppe Websitesammlungs-Administrator. Die Eigenschaft enthält den Namen der Eigenschaft (beispielsweise der Websiteadministrator Gruppe) geändert wurde, die den neuen Wert der geänderten-Eigenschaft (solche Benutzer als ein Websiteadministrator und den vorherigen Wert des geänderten Objekts hinzugefügt wurde.  <br/> |Alle (Admin-Aktivität)  <br/> |
+|ObjectID  <br/> |Für Exchange Admin überwachungsprotokollierung, den Namen des Objekts, das vom Cmdlet geändert wurde.  <br/> Für SharePoint-Aktivität, den vollständigen Namen der URL-Pfad der Datei oder des Ordners, der von einem Benutzer zugegriffen werden.  <br/> Für Azure AD-Aktivität, den Namen des Benutzerkontos, das geändert wurde.  <br/> |All  <br/> |
+|Vorgang  <br/> |Der Name der Aktivität Benutzer oder Administrator. Der Wert dieser Eigenschaft entspricht dem Wert, der in den **Aktivitäten** ausgewählt wurde Dropdown-Liste. Wenn **Anzeigen Ergebnisse für alle Aktivitäten** ausgewählt wurde, wird der Bericht Einträge für alle Benutzer und Admin Aktivitäten für alle Dienste enthalten. Eine Beschreibung der Vorgänge/Aktivitäten im Überwachungsprotokoll Office 365 angemeldet sind, finden Sie auf die Registerkarte **Löschvorgänge Aktivitäten** im [Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).<br/> Für Exchange Admin-Aktivität gibt diese Eigenschaft den Namen des Cmdlets, die ausgeführt wurde.  <br/> |All  <br/> |
+|Organisations-ID an  <br/> |Die GUID für Office 365-Organisation.  <br/> |All  <br/> |
+|Path  <br/> |Der Name des Postfachordners, in die Nachricht, auf die zugegriffen wurde gespeichert ist. Diese Eigenschaft gibt auch den Ordner eine Where eine Nachricht erstellt oder um kopiert/verschoben wird.  <br/> |Exchange (Postfach-Aktivität)  <br/> |
+|Parameter  <br/> |Für Exchange Admin-Aktivität, den Namen und Wert für alle Parameter, die mit dem Cmdlet verwendet wurden, die in die Operation-Eigenschaft angegeben wird.  <br/> |Exchange (Admin-Aktivität)  <br/> |
+|RecordType  <br/> |Der Typ des Vorgangs durch den Eintrag angegeben. Die folgenden Werte geben den Datensatz.<br/><br/> **1** – gibt einen Datensatz aus dem Exchange Admin-Überwachungsprotokoll an. <br/>**2** – gibt einen Datensatz aus dem Exchange-Postfach-Überwachungsprotokoll für eine Operation für ein Element singled Postfach an. <br/>**3** – und gibt ebenfalls einen Datensatz aus dem Exchange-Postfach-Überwachungsprotokoll an. Diesen Datensatztyp gibt an, dass die Operation für mehrere Elemente im Quellpostfach (wie verschieben mehrere Elemente in den Ordner Gelöschte Objekte oder mehrere Elemente endgültig löschen) durchgeführt wurde.<br/>**4** – gibt einen Vorgang Admin Website in SharePoint, wie ein Administrator oder Benutzer zuweisen von Berechtigungen für eine Website an. <br/>**6** - gibt eine Datei oder ein Ordner-bezogenen Vorgang in SharePoint, wie ein Benutzer anzeigen oder Ändern einer Datei an. <br/>**8** - gibt eine Admin-Vorgang in Azure Active Directory an. <br/>**9** - Anmeldeversuche in Azure Active Directory Organisations-ID angibt. Dieser Datensatztyp wird ersetzt.<br/>**10** - Cmdlet Sicherheitsereignisse, die von Microsoft-Mitarbeiter im Rechenzentrum ausgeführt wurden angibt. <br/>**11** : Gibt Data Loss Prevention (DLP) Ereignisse in SharePoint.<br/> **12** - Ereignisse Sway angibt. <br/>**14** : Gibt die Freigabe Ereignisse in SharePoint an.<br/> **15** - Anmeldeversuche in Azure Active Directory gibt Secure Sicherheitstokendienst (STS). <br/>**18** - Sicherheit gibt &amp; Compliance Center Ereignisse. <br/>**20** - Ereignisse Power BI angibt. <br/>**22** - Ereignisse Yammer angibt. <br/>**24** - eDiscovery-Ereignisse angibt. Dieser Datensatztyp gibt Aktivitäten, die ausgeführt wurden, durch Content-Suche ausführen und Verwalten von eDiscovery-Fälle in das Wertpapier &amp; Compliance Center. Weitere Informationen finden Sie unter Suchen für eDiscovery-Aktivitäten in der Office 365 in das Überwachungsprotokoll.<br/>**25, 26 oder 27** - Microsoft-Teams, gibt Ereignisse. |All  <br/> |
+|ResultStatus  <br/> |Gibt an, ob die Aktion (in der **Operation** -Eigenschaft angegeben) erfolgreich war.  <br/> Für Exchange Admin-Aktivität ist der Wert **True** (erfolgreich) oder **"false"** (Fehler).  <br/> |All  <br/> |
+|SecurityComplianceCenterEventType  <br/> |Gibt an, dass die Aktivität eines Wertpapiers wurde &amp; Compliance Center-Ereignis. Alle Sicherheit &amp; Compliance Center Aktivitäten hat einen Wert von **0** für diese Eigenschaft.<br/> |Office 365 Security &amp; Compliance Center  <br/> |
+|SharingType  <br/> |Der Typ der Freigabe von Berechtigungen, der dem Benutzer zugewiesen wurde, die für die Ressource freigegeben wurde. Dieser Benutzer wird in der **UserSharedWith** -Eigenschaft identifiziert.<br/> |SharePoint  <br/> |
+|Website  <br/> |Die GUID der Website, in der Datei oder einen Ordner, die vom Benutzer zugegriffen gespeichert ist.  <br/> |SharePoint  <br/> |
+|SiteUrl  <br/> |Die URL der Website, in der Datei oder einen Ordner, die vom Benutzer zugegriffen gespeichert ist.  <br/> |SharePoint  <br/> |
+|SourceFileExtension  <br/> |Die Erweiterung der Datei, die vom Benutzer zugegriffen werden konnte. Diese Eigenschaft ist leer, wenn das Objekt, das Zugriff auf einen Ordner handelt.  <br/> |SharePoint  <br/> |
+|SourceFileName  <br/> |Der Name der Datei oder des Ordners, der vom Benutzer zugegriffen.  <br/> |SharePoint  <br/> |
+|SourceRelativeUrl  <br/> |Die URL des Ordners mit der Datei vom Benutzer zugegriffen. Die Kombination der Werte für Eigenschaften **SourceFileName** , die **SourceRelativeURL**und den **SiteURL**ist identisch mit dem Wert für die **ObjectID** -Eigenschaft, die den vollständigen Pfadnamen für die Datei, die vom Benutzer zugegriffen wird.<br/> |SharePoint  <br/> |
+|Subject  <br/> |Die Betreffzeile der Nachricht, die zugegriffen werden konnte.  <br/> |Exchange (Postfach-Aktivität)  <br/> |
+|TabType  <br/> | Der Typ der Registerkarte hinzugefügt, entfernt oder aktualisiert in einem Team. Die möglichen Werte für diese Eigenschaft sind:<br/><br/> **Excelpin** - eine Excel-Registerkarte.  <br/> **Erweiterung** - alle erste Teilnehmern und Drittanbieter-apps; wie Planner, VSTS und Formulare.  <br/> **Notes** - Registerkarte ' OneNote '.  <br/> **Pdfpin** - Registerkarte eine PDF-Datei.  <br/> **Powerbi** - PowerBI eine Registerkarte.  <br/> **Powerpointpin** - eine PowerPoint-Registerkarte.  <br/> **Sharepointfiles** - Registerkarte A SharePoint.  <br/> **Webseite** - einer Registerkarte angeheftete Website.  <br/> **Wiki-Registerkarte** - einer Wiki-Registerkarte.  <br/> **Wordpin** - eine Word-Registerkarte.  <br/> |Microsoft Teams  <br/> |
+|Ziel  <br/> |Der Benutzer, dem die Aktion (in der Eigenschaft **Vorgang** identifiziert) auf ausgeführt wurde. Beispielsweise würde SharePoint oder einem Microsoft-Team Gast hinzugefügt wird, der Benutzer in dieser Eigenschaft aufgeführt werden.<br/> |Azure Active Directory  <br/> |
+|TeamGuid  <br/> |Die ID des ein Team in Microsoft-Teams.  <br/> |Microsoft Teams  <br/> |
+|TeamName  <br/> |Der Name des ein Team in Microsoft-Teams.  <br/> |Microsoft Teams  <br/> |
+|UserAgent  <br/> |Informationen über den Browser des Benutzers. Diese Informationen werden vom Browser bereitgestellt.  <br/> |SharePoint  <br/> |
+|UserDomain  <br/> |Der mandantenorganisation des Benutzers (Akteur) Identitätsinformationen, die die Aktion ausgeführt.  <br/> |Azure Active Directory  <br/> |
+|Benutzer-ID  <br/> |Der Benutzer, die (in der **Operation** -Eigenschaft angegeben) ausgeführte Aktion, die den Datensatz protokolliert geführt haben. Beachten Sie, dass Einträge für die Aktivitäten von Systemkonten (wie SHAREPOINT\system oder NT-Autorität\System) auch im Überwachungsprotokoll enthalten sind.<br/> |All  <br/> |
+|UserKey  <br/> |Eine alternative ID für den Benutzer in der **UserID** -Eigenschaft identifiziert. Beispielsweise wird diese Eigenschaft mit der eindeutigen Passport-ID (PUID) für Ereignisse, die von Benutzern in SharePoint durchgeführt werden aufgefüllt. Diese Eigenschaft kann auch den gleichen Wert wie die **Benutzer-ID** -Eigenschaft für Ereignisse, die in andere Dienste und Ereignisse, die von Systemkonten durchgeführt angeben.<br/> |All  <br/> |
+|UserSharedWith  <br/> |Der Benutzer, dem eine Ressource für freigegeben wurde. Diese Eigenschaft wird eingeschlossen, wenn der Wert für die **Operation** -Eigenschaft **SharingSet**ist. Dieser Benutzer wird auch in der Spalte **freigegeben für** den Bericht aufgeführt.<br/> |SharePoint  <br/> |
+|UserType  <br/> |Der Typ des Benutzers, der der Vorgang ausgeführt wird. Die folgenden Werte geben den Benutzer.<br/> <br/> **0** – eine regelmäßiger Benutzer. <br/>**2** - Administrator in Office 365-Organisation. <br/>**3** – eine Microsoft-Datencenter-Administrator oder Datacenter Systemkonto. <br/>**4** – ein Systemkonto. <br/>**5** – eine Anwendung. <br/>**6** - einen Dienstprinzipal. |All  <br/> |
+|Version  <br/> |Gibt die Versionsnummer der Aktivität (identifiziert durch die **Operation** -Eigenschaft), die angemeldet ist.  <br/> |All  <br/> |
+|Arbeitslast  <br/> |Der Office 365-Dienst, in die Aktivität aufgetreten ist. Die möglichen Werte für diese Eigenschaft sind:<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>SecurityComplianceCenter<br/>PowerBI<br/>MicrosoftTeams<br/> ThreatIntelligence**|All  <br/> |
+   
+Notiz, die die Eigenschaften oben beschrieben werden auch angezeigt, wenn Sie **Weitere Informationen** klicken Sie auf, wenn Sie die Details eines bestimmten Ereignisses anzeigen. 
+  
+![Klicken Sie auf Weitere Informationen zum Anzeigen der detaillierten Eigenschaften des Datensatzes Audit log](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+  
+

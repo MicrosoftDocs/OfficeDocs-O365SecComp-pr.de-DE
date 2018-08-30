@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 description: Um sicherzustellen, dass von Personen, denen, die Sie vertrauen, gesendete e-Mail nicht gesperrt hat, können Sie der verbindungsfilterrichtlinie verwenden, um eine Liste, auch bekannt als eine Liste sicherer Absender verwendet werden, der IP-Adressen zu erstellen, denen Sie vertrauen. Sie können auch eine Liste der blockierten Absender erstellen.
-ms.openlocfilehash: d106e55779c6246b77018fef3ab9d58fa759d99e
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cb9b73ff61b477f1c7ea0bb8da4039bebce83d1b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027602"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003264"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
  
@@ -52,7 +54,7 @@ Durch Bearbeiten der Verbindungsfilterrichtlinie in der Exchange-Verwaltungskons
     
 2. Klicken Sie auf die Menüoption **Verbindungsfilterung**, und erstellen Sie dann die gewünschten Listen: eine IP-Zulassungsliste, eine IP-Sperrliste oder beides. 
     
-    Klicken Sie zum Erstellen dieser Listen auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png). Geben Sie im folgenden Dialogfeld die IP-Adressen oder den IP-Adressbereich an, und klicken Sie dann auf **OK**. Wiederholen Sie diesen Vorgang, um weitere Adressen hinzuzufügen. (Sie können IP-Adressen auch bearbeiten oder entfernen, nachdem sie hinzugefügt wurden.)
+    Klicken Sie zum Erstellen dieser Listen auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif). Geben Sie im folgenden Dialogfeld die IP-Adressen oder den IP-Adressbereich an, und klicken Sie dann auf **OK**. Wiederholen Sie diesen Vorgang, um weitere Adressen hinzuzufügen. (Sie können IP-Adressen auch bearbeiten oder entfernen, nachdem sie hinzugefügt wurden.)
     
     > [!NOTE]
     >  Wenn Sie eine IP-Adresse beiden Listen hinzufügen, wird von dieser gesendete E-Mail zugelassen. >  IPV4-IP-Adressen müssen im Format nnn.nnn.nnn.nnn angegeben werden, wobei nnn eine Zahl von 0 bis 255 ist. Sie können auch CIDR-Bereiche (Classless Inter-Domain Routing) im Format nnn.nnn.nnn.nnn/rr angeben, wobei rr eine Zahl von 24 bis 32 ist. Informationen zum Angeben von Bereichen außerhalb des Bereichs von 24 bis 32 finden Sie unter [Weitere Überlegungen zum Konfigurieren von Listen zugelassener IP-Adressen](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). >  Sie können maximal 1273 Einträge angeben, wobei ein Eintrag einer einzelnen IP-Adresse oder einem CIDR-Bereich von IP-Adressen von /24 bis /32 entspricht. >  Wenn Sie TLS-verschlüsselte Nachrichten senden, werden IPv6-Adressen und -Adressbereiche nicht unterstützt. 
@@ -74,13 +76,13 @@ Führen Sie die folgenden Schritte aus, um eine Transportregel zu erstellen.
   
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
     
-2. Klicken Sie auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png) und wählen Sie dann **Neue Regel erstellen** aus.
+2. Klicken Sie auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif) und wählen Sie dann **Neue Regel erstellen** aus.
     
 3. Benennen Sie die Regel, und klicken Sie dann auf **Weitere Optionen**.
     
 4. Wählen Sie unter **Diese Regel wird ausgeführt, wenn** die Option **Absender**, und wählen Sie dann **IP-Adresse ist in keinem dieser Bereiche oder stimmt mit keinem Bereich völlig überein**.
     
-5. Geben Sie im **Eingabefeld für IP-Adressen** den IP-Adressbereich ein, und klicken Sie erst auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png) und dann auf **OK**.
+5. Geben Sie im **Eingabefeld für IP-Adressen** den IP-Adressbereich ein, und klicken Sie erst auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif) und dann auf **OK**.
     
 6. Legen Sie unter **Gehen Sie folgendermaßen vor:** die Aktion fest, indem Sie erst **Nachrichteneigenschaften ändern** wählen und dann die **SCL-Bewertung (Spam Confidence Level) festlegen**. Wählen Sie im Feld **SCL angeben** die Option **Spamfilter umgehen**, und klicken Sie auf **OK**.
     
@@ -100,19 +102,19 @@ Führen Sie dazu die folgenden Schritte aus:
   
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
     
-2. Klicken Sie auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png) und wählen Sie dann **Neue Regel erstellen** aus.
+2. Klicken Sie auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif) und wählen Sie dann **Neue Regel erstellen** aus.
     
 3. Benennen Sie die Regel, und klicken Sie dann auf **Weitere Optionen**.
     
 4. Wählen Sie unter **Diese Regel wird ausgeführt, wenn** die Option **Absender**, und wählen Sie dann **IP-Adresse ist in keinem dieser Bereiche oder stimmt mit keinem Bereich völlig überein**.
     
-5. Geben Sie im **Eingabefeld für IP-Adressen** die IP-Adresse oder den IP-Adressbereich ein, die bzw. den Sie in der Liste der zugelassenen IP-Adresse angegeben haben, und klicken Sie erst auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png) und dann auf **OK**.
+5. Geben Sie im **Eingabefeld für IP-Adressen** die IP-Adresse oder den IP-Adressbereich ein, die bzw. den Sie in der Liste der zugelassenen IP-Adresse angegeben haben, und klicken Sie erst auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif) und dann auf **OK**.
     
 6. Legen Sie unter **Gehen Sie folgendermaßen vor:** die Aktion fest, indem Sie erst **Nachrichteneigenschaften ändern** wählen und dann die **SCL-Bewertung (Spam Confidence Level) festlegen**. Wählen Sie im Feld **SCL angeben** die Option **0**, und klicken Sie auf **OK**.
     
 7. Klicken Sie unter **Außer wenn** auf **Ausnahme hinzufügen**, und wählen Sie erst **Absender** und dann **Domäne ist**. 
     
-8. Geben Sie im Feld **Domäne angeben** diejenige Domäne ein, für die der Spamfilter umgangen werden soll, beispielsweise **contosob.com**. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.png), um sie in die Liste der Ausdrücke zu verschieben. Wiederholen Sie diesen Schritt, falls Sie zusätzliche Domänen als Ausnahmen hinzufügen möchten, und klicken Sie abschließend auf **OK**. 
+8. Geben Sie im Feld **Domäne angeben** diejenige Domäne ein, für die der Spamfilter umgangen werden soll, beispielsweise **contosob.com**. Klicken Sie auf **Hinzufügen**![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif), um sie in die Liste der Ausdrücke zu verschieben. Wiederholen Sie diesen Schritt, falls Sie zusätzliche Domänen als Ausnahmen hinzufügen möchten, und klicken Sie abschließend auf **OK**. 
     
 9. Auf Wunsch können Sie unter anderem auch Einstellungen zur Überwachung der Regel, zum Testen der Regel und zum Aktivieren der Regel in einem bestimmten Zeitraum vornehmen. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. Weitere Informationen zu diesen Optionen finden Sie unter [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx). 
     

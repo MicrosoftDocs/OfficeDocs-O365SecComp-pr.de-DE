@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie die Suche und leeren Feature in die Office 365-Sicherheit &amp; Compliance Center zu suchen und löschen eine e-Mail-Nachricht von alle Postfächer in Ihrer Organisation.
-ms.openlocfilehash: 8bba4be473977afc229f64dfba6fd1514b86ecd2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d9ca212585f1cb7e98e5f577ce47fcdef7ea979f
+ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529256"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23531868"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Suchen und Löschen von e-Mail-Nachrichten in Ihrer Organisation für Office 365 - Admin-Hilfe
 
@@ -27,7 +27,7 @@ ms.locfileid: "22529256"
    
 Sie können das Inhaltssuche-Feature in Office 365 verwenden, suchen und löschen eine e-Mail-Nachricht aus alle Postfächer in Ihrer Organisation. Dies kann Ihnen suchen und Entfernen von potenziell schädliche oder hohem e-Mails, z. B.:
   
-- Nachrichten, die gefährliche Anlagen oder Viren enthalten.
+- Nachrichten, die gefährliche Anlagen oder Viren enthalten
     
 - Phishing-Nachrichten
     
@@ -116,15 +116,15 @@ Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs
 
 - **Wie Sie Abrufen des Status der Suche und entfernen Vorgang?**
 
-    Führen Sie das **Get-ComplianceSearchAction** , um den Status des Löschvorgangs abzurufen. Beachten Sie, dass das Objekt, das erstellt wird, wenn Sie das Cmdlet **New-ComplianceSearchAction** ausführen mithilfe dieses Format lautet: `<name of Content Search>_Purge`. 
+    Führen Sie das **Get-ComplianceSearchAction** , um den Status des Löschvorgangs abzurufen. Beachten Sie, dass das Objekt, das erstellt wird, wenn Sie das Cmdlet **New-ComplianceSearchAction** ausführen heißt dieses Format verwenden: `<name of Content Search>_Purge`. 
     
 - **Was geschieht nach dem Löschen einer Nachricht?**
 
-    Eine Nachricht, die mithilfe von gelöscht ist die `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` Befehl wird in den Ordner Löschvorgänge in den Ordner des Benutzers wiederherstellbare Elemente verschoben. Es ist nicht vom Office 365 sofort gelöscht. Der Benutzer kann Nachrichten in den Ordner Gelöschte Objekte für die Dauer basierend auf der Aufbewahrungszeit für das Postfach konfiguriert wiederherstellen. Nach Ablauf dieses (oder wenn der Benutzer die Nachricht vor dem Löscht ein abläuft), wird die Nachricht wird in den Ordner Benutzerkontenverwaltung verschoben und nicht mehr vom Benutzer zugegriffen werden kann. Einmal wird in den Ordner bereinigt die Nachricht erneut beibehalten, für die Dauer basierend auf der Aufbewahrungszeit für das Postfach konfiguriert werden, wenn die Wiederherstellung einzelner Elemente für das Postfach aktiviert ist. (Sie in Office 365 ist Wiederherstellung einzelner Elemente standardmäßig aktiviert, wenn ein neues Postfach erstellt wird.) Nach Ablauf die Aufbewahrungszeit für gelöschte die Nachricht wird aus endgültig gekennzeichnet und wird bereinigt werden von Office 365 das nächste Mal an, dem das Postfach von der Assistent für verwaltete Ordner verarbeitet wird. 
+    Eine Nachricht, die mithilfe von gelöscht ist die `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` Befehl wird in den Ordner Löschvorgänge in den Ordner des Benutzers wiederherstellbare Elemente verschoben. Es ist nicht vom Office 365 sofort gelöscht. Der Benutzer kann Nachrichten in den Ordner Gelöschte Objekte für die Dauer basierend auf der Aufbewahrungszeit für das Postfach konfiguriert wiederherstellen. Nach Ablauf dieses (oder wenn der Benutzer die Nachricht vor dem Löscht ein abläuft), wird die Nachricht wird in den Ordner Benutzerkontenverwaltung verschoben und nicht mehr vom Benutzer zugegriffen werden kann. Einmal wird in den Ordner bereinigt die Nachricht erneut beibehalten, für die Dauer basierend auf der Aufbewahrungszeit für das Postfach konfiguriert werden, wenn die Wiederherstellung einzelner Elemente für das Postfach aktiviert ist. (Sie in Office 365 ist Wiederherstellung einzelner Elemente standardmäßig aktiviert, wenn ein neues Postfach erstellt wird.) Nach Ablauf die Aufbewahrungszeit für gelöschte die Nachricht ist für endgültig gekennzeichnet und wird bereinigt werden von Office 365 das nächste Mal an, dem das Postfach von der Assistent für verwaltete Ordner verarbeitet wird. 
     
-- **Woher wissen Sie, dass Nachrichten gelöscht und in der Benutzer wiederherstellbare Elemente Ordner verschoben werden?**
+- **Woher wissen Sie, dass Nachrichten gelöscht und in den Ordner des Benutzers wiederherstellbare Elemente verschoben werden?**
 
-    Wenn Sie die gleichen Inhaltssuche ausführen, nachdem Sie eine Nachricht gelöscht, Sie werden weiterhin die gleiche Anzahl von Suchergebnissen angezeigt (und möglicherweise wird davon ausgegangen, dass die Nachricht nicht aus Benutzerpostfächern gelöscht). Dies ist, da eine Inhaltssuche des Ordners wiederherstellbare Elemente durchsucht wird, in dem die gelöschte Nachricht in verschoben wird, nach dem Ausführen der `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` Befehl. Um sicherzustellen, dass Nachrichten, in denen in den Ordner wiederherstellbare Elemente verschoben, können Sie eine Compliance-eDiscovery-Suche (mit dem gleichen Quellpostfächer und Suchkriterien wie die Inhaltssuche in Schritt 1 erstellten) und die Kopie der Suchergebnisse ausführen, Discovery-Postfach. Klicken Sie dann können die Suchergebnisse in das discoverypostfach anzeigen und stellen Sie sicher, dass die Nachrichten in den Ordner wiederherstellbare Elemente verschoben wurde. Ausführliche Informationen zum Erstellen einer Compliance-eDiscovery-Suche, die die Liste der Quellpostfächer und Suchabfrage aus einer Inhaltssuche verwendet finden Sie unter [Verwendung Inhaltssuche in Ihrem Workflow eDiscovery](use-content-search-in-ediscovery.md) . 
+    Wenn Sie die gleichen Inhaltssuche ausführen, nachdem Sie eine Nachricht gelöscht, Sie werden weiterhin die gleiche Anzahl von Suchergebnissen angezeigt (und möglicherweise wird davon ausgegangen, dass die Nachricht nicht aus Benutzerpostfächern gelöscht). Dies ist, da eine Inhaltssuche des Ordners wiederherstellbare Elemente durchsucht wird, in dem die gelöschte Nachricht in verschoben wird, nach dem Ausführen der `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` Befehl. Um sicherzustellen, dass Nachrichten in den Ordner wiederherstellbare Elemente verschoben wurden, können Sie eine Compliance-eDiscovery-Suche (mit dem gleichen Quellpostfächer und Suchkriterien als der in Schritt 1 erstellte Inhaltssuche) ausführen und kopieren Sie die Suchergebnisse in das discoverypostfach. Sie können Anzeige der Suchergebnisse in das discoverypostfach, und stellen Sie sicher, dass die Nachrichten in den Ordner wiederherstellbare Elemente verschoben wurden. Ausführliche Informationen zum Erstellen einer Compliance-eDiscovery-Suche, die die Liste der Quellpostfächer und Suchabfrage aus einer Inhaltssuche verwendet finden Sie unter [Verwendung Inhaltssuche in Ihrem Workflow eDiscovery](use-content-search-in-ediscovery.md) . 
     
 - **Was geschieht, wenn Sie eine Nachricht von mehr als 50.000 Postfächern löschen müssen?**
 

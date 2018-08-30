@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Erfahren Sie, wie erkennen und reagieren auf eine kompromittierten e-Mail-Konto in Office 365
-ms.openlocfilehash: d6731b6f1c12a3fa2b30bcbe6e12212629b65f9f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ef97ecd3198234cf2c3d609f81a4a4a8af2c237e
+ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529882"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23531878"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
@@ -37,6 +37,11 @@ Benutzer können beachten und melden ungewöhnliche Aktivitäten in ihre Office 
 - Das Vorhandensein von Posteingangsregeln, die von der gewünschten Benutzer oder der Administrator erstellt wurden nicht. Diese Regeln möglicherweise automatisch Weiterleiten von e-Mails an unbekannte Adressen oder verschieben Sie sie in den Ordner **Notizen**, **Junk-e-Mail-** oder **RSS-Abonnements** .
 - Der Anzeigename der Benutzer kann in der globalen Adressliste geändert werden.
 - Das Postfach des Benutzers wird verhindert, dass das Senden von e-Mails.
+- Der Ordner gesendet oder gelöschte Objekte in Microsoft Outlook oder Microsoft Outlook Web App enthalten allgemeine gehackt – Nachrichten des Kontos, wie "Ich in London Geld senden hängen bin."
+- Ungewöhnliche Profil ändert, beispielsweise den Namen, die Telefonnummer oder die Postleitzahl wurden aktualisiert.
+- Ungewöhnliche Anmeldeinformationen geändert wird, wie mehrere kennwortänderungen sind erforderlich.
+- E-Mail-Weiterleitung wurde kürzlich hinzugefügt.
+- Eine ungewöhnliche Signatur wurde kürzlich hinzugefügt, wie eine Signatur gefälschten Bankgeschäfte oder eine Aufgabenebene Drug Signatur.
 
 Wenn ein Benutzer die oben genannten Symptome meldet, sollten Sie weiteren Untersuchung durchführen. Die Office 365-Sicherheit und Compliance Center und der Azure-Verwaltungsportal bieten Tools, mit denen Sie die Aktivität eines Benutzerkontos untersuchen, die vermutlich möglicherweise gefährdet ist.
 - Office 365 Unified Überwachungsprotokolle im Compliance Center- & Sicherheit überprüfen alle Aktivitäten für das Konto verdächtige Nachrichten durch Filtern der Ergebnisse für das Datum Bereich übergreifende aus unmittelbar vor dem verdächtige Aktivitäten auf das aktuelle Datum ist aufgetreten. Nicht filtern Sie auf die Aktivitäten bei der Suche.
@@ -52,11 +57,20 @@ Wenn ein Benutzer die oben genannten Symptome meldet, sollten Sie weiteren Unter
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
+Auch nach dem Sie Zugriff auf Ihr Konto wiederhergestellt haben, hat der Angreifer möglicherweise Back-Tür Einträge hinzugefügt, mit die der Angreifer Steuerelement des Kontos fortsetzen zu können.
+
+Sie müssen alle folgenden Schritte aus, um Zugriff auf Ihr Konto wieder zu übernehmen, stellen Sie sicher, dass die Hijacker fortsetzen nicht besser steuern die früher Ihr Konto ausführen. Diese Schritte können Sie die Back-Tür Einträge zu entfernen, die die Hijacker auf Ihr Konto möglicherweise hinzugefügt. Nachdem Sie diese Schritte ausgeführt haben, wird empfohlen, dass Sie einen VirusScan dafür sorgen, dass Ihr Computer beeinträchtigt wird nicht ausgeführt.
+
 ### <a name="step-1-reset-the-users-password"></a>Schritt 1 Zurücksetzen eines Benutzerkennworts
 > [!WARNING]
 > Senden Sie das neue Kennwort nicht an die vorgesehenen Benutzer per e-Mail, wie der Angreifer weiterhin Zugriff auf das Postfach zu diesem Zeitpunkt hat.
 
 1. Führen Sie das Kennwort zurücksetzen einer Office 365 Business nach einer Person anderen Verfahren in [Admins: Office 365 zurücksetzen Business Kennwörter](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
+
+**Hinweise:**
+- Stellen Sie sicher, dass das Kennwort stark ist und dass sie Groß-und Kleinbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen enthält. 
+- Wiederverwenden Sie nicht keinem der letzten fünf Kennwörter. Obwohl die Anforderung Verlauf einer neueren Kennwort erneut verwenden kann, sollten Sie etwas auswählen, die der Angreifer ermittelt werden kann.
+- Wenn Ihre lokalen Identität mit Office 365 im Verbund befindet, müssen Sie Ihre lokalen Kennwort ändern, und klicken Sie dann müssen Sie den Administrator der Gefährdung benachrichtigen.
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2 Remove verdächtigen e-Mail-Weiterleitung-Adressen
 1. Öffnen der **Office 365 Admin Center > aktive Benutzer**.
@@ -93,12 +107,17 @@ Wenn das verdächtige Nachrichten kompromittierte Postfach zum Senden von Spam-e
 
 1. Melden Sie sich bei Office 365 Admin Center mit einem globalen Administratorkonto an, und öffnen Sie **Aktive Benutzer**.
 2. Hier finden Sie die verdächtige gefährdet Konto und manuell überprüfen, um festzustellen, ob alle Administratorrollen für das Konto zugewiesen sind.
-3. Öffnen Sie das **Sicherheit & Compliace Center**.
+3. Öffnen Sie die **Sicherheit und Compliance Center**.
 4. Klicken Sie auf **Berechtigungen**.
 5. Die Rollengruppen, um herauszufinden, wenn die verdächtige gefährdet Konto ein Mitglied eines davon ist manuell zu überprüfen.  Wenn es ist: a klicken Sie auf die Rollengruppe, und klicken Sie auf **Rollengruppe bearbeiten**.  b. Klicken Sie auf **Ausgewählte Mitglieder** und **Bearbeiten** , um den Benutzer aus der Rollengruppe zu entfernen.
 6. Öffnen Sie die **Exchange-Verwaltungskonsole**
 7. Klicken Sie auf **Berechtigungen**.
 8. Die Rollengruppen, um herauszufinden, wenn die verdächtige gefährdet Konto ein Mitglied eines davon ist manuell zu überprüfen. Wenn es ist: a, klicken Sie auf die Rollengruppe, und klicken Sie auf **Bearbeiten**.  b. verwenden Sie Abschnitt **Mitglieder** , um den Benutzer aus der Rollengruppe zu entfernen.
+
+### <a name="step-7-optional-additional-precautionary-steps"></a>Optional Schritt 7: Zusätzliche Vorsichtsmaßnahmen
+1. Stellen Sie sicher, dass Sie gesendete Objekte überprüfen. Möglicherweise müssen Sie die Personen in Ihrer Kontaktliste zu informieren, dass Ihr Konto gefährdet wurde. Der Angreifer kann sie nach der Money, gefragt haben spoofing, beispielsweise, dass in einem anderen Land isolierte wurden und benötigt der Money oder der Angreifer möglicherweise Sie ihnen einen Virus senden auf ihren Computern auch unerlaubterweise.
+2. Keine anderen Dienste, die diese Exchange-Konto verwendet, wie das alternative e-Mail-Konto möglicherweise beschädigt wurde. Zuerst, führen Sie diese Schritte für Ihr Office 365-Abonnement, und führen Sie diese Schritte für die anderen Konten.
+3. Stellen Sie sicher, dass Ihre Kontaktinformationen wie Telefonnummern und Adressen, korrekt ist.
 
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie eine pro Sicherheit im Internet
 Ihr Office 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherheitsfunktionen, die Sie verwenden können, um Ihre Daten und Ihre Benutzer zu schützen.  Verwendung der [Wegweiser für Office 365-Sicherheit: Top-Prioritäten für den ersten 30 Tagen 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) zur Implementierung von Microsoft empfohlene bewährte Methoden zum Sichern Ihrer Office 365-Mandanten.
@@ -109,3 +128,5 @@ Ihr Office 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherhe
 ## <a name="see-also"></a>Siehe auch:
 - [Bewährte Methoden für die Sicherheit in Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Erkennen und Warten von Outlook-Regeln und benutzerdefinierte Formulare Injektionen Angriffen in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Internet Crime kompatibles Center](http://www.ic3.gov/preventiontips.aspx)
+- [Sicherheit und Exchange Provision - Betrug "Phishing"](http://www.sec.gov/investor/pubs/phishing.htm)

@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 description: Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. Exchange Online Protection (EOP)-Anti-Spam- und Anti-Phishing-Filtertechnologie wird plattformübergreifend über die E-Mail-Plattformen von Microsoft angewendet, um Benutzern die neuesten Anti-Spam- und Anti-Phishing-Tools und Innovationen im gesamten Netzwerk zur Verfügung zu stellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
-ms.openlocfilehash: dafcb827a323461936eadcd00c37fabd43005a80
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: d4047e373b7808fe4b30dd23a1e7486ee7eb5a66
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026352"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002874"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Bekämpfung von Junk-E-Mails, die an Office 365 gesendet werden
 
