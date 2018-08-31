@@ -3,7 +3,6 @@ title: Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -16,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Erfahren Sie, wie erkennen und reagieren auf eine kompromittierten e-Mail-Konto in Office 365
-ms.openlocfilehash: ef97ecd3198234cf2c3d609f81a4a4a8af2c237e
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531878"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782182"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
@@ -31,13 +30,13 @@ ms.locfileid: "23531878"
 Zugriff auf Office 365-Postfächer, Daten und andere Dienste, die durch die Verwendung von Anmeldeinformationen, beispielsweise ein Benutzername und Kennwort oder eine PIN gesteuert wird. Wenn eine andere Person als der gewünschte Benutzer diese Anmeldeinformationen entwendet, gelten die gestohlenen Anmeldeinformationen möglicherweise gefährdet. Mit diesen kann der Angreifer als der ursprünglichen Benutzer anmelden und unerlaubte Aktionen ausführen. Die gestohlenen Anmeldeinformationen verwenden, kann der Angreifer Office 365-Postfach des Benutzers, SharePoint-Ordner oder Dateien in OneDrive des Benutzers zugreifen. Eine Aktion im Allgemeinen ist der Angreifer e-Mails an Empfänger innerhalb und außerhalb der Organisation als des ursprünglichen Benutzers senden. Wenn der Angreifer Daten an externe Empfänger-e-Mails, wird diese Daten Exfiltration aufgerufen.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptome eines kompromittierten Office 365-e-Mail-Kontos
-Benutzer können beachten und melden ungewöhnliche Aktivitäten in ihre Office 365-Postfächer. Im folgenden sind einige häufige Symptome:
+Benutzer möglicherweise beachten und ungewöhnliche Aktivität in ihre Office 365-Postfächer. Im folgenden sind einige häufige Symptome:
 - Verdächtige Aktivitäten wie fehlende oder gelöschte-e-Mails.
-- Andere Benutzer können dieses Konto ohne die entsprechenden e-Mail-Nachricht im Ordner " **Gesendete Elemente** " des Absenders einer vorhandenen-e-Mails erhalten.
+- Andere Benutzer möglicherweise dieses Konto ohne entsprechende im Ordner " **Gesendete Elemente** " des Absenders einer vorhandenen e-Mail-e-Mails erhalten.
 - Das Vorhandensein von Posteingangsregeln, die von der gewünschten Benutzer oder der Administrator erstellt wurden nicht. Diese Regeln möglicherweise automatisch Weiterleiten von e-Mails an unbekannte Adressen oder verschieben Sie sie in den Ordner **Notizen**, **Junk-e-Mail-** oder **RSS-Abonnements** .
-- Der Anzeigename der Benutzer kann in der globalen Adressliste geändert werden.
+- Anzeigename des Benutzers kann in der globalen Adressliste geändert werden.
 - Das Postfach des Benutzers wird verhindert, dass das Senden von e-Mails.
-- Der Ordner gesendet oder gelöschte Objekte in Microsoft Outlook oder Microsoft Outlook Web App enthalten allgemeine gehackt – Nachrichten des Kontos, wie "Ich in London Geld senden hängen bin."
+- Der Ordner gesendet oder gelöschte Objekte in Microsoft Outlook oder Microsoft Outlook Web App enthalten allgemeine gehackt Konto Nachrichten, wie "Ich in London Geld senden hängen bin."
 - Ungewöhnliche Profil ändert, beispielsweise den Namen, die Telefonnummer oder die Postleitzahl wurden aktualisiert.
 - Ungewöhnliche Anmeldeinformationen geändert wird, wie mehrere kennwortänderungen sind erforderlich.
 - E-Mail-Weiterleitung wurde kürzlich hinzugefügt.
