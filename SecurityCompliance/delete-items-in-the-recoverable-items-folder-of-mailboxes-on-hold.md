@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Für Administratoren: Löschen von Elementen in den Ordner eines Benutzers wiederherstellbare Elemente für ein Exchange Online-Postfach, auch wenn dieses Postfach rechtliche Aufbewahrungspflicht platziert wird. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die in Office 365 versehentlich verschüttet ist.'
-ms.openlocfilehash: 0519e389f05ed9952090fb9b163a05d18e3bd762
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23014029"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796881"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "wiederherstellbare Elemente" des cloudbasierten Postfächer in der Warteschleife - Admin-Hilfe
 
@@ -110,7 +110,7 @@ Darüber hinaus müssen Sie das Postfach Clientzugriffseinstellungen abrufen, da
 
    Wenn das Postfach des Benutzers Archiv aktiviert ist, führen Sie den folgenden Befehl zum Abrufen der Größe und der Gesamtzahl der Elemente in Ordner und Unterordner im Ordner "wiederherstellbare Elemente" in ihrem Postfach archivieren. 
 
-    ```
+    ```s
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
@@ -244,7 +244,7 @@ Notiz, die Elemente im Ordner "wiederherstellbare Elemente" im primären Archivp
   
 Die folgenden Beispiele zeigen die Befehlssyntax für jede dieser Optionen an. Diese Beispiele verwenden die `-SearchQuery size>0` Wert des Parameters, der alle Elemente in allen Unterordnern im Ordner "wiederherstellbare Elemente" gelöscht. Wenn Sie nur Elemente löschen, die bestimmte Bedingungen erfüllen müssen, können Sie auch den Parameter *SearchQuery* verwenden, Sonstiges wie den Betreff einer Nachricht oder einen Datumsbereich angeben. Finden Sie [Weitere Beispiele für die Verwendung des Parameters SearchQuery](#other-examples-of-using-the-searchquery-parameter) unten. 
   
-### <a name="example-1"></a>Beispiel 1
+### <a name="example-1"></a>Beispiel 1
 
 In diesem Beispiel werden alle Elemente in den Ordner des Benutzers wiederherstellbare Elemente in einen Ordner in Ihrer Organisation Discoverysuchpostfach kopiert. Auf diese Weise können Sie die Elemente lesen, bevor Sie endgültig löschen.
 
