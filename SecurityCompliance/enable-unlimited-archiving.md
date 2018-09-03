@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Für Administratoren: enthält Informationen zum Aktivieren der Archivierung automatisch erweitert, in Office 365, die Ihre Benutzer für ihre Exchange Online-Postfächer mit unbegrenzte Speicher bereitstellt. Sie können die Archivierung automatisch erweitert, für die gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782152"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809700"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Aktivieren Sie die uneingeschränkte Archivierung in Office 365 - Admin-Hilfe
 
@@ -54,7 +54,7 @@ Sie können die erweiterbares Archivierung für die gesamte Organisation aktivie
 
 Anstelle der erweiterbares Archivierung für alle Benutzer in Ihrer Organisation können Sie nur für bestimmte Benutzer aktivieren. Dies ist sinnvoll, da nur einige Benutzer möglicherweise die Notwendigkeit einer sehr großen Archivspeicher müssen.
   
-Wenn Sie die Archivierung automatisch erweitert, für einen bestimmten Benutzer aktivieren, werden auch die folgenden beiden Konfigurationen Änderungen vorgenommen:
+Wenn Sie die erweiterbares Archivierung für einen bestimmten Benutzer aktivieren und das Postfach des Benutzers in auf halten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen, werden die folgenden beiden Konfigurationen Änderungen vorgenommen:
   
 - 10 GB (von 100 GB auf 110 GB) wird das Speicherkontingent für primäre Archivpostfach des Benutzers erhöht. 10 GB (von 90 GB auf 100 GB) wird auch die Kontingentgrenzwert erhöht.
     
