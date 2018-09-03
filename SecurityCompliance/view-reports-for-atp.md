@@ -3,7 +3,6 @@ title: Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 erweiterte Threat Protection in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: bd02989711629cc67f7a7d5e061862a1146ff21b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529283"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782112"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 
@@ -26,7 +25,7 @@ Wenn Ihre Organisation [Office 365 erweiterte Threat Protection](office-365-atp.
   
 ![Die Sicherheit &amp; Compliance Center-Dashboard kann Ihnen finden Sie unter, in dem erweiterte Schutz funktionsfähig ist](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP Berichte umfassen [Threat Protection Statusbericht](view-reports-for-atp.md#advancedthreats), den [Bericht ATP Dateitypen](view-reports-for-atp.md#atpfiletypes)und [ATP Nachricht Disposition Bericht](view-reports-for-atp.md#atpmessagedisp). In diesem Artikel wird beschrieben, die ATP-Berichte und enthält Links zu [zusätzlichen Berichte anzeigen](view-reports-for-atp.md#addl).
+ATP Berichte umfassen Threat Protection Statusbericht, den Bericht ATP-Dateitypen und der Bericht ATP Nachricht Disposition. In diesem Artikel wird beschrieben, die ATP-Berichte und enthält Links zu zusätzlichen Berichte anzeigen.
   
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 

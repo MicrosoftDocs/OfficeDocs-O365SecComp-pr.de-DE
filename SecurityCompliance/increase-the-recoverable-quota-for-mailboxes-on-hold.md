@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Aktivieren Sie das Archivpostfach, und schalten Sie automatisch erweitert, um die Größe des Ordners "wiederherstellbare Elemente" für ein Postfach in Office 365 erhöhen Archivierung. '
-ms.openlocfilehash: 2e7149ef10152a11dc638c04b61a261440b539b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528976"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782092"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 
@@ -35,11 +35,11 @@ Um das Risiko Überschreitung dieses Grenzwerts reduzieren, ist das Speicherkont
 |**Gesamtspeicherkontingent für den Ordner „Wiederherstellbare Elemente“** <br/> |Unbegrenzt  <br/> |Unbegrenzt  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Das ursprüngliche Speicherkontingent für das Archivpostfach beträgt 100 GB für Benutzer mit einer Lizenz für Exchange Online (Plan 2). Wenn die Archivierung erweiterbares aktiviert ist, ist das Speicherkontingent für die benutzerarchiv und des Ordners "wiederherstellbare Elemente" in das Archiv unbegrenzt. Weitere Informationen zum Erweitern von automatischen Archivierung, finden Sie unter [Übersicht über die uneingeschränkte Archivierung in Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>Das ursprüngliche Speicherkontingent für das Archivpostfach beträgt 100 GB für Benutzer mit einer Lizenz für Exchange Online (Plan 2). Jedoch wenn erweiterbares Archivierung aktiviert ist für Postfächer in der Warteschleife, das Speicherkontingent für beide das Archivpostfach und des Ordners wiederherstellbare Elemente auf 110 GB erhöht. Zusätzliche Archiv Speicherplatz wird bereitgestellt, bei Bedarf unbegrenzt Archivspeicher ergibt. Weitere Informationen zum Erweitern von automatischen Archivierung, finden Sie unter [Übersicht über die uneingeschränkte Archivierung in Office 365](unlimited-archiving.md). 
   
 Wenn das Speicherkontingent für den Ordner „Wiederherstellbare Elemente“ im primären Postfach eines aufzubewahrenden Postfachs seinen Grenzwert bald erreicht, können Sie Folgendes ausführen:
   
-- **Aktivieren Sie das Archivpostfach und Aktivieren von erweiterbares Archivierung** – können Sie einen unbegrenzte Speicherkapazität für "wiederherstellbare Elemente" einfach durch das Archivpostfach aktivieren und dann das automatisch erweitert, Archivierung Feature in Exchange Online. Dies führt 100 GB für den Ordner "wiederherstellbare Elemente" in das primäre Postfach und eine unbegrenzte Zeitspanne Speicherkapazität für den Ordner wiederherstellbare Elemente im Archiv des Benutzers. Finden Sie unter wie: [Aktivieren von archivpostfächern in die Office 365-Sicherheit &amp; Compliance Center](enable-archive-mailboxes.md) und [unbegrenzte Archivierung in Office 365 zu aktivieren](enable-unlimited-archiving.md).
+- **Aktivieren Sie das Archivpostfach und Aktivieren von erweiterbares Archivierung** – können Sie einen unbegrenzte Speicherkapazität für "wiederherstellbare Elemente" einfach durch das Archivpostfach aktivieren und dann das automatisch erweitert, Archivierung Feature in Exchange Online. Dies führt 110 GB für den Ordner "wiederherstellbare Elemente" in das primäre Postfach und eine unbegrenzte Zeitspanne Speicherkapazität für den Ordner wiederherstellbare Elemente im Archiv des Benutzers. Finden Sie unter wie: [Aktivieren von archivpostfächern in die Office 365-Sicherheit &amp; Compliance Center](enable-archive-mailboxes.md) und [unbegrenzte Archivierung in Office 365 zu aktivieren](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Nachdem Sie das Archiv für ein Postfach aktiviert haben, die fast für "wiederherstellbare Elemente" das Speicherkontingent überschritten ist, Sie möglicherweise ausführen möchten, der Assistent für verwaltete Ordner manuell Auslösen der Assistent, um das Postfach verarbeitet werden, damit abgelaufene Elemente verschoben werden, um die Ordner wiederherstellbare Elemente im Archivpostfach. Weitere Informationen finden Sie in [Schritt 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Beachten Sie, dass andere Elemente im Postfach des Benutzers in das neue Archivpostfach verschoben werden können. Berücksichtigen Sie den Anwender darüber, dass dies geschehen kann, nachdem Sie das Archivpostfach aktivieren. 

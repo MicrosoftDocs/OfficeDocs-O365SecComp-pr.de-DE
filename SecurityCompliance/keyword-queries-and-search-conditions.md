@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über die Eigenschaften für e-Mail- und -Datei, die in Exchange Online-Postfächern und SharePoint oder OneDrive for Business-Websites mit dem Tool für die Inhaltssuche in die Office 365-Sicherheit suchen können &amp; Compliance Center.  '
-ms.openlocfilehash: c043b6667e6847ff944b05e6bbe91df8ed2f600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529609"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782102"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -134,7 +134,7 @@ Boolesche Suche Operatoren wie **AND**, **OR**und **nicht**, können Sie die meh
 |**Operator**|**Verwendung**|**Beschreibung**|
 |:-----|:-----|:-----|
 |AND  <br/> |Wort1 AND Wort2  <br/> |Gibt die Elemente, die alle angegebenen Schlüsselwörter enthalten oder `property:value` Ausdrücke. Beispielsweise `from:"Ann Beebe" AND subject:northwind` alle Nachrichten von Ann Beebe, der die Northwind Wort in der Betreffzeile enthalten zurück. <sup>2</sup> <br/> |
-|+  <br/> |Schlüsselwort1?? sein. + Schlüsselwort2?? sein. + Schlüsselwort3  <br/> |Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Beachten Sie, dass die Abfrage  `keyword1 + keyword2` (mit einem Leerzeichen nach dem **+** -Symbol) nicht der Verwendung des ** UND ** -Operators entspricht. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.  <br/> |
+|+  <br/> |Schlüsselwort1 Schlüsselwort2 + Schlüsselwort3  <br/> |Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Beachten Sie, dass die Abfrage  `keyword1 + keyword2` (mit einem Leerzeichen nach dem **+** -Symbol) nicht der Verwendung des ** UND ** -Operators entspricht. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.  <br/> |
 |OR  <br/> |Wort1 OR Wort2  <br/> |Gibt die Elemente, die eine oder mehrere der angegebenen Schlüsselwörter enthalten oder `property:value` Ausdrücke. <sup>2</sup> <br/> |
 |NOT  <br/> |Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> NICHT Art: Instant Messaging  <br/> |Schließt ein Schlüsselwort angegeben oder eine `property:value` Ausdruck. In der zweiten schließt Beispiel von Ann Beebe gesendete Nachrichten. Im dritte Beispiel schließt alle Sofortnachrichtenunterhaltungen wie Skype für Business Unterhaltungen, die die Postfach-Ordner Unterhaltungsverlauf gespeichert sind. <sup>2</sup> <br/> |
 |-  <br/> |Wort1 - Wort2  <br/> |Identisch mit der **nicht** -Operator. Damit diese Abfrage gibt Elemente zurück, die enthalten `keyword1` und Ausschließen von Elementen, die enthalten würde `keyword2`.<br/> |
@@ -152,7 +152,7 @@ Boolesche Suche Operatoren wie **AND**, **OR**und **nicht**, können Sie die meh
 |(  )  <br/> | (fair OR frei) AND (Von:contoso.com)  <br/> (IPO OR Initiale) AND (Aktien OR Anteile)  <br/> (Vierteljährliche Finanzdaten)  <br/> |Mit Klammern werden Boolesche Ausdrücke,  `property:value`-Elemente und Schlüsselwörter gruppiert.  `(quarterly financials)` gibt z. B. Elemente zurück, die die Wörter "Vierteljährliche" und "Finanzdaten" enthalten.  <br/> |
    
 > [!NOTE]
-> <sup>1</sup>??????Use dieser Operator für Eigenschaften, die Datum oder numerischen Werte besitzen. > <sup>2</sup>??????Boolean Suchoperatoren Großbuchstaben; sein müssen beispielsweise **und**. Wenn Sie einen Kleinbuchstaben Operator, wie **und**, wird diese als ein Schlüsselwort in der Suchabfrage behandelt. 
+> Verwenden Sie <sup>1</sup> diesen Operator für Eigenschaften, die Datum oder numerischen Werte besitzen.<br/> <sup>2</sup> boolesche Suchoperatoren müssen in Großbuchstaben sein. beispielsweise **und**. Wenn Sie einen Kleinbuchstaben Operator, wie **und**, wird diese als ein Schlüsselwort in der Suchabfrage behandelt. 
   
 ## <a name="search-conditions"></a>Suchbedingungen
 
@@ -265,7 +265,7 @@ Beachten Sie Folgendes bei der Verwendung von Suchbedingungen:
 
 Die folgenden Beispiele zeigen die GUI-basierte Version einer Suchabfrage mit Bedingungen, die Search-Abfragesyntax, die angezeigt wird, klicken Sie im Detailbereich der ausgewählten Suche (das auch durch das Cmdlet **Get-ComplianceSearch** zurückgegeben wird), und die Logik der entsprechende KQL-Abfrage. 
   
-#### <a name="example-1"></a>Beispiel 1
+#### <a name="example-1"></a>Beispiel 1
 
 Dieses Beispiel gibt Dokumente in SharePoint, und OneDrive for Business-Websites, die eine Kreditkartennummer enthalten und vor dem 1 Januar 2016 zuletzt geändert wurden.
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden der Suche von Inhalt in die Office 365-Sicherheit &amp; Compliance Center zum Suchen nach Inhalt in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft-Teams, Gruppen von Office 365 und Skype für Business Unterhaltungen. Sie können Schlüsselwort von Suchabfragen verwenden, und suchen Bedingungen, um die Suchergebnisse einzuschränken. Anschließend können Sie eine Vorschau anzeigen und Exportieren von Suchergebnissen. Inhaltssuche ist auch ein effektives Tool zum Suchen nach Inhalt, die eine Anforderung zum GDPR Daten Betreff zugeordnet werden kann.
-ms.openlocfilehash: f0064ae08226b1b0e864b25bb845054184f1efa4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530133"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782082"
 ---
 # <a name="content-search-in-office-365"></a>Content-Suche in Office 365
 
@@ -75,7 +75,7 @@ Um den Zugriff auf die Seite **Inhaltssuche** zum Ausführen von Suchanfragen un
     
     Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente jedes Schlüsselwort überein. Dadurch können Sie schnell erkennen, welche Schlüsselwörter der am häufigsten (und mindestens) wirksam werden. Sie können auch eine Stichwortbegriff (in Klammern eingeschlossen sind) in einer Zeile. Weitere Informationen zu Suchstatistik finden Sie unter [schlüsselwortstatistiken für die Inhaltssuche Ergebnisse anzeigen](view-keyword-statistics-for-content-search.md).
     
-- **Conditions** - können Sie Suchkriterien, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben hinzufügen. Jede Bedingung hinzugefügt der KQL Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch einen logischen Operator ( **c: c**) verbunden, die an den **und** -Operator vergleichbar ist. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und einen oder mehrere Bedingungen, die in den Ergebnissen berücksichtigt werden müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. Eine Liste und eine Beschreibung der Bedingungen, die Sie bei einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchen Conditions" in [Stichwortabfragen und Suchkriterien für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
+- **Conditions** - können Sie Suchkriterien, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben hinzufügen. Jede Bedingung hinzugefügt Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch einen logischen Operator ( **c: c**) verbunden, die an den **und** -Operator vergleichbar ist. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und einen oder mehrere Bedingungen, die in den Ergebnissen berücksichtigt werden müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. Eine Liste und eine Beschreibung der Bedingungen, die Sie bei einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchen Conditions" in [Stichwortabfragen und Suchkriterien für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Speicherorte** - wählen Sie die Speicherorte für Inhalte zu suchen.
     
@@ -159,7 +159,7 @@ Detailliertere Anweisungen und Tipps zur Problembehandlung finden Sie unter:
   
 - [Exportieren von Suchergebnissen aus der Office 365-Sicherheit &amp; Compliance Center](export-search-results.md)
     
-- [Exportieren eines Berichts für die Inhaltssuche](export-a-content-search-report.md)
+- [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
     
 
   

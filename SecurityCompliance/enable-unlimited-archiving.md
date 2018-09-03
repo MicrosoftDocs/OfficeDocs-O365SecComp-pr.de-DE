@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Für Administratoren: enthält Informationen zum Aktivieren der Archivierung automatisch erweitert, in Office 365, die Ihre Benutzer für ihre Exchange Online-Postfächer mit unbegrenzte Speicher bereitstellt. Sie können die Archivierung automatisch erweitert, für die gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: 6dd49433a1692d3a0ba23af57e7e2d9544f8a2b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528869"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782152"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Aktivieren Sie die uneingeschränkte Archivierung in Office 365 - Admin-Hilfe
 
@@ -56,9 +56,9 @@ Anstelle der erweiterbares Archivierung für alle Benutzer in Ihrer Organisation
   
 Wenn Sie die Archivierung automatisch erweitert, für einen bestimmten Benutzer aktivieren, werden auch die folgenden beiden Konfigurationen Änderungen vorgenommen:
   
-- 10 GB (von 100 GB auf 110 GB) wird das Speicherkontingent für primäre Archivpostfach des Benutzers erhöht.
+- 10 GB (von 100 GB auf 110 GB) wird das Speicherkontingent für primäre Archivpostfach des Benutzers erhöht. 10 GB (von 90 GB auf 100 GB) wird auch die Kontingentgrenzwert erhöht.
     
-- 10 GB (auch von 100 GB auf 110 GB) wird das Speicherkontingent für den Ordner wiederherstellbare Elemente im primären Postfach des Benutzers erhöht. Diese Änderung ist nur anwendbar, wenn das Postfach im auf halten.
+- 10 GB (auch von 100 GB auf 110 GB) wird das Speicherkontingent für den Ordner wiederherstellbare Elemente im primären Postfach des Benutzers erhöht. Die wiederherstellbare Elemente Warnung wird auch von 10 GB (von 90 GB auf 100 GB) erhöht. Diese Änderungen gelten nur, wenn das Postfach im auf halten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen.
     
 Diese zusätzliche Speicherplatz wird hinzugefügt um Probleme Speicher zu verhindern, die auftreten können, bevor das Archiv erweiterbares bereitgestellt wird. Beachten Sie, zusätzlicher Speicher Speicherplatz *ist nicht* hinzugefügt, wenn Sie die Archivierung automatisch erweitert, für die gesamte Organisation, gemäß der Beschreibung im vorherigen Abschnitt aktivieren. 
   
