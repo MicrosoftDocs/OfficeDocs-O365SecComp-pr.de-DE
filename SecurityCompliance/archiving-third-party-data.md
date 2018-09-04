@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Administratoren können Drittanbieter-Daten aus soziale Medien Plattformen, instant messaging-Plattformen und Dokument für die Zusammenarbeit Plattformen auf Postfächer in Office 365-Organisation importieren. Auf diese Weise können Sie Daten aus Facebook, Twitter und Datenquellen in Office 365 zu archivieren. Anschließend können Sie Appply Office 365 Compliance-Features (wie rechtliche Aufbewahrungspflicht, Inhaltssuche und Aufbewahrungsrichtlinien) auf Drittanbieter-Daten.
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809710"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827089"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivieren von Drittanbieter-Daten in Office 365
 
@@ -638,7 +638,7 @@ Hier sind die Schritte zum zugreifen, und akzeptieren Sie die Anforderung an den
 1. Besuchen Sie [Diese Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) , und melden Sie sich mit den Anmeldeinformationen des ein globaler Office 365-Administrator.<br/><br/>Das folgende Dialogfeld wird angezeigt. Erweitern Sie die Caretzeichen zur Überprüfung der Berechtigungen, die an den Konnektor zugewiesen werden.<br/><br/>![Das Anforderung Berechtigungsdialogfeld wird angezeigt.](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. Klicken Sie auf **Übernehmen**.
 
-Nachdem Sie die Anfrage zu akzeptieren, wird das [Azure Portal Dashboard](https://portal.azure.com) angezeigt. Klicken Sie zum Anzeigen der Liste der Programme für Ihre Organisation **Azure Active Directory** > **unternehmensanwendungen**. Der Office 365-Drittanbieter-Daten-Connector wird auf das Blade **unternehmensanwendungen** aufgeführt.
+Nachdem Sie die Anfrage zu akzeptieren, wird der [Azure-Portal](https://portal.azure.com) angezeigt. Klicken Sie zum Anzeigen der Liste der Programme für Ihre Organisation **Azure Active Directory** > **unternehmensanwendungen**. Der Office 365-Drittanbieter-Daten-Connector wird auf das Blade **unternehmensanwendungen** aufgeführt.
 
 > [!IMPORTANT]
 > Nach 30 September 2018 werden der Drittanbieter-Daten nicht mehr in Postfächer in Ihrer Organisation importiert werden, wenn Sie einen Connector Drittanbieter-Daten in Azure Active Directory registrieren nicht. Das Verfahren in Schritt 5 muss einer vorhandenen Drittanbieter-datenkonnektoren (die vor dem 30 September 2018 erstellt) Hinweis auch in Azure Active Directory registriert werden.
