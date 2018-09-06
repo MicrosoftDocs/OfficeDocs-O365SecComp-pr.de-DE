@@ -3,7 +3,7 @@ title: Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Adm
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Als Administrator können Sie anzeigen, freigeben und melden false positive in Quarantäne verschobenen Nachrichten in Office 365. Sie können Richtlinien festlegen, sodass Office 365 Nachrichten filtert und sendet sie zur aus verschiedenen Gründen in Quarantäne:, da sie als Spam, Massen, Phishing, Schadsoftware erkannt wurden oder sie eine e-Mail-Flussregel übereinstimmen. '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529502"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839099"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Administrator in Office 365
 
@@ -34,7 +34,7 @@ Sie benötigen Administratorberechtigungen in Office 365 Nachrichten in Quarant�
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Anzeigen von in Quarantäne verschobenen Nachrichten Ihrer Organisation
 
-1. Melden Sie sich einer Arbeit oder Schule Konto, das globale in Ihrer Office-365organization Administratorrechten zu Office 365 und [Wechseln Sie zur Sicherheit und Compliance Center](go-to-the-securitycompliance-center.md).
+1. Melden Sie sich mit einem arbeiten oder Schule Konto mit globalen Administratorrechten in Office 365-Organisation, bei Office 365 und [Wechseln Sie zur Sicherheit und Compliance Center](go-to-the-securitycompliance-center.md).
     
 2. In der Liste auf der linken Seite erweitern Sie **Threat Management**, wählen Sie **Überprüfen**und wählen Sie dann die **Quarantäne**.
     
