@@ -5,31 +5,34 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.date: 9/5/2018
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: ATP Phishing-Schutz, die Teil von Office 365 erweiterte Threat Protection kann Ihre Organisation vor böswilligen Identitätswechsel-basierte Phishingangriffe und andere Phishingangriffen schützen. Wenn Sie ein Office 365 Enterprise-global oder Sicherheitsadministrator sind, können Sie ATP Anti-Phishing Richtlinien einrichten. Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine ATP Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
-ms.openlocfilehash: 2f2258c4059d17410fd040782d7ee9dfca12576d
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827079"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839965"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Einrichten von ATP-Antiphishingrichtlinien in Office 365
 
-[ATP Phishing - Schutz](atp-anti-phishing.md) , Bestandteil des [Office 365 erweiterte Schutz](office-365-atp.md), können Ihrer Organisation vor böswilligen Identitätswechsel-basierte Phishingangriffe und andere Phishingangriffen schützen. Wenn Sie ein Office 365 Enterprise-global oder Sicherheitsadministrator sind, können Sie ATP Anti-Phishing Richtlinien einrichten. Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine ATP Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
+[ATP Phishing - Schutz](atp-anti-phishing.md), Bestandteil des [Office 365 erweiterte Schutz](office-365-atp.md), können Ihrer Organisation vor böswilligen Identitätswechsel-basierte Phishingangriffe und andere Phishingangriffen schützen. Wenn Sie ein Office 365 Enterprise-global oder Sicherheitsadministrator sind, können Sie ATP Anti-Phishing Richtlinien einrichten. 
+
+Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine ATP Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
   
 > [!NOTE]
 > ATP Anti-Phishing ist nur verfügbar, erweiterte Threat Protection, mit Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann der erweiterte Schutz als Add-on erworben werden. (Als ein globaler Administrator, in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen zu den Optionen zum Plan finden Sie unter [Vergleich alle Office 365 für Unternehmen plant](https://go.microsoft.com/fwlink/?linkid=844053). Stellen Sie sicher, dass Ihre Organisation die neueste Version von Office 365 ProPlus von Windows verwenden, ATP Phishing-Schutz vollständig zu nutzen. 
   
 Was ist zu tun:
   
-1. [Überprüfen Sie die erforderlichen Komponenten](#review-the-prerequisites)
+1. Überprüfen Sie die erforderlichen Komponenten.
     
-2. [Erfahren Sie mehr über ATP Anti-Phishing Richtlinienoptionen](#learn-about-atp-anti-phishing-policy-options)
+2. Informationen Sie zu ATP Anti-Phishing Richtlinienoptionen.
     
-3. [Richten Sie eine ATP Anti-Phishing-Richtlinie](#set-up-an-atp-anti-phishing-policy)
+3. Richten Sie eine ATP Anti-Phishing-Richtlinie.
     
 ## <a name="review-the-prerequisites"></a>Überprüfen Sie die erforderlichen Komponenten
 
@@ -45,7 +48,7 @@ Was ist zu tun:
     
 ## <a name="set-up-an-atp-anti-phishing-policy"></a>Richten Sie eine ATP Anti-Phishing-Richtlinie
 
-Sie hinzufügen, bearbeiten und Löschen von ATP Anti-Phishing-Richtlinien in der Office 365-Sicherheit &amp; Compliance Center.
+Jede Organisation in Office 365 verfügt über eine Anti-Phishing-Standardrichtlinie, die für alle Benutzer gilt. Sie können auch mehrere benutzerdefinierte Anti-Phishing-Richtlinien erstellen, die Sie für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation einen Bereich können. Die benutzerdefinierten Richtlinien, die Sie erstellen haben Vorrang vor der Standardrichtlinie. Sie hinzufügen, bearbeiten und Löschen von ATP Anti-Phishing-Richtlinien in der Office 365-Sicherheit &amp; Compliance Center.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -57,7 +60,7 @@ Sie hinzufügen, bearbeiten und Löschen von ATP Anti-Phishing-Richtlinien in de
     
   - Zum Hinzufügen eine neue Richtlinie wählen Sie **+ Erstellen**.
     
-  - Um eine vorhandene Richtlinie zu bearbeiten, wählen Sie den Namen der Richtlinie aus der Liste auf der Seite **Anti-Phishing** angezeigt. Wählen Sie auf der angezeigten Seite **Richtlinie bearbeiten**.
+  - Um eine vorhandene Richtlinie zu bearbeiten, wählen Sie den Namen der Richtlinie aus der Liste auf der Seite **Anti-Phishing** angezeigt, oder wählen Sie **Standardrichtlinie** über der Liste der standardmäßigen Poicy für Ihre Organisation zu bearbeiten. Wählen Sie auf der angezeigten Seite **Richtlinie bearbeiten**.  
     
     Ein Assistent wird gestartet, die Sie schrittweise durch die Anti-Phishing-Richtlinie definieren.
     
@@ -107,7 +110,7 @@ Der Sicherheitsadministrator bei Contoso können Werte wie folgt, um eine Anti-P
    
 ## <a name="delete-an-atp-anti-phishing-policy"></a>Löschen einer ATP Anti-Phishing-Richtlinie
 
-Sie können hinzufügen und Bearbeiten von Richtlinien in das Wertpapier &amp; Compliance Center. Es wird empfohlen, die Sicherheit &amp; Compliance Center zu überprüfen oder eine beliebige ATP Richtlinie bearbeiten.
+Sie können benutzerdefinierte Richtlinien, die Sie erstellt haben, mithilfe der Sicherheits löschen &amp; Compliance Center. Die Standardrichtlinie kann nicht für Ihre Organisation gelöscht werden. Es wird empfohlen, die Sicherheit &amp; Compliance Center zu überprüfen oder eine beliebige ATP Richtlinie bearbeiten.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     

@@ -3,7 +3,6 @@ title: Einrichten von Richtlinien für Office 365 ATP sichere Links
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 0f43cf1eec63df4b70f88abf36e8f097da72ebbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529889"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839975"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
@@ -38,13 +37,13 @@ Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen 
 
 ## <a name="what-to-do"></a>Nächste Schritte 
   
-1. [Überprüfen Sie die erforderlichen Komponenten](#review-the-prerequisites)
+1. [Überprüfen Sie die erforderlichen Komponenten](#review-the-prerequisites).
     
-2. [Definieren einer Richtlinie für den sicheren ATP-Links, die für alle Benutzer gilt](set-up-atp-safe-links-policies.md#reveddefaultscc), einschließlich der [Einrichtung von Ihrer benutzerdefinierten blockierte URLs Liste für sichere ATP-Links](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+2. [Überprüfen und Bearbeiten der Standardrichtlinie für ATP sichere Links, die für alle Benutzer gilt](#define-an-atp-safe-links-policy-that-applies-to-everyone). Beispielsweise können Sie [die benutzerdefinierten blockierte URLs Liste für sichere Links ATP eingerichtet](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Hinzufügen einer Richtlinie für bestimmte e-Mail-Empfänger](set-up-atp-safe-links-policies.md#addemailpolscc), einschließlich der [Einrichtung von Ihrer benutzerdefinierten "Nicht rewrite" URLs Liste für sichere ATP-Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+3. [Hinzufügen einer Richtlinie für bestimmte e-Mail-Empfänger](#add-a-policy-for-specific-email-recipients), einschließlich der [Einrichtung von Ihrer benutzerdefinierten "Nicht rewrite" URLs Liste für sichere ATP-Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-4. [Informieren Sie sich über Richtlinienoptionen ATP sichere Links](set-up-atp-safe-links-policies.md#policyoptions), einschließlich der Einstellungen für kürzlichen Änderungen
+4. [Informieren Sie sich über Richtlinienoptionen ATP sichere Links](#learn-about-atp-safe-links-policy-options) (in diesem Artikel) einschließlich der Einstellungen für kürzlichen Änderungen
     
 ## <a name="review-the-prerequisites"></a>Überprüfen Sie die erforderlichen Komponenten
 
@@ -58,7 +57,7 @@ Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen 
     
 ## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>Definieren einer Richtlinie für den sicheren ATP-Links, die für alle Benutzer gilt
 
-Wenn Sie erweiterte Schutz in Office 365 Enterprise verwenden, müssen Sie eine sichere Links ATP Richtlinie definieren, die für jede Person in Ihrer Organisation gilt. Sie können Ihre Richtlinie in entweder das Wertpapier bearbeiten &amp; Compliance Center oder die Exchange-Verwaltungskonsole. Es wird empfohlen, die Sicherheit &amp; Compliance Center zu überprüfen oder eine beliebige ATP Richtlinie bearbeiten.
+Wenn Sie erweiterte Schutz in Office 365 Enterprise verwenden, müssen Sie eine Standardrichtlinie ATP sichere Links, die für jede Person in Ihrer Organisation gilt. Sie können Ihre Richtlinie in entweder das Wertpapier bearbeiten &amp; Compliance Center oder die Exchange-Verwaltungskonsole. **Es wird empfohlen, die Sicherheit &amp; Compliance Center zu lesen oder bearbeiten eine beliebige Richtlinie ATP**.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -76,7 +75,7 @@ Wenn Sie erweiterte Schutz in Office 365 Enterprise verwenden, müssen Sie eine 
     
 ## <a name="add-a-policy-for-specific-email-recipients"></a>Hinzufügen einer Richtlinie für bestimmte e-Mail-Empfänger
 
-Nachdem Sie eine Richtlinie für alle Benutzer definiert haben, sollten Sie Richtlinien für bestimmte Gruppen von e-Mail-Empfängern hinzufügen. Dadurch können Sie Ausnahmen für die Standardrichtlinie angeben. Sie können entweder die Sicherheit von Richtlinien hinzufügen &amp; Compliance Center (empfohlen) oder die Exchange-Verwaltungskonsole. Es wird empfohlen, die Sicherheit &amp; Compliance Center zu überprüfen oder eine beliebige ATP Richtlinie bearbeiten.
+Nachdem Sie die Richtlinie für alle Benutzer überprüft haben, sollten Sie zusätzliche Richtlinien für bestimmte Gruppen von e-Mail-Empfängern definieren. Dadurch können Sie Ausnahmen für die Standardrichtlinie angeben. Sie können entweder die Sicherheit von Richtlinien hinzufügen &amp; Compliance Center (empfohlen) oder die Exchange-Verwaltungskonsole. **Es wird empfohlen, die Sicherheit &amp; Compliance Center zu lesen oder bearbeiten eine beliebige Richtlinie ATP**.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -117,16 +116,16 @@ Beim Einrichten oder eine Richtlinie für den sicheren Links ATP bearbeiten und 
 |**Für diese Richtlinie**|**Diese option**|**Funktion**|
 |:-----|:-----|:-----|
 |Standard (sobald definiert, die Standardrichtlinie für alle Benutzer in der Organisation)  <br/> |**Die folgenden URLs zu blockieren** <br/> |Ermöglicht Ihrem Unternehmen haben eine benutzerdefinierte Liste von URLs, die automatisch gesperrt sind. Wenn Benutzer eine URL in dieser Liste klicken, werden sie zu einer [Seite Warnung](atp-safe-links-warning-pages.md) weitergeleitet, die erklärt, warum die URL ausgeschlossen wird.<br/> Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten blockierte URLs Liste verwenden ATP sichere Links](set-up-a-custom-blocked-urls-list-wtih-atp.md) , beispielsweise neu hinzugefügte Unterstützung für bis zu drei Platzhalter Sternchen (\*).  <br/> |
-|Standard  <br/> |**Office 365 ProPlus, Office für iOS und Android (engl.)** <br/> |Wenn diese Option ausgewählt ist, ATP sichere Links öffnen Schutz auf URLs in Dokumenten angewendet wird, die in Office 365 ProPlus (Word, Excel und PowerPoint unter Windows oder Mac OS), Office-Dokumente auf IOS- oder Android-Geräte, Visio 2016 unter Windows und Office Online (Word Online, Online PowerPoint, Excel Online und OneNote Online), sofern der Benutzer in Office 365 angemeldet hat.  <br/> > [!TIP]> Wenn Sie nur **Office 2016 unter Windows**angezeigt wird, klicken Sie dann die Feature-Updates nicht erreicht haben Ihre Office 365-Umgebung noch (und bald sind). Sichere Links ATP Protection betrifft bis zu diesem Zeitpunkt aus Word 2016, 2016 Excel, PowerPoint 2016 oder Visio 2016 unter Windows.           |
+|Standard  <br/> |**Office 365 ProPlus, Office für iOS und Android (engl.)** <br/> |Wenn diese Option ausgewählt ist, ATP sichere Links öffnen Schutz auf URLs in Dokumenten angewendet wird, die in Office 365 ProPlus (Word, Excel und PowerPoint unter Windows oder Mac OS), Office-Dokumente auf IOS- oder Android-Geräte, Visio 2016 unter Windows und Office Online (Word Online, Online PowerPoint, Excel Online und OneNote Online), sofern der Benutzer in Office 365 angemeldet hat. </br></br>Wenn Sie nur **Office 2016 unter Windows**angezeigt wird, klicken Sie dann die Feature-Updates nicht erreicht haben Ihre Office 365-Umgebung noch (und bald sind). Sichere Links ATP Protection betrifft bis zu diesem Zeitpunkt aus Word 2016, 2016 Excel, PowerPoint 2016 oder Visio 2016 unter Windows.           |
 |Standard  <br/> |**Verwalten Sie nicht, wenn Benutzer ATP sichere Links klicken** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word, Excel, PowerPoint und Visio-Dokumenten wird nicht gespeichert.  <br/> |
 |Standard  <br/> |**Lassen Sie nicht über ATP sichere Links auf die ursprüngliche URL klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
 |Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Off** <br/> |URLs überprüft in e-Mail-Nachrichten nicht.  <br/> Können Sie eine Ausnahmeregel, wie eine Regel zu definieren, die nicht URLs für eine bestimmte Gruppe von Empfängern in e-Mail-Nachrichten überprüft wird.  <br/> |
 |Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Klicken Sie auf** <br/> |URLs umschreibt Route Benutzern über ATP sichere Links Protection, wenn der Benutzer URLs in e-Mail-Nachrichten klicken.  <br/> Eine URL mit einer Liste der blockierten oder böswilliges URLs Toolparts überprüft.  <br/> |
 |Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Verwenden Sie sichere Anlagen um zu überprüfenden Inhalte zum Herunterladen** <br/> |Wenn diese Option ausgewählt ist, werden die URLs, die auf Inhalte zum Herunterladen zeigen überprüft.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Wenden Sie sichere Links auf innerhalb der Organisation gesendeten Nachrichten an** <br/> | *Dieses Feature ist, Anfang März 2018 parallelen.*  <br/> Wenn diese Option aktiviert ist, wird ATP sichere Links Schutz auf e-Mails angewendet, die Nachrichten zwischen Personen in Ihrer Organisation, die e-Mail-Konten bereitgestellt in Office 365 gehostet werden.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Benutzer klickt auf nicht überwacht** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail-Nachrichten von externen Absendern wird nicht gespeichert.  <br/> Klicken Sie auf URL tracking für Links in e-Mail-Nachrichten innerhalb der Organisation gesendet wird derzeit nicht unterstützt.  <br/> |
+|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Wenden Sie sichere Links auf innerhalb der Organisation gesendeten Nachrichten an** <br/> | Wenn diese Option aktiviert ist, wird ATP sichere Links Schutz auf e-Mails angewendet, die Nachrichten zwischen Personen in Ihrer Organisation, die e-Mail-Konten bereitgestellt in Office 365 gehostet werden.  <br/> |
+|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Benutzer klickt auf nicht überwacht** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail-Nachrichten von externen Absendern wird nicht gespeichert. Klicken Sie auf URL tracking für Links in e-Mail-Nachrichten innerhalb der Organisation gesendet wird derzeit nicht unterstützt.  <br/> |
 |Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Lassen Sie nicht über die ursprüngliche URL, klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Schreiben Sie die folgenden URLs nicht** <br/> |Lässt URLs unverändert. Hält eine benutzerdefinierte Liste von sicheren URLs, die keine Überprüfung für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation benötigen.<br/> Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten "Nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich kürzlichen Änderungen an der Unterstützung für Platzhalter Sternchen (\*).  <br/> |
+|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Schreiben Sie die folgenden URLs nicht** <br/> |Lässt URLs unverändert. Hält eine benutzerdefinierte Liste von sicheren URLs, die keine Überprüfung für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation benötigen.  Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten "Nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich kürzlichen Änderungen an der Unterstützung für Platzhalter Sternchen (\*).<br/> |
    
 ## <a name="related-topics"></a>Verwandte Themen
 
