@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
+ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839975"
+ms.locfileid: "23848085"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
@@ -49,9 +49,11 @@ Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen 
 
 - Stellen Sie sicher, dass Ihre Organisation [Office 365 erweiterte Schutz](office-365-atp.md)verfügt.
     
-- Stellen Sie sicher, dass Sie die erforderlichen verfügen [über Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen zum Definieren oder bearbeiten Sie Richtlinien ATP verfügen. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 - [Informieren Sie sich über Richtlinienoptionen ATP sichere Links](#learn-about-atp-safe-links-policy-options) (in diesem Artikel). 
+
+- Stellen Sie sicher, dass Office-Clients für die Verwendung von [Modernen Authentifizierung](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)konfiguriert sind.
     
 - Können Sie bis zu 30 Minuten für die neue oder aktualisierte Richtlinie in allen Office 365-Rechenzentren verteilen.
     
