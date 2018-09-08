@@ -3,7 +3,6 @@ title: Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren.
-ms.openlocfilehash: 990fa31cc22b33d235d6e8f106511996a52212a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002924"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875797"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
   
@@ -29,7 +28,19 @@ Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige un
   
 Spambenachrichtigungen für Endbenutzer enthalten eine Liste aller Nachrichten in der Spamquarantäne, die der Endbenutzer in dem von Ihnen konfigurierten Zeitraum (zwischen 1 und 15 Tagen) erhalten hat. Sie können auch die Sprache festlegen, in der die Benachrichtigung geschrieben wird.
   
-Nach dem Empfang einer Benachrichtigung, Endbenutzer können klicken, um die Spam-e-Mail-in ihren Posteingang zu verschieben, oder Bericht Spam per e-Mail als keine Junk, in diesem Fall wird auf der Microsoft-Spamanalyseteam gesendet werden.
+Endbenutzer können nach dem Empfang einer Benachrichtigung, aus den folgenden Optionen auswählen:
+
+**Vorschau** der Nachricht, wenn Sie eine Vorschau des Inhalts oder der Header vor der Aktion anzeigen möchten.
+
+**Laden Sie** die Nachricht, wenn Sie die Nachricht und Anlagen (falls vorhanden) auf dem Gerät vor der Aktion überprüfen möchten.
+
+**Version** Wenn die Nachricht ist nicht-Spam- und Office 365 ein, um die Nachricht an Ihr Postfach senden möchten.
+
+**Version & Absender zulassen** , wenn die Nachricht ist nicht-Spam- und Office 365 ein, um den Absender Ihrer sicherer Absender und Empfänger für zukünftige e-Mails hinzufügen möchten. Beachten Sie, dass Ihre Admin andere Organisation breit zulassen/blockieren-Konfigurationen, die die Liste der sicheren Absender überschreiben möglicherweise beibehalten.
+
+**Version & Bericht**, wenn die Nachricht Spam und Sie nicht möchten, senden die Nachricht an Ihr Postfach und zur Analyse an Microsoft melden.
+
+**Blockieren** , wenn Sie Office 365 an den Absender zur Liste blockierter Absender hinzufügen möchten.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 <a name="sectionSection0"> </a>
