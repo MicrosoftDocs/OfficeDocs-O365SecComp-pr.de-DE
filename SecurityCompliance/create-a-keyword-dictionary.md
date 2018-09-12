@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 3a6557e14a3dd8bdc9e803915ea460c1fbda704b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013989"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849398"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
@@ -29,7 +29,7 @@ Durch die Verhinderung von Datenverlusten (Data Loss Prevention, DLP) in Office 
 
 Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer Datei (etwa einer CSV- oder TXT-Liste), aus einer Liste, die Sie direkt in das Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch. Befolgen Sie beim Erstellen eines Schlüsselwörterbuchs die folgenden Kernschritte:
   
-1. **Herstellen einer Verbindung mit Security &amp; Compliance Center PowerShell**: Weitere Informationen finden Sie in [diesem Thema](https://go.microsoft.com/fwlink/p/?linkid=799771).
+1. **Herstellen einer Verbindung mit Security &amp; Compliance Center PowerShell**: Weitere Informationen finden Sie in [diesem Thema](https://docs.microsoft.com/de-DE/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
 2. **Definieren oder Laden der Schlüsselwörter aus der gewünschten Quelle**: Das Cmdlet zum Erstellen eines Schlüsselwörterbuchs akzeptiert eine durch Trennzeichen getrennte Liste von Schlüsselwörtern, dieser Schritt kann also in Abhängigkeit davon, woher Ihre Schlüsselwörter stammen, geringfügig anders sein. 
     
@@ -39,7 +39,7 @@ Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quelle
     
 ## <a name="create-a-keyword-dictionary-from-a-file"></a>Erstellen eines Schlüsselwörterbuchs aus einer Datei
 
-Wenn Sie ein großes Wörterbuch erstellen müssen, werden dafür häufig Schlüsselwörter aus einer Datei oder aus einer Liste verwendet, die von einer anderen Quelle exportiert wurde. In diesem Fall erstellen Sie ein Schlüsselwörterbuch mit einer Liste unangemessener Begriffe, die in externen E-Mails gefunden werden sollen. Zunächst müssen Sie [eine Verbindung zu Security &amp; Compliance Center PowerShell herstellen](https://go.microsoft.com/fwlink/p/?linkid=799771).
+Wenn Sie ein großes Wörterbuch erstellen müssen, werden dafür häufig Schlüsselwörter aus einer Datei oder aus einer Liste verwendet, die aus einer anderen Quelle exportiert wurde. In diesem Fall erstellen Sie ein Schlüsselwörterbuch mit einer Liste unangemessener Begriffe, nach denen in externen E-Mails gesucht werden soll. Zunächst müssen Sie [eine Verbindung zu Office 365 Security &amp; Compliance Center PowerShell herstellen](https://docs.microsoft.com/de-DE/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Kopieren Sie die Schlüsselwörter in eine Textdatei, und stellen Sie sicher, dass sich jedes Schlüsselwort in einer separaten Zeile befindet.
     
