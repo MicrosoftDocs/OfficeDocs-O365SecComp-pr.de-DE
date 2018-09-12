@@ -1,5 +1,5 @@
 ---
-title: Richten Sie die neuen Funktionen von Office 365-Nachrichtenverschlüsselung
+title: Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,20 +12,20 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Neue Office 365 Message Encryption Funktionen auf der Basis Azure Information Protection Ihrer Organisation verwendeten geschützten Kommunikation mit Personen innerhalb und außerhalb Ihrer Organisation per e-Mail. Die neuen Funktionen für OME arbeiten mit anderen Office 365-Organisationen, Outlook.com, Google Mail und anderen e-Mail-Dienste.
-ms.openlocfilehash: e59368f5854c86c04f4f0bdf376537d3f6b02d33
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530030"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955417"
 ---
-# <a name="set-up-new-office-365-message-encryption-capabilities"></a>Richten Sie die neuen Funktionen von Office 365-Nachrichtenverschlüsselung
+# <a name="set-up-new-office-365-message-encryption-capabilities"></a>Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
 
 Mit den neuen Funktionen von Office 365 Message Encryption (OME), die die Schutzfunktionen in Azure Information Protection nutzen, kann in Ihrer Organisation auf einfache Weise geschützte e-Mails mit jedem beliebigen Gerät freigeben. Benutzer können Nachrichten senden und empfangen geschützte mit anderen Office 365-Organisationen sowie nicht - Office 365-Kunden mit Outlook.com, Google Mail und anderen e-Mail-Dienste.
   
 ## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Erste Schritte mit OME mit der Aktivierung der Azure Rights Management, die Teil von Azure Information Protection
 
-Es ist jetzt einfach Einstieg in die neuen OME-Funktionen. Ab Februar 2018 ermöglicht Office 365 automatisch die neuen OME-Funktionen für qualifizierte Organisationen in unseren Rechenzentren. Ihre Organisation ist berechtigt, wenn es eine neue Office 365-Mandanten ist und Ihre Organisation die entsprechenden Abonnements hat. ** If ** ** Azure Rights Management (Azure RMS), Teil des Azure Information Protection, aktiviert haben, und klicken Sie dann wir Office 365 Message Encryption automatisch für Sie aktivieren. ** Sie müssen keine andere Person zur OME aktivieren. Zum Aktivieren der Azure-Rechteverwaltung finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Informationen zu Abonnements finden Sie unter "welche Abonnements muss ich verwenden Sie die neue OME Capabilities?" in [Office 365 Message Encryption – Häufig gestellte Fragen](ome-faq.md). Informationen zum Erwerben eines Abonnements für Azure Information Protection finden Sie unter [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
+Es ist jetzt einfach Einstieg in die neuen OME-Funktionen. Ab Februar 2018 ermöglicht Office 365 automatisch die neuen OME-Funktionen für qualifizierte Organisationen in unseren Rechenzentren. Ihre Organisation ist berechtigt, wenn es eine neue Office 365-Mandanten ist und Ihre Organisation die entsprechenden Abonnements hat. **Wenn Sie Azure Rights Management (Azure RMS), Teil des Azure Information Protection, aktiviert haben, und klicken Sie dann wir Office 365 Message Encryption automatisch für Sie aktiviert.** Sie müssen keine andere Person zur OME aktivieren. Zum Aktivieren der Azure-Rechteverwaltung finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Informationen zu Abonnements finden Sie unter "welche Abonnements muss ich verwenden Sie die neue OME Capabilities?" in [Office 365 Message Encryption – Häufig gestellte Fragen](ome-faq.md). Informationen zum Erwerben eines Abonnements für Azure Information Protection finden Sie unter [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
   
 Wenn Sie Exchange Online mit Active Directory-Rechteverwaltungsdienste-Dienst (AD RMS) verwenden, können Sie diese neuen Funktionen nicht sofort aktivieren. Stattdessen müssen Sie zuerst AD RMS zur Azure Information Protection migrieren. Wenn Sie die Migration abgeschlossen haben, können Sie diese Schritte ausgeführt haben.
   
@@ -62,22 +62,18 @@ Führen Sie die folgenden Schritte aus, um sicherzustellen, dass Ihre Mandanten 
     
 2. Führen Sie das Cmdlet "Test-IRMConfiguration" mithilfe der folgenden Syntax aus:
     
-  ```
-  Test-IRMConfiguration [-Sender <email address >]
-  ```
+    ```Test-IRMConfiguration [-Sender <email address >]```  
 
-    Beispiel:
+   Beispiel:
     
-  ```
-  Test-IRMConfiguration -Sender securityadmin@contoso.com
-  ```
+    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
     Dabei ist e-Mail-Adresse die e-Mail-Adresse eines Benutzers in Office 365-Organisation. Während des optional, sofern eine e-Mail-Adresse des Absenders erzwingt, dass das System zusätzliche überprüft werden soll.
     
     Das Ergebnis sollte diese aussehen:
     
-  ```
-  Results : Acquiring RMS Templates ...
+    ```
+    Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
             Verifying encryption ...
@@ -88,7 +84,7 @@ Führen Sie die folgenden Schritte aus, um sicherzustellen, dass Ihre Mandanten 
                 - PASS: IRM verified successfully.
             
             OVERALL RESULT: PASS
-  ```
+    ```
 
     Wobei *Contoso* durch den Namen des Office 365-Organisation ersetzt wird. 
     
@@ -98,9 +94,7 @@ Führen Sie die folgenden Schritte aus, um sicherzustellen, dass Ihre Mandanten 
     
 3. Führen Sie das Cmdlet Remove-PSSession So trennen Sie die Verwaltung von Informationsrechten-Dienst.
     
-  ```
-  Remove-PSSession $session
-  ```
+    ```Remove-PSSession $session```
 
 ## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>Nächste Schritte: Definieren Sie die neue e-Mail-Flussregeln, die die neuen OME-Funktionen verwenden
 <a name="Rules_1"> </a>

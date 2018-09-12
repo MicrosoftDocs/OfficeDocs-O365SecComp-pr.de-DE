@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: ATP Phishing-Schutz, die Teil von Office 365 erweiterte Threat Protection kann Ihre Organisation vor böswilligen Identitätswechsel-basierte Phishingangriffe und andere Phishingangriffen schützen. Wenn Sie ein Office 365 Enterprise-global oder Sicherheitsadministrator sind, können Sie ATP Anti-Phishing Richtlinien einrichten. Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine ATP Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
-ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839965"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955447"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Einrichten von ATP-Antiphishingrichtlinien in Office 365
 
@@ -38,7 +38,7 @@ Was ist zu tun:
 
 - Stellen Sie sicher, dass Sie Mitglied der Gruppe der **Administratoren im Unternehmen** oder **Sicherheit-Admins** Rolle sind. 
     
-- [Informieren Sie sich über ATP Anti-Phishing Richtlinienoptionen](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) (in diesem Artikel). 
+- [Informieren Sie sich über ATP Anti-Phishing Richtlinienoptionen](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (in diesem Artikel). 
     
 - Sie werden möglicherweise mehrere ATP Anti-Phishing-Richtlinien für Ihre Organisation einrichten. Office 365 setzt diese Richtlinien in der Reihenfolge, die sie auf der Seite **ATP Anti-Phishing** in das Wertpapier aufgeführt sind &amp; Compliance Center. Nachdem Sie die Richtlinienoptionen überprüft haben, führen Sie etwas Zeit, um zu bestimmen, wie viele Richtlinien, die Sie benötigen und die Priorität für die einzelnen. 
     
