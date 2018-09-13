@@ -10,11 +10,9 @@
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planen von Sicherheit und Compliance in Office 365](plan-for-security-and-compliance.md)
 ## [Verwenden des Explorers im Security & Compliance Center](use-explorer-in-security-and-compliance.md)
-
 # Zugriffsschutz für Daten und Dienste
 ## [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
 ## [Entscheidung zwischen MDM und Intune](choose-between-mdm-and-intune.md)
-
 # [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ## [Sehen Sie einen erweiterten Überblick über DLP an](https://go.microsoft.com/fwlink/?linkid=852300)
 ## Einrichten von DLP
@@ -34,7 +32,6 @@
 ### [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
 ### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
-
 # Verwalten der Datengovernance        
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
 ### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
@@ -68,7 +65,6 @@
 ### [Aufsichtsberichte](supervision-reports.md)
 ## Weitere Informationen zur Datengovernance
 ### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Schutz vor Bedrohungen](protect-against-threats.md)
 ## [Antispam- und Antischadsoftwareschutz](anti-spam-and-anti-malware-protection.md)
 ### [Antiphishingschutz in Office 365](anti-phishing-protection.md)
@@ -142,12 +138,11 @@
 ### [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md)
 ### [Häufig gestellte Fragen zur Quarantäne für Office 365](quarantine-faq.md)
 ### [Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und Melden von isolierten Nachrichten in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-
-# Suchen nach Inhalten
+# [Suchen nach Inhalten](search-for-content.md)
 ## [Verwenden der Inhaltssuche](content-search.md)
 ### [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
 ### [Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md)
-### [Exportieren der Inhaltssuchergebnisse](content-search.md#export-search-results)
+### [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
 ### [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
 ### [Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messagesadmin-help.md)
 ### [Durchsuchen der cloudbasierten Postfächer lokaler Benutzer in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +164,10 @@
 ### [Deaktivieren von Berichten beim Exportieren von Inhaltssuchergebnissen](disable-reports-when-you-export-content-search-results.md)
 ## Verwenden von PowerShell-Skripts bei der Inhaltssuche
 ### [Verwenden der Inhaltssuche für gezielte Sammlungen](use-content-search-for-targeted-collections.md)
-### [Verwenden der Inhaltssuche zum Durchsuchen des Postfachs und der OneDrive for Business-Website nach einer Liste von Benutzern](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [Verwenden der Inhaltssuche zum Durchsuchen des Postfachs und der OneDrive for Business-Website nach einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen](create-report-on-and-delete-multiple-content-searches.md)
 ### [Klonen einer Inhaltssuche](clone-a-content-search.md)
-
-# Verwalten von rechtlichen Untersuchungen
+# [Verwalten von rechtlichen Untersuchungen](manage-legal-investigations.md)
 ## [Erstellen und Verwalten von eDiscovery-Fällen](ediscovery-cases.md)
 ## [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md)
 ## [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](set-up-compliance-boundaries.md)
@@ -182,7 +176,8 @@
 ## [Zuweisen von eDiscovery-Berechtigungen für OneDrive for Business-Websites](assign-permissions-to-onedrive-for-business-sites.md)
 ## [Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltebereich in einem eDiscovery-Fall](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen](create-a-report-on-holds-in-ediscovery-cases.md)
-## Verwalten von Haltebereichen
+## Verwalten von Speichern
+### [Erstellen eines eDiscovery-Speichers](ediscovery-cases.md#step-4-place-content-locations-on-hold)
 ### [Erstellen eines Beweissicherungsverfahrens](create-a-litigation-hold.md)
 ### [Löschen von Elementen im Ordner „Wiederherstellbare Elemente“ für cloudbasierte aufzubewahrende Postfächer](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Erhöhen des Kontingents für wiederherstellbare Elemente für aufzubewahrende Postfächer](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
@@ -222,14 +217,12 @@
 ### [Festlegen erweiterter Analyseeinstellungen in Office 365 Advanced eDiscovery](set-analyze-options-in-advanced-ediscovery.md)
 ### [Grundlegendes zur Beurteilung in Office 365 Advanced eDiscovery](assessment-in-relevance-in-advanced-ediscovery.md)
 ### [Markieren und Suchen](search-and-tagging.md)
-
 # [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md)
 ## [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md)
 ## [Aktivieren der Postfachüberwachung](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
-
 # Überwachen von Sicherheit und Compliance
 ## [Warnungsrichtlinien](alert-policies.md)
 ### [Erstellen von Aktivitätsbenachrichtigungen](create-activity-alerts.md)
@@ -244,7 +237,6 @@
 #### [Herunterladen von vorhandenen Berichten](download-existing-reports.md)
 ## [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md)
 ## [Aktivieren des Berichtsnachrichts-Add-Ins](enable-the-report-message-add-in.md)
-
 # Sicherheitslösungen
 ## [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](https://docs.microsoft.com/Office365/Enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
 ### [Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung](https://docs.microsoft.com/Office365/Enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
@@ -263,27 +255,26 @@
 # Compliance-Lösungen
 ## [Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Verwalten von Datensubjektanforderungen mit dem DSR-Falltool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
-### [Übersicht: Office 365-Schutz für die DSGVO](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
-### [Suchen und Finden personenbezogener Daten](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
-### [Anpassen oder Erstellen eines neuen vertraulichen Informationstyps für die DSGVO](https://docs.microsoft.com/Office365/Enterprise/customize-or-create-a-new-sensitive-information-type)
-### [Entwerfen eines Klassifikationsschemas für einen persönlichen Plan](https://docs.microsoft.com/Office365/Enterprise/architect-a-classification-schema-for-personal-data)
-### [Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365](https://docs.microsoft.com/Office365/Enterprise/apply-labels-to-personal-data-in-office-365)
-### [Anwenden des Schutzes auf personenbezogene Daten in Office 365](https://docs.microsoft.com/Office365/Enterprise/apply-protection-to-personal-data-in-office-365)
-### [Überwachen auf Lecks für personenbezogene Daten](https://docs.microsoft.com/Office365/Enterprise/monitor-for-leaks-of-personal-data)
-### [Office 365-DSGVO-Entwicklungs-/Testumgebung](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
-## DSGVO für lokale Office-Server
-### [DSGVO für SharePoint Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-sharepoint-server)
-### [DSGVO für Exchange Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-exchange-server)
-### [DSGVO für Skype for Business Server und Lync Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-skype-for-business-server)
-### [DSGVO für Project Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-project-server)
-### [DSGVO für Office Web Apps Server und Office Online Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
-### [DSGVO für lokale Windows Server-Dateifreigaben](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
+## [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
+### [Übersicht: Office 365-Schutz für die DSGVO](office-365-info-protection-for-gdpr-overview.md)
+### [Suchen und Finden personenbezogener Daten](search-for-and-find-personal-data.md)
+### [Anpassen oder Erstellen eines neuen vertraulichen Informationstyps für die DSGVO](customize-or-create-a-new-sensitive-information-type.md)
+### [Entwerfen eines Klassifikationsschemas für einen persönlichen Plan](architect-a-classification-schema-for-personal-data.md)
+### [Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365](apply-labels-to-personal-data-in-office-365.md)
+### [Anwenden des Schutzes auf personenbezogene Daten in Office 365](apply-protection-to-personal-data-in-office-365.md)
+### [Überwachen auf Lecks für personenbezogene Daten](monitor-for-leaks-of-personal-data.md)
+### [Office 365-DSGVO-Entwicklungs-/Testumgebung](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
+## [DSGVO für lokale Office-Server](gdpr-for-office-servers.md)
+### [DSGVO für SharePoint Server](gdpr-for-sharepoint-server.md)
+### [DSGVO für Exchange Server](gdpr-for-exchange-server.md)
+### [DSGVO für Skype for Business Server und Lync Server](gdpr-for-skype-for-business-server.md)
+### [DSGVO für Project Server](gdpr-for-project-server.md)
+### [DSGVO für Office Web Apps Server und Office Online Server](gdpr-for-office-online-server.md)
+### [DSGVO für lokale Windows Server-Dateifreigaben](gdpr-for-on-premises-file-shares.md)
 # Verwalten von Sicherheitsvorfällen
-## [Reaktion auf Sicherheitsvorfälle in Office 365](https://docs.microsoft.com/Office365/Enterprise/office365-security-incident-response-overview)
-## [Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-illicit-consent-grants)
-## [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-outlook-rules-forms-attack)
-
+## [Reaktion auf Sicherheitsvorfälle in Office 365](office365-security-incident-response-overview.md)
+## [Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 # Dienstüberprüfung
 ## [Dienstüberprüfung im Office 365 Security & Compliance Center](service-assurance.md)
 ## [Mandantenisolation in Office 365](office-365-tenant-isolation-overview.md)
@@ -330,7 +321,6 @@
 ### [Interne Protokollierung für Office 365 Engineering](office-365-internal-logging.md)
 ### [Office 365-Postfachmigrationen](office-365-mailbox-migrations.md)
 ### [Office 365-Verwaltungsaktivitäts-API](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [EOP-Features](eop/eop-features.md)
 ## [Featureberechtigungen in EOP](eop/feature-permissions-in-eop.md)
@@ -409,6 +399,5 @@
 ### [Barrierefreiheit für Personen mit Einschränkungen](eop/accessibility-for-people-with-disabilities.md)
 ### [Senden von E-Mails an Office 365](sending-mail-to-office-365.md)
 ### [Dienste für Nicht-Kunden](services-for-non-customers.md)
-
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 for Business](https://support.office.com/office365admin)
