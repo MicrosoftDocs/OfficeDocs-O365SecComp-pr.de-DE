@@ -1,5 +1,5 @@
 ---
-title: So identifizieren Sie den Typ der Warteschleife platziert auf einem Exchange Online-Postfach
+title: Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,18 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-ms.openlocfilehash: d24e51bca0e3d290f110b1ab40f3ee9ae7993678
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Erfahren Sie, wie die verschiedenen Typen von Haltestatus zu identifizieren, die ein Office 365-Postfach platziert werden können. Risiko dieser Arten von Haltestatus umfassen Aufbewahrung für eventuelle Rechtsstreitigkeiten, eDiscovery-Archive und Aufbewahrungsrichtlinien für Office 365. Sie können auch bestimmen, ob ein Benutzer aus einer Organisation geltende Aufbewahrungsrichtlinie ausgeschlossen wurde
+ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529717"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965262"
 ---
-# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>So identifizieren Sie den Typ der Warteschleife platziert auf einem Exchange Online-Postfach
+# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
 In diesem Artikel wird erläutert, wie in Exchange Online-Postfächern in Office 365 platziert Haltestatus identifiziert.
 
-Office 365 bietet eine Reihe von Methoden, die Ihrer Organisation Inhalt von Postfächern zu verhindern kann dauerhaft gelöscht. Dies ermöglicht der Organisation beibehalten Inhalts Compliance regulären Rubriken im Magazin erfüllen oder für die Dauer der rechtlichen oder anderen Typen von Untersuchungen. Es folgt eine Liste der Aufbewahrung Features (auch gewählte Haltestatus) in Office 365:
+Office 365 bietet eine Reihe von Methoden, die Ihrer Organisation Inhalt von Postfächern zu verhindern kann dauerhaft gelöscht. Dies ermöglicht der Organisation beibehalten Inhalts Compliance regulären Rubriken im Magazin erfüllen oder für die Dauer der rechtlichen oder anderen Typen von Untersuchungen. Es folgt eine Liste der (auch gewählte *enthält*) Aufbewahrung Features in Office 365:
 
 - **Aufbewahrung für eventuelle Rechtsstreitigkeiten** - Haltestatus an, die auf Benutzerpostfächer in Exchange Online angewendet werden.
 
@@ -34,9 +35,11 @@ Office 365 bietet eine Reihe von Methoden, die Ihrer Organisation Inhalt von Pos
 
   Es gibt zwei Arten von Office 365-Aufbewahrungsrichtlinien, die Postfächer zugewiesen werden können.
 
-    - **Aufbewahrungsrichtlinien bestimmten Speicherort** - Hierbei handelt es sich um Richtlinien, die die Speicherorte für Inhalte von bestimmten Benutzern zugewiesen sind. Verwenden Sie das Cmdlet Get-Mailbox in Exchange Online PowerShell, Abrufen von Informationen zu Aufbewahrungsrichtlinien auf bestimmte Postfächer zugewiesen.
+    - **Aufbewahrungsrichtlinien bestimmten Speicherort** - Hierbei handelt es sich um Richtlinien, die die Speicherorte für Inhalte von bestimmten Benutzern zugewiesen sind. Verwenden Sie das Cmdlet **Get-Mailbox** in Exchange Online PowerShell, Abrufen von Informationen zu Aufbewahrungsrichtlinien auf bestimmte Postfächer zugewiesen.
 
-    - **Aufbewahrungsrichtlinien organisationsweiten** - Hierbei handelt es sich um Richtlinien, die alle Speicherorte für Inhalte in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet Get-OrganizationConfig in Exchange Online PowerShell, Abrufen von Informationen zu Aufbewahrungsrichtlinien organisationsweiten. Weitere Informationen finden Sie im Abschnitt "Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder bestimmte Orte" in der Übersicht über die Office 365-Aufbewahrungsrichtlinien.
+    - **Aufbewahrungsrichtlinien organisationsweiten** - Hierbei handelt es sich um Richtlinien, die alle Speicherorte für Inhalte in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, Abrufen von Informationen zu Aufbewahrungsrichtlinien organisationsweiten. Weitere Informationen finden Sie im Abschnitt "Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder bestimmte Orte" in [der Übersicht über die Office 365-Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+
+- **Office 365 Etiketten** - Wenn ein Benutzer ein Office 365-Label (eine Inhalt beibehalten gilt oder beibehalten und Löschen von Inhalt konfiguriert ist) für *jeden* Ordner oder ein Element in ihrem Postfach, einem Haltestatus wird für das Postfach platziert, so als würde das Postfach auf Rechtsstreitigkeiten getätigt wurde Halten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen. Weitere Informationen finden Sie im Abschnitt [identifizieren Postfächer auf halten, da eine Bezeichnung auf einen Ordner oder das Element angewendet wurde](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) in diesem Artikel.
 
 Zum Verwalten von Postfächern in der Warteschleife müssen Sie möglicherweise den Typ des Haltestatus zu identifizieren, die für ein Postfach befindet, sodass Sie Aufgaben wie das Ändern der Dauer halten, vorübergehend oder endgültig den Haltestatus entfernen oder Ausschließen eines Postfachs aus einer Aufbewahrungsrichtlinie für Office 365 ausführen können. In diesen Fällen wird im erste Schritt identifiziert den Typ des Haltestatus für das Postfach platziert. Und da mehrere Haltestatus (und anderen Arten von Haltestatus) auf ein einzelnes Postfach angeordnet werden können, müssen Sie alle Haltestatus für ein Postfach platziert werden, wenn Sie möchten, entfernen oder Ändern dieser Aufbewahrungspflichten zu identifizieren.
 
@@ -151,6 +154,48 @@ Führen Sie dem folgenden Befehl in Sicherheit und Compliance Center PowerShell 
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
+## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identifizierende Postfächer auf halten, da eine Bezeichnung auf einen Ordner oder das Element angewendet wurde
+
+Wenn ein Benutzer eine Bezeichnung, die beibehalten werden Inhalte gilt oder beibehalten, und klicken Sie dann Löschen von Inhalt eines beliebigen Ordners oder Elements in ihrem Postfach konfiguriert ist, wird die *ComplianceTagHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. In diesem Fall gilt das Postfach werden abwarten, so als würde gebracht Aufbewahrung für eventuelle Rechtsstreitigkeiten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen wurde. Wenn die *ComplianceTagHoldApplied* -Eigenschaft auf **True**festgelegt ist, können Folgendes auftreten:
+
+- Wenn das Postfach oder der Benutzer Office 365-Benutzerkonto gelöscht wird, wird das Postfach eines [inaktiven Postfachs](inactive-mailboxes-in-office-365.md)an.
+- Nicht möglich, deaktivieren das Postfach (das primäre Postfach oder das Archivpostfach, sofern sie aktiviert sind).
+- Elemente im Postfach möglicherweise länger als erwartet als aufbewahrt werden. Dies ist, da das Postfach in der Warteschleife ist und daher keine Elemente werden unwiderruflich gelöscht (gelöscht).
+
+Wenn den Wert der Eigenschaft *ComplianceTagHoldApplied* anzeigen möchten, führen Sie den folgenden Befehl in Exchange Online PowerShell:
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Weitere Informationen zu Etiketten finden Sie unter [Übersicht über Office 365 Beschriftungen](labels.md).
+
+## <a name="managing-mailboxes-on-delay-hold"></a>Verwalten von Postfächern auf Verzögerung halten
+
+Nach beliebigen Typs Haltestatus aus einem Postfach entfernt wird, wird der Wert der *DelayHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. Dadurch wird aufgerufen, eine *Verzögerung halten* und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage, um zu verhindern, dass Daten endgültig gelöscht werden verzögert wird (gelöscht) aus dem Postfach. Dadurch haben Administratoren die Möglichkeit zur Suche oder Wiederherstellen Postfachelemente, die gelöscht werden, nachdem die Sperre tatsächlich entfernt wurde. Bei ein Haltestatus Verzögerung für das Postfach befindet, wird das Postfach weiterhin als werden in der Warteschleife für eine unbegrenzte Dauer, als wenn das Postfach beweissicherungsverfahrens wurde. Nach 30 Tagen Verzögerung Haltebereich läuft ab und Office 365 versucht automatisch, den Verzögerung Haltestatus entfernen (durch Festlegen der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**), damit die Sperre tatsächlich entfernt wird. Nach der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**ist werden Elemente, die zum Entfernen markiert sind das nächste Mal entfernt, das vom Assistenten für verwaltete Ordner das Postfach verarbeitet wird.
+
+Wenn den Wert für die *DelayHoldApplied* -Eigenschaft für ein Postfach anzeigen möchten, führen Sie den folgenden Befehl in Exchange Online PowerShell aus.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+Um die Verzögerung Haltestatus entfernen, bevor sie abläuft, können Sie in Exchange Online PowerShell den folgenden Befehl ausführen: 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Beachten Sie, dass Sie der rechtlichen Aufbewahrungspflicht Rolle in Exchange Online zugewiesen werden müssen mithilfe des Parameters *RemoveDelayHoldApplied* 
+
+Um die Verzögerung die Sperrung eines inaktiven Postfachs zu entfernen, führen Sie in Exchange Online PowerShell den folgenden Befehl aus:
+
+```
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
+```
+
+> [!TIP]
+> Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl ist die Verwendung den Distinguished Name oder die Exchange-GUID-Wert. Verwenden einen der folgenden Werte wird verhindert, dass versehentlich das falsche Postfach angeben. 
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie den Haltestatus identifiziert haben, die an ein Postfach angewendet werden, können Sie Aufgaben wie die Dauer des Haltestatus, vorübergehend ändern oder dauerhaft entfernt den Haltestatus oder im Fall von Office 365-Aufbewahrungsrichtlinien, Ausführen ein inaktives Postfachs aus der Richtlinie ausgenommen. Weitere Informationen zum Ausführen von Aufgaben im Zusammenhang mit Haltestatus finden Sie unter eins der folgenden Themen:
@@ -163,4 +208,4 @@ Wenn Sie den Haltestatus identifiziert haben, die an ein Postfach angewendet wer
 
 - [Löschen eines inaktiven Postfachs in Office 365](delete-an-inactive-mailbox.md)
 
-- [Löschen von Elementen im Ordner "wiederherstellbare Elemente" des cloudbasierten Postfächer in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+- [Löschen von Elementen im Ordner „Wiederherstellbare Elemente“ für cloudbasierte aufzubewahrende Postfächer](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)

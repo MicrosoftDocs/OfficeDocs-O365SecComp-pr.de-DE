@@ -3,7 +3,6 @@ title: Dynamische Übermittlung und Anzeigen einer Vorschau mit Office 365 ATP s
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Wenn Sie Ihre ATP sichere Anlagen Richtlinien eingerichtet haben, wählen Sie dynamische Übermittlung Nachricht Verzögerungen bei der vermieden, und aktivieren Personen für die Vorschau von Anlagen, die gescannt werden.
-ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528856"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965242"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Übermittlung und Anzeigen einer Vorschau mit Office 365 ATP sichere Anlagen
 
@@ -65,6 +64,8 @@ Es gibt bestimmte Szenarien, in denen dynamische Übermittlung nicht unterstütz
 - Ordner eines Benutzers Postfach suchen, die in einen fehlerhaften Zustand befindet
     
 - Umgebungen, in denen ein Exchange Online-Administrator Exclaimer aktiviert hat. (Siehe [Nachrichten mit Anlagen werden nicht zugestellt werden, wenn ATP dynamische Übermittlung und Exclaimer verwendet werden](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
+
+- Verschlüsselte Nachrichten mit Secure/Multipurpose Internet Mail Extensions ([S/MIME](s-mime-for-message-signing-and-encryption.md))
     
 ## <a name="related-topics"></a>Verwandte Themen
 

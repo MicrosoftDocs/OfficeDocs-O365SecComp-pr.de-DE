@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Wenn Sie nicht mehr den Inhalt eines inaktiven Postfachs für Office 365 beibehalten möchten, können Sie dauerhaft inaktive Postfach löschen, durch den Haltestatus entfernen. Nach dem Entfernen des Haltestatus, inaktive Postfach ist zum Löschen markiert und wird endgültig gelöscht werden, nachdem sie verarbeitet wird.
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528923"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965252"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Löschen eines inaktiven Postfachs in Office 365
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. Navigieren Sie in EAC zu **Verwaltung der Richtlinientreue** \> **In-Situ-eDiscovery &amp; Haltebereich**.
     
-<<<<<<< HEAD
 3. Wählen Sie die In-Place Hold, die Sie löschen möchten, und klicken Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
-=======
-3. Wählen Sie die In-Place Hold, die Sie löschen möchten, und klicken Sie dann auf **Bearbeiten**! Das [Symbol Bearbeiten](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
->>>>>>> Markjjo-Konvertierung
     
 4. Klicken Sie auf der **Compliance-eDiscovery &amp; halten** Eigenschaften Seite auf **Compliance-Archiv**, deaktivieren Sie das Kontrollkästchen **die Suchabfrage im ausgewählten Postfächer auf übereinstimmende Place Inhalte enthalten** , und klicken Sie dann auf **Speichern**.
     
