@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Erfahren Sie, wie erkennen und reagieren auf eine kompromittierten e-Mail-Konto in Office 365
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782182"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977590"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
@@ -70,6 +70,9 @@ Sie müssen alle folgenden Schritte aus, um Zugriff auf Ihr Konto wieder zu übe
 - Stellen Sie sicher, dass das Kennwort stark ist und dass sie Groß-und Kleinbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen enthält. 
 - Wiederverwenden Sie nicht keinem der letzten fünf Kennwörter. Obwohl die Anforderung Verlauf einer neueren Kennwort erneut verwenden kann, sollten Sie etwas auswählen, die der Angreifer ermittelt werden kann.
 - Wenn Ihre lokalen Identität mit Office 365 im Verbund befindet, müssen Sie Ihre lokalen Kennwort ändern, und klicken Sie dann müssen Sie den Administrator der Gefährdung benachrichtigen.
+
+> [!TIP]
+> Es wird dringend empfohlen, Multi-Factor Authentication (mehrstufiger Authentifizierung das), um zu verhindern, dass Kompromiss, insbesondere für Konten mit Administratorrechte zu aktivieren.  Erfahren Sie mehr [hier](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2 Remove verdächtigen e-Mail-Weiterleitung-Adressen
 1. Öffnen der **Office 365 Admin Center > aktive Benutzer**.
@@ -126,6 +129,6 @@ Ihr Office 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherhe
 
 ## <a name="see-also"></a>Siehe auch:
 - [Bewährte Methoden für die Sicherheit in Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
-- [Erkennen und Warten von Outlook-Regeln und benutzerdefinierte Formulare Injektionen Angriffen in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Internet Crime kompatibles Center](http://www.ic3.gov/preventiontips.aspx)
 - [Sicherheit und Exchange Provision - Betrug "Phishing"](http://www.sec.gov/investor/pubs/phishing.htm)
