@@ -14,7 +14,7 @@
 ## [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
 ## [Entscheidung zwischen MDM und Intune](choose-between-mdm-and-intune.md)
 # [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
-## [Sehen Sie einen erweiterten Überblick über DLP an](https://go.microsoft.com/fwlink/?linkid=852300)
+## [Sehen Sie einen erweiterten Überblick über DLP an](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Einrichten von DLP
 ### [Erste Schritte mit DLP-Richtlinienempfehlungen](get-started-with-dlp-policy-recommendations.md)
 ### [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)
@@ -32,6 +32,7 @@
 ### [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
 ### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
+### [Dokumentfingerabdrücke](document-fingerprinting.md) 
 # Verwalten der Datengovernance        
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
 ### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
@@ -223,7 +224,7 @@
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
-# Überwachen von Sicherheit und Compliance
+# [Überwachen von Sicherheit und Compliance](monitor-security-and-compliance.md)
 ## [Warnungsrichtlinien](alert-policies.md)
 ### [Erstellen von Aktivitätsbenachrichtigungen](create-activity-alerts.md)
 ## [Intelligente Berichte und Einblicke im Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
