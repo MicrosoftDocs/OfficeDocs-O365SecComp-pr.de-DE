@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über die Eigenschaften für e-Mail- und -Datei, die in Exchange Online-Postfächern und SharePoint oder OneDrive for Business-Websites mit dem Tool für die Inhaltssuche in die Office 365-Sicherheit suchen können &amp; Compliance Center.  '
-ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
+ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782102"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24015356"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
-In diesem Thema werden die e-Mails und Dokument-Eigenschaften, die Sie in der e-Mail-Elemente in Exchange Online und in SharePoint gespeicherten Dokumenten suchen können und OneDrive for Business-Websites mithilfe der Suchfunktion von Inhalt in die Office 365-Sicherheit &amp; Compliance Zentriert. Sie können auch die ** \*- ComplianceSearch** -Cmdlets in Security &amp; Compliance Center PowerShell zu suchenden diese Eigenschaften. Das Thema wird außerdem beschrieben: 
+In diesem Thema werden die e-Mails und Dokument-Eigenschaften, die Sie in der e-Mail-Elemente in Exchange Online und in SharePoint gespeicherten Dokumenten suchen können und OneDrive for Business-Websites mithilfe der Suchfunktion von Inhalt in die Office 365-Sicherheit &amp; Compliance Zentriert. Sie können auch die ** \*- ComplianceSearch** -Cmdlets in Security &amp; Compliance Center PowerShell zu suchenden diese Eigenschaften. Das Thema wird außerdem beschrieben:   
   
 - Verwenden Sie boolesche Suche Operatoren, suchbedingungen und anderen Techniken der Search-Abfrage, um Ihre Suchergebnisse zu verbessern.
     
@@ -297,7 +297,7 @@ In diesem Beispiel werden E-Mail-Elemente oder Dokumente zurückgegeben, die das
   
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
-#### <a name="example-3"></a>Beispiel 3
+#### <a name="example-3"></a>Beispiel 3
 <a name="conditionexamples"> </a>
 
 Dieses Beispiel gibt die e-Mail-Nachrichten oder Kalender Besprechungen, die zwischen 12/1/2016 und 11/30/2016 gesendet wurden, und enthält Wörter, die mit "Tel:" oder "Smartphone" beginnen.
