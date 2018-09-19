@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Zielseite zum Schutz des Zugriffs auf Office 365-Daten und-Dienste
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009101"
+ms.locfileid: "24011277"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Zugriffsschutz für Daten und Dienste in Office 365
 
@@ -58,7 +58,7 @@ Bei Verwendung von Azure AD mehrstufiger Authentifizierung das Erstellen einer R
 
 Access privilegierten Management ermöglicht die Differenzierte Sicherung Access Steuerung privilegierten Administratoraufgaben in Office 365.  Es kann Schützen Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können.
 
-- [Übersicht über die Berechtigungen Management zugreifen](privileged-access-managment-overview.md)
+- [Übersicht über die Berechtigungen Management zugreifen](privileged-access-management-overview.md)
 - [Konfigurieren der Verwaltung von Systemzugriff](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>Schritt 5: Konfigurieren Sie Richtlinien für SharePoint-Gerät

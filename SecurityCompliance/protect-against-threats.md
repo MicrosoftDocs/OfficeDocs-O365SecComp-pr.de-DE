@@ -1,5 +1,5 @@
 ---
-title: Schutz gegen Bedrohungen in Office 365
+title: Schutz vor Bedrohungen in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Hier erfahren Sie, wie Office 365 Enterprise helfen kann Ihre Organisation mit einer Vielzahl von Risiken, einschließlich spoofing, Schadsoftware, Spam, Phishing-Versuche und nicht autorisierten Zugriff auf Daten zu schützen.
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529321"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011267"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Schutz gegen Bedrohungen in Office 365
+# <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
 Mit Office 365 Enterprise helfen Ihnen, Ihre Organisation mit einer Vielzahl von Risiken, einschließlich spoofing, Schadsoftware, Spam, Phishing-Versuche und nicht autorisierten Zugriff auf Daten zu schützen. Informationen zu Aktionen, die Sie ergreifen können, und der Schutz vor Angriffen mithilfe der Ressourcen auf dieser Seite.
   
@@ -42,7 +42,7 @@ Informationen Sie zu Office 365 Anti-Spam-Faktoren, verbindungsfilterung und Mal
     
 - [Aktivieren der Protokollierung für e-Mail](https://technet.microsoft.com/en-us/library/dn879651.aspx)
     
-- [Isolieren von e-Mail-Nachrichten in Office 365](quarantine-email-messages.md)
+- [Unter Quarantäne stellen von E-Mail-Nachrichten in Office 365](quarantine-email-messages.md)
     
 - [Verdächtige Inhalte an Microsoft übermitteln](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
     
@@ -56,9 +56,9 @@ Konfigurieren von Richtlinien zum Verwalten von spoofing, Schutz vor Phishingang
     
 - [Einrichten von ATP Anti-Phishing-Richtlinien](set-up-atp-anti-phishing-policies.md)
     
-- [Richten Sie sichere Links ATP-Richtlinien](set-up-atp-safe-links-policies.md)
+- [Einrichten von Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md)
     
-- [Einrichten von Richtlinien für sichere ATP-Anlagen](set-up-atp-safe-attachments-policies.md)
+- [Einrichten von Richtlinien zu sicheren Anlagen in ATP](set-up-atp-safe-attachments-policies.md)
     
 ## <a name="encryption"></a>Verschlüsselung
 
@@ -66,7 +66,7 @@ Erhalten Sie eine Einführung in zur Verschlüsselung, Rights Management-Richtli
   
 - [Erfahren Sie mehr über die Verschlüsselung in Office 365](encryption.md)
     
-- [Einrichten von Verschlüsselung in Office 365 Enterprise.](set-up-encryption.md)
+- [Einrichten der Verschlüsselung in Office 365 Enterprise](set-up-encryption.md)
     
 - [Office 365-Nachrichtenverschlüsselung (OME)](ome.md)
     
@@ -78,7 +78,7 @@ Erhalten Sie eine Einführung in zur Verschlüsselung, Rights Management-Richtli
   
 - [Erstellen und Bereitstellen von Gerätesicherheitsrichtlinien](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
-- [Verwalten von app-Berechtigungen, die mit Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md)
+- [Verwalten von App-Berechtigungen mit Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
 ## <a name="threat-intelligence"></a>Bedrohungsanalyse
 
@@ -86,8 +86,16 @@ Identifizieren, überwachen und Grundlegendes zu Angriffen und schnell Adresse B
   
 - [Übersicht über die Office 365-Bedrohungsanalyse](office-365-ti.md)
     
-- [Erste Schritte mit Office 365 Bedrohungsanalyse](get-started-with-ti.md)
+- [Erste Schritte mit Office 365 Threat Intelligence](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>Privileged Access Management
+
+Schützen Sie Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können. Nach der Aktivierung der Verwaltung von Systemzugriff benötigen Benutzer anfordern Just-in-Time-Zugriff mit erhöhten Rechten und privilegierten über einen Genehmigungsworkflow Aufgaben, die hochgradig bezogenen und Zeit gebunden ist.
+  
+- [Übersicht über die Berechtigungen Management zugreifen](privileged-access-management-overview.md)
+    
+- [Erste Schritte mit Berechtigungen Management zugreifen](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>Zusätzliche Optionen
 
 Erhalten Sie weiterer Informationen zu verwandten Microsoft-Technologien und Prozesse, die sichere Office 365 gegen Bedrohungen erleichtern.
