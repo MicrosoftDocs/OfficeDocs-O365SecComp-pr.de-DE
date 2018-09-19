@@ -1,5 +1,5 @@
 ---
-title: Schützen der Zugriff auf Daten und Dienste in Office 365
+title: Zugriffsschutz für Daten und Dienste in Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Zielseite zum Schutz des Zugriffs auf Office 365-Daten und-Dienste
-ms.openlocfilehash: e6e2d8d3ba6482d4b80593bd9e09d49d6120af80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
+ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529711"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24009101"
 ---
-# <a name="protect-access-to-data-and-services-in-office-365"></a>Schützen der Zugriff auf Daten und Dienste in Office 365
+# <a name="protect-access-to-data-and-services-in-office-365"></a>Zugriffsschutz für Daten und Dienste in Office 365
 
 Schutz des Zugriffs auf Ihre Office 365-Daten und-Dienste ist entscheidend für die Verteidigung gegen im Internet-Angriffen und zum Schutz vor Datenverlust. Die gleichen Schutzmechanismen in andere Anwendungen SaaS in Ihrer Umgebung angewendet werden können und auch für lokale-Clientanwendungen veröffentlicht mit Azure Active Directory-Anwendungsproxy.
   
@@ -54,13 +54,20 @@ Bei Verwendung von Azure AD mehrstufiger Authentifizierung das Erstellen einer R
   
 - [Bedingte Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Schritt 4: Konfigurieren Sie Richtlinien für SharePoint-Gerät
+## <a name="step-4-configure-privileged-access-management"></a>Schritt 4: Konfigurieren der Verwaltung von Systemzugriff
+
+Access privilegierten Management ermöglicht die Differenzierte Sicherung Access Steuerung privilegierten Administratoraufgaben in Office 365.  Es kann Schützen Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können.
+
+- [Übersicht über die Berechtigungen Management zugreifen](privileged-access-managment-overview.md)
+- [Konfigurieren der Verwaltung von Systemzugriff](privileged-access-management-configuration.md)
+
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>Schritt 5: Konfigurieren Sie Richtlinien für SharePoint-Gerät
 
 Gerät Zugriffsrichtlinien für SharePoint Online und OneDrive für Unternehmen werden empfohlen, für den Schutz von vertraulicher, geheime und regulierten Daten. In Kürze ist die Möglichkeit, Geräte Zugriffsrichtlinien einzelne Teamwebsites zuzuweisenden.
   
 - [Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-5-configure-app-and-data-protection-for-devices"></a>Schritt 5: Konfigurieren der app und den Datenschutz für Geräte
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>Schritt 6: Konfigurieren der app und den Datenschutz für Geräte
 
 Sie können Anwendungen auf mobilen Geräten, unabhängig davon, ob die Geräte, für die Verwaltung von mobilen Geräten registriert sind verwalten. Dies schützt vor versehentlichen Datenlecks von Daten in Office 365, einschließlich e-Mail-Nachrichten und Dateien.
   
@@ -72,13 +79,13 @@ Konfigurieren Sie für Windows-10 Windows Informationen Schutz (WIP), um versehe
     
 - Für nicht-verwalteten Geräten: [Erstellen und Bereitstellen von Windows Informationen Schutz (WIP) app Protection Richtlinie mit Intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
     
-## <a name="step-6-manage-devices-with-intune"></a>Schritt 6: Verwalten von Geräten mit Intune
+## <a name="step-7-manage-devices-with-intune"></a>Schritt 7: Verwalten von Geräten mit Intune
 
 Verwalten von Geräten können Sie sicherstellen, dass sie fehlerfrei und kompatibel sind, bevor sie Zugriff auf Ressourcen in Ihrer Umgebung. Gerät basierend bedingten Regeln können Sie sicherstellen, dass Angreifer keinen Zugriff auf Ihre Ressourcen von nicht verwalteten Geräten erhalten Zugriff.
   
 - [Geräte für die Verwaltung in Intune registrieren](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-7-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Schritt 7: Konfigurieren Sie zusätzliche Intune Richtlinien und bedingte Zugriffsregeln für Ihre Umgebung
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Schritt 8: Konfigurieren Sie zusätzliche Intune Richtlinien und bedingte Zugriffsregeln für Ihre Umgebung
 
 Verwenden Sie diese als Ausgangspunkt für unternehmensweite oder Sicherheitsszenarien anspruchsvolle Access Konfigurationen empfohlen.
   
