@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema, um weitere Informationen zum Konfigurieren der Systemzugriff Management in Office 365
-ms.openlocfilehash: b2b6ab18687617c0da3425f4ee60cf81074f6f69
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24021401"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055250"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von Systemzugriff Management in Office 365
 
@@ -201,7 +201,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>Eine Erhöhung Autorisierung Anforderung genehmigen
-Wenn eine Aufforderung zur Genehmigung erstellt wird, Mitglied der Gruppe relevanten genehmigende Person erhält eine e-Mail-Benachrichtigung und genehmigen die Anforderung der Anforderung ID zugeordnet werden kann
+Wenn eine Aufforderung zur Genehmigung erstellt wird, Mitglied der Gruppe relevanten genehmigende Person erhält eine e-Mail-Benachrichtigung und genehmigen die Anforderung der Anforderung ID zugeordnet werden kann Der Requestor wird die Anforderung zur Genehmigung oder Ablehnung per e-Mail-Nachricht benachrichtigt werden.
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
 
