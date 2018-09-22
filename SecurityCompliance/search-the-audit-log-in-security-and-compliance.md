@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529101"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962971"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
 
@@ -108,7 +108,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
 - Überwachungsprotokollierung für Power BI ist nicht standardmäßig aktiviert. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Anweisungen finden Sie unter [Power BI Überwachung](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
     
     
-## <a name="search-the-audit-log"></a>Suchen Sie das Überwachungsprotokoll
+## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
 
 Hier ist der Prozess für die Suche im Überwachungsprotokolls in Office 365.
   
@@ -335,7 +335,7 @@ In der folgenden Tabelle werden die Benutzer Freigabe und Access Anforderung Akt
 |Akzeptiert eine freigabeeinladung  <br/> |SharingInvitationAccepted  <br/> |Benutzer (Mitglied oder Gast) akzeptiert eine Einladung zur Freigabe, und Zugriff auf eine Ressource erteilt wurde. Dieses Ereignis enthält Informationen zu den Benutzer, die eingeladen wurde und die e-Mail-Adresse, die verwendet wurde, um die Einladung anzunehmen (sie können unterschiedliche sein). Diese Aktivität wird häufig von einem zweiten Ereignis begleitet, die beschreibt, wie der Benutzer erteilt wurde Zugriff auf die Ressource hinzufügen des Benutzers zu einer Gruppe, die Zugriff auf die Ressource hat.  <br/> |
 |Hinzugefügte Berechtigungsstufe für Websitesammlung  <br/> |PermissionLevelAdded  <br/> |Eine Berechtigungsstufe wurde in eine Websitesammlung hinzugefügt.  <br/> |
 |Benutzer, die sichere Verbindung  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die diese Freigabe sichere Verbindung verwenden können.  <br/> |
-|Einladung zur Freigabe blockiert  <br/> |SharingInvitationBlocked  <br/> | Eine Einladung zur Freigabe von einem Benutzer in Ihrer Organisation gesendet wird aufgrund eines externen Freigaberichtlinie blockiert, die erteilt oder verweigert externe Freigabe auf Basis der Domäne des Zielbenutzers. In diesem Fall wurde die Einladung zur Freigabe, da blockiert:<br/>  Domäne des Zielbenutzers ist nicht in der Liste der zugelassenen Domänen enthalten.  <br/>  oder -  <br/>  Domäne des Zielbenutzers ist in der Liste der blockierten Domänen enthalten.  <br/>  Weitere Informationen zum Zulassen oder Sperren externe Freigabe basierend auf Domänen finden Sie unter [eingeschränkten Freigabe in SharePoint Online und OneDrive für Unternehmen Domänen](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
+|Einladung zur Freigabe blockiert  <br/> |SharingInvitationBlocked  <br/> | Eine Einladung zur Freigabe von einem Benutzer in Ihrer Organisation gesendet wird aufgrund eines externen Freigaberichtlinie blockiert, die erteilt oder verweigert externe Freigabe auf Basis der Domäne des Zielbenutzers. In diesem Fall wurde die Einladung zur Freigabe, da blockiert:<br/>  Domäne des Zielbenutzers ist nicht in der Liste der zugelassenen Domänen enthalten.  <br/>  Oder  <br/>  Domäne des Zielbenutzers ist in der Liste der blockierten Domänen enthalten.  <br/>  Weitere Informationen zum Zulassen oder Sperren externe Freigabe basierend auf Domänen finden Sie unter [eingeschränkten Freigabe in SharePoint Online und OneDrive für Unternehmen Domänen](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
 |Eingestellt wurde Ebene Vererbung von Berechtigungen  <br/> |PermissionLevelsInheritanceBroken  <br/> |Ein Element wurde geändert, sodass es nicht mehr Berechtigungsstufen von der übergeordneten Website erbt.  <br/> |
 |Freigeben von Vererbung eingestellt wurde  <br/> |SharingInheritanceBroken  <br/> |Ein Element wurde geändert, sodass es nicht mehr Freigabeberechtigungen von der übergeordneten Website erbt.  <br/> |
 |Erstellung eines Unternehmens freigebbare links  <br/> |CompanyLinkCreated  <br/> |Der Benutzer erstellt einen unternehmensweite Link zu einer Ressource. unternehmensweite Links kann nur von Mitgliedern in Ihrer Organisation verwendet werden. Sie können nicht von Gästen verwendet werden.  <br/> |
@@ -647,3 +647,60 @@ Hier sind einige Tipps für die Suche nach Aktivität im Exchange Admin-Überwac
     
 - Sie können Ereignisse auch mithilfe der Exchange-Verwaltungskonsole in der Exchange-administratorüberwachungsprotokoll anzeigen. Anweisungen finden Sie unter [administratorüberwachungsprotokoll anzeigen](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
   
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
+**Wo finde ich über die Features, die von der Überwachung in Office 365-Dienst angeboten?**
+
+Weitere Informationen über die Überwachung und reporting Features in Office 365 finden Sie unter [Überwachung und Berichterstellung in Office 365](office-365-auditing-and-reporting-overview.md). 
+
+**Was sind die verschiedenen Office 365-Dienste, die derzeit überwacht werden?**
+
+Die am häufigsten verwendeten Office 365-Dienste wie Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft-Teams, CRM, erweiterte Threat Protection und Data Loss Prevention überwacht werden sollen. Siehe Abschnitt [Einführung](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) in diesem Artikel finden Sie eine vollständige Liste.
+
+**Welche Aktivitäten überwacht werden durch die Überwachung der Dienst in Office 365?**
+
+Siehe Abschnitt [Löschvorgänge Aktivitäten](#audited-activities) in diesem Artikel finden Sie eine Liste und Beschreibung der Aktivitäten, die in Office 365 überwacht werden.
+
+**Wie lange dauert es für einen auditing-Eintrag zur Verfügung stehen, nachdem ein Ereignis aufgetreten ist?**
+
+Die meisten Überwachung von Daten innerhalb von 30 Minuten ist verfügbar, aber nach dem Auftreten eines Ereignisses für das entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt werden bis zu 24 Stunden dauern. Finden Sie in der Tabelle im Abschnitt [vor Beginn](#before-you-begin) dieses Artikels, die die Zeit anzeigt, die für Ereignisse in den verschiedenen Office 365-Diensten benötigt verfügbar sein soll.
+
+**Wie lange sind die Überwachung Datensätze aufbewahrt werden?**
+
+Derzeit sind Überwachungsprotokolldatensätze 90 Tage lang aufbewahrt. Microsoft arbeitet aktiv an einen Plan für diesen Wert erhöhen. 
+
+**Kann ich die Überwachung von Daten programmgesteuert zugreifen?**
+
+Ja. Die Office 365-Verwaltungs-Aktivität-API wird verwendet, um die Überwachungsprotokolle programmgesteuert abgerufen.  Zum Einstieg finden Sie unter [Erste Schritte mit Office 365-Management-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+
+**Gibt es andere Methoden, um die Protokolle an die Office 365-Sicherheit & Compliance Center oder die Office 365-Verwaltungs-Aktivität API Überwachung abrufen?**
+
+Nein. Dies sind die nur zwei Methoden zum Abrufen von Daten aus dem Office 365-Überwachung-Dienst. 
+
+**Müssen einzeln Aktivieren der Überwachung in alle Dienste, die ich für Überwachungsprotokolle erfassen möchten?**
+
+In den meisten Office 365-Diensten ist standardmäßig aktiviert, nachdem Sie anfänglich Überwachung für Office 365-Organisation (wie im Abschnitt [bevor Sie beginnen:](#before-you-begin) in diesem Artikel beschrieben) aktivieren. Allerdings müssen Sie aktivieren Postfach Überwachung in Exchange Online für jedes Postfach, das Sie überwachen möchten.   Wir arbeiten zum Aktivieren der Überwachung von Postfächern in der Standardeinstellung für alle Postfächer in einer Office 365-Organisation. Weitere Informationen finden Sie unter "Überwachung von Exchange-Postfächern in der Standardeinstellung im [Blog des Microsoft Security, Privatsphäre und Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171)aktiviert wird".
+
+**Deduplizierung der Office 365-Überwachung Servicesupport von Datensätzen?**
+
+Nein. Pipeline für die Überwachung Service ist nahezu in Echtzeit und kann daher nicht Deduplizierung unterstützen.
+ 
+**Werden Office 365 Überwachung von Daten werden über Landesgrenzen übergeben?**
+
+Nein. Wir haben gerade Überwachung Pipeline Bereitstellungen NA (Nordamerika), EMEA (Europa, Naher Osten und Afrika) und "APAC" (Asien-Pazifik) Regionen. Jedoch können wir die Daten über diese Bereiche für den Lastenausgleich und nur während der live-Site Probleme übergeben. Wenn wir diese Aktivitäten ausführen, werden die Daten während der Übertragung verschlüsselt.   
+ 
+**Ist die verschlüsselten Daten Überwachung?**
+
+Überwachen von Daten wird in Exchange-Postfächern (Daten im Ruhezustand) im selben Bereich gespeichert, in der Pipeline für die Überwachung bereitgestellt wird. Diese Daten werden nicht verschlüsselt. Allerdings werden immer Daten während der Übertragung verschlüsselt. 
+
+
+
+
+
+
+
+
+
+
+
+
