@@ -3,7 +3,7 @@ title: Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Comp
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962971"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974685"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
 
@@ -47,7 +47,11 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
 - Benutzer- und Admin-Aktivität in Power BI für Office 365
     
 - Benutzer- und Admin-Aktivität in Microsoft-Teams
+
+- Benutzer- und Admin Aktivität in Dynamics 365
     
+- Benutzer- und Admin-Aktivität in Microsoft Flow
+
 - Benutzer- und Admin Aktivität in Yammer
     
 - Benutzer- und Admin-Aktivität in Microsoft Stream
@@ -57,7 +61,7 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
 
 Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die Office 365 in das Überwachungsprotokoll lesen.
   
-- Sie (oder ein anderes Admin) muss zunächst auf die Protokollierung, bevor Sie beginnen können, suchen das Office 365-Überwachungsprotokoll aktivieren. Um es zu aktivieren, klicken Sie einfach auf ** Benutzer- und Admin Aktivität Aufzeichnung starten ** auf der Seite **Audit Log Suche** in das Wertpapier &amp; Compliance Center. (Wenn Sie diese Verknüpfung nicht angezeigt wird, wurde die Überwachung bereits für Ihre Organisation aktiviert.) Nachdem Sie es aktivieren, wird eine Meldung angezeigt, die besagt, das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche, in ein paar Stunden ausführen können nach Abschluss die Vorbereitung. Sie müssen nur einmal erforderlich. 
+- Sie (oder ein anderes Admin) muss zunächst auf die Protokollierung, bevor Sie beginnen können, suchen das Office 365-Überwachungsprotokoll aktivieren. Um sie zu aktivieren, klicken Sie einfach auf **die Benutzer- und Admin Aktivität Aufzeichnung starten** auf der Seite **Audit Log Suche** in das Wertpapier &amp; Compliance Center. (Wenn Sie diese Verknüpfung nicht angezeigt wird, wurde die Überwachung bereits für Ihre Organisation aktiviert.) Nachdem Sie es aktivieren, wird eine Meldung angezeigt, die besagt, das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche, in ein paar Stunden ausführen können nach Abschluss die Vorbereitung. Sie müssen nur einmal erforderlich. 
     
     > [!NOTE]
     > Wir sind während der Aktivierung der Überwachung in der Standardeinstellung. Bis zu diesem Zeitpunkt können Sie es aktivieren wie weiter oben beschrieben. 
@@ -91,11 +95,20 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     
 |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
 |:-----|:-----|:-----|
-|Azure Active Directory (Admin Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Erweiterte Schutz und Bedrohungsanalyse  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory (Admin Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Verhinderung von Datenverlust  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|eDiscovery  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
