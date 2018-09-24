@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to set the spam confidence level (SCL) in messages
+title: 'Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten '
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence Level) einer E-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können z. B. die Spam-Inhaltsfilterung für Nachrichten umgehen, die von Mitarbeitern Ihrer Organisation gesendet werden, weil Sie darauf vertrauen, dass intern gesendete Nachrichten von Kollegen kein Spam sind. Die Verwendung von Transportregeln zur Festlegung des SCL-Wertes einer Nachricht gibt Ihnen bessere Kontrolle über den Umgang mit Spam.
-ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002894"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972277"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use mail flow rules to set the spam confidence level (SCL) in messages
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten 
 
 Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence Level) einer E-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können z. B. die Spam-Inhaltsfilterung für Nachrichten umgehen, die von Mitarbeitern Ihrer Organisation gesendet werden, weil Sie darauf vertrauen, dass intern gesendete Nachrichten von Kollegen kein Spam sind. Die Verwendung von Transportregeln zur Festlegung des SCL-Wertes einer Nachricht gibt Ihnen bessere Kontrolle über den Umgang mit Spam. 
   
@@ -42,7 +42,7 @@ Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence
     
 4. Klicken Sie auf **Weitere Optionen**, und geben Sie anschließend unter **Diese Regel anwenden, wenn** eine Bedingung an, durch die die Aktion ausgelöst wird, die Sie für diese Regel festlegen (in diesem Falle die Festlegung des SCL-Werts).
     
-    Sie können z. B. festlegen **Der Absender** \> **ist intern/extern** und anschließend im Dialogfeld **Absenderposition auswählen** auf die Option **Innerhalb meiner Organisation** und auf **OK** klicken.</br>
+    Sie können z. B. festlegen **Der Absender** \> **ist intern/extern** und anschließend im Dialogfeld **Absenderposition auswählen** auf die Option **Innerhalb meiner Organisation** und auf **OK** klicken.<br/>
     ![Absenderstandort auswählen](media/EOP-ETR-SetSCL-1.jpg)
   
 5. Wählen Sie unter **Gehen Sie folgendermaßen vor...** die Option **Nachrichteneigenschaften ändern** \> **SCL-Bewertung (Spam Confidence Level) festlegen** aus.

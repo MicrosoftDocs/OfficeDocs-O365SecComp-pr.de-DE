@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und bei der Übertragung, mit der stärksten Verschlüsselung, Protokolle und -Technologien verfügbar verschlüsselt. Rufen Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529460"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972287"
 ---
 # <a name="encryption-in-office-365"></a>Verschlüsselung in Office 365
 
@@ -47,7 +47,7 @@ Mit Office 365 haben Sie mehrere Ebenen und Arten von Verschlüsselung zusammena
   
 |**Arten von Inhalten**|**Verschlüsselungstechnologien**|**Weitere Ressourcen**|
 |:-----|:-----|:-----|
-|Die Dateien auf einem Gerät. Dies kann e-Mail-Nachrichten gespeichert, die in einem Ordner, Office-Dokumente auf einem Computer, Tablet oder Telefon gespeichert oder in die Microsoft-Cloud gespeicherten Daten umfassen.  <br/> |BitLocker in Microsoft-Rechenzentren. BitLocker kann auch auf Clientcomputern wie Windows-Computern und Tablet-PCs verwendet werden  <br/> Verteilte Schlüssel Manager (DKM) in Microsoft-Rechenzentren  <br/> Kundenschlüssel für Office 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Verschlüsselung](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Cloud-Sicherheit steuert Series: Verschlüsseln von Daten im Ruhezustand](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Schützen von vertraulichen Inhalten in E-Mails mit Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Kontrolle über Ihre Daten in Office 365 mit Kunden-Taste](controlling-your-data-using-customer-key.md) <br/> |
+|Die Dateien auf einem Gerät. Dies kann e-Mail-Nachrichten gespeichert, die in einem Ordner, Office-Dokumente auf einem Computer, Tablet oder Telefon gespeichert oder in die Microsoft-Cloud gespeicherten Daten umfassen.  <br/> |BitLocker in Microsoft-Rechenzentren. BitLocker kann auch auf Clientcomputern wie Windows-Computern und Tablet-PCs verwendet werden  <br/> Verteilte Schlüssel Manager (DKM) in Microsoft-Rechenzentren  <br/> Kundenschlüssel für Office 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft Trust Center: Verschlüsselung](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Cloud-Sicherheit steuert Series: Verschlüsseln von Daten im Ruhezustand](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Schützen von vertraulichen Inhalten in E-Mails mit Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md) <br/> |
 |Dateien während der Übertragung zwischen Benutzern. Dies kann Office-Dokumente oder SharePoint-Listenelementen zwischen Benutzern shared enthalten.  <br/> |TLS für Dateien während der Übertragung  <br/> |[Datenverschlüsselung in OneDrive for Business und SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype für Unternehmen Online: Sicherheit und Archivierung](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |E-Mail während der Übertragung zwischen Empfängern. Dazu gehören e-Mail von Exchange Online gehostet.  <br/> |Office 365 Message Encryption mit Azure Rights Management, S/MIME und TLS für e-Mail während der Übertragung  <br/> |[Office 365-Nachrichtenverschlüsselung (OME)](ome.md) <br/> [E-Mail-Verschlüsselung in Office 365](email-encryption.md) <br/> [Wie Exchange Online mithilfe von TLS E-Mail-Verbindungen in Office 365 sichert](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
    
@@ -59,7 +59,7 @@ Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
   
 - [Was ist Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
     
-- [Aktivieren der Verwaltung von Informationsrechten in Office 365 Administrationscenter](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Aktivieren der Rechteverwaltung im Office 365 Admin Center](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
 - [Festlegen von Information Rights Management (IRM) im SharePoint Administrationscenter](set-up-irm-in-sp-admin-center.md)
     
@@ -67,10 +67,10 @@ Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
 
 |**Für diese Aufgabe**|**Diese Ressourcen**|
 |:-----|:-----|
-|Einrichten von Verschlüsselung für meine Organisation  <br/> |[Einrichten von Verschlüsselung in Office 365 Enterprise.](set-up-encryption.md) <br/> |
+|Einrichten von Verschlüsselung für meine Organisation  <br/> |[Einrichten der Verschlüsselung in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Anzeigen von Details zu Zertifikaten, Technologien und TLS-Verschlüsselungssammlungen in Office 365  <br/> |[Technische Details zu Verschlüsselung in Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Arbeiten Sie mit verschlüsselten Nachrichten auf einem mobilen Gerät  <br/> |[Anzeigen von verschlüsselten Nachrichten auf dem Android-Gerät](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Anzeigen von verschlüsselten Nachrichten auf dem iPhone oder iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Verschlüsseln Sie ein Dokument mit einem Kennwort  <br/></br>  Kennwortschutz wird in Office Online derzeit nicht unterstützt. Verwenden Sie für den Kennwortschutz desktop Versionen von Word, Excel und PowerPoint.           |[Hinzufügen oder Entfernen des Schutzes in Ihr Dokument, eine Arbeitsmappe oder eine Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Wählen Sie einen **Add Protection** -Abschnitt, um zu sehen **mit Kennwort verschlüsseln** )  <br/> |
+|Verschlüsseln Sie ein Dokument mit einem Kennwort  <br/><br/>  Kennwortschutz wird in Office Online derzeit nicht unterstützt. Verwenden Sie für den Kennwortschutz desktop Versionen von Word, Excel und PowerPoint.           |[Hinzufügen oder Entfernen des Schutzes in Ihr Dokument, eine Arbeitsmappe oder eine Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Wählen Sie einen **Add Protection** -Abschnitt, um zu sehen **mit Kennwort verschlüsseln** )  <br/> |
 |Entfernen der Verschlüsselung aus einem Dokument  <br/> |[Hinzufügen oder Entfernen des Schutzes in Ihr Dokument, eine Arbeitsmappe oder eine Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Wählen Sie einen Abschnitt **Entfernen Sie den Schutz** und dann finden Sie unter **Entfernen-kennwortverschlüsselungsmethode** )  <br/> |
    
 ## <a name="related-topics"></a>Verwandte Themen

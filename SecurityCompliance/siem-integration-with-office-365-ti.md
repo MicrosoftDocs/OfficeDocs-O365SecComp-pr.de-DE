@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: Integrieren von Ihrer Organisation SIEM Server mit Office 365 Bedrohungsanalyse und erweiterte Schutz mit Office 365-Aktivität Verwaltungs-API.
-ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782142"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972257"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Integration mit Office 365 Bedrohungsanalyse und erweiterte Threat Protection SIEM
 
@@ -28,7 +28,7 @@ Office 365-Aktivität Verwaltungs-API werden Informationen zu Benutzer, Admin, S
 Der SIEM-Server oder einem anderen ähnlichen System sollte die **audit.general** Arbeitslast auf Access Erkennungsereignisse abrufen. Informationen finden Sie weitere [Einstieg in Office 365-Management-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
 > [!IMPORTANT]
-> Sie müssen ein globaler Office 365-Administrator sein, oder die Administrator Sicherheitsrolle im Compliance Center & Sicherheit SIEM-Integration mit Office 365 Bedrohungsanalyse und erweiterte Schutz eingerichtet haben.</br>Überwachungsprotokollierung muss für die Office 365-Umgebung aktiviert werden. Hilfe hierzu finden Sie unter [Aktivieren von Office 365 Such-Protokoll aktiviert oder deaktiviert](turn-audit-log-search-on-or-off.md).
+> Sie müssen ein globaler Office 365-Administrator sein, oder die Administrator Sicherheitsrolle im Compliance Center & Sicherheit SIEM-Integration mit Office 365 Bedrohungsanalyse und erweiterte Schutz eingerichtet haben.<br/>Überwachungsprotokollierung muss für die Office 365-Umgebung aktiviert werden. Hilfe hierzu finden Sie unter [Aktivieren von Office 365 Such-Protokoll aktiviert oder deaktiviert](turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

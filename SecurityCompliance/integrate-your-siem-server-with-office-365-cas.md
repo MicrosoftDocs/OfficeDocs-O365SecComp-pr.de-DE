@@ -1,5 +1,5 @@
 ---
-title: Integrieren von Ihrem Server SIEM mit Office 365-Cloud-App-Sicherheit
+title: Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Sie können Ihre SIEM Server mit Office 365-Cloud-App-Sicherheit integriert. Lesen Sie diesen Artikel, um Sie erhalten einen Überblick über die Funktionsweise und wie es einrichten.
-ms.openlocfilehash: 6b9d51d91d4b1ae55dd0dd16a92872daa4ecef90
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23043263"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972327"
 ---
-# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrieren von Ihrem Server SIEM mit Office 365-Cloud-App-Sicherheit
+# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security
   
 |Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
 |:-----|:-----|:-----|:-----|
-|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](utilization-activities-for-ocas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
+|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Als Nächstes](utilization-activities-for-ocas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
    
 Sie können die [Office 365-Cloud-App-Sicherheit](get-ready-for-office-365-cas.md) mit der Sicherheit und Ereignissen (SIEM) Verwaltungsserver zum Aktivieren der zentralisierten Überwachung von Warnungen integrieren. Dies ist besonders wichtig für Organisationen, die mithilfe von Clouddiensten und lokale serveranwendungen. Integrieren von in einem SIEM Server kann Ihr Sicherheitsteam besser schützen Ihrer Office 365-Applikationen Beibehaltung des Workflows üblichen Sicherheit durch Automatisierung bestimmte Sicherheitsverfahren und Korrelation zwischen cloudbasierten und lokale Ereignisse.  
   
@@ -71,25 +71,25 @@ Office 365-Cloud-App-Sicherheit unterstützt derzeit die folgenden SIEM-Server:
     
 2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
     
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.</br>
+3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>
     ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Klicken Sie auf **Einstellungen** \> **Security Extensions**.</br>
+4. Klicken Sie auf **Einstellungen** \> **Security Extensions**.<br/>
 ![Wählen Sie Einstellungen > Sicherheit Erweiterungen](media/Settings-SecurityExtensions.png)
 
-5. Wählen Sie **Agent SIEM hinzufügen**.</br>![Wählen Sie Agent SIEM hinzufügen.](media/SIEMAgents.png)
+5. Wählen Sie **Agent SIEM hinzufügen**.<br/>![Wählen Sie Agent SIEM hinzufügen.](media/SIEMAgents.png)
     
-6. Wählen Sie auf **Assistenten starten**.</br>![Holen Sie sich Hilfe, oder starten Sie den Assistenten](media/HelpOrWizard.png) 
+6. Wählen Sie auf **Assistenten starten**.<br/>![Holen Sie sich Hilfe, oder starten Sie den Assistenten](media/HelpOrWizard.png) 
     
-7. Geben Sie im **allgemeinen** Schritt einen Namen, und **Wählen Sie Ihre SIEM-Format aus** , und legen Sie eine beliebige **Erweiterte Einstellungen** , die für dieses Format relevant sind. Wählen Sie dann **Weiter**.</br>![Geben Sie einen Namen und Typ](media/ChooseAgentTypeAndName.png)
+7. Geben Sie im **allgemeinen** Schritt einen Namen, und **Wählen Sie Ihre SIEM-Format aus** , und legen Sie eine beliebige **Erweiterte Einstellungen** , die für dieses Format relevant sind. Wählen Sie dann **Weiter**.<br/>![Geben Sie einen Namen und Typ](media/ChooseAgentTypeAndName.png)
     
-8. Geben Sie im Schritt **Remote Syslog** die IP-Adresse oder den Hostnamen der **Remote Syslog Host** und die **Portnummer Syslog**. Wählen Sie TCP oder UDP als Protokoll Remote Syslog. (Sie können arbeiten mit Ihrem Netzwerkadministrator oder Sicherheitsadministrator, um diese Informationen zu erhalten, wenn sie Ihnen keine.) Wählen Sie dann **Weiter**.</br>![Geben Sie Remote Syslog-details](media/ArcSightS1Syslog.png)
+8. Geben Sie im Schritt **Remote Syslog** die IP-Adresse oder den Hostnamen der **Remote Syslog Host** und die **Portnummer Syslog**. Wählen Sie TCP oder UDP als Protokoll Remote Syslog. (Sie können arbeiten mit Ihrem Netzwerkadministrator oder Sicherheitsadministrator, um diese Informationen zu erhalten, wenn sie Ihnen keine.) Wählen Sie dann **Weiter**.<br/>![Geben Sie Remote Syslog-details](media/ArcSightS1Syslog.png)
   
 9. Im Schritt **Datentypen** einen der folgenden Schritte aus, und klicken Sie dann auf **Weiter**:
-    - Behalten Sie die Standardeinstellung **Alle Warnungen**</br>OR
-    - Klicken Sie auf **Alle Benachrichtigungen**, und wählen Sie dann auf **bestimmten Filter**. Definieren Sie Filter an, um die Arten von Benachrichtigungen wählen Sie auf Ihrem Server SIEM senden möchten.</br>![Datentypen Schritt des Assistenten](media/ArcSightS1ExportOptions.png)
+    - Behalten Sie die Standardeinstellung **Alle Warnungen**<br/>OR
+    - Klicken Sie auf **Alle Benachrichtigungen**, und wählen Sie dann auf **bestimmten Filter**. Definieren Sie Filter an, um die Arten von Benachrichtigungen wählen Sie auf Ihrem Server SIEM senden möchten.<br/>![Datentypen Schritt des Assistenten](media/ArcSightS1ExportOptions.png)
   
-10. Klicken Sie auf dem Bildschirm Herzlichen Glückwunsch kopieren Sie das Token, und speichern Sie sie zur späteren Verwendung.</br>![SIEM Agent erstellt Bildschirm](media/SIEMAgentFinished.png) 
+10. Klicken Sie auf dem Bildschirm Herzlichen Glückwunsch kopieren Sie das Token, und speichern Sie sie zur späteren Verwendung.<br/>![SIEM Agent erstellt Bildschirm](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > Zu diesem Zeitpunkt eine SIEM-Agenten in Office 365-Cloud-App-Sicherheit eingerichtet haben, aber Ihre SIEM-Server-Integration ist noch nicht abgeschlossen. Fahren Sie fort mit dem nächsten Schritt fort Ihrer SIEM-Server-Integration.
@@ -104,7 +104,7 @@ Nachdem Sie klicken Sie auf Schließen, und klicken Sie im Assistenten auf dem B
     
 2. Extrahieren Sie die JAR-Datei aus der ZIP-Ordner, und führen sie auf dem Server.
     
-3. Nach der Ausführung der Datei, führen Sie den folgenden aus: Befehl:</br>
+3. Nach der Ausführung der Datei, führen Sie den folgenden aus: Befehl:<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
@@ -115,7 +115,7 @@ Nachdem Sie klicken Sie auf Schließen, und klicken Sie im Assistenten auf dem B
 - Es wird empfohlen, dass Sie die JAR-Füllung auf dem Server, während der Serverinstallation ausführen.
     - **Windows**: Führen Sie als geplante Aufgabe, und stellen Sie sicher, zum Konfigurieren der Task **ausgeführt wird, ob der Benutzer oder nicht angemeldet ist** , und deaktivieren Sie die Option **Task beenden, wenn er länger als ausgeführt wird** .
 
-    - **Linux**: Hinzufügen des Befehls Ausführen mit einer **&** an die `rc.local` Datei. </br>Beispiel:</br> 
+    - **Linux**: Hinzufügen des Befehls Ausführen mit einer **&** an die `rc.local` Datei. <br/>Beispiel:<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
@@ -128,7 +128,7 @@ Nachdem Sie klicken Sie auf Schließen, und klicken Sie im Assistenten auf dem B
   
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Schritt 3: Überprüfen Sie, ob der Agent SIEM funktionsfähig ist
 
-1. Stellen Sie sicher, dass der Status des SIEM-Agents in der Cloud App Sicherheit in Office 365-Portal wird nicht als **Verbindungsfehler** angezeigt oder **getrennt** und, es sind keine Benachrichtigungen Agent.</br>Beispielsweise sehen hier Sie, dass der Server SIEM verbunden ist:</br>![SIEM Server verbunden](media/siem-connected.png)</br>Und Hier können wir sehen, dass der SIEM getrennt ist:</br>![SIEM Server nicht verbunden](media/siem-not-connected.png) 
+1. Stellen Sie sicher, dass der Status des SIEM-Agents in der Cloud App Sicherheit in Office 365-Portal wird nicht als **Verbindungsfehler** angezeigt oder **getrennt** und, es sind keine Benachrichtigungen Agent.<br/>Beispielsweise sehen hier Sie, dass der Server SIEM verbunden ist:<br/>![SIEM Server verbunden](media/siem-connected.png)<br/>Und Hier können wir sehen, dass der SIEM getrennt ist:<br/>![SIEM Server nicht verbunden](media/siem-not-connected.png) 
   
 2. Stellen Sie in Ihrem Server Syslog/SIEM sicher, dass Sie sehen, dass Benachrichtigungen von Sicherheit in Office 365 Cloud App angekommen sind.
   
@@ -184,7 +184,7 @@ Und es folgt ein Beispiel im CEF-format
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Auslastung Aktivitäten nach der Einführung der Office 365-Cloud-App-Sicherheit](utilization-activities-for-ocas.md)
+- [Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 - [Lesen und Ausführen einer Aktion Warnungen](review-office-365-cas-alerts.md)
     

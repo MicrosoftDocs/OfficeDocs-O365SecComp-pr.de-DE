@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5602963c-a1f2-4c21-afb9-f66cd7dca1f0
 description: Dieser Artikel beschreibt, wie Windows PowerShell verwenden, um Details zu den Geräten in Ihrer Organisation abzurufen, die Sie für die Verwaltung mobiler Geräte für Office 365 einrichten.
-ms.openlocfilehash: 2e406d3583e7892531b7c74bef0db374672956c7
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 90ee59c5afed1cd260e13134299a7cb4f17dc5bc
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272530"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972317"
 ---
 # <a name="get-details-about-devices-managed-by-mobile-device-management-mdm-for-office-365"></a>Abrufen von Informationen zu verwalteten durch Mobile Device Management (MDM) für Office 365-Geräten
 
@@ -62,12 +62,12 @@ Weitere Informationen zu diesen Schritten finden Sie unter [Connect to Office 36
     
 ### <a name="step-2-connect-to-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Office 365-Abonnements
 
-1. Führen Sie in der Windows Azure Active Directory-Modul für Windows PowerShell den folgenden Befehl ein.</br>  
+1. Führen Sie in der Windows Azure Active Directory-Modul für Windows PowerShell den folgenden Befehl ein.<br/>  
   `$UserCredential = Get-Credential`
 
 2. Klicken Sie im Dialogfeld **Windows PowerShell anmelden** Geben Sie den Benutzernamen und das Kennwort für Ihr Office 365 globaler Administrator-Konto ein, und klicken Sie dann auf **OK**.
     
-3. Führen Sie den folgenden Befehl aus.</br>
+3. Führen Sie den folgenden Befehl aus.<br/>
     `
   Connect-MsolService -Credential $UserCredential
   `
@@ -81,7 +81,7 @@ Um das **Get-MsolUserDeviceComplianceStatus.ps1** -Skript ausführen, müssen Si
   
 1. Aus dem Windows-Desktop auf **Start**, und geben Sie dann auf Windows PowerShell. Klicken Sie mit der rechten Maustaste auf **Windows PowerShell**, und klicken Sie dann auf **als Administrator ausführen**.
     
-2. Führen Sie den folgenden Befehl aus.</br>
+2. Führen Sie den folgenden Befehl aus.<br/>
   `Set-ExecutionPolicy RemoteSigned`
 
 3. Geben Sie bei entsprechender Aufforderung `Y` und drücken Sie dann die EINGABETASTE. 
@@ -90,7 +90,7 @@ Um das **Get-MsolUserDeviceComplianceStatus.ps1** -Skript ausführen, müssen Si
 
 1. Öffnen Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell.
     
-2. Führen Sie den folgenden Befehl aus.</br>
+2. Führen Sie den folgenden Befehl aus.<br/>
   ```
   Get-MsolDevice -All -ReturnRegisteredOwners | Where-Object {$_.RegisteredOwners.Count -gt 0}
   ```
@@ -101,7 +101,7 @@ Weitere Beispiele finden Sie unter [Get-MsolDevice](https://go.microsoft.com/fwl
 
 ### <a name="first-save-the-script-to-your-computer"></a>Speichern Sie zuerst das Skript auf Ihrem computer
 
-1. Kopieren Sie und fügen Sie den folgenden Text in Notepad ein.</br> 
+1. Kopieren Sie und fügen Sie den folgenden Text in Notepad ein.<br/> 
   ```
   param (
       [PSObject[]]$users = @(),
@@ -166,21 +166,21 @@ Weitere Beispiele finden Sie unter [Get-MsolDevice](https://go.microsoft.com/fwl
   
   ```
 
-2. Speichern Sie sie als eine Windows PowerShell-Skriptdatei mithilfe der Dateierweiterung **. ps1**. </br>Beispiel:</br> `Get-MsolUserDeviceComplianceStatus.ps1`.
+2. Speichern Sie sie als eine Windows PowerShell-Skriptdatei mithilfe der Dateierweiterung **. ps1**. <br/>Beispiel:<br/> `Get-MsolUserDeviceComplianceStatus.ps1`.
     
 ### <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Führen Sie das Skript zum Abrufen von Geräteinformationen für ein einzelnes Benutzerkonto
 
 1. Öffnen Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell.
     
-2. Navigieren Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. Wenn Sie es in der C:\PS-Scripts gespeichert, würden Sie beispielsweise den folgenden Befehl ausführen.</br>
+2. Navigieren Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. Wenn Sie es in der C:\PS-Scripts gespeichert, würden Sie beispielsweise den folgenden Befehl ausführen.<br/>
     `cd C:\PS-Scripts`
 
-3. Führen Sie den folgenden Befehl zum Identifizieren des Benutzers, dass Sie Gerätedetails für abrufen möchten. Dieses Beispiel ruft die Details für bar@example.com.</br>
+3. Führen Sie den folgenden Befehl zum Identifizieren des Benutzers, dass Sie Gerätedetails für abrufen möchten. Dieses Beispiel ruft die Details für bar@example.com.<br/>
   ```
   $u = Get-MsolUser -UserPrincipalName bar@example.com
   ```
 
-4. Führen Sie den folgenden Befehl aus, um das Skript zu initiieren.</br>
+4. Führen Sie den folgenden Befehl aus, um das Skript zu initiieren.<br/>
   ```
   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
   ```
@@ -191,15 +191,15 @@ Die Informationen werden zum Windows-Desktop als CSV-Datei exportiert. Zusätzli
 
 1. Öffnen Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell.
     
-2. Navigieren Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. Wenn Sie es in der C:\PS-Scripts gespeichert, würden Sie beispielsweise den folgenden Befehl ausführen.</br>
+2. Navigieren Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. Wenn Sie es in der C:\PS-Scripts gespeichert, würden Sie beispielsweise den folgenden Befehl ausführen.<br/>
   `cd C:\PS-Scripts`
 
-3. Führen Sie den folgenden Befehl zum Identifizieren der Gruppe, dass Sie Gerätedetails für abrufen möchten. Dieses Beispiel ruft die Details für Benutzer in der Gruppe FinanceStaff.</br>
+3. Führen Sie den folgenden Befehl zum Identifizieren der Gruppe, dass Sie Gerätedetails für abrufen möchten. Dieses Beispiel ruft die Details für Benutzer in der Gruppe FinanceStaff.<br/>
   ```
   $u = Get-MsolGroupMember -SearchString "FinanceStaff" | % { Get-MsolUser -ObjectId $_.ObjectId }
   ```
 
-4. Führen Sie den folgenden Befehl aus, um das Skript zu initiieren.</br>
+4. Führen Sie den folgenden Befehl aus, um das Skript zu initiieren.<br/>
   ```
   .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
   ```

@@ -1,5 +1,5 @@
 ---
-title: Aktivieren des Berichtnachricht-add-Ins
+title: Aktivieren des Berichtsnachrichts-Add-Ins
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Erfahren Sie, wie der Bericht-add-in für Outlook und Outlook im Web, für einzelne Benutzer oder der gesamten Organisation zu aktivieren.
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229997"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972267"
 ---
-# <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtnachricht-add-Ins
+# <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtsnachrichts-Add-Ins
 
 Bericht-add-in für Outlook können Personen auf einfache Weise falsch klassifizierte e-Mail, ob die sichere oder böswilliges, in der Regel für die Analyse Unwichtigstes. Microsoft verwendet diese Informationen, um die Effektivität des e-Mail-Schutz Technologien verbessern.
   
@@ -40,8 +40,8 @@ Wenn Sie Exchange Online-Administrator sind, können Sie die Add-in-Bericht für
     
 Nachdem das Add-in installiert und aktiviert ist, sehen Sie die folgenden Symbole: 
 
-- In Outlook sieht das Symbol: </br> ![Bericht Nachricht-Add-in für Outlook Symbol](media/OutlookReportMessageIcon.png)</br>
-- In Outlook Web App sieht das Symbol:</br>![Outlook auf das Symbol Nachricht für Web-Bericht-Add-in](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- In Outlook sieht das Symbol: <br/> ![Bericht Nachricht-Add-in für Outlook Symbol](media/OutlookReportMessageIcon.png)<br/>
+- In Outlook Web App sieht das Symbol:<br/>![Outlook auf das Symbol Nachricht für Web-Bericht-Add-in](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 Als nächsten Schritt erfahren Sie, wie Sie zur [Verwendung des Berichtnachricht-add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).

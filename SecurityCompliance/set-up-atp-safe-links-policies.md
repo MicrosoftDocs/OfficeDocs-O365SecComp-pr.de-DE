@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
-ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
+ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23848085"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972307"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
@@ -118,7 +118,7 @@ Beim Einrichten oder eine Richtlinie für den sicheren Links ATP bearbeiten und 
 |**Für diese Richtlinie**|**Diese option**|**Funktion**|
 |:-----|:-----|:-----|
 |Standard (sobald definiert, die Standardrichtlinie für alle Benutzer in der Organisation)  <br/> |**Die folgenden URLs zu blockieren** <br/> |Ermöglicht Ihrem Unternehmen haben eine benutzerdefinierte Liste von URLs, die automatisch gesperrt sind. Wenn Benutzer eine URL in dieser Liste klicken, werden sie zu einer [Seite Warnung](atp-safe-links-warning-pages.md) weitergeleitet, die erklärt, warum die URL ausgeschlossen wird.<br/> Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten blockierte URLs Liste verwenden ATP sichere Links](set-up-a-custom-blocked-urls-list-wtih-atp.md) , beispielsweise neu hinzugefügte Unterstützung für bis zu drei Platzhalter Sternchen (\*).  <br/> |
-|Standard  <br/> |**Office 365 ProPlus, Office für iOS und Android (engl.)** <br/> |Wenn diese Option ausgewählt ist, ATP sichere Links öffnen Schutz auf URLs in Dokumenten angewendet wird, die in Office 365 ProPlus (Word, Excel und PowerPoint unter Windows oder Mac OS), Office-Dokumente auf IOS- oder Android-Geräte, Visio 2016 unter Windows und Office Online (Word Online, Online PowerPoint, Excel Online und OneNote Online), sofern der Benutzer in Office 365 angemeldet hat. </br></br>Wenn Sie nur **Office 2016 unter Windows**angezeigt wird, klicken Sie dann die Feature-Updates nicht erreicht haben Ihre Office 365-Umgebung noch (und bald sind). Sichere Links ATP Protection betrifft bis zu diesem Zeitpunkt aus Word 2016, 2016 Excel, PowerPoint 2016 oder Visio 2016 unter Windows.           |
+|Standard  <br/> |**Office 365 ProPlus, Office für iOS und Android (engl.)** <br/> |Wenn diese Option ausgewählt ist, ATP sichere Links öffnen Schutz auf URLs in Dokumenten angewendet wird, die in Office 365 ProPlus (Word, Excel und PowerPoint unter Windows oder Mac OS), Office-Dokumente auf IOS- oder Android-Geräte, Visio 2016 unter Windows und Office Online (Word Online, Online PowerPoint, Excel Online und OneNote Online), sofern der Benutzer in Office 365 angemeldet hat. <br/><br/>Wenn Sie nur **Office 2016 unter Windows**angezeigt wird, klicken Sie dann die Feature-Updates nicht erreicht haben Ihre Office 365-Umgebung noch (und bald sind). Sichere Links ATP Protection betrifft bis zu diesem Zeitpunkt aus Word 2016, 2016 Excel, PowerPoint 2016 oder Visio 2016 unter Windows.           |
 |Standard  <br/> |**Verwalten Sie nicht, wenn Benutzer ATP sichere Links klicken** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word, Excel, PowerPoint und Visio-Dokumenten wird nicht gespeichert.  <br/> |
 |Standard  <br/> |**Lassen Sie nicht über ATP sichere Links auf die ursprüngliche URL klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
 |Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Off** <br/> |URLs überprüft in e-Mail-Nachrichten nicht.  <br/> Können Sie eine Ausnahmeregel, wie eine Regel zu definieren, die nicht URLs für eine bestimmte Gruppe von Empfängern in e-Mail-Nachrichten überprüft wird.  <br/> |

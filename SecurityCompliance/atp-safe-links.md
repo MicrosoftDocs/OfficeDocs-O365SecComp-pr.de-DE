@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Die sichere Links-Funktion bietet Zeit des klicken Sie auf Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing und anderen Angriffen zu schützen.
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955457"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972347"
 ---
 # <a name="office-365-atp-safe-links"></a>ATP-sichere Links in Office 365
 
@@ -60,9 +60,9 @@ Auf allgemeiner Ebene funktioniert ATP sichere Links Schutz für URLs in e-Mails
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>Funktionsweise von ATP sichere Links mit Office-Dokumenten
 
-Auf allgemeiner Ebene funktioniert ATP sichere Links Schutz für URLs in Office 365 ProPlus-Anwendungen (aktuellen Versionen von OneNote, Word, Excel und PowerPoint unter Windows oder Mac, Office-apps auf IOS- oder Android-Geräte, Visio unter Windows und Office Online):
+Auf allgemeiner Ebene funktioniert ATP sichere Links Schutz für URLs in Office 365 ProPlus-Anwendungen (aktuellen Versionen von Word, Excel und PowerPoint unter Windows oder Mac, Office-apps auf IOS- oder Android-Geräte, Visio auf Windows, OneNote Online und Office Online):
   
-1. Personen installiert Office 365 ProPlus auf ihren Computer, Smartphone oder Tablet.
+1. Personen installiert Office 365 ProPlus auf ihren Computer, Smartphone oder Tablet. (Oder verwenden in ihrem Browser Office Online.)
     
 2. Ein Benutzer öffnet ein Word, Excel, PowerPoint oder Visio und meldet sich bei Office 365 Enterprise über ihr Konto arbeiten oder Schule. Das Dokument enthält URLs.
     
