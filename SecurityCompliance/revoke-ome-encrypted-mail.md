@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Als Office 365-Administrator können Sie bestimmte-e-Mails widerrufen, die mit Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
-ms.openlocfilehash: b2fd3e07bec6dfedd783a8a68169fc5f990a80d3
-ms.sourcegitcommit: 2150f49cf4305b75591a238ff649c57684c7632f
+ms.openlocfilehash: 19eb874fa15a21c29a9eb2823829e81ff244a555
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25004248"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011821"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 Message Encryption e-Mail-Sperrung
 
@@ -62,7 +62,7 @@ Es gibt mehrere Methoden, die Nachrichten-ID der e-Mail erhalten, die Sie sperre
 
 Wenn Sie die e-Mail-Nachrichten-ID, den, die Sie aufheben möchten kennen, können Sie die e-Mail-Nachricht mit dem Cmdlet Set-OMEMessageRevocation widerrufen. 
 
-1. [Verbindung mit Exchange Online mit Remote-PowerShell](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. [Verbindung mit Exchange Online mit Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Führen Sie das Cmdlet Set-OMEMessageRevocation wie folgt aus:
     

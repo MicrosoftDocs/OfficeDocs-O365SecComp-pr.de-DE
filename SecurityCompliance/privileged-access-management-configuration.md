@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema, um weitere Informationen zum Konfigurieren der Systemzugriff Management in Office 365
-ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055250"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011841"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von Systemzugriff Management in Office 365
 
@@ -102,6 +102,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3---create-an-access-policy"></a>Schritt 3: Erstellen einer Richtlinie für den Zugriff
 
+Sie können erstellen und Konfigurieren von bis zu 30 Systemzugriff Richtlinien für Office 365-Organisation.
+
 ### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
 
 1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
@@ -144,6 +146,8 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Elevation-Autorisierung auszuführende Aufgaben privilegierte anfordern
 
+Anforderungen für Systemzugriff gelten für bis zu 24 Stunden, nachdem die Anforderung gesendet wird. Wenn nicht genehmigt oder abgelehnt, die Anfragen ablaufen und Zugriff ist nicht genehmigt.
+
 #### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
 
 1. Melden Sie sich bei der [Microsoft 365 Admin Center](https://portal.office.com) mit Ihren Anmeldeinformationen.
@@ -160,7 +164,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **Anforderung für**: Wählen Sie aus den verfügbaren Richtlinien
 
-    **Dauer (in Stunden)**: Anzahl von Stunden für den angeforderten Zugriff
+    **Dauer (in Stunden)**: Anzahl von Stunden für den angeforderten Zugriff. Es ist kein Grenzwert für die Anzahl der Stunden, die angefordert werden können.
 
     **Kommentare**: Textfeld für Kommentare im Zusammenhang mit Ihrer Access-Anforderung
 
@@ -235,6 +239,31 @@ Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 Beispiel:
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
+```
+
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>Löschen einer Richtlinie Systemzugriff in Office 365
+Sie können eine Richtlinie Systemzugriff löschen, wenn es in Ihrer Organisation nicht mehr benötigt wird.
+
+### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+
+1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
+
+2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+
+3. Wählen Sie **Verwalten Zugriffsrichtlinien und Anforderungen**.
+
+4. Wählen Sie **Richtlinien konfigurieren**.
+
+5. Wählen Sie die Richtlinie, den, die Sie löschen möchten, und wählen Sie **Richtlinie zu entfernen**.
+
+6. Wählen Sie **Schließen**aus.
+
+### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+
+Führen Sie den folgenden Befehl in Exchange Online Powershell, um eine Richtlinie Systemzugriff zu löschen:
+
+```
+Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
 ## <a name="disable-privileged-access-in-office-365"></a>Deaktivieren Sie Systemzugriff in Office 365

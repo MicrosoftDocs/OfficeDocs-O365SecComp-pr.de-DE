@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema erfahren Sie mehr über Berechtigungen Zugriff auf Management in Office 365
-ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055260"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011861"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Berechtigungen zugreifen Management in Office 365
 
@@ -70,10 +70,14 @@ Die Aufgabe ist durch die Exchange-Verwaltung Runspace für genehmigte Anforderu
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>Welche SKUs Systemzugriff in Office 365 verwenden, müssen?
-Access privilegierten Management in Office 365 ist derzeit nur für Kunden mit E5 und erweiterte Compliance-SKUs verfügbar.
+Access privilegierten Management ist derzeit nur für Kunden mit Office 365 E5 und erweiterte Compliance-SKUs verfügbar.
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>Wann wird Systemzugriff für Office 365-Arbeitslasten außerhalb Exchange verfügbar sein?
 Wir möchten dieses Feature in anderen Office 365-Arbeitslasten bald anbieten. Wenn wir zur Freigabe einer Zeitskala bereit sind, wird sie der Übersicht über die Office 365 verfügbar sein.
+
+### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>Meine Organisation benötigt mehr als 30 Systemzugriff Richtlinien, wird dieser Grenze werden erhöht?
+
+Wir planen der aktuellen maximal 30 Systemzugriff Richtlinien pro bald Office 365-Organisation zu erhöhen.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Müssen ein globaler Administrator Systemzugriff in Office 365 verwalten werden?
 Müssen Sie globaler Administrator-Berechtigung zum Systemzugriff in Office 365 verwalten können. Benutzer, die in einer genehmigenden Personen Gruppe enthaltenen müssen ein globaler Administrator überprüfen und Genehmigen von Anfragen werden. 
