@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit DLP-Richtlinie Empfehlungen
+title: Erste Schritte mit DLP-Richtlinienempfehlungen
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,19 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: Diese Empfehlung Insight-gesteuerte kann sich Organisationen vertrauliche Inhalte schützen, wenn es gespeichert und in Office 365 durch Sie darüber informiert, wenn es besteht eine mögliche Lücke in freigegebenen Abdeckung Ihrer DLP-Richtlinie. Sehen Sie auf der Homepage der Sicherheit diese Empfehlung &amp; Compliance Center, wenn Ihre Dokumente die fünf am häufigsten verwendeten Arten von vertraulichen Informationen enthalten, jedoch werden nicht durch eine DLP-Richtlinie geschützt.
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529996"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002628"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a>Erste Schritte mit DLP-Richtlinie Empfehlungen
+# <a name="get-started-with-dlp-policy-recommendations"></a>Erste Schritte mit DLP-Richtlinienempfehlungen
 
 Diese Empfehlung Insight-gesteuerte kann sich Organisationen vertrauliche Inhalte schützen, wenn es gespeichert und in Office 365 durch Sie darüber informiert, wenn es besteht eine mögliche Lücke in freigegebenen Abdeckung Ihrer DLP-Richtlinie. Sehen Sie auf **der Homepage der Sicherheit** diese Empfehlung &amp; Compliance Center, wenn Ihre Dokumente die fünf am häufigsten verwendeten Arten von vertraulichen Informationen enthalten, jedoch werden nicht durch eine Data Loss Prevention (DLP) Richtlinie geschützt. 
   

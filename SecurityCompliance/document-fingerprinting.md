@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
+search.appverid: MET150
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
 description: Information Worker in Ihrer Organisation behandeln viele Arten von vertraulichen Daten in einem normalen Tag. Der Dokumentfingerabdruck vereinfacht die schützen diese Informationen durch das Identifizieren von Standardformulare, die in der gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte von Dokumentfingerabdrücken und wie Sie mithilfe von PowerShell erstellt.
-ms.openlocfilehash: d73b769e7a014f2642a0fcd66cc6a500c68c46c3
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.openlocfilehash: c33d7412fe4774b74efcd0928df4c99c7bcbb626
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23867495"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002648"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 

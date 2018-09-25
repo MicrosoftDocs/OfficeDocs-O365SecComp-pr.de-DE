@@ -9,16 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Ihre Organisation Fällen müssen Sie für eine bestimmte Zeitspanne aufgrund von Kompatibilitäts-, rechtliche, Dokumente oder andere geschäftlichen Anforderungen beibehalten werden. Wenn Ihre Organisation Dokumente länger als erforderlich gespeichert sind, erstellen Sie unnötige rechtliche Risiken. Sie können mit einer dokumentlöschrichtlinie proaktiv Risiko reduzieren, durch das Löschen von Dokumenten in einer Website nach einem bestimmten Zeitraum – beispielsweise Dokumente löschen in der Benutzer OneDrive for Business-Websites fünf Jahre nach die Dokumente erstellt wurden.
-ms.openlocfilehash: 495dd781c56e25e884d47f72a7e48410ea340208
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013659"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002668"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Übersicht über Dokumentlöschrichtlinien
 
