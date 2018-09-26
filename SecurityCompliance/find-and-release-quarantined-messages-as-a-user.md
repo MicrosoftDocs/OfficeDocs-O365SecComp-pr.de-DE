@@ -13,12 +13,12 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 description: 'Als Office 365-Benutzer können Sie Ihre eigenen Nachrichten Spam-Quarantäne in einem der folgenden beiden Methoden verwalten: durch die Spam-Benachrichtigungen an Sie gesendeten Antworten (sofern Ihr Administrator diese Funktion eingerichtet hat), oder mithilfe der Spam-Quarantäne-Funktion in das Wertpapier &amp; Compliance Zentriert.'
-ms.openlocfilehash: 08a0c5c35edb6c0829a1c7cafd7eaf9a41fa22ae
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 728273838d9e592e17638638258f481830bc0bbe
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528852"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018889"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Finden und Freigeben von Nachrichten in Quarantäne als Benutzer in Office 365
 
@@ -44,7 +44,7 @@ Können Sie eine Liste aller Nachrichten in Quarantäne anzeigen, oder Sie könn
     
 - E-Mails, die als Massen-Mail.
     
-Wenn Sie eine bestimmte quarantänenachricht gefunden haben, klicken Sie auf die Nachricht an die Details zu ihr anzeigen und Aktionen. Sie können die Nachricht an Ihren Posteingang freigeben, überprüfen die Nachricht, laden Sie die Nachricht oder Löschen der Nachricht aus der Quarantäne sofort.
+Wenn Sie eine bestimmte quarantänenachricht gefunden haben, klicken Sie auf die Nachricht an die Details zu ihr anzeigen und Aktionen. Sie können die Nachricht an Ihr Postfach freigeben, eine Vorschau die Nachricht, laden Sie die Nachricht oder Löschen der Nachricht aus der Quarantäne sofort.
   
 > [!NOTE]
 > Sie benötigen Administratorberechtigungen in Office 365 Nachrichten in Quarantäne entwickelt, die an andere Benutzer gesendet wurden. 
@@ -94,7 +94,7 @@ Nachdem Sie eine Nachricht ausgewählt haben, sehen Sie eine Zusammenfassung der
     
 - **Für freigegeben:** Alle e-Mail-Adressen (falls vorhanden), die die Nachricht freigegeben wurde. 
     
-- **Noch nicht auf freigegebene:** Alle e-Mail-Adressen (falls vorhanden), die die Nachricht nicht freigegeben wurde. Sie können **Version** auswählen, wenn Sie die Nachricht an Ihren Posteingang (mehr über das Freigeben von Nachrichten im nächsten Abschnitt) freigeben möchten. 
+- **Noch nicht auf freigegebene:** Alle e-Mail-Adressen (falls vorhanden), die die Nachricht nicht freigegeben wurde. Sie können **Version** auswählen, wenn Sie die Nachricht an Ihr Postfach (mehr über das Freigeben von Nachrichten im nächsten Abschnitt) freigeben möchten. 
     
 Sie können noch mehr Details über die Nachricht abrufen, indem Sie eine der folgenden Optionen auswählen:
   
@@ -108,12 +108,12 @@ Nachdem Sie eine Nachricht oder eine Gruppe von Nachrichten ausgewählt haben, m
   
 - Keine Aktion ausführen. Wenn Sie nichts tun entscheiden, wird die Nachricht von Office 365 automatisch nach Ablauf gelöscht werden. Beachten Sie, dass wenn eine Nachricht von Office 365 löscht aus der Quarantäne, Sie unwiederbringlich.
     
-- **Mit Nachricht freigeben** Freigeben einer in Quarantäne verschobenen Nachricht (oder einen Satz von Nachrichten), damit die Nachricht an Ihren Posteingang gesendet wird. Wenn Sie eine Nachricht freigeben, müssen Sie die Option aus, um die Nachricht zur Analyse an Microsoft gemeldet. 
+- **Mit Nachricht freigeben** Freigeben einer in Quarantäne verschobenen Nachricht (oder einen Satz von Nachrichten), damit die Nachricht an Ihr Postfach gesendet wird. Wenn Sie eine Nachricht freigeben, müssen Sie die Option aus, um die Nachricht zur Analyse an Microsoft gemeldet. 
     
     Wenn Sie angeben, dass eine Nachricht, auch als bezeichnet reporting einer Nachricht als falsch positives Ergebnis melden wird die Nachricht an den Microsoft-Spamanalyseteam gemeldet. Das Team wertet und analysiert false positive Nachrichten und, abhängig von den Ergebnissen der Analyse, können die Dienst geltende Spam Inhaltsfilterregeln, um diese Nachrichten über ermöglichen angepasst werden.
     
 - **Herunterladen der Nachricht** Können Sie die Nachricht als EML-Datei herunterladen. Nachdem Sie eine Nachricht heruntergeladen haben, können Sie die EML-Datei mit Ihrem e-Mail-Client, bevor Sie die Nachricht überprüfen. 
     
-- **Entfernen Sie aus der Quarantäne** Löscht die Nachricht sofort aus der Quarantäne ohne dass die Nachricht an Ihren Posteingang freigegeben. 
+- **Entfernen Sie aus der Quarantäne** Löscht die Nachricht sofort aus der Quarantäne ohne die Nachricht an Ihr Postfach freizugeben. 
     
 

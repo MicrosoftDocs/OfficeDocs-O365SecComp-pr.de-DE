@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Als Administrator können Sie anzeigen, freigeben und melden false positive in Quarantäne verschobenen Nachrichten in Office 365. Sie können Richtlinien festlegen, sodass Office 365 Nachrichten filtert und sendet sie zur aus verschiedenen Gründen in Quarantäne:, da sie als Spam, Massen, Phishing, Schadsoftware erkannt wurden oder sie eine e-Mail-Flussregel übereinstimmen. '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839099"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018879"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Administrator in Office 365
 
@@ -59,7 +59,7 @@ Sie können außerdem als Administrator, alle für Ihre Organisation oder nur an
   
 Sie können auch Ihre Ergebnisse, um bestimmte Nachrichten suchen filtern. Tipps finden Sie unter [Filtern von Ergebnissen und hier finden unter Quarantäne gestellte Nachrichten und Dateien](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in diesem Artikel. 
   
-Wenn Sie eine bestimmte quarantänenachricht gefunden haben, klicken Sie auf die Nachricht an die Details zu ihr anzeigen, und Aktionen Sie, wie die Nachricht an die Person Posteingang freigeben.
+Wenn Sie eine bestimmte quarantänenachricht gefunden haben, klicken Sie auf die Nachricht an die Details zu ihr anzeigen, und Aktionen Sie, wie die Nachricht an die Mailbox Person freigeben.
   
 ## <a name="view-your-organizations-quarantined-files"></a>Anzeigen von in Quarantäne verschobenen Dateien Ihres Unternehmens
 
