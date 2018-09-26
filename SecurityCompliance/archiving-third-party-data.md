@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Administratoren können Drittanbieter-Daten aus soziale Medien Plattformen, instant messaging-Plattformen und Dokument für die Zusammenarbeit Plattformen auf Postfächer in Office 365-Organisation importieren. Auf diese Weise können Sie Daten aus Facebook, Twitter und Datenquellen in Office 365 zu archivieren. Anschließend können Sie Appply Office 365 Compliance-Features (wie rechtliche Aufbewahrungspflicht, Inhaltssuche und Aufbewahrungsrichtlinien) auf Drittanbieter-Daten.
-ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827089"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038108"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivieren von Drittanbieter-Daten in Office 365
 

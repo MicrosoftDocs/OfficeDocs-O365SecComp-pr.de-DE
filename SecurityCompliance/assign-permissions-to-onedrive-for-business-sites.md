@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: Das eDiscovery Center in SharePoint Online können Sie alle OneDrive for Business-Websites in Ihrer Organisation für bestimmte Schlüsselwörter, vertrauliche Informationen und andere Suchkriterien suchen. Jeder Benutzer in Ihrer Organisation ist der Besitzer der ihre OneDrive for Business-Website, die sich in der Websitesammlung, die mit dem Namen befindet https://domain-my.sharepoint.com. Standardmäßig können ein globaler Office 365-Administrator oder Compliance Manager das eDiscovery Center in SharePoint Online um eine beliebige OneDrive for Business-Websites zu suchen. Zum Suchen einer OneDrive for Business-Website, Administratoren oder Compliance-Manager muss ein Websitesammlungsadministrator für diese OneDrive for Business-Site.
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529473"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038088"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>Zuweisen von eDiscovery-Berechtigungen für OneDrive for Business-Websites
 

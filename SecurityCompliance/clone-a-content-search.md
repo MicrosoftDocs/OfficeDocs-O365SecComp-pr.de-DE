@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
-- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel schnell Klonen einer vorhandenen Inhaltssuche in das Wertpapier &amp; Compliane Center suchen. Wenn Sie ein Klonen eine Suche, wird eine neue Suche (unter einem neuen Namen) erstellt, die die gleichen Eigenschaften wie die ursprüngliche Suche enthält. Sie können dann die neue Suche bearbeiten (durch Ändern der Stichwortabfrage oder der Datumsbereich), und führen Sie ihn.
-ms.openlocfilehash: a4f801e3de281e8caf8aeb7d1c2bd48f0facb77c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529323"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038048"
 ---
 # <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Klonen einer Inhaltssuche in Office 365-Sicherheit &amp; Compliance Center
 

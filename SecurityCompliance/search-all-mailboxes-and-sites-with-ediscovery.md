@@ -8,16 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 56e2978f-71b6-4141-b769-ad856d31bbec
 description: In der eDiscovery Center in Office 365 können Sie alle Postfächer von Exchange Online, SharePoint Online-Websites und OneDrive for Business-Websites in einer einzigen eDiscovery-Suche suchen. Um alle Inhaltsquellen in der Organisation zu suchen, muss ein eDiscovery-Manager die entsprechenden eDiscovery-Berechtigungen für jede Inhaltsquelle zugewiesen werden.
-ms.openlocfilehash: b3508d5929ca2b5b7a937eb2dccf677a2968cbbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5612faf6113ceef292f90b49ec70ad7b30905646
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529292"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038098"
 ---
 # <a name="search-all-mailboxes-and-sites-using-the-ediscovery-center"></a>Durchsuchen aller Postfächer und Websites mit dem eDiscovery Center
 

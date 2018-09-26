@@ -11,15 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: erfahren Sie mehr über die Verwendung des Import-Diensts in die Office 365-Sicherheit &amp; Compliance Center e-Mail (PST-Dateien) auf die Benutzerpostfächer in Exchange Online Massenimport von Daten. Dieses Thema enthält häufig gestellte Fragen und erläutert die Funktionsweise des Importvorgangs PST-Datei.'
-ms.openlocfilehash: 1cbe5627ffb906b6a87541f4c4582a2806562ca4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529749"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038018"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Übersicht über das Importieren von Ihrer Organisation PST-Dateien in Office 365
 
@@ -121,7 +121,7 @@ Darüber hinaus Import erstellen Aufträge in der Office 365-Sicherheit &amp; Co
   
 - Sie müssen die Rolle des E-Mail-Empfänger in Exchange Online zugewiesen werden. Standardmäßig wird diese Rolle der Organization Management und Recipient Management Rollen Gruppen zugewiesen.
     
-    oder -
+    Oder
     
 - Sie müssen ein globaler Administrator in Office 365-Organisation sein.
     
@@ -190,7 +190,7 @@ Darüber hinaus Import erstellen Aufträge in der Office 365-Sicherheit &amp; Co
   
 - Sie müssen die Rolle des E-Mail-Empfänger in Exchange Online zugewiesen werden. Standardmäßig wird diese Rolle der Organization Management und Recipient Management Rollen Gruppen zugewiesen.
     
-    oder -
+    Oder
     
 - Sie müssen ein globaler Administrator in Office 365-Organisation sein.
     

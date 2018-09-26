@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center gezielte Websitesammlungen ausführen. Eine Sammlung bedeutet, dass Sie davon überzeugt sind, dass auf eine Anfrage reagieren oder privilegierten Elemente in einem bestimmten Postfach oder einer Website Ordner befinden. Verwenden Sie das Skript in diesem Artikel erhalten Sie die Ordner-ID oder den Pfad für die bestimmten Ordner Postfach oder einer Website, die Sie suchen möchten.
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528974"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038298"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden Sie Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
@@ -222,7 +220,7 @@ Nach dem Ausführen des Skripts, um eine Liste der Ordner IDs oder Pfade für ei
     
     - Klicken Sie auf **bestimmte Postfächer auswählen, um zu suchen** , und fügen Sie dasselbe Postfach, das Sie bei der Ausführung des Skripts in Schritt 1 angegeben. 
     
-      oder -
+      Oder
     
     - Klicken Sie auf **Auswählen bestimmter Websites suchen** , um zu suchen, und fügen Sie die gleiche URL der Website, die Sie bei der Ausführung des Skripts in Schritt 1 angegeben. 
     

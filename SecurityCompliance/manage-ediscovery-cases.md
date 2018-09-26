@@ -8,19 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MED150
-- MBS150
-- MET150
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center zum Erstellen von eDiscovery-Haltestatus sowie zum zugreifen und Verwalten von eDiscovery-Fälle in Ihrer Organisation.
-ms.openlocfilehash: 5be66419e19f9703be5dde3fad82837bda249b72
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529436"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038328"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Verwalten von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center
 
@@ -121,7 +116,7 @@ Im nächste Schritt ist erstellen Sie einen neue eDiscovery-Fall. Sie müssen ei
 
 Nachdem Sie eine neue Anfrage erstellt haben, besteht der nächste Schritt, um die Groß-/Kleinschreibung Mitglieder hinzuzufügen. Wie vorherige erläutert, nur Benutzer, die Mitglieder des Bearbeiters sind oder eDiscovery-Manager Rollengruppen hinzugefügt werden können, als Mitglied der Groß-/Kleinschreibung. Beachten Sie, dass die eDiscovery-Manager, die die Groß-/Kleinschreibung erstellt automatisch als Mitglied hinzugefügt wird.
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie auf den Namen der Anfrage, der Sie Mitglieder hinzufügen möchten.
     
@@ -160,7 +155,7 @@ Wenn Sie einen Haltestatus erstellen, müssen Sie die folgenden Optionen aus, um
   
 Zum Erstellen eines Haltestatus für einen eDiscovery-Fall:
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie auf **Öffnen** neben der Groß-/Kleinschreibung, die Sie dem Haltestatus in erstellen möchten. 
     
@@ -230,7 +225,7 @@ Beachten Sie die folgenden Punkte berücksichtigen zu halten Statistiken:
 
 Nach ein eDiscovery-Fall erstellt wird und alle Verwalter im Zusammenhang mit der Groß-/Kleinschreibung in die Warteschleife gestellt werden, können Sie erstellen und Ausführen von mindestens einen Content-Suche, die die Groß-/Kleinschreibung zugeordnet sind. Sucht eine Anfrage zugeordnet werden nicht angezeigt, auf **der Seite in das Wertpapier** Content &amp; Compliance Center. Dies bedeutet, die eine Anfrage Content-Suche zugeordnet kann nur von Groß-/Kleinschreibung Membern zugegriffen werden, die auch Mitglieder der Rollengruppe eDiscovery-Manager sind. 
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, die Sie erstellen eine Inhaltssuche in möchten **Öffnen** . 
     
@@ -308,7 +303,7 @@ Sie können die Ergebnisse einer [Exportieren Sie die Ergebnisse von einem einze
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportieren Sie die Ergebnisse einer einzelnen zugeordneten Suche dem Fall
 <a name="singlesearch_1"> </a>
 
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, der Sie Exportieren von durchsuchen möchten **Öffnen** . 
     
@@ -339,7 +334,7 @@ Als Alternative zum Exportieren Sie die Ergebnisse einer einzelnen Content Suche
 > [!NOTE]
 > Sie können nicht die Ergebnisse von mehreren Suchvorgängen zu exportieren, wenn eine die Suchvorgänge konfiguriert wurde, um alle Inhalte Groß-/Kleinschreibung zu suchen. Exportieren Sie nur die Ergebnisse von mehreren Suchvorgängen für Suchvorgänge, die einem eDiscovery-Fall zugeordnet sind. Können nicht exportiert werden die Ergebnisse von mehreren Suchvorgängen auf der Seite **Inhaltssuche** in das Wertpapier aufgeführten &amp; Compliance Center. 
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, der Sie Exportieren von durchsuchen möchten **Öffnen** . 
     
@@ -399,7 +394,7 @@ Wenn Sie die Suchergebnisse für erweiterte eDiscovery vorbereiten, extrahiert o
 > [!NOTE]
 > Um eine erweiterte eDiscovery mit Benutzerdaten zu analysieren, muss der Benutzer (der Verwaltungsberechtigte der Daten) eine Lizenz für Office 365 E5 zugewiesen werden. Alternativ können der Benutzer mit einer Lizenz für Office 365 E1 oder E3 eine erweiterte eDiscovery eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die zugewiesenen Fällen und erweiterte eDiscovery verwenden, um Daten zu analysieren erforderlich keine E5-Lizenz. 
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, die Sie Suchergebnisse für die Analyse in erweiterten eDiscovery vorbereiten möchten **Öffnen** . 
     
@@ -428,9 +423,9 @@ Wenn Sie die Suchergebnisse für erweiterte eDiscovery vorbereiten, extrahiert o
 
 Nach dem Erstellen einer Anfrage in das Wertpapier &amp; Compliance Center, können Sie auf die gleiche Groß-/Kleinschreibung im erweiterten eDiscovery wechseln.
   
-Wechseln Sie zu einer erweiterten eDiscovery-Fall:
+So navigieren Sie zu einem Fall in Advanced eDiscovery:
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, die Sie in der erweiterten eDiscovery wechseln möchten **Öffnen** . 
     
@@ -468,7 +463,7 @@ Wenn der Fall, rechtliche oder von einem eDiscovery-Fall unterstützt Untersuchu
     
 So schließen Sie eine Anfrage:
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie auf den Namen der Anfrage, die Sie löschen möchten.
     
@@ -497,7 +492,7 @@ So schließen Sie eine Anfrage:
 
 Wenn Sie eine Anfrage erneut öffnen, werden nicht automatisch alle Haltestatus an, die vorhanden waren, wenn die Groß-/Kleinschreibung geschlossen wurde reaktiviert werden. Nachdem die Groß-/Kleinschreibung erneut geöffnet ist, müssen Sie wechseln Sie zur Seite **halten** , und aktivieren Sie in der vorherigen enthalten sind. Um einem Haltestatus zu aktivieren, wählen Sie sie aus, und klicken Sie im Detailbereich auf **schalten Sie es** . 
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie auf den Namen der Anfrage, die Sie erneut öffnen möchten.
     

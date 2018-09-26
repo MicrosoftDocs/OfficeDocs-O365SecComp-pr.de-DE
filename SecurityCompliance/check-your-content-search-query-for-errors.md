@@ -1,5 +1,5 @@
 ---
-title: Überprüfen Sie Ihre Abfrage Inhaltssuche Fehler
+title: Überprüfen Ihrer Inhaltssuche auf Fehler
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,19 +8,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Überprüfen Sie die Schlüsselwort-Abfrage für die Inhaltssuche für Fehler und Tippfehler, wie beispielsweise nicht unterstützte Zeichen und Kleinbuchstaben Sie boolesche Operatoren, vor dem Ausführen der Suche. Wenn einen Fehler gefunden, wird eine überarbeitete Abfrage empfohlen.
-ms.openlocfilehash: 0d2119ceef4ce3777d3967a56357551e235e426c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ae14edc29bb7f8bab5dd2306282a69443872633
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529441"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038288"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Überprüfen Sie Ihre Abfrage Inhaltssuche Fehler
+# <a name="check-your-content-search-query-for-errors"></a>Überprüfen Ihrer Inhaltssuche auf Fehler
 
 Wenn Sie erstellen oder einer Inhaltssuche bearbeiten, haben Sie Office 365 überprüfen Sie Ihre Abfrage für nicht unterstützte Zeichen und boolesche Operatoren, die möglicherweise nicht groß geschrieben werden. Auf welche Weise? Klicken Sie einfach auf **Abfrage für Tippfehler überprüfen** auf der Abfrageseite eine Inhaltssuche. 
   

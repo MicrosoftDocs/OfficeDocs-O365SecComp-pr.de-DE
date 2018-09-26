@@ -12,15 +12,14 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
-- MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Führen Sie ein Skript, um schnell Postfächer und OneDrive for Business-Websites zu einem neuen Haltestatus, die einem eDiscovery-Fall in die Office 365-Sicherheit zugeordnet ist &amp; Compliance Center.
-ms.openlocfilehash: eb53f01b4f1b7245e1411ac470db629115eb1ef5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2c93deb14bc8c1f89dab7bb054d2e94db06cfbd5
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529370"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038258"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Verwenden Sie ein Skript zum Hinzufügen von Benutzern zu einem Haltestatus in einer eDiscovery-Fall in die Office 365-Sicherheit &amp; Compliance Center
 
@@ -48,7 +47,7 @@ Hier sind die Schritte zu diesem Zweck müssen:
     
 - Das Skript enthält minimale Fehlerbehandlung. Der primäre Zweck ist, um schnell und einfach das Postfach zu platzieren, und halten Sie OneDrive for Business-Website für jeden Benutzer.
     
-- In diesem Thema bereitgestellten Beispielskripts werden unter keinem standard Support-Programm von Microsoft oder der Dienst nicht unterstützt. Die Beispielskripts werden wie besehen ohne jede Gewährleistung bereitgestellt. Microsoft schließt alle konkludente Garantien einschließlich, aber nicht beschränkt auf konkludente Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck. Das gesamte Risiko aus der Verwendung oder der Leistung der Beispielskripts und der Dokumentation liegt bei Ihnen. In keinem Fall muss Microsoft, seine Autoren oder ein Benutzer die Erstellung, Produktion oder Übermittlung der Skripts else beteiligt für Schäden jeglicher Art (einschließlich, aber nicht beschränkt auf Schäden für den Verlust von Gewinn Business, Business Unterbrechung, Verlust von Unternehmensinformationen, Folge- oder) aus der Verwendung des oder der Fehler beim Verwenden der Beispielskripts oder der Dokumentation, haftbar gemacht werden, auch wenn Microsoft die Möglichkeit solcher Schäden hingewiesen wurde.
+- Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Schritt 1: Installieren der SharePoint Online-Verwaltungsshell
 

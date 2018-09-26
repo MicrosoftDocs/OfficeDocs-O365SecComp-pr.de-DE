@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Informationen zum Konfigurieren der Windows-Registrierung, um den Datendurchsatz beim Herunterladen der Suchergebnisse zu erhöhen und Suchen von Daten aus der Office 365-Sicherheit &amp; Compliance Center und Office 365 erweiterte eDiscovery.
-ms.openlocfilehash: 3f456f5ee0312d4d4d7b95f868520e6756a90fd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a05c2b786d1d1de7ff5014d12c708484345f908b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530110"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038118"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Die Download-Leistung zu steigern, beim Exportieren von eDiscovery-Suchergebnisse aus Office 365
 
@@ -67,5 +65,5 @@ Führen Sie das folgende Verfahren auf dem Computer, mit denen Sie die Sicherhei
     
   - [Exportieren von Suchergebnissen aus der Office 365-Sicherheit &amp; Compliance Center](export-search-results.md)
     
-  - [Exportieren von Ergebnissen in Office 365 erweiterte eDiscovery](export-results-in-advanced-ediscovery.md)
+  - [Exportieren von Ergebnissen in Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
     

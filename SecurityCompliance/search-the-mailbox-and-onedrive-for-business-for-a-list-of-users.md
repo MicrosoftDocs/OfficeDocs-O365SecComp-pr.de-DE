@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie Inhaltssuche, um das Postfach und die OneDrive für Unternehmen Standort für eine Liste von Benutzern zu suchen
+title: Verwenden der Inhaltssuche zum Durchsuchen des Postfachs und der OneDrive for Business-Website nach einer Liste von Benutzern
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,19 +8,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Verwenden Sie Inhaltssuche und das Skript in diesem Artikel, um Postfächer und OneDrive for Business-Websites für eine Gruppe von Benutzern zu suchen.
-ms.openlocfilehash: cc88f8e81a9883b8d392965db14994691878748d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e7f16ec0ca34d9f7f6155cab7e473119de3966cb
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529308"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038168"
 ---
-# <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Verwenden Sie Inhaltssuche, um das Postfach und die OneDrive für Unternehmen Standort für eine Liste von Benutzern zu suchen
+# <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Verwenden der Inhaltssuche zum Durchsuchen des Postfachs und der OneDrive for Business-Website nach einer Liste von Benutzern
 
 Die Office 365-Sicherheit &amp; Compliance Center bietet eine Reihe von Windows PowerShell-Cmdlets, mit denen Sie zeitaufwendige eDiscovery-bezogene Aufgaben automatisieren können. Aktuell, eine Suche Inhalte erstellen, in das Wertpapier &amp; Compliance Center, um eine große Anzahl von Speicherorte für Inhalte Verwaltungsberechtigter suchen nimmt Zeit und Vorbereitung. Bevor Sie eine Suche erstellen, müssen Sie sammeln die URL für jede OneDrive for Business-Site und dann die Suche für jedes Postfach und O NeDrive für Business-Website hinzuzufügen. In zukünftigen Versionen werden einfacher in das Wertpapier &amp; Compliance Center. Bis zu diesem Zeitpunkt können Sie das Skript in diesem Artikel verwenden, um diese zu automatisieren. Mit diesem Skript werden Sie aufgefordert, den Namen des MeineWebsite-Domäne Ihrer Organisation (beispielsweise **"Contoso"** in der URL https://contoso-my.sharepoint.com), eine Liste von Benutzer-e-Mail-Adressen, den Namen der neuen Inhaltssuche und die Suchabfrage verwenden. Das Skript ruft die OneDrive for Business-URL für jeden Benutzer in der Liste, und klicken Sie dann wird erstellt und startet eine Inhaltssuche, das das Postfach durchsucht und OneDrive for Business-Site für jeden Benutzer in der Liste mit der Abfrage, die Sie bereitstellen. 
   

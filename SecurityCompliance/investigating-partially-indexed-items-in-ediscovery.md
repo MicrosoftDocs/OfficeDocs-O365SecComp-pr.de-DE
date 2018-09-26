@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Teilweise indizierte Elemente (auch Anruf nicht indizierter Elemente) werden Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive, die von Websites für die aus irgendeinem Grund für die Inhaltssuche vollständig indiziert wurden nicht. In diesem Artikel erfahren Sie, warum Elemente können nicht für die Suche indiziert werden und werden als teilweise indizierte Elemente zurückgegeben, Search-Fehler für teilweise indizierte Elemente zu identifizieren und verwenden Sie ein PowerShell-Skript bestimmen Ihrer Organisation die Angriffsfläche teilweise indizierten e-Mail Elemente.
-ms.openlocfilehash: 4e8e8c31e6c5450a9b84a1240c2ae8d891c1bd6f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529998"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038078"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery
 

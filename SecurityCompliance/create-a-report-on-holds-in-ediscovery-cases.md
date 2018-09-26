@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Verwenden Sie das Skript einen Bericht mit Informationen über alle Haltestatus, die eDiscovery-Fälle in die Office 365-Sicherheit zugeordnet sind in diesem Artikel &amp; Compliance Center.
-ms.openlocfilehash: 8bc1285f776e2b1aa0c0330c06ccffff8ce4585c
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258643"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038208"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Erstellen eines Berichts in Archiven in eDiscovery-Fälle in Office 365
   
@@ -32,7 +30,7 @@ Finden Sie [Weitere Informationen](#more-information) im Abschnitt eine ausführ
     
 - Das Skript in diesem Artikel enthält minimale Fehlerbehandlung. Der primäre Zweck ist Bericht zu den Haltebereichen schnell zu erstellen, die eDiscovery-Fälle in Ihrer Organisation zugeordnet sind.
     
-- In diesem Thema bereitgestellten Beispielskripts werden unter keinem standard Support-Programm von Microsoft oder der Dienst nicht unterstützt. Die Beispielskripts werden wie besehen ohne jede Gewährleistung bereitgestellt. Microsoft schließt alle konkludente Garantien einschließlich, aber nicht beschränkt auf konkludente Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck. Das gesamte Risiko aus der Verwendung oder der Leistung der Beispielskripts und der Dokumentation liegt bei Ihnen. In keinem Fall muss Microsoft, seine Autoren oder ein Benutzer die Erstellung, Produktion oder Übermittlung der Skripts else beteiligt für Schäden jeglicher Art (einschließlich, aber nicht beschränkt auf Schäden für den Verlust von Gewinn Business, Business Unterbrechung, Verlust von Unternehmensinformationen, Folge- oder) aus der Verwendung des oder der Fehler beim Verwenden der Beispielskripts oder der Dokumentation, haftbar gemacht werden, auch wenn Microsoft die Möglichkeit solcher Schäden hingewiesen wurde.
+- Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
     
 ## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Schritt 1: Verbinden mit der Sicherheit &amp; Compliance Center mit Remote-PowerShell
 

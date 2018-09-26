@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Nachdem ein Office 365-Postfach inaktive vorgenommen wurde, können Sie die Dauer des Haltestatus oder Office 365 Aufbewahrungsrichtlinie inaktives Postfach zugewiesen ändern. Die Dauer halten definiert wie lange Elemente in wiederherstellbaren Elementen Ordner gespeichert sind.
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529487"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038058"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Ändern Sie die Dauer halten eines inaktiven Postfachs in Office 365
 

@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Verwenden Sie die Datei Results.csv oder nicht-indizierten Items.csv aus einer vorhandenen Inhaltssuche, um eine ID-Liste-Suche erstellen, die eine bestimmte e-Mail-Nachrichten zurückgibt. -ID-Liste Suche in der Regel verwendet, um Postfachelemente teilweise indizierten zurückzugeben.
-ms.openlocfilehash: 28e4a66e5c9be1817881004b1e4b3a3e6d4bfdb9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9a7583c8f83626afb8dc0452bf72d834c8a28275
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529846"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038278"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Vorbereiten einer CSV-Datei für ein Inhaltssuche in Office 365-ID-Liste
 
@@ -32,7 +30,7 @@ Nachfolgend finden Sie ein schnellen Überblick über den Prozess zum Erstellen 
     
     - [Exportieren von Suchergebnissen aus der Office 365-Sicherheit &amp; Compliance Center](export-search-results.md)
     
-    - [Exportieren eines Berichts für die Inhaltssuche](export-a-content-search-report.md)
+    - [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
     
 3. Bearbeiten Sie der Datei **Results.csv** oder den **Indizierten Items.csv** , und ermitteln Sie die spezifischen Postfach-Elemente, die Sie bei der Suche der ID-Liste einschließen möchten. Finden Sie die [Anweisungen](#prepare-the-csv-file-for-an-id-list-search) für die Vorbereitung einer CSV-Datei für die Suche eine ID-Liste aus. 
     

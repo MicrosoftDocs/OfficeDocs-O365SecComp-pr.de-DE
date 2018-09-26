@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Verwenden des Bulk Search-Editors in die Office 365-Sicherheit &amp; Compliance Center, um die Abfrage und Inhalte Speicherorte für eine oder mehrere Inhalte Suchvorgänge schnell zu ändern.
-ms.openlocfilehash: 45c9a3fc4bcc5e5d8ce9945d3094bfb4a39d6dcf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9d6d48ff42bb3c99a30b9da1020253a5af24679b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529336"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038178"
 ---
 # <a name="bulk-edit-content-searches-in-the-office-365-security-amp-compliance-center"></a>Massenbearbeitung Content-Suche in der Office 365-Sicherheit &amp; Compliance Center
 
@@ -46,7 +44,7 @@ Weitere Informationen zur Verwendung des Tools Suchstatistik finden Sie unter [s
     
    - Geben Sie die neue Abfrage in der Zelle. Beachten Sie, dass Sie einen Teil der Abfrage nicht bearbeiten können. Sie müssen die gesamte Abfrage eingeben.
     
-      oder -
+      Oder
     
     - Fügen Sie eine neue Abfrage in der Zelle. Dabei wird vorausgesetzt, dass Sie den Abfragetext aus einer Datei, wie eine Textdatei oder einer Excel-Datei kopiert haben.
     

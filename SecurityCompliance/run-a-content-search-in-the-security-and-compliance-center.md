@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Verwenden Sie Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center Postfächer, SharePoint Online-Websites und OneDrive for Business-Standorte zu suchen. '
-ms.openlocfilehash: 61c6c3933a75567acb04f793cb6815322fb3fada
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d480579db1c39d51d4fa8b0931106f135c5339d2
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529294"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038318"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center 
 
@@ -360,7 +357,7 @@ Nachfolgend finden Sie weitere Informationen zum Content-Suche.
     
   - Sie haben, aktivieren Sie das Kontrollkästchen **Schlüsselwortliste anzeigen** , und geben Sie dann jedes Schlüsselwort in einer separaten Zeile um eine Suchabfrage zu erstellen, in dem die Keywords (oder Schlüsselwort Ausdrücke) in jeder Zeile über der **OR** -Operator verbunden. Wenn Sie nur eine Liste von Schlüsselwörtern in das Feld Stichwort einfügen oder drücken Sie **die EINGABETASTE** nach Eingabe eines Stichworts, werden nicht sie durch den **oder** -Operator verbunden werden. Hier sind falsch und richtig Beispiel für eine Liste der Schlüsselwörter hinzufügen. 
     
-    **Falsch**
+    **Falsche**
     
     ![Die falsche Möglichkeit, um ein Schlüsselwort Listenformat (von der Liste in das Feld Schlüsselwort einfügen)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   

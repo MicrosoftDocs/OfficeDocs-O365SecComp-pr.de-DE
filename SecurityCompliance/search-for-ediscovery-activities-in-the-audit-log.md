@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Erfahren Sie, wie das Überwachungsprotokoll Office 365 für Ereignisse zu suchen, die protokolliert werden, wenn Administratoren Compliance Inhaltssuche und eDiscovery Groß-/Kleinschreibung in das Wertpapier Aufgaben &amp; Compliance Center.
-ms.openlocfilehash: 24bd629f5576fe042e59d5cbbdecf01b3fd59cf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529555"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038348"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Suchen Sie nach eDiscovery-Aktivitäten im Überwachungsprotokoll Office 365
 

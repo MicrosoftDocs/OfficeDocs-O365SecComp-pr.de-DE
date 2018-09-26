@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Berichten über mehrere Content-Suche löschen
+title: Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,16 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Erfahren Sie, wie zum Automatisieren von Aufgaben wie erstellen Suchen und Ausführen von Berichten über PowerShell-Skripts in der Office 365-Sicherheit Inhaltssuche &amp; Compliance Center.
-ms.openlocfilehash: 2baa569c28ed5324e6674addeac688b854a65ed8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a32c003dfd9a27ea8c38b29b31001b612368bc4a
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529103"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038138"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen und Berichten über mehrere Content-Suche löschen
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen
 
  Schnell erstellen und reporting Discovery Suchvorgänge ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie über die zugrunde liegenden Daten, und der Umfang und die Qualität der Ihre Suchanfragen informieren möchten. Zur einfacheren dazu, die Sicherheit &amp; Compliance Center bietet eine Reihe von Windows PowerShell-Cmdlets zeitaufwendige Inhaltssuche Aufgaben automatisieren. Diese Skripts bieten eine schnelle und problemlose Möglichkeit, eine Reihe von Suchvorgänge erstellen, und führen Sie Berichte der geschätzten Suchergebnisse, die Ihnen bei der Bestimmung der Menge der betreffenden Daten helfen kann. Die Skripts können auch verschiedene Versionen von Suchvorgängen, die Ergebnisse verglichen werden soll, die jeweils erzeugt erstellen. Diese Skripts können Sie schnell und effizient zu identifizieren und ausgemerzte Ihrer Daten. 
   
@@ -35,7 +34,7 @@ ms.locfileid: "22529103"
     
 - Die Skripts enthalten minimale Fehlerbehandlung. Ihre primäre Zweck ist schnell erstellen, melden und mehrere Content-Suche löschen.
     
-- In diesem Thema bereitgestellten Beispielskripts werden unter keinem standard Support-Programm von Microsoft oder der Dienst nicht unterstützt. Die Beispielskripts werden wie besehen ohne jede Gewährleistung bereitgestellt. Microsoft schließt alle konkludente Garantien einschließlich, aber nicht beschränkt auf konkludente Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck. Das gesamte Risiko aus der Verwendung oder der Leistung der Beispielskripts und der Dokumentation liegt bei Ihnen. In keinem Fall muss Microsoft, seine Autoren oder ein Benutzer die Erstellung, Produktion oder Übermittlung der Skripts else beteiligt für Schäden jeglicher Art (einschließlich, aber nicht beschränkt auf Schäden für den Verlust von Gewinn Business, Business Unterbrechung, Verlust von Unternehmensinformationen, Folge- oder) aus der Verwendung des oder der Fehler beim Verwenden der Beispielskripts oder der Dokumentation, haftbar gemacht werden, auch wenn Microsoft die Möglichkeit solcher Schäden hingewiesen wurde.
+- Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Schritt 1: Erstellen einer CSV-Datei, die Informationen zu der Suchvorgänge, die Sie ausführen möchten, enthält
 

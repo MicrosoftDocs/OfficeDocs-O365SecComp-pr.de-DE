@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Hier erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche in die Office 365-Sicherheit vorbereiten &amp; Compliance Center zur weiteren Analyse mit dem erweiterten eDiscovery-Tool.
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530121"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038308"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
 
@@ -49,7 +47,7 @@ Nach einer Suche, die einem eDiscovery-Fall in die Office 365-Sicherheit zugeord
 
 Sie können die Ergebnisse einer Suche vorbereiten, die einem eDiscovery-Fall zugeordnet ist. Wenn Sie die Suchergebnisse für erweiterte eDiscovery vorbereiten, die Daten hochgeladen und vorübergehend in einem eindeutigen Windows Azure-Speicher-Bereich in der Microsoft-Cloud gespeichert. Zu diesem Zeitpunkt ist die OCR Funktionalität von Bildern in den Suchergebnissen Text extrahiert. In [Schritt2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), der Text und die anderen Suche Ergebnisdaten in zu der erweiterten eDiscovery-Fall geladen.
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, die Sie Suchergebnisse für die Analyse in erweiterten eDiscovery vorbereiten möchten **Öffnen** . 
     
@@ -82,11 +80,11 @@ Wenn die Vorbereitung abgeschlossen ist, besteht der nächste Schritt Erweiterte
 > [!NOTE]
 > Den Zeitaufwand für die Daten aus der Sicherheit &amp; Compliance Center hinzufügen zu einer erweiterten eDiscovery-Fall verfügbar variiert je nach der Größe der Ergebnisse aus der eDiscovery-Suche. 
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
 2. Klicken Sie neben die Groß-/Kleinschreibung, die Sie Daten in in erweiterten eDiscovery laden möchten **Öffnen** . 
     
-3. Klicken Sie auf **der Homepage für den Fall** **Erweiterte eDiscovery**auf. 
+3. Klicken Sie auf der Seite **Start** für den Fall auf **Advanced eDiscovery**. 
     
     ![Klicken Sie auf Wechseln zu erweiterten eDiscovery So öffnen Sie die Groß-/Kleinschreibung in erweiterten eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

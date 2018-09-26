@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Für Office 365, Azure und Dynamics 365 Online Einhaltung von Vorschriften-Berichte um herauszufinden, Drittanbieter-Überwachungen, erfahren Sie, wie Microsoft Kundendaten sicher sind und wie Sie können ISO, HIPAA, NIST, FINRA, GDPR und FedRAMP einhalten, wenn Sie diese online-Dienste verwenden.
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529293"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038218"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit Microsoft-Dienst als vertrauenswürdig-Portal
 
@@ -121,26 +122,26 @@ Administrative Funktionen, die sind nur für das Administratorkonto eines Mandan
   
 ### <a name="search"></a>Suche
 
-![Service Vertrauensstellung Portal - Feld Suche Eingabe](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Service Trust-Portal – Sucheingabefeld](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Klicken Sie auf das Lupensymbol in der oberen rechten Ecke der Seite vom Feld für die Suche zu erweitern, geben die Suchbegriffe aus, und drücken die EINGABETASTE. Das Search-Steuerelement angezeigt wird, mit den Suchbegriff in das Suchfeld input ein Bereich, und die Suchergebnisse unter angezeigt.
+Klicken Sie in der oberen rechten Ecke der Seite auf die Lupe, um das Sucheingabefeld zu erweitern, geben Sie Ihre Suchbegriffe ein, und drücken Sie die EINGABETASTE. Die Suchsteuerung wird mit dem Suchbegriff im Sucheingabefeld angezeigt; die Suchergebnisse werden darunter angezeigt.
   
-In der Standardeinstellung Suche gibt Dokument Ergebnisse zurück, und Sie die Dropdownlisten filtern nach zum Verfeinern der Liste der Dokumente angezeigt, zum Hinzufügen oder Entfernen von Suchergebnissen aus der Ansicht verwenden können. Mehrere FilterAttribute können zur selben Zeit Sie die zurückgegebenen Dokumente zu spezifischen Cloud Services, Kategorien von Compliance oder Sicherheitsmaßnahmen, Regionen der Welt oder Branchen einzuschränken. Klicken Sie auf den Link des Dokument zum Herunterladen des Dokuments.
+Standardmäßig gibt die Suche Dokumentergebnisse zurück, und Sie können die Dropdownlisten „Filtern nach“ verwenden, um die Liste der angezeigten Dokumente zu optimieren oder um Suchergebnisse zu der Ansicht hinzuzufügen oder daraus zu entfernen. Sie können mehrere Filterattribute gleichzeitig verwenden, um die zurückgegebenen Dokumente auf bestimmte Clouddienste, Kategorien von Compliance- oder Sicherheitspraktiken, Regionen oder Branchen einzugrenzen. Klicken Sie auf den Link für den Dokumentnamen, um das Dokument herunterzuladen.
   
-![Service Vertrauensstellung Portal - Suche auf Dokumente mit angewendetem filter](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal – Suchen in Dokumenten mit angewendetem Filter](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Klicken Sie auf den Link Compliance Manager, um die Anzeige von Suchergebnissen für Compliance Manager Assessment Steuerelemente. Die aufgeführten Suchergebnisse anzeigen dem Datum die Bewertung erstellt wurde, wird der Name der Bewertung gruppieren, die entsprechenden Cloud-Dienst, und gibt an, ob die Steuerelemente von Microsoft oder Kunden verwaltet werden.
   
-![Dienst Vertrauensstellung Portal - Suche auf Compliance Manager-Steuerelemente](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal – Suchen in Compliance-Manager-Steuerelementen](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Dienst vertrauen Portal-Berichte und Dokumente stehen zum Herunterladen für mindestens 12 Monate nach dem Veröffentlichen oder bis eine neue Version des Dokuments verfügbar ist. 
+> Service Trust Portal-Berichte und -Dokumente können nun für mindestens 12 Monate nach ihrer Veröffentlichung oder bis eine neue Dokumentversion verfügbar wird, heruntergeladen werden. 
   
 ## <a name="localization-support"></a>Unterstützung der Lokalisierung
 
-Dienstportal vertrauen können Sie den Inhalt in verschiedenen Sprachen anzeigen. Um die Seitensprache zu ändern, klicken Sie auf das Globussymbol in der unteren linken Ecke der Seite auf und wählen Sie die Sprache Ihrer Wahl. 
+Im Service Trust Portal können Sie Seiteninhalte in unterschiedlichen Sprachen anzeigen. Um die Seitensprache zu ändern, klicken Sie einfach auf das Weltkugelsymbol in der Ecke links unten, und wählen Sie die gewünschte Sprache aus. 
   
-![Trust-Dienstportal - lokalisiert Optionen für den Seiteninhalt](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal – Optionen für lokalisierte Inhalte](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Feedback
 
