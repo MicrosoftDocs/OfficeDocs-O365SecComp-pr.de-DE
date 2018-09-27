@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: 03fb0b62d37dc628241a1108b4b256290c23509b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529359"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092941"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -32,7 +32,7 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
 3. [Erfahren Sie mehr über Richtlinienoptionen ATP sichere Anlagen](#learn-about-atp-safe-attachments-policy-options)
     
-## <a name="review-the-prerequisites"></a>Überprüfen Sie die erforderlichen Komponenten
+## <a name="step-1-review-the-prerequisites"></a>Schritt 1: Überprüfen der erforderlichen Komponenten
 
 - Stellen Sie sicher, dass Ihre Organisation [Office 365 erweiterte Schutz](office-365-atp.md)verfügt.
     
@@ -42,9 +42,10 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
 - Können Sie bis zu 30 Minuten für die neue oder aktualisierte Richtlinie in allen Office 365-Rechenzentren verteilen.
     
-## <a name="set-up-an-atp-safe-attachments-policy"></a>Richten Sie eine Richtlinie ATP sichere Anlagen
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: Einrichten eine Richtlinie für den sicheren Anlagen ATP (oder bearbeiten)
 
-Sie können eine sichere Anlagen ATP-Richtlinie mit einer Einrichten der Office 365-Sicherheit &amp; Compliance Center oder die Exchange-Verwaltungskonsole (EAC). **Wir empfehlen die Verwendung der Office 365-Sicherheit &amp; Compliance Center**. 
+> [!TIP]
+> Sie können eine sichere Anlagen ATP-Richtlinie mit einer Einrichten der Office 365-Sicherheit &amp; Compliance Center oder die Exchange-Verwaltungskonsole (EAC). **Wir empfehlen die Verwendung der Office 365-Sicherheit &amp; Compliance Center**. 
   
 1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -58,27 +59,27 @@ Sie können eine sichere Anlagen ATP-Richtlinie mit einer Einrichten der Office 
     
     **Beispiel:** Um eine Richtlinie namens "keine Verzögerungen" eingerichtet, die alle Nachrichten sofort übermittelt und Anlagen dann überwacht werden, nachdem sie überprüft haben, können Sie die folgenden Einstellungen angeben: 
     
-  - Geben Sie im Feld **Name** keine verzögert.
+      - Geben Sie im Feld **Name** keine verzögert.
     
-  - Geben Sie im Feld **Beschreibung** eine Beschreibung wie sofort bietet Nachrichten und Anlagen überwacht nach der Überprüfung.
+      - Geben Sie im Feld **Beschreibung** eine Beschreibung wie sofort bietet Nachrichten und Anlagen überwacht nach der Überprüfung.
     
-  - Wählen Sie im Abschnitt Antwort **Dynamische Übermittlung** . ([Weitere Informationen über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md)).
+      - Wählen Sie im Abschnitt Antwort **Dynamische Übermittlung** . ([Weitere Informationen über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md)).
     
-  - Wählen Sie die Option zum Umleiten aktivieren, und geben Sie die e-Mail-Adresse des Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Analyst, die bösartige Anlagen untersuchen, klicken Sie im Abschnitt **Anlage umleiten** . 
+      - Wählen Sie die Option zum Umleiten aktivieren, und geben Sie die e-Mail-Adresse des Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Analyst, die bösartige Anlagen untersuchen, klicken Sie im Abschnitt **Anlage umleiten** . 
     
-  - **Angewendet auf** Sie im Abschnitt wählen Sie **die Domäne des Empfängers ist**, und wählen Sie dann Ihre Domäne aus. Wählen Sie **Hinzufügen**, und wählen Sie dann auf **OK**.
+      - **Angewendet auf** Sie im Abschnitt wählen Sie **die Domäne des Empfängers ist**, und wählen Sie dann Ihre Domäne aus. Wählen Sie **Hinzufügen**, und wählen Sie dann auf **OK**.
     
 6. Wählen Sie **Speichern**.
     
 Verwenden Sie nach Möglichkeit mehrere sichere Anlagen ATP-Richtlinien für Ihre Organisation. Diese Richtlinien werden in der Reihenfolge angewendet werden, die sie auf der Seite **ATP sichere Anlagen** aufgeführt werden. Nachdem eine Richtlinie definiert oder bearbeitet wurde, können Sie mindestens 30 Minuten für die Richtlinien in der gesamten Microsoft-Rechenzentren wirksam wird. 
   
-## <a name="learn-about-atp-safe-attachments-policy-options"></a>Erfahren Sie mehr über Richtlinienoptionen ATP sichere Anlagen
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Schritt 3: Informationen Sie zu Richtlinienoptionen ATP sichere Anlagen
 
 Wie Sie Ihre Richtlinien ATP sichere Anlagen eingerichtet haben, wählen Sie ein Gerät viele Optionen, einschließlich Monitor, blockieren, ersetzen, dynamische Übermittlung und So weiter. Für den Fall, dass Sie wissen möchten, wie Sie, diese Optionen vorgehen, die in der folgenden Tabelle werden alle zusammengefasst und ihre Auswirkung.
   
 |**Option**|**Effekt**|**Wird verwendet, wenn Sie möchten:**|
 |:-----|:-----|:-----|
-|**Off** <br/> |Anlagen für Malware überprüft nicht  <br/> Nachrichtenübermittlung werden nicht verzögert.  <br/> |Deaktivieren Sie Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur ordnungsgemäßen Anlagen senden  <br/> Verhindern, dass unnötige Verzögerungen bei der internen e-Mail-Routings  <br/> > [!IMPORTANT]> Diese Option ist nicht für die meisten Benutzer empfohlen. Sie können Sie deaktivieren ATP sichere Anlagen scannen für eine kleine Gruppe von internen Absendern.           |
+|**Off** <br/> |Anlagen für Malware überprüft nicht  <br/> Nachrichtenübermittlung werden nicht verzögert.  <br/> |Deaktivieren Sie Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur ordnungsgemäßen Anlagen senden  <br/> Verhindern, dass unnötige Verzögerungen bei der internen e-Mail-Routings  <br/> **Diese Option ist nicht für die meisten Benutzer empfohlen. Sie können Sie deaktivieren ATP sichere Anlagen scannen für eine kleine Gruppe von internen Absendern.**           |
 |**Monitor** <br/> |Übermittelt Nachrichten mit Anlagen, und klicken Sie dann verfolgt was passiert, mit erkannte Schadsoftware  <br/> |Finden Sie unter erkannte Schadsoftware in Ihrer Organisation, auf dem wechselt  <br/> |
 |**Blockieren** <br/> |Verhindert, dass Nachrichten mit Anlagen aus fortfahren erkannte Schadsoftware  <br/> Sendet Nachrichten mit erkannte Schadsoftware in [Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in dem ein Sicherheitsadministrator oder Analyst überprüfen und release (diese Nachrichten oder löschen kann)  <br/> Zukünftige Nachrichten und Anlagen blockiert automatisch  <br/> |Schützen der Organisation wiederholte Angriffe mit der gleichen Malware Anlagen  <br/> |
 |**Ersetzen** <br/> |Entfernt Anlagen Schadsoftware erkannt  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden  <br/> Sendet Nachrichten mit erkannte Schadsoftware in [Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in dem ein Sicherheitsadministrator oder Analyst überprüfen und release (diese Nachrichten oder löschen kann)  <br/> |Auslösen der Sichtbarkeit an Empfänger, dass Anlagen aufgrund gefundene Malware entfernt wurden  <br/> |
