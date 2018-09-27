@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Erfahren Sie, wie erkennen und reagieren auf eine kompromittierten e-Mail-Konto in Office 365
-ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977590"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341420"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
@@ -72,7 +72,7 @@ Sie müssen alle folgenden Schritte aus, um Zugriff auf Ihr Konto wieder zu übe
 - Wenn Ihre lokalen Identität mit Office 365 im Verbund befindet, müssen Sie Ihre lokalen Kennwort ändern, und klicken Sie dann müssen Sie den Administrator der Gefährdung benachrichtigen.
 
 > [!TIP]
-> Es wird dringend empfohlen, Multi-Factor Authentication (mehrstufiger Authentifizierung das), um zu verhindern, dass Kompromiss, insbesondere für Konten mit Administratorrechte zu aktivieren.  Erfahren Sie mehr [hier](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> Es wird dringend empfohlen, Multi-Factor Authentication (mehrstufiger Authentifizierung das), um zu verhindern, dass Kompromiss, insbesondere für Konten mit Administratorrechten zu aktivieren.  Erfahren Sie mehr [hier](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2 Remove verdächtigen e-Mail-Weiterleitung-Adressen
 1. Öffnen der **Office 365 Admin Center > aktive Benutzer**.
