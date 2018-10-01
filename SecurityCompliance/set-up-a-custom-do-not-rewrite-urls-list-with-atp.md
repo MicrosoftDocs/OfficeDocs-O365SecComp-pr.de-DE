@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Beim Einrichten Ihrer ATP sichere Links Richtlinien können Sie eine Not Rewrite einschließen ' Liste der URLs zum Aktivieren von einigen Personen in Ihrer Organisation Websites besuchen, die Sie in der Liste enthalten.
-ms.openlocfilehash: 0ee9c87c90e6e30d6c43fb0de5291dd85b03be07
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782162"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353261"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte-nicht-zum Umschreiben von Adressen URLs-Liste mit sicheren Links zu Office 365 ATP
 
@@ -52,9 +52,9 @@ Sichere Links ATP Protection verwendet mehrere Listen, einschließlich der Liste
 
 - Alle URLs, die Sie in der Liste "nicht rewrite" angeben, werden von ATP sichere Links Scan für die Empfänger die Angabe ausgeschlossen.
  
-- Wenn Sie eine Liste "nicht rewrite" für eine sichere Links ATP Richtlinie angeben, können Sie bis zu drei Platzhalter Sternchen einschließen (\*). Platzhalter (\*) wird angenommen, dass für Einträge wie `contoso.com`, die nicht explizit einschließen Präfixe oder Unterdomänen, wie `http://` oder `https://`. Dies bedeutet, dass einen Eintrag wie `contoso.com` ähnelt `\*contoso.com\*` für die Liste "nicht rewrite".
+- Wenn Sie eine Liste "nicht rewrite" für eine sichere Links ATP Richtlinie angeben, können Sie bis zu drei Platzhalter Sternchen einschließen (\*). Platzhalter (\*) wird angenommen, dass für Einträge wie `contoso.com`, die nicht explizit einschließen Präfixe oder Unterdomänen, wie `http://` oder `https://`. Dies bedeutet, dass einen Eintrag wie `contoso.com` ähnelt `*contoso.com*` für die Liste "nicht rewrite".
 
-- Wenn Sie bereits eine Liste mit URLs in der Liste "nicht rewrite" verfügen, stellen Sie sicher, überprüfen Sie die Liste und Hinzufügen von Platzhaltern nach Bedarf. Beispielsweise, wenn Ihre vorhandene Liste hat ein Eintrag wie `http://contoso.com/a` und Pfade wie sollen `http://contoso.com/a/b` fügen Sie einen Platzhalter in der Richtlinie den Eintrag, sodass es aussieht `http://contoso.com/a\*`.
+- Wenn Sie bereits eine Liste mit URLs in der Liste "nicht rewrite" verfügen, stellen Sie sicher, überprüfen Sie die Liste und Hinzufügen von Platzhaltern nach Bedarf. Beispielsweise, wenn Ihre vorhandene Liste hat ein Eintrag wie `http://contoso.com/a` und Pfade wie sollen `http://contoso.com/a/b` fügen Sie einen Platzhalter in der Richtlinie den Eintrag, sodass es aussieht `http://contoso.com/a*`.
     
 - Schließen Sie einen Schrägstrich (/) nicht in den URLs, die Sie in der Liste "nicht rewrite" angeben. Beispielsweise geben, sondern `contoso.com/` Geben Sie in der Liste "nicht rewrite" `contoso.com`.
     
@@ -62,9 +62,9 @@ Die folgende Tabelle Listen Beispiele für die Eingabe und Einfluss auf diese Ei
     
 |**Beispieleintrag**|**Sinn und Zweck**|
 |:-----|:-----|
-|`\*contoso.com\*`  <br/> |Können bestimmte Empfänger eine Domäne, untergeordnete Domänen und Pfade, z. B. Besuchen `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, oder`http://www.contoso.com/a`  <br/> |
+|`*contoso.com*`  <br/> |Können bestimmte Empfänger eine Domäne, untergeordnete Domänen und Pfade, z. B. Besuchen `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, oder`http://www.contoso.com/a`  <br/> |
 |`http://contoso.com/a`  <br/> |Können bestimmte Empfänger eine Website wie `http://contoso.com/a`, aber nicht Pfade`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Können bestimmte Empfänger eine Website wie `http://contoso.com/a` und Pfade wie`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Können bestimmte Empfänger eine Website wie `http://contoso.com/a` und Pfade wie`http://contoso.com/a/b`  <br/> |
    
   
 
