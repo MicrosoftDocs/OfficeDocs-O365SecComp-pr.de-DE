@@ -3,7 +3,7 @@ title: Aktivieren der Postfachüberwachung in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/19/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: In Office 365 können Sie Protokollierung zum Protokollieren von Postfachzugriff durch Postfachbesitzer, Stellvertretungen und Administratoren Postfach aktivieren. Standardmäßig ist nicht Überwachung von Postfächern in Office 365 aktiviert. Nachdem Sie die postfachüberwachungsprotokollierung für ein Postfach aktiviert haben, können Sie das Office 365-Überwachungsprotokoll für Aktivitäten, die ausgeführt werden, für das Postfach suchen.
-ms.openlocfilehash: a31a96c8c5c65965746a3a31bc924731289795f0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529277"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358384"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Aktivieren der Postfachüberwachung in Office 365
   
@@ -129,14 +129,14 @@ In der folgenden Tabelle sind die Aktionen aufgelistet, die vom Postfach protoko
 |:-----|:-----|:-----|:-----|:-----|
 |**Kopieren** <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |Ja  <br/> |Nein  <br/> |Nein  <br/> |
 |**Erstellen** <br/> |Ein Element wird in den Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht wird nicht überwacht. Erstellen einen Postfachordner wird auch nicht überwacht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
-|**"Folderbind"** <br/> |Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.  <br/> |Ja\*  <br/> |Ja\*\*  <br/> |Nr.  <br/> |
+|**"Folderbind"** <br/> |Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.  <br/> |Ja  <br/> |Ja\*\*  <br/> |Nr.  <br/> |
 |**HardDelete** <br/> |Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
 |**MailboxLogin** <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |
 |**"Messagebind"** <br/> |Eine Nachricht wurde im Vorschaufenster angezeigt oder geöffnet.  <br/> |Ja  <br/> |Nein  <br/> |Nein  <br/> |
-|**Verschieben** <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |Ja\*  <br/> |Ja  <br/> |Ja  <br/> |
-|**MoveToDeletedItems** <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |Ja\*  <br/> |Ja  <br/> |Ja  <br/> |
+|**Verschieben** <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |Ja  <br/> |Ja  <br/> |Ja  <br/> |
+|**MoveToDeletedItems** <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
 |**"SendAs"** <br/> |Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Nein  <br/> |
-|**Sendonbehalf werden standardmäßig** <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |Ja\*  <br/> |Ja  <br/> |Nein  <br/> |
+|**Sendonbehalf werden standardmäßig** <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Nein  <br/> |
 |**SoftDelete** <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
 |**Aktualisieren** <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
 |**UpdateCalendarDelegation** <br/> |Eine kalenderdelegierung wurde eines Postfachs zugewiesen. Kalenderdelegierung ermöglicht eine andere Person in der gleichen Organisationsberechtigungen zum Verwalten des Postfachbesitzers Kalenders.  <br/> |Ja\*  <br/> |Nein  <br/> |Ja\*  <br/> |
@@ -144,7 +144,7 @@ In der folgenden Tabelle sind die Aktionen aufgelistet, die vom Postfach protoko
 |**UpdateInboxRules** <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. Posteingangsregeln dienen zum Verarbeiten von Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen und Aktionen, wenn die Bedingung einer Regel erfüllt sind, wie eine Nachricht in einen bestimmten Ordner verschieben oder Löschen einer Nachricht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Wird standardmäßig überwacht, wenn die Überwachung für ein Postfach aktiviert ist. > <sup> \* </sup> Einträge für Ordner binden Aktionen, die von Stellvertretern werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb des Zeitraums von 24 Stunden wird ein Protokolleintrag generiert. > <sup> \* \* </sup> Ein Administrator die Berechtigung "Vollzugriff" des Postfachs eines Benutzers zugewiesen wurde, wird ein Stellvertreter betrachtet. 
+> <sup>\*</sup>Wird standardmäßig überwacht, wenn die Überwachung für ein Postfach aktiviert ist.<br/><br/>  <sup>\*\*</sup>Einträge für Ordner binden Aktionen, die von Stellvertretern werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb des Zeitraums von 24 Stunden wird ein Protokolleintrag generiert.<br/><br/><sup>\*\*\*</sup>Ein Administrator die Berechtigung "Vollzugriff" des Postfachs eines Benutzers zugewiesen wurde, wird ein Stellvertreter betrachtet. 
   
 Wenn Sie bestimmte Arten von zu überwachenden Postfach Aktionen nicht mehr benötigen, sollten Sie das Postfach Protokollierung Überwachungskonfiguration, um diese Aktionen deaktivieren ändern. Vorhandene Protokolleinträge werden nicht gelöscht, bis die Verfallszeit auf 90 Tage nach Überwachungsprotokolleinträgen erreicht wird.
   
