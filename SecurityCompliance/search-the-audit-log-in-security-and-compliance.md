@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974685"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363148"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
 
@@ -50,9 +50,9 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
 
 - Benutzer- und Admin Aktivität in Dynamics 365
     
-- Benutzer- und Admin-Aktivität in Microsoft Flow
-
 - Benutzer- und Admin Aktivität in Yammer
+ 
+- Benutzer- und Admin-Aktivität in Microsoft Flow
     
 - Benutzer- und Admin-Aktivität in Microsoft Stream
     
@@ -71,6 +71,15 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     > [!IMPORTANT]
     > Wenn Sie einem Benutzer die Rolle Kontaktobjekts überwachen Protokolle oder Protokolle überwachen auf der Seite **Berechtigungen** in das Wertpapier zuweisen &amp; Compliance Center, sie nicht möglich, das Office 365-Überwachungsprotokoll durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuzuweisen. Dies ist, da das zugrunde liegende-Cmdlet verwendet, um das Überwachungsprotokoll durchsuchen Exchange Online-Cmdlet ist. 
   
+- Wenn eine überwachte Aktivität durch einen Benutzer oder Administrator ausgeführt wird, ein Audit-Datensatz erstellt und im Überwachungsprotokoll Office 365 für Ihre Organisation gespeichert. Die Zeitdauer, die ein Datensatz Audit aufbewahrt werden (und in das Überwachungsprotokoll durchsuchbar) ist, hängt von Ihrer Office 365-Abonnement ab.
+
+     - **Office 365 E3** - Audit Datensätze 90 Tage lang aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb der letzten 90 Tage durchgeführt wurden.
+
+     - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb des letzten Jahres ausgeführt wurden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Organisationen, die ein Abonnement E3 und ein Office 365 erweiterte Compliance Add-on-Abonnement verfügen verfügbar.
+
+        > [!NOTE]
+        > Die einjährige Aufbewahrungsdauer für Überwachungseinträge ist derzeit als Teil der Office 365 Preview Programmieren und ist nur verfügbar für Organisationen mit einem Abonnement E5, die in der Vorschau-Anwendung registriert sind. Darüber hinaus audit-Datensätze für Aktivitäten, die ausgeführt wurden, bevor Oktober 2018 weiterhin nur 90 Tage lang aufbewahrt werden. Starten im Oktober 2018, neue Audit Datensätze beibehalten ein Jahr für Organisationen mit einem Abonnement E5 oder für die ein Abonnement E3 und ein Add-on-Abonnement, erweiterte Compliance.
+
 - Wenn Sie die Audit Log-Suche in Office 365 für Ihre Organisation zu deaktivieren möchten, können Sie den folgenden Befehl in remote-PowerShell mit Ihrer Exchange Online-Organisation verbunden ausführen:
     
   ```
@@ -88,8 +97,6 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
 - Wie bereits zuvor erwähnt ist das zugrunde liegende-Cmdlet verwendet, um das Überwachungsprotokoll Durchsuchen einer Exchange Online-Cmdlet **Search-UnifiedAuditLog**. Verwenden Sie dieses Cmdlet, um das Office 365-Überwachungsprotokoll statt der Seite **Protokoll Such-** in das Wertpapier durchsuchen bedeutet &amp; Compliance Center. Sie müssen zum Ausführen dieses Cmdlet in remote-PowerShell mit Ihrer Exchange Online-Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Wenn Sie Daten aus dem Office 365-Überwachungsprotokoll programmgesteuert herunterladen möchten, sollten Sie die Office 365-Verwaltungs-Aktivität API statt eines PowerShell-Skripts verwenden. Die Office 365-Verwaltungs-Aktivität-API ist eine REST-Webdienst, den Sie zum Entwickeln von Operationen, Sicherheit und Compliance-monitoring-Lösungen für Ihre Organisation verwenden können. Weitere Informationen finden Sie unter [Office 365 Management Aktivität-API-Referenz](https://go.microsoft.com/fwlink/?linkid=852309).
-    
-- Sie können das Office 365-Überwachungsprotokoll für Aktivitäten suchen, die innerhalb der letzten 90 Tage durchgeführt wurden.
     
 - Es kann bis zu 30 Minuten dauern oder von 24 Stunden nach Ereignis tritt ein, die der entsprechenden Überwachungsprotokolleintrag in den Suchergebnissen angezeigt werden. Die folgende Tabelle zeigt den Zeitaufwand für die verschiedenen Dienste in Office 365.
     
@@ -110,7 +117,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
 |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
@@ -287,7 +294,8 @@ Klicken Sie auf eine der folgenden Links, um zu einer bestimmten Tabelle zu wech
 |[Sway Aktivitäten](#sway-activities) <br/> |[Die Verwaltung Benutzeraktivitäten](#user-administration-activities) <br/> |[Azure Active Directory-Gruppe Administration Aktivitäten](#azure-ad-group-administration-activities) <br/> |
 |[Anwendung Administration Aktivitäten](#application-administration-activities) <br/> |[Rolle Administration Aktivitäten](#role-administration-activities) <br/> |[Directory Administration Aktivitäten](#directory-administration-activities) <br/> |
 |[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft-Teams, Aktivitäten](#microsoft-teams-activities) <br/> |
-|[Yammer-Aktivitäten](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Exchange-Administrator-Überwachungsprotokoll](#exchange-admin-audit-log) <br/> |
+|[Yammer-Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Exchange-Administrator-Überwachungsprotokoll](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>Datei und Seite Aktivitäten
@@ -640,6 +648,11 @@ Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Akti
 |Aktualisierter Dateiname  <br/> |FileUpdateName  <br/> |Benutzer ändert den Namen einer Datei.  <br/> |
 |Angezeigten Datei  <br/> |FileVisited  <br/> |Benutzer zeigt eine Datei.  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+Sie können das Überwachungsprotokoll Aktivitäten in Microsoft Flow suchen. Hierzu zählen erstellen, bearbeiten und Löschen von fließt und Ändern der Berechtigungen für den Nachrichtenfluss. Informationen zur Überwachung für Workflowaktivitäten finden Sie im Blogbeitrag [Microsoft Fluss Überwachen von Ereignissen, die nun in Office 365-Sicherheit und Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 Sie können das Überwachungsprotokoll Aktivitäten in Microsoft Stream suchen. Hierzu zählen video Aktivitäten von Benutzer, Gruppe Channel Aktivitäten und Admin Aktivitäten wie Verwalten von Benutzern, Verwalten von Einstellungen der Organisation und Exportieren von Berichten. Eine Beschreibung dieser Aktivitäten finden Sie im Abschnitt "Aktivitäten protokolliert in Stream Microsoft" in [Überwachungsprotokollen in Microsoft Stream-Objekt](https://docs.microsoft.com/stream/audit-logs).
@@ -678,9 +691,16 @@ Siehe Abschnitt [Löschvorgänge Aktivitäten](#audited-activities) in diesem Ar
 
 Die meisten Überwachung von Daten innerhalb von 30 Minuten ist verfügbar, aber nach dem Auftreten eines Ereignisses für das entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt werden bis zu 24 Stunden dauern. Finden Sie in der Tabelle im Abschnitt [vor Beginn](#before-you-begin) dieses Artikels, die die Zeit anzeigt, die für Ereignisse in den verschiedenen Office 365-Diensten benötigt verfügbar sein soll.
 
-**Wie lange sind die Überwachung Datensätze aufbewahrt werden?**
+**Wie lange werden für das Überwachungsprotokoll Datensätze beibehalten?**
 
-Derzeit sind Überwachungsprotokolldatensätze 90 Tage lang aufbewahrt. Microsoft arbeitet aktiv an einen Plan für diesen Wert erhöhen. 
+Wie bereits erklärt hängt von der Aufbewahrungszeitraum für Audit Datensätze Office 365-Abonnement Ihrer Organisation.  
+
+- **Office 365 E3** - Audit Datensätze 90 Tage lang aufbewahrt werden.
+
+- **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Organisationen, die ein Abonnement E3 und ein Office 365 erweiterte Compliance Add-on-Abonnement verfügen verfügbar.
+
+     > [!NOTE]
+     > Die einjährige Aufbewahrungsdauer für Audit Datensätze steht derzeit nur für Organisationen, die in der Office 365 Preview-Anwendung registriert sind.
 
 **Kann ich die Überwachung von Daten programmgesteuert zugreifen?**
 
