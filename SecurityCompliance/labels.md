@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Bezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Bezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Bezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 5507b694dc0c4655649a20c179ac2c49ce4a2ec9
+ms.sourcegitcommit: aa12f19b901d910e92e202d4e703aa2c31736bdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25342813"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25362780"
 ---
 # <a name="overview-of-labels"></a>Übersicht über Bezeichnungen
 
@@ -267,28 +267,15 @@ Nach der Auswahl einer Richtlinienvorlage können Sie alle Arten von vertraulich
     
 ![Optionen zum Identifizieren von Typen vertraulicher Informationen](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mit Stichwörtern oder durchsuchbare Eigenschaften
+### <a name="auto-apply-labels-to-content-with-keywords"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mit Stichwörtern
 
-Sie können automatische Bezeichnungen auf Inhalte anwenden, die bestimmte Kriterien erfüllen. Die derzeit verfügbaren Bedingungen unterstützen das Anwenden einer Bezeichnung auf Inhalte, die bestimmte Wörter, Ausdrücke oder durchsuchbare Eigenschaften enthalten. Sie können Ihre Abfrage mithilfe von Suchoperatoren wie UND, ODER und NICHT verfeinern. 
+Sie können automatische Bezeichnungen auf Inhalte anwenden, die bestimmte Kriterien erfüllen. Die derzeit verfügbaren Bedingungen unterstützen das Anwenden einer Bezeichnung auf Inhalte, die bestimmte Wörter oder Ausdrücke enthalten. Sie können Ihre Abfrage mithilfe von Suchoperatoren wie UND, ODER und NICHT verfeinern. 
 
 Weitere Informationen zur Abfragesyntax finden Sie unter:
 
 - [Syntaxreferenz für die Keyword Query Language (KQL)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-Abfragebasierte Bezeichnungen verwenden den Suchindex zum Identifizieren von Inhalten. Weitere Informationen zu gültigen durchsuchbaren Eigenschaften finden Sie unter:
-
-- [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
-- [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint Server](https://docs.microsoft.com/de-DE/SharePoint/technical-reference/crawled-and-managed-properties-overview)
-  
-Beispiele für Abfragen:
-
-- Exchange
-    - Betreff: „Vierteljährliche Finanzdaten“
-    - recipients:garthf<!--nolink-->@contoso.com
-
-- SharePoint und OneDrive for Business
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+Abfragebasierte Bezeichnungen verwenden den Suchindex, um Inhalte zu identifizieren.
   
 ![Abfrage-Editor](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
