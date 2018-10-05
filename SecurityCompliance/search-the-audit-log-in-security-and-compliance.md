@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. '
-ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
-ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
+ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "25363148"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435122"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
 
@@ -71,14 +71,14 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     > [!IMPORTANT]
     > Wenn Sie einem Benutzer die Rolle Kontaktobjekts überwachen Protokolle oder Protokolle überwachen auf der Seite **Berechtigungen** in das Wertpapier zuweisen &amp; Compliance Center, sie nicht möglich, das Office 365-Überwachungsprotokoll durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuzuweisen. Dies ist, da das zugrunde liegende-Cmdlet verwendet, um das Überwachungsprotokoll durchsuchen Exchange Online-Cmdlet ist. 
   
-- Wenn eine überwachte Aktivität durch einen Benutzer oder Administrator ausgeführt wird, ein Audit-Datensatz erstellt und im Überwachungsprotokoll Office 365 für Ihre Organisation gespeichert. Die Zeitdauer, die ein Datensatz Audit aufbewahrt werden (und in das Überwachungsprotokoll durchsuchbar) ist, hängt von Ihrer Office 365-Abonnement ab.
+- Wenn eine überwachte Aktivität durch einen Benutzer oder Administrator ausgeführt wird, ein Audit-Datensatz erstellt und im Überwachungsprotokoll Office 365 für Ihre Organisation gespeichert. Die Zeitdauer, die ein Datensatz Audit aufbewahrt werden (und in das Überwachungsprotokoll durchsuchbar) ist, hängt davon ab Ihres Office 365-Abonnements und ausdrücklich den Typ der Lizenz, die das einen bestimmten Benutzer zugeordnet ist.
 
      - **Office 365 E3** - Audit Datensätze 90 Tage lang aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb der letzten 90 Tage durchgeführt wurden.
 
-     - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb des letzten Jahres ausgeführt wurden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Organisationen, die ein Abonnement E3 und ein Office 365 erweiterte Compliance Add-on-Abonnement verfügen verfügbar.
+     - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb des letzten Jahres ausgeführt wurden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Benutzer, die eine E3/Exchange Online – Plan 1-Lizenz zugewiesen sind, und haben eine zusätzliche Lizenz für Office 365 erweiterte Compliance verfügbar.
 
         > [!NOTE]
-        > Die einjährige Aufbewahrungsdauer für Überwachungseinträge ist derzeit als Teil der Office 365 Preview Programmieren und ist nur verfügbar für Organisationen mit einem Abonnement E5, die in der Vorschau-Anwendung registriert sind. Darüber hinaus audit-Datensätze für Aktivitäten, die ausgeführt wurden, bevor Oktober 2018 weiterhin nur 90 Tage lang aufbewahrt werden. Starten im Oktober 2018, neue Audit Datensätze beibehalten ein Jahr für Organisationen mit einem Abonnement E5 oder für die ein Abonnement E3 und ein Add-on-Abonnement, erweiterte Compliance.
+        > Die einjährige Aufbewahrungsdauer für Audit Datensätze verfügbar sein werden bald als Bestandteil der Office 365 Preview programmieren, und wird nur für Organisationen verfügbar registriert in der Vorschau-Anwendung. Wenn längere Aufbewahrungsdauer für Audit-Datensätze in der Vorschau (und höher für allgemeine Verfügbarkeit) verfügbar ist, werden nur neuen Überwachungseinträge (für Aktivitäten ausgeführt, nachdem die längere Aufbewahrungsdauer losgelassen wird) für ein Jahr aufbewahrt werden.
 
 - Wenn Sie die Audit Log-Suche in Office 365 für Ihre Organisation zu deaktivieren möchten, können Sie den folgenden Befehl in remote-PowerShell mit Ihrer Exchange Online-Organisation verbunden ausführen:
     
@@ -117,7 +117,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
 |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
@@ -700,7 +700,9 @@ Wie bereits erklärt hängt von der Aufbewahrungszeitraum für Audit Datensätze
 - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Organisationen, die ein Abonnement E3 und ein Office 365 erweiterte Compliance Add-on-Abonnement verfügen verfügbar.
 
      > [!NOTE]
-     > Die einjährige Aufbewahrungsdauer für Audit Datensätze steht derzeit nur für Organisationen, die in der Office 365 Preview-Anwendung registriert sind.
+     > Die einjährige Aufbewahrungsdauer für Audit Datensätze in Organisationen verfügbar in Kürze, die in der Office 365 Preview-Anwendung registriert sind.
+
+Beachten Sie außerdem, dass die Dauer des Aufbewahrungszeitraums für Audit Datensätze auf Benutzerebene Lizenzierung basiert. Beispielsweise wenn ein Benutzer in Ihrer Organisation eine Lizenz für Office 365 E3 zugewiesen ist, werden dann die Überwachungseinträge für Aktivitäten, die ausgeführt werden, die von diesem Benutzer 90 Tage lang aufbewahrt. Wenn ein anderer Benutzer eine Lizenz für Office 365 E5 zugewiesen ist, werden ihre Überwachungseinträge für ein Jahr beibehalten. 
 
 **Kann ich die Überwachung von Daten programmgesteuert zugreifen?**
 
