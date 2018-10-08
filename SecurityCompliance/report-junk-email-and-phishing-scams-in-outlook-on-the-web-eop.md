@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook auf dem Web-Benutzer können mithilfe von integrierten e-Mail Berichtsoptionen Junk (Spam) und Phishing-Mails melden. Sie können auch Microsoft erkennen, ob eine e-Mail-Nachricht als Junk (Spam) nicht richtig erkannt wurde.
-ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d495f5648d4e4ac7ee7335d58a4268bdfecb6109
+ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972297"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "25450070"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-e-Mails und Phishing Betrug in Outlook im Web 
 
@@ -59,6 +59,8 @@ Wenn eine Nachricht von Office 365 fälschlicherweise als Junk eingestuft wird, 
 ## <a name="for-more-information"></a>Weitere Informationen
 
 [Weitere Informationen zu Junk-E-Mails und Phishing](https://go.microsoft.com/fwlink/p/?LinkId=270068)
+
+[Add-In „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 
