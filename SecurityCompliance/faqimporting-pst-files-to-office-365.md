@@ -3,7 +3,7 @@ title: Häufig gestellte Fragen zum Importieren von PST-Dateien in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/3/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: 'Häufig gestellte Fragen für Administratoren zur Verwendung von Office 365 importieren-Dienst zum Erstellen vorhanden ist, wird Ihre von PST-Dateien in Office 365-Postfächer zu importieren. '
-ms.openlocfilehash: 35080106f92b38e944ba31f74d5564e65ba1f752
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7230e68f896766df643f12b2a132f987670e9afa
+ms.sourcegitcommit: eecf6f3aafbf460ee2ff9988f2b055e62b1fdb9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530129"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454052"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien in Office 365
 
@@ -39,7 +39,7 @@ Darüber hinaus Import erstellen Aufträge in der Office 365-Sicherheit &amp; Co
   
 - Sie müssen die Rolle des E-Mail-Empfänger in Exchange Online zugewiesen werden. Standardmäßig wird diese Rolle der Organization Management und Recipient Management Rollen Gruppen zugewiesen.
     
-    oder -
+    Oder
     
 - Sie müssen ein globaler Administrator in Office 365-Organisation sein.
     
@@ -48,7 +48,7 @@ Darüber hinaus Import erstellen Aufträge in der Office 365-Sicherheit &amp; Co
   
  **Wo ist die Netzwerk-Upload verfügbar?**
   
-Netzwerk-Upload ist in den USA, Kanada, Brasilien, die Großbritannien, Europa, Indien, Ostasien, Südost Asien, Japan, Republik Korea und Australien derzeit verfügbar. Netzwerk-Upload Kürze Weitere Regionen verfügbar.
+Netzwerk-Upload ist in den USA, Kanada, Brasilien, die Großbritannien, Frankreich, Europa, Indien, Ostasien, Südost Asien, Japan, Republik Korea und Australien derzeit verfügbar. Netzwerk-Upload Kürze Weitere Regionen verfügbar.
   
  **Was ist der Preisgestaltung für den Import von PST-Dateien mithilfe von Netzwerk-Upload?**
   
@@ -110,7 +110,7 @@ Darüber hinaus Import erstellen Aufträge in der Office 365-Sicherheit &amp; Co
   
 - Sie müssen die Rolle des E-Mail-Empfänger in Exchange Online zugewiesen werden. Standardmäßig wird diese Rolle der Organization Management und Recipient Management Rollen Gruppen zugewiesen.
     
-    oder -
+    Oder
     
 - Sie müssen ein globaler Administrator in Office 365-Organisation sein.
     
