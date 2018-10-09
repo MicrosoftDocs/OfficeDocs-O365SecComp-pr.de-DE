@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Benutzer müssen in der Office 365-Sicherheit Berechtigungen zugewiesen werden &amp; Compliance Center, bevor sie die Sicherheits- oder kompatibilitätsanforderungen Features des verwalten können.
-ms.openlocfilehash: c612c99f7d72b19d072d728eb4851532d4012414
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013799"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450740"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Gewähren des Benutzerzugriffs auf die Office 365-Sicherheit &amp; Compliance Center
 
@@ -41,11 +41,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen können Sie erteilen f
 
 1. [Anmelden bei Office 365 und im Administrationscenter zu wechseln](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-<<<<<<< HEAD
-2. **Admin zentriert** öffnen Sie in Office 365 Admin Center, und klicken Sie dann auf **Security &amp; Compliance**. 
-=======
 2. **Admin zentriert** öffnen Sie in der Office 365-Verwaltungskonsole, und klicken Sie dann auf **Security &amp; Compliance**. 
->>>>>>> master
     
 3. In das Wertpapier &amp; Compliance Center, **Berechtigungen**zu wechseln.
     
