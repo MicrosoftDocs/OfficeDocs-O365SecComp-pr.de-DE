@@ -3,7 +3,6 @@ title: Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092941"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454282"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -43,9 +42,6 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
 - Können Sie bis zu 30 Minuten für die neue oder aktualisierte Richtlinie in allen Office 365-Rechenzentren verteilen.
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: Einrichten eine Richtlinie für den sicheren Anlagen ATP (oder bearbeiten)
-
-> [!TIP]
-> Sie können eine sichere Anlagen ATP-Richtlinie mit einer Einrichten der Office 365-Sicherheit &amp; Compliance Center oder die Exchange-Verwaltungskonsole (EAC). **Wir empfehlen die Verwendung der Office 365-Sicherheit &amp; Compliance Center**. 
   
 1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     

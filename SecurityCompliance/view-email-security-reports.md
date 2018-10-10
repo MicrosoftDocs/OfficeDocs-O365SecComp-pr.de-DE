@@ -3,7 +3,6 @@ title: Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Complianc
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informationen Sie zum Suchen und Verwenden von e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise. E-Mail-Sicherheitsberichte stehen in der Sicherheit &amp; Compliance Center.
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530122"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454342"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center
 
-Eine Vielzahl von e-Mail-Sicherheit meldet stehen in der Sicherheit &amp; Compliance Center, mit denen Sie die finden Sie unter wie Antispam- und Antischadsoftware-Features in Office 365 Ihrer Organisation geschützt sind. Wenn Sie die erforderlichen Berechtigungen verfügen, können Sie diese Berichte anzeigen, in das Wertpapier &amp; Compliance Center auf **Berichte** zugreifen, indem \> **Dashboard**.
+Eine Vielzahl von e-Mail-Sicherheit meldet stehen in der Sicherheit &amp; Compliance Center, mit denen Sie die finden Sie unter wie Antispam- und Antischadsoftware-Features in Office 365 Ihrer Organisation geschützt sind. Wenn Sie die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte anzeigen, in das Wertpapier &amp; Compliance Center auf **Berichte** zugreifen, indem \> **Dashboard**.
   
 ![Die Sicherheit &amp; Compliance Center-Dashboard kann Ihnen finden Sie unter, in dem erweiterte Schutz funktionsfähig ist](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   

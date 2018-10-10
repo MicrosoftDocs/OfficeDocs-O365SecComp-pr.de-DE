@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: 9110fce9a6eb53832707de6235b79100e10c9b8a
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092951"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454332"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
 [ATP sichere Links](atp-safe-links.md) , ein Feature von [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP), können Ihre Organisation vor böswilligen Links in Phishing und anderen Angriffen verwendet schützen. Wenn Sie die erforderlichen haben [in die Office 365-Sicherheit zugewiesenen Berechtigungen &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), ATP sichere Links Richtlinien einrichten, um sicherzustellen, dass beim Klicken auf Webadressen (URLs), Ihrer Organisation geschützt ist. Ihrer Richtlinien ATP sichere Links können in e-Mail-URLs und URLs in Office-Dokumenten überprüfen konfiguriert werden.
   
-[Neue Features ständig ATP sichere Links hinzugefügt wird](atp-safe-links.md#new-features-added-to-atp-safe-links). Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen ATP sichere Links Richtlinien anpassen.
+[Neue Features ständig ATP sichere Links hinzugefügt wird](atp-safe-links.md#new-features-are-continually-being-added-to-atp-safe-links). Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen ATP sichere Links Richtlinien anpassen.
 
 ## <a name="what-to-do"></a>Nächste Schritte 
   
@@ -50,9 +50,6 @@ ms.locfileid: "25092951"
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Schritt 2: Die sichere Links ATP-Richtlinie, die für alle Benutzer gilt definieren (oder Lesen)
 
 Wenn Sie erweiterte Schutz in Office 365 Enterprise verwenden, müssen Sie eine Standardrichtlinie ATP sichere Links, die für jede Person in Ihrer Organisation gilt. 
-
-> [!TIP]
-> Sie können Ihre Richtlinie in entweder das Wertpapier bearbeiten &amp; Compliance Center oder die Exchange-Verwaltungskonsole. **Es wird empfohlen, die Sicherheit &amp; Compliance Center zu lesen oder bearbeiten eine beliebige Richtlinie ATP**.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -71,9 +68,6 @@ Wenn Sie erweiterte Schutz in Office 365 Enterprise verwenden, müssen Sie eine 
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Schritt 3: Sichere Links ATP-Richtlinien, die auf bestimmte e-Mail-Empfänger anzuwenden hinzufügen (oder bearbeiten)
 
 Nachdem Sie die sichere Links ATP-Richtlinie für alle Benutzer überprüft haben, sollten Sie zusätzliche Richtlinien für bestimmte Gruppen von e-Mail-Empfängern definieren. Dadurch können Sie Ausnahmen für die Standardrichtlinie angeben. 
-
-> [!TIP]
-> Sie können entweder die Sicherheit von Richtlinien hinzufügen &amp; Compliance Center (empfohlen) oder die Exchange-Verwaltungskonsole. **Es wird empfohlen, die Sicherheit &amp; Compliance Center zu lesen oder bearbeiten eine beliebige Richtlinie ATP**.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -81,13 +75,9 @@ Nachdem Sie die sichere Links ATP-Richtlinie für alle Benutzer überprüft habe
     
 3. Wählen Sie **sichere Links**aus.
     
-4. Wählen Sie im Abschnitt **Richtlinien, die auf bestimmte Empfänger anzuwenden** , **New** (neue Schaltfläche ähnelt ein Pluszeichen ( **+**)).
-    
-    ![Wählen Sie neu aus, um eine sichere Links Richtlinie für bestimmte e-Mail-Empfänger hinzufügen](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. Wählen Sie im Abschnitt **Richtlinien, die auf bestimmte Empfänger anzuwenden** , **New** (neue Schaltfläche ähnelt ein Pluszeichen ( **+**)).<br/>![Wählen Sie neu aus, um eine sichere Links Richtlinie für bestimmte e-Mail-Empfänger hinzufügen](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
-5. Geben Sie den Namen, die Beschreibung sowie Einstellungen für Ihre Richtlinie an.
-    
-    **Beispiel:** Um eine Richtlinie namens "keine direkte Durchklick" eingerichtet, die keine Personen in eine bestimmte Gruppe in Ihrer Organisation auf bis zu einer bestimmten Website ohne ATP sichere Links Schutz zulässt, können Sie Folgendes angeben Einstellungen empfohlen: 
+5. Geben Sie den Namen, die Beschreibung sowie Einstellungen für Ihre Richtlinie an.<br/>**Beispiel:** Um eine Richtlinie namens "keine direkte Durchklick" eingerichtet, die keine Personen in eine bestimmte Gruppe in Ihrer Organisation auf bis zu einer bestimmten Website ohne ATP sichere Links Schutz zulässt, können Sie Folgendes angeben Einstellungen empfohlen: 
     
   - Geben Sie im Feld **Name den Namen** keine direkte Durchklick.
     
@@ -111,8 +101,7 @@ Nachdem Sie die sichere Links ATP-Richtlinie für alle Benutzer überprüft habe
 
 Beim Einrichten oder Ihrer Richtlinien ATP sichere Links bearbeiten und sieht mehrere Optionen zur Verfügung. Für den Fall, dass Sie wissen möchten, was diese Optionen sind, werden in der folgenden Tabelle können Sie jeweils und dessen Effekt beschrieben. 
 
-> [!NOTE]
-> Es gibt zwei Hauptarten Richtlinien, definieren oder bearbeiten: eine Standardrichtlinie, die für alle Benutzer gilt, und zusätzliche Richtlinien, die für bestimmte Empfänger definiert sind. Diese werden in der Spalte "für diese Richtlinie" in der folgenden Tabelle unterschieden.
+Es gibt zwei Hauptarten Richtlinien, definieren oder bearbeiten: eine Standardrichtlinie, die für alle Benutzer gilt, und zusätzliche Richtlinien, die für bestimmte Empfänger definiert sind. Diese werden in der Spalte **für diese Richtlinie** in der folgenden Tabelle unterschieden.
   
 |**Für diese Richtlinie**|**Diese option**|**Funktion**|
 |:-----|:-----|:-----|

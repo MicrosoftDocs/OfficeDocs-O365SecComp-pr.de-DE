@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lesen Sie diesen Artikel erfahren, wie eine Liste der blockierten URLs für Ihre Organisation mit Office 365 erweiterte Threat Protection einrichten. Blockierte URLs werden auf e-Mail-Nachrichten und Office-Dokumenten gemäß Ihrer ATP sichere Links Richtlinien angewendet.
-ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353251"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454362"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte blockierte URLs Liste mit sicheren Links zu Office 365 ATP
 
@@ -61,7 +61,7 @@ Lesen Sie diesen Artikel erfahren, wie Ihre Organisation benutzerdefinierte bloc
    
 5. Wenn Sie das Hinzufügen von URLs in der unteren rechten Ecke des Bildschirms abgeschlossen haben, wählen Sie **Speichern**.
     
-## <a name="what-if-i-want-to-define-exceptions-for-certain-users-in-my-organization"></a>Wo finde ich zum Definieren von Ausnahmen für bestimmte Benutzer in meiner Organisation?
+## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Gewusst wie: Definieren von Ausnahmen für bestimmte Benutzer in einer Organisation
 
 Bestimmte Gruppen können URLs anzuzeigen, die für andere Benutzer blockiert werden soll, können Sie eine sichere Links ATP Richtlinie angeben, die für bestimmte Empfänger gilt. Finden Sie unter [Einrichten einer benutzerdefinierten "nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
   

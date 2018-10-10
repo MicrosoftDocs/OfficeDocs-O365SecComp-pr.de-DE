@@ -3,7 +3,6 @@ title: Office 365 ATP sichere Anlagen
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/03/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,20 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: Die sichere Anlagen-Funktion bietet Zeit des klicken Sie auf Überprüfung von e-Mail-Anlagen. Verwenden sichere Anlagen in Ihrer Organisation vor böswilligen Dateien schützen senden oder Empfangen von e-Mail.
-ms.openlocfilehash: 0a28923bff8aa2cd987159edd3cad77ed42f80f4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529450"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454312"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP sichere Anlagen
 
+## <a name="overview-of-office-365-atp-safe-attachments"></a>Übersicht über Office 365 ATP sichere Anlagen
+
 ATP sichere Anlagen (zusammen mit [Sicheren Links ATP](atp-safe-links.md)) ist Teil der [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP). Das Feature ATP sichere Anlagen überprüft, ob e-Mail-Anlagen böswilligen sind und nimmt dann Aktion zum Schutz Ihrer Organisation. Das Feature ATP sichere Anlagen schützt Ihr Unternehmen gemäß den [Richtlinien ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md) , die von Ihrem Office 365 globaler oder Sicherheitsadministratoren festgelegt sind. 
   
-Beginnen in Ende März 2018 und in den nächsten Wochen, werden ATP Schutz in Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert. Finden Sie weitere Informationen finden Sie unter [Office 365 erweiterte Bedrohungsschutz für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md).
+ATP Protection wurde vor kurzem in Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert. Finden Sie weitere Informationen finden Sie unter [Office 365 erweiterte Bedrohungsschutz für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md).
        
-## <a name="how-it-works"></a>Funktionsweise
+### <a name="how-it-works"></a>Funktionsweise
 
 Das Feature ATP sichere Anlagen überprüft e-Mail-Anlagen für die Personen in Ihrer Organisation. Wenn eine Richtlinie ATP sichere Anlagen vorhanden ist und eine Person im Rahmen dieser Richtlinie ihre e-Mails in Office 365 anzeigt, ihre e-Mail-Anlagen werden überprüft und entsprechende Aktionen ausgeführt werden, basierend auf Ihren Richtlinien ATP sichere Anlagen. Je nach Ihrer Richtlinien wie definiert sind können Benutzer arbeiten weiterhin, ohne jemals wissen, dass sie schädliche Dateien gesendet wurden.
   
@@ -41,7 +42,7 @@ Sichere Anlagen ATP Richtlinien können auf bestimmte Benutzer oder Gruppen in I
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Wie ATP sichere Anlagen abrufen
 
-Das Feature ATP sichere Anlagen ist Teil der erweiterte Threat Protection, die in Office 365 Enterprise E5 enthalten ist. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann der erweiterte Schutz als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+Das Feature ATP sichere Anlagen ist Teil der erweiterte Threat Protection, die in Microsoft 365 Enterprise und Office 365 Enterprise E5 Microsoft 365 Business enthalten ist. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann der erweiterte Schutz als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
   
 Das Feature ATP sichere Anlagen gültig, wenn:
   
@@ -49,7 +50,7 @@ Das Feature ATP sichere Anlagen gültig, wenn:
     
 - Benutzer haben in Office 365 mit ihrer Arbeit oder Schule Konto angemeldet. (Siehe [Office oder Office 365 anmelden](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
     
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Wie Sie feststellen, ob die sichere Anlagen ATP Schutz vorhanden ist
+### <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Wie Sie feststellen, ob die sichere Anlagen ATP Schutz vorhanden ist
 
  In der Reihenfolge für den Schutz von ATP sichere Anlagen vorhanden sein muss [ATP sichere Anlagen Richtlinien](set-up-atp-safe-attachments-policies.md) definiert werden. 
   
@@ -67,7 +68,9 @@ Darüber hinaus werden in der folgenden Tabelle einige Beispielszenarien beschri
    
 ## <a name="submitting-files-for-malware-analysis"></a>Senden von Dateien für die Analyse der malware
 
-Wenn Sie eine Datei, die Sie Microsoft zur Analyse stellen möchten erhalten, besuchen Sie [senden eine Datei für die Schadsoftware Analyse](https://aka.ms/wdsi/submit).
+- Wenn Sie eine Datei, die Sie Microsoft zur Analyse stellen möchten erhalten, besuchen Sie [senden eine Datei für die Schadsoftware Analyse](https://aka.ms/wdsi/submit).
+
+- Wenn Sie eine e-Mail-Nachricht (mit oder ohne Anlagen), die Sie für die Analyse an Microsoft senden möchten erhalten, verwenden Sie das [Bericht-add-in](enable-the-report-message-add-in.md).
   
 ## <a name="related-topics"></a>Verwandte Themen
 
@@ -79,7 +82,7 @@ Wenn Sie eine Datei, die Sie Microsoft zur Analyse stellen möchten erhalten, be
   
 [ATP sichere Links in Office 365](atp-safe-links.md)
   
-[ATP Anti-Phishing-Funktionen in Office 365](atp-anti-phishing.md)
+[ATP-Antiphishingfunktionen in Office 365](atp-anti-phishing.md)
   
 [Anzeigen der Berichte zu Advanced Threat Protection](view-reports-for-atp.md)
   

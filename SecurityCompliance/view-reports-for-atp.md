@@ -12,20 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 erweiterte Threat Protection in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782112"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454302"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 
-Wenn Ihre Organisation [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP verfügt), und Sie über die erforderlichen Berechtigungen verfügen, können verschiedene ATP-Berichte in das Wertpapier &amp; Compliance Center. (Gehe zu **Berichten** \> **Dashboard**.)
+Wenn Ihre Organisation [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP verfügt), und Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können verschiedene ATP-Berichte in das Wertpapier &amp; Compliance Center. (Gehe zu **Berichten** \> **Dashboard**.)
   
 ![Die Sicherheit &amp; Compliance Center-Dashboard kann Ihnen finden Sie unter, in dem erweiterte Schutz funktionsfähig ist](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP Berichte umfassen Threat Protection Statusbericht, den Bericht ATP-Dateitypen und der Bericht ATP Nachricht Disposition. In diesem Artikel wird beschrieben, die ATP-Berichte und enthält Links zu zusätzlichen Berichte anzeigen.
+ATP Berichte umfassen [Threat Protection Statusbericht](#threat-protection-status-report), den [Bericht ATP Dateitypen](#atp-file-types-report)und [ATP Nachricht Disposition Bericht](#atp-message-disposition-report). In diesem Artikel wird beschrieben, die ATP-Berichte und enthält Links zu [zusätzlichen Berichte anzeigen](#additional-reports-to-view).
   
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
@@ -77,9 +77,9 @@ Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten, stehen [Berich
   
 Und wenn Ihre Organisation [Office 365 Bedrohungsanalyse](office-365-ti.md)verfügt, können Sie auch [verwenden Explorer in das Wertpapier &amp; Compliance Center](use-explorer-in-security-and-compliance.md).
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind erforderlich, damit diese Berichte anzeigen?
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Welche Berechtigungen sind erforderlich, damit die ATP-Berichte anzeigen?
 
-Um anzuzeigen, und die e-Mail-Sicherheitsberichte in diesem Artikel beschriebenen verwenden, benötigen Sie eine entsprechende Rolle zugewiesen sind, in das Wertpapier &amp; Compliance Center und in der Exchange-Verwaltungskonsole.
+Um anzuzeigen, und die in diesem Artikel beschriebenen Berichte verwenden, benötigen Sie eine entsprechende Rolle zugewiesen sind, in das Wertpapier &amp; Compliance Center und in der Exchange-Verwaltungskonsole.
   
 |**Rollengruppe**|**Wobei zugewiesen**|**Weitere Informationen**|
 |:-----|:-----|:-----|
