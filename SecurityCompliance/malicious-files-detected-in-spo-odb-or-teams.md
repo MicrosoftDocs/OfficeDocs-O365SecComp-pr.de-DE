@@ -3,7 +3,6 @@ title: Anzeigen von Informationen über schädliche Dateien in SharePoint, OneDr
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,66 +12,61 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Erfahren Sie, wo Sie zum Anzeigen von Informationen zu schädliche Dateien in SharePoint, OneDrive oder Teams erkannt und wie Sie auf diese Dateien ergreifen.
-ms.openlocfilehash: e9a68c1cee1f2f3fb7fba148365449f0136fe637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 370e5e3d4d7fd5f35caa8ef993f6245d15ee9999
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529434"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454272"
 ---
-# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a><span data-ttu-id="914db-103">Anzeigen von Informationen über schädliche Dateien in SharePoint, OneDrive oder Microsoft-Teams erkannt</span><span class="sxs-lookup"><span data-stu-id="914db-103">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>
+# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a><span data-ttu-id="4bc7f-103">Anzeigen von Informationen über schädliche Dateien in SharePoint, OneDrive oder Microsoft-Teams erkannt</span><span class="sxs-lookup"><span data-stu-id="4bc7f-103">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>
 
-<span data-ttu-id="914db-p101">[Office 365 ATP für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md) schützt Ihre Organisation vor schädliche Dateien in Dokumentbibliotheken und Teamwebsites. Wenn eine solche Datei erkannt wird, wird diese Datei blockiert, damit niemand öffnen, kopieren, verschieben oder freigeben, bis der Organisation Security Team Weitere Aktionen ausgeführt werden. Lesen Sie diesen Artikel, um Hier erfahren, wie Sie Informationen zu erkannten Dateien anzeigen und welche Aktionen vorgenommen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="914db-p101">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.</span></span> 
-  
-> [!TIP]
-> <span data-ttu-id="914db-107">Um die in diesem Artikel beschriebenen Aufgaben durchführen zu können, benötigen Sie die erforderlichen [in die Office 365-Sicherheit zugewiesenen Berechtigungen &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="914db-107">In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
-  
-## <a name="view-reports-with-information-about-detected-files"></a><span data-ttu-id="914db-108">Anzeigen von Berichten mit Informationen zu erkannten Dateien</span><span class="sxs-lookup"><span data-stu-id="914db-108">View reports with information about detected files</span></span>
+<span data-ttu-id="4bc7f-p101">[Office 365 ATP für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md) schützt Ihre Organisation vor schädliche Dateien in Dokumentbibliotheken und Teamwebsites. Wenn eine solche Datei erkannt wird, wird diese Datei blockiert, damit niemand öffnen, kopieren, verschieben oder freigeben, bis der Organisation Security Team Weitere Aktionen ausgeführt werden. Lesen Sie diesen Artikel, um Hier erfahren, wie Sie Informationen zu erkannten Dateien anzeigen und welche Aktionen vorgenommen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-p101">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.</span></span> 
 
-<span data-ttu-id="914db-109">Zum Anzeigen von Status und detaillierte Informationen zu Dateien, die von Office 365 ATP erkannt wurden, können Sie den Threat Protection Statusbericht verwenden.</span><span class="sxs-lookup"><span data-stu-id="914db-109">To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat protection status report.</span></span>
+<span data-ttu-id="4bc7f-107">Um die in diesem Artikel beschriebenen Aufgaben durchführen zu können, benötigen Sie die erforderlichen [in die Office 365-Sicherheit zugewiesenen Berechtigungen &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="4bc7f-107">In order to perform the tasks described in this article, you must have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
   
-1. <span data-ttu-id="914db-110">In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.</span><span class="sxs-lookup"><span data-stu-id="914db-110">In the Office 365 Security &amp; Compliance Center, choose **Reports** \> **Dashboard** \> **Threat protection status**.</span></span>
-    
-2. <span data-ttu-id="914db-111">Wählen Sie in der oberen rechten Ecke des Berichts **Ansicht Detailtabelle**aus.</span><span class="sxs-lookup"><span data-stu-id="914db-111">In the upper right corner of the report, choose **View details table**.</span></span>
-    
-3. <span data-ttu-id="914db-112">Anzeigen der Liste der Dateien, die im Bericht erkannt wurden.</span><span class="sxs-lookup"><span data-stu-id="914db-112">View the list of files that were detected in the report.</span></span>
-    
-4. <span data-ttu-id="914db-113">Wählen Sie ein Element in der Liste, um ausführliche Informationen, einschließlich der Aktionen, den Dateinamen, den Dateipfad und anzeigen.</span><span class="sxs-lookup"><span data-stu-id="914db-113">Select an item in the list to view detailed information, including actions taken, the file name, the file path, and more.</span></span>
-    
-5. <span data-ttu-id="914db-114">Wählen Sie die Registerkarte **Erweiterte Analyse** Informationen wie beobachteten Verhalten und Analysen Details anzeigen.</span><span class="sxs-lookup"><span data-stu-id="914db-114">Choose the **Advanced Analysis** tab to view information, such as observed behavior and analysis details.</span></span> 
-    
-> [!TIP]
-> <span data-ttu-id="914db-115">Weitere Informationen zu verfügbaren Berichte finden Sie unter [Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md).</span><span class="sxs-lookup"><span data-stu-id="914db-115">To learn more about available reports, see [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md).</span></span> 
-  
-## <a name="view-and-take-action-on-files-in-quarantine"></a><span data-ttu-id="914db-116">Dient zum zeigen Sie an und führen Sie einer Aktion auf Dateien in Quarantäne aus</span><span class="sxs-lookup"><span data-stu-id="914db-116">View and take action on files in quarantine</span></span>
+## <a name="view-reports-with-information-about-detected-files"></a><span data-ttu-id="4bc7f-108">Anzeigen von Berichten mit Informationen zu erkannten Dateien</span><span class="sxs-lookup"><span data-stu-id="4bc7f-108">View reports with information about detected files</span></span>
 
-1. <span data-ttu-id="914db-117">In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie **Threat Management** \> **Überprüfung** \> **Quarantine**.</span><span class="sxs-lookup"><span data-stu-id="914db-117">In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.</span></span>
-    
-2. <span data-ttu-id="914db-118">Ändern Sie in der oberen linken Ecke des Filters von **E-Mail** auf **Inhalt**.</span><span class="sxs-lookup"><span data-stu-id="914db-118">In the upper left corner, change the filter from **Email** to **Content**.</span></span>
-    
-3. <span data-ttu-id="914db-119">Wählen Sie ein Element in der Liste aus, um ausführliche Informationen, einschließlich der URL der Datei anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="914db-119">Select an item in the list to view detailed information, including the file's URL.</span></span>
-    
-4. <span data-ttu-id="914db-120">Auswählen einer verfügbaren Aktion an.</span><span class="sxs-lookup"><span data-stu-id="914db-120">Choose an available action.</span></span>
-    
-  - <span data-ttu-id="914db-121">Wählen Sie **Release &amp; Bericht** für die Datei aufheben.</span><span class="sxs-lookup"><span data-stu-id="914db-121">Choose **Release &amp; report** to unblock the file.</span></span> 
-    
-    <span data-ttu-id="914db-122">Wählen Sie auf die Datei als falsch positiv an Microsoft gemeldet **Bericht an Microsoft senden** .</span><span class="sxs-lookup"><span data-stu-id="914db-122">Select **Send report to Microsoft** to report the file as a false positive to Microsoft.</span></span> 
-    
-  - <span data-ttu-id="914db-123">Wählen Sie die **Datei herunterladen** , untersuchen Sie die Datei noch.</span><span class="sxs-lookup"><span data-stu-id="914db-123">Choose **Download file** to investigate the file further.</span></span> 
-    
-  - <span data-ttu-id="914db-p102">Wählen Sie auf **Löschen** , um die Datei aus der Liste der in Quarantäne verschobenen Elemente zu entfernen. Wenn Sie diese Option auswählen, müssen Sie auch die Datei aus der entsprechenden Dokumentbibliothek in SharePoint Online, OneDrive for Business oder Microsoft-Teams löschen. Diese Option ist eine Datei verhindern oder freigegebenen geöffnete nicht Blockierung aufheben.</span><span class="sxs-lookup"><span data-stu-id="914db-p102">Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared.</span></span> 
-    
-5. <span data-ttu-id="914db-127">Wählen Sie auf **Schließen** , um die Details für ein ausgewähltes Element zu schließen.</span><span class="sxs-lookup"><span data-stu-id="914db-127">Choose **Close** to close the details for a selected item.</span></span> 
-    
-> [!TIP]
-> <span data-ttu-id="914db-128">Weitere Informationen zum Verwalten von Dateien unter Quarantäne finden Sie unter [Manage unter Quarantäne gestellte Nachrichten und Dateien als in Office 365-Administrator](manage-quarantined-messages-and-files.md).</span><span class="sxs-lookup"><span data-stu-id="914db-128">To learn more about managing quarantined files, see [Manage quarantined messages and files as an administrator in Office 365](manage-quarantined-messages-and-files.md).</span></span> 
+<span data-ttu-id="4bc7f-109">Zum Anzeigen von Status und detaillierte Informationen zu Dateien, die von Office 365 ATP erkannt wurden, können Sie den Threat Protection Statusbericht verwenden.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-109">To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat protection status report.</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="914db-129">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="914db-129">Related topics</span></span>
+1. <span data-ttu-id="4bc7f-110">In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-110">In the Office 365 Security &amp; Compliance Center, choose **Reports** \> **Dashboard** \> **Threat protection status**.</span></span>
+    
+2. <span data-ttu-id="4bc7f-111">Wählen Sie in der oberen rechten Ecke des Berichts **Ansicht Detailtabelle**aus.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-111">In the upper right corner of the report, choose **View details table**.</span></span>
+    
+3. <span data-ttu-id="4bc7f-112">Anzeigen der Liste der Dateien, die im Bericht erkannt wurden.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-112">View the list of files that were detected in the report.</span></span>
+    
+4. <span data-ttu-id="4bc7f-113">Wählen Sie ein Element in der Liste, um ausführliche Informationen, einschließlich der Aktionen, den Dateinamen, den Dateipfad und anzeigen.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-113">Select an item in the list to view detailed information, including actions taken, the file name, the file path, and more.</span></span>
+    
+5. <span data-ttu-id="4bc7f-114">Wählen Sie die Registerkarte **Erweiterte Analyse** Informationen wie beobachteten Verhalten und Analysen Details anzeigen.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-114">Choose the **Advanced Analysis** tab to view information, such as observed behavior and analysis details.</span></span> 
+  
+## <a name="view-and-take-action-on-files-in-quarantine"></a><span data-ttu-id="4bc7f-115">Dient zum zeigen Sie an und führen Sie einer Aktion auf Dateien in Quarantäne aus</span><span class="sxs-lookup"><span data-stu-id="4bc7f-115">View and take action on files in quarantine</span></span>
 
-[<span data-ttu-id="914db-130">Office 365 Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="914db-130">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+1. <span data-ttu-id="4bc7f-116">In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie **Threat Management** \> **Überprüfung** \> **Quarantine**.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-116">In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.</span></span>
+    
+2. <span data-ttu-id="4bc7f-117">Ändern Sie in der oberen linken Ecke des Filters von **E-Mail** auf **Inhalt**.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-117">In the upper left corner, change the filter from **Email** to **Content**.</span></span>
+    
+3. <span data-ttu-id="4bc7f-118">Wählen Sie ein Element in der Liste aus, um ausführliche Informationen, einschließlich der URL der Datei anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-118">Select an item in the list to view detailed information, including the file's URL.</span></span>
+    
+4. <span data-ttu-id="4bc7f-119">Auswählen einer verfügbaren Aktion an.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-119">Choose an available action.</span></span>
+    
+  - <span data-ttu-id="4bc7f-120">Wählen Sie **Release &amp; Bericht** für die Datei aufheben.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-120">Choose **Release &amp; report** to unblock the file.</span></span> 
+    
+    <span data-ttu-id="4bc7f-121">Wählen Sie auf die Datei als falsch positiv an Microsoft gemeldet **Bericht an Microsoft senden** .</span><span class="sxs-lookup"><span data-stu-id="4bc7f-121">Select **Send report to Microsoft** to report the file as a false positive to Microsoft.</span></span> 
+    
+  - <span data-ttu-id="4bc7f-122">Wählen Sie die **Datei herunterladen** , untersuchen Sie die Datei noch.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-122">Choose **Download file** to investigate the file further.</span></span> 
+    
+  - <span data-ttu-id="4bc7f-p102">Wählen Sie auf **Löschen** , um die Datei aus der Liste der in Quarantäne verschobenen Elemente zu entfernen. Wenn Sie diese Option auswählen, müssen Sie auch die Datei aus der entsprechenden Dokumentbibliothek in SharePoint Online, OneDrive for Business oder Microsoft-Teams löschen. Diese Option ist eine Datei verhindern oder freigegebenen geöffnete nicht Blockierung aufheben.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-p102">Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared.</span></span> 
+    
+5. <span data-ttu-id="4bc7f-126">Wählen Sie auf **Schließen** , um die Details für ein ausgewähltes Element zu schließen.</span><span class="sxs-lookup"><span data-stu-id="4bc7f-126">Choose **Close** to close the details for a selected item.</span></span> 
   
-[<span data-ttu-id="914db-131">Anzeigen der Berichte für Office 365 erweiterte Threat Protection</span><span class="sxs-lookup"><span data-stu-id="914db-131">View the reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+## <a name="related-topics"></a><span data-ttu-id="4bc7f-127">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="4bc7f-127">Related topics</span></span>
+
+[<span data-ttu-id="4bc7f-128">Office 365 Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="4bc7f-128">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
   
-[<span data-ttu-id="914db-132">Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="914db-132">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+[<span data-ttu-id="4bc7f-129">Anzeigen der Berichte für Office 365 erweiterte Threat Protection</span><span class="sxs-lookup"><span data-stu-id="4bc7f-129">View the reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+  
+[<span data-ttu-id="4bc7f-130">Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="4bc7f-130">Permissions in the Office 365 Security &amp; Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+
+[<span data-ttu-id="4bc7f-131">Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Administrator in Office 365</span><span class="sxs-lookup"><span data-stu-id="4bc7f-131">Manage quarantined messages and files as an administrator in Office 365</span></span>](manage-quarantined-messages-and-files.md)
   
 
