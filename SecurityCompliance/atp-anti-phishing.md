@@ -1,5 +1,5 @@
 ---
-title: ATP Anti-Phishing-Funktionen in Office 365
+title: ATP-Antiphishingfunktionen in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 description: ATP Anti-Phishing wird als Teil von Office 365 erweiterte Schutz angeboten. ATP Anti-Phishing weist der Computer Learning Modelle zusammen mit Identitätswechsel Erkennung Algorithmen auf eingehende Nachrichten für den Schutz für Waren und Spear Phishing-Angriffe. Alle Nachrichten werden eine umfassende Sammlung von Computer Learning Modelle geschulte zum Erkennen von Phishing-Nachrichten, zusammen mit einer Reihe von erweiterten Algorithmen zum Schutz vor Angriffen Identitätswechsel verschiedenen Benutzername und Domäne verwendet. ATP Anti-Phishing schützt Ihre Organisation entsprechend um zu Richtlinien, von Ihrem Office 365 globaler oder Sicherheitsadministratoren festgelegt werden.
-ms.openlocfilehash: cff25316f9a03bdfafd195eb408584ab8bca6343
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e7bb4c4a28109c40bf745a25c9c8366558cf2ac7
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529291"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496889"
 ---
-# <a name="atp-anti-phishing-capabilities-in-office-365"></a>ATP Anti-Phishing-Funktionen in Office 365
+# <a name="atp-anti-phishing-capabilities-in-office-365"></a>ATP-Antiphishingfunktionen in Office 365
 
 ATP Anti-Phishing wird als Teil von [Office 365 erweiterte Schutz](https://technet.microsoft.com/en-us/library/exchange-online-advanced-threat-protection-service-description.aspx)angeboten. ATP Anti-Phishing weist der Computer Learning Modelle zusammen mit Identitätswechsel Erkennung Algorithmen auf eingehende Nachrichten für den Schutz für Waren und Spear Phishing-Angriffe. Alle Nachrichten werden eine umfassende Sammlung von Computer Learning Modelle geschulte zum Erkennen von Phishing-Nachrichten, zusammen mit einer Reihe von erweiterten Algorithmen zum Schutz vor Angriffen Identitätswechsel verschiedenen Benutzername und Domäne verwendet. ATP Anti-Phishing schützt Ihre Organisation entsprechend um zu Richtlinien, von Ihrem Office 365 globaler oder Sicherheitsadministratoren festgelegt werden.
   
-Finden Sie weitere Informationen finden Sie unter [ATP Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-atp-anti-phishing-policies.md).
+Finden Sie weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-anti-phishing-policies.md).
   
 > [!NOTE]
 > ATP Anti-Phishing ist nur verfügbar, erweiterte Threat Protection, mit Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann der erweiterte Schutz als Add-on erworben werden. (Als ein globaler Administrator, in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen zu den Optionen zum Plan finden Sie unter [Vergleich alle Office 365 für Unternehmen plant](https://go.microsoft.com/fwlink/?linkid=844053). 
@@ -35,14 +35,14 @@ ATP Anti-Phishing überprüft eingehende Nachrichten für Indikatoren, dass die 
   
 ATP Anti-Phishing ermöglicht globale Office 365-Administratoren oder Sicherheit-Admins zum Definieren von Richtlinien, die Schutz gegen Phishing-Angriffe bereitstellen, die von Benutzern oder Domänen Identitätswechsel enthalten. (oder beides). Globale Office 365-Administratoren oder Sicherheit-Admins definieren innerhalb der Richtlinie an, welche Benutzer und Domänen vor Angriffen mit Identitätswechsel mit einer geschützt werden sollte, eine feste Liste von Benutzern oder Domänen oder mithilfe von Postfach Intelligence. Postfach Intelligence ist fortgeschrittene Kenntnisse von e-Mail-Gewohnheiten des Benutzers und persönliche Kontakte. ATP lernen, wie jeden einzelnen Benutzer kommuniziert mit anderen Benutzern innerhalb und außerhalb der Organisation und eine Übersicht über diese Beziehungen erstellt. Diese Zuordnung ermöglicht ATP zu verstehen, Weitere Informationen dazu, wie Sie um sicherzustellen, dass die richtigen Nachrichten als Identitätswechsel identifiziert werden.
   
-ATP Anti-Phishing-Richtlinien angewendet werden kann, um eine bestimmte Gruppe von Personen oder Gruppen in Ihrer Organisation oder um eine gesamte Domäne oder alle benutzerdefinierten Domänen. Finden Sie weitere Informationen finden Sie unter [ATP Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-atp-anti-phishing-policies.md).
+ATP Anti-Phishing-Richtlinien angewendet werden kann, um eine bestimmte Gruppe von Personen oder Gruppen in Ihrer Organisation oder um eine gesamte Domäne oder alle benutzerdefinierten Domänen. Finden Sie weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-anti-phishing-policies.md).
   
 ## <a name="how-to-get-atp-anti-phishing"></a>Wie ATP Anti-Phishing abrufen
 <a name="Howtogetantiphish"> </a>
 
 ATP Anti-Phishing ist Teil der erweiterte Threat Protection, die in Office 365 Enterprise E5 enthalten ist. Erweiterte Schutz kann auch als Add-on für Office 365 Enterprise E1 oder E3 für Office 365 Enterprise erworben werden. Weitere Informationen zu den Optionen zum Plan finden Sie unter [Vergleich alle Office 365 für Unternehmen plant](https://go.microsoft.com/fwlink/?linkid=844053).
   
-ATP Anti-Phishing angewendet wird, wenn eine Richtlinie Anti-Phishing wie eine Identitätswechsel-basierten Richtlinie eingerichtet sind. (Siehe [ATP Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-atp-anti-phishing-policies.md).)
+ATP Anti-Phishing angewendet wird, wenn eine Richtlinie Anti-Phishing wie eine Identitätswechsel-basierten Richtlinie eingerichtet sind. (Finden Sie unter [Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-anti-phishing-policies.md).)
   
 ## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Woran ATP Anti-Phishing vorhanden ist
 <a name="IsantiphishOn"> </a>
@@ -60,9 +60,9 @@ In der Reihenfolge für den Schutz aktiv sein müssen ATP Anti-Phishing-Richtlin
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Phishing-Schutz in Office 365](anti-phishing-protection.md)
+[Antiphishingschutz in Office 365](anti-phishing-protection.md)
   
-[Einrichten von ATP Anti-Phishing-Richtlinien in Office 365](set-up-atp-anti-phishing-policies.md)
+[Einrichten von Anti-Phishing-Richtlinien in Office 365](set-up-anti-phishing-policies.md)
   
 [ATP sichere Links in Office 365](atp-safe-links.md)
   

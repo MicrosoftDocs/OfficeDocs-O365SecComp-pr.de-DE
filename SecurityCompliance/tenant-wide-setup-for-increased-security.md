@@ -1,9 +1,9 @@
 ---
-title: Konfigurieren Sie Ihre Office 365-Mandanten, um eine höhere Sicherheit
+title: Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,14 +11,14 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für den Mandanten geltende Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diesen Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013869"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496869"
 ---
-# <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Sie Ihre Office 365-Mandanten, um eine höhere Sicherheit
+# <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
 In diesem Thema führt Sie durch die empfohlene Konfiguration für den Mandanten geltende Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diesen Empfehlungen als Ausgangspunkt.
   
@@ -32,9 +32,9 @@ Die Office 365-Sicherheit &amp; Compliance Center umfasst Funktionen, die Ihre U
   
 |Bereich ***|Enthält eine standardmäßige Richtlinie ***|Empfehlung ***|
 |:-----|:-----|:-----|
-|**ATP Anti-phishing** <br/> |Nein  <br/> | Wenn Sie eine benutzerdefinierte Domäne verfügen, erstellen Sie eine Anti-Phishing-Richtlinie zum Schutz der e-Mail-Konten Ihrer wichtigsten Benutzer, wie Ihre CEO und zum Schutz Ihrer Domäne. Überprüfen Sie [Richten Sie eine ATP Anti-Phishing-Richtlinie](set-up-atp-anti-phishing-policies.md) , und erstellen Sie eine Richtlinie unter Verwendung des Beispiels als Leitfaden: "Beispiel: Anti-Phishing-Richtlinie eines Benutzers und einer Domäne zu schützen."|
+|**Anti-phishing** <br/> |Ja  <br/> | Wenn Sie eine benutzerdefinierte Domäne verfügen, erstellen Sie eine Anti-Phishing-Richtlinie zum Schutz der e-Mail-Konten Ihrer wichtigsten Benutzer, wie Ihre CEO und zum Schutz Ihrer Domäne. Überprüfen Sie [Richten Sie eine Anti-Phishing-Richtlinie](set-up-anti-phishing-policies.md) , und erstellen Sie eine Richtlinie unter Verwendung des Beispiels als Leitfaden: "Beispiel: Anti-Phishing-Richtlinie eines Benutzers und einer Domäne zu schützen."|
 |**Antischadsoftware-Modul** <br/> |Ja  <br/> | Bearbeiten der Standardrichtlinie:  <br/> • Allgemeine Anlage Typen Filter – wählen Sie aus  <br/><br>  Sie können auch benutzerdefinierte Malware Filterrichtlinien erstellen und anwenden auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation.  <br/> <br> Weitere Informationen:  <br/> • [Anti-Malware protection](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> • [Konfigurieren Antischadsoftware - Richtlinien](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
-|**ATP sichere Anlagen** <br/> |Nein  <br/> | Schützen von Dateien in SharePoint, OneDrive und Microsoft-Teams, auf der Hauptseite für sichere Anlagen durch Aktivieren des Kontrollkästchens:  <br/>  • Schalten ATP für SharePoint, OneDrive und Microsoft-Teams  <br/> <br> Hinzufügen einer neuen Richtlinie für sichere Anlage mit diesen Einstellungen:  <br/>  • Blockieren – die aktuellen und zukünftigen-e-Mails und Anlagen mit gefundene Malware blockieren (Wählen Sie diese Option)  <br/>  • Enable umleiten – (Aktivieren Sie dieses Kontrollkästchen, und geben Sie eine e-Mail-Adresse, beispielsweise ein Konto Admin und Quarantäne)  <br/>  • Die obige Auswahl anwenden, wenn schadsoftwareprüfung für Anlagen Timeout oder Fehler tritt auf, (Aktivieren Sie dieses Kontrollkästchen)  <br/>  • Auf angewendet – die Domäne des Empfängers ist (Wählen Sie Ihre Domäne)  <br/>  <br>Weitere Informationen: [Einrichten von Richtlinien für Office 365 ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md) <br/> |
+|**Sichere Anlagen in ATP** <br/> |Nein  <br/> | Schützen von Dateien in SharePoint, OneDrive und Microsoft-Teams, auf der Hauptseite für sichere Anlagen durch Aktivieren des Kontrollkästchens:  <br/>  • Schalten ATP für SharePoint, OneDrive und Microsoft-Teams  <br/> <br> Hinzufügen einer neuen Richtlinie für sichere Anlage mit diesen Einstellungen:  <br/>  • Blockieren – die aktuellen und zukünftigen-e-Mails und Anlagen mit gefundene Malware blockieren (Wählen Sie diese Option)  <br/>  • Enable umleiten – (Aktivieren Sie dieses Kontrollkästchen, und geben Sie eine e-Mail-Adresse, beispielsweise ein Konto Admin und Quarantäne)  <br/>  • Die obige Auswahl anwenden, wenn schadsoftwareprüfung für Anlagen Timeout oder Fehler tritt auf, (Aktivieren Sie dieses Kontrollkästchen)  <br/>  • Auf angewendet – die Domäne des Empfängers ist (Wählen Sie Ihre Domäne)  <br/>  <br>Weitere Informationen: [Einrichten von Richtlinien für Office 365 ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP sichere Links** <br/> |Ja  <br/> | Fügen Sie diese Einstellung auf die Standardrichtlinie für die gesamte Organisation:  <br/> • Verwendung sicherer Links in: Office 365 ProPlus, Office für iOS und Android (Wählen Sie diese Option aus).  <br/> <br>Empfohlene Richtlinien für bestimmte Empfänger:  <br/>  • URLs umgeschrieben werden und mit einer Liste bekannter bösartiger links abgeglichen werden, wenn Benutzer auf den Link klickt (Wählen Sie diese Option aus).  <br/>  • Verwenden sichere Anlagen zu überprüfenden Bücher (Aktivieren Sie dieses Kontrollkästchen).  <br/>  • Auf angewendet – die Domäne des Empfängers ist (Wählen Sie Ihre Domäne).  <br/> <br> Weitere Informationen: [Office 365 ATP sichere Links](atp-safe-links.md).  <br/> |
 |**Anti-Spam (Mail-Filterung)** <br/> |Ja  <br/> | Was für die Überwachung:  <br/>  • Zu viel spam – wählen Sie die benutzerdefinierte Einstellungen und bearbeiten die Standardrichtlinie für Spam-Filter.  <br/>  • Spoofing Intelligence – Absender, die Ihre Domäne spoofing sind überprüfen. Blockieren oder Zulassen von diesen Absendern.<br/>  <br>Weitere Informationen: [Office 365 E-Mail Anti-Spam-Schutz](anti-spam-protection.md).  <br/> |
 |**DKIM (DomainKeys identifiziert Mail)** <br/> |Ja  <br/> |DKIM ist ein Authentifizierungsprozess, der, die schützen kann Absender und Empfänger aus gefälscht (gefälschten) und Phishing-e-Mail. Ihres Mandanten umfasst eine Standardsignatur für Ihre Domäne. Erstellen Sie eine zusätzliche DKIM-Signatur, wenn Sie benutzerdefinierte Domänen zu Ihrem Mandanten hinzufügen.<br/> <br>Weitere Informationen: [Verwendung DKIM überprüfen Sie ausgehende e-Mail-Nachrichten, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |
@@ -110,7 +110,7 @@ Weitere Informationen:
     
 - [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
     
-- [Übersicht über Office 365-Cloud-App-Sicherheit](office-365-cas-overview.md)
+- [Übersicht über Office 365 Cloud App Security](office-365-cas-overview.md)
     
 ![Cloud App Security-Dashboard](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   

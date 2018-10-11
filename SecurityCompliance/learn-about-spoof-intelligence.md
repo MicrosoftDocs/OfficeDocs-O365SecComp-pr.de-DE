@@ -3,7 +3,7 @@ title: Weitere Informationen zu Spoofing Intelligence
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/14/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: Verwenden Sie in das Wertpapier Spoofing Intelligence &amp; Compliance Center auf der Seite Anti-Spam Settings Überprüfen aller Absender, die entweder Domänen, die Teil Ihrer Organisation sind spoofing sind, oder spoofing externe Domänen. Spoofing Intelligence steht als Teil von Office 365 Enterprise E5 oder separat als Teil der erweiterte Schutz und Exchange Online Protection.
-ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
-ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
+ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496556"
+ms.locfileid: "25496839"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Weitere Informationen zu Spoofing Intelligence
 
@@ -58,7 +58,7 @@ Sie können die Absender werden spoofing Ihrer Domäne oder externe Domänen, un
 |**Parameter**|**Beschreibung**|
 |:-----|:-----|
 |Absender  <br/> |Abkürzung für den Absender true. Dies ist in der Regel die Domäne aus der Spoofing e-Mail stammt. Office 365 bestimmt die Domäne des Zeigers (PTR) DNS-Eintrag der sendenden IP-Adresse, die Ihre Organisation spoofing ist. Wenn keine Domäne gefunden wird, zeigt der Bericht stattdessen die IP-Adresse des Absenders.  <br/> |
-|Benutzer mit Spoofing stammen  <br/> |Das Benutzerkonto, das vom Absender manipuliert wird ist.  <br/> Registerkarte nur **intern** . Dieses Feld enthält eine einzelne e-Mail-Adresse, oder wenn der Absender mehrere Benutzerkonten spoofing ist, enthält **mehr als ein**.<br/> **Externe** Registerkarte. Externe Domänen nur sendende Domäne enthalten und enthalten keine vollständige e-Mail-Adresse.<br/> > [!TIP]> **Für erweiterte-Admins.** Der gefälschte Benutzer ist von-Adresse (5322.From) handelt es sich auch die Adresse als von-Adresse von der e-Mail-Client angezeigt. Dies ist die Adresse header.from bezeichnet. Diese Gültigkeit dieser Adresse wird durch SPF nicht überprüft.           |
+|Benutzer mit Spoofing stammen  <br/> |Das Benutzerkonto, das vom Absender manipuliert wird ist.  <br/> Registerkarte nur **intern** . Dieses Feld enthält eine einzelne e-Mail-Adresse, oder wenn der Absender mehrere Benutzerkonten spoofing ist, enthält **mehr als ein**.<br/> **Externe** Registerkarte. Externe Domänen nur sendende Domäne enthalten und enthalten keine vollständige e-Mail-Adresse.<br/> **Tipp! Informationen zu erweiterten Administratoren.** Der gefälschte Benutzer ist von-Adresse (5322.From) handelt es sich auch die Adresse als von-Adresse von der e-Mail-Client angezeigt. Dies ist die Adresse header.from bezeichnet. Die Gültigkeit dieser Adresse wird durch SPF nicht überprüft.           |
 |Anzahl der Nachrichten  <br/> |Die Anzahl der e-Mail-Nachrichten, die vom Absender für Ihr Unternehmen in den letzten 30 Tagen im Namen der identifizierten gefälschten Absender oder Absender gesendet.  <br/> |
 |Anzahl der Benutzerbeschwerden  <br/> |Beschwerden von Benutzern für diese Absender durch Ihre Benutzer in den letzten 30 Tagen abgelegt. Beschwerden sind meist in Form von Junk-e-Übermittlung an Microsoft.  <br/> |
 |Ergebnis der Authentifizierung  <br/> |Dieser Wert ist **übergeben** , wenn der Absender Exchange Online Protection (EOP) Absender Authentifizierung Überprüfungen, wie SPF oder DKIM, **konnte nicht** übergeben, wenn der Absender Fehler bei EOP Absender Authentifizierung Überprüfungen oder **Unbekannte** , wenn das Ergebnis der Kontrollen ist nicht bezeichnet.  <br/> |
@@ -73,31 +73,31 @@ Sie können die Absender werden spoofing Ihrer Domäne oder externe Domänen, un
     
 2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365 an. Ihr Konto muss in Ihrer Organisation Office 365-Administratoranmeldeinformationen verfügen.
     
-3. In das Wertpapier &amp; Compliance Center, erweitern Sie **Threat Management** \> **Richtlinie** \> **Anti-Spam**.
+3. In das Wertpapier &amp; Compliance Center, erweitern Sie **Threat Management** \> **Richtlinie** \> **Anti-Spam**.  
   
-![](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Screenshot, der Zugriff auf die Anti-Spam-Seite zeigt](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
   
-4. Klicken Sie auf der Seite **Anti-Spam-Einstellungen** im rechten Bereich Wählen Sie die **benutzerdefinierte** Registerkarte, und klicken Sie dann einen Bildlauf nach unten, und erweitern Sie **Spoofing Intelligence Richtlinie**. 
+4. Klicken Sie auf der Seite **Anti-Spam-Einstellungen** im rechten Bereich Wählen Sie die **benutzerdefinierte** Registerkarte, und klicken Sie dann einen Bildlauf nach unten, und erweitern Sie **Spoofing Intelligence Richtlinie**.  
   
-![](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![Screenshot, der Zugriff auf die benutzerdefinierten Einstellungen Anti-Spam-zeigt](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
   
-5. Um die Liste der Absender spoofing Ihrer Domäne anzuzeigen, wählen Sie **neue Absender überprüfen** , und wählen Sie die ** Your Domänen ** Registerkarte. 
+5. Um die Liste der Absender spoofing Ihrer Domäne anzuzeigen, wählen Sie **neue Absender überprüfen** , und wählen Sie die Registerkarte **Your Domänen** . 
     
-    Wenn Sie bereits Absender überprüft haben, und einige Ihrer vorherigen Auswahl ändern möchten, können Sie **meinen Absender ich bereits überprüft** stattdessen auswählen. In beiden Fällen wird im folgenden Fenster. 
+    Wenn Sie bereits Absender überprüft haben, und einige Ihrer vorherigen Auswahl ändern möchten, können Sie **meinen Absender ich bereits überprüft** stattdessen auswählen. In beiden Fällen wird im folgenden Fenster.  
   
-![](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Screenshot, der Zugriff auf die Registerkarte gefälschten Absender zeigt](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
   
-Jeder Benutzer mit Spoofing stammen ist in einer separaten Zeile angezeigt, sodass Sie, ob auswählen können Sie zulassen oder Blockieren des Absenders aus jeden Benutzer einzeln spoofing.
+    Jeder Benutzer mit Spoofing stammen ist in einer separaten Zeile angezeigt, sodass Sie, ob auswählen können Sie zulassen oder Blockieren des Absenders aus jeden Benutzer einzeln spoofing.  
   
-Um ein Absender der Zulassungsliste für einen Benutzer hinzuzufügen, wählen Sie **Ja** aus der **zulässige Spoofing** -Spalte. Um ein Absender der Blockierliste für einen Benutzer hinzuzufügen, wählen Sie **Nein**aus.
+    Um ein Absender der Zulassungsliste für einen Benutzer hinzuzufügen, wählen Sie **Ja** aus der **zulässige Spoofing** -Spalte. Um ein Absender der Blockierliste für einen Benutzer hinzuzufügen, wählen Sie **Nein**aus.
+     
+    Zum Festlegen der Richtlinie für Domänen Sie nicht besitzen, Ändern wählen Sie die Registerkarte **Externe Domänen** aller Absender auf **Ja in der Spalte **mit einer gefälschten zulässig** , um diesem Absender nicht authentifizierte Senden von e-Mails in Ihrer Organisation zu ermöglichen.** Alternativ, wenn Sie, dass Office 365 einen Fehler annehmen in der Absender senden von e-Mails mit Spoofing stammen zulassen vorgenommen hat, ändern Sie die **zulässige Spoofing** Spalte auf **Nein**.  
   
-Zum Festlegen der Richtlinie für Domänen Sie nicht besitzen, Ändern wählen Sie die Registerkarte **Externe Domänen** aller Absender auf **Ja in der Spalte **mit einer gefälschten zulässig** , um diesem Absender nicht authentifizierte Senden von e-Mails in Ihrer Organisation zu ermöglichen.** Alternativ, wenn Sie, dass Office 365 einen Fehler annehmen in der Absender senden von e-Mails mit Spoofing stammen zulassen vorgenommen hat, ändern Sie die **zulässige Spoofing** Spalte auf **Nein**. 
-  
-![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Screenshot, der zeigt, ob ein Absender Spoofing berechtigt ist](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. Wählen Sie **Speichern** , um alle Änderungen zu speichern. 
 
-Wenn Sie eine E5 oder ATP-Kunde sind, können Sie auch Absender verwalten, die die Domäne durch die [Spoofing Intelligence Erkenntnisse](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight) spoofing sind
+Wenn Sie ein Office 365 Enterprise E5-Abonnement haben oder erweiterte Schutz als Add-on separat erworben haben, können Sie auch Absender verwalten, die die Domäne durch die [Spoofing Intelligence Erkenntnisse](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)spoofing sind.
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>Konfigurieren der Richtlinie für Anti-spoofing
 <a name="Managespooflist"> </a>
@@ -122,15 +122,15 @@ Obwohl die Richtlinie Anti-spoofing unter Anti-Phishing-Richtlinie in das Wertpa
     
 5. Wählen Sie **Bearbeiten**aus, auf der Seite, die in der Zeile **Spoofing** angezeigt wird. 
     
-6. Konfigurieren Sie anschließend die Aktionen an, wenn eine Nachricht als ein Cross-Domain-Spoofing erkannt wird. Das Standardverhalten wird die Nachricht in der Aufgabenliste des Empfängers junk-e-Mail-Ordner verschoben. Eine weitere Möglichkeit ist zum Senden der Nachricht in Quarantäne. Weitere Informationen zum Verwalten von Nachrichten in Quarantäne finden Sie unter [Quarantäne e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
+6. Konfigurieren Sie anschließend die Aktionen an, wenn eine Nachricht als ein Cross-Domain-Spoofing erkannt wird. Das Standardverhalten wird die Nachricht in der Aufgabenliste des Empfängers junk-e-Mail-Ordner verschoben. Eine weitere Möglichkeit ist zum Senden der Nachricht in Quarantäne. Weitere Informationen zum Verwalten von Nachrichten in Quarantäne finden Sie unter [Quarantäne e-Mail-Nachrichten in Office 365](quarantine-email-messages.md).  
   
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
+    ![Screenshot, der Richtlinie Anti-spoofing zeigt bearbeiten Optionen](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. Wählen Sie, ob zum Aktivieren oder Deaktivieren der Anti-spoofing Safety Tipps. Office 365 empfiehlt aktivieren Tipp Sicherheit **Authentifizierung ein Fehler auftritt** , um Benutzer zu benachrichtigen, wenn sie mit einem Absender interagiert werden, deren Identität nicht überprüft werden konnten. Office 365 empfiehlt auch die Spitze Sicherheit für eine **Authentifizierung Soft-Pass** für kleinere Gruppen von Benutzern, aktivieren, da dieser Tipp Sicherheit viele Warnungen generiert wird, kann sobald der Benutzer aus mehreren Quellen für legitime, aber nicht authentifizierte e-Mail erhält. 
+7. Wählen Sie, ob zum Aktivieren oder Deaktivieren der Anti-spoofing Safety Tipps. Office 365 empfiehlt aktivieren Tipp Sicherheit **Authentifizierung ein Fehler auftritt** , um Benutzer zu benachrichtigen, wenn sie mit einem Absender interagiert werden, deren Identität nicht überprüft werden konnten. Office 365 empfiehlt auch die Spitze Sicherheit für eine **Authentifizierung Soft-Pass** für kleinere Gruppen von Benutzern, aktivieren, da dieser Tipp Sicherheit viele Warnungen generiert wird, kann sobald der Benutzer aus mehreren Quellen für legitime, aber nicht authentifizierte e-Mail erhält.  
   
-![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-  
-Stellen Sie Ihrer Wahl, und wählen Sie dann auf **Speichern**. 
+    ![Screenshot, der Anti-spoofing Sicherheitsoptionen-Info Zeigt](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
+
+8. Stellen Sie Ihrer Wahl, und wählen Sie dann auf **Speichern**. 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Andere Möglichkeiten zum Verwalten von spoofing und Phishing mit Office 365
 <a name="Managespooflist"> </a>
@@ -139,14 +139,14 @@ Werden Sie über spoofing und Phishing-Schutz sorgfältig. Hier können verwandt
   
 - Überprüfen Sie den Exchange Online Protection Spoofing Mail Bericht als Teil Ihrer Routine. Sie können diesen Bericht häufig zum Anzeigen und Verwalten von gefälschten Absender verwenden. Informationen finden Sie unter **Spoofing der e-Mail-Bericht** in der [e-Mail-schutzberichte in Office 365, um Daten über Schadsoftware, Spam und Regel erkannte verwenden](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
     
-- Informationen zu erweiterten Office 365-Administratoren:
+Informationen zu erweiterten Office 365-Administratoren können Sie auch diese Prüfungen ausführen:
     
-  - Überprüfen der Konfigurations des Sender Policy Framework (SPF). Eine kurze Einführung in SPF und erhalten sie schnell konfiguriert finden Sie unter [Einrichten von SPF in Office 365, um spoofing zu verhindern](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Ausführlichere Informationen zu der Verwendung von Office 365 SPF oder zur Problembehandlung oder nicht standardmäßigen Bereitstellungen wie hybridbereitstellungen beginnen Sie mit [wie Office 365 verwendet Sender Policy Framework (SPF), um spoofing zu verhindern](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
+- Überprüfen der Konfigurations des Sender Policy Framework (SPF). Eine kurze Einführung in SPF und erhalten sie schnell konfiguriert finden Sie unter [Einrichten von SPF in Office 365, um spoofing zu verhindern](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Ausführlichere Informationen zu der Verwendung von Office 365 SPF oder zur Problembehandlung oder nicht standardmäßigen Bereitstellungen wie hybridbereitstellungen beginnen Sie mit [wie Office 365 verwendet Sender Policy Framework (SPF), um spoofing zu verhindern](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     
-  - Überprüfen Sie Ihre Konfiguration DomainKeys Identified Mail (DKIM). Sie sollten DKIM zusätzlich zu SPF und DMARC verwenden, um zu verhindern, Spoofers am Senden von Nachrichten, die sie von Ihrer Domäne stammen aussehen. DKIM können Sie die e-Mail-Nachrichten in der Kopfzeile der Nachricht eine digitale Signatur hinzuzufügen. Informationen finden Sie unter [DKIM verwenden, um von Ihrer Domäne in Office 365 gesendete e-Mails zu überprüfen](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
+- Überprüfen Sie Ihre Konfiguration DomainKeys Identified Mail (DKIM). Sie sollten DKIM zusätzlich zu SPF und DMARC verwenden, um zu verhindern, Spoofers am Senden von Nachrichten, die sie von Ihrer Domäne stammen aussehen. DKIM können Sie die e-Mail-Nachrichten in der Kopfzeile der Nachricht eine digitale Signatur hinzuzufügen. Informationen finden Sie unter [DKIM verwenden, um von Ihrer Domäne in Office 365 gesendete e-Mails zu überprüfen](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
     
-  - Überprüfen Sie Ihre Nachrichtenauthentifizierung, Berichte und Konformität (DMARC) Konfiguration domänenbasierte. Implementieren von DMARC mit SPF und DKIM bietet zusätzlichen Schutz gegen spoofing und Phishing-e-Mail. Fail SPF oder DKIM prüft DMARC hilft Empfang von e-Mail-Systemen feststellen, welche Aktionen mit Nachrichten von Ihrer Domäne gesendete. Informationen finden Sie unter [Verwendung von DMARC zum Überprüfen von e-Mail in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+- Überprüfen Sie Ihre Nachrichtenauthentifizierung, Berichte und Konformität (DMARC) Konfiguration domänenbasierte. Implementieren von DMARC mit SPF und DKIM bietet zusätzlichen Schutz gegen spoofing und Phishing-e-Mail. Fail SPF oder DKIM prüft DMARC hilft Empfang von e-Mail-Systemen feststellen, welche Aktionen mit Nachrichten von Ihrer Domäne gesendete. Informationen finden Sie unter [Verwendung von DMARC zum Überprüfen von e-Mail in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
-  - Verwenden Sie das Cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell zum Sammeln detaillierter Daten zu gefälschten Absender, generieren zulassen und blockierte Kontakte, und Ihnen helfen zu bestimmen, wie generieren umfassendere SPF, DKIM und DMARC DNS-Datensätzen ohne Ihre legitimen e-Mails, jedoch in externen Spam-Filter. Weitere Informationen finden Sie unter [So funktioniert der Antispoofing Schutz in Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
+- Verwenden Sie das Cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell zum Sammeln detaillierter Daten zu gefälschten Absender, generieren zulassen und blockierte Kontakte, und Ihnen helfen zu bestimmen, wie generieren umfassendere SPF, DKIM und DMARC DNS-Datensätzen ohne Ihre legitimen e-Mails, jedoch in externen Spam-Filter. Weitere Informationen finden Sie unter [So funktioniert der Antispoofing Schutz in Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
     
 

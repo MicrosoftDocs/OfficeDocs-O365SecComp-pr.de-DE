@@ -1,9 +1,9 @@
 ---
-title: Anti-spoofing Schutz in Office 365
+title: Antispoofingschutz in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,20 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe gemindert, dass Verwendungsmöglichkeiten Absenderdomänen, d. h., Domänen gefälscht, die manipuliert werden. Sie erreicht dies durch die Analyse der Nachrichten und Neithe mithilfe der standard-e-Mail-Authentifizierungsmethoden noch andere Sender Reputation Techniken authentifiziert Blockierung diejenigen aus, die werden können. Diese Änderung wird implementiert wird, um die Anzahl der Phishingangriffe zu reduzieren, die Organisationen in Office 365 verfügbar gemacht werden.
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559220"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496899"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>Anti-spoofing Schutz in Office 365
+# <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
 In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe gemindert, dass Verwendungsmöglichkeiten Absenderdomänen, d. h., Domänen gefälscht, die manipuliert werden. Sie erreicht dies, indem Sie die Nachrichten analysieren und sperrende Korrelation diejenigen aus, die mithilfe der standard-e-Mail-Authentifizierungsmethoden noch andere Sender Reputation Techniken nicht authentifiziert werden können. Diese Änderung wird implementiert wird, um die Anzahl der Phishingangriffe zu reduzieren, die Kunden verfügbar gemacht werden.
   
 In diesem Artikel wird erläutert, warum diese Änderung vorgenommen wird, wie Kunden, damit diese Änderung vorbereiten können, wie Nachrichten anzeigen, die betroffen sind, wie Nachrichten melden, wie falsch positive Ergebnisse zu mindern sowie wie Absender an Microsoft für dieses vorbereiten sollte ändern.
   
-Microsoft Anti-spoofing-Technologie wird zunächst auf die Office 365 erweiterte Threat Protection (ATP) und E5 Kunden bereitgestellt. Allerdings können aufgrund der Art, die alle seine Filter voneinander lernen, nicht ATP-Kunden und sogar Outlook.com Benutzer auch beeinträchtigt werden.
+Anti-spoofing von Microsoft-Technologie wurde zunächst auf die Organisationen bereitgestellt, die ein Abonnement von Office 365 Enterprise E5 hatte oder das Office 365 erweiterte Threat Protection (ATP) Add-on für ihr Abonnement erworben haben. Ab Oktober, 2018 haben wir den Schutz für Organisationen erweitert, die als auch Exchange Online Protection (EOP) haben. Darüber hinaus können aufgrund der Art, die alle unsere Filter voneinander lernen, Outlook.com Benutzer auch beeinträchtigt werden.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Wie spoofing in Phishingangriffe verwendet wird
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Nach Anti-spoofing, wenn Sie eine erweiterte Threat Protection oder E5 "Kunde", sind der Compauth Wert wird versehen (nicht ATP und nicht E5 Benutzer sind nicht betroffen):
+Wenn Sie Office 365 Enterprise E5, EOP oder ATP, haben, wird der Wert Compauth nach Anti-spoofing versehen:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,27 +408,27 @@ Dieses Feature ist derzeit in der Entwicklung. Weitere Details definiert sind, w
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Grundlegendes zu wie spam, Phishing und erweiterte Phishing erkannte kombiniert werden
 
-Exchange Online-Kunden - ATP und nicht ATP - können, geben Sie die Aktionen an, wenn der Dienst Nachrichten als Schadsoftware, Spam, vertrauenswürdige Spam, Phishing und Massen identifiziert wird. Allerdings mit der Einführung neuer Anti-Phishing-Richtlinien für ATP-Kunden und die Tatsache, dass eine Nachricht mehrere Arten der Erkennung (z. B. Malware, Phishing und Benutzeridentitätswechsel) erreicht werden kann, möglicherweise einige Verwirrung, welche Richtlinie angewendet wird. 
+Organisationen, die mit oder ohne ATP, Exchange Online verwenden können angeben, welche Aktionen an, wenn der Dienst Nachrichten als Schadsoftware, Spam, vertrauenswürdige Spam, Phishing und Massen identifiziert wird. Mit den ATP Anti-Phishing-Richtlinien für ATP-Kunden und die Anti-Phishing-Richtlinien für EOP-Kunden und die Tatsache, dass eine Nachricht mehrere Arten der Erkennung (beispielsweise Malware, Phishing und Benutzeridentitätswechsel) erreicht werden kann möglicherweise einige Verwirrung, welche Richtlinie angewendet wird. 
   
 Im Allgemeinen wird die Richtlinie angewendet auf eine Nachricht in der Kopfzeile X-Forefront-Antispam-Report in der Eigenschaft Katze (Kategorie) identifiziert. 
   
 |**Priority**|**Richtlinie**|**Kategorie**|**Wobei verwaltet?**|**Gilt für**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Schadsoftware  <br/> |MALW  <br/> |[Malware-Richtlinie](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Alle Kunden  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Kunden  <br/> |
-|3  <br/> |Spam mit hoher Vertrauenswürdigkeit  <br/> |HSPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Kunden  <br/> |
-|4   <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553), [Spoofing intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Nur ATP  <br/> |
-|5  <br/> |Spam  <br/> |SPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Kunden  <br/> |
-|6  <br/> |Massen  <br/> |MASSEN  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Kunden  <br/> |
-|7   <br/> |Domäne des Identitätswechsels  <br/> |DIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Nur ATP  <br/> |
-|8   <br/> |Benutzeridentitätswechsel  <br/> |UIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Nur ATP  <br/> |
+|1  <br/> |Schadsoftware  <br/> |MALW  <br/> |[Malware-Richtlinie](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|3   <br/> |Spam mit hoher Vertrauenswürdigkeit  <br/> |HSPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|4   <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553), [Spoofing intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Alle Organisationen  <br/> |
+|5   <br/> |Spam  <br/> |SPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|6   <br/> |Massen  <br/> |MASSEN  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|7   <br/> |Domäne des Identitätswechsels  <br/> |DIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur  <br/> |
+|8   <br/> |Benutzeridentitätswechsel  <br/> |UIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur <br/> |
    
 Wenn Sie mehrere verschiedene Anti-Phishing-Richtlinien haben, wird die jeweils die höchste Priorität angewendet. Angenommen Sie, Sie haben zwei Richtlinien:
   
 |**Richtlinie**|**Priority**|**Benutzer-Domäne Identitätswechsel**|**Anti-spoofing**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |Ein  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |Ein  <br/> |
    
 Wenn eine Nachricht stammen und wird als Spoofing- und Benutzer Identitätswechsel identifiziert und Richtlinie A und B der Richtlinie, ist die gleiche Gruppe von Benutzern zugeordnet und klicken Sie dann die Nachricht wird als ein Spoofing behandelt, aber keine Aktion, da angewandt Anti-spoofing ist deaktiviert. , und SPOOFING führt eine höhere Priorität (4) als Benutzeridentitätswechsel (8).
   
@@ -683,7 +683,7 @@ Microsoft selbst eingeführt diese Funktion zuerst bei Wochen vor der Bereitstel
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Bringt Microsoft dieses Feature Outlook.com und nicht - erweiterte Threat Protection Kunden von Office 365?
 
-Anti-spoofing Protection wird werden zunächst eingeführt ATP/E5 Kunden und in der Zukunft an die andere Benutzer freigegeben werden kann. Jedoch ist dies der Fall ist, möglicherweise einige Funktionen, die nicht wie reporting angewendet werden und benutzerdefinierte außer Kraft gesetzt.
+Anti-spoofing von Microsoft-Technologie wurde zunächst auf die Organisationen bereitgestellt, die ein Abonnement von Office 365 Enterprise E5 hatte oder das Office 365 erweiterte Threat Protection (ATP) Add-on für ihr Abonnement erworben haben. Ab Oktober, 2018 haben wir den Schutz für Organisationen erweitert, die als auch Exchange Online Protection (EOP) haben. Es kann es in der Zukunft für Outlook.com freigeben. Jedoch ist dies der Fall ist, wird möglicherweise einige Funktionen, die nicht wie reporting angewendet werden und benutzerdefinierte überschreibt.
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Wie kann ich Spam oder nicht-Spam-Nachrichten an Microsoft gemeldet?
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 erweiterte Threat Protection umfasst Spoofing Intelligence, sicheren Links, sichere Anlagen und erweiterten Anti-Phishing-Funktionen. Erweiterten Schutz ist auch in Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert wird.
-ms.openlocfilehash: fed816ec8cd0e3e7a6b5118fde35d81647b94f02
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454352"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496859"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -51,7 +51,7 @@ Sobald Sie ATP haben, besteht der nächste Schritt für Ihr Sicherheitsteam zum 
   
 ## <a name="define-policies-for-atp"></a>Definieren von Richtlinien für ATP
 
-- Vor Angriffen zu schützen, die Senden von e-Mail-Nachrichten, die **[ATP Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-atp-anti-phishing-policies.md)** einschließlich Identitätswechsel-basierten Angriffen aus vertrauenswürdigen Personen oder Domänen werden angezeigt 
+- Vor Angriffen zu schützen, die Senden von e-Mail-Nachrichten, die **[ATP Anti-Phishing-Richtlinien in Office 365 einrichten](set-up-anti-phishing-policies.md)** einschließlich Identitätswechsel-basierten Angriffen aus vertrauenswürdigen Personen oder Domänen werden angezeigt 
 
 - [Benutzerdefinierte Liste der blockierten URLs](set-up-a-custom-blocked-urls-list-wtih-atp.md) und [benutzerdefinierte Liste für "Nicht rewrite" URLs](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) Ihrer Organisation einschließlich **[Einstellungsrichtlinien ATP sichere Links in Office 365](set-up-atp-safe-links-policies.md)**
     
@@ -69,7 +69,7 @@ Nach Ihrer Richtlinien ATP vorhanden sind, stehen Berichte anzeigen, wie der Die
     
 3. Falls erforderlich, ändern Sie Ihre Sicherheitsrichtlinien. Finden Sie in den folgenden Ressourcen:
 
-  - [ATP Anti-Phishing-Richtlinien in Office 365](set-up-atp-anti-phishing-policies.md)
+  - [ATP Anti-Phishing-Richtlinien in Office 365](set-up-anti-phishing-policies.md)
     
   - [Sichere Links ATP Richtlinien in Office 365](set-up-atp-safe-links-policies.md)
     
