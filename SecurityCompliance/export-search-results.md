@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center auf einen lokalen Computer. Emaill e-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites als systemeigene Office-Dokumente exportiert werden. '
-ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962961"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494066"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exportieren der Inhaltssuchergebnisse aus dem Office 365 Security &amp; Compliance Center 
 
@@ -282,7 +282,7 @@ Nachfolgend finden Sie weitere Informationen zum Exportieren von Suchergebnissen
     
     Wenn Sie teilweise indizierte Elemente exportieren, werden teilweise indizierten Postfachelemente in einer separaten PST-Datei, unabhängig von der Option exportiert, die Sie unter **Exchange exportieren Inhalte als**auswählen.
 
-- Wenn die Suche teilweise indizierte Elemente zurückgegeben werden Ergebnisse (, da die anderen Eigenschaften einer teilweise indizierter Elemente den Suchkriterien), und klicken Sie dann mit den Suchergebnissen regulären diese teilweise indizierten exportiert werden. Daher, wenn Sie indizierte Elemente und teilweise indizierte Elemente exportieren (durch Auswählen der Exportoption **alle Elemente, einschließlich Schriftarten, die unbekanntes Format haben, verschlüsselt werden, oder aus anderen Gründen indiziert wurden nicht** ), exportiert die teilweise indizierte Elemente mit dem regulären Reslts werden im Bericht Results.csv aufgeführt. Sie werden nicht in den Bericht nicht indizierten items.csv aufgeführt werden.
+- Wenn die Suche teilweise indizierte Elemente zurückgegeben werden Ergebnisse (, da die anderen Eigenschaften einer teilweise indizierter Elemente den Suchkriterien), und klicken Sie dann mit den Suchergebnissen regulären diese teilweise indizierten exportiert werden. Daher, wenn Sie indizierte Elemente und teilweise indizierte Elemente exportieren (durch Auswählen der Exportoption **alle Elemente, einschließlich Schriftarten, die unbekanntes Format haben, verschlüsselt werden, oder aus anderen Gründen indiziert wurden nicht** ), exportiert die teilweise indizierte Elemente mit dem regulären Ergebnis werden im Bericht Results.csv aufgeführt. Sie werden nicht in den Bericht nicht indizierten items.csv aufgeführt werden.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportieren einzelne Nachrichten oder PST-Dateien
   
