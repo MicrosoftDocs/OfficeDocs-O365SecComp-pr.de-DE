@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 9/5/2018
+ms.date: 10/11/2018
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: ATP Phishing-Schutz, die Teil von Office 365 erweiterte Threat Protection kann Ihre Organisation vor böswilligen Identitätswechsel-basierte Phishingangriffe und andere Phishingangriffen schützen. Wenn Sie ein Office 365 Enterprise-global oder Sicherheitsadministrator sind, können Sie ATP Anti-Phishing Richtlinien einrichten. Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine ATP Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
-ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 37a38863296ab87feaade93b7939029b9306ec30
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955447"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496566"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Einrichten von ATP-Antiphishingrichtlinien in Office 365
 
