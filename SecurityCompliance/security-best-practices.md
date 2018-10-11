@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Minimieren Sie das Potenzial der Verletzung Daten oder einem kompromittierten Konto, indem Sie diese empfohlenen bewährten Methoden befolgen.
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530013"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498091"
 ---
 # <a name="security-best-practices-for-office-365"></a>Bewährte Methoden für die Sicherheit in Office 365
 
@@ -54,7 +54,7 @@ Einrichten von Richtlinien basierend auf Ihrer geschäftlichen Anforderungen abw
   
 - [Übersicht über Office 365-Cloud-App-Sicherheit](office-365-cas-overview.md)
     
-- [Aktivieren der Office 365-Cloud-App-Sicherheit](turn-on-office-365-cas.md)
+- [Aktivieren von Office 365 Cloud App Security](turn-on-office-365-cas.md)
     
 ## <a name="secure-mail-flow"></a>Sichere e-Mail-Fluss
 
@@ -70,9 +70,9 @@ Implementieren Sie die Rich-Text Featuregruppe in Exchange Online Protection und
     
 - Wenn Sie eine benutzerdefinierte Domäne für Ihre Organisation in Office 365 verwenden, richten Sie SPF, DKIM, und klicken Sie dann DMARC, zum Überprüfen von e-Mails, die von Ihrer Organisation gesendet und als Hilfe spoofing zu verhindern:
     
-  - [Einrichten von SPF in Office 365, um spoofing zu verhindern](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Einrichten von SPF in Office 365, um spoofing zu verhindern](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
-  - [Verwendung mit DKIM überprüfen Sie ausgehende e-Mail-Nachrichten, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Verwendung mit DKIM überprüfen Sie ausgehende e-Mail-Nachrichten, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
   - [DMARC verwenden, um e-Mail in Office 365 zu überprüfen](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     

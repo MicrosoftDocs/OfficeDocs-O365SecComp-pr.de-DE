@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für den Mandanten geltende Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diesen Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 5c989b5a8abace686df50b6847a0a182393927d5
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496869"
+ms.locfileid: "25498101"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -37,7 +37,7 @@ Die Office 365-Sicherheit &amp; Compliance Center umfasst Funktionen, die Ihre U
 |**Sichere Anlagen in ATP** <br/> |Nein  <br/> | Schützen von Dateien in SharePoint, OneDrive und Microsoft-Teams, auf der Hauptseite für sichere Anlagen durch Aktivieren des Kontrollkästchens:  <br/>  • Schalten ATP für SharePoint, OneDrive und Microsoft-Teams  <br/> <br> Hinzufügen einer neuen Richtlinie für sichere Anlage mit diesen Einstellungen:  <br/>  • Blockieren – die aktuellen und zukünftigen-e-Mails und Anlagen mit gefundene Malware blockieren (Wählen Sie diese Option)  <br/>  • Enable umleiten – (Aktivieren Sie dieses Kontrollkästchen, und geben Sie eine e-Mail-Adresse, beispielsweise ein Konto Admin und Quarantäne)  <br/>  • Die obige Auswahl anwenden, wenn schadsoftwareprüfung für Anlagen Timeout oder Fehler tritt auf, (Aktivieren Sie dieses Kontrollkästchen)  <br/>  • Auf angewendet – die Domäne des Empfängers ist (Wählen Sie Ihre Domäne)  <br/>  <br>Weitere Informationen: [Einrichten von Richtlinien für Office 365 ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP sichere Links** <br/> |Ja  <br/> | Fügen Sie diese Einstellung auf die Standardrichtlinie für die gesamte Organisation:  <br/> • Verwendung sicherer Links in: Office 365 ProPlus, Office für iOS und Android (Wählen Sie diese Option aus).  <br/> <br>Empfohlene Richtlinien für bestimmte Empfänger:  <br/>  • URLs umgeschrieben werden und mit einer Liste bekannter bösartiger links abgeglichen werden, wenn Benutzer auf den Link klickt (Wählen Sie diese Option aus).  <br/>  • Verwenden sichere Anlagen zu überprüfenden Bücher (Aktivieren Sie dieses Kontrollkästchen).  <br/>  • Auf angewendet – die Domäne des Empfängers ist (Wählen Sie Ihre Domäne).  <br/> <br> Weitere Informationen: [Office 365 ATP sichere Links](atp-safe-links.md).  <br/> |
 |**Anti-Spam (Mail-Filterung)** <br/> |Ja  <br/> | Was für die Überwachung:  <br/>  • Zu viel spam – wählen Sie die benutzerdefinierte Einstellungen und bearbeiten die Standardrichtlinie für Spam-Filter.  <br/>  • Spoofing Intelligence – Absender, die Ihre Domäne spoofing sind überprüfen. Blockieren oder Zulassen von diesen Absendern.<br/>  <br>Weitere Informationen: [Office 365 E-Mail Anti-Spam-Schutz](anti-spam-protection.md).  <br/> |
-|**DKIM (DomainKeys identifiziert Mail)** <br/> |Ja  <br/> |DKIM ist ein Authentifizierungsprozess, der, die schützen kann Absender und Empfänger aus gefälscht (gefälschten) und Phishing-e-Mail. Ihres Mandanten umfasst eine Standardsignatur für Ihre Domäne. Erstellen Sie eine zusätzliche DKIM-Signatur, wenn Sie benutzerdefinierte Domänen zu Ihrem Mandanten hinzufügen.<br/> <br>Weitere Informationen: [Verwendung DKIM überprüfen Sie ausgehende e-Mail-Nachrichten, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |
+|**DKIM (DomainKeys identifiziert Mail)** <br/> |Ja  <br/> |DKIM ist ein Authentifizierungsprozess, der, die schützen kann Absender und Empfänger aus gefälscht (gefälschten) und Phishing-e-Mail. Ihres Mandanten umfasst eine Standardsignatur für Ihre Domäne. Erstellen Sie eine zusätzliche DKIM-Signatur, wenn Sie benutzerdefinierte Domänen zu Ihrem Mandanten hinzufügen.<br/> <br>Weitere Informationen: [Verwendung DKIM überprüfen Sie ausgehende e-Mail-Nachrichten, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) <br/> |
    
 ## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>Anzeigen von Dashboards und Berichte in das Wertpapier &amp; Compliance Center
 
