@@ -3,20 +3,20 @@ title: Ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-S
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 11/30/2016
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: Sie können ändern, die die Standardgröße des PST-Dateien, die beim Exportieren von eDiscovery-Suchergebnissen jeweils auf Ihrem Computer heruntergeladen werden.
-ms.openlocfilehash: 1479db72117729d2e5cfa6feec1d9a0d9a60ffb5
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Sie können die Standardgröße von PST-Dateien ändern, die beim Exportieren von eDiscovery-Suchergebnisse auf den Computer heruntergeladen werden.
+ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522246"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse
 

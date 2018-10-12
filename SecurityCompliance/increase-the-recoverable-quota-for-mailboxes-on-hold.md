@@ -3,7 +3,7 @@ title: Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Aktivieren Sie das Archivpostfach, und schalten Sie automatisch erweitert, um die Größe des Ordners "wiederherstellbare Elemente" für ein Postfach in Office 365 erhöhen Archivierung. '
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782092"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522276"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 
@@ -35,7 +35,7 @@ Um das Risiko Überschreitung dieses Grenzwerts reduzieren, ist das Speicherkont
 |**Gesamtspeicherkontingent für den Ordner „Wiederherstellbare Elemente“** <br/> |Unbegrenzt  <br/> |Unbegrenzt  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Das ursprüngliche Speicherkontingent für das Archivpostfach beträgt 100 GB für Benutzer mit einer Lizenz für Exchange Online (Plan 2). Jedoch wenn erweiterbares Archivierung aktiviert ist für Postfächer in der Warteschleife, das Speicherkontingent für beide das Archivpostfach und des Ordners wiederherstellbare Elemente auf 110 GB erhöht. Zusätzliche Archiv Speicherplatz wird bereitgestellt, bei Bedarf unbegrenzt Archivspeicher ergibt. Weitere Informationen zum Erweitern von automatischen Archivierung, finden Sie unter [Übersicht über die uneingeschränkte Archivierung in Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>Das ursprüngliche Speicherkontingent für das Archivpostfach beträgt 100 GB für Benutzer mit einer Lizenz für Exchange Online (Plan 2). Wenn die Archivierung erweiterbares für Postfächer in der Warteschleife aktiviert ist, wird das Speicherkontingent für das Archivpostfach und des Ordners wiederherstellbare Elemente auf 110 GB erhöht. Zusätzliche Archiv Speicherplatz wird bereitgestellt, bei Bedarf unbegrenzt Archivspeicher ergibt. Weitere Informationen zum Erweitern von automatischen Archivierung, finden Sie unter [Übersicht über die uneingeschränkte Archivierung in Office 365](unlimited-archiving.md). 
   
 Wenn das Speicherkontingent für den Ordner „Wiederherstellbare Elemente“ im primären Postfach eines aufzubewahrenden Postfachs seinen Grenzwert bald erreicht, können Sie Folgendes ausführen:
   
@@ -60,7 +60,7 @@ Im restlichen Thema werden die schrittweisen Anweisungen zum Erstellen einer ben
 
 Der erste Schritt ist zum Erstellen eines benutzerdefinierten aufbewahrungstags (Aufbewahrungsrichtlinien-Tag oder Berichtskopf genannt) für den Ordner "wiederherstellbare Elemente". Wie bereits erklärt verschiebt diese außer Elemente aus dem Ordner "wiederherstellbare Elemente" im primären Postfach des Benutzers in den Ordner "wiederherstellbare Elemente" im Archivpostfach des Benutzers. Sie müssen PowerShell verwenden, um ein Aufbewahrungsrichtlinientag für "wiederherstellbare Elemente" zu erstellen. Sie können nicht im Exchange Administrationscenter (EAC) verwenden. 
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Führen Sie den folgenden Befehl zum Erstellen eines Aufbewahrungstags für den Ordner „Wiederherstellbare Elemente“ aus:  
     

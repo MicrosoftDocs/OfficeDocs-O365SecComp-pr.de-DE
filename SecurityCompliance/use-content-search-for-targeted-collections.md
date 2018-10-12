@@ -3,7 +3,7 @@ title: Verwenden Sie Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 12/19/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,18 +11,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center gezielte Websitesammlungen ausführen. Eine Sammlung bedeutet, dass Sie davon überzeugt sind, dass auf eine Anfrage reagieren oder privilegierten Elemente in einem bestimmten Postfach oder einer Website Ordner befinden. Verwenden Sie das Skript in diesem Artikel erhalten Sie die Ordner-ID oder den Pfad für die bestimmten Ordner Postfach oder einer Website, die Sie suchen möchten.
-ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038298"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522286"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden Sie Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
 Das Inhaltssuche-Feature in die Office 365-Sicherheit &amp; Compliance Center nicht zur Verfügung, eine direkte Weise in der Benutzeroberfläche zum Durchsuchen bestimmter Ordner in Exchange-Postfächern oder SharePoint und OneDrive for Business-Websites. Es ist jedoch möglich, bestimmte Ordner (einen zielgerichteten Collection bezeichnet) zu suchen, indem Sie die Ordner-ID oder den Pfad in die eigentliche Suche-Abfragesyntax. Verwenden zum Ausführen einer Sammlung Inhaltssuche ist nützlich, wenn Sie davon überzeugt sind, dass auf eine Anfrage reagieren oder privilegierten Elemente in einem bestimmten Postfach oder einer Website Ordner befinden. Das Skript können in diesem Artikel Sie um die Ordner-ID für Postfachordner oder der Pfad zum Ordner auf einer SharePoint- und OneDrive for Business-Website zu erhalten. Anschließend können Sie die Ordner-ID oder den Pfad in einer Suchabfrage zurückzugebenden Elemente im Ordner gespeichert.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbemerkung
 
 - Sie müssen ein Mitglied der Rollengruppe eDiscovery-Manager in das Wertpapier sein &amp; Compliance Center zum Ausführen des Skripts in Schritt 1. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
     
@@ -67,7 +67,7 @@ Zeigt eine Liste der Postfachordner oder Pfadnamen Website:
   #    * If an email address is supplied: list the folders for the target mailbox.          #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
   #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appeneded to the folder ID or path ID to use in a Content Search.              #
+  #      appended to the folder ID or path ID to use in a Content Search.               #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -78,7 +78,7 @@ Zeigt eine Liste der Postfachordner oder Pfadnamen Website:
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security &amp; Complaince Center (Exchange Online Protection - EOP)
+  # Authenticate with Exchange Online and the Security &amp; Compliance Center (Exchange Online Protection - EOP)
   if (!$credentials)
   {
       $credentials = Get-Credential
@@ -120,13 +120,13 @@ Zeigt eine Liste der Postfachordner oder Pfadnamen Website:
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security &amp; Complaince Center
+      # Authenticate with the Security &amp; Compliance Center
       if (!$SccSession)
       {
           $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
           Import-PSSession $SccSession -AllowClobber -DisableNameChecking
       }
-      # Clean-up, if the the script was aborted, the search we created might not have been deleted.  Try to do so now.
+      # Clean-up, if the script was aborted, the search we created might not have been deleted.  Try to do so now.
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
       # Create a Content Search against the SharePoint Site or OneDrive for Business site and only search for folders; wait for the search to complete
       $complianceSearch = New-ComplianceSearch -Name $searchName -ContentMatchQuery "contenttype:folder" -SharePointLocation $siteUrl

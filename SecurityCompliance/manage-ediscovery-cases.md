@@ -3,19 +3,19 @@ title: Verwalten von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compli
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center zum Erstellen von eDiscovery-Haltestatus sowie zum zugreifen und Verwalten von eDiscovery-Fälle in Ihrer Organisation.
-ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038328"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522306"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Verwalten von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center
 
@@ -75,7 +75,7 @@ Der erste Schritt besteht die entsprechenden Berechtigungen eDiscovery-bezogene 
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Berechtigungen**, und führen Sie dann eine der folgenden basierend auf den eDiscovery-Berechtigungen, die Sie zuweisen möchten.
     
@@ -87,7 +87,7 @@ Der erste Schritt besteht die entsprechenden Berechtigungen eDiscovery-bezogene 
     
 4. Nachdem Sie alle Benutzer hinzugefügt haben, klicken Sie auf **Fertig**, klicken Sie auf **Speichern** , um die Änderungen an der Rollengruppe zu speichern, und klicken Sie dann auf **Schließen**.
     
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
+
   
 ## <a name="step-2-create-a-new-case"></a>Schritt 2: Erstellen einer neuen Anfrage
 <a name="step2_1"> </a>
@@ -96,7 +96,7 @@ Im nächste Schritt ist erstellen Sie einen neue eDiscovery-Fall. Sie müssen ei
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery**, und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) **Erstellen einer Anfrage**.
     
@@ -108,8 +108,6 @@ Im nächste Schritt ist erstellen Sie einen neue eDiscovery-Fall. Sie müssen ei
     
     > [!TIP]
     > Nachdem Sie einen neuen Vorgang erstellen, können Sie sie jederzeit umbenennen. Klicken Sie einfach auf den Namen der Anfrage auf der Seite **eDiscovery** . Klicken Sie auf der Seite flyoutmenü **Verwalten in diesem Fall** ändern Sie den Namen in das Feld unter **Name**angezeigt, und speichern Sie die Änderung. 
-  
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="step-3-add-members-to-a-case"></a>Schritt 3: Hinzufügen von Mitgliedern zu einer Anfrage
 <a name="step2a_1"> </a>
@@ -136,8 +134,6 @@ Nachdem Sie eine neue Anfrage erstellt haben, besteht der nächste Schritt, um d
     Klicken Sie in **diesem Fall verwalten**auf **Speichern** , um die neue Liste der Groß-/Kleinschreibung Elemente zu speichern. 
     
 6. Klicken Sie auf **Speichern** , um die neue Liste der Groß-/Kleinschreibung Elemente zu speichern. 
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Schritt 4: Platzieren Speicherorte für Inhalte auf
 <a name="step3_1"> </a>
@@ -178,11 +174,10 @@ Zum Erstellen eines Haltestatus für einen eDiscovery-Fall:
   
 2. **Websites** Klicken Sie auf **Hinzufügen**![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) an SharePoint und OneDrive for Business-Websites in der Warteschleife platziert. Geben Sie die URL für die einzelnen Standorte, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365-Gruppe oder einem Microsoft-Team hinzufügen. 
     
-<<<<<<< HEAD finden Sie unter der [Verwalten von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1) Abschnitt Tipps zur Office 365-Gruppen und Microsoft-Teams, in der Warteschleife an. === Finden Sie [Weitere Informationen](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) im Abschnitt Tipps zur Office 365-Gruppen und Microsoft-Teams, in der Warteschleife an. 
->>>>>>> Deniseb-Konvertierung
+    Finden Sie [Weitere Informationen](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) im Abschnitt Tipps zum Bereitstellen von Office 365-Gruppen und Microsoft-Teams, in der Warteschleife an. 
     
     > [!NOTE]
-    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+    > In seltenen Fällen einer Person für Benutzerprinzipalnamen (UPN) geändert wird wird die URL für ihr Konto OneDrive auch geändert werden, um den neuen UPN einzubinden. In diesem Fall müssen Sie den Haltestatus zu ändern, indem Sie neue OneDrive-URL des Benutzers hinzufügen und Entfernen von der alte Datenbankserver. 
   
 3. **Öffentliche Ordner** Klicken Sie auf **alle öffentlichen Ordner halten** , um alle öffentlichen Ordner in Ihrer Exchange Online-Organisation auf Archiv zu platzieren. Notiz, die Sie bestimmte Öffentliche Ordner zu hinzufügen auswählen können nicht halten. Lassen Sie die Option **nicht halten Sie Öffentliche Ordner** ausgewählt, wenn Sie keinen Haltestatus für Öffentliche Ordner aufnehmen möchten. 
     
@@ -199,8 +194,6 @@ Zum Erstellen eines Haltestatus für einen eDiscovery-Fall:
 2. Klicken Sie unter **Umständen**auf **Bedingung hinzufügen** , um eine oder mehrere Bedingungen einschränken die Suchabfrage für den Haltestatus hinzuzufügen. Jede Bedingung hinzugefügt der KQL Search-Abfrage, die erstellt und ausgeführt, wenn Sie den Haltestatus erstellen eine-Klausel. Beispielsweise können Sie einen Datumsbereich angeben, sodass e-Mail oder Website Dokumente, die in dem Bereich Datum erstellt wurden, in die Warteschleife gestellt werden. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch den **AND** -Operator verbunden. Das bedeutet, die Elemente beide erfüllen müssen halten die Stichwortabfrage und die Bedingung auf platziert werden. 
     
 9. Halten Sie nach der Konfiguration einer abfragebasierte, und klicken Sie auf **Fertig stellen** , um den Haltestatus zu erstellen. 
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ### <a name="hold-statistics"></a>Halten Sie Statistiken
 
@@ -217,8 +210,6 @@ Beachten Sie die folgenden Punkte berücksichtigen zu halten Statistiken:
 - Sie können die neuesten abrufen halten, schätzen Sie Statistiken, indem Sie auf eine Suche erneut ausführen, um **Statistiken zu aktualisieren** , die die aktuelle Anzahl von Elementen in der Warteschleife berechnet. Klicken Sie auf **Aktualisieren**, falls erforderlich,![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) in der Symbolleiste auf die Warteschleife Statistiken im Detailbereich zu aktualisieren. 
     
 - Normal für die Anzahl der Elemente auf halten über einen Zeitraum zu erhöhen, da Benutzer, dessen Postfach oder Website in der Warteschleife ist, in der Regel senden oder Empfangen von neuen e-Mail-Nachricht und erstellen neue SharePoint- und OneDrive für Geschäftsdokumente.
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Schritt 5: Erstellen Sie und führen Sie einer eine Anfrage zugeordnete Inhaltssuche aus
 <a name="step4_1"> </a>
@@ -265,13 +256,11 @@ Nach ein eDiscovery-Fall erstellt wird und alle Verwalter im Zusammenhang mit de
     
 7. Ausgewählt, nachdem Sie die Speicherorte für Inhalte zu suchen, klicken Sie auf **Weiter**.
     
-8. Auf der Seite **Neue Suche** können Sie Schlüsselwörter und Bedingungen zum Erstellen der Suchabfrage hinzufügen. 
-    
-    ![Suchkriterien und Bedingungen](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. Auf der Seite **Neue Suche** können Sie Schlüsselwörter und Bedingungen zum Erstellen der Suchabfrage hinzufügen. <br/>![Suchkriterien und Bedingungen](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-1. Im Feld unter **Was möchten Sie uns suchen?**, geben Sie in das Feld eine Suchabfrage. Sie können angeben, Schlüsselwörter, Nachricht Eigenschaften wie gesendet und empfangen, Datumsangaben oder Dokumenteigenschaften wie Dateinamen oder das Datum, das ein Dokument zuletzt geändert wurde. Sie können eine komplexere Abfragen verwenden, die einen booleschen Operators, wie **und**, **oder**, **nicht**, **NEAR**oder **ONEAR**verwenden. Sie können auch suchen für vertrauliche Informationen (wie Sozialversicherungsnummern) in Dokumenten, oder suchen Sie nach Dokumenten, die extern freigegeben haben. Wenn Sie das Schlüsselwort Feld leer lassen, werden alle Inhalte, die in der angegebenen Speicherorte für Inhalte befindet sich in den Suchergebnissen enthalten sein. 
+9. Im Feld unter **Was möchten Sie uns suchen?**, geben Sie in das Feld eine Suchabfrage. Sie können angeben, Schlüsselwörter, Nachricht Eigenschaften wie gesendet und empfangen, Datumsangaben oder Dokumenteigenschaften wie Dateinamen oder das Datum, das ein Dokument zuletzt geändert wurde. Sie können eine komplexere Abfragen verwenden, die einen booleschen Operators, wie **und**, **oder**, **nicht**, **NEAR**oder **ONEAR**verwenden. Sie können auch suchen für vertrauliche Informationen (wie Sozialversicherungsnummern) in Dokumenten, oder suchen Sie nach Dokumenten, die extern freigegeben haben. Wenn Sie das Schlüsselwort Feld leer lassen, werden alle Inhalte, die in der angegebenen Speicherorte für Inhalte befindet sich in den Suchergebnissen enthalten sein. 
     
-2. Sie können das Kontrollkästchen **Schlüsselwortliste anzeigen** und den Typ ein Schlüsselworts in jede Zeile klicken. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile der **oder** -Operator in der Suchabfrage vorhanden, die erstellt wird. 
+10. Sie können das Kontrollkästchen **Schlüsselwortliste anzeigen** und den Typ ein Schlüsselworts in jede Zeile klicken. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile der **oder** -Operator in der Suchabfrage vorhanden, die erstellt wird. 
     
     ![Schlüsselwörter für die Suche](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
@@ -279,19 +268,17 @@ Nach ein eDiscovery-Fall erstellt wird und alle Verwalter im Zusammenhang mit de
     
     [Weitere Informationen](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo)finden Sie weitere Informationen zur Verwendung der Liste Schlüsselwörter.
     
-3. Klicken Sie auf **Abfrage für Tippfehler überprüfen** , überprüfen Sie Ihre Abfrage für nicht unterstützte Zeichen und boolesche Operatoren, die möglicherweise nicht groß geschrieben werden. Nicht unterstützte Zeichen werden häufig ausgeblendet und in der Regel verursacht einen Fehler beim Suchen oder unbeabsichtigte Ergebnisse zurückzugeben. Weitere Informationen zu nicht unterstützten Zeichen, die überprüft werden, finden Sie unter [Content Suchabfrage Fehler überprüfen](check-your-content-search-query-for-errors.md).
+11. Klicken Sie auf **Abfrage für Tippfehler überprüfen** , überprüfen Sie Ihre Abfrage für nicht unterstützte Zeichen und boolesche Operatoren, die möglicherweise nicht groß geschrieben werden. Nicht unterstützte Zeichen werden häufig ausgeblendet und in der Regel verursacht einen Fehler beim Suchen oder unbeabsichtigte Ergebnisse zurückzugeben. Weitere Informationen zu nicht unterstützten Zeichen, die überprüft werden, finden Sie unter [Content Suchabfrage Fehler überprüfen](check-your-content-search-query-for-errors.md).
     
-4. Fügen Sie unter **Conditions**Bedingungen auf eine Suchabfrage aus, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben. Jede Bedingung hinzugefügt der KQL Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch den **AND** -Operator verbunden. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und die Bedingung, die in den Ergebnissen enthalten sein müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. 
+12. Fügen Sie unter **Conditions**Bedingungen auf eine Suchabfrage aus, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben. Jede Bedingung hinzugefügt der KQL Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch den **AND** -Operator verbunden. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und die Bedingung, die in den Ergebnissen enthalten sein müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. 
     
     Weitere Informationen zum Erstellen einer Suchabfrage sowie zur Verwendung von Bedingungen finden Sie unter [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-9. Klicken Sie auf **Suche**, um die Sucheinstellungen zu speichern und die Suche zu starten. 
+13. Klicken Sie auf **Suche**, um die Sucheinstellungen zu speichern und die Suche zu starten. 
     
     Die Suche wird gestartet. Nach einer gewissen wird eine Schätzung der Suchergebnisse im Detailfenster angezeigt. Die Schätzung für das enthält die Gesamtgröße und die Anzahl der Elemente, die die Suchkriterien entsprechen. Die Schätzung für das Search enthält auch die Anzahl der nicht-indizierten Elemente in die Speicherorte für Inhalte, die durchsucht wurden. In die Suchstatistik im Detailbereich angezeigt wird die Anzahl der nicht-indizierten Elemente, die den Suchkriterien entsprechen nicht enthalten sein. Wenn ein nicht-indizierten Element entspricht die Suche Abfragen (da es sich um eine andere Nachricht oder ein Dokument Eigenschaften den Suchkriterien entsprechen), werden nicht es in die geschätzte Anzahl der nicht-indizierten Elementen enthalten sein. Wenn ein nicht-indizierten Element durch die Suchkriterien ausgeschlossen wird, wird nicht in die Schätzung des nicht-indizierten Elementen eingeschlossen werden.
     
     Nachdem die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzuzeigen. Klicken Sie auf **Aktualisieren**, falls erforderlich,![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) zum Aktualisieren der Informationen im Detailbereich. 
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Schritt 6: Exportieren Sie die Ergebnisse einer Inhaltssuche eine Anfrage zugeordnete
 <a name="step5_1"> </a>
@@ -381,8 +368,6 @@ Als Alternative zum Exportieren Sie die Ergebnisse einer einzelnen Content Suche
 - Wenn Sie einen Export aus der Seite **Exporte** in einem eDiscovery-Fall neu starten, werden die Suchergebnisse, die in den Bereich der Azure-Speicher übertragen werden die vorherigen Ergebnisse überschrieben; die vorherigen Ergebnisse gab es übertragen nicht verfügbar heruntergeladen werden. 
     
 - Die Ergebnisse von mehreren Suchvorgängen für die Analyse in erweiterten eDiscovery vorbereitet ist nicht verfügbar. Sie können nur die Ergebnisse von einem einzelnen Suchvorgang für die Analyse in erweiterten eDiscovery vorbereiten.
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Schritt 7: Vorbereiten der Suchergebnisse für erweiterte eDiscovery
 <a name="step7_1"> </a>
@@ -415,8 +400,6 @@ Wenn Sie die Suchergebnisse für erweiterte eDiscovery vorbereiten, extrahiert o
     Die Suchergebnisse sind für die Analyse mit erweiterten eDiscovery vorbereitet.
     
 7. Klicken Sie im Detailbereich auf **Überprüfen Vorbereitung Status** zum Anzeigen von Informationen über den Prozess zur Vorbereitung. Wenn die Vorbereitung abgeschlossen ist, navigieren Sie zu der Groß-/Kleinschreibung im erweiterten eDiscovery zum Verarbeiten der Daten für die Analyse. 
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Schritt 8: Wechseln Sie zu der erweiterten eDiscovery-Fall
 <a name="gotoAeD_1"> </a>
@@ -445,8 +428,6 @@ So navigieren Sie zu einem Fall in Advanced eDiscovery:
     
 > [!TIP]
 > Klicken Sie auf **Schalter, mit dem eDiscovery** , um die gleiche Groß-/Kleinschreibung in das Wertpapier wieder zu &amp; Compliance Center. 
-  
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-9-close-a-case"></a>(Optional) Schritt 9: Schließen Sie eine Anfrage
 <a name="closecase_1"> </a>
@@ -484,8 +465,6 @@ So schließen Sie eine Anfrage:
 7. Klicken Sie auf der Seite **eDiscovery** auf ![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) zum Aktualisieren des Status von den geschlossenen Fall **Aktualisieren** . Es kann bis zu 60 Minuten für die Durchführung der Schließvorgang dauern. 
     
     Wenn der Vorgang abgeschlossen ist, wird der Status der Anfrage in **Schließen** auf der Seite **eDiscovery** geändert. Klicken Sie auf den Namen der Groß-/Kleinschreibung erneut aus, um die Seite **Verwalten in diesem Fall** flyoutmenü anzuzeigen, die Informationen zu enthält die Groß-/Kleinschreibung geschlossen wurde und, die es geschlossen. 
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-10-re-open-a-closed-case"></a>(Optional) Schritt 10: Eine geschlossene Anfrage erneut öffnen
 <a name="reopencase_1"> </a>
@@ -511,8 +490,6 @@ Wenn Sie eine Anfrage erneut öffnen, werden nicht automatisch alle Haltestatus 
 6. Klicken Sie auf der Seite **eDiscovery** auf ![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** zum Aktualisieren des Status der Anfrage erneut geöffnet. Es kann bis zu 60 Minuten für den Prozess erneut öffnen, für die Durchführung dauern. 
     
     Wenn der Vorgang abgeschlossen ist, wird der Status der Anfrage auf der Seite **eDiscovery** in **aktiv** geändert. 
-    
-[Zurück zum Seitenanfang](manage-ediscovery-cases.md#top)
   
 ## <a name="more-information"></a>Weitere Informationen
 <a name="moreinfo_1"> </a>
@@ -536,12 +513,9 @@ Wenn Sie eine Anfrage erneut öffnen, werden nicht automatisch alle Haltestatus 
     
     Schließlich wie vorherige erläutert, eDiscovery-Administratoren in das Wertpapier &amp; Compliance Center werden automatisch als Administratoren in erweiterten eDiscovery hinzugefügt. Dies bedeutet, dass eine Person, die einer eDiscovery-Administrator ist in erweiterten eDiscovery, wie Einrichten von Benutzern, Erstellen von Fällen und Hinzufügen von Daten zu Fällen administrative Aufgaben ausführen kann.
     
-<<<<<<< HEAD
-- **Was lizenzierungsanforderungen Speicherorte für Inhalte in der Warteschleife platziert werden?** Im Allgemeinen Organisationen benötigen ein Abonnement von Office 365 E3 oder höher, um die Speicherorte für Inhalte in die Warteschleife stellen. Eine Lizenz für Exchange Online – Plan 2 ist erforderlich, um Postfächer im Archiv zu platzieren. Weitere Informationen finden Sie unter diesem [FAQ zu eDiscovery](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5). =======
 - **Was lizenzierungsanforderungen Speicherorte für Inhalte in der Warteschleife platziert werden?** Im Allgemeinen Organisationen benötigen ein Abonnement von Office 365 E3 oder höher, um die Speicherorte für Inhalte in die Warteschleife stellen. Eine Lizenz für Exchange Online – Plan 2 ist erforderlich, um Postfächer im Archiv zu platzieren. Weitere Informationen finden Sie unter diese [– häufig gestellte Fragen](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5).
->>>>>>> Deniseb-Konvertierung
-    
-- **Was sollten Sie wissen, zur Suche alle Groß-/Kleinschreibung Inhalte in Schritt 5?** Wie bereits erklärt, suchen Sie die halten Sie die Speicherorte für Inhalte, die für erteilt wurden in die Groß-/Kleinschreibung. Wenn Sie dies tun, wird nur die Inhalte, die den Haltestatus Kriterien entspricht suchen. Ist keine Haltekriterien, wird alle Inhalte durchsucht. Wenn Inhalt auf eine abfragebasierte halten, nur die Inhalte, halten Sie beide Übereinstimmungen Kriterien (aus dem Haltestatus platziert in Schritt 4), und die Suchkriterien (von der Suche in Schritt 5) wird mit den Suchergebnissen zurückgegeben.
+
+- **Was sollten Sie wissen, zur Suche alle Groß-/Kleinschreibung Inhalte in Schritt 5?** Wie bereits erklärt können Sie die Speicherorte für Inhalte suchen, die in der Warteschleife im Fall erteilt wurden. Wenn Sie dies tun, wird nur die Inhalte, die den Haltestatus Kriterien entspricht suchen. Ist keine Haltekriterien, wird alle Inhalte durchsucht. Wenn Inhalt auf eine abfragebasierte halten, nur die Inhalte, halten Sie beide Übereinstimmungen Kriterien (aus dem Haltestatus platziert in Schritt 4), und die Suchkriterien (von der Suche in Schritt 5) wird mit den Suchergebnissen zurückgegeben.
     
     Es folgen einige andere Dinge im Hinterkopf behalten, alle Inhalte Groß-/Kleinschreibung zu suchen:
     

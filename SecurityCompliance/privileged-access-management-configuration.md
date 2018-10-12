@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema, um weitere Informationen zum Konfigurieren der Systemzugriff Management in Office 365
-ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522256"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von Systemzugriff Management in Office 365
 
 > [!IMPORTANT]
 > In diesem Thema werden die Hinweise zur Bereitstellung und Konfiguration für derzeit nur in Office 365 E5 und erweiterte Compliance-SKUs verfügbaren Features behandelt.
 
-In diesem Thema führt Sie durch Aktivieren und Konfigurieren von Systemzugriff Management in Office 365-Organisation. Sie können entweder die mit Berechtigungen Zugriff, die Microsoft 365 Admin Center oder Exchange Management PowerShell zum Verwalten und verwenden. 
+In diesem Thema führt Sie durch Aktivieren und Konfigurieren von Systemzugriff Management in Office 365-Organisation. Sie können Microsoft 365 Admin Center oder Exchange Management PowerShell verwenden, verwalten und Systemzugriff verwenden. 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Aktivieren und Konfigurieren der Verwaltung von Systemzugriff
 

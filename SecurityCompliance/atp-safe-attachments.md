@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: Die sichere Anlagen-Funktion bietet Zeit des klicken Sie auf Überprüfung von e-Mail-Anlagen. Verwenden sichere Anlagen in Ihrer Organisation vor böswilligen Dateien schützen senden oder Empfangen von e-Mail.
-ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: a43f5aac30f074f6331d809c800005596a721204
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522266"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP sichere Anlagen
 
@@ -28,13 +28,13 @@ ATP sichere Anlagen (zusammen mit [Sicheren Links ATP](atp-safe-links.md)) ist T
   
 ATP Protection wurde vor kurzem in Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert. Finden Sie weitere Informationen finden Sie unter [Office 365 erweiterte Bedrohungsschutz für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md).
        
-### <a name="how-it-works"></a>Funktionsweise
+### <a name="how-it-works"></a>Und so funktioniert es
 
 Das Feature ATP sichere Anlagen überprüft e-Mail-Anlagen für die Personen in Ihrer Organisation. Wenn eine Richtlinie ATP sichere Anlagen vorhanden ist und eine Person im Rahmen dieser Richtlinie ihre e-Mails in Office 365 anzeigt, ihre e-Mail-Anlagen werden überprüft und entsprechende Aktionen ausgeführt werden, basierend auf Ihren Richtlinien ATP sichere Anlagen. Je nach Ihrer Richtlinien wie definiert sind können Benutzer arbeiten weiterhin, ohne jemals wissen, dass sie schädliche Dateien gesendet wurden.
   
 Hier sind zwei Beispiele für sichere Anlagen ATP bei der Arbeit.
   
-- **Beispiel 1: E-Mail-Anlage** Nehmen Sie an, dass Kelly eine e-Mail-Nachricht empfängt, die eine Anlage enthält. Ist es nicht eindeutig, Kelly gibt an, ob, dass Anlage sicherer ist oder tatsächlich entwickelt, um die Kelly Benutzeranmeldeinformationen stehlen Schadsoftware enthält. In Kelly-Organisation definiert ein Sicherheitsadministrator eine Richtlinie für den sicheren Anlagen ATP binnen weniger Tage zurückliegt. Mit dem Feature ATP sichere Anlagen ist die e-Mail-Anlage geöffnet und in einer virtuellen Umgebung getestet werden, bevor Kelly er empfängt. Wenn die Anlage böswilligen werden bestimmt wird, wird sie automatisch entfernt. Wenn die Anlage sicher ist, wird geöffnet wie erwartet, wenn Kelly darauf klickt. 
+- **Beispiel 1: E-Mail-Anlage** Nehmen Sie an, dass Kelly eine e-Mail-Nachricht empfängt, die eine Anlage enthält. Ist es nicht eindeutig, Kelly gibt an, ob, dass Anlage sicherer ist oder Malware, die für Kelly Benutzeranmeldeinformationen zu stehlen tatsächlich enthält. In Kelly-Organisation definiert ein Sicherheitsadministrator eine Richtlinie für den sicheren Anlagen ATP binnen weniger Tage zurückliegt. Mit dem Feature ATP sichere Anlagen ist die e-Mail-Anlage geöffnet und in einer virtuellen Umgebung getestet werden, bevor Kelly er empfängt. Wenn die Anlage böswilligen werden bestimmt wird, wird sie automatisch entfernt. Wenn die Anlage sicher ist, wird geöffnet wie erwartet, wenn Kelly darauf klickt. 
     
 - **In Beispiel 2: Datei in SharePoint Online** Nehmen Sie an, dass Jean erhalten eine Datei, und es in einer Dokumentbibliothek in SharePoint Online hochgeladen werden. Jean teilt die Verknüpfung mit der Datei mit dem Rest des Teams, nicht wissen, dass die Datei tatsächlich böswilligen ist. Zum Glück [ATP für SharePoint, OneDrive, und Microsoft-Teams,](atp-for-spo-odb-and-teams.md) die bösartige Datei erkennt und blockiert. Einige Tage später, geht Chris zum Öffnen des Dokuments. Chris kann zwar, dass die Datei vorhanden ist sehen, wird "Chris" kann nicht geöffnet oder weitergeben, wodurch die bösartige Datei Chris Computer und andere gehindert. 
     
