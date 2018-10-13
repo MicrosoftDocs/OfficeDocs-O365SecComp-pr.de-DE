@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Mit einer Data Loss Prevention (DLP) Richtlinie in der Office 365-Sicherheit &amp; Compliance Center, können Sie ermitteln, überwachen und schützen Sie sensible Informationen automatisch über Office 365.
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013739"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540421"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -304,7 +304,7 @@ Aus diesen Gründen wird die Anleitung zum Erstellen von Regeln mit unterschiedl
     
 - Alle dazwischen liegenden Confidence Levels im Bereich in der Regel von direkt über die unteren Vertrauensstufe unterhalb der höheren Vertrauensstufe einfach.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Verwenden eine Beschriftung als Bedingung in einer DLP-Richtlinie
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie
 
 Sie können eine Beschriftung erstellen und dann:
   
@@ -312,7 +312,7 @@ Sie können eine Beschriftung erstellen und dann:
     
 - **Automatisch übernehmen** ermittelt, um Inhalte, die die Bedingungen, die Sie auswählen. 
     
-Weitere Informationen zu Etiketten finden Sie unter [Übersicht über die Beschriftungen](labels.md).
+Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Bezeichnungen](labels.md).
   
 Nachdem eine Bezeichnung erstellt wurde, können Sie in Ihrer DLP-Richtlinien klicken Sie dann der Beschriftung als Bedingung verwenden. Sie möchten z. B., da hierfür:
   
@@ -332,7 +332,7 @@ Etiketten als Bedingung in DLP-Regeln verwenden, können Sie selektiv Protection
 
 Verschiedene Features können auf Inhalte, die mit vertraulichen Informationen angewendet werden:
   
-- Ein [anwenden, die ein Label Bedingungen automatisch anhand](labels.md#applying-a-label-automatically-based-on-conditions) und einer [Aufbewahrungsrichtlinie](retention-policies.md) können beide **aufbewahrungsaktionen für diesen Inhalt** erzwingen. 
+- Eine [Aufbewahrungsrichtlinie Label](labels.md#applying-a-retention-label-automatically-based-on-conditions)[Anwenden einer Bezeichnung, automatisch basierend auf Bedingungen] und einer [Aufbewahrungsrichtlinie](retention-policies.md) können beide **aufbewahrungsaktionen für diesen Inhalt** erzwingen. 
     
 - Eine DLP-Richtlinie kann **Schutz** Aktionen für diesen Inhalt durchsetzen. Und bevor diese Aktionen erzwungen, eine DLP-Richtlinie kann andere Bedingungen, die zusätzlich zu den Inhalt mit einer Bezeichnung erfüllt werden, erfordern. 
     
@@ -478,13 +478,13 @@ Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen 
 
 Die meisten der Cmdlets für die Sicherheit zu verwendenden &amp; Compliance Center, müssen Sie:
   
-1. [Verbinden mit der Office 365-Sicherheit &amp; Compliance Center mit remote-PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Verwenden Sie eine der folgenden [Sicherheit in Office 365 &amp; Compliance Center Cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 DLP-Berichte müssen jedoch Daten aus über Office 365, einschließlich Exchange Online ziehen. Aus diesem Grund stehen die Cmdlets für die DLP-Berichte in Exchange Online Powershell – nicht in Security &amp; Compliance Center Powershell. Aus diesem Grund müssen für die Verwendung von Cmdlets für die DLP-Berichte:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Verwenden Sie eine dieser Cmdlets für die DLP-Berichte:
     
