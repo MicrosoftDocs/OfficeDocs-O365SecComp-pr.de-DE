@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Hier erfahren Sie, wie Sie einen Zeitplan für einen Bericht in das Wertpapier einrichten &amp; Compliance Center.
-ms.openlocfilehash: 38223d670622e602fbb145aed6b4dc0f6ecb36f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528848"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552353"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Erstellen Sie einen Zeitplan für einen Bericht in das Wertpapier &amp; Compliance Center
 
 In das Wertpapier &amp; Compliance Center, verschiedene [Berichte und Insights](reports-and-insights-in-security-and-compliance.md) sind verfügbar, die dem Team Ihrer Organisation Sicherheit zu mindern und Beheben von Bedrohungen für Ihre Organisation unterstützen. Wenn Sie ein Mitglied Security-Team Ihrer Organisation befinden, können Sie einen Zeitplan für einen Bericht erstellen. Der von Ihnen erstellten Zeitplan kann eine benutzerdefinierte Datumsbereiche entsprechend Ihrer Organisation enthalten. 
   
-## <a name="create-a-schedule-for-a-report"></a>Erstellen Sie einen Zeitplan für einen Bericht
+## <a name="create-a-schedule-for-a-report"></a>Erstellen eines Zeitplans für einen Bericht
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen zum Ausführen dieser Aufgabe verfügen. Im allgemeinen globalen Office 365-Administratoren, Sicherheitsadministratoren und Sicherheit Leser können Zugriff auf Berichte in das Wertpapier &amp; Compliance Center. Weitere Informationen zu Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 1. In das Wertpapier &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard**.
     
-2. Wählen Sie einen Bericht. In diesem Beispiel werden wir den Threat Protection Statusbericht wählen.
+2. Wählen Sie einen Bericht. In diesem Beispiel werden wir den Bedrohung Schutzstatus Bericht auswählen.
     
 3. Wählen Sie in der oberen linken Ecke des Berichts **+ Zeitplan erstellen**.
     

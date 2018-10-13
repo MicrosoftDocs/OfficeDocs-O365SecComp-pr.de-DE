@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informationen Sie zum Suchen und Verwenden von e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise. E-Mail-Sicherheitsberichte stehen in der Sicherheit &amp; Compliance Center.
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454342"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552393"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center
 
@@ -27,7 +27,7 @@ Eine Vielzahl von e-Mail-Sicherheit meldet stehen in der Sicherheit &amp; Compli
   
 Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
   
-- [Threat Protection-Statusbericht](view-email-security-reports.md#tps) (neu!) 
+- [Threat Protection Statusbericht](view-email-security-reports.md#tps) (neu!) 
     
 - [Erkannte Schadsoftware Bericht](view-email-security-reports.md#maldet)
     
@@ -43,9 +43,12 @@ Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
     
 - [Benutzer gemeldete Nachrichten Bericht](view-email-security-reports.md#userreported) (neu!) 
     
-## <a name="threat-protection-status-report-new"></a>Threat Protection-Statusbericht (neu!)
+## <a name="threat-protection-status-report-new"></a>Verfahren Sie zum Erstellen von Schutz Statusbericht (neu!)
 
 Der neue **Threat Protection** Statusbericht ist smart Bericht mit böswilligen Absichten e-Mail, die erkannt und von Exchange Online Protection blockiert wurde. In diesem Bericht werden Informationen zu e-Mails, die als Malware oder Phishing-Versuch identifiziert. 
+
+> [!NOTE]
+> Ein Bericht Bedrohung Schutzstatus steht Kunden mit [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Allerdings werden die Informationen, die im Bericht Schutzstatus Bedrohung für ATP-Kunden angezeigt wird wahrscheinlich andere Daten als was EOP-Kunden finden Sie unter möglicherweise enthalten. EOP-Kunden können beispielsweise Schadsoftware erkannt in e-Mails, die aber nicht Informationen zu [schädliche Dateien in SharePoint Online, OneDrive, oder Microsoft-Teams erkannt](atp-for-spo-odb-and-teams.md), eine Funktion ATP-spezifische Informationen anzeigen. ([Erfahren Sie mehr über Berichte ATP](view-reports-for-atp.md)).
   
 So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
   
@@ -67,7 +70,7 @@ So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, na
   
 ![Beispiel für Schadsoftware erkannte Bericht](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-Andere Berichte wie den Statusbericht Threat Protection ähnelt der Bericht Daten für die letzten sieben Tage standardmäßig angezeigt. Sie können jedoch **Filter** , um den Datumsbereich zu ändern. 
+Andere Berichte, wie ein Bericht Bedrohung Schutzstatus ähnelt der Bericht Daten für die letzten sieben Tage standardmäßig angezeigt. Sie können jedoch **Filter** , um den Datumsbereich zu ändern. 
   
 ## <a name="top-malware-report"></a>Top-Schadsoftware-Bericht
 
@@ -176,8 +179,8 @@ Um anzuzeigen, und die e-Mail-Sicherheitsberichte in diesem Artikel beschriebene
   
 |**Rollengruppe**|**Wobei zugewiesen**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-| Eine der folgenden Varianten:  <br/>  Organisationsverwaltung  <br/>  Sicherheitsadministrator  <br/>  Sicherheit-Reader  <br/> |Security &amp; Compliance Center  <br/> |[Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Eine der folgenden Varianten:  <br/>  Organisationsverwaltung  <br/>  Organisationsverwaltung mit Leserechten  <br/>  Rolle „Empfänger mit Leserechten“  <br/>  Verwaltung der Richtlinientreue  <br/> |Exchange-Verwaltungskonsole  <br/> |[Featureberechtigungen in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Eine der folgenden Varianten:  <br/><br/>--Organisationsverwaltung  <br/>--Sicherheitsadministrator  <br/>– Leser Sicherheit  <br/> |Security &amp; Compliance Center  <br/> |[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Eine der folgenden Varianten:  <br/><br/>--Organisationsverwaltung  <br/>– Organisationsverwaltung nur Ansicht  <br/>--Kontaktobjekts Empfänger-Rolle  <br/>--Verwaltung der Richtlinientreue  <br/> |Exchange Admin Center  <br/> |[Featureberechtigungen in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was passiert, wenn nicht die Berichte Daten angezeigt?
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Verwenden Sie das neue Dashboard Sicherheit, um Office 365 Threat Protection Status überprüfen und anzeigen und Bearbeiten von Sicherheitswarnungen.
-ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839079"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552363"
 ---
 # <a name="security-dashboard-overview"></a>Übersicht über die Sicherheit-dashboard
 
@@ -32,7 +32,7 @@ Je nachdem, welche Ihrer Organisation-Office 365-Abonnement umfasst enthält das
   
 - [Bedrohung Schutzstatus](#threat-protection-status)
     
-- [Einblicke](#insights)
+- [Insights](#insights)
     
 - [Bedrohungsanalyse](#threat-intelligence)
     
@@ -45,7 +45,7 @@ Zum Anzeigen des Dashboards Sicherheit in der [Sicherheit in Office 365 &amp; Co
   
 ## <a name="threat-protection-status"></a>Bedrohung Schutzstatus
 
-In der oberen linken Ecke des Dashboards Sicherheit ist ein Threat Protection Status Widget, das zeigt, Threat Protection Effektivität. Dieses Widget weist auf einen Blick wie viele Bedrohungen durch [Office 365 Exchange Online Protection](anti-spam-protection.md) und [Office 365 erweiterte Threat Protection](office-365-atp.md) (sofern konfiguriert) in den letzten sieben Tagen blockiert wurden. Dieses Widget zeigt auch die Anzahl der e-Mail-Nachrichten mit der [Meldung Report-add-in verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)als falsch klassifizierte und gemeldete erkannt. Überprüfen Sie Ihre Anti-Spam-, Anti-Malware und Anti-Phishing-Richtlinien zur Verbesserung Ihrer Konfigurations.
+In der oberen linken Ecke des Dashboards Sicherheit ist eine Bedrohung Schutzstatus Widget, das zeigt, Threat Protection Effektivität. Dieses Widget weist auf einen Blick wie viele Bedrohungen durch [Office 365 Exchange Online Protection](anti-spam-protection.md) und [Office 365 erweiterte Threat Protection](office-365-atp.md) (sofern konfiguriert) in den letzten sieben Tagen blockiert wurden. Dieses Widget zeigt auch die Anzahl der e-Mail-Nachrichten mit der [Meldung Report-add-in verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)als falsch klassifizierte und gemeldete erkannt. Überprüfen Sie Ihre Anti-Spam-, Anti-Malware und Anti-Phishing-Richtlinien zur Verbesserung Ihrer Konfigurations.
   
 ![Threat Protection Widgets am oberen Rand des Security-Dashboards](media/5c7c644e-6b01-4bf8-b991-f6ba0fdc5717.png)
   
@@ -80,6 +80,6 @@ Und wenn Ihre Organisation Office 365-Abonnements [Office 365 Bedrohungsanalyse]
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Informationen zu Bedrohungen in Office 365](office-365-ti.md)
+[Office 365 Threat Intelligence](office-365-ti.md)
   
 
