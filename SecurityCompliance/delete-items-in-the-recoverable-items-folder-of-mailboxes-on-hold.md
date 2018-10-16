@@ -3,7 +3,7 @@ title: Löschen von Elementen im Ordner "wiederherstellbare Elemente" des cloudb
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Für Administratoren: Löschen von Elementen in den Ordner eines Benutzers wiederherstellbare Elemente für ein Exchange Online-Postfach, auch wenn dieses Postfach rechtliche Aufbewahrungspflicht platziert wird. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die in Office 365 versehentlich verschüttet ist.'
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796881"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566886"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "wiederherstellbare Elemente" des cloudbasierten Postfächer in der Warteschleife - Admin-Hilfe
 
@@ -33,16 +33,18 @@ ms.locfileid: "23796881"
 
 [Schritt 3: Entfernen Sie alle Haltestatus aus dem Postfach](#step-3-remove-all-holds-from-the-mailbox)
 
-[Schritt 4: Löschen von Elementen im Ordner "wiederherstellbare Elemente"](#step-4-delete-items-in-the-recoverable-items-folder)
+[Schritt 4: Entfernen Sie den Haltestatus Verzögerung aus dem Postfach](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[Schritt 5: Das Postfach in den vorherigen Zustand zurücksetzen](#step-5-revert-the-mailbox-to-its-previous-state)
+[Schritt 5: Löschen von Elementen im Ordner "wiederherstellbare Elemente"](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[Schritt 6: Das Postfach in den vorherigen Zustand zurücksetzen](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > Die Verfahren in diesem Artikel beschriebenen führt Daten dauerhaft gelöscht (gelöscht) von einem Exchange Online-Postfach. Das bedeutet, dass Nachrichten, die Sie aus dem Ordner wiederherstellbare Elemente löschen können nicht wiederhergestellt werden nicht für die Offenlegungspflicht oder sonstige Zwecke Compliance verfügbar. Wenn Sie möchten, um Nachrichten aus einem Postfach zu löschen, die als Teil einer Aufbewahrung für eventuelle Rechtsstreitigkeiten, Compliance-Archiv, in die Warteschleife gestellt wird eDiscovery halten oder Office 365 Aufbewahrungsrichtlinie erstellt, in die Office 365-Sicherheit &amp; Compliance Center, erkundigen Sie sich bei der Verwaltung von Datensätzen und Legal Abteilungen, bevor Sie den Haltestatus entfernen. Ihre Organisation möglicherweise eine Richtlinie, die definiert, ob ein Postfach auf halten oder ein Daten stellen Vorfall Vorrang. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbemerkung
 
-- Sie müssen beide der folgenden Verwaltungsrollen in Exchange Online suchen und Löschen von Nachrichten aus dem Ordner "wiederherstellbare Elemente" in Schritt 4 zugewiesen werden.
+- Sie müssen beide der folgenden Verwaltungsrollen in Exchange Online suchen und Löschen von Nachrichten aus dem Ordner "wiederherstellbare Elemente" in Schritt 5 zugewiesen werden.
     
   - **Postfachsuche** – diese Rolle können Sie Postfächer in Ihrer Organisation zu suchen. Exchange-Administratoren sind nicht dieser Rolle standardmäßig zugewiesen. Wenn sich diese Rolle zuweisen möchten, tragen Sie sich als Mitglied der Rollengruppe "Discoveryverwaltung" im Exchange Online. 
     
@@ -56,13 +58,13 @@ ms.locfileid: "23796881"
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Schritt 1: Sammeln von Informationen über das Postfach
 
-Dieser erste Schritt besteht darin ausgewählte Eigenschaften aus dem Zielpostfach sammeln, die für dieses Verfahren gelten. Achten Sie darauf, notieren Sie sich diese Einstellungen oder da Sie einige dieser Eigenschaften ändern, und klicken Sie dann auf die ursprünglichen Werte in Schritt 5 zurückgesetzt, nach dem Löschen von Elementen aus dem Ordner wiederherstellbare Elemente in einer Textdatei speichern. Es folgt eine Liste mit den Postfacheigenschaften benötigten sammeln.
+Dieser erste Schritt besteht darin ausgewählte Eigenschaften aus dem Zielpostfach sammeln, die für dieses Verfahren gelten. Achten Sie darauf, notieren Sie sich diese Einstellungen oder da Sie einige dieser Eigenschaften ändern, und klicken Sie dann auf die ursprünglichen Werte in Schritt 6, zurückgesetzt, nach dem Löschen von Elementen aus dem Ordner wiederherstellbare Elemente in einer Textdatei speichern. Es folgt eine Liste mit den Postfacheigenschaften benötigten sammeln.
   
 -  *SingleItemRecoveryEnabled* und *RetainDeletedItemsFor* ; Falls erforderlich, Sie einzelne Wiederherstellung deaktivieren und erhöhen die Aufbewahrungszeit von gelöschten Elemente in Schritt 3. 
     
 -  *LitigationHoldEnabled* und *InPlaceHolds* ; Sie müssen alle Haltestatus, die für das Postfach platziert werden, sodass Sie sie in Schritt 3 vorübergehend entfernen können. Finden Sie [Weitere Informationen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) im Abschnitt Tipps dazu, wie Sie den Typ Haltestatus zu identifizieren, der für ein Postfach platziert werden kann. 
     
-Darüber hinaus müssen Sie das Postfach Clientzugriffseinstellungen abrufen, damit Sie vorübergehend deaktivieren, damit der Besitzer (oder andere Benutzer) während dieses Vorgangs Zugriff auf das Postfach ist nicht möglich. Schließlich können Sie die aktuelle Größe und Anzahl der Elemente im Ordner "wiederherstellbare Elemente" abrufen. Nachdem Sie Elemente im Ordner "wiederherstellbare Elemente" in Schritt 4 zu löschen, verwenden Sie diese Informationen, um sicherzustellen, dass Elemente tatsächlich entfernt wurden.
+Darüber hinaus müssen Sie das Postfach Clientzugriffseinstellungen abrufen, damit Sie vorübergehend deaktivieren, damit der Besitzer (oder andere Benutzer) während dieses Vorgangs Zugriff auf das Postfach ist nicht möglich. Schließlich können Sie die aktuelle Größe und Anzahl der Elemente im Ordner "wiederherstellbare Elemente" abrufen. Nachdem Sie Elemente im Ordner "wiederherstellbare Elemente" in Schritt 5 zu löschen, verwenden Sie diese Informationen, um sicherzustellen, dass Elemente tatsächlich entfernt wurden.
   
 1. [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Achten Sie darauf, dass Sie einen Benutzernamen und ein Kennwort für ein Administratorkonto verwenden, das die entsprechenden Verwaltungsrollen in Exchange Online zugewiesen wurde. 
     
@@ -114,7 +116,7 @@ Darüber hinaus müssen Sie das Postfach Clientzugriffseinstellungen abrufen, da
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Wenn Sie in Schritt 4 Elemente löschen, können Sie auswählen, zu löschen oder Elemente im Ordner "wiederherstellbare Elemente" im primären Archivpostfach des Benutzers nicht löschen. Beachten Sie, dass bei erweiterbares Archivierung für das Postfach aktiviert ist, wird nicht Elemente in einem Hilfs-Archivpostfach gelöscht.
+   Wenn Sie in Schritt 5 Elemente löschen, können Sie auswählen, zu löschen oder Elemente im Ordner "wiederherstellbare Elemente" im primären Archivpostfach des Benutzers nicht löschen. Beachten Sie, dass bei erweiterbares Archivierung für das Postfach aktiviert ist, wird nicht Elemente in einem Hilfs-Archivpostfach gelöscht.
   
 ## <a name="step-2-prepare-the-mailbox"></a>Schritt 2: Vorbereiten des Postfachs
 
@@ -122,11 +124,11 @@ Nach dem Erfassen und Speichern von Informationen über das Postfach, werden im 
   
 - **Clientzugriff auf das Postfach zu deaktivieren** , damit der Postfachbesitzer Zugriff auf ihre Postfächer und ändern Sie die Postfachdaten während dieses Vorgangs ist nicht möglich. 
     
-- **Erhöhen Sie die Aufbewahrungszeit für gelöschte** auf 30 Tage (Höchstwert in Exchange Online), sodass Elemente aus dem Ordner wiederherstellbare Elemente gelöscht werden nicht, bevor Sie in Schritt 4 gelöscht werden können. 
+- **Erhöhen Sie die Aufbewahrungszeit für gelöschte** auf 30 Tage (Höchstwert in Exchange Online), sodass Elemente aus dem Ordner wiederherstellbare Elemente gelöscht werden nicht, bevor Sie sie in Schritt 5 löschen können. 
     
-- (Für die Dauer der Aufbewahrungszeit für gelöschte) werden nicht so Elementen, **Deaktivieren Sie die Wiederherstellung einzelnen Elemente** aufbewahrt werden, nach dem Löschen aus dem Ordner "wiederherstellbare Elemente" in Schritt 4. 
+- (Für die Dauer der Aufbewahrungszeit für gelöschte) werden nicht so Elementen, **Deaktivieren Sie die Wiederherstellung einzelnen Elemente** aufbewahrt werden, nach dem Löschen aus dem Ordner "wiederherstellbare Elemente" in Schritt 5. 
     
-- **Deaktivieren Sie den Assistenten für verwaltete Ordner** , damit das alles nicht das Postfach zu verarbeiten und die Elemente, die Sie in Schritt 4 löschen beibehalten. 
+- **Assistenten für verwaltete Ordner zu deaktivieren** , damit das alles nicht das Postfach zu verarbeiten und die Elemente, die Sie in Schritt 5 löschen beibehalten. 
     
 Führen Sie die folgenden Schritte aus, in Exchange Online PowerShell.
   
@@ -162,7 +164,7 @@ Führen Sie die folgenden Schritte aus, in Exchange Online PowerShell.
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Schritt 3: Entfernen Sie alle Haltestatus aus dem Postfach
 
-Der letzte Schritt, bevor Sie Elemente aus dem Ordner wiederherstellbare Elemente löschen können ist, entfernen alle Haltestatus (, die Sie in Schritt 1 identifiziert) für das Postfach platziert. Alle Haltestatus müssen entfernt werden, sodass Elemente wird nicht beibehalten werden, nachdem Sie diese aus dem Ordner wiederherstellbare Elemente löschen. Die folgenden Abschnitte enthalten Informationen zum Entfernen von verschiedenen Typen von Haltestatus für ein Postfach. Finden Sie [Weitere Informationen](#more-information) im Abschnitt Tipps dazu, wie Sie den Typ Haltestatus zu identifizieren, der für ein Postfach platziert werden kann. 
+Der letzte Schritt, bevor Sie Elemente aus dem Ordner wiederherstellbare Elemente löschen können ist, entfernen alle Haltestatus (, die Sie in Schritt 1 identifiziert) für das Postfach platziert. Alle Haltestatus müssen entfernt werden, sodass Elemente wird nicht beibehalten werden, nachdem Sie diese aus dem Ordner wiederherstellbare Elemente löschen. Die folgenden Abschnitte enthalten Informationen zum Entfernen von verschiedenen Typen von Haltestatus für ein Postfach. Finden Sie [Weitere Informationen](#more-information) im Abschnitt Tipps dazu, wie Sie den Typ Haltestatus zu identifizieren, der für ein Postfach platziert werden kann. Weitere Informationen finden Sie unter [So identifizieren Sie den Typ des platziert eines Exchange Online-Postfachs halten](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
 > Wie bereits zuvor erwähnt überprüfen Sie mit der datensatzverwaltung oder der rechtlichen Abteilungen vor einen Haltestatus aus einem Postfach entfernen. 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 Nachdem Sie die gesamte Organisation Office 365-Aufbewahrungsrichtlinien identifiziert haben, wechseln Sie zu dem **Datum Governance** \> **Aufbewahrung** Seite in das Wertpapier &amp; Compliance Center bearbeiten für jede Organisation geltende Aufbewahrungsrichtlinie, die Sie in identifiziert die vorherigen Schritt, und fügen Sie das Postfach in die Liste der ausgeschlossenen Empfänger. Hierdurch wird das Postfach des Benutzers aus der Aufbewahrungsrichtlinie entfernt. 
-  
+
+### <a name="office-365-retention-labels"></a>Office 365 Aufbewahrung Etiketten
+
+Wenn ein Benutzer eine Bezeichnung, die beibehalten werden Inhalte gilt oder beibehalten, und klicken Sie dann Löschen von Inhalt eines beliebigen Ordners oder Elements in ihrem Postfach konfiguriert ist, wird die *ComplianceTagHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. In diesem Fall gilt das Postfach werden abwarten, so als würde gebracht Aufbewahrung für eventuelle Rechtsstreitigkeiten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen wurde.
+
+Wenn den Wert der Eigenschaft *ComplianceTagHoldApplied* anzeigen möchten, führen Sie den folgenden Befehl in Exchange Online PowerShell:
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Nachdem Sie festgestellt haben, dass ein Postfach auf ist gesperrt, da eine Beschriftung für die Aufbewahrung auf einen Ordner oder das Element angewendet wird, Sie das Tool für die Inhaltssuche in das Wertpapier können & Compliance Center zu suchenden mit der Bezeichnung Elemente mithilfe der ComplianceTag Suchbedingung. Weitere Informationen finden Sie im Abschnitt "Suchen Conditions" in [Stichwortabfragen und Suchkriterien für die Inhaltssuche](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+
+Weitere Informationen zu Etiketten finden Sie unter [Übersicht über Office 365 Beschriftungen](labels.md).
+
  ### <a name="ediscovery-case-holds"></a>eDiscovery-Fall enthält
   
 Führen die folgenden Befehle [Sicherheit &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) identifiziert den Haltestatus Zusammenhang mit einem eDiscovery-Fall, die an das Postfach angewendet wird. Verwenden Sie die GUID (einschließlich nicht die `UniH` Präfix) für die eDiscovery halten, dass Sie in Schritt 1 identifiziert haben. Beachten Sie, dass der zweite Befehl den Namen der eDiscovery-Fall anzeigt, die der Haltebereich zugeordnet ist. Der dritte Befehl zeigt den Namen des Haltestatus. 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 Nachdem Sie den Namen des eDiscovery-Fall und den Haltestatus identifiziert haben, wechseln Sie zu der **Suche &amp; Untersuchung** \> **eDiscovery** -Seite in das Wertpapier &amp; Compliance Center, öffnen Sie die Groß-/Kleinschreibung, und das Postfach aus dem Haltestatus zu entfernen. Weitere Informationen finden Sie unter [Verwalten von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](manage-ediscovery-cases.md).
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>Schritt 4: Löschen von Elementen im Ordner "wiederherstellbare Elemente"
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Schritt 4: Entfernen Sie den Haltestatus Verzögerung aus dem Postfach
+
+Nach beliebigen Typs Haltestatus aus einem Postfach entfernt wird, wird der Wert der *DelayHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. Dadurch wird aufgerufen, eine *Verzögerung halten* und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage, um zu verhindern, dass Daten endgültig gelöscht werden verzögert wird (gelöscht) aus dem Postfach.   Bei ein Haltestatus Verzögerung für das Postfach befindet, wird das Postfach weiterhin als werden in der Warteschleife für eine unbegrenzte Dauer, als wenn das Postfach beweissicherungsverfahrens wurde. (Der Zweck der Haltestatus Verzögerung ist Admins Gelegenheit zur Suche oder Wiederherstellen Postfachelemente, die gelöscht werden, nachdem eine Sperre entfernt wurde.) Noe, dass nach 30 Tagen, halten Sie die Verzögerung läuft ab und Office 365 versucht automatisch, den Verzögerung Haltestatus entfernen (durch Festlegen der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**), damit die Sperre tatsächlich entfernt wird. 
+
+Bevor Sie in Schritt 5 Elemente löschen können, müssen Sie den Haltestatus Verzögerung aus dem Postfach entfernt. Führen Sie den folgenden Befehl in Exchange Online PowerShell, um die Verzögerung Haltestatus zu entfernen: 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Beachten Sie, dass Sie die rechtlichen Aufbewahrungspflicht Rolle im Exchange Online zuweisen müssen, damit der *RemoveDelayHoldApplied* -Parameter verwendet werden.
+
+Zum bestätigen, dass die Verzögerung Haltebereich entfernt wurde, führen Sie den folgenden Befehl aus.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+Der Wert von **"false"** für die *DelayHoldApplied* -Eigenschaft gibt an, dass die Verzögerung entfernt wurde.
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Schritt 5: Löschen von Elementen im Ordner "wiederherstellbare Elemente"
 
 Sie können nun Elemente im Ordner "wiederherstellbare Elemente" tatsächlich zu löschen, indem Sie mit dem Cmdlet [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) in Exchange Online PowerShell. Ihnen stehen drei Optionen, wenn das **Search-Mailbox** -Cmdlet ausgeführt wird. 
   
@@ -254,7 +289,7 @@ Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox
 
 Im vorherigen Beispiel ist nicht erforderlich zum Kopieren von Elementen auf dem Discoverysuchpostfach. Sie können eine beliebige Zielpostfach Nachrichten kopieren. Wird jedoch empfohlen, um Zugriff auf sensible Postfachdaten zu verhindern, das Kopieren von Nachrichten an ein Postfach, Zugriff auf autorisierte Personen beschränkt ist. Standardmäßig wird auf den Standardwert Discoverysuchpostfach eingeschränkten Zugriff auf Mitglieder der Rollengruppe "Discoveryverwaltung" im Exchange Online. 
   
-### <a name="example-2"></a>Beispiel 2
+### <a name="example-2"></a>Beispiel 2
 
 Dieses Beispiel kopiert alle Elemente in den Ordner des Benutzers wiederherstellbare Elemente in einen Ordner in Ihrer Organisation Discoverysuchpostfach und löscht dann die Elemente aus den Ordner des Benutzers wiederherstellbare Elemente.
 
@@ -262,7 +297,7 @@ Dieses Beispiel kopiert alle Elemente in den Ordner des Benutzers wiederherstell
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>" -DeleteContent
 ```
  
-### <a name="example-3"></a>Beispiel 3
+### <a name="example-3"></a>Beispiel 3
 
 Dieses Beispiel löscht alle Elemente in den Ordner des Benutzers wiederherstellbare Elemente, ohne sie in einer Zielpostfach kopiert werden. 
 
@@ -308,7 +343,7 @@ Führen Sie den folgenden Befehl aus, um die Größe und die Gesamtanzahl der El
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>Schritt 5: Das Postfach in den vorherigen Zustand zurücksetzen
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Schritt 6: Das Postfach in den vorherigen Zustand zurücksetzen
 
 Der letzte Schritt ist das Postfach wieder auf die vorherige Konfiguration wiederherzustellen. Dies bedeutet, dass Zurücksetzen der Eigenschaften, die Sie in Schritt2 geändert und zum erneuten Anwenden der Haltestatus an, denen Sie in Schritt 3 entfernt. Dazu gehören:
   
@@ -389,7 +424,9 @@ Führen Sie die folgenden Schritte aus (in der angegebenen Reihenfolge) in Excha
   
 ## <a name="more-information"></a>Weitere Informationen
 
-Hier ist eine Tabelle, die beschreibt, wie verschiedene Arten von Haltestatus basierend auf den Werten in der *InPlaceHolds* -Eigenschaft, bei der Ausführung der Cmdlets **Get-Mailbox** oder **Get-OrganizationConfig** zu identifizieren. Wie bereits erläutert, müssen Sie alle Haltestatus entfernen und Aufbewahrungsrichtlinien aus einem Postfach, bevor Sie Office 365 können erfolgreich Löschen von Elementen im Ordner "wiederherstellbare Elemente". 
+Hier ist eine Tabelle, die beschreibt, wie verschiedene Arten von Haltestatus basierend auf den Werten in der *InPlaceHolds* -Eigenschaft, bei der Ausführung der Cmdlets **Get-Mailbox** oder **Get-OrganizationConfig** zu identifizieren. Ausführlichere Informationen finden Sie unter [So identifizieren Sie den Typ des Archiv platziert eines Exchange Online-Postfachs](identify-a-hold-on-an-exchange-online-mailbox.md).
+
+Wie bereits erläutert, müssen Sie alle Haltestatus entfernen und Aufbewahrungsrichtlinien aus einem Postfach, bevor Sie Office 365 können erfolgreich Löschen von Elementen im Ordner "wiederherstellbare Elemente". 
   
 |**Haltebereichstyp**|**Beispielwert**|**So identifizieren Sie den Haltestatus**|
 |:-----|:-----|:-----|

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie eDiscovery, und suchen Sie Office 365-Tools zum Verwalten und reagieren auf eine Daten stellen Vorfall in Ihrer Organisation.
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528959"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566876"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösung Series: Daten stellen Szenario - suchen und löschen
 
@@ -159,6 +159,8 @@ Wenn die Wiederherstellung einzelner Elemente aktiviert ist, oder wenn ein Postf
 - Finden Sie unter "Schritt 2: Vorbereiten des Postfachs" in eine Anleitung zum Deaktivieren der Wiederherstellung einzelner Elemente [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
     
 - Finden Sie unter "Schritt 3: Entfernen Sie alle Haltestatus aus dem Postfach" in eine Anleitung zum Entfernen eine Richtlinie halten oder die Aufbewahrung von ein Postfach [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) . 
+
+- Finden Sie unter "Schritt 4: entfernen, halten Sie die Verzögerung aus dem Postfach" in das [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) Anweisungen zum Entfernen der Verzögerung halten, die für das Postfach befindet, nachdem alle Arten von Haltestatus entfernt wurde.
     
  **Wichtig:** Mit der datensatzverwaltung oder der rechtlichen Abteilungen vor dem Entfernen einer Richtlinie halten oder die Aufbewahrung prüfen. Ihrer Organisation möglicherweise eine Richtlinie, die definiert, ob ein Postfach auf halten, oder ein Daten stellen Vorfall Vorrang. 
   
@@ -168,7 +170,7 @@ Achten Sie darauf, dass das vorherigen Konfigurationen für das Postfach wiederh
 
 Verwenden die Postfach-Speicherorte, die gesammelt und in Schritt 6 und die Suchabfrage, die erstellt wurde und in Schritt 3, um e-Mail-Nachrichten suchen, die die verschütteten Daten enthalten eingeschränkt vorbereitet haben, können Sie jetzt dauerhaft verschütteten Daten löschen. Wie bereits erklärt müssen Sie die Rolle Postfach Import/Export in Exchange Online zum Löschen von Nachrichten anhand des folgenden Verfahrens zugewiesen werden.
   
-1. [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554).
     
 2. Führen Sie den folgenden Befehl aus:
     
@@ -198,7 +200,7 @@ Der letzte Schritt des Workflows zum Verwalten von eines Daten stellen Vorfalls 
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Die Postfächer in den vorherigen Zustand zurücksetzen
 
-Wenn Sie geändert Konfiguration für Postfächer in Schritt 6 haben, um die Postfächer vorzubereiten, bevor die verschütteten Daten gelöscht wurde, müssen Sie sie in den vorherigen Zustand zurückgesetzt. Finden Sie unter "Schritt 5: das Postfach in den vorherigen Zustand zurückgesetzt" in das [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state).
+Wenn Sie geändert Konfiguration für Postfächer in Schritt 6 haben, um die Postfächer vorzubereiten, bevor die verschütteten Daten gelöscht wurde, müssen Sie sie in den vorherigen Zustand zurückgesetzt. Finden Sie unter "Schritt 6: das Postfach in den vorherigen Zustand zurückgesetzt" in das [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
   
 ### <a name="deleting-the-search-query"></a>Löschen der Suchabfrage
 
