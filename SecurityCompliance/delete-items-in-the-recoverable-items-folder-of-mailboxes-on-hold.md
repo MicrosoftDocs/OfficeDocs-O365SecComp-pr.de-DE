@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Für Administratoren: Löschen von Elementen in den Ordner eines Benutzers wiederherstellbare Elemente für ein Exchange Online-Postfach, auch wenn dieses Postfach rechtliche Aufbewahrungspflicht platziert wird. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die in Office 365 versehentlich verschüttet ist.'
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566886"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577084"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "wiederherstellbare Elemente" des cloudbasierten Postfächer in der Warteschleife - Admin-Hilfe
 
@@ -245,22 +245,22 @@ Nachdem Sie den Namen des eDiscovery-Fall und den Haltestatus identifiziert habe
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Schritt 4: Entfernen Sie den Haltestatus Verzögerung aus dem Postfach
 
-Nach beliebigen Typs Haltestatus aus einem Postfach entfernt wird, wird der Wert der *DelayHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. Dadurch wird aufgerufen, eine *Verzögerung halten* und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage, um zu verhindern, dass Daten endgültig gelöscht werden verzögert wird (gelöscht) aus dem Postfach.   Bei ein Haltestatus Verzögerung für das Postfach befindet, wird das Postfach weiterhin als werden in der Warteschleife für eine unbegrenzte Dauer, als wenn das Postfach beweissicherungsverfahrens wurde. (Der Zweck der Haltestatus Verzögerung ist Admins Gelegenheit zur Suche oder Wiederherstellen Postfachelemente, die gelöscht werden, nachdem eine Sperre entfernt wurde.) Noe, dass nach 30 Tagen, halten Sie die Verzögerung läuft ab und Office 365 versucht automatisch, den Verzögerung Haltestatus entfernen (durch Festlegen der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**), damit die Sperre tatsächlich entfernt wird. 
+Nach beliebigen Typs Haltestatus aus einem Postfach entfernt wird, wird der Wert der *DelayHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. In diesem Fall das nächste Mal, das Assistenten für verwaltete Ordner verarbeitet das Postfach und erkennt, dass es sich bei ein Haltebereich entfernt wurde. Dadurch wird eine *Verzögerung halten* aufgerufen und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage zu verhindern, dass Daten dauerhaft aus dem Postfach gelöscht verzögert wird. (Der Zweck der Haltestatus Verzögerung ist Admins Gelegenheit zur Suche oder Wiederherstellen Postfachelemente, die gelöscht werden, nachdem eine Sperre entfernt wurde.)  Bei ein Haltestatus Verzögerung für das Postfach befindet, wird das Postfach weiterhin als werden in der Warteschleife für eine unbegrenzte Dauer, als wenn das Postfach beweissicherungsverfahrens wurde. Nach 30 Tagen Verzögerung Haltebereich läuft ab und Office 365 versucht automatisch, den Verzögerung Haltestatus entfernen (durch Festlegen der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**), damit die Sperre tatsächlich entfernt wurde. 
 
-Bevor Sie in Schritt 5 Elemente löschen können, müssen Sie den Haltestatus Verzögerung aus dem Postfach entfernt. Führen Sie den folgenden Befehl in Exchange Online PowerShell, um die Verzögerung Haltestatus zu entfernen: 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-Beachten Sie, dass Sie die rechtlichen Aufbewahrungspflicht Rolle im Exchange Online zuweisen müssen, damit der *RemoveDelayHoldApplied* -Parameter verwendet werden.
-
-Zum bestätigen, dass die Verzögerung Haltebereich entfernt wurde, führen Sie den folgenden Befehl aus.
+Bevor Sie in Schritt 5 Elemente löschen können, müssen Sie den Haltestatus Verzögerung aus dem Postfach entfernt. Ermitteln Sie zunächst, wenn die Sperre Verzögerung an das Postfach mithilfe des folgenden Befehls in Exchange Online PowerShell angewendet wird:
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-Der Wert von **"false"** für die *DelayHoldApplied* -Eigenschaft gibt an, dass die Verzögerung entfernt wurde.
+Wenn der Wert der *DelayHoldApplied* -Eigenschaft auf **False**festgelegt ist, wurde für das Postfach kein Haltestatus Verzögerung platziert. Sie können gehen Sie zu Schritt 5 und Löschen von Elementen im Ordner "wiederherstellbare Elemente".
+
+Wenn der Wert der *DelayHoldApplied* -Eigenschaft auf **True**festgelegt ist, führen Sie den folgenden Befehl aus, um die Verzögerung Haltestatus zu entfernen:
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Beachten Sie, dass Sie die rechtlichen Aufbewahrungspflicht Rolle im Exchange Online zuweisen müssen, damit der *RemoveDelayHoldApplied* -Parameter verwendet werden.
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Schritt 5: Löschen von Elementen im Ordner "wiederherstellbare Elemente"
 

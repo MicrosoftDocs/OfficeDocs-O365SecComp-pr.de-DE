@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Erfahren Sie, wie die verschiedenen Typen von Haltestatus zu identifizieren, die ein Office 365-Postfach platziert werden können. Risiko dieser Arten von Haltestatus umfassen Aufbewahrung für eventuelle Rechtsstreitigkeiten, eDiscovery-Archive und Aufbewahrungsrichtlinien für Office 365. Sie können auch bestimmen, ob ein Benutzer aus einer Organisation geltende Aufbewahrungsrichtlinie ausgeschlossen wurde
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965262"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577074"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -172,7 +172,7 @@ Weitere Informationen zu Etiketten finden Sie unter [Übersicht über Office 365
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Verwalten von Postfächern auf Verzögerung halten
 
-Nach beliebigen Typs Haltestatus aus einem Postfach entfernt wird, wird der Wert der *DelayHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. Dadurch wird aufgerufen, eine *Verzögerung halten* und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage, um zu verhindern, dass Daten endgültig gelöscht werden verzögert wird (gelöscht) aus dem Postfach. Dadurch haben Administratoren die Möglichkeit zur Suche oder Wiederherstellen Postfachelemente, die gelöscht werden, nachdem die Sperre tatsächlich entfernt wurde. Bei ein Haltestatus Verzögerung für das Postfach befindet, wird das Postfach weiterhin als werden in der Warteschleife für eine unbegrenzte Dauer, als wenn das Postfach beweissicherungsverfahrens wurde. Nach 30 Tagen Verzögerung Haltebereich läuft ab und Office 365 versucht automatisch, den Verzögerung Haltestatus entfernen (durch Festlegen der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**), damit die Sperre tatsächlich entfernt wird. Nach der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**ist werden Elemente, die zum Entfernen markiert sind das nächste Mal entfernt, das vom Assistenten für verwaltete Ordner das Postfach verarbeitet wird.
+Nach beliebigen Typs Haltestatus aus einem Postfach entfernt wird, wird der Wert der *DelayHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. In diesem Fall das nächste Mal, das Assistenten für verwaltete Ordner verarbeitet das Postfach und erkennt, dass es sich bei ein Haltebereich entfernt wurde. Dadurch wird aufgerufen, eine *Verzögerung halten* und bedeutet, dass das tatsächliche Entfernen des Haltestatus für 30 Tage, um zu verhindern, dass Daten endgültig gelöscht werden verzögert wird (gelöscht) aus dem Postfach. Dadurch haben Administratoren die Möglichkeit zur Suche oder Wiederherstellen Postfachelemente, die gelöscht werden, nachdem die Sperre tatsächlich entfernt wurde. Bei ein Haltestatus Verzögerung für das Postfach befindet, wird das Postfach weiterhin als werden in der Warteschleife für eine unbegrenzte Dauer, als wenn das Postfach beweissicherungsverfahrens wurde. Nach 30 Tagen Verzögerung Haltebereich läuft ab und Office 365 versucht automatisch, den Verzögerung Haltestatus entfernen (durch Festlegen der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**), damit die Sperre tatsächlich entfernt wird. Nach der *DelayHoldApplied* -Eigenschaft auf **false festgelegt**ist werden Elemente, die zum Entfernen markiert sind das nächste Mal entfernt, das vom Assistenten für verwaltete Ordner das Postfach verarbeitet wird.
 
 Wenn den Wert für die *DelayHoldApplied* -Eigenschaft für ein Postfach anzeigen möchten, führen Sie den folgenden Befehl in Exchange Online PowerShell aus.
 
@@ -196,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 > [!TIP]
 > Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl ist die Verwendung den Distinguished Name oder die Exchange-GUID-Wert. Verwenden einen der folgenden Werte wird verhindert, dass versehentlich das falsche Postfach angeben. 
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 Wenn Sie den Haltestatus identifiziert haben, die an ein Postfach angewendet werden, können Sie Aufgaben wie die Dauer des Haltestatus, vorübergehend ändern oder dauerhaft entfernt den Haltestatus oder im Fall von Office 365-Aufbewahrungsrichtlinien, Ausführen ein inaktives Postfachs aus der Richtlinie ausgenommen. Weitere Informationen zum Ausführen von Aufgaben im Zusammenhang mit Haltestatus finden Sie unter eins der folgenden Themen:
 
