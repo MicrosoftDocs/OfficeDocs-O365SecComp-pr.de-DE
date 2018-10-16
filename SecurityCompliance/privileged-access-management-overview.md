@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema erfahren Sie mehr über Berechtigungen Zugriff auf Management in Office 365
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011861"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575339"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Berechtigungen zugreifen Management in Office 365
 
@@ -31,7 +31,7 @@ Access privilegierten Management ermöglicht die Differenzierte Sicherung Access
 
 Access privilegierten Management ergänzt, andere Daten und Access Feature Schutzmechanismen in die Sicherheitsarchitektur von Office 365. Durch die Aktivierung der Systemzugriff-Verwaltung im Rahmen des integrierten Konzepts für die Sicherheit und Schutz Ihrer Organisation, kann ein Bedeutung der mehrstufigen Sicherheitsmodell Schutz von vertraulichen Informationen und Office 365-Konfigurationseinstellungen optimieren verwendet werden. Wie in der folgenden aktivieren privilegierten dargestellt Access Management hilft basiert auf den Schutz mit systemeigenen Verschlüsselung von Office 365-Daten und der rollenbasierten Sicherheit Zugriffssteuerungsmodell von Office 365-Diensten ab. Bei Verwendung in Verbindung mit [Azure AD privilegierten Identitätsmanagement](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)bieten diese beiden Funktionen Steuerung des Zugriffs Just-in-Time-Zugriff in anderen Bereichen.
 
-![Bedeutung der mehrstufigen Schutz in Office 365](media/pam-layered-protection.jpg)
+![Bedeutung der mehrstufigen Schutz in Office 365](media/pam-layered-protection.png)
 
 Access privilegierten Management in Office 365 bezogenen auf **Aufgabenebene,** während Schutz auf der Ebene der **Rolle** von Azure AD privilegierten Identitätsmanagement die Möglichkeit, mehrere Aufgaben ausführen angewendet wird und definiert werden kann.  Azure AD-Berechtigungen Identitätsmanagement in erster Linie ermöglicht die Verwaltung von Zugriffe für AD-Rollen und Rollengruppen, Berechtigungen zugreifen Management in Office 365 nur auf Aufgabenebene angewendet wird.
 

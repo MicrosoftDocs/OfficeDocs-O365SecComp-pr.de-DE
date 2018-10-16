@@ -7,18 +7,19 @@ ms.date: 6/26/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
+ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: 0c03e6b3-e73f-4316-9e2b-bf4091ae96bb
 description: Office 365 nutzt eine Anzahl von anderen Anbietern. Im folgenden wird beschrieben, die vollständige Liste der bekannten Stammzertifikate für Office 365, die Kunden auftreten können, wenn Sie Office 365 zugreifen. Informationen über die Zertifikate müssen Sie möglicherweise in Ihre eigene Infrastruktur installieren, finden Sie unter Plan für Drittanbieter-SSL-Zertifikate für Office 365. Die folgenden Zertifikatinformationen gilt für alle weltweit und nationale Cloud Instanzen von Office 365.
-ms.openlocfilehash: 1dcc2dc38bb8e3239a3be3983791b0c60917dc5e
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 97e00833e57f8f6b7352650b0efdef51ddba77fa
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549753"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575359"
 ---
 # <a name="office-365-certificate-chains"></a>Office 365 Zertifikatketten
 

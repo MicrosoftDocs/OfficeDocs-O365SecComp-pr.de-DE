@@ -1,5 +1,5 @@
 ---
-title: Service-Verschlüsselung mit Kundenschlüssel für Office 365 – häufig gestellte Fragen
+title: Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Zusätzlich zu den Baseline Lautstärkepegel Verschlüsselung, die über BitLocker und verteilten Schlüssel-Manager (DKM), aktiviert ist bietet Office 365 Sicherheitsebene mit einer Verschlüsselung auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich der Daten aus Exchange Online, Skype für Unternehmen, SharePoint Online und OneDrive für Unternehmen. Dies ist die Verschlüsselung der Service bezeichnet.
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559240"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575329"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Service-Verschlüsselung mit Kundenschlüssel für Office 365 – häufig gestellte Fragen
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
 
 Zusätzlich zu den Baseline Lautstärkepegel Verschlüsselung, die über BitLocker und verteilten Schlüssel-Manager (DKM), aktiviert ist bietet Office 365 Sicherheitsebene mit einer Verschlüsselung auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich der Daten aus Exchange Online, Skype für Unternehmen, SharePoint Online und OneDrive für Unternehmen. Dies ist die Verschlüsselung der Service bezeichnet.
   
@@ -29,8 +29,8 @@ Senden Sie Ihrer Ideen, Vorschläge und Perspektiven an customerkeyfeedback@micr
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>Was ist die Verschlüsselung der Service mit Kundenschlüssel?
 
-Kundenschlüssel ist ein Feature, mit dem Sie zum Bereitstellen und Verwalten der Schlüssel zum Verschlüsseln von Daten im Ruhezustand in Office 365 verwendet. Das Feature nutzt die Verschlüsselung der Service, also die Verschlüsselung, die von Office 365 Exchange und SharePoint ausgeführt wird. Verschlüsselung Service bietet Vorteile jenseits was BitLocker - nämlich größer-Verteidigung gegen Angreifer bereitstellen kann. Service-Verschlüsselung ist einer starken Gegenmaßnahme, wenn ein Angreifer versucht, das Office 365 Access Control-System zu umgehen, das verwendet wird, um alle Anfragen für den Zugriff auf Kundendaten verarbeiten. Dies ist, da die Verschlüsselung Service bedeutet, dass ein Server-Administrator keine Steuerelement hat oder sogar Zugriff auf Verschlüsselung keys und kann nicht deaktivieren der Verschlüsselung, im Gegensatz zu mit BitLocker. Aus diesem Grund ein Angreifer mit administrativen Zugriff auf einen Server Hosten von Kundendaten, die mit Service-Verschlüsselung verschlüsselt wurde werden nicht die Kundendaten lesen und, auch wenn die verschlüsselten Daten vom Server kopiert werden wird, bleibt nicht verwendbar. 
-  
+Kundenschlüssel verbessert die Fähigkeit Ihrer Organisation, die Notwendigkeit, Compliance-Bestimmungen zu erfüllen, die wichtigsten Modalitäten mit dem Cloud-Dienstanbieter angeben. Mit Kundenschlüssel bereitstellen und steuern den Verschlüsselungsschlüssel für Ihre Office 365 Daten am-Rest auf Anwendungsebene. Daher können Sie Übung Kontrolle und Widerrufen von Ihrer Organisation Schlüsseln, sollten Sie entscheiden, um den Dienst zu beenden. Durch das Aufheben der Schlüssel, befinden sich die Daten mit dem Dienst nicht gelesen werden. Die Sperrung ist der erste Schritt auf dem Weg zur Daten löschen.
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>Welche Office 365-Daten im Ruhezustand von Kundenschlüssel abgedeckt werden?
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
