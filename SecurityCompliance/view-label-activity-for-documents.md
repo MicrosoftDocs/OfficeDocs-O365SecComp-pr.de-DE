@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
-ms.openlocfilehash: b40d1f9bdad4d0fcb3647f0c79c265bfe0713cd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540391"
 ---
 # <a name="view-label-activity-for-documents"></a>Anzeigen der Bezeichnungsaktivität für Dokumente
 
@@ -46,7 +46,7 @@ Beachten Sie, dass für den Bezeichnungsaktivitäten-Explorer ein Office 365 Ent
 
 Am oberen Rand des Bezeichnungsaktivitäten-Explorers können Sie auswählen, ob Aktivitäten für Dateien oder Ordner angezeigt werden sollen. Beachten Sie, dass Ordneraktivitäten nur den Ordner selbst betreffen, nicht die Dateien innerhalb des Ordners.
   
-Sie möchten möglicherweise Bezeichnungsaktivitäten für Ordner anzeigen, da beim Anwenden einer Bezeichnung auf einen Ordner alle Dateien in diesem Ordner ebenfalls diese Bezeichnung erhalten (mit Ausnahme von Dateien, auf die bereits eine Bezeichnung explizit angewendet wurde). Daher kann das Anwenden einer Bezeichnung auf einen Ordner sich auf eine beträchtliche Anzahl von Dateien auswirken. Weitere Informationen finden Sie unter [Anwenden einer Standardbezeichnung auf den gesamten Inhalt einer SharePoint-Bibliothek, eines Ordners oder einer Dokumentenmappe](labels.md#applying-a-default-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+Sie möchten möglicherweise Bezeichnungsaktivitäten für Ordner anzeigen, da beim Anwenden einer Bezeichnung auf einen Ordner alle Dateien in diesem Ordner ebenfalls diese Bezeichnung erhalten (mit Ausnahme von Dateien, auf die bereits eine Bezeichnung explizit angewendet wurde). Daher kann das Anwenden einer Bezeichnung auf einen Ordner sich auf eine beträchtliche Anzahl von Dateien auswirken. Weitere Informationen finden Sie unter [Anwenden einer Standardaufbewahrungsbezeichnung auf den gesamten Inhalt einer SharePoint-Bibliothek, eines Ordners oder einer Dokumentenmappe](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
 ![Dropdownmenü, in dem die Bezeichnungsaktivitäten für Dateien und Ordner angezeigt werden](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   
