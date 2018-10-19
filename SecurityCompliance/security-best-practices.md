@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Minimieren Sie das Potenzial der Verletzung Daten oder einem kompromittierten Konto, indem Sie diese empfohlenen bewährten Methoden befolgen.
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498091"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25637999"
 ---
 # <a name="security-best-practices-for-office-365"></a>Bewährte Methoden für die Sicherheit in Office 365
 
@@ -44,7 +44,7 @@ Sicheren Zugriff Score unter [https://SecureScore.office.com](https://SecureScor
 
 Mehrstufiger Authentifizierung das hinzugefügt einer Strategie für die sichere Kennwörter durch Benutzer auffordern, bestätigen einen Telefonanruf, Textnachricht oder eine app-Benachrichtigung über ein Telefon smart nach ordnungsgemäß Sie ihr Kennwort eingeben eine zusätzliche Schutzebene. Mit mehrstufiger Authentifizierung das direkte sind die Office 365-Benutzerkonten weiterhin vor nicht autorisiertem Zugriff geschützt, auch wenn das Kennwort des Benutzers gefährdet ist. Konten sind geschützt, da ein Konto erst nach die zusätzliche Herausforderung erfüllt wurden nicht Zugriff gewährt wird. Ein Kennwort kompromittierten oder gestohlenen ist nicht ausreichend.
   
-- [Plan für die mehrstufige Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - [Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
@@ -90,7 +90,7 @@ DLP können Sie vertrauliche Daten zu identifizieren und Richtlinien erstellen, 
   
 ## <a name="use-customer-lockbox"></a>Verwenden Sie Kunden Lockbox
 
-Ein Office 365-Administrator können Kunden Lockbox Sie steuern, wie ein Microsoft-Supportmitarbeiter während einer Sitzung auf Ihre Daten zugreift. In Fällen, in denen der Engineer Zugriff auf Ihre Daten erfordert zu behandeln und ein Problem beheben, können Kunden Lockbox Sie genehmigen oder Ablehnen der Access-Anforderung. Wenn Sie es genehmigen, kann der Mitarbeiter die Daten zugreifen. Jeder Anforderung Ablaufzeit hat und nachdem das Problem behoben ist, die Anforderung wird geschlossen und Access gesperrt ist. Kunden Lockbox ist im Office 365 Enterprise 5 Plan enthalten, oder Sie können ein separates Abonnement mit anderen Office 365 Enterprise Plan erwerben. Informationen finden Sie unter [Office 365 Lockbox Kundenanfragen](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+Ein Office 365-Administrator können Kunden Lockbox Sie steuern, wie ein Microsoft-Supportmitarbeiter während einer Sitzung auf Ihre Daten zugreift. In Fällen, in denen der Engineer Zugriff auf Ihre Daten erfordert zu behandeln und ein Problem beheben, können Kunden Lockbox Sie genehmigen oder Ablehnen der Access-Anforderung. Wenn Sie es genehmigen, kann der Mitarbeiter die Daten zugreifen. Jeder Anforderung Ablaufzeit hat und nachdem das Problem behoben ist, die Anforderung wird geschlossen und Access gesperrt ist. Kunden Lockbox ist im Office 365 Enterprise E5 Plan enthalten, oder Sie können ein separates Abonnement mit anderen Office 365 Enterprise Plan erwerben. Informationen finden Sie unter [Office 365 Lockbox Kundenanfragen](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Probieren Sie es selbst
 <a name="SecureScore"> </a>
