@@ -14,22 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: In Office 365 können Sie Protokollierung zum Protokollieren von Postfachzugriff durch Postfachbesitzer, Stellvertretungen und Administratoren Postfach aktivieren. Standardmäßig ist nicht Überwachung von Postfächern in Office 365 aktiviert. Nachdem Sie die postfachüberwachungsprotokollierung für ein Postfach aktiviert haben, können Sie das Office 365-Überwachungsprotokoll für Aktivitäten, die ausgeführt werden, für das Postfach suchen.
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358384"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639664"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Aktivieren der Postfachüberwachung in Office 365
   
 In Office 365 können Sie Protokollierung zum Protokollieren von Postfachzugriff durch Postfachbesitzer, Stellvertretungen und Administratoren Postfach aktivieren. Standardmäßig ist nicht Überwachung von Postfächern in Office 365 aktiviert. Dies bedeutet, dass die Überwachungsereignisse Postfach nicht in den Ergebnissen angezeigt, wenn Sie das Office 365-Überwachungsprotokoll für Mailbox-Aktivität durchsuchen. Aber wenn postfachüberwachungsprotokollierung für ein Benutzerpostfach aktiviert ist, können Sie das Überwachungsprotokoll Postfach Aktivität suchen. Darüber hinaus bei der Überwachung Postfach Protokollierung aktiviert ist, einige Aktionen, die von Administratoren, Stellvertretungen, und Besitzer werden standardmäßig protokolliert. Melden Sie sich (und suchen Sie nach) Weitere Aktionen finden Sie unter Schritt 3.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbemerkung
   
 - Sie müssen Exchange Online PowerShell verwenden, um Postfach zu aktivieren postfachüberwachungsprotokollierung. Sie können die Office 365-Sicherheit nicht verwenden &amp; Compliance Center oder die Exchange-Verwaltungskonsole.
-    
-- Nachdem Sie die postfachüberwachungsprotokollierung für ein Postfach aktiviert, Zugriff auf das Postfach und bestimmte Admin und Delegaten Aktionen werden standardmäßig protokolliert. Um von der Postfachbesitzer durchgeführten Aktionen zu protokollieren, müssen Sie die Aktionen von zu überwachenden angeben. Siehe Abschnitt "Weitere Info" sehen Sie eine Liste der Aktionen, die protokolliert werden, nachdem die postfachüberwachungsprotokollierung ist aktiviert, und welche Aktionen für jede Art von Anmeldeinformationen verfügbar sind.
     
 - Sie können nicht aktiviert werden postfachüberwachungsprotokollierung für das Postfach, das ein Office 365-Gruppe oder ein Team in Microsoft-Teams zugeordnet ist.
     
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>Schritt 3: Festlegen der zu überwachenden Aktionen des Postfachbesitzers
 
-Wenn Sie die Überwachung für ein Postfach aktivieren, wird nur eine Aktion ( **UpdateFolderPermissions** ), die von der Postfachbesitzer durchgeführt standardmäßig überwacht. Sie müssen andere Aktionen von zu überwachenden angeben. Finden Sie in der Tabelle im Abschnitt "Postfach Aktionen" für eine Liste und eine Beschreibung der Aktionen, die überwacht werden können. 
+Wenn Sie die Überwachung für ein Postfach aktivieren, werden einige der Postfachbesitzer durchgeführten Aktionen standardmäßig überwacht. Sie müssen andere Aktionen von zu überwachenden angeben. Finden Sie in der Tabelle im Abschnitt [Überwachung Postfach-Aktionen](#mailbox-auditing-actions) für eine Liste und eine Beschreibung der Aktionen, die standardmäßig angemeldet sind und den anderen Aktionen, die überwacht werden können. 
   
 In diesem Beispiel wird die postfachüberwachung für das Postfach von Pilar Pinilla die Aktionen von **MailboxLogin** und **HardDelete** hinzugefügt. In diesem Beispiel wird davon ausgegangen, dass die Überwachung von Postfächern bereits für dieses Postfach aktiviert wurde. 
 
@@ -123,7 +121,7 @@ Der Wert **True** für die Eigenschaft **AuditEnabled** überprüft, ob dieses P
     
 ## <a name="mailbox-auditing-actions"></a>Postfach auditing Aktionen
   
-In der folgenden Tabelle sind die Aktionen aufgelistet, die vom Postfach protokolliert werden können postfachüberwachungsprotokollierung. Die Tabelle enthält, welche Aktion für die anderen Benutzer Anmeldetypen protokolliert werden kann. In der Tabelle gibt **No** , dass eine Aktion kann nicht für diese Anmeldetyp protokolliert werden. Ein Sternchen ( **\*** ) gibt an, dass die Aktion standardmäßig protokolliert wird, wenn die postfachüberwachungsprotokollierung für das Postfach aktiviert ist. Wie bereits zuvor erwähnt wird nur der Besitzer wird standardmäßig überwacht, wenn Sie die Überwachung von Postfächern einschalten UpdateFolderPermissions. Um durch den Besitzer des Postfachs eingeleiteten Aktionen zu protokollieren, müssen Sie zusätzliche Aktionen von zu überwachenden angeben. Hierzu finden Sie unter [Schritt 3](#step-3-specify-owner-actions-to-audit) in diesem Thema. 
+In der folgenden Tabelle sind die Aktionen aufgelistet, die vom Postfach protokolliert werden können postfachüberwachungsprotokollierung. Die Tabelle enthält, welche Aktion für die anderen Benutzer Anmeldetypen protokolliert werden kann. In der Tabelle gibt **No** , dass eine Aktion kann nicht für diese Anmeldetyp protokolliert werden. Ein Sternchen ( **\*** ) gibt an, dass die Aktion standardmäßig protokolliert wird, wenn die postfachüberwachungsprotokollierung für das Postfach aktiviert ist. 
   
 |**Aktion**|**Beschreibung**|**Administrator**|**Stellvertretung\*\*\***|**Besitzer**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -146,7 +144,7 @@ In der folgenden Tabelle sind die Aktionen aufgelistet, die vom Postfach protoko
 > [!NOTE]
 > <sup>\*</sup>Wird standardmäßig überwacht, wenn die Überwachung für ein Postfach aktiviert ist.<br/><br/>  <sup>\*\*</sup>Einträge für Ordner binden Aktionen, die von Stellvertretern werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb des Zeitraums von 24 Stunden wird ein Protokolleintrag generiert.<br/><br/><sup>\*\*\*</sup>Ein Administrator die Berechtigung "Vollzugriff" des Postfachs eines Benutzers zugewiesen wurde, wird ein Stellvertreter betrachtet. 
   
-Wenn Sie bestimmte Arten von zu überwachenden Postfach Aktionen nicht mehr benötigen, sollten Sie das Postfach Protokollierung Überwachungskonfiguration, um diese Aktionen deaktivieren ändern. Vorhandene Protokolleinträge werden nicht gelöscht, bis die Verfallszeit auf 90 Tage nach Überwachungsprotokolleinträgen erreicht wird.
+Wenn Sie bestimmte Arten von zu überwachenden Postfach Aktionen nicht mehr benötigen, sollten Sie das Postfach Protokollierung Überwachungskonfiguration, um diese Aktionen deaktivieren ändern. Vorhandene Protokolleinträge werden nicht gelöscht, bis das Aufbewahrungslimit nach Überwachungsprotokolleinträgen erreicht wird. Weitere Informationen zu den Aufbewahrungszeitraum für Überwachungsprotokolleinträge finden Sie im Abschnitt "bevor Sie beginnen", bei der [Suche der Überwachungsprotokolle melden Sie sich bei der Office 365-Sicherheit und Compliance Center](search-the-audit-log-in-security-and-compliance.md#before-you-begin).
   
 ## <a name="more-infotab"></a>[Weitere Informationen](#tab/)
   
