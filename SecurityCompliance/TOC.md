@@ -12,7 +12,9 @@
 # Zugriffsschutz für Daten und Dienste
 ## [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
 ## [Entscheidung zwischen MDM und Intune](choose-between-mdm-and-intune.md)
-# [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
+# Schützen von Informationen
+## [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+## [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ## [Sehen Sie einen erweiterten Überblick über DLP an](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Einrichten von DLP
 ### [Erste Schritte mit DLP-Richtlinienempfehlungen](get-started-with-dlp-policy-recommendations.md)
@@ -47,11 +49,11 @@
 ### [Aktivieren der unbeschränkten Archivierung](enable-unlimited-archiving.md)
 ### [Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ## Aufbewahren von Daten
-### [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
-### [Übersicht über Bezeichnungen](labels.md)
-### [Übersicht über Dispositionsüberprüfungen](disposition-reviews.md)
-### [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md)
-### [Übersicht über den Dateiplan-Manager](file-plan-manager.md)
+### [Aufbewahrungsrichtlinien](retention-policies.md)
+### [Aufbewahrungsbezeichnungen](labels.md)
+### [Dispositionsüberprüfungen](disposition-reviews.md)
+### [Ereignisgesteuerte Aufbewahrung](event-driven-retention.md)
+### [Dateiplan-Manager](file-plan-manager.md)
 ## [Verwalten inaktiver Postfächer](inactive-mailboxes-in-office-365.md)
 ### [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)
 ### [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -70,7 +72,7 @@
 ## [Antispam- und Antischadsoftwareschutz](anti-spam-and-anti-malware-protection.md)
 ### [Antiphishingschutz in Office 365](anti-phishing-protection.md)
 #### [ATP-Antiphishingfunktionen in Office 365](atp-anti-phishing.md)
-#### [Einrichten von ATP-Antiphishingrichtlinien in Office 365](set-up-atp-anti-phishing-policies.md)
+#### [Einrichten von Antiphishing und ATP-Antiphishingrichtlinien](set-up-anti-phishing-policies.md)
 #### [Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern](how-office-365-validates-the-from-address.md)
 ### [Antispoofingschutz in Office 365](anti-spoofing-protection.md)
 #### [Weitere Informationen zu Spoofing Intelligence](learn-about-spoof-intelligence.md)
