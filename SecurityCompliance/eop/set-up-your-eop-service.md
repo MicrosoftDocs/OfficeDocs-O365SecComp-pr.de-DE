@@ -3,7 +3,7 @@ title: Einrichten Ihres EOP-Diensts
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 10/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: f1c65164adcaa17c58ae9c4b4b957c477b9e02f3
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715901"
 ---
 # <a name="set-up-your-eop-service"></a>Einrichten Ihres EOP-Diensts
 
@@ -49,7 +49,7 @@ In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (E
 2. Befolgen Sie die Schritte, um Ihrem DNS-Hostinganbieter die entsprechenden DNS-Datensätze hinzuzufügen, um die Domäneneigentümerschaft zu überprüfen.
     
 > [!TIP]
-> [Hinzufügen Ihrer Domäne zu Office 365](https://go.microsoft.com/fwlink/p/?LinkId=282303) und [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219) sind hilfreiche Ressourcen, auf die Sie zurückgreifen können, wenn Sie dem Dienst Ihre Domäne hinzufügen und DNS konfigurieren. 
+> [Hinzufügen Ihrer Domäne zu Office 365](https://support.office.com/en-us/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611) und [Erstellen von DNS-Einträgen für Office 365](https://support.office.com/en-us/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166) sind hilfreiche Ressourcen, auf die Sie zurückgreifen können, wenn Sie dem Dienst Ihre Domäne hinzufügen und DNS konfigurieren. 
   
 ### <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Schritt 2: Hinzufügen von Empfängern und optionales Aktivieren der verzeichnisbasierten Edge-Blockierung (DBEB)
 

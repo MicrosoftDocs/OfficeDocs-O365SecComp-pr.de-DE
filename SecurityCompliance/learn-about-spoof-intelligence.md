@@ -3,7 +3,7 @@ title: Weitere Informationen zu Spoofing Intelligence
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: Verwenden Sie in das Wertpapier Spoofing Intelligence &amp; Compliance Center auf der Seite Anti-Spam Settings Überprüfen aller Absender, die entweder Domänen, die Teil Ihrer Organisation sind spoofing sind, oder spoofing externe Domänen. Spoofing Intelligence steht als Teil von Office 365 Enterprise E5 oder separat als Teil der erweiterte Schutz und Exchange Online Protection.
-ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715911"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Weitere Informationen zu Spoofing Intelligence
 
@@ -102,7 +102,7 @@ Wenn Sie ein Office 365 Enterprise E5-Abonnement haben oder erweiterte Schutz al
 ## <a name="configuring-the-anti-spoofing-policy"></a>Konfigurieren der Richtlinie für Anti-spoofing
 <a name="Managespooflist"> </a>
 
-Neben dem zulassen oder Blockieren von einem bestimmten Absender gefälschten e-Mails in Ihrer Organisation zu senden, können Sie auch konfigurieren wie strikt der gefiltert werden sollen, die durchzuführende Aktion beim eine spoofing Nachricht gefunden wird und ob Sie Tipps für die Sicherheit zu aktivieren Anti-spoofing.
+Neben dem zulassen oder Blockieren von einem bestimmten Absender gefälschten e-Mails in Ihrer Organisation zu senden, können Sie auch konfigurieren, wie strikt soll den Filter und die Aktion, die bei eine spoofing Nachricht gefunden wird.
   
 Anti-spoofing Schutz gilt für e-Mail von Absendern von Domänen, die sich außerhalb Ihrer Office 365-Organisation befinden. Sie können die Richtlinie auf Empfänger, deren Postfächer für Office 365 Enterprise E5, erweiterte Threat Protection und ab Oktober, lizenziert sind, ebenfalls 2018 EOP-Kunden anwenden. Sie können die Richtlinie Anti-spoofing zusammen mit den anderen Anti-Phishing-Einstellungen verwalten. Weitere Informationen zu Anti-Phishing-Einstellungen finden Sie unter [Einrichten der Office 365 Anti-Phishing-Richtlinien](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
   
@@ -126,11 +126,7 @@ Obwohl die Richtlinie Anti-spoofing unter Anti-Phishing-Richtlinie in das Wertpa
   
     ![Screenshot, der Richtlinie Anti-spoofing zeigt bearbeiten Optionen](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. Wählen Sie, ob zum Aktivieren oder Deaktivieren der Anti-spoofing Safety Tipps. Office 365 empfiehlt aktivieren Tipp Sicherheit **Authentifizierung ein Fehler auftritt** , um Benutzer zu benachrichtigen, wenn sie mit einem Absender interagiert werden, deren Identität nicht überprüft werden konnten. Office 365 empfiehlt auch die Spitze Sicherheit für eine **Authentifizierung Soft-Pass** für kleinere Gruppen von Benutzern, aktivieren, da dieser Tipp Sicherheit viele Warnungen generiert wird, kann sobald der Benutzer aus mehreren Quellen für legitime, aber nicht authentifizierte e-Mail erhält.  
-  
-    ![Screenshot, der Anti-spoofing Sicherheitsoptionen-Info Zeigt](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-
-8. Stellen Sie Ihrer Wahl, und wählen Sie dann auf **Speichern**. 
+7. Stellen Sie Ihrer Wahl, und wählen Sie dann auf **Speichern**. 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Andere Möglichkeiten zum Verwalten von spoofing und Phishing mit Office 365
 <a name="Managespooflist"> </a>
@@ -140,6 +136,7 @@ Werden Sie über spoofing und Phishing-Schutz sorgfältig. Hier können verwandt
 - Überprüfen Sie den Exchange Online Protection Spoofing Mail Bericht als Teil Ihrer Routine. Sie können diesen Bericht häufig zum Anzeigen und Verwalten von gefälschten Absender verwenden. Informationen finden Sie unter **Spoofing der e-Mail-Bericht** in der [e-Mail-schutzberichte in Office 365, um Daten über Schadsoftware, Spam und Regel erkannte verwenden](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
     
 Informationen zu erweiterten Office 365-Administratoren können Sie auch diese Prüfungen ausführen:
+    
     
 - Überprüfen der Konfigurations des Sender Policy Framework (SPF). Eine kurze Einführung in SPF und erhalten sie schnell konfiguriert finden Sie unter [Einrichten von SPF in Office 365, um spoofing zu verhindern](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Ausführlichere Informationen zu der Verwendung von Office 365 SPF oder zur Problembehandlung oder nicht standardmäßigen Bereitstellungen wie hybridbereitstellungen beginnen Sie mit [wie Office 365 verwendet Sender Policy Framework (SPF), um spoofing zu verhindern](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     
