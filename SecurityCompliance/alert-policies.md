@@ -3,7 +3,7 @@ title: Warnen Richtlinien in die Office 365-Sicherheit &amp; Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/8/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Erstellen von alert Richtlinien in die Office 365-Sicherheit &amp; Compliance Center, um potenzielle Bedrohungen, Datenverlust und Problem mit Berechtigungen zu überwachen. Sie können dann anzeigen und Verwalten von Benachrichtigungen, die generiert werden, wenn Benutzer Aktivitäten ausführen, die die Suchkriterien einer Warnung zu.
-ms.openlocfilehash: 1404f03fdc59583fdf402f2cdc6209f4d55c23f3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 020e9871170091e63cd6a59e6f1a0bfe50124fef
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529401"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698021"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Warnen Richtlinien in die Office 365-Sicherheit &amp; Compliance Center
 
@@ -74,7 +74,9 @@ Eine Warnung Richtlinie umfasst die folgenden Einstellungen und Bedingungen.
     
   - Datengovernance
     
-  - Schutz vor Datenverlust
+  - Verhinderung von Datenverlust
+
+  - Nachrichtenübermittlung
     
   - Berechtigungen
     
@@ -100,6 +102,7 @@ In der folgenden Tabelle enthält und beschreibt die verfügbaren alert Standard
 |**Warnung Standardrichtlinie**|**Beschreibung**|**Office 365 Enterprise-Abonnement**|
 |:-----|:-----|:-----|
 |**Erstellung der Regel Weiterleitung-Umleitung** <br/> |Generiert eine Warnung, wenn eine Person in Ihrer Organisation eine Posteingangsregel für ihr Postfach wird erstellt, die weiterleitet oder leitet Nachrichten an ein anderes e-Mail-Konto. Diese Richtlinie verfolgt nur Posteingangsregeln, die mit Outlook Web App oder Exchange Online PowerShell erstellt werden. Diese Richtlinie hat eine Einstellung für **niedriger** Schweregrad. Weitere Informationen zum Posteingangsregeln zum Weiterleiten und Umleiten von e-Mail in Outlook Web App verwenden finden Sie unter [Verwenden von Regeln in Outlook Web App zum automatischen Weiterleiten von Nachrichten an ein anderes Konto](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |E1, E3 oder E5  <br/> |
+|**eDiscovery-Suche gestartet oder zu exportierenden** <br/> |Generiert eine Warnung, wenn ein Benutzer das Tool für die Inhaltssuche im Compliance Center & Sicherheit verwendet. Eine Warnung wird ausgelöst, wenn die folgenden Inhaltssuche Aktivitäten ausgeführt werden:<br/><br/>• Eine Inhaltssuche wird gestartet.<br/>•, Die die Ergebnisse einer Inhaltssuche exportiert werden<br/>• Ein Inhaltssuche-Bericht wird exportiert.<br/><br/>Benachrichtigungen werden auch trigged, wenn die vorherige Inhaltssuche Aktivitäten im Zusammenhang mit einem eDiscovery-Fall ausgeführt werden. Diese Richtlinie hat eine Einstellung für **mittlerer** Schweregrad. Weitere Informationen zu Aktivitäten Inhaltssuche finden Sie unter [Suchen für eDiscovery-Aktivitäten in der Office 365 in das Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |E1, E3 oder E5  <br/> |
 |**Erhöhung von Exchange Admin-Berechtigungen** <br/> |Generiert eine Warnung, wenn jemand Administratorberechtigungen in Ihrer Exchange Online-Organisation zugewiesen wird; beispielsweise wenn ein Benutzer der Organisation Verwaltungsrolle hinzugefügt wird adminisratorrollengruppe in Exchange Online. Diese Richtlinie hat eine Einstellung für **niedriger** Schweregrad.<br/> |E1, E3 oder E5  <br/> |
 |**Verzögert Nachrichten** <br/> |Generiert eine Warnung, wenn Office 365 e-Mail-Nachrichten an Ihre lokale Organisation oder einem Partner Servern übermittelt werden kann nicht mit einem Connector. Wenn dies der Fall sein, wird die Nachricht in Office 365 in der Warteschlange. Diese Warnung wird ausgelöst, wenn 2.000 Nachrichten oder mehr, die für mehr als eine Stunde zurückgestellt wurden vorhanden sind. Diese Richtlinie hat eine Einstellung für die **hohe** Schweregrad.<br/> |E1, E3 oder E5  <br/> |
 |**Nach der Übermittlung erkannt Malware Kampagne** <br/> |Generiert eine Warnung, wenn eine ungewöhnlich große Anzahl von Nachrichten mit Schadsoftware an Postfächer in Ihrer Organisation übermittelt werden. Wenn dieses Ereignis eintritt, entfernt Office 365 die infizierten Nachrichten aus Exchange Online-Postfächer. Diese Richtlinie hat eine Einstellung für die **hohe** Schweregrad.<br/> |Add-on-Abonnement E5 oder Office 365 Bedrohungsanalyse  <br/> |
@@ -124,7 +127,7 @@ Die folgenden Filter können Sie eine Teilmenge der alle Benachrichtigungen auf 
   
 - **Status** – dies angezeigt, die einen bestimmten Status zugewiesen sind Filtern verwenden; die Standardstatus ist **aktiv**. Sie oder andere Administratoren können den Statuswert ändern.
     
-- **Richtlinien** - Benachrichtigungen angezeigt, die die Einstellung der eine oder mehrere alert Richtlinien entsprechen diesen Filter verwenden. Oder Sie können nur alle Warnungen für alle Richtlinien für die Warnung anzeigen.
+- **Gruppenrichtlinien** - Benachrichtigungen angezeigt, die die Einstellung der eine oder mehrere alert Richtlinien entsprechen diesen Filter verwenden. Oder Sie können nur alle Warnungen für alle Richtlinien für die Warnung anzeigen.
     
 - **Zeitbereich** - diesen Filter verwenden, um Warnungen anzuzeigen, die innerhalb eines bestimmten Datums und der Zeitbereich generiert wurden.
     
