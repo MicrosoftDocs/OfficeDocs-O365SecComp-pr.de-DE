@@ -3,7 +3,7 @@ title: Verwalten von rechtlichen Ermittlungen in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Verwenden von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center zum Verwalten von Ihrer Organisation rechtliche Untersuchung. Wenn Sie ein E5-Abonnement verfügen, können Sie weitere Groß-/Kleinschreibung Daten analysieren, mithilfe von Text Analytics, Computer Lern- und vorhersehbare Codierung Funktionen des erweiterten eDiscovery.
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719049"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Ermittlungen in Office 365
 
@@ -32,7 +32,7 @@ Organisationen verfügen über viele Gründe für die auf eine rechtliche Anfrag
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Verwalten von rechtlichen Ermittlungen mit eDiscovery-Fällen
 
-eDiscovery-Fällen können Sie steuern, wer erstellen, Zugriff und eDiscovery-Fälle in Ihrer Organisation verwalten kann. Anwendungsfälle Elemente und welche Arten von Aktionen, die sie ausführen, platzieren Sie einen Haltestatus auf Speicherorte für Inhalte in eine rechtliche Anfrage relevant und Verwenden der Suchfunktion von Inhalten die Speicherorte für die Suche nach Inhalten zu halten, die möglicherweise Ihre Anfrage schnell-Steuerelement hinzufügen. Sie können auch exportieren, und diese Ergebnisse zur weiteren Untersuchung von externen Prüfern herunterladen. Wenn Ihre Office 365-Organisation verfügt und E5-Abonnement, Sie auch der Suchergebnisse für die Analyse in erweiterten eDiscovery vorbereiten können.
+eDiscovery-Fällen können Sie steuern, wer erstellen, Zugriff und eDiscovery-Fälle in Ihrer Organisation verwalten kann. Anwendungsfälle Elemente und welche Arten von Aktionen, die sie ausführen, platzieren Sie einen Haltestatus auf Speicherorte für Inhalte in eine rechtliche Anfrage relevant und Verwenden der Suchfunktion von Inhalten die Speicherorte für die Suche nach Inhalten zu halten, die möglicherweise Ihre Anfrage schnell-Steuerelement hinzufügen. Sie können auch exportieren, und diese Ergebnisse zur weiteren Untersuchung von externen Prüfern herunterladen. Wenn Ihre Office 365-Organisation ein Abonnement E5 verfügt, können Sie auch Suchergebnisse für die Analyse in erweiterten eDiscovery vorbereiten.
   
 - [Verwalten des Workflows eDiscovery](ediscovery-cases.md) durch Erstellen und Verwenden von eDiscovery-Fälle für jede rechtliche Untersuchung verpflichten sich muss Ihre Organisation 
     
