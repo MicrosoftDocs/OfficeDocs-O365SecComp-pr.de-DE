@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit Office 365 Bedrohungsanalyse
+title: Erste Schritte mit Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Informationen Sie zu Office 365 Bedrohungsanalyse und Entwicklersicht.
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529716"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769894"
 ---
-# <a name="get-started-with-office-365-threat-intelligence"></a>Erste Schritte mit Office 365 Bedrohungsanalyse
+# <a name="get-started-with-office-365-threat-intelligence"></a>Erste Schritte mit Office 365 Threat Intelligence
 
 Wenn Sie in Ihrer Organisation Security Team sind, können Sie Office 365 Bedrohungsanalyse verwenden, müssen um die Benutzer vor Angriffen zu schützen. Office 365 Bedrohungsanalyse erleichtert Sicherheitsspezialisten und Administratoren schützen Sie Benutzer mithilfe von Insights bubbling und identifizieren Aktion basierend auf was geschieht ihre Office 365-Umgebung. Diese Einblicke basieren auf eine umfassende Sammlung von Threat Intelligence-Daten und Systeme und Spotfarben Muster, die zum Verhalten und verdächtige Aktivitäten Angriff entsprechen.
   
@@ -92,8 +92,8 @@ Office 365 Bedrohungsanalyse ist in Office 365 Enterprise E5 enthalten. Verwende
 |Verwenden Sie das Dashboard Bedrohung (oder das neue [Dashboard Sicherheit](security-dashboard.md))  <br/> Anzeigen von Informationen über kürzlich geführten oder aktuellen Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
 |Verwenden Sie die Bedrohung Explorer (auch als Explorer bezeichnet)  <br/> Analysieren der Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
 |Vorfälle anzeigen  <br/> E-Mail-Nachrichten auf einen Vorfall hinzufügen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Trigger-e-Mail-Aktionen in einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mails  <br/> |Office 365 globaler Administrator  <br/> Suchen und löschen (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Integrieren von Office 365 Bedrohungsanalyse in Windows Defender erweiterte Schutz  <br/> Integrieren von Office 365 Bedrohungsanalyse mit einem SIEM-server  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Entsprechende Rolle zugewiesen in zusätzliche Applications (wie Windows Defender erweiterte Threat Protection-Portal oder einem Server SIEM)  <br/> |
+|Trigger-e-Mail-Aktionen in einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mails  <br/> |Office 365 globaler Administrator oder Sicherheitsadministrator  <br/> Suchen und löschen (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
+|Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection  <br/> Integrieren von Office 365 Bedrohungsanalyse mit einem SIEM-server  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Entsprechende Rolle zugewiesen in zusätzliche Applications (wie Windows Defender erweiterte Threat Protection-Portal oder einem Server SIEM)  <br/> |
    
 Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
@@ -103,7 +103,7 @@ Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Bere
     
 - [Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde](investigate-malicious-email-that-was-delivered.md)
     
-- [Integrieren von Office 365 Bedrohungsanalyse in Windows Defender erweiterte Schutz](integrate-office-365-ti-with-wdatp.md)
+- [Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
     
 - [Erfahren Sie mehr über Angriff Simulator](attack-simulator.md)
   

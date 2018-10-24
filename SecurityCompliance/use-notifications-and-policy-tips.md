@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn eine Person mit Inhalt, steht in Konflikt mit einer DLP-Richtlinie funktionsfähig ist. Sie können e-Mail-Benachrichtigungen und Tipps zu Richtlinien zu informieren und Hilfe Personen zu Ihrer Organisation Richtlinien zu informieren. Sie können auch vorführen benötigten Personen die Option aus, um die Richtlinie außer Kraft setzen, damit sie nicht blockiert sind, wenn sie einen gültigen Business verfügen oder wenn die Richtlinie falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530059"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769914"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von e-Mail-Benachrichtigungen und Anzeigen von Tipps zu Richtlinien für DLP-Richtlinien
 
@@ -206,6 +206,25 @@ Wenn die richtlinientipps für die Außerkraftsetzung zulassen konfiguriert sind
 ![Richtlinie Tipp Dialogfeld, in dem die richtlinientipp überschrieben werden kann](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Beachten Sie, dass Sie eine e-Mail-Nachricht vertraulichen Informationen hinzugefügt, liegt möglicherweise Wartezeit zwischen Wenn vertrauliche Informationen hinzugefügt wird und wenn der richtlinientipp angezeigt wird.
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 und höher mit Tipps zu Richtlinien für nur einige Bedingungen unterstützt
+
+Derzeit unterstützt Outlook 2013 und höher mit richtlinientipps nur für diese Bedingungen:
+
+- Inhalt enthält
+- Inhalte werden freigegeben.
+
+Wir arbeiten derzeit Unterstützung für das Anzeigen von Tipps zu Richtlinien für zusätzliche Bedingungen. Dazu zählen folgende:
+
+- Inhalt einer e-Mail-Anlage konnte nicht überprüft werden
+- Inhalt einer e-Mail-Anlage nicht vollständig überprüft
+- Erweiterung für die Anlage ist
+- Anlage ist kennwortgeschützt
+- Ist der Document-Eigenschaft
+- Domäne des Empfängers ist
+- IP-Adresse des Absenders
+
+Beachten Sie, dass alle diese Aktionen in Outlook arbeiten, in dem sie entspricht Inhalte und erzwingen Schutzvorrichtungen Aktionen auf Inhalt. Aber mit Tipps zu Richtlinien für Benutzer wird noch nicht unterstützt.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Tipps zu Richtlinien in der Exchange-Verwaltungskonsole im Vergleich zu den Office 365-Sicherheit &amp; Compliance Center
 
@@ -218,8 +237,7 @@ Notiz, die während der richtlinientipps nur von einem einzigen Standort, zeichn
 ### <a name="default-text-for-policy-tips-in-email"></a>Standardtext für richtlinientipps in e-Mail
 
 In der Standardeinstellung Anzeigetext richtlinientipps ähnlich dem folgenden für e-Mail.
-  
-| |
+
 |**Wenn die DLP-Richtlinienregel dies tut...**|**Dann lautet der Standardtext eines Richtlinientipps folgendermaßen...**|
 |:-----|:-----|
 |Sendet eine Benachrichtigung, ermöglicht aber kein außer Kraft setzen  <br/> |Ihre e-Mail-steht in Konflikt mit einer Richtlinie in Ihrer Organisation.  <br/> |
@@ -255,8 +273,7 @@ In jedem dieser Office 2016-Desktopprogramme können Personen Richtlinientipps d
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Standardtext für Richtlinientipps in Excel 2016, PowerPoint 2016 und Word 2016
 
 Richtlinientipps zeigen in der Statusleiste und Backstage-Ansicht eines geöffneten Dokuments standardmäßig Text wie den folgenden an. Der Benachrichtigungstext wird für jede Regel separat konfiguriert, damit sich der angezeigte Text abhängig von der angewendeten Regel unterscheidet.
-  
-| |
+
 |**Wenn die DLP-Richtlinienregel dies tut...**|**Dann lautet der Standardtext eines Richtlinientipps folgendermaßen...**|
 |:-----|:-----|
 |Sendet eine Benachrichtigung, ermöglicht aber kein außer Kraft setzen  <br/> |Diese Datei steht in Konflikt mit einer Richtlinie in Ihrer Organisation. Wechseln Sie zur Weitere Informationen im Menü **Datei** .<br/> |
@@ -269,7 +286,7 @@ Sie können den Text für richtlinientipps unabhängig von der e-Mail-Benachrich
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
+- [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
     
 - [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
     
