@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Aufbewahrungsbezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Aufbewahrungsbezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: 6d2d42d9cb13490073c1313561d611f0a32bfb55
-ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
+ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "25678114"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698041"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -441,12 +441,38 @@ Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsbezeichnungen und ei
 
 Um die Bezeichnungs-Cmdlets verwenden zu können, müssen Sie wie folgt vorgehen:
   
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [Herstellen einer Verbindung mit Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Diese [Office 365 Security &amp; Compliance Center-Cmdlets nutzen](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
-    
+2. Verwenden Sie die folgenden Office 365 Security & Compliance Center-Cmdlets:
+
+  - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
+
+  - [New-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-compliancetag)
+
+  - [Remove-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-compliancetag)
+
+  - [Set-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-compliancetag)
+
+  - [Enable-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/enable-compliancetagstorage)
+
+  - [Get-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetagstorage)
+
+  - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
+
+  - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)
+
+  - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancepolicy)
+
+  - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy)
+
+  - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule)
+
+  - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)
+
+  - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
+
+  - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)
+
 ## <a name="more-information"></a>Weitere Informationen
 
-- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
-    
-
+[Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Mit Vertraulichkeitsbezeichnungen in Office 365 können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577094"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678124"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -71,7 +71,7 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
 
 - **Verschlüsseln** von E-Mails oder von E-Mails und Dokumenten. Sie können auswählen, welche Benutzer oder Gruppen zu welchen Aktionen berechtigt sind und wie lange. Beispielsweise können Sie auswählen, dass Benutzer in einer bestimmten Domäne außerhalb Ihrer Organisation für nur sieben Tage, nachdem die Inhalte bezeichnet wurden, zum Überprüfen des Inhalts berechtigt sind.
 
-- **Markieren Sie den Inhalt** durch Hinzufügen von benutzerdefinierten Wasserzeichen, Kopf- oder Fußzeilen für e-Mails oder Dokumente, die die Bezeichnung angewendet haben. (Beachten Sie, dass das Wasserzeichen nur auf Dokumente, e-Mail nicht angewendet werden und sind auf 255 Zeichen beschränkt. Außerdem Kopf- und Fußzeilen sind beschränkt auf 1024 Zeichen, außer in Excel, in dem sie auf 253 Zeichen beschränkt sind.)
+- **Markieren Sie den Inhalt** durch Hinzufügen von benutzerdefinierten Wasserzeichen, Kopf- oder Fußzeilen für E-Mails oder Dokumente, die die Bezeichnung angewendet haben. Beachten Sie, dass Wasserzeichen nur auf Dokumente, und nicht auf E-Mails angewendet werden können, und auf 255 Zeichen beschränkt sind. Außerdem sind Kopf- und Fußzeilen auf 1024 Zeichen beschränkt (außer in Excel, wo sie auf 255 Zeichen oder weniger beschränkt sind. Dies ist davon abhängig, ob das Dokument andere Kopf- oder Fußzeilen enthält, bzw. von anderen Faktoren abhängig.)
 
     ![Auf Dokument angewendetes Wasserzeichen und Kopfzeile](media/Sensitivity_label_watermark_header.png)
 
@@ -92,7 +92,7 @@ Einem Dokument oder einer E-Mail kann nur eine einzelne Vertraulichkeitsbezeichn
 
 ### <a name="sublabels-grouping-labels"></a>Unterbezeichnungen (Gruppierungsbezeichnungen)
 
-Mit Unterbezeichnungen können Sie Bezeichnungen unter einer Überschrift zusammenfassen, die einem Benutzer in einer Office-App angezeigt wird. Beispielsweise kann Ihre Organisation unter „Vertraulich“ mehrere verschiedene Bezeichnungen für bestimmte Typen dieser Klassifizierung verwenden. In diesem Beispiel ist die Bezeichnung „Vertraulich“ einfach eine textuelle Bezeichnung ohne Schutzeinstellungen. Somit kann sie nicht auf Inhalte angewendet werden. Stattdessen müssen Benutzer zum Anzeigen der Unterbezeichnungen „Vertraulich“ auswählen. Anschließend können sie eine Unterbezeichnung auswählen, um sie auf Inhalte anzuwenden.
+Mit Unterbezeichnungen können Sie Bezeichnungen unter einer Überschrift zusammenfassen, die einem Benutzer in einer Office-App angezeigt wird. Beispielsweise kann Ihre Organisation unter „Vertraulich“ mehrere verschiedene Bezeichnungen für bestimmte Typen dieser Klassifizierung verwenden. In diesem Beispiel ist die Bezeichnung „Vertraulich“ einfach eine textuelle Bezeichnung ohne Schutzeinstellungen. Da sie Unterbezeichnungen beinhaltet, kann sie nicht auf Inhalte angewendet werden. Stattdessen müssen Benutzer zum Anzeigen der Unterbezeichnungen „Vertraulich“ auswählen. Anschließend können sie eine Unterbezeichnung auswählen, um sie auf Inhalte anzuwenden.
 
 Unterbezeichnungen sind einfach eine Möglichkeit, Benutzern Bezeichnungen in logischen Gruppen zu präsentieren. Unterbezeichnungen erben keine Einstellungen von der Bezeichnung, der sie untergeordnet sind.
 
@@ -148,7 +148,7 @@ In Office-Apps auf Geräten unter Windows werden Vertraulichkeitsbezeichnungen a
 
 Native Unterstützung für Vertraulichkeitsbezeichnungen in Office-Apps unter Windows ist in Kürze verfügbar.
 
-Wenn Sie bereits Azure Information Protection-Kunde sind, können Sie den Azure Information Protection-Client für einheitliche Bezeichnungen bereitstellen, der Vertraulichkeitsbezeichnungen unterstützt und in Kürze verfügbar ist. (Demnächst finden Sie hier einen Link zu Informationen über die Bereitstellung des Clients). Native Unterstützung für Vertraulichkeitsbezeichnungen in Office-Apps unter Windows wird derzeit entwickelt, sodass der Azure Information Protection-Client für einheitliche Bezeichnungen nicht mehr erforderlich sein wird.
+Wenn Sie bereits Azure Information Protection-Kunde sind, können Sie den Azure Information Protection-Client für einheitliche Bezeichnungen bereitstellen, der Vertraulichkeitsbezeichnungen unterstützt. Weitere Informationen zum Herunterladen des Clients finden Sie unter [Azure Information Protection-Client für einheitliche Bezeichnungen: Versionshinweise](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Native Unterstützung für Vertraulichkeitsbezeichnungen in Office-Apps unter Windows wird derzeit entwickelt, sodass der Azure Information Protection-Client für einheitliche Bezeichnungen nicht mehr erforderlich sein wird.
 
 ![Schaltfläche „Vertraulichkeit“ im Menüband von Excel unter Windows](media/Sensitivity_label_Sensitivity_button.png)
 
