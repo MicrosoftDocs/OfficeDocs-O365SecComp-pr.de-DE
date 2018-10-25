@@ -25,13 +25,13 @@ ms.locfileid: "22529042"
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- Bei der Relevanztechnologie von Advanced eDiscovery wird eine Software unter Anleitung von Experten zum Bewerten von Dateien nach ihrer Relevanz eingesetzt. Advanced eDiscovery Relevance kann für eine frühzeitige Falleinschätzung, zum Sortieren und zur Überprüfung von Dateibeispielen verwendet werden. 
+ Bei der Relevanztechnologie von Advanced eDiscovery wird eine Software unter Anleitung von Experten zum Bewerten von Dateien nach ihrer Relevanz eingesetzt. Das Relevanzmodul in Advanced eDiscovery kann für eine frühzeitige Falleinschätzung, zum Sortieren und zur Überprüfung von Dateibeispielen verwendet werden. 
   
  Advanced eDiscovery umfasst die Komponenten für das Relevanztraining und das Markieren von Dateien, die für einen Fall relevant sind. Advanced eDiscovery lernt anhand der trainierten Beispiele relevanter und nicht relevanter Dateien, um Relevanzbewertungen für jede Datei bereitzustellen, und generiert Analyseergebnisse, die während und nach dem Dateiüberprüfungsprozess verwendet werden können. 
   
 ## <a name="guidelines-for-setting-up-relevance-training"></a>Richtlinien zum Einrichten des Relevanztrainings
 
- Wählen Sie in Advance eDiscovery im Fenster **Fälle** einen Fall aus, und klicken Sie auf **Zum Fall wechseln**. Klicken Sie auf **Relevance** \> **Einrichten von Relevance**. Befolgen Sie die folgenden empfohlenen Richtlinien zum Einrichten von Relevanz. 
+ Wählen Sie in Advanced eDiscovery im Fenster **Fälle** einen Fall aus, und klicken Sie auf **Zum Fall wechseln**. Klicken Sie auf **Relevanz** \> **Einrichten von Relevanz**. Befolgen Sie die folgenden empfohlenen Richtlinien zum Einrichten von Relevanz. 
   
 - **Markieren**: Die Effektivität des iterativen Relevanztrainingsprozesses ist von der Fähigkeit des Experten abhängig, die Dateibeispiele präzise und konsistent zu markieren.
     
@@ -45,7 +45,7 @@ ms.locfileid: "22529042"
     
   - Bei jedem Zyklus des Relevanztrainings befasst sich Advanced eDiscovery mit einem einzigen aktiven Problem, und es werden Zwischenergebnisse angezeigt.
     
-  - In einem Szenario mit mehreren Problemen kann mithilfe des Sampling-Modus die Auswahl von Problemen, die in die Verarbeitung aufgenommen werden sollen, aktiviert werden. Probleme, die als „deaktiviert“ definiert sind, werden erst verarbeitet, wenn ihr Sampling-Modus geändert wird. Ein Problem kann nur für einen Experten „im Leerlauf“ oder „aktiviert“ sein.
+  - In einem Szenario mit mehreren Problemen können mithilfe des Samplingmodus die Probleme ausgewählt werden, die in die Verarbeitung aufgenommen werden sollen. Probleme, die als „deaktiviert“ definiert sind, werden erst verarbeitet, wenn ihr Samplingmodus geändert wird. Ein Problem kann nur für einen Experten „im Leerlauf“ oder „aktiviert“ sein.
     
   -  Advanced eDiscovery kann zum Generieren von Kandidatberechtigungsdateien verwendet werden. Richten Sie ein separates Problem für Berechtigungen ein. Wenn möglich, trainieren und sortieren Sie erst im Hinblick auf Relevanz. Trainieren Sie dann im Hinblick auf die Berechtigung nur für den sortierten Satz (laden Sie den sortierten Satz als separaten Fall erneut). 
     
@@ -55,11 +55,11 @@ ms.locfileid: "22529042"
     
 - **Relevanzgrad**: Wenn der Relevanzgrad für ein Problem nach der Bewertung unter 3 % liegt, sollte das Seeding des Relevanztrainings mit bekannten relevanten und nicht relevanten Dateien ausgeführt werden.
     
-- **Dateigröße**: Große Dateien (über 5.242.880 Zeichen extrahierter Text) werden in Relevance ignoriert. Die Dateien sind nicht am Relevanztrainingsprozess beteiligt und erhalten nach der Batchberechnung keine Relevanzbewertung. Dateien über 5 MB können in dem Bewertungssatz aufgenommen werden.
+- **Dateigröße**: Große Dateien (über 5.242.880 Zeichen extrahierter Text) werden im Relevanztool ignoriert. Die Dateien sind nicht am Relevanztrainingsprozess beteiligt und erhalten nach der Batchberechnung keine Relevanzbewertung. Dateien über 5 MB können in dem Bewertungssatz aufgenommen werden.
     
 ## <a name="setting-up-case-issues"></a>Einrichten von Fallproblemen
 
-Die in diesem Abschnitt beschriebenen Parameter sind in Advanced eDiscovery unter **Relevance** \> **Einrichtung von Relevance** verfügbar. 
+Die in diesem Abschnitt beschriebenen Parameter sind in Advanced eDiscovery unter **Relevanz** \> **Einrichten von Relevanz** verfügbar. 
   
 - Probleme müssen einem Benutzer zugewiesen werden, der die Dateien trainiert.
     
@@ -67,7 +67,7 @@ Die in diesem Abschnitt beschriebenen Parameter sind in Advanced eDiscovery unte
     
 - Definieren und organisieren Sie Probleme sorgfältig, da sich dies auf die Ergebnisse des Relevanztrainings auswirken kann.
     
-Nachdem die Parameter festgelegt wurden, kann der Prüfer/Experte mit dem Training der Dateien auf der Registerkarte **Relevance** beginnen. 
+Nachdem die Parameter festgelegt wurden, kann der Prüfer/Experte mit dem Training der Dateien auf der Registerkarte **Relevanz** beginnen. 
   
 ## <a name="see-also"></a>Siehe auch
 
