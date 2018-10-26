@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema erfahren Sie mehr über Berechtigungen Zugriff auf Management in Office 365
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575339"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793550"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Berechtigungen zugreifen Management in Office 365
 
@@ -80,7 +80,7 @@ Wir möchten dieses Feature in anderen Office 365-Arbeitslasten bald anbieten. W
 Wir planen der aktuellen maximal 30 Systemzugriff Richtlinien pro bald Office 365-Organisation zu erhöhen.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Müssen ein globaler Administrator Systemzugriff in Office 365 verwalten werden?
-Müssen Sie globaler Administrator-Berechtigung zum Systemzugriff in Office 365 verwalten können. Benutzer, die in einer genehmigenden Personen Gruppe enthaltenen müssen ein globaler Administrator überprüfen und Genehmigen von Anfragen werden. 
+Nein, müssen Sie die Exchange Role Management-Rolle, die die Systemzugriff in Office 365 verwaltet Konten zugewiesen haben. Allerdings die globalen Administratorrolle enthält diese Rolle standardmäßig und kann verwendet werden, um Systemzugriff zu verwalten, wenn Sie nicht, um der Rolle Verwaltungsrolle als einen eigenständigen Dienstkonto die Berechtigung zu konfigurieren möchten. Benutzer, die in einer genehmigenden Personen Gruppe enthaltenen müssen ein globaler Administrator sein oder die Rolle Verwaltungsrolle überprüfen und Genehmigen von Anfragen zugewiesen haben. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Wie wird Systemzugriff Management in Office 365 im Zusammenhang mit Kunden Lockbox?
 [Kunden-Lockbox](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) ermöglicht ein Maß an Steuerung des Zugriffs für Organisationen, die für den Zugriff auf Daten von ihrem Dienstanbieter, d. h. Microsoft. Access privilegierten Management in Office 365 differenzierte Zugriffssteuerung innerhalb einer Organisation für alle Office 365 privilegierten Vorgänge ermöglicht.
