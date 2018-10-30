@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: Mit Data Loss Prevention (DLP) in SharePoint Online erkennen Sie Dokumente, die in der gesamten Ihres Mandanten vertrauliche Daten enthalten. Nach dem Auffinden der Dokumente, können Sie mit den Besitzern Dokument zum Schutz der Daten arbeiten. Dieses Thema enthält Informationen eine Abfrage zu suchenden vertrauliche Daten bilden.
-ms.openlocfilehash: 13954a856dd265e3b735d940c7d334d922713637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013859"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829186"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 
@@ -84,9 +84,7 @@ Nicht alle Abfragen werden gleich erstellt. Die folgende Tabelle enthält Beispi
    
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Suchen von vertraulichen Daten, die in SharePoint Online-Websites gespeichert sind](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
-  
-[Verfügbare Arten von vertraulichen Informationen](https://go.microsoft.com/fwlink/?LinkID=509999)
+[Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
   
 [Führen Sie eine Inhaltssuche in Office 365-Sicherheit &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
   

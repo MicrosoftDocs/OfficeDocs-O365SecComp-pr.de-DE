@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Mit einer Data Loss Prevention (DLP) Richtlinie in der Office 365-Sicherheit &amp; Compliance Center, können Sie ermitteln, überwachen und schützen Sie sensible Informationen automatisch über Office 365.
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540421"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829196"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -312,7 +312,7 @@ Sie können eine Beschriftung erstellen und dann:
     
 - **Automatisch übernehmen** ermittelt, um Inhalte, die die Bedingungen, die Sie auswählen. 
     
-Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Bezeichnungen](labels.md).
+Weitere Informationen zu Etiketten finden Sie unter [Übersicht über die Aufbewahrungsrichtlinie Beschriftungen](labels.md).
   
 Nachdem eine Bezeichnung erstellt wurde, können Sie in Ihrer DLP-Richtlinien klicken Sie dann der Beschriftung als Bedingung verwenden. Sie möchten z. B., da hierfür:
   
@@ -327,12 +327,16 @@ Nachdem eine Bezeichnung erstellt wurde, können Sie in Ihrer DLP-Richtlinien kl
 Etiketten als Bedingung in DLP-Regeln verwenden, können Sie selektiv Protection Aktionen auf einem bestimmten Satz von Inhalten, Standorte oder Benutzer erzwingen.
   
 ![Etiketten als Bedingung](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Unterstützung für Vertraulichkeit Etiketten stammt.
+
+Beachten Sie, dass Sie derzeit nur eine Aufbewahrungsrichtlinie Beschriftung als Bedingung nicht [Sensitivity Label](sensitivity-labels.md)verwenden können. Wir arbeiten derzeit Unterstützung für die Verwendung einer Bezeichnung Vertraulichkeit in diese Bedingung.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Bezieht sich diese Funktion wie anderen Funktionen
 
 Verschiedene Features können auf Inhalte, die mit vertraulichen Informationen angewendet werden:
   
-- Eine [Aufbewahrungsrichtlinie Label](labels.md#applying-a-retention-label-automatically-based-on-conditions)[Anwenden einer Bezeichnung, automatisch basierend auf Bedingungen] und einer [Aufbewahrungsrichtlinie](retention-policies.md) können beide **aufbewahrungsaktionen für diesen Inhalt** erzwingen. 
+- Eine [Bezeichnung Aufbewahrung](labels.md#applying-a-retention-label-automatically-based-on-conditions) und einer [Aufbewahrungsrichtlinie](retention-policies.md) können beide **aufbewahrungsaktionen für diesen Inhalt** erzwingen. 
     
 - Eine DLP-Richtlinie kann **Schutz** Aktionen für diesen Inhalt durchsetzen. Und bevor diese Aktionen erzwungen, eine DLP-Richtlinie kann andere Bedingungen, die zusätzlich zu den Inhalt mit einer Bezeichnung erfüllt werden, erfordern. 
     
