@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Office 365 erweiterte Threat Protection umfasst Spoofing Intelligence, sicheren Links, sichere Anlagen und erweiterten Anti-Phishing-Funktionen. Erweiterten Schutz ist auch in Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert wird.
-ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496859"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850829"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -55,7 +55,7 @@ Sobald Sie ATP haben, besteht der nächste Schritt für Ihr Sicherheitsteam zum 
 
 - [Benutzerdefinierte Liste der blockierten URLs](set-up-a-custom-blocked-urls-list-wtih-atp.md) und [benutzerdefinierte Liste für "Nicht rewrite" URLs](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) Ihrer Organisation einschließlich **[Einstellungsrichtlinien ATP sichere Links in Office 365](set-up-atp-safe-links-policies.md)**
     
-- **[Richten Sie sichere Anlagen ATP Richtlinien in Office 365](set-up-atp-safe-attachments-policies.md)** , die [Dynamische Übermittlung und Anzeigen der Vorschau](dynamic-delivery-and-previewing.md) hinzufügen können
+- **[Einrichten von Richtlinien für sichere ATP-Anlagen in Office 365](set-up-atp-safe-attachments-policies.md)** , die [Dynamische Übermittlung und Anzeigen der Vorschau](dynamic-delivery-and-previewing.md) hinzufügen können
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>Finden Sie unter wie ATP funktioniert, indem Sie Berichte anzeigen
 
@@ -86,6 +86,6 @@ Nach Ihrer Richtlinien ATP vorhanden sind, stehen Berichte anzeigen, wie der Die
 
 [Anzeigen der Berichte zu Advanced Threat Protection](view-reports-for-atp.md)
   
-[Verfahren zum Erstellen von Management in die Office 365-Sicherheit &amp; Compliance Center](threat-management.md)
+[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 

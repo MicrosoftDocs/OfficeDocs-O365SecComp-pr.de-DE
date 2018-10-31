@@ -1,8 +1,9 @@
 ---
-title: Dynamische Übermittlung und Anzeigen einer Vorschau mit Office 365 ATP sichere Anlagen
+title: Dynamische Übermittlung und Anzeigen der Vorschau mit Office 365 ATP sichere Anlagen
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Wenn Sie Ihre ATP sichere Anlagen Richtlinien eingerichtet haben, wählen Sie dynamische Übermittlung Nachricht Verzögerungen bei der vermieden, und aktivieren Personen für die Vorschau von Anlagen, die gescannt werden.
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965242"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850819"
 ---
-# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Übermittlung und Anzeigen einer Vorschau mit Office 365 ATP sichere Anlagen
+# <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Übermittlung und Anzeigen der Vorschau mit Office 365 ATP sichere Anlagen
 
-Dynamische Übermittlung ist eine Option, die für die ausgewählt werden kann. In diesem Artikel erfahren Sie mehr über dynamische Übermittlung und Anlage Preview-Funktionen in [ATP sichere Anlagen in Office 365](atp-safe-attachments.md)zu lesen.
+**Zusammenfassung**: Dynamische Übermittlung ist eine Option, die für [Sichere Anlagen ATP](atp-safe-attachments.md)ausgewählt werden kann. In diesem Artikel erfahren Sie mehr über dynamische Übermittlung und Anlage Preview-Funktionen in [ATP sichere Anlagen in Office 365](atp-safe-attachments.md)zu lesen.
   
-## <a name="how-dynamic-delivery-works"></a>Wie dynamische Übermittlung Works
+## <a name="how-dynamic-delivery-works"></a>Funktionsweise von dynamische Übermittlung
 
-Wenn Sie [sichere Anlagen ATP Richtlinien in Office 365 einrichten](set-up-atp-safe-attachments-policies.md), Sie über mehrere Optionen für **Blockieren**, **Ersetzen**und **Dynamische Übermittlung**können. Abhängig davon, wie Ihre Richtlinien konfiguriert sind können e-Mail-Empfänger eine geringfügige Verzögerung in e-Mail-Übermittlung bemerken, wenn deren Anhänge überprüft werden. Wählen Sie zum Vermeiden von Nachricht verzögert **Dynamische Übermittlung**.
+Wenn [Richtlinien ATP sichere Anlagen eingerichtet sind](set-up-atp-safe-attachments-policies.md) für Ihre Organisation mehrere Optionen für die Behandlung von e-Mail-Anlagen vorhanden sind. Dazu gehören **Blockieren**, **Ersetzen**und **Dynamische Übermittlung**. Je nach der Richtlinien für sichere Anlagen ATP Konfiguration können e-Mail-Empfänger eine geringfügige Verzögerung in e-Mail-Übermittlung bemerken, wenn deren Anhänge überprüft werden. Wählen Sie zum Vermeiden von Nachricht verzögert **Dynamische Übermittlung**.
   
-Die Option dynamische Übermittlung entfällt e-Mail Verzögerungen durch den Textkörper einer e-Mail-Nachricht über mit einem Platzhalter für jede e-Mail-Anlage senden. Der Platzhalter bleibt, bis die Anlage vom [ATP sichere Anlagen in Office 365](atp-safe-attachments.md)überprüft wird. E-Mail-Empfängern gelesen und reagieren auf ihre e-Mail-Nachrichten sofort, wissen, dass ihre Anlagen analysiert werden.
-  
-Die meisten PDF-Dateien und Office während ATP Überprüfung ausgeführt wird, können Dokumente im abgesicherten Modus angezeigt werden. Wenn eine Anlage nicht kompatibel mit der dynamischen Delivery-Vorschau ist, sehen erst, e-Mail-Empfänger den Anlage Platzhalter ATP sichere Anlagen Überprüfung abgeschlossen ist.
-  
-Jede Anlage deaktiviert ist, wird es automatisch auf die ursprüngliche e-Mail-Nachricht angefügt. Wenn eine Anlage böswilligen werden bestimmt wird, wird es zur Quarantäne, gesendet, in dem eine Person in Ihrer Organisation Security Team (wie ein globaler Office 365-Administrator oder Sicherheitsadministrator) können [Nachrichten in Quarantäne in Office 365 verwalten](manage-quarantined-messages-and-files.md).
+Dynamische Übermittlung entfällt e-Mail Verzögerungen durch den Textkörper einer e-Mail-Nachricht über an den Empfänger mit einem Platzhalter für jede e-Mail-Anlage senden. Der Platzhalter bleibt, bis eine Kopie der Anlage überprüft und sicher durch [ATP sichere Anlagen](atp-safe-attachments.md)bestimmt ist. Die meisten PDF-Dateien und Office während ATP Überprüfung ausgeführt wird, können Dokumente im abgesicherten Modus angezeigt werden. Wenn eine Anlage nicht kompatibel mit der dynamischen Delivery-Vorschau ist, sehen erst, e-Mail-Empfänger einen Anlage Platzhalter ATP sichere Anlagen Überprüfung abgeschlossen ist.
+
+- Jede Anlage deaktiviert ist, steht er öffnen oder herunterladen. 
+
+- Wenn eine Anlage böswilligen werden bestimmt wird, wird es zur Quarantäne, gesendet, in dem eine Person in Ihrer Organisation Security Team (wie ein globaler Office 365-Administrator oder Sicherheitsadministrator) können [Nachrichten in Quarantäne in Office 365 verwalten](manage-quarantined-messages-and-files.md).
+
+Mit dynamische Übermittlung e-Mail-Empfängern gelesen und reagieren auf ihre e-Mail-Nachrichten sofort, wissen, dass ihre Anlagen analysiert werden. 
+
+ATP sichere Anlagen scannen akzeptiert platzieren im selben Bereich, in dem sich Ihre Office 365-Daten befinden. Weitere Informationen zum Data Center Geografie, finden Sie unter [, wo wird Ihre Daten befinden?](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Was geschieht, wenn jemand einer e-Mail, weiterleitet enthält eine Anlage?
 
@@ -77,6 +82,6 @@ Es gibt bestimmte Szenarien, in denen dynamische Übermittlung nicht unterstütz
   
 [ATP sichere Links in Office 365](atp-safe-links.md)
 
-[Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 

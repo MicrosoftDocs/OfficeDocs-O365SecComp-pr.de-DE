@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454282"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850839"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -59,13 +59,13 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
       - Geben Sie im Feld **Beschreibung** eine Beschreibung wie sofort bietet Nachrichten und Anlagen überwacht nach der Überprüfung.
     
-      - Wählen Sie im Abschnitt Antwort **Dynamische Übermittlung** . ([Weitere Informationen über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md)).
+      - Wählen Sie im Abschnitt Antwort **Dynamische Übermittlung** . ([Erfahren Sie mehr über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md)).
     
       - Wählen Sie die Option zum Umleiten aktivieren, und geben Sie die e-Mail-Adresse des Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Analyst, die bösartige Anlagen untersuchen, klicken Sie im Abschnitt **Anlage umleiten** . 
     
       - **Angewendet auf** Sie im Abschnitt wählen Sie **die Domäne des Empfängers ist**, und wählen Sie dann Ihre Domäne aus. Wählen Sie **Hinzufügen**, und wählen Sie dann auf **OK**.
     
-6. Wählen Sie **Speichern**.
+6. Klicken Sie auf **Save**.
     
 Verwenden Sie nach Möglichkeit mehrere sichere Anlagen ATP-Richtlinien für Ihre Organisation. Diese Richtlinien werden in der Reihenfolge angewendet werden, die sie auf der Seite **ATP sichere Anlagen** aufgeführt werden. Nachdem eine Richtlinie definiert oder bearbeitet wurde, können Sie mindestens 30 Minuten für die Richtlinien in der gesamten Microsoft-Rechenzentren wirksam wird. 
   
@@ -94,6 +94,6 @@ Wie Sie Ihre Richtlinien ATP sichere Anlagen eingerichtet haben, wählen Sie ein
   
 [Anzeigen der Berichte zu Advanced Threat Protection](view-reports-for-atp.md)
 
-[Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 
