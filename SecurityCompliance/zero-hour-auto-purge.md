@@ -1,5 +1,5 @@
 ---
-title: Null-Stunden automatisch löschen - Schutz vor Spam und malware
+title: Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857243"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Null-Stunden automatisch löschen - Schutz vor Spam und malware
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
 Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.
   
@@ -74,7 +74,7 @@ Administratoren können auch [Deaktivieren ZAP](zero-hour-auto-purge.md#BK_Posh)
     
     Wenn Sie **Speichern** zu diesem Zeitpunkt auswählen, gilt die Richtlinie zu Ihrem Office 365-Mandanten. 
     
-    ![Festlegen von Spam und Massen-Aktionen Mpve der Nachricht an die Junk-e-Mail-Ordner](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![Festlegen von Spam und Massen-Aktionen, die Nachricht in Junk-e-Mail-Ordner verschieben](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. Wenn Sie eine neue Richtlinie erstellt und die Richtlinie nur einen Satz von Benutzer gelten sollen, Scroll **Angewendet auf** Abschnitt Filter im Fenster Richtlinie und in den Menüsteuerelementen im wählen Sie die **Empfänger**, **Domäne**oder **Gruppenmitgliedschaften** Sie Möchten Sie die Richtlinie angewendet werden soll. Sie können auch zusätzliche Bedingungen und Ausnahmen festlegen. 
     
