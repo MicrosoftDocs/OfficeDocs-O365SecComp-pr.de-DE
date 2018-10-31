@@ -3,7 +3,7 @@ title: E-Mail-Verschlüsselung in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: Vergleichen Sie die Optionen zur Verschlüsselung in Office 365, einschließlich Office Message Encryption (OME), S/MIME, (Information Rights Management, IRM) und Informationen zu Transport Layer Security (TLS).
-ms.openlocfilehash: a705637b85e73c6d1e5bcb3595dcd0b7766411e2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529538"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853080"
 ---
 # <a name="email-encryption-in-office-365"></a>E-Mail-Verschlüsselung in Office 365
 
@@ -54,7 +54,7 @@ In diesem Video wird eine Einführung in die [Verschlüsselung in Office 365](ht
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Vergleichen der in Office 365 verfügbaren E-Mail-Verschlüsselungsoptionen
 
-||**        ![Konzeptionelle Grafik, die OME beschreibt.](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 **|**        ![Konzeptionelle Grafik, die IRM beschreibt.](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 **|**        ![Konzeptionelle Grafik, die SMIME beschreibt.](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                 **|
+||        ![Konzeptionelle Grafik, die OME beschreibt.](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![Konzeptionelle Grafik, die IRM beschreibt.](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![Konzeptionelle Grafik, die SMIME beschreibt.](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
 |:-----|:-----|:-----|:-----|
 |Was ist das?  <br/> |Office 365-Nachrichtenverschlüsselung (Office Message Encryption, OME) ist ein Dienst, der auf Azure Rights Management (Azure RMS) aufbaut und mit dem Sie verschlüsselte E-Mails an Personen innerhalb oder außerhalb Ihrer Organisation senden können, unabhängig von der E-Mail-Zieladresse (Gmail, Yahoo! Mail, Outlook.com usw.).  <br/> Als Administrator können Sie Transportregeln einrichten, die die Bedingungen für die Verschlüsselung definieren. Wenn ein Benutzer eine Nachricht sendet, die mit einer Regel übereinstimmt, wird die Verschlüsselung automatisch angewendet.  <br/> Zum Anzeigen von verschlüsselter Nachrichten Empfänger können entweder eine einmalige Kennung, melden Sie sich mit einem Microsoft-Konto oder melden Sie sich mit einem Arbeit erhalten möchten, oder Schule mit Office 365-Konto. Empfänger können verschlüsselte Antworten auch senden. Sie benötigen kein Office 365-Abonnement zu verschlüsselte Nachrichten senden oder verschlüsselte Antworten.  <br/> |IRM ist eine Verschlüsselungslösung, die auch Nutzungseinschränkungen auf E-Mail-Nachrichten anwendet. Mit dieser Lösung können Sie verhindern, dass vertrauliche Informationen von nicht autorisierten Personen gedruckt, weitergeleitet oder kopiert werden.  <br/> IRM-Funktionen in Office 365 verwenden Azure Rights Management (Azure RMS). 
   <br/> |S/MIME ist eine Verschlüsselung zertifikatbasierte-Lösung, mit dem Sie sowohl verschlüsseln eine Nachricht digital signieren. Die Verschlüsselung von Nachrichten wird sichergestellt, dass nur der beabsichtigte Empfänger öffnen und die Nachricht lesen kann. Die digitale Signatur kann den Empfänger die Identität des Absenders zu überprüfen.  <br/> Digitale Signaturen und Nachrichtenverschlüsselung werden durch Verwendung eindeutiger digitaler Zertifikate ermöglicht, die die Schlüssel für das Überprüfen von digitalen Signaturen und das Verschlüsseln oder Entschlüsseln von Nachrichten enthalten.  <br/> Verwendung von S/MIME, benötigen Sie öffentliche Schlüssel für jeden Empfänger auf Datei. Empfänger müssen ihre eigenen privaten Schlüssel verwalten die dauerhaft gesichert werden müssen. Wenn der private Schlüssel des Empfängers gefährdet sind, muss der Empfänger zum Abrufen eines neuen privaten Schlüssels und öffentlichen Schlüssel an alle Absender potenzielle verteilen.  <br/> |
