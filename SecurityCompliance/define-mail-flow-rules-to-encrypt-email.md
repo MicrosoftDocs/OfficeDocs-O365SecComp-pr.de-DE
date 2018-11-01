@@ -3,7 +3,7 @@ title: Definieren von e-Mail-Flussregeln zum Verschlüsseln von e-Mail-Nachricht
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Als globaler Office 365-Administrator können Sie Mail Flow Regeln zum Aktivieren von Office 365 Message Encryption (OME) erstellen. Sie können alle ausgehenden e-Mail-Nachrichten verschlüsseln und Entfernen der Verschlüsselung aus interne Nachrichten oder Antworten auf verschlüsselte Nachrichten, die von Ihrer Organisation gesendet.
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853090"
+ms.locfileid: "25890033"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definieren von e-Mail-Flussregeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365
 
@@ -29,7 +29,7 @@ Wenn Sie kürzlich von AD RMS in Azure Information Protection migriert, müssen 
 Informationen zu den Komponenten, aus denen e-Mail-Flussregeln und wie e-Mail-Fluss-Regeln funktionieren, finden Sie unter [E-Mail-Flussregeln (Transportregeln) in Exchange Online](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx). Weitere Informationen zur Funktionsweise von e-Mail-Flussregeln mit Azure Information Protection finden Sie unter [Konfigurieren von Exchange Online e-Mail-Flussregeln für Azure Information Protection Etiketten](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Hybride Exchange-Umgebungen: Führen Sie diese zuerst
-In der lokalen Benutzer OME verwenden, wenn Sie e-Mails über Exchange Online weiterleiten verschlüsselten e-Mail-Nachrichten senden können. Zu diesem Zweck müssen Sie Mail Flow zum Ablauf von Ihrem e-Mail-Server zu Office 365 konfigurieren. Nachdem Sie Mail flow über Office 365 konfiguriert haben, können Sie e-Mail-Flussregeln für OME stellen, mithilfe der in diesem Artikel.
+In der lokalen Benutzer OME verwenden, wenn Sie e-Mails über Exchange Online weiterleiten verschlüsselten e-Mail-Nachrichten senden können. Zu diesem Zweck müssen Sie Mail flow von Ihrem e-Mail-Server zu Office 365 konfigurieren. Einmal haben Sie über Office 365, Nachrichtenfluss konfiguriert, dass Sie e-Mail-Flussregeln für OME mithilfe der in diesem Artikel vornehmen können.
 
 Anweisungen finden Sie unter [Einrichten von Connectors zum Weiterleiten von e-Mails zwischen Ihrem eigenen e-Mail-Servern und Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). Insbesondere, führen Sie die Schritte in "Teil 2: Konfigurieren von Mail flow von Ihrem e-Mail-Server zu Office 365".
 
