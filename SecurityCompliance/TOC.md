@@ -14,6 +14,7 @@
 ## [Entscheidung zwischen MDM und Intune](choose-between-mdm-and-intune.md)
 # Schützen von Informationen
 ## [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
+## [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md)
 ## [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ## [Sehen Sie einen erweiterten Überblick über DLP an](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Einrichten von DLP
@@ -149,7 +150,7 @@
 ## [Verwenden der Inhaltssuche](content-search.md)
 ### [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
 ### [Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md)
-### [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
+### [Exportieren von Inhaltssuchergebnissen  ](export-search-results.md)
 ### [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
 ### [Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messagesadmin-help.md)
 ### [Durchsuchen der cloudbasierten Postfächer lokaler Benutzer in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -257,7 +258,8 @@
 ### [Entwerfen einer isolierten SharePoint Online-Teamwebsite](design-an-isolated-sharepoint-online-team-site.md)
 ### [Bereitstellen einer isolierten SharePoint Online-Teamwebsite](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [Verwalten einer isolierten SharePoint Online-Teamwebsite](manage-an-isolated-sharepoint-online-team-site.md)
-### [Isolierte SharePoint Online-Teamwebsite in Ihrer Entwicklungs-/Testumgebung](isolated-sharepoint-online-team-site-dev-test-environment.md)
+### [Isolierte SharePoint Online-Teamwebsite in einer Entwicklungs-/Testumgebung](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [SIEM-Serverintegration](siem-server-integration.md)
 
 # Compliance-Lösungen
 ## [Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
