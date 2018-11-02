@@ -3,7 +3,7 @@ title: Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,748 +12,170 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
-description: Wenn Sie verschiedene Typen für vertrauliche Informationen identifizieren und schützen müssen, zum Beispiel eine Mitarbeiter-ID, die ein für Ihre Organisation spezifisches Format verwendet, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen. In diesem Thema erfahren Sie, wie Sie eine XML-Datei erstellen, mit der Sie einen benutzerdefinierten Typ vertraulicher Informationen definieren. Sie müssen dazu wissen, wie Sie einen regulären Ausdruck erstellen.
-ms.openlocfilehash: 56683dd8ceac286f79084d2c2f19f48f5849a02f
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.assetid: ''
+description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche in Office 365 Security & Compliance Center erstellen, ändern, entfernen und testen.
+ms.openlocfilehash: cd7041ee9c20038fb7cb0c337f31d7cef7f7192d
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857293"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen
 
 Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) in Office 365 umfasst zahlreiche [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md), die Sie in DLP-Richtlinien verwenden können. Diese integrierten Typen unterstützen Sie beim Erkennen und Schützen von Kreditkartennummern, Bankkontonummern, Reisepassnummern und mehr. 
-  
-Wenn Sie jedoch verschiedene Typen vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel eine Mitarbeiter-ID, die ein für Ihre Organisation spezifisches Format verwendet, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen. Der vertrauliche Informationstyp wird in einer XML-Datei definiert, die als „Regelpaket“ bezeichnet wird.
-  
-In diesem Thema wird gezeigt, wie Sie eine XML-Datei erstellen, die Ihren eigenen benutzerdefinierten vertraulichen Informationstyp definiert. Sie müssen wissen, wie Sie einen regulären Ausdruck erstellen. In diesem Thema wird beispielsweise ein benutzerdefinierter vertraulicher Informationstyp erstellt, der eine Mitarbeiter-ID identifiziert. Sie können dieses XML-Beispiel als Ausgangspunkt für Ihre eigene XML-Datei verwenden.
-  
-Nachdem Sie eine wohlgeformte XML-Datei erstellt haben, können Sie sie mit PowerShell in Office 365 hochladen. Sie können dann den benutzerdefinierten vertraulichen Informationstyp in Ihren DLP-Richtlinien verwenden und testen, ob er die vertraulichen Informationen wie beabsichtigt erkennt.
 
-## <a name="important-disclaimer"></a>Wichtiger Haftungsausschluss
+Wenn Sie jedoch verschiedene Typen vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel Mitarbeiter-IDs oder Projektnummern, die ein für Ihre Organisation spezifisches Format verwenden, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen.
 
-Aufgrund der Unterschiede in Kundenumgebungen und Anforderungen an die Inhaltsübereinstimmung kann Microsoft-Support keine Unterstützung bei der Bereitstellung benutzerdefinierter Definitionen für die Inhaltsübereinstimmung leisten – z. B. Definieren von benutzerdefinierten Klassifizierungen oder Mustern für reguläre Ausdrücke („RegEx“). Für benutzerdefinierte Entwicklung, Tests und Debugging im Bereich Inhaltsübereinstimmung müssen Office 365-Kunden auf interne IT-Ressourcen zurückgreifen oder eine externe Beratungsressource wie z. B. Microsoft Consulting Services (MCS) nutzen. Supporttechniker können eingeschränkten Support für die Funktion bereitstellen, aber nicht garantieren, dass eine benutzerdefinierte Inhaltsübereinstimmungsentwicklung die Anforderungen oder Verpflichtungen des Kunden erfüllt. Als Beispiel für die Art von möglichem Support können Beispielmuster für reguläre Ausdrücke zu Testzwecken bereitgestellt werden. Außerdem kann der Support bei der Problembehandlung für ein vorhandenes RegEx-Muster, das nicht wie erwartet ausgelöst wird, mit einem einzelnen spezifischen Inhaltsbeispiel helfen.
+Die grundlegenden Bestandteile eines benutzerdefinierten Typs für vertrauliche Informationen sind wie folgt:
 
- Weitere Informationen über das .NET-Regex-Modul, das für die Verarbeitung des Texts verwendet wird, finden Sie im Artikel [Reguläre Ausdrücke von .NET](https://docs.microsoft.com/de-DE/dotnet/standard/base-types/regular-expressions).
-    
-## <a name="sample-xml-of-a-rule-package"></a>Beispiel-XML für ein Regelpaket
+- **Primäres Muster**: Mitarbeiter-ID-Nummer, Projektnummern usw. Dieses wird in der Regel durch einen regulären Ausdruck (RegEx) gekennzeichnet, kann aber auch eine Liste von Schlüsselwörtern sein.
 
-Unten sehen Sie die Beispiel-XML für das Regelpaket, das Sie in diesem Thema erstellen. Die Elemente und Attribute werden in den folgenden Abschnitten erläutert.
-  
-```
-<?xml version="1.0" encoding="UTF-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-<RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
-    <Version build="0" major="1" minor="0" revision="0"/>
-    <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
-    <Details defaultLangCode="en-us">
-        <LocalizedDetails langcode="en-us">
-            <PublisherName>Contoso</PublisherName>
-            <Name>Employee ID Custom Rule Pack</Name>
-            <Description>
-            This rule package contains the custom Employee ID entity.
-            </Description>
-        </LocalizedDetails>
-    </Details>
-</RulePack>
-<Rules>
-<!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
-            <IdMatch idRef="Regex_employee_id"/>
-        </Pattern>
-        <Pattern confidenceLevel="70">
-            <IdMatch idRef="Regex_employee_id"/>
-            <Match idRef="Func_us_date"/>
-        </Pattern>
-        <Pattern confidenceLevel="80">
-            <IdMatch idRef="Regex_employee_id"/>
-            <Match idRef="Func_us_date"/>
-            <Any minMatches="1">
-                <Match idRef="Keyword_badge" minCount="2"/>
-                <Match idRef="Keyword_employee"/>
-            </Any>
-            <Any minMatches="0" maxMatches="0">
-                <Match idRef="Keyword_false_positives_local"/>
-                <Match idRef="Keyword_false_positives_intl"/>
-            </Any>
-        </Pattern>
-    </Entity>
-    <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
-    <Keyword id="Keyword_employee">
-        <Group matchStyle="word">
-            <Term>Identification</Term>
-            <Term>Contoso Employee</Term>
-        </Group>
-    </Keyword>
-    <Keyword id="Keyword_badge">
-        <Group matchStyle="string">
-            <Term>card</Term>
-            <Term>badge</Term>
-            <Term caseSensitive="true">ID</Term>
-        </Group>
-    </Keyword>
-    <Keyword id="Keyword_false_positives_local">
-        <Group matchStyle="word">
-            <Term>credit card</Term>
-            <Term>national ID</Term>
-        </Group>
-    </Keyword>
-    <Keyword id="Keyword_false_positives_intl">
-        <Group matchStyle="word">
-            <Term>identity card</Term>
-            <Term>national ID</Term>
-            <Term>EU debit card</Term>
-        </Group>
-    </Keyword>
-    <LocalizedStrings>
-        <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
-            <Name default="true" langcode="en-us">Employee ID</Name>
-            <Description default="true" langcode="en-us">
-            A custom classification for detecting Employee IDs.
-            </Description>
-            <Name default="true" langcode="de-de">Name for German locale</Name>
-            <Description default="true" langcode="de-de">
-            Description for German locale.
-            </Description>
-        </Resource>
-    </LocalizedStrings>
-</Rules>
-</RulePackage>
+- **Zusätzliche Nachweise**: Angenommen, Sie suchen nach einer neunstelligen Mitarbeiter-ID-Nummer. Nicht alle neunstelligen ID-Nummern sind Mitarbeiter-ID-Nummern, Sie können daher nach zusätzlichem Text suchen: Schlüsselwörter wie „Mitarbeiter“, „Ausweis“, „ID“ oder andere Textmuster basierend auf zusätzlichen regulären Ausdrücken. Diese Nachweise (auch bezeichnet als _unterstützende_ oder _bestätigende_ Nachweise) erhöhen die Wahrscheinlichkeit, dass die neunstellige Nummer, die in Inhalten gefunden wird, auch wirklich eine Mitarbeiter-ID-Nummer ist.
 
-```
+- **Zeichenabstand**: Je näher sich das primäre Muster an den unterstützenden Nachweisen befindet, desto größer ist die Wahrscheinlichkeit, dass die gefundenen Inhalte den von Ihnen gesuchten Inhalten entsprechen. Sie können den Zeichenabstand zwischen dem primären Muster und den unterstützenden Nachweisen angeben (auch als _Näherungsfenster_ bezeichnet), wie in der folgenden Abbildung dargestellt:
 
-## <a name="what-are-your-key-requirements-rule-entity-pattern-elements"></a>Was sind die wichtigsten Anforderungen? [Elemente „Rule“, „Entity“ und „Pattern“]
+    ![Diagramm von bestätigenden Nachweisen und Näherungsfenster](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Bevor Sie beginnen, ist es hilfreich, die grundlegende Struktur des XML-Schemas für eine Regel zu kennen, und wie Sie diese Struktur verwenden können, um den benutzerdefinierten vertraulichen Informationstyp zu definieren, damit die richtigen Inhalte erkannt werden.
-  
-Eine Regel definiert eine oder mehrere Entitäten (vertrauliche Informationstypen), und jede Entität definiert ein oder mehrere Muster (Patterns). Die DLP such nach einem Muster, wenn sie Inhalte auswertet, wie z. B. E-Mails und Dokumente.
-  
-(Ein kurzer Hinweis zur Terminologie: Wenn Sie mit DLP-Richtlinien vertraut sind, wissen Sie, dass eine Richtlinie eine oder mehrere Regeln enthält, die aus Bedingungen und Aktionen bestehen. In diesem Thema verwendet das XML-Markup jedoch den Begriff „Regel“, um Muster zu bezeichnen, die eine Entität definieren, die auch als Typ vertraulicher Informationen bezeichnet wird. Wenn Sie in diesem Thema als den Begriff „Regel“ sehen, denken Sie an eine Entität oder einen Typ vertraulicher Informationen, und nicht an Bedingungen und Aktionen.)
-  
-### <a name="simplest-scenario-entity-with-one-pattern"></a>Einfachstes Szenario: Entität mit einem Muster
+- **Zuverlässigkeitsgrad**: Je mehr unterstützende Nachweise Sie haben, desto höher die Wahrscheinlichkeit, dass eine Übereinstimmung die vertraulichen Informationen enthält, die Sie suchen. Sie können höhere Zuverlässigkeitsstufen für Übereinstimmungen zuweisen, die gefunden werden, indem Sie mehr Nachweise verwenden.
 
-Hier sehen Sie das das einfachste Szenario. Sie möchten, dass Ihre DLP-Richtlinie Inhalt identifiziert, der die Mitarbeiter-ID Ihrer Organisation enthält. Diese ist als neunstellige Zahl formatiert. Das Muster bezieht sich also auf einen regulären Ausdruck, der in der Regel enthalten ist, die neunstellige Zahlen erkennt. Jeder Inhalt, der eine neunstellige Zahl beinhaltet, entspricht dem Muster.
-  
-![Diagramm einer Entität mit einem Muster](media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
-  
-Obwohl dieses Muster einfach ist, führt möglicherweise jedoch zu einer Menge falsch positiver Ergebnisse, indem es Inhalte mit einer neunstelligen Zahl erkennt, die nicht unbedingt eine Mitarbeiter-ID ist.
-  
-### <a name="more-common-scenario-entity-with-multiple-patterns"></a>Häufigeres Szenario: Entität mit mehreren Mustern
+  Wenn eine Übereinstimmung gefunden wurde, gibt ein Muster eine Anzahl und einen Zuverlässigkeitsgrad zurück, die bzw. den Sie in den Bedingungen Ihrer DLP-Richtlinien verwenden können. Wenn Sie eine Bedingung zum Erkennen eines Typs vertraulicher Informationen zu einer DLP-Richtlinie hinzufügen, können Sie die Anzahl und den Zuverlässigkeitsgrad wie in der folgenden Abbildung dargestellt bearbeiten:
 
-Aus diesem Grund wird eine Entität in der Regel mit mehr als einem Muster definiert, wobei die Muster unterstützende Hinweise (z. B. ein Schlüsselwort oder Datum) zusätzlich zur Entität (z. B. die neunstellige Zahl) identifizieren.
-  
-Um zum Beispiel die Wahrscheinlichkeit zu erhöhen, Inhalt zu erkennen, der eine Mitarbeiter-ID enthält, können Sie ein anderes Muster definieren, das z. B. auch ein Einstellungsdatum identifiziert. Sie können noch ein weiteres Muster definieren, das sowohl ein Einstellungsdatum als auch ein Stichwort (z. B. „Mitarbeiter-ID“) zusätzlich zur neunstelligen Zahl identifiziert.
-  
-![Diagramm einer Entität mit mehreren Mustern](media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
-  
-Beachten Sie einige wichtige Aspekte dieser Struktur:
-  
-- Muster, die mehr Nachweise erfordern, haben einen höheren Zuverlässigkeitsgrad. Dies ist nützlich, wenn Sie später diesen vertraulichen Informationstyp in einer DLP-Richtlinie verwenden. Sie können dann restriktivere Aktionen (z. B. Blockieren von Inhalten) nur auf Übereinstimmungen mit einem hohen Zuverlässigkeitsgrad anwenden. Im Gegenzug dazu können Sie weniger restriktive Aktionen (z. B. Senden von Benachrichtigung) auf Übereinstimmungen mit einem geringerem Zuverlässigkeitsgrad anwenden.
-    
-- Die unterstützenden „IdMatch“- und „Match“-Elemente beziehen sich auf reguläre Ausdrücke und Stichwörter, die eigentlich untergeordnete Elemente des Regelelements und nicht des Musters sind. Das Muster verweist auf diese unterstützenden Elemente, sie sind jedoch in der Regel enthalten. Dies bedeutet, dass mehrere Entitäten und Muster auf eine einzelne Definition eines unterstützenden Elements, z. B. ein regulärer Ausdruck oder eine Stichwortliste, Bezug nehmen können.
-    
-## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Welche Entität müssen Sie identifizieren? [Element „Entity“, ID-Attribut]
+    ![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-Eine Entität ist ein Typ vertraulicher Informationen, z. B. eine Kreditkartennummer, die ein klar definiertes Muster aufweist. Jede Entität hat eine eindeutige GUID als ID.
-  
-### <a name="name-the-entity-and-generate-its-guid"></a>Benennen der Entität und Generieren der GUID
+Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Office 365 Security & Compliance Center stehen Ihnen die folgenden Optionen zur Verfügung:
 
-Fügen Sie die Regel- und Entitätselemente hinzu. Fügen Sie dann einen Kommentar hinzu, der den Namen der benutzerdefinierten Entität enthält – in diesem Beispiel „Employee ID“. Später fügen Sie den Entitätsnamen zum Abschnitt mit den lokalisierten Zeichenfolgen hinzu, und dieser Name wird beim Erstellen einer DLP-Richtlinie in der Benutzeroberfläche angezeigt.
-  
-Als Nächstes generieren Sie eine GUID für die Entität. Es gibt mehrere Methoden zum Generieren von GUIDs, aber Sie können dies ganz einfach in PowerShell durch die Eingabe von „[guid]::NewGuid()“ durchführen. Später fügen Sie die Entitäts-GUID ebenfalls zum Abschnitt mit en lokalisierten Zeichenfolgen hinzu.
-  
-![XML-Markup mit Regel- und Entitätselementen](media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
-  
-## <a name="what-pattern-do-you-want-to-match-pattern-element-idmatch-element-regex-element"></a>Welches Muster möchten Sie abgleichen? [Muster-Element, IdMatch-Element, Regex-Element]
+- **Verwenden der Benutzeroberfläche**: Diese Methode ist schneller und einfacher, aber Sie haben weniger Konfigurationsoptionen als bei PowerShell. Im restlichen Thema werden diese Verfahren beschrieben.
 
-Das Muster enthält die Liste der Dinge, nach denen der vertrauliche Informationstyp sucht. Dies kann reguläre Ausdrücke, Stichwörter und integrierte Funktionen (die Aufgaben wie das Ausführen von regulären Ausdrücken zum Suchen nach Datumsangaben oder Adressen ausführen) umfassen. Vertrauliche Informationstypen können mehrere Muster mit eindeutigen Zuverlässigkeitsgraden aufweisen.
-  
-Allen der folgenden Muster ist gemeinsam, dass sie sich alle auf denselben regulären Ausdruck beziehen, der nach einer neunstelligen Zahl sucht (\d{9}), die von Leerzeichen eingeschlossen ist (\s) ... (\s). Das Element "IdMatch" verweist auf diesen regulären Ausdruck, und er ist die allgemeine Anforderung für alle Muster, die nach der Mitarbeiter-ID-Entität suchen. „IdMatch“ ist der Bezeichner, für den das Muster eine Entsprechung sucht, wie z. B. die Mitarbeiter-ID, Kreditkartennummer oder Sozialversicherungsnummern. Ein Pattern-Element muss genau ein IdMatch-Element haben.
-  
-![XML-Markup mit mehreren Pattern-Elementen, die auf ein einzelnes Regex-Element verweisen](media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
-  
-Wenn eine Übereinstimmung gefunden wurde, gibt ein Muster eine Anzahl und einen Zuverlässigkeitsgrad zurück, die Sie in den Bedingungen Ihrer DLP-Richtlinie verwenden können. Wenn Sie eine Bedingung zum Erkennen eines Typs vertraulicher Informationen zu einer DLP-Richtlinie hinzufügen, können Sie die Anzahl und den Zuverlässigkeitsgrad wie hier gezeigt bearbeiten. Der Zuverlässigkeitsgrad (auch als „Übereinstimmungsgenauigkeit“ bezeichnet) wird weiter unten in diesem Thema erläutert.
-  
-![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-  
-Beim Erstellen des regulären Ausdrucks müssen Sie berücksichtigen, dass es potenzielle Probleme geben kann. Wenn Sie z. B. einen regulären Ausdruck schreiben und hochladen, der zu viel Inhalt erkennt, kann dies die Leistung beeinträchtigen. Weitere Informationen zu diesen potenziellen Problemen finden Sie im Abschnitt [Mögliche Überprüfungsprobleme, die Sie beachten müssen](#potential-validation-issues-to-be-aware-of).
-  
-## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>Sollen weitere Nachweise erforderlich sein? [Element „Match“, minCount-Attribut]
+- **Verwenden von PowerShell**: Diese Methode setzt voraus, dass Sie zuerst eine XML-Datei erstellen (bezeichnet als _Regelpaket_), die einen oder mehrere Typen von vertraulichen Informationen enthält. Sie verwenden dann PowerShell, um das Regelpaket zu importieren (das Importieren des Regelpakets ist einfach im Vergleich zum Erstellen des Regelpakets). Diese Methode ist wesentlich komplexer als die Verwendung der Benutzeroberfläche, aber Sie haben mehr Konfigurationsoptionen. Anweisungen finden Sie unter [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
-Zusätzlich zu „IdMatch“ kann ein Muster das Element „Match“ verwenden, um zusätzliche unterstützende Nachweise zu erfordern, z. B. ein Stichwort, einen regulären Ausdruck, ein Datum oder eine Adresse.
-  
-Ein Pattern-Element kann mehrere Match-Elemente umfassen. Sie können direkt in das Pattern-Element einbezogen oder mit dem Any-Element kombiniert werden. Match-Element werden durch einen impliziten AND-Operator verknüpft. Es müssen alle Match-Elemente erfüllt sein, damit das Muster eine Übereinstimmung ist. Sie können das Any-Element verwenden, um AND- und OR-Operatoren einzuführen (mehr Informationen dazu weiter unten in diesem Abschnitt).
-  
-Sie können das optionale minCount-Attribut verwenden, um anzugeben, wie viele Instanzen einer Übereinstimmung für jedes der Match-Elemente gefunden werden müssen. Sie können z. B. angeben, dass eine Übereinstimmung mit einem Muster nur dann vorliegt, wenn mindestens zwei Stichwörter aus einer Stichwortliste gefunden werden.
-  
-![XML-Markup mit Match-Element und minOccurs-Attribut](media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
-  
-### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>Stichwörter [Elemente „Keyword“, „Group“ und „Term“, matchStyle- und caseSensitive-Attribute]
+Die wichtigsten Unterschiede werden in der folgenden Tabelle näher erläutert:
 
-Wenn Sie vertrauliche Informationen identifizieren möchten, wie z. B. eine Mitarbeiter-ID, dann sollen häufig Stichwörter als bestätigende Nachweise erforderlich sein. Möglicherweise möchten Sie beispielsweise zusätzlich zur Übereinstimmung mit einer neunstelligen Zahl auch nach Wörtern wie „Karte“, „Ausweis“ oder „ID“ suchen. Hierzu verwenden Sie das Keyword-Element. Das Keyword-Element verfügt über das Attribut „id“, auf das sich mehrere Match-Elemente in mehreren Mustern oder Entitäten beziehen können.
-  
-Stichwörter werden als eine Liste von Term-Elementen in ein Group-Element eingeschlossen. Das Group-Element verfügt über ein matchStyle-Attribut mit zwei möglichen Werten:
-  
-- **matchStyle = "word"** Der Wortabgleich identifiziert ganze Wörter, die von Leerzeichen oder anderen Trennzeichen umgeben sind. Sie sollten immer „word“ verwenden, es sei denn, Sie müssen nach Übereinstimmungen mit Teilen von Wörtern oder Wörtern in asiatischen Sprachen suchen. 
-    
-- **matchStyle = "string"** Der Zeichenfolgenabgleich identifiziert Zeichenfolgen unabhängig davon, von welchen Zeichen sie umgeben sind. So erkennt „id“ zum Beispiel auch „bid“ und „idea“. Verwenden Sie „string“ nur, wenn Sie Übereinstimmungen mit asiatischen Wörtern suchen oder wenn das Stichwort als Teil anderer Zeichenfolgen enthalten sein kann. 
-    
-Sie können auch das caseSensitive-Attribut des Term-Elements verwenden, um festzulegen, dass der Inhalt genau mit dem Stichwort übereinstimmen muss, einschließlich Groß- und Kleinschreibung.
-  
-![XML-Markup mit Match-Elementen, die auf Stichwörter verweisen](media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
-  
-### <a name="regular-expressions-regex-element"></a>Reguläre Ausdrücke [Element „Regex“]
+|Benutzerdefinierte Typen für vertrauliche Informationen in der Benutzeroberfläche|Benutzerdefinierte Typen für vertrauliche Informationen in PowerShell|
+|:-----|:-----|
+|Name und Beschreibung sind in einer Sprache.|Unterstützt mehrere Sprachen für Name und Beschreibung.|
+|Unterstützt ein Muster (das primäre Muster).|Unterstützt mehrere Muster zusätzlich zu dem primären Muster.|
+|Unterstützende Nachweise können Folgendes sein: <br/>• Reguläre Ausdrücke <br/>• Schlüsselwörter <br/>• Schlüsselwörterbücher|Unterstützende Nachweise können Folgendes sein: <br/>• Reguläre Ausdrücke <br/>• Schlüsselwörter <br/>• Schlüsselwörterbücher <br/>• [Integrierte DLP-Funktionen](what-the-dlp-functions-look-for.md)|
+|Der Zuverlässigkeitsgrad ist für den Typ der vertraulichen Informationen konfigurierbar.|Der Zuverlässigkeitsgrad ist für den Typ der vertraulichen Informationen und für jedes darin enthaltene einzelne Muster konfigurierbar.|
+|Die Musterübereinstimmung erfordert die Erkennung des primären Musters und aller unterstützenden Nachweise (der implizite UND-Operator wird verwendet).|Die Musterübereinstimmung erfordert die Erkennung des primären Musters und einer konfigurierbaren Menge unterstützender Nachweise (implizite UND- und ODER-Operatoren können verwendet werden).|
 
-In diesem Beispiel verwendet die Entität „Employee ID“ bereits das IdMatch-Element, um auf einen regulären Ausdruck für das Muster zu verweisen – eine neunstellige Zahl, die von Leerzeichen umgeben ist. Darüber hinaus kann ein Muster ein Match-Element verwenden, um ein zusätzliches Regex-Element zum Identifizieren von bestätigenden Nachweisen, z. B. einer fünf- oder neunstellige Zahl im Format einer US-Postleitzahl, zu verwenden.
-  
-### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Zusätzliche Muster wie Datumsangaben oder Adressen [integrierte Funktionen]
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-Zusätzlich zu den integrierten Typen für vertrauliche Informationen umfasst DLP auch integrierte Funktionen, mit denen bestätigende Nachweise wie ein US-Datum, ein EU-Datum, ein Ablaufdatum oder eine US-Adresse identifiziert werden können. DLP bietet keine Unterstützung für das Hochladen eigener benutzerdefinierter Funktionen. Wenn Sie jedoch einen benutzerdefinierten Typ für vertrauliche Informationen erstellen, kann die Entität auf die integrierten Funktionen verweisen.
-  
-Beispielsweise steht auf einem Mitarbeiterausweis außer der Mitarbeiter-ID auch ein Einstellungsdatum, sodass diese benutzerdefinierte Entität die integrierte Funktion `Func_us_date` verwenden kann, um ein Datum im US-typischen Format zu identifizieren. 
-  
-Weitere Informationen finden Sie unter [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md).
-  
-![XML-Markup mit Match-Element, das auf eine integrierte Funktion verweist](media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
-  
-## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>Verschiedene Kombinationen von Nachweisen [Element „Any“, minMatches- und maxMatches-Attribute]
+- Informationen zum Öffnen des Security & Compliance Center finden Sie unter [Wechseln zum Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md).
 
-In einem Pattern-Element werden alle IdMatch- und Match-Elemente durch einen impliziten AND-Operator verknüpft – es müssen alle Übereinstimmungen gegeben sein, bevor das Muster als erfüllt betrachtet wird. Sie können jedoch mithilfe des Elements „Any“ eine flexiblere Übereinstimmungslogik erstellen, um Match-Elemente zu gruppieren. Sie können das Any-Element beispielsweise verwenden, um alle, keine oder eine genaue Teilmenge der untergeordneten Match-Elemente abzugleichen.
-  
-Das Any-Element hat optionale minMatches- und maxMatches-Attribute, die Sie verwenden können, um zu definieren, wie viele der untergeordneten Match-Elemente erfüllt sein müssen, bevor das Muster als übereinstimmend angesehen wird. Beachten Sie, dass diese Attribute die Anzahl der Match-Elemente definiert, die erfüllt sein müssen, nicht die Anzahl der Instanzen gefundener Nachweise für die Übereinstimmungen. Zum Definieren einer Mindestanzahl von Instanzen für eine bestimmte Übereinstimmung, z. B. zwei Stichwörter aus einer Liste, verwenden Sie das minCount-Attribut für ein Match-Element (siehe oben).
-  
-### <a name="match-at-least-one-child-match-element"></a>Übereinstimmung mit mindestens einem untergeordneten Match-Element
+- Benutzerdefinierte Typen für vertrauliche Informationen erfordern Kenntnisse über reguläre Ausdrücke (RegEx). Weitere Informationen über das .NET-RegEx-Modul, das für die Textverarbeitung verwendet wird, finden Sie unter [Reguläre Ausdrücke in .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
 
-Wenn Sie möchten, dass nur eine Mindestanzahl von Match-Elementen erfüllt sein muss, können Sie das minMatches-Attribut verwenden. Diese Match-Elemente werden eigentlich durch einen impliziten OR-Operator verknüpft. Dieses Any-Element wird erfüllt, wenn ein US-formatiertes Datum oder ein Stichwort aus einer Liste gefunden wird.
-  
-![XML-Markup mit Any-Element und minMatches-Attribut](media/385db1b1-571b-4a05-81b3-db28f5099c17.png)
-  
-### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Übereinstimmung mit einer genauen Untermenge beliebiger untergeordneter Match-Elemente
+  Der Kundendienst und Support von Microsoft kann beim Bereitstellen von benutzerdefinierten Definitionen für die Inhaltsübereinstimmung (Erstellen benutzerdefinierter Klassifizierungen oder Muster für reguläre Ausdrücke) keine Unterstützung anbieten. Die Supportmitarbeiter können eingeschränkten Support für das Feature bereitstellen (z. B. Bereitstellen von Mustern für reguläre Ausdrücke zu Testzwecken oder Hilfestellung bei der Problembehandlung eines bestehenden Musters für reguläre Ausdrücke, das nicht wie erwartet ausgelöst wird), es können jedoch keine Zusicherungen dahingehend gegeben werden, dass benutzerdefinierte Entwicklungen für die Inhaltsübereinstimmung Ihre Anforderungen oder Verpflichtungen erfüllen.
 
-Wenn Sie möchten, dass eine genaue Anzahl von Match-Elementen gefunden werden soll, können Sie für „minMatches“ und „maxMatches“ den gleichen Wert festlegen. Dieses Any-Element ist nur dann erfüllt, wenn genau ein Datum oder Stichwort gefunden wird. Wenn mehr gefunden werden, gilt das Muster als nicht übereinstimmend.
-  
-![XML-Markup mit Any-Element und minMatches- sowie maxMatches-Attribut](media/97b10002-7781-42e8-ac5a-20ad8c5a887e.png)
-  
-### <a name="match-none-of-children-match-elements"></a>Übereinstimmung für keine untergeordneten Match-Elemente
+- Weitere Informationen über das .NET-Regex-Modul, das für die Textverarbeitung verwendet wird, finden Sie unter [Reguläre Ausdrücke in .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
 
-Wenn Sie festlegen möchten, dass ein bestimmter Nachweis nicht vorhanden sein darf, damit die Übereinstimmung mit einem Muster gegeben ist, können Sie sowohl „minMatches“ als auch „maxMatches“ auf 0 festlegen. Dies kann hilfreich sein, wenn Sie eine Stichwortliste oder andere Nachweise haben, die wahrscheinlich zu einem falsch positiven Ergebnis führen.
-  
-Die Entität „Employee ID“ such zum Beispiel nach dem Stichwort „Card“, da es sich auf eine „ID Card“ beziehen kann. Wenn „card“ jedoch nur im Ausdruck „credit card“ vorkommt, bedeutet „card“ in diesem Inhalt wahrscheinlich nicht „ID card“. Sie können also „credit card“ als Stichwort zu einer Liste mit Begriffen hinzufügen, die Sie von der Übereinstimmung mit dem Muster ausschließen möchten.
-  
-![XML-Markup mit maxMatches-Attributwert von 0 (null)](media/f81d44e5-3db8-48a8-8919-f483a386afdf.png)
-  
-## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>Wie nah an der Entität muss der andere Nachweis sein? [patternsProximity-Attribut]
+- DLP verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in SharePoint Online- und OneDrive for Business-Websites. Um Ihren neuen benutzerdefinierten Typ vertraulicher Informationen in vorhandenen Inhalten zu identifizieren, muss der Inhalt erneut durchforstet werden. Inhalte werden basierend auf einem Zeitplan erneut durchforstet, Sie können aber Inhalte für eine Websitesammlung, eine Liste oder eine Bibliothek manuell erneut durchforsten. Weitere Informationen finden Sie unter [Manuelles Anfordern einer Durchforstung und erneutes Indizieren einer Website, einer Bibliothek oder einer Liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-Der Typ für vertrauliche Informationen sucht nach einem Muster, das eine Mitarbeiter-ID darstellt, und als Teil dieses Musters sucht er auch nach bestätigenden Nachweisen, wie z. B. dem Stichwort „ID“. Daraus folgt: Je näher dieser Nachweis bei der Entität liegt, desto wahrscheinlicher ist das Muster eine tatsächliche Mitarbeiter-ID. Sie können festlegen, wie nah andere Nachweise bei der Entität im Muster liegen müssen, indem Sie das erforderliche patternsProximity-Attribut des Entity-Elements verwenden.
-  
-![XML-Markup mit patternsProximity-Attribut](media/e97eb7dc-b897-4e11-9325-91c742d9839b.png)
-  
-Der patternsProximity-Attributwert definiert für jedes Muster in der Entität den Abstand (in Unicode-Zeichen) von der IdMatch-Position für alle anderen Übereinstimmungen, die für dieses Muster angegeben wurden. Das Näherungsfenster wird von der IdMatch-Position verankert, wobei das Fenster links und rechts von „IdMatch“ erweitert wird.
-  
-![Diagramm des Näherungsfensters](media/b593dfd1-5eef-4d79-8726-a28923f7c31e.png)
-  
-Im nachstehenden Beispiel wird gezeigt, in welcher Weise das Näherungsfenster den Musterabgleich beeinflusst, wobei das IdMatch-Element für die benutzerdefinierte Employee ID-Entität mindestens eine bestätigende Übereinstimmung von Stichwort oder Datum erfordert. Aufgrund von ID2 und ID3 gibt es nur eine Übereinstimmung für ID1, und im Näherungsfenster wird kein oder nur ein teilweise bestätigender Nachweis gefunden.
-  
-![Diagramm von bestätigenden Nachweisen und Näherungsfenster](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-  
-Beachten Sie, dass bei E-Mails der Text und jede Anlage als separate Elemente behandelt werden. Dies bedeutet, dass sich das Näherungsfenster nicht über das Ende des jeweiligen Elements erstreckt. Für jedes Element (Anlage oder Text) muss sowohl idMatch als auch der bestätigende Nachweise vorhanden sein.
-  
-## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>Was sind die richtigen Zuverlässigkeitsgrade für verschiedene Muster? [confidenceLevel-Attribut, recommendedConfidence-Attribut]
+## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a>Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center
 
-Je mehr Nachweise für ein Muster erforderlich sind, desto höher ist der Zuverlässigkeitsgrad, dass eine tatsächliche Entität (z. B. Mitarbeiter-ID) beim Abgleich des Musters identifiziert wurde. So ist die Zuverlässigkeit beispielsweise größer bei einem Muster, für das eine neunstellige ID, das Einstellungsdatum und ein Stichwort in nächster Nähe erforderlich sind, als bei einem Muster, das nur eine neue neunstellige ID erfordert.
-  
-Das Pattern-Element hat ein erforderliches confidenceLevel-Attribut. Sie können sich den Wert für „confidenceLevel“ (eine ganze Zahl zwischen 1 und 100) als eine eindeutige ID für jedes Muster in einer Entität vorstellen – Sie müssen den Mustern in einer Entität unterschiedlichen Zuverlässigkeitsgrade zuweisen. Der genaue Wert der ganzen Zahl spielt keine Rolle – wählen Sie einfach Zahlen aus, die Ihrem Complianceteam sinnvoll erscheinen. Nachdem Sie den benutzerdefinierten Typ für vertrauliche Informationen hochgeladen und anschließend eine DLP-Richtlinie erstellt haben, können Sie in den Bedingungen der von Ihnen erstellten Regeln auf diese Zuverlässigkeitsgrade verweisen.
-  
-![XML-Markup mit Pattern-Elementen und verschiedenen Werten für das confidenceLevel-Attribut](media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
-  
-Zusätzlich zum confidenceLevel-Attribut für jedes Muster hat die Entität ein recommendedConfidence-Attribut. Das recommendedConfidence-Attribut kann als Standardzuverlässigkeitsgrad für die Regel angesehen werden. Wenn Sie beim Erstellen einer Regel in einer DLP-Richtlinie keinen Zuverlässigkeitsgrad angeben, nimmt die Regel die Übereinstimmung basierend auf dem empfohlenen Zuverlässigkeitsgrad für die Entität vor.
-  
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-security-amp-compliance-center-localizedstrings-element"></a>Möchten Sie in der Benutzeroberfläche von Security &amp; Compliance Center andere Sprachen unterstützehn? [Element „LocalizedStrings“]
+Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und klicken Sie auf **Erstellen**.
 
-Wenn Ihr Complianceteam Office 365 Security &amp; Compliance Center zum Erstellen von DLP-Richtlinien in verschiedenen Gebietsschemas und in verschiedenen Sprachen verwendet, können Sie lokalisierte Versionen des Namens und der Beschreibung Ihres benutzerdefinierten Typs für vertrauliche Informationen bereitstellen. Wenn Ihr Complianceteam Office 365 in einer anderen, von Ihnen unterstützten Sprache verwendet, wird der lokalisierte Name in der Benutzeroberfläche angezeigt.
-  
-![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-  
-Das Rules-Element muss ein LocalizedStrings-Element enthalten, das ein Resource-Element enthält, das auf die GUID Ihrer benutzerdefinierten Entität verweist. Jedes Resource-Element enthält wiederum ein oder mehrere Name-Elemente und Description-Elemente, die jeweils das langcode-Attribut verwenden, um eine lokalisierte Zeichenfolge für eine bestimmte Sprache bereitzustellen.
-  
-![XML-Markup mit Inhalt des LocalizedStrings-Elements](media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
-  
-Beachten Sie, dass Sie lokalisierte Zeichenfolgen nur für die Anzeige Ihres benutzerdefinierten Typs für vertrauliche Informationen in der Benutzeroberfläche von Security &amp; Compliance Center verwenden. Sie können keine lokalisierte Zeichenfolgen verwenden, um verschiedene lokalisierte Versionen einer Stichwortliste oder eines regulären Ausdrucks bereitzustellen.
-  
-## <a name="other-rule-package-markup-rulepack-guid"></a>Sonstige Regelpaket-Markups [RulePack-GUID]
+Die Einstellungen sind selbsterklärend und werden auf der entsprechenden Seite des Assistenten erläutert:
 
-Der Anfang jedes Regelpakets enthält einige allgemeine Informationen, die Sie ausfüllen müssen. Sie können das folgende Markup als Vorlage verwenden und die Platzhalter ". . ." durch eigene Informationen ersetzen.
-  
-Am wichtigsten ist Folgendes: Sie müssen eine GUID für das RulePack generieren. Weiter oben haben Sie eine GUID für die Entität generiert. Dies ist eine zweite GUID für das RulePack. Es gibt mehrere Methoden zum Generieren von GUIDs, aber Sie können dies ganz einfach in PowerShell durch Eingabe von „[guid]::NewGuid()“ durchführen.
-  
-Das Version-Element ist ebenfalls wichtig. Wenn Sie das Regelpaket zum ersten Mal hochladen, merkt sich Office 365 die Versionsnummer. Wenn Sie das Regelpaket später aktualisieren und eine neue Version hochladen, stellen Sie sicher, dass Sie die Versionsnummer aktualisieren, da Office 365 das Regelpaket sonst nicht bereitstellt.
-  
-```
-<?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
-  <RulePack id=". . .">
-    <Version major="1" minor="0" build="0" revision="0" />
-    <Publisher id=". . ." /> 
-    <Details defaultLangCode=". . .">
-      <LocalizedDetails langcode=" . . . ">
-         <PublisherName>. . .</PublisherName>
-         <Name>. . .</Name>
-         <Description>. . .</Description>
-      </LocalizedDetails>
-    </Details>
-  </RulePack>
-  
- <Rules>
-    . . .
- </Rules>
-</RulePackage>
+- **Name**
 
-```
+- **Beschreibung**
 
-Wenn es fertig ist, sollte das RulePack-Element wie folgt aussehen.
+- **Näherung**
+
+- **Zuverlässigkeitsstufe**
+
+- **Primäres Muster-Element** (Schlüsselwörter, reguläre Ausdrücke oder Wörterbuch)
+
+- Optionale Elemente für **unterstützende Muster** (Schlüsselwörter, reguläre Ausdrücke oder Wörterbuch) und einen entsprechenden Wert für **Mindestkosten**.
+
+Sehen Sie sich das folgende Szenario an: Sie möchten einen benutzerdefinierten Typ für vertrauliche Informationen, der neunstellige Mitarbeiternummern in Inhalten erkennt, zusammen mit den Schlüsselwörtern „Mitarbeiter“, „ID“ und „Ausweis“. Um diesen benutzerdefinierten Typ für vertrauliche Information zu erstellen, führen Sie die folgenden Schritte aus:
+
+1. Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und klicken Sie auf **Erstellen**.
+
+2. Geben Sie auf der Seite **Namen und Beschreibung auswählen**, die geöffnet wird, die folgenden Werte ein:
+
+  - **Name**: Mitarbeiter-ID.
+
+  - **Beschreibung** Neunstellige Contoso-Mitarbeiter-ID-Nummer erkennen.
+
+  Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+
+3. Klicken Sie auf der Seite **Anforderungen für Übereinstimmung** auf **Element hinzufügen**, um die folgenden Einstellungen zu konfigurieren:
+
+  - **Inhalt erkennen, der Folgendes enthält**:
+ 
+    a. Klicken Sie auf die Option, dass **eines der folgenden Elemente enthalten sein muss**, und wählen Sie **Regulärer Ausdruck** aus.
+
+    b. Geben Sie in dem Feld für den regulären Ausdruck `(\s)(\d{9})(\s)` ein (neunstellige Zahlen umgeben von einem Leerzeichen).
   
-![XML-Markup mit dem RulePack-Element](media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
-  
-## <a name="changes-for-exchange-online"></a>Änderungen für Exchange Online
+  - **Unterstützende Elemente**: Klicken Sie auf **Unterstützende Elemente hinzufügen**, und wählen Sie **Enthält die folgende Schlüsselwortliste** aus.
 
-Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen für vertrauliche Informationen für DLP zu importieren. Sie können Ihre benutzerdefinierten Typen für vertrauliche Informationen sowohl im Exchange Admin Center als auch im Security &amp; Compliance Center verwenden. Als Teil dieser Verbesserung können Sie Security &amp; Compliance Center PowerShell verwenden, um Ihre benutzerdefinierten Typen für vertrauliche Informationen zu importieren – Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten Typen für vertrauliche Informationen funktionieren weiterhin wie zuvor. Es kann jedoch bis zu einer Stunde dauern, bevor Änderungen an benutzerdefinierten Typen für vertrauliche Informationen im Security &amp; Compliance Center in Exchange Admin Center angezeigt werden.
-  
-Beachten Sie, dass Sie im Security &amp; Compliance Center das `DlpSensitiveInformationTypeRulePackage`-Cmdlet zum Hochladen eines Regelpakets verwenden. Im Exchange Admin Center haben Sie zuvor das `ClassificationRuleCollection`-Cmdlet verwendet. 
-  
-## <a name="upload-your-rule-package"></a>Hochladen des Regelpakets
+  - Konfigurieren Sie in dem Bereich **Enthält die folgende Schlüsselwortliste**, der angezeigt wird, die folgenden Einstellungen:
 
-Gehen Sie zum Hochladen des Regelpakets wie folgt vor.
-  
-1. Speichern Sie sie als XML-Datei mit Unicode-Codierung.
-    
-2. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-3. Geben Sie in Security &amp; Compliance Center PowerShell „New-DlpSensitiveInformationTypeRulePackage - FileData (Get-Content - Path "C:\custompath\MyNewRulePack.xml"-Encoding Byte)“ ein.
-    
-    Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist. „C:\custompath\“ ist ein Platzhalter.
-    
-4. Geben Sie zur Bestätigung Y ein, und drücken Sie die EINGABETASTE.
-    
-5. Stellen Sie sicher, dass Ihre neuer Typ für vertrauliche Informationen hochgeladen wurde, indem Sie „Get-DlpSensitiveInformationType“ eingeben, um eine Liste aller Typen für vertrauliche Informationen anzuzeigen. Sie können benutzerdefinierten Typen fpr vertrauliche Informationen schnell von den integrierten Typen unterscheiden, indem Sie die Veröffentlicher-Spalte betrachten. Sie können die Liste nach einem bestimmten Typ für vertrauliche Informationen filtern, indem Sie „Get-DlpSensitiveInformationType -Identity ‚Name des Typs für vertrauliche Informationen‘“eingeben.
-    
-## <a name="potential-validation-issues-to-be-aware-of"></a>Mögliche Überprüfungsprobleme, die Sie beachten müssen
+    - **Schlüsselwortliste**: Geben Sie den folgenden Wert ein: Mitarbeiter,ID,Ausweis.
 
-Wenn Sie die XML-Datei des Regelpakets hochladen, überprüft das System den XML-Code und sucht nach bekannten fehlerhaften Mustern und offensichtlichen Leistungsproblemen. Hier sind einige bekannte Probleme aufgeführt, auf die eine Überprüfung erfolgt – ein regulärer Ausdruck:
-  
-- Darf nicht mit einem Alternator „|“ beginnen, das allem entspricht, da es als leere Übereinstimmung angesehen wird.
-    
-    Beispiel: „|a“ oder „|b“ besteht die Überprüfung nicht.
-    
-- Darf nicht mit einem „. {0, m}“-Muster beginnen oder enden, da dies keine Funktion hat und nur die Leistung beeinträchtigt.
-    
-    Beispiel: „.{0,50}ASDF“ oder „ASDF.{0,50}“ besteht die Überprüfung nicht.
-    
-- Darf „.{0,m}“ oder „.{1,m}“ nicht in Gruppen haben, und darf nicht „.\*“ oder „.+“ in Gruppen haben.
-    
-    Beispiel: „(.{0,50000})“ besteht die Überprüfung nicht.
-    
-- Darf keine Zeichen mit den Wiederholern „{0,m}“ oder „{1,m}“ haben.
-    
-    Beispiel: „(a\*)“ besteht die Überprüfung nicht.
-    
-- Darf nicht mit „.{1,m}“ beginnen oder enden; verwenden Sie stattdessen „.“
-    
-    Beispiel: „.{1,m}asdf“ besteht die Überprüfung nicht; verwenden Sie stattdessen „.asdf“.
-    
-- Darf keinen unbegrenzten Wiederholer in einer Grupe haben (wie z. B. „\*“ oder „+“).
-    
-    Beispiel: „(xx)\*“ und „(xx)+“ bestehen die Überprüfung nicht.
-    
-Wenn ein benutzerdefinierter Typ für vertrauliche Informationen ein Problem enthält, das die Leistung beeinträchtigen könnte, wird er nicht hochgeladen, und es wird möglicherweise eine der folgenden Fehlermeldungen angezeigt:
-  
-- **Generische Mengenangaben, die mit mehr Inhalten übereinstimmen als erwartet (z. B. „+“, „\*“)**
-    
-- **Lookaround-Assertionen**
-    
-- **Komplexe Gruppieren in Verbindung mit allgemeinen Mengenangaben**
-    
-## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Neues Durchforsten des Inhalts, um die Typen für vertrauliche Informationen zu identifizieren
+    - **Mindestanzahl**: Behalten Sie den Standardwert 1 bei.
 
-DLP verwendet den Suchcrawler zum Identifizieren und Klassifizieren von vertraulichen Informationen in Websiteinhalten. Inhalte in SharePoint Online- und OneDrive for Business-Websites werden bei jeder Aktualisierung automatisch erneut durchforstet. Damit der neue benutzerdefinierte Typ für vertrauliche Informationen im gesamten vorhandenen Inhalt identifiziert werden kann, muss der Inhalt erneut durchforstet werden.
-  
-In Office 365 können Sie das erneute Durchforsten des gesamten Mandanten nicht manuell anfordern, für eine Websitesammlung, Liste oder Bibliothek ist dies jedoch möglich. Weitere Informationen finden Sie unter [Manuelles Durchforsten und erneutes Indizieren einer Website, einer Bibliothek oder Liste](https://support.office.com/article/9afa977d-39de-4321-b4ca-8c7c7e6d264e).
-  
-## <a name="remove-a-custom-sensitive-information-type"></a>Entfernen eines benutzerdefinierten Typs für vertrauliche Informationen
+  - Behalten Sie den Standardwert 60 für den **Zuverlässigkeitsgrad** bei. 
 
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
-    
-2. Wählen Sie in Security &amp; Compliance Center PowerShell eine der folgenden Möglichkeiten:
-    
-  - Zum Entfernen des gesamten Regelpakets und aller darin enthaltenen Entitäten:
-    
-    Geben Sie „Remove-DlpSensitiveInformationTypeRulePackage ‚NameIhresRegelpakets‘“ ein. Im oben aufgeführten Beispiel würden Sie „Remove-DlpSensitiveInformationTypeRulePackage "Employee ID Custom Rule Pack"“ eingeben.
-    
-    Beachten Sie, dass Sie zum Identifizieren des Regelpakets das \<Name\>-Element (für jede Sprache) im \<Rule Pack\>-Element oder die GUID des Attributs „id“ für das Element „RulePack“ verwenden können.
-    
-  - Zum Entfernen einer einzelnen Entität aus einem Regelpaket:
-    
-    Sie müssen eine neue Version Ihres Regelpakets hochladen, aus dem die Entität entfernt wurde. Verwenden Sie dann „Set-DlpSensitiveInformationTypeRulePackage“. Sie müssen sicherstellen, dass keine DLP-Richtlinien oder Exchange-Transportregeln weiterhin auf den Typ für vertrauliche Informationen verweisen, bevor Sie ihn entfernen.
-    
-3. Geben Sie zur Bestätigung Y ein, und drücken Sie die EINGABETASTE.
-    
-4. Überprüfen Sie, ob die neue Regel entfernt wurde, indem Sie „Get - DlpSensitiveInformationType“ eingeben. Der Name Ihres benutzerdefinierten Typs für vertrauliche Informationen sollte dann nicht mehr angezeigt werden.
-    
-## <a name="reference-rule-package-xml-schema-definition"></a>Referenz: XML-Schemadefinition für Regelpaket
+  - Behalten Sie den Standardwert 300 für den **Zeichenabstand** bei.
 
-Sie können dieses Markup kopieren, als eine XSD-Datei speichern und es verwenden, um die XML-Datei Ihres Regelpakets zu überprüfen.
-  
-```
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
-           targetNamespace="http://schemas.microsoft.com/office/2011/mce" 
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified"
-           attributeFormDefault="unqualified"
-           id="RulePackageSchema">
-  <!-- Use include if this schema has the same target namespace as the schema being referenced, otherwise use import -->
-  <xs:element name="RulePackage" type="mce:RulePackageType"/>
-  <xs:simpleType name="LangType">
-    <xs:union memberTypes="xs:language">
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-          <xs:enumeration value=""/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:union>
-  </xs:simpleType>
-  <xs:simpleType name="GuidType" final="#all">
-    <xs:restriction base="xs:token">
-      <xs:pattern value="[0-9a-fA-F]{8}\-([0-9a-fA-F]{4}\-){3}[0-9a-fA-F]{12}"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="RulePackageType">
-    <xs:sequence>
-      <xs:element name="RulePack" type="mce:RulePackType"/>
-      <xs:element name="Rules" type="mce:RulesType">
-        <xs:key name="UniqueRuleId">
-          <xs:selector xpath="mce:Entity|mce:Affinity|mce:Version/mce:Entity|mce:Version/mce:Affinity"/>
-          <xs:field xpath="@id"/>
-        </xs:key>
-        <xs:key name="UniqueProcessorId">
-          <xs:selector xpath="mce:Regex|mce:Keyword|mce:Fingerprint"></xs:selector>
-          <xs:field xpath="@id"/>
-        </xs:key>
-        <xs:key name="UniqueResourceIdRef">
-          <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
-          <xs:field xpath="@idRef"/>
-        </xs:key>        
-        <xs:keyref name="ReferencedRuleMustExist" refer="mce:UniqueRuleId">
-          <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
-          <xs:field xpath="@idRef"/>
-        </xs:keyref>
-        <xs:keyref name="RuleMustHaveResource" refer="mce:UniqueResourceIdRef">
-          <xs:selector xpath="mce:Entity|mce:Affinity|mce:Version/mce:Entity|mce:Version/mce:Affinity"/>
-          <xs:field xpath="@id"/>
-        </xs:keyref>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="RulePackType">
-    <xs:sequence>
-      <xs:element name="Version" type="mce:VersionType"/>
-      <xs:element name="Publisher" type="mce:PublisherType"/>
-      <xs:element name="Details" type="mce:DetailsType">
-        <xs:key name="UniqueLangCodeInLocalizedDetails">
-          <xs:selector xpath="mce:LocalizedDetails"/>
-          <xs:field xpath="@langcode"/>
-        </xs:key>
-        <xs:keyref name="DefaultLangCodeMustExist" refer="mce:UniqueLangCodeInLocalizedDetails">
-          <xs:selector xpath="."/>
-          <xs:field xpath="@defaultLangCode"/>
-        </xs:keyref>
-      </xs:element>
-      <xs:element name="Encryption" type="mce:EncryptionType" minOccurs="0" maxOccurs="1"/>
-    </xs:sequence>
-    <xs:attribute name="id" type="mce:GuidType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="VersionType">
-    <xs:attribute name="major" type="xs:unsignedShort" use="required"/>
-    <xs:attribute name="minor" type="xs:unsignedShort" use="required"/>
-    <xs:attribute name="build" type="xs:unsignedShort" use="required"/>
-    <xs:attribute name="revision" type="xs:unsignedShort" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="PublisherType">
-    <xs:attribute name="id" type="mce:GuidType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="LocalizedDetailsType">
-    <xs:sequence>
-      <xs:element name="PublisherName" type="mce:NameType"/>
-      <xs:element name="Name" type="mce:RulePackNameType"/>
-      <xs:element name="Description" type="mce:OptionalNameType"/>
-    </xs:sequence>
-    <xs:attribute name="langcode" type="mce:LangType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="DetailsType">
-    <xs:sequence>
-      <xs:element name="LocalizedDetails" type="mce:LocalizedDetailsType" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="defaultLangCode" type="mce:LangType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="EncryptionType">
-    <xs:sequence>
-      <xs:element name="Key" type="xs:normalizedString"/>
-      <xs:element name="IV" type="xs:normalizedString"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:simpleType name="RulePackNameType">
-    <xs:restriction base="xs:token">
-      <xs:minLength value="1"/>
-      <xs:maxLength value="64"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="NameType">
-    <xs:restriction base="xs:normalizedString">
-      <xs:minLength value="1"/>
-      <xs:maxLength value="256"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="OptionalNameType">
-    <xs:restriction base="xs:normalizedString">
-      <xs:minLength value="0"/>
-      <xs:maxLength value="256"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="RestrictedTermType">
-    <xs:restriction base="xs:string">
-      <xs:minLength value="1"/>
-      <xs:maxLength value="100"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="RulesType">
-    <xs:sequence>
-      <xs:choice maxOccurs="unbounded">
-        <xs:element name="Entity" type="mce:EntityType"/>
-        <xs:element name="Affinity" type="mce:AffinityType"/>
-        <xs:element name="Version" type="mce:VersionedRuleType"/>
-      </xs:choice>
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Regex" type="mce:RegexType"/>
-        <xs:element name="Keyword" type="mce:KeywordType"/>
-        <xs:element name="Fingerprint" type="mce:FingerprintType"/>
-        <xs:element name="ExtendedKeyword" type="mce:ExtendedKeywordType"/>
-      </xs:choice>
-      <xs:element name="LocalizedStrings" type="mce:LocalizedStringsType"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="EntityType">
-    <xs:sequence>
-      <xs:element name="Pattern" type="mce:PatternType" maxOccurs="unbounded"/>
-      <xs:element name="Version" type="mce:VersionedPatternType" minOccurs="0" maxOccurs="unbounded" />
-    </xs:sequence>
-    <xs:attribute name="id" type="mce:GuidType" use="required"/>
-    <xs:attribute name="patternsProximity" type="mce:ProximityType" use="required"/>
-    <xs:attribute name="recommendedConfidence" type="mce:ProbabilityType"/>
-    <xs:attribute name="workload" type="mce:WorkloadType"/>
-  </xs:complexType>
-  <xs:complexType name="PatternType">
-    <xs:sequence>
-      <xs:element name="IdMatch" type="mce:IdMatchType"/>
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Match" type="mce:MatchType"/>
-        <xs:element name="Any" type="mce:AnyType"/>
-      </xs:choice>
-    </xs:sequence>
-    <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="AffinityType">
-    <xs:sequence>
-      <xs:element name="Evidence" type="mce:EvidenceType" maxOccurs="unbounded"/>
-      <xs:element name="Version" type="mce:VersionedEvidenceType" minOccurs="0" maxOccurs="unbounded" />
-    </xs:sequence>
-    <xs:attribute name="id" type="mce:GuidType" use="required"/>
-    <xs:attribute name="evidencesProximity" type="mce:ProximityType" use="required"/>
-    <xs:attribute name="thresholdConfidenceLevel" type="mce:ProbabilityType" use="required"/>
-    <xs:attribute name="workload" type="mce:WorkloadType"/>
-  </xs:complexType>
-  <xs:complexType name="EvidenceType">
-    <xs:sequence>
-      <xs:choice maxOccurs="unbounded">
-        <xs:element name="Match" type="mce:MatchType"/>
-        <xs:element name="Any" type="mce:AnyType"/>
-      </xs:choice>
-    </xs:sequence>
-    <xs:attribute name="confidenceLevel" type="mce:ProbabilityType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="IdMatchType">
-    <xs:attribute name="idRef" type="xs:string" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="MatchType">
-    <xs:attribute name="idRef" type="xs:string" use="required"/>
-    <xs:attribute name="minCount" type="xs:positiveInteger" use="optional"/>
-    <xs:attribute name="uniqueResults" type="xs:boolean" use="optional"/>
-  </xs:complexType>
-  <xs:complexType name="AnyType">
-    <xs:sequence>
-      <xs:choice maxOccurs="unbounded">
-        <xs:element name="Match" type="mce:MatchType"/>
-        <xs:element name="Any" type="mce:AnyType"/>
-      </xs:choice>
-    </xs:sequence>
-    <xs:attribute name="minMatches" type="xs:nonNegativeInteger" default="1"/>
-    <xs:attribute name="maxMatches" type="xs:nonNegativeInteger" use="optional"/>
-  </xs:complexType>
-  <xs:simpleType name="ProximityType">
-    <xs:union>
-      <xs:simpleType>
-        <xs:restriction base='xs:string'>
-          <xs:enumeration value="unlimited"/>
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:simpleType>
-        <xs:restriction base="xs:positiveInteger">
-          <xs:minInclusive value="1"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:union>
-  </xs:simpleType>
-  <xs:simpleType name="ProbabilityType">
-    <xs:restriction base="xs:integer">
-      <xs:minInclusive value="1"/>
-      <xs:maxInclusive value="100"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="WorkloadType">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Exchange"/>
-      <xs:enumeration value="Outlook"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="EngineVersionType">
-    <xs:restriction base="xs:token">
-      <xs:pattern value="^\d{2}\.01?\.\d{3,4}\.\d{1,3}$"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="VersionedRuleType">
-    <xs:choice maxOccurs="unbounded">
-      <xs:element name="Entity" type="mce:EntityType"/>
-      <xs:element name="Affinity" type="mce:AffinityType"/>
-    </xs:choice>
-    <xs:attribute name="minEngineVersion" type="mce:EngineVersionType" use="required" />
-  </xs:complexType>
-  <xs:complexType name="VersionedPatternType">
-    <xs:sequence>
-      <xs:element name="Pattern" type="mce:PatternType" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="minEngineVersion" type="mce:EngineVersionType" use="required" />
-  </xs:complexType>
-  <xs:complexType name="VersionedEvidenceType">
-    <xs:sequence>
-      <xs:element name="Evidence" type="mce:EvidenceType" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="minEngineVersion" type="mce:EngineVersionType" use="required" />
-  </xs:complexType>
-  <xs:simpleType name="FingerprintValueType">
-    <xs:restriction base="xs:string">
-      <xs:minLength value="2732"/>
-      <xs:maxLength value="2732"/>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="FingerprintType">
-    <xs:simpleContent>
-      <xs:extension base="mce:FingerprintValueType">
-        <xs:attribute name="id" type="xs:token" use="required"/>
-        <xs:attribute name="threshold" type="mce:ProbabilityType" use="required"/>
-        <xs:attribute name="shingleCount" type="xs:positiveInteger" use="required"/>
-        <xs:attribute name="description" type="xs:string" use="optional"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="RegexType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="id" type="xs:token" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="KeywordType">
-    <xs:sequence>
-      <xs:element name="Group" type="mce:GroupType" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="id" type="xs:token" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="GroupType">
-    <xs:sequence>
-      <xs:choice>
-        <xs:element name="Term" type="mce:TermType" maxOccurs="unbounded"/>
-      </xs:choice>
-    </xs:sequence>
-    <xs:attribute name="matchStyle" default="word">
-      <xs:simpleType>
-        <xs:restriction base="xs:NMTOKEN">
-          <xs:enumeration value="word"/>
-          <xs:enumeration value="string"/>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:complexType>
-  <xs:complexType name="TermType">
-    <xs:simpleContent>
-      <xs:extension base="mce:RestrictedTermType">
-        <xs:attribute name="caseSensitive" type="xs:boolean" default="false"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="ExtendedKeywordType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="id" type="xs:token" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="LocalizedStringsType">
-    <xs:sequence>
-      <xs:element name="Resource" type="mce:ResourceType" maxOccurs="unbounded">
-      <xs:key name="UniqueLangCodeUsedInNamePerResource">
-        <xs:selector xpath="mce:Name"/>
-        <xs:field xpath="@langcode"/>
-      </xs:key>
-      <xs:key name="UniqueLangCodeUsedInDescriptionPerResource">
-        <xs:selector xpath="mce:Description"/>
-        <xs:field xpath="@langcode"/>
-      </xs:key>
-    </xs:element>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ResourceType">
-    <xs:sequence>
-      <xs:element name="Name" type="mce:ResourceNameType" maxOccurs="unbounded"/>
-      <xs:element name="Description" type="mce:DescriptionType" minOccurs="0" maxOccurs="unbounded"/>
-    </xs:sequence>
-    <xs:attribute name="idRef" type="mce:GuidType" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="ResourceNameType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="default" type="xs:boolean" default="false"/>
-        <xs:attribute name="langcode" type="mce:LangType" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-  <xs:complexType name="DescriptionType">
-    <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="default" type="xs:boolean" default="false"/>
-        <xs:attribute name="langcode" type="mce:LangType" use="required"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
-</xs:schema>
+  Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-```
+4. Überprüfen Sie auf der Seite **Überprüfen und Abschließen** die Einstellungen, und klicken Sie auf **Fertig stellen**.
 
-## <a name="more-information"></a>Weitere Informationen
+5. Auf der nächsten Seite werden Sie aufgefordert, den neuen benutzerdefinierten Typ für vertrauliche Informationen zu testen. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Information im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). Klicken Sie andernfalls auf **Abbrechen**.
 
-- [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
-    
-- [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
-    
-- [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
-    
+### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
+Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erstellt haben, führen Sie einen der folgenden Schritte aus:
+
+  - Wechseln Sie zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und bestätigen Sie, dass der neue benutzerdefinierte Typ für vertrauliche Informationen aufgeführt ist.
+
+  - Testen Sie den neuen benutzerdefinierten Typ für vertrauliche Informationen. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
+
+## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>Ändern von benutzerdefinierten Typen für vertrauliche Information im Security & Compliance Center
+
+**Hinweis**: Sie können nur benutzerdefinierte Typen für vertrauliche Informationen ändern; integrierte Typen vertraulicher Informationen können nicht geändert werden. Sie können aber PowerShell verwenden, um integrierte Typen vertraulicher Informationen zu exportieren, diese anzupassen und sie als benutzerdefinierte Typen vertraulicher Informationen zu importieren. Weitere Informationen finden Sie unter [Anpassen eines integrierten benutzerdefinierten Typs für vertrauliche Informationen](customize-a-built-in-sensitive-information-type.md).
+
+Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und wählen Sie den benutzerdefinierten Typ vertraulicher Informationen aus, den Sie ändern möchten.
+
+Hier stehen die gleichen Optionen wie beim Erstellen des benutzerdefinierten Typs für vertrauliche Informationen im Security & Compliance Center zur Verfügung. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).
+
+### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
+
+Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erfolgreich geändert haben, führen Sie einen der folgenden Schritte aus:
+
+  - Wechseln Sie zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, um die Eigenschaften des geänderten benutzerdefinierten Typs vertraulicher Informationen zu überprüfen.
+
+  - Testen Sie den geänderten benutzerdefinierten Typ für vertrauliche Informationen. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
+
+## <a name="remove-custom-sensitive-information-types-in-the-security--compliance-center"></a>Entfernen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center 
+
+**Hinweise**:
+
+- Sie können nur benutzerdefinierte Typen für vertrauliche Informationen entfernen; Sie können keine integrierten Typen vertraulicher Informationen entfernen.
+
+- Bevor Sie einen benutzerdefinierten Typ für vertrauliche Informationen entfernen, überprüfen Sie, dass keine DLP-Richtlinien oder Exchange-Nachrichtenflussregeln (auch bezeichnet als Transportregeln) mehr auf den Typ vertraulicher Informationen verweisen.
+
+1. Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und wählen Sie einen oder mehrere benutzerdefinierte Typen vertraulicher Informationen aus, die Sie entfernen möchten.
+
+2. Klicken Sie in dem Fenster, das geöffnet wird, auf **Löschen** (oder auf **Typen vertraulicher Informationen löschen**, wenn Sie mehrere ausgewählt haben).
+
+3. Klicken Sie in der angezeigten Warnmeldung auf **Ja**.
+
+### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
+
+Um sicherzustellen, dass Sie einen benutzerdefinierten Typ vertraulicher Informationen erfolgreich entfernt haben, wechseln Sie zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und bestätigen Sie, dass der benutzerdefinierte Typ vertraulicher Informationen nicht mehr aufgeführt ist.
+
+
+## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a>Testen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center
+
+1. Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**.
+
+2. Wählen Sie einen oder mehrere benutzerdefinierte Typen vertraulicher Informationen aus, die Sie testen möchten. Klicken Sie in dem Fenster, das geöffnet wird, auf **Typ testen** (oder auf **Typen vertraulicher Informationen testen**, wenn Sie mehrere ausgewählt haben).
+
+3. Laden Sie auf der Seite, die geöffnet wird, per Drag & Drop ein zu testendes Dokument hoch, oder klicken Sie auf **Durchsuchen**, und wählen Sie eine Datei aus.
+
+4. Klicken Sie auf die Schaltfläche **Testen**, um das Dokument auf Musterübereinstimmungen in der Datei zu testen.
