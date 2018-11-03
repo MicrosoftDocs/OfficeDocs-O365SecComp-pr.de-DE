@@ -1,5 +1,5 @@
 ---
-title: Massenerstellen und Veröffentlichen von Bezeichnungen mithilfe von PowerShell
+title: Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 ms.author: stephow
 author: stephow-msft
 ms.date: 1/17/2018
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: In Office 365 können Sie Bezeichnungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Bezeichnungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security and Compliance Center verwenden, das einzelne Erstellen von Bezeichnungen ist dagegen sehr zeitaufwändig und ineffizient. Mithilfe des folgenden Skripts und der CSV-Dateien können Sie Bezeichnungen und Bezeichnungsrichtlinien massenerstellen und veröffentlichen. Zunächst erstellen Sie eine Liste der Tabellen sowie eine Liste der Bezeichnungsrichtlinine in Excel, anschließend führen Sie eine Massenerstellung der Bezeichnungen und Bezeichnungsrichtlinien in diesen Listen mithilfe von PowerShell aus. Auf diese Weise wird das gleichzeitige Erstellen und Veröffentlichen aller Bezeichnungen vereinfacht, die für Ihren Aufbewahrungszeitraum erforderlich sind.
-ms.openlocfilehash: 43e521d937a9589b522c608aca2e75fcfc2bf569
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528950"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899666"
 ---
-# <a name="bulk-create-and-publish-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Bezeichnungen mithilfe von PowerShell
+# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 
 In Office 365 können Sie Bezeichnungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Bezeichnungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security &amp; Compliance Center verwenden, das einzelne Erstellen von Bezeichnungen ist dagegen sehr zeitaufwändig und ineffizient.
   
