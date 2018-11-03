@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Finden Sie unter Neuigkeiten in Office 365-Cloud-App-Sicherheit
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796871"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935572"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Was ist neu in Office 365-Cloud-App-Sicherheit
 
@@ -27,11 +28,11 @@ In diesem Artikel wird häufig aktualisiert, wie Features hinzugefügt oder verb
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Office 365 Cloud App-Sicherheit Version 130
 
-*Versionen 5 September 2018*
+*5 September 2018 veröffentlicht*
 
 **Freigeben mit [Microsoft Cloud App-Sicherheit 130 freizugeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
 
-- **Neue Menüleiste** Admin-Benutzeroberfläche konsistenten über Microsoft-365-Produkte bereitstellen, und aktivieren Sie leichter zwischen Microsoft Security-Lösungen von PivotTables, hat die Portal Menüleiste Cloud App-Sicherheit in der linken Seite des Bildschirms verschoben. Diese einheitliche Navigation auftreten können Sie selbst beim Verschieben von einem Microsoft Security Portal ausrichten.
+- **Neue Menüleiste** Admin-Benutzeroberfläche konsistenten über Microsoft-365-Produkte bereitstellen, und aktivieren Sie leichter zwischen Microsoft Security-Lösungen von PivotTables, hat die Portal Menüleiste Cloud App-Sicherheit in der linken Seite des Bildschirms verschoben. Diese einheitliche Navigation auftreten können Sie selbst beim Verschieben von einem Microsoft Security Portal ausrichten.<br/>![Menüleiste in Office Cloud App-Sicherheit](media/OCAS-MenuBar.png)<br/>
 
 - **Bewertung der Auswirkung OAuth-app** Sie können jetzt das Teamfeedback Cloud App-Sicherheit, um uns zu informieren, wenn es ist eine OAuth-app in Ihrer Organisation, die böswilligen scheint ermittelt senden. Dieses neue Feature können Sie in unseren Sicherheits-Community werden und OAuth app Risiko Score und Analysen zu verbessern. Weitere Informationen finden Sie unter [app-Berechtigungen verwalten](manage-app-permissions-in-ocas.md).
 
@@ -226,6 +227,6 @@ In diesem Artikel wird häufig aktualisiert, wie Features hinzugefügt oder verb
   
 [Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security](utilization-activities-for-ocas.md)
   
-[Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
 

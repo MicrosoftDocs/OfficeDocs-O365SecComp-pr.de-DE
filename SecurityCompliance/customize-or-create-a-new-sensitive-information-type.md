@@ -17,28 +17,28 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Informationen zum Ändern oder Erstellen eines neuen vertraulichen Informationstyps in Office 365 für DSGVO.
-ms.openlocfilehash: e0e217ed44c5206828468b57d778bffa28c95da3
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857283"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Anpassen oder Erstellen eines neuen vertraulichen Informationstyps
 
 Dieser Artikel enthält drei Beispiele, anhand derer gezeigt wird, wie neue vertrauliche Informationstypen in Office 365 für die DSGVO erstellt bzw. geändert werden können.
 
--   Ändern eines vorhandenen vertraulichen Informationstyps – EU-Debitkartennummer
+- Ändern eines vorhandenen vertraulichen Informationstyps – EU-Debitkartennummer
 
--   Erstellen eines neuen vertraulichen Informationstyps – E-Mail-Adresse
+- Erstellen eines neuen vertraulichen Informationstyps – E-Mail-Adresse
 
--   Erstellen eines neuen vertraulichen Informationstyps mit einer XML-Beispieldatei – Contoso-Kundennummer
+- Erstellen eines neuen vertraulichen Informationstyps mit einer XML-Beispieldatei – Contoso-Kundennummer
 
 Siehe auch:
 
--   [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](https://support.office.com/de-DE/article/Create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)
+- [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
--   [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](https://support.office.com/de-DE/article/Customize-a-built-in-sensitive-information-type-2164ce3d-4d64-4283-b6b1-b81fbe835e8e)
+- [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>Ändern eines vertraulichen Informationstyps für verbesserte Genauigkeit
 
@@ -142,7 +142,7 @@ Verwenden Sie die folgenden Ressourcen, um Abfragen mithilfe von KQL zu formulie
 
 -   [Syntaxreferenz für die Keyword Query Language (KQL) (DMC)](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Ausführen einer Inhaltssuche im Office 365 Security & Compliance Center](https://support.office.com/de-DE/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Ausführen einer Inhaltssuche im Office 365 Security & Compliance Center](https://support.office.com/de-DE/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 Die Inhaltssuche bietet eine weitere Ressource, die Sie beim Entwickeln von KQL-Abfragen und vertraulichen Informationstypen unterstützt – Schlüsselwörter. Gründe für die Verwendung der Schlüsselwortliste? Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](https://support.office.com/de-DE/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.openlocfilehash: 1cf41df5475af7ac5018cd34ea26e66ad5d668ee
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849398"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857233"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
@@ -149,7 +149,7 @@ Das vorhandene Wörterbuch wurde nun aktualisiert. Beachten Sie, dass das Feld `
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Verwenden von Schlüsselwörterbüchern in benutzerdefinierten vertraulichen Informationstypen und DLP-Richtlinien
 
-Schlüsselwörterbücher können als Bestandteil der Übereinstimmungsanforderungen für einen benutzerdefinierten vertraulichen Informationstyp verwendet werden oder direkt als vertraulicher Informationstyp. Für beides muss [ein benutzerdefinierter vertraulicher Informationstyp erstellt werden](create-a-custom-sensitive-information-type.md). Folgen Sie den Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Wenn Sie die XML haben, benötigen Sie die GUID-ID für das Wörterbuch, um dieses zu verwenden.
+Schlüsselwörterbücher können als Bestandteil der Übereinstimmungsanforderungen für einen benutzerdefinierten vertraulichen Informationstyp verwendet werden oder direkt als vertraulicher Informationstyp. Für beides muss [ein benutzerdefinierter vertraulicher Informationstyp in Office 365 Security & Compliance Center PowerShell erstellt werden](create-a-custom-sensitive-information-type-in-scc-powershell.md). Folgen Sie den Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Wenn Sie die XML haben, benötigen Sie die GUID-ID für das Wörterbuch, um dieses zu verwenden.
   
 ```
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

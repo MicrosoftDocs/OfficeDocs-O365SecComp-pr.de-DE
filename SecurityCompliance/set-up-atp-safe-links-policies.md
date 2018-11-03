@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552343"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935552"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552343"
 - Stellen Sie sicher, dass Ihre Organisation [Office 365 erweiterte Schutz](office-365-atp.md)verfügt.
     
 - Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen zum Definieren oder bearbeiten Sie Richtlinien ATP verfügen. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+- Stellen Sie sicher, dass Office-Clients konfiguriert sind, um [Moderne Authentifizierung](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) zu verwenden (Dies ist für sichere Links ATP Schutz in Office-Dokumente).
     
 - [Informieren Sie sich über Richtlinienoptionen ATP sichere Links](#learn-about-atp-safe-links-policy-options) (in diesem Artikel). 
 
-- Stellen Sie sicher, dass Office-Clients für die Verwendung von [Modernen Authentifizierung](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)konfiguriert sind.
-    
 - Können Sie bis zu 30 Minuten für die neue oder aktualisierte Richtlinie in allen Office 365-Rechenzentren verteilen.
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Schritt 2: Die sichere Links ATP-Richtlinie, die für alle Benutzer gilt definieren (oder Lesen)

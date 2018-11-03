@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. '
-ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435122"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935592"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
 
@@ -78,7 +78,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
      - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb des letzten Jahres ausgeführt wurden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Benutzer, die eine E3/Exchange Online – Plan 1-Lizenz zugewiesen sind, und haben eine zusätzliche Lizenz für Office 365 erweiterte Compliance verfügbar.
 
         > [!NOTE]
-        > Die einjährige Aufbewahrungsdauer für Audit Datensätze verfügbar sein werden bald als Bestandteil der Office 365 Preview programmieren, und wird nur für Organisationen verfügbar registriert in der Vorschau-Anwendung. Wenn längere Aufbewahrungsdauer für Audit-Datensätze in der Vorschau (und höher für allgemeine Verfügbarkeit) verfügbar ist, werden nur neuen Überwachungseinträge (für Aktivitäten ausgeführt, nachdem die längere Aufbewahrungsdauer losgelassen wird) für ein Jahr aufbewahrt werden.
+        > Die einjährige Aufbewahrungsdauer für Audit-Datensätze für E5 (oder E3 Organisationen, die erweiterte Compliance Add-on Lizenzen haben) ist derzeit nur als Teil eines Programms private Preview. In diesem Vorschauprogramm zu registrieren, um Bitte Datei eine Anforderung mit [Microsoft-Support](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) und als Beschreibung der Sie Hilfe benötigen, sind: "Langfristige Office 365 Audit Log private Preview".
 
 - Wenn Sie die Audit Log-Suche in Office 365 für Ihre Organisation zu deaktivieren möchten, können Sie den folgenden Befehl in remote-PowerShell mit Ihrer Exchange Online-Organisation verbunden ausführen:
     
@@ -117,7 +117,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
 |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
@@ -147,7 +147,7 @@ Hier ist der Prozess für die Suche im Überwachungsprotokolls in Office 365.
     > [!TIP]
     > Verwenden eine private Browsersitzung (nicht regulären Sitzung) greifen Sie auf die Office 365-Sicherheit &amp; Compliance Center, da dies die Anmeldeinformationen verhindert wird, die Sie derzeit mit angemeldet sind verwendet werden. Um eine Sitzung InPrivate-Browsen in Internet Explorer oder Microsoft Edge zu öffnen, drücken Sie STRG + UMSCHALT + P. Um eine private Browsersitzung Google Chrome (als ein incognito Fenster bezeichnet) zu öffnen, drücken Sie STRG + UMSCHALT + N. 
   
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Im linken Bereich der Sicherheit &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung**, und klicken Sie auf **Audit Log suchen**.
     
@@ -485,8 +485,8 @@ Die folgende Tabelle enthält die Administration Benutzeraktivitäten, die proto
 |Benutzer wurde hinzugefügt.  <br/> |Benutzer hinzufügen  <br/> |Ein Office 365-Benutzerkonto erstellt wurde.  <br/> |
 |Geänderte Benutzerlizenz  <br/> |Change-Benutzerlizenz  <br/> |Die Lizenz zugewiesen, die einem Benutzer, was sich geändert hat. Um herauszufinden, welche Lizenzen Änderungen wurden, finden Sie unter den entsprechenden Benutzeraktivität **aktualisiert** .<br/> |
 |Geänderte Benutzerkennwort  <br/> |Benutzerkennwort ändern  <br/> |Administrator geändert, das Kennwort das Kennwort für einen Benutzer.  <br/> |
-|Gelöschte Benutzer  <br/> |Benutzer löschen  <br/> |Ein Office 365-Benutzerkonto wurde gelöscht.  <br/> |
-|Kennwort zurücksetzen  <br/> |Kennwort zurücksetzen  <br/> |Administrator Zurücksetzen des Kennworts für einen Benutzer.  <br/> |
+|Gelöschter Benutzer  <br/> |Löschen eines Benutzers  <br/> |Ein Office 365-Benutzerkonto wurde gelöscht.  <br/> |
+|Benutzerkennwort zurücksetzen  <br/> |Benutzerkennwort zurücksetzen  <br/> |Administrator Zurücksetzen des Kennworts für einen Benutzer.  <br/> |
 |Legen Sie-Eigenschaft, die erzwingt, dass Benutzer das Kennwort ändern  <br/> |Set-Force-Benutzerkennwort ändern  <br/> |Administrator festlegen die Eigenschaft, die einen Benutzer das Ändern ihres Kennworts, das das nächste Mal Benutzer anmelden bei Office 365, erzwingt.  <br/> |
 |Lizenz-Eigenschaften festlegen  <br/> |Lizenz-Eigenschaften festlegen  <br/> |Administrator ändert die Eigenschaften einer lizenzierten einem Benutzer zugewiesen.  <br/> |
 |Aktualisierte Benutzer  <br/> |Benutzer aktualisieren  <br/> |Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos ein. Eine Liste mit den Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Benutzerattribute aktualisieren" in [Azure Active Directory Bericht Überwachungsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
@@ -700,7 +700,7 @@ Wie bereits erklärt hängt von der Aufbewahrungszeitraum für Audit Datensätze
 - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Organisationen, die ein Abonnement E3 und ein Office 365 erweiterte Compliance Add-on-Abonnement verfügen verfügbar.
 
      > [!NOTE]
-     > Die einjährige Aufbewahrungsdauer für Audit Datensätze in Organisationen verfügbar in Kürze, die in der Office 365 Preview-Anwendung registriert sind.
+     > Wie bereits erläutert, die einjährige Aufbewahrungsdauer für Audit-Datensätze für E5 (oder E3 Organisationen, die erweiterte Compliance Add-on Lizenzen haben) ist derzeit nur als Teil eines Programms private Preview. In diesem Vorschauprogramm zu registrieren, um Bitte Datei eine Anforderung mit [Microsoft-Support](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) und als Beschreibung der Sie Hilfe benötigen, sind: "Langfristige Office 365 Audit Log private Preview".
 
 Beachten Sie außerdem, dass die Dauer des Aufbewahrungszeitraums für Audit Datensätze auf Benutzerebene Lizenzierung basiert. Beispielsweise wenn ein Benutzer in Ihrer Organisation eine Lizenz für Office 365 E3 zugewiesen ist, werden dann die Überwachungseinträge für Aktivitäten, die ausgeführt werden, die von diesem Benutzer 90 Tage lang aufbewahrt. Wenn ein anderer Benutzer eine Lizenz für Office 365 E5 zugewiesen ist, werden ihre Überwachungseinträge für ein Jahr beibehalten. 
 
