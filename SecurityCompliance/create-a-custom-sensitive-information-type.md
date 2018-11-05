@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche in Office 365 Security & Compliance Center erstellen, ändern, entfernen und testen.
-ms.openlocfilehash: cd7041ee9c20038fb7cb0c337f31d7cef7f7192d
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857293"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895284"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen
 
-Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) in Office 365 umfasst zahlreiche [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md), die Sie in DLP-Richtlinien verwenden können. Diese integrierten Typen unterstützen Sie beim Erkennen und Schützen von Kreditkartennummern, Bankkontonummern, Reisepassnummern und mehr. 
+Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) in Office 365 umfasst zahlreiche integrierte [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md), die Sie in DLP-Richtlinien verwenden können. Diese integrierten Typen unterstützen Sie beim Erkennen und Schützen von Kreditkartennummern, Bankkontonummern, Reisepassnummern und mehr. 
 
 Wenn Sie jedoch verschiedene Typen vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel Mitarbeiter-IDs oder Projektnummern, die ein für Ihre Organisation spezifisches Format verwenden, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen.
 
@@ -54,20 +54,18 @@ Die wichtigsten Unterschiede werden in der folgenden Tabelle näher erläutert:
 |Benutzerdefinierte Typen für vertrauliche Informationen in der Benutzeroberfläche|Benutzerdefinierte Typen für vertrauliche Informationen in PowerShell|
 |:-----|:-----|
 |Name und Beschreibung sind in einer Sprache.|Unterstützt mehrere Sprachen für Name und Beschreibung.|
-|Unterstützt ein Muster (das primäre Muster).|Unterstützt mehrere Muster zusätzlich zu dem primären Muster.|
+|Unterstützt ein Muster.|Unterstützt mehrere Muster.|
 |Unterstützende Nachweise können Folgendes sein: <br/>• Reguläre Ausdrücke <br/>• Schlüsselwörter <br/>• Schlüsselwörterbücher|Unterstützende Nachweise können Folgendes sein: <br/>• Reguläre Ausdrücke <br/>• Schlüsselwörter <br/>• Schlüsselwörterbücher <br/>• [Integrierte DLP-Funktionen](what-the-dlp-functions-look-for.md)|
-|Der Zuverlässigkeitsgrad ist für den Typ der vertraulichen Informationen konfigurierbar.|Der Zuverlässigkeitsgrad ist für den Typ der vertraulichen Informationen und für jedes darin enthaltene einzelne Muster konfigurierbar.|
+|Benutzerdefinierte Typen vertraulicher Informationen werden zum Regelpaket namens Microsoft.SCCManaged.CustomRulePack hinzugefügt.|Sie können bis zu 10 Regelpakete erstellen, die benutzerdefinierten Typen vertraulicher Informationen enthalten.|
 |Die Musterübereinstimmung erfordert die Erkennung des primären Musters und aller unterstützenden Nachweise (der implizite UND-Operator wird verwendet).|Die Musterübereinstimmung erfordert die Erkennung des primären Musters und einer konfigurierbaren Menge unterstützender Nachweise (implizite UND- und ODER-Operatoren können verwendet werden).|
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
 - Informationen zum Öffnen des Security & Compliance Center finden Sie unter [Wechseln zum Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md).
 
-- Benutzerdefinierte Typen für vertrauliche Informationen erfordern Kenntnisse über reguläre Ausdrücke (RegEx). Weitere Informationen über das .NET-RegEx-Modul, das für die Textverarbeitung verwendet wird, finden Sie unter [Reguläre Ausdrücke in .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
+- Benutzerdefinierte Typen für vertrauliche Informationen erfordern Kenntnisse über reguläre Ausdrücke (RegEx). Weitere Informationen über das Modul Boost.RegEx (vormals als RegEx++ bezeichnet), das für die Textverarbeitung verwendet wird, finden Sie unter [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
   Der Kundendienst und Support von Microsoft kann beim Bereitstellen von benutzerdefinierten Definitionen für die Inhaltsübereinstimmung (Erstellen benutzerdefinierter Klassifizierungen oder Muster für reguläre Ausdrücke) keine Unterstützung anbieten. Die Supportmitarbeiter können eingeschränkten Support für das Feature bereitstellen (z. B. Bereitstellen von Mustern für reguläre Ausdrücke zu Testzwecken oder Hilfestellung bei der Problembehandlung eines bestehenden Musters für reguläre Ausdrücke, das nicht wie erwartet ausgelöst wird), es können jedoch keine Zusicherungen dahingehend gegeben werden, dass benutzerdefinierte Entwicklungen für die Inhaltsübereinstimmung Ihre Anforderungen oder Verpflichtungen erfüllen.
-
-- Weitere Informationen über das .NET-Regex-Modul, das für die Textverarbeitung verwendet wird, finden Sie unter [Reguläre Ausdrücke in .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
 
 - DLP verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in SharePoint Online- und OneDrive for Business-Websites. Um Ihren neuen benutzerdefinierten Typ vertraulicher Informationen in vorhandenen Inhalten zu identifizieren, muss der Inhalt erneut durchforstet werden. Inhalte werden basierend auf einem Zeitplan erneut durchforstet, Sie können aber Inhalte für eine Websitesammlung, eine Liste oder eine Bibliothek manuell erneut durchforsten. Weitere Informationen finden Sie unter [Manuelles Anfordern einer Durchforstung und erneutes Indizieren einer Website, einer Bibliothek oder einer Liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
