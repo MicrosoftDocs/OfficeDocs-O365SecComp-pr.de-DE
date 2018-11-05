@@ -33,6 +33,7 @@
 ### [Sehen Sie einen erweiterten Überblick über das Anpassen von DLP an](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
 ### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
+### [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
 ### [Dokumentfingerabdrücke](document-fingerprinting.md) 
 # Verwalten der Datengovernance        
@@ -233,7 +234,7 @@
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 # [Überwachen von Sicherheit und Compliance]()
 ## [Warnungsrichtlinien](alert-policies.md)
-### [Erstellen von Aktivitätsbenachrichtigungen](create-activity-alerts.md)
+## [Aktivitätsbenachrichtigungen](create-activity-alerts.md)
 ## [Intelligente Berichte und Einblicke im Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
 ### [Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)
 #### [Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick](from-a-detailed-report-to-an-insight.md)
