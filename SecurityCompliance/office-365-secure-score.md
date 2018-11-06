@@ -1,9 +1,9 @@
 ---
-title: Einführung des Office 365 Secure Score
+title: Office 365 Secure Score
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/23/2018
+ms.date: 11/05/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,60 +12,69 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
-description: Haben Sie sich je gefragt, wie sicher ist wirklich Office 365-Organisation? So beenden Sie eine App – viele Zeit - die Office 365 Secure Bewertung ist hier helfen. Sichere Faktor Sicherheit Ihrer Office 365-Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen analysiert und weist eine Bewertung. Betrachten Sie es als einen Credit Faktor für die Sicherheit.
-ms.openlocfilehash: 958744696e0d9d8c7e8f29b9bdc460c5aa05eb3a
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+description: Haben Sie sich je gefragt, wie sicher Ihre Organisation wirklich in Office 365 ist? Sichere Faktor ist hier helfen. Sichere Faktor Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen in Office 365 analysiert und weist eine Bewertung.
+ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450750"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999989"
 ---
-# <a name="introducing-the-office-365-secure-score"></a>Einführung des Office 365 Secure Score
+# <a name="office-365-secure-score"></a>Office 365 Secure Score
 
-Haben Sie sich je gefragt, wie sicher ist wirklich Office 365-Organisation? So beenden Sie eine App – viele Zeit - die Office 365 Secure Bewertung ist hier helfen. Sichere Faktor Sicherheit Ihrer Office 365-Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen analysiert und weist eine Bewertung. Betrachten Sie es als einen Credit Faktor für die Sicherheit.
+**Zusammenfassung** Haben Sie sich je gefragt, wie sicher Ihre Organisation wirklich in Office 365 ist? Sichere Faktor ist hier helfen. Sichere Faktor Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen in Office 365 analysiert und weist eine Bewertung. Lesen Sie diesen Artikel, um einen Überblick über Secure Score und wie Sie es verwenden können.
   
-## <a name="how-do-i-get-to-secure-score"></a>Wie erhalte ich Secure Score?
+## <a name="how-to-get-to-secure-score"></a>Wie Sie Secure integritätsbewertung abrufen
 
-Jeder Benutzer mit Administratorberechtigungen (globaler Administrator oder eine benutzerdefinierte Administratorrolle) für ein Office 365 Business Premium oder Enterprise-Abonnement, die Bewertung Secure unter zugreifen kann [https://securescore.office.com](https://securescore.office.com). Benutzer, die Admin-Rolle zugewiesen sind nicht auf Secure Score zugreifen. Jedoch können Administratoren das Tool verwenden, deren Ergebnisse mit anderen Personen in ihrer Organisation freigeben.
-  
-## <a name="how-does-it-work"></a>Wie funktioniert dies?
+Wenn Ihre Organisation verfügt ein Abonnement, die [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)oder Office 365 Business Premium enthält und Sie über die erforderlichen Berechtigungen verfügen, können Sie Ihrer Organisation sichere Score Vorsichtsmaßnahmen anzeigen [https://securescore.office.com](https://securescore.office.com). 
 
-Sichern Sie die Zahlen Score, welche Office 365-Dienste (wie OneDrive, SharePoint und Exchange) verwenden Sie befasst sich mit Ihrer Einstellungen und Aktivitäten und miteinander verglichen, an einer Grundlinie von Microsoft hergestellt. Erhalten Sie eine Bewertung basierend auf wie ausgerichtete Sie mit bewährten Methoden für die Sicherheit sind.
+Alternativ können Sie besuchen, die Sicherheit und Compliance Center ([https://protection.office.com](https://protection.office.com)), in der Sie ein Secure Score-Widget finden, die Sie mit Ihr aktuelles Ergebnis bereitstellt.
+
+![Sichere Score widget](media/SecureScoreWidget-o365.png)
+
+Das Widget enthält einen Link zur Microsoft Secure Bewertung an, die Sie zum Dashboard Secure Score für Office 365 akzeptiert.
+
+![Sichere Score-dashboard](media/SecureScore-WelcomeScreen.png)
+
+> [!NOTE]
+> Sie müssen ein Office 365-Administrator, wie ein globaler Administrator oder Sicherheitsadministrator, Secure Score Zugriff auf sein.
   
-![Sichere Score Zusammenfassung, die auf der Startseite des Office 365 Secure Score Tools angezeigt wird](media/151de499-259d-45e3-9706-7dae0bfb9f9c.png)
+## <a name="how-it-works"></a>Und so funktioniert es
+
+Sichern Sie die Score Zahlen, was Office 365-Diensten verwendeten (beispielsweise OneDrive, SharePoint und Exchange) klicken Sie dann befasst sich mit Ihrer Einstellungen und Aktivitäten und miteinander verglichen, an einer Grundlinie von Microsoft hergestellt. Erhalten Sie eine Bewertung basierend auf wie ausgerichtete Sie mit bewährten Methoden für die Sicherheit sind.
   
-Wenn Sie Ihr Ergebnis zu verbessern möchten, lesen Sie die Warteschlange Aktion, um herauszufinden, was Sie tun können, um Hilfe zur Verbesserung der Sicherheit und die Risiken.
+Sie erhalten auch Empfehlungen zu den erforderlichen Schritten, die Sie ergreifen können, um Ihr Unternehmen zu verbessern. 
   
-![Aktionen Warteschlange im Office 365 Secure Score-tool](media/23757303-274c-46c7-a7ee-b4e6f2f9eca0.png)
+![Aktionen Warteschlange im Office 365 Secure Score-tool](media/SecureScore-ActionsToTake.png)
   
-Erweitern Sie eine Aktion, um zu erfahren, welche Bedrohungen es helfen Sie zum Schutz und zur wie erzielen Sie erledigt.
+Erweitern Sie eine Aktion, um zu erfahren, welche Schritte an, die Gefahren, die geschützt werden müssen Sie aus, und zeigt, wie viele Ihre Punktzahl erhöht wird, nachdem Sie die Empfehlung.
   
-![Erweiterte Aktion im Office 365 Secure Score-tool](media/515d45f1-c554-455f-b251-ab62f712bca3.png)
+![Erweiterte Aktion im Office 365 Secure Score-tool](media/SecureScore-DetailedActionToTake.png)
   
-Um die Auswirkungen von Ihren Aktionen auf Sicherheit Ihrer Organisation anzuzeigen, wechseln Sie zur Seite **Score Analyzer** , und überprüfen Sie den Verlauf. 
+Um die Auswirkungen von Ihren Aktionen auf Sicherheit Ihrer Organisation anzuzeigen, wählen Sie die Registerkarte **Score Analyzer** , und überprüfen Sie den Verlauf. 
   
-![Faktor Analyzer Registerkarte des Office 365 Secure Score-Tools](media/f38f4f0c-fdf7-4004-8eb3-53e5064cd4f7.png)
+![Faktor Analyzer Registerkarte des Office 365 Secure Score-Tools](media/SecureScore-ScoreAnalyzer-7days.png)
   
-Klicken Sie auf eine beliebige Datenpunkt, um eine Aufschlüsselung der Ihr Ergebnis dieses Tages finden Sie unter. Sie können einen Bildlauf nach unten zu finden Sie unter welche Steuerelemente aktiviert wurden und wie viele Sie Ertragswert dieses Tages für jedes Steuerelement verweist.
+Unter dem Diagramm sehen Sie eine Lsit von Faktoren und Aktionen nach Kategorie.
   
-![Diagramm auf der Score Analyzer Registerkarte zeigt einen Datenpunkt ausgewählt](media/b8427837-2ed9-4319-ba71-7d03bd99129c.png)
+![Diagramm auf der Score Analyzer Registerkarte zeigt einen Datenpunkt ausgewählt](media/SecureScore-Analyzer-breakdownbelowchart.png)
   
-## <a name="how-will-it-help-me"></a>Wie wird es mir helfen?
+## <a name="how-secure-score-helps"></a>Schutzmechanismen in Secure Score
 
 Verwenden von Secure Bewertung hilft Ihrer Organisation Sicherheit erhöhen, indem Sie die integrierte Sicherheit bei Verwendung von Features in Office 365 (von denen Sie bereits erworben haben aber möglicherweise nicht bekannt) fördern. Weitere Informationen zu diesen Features wie die Verwendung des helfen Sie erteilen Teil Beachten Sie, dass Sie die richtigen Maßnahmen für Ihre Organisation vor Angriffen zu schützen einnehmen.
   
-Aber nicht einfach Probieren Sie es. Kunden, die mithilfe von Secure Score haben gesehen, dem Faktor 5 Mal mehr als Kunden zu erhöhen, die es nicht verwenden. (Die Anhebung der Score entspricht mit den Sicherheitsfunktionen in ihren Organisationen verwendet wird.)
+Aber nicht einfach Probieren Sie es. Kunden, die mithilfe von Secure Score haben ihre Score fünfmaliges mehr als Kunden zu erhöhen, die sie nutzen sind nicht sichtbar. (Die Anhebung der dem Faktor entspricht mit den Sicherheitsfunktionen in ihren Organisationen verwendet wird.)
   
 Checken Sie unseren [Blog-Beitrag](https://go.microsoft.com/fwlink/?linkid=836898) , um mehr zu erfahren. 
   
 > [!NOTE]
-> Die Bewertung Secure ist nicht express eine absolute Maßeinheit des wie wahrscheinlich generiertes abgerufen werden sollen. Dieser drückt des Umfang an dem Steuerelemente eingeführt haben die generiertes wird das Risiko offset können. Kein Dienst kann sicherstellen, dass Sie nicht verletzt werden, und die Bewertung Secure nicht als keinerlei Garantie interpretiert werden soll. 
+> Sichere Score ist nicht express eine absolute Maßeinheit des wie wahrscheinlich generiertes abgerufen werden sollen. Dieser drückt des Umfang an dem Steuerelemente eingeführt haben die generiertes wird das Risiko offset können. Kein Dienst kann sicherstellen, dass Sie nicht verletzt werden, und Secure Score nicht als keinerlei Garantie interpretiert werden soll. 
   
 ## <a name="faqs"></a>FAQ
 
 ### <a name="who-can-use-secure-score"></a>Wer Secure Score verwenden können?
 
-Jeder Benutzer mit Administratorberechtigungen (globaler Administrator oder eine benutzerdefinierte Administratorrolle) für ein Office 365 Business Premium oder Enterprise-Abonnement, die Bewertung Secure unter zugreifen kann [https://securescore.office.com](https://securescore.office.com). Benutzer, die Admin-Rolle zugewiesen sind nicht auf Secure Score zugreifen. Jedoch können Administratoren das Tool verwenden, deren Ergebnisse mit anderen Personen in ihrer Organisation freigeben. Wir sind einschließlich andere, nicht-Administrator-Rollen in der Berechtigungsliste in der Zukunft betrachtet. Wenn bestimmte Rollen uns zu berücksichtigen möchten sind, teilen Sie uns durch das Veröffentlichen auf der [Office-Sicherheit, Datenschutz &amp; Compliance Community](https://go.microsoft.com/fwlink/?linkid=836898).
+Jeder Benutzer mit Administratorberechtigungen (globaler Administrator oder eine benutzerdefinierte Administratorrolle) für ein Office 365 Enterprise, Microsoft 365 Business oder Office 365 Business Premium-Abonnement zugreifen kann, Secure Punkte zu [https://securescore.office.com](https://securescore.office.com). Benutzer, die Admin-Rolle zugewiesen sind nicht auf Secure Score zugreifen. Jedoch können Administratoren das Tool verwenden, deren Ergebnisse mit anderen Personen in ihrer Organisation freigeben. Wir sind einschließlich andere, nicht-Administrator-Rollen in der Berechtigungsliste in der Zukunft betrachtet. Wenn bestimmte Rollen uns zu berücksichtigen möchten sind, teilen Sie uns durch das Veröffentlichen auf der [Office-Sicherheit, Datenschutz &amp; Compliance Community](https://go.microsoft.com/fwlink/?linkid=836898).
   
 ### <a name="what-does-not-scored-mean"></a>Funktionsweise [nicht bewertet] bedeuten?
 
@@ -85,11 +94,11 @@ Klicken Sie auf der Seite **Score Analyzer** auf einen Datenpunkt für einen bes
   
 ### <a name="does-the-secure-score-measure-my-risk-of-getting-breached"></a>Messen die Bewertung Secure Meine Risiko erste generiertes?
 
-In kurz und Nein. Die Bewertung Secure ist nicht express eine absolute Maßeinheit des wie wahrscheinlich generiertes abgerufen werden sollen. Dieser drückt des Umfang an dem Features eingeführt haben, die das Risiko wird generiertes versetzt werden können. Kein Dienst kann sicherstellen, dass Sie nicht verletzt werden, und die Bewertung Secure nicht als keinerlei Garantie interpretiert werden soll.
+In kurz und Nein. Sichere Score ist nicht express eine absolute Maßeinheit des wie wahrscheinlich generiertes abgerufen werden sollen. Dieser drückt des Umfang an dem Features eingeführt haben, die das Risiko wird generiertes versetzt werden können. Kein Dienst kann sicherstellen, dass Sie nicht verletzt werden, und die Bewertung Secure nicht als keinerlei Garantie interpretiert werden soll.
   
 ### <a name="how-should-i-interpret-my-score"></a>Wie sollte ich meine Score interpretieren?
 
-Erhalten Sie Punkte für die Konfiguration den Sicherheitsfeatures empfohlen oder das Ausführen von Aufgaben im Zusammenhang mit der Sicherheit (wie Lesen Berichte). Einige Aktionen werden für die teilweise Vervollständigung wie Multi-Factor Authentication (mehrstufiger Authentifizierung das) für Ihre Benutzer aktivieren bewertet. Ihr Secure Ergebnis ist direkt repräsentativ für die Microsoft Security-Dienste, den, die Sie verwenden. Denken Sie daran, dass Sicherheit immer mit Verwendbarkeit abgeglichen werden sollte. Alle Security-Steuerelemente verfügen über eine Komponente des Benutzers Auswirkung. Steuerelemente mit geringer Benutzer Auswirkung sollte wenig keine Auswirkung auf die täglichen Betrieb Ihrer Benutzer.
+Erhalten Sie Punkte für die Konfiguration den Sicherheitsfeatures empfohlen oder das Ausführen von Aufgaben im Zusammenhang mit der Sicherheit (wie Berichte anzeigen). Einige Aktionen werden für die teilweise Vervollständigung wie Multi-Factor Authentication (mehrstufiger Authentifizierung das) für Ihre Benutzer aktivieren bewertet. Ihr Secure Ergebnis ist direkt repräsentativ für die Microsoft Security-Dienste, den, die Sie verwenden. Denken Sie daran, dass Sicherheit immer mit Verwendbarkeit abgeglichen werden sollte. Alle Security-Steuerelemente verfügen über eine Komponente des Benutzers Auswirkung. Steuerelemente mit geringer Benutzer Auswirkung sollte wenig keine Auswirkung auf die täglichen Betrieb Ihrer Benutzer.
   
 Um aufgezeichnete Score anzuzeigen, wechseln Sie zur Seite **Score Analyzer** . Wählen Sie ein bestimmtes Datum finden Sie unter welche Steuerelemente für aktiviert wurden, dass Tag und was Sie für jede erhaltenen verweist. 
   
@@ -103,10 +112,12 @@ Wenn Sie Probleme haben, informieren Sie uns durch das Veröffentlichen auf der 
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>Meine Organisation hat nur bestimmte Sicherheitsfeatures. Wirkt Bewertung sich?
 
-Die Bewertung Secure berechnet Ihr Ergebnis basierend auf den Diensten, die Sie erworben haben. Angenommen, wenn Sie nur einen Exchange Online-Plan erworben haben, werden nicht Sie für SharePoint Online-Sicherheitsfeatures bewertet werden. Die als Nenner für die Bewertung ist die Summe der alle Baselines für die Steuerelemente, die für die Produkte gelten, die Sie erworben haben. Der Zähler ist die Summe aller Steuerelemente, für die Sie abgeschlossen, oder teilweise abgeschlossen, die Aktionen für das jeweilige Steuerelement zu erfüllen.
+Sichere Score berechnet Ihr Ergebnis basierend auf den Diensten, die Sie erworben haben. Angenommen, wenn Sie nur einen Exchange Online-Plan erworben haben, werden nicht Sie für SharePoint Online-Sicherheitsfeatures bewertet werden. Die als Nenner für die Bewertung ist die Summe der alle Baselines für die Steuerelemente, die für die Produkte gelten, die Sie erworben haben. Der Zähler ist die Summe aller Steuerelemente, für die Sie abgeschlossen, oder teilweise abgeschlossen, die Aktionen für das jeweilige Steuerelement zu erfüllen.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Übersicht über die Sicherheit-dashboard](security-dashboard.md)
+
+[Welches Abonnement habe ich?](https://docs.microsoft.com/office365/admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide)
   
 

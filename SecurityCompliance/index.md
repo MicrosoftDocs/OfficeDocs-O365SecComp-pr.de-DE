@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9a8e7bdbd176c5852c43b35c9c56cd8f0aae58fb
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: af40426f626920ccd2c247a671a57958044d0388
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002662"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999972"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365-Sicherheit und Compliance
 
@@ -35,7 +35,7 @@ Wenn Ihre Organisation muss Ihre Daten zu schützen oder rechtliche oder behörd
                     </div>
                     <div class="cardText">
                         <h3>Erste Schritte – 30 Tage</h3>
-                <p>Diese grundlegenden Sicherheit und Einhaltung von Bestimmungen Aufgaben schnell ausgeführt werden können, und eine geringe Auswirkung auf Benutzer haben: <br> - <a href="https://securescore.office.com" target="_blank">Kontrollkästchen sicheren Score</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Aktivieren der postfachüberwachungsprotokollierung</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Konfigurieren Sie die Mandanten-Sicherheit</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Verbinden von Cloud-App-Sicherheit</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Aktivieren von Azure AD-Schutz</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Schützen von SharePoint-Websites und Dateien</a> <br> - <a href="configure-supervision-policies.md">Aktivieren Sie die Richtlinie einer Daten-Steuerung</a> </p>
+                <p>Diese grundlegenden Sicherheit und Einhaltung von Bestimmungen Aufgaben schnell ausgeführt werden können, und eine geringe Auswirkung auf Benutzer haben: <br> - <a href="office-365-secure-score.md" target="_blank">Kontrollkästchen sicheren Score</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Aktivieren der postfachüberwachungsprotokollierung</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Konfigurieren Sie die Mandanten-Sicherheit</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Verbinden von Cloud-App-Sicherheit</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Aktivieren von Azure AD-Schutz</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Schützen von SharePoint-Websites und Dateien</a> <br> - <a href="configure-supervision-policies.md">Aktivieren Sie die Richtlinie einer Daten-Steuerung</a> </p>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@ Wenn Ihre Organisation muss Ihre Daten zu schützen oder rechtliche oder behörd
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Mehr als 90 Tage</h3>
+                        <h3>Nach 90 Tagen</h3>
                         <p>Dies sind wichtige Sicherheitsmaßnahmen, die auf vorherigen Arbeit zu erstellen:<br>
                         - <a href="https://securescore.office.com" target="_blank">Überprüfen Sie Ihre sichere Punktzahl</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Sichere Systemzugriff implementieren</a><br>
