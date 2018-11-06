@@ -3,7 +3,7 @@ title: Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoft
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,114 +15,76 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.
-ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
+ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857243"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999975"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a><span data-ttu-id="f3d38-104">Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware</span><span class="sxs-lookup"><span data-stu-id="f3d38-104">Zero-hour auto purge - protection against spam and malware</span></span>
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a><span data-ttu-id="0acd1-104">Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware</span><span class="sxs-lookup"><span data-stu-id="0acd1-104">Zero-hour auto purge - protection against spam and malware</span></span>
 
-<span data-ttu-id="f3d38-p102">Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.</span><span class="sxs-lookup"><span data-stu-id="f3d38-p102">Zero-hour auto purge (ZAP) is an email protection feature that detects messages with spam or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless. How ZAP does this depends on the type of malicious content detected.</span></span>
-  
-<span data-ttu-id="f3d38-107">ZAP ist mit Exchange Online Protection, die mit einem beliebigen Office 365-Abonnement enthalten ist, die Exchange Online-Postfächer enthält standardmäßig verfügbar.</span><span class="sxs-lookup"><span data-stu-id="f3d38-107">ZAP is available with the default Exchange Online Protection that is included with any Office 365 subscription that contains Exchange Online mailboxes.</span></span>
-  
-## <a name="how-does-zap-work"></a><span data-ttu-id="f3d38-108">Wie funktioniert ZAP?</span><span class="sxs-lookup"><span data-stu-id="f3d38-108">How does ZAP work?</span></span>
+## <a name="overview"></a><span data-ttu-id="0acd1-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="0acd1-105">Overview</span></span>
 
-<span data-ttu-id="f3d38-p103">Office 365 aktualisiert Anti-Spam-Modul- und Malware-Signaturen in Echtzeit auf täglicher Basis. Jedoch könnte die Benutzer weiterhin bösartige Nachrichten an ihre Posteingänge für eine Vielzahl von Gründe, wenn der Inhalt weaponized wurde zu einem Zeitpunkt, nachdem es zuerst an Benutzer übermittelt wurde erhalten. Entfernen von Adressen dies durch die Überwachung ständig mit Office 365 Spam und Malware Signaturen, aktualisiert können und daher suchen und Entfernen zuvor bereitgestellte Nachrichten bereits im Posteingang. Für e-Mail-Nachrichten, die bereits als Spam erkannt wurde, verschiebt ZAP ungelesene Nachrichten an die Junk-e-Mail-Ordner des Benutzers. Für neu erkannte Schadsoftware entfernt ZAP Anlagen aus der e-Mail-Nachricht, unabhängig davon, ob die e-Mail-Nachricht gelesen wurde. Umgekehrt gilt für Nachrichten, die fälschlicherweise als bösartige klassifiziert wurden.</span><span class="sxs-lookup"><span data-stu-id="f3d38-p103">Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis. However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including when the content was weaponized at a time after it was first delivered to users. ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures, and can therefore find and remove previously delivered messages already in inboxes. For mail that was already identified as spam, ZAP moves unread messages to the user's Junk mail folder. For newly detected malware, ZAP removes the attachments from the email message, regardless of whether the mail was read or not. The reverse is true for messages that were incorrectly classified as malicious.</span></span>
+<span data-ttu-id="0acd1-p102">Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.</span><span class="sxs-lookup"><span data-stu-id="0acd1-p102">Zero-hour auto purge (ZAP) is an email protection feature that detects messages with spam or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless. How ZAP does this depends on the type of malicious content detected.</span></span>
   
-<span data-ttu-id="f3d38-115">Die ZAP-Aktion ist nahtlos, für den Postfachbenutzer, kann er nicht informiert wird, dass die e-Mail-Nachricht verschoben wurde.</span><span class="sxs-lookup"><span data-stu-id="f3d38-115">The ZAP action is seamless for the mailbox user, he or she is not notified the mail has been moved.</span></span>
-  
-<span data-ttu-id="f3d38-116">Listen, [e-Mail-Flussregeln](https://go.microsoft.com/fwlink/p/?LinkId=722755)und Endbenutzer Regeln zulassen oder zusätzliche Filter haben Vorrang vor ZAP.</span><span class="sxs-lookup"><span data-stu-id="f3d38-116">Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755), and end user rules or additional filters take precedence over ZAP.</span></span>
-  
- <span data-ttu-id="f3d38-117">**Inhalt dieses Artikels:**</span><span class="sxs-lookup"><span data-stu-id="f3d38-117">**In this article:**</span></span>
-  
-> [<span data-ttu-id="f3d38-118">Legen Sie die Richtlinie für Spam-filter</span><span class="sxs-lookup"><span data-stu-id="f3d38-118">Set spam filter policy</span></span>](zero-hour-auto-purge.md#BK_SetSpam)
-    
-> [<span data-ttu-id="f3d38-119">Überprüfen Sie, ob ZAP Ihrer Nachricht verschoben.</span><span class="sxs-lookup"><span data-stu-id="f3d38-119">See if ZAP moved your message</span></span>](zero-hour-auto-purge.md#BK_DidZAPMove)
-    
-> [<span data-ttu-id="f3d38-120">ZAP deaktivieren</span><span class="sxs-lookup"><span data-stu-id="f3d38-120">Disable ZAP</span></span>](zero-hour-auto-purge.md#BK_Posh)
-    
-> [<span data-ttu-id="f3d38-121">Häufig gestellte Fragen</span><span class="sxs-lookup"><span data-stu-id="f3d38-121">FAQ</span></span>](zero-hour-auto-purge.md#BK_FAQ)
-    
-## <a name="working-with-zap"></a><span data-ttu-id="f3d38-122">Arbeiten mit ZAP</span><span class="sxs-lookup"><span data-stu-id="f3d38-122">Working with ZAP</span></span>
+<span data-ttu-id="0acd1-108">ZAP ist mit Exchange Online Protection, die mit einem beliebigen Office 365-Abonnement enthalten ist, die Exchange Online-Postfächer enthält standardmäßig verfügbar.</span><span class="sxs-lookup"><span data-stu-id="0acd1-108">ZAP is available with the default Exchange Online Protection that is included with any Office 365 subscription that contains Exchange Online mailboxes.</span></span>
 
-<span data-ttu-id="f3d38-123">ZAP ist standardmäßig aktiviert, aber Sie müssen sicherstellen, dass eine Reihe von Bedingungen erfüllt sind:</span><span class="sxs-lookup"><span data-stu-id="f3d38-123">ZAP is turned on by default, but you do have to make sure a couple of conditions are met:</span></span>
+<span data-ttu-id="0acd1-109">ZAP ist standardmäßig aktiviert, jedoch müssen die folgenden Bedingungen erfüllt sein:</span><span class="sxs-lookup"><span data-stu-id="0acd1-109">ZAP is turned on by default, but the folowing conditions must be met:</span></span>
   
-- <span data-ttu-id="f3d38-124">Richtlinie für Spam-Filter wird auf die [Nachricht in Junk-e-Mail-Ordner verschieben](zero-hour-auto-purge.md#BK_SetSpam)festgelegt.</span><span class="sxs-lookup"><span data-stu-id="f3d38-124">Spam filter policy is set to [Move message to Junk Email folder](zero-hour-auto-purge.md#BK_SetSpam).</span></span>
-    
-    <span data-ttu-id="f3d38-125">Sie können auch eine neue Richtlinie des Spam-Filter erstellen, die nur für eine Gruppe von Benutzern angewendet wird, wenn Sie nicht möchten, dass alle Postfächer von ZAP überwachten sein.</span><span class="sxs-lookup"><span data-stu-id="f3d38-125">You can also create a new spam filter policy that applies only to a set of users if you don't want all mailboxes to be screened by ZAP.</span></span>
-    
-- <span data-ttu-id="f3d38-126">Des Benutzers [Optionen \> Junk-e-Mail-](https://support.office.com/article/068FA430-F8D7-4518-A8DA-8BC74958F05F).</span><span class="sxs-lookup"><span data-stu-id="f3d38-126">The user's [Options \> Junk Email](https://support.office.com/article/068FA430-F8D7-4518-A8DA-8BC74958F05F).</span></span>
-    
-<span data-ttu-id="f3d38-127">Wenn Sie [überprüfen, ob ZAP Ihre Nachricht verschoben](zero-hour-auto-purge.md#BK_DidZAPMove)möchten, können Sie das Exchange Online Tool für die nachrichtenablaufverfolgung.</span><span class="sxs-lookup"><span data-stu-id="f3d38-127">If you want [to see if ZAP moved your message](zero-hour-auto-purge.md#BK_DidZAPMove), you can use the Exchange Online message trace tool.</span></span>
+- <span data-ttu-id="0acd1-110">**Spam-Aktion** ist eine **Nachricht in Junk-e-Mail-Ordner verschieben**festlegen.</span><span class="sxs-lookup"><span data-stu-id="0acd1-110">**Spam action** is set to **Move message to Junk Email folder**.</span></span> <br/><span data-ttu-id="0acd1-111">Sie können auch eine neue Richtlinie des Spam-Filter erstellen, die nur für eine Gruppe von Benutzern angewendet wird, wenn Sie nicht möchten, dass alle Postfächer von ZAP überwachten sein.</span><span class="sxs-lookup"><span data-stu-id="0acd1-111">You can also create a new spam filter policy that applies only to a set of users if you don't want all mailboxes to be screened by ZAP.</span></span>
+
+- <span data-ttu-id="0acd1-p103">Benutzer haben ihre standardmäßige Junk-e-Mail-Einstellungen gespeichert und junk-e-Mail-Schutz nicht deaktiviert haben. (Informationen zu den Benutzeroptionen in Outlook finden Sie unter [Ändern der Schutz in den Junk-e-Mail-Filter](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) .)</span><span class="sxs-lookup"><span data-stu-id="0acd1-p103">Users have kept their default junk mail settings, and have not turned off junk email protection. (See [Change the level of protection in the Junk Email Filter](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) for details about user options in Outlook.)</span></span> 
   
-<span data-ttu-id="f3d38-128">Administratoren können auch [Deaktivieren ZAP](zero-hour-auto-purge.md#BK_Posh) mithilfe von PowerShell.</span><span class="sxs-lookup"><span data-stu-id="f3d38-128">Admins can also [disable ZAP](zero-hour-auto-purge.md#BK_Posh) by using PowerShell.</span></span> 
+## <a name="how-does-zap-work"></a><span data-ttu-id="0acd1-114">Wie funktioniert ZAP?</span><span class="sxs-lookup"><span data-stu-id="0acd1-114">How does ZAP work?</span></span>
+
+<span data-ttu-id="0acd1-p104">Office 365 aktualisiert Anti-Spam-Modul- und Malware-Signaturen in Echtzeit auf täglicher Basis. Jedoch könnte die Benutzer weiterhin bösartige Nachrichten an ihre Posteingänge für eine Vielzahl von Gründen, einschließlich, wenn Inhalte nach der Übermittlung an Benutzer weaponized ist erhalten. Entfernen Sie Adressen dies durch die Überwachung ständig mit Office 365 Spam und Malware Signaturen aktualisiert. ZAP kann suchen und Entfernen zuvor zugestellte Nachrichten, die bereits im Posteingang Benutzer sind.</span><span class="sxs-lookup"><span data-stu-id="0acd1-p104">Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis. However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users. ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures. ZAP can find and remove previously delivered messages that are already in users' inboxes.</span></span> 
+- <span data-ttu-id="0acd1-119">Für e-Mail-Nachrichten, die als Spam gekennzeichnet ist, verschiebt ZAP ungelesene Nachrichten an Benutzer Junk-e-Mail-Ordner.</span><span class="sxs-lookup"><span data-stu-id="0acd1-119">For mail that is identified as spam, ZAP moves unread messages to users' Junk mail folder.</span></span> 
+- <span data-ttu-id="0acd1-120">Für neu erkannte Schadsoftware entfernt ZAP Anlagen in e-Mail-Nachrichten, unabhängig davon, ob die e-Mail-Nachricht gelesen wurde.</span><span class="sxs-lookup"><span data-stu-id="0acd1-120">For newly detected malware, ZAP removes attachments from email messages, regardless of whether the email has been read.</span></span> 
   
- <span data-ttu-id="f3d38-129">**Richtlinie für Spam-Filter festlegen**</span><span class="sxs-lookup"><span data-stu-id="f3d38-129">**To set spam filter policy**</span></span>
+<span data-ttu-id="0acd1-121">Die ZAP-Aktion ist für den Postfachbenutzer nahtlos. Sie werden nicht benachrichtigt, wenn eine e-Mail-Nachricht verschoben wird.</span><span class="sxs-lookup"><span data-stu-id="0acd1-121">The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved.</span></span>
   
-1. <span data-ttu-id="f3d38-130">Melden Sie sich bei der [Where zur Anmeldung bei Office 365 für Unternehmen](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) , und wählen Sie **Protection** \> **Spam-Filter**.</span><span class="sxs-lookup"><span data-stu-id="f3d38-130">Sign in to the [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) and choose **protection** \> **spam filter**.</span></span> 
-    
-    ![In der Exchange-Verwaltungskonsole "Schutz" und dann Spam-filter](media/0463c879-63fa-4a6c-9b03-e980d5ef3954.PNG)
+<span data-ttu-id="0acd1-122">Listen, [e-Mail-Flussregeln](https://go.microsoft.com/fwlink/p/?LinkId=722755)und Endbenutzer Regeln zulassen oder zusätzliche Filter haben Vorrang vor ZAP.</span><span class="sxs-lookup"><span data-stu-id="0acd1-122">Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755), and end user rules or additional filters take precedence over ZAP.</span></span>
   
-2. <span data-ttu-id="f3d38-132">Wählen Sie die Filterrichtlinie, die Sie anpassen möchten, oder wählen Sie **Hinzufügen**![Symbol hinzufügen](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) einen neuen Anwendungspool erstellen.</span><span class="sxs-lookup"><span data-stu-id="f3d38-132">Either choose the filter policy you want to adjust, or choose **add**![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) to create a new one.</span></span> 
-    
-    <span data-ttu-id="f3d38-p104">In der vorherigen Screenshot ist die Richtlinie namens "Default", aber wenn Sie zusätzliche Spam Filterrichtlinien erstellen Sie können Geben sie einen anderen Namen. Sie können nur eine begrenzte Auswahl von Benutzern auch die Richtlinie zuweisen.</span><span class="sxs-lookup"><span data-stu-id="f3d38-p104">In the previous screen shot, the policy is named "Default", but if you create additional spam filter policies you can give them a different name. You can also apply the policy to only a limited set of users.</span></span>
-    
-3. <span data-ttu-id="f3d38-135">Klicken Sie im Richtlinienfenster wählen Sie **Spam und Massen-Aktionen**, und stellen Sie sicher, dass **Spam** **Verschieben**der Nachricht an die Junk-e-Mail-Ordner festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f3d38-135">In the policy window, choose **spam and bulk actions**, and make sure that **Spam** is set to **Move message to Junk Email folder**.</span></span> 
-    
-    <span data-ttu-id="f3d38-136">Wenn Sie **Speichern** zu diesem Zeitpunkt auswählen, gilt die Richtlinie zu Ihrem Office 365-Mandanten.</span><span class="sxs-lookup"><span data-stu-id="f3d38-136">If you choose **Save** at this point, the policy applies to your Office 365 tenant.</span></span> 
-    
-    ![Festlegen von Spam und Massen-Aktionen, die Nachricht in Junk-e-Mail-Ordner verschieben](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+## <a name="to-review-or-set-up-a-spam-filter-policy"></a><span data-ttu-id="0acd1-123">Um zu überprüfen, oder richten Sie eine Spam-Filter-Richtlinie</span><span class="sxs-lookup"><span data-stu-id="0acd1-123">To review or set up a spam filter policy</span></span>
   
-4. <span data-ttu-id="f3d38-p105">Wenn Sie eine neue Richtlinie erstellt und die Richtlinie nur einen Satz von Benutzer gelten sollen, Scroll **Angewendet auf** Abschnitt Filter im Fenster Richtlinie und in den Menüsteuerelementen im wählen Sie die **Empfänger**, **Domäne**oder **Gruppenmitgliedschaften** Sie Möchten Sie die Richtlinie angewendet werden soll. Sie können auch zusätzliche Bedingungen und Ausnahmen festlegen.</span><span class="sxs-lookup"><span data-stu-id="f3d38-p105">If you created a new policy, and you want to apply the policy to only a set of users, scroll to the **Applied To** section in the policy filter window, and in the menu controls choose the **recipients**, **domain**, or **group memberships** you want to apply the policy to. You can also set additional conditions and exceptions.</span></span> 
+1. <span data-ttu-id="0acd1-124">Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365.</span><span class="sxs-lookup"><span data-stu-id="0acd1-124">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365.</span></span>
+2. <span data-ttu-id="0acd1-125">Wählen Sie unter **Threat Management** **Anti-Spam**aus.</span><span class="sxs-lookup"><span data-stu-id="0acd1-125">Under **Threat management**, choose **Anti-spam**.</span></span>
+3. <span data-ttu-id="0acd1-126">Überprüfen Sie die Standardeinstellungen.</span><span class="sxs-lookup"><span data-stu-id="0acd1-126">Review the standard settings.</span></span> 
+4. <span data-ttu-id="0acd1-p105">Wenn Sie Ihre Einstellungen anpassen möchten, wählen Sie die Registerkarte **Benutzerdefiniert** aus, und aktivieren Sie **Benutzerdefinierte Einstellungen**. Bearbeiten Sie Ihre Einstellungen, und wenn Sie möchten, wählen Sie **+ Erstellen einer Richtlinie** um eine neue Richtlinie hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="0acd1-p105">If you want to customize your settings, select the **Custom** tab, and turn on **Custom settings**. Edit your settings and if you want, choose **+ Create a policy** to add a new policy.</span></span> 
     
-    ![Wählen Sie im Abschnitt angewendet auf die Empfänger](media/19ca10db-c0f4-432c-b3de-ad4101a23de6.PNG)
+## <a name="to-see-if-zap-moved-your-message"></a><span data-ttu-id="0acd1-129">Um festzustellen, ob ZAP Ihrer Nachricht verschoben.</span><span class="sxs-lookup"><span data-stu-id="0acd1-129">To see if ZAP moved your message</span></span>
+
+<span data-ttu-id="0acd1-130">Wenn um festzustellen, ob ZAP Ihre Nachricht verschoben werden soll, können Sie entweder die [Threat Protection Statusbericht](view-email-security-reports.md#threat-protection-status-report-new) (oder [Threat Explorer](use-explorer-in-security-and-compliance.md)).</span><span class="sxs-lookup"><span data-stu-id="0acd1-130">If you want to see if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report-new) (or [Threat Explorer](use-explorer-in-security-and-compliance.md)).</span></span>
+    
+## <a name="to-disable-zap"></a><span data-ttu-id="0acd1-131">So deaktivieren Sie ZAP</span><span class="sxs-lookup"><span data-stu-id="0acd1-131">To disable ZAP</span></span>
   
-    <span data-ttu-id="f3d38-141">Wählen Sie die Richtlinie auf die ausgewählten Benutzer anwenden **zu speichern** .</span><span class="sxs-lookup"><span data-stu-id="f3d38-141">Choose **Save** to apply the policy to the selected users.</span></span> 
+<span data-ttu-id="0acd1-132">Wenn Sie deaktivieren möchten für Ihre Office 365-Mandanten entfernen, oder eine Gruppe von Benutzern, verwenden Sie den **ZapEnabled** -Parameter des [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), ein EOP-Cmdlet.</span><span class="sxs-lookup"><span data-stu-id="0acd1-132">If you want to disable ZAP for your Office 365 tenant, or a set of users, use the **ZapEnabled** parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), an EOP cmdlet.</span></span>
     
- <span data-ttu-id="f3d38-142">**Um festzustellen, ob ZAP Ihrer Nachricht verschoben.**</span><span class="sxs-lookup"><span data-stu-id="f3d38-142">**To see if ZAP moved your message**</span></span>
-  
-- <span data-ttu-id="f3d38-143">[Feststellen und beheben Probleme bei der e-Mail-Übermittlung als ein Office 365 für Unternehmen Admin](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6) können Sie ermitteln, ob die Nachricht vom ZAP verschoben wurde:</span><span class="sxs-lookup"><span data-stu-id="f3d38-143">You can use the [Find and fix email delivery issues as an Office 365 for business admin](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6) to determine if the message was moved by ZAP:</span></span> 
+<span data-ttu-id="0acd1-133">Im folgenden Beispiel wird ZAP für eine inhaltsfilterrichtlinie namens "Test" deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="0acd1-133">In the following example, ZAP is disabled for a content filter policy named "Test".</span></span>
     
-    <span data-ttu-id="f3d38-144">Suchen Sie nach dem Text "null-Stunden automatisch löschen (ZAP)" in Ihre Trace-Details, um eine Nachricht zu identifizieren, die vom ZAP verschoben wurde.</span><span class="sxs-lookup"><span data-stu-id="f3d38-144">Look for the text "Zero-Hour Auto Purge (ZAP)" in your trace details to identify a message that was moved by ZAP.</span></span>
-    
- <span data-ttu-id="f3d38-145">**So deaktivieren Sie ZAP**</span><span class="sxs-lookup"><span data-stu-id="f3d38-145">**To disable ZAP**</span></span>
-  
-- <span data-ttu-id="f3d38-146">Wenn Sie deaktivieren möchten für Ihre Office 365-Mandanten entfernen, oder eine Gruppe von Benutzern, verwenden Sie den **ZapEnabled** -Parameter des [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), ein EOP-Cmdlet.</span><span class="sxs-lookup"><span data-stu-id="f3d38-146">If you want to disable ZAP for your Office 365 tenant, or a set of users, use the **ZapEnabled** parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), an EOP cmdlet.</span></span>
-    
-    <span data-ttu-id="f3d38-147">Im folgenden Beispiel wird ZAP für eine inhaltsfilterrichtlinie namens "Test" deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="f3d38-147">In the following example, ZAP is disabled for a content filter policy named "Test".</span></span>
-    
-||
-|:-----|
-|
 ```
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
-|
-   
-## <a name="faq"></a><span data-ttu-id="f3d38-148">Häufig gestellte Fragen</span><span class="sxs-lookup"><span data-stu-id="f3d38-148">FAQ</span></span>
-<span data-ttu-id="f3d38-149"><a name="BK_FAQ"> </a></span><span class="sxs-lookup"><span data-stu-id="f3d38-149"></span></span>
+## <a name="faq"></a><span data-ttu-id="0acd1-134">Häufig gestellte Fragen (FAQ)</span><span class="sxs-lookup"><span data-stu-id="0acd1-134">FAQ</span></span>
 
- <span data-ttu-id="f3d38-150">**Was passiert, wenn eine legitime Nachricht in den Junk-e-Mailordner verschoben wird?**</span><span class="sxs-lookup"><span data-stu-id="f3d38-150">**What happens if a legitimate message is moved to the junk mail folder?**</span></span>
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a><span data-ttu-id="0acd1-135">Was passiert, wenn eine legitime Nachricht in den Junk-e-Mailordner verschoben wird?</span><span class="sxs-lookup"><span data-stu-id="0acd1-135">What happens if a legitimate message is moved to the junk mail folder?</span></span>
   
-<span data-ttu-id="f3d38-p106">Befolgen Sie den normalen reporting-Prozess für falsch positive ein. Der einzige Grund für die Nachricht aus dem Posteingang in den Junk-e-Mailordner verschoben werden wird, da der Dienst festgestellt hat, dass die Nachricht Spam war wäre oder böswilliges.</span><span class="sxs-lookup"><span data-stu-id="f3d38-p106">You should follow the normal reporting process for false-positives. The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.</span></span>
+<span data-ttu-id="0acd1-p106">Befolgen Sie den normalen reporting-Prozess für falsch positive ein. Der einzige Grund für die Nachricht aus dem Posteingang in den Junk-e-Mailordner verschoben werden wird, da der Dienst festgestellt hat, dass die Nachricht Spam war wäre oder böswilliges.</span><span class="sxs-lookup"><span data-stu-id="0acd1-p106">You should follow the normal reporting process for false-positives. The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.</span></span>
   
- <span data-ttu-id="f3d38-153">**Was geschieht, wenn ich Office 365 Quarantäne anstelle der Junk-e-Mailordner verwenden?**</span><span class="sxs-lookup"><span data-stu-id="f3d38-153">**What if I use the Office 365 quarantine instead of the junk mail folder?**</span></span>
+### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a><span data-ttu-id="0acd1-138">Was geschieht, wenn ich Office 365 Quarantäne anstelle der Junk-e-Mailordner verwenden?</span><span class="sxs-lookup"><span data-stu-id="0acd1-138">What if I use the Office 365 quarantine instead of the junk mail folder?</span></span>
   
-<span data-ttu-id="f3d38-154">ZAP nicht Sie Nachrichten in Quarantäne aus dem Posteingang zu diesem Zeitpunkt verschieben.</span><span class="sxs-lookup"><span data-stu-id="f3d38-154">ZAP doesn't move messages into quarantine from the Inbox at this time.</span></span>
+<span data-ttu-id="0acd1-139">ZAP nicht Sie Nachrichten in Quarantäne aus dem Posteingang zu diesem Zeitpunkt verschieben.</span><span class="sxs-lookup"><span data-stu-id="0acd1-139">ZAP doesn't move messages into quarantine from the Inbox at this time.</span></span>
   
- <span data-ttu-id="f3d38-155">**Was geschieht, wenn ich eine benutzerdefinierte e-Mail-Flussregel haben (blockieren / Regel zulassen)?**</span><span class="sxs-lookup"><span data-stu-id="f3d38-155">**What If I have a custom mail flow rule (Block/ Allow Rule)?**</span></span>
+### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a><span data-ttu-id="0acd1-140">Was geschieht, wenn ich eine benutzerdefinierte e-Mail-Flussregel haben (blockieren / Regel zulassen)?</span><span class="sxs-lookup"><span data-stu-id="0acd1-140">What If I have a custom mail flow rule (Block/ Allow Rule)?</span></span>
   
-<span data-ttu-id="f3d38-p107">Regelanzahl durch Administratoren (e-Mail-Flussregeln) oder blockieren und zulassen Regeln haben Vorrang vor. Solche Nachrichten werden von der Funktion Kriterien ausgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="f3d38-p107">Rules created by admins (mail flow rules) or Block and Allow rules take precedence. Such messages are excluded from the feature criteria.</span></span>
+<span data-ttu-id="0acd1-p107">Regelanzahl durch Administratoren (e-Mail-Flussregeln) oder blockieren und zulassen Regeln haben Vorrang vor. Solche Nachrichten werden von der Funktion Kriterien ausgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="0acd1-p107">Rules created by admins (mail flow rules) or Block and Allow rules take precedence. Such messages are excluded from the feature criteria.</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="f3d38-158">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="f3d38-158">Related Topics</span></span>
-<span data-ttu-id="f3d38-159"><a name="BK_FAQ"> </a></span><span class="sxs-lookup"><span data-stu-id="f3d38-159"></span></span>
+## <a name="related-topics"></a><span data-ttu-id="0acd1-143">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="0acd1-143">Related Topics</span></span>
 
-[<span data-ttu-id="f3d38-160">Antispamschutz für Office 365-E-Mails</span><span class="sxs-lookup"><span data-stu-id="f3d38-160">Office 365 Email Anti-Spam Protection</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="0acd1-144">Antispamschutz für Office 365-E-Mails</span><span class="sxs-lookup"><span data-stu-id="0acd1-144">Office 365 Email Anti-Spam Protection</span></span>](anti-spam-protection.md)
   
-[<span data-ttu-id="f3d38-161">Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen</span><span class="sxs-lookup"><span data-stu-id="f3d38-161">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](block-email-spam-to-prevent-false-negatives.md)
+[<span data-ttu-id="0acd1-145">Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen</span><span class="sxs-lookup"><span data-stu-id="0acd1-145">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](block-email-spam-to-prevent-false-negatives.md)
   
 
