@@ -3,7 +3,7 @@ title: Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer be
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/19/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 7dccab55ab86d9ecac14b7042b5a030c2415fece
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 6f09a75a96abda54e69833a8be14811c8113b5b1
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003214"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255820"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -91,23 +91,23 @@ Verwenden Sie für CNAME-Einträge das folgende Format:
 Host name:          selector1._domainkey.<domain>
 Points to address or value: selector1-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
+
 Host name:          selector2._domainkey.<domain>
 Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
-
 ```
 
 Dabei gilt Folgendes:
   
--  Für Office 365 sind die Selektoren immer „selector1" oder „selector2". 
+- Für Office 365 sind die Selektoren immer „selector1" oder „selector2". 
     
--  _domainGUID_ ist identisch mit  _domainGUID_ im angepassten MX-Eintrag für Ihre benutzerdefinierte Domäne, der vor „mail.protection.outlook.com" angezeigt wird. Im folgenden MX-Eintrag für die Domäne „contoso.com" ist die  _domainGUID_ z. B. „contoso-com": 
+- _DomainGUID_ ist identisch mit der _DomainGUID_ des angepassten MX-Eintrags für Ihre benutzerdefinierte Domäne, die vor dem mail.protection.outlook.com angezeigt wird. In den folgenden MX-Eintrag für die Domäne "contoso.com" wird die _DomainGUID_ beispielsweise Contoso-com: 
     
-  ```
-  contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
-  ```
+    ```
+    contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
+    ```
 
--  _initialDomain_ ist die Domäne, die Sie bei der Anmeldung für Office 365 verwendet haben. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ ist die Domäne, die Sie bei der Anmeldung für Office 365 verwendet haben. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Wenn Sie beispielsweise als erste Domäne „cohovineyardandwinery.onmicrosoft.com" und zwei benutzerdefinierte Domänen „cohovineyard.com" und „cohowinery.com" haben, müssten Sie zwei CNAME-Einträge für jede zusätzliche Domäne einrichten, also insgesamt vier CNAME-Einträge.
   
@@ -115,9 +115,11 @@ Wenn Sie beispielsweise als erste Domäne „cohovineyardandwinery.onmicrosoft.c
 Host name:          selector1._domainkey.cohovineyard.com  
 Points to address or value: selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
+
 Host name:          selector2._domainkey.cohovineyard.com  
 Points to address or value: selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
+
 Host name:          selector1._domainkey.cohowinery.com
 Points to address or value: selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com 
 TTL:                3600
@@ -134,7 +136,7 @@ Nachdem Sie die CNAME-Einträge im DNS veröffentlicht haben, können Sie die DK
   
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>So aktivieren Sie die DKIM-Signierung für Ihre benutzerdefinierte Domäne über das Office 365 Admin Center
 
-1. [Melden Sie sich bei Office 365](https://support.office.microsoft.com/article/Sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Arbeits- oder Schulkonto an. 
+1. [Melden Sie sich bei Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Arbeits- oder Schulkonto an. 
     
 2. Klicken Sie oben links auf das App-Startsymbol , und wählen Sie **Admin** aus.
     
@@ -146,21 +148,21 @@ Nachdem Sie die CNAME-Einträge im DNS veröffentlicht haben, können Sie die DK
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>So aktivieren Sie die DKIM-Signierung für Ihre benutzerdefinierte Domäne mit PowerShell
 
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx).
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://technet.microsoft.com/library/jj984289.aspx).
     
-2. Führen Sie das folgende Cmdlet aus:
+2. Führen Sie den folgenden Befehl aus:
     
-  ```
-  New-DkimSigningConfig -DomainName <domain> -Enabled $true
-  ```
+    ```
+    New-DkimSigningConfig -DomainName <domain> -Enabled $true
+    ```
 
-    Dabei ist  _domain_ der Name der benutzerdefinierten Domäne, für die Sie die DKIM-Signierung aktivieren möchten. 
+   Wobei _Domäne_ der Name der benutzerdefinierten Domäne ist, die Sie mit DKIM Signieren für aktivieren möchten. 
     
-    Beispiel für die Domäne „contoso.com":
+   Beispiel für die Domäne „contoso.com":
     
-  ```
-  New-DkimSigningConfig -DomainName contoso.com -Enabled $true
-  ```
+    ```
+    New-DkimSigningConfig -DomainName contoso.com -Enabled $true
+    ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>So bestätigen Sie, dass die DKIM-Signierung ordnungsgemäß für Office 365 konfiguriert ist
 
@@ -171,18 +173,17 @@ Warten Sie einige Minuten, bevor Sie diese Schritte ausführen, um zu bestätige
 - Verwenden Sie zu Testzwecken kein „aol.com"-Konto. AOL überspringt möglicherweise die DKIM-Überprüfung, wenn die SPF-Prüfung erfolgreich ist. Dadurch hat der Test keine Relevanz.
     
 - Öffnen Sie die Nachricht, und sehen Sie sich die Überschrift an. Anweisungen zum Anzeigen der Kopfzeile der Nachricht variieren je nach Messagingclient. Anweisungen zum Anzeigen der Kopfzeilen von Nachrichten in Outlook finden Sie unter [Anzeigen der Kopfzeilen von E-Mail-Nachrichten](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C).
+
+  Die mit DKIM signierte Nachricht enthält den Hostnamen und die Domäne, die Sie definiert haben, wenn Sie die CNAME-Einträge veröffentlicht haben. Die Nachricht sieht in etwa wie im folgenden Beispiel aus: 
     
-     Die mit DKIM signierte Nachricht enthält den Hostnamen und die Domäne, die Sie definiert haben, wenn Sie die CNAME-Einträge veröffentlicht haben. Die Nachricht sieht in etwa wie im folgenden Beispiel aus: 
-    
-  ```
-  From: Example User <example@contoso.com> 
-  DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; 
-      s=selector1; d=contoso.com; t=1429912795; 
-      h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
-      bh=<body hash>; 
-      b=<signed field>;
-  
-  ```
+    ```
+    From: Example User <example@contoso.com> 
+    DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; 
+        s=selector1; d=contoso.com; t=1429912795; 
+        h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
+        bh=<body hash>; 
+        b=<signed field>;
+    ```
 
 - Suchen Sie nach der „Authentication-Results"-Kopfzeile. Obwohl jeder empfangende Dienst ein geringfügig anderes Format verwendet, um die eingehenden E-Mail-Nachrichten mit Zeitstempeln zu versehen, sollte das Ergebnis immer etwas wie **DKIM=pass** oder **DKIM=OK** enthalten. 
     
@@ -198,35 +199,33 @@ Durch das Deaktivieren der Signierungsrichtlinie wird DKIM nicht vollständig de
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>So deaktivieren Sie die DKIM-Signierungsrichtlinie mithilfe von Windows PowerShell
 
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx).
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://technet.microsoft.com/library/jj984289.aspx).
     
 2. Führen Sie einen der folgenden Befehle für jede Domäne aus, für die Sie die DKIM-Signierung deaktivieren möchten.
     
-  ```
-  $p=Get-DkimSigningConfig -identity <domain>
-  $p[0] | set-DkimSigningConfig -enabled $false
-  
-  ```
+    ```
+    $p=Get-DkimSigningConfig -identity <domain>
+    $p[0] | set-DkimSigningConfig -enabled $false
+    ```
 
-    Beispiel:
+   Beispiel:
     
-  ```
-  $p=Get-DkimSigningConfig -identity contoso.com
-  $p[0] | set-DkimSigningConfig -enabled $false
-  ```
+    ```
+    $p=Get-DkimSigningConfig -identity contoso.com
+    $p[0] | set-DkimSigningConfig -enabled $false
+    ```
 
-    oder -
+   Oder
     
-  ```
-  Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
-  
-  ```
+    ```
+    Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
+    ```
 
-    Wobei  _number_ der Index der Richtlinie ist. Beispiel: 
+    Wobei _number_ der Index der Richtlinie ist. Beispiel: 
     
-  ```
-  Set-DkimSigningConfig -identity $p[0].identity -enabled $false
-  ```
+    ```
+    Set-DkimSigningConfig -identity $p[0].identity -enabled $false
+    ```
 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Standardverhalten für DKIM und Office 365
 <a name="DefaultDKIMbehavior"> </a>
@@ -244,10 +243,9 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
     bh=<body hash>; 
     b=<signed field>;
-
 ```
 
-In diesem Beispiel enthalten den Hostnamen und die Domäne der Werte, die auf denen der CNAME-Eintrag zeigen würde, wenn vom Domänenadministrator für fabrikam.com DKIM Signieren aktiviert wurde. Schließlich wird jede einzelne Nachricht, die von Office 365 gesendet DKIM signiert werden. Wenn Sie DKIM selbst aktivieren, wird die Domäne sein identisch mit der Domäne in der From: Adresse im in Groß-/Kleinschreibung fabrikam.com. Wenn dies nicht der Fall, wird keine Ausrichtung und wird stattdessen die erste Domäne Ihrer Organisation verwenden. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+In diesem Beispiel enthalten den Hostnamen und die Domäne der Werte, die auf denen der CNAME-Eintrag zeigen würde, wenn vom Domänenadministrator für fabrikam.com DKIM Signieren aktiviert wurde. Schließlich wird jede einzelne Nachricht, die von Office 365 gesendet DKIM signiert werden. Wenn Sie DKIM selbst aktivieren, wird die Domäne sein identisch mit der Domäne in der From: Adresse im in Groß-/Kleinschreibung fabrikam.com. Wenn dies nicht der Fall, wird keine Ausrichtung und wird stattdessen die erste Domäne Ihrer Organisation verwenden. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Einrichten von DKIM, damit ein Drittanbieterdienst E-Mails im Auftrag Ihrer benutzerdefinierten Domäne senden oder fälschen kann
 <a name="SetUp3rdPartyspoof"> </a>
@@ -273,9 +271,9 @@ In diesem Beispiel sind zu diesem Zweck die folgenden Schritte erforderlich:
     
 4. Beim Empfangen von E-Mails führen Systeme eine DKIM-Überprüfung durch, indem der d=\<Domäne\>-Wert der DKIM-Signatur mit der Domäne im Feld „Von: (5322.From)" der Nachricht verglichen wird. In diesem Beispiel entsprechen die Werte den folgenden:
     
-    sender@ **contoso.com**
+    Absender @**contoso.com**
     
-    d= **contoso.com**
+    d =**"contoso.com"**
     
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Nächste Schritte: Nach dem Einrichten von DKIM für Office 365
 <a name="DKIMNextSteps"> </a>

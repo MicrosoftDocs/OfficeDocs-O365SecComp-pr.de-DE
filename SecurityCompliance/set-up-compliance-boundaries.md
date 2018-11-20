@@ -1,9 +1,8 @@
 ---
-title: Einrichten von Compliance-Grenzen für eDiscovery Untersuchungen in Office 365
+title: Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Compliance-Grenzen logische Grenzen innerhalb einer Office 365-Organisation zu erstellen, die die Speicherorte für Benutzer Inhalte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen Search-Berechtigungen (auch so genannte Kompatibilität Sicherheitsfilter) filtern, um zu steuern, welche Postfächer, die SharePoint-Websites verwenden, und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 822d228d64d2fd5432db327db98e8d7329c7d939
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258633"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299239"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery Untersuchungen in Office 365
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
 Compliance-Grenzen erstellen logische Grenzen innerhalb einer Office 365-Organisation, die die Speicherorte für Benutzer Inhalte (wie Postfächer, SharePoint-Websites und OneDrive Konten) steuern, die eDiscovery-Manager durchsuchen können. Darüber hinaus Compliance Grenzen steuern, wer eDiscovery-Fälle verwendet, um die rechtlichen, Personalabteilung oder andere Untersuchungen innerhalb Ihrer Organisation verwalten zugreifen kann. Die Notwendigkeit für Compliance-Grenzen ist häufig erforderlich für Unternehmen mit mehreren Nationen, die über geografische Grenzen und Vorschriften einhalten verfügen und für Behörden, die häufig in unterschiedlichen Behörden unterteilt sind. In Office 365, Compliance Grenzen Hilfe, die Sie erfüllen Inhalt diese Anforderungen beim Ausführen einer suchen und Verwalten von Untersuchungen mit eDiscovery-Fälle.
   
@@ -179,9 +178,9 @@ Beachten Sie die folgenden Einschränkungen beim Verwalten von eDiscovery-Fälle
     
 - Suchfilter Berechtigungen sind nicht auf Öffentliche Ordner von Exchange angewendet.
 
-## <a name="searching-and-exporting-sharepoint-content-in-multi-geo-environments"></a>Suchen und Exportieren von SharePoint-Inhalten in Umgebungen mit mehreren geografisch
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Suchen und Exportieren von Inhalten in Umgebungen mit mehreren geografisch
 
-Suchfilter Berechtigungen können auch steuern, in denen Weiterleitung von Inhalten für den Export und SharePoint-Websites und OneDrive-Konten in einer [Umgebung mit SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840)durchsucht welche Rechenzentren werden können:
+Suchfilter Berechtigungen können auch steuern, auf dem Weiterleitung von Inhalten für den Export und welche Datacenter bei der SharePoint-Websites und OneDrive-Konten in einer [Umgebung mit SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840)-Suche durchsucht werden kann:
   
 - Exportieren von Suchergebnissen aus einem bestimmten-Rechenzentrum. Dies bedeutet, dass Sie angeben können, dass der Speicherort, dass die Suche im Rechenzentrum, die Ergebnisse aus exportiert werden.
     
@@ -211,7 +210,7 @@ In ähnlicher Weise können Sie die folgenden Werte für die **Region** Paramete
 |IND  <br/> |Asien-Pazifik  <br/> |
 |LAM  <br/> |US  <br/> |
    
- **Hinweis:** Wenn Sie den Bereichsparameter für ein Suchfilter Berechtigungen nicht angeben, werden Suchergebnisse vom nächsten Rechenzentrum exportiert. 
+ **Hinweis:** Wenn Sie nicht den Bereichsparameter für ein Suchfilter Berechtigungen angeben, der Organisationen Standard-SharePoint-Bereich wird durchsucht und dann Suchergebnisse werden in der nächsten Rechenzentrum exportiert. 
   
 Es folgen Beispiele für die Verwendung der **-Region** Parameter beim Erstellen von Suchfiltern der Berechtigung für Compliance-Grenzen. Hierbei wird davon ausgegangen, dass das Fourth Coffee Subsidiary sich in Nordamerika befindet und Europa Coho Winery wird. 
   
@@ -223,7 +222,7 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-Behalten Sie Folgendes beachten Sie beim Durchsuchen und Exportieren von SharePoint und OneDrive in Umgebungen mit mehreren geografisch Content.
+Behalten Sie Folgendes beachten Sie bei der Suche und Exportieren von Inhalt in Umgebungen mit mehreren geografisch.
   
 - Der Parameter **Region** steuern nicht Suchvorgänge in Exchange-Postfächern. Alle Rechenzentren werden durchsucht werden, wenn Sie Postfächer suchen. Verwenden Sie zum Einschränken von der Exchange-Postfächer durchsucht werden können, des **Filter** -Parameters beim Erstellen oder Ändern eines Suchfilters Berechtigungen. 
     

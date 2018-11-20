@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Erfahren Sie, wie die verschiedenen Typen von Haltestatus zu identifizieren, die ein Office 365-Postfach platziert werden können. Risiko dieser Arten von Haltestatus umfassen Aufbewahrung für eventuelle Rechtsstreitigkeiten, eDiscovery-Archive und Aufbewahrungsrichtlinien für Office 365. Sie können auch bestimmen, ob ein Benutzer aus einer Organisation geltende Aufbewahrungsrichtlinie ausgeschlossen wurde
-ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 1572b34d3f9abef2fb922fc9b01d1f5a27fcdf7b
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577074"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026512"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -39,7 +39,7 @@ Office 365 bietet eine Reihe von Methoden, die Ihrer Organisation Inhalt von Pos
 
     - **Aufbewahrungsrichtlinien organisationsweiten** - Hierbei handelt es sich um Richtlinien, die alle Speicherorte für Inhalte in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, Abrufen von Informationen zu Aufbewahrungsrichtlinien organisationsweiten. Weitere Informationen finden Sie im Abschnitt "Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder bestimmte Orte" in [der Übersicht über die Office 365-Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Office 365 Etiketten** - Wenn ein Benutzer ein Office 365-Label (eine Inhalt beibehalten gilt oder beibehalten und Löschen von Inhalt konfiguriert ist) für *jeden* Ordner oder ein Element in ihrem Postfach, einem Haltestatus wird für das Postfach platziert, so als würde das Postfach auf Rechtsstreitigkeiten getätigt wurde Halten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen. Weitere Informationen finden Sie im Abschnitt [identifizieren Postfächer auf halten, da eine Bezeichnung auf einen Ordner oder das Element angewendet wurde](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) in diesem Artikel.
+- **Office 365 Aufbewahrung Etiketten** - Wenn ein Benutzer ein Office 365 Aufbewahrung Bezeichnungsfeld (eine Inhalt beibehalten gilt oder beibehalten und Löschen von Inhalt konfiguriert ist) für *jeden* Ordner oder ein Element in ihrem Postfach, einem Haltestatus wird für das Postfach platziert, so als würde das Postfach wurde Aufbewahrung für eventuelle Rechtsstreitigkeiten gebracht oder zugeordnet ist, eine Office 365-Aufbewahrungsrichtlinie. Weitere Informationen finden Sie im Abschnitt [identifizieren Postfächer auf halten, da eine Beschriftung für die Aufbewahrung auf einen Ordner oder das Element angewendet wurde](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) in diesem Artikel.
 
 Zum Verwalten von Postfächern in der Warteschleife müssen Sie möglicherweise den Typ des Haltestatus zu identifizieren, die für ein Postfach befindet, sodass Sie Aufgaben wie das Ändern der Dauer halten, vorübergehend oder endgültig den Haltestatus entfernen oder Ausschließen eines Postfachs aus einer Aufbewahrungsrichtlinie für Office 365 ausführen können. In diesen Fällen wird im erste Schritt identifiziert den Typ des Haltestatus für das Postfach platziert. Und da mehrere Haltestatus (und anderen Arten von Haltestatus) auf ein einzelnes Postfach angeordnet werden können, müssen Sie alle Haltestatus für ein Postfach platziert werden, wenn Sie möchten, entfernen oder Ändern dieser Aufbewahrungspflichten zu identifizieren.
 
@@ -154,9 +154,9 @@ Führen Sie dem folgenden Befehl in Sicherheit und Compliance Center PowerShell 
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identifizierende Postfächer auf halten, da eine Bezeichnung auf einen Ordner oder das Element angewendet wurde
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identifizierende Postfächer auf halten, da eine Beschriftung für die Aufbewahrung auf einen Ordner oder das Element angewendet wurde
 
-Wenn ein Benutzer eine Bezeichnung, die beibehalten werden Inhalte gilt oder beibehalten, und klicken Sie dann Löschen von Inhalt eines beliebigen Ordners oder Elements in ihrem Postfach konfiguriert ist, wird die *ComplianceTagHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. In diesem Fall gilt das Postfach werden abwarten, so als würde gebracht Aufbewahrung für eventuelle Rechtsstreitigkeiten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen wurde. Wenn die *ComplianceTagHoldApplied* -Eigenschaft auf **True**festgelegt ist, können Folgendes auftreten:
+Wenn ein Benutzer eine Bezeichnung Aufbewahrungsrichtlinie, die beibehalten werden Inhalte gilt oder beibehalten, und klicken Sie dann Löschen von Inhalt eines beliebigen Ordners oder Elements in ihrem Postfach konfiguriert ist, wird die *ComplianceTagHoldApplied* Postfach-Eigenschaft auf **True**festgelegt. In diesem Fall gilt das Postfach werden abwarten, so als würde gebracht Aufbewahrung für eventuelle Rechtsstreitigkeiten oder eine Aufbewahrungsrichtlinie für Office 365 zugewiesen wurde. Wenn die *ComplianceTagHoldApplied* -Eigenschaft auf **True**festgelegt ist, können Folgendes auftreten:
 
 - Wenn das Postfach oder der Benutzer Office 365-Benutzerkonto gelöscht wird, wird das Postfach eines [inaktiven Postfachs](inactive-mailboxes-in-office-365.md)an.
 - Nicht möglich, deaktivieren das Postfach (das primäre Postfach oder das Archivpostfach, sofern sie aktiviert sind).
@@ -168,7 +168,7 @@ Wenn den Wert der Eigenschaft *ComplianceTagHoldApplied* anzeigen möchten, füh
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Weitere Informationen zu Etiketten finden Sie unter [Übersicht über Office 365 Beschriftungen](labels.md).
+Weitere Informationen zu Aufbewahrungsrichtlinien Etiketten finden Sie unter [Übersicht über Office 365 Aufbewahrung Beschriftungen](labels.md).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Verwalten von Postfächern auf Verzögerung halten
 
@@ -196,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 > [!TIP]
 > Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl ist die Verwendung den Distinguished Name oder die Exchange-GUID-Wert. Verwenden einen der folgenden Werte wird verhindert, dass versehentlich das falsche Postfach angeben. 
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie den Haltestatus identifiziert haben, die an ein Postfach angewendet werden, können Sie Aufgaben wie die Dauer des Haltestatus, vorübergehend ändern oder dauerhaft entfernt den Haltestatus oder im Fall von Office 365-Aufbewahrungsrichtlinien, Ausführen ein inaktives Postfachs aus der Richtlinie ausgenommen. Weitere Informationen zum Ausführen von Aufgaben im Zusammenhang mit Haltestatus finden Sie unter eins der folgenden Themen:
 

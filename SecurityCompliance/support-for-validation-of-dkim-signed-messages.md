@@ -3,7 +3,7 @@ title: Unterstützung für die Validierung von mit DKIM signierten Nachrichten
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: Exchange Online Protection (EOP) und Exchange Online unterstützen die eingehende Validierung von Domain Keys Identified Mail(DKIM)-Nachrichten. DKIM ist eine Methode, anhand derer validiert wird, dass eine Nachricht von der angegebenen Domian stammt und nicht von jemand anderem gefälscht wurde. Durch sie wird eine E-Mail mit der Organisation verbunden, die für deren Senden verantwortlich ist. Die DKIM-Verifizierung steht automatisch für alle Nachrichten zur Verfügung, die über IPv6 gesendet werden. Weitere Informationen zur Unterstützung von IPv6 finden Sie unter Unterstützung für anonym eingehende E-Mail-Nachrichten über IPv6.
-ms.openlocfilehash: d2fab69847732bb7ed54f943d2c7845e06084936
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Erfahren Sie mehr über die Validierung von mit DKIM signierten Nachrichten in Exchange Online Protection und Exchange Online
+ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002260"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255830"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Unterstützung für die Validierung von mit DKIM signierten Nachrichten
 
@@ -28,6 +28,6 @@ DKIM validiert eine digital signierte Nachricht, die im DKIM-Signaturkopf in Nac
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-Administratoren können Exchange-[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) für die Ergebnisse einer DKIM-Validierung erstellen, um Nachrichten bei Bedarf zu filtern oder weiterzuleiten. 
+Administratoren können Exchange [Mail Flow Regeln](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (auch als Transportregeln bezeichnet) für die Ergebnisse einer DKIM-Validierung gefiltert oder Weiterleiten von Nachrichten als erforderlich. 
   
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Beim Einrichten Ihrer ATP sichere Links Richtlinien können Sie eine Not Rewrite einschließen ' Liste der URLs zum Aktivieren von einigen Personen in Ihrer Organisation Websites besuchen, die Sie in der Liste enthalten.
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353261"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238387"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte-nicht-zum Umschreiben von Adressen URLs-Liste mit sicheren Links zu Office 365 ATP
 
@@ -66,20 +66,4 @@ Die folgende Tabelle Listen Beispiele für die Eingabe und Einfluss auf diese Ei
 |`http://contoso.com/a`  <br/> |Können bestimmte Empfänger eine Website wie `http://contoso.com/a`, aber nicht Pfade`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Können bestimmte Empfänger eine Website wie `http://contoso.com/a` und Pfade wie`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>Verwandte Themen
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[ATP sichere Links in Office 365](atp-safe-links.md)
-  
-[Einrichten von sicheren Links ATP Richtlinien in Office 365](set-up-atp-safe-links-policies.md)
-  
-[Richten Sie eine benutzerdefinierte blockierte URLs Liste verwenden ATP sichere Links](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
-
-[Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

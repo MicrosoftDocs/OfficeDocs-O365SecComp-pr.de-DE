@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Verwenden Sie das Inhaltssuche eDiscovery-Tool in der Office 365-Sicherheit &amp; Compliance Center e-Mail in Exchange-Postfächer schnell finden Dokumente in SharePoint-Websites und Speicherorte OneDrive und Sofortnachrichtenunterhaltungen führen in Skype für Unternehmen.
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038228"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238397"
 ---
 # <a name="search-for-content-in-office-365"></a>Suchen Sie nach Inhalten in Office 365
 
@@ -42,6 +42,8 @@ Der erste Schritt besteht darin starten Auswählen der Speicherorte für Inhalte
     
 - Die Abfrage [massenbearbeitung](bulk-edit-content-searches.md) und Speicherorte für Inhalte für mehrere Suchvorgänge 
     
+- [Beibehalten Bcc-Empfänger](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) , damit Sie suchen können 
+
 ## <a name="perform-actions-on-content-you-find"></a>Ausführen von Aktionen für Inhalte, die Sie gefunden
 
 Nachdem Sie eine Suche ausführen und sie nach Bedarf optimieren, besteht der nächste Schritt etwas mit der von der Suche zurückgegebenen Ergebnisse möchten. Exportieren und die Ergebnisse an den lokalen Computer oder im Fall einer e-Mail-Angriff auf Ihre Organisation herunterladen, können Sie die Ergebnisse einer Suche aus Benutzerpostfächern löschen.

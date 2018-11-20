@@ -3,7 +3,7 @@ title: Dynamische Übermittlung und Anzeigen der Vorschau mit Office 365 ATP sic
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Wenn Sie Ihre ATP sichere Anlagen Richtlinien eingerichtet haben, wählen Sie dynamische Übermittlung Nachricht Verzögerungen bei der vermieden, und aktivieren Personen für die Vorschau von Anlagen, die gescannt werden.
-ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: a272253594dda7ea720bb1e8b59e38e870f2f036
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850819"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238427"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Übermittlung und Anzeigen der Vorschau mit Office 365 ATP sichere Anlagen
 
@@ -72,16 +72,3 @@ Es gibt bestimmte Szenarien, in denen dynamische Übermittlung nicht unterstütz
 
 - Verschlüsselte Nachrichten mit Secure/Multipurpose Internet Mail Extensions ([S/MIME](s-mime-for-message-signing-and-encryption.md))
     
-## <a name="related-topics"></a>Verwandte Themen
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[ATP sichere Anlagen in Office 365](atp-safe-attachments.md)
-  
-[Einrichten von Richtlinien für sichere ATP-Anlagen in Office 365](set-up-atp-safe-attachments-policies.md)
-  
-[ATP sichere Links in Office 365](atp-safe-links.md)
-
-[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  
-

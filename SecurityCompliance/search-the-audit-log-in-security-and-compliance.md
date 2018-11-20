@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. '
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: 'Verwenden Sie die Office 365-Sicherheit und Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935592"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522807"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit und Compliance Center
 
 Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus dem Postfach gelöscht? Wenn also die Sicherheit der Office 365 verwendbare &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. Warum einer einheitlichen Audit protokolliert? Da Sie für die folgenden Typen von Benutzer- und Admin Aktivität in Office 365 suchen können:
   
@@ -57,7 +55,7 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
 - Benutzer- und Admin-Aktivität in Microsoft Stream
     
    
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die Office 365 in das Überwachungsprotokoll lesen.
   
@@ -100,26 +98,26 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     
 - Es kann bis zu 30 Minuten dauern oder von 24 Stunden nach Ereignis tritt ein, die der entsprechenden Überwachungsprotokolleintrag in den Suchergebnissen angezeigt werden. Die folgende Tabelle zeigt den Zeitaufwand für die verschiedenen Dienste in Office 365.
     
-|**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
-|:-----|:-----|:-----|
-|Erweiterte Schutz und Bedrohungsanalyse  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory (Admin Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Verhinderung von Datenverlust  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|eDiscovery  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
+    |:-----|:-----|:-----|
+    |Erweiterte Schutz und Bedrohungsanalyse  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory (Admin Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Verhinderung von Datenverlust  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |eDiscovery  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (AD Azure) ist der Verzeichnisdienst für Office 365. Unified Überwachungsprotokoll enthält Benutzer, Gruppe, Anwendung, Domäne und Directory Aktivitäten ausgeführt in Office 365 Administrationscenter oder in der in Azure-Verwaltungsportal. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory Bericht Überwachungsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
@@ -160,18 +158,18 @@ Hier ist der Prozess für die Suche im Überwachungsprotokolls in Office 365.
   
 4. Konfigurieren Sie die folgenden Suchkriterien:
     
-1. **Aktivitäten** Klicken Sie auf die Dropdownliste zum Anzeigen der Aktivitäten, denen Sie für suchen können. Benutzer- und Admin Aktivitäten sind an eine Gruppe von Aktivitäten in organisiert. Sie können bestimmte Aktivitäten auswählen, oder Sie können den Gruppennamen Aktivität alle Aktivitäten in der Gruppe auswählen auf. Klicken Sie auf einen ausgewählten Aktivität zum Aufheben der Auswahl. Nachdem Sie die Suche ausführen werden nur die Überwachungsprotokolleinträge für den ausgewählten Aktivitäten angezeigt. **Ergebnisse für alle Aktivitäten anzeigen** auswählen zeigt die Ergebnisse für alle Aktivitäten, die von den ausgewählten Benutzer oder die Gruppe von Benutzern durchgeführt. 
+    a. **Aktivitäten** klicken Sie auf die Dropdown-Liste die Aktivitäten angezeigt werden sollen, denen Sie für suchen können. Benutzer- und Admin Aktivitäten sind an eine Gruppe von Aktivitäten in organisiert. Sie können bestimmte Aktivitäten auswählen, oder Sie können den Gruppennamen Aktivität alle Aktivitäten in der Gruppe auswählen auf. Klicken Sie auf einen ausgewählten Aktivität zum Aufheben der Auswahl. Nachdem Sie die Suche ausführen werden nur die Überwachungsprotokolleinträge für den ausgewählten Aktivitäten angezeigt. **Ergebnisse für alle Aktivitäten anzeigen** auswählen zeigt die Ergebnisse für alle Aktivitäten, die von den ausgewählten Benutzer oder die Gruppe von Benutzern durchgeführt. 
     
     Mehr als 100 Benutzer und Admin Aktivitäten werden im Überwachungsprotokoll Office 365 protokolliert. Klicken Sie auf der Registerkarte **Löschvorgänge Aktivitäten** im Thema dieses Artikels finden in den Beschreibungen jeder Aktivität in jeder der verschiedenen Office 365-Dienste. 
     
-2. **Startdatum** und **Enddatum** den letzten sieben Tagen sind standardmäßig aktiviert. Wählen Sie einen Bereich für Datum und Uhrzeit der Ereignisse angezeigt, die innerhalb dieses Zeitraums aufgetreten sind. Datum und Uhrzeit werden in koordinierter Weltzeit (UTC) Format angezeigt. Der maximale Zeitraum, den Sie angeben können, ist 90 Tage. Ein Fehler wird angezeigt, wenn des ausgewählten Datumsbereichs älter als 90 Tage ist. 
+    b. **Startdatum** und **Enddatum** den letzten sieben Tagen sind standardmäßig aktiviert. Wählen Sie einen Bereich für Datum und Uhrzeit der Ereignisse angezeigt, die innerhalb dieses Zeitraums aufgetreten sind. Datum und Uhrzeit werden in koordinierter Weltzeit (UTC) Format angezeigt. Der maximale Zeitraum, den Sie angeben können, ist 90 Tage. Ein Fehler wird angezeigt, wenn des ausgewählten Datumsbereichs älter als 90 Tage ist. 
     
     > [!TIP]
     > Wenn Sie den maximale Datumsbereich der 90 Tage verwenden, wählen Sie die aktuelle Zeit für das **Startdatum**an. Andernfalls erhalten Sie eine Fehlermeldung ausgegeben, die das Startdatum einer älteren Version als das Enddatum ist. Wenn Sie innerhalb der letzten 90 Tage Überwachung aktiviert haben, kann nicht der maximalen Zeitraum vor dem Datum gestartet, die Überwachung aktiviert wurde. 
   
-3. **Benutzer** Klicken Sie in dieses Feld, und wählen Sie einen oder mehrere Benutzer Anzeige von Suchergebnissen für. Die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten, die von den Benutzern, die Sie in dieses Feld auswählen, werden in der Liste der Ergebnisse angezeigt. Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Benutzer (und Dienstkonten) in Ihrer Organisation. 
+    c-Ergebnis für **Benutzer** klicken Sie in dieses Feld ein und wählen Sie einen oder mehrere Benutzer, um die Suche angezeigt werden. Die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten, die von den Benutzern, die Sie in dieses Feld auswählen, werden in der Liste der Ergebnisse angezeigt. Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Benutzer (und Dienstkonten) in Ihrer Organisation. 
     
-4. **Datei oder eines Ordners** Geben Sie einige oder alle ein File- oder Folder Name für die Suche nach Aktivitäten im Zusammenhang mit der Datei des Ordners, der das angegebene Schlüsselwort enthält. Sie können auch eine URL einer Datei oder eines Ordners angeben. Enthalten Sie Wenn Sie eine URL verwenden, sicherzustellen, dass der Typ der vollständige URL-Pfad sein oder wenn Sie nur einen Teil der URL eingeben nicht keine Sonderzeichen oder Leerzeichen. 
+    d. **File- oder Folder** Geben Sie einige oder alle ein File- oder Folder Name für die Suche nach Aktivitäten im Zusammenhang mit der Datei des Ordners, der das angegebene Schlüsselwort enthält. Sie können auch eine URL einer Datei oder eines Ordners angeben. Enthalten Sie Wenn Sie eine URL verwenden, sicherzustellen, dass der Typ der vollständige URL-Pfad sein oder wenn Sie nur einen Teil der URL eingeben nicht keine Sonderzeichen oder Leerzeichen. 
     
     Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Dateien und Ordner in Ihrer Organisation.
     

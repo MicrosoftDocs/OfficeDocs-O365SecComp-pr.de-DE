@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Benutzer müssen in der Office 365-Sicherheit Berechtigungen zugewiesen werden &amp; Compliance Center, bevor sie die Sicherheits- oder kompatibilitätsanforderungen Features des verwalten können.
-ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450740"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539107"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Gewähren des Benutzerzugriffs auf die Office 365-Sicherheit &amp; Compliance Center
 
@@ -63,7 +63,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen können Sie erteilen f
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Verwenden von PowerShell zu einem anderen Benutzerzugriff auf der Sicherheit ermöglichen &amp; Compliance Center
 
-1. [Verbinden auf die Office 365-Sicherheit &amp; Compliance Center mit remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+1. [Verbinden mit Office 365-Sicherheit und Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
 2. Verwenden Sie den Befehl **Add-RoleGroupMember** zum Hinzufügen eines Benutzers zur Rolle "Organisationsverwaltung", wie im folgenden Beispiel gezeigt. 
     

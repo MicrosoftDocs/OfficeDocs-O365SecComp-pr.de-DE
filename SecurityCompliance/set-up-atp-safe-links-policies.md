@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+ms.openlocfilehash: 2fce043aaf6e5e844415bd0caaaded8d30c18291
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935552"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238457"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
 [ATP sichere Links](atp-safe-links.md) , ein Feature von [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP), können Ihre Organisation vor böswilligen Links in Phishing und anderen Angriffen verwendet schützen. Wenn Sie die erforderlichen haben [in die Office 365-Sicherheit zugewiesenen Berechtigungen &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), ATP sichere Links Richtlinien einrichten, um sicherzustellen, dass beim Klicken auf Webadressen (URLs), Ihrer Organisation geschützt ist. Ihrer Richtlinien ATP sichere Links können in e-Mail-URLs und URLs in Office-Dokumenten überprüfen konfiguriert werden.
   
-[Neue Features ständig ATP sichere Links hinzugefügt wird](atp-safe-links.md#new-features-are-continually-being-added-to-atp-safe-links). Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen ATP sichere Links Richtlinien anpassen.
+[Neue Features ständig ATP hinzugefügt wird](office-365-atp.md#new-features-are-continually-being-added-to-atp). Neue Features hinzugefügt werden, müssen Sie möglicherweise Ihre vorhandenen ATP sichere Links Richtlinien anpassen.
 
 ## <a name="what-to-do"></a>Nächste Schritte 
   
@@ -50,7 +50,7 @@ ms.locfileid: "25935552"
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Schritt 2: Die sichere Links ATP-Richtlinie, die für alle Benutzer gilt definieren (oder Lesen)
 
-Wenn Sie erweiterte Schutz in Office 365 Enterprise verwenden, müssen Sie eine Standardrichtlinie ATP sichere Links, die für jede Person in Ihrer Organisation gilt. Stellen Sie sicher, um zu prüfen, und bei Bedarf bearbeiten Sie der Standardrichtlinie.
+Wenn Sie [Office 365 erweiterte Threat Protection](office-365-atp.md)haben, müssen Sie eine Standardrichtlinie ATP sichere Links, die für jede Person in Ihrer Organisation gilt. Stellen Sie sicher, um zu prüfen, und bei Bedarf bearbeiten Sie der Standardrichtlinie.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
@@ -98,40 +98,39 @@ Nachdem Sie überprüft (bearbeitet die Standardrichtlinie ATP sichere Links ode
     
 6. Klicken Sie auf **Save**.
     
-## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>Schritt 5: Informationen Sie zu Richtlinienoptionen ATP sichere Links
+## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Schritt 4: Informationen Sie zu Richtlinienoptionen ATP sichere Links
 
-Beim Einrichten oder Ihrer Richtlinien ATP sichere Links bearbeiten und sieht mehrere Optionen zur Verfügung. Für den Fall, dass Sie wissen möchten, was diese Optionen sind, werden in der folgenden Tabelle können Sie jeweils und dessen Effekt beschrieben. 
+Beim Einrichten oder Ihrer Richtlinien ATP sichere Links bearbeiten und sieht mehrere Optionen zur Verfügung. Für den Fall, dass Sie wissen möchten, was diese Optionen sind, werden in der folgenden Tabelle können Sie jeweils und dessen Effekt beschrieben. Beachten Sie, dass es zwei Hauptarten ATP sichere Links Richtlinien gibt, definieren oder bearbeiten:
+- eine [Standardrichtlinie](#default-policy-options) , die für alle Benutzer gilt. 
+- zusätzliche [Richtlinien, die für bestimmte Empfänger definiert sind](#policies-that-apply-to-specific-email-recipients) 
 
-Es gibt zwei Hauptarten Richtlinien, definieren oder bearbeiten: eine Standardrichtlinie, die für alle Benutzer gilt, und zusätzliche Richtlinien, die für bestimmte Empfänger definiert sind. Diese werden in der Spalte **für diese Richtlinie** in der folgenden Tabelle unterschieden.
-  
-|**Für diese Richtlinie**|**Diese option**|**Funktion**|
-|:-----|:-----|:-----|
-|Standard (sobald definiert, die Standardrichtlinie für alle Benutzer in der Organisation)  <br/> |**Die folgenden URLs zu blockieren** <br/> |Ermöglicht Ihrem Unternehmen haben eine benutzerdefinierte Liste von URLs, die automatisch gesperrt sind. Wenn Benutzer eine URL in dieser Liste klicken, werden sie zu einer [Seite Warnung](atp-safe-links-warning-pages.md) weitergeleitet, die erklärt, warum die URL ausgeschlossen wird.<br/> Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten blockierte URLs Liste verwenden ATP sichere Links](set-up-a-custom-blocked-urls-list-wtih-atp.md) , beispielsweise neu hinzugefügte Unterstützung für bis zu drei Platzhalter Sternchen (\*).  <br/> |
-|Standard  <br/> |**Office 365 ProPlus, Office für iOS und Android (engl.)** <br/> |Wenn diese Option ausgewählt ist, ATP sichere Links öffnen Schutz auf URLs in Dokumenten angewendet wird, die in Office 365 ProPlus (Word, Excel und PowerPoint unter Windows oder Mac OS), Office-Dokumente auf IOS- oder Android-Geräte, Visio 2016 unter Windows und Office Online (Word Online, Online PowerPoint, Excel Online und OneNote Online), sofern der Benutzer in Office 365 angemeldet hat. <br/><br/>Wenn Sie nur **Office 2016 unter Windows**angezeigt wird, klicken Sie dann die Feature-Updates nicht erreicht haben Ihre Office 365-Umgebung noch (und bald sind). Sichere Links ATP Protection betrifft bis zu diesem Zeitpunkt aus Word 2016, 2016 Excel, PowerPoint 2016 oder Visio 2016 unter Windows.           |
-|Standard  <br/> |**Verwalten Sie nicht, wenn Benutzer ATP sichere Links klicken** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word, Excel, PowerPoint und Visio-Dokumenten wird nicht gespeichert.  <br/> |
-|Standard  <br/> |**Lassen Sie nicht über ATP sichere Links auf die ursprüngliche URL klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Off** <br/> |URLs überprüft in e-Mail-Nachrichten nicht.  <br/> Können Sie eine Ausnahmeregel, wie eine Regel zu definieren, die nicht URLs für eine bestimmte Gruppe von Empfängern in e-Mail-Nachrichten überprüft wird.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Klicken Sie auf** <br/> |URLs umschreibt Route Benutzern über ATP sichere Links Protection, wenn der Benutzer URLs in e-Mail-Nachrichten klicken.  <br/> Eine URL mit einer Liste der blockierten oder böswilliges URLs Toolparts überprüft.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Verwenden Sie sichere Anlagen um zu überprüfenden Inhalte zum Herunterladen** <br/> |Wenn diese Option ausgewählt ist, werden die URLs, die auf Inhalte zum Herunterladen zeigen überprüft.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Wenden Sie sichere Links auf innerhalb der Organisation gesendeten Nachrichten an** <br/> | Wenn diese Option aktiviert ist, wird ATP sichere Links Schutz auf e-Mails angewendet, die Nachrichten zwischen Personen in Ihrer Organisation, die e-Mail-Konten bereitgestellt in Office 365 gehostet werden.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Benutzer klickt auf nicht überwacht** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail-Nachrichten von externen Absendern wird nicht gespeichert. Klicken Sie auf URL tracking für Links in e-Mail-Nachrichten innerhalb der Organisation gesendet wird derzeit nicht unterstützt.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Lassen Sie nicht über die ursprüngliche URL, klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
-|Eine Richtlinie für bestimmte e-Mail-Empfänger erstellt  <br/> |**Schreiben Sie die folgenden URLs nicht** <br/> |Lässt URLs unverändert. Hält eine benutzerdefinierte Liste von sicheren URLs, die keine Überprüfung für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation benötigen.  Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten "Nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich kürzlichen Änderungen an der Unterstützung für Platzhalter Sternchen (\*).<br/> |
+### <a name="default-policy-options"></a>Standardoptionen für die Richtlinie
+
+Standardoptionen für die Richtlinie gelten für alle Benutzer in Ihrer Organisation.
+
+|Diese option  |Funktion  |
+|---------|---------|
+| **Die folgenden URLs zu blockieren** <br/>    | Ermöglicht Ihrem Unternehmen haben eine benutzerdefinierte Liste von URLs, die automatisch gesperrt sind. Wenn Benutzer eine URL in dieser Liste klicken, werden sie zu einer [Seite Warnung](atp-safe-links-warning-pages.md) weitergeleitet, die erklärt, warum die URL ausgeschlossen wird.<br/> Für Weitere Informationen finden Sie unter [richten Sie eine benutzerdefinierte blockierte URLs Liste verwenden ATP sichere Links      |
+| **Office 365 ProPlus, Office für iOS und Android (engl.)** <br/>    | Wenn diese Option ausgewählt ist, ATP sichere Links öffnen Schutz auf URLs in Dokumenten angewendet wird, die in Office 365 ProPlus (Word, Excel und PowerPoint unter Windows oder Mac OS), Office-Dokumente auf IOS- oder Android-Geräte, Visio 2016 unter Windows und Office Online (Word Online, Online PowerPoint, Excel Online und OneNote Online), sofern der Benutzer in Office 365 angemeldet hat. <br/><br/>Wenn Sie nur **Office 2016 unter Windows**angezeigt wird, klicken Sie dann die Feature-Updates nicht erreicht haben Ihre Office 365-Umgebung noch (und bald sind). Sichere Links ATP Protection betrifft bis zu diesem Zeitpunkt aus Word 2016, 2016 Excel, PowerPoint 2016 oder Visio 2016 unter Windows.            |
+| **Verwalten Sie nicht, wenn Benutzer ATP sichere Links klicken** <br/>  | Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word, Excel, PowerPoint und Visio-Dokumenten wird nicht gespeichert.  <br/> |
+|**Lassen Sie nicht über ATP sichere Links auf die ursprüngliche URL klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
+
+### <a name="policies-that-apply-to-specific-email-recipients"></a>Richtlinien, die auf bestimmte e-Mail-Empfänger anzuwenden
+
+|Diese option  |Funktion  |
+|---------|---------|
+|**Off** <br/> |URLs überprüft in e-Mail-Nachrichten nicht.  <br/> Können Sie eine Ausnahmeregel, wie eine Regel zu definieren, die nicht URLs für eine bestimmte Gruppe von Empfängern in e-Mail-Nachrichten überprüft wird.  <br/> |
+|**Klicken Sie auf** <br/> |URLs umschreibt Route Benutzern über ATP sichere Links Protection, wenn der Benutzer URLs in e-Mail-Nachrichten klicken.  <br/> Eine URL mit einer Liste der blockierten oder böswilliges URLs Toolparts überprüft.  <br/> |
+|**Verwenden Sie sichere Anlagen um zu überprüfenden Inhalte zum Herunterladen** <br/> |Wenn diese Option ausgewählt ist, werden die URLs, die auf Inhalte zum Herunterladen zeigen überprüft.  <br/> |
+|**Wenden Sie sichere Links auf innerhalb der Organisation gesendeten Nachrichten an** <br/> | Wenn diese Option aktiviert ist, wird ATP sichere Links Schutz auf e-Mails angewendet, die Nachrichten zwischen Personen in Ihrer Organisation, die e-Mail-Konten bereitgestellt in Office 365 gehostet werden.  <br/> |
+|**Benutzer klickt auf nicht überwacht** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail-Nachrichten von externen Absendern wird nicht gespeichert. Klicken Sie auf URL tracking für Links in e-Mail-Nachrichten innerhalb der Organisation gesendet wird derzeit nicht unterstützt.  <br/> |
+|**Lassen Sie nicht über die ursprüngliche URL, klicken Sie auf Benutzer** <br/> |Wenn diese Option ausgewählt ist, können nicht Benutzer hinter einer [Seite Warnung](atp-safe-links-warning-pages.md) auf eine URL fortgesetzt, die böswilligen werden bestimmt wird.  <br/> |
+|**Schreiben Sie die folgenden URLs nicht** <br/> |Lässt URLs unverändert. Hält eine benutzerdefinierte Liste von sicheren URLs, die keine Überprüfung für eine bestimmte Gruppe von e-Mail-Empfängern in Ihrer Organisation benötigen.  Einzelheiten finden Sie unter [Einrichten einer benutzerdefinierten "Nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , einschließlich kürzlichen Änderungen an der Unterstützung für Platzhalter Sternchen (\*).<br/> |
    
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="next-steps"></a>Nächste Schritte
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[ATP sichere Links in Office 365](atp-safe-links.md)
-  
-[ATP sichere Anlagen in Office 365](atp-safe-attachments.md)
-  
-[Richten Sie eine benutzerdefinierte blockierte URLs Liste verwenden ATP sichere Links](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-  
-[Richten Sie eine benutzerdefinierte "Nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-  
-[Anzeigen der Berichte zu Advanced Threat Protection](view-reports-for-atp.md)
+Nachdem Ihre ATP sichere Links Richtlinien vorhanden sind, können Sie sehen, wie für Ihre Organisation ATP funktionsfähig ist, indem Sie Berichte anzeigen. Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
 
-[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  
+- [Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
 
+- [Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center](use-explorer-in-security-and-compliance.md) 

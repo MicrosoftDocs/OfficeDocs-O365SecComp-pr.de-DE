@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850839"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238407"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -82,18 +82,9 @@ Wie Sie Ihre Richtlinien ATP sichere Anlagen eingerichtet haben, wählen Sie ein
 |**Dynamische Übermittlung** <br/> |Übermittelt Nachrichten sofort  <br/> Anlagen ersetzt mit einer Platzhalterdatei, bis Überprüfung abgeschlossen ist, und klicken Sie dann die Anlagen überwacht, wenn keine Schadsoftware ermittelt wird  <br/> Enthält als Anlage Vorschau von Funktionen für die meisten PDF-Dateien und Office-Dateien während der Überprüfung  <br/> Sendet Nachrichten mit erkannte Schadsoftware in Quarantäne, in dem ein Sicherheitsadministrator oder Analyst überprüfen und release (diese Nachrichten oder löschen kann)  <br/> [Erfahren Sie mehr über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md) <br/> |Vermeiden Sie Nachricht Verzögerungen beim Schützen der Empfänger schädliche Dateien  <br/> Aktivieren von Empfängern für die Vorschau von Anlagen im abgesicherten Modus während Überprüfung durchgeführt wird  <br/> |
 |**Aktivieren Sie die Umleitung** <br/> |Gilt, wenn die Option überwachen, blockieren oder Ersetzen ausgewählt wird  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, in dem können Sicherheitsadministratoren oder Analysten untersuchen  <br/> |Aktivieren der Sicherheitsadministratoren und Analysten verdächtige Anlagen überprüfen  <br/> |
    
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="next-steps"></a>Nächste Schritte
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[ATP sichere Anlagen in Office 365](atp-safe-attachments.md)
-  
-[ATP sichere Links in Office 365](atp-safe-links.md)
-  
-[Einrichten von sicheren Links ATP Richtlinien in Office 365](set-up-atp-safe-links-policies.md)
-  
-[Anzeigen der Berichte zu Advanced Threat Protection](view-reports-for-atp.md)
-
-[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  
-
+Nachdem Ihre ATP sichere Anlagen Richtlinien vorhanden sind, können Sie sehen, wie für Ihre Organisation ATP funktionsfähig ist, indem Sie Berichte anzeigen. Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
+- [Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
+- [Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
+ 

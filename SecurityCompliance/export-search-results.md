@@ -1,9 +1,9 @@
 ---
-title: 'Exportieren der Inhaltssuchergebnisse aus dem Office 365 Security &amp; Compliance Center '
+title: Exportieren von Suchergebnissen aus der Office 365-Sicherheit und Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center auf einen lokalen Computer. Emaill e-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites als systemeigene Office-Dokumente exportiert werden. '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494066"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539117"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exportieren der Inhaltssuchergebnisse aus dem Office 365 Security &amp; Compliance Center 
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportieren von Suchergebnissen aus der Office 365-Sicherheit und Compliance Center
 
 Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie e-Mail-Ergebnisse exportieren, sind sie als PST-Dateien auf Ihren Computer heruntergeladen. Beim Exportieren von Inhalt aus SharePoint und OneDrive for Business-Websites werden Kopien der systemeigenen Office-Dokumente exportiert. Es sind weitere Dokumente und Berichte, die mit der exportierten Suchergebnisse enthalten sind.
   
@@ -32,7 +32,7 @@ Darüber hinaus werden alle RMS-verschlüsselten e-Mail-Nachrichten, die in den 
   
 Exportieren Sie die Ergebnisse einer Suche Content umfasst die Ergebnisse vorbereiten, und klicken Sie dann auf einen lokalen Computer herunterladen.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um die Suchergebnisse zu exportieren, müssen Sie die Verwaltungsrolle "Export" in die Office 365-Sicherheit zugewiesen werden &amp; Compliance Center. Die integrierten eDiscovery-Manager-Rollengruppe wird diese Rolle zugewiesen. Es ist nicht in der Standardeinstellung der Rollengruppe "Organisationsverwaltung" zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
     
@@ -48,7 +48,7 @@ Exportieren Sie die Ergebnisse einer Suche Content umfasst die Ergebnisse vorber
     
      - Microsoft Edge
     
-        OR
+        ODER
     
      - Microsoft Internet Explorer 10 und höhere Versionen
     
@@ -87,7 +87,7 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** \> **Inhaltssuche**.
     
@@ -176,23 +176,22 @@ Wie bereits erklärt können Sie die Download-Geschwindigkeit erhöhen, durch ei
 
   
 ## <a name="more-information"></a>Weitere Informationen
-<a name="moreinfo"> </a>
 
 Nachfolgend finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
-[Export-Grenzwerte](export-search-results.md#export-limits)
+[Export-Grenzwerte](#export-limits)
   
-[Exportieren von Berichten](export-search-results.md#export-reports)
+[Exportieren von Berichten](#export-reports)
   
 [Exportieren von teilweise indizierte Elemente](#exporting-partially-indexed-items)
+
+[Exportieren einzelne Nachrichten oder PST-Dateien](#exporting-individual-messages-or-pst-files)
   
-[Exportieren einzelne Nachrichten oder PST-Dateien](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[Entschlüsseln von RMS-verschlüsselten Nachrichten](#decrypting-rms-encrypted-messages)
+
+[Dateinamen der exportierten Elemente](#filenames-of-exported-items)  
   
-[Entschlüsseln von RMS-verschlüsselten Nachrichten](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[Dateinamen der exportierten Elemente](export-search-results.md#Filenames-of-exported-items)
-  
-[Verschiedenes](export-search-results.md#miscellaneous)
+[Verschiedenes](#miscellaneous)
   
  ### <a name="export-limits"></a>Export-Grenzwerte
   
@@ -208,7 +207,7 @@ Nachfolgend finden Sie weitere Informationen zum Exportieren von Suchergebnissen
     
   - Exportieren von Berichten Inhaltssuche zählt keine gegen einen der Export Grenzwerte. 
     
-- Wie bereits erwähnt, werden Suchergebnisse aus Postfächern und Websites auf den Azure Speicherort hochgeladen (gemäß [Schritt 1: Vorbereiten der Suchergebnisse für den Export](export-search-results.md#step1)) die maximale Datenübertragungsrate 2 GB pro Stunde.
+- Wie bereits erwähnt, werden Suchergebnisse aus Postfächern und Websites auf den Azure Speicherort hochgeladen (gemäß [Schritt 1: Vorbereiten der Suchergebnisse für den Export](#step-1-prepare-search-results-for-export)) die maximale Datenübertragungsrate 2 GB pro Stunde.
     
 - Die maximale Größe einer PST-Datei, die exportiert werden kann beträgt 10 GB standardmäßig. Das bedeutet, wenn die Suchergebnisse aus dem Postfach eines Benutzers größer als 10 GB sind, die Suchergebnisse für das Postfach in zwei (oder mehrere) separaten PST-Dateien exportiert werden sollen. Darüber hinaus alle Suchergebnisse in eine einzelne PST-Datei exportiert werden soll, wird die PST-Datei in zusätzliche PST-Dateien trennen werden, wenn die Gesamtgröße der Suchergebnisse größer als 10 GB ist. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit denen Sie die Suchergebnisse exportieren. [Ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse](change-the-size-of-pst-files-when-exporting-results.md)angezeigt.
     
