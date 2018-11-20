@@ -21,6 +21,7 @@
 ### [Erste Schritte mit DLP-Richtlinienempfehlungen](get-started-with-dlp-policy-recommendations.md)
 ### [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)
 ### [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
+### [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 ### [Verwenden von Benachrichtigungen und Richtlinientipps in DLP-Richtlinien](use-notifications-and-policy-tips.md)
 ### [Inhalt der DLP-Richtlinienvorlagen](what-the-dlp-policy-templates-include.md)
 ### [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften](protect-documents-that-have-fci-or-other-properties.md)
