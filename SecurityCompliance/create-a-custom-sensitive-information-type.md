@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche in Office 365 Security & Compliance Center erstellen, ändern, entfernen und testen.
-ms.openlocfilehash: 55c7476a1162f657194b9dab4376afb34a76c3f3
-ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
+ms.openlocfilehash: a9234b160d720a04ff6bfeac62899246500ec9b4
+ms.sourcegitcommit: e4291f751d6870d965dba191b4c8f10c5c4ce0b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25895284"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26534026"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen
 
@@ -51,7 +51,7 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im O
 
 Die wichtigsten Unterschiede werden in der folgenden Tabelle näher erläutert:
 
-|Benutzerdefinierte Typen für vertrauliche Informationen in der Benutzeroberfläche|Benutzerdefinierte Typen für vertrauliche Informationen in PowerShell|
+|**Benutzerdefinierte Typen für vertrauliche Informationen in der Benutzeroberfläche**|**Benutzerdefinierte Typen für vertrauliche Informationen in PowerShell**|
 |:-----|:-----|
 |Name und Beschreibung sind in einer Sprache.|Unterstützt mehrere Sprachen für Name und Beschreibung.|
 |Unterstützt ein Muster.|Unterstützt mehrere Muster.|
@@ -91,39 +91,49 @@ Sehen Sie sich das folgende Szenario an: Sie möchten einen benutzerdefinierten 
 
 1. Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und klicken Sie auf **Erstellen**.
 
+    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Erstellen“](media/scc-cust-sens-info-type-new.png)
+
 2. Geben Sie auf der Seite **Namen und Beschreibung auswählen**, die geöffnet wird, die folgenden Werte ein:
 
   - **Name**: Mitarbeiter-ID.
 
-  - **Beschreibung** Neunstellige Contoso-Mitarbeiter-ID-Nummer erkennen.
+  - **Beschreibung**: Neunstellige Contoso-Mitarbeiter-ID-Nummern erkennen.
 
-  Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+    ![Seite „Name und Beschreibung“](media/scc-cust-sens-info-type-new-name-desc.png)
+
+    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 3. Klicken Sie auf der Seite **Anforderungen für Übereinstimmung** auf **Element hinzufügen**, um die folgenden Einstellungen zu konfigurieren:
 
-  - **Inhalt erkennen, der Folgendes enthält**:
+    - **Inhalt erkennen, der Folgendes enthält**:
  
-    a. Klicken Sie auf die Option, dass **eines der folgenden Elemente enthalten sein muss**, und wählen Sie **Regulärer Ausdruck** aus.
+      a. Klicken Sie auf die Option, dass **eines der folgenden Elemente enthalten sein muss**, und wählen Sie **Regulärer Ausdruck** aus.
 
-    b. Geben Sie in dem Feld für den regulären Ausdruck `(\s)(\d{9})(\s)` ein (neunstellige Zahlen umgeben von einem Leerzeichen).
+      b. Geben Sie in dem Feld für den regulären Ausdruck `(\s)(\d{9})(\s)` ein (neunstellige Zahlen umgeben von einem Leerzeichen).
   
-  - **Unterstützende Elemente**: Klicken Sie auf **Unterstützende Elemente hinzufügen**, und wählen Sie **Enthält die folgende Schlüsselwortliste** aus.
+    - **Unterstützende Elemente**: Klicken Sie auf **Unterstützende Elemente hinzufügen**, und wählen Sie **Enthält die folgende Schlüsselwortliste** aus.
 
-  - Konfigurieren Sie in dem Bereich **Enthält die folgende Schlüsselwortliste**, der angezeigt wird, die folgenden Einstellungen:
+    - Konfigurieren Sie in dem Bereich **Enthält die folgende Schlüsselwortliste**, der angezeigt wird, die folgenden Einstellungen:
 
-    - **Schlüsselwortliste**: Geben Sie den folgenden Wert ein: Mitarbeiter,ID,Ausweis.
+      - **Schlüsselwortliste**: Geben Sie den folgenden Wert ein: Mitarbeiter,ID,Ausweis.
 
-    - **Mindestanzahl**: Behalten Sie den Standardwert 1 bei.
+      - **Mindestanzahl**: Behalten Sie den Standardwert 1 bei.
 
-  - Behalten Sie den Standardwert 60 für den **Zuverlässigkeitsgrad** bei. 
+    - Behalten Sie den Standardwert 60 für den **Zuverlässigkeitsgrad** bei. 
 
-  - Behalten Sie den Standardwert 300 für den **Zeichenabstand** bei.
+    - Behalten Sie den Standardwert 300 für den **Zeichenabstand** bei.
 
-  Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+    ![Seite „Anforderungen für Übereinstimmung“](media/scc-cust-sens-info-type-new-reqs.png)
+
+    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
 4. Überprüfen Sie auf der Seite **Überprüfen und Abschließen** die Einstellungen, und klicken Sie auf **Fertig stellen**.
 
-5. Auf der nächsten Seite werden Sie aufgefordert, den neuen benutzerdefinierten Typ für vertrauliche Informationen zu testen. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Information im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). Klicken Sie andernfalls auf **Abbrechen**.
+    ![Seite „Überprüfen und Abschließen“](media/scc-cust-sens-info-type-new-review.png)
+
+5. Auf der nächsten Seite werden Sie aufgefordert, den neuen benutzerdefinierten Typ für vertrauliche Informationen zu testen. Klicken Sie dazu auf **Ja**. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Information im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). Um die Regel später zu testen, klicken Sie auf **Nein**.
+
+    ![Testempfehlungsseite](media/scc-cust-sens-info-type-new-test.png)
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -135,9 +145,15 @@ Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen ers
 
 ## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>Ändern von benutzerdefinierten Typen für vertrauliche Information im Security & Compliance Center
 
-**Hinweis**: Sie können nur benutzerdefinierte Typen für vertrauliche Informationen ändern; integrierte Typen vertraulicher Informationen können nicht geändert werden. Sie können aber PowerShell verwenden, um integrierte Typen vertraulicher Informationen zu exportieren, diese anzupassen und sie als benutzerdefinierte Typen vertraulicher Informationen zu importieren. Weitere Informationen finden Sie unter [Anpassen eines integrierten benutzerdefinierten Typs für vertrauliche Informationen](customize-a-built-in-sensitive-information-type.md).
+**Hinweise**:
 
-Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und wählen Sie den benutzerdefinierten Typ vertraulicher Informationen aus, den Sie ändern möchten.
+- Sie können nur benutzerdefinierte Typen für vertrauliche Informationen ändern; integrierte Typen vertraulicher Informationen können nicht geändert werden. Sie können aber PowerShell verwenden, um integrierte Typen vertraulicher Informationen zu exportieren, diese anzupassen und sie als benutzerdefinierte Typen vertraulicher Informationen zu importieren. Weitere Informationen finden Sie unter [Anpassen eines integrierten benutzerdefinierten Typs für vertrauliche Informationen](customize-a-built-in-sensitive-information-type.md).
+
+- Sie können nur benutzerdefinierte Typen für vertrauliche Informationen ändern, die Sie in der Benutzeroberfläche erstellt haben. Wenn Sie das [PowerShell-Verfahren](create-a-custom-sensitive-information-type-in-scc-powershell.md) zum Importieren eines Regelpakets für benutzerdefinierte Typen für vertrauliche Informationen verwendet haben, erhalten Sie eine Fehlermeldung.
+
+Wechseln Sie im Security & Compliance Center zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und wählen Sie den benutzerdefinierten Typ vertraulicher Informationen aus, den Sie ändern möchten. Klicken Sie anschließend auf **Bearbeiten**.
+
+  ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Bearbeiten“](media/scc-cust-sens-info-type-edit.png)
 
 Hier stehen die gleichen Optionen wie beim Erstellen des benutzerdefinierten Typs für vertrauliche Informationen im Security & Compliance Center zur Verfügung. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -145,7 +161,7 @@ Hier stehen die gleichen Optionen wie beim Erstellen des benutzerdefinierten Typ
 
 Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erfolgreich geändert haben, führen Sie einen der folgenden Schritte aus:
 
-  - Wechseln Sie zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, um die Eigenschaften des geänderten benutzerdefinierten Typs vertraulicher Informationen zu überprüfen.
+  - Wechseln Sie zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, um die Eigenschaften des geänderten benutzerdefinierten Typs vertraulicher Informationen zu überprüfen. 
 
   - Testen Sie den geänderten benutzerdefinierten Typ für vertrauliche Informationen. Weitere Informationen finden Sie unter [Testen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
 
@@ -161,12 +177,13 @@ Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erf
 
 2. Klicken Sie in dem Fenster, das geöffnet wird, auf **Löschen** (oder auf **Typen vertraulicher Informationen löschen**, wenn Sie mehrere ausgewählt haben).
 
+    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Löschen“](media/scc-cust-sens-info-type-delete.png)
+
 3. Klicken Sie in der angezeigten Warnmeldung auf **Ja**.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
 Um sicherzustellen, dass Sie einen benutzerdefinierten Typ vertraulicher Informationen erfolgreich entfernt haben, wechseln Sie zu **Klassifizierungen** \> **Typen vertraulicher Informationen**, und bestätigen Sie, dass der benutzerdefinierte Typ vertraulicher Informationen nicht mehr aufgeführt ist.
-
 
 ## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a>Testen von benutzerdefinierten Typen für vertrauliche Informationen im Security & Compliance Center
 
@@ -174,6 +191,14 @@ Um sicherzustellen, dass Sie einen benutzerdefinierten Typ vertraulicher Informa
 
 2. Wählen Sie einen oder mehrere benutzerdefinierte Typen vertraulicher Informationen aus, die Sie testen möchten. Klicken Sie in dem Fenster, das geöffnet wird, auf **Typ testen** (oder auf **Typen vertraulicher Informationen testen**, wenn Sie mehrere ausgewählt haben).
 
-3. Laden Sie auf der Seite, die geöffnet wird, per Drag & Drop ein zu testendes Dokument hoch, oder klicken Sie auf **Durchsuchen**, und wählen Sie eine Datei aus.
+    ![Speicherort der Typen für vertrauliche Informationen und Schaltfläche „Typ testen“](media/scc-cust-sens-info-type-test.png)
+
+3. Laden Sie auf der Seite **Zu testende Datei hochladen**, die geöffnet wird, per Drag & Drop ein zu testendes Dokument hoch, oder klicken Sie auf **Durchsuchen**, und wählen Sie eine Datei aus.
+
+    ![Seite „Zu testende Datei hochladen“](media/scc-cust-sens-info-type-test-upload.png)
 
 4. Klicken Sie auf die Schaltfläche **Testen**, um das Dokument auf Musterübereinstimmungen in der Datei zu testen.
+
+5. Klicken Sie auf der Seite **Übereinstimmungsergebnisse** auf **Fertig stellen**.
+
+    ![Übereinstimmungsergebnisse](media/scc-cust-sens-info-type-test-results.png)
