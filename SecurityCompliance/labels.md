@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Aufbewahrungsbezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Aufbewahrungsbezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698041"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299249"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -52,9 +52,10 @@ Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
   - Sie müssen sich nicht darauf verlassen, dass die Benutzer alle Inhalte richtig klassifizieren.
     
   - Benutzer müssen nicht mehr über Governance-Richtlinien Bescheid wissen, sondern können sich stattdessen auf ihre Arbeit konzentrieren.
-    
-    Beachten Sie, dass für automatisch angewendete Bezeichnungen ein Office 365 Enterprise E5-Abonnement erforderlich ist.
-    
+
+  > [!NOTE]
+  > Die Möglichkeit, Bezeichnungen automatisch anzuwenden, erfordert eine Office 365 Enterprise E5-Lizenz für jeden Benutzer, der die Berechtigung zum Bearbeiten von Inhalten hat, die auf einer Website oder in einem Postfach automatisch mit Bezeichnungen versehen wurden. Benutzer, die nur Schreibzugriff haben, benötigen keine Lizenz.
+      
 - **Wenden Sie eine Standardaufbewahrungsbezeichnung auf eine Dokumentbibliothek** in SharePoint- und Office 365-Gruppenwebsites an, sodass alle Dokumente in dieser Bibliothek mit der Standardaufbewahrungsbezeichnung versehen werden. 
     
 - **Implementieren Sie die Datensatzverwaltung im gesamten Office 365**, darunter E-Mails und Dokumente. Sie können eine Aufbewahrungsbezeichnung verwenden, um Inhalt als Datensatz zu klassifizieren. In diesem Fall kann die Bezeichnung nicht geändert oder entfernt werden, und der Inhalt kann nicht bearbeitet oder gelöscht werden. 
