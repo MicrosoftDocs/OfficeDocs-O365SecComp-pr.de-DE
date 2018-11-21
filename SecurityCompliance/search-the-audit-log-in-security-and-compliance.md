@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Office 365-Sicherheit und Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522807"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626151"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit und Compliance Center
 
@@ -40,9 +40,9 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
     
 - Benutzer- und Admin-Aktivität im Schlingern
     
-- eDiscovery-Aktivitäten in der Office 365-Sicherheit &amp; Compliance Center
+- eDiscovery-Aktivitäten im Compliance Center & Sicherheit in Office 365
     
-- Benutzer- und Admin-Aktivität in Power BI für Office 365
+- Benutzer- und Admin Aktivität in Power BI
     
 - Benutzer- und Admin-Aktivität in Microsoft-Teams
 
@@ -123,7 +123,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     
 - Exchange Online Überwachungsprotokolle bestehen aus zwei Arten von Ereignissen: Exchange Admin-Ereignisse (von Administratoren ausgeführten Aktionen) und Postfach-Ereignisse (von Benutzern für Postfächer ausgeführte Aktionen). Beachten Sie, dass die Überwachung von Postfächern in der Standardeinstellung nicht aktiviert ist. Es muss für jedes Benutzerpostfach aktivieren, bevor der Postfach-Ereignisse im Überwachungsprotokoll Office 365 für durchsucht werden können. Weitere Informationen zur Überwachung von Postfächern und die postfachüberwachung für Aktionen, die angemeldet sind, finden Sie unter [Überwachung in Office 365 Postfach zu aktivieren](enable-mailbox-auditing.md).
     
-- Überwachungsprotokollierung für Power BI ist nicht standardmäßig aktiviert. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Anweisungen finden Sie unter [Power BI Überwachung](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+- Überwachungsprotokollierung für Power BI ist nicht standardmäßig aktiviert. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Eine Anleitung finden Sie im Abschnitt "Überwachungsprotokolle" [Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)-Verwaltungsportal.
     
     
 ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
@@ -276,7 +276,6 @@ Sie können die Ergebnisse einer Audit Log-Suche in einer durch Trennzeichen get
     
     Eine Beschreibung der Eigenschaften, die in der Spalte **AuditData** in der CSV-Datei aufgelistet sind, wenn Sie alle Ergebnisse und den Dienst jedes Herunterladen einer betrifft, finden Sie unter [Detailangaben zu den Eigenschaften in der Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
-  
 ## <a name="audited-activities"></a>Überwachten Aktivitäten
 
 Die Tabellen in diesem Abschnitt beschreiben die Aktivitäten, die in Office 365 überwacht werden. Sie können für diese Ereignisse durch Suchen der Überwachungsprotokolle in das Wertpapier protokollieren suchen &amp; Compliance Center. Klicken Sie auf die Registerkarte **Suchen im Überwachungsprotokoll** für eine schrittweise Anleitung. 
@@ -565,32 +564,9 @@ Eine Liste und eine detaillierte Beschreibung der eDiscovery-Aktivitäten, die p
   
 ### <a name="power-bi-activities"></a>Power BI-Aktivitäten
   
-Die folgende Tabelle enthält die Benutzer- und Admin Aktivitäten in Power BI, die in das Überwachungsprotokoll Office 365 angemeldet sind.
+Sie können das Überwachungsprotokoll Aktivitäten in Power BI suchen. Informationen zu Power BI-Aktivitäten finden Sie im Abschnitt "Vorgänge überwacht von Power Power BI" unter [Using Überwachung innerhalb Ihrer Organisation](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
   
- **Wichtig:** Überwachungsprotokollierung für Power BI ist nicht standardmäßig aktiviert. Um Power BI-Aktivitäten im Überwachungsprotokoll Menüschaltfläche 365 suchen, müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Anweisungen finden Sie unter [Power BI Überwachung](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
-  
-|**Anzeigename**|**Operation**|**Beschreibung**|
-|:-----|:-----|:-----|
-|Hinzugefügte Power BI-Gruppenmitglieder  <br/> |AddGroupMembers  <br/> |Ein Element wird einem Power BI Gruppe Arbeitsbereich hinzugefügt.  <br/> |
-|Analysierten Power BI-dataset  <br/> |AnalyzedByExternalApplication  <br/> |Ein Dataset analysiert wird von einer externen Anwendung.  <br/> |
-|Erstellte Power BI-dashboard  <br/> |CreateDashboard  <br/> |Es wird ein neues Dashboard erstellt.  <br/> |
-|Erstellte Power BI-Gruppe  <br/> |CreateGroup  <br/> |Eine Gruppe wird erstellt.  <br/> |
-|Organisatorische Power BI Inhaltspaket erstellt  <br/> |CreateOrgApp  <br/> |Eine Organisationseinheit Inhaltspaket wird erstellt.  <br/> |
-|Gelöschte Power BI-dashboard  <br/> |DeleteDashboard  <br/> |Ein Dashboard wird gelöscht.  <br/> |
-|Gelöschte Power BI-dataset  <br/> |DeleteDataset  <br/> |Ein Dataset wird gelöscht.  <br/> |
-|Gelöschte Power BI-Bericht  <br/> |DeleteReport  <br/> |Ein Bericht wird gelöscht.  <br/> |
-|Heruntergeladenen Power BI-Bericht  <br/> |DownloadReport  <br/> |Ein Benutzer lädt einen Bericht Power BI aus dem Dienst auf Ihrem jeweiligen Computer herunter.  <br/> |
-|Bearbeitete Power BI-dashboard  <br/> |EditDashboard  <br/> |Ein Dashboard wird umbenannt.  <br/> |
-|Exportierte visual Power BI Report-Daten  <br/> |ExportReport  <br/> |Daten werden von einem Bericht Kachel exportiert.  <br/> |
-|Exportierten Daten von Power BI-Kachel  <br/> |ExportTile  <br/> |Daten werden von einem Dashboard Kachel exportiert.  <br/> |
-|Gedruckte Power BI-dashboard  <br/> |PrintDashboard  <br/> |Ein Dashboard wird gedruckt.  <br/> |
-|Power BI-Bericht Druckseite  <br/> |PrintReport  <br/> |Ein Bericht gedruckt wird.  <br/> |
-|Power BI-Bericht Web veröffentlicht  <br/> |PublishToWebReport  <br/> |Ein Bericht wird im Web veröffentlicht.  <br/> |
-|Freigegebene Power BI-dashboard  <br/> |ShareDashboard  <br/> |Ein Dashboard werden freigegeben.  <br/> |
-|Schritte Power BI-Testversion  <br/> |OptInForProTrial  <br/> |Ein Benutzer startet einen Power BI Pro Test-Abonnement.  <br/> |
-|Aktualisierte Organisation Power BI-Einstellungen  <br/> |UpdatedAdminFeatureSwitch  <br/> |Ein Administrator hat eine Organisationseinheit Einstellung der Power BI-Verwaltungsportal geändert.  <br/> |
-|Angezeigte Power BI-dashboard  <br/> |ViewDashboard  <br/> |Ein Dashboard wird angezeigt.  <br/> |
-|Angezeigten Power BI-Bericht  <br/> |ViewReport  <br/> |Ein Bericht angezeigt wird.  <br/> |
+Beachten Sie, dass die überwachungsprotokollierung für Power BI standardmäßig nicht aktiviert ist. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Eine Anleitung finden Sie im Abschnitt "Überwachungsprotokolle" [Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)-Verwaltungsportal.
   
 ### <a name="microsoft-teams-activities"></a>Microsoft-Teams, Aktivitäten
   
