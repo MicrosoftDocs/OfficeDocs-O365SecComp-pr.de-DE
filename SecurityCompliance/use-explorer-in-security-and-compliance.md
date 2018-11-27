@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 description: Erfahren Sie mehr über Explorer (auch als Bedrohung Explorer bezeichnet) in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: 1b3088028651b445d890333a25804902843d915d
-ms.sourcegitcommit: 7f45890ecfa5e15575df4e3ebe472a8dd8d99112
+ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
+ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "26674920"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26699928"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center
 
