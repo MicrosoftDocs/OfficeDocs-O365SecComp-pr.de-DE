@@ -100,7 +100,7 @@
 |------|------------|--------|
 | 10/23/2018 | [Einrichten Ihres EOP-Diensts](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | Geändert |
 | 10/23/2018 | [Weitere Informationen zu Spoofing Intelligence](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | Geändert |
-| 10/23/2018 | [Verwalten von rechtlichen Ermittlungen in Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | Geändert |
+| 10/23/2018 | [Verwalten von rechtlichen Untersuchungen in Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | Geändert |
 | 10/24/2018 | [Erste Schritte mit Office 365 Threat Intelligence](/Office365/SecurityCompliance/get-started-with-ti) | Geändert |
 | 10/24/2018 | [Übersicht über Vertraulichkeitsbezeichnungen](/Office365/SecurityCompliance/sensitivity-labels) | Geändert |
 | 10/24/2018 | [Senden von e-Mail-Benachrichtigungen und Anzeigen von Tipps zu Richtlinien für DLP-Richtlinien](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | Geändert |
@@ -152,18 +152,18 @@
 | 11/2/2018 | [Einrichten von Richtlinien für Office 365 ATP sichere Links](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | Geändert |
 
 
-## <a name="week-of-november-05-2018"></a>Woche vom 05 November 2018
+## <a name="week-of-november-05-2018"></a>Woche vom 05. November 2018
 
 
 | Veröffentlicht am |Titel des Themas | Änderung |
 |------|------------|--------|
-| 11/5/2018 | [Office 365-Sicherheit und Compliance](/Office365/SecurityCompliance/index) | Geändert |
-| 11/5/2018 | [Office 365 Secure Score](/Office365/SecurityCompliance/office-365-secure-score) | Geändert |
-| 11/5/2018 | [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](/Office365/SecurityCompliance/zero-hour-auto-purge) | Geändert |
+| 05.11.2018 | [Office 365-Sicherheit und Compliance](/Office365/SecurityCompliance/index) | Geändert |
+| 05.11.2018 | [Office 365 Secure Score](/Office365/SecurityCompliance/office-365-secure-score) | Geändert |
+| 05.11.2018 | [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](/Office365/SecurityCompliance/zero-hour-auto-purge) | Geändert |
 | 11/6/2018 | [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | Geändert |
 | 11/6/2018 | [Technische Details zur Verschlüsselung in Office 365](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | Geändert |
 | 11/8/2018 | [Definieren von e-Mail-Flussregeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | Geändert |
-| 11/8/2018 | [Suchen Sie nach Inhalten in Office 365](/Office365/SecurityCompliance/search-for-content) | Geändert |
+| 11/8/2018 | [Suchen nach Inhalten in Office 365](/Office365/SecurityCompliance/search-for-content) | Geändert |
 | 11/8/2018 | [Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | Geändert |
 | 11/8/2018 | [Office 365 ATP sichere Anlagen](/Office365/SecurityCompliance/atp-safe-attachments) | Geändert |
 | 11/8/2018 | [Office 365 ATP sichere Links Warnung Seiten](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | Geändert |
@@ -215,3 +215,13 @@
 | 11/16/2018 | [Übersicht über Aufbewahrungsrichtlinien](/Office365/SecurityCompliance/retention-policies) | Geändert |
 | 11/16/2018 | [Übersicht über Vertraulichkeitsbezeichnungen](/Office365/SecurityCompliance/sensitivity-labels) | Geändert |
 | 11/16/2018 | [Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | Geändert |
+
+
+## <a name="week-of-november-19-2018"></a>Woche vom 19 November 2018
+
+
+| Veröffentlicht am |Titel des Themas | Änderung |
+|------|------------|--------|
+| 11/19/2018 | [Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | Geändert |
+| 11/19/2018 | [Aktivieren des Berichtsnachrichts-Add-Ins](/Office365/SecurityCompliance/enable-the-report-message-add-in) | Geändert |
+| 11/20/2018 | [Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | Geändert |
