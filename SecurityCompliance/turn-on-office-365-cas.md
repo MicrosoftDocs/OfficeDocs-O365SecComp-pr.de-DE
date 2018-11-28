@@ -1,9 +1,8 @@
 ---
-title: Aktivieren der Office 365-Cloud-App-Sicherheit
+title: Aktivieren von Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,47 +12,43 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lesen Sie diesen Artikel erfahren, wie Office 365 Advanced Security Management, unterstützt von Cloud-App-Sicherheit in Microsoft Azure zu aktivieren.
-ms.openlocfilehash: 6e40dcf1abeae4f9e01502282d00b934431a8258
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528903"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706289"
 ---
-# <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="b15e2-103">Aktivieren der Office 365-Cloud-App-Sicherheit</span><span class="sxs-lookup"><span data-stu-id="b15e2-103">Turn on Office 365 Cloud App Security</span></span>
+# <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="b6238-103">Aktivieren von Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="b6238-103">Turn on Office 365 Cloud App Security</span></span>
   
-|<span data-ttu-id="b15e2-104">Auswertung **\>**</span><span class="sxs-lookup"><span data-stu-id="b15e2-104">****Evaluation** \>**</span></span>|<span data-ttu-id="b15e2-105">Planen der **\>**</span><span class="sxs-lookup"><span data-stu-id="b15e2-105">****Planning** \>**</span></span>|<span data-ttu-id="b15e2-106">Bereitstellung **\>**</span><span class="sxs-lookup"><span data-stu-id="b15e2-106">****Deployment** \>**</span></span>|<span data-ttu-id="b15e2-107">Auslastung \*\*\*</span><span class="sxs-lookup"><span data-stu-id="b15e2-107">****Utilization****</span></span>|
+|<span data-ttu-id="b6238-104">Auswertung **\>**</span><span class="sxs-lookup"><span data-stu-id="b6238-104">\*\*\*\*Evaluation\*\* \>\*\*</span></span>|<span data-ttu-id="b6238-105">Planen der **\>**</span><span class="sxs-lookup"><span data-stu-id="b6238-105">\*\*\*\*Planning\*\* \>\*\*</span></span>|<span data-ttu-id="b6238-106">Bereitstellung **\>**</span><span class="sxs-lookup"><span data-stu-id="b6238-106">\*\*\*\*Deployment\*\* \>\*\*</span></span>|<span data-ttu-id="b6238-107">Auslastung \*\*\*</span><span class="sxs-lookup"><span data-stu-id="b6238-107">\*\*\*\*Utilization\*\*\*\*</span></span>|
 |:-----|:-----|:-----|:-----|
-|[<span data-ttu-id="b15e2-108">Starten Sie auswerten</span><span class="sxs-lookup"><span data-stu-id="b15e2-108">Start evaluating</span></span>](office-365-cas-overview.md) <br/> |[<span data-ttu-id="b15e2-109">Starten der Planung</span><span class="sxs-lookup"><span data-stu-id="b15e2-109">Start planning</span></span>](get-ready-for-office-365-cas.md) <br/> |<span data-ttu-id="b15e2-110">Sie sind hier!</span><span class="sxs-lookup"><span data-stu-id="b15e2-110">You are here!</span></span>  <br/> [<span data-ttu-id="b15e2-111">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="b15e2-111">Next step</span></span>](activity-policies-and-alerts.md) <br/> |[<span data-ttu-id="b15e2-112">Starten Sie die Nutzung</span><span class="sxs-lookup"><span data-stu-id="b15e2-112">Start utilizing</span></span>](utilization-activities-for-ocas.md) <br/> |
+|[<span data-ttu-id="b6238-108">Starten Sie auswerten</span><span class="sxs-lookup"><span data-stu-id="b6238-108">Start evaluating</span></span>](office-365-cas-overview.md) <br/> |[<span data-ttu-id="b6238-109">Starten der Planung</span><span class="sxs-lookup"><span data-stu-id="b6238-109">Start planning</span></span>](get-ready-for-office-365-cas.md) <br/> |<span data-ttu-id="b6238-110">Sie sind hier!</span><span class="sxs-lookup"><span data-stu-id="b6238-110">You are here!</span></span>  <br/> [<span data-ttu-id="b6238-111">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="b6238-111">Next step</span></span>](activity-policies-and-alerts.md) <br/> |[<span data-ttu-id="b6238-112">Starten Sie die Nutzung</span><span class="sxs-lookup"><span data-stu-id="b6238-112">Start utilizing</span></span>](utilization-activities-for-ocas.md) <br/> |
   
-## <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="b15e2-113">Aktivieren der Office 365-Cloud-App-Sicherheit</span><span class="sxs-lookup"><span data-stu-id="b15e2-113">Turn on Office 365 Cloud App Security</span></span>
+## <a name="turn-on-office-365-cloud-app-security"></a><span data-ttu-id="b6238-113">Aktivieren von Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="b6238-113">Turn on Office 365 Cloud App Security</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="b15e2-p101">Sie müssen ein globaler Administrator oder Sicherheitsadministrator zum Ausführen der folgenden Aufgabe sein. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In der Reihenfolge für Office 365-Cloud-App-Sicherheit zu beheben, **muss die überwachungsprotokollierung aktiviert werden** , für die Office 365-Umgebung. Weitere Informationen finden Sie unter [Aktivieren von Office 365 Such-Protokoll aktiviert oder deaktiviert](turn-audit-log-search-on-or-off.md).</span><span class="sxs-lookup"><span data-stu-id="b15e2-p101">You must be a global administrator or security administrator to perform the following task. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In order for Office 365 Cloud App Security to work correct, **audit logging must be turned on** for your Office 365 environment. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).</span></span> 
+> <span data-ttu-id="b6238-p101">Sie müssen ein globaler Administrator oder Sicherheitsadministrator zum Ausführen der folgenden Aufgabe sein. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In der Reihenfolge für Office 365-Cloud-App-Sicherheit zu beheben, **muss die überwachungsprotokollierung aktiviert werden** , für die Office 365-Umgebung. Weitere Informationen finden Sie unter [Aktivieren von Office 365 Such-Protokoll aktiviert oder deaktiviert](turn-audit-log-search-on-or-off.md).</span><span class="sxs-lookup"><span data-stu-id="b6238-p101">You must be a global administrator or security administrator to perform the following task. To learn more, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In order for Office 365 Cloud App Security to work correct, **audit logging must be turned on** for your Office 365 environment. For more information, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).</span></span> 
   
-1. <span data-ttu-id="b15e2-p102">Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.)</span><span class="sxs-lookup"><span data-stu-id="b15e2-p102">As a global administrator or security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.)</span></span> 
+1. <span data-ttu-id="b6238-p102">Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.)</span><span class="sxs-lookup"><span data-stu-id="b6238-p102">As a global administrator or security administrator, go to [https://security.microsoft.com](https://security.microsoft.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.)</span></span> 
     
-2. <span data-ttu-id="b15e2-120">Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.</span><span class="sxs-lookup"><span data-stu-id="b15e2-120">Go to **Alerts** \> **Manage advanced alerts**.</span></span>
+2. <span data-ttu-id="b6238-120">Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.</span><span class="sxs-lookup"><span data-stu-id="b6238-120">Go to **Alerts** \> **Manage advanced alerts**.</span></span>
     
-3. <span data-ttu-id="b15e2-121">Aktivieren Sie das Kontrollkästchen Sie **auf Office 365-Cloud-App-Sicherheit**.</span><span class="sxs-lookup"><span data-stu-id="b15e2-121">Select **Turn on Office 365 Cloud App Security**.</span></span>
+3. <span data-ttu-id="b6238-121">Aktivieren Sie das Kontrollkästchen Sie **auf Office 365-Cloud-App-Sicherheit**.</span><span class="sxs-lookup"><span data-stu-id="b6238-121">Select **Turn on Office 365 Cloud App Security**.</span></span>
     
-4. <span data-ttu-id="b15e2-122">Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.</span><span class="sxs-lookup"><span data-stu-id="b15e2-122">Choose **Go to Office 365 Cloud App Security**.</span></span>
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    <span data-ttu-id="b15e2-124">Dadurch gelangen Sie Cloud App Sicherheit in Office 365-Portal, können Berichte anzeigen und erstellen oder Bearbeiten Ihrer Richtlinien.</span><span class="sxs-lookup"><span data-stu-id="b15e2-124">This takes you to the Office 365 Cloud App Security portal, where you can view reports and create or edit your policies.</span></span>
+4. <span data-ttu-id="b6238-122">Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.</span><span class="sxs-lookup"><span data-stu-id="b6238-122">Choose **Go to Office 365 Cloud App Security**.</span></span><br/><span data-ttu-id="b6238-123">![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)</span><span class="sxs-lookup"><span data-stu-id="b6238-123">![In the Security &amp; Compliance Center, choose Manage Advanced Alerts to go to Office 365 Cloud App Security](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)</span></span><br/><span data-ttu-id="b6238-124">Dadurch gelangen Sie Cloud App Sicherheit in Office 365-Portal, können Berichte anzeigen und erstellen oder Bearbeiten Ihrer Richtlinien.</span><span class="sxs-lookup"><span data-stu-id="b6238-124">This takes you to the Office 365 Cloud App Security portal, where you can view reports and create or edit your policies.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="b15e2-p103">Wenn Sie Office 365-Cloud-App-Sicherheit aktivieren, wird in [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)Überwachungsinformationen über Ihre Office 365-Benutzerkonten und die Benutzeraktivitäten übertragen. Dies ermöglicht Office 365 erweiterte Benachrichtigungen, Filtern und anderen Features bereitstellen, damit können Sie Informationen abrufen und Ausführen einer Aktion zu verdächtigen Aktivitäten.</span><span class="sxs-lookup"><span data-stu-id="b15e2-p103">When you turn on Office 365 Cloud App Security, auditing information about your Office 365 user accounts and user activities is transferred to [Microsoft Cloud App Security](https://aka.ms/whatiscas). This allows Office 365 to provide advanced alerts, filtering, and other features so you can get information and take action about suspicious activities.</span></span> 
+> <span data-ttu-id="b6238-p103">Wenn Sie Office 365-Cloud-App-Sicherheit aktivieren, wird in [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)Überwachungsinformationen über Ihre Office 365-Benutzerkonten und die Benutzeraktivitäten übertragen. Dies ermöglicht Office 365 erweiterte Benachrichtigungen, Filtern und anderen Features bereitstellen, damit können Sie Informationen abrufen und Ausführen einer Aktion zu verdächtigen Aktivitäten.</span><span class="sxs-lookup"><span data-stu-id="b6238-p103">When you turn on Office 365 Cloud App Security, auditing information about your Office 365 user accounts and user activities is transferred to [Microsoft Cloud App Security](https://aka.ms/whatiscas). This allows Office 365 to provide advanced alerts, filtering, and other features so you can get information and take action about suspicious activities.</span></span> 
   
-## <a name="next-steps"></a><span data-ttu-id="b15e2-127">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="b15e2-127">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="b6238-127">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="b6238-127">Next steps</span></span>
 
-- [<span data-ttu-id="b15e2-128">Richtlinien für die Aktivität</span><span class="sxs-lookup"><span data-stu-id="b15e2-128">Activity policies</span></span>](activity-policies-and-alerts.md)
+- [<span data-ttu-id="b6238-128">Richtlinien für die Aktivität</span><span class="sxs-lookup"><span data-stu-id="b6238-128">Activity policies</span></span>](activity-policies-and-alerts.md)
     
-- [<span data-ttu-id="b15e2-129">Anomalie Erkennungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="b15e2-129">Anomaly detection policies</span></span>](anomaly-detection-policies-in-ocas.md)
+- [<span data-ttu-id="b6238-129">Anomalie Erkennungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="b6238-129">Anomaly detection policies</span></span>](anomaly-detection-policies-in-ocas.md)
     
-- [<span data-ttu-id="b15e2-130">Integrieren von Ihrem Server SIEM</span><span class="sxs-lookup"><span data-stu-id="b15e2-130">Integrate your SIEM server</span></span>](integrate-your-siem-server-with-office-365-cas.md)
+- [<span data-ttu-id="b6238-130">Integrieren von Ihrem Server SIEM</span><span class="sxs-lookup"><span data-stu-id="b6238-130">Integrate your SIEM server</span></span>](integrate-your-siem-server-with-office-365-cas.md)
     
-- [<span data-ttu-id="b15e2-131">Gruppieren Sie Ihre IP-Adressen zur Vereinfachung der Verwaltung</span><span class="sxs-lookup"><span data-stu-id="b15e2-131">Group your IP addresses to simplify management</span></span>](group-your-ip-addresses-in-ocas.md)
+- [<span data-ttu-id="b6238-131">Gruppieren Sie Ihre IP-Adressen zur Vereinfachung der Verwaltung</span><span class="sxs-lookup"><span data-stu-id="b6238-131">Group your IP addresses to simplify management</span></span>](group-your-ip-addresses-in-ocas.md)
     
 
