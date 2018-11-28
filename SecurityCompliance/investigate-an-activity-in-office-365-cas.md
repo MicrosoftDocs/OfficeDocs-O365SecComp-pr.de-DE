@@ -1,5 +1,5 @@
 ---
-title: Untersuchen Sie eine Aktivität in Office 365-Cloud-App-Sicherheit
+title: Untersuchen einer Aktivität in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Mit Office 365 Cloud App-Sicherheit können Sie sehen, was passiert in Ihrer Office 365-Umgebung von über suchen und bearbeitenden Aktivitäten und Konten. '
-ms.openlocfilehash: 03db572ebddbdf27371f8e6fd2f0cdd91c14a12f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529041"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706459"
 ---
-# <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Untersuchen Sie eine Aktivität in Office 365-Cloud-App-Sicherheit
+# <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Untersuchen einer Aktivität in Office 365 Cloud App Security
   
 |Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
 |:-----|:-----|:-----|:-----|
@@ -30,17 +30,13 @@ Office 365 funktioniert Cloud App-Sicherheit mit Ihrem [Office 365-Überwachungs
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Wie Sie auf der Seite Aktivität Protokoll abrufen
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. (Siehe [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).)
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. (Siehe [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).)
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm, **untersuchen** \> **Aktivitätsprotokolls**.
-    
-    ![Wählen Sie im Portal O365 CAS überprüfen.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+4. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm, **untersuchen** \> **Aktivitätsprotokolls**.<br/>![Wählen Sie im Portal O365 CAS überprüfen.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>Überprüfen und Untersuchen von Aktivitäten
 
@@ -66,7 +62,7 @@ Verwendung gibt die Seite Aktivität-Protokoll zu kennen lernen mit wie Personen
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Lesen Sie und führen Sie einer Aktion Warnungen in Office 365-Cloud-App-Sicherheit aus](review-office-365-cas-alerts.md)
+- [Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     
 - Überprüfen der [Auslastung Aktivitäten für Office 365-Cloud-App-Sicherheit](utilization-activities-for-ocas.md)
     

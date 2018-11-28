@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Erfahren Sie, wie der Bericht-add-in für Outlook und Outlook im Web, für einzelne Benutzer oder der gesamten Organisation zu aktivieren.
-ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: f35899d3f0be9ee07cb6dae5c5fec40395948340
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618921"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706369"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtsnachrichts-Add-Ins
 
@@ -59,7 +59,7 @@ Als nächsten Schritt erfahren Sie, wie Sie zur [Verwendung des Berichtnachricht
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Abrufen und das Bericht-add-in für Ihre Organisation zu aktivieren
 
 > [!IMPORTANT]
-> Sie müssen ein globaler Office 365-Administrator oder Exchange Online-Administrator, zum Abschließen dieser Aufgabe sein. Darüber hinaus muss Exchange konfiguriert sein, um OAuth-Authentifizierung zum Weitere Informationen finden Sie unter [Anforderungen an Exchange (zentralisierte Bereitstellung von add-ins)](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)zu verwenden. 
+> Sie müssen ein globaler Office 365-Administrator oder Exchange Online-Administrator, zum Abschließen dieser Aufgabe sein. Darüber hinaus muss Exchange konfiguriert sein, um OAuth-Authentifizierung zum Weitere Informationen finden Sie unter [Anforderungen an Exchange (zentralisierte Bereitstellung von add-ins)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)zu verwenden. 
 
 1. Wechseln Sie auf die [Dienste & Seite-add-ins](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) in der neuen Microsoft-365-Verwaltungskonsole.<br/>![Dienste und Add-Ins Seite in der neuen Microsoft-365-Verwaltungskonsole](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

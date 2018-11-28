@@ -1,9 +1,8 @@
 ---
-title: Übersicht über Office 365-Cloud-App-Sicherheit
+title: Übersicht über Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365-Cloud-App-Sicherheit können Sie Einblicke in verdächtige Aktivitäten in Office 365, sodass Sie Situationen, die potenziell problematisch und untersuchen können bei Bedarf Ausführen einer Aktion zum Beheben von Sicherheitsproblemen. '
-ms.openlocfilehash: 84d5b412b62bf113101d6322032f3b643d87d741
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529177"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706399"
 ---
-# <a name="overview-of-office-365-cloud-app-security"></a>Übersicht über Office 365-Cloud-App-Sicherheit
+# <a name="overview-of-office-365-cloud-app-security"></a>Übersicht über Office 365 Cloud App Security
   
 |Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
 |:-----|:-----|:-----|:-----|
@@ -40,13 +39,9 @@ Office 365-Cloud-App-Sicherheit gibt Ihnen einen Einblick in die verdächtige Ak
   
 Erhalten Sie über die Sicherheit der Office 365-Portal Office 365-Cloud-App-Sicherheit &amp; Compliance Center. Hier ist eine gute Möglichkeit zur Verfügung:
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
     
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**. 
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    (Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
+2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**. <br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
     
 3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**. 
     
@@ -62,11 +57,11 @@ Um/Richtlinienvorlagen, in der Cloud App Sicherheit in Office 365-Portal Verwend
   
 Weitere Informationen zu Richtlinien finden Sie unter den folgenden Ressourcen:
   
-- [Aktivität Richtlinien und Warnungen in Office 365-Cloud-App-Sicherheit](activity-policies-and-alerts.md)
+- [Aktivitätsrichtlinien und Warnungen in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
-- [Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit](anomaly-detection-policies-in-ocas.md)
+- [Anomalieerkennungsrichtlinien in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
-## <a name="alerts"></a>Warnungen
+## <a name="alerts"></a>Benachrichtigungen
 
 Wenn Richtlinien definiert sind, benachrichtigen Sie Warnungen zu verdächtigen oder untypischen Aktivitäten, die erkannt wurden. Wählen Sie zum Anzeigen von Benachrichtigungen für Ihre Organisation **Warnungen** in der Navigationsleiste oben auf dem Bildschirm. 
   
@@ -76,9 +71,9 @@ Warnungen dann ausgelöst werden, können Sie überprüfen, um weitere Informati
   
 Weitere Informationen zu Benachrichtigungen finden Sie in den folgenden Ressourcen:
   
-- [Aktivität Richtlinien und Warnungen in Office 365-Cloud-App-Sicherheit](activity-policies-and-alerts.md)
+- [Aktivitätsrichtlinien und Warnungen in Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
-- [Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit](anomaly-detection-policies-in-ocas.md)
+- [Anomalieerkennungsrichtlinien in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
     
 - [Lesen Sie und führen Sie einer Aktion auf Office 365 Cloud App-Sicherheitshinweise aus](review-office-365-cas-alerts.md)
     
@@ -106,7 +101,7 @@ Wenn Sie diese Seite erhalten möchten, wechseln Sie zu **untersuchen** \> **App
   
 ![Wählen Sie im Portal O365 CAS überprüfen.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Verwalten von app-Berechtigungen, die mit Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md)
+[Verwalten von App-Berechtigungen mit Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Cloud-Discovery-Dashboard
 
@@ -118,12 +113,12 @@ Auf diesem Dashboard, in der Cloud App Sicherheit in Office 365-Portal finden **
   
 ![Wählen Sie im Office 365 CAS-Portal Discover](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
-[Überprüfen der app Discovery Ergebnisse in Office 365-Cloud-App-Sicherheit](review-app-discovery-findings-in-ocas.md)
+[Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
   
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Rufen Sie die [Anwendungsfälle für Office 365 Cloud App-Sicherheit und Benutzerhandbuch](https://aka.ms/O365CASGuide)
     
-- [Machen Sie sich bereit für Office 365-Cloud-App-Sicherheit](get-ready-for-office-365-cas.md)
+- [Einstieg in Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
     
 

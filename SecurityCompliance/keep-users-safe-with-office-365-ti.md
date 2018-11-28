@@ -1,5 +1,5 @@
 ---
-title: Halten Sie Ihre Office 365-Benutzer mit Office 365 Bedrohungsanalyse
+title: Schützen von Office 365-Benutzern mit Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,16 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 description: Hier erfahren Sie, wie Office 365 Bedrohungsanalyse Ihrer Organisation Angriffe und Bedrohungen, erkennen und schnell zu mindern und Wiederherstellen von Bedrohungen helfen kann.
-ms.openlocfilehash: f628b941f824e7ad2e327b476288c93f2fc535ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530007"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706099"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Halten Sie Ihre Office 365-Benutzer mit Office 365 Bedrohungsanalyse
+# <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Schützen von Office 365-Benutzern mit Office 365 Threat Intelligence
 
- *Wissen Sie, welche Benutzer Office 365-Angriff erfolgt sind, oder schlechter - gefährdet? Wissen zu mindern und vor Angriffen, auf die Ihre Benutzer abzielen wiederherstellen? Wussten Sie, dass Sie genau mit Sicherheitsfunktionen möglich, die bereits im Office 365 verfügbar sind?* 
+## <a name="overview"></a>Übersicht
+
+Wissen Sie, welche Benutzer Office 365-Angriff erfolgt sind, oder schlechter - gefährdet? Wissen zu mindern und vor Angriffen, auf die Ihre Benutzer abzielen wiederherstellen? Wussten Sie, dass Sie genau mit Sicherheitsfunktionen möglich, die bereits im Office 365 verfügbar sind? 
   
 [Office 365 Bedrohungsanalyse](office-365-ti.md) ist eine Reihe von Funktionen in Ihrem Office 365 E5 Abonnement enthalten. Office 365 Bedrohungsanalyse hat Microsoft IT durchschnittliche Zeit für Social-Engineering Vorfälle um 80 % und höheren Durchsatz Groß-/Kleinschreibung 37 % pro Monat im Vergleich zu den vorherigen 2 Quartale Problembehebung geholfen! 
   
@@ -30,9 +32,9 @@ Wir haben kürzlich neue Funktionen zur Verbesserung von zum Erkennen und Wieder
   
 ## <a name="detect-intrusions-and-threats"></a>Angriffe und Bedrohungen erkennen
 
-Klicken Sie im **Office 365 Threat Explorer** erleichtert die Sicherheit-Admins und Analysten identifizieren und verstehen Bedrohungen, die in Ihrem Unternehmen aktiviert sind, da die komplexen Sicherheitseinstellungen durch scheinbar harmlose Benutzerkonfigurationen wie umgangen werden können weißen Liste der sicheren Absender. Threat Explorer hilft bei Office 365 globaler oder Sicherheit-Admins schnell ermitteln, ob Benutzer von Bedrohungen wie Malware oder Phishing gefährdet sind. Auf diese Weise priorisieren die Benutzer am häufigsten für eine Bedrohung und die erforderlichen Antwort gefährdet sind. 
+[Explorer](use-explorer-in-security-and-compliance.md) (auch als Bedrohung Explorer bezeichnet) unterstützt Sie bei Security-Admins und Analysten identifizieren und verstehen Bedrohungen, die in Ihrem Unternehmen aktiviert sind, da die komplexen Sicherheitseinstellungen durch scheinbar harmlose Benutzerkonfigurationen wie sichere umgangen werden können weißen Liste der Absender. Explorer hilft bei Office 365 globaler oder Sicherheit-Admins schnell ermitteln, ob Benutzer von Bedrohungen wie Malware oder Phishing gefährdet sind. Auf diese Weise priorisieren die Benutzer am häufigsten für eine Bedrohung und die erforderlichen Antwort gefährdet sind. 
   
-Threat Explorer kann Administratoren die Beziehungen zwischen Benutzer und e-Mail zu navigieren. Eine bestimmte e-Mail-Nachricht, die falsche wurde bekannt? Suchen Sie nach, um herauszufinden, welche Benutzer die e-Mail-Nachricht erhalten, führen Sie die Reihe von Ereignissen und finden Sie unter Was diese Benutzer wiederum getan haben.
+Explorer kann Administratoren die Beziehungen zwischen Benutzer und e-Mail zu navigieren. Eine bestimmte e-Mail-Nachricht, die falsche wurde bekannt? Suchen Sie nach, um herauszufinden, welche Benutzer die e-Mail-Nachricht erhalten, führen Sie die Reihe von Ereignissen und finden Sie unter Was diese Benutzer wiederum getan haben.
 
 Wenn Sie Bedrohungsanalyse, [versuchen Sie es jetzt](https://aka.ms/tryo365threatintel3)noch nicht! Und [erfahren Sie mehr über Office 365 Bedrohungsanalyse](https://aka.ms/readmoreabouto365threatintel).
   

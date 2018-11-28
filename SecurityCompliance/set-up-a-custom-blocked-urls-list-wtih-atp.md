@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lesen Sie diesen Artikel erfahren, wie eine Liste der blockierten URLs für Ihre Organisation mit Office 365 erweiterte Threat Protection einrichten. Blockierte URLs werden auf e-Mail-Nachrichten und Office-Dokumenten gemäß Ihrer ATP sichere Links Richtlinien angewendet.
-ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: cd17fe61b7ecd5becd0918323952f304a73a4ce0
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238367"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706209"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte blockierte URLs Liste mit sicheren Links zu Office 365 ATP
 
@@ -33,17 +33,11 @@ Lesen Sie diesen Artikel erfahren, wie Ihre Organisation benutzerdefinierte bloc
 
 [ATP sichere Links in Office 365](atp-safe-links.md) verwendet mehrere Listen, einschließlich Ihrer Organisation benutzerdefinierte blockierte URLs Liste. Wenn Sie die erforderlichen Berechtigungen verfügen, können Sie benutzerdefinierte Liste in Ihrer Organisation einrichten. Zu diesem Zweck Ihrer Organisation Standardrichtlinie sichere Links bearbeiten.
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. Wählen Sie im linken Navigationsbereich, klicken Sie unter **Threat Management** **Policy** \> **Sichere Links**.
     
-3. Klicken Sie im Abschnitt **Richtlinien, die für die gesamte Organisation gelten,** **Standard**wählen Sie aus, und wählen Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten hat einen Stift). 
-    
-    ![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für sichere Links Protection bearbeiten](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-  
-    Dies ist, wo Sie Ihrer Liste der blockierten URLs anzuzeigen. Beachten Sie, dass zuerst alle aufgeführten URLs müssen Sie nicht.
-    
-    ![Die Liste der URLs blockiert ist in der standardmäßigen sichere Links Richtlinie an, in der gesamten Organisation gilt.](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. Klicken Sie im Abschnitt **Richtlinien, die für die gesamte Organisation gelten,** **Standard**wählen Sie aus, und wählen Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten hat einen Stift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für sichere Links Protection bearbeiten](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Dies ist, wo Sie Ihrer Liste der blockierten URLs anzuzeigen. Beachten Sie, dass zuerst alle aufgeführten URLs müssen Sie nicht.<br/>![Die Liste der URLs blockiert ist in der standardmäßigen sichere Links Richtlinie an, in der gesamten Organisation gilt.](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. Wählen Sie das Feld **Geben Sie eine gültige URL** , und geben Sie eine URL, und wählen Sie dann auf das Pluszeichen (+). Es folgen einige Dinge im Hinterkopf behalten: 
     

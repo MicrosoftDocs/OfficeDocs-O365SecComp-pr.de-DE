@@ -1,9 +1,8 @@
 ---
-title: Überprüfen der app Discovery Ergebnisse in Office 365-Cloud-App-Sicherheit
+title: Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Überprüfen von app-Discovery-Berichten in Advanced Security Management kann Ihnen weitere Informationen zur Verwendung von Personen in Ihrer Organisation Cloud-apps. Nachdem Sie die app-Discovery-Berichte mithilfe von Protokolldateien von Firewalls und Proxys erstellt haben, überprüfen Sie die Ergebnisse in das app-Discovery-Dashboard.
-ms.openlocfilehash: 188ef87920b26069e7d99057662b3812be22e46c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528857"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706259"
 ---
-# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Überprüfen der app Discovery Ergebnisse in Office 365-Cloud-App-Sicherheit
+# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security
   
 |Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
 |:-----|:-----|:-----|:-----|
@@ -36,9 +35,7 @@ Das Cloud-Discovery-Dashboard funktioniert mit Ihrer Organisation Web Datenverke
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
     
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
-    
-    (Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
+2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.<br/>(Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
     
 3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
     
@@ -70,21 +67,11 @@ Cloud-Erkennung können Sie um einen genaueren Einblick in apps, Unterdomänen, 
     
 2. Verwenden Sie den Abschnitt Filter, um apps nach Name, Kategorie, Auslastung oder Datum der letzten gesehen anzuzeigen.
     
-3. Zeigen Sie in der Liste der Ergebnisse durch eine app-Name auf den Link **Anzeigen Unterdomänen** anzuzeigen. 
+3. Zeigen Sie in der Liste der Ergebnisse durch eine app-Name auf den Link **Anzeigen Unterdomänen** anzuzeigen.<br/> ![Bewegen Sie den Mauszeiger neben einer app aus, um einen Link zur Detailansicht Unterdomäne anzuzeigen](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Ausführliche Informationen über die gewählte app wird angezeigt.
     
-    ![Bewegen Sie den Mauszeiger neben einer app aus, um einen Link zur Detailansicht Unterdomäne anzuzeigen](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)
-  
-    Ausführliche Informationen über die gewählte app wird angezeigt.
+4. Um Details zu IP-Adressen anzuzeigen, wählen Sie die Registerkarte **IP-Adressen** .<br/>![Cloud-Discovery zeigt detaillierte Informationen zu IP-Adressen](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Wählen Sie in der Liste der Ergebnisse eine einzelne IP-Adresse Ausführlichere Informationen anzeigen.
     
-4. Um Details zu IP-Adressen anzuzeigen, wählen Sie die Registerkarte **IP-Adressen** . 
-    
-    ![Cloud-Discovery zeigt detaillierte Informationen zu IP-Adressen](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)
-  
-    Wählen Sie in der Liste der Ergebnisse eine einzelne IP-Adresse Ausführlichere Informationen anzeigen.
-    
-5. Um Details zu Office 365-Benutzer in Ihrer Organisation anzuzeigen, wählen Sie die Registerkarte **Benutzer** . 
-    
-    ![Cloud-Discovery - Benutzer-info](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Um Details zu Office 365-Benutzer in Ihrer Organisation anzuzeigen, wählen Sie die Registerkarte **Benutzer** .<br/>![Cloud-Discovery - Benutzer-info](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## <a name="exclude-entities"></a>Ausschließen von Entitäten
 
@@ -98,7 +85,7 @@ Sie können bestimmte Benutzer oder die IP-Adressen, um auf bestimmte Informatio
     
 4. Geben Sie den Benutzer oder die IP-Adressen, und geben Sie in das Feld **Kommentare** Informationen, warum Sie die Benutzer oder die IP-Adressen ausschließen. 
     
-5. Wählen Sie **Hinzufügen**.
+5. Wählen Sie **Add** aus.
     
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,9 +1,8 @@
 ---
-title: Lesen Sie und führen Sie einer Aktion Warnungen in Office 365-Cloud-App-Sicherheit aus
+title: Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Verwenden Sie die Seite Warnungen in Office 365-Cloud-App-Sicherheit, zum Anzeigen von potenzieller Problemen und Ausführen einer Aktion. Sie können schließen oder Beheben von Benachrichtigungen, und Sie bei Bedarf anhalten ein Benutzerkontos.
-ms.openlocfilehash: 62431adc73354e573978781f120a11746aef08d9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528839"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706119"
 ---
-# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Lesen Sie und führen Sie einer Aktion Warnungen in Office 365-Cloud-App-Sicherheit aus
+# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security
   
 |Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
 |:-----|:-----|:-----|:-----|
@@ -33,17 +32,13 @@ Sie können die Seite Warnungen in Office 365-Cloud-App-Sicherheit verwenden, po
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Wie Sie auf der Seite Warnungen abrufen
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm **Benachrichtigungen**.
-    
-    ![Klicken Sie auf der Seite Warnungen finden Sie unter Benachrichtigungen, die ausgelöst wurden und Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+4. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm **Benachrichtigungen**.<br/>![Klicken Sie auf der Seite Warnungen finden Sie unter Benachrichtigungen, die ausgelöst wurden und Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Überprüfen und Handle Warnungen
 

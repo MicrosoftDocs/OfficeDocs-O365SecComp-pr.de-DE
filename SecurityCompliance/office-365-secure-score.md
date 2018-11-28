@@ -3,7 +3,7 @@ title: Office 365 Secure Score
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/05/2018
+ms.date: 11/27/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Haben Sie sich je gefragt, wie sicher Ihre Organisation wirklich in Office 365 ist? Sichere Faktor ist hier helfen. Sichere Faktor Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen in Office 365 analysiert und weist eine Bewertung.
-ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999989"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706179"
 ---
 # <a name="office-365-secure-score"></a>Office 365 Secure Score
 
@@ -28,7 +28,7 @@ ms.locfileid: "25999989"
 
 Wenn Ihre Organisation verfügt ein Abonnement, die [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)oder Office 365 Business Premium enthält und Sie über die erforderlichen Berechtigungen verfügen, können Sie Ihrer Organisation sichere Score Vorsichtsmaßnahmen anzeigen [https://securescore.office.com](https://securescore.office.com). 
 
-Alternativ können Sie besuchen, die Sicherheit und Compliance Center ([https://protection.office.com](https://protection.office.com)), in der Sie ein Secure Score-Widget finden, die Sie mit Ihr aktuelles Ergebnis bereitstellt.
+Alternativ können Sie besuchen, die Sicherheit und Compliance Center ([https://security.microsoft.com](https://security.microsoft.com)), in der Sie ein Secure Score-Widget finden, die Sie mit Ihr aktuelles Ergebnis bereitstellt.
 
 ![Sichere Score widget](media/SecureScoreWidget-o365.png)
 
@@ -39,7 +39,7 @@ Das Widget enthält einen Link zur Microsoft Secure Bewertung an, die Sie zum Da
 > [!NOTE]
 > Sie müssen ein Office 365-Administrator, wie ein globaler Administrator oder Sicherheitsadministrator, Secure Score Zugriff auf sein.
   
-## <a name="how-it-works"></a>Und so funktioniert es
+## <a name="how-it-works"></a>Funktionsweise
 
 Sichern Sie die Score Zahlen, was Office 365-Diensten verwendeten (beispielsweise OneDrive, SharePoint und Exchange) klicken Sie dann befasst sich mit Ihrer Einstellungen und Aktivitäten und miteinander verglichen, an einer Grundlinie von Microsoft hergestellt. Erhalten Sie eine Bewertung basierend auf wie ausgerichtete Sie mit bewährten Methoden für die Sicherheit sind.
   
@@ -65,8 +65,6 @@ Verwenden von Secure Bewertung hilft Ihrer Organisation Sicherheit erhöhen, ind
   
 Aber nicht einfach Probieren Sie es. Kunden, die mithilfe von Secure Score haben ihre Score fünfmaliges mehr als Kunden zu erhöhen, die sie nutzen sind nicht sichtbar. (Die Anhebung der dem Faktor entspricht mit den Sicherheitsfunktionen in ihren Organisationen verwendet wird.)
   
-Checken Sie unseren [Blog-Beitrag](https://go.microsoft.com/fwlink/?linkid=836898) , um mehr zu erfahren. 
-  
 > [!NOTE]
 > Sichere Score ist nicht express eine absolute Maßeinheit des wie wahrscheinlich generiertes abgerufen werden sollen. Dieser drückt des Umfang an dem Steuerelemente eingeführt haben die generiertes wird das Risiko offset können. Kein Dienst kann sicherstellen, dass Sie nicht verletzt werden, und Secure Score nicht als keinerlei Garantie interpretiert werden soll. 
   
@@ -74,7 +72,7 @@ Checken Sie unseren [Blog-Beitrag](https://go.microsoft.com/fwlink/?linkid=83689
 
 ### <a name="who-can-use-secure-score"></a>Wer Secure Score verwenden können?
 
-Jeder Benutzer mit Administratorberechtigungen (globaler Administrator oder eine benutzerdefinierte Administratorrolle) für ein Office 365 Enterprise, Microsoft 365 Business oder Office 365 Business Premium-Abonnement zugreifen kann, Secure Punkte zu [https://securescore.office.com](https://securescore.office.com). Benutzer, die Admin-Rolle zugewiesen sind nicht auf Secure Score zugreifen. Jedoch können Administratoren das Tool verwenden, deren Ergebnisse mit anderen Personen in ihrer Organisation freigeben. Wir sind einschließlich andere, nicht-Administrator-Rollen in der Berechtigungsliste in der Zukunft betrachtet. Wenn bestimmte Rollen uns zu berücksichtigen möchten sind, teilen Sie uns durch das Veröffentlichen auf der [Office-Sicherheit, Datenschutz &amp; Compliance Community](https://go.microsoft.com/fwlink/?linkid=836898).
+Jeder Benutzer mit Administratorberechtigungen (globaler Administrator oder eine benutzerdefinierte Administratorrolle) für ein Office 365 Enterprise, Microsoft 365 Business oder Office 365 Business Premium-Abonnement zugreifen kann, Secure Punkte zu [https://securescore.office.com](https://securescore.office.com). Benutzer, die Admin-Rolle zugewiesen sind nicht auf Secure Score zugreifen. Jedoch können Administratoren das Tool verwenden, deren Ergebnisse mit anderen Personen in ihrer Organisation freigeben. Wir sind einschließlich andere, nicht-Administrator-Rollen in der Berechtigungsliste in der Zukunft betrachtet. Wenn bestimmte Rollen uns zu berücksichtigen möchten sind, teilen Sie uns durch das Veröffentlichen in der [Office-Sicherheit, Datenschutz &amp; Compliance Community](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy).
   
 ### <a name="what-does-not-scored-mean"></a>Funktionsweise [nicht bewertet] bedeuten?
 
@@ -108,7 +106,7 @@ Wir freuen uns auf von Ihnen zu hören. Posten Sie Ihre Ideen in die [Office-Sic
   
 ### <a name="something-isnt-working-right-who-should-i-contact"></a>Etwas funktioniert nach rechts nicht. An wen sollte ich mich?
 
-Wenn Sie Probleme haben, informieren Sie uns durch das Veröffentlichen auf der [Office-Sicherheit, Datenschutz &amp; Compliance Community](https://go.microsoft.com/fwlink/?linkid=836898). Wir haben die Community Überwachung und bieten Sie Hilfe.
+Wenn Sie Probleme haben, informieren Sie uns durch das Veröffentlichen in der [Office-Sicherheit, Datenschutz &amp; Compliance Community](hhttps://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy). Wir haben die Community Überwachung und bieten Sie Hilfe.
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>Meine Organisation hat nur bestimmte Sicherheitsfeatures. Wirkt Bewertung sich?
 

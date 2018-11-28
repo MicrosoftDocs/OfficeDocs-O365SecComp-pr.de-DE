@@ -1,9 +1,8 @@
 ---
-title: Bedrohung Tracker - neue und erwähnenswerte
+title: Aufzeichnungen von Bedrohungen – neu und wichtig
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Informationen Sie zu Bedrohung Tracker, einschließlich der neuen erwähnenswerte Tracker, mit denen Ihre Organisation auf der Basis von Sicherheitsbedenken bleiben.
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529346"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706379"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Bedrohung Tracker - neue und erwähnenswerte
+# <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
-[Office 365 Bedrohungsanalyse](office-365-ti.md) ermöglicht Ihrer Organisation Security Team, zu ermitteln und Ausführen einer Aktion gegen Bedrohungen für Sicherheit im Internet. **Beginnend in Ende März 2018 und in den nächsten Wochen Office 365 Bedrohungsanalyse neue Bedrohung Tracker Features enthalten sein sollen**, einschließlich erwähnenswerte Tracker. Lesen Sie diesen Artikel, um eine Übersicht über diese neuen Features und die nächsten Schritte zu erhalten. 
+[Office 365 Bedrohungsanalyse](office-365-ti.md) ermöglicht Ihrer Organisation Security Team, zu ermitteln und Ausführen einer Aktion gegen Bedrohungen für Sicherheit im Internet. Beginnend in Ende März 2018 und in den nächsten Wochen, wird Office 365 Bedrohungsanalyse neue Bedrohung Tracker-Features, einschließlich erwähnenswerte Tracker enthalten. Lesen Sie diesen Artikel, um eine Übersicht über diese neuen Features und die nächsten Schritte zu erhalten. 
   
 ## <a name="what-are-threat-trackers"></a>Was sind Bedrohung Tracker?
 
@@ -36,7 +35,7 @@ Die meisten Tracker Seiten enthalten Trend Zahlen, die in regelmäßigen Abstän
   
 Tracker sind nur einige der vielen großartige Features, die Sie mit [Office 365 Bedrohungsanalyse](office-365-ti.md)erhalten. Falls vorhanden, wird Ihre neue Bedrohung Tracker [erwähnenswerte Tracker](threat-trackers.md#notey), [Trending Tracker](threat-trackers.md#trending), [nachverfolgte Abfragen](threat-trackers.md#trackedq)und [gespeicherte Abfragen](threat-trackers.md#savedq)enthalten.
   
-Wechseln Sie zum Anzeigen und Ihre Bedrohung Tracker verwenden, wenn sie für Ihre Organisation verfügbar sind, für die Sicherheit &amp; Compliance Center ([https://protection.office.com](https://protection.office.com)), und wählen Sie **Threat Management** \> **Bedrohung Tracker**.
+Wechseln Sie zum Anzeigen und Ihre Bedrohung Tracker verwenden, wenn sie für Ihre Organisation verfügbar sind, für die Sicherheit &amp; Compliance Center ([https://security.microsoft.com](https://security.microsoft.com)), und wählen Sie **Threat Management** \> **Bedrohung Tracker**.
   
 > [!NOTE]
 > Um Bedrohung Tracker verwenden, müssen Sie ein Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Reader sein. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 

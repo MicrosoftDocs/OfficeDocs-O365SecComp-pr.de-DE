@@ -1,5 +1,5 @@
 ---
-title: Erstellen von app-Discovery-Berichte mithilfe von Office 365-Cloud-App-Sicherheit
+title: Erstellen von App-Ermittlungsberichten mit Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Erstellen von Berichten mit Office 365 Cloud App-Sicherheit, mit denen Sie zu verstehen, wie Benutzern in Ihrer Organisation Office 365 und andere apps verwendet werden.
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f801c70e839a62b5bbb5423ff5e7c513dd1f09b4
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528870"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706299"
 ---
-# <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Erstellen von app-Discovery-Berichte mithilfe von Office 365-Cloud-App-Sicherheit
+# <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Erstellen von App-Ermittlungsberichten mit Office 365 Cloud App Security
 
 Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherheit.
   
@@ -44,7 +44,7 @@ Um ein app-Discovery-Bericht erstellen, geben Sie die Hersteller-Datenquelle fü
   
 1. Erfassen Sie Ihre [Web-Datenverkehr Protokolle und Datenquellen für Office 365-Cloud-App-Sicherheit](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+2. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 3. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
@@ -71,7 +71,7 @@ Um ein app-Discovery-Bericht erstellen, geben Sie die Hersteller-Datenquelle fü
 
 - [Lesen und Ausführen einer Aktion Warnungen](review-office-365-cas-alerts.md)
     
-- [Überprüfen der app Discovery Ergebnisse in Office 365-Cloud-App-Sicherheit](review-app-discovery-findings-in-ocas.md)
+- [Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
 - Überprüfen der [Auslastung Aktivitäten für Office 365-Cloud-App-Sicherheit](utilization-activities-for-ocas.md)
     

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Beim Einrichten Ihrer ATP sichere Links Richtlinien können Sie eine Not Rewrite einschließen ' Liste der URLs zum Aktivieren von einigen Personen in Ihrer Organisation Websites besuchen, die Sie in der Liste enthalten.
-ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 89fafd5ff7def491a231bc8bc3eb19ef8db16a59
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238387"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26705979"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte-nicht-zum Umschreiben von Adressen URLs-Liste mit sicheren Links zu Office 365 ATP
 
@@ -29,13 +29,11 @@ In diesem Artikel wird beschrieben, wie eine Liste der URLs an, die von sicheren
 
 Sichere Links ATP Protection verwendet mehrere Listen, einschließlich der Liste der blockierten URLs Ihrer Organisation und den Listen "nicht rewrite" für Ausnahmen. Wenn Sie die erforderlichen Berechtigungen verfügen, können Sie Ihre benutzerdefinierte Listen "nicht rewrite" einrichten. Hierzu beim Hinzufügen oder Bearbeiten von Richtlinien für sichere Links, die für bestimmte Empfänger in Ihrer Organisation gelten. 
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. Im Navigationsbereich unter **Threat Management** \> **Richtlinie** \> **Sichere Links**.
     
-3. Wählen Sie im Abschnitt **Richtlinien, die auf bestimmte Empfänger anzuwenden** , **New** (neue Schaltfläche ähnelt ein Pluszeichen ( **+**)) zum Erstellen einer neuen Richtlinie. (Alternativ können Sie eine vorhandene Richtlinie bearbeiten.)
-    
-    ![Wählen Sie neu aus, um eine sichere Links Richtlinie für bestimmte e-Mail-Empfänger hinzufügen](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Wählen Sie im Abschnitt **Richtlinien, die auf bestimmte Empfänger anzuwenden** , **New** (neue Schaltfläche ähnelt ein Pluszeichen ( **+**)) zum Erstellen einer neuen Richtlinie. (Alternativ können Sie eine vorhandene Richtlinie bearbeiten.)<br/>![Wählen Sie neu aus, um eine sichere Links Richtlinie für bestimmte e-Mail-Empfänger hinzufügen](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 4. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein.
     

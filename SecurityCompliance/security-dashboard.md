@@ -3,7 +3,7 @@ title: Übersicht über die Sicherheit-dashboard
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Verwenden Sie das neue Dashboard Sicherheit, um Office 365 Threat Protection Status überprüfen und anzeigen und Bearbeiten von Sicherheitswarnungen.
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552363"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706279"
 ---
 # <a name="security-dashboard-overview"></a>Übersicht über die Sicherheit-dashboard
 
-Die Sicherheit &amp; Compliance Center ermöglicht Ihrem Unternehmen zum Verwalten von Datenschutz und Compliance. Anfang März 2018, die Sicherheit &amp; Compliance Center bietet ein neues Security Dashboard können Sie Ihren Schutzstatus Bedrohung überprüfen und anzeigen und Bearbeiten von Sicherheitswarnungen. 
+Die [Sicherheit &amp; Compliance Center](go-to-the-securitycompliance-center.md) ermöglicht Ihrem Unternehmen zum Verwalten von Datenschutz und Compliance. Anfang März 2018, die Sicherheit &amp; Compliance Center bietet ein neues Security Dashboard können Sie Ihren Schutzstatus Bedrohung überprüfen und anzeigen und Bearbeiten von Sicherheitswarnungen. 
   
 Video ansehen, wenn Sie eine Übersicht über erhalten möchten, und Lesen Sie diesen Artikel, um mehr zu erfahren.
   
@@ -41,7 +41,7 @@ Je nachdem, welche Ihrer Organisation-Office 365-Abonnement umfasst enthält das
 Zum Anzeigen des Dashboards Sicherheit in der [Sicherheit in Office 365 &amp; Compliance Center](go-to-the-securitycompliance-center.md), wechseln Sie zu **Verwaltung der Bedrohung** \> **Dashboard**.
   
 > [!NOTE]
-> Sie müssen ein Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Reader zum Anzeigen des Dashboards Sicherheit sein. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Sie müssen ein globaler Office 365-Administrator, einen Sicherheitsadministrator oder ein Sicherheit Reader zum Anzeigen des Dashboards Sicherheit sein. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="threat-protection-status"></a>Bedrohung Schutzstatus
 
@@ -80,6 +80,6 @@ Und wenn Ihre Organisation Office 365-Abonnements [Office 365 Bedrohungsanalyse]
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Office 365 Threat Intelligence](office-365-ti.md)
+[Informationen zu Bedrohungen in Office 365](office-365-ti.md)
   
 

@@ -3,6 +3,7 @@ title: Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 erweiterte Threat Protection in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552333"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706319"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 
@@ -34,7 +35,7 @@ Der **Schutzstatus Bedrohung** -Bericht ist eine einzelne Ansicht, die Informati
 > [!NOTE]
 > Ein Bericht Bedrohung Schutzstatus steht Kunden mit [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Allerdings werden die Informationen, die im Bericht Schutzstatus Bedrohung für ATP-Kunden angezeigt wird wahrscheinlich andere Daten als was EOP-Kunden finden Sie unter möglicherweise enthalten. Beispielsweise wird der Schutzstatus Bedrohung Bericht für ATP-Kunden Informationen zu [schädliche Dateien in SharePoint Online, OneDrive, oder Microsoft-Teams erkannt](atp-for-spo-odb-and-teams.md)enthalten. Diese Angaben ist ATP, so dass Kunden EOP jedoch nicht ATP diese Details in ihre Threat Protection Statusbericht nicht angezeigt werden.
   
-Zum Anzeigen des Threat Protection Statusberichts in die Sicherheit &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
+Zum Anzeigen des Threat Protection Statusberichts in die [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
   
 ![ATP Threat Protection-Statusbericht](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ Klicken Sie im Menü **Ansichtsdaten nach** können auch ändern, welche Informa
 
 Der Bericht **ATP Dateitypen** enthält den Typ der Dateien von [ATP sichere Anlagen](atp-safe-attachments.md)als böswilligen entdeckt.
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **ATP Dateitypen**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **ATP Dateitypen**.
   
 ![Dateitypen ATP-Bericht](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ Wenn Sie über einen bestimmten Tag bewegen, sehen Sie die Aufgliederung der Typ
 
 Der Bericht **ATP Nachricht Disposition** zeigt die Aktionen, die für e-Mail-Nachrichten erstellt wurden, die mit schädlichem Inhalt erkannt wurden. 
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **ATP Nachricht Disposition**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **ATP Nachricht Disposition**.
   
 ![ATP Nachricht Dispositionsbericht](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -89,12 +90,24 @@ Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen verschie
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Welche Berechtigungen sind erforderlich, damit die ATP-Berichte anzeigen?
 
-Um anzuzeigen, und die in diesem Artikel beschriebenen Berichte verwenden, benötigen Sie eine entsprechende Rolle zugewiesen sind, in das Wertpapier &amp; Compliance Center und in der Exchange-Verwaltungskonsole.
-  
-|**Rollengruppe**|**Wobei zugewiesen**|**Weitere Informationen**|
-|:-----|:-----|:-----|
-| Eine der folgenden Varianten:  <br/><br/>--Organisationsverwaltung  <br/>--Sicherheitsadministrator  <br/>– Leser Sicherheit  <br/> |Security &amp; Compliance Center  <br/> |[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Eine der folgenden Varianten:  <br/><br/>--Organisationsverwaltung  <br/>– Organisationsverwaltung nur Ansicht  <br/>--Kontaktobjekts Empfänger-Rolle  <br/>--Verwaltung der Richtlinientreue  <br/> |Exchange Admin Center  <br/> |[Featureberechtigungen in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Um anzuzeigen, und die in diesem Artikel beschriebenen Berichte verwenden, benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole.
+
+- Für die Sicherheit &amp; Compliance Center, benötigen Sie eine der folgenden Rollen zugewiesen:
+    - Organisationsverwaltung
+    - Sicherheitsadministrator
+    - Sicherheit-Reader
+
+- Für Exchange Online müssen Sie eine der folgenden Rollen zugewiesen:
+    - Organisationsverwaltung
+    - Organisationsverwaltung mit Leserechten
+    - Rolle „Empfänger mit Leserechten“
+    - Verwaltung der Richtlinientreue
+
+Finden Sie weitere Informationen finden Sie unter den folgenden Ressourcen:
+
+- [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+
+- [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was passiert, wenn nicht die Berichte Daten angezeigt?
 

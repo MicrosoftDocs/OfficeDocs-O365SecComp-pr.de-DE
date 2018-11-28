@@ -12,24 +12,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Erfahren Sie, wo Sie zum Anzeigen von Informationen zu schädliche Dateien in SharePoint, OneDrive oder Teams erkannt und wie Sie auf diese Dateien ergreifen.
-ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238507"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706199"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Anzeigen von Informationen über schädliche Dateien in SharePoint, OneDrive oder Microsoft-Teams erkannt
 
 [Office 365 ATP für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md) schützt Ihre Organisation vor schädliche Dateien in Dokumentbibliotheken und Teamwebsites. Wenn eine solche Datei erkannt wird, wird diese Datei blockiert, damit niemand öffnen, kopieren, verschieben oder freigeben, bis der Organisation Security Team Weitere Aktionen ausgeführt werden. Lesen Sie diesen Artikel, um Hier erfahren, wie Sie Informationen zu erkannten Dateien anzeigen und welche Aktionen vorgenommen werden sollen. 
 
-Um die in diesem Artikel beschriebenen Aufgaben durchführen zu können, benötigen Sie die erforderlichen [in die Office 365-Sicherheit zugewiesenen Berechtigungen &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+Um die in diesem Artikel beschriebenen Aufgaben durchführen zu können, benötigen Sie die erforderlichen [Berechtigungen für die Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Anzeigen von Berichten mit Informationen zu erkannten Dateien
 
 Zum Anzeigen von Status und detaillierte Informationen zu Dateien, die von Office 365 ATP erkannt wurden, können Sie den Threat Protection Statusbericht verwenden.
   
-1. In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
+1. In der [Sicherheit in Office 365 &amp; Compliance Center](https://security.microsoft.com), wählen Sie **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
     
 2. Wählen Sie in der oberen rechten Ecke des Berichts **Ansicht Detailtabelle**aus.
     

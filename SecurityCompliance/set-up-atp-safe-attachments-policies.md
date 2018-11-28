@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238407"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706069"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -35,7 +35,7 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
 
 - Stellen Sie sicher, dass Ihre Organisation [Office 365 erweiterte Schutz](office-365-atp.md)verfügt.
     
-- Stellen Sie sicher, dass Sie die erforderlichen verfügen [über Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Stellen Sie sicher, dass Sie die erforderlichen verfügen [Berechtigungen für die Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 - [Informieren Sie sich über Richtlinienoptionen ATP sichere Anlagen](#learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, wie die Optionen Monitor oder ersetzen können dazu führen eine geringfügige Verzögerung von e-Mails während Anlagen überprüft werden. Nachricht verzögert zu vermeiden, erwägen Sie [Dynamische Übermittlung und Anzeigen der Vorschau](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +43,7 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: Einrichten eine Richtlinie für den sicheren Anlagen ATP (oder bearbeiten)
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie im linken Navigationsbereich unter **Threat Management** **Policy** \> **Sichere Anlagen**.
     
@@ -51,9 +51,7 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
 4. Wählen Sie **neu** (die neue Schaltfläche ähnelt ein Pluszeichen ( **+**)) zum erstmaligen Erstellen der Richtlinie.
     
-5. Geben Sie Name, Beschreibung und Einstellungen für die Richtlinie ein.
-    
-    **Beispiel:** Um eine Richtlinie namens "keine Verzögerungen" eingerichtet, die alle Nachrichten sofort übermittelt und Anlagen dann überwacht werden, nachdem sie überprüft haben, können Sie die folgenden Einstellungen angeben: 
+5. Geben Sie Name, Beschreibung und Einstellungen für die Richtlinie ein.<br/><br/>**Beispiel:** Um eine Richtlinie namens "keine Verzögerungen" eingerichtet, die alle Nachrichten sofort übermittelt und Anlagen dann überwacht werden, nachdem sie überprüft haben, können Sie die folgenden Einstellungen angeben: 
     
       - Geben Sie im Feld **Name** keine verzögert.
     

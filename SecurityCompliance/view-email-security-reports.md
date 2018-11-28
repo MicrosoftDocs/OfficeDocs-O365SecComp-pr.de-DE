@@ -3,6 +3,7 @@ title: Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Complianc
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informationen Sie zum Suchen und Verwenden von e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise. E-Mail-Sicherheitsberichte stehen in der Sicherheit &amp; Compliance Center.
-ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552393"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706419"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center
 
-Eine Vielzahl von e-Mail-Sicherheit meldet stehen in der Sicherheit &amp; Compliance Center, mit denen Sie die finden Sie unter wie Antispam- und Antischadsoftware-Features in Office 365 Ihrer Organisation geschützt sind. Wenn Sie die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte anzeigen, in das Wertpapier &amp; Compliance Center auf **Berichte** zugreifen, indem \> **Dashboard**.
+Eine Vielzahl von e-Mail-Sicherheitsberichte stehen in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com) mit denen Sie die finden Sie unter wie Antispam- und Antischadsoftware-Features in Office 365 Ihrer Organisation geschützt sind. Wenn Sie die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-these-reports)verfügen, können Sie diese Berichte anzeigen, in das Wertpapier &amp; Compliance Center auf **Berichte** zugreifen, indem \> **Dashboard**.
   
 ![Die Sicherheit &amp; Compliance Center-Dashboard kann Ihnen finden Sie unter, in dem erweiterte Schutz funktionsfähig ist](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -50,7 +51,7 @@ Der neue **Threat Protection** Statusbericht ist smart Bericht mit böswilligen 
 > [!NOTE]
 > Ein Bericht Bedrohung Schutzstatus steht Kunden mit [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Allerdings werden die Informationen, die im Bericht Schutzstatus Bedrohung für ATP-Kunden angezeigt wird wahrscheinlich andere Daten als was EOP-Kunden finden Sie unter möglicherweise enthalten. EOP-Kunden können beispielsweise Schadsoftware erkannt in e-Mails, die aber nicht Informationen zu [schädliche Dateien in SharePoint Online, OneDrive, oder Microsoft-Teams erkannt](atp-for-spo-odb-and-teams.md), eine Funktion ATP-spezifische Informationen anzeigen. ([Erfahren Sie mehr über Berichte ATP](view-reports-for-atp.md)).
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
   
 ![Threat Protection Statusbericht](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -66,7 +67,7 @@ Sie können auch auswählen, ob zum Anzeigen von Daten für e-Mails, die als bö
 
 Der **Erkannte Schadsoftware** Bericht zeigt, wie viele ein- und ausgehende Nachrichten als mit Malware für Ihre Organisation erkannt wurden. 
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Erkannte Schadsoftware**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Schadsoftwareerkennungen**.
   
 ![Beispiel für Schadsoftware erkannte Bericht](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -76,7 +77,7 @@ Andere Berichte, wie ein Bericht Bedrohung Schutzstatus ähnelt der Bericht Date
 
 Der **Oben Malware** Bericht werden die verschiedenen Arten von Schadsoftware, die von Exchange Online gefunden wurde. 
   
-Zum Anzeigen dieses Berichts, in das Wertpapier &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Oben Malware**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Oben Malware**.
   
 ![SCC - EOP wichtigste Schadsoftware](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -92,7 +93,7 @@ Unter dem Diagramm sehen Sie eine Liste der erkannten Malware und wie viele Nach
 
 Der **häufigste Absender und Empfänger** Bericht ist ein Kreisdiagramm Ihre oberen e-Mail-Absender angezeigt. 
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **häufigste Absender und Empfänger**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **häufigste Absender und Empfänger**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> häufigste Absender und Empfänger](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -110,7 +111,7 @@ Unterhalb des Diagramms angezeigt, die die oberen e-Mail-Absender oder Empfänge
 
 Der **Spoofing Mail** Bericht zeigt, wie viele e-Mail-Nachrichten von Spoofing erkannt wurden, wurden, welche "gut" (Spoofing Mail legitimen geschäftlichen Gründen geschehen) betrachtet und. 
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Spoofing Mail**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Spoofing Mail**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> Spoofing Mail](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -122,7 +123,7 @@ Berichts, um sie in einem neuen Browserfenster zu öffnen, in dem Sie eine ausf�
 
 Der Bericht **Spamerkennungen** zeigt alle Spam-Inhalt von Exchange Online blockiert. 
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **Spamerkennungen**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Spamerkennungen**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> EOP Spamerkennungen](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -138,7 +139,7 @@ Unter dem Diagramm sehen Sie eine Liste der Spam-Objekte, die erkannt wurden. W�
 
 Der Bericht **gesendete und empfangene e-Mail** ist smart Bericht mit Informationen zu eingehender und ausgehender e-Mails, einschließlich spamerkennungen, Malware und e-Mails, die als "gut". 
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Dashboard** \> **gesendete und empfangene e-Mail**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **gesendete und empfangene e-Mail**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> gesendete und empfangene e-Mail](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -162,7 +163,7 @@ Details sind für jede Nachricht, einschließlich der Übermittlung Grund, einen
   
 ![Bericht User-Reported Nachrichten werden Nachrichten, die Benutzer mit der Bezeichnung als Junk, keine Junk-e- oder Phishing Versuche.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, führen Sie einen der folgenden Schritte aus:
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), eine der folgenden Aktionen aus:
   
 - Wechseln Sie zu **Threat Management** \> **Dashboard** \> **Nachrichten Benutzer gemeldet**.
     
@@ -175,12 +176,25 @@ So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, f�
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind erforderlich, damit diese Berichte anzeigen?
 
-Um anzuzeigen, und die e-Mail-Sicherheitsberichte in diesem Artikel beschriebenen verwenden, benötigen Sie eine entsprechende Rolle zugewiesen sind, in das Wertpapier &amp; Compliance Center und in der Exchange-Verwaltungskonsole.
-  
-|**Rollengruppe**|**Wobei zugewiesen**|**Weitere Informationen**|
-|:-----|:-----|:-----|
-| Eine der folgenden Varianten:  <br/><br/>--Organisationsverwaltung  <br/>--Sicherheitsadministrator  <br/>– Leser Sicherheit  <br/> |Security &amp; Compliance Center  <br/> |[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Eine der folgenden Varianten:  <br/><br/>--Organisationsverwaltung  <br/>– Organisationsverwaltung nur Ansicht  <br/>--Kontaktobjekts Empfänger-Rolle  <br/>--Verwaltung der Richtlinientreue  <br/> |Exchange Admin Center  <br/> |[Featureberechtigungen in Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Um anzuzeigen, und die in diesem Artikel beschriebenen Berichte verwenden, benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole.
+
+- Für die Sicherheit &amp; Compliance Center, benötigen Sie eine der folgenden Rollen zugewiesen:
+    - Organisationsverwaltung
+    - Sicherheitsadministrator
+    - Sicherheit-Reader
+
+- Für Exchange Online müssen Sie eine der folgenden Rollen zugewiesen:
+    - Organisationsverwaltung
+    - Organisationsverwaltung mit Leserechten
+    - Rolle „Empfänger mit Leserechten“
+    - Verwaltung der Richtlinientreue
+
+Finden Sie weitere Informationen finden Sie unter den folgenden Ressourcen:
+
+- [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+
+- [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+   
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was passiert, wenn nicht die Berichte Daten angezeigt?
 

@@ -1,5 +1,5 @@
 ---
-title: Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit
+title: Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit verwenden integrierte Algorithmen, um potenzielle Probleme aufdecken. Sie sollten mindestens eine Anomalie Erkennung Richtlinie verfügen, die Sie optimiert werden können (bei der Erstellung) mithilfe von Filtern. '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530033"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706339"
 ---
-# <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit
+# <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 
 Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherheit.
   
@@ -51,7 +51,7 @@ Stellen Sie Folgendes sicher:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Zeigen Sie Ihre Anomalie Erkennungsrichtlinien
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
@@ -67,7 +67,7 @@ Stellen Sie Folgendes sicher:
   
 5. Wählen Sie eine Richtlinie zum Lesen oder Bearbeiten der Einstellungen aus.
     
-6. Wählen Sie **Update** , um die Änderungen zu speichern. 
+6. Wählen Sie **Update** aus, um die Änderungen zu speichern. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Erfahren Sie mehr über Anomalie Erkennungsrichtlinien
 
@@ -93,7 +93,7 @@ In der folgenden Tabelle werden die Standardrichtlinien für Anomalie Erkennung,
 
 Wie Benachrichtigungen empfangen werden, können Sie diese Warnungen schnell selektieren und bestimmen, welche zuerst behandeln. Mit Kontext für eine Benachrichtigung können Sie finden im Bild, und bestimmen, ob etwas böswilligen tatsächlich geschieht. Verwenden Sie das folgende Verfahren für den Einstieg erkunden eine Warnung:
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
@@ -118,7 +118,6 @@ Wie Benachrichtigungen empfangen werden, können Sie diese Warnungen schnell sel
 Eine Benachrichtigung auf mehreren fehlgeschlagenen Anmeldungen möglicherweise tatsächlich verdächtigen und einen potenziellen Brute-Force-Angriff kann anzugeben. Eine solche Warnung kann jedoch auch eine Anwendung Konfigurationsfehlers, verursacht die Benachrichtigung duldet falsch positiv sein. Wenn Sie eine Benachrichtigung mehrere Fehler Anmeldungen mit zusätzlichen verdächtigen Aktivitäten angezeigt wird, ist eine höhere Wahrscheinlichkeit, dass ein Konto gefährdet ist. Angenommen Sie, dass eine Warnung mehrere Fehler bei Anmeldung Aktivität aus einer TOR IP-Adresse und unmöglich Geschäftsreisen Aktivität, beide starken Indikatoren für Kompromiss folgen. Sie möglicherweise auch sehen, dass derselbe Benutzer eine Aktivität Masse Download durchgeführt, die häufig ein Indikator der Angreifer Exfiltration der Daten ausgeführt wird. Es handelt sich um Dinge wie, die Sie untersuchen können in Office 365-Cloud-App-Sicherheit zum Anzeigen und Selektieren von Warnungen und Ausführen einer Aktion bei Bedarf.
   
 ## <a name="next-steps"></a>Nächste Schritte
-<a name="nextsteps"> </a>
 
 - [Integrieren von Ihrem Server SIEM](integrate-your-siem-server-with-office-365-cas.md)
     

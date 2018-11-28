@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: Verwenden von Threat Management kontrollieren und Verwalten von mobilen Gerätezugriff auf die Daten des Unternehmen, Ihre Organisation vor Datenverlust schützen, und eingehende und ausgehende Nachrichten vor Schadsoftware und Spam schützen. Sie können auch Bedrohung, dass Management zum Schutz Ihrer Domäne und um zu bestimmen, ob Absender in böswilliger Absicht spoofing sind oder nicht von Ihrer Domäne Konten verwenden.
-ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 6aac4e7c3af0f1d2b7adc767f696653252674e6a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552403"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706429"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 

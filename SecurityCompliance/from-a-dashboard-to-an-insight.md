@@ -1,5 +1,5 @@
 ---
-title: Exemplarische Vorgehensweise - aus einem Dashboard, um einen Einblick
+title: Exemplarische Vorgehensweise – Vom Dashboard zum Einblick
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: Hier erfahren Sie, wie Sie von einem Dashboard eine Erkenntnisse mit empfohlenen Aktionen in das Wertpapier wechseln können &amp; Compliance Center.
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529839"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706149"
 ---
-# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Exemplarische Vorgehensweise - aus einem Dashboard, um einen Einblick
+# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Exemplarische Vorgehensweise – Vom Dashboard zum Einblick
 
 Wenn Sie zum ersten Mal [Berichte und Einblicke in die Office 365-Sicherheit &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), dazu beitragen, finden, wie Sie auf einfache Weise aus einem Dashboard einen Einblick aufrufen können, und empfohlenen Aktionen. 
   
@@ -30,7 +30,7 @@ Dies ist eine von mehreren exemplarischen Vorgehensweisen für die Sicherheit &a
 
 Lassen Sie uns durchgehen des Datenflusses von einem Dashboard mit einem Bericht mit einem Insight und Aktion. (Dies ist ein Beispiel für kurze [Spoofing Intelligence](learn-about-spoof-intelligence.md) ). 
   
-1. Wir beginnen mit dem Security Dashboard in das Wertpapier &amp; Compliance Center. (Wechseln Sie zur **Verwaltung der Bedrohung** \> **Dashboard**.)
+1. Wir beginnen mit dem Dashboard Sicherheit in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com). (Wechseln Sie zur **Verwaltung der Bedrohung** \> **Dashboard**.)
     
     ![In das Wertpapier &amp; Compliance Center, wählen Sie Threat Management \> Dashboard](media/05a38660-eb13-4960-a266-11809c453d95.png)
   
