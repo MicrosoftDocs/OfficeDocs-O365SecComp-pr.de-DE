@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 6f09a75a96abda54e69833a8be14811c8113b5b1
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 67652fc11a42263b2666554021c018df01ad33cd
+ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255820"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26872003"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -107,7 +107,7 @@ Dabei gilt Folgendes:
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialDomain_ ist die Domäne, die Sie bei der Anmeldung für Office 365 verwendet haben. Informationen zum Ermitteln Ihrer ersten Domäne finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _InitialDomain_ ist die Domäne, die Sie verwendet, wenn Sie sich für Office 365 haben angemeldet. Anfängliche Domänen enden immer "onmicrosoft.com" dargestellt. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Wenn Sie beispielsweise als erste Domäne „cohovineyardandwinery.onmicrosoft.com" und zwei benutzerdefinierte Domänen „cohovineyard.com" und „cohowinery.com" haben, müssten Sie zwei CNAME-Einträge für jede zusätzliche Domäne einrichten, also insgesamt vier CNAME-Einträge.
   

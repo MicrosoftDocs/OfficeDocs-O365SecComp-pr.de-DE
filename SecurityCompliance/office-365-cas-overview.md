@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365-Cloud-App-Sicherheit können Sie Einblicke in verdächtige Aktivitäten in Office 365, sodass Sie Situationen, die potenziell problematisch und untersuchen können bei Bedarf Ausführen einer Aktion zum Beheben von Sicherheitsproblemen. '
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
+ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706399"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26864556"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Übersicht über Office 365 Cloud App Security
   
@@ -47,7 +47,7 @@ Erhalten Sie über die Sicherheit der Office 365-Portal Office 365-Cloud-App-Sic
     
 ## <a name="policies"></a>Policies
 
-Office 365 funktioniert Cloud App-Sicherheit mit Richtlinien, die für Ihre Organisation definiert sind. Mit Office 365 Cloud App-Sicherheit ruft Ihrer Organisation 10 vordefinierten Anomalie Erkennungsrichtlinien und mehrere Vorlagen für Richtlinien Aktivität ab. Diese Richtlinien dienen zum Erkennen allgemeiner Bildschirmdarstellung auftreten, Identifizieren von Benutzern von einem riskant IP-Adresse anmelden, Ransomware Aktivitäten zu erkennen, Administrator private IP-Adressen und weitere Aktivitäten zu erkennen.
+Office 365 funktioniert Cloud App-Sicherheit mit Richtlinien, die für Ihre Organisation definiert sind. Mit Office 365 Cloud App-Sicherheit ruft Ihrer Organisation viele vordefinierte Anomalie Erkennungsrichtlinien und mehrere Vorlagen für Richtlinien Aktivität ab. Diese Richtlinien dienen zum Erkennen allgemeiner Bildschirmdarstellung auftreten, Identifizieren von Benutzern von einem riskant IP-Adresse anmelden, Ransomware Aktivitäten zu erkennen, Administrator private IP-Adressen und weitere Aktivitäten zu erkennen.
   
 ![Wählen Sie im Portal CAS Steuerelement \> Vorlagen anzeigen oder Erstellen von Vorlagen für Benutzerrechterichtlinien](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
