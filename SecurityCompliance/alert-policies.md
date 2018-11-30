@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Erstellen von alert Richtlinien in die Office 365-Sicherheit &amp; Compliance Center, um potenzielle Bedrohungen, Datenverlust und Problem mit Berechtigungen zu überwachen. Sie können dann anzeigen und Verwalten von Benachrichtigungen, die generiert werden, wenn Benutzer Aktivitäten ausführen, die die Suchkriterien einer Warnung zu.
-ms.openlocfilehash: 99025d4a3064e845358ad542d0bfd456d7669dcd
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
+ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793570"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "26988434"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Warnen Richtlinien in die Office 365-Sicherheit &amp; Compliance Center
 
 Sie können die neue Richtlinie für die Benachrichtigung und Warnung Dashboard Tools verwenden, in die Office 365-Sicherheit &amp; Compliance Center alert Richtlinien zu erstellen und klicken Sie dann die Warnungen, die generiert werden, wenn Benutzer Aktivitäten ausführen, der die Suchkriterien einer Warnung zu, anzuzeigen. Warnung Richtlinien auf erstellen, und erweitern den Funktionsumfang der Aktivität Benachrichtigungen, mit deren Hilfe Sie die Warnung Richtlinie kategorisieren, wenden Sie die Richtlinie für alle Benutzer in Ihrer Organisation, legen Sie einen Schwellenwert für Wenn eine Warnung ausgelöst wird, und entscheiden, ob e-Mail empfangen Benachrichtigungen. In das Wertpapier ist auch eine Seite **Ansicht Warnungen** &amp; Compliance Center können Sie anzeigen und Filtern von Warnungen, Set eine Warnung Status, mit denen Sie Benachrichtigungen verwalten, und klicken Sie dann auf Schließen informiert, wenn Sie adressiert ist oder das zugrunde liegende Problem behoben haben. Wir haben auch die Art der Ereignisse erweitert, denen Sie Warnungen für erstellen können. Beispielsweise können Sie die Warnung Richtlinien zum Nachverfolgen von Malware-Aktivitäten und Daten erstellen. Schließlich haben wir eine Anzahl von alert Standardrichtlinien enthalten, mit denen Sie überwachen zuweisen Administratorrechte in Exchange Online, Malwareangriffen und ungewöhnliche Ebenen der Datei löschen und externe Freigabe. 
   
 > [!NOTE]
-> Warnung Richtlinien sind für Organisationen mit einer Office 365 Enterprise und Office 365 US-Regierung E1/G1, E3/G3 oder E5/G5 Pläne verfügbar. Einige erweiterte Funktionen ist jedoch nur verfügbar für Organisationen mit einer E5/G5 Pläne oder für Organisationen, die eine E1/G1 oder E3/G3-Abonnement und ein Office 365-Bedrohungsanalyse oder Office 365 erweiterte Compliance Add-on-Abonnement verfügen. In diesem Thema wird die Funktionalität, die E5/G5 oder Add-on Abonnement erfordert hervorgehoben. 
+> Warnung Richtlinien sind für Organisationen mit einer Office 365 Enterprise oder Office 365 US-Regierung E1/G1, E3/G3 oder E5/G5-Abonnement verfügbar. Einige erweiterte Funktionen ist jedoch nur verfügbar für Organisationen mit einem E5/G5-Abonnement oder für Organisationen, die eine E1/G1 oder E3/G3-Abonnement und ein Office 365-Bedrohungsanalyse oder Office 365 erweiterte Compliance Add-on-Abonnement haben. In diesem Thema wird die Funktionalität, die ein Abonnement E5/G5 oder Add-on erfordert hervorgehoben. Beachten Sie außerdem, dass die Warnung Richtlinien in Office 365 GCC, GCC hohe und DoD US-Regierung Umgebungen zur Verfügung stehen.
   
 ## <a name="how-alert-policies-work"></a>Wie alert Richtlinien Arbeit
 
@@ -57,7 +57,7 @@ Eine Warnung Richtlinie umfasst die folgenden Einstellungen und Bedingungen.
 - **Nachverfolgen der Aktivität der Warnung** : Sie eine Richtlinie zum Nachverfolgen einer Aktivitätsfeeds oder in einigen Fällen ein paar zugehörige Aktivitäten, solche eine Freigabe einer Datei mit einem externen Benutzer durch Freigabe, Zugriffsberechtigungen zuweisen oder erstellen einen anonymen Link erstellen. Wenn ein Benutzer die Aktivität, die von der Richtlinie definierten ausführt, wird eine Warnung ausgelöst basierend auf den entsprechenden schwellenwerteinstellungen.
     
     > [!NOTE]
-    > Aktivitäten, die Sie überwachen können, hängt von Ihrer Organisation Office 365 Enterprise-Abonnement ab. Im Allgemeinen erfordern Aktivitäten im Zusammenhang mit Malware Kampagnen und Phishing-Angriffe ein E5-Abonnement oder eine E1 oder E3-Abonnement mit einem Bedrohungsanalyse Add-on-Abonnement. 
+    > Aktivitäten, die Sie überwachen können, hängt von Ihrer Organisation-Office 365 Enterprise oder Office-365 US-Regierung Plan. Im allgemeinen Aktivitäten im Zusammenhang mit Malware Kampagnen und Phishingangriffen erfordern, ein E5/G5-Abonnement oder eine E1/G1 oder E3/G3-Abonnement mit einem Bedrohungsanalyse Add-on-Abonnement. 
   
 - **Aktivität Conditions** - können für die meisten Aktivitäten Sie zusätzliche Bedingungen definieren, die für eine Warnung ausgelöst werden, erfüllt werden müssen. Allgemeine zählt IP-Adressen (so, dass eine Warnung ausgelöst wird, wenn der Benutzer die Aktivität auf einem Computer mit einer bestimmten IP-Adresse oder innerhalb eines IP-Adressbereichs ausführt), ob eine Warnung ausgegeben wird, wenn ein bestimmter Benutzer oder Benutzer diese Aktivität ausführen, und ob die Aktivität erfolgt auf einem bestimmten Dateinamen oder eine URL. Sie können auch eine Bedingung konfigurieren, die eine Warnung ausgelöst wird, wenn die Aktivität von jedem Benutzer in Ihrer Organisation ausgeführt wird. Beachten Sie, dass die verfügbaren Bedingungen für die ausgewählte Aktivität abhängig sind.
     
@@ -68,7 +68,7 @@ Eine Warnung Richtlinie umfasst die folgenden Einstellungen und Bedingungen.
     Wenn Sie die Einstellung basierend auf ungewöhnliche Aktivitäten auswählen, stellt Office 365 ein Baselinewert, der die normale Häufigkeit für die ausgewählte Aktivität definiert, her; bis zu sieben Tage zu dieser Baseline festgelegt werden, während die Warnungen generiert werden, wird nicht benötigt. Nachdem die Grundlinie hergestellt wurde, wird eine Warnung ausgelöst werden, wenn die Häufigkeit der Aktivität erheblich durch die Warnung Richtlinie nachverfolgt den Baselinewert überschreitet. Legen Sie für die Überwachung im Zusammenhang Aktivitäten (beispielsweise Dateien und Ordner Aktivitäten) Sie Grundwerte basierend auf einem einzelnen Benutzer oder für alle Benutzer in Ihrer Organisation; bei Aktivitäten im Zusammenhang mit Schadsoftware können Sie einen Basisplan basierend auf einer einzelnen Malware-Familie, einen einzelnen Empfänger oder alle Nachrichten in Ihrer Organisation herstellen.
     
     > [!NOTE]
-    > Die Möglichkeit zum Konfigurieren der Warnung Richtlinien basierend auf ungewöhnliche Aktivität oder basierend auf einem Schwellenwert erfordert ein Abonnement E5 oder eine E1 oder E3 Abonnement mit einem Bedrohungsanalyse oder erweiterte Compliance Add-on-Abonnement. Organisationen mit einem Abonnement E1 und E3 können nur eine Warnung Richtlinie erstellen, in dem eine Benachrichtigung jedes Mal ausgelöst wird, das eine Aktivität auftritt. 
+    > Die Möglichkeit, konfigurieren Sie Richtlinien basierend auf einem Schwellenwert oder basierend auf ungewöhnliche Aktivitäten Warnung erfordert ein Abonnement E5/G5 oder eine E1/G1 oder E3/G3-Abonnement mit einer Bedrohungsanalyse oder erweiterte Compliance Add-on-Abonnement. Organisationen mit einem Abonnement E1/G1 und E3/G3 können nur eine Warnung Richtlinie erstellen, in dem eine Benachrichtigung jedes Mal ausgelöst wird, das eine Aktivität auftritt. 
   
 - **Warnung Kategorie** -, das Ihnen bei nachverfolgen und Verwalten von Benachrichtigungen generiert durch eine Richtlinie können Sie eine der folgenden Kategorien auf eine Richtlinie zuweisen.
     
@@ -97,9 +97,9 @@ Eine Warnung Richtlinie umfasst die folgenden Einstellungen und Bedingungen.
 
 Office 365 bietet integrierte alert Richtlinien, mit denen Exchange Admin Berechtigungen Missbrauch, Malware-Aktivitäten und Daten Governance Risiken zu identifizieren. Auf der Seite **Warnung Richtlinien** der Namen dieser integrierten Richtlinien sind fett dargestellt und der Richtlinientyp als **System**definiert ist. Diese Richtlinien sind standardmäßig aktiviert. Sie können diese Richtlinien deaktivieren (oder danach wieder an), eine Liste von Empfängern zum Senden von e-Mail-Benachrichtigungen einrichten und Festlegen eines Zeitlimits für tägliche Benachrichtigung. Die anderen Einstellungen für diese Richtlinien können nicht bearbeitet werden.
   
-In der folgenden Tabelle enthält und beschreibt die verfügbaren alert Standardrichtlinien und gibt an, die Office 365 Enterprise und Office uns 365 Govenment Pläne für jeden erforderlich. Beachten Sie, dass einige alert Standardrichtlinien verfügbar sind, wenn Ihre Organisation das entsprechende Add-on-Abonnement neben ein Abonnement/G1 E1 oder E3/G3 verfügt. 
+In der folgenden Tabelle enthält und beschreibt die verfügbaren alert Standardrichtlinien und gibt an, die Office 365 Enterprise und Office-365 US-Regierung Pläne für jeden erforderlich. Beachten Sie, dass einige alert Standardrichtlinien verfügbar sind, wenn Ihre Organisation das entsprechende Add-on-Abonnement neben ein Abonnement/G1 E1 oder E3/G3 verfügt. 
   
-|**Warnung Standardrichtlinie**|**Beschreibung**|**Office 365-Pläne**|
+|**Warnung Standardrichtlinie**|**Beschreibung**|**Office 365 Enterprise-Abonnement**|
 |:-----|:-----|:-----|
 |**Erstellung der Regel Weiterleitung-Umleitung** <br/> |Generiert eine Warnung, wenn eine Person in Ihrer Organisation eine Posteingangsregel für ihr Postfach wird erstellt, die weiterleitet oder leitet Nachrichten an ein anderes e-Mail-Konto. Diese Richtlinie verfolgt nur Posteingangsregeln, die mit Outlook Web App oder Exchange Online PowerShell erstellt werden. Diese Richtlinie hat eine Einstellung für **niedriger** Schweregrad. Weitere Informationen zum Posteingangsregeln zum Weiterleiten und Umleiten von e-Mail in Outlook Web App verwenden finden Sie unter [Verwenden von Regeln in Outlook Web App zum automatischen Weiterleiten von Nachrichten an ein anderes Konto](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |/ G1 E1, E3/G3 oder E5/G5  <br/> |
 |**eDiscovery-Suche gestartet oder zu exportierenden** <br/> |Generiert eine Warnung, wenn ein Benutzer das Tool für die Inhaltssuche im Compliance Center & Sicherheit verwendet. Eine Warnung wird ausgelöst, wenn die folgenden Inhaltssuche Aktivitäten ausgeführt werden:<br/><br/>• Eine Inhaltssuche wird gestartet.<br/>•, Die die Ergebnisse einer Inhaltssuche exportiert werden<br/>• Ein Inhaltssuche-Bericht wird exportiert.<br/><br/>Benachrichtigungen werden auch trigged, wenn die vorherige Inhaltssuche Aktivitäten im Zusammenhang mit einem eDiscovery-Fall ausgeführt werden. Diese Richtlinie hat eine Einstellung für **mittlerer** Schweregrad. Weitere Informationen zu Aktivitäten Inhaltssuche finden Sie unter [Suchen für eDiscovery-Aktivitäten in der Office 365 in das Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |/ G1 E1, E3/G3 oder E5/G5  <br/> |
@@ -134,11 +134,11 @@ Die folgenden Filter können Sie eine Teilmenge der alle Benachrichtigungen auf 
 - **Schweregrad** - diesen Filter verwenden, um Warnungen anzuzeigen, die einen bestimmten Schweregrad zugewiesen sind.
     
 - **Kategorie** - Verwendung dieser Filter aus eine oder mehrere Kategorien angezeigt.
-    
+
+- **Source** - Verwendung dieser Filter zum Anzeigen von Warnungen alert Richtlinien in der Sicherheit & Compliance Center oder Warnungen ausgelöst, indem Office 365 Cloud App-Sicherheitsrichtlinien oder beides ausgelöst. Weitere Informationen zu Office 365-Cloud-App-Sicherheit Warnungen finden Sie im Abschnitt [Anzeigen Cloud App Sicherheitshinweise](#viewing-cloud-app-security-alerts) .
 
   
 ## <a name="managing-alerts"></a>Verwalten von Warnungen
-<a name="managingalerts"> </a>
 
 Nachdem die Warnungen generiert und auf der Seite **Ansicht Warnungen** in das Wertpapier angezeigt wurden &amp; Compliance Center, Sie können untersuchen, untersuchen und beheben Sie diese. Hier sind einige Aufgaben, die Sie ausführen können, um Benachrichtigungen zu verwalten. 
   
@@ -162,6 +162,19 @@ Nachdem die Warnungen generiert und auf der Seite **Ansicht Warnungen** in das W
     
 - **Beheben von Benachrichtigungen** - Sie können eine Warnung markieren, wie in der Dropdown-Seite für eine Warnung aufgelöst (die den Status der Warnung in **gelöst**festgelegt). Sofern Sie den Filter ändern, werden nicht aufgelöste Benachrichtigungen auf der Seite **Ansicht Warnungen** angezeigt. 
     
-
+## <a name="viewing-cloud-app-security-alerts"></a>Anzeigen von Warnungen Cloud App-Sicherheit
   
+Warnungen, die von Office 365 Cloud App-Sicherheitsrichtlinien ausgelöst werden, werden jetzt im Compliance Center & Sicherheit auf der Seite **Ansicht Warnungen** angezeigt. Dazu gehören, die Aktivität Richtlinien ausgelöst werden Benachrichtigungen und Warnungen, die von Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit ausgelöst werden. Dies bedeutet, dass Sie alle Warnungen im Compliance Center & Sicherheit anzeigen können. Beachten Sie, dass Office 365-Cloud-App-Sicherheit nur für Organisationen mit einem Office 365 Enterprise E5 oder Office 365 US-Regierung G5-Abonnement verfügbar ist. Weitere Informationen finden Sie unter [Overview of Office 365 Cloud App-Security](office-365-cas-overview.md).
 
+Darüber hinaus beziehen sich Organisationen, in denen Microsoft Cloud App-Sicherheit als Teil eines Enterprise-Mobilität + Sicherheit E5 Abonnement oder als eigenständigen Dienst kann auch Ansicht Cloud App-Sicherheit Warnungen, die auf Office 365-apps und Diensten in das Wertpapier & Compliance Center.
+
+Wenn nur Cloud App Sicherheitshinweise im Compliance Center & Sicherheit anzeigen möchten, verwenden Sie den Filter für die **Datenquelle** , und wählen Sie **Cloud App-Sicherheit**.
+
+![Verwenden des Quelle Filters, um nur Cloud App-Sicherheit Warnungen angezeigt werden](media/FilterCASAlerts.png)
+
+Ähnlich wie eine Warnung ausgelöst, indem eine Benachrichtigung Sicherheit und Compliance Center-Richtlinie, können Sie eine Cloud App-Sicherheitshinweis um ein Dropdown-Seite mit Details über die Warnung anzuzeigen klicken. Die Benachrichtigung enthält einen Link, um die Details anzeigen und Verwalten der Benachrichtigung in der Cloud App-Sicherheit Portal- und einen Link zu der entsprechenden Cloud App Codezugriffssicherheits-Richtlinie, die die Warnung ausgelöst. Finden Sie unter [Überprüfen und entsprechende Maßnahmen Warnungen in Office 365-Cloud-App-Sicherheit](review-office-365-cas-alerts.md).
+
+![Warnungsdetails enthalten Links zu den Portal Cloud App-Sicherheit](media/CASAlertDetail.png)
+
+> [!IMPORTANT]
+> Ändern des Status einer Warnung Cloud App-Sicherheit im Compliance Center & Sicherheit wird nicht den Status Lösung für dieselbe Warnung im Portal Cloud App-Sicherheit zu aktualisieren. Wenn Sie den Status der Warnung im Compliance Center & Sicherheit als **gelöst** markieren, wird der Status der Warnung in der Cloud App-Sicherheit Portal unverändert. Beheben oder schließen eine Cloud App-Sicherheitshinweis, die Benachrichtigung in der Cloud App-Sicherheit-Portal verwalten.
