@@ -233,6 +233,7 @@
 ## [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md)
 ## [Aktivieren der Postfachüberwachung](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
+## [Verwenden des Überwachungsprotokoll zum Beheben häufiger Szenarien](auditing-troubleshooting-scenarios.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 # [Überwachen von Sicherheit und Compliance]()
