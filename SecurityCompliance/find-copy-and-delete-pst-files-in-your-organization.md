@@ -3,7 +3,7 @@ title: Verwenden Sie das Tool PST-Auflistung zu suchen, kopieren und Löschen vo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Verwenden Sie das Microsoft PST-Auflistung-Tool zum Suchen des Netzwerks Ihrer Organisation, um eine Inventur der PST-Dateien abrufen, die in der gesamten Organisation verteilt sind. Wenn Sie PST-Dateien gefunden haben, können Sie die PST-Auflistung Tool verwenden, um zu kopieren Sie sie an einem zentralen Ort aus, damit Sie sie in Office 365 importieren können.
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038128"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154211"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Verwenden Sie das Tool PST-Auflistung zu suchen, kopieren und Löschen von PST-Dateien in Ihrer Organisation
+
+> [!IMPORTANT]
+> Das in diesem Artikel beschriebenen PST-Auflistung Tool wird unter keinem standard Support-Programm von Microsoft oder Service nicht unterstützt. Das Tool wird wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt alle konkludente Garantien einschließlich, aber nicht beschränkt auf konkludente Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck. Das gesamte Risiko aus der Verwendung oder der Leistung der Tools und Dokumentation liegt bei Ihnen. In keinem Fall muss Microsoft, seine Autoren oder jeder anderen Beteiligten in die Erstellung, die Produktion oder die Bereitstellung des Tools für Schäden jeglicher Art (einschließlich, aber nicht beschränkt auf Schäden für den Verlust von Gewinn Business, Business Unterbrechung, Verlust von Unternehmensinformationen, Folge- oder) aus der Verwendung von oder Fehler beim Verbindung verwenden Sie das Tool oder Dokumentation, haftbar gemacht werden, auch wenn Microsoft die Möglichkeit solcher Schäden hingewiesen wurde.
 
 Das Tool Microsoft PST-Auflistung können Sie Suchen des Netzwerks Ihrer Organisation für PST-Dateien. Das Tool können Sie eine Inventur der PST-Dateien abrufen, die in der gesamten Organisation verteilt sind. Wenn Sie PST-Dateien gefunden haben, können Sie das Tool PST-Auflistung verwenden, an einem zentralen Speicherort kopieren. Müssen PST-Dateien an einem Ort ein, und klicken Sie dann ermöglicht es Ihnen, sie zu Exchange Online-Postfächer (oder ein einzelnes Exchange Online-Postfach) zu importieren, klicken Sie dann den umfassenden Satz von Compliance-Funktionen in Office 365 angewendet werden kann. Dies umfasst das Importieren von PST-Dateien Benutzer archivieren Sie die Postfächer, Suchen nach bestimmten Nachrichten in die PST-Dateien, die Sie importiert haben mithilfe von Suchtools eDiscovery, Beibehaltung von Nachrichten mithilfe von eDiscovery-Archive und Aufbewahrungsrichtlinien für Office 365 und Verwalten von während der Lebensdauer Diese Nachrichten mit der messaging-Zyklus zeichnet auf Management-Features in Exchange Online. Nachdem Sie davon überzeugt sind, dass die PST-Dateien, die Sie gesammelt zu Office 365 erfolgreich importiert wurden, können Sie das Tool verwenden, um sie von ihrem ursprünglichen Speicherort in Ihrem Netzwerk zu löschen. 
   
