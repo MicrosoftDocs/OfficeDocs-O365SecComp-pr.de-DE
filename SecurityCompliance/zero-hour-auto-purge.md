@@ -3,7 +3,7 @@ title: Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoft
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.
-ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999975"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180845"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
 ## <a name="overview"></a>Übersicht
 
-Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann den schädlichem Inhalt unschädlichen rendert. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt.
+Null-Stunden automatisch löschen (ZAP) ist eine e-Mail-Schutz-Funktion, die Nachrichten mit Phishing, Spam oder Schadsoftware erkannt, die bereits an die Posteingänge der Benutzer gesendet wurden, und klicken Sie dann rendert schädlichem Inhalt unschädlichen. Wie ZAP dies funktioniert, hängt von den Typ des schädlichem Inhalt erkannt. e-Mail-Nachrichten kann von e-Mail-Inhalten, URLs oder Anlagen zapped werden.
   
 ZAP ist mit Exchange Online Protection, die mit einem beliebigen Office 365-Abonnement enthalten ist, die Exchange Online-Postfächer enthält standardmäßig verfügbar.
 
@@ -39,7 +39,11 @@ ZAP ist standardmäßig aktiviert, jedoch müssen die folgenden Bedingungen erf�
 ## <a name="how-does-zap-work"></a>Wie funktioniert ZAP?
 
 Office 365 aktualisiert Anti-Spam-Modul- und Malware-Signaturen in Echtzeit auf täglicher Basis. Jedoch könnte die Benutzer weiterhin bösartige Nachrichten an ihre Posteingänge für eine Vielzahl von Gründen, einschließlich, wenn Inhalte nach der Übermittlung an Benutzer weaponized ist erhalten. Entfernen Sie Adressen dies durch die Überwachung ständig mit Office 365 Spam und Malware Signaturen aktualisiert. ZAP kann suchen und Entfernen zuvor zugestellte Nachrichten, die bereits im Posteingang Benutzer sind. 
+
 - Für e-Mail-Nachrichten, die als Spam gekennzeichnet ist, verschiebt ZAP ungelesene Nachrichten an Benutzer Junk-e-Mail-Ordner. 
+
+- Für e-Mail-Nachrichten, die als Spam gekennzeichnet ist, verschiebt ZAP Nachrichten an Benutzer Junk-e-Mail-Ordner, unabhängig davon, ob die e-Mail-Nachricht gelesen wurde.
+
 - Für neu erkannte Schadsoftware entfernt ZAP Anlagen in e-Mail-Nachrichten, unabhängig davon, ob die e-Mail-Nachricht gelesen wurde. 
   
 Die ZAP-Aktion ist für den Postfachbenutzer nahtlos. Sie werden nicht benachrichtigt, wenn eine e-Mail-Nachricht verschoben wird.
@@ -49,8 +53,11 @@ Listen, [e-Mail-Flussregeln](https://go.microsoft.com/fwlink/p/?LinkId=722755)un
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Um zu überprüfen, oder richten Sie eine Spam-Filter-Richtlinie
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365.
+
 2. Wählen Sie unter **Threat Management** **Anti-Spam**aus.
+
 3. Überprüfen Sie die Standardeinstellungen. 
+
 4. Wenn Sie Ihre Einstellungen anpassen möchten, wählen Sie die Registerkarte **Benutzerdefiniert** aus, und aktivieren Sie **Benutzerdefinierte Einstellungen**. Bearbeiten Sie Ihre Einstellungen, und wenn Sie möchten, wählen Sie **+ Erstellen einer Richtlinie** um eine neue Richtlinie hinzuzufügen. 
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Um festzustellen, ob ZAP Ihrer Nachricht verschoben.

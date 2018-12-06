@@ -1,9 +1,9 @@
 ---
-title: Aktivieren Sie oder deaktivieren Sie der Sicherheitstipps in Office 365
+title: Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: Office 365 und EOP-Admins erfahren, wie Sie aktivieren und Deaktivieren der Sicherheitstipps in e-Mail-Nachrichten.
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529553"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180855"
 ---
-# <a name="enable-or-disable-safety-tips-in-office-365"></a>Aktivieren Sie oder deaktivieren Sie der Sicherheitstipps in Office 365
+# <a name="enable-or-disable-safety-tips-in-office-365"></a>Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
 
 Fügt der Exchange Online Protection (EOP) oder Stempel, eine Safety Tipp, um e-Mail-Nachrichten, die sie bietet. Absender, Safety Tipps bieten eine schnelle, visuelle Möglichkeit, zu bestimmen, ob eine Nachricht aus einer sicheren Empfänger überprüft werden, wenn die Nachricht als Spam von Office 365, markiert wurde, wenn die Nachricht enthält etwas wie Phishing-Betrug verdächtigen oder externe Bilder haben blockiert wurden. Office 365 und EOP-Standalone-Admins können bearbeiten eine richtlinieneinstellung Spam zum Aktivieren oder Deaktivieren der Sicherheitstipps von e-Mail in Outlook und anderen desktop-e-Mail-Clients angezeigt wird. 
   
@@ -38,7 +38,7 @@ Inhalt dieses Themas:
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts, Schul- oder Unikonto an.
     
 3. Wählen Sie **Threat Management** \> **Richtlinie**. 
     
@@ -60,7 +60,7 @@ Inhalt dieses Themas:
     
 9. Aktivieren Sie das Kontrollkästchen **auf** , um Sicherheitstipps, unter **Safety Tipps**zu aktivieren. Deaktivieren Sie das Kontrollkästchen **auf** , um Sicherheitstipps zu deaktivieren. 
     
-10. Wählen Sie **Speichern**.
+10. Klicken Sie auf **Save**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Tipps zu aktivieren oder deaktivieren die Sicherheit mithilfe von PowerShell
 <a name="pshellsafetytip"> </a>
@@ -75,7 +75,7 @@ Administratoren können Exchange Online PowerShell aktivieren oder Deaktivieren 
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    Wobei Folgendes gilt:
+Wobei Folgendes gilt:
     
   -  *Richtlinienname* ist der Name der Richtlinie, die Sie ändern beispielsweise **Standard, möchten**.
     
@@ -89,7 +89,7 @@ Administratoren können Exchange Online PowerShell aktivieren oder Deaktivieren 
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    Weitere Informationen zu diesem Cmdlet finden Sie unter [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
+Weitere Informationen zu diesem Cmdlet finden Sie unter [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
 ## <a name="still-need-help"></a>Benötigen Sie weitere Hilfe?
 <a name="pshellsafetytip"> </a>
