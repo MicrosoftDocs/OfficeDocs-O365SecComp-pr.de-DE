@@ -3,7 +3,7 @@ title: Antispoofingschutz in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe gemindert, dass Verwendungsmöglichkeiten Absenderdomänen, d. h., Domänen gefälscht, die manipuliert werden. Sie erreicht dies durch die Analyse der Nachrichten und Neithe mithilfe der standard-e-Mail-Authentifizierungsmethoden noch andere Sender Reputation Techniken authentifiziert Blockierung diejenigen aus, die werden können. Diese Änderung wird implementiert wird, um die Anzahl der Phishingangriffe zu reduzieren, die Organisationen in Office 365 verfügbar gemacht werden.
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498111"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194716"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -302,17 +302,17 @@ Im Gegensatz zu einer Richtlinie, die Sie erstellen, kann nicht die Standardrich
   
 ![Details zur Anti-Phishing-Standard-Richtlinie](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Später in 2018 So richten Sie Ihre Standard--Schutz über PowerShell ein:
+So richten Sie Ihre Standard--Schutz über PowerShell ein:
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 Sie sollten nur Anti-spoofing Schutz deaktivieren, wenn Sie einen anderen e-Mail-Server oder Server vor Office 365 haben (Siehe legitime Szenarien Anti-spoofing für weitere Details deaktivieren). 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -415,7 +415,7 @@ Im Allgemeinen wird die Richtlinie angewendet auf eine Nachricht in der Kopfzeil
 |**Priority**|**Richtlinie**|**Kategorie**|**Wobei verwaltet?**|**Gilt für**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |Schadsoftware  <br/> |MALW  <br/> |[Malware-Richtlinie](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|2   <br/> |Phishing  <br/> |PHSH  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|2   <br/> |Phishing-E-Mail  <br/> |PHSH  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
 |3   <br/> |Spam mit hoher Vertrauenswürdigkeit  <br/> |HSPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
 |4   <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553), [Spoofing intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Alle Organisationen  <br/> |
 |5   <br/> |Spam  <br/> |SPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |

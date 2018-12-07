@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Verhinderung von Datenverlust (DLP) in die Office 365-Sicherheit &amp; Compliance Center umfasst 80 vertraulichen Informationstypen, die Sie in Ihrer DLP-Richtlinien verwendet werden. Dieses Thema enthält eine Liste aller diese Typen vertraulicher Informationen und dargestellt was eine DLP-Richtlinie für jeden Typ erkannt.
-ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002688"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194736"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
@@ -285,8 +285,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - international driving permits
 - 
 australian automobile association
-- 
-sydney nsw
 - 
 international driving permit
 - DriverLicence
@@ -2214,13 +2212,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-10 Ziffern
+11 Ziffern
 
 ### <a name="pattern"></a>Muster
 
-10 Ziffern:
-- Sechs Ziffern im Format TTMMJJ, die das Geburtsdatum angeben  
-- Vier Ziffern, bei denen die letzte Ziffer eine Prüfziffer ist
+11 Ziffern:
+- 10 Ziffern 
+- Letzte Ziffer ein Kontrollkästchen Ziffer der aus Gründen der internationalen Datenaustausch ist, werden die Buchstaben HR hinzugefügt, die elf Ziffern vor.
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2261,18 +2259,31 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 
    
-## <a name="czech-national-identity-card-number"></a>	Tschechien – Personalausweisnummer
+## <a name="czech-personal-identity-number"></a>Tschechische private Identität Anzahl
 
 ### <a name="format"></a>Format
 
-10 Ziffern, die einen Schrägstrich enthalten
+Neun Ziffern mit optionalen Schrägstrich (altes Format) 10 Ziffern mit optionalen Schrägstrich (neue-Format)
 
 ### <a name="pattern"></a>Muster
 
-10 Ziffern:
-- Sechs Ziffern, die das Geburtsdatum darstellen  
+Neun Ziffern (altes Format):
+- Neun Ziffern
+
+ODER
+
+- Sechs Ziffern, die das Geburtsdatum darstellen.
+- Ein Schrägstrich 
+- Drei Ziffern
+
+10 Ziffern (neue-Format):
+- 10 Ziffern
+
+ODER
+
+- Sechs Ziffern, die das Geburtsdatum darstellen.
 - Ein Schrägstrich  
-- Vier Ziffern, bei denen die letzte Ziffer eine Prüfziffer ist
+- Vier Ziffern, wobei die letzte Ziffer eine Kontrollkästchen Ziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2283,21 +2294,18 @@ Ja
 Eine DLP-Richtlinie ist 85 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: die Funktion Func_czech_id_card sucht nach Inhalten, die dem Muster entspricht. Ein Schlüsselwort aus Keyword_czech_id_card gefunden wird. Die Prüfsumme übergibt.
 
 ```
-<!-- Czech National Identity Card Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_czech_id_card"/>
-     <Match idRef="Keyword_czech_id_card"/>
-  </Pattern>
+<!-- Czech Personal Identity Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
+   <Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_czech_id_card" />
+      <Match idRef="Keyword_czech_id_card" />
+   </Pattern>
 </Entity>
 ```
-
-
 ### <a name="keywords"></a>Schlüsselwörter
 
-- Keyword_czech_id_card
-- Czech national identity card
-- Občanský průka
+- Tschechische private Identität Anzahl
+- Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	Dänemark – Persönliche Identifikationsnummer
 
@@ -3744,13 +3752,47 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- Hong Kong Identity Card
-- HKID
-- ID card
+- Hongkong Personalausweis
+- HKIDC
+- ID-Karte
+- identity card
+- HK Personalausweis
+- Hongkong-id
 - 香港身份證
- 
+
 - 香港永久性居民身份證
- 
+
+- 身份證
+
+- 身份証
+- 身分證 
+- 身分証
+- 香港身份証
+- 香港身分證
+- 香港身分証
+- 香港身份證
+
+- 香港居民身份證
+- 香港居民身份証
+- 香港居民身分證
+- 香港居民身分証
+- 香港永久性居民身份証
+- 香港永久性居民身分證
+- 香港永久性居民身分証
+- 香港永久性居民身份證
+
+- 香港非永久性居民身份證
+- 香港非永久性居民身份証
+- 香港非永久性居民身分證
+- 香港非永久性居民身分証
+- 香港特別行政區永久性居民身份證
+- 香港特別行政區永久性居民身份証
+- 香港特別行政區永久性居民身分證
+- 香港特別行政區永久性居民身分証
+- 香港特別行政區非永久性居民身份證
+- 香港特別行政區非永久性居民身份証
+- 香港特別行政區非永久性居民身分證
+- 香港特別行政區非永久性居民身分証
    
 ## <a name="india-permanent-account-number-pan"></a>Indien – Permanente Kontonummer
 
@@ -4662,6 +4704,48 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 - 社会保険番号
  
+
+## <a name="japanese-residence-card-number"></a>Japanische US-Bundesstaates Card-Nummer
+
+### <a name="format"></a>Format
+
+12 Buchstaben und Ziffern
+
+### <a name="pattern"></a>Muster
+
+12 Buchstaben und Ziffern:
+- Zwei Buchstaben (Groß-/Kleinschreibung irrelevant) 
+- Acht Ziffern 
+- Zwei Buchstaben (Groß-/Kleinschreibung irrelevant) 
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck Regex_jp_residence_card_number sucht nach Inhalten, die dem Muster entspricht.
+- Ein Schlüsselwort aus Keyword_jp_residence_card_number gefunden wird.
+
+```
+<!--Japan Residence Card Number-->
+-<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_jp_residence_card_number"/>
+      <Match idRef="Keyword_jp_residence_card_number"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+
+- US-Bundesstaates Card-Nummer
+- US-Bundesstaates Karte Nein
+- US-Bundesstaates Karte #
+- 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Malaysia -ID-Kartennummer
 
@@ -4704,16 +4788,30 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- MyKad 
-- Identity Card 
-- ID-Karte 
-- Ausweis 
-- Digital Application Card
- 
-- Kad Akuan Diri
- 
-- Kad Aplikasi Digital
- 
+- digitale Anwendung Karte
+- Ich / C
+- Ich / C keine
+- IC
+- IC keine
+- ID-Karte
+- Ausweis
+- identity card
+- k/p
+- k/p keine
+- Kad Akuan diri
+- Kad Aplikasi digitale
+- Kad Pengenalan malaysia
+- KP
+- KP keine
+- mykad
+- mykas
+- mykid
+- mypr
+- mytentera
+- Malaysia Personalausweis
+- Malaysia Personalausweis
+- nric
+- Persönliche Identifikationsnummer Karte
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Niederlande – Bürgerdienstnummer (BSN)
 
@@ -4946,12 +5044,16 @@ Eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informatio
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
+- Dowód osobisty
+- Anzahl Dowodu osobistego
+- Nazwa ich Anzahl Dowodu Osobistego
+- Nazwa ich Nr. Dowodu Osobistego
 - Nazwa i nr dowodu tożsamości
- 
+
 - Dowód Tożsamości
- 
+
 - dow. os.
- 
+
 
    
 ## <a name="poland-national-id-pesel"></a>Polnische ID-Karte (PESEL)
@@ -5029,12 +5131,9 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Nazwa i nr dowodu tożsamości
- 
-- Dowód Tożsamości
- 
-- dow. os.
- 
+- Anzahl paszportu
+- Paszportu Nr.
+- Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>Portugal – Bürgerkartennummer
@@ -5721,7 +5820,101 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 - 台灣地區居留證
  
-   
+
+## <a name="thai-population-identification-code"></a>Thailändische Auffüllung Kenncode
+
+### <a name="format"></a>Format
+
+13 Ziffern
+
+### <a name="pattern"></a>Muster
+
+13 Ziffern:
+- Erste Ziffer ist nicht 0 oder 9 
+- 12 Ziffern
+
+### <a name="checksum"></a>Prüfsumme
+
+Ja
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die dem Muster entspricht.
+- Ein Schlüsselwort aus Keyword_Thai_Citizen_Id gefunden wird.
+
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die dem Muster entspricht.
+
+```
+<!-- Thai Citizen ID -->
+-<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+      <Match idRef="Keyword_Thai_Citizen_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+
+- ID Number
+- ID-Nummer
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+  
+## <a name="turkish-national-identification-number"></a>Türkisch National Identifikationsnummer
+
+### <a name="format"></a>Format
+
+11 Ziffern
+
+### <a name="pattern"></a>Muster
+
+11 Ziffern
+
+### <a name="checksum"></a>Prüfsumme
+
+Ja
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die dem Muster entspricht.
+- Ein Schlüsselwort aus Keyword_Turkish_National_Id gefunden wird.
+
+Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die dem Muster entspricht.
+
+```
+<!-- Turkish National Identity -->
+-<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+      <Match idRef="Keyword_Turkish_National_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+
+- TC Kimlik Nr.
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık keine
+
 ## <a name="uk-drivers-license-number"></a>Britische Führerscheinnummer
 
 ### <a name="format"></a>Format
@@ -5930,7 +6123,7 @@ Zwei mögliche Muster:
 - Sechs Ziffern
 - Entweder 'A', 'B', 'C', oder hatte ' (wie das Präfix nur bestimmte Zeichen in das Suffix; nicht zwischen Groß-und Kleinschreibung sind zulässig)
 
-OR
+ODER
 
 - Zwei Buchstaben
 - Ein Leerzeichen oder ein Bindestrich
