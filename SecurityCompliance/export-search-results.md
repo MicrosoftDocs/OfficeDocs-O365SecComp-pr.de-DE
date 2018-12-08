@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center auf einen lokalen Computer. Emaill e-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites als systemeigene Office-Dokumente exportiert werden. '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche in die Office 365-Sicherheit und Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites als systemeigene Office-Dokumente exportiert werden. '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539117"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201579"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportieren von Suchergebnissen aus der Office 365-Sicherheit und Compliance Center
 
@@ -32,7 +32,7 @@ Darüber hinaus werden alle RMS-verschlüsselten e-Mail-Nachrichten, die in den 
   
 Exportieren Sie die Ergebnisse einer Suche Content umfasst die Ergebnisse vorbereiten, und klicken Sie dann auf einen lokalen Computer herunterladen.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um die Suchergebnisse zu exportieren, müssen Sie die Verwaltungsrolle "Export" in die Office 365-Sicherheit zugewiesen werden &amp; Compliance Center. Die integrierten eDiscovery-Manager-Rollengruppe wird diese Rolle zugewiesen. Es ist nicht in der Standardeinstellung der Rollengruppe "Organisationsverwaltung" zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
     
@@ -332,3 +332,5 @@ Nachfolgend finden Sie weitere Informationen zum Exportieren von Suchergebnissen
 - Alle Suchergebnisse und die Exportieren von Berichten in einem Ordner mit dem gleichen Namen wie die Inhaltssuche enthalten sind. Die e-Mail-Nachrichten, die exportiert wurden befinden sich in einem Ordner mit dem Namen **Exchange**. Dokumente befinden sich in einen Ordner namens **SharePoint**. 
     
 - Die Dateisystem-Metadaten für Dokumente in SharePoint, und OneDrive for Business-Websites wird beibehalten, wenn Dokumente auf Ihrem lokalen Computer exportiert werden. Die Dokumenteigenschaften bedeutet, wie etwa erstellt und Datum der letzten Änderung, werden nicht geändert, wenn Dokumente exportiert werden.
+
+- Wenn die Suchergebnisse ein Listenelement aus SharePoint, die mit die Suchabfrage übereinstimmt umfassen, werden alle Zeilen in der Liste neben dem Element exportiert, die mit die Suchabfrage übereinstimmt. Dazu gehören alle Anlagen in der Liste aus. Der Grund dafür ist einen Kontext für Listenelemente bereitzustellen, die in den Suchergebnissen zurückgegeben werden. Beachten Sie außerdem, dass die zusätzliche Listenelemente und Anlagen die Anzahl der exportierten Elemente anders als die ursprüngliche Schätzung der Suchergebnisse zur Folge haben.
