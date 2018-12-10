@@ -3,7 +3,7 @@ title: Übersicht über Aufbewahrungsrichtlinien
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540401"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194706"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -110,7 +110,7 @@ Nachdem einem Postfach odereinem öffentlichen Ordner eine Aufbewahrungsrichtlin
     
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Dokumentversion in einer Website
 
-Die Versionsverwaltung ist ein Feature für alle Dokumentbibliotheken in SharePoint Online und OneDrive for Business. Standardmäßig bewahrt die Versionsverwaltung mindestens 100 Hauptversionen auf, Sie können diesen Grenzwert jedoch erhöhen. Weitere Informationen finden Sie unter [Versionsverwaltung für eine Liste oder Bibliothek aktivieren und konfigurieren](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
+Die Versionsverwaltung ist ein Feature für alle Dokumentbibliotheken in SharePoint Online und OneDrive for Business. Standardmäßig bewahrt die Versionsverwaltung mindestens 500 Hauptversionen auf, Sie können diesen Grenzwert jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
 Eine Aufbewahrungsrichtlinie bewahrt alle Versionen eines Dokuments in einer SharePoint-Website oder einem OneDrive-Konto auf. Jedes Mal, wenn ein Dokument, das einer Aufbewahrungsrichtlinie unterliegt, bearbeitet oder gelöscht wird, wird eine Version in das permanente Dokumentarchiv kopiert. Jede Version eines Dokuments im permanenten Dokumentarchiv existiert als separates Element mit einem eigenen Aufbewahrungszeitraum:
   
@@ -197,17 +197,13 @@ Weitere wichtige Features einer organisationsweiten Aufbewahrungsrichtlinie sind
 - Es gibt keine Beschränkung für die Anzahl der Postfächer oder Websites, die in der Richtlinie enthalten sein können.
     
 - Bei Exchange erben alle neuen Postfächer, die nach der Anwendung der Richtlinie erstellt werden, die Richtlinie automatisch.
-    
-Es gilt jedoch ein Grenzwert von 10 organisationsweiten Richtlinien und Richtlinien für ganze Speicherorte pro Mandant (siehe nächster Abschnitt).
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Eine Richtlinie, die für ganze Speicherorte gilt
 
 Beim Auswählen von Speicherorten können Sie einen ganzen Speicherort ganz einfach aufnehmen oder ausschließen, z. B. Exchange-E-Mail- oder OneDrive-Konten. Zu diesem Zweck schalten Sie einfach den **Status** des entsprechenden Speicherorts an oder aus. 
   
 Wie auch bei organisationsweiten Richtlinien gilt, dass wenn eine Richtlinie für eine beliebige Kombination aus ganzen Speicherorten gilt, es keine Beschränkung für die Anzahl der Postfächer oder Websites gibt, die in der Richtlinie enthalten sein können. Wenn eine Richtlinie z. B. alle Exchange-E-Mail-Konten und alle SharePoint-Websites umfasst, werden alle Websites und Postfächer einbezogen, ganz gleich, wie viele es sind. Und bei Exchange erben alle neuen Postfächer, die erstellt werden, nachdem die Richtlinie angewendet wurde, die Richtlinie automatisch.
-  
-Es gilt jedoch ein Grenzwert von 10 organisationsweiten Richtlinien und Richtlinien für ganze Speicherorte pro Mandant.
-  
+ 
 ![Seite „Speicherorte wählen“](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Eine Richtlinie mit bestimmten eingeschlossenen oder ausgeschlossenen Elementen
