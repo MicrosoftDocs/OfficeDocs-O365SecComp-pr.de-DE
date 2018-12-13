@@ -3,7 +3,7 @@ title: Richten Sie ein Archiv und Löschung Richtlinie für Postfächer in Ihrer
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/9/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,20 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Richtlinie Archivierung und Löschung in Office 365, die automatisch Elemente zum Archivpostfach des Benutzers verschoben wird.
-ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522296"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240578"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Richten Sie ein Archiv und Löschung Richtlinie für Postfächer in Ihrer Organisation Office 365
 
- **Dieser Artikel ist für Administratoren. Archiv-und Aufbewahrungsrichtlinien Elemente in Ihrem Postfach hinzufügen möchten? Finden Sie unter [zuweisen Aufbewahrungsrichtlinie für e-Mail-Nachrichten](https://support.office.com/article/3e5fd2dc-633f-4a38-b313-b31b81f7cf7a) | [Aufbewahrungs- und Archivierungsrichtlinien in Outlook im Web für Unternehmen](https://support.office.com/article/465372e4-e16b-47db-bee0-aba44799085e)**
+ In Office 365 können Administratoren eine Archivierung und Löschung Richtlinie erstellen, die automatisch Verschiebt Elemente in Archivpostfach des Benutzers und werden automatisch Elemente aus dem Postfach gelöscht. Der Administrator führt dies durch Erstellen einer Aufbewahrungsrichtlinie, die Postfächer zugewiesen ist, und verschiebt Elemente in Archivpostfach des Benutzers, nachdem eine gewisse Zeit und, Elemente auch aus dem Postfach, löscht Nachdem sie eine bestimmte Verfallszeit erreichen. Die tatsächlichen Regeln, die bestimmen, welche Elemente verschoben oder gelöscht werden und in diesem Fall aufgerufene aufbewahrungstags werden. Aufbewahrungstags werden einer Aufbewahrungsrichtlinie verknüpft, die wiederum dem Postfach eines Benutzers zugewiesen wird. Ein aufbewahrungstag gilt beibehaltungseinstellungen für einzelne Nachrichten und Ordnern im Postfach des Benutzers an. Es definiert, wie lange eine Nachricht im Postfach verbleibt und welche Aktion ausgeführt wird, wenn die Meldung die angegebenen Aufbewahrungszeitraum erreicht. Wenn eine Nachricht den Aufbewahrungszeitraum erreicht, entweder auf das Postfach des Benutzers Archiv verschoben wird, oder wird gelöscht. 
   
-In Office 365 können Sie eine Richtlinie Archivierung und Löschung erstellen, die automatisch Verschiebt Elemente in Archivpostfach des Benutzers und werden automatisch Elemente aus dem Postfach gelöscht. Hierzu können Sie eine Aufbewahrungsrichtlinie zu erstellen, die "s zugewiesen Postfächer und Elemente zum Archivpostfach des Benutzers wechselt, nachdem eine bestimmte Zeitspanne und, auch löscht Elemente aus dem Postfach, nachdem sie eine bestimmte Verfallszeit erreichen. Die tatsächlichen Regeln, die bestimmen, welche Elemente verschoben oder gelöscht werden und in diesem Fall aufgerufene aufbewahrungstags werden. Aufbewahrungstags werden einer Aufbewahrungsrichtlinie verknüpft, die wiederum dem Postfach eines Benutzers zugewiesen wird. Ein aufbewahrungstag gilt beibehaltungseinstellungen für einzelne Nachrichten und Ordnern im Postfach des Benutzers an. Es definiert, wie lange eine Nachricht im Postfach verbleibt und welche Aktion ausgeführt wird, wenn die Meldung die angegebenen Aufbewahrungszeitraum erreicht. Wenn eine Nachricht den Aufbewahrungszeitraum erreicht, entweder auf das Postfach des Benutzers Archiv verschoben wird, oder wird gelöscht. 
-  
-Die Schritte in diesem Thema werden eine Richtlinie Archivierung und Aufbewahrung für einen fiktiven Organisation mit dem Namen Alpine House eingerichtet. Einrichten von dieser Richtlinie umfasst die folgenden Aufgaben:
+Die Schritte in diesem Artikel werden eine Richtlinie Archivierung und Aufbewahrung für einen fiktiven Organisation mit dem Namen Alpine House eingerichtet. Einrichten von dieser Richtlinie umfasst die folgenden Aufgaben:
   
 - Aktivieren eines archivpostfachs für jeden Benutzer in der Organisation. Dies ermöglicht es den Benutzern Postfachspeicher hinzufügen, und ist erforderlich, damit eine Aufbewahrungsrichtlinie Elemente in das Archivpostfach verschoben werden kann. Es Elemente wir auch eine Archivierung Store Benutzerinformationen durch Verschieben in ihre Archivpostfach. 
     
@@ -37,7 +35,7 @@ Die Schritte in diesem Thema werden eine Richtlinie Archivierung und Aufbewahrun
     
   - Automatisch Verschiebt Elemente, die 3 Jahre Archivpostfach des Benutzers sind. Verschieben von Elementen in das Archivpostfach Freigabe von Speicherplatz im primären Postfach eines Benutzers.
     
-  - Auf Elemente mit fünf Jahren aus dem Ordner Gelöschte Elemente werden automatisch gelöscht. Dies setzt auch Speicherplatz im primären Postfach des Benutzers. Des Benutzers wird die Möglichkeit, diese Elemente bei Bedarf wiederhergestellt haben. Siehe die Fußnote im Abschnitt [Weitere Informationen](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) für weitere Details. 
+  - Auf Elemente mit fünf Jahren aus dem Ordner Gelöschte Elemente werden automatisch gelöscht. Dies setzt auch Speicherplatz im primären Postfach des Benutzers. Des Benutzers wird die Möglichkeit, diese Elemente bei Bedarf wiederhergestellt haben. Siehe die Fußnote im Abschnitt [Weitere Informationen](#more-information) für weitere Details. 
     
   - Automatisch (und dauerhaft) werden die Elemente, die aus der primären 7 Jahre und Archivpostfach sind gelöscht. Einige Unternehmen müssen aufgrund von Vorschriften e-Mail für einen bestimmten Zeitraum beibehalten. Nach Ablauf dieses Zeitraums möglicherweise eine Organisation diese Benutzerpostfächer Elemente dauerhaft entfernen möchten. 
     
@@ -45,7 +43,7 @@ Die Schritte in diesem Thema werden eine Richtlinie Archivierung und Aufbewahrun
     
 Führen Sie einige oder alle Schritte in diesem Artikel können Sie ein Archiv und Löschung Richtlinie für Postfächer in Ihrer Organisation einrichten. Es wird empfohlen, diesen Vorgang für einige Postfächer testen, bevor es für alle Postfächer in Ihrer Organisation zu implementieren.
   
-## <a name="before-you-begin"></a>Vorbemerkung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein globaler Administrator in Office 365-Organisation zum Ausführen der Schritte in diesem Thema werden. 
     
@@ -232,11 +230,8 @@ Wenn ein neues Postfach erstellt wird, wird eine Aufbewahrungsrichtlinie mit dem
 2. Klicken Sie auf der Eigenschaftenseite des Postfachs für den ausgewählten Benutzer die auf **Postfachfunktionen**.
     
     Der Name der neuen Richtlinie zugewiesen an das Postfach wird in der **Aufbewahrungsrichtlinie** Dropdown-Liste angezeigt. 
-    
 
-  
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Optional) Schritt 5: Führen Sie den Assistenten für verwaltete Ordner, um die neuen Einstellungen anzuwenden
-<a name="step3"> </a>
 
 Nachdem Sie die neue Aufbewahrungsrichtlinie auf Postfächer in Schritt 4 anwenden, kann es bis zu sieben Tage in Exchange Online für die neue Einstellungen für die Aufbewahrung auf die Postfächer angewendet werden soll dauern. Dies ist, da ein Prozess der Assistenten für verwaltete Ordner Prozesse Postfächer einmal alle 7 Tage aufgerufen. Anstelle von Warten auf Assistenten für verwaltete Ordner ausführen, können Sie dies durch Ausführen des **Start-ManagedFolderAssistant-** Cmdlets in Exchange Online PowerShell erzwingen. 
   
@@ -271,7 +266,7 @@ Hier sind die Schritte zum Verbinden mit Exchange Online PowerShell, und führen
     ```
 
     > [!NOTE]
-    > Weitere Informationen oder Hinweise bei Problemen mit der Verbindung zu Ihrer Exchange Online-Organisation finden Sie unter [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
+    > Weitere Informationen oder wenn Sie eine Verbindung mit Ihrer Exchange Online-Organisation Probleme haben, finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
   
 5. Führen Sie die folgenden zwei Befehle aus, um den Assistenten für verwaltete Ordner für alle Benutzerpostfächer in Ihrer Organisation zu starten.
     
@@ -285,18 +280,37 @@ Hier sind die Schritte zum Verbinden mit Exchange Online PowerShell, und führen
 
 Das wars! Sie haben ein Archiv und Löschung Richtlinie für die Organisation Alpine House einrichten.
   
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Optional) Schritt 6: Stellen Sie der neue Aufbewahrungsrichtlinie die Standardeinstellung für Ihre Organisation
+
+In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandene Postfächer zuweisen. Aber Sie können Exchange Online konfigurieren, sodass die neue Aufbewahrungsrichtlinie auf neue Postfächer zugewiesen ist, die in der Zukunft erstellt werden. Zu diesem Zweck mit Exchange Online PowerShell, um Ihrer Organisation Default Mailbox Plan zu aktualisieren. Einen *postfachplan* ist eine Vorlage, die Eigenschaften für neue Postfächer automatisch konfiguriert.  In diesem Schritt optional können Sie die aktuellen Aufbewahrungsrichtlinie ersetzen, die das die postfachplan (standardmäßig die MRM-Standardrichtlinie) mit der Aufbewahrungsrichtlinie zugeordnet ist, die Sie in Schritt 3 erstellt haben. Nach dem Aktualisieren der postfachplan, wird die neue Aufbewahrungsrichtlinie neue Postfächer zugewiesen werden.
+
+1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) oder finden Sie unter Schritt 5.
+
+2. Führen Sie den folgenden Befehl aus, um Informationen zu den postfachplänen in Ihrer Organisation anzuzeigen.
+
+    ```
+    Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
+    ```
+    Beachten Sie die postfachplan, die als Standard festgelegt wird.
+
+3. Führen Sie den folgenden Befehl zuweisen, die Sie in Schritt 3 (beispielsweise **Alpine House Archive und Aufbewahrungsrichtlinien**) erstellt die neue Aufbewahrungsrichtlinie auf den Default Mailbox Plan. In diesem Beispiel wird davon ausgegangen, dass der Name des standardmäßigen Mailbox Plans **ExchangeOnlineEnterprise**ist.
+
+    ```
+    Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
+    ```
+4. Sie können den Befehl erneut ausführen, in Schritt 2, um sicherzustellen, dass die Aufbewahrungsrichtlinie auf den Default Mailbox Plan zugewiesen geändert wurde.
+
 ## <a name="more-information"></a>Weitere Informationen
-<a name="moreinfo"> </a>
 
 - Wie wird der Aufbewahrungszeitraum berechnet? Der Aufbewahrungszeitraum Postfachelemente aus dem Datum der Lieferung oder das Erstellungsdatum für Elemente wie Entwurf-Nachrichten, die gesendet werden nicht berechnet wird, aber vom Benutzer erstellt werden. Wenn die Assistenten für verwaltete Ordner Elemente in einem Postfach verarbeitet, stempelt sie ein Startdatum und ein Ablaufdatum für alle Elemente, die mit der Aufbewahrungsaktion löschen und Wiederherstellung zulassen oder endgültig löschen aufbewahrungstags aufweisen. Auf Elemente mit einem Tag Archiv werden mit einem Datum der Verschiebung versehen. 
     
 - Die folgende Tabelle enthält weitere Informationen zu den einzelnen Retention Tags, die die benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt wird, die mithilfe der Schritte in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungstag**|**Funktionsweise dieses tag**|**Integrierte oder benutzerdefinierte?**|**Type**|
+    |**Aufbewahrungstag**|**Funktionsweise dieses tag**|**Integrierte oder benutzerdefinierte?**|**Typ**|
     |:-----|:-----|:-----|:-----|
-    |3 Jahre, Alpine House in Archiv verschieben  <br/> |Verschiebt Elemente, die in das Archivpostfach alte 1095 Tage (in 3 Jahren) sind.  <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Richtlinie Standardtag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
-    |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente in das primäre Postfach oder das Archivpostfach dauerhaft, wenn sie 7 Jahre alt sind.  <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Richtlinie Standardtag (löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
-    |Alpine House gelöschte Elemente 5 Jahre löschen und Wiederherstellung zulassen  <br/> |Löscht Elemente aus dem Ordner Gelöschte Objekte, die 5 Jahre alt sind. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Aufbewahrungsrichtlinien-Tag (Gelöschte Objekte); Dieses Tag wird automatisch auf Elemente im Ordner "Gelöschte Elemente" angewendet.  <br/> |
+    |3 Jahre, Alpine House in Archiv verschieben  <br/> |Verschiebt Elemente, die in das Archivpostfach alte 1095 Tage (in 3 Jahren) sind.  <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Richtlinie Standardtag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
+    |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente in das primäre Postfach oder das Archivpostfach dauerhaft, wenn sie 7 Jahre alt sind.  <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Richtlinie Standardtag (löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
+    |Alpine House gelöschte Elemente 5 Jahre löschen und Wiederherstellung zulassen  <br/> |Löscht Elemente aus dem Ordner Gelöschte Objekte, die 5 Jahre alt sind. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Aufbewahrungsrichtlinien-Tag (Gelöschte Objekte); Dieses Tag wird automatisch auf Elemente im Ordner "Gelöschte Elemente" angewendet.  <br/> |
     |Wiederherstellbare Elemente, 14 Tage verschieben in Archiv  <br/> |Verschiebt Elemente, die im Ordner "wiederherstellbare Elemente" in den Ordner wiederherstellbare Elemente im Archivpostfach 14 Tagen wurden.  <br/> |Integriert  <br/> |Aufbewahrungsrichtlinien-Tag (wiederherstellbare Elemente); Dieses Tag wird automatisch auf Elemente im Ordner "wiederherstellbare Elemente" angewendet.  <br/> |
     |Junk-e-Mail  <br/> |Löscht dauerhaft Elemente, die in den Junk-e-Mail-Ordner für 30 Tage wurden. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Aufbewahrungsrichtlinien-Tag (Junk-e); Dieses Tag wird automatisch auf Elemente in den Junk-e-Mail-Ordner angewendet.  <br/> |
     |1 Monat, löschen  <br/> |Löscht dauerhaft Elemente, die 30 Tage alt sind. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche; Dieses Tag kann von Benutzern angewendet werden.  <br/> |

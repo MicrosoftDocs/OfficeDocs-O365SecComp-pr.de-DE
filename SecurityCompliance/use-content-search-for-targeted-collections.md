@@ -3,7 +3,7 @@ title: Verwenden Sie Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,18 +11,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center gezielte Websitesammlungen ausführen. Eine Sammlung bedeutet, dass Sie davon überzeugt sind, dass auf eine Anfrage reagieren oder privilegierten Elemente in einem bestimmten Postfach oder einer Website Ordner befinden. Verwenden Sie das Skript in diesem Artikel erhalten Sie die Ordner-ID oder den Pfad für die bestimmten Ordner Postfach oder einer Website, die Sie suchen möchten.
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522286"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245062"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden Sie Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
-Das Inhaltssuche-Feature in die Office 365-Sicherheit &amp; Compliance Center nicht zur Verfügung, eine direkte Weise in der Benutzeroberfläche zum Durchsuchen bestimmter Ordner in Exchange-Postfächern oder SharePoint und OneDrive for Business-Websites. Es ist jedoch möglich, bestimmte Ordner (einen zielgerichteten Collection bezeichnet) zu suchen, indem Sie die Ordner-ID oder den Pfad in die eigentliche Suche-Abfragesyntax. Verwenden zum Ausführen einer Sammlung Inhaltssuche ist nützlich, wenn Sie davon überzeugt sind, dass auf eine Anfrage reagieren oder privilegierten Elemente in einem bestimmten Postfach oder einer Website Ordner befinden. Das Skript können in diesem Artikel Sie um die Ordner-ID für Postfachordner oder der Pfad zum Ordner auf einer SharePoint- und OneDrive for Business-Website zu erhalten. Anschließend können Sie die Ordner-ID oder den Pfad in einer Suchabfrage zurückzugebenden Elemente im Ordner gespeichert.
+Das Inhaltssuche-Feature in die Office 365-Sicherheit &amp; Compliance Center nicht zur Verfügung, eine direkte Weise in der Benutzeroberfläche zum Durchsuchen bestimmter Ordner in Exchange-Postfächern oder SharePoint und OneDrive for Business-Websites. Es ist jedoch möglich, bestimmte Ordner (eine *Auflistung zielorientierten*genannt) zu suchen, indem Sie die Ordner-ID oder den Pfad in die eigentliche Suche-Abfragesyntax. Verwenden zum Ausführen einer Sammlung Inhaltssuche ist nützlich, wenn Sie davon überzeugt sind, dass auf eine Anfrage reagieren oder privilegierten Elemente in einem bestimmten Postfach oder einer Website Ordner befinden. Das Skript können in diesem Artikel Sie um die Ordner-ID für Postfachordner oder der Pfad zum Ordner auf einer SharePoint- und OneDrive for Business-Website zu erhalten. Anschließend können Sie die Ordner-ID oder den Pfad in einer Suchabfrage zurückzugebenden Elemente im Ordner gespeichert.
   
-## <a name="before-you-begin"></a>Vorbemerkung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein Mitglied der Rollengruppe eDiscovery-Manager in das Wertpapier sein &amp; Compliance Center zum Ausführen des Skripts in Schritt 1. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
     
@@ -44,7 +44,7 @@ Das Inhaltssuche-Feature in die Office 365-Sicherheit &amp; Compliance Center ni
 
 Das Skript, das Sie in dieser ersten Schritt ausführen, wird eine Liste der Postfachordner oder SharePoint oder OneDrive for Business-Ordner und die entsprechenden Ordner-ID oder Pfad für jeden Ordner zurück. Wenn Sie dieses Skript ausführen, fordert es Sie für die folgenden Informationen.
   
-- **E-Mail-Adresse oder Website-URL** Geben Sie eine e-Mail-Adresse der Verwaltungsberechtigte zum Zurückgeben einer Liste der Exchange-Postfachordner und IDs Faltung. Oder geben Sie die URL für eine SharePoint-Website oder eine OneDrive for Business-Website, um eine Liste der Pfade für die angegebene Website zurückzugeben. Es folgen einige Beispiele: 
+- **E-Mail-Adresse oder Website-URL** Geben Sie eine e-Mail-Adresse der Verwaltungsberechtigte um eine Liste der Exchange-Postfachordner und Ordner IDs zurückzugeben. Oder geben Sie die URL für eine SharePoint-Website oder eine OneDrive for Business-Website, um eine Liste der Pfade für die angegebene Website zurückzugeben. Es folgen einige Beispiele: 
     
   - **Exchange** - stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Zeigt eine Liste der Postfachordner oder Pfadnamen Website:
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -216,7 +216,7 @@ Nach dem Ausführen des Skripts, um eine Liste der Ordner IDs oder Pfade für ei
     
 4. Geben Sie auf der Seite **Neue Suche** einen Namen für die Inhaltssuche ein. Dieser Name muss in der Organisation eindeutig sein. 
     
-5. Klicken Sie unter **Wo möchten Sie uns suchen**, führen Sie einen der folgenden, abhängig davon, ob Ihre Suche in einem Postfachordner oder einen Website-Ordner:
+5. Unter **Wo möchten Sie uns suchen**, führen Sie einen der folgenden basierend auf gibt an, ob Sie einen Postfachordner oder einem Website-Ordner suchen:
     
     - Klicken Sie auf **bestimmte Postfächer auswählen, um zu suchen** , und fügen Sie dasselbe Postfach, das Sie bei der Ausführung des Skripts in Schritt 1 angegeben. 
     
@@ -264,14 +264,16 @@ Es folgen einige Beispiele für die Verwendung der `folderid` und `path` Eigensc
   
 ## <a name="more-information"></a>Weitere Informationen
 
-Berücksichtigen Sie die folgenden Punkte berücksichtigen, bei der mithilfe des Skripts in diesem Artikel und Ausführen von Auflistungen Ziel.
+Berücksichtigen Sie die folgenden Punkte berücksichtigen, bei der mithilfe des Skripts in diesem Artikel vorgesehenen Websitesammlungen ausführen.
   
 - Das Skript entfernen keine Ordner in den Suchergebnissen. Damit in einige Ordner aufgeführt möglicherweise die Ergebnisse werden nicht durchsuchbaren (oder keine Elemente zurückgeben), da sie vom System generierte Inhalte enthalten.
     
 - Dieses Skript gibt nur Informationen für das Postfach des Benutzers primären Ordner zurück. Er wird nicht Informationen zu Ordnern im Archivpostfach des Benutzers zurückgegeben.
     
-- Bei der Suche Postfachordner, nur die angegebenen Ordner (identifiziert durch seine `folderid` -Eigenschaft) wird durchsucht. Unterordner wird nicht durchsucht werden. Um Unterordner zu suchen, müssen Sie verwenden die `folderid` für den Unterordner, die Sie suchen möchten. 
+- Bei der Suche Postfachordner, nur die angegebenen Ordner (identifiziert durch seine `folderid` -Eigenschaft) wird durchsucht. Unterordner wird nicht durchsucht werden. Um Unterordner zu suchen, müssen Sie die Ordner-ID für den Unterordner verwenden, die Sie suchen möchten. 
     
 - Bei der Suche-Ordner, den Ordner (identifiziert durch seine `path` Eigenschaft) und alle Unterordner werden durchsucht. 
     
 - Wie bereits zuvor erwähnt, können keine `path` Eigenschaft zu suchenden Mediendateien wie PNG, TIFF oder WAV-Dateien, OneDrive Speicherorten gespeichert. Verwenden Sie eine andere [Websiteeigenschaft](keyword-queries-and-search-conditions.md#searchable-site-properties) , um für die Mediendateien in OneDrive-Ordner suchen. 
+
+- Wenn Sie die Ergebnisse einer Suche exportieren in dem angegebenen Sie nur die `folderid` -Eigenschaft in der Suchabfrage; Sie können auswählen, der erste Export option "alle Elemente, ausgenommen solche, die ein unbekanntes Format, haben werden verschlüsselt oder aus anderen Gründen indiziert wurden nicht." Alle Elemente im Ordner werden immer unabhängig von deren Indizierungsstatus exportiert werden, da die Ordner-ID immer indiziert ist.
