@@ -3,7 +3,7 @@ title: Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Office 365-Bezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: f8d835481c0eac00be11f7934c1d74b8a2d08d78
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 38ded352c91a4c7f0138a6b9932840842d730926
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345967"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240568"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust
 
@@ -68,13 +68,13 @@ Zum Erstellen der Bezeichnungen können Sie das Office 365 Admin Center oder Mic
     
 4. Klicken Sie auf der neuen Registerkarte **Start - Security &amp; Compliance** im Browser auf **Klassifizierungen > Bezeichnungen**.
     
-5. Klicken Sie im Bereich **Start > Bezeichnungen** auf **Bezeichnung erstellen**.
+5. Klicken Sie im Bereich **Start > Bezeichnungen** auf die Registerkarte **Aufbewahrung**, und klicken Sie dann auf **Bezeichnung erstellen**.
     
-6. Geben Sie im Bereich zum **Benennen der Bezeichnung** den Namen für die Bezeichnung ein, und klicken Sie auf **Weiter**.
-    
+6. Geben Sie im Bereich zum **Benennen der Bezeichnung** den Namen für die Bezeichnung und eine Beschreibung für Administratoren und Benutzer ein, und klicken Sie auf **Weiter**.
+
 7. Klicken Sie im Bereich **Bezeichnungseinstellungen** auf **Weiter**.
     
-8. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnung erstellen**, und klicken Sie dann auf **Schließen**.
+8. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Erstellen**, und klicken Sie dann auf **Schließen**.
     
 9. Wiederholen Sie die Schritte 5 bis 8 für weitere Bezeichnungen.
     
@@ -89,11 +89,13 @@ Zum Erstellen der Bezeichnungen können Sie das Office 365 Admin Center oder Mic
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
+### <a name="publish-your-new-labels"></a>Veröffentlichen neuer Bezeichnungen
+
 Führen Sie dann diese Schritte aus, um die neuen Office 365-Bezeichnungen zu veröffentlichen.
   
-1. Klicken Sie im Bereich **Start > Bezeichnungen** von Security &amp; Compliance Center auf **Bezeichnungen veröffentlichen**.
+1. Klicken Sie im Bereich **Start > Bezeichnungen** von Security &amp; Compliance Center auf die Registerkarte **Aufbewahrung**, und klicken Sie dann auf **Bezeichnungen veröffentlichen**.
     
-2. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
+2. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**.
     
 3. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
     
@@ -106,6 +108,7 @@ Führen Sie dann diese Schritte aus, um die neuen Office 365-Bezeichnungen zu ve
 7. Geben Sie im Bereich zum **Benennen der Richtlinie** einen Namen für den Bezeichnungssatz unter **Name** ein, und klicken Sie dann auf **Weiter**.
     
 8. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
+
     
 ### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Phase 3: Anwenden von Office 365-Bezeichnungen auf Ihre SharePoint-Websites
 
@@ -133,15 +136,17 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>DLP-Richtlinien für Ihre SharePoint Online-Websites
 
-Verwenden Sie diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benutzer benachrichtigt, wenn sie ein Dokument auf einer vertraulichen SharePoint Online-Teamwebsite außerhalb einer Organisation freigeben.
-  
-1. Klicken Sie auf der Registerkarte **Microsoft Office Home** im Browser auf die Kachel **Security &amp; Compliance**.
+Gehen Sie wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer benachrichtigt, wenn sie ein Dokument auf einer vertraulichen SharePoint Online-Teamwebsite mit Benutzern außerhalb der Organisation teilen.
+
+1. Klicken Sie auf der Registerkarte **Microsoft Office Home** auf die Kachel **Admin**.
     
-2. Klicken Sie auf der Registerkarte **Security &amp; Compliance** in Ihrem Browser auf **Verhinderung von Datenverlust > Richtlinie**.
+2. Klicken Sie auf der neuen Registerkarte **Office Admin Center** im Browser auf **Admin Center > Security &amp; Compliance**.
     
-3. Klicken Sie im Bereich **Verhinderung von Datenverlust** auf **+ Richtlinie erstellen**.
+3. Klicken Sie auf der Registerkarte **Security &amp; Compliance** in Ihrem Browser auf **Verhinderung von Datenverlust > Richtlinie**.
     
-4. Klicken Sie im Bereich **Mit einer Vorlage beginnen oder eine benutzerdefinierte Richtlinie erstellen** auf **Benutzerdefiniert**, und klicken Sie dann auf **Weiter**.
+4. Klicken Sie im Bereich **Verhinderung von Datenverlust** auf **+ Richtlinie erstellen**.
+    
+5. Klicken Sie im Bereich **Mit einer Vorlage beginnen oder eine benutzerdefinierte Richtlinie erstellen** auf **Benutzerdefiniert**, und klicken Sie dann auf **Weiter**.
     
 5. Geben Sie im Bereich **Benennen Sie Ihre Richtlinie** unter **Name** den Namen der DLP-Richtlinie für die Vertraulichkeitsebene ein, und klicken Sie dann auf **Weiter**.
     
@@ -158,7 +163,7 @@ Verwenden Sie diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benut
 11. Klicken Sie im Bereich **Typen des zu schützenden Inhalts auswählen** auf **Speichern**.
     
 12. Klicken Sie im Bereich **Customize the types of sensitive info you want to protect** (Anpassen der Typen an vertraulichen Informationen, die Sie schützen möchten) auf **Weiter**.
-    
+
 13. Klicken Sie im Bereich **What do you want to do if we detect sensitive info?** (Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?) auf **Customize the tip and email** (Den Tipp und die E-Mail anpassen).
     
 14. Klicken Sie im Bereich **Richtlinentipps und E-Mail-Benachrichtigungen anpassen** auf **Richtlinientipptext anpassen**.
@@ -172,7 +177,7 @@ Verwenden Sie diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benut
     
 16. Klicken Sie auf **OK**.
     
-17. Deaktivieren Sie im Fenster **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** das Kontrollkästchen **Freigeben blockieren und Zugriff auf freigegebene Inhalte einschränken**, und klicken Sie dann auf **Weiter**.
+17. Klicken Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** auf **Weiter**.
     
 18. Klicken Sie im Bereich **Möchten Sie die Richtlinie aktivieren oder zunächst testen?** auf **Ja, Richtlinie aktivieren**, und klicken Sie dann auf **Weiter**.
     
@@ -220,7 +225,7 @@ Verwenden Sie anschließend diese Schritte, um eine DLP-Richtlinie zu konfigurie
     
 16. Klicken Sie auf **OK**.
     
-17. Wählen Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** die Option **Begründung für Außerkraftsetzung erforderlich**, und klicken Sie dann auf **Weiter**.
+17. Klicken Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** auf **Weiter**.
     
 18. Klicken Sie im Bereich **Möchten Sie die Richtlinie aktivieren oder zunächst testen?** auf **Ja, Richtlinie aktivieren**, und klicken Sie dann auf **Weiter**.
     
