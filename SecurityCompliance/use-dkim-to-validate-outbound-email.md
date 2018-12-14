@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 13af2ae96d8c4cbf363e1273a3d1ed5fb9be2077
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
+ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201569"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27263914"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -83,9 +83,12 @@ Um DKIM zu konfigurieren, müssen Sie diese Schritte ausführen:
 
 Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, müssen Sie zwei CNAME-Einträge veröffentlichen. Ein CNAME-Eintrag wird von DNS verwendet, um anzugeben, dass der kanonische Name einer Domäne ein Alias für einen anderen Domänennamen ist. 
   
-  Office 365 führt die automatische Schlüsselrotation unter Verwendung der beiden eingerichteten Datensätze durch. Wenn Sie neben der ersten Domäne zusätzliche benutzerdefinierte Domänen in Office 365 bereitgestellt haben, müssen Sie zwei CNAME-Einträge für jede zusätzliche Domäne veröffentlichen. Wenn Sie also zwei Domänen haben, müssen Sie zwei zusätzliche CNAME-Einträge veröffentlichen usw. 
+ Office 365 führt die automatische Schlüsselrotation unter Verwendung der beiden eingerichteten Datensätze durch. Wenn Sie neben der ersten Domäne zusätzliche benutzerdefinierte Domänen in Office 365 bereitgestellt haben, müssen Sie zwei CNAME-Einträge für jede zusätzliche Domäne veröffentlichen. Wenn Sie also zwei Domänen haben, müssen Sie zwei zusätzliche CNAME-Einträge veröffentlichen usw.
   
-Verwenden Sie für CNAME-Einträge das folgende Format:
+Verwenden Sie das folgende Format für CNAME-Einträge.
+
+> [!IMPORTANT]
+> Wenn Sie einen unserer Kunden GCC sind, funktioniert die DomainGUID-Methode nicht für Sie! Achten Sie darauf, dass den richtigen MX-Wert für Ihre Domäne verwenden. Verwendung: `selector2-<domain-key>._domainkey.<initialDomain>` für die unten stehenden Beispiele. Verwenden Sie [diesen Artikel](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide) , suchen Sie den MX-Eintrag für Ihre *Domäne-Schlüssel* -Wert erforderlich ist.
   
 ```
 Host name:          selector1._domainkey
