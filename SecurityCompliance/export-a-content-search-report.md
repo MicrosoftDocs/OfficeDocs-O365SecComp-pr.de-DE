@@ -1,9 +1,9 @@
 ---
-title: Exportieren eines Berichts für die Inhaltssuche
+title: Exportieren eines Inhaltssuchberichts
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Anstelle von Export von tatsächlichen Ergebnissen einer Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center, können Sie nur einen Bericht der Suchergebnisse exportieren. Der Bericht enthält eine Zusammenfassung der Ergebnisse der und ein Dokument mit ausführlichen Informationen über jedes Element, das exportiert werden würde.
-ms.openlocfilehash: 45415f25754b4549a919e4ce56853a6ae09a9bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
+ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528858"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283141"
 ---
-# <a name="export-a-content-search-report"></a>Exportieren eines Berichts für die Inhaltssuche
+# <a name="export-a-content-search-report"></a>Exportieren eines Inhaltssuchberichts
 
 Anstelle von exportieren die vollständige Unterstützung der Suche von Suchergebnissen aus einer Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center (und aus einer Inhaltssuche, die einem eDiscovery-Fall zugeordnet ist), können Sie dieselben Berichte, die nur exportieren generiert werden, wenn Sie Exportieren von Suchergebnissen.
   
@@ -54,7 +54,9 @@ Beim Exportieren eines Berichts wird es in einen Ordner heruntergeladen, die den
     - Microsoft Internet Explorer 10 und höhere Versionen
     
     **Hinweis:** Microsoft herstellen nicht Drittanbieter-Erweiterungen oder Add-ons für ClickOnce-Anwendungen. Exportieren von Suchergebnissen mithilfe von einem nicht unterstützten Browser mit Drittanbieter-Erweiterungen oder Add-ons wird nicht unterstützt. 
-    
+
+- Wenn die geschätzte Gesamtgröße der von einem Inhaltssuche zurückgegebenen Ergebnisse 20 übersteigt&nbsp;TB, Exportieren des Berichts schlägt fehl. Versuchen Sie zum erfolgreichen Exportieren des Berichts, den Bereich einzuschränken, und führen Sie die Suche erneut aus, damit die geschätzte Größe der Ergebnisse kleiner als 20 ist&nbsp;TB.
+
 ## <a name="generate-and-download-a-content-search-report"></a>Generieren und Herunterladen eines Berichts für die Inhaltssuche
 
 Die Schritte zum Generieren und zum Herunterladen eines Berichts Inhaltssuche sind sehr ähnlich tatsächlich Suchergebnisse exportieren.
@@ -65,7 +67,7 @@ Der erste Schritt besteht darin, den Bericht vorzubereiten, für den Download au
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** \> **Inhaltssuche**.
     
