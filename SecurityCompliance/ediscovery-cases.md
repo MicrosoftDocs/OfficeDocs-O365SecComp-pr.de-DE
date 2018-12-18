@@ -3,7 +3,7 @@ title: eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center zum Erstellen und Verwalten von eDiscovery-Fälle in Ihrer Organisation. Sie können die Groß-/Kleinschreibung Mitglieder zuweisen, platzieren Sie Content-Speicherorte in der Warteschleife, führen Sie Inhalte Searchs die Groß-/Kleinschreibung und der Export der Suchergebnisse zugeordnet. Sie können auch Groß-/Kleinschreibung Daten zur weiteren Analyse in erweiterten eDiscovery vorbereiten.
-ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
+ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965272"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27299361"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center
 
@@ -53,9 +53,9 @@ Verwenden Sie den folgenden Workflow zum Einrichten und Verwenden von eDiscovery
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern
 
-Der erste Schritt besteht die entsprechenden Berechtigungen eDiscovery-bezogene an Personen zuweisen, damit Sie sie zu einem eDiscovery-Fall in Schritt2 hinzufügen können. Sie müssen ein Mitglied der Rollengruppe "Organisationsverwaltung" (oder die Verwaltungsrolle Rolle zugewiesen werden) in die Office 365-Sicherheit &amp; Compliance Center, eDiscovery-Berechtigungen zuzuweisen. Die folgende Liste beschreibt die eDiscovery-bezogene Rollengruppen in das Wertpapier &amp; Compliance Center.
+Der erste Schritt besteht die entsprechenden Berechtigungen eDiscovery-bezogene an Personen zuweisen, damit Sie sie zu einem eDiscovery-Fall in Schritt2 hinzufügen können. Sie müssen ein Mitglied der Rollengruppe "Organisationsverwaltung" (oder die Verwaltungsrolle Rolle zugewiesen werden) in die Office 365-Sicherheit &amp; Compliance Center, eDiscovery-Berechtigungen zuzuweisen. Die folgende Liste beschreibt die eDiscovery-bezogene Rollengruppen in das Wertpapier &amp; Compliance Center. 
   
-- **Reviewer** - dieser Rollengruppe hat die restriktivsten eDiscovery-bezogene Berechtigungen. Mitglieder dieser Gruppe können nur finden und öffnen Sie die Liste der auf der Seite **eDiscovery** -Fälle in das Wertpapier &amp; Compliance Center, die sie Mitglieder sind. Hinzufügen von Mitgliedern zu einer Anfrage Fällen erstellt werden kann, Haltestatus erstellen, erstellen Sie gesucht, Exportieren von Suchergebnissen oder Ergebnisse für erweiterte eDiscovery vorbereiten. Mitglieder können jedoch Fällen in erweiterten eDiscovery Analysis Aufgaben zugreifen. 
+- **Reviewer** - dieser Rollengruppe hat die restriktivsten eDiscovery-bezogene Berechtigungen. Der primäre Zweck der dieser Rollengruppe wird zum Anzeigen und Zugriff Mitglieder können Daten in Office 365 erweiterte eDiscovery case. Mitglieder dieser Gruppe können nur finden und öffnen Sie die Liste der auf der Seite **eDiscovery** -Fälle in das Wertpapier &amp; Compliance Center, die sie Mitglieder sind. Nachdem der Benutzer eine Anfrage im Compliance Center & Sicherheit zugreift, kann er **Schalter, mit dem erweiterten eDiscovery** Zugriff und zum Analysieren der Groß-/Kleinschreibung Daten in erweiterten eDiscovery klicken. Hinzufügen von Mitgliedern zu einer Anfrage Fällen erstellt werden kann, Erstellen von Haltestatus, Suchvorgänge erstellen, eine Vorschau der Suchergebnisse, Exportieren von Suchergebnissen oder Ergebnisse für erweiterte eDiscovery vorbereiten. 
     
 - **eDiscovery-Manager** - Mitglieder dieser Rollengruppe können erstellen und Verwalten von eDiscovery-Fällen. Sie können hinzufügen und Entfernen von Mitgliedern, platzieren Sie Inhalte Speicherorte auf halten, erstellen und bearbeiten eine Anfrage zugeordnete Inhalte durchsucht, exportieren Sie die Ergebnisse einer Suche Inhalte und Vorbereiten von Suchergebnissen für die Analyse in erweiterten eDiscovery. Es gibt zwei Untergruppen in dieser Rollengruppe. Der Unterschied zwischen diesen Untergruppen basiert auf Bereich.
     
@@ -65,20 +65,22 @@ Der erste Schritt besteht die entsprechenden Berechtigungen eDiscovery-bezogene 
     
     - Anzeigen aller Fälle, die auf der Seite **eDiscovery-Fälle** aufgeführt sind. 
     
-    - Verwaltet alle eDiscovery-Fall in der Organisation werden, nachdem sie sich als Mitglied der Groß-/Kleinschreibung hinzufügen.
+    - Verwalten Sie jedem Fall in der Organisation, nachdem sie sich als Mitglied der Groß-/Kleinschreibung hinzufügen.
     
-    - Ausführen von Verwaltungsaufgaben in erweiterten eDiscovery, wie Verarbeiten von Groß-/Kleinschreibung Daten zur Analyse, Konfigurieren von Groß-/Kleinschreibung und Exportieren von Daten aus der erweiterten eDiscovery. Dies ist, da eine Person einer eDiscovery-Administrator in das Wertpapier &amp; Compliance Center wird automatisch als Administrator in erweiterten eDiscovery hinzugefügt.
+    - Groß-/Kleinschreibung Zugriff auf Daten in erweiterten eDiscovery für alle Fall in der Organisation.
     
-    Überlegungen dazu, warum Sie ggf. einen eDiscovery-Administrator in Ihrer Organisation benötigen, finden Sie im Abschnitt [More information](ediscovery-cases.md#moreinfo_1). 
+    Überlegungen dazu, warum Sie ggf. einen eDiscovery-Administrator in Ihrer Organisation benötigen, finden Sie im Abschnitt [More information](#more-information). 
     
 > [!IMPORTANT]
 > Wenn eine Person kein Mitglied einer dieser eDiscovery-bezogene Rollengruppen ist oder ist kein Mitglied einer Rollengruppe, die die Prüfer-Rolle zugewiesen hat, können nicht Sie sie als Mitglied einer eDiscovery-Fall hinzufügen. 
+
+Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
   
  **So weisen Sie eDiscovery-Berechtigungen zu**
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Berechtigungen**, und führen Sie dann eine der folgenden basierend auf den eDiscovery-Berechtigungen, die Sie zuweisen möchten.
     
@@ -96,7 +98,7 @@ Im nächste Schritt ist erstellen Sie einen neue eDiscovery-Fall. Sie müssen ei
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
 3. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery**, und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) **Erstellen einer Anfrage**.
     
@@ -142,7 +144,10 @@ Nachdem Sie eine neue Anfrage erstellt haben, besteht der nächste Schritt, um d
 ## <a name="step-4-place-content-locations-on-hold"></a>Schritt 4: Platzieren Speicherorte für Inhalte auf
 
 EDiscovery-Fall können zum Erstellen von Haltestatus, um Inhalte zu erhalten, die für die Groß-/Kleinschreibung relevant sein könnten. Sie können einen Haltestatus auf Postfächer und OneDrive für Websites mit Geschäftsdaten von Personen tätigen, die in der Groß-/Kleinschreibung Verwalter sind. Sie können auch einen Haltestatus auf die Gruppe Postfach-, SharePoint-Website und OneDrive for Business-Site für eine Office 365-Gruppe platzieren. In ähnlicher Weise können Sie einen Haltestatus platzieren, auf das Postfach und die Website, die Microsoft-Teams zugeordnet sind. Wenn Sie die Speicherorte für Inhalte in der Warteschleife einleiten, wird Inhalt gespeichert, bis aus der Inhaltsspeicherort oder, bis Sie den Haltestatus löschen, entfernen den Haltestatus.
-  
+
+> [!NOTE]
+> Nachdem Sie einen Inhaltsspeicherort in der Warteschleife platziert, dauert bis zu 24 Stunden für den Haltebereich wirksam wird. 
+>   
 Wenn Sie einen Haltestatus erstellen, müssen Sie die folgenden Optionen aus, um den Inhalt zu begrenzen, der in der angegebenen Speicherorte für Inhalte gehalten wird:
   
 - Sie erstellen eine unendliche halten, in dem alle Inhalte in der Warteschleife platziert wird. Alternativ können Sie eine abfragebasierte Aufbewahrung erstellen, in dem nur auf Inhalte, die eine Suchabfrage entspricht in der Warteschleife platziert wird.
@@ -183,7 +188,7 @@ Zum Erstellen eines Haltestatus für einen eDiscovery-Fall:
   
    b. **SharePoint-Websites** - klicken Sie auf **Websites auswählen** und dann auf **Choose Websites** erneut aus, um anzugeben, dass SharePoint und OneDrive for Business-Websites auf halten. Geben Sie die URL für die einzelnen Standorte, die Sie in die Warteschleife stellen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365-Gruppe oder einem Microsoft-Team hinzufügen. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
     
-    Finden Sie [Weitere Informationen](ediscovery-cases.md#moreinfo_1) im Abschnitt Tipps zum Bereitstellen von Office 365-Gruppen und Microsoft-Teams, in der Warteschleife an. 
+    Finden Sie [Weitere Informationen](#more-information) im Abschnitt Tipps zum Bereitstellen von Office 365-Gruppen und Microsoft-Teams, in der Warteschleife an. 
     
     > [!NOTE]
     > In seltenen Fällen einer Person für Benutzerprinzipalnamen (UPN) geändert wird wird die URL für ihr Konto OneDrive auch geändert werden, um den neuen UPN einzubinden. In diesem Fall müssen Sie den Haltestatus zu ändern, indem Sie neue OneDrive-URL des Benutzers hinzufügen und Entfernen von der alte Datenbankserver. 
@@ -391,7 +396,7 @@ Als Alternative zum Exportieren Sie die Ergebnisse einer einzelnen Content Suche
 
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Schritt 7: Vorbereiten der Suchergebnisse für erweiterte eDiscovery
 
-Wenn Ihre Organisation ein E5 für Office 365-Abonnement umfasst, können Sie die Ergebnisse der Content-Suche eine Anfrage für die Analyse in erweiterten eDiscovery zugeordnete vorbereiten. Nachdem Sie die Suchergebnisse vorbereitet haben, können Sie zu erweiterten eDiscovery wechseln (finden Sie unter [Schritt 8: Wechseln Sie zu der erweiterten eDiscovery-Fall](ediscovery-cases.md#gotoAeD_1)) und die Suche Ergebnisdaten zur weiteren Analyse in erweiterten eDiscovery verarbeiten können.
+Wenn Ihre Organisation ein E5 für Office 365-Abonnement umfasst, können Sie die Ergebnisse der Content-Suche eine Anfrage für die Analyse in erweiterten eDiscovery zugeordnete vorbereiten. Nachdem Sie die Suchergebnisse vorbereitet haben, können Sie zu erweiterten eDiscovery wechseln (finden Sie unter [Schritt 8: Wechseln Sie zu der erweiterten eDiscovery-Fall](#step-8-go-to-the-case-in-advanced-ediscovery)) und die Suche Ergebnisdaten zur weiteren Analyse in erweiterten eDiscovery verarbeiten können.
   
 Wenn Sie die Suchergebnisse für erweiterte eDiscovery vorbereiten, extrahiert optischen zeichenerkennung (OCR)-Funktionalität Text automatisch von Bildern. OCR wird unterstützt für lose Dateien, e-Mail-Anlagen und eingebettete Bilder. Dadurch können Sie die Text-Analysefunktionen der erweiterten eDiscovery (in der Nähe Duplikate, e-Mail-threading, Designs und vorhersehbare codieren) auf Text, der im Bilddateien anwenden.
   
@@ -530,7 +535,7 @@ Wenn Sie eine Anfrage erneut öffnen, werden nicht automatisch alle Haltestatus 
     
     Schließlich wie vorherige erläutert, eDiscovery-Administratoren in das Wertpapier &amp; Compliance Center werden automatisch als Administratoren in erweiterten eDiscovery hinzugefügt. Dies bedeutet, dass eine Person, die einer eDiscovery-Administrator ist in erweiterten eDiscovery, wie Einrichten von Benutzern, Erstellen von Fällen und Hinzufügen von Daten zu Fällen administrative Aufgaben ausführen kann.
     
-- **Was lizenzierungsanforderungen Speicherorte für Inhalte in der Warteschleife platziert werden?** Im Allgemeinen Organisationen benötigen ein Abonnement von Office 365 E3 oder höher, um die Speicherorte für Inhalte in die Warteschleife stellen. Eine Lizenz für Exchange Online – Plan 2 ist erforderlich, um Postfächer im Archiv zu platzieren.
+- **Was lizenzierungsanforderungen Speicherorte für Inhalte in der Warteschleife platziert werden?** Im Allgemeinen Organisationen benötigen ein Abonnement von Office 365 E3 oder höher, um die Speicherorte für Inhalte in die Warteschleife stellen. Um Postfächer im Archiv zu platzieren, ist eine Lizenz für Exchange Online – Plan 2 erforderlich für das Postfach, den, das Sie in die Warteschleife stellen möchten.
     
 - **Was sollten Sie wissen, zur Suche alle Groß-/Kleinschreibung Inhalte in Schritt 5?** Wie bereits erklärt können Sie die Speicherorte für Inhalte suchen, die in der Warteschleife im Fall erteilt wurden. Wenn Sie dies tun, wird nur die Inhalte, die den Haltestatus Kriterien entspricht suchen. Ist keine Haltekriterien, wird alle Inhalte durchsucht. Wenn Inhalt auf eine abfragebasierte halten, nur die Inhalte, halten Sie beide Übereinstimmungen Kriterien (aus dem Haltestatus platziert in Schritt 4), und die Suchkriterien (von der Suche in Schritt 5) wird mit den Suchergebnissen zurückgegeben.
     
