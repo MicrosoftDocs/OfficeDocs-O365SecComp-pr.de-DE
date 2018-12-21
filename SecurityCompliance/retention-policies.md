@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
+ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194706"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380615"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -214,7 +214,7 @@ Beachten Sie jedoch, dass die folgenden Grenzwerte für Aufbewahrungsrichtlinien
   
 - Eine Aufbewahrungsrichtlinie kann nicht mehr als 1.000 Postfächer und 100 Websites umfassen.
     
-- Ein Mandant kann nicht mehr als 1.000 Aufbewahrungsrichtlinien umfassen.
+- Ein Mandant kann nicht mehr als 10.000 Aufbewahrungsrichtlinien umfassen.
     
 Beachten Sie, dass Sie diese Grenzwerte überschreiten können, indem Sie entweder eine organisationsübergreifende Richtlinie oder eine Richtlinie, die für ganze Speicherorte gilt, anwenden.
   
