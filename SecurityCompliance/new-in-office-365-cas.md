@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 11/28/2018
+ms.date: 12/26/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,18 +13,41 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Finden Sie unter Neuigkeiten in Office 365-Cloud-App-Sicherheit
-ms.openlocfilehash: a3ca4504d80cbb39b51ecbcf3a5165bc5139e07c
-ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
+ms.openlocfilehash: 9f0c93d0de6ae8be72456c874ef8f5e3d42264e2
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26872013"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447063"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Was ist neu in Office 365-Cloud-App-Sicherheit
 
 **Zusammenfassung** Lesen Sie diesen Artikel, um einen schnellen Überblick über Updates und neuen Features in Office 365-Cloud App-Sicherheit (früher als Office 365 Advanced Security Management bezeichnet) abzurufen, die von [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)bereitgestellt wird.
   
-In diesem Artikel wird häufig aktualisiert, wie Features hinzugefügt oder verbessert werden. Office 365-Cloud-App-Sicherheits-Updates werden ungefähr zwei Wochen nach Microsoft Cloud App-Sicherheitsupdates freigegeben, und nicht alle Microsoft Cloud App-Sicherheitsupdates gelten für Office 365-Cloud-App-Sicherheit. Darüber hinaus können die neuen Features für mindestens eine Woche nach ihrer Veröffentlichungsdatum in der Cloud App Sicherheit in Office 365-Umgebung angezeigt wird dauern.
+> [!TIP]
+> In diesem Artikel wird häufig aktualisiert, wie Features hinzugefügt oder verbessert werden. Office 365-Cloud-App-Sicherheits-Updates werden ungefähr zwei Wochen nach Microsoft Cloud App-Sicherheitsupdates freigegeben, und nicht alle Microsoft Cloud App-Sicherheitsupdates gelten für Office 365-Cloud-App-Sicherheit. Darüber hinaus können die neuen Features für mindestens eine Woche nach ihrer Veröffentlichungsdatum in der Cloud App Sicherheit in Office 365-Umgebung angezeigt wird dauern.
+
+## <a name="office-365-cloud-app-security-release-138"></a>Office 365 Cloud App-Sicherheit Version 138
+
+*23 Dezember 2018 veröffentlicht*
+
+**Nach [Microsoft Cloud App-Sicherheit 138 freizugeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-138)**:
+
+- **Automatische Anmeldung Hochladen mit Docker unter Windows** Cloud App-Sicherheit unterstützt jetzt die automatische Anmeldung Upload für Windows 10 ([Fallen Ersteller Update](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) und höher) und Windows Server ([Version 1709](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1709) und höher) mithilfe von Docker auf Windows. Finden Sie [in diesem Artikel](https://docs.microsoft.com/cloud-app-security/discovery-docker-windows) erfahren mehr und Docker konfigurieren.  
+
+- **Integration von Microsoft-Datenfluss** Cloud App-Sicherheit integriert jetzt mit [Microsoft-Fluss](https://docs.microsoft.com/flow/getting-started) benutzerdefinierte Warnung Automatisierung und Orchestrierung Playbooks bereitstellen. Finden Sie [in diesem Artikel](https://docs.microsoft.com/cloud-app-security/flow-integration) erfahren mehr und Konfigurieren der Integration von Microsoft Flow. 
+
+
+## <a name="office-365-cloud-app-security-release-137"></a>Office 365 Cloud App-Sicherheit Version 137
+
+*8 Dezember 2018 veröffentlicht*
+
+**Nach [Microsoft Cloud App-Sicherheit 137 freizugeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-137)**:
+
+- **Es wurden für Dynamics unterstützen** Cloud App-Sicherheit bietet jetzt Unterstützung für die Microsoft Dynamics-Aktivitäten, die in das Überwachungsprotokoll Office 365 unterstützt werden. 
+
+- **Oben – neue Begriffe leitet!** Der Name der App-Berechtigungen-Funktionen aus Gründen der Übersichtlichkeit geändert wurde – heißt jetzt OAuth-apps. 
+
 
 ## <a name="office-365-cloud-app-security-release-136"></a>Office 365 Cloud App-Sicherheit Version 136
 
@@ -73,7 +96,7 @@ Der **folgende [Microsoft Cloud App-Sicherheit 133, 134, und 135 freizugeben](ht
 
 - **Neue Menüleiste** Admin-Benutzeroberfläche konsistenten über Microsoft-365-Produkte bereitstellen, und aktivieren Sie leichter zwischen Microsoft Security-Lösungen von PivotTables, hat die Portal Menüleiste Cloud App-Sicherheit in der linken Seite des Bildschirms verschoben. Diese einheitliche Navigation auftreten können Sie selbst beim Verschieben von einem Microsoft Security Portal ausrichten.<br/>![Menüleiste in Office Cloud App-Sicherheit](media/OCAS-MenuBar.png)<br/>
 
-- **Bewertung der Auswirkung OAuth-app** Sie können jetzt das Teamfeedback Cloud App-Sicherheit, um uns zu informieren, wenn es ist eine OAuth-app in Ihrer Organisation, die böswilligen scheint ermittelt senden. Dieses neue Feature können Sie in unseren Sicherheits-Community werden und OAuth app Risiko Score und Analysen zu verbessern. Weitere Informationen finden Sie unter [app-Berechtigungen verwalten](manage-app-permissions-in-ocas.md).
+- **Bewertung der Auswirkung OAuth-app** Sie können jetzt das Teamfeedback Cloud App-Sicherheit, um uns zu informieren, wenn es ist eine OAuth-app in Ihrer Organisation, die böswilligen scheint ermittelt senden. Dieses neue Feature können Sie in unseren Sicherheits-Community werden und OAuth app Risiko Score und Analysen zu verbessern. Weitere Informationen finden Sie unter [Verwalten von OAuth-apps](manage-app-permissions-in-ocas.md).
 
 - **Neue Cloud-Discovery-Parser** Die Cloud-Discovery-Parser unterstützen jetzt Iboss Secure Cloud Gateway und Sophos XG.
 
@@ -84,9 +107,9 @@ Der **folgende [Microsoft Cloud App-Sicherheit 133, 134, und 135 freizugeben](ht
   
 Der **folgende [Microsoft Cloud App-Sicherheit 128 freigeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
   
-- **App-Berechtigungen über mehrere apps** Für apps, die app-Berechtigungen erteilt wurden, können Sie jetzt sperren oder mehrere apps in eine einzelne Aktion genehmigen. Beispielsweise können alle apps, die besitzen die Berechtigung von Benutzern in Ihrer Organisation, wählen Sie alle apps, die Sie sperren möchten, und klicken Sie dann auf Sperren apps für alle Zustimmung erteilt widerrufen überprüfen und können nicht mehr Benutzer Berechtigung für diese apps. 
+- **OAuth-apps über mehrere apps** Bei OAuth-apps können jetzt sperren oder mehrere apps in einer Aktion zu genehmigen. Beispielsweise können alle apps, die besitzen die Berechtigung von Benutzern in Ihrer Organisation, wählen Sie alle apps, die Sie sperren möchten, und klicken Sie dann auf Sperren apps für alle Zustimmung erteilt widerrufen überprüfen und können nicht mehr Benutzer Berechtigung für diese apps. Finden Sie weitere Informationen finden Sie unter [Verwalten von OAuth-apps mithilfe von Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md). 
     
-- **Neue vorgeschlagenen Abfrage: GDPR kann jetzt** Es wird eine neue vorgeschlagene Abfrage, mit denen Sie erkannte apps zu identifizieren, die GDPR bereit sind. GDPR wurde vor kurzem oberste Priorität für Sicherheit-Admins änderte. Mit dieser Abfrage können Sie auf einfache Weise identifizieren apps, die GDPR bereit sind, und minimieren Bedrohung Abschätzen des Risikos der apps, die nicht sind. 
+- **Neue vorgeschlagenen Abfrage: GDPR bereite Cloud apps** Es wird eine neue vorgeschlagene Abfrage, mit denen Sie erkannte apps zu identifizieren, die GDPR bereit sind. Wie Sie wahrscheinlich bereits wissen, wurde GDPR kürzlich änderte oberste Priorität für Sicherheit-Admins. Mit dieser Abfrage können Sie auf einfache Weise identifizieren apps, die GDPR bereit sind, und minimieren Bedrohung Abschätzen des Risikos der apps, die nicht sind. Wählen Sie mit der neuen Abfrage in das **Cloud-Discovery** -Dashboard, auf der Registerkarte **ermittelte apps** **Abfragen** > **GDPR bereite Cloud apps**.<br/>![GDPR bereite Cloud apps Abfrage](media/OCAS-FindGDPRQueries.png)<br/>
     
 ## <a name="office-365-cloud-app-security-release-126"></a>Office 365 Cloud App-Sicherheit Version 126
 
@@ -96,7 +119,7 @@ Der **folgende [Microsoft Cloud App-Sicherheit 128 freigeben](https://docs.micro
   
 - **Automatische Wiederherstellung für verdächtigen Aktivitäten** Sie können jetzt die automatische Wiederherstellung Aktionen für verdächtigen Sitzung ausgelöst, indem die Anomalie Erkennungsrichtlinien festlegen. Mithilfe dieser Verbesserung können Sie benachrichtigt werden, sofort eine Verletzung tritt und Governance Aktionen automatisch anwenden, wie Benutzer anhalten. Weitere Informationen finden Sie unter [Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit](anomaly-detection-policies-in-ocas.md).
     
-- **Automatische Erkennung von riskant OAuth-Apps** Zusätzlich zu den vorhandenen Untersuchen des OAuth-apps, die für Ihre Umgebung verbunden ermöglicht Office 365-Cloud-App-Sicherheit jetzt festzulegenden automatische Benachrichtigung, damit Sie wissen, wann eine OAuth-app für bestimmte Kriterien erfüllt. Beispielsweise können Sie automatisch gewarnt werden, wenn es apps sind, die eine hohe Berechtigungsstufe erfordern und mehr als 50 Benutzer autorisiert wurden. Weitere Informationen finden Sie unter [Verwalten von app-Berechtigungen, die mit Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md).
+- **Automatische Erkennung von riskant OAuth-Apps** Zusätzlich zu den vorhandenen Untersuchen des OAuth-apps, die für Ihre Umgebung verbunden ermöglicht Office 365-Cloud-App-Sicherheit jetzt festzulegenden automatische Benachrichtigung, damit Sie wissen, wann eine OAuth-app für bestimmte Kriterien erfüllt. Beispielsweise können Sie automatisch gewarnt werden, wenn es apps sind, die eine hohe Berechtigungsstufe erfordern und mehr als 50 Benutzer autorisiert wurden. Weitere Informationen finden Sie unter [Verwalten von OAuth-apps mithilfe von Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md).
     
 - **Managed Security Service Provider Management (MSSP) unterstützen.** Office 365-Cloud-App-Sicherheit jetzt ermöglicht eine bessere Verwaltung der auf MSSPs, und ermöglicht es Ihnen, externe Partner als Administratoren mit einer der Rollen, die derzeit in Office 365-Cloud-App-Sicherheit konfigurieren. Darüber hinaus können Administratoren mit Zugriffsrechten für mehrere Mandanten jetzt auf einfache Weise zwischen den Mandanten pivotieren. 
     
@@ -132,7 +155,7 @@ Der **folgende [Microsoft Cloud App-Sicherheit 128 freigeben](https://docs.micro
   
 - **Interne Anwendungen als die Benutzeraktivitäten**. Für Office 365 und Azure Active Directory (AD Azure) werden wir nun schrittweise, die Möglichkeit zum Erkennen von interner Anwendungen als Benutzer Kontoaktivitäten, die von der Office 365 und Azure AD-Anwendung (intern und extern) durchgeführt Gang (engl.). Dadurch können Sie Richtlinien erstellen, um Sie zu warnen, wenn eine Anwendung unerwartete und nicht autorisierte Aktivitäten ausführt. 
     
-- **Weitere Felder in der Liste der app-Berechtigungen zu exportieren**. Beim Exportieren einer Liste der app-Berechtigungen CSV, zusätzliche Felder wie Publisher, sind die Berechtigungen Ebene und Community-Nutzung zur Unterstützung bei der Einhaltung von Vorschriften und Untersuchung Prozess enthalten. 
+- **Weitere Felder in der Liste der OAuth-apps zu exportieren**. Beim Exportieren einer Liste mit OAuth apps CSV, zusätzliche Felder wie Publisher, sind die Berechtigungen Ebene und Community-Nutzung zur Unterstützung bei der Einhaltung von Vorschriften und Untersuchung Prozess enthalten. 
     
 ## <a name="office-365-cloud-app-security-release-119"></a>Office 365 Cloud App-Sicherheit Version 119
 
@@ -189,83 +212,8 @@ Der **folgende [Microsoft Cloud App-Sicherheit 128 freigeben](https://docs.micro
 **Folgen von [Microsoft Cloud App-Sicherheit Version 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
   
 - **Log Parser Unterstützung für generische Formate**. Die Cloud Discovery Log Parser unterstützen nun eine generische folgenden Formate: LEEF, CEF und W3C. 
-    
-## <a name="office-365-cloud-app-security-release-112"></a>Office 365 Cloud App-Sicherheit Version 112
 
-*24 Dezember 2017 veröffentlicht* 
-  
-**Folgen von [Microsoft Cloud App-Sicherheit Version 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
-  
-- **Relevante Erkenntnisse Papiereinzug**. Im Protokoll Aktivität können Sie nun die relevanten Erkenntnisse Papiereinzug, indem Sie auf einen Benutzer- oder IP-Adresse zugreifen. 
-    
-    ![Klicken Sie auf einen Benutzer- oder IP-Adresse der relevanten Erkenntnisse Papiereinzug im Protokoll Aktivität finden Sie unter.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
-  
-- Die **Möglichkeit, mehrere Aktivitäten mit einem Klick anzuzeigen**. In der entsprechenden Erkenntnisse Papiereinzug können Sie das Uhrsymbol, um alle Aktivitäten ausgeführt innerhalb von 48 Stunden einer ausgewählten Aktivität anzeigen klicken. 
-    
-    ![In der entsprechenden Insights Papiereinzug können Sie das Uhrsymbol, um Aktivitäten, die innerhalb einer ausgewählten Aktivität 48 Stunden ausgeführt finden Sie unter klicken.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
-  
-- **Log Parser Verbesserungen für Juniper SRX**. Verbesserungen bei der Cloud Discovery Log Parser für Juniper SRX wurde. 
-    
-## <a name="office-365-cloud-app-security-release-111"></a>Office 365 Cloud App-Sicherheit Version 111
+## <a name="releases-prior-to-113"></a>Versionen vor 113
 
-*10 Dezember 2017 veröffentlicht* 
-  
-**Folgen von [Microsoft Cloud App-Sicherheit Version 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
-  
-- **Zeit Filter Verbesserungen**. Zeitfilter sind nun leichter zu verwenden. Zugriff auf eine Zeitfilter, in einer Ansicht, wie etwa Aktivitätsprotokolls, Richtlinien, Benachrichtigungen, mit der erweiterten Ansicht, wählen Sie in der Liste der Filter **Datum** . Wählen Sie dann eine Option wie vor, nach oder in zwischen den Zeitfilter anwenden. 
+[Finden Sie im 2017 Updates für Office 365-Cloud-App-Sicherheit](new-in-office-365-cas-2017.md)
     
-    ![Verwenden Sie den Datumsfilter, um Informationen vor, nach oder zwischen Datumsangaben anzuzeigen.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
-  
-## <a name="office-365-cloud-app-security-release-110"></a>Office 365 Cloud App-Sicherheit Version 110
-
-*26 November 2017 veröffentlicht* 
-  
-**Folgen von [Microsoft Cloud App-Sicherheit Version 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
-  
-- **SIEM-Server-Integration jetzt erhältlich**. Verbinden Sie Ihre Server SIEM mit Office 365-Cloud-App-Sicherheit. Sie können jetzt Warnungen und Aktivitäten automatisch auf Ihrem Server SIEM Wahl senden, SIEM Agents konfigurieren. Finden Sie unter [Integrieren Ihrer SIEM Server mit Office 365-Cloud-App-Sicherheit](integrate-your-siem-server-with-office-365-cas.md).
-    
-- **Einfacher Zugriff auf Inhalte zu unterstützen**. Verwenden das neue Fragezeichen in der oberen rechten Ecke, können Sie jetzt den Hilfeinhalt von innerhalb der Seiten von der Cloud App Sicherheit in Office 365-Portal zugreifen. Jeder Link ist kontextbezogene, wobei Sie mit den Informationen, die, den Sie benötigen, basierend auf der Seite Sie sich befinden. 
-    
-- **Senden Sie uns Feedback**. Verwenden das Smiley in der oberen rechten Ecke, können Sie jetzt Feedback von jeder Seite des Office 365-Cloud-App-Sicherheit Portals senden. So können Sie zum Melden von Fehlern, fordern die neuen Features und Ihre Erfahrung direkt mit dem Office 365-Cloud-App-Sicherheit Team freigeben. 
-    
-## <a name="office-365-cloud-app-security-release-102"></a>Office 365 Cloud App-Sicherheit Version 102
-
-*13 August 2017 veröffentlicht* 
-  
-**Nach [Microsoft Cloud App-Sicherheit 102 freizugeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
-  
-- **Neue Untersuchung Benutzeraktionen** aktivieren ein höheres Maß an-Drilldown zum Benutzer Untersuchungen. Auf einer Seite untersuchen können und bewegen Sie den Mauszeiger auf eine Aktivität, Benutzer oder Konto als Filter anwenden, und von dort können Sie die zugehörige Aktivitäten oder Ereignisse anzeigen. 
-    
-## <a name="office-365-cloud-app-security-release-100"></a>Office 365 Cloud App-Sicherheit Version 100
-
-*17 Juli 2017 veröffentlicht* 
-  
-**Folgen von [Microsoft Cloud App-Sicherheit Version 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
-  
-- **Sicherheit Extensions** ist ein neues Dashboard, in dem Sie alle Ihre Sicherheit Erweiterungen zentral für Office 365 Cloud App-Sicherheit, einschließlich API Token und SIEM Agents verwalten können. Zum Anzeigen eines Dashboards Extensions Sicherheit, gehen Sie folgendermaßen vor: 
-    
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
-    
-2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
-    
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie Warnungen \> erweiterte Benachrichtigungen verwalten \> wechseln Sie zur erweiterten Sicherheit-Verwaltung](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
-  
-4. **Auswählen von** \> **Security Extensions**.
-    
-    ![Wählen Sie im Portal ASM Einstellungen \> Security-Erweiterungen](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
-  
-- **Verbesserte analysieren**. Im Protokoll Cloud Discovery Analyse Mechanismus wurden Verbesserungen vorgenommen. Interne Fehler sind weitaus geringerer Wahrscheinlichkeit auftreten. 
-    
-- **Erwartete Protokollformate**. Das erwartete Format für Cloud-Discovery-Protokolle enthält nun Beispiele für sowohl Syslog und FTP-Format. 
-    
-## <a name="related-topics"></a>Verwandte Themen
-
-[Hilfeinhalte für Office 365-Cloud-App-Sicherheit](office-365-cas-help.md)
-  
-[Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security](utilization-activities-for-ocas.md)
-  
-[Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
-  
-
