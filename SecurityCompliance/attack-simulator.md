@@ -3,7 +3,7 @@ title: Angriffssimulator in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Als globaler Office 365-Administrator können Sie Angriff Simulator realistische Angriff Szenarien in Ihrer Organisation ausführen. Dies hilft Ihnen zu identifizieren und anfällig Benutzer vor ein tatsächlichen Angriff Ihres Unternehmens Treffer zu finden.
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27471998"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
@@ -49,7 +49,7 @@ Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen f
     
 - Sie sind Administrator globaler Office 365
     
-- Ihr Unternehmen verwendet [Multi-Factor Authentication für Office 365-Benutzer](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- Ihr Unternehmen verwendet [Multi-Factor Authentication für Office 365-Benutzer](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - Ihre Organisation verfügt [Office 365 Bedrohungsanalyse](office-365-ti.md)mit Angriff Simulator sichtbar in das Wertpapier &amp; Compliance Center (Wechseln Sie zu **Threat Management** \> **Angriff Simulator**)<br/>![Threat Management - Angriff Simulator](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ Dieser Angriff konzentriert sich auf Navigate Bearbeitung, die die Meldung angez
 
 ![Verfassen Sie e-Mail-Text](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-Sie können den rich-HTML-Editor direkt in das Feld **e-Mail-Text** selbst erstellen oder Arbeiten mit HTML-Quelle. Es gibt zwei wichtige Felder für die Einbeziehung in der HTML-Code ein: 
+Sie können den rich-HTML-Editor direkt in das Feld **e-Mail-Text** selbst erstellen oder Arbeiten mit HTML-Quelle.
   
 1. In der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
     
@@ -118,7 +118,7 @@ Ein Password Brute-Force-Angriff auf einer Organisation wird normalerweise verwe
     
 3. Geben Sie den Empfänger weiter. Ein vorgesehenen Empfänger benötigen ein Exchange Online-Postfach damit der Angriff erfolgreich zu sein.
     
-4. Geben Sie eine Gruppe von Kennwörtern für den Angriff verwenden. Sie können eine Textdatei (txt) für die Liste der Kennwörter. Die Datei darf 10 MB Dateigröße nicht überschreiten. Verwenden Sie ein Kennwort pro Zeile, und stellen Sie sicher, dass Sie eine Absatzmarke hinter das letzte Kennwort in der Liste enthalten.
+4. Geben Sie eine Gruppe von Kennwörtern für den Angriff verwenden. Zu diesem Zweck können Sie eine Textdatei (txt) für die Liste der Kennwörter verwenden. Die Datei darf 10 MB Dateigröße nicht überschreiten. Verwenden Sie ein Kennwort pro Zeile, und stellen Sie sicher, dass Sie eine Absatzmarke hinter das letzte Kennwort in der Liste enthalten.
     
 5. Wählen Sie auf **Fertig stellen** , um den Angriff zu starten. 
     
