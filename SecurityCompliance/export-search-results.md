@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche in die Office 365-Sicherheit und Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites als systemeigene Office-Dokumente exportiert werden. '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201579"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544116"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportieren von Suchergebnissen aus der Office 365-Sicherheit und Compliance Center
 
@@ -76,10 +76,6 @@ Exportieren Sie die Ergebnisse einer Suche Content umfasst die Ergebnisse vorber
        </defaultProxy>
     </system.net>
     ```
-
-- Finden Sie im Abschnitt für eine Beschreibung für die Grenzwerte für Suchergebnisse exportieren. 
-    
-- Die maximale Größe einer PST-Datei, die exportiert werden kann beträgt 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit denen Sie die Suchergebnisse exportieren. [Ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse](change-the-size-of-pst-files-when-exporting-results.md)angezeigt.
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Schritt 1: Vorbereiten der Suchergebnisse für Export
 
@@ -98,13 +94,13 @@ Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereite
     > [!NOTE]
     > Wenn die Suchergebnisse älter als 7 Tage sind, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Brechen Sie in diesem Fall den Export ab, klicken Sie im Detailbereich für die ausgewählte Suche auf **Suchergebnisse aktualisieren** und starten Sie dann den Export erneut, nachdem die Ergebnisse aktualisiert wurden.  
   
-6. Wählen Sie auf der Seite **der Suchergebnisse exportieren** unter **diese Einträge aus der Suche einschließen**eine der folgenden Optionen aus:
+6. Wählen Sie auf der Seite **der Suchergebnisse exportieren** unter **Ausgabeoptionen**eine der folgenden Optionen aus:
     
-    - Nur indizierte Elemente exportieren
+    - Alle Elemente, ausgenommen solche, die unbekanntes Format haben werden verschlüsselt oder aus anderen Gründen indiziert wurden nicht
     
-    - Export indiziert und teilweise indizierte Elemente
+    - Alle Elemente, einschließlich Schriftarten, die unbekanntes Format verschlüsselt werden, oder aus anderen Gründen indiziert wurden nicht
     
-    - Exportieren Sie nur teilweise indizierte Elemente
+    - Nur Elemente mit einem unbekannten Format, verschlüsselt werden, oder aus anderen Gründen indiziert wurden nicht
     
     Finden Sie im Abschnitt [Weitere Informationen](#more-information) für eine Beschreibung dazu wie teilweise indizierte Elemente werden exportiert. Weitere Informationen zu teilweise indizierte Elemente finden Sie unter [teilweise indizierte Elemente in Inhaltssuche](partially-indexed-items-in-content-search.md).
     
@@ -204,8 +200,9 @@ Nachfolgend finden Sie weitere Informationen zum Exportieren von Suchergebnissen
   - Sie können maximal 10 Exporte zur selben Zeit innerhalb Ihrer Organisation ausgeführt haben.
     
   - Ein einzelner Benutzer kann maximal drei Exporte zur selben Zeit ausführen.
-    
-  - Exportieren von Berichten Inhaltssuche zählt keine gegen einen der Export Grenzwerte. 
+
+  > [!NOTE]
+  > Exportieren nur die Berichte aus einer Inhaltssuche zählt auch anhand der Anzahl von Exporten ausgeführt am selben Zeit und die Anzahl von Exporten, die ein einzelner Benutzer ausgeführt werden kann.
     
 - Wie bereits erwähnt, werden Suchergebnisse aus Postfächern und Websites auf den Azure Speicherort hochgeladen (gemäß [Schritt 1: Vorbereiten der Suchergebnisse für den Export](#step-1-prepare-search-results-for-export)) die maximale Datenübertragungsrate 2 GB pro Stunde.
     
