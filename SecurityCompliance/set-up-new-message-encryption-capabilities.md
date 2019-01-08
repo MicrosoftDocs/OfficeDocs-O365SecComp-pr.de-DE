@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Neue Office 365 Message Encryption Funktionen auf der Basis Azure Information Protection Ihrer Organisation verwendeten geschützten Kommunikation mit Personen innerhalb und außerhalb Ihrer Organisation per e-Mail. Die neuen Funktionen für OME arbeiten mit anderen Office 365-Organisationen, Outlook.com, Google Mail und anderen e-Mail-Dienste.
-ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 0f601b425da294fbb2ddbfe1d7497c0d582e3238
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955417"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750034"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
 
@@ -43,34 +43,33 @@ Folgendermaßen Sie Wenn Ihre Organisation nicht automatisch OME aktiviert haben
   
 ### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>So richten Sie die neuen Funktionen für OME manuell ein
 
-1. Stellen Sie sicher, dass Sie für Ihre Organisation das richtige Abonnement verfügen. Informationen zu Abonnements, finden Sie unter "welche Abonnements muss ich verwenden Sie die neue OME Capabilities?" in der [Office 365 Message Encryption – Häufig gestellte Fragen.](ome-faq.md) Informationen zum Erwerben eines Abonnements für Azure Information Protection finden Sie unter [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
-    
+1. Stellen Sie sicher, dass Sie für Ihre Organisation das richtige Abonnement verfügen. Informationen zu Abonnements, finden Sie unter "welche Abonnements muss ich verwenden Sie die neue OME Capabilities?" in der [Office 365 Message Encryption – Häufig gestellte Fragen.](ome-faq.md). Informationen zum Erwerben eines Abonnements für Azure Information Protection finden Sie unter [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
+
 2. Entscheiden Sie, ob Microsoft Verwalten des Stamm-Schlüssels zum Schutz der Azure-Daten (Standard) oder generiert und Verwalten dieser Schlüssel selbst (auch bekannt als eigene Taste oder BYOK schalten) werden sollen. Wenn Sie generieren und dieser Schlüssel zu verwalten möchten, müssen Sie einige Schritte vor dem Einrichten der neuen Funktionen für OME ausführen. Weitere Informationen finden Sie unter [Planung und Implementierung Ihrer mandantenschlüssel Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Microsoft empfiehlt, dass Sie diese Schritte ausführen, bevor Sie OME einrichten.
-    
+
 3. Aktivieren Sie die neuen Funktionen für OME mit der Aktivierung der Azure Rights Management. Anweisungen finden Sie unter [Aktivieren von Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Wenn Sie dies tun, die neuen Funktionen OME automatisch von Office 365 für Sie aktiviert.
-    
+
     > [!TIP]
-    > Outlook im Web speichert die Benutzeroberfläche, daher es ratsam ist, warten Sie einen Tag, bevor Sie versuchen, e-Mail-Nachrichten, die mithilfe dieser Client die neuen Funktionen für OME zuweisen. Bevor Sie die Benutzeroberfläche aktualisiert und der neue Konfiguration entsprechen, werden nicht die neuen Funktionen für OME verfügbar sein. Nachdem die Benutzeroberfläche aktualisiert werden, können Benutzer e-Mail-Nachrichten mithilfe der neuen Funktionen für OME schützen. 
+    > Outlook im Web speichert die Benutzeroberfläche, daher es ratsam ist, warten Sie einen Tag, bevor Sie versuchen, e-Mail-Nachrichten, die mithilfe dieser Client die neuen Funktionen für OME zuweisen. Bevor Sie die Benutzeroberfläche aktualisiert und der neue Konfiguration entsprechen, werden nicht die neuen Funktionen für OME verfügbar sein. Nachdem die Benutzeroberfläche aktualisiert werden, können Benutzer e-Mail-Nachrichten mithilfe der neuen Funktionen für OME schützen.
   
 4. (Optional) Einrichten von neuen e-Mail-Flussregeln, oder aktualisieren Sie vorhandene e-Mail-Flussregeln, die definieren, wie und wann Sie Office 365 zum Verschlüsseln von Nachrichten, die von Ihrer Organisation gesendet werden soll.
-    
+
 ## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Stellen Sie sicher, dass die neuen Funktionen für OME ordnungsgemäß konfiguriert sind, mithilfe von Windows PowerShell
 
 Führen Sie die folgenden Schritte aus, um sicherzustellen, dass Ihre Mandanten ordnungsgemäß konfiguriert ist, um die neuen Funktionen für OME über Exchange Online PowerShell verwenden.
   
-1. Verwenden ein Arbeit oder Schule Konto, die in Office 365-Organisation über globaler Administrator-Berechtigungen verfügt, eine Windows PowerShell-Sitzung zu starten und eine Verbindung mit Exchange Online. Anweisungen finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-    
+1. Verwenden ein Arbeit oder Schule Konto, die in Office 365-Organisation über globaler Administrator-Berechtigungen verfügt, eine Windows PowerShell-Sitzung zu starten und eine Verbindung mit Exchange Online. Anweisungen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+
 2. Führen Sie das Cmdlet "Test-IRMConfiguration" mithilfe der folgenden Syntax aus:
-    
+
     ```Test-IRMConfiguration [-Sender <email address >]```  
 
    Beispiel:
-    
+
     ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
-    Dabei ist e-Mail-Adresse die e-Mail-Adresse eines Benutzers in Office 365-Organisation. Während des optional, sofern eine e-Mail-Adresse des Absenders erzwingt, dass das System zusätzliche überprüft werden soll.
-    
-    Das Ergebnis sollte diese aussehen:
+    Dabei ist e-Mail-Adresse die e-Mail-Adresse eines Benutzers in Office 365-Organisation. Während des optional, sofern eine e-Mail-Adresse des Absenders erzwingt, dass das System zusätzliche überprüft werden soll. Das Ergebnis sollte diese aussehen:
+
     
     ```
     Results : Acquiring RMS Templates ...
@@ -87,11 +86,11 @@ Führen Sie die folgenden Schritte aus, um sicherzustellen, dass Ihre Mandanten 
     ```
 
     Wobei *Contoso* durch den Namen des Office 365-Organisation ersetzt wird. 
-    
+
     Die Namen der Standardvorlagen für in den Ergebnissen zurückgegeben können von denen in den oben genannten Ergebnissen abweichen.
-    
+
     Eine Einführung in Formularvorlagen und Informationen zu den Standardvorlagen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Informationen zu den Do Not Forward option Option nur zu verschlüsseln, und wie zusätzliche Vorlagen oder finden Sie heraus, welche Rechte sind so erstellen Sie in eine vorhandene Vorlage enthalten, finden Sie unter [Konfigurieren von Nutzungsrechte für Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).
-    
+
 3. Führen Sie das Cmdlet Remove-PSSession So trennen Sie die Verwaltung von Informationsrechten-Dienst.
     
     ```Remove-PSSession $session```
@@ -106,7 +105,6 @@ E-Mail-Flussregeln bestimmen, unter welchen Bedingungen e-Mail-Nachrichten versc
 Weitere Informationen zu e-Mail-Flussregeln finden Sie unter [Definieren von e-Mail-Flussregeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
 ## <a name="related-topics"></a>Verwandte Themen
-<a name="Rules_1"> </a>
 
 [Senden Sie, zeigen Sie an und beantworten Sie verschlüsselter Nachrichten in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
@@ -114,6 +112,4 @@ Weitere Informationen zu e-Mail-Flussregeln finden Sie unter [Definieren von e-M
   
 [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx).
   
-[Definieren von e-Mail-Flussregeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md)
-  
-
+[Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md)
