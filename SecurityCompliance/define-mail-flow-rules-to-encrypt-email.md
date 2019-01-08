@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Administratoren können Mail Flow Regeln (auch als Transportregeln bezeichnet) zum Verschlüsseln und Entschlüsseln von Nachrichten mithilfe von Office 365 Message Encryption (OME) erstellen zu informieren.
-ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
-ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
+ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466924"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749359"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365
 
@@ -61,10 +61,10 @@ Sie können e-Mail-Flussregeln zum Auslösen von Verschlüsselung von Nachrichte
    Beispielsweise, um die Regel gelten nur, wenn der Empfänger außerhalb Ihrer Organisation befindet, wählen Sie **Bedingung hinzufügen** und die wählen Sie dann aus **der Empfänger ist extern/interne** \> **außerhalb der Organisation** \> **OK**.
 
 8. Zum Aktivieren der Verschlüsselung mithilfe der neuen OME-Funktionen aus, **die folgenden Schritte aus**, wählen Sie **nachrichtensicherheit ändern** , und wählen Sie dann **Office 365-Nachrichtenverschlüsselung anwenden und Schutzrechte**. Wählen Sie eine RMS-Vorlage aus der Liste aus, wählen Sie **Speichern**, und wählen Sie dann auf **OK**.
+  
+  Die Liste der Vorlagen enthält alle Standardvorlagen und Optionen sowie die von denen Ihnen für erstellten benutzerdefinierten Vorlagen von Office 365 verwenden. Wenn die Liste leer ist, stellen Sie sicher, dass Sie Office 365 Message Encryption mit den neuen Funktionen eingerichtet haben wie unter [Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf den oberen Bereich des Azure Information Protection](set-up-new-message-encryption-capabilities.md)beschrieben. Informationen zu den standardmäßigen Vorlagen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Informationen über die Option **Nicht weiterleiten** finden Sie unter [nicht weiterleiten Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen über die Option **nur zu verschlüsseln** finden Sie unter [Verschlüsseln nur die Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-   Die Liste der Vorlagen enthält alle Standardvorlagen und Optionen sowie die von denen Ihnen für erstellten benutzerdefinierten Vorlagen von Office 365 verwenden. Wenn die Liste leer ist, stellen Sie sicher, dass Sie Office 365 Message Encryption mit den neuen Funktionen eingerichtet haben wie unter [Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf den oberen Bereich des Azure Information Protection](set-up-new-message-encryption-capabilities.md)beschrieben. Informationen zu den standardmäßigen Vorlagen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Informationen über die Option **Nicht weiterleiten** finden Sie unter [nicht weiterleiten Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen über die Option **nur zu verschlüsseln** finden Sie unter [Verschlüsseln nur die Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
-
-   Sie können **Aktion hinzufügen** auswählen, wenn Sie eine andere Aktion angeben möchten.
+  Sie können **Aktion hinzufügen** auswählen, wenn Sie eine andere Aktion angeben möchten.
 
 ### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>Verwenden der Exchange-Verwaltungskonsole zum Aktualisieren einer vorhandenen e-Mail-Flussregel, um die neuen OME-Funktionen verwenden
 
@@ -118,11 +118,11 @@ Wenn Sie noch nicht Office 365-Organisation auf die neuen Funktionen der OME bew
 
    Beispielsweise, um die Regel gelten nur, wenn der Empfänger außerhalb Ihrer Organisation befindet, wählen Sie **Bedingung hinzufügen** und die wählen Sie dann aus **der Empfänger ist extern/interne** \> **außerhalb der Organisation** \> **OK**.
 
-  8. Wählen Sie zum Aktivieren der Verschlüsselung ohne Verwendung der neuen OME-Funktionen in **die folgenden Aktionen ausführen** **Ändern nachrichtensicherheit** \> **übernehmen die vorherige Version des OME**, und wählen Sie dann auf **Speichern**.
+8. Wählen Sie zum Aktivieren der Verschlüsselung ohne Verwendung der neuen OME-Funktionen in **die folgenden Aktionen ausführen** **Ändern nachrichtensicherheit** \> **übernehmen die vorherige Version des OME**, und wählen Sie dann auf **Speichern**.
 
-    Wenn Sie eine, die IRM-Lizenzierung nicht aktiviert Fehlermeldung, und klicken Sie dann noch nicht eingerichtet werden OME für Ihre Organisation noch. Wenn Sie OME jetzt einrichten möchten, müssen Sie es einrichten, zum Verwenden der neuen OME-Funktionen. Informationen finden Sie unter [Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf der Basis Azure Information Protection](set-up-new-message-encryption-capabilities.md). Einrichten von neuen Bereitstellungen von OME ohne die neuen Funktionen wird von Microsoft nicht mehr unterstützt.
+  Wenn Sie eine, die IRM-Lizenzierung nicht aktiviert Fehlermeldung, und klicken Sie dann noch nicht eingerichtet werden OME für Ihre Organisation noch. Wenn Sie OME jetzt einrichten möchten, müssen Sie es einrichten, zum Verwenden der neuen OME-Funktionen. Informationen finden Sie unter [Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf der Basis Azure Information Protection](set-up-new-message-encryption-capabilities.md). Einrichten von neuen Bereitstellungen von OME ohne die neuen Funktionen wird von Microsoft nicht mehr unterstützt.
 
-    Sie können **Aktion hinzufügen** auswählen, wenn Sie eine andere Aktion angeben möchten.
+  Sie können **Aktion hinzufügen** auswählen, wenn Sie eine andere Aktion angeben möchten.
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Verwenden von Exchange Online PowerShell zum Erstellen einer Mail Flow Regel zum Verschlüsseln von e-Mail-Nachrichten, ohne die neuen OME-Funktionen
 

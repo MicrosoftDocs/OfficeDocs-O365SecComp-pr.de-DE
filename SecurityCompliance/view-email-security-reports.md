@@ -3,7 +3,7 @@ title: Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Complianc
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informationen Sie zum Suchen und Verwenden von e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise. E-Mail-Sicherheitsberichte stehen in der Sicherheit &amp; Compliance Center.
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706419"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749329"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center
 
@@ -28,7 +28,7 @@ Eine Vielzahl von e-Mail-Sicherheitsberichte stehen in der [Sicherheit &amp; Com
   
 Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
   
-- [Threat Protection Statusbericht](view-email-security-reports.md#tps) (neu!) 
+- [Threat Protection Statusbericht](view-email-security-reports.md#tps) 
     
 - [Erkannte Schadsoftware Bericht](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
     
 - [Benutzer gemeldete Nachrichten Bericht](view-email-security-reports.md#userreported) (neu!) 
     
-## <a name="threat-protection-status-report-new"></a>Verfahren Sie zum Erstellen von Schutz Statusbericht (neu!)
+## <a name="threat-protection-status-report"></a>Threat Protection Statusbericht
 
 Der neue **Threat Protection** Statusbericht ist smart Bericht mit böswilligen Absichten e-Mail, die erkannt und von Exchange Online Protection blockiert wurde. In diesem Bericht werden Informationen zu e-Mails, die als Malware oder Phishing-Versuch identifiziert. 
 
@@ -176,7 +176,7 @@ Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind erforderlich, damit diese Berichte anzeigen?
 
-Um anzuzeigen, und die in diesem Artikel beschriebenen Berichte verwenden, benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole.
+Anzeigen und verwenden die Berichte in diesem Artikel beschriebenen **benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole**.
 
 - Für die Sicherheit &amp; Compliance Center, benötigen Sie eine der folgenden Rollen zugewiesen:
     - Organisationsverwaltung

@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Teilweise indizierte Elemente (auch Anruf nicht indizierter Elemente) werden Exchange-Postfachelemente und Dokumente in SharePoint und OneDrive, die von Websites für die aus irgendeinem Grund für die Inhaltssuche vollständig indiziert wurden nicht. In diesem Artikel erfahren Sie, warum Elemente können nicht für die Suche indiziert werden und werden als teilweise indizierte Elemente zurückgegeben, Search-Fehler für teilweise indizierte Elemente zu identifizieren und verwenden Sie ein PowerShell-Skript bestimmen Ihrer Organisation die Angriffsfläche teilweise indizierten e-Mail Elemente.
-ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c1003f9907fffa37042ba62d01e4d938250cf570
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749339"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery
 
-Content-Suche, die Sie über die Office 365-Sicherheit ausführen &amp; Compliance Center enthält teilweise indizierte Elemente automatisch in der geschätzten Suchergebnisse, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange Postfachelemente und Dokumenten auf SharePoint und OneDrive for Business-Websites, die aus irgendeinem Grund für die Suche vollständig indiziert wurden nicht. Die meisten e-Mail-Nachrichten und Dokumente werden erfolgreich indiziert, da sie innerhalb der [Grenzwerte für die Indizierung für e-Mail-Nachrichten](limits-for-content-search.md#indexinglimits)liegen. Einige Elemente möglicherweise diese Indizierung Grenzwerte überschreiten und teilweise indiziert werden. Hier sind andere Gründe, warum Elemente können nicht für die Suche indiziert werden und werden als teilweise indizierte Elemente zurückgegeben, bei der Ausführung einer Inhaltssuche:
+Content-Suche, die Sie über die Office 365-Sicherheit ausführen &amp; Compliance Center enthält teilweise indizierte Elemente automatisch in der geschätzten Suchergebnisse, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange Postfachelemente und Dokumenten auf SharePoint und OneDrive for Business-Websites, die aus irgendeinem Grund für die Suche vollständig indiziert wurden nicht. Die meisten e-Mail-Nachrichten und Dokumente werden erfolgreich indiziert, da sie innerhalb der [Grenzwerte für die Indizierung für e-Mail-Nachrichten](limits-for-content-search.md#indexing-limits-for-email-messages)liegen. Einige Elemente möglicherweise diese Indizierung Grenzwerte überschreiten und teilweise indiziert werden. Hier sind andere Gründe, warum Elemente können nicht für die Suche indiziert werden und werden als teilweise indizierte Elemente zurückgegeben, bei der Ausführung einer Inhaltssuche:
   
 - E-Mail-Nachrichten müssen eine angefügte Datei einen Dateityp, die nicht indiziert werden kann. in den meisten Fällen wird der Dateityp [nicht erkannte oder für die Indizierung wird nicht unterstützt](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     

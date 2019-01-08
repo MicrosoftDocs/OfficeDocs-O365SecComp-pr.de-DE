@@ -3,7 +3,7 @@ title: Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 erweiterte Threat Protection in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706319"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749349"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 
@@ -90,7 +90,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen verschie
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Welche Berechtigungen sind erforderlich, damit die ATP-Berichte anzeigen?
 
-Um anzuzeigen, und die in diesem Artikel beschriebenen Berichte verwenden, benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole.
+Anzeigen und verwenden die Berichte in diesem Artikel beschriebenen **benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole**.
 
 - Für die Sicherheit &amp; Compliance Center, benötigen Sie eine der folgenden Rollen zugewiesen:
     - Organisationsverwaltung

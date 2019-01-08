@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Hier erfahren Sie, wie Office 365 Enterprise helfen kann Ihre Organisation mit einer Vielzahl von Risiken, einschließlich spoofing, Schadsoftware, Spam, Phishing-Versuche und nicht autorisierten Zugriff auf Daten zu schützen.
-ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706059"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749309"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
@@ -27,11 +27,11 @@ Mit Office 365 Enterprise helfen Ihnen, Ihre Organisation mit einer Vielzahl von
 
 Wenn Sie eine benutzerdefinierte Domäne in Office 365 verwenden, können Sie Absender Betrug aus Ihrer Organisation beenden, die e-Mail-Sicherheit zu verbessern und Schützen Ihrer Domäne Ruf.
   
-- [Verhindern, dass mit SPF-spoofing]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
+- [Einrichten von SPF in Office 365 zum Verhindern von Spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-- [Überprüfen von ausgehenden e-Mails mit DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
+- [Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden](use-dkim-to-validate-outbound-email.md)
     
-- [E-Mail mit DMARC überprüfen]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
+- [Verwenden von DMARC zum Überprüfen von E-Mails in Office 365](use-dmarc-to-validate-email.md)
     
 ## <a name="anti-spam-amp-anti-malware"></a>Anti-Spam- &amp; Anti-Malware
 
@@ -39,11 +39,11 @@ Informationen Sie zu Office 365 Anti-Spam-Faktoren, verbindungsfilterung und Mal
   
 - [Anti-Spam- &amp; Anti-Malware Protection](anti-spam-and-anti-malware-protection.md)
     
-- [Aktivieren der Protokollierung für e-Mail]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
+- [Aktivieren der Postfachüberwachung in Office 365](enable-mailbox-auditing.md)
     
 - [Unter Quarantäne stellen von E-Mail-Nachrichten in Office 365](quarantine-email-messages.md)
     
-- [Verdächtige Inhalte an Microsoft übermitteln]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
+- [Schadsoftware und Nicht-Schadsoftware zur Analyse an Microsoft einreichen](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>Advanced Threat Protection
 
