@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe gemindert, dass Verwendungsmöglichkeiten Absenderdomänen, d. h., Domänen gefälscht, die manipuliert werden. Sie erreicht dies durch die Analyse der Nachrichten und Neithe mithilfe der standard-e-Mail-Authentifizierungsmethoden noch andere Sender Reputation Techniken authentifiziert Blockierung diejenigen aus, die werden können. Diese Änderung wird implementiert wird, um die Anzahl der Phishingangriffe zu reduzieren, die Organisationen in Office 365 verfügbar gemacht werden.
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194716"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769859"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
@@ -415,20 +415,20 @@ Im Allgemeinen wird die Richtlinie angewendet auf eine Nachricht in der Kopfzeil
 |**Priority**|**Richtlinie**|**Kategorie**|**Wobei verwaltet?**|**Gilt für**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |Schadsoftware  <br/> |MALW  <br/> |[Malware-Richtlinie](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|2   <br/> |Phishing-E-Mail  <br/> |PHSH  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|3   <br/> |Spam mit hoher Vertrauenswürdigkeit  <br/> |HSPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|4   <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553), [Spoofing intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Alle Organisationen  <br/> |
-|5   <br/> |Spam  <br/> |SPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|6   <br/> |Massen  <br/> |MASSEN  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|7   <br/> |Domäne des Identitätswechsels  <br/> |DIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur  <br/> |
-|8   <br/> |Benutzeridentitätswechsel  <br/> |UIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur <br/> |
+|2  <br/> |Phishing-E-Mail  <br/> |PHSH  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|3  <br/> |Spam mit hoher Vertrauenswürdigkeit  <br/> |HSPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|4  <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553), [Spoofing intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Alle Organisationen  <br/> |
+|5  <br/> |Spam  <br/> |SPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|6  <br/> |Massen  <br/> |MASSEN  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|7  <br/> |Domäne des Identitätswechsels  <br/> |DIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur  <br/> |
+|8  <br/> |Benutzeridentitätswechsel  <br/> |UIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur <br/> |
    
 Wenn Sie mehrere verschiedene Anti-Phishing-Richtlinien haben, wird die jeweils die höchste Priorität angewendet. Angenommen Sie, Sie haben zwei Richtlinien:
   
 |**Richtlinie**|**Priority**|**Benutzer-Domäne Identitätswechsel**|**Anti-spoofing**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |Ein  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |Ein  <br/> |
    
 Wenn eine Nachricht stammen und wird als Spoofing- und Benutzer Identitätswechsel identifiziert und Richtlinie A und B der Richtlinie, ist die gleiche Gruppe von Benutzern zugeordnet und klicken Sie dann die Nachricht wird als ein Spoofing behandelt, aber keine Aktion, da angewandt Anti-spoofing ist deaktiviert. , und SPOOFING führt eine höhere Priorität (4) als Benutzeridentitätswechsel (8).
   
@@ -444,7 +444,7 @@ Es ist jedoch ein gültigen Szenarios, in dem Anti-spoofing deaktiviert werden s
   
 ![Kunden-MX-Eintrag verweist nicht auf Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-Der andere Server möglicherweise auf Standortbasierte Mail Exchange-Server eine Mail-Filterung Gerät wie Ironport, oder eine andere Cloud gehosteter Dienst.
+Der andere Server möglicherweise eine lokale Exchange-Mailserver, eine e-Mail-Gerät wie Ironport, filtern oder einer anderen Wolke gehosteter Dienst.
   
 Wenn Sie der MX-Eintrag, der die Domäne des Empfängers nicht zu Office 365 verweist, ist nicht erforderlich Anti-spoofing deaktivieren, da Office 365 die empfangende Domäne MX-Eintrag schlägt und Anti-spoofing, unterdrückt Wenn es auf einem anderen Dienst verweist. Wenn Sie nicht wissen Wenn Ihre Domäne im Vordergrund einen anderen Server enthält, können Sie eine Website wie MX-Toolbox, den MX-Eintrag nachschlagen. Sagen sie etwa folgendermaßen:
   
@@ -456,7 +456,7 @@ Jedoch wenn des MX-Eintrags, der die Domäne des Empfängers *ist* , obwohl es e
   
 ![Routing-Diagramm für Empfänger zum Umschreiben von Adressen](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-MX-Eintrag für die Domäne "contoso.com" verweist auf den lokalen Server während der Domäne @office365.contoso .net MX-Eintrag zu Office 365 verweist, da es enthält \*. protection.outlook.com, oder \*. eo.outlook.com des MX-Eintrags:
+MX-Eintrag für die Domäne "contoso.com" verweist auf dem lokalen Server während der Domäne @office365.contoso .net MX-Eintrag zu Office 365 verweist, da es enthält \*. protection.outlook.com, oder \*. eo.outlook.com des MX-Eintrags:
   
 ![MX-Eintrag zeigt zu Office 365, daher wahrscheinlich Empfänger umschreiben](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
@@ -635,7 +635,7 @@ Wenn Sie ein Domänenadministrator sind jedoch keiner Office 365-Kunden:
     
 - Wenn Sie Bulk Absender, die Übertragung von e-Mails in Ihrem Namen haben, sollten Sie mit diesen zum Senden von e-Mail in einer Weise arbeiten, dass die sendende Domäne in der From: Adresse (falls es Ihnen gehört) mit der Domäne, die SPF oder DMARC übergibt ausgerichtet.
     
-- Wenn Sie über lokale e-Mail-Servern oder von einem Anbieter Software als Dienst oder aus einem Cloud-hosting-Dienst wie Microsoft Azure, GoDaddy, Racks mit 4U, Amazon-Webdienste senden oder ähnlich, Sie, dass sicherstellen sollten werden SPF-Eintrag hinzugefügt werden.
+- Wenn Sie über lokale e-Mail-Servern oder von einem Anbieter Software als Dienst oder aus einem Cloud-hosting-Dienst wie Microsoft Azure, GoDaddy, Racks mit 4U, Amazon-Webdienste senden oder ähnlich, Sie sollten sicherstellen, dass sie Ihren SPF-Eintrag hinzugefügt werden.
     
 - Wenn Sie eine kleine Domäne, die vom Internetdienstanbieter gehostet wird sind, sollten Sie Ihre SPF-Datensatzes gemäß den Anweisungen einrichten, die Sie von Ihrem Internetdienstanbieter bereitgestellt wird. Die meisten Internetdienstanbieter bieten diese Arten von Anweisungen und auf Seiten der Unterstützung des Unternehmens befinden.
     
