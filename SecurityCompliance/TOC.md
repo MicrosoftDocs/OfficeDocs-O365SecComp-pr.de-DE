@@ -2,7 +2,7 @@
 ## [Inhaltsübersicht für die Sicherheit von Office 365](security-roadmap.md)
 ## [Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit](tenant-wide-setup-for-increased-security.md)
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
-## [Secure Score für Office 365](office-365-secure-score.md)
+## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ## [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
 ## [Übersicht über das Sicherheits-Dashbord](security-dashboard.md)
@@ -414,3 +414,4 @@
 ### [Dienste für Nicht-Kunden](services-for-non-customers.md)
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
+# [Microsoft 365](https://docs.microsoft.com/microsoft-365/)
