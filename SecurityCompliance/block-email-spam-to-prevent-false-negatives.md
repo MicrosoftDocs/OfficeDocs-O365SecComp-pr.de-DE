@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: Tipps zum Einrichten des Office 365-Spamfilters, um Spam-E-Mail zu blockieren und falsch negative Nachrichten zu verhindern. Ein Administrator verwendet den Spamfilter in Office 365, um zu verhindern, dass Spam an die Posteingänge der Benutzer gesendet wird.
-ms.openlocfilehash: 3502215dba4097d0643501dd089ec3fe94575c87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529343"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769869"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>Blockieren von Spam-E-Mail mit dem Office 365-Spamfilter zur Vermeidung von Problemen mit falsch negativen Nachrichten
 
@@ -97,7 +97,6 @@ Der EOP-Dienst ist darauf ausgelegt, die sicheren und blockierten Absender des B
 > Wenn Sie eine Nachrichtenflussregel verwenden, um den SCL-Wert in 0 (oder einen anderen Wert als -1) zu ändern, werden alle Outlook-Junk-E-Mail-Optionen auf die Nachricht angewendet. Dies bedeutet, dass Listen mit gesperrten und sicheren Absendern berücksichtigt werden, aber auch, dass Nachrichten von Adressen, die sich auf der Liste blockierter oder sicherer Absender befinden, durch die clientseitige Junk-E-Mail-Filter-Verarbeitung möglicherweise als Junk markiert werden. Wenn Outlook die blockierten und sicheren Listen verarbeiten soll, aber nicht den clientseitigen Junk-E-Mail-Filter verwenden soll, müssen Sie in den Outlook Junk-E-Mail-Optionen die Option auf „Keine automatische Filterung“ festlegen. „Keine automatische Filterung“ ist die Standardoption in den neuesten Versionen von Outlook, aber Sie sollten überprüfen, ob diese Einstellung aktiviert ist, um sicherzustellen, dass auf die Nachrichten nicht der clientseitige Junk-E-Mail-Filter angewendet wird. Als Administrator können Sie die Deaktivierung der Junk-E-Mail-Filterung in Outlook erzwingen, indem Sie die Anleitung in [Outlook: Richtlinieneinstellung zur Deaktivierung der Benutzeroberfläche und des Filtermechanismus für Junk-E-Mails](https://support.microsoft.com/de-DE/kb/2180568) befolgen.
   
 ## <a name="see-also"></a>Siehe auch
-<a name="BKMK_please_comment"> </a>
 
 [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
   
