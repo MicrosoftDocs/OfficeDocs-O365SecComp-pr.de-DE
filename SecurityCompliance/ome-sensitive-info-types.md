@@ -3,7 +3,7 @@ title: Neue Office 365 Message Encryption Richtlinie für vertrauliche Informati
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Automatisch angewendet, Richtlinie für Typen vertraulicher Informationen für alle Mandanten Einführung Office 365 Message Encryption.'
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752086"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789453"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Office 365 Message Encryption Richtlinie für vertrauliche Informationen
 
@@ -30,7 +30,7 @@ Ihre Organisation erhalten eine Benachrichtigung in Office 365 Message Center au
 
 ## <a name="sensitive-information-type-policy-details"></a>Details zum Richtlinie vertrauliche Informationen
 
-Eine Exchange Mail Flow Regel erstellt werden in Ihrer Organisation, die sich außerhalb Ihrer Organisation mit unterschiedlich sein und sollte-e-Mails automatisch verschlüsselt wird die *Verschlüsseln nur* Richtlinie, wenn sie die folgenden Arten von vertraulichen Informationen enthalten:
+Eine Exchange Mail Flow Regel erstellt werden in Ihrer Organisation, die sich außerhalb Ihrer Organisation mit unterschiedlich sein und sollte-e-Mails automatisch verschlüsselt wird die *Verschlüsseln nur* Richtlinie, wenn die e-Mails oder die Anlagen, die folgenden Arten von vertraulichen Informationen enthalten:
 
 - ABA routing Anzahl
 - Kreditkartennummer
@@ -70,6 +70,6 @@ Wenn Sie diese Änderung zielorientierten möchten, gehen Sie folgendermaßen vo
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>Wie deaktiviere ich die automatische Richtlinie?
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>Wie ich deaktivieren oder Anpassen die automatische Richtlinie?
 
-Wenn Sie nicht melden Sie sich von dieser Änderung und die Exchange-Mail-Regel bereits erstellt wurde, können Sie [die Regel deaktiviert werden](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) durch das Aufrufen der **E-Mail-Fluss** > **Regeln** in der Exchange Admin center (EAC) und deaktivieren Sie die Regel "*verschlüsseln ausgehende vertrauliche-e-Mails (im Feld Regel)*".
+Wenn Sie nicht melden Sie sich von dieser Änderung und die Exchange Mail Flow Regel bereits erstellt wurde, können Sie [deaktivieren, oder bearbeiten Sie die Regel](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) auf **E-Mail-Fluss** > **Regeln** in der Exchange Admin center (EAC) und deaktivieren Sie die Regel "*Verschlüsseln Ausgehende e-Mails (im Feld Regel)*".

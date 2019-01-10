@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Wenn Sie Ihre ATP sichere Anlagen Richtlinien eingerichtet haben, wählen Sie dynamische Übermittlung Nachricht Verzögerungen bei der vermieden, und aktivieren Personen für die Vorschau von Anlagen, die gescannt werden.
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769829"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789463"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Übermittlung und Anzeigen der Vorschau mit Office 365 ATP sichere Anlagen
 
@@ -35,6 +35,9 @@ Dynamische Übermittlung entfällt e-Mail Verzögerungen durch den Textkörper e
 - Wenn eine Anlage böswilligen werden bestimmt wird, wird es zur Quarantäne, gesendet, in dem eine Person in Ihrer Organisation Security Team (wie ein globaler Office 365-Administrator oder Sicherheitsadministrator) können [Nachrichten in Quarantäne in Office 365 verwalten](manage-quarantined-messages-and-files.md).
 
 Die meisten PDF-Dateien und Office während ATP Überprüfung ausgeführt wird, können Dokumente im abgesicherten Modus angezeigt werden. Wenn eine Anlage nicht kompatibel mit der dynamischen Delivery-Vorschau ist, sehen erst, e-Mail-Empfänger einen Anlage Platzhalter ATP sichere Anlagen Überprüfung abgeschlossen ist.
+
+> [!TIP]
+> Wenn Sie ein mobiles Gerät verwenden und PDF-Dateien in dynamische Übermittlung-Vorschau auf den ersten nicht gerendert werden, versuchen Sie die Anmeldung bei Office 365 mit Ihren mobilen Browser.
 
 Mit der dynamischen Übermittlung Personen gelesen und reagieren auf ihre e-Mail-Nachrichten sofort, während die Anlagen analysiert werden. 
 
@@ -73,4 +76,4 @@ Es gibt bestimmte Szenarien, in denen dynamische Übermittlung nicht unterstütz
 - Umgebungen, in denen ein Exchange Online-Administrator Exclaimer aktiviert hat. Um dieses Problem zu beheben, finden Sie unter [Nachrichten mit Anlagen werden nicht zugestellt werden, wenn ATP dynamische Übermittlung und Exclaimer verwendet werden](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
 - Verschlüsselte Nachrichten mit [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
-    
+
