@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Haben Sie sich je gefragt, wie sicher Ihre Organisation wirklich in Office 365 ist? Sichere Faktor ist hier helfen. Sichere Faktor Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen in Office 365 analysiert und weist eine Bewertung.
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706179"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015067"
 ---
 # <a name="office-365-secure-score"></a>Office 365 Secure Score
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706179"
 
 Wenn Ihre Organisation verfügt ein Abonnement, die [Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)oder Office 365 Business Premium enthält und Sie über die erforderlichen Berechtigungen verfügen, können Sie Ihrer Organisation sichere Score Vorsichtsmaßnahmen anzeigen [https://securescore.office.com](https://securescore.office.com). 
 
-Alternativ können Sie besuchen, die Sicherheit und Compliance Center ([https://security.microsoft.com](https://security.microsoft.com)), in der Sie ein Secure Score-Widget finden, die Sie mit Ihr aktuelles Ergebnis bereitstellt.
+Alternativ können Sie besuchen, die Sicherheit und Compliance Center ([https://protection.office.com](https://protection.office.com)), in der Sie ein Secure Score-Widget finden, die Sie mit Ihr aktuelles Ergebnis bereitstellt.
 
 ![Sichere Score widget](media/SecureScoreWidget-o365.png)
 
@@ -55,7 +55,7 @@ Um die Auswirkungen von Ihren Aktionen auf Sicherheit Ihrer Organisation anzuzei
   
 ![Faktor Analyzer Registerkarte des Office 365 Secure Score-Tools](media/SecureScore-ScoreAnalyzer-7days.png)
   
-Unter dem Diagramm sehen Sie eine Lsit von Faktoren und Aktionen nach Kategorie.
+Unter dem Diagramm sehen Sie eine Liste der Faktoren und Aktionen nach Kategorie.
   
 ![Diagramm auf der Score Analyzer Registerkarte zeigt einen Datenpunkt ausgewählt](media/SecureScore-Analyzer-breakdownbelowchart.png)
   

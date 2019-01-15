@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Informationen Sie zum Suchen und Verwenden von e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise. E-Mail-Sicherheitsberichte stehen in der Sicherheit &amp; Compliance Center.
-ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749329"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014987"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center
 
@@ -51,7 +51,7 @@ Der neue **Threat Protection** Statusbericht ist smart Bericht mit böswilligen 
 > [!NOTE]
 > Ein Bericht Bedrohung Schutzstatus steht Kunden mit [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Allerdings werden die Informationen, die im Bericht Schutzstatus Bedrohung für ATP-Kunden angezeigt wird wahrscheinlich andere Daten als was EOP-Kunden finden Sie unter möglicherweise enthalten. EOP-Kunden können beispielsweise Schadsoftware erkannt in e-Mails, die aber nicht Informationen zu [schädliche Dateien in SharePoint Online, OneDrive, oder Microsoft-Teams erkannt](atp-for-spo-odb-and-teams.md), eine Funktion ATP-spezifische Informationen anzeigen. ([Erfahren Sie mehr über Berichte ATP](view-reports-for-atp.md)).
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
   
 ![Threat Protection Statusbericht](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -67,7 +67,7 @@ Sie können auch auswählen, ob zum Anzeigen von Daten für e-Mails, die als bö
 
 Der **Erkannte Schadsoftware** Bericht zeigt, wie viele ein- und ausgehende Nachrichten als mit Malware für Ihre Organisation erkannt wurden. 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Schadsoftwareerkennungen**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Schadsoftwareerkennungen**.
   
 ![Beispiel für Schadsoftware erkannte Bericht](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -77,7 +77,7 @@ Andere Berichte, wie ein Bericht Bedrohung Schutzstatus ähnelt der Bericht Date
 
 Der **Oben Malware** Bericht werden die verschiedenen Arten von Schadsoftware, die von Exchange Online gefunden wurde. 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Oben Malware**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Oben Malware**.
   
 ![SCC - EOP wichtigste Schadsoftware](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -93,7 +93,7 @@ Unter dem Diagramm sehen Sie eine Liste der erkannten Malware und wie viele Nach
 
 Der **häufigste Absender und Empfänger** Bericht ist ein Kreisdiagramm Ihre oberen e-Mail-Absender angezeigt. 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **häufigste Absender und Empfänger**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **häufigste Absender und Empfänger**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> häufigste Absender und Empfänger](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -111,7 +111,7 @@ Unterhalb des Diagramms angezeigt, die die oberen e-Mail-Absender oder Empfänge
 
 Der **Spoofing Mail** Bericht zeigt, wie viele e-Mail-Nachrichten von Spoofing erkannt wurden, wurden, welche "gut" (Spoofing Mail legitimen geschäftlichen Gründen geschehen) betrachtet und. 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Spoofing Mail**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Spoofing Mail**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> Spoofing Mail](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -123,7 +123,7 @@ Berichts, um sie in einem neuen Browserfenster zu öffnen, in dem Sie eine ausf�
 
 Der Bericht **Spamerkennungen** zeigt alle Spam-Inhalt von Exchange Online blockiert. 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Spamerkennungen**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Spamerkennungen**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> EOP Spamerkennungen](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -139,7 +139,7 @@ Unter dem Diagramm sehen Sie eine Liste der Spam-Objekte, die erkannt wurden. W�
 
 Der Bericht **gesendete und empfangene e-Mail** ist smart Bericht mit Informationen zu eingehender und ausgehender e-Mails, einschließlich spamerkennungen, Malware und e-Mails, die als "gut". 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **gesendete und empfangene e-Mail**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **gesendete und empfangene e-Mail**.
   
 ![So zeigen Sie in diesem Bericht in das Wertpapier an &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard \> gesendete und empfangene e-Mail](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -163,7 +163,7 @@ Details sind für jede Nachricht, einschließlich der Übermittlung Grund, einen
   
 ![Bericht User-Reported Nachrichten werden Nachrichten, die Benutzer mit der Bezeichnung als Junk, keine Junk-e- oder Phishing Versuche.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), eine der folgenden Aktionen aus:
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), eine der folgenden Aktionen aus:
   
 - Wechseln Sie zu **Threat Management** \> **Dashboard** \> **Nachrichten Benutzer gemeldet**.
     

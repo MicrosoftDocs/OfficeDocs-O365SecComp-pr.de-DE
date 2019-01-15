@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Sie können Ihre SIEM Server mit Office 365-Cloud-App-Sicherheit integriert. Lesen Sie diesen Artikel, um Sie erhalten einen Überblick über die Funktionsweise und wie es einrichten.
-ms.openlocfilehash: f0965f822b50a0f06dfb69620a9d64c6ca509864
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 0e185dec44bed7657bed126f70dfc64ffc135611
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706409"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015027"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security
   
@@ -67,7 +67,7 @@ Office 365-Cloud-App-Sicherheit unterstützt derzeit die folgenden SIEM-Server:
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Schritt 1: Richten Sie es von einem Agent SIEM in Office 365-Cloud-App-Sicherheit ein
 
-1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
     
 2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
     

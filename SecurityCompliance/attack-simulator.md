@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Als globaler Office 365-Administrator können Sie Angriff Simulator realistische Angriff Szenarien in Ihrer Organisation ausführen. Dies hilft Ihnen zu identifizieren und anfällig Benutzer vor ein tatsächlichen Angriff Ihres Unternehmens Treffer zu finden.
-ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
-ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
+ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27471998"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015037"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
@@ -66,7 +66,7 @@ Dieser Angriff konzentriert sich auf Navigate Bearbeitung, die die Meldung angez
   
 Sie können den rich-HTML-Editor direkt in das Feld **e-Mail-Text** selbst erstellen oder Arbeiten mit HTML-Quelle.
   
-1. In der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
+1. In der [Sicherheit &amp; Compliance Center](https://protection.office.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
     
 2. Geben Sie einen sinnvollen Kampagnennamen für den Angriff, oder wählen Sie eine Vorlage aus. <br/>![Phishing-Startseite](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ Dieser Angriff konzentriert sich auf lassen Sie ein allgemeine Kennwort anhand e
   
 ### <a name="to-simulate-a-password-spray-attack"></a>Können Sie das Kennwort Sprühende-Angriff
 
-1. In der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
+1. In der [Sicherheit &amp; Compliance Center](https://protection.office.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
     
 2. Geben Sie einen sinnvollen Kampagnennamen für den Angriff.
     
@@ -112,7 +112,7 @@ Ein Password Brute-Force-Angriff auf einer Organisation wird normalerweise verwe
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Simuliert einen Password Brute-Force-Angriff
 
-1. In der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
+1. In der [Sicherheit &amp; Compliance Center](https://protection.office.com), wählen Sie **Threat Management** \> **Angriff Simulator**.
     
 2. Geben Sie einen sinnvollen Kampagnennamen für den Angriff.
     

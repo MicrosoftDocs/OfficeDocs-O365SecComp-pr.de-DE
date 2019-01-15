@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Hier erfahren Sie, wie Sie über einen detaillierten Bericht an einen Einblick in empfohlenen Aktionen in das Wertpapier verschieben können &amp; Compliance Center.
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706249"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014977"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick
 
@@ -30,7 +30,7 @@ Dies ist eine von mehreren exemplarischen Vorgehensweisen für die Sicherheit &a
 
 Betrachten wir den Ablauf von einen detaillierten Bericht einen Einblick und Aktionen. (Dies ist ein Beispiel für kurze [Antispam- und Anti-Malware](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Wir beginnen mit [Sicherheit &amp; Compliance Center](https://security.microsoft.com) Berichte. (Gehe zu **Berichten** \> **Dashboard**.)<br/>![In das Wertpapier &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Wir beginnen mit [Sicherheit &amp; Compliance Center](https://protection.office.com) Berichte. (Gehe zu **Berichten** \> **Dashboard**.)<br/>![In das Wertpapier &amp; Compliance Center, navigieren Sie zur Berichte \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Wir wählen Sie einen Bericht auf eine ausführlichere Ansicht zu erhalten. (Wählen Sie einen Bericht, wie die **Threat Protection** Statusbericht.)<br/>![Threat Protection Statusbericht insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

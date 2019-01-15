@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Mit Office 365 Cloud App-Sicherheit können Sie sehen, was passiert in Ihrer Office 365-Umgebung von über suchen und bearbeitenden Aktivitäten und Konten. '
-ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706459"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014897"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Untersuchen einer Aktivität in Office 365 Cloud App Security
   
@@ -30,7 +30,7 @@ Office 365 funktioniert Cloud App-Sicherheit mit Ihrem [Office 365-Überwachungs
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Wie Sie auf der Seite Aktivität Protokoll abrufen
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. (Siehe [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).)
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. (Siehe [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).)
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     

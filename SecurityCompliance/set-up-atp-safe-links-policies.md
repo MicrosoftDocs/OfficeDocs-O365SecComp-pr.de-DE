@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Richten Sie Richtlinien für sichere Links mit Ihrer Organisation vor böswilligen Links in Word, Excel, PowerPoint und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706089"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015057"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Links
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706089"
 
 Wenn Sie [Office 365 erweiterte Threat Protection](office-365-atp.md)haben, müssen Sie eine Standardrichtlinie ATP sichere Links, die für jede Person in Ihrer Organisation gilt. Stellen Sie sicher, um zu prüfen, und bei Bedarf bearbeiten Sie der Standardrichtlinie.
   
-1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. Wählen Sie im linken Navigationsbereich, klicken Sie unter **Threat Management** **Richtlinie \> ** **Sichere Links**.
     
@@ -67,7 +67,7 @@ Wenn Sie [Office 365 erweiterte Threat Protection](office-365-atp.md)haben, müs
 
 Nachdem Sie überprüft (bearbeitet die Standardrichtlinie ATP sichere Links oder haben), die für alle Benutzer gilt, besteht der nächste Schritt zusätzliche Richtlinien definieren, die an bestimmte Empfänger anwenden können. Beispielsweise können Sie auf die Standardrichtlinie Ausnahmen angeben, indem Sie eine zusätzliche Richtlinie definieren. 
   
-1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. Wählen Sie im linken Navigationsbereich, klicken Sie unter **Threat Management** **Richtlinie**aus.
     

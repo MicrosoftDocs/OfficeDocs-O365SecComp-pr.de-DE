@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit verwenden integrierte Algorithmen, um potenzielle Probleme aufdecken. Sie sollten mindestens eine Anomalie Erkennung Richtlinie verfügen, die Sie optimiert werden können (bei der Erstellung) mithilfe von Filtern. '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706339"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015076"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 
@@ -51,7 +51,7 @@ Stellen Sie Folgendes sicher:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Zeigen Sie Ihre Anomalie Erkennungsrichtlinien
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
@@ -89,11 +89,10 @@ In der folgenden Tabelle werden die Standardrichtlinien für Anomalie Erkennung,
 |Mehrere fehlgeschlagene Anmeldeversuche  <br/> |Benutzer, die mehrere Anmeldeversuche in einer einzigen Sitzung fehlgeschlagen identifiziert in Bezug auf die geplante gelernt haben, die einer Verletzung Versuch angeben kann.  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>Ursachenanalyse Anomalie Erkennung Benachrichtigungen
-<a name="triage"> </a>
 
 Wie Benachrichtigungen empfangen werden, können Sie diese Warnungen schnell selektieren und bestimmen, welche zuerst behandeln. Mit Kontext für eine Benachrichtigung können Sie finden im Bild, und bestimmen, ob etwas böswilligen tatsächlich geschieht. Verwenden Sie das folgende Verfahren für den Einstieg erkunden eine Warnung:
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     

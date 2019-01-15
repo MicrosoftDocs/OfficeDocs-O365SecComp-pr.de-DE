@@ -3,6 +3,7 @@ title: Übersicht über Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365-Cloud-App-Sicherheit können Sie Einblicke in verdächtige Aktivitäten in Office 365, sodass Sie Situationen, die potenziell problematisch und untersuchen können bei Bedarf Ausführen einer Aktion zum Beheben von Sicherheitsproblemen. '
-ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
-ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
+ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26864556"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014927"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Übersicht über Office 365 Cloud App Security
   
@@ -39,7 +40,7 @@ Office 365-Cloud-App-Sicherheit gibt Ihnen einen Einblick in die verdächtige Ak
   
 Erhalten Sie über die Sicherheit der Office 365-Portal Office 365-Cloud-App-Sicherheit &amp; Compliance Center. Hier ist eine gute Möglichkeit zur Verfügung:
   
-1. Wechseln Sie zu [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**. <br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
     
@@ -91,17 +92,17 @@ Sie können die Protokolle der Web-Datenverkehr mit Office 365 Cloud App-Sicherh
   
 [Informationen Sie zu Web-Datenverkehr Protokolle und Datenquellen für Office 365-Cloud-App-Sicherheit](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="app-permissions"></a>App-Berechtigungen
+## <a name="oauth-apps"></a>OAuth-apps
 
 Sie können mit Office 365 Cloud App-Sicherheit ermöglichen oder verhindern, dass Personen in Ihrer Organisation Drittanbieter-apps verwenden können, die Zugriff auf Daten in Office 365.
   
-![In Office 365-CAS können Sie die Seite App-Berechtigungen verwalten im Menü untersuchen zugreifen.](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![In Office 365-CAS können Sie die Seite OAuth Verwalten von apps aus dem Menü untersuchen zugreifen.](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-Wenn Sie diese Seite erhalten möchten, wechseln Sie zu **untersuchen** \> **App-Berechtigungen**. 
+Wenn Sie diese Seite erhalten möchten, wechseln Sie zu **untersuchen** \> **OAuth-apps**. 
   
 ![Wählen Sie im Portal O365 CAS überprüfen.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Verwalten von App-Berechtigungen mit Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+[Verwalten von OAuth-Apps mit Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Cloud-Discovery-Dashboard
 

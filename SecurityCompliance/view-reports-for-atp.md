@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 erweiterte Threat Protection in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749349"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014947"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 
@@ -35,7 +35,7 @@ Der **Schutzstatus Bedrohung** -Bericht ist eine einzelne Ansicht, die Informati
 > [!NOTE]
 > Ein Bericht Bedrohung Schutzstatus steht Kunden mit [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Allerdings werden die Informationen, die im Bericht Schutzstatus Bedrohung für ATP-Kunden angezeigt wird wahrscheinlich andere Daten als was EOP-Kunden finden Sie unter möglicherweise enthalten. Beispielsweise wird der Schutzstatus Bedrohung Bericht für ATP-Kunden Informationen zu [schädliche Dateien in SharePoint Online, OneDrive, oder Microsoft-Teams erkannt](atp-for-spo-odb-and-teams.md)enthalten. Diese Angaben ist ATP, so dass Kunden EOP jedoch nicht ATP diese Details in ihre Threat Protection Statusbericht nicht angezeigt werden.
   
-Zum Anzeigen des Threat Protection Statusberichts in die [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
+Zum Anzeigen des Threat Protection Statusberichts in die [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **Bedrohung Schutzstatus**.
   
 ![ATP Threat Protection-Statusbericht](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -55,7 +55,7 @@ Klicken Sie im Menü **Ansichtsdaten nach** können auch ändern, welche Informa
 
 Der Bericht **ATP Dateitypen** enthält den Typ der Dateien von [ATP sichere Anlagen](atp-safe-attachments.md)als böswilligen entdeckt.
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **ATP Dateitypen**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **ATP Dateitypen**.
   
 ![Dateitypen ATP-Bericht](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -67,7 +67,7 @@ Wenn Sie über einen bestimmten Tag bewegen, sehen Sie die Aufgliederung der Typ
 
 Der Bericht **ATP Nachricht Disposition** zeigt die Aktionen, die für e-Mail-Nachrichten erstellt wurden, die mit schädlichem Inhalt erkannt wurden. 
   
-Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **ATP Nachricht Disposition**.
+Zum Anzeigen dieser Bericht in der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard** \> **ATP Nachricht Disposition**.
   
 ![ATP Nachricht Dispositionsbericht](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Erfahren Sie, wie anzeigen, bearbeiten und Verwalten von Zeitplänen für Berichte in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: 3dfe7c2f596078112150b944d45b43de8508cdca
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529175"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014907"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Verwalten von Zeitplänen für mehrere Berichte in das Wertpapier &amp; Compliance Center
 
@@ -30,14 +30,16 @@ In das Wertpapier &amp; Compliance Center, verschiedene [Berichte und Insights](
 > Stellen Sie sicher, dass Sie die erforderlichen verfügen [über Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). Im allgemeinen globalen Office 365-Administratoren, Sicherheitsadministratoren und Sicherheit Leser können Zugriff auf Berichte in das Wertpapier &amp; Compliance Center. 
   
 ![In das Wertpapier &amp; Compliance Center, wählen Sie Berichte \> Zeitpläne verwalten](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
-  
-1. In das Wertpapier &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Zeitpläne verwalten**.
+
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und zur Anmeldung. Dadurch gelangen Sie zur Sicherheit & Compliance Center.
+
+2. In das Wertpapier &amp; Compliance Center, navigieren Sie zur **Berichte** \> **Zeitpläne verwalten**.
     
-2. Wählen Sie in der Liste ein Element aus.
+3. Wählen Sie in der Liste ein Element aus.
     
-3. Überprüfen Sie die Informationen für den Bericht Zeitplan.
+4. Überprüfen Sie die Informationen für den Bericht Zeitplan.
     
-4. Bearbeiten Sie nach Bedarf oder löschen Sie den Zeitplan, und klicken Sie dann auf **Schließen**.
+5. Bearbeiten Sie nach Bedarf oder löschen Sie den Zeitplan, und klicken Sie dann auf **Schließen**.
     
 ## <a name="related-topics"></a>Verwandte Themen
 
