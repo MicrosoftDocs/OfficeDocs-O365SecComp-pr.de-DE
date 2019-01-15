@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: Erweitern Sie Office 365 erweiterte Schutz, um Dateien in SharePoint Online, OneDrive für Unternehmen und Microsoft-Teams, um sicherer Zusammenarbeit für Ihre Organisation zu aktivieren.
-ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 29676bf7c326adf366cca79a59f5b4c40c672baa
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238447"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014817"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -30,15 +30,15 @@ Personen, für die regelmäßig Dateien freigeben und Zusammenarbeit per SharePo
 
 Wenn Sie eine Datei in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, wie böswillige identifiziert wurden, ATP integriert direkt mit den Dateispeicher, diese Datei zu sperren. Die folgende Abbildung zeigt ein Beispiel für eine solche Datei in einer Bibliothek erkannt.
   
-[![Screenshot der Dateien in OneDrive für Unternehmen mit einem als böswilligen entdeckt](media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![Dateien in OneDrive für Unternehmen mit einem als böswilligen entdeckt](media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 Zwar weiterhin Gesperrte Dateitypen in der Dokumentbibliothek und Web, Mobil oder desktop Applications aufgeführt ist kann nicht die blockierte Datei geöffnet, kopiert, verschoben oder shared. Personen können, jedoch eine blockierte Datei löschen. Hier ist ein Beispiel für das auf dem mobilen Gerät eines Benutzers aussieht:
   
-[![Screenshot des Löschens einer blockierten Datei aus OneDrive for Business aus der mobilen OneDrive-app](media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![Löschen eine blockierte Datei aus OneDrive for Business aus der mobilen OneDrive-app](media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 Je nach Konfiguration der Office 365 Personen möglicherweise oder möglicherweise nicht die Möglichkeit, eine blockierte Datei herunterladen. Sieht aus wie eine blockierte Datei herunterladen auf mobilen Gerät eines Benutzers aussieht:
   
-[![Screenshot des Herunterladens eine gesperrte Dateitypen in OneDrive für Unternehmen](media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![Herunterladen einer blockierten Datei in OneDrive für Unternehmen](media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 Finden Sie weitere Informationen finden Sie unter [Office 365 ATP für SharePoint, OneDrive, und Microsoft-Teams aktivieren](turn-on-atp-for-spo-odb-and-teams.md).
   

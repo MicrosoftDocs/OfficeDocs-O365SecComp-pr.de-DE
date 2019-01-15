@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706069"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014877"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -43,7 +43,7 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: Einrichten eine Richtlinie für den sicheren Anlagen ATP (oder bearbeiten)
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie im linken Navigationsbereich unter **Threat Management** **Policy** \> **Sichere Anlagen**.
     

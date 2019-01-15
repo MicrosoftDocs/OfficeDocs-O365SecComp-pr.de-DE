@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: Integrieren von Office 365 erweiterte Threat Protection in Windows Defender erweiterte Threat Protection ausführlichere Threat Management Informationen angezeigt.
-ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48e879c1d41b5aa662f5128e234be91eb8225e7b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706139"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014767"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection
 
@@ -34,7 +34,7 @@ In diesem Beispiel sehen Sie sich, dass der Empfänger der e-Mail-Nachricht vier
 
 - Ihre Organisation muss Bedrohungsanalyse für Office 365 und Windows Defender ATP verfügen.
     
-- Wenn Sie ein Office 365 globaler Administrator oder eine Administrator Sicherheitsrolle die [Sicherheit &amp; Compliance Center](https://security.microsoft.com). (Siehe [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- Wenn Sie ein Office 365 globaler Administrator oder eine Administrator Sicherheitsrolle die [Sicherheit &amp; Compliance Center](https://protection.office.com). (Siehe [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))
     
 - Sie benötigen Zugriff auf Office 365 Bedrohungsanalyse und das Windows Defender ATP-Portal.
     
@@ -42,7 +42,7 @@ In diesem Beispiel sehen Sie sich, dass der Empfänger der e-Mail-Nachricht vier
 
 Integrieren von Office 365 Bedrohungsanalyse in Windows Defender ATP ist sowohl in Office 365 und im Windows Defender ATP-Portal eingerichtet.
   
-1. Als ein globaler Office 365 oder ein Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule für Office 365. 
+1. Als ein globaler Office 365 oder ein Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule für Office 365. 
     
 2. Wählen Sie **Threat Management** \> **Bedrohung Explorer**.
     

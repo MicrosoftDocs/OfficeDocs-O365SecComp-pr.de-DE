@@ -1,9 +1,9 @@
 ---
-title: Anhalten oder Wiederherstellen eines Benutzerkontos in Office 365-Cloud-App-Sicherheit
+title: Sperren oder Wiederherstellen eines Benutzerkontos in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Governance Aktionen, die Sie ergreifen können, werden mit Office 365 Cloud App-Sicherheit unterbrechen oder Fortsetzen eines Benutzerkontos. '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529044"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014847"
 ---
-# <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Anhalten oder Wiederherstellen eines Benutzerkontos in Office 365-Cloud-App-Sicherheit
+# <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Sperren oder Wiederherstellen eines Benutzerkontos in Office 365 Cloud App Security
 
 Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherheit.
   
@@ -44,9 +44,7 @@ Wenn Sie ein Benutzerkonto anhalten, verhindern, dass Sie den Benutzer erneut an
     
 2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
     
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm **Benachrichtigungen**.
     
@@ -60,9 +58,9 @@ Finden Sie unter [Wiederherstellen eines Benutzers in Office 365](https://suppor
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Lesen Sie und führen Sie einer Aktion Warnungen in Office 365-Cloud-App-Sicherheit aus](review-office-365-cas-alerts.md)
+- [Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     
-- [Verwalten von app-Berechtigungen, die mit Office 365-Cloud-App-Sicherheit](manage-app-permissions-in-ocas.md)
+- [Verwalten von OAuth-Apps mit Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
 - Überprüfen der [Auslastung Aktivitäten für Office 365-Cloud-App-Sicherheit](utilization-activities-for-ocas.md)
     

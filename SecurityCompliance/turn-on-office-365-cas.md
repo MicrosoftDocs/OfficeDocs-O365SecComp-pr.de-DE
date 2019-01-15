@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lesen Sie diesen Artikel erfahren, wie Office 365 Advanced Security Management, unterstützt von Cloud-App-Sicherheit in Microsoft Azure zu aktivieren.
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706289"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014787"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren von Office 365 Cloud App Security
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706289"
 > [!IMPORTANT]
 > Sie müssen ein globaler Administrator oder Sicherheitsadministrator zum Ausführen der folgenden Aufgabe sein. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In der Reihenfolge für Office 365-Cloud-App-Sicherheit zu beheben, **muss die überwachungsprotokollierung aktiviert werden** , für die Office 365-Umgebung. Weitere Informationen finden Sie unter [Aktivieren von Office 365 Such-Protokoll aktiviert oder deaktiviert](turn-audit-log-search-on-or-off.md). 
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://security.microsoft.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
     
 2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
     

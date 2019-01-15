@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Hier erfahren Sie, wie Sie einen Zeitplan für einen Bericht in das Wertpapier einrichten &amp; Compliance Center.
-ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706019"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014777"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Erstellen Sie einen Zeitplan für einen Bericht in das Wertpapier &amp; Compliance Center
 
@@ -29,7 +29,7 @@ In das Wertpapier &amp; Compliance Center, verschiedene [Berichte und Insights](
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen zum Ausführen dieser Aufgabe verfügen. Im allgemeinen globalen Office 365-Administratoren, Sicherheitsadministratoren und Sicherheit Leser können Zugriff auf Berichte in das Wertpapier &amp; Compliance Center. Weitere Informationen zu Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
-1. In der [Sicherheit &amp; Compliance Center](https://security.microsoft.com), wechseln Sie zu **Berichte** \> **Dashboard**.
+1. In der [Sicherheit &amp; Compliance Center](https://protection.office.com), wechseln Sie zu **Berichte** \> **Dashboard**.
     
 2. Wählen Sie einen Bericht. In diesem Beispiel werden wir den Bedrohung Schutzstatus Bericht auswählen.
     
