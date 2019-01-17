@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7571b98739b8df09854aa6e99356a4960b64342b
+ms.sourcegitcommit: 6ff0233b5a1a07595f8b4d55db6b1327bcaa174c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021654"
+---
 # [Erste Schritte]()
 ## [Inhaltsübersicht für die Sicherheit von Office 365](security-roadmap.md)
 ## [Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit](tenant-wide-setup-for-increased-security.md)
@@ -156,7 +164,7 @@
 ### [Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md)
 ### [Exportieren von Inhaltssuchergebnissen  ](export-search-results.md)
 ### [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
-### [Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messagesadmin-help.md)
+### [Suchen nach und Löschen von E-Mail-Nachrichten](search-for-and-delete-messages-in-your-organization.md)
 ### [Durchsuchen der cloudbasierten Postfächer lokaler Benutzer in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [Massenbearbeitung mehrerer Inhaltssuchen](bulk-edit-content-searches.md)
 ### [Erstellen einer CSV-Datei für eine Inhaltssuche anhand der ID-Liste](csv-file-for-an-id-list-content-search.md)
@@ -255,6 +263,7 @@
 ### [Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md)
 ### [Bereitstellen von SharePoint Online-Websites für drei Schutzebenen](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
+### [Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Schützen von SharePoint Online-Dateien mit Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
 ### [Entwerfen einer isolierten SharePoint Online-Teamwebsite](design-an-isolated-sharepoint-online-team-site.md)
@@ -264,9 +273,9 @@
 ## [SIEM-Serverintegration](siem-server-integration.md)
 
 # Compliance-Lösungen
-## [Erste Schritte mit dem Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
-## [Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Verwalten von Datensubjektanforderungen mit dem DSR-Falltool](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
+## [Compliance-Manager](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [DSGVO: Anfragen von Datensubjekten (DSRs)](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
 ### [Übersicht: Office 365-Schutz für die DSGVO](office-365-info-protection-for-gdpr-overview.md)
 ### [Suchen und Finden personenbezogener Daten](search-for-and-find-personal-data.md)
