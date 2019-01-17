@@ -3,7 +3,7 @@ title: Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über die Eigenschaften für e-Mail- und -Datei, die in Exchange Online-Postfächern und SharePoint oder OneDrive for Business-Websites mit dem Tool für die Inhaltssuche in die Office 365-Sicherheit suchen können &amp; Compliance Center.  '
-ms.openlocfilehash: 49dab5c26516f0549a6f72a24c98618db459dcc6
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962951"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328161"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -84,9 +84,9 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |Dateiname  <br/> |Der Name einer Datei.  <br/> |`filename:"marketing plan"`  <br/> `filename:estimate`  <br/> |Im ersten Beispiel werden Dateien mit den exakten Ausdruck "Marketingplan" im Titel zurückgegeben. Das zweite Beispiel gibt Dateien mit dem Wort "schätzen" im Dateinamen zurück.  <br/> |
 |ZuletztGeändertUm  <br/> |Das Datum, an dem ein Element zuletzt geändert wurde.  <br/> |`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`  <br/> |Im erste Beispiel werden die Elemente, die an oder nach 1 Mai 2016 geändert wurden zurückgegeben. Im zweite Beispiel werden die Elemente, die zwischen 1 Mai 2016 und 1 Juni 2016 geändert zurückgegeben.  <br/> |
 |ModifiedBy  <br/> |Die Person, die ein Element zuletzt geändert wurde. Achten Sie darauf, dass der Benutzer Anzeigenamen für diese Eigenschaft verwenden.  <br/> |`modifiedby:"Garth Fort"`  <br/> |Alle Elemente, die zuletzt von Garth Fort geändert wurden.  <br/> |
-|Path  <br/> |Der Pfad (URL) eines bestimmten Ordners in einem SharePoint oder OneDrive for Business-Site. Wenn Sie diese Eigenschaft verwenden, müssen Sie die Website zu suchen, der in der angegebene Ordner gespeichert ist.<br/> Zum Zurückgeben von Elementen, die in Unterordnern im Ordner, den Sie für die Path-Eigenschaft angeben, müssen Sie hinzufügen /\* an die URL des angegebenen Ordners; beispielsweise `path: https://contoso.sharepoint.com/Shared Documents/*`.  <br/> <br/> **Hinweis:** Mithilfe der `Path` -Eigenschaft auf OneDrive Speicherorte durchsuchen wird nicht Mediendateien wie PNG, TIFF oder WAV-Dateien in den Suchergebnissen zurück. Verwenden Sie eine andere Website-Eigenschaft in Ihrer Suchabfrage um zu suchenden Mediendateien in OneDrive-Ordner.<br/> <br/> Weitere Informationen zum Suchen nach die Path-Eigenschaft und Verwendung eines Skripts zum Pfad URLs für Ordner auf eine bestimmte Website zu erhalten finden Sie unter [Inhaltssuche in Office 365 für zielgerichtete Websitesammlungen verwenden](use-content-search-for-targeted-collections.md).  <br/> |`path:https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |Im erste Beispiel gibt alle Elemente in der angegebenen OneDrive for Business-Ordner zurück. Im zweite Beispiel gibt Dokumente in der angegebenen Website-Ordner (und alle Unterordner), die das Wort "confidential" im Dateinamen enthalten.  <br/> |
+|Path  <br/> |Der Pfad (URL) eines bestimmten Ordners in einem SharePoint oder OneDrive for Business-Site. Wenn Sie diese Eigenschaft verwenden, müssen Sie die Website zu suchen, der in der angegebene Ordner gespeichert ist.<br/> Zum Zurückgeben von Elementen, die in Unterordnern im Ordner, den Sie für die Path-Eigenschaft angeben, müssen Sie hinzufügen /\* an die URL des angegebenen Ordners; Zum Beispiel`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Hinweis:** Mithilfe der `Path` -Eigenschaft auf OneDrive Speicherorte durchsuchen wird nicht Mediendateien wie PNG, TIFF oder WAV-Dateien in den Suchergebnissen zurück. Verwenden Sie eine andere Website-Eigenschaft in Ihrer Suchabfrage um zu suchenden Mediendateien in OneDrive-Ordner.<br/> <br/> Weitere Informationen zum Suchen nach die Path-Eigenschaft und Verwendung eines Skripts zum Pfad URLs für Ordner auf eine bestimmte Website zu erhalten finden Sie unter [Inhaltssuche in Office 365 für zielgerichtete Websitesammlungen verwenden](use-content-search-for-targeted-collections.md).  <br/> |`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |Im erste Beispiel gibt alle Elemente in der angegebenen OneDrive for Business-Ordner zurück. Im zweite Beispiel gibt Dokumente in der angegebenen Website-Ordner (und alle Unterordner), die das Wort "confidential" im Dateinamen enthalten.  <br/> |
 |SharedWithUsersOWSUser  <br/> |Dokumente, die den angegebenen Benutzer freigegeben wurden und auf der Seite **freigegeben für mich** in OneDrive for Business-Standort des Benutzers angezeigt. Dies sind die Dokumente, die explizit mit dem angegebenen Benutzer von anderen Personen in Ihrer Organisation freigegeben wurden. Beim Exportieren von Dokumenten, die eine Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus der ursprünglichen Inhaltsspeicherort der Person, die das Dokument mit dem angegebenen Benutzer freigegeben, exportiert. Weitere Informationen finden Sie unter [Suchen für Websiteinhalte freigegebene innerhalb Ihrer Organisation](keyword-queries-and-search-conditions.md#internal).<br/> |`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`  <br/> |Beispiele für alle internen explizit mit Gert freigegeben wurden haben und Dokumente, die auf der Seite **freigegeben für mich** des Gert angezeigt werden zurückzugeben OneDrive for Business-Konto.  <br/> |
-|Website  <br/> |Die URL einer Website oder einer Gruppe von Websites in Ihrer Organisation.  <br/> |`site:https://contoso-my.sharepoint.com`  <br/> `site:https://contoso.sharepoint.com/sites/teams`  <br/> |Im erste Beispiel gibt Elemente zurück, aus der OneDrive for Business-Websites für alle Benutzer in der Organisation. Im zweite Beispiel gibt Elemente aus allen Teamwebsites zurück.  <br/> |
+|Website  <br/> |Die URL einer Website oder einer Gruppe von Websites in Ihrer Organisation.  <br/> |`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`  <br/> |Im erste Beispiel gibt Elemente zurück, aus der OneDrive for Business-Websites für alle Benutzer in der Organisation. Im zweite Beispiel gibt Elemente aus allen Teamwebsites zurück.  <br/> |
 |Größe  <br/> |Die Größe eines Elements in Byte.  <br/> |`size>=1`  <br/> `size:1..10000`  <br/> |Im ersten Beispiel werden Elemente zurückgegeben, die größer als 1 Byte sind. Im zweiten Beispiel werden Elemente mit einer Größe von 1 bis 10.000 Byte zurückgegeben.  <br/> |
 |Title  <br/> |Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office-Dokumente angegeben ist. Es unterscheidet sich von der Dateiname des Dokuments.  <br/> |`title:"communication plan"`  <br/> |Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title-Metadateneigenschaft eines Office-Dokuments enthält.  <br/> |
    
@@ -95,7 +95,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 Die folgende Tabelle enthält die Kontakten-Eigenschaften, die indiziert sind und, dass Sie bei der Verwendung von Inhaltssuche suchen können. Dies sind die Eigenschaften, die für Benutzer so konfigurieren Sie für die Kontakte (auch als persönliche Kontakte bezeichnet), die in das persönliche Adressbuch des Postfachs eines Benutzers befinden verfügbar sind. Zum Suchen von Kontakten können Sie die Postfächer suchen, und klicken Sie dann in der Stichwortabfrage Verwenden einer oder mehrerer Kontakt Eigenschaften auswählen.
   
 > [!TIP]
-> Um nach Werten zu suchen, die Leerzeichen enthalten, verwenden Sie doppelte Anführungszeichen ("??"), um den Ausdruck enthalten; beispielsweise `businessaddress:"123 Main Street"`. 
+> Um Werte suchen, Leerzeichen und Sonderzeichen enthalten, verwenden Sie doppelte Anführungszeichen ("") auf den Ausdruck; enthalten beispielsweise `businessaddress:"123 Main Street"`. 
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|
 |:-----|:-----|
@@ -135,11 +135,11 @@ Boolesche Suche Operatoren wie **AND**, **OR**und **nicht**, können Sie die meh
 |:-----|:-----|:-----|
 |AND  <br/> |Wort1 AND Wort2  <br/> |Gibt die Elemente, die alle angegebenen Schlüsselwörter enthalten oder `property:value` Ausdrücke. Beispielsweise `from:"Ann Beebe" AND subject:northwind` alle Nachrichten von Ann Beebe, der die Northwind Wort in der Betreffzeile enthalten zurück. <sup>2</sup> <br/> |
 |+  <br/> |Schlüsselwort1 Schlüsselwort2 + Schlüsselwort3  <br/> |Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Beachten Sie, dass die Abfrage  `keyword1 + keyword2` (mit einem Leerzeichen nach dem **+** -Symbol) nicht der Verwendung des ** UND ** -Operators entspricht. Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.  <br/> |
-|OR  <br/> |Wort1 OR Wort2  <br/> |Gibt die Elemente, die eine oder mehrere der angegebenen Schlüsselwörter enthalten oder `property:value` Ausdrücke. <sup>2</sup> <br/> |
+|ODER  <br/> |Wort1 OR Wort2  <br/> |Gibt die Elemente, die eine oder mehrere der angegebenen Schlüsselwörter enthalten oder `property:value` Ausdrücke. <sup>2</sup> <br/> |
 |NOT  <br/> |Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> NICHT Art: Instant Messaging  <br/> |Schließt ein Schlüsselwort angegeben oder eine `property:value` Ausdruck. In der zweiten schließt Beispiel von Ann Beebe gesendete Nachrichten. Im dritte Beispiel schließt alle Sofortnachrichtenunterhaltungen wie Skype für Business Unterhaltungen, die die Postfach-Ordner Unterhaltungsverlauf gespeichert sind. <sup>2</sup> <br/> |
 |-  <br/> |Wort1 - Wort2  <br/> |Identisch mit der **nicht** -Operator. Damit diese Abfrage gibt Elemente zurück, die enthalten `keyword1` und Ausschließen von Elementen, die enthalten würde `keyword2`.<br/> |
 |NEAR  <br/> |Wort1 NEAR(n) Wort2  <br/> |Gibt Elemente mit Wörter, die nahe beieinander, sind zurück, wobei n die Anzahl der Wörter auseinander entspricht. Beispielsweise `best NEAR(5) worst` zurückgegeben, für jedes Element ist das Wort "schlechtesten" innerhalb von fünf Wörtern von "beste". Wenn keine Zahl angegeben wird, ist der Standardabstand acht Wörter. <sup>2</sup> <br/> |
-|ONEAR  <br/> |Wort1 NEAR(n) Wort2  <br/> |Vergleichbar mit der **in der Nähe**, aber Elemente mit Wörter, die nahe beieinander, in der angegebenen Reihenfolge sind zurückgegeben. Beispielsweise `best ONEAR(5) worst` jedes Element, in denen das Wort "am besten" tritt auf, bevor Sie das Wort "schlechtesten" und die beiden Wörter eingeladenen fünf Wörter voneinander, zurückgegeben. Wenn keine Zahl angegeben wird, ist der Standardabstand acht Wörter. <sup>2</sup> <br/> > [!NOTE]> Der **ONEAR** -Operator wird nicht unterstützt, bei der Suche Postfächer; Es funktioniert nur bei der Suche von SharePoint und OneDrive for Business-Websites. Wenn Sie Postfächer und Websites in derselben Suche gesucht und die Abfrage den **ONEAR** -Operator enthält, wird die Suche Postfachelemente zurück, als ob Sie den **NEAR** -Operator verwendet haben. Anders ausgedrückt, gibt die Suche Elemente in denen angegebenen Wörter nahe beieinander sind, in denen die Wörter auftreten, unabhängig von der Reihenfolge zurück.           |
+|ONEAR  <br/> |Wort1 NEAR(n) Wort2  <br/> |Vergleichbar mit der **in der Nähe**, aber Elemente mit Wörter, die nahe beieinander, in der angegebenen Reihenfolge sind zurückgegeben. Beispielsweise `best ONEAR(5) worst` jedes Element, in denen das Wort "am besten" tritt auf, bevor Sie das Wort "schlechtesten" und die beiden Wörter eingeladenen fünf Wörter voneinander, zurückgegeben. Wenn keine Zahl angegeben wird, ist der Standardabstand acht Wörter. <sup>2</sup> <br/> > [!NOTE]> **ONEAR** -Operator wird nicht unterstützt, bei der Suche Postfächer; Es funktioniert nur bei der Suche von SharePoint und OneDrive for Business-Websites. Wenn Sie Postfächer und Websites in derselben Suche gesucht und die Abfrage den **ONEAR** -Operator enthält, wird die Suche Postfachelemente zurück, als ob Sie den **NEAR** -Operator verwendet haben. Anders ausgedrückt, gibt die Suche Elemente in denen angegebenen Wörter nahe beieinander sind, in denen die Wörter auftreten, unabhängig von der Reihenfolge zurück.           |
 |:  <br/> |Eigenschaftswert  <br/> |Der Doppelpunkt (:)) in der `property:value` Syntax gibt an, dass der Wert der Eigenschaft gesucht wird den angegebenen Wert enthält. Beispielsweise `recipients:garthf@contoso.com` gibt alle an garthf@contoso.com gesendeten Nachrichten.<br/> |
 |=  <br/> |Eigenschaft=Wert  <br/> |Identisch mit der **:** -Operator.  <br/> |
 |\<  <br/> |Eigenschaft\<Wert  <br/> |Zeigt an, dass die Eigenschaft, nach der gesucht wird, kleiner ist als der angegebene Wert.<sup>1</sup> <br/> |
@@ -196,7 +196,7 @@ Erstellen Sie eine Bedingung unter Verwendung von E-Mail-Eigenschaften beim Durc
 |Absender  <br/> |Der Absender einer E-Mail-Nachricht.  <br/> |
 |Sent  <br/> |Das Datum, das vom Absender eine e-Mail-Nachricht gesendet wurde. Dies ist die gleiche Eigenschaft als gesendete e-Mail-Eigenschaft.  <br/> |
 |Betreff  <br/> |Der Text in der Betreffzeile einer E-Mail.  <br/> |
-|To  <br/> |Der Empfänger einer e-Mail-Nachricht.  <br/> |
+|An  <br/> |Der Empfänger einer e-Mail-Nachricht.  <br/> |
   
 ### <a name="conditions-for-document-properties"></a>Bedingungen für Dokumenteigenschaften 
 
@@ -322,11 +322,11 @@ Sie können auch das Inhaltssuche-Feature in das Wertpapier &amp; Compliance Cen
     
 - Eine anonyme gastlink, dem jede Person mit diesen Link, um die Ressource zuzugreifen, ohne authentifiziert werden kann.
     
-Es folgen einige Beispiele:
+Hier sind einige Beispiele:
   
 - Die Abfrage `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` werden alle Elemente, die mit Personen außerhalb Ihrer Organisation freigegeben und enthalten eine Kreditkartennummer zurückgegeben. 
     
-- Die Abfrage `ViewableByExternalUsers:true AND ContentType:document AND Site:https://contoso.sharepoint.com/Sites/Teams` gibt eine Liste der Dokumente zurück, auf alle Teamwebsites in der Organisation, die mit externen Benutzern freigegeben wurden. 
+- Die Abfrage `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` gibt eine Liste der Dokumente zurück, auf alle Teamwebsites in der Organisation, die mit externen Benutzern freigegeben wurden. 
     
 > [!TIP]
 > Eine Suchabfrage wie `ViewableByExternalUsers:true AND ContentType:document` möglicherweise viele ASPX-Dateien in den Suchergebnissen zurück. Um diese (oder andere Typen von Dateien), zu beseitigen können die `FileExtension` -Eigenschaft auf Ausschließen bestimmter Dateitypen; beispielsweise `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx`. 
