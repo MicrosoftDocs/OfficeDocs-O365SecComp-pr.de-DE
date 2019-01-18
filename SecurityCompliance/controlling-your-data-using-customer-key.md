@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Erfahren Sie, wie Kundenschlüssel für Office 365 für Exchange Online, Skype für Unternehmen, SharePoint Online und OneDrive für Unternehmen einzurichten. Mit Kundenschlüssel Verschlüsselungsschlüssel Ihrer Organisation steuern und konfigurieren Sie anschließend Office 365, um diese verwenden, um die Daten im Ruhezustand in Microsoft Rechenzentren zu verschlüsseln.
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965609"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723252"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
 
@@ -54,7 +54,7 @@ Führen Sie die meisten dieser Aufgaben von Azure PowerShell eine Remoteverbindu
     
 - [Übermitteln einer Anforderung an Kundenschlüssel für Office 365 aktivieren](controlling-your-data-using-customer-key.md#FastTrack)
     
-    Nachdem Sie die zwei neue Azure Abonnements erstellt haben, müssen Sie senden Sie die entsprechende Kundenschlüssel Angebot Anforderung anhand von einem Webformular, die im Microsoft FastTrack Portal gehostet wird. Das Team der schnelle bieten nicht mit Kundenschlüssel Unterstützung. Office einfach verwendet das schnelle Portal, die Sie zum Senden des Formulars und helfen, die relevante Angebote für Kundenschlüssel verfolgen können.
+    Nachdem Sie die zwei neue Azure Abonnements erstellt haben, müssen Sie senden Sie die entsprechende Kundenschlüssel Angebot Anforderung anhand von einem Webformular, die im Microsoft FastTrack Portal gehostet wird. Die schnelle **Team bieten nicht mit Kundenschlüssel Unterstützung. Office einfach das schnelle Portal verwendet, um Sie zum Senden des Formulars und helfen, die relevante Angebote für Kundenschlüssel nachverfolgen können**.
   
 Nachdem Sie ein Kundenschlüssel Angebot gesendet haben, wird Microsoft prüft Ihre Anforderung und benachrichtigt, wenn Sie mit dem Rest der Setup-Aufgaben fortfahren können. Dieser Vorgang kann bis zu fünf Business Tage dauern.
     

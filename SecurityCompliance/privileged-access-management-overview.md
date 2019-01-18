@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema erfahren Sie mehr über Berechtigungen Zugriff auf Management in Office 365
-ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793550"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723232"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Berechtigungen zugreifen Management in Office 365
 
 > [!IMPORTANT]
 > In diesem Thema werden die Hinweise zur Bereitstellung und Konfiguration für derzeit nur in Office 365 E5 und erweiterte Compliance-SKUs verfügbaren Features behandelt.
 
-Access privilegierten Management ermöglicht die Differenzierte Sicherung Access Steuerung privilegierten Administratoraufgaben in Office 365.  Es kann Schützen Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können. Nach der Aktivierung der Verwaltung von Systemzugriff benötigen Benutzer anfordern Just-in-Time-Zugriff mit erhöhten Rechten und privilegierten über einen Genehmigungsworkflow Aufgaben, die hochgradig bezogenen und Zeit gebunden ist. Dadurch können Benutzer Just-in-ausreichend-zugreifen zum Ausführen der Aufgabe zur hand, ohne zu riskieren Belichtung vertrauliche Daten oder wichtige Konfigurationseinstellungen. Aktivieren der Systemzugriff Management in Office 365 aktivieren Ihrer Organisation mit 0 (null) stehende Berechtigungen Betrieb und stellen eine Ebene Verteidigung gegen Sicherheitslücken haftbar gemacht werden, aufgrund von solchen stehende Verwaltungszugriff bereit. 
+Access privilegierten Management ermöglicht die Differenzierte Sicherung Access Steuerung privilegierten Administratoraufgaben in Office 365. Es kann Schützen Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können. Nach der Aktivierung der Verwaltung von Systemzugriff benötigen Benutzer anfordern Just-in-Time-Zugriff mit erhöhten Rechten und privilegierten über einen Genehmigungsworkflow Aufgaben, die hochgradig bezogenen und Zeit gebunden ist. Dadurch können Benutzer Just-in-ausreichend-zugreifen zum Ausführen der Aufgabe zur hand, ohne zu riskieren Belichtung vertrauliche Daten oder wichtige Konfigurationseinstellungen. Aktivieren der Systemzugriff Management in Office 365 aktivieren Ihrer Organisation mit 0 (null) stehende Berechtigungen Betrieb und stellen eine Ebene Verteidigung gegen Sicherheitslücken haftbar gemacht werden, aufgrund von solchen stehende Verwaltungszugriff bereit. 
 
 ## <a name="layers-of-protection"></a>Schutzebenen
 
@@ -57,7 +57,7 @@ Verwenden Sie die Office 365 Admin Center oder Exchange Management PowerShell, k
 
 ### <a name="step-3-access-approval"></a>Schritt 3: Zugriffsgenehmigung
 
-Eine Aufforderung zur Genehmigung wird generiert und die Genehmigungsgruppe per e-Mail der ausstehende Anforderung benachrichtigt wird. Wenn Genehmigung erteilt wurde, wird die Anforderung Systemzugriff als eine Genehmigung verarbeitet, und der Vorgang ist fertig gestellt werden. Wenn die Anforderung verweigert wird, Aufgabe blockieren und keinen Zugriff auf die Reqeustor erteilt wird. Der Requestor wird die Anforderung zur Genehmigung oder Ablehnung per e-Mail-Nachricht benachrichtigt werden.
+Eine Aufforderung zur Genehmigung wird generiert und die Genehmigungsgruppe per e-Mail der ausstehende Anforderung benachrichtigt wird. Wenn Genehmigung erteilt wurde, wird die Anforderung Systemzugriff als eine Genehmigung verarbeitet, und der Vorgang ist fertig gestellt werden. Wenn die Anforderung verweigert wird, Aufgabe wird blockiert, und keinen Zugriff auf die Reqeustor erteilt wird. Der Requestor wird die Anforderung zur Genehmigung oder Ablehnung per e-Mail-Nachricht benachrichtigt werden.
 
 ![Schritt 3: zugriffsgenehmigung](media/pam-step3-access-approval.jpg)
 
@@ -73,7 +73,7 @@ Die Aufgabe ist durch die Exchange-Verwaltung Runspace für genehmigte Anforderu
 Access privilegierten Management ist derzeit nur für Kunden mit Office 365 E5 und erweiterte Compliance-SKUs verfügbar.
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>Wann wird Systemzugriff für Office 365-Arbeitslasten außerhalb Exchange verfügbar sein?
-Wir möchten dieses Feature in anderen Office 365-Arbeitslasten bald anbieten. Wenn wir zur Freigabe einer Zeitskala bereit sind, wird sie der Übersicht über die Office 365 verfügbar sein.
+Wir möchten dieses Feature in anderen Office 365-Arbeitslasten bald anbieten. Wenn wir zur Freigabe einer Zeitskala bereit sind, wird es über die [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap)verfügbar sein.
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>Meine Organisation benötigt mehr als 30 Systemzugriff Richtlinien, wird dieser Grenze werden erhöht?
 
@@ -83,4 +83,4 @@ Wir planen der aktuellen maximal 30 Systemzugriff Richtlinien pro bald Office 36
 Nein, müssen Sie die Exchange Role Management-Rolle, die die Systemzugriff in Office 365 verwaltet Konten zugewiesen haben. Allerdings die globalen Administratorrolle enthält diese Rolle standardmäßig und kann verwendet werden, um Systemzugriff zu verwalten, wenn Sie nicht, um der Rolle Verwaltungsrolle als einen eigenständigen Dienstkonto die Berechtigung zu konfigurieren möchten. Benutzer, die in einer genehmigenden Personen Gruppe enthaltenen müssen ein globaler Administrator sein oder die Rolle Verwaltungsrolle überprüfen und Genehmigen von Anfragen zugewiesen haben. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Wie wird Systemzugriff Management in Office 365 im Zusammenhang mit Kunden Lockbox?
-[Kunden-Lockbox](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) ermöglicht ein Maß an Steuerung des Zugriffs für Organisationen, die für den Zugriff auf Daten von ihrem Dienstanbieter, d. h. Microsoft. Access privilegierten Management in Office 365 differenzierte Zugriffssteuerung innerhalb einer Organisation für alle Office 365 privilegierten Vorgänge ermöglicht.
+[Kunden-Lockbox](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) ermöglicht ein Maß an Steuerung des Zugriffs für Organisationen, die für den Zugriff auf Daten von ihrem Dienstanbieter, d. h. Microsoft. Access privilegierten Management in Office 365 differenzierte Zugriffssteuerung innerhalb einer Organisation für alle Office 365 privilegierten Vorgänge ermöglicht.

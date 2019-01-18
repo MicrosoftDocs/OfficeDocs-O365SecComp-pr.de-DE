@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Mithilfe von Nachrichtenflussregeln (auch bekannt als Transportregeln) können Sie Nachrichten, die über Ihre Office 365-Organisation fließen, identifizieren und Maßnahmen dafür ergreifen.
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026612"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723242"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
@@ -32,7 +32,7 @@ Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von
   
 - [Überprüfen von Nachrichtenanlagen mithilfe von Nachrichtenflussregeln in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Einrichten von Verschlüsselung in Office 365 Enterprise.](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [Einrichten der Verschlüsselung in Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
@@ -54,7 +54,7 @@ Eine Nachrichtenflussregel besteht aus Bedingungen, Ausnahmen, Aktionen und Eige
   
 - Anhand von **Bedingungen** werden die Nachrichten ermittelt, auf die Sie die Regel anwenden möchten. Mit einigen Bedingungen werden Nachrichtenkopfzeilenfelder geprüft (z. B. die Felder "An", "Von" oder "Cc"). Andere Bedingungen dienen zum Untersuchen von Nachrichteneigenschaften (z. B. Betreff, Text, Anlagen, Größe oder Klassifizierung der Nachricht). Bei den meisten Bedingungen müssen Sie einen Vergleichsoperator (z. B. Gleich, Ungleich oder Enthält) sowie einen abzugleichenden Wert angeben. Wenn keine Bedingungen oder Ausnahmen angegeben werden, wird die Regel auf alle Nachrichten angewendet. 
     
-    Weitere Informationen zum e-Mail-Fluss regelbedingungen in Exchange Online Protection, finden Sie unter [Mail Flow regelbedingungen und Ausnahmen (Prädikate) in Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+    Weitere Informationen zum e-Mail-Fluss regelbedingungen in Exchange Online Protection, finden Sie unter [E-Mail-Fluss von regelbedingungen und Ausnahmen (Prädikate) in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Ausnahmen** kennzeichnen optional die Nachrichten, auf die die Aktionen nicht angewendet werden sollen. In Ausnahmen sind die gleichen Nachrichten-IDs verfügbar wie in Bedingungen. Mit Ausnahmen werden Bedingungen außer Kraft gesetzt, und es wird verhindert, dass die Regelaktionen auf eine Nachricht angewendet werden, und zwar auch dann, wenn die Nachricht allen konfigurierten Bedingungen entspricht. 
     
