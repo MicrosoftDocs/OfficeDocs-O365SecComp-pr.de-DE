@@ -3,7 +3,7 @@ title: Erste Schritte mit Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/7/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Informationen Sie zu Office 365 Bedrohungsanalyse und Entwicklersicht.
-ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426040"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Erste Schritte mit Office 365 Threat Intelligence
 
@@ -46,7 +46,7 @@ Anzeigen und verwenden das Dashboard in das Wertpapier &amp; Compliance Center, 
   
 ### <a name="threat-explorer"></a>Threat Explorer
 
-Verwenden Sie den Bedrohung Explorer zum Analysieren der Bedrohungen, finden Sie unter der Lautstärke des Angriffe über einen Zeitraum und Analysieren von Daten durch Bedrohungsfamilien und Angreifer Infrastruktur. Klicken Sie im Explorer Bedrohung ist der Ausgangspunkt für alle Security-Analyst Untersuchung Workflow.
+Verwenden Sie die Bedrohung Explorer (Dies wird auch Explorer bezeichnet) Bedrohungen analysieren, finden Sie unter der Lautstärke des Angriffe über einen Zeitraum und Analysieren von Daten nach Bedrohungsfamilien und Angreifer Infrastruktur. Threat Explorer ist der Ausgangspunkt für alle Security-Analyst Untersuchung Workflow.
   
 ![Threat explorer](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -54,7 +54,7 @@ Anzeigen und verwenden diesen Bericht in das Wertpapier &amp; Compliance Center,
   
  ### <a name="incidents"></a>Vorfälle
 
-Verwenden Sie die Liste Vorfälle, um eine Liste der im Flug Sicherheitsvorfälle finden Sie unter. Vorfälle dienen zum Nachverfolgen von Bedrohungen wie verdächtigen e-Mails und weiteren Untersuchung und-Wartung durchführen.
+Verwenden Sie die Vorfälle-Liste (Dies wird auch Untersuchungen bezeichnet), um eine Liste der im Flug Sicherheitsvorfälle finden Sie unter. Vorfälle dienen zum Nachverfolgen von Bedrohungen wie verdächtigen e-Mails und weiteren Untersuchung und-Wartung durchführen.
   
 ![Liste der aktuellen Vorfälle in Office 365 Bedrohungsanalyse](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
@@ -70,19 +70,21 @@ Als Bestandteil der Office 365-Bedrohungsanalyse Angebot können Sicherheitsspez
   
 ## <a name="how-do-we-get-office-365-threat-intelligence"></a>Wie können erhalten wir Office 365 Bedrohungsanalyse?
 
-Office 365 Bedrohungsanalyse ist in Office 365 Enterprise E5 enthalten. Verwendet Ihre Organisation eine andere Office 365 Enterprise-Abonnement, wie etwa Office 365 Enterprise E3 kann Office 365 Bedrohungsanalyse als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen zu Planoptionen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+Office 365 Bedrohungsanalyse ist in Office 365 Enterprise E5 enthalten. 
+
+> [!TIP]
+> Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 Bedrohungsanalyse enthalten ist umfasst, können Sie potenziell Bedrohungsanalyse als Add-on erwerben. Weitere Informationen zu Planoptionen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. Als ein globaler Office 365-Administrator, wechseln Sie zur [https://portal.office.com](https://portal.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. 
     
 2. Wählen Sie **Admin** \> **Abrechnung** sehen, was Ihr aktuelle Abonnement enthält. 
+
+    - Wenn Sie **Office 365 Enterprise E5**angezeigt wird, hat Ihre Organisation Bedrohungsanalyse für Office 365. 
+    - Wenn Sie ein anderes Abonnement, wie **Office 365 Enterprise E3** oder **Office 365 Enterprise E1**, finden Sie unter berücksichtigen Sie Bedrohungsanalyse hinzufügen. (Klicken Sie dazu wählen Sie **+ Abonnement hinzufügen**aus.)
     
-3. Wenn Sie **Office 365 Enterprise E5**angezeigt wird, hat Ihre Organisation Bedrohungsanalyse für Office 365.
+3. Wählen Sie im Office 365 Administrationscenter **Benutzer** \> **aktive Benutzer**.
     
-    Wenn Sie ein anderes Abonnement, wie **Office 365 Enterprise E3** oder **Office 365 Enterprise E1**, finden Sie unter können Sie Office 365 Bedrohungsanalyse hinzufügen. Wählen Sie hierzu **+ Abonnement hinzufügen**.
-    
-4. Wählen Sie im Office 365 Administrationscenter **Benutzer** \> **aktive Benutzer**.
-    
-5. Office 365 Bedrohungsanalyse Lizenzen Benutzern zuweisen. Weitere Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen für Benutzer in Office 365 für Unternehmen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+5. Alle aktiven Benutzer Office 365 Bedrohungsanalyse Lizenzen zuweisen. (Nur Benutzer mit einer Lizenz für Bedrohungsanalyse werden in Berichte wie etwa Explorer angezeigt wird.)
     
 6. Zuweisen von Rollen an Personen in Ihrer Organisation, die mit der Office 365-Bedrohungsanalyse arbeitet. Finden Sie unter [Gewähren des Zugriffs auf die Office 365-Sicherheit &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md), und in der folgenden Tabelle finden Sie unter:
     
@@ -90,9 +92,9 @@ Office 365 Bedrohungsanalyse ist in Office 365 Enterprise E5 enthalten. Verwende
 |:-----|:-----|
 |**Diese Aktivität ausführen...** <br/> |**Sie müssen eine der folgenden Rollen verfügen** <br/> |
 |Verwenden Sie das Dashboard Bedrohung (oder das neue [Dashboard Sicherheit](security-dashboard.md))  <br/> Anzeigen von Informationen über kürzlich geführten oder aktuellen Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Verwenden Sie die Bedrohung Explorer (auch als Explorer bezeichnet)  <br/> Analysieren der Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Vorfälle anzeigen  <br/> E-Mail-Nachrichten auf einen Vorfall hinzufügen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Trigger-e-Mail-Aktionen in einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mails  <br/> |Office 365 globaler Administrator oder Sicherheitsadministrator  <br/> Suchen und löschen (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
+|Verwenden Sie Threat Explorer (auch als Explorer bezeichnet)  <br/> Analysieren der Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
+|Vorfälle anzeigen (auch als Untersuchungen bezeichnet) <br/> E-Mail-Nachrichten auf einen Vorfall hinzufügen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
+|Trigger-e-Mail-Aktionen in einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mails  <br/> |Office 365 globaler Administrator oder Sicherheitsadministrator  <br/> Eine der oben genannten Funktionen und suchen und löschen (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
 |Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection  <br/> Integrieren von Office 365 Bedrohungsanalyse mit einem SIEM-server  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Entsprechende Rolle zugewiesen in zusätzliche Applications (wie Windows Defender erweiterte Threat Protection-Portal oder einem Server SIEM)  <br/> |
    
 Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
