@@ -1,15 +1,8 @@
----
-ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328131"
----
 # [Erste Schritte]()
 ## [Inhaltsübersicht für die Sicherheit von Office 365](security-roadmap.md)
 ## [Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit](tenant-wide-setup-for-increased-security.md)
-## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
+## [Wechseln zum Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md)
+## [Vorbereiten auf das neue Microsoft 365 Security Center and das Microsoft 365 Compliance Center](microsoft-security-and-compliance.md)
 ## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ## [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
