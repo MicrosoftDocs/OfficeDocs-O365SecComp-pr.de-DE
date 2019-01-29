@@ -3,7 +3,7 @@ title: Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit verwenden integrierte Algorithmen, um potenzielle Probleme aufdecken. Sie sollten mindestens eine Anomalie Erkennung Richtlinie verfügen, die Sie optimiert werden können (bei der Erstellung) mithilfe von Filtern. '
-ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
+ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015076"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604416"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 
@@ -28,13 +28,13 @@ Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherhei
 |:-----|:-----|:-----|:-----|
 |[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
    
-Ab [Microsoft Cloud App-Sicherheit Version 116](https://docs.microsoft.com/cloud-app-security/release-notes), enthält Office 365-Cloud-App-Sicherheit mehrere vordefinierte Anomalie Erkennungsrichtlinien ("sofort einsetzbar"), die Benutzer und Entität Verhalten Analytics (UEBA) und Computer lernen (ML) enthalten.
+Ab [Microsoft Cloud App-Sicherheit Version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), enthält Office 365-Cloud-App-Sicherheit mehrere vordefinierte Anomalie Erkennungsrichtlinien ("sofort einsetzbar"), die Benutzer und Entität Verhalten Analytics (UEBA) und Computer lernen (ML) enthalten.
   
 ![Wählen Sie zum Anzeigen Ihrer Anomalie Erkennungsrichtlinien Steuerelement \> Richtlinien.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
 Diese Anomalie Erkennungsrichtlinien bieten sofortige Ergebnisse durch Bereitstellen sofortigen erkannte, Zielgruppenadressierung zahlreiche Verhalten Abweichung über Ihre Benutzer und Computer und Geräte mit dem Netzwerk verbunden. Darüber hinaus stellen die neuen Richtlinien weitere Daten aus der Cloud App Erkennung Engine zur Untersuchung beschleunigen und die laufende Bedrohungen enthalten.
   
-Als [globaler Administrator oder Sicherheitsadministrator](permissions-in-the-security-and-compliance-center.md)können Sie überprüfen, und Sie bei Bedarf überarbeiten die Standardrichtlinien, die mit Office 365-Cloud-App-Sicherheit verfügbar sind.
+Als globaler Office 365-Administrator oder Sicherheitsadministrator können Sie überprüfen, und Sie bei Bedarf überarbeiten die Standardrichtlinien, die mit Office 365-Cloud-App-Sicherheit verfügbar sind.
   
  > [!IMPORTANT]
 > Es gibt ein Zeitraum anfänglichen Learning sieben (7) Tage in denen abweichendem Verhalten Benachrichtigungen nicht ausgelöst werden. Der Algorithmus Anomalie Erkennung wird zur Verringerung der Anzahl von falsch positiven Warnungen optimiert. 
@@ -51,23 +51,13 @@ Stellen Sie Folgendes sicher:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Zeigen Sie Ihre Anomalie Erkennungsrichtlinien
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zum Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.<br>Dadurch gelangen Sie zur Seite Office 365 Cloud App-Sicherheitsrichtlinien.
     
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
-    
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-    Dadurch gelangen Sie zur Seite Office 365 Cloud App-Sicherheitsrichtlinien.
-    
-4. Wählen Sie in der Liste **Typ** **Anomalie Erkennung Richtlinie**aus.
-    
-    Ihre Organisation Standard (oder einer vorhandenen) Anomalie Erkennungsrichtlinien werden angezeigt.
-    
-    ![Mehrere Anomalie Erkennungsrichtlinien sind standardmäßig verfügbar in Office 365-Cloud-App-Sicherheit](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
+2. Wählen Sie in der Liste **Typ** **Anomalie Erkennung Richtlinie**aus.<br>Ihre Organisation Standard (oder einer vorhandenen) Anomalie Erkennungsrichtlinien werden angezeigt.<br>![Anomalieerkennungsrichtlinien in Office 365 Cloud App Security](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
   
-5. Wählen Sie eine Richtlinie zum Lesen oder Bearbeiten der Einstellungen aus.
+3. Wählen Sie eine Richtlinie zum Lesen oder Bearbeiten der Einstellungen aus.
     
-6. Wählen Sie **Update** aus, um die Änderungen zu speichern. 
+4. Wählen Sie **Update** aus, um die Änderungen zu speichern. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Erfahren Sie mehr über Anomalie Erkennungsrichtlinien
 
@@ -92,27 +82,19 @@ In der folgenden Tabelle werden die Standardrichtlinien für Anomalie Erkennung,
 
 Wie Benachrichtigungen empfangen werden, können Sie diese Warnungen schnell selektieren und bestimmen, welche zuerst behandeln. Mit Kontext für eine Benachrichtigung können Sie finden im Bild, und bestimmen, ob etwas böswilligen tatsächlich geschieht. Verwenden Sie das folgende Verfahren für den Einstieg erkunden eine Warnung:
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zum Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung. 
     
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
+2. Wählen Sie **Benachrichtigungen** , um Warnungen anzuzeigen. 
     
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
+3. Wenn Kontext für eine Benachrichtigung erhalten möchten, gehen Sie folgendermaßen vor:
     
-4. Wählen Sie **Benachrichtigungen** , um Warnungen anzuzeigen. 
+4. Wählen Sie **untersuchen** \> **Aktivitätsprotokolls**.
     
-5. Wenn Kontext für eine Benachrichtigung erhalten möchten, gehen Sie folgendermaßen vor:
-    
-1. Wählen Sie **untersuchen** \> **Aktivitätsprotokolls**.
-    
-2. Wählen Sie ein Element, wie Sie einen Benutzer oder eine IP-Adresse. Die relevanten Insights Papiereinzug wird geöffnet.
-    
-    ![Überprüfen Sie im Protokoll Aktivität eine IP-Adresse.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
+5. Wählen Sie ein Element, wie Sie einen Benutzer oder eine IP-Adresse. Die relevanten Insights Papiereinzug wird geöffnet.<br>![Überprüfen Sie im Protokoll Aktivität eine IP-Adresse.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
   
-3. Klicken Sie auf einen verfügbaren Befehl, wie ein Symbol im Abschnitt **Ähnliche Elemente anzeigen** , in der entsprechenden Insights Papiereinzug. 
-    
-    ![In der entsprechenden Insights Papiereinzug können Sie das Uhrsymbol, um Aktivitäten, die innerhalb einer ausgewählten Aktivität 48 Stunden ausgeführt finden Sie unter klicken.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+6. Klicken Sie auf einen verfügbaren Befehl, wie ein Symbol im Abschnitt **Ähnliche Elemente anzeigen** , in der entsprechenden Insights Papiereinzug.<br> ![Klicken Sie auf das Uhrsymbol um Aktivitäten, die innerhalb einer ausgewählten Aktivität 48 Stunden ausgeführt finden Sie unter](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-4. Erhalten Sie Einblick in die das ausgewählte Element, indem Sie zum Untersuchen der Details für dieses Element übergehen können.
+7. Erhalten Sie Einblick in die das ausgewählte Element, indem Sie zum Untersuchen der Details für dieses Element übergehen können.
     
 Eine Benachrichtigung auf mehreren fehlgeschlagenen Anmeldungen möglicherweise tatsächlich verdächtigen und einen potenziellen Brute-Force-Angriff kann anzugeben. Eine solche Warnung kann jedoch auch eine Anwendung Konfigurationsfehlers, verursacht die Benachrichtigung duldet falsch positiv sein. Wenn Sie eine Benachrichtigung mehrere Fehler Anmeldungen mit zusätzlichen verdächtigen Aktivitäten angezeigt wird, ist eine höhere Wahrscheinlichkeit, dass ein Konto gefährdet ist. Angenommen Sie, dass eine Warnung mehrere Fehler bei Anmeldung Aktivität aus einer TOR IP-Adresse und unmöglich Geschäftsreisen Aktivität, beide starken Indikatoren für Kompromiss folgen. Sie möglicherweise auch sehen, dass derselbe Benutzer eine Aktivität Masse Download durchgeführt, die häufig ein Indikator der Angreifer Exfiltration der Daten ausgeführt wird. Es handelt sich um Dinge wie, die Sie untersuchen können in Office 365-Cloud-App-Sicherheit zum Anzeigen und Selektieren von Warnungen und Ausführen einer Aktion bei Bedarf.
   
