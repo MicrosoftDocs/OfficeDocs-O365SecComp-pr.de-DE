@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt.
-ms.openlocfilehash: 39cac8e1406bd4f7505ae4bc626b8c7e78f88101
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255890"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614459"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 
@@ -54,7 +54,7 @@ Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-
 |SFV:NSPM|Die Nachricht wurde als "Nicht-Spam" markiert und an die vorgesehenen Empfänger gesendet.|
 |H: [helostring]|Die Zeichenfolge HELO oder EHLO des verbundenen E-Mail-Servers.|
 |PTR: [ReverseDNS]|Der PTR-Eintrag (bzw. der Zeigereintrag) der Absender-IP-Adresse, auch als Reverse-DNS-Adresse bezeichnet.|
-|SFTY|Die Nachricht wurde als Phishing identifiziert und auch mit einem der folgenden Werte markiert werden: <br/>• 9.1: Standardwert. Die Nachricht enthält eine URL Phishing, möglicherweise andere Phishing Inhalte enthalten oder kann als gekennzeichnet wurden Phishing durch einen anderen e-Mail-Filter wie eine lokale Version von Exchange Server vor der Weiterleitung der Nachricht zu Office 365. <br/>• 9.11: Anti-spoofing überprüft die Nachricht nicht, in dem die sendende Domäne in der From: Kopfzeile ist identisch, ausgerichtet oder Teil derselben Organisation wie die empfangende Domäne ist. <br/>• 9.21: Nachricht nicht erfolgreich Anti-spoofing Prüfungen und die sendende Domäne in der From: Kopfzeile keine Authentifizierung. In Kombination mit CompAuth verwendet (Siehe das Ergebnis-Authentifizierung). <br/>• 9.22: identisch mit 9.21, mit der Ausnahme, dass der Benutzer einen sicheren Absender verfügt, die überschrieben wurde. <br/>• 9.23: identisch mit 9.22, außer dass die Organisation hat eine zulässige Absender oder die Domäne, die überschrieben wurde. <br/>• 9,24: identisch mit 9.23, mit der Ausnahme, dass der Benutzer eine Exchange Mail Flow Regel verfügt, die überschrieben wurde.|
+|SFTY|Die Nachricht wurde als Phishing identifiziert und auch mit einem der folgenden Werte markiert werden: <br/>• 9.1: Standardwert. Die Nachricht enthält eine URL Phishing, möglicherweise andere Phishing Inhalte enthalten oder kann als gekennzeichnet wurden Phishing durch einen anderen e-Mail-Filter wie eine lokale Version von Exchange Server vor der Weiterleitung der Nachricht zu Office 365. <br/>• 9.11: Anti-spoofing überprüft die Nachricht nicht, in dem die sendende Domäne in der From: Kopfzeile ist identisch, ausgerichtet oder Teil derselben Organisation wie die empfangende Domäne ist. Dies gibt an, dass die Nachricht eine unternehmensinterne spoofing Safety Info hinzugefügt werden soll. <br/>• 9.19: Nachricht nicht erfolgreich Domäne Identitätswechsel Überprüfungen, in dem die sendende Domäne versucht, Identitätswechsel für eine Domäne, die im Besitz des Empfängers oder einer benutzerdefinierten Domäne, die durch die Richtlinie Anti-Phishing geschützt. Dies gibt an, dass ein Identitätswechsel Safety Tipp der Nachricht hinzugefügt werden soll, wenn über die Gruppenrichtlinie Anti-Phishig aktiviert. <br/>• 9,20: Benutzer Identitätswechsel Überprüfungen, an dem der sendende Benutzer versucht, einen Benutzer innerhalb der Organisation Ereignisempfänger imitieren oder einen benutzerdefinierten geschützte durch die Anti-Phishing-Richtlinie, die Nachricht nicht. Dies gibt an, dass ein Identitätswechsel Safety Tipp der Nachricht hinzugefügt werden soll, wenn über die Gruppenrichtlinie Anti-Phishig aktiviert. <br/>• 9.21: Nachricht nicht erfolgreich Anti-spoofing Prüfungen und die sendende Domäne in der From: Kopfzeile keine Authentifizierung und von einer externen Domäne ist. In Kombination mit CompAuth verwendet (Siehe das Ergebnis-Authentifizierung). <br/>• 9.22: identisch mit 9.21, mit der Ausnahme, dass der Benutzer einen sicheren Absender verfügt, die überschrieben wurde. <br/>• 9.23: identisch mit 9.22, außer dass die Organisation hat eine zulässige Absender oder die Domäne, die überschrieben wurde. <br/>• 9,24: identisch mit 9.23, mit der Ausnahme, dass der Benutzer eine Exchange Mail Flow Regel verfügt, die überschrieben wurde.|
 |X-CustomSpam: [ASFOption]|Die Nachricht entsprach einer erweiterten spamfilterungsoptionen. Beispielsweise **X-CustomSpam: Links zu Remotestandorten Image** gibt an, dass die Option **Bildlinks zu Remotestandorten** ASF Übereinstimmung gefunden wurde. Um herauszufinden, welche X-Headertext für jede bestimmte ASF Option hinzugefügt wird, finden Sie unter [Erweiterte Spamfilterung Optionen](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Microsoft-Antispam

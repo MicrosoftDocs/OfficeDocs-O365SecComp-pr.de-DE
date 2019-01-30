@@ -3,7 +3,7 @@ title: Neue Office 365 Message Encryption Richtlinie für vertrauliche Informati
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Automatisch angewendet, Richtlinie für Typen vertraulicher Informationen für alle Mandanten Einführung Office 365 Message Encryption.'
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789453"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614379"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Office 365 Message Encryption Richtlinie für vertrauliche Informationen
 
-Es wird eine neue Richtlinie für die automatische in Office 365-Mandanten erstellen, die gelten Office 365 Message Encryption auf alle e-Mails, die vertraulichen Informationen enthalten und, sind außerhalb Ihrer Organisation gesendet werden. Dieser neuen Exchange Mail Flow Regel wird automatisch in Ihrem Office 365-Mandanten erstellt werden, damit Ihre Organisation standardmäßig geschützt werden.
+Für eine ausgewählte Gruppe von Mandanten, basierend auf ihrer Organisation Größe und Komplexität der e-Mail-Fluss sind eine langsame Einführung einer neuen automatische Richtlinie in Office 365-Mandanten wir, für die Office 365 Message Encryption-e-Mails gilt, die bestimmte Arten von Sensitive enthalten Informationen. Wir sind dies mit eine kleine Gruppe von Mandanten testen. Diese Richtlinie wird nicht werden eingeführt für alle Organisationen und Aspekte wie die Größe der Organisation und Komplexität der e-Mail-Fluss wird verwendet, um die Berechtigung für diese Einführung zu bestimmen. Wenn Ihre Organisation für diese Einführung ausgewählt ist, erhalten Sie eine Benachrichtigung in Office 365 Message Center aufgefordert werden, das Datum, auf dem diese Richtlinie automatisch erstellt werden, und erhalten Sie mindestens eine 30-Tage-Benachrichtigung und die Option zum Abmelden. Wenn Sie nicht warten für Microsoft diese Richtlinie erstellen möchten und dazu selbst können Sie diese mithilfe von Regeln Exchange Mail Flow automatische Richtlinie erstellen.
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>Das Update für Ihre Mandanten voraussichtliche Verfügbarkeit
 
@@ -52,7 +52,7 @@ Sie haben keine vorhandenen Office 365-Konfigurationseinstellungen vor dieser ne
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>Wie wird diese Änderung im Überwachungsprotokoll werden dargestellt?
 
-Diese Aktivität wird überwacht und ist für Kunden verfügbar.  Der Vorgang ist 'New-TransportRule', und einem Codeausschnitt ein Überwachungseintrag Beispiel aus der Audit Log-Suche in Sicherheit und Compliance Center unter wird:
+Diese Aktivität wird überwacht und ist für Kunden verfügbar.  Der Vorgang ist 'New-TransportRule', und einem Codeausschnitt ein Überwachungseintrag Beispiel aus der Audit Log-Suche in Security & Compliance Center unter wird:
 
 |     |
 | --- |

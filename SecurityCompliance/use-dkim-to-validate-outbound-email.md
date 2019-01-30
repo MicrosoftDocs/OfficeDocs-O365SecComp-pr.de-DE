@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
-ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
+ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27263914"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614449"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -88,7 +88,10 @@ Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, 
 Verwenden Sie das folgende Format für CNAME-Einträge.
 
 > [!IMPORTANT]
-> Wenn Sie einen unserer Kunden GCC sind, funktioniert die DomainGUID-Methode nicht für Sie! Achten Sie darauf, dass den richtigen MX-Wert für Ihre Domäne verwenden. Verwendung: `selector2-<domain-key>._domainkey.<initialDomain>` für die unten stehenden Beispiele. Verwenden Sie [diesen Artikel](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide) , suchen Sie den MX-Eintrag für Ihre *Domäne-Schlüssel* -Wert erforderlich ist.
+> Wenn Sie eine hohe GCC Kunden sind, berechnen wir unterschiedlich _DomainGuid_ ! Anstelle von Nachschlagen des MX-Eintrags für Ihre _InitialDomain_ _DomainGuid_berechnet, berechnen stattdessen wir es direkt aus der benutzerdefinierten Domäne. Beispielsweise wenn Ihre benutzerdefinierte Domäne "contoso.com" ist Ihre DomainGuid wird "Contoso-com", alle Zeiträume werden mit einem Gedankenstrich ersetzt.
+
+Ja, unabhängig davon welche MX-Eintrag Ihrer InitialDomain verweist, immer die oben genannten-Methode verwenden Sie zum Berechnen der DomainGuid in die CNAME-Einträge verwenden.
+
   
 ```
 Host name:          selector1._domainkey
