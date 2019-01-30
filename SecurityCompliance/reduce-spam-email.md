@@ -14,30 +14,34 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: 59778f992ebc232ae31ebc9aaae4ca5333080698
-ms.sourcegitcommit: 7023fd3c4d6088f82a5cd2fda241897a3a1c7f5c
+ms.openlocfilehash: 6dbcfa27c5ecbec6b6d1ab0bec298f45e867c4b3
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29453691"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614409"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
  **Erhalten Sie zu viel Spam in Office 365? Hier ist die Lösung.**
   
-Viele Probleme mit Spam in Office 365 können gelöst werden, indem [Sie die E-Mail-Kopfzeilen anzeigen](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) und bestimmen, was falsch gelaufen ist. Wenn Sie eine Nachrichtenkopfzeile mit dem Namen „X-Forefront-Antispam-Report“ sehen, die die Zeichenfolge „SFV:NSPM“ enthält, bedeutet dies, dass Exchange Online Protection (EOP) die Nachricht überprüft und sie als Spam klassifiziert hat. In diesem Fall empfehlen wir dringend, dass Sie [das Add-In zum Melden von Nachrichten verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), um uns bei der Verbesserung unserer Filter zu unterstützen. Wenn dieser Wert nicht in den Kopfzeilen angezeigt wird, könnte dies bedeuten, dass die E-Mail entweder nicht die Spamüberprüfung durchlaufen hat, oder dass es ein Konfigurationsproblem gab, aufgrund dessen die Nachricht ignoriert wurde. Lesen Sie in diesem Fall die folgenden Informationen. 
+Viele Probleme bezüglich Spam in Office 365 können gelöst werden, indem Sie die [Kopfzeilen von E-Mail-Nachrichten anzeigen](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) und bestimmen, wo der Fehler liegt. Sie müssen nach einer Kopfzeile mit dem Namen X-Forefront-Antispam-Report suchen.
+
+  Wenn diese die Zeichenfolge SFV:NSPM enthält, bedeutet dies, dass Exchange Online Protection (EOP) die Nachricht durchsucht und nicht als Spam bewertet hat. Wenn Sie damit nicht einverstanden sind, wird dies als false negative bezeichnet und es wird dringend empfohlen, dass Sie [das Add-in zum Melden von Nachricht verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), um uns bei der Verbesserung unserer Filter zu helfen.
+
+  Wenn dieser Wert in den Kopfzeilen nicht angezeigt wird, bedeutet dies möglicherweise entweder, dass die E-Mail den Spam-Scan nicht passiert hat oder dass die Nachricht aufgrund eines Konfigurationsproblems ignoriert wurde. Ziehen Sie in diesem Fall die nachfolgenden Informationen zu Rate. 
   
 Weitere Informationen zu [Antispam-Nachrichtenkopfzeilen](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
-  
+
 ## <a name="solutions-to-common-causes-of-getting-too-much-spam"></a>Lösungen für häufige Ursachen von zu viel Spam
 
 Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online Protection (EOP) ein paar Aufgaben ausführen. Wenn Sie nicht der Administrator für Ihren Office 365-Mandanten sind und zu viel Spam erhalten, sollten Sie diese Aufgaben zusammen mit Ihrem Administrator ausführen. Andernfalls können Sie mit dem Abschnitt für Benutzer fortfahren.
   
 ### <a name="for-admins"></a>Für Administratoren
 
-- **Ihre DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bietet, müssen Ihre MX-Einträge (Mail Exchange) ausschließlich auf Office 365 verweisen. Wenn Ihr [MX-Eintrag nicht auf Office 365 zeigt](https://blogs.msdn.microsoft.com/tzink/2017/12/28/if-you-use-office-365-but-your-mx-record-doesnt-point-to-office-you-may-want-to-close-down-your-security-settings/), stellt EOP keinen Spamfilter für Ihre Benutzer bereit. Lesen Sie die Informationen unter [Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
+- **Ihre DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bietet, müssen Ihre MX-Einträge (Mail Exchange) ausschließlich auf Office 365 verweisen. Lesen Sie die Informationen unter [Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen.](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)
     
-- **Die Junk-E-Mail-Regel für alle Postfächer aktivieren** Standardmäßig ist die Aktion des Spamfilters auf **Nachricht in den Junk-E-Mail-Ordner verschieben** festgelegt. Wenn dies die bevorzugte und aktuelle Spamrichtlinienaktion ist, so muss für jedes Postfach [auch die Junk-E-Mail-Regel aktiviert sein](https://blogs.msdn.microsoft.com/tzink/2017/12/14/making-sure-your-junk-email-filtering-is-enabled-in-office-365/). Um dies zu überprüfen, können Sie das Cmdlet „Get-MailboxJunkEmailConfiguration“ für ein oder mehrere Postfächer ausführen. Sie können z. B. alle Postfächer überprüfen, indem Sie Folgendes ausführen: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
+- **Die Junk-E-Mail-Regel für alle Postfächer aktivieren** Standardmäßig ist die Aktion des Spamfilters auf **Nachricht in den Junk-E-Mail-Ordner verschieben** festgelegt. Wenn dies die bevorzugte und aktuelle Spamrichtlinienaktion ist, so muss für jedes Postfach [auch die Junk-E-Mail-Regel aktiviert sein](https://support.office.com/de-DE/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Um dies zu überprüfen, können Sie das Cmdlet „Get-MailboxJunkEmailConfiguration“ für ein oder mehrere Postfächer ausführen. Sie können z. B. alle Postfächer überprüfen, indem Sie Folgendes ausführen: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
     Wenn Sie die Ausgabe anzeigen, sollte die Enable-Eigenschaft auf „True“ festgelegt sein. Wenn sie auf „False“ festgelegt ist, können Sie „Set-MailboxJunkEmailConfiguration“ ausführen, um dies in „True“ zu ändern.
     
@@ -45,7 +49,7 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
     
 - **Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen** Wenn Sie Exchange Online Protection verwenden, Ihre Postfächer sich aber auf dem lokalen Exchange Server befinden, müssen Sie ein paar Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen. Lesen Sie [Anweisungen für EOP](https://technet.microsoft.com/library/ms.exch.eac.EditAntispamPolicy_SpamAction%28EXCHG.150%29.aspx?v=15.20.548.14&amp;l=1&amp;s=BPOS_S_E15_0).
     
-- **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, wie [Massen-E-Mails behandelt werden](https://blogs.msdn.microsoft.com/tzink/2014/08/25/different-levels-of-bulk-mail-filtering-in-office-365/). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
+- **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, [wie Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
     
 - **Einen Absender sofort blockieren** Wenn Sie einen Absender sofort blockieren müssen, können Sie anhand der E-Mail-Adresse, der Domäne oder der IP-Adresse blockieren. Lesen Sie die Informationen unter [Blockieren von Spam-E-Mail mit dem Office 365-Spamfilter, um falsch positive negative Ergebnisse zu verhindern](block-email-spam-to-prevent-false-negatives.md). Ein Eintrag in einer Liste zulässiger Absender eines Benutzers kann eine vom Administrator festgelegte Sperre überschreiben.
     
@@ -57,8 +61,6 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
     
 - **Spam an Microsoft melden** Melden Sie Spamnachrichten an Microsoft, indem Sie das [Add-In zum Melden von Nachrichten verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Darüber hinaus können Sie eine Nachricht an junk@office365.microsoft.com senden und eine oder mehrere Nachrichten anfügen, die Sie melden möchten.
     
-    **Wichtig** Wenn Sie die Nachrichten nicht als Anlagen weiterleiten, so [fehlen uns die Kopfzeilen und wir können den Junk-E-Mail in Office 365 nicht verbessern.](https://blogs.msdn.microsoft.com/tzink/2017/11/30/when-creating-support-tickets-about-spam-be-sure-to-include-message-headers/) 
+    **Wichtig** Wenn Sie die Nachrichten nicht als Anlagen weiterleiten, so fehlen uns die Kopfzeilen und wir können den Junk-E-Mail in Office 365 nicht verbessern. 
     
-- **Abonnement von Massen-E-Mails kündigen** Wenn Sie sich für die Nachricht registriert haben (Newsletter, Produktankündigungen usw.) und diese einen Link zum Kündigen des Abonnements von einer vertrauenswürdigen Quelle enthält, können Sie das Abonnement einfach kündigen. In Office 365 werden diese Nachrichten in der Regel nicht als Spam behandelt. Sie können auch den Absender blockieren oder Ihren Administrator bitten, eine Änderung vorzunehmen, die bewirkt, dass alle Massen-E-Mails als Spam behandelt werden. 
-    
-
+- **Abonnement von Massen-E-Mails kündigen** Wenn Sie sich für die Nachricht registriert haben (Newsletter, Produktankündigungen usw.) und diese einen Link zum Kündigen des Abonnements von einer vertrauenswürdigen Quelle enthält, können Sie das Abonnement einfach kündigen. In Office 365 werden diese Nachrichten in der Regel nicht als Spam behandelt. Sie können auch den Absender blockieren oder Ihren Administrator bitten, eine Änderung vorzunehmen, die bewirkt, dass alle Massen-E-Mails als Spam behandelt werden.
