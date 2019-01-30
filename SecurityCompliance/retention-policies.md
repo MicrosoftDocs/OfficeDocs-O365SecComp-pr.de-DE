@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380615"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607167"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -263,8 +263,32 @@ Einige Organisationen müssen Regeln einhalten, die von Behörden definiert werd
 Nach dem Sperren einer Richtlinie kann sie von niemandem deaktiviert werden. Außerdem können keine Speicherorte aus der Richtlinie entfernt werden. Darüber hinaus ist es nicht möglich, Inhalte zu ändern oder zu löschen, die während des Aufbewahrungszeitraums der Richtlinie unterliegen. Nach dem Sperren der Richtlinie können Sie die Richtlinie nur ändern, indem Sie Inhalte hinzufügen oder die Dauer verlängern. Eine gesperrte Richtlinie kann vergrößert oder verlängert werden kann, kann jedoch nicht verkleinert oder deaktiviert werden.
   
 Aus diesem Grund müssen Sie sich vor der Sperrung einer Aufbewahrungsrichtlinie **unbedingt** einen genauen Überblick über die Compliance-Anforderungen Ihrer Organisation verschaffen. Sie **dürfen eine Richtlinie auf keinen Fall sperren**, bevor Sie sich absolut sicher sind, dass dies notwendig ist.
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>Sperren einer Aufbewahrungsrichtlinie mit PowerShell
   
-Sie können eine Aufbewahrungsrichtlinie nur mithilfe von PowerShell sperren. Nutzen Sie den `RestrictiveRetention` Parameter von der `New-RetentionCompliancePolicy` oder das `Set-RetentionCompliancePolicy` Cmdlet. Weitere Informationen zu PowerShell finden Sie weiter unten im Abschnitt [Die PowerShell-Cmdlets für Aufbewahrungsrichtlinien finden](#find-the-powershell-cmdlets-for-retention-policies).
+Sie können eine Aufbewahrungsrichtlinie nur mithilfe von PowerShell sperren.
+
+Stellen Sie [zunächst eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Führen Sie dann zum Anzeigen einer Liste von Aufbewahrungsrichtlinien und Suchen nach dem Namen der Richtlinie, die Sie sperren möchten, den Befehl `Get-RetentionCompliancePolicy` aus.
+
+![Liste der Aufbewahrungsrichtlinien in PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+Um eine Aufbewahrungssperre zu einer Aufbewahrungsrichtlinie hinzuzufügen, führen Sie den Befehl `Set-RetentionCompliancePolicy` aus, und legen Sie dabei den `RestrictiveRetention`-Parameter auf „true“ fest, zum Beispiel:
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![RestrictiveRetention-Parameter in PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+Nachdem Sie das Cmdlet ausgeführt haben, werden Sie zur Bestätigung aufgefordert. Wählen Sie **Ja für alle** aus.
+
+![Aufforderung zur Bestätigung der Sperre einer Aufbewahrungsrichtlinie in PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+Eine Aufbewahrungssperre wurde nun der Aufbewahrungsrichtlinie hinzugefügt. Wenn Sie `Get-RetentionCompliancePolicy` ausführen, ist der `RestrictiveRetention`-Parameter auf „true“ festgelegt, Beispiel:
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![Gesperrte Richtlinie mit allen Parameter in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Die Grundsätze der Aufbewahrung, oder was hat Vorrang?
 
