@@ -3,7 +3,7 @@ title: Suche und Kategorien
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 6/13/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,55 +12,68 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In erweiterte eDiscovery ermöglicht das Modul Such- und Kategorien suchen, Vorschau anzeigen und organisieren die Dokumente in Ihrem Fall. In diesem Modul wird derzeit Beta.
-ms.openlocfilehash: fde887e496e9a40aa88d841053a0c66e48f04200
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529531"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666145"
 ---
 # <a name="search-and-tagging"></a>Suche und Kategorien
 
-In erweiterte eDiscovery ermöglicht das Modul Such- und Kategorien suchen, Vorschau anzeigen und organisieren die Dokumente in Ihrem Fall. In diesem Modul wird derzeit Beta.
+In erweiterte eDiscovery ermöglicht das Modul Such- und Kategorien suchen, Vorschau anzeigen und organisieren die Dokumente in Ihrem Fall. In diesem Modul wird derzeit Beta. Eine kurze Demo der Suche und Kategorien finden Sie unter das [Verwalten von Daten mit erweiterten eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) -Video.
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="search-the-documents-in-your-case"></a>Suchen Sie die Dokumente in Ihrem Fall
 
-Nachdem Sie Dokumente in erweiterten eDiscovery verarbeitet und optional das Modul Analyse oder der Relevanz-Modul ausgeführt werden, Sie suchen können und Verwenden von Kategorien, die Dokumente im Fall durchsuchen und Organisieren Case-spezifische Tags. Sie können Definieren von Abfragen mit dem angegebenen Bedingung Karten oder über eine KQL-ähnliche Abfragesprache in den Schlüsselwörtern Bedingung Karte. Allgemeine KQL-Syntax wie AND, OR, NOT und NEAR(n) sind die unterstützten sowie nachstehende mehrere Zeichen Platzhalterzeichen (*). Diese Eigenschaften werden in der Abfrage-Eigenschaftenname unterstützt:
+Nachdem Sie verarbeitet Dokumente in einem erweiterten eDiscovery-Fall (und optional das Modul Analyze oder Relevanz ausgeführt), können Sie die Such- und Tagging Dokumente durchsuchen, und ordnen Sie diese dann durch Anwenden von Groß-/Kleinschreibung-spezifischen Tags (auch als Etiketten bezeichnet). Sie können eine Suchabfrage mithilfe der angegebenen Bedingung Karten definiert oder mithilfe einer KQL-ähnliche Abfragesprache in den Schlüsselwörtern Bedingung Karte. Allgemeine KQL-Syntax wie AND, OR, NOT und NEAR(n) sind die unterstützten sowie nachstehende mehrere Zeichen Platzhalterzeichen (*). 
 
-- Caselabel: Tags erstellt/angewendet in der Suche und Kategorien für diesen Fall 
-- Verwalter: im Fall - eingeschränkt zugewiesen Verwalter
-- Datum: Datum für e-Mail gesendet, Änderungsdatum für Dokumente
-- FileID: Datei mit der ID innerhalb der Groß-/Kleinschreibung
-- FileType: systemeigene Erweiterung
-- Fileclass: e-Mail, Dokument oder Anlage
-- Senderauthor: Absender-e-Mails, Autor für Dokumente
-- Größe: Größe der Datei in KB
-- Betreff: Betreff für e-Mails, Titel für Dokumente
-- bcc
-- cc
-- Teilnehmer: e-Mail-Adressen von allen Teilnehmern in einer e-Mail-Thread, einschließlich für fehlende Links
-- empfangen: Empfangsdatum
-- Empfänger: e-Mail-Namen der Empfänger oder Adressen (an, cc, Bcc)
-- sender
-- LastModifiedDate: letzte Änderung eines Dokuments
-- gesendet: Datum der eine e-Mail gesendet
-- bis
-- Autor: Autor einer e-Mail
-- Title: Titel eines Dokuments
-- Dominanttheme: dominanten Design eines Elements\*
-- Themeslist: Designs, die einem Element zugeordnet sind.\*
-- Readpercentile_ [Issuenum]: Lesen Quantil eines Elements für Problem [Issuenum]\*\*
-- Relevancescore_ [Issuenum]: Relevanz Bewertung eines Elements für Problem [Issuenum]\*\*
-- Relevancetag_ [Issuenum]: Wenn ein Element manuell für Relevanz, dessen Tag für [Issuenum] markiert wurde.\*\*
+Die folgende Tabelle enthält die Eigenschaften, die Sie für die Verwendung einer KQL-Abfrage-Schlüsselwort suchen können. Alternativ können Sie eine Bedingung (für ausgewählte Eigenschaften) auf eine Suchabfrage hinzufügen eine Bedingung-Karte finden Sie in der erweiterten eDiscovery Such-Tool verwenden.
 
-\*Nur verfügbar, wenn das Modul Designs ausgeführt wurde \* \* nur verfügbar, wenn das Modul Relevanz ausgeführt wurde
+|**Eigenschaft**|**Beschreibung**|
+|:-----|:-----|
+|**caselabel** <br/> | Der Name des Tags erstellt/angewendet, wenn ein Dokument markiert ist. <br/> |
+|**Verwaltungsberechtigter** <br/> | Der Verwaltungsberechtigte mit einem Dokument verknüpften; eingeschränkt. <br/> |
+|**Datum** <br/> | Datum für e-Mail gesendet. das Änderungsdatum für websitedokumente. <br/> |
+|**"FileID"** <br/> | Die Datei-ID in der Groß-/Kleinschreibung. <br/> |
+|**FileType** <br/> | Die systemeigene Erweiterung. <br/> |
+|**fileclass** <br/> | E-Mail, Dokument oder Anlage. <br/> |
+|**senderauthor** <br/> | Der Absender für e-Mail; der Autor für websitedokumente. <br/> |
+|**Größe** <br/> | Die Größe der Datei in KB. <br/> |
+|**Betreff** <br/> | Der Betreff der e-Mail; der Titel für die websitedokumente. <br/> |
+|**bcc** <br/> | Das Feld Bcc der e-Mail. <br/> |
+|**cc** <br/> | Das Feld Cc der e-Mail. <br/> |
+|**Teilnehmer** <br/> | Die e-Mail-Adresse von allen Teilnehmern in einer e-Mail-Thread, einschließlich für fehlende Links. <br/> |
+|**empfangen** <br/> | Das Datum, an das eine e-Mail-Nachricht empfangen wurde. <br/> |
+|**Empfänger** <br/> | Empfänger einer e-Mail, die auf an, Cc oder Bcc Felder enthalten. <br/> |
+|**sender** <br/> | Der Absender der e-Mail. <br/> |
+|**LastModifiedDate** <br/> | Datum der ein Dokument auf der Website wird von der letzten Änderung. <br/> |
+|**gesendet** <br/> | Das Absendedatum der e-Mail. <br/> |
+|**An** <br/> | Der Empfänger in das Feld an der eine e-Mail-Nachricht aufgeführt. <br/> |
+|**Autor** <br/> | Der Autor des ein Dokument auf der Website. <br/> |
+|**title** <br/> | Der Titel eines Dokuments für die Website. <br/> |
+|**dominanttheme**\* <br/> | Das dominante Design eines Elements. <br/> |
+|**themeslist**\* <br/> | Designs, die einem Element zugeordnet sind. <br/> |
+|**Readpercentile_ [Issuenum]**\*\* <br/> | Das Lesen Quantil eines Elements, für das Problem durch [Issuenum] definiert. <br/> |
+|**Relevancescore_ [Issuenum]**\*\* <br/> | Die Relevanz Bewertung eines Elements, für das Problem durch [Issuenum] definiert. <br/> |
+|**Relevancetag_ [Tagname]**\*\* <br/> | Wenn ein Element wurde markiert wurde manuell für Relevanz, das Tag durch [Tagname] definiert. <br/> |
+|||
+
+\*Nur verfügbar, wenn das Modul Designs ausgeführt wurde.
+
+\*\*Nur verfügbar, wenn das Modul Relevanz ausgeführt wurde.
+
+Alternativ können Sie eine Karte Bedingung in der erweiterten eDiscovery Such-Tool verwenden, so eine Suchabfrage eine Bedingung (für ausgewählte Eigenschaften) hinzu. Der folgende Screenshot zeigt die Bedingungen, die einer Abfrage hinzugefügt werden können. Die **Gruppe** -Spalte gibt an, ob die Eigenschaft auf e-Mail, Dokumente oder beides (angegeben durch den Wert *Allgemeine*) angewendet wird. Diese Spalte identifiziert auch die durchsuchbaren Eigenschaften, die nach dem Ausführen des Relevanz Moduls verfügbar sind.
+
+![Suchkriterien im erweiterten eDiscovery Such-tool](media/AeDSearchConditions.png)
+
+Weitere Informationen zu durchsuchbare Eigenschaften finden Sie unter [Stichwortabfragen und Suchkriterien](keyword-queries-and-search-conditions.md).
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
 [Grundlegendes zur Bewertung in Relevanz](assessment-in-relevance-in-advanced-ediscovery.md)
   

@@ -3,7 +3,7 @@ title: Verwenden Sie Netzwerk hochladen, um Ihre Organisation PST-Dateien in Off
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: erfahren Sie, wie Netzwerk Upload verwenden, um mehrere PST-Dateien auf die Benutzerpostfächer in Office 365 Massenimport.'
-ms.openlocfilehash: c5bcaed9075939d098ac4bf9fbf4d8a94007232c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 81c799a8c820e9d9287f4792fe463d6a99b90e36
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529203"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666155"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Verwenden Sie Netzwerk hochladen, um Ihre Organisation PST-Dateien in Office 365 importieren
 
@@ -51,7 +51,7 @@ Beachten Sie, dass Sie Schritt 1 nur einmal ausführen, um PST-Dateien in Office
     
   - Sie müssen die Rolle des E-Mail-Empfänger in Exchange Online zugewiesen werden. Standardmäßig wird diese Rolle der Organization Management und Recipient Management Rollen Gruppen zugewiesen.
     
-    oder -
+    Oder
     
   - Sie müssen ein globaler Administrator in Office 365-Organisation sein.
     
@@ -81,17 +81,19 @@ Beachten Sie, dass Sie Schritt 1 nur einmal ausführen, um PST-Dateien in Office
     > [!TIP]
     > Identifiziert die Meldung Größe für ein Postfach, können Sie diesen Befehl ausführen, in Exchange Online PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
 
-### <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Schritt 1: Kopieren Sie die SAS-URL und installieren Azure AzCopy
+## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Schritt 1: Kopieren Sie die SAS-URL und installieren Azure AzCopy
 
 Der erste Schritt besteht herunterladen und installieren Sie das Tool Azure AzCopy, das das Tool ist, das Sie in Schritt2 zum Hochladen von PST-Dateien in Office 365 ausgeführt werden. Sie können auch die SAS-URL für Ihre Organisation kopieren. Diese URL ist eine Kombination aus der Netzwerk-URL für den Speicherort der Azure-Speicher in der Microsoft-Cloud für Ihre Organisation und einer gemeinsamen Zugriff Signatur (SAS)-Taste. Dieser Schlüssel enthält die erforderlichen Berechtigungen zum Hochladen von PST-Dateien zu dem Speicherort der Azure-Speicher. Müssen Sie Vorsichtsmaßnahmen zum Schutz der SAS-URL. Es ist nur in Ihrer Organisation und in Schritt2 verwendet werden.
-  
- **Wichtig:** Es wird empfohlen, Azure AzCopy Version, dass 7.1.0 zum Importieren von PST-Dateien mithilfe des Netzwerks Methode hochladen zu verwenden. In Schritt 6 b in der folgenden Prozedur wird die Version 7.1.0 heruntergeladen. 
+
+> [!IMPORTANT]
+> Importieren von PST Methode zum Hochladen von Dateien über das Netzwerk, es wird empfohlen, dass Sie die Version des Azure AzCopy verwenden, die in Schritt 6 b in der folgenden Prozedur heruntergeladen werden kann.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Office 365-Organisation. 
     
 2. Im linken Bereich der Sicherheit &amp; Compliance Center, klicken Sie auf **Daten Governance** \> **Importieren**.
     
-    **Hinweis:** Sie haben Zugriff auf die Seite **Importieren** in das Wertpapier die entsprechenden Berechtigungen zugewiesen werden &amp; Compliance Center. Finden Sie weitere Informationen im Abschnitt **bevor Sie beginnen** . 
+    > [!NOTE]
+    > Sie haben Zugriff auf die Seite **Importieren** in das Wertpapier die entsprechenden Berechtigungen zugewiesen werden &amp; Compliance Center. Finden Sie weitere Informationen im Abschnitt **bevor Sie beginnen** . 
     
 3. Klicken Sie auf der Seite **Importieren** auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) **Importauftrag neu**.
     
@@ -109,9 +111,10 @@ Der erste Schritt besteht herunterladen und installieren Sie das Tool Azure AzCo
   
     a. Klicken Sie in Schritt 2 Klicken Sie auf **Netzwerk Upload SAS-URL anzeigen**. Nachdem die SAS-URL angezeigt wird, auf **in die Zwischenablage kopieren** und fügen Sie ihn und in einer Datei speichern Sie, damit Sie später zugreifen können.
     
-    b klicken Sie in Schritt 3 auf **Azure AzCopy herunterladen** herunterladen und installieren Sie das Tool Azure AzCopy. Wie bereits erwähnt, Version 7.1.0 wird heruntergeladen werden. Klicken Sie im Popupfenster auf **Ausführen** , um AzCopy zu installieren. 
+    b klicken Sie in Schritt 3 auf **Azure AzCopy herunterladen** herunterladen und installieren Sie das Tool Azure AzCopy. Klicken Sie im Popupfenster auf **Ausführen** , um AzCopy zu installieren. 
     
-  **Hinweis:** Sie können die Seite **Daten importieren** geöffnet lassen, (für den Fall, dass Sie die URL SAS erneut zu kopieren müssen), oder klicken Sie auf **Abbrechen** , um es zu schließen. 
+> [!NOTE]
+> Sie können die Seite **Daten importieren** geöffnet lassen, (für den Fall, dass Sie die URL SAS erneut zu kopieren müssen), oder klicken Sie auf **Abbrechen** , um es zu schließen. 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>Schritt 2: Hochladen Sie PST-Dateien in Office 365
 
@@ -133,7 +136,7 @@ Sie können nun das Tool AzCopy.exe verwenden, um die PST-Dateien in Office 365 
     |**Parameter**|**Beschreibung**|**Beispiel**|
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Gibt das Quellverzeichnis in Ihrer Organisation, die die PST-Dateien enthält, die zu Office 365 hochgeladen werden soll.  <br/> Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen .  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |Gibt die SAS-URL, die Sie erhalten in Schritt 1 an.  <br/> Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen .  <br/> **Tipp:** (Optional) Sie können einen Unterordner in Azure Speicherort die PST-Dateien zum Hochladen angeben. Zu diesem Zweck hinzufügen einen Unterordner Speicherort (nach "Ingestiondata") in der SAS-URL. Im ersten Beispiel wird keinen Unterordner angeben. Dies bedeutet, dass die PST-Dateien in das Stammverzeichnis (mit dem Namen *Ingestiondata* ) von Azure Speicherort hochgeladen werden soll. Im zweite Beispiel werden die PST-Dateien in einem Unterordner ( *PSTFiles* ) im Stamm des Azure Speicherort hochgeladen.<br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> oder -  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/Dest:` <br/> |Gibt die SAS-URL, die Sie erhalten in Schritt 1 an.  <br/> Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen .  <br/> **Tipp:** (Optional) Sie können einen Unterordner in Azure Speicherort die PST-Dateien zum Hochladen angeben. Zu diesem Zweck hinzufügen einen Unterordner Speicherort (nach "Ingestiondata") in der SAS-URL. Im ersten Beispiel wird keinen Unterordner angeben. Dies bedeutet, dass die PST-Dateien in das Stammverzeichnis (mit dem Namen *Ingestiondata* ) von Azure Speicherort hochgeladen werden soll. Im zweite Beispiel werden die PST-Dateien in einem Unterordner ( *PSTFiles* ) im Stamm des Azure Speicherort hochgeladen.<br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Oder  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/V:` <br/> |Gibt ausführliche Statusmeldungen in einer Protokolldatei aus. Die ausführliche Protokolldatei trägt standardmäßig den Namen „AzCopyVerbose.log“ in %LocalAppData%\Microsoft\Azure\AzCopy. Wenn Sie einen vorhandenen Dateispeicherort für diese Option angeben, wird das ausführliche Protokoll an diese Datei angehängt.  <br/> Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen .  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
     | `/S` <br/> |Diese optionale Befehlszeilenoption gibt den rekursiven Modus, damit das Tool AzCopy PST-Dateien kopiert werden, die in Unterordnern im Quellverzeichnis befinden, die durch angegeben ist die `/Source:` Parameter.  <br/> **Hinweis:** Wenn Sie diese Option verwenden, müssen das PST-Dateien in Unterordnern einer anderen Datei Pathname Azure Speicherort an, nachdem sie hochgeladen haben. Sie müssen den genauen Dateipfadnamen in der CSV-Datei angeben, die Sie in Schritt 4 erstellen.<br/> | `/S` <br/> |
     | `/Y` <br/> |Dieser erforderliche Option ermöglicht die Verwendung von lesegeschützte SAS Token beim Hochladen der PST-Dateien auf den Speicherort der Azure-Speicher. Die SAS-URL, die Sie in Schritt 1 abgerufene (und im angegebenen `/Dest:` Parameter) ist eine lesegeschützte SAS-URL, weshalb Sie diese Befehlszeilenoption umfassen müssen. Beachten Sie, dass eine lesegeschützte SAS-URL nicht verhindern mit dem Azure-Speicher-Explorer zum Anzeigen einer Liste der PST-Dateien in der Azure Speicherort hochgeladen.<br/> | `/Y` <br/> |
@@ -146,8 +149,9 @@ Nachfolgend sehen Sie ein Beispiel der Syntax für das Tool „AzCopy.exe“, in
 ```
 
 Nachdem Sie den Befehl ausgeführt haben, werden Statusmeldungen angezeigt, die den Fortschritt des Hochladens der PST-Dateien anzeigen. Eine endgültige Statusmeldung zeigt die Gesamtzahl der Dateien an, die erfolgreich hochgeladen wurden. 
-    
-**Tipp:** Nachdem Sie erfolgreich führen den Befehl AzCopy.exe aus, und stellen Sie sicher, dass alle Parameter richtig sind, Speichern einer Kopie der die Befehlszeilensyntax auf die gleiche (gesicherten)-Datei, in dem Sie die Informationen kopiert haben, erhaltenen Sie in Schritt 1. Sie können dann kopieren und fügen diesen Befehl in einem Eingabeaufforderungsfenster jedes Mal, dem Sie das Tool AzCopy.exe zum Hochladen von PST-Dateien zu Office 365 ausführen möchten. Möglicherweise müssen Sie ändern nur ein Wert entsprechen denen für die `/Source:` Parameter. Dies hängt das Quellverzeichnis, wo sich die PST-Dateien befinden. 
+
+> [!TIP]
+> Nachdem Sie erfolgreich führen den Befehl AzCopy.exe aus, und stellen Sie sicher, dass alle Parameter richtig sind, Speichern einer Kopie der die Befehlszeilensyntax auf die gleiche (gesicherten)-Datei, in dem Sie die Informationen kopiert haben, erhaltenen Sie in Schritt 1. Sie können dann kopieren und fügen diesen Befehl in einem Eingabeaufforderungsfenster jedes Mal, dem Sie das Tool AzCopy.exe zum Hochladen von PST-Dateien zu Office 365 ausführen möchten. Möglicherweise müssen Sie ändern nur ein Wert entsprechen denen für die `/Source:` Parameter. Dies hängt das Quellverzeichnis, wo sich die PST-Dateien befinden.
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Optional) Schritt 3: Hochgeladen Ansicht eine Liste der PST-Dateien nach Office 365
 
@@ -159,7 +163,8 @@ Als optionalen Schritt können Sie installieren und Verwenden der Microsoft Azur
     
 Microsoft Azure-Speicher-Explorer ist in der Vorschau.
   
- **Wichtig:** Sie können der Azure-Speicher-Explorer zum Hochladen oder Ändern von PST-Dateien verwenden. Die einzige unterstützte Methode für das Importieren von PST-Dateien in Office 365 ist die Verwendung von AzCopy. Darüber hinaus können Sie nicht PST-Dateien löschen, die Sie für die Azure Blob hochgeladen haben. Wenn Sie versuchen, eine PST-Datei zu löschen, erhalten Sie einen Fehler über nicht zu den erforderlichen Berechtigungen. Beachten Sie, dass alle PST-Dateien aus Ihrer Region Azure-Speicher automatisch gelöscht werden. Wenn es keine Importaufträge in Arbeit, und klicken Sie dann auf alle PST-Dateien in sind die ** Ingestiondata ** Container werden 30 Tage nach der neueste Importauftrag erstellt wurde gelöscht. 
+> [!IMPORTANT]
+> Sie können der Azure-Speicher-Explorer zum Hochladen oder Ändern von PST-Dateien verwenden. Die einzige unterstützte Methode für das Importieren von PST-Dateien in Office 365 ist die Verwendung von AzCopy. Darüber hinaus können Sie nicht PST-Dateien löschen, die Sie für die Azure Blob hochgeladen haben. Wenn Sie versuchen, eine PST-Datei zu löschen, erhalten Sie einen Fehler über nicht zu den erforderlichen Berechtigungen. Beachten Sie, dass alle PST-Dateien aus Ihrer Region Azure-Speicher automatisch gelöscht werden. Wenn es sind keine Importaufträge in Arbeit, klicken Sie dann alle PST-Dateien im Container **Ingestiondata** gelöscht 30 Tage nach der neueste Importauftrag erstellt wurde.
   
 So installieren die Azure-Speicher-Explorer, und eine Verbindung mit Ihrer Region Azure-Speicher:
   
@@ -217,9 +222,9 @@ Nachdem die PST-Dateien auf den Azure Speicherort für Ihre Office 365-Organisat
     | `Workload` <br/> |Gibt den Office 365-Dienst, dem Daten importiert werden. Verwenden Sie zum Importieren von PST-Dateien auf die Benutzerpostfächer `Exchange`.<br/> | `Exchange` <br/> |
     | `FilePath` <br/> |Gibt den Speicherort des Ordners in den Azure Speicherort, dass Sie die PST-Dateien in Schritt2 auf hochgeladen.  <br/> Wenn Sie einen Unterordnernamen für die optionalen der SAS-URL im einschließen nicht die `/Dest:` Parameter in Schritt2, lassen Sie diesen Parameter leer in der CSV-Datei. Wenn Sie einen Unterordnernamen eingeschlossen, in diesem Parameter angeben (Siehe zweites Beispiel). Der Wert für diesen Parameter ist Groß-/Kleinschreibung beachtet.<br/> *In beiden Fällen nehmen "Ingestiondata" in den Wert für* die `FilePath` Parameter.  <br/><br/> **Wichtig:** Die Groß-/Kleinschreibung für den Namen der Pfad muss die gleiche wie die Groß-/Kleinschreibung Sie verwendet werden, wenn Sie einen Unterordnernamen für die optionalen in der SAS-URL in enthalten die `/Dest:` Parameter in Schritt2. Beispielsweise, wenn Sie verwendet `PSTFiles` für den Unterordner Namen Sie in Schritt2, und klicken Sie dann verwenden `pstfiles` in der `FilePath` schlägt fehl, Parameter in der CSV-Datei, die für die PST-Datei importieren. Achten Sie darauf, dass die Groß-/Kleinschreibung in beiden Fällen verwenden.<br/> |(leer lassen)  <br/> Oder  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |Gibt den Namen der PST-Datei, die für das Postfach des Benutzers importiert werden. Der Wert für diesen Parameter ist Groß-/Kleinschreibung beachtet.<br/> <br/>**Wichtig:** Die Groß-/Kleinschreibung für den Namen des PST-Datei in der CSV-Datei muss die gleiche wie die PST-Datei, die in der Azure Speicherort in Schritt2 hochgeladen wurde. Angenommen, Sie verwenden `annb.pst` in der `Name` Parameter in der CSV-Datei, aber der Name der PST-Datei ist `AnnB.pst`, schlägt der Import für die PST-Datei fehl. Stellen Sie sicher, dass der Name der PST-Datei in der CSV-Datei die gleiche Groß-/Kleinschreibung als die eigentliche PST-Datei verwendet wird.<br/> | `annb.pst` <br/> |
-    | `Mailbox` <br/> |Gibt die e-Mail-Adresse des Postfachs an, das die PST-Datei importiert werden. Beachten Sie, dass Sie einen öffentlichen Ordner angeben ist nicht möglich, da der PST-Import-Dienst unterstützt Import von PST-Dateien auf Öffentliche Ordner.<br/> Um eine PST-Datei in eines inaktiven Postfachs zu importieren, müssen Sie die Postfach-GUID für diesen Parameter angeben. Um diese GUID zu erhalten, führen Sie den folgenden PowerShell-Befehl in Exchange Online: "Get-Mailbox <identity of inactive mailbox> - InactiveMailboxOnly | FL Guid` <br/> <br/>**Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox<identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-Mailbox <identity of soft-deleted or inactive mailbox> - SoftDeletedMailbox | FL Guid ".  <br/> | `annb@contoso.onmicrosoft.com` <br/> oder -  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | Gibt an, ob die PST-Datei in das Archivpostfach des Benutzers importiert werden soll. Es gibt zwei Möglichkeiten:<br/><br/>**FALSE** - importiert die PST-Datei in primären Postfach des Benutzers.  <br/> **TRUE** - importiert die PST-Datei in das Postfach des Benutzers archivieren. Dies setzt voraus, dass das [Archivpostfach des Benutzers ist aktiviert](enable-archive-mailboxes.md).<br/><br/>Wenn Sie diesen Parameter auf setzen `TRUE` und Archivpostfach des Benutzers ist nicht aktiviert, schlägt der Import für diesen Benutzer fehl. Beachten Sie, dass, wenn ein Import für einen Benutzer ein Fehler auftritt (, da ihre Archiv ist nicht aktiviert, und diese Eigenschaft, um festgelegt wird `TRUE`), die andere Benutzer in den Importauftrag wird nicht beeinflusst werden.<br/>  Wenn Sie diesen Parameter leer lassen, wird die PST-Datei in der primären Postfach des Benutzers importiert.  <br/> <br/>**Hinweis:** Geben Sie einfach eine PST-Datei in einer Cloud-basierten Archivpostfach für einen Benutzer Sie zum Importieren, deren primäre Postfach der lokale ist `TRUE` für diesen Parameter, und geben Sie die e-Mail-Adresse für das Postfach des Benutzers: lokal für die `Mailbox` Parameter.  <br/> | `FALSE` <br/> oder -  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Gibt den Postfachordner, dem in die PST-Datei importiert wird.  <br/>  Wenn dieser Parameter leer lassen, wird die PST-Datei in einen neuen Ordner importiert werden benannten **importierte** auf der Stammebene des Postfachs (der gleichen Ebene wie der Ordner Posteingang und anderen standardmäßigen Postfachordner) befinden.  <br/>  Wenn Sie angeben `/`, Elemente in der PST-Datei importiert werden direkt im Ordner Posteingang des Benutzers.  <br/><br/>  Wenn Sie angeben `/<foldername>`, Elemente in der PST-Datei in einen Ordner namens importiert werden * \<Foldername\> * . Wenn Sie verwenden, beispielsweise `/ImportedPst`, würde Elemente in einen Ordner namens **ImportedPst**importiert werden. Dieser Ordner wird im Postfach des Benutzers auf derselben Ebene wie der Ordner Posteingang befinden.<br/><br/> **Tipp:** Berücksichtigen Sie mit ein paar Test Batches mit diesem Parameter experimentieren, damit Sie ermitteln können, die am besten geeigneten Speicherorte Ordner PST-Dateien zu importieren.  <br/> |(leer lassen)  <br/> Oder  <br/>  `/` <br/> oder -  <br/>  `/ImportedPst` <br/> |
+    | `Mailbox` <br/> |Gibt die e-Mail-Adresse des Postfachs an, das die PST-Datei importiert werden. Beachten Sie, dass Sie einen öffentlichen Ordner angeben ist nicht möglich, da der PST-Import-Dienst unterstützt Import von PST-Dateien auf Öffentliche Ordner.<br/> Um eine PST-Datei in eines inaktiven Postfachs zu importieren, müssen Sie die Postfach-GUID für diesen Parameter angeben. Um diese GUID zu erhalten, führen Sie den folgenden PowerShell-Befehl in Exchange Online: "Get-Mailbox <identity of inactive mailbox> - InactiveMailboxOnly | FL Guid` <br/> <br/>**Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox<identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-Mailbox <identity of soft-deleted or inactive mailbox> - SoftDeletedMailbox | FL Guid ".  <br/> | `annb@contoso.onmicrosoft.com` <br/> Oder  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | Gibt an, ob die PST-Datei in das Archivpostfach des Benutzers importiert werden soll. Es gibt zwei Möglichkeiten:<br/><br/>**FALSE** - importiert die PST-Datei in primären Postfach des Benutzers.  <br/> **TRUE** - importiert die PST-Datei in das Postfach des Benutzers archivieren. Dies setzt voraus, dass das [Archivpostfach des Benutzers ist aktiviert](enable-archive-mailboxes.md).<br/><br/>Wenn Sie diesen Parameter auf setzen `TRUE` und Archivpostfach des Benutzers ist nicht aktiviert, schlägt der Import für diesen Benutzer fehl. Beachten Sie, dass, wenn ein Import für einen Benutzer ein Fehler auftritt (, da ihre Archiv ist nicht aktiviert, und diese Eigenschaft, um festgelegt wird `TRUE`), die andere Benutzer in den Importauftrag wird nicht beeinflusst werden.<br/>  Wenn Sie diesen Parameter leer lassen, wird die PST-Datei in der primären Postfach des Benutzers importiert.  <br/> <br/>**Hinweis:** Geben Sie einfach eine PST-Datei in einer Cloud-basierten Archivpostfach für einen Benutzer Sie zum Importieren, deren primäre Postfach der lokale ist `TRUE` für diesen Parameter, und geben Sie die e-Mail-Adresse für das Postfach des Benutzers: lokal für die `Mailbox` Parameter.  <br/> | `FALSE` <br/> Oder  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | Gibt den Postfachordner, dem in die PST-Datei importiert wird.  <br/>  Wenn dieser Parameter leer lassen, wird die PST-Datei in einen neuen Ordner importiert werden benannten **importierte** auf der Stammebene des Postfachs (der gleichen Ebene wie der Ordner Posteingang und anderen standardmäßigen Postfachordner) befinden.  <br/>  Wenn Sie angeben `/`, Elemente in der PST-Datei importiert werden direkt im Ordner Posteingang des Benutzers.  <br/><br/>  Wenn Sie angeben `/<foldername>`, Elemente in der PST-Datei in einen Ordner namens importiert werden * \<Foldername\> * . Wenn Sie verwenden, beispielsweise `/ImportedPst`, würde Elemente in einen Ordner namens **ImportedPst**importiert werden. Dieser Ordner wird im Postfach des Benutzers auf derselben Ebene wie der Ordner Posteingang befinden.<br/><br/> **Tipp:** Berücksichtigen Sie mit ein paar Test Batches mit diesem Parameter experimentieren, damit Sie ermitteln können, die am besten geeigneten Speicherorte Ordner PST-Dateien zu importieren.  <br/> |(leer lassen)  <br/> Oder  <br/>  `/` <br/> Oder  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Dieser optionale Parameter gibt einen numerischen Wert für die Codepage für den Import von PST-Dateien im ANSI-Format verwenden. Dieser Parameter wird verwendet, für den Import von PST-Dateien von Organisationen Chinesisch, Japanisch und Koreanisch (CJK), da diese Sprachen in der Regel einen double-Byte-Zeichensatz (DBCS) für die zeichencodierung von verwenden. Wenn dieser Parameter wird nicht zum Importieren von PST-Dateien für Sprachen, die DBCS für Ordnernamen Postfach verwenden verwendet, werden die Namen der Ordner häufig verzerrt, nach dem Importieren.<br/><br/> Eine Liste der unterstützten Werte für diesen Parameter verwenden finden Sie unter [Code Seite Bezeichner](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/> <br/>**Hinweis:** Wie bereits erwähnt, dies ist ein optionaler Parameter, und Sie keinen zum Einschließen in die CSV-Datei. Oder Sie können einschließen und den Wert für eine oder mehrere Zeilen leer lassen.<br/> |(leer lassen)  <br/> Oder  <br/>  `932`(Dies ist der Bezeichner für Japanisch ANSI/OEM-Seite)  <br/> |
     | `SPFileContainer` <br/> |Lassen Sie diesen Parameter für den PST-Import leer.   <br/> |Nicht zutreffend  <br/> |
     | `SPManifestContainer` <br/> |Lassen Sie diesen Parameter für den PST-Import leer.   <br/> |Nicht zutreffend  <br/> |
@@ -263,7 +268,7 @@ Der nächste Schritt besteht darin den Importauftrag PST-Datei im Dienst Import 
     
     Eine flyoutmenü Statusseite wird angezeigt, mit dem Status der **Analyse in Arbeit** und der neuen Importauftrag wird angezeigt, in der Liste auf der Seite **Importieren** . 
     
-11. Klicken Sie auf **Aktualisieren**![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) , die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt wird. Wenn die Analyse abgeschlossen ist, und die Daten importiert werden können, wird der Status in der **Analyse abgeschlossen**geändert.
+11. Klicken Sie auf **Aktualisieren** ![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) , die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt wird. Wenn die Analyse abgeschlossen ist, und die Daten importiert werden können, wird der Status in der **Analyse abgeschlossen**geändert.
     
     Klicken Sie auf den Importauftrag zum Anzeigen der Seite Status flyoutmenü die enthält ausführlichere Informationen zu den Importauftrag wie beispielsweise der Status der einzelnen PST-Datei in der Zuordnungsdatei aufgeführt.
  
@@ -283,13 +288,13 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, zur Analyse von Offic
     
     ![Sie können erhöhen, die Daten in die PST-Dateien oder importieren Sie alle davon](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. Führen Sie einen der folgenden Schritte aus:
+3. Führen Sie eine der folgenden Aktionen aus:
     
     a. zu erhöhen, die Daten, die Sie importieren möchten, klicken Sie auf **Ja, ich möchte vor dem Importieren von Filtern**.
     
     Ausführliche Anleitung zum Filtern der Daten in die PST-Dateien, und starten Sie den Importauftrag finden Sie unter [Filtern von Daten beim Import von PST-Dateien zu Office 365](filter-data-when-importing-pst-files.md).
     
-    oder -
+    Oder
     
     b, um alle Daten in die PST-Dateien zu importieren, klicken Sie auf **Nein, ich möchte alles, importieren** , und klicken Sie auf **Weiter**.
     
@@ -361,11 +366,11 @@ Nachfolgend finden Sie eine Abbildung und eine Beschreibung des Hochladens Netzw
     AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
 ``
 
-- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  `True` so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
+- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  **True** so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
     
-    - After a certain period of time, you can turn off the retention hold by running the  `Set-Mailbox -RetentionHoldEnabled $false` command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+    - After a certain period of time, you can turn off the retention hold by running the **Set-Mailbox -RetentionHoldEnabled $false** command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the  `Set-Mailbox -EndDateForRetentionHold <date>` command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  `Set-Mailbox -EndDateForRetentionHold 8/1/2016`. In this scenario, you would leave the  *RetentionHoldEnabled*  property set to  *True*  . For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the **Set-Mailbox -EndDateForRetentionHold *date*** command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  **Set-Mailbox -EndDateForRetentionHold 8/1/2016**. In this scenario, you would leave the  **RetentionHoldEnabled**  property set to  *True*. For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
    - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     
