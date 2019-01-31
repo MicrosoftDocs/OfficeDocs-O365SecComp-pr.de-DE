@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Erfahren Sie, wie verhindert wird, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden.
-ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: 4da27aea157d3d816f8ce9a9631dd608dd5cd164
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596718"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614429"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden
 
@@ -29,11 +29,13 @@ Exchange Online Protection (EOP) versucht, Spam zu filtern, sodass in Ihren Post
   
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Ermitteln der Ursache, warum die Nachricht als Spam gekennzeichnet wurde
 
-Viele Probleme mit Spam in Office 365 können gelöst werden, indem [Sie die E-Mail-Kopfzeilen anzeigen](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) und bestimmen, was falsch gelaufen ist. Wenn Sie eine Nachrichtenkopfzeile mit dem Namen „X-Forefront-Antispam-Report“ sehen, die die Zeichenfolge „SFV:NSPM“ enthält, bedeutet dies, dass Exchange Online Protection (EOP) die Nachricht überprüft und sie als Spam klassifiziert hat. In diesem Fall empfehlen wir dringend, dass Sie [das Add-In zum Melden von Nachrichten verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2), um uns bei der Verbesserung unserer Filter zu unterstützen. Wenn dieser Wert nicht in den Kopfzeilen angezeigt wird, könnte dies bedeuten, dass die E-Mail entweder nicht die Spamüberprüfung durchlaufen hat, oder dass es ein Konfigurationsproblem gab, aufgrund dessen die Nachricht fälschlicherweise als Spam klassifiziert wurde. [Hier erfahren Sie mehr über die Antispam-Nachrichtenkopfzeilen](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
+Viele Probleme bezüglich Spam in Office 365 können gelöst werden, indem Sie die [Kopfzeilen von E-Mail-Nachrichten anzeigen](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) und bestimmen, wo der Fehler liegt. Sie müssen nach einer Kopfzeile mit dem Namen X-Forefront-Antispam-Report suchen. Weitere Informationen zu Antispam-Nachrichtenkopfzeilen finden Sie [hier](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
   
 Suchen Sie in der Kopfzeile nach den folgenden Überschriften und Werten.
   
 ### <a name="x-forefront-antispam-report"></a>X-Forefront-Antispam-Report
+
+- **SFV:SPM** Gibt an, dass die Nachricht aufgrund der EOP-Spamfilter als Spam markiert wurde. 
 
 - **SFV:BLK** Gibt an, dass die Nachricht als Spam gekennzeichnet wurde, da sich die Absenderadresse auf der Liste blockierter Absender befindet. 
     
@@ -41,7 +43,7 @@ Suchen Sie in der Kopfzeile nach den folgenden Überschriften und Werten.
     
 - **SFV:SKB** Gibt an, dass die Nachricht als Spam markiert, da sie einer Sperrliste in der Richtlinie für den Spamfilter entsprach. 
     
-- **SFV:BULK** Gibt an, dass der BCL-Wert (Bulk Complaint Level) in der Kopfzeile x-microsoft-antispam über dem Schwellenwert für Massen-E-Mails liegt, der für den Inhaltsfilter festgelegt wurde. Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, wie [Massen-E-Mails behandelt werden](https://blogs.msdn.microsoft.com/tzink/2014/08/25/different-levels-of-bulk-mail-filtering-in-office-365/). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen.
+- **SFV:BULK** Gibt an, dass der BCL-Wert (Bulk Complaint Level) in der Kopfzeile x-microsoft-antispam über dem Schwellenwert für Massen-E-Mails liegt, der für den Inhaltsfilter festgelegt wurde. Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, wie [Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen.
     
 - **CAT:SPOOF** oder **CAT:PHISH** Gibt an, dass die Nachricht gefälscht zu sein scheint, was bedeutet , dass die Nachrichtenquelle nicht überprüft werden kann und verdächtig sein könnte. Wenn die Nachricht gültig ist, muss der Absender sicherstellen, dass sie über eine korrekte SPF- und DKIM-Konfiguration verfügt. Überprüfen Sie die Kopfzeile „Authentication-Results“, um weitere Informationen zu erhalten. Es ist zwar schwierig, alle Absender dazu zu veranlassen, gültige E-Mail-Authentifizierungsmethoden zu verwenden, werden diese Überprüfungen jedoch übergangen, kann dies eine große Gefahr darstellen. 
     
@@ -67,8 +69,6 @@ Um effektiv zu arbeiten, müssen Administratoren in Exchange Online Protection (
 
 - **Spam an Microsoft melden** Melden Sie Spamnachrichten an Microsoft, indem Sie das [Add-In zum Melden von Nachrichten verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Darüber hinaus können Sie eine Nachricht an junk@office365.microsoft.com senden und eine oder mehrere Nachrichten anfügen, die Sie melden möchten.
     
-    **Wichtig** Wenn Sie die Nachrichten nicht als Anlagen weiterleiten, so [fehlen uns die Kopfzeilen und wir können den Junk-E-Mail in Office 365 nicht verbessern.](https://blogs.msdn.microsoft.com/tzink/2017/11/30/when-creating-support-tickets-about-spam-be-sure-to-include-message-headers/) 
+    **Wichtig** Wenn Sie die Nachrichten nicht als Anlagen weiterleiten, so fehlen uns die Kopfzeilen und wir können den Junk-E-Mail in Office 365 nicht verbessern. 
     
 - **Hinzufügen eines Absenders zur Liste zulässiger Absender** Als letzte Option können Sie [Blockieren oder Zulassen (Junk-E-Einstellungen) verwenden](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). In diesem Fall sollten Sie sich bewusst sein, dass ein gezielter Phishingangriff in Ihren Posteingang gelangen könnte.
-    
-
