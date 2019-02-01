@@ -1,12 +1,12 @@
-# [Erste Schritte]
+# Erste Schritte
 ## [Inhaltsübersicht für die Sicherheit von Office 365](security-roadmap.md)
 ## [Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit](tenant-wide-setup-for-increased-security.md)
 ## [Wechseln zum Office 365 Security & Compliance Center](go-to-the-securitycompliance-center.md)
-## [Vorbereiten auf das neue Microsoft 365 Security Center and das Microsoft 365 Compliance Center](microsoft-security-and-compliance.md)
+## [Vorbereiten auf das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center](microsoft-security-and-compliance.md)
 ## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ## [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
-## [Übersicht über das Sicherheits-Dashbord](security-dashboard.md)
+## [Übersicht über das Sicherheits-Dashboard](security-dashboard.md)
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planen von Sicherheit und Compliance in Office 365](plan-for-security-and-compliance.md)
 # Zugriffsschutz für Daten und Dienste
@@ -15,6 +15,7 @@
 # Schützen von Informationen
 ## [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 ### [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md)
+### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply_sensitivity_label_automatically.md)
 ## [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ### [Sehen Sie einen erweiterten Überblick über DLP an](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Einrichten von DLP
@@ -37,6 +38,15 @@
 ### [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
 ### [Dokumentfingerabdrücke](document-fingerprinting.md) 
+# Datensatzverwaltung
+## [Aufbewahrungsrichtlinien](retention-policies.md)
+## [Aufbewahrungsbezeichnungen](labels.md)
+## [Verwenden von Exchange Online und des Security & Compliance Centers, um die SEC-Richtlinie 17a-4 einzuhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Dispositionsüberprüfungen](disposition-reviews.md)
+## [Ereignisgesteuerte Aufbewahrung](event-driven-retention.md)
+## [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
+## [Dateiplan-Manager](file-plan-manager.md)
+## [Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 # Verwalten der Datengovernance        
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
 ### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
@@ -54,10 +64,12 @@
 ## Aufbewahren von Daten
 ### [Aufbewahrungsrichtlinien](retention-policies.md)
 ### [Aufbewahrungsbezeichnungen](labels.md)
-### [Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Verwenden von Exchange Online und des Security & Compliance Centers, um die SEC-Richtlinie 17a-4 einzuhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
 ### [Dispositionsüberprüfungen](disposition-reviews.md)
 ### [Ereignisgesteuerte Aufbewahrung](event-driven-retention.md)
+### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
 ### [Dateiplan-Manager](file-plan-manager.md)
+### [Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ## [Aufsichtskommunikation](supervision-policies.md)
 ### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
 ## [Verwalten inaktiver Postfächer](inactive-mailboxes-in-office-365.md)
