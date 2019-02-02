@@ -1,5 +1,5 @@
 ---
-title: Beheben von Verarbeitungsfehler in erweiterten eDiscovery (Preview)
+title: Verarbeitung Fehlerkorrektur im erweiterten eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 457ee5ae019091275621cd29d66313852dff5425
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607829"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694811"
 ---
-# <a name="fixing-processing-errors-in-advanced-ediscovery-preview"></a>Beheben von Verarbeitungsfehler in erweiterten eDiscovery (Preview)
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>Verarbeitung Fehlerkorrektur im erweiterten eDiscovery (Preview)
 
 Verarbeitung ist der Prozess der Datei Kennung, Erweiterung eingebettete Dokumente und Anlagen, Text extrahieren, OCR (optische Zeichenerkennung) von Bilddateien und Indizieren des Inhalts.  Wenn ein Verwaltungsberechtigter in der Warteschleife platziert wird, werden alle teilweise indizierte Elemente aus Office 365 verarbeitet, um vollständig durchsuchbare machen.  Wenn Inhalte von Office 365-Datenquellen oder nicht - Office 365-Datenquellen Workingset hinzugefügt wird, wird der Inhalt auch verarbeitet.
 
@@ -29,5 +29,5 @@ Die Registerkarte **Verarbeitung** in erweiterten eDiscovery (Preview) bietet Tr
 
 Finden Sie unter den folgenden Artikeln Weitere Informationen.
 
-- [Erweiterte Indizierung von Verwaltungsberechtigten Daten](indexing-custodian-data.md)
-- [Error Remediation beim Verarbeiten von Daten](error-remediation.md)
+- [Erweiterte Indizierung der Daten von Verwaltungsberechtigten](indexing-custodian-data.md)
+- [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation.md)
