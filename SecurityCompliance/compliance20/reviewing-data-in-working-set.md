@@ -1,5 +1,5 @@
 ---
-title: Überprüfen die Groß-/Kleinschreibung Daten in erweiterten eDiscovery (Preview)
+title: Überprüfen Sie Groß-/Kleinschreibung Daten in erweiterten eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1e1f2704042a9f94a91858035c01d201d9412c9f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 9ff7cf4a1d66271f2e7aa83ba05fc6997001c724
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607826"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694971"
 ---
-# <a name="reviewing-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="a5057-102">Überprüfen die Groß-/Kleinschreibung Daten in erweiterten eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="a5057-102">Reviewing case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="review-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="17f7e-102">Überprüfen Sie Groß-/Kleinschreibung Daten in erweiterten eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="17f7e-102">Review case data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="a5057-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="a5057-103">Content coming soon.</span></span>
+<span data-ttu-id="17f7e-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="17f7e-103">Content coming soon.</span></span>
