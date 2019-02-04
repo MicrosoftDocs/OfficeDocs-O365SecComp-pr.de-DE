@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
+ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607167"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690416"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -60,7 +60,7 @@ Sie erstellen und verwalten Aufbewahrungsrichtlinien auf der Seite **Aufbewahrun
 
 Wenn Sie einen Speicherort, z. B. eine Website oder ein Postfach in eine Aufbewahrungsrichtlinie einschließen, verbleibt der Inhalt an seinem ursprünglichen Speicherort. Benutzer können weiter mit ihren Dokumenten oder E-Mails arbeiten, als ob sich nichts geändert hätte. Wenn sie jedoch Inhalte bearbeiten oder löschen, die von der Richtlinie abgedeckt sind, wird eine Kopie des Inhalts in seinem Zustand zum Zeitpunkt der Anwendung der Richtlinie beibehalten.
   
-Für Websites wird eine Kopie des ursprünglichen Inhalts im permanenten Dokumentarchiv beibehalten, wenn Benutzer diesen bearbeiten oder löschen; bei E-Mails und öffentlichen Ordnern wird die Kopie im Ordner "Wiederherstellbare Elemente" aufbewahrt. Diese sicheren Speicherorte und die aufbewahrten Inhalte sind für die meisten Benutzer nicht sichtbar. Mit einer Aufbewahrungsrichtlinie müssen Benutzer nicht einmal wissen, dass ihre Inhalte der Richtlinie unterliegen.
+Für SharePoint-Websitesammlungen wird eine Kopie des ursprünglichen Inhalts im permanenten Dokumentarchiv beibehalten, wenn Benutzer diesen bearbeiten oder löschen; bei E-Mails und öffentlichen Ordnern wird die Kopie im Ordner "Wiederherstellbare Elemente" aufbewahrt. Diese sicheren Speicherorte und die aufbewahrten Inhalte sind für die meisten Benutzer nicht sichtbar. Mit einer Aufbewahrungsrichtlinie müssen Benutzer nicht einmal wissen, dass ihre Inhalte der Richtlinie unterliegen.
   
 Hinweise:
   
@@ -70,15 +70,15 @@ Hinweise:
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Inhalte in OneDrive-Konten und SharePoint-Websites
 
-Eine Aufbewahrungsrichtlinie wird auf Websiteebene angewendet. Wenn Sie eine SharePoint-Website oder ein OneDrive-Konto in eine Aufbewahrungsrichtlinie aufnehmen, wird ein permanentes Dokumentarchiv erstellt, falls noch keines vorhanden ist. Die meisten Benutzer können das permanente Dokumentarchiv nicht anzeigen, da es nur für Websitesammlungsadministratoren sichtbar ist.
+Eine Aufbewahrungsrichtlinie wird auf Websitesammlungsebene angewendet. Wenn Sie eine SharePoint-Websitesammlung oder ein OneDrive-Konto in eine Aufbewahrungsrichtlinie aufnehmen, wird ein permanentes Dokumentarchiv erstellt, falls noch keines vorhanden ist. Sie können diese Bibliothek auf der Seite **Websiteinhalt** auf der Website auf oberster Ebene in der Websitesammlung anzeigen. Die meisten Benutzer können das permanente Dokumentarchiv nicht anzeigen, da es nur für Websitesammlungsadministratoren sichtbar ist.
   
-Wenn ein Benutzer versucht, den Inhalt einer Website im Rahmen der Aufbewahrungsrichtlinie zu ändern oder zu löschen, überprüft die Aufbewahrungsrichtlinie zunächst, ob der Inhalt seit Anwendung der Richtlinie geändert wurde. Wenn dies die erste Änderung seit Anwendung der Richtlinie ist, kopiert die Aufbewahrungsrichtlinie den Inhalt in das permanente Dokumentarchiv und ermöglicht dem Benutzer dann das Ändern oder Löschen des ursprünglichen Inhalts. Beachten Sie, dass alle Inhalte der Website auch dann in das permanente Dokumentarchiv kopiert werden können, wenn der Inhalt der Abfrage, die von der Aufbewahrungsrichtlinie verwendet wird, nicht entspricht.
+Wenn ein Benutzer versucht, den Inhalt einer Website im Rahmen der Aufbewahrungsrichtlinie zu ändern oder zu löschen, überprüft die Aufbewahrungsrichtlinie zunächst, ob der Inhalt seit Anwendung der Richtlinie geändert wurde. Wenn dies die erste Änderung seit Anwendung der Richtlinie ist, kopiert die Aufbewahrungsrichtlinie den Inhalt in das permanente Dokumentarchiv und ermöglicht dem Benutzer dann das Ändern oder Löschen des ursprünglichen Inhalts. Beachten Sie, dass alle Inhalte der Websitesammlung auch dann in das permanente Dokumentarchiv kopiert werden können, wenn der Inhalt der Abfrage, die von der Aufbewahrungsrichtlinie verwendet wird, nicht entspricht.
   
 In diesem Fall bereinigt ein Zeitgeberauftrag das permanente Dokumentarchiv. Der Zeitgeberauftrag wird regelmäßig ausgeführt und vergleicht den gesamten Inhalt des permanenten Dokumentarchivs mit den Abfragen, die von den Aufbewahrungsrichtlinien der Website verwendet werden. Falls der Inhalt nicht mindestens einer der Abfragen entspricht, löscht der Zeitgeberauftrag den Inhalt dauerhaft aus dem permanenten Dokumentarchiv.
   
-Das gilt auch für Inhalte, die bei Anwendung der Aufbewahrungsrichtlinien vorhanden sind. Außerdem werden alle neuen Inhalte, die erstellt oder der Website hinzugefügt werden, nachdem sie in die Richtlinie eingeschlossen wurden, auch nach dem Löschen beibehalten. Neue Inhalte werden allerdings nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Um alle Versionen einer Dateien beizubehalten, müssen Sie die Versionsverwaltung aktivieren – siehe dazu den nachstehenden Abschnitt zur Versionsverwaltung.
+Das gilt auch für Inhalte, die bei Anwendung der Aufbewahrungsrichtlinien vorhanden sind. Außerdem werden alle neuen Inhalte, die erstellt oder der Websitesammlung hinzugefügt werden, nachdem sie in die Richtlinie eingeschlossen wurden, auch nach dem Löschen beibehalten. Neue Inhalte werden allerdings nicht bei der ersten Bearbeitung in das permanente Dokumentarchiv kopiert, sondern nur, wenn sie gelöscht werden. Um alle Versionen einer Dateien beizubehalten, müssen Sie die Versionsverwaltung aktivieren – siehe dazu den nachstehenden Abschnitt zur Versionsverwaltung.
   
-Beachten Sie, dass einem Benutzer eine Fehlermeldung angezeigt wird, wenn er versucht, eine Bibliothek, eine Liste, einen Ordner oder eine Website zu löschen, die/der einer Aufbewahrungsrichtlinie unterliegt. Ein Benutzer kann einen Ordner löschen, wenn er zunächst alle Dateien im Ordner, die der Richtlinie unterliegen, verschiebt oder löscht.
+Beachten Sie, dass einem Benutzer eine Fehlermeldung angezeigt wird, wenn er versucht, eine Bibliothek, eine Liste, einen Ordner oder eine Website zu löschen, die/der einer Aufbewahrungsrichtlinie unterliegt. Ein Benutzer kann einen Ordner löschen, wenn er zunächst alle Dateien im Ordner, die der Richtlinie unterliegen, verschiebt oder löscht. Beachten Sie auch, dass das Dokumentarchiv nur erstellt wird, wen das erste Element in die Bibliothek kopiert werden muss und nicht, wenn Sie die Aufbewahrungsrichtlinie erstellen. Zum Testen der Richtlinie müssen Sie daher ein Dokument in einer Website, die der Richtlinie unterliegt, bearbeiten oder löschen und dann zum Dokumentarchiv navigieren, um die aufbewahrte Kopie anzuzeigen.
   
 ![Diagramm des Aufbewahrungsflusses in SharePoint und OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
   
@@ -108,11 +108,11 @@ Nachdem einem Postfach odereinem öffentlichen Ordner eine Aufbewahrungsrichtlin
     
 2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird**, wird in allen Ordnern des Postfachs in regelmäßigen Abständen derselbe Vorgang ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist, und diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass die Standardeinstellung 14 Tage beträgt, aber es können auch 30 Tage eingestellt werden. 
     
-## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Dokumentversion in einer Website
+## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Dokumentversion in einer Websitesammlung
 
 Die Versionsverwaltung ist ein Feature für alle Dokumentbibliotheken in SharePoint Online und OneDrive for Business. Standardmäßig bewahrt die Versionsverwaltung mindestens 500 Hauptversionen auf, Sie können diesen Grenzwert jedoch erhöhen. Weitere Informationen finden Sie unter [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
-Eine Aufbewahrungsrichtlinie bewahrt alle Versionen eines Dokuments in einer SharePoint-Website oder einem OneDrive-Konto auf. Jedes Mal, wenn ein Dokument, das einer Aufbewahrungsrichtlinie unterliegt, bearbeitet oder gelöscht wird, wird eine Version in das permanente Dokumentarchiv kopiert. Jede Version eines Dokuments im permanenten Dokumentarchiv existiert als separates Element mit einem eigenen Aufbewahrungszeitraum:
+Eine Aufbewahrungsrichtlinie bewahrt alle Versionen eines Dokuments in einer SharePoint-Websitesammlung oder einem OneDrive-Konto auf. Jedes Mal, wenn ein Dokument, das einer Aufbewahrungsrichtlinie unterliegt, bearbeitet oder gelöscht wird, wird eine Version in das permanente Dokumentarchiv kopiert. Jede Version eines Dokuments im permanenten Dokumentarchiv existiert als separates Element mit einem eigenen Aufbewahrungszeitraum:
   
 - Wenn die Aufbewahrungsrichtlinie darauf basiert, wann der Inhalt erstellt wurde, verfügt jede Version über das gleiche Ablaufdatum wie das ursprüngliche Dokument. Das ursprüngliche Dokument und dessen Versionen laufen gleichzeitig ab.
     
@@ -122,7 +122,7 @@ Eine Aufbewahrungsrichtlinie bewahrt alle Versionen eines Dokuments in einer Sha
 
 Mit einer Aufbewahrungsrichtlinie können Sie Inhalte auf unbestimmte Zeit oder für eine bestimmte Anzahl von Tagen, Monaten oder Jahren aufbewahren. Beachten Sie, dass die Dauer der Aufbewahrung anhand des Alters der Inhalte, und nicht basierend auf dem Zeitpunkt der Anwendung der Aufbewahrungsrichtlinie berechnet wird. Sie können auswählen, ob das Alter auf dem Zeitpunkt der Erstellung des Inhalts oder (bei OneDrive und SharePoint) auf dem Zeitpunkt der letzten Änderung basieren soll.
   
-Wenn Sie Inhalte einer Website beispielsweise nach ihrer letzten Änderung sieben Jahre lang aufbewahren möchten und ein Dokument in dieser Website sechs Jahre lang nicht geändert wurde, wird das Dokument nur noch ein weiteres Jahr aufbewahrt, falls es nicht geändert wird. Falls das Dokument wieder geändert wird, wird das Alter des Dokuments anhand des neuen Datums der letzten Änderung berechnet und weitere sieben Jahre lang aufbewahrt.
+Wenn Sie Inhalte einer Websitesammlung beispielsweise nach ihrer letzten Änderung sieben Jahre lang aufbewahren möchten und ein Dokument in dieser Websitesammlung sechs Jahre lang nicht geändert wurde, wird das Dokument nur noch ein weiteres Jahr aufbewahrt, falls es nicht geändert wird. Falls das Dokument wieder geändert wird, wird das Alter des Dokuments anhand des neuen Datums der letzten Änderung berechnet und weitere sieben Jahre lang aufbewahrt.
   
 Ebenso wird, wenn Sie Inhalte in einem Postfach für sieben Jahre aufbewahren möchten, und eine Nachricht wurde vor sechs Jahren gesendet, die Nachricht nur noch ein Jahr lang aufbewahrt. Bei Exchange-Inhalten basiert das Alter immer auf dem Empfangs- oder Sendedatum (diese sind identisch). Das Aufbewahren von Inhalten basierend auf ihrer letzten Änderung gilt nur für Websiteinhalte in OneDrive und SharePoint.
   
@@ -140,7 +140,7 @@ Wenn Ihre Aufbewahrungsrichtlinie Inhalte löscht, ist es wichtig, zu wissen, da
   
 Nehmen wir zum Beispiel an, dass Sie eine Aufbewahrungsrichtlinie erstellen, nach der Inhalte nach drei Jahren gelöscht werden, und diese Aufbewahrungsrichtlinie dann allen OneDrive-Konten zuweisen, die viele Inhalte enthalten, die vor vier oder fünf Jahren erstellt wurden. In einem solchen Fall werden viele der Inhalte schon bald nach der ersten Zuweisung der Aufbewahrungsrichtlinie gelöscht. Daher kann **eine Aufbewahrungsrichtlinie, nach der Inhalte gelöscht werden, wesentliche Auswirkungen auf Ihre Inhalte haben**. 
   
-Daher sollten Sie vor dem erstmaligen Zuweisen einer Richtlinie zu einer Website zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen Inhalt bedenken. Sie können außerdem vor dem Zuweisen die Benutzer über die neue Richtlinie informieren, um ihnen Zeit zur Auswertung der möglichen Auswirkungen zu geben. Beachten Sie, dass folgende Warnung erscheint, wenn Sie die Einstellungen für Ihre Aufbewahrungsrichtlinie prüfen, bevor Sie sie erstellen.
+Daher sollten Sie vor dem erstmaligen Zuweisen einer Richtlinie zu einer Websitesammlung zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen Inhalt bedenken. Sie können außerdem vor dem Zuweisen die Benutzer über die neue Richtlinie informieren, um ihnen Zeit zur Auswertung der möglichen Auswirkungen zu geben. Beachten Sie, dass folgende Warnung erscheint, wenn Sie die Einstellungen für Ihre Aufbewahrungsrichtlinie prüfen, bevor Sie sie erstellen.
   
 ![Warnung zum Löschen von Inhalten](media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -182,7 +182,7 @@ Eines der leistungsstärksten Features einer Aufbewahrungsrichtlinie ist, dass s
   
 - Exchange-E-Mail
     
-- SharePoint-Websites
+- SharePoint-Websitesammlungen
     
 - OneDrive-Konten
     
@@ -212,7 +212,7 @@ Sie können eine Aufbewahrungsrichtlinie auch auf bestimmte Benutzer anwenden. S
   
 Beachten Sie jedoch, dass die folgenden Grenzwerte für Aufbewahrungsrichtlinien gelten, die mehr als 1.000 bestimmte Benutzer ein- oder ausschließt:
   
-- Eine Aufbewahrungsrichtlinie kann nicht mehr als 1.000 Postfächer und 100 Websites umfassen.
+- Eine Aufbewahrungsrichtlinie kann nicht mehr als 1.000 Postfächer und 100 Websitesammlungen umfassen.
     
 - Ein Mandant kann nicht mehr als 10.000 Aufbewahrungsrichtlinien umfassen.
     
