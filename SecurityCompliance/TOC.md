@@ -272,7 +272,6 @@
 #### [Erstellen einer Aufbewahrungsbenachrichtigung](compliance20/create-hold-notification.md)
 #### [Verwenden des Kommunikations-Editors](compliance20/using-communications-editor.md)
 #### [Verwalten von Aufbewahrungsbenachrichtigungen](compliance20/manage-hold-notification.md)
-#### [Bearbeiten einer Aufbewahrungsbenachrichtigung](compliance20/edit-hold-notification.md)
 #### [Bestätigen einer Aufbewahrungsbenachrichtigung](compliance20/acknowledge-hold-notification.md)
 
 ### [Verwalten von Speichern](compliance20/managing-holds.md)
