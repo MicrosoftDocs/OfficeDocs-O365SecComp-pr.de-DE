@@ -131,6 +131,7 @@
 ### [Einrichten der Verschlüsselung in Office 365 Enterprise](set-up-encryption.md)
 ### [E-Mail-Verschlüsselung in Office 365](email-encryption.md)
 ### [Office 365-Nachrichtenverschlüsselung (OME)](ome.md)
+#### [Vergleichen von OME-Versionen](ome-version-comparison.md)
 #### [Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)
 #### [Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md)
 #### [Verwalten der Office 365-Nachrichtenverschlüsselung](manage-office-365-message-encryption.md)
@@ -265,16 +266,16 @@
 ### [Arbeiten mit Verwaltungsberechtigten](compliance20/managing-custodians.md)
 #### [Hinzufügen von Verwaltungsberechtigten zu einem Fall](compliance20/add-custodians-to-case.md)
 #### [Verwalten von Verwaltungsberechtigten](compliance20/manage-new-custodians.md)
-#### [Aktivitäten von Verwaltungsberechtigten](compliance20/view-custodian-activity.md)
+#### [Anzeigen der Aktivitäten von Verwaltungsberechtigten](compliance20/view-custodian-activity.md)
 
 ### [Arbeiten mit Kommunikation](compliance20/managing-custodian-communications.md)
 #### [Erstellen einer Aufbewahrungsbenachrichtigung](compliance20/create-hold-notification.md)
 #### [Verwenden des Kommunikations-Editors](compliance20/using-communications-editor.md)
 #### [Verwalten von Aufbewahrungsbenachrichtigungen](compliance20/manage-hold-notification.md)
 #### [Bearbeiten einer Aufbewahrungsbenachrichtigung](compliance20/edit-hold-notification.md)
-#### [Bestätigen von Aufbewahrungsbenachrichtigung](compliance20/acknowledge-hold-notification.md)
+#### [Bestätigen einer Aufbewahrungsbenachrichtigung](compliance20/acknowledge-hold-notification.md)
 
-### [Verwalten der Aufbewahrung](compliance20/managing-holds.md)
+### [Verwalten von Speichern](compliance20/managing-holds.md)
 
 ### [Beheben von Verarbeitungsfehlern](compliance20/processing-data-for-case.md)
 #### [Erweiterte Indizierung der Daten von Verwaltungsberechtigten](compliance20/indexing-custodian-data.md)
@@ -289,8 +290,8 @@
 ### [Überprüfen von Falldaten](compliance20/reviewing-data-in-working-set.md)
 #### [Verwalten von Arbeitssätzen](compliance20/managing-working-sets.md)
 #### [Verwalten von Ladesätzen](compliance20/manage-load-sets.md)
-#### [Laden von Nicht-Office-365-Daten in einen Arbeitssatz](compliance20/load-non-office365-data.md)
-#### [Abfragen von Daten in einem Arbeitssatz](compliance20/working-set-search.md)
+#### [Laden von Nicht-Office 365-Daten in einen Arbeitssatz](compliance20/load-non-office365-data.md)
+#### [Abfragen der Daten in einem Arbeitssatz](compliance20/working-set-search.md)
 #### [Anzeigen von Dokumenten in einem Arbeitssatz](compliance20/annotating-and-redacting-documents.md)
 #### [Markieren von Dokumenten in einem Arbeitssatz](compliance20/tagging-documents.md)
 
@@ -302,9 +303,9 @@
 
 ### [Exportieren von Falldaten](compliance20/exporting-data-ediscover20.md)
 #### [Exportieren von Dokumenten aus einem Arbeitssatz](compliance20/export-documents-from-working-set.md)
-#### [Herunterladen von Exportaufträgen](compliance20/download-export-jobs.md).
+#### [Herunterladen von Exportaufträgen](compliance20/download-export-jobs.md)
 
-### [Verwalten der Aufträge](compliance20/managing-jobs-ediscovery20.md)
+### [Verwalten von Aufträgen](compliance20/managing-jobs-ediscovery20.md)
 
 ### [Konfigurieren von Falleinstellungen](compliance20/configuring-case-settings-ediscovery20.md)
 #### [Schließen oder Löschen eines Falls](compliance20/close-or-delete-case.md)
@@ -347,7 +348,7 @@
 #### [Ausführen der Relevanzbewertung und -markierung](tagging-and-assessment-in-advanced-ediscovery.md)
 #### [Einrichten des Relevanztrainings](manage-relevance-setup-in-advanced-ediscovery.md)
 #### [Ausführen des Relevanztrainings und der -markierung](tagging-and-relevance-training-in-advanced-ediscovery.md)
-#### [Nachverfolgen des Relevanztraininsvorgangs](track-relevance-analysis-in-advanced-ediscovery.md)
+#### [Nachverfolgen des Relevanztrainingsvorgangs](track-relevance-analysis-in-advanced-ediscovery.md)
 #### [Testen der Ergebnisse der Relevanzanalyse](test-relevance-analysis-in-advanced-ediscovery.md)
 #### [Laden zusätzlicher Daten für das Relevanztraining](set-up-loads-to-add-imported-files.md)
 
