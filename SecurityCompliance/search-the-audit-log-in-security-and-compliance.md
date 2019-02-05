@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Verwenden Sie die Office 365-Sicherheit und Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: 'Verwenden Sie die Sicherheit in Office 365 & Compliance Center, um unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118141"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735467"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit und Compliance Center
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Sicherheit in Office 365 Compliance Center &
 
 Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus dem Postfach gelöscht? Wenn also die Sicherheit der Office 365 verwendbare &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. Warum einer einheitlichen Audit protokolliert? Da Sie für die folgenden Typen von Benutzer- und Admin Aktivität in Office 365 suchen können:
   
@@ -40,7 +40,7 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
     
 - Benutzer- und Admin-Aktivität im Schlingern
     
-- eDiscovery-Aktivitäten im Compliance Center & Sicherheit in Office 365
+- eDiscovery-Aktivitäten in der Office 365-Sicherheit & Compliance Center
     
 - Benutzer- und Admin Aktivität in Power BI
     
@@ -112,7 +112,7 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     |Microsoft Forms  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -172,6 +172,9 @@ Hier ist der Prozess für die Suche im Überwachungsprotokolls in Office 365.
     d. **Datei, Ordner, oder** Geben Sie einige oder alle ein File- oder Folder Name für die Suche nach Aktivitäten im Zusammenhang mit der Datei des Ordners, der das angegebene Schlüsselwort enthält. Sie können auch eine URL einer Datei oder eines Ordners angeben. Enthalten Sie Wenn Sie eine URL verwenden, sicherzustellen, dass der Typ der vollständige URL-Pfad sein oder wenn Sie nur einen Teil der URL eingeben nicht keine Sonderzeichen oder Leerzeichen. 
     
     Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Dateien und Ordner in Ihrer Organisation.
+    
+    > [!TIP]
+    > Wenn Sie für alle Aktivitäten im Zusammenhang mit einer **Website**suchen, fügen Sie das Platzhalterzeichen (\*) nach der URL, die alle Einträge für diese Website; zurückgeben beispielsweise **"https://contoso-my.sharepoint.com/personal/*"**.
     
 5. Klicken Sie auf **Suche** zum Ausführen der Suche mit den Suchkriterien. 
     
@@ -400,7 +403,8 @@ Die folgende Tabelle enthält die Ereignisse, die von Site-Administrationsaufgab
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Ausgenommene Benutzer-Agent hinzugefügt  <br/> |ExemptUserAgentSet  <br/> |Eine SharePoint oder globaler Administrator Fügt einen Benutzer-Agent zur Liste der ausgenommene Benutzer-Agents in der SharePoint-Verwaltungskonsole.  <br/> |
-|Hinzugefügte Websitesammlungs-Administrator  <br/> |SiteCollectionAdminAdded  <br/> |Websitesammlungs-Administrator oder Besitzer eine Person, die als ein Websitesammlungsadministrator für eine Website hinzugefügt werden. Websitesammlungsadministratoren haben Vollzugriff-Berechtigungen für die Websitesammlung und aller Unterwebsites.  <br/> |
+|Hinzugefügte Websitesammlungs-Administrator  <br/> |SiteCollectionAdminAdded  <br/> |Websitesammlungs-Administrator oder Besitzer eine Person, die als ein Websitesammlungsadministrator für eine Website hinzugefügt werden. Websitesammlungsadministratoren haben Vollzugriff-Berechtigungen für die Websitesammlung und aller Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator selbst Zugriff auf ein Benutzerkonto OneDrive haben (nach dem Benutzerprofil in der SharePoint-Verwaltungskonsole oder [mithilfe von Office 365 Administrationscenter](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)bearbeiten).<br/> |
+|(kein Rahmen)  <br/> |SiteCollectionAdminRemoved <br/> |Websitesammlungs-Administrator oder Besitzer entfernt eine Person als Websitesammlungsadministrator für eine Website. Diese Aktivität wird auch protokolliert, wenn ein Administrator selbst aus der Liste der Websitesammlungsadministratoren für ein Benutzerkonto OneDrive entfernt (nach dem Benutzerprofil im SharePoint Administrationscenter bearbeiten).  Beachten Sie, dass wenn diese Aktivität in den Suchergebnissen für Audit Log zurückgeben möchten, Sie für alle Aktivitäten zu suchen müssen. <br/> |
 |Hinzugefügte Benutzer oder Gruppen zu SharePoint-Gruppe  <br/> |AddedToGroup  <br/> |Benutzer werden ein Element oder Gast zu einer SharePoint-Gruppe hinzugefügt. Dies möglicherweise eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität, wie ein Ereignis sharing wurden.  <br/> |
 |Zulässige Benutzer zum Erstellen von Gruppen  <br/> |AllowGroupCreationSet  <br/> |Websiteadministrator oder Besitzer Fügt eine Berechtigungsstufe auf einer Website, die einem Benutzer ermöglicht, die Berechtigung zum Erstellen einer Gruppe für diesen Standort zugewiesen.  <br/> |
 |Geo abgebrochen Website verschieben  <br/> |SiteGeoMoveCancelled  <br/> |Eine SharePoint oder globaler Administrator hebt erfolgreich eine SharePoint oder OneDrive Website Geo verschoben werden. Die Multi-Geo-Funktion können eine Office 365-Organisation mehrere Regionen für die Office 365-Datacenter, umfassen die Geos bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
@@ -421,7 +425,7 @@ Die folgende Tabelle enthält die Ereignisse, die von Site-Administrationsaufgab
 |Aktivierte RSS-feeds  <br/> |NewsFeedEnabledSet  <br/> |Websiteadministrator oder Besitzer können RSS-Feeds für eine Website. Globale Administratoren können RSS-Feeds für die gesamte Organisation im SharePoint Administrationscenter aktivieren.  <br/> |
 |Geänderte zugriffsanforderung festlegen  <br/> |WebRequestAccessModified  <br/> |Die Einstellungen für die Anforderung wurden auf einer Website geändert.  <br/> |
 |Geänderte Elemente können freigeben-Einstellung  <br/> |WebMembersCanShareModified  <br/> |Die Einstellung **Mitglieder können freigeben** wurde auf einer Website geändert.  <br/> |
-|Geänderte Projektwebsite-Berechtigungen  <br/> |SitePermissionsModified  <br/> |Websiteadministrator oder Besitzer (oder Systemkonto) ändert sich die Berechtigungsstufe, die eine Gruppe auf einer Website zugeordnet sind. Diese Aktivität wird auch protokolliert, wenn alle Berechtigungen aus einer Gruppe entfernt werden.<br/> > [!NOTE]> Dieser Vorgang wurde in SharePoint Online verworfen. Damit Ereignisse ermittelt wird, können Sie für andere Aktivitäten Berechtigungen in Zusammenhang stehen, wie **Websitesammlungsadministrator hinzugefügt**, **Es wurden Benutzer oder eine Gruppe zu SharePoint-Gruppe**, **Zugelassene Benutzer zum Erstellen von Gruppen**, **Gruppe erstellt**und **Deleted suchen Gruppe.**         |
+|Geänderte Projektwebsite-Berechtigungen  <br/> |SitePermissionsModified  <br/> |Websiteadministrator oder Besitzer (oder Systemkonto) ändert sich die Berechtigungsstufe, die eine Gruppe auf einer Website zugeordnet sind. Diese Aktivität wird auch protokolliert, wenn alle Berechtigungen aus einer Gruppe entfernt werden.<br/> > [!NOTE]>, die diesen Vorgang in SharePoint Online veraltet ist. Damit Ereignisse ermittelt wird, können Sie für andere Aktivitäten Berechtigungen in Zusammenhang stehen, wie **Websitesammlungsadministrator hinzugefügt**, **Es wurden Benutzer oder eine Gruppe zu SharePoint-Gruppe**, **Zugelassene Benutzer zum Erstellen von Gruppen**, **Gruppe erstellt**und **Deleted suchen Gruppe.**         |
 |Benutzer oder eine Gruppe von SharePoint-Gruppe entfernt.  <br/> |RemovedFromGroup  <br/> |Benutzer entfernt ein Element oder Gast aus einer SharePoint-Gruppe an. Dies kann eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität, wie ein Ereignis Sperren wurden.  <br/> |
 |Umbenannte Website  <br/> |SiteRenamed  <br/> |Benennt Websiteadministrator oder Besitzer eine Website  <br/> |
 |Administratorberechtigungen für die angeforderte Website  <br/> |SiteAdminChangeRequest  <br/> |Benutzeranfragen als ein Websitesammlungsadministrator für eine Websitesammlung hinzugefügt werden soll. Websitesammlungsadministratoren haben Vollzugriff-Berechtigungen für die Websitesammlung und aller Unterwebsites.  <br/> |
@@ -624,7 +628,7 @@ Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Akti
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
-Sie können das Überwachungsprotokoll Aktivitäten in Microsoft Flow suchen. Hierzu zählen erstellen, bearbeiten und Löschen von fließt und Ändern der Berechtigungen für den Nachrichtenfluss. Informationen zur Überwachung für Workflowaktivitäten finden Sie im Blogbeitrag [Microsoft Fluss Überwachen von Ereignissen, die nun in Office 365-Sicherheit und Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
+Sie können das Überwachungsprotokoll Aktivitäten in Microsoft Flow suchen. Hierzu zählen erstellen, bearbeiten und Löschen von fließt und Ändern der Berechtigungen für den Nachrichtenfluss. Informationen zur Überwachung für Workflowaktivitäten finden Sie im Blogbeitrag [Microsoft Fluss Überwachen von Ereignissen, die nun in Office 365-Sicherheit & Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
@@ -682,7 +686,7 @@ Beachten Sie außerdem, dass die Dauer des Aufbewahrungszeitraums für Audit Dat
 
 Ja. Die Office 365-Verwaltungs-Aktivität-API wird verwendet, um die Überwachungsprotokolle programmgesteuert abgerufen.  Zum Einstieg finden Sie unter [Erste Schritte mit Office 365-Management-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Gibt es andere Methoden, um die Protokolle an die Office 365-Sicherheit & Compliance Center oder die Office 365-Verwaltungs-Aktivität API Überwachung abrufen?**
+**Gibt es andere Methoden, um die Protokolle mit der Sicherheit in Office 365 & Compliance Center oder Office 365 Management Aktivität API Überwachung abrufen?**
 
 Nein. Dies sind die nur zwei Methoden zum Abrufen von Daten aus dem Office 365-Überwachung-Dienst. 
 
