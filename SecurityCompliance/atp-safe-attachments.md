@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 01/08/2019
+ms.date: 02/05/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: Die sichere Anlagen-Funktion bietet Zeit des klicken Sie auf Überprüfung von e-Mail-Anlagen. Verwenden sichere Anlagen in Ihrer Organisation vor böswilligen Dateien schützen senden oder Empfangen von e-Mail.
-ms.openlocfilehash: 85c1ec3e0126a155f863b9fef9ddb36b13d0b3fb
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 3717c0d278aaba4fce25cb196ebef9e277921408
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769839"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741128"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP sichere Anlagen
 
@@ -27,7 +27,7 @@ ms.locfileid: "27769839"
 
 ATP sichere Anlagen (zusammen mit [Sicheren Links ATP](atp-safe-links.md)) ist Teil der [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP). Das Feature ATP sichere Anlagen überprüft, ob e-Mail-Anlagen böswilligen sind und nimmt dann Aktion zum Schutz Ihrer Organisation. Das Feature ATP sichere Anlagen schützt Ihr Unternehmen gemäß den [Richtlinien ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md) , die von Ihrem Office 365 globaler oder Sicherheitsadministratoren festgelegt sind. 
   
-ATP Protection wurde vor kurzem in Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert. Finden Sie weitere Informationen finden Sie unter [Office 365 erweiterte Bedrohungsschutz für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md).
+ATP Schutz kann auch auf Dateien in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams, erweitert werden. Finden Sie weitere Informationen finden Sie unter [Office 365 erweiterte Bedrohungsschutz für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md).
        
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -45,18 +45,25 @@ Sichere Anlagen ATP Richtlinien können auf bestimmte Benutzer oder Gruppen in I
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Wie ATP sichere Anlagen abrufen
 
-Das Feature ATP sichere Anlagen ist Teil der [Office 365 erweiterte Threat Protection](office-365-atp.md). Anwenden, wenn die sichere Anlagen ATP-Funktionen:
+Stellen Sie zunächst sicher, dass Ihr Abonnement [Erweiterte Threat Protection](office-365-atp.md)umfasst. ATP ist in Abonnements, wie beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5 usw. enthalten. Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 ATP enthalten ist umfasst, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+
+Im nächsten Schritt stellen Sie sicher, dass alle Richtlinien ATP sichere Anlagen definiert sind. (Siehe [Einrichten von Richtlinien für Office 365 ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md)) Sichere Anlagen ATP Features sind in den aktiv:
   
 - Sichere Anlagen ATP Richtlinien sind eingerichtet. (Siehe [sichere Anlagen ATP Richtlinien in Office 365 einrichten](set-up-atp-safe-attachments-policies.md).)
     
 - Benutzer haben in Office 365 mit ihrer Arbeit oder Schule Konto angemeldet. (Siehe [Office oder Office 365 anmelden](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+
+Um ATP Richtlinien definieren (oder bearbeiten), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden:
+
+|Rolle  |WHERE/wie zugewiesen.  |
+|---------|---------|
+|Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
+|Office 365-Sicherheitsadministrator |Administrationscenter ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Wie Sie feststellen, ob die sichere Anlagen ATP Schutz vorhanden ist
 
-[Anzeigen von Berichten für erweiterte Schutz](view-reports-for-atp.md)ist eine gute Möglichkeit, finden Sie unter wie der Dienst funktioniert wird.
-
-
-In der Reihenfolge für den Schutz von ATP sichere Anlagen vorhanden sein muss [ATP sichere Anlagen Richtlinien](set-up-atp-safe-attachments-policies.md) definiert werden.   
+Nachdem Sie [Ihre ATP sichere Anlagen Richtlinien definiert (oder überprüft)](set-up-atp-safe-attachments-policies.md)haben, ist eine gute Möglichkeit, finden Sie unter wie der Dienst funktioniert durch [Anzeigen von Berichten für erweiterte Threat Protection](view-reports-for-atp.md).
   
 In der folgenden Tabelle werden einige Beispielszenarien beschrieben. In allen Fällen wird davon ausgegangen, dass die Organisation über ein Office 365-Abonnement verfügt, der erweiterte Schutz enthält.
   

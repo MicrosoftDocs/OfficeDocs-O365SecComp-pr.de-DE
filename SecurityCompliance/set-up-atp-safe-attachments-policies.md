@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014877"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741118"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
 
@@ -35,7 +36,13 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
 
 - Stellen Sie sicher, dass Ihre Organisation [Office 365 erweiterte Schutz](office-365-atp.md)verfügt.
     
-- Stellen Sie sicher, dass Sie die erforderlichen verfügen [Berechtigungen für die Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen verfügen. Um ATP Richtlinien definieren (oder bearbeiten), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden: <br>
+
+    |Rolle  |WHERE/wie zugewiesen.  |
+    |---------|---------|
+    |Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
+    |Office 365-Sicherheitsadministrator |Administrationscenter ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 - [Informieren Sie sich über Richtlinienoptionen ATP sichere Anlagen](#learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, wie die Optionen Monitor oder ersetzen können dazu führen eine geringfügige Verzögerung von e-Mails während Anlagen überprüft werden. Nachricht verzögert zu vermeiden, erwägen Sie [Dynamische Übermittlung und Anzeigen der Vorschau](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +50,7 @@ Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: Einrichten eine Richtlinie für den sicheren Anlagen ATP (oder bearbeiten)
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     
 2. In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie im linken Navigationsbereich unter **Threat Management** **Policy** \> **Sichere Anlagen**.
     
@@ -85,4 +92,6 @@ Wie Sie Ihre Richtlinien ATP sichere Anlagen eingerichtet haben, wählen Sie ein
 Nachdem Ihre ATP sichere Anlagen Richtlinien vorhanden sind, können Sie sehen, wie für Ihre Organisation ATP funktionsfähig ist, indem Sie Berichte anzeigen. Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
 - [Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
 - [Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
+
+Neue Features der ATP behalten. Besuchen Sie die [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) , und informieren Sie sich über [neue Features, die ATP hinzugefügt wird](office-365-atp.md#new-features-are-continually-being-added-to-atp).
  

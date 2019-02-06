@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 12/11/2018
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Hier erfahren Sie, wie Sie eine Liste der blockierten URLs für Ihre Organisation mit Office 365 erweiterte Threat Protection einrichten. Blockierte URLs werden auf e-Mail-Nachrichten und Office-Dokumenten gemäß Ihrer ATP sichere Links Richtlinien angewendet.
-ms.openlocfilehash: 2b2fa78a4dbd6fc8bd0e46d7f23402aff732e096
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 4146424056c9a5b30f51a58fd020df912fa048ef
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014957"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741018"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte blockierte URLs Liste mit sicheren Links zu Office 365 ATP
 
@@ -33,6 +33,14 @@ Lesen Sie diesen Artikel erfahren, wie Ihre Organisation benutzerdefinierte bloc
 ## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Zeigen Sie an oder bearbeiten Sie eine benutzerdefinierte Liste der blockierten URLs
 
 [ATP sichere Links in Office 365](atp-safe-links.md) verwendet mehrere Listen, einschließlich Ihrer Organisation benutzerdefinierte blockierte URLs Liste. Wenn Sie die erforderlichen Berechtigungen verfügen, können Sie benutzerdefinierte Liste in Ihrer Organisation einrichten. Zu diesem Zweck Ihrer Organisation Standardrichtlinie sichere Links bearbeiten.
+
+Um ATP Richtlinien bearbeiten (oder definieren), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden: 
+
+|Rolle  |WHERE/wie zugewiesen.  |
+|---------|---------|
+|Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
+|Office 365-Sicherheitsadministrator |Administrationscenter ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
     

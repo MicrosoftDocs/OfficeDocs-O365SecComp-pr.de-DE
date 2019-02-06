@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über die Eigenschaften für e-Mail- und -Datei, die in Exchange Online-Postfächern und SharePoint oder OneDrive for Business-Websites mit dem Tool für die Inhaltssuche in die Office 365-Sicherheit suchen können &amp; Compliance Center.  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328161"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741168"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -206,7 +206,7 @@ Erstellen Sie eine Bedingung mit Dokumenteigenschaften, bei der Suche nach Dokum
 |:-----|:-----|
 |Autor  <br/> |Autor Felds aus Office-Dokumenten, die weiterhin auf, wenn ein Dokument kopiert wird. Beispielsweise wenn ein Benutzer ein Dokument und die e-Mails erstellt wird, um eine andere Person, die er klicken Sie dann auf SharePoint, das Dokument hochgeladen weiterhin den ursprünglichen Autor beibehalten.  <br/> |
 |Position  <br/> |Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben ist. Es ist anders als der Dateiname des Dokuments.  <br/> |
-|Created  <br/> |Das Datum, an dem ein Dokument erstellt wird.  <br/> |
+|Erstellt  <br/> |Das Datum, an dem ein Dokument erstellt wird.  <br/> |
 |Zuletzt geändert  <br/> |Das Datum, an dem ein Dokument zuletzt geändert wurde.  <br/> |
 |Dateityp  <br/> |Die Erweiterung einer Datei; beispielsweise Docx, einem, Pptx oder Xlsx. Dies ist die gleiche Eigenschaft als FileExtension Website-Eigenschaft.  <br/> |
   
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Verwenden Sie bei der Suche einer Eigenschaft doppelte Anführungszeichen (""), wenn der gesuchte Wert aus mehreren Wörtern besteht. Beispielsweise `subject:budget Q1` gibt Nachrichten mit **Budget** in der in der Betreffzeile und, enthalten **Q1** an einer beliebigen Stelle in der Nachricht oder in einem der Nachrichteneigenschaften. Mit `subject:"budget Q1"` gibt alle Nachrichten, die **Q1 Budget** an einer beliebigen Stelle in der Betreffzeile enthalten. 
     
 - Um bestimmte-Eigenschaft den Wert aus den Suchergebnissen markiert Inhalte auszuschließen, setzen Sie ein Minuszeichen (-) vor den Namen der Eigenschaft. Beispielsweise `-from:"Sara Davis"` schließt Sara Davis gesendeten Nachrichten.
-- Sie können Elemente basierend auf den Elementtyp exportieren. Beispielsweise um Skype IM Nachrichten Recived von einem Benutzer zu exportieren, verwenden Sie die Syntax "Art: Sofortnachrichten" an. Diese Suche Abfragen Returen alle im-Nachricht. 
+
+- Sie können Elemente basierend auf dem Nachrichtentyp exportieren. Beispielsweise um Skype-Unterhaltungen und Chats in Microsoft-Teams zu exportieren, verwenden Sie die Syntax `kind:im`. Um e-Mail-Nachrichten zurückzugeben, verwenden Sie `kind:email`. Chats, Besprechungen und Anrufe in Microsoft-Teams, verwenden Sie zum Zurückgeben `kind:microsoftteams`.

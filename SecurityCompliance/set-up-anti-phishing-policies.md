@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 10/11/2018
+ms.date: 02/04/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
-description: Phishing-Schutz mit umfassenden Schutz als Bestandteil der Office 365 erweiterte Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Protection Schutz Ihrer Organisation vor böswilligen Identitätswechsel Phishing-Angriffe und andere Phishing-Angriffe. Wenn Sie ein Office 365 Enterprise-global oder Sicherheitsadministrator sind, können Sie die Anti-Phishing Richtlinien einrichten. Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
-ms.openlocfilehash: 0971ac2c653170f0242a1e9e3aaf111f5afc75d5
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+description: Phishing-Schutz mit umfassenden Schutz als Bestandteil der Office 365 erweiterte Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Protection Schutz Ihrer Organisation vor böswilligen Identitätswechsel Phishing-Angriffe und andere Phishing-Angriffe.
+ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498007"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741148"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP Anti-Phishing und Phishing-Richtlinien
 
@@ -24,25 +24,29 @@ ms.locfileid: "25498007"
 Phishing Angriffe kommen in einer Vielzahl von Formularen von Waren-basierte Angriffe auf zielgerichteten Spear Phishing oder Whaling. Mit der wachsenden Komplexität ist es schwierig, auch eine geschult Auge um einige dieser komplexen Angriffe zu identifizieren. Zum Glück kann Office 365 erweiterte Threat Protection helfen. Sie können eine ATP Anti-Phishing-Richtlinie einrichten, um sicherzustellen, dass Ihre Organisation vor solchen Angriffen geschützt ist.
   
 > [!NOTE]
-> ATP Anti-Phishing ist nur verfügbar, erweiterte Threat Protection, mit Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann der erweiterte Schutz als Add-on erworben werden. (Als ein globaler Administrator, in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen zu den Optionen zum Plan finden Sie unter [Vergleich alle Office 365 für Unternehmen plant](https://go.microsoft.com/fwlink/?linkid=844053). Stellen Sie sicher, dass Ihre Organisation die neueste Version von Office 365 ProPlus von Windows verwenden, ATP Phishing-Schutz vollständig zu nutzen. 
+> ATP Anti-Phishing ist nur verfügbar in erweiterte Threat Protection (ATP). ATP ist in Abonnements, wie beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5 usw. enthalten. Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 ATP enthalten ist umfasst, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Stellen Sie sicher, dass Ihre Organisation die neueste Version von Office 365 ProPlus von Windows verwenden, ATP Phishing-Schutz vollständig zu nutzen. 
 
-Anti-Phishing-Richtlinie ist jetzt verfügbar für Office 365 Exchange Online Protection mit eine begrenzte Auswahl von Anti-spoofing Schutz, die zum Schutz vor Angriffen Authentifizierung und Täuschung-basierten vorgesehen ist.
+Eine Richtlinie Anti-Phishing steht auch für Office 365 Exchange Online Protection mit eine begrenzte Auswahl von Anti-spoofing Schutz, die zum Schutz vor Angriffen Authentifizierung und Täuschung-basierten vorgesehen ist.
   
 Was ist zu tun:
   
 1. Überprüfen Sie die erforderlichen Komponenten.
     
-2. Informationen Sie zu Anti-Phishing und ATP Anti-Phishing Richtlinienoptionen.
+2. Informationen Sie zu Ihrer Anti-Phishing und ATP Anti-Phishing Richtlinienoptionen.
     
 3. Richten Sie eine Anti-Phishing-Richtlinie oder einer ATP Anti-Phishing-Richtlinie.
     
 ## <a name="review-the-prerequisites"></a>Überprüfen Sie die erforderlichen Komponenten
 
-- Stellen Sie sicher, dass Sie Mitglied der Gruppe der **Administratoren im Unternehmen** oder **Sicherheit-Admins** Rolle sind. 
+- Um ATP Richtlinien definieren (oder bearbeiten), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden: <br>
+
+    |Rolle  |WHERE/wie zugewiesen.  |
+    |---------|---------|
+    |Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
+    |Office 365-Sicherheitsadministrator |Administrationscenter ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
-- [Informieren Sie sich über ATP Anti-Phishing Richtlinienoptionen](set-up-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (in diesem Artikel). 
-    
-- Sie werden möglicherweise mehrere Anti-Phishing-Richtlinien für Ihre Organisation einrichten. Office 365 setzt diese Richtlinien in der Reihenfolge, die sie auf der **Seite Anti-Phishing** und **ATP Phishing -** Seiten in das Wertpapier aufgeführt sind &amp; Compliance Center. Nachdem Sie die Richtlinienoptionen überprüft haben, führen Sie etwas Zeit, um zu bestimmen, wie viele Richtlinien, die Sie benötigen und die Priorität für die einzelnen. 
+- Sie werden möglicherweise mehrere Anti-Phishing-Richtlinien für Ihre Organisation einrichten. Office 365 setzt diese Richtlinien in der Reihenfolge, die sie auf der **Seite Anti-Phishing** und **ATP Phishing -** Seiten in das Wertpapier aufgeführt sind &amp; Compliance Center. Nachdem Sie Ihre [Richtlinienoptionen](#learn-about-atp-anti-phishing-policy-options)überprüft haben, führen Sie etwas Zeit, um zu bestimmen, wie viele Richtlinien, die Sie benötigen und die Priorität für die einzelnen. 
     
 - Planen Sie etwa 5-15 Minuten verbringen zum Einrichten Ihrer ersten Anti-Phishing-Richtlinie.
     
@@ -60,15 +64,12 @@ Jede Organisation in Office 365 verfügt über eine Anti-Phishing-Standardrichtl
     
 4. Führen Sie auf der Seite **Anti-Phishing** oder **ATP Anti-Phishing** eine der folgenden Aktionen aus: 
     
-  - Zum Hinzufügen eine neue Richtlinie wählen Sie **+ Erstellen**.
-    
-  - Um eine vorhandene Richtlinie zu bearbeiten, wählen Sie den Namen der Richtlinie aus der Liste auf der Seite **Anti-Phishing** angezeigt, oder wählen Sie **Standardrichtlinie** über der Liste der standardmäßigen Poicy für Ihre Organisation zu bearbeiten. Wählen Sie auf der angezeigten Seite **Richtlinie bearbeiten**.  
-    
-    Ein Assistent wird gestartet, die Sie schrittweise durch die Anti-Phishing-Richtlinie definieren.
+    - Zum Hinzufügen eine neue Richtlinie wählen Sie **+ Erstellen**.
+    - Um eine vorhandene Richtlinie zu bearbeiten, wählen Sie den Namen der Richtlinie aus der Liste auf der Seite **Anti-Phishing** angezeigt. (Sie können oder **Default Policy** über der Liste auswählen.) Wählen Sie auf der angezeigten Seite **Richtlinie bearbeiten**.  
     
 5. Geben Sie Name, Beschreibung und Einstellungen für die Richtlinie ein. Einzelheiten finden Sie unter [erfahren Sie mehr über ATP Anti-Phishing Richtlinienoptionen](#learn-about-atp-anti-phishing-policy-options) . 
     
-6. Einmal Sie Ihre Einstellungen überprüft haben, wählen Sie **diese Richtlinie erstellen** oder **Speichern** nach Bedarf. 
+6. Nachdem Sie Ihre Einstellungen überprüft haben, wählen Sie **diese Richtlinie erstellen** (oder **Speichern**). 
     
 ## <a name="learn-about-atp-anti-phishing-policy-options"></a>Erfahren Sie mehr über ATP Anti-Phishing Richtlinienoptionen
 
@@ -76,7 +77,7 @@ Wie Sie einrichten oder Ihrer ATP Anti-Phishing-Richtlinien bearbeiten, können 
   
 |**Diese Einstellung**|**Funktion**|**Wird verwendet, wenn Sie möchten:**|
 |:-----|:-----|:-----|
-|**Hinzufügen von Benutzern zu schützen** <br/> |Definiert, welche e-Mail-Adressen durch die Richtlinie geschützt werden. Sie können bis zu 60 interne und externe Adressen hinzufügen, die Sie Identitätswechsel schützen möchten.  <br/> |Wenn Sie sicherstellen, dass e-Mails von außerhalb Ihrer Organisation einen Identitätswechsel eines der Benutzer in der Liste der Benutzer ist nicht geschützten möchten. Beispiele für Benutzer aus, die Sie möglicherweise schützen möchten sind allgemeine Führungskräfte, geschäftlichen Besitzer, externe Vorstandsmitglieder usw..<br/> Diese Liste mit Benutzern von geschützten unterscheidet sich von der Liste der Personen, für die die Richtlinie, oder vielmehr gilt, für die die Richtlinie erzwungen wird. Definieren Sie die Liste im Abschnitt **für** die Richtlinienoptionen betrifft.<br/> Angenommen, Sie Mary Smith hinzufügen \<marys@contoso.com\> als Benutzer zu schützen, wenden Sie die Richtlinie für die Gruppe "alle Benutzer". Dadurch wird sichergestellt, dass eine e-Mail-Nachrichten, die scheinbar impersonate "Mary Smith" gesendet, um einen Benutzer in der Gruppe "Alle Benutzer" durch die Richtlinie auf ausgeführt würde.<br/> |
+|**Hinzufügen von Benutzern zu schützen** <br/> |Definiert, welche e-Mail-Adressen durch die Richtlinie geschützt werden. Sie können bis zu 60 interne und externe Adressen hinzufügen, die Sie Identitätswechsel schützen möchten.  <br/> |Wenn Sie sicherstellen, dass e-Mails von außerhalb Ihrer Organisation einen Identitätswechsel eines der Benutzer in der Liste der Benutzer ist nicht geschützten möchten. Beispiele für Benutzer aus, die Sie möglicherweise schützen möchten sind allgemeine Führungskräfte, geschäftlichen Besitzer, externe Vorstandsmitglieder usw..<br/> Diese Liste mit Benutzern von geschützten unterscheidet sich von der Liste der Personen, für die die Richtlinie, oder vielmehr gilt, für die die Richtlinie erzwungen wird. Definieren Sie die Liste im Abschnitt **für** die Richtlinienoptionen betrifft.<br/> Wenn Sie hinzufügen, beispielsweise `Mary Smith <marys@contoso.com>` als Benutzer zu schützen, wenden Sie die Richtlinie für die Gruppe "alle Benutzer". Dadurch wird sichergestellt, dass eine e-Mail-Nachrichten, die scheinbar impersonate "Mary Smith" gesendet, um einen Benutzer in der Gruppe "Alle Benutzer" durch die Richtlinie auf ausgeführt würde.<br/> |
 |**Hinzufügen von Domänen zu schützenden Komponenten** <br/> |Ermöglicht Ihnen, welche Domänen sollen Identitätswechsel zu schützen. Sie können angeben, dass die Richtlinie alle Ihre benutzerdefinierten Domänen, eine durch Trennzeichen getrennte Liste der Domänen oder eine Kombination aus beidem enthält. Wenn Sie **automatisch umfassen Domänen, die ich besitzen**, und Sie später einer Domäne zu Office 365-Organisation hinzufügen, wird diese Anti-Phishing-Richtlinie für die neue Domäne sein.<br/> |Wenn Sie möchten sicherstellen, dass e-Mails von außerhalb Ihrer Organisation einen Identitätswechsel eines Domänen in Ihrer Liste der überprüften Domänen oder von einer Partnerdomäne definiert ist nicht.  <br/> |
 |**Wählen Sie Aktionen** <br/> |Wählen Sie die Aktion an, die beim Office 365 erkennt Versuch Identitätswechsel für den Benutzer und Domänen, die Sie die Richtlinie hinzugefügt. Sie können unterschiedliche Aktionen für Benutzer und Domänen in der gleichen Anti-Phishing-Richtlinie auswählen. Diese Aktionen gelten für alle eingehenden e-Mails, der als annehmen der Identität eines Benutzerkontos von Office 365 identifiziert wurde oder Domäne, unter dem diese Richtlinie Anti-Phishing-Schutz ist.<br/> **In Quarantäne verschobene Nachricht** E-Mails werden in Office 365 Quarantäne versendet. Wenn Sie diese Option auswählen, wird die e-Mail nicht an den ursprünglichen Empfänger gesendet.<br/> **Umleiten der Nachricht an eine andere e-Mail-Adresse** E-Mail wird an die e-Mail-Adresse gesendet, die Sie angeben. Sie können mehrere e-Mail-Adressen angeben. Wenn Sie diese Option auswählen, wird die e-Mail nicht an den ursprünglichen Empfänger gesendet.<br/> **Verschieben der Nachricht an die Empfänger Junk-e-Mail-Ordner** E-Mail wird an die Empfänger Junk-e-Mail-Ordner gesendet. Wenn Sie diese Option auswählen, die e-Mail wird weiterhin an den ursprünglichen Empfänger gesendet, aber wird nicht in den Posteingang des Empfängers platziert.<br/> **Die Nachricht zu übermitteln und andere Adressen der Bcc-Zeile hinzufügen** E-Mails werden an den ursprünglichen Empfänger übermittelt. Darüber hinaus werden der Benutzer, die Sie identifizieren hinzugefügt werden die Bcc-Zeile der Nachricht vor der Lieferung ist. Wenn Sie diese Option auswählen, wird die e-Mail noch an den ursprünglichen Posteingang des Empfängers gesendet.<br/> **Gelten nicht für alle Aktionen** E-Mail wird an den ursprünglichen Posteingang des Empfängers übermittelt werden. Klicken Sie auf der e-Mail-Nachricht wird keine andere Aktion ausgeführt werden.<br/> **Schalten Sie Phishing-Schutz-Tipps** Anti-Phishing Safety Tipps in e-Mail-aktiviert.  <br/> |Wenn Sie eine Aktion auf Nachrichten angewendet werden, die Office 365 festgestellt, dass ein Identitätswechsel eines Benutzers oder einer Domäne als der in der Richtlinie definierten möchten.  <br/> |
 |**Postfach Intelligence aktivieren** <br/> |Aktiviert oder deaktiviert Postfachs Intelligence für diese Richtlinie. Sie können nur Postfach Intelligence für cloudbasierten Konten, d. h., Konten aktivieren, deren Postfach vollständig in Office 365 gehostet wird.  <br/> |Wenn Sie Identitätswechsel Ergebnisse für Benutzer, die basierend auf den einzelnen Absender Wegweiser für jeden Benutzer verbessern möchten. Postfach Intelligence basiert auf Personen senden und Empfangen von e-Mails aus. Diese Intelligence ermöglicht Office 365 ein, um die Richtlinie Identitätswechsel auf der Benutzerebene anpassen, um besser falsch positive Ergebnisse zu behandeln.  <br/> |
@@ -133,18 +134,12 @@ Sie können benutzerdefinierte Richtlinien, die Sie erstellt haben, mithilfe der
 
 5. Wählen Sie auf der angezeigten Seite **Richtlinie zu löschen**. Können Sie bis zu 30 Minuten, damit die Änderungen in allen Office 365-Rechenzentren verteilen.
     
-## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Antiphishingschutz in Office 365](anti-phishing-protection.md)
-  
-[ATP-Antiphishingfunktionen in Office 365](atp-anti-phishing.md)
-  
-[Einrichten von ATP sichere Links Richtlinien in Office 365](set-up-atp-safe-links-policies.md)
-  
-[Einrichten von Richtlinien für ATP sichere Anlagen in Office 365](set-up-atp-safe-attachments-policies.md)
-  
-[Anzeigen der Berichte zu Advanced Threat Protection](view-reports-for-atp.md)
-  
+## <a name="next-steps"></a>Nächste Schritte
 
+Nachdem Ihre Anti-Phishing-Richtlinien vorhanden sind, können Sie sehen, wie Ihrer Schutzfunktionen Bedrohung für Ihre Organisation arbeiten sind, indem Sie Berichte anzeigen. Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
+- [Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md) oder [e-Mail-Sicherheitsberichte anzeigen](view-email-security-reports.md)
+- [Verwenden Sie Explorer (auch als Bedrohung Explorer bezeichnet)](use-explorer-in-security-and-compliance.md)
+
+Neue Features der ATP behalten. Besuchen Sie die [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) , und informieren Sie sich über [neue Features, die ATP hinzugefügt wird](office-365-atp.md#new-features-are-continually-being-added-to-atp).
+ 
