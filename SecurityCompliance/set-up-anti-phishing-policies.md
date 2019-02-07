@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Phishing-Schutz mit umfassenden Schutz als Bestandteil der Office 365 erweiterte Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Protection Schutz Ihrer Organisation vor böswilligen Identitätswechsel Phishing-Angriffe und andere Phishing-Angriffe.
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741148"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755266"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP Anti-Phishing und Phishing-Richtlinien
 
@@ -43,9 +43,11 @@ Was ist zu tun:
     |Rolle  |WHERE/wie zugewiesen.  |
     |---------|---------|
     |Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
-    |Office 365-Sicherheitsadministrator |Administrationscenter ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Sicherheitsadministrator |Azure Active Directory-Verwaltungskonsole ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
 - Sie werden möglicherweise mehrere Anti-Phishing-Richtlinien für Ihre Organisation einrichten. Office 365 setzt diese Richtlinien in der Reihenfolge, die sie auf der **Seite Anti-Phishing** und **ATP Phishing -** Seiten in das Wertpapier aufgeführt sind &amp; Compliance Center. Nachdem Sie Ihre [Richtlinienoptionen](#learn-about-atp-anti-phishing-policy-options)überprüft haben, führen Sie etwas Zeit, um zu bestimmen, wie viele Richtlinien, die Sie benötigen und die Priorität für die einzelnen. 
     
 - Planen Sie etwa 5-15 Minuten verbringen zum Einrichten Ihrer ersten Anti-Phishing-Richtlinie.

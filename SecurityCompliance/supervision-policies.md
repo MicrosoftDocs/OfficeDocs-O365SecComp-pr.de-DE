@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603525"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760077"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -69,12 +69,7 @@ Um das Setup zu vereinfachen, Erstellen von Gruppen für Personen, die ihre Komm
 
 Mit aufsichtsrichtlinien können Sie Nachrichten in einem oder mehreren der folgenden Kommunikation Plattformen überwachen:
 
-- **Exchange-e-Mail:** Postfächer, die als Teil Ihres Office 365-Abonnements auf Exchange Online gehostet werden sind alle für die Nachricht Überwachung. -E-Mails und Anlagen Drahtloszugriff Aufsicht sind für die Überwachung und Berichte Aufsicht sofort verfügbar. Anlagen in unterstützten Typen sind:
-
-    - Microsoft Word (.docx)
-    - Microsoft Excel (.xlsx)
-    - Microsoft PowerPoint (PPTX-Format)
-
+- **Exchange-e-Mail:** Postfächer, die als Teil Ihres Office 365-Abonnements auf Exchange Online gehostet werden sind alle für die Nachricht Überwachung. -E-Mails und Anlagen Drahtloszugriff Aufsicht sind für die Überwachung und Berichte Aufsicht sofort verfügbar. Anlagen in unterstützten Typen für Überwachung stimmen die [Dateitypen für Exchange Mail Flow Regel Content Kontrollen unterstützt](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 - **Microsoft-Teams:** Chat Communications und der zugeordneten Anlagen in öffentlichen und privaten Microsoft-Teams, Kanäle und einzelne Chats können überwacht werden. Teams Chats Aufsicht Drahtloszugriff Übereinstimmung einmal alle 24 Stunden verarbeitet werden und klicken Sie dann stehen für die Überwachung und in Berichten Überwachung.
 - **Drittanbieter-Quellen:** Sie können Communications von Drittanbieter-Quellen (wie von Facebook oder Ablage) überwacht, wenn Sie diese Daten in Office 365-Postfächer in Ihrer Organisation importiert haben. [Informationen zum Importieren von Daten in Office 365 3rd Party](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch einem Dokument oder einer E-Mail zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610582"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760766"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -36,7 +36,7 @@ Die Möglichkeit, Vertraulichkeitsbezeichnungen automatisch auf Inhalte anzuwend
 
 ![Automatische Bezeichnungsoptionen für Vertraulichkeitsbezeichnungen](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung basierend auf Kriterien
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung basierend auf Kriterien
 
 Eines der leistungsstärksten Funktionen von Vertraulichkeitsbezeichnungen ist die Möglichkeit, sie automatisch auf Inhalte anzuwenden, die bestimmte Kriterien erfüllen. In diesem Fall müssen Personen in Ihrer Organisation die Vertraulichkeitsbezeichnungen nicht selbst anwenden – Office 365 erledigt dies für sie.
    
@@ -52,7 +52,7 @@ Wenn eine Vertraulichkeitsbezeichnung automatisch angewendet wird, wird dem Benu
 
 ![Benachrichtigung darüber, dass ein Dokument automatisch mit einer Bezeichnung versehen wurde](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Empfehlen des Anwendens einer Vertraulichkeitsbezeichnung
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Empfehlen des Anwendens einer Vertraulichkeitsbezeichnung
 
 Auf Wunsch können Sie, anstatt eine Vertraulichkeitsbezeichnung automatisch auf Inhalte anzuwenden, Benutzern empfehlen, die Bezeichnung anzuwenden. Diese Option bietet Benutzern die Möglichkeit, die Klassifizierung und den dazugehörigen Schutz zu akzeptieren oder die Empfehlung abzulehnen, falls die Bezeichnung für das Dokument oder die E-Mail nicht geeignet ist.
 
@@ -64,7 +64,7 @@ Im Folgenden finden Sie ein Beispiel für eine Aufforderung, wenn Sie Kriterien 
 
 ![Aufforderung zum Anwenden einer empfohlene Bezeichnung](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>Anwenden automatischer oder empfohlener Bezeichnungen
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>Anwenden automatischer oder empfohlener Bezeichnungen
 
 - Das automatische Anwenden von Bezeichnungen gilt für Word, Excel und PowerPoint, wenn Dokumente gespeichert werden, und für Outlook, wenn E-Mails gesendet werden. Diese Kriterien erkennen vertrauliche Informationen im Text in den Dokumenten und E-Mails sowie in Kopf-und Fußzeilen, jedoch nicht in der Betreffzeile oder Anlagen von E-Mails.
 
@@ -74,6 +74,6 @@ Im Folgenden finden Sie ein Beispiel für eine Aufforderung, wenn Sie Kriterien 
 
 - Die empfohlene Klassifizierung kann nicht für Dokumente verwendet werden, die bereits mit einer Bezeichnung mit höherer Klassifizierung versehen wurden. Wenn der Inhalt bereits mit einer Bezeichnung mit höherer Klassifizierung versehen ist, wird in diesem Fall dem Benutzer keine Aufforderung mit der Empfehlung und dem Richtlinientipp angezeigt.
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Auswerten mehrerer Kriterien, wenn sie für mehr als eine Bezeichnung zutreffen
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Auswerten mehrerer Kriterien, wenn sie für mehr als eine Bezeichnung zutreffen
 
 Die Bezeichnungen werden je nach Position, die Sie in der Richtlinie festlegen, sortiert: die Bezeichnung an erster Stelle hat die niedrigste Position (am wenigsten vertraulich) und die Bezeichnung an letzter Stelle hat die höchste Position (am meisten vertraulich). Weitere Informationen zur Priorität finden Sie unter [Priorität der Bezeichnungen (Reihenfolge wesentlich)](sensitivity-labels.md#label-priority-order-matters).

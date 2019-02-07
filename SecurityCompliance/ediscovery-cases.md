@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center zum Erstellen und Verwalten von eDiscovery-Fälle in Ihrer Organisation. Sie können die Groß-/Kleinschreibung Mitglieder zuweisen, platzieren Sie Content-Speicherorte in der Warteschleife, führen Sie Inhalte Searchs die Groß-/Kleinschreibung und der Export der Suchergebnisse zugeordnet. Sie können auch Groß-/Kleinschreibung Daten zur weiteren Analyse in erweiterten eDiscovery vorbereiten.
-ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
-ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
+ms.openlocfilehash: d03ed0a16b74f1b073c2528fa2160ed182840ede
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27299361"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755246"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center
 
@@ -55,7 +55,7 @@ Verwenden Sie den folgenden Workflow zum Einrichten und Verwenden von eDiscovery
 
 Der erste Schritt besteht die entsprechenden Berechtigungen eDiscovery-bezogene an Personen zuweisen, damit Sie sie zu einem eDiscovery-Fall in Schritt2 hinzufügen können. Sie müssen ein Mitglied der Rollengruppe "Organisationsverwaltung" (oder die Verwaltungsrolle Rolle zugewiesen werden) in die Office 365-Sicherheit &amp; Compliance Center, eDiscovery-Berechtigungen zuzuweisen. Die folgende Liste beschreibt die eDiscovery-bezogene Rollengruppen in das Wertpapier &amp; Compliance Center. 
   
-- **Reviewer** - dieser Rollengruppe hat die restriktivsten eDiscovery-bezogene Berechtigungen. Der primäre Zweck der dieser Rollengruppe wird zum Anzeigen und Zugriff Mitglieder können Daten in Office 365 erweiterte eDiscovery case. Mitglieder dieser Gruppe können nur finden und öffnen Sie die Liste der auf der Seite **eDiscovery** -Fälle in das Wertpapier &amp; Compliance Center, die sie Mitglieder sind. Nachdem der Benutzer eine Anfrage im Compliance Center & Sicherheit zugreift, kann er **Schalter, mit dem erweiterten eDiscovery** Zugriff und zum Analysieren der Groß-/Kleinschreibung Daten in erweiterten eDiscovery klicken. Hinzufügen von Mitgliedern zu einer Anfrage Fällen erstellt werden kann, Erstellen von Haltestatus, Suchvorgänge erstellen, eine Vorschau der Suchergebnisse, Exportieren von Suchergebnissen oder Ergebnisse für erweiterte eDiscovery vorbereiten. 
+- **Reviewer** - dieser Rollengruppe hat die restriktivsten eDiscovery-bezogene Berechtigungen. Der primäre Zweck der dieser Rollengruppe wird zum Anzeigen und Zugriff Mitglieder können Daten in Office 365 erweiterte eDiscovery case. Mitglieder dieser Gruppe können nur finden und öffnen Sie die Liste der auf der Seite **eDiscovery** -Fälle in das Wertpapier &amp; Compliance Center, die sie Mitglieder sind. Nachdem der Benutzer eine Anfrage in den & Security Compliance Center zugreift, kann er **Schalter, mit dem erweiterten eDiscovery** Zugriff und zum Analysieren der Groß-/Kleinschreibung Daten in erweiterten eDiscovery klicken. Hinzufügen von Mitgliedern zu einer Anfrage Fällen erstellt werden kann, Erstellen von Haltestatus, Suchvorgänge erstellen, eine Vorschau der Suchergebnisse, Exportieren von Suchergebnissen oder Ergebnisse für erweiterte eDiscovery vorbereiten. 
     
 - **eDiscovery-Manager** - Mitglieder dieser Rollengruppe können erstellen und Verwalten von eDiscovery-Fällen. Sie können hinzufügen und Entfernen von Mitgliedern, platzieren Sie Inhalte Speicherorte auf halten, erstellen und bearbeiten eine Anfrage zugeordnete Inhalte durchsucht, exportieren Sie die Ergebnisse einer Suche Inhalte und Vorbereiten von Suchergebnissen für die Analyse in erweiterten eDiscovery. Es gibt zwei Untergruppen in dieser Rollengruppe. Der Unterschied zwischen diesen Untergruppen basiert auf Bereich.
     
@@ -104,7 +104,7 @@ Im nächste Schritt ist erstellen Sie einen neue eDiscovery-Fall. Sie müssen ei
     
 4. Benennen Sie auf der Seite **Neue Anfrage** der Groß-/Kleinschreibung, geben Sie eine optionale Beschreibung ein, und klicken Sie dann auf **Speichern**. Beachten Sie, dass die Groß-/Kleinschreibung Name in Ihrer Organisation eindeutig sein muss.
     
-    ![Erstellen Sie einen neuen Fall](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
+    ![Erstellen eines neuen Falls](media/7f78f83b-1525-4c77-9888-4b6bda1e148d.png)
   
     Die neue Groß-/Kleinschreibung wird in der Liste der Anfragen auf der Seite **eDiscovery** angezeigt. Beachten Sie, dass Sie den Cursor über einen Groß-/Kleinschreibung Namen zum Anzeigen von Informationen über die Groß-/Kleinschreibung, einschließlich des Status der Anfrage ( **aktiv** oder **geschlossen**), bewegen können die Beschreibung der die Groß-/Kleinschreibung (die im vorherigen Schritt erstellt wurde), und wenn die Groß-/Kleinschreibung zuletzt geändert wurde und Wer es geändert.
     
@@ -249,9 +249,9 @@ Nach ein eDiscovery-Fall erstellt wird und alle Verwalter im Zusammenhang mit de
     
     ![Neue Suche](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-1. Sie können angeben, Schlüsselwörter, Nachricht Eigenschaften, wie etwa gesendet und empfangen, Datumsangaben oder Dokumenteigenschaften, wie Dateinamen oder das Datum, das ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operators, wie **und**, **oder**, **nicht**, **NEAR**oder **ONEAR**verwenden. Sie können auch suchen für vertrauliche Informationen (wie Sozialversicherungsnummern) in Dokumenten, oder suchen Sie nach Dokumenten, die extern freigegeben haben. Wenn Sie das Schlüsselwort Feld leer lassen, werden alle Inhalte, die in der angegebenen Speicherorte für Inhalte befindet sich in den Suchergebnissen enthalten sein. 
+6. Sie können angeben, Schlüsselwörter, Nachricht Eigenschaften, wie etwa gesendet und empfangen, Datumsangaben oder Dokumenteigenschaften, wie Dateinamen oder das Datum, das ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operators, wie **und**, **oder**, **nicht**, **NEAR**oder **ONEAR**verwenden. Sie können auch suchen für vertrauliche Informationen (wie Sozialversicherungsnummern) in Dokumenten, oder suchen Sie nach Dokumenten, die extern freigegeben haben. Wenn Sie das Schlüsselwort Feld leer lassen, werden alle Inhalte, die in der angegebenen Speicherorte für Inhalte befindet sich in den Suchergebnissen enthalten sein. 
     
-2. Sie können das Kontrollkästchen **Schlüsselwortliste anzeigen** und den Typ ein Schlüsselworts in jede Zeile klicken. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile der **oder** -Operator in der Suchabfrage vorhanden, die erstellt wird. 
+7. Sie können das Kontrollkästchen **Schlüsselwortliste anzeigen** und den Typ ein Schlüsselworts in jede Zeile klicken. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile der **oder** -Operator in der Suchabfrage vorhanden, die erstellt wird. 
     
     ![Schlüsselwortliste](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
@@ -259,45 +259,45 @@ Nach ein eDiscovery-Fall erstellt wird und alle Verwalter im Zusammenhang mit de
     
     Weitere Informationen zur Verwendung der Liste Schlüsselwörter finden Sie unter [Erstellen einer Suchabfrage](content-search.md#building-a-search-query).
     
-3. Fügen Sie unter **Conditions**Bedingungen auf eine Suchabfrage aus, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben. Jede Bedingung hinzugefügt der KQL Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch den **AND** -Operator verbunden. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und die Bedingung, die in den Ergebnissen enthalten sein müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. 
+8. Fügen Sie unter **Conditions**Bedingungen auf eine Suchabfrage aus, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben. Jede Bedingung hinzugefügt der KQL Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch den **AND** -Operator verbunden. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und die Bedingung, die in den Ergebnissen enthalten sein müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. 
     
     Weitere Informationen zum Erstellen einer Suchabfrage sowie zur Verwendung von Bedingungen finden Sie unter [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-6. Klicken Sie unter **Speicherorte: Speicherorten in der Warteschleife**, wählen Sie die Speicherorte für Inhalte, die Sie suchen möchten. Sie können die Postfächer, Websites und Öffentliche Ordner in derselben Suche suchen.
+9. Klicken Sie unter **Speicherorte: Speicherorten in der Warteschleife**, wählen Sie die Speicherorte für Inhalte, die Sie suchen möchten. Sie können die Postfächer, Websites und Öffentliche Ordner in derselben Suche suchen.
     
     ![Speicherorte Speicherorte in der Warteschleife](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-  - **Alle Speicherorte** - wählen Sie diese Option, um alle Speicherorte für Inhalte in Ihrer Organisation zu suchen. Wenn Sie diese Option auswählen, Sie können festlegen, dass alle Exchange-Postfächer gesucht (enthält auch die Postfächer für alle Office 365-Gruppen und Microsoft-Teams), alle SharePoint und OneDrive for Business-Websites (einschließlich der Websites für alle Office 365-Gruppen und Microsoft Teams), und alle öffentlichen Ordner.
+    - **Alle Speicherorte** - wählen Sie diese Option, um alle Speicherorte für Inhalte in Ihrer Organisation zu suchen. Wenn Sie diese Option auswählen, Sie können festlegen, dass alle Exchange-Postfächer gesucht (enthält auch die Postfächer für alle Office 365-Gruppen und Microsoft-Teams), alle SharePoint und OneDrive for Business-Websites (einschließlich der Websites für alle Office 365-Gruppen und Microsoft Teams), und alle öffentlichen Ordner.
     
-  - **Halten Sie alle Standorte über** - wählen Sie diese Option, um alle Speicherorte für die Inhalte zu suchen, die für erteilt wurden in die Groß-/Kleinschreibung zu halten. Wenn die Groß-/Kleinschreibung mehrere enthält enthält, den Inhalt, den Speicherorten alle Haltestatus durchsucht werden, wenn Sie diese Option auswählen. Darüber hinaus wurde auf eine abfragebasierte Aufbewahrung ein Inhaltsspeicherort eingefügt, werden nur die Elemente, die in der Warteschleife sind durchsucht, wenn Sie die Inhaltssuche ausführen, die Sie in diesem Schritt erstellen. Wenn ein Benutzer abfragebasierter Groß-/Kleinschreibung gehalten wurde, die Elemente beibehält, die gesendet oder vor einem bestimmten Datum erstellt wurden, würde beispielsweise nur die Elemente durchsucht werden mithilfe von die Suchkriterien für die Inhaltssuche. Dies geschieht durch Herstellen einer Verbindung mit der Groß-/Kleinschreibung Haltestatus Abfrage und die Inhaltssuche Abfrage nach einem **AND** -Operator. Finden Sie [Weitere Informationen](ediscovery-cases.md#moreinfo_1) im Abschnitt am Ende dieses Artikels ausführliche Informationen zum Suchen von Inhalten Groß-/Kleinschreibung. 
+    - **Halten Sie alle Standorte über** - wählen Sie diese Option, um alle Speicherorte für die Inhalte zu suchen, die für erteilt wurden in die Groß-/Kleinschreibung zu halten. Wenn die Groß-/Kleinschreibung mehrere enthält enthält, den Inhalt, den Speicherorten alle Haltestatus durchsucht werden, wenn Sie diese Option auswählen. Darüber hinaus wurde auf eine abfragebasierte Aufbewahrung ein Inhaltsspeicherort eingefügt, werden nur die Elemente, die in der Warteschleife sind durchsucht, wenn Sie die Inhaltssuche ausführen, die Sie in diesem Schritt erstellen. Wenn ein Benutzer abfragebasierter Groß-/Kleinschreibung gehalten wurde, die Elemente beibehält, die gesendet oder vor einem bestimmten Datum erstellt wurden, würde beispielsweise nur die Elemente durchsucht werden mithilfe von die Suchkriterien für die Inhaltssuche. Dies geschieht durch Herstellen einer Verbindung mit der Groß-/Kleinschreibung Haltestatus Abfrage und die Inhaltssuche Abfrage nach einem **AND** -Operator. Finden Sie [Weitere Informationen](ediscovery-cases.md#moreinfo_1) im Abschnitt am Ende dieses Artikels ausführliche Informationen zum Suchen von Inhalten Groß-/Kleinschreibung. 
     
-  - **Bestimmte Orte** - wählen Sie diese Option auswählen, die Postfächer und die Websites, die Sie suchen möchten. Wenn Sie diese Option auswählen, und klicken Sie auf **Ändern**, wird eine Liste der Speicherorte angezeigt. Sie können auswählen, um einige oder alle Benutzer, Gruppen, Teams oder Standorten zu suchen.
+    - **Bestimmte Orte** - wählen Sie diese Option auswählen, die Postfächer und die Websites, die Sie suchen möchten. Wenn Sie diese Option auswählen, und klicken Sie auf **Ändern**, wird eine Liste der Speicherorte angezeigt. Sie können auswählen, um einige oder alle Benutzer, Gruppen, Teams oder Standorten zu suchen.
     
-    ![Wählen Sie bestimmte Orte aus.](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Wählen Sie bestimmte Orte aus.](media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
-    Sie können auch alle öffentlichen Ordner in Ihrer Organisation zu suchen, aber Sie wählen Sie diese Option aus, und suchen Sie alle Inhaltsspeicherort, die auf halten, eine Abfrage aus einer Groß-/Kleinschreibung abfragebasierte Aufbewahrung zur Suchabfrage wird nicht angewendet. Anders ausgedrückt, alle Inhalte an einem Speicherort wird durchsucht, nicht nur die Inhalte, die von einer Groß-/Kleinschreibung abfragebasierte Aufbewahrung beibehalten wird.
+      Sie können auch alle öffentlichen Ordner in Ihrer Organisation zu suchen, aber Sie wählen Sie diese Option aus, und suchen Sie alle Inhaltsspeicherort, die auf halten, eine Abfrage aus einer Groß-/Kleinschreibung abfragebasierte Aufbewahrung zur Suchabfrage wird nicht angewendet. Anders ausgedrückt, alle Inhalte an einem Speicherort wird durchsucht, nicht nur die Inhalte, die von einer Groß-/Kleinschreibung abfragebasierte Aufbewahrung beibehalten wird.
     
-    Sie können das bereits ausgefüllte Groß-/Kleinschreibung Speicherorte für Inhalte zu entfernen oder neue hinzufügen. Wenn Sie diese Option auswählen, müssen Sie auch Flexibilität, um alle Speicherorte für Inhalte für einen bestimmten Dienst (beispielsweise Durchsuchen aller Exchange-Postfächer) zu suchen, oder Sie können bestimmte Speicherorte für Inhalte für einen Dienst suchen. Sie können auch auswählen, ob er die öffentlichen Ordner in Ihrer Organisation zu suchen.
+      Sie können das bereits ausgefüllte Groß-/Kleinschreibung Speicherorte für Inhalte zu entfernen oder neue hinzufügen. Wenn Sie diese Option auswählen, müssen Sie auch Flexibilität, um alle Speicherorte für Inhalte für einen bestimmten Dienst (beispielsweise Durchsuchen aller Exchange-Postfächer) zu suchen, oder Sie können bestimmte Speicherorte für Inhalte für einen Dienst suchen. Sie können auch auswählen, ob er die öffentlichen Ordner in Ihrer Organisation zu suchen.
     
-    Beachten Sie folgende Punkte beachten Sie beim Hinzufügen von Speicherorte für Inhalte zu suchen:
+      Beachten Sie folgende Punkte beachten Sie beim Hinzufügen von Speicherorte für Inhalte zu suchen:
     
-  - Wenn Sie **Wählen Sie Benutzer, Gruppen oder Teams** an Postfächern zu durchsuchen klicken, ist das Postfach Auswahltool, das angezeigt wird leer. Dies ist entwurfsbedingt zur Verbesserung der Leistung. Um Empfänger zu dieser Liste hinzuzufügen, klicken Sie auf **Wählen Sie Benutzer, Gruppen oder Teams**, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld, aktivieren Sie das Kontrollkästchen neben dem Namen, und klicken Sie dann auf **auswählen**. 
+      - Wenn Sie **Wählen Sie Benutzer, Gruppen oder Teams** an Postfächern zu durchsuchen klicken, ist das Postfach Auswahltool, das angezeigt wird leer. Dies ist entwurfsbedingt zur Verbesserung der Leistung. Um Empfänger zu dieser Liste hinzuzufügen, klicken Sie auf **Wählen Sie Benutzer, Gruppen oder Teams**, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld, aktivieren Sie das Kontrollkästchen neben dem Namen, und klicken Sie dann auf **auswählen**. 
     
-  - Sie können die Liste der Postfächer Suchen inaktiver Postfächer, Gruppen von Office 365, Microsoft-Teams und Verteilergruppen hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Office 365 Gruppen oder Microsoft-Teams, hinzufügen, wird das Postfach Gruppe oder ein Team durchsucht; die Postfächer der Mitglieder der Gruppe werden nicht durchsucht.
+      - Sie können die Liste der Postfächer Suchen inaktiver Postfächer, Gruppen von Office 365, Microsoft-Teams und Verteilergruppen hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Office 365 Gruppen oder Microsoft-Teams, hinzufügen, wird das Postfach Gruppe oder ein Team durchsucht; die Postfächer der Mitglieder der Gruppe werden nicht durchsucht.
     
-  - Hinzufügen von Websites klicken Sie auf **Wählen Sie Websites**, klicken Sie erneut auf **Websites** , und geben Sie die URL für die einzelnen Standorte, die Sie suchen möchten. Sie können auch die URL für die SharePoint-Website für Office 365-Gruppen und Microsoft-Teams hinzufügen. 
+      - Hinzufügen von Websites klicken Sie auf **Wählen Sie Websites**, klicken Sie erneut auf **Websites** , und geben Sie die URL für die einzelnen Standorte, die Sie suchen möchten. Sie können auch die URL für die SharePoint-Website für Office 365-Gruppen und Microsoft-Teams hinzufügen. 
     
-7. Klicken Sie nach Auswahl der Speicherorte für Inhalte zu suchen, klicken Sie auf **Fertig** , und klicken Sie dann auf **Speichern**.
+10. Klicken Sie nach Auswahl der Speicherorte für Inhalte zu suchen, klicken Sie auf **Fertig** , und klicken Sie dann auf **Speichern**.
     
-8. Klicken Sie auf der Seite **neue Suche** klicken Sie auf **Speichern** , und geben Sie einen Namen für die Suche. Content-Suche eine Anfrage zugeordnete müssen Namen aufweisen, die in Office 365-Organisation eindeutig sind. 
+11. Klicken Sie auf der Seite **neue Suche** klicken Sie auf **Speichern** , und geben Sie einen Namen für die Suche. Content-Suche eine Anfrage zugeordnete müssen Namen aufweisen, die in Office 365-Organisation eindeutig sind. 
     
-9. Klicken Sie auf **Speichern &amp; ausführen** auf die Suche Einstellungen zu speichern. 
+12. Klicken Sie auf **Speichern &amp; ausführen** auf die Suche Einstellungen zu speichern. 
     
-10. Geben Sie einen eindeutigen Namen für die Suche, und klicken Sie auf **Speichern** , um die Suche zu starten. 
+13. Geben Sie einen eindeutigen Namen für die Suche, und klicken Sie auf **Speichern** , um die Suche zu starten. 
     
     Die Suche beginnt. Nach einer gewissen wird eine Schätzung der Suchergebnisse im Detailfenster angezeigt. Die Schätzung für das enthält die Gesamtgröße und die Anzahl der Elemente, die die Suchkriterien entsprechen. Die Schätzung für das Search enthält auch die Anzahl der nicht-indizierten Elemente in die Speicherorte für Inhalte, die durchsucht wurden. In die Suchstatistik im Detailbereich angezeigt wird die Anzahl der nicht-indizierten Elemente, die den Suchkriterien entsprechen nicht enthalten sein. Wenn ein nicht-indizierten Element entspricht die Suche Abfragen (da es sich um eine andere Nachricht oder ein Dokument Eigenschaften den Suchkriterien entsprechen), werden nicht es in die geschätzte Anzahl der nicht-indizierten Elementen enthalten sein. Wenn ein nicht-indizierten Element durch die Suchkriterien ausgeschlossen wird, wird nicht in die Schätzung des nicht-indizierten Elementen eingeschlossen werden.
     
-    Nachdem die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzuzeigen. Klicken Sie auf **Aktualisieren**, falls erforderlich,![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) zum Aktualisieren der Informationen im Detailbereich. 
+  Nachdem die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzuzeigen. Klicken Sie auf **Aktualisieren**, falls erforderlich,![aktualisieren (Symbol)](media/O365-MDM-Policy-RefreshIcon.gif) zum Aktualisieren der Informationen im Detailbereich. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Schritt 6: Exportieren Sie die Ergebnisse einer Inhaltssuche eine Anfrage zugeordnete
 
