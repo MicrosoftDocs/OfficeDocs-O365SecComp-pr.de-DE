@@ -3,7 +3,7 @@ title: Informationen zu Bedrohungen in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/7/2018
+ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-description: Erfahren Sie, wie Office 365 Bedrohungsanalyse Sie Recherchieren Gefahren für Ihre Organisation helfen, reagieren Sie auf Schadsoftware, Phishing und andere Angriffe, die Office 365 in Ihrem Auftrag erkannt hat, und suchen Sie nach Bedrohung Indikatoren. Bedrohungsanalyse wird in Office 365 E5 als ein System-Angebot von Sicherheit und Richtlinientreue integriert.
-ms.openlocfilehash: fb273b7d8f71cecb04722dfd6ea4b69b103123f5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+description: Hier finden Sie heraus, wie Bedrohung BI-Funktionen in erweiterten Schutz können Sie die Recherchieren Gefahren für Ihre Organisation, reagieren Sie auf Schadsoftware, Phishing und andere Angriffe, die Office 365 in Ihrem Auftrag erkannt hat, und suchen Sie nach Bedrohung Indikatoren.
+ms.openlocfilehash: 5dfd0377c4cafe89c5f69ea080f07d04d892329e
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26705849"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792260"
 ---
 # <a name="office-365-threat-intelligence"></a>Informationen zu Bedrohungen in Office 365
 
-Office 365 Bedrohungsanalyse hilft Sicherheitsspezialisten und Administratoren zum Schutz ihrer Organisation Office 365-Benutzer durch:
+Bedrohung BI-Funktionen in Office 365 erweiterte Threat Protection Sicherheitsspezialisten und Administratoren Schützen ihrer Organisation Office 365-Benutzer durch:
   
 1. Identifizieren, überwachen und verstehen, Angriffe zu erleichtern
     
@@ -31,21 +31,37 @@ Office 365 Bedrohungsanalyse hilft Sicherheitsspezialisten und Administratoren z
 3. Einblicke in die und Kenntnisse, um zu verhindern, dass Angriffe auf ihre Organisation bereitstellen
     
 > [!IMPORTANT]
-> Office 365 Bedrohungsanalyse ist in Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann Office 365 Bedrohungsanalyse als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> **Bedrohungsanalyse ist jetzt Teil in Office 365 erweiterte Threat Protection Plan 2**, was ist enthalten in in bestimmten Abonnements, wie [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5 Office 365 Education A5 usw. Wenn Ihre Organisation ein Abonnement, die nicht in Office 365 ATP enthalten ist verfügt, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp). 
   
-## <a name="what-do-you-want-to-do"></a>Was möchten Sie tun?
+## <a name="whats-changing"></a>Was ändert sich?
 
-In den folgenden Artikeln erfahren Sie mehr über Office 365 Bedrohungsanalyse Service-Angebot, einschließlich zu Ihrem Vorteil Verwendungsweise Sie Ihren Benutzern schützen können.
+Office 365 Bedrohungsanalyse war früher in Abonnements, wie etwa Office 365 Enterprise E5 enthalten. Dies ist weiterhin der Fall, obwohl Bedrohungsanalyse Features jetzt Bestandteil von Office 365 erweiterte Threat Protection Plan 2 sind (und dies in Office 365 Enterprise E5 eingeschlossen ist). 
+
+Darüber hinaus wurde Office 365 Bedrohungsanalyse als Add-on für Office 365 für Unternehmen früher käuflich erworben. Bedrohungsanalyse ist nun in Office 365 erweiterte Threat Protection Plan 2 enthalten. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection).
+
+Nachfolgend finden Sie alle Dies bedeutet:
+
+- **Wenn Ihr Unternehmen bereits Office 365 Enterprise E5 verfügt**, können Sie bereits erweiterte Threat Protection Plan 2, und dies schließt Threat Intelligence-Funktionen.
+
+- **Wenn Ihre Organisation zuvor Office 365 Bedrohungsanalyse (jedoch nicht Office 365 erweiterte Threat Protection) als Add-on hatten** an eine andere Office 365-Abonnements, können Sie haben Office 365 erweiterte Threat Protection Plan 2. Dies umfasst erweiterte Threat Protection und Bedrohungsanalyse. 
+
+- **Wenn Ihre Organisation zuvor Office 365 erweiterte Threat Protection (jedoch nicht Office 365 Bedrohungsanalyse) als Add-on hatten** an eine andere Office 365-Abonnements, können Sie haben Office 365 erweiterte Threat Protection – Plan 1. Dies gilt auch erweiterte Threat Protection (jedoch nicht Threat Intelligence-Funktionen).
+
+Weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
+
+## <a name="get-started-with-threat-intelligence-capabilities"></a>Erste Schritte mit Threat Intelligence-Funktionen
+
+Verwenden Sie die folgenden Ressourcen erfahren Sie mehr über Bedrohungsanalyse und wie Sie die Benutzer in Ihrer Organisation sicherer gehalten verwenden.
   
-- [Erste Schritte mit Office 365 Bedrohungsanalyse](get-started-with-ti.md) (Dies umfasst Informationen zu den erforderlichen Rollen) 
+- [Erste Schritte mit Bedrohungsanalyse](get-started-with-ti.md) (Dies umfasst Informationen zu den erforderlichen Rollen) 
     
 - [Erfahren Sie mehr über Bedrohung Tracker - neue und erwähnenswerte](threat-trackers.md)
     
 - [Finden und Untersuchen von böswilligen e-Mail, die übermittelt wurde](investigate-malicious-email-that-was-delivered.md)
     
-- [Verwenden Sie Angriff Simulator (Office 365)](attack-simulator.md)
+- [Verwenden Sie Angriff Simulator](attack-simulator.md)
     
-- [Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
+- [Integrieren von Bedrohungsanalyse in Windows Defender erweiterte Schutz](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>Verwandte Themen
 

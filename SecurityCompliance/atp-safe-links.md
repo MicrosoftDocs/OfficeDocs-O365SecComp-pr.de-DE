@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Die sichere Links-Funktion bietet Zeit des klicken Sie auf Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing und anderen Angriffen zu schützen.
-ms.openlocfilehash: 7e610d23534dcd4c9ea20608bab6fca536f877cb
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741108"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792240"
 ---
 # <a name="office-365-atp-safe-links"></a>ATP-sichere Links in Office 365
 
@@ -88,7 +88,7 @@ Auf allgemeiner Ebene funktioniert ATP sichere Links Schutz für URLs in Office 
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>Wie sichere Links ATP Protection abrufen
 
-Stellen Sie zunächst sicher, dass Ihr Abonnement [Erweiterte Threat Protection](office-365-atp.md)umfasst. ATP ist in Abonnements, wie beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5 usw. enthalten. Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 ATP enthalten ist umfasst, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Stellen Sie zunächst sicher, dass Ihr Abonnement [Erweiterte Threat Protection](office-365-atp.md)umfasst. ATP ist in Abonnements, wie beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5 usw. enthalten. Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 ATP enthalten ist umfasst, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
   
 Im nächsten Schritt stellen Sie sicher, dass alle Richtlinien ATP sichere Links definiert sind. (Finden Sie unter [Einrichten von Richtlinien für sichere Links zu Office 365 ATP](set-up-atp-safe-links-policies.md).) Sichere ATP-Links-Features sind in den aktiv:
   
@@ -105,7 +105,7 @@ Um ATP Richtlinien definieren (oder bearbeiten), müssen Sie eine der in der fol
 |Rolle  |WHERE/wie zugewiesen.  |
 |---------|---------|
 |Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
-|Office 365-Sicherheitsadministrator |Administrationscenter ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Sicherheitsadministrator |Azure Active Directory-Verwaltungskonsole ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Wie stellen Sie sicher, dass sichere Links ATP Schutz ist vorhanden

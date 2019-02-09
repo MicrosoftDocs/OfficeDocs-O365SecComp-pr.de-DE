@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: Die sichere Anlagen-Funktion bietet Zeit des klicken Sie auf Überprüfung von e-Mail-Anlagen. Verwenden sichere Anlagen in Ihrer Organisation vor böswilligen Dateien schützen senden oder Empfangen von e-Mail.
-ms.openlocfilehash: 936d24e3782e1018e77e24373756e378472f7e7c
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 45cd3b74b67d7ff8735da7a703ff14c4c517341f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755276"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792230"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP sichere Anlagen
 
@@ -45,7 +45,7 @@ Sichere Anlagen ATP Richtlinien können auf bestimmte Benutzer oder Gruppen in I
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Wie ATP sichere Anlagen abrufen
 
-Stellen Sie zunächst sicher, dass Ihr Abonnement [Erweiterte Threat Protection](office-365-atp.md)umfasst. ATP ist in Abonnements, wie beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5 usw. enthalten. Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 ATP enthalten ist umfasst, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Stellen Sie zunächst sicher, dass Ihr Abonnement [Erweiterte Threat Protection](office-365-atp.md)umfasst. ATP ist in Abonnements, wie beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5 usw. enthalten. Wenn Ihre Organisation über ein Office 365-Abonnement, die nicht in Office 365 ATP enthalten ist umfasst, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
 Im nächsten Schritt stellen Sie sicher, dass alle Richtlinien ATP sichere Anlagen definiert sind. (Siehe [Einrichten von Richtlinien für Office 365 ATP sichere Anlagen](set-up-atp-safe-attachments-policies.md)) Sichere Anlagen ATP Features sind in den aktiv:
   
