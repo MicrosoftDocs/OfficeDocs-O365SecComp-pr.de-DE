@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Als Administrator können Sie anzeigen, freigeben und melden false positive in Quarantäne verschobenen Nachrichten in Office 365. Sie können Richtlinien festlegen, sodass Office 365 Nachrichten filtert und sendet sie zur aus verschiedenen Gründen in Quarantäne:, da sie als Spam, Massen, Phishing, Schadsoftware erkannt wurden oder sie eine e-Mail-Flussregel übereinstimmen. '
-ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180885"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792506"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Administrator in Office 365
 
@@ -27,10 +27,10 @@ Als Administrator können Sie anzeigen, freigeben und Löschen von Nachrichten i
   
 In der Standardeinstellung sendet Office 365 Phishing und Nachrichten mit Schadsoftware direkt zu isolieren. Andere gefilterten Nachrichten werden an Benutzer Junk-e-Mail-Ordner gesendet, es sei denn, Sie eine Richtlinie einrichten, die Nachrichten in Quarantäne gesendet.
   
-Sie benötigen Administratorberechtigungen in Office 365 Nachrichten in Quarantäne entwickelt, die an andere Benutzer gesendet wurden und zur Arbeit mit Dateien in Quarantäne.
+Sie müssen berechtigt globaler Administrator (GA) in Office 365 Nachrichten in Quarantäne entwickelt, die an andere Benutzer gesendet wurden und zur Arbeit mit Dateien in Quarantäne.
   
 > [!IMPORTANT]
-> Standardmäßig werden Spam, Massen, Malware, Phishing und Nachrichten, die isoliert wurden, da sie eine e-Mail-Flussregel übereinstimmen in Quarantäne für 30 Tage gespeichert. Sie können die Quarantäne Zeit in Anti-Spam-Einstellungen in das Wertpapier anpassen &amp; Compliance Center. Sie können nicht Office 365 eine Nachricht aus der Quarantäne gelöscht, es wieder erhalten. Wenn Sie möchten, können Sie die Beibehaltungsdauer für Nachrichten in Quarantäne in Ihrer Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen von der Aufbewahrungszeitraum Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
+>Standardmäßig werden Spam, Massen und Phishing-Nachrichten in Quarantäne 30 Tage gespeichert. Nachrichten, die isoliert werden, da sie eine e-Mail-Fluss-Regel erfüllt werden in Quarantäne 7 Tage gespeichert. Nachrichten mit Schadsoftware werden in Quarantäne 15 Tage gespeichert. Sie können die Spam-Quarantäne Zeit in Anti-Spam-Einstellungen in das Wertpapier anpassen &amp; Compliance Center. Sie können nicht Office 365 eine Nachricht aus der Quarantäne gelöscht, es wieder erhalten. Wenn Sie möchten, können Sie die Beibehaltungsdauer für Nachrichten in Quarantäne in Ihrer Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen von der Aufbewahrungszeitraum Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Anzeigen von in Quarantäne verschobenen Nachrichten Ihrer Organisation
 

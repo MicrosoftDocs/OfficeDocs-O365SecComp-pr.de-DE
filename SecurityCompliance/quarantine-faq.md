@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt.
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003194"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792496"
 ---
 # <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
@@ -50,7 +50,7 @@ A. Nachrichten, die der Transportregel entsprechen, können ebenfalls in Adminis
   
  **F. Wie lange bleiben Nachrichten in der Quarantäne?**
   
-A. Standardmäßig werden in den Quarantäneordner verschobene Spamnachrichten 15 Tage lang aufbewahrt. Nachrichten im Quarantäneordner, die eine Transportregel erfüllen, werden 7 Tage lang aufbewahrt. Nach Ablauf dieses Zeitraums werden die Nachrichten gelöscht und können nicht mehr wiederhergestellt werden. Der Aufbewahrungszeitraum für Nachrichten im Quarantäneordner, die eine Transportregel erfüllt haben, ist nicht konfigurierbar. Der Aufbewahrungszeitraum für Nachrichten in der Spamquarantäne kann allerdings über die Einstellung **Spamnachrichten aufbewahren für (Tage)** in Ihren Inhaltsfilterrichtlinien verkürzt werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
+A. Standardmäßig werden Nachrichten in Spam-Quarantäne in der Quarantäne für 30 Tage gespeichert, während in Quarantäne verschobenen Nachrichten, die einer Transportregel in der Quarantäne für 7 Tage gespeichert. Nach Ablauf dieses Zeitraums Zeit die Nachrichten werden gelöscht und können nicht abgerufen werden. Die Aufbewahrungsdauer für isolierte Nachrichten, die einer Transportregel ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage) aufbewahren** in Ihrer inhaltsfilterrichtlinien gesenkt werden. Weitere Informationen finden Sie unter [Konfigurieren von Richtlinien Ihrer Spam-Filter](configure-your-spam-filter-policies.md).
   
  **F. Kann ich mehr als eine Quarantänenachricht gleichzeitig freigeben oder melden?**
   
