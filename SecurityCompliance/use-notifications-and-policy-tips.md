@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn eine Person mit Inhalt, steht in Konflikt mit einer DLP-Richtlinie funktionsfähig ist. Sie können e-Mail-Benachrichtigungen und Tipps zu Richtlinien zu informieren und Hilfe Personen zu Ihrer Organisation Richtlinien zu informieren. Sie können auch vorführen benötigten Personen die Option aus, um die Richtlinie außer Kraft setzen, damit sie nicht blockiert sind, wenn sie einen gültigen Business verfügen oder wenn die Richtlinie falsch positives Ergebnis erkennt. '
-ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769914"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25803996"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von e-Mail-Benachrichtigungen und Anzeigen von Tipps zu Richtlinien für DLP-Richtlinien
 
@@ -90,7 +90,7 @@ Bei jeder Regel in einer DLP-Richtlinie haben Sie folgende Möglichkeiten:
 - Passen Sie den Text, der in der Benachrichtigung mithilfe von HTML oder Token enthalten ist. Finden Sie weitere Informationen im Abschnitt unten.
     
 > [!NOTE]
->  E-Mail-Benachrichtigungen können nur für einzelne Empfänger gesendet werden – nicht Gruppen oder Verteilerlisten. > Nur neuer Inhalt wird eine e-Mail-Benachrichtigung ausgelöst. Bearbeiten von vorhandenen Inhalt wird richtlinientipps, aber nicht in einer e-Mail-Benachrichtigung ausgelöst. 
+>  E-Mail-Benachrichtigungen können nur für einzelne Empfänger gesendet werden – nicht Gruppen oder Verteilerlisten. > nur neuer Inhalt wird eine e-Mail-Benachrichtigung ausgelöst. Bearbeiten von vorhandenen Inhalt wird richtlinientipps, aber nicht in einer e-Mail-Benachrichtigung ausgelöst. 
   
 ![E-Mail-Benachrichtigung-Optionen](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -101,8 +101,7 @@ Benachrichtigungen haben eine Betreffzeile, die mit der Aktion, wie z. B. "Benac
 ![Benachrichtigung](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 In der Standardeinstellung zeigen Benachrichtigungen für ein Element in einer Website Text wie den folgenden an. Der Benachrichtigungstext wird für jede Regel separat konfiguriert, damit sich der angezeigte Text abhängig von der angewendeten Regel unterscheidet.
-  
-| |
+
 |**Wenn die DLP-Richtlinienregel dies tut...**|**Klicken Sie dann heißt die Standard-Benachrichtigung für SharePoint oder OneDrive für Geschäftsdokumente das...**|**Klicken Sie dann heißt die Standard-Benachrichtigung für Outlook-Nachrichten das...**|
 |:-----|:-----|:-----|
 |Sendet eine Benachrichtigung, ermöglicht aber kein außer Kraft setzen  <br/> |Dieses Element steht in Konflikt mit einer Richtlinie in Ihrer Organisation.  <br/> |Ihre e-Mail-Nachricht in Konflikt mit einer Richtlinie in Ihrer Organisation.  <br/> |
@@ -114,8 +113,7 @@ In der Standardeinstellung zeigen Benachrichtigungen für ein Element in einer W
 Sie können eine benutzerdefinierte e-Mail-Benachrichtigung anstelle die standardmäßige e-Mail-Benachrichtigung an den Endbenutzer oder Administratoren senden erstellen. Die benutzerdefinierte e-Mail-Benachrichtigung HTML unterstützt und hat maximal 5.000 Zeichen. Sie können HTML verwenden, um Bilder, Formatierung und anderen branding in der Benachrichtigung einzubeziehen.
   
 Sie können die folgenden Token auch verwenden, helfen, die e-Mail-Benachrichtigung anzupassen. Diese Token sind Variablen, die nach bestimmten Informationen in der Benachrichtigung ersetzt werden, die gesendet wird.
-  
-| |
+
 |**Token**|**Beschreibung**|
 |:-----|:-----|
 |% AppliedActions %  <br/> |Die Aktionen, die auf den Inhalt angewendet.  <br/> |
@@ -177,8 +175,7 @@ DLP-Richtlinien werden mit Websites synchronisiert, und Inhalte werden regelmä�
 ### <a name="default-text-for-policy-tips-on-sites"></a>Standardtext für Richtlinientipps auf Websites
 
 In der Standardeinstellung zeigen Richtlinientipps für ein Element in einer Website Text wie den folgenden an. Der Benachrichtigungstext wird für jede Regel separat konfiguriert, damit sich der angezeigte Text abhängig von der angewendeten Regel unterscheidet.
-  
-| |
+
 |**Wenn die DLP-Richtlinienregel dies tut...**|**Dann lautet der Standardtext eines Richtlinientipps folgendermaßen...**|
 |:-----|:-----|
 |Sendet eine Benachrichtigung, ermöglicht aber kein außer Kraft setzen  <br/> |Dieses Element steht in Konflikt mit einer Richtlinie in Ihrer Organisation.  <br/> |

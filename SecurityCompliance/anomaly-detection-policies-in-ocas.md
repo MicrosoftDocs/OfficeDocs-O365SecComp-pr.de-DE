@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit verwenden integrierte Algorithmen, um potenzielle Probleme aufdecken. Sie sollten mindestens eine Anomalie Erkennung Richtlinie verfügen, die Sie optimiert werden können (bei der Erstellung) mithilfe von Filtern. '
-ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604416"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29612708"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 
@@ -28,7 +28,7 @@ Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherhei
 |:-----|:-----|:-----|:-----|
 |[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
    
-Ab [Microsoft Cloud App-Sicherheit Version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), enthält Office 365-Cloud-App-Sicherheit mehrere vordefinierte Anomalie Erkennungsrichtlinien ("sofort einsetzbar"), die Benutzer und Entität Verhalten Analytics (UEBA) und Computer lernen (ML) enthalten.
+Ab [Microsoft Cloud App-Sicherheit Version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116), enthält Office 365-Cloud-App-Sicherheit mehrere vordefinierte Anomalie Erkennungsrichtlinien ("sofort einsetzbar"), die Benutzer und Entität Verhalten Analytics (UEBA) und Computer lernen (ML) enthalten.
   
 ![Wählen Sie zum Anzeigen Ihrer Anomalie Erkennungsrichtlinien Steuerelement \> Richtlinien.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
@@ -39,7 +39,7 @@ Als globaler Office 365-Administrator oder Sicherheitsadministrator können Sie 
  > [!IMPORTANT]
 > Es gibt ein Zeitraum anfänglichen Learning sieben (7) Tage in denen abweichendem Verhalten Benachrichtigungen nicht ausgelöst werden. Der Algorithmus Anomalie Erkennung wird zur Verringerung der Anzahl von falsch positiven Warnungen optimiert. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Stellen Sie Folgendes sicher:
   

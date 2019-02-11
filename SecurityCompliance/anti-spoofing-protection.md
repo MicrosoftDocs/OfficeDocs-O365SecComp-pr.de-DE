@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe gemindert, dass Verwendungsmöglichkeiten Absenderdomänen, d. h., Domänen gefälscht, die manipuliert werden. Sie erreicht dies durch die Analyse der Nachrichten und Neithe mithilfe der standard-e-Mail-Authentifizierungsmethoden noch andere Sender Reputation Techniken authentifiziert Blockierung diejenigen aus, die werden können. Diese Änderung wird implementiert wird, um die Anzahl der Phishingangriffe zu reduzieren, die Organisationen in Office 365 verfügbar gemacht werden.
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769859"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614509"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
 In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe gemindert, dass Verwendungsmöglichkeiten Absenderdomänen, d. h., Domänen gefälscht, die manipuliert werden. Sie erreicht dies, indem Sie die Nachrichten analysieren und sperrende Korrelation diejenigen aus, die mithilfe der standard-e-Mail-Authentifizierungsmethoden noch andere Sender Reputation Techniken nicht authentifiziert werden können. Diese Änderung wird implementiert wird, um die Anzahl der Phishingangriffe zu reduzieren, die Kunden verfügbar gemacht werden.
   
-In diesem Artikel wird erläutert, warum diese Änderung vorgenommen wird, wie Kunden, damit diese Änderung vorbereiten können, wie Nachrichten anzeigen, die betroffen sind, wie Nachrichten melden, wie falsch positive Ergebnisse zu mindern sowie wie Absender an Microsoft für dieses vorbereiten sollte ändern.
+In diesem Artikel wird erläutert, warum diese Änderung vorgenommen wird, wie Kunden, damit diese Änderung vorbereiten können, wie Nachrichten anzeigen, die betroffen sind, wie Nachrichten melden, wie falsch positive Ergebnisse zu mindern sowie wie Absender an Microsoft für dieses vorbereiten sollte Veränderung.
   
 Anti-spoofing von Microsoft-Technologie wurde zunächst auf die Organisationen bereitgestellt, die ein Abonnement von Office 365 Enterprise E5 hatte oder das Office 365 erweiterte Threat Protection (ATP) Add-on für ihr Abonnement erworben haben. Ab Oktober, 2018 haben wir den Schutz für Organisationen erweitert, die als auch Exchange Online Protection (EOP) haben. Darüber hinaus können aufgrund der Art, die alle unsere Filter voneinander lernen, Outlook.com Benutzer auch beeinträchtigt werden.
   
@@ -91,15 +91,15 @@ Authentication-Results:
 
 |**CompAuth Ergebnis**|**Beschreibung**|
 |:-----|:-----|
-|ein Fehler auftritt|Nachricht konnte nicht explizite Authentifizierung (sendende Domäne veröffentlicht Datensätze explizit im DNS) oder implizite Authentifizierung (senden) Domäne nicht veröffentlichen Datensätze in DNS, damit Office 365 das Ergebnis interpoliert, als wäre es Einträge veröffentlicht wurde.|
-|übergeben Sie|Meldung übergeben explizite Authentifizierung (Nachricht übergeben DMARC oder [Bewährte erraten übergeben DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) oder implizite Authentifizierung mit vertrauenswürdige (Senden von e-Mail-Authentifizierung Datensätze werden von der Domäne nicht veröffentlicht, aber Office 365 hat starken Back-End-Signale zu Geben Sie an die Nachricht ist wahrscheinlich legitime).|
+|Fehler|Nachricht konnte nicht explizite Authentifizierung (sendende Domäne veröffentlicht Datensätze explizit im DNS) oder implizite Authentifizierung (senden) Domäne nicht veröffentlichen Datensätze in DNS, damit Office 365 das Ergebnis interpoliert, als wäre es Einträge veröffentlicht wurde.|
+|bestehen|Meldung übergeben explizite Authentifizierung (Nachricht übergeben DMARC oder [Bewährte erraten übergeben DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) oder implizite Authentifizierung mit vertrauenswürdige (Senden von e-Mail-Authentifizierung Datensätze werden von der Domäne nicht veröffentlicht, aber Office 365 hat starken Back-End-Signale zu Geben Sie an die Nachricht ist wahrscheinlich legitime).|
 |softpass|Nachricht implizite Authentifizierung mit wenig bis mittleren Confidence übergeben (Domäne werden e-Mail-Authentifizierung nicht veröffentlicht, aber Office 365 hat die Back-End-Signale an, dass die Nachricht ist zulässig, aber die Stärke des Signals ist schwächere senden).|
 |n/z|Nachricht nicht authentifiziert (oder hat sich authentifiziert, aber keine Ausrichtung), aber zusammengesetzte Authentifizierung aufgrund Absenderzuverlässigkeits oder anderen Faktoren nicht angewendet.|
    
 |||
 |:-----|:-----|
 |**Reason**|**Beschreibung**|
-|0XX|Nachricht zusammengesetzte Authentifizierung ist fehlgeschlagen.<br/>**000** bedeutet, dass die Nachricht mit einer Aktion ablehnen oder Quarantäne DMARC konnte nicht.                    -001 bedeutet, dass die Nachricht implizite-e-Mail-Authentifizierung ist fehlgeschlagen. Dies bedeutet, dass die sendende Domäne verfügte nicht über die Authentifizierung von e-Mail-Datensätzen veröffentlicht, oder wenn dies der Fall war, mussten eine Richtlinie für schwächere Fehler (SPF-soft-Fehler oder Neutral, DMARC Richtlinie von p = none).<br/>**002** bedeutet, dass die Organisation über eine Richtlinie für den Absender-Domäne Paar verfügt, das Senden von e-Mails mit Spoofing stammen explizit verboten wird, ist diese Einstellung manuell vom Administrator festgelegt.  <br/>**010** bedeutet, dass die Nachricht konnte nicht mit einer Aktion ablehnen oder Quarantäne DMARC und die sendende Domäne eine der akzeptierten Domänen mit Ihrer Organisation (Dies ist Teil der Self-Self- oder organisationsintern, spoofing).  <br/>**011** bedeutet, dass die Nachricht konnte nicht implizite e-Mail-Authentifizierung und die sendende Domäne eine der akzeptierten Domänen Ihrer Organisation (Dies ist Teil der Self-Self- oder organisationsintern, spoofing).|
+|0XX|Nachricht zusammengesetzte Authentifizierung ist fehlgeschlagen.<br/>**000** bedeutet, dass die Nachricht mit einer Aktion ablehnen oder Quarantäne DMARC konnte nicht.  <br/>**001** bedeutet, dass die Nachricht implizite-e-Mail-Authentifizierung ist fehlgeschlagen. Dies bedeutet, dass die sendende Domäne verfügte nicht über die Authentifizierung von e-Mail-Datensätzen veröffentlicht, oder wenn dies der Fall war, mussten eine Richtlinie für schwächere Fehler (SPF-soft-Fehler oder Neutral, DMARC Richtlinie von p = none).<br/>**002** bedeutet, dass die Organisation über eine Richtlinie für den Absender-Domäne Paar verfügt, das Senden von e-Mails mit Spoofing stammen explizit verboten wird, ist diese Einstellung manuell vom Administrator festgelegt.  <br/>**010** bedeutet, dass die Nachricht konnte nicht mit einer Aktion ablehnen oder Quarantäne DMARC und die sendende Domäne eine der akzeptierten Domänen mit Ihrer Organisation (Dies ist Teil der Self-Self- oder organisationsintern, spoofing).  <br/>**011** bedeutet, dass die Nachricht konnte nicht implizite e-Mail-Authentifizierung und die sendende Domäne eine der akzeptierten Domänen Ihrer Organisation (Dies ist Teil der Self-Self- oder organisationsintern, spoofing).|
 |Alle anderen Codes (1xx, 2xx, 3xx, 4xx, 5xx)|Verschiedene interne Codes entspricht warum eine Meldung übergeben implizite Authentifizierung oder hatte keine Authentifizierung, aber keine Aktion angewendet wurde.|
    
 Verfolgen Sie die Kopfzeilen der Nachricht, kann ein Administrator oder sogar eines Endbenutzers bestimmen wie Office 365 nach Abschluss eingeht, dass der Absender manipuliert werden kann.
@@ -419,9 +419,9 @@ Im Allgemeinen wird die Richtlinie angewendet auf eine Nachricht in der Kopfzeil
 |3  <br/> |Spam mit hoher Vertrauenswürdigkeit  <br/> |HSPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
 |4  <br/> |Spoofing  <br/> |SPOOFING  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553), [Spoofing intelligence](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Alle Organisationen  <br/> |
 |5  <br/> |Spam  <br/> |SPM  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|6  <br/> |Massen  <br/> |MASSEN  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
-|7  <br/> |Domäne des Identitätswechsels  <br/> |DIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur  <br/> |
-|8  <br/> |Benutzeridentitätswechsel  <br/> |UIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur <br/> |
+|6   <br/> |Massen  <br/> |MASSEN  <br/> |[Gehostete inhaltsfilterrichtlinie](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Alle Organisationen  <br/> |
+|7   <br/> |Domäne des Identitätswechsels  <br/> |DIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur  <br/> |
+|8   <br/> |Benutzeridentitätswechsel  <br/> |UIMP  <br/> |[Anti-Phishing-Richtlinie](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisationen mit ATP nur <br/> |
    
 Wenn Sie mehrere verschiedene Anti-Phishing-Richtlinien haben, wird die jeweils die höchste Priorität angewendet. Angenommen Sie, Sie haben zwei Richtlinien:
   

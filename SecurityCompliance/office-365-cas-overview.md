@@ -3,7 +3,7 @@ title: Übersicht über Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 12/03/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365-Cloud-App-Sicherheit können Sie Einblicke in verdächtige Aktivitäten in Office 365, sodass Sie Situationen, die potenziell problematisch und untersuchen können bei Bedarf Ausführen einer Aktion zum Beheben von Sicherheitsproblemen. '
-ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014927"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29382548"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Übersicht über Office 365 Cloud App Security
   
@@ -28,7 +28,7 @@ ms.locfileid: "28014927"
 |Sie sind hier!  <br/> [Nächster Schritt](get-ready-for-office-365-cas.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |[Starten Sie Bereitstellen von](turn-on-office-365-cas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Office 365-Cloud-App-Sicherheit ist in Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann Office 365-Cloud-App-Sicherheit als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365-Cloud-App-Sicherheit ist in Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann Office 365-Cloud-App-Sicherheit als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
   
 Office 365-Cloud-App-Sicherheit gibt Ihnen einen Einblick in die verdächtige Aktivitäten in Office 365, sodass Sie Situationen, die potenziell problematisch und untersuchen können bei Bedarf Ausführen einer Aktion zum Beheben von Sicherheitsproblemen. Mit Office 365 Cloud App-Sicherheit können Sie Benachrichtigungen der ausgelösten Warnungen für untypischen oder verdächtigen Aktivitäten, finden Sie unter wie Ihrer Organisation Daten in Office 365 zugegriffen und verwendet, Benutzerkonten verdächtige Aktivitäten auf Anhalten und erfordern Benutzer melden Sie sich dann wieder anmelden für apps für Office 365 nach dem eine Warnung ausgelöst wurde. Lesen Sie diesen Artikel, um einen Überblick über die Sicherheit in Office 365 Cloud App-Features und Funktionen erhalten.
   
@@ -36,13 +36,15 @@ Office 365-Cloud-App-Sicherheit gibt Ihnen einen Einblick in die verdächtige Ak
 ## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>So finden Sie das Cloud App Sicherheit in Office 365-portal
 
 > [!NOTE]
-> Zugriff auf das Cloud-App Sicherheit in Office 365-Portal, müssen Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheit Reader sein. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Zugriff auf das Cloud-App Sicherheit in Office 365-Portal, müssen Sie ein Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Reader sein. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-Erhalten Sie über die Sicherheit der Office 365-Portal Office 365-Cloud-App-Sicherheit &amp; Compliance Center. Hier ist eine gute Möglichkeit zur Verfügung:
+Sie können Cloud App Sicherheit in Office 365-Portal abrufen, indem Sie auf [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) von und Anmelden bei. 
+
+Sie können auch abrufen es aus der Office 365-Sicherheit &amp; Compliance Center. Hier ist eine gute Möglichkeit zur Verfügung:
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.)
     
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**. <br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
+2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**. <br/>![Wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
     
 3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**. 
     

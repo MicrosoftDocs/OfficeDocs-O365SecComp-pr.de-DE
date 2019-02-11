@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607774"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706146"
 ---
-# <a name="viewing-custodian-audit-activity"></a>Anzeigen von Verwaltungsberechtigten Audit-Aktivität
+# <a name="view-custodian-audit-activity"></a>Ansicht Verwaltungsberechtigter Audit-Aktivität
 
 Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus dem Postfach gelöscht? Erweiterte eDiscovery (Preview) ist jetzt in der vorhandenen Audit Log Suchfunktion in die & Security Compliance Center integriert. Verwenden diese eingebetteten Erfahrung, können des erweiterten eDiscovery (Preview) Verwaltungsberechtigter-Verwaltungstools Sie um Ihre Untersuchung zu vereinfachen, indem auf einfache Weise den Zugriff auf und suchen die Aktivität für Verwalter innerhalb der Fall.
 
@@ -101,8 +101,4 @@ Sie können die Ergebnisse einer Audit Log-Suche in einer durch Trennzeichen get
 
 3. Nach der Auswahl einer Exportoption von wird eine Meldung am unteren Rand des Fensters angezeigt, die aufgefordert, öffnen Sie die CSV-Datei, speichern Sie die Downloads-Ordner oder in einen bestimmten Ordner zu speichern
 
-[!NOTE] 
- Weitere Informationen anzeigen, filtern oder Audit Log Suchergebnisse exportieren finden Sie unter:
-   - Liste der überwachten Aktivitäten anzeigen 
-   - Bevor Sie beginnen: Unified Überwachungsprotokolle
- 
+Weitere Informationen zum Anzeigen filtern oder Exportieren von Suchergebnissen aus Audit Log, finden Sie unter [Suchen der Überwachungsprotokolle melden Sie sich bei der Sicherheit in Office 365 & Compliance Center](../search-the-audit-log-in-security-and-compliance.md).

@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit der Kommunikation in erweiterten eDiscovery (Preview)
+title: Arbeiten Sie mit der Kommunikation in erweiterten eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607839"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695041"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>Arbeiten mit der Kommunikation in erweiterten eDiscovery (Preview)
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Arbeiten Sie mit der Kommunikation in erweiterten eDiscovery (Preview)
 
 Erweiterte eDiscovery (Preview) ermöglicht rechtliche Abteilungen, um ihre Prozesse um nachverfolgen und Verteilen von rechtliche Aufbewahrungspflicht Benachrichtigungen zu vereinfachen. Die Verwaltungsberechtigter Communications-Funktion ermöglicht rechtliche Abteilungen verwalten und ihre gesamte rechtliche Aufbewahrungspflicht Prozesse – von Benachrichtigungen und Erinnerungen Eskalationen – alle an einem Ort zu automatisieren.
 

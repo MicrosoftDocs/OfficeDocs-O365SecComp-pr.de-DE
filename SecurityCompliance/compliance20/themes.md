@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b0d1bcd8ddb1e29853a633a386becfd1688b9cd1
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607759"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706126"
 ---
 # <a name="themes"></a>Designs
+
 Wenn jemand ein Dokument verfasst, führen Sie diese Wörter nicht nach dem Zufallsprinzip ausgewählt; Sie versuchen, einige Ideen oder Konzepte zu vermitteln, und die Wörter entsprechend ausgewählt sind. Designs-Module-Cluster Dokumente, die ähnliche Themen beschreiben, damit Bearbeiter in durchgehen Dokumente besser geeignet sein können.
 
 ## <a name="how-does-themes-work"></a>Funktionsweise von Designs

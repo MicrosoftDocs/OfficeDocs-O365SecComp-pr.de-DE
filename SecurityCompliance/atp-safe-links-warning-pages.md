@@ -12,14 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: Erhalten Sie eine Übersicht von Seiten, Warnung, dass möglicherweise bei Office 365 erweiterte Schutz bei der Arbeit wird angezeigt.
-ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 422bdabf0593dd154461f973f86a4c1ca94e8651
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238267"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686354"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP sichere Links Warnung Seiten
+
+> [!IMPORTANT]
+> In diesem Artikel wird für Unternehmenskunden vorgesehen. Wenn Sie eine Suche nach Informationen zu sicheren Links in Outlook Privatbenutzer sind, finden Sie unter [Outlook.com erweiterte Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 erweiterten Schutz](office-365-atp.md) (ATP) trägt zum Schutz Ihrer Organisation vor Phishing-Versuche und Malware über Features, wie [ATP sichere Links](atp-safe-links.md), [ATP sichere Anlagen](atp-safe-attachments.md)und [Phishing - Schutz](anti-phishing-protection.md). Wenn Schutz vorhanden ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumente überprüft. Wenn eine URL als verdächtigen oder böswilliges identifiziert wird, können Sie verhindert werden, dass die URL zu öffnen, wenn Sie darauf klicken. Statt direkt auf der Website kann zu eine Seite Warnung sehen. 
   

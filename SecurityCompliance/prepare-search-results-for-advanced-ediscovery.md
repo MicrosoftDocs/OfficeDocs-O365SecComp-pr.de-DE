@@ -3,7 +3,7 @@ title: Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/10/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,18 +14,24 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Hier erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche in die Office 365-Sicherheit vorbereiten &amp; Compliance Center zur weiteren Analyse mit dem erweiterten eDiscovery-Tool.
-ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038308"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27280168"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
 
 Nach einer Suche, die einem eDiscovery-Fall in die Office 365-Sicherheit zugeordnet ist &amp; Compliance Center erfolgreich ausgeführt wird, können Sie die Suchergebnisse zur weiteren Analyse mit Office 365 erweiterte eDiscovery, dem Sie die große analysieren kann, Vorbereiten unstrukturierte Daten festgelegt und reduzieren die Menge der Daten, die mit einer rechtliche Anfrage relevant sind. Erweiterte eDiscovery-Features gehören:
   
-- **Optische zeichenerkennung** - Wenn Sie Suchergebnisse automatisch für erweiterte eDiscovery, optischen zeichenerkennung (OCR) Funktionalität vorbereiten extrahiert den Text von Bildern und dazu gehört das mit den Suchergebnissen, die auf in geladen werden Erweiterte eDiscovery für die Analyse. OCR wird unterstützt für lose Dateien, e-Mail-Anlagen und eingebettete Bilder. Dadurch können Sie die Text-Analysefunktionen der erweiterten eDiscovery (in der Nähe Duplikate, e-Mail-threading, Designs und vorhersehbare codieren) auf den Textinhalt in Bilddateien anwenden. 
+- **Optische zeichenerkennung** - Wenn Sie Suchergebnisse automatisch für erweiterte eDiscovery, optischen zeichenerkennung (OCR) Funktionalität vorbereiten extrahiert den Text von Bildern und dazu gehört das mit den Suchergebnissen, die auf in geladen werden Erweiterte eDiscovery für die Analyse. OCR wird unterstützt für lose Dateien, e-Mail-Anlagen und eingebettete Bilder. Dadurch können Sie die Text-Analysefunktionen der erweiterten eDiscovery (in der Nähe Duplikate, e-Mail-threading, Designs und vorhersehbare codieren) auf den Textinhalt in Bilddateien anwenden. Erweiterte eDiscovery OCR unterstützt die folgenden Formate für Bilddateien:
+
+    - GIF
+    - JPEG
+    - JPG
+    - PNG
+    - TIFF
     
 - **Erkennung nahezu doppelte** - können Sie die Überprüfung Daten effizienter strukturieren, damit eine Person eine Gruppe von ähnlichen Dokumenten überprüft. Dadurch wird verhindert, dass mehrere Bearbeiter müssen verschiedene Versionen desselben Dokuments anzeigen. 
     
@@ -37,11 +43,11 @@ Nach einer Suche, die einem eDiscovery-Fall in die Office 365-Sicherheit zugeord
     
 - **Exportieren von Daten für Applikationen überprüfen** - können Sie Daten aus erweiterte eDiscovery und Office 365 exportieren, nachdem Sie die Analyse abgeschlossen und das DataSet reduziert. Exportpaket enthält eine CSV-Datei, die die Eigenschaften aus der exportierten Inhalte und Analytics Metadaten enthält. Diese Exportpaket kann dann zu einer eDiscovery-Überprüfung-Anwendung importiert werden. 
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Um eine erweiterte eDiscovery mit Benutzerdaten zu analysieren, muss der Benutzer (der Verwaltungsberechtigte der Daten) eine Lizenz für Office 365 E5 zugewiesen werden. Alternativ können der Benutzer mit einer Lizenz für Office 365 E1 oder E3 eine erweiterte eDiscovery eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die zugewiesenen Fällen und erweiterte eDiscovery verwenden, um Daten zu analysieren erforderlich keine E5-Lizenz. 
     
-- Sie müssen ein eDiscovery-Manager oder einer eDiscovery-Administrator in der Office 365-Sicherheit &amp; Compliance Center, um die Suchergebnisse für erweiterte eDiscovery vorbereiten. Eine eDiscovery-Manager ist Mitglied der Rollengruppe eDiscovery-Manager. Eine eDiscovery Administrator ist auch Mitglied der Gruppe der eDiscovery-Manager-Rolle, jedoch zusätzliche eDiscovery Berechtigungen zugewiesen wurde. Anweisungen zum Zuweisen von eDiscovery-Administrator-Berechtigungen finden Sie unter Schritt 1 in [eDiscovery-Fälle, in der Office 365-Sicherheit und Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Sie müssen ein eDiscovery-Manager oder einer eDiscovery-Administrator in der Office 365-Sicherheit &amp; Compliance Center, um die Suchergebnisse für erweiterte eDiscovery vorbereiten. Eine eDiscovery-Manager ist Mitglied der Rollengruppe eDiscovery-Manager. Eine eDiscovery Administrator ist auch Mitglied der Gruppe der eDiscovery-Manager-Rolle, jedoch zusätzliche eDiscovery Berechtigungen zugewiesen wurde. Anweisungen zum Zuweisen von eDiscovery-Administrator-Berechtigungen finden Sie unter Schritt 1 in [eDiscovery-Fälle, in der Office 365-Sicherheit & Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten der Suchergebnisse für erweiterte eDiscovery
 

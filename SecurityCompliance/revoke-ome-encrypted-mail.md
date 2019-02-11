@@ -3,7 +3,6 @@ title: Widerrufen von E-Mails, die von der Office 365-Nachrichtenverschlüsselun
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/29/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Als Office 365-Administrator können Sie bestimmte-e-Mails widerrufen, die mit Office 365-Nachrichtenverschlüsselung verschlüsselt wurden.
-ms.openlocfilehash: a3f5c08d2c8660e56c378fc5fa7a850ff2c12eb5
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 018f12105e19382372a8a4b3a91248bb60b228be
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614389"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696239"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 Message Encryption e-Mail-Sperrung
 
@@ -59,22 +58,41 @@ Es gibt mehrere Methoden, die Nachrichten-ID der e-Mail erhalten, die Sie sperre
 2. Wählen Sie die Tabelle **Details anzeigen** , und identifizieren Sie die Nachricht, die Sie sperren möchten.
 3. Doppelklicken Sie auf die Nachricht zum Anzeigen von Details, die die Nachricht-ID enthalten
 
-### <a name="step-2-revoke-the-mail"></a>Schritt 2. Die e-Mail-Nachricht widerrufen  
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Schritt 2. Stellen Sie sicher, dass die e-Mail-Nachrichten gesperrt ist
 
-Wenn Sie die e-Mail-Nachrichten-ID, den, die Sie aufheben möchten kennen, können Sie die e-Mail-Nachricht mit dem Cmdlet Set-OMEMessageRevocation widerrufen.
+Führen Sie diese Schritte, um zu überprüfen, ob Sie eine bestimmte e-Mail-Nachricht widerrufen können oder nicht.
 
-1. [Verbindung mit Exchange Online mit Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Verwenden ein Arbeit oder Schule Konto, die in Office 365-Organisation über globaler Administrator-Berechtigungen verfügt, eine Windows PowerShell-Sitzung zu starten und eine Verbindung mit Exchange Online. Anweisungen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Führen Sie das Cmdlet Set-OMEMessageStatus wie folgt aus:
+     ```powershell
+     Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
+     ```
+
+   Dies gibt den Betreff der Nachricht sowie, ob die Nachricht gesperrt ist. Zum Beispiel
+
+     ```text
+     Subject IsRevocable
+     ------- -----------
+     “Test message”  True
+     ```
+
+### <a name="step-3-revoke-the-mail"></a>Schritt 3. Die e-Mail-Nachricht widerrufen  
+
+Wenn Sie wissen, die Nachrichten-ID der e-Mail, die Sie sperren möchten, und Sie sichergestellt haben, dass die Nachricht gesperrt ist, können Sie die e-Mail-Nachricht mithilfe des Cmdlets Set-OMEMessageRevocation widerrufen.
+
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://aka.ms/exopowershell).
 
 2. Führen Sie das Cmdlet Set-OMEMessageRevocation wie folgt aus:
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
-    ```  
+    ```
 
 3. Um zu überprüfen, ob die e-Mail-Nachricht gesperrt wurde, führen Sie das Cmdlet Get-OMEMessageStatus wie folgt aus:
 
     ```powershell
-    Get-OMEMessageStatus -MessageId "<messageId>" | fl Revoked
+    Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
     ```  
     Wenn OCSP erfolgreich war, gibt das Cmdlet das folgende Ergebnis zurück:  
 

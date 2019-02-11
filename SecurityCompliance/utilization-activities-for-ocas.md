@@ -1,9 +1,9 @@
 ---
-title: Auslastung Aktivitäten nach der Einführung der Office 365-Cloud-App-Sicherheit
+title: Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,21 +13,21 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Nachdem Sie Office 365-Cloud-App-Sicherheit eingeführt und eingerichtet haben, sollten Sie sicherstellen, dass Ihre Konfiguration korrekt ist und dass Sie, für die regelmäßige Überprüfung bereit sind bestimmte Aufgaben ausführen.
-ms.openlocfilehash: bc8cfad8eb9d9444066c3193ec2978e9ffd9f56a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529220"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603706"
 ---
-# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Auslastung Aktivitäten nach der Einführung der Office 365-Cloud-App-Sicherheit
+# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security
   
 |Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
 |:-----|:-----|:-----|:-----|
 |[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |[Starten Sie Bereitstellen von](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Office 365-Cloud-App-Sicherheit ist in Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann Office 365-Cloud-App-Sicherheit als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365-Cloud-App-Sicherheit ist in Office 365 Enterprise E5 verfügbar. Wenn in Ihrer Organisation ein weiteres Abonnement von Office 365 Enterprise verwendet wird, kann Office 365-Cloud-App-Sicherheit als Add-on erworben werden. (Als ein globaler Administrator in der Office 365-Verwaltungskonsole, wählen Sie **Abrechnung** \> **Hinzufügen Abonnements**.) Weitere Informationen finden Sie unter [Office 365-Plattformdienstbeschreibung: Sicherheit in Office 365 &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [gekauft oder bearbeiten Sie ein Add-on für Office 365 für Unternehmen](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 Nachdem Sie einrichten und Office 365-Cloud-App-Sicherheit konfiguriert haben, sollten Sie bestimmte Aufgaben Auslastung als globaler Office 365-Administrator oder Sicherheitsadministrator für Ihre Organisation ausführen. 
 
@@ -92,9 +92,9 @@ Wenn ein längeren Zeitraum verstrichen ursprünglich konfiguriert oder Ihre Off
     
 - [Anhalten oder Wiederherstellen eines Benutzerkontos](suspend-or-restore-an-account-in-ocas.md)
     
-- [Verwalten von app-Berechtigungen](manage-app-permissions-in-ocas.md)
+- [Verwalten von OAuth-apps](manage-app-permissions-in-ocas.md)
     
-- [Überprüfen der app Discovery Ergebnisse in Office 365-Cloud-App-Sicherheit](review-app-discovery-findings-in-ocas.md)
+- [Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
 - Anzeigen einer Liste mit unterstützten [Web Datenverkehr Protokolle und Datenquellen](web-traffic-logs-and-data-sources-for-ocas.md)
     

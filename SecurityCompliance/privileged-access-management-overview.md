@@ -13,19 +13,21 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Verwenden Sie in diesem Thema erfahren Sie mehr über Berechtigungen Zugriff auf Management in Office 365
-ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 85141ae885132095692683b766d5550cc538e2e8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723232"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652260"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Berechtigungen zugreifen Management in Office 365
 
 > [!IMPORTANT]
 > In diesem Thema werden die Hinweise zur Bereitstellung und Konfiguration für derzeit nur in Office 365 E5 und erweiterte Compliance-SKUs verfügbaren Features behandelt.
 
-Access privilegierten Management ermöglicht die Differenzierte Sicherung Access Steuerung privilegierten Administratoraufgaben in Office 365. Es kann Schützen Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können. Nach der Aktivierung der Verwaltung von Systemzugriff benötigen Benutzer anfordern Just-in-Time-Zugriff mit erhöhten Rechten und privilegierten über einen Genehmigungsworkflow Aufgaben, die hochgradig bezogenen und Zeit gebunden ist. Dadurch können Benutzer Just-in-ausreichend-zugreifen zum Ausführen der Aufgabe zur hand, ohne zu riskieren Belichtung vertrauliche Daten oder wichtige Konfigurationseinstellungen. Aktivieren der Systemzugriff Management in Office 365 aktivieren Ihrer Organisation mit 0 (null) stehende Berechtigungen Betrieb und stellen eine Ebene Verteidigung gegen Sicherheitslücken haftbar gemacht werden, aufgrund von solchen stehende Verwaltungszugriff bereit. 
+Access privilegierten Management ermöglicht die Differenzierte Sicherung Access Steuerung privilegierten Administratoraufgaben in Office 365. Es kann Schützen Ihrer Organisation aus Verstöße, die vorhandenen privilegierten Administratorkonten stehende Zugriff auf vertrauliche Daten oder Zugriff auf wichtige Konfigurationseinstellungen verwenden können. Nach der Aktivierung der Verwaltung von Systemzugriff benötigen Benutzer anfordern Just-in-Time-Zugriff mit erhöhten Rechten und privilegierten über einen Genehmigungsworkflow Aufgaben, die hochgradig bezogenen und Zeit gebunden ist. Dadurch können Benutzer Just-in-ausreichend-zugreifen zum Ausführen der Aufgabe zur hand, ohne zu riskieren Belichtung vertrauliche Daten oder wichtige Konfigurationseinstellungen. Aktivieren der Systemzugriff Management in Office 365 aktivieren Ihrer Organisation mit 0 (null) stehende Berechtigungen Betrieb und stellen eine Ebene Verteidigung gegen Sicherheitslücken haftbar gemacht werden, aufgrund von solchen stehende Verwaltungszugriff bereit.
+
+Einen raschen Überblick über die integrierte Kunden Lockbox und Systemzugriff-End-to-End-Workflows finden Sie unter dieser [Kunden Lockbox und Systemzugriff Management in Office 365 video](https://go.microsoft.com/fwlink/?linkid=2066800).
 
 ## <a name="layers-of-protection"></a>Schutzebenen
 

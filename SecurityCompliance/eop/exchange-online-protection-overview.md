@@ -1,9 +1,9 @@
 ---
 title: Exchange Online Protection im Überblick
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, mit dem Sie Ihre Organisation vor Spam und Schadsoftware schützen können.
-ms.openlocfilehash: 89852c7ba211ccb266c8b231b00d3d83987a5f20
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026692"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686364"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -44,11 +44,16 @@ EOP wird in einem weltweiten Rechenzentrennetzwerk ausgeführt, das für eine op
   
 EOP führt einen Lastenausgleich zwischen Rechenzentren aus, jedoch nur innerhalb einer Region. Wenn Sie über eine Bereitstellung in einer bestimmten Region verfügen, werden alle Nachrichten mit dem E-Mail-Routing für diese Region verarbeitet. Die folgende Liste zeigt, wie regionales E-Mail-Routing für die EOP-Datencenter funktioniert:
   
-- In der America's, alle Exchange Online Postfächer in US-Datencentern, mit Ausnahme von Südamerika verwaltet werden, wobei Rechenzentren in Brasilien und Chile verwendet werden und in Kanada, in denen Rechenzentren in Kanada verwendet werden. Alle e-Mail-Nachrichten, einschließlich Nachrichten für Kunden in Südamerika und in Kanada, werden durch US Rechenzentren für EOP-Filterung weitergeleitet; jedoch Quarantäne gestellte e-Mails im Datencenter gespeichert ist, auf dem der Mandant befindet.
     
 - In Europa, dem Nahen Osten und Afrika (EMEA) befinden sich alle Exchange Online-Postfächer in EMEA-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über EMEA-Rechenzentren geleitet.
     
-- Im asiatisch pazifischen Raum (APAC) befinden sich alle Exchange Online-Postfächer in APAC-Datenzentren, doch die Nachrichten werden zurzeit zur EOP-Filterung über EMEA-Rechenzentren geleitet. Dies soll im vierten Quartal des Jahres 2014 geändert werden. Dann werden Nachrichten zur EOP-Filterung über APAC-Datencenter geleitet.
+- In Asien-Pazifik ("APAC"), befinden sich alle Exchange Online-Postfächern in Rechenzentren "APAC", aber Nachrichten derzeit über "APAC" Rechenzentren für EOP-Filterung geleitet werden.
+=======
+- In der amerikanischen Kontinent befinden sich alle Exchange Online-Postfächern in US-Datencentern, mit Ausnahme von Südamerika, wo Rechenzentren in Brasilien und Chile verwendet werden, und in Kanada, in denen Rechenzentren in Kanada verwendet werden. Alle e-Mail-Nachrichten, einschließlich Nachrichten für Kunden in Südamerika und in Kanada, werden über lokale Rechenzentren für EOP-Filterung weitergeleitet; Quarantäne gestellte e-Mails wird im Datencenter gespeichert, in dem der Mandant befindet.
+    
+- In Europa, dem Nahen Osten und Afrika (EMEA) befinden sich alle Exchange Online-Postfächer in EMEA-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über EMEA-Rechenzentren geleitet.
+    
+- In Asien-Pazifik ("APAC"), befinden sich alle Exchange Online-Postfächern in Rechenzentren "APAC", und Nachrichten werden derzeit über "APAC" Rechenzentren für EOP-Filterung weitergeleitet.
     
 - Alle Exchange Online-Postfächer für die Government Community Cloud (GCC) befinden sich in US-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über US-Rechenzentren geleitet.
     

@@ -3,7 +3,7 @@ title: Übersicht über die uneingeschränkte Archivierung in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über automatisch erweitert die Archivierung in Office 365, unbegrenzte Archivierung für Exchange Online-Postfächer enthält.
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782122"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740817"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die uneingeschränkte Archivierung in Office 365
 
@@ -69,11 +69,11 @@ Die folgenden Screenshots anzeigen eine Ordnerliste vor und nach Nachrichten in 
 
 Um Nachrichten zugreifen, die in einem Archiv automatisch erweitert gespeichert sind, müssen Benutzer eine der folgenden Outlook-Clients verwenden:
   
-- Outlook 2016 für Windows
+- 2016 Outlook oder Outlook 2019 für Windows
     
 - Outlook im Web 
     
-- Outlook 2016 für Mac 
+- 2016 Outlook oder Outlook 2019 für Mac 
     
 > [!NOTE]
 > Outlook 2013-Benutzer können nur Zugriff auf Elemente, die ursprünglich in ihre Archivpostfach gespeichert wurden. Sie werden kann nicht für den Zugriffselemente, die in zusätzliche Archivspeicher verschoben werden. 
@@ -96,7 +96,7 @@ In diesem Abschnitt wird die Funktionalität zwischen erweiterbares Archivierung
   
 - **eDiscovery** - bei Verwendung ein Office 365 eDiscovery-Tools, z. B. Inhaltssuche oder Compliance-eDiscovery, die Bereiche zusätzlicher Speicher in einem Archiv automatisch erweitert werden ebenfalls durchsucht.
     
-- **Aufbewahrung** - Wenn Sie ein Postfach gehalten in Exchange Online mithilfe von Tools wie Aufbewahrung für eventuelle Rechtsstreitigkeiten oder eDiscovery-Fall Archive und Aufbewahrungsrichtlinien in die Office 365-Sicherheit &amp; Compliance Center, Inhalt befindet sich in einem Archiv automatisch erweitert ist auch in der Warteschleife platziert.
+- **Aufbewahrung** - Wenn Sie ein Postfach auf platzieren halten mithilfe von Tools wie Aufbewahrung für eventuelle Rechtsstreitigkeiten im Exchange Online oder eDiscovery-Fall enthält und Aufbewahrungsrichtlinien in die Sicherheit in Office 365 Compliance Center, Content & befindet sich in einem Archiv automatisch erweitert ist auch in der Warteschleife platziert.
     
 - **Messaging-datensatzverwaltung (MRM)** - Wenn Sie Löschrichtlinien MRM in Exchange Online verwenden, um abgelaufene Postfachelemente, befindet sich im Archiv automatisch erweitert abgelaufene Elemente endgültig löschen, werden ebenfalls gelöscht.
     

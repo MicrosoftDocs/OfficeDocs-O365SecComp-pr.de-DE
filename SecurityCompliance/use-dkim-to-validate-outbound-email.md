@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614449"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696332"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -88,9 +88,7 @@ Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, 
 Verwenden Sie das folgende Format für CNAME-Einträge.
 
 > [!IMPORTANT]
-> Wenn Sie eine hohe GCC Kunden sind, berechnen wir unterschiedlich _DomainGuid_ ! Anstelle von Nachschlagen des MX-Eintrags für Ihre _InitialDomain_ _DomainGuid_berechnet, berechnen stattdessen wir es direkt aus der benutzerdefinierten Domäne. Beispielsweise wenn Ihre benutzerdefinierte Domäne "contoso.com" ist Ihre DomainGuid wird "Contoso-com", alle Zeiträume werden mit einem Gedankenstrich ersetzt.
-
-Ja, unabhängig davon welche MX-Eintrag Ihrer InitialDomain verweist, immer die oben genannten-Methode verwenden Sie zum Berechnen der DomainGuid in die CNAME-Einträge verwenden.
+> Wenn Sie eine hohe GCC Kunden sind, berechnen wir unterschiedlich _DomainGuid_ ! Anstelle von Nachschlagen des MX-Eintrags für Ihre _InitialDomain_ _DomainGuid_berechnet, berechnen stattdessen wir es direkt aus der benutzerdefinierten Domäne. Beispielsweise wenn Ihre benutzerdefinierte Domäne "contoso.com" ist Ihre DomainGuid wird "Contoso-com", alle Zeiträume werden mit einem Gedankenstrich ersetzt. Ja, unabhängig davon welche MX-Eintrag Ihrer InitialDomain verweist, immer die oben genannten-Methode verwenden Sie zum Berechnen der DomainGuid in die CNAME-Einträge verwenden.
 
   
 ```

@@ -1,5 +1,5 @@
 ---
-title: Threading-e-Mail
+title: E-Mail-Threading
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,22 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2340128f508a3be389afce86596f7e6395a0bb7e
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4328971a6b13c60c4d8b9f5b6db310d72a5b215
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607809"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29705996"
 ---
-# <a name="email-threading"></a>Threading-e-Mail
+# <a name="email-threading"></a>E-Mail-Threading
+
 Erwägen Sie eine e-Mail-Unterhaltung, die für eine Weile schon hat. In den meisten Fällen muss die letzte e-Mail auf dem Thread den Inhalt aller vorherigen e-Mails enthalten; So überprüfen Sie die letzte e-Mail erhalten einen vollständigen Kontext der Unterhaltung, die im Thread erfolgt. Derartige e-Mails threading-e-Mail identifiziert werden, so dass Bearbeiter einen Bruchteil gesammelten Dokumente überprüfen können, ohne zu einem beliebigen Kontext verlieren.
 
 ## <a name="what-does-email-threading-do"></a>Was macht threading-e-Mail?
+
 E-Mail-threading jede e-Mail- und Desconstructs analysiert, um einzelne Nachrichten; Jede e-Mail ist eine Kette von einzelnen Nachrichten. Klicken Sie dann, analysiert alle e-Mails des Arbeitssatzes, um zu bestimmen, ob eine e-Mail-Nachricht eindeutig Inhalt aufweist oder ob die Kette vollständig in eine andere e-Mail-Adresse enthalten ist. Am Ende sind-e-Mails in vier Kategorien unterteilt:
-- Inclusives: die letzte Nachricht in der e-Mail eindeutigen Inhalt und die e-Mail-Nachricht hat alle Anlagen, die in anderen e-Mails enthalten waren, von denen die Inhalte vollständig in dieser e-Mail enthalten ist.
-- Minus inklusive: die letzte Meldung in der e-Mail hat eindeutige Inhalt, die e-Mail enthält jedoch keine einige der Anlagen, die in anderen e-Mails enthalten waren, von denen die Inhalte vollständig in diese e-Mail enthalten ist.
-- Inklusive Kopie: eine genaue Kopie eines inklusive/inklusive minus e-Mail
-- None: Der Inhalt dieser e-Mail ist vollständig in mindestens eine e-Mail-Nachricht enthalten, die als inklusive/inklusive Minuszeichen gekennzeichnet ist.
+
+- **Inklusive**: die letzte Nachricht in der e-Mail eindeutigen Inhalt und die e-Mail-Nachricht hat alle Anlagen, die in anderen e-Mails enthalten waren, von denen die Inhalte vollständig in diese e-Mail enthalten ist.
+
+
+- **Inklusive minus**: die letzte Meldung in der e-Mail hat eindeutige Inhalt, die e-Mail enthält jedoch keine einige der Anlagen, die in anderen e-Mails enthalten waren, von denen die Inhalte vollständig in diese e-Mail enthalten ist.
+
+- **Inklusive Kopie**: eine genaue Kopie eines inklusive/inklusive minus e-Mail
+
+- **None**: der Inhalt dieser e-Mail in mindestens eine e-Mail, die als inklusive/inklusive Minuszeichen gekennzeichnet ist vollständig enthalten ist.
 
 ## <a name="how-is-it-different-from-conversations-in-outlook"></a>Wie ist es sich von Unterhaltungen in Outlook?
 Auf einen Blick hört Unterhaltung Gruppen in Outlook sehr ähnlich. Es gibt jedoch einige wichtige Unterschiede. Verwenden Sie eine e-Mail-Unterhaltung, die in zwei Unterhaltung verzweigt, haben Sie; beispielsweise geantwortet einer Person an eine e-Mail, die nicht die neuesten in der Unterhaltung ist, sodass die letzten beiden e-Mails in der Unterhaltung sowohl eindeutigen Inhalt.

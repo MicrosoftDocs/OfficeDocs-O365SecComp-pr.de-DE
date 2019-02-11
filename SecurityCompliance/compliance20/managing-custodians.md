@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Verwalter in erweiterten eDiscovery (Preview)
+title: Arbeiten Sie mit Verwalter in erweiterten eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607818"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706016"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>Arbeiten mit Verwalter in erweiterten eDiscovery (Preview)
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Arbeiten Sie mit Verwalter in erweiterten eDiscovery (Preview)
 
 Häufig, wenn eine Organisation auf eine rechtliche Untersuchung reagiert, der Workflow um identifizierende, beibehalten und Sammeln von potenziell relevante Inhalte deaktiviert Verwalter von Personen oder Daten innerhalb ihrer Organisation basiert. In eDiscovery diese Personen Daten Verwalter aufgerufen werden und werden als "Personen, die administrativen Steuerung von einem Dokument oder eine Datei" definiert. Beispielsweise könnte der Daten Verwaltungsberechtigte einer e-Mail den Besitzer des Postfachs die relevante Meldung enthält.  
 
@@ -31,11 +31,11 @@ In einem Fall erweiterte eDiscovery (Preview) rechtliche Teams können Personen 
 
 Weitere Informationen zum Arbeiten mit Verwalter finden Sie unter den folgenden Artikeln: 
 
-- [Hinzufügen der Verwalter zu einer Anfrage](add-custodians-to-case.md)
+- [Hinzufügen von Verwaltungsberechtigten zu einem Fall](add-custodians-to-case.md)
 
-- [Verwalten von Verwalter in dem Fall](manage-new-custodians.md)
+- [In dem Fall Verwalter verwalten](manage-new-custodians.md)
 
-- [Anzeigen von Verwaltungsberechtigten Aktivität](view-custodian-activity.md)
+- [Anzeigen der Aktivitäten von Verwaltungsberechtigten](view-custodian-activity.md)
 
 ## <a name="roles-and-permissions"></a>Rollen und Berechtigungen
 

@@ -1,5 +1,5 @@
 ---
-title: Verwenden das Modul Relevanz zum Analysieren von Daten in erweiterten eDiscovery (Preview)
+title: Verwenden Sie das Modul Relevanz zum Analysieren von Daten in erweiterten eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5e30a7f6919f50d2d73606fae3b53f21ef33e223
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607771"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695171"
 ---
-# <a name="using-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Verwenden das Modul Relevanz zum Analysieren von Daten in erweiterten eDiscovery (Preview)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Verwenden Sie das Modul Relevanz zum Analysieren von Daten in erweiterten eDiscovery (Preview)
 
 Erweiterte eDiscovery (Preview) enthält das Modul Relevanz der Relevanz Schulung und Überprüfung von Dateien im Zusammenhang mit der Fall. Der Relevanz Workflow wird angezeigt und wie folgt beschrieben:
   

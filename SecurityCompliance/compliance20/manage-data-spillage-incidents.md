@@ -1,5 +1,5 @@
 ---
-title: Verwalten von einem Daten stellen Vorfall in Microsoft 365
+title: Verwalten eines Daten stellen Vorfalls in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, mit dem neuen Daten-Untersuchungen (Preview)-Tool in der Office 365-Sicherheit & Compliance Center zum Verwalten von eines Daten stellen Vorfalls.
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636622"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706176"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>Verwalten von einem Daten stellen Vorfall in Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Daten stellen Vorfalls in Microsoft 365 
 
 Daten stellen ist, wenn ein vertrauliches Dokument in einer nicht vertrauenswürdigen Umgebung freigegeben ist. Wenn ein Daten stellen Vorfall erkannt wird, ist es wichtig, schnell Bewerten der Größe und Standorte von der Stellen, untersuchen Sie die Benutzeraktivitäten herum und verschütteten Daten dann dauerhaft aus dem System löschen.
 
@@ -111,8 +111,8 @@ In der Untersuchung wechseln Sie zur Registerkarte **Vorfälle** , und klicken S
 
 Klicken Sie zum Gruppieren von Dokumenten, und erhalten Sie weitere Unterstützung für die Überprüfung, auf **Vorfall verwalten**. Klicken Sie in die Kachel **Analytics** auf **Analysieren**. Dadurch wird die erweiterte Analytics wie Erkennung von Duplikaten, e-Mail-threading und Design Analyse ausgeführt. Weitere Informationen finden Sie unter:
 
-- [Erkennung von Duplikaten in Ihrer Nähe.](near-duplicates.md)
-- [Threading-e-Mail](email-threading.md)
+- [Erkennen von Quasiduplikaten](near-duplicates.md)
+- [E-Mail-Threading](email-threading.md)
 - [Designs](themes.md)
 
 Um zu bestimmen, welche Benutzer an die Daten stellen beteiligt sind, können Sie Erstellen einer neuen Abfrage in der Vorfall und verwenden Sie die/Author Absender und Empfänger Bedingungen. Dadurch wird eine Liste aller Absender, Empfänger und Autoren gefunden in gesammelten Daten, die den Vorfall hinzugefügt wurde, erstellt. Achten Sie darauf, untersuchen Sie die Liste, um festzustellen, ob externe Benutzer in der Liste vorhanden sind. Weitere Informationen finden Sie unter [Search Conditions](../keyword-queries-and-search-conditions.md#search-conditions).
@@ -141,6 +141,7 @@ Nachdem Sie Dokumente in der quellspeicherorte für Inhalte (Postfächer oder We
 So löschen Sie eine Untersuchung:
 
 1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Untersuchung Informationen**.
+
 2. Klicken Sie auf die **Anfrage zu löschen**. 
 
 Wenn Sie nicht die Untersuchung löschen müssen oder speichern Sie die Informationen, die Sie bei der Untersuchung erfasst werden sollen, können Sie den **Fall schließen**klicken. Zu einem späteren Zeitpunkt können Sie geschlossene Untersuchungen erneut öffnen.

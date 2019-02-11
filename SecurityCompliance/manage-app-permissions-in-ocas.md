@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: OAuth-apps in Office 365-Cloud-App-Sicherheit können Sie apps verwalten, die Ihre Benutzer für die Verwendung mit Office 365 Daten herunterladen
-ms.openlocfilehash: 2e3c6d9d42b22aa8bb666211431197744471e84f
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447043"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603686"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Verwalten von OAuth-Apps mit Office 365 Cloud App Security
 
@@ -35,13 +35,9 @@ In diesem Artikel wird beschrieben, wo Sie OAuth apps verwalten, wie genehmigen,
 > [!NOTE]
 > OAuth-apps werden in der Cloud App Sicherheit in Office 365-Portal verwaltet. Sie müssen ein globaler Administrator oder Sicherheitsadministrator zum Ausführen der folgenden Aufgabe sein. Um weitere finden Sie unter informieren [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
-    
-2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
-    
-3. Klicken (oder tippen) **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>**Hinweis**: Wenn die Office 365-Cloud-App-Sicherheit noch nicht aktiviert ist, können Sie Aktionen ausführen, die auf dieser Seite. Finden Sie unter [machen Sie sich bereit für Office 365-Cloud-App-Sicherheit](get-ready-for-office-365-cas.md). 
+1. Klicken Sie auf das Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.
   
-4. Wählen Sie **untersuchen** \> **OAuth-apps**.<br/>![Wählen Sie im Portal O365 CAS überprüfen.](media/OCAS-OAuthApps.png)<br/>
+2. Wählen Sie **untersuchen** \> **OAuth-apps**.<br/>![Wählen Sie im Portal O365 CAS überprüfen.](media/OCAS-OAuthApps.png)<br/>
   
 ## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>Was sehen Sie auf der Seite verwalten OAuth-apps
 

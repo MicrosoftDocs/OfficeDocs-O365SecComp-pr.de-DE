@@ -3,7 +3,7 @@ title: Erstellen von App-Ermittlungsberichten mit Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Erstellen von Berichten mit Office 365 Cloud App-Sicherheit, mit denen Sie zu verstehen, wie Benutzern in Ihrer Organisation Office 365 und andere apps verwendet werden.
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014867"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603716"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Erstellen von App-Ermittlungsberichten mit Office 365 Cloud App Security
 
@@ -44,28 +44,17 @@ Um ein app-Discovery-Bericht erstellen, geben Sie die Hersteller-Datenquelle fü
   
 1. Erfassen Sie Ihre [Web-Datenverkehr Protokolle und Datenquellen für Office 365-Cloud-App-Sicherheit](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
-    
-3. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
-    
-4. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-5. Wählen Sie **Discover** \> **erstellt einen neuen Bericht**.
-    
-    ![Wählen Sie im Office 365 CAS-Portal Discover](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+2. Klicken Sie auf das Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung. 
+       
+3. Wählen Sie **Discover** \> **erstellt einen neuen Bericht**. <br>![Wählen Sie im Office 365 CAS-Portal Discover](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-6. Geben Sie einen Namen und eine Beschreibung für den Bericht, und wählen Sie dann die Datenquelle für die Web-Datenverkehr Protokolle in der Liste **Datenquelle** aus. 
-    
-    ![Wählen Sie in Office 365-CAS Discover \> erstellen neuen Bericht](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)
+4. Geben Sie einen Namen und eine Beschreibung für den Bericht, und wählen Sie dann die Datenquelle für die Web-Datenverkehr Protokolle in der Liste **Datenquelle** aus. <br>![Wählen Sie in Office 365-CAS Discover \> erstellen neuen Bericht](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>Wenn eine Datenquelle, die Sie verwenden möchten, nicht aufgeführt ist, können Sie anfordern, dass er hinzugefügt werden. Wählen Sie **andere** für die **Datenquelle**aus, und geben Sie den Namen der Datenquelle, die Sie hochladen möchten. Wir überprüfen Sie das Protokoll und informiert Sie, wenn die Unterstützung für die Datenquelle hinzugefügt werden, die es generiert. 
   
-    > [!NOTE]
-    > Wenn eine Datenquelle, die Sie verwenden möchten, nicht aufgeführt ist, können Sie anfordern, dass er hinzugefügt werden. Wählen Sie **andere** für die **Datenquelle**aus, und geben Sie den Namen der Datenquelle, die Sie hochladen möchten. Wir überprüfen Sie das Protokoll und informiert Sie, wenn die Unterstützung für die Datenquelle hinzugefügt werden, die es generiert. 
-  
-7. Navigieren Sie zum Speicherort der Protokolldateien, die Sie gesammelt, und wählen Sie die Dateien. Die Protokolldateien müssen von der Datenquelle erstellt worden sein, die Sie für den Bericht ausgewählt haben.
+5. Navigieren Sie zum Speicherort der Protokolldateien, die Sie gesammelt, und wählen Sie die Dateien. Die Protokolldateien müssen von der Datenquelle erstellt worden sein, die Sie für den Bericht ausgewählt haben.
     
-8. Klicken Sie auf **Erstellen** , um dem Bericht erstellen zu beginnen. 
+6. Klicken Sie auf **Erstellen** , um dem Bericht erstellen zu beginnen. 
     
-9. Um den Status des Berichts angezeigt wird, klicken Sie auf **die Momentaufnahme Berichte verwalten**. Wenn ein Bericht bereit ist, sehen Sie die Option **Bericht anzeigen** . 
+7. Um den Status des Berichts angezeigt wird, klicken Sie auf **die Momentaufnahme Berichte verwalten**. Wenn ein Bericht bereit ist, sehen Sie die Option **Bericht anzeigen** . 
     
 ## <a name="next-steps"></a>Nächste Schritte
 

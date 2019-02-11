@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Verwalter in einem erweiterten eDiscovery (Preview)-Fall
+title: Verwalten der Verwalter in einem erweiterten eDiscovery (Preview)-Fall
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607831"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706096"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>Verwalten von Verwalter in einem erweiterten eDiscovery (Preview)-Fall
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Verwalten der Verwalter in einem erweiterten eDiscovery (Preview)-Fall
 
 Die Verwalter Registerkarte enthält eine Liste aller Verwalter im Fall sortierbare. Nachdem Sie eine Anfrage Verwalter hinzugefügt haben, werden Details zu einzelnen Verwaltungsberechtigter automatisch von Azure Active Directory gesammelt.
 
@@ -70,7 +70,7 @@ Ein Verwaltungsberechtigter und die ausgewählten Datenquellen zu aktualisieren:
   
 4. Aktualisieren Sie Auswahl für Exchange und OneDrive Standorte durch **Auswählen von Datenquellen**auf.
   
-5. Hinzufügen oder Entfernen von Teams, SharePoint oder Exchange Postfächer den Benutzer durch Klicken auf **zusätzliche Datenquellen**aus zugeordnet. Weitere Informationen dazu, wie Sie zum Zuordnen von Daten an ein Verwaltungsberechtigter Quellen, finden Sie unter [Verwalter hinzufügen, um eine erweiterte eDiscovery (Preview) Fall](add-custodians-to-case.md).
+5. Hinzufügen oder Entfernen von Teams, SharePoint oder Exchange Postfächer den Benutzer durch Klicken auf **zusätzliche Datenquellen**aus zugeordnet. Weitere Informationen dazu, wie Sie zum Zuordnen von Daten an ein Verwaltungsberechtigter Quellen finden Sie unter [Add Verwalter in eine Anfrage](add-custodians-to-case.md).
   
 6. Um den Sperrstatus Verwaltungsberechtigter zu aktualisieren, **freiheitsentziehenden Place-Haltebereiche**, klicken Sie auf, und aktivieren Sie oder deaktivieren Sie den Haltestatus für Verwalter.
 
@@ -95,7 +95,7 @@ Um eine erneute Indizierung Prozess an-Adresse teilweise auszulösen indizierte 
 
 5. Der Status für die erneute Indizierung kann auch auf der Registerkarte **Aufträge** nachverfolgt werden.
 
-Weitere Informationen zur erneuten Indizierung und Korrigieren von teilweise indizierte Elemente finden Sie unter [behoben Verarbeitungsfehler in erweiterten eDiscovery (Preview)](processing-data-for-case.md).
+Weitere Informationen zur erneuten Indizierung und Korrigieren von teilweise indizierte Elemente finden Sie unter [Beheben von Verarbeitungsfehlern](processing-data-for-case.md).
 
 ## <a name="releasing-a-custodian-from-a-case"></a>Ein Verwaltungsberechtigter aus einem Fall freigeben
 
@@ -118,6 +118,5 @@ Um ein Verwaltungsberechtigter freizugeben:
 
 ## <a name="related-information"></a>Weitere Informationen
 
- - Benutzerattribute in Active Directory 
- - [Error Remediation beim Verarbeiten von Daten](error-remediation.md) 
- - [Arbeiten mit communications](managing-custodian-communications.md)
+ - [Beheben von Fehlern beim Verarbeiten von Daten](error-remediation.md) 
+- [Arbeiten mit Kommunikation](managing-custodian-communications.md)

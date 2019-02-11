@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Verwenden Sie die Seite Warnungen in Office 365-Cloud-App-Sicherheit, zum Anzeigen von potenzieller Problemen und Ausführen einer Aktion. Sie können schließen oder Beheben von Benachrichtigungen, und Sie bei Bedarf anhalten ein Benutzerkontos.
-ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014827"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603676"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security
   
@@ -32,13 +32,9 @@ Sie können die Seite Warnungen in Office 365-Cloud-App-Sicherheit verwenden, po
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Wie Sie auf der Seite Warnungen abrufen
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
-    
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.
-    
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Klicken Sie auf das Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.
   
-4. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm **Benachrichtigungen**.<br/>![Klicken Sie auf der Seite Warnungen finden Sie unter Benachrichtigungen, die ausgelöst wurden und Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm **Benachrichtigungen**.<br/>![Klicken Sie auf der Seite Warnungen finden Sie unter Benachrichtigungen, die ausgelöst wurden und Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Überprüfen und Handle Warnungen
 

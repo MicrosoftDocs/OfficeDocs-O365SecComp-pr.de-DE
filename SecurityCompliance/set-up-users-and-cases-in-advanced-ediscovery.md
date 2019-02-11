@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Benutzern und in Office 365 erweiterte eDiscovery-Fälle
+title: Einrichten von Benutzern und Fällen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Informationen Sie zum Konfigurieren von Benutzerrollen, Fälle erstellen und Zuweisen von Benutzern zu Fällen in Office 365 erweiterte eDiscovery.  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529708"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559058"
 ---
-# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Einrichten von Benutzern und in Office 365 erweiterte eDiscovery-Fälle
+# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Einrichten von Benutzern und Fällen in Office 365 Advanced eDiscovery
 
 In diesem Thema wird beschrieben, wie Benutzer und für Office 365 erweiterte eDiscovery-Fälle einrichten.
   
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -35,7 +35,7 @@ Vor dem Einrichten von Fällen und Benutzer in erweiterten eDiscovery, ist Folge
     
 - Sie müssen ein Mitglied der Rollengruppe eDiscovery-Manager in der Office 365-Sicherheit sein &amp; Compliance Center zum Erstellen eines eDiscovery-Fall und Mitglieder hinzufügen. Selbst bei der Sicherheit der eDiscovery-Manager-Rollengruppe hinzufügen &amp; Compliance Center, Sie müssen ein globaler Administrator in Office 365-Organisation sein. Wenn Sie kein globaler Administrator angemeldet sind, müssen Sie bitten Sie einen globalen Administrator So fügen Sie der eDiscovery-Manager-Rollengruppe hinzu. Weitere Informationen finden Sie unter:
     
-  - [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+  - [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
   - [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md)
     
@@ -59,9 +59,7 @@ Nachdem Sie einen eDiscovery-Fall erstellen und Hinzufügen von Mitgliedern, kö
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Vorbereiten von Daten](prepare-data-for-advanced-ediscovery.md)
-  
-[Benutzerrollen und access](user-roles-and-access-in-advanced-ediscovery.md)
-
+[Vorbereiten der Daten](prepare-data-for-advanced-ediscovery.md)
+ 

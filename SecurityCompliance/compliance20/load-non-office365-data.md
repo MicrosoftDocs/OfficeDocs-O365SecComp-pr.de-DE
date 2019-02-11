@@ -1,5 +1,5 @@
 ---
-title: Laden von nicht - Office 365-Daten in ein Arbeitssatz
+title: Laden von Nicht-Office 365-Daten in einen Arbeitssatz
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607802"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706086"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>Laden von nicht - Office 365-Daten in ein Arbeitssatz
+# <a name="load-non-office-365-data-into-a-working-set"></a>Laden von Nicht-Office 365-Daten in einen Arbeitssatz
 
 Nicht alle Dokumente, die Sie möglicherweise zur Analyse mit Office 365 erweiterte eDiscovery werden in Office 365 live. Importieren Sie mit dem Inhalt nicht Office 365-Feature in erweiterten eDiscovery Sie Dokumente hochladen können, die in Office 365 in einer Arbeitssatz live nicht, damit diese mit erweiterten eDiscovery analysiert werden. Dieses Verfahren wird veranschaulicht, wie Sie Ihre nicht - Office 365-Dokumente in erweiterten eDiscovery für die Analyse bringen.
 
@@ -30,14 +30,21 @@ Nicht alle Dokumente, die Sie möglicherweise zur Analyse mit Office 365 erweite
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 Verwendung des Upload nicht Office 365-Features, wie in diesem Verfahren beschrieben muss vorhanden sein:
-* Ein Office 365 E3 mit erweiterte Compliance Add-on oder E5 Abonnement
-* Alle Verwalter, dessen Inhalt nicht - Office 365 hochgeladen werden, müssen mit erweiterte Compliance Add-on oder E5 Lizenzen E3 verfügen.
-* Eine vorhandene eDiscovery-Fall
-* Alle zum Hochladen von Dateien in den Ordner, in dem ein Ordner pro Verwaltungsberechtigter vorhanden ist und die Ordner Name befindet sich in diesem Format *Alias@DomainName,* gesammelt werden. Die *alias@domainname* müssen Office 365-Benutzeralias und die Domäne sein. Sie können alle *alias@domainname* Ordner in einem Stammordner zusammenfassen. Stammordner kann nur die *alias@domainname* Ordner enthalten, es muss keine losen Dateien im Stammordner
-* Ein Konto, das entweder ein eDiscovery-Manager oder eDiscovery Microsoft Azure Storage Administratortools auf einem Computer mit Zugriff auf die Struktur des nicht - Office 365 Content-Ordner installiert ist.
-* Installieren von AzCopy, hierzu können Sie hier:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- Ein Office 365 E3 mit erweiterte Compliance Add-on oder E5 Abonnement.
+
+- Alle Verwalter, dessen Inhalt nicht - Office 365 hochgeladen werden soll, müssen E3 mit erweiterte Compliance Add-on oder E5 Lizenzen verfügen.
+
+- Eine vorhandene eDiscovery-Fall.
+
+- Alle zum Hochladen von Dateien in den Ordner, in dem ein Ordner pro Verwaltungsberechtigter vorhanden ist und die Ordner Name befindet sich in diesem Format *Alias@DomainName,* gesammelt werden. Die *alias@domainname* müssen Office 365-Benutzeralias und die Domäne sein. Sie können alle *alias@domainname* Ordner in einem Stammordner zusammenfassen. Stammordner kann nur die *alias@domainname* Ordner enthalten, es muss keine losen Dateien im Stammordner gespeichert.
+
+- Ein Konto, das entweder ein eDiscovery-Manager oder eDiscovery Microsoft Azure Storage Administratortools auf einem Computer mit Zugriff auf die Struktur des nicht - Office 365 Content-Ordner installiert ist.
+
+- Installieren Sie AzCopy, was hier möglich:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Hochladen Sie nicht - Office 365-Inhalte in erweiterten eDiscovery
+
 1. Öffnen Sie als ein eDiscovery-Manager oder eine eDiscovery-Administrator erweiterte eDiscovery, und klicken Sie dann auf die Groß-/Kleinschreibung, der die Daten nicht - Office 365 zu hochgeladen werden soll.  Klicken Sie auf der Registerkarte **legt arbeiten** , und wählen Sie dann des Arbeitssatzes, die, dem Sie die Daten nicht-Office 365 zu laden möchten.  Wenn Sie nicht bereits ein Arbeitssatz erstellt haben, können Sie dies jetzt tun.  Klicken Sie abschließend auf **Verwalten Funktionsweise festgelegt** und dann **Uploads anzeigen** im Datenabschnitt nicht Office 365
 
 2. Klicken Sie auf die Schaltfläche **Dateien hochladen** , um den nicht-Office 365-Assistenten zu starten.

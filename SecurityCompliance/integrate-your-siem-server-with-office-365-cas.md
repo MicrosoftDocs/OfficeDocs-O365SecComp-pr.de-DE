@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Sie können Ihre SIEM Server mit Office 365-Cloud-App-Sicherheit integriert. Lesen Sie diesen Artikel, um Sie erhalten einen Überblick über die Funktionsweise und wie es einrichten.
-ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723262"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603766"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security
   
@@ -67,29 +67,24 @@ Office 365-Cloud-App-Sicherheit unterstützt derzeit die folgenden SIEM-Server:
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Schritt 1: Richten Sie es von einem Agent SIEM in Office 365-Cloud-App-Sicherheit ein
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
-    
-2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
-    
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Klicken Sie auf das Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.
   
-4. Klicken Sie auf **Einstellungen** \> **Security Extensions**, und wählen Sie dann SIEM Agents.<br/>
+2. Klicken Sie auf **Einstellungen** \> **Security Extensions**, und wählen Sie dann SIEM Agents.<br/>
 ![Wählen Sie Einstellungen > Security-Erweiterungen](media/Settings-SecurityExtensions.png)
 
-5. Wählen Sie **Agent SIEM hinzufügen**.<br/>![Wählen Sie Agent SIEM hinzufügen.](media/SIEMAgents.png)
+3. Wählen Sie **Agent SIEM hinzufügen**.<br/>![Wählen Sie Agent SIEM hinzufügen.](media/SIEMAgents.png)
     
-6. Wählen Sie auf **Assistenten starten**.<br/>![Holen Sie sich Hilfe, oder starten Sie den Assistenten](media/HelpOrWizard.png) 
+4. Wählen Sie auf **Assistenten starten**.<br/>![Holen Sie sich Hilfe, oder starten Sie den Assistenten](media/HelpOrWizard.png) 
     
-7. Geben Sie im **allgemeinen** Schritt einen Namen, und **Wählen Sie Ihre SIEM-Format aus** , und legen Sie eine beliebige **Erweiterte Einstellungen** , die für dieses Format relevant sind. Wählen Sie dann **Weiter**.<br/>![Geben Sie einen Namen und Typ](media/ChooseAgentTypeAndName.png)
+5. Geben Sie im **allgemeinen** Schritt einen Namen, und **Wählen Sie Ihre SIEM-Format aus** , und legen Sie eine beliebige **Erweiterte Einstellungen** , die für dieses Format relevant sind. Wählen Sie dann **Weiter**.<br/>![Geben Sie einen Namen und Typ](media/ChooseAgentTypeAndName.png)
     
-8. Geben Sie im Schritt **Remote Syslog** die IP-Adresse oder den Hostnamen der **Remote Syslog Host** und die **Portnummer Syslog**. Wählen Sie TCP oder UDP als Protokoll Remote Syslog. (Sie können arbeiten mit Ihrem Netzwerkadministrator oder Sicherheitsadministrator, um diese Informationen zu erhalten, wenn sie Ihnen keine.) Wählen Sie dann **Weiter**.<br/>![Geben Sie Remote Syslog-details](media/ArcSightS1Syslog.png)
+6. Geben Sie im Schritt **Remote Syslog** die IP-Adresse oder den Hostnamen der **Remote Syslog Host** und die **Portnummer Syslog**. Wählen Sie TCP oder UDP als Protokoll Remote Syslog. (Sie können arbeiten mit Ihrem Netzwerkadministrator oder Sicherheitsadministrator, um diese Informationen zu erhalten, wenn sie Ihnen keine.) Wählen Sie dann **Weiter**.<br/>![Geben Sie Remote Syslog-details](media/ArcSightS1Syslog.png)
   
-9. Im Schritt **Datentypen** einen der folgenden Schritte aus, und klicken Sie dann auf **Weiter**:
+7. Im Schritt **Datentypen** einen der folgenden Schritte aus, und klicken Sie dann auf **Weiter**:
     - Behalten Sie die Standardeinstellung **Alle Warnungen**<br/>ODER
     - Klicken Sie auf **Alle Benachrichtigungen**, und wählen Sie dann auf **bestimmten Filter**. Definieren Sie Filter an, um die Arten von Benachrichtigungen wählen Sie auf Ihrem Server SIEM senden möchten.<br/>![Datentypen Schritt des Assistenten](media/ArcSightS1ExportOptions.png)
   
-10. Klicken Sie auf dem Bildschirm Herzlichen Glückwunsch kopieren Sie das Token, und speichern Sie sie zur späteren Verwendung.<br/>![SIEM Agent erstellt Bildschirm](media/SIEMAgentFinished.png) 
+8. Klicken Sie auf dem Bildschirm Herzlichen Glückwunsch kopieren Sie das Token, und speichern Sie sie zur späteren Verwendung.<br/>![SIEM Agent erstellt Bildschirm](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > Zu diesem Zeitpunkt eine SIEM-Agenten in Office 365-Cloud-App-Sicherheit eingerichtet haben, aber Ihre SIEM-Server-Integration ist noch nicht abgeschlossen. Fahren Sie fort mit dem nächsten Schritt fort Ihrer SIEM-Server-Integration.
@@ -177,7 +172,7 @@ Nachdem Sie Ihre SIEM-Server konfiguriert haben und haben mit Office 365-Cloud-A
 
 Wenn Sie Ihr Token verlieren, können Sie eine wiederherstellen. 
 
-1. Wählen Sie in der Cloud App Sicherheit in Office 365-Portal **Einstellungen** > **Security Extensions**.
+1. In der Cloud App Sicherheit in Office 365-Portal ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), wählen Sie **Einstellungen** > **Security Extensions**.
 
 2. Suchen Sie in der Tabelle die Zeile für den SIEM-Agent. 
 
@@ -185,7 +180,7 @@ Wenn Sie Ihr Token verlieren, können Sie eine wiederherstellen.
   
 ### <a name="edit-a-siem-agent"></a>Bearbeiten eines SIEM-Agents
 
-1. Wählen Sie in der Cloud App Sicherheit in Office 365-Portal **Einstellungen** > **Security Extensions**.
+1. In der Cloud App Sicherheit in Office 365-Portal ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), wählen Sie **Einstellungen** > **Security Extensions**.
 
 2. Suchen Sie die Zeile für den SIEM-Agent. 
 
@@ -193,7 +188,7 @@ Wenn Sie Ihr Token verlieren, können Sie eine wiederherstellen.
   
 ### <a name="delete-a-siem-agent"></a>Löschen eines SIEM-Agents
 
-1. Wählen Sie in der Cloud App Sicherheit in Office 365-Portal **Einstellungen** > **Security Extensions**.
+1. In der Cloud App Sicherheit in Office 365-Portal ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), wählen Sie **Einstellungen** > **Security Extensions**.
 
 2. Suchen Sie die Zeile für den SIEM-Agent. 
 

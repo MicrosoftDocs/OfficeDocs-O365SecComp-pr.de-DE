@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607805"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706106"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Hinzufügen einer erweiterten eDiscovery (Preview) Verwalter Case
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Hinzufügen der Verwalter zu einem Fall erweiterte eDiscovery (Preview)
 
 Erweiterte eDiscovery (Preview) können Sie das integrierte Verwaltungsberechtigter-Verwaltungstool, um Ihre Workflows Verwalten von Verwalter und identifizieren relevant, freiheitsentziehenden Datenquellen in einer Anfrage koordinieren nutzen. Wenn Sie ein Verwaltungsberechtigter hinzufügen, das System automatisch erkennen und Place-Haltebereiche auf ihre primäres Exchange-Postfach und OneDrive for Business-Site. Wie Sie Ihre Suche durchführen, möglicherweise auch aufdecken und ordnen Sie zusätzliche Postfächer oder Websites, die ein Verwaltungsberechtigter in der Vergangenheit oder Teams zugegriffen werden, dass ein Verwaltungsberechtigter heute gehört.
 

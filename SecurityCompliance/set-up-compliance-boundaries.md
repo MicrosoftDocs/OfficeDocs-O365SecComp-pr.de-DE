@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Compliance-Grenzen logische Grenzen innerhalb einer Office 365-Organisation zu erstellen, die die Speicherorte für Benutzer Inhalte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen Search-Berechtigungen (auch so genannte Kompatibilität Sicherheitsfilter) filtern, um zu steuern, welche Postfächer, die SharePoint-Websites verwenden, und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299239"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768016"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -55,8 +55,6 @@ Der erste Schritt besteht, wählen Sie ein Azure Active Directory-Attribut verwe
 Es folgt eine Liste von Azure Active Directory-Benutzer-Attribute, die Sie für Compliance-Grenzen verwenden können:
   
 - Company
-    
-- CountryCode
     
 - CustomAttribute1 - CustomAttribute15
     
@@ -123,7 +121,7 @@ Hier ist eine Beschreibung der einzelnen Parameter in den Befehl ein:
     
   -  `Site`-Gibt an, die OneDrive-Konten, die in die Rollengruppen definiert die `Users` Parameter suchen kann. Verwenden Sie die Zeichenfolge für den Filter OneDrive `ComplianceAttribute`; Dies wird ordnen Sie die gleichen, die Sie in Schritt 1 identifiziert wird, die mit OneDrive Konten aufgrund der Support-Anforderung, die Sie in Schritt2 übermittelt synchronisiert;  *AttributeValue* gibt Behörde an. Dieser Filter ermöglicht Mitgliedern der Rollengruppe die Konten OneDrive nur in einer bestimmten Agency durchsuchen; beispielsweise `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`-Gibt an, die SharePoint-Websites, die in die Rollengruppen definiert die `Users` Parameter suchen kann. Die *SharePointURL* gibt die Websites in der Behörde, die Mitglieder der Rollengruppe suchen können. Zum Beispiel`Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-Gibt an, die SharePoint-Websites, die in die Rollengruppen definiert die `Users` Parameter suchen kann. Die *SharePointURL* gibt die Websites in der Behörde, die Mitglieder der Rollengruppe suchen können. Zum Beispiel`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-Gibt den Typ des Compliance Search-Aktion, die auf der Filter angewendet wird. Beispielsweise `-Action Search` den Filter würde nur angewendet werden, wenn Mitglieder der Rollengruppen in definiert die `Users` Parameter wird eine Inhaltssuche ausgeführt. In diesem Fall würde nicht der Filter angewendet werden, wenn Suchergebnisse exportieren. Verwenden Sie für Compliance-Grenzen `-Action All` damit alle Aktionen für Suchen der Filter angewendet wird. 
     

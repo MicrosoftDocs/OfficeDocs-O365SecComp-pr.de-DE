@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lesen Sie diesen Artikel erfahren, wie Office 365 Advanced Security Management, unterstützt von Cloud-App-Sicherheit in Microsoft Azure zu aktivieren.
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014787"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603776"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren von Office 365 Cloud App Security
   
@@ -37,6 +37,8 @@ ms.locfileid: "28014787"
 3. Aktivieren Sie das Kontrollkästchen Sie **auf Office 365-Cloud-App-Sicherheit**.
     
 4. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Dadurch gelangen Sie Cloud App Sicherheit in Office 365-Portal, können Berichte anzeigen und erstellen oder Bearbeiten Ihrer Richtlinien.
+
+Nachdem Sie Office 365-Cloud-App-Sicherheit aktiviert haben, Sie gelangen zum Portal Cloud App-Sicherheit Vorsichtsmaßnahmen [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) von und Anmelden bei.
     
 > [!NOTE]
 > Wenn Sie Office 365-Cloud-App-Sicherheit aktivieren, wird in [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)Überwachungsinformationen über Ihre Office 365-Benutzerkonten und die Benutzeraktivitäten übertragen. Dies ermöglicht Office 365 erweiterte Benachrichtigungen, Filtern und anderen Features bereitstellen, damit können Sie Informationen abrufen und Ausführen einer Aktion zu verdächtigen Aktivitäten. 

@@ -12,16 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Fragen zur Funktionsweise von der neuen Nachricht Schutzfunktionen in Office 365? Überprüfen Sie nach einer Antwort hier.
-ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
-ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
+ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25495519"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696269"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ zur Office 365-Nachrichtenverschlüsselung
 
-Fragen zur Funktionsweise von der neuen Nachricht Schutzfunktionen in Office 365? Überprüfen Sie nach einer Antwort hier. Darüber hinaus sehen Sie sich [häufig gestellte Fragen zum Datenschutz in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) für Antworten auf Fragen zu Data Protection Service Azure Rights Management in Azure Information Protection. 
+Fragen zur Funktionsweise von der neuen Nachricht Schutzfunktionen in Office 365? Überprüfen Sie nach einer Antwort hier. Darüber hinaus sehen Sie sich [häufig gestellte Fragen zum Datenschutz in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) für Antworten auf Fragen zu Data Protection Service Azure Rights Management in Azure Information Protection.
+
+||
+|:-----|
+|Dieser Artikel ist Teil einer größeren Reihe von Artikeln zur Office 365 Message Encryption. In diesem Artikel ist für Administratoren und IT-Fachleute vorgesehen. Wenn Sie sich gerade befinden Suchen nach Informationen zu senden oder Empfangen einer verschlüsselten Nachricht, finden Sie in der Liste der Artikel in [Office 365 Message Encryption (OME)](ome.md) , und suchen Sie im Artikel, der am besten Ihren Anforderungen entspricht. |
+||
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>Was ist Office 365 Message Encryption (OME)?
 

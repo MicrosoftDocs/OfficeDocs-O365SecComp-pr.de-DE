@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: In diesem Thema dargestellt was eine Data Loss Prevention (DLP)-Richtlinie für den Typ der EU Reisepassnummer vertrauliche Daten erkannt. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 71acc39b885c057e1771ec13b2f3c25017ac1bb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529535"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25840324"
 ---
 # <a name="eu-passport-number"></a>EU Reisepassnummer
 
@@ -59,7 +59,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_austria_eu_passport_number**|
@@ -98,7 +98,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_belgium_eu_passport_number**|
@@ -137,7 +137,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_bulgaria_eu_passport_number**|
@@ -176,7 +176,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_croatia_eu_passport_number**|
@@ -215,14 +215,14 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
 |Reisepassnummer  <br/> Zypern Reisepassnummer  <br/> Passport keine  <br/> ΑΡΙΘΜΌ ΔΙΑΒΑΤΗΡΊΟΥ  <br/> |
    
-## <a name="czech-republic"></a>Tschechische Republik
+## <a name="czech-republic"></a>Tschechien
 
 ### <a name="format"></a>Format
 
@@ -254,7 +254,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_czech_republic_eu_passport_number**|
@@ -293,7 +293,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_denmark_eu_passport_number**|
@@ -332,7 +332,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_estonia_eu_passport_number**|
@@ -383,7 +383,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_greece_eu_passport_number**|
@@ -422,7 +422,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_hungary_eu_passport_number**|
@@ -465,7 +465,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_ireland_eu_passport_number**|
@@ -508,7 +508,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_italy_eu_passport_number**|
@@ -551,7 +551,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_latvia_eu_passport_number**|
@@ -590,7 +590,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_lithuania_eu_passport_number**|
@@ -629,7 +629,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_nation_eu_passport_number**|
@@ -668,7 +668,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_malta_eu_passport_number**|
@@ -707,7 +707,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_netherlands_eu_passport_number**|
@@ -754,12 +754,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Portugiesische Reisepassnummer  <br/> Passport keine  <br/> Número passaporte  <br/> |
+|Reisepassnummer  <br/> Portugiesisch Reisepassnummer  <br/> Passport keine  <br/> Número passaporte  <br/> |
    
 ## <a name="romania"></a>Rumänien
 
@@ -793,7 +793,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_romania_eu_passport_number**|
@@ -832,7 +832,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_slovakia_eu_passport_number**|
@@ -877,7 +877,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_slovenia_eu_passport_number**|
@@ -922,7 +922,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_spain_eu_passport_number**|

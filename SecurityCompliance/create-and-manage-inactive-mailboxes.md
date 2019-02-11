@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfachs in Office 365 erstellen, Anwenden einer Warteschleife oder Office 365 Aufbewahrungsrichtlinie auf das Postfach und das entsprechende Office 365-Benutzerkonto löschen. Elemente in eines inaktiven Postfachs bleiben für die Dauer der Richtlinie halten oder die Aufbewahrung, die darauf angewendet wurde, bevor sie als inaktiv festgelegt wurde. Zum Löschen eines inaktiven Postfachs nur entfernen Sie die Warteschleife oder Aufbewahrung Richtlinie.
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529225"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740837"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Erstellen Sie und verwalten Sie inaktiver Postfächer in Office 365
 
@@ -28,7 +28,7 @@ Office 365 ermöglicht es Ihnen, den Inhalt der gelöschte Postfächer zu behalt
 > [!NOTE]
 > Wir haben den Stichtag (1. Juli 2017) zum Erstellen von neuem In-Situ-Speicher, um ein Postfach als inaktiv zu markieren, nach hinten verlegt. Ende dieses Jahres oder Anfang des nächsten Jahres können Sie keinen neuen In-Situ-Speicher in Exchange Online mehr erstellen. Es können dann nur noch das Beweissicherungsverfahren und Office 365-Aufbewahrungsrichtlinien zum Erstellen eines inaktiven Postfachs verwendet werden. Vorhandene inaktive Postfächer, die sich im In-Situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können weiterhin die In-Situ-Speicher für inaktive Postfächer verwalten. Dazu zählen das Ändern der Dauer eines In-Situ-Speichers sowie das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des In-Situ-Speichers. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Damit ein Postfach inaktiv ist, muss es eine Lizenz für Exchange Online – Plan 2 zugewiesen werden, damit eine Aufbewahrung für eventuelle Rechtsstreitigkeiten oder eine Aufbewahrungsrichtlinie für Office 365 an das Postfach angewendet werden kann, bevor es gelöscht wird. Exchange Online – Plan 2 Lizenzen sind Teil einer Office 365 Enterprise E3 und E5-Abonnements. Wenn ein Postfach eine Lizenz für Exchange Online – Plan 1 zugeordnet ist (die Teil eines Office 365 Enterprise E1-Abonnements ist), müssten Sie es eine separate Lizenz Exchange Online-Archivierung zuweisen, sodass ein Haltestatus an das Postfach angewendet werden kann, bevor es gelöscht wird. Weitere Informationen finden Sie unter [Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=286153).
     
@@ -122,8 +122,6 @@ Nachdem ein Postfach inaktive vorgenommen wurde, können Sie die Dauer der Halte
 ## <a name="recover-an-inactive-mailbox"></a>Wiederherstellen eines inaktiven Postfachs
 
 Wenn ein früheren Mitarbeiter für Ihre Organisation zurückgibt, oder wenn ein neuer Mitarbeiter eingestellt wird, die auf die Verantwortlichkeiten des Mitarbeiters departed angewendet werden, können Sie den Inhalt des inaktiven Postfachs wiederherstellen. Beim Wiederherstellen eines inaktiven Postfachs, das Postfach wird in ein neues Postfach konvertiert, den Inhalt und die Ordnerstruktur des inaktiven Postfachs werden beibehalten, und das Postfach mit ein neues Benutzerkonto verknüpft ist. Nachdem es wiederhergestellt wird, ist das inaktive Postfach nicht mehr vorhanden. Schrittweise Verfahren und Weitere Informationen zu geschieht, wenn Sie ein inaktives Postfachs wiederherstellen, finden Sie unter [Wiederherstellen ein inaktives Postfachs in Office 365](recover-an-inactive-mailbox.md).
-  
-[Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>Wiederherstellen des Inhalts eines inaktiven Postfachs in einem anderen Postfach
 

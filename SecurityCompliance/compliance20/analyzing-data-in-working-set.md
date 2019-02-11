@@ -1,5 +1,5 @@
 ---
-title: Analysieren von Daten in eine Arbeitssatzes in erweiterten eDiscovery (Preview)
+title: Analysieren von Daten in einem Arbeitssatz in erweiterten eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607765"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695141"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analysieren von Daten in eine Arbeitssatzes in erweiterten eDiscovery (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analysieren von Daten in einem Arbeitssatz in erweiterten eDiscovery (Preview)
 
 Wenn die Anzahl der gesammelten Dokumente umfangreich ist, kann es nur schwer alle diese überprüfen sein. Erweiterte eDiscovery (Preview) bietet eine Reihe von Tools zum Analysieren der Dokumente zum Verringern der Lautstärke für Dokumente ohne Verlust in Informationen überprüft werden und auf die Dokumente in einer wirkungsvoll zu organisieren. Weitere Informationen zu diesen Funktionen finden Sie unter:
 
-- [Erkennung von Duplikaten in Ihrer Nähe.](near-duplicates.md)
-- [Threading-e-Mail](email-threading.md)
+- [Erkennen von Quasiduplikaten](near-duplicates.md)
+- [E-Mail-Threading](email-threading.md)
 - [Designs](themes.md)
 
 So analysieren Sie Daten in einem Arbeitssatz:

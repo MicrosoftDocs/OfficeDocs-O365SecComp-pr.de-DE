@@ -1,5 +1,5 @@
 ---
-title: Verwalten der Kommunikation
+title: Verwalten von Aufbewahrungsbenachrichtigungen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607861"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706046"
 ---
-# <a name="manage-communications"></a>Verwalten der Kommunikation
+# <a name="manage-hold-notifications"></a>Verwalten von Aufbewahrungsbenachrichtigungen
 
 Nachdem Sie initiiert haben Ihre Legal halten Workflow für Benachrichtigung über, können Sie erweiterte eDiscovery (Preview) zum Nachverfolgen des Status Ihrer Kommunikation nutzen. Die Registerkarte Kommunikation werden alle die Warteschleife Benachrichtigungen in Ihren Fall erweiterte eDiscovery (Preview). Hier können Sie Details wie etwa die Anzahl der Verwalter sehen, die zugewiesen wurden, oder die Benachrichtigung bestätigt haben.
 
@@ -71,6 +71,8 @@ Wenn Sie den Inhalt oder die Einstellungen der Veröffentlichungslizenz, Version
 
 ## <a name="related-information"></a>Weitere Informationen 
 
-    - [Erstellen Sie eine Benachrichtigung über eine rechtliche Aufbewahrungspflicht] (~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [Bestätigen Sie eine Benachrichtigung über eine rechtliche Aufbewahrungspflicht] (~/acknowledge-hold-notification.md)
-    - [Adding Verwalter in eine Anfrage]
+- [Erstellen Sie eine Anmerkung zur rechtlichen Aufbewahrungspflicht](create-hold-notification.md)
+    
+- [Bestätigen einer Aufbewahrungsbenachrichtigung](acknowledge-hold-notification.md)
+    
+- [Hinzufügen von Verwaltungsberechtigten zu einem Fall](add-custodians-to-case.md)

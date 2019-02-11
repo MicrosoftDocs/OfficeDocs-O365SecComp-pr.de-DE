@@ -3,7 +3,7 @@ title: Content-Suche in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden der Suche von Inhalt in die Office 365-Sicherheit &amp; Compliance Center zum Suchen nach Inhalt in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft-Teams, Gruppen von Office 365 und Skype für Business Unterhaltungen. Sie können Schlüsselwort von Suchabfragen verwenden, und suchen Bedingungen, um die Suchergebnisse einzuschränken. Anschließend können Sie eine Vorschau anzeigen und Exportieren von Suchergebnissen. Inhaltssuche ist auch ein effektives Tool zum Suchen nach Inhalt, die eine Anforderung zum GDPR Daten Betreff zugeordnet werden kann.
-ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: befd2060e65cea73d3c8432b77727e27dd91b82a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782082"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686116"
 ---
 # <a name="content-search-in-office-365"></a>Content-Suche in Office 365
 
@@ -32,7 +32,7 @@ Sie können das Inhaltssuche eDiscovery-Tool verwenden, in die Office 365-Sicher
     
 - Skype für Business Unterhaltungen
     
-- Microsoft Teams 
+- Microsoft Teams 
     
 - Office 365-Gruppen
     
@@ -74,6 +74,8 @@ Um den Zugriff auf die Seite **Inhaltssuche** zum Ausführen von Suchanfragen un
     Alternativ können Sie das Kontrollkästchen **Schlüsselwortliste anzeigen** und den Typ ein Schlüsselworts in jede Zeile klicken. Wenn Sie dies tun, sind die Schlüsselwörter für jede Zeile ein logischer Operator ( **C:s**) vorhanden, die Funktionalität der **OR** -Operator in der Suchabfrage ähnlich ist, die erstellt wird. 
     
     Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente jedes Schlüsselwort überein. Dadurch können Sie schnell erkennen, welche Schlüsselwörter der am häufigsten (und mindestens) wirksam werden. Sie können auch eine Stichwortbegriff (in Klammern eingeschlossen sind) in einer Zeile. Weitere Informationen zu Suchstatistik finden Sie unter [schlüsselwortstatistiken für die Inhaltssuche Ergebnisse anzeigen](view-keyword-statistics-for-content-search.md).
+
+    [!NOTE] Zur Verringerung der Probleme aufgrund von großen Listen Sie nun auf ein Maximum von 20 Zeilen in der Schlüsselwortliste begrenzt.
     
 - **Conditions** - können Sie Suchkriterien, um eine Suche einzugrenzen und eine genauere Ergebnisse zurückgeben hinzufügen. Jede Bedingung hinzugefügt Search-Abfrage, die erstellt und ausgeführt werden, wenn Sie die Suche starten eine-Klausel. Eine Bedingung ist logisch mit der Stichwortabfrage (im Schlüsselwort angegeben) durch einen logischen Operator ( **c: c**) verbunden, die an den **und** -Operator vergleichbar ist. Dies bedeutet, dass Elemente erfüllen der Stichwortabfrage und einen oder mehrere Bedingungen, die in den Ergebnissen berücksichtigt werden müssen. Dies ist die Bedingungen wie helfen, um Ihre Suchergebnisse einzuschränken. Eine Liste und eine Beschreibung der Bedingungen, die Sie bei einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchen Conditions" in [Stichwortabfragen und Suchkriterien für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
     
@@ -189,7 +191,7 @@ Finden Sie weitere Informationen zum Content-Suche in den folgenden Abschnitten.
     
 - Microsoft sammelt Leistungsinformationen für Content-Suche ausführen, indem Sie alle Office 365-Organisationen. Während die Komplexität der Suchabfrage Suche Zeiten beeinflussen kann, durchsucht der größte Faktor, der bestimmt, wie lange Suchvorgänge nehmen die Anzahl von Postfächern. Zwar Microsoft ein Service Level Agreement für Suche Zeiten keine, wie oft die durchschnittliche Suche für ein Inhaltssuche basierend auf der Anzahl der Postfächer, die die Suche von der folgenden Tabelle aufgeführt.
     
-|**Anzahl von Postfächern**|**Durchschnittliche Suche Zeit**|
+|**Anzahl der Postfächer**|**Durchschnittliche Suche Zeit**|
 |:-----|:-----|
 |100  <br/> |30 Sekunden  <br/> |
 |1,000  <br/> |45 Sekunden  <br/> |
@@ -206,7 +208,7 @@ Halten die folgenden Punkte berücksichtigen, wenn die diese Schlüsselwortliste
   
 - Sie haben, aktivieren Sie das Kontrollkästchen **Schlüsselwortliste anzeigen** , und geben Sie dann jedes Schlüsselwort in einer separaten Zeile um eine Suchabfrage zu erstellen, in dem die Keywords (oder Schlüsselwort Ausdrücke) in jeder Zeile über der **OR** -Operator verbunden. Wenn Sie nur eine Liste von Schlüsselwörtern in das Feld Stichwort einfügen oder drücken Sie **die EINGABETASTE** nach Eingabe eines Stichworts, werden nicht sie durch den **oder** -Operator verbunden werden. Hier sind falsch und richtig Beispiel für eine Liste der Schlüsselwörter hinzufügen. 
     
-    **Falsch**
+    **Falsche**
     
     ![Die falsche Möglichkeit, um ein Schlüsselwort Listenformat (von der Liste in das Feld Schlüsselwort einfügen)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
@@ -268,7 +270,7 @@ Behalten Sie die folgenden Punkte berücksichtigen, bei der Suche nach Inhalten 
 - Alternativ werden Unterhaltungen, die Teil der Liste der Chat in Microsoft-Teams, sind in der Exchange Online-Postfach der Benutzer gespeichert, die im Chat teilnehmen. Und Dateien, die ein Benutzer in Chat Unterhaltungen gemeinsam in die OneDrive for Business-Konto des Benutzers, der die Dateifreigaben gespeichert werden. Aus diesem Grund müssen Sie die einzelnen Benutzerpostfächer und OneDrive for Business-Konten als Speicherorte für Inhalte, Gespräche und Dateien in der Liste Chat zu durchsuchen hinzufügen.
     
     > [!NOTE]
-    > Benutzer, die Unterhaltungen teilnehmen, die Teil der Liste der Chat in Microsoft-Teams, benötigen ein Exchange Online (Cloud-basierten) Postfach in der Reihenfolge für Chat Unterhaltungen suchen. Dies liegt daran Unterhaltungen, die Teil der Liste der Chat sind in der Cloud-basierten Postfächern Chat Teilnehmer gespeichert sind. Wenn ein Teilnehmer Chat ein Exchange Online-Postfach besitzt, wird nicht Sie Chat Unterhaltungen suchen können. Beispielsweise können in einer Exchange-hybridbereitstellung Benutzer mit einem lokalen Postfach möglicherweise zur Teilnahme an Unterhaltungen, die Teil der Liste der Chat in Microsoft-Teams sind. Jedoch in diesem Fall-Inhalten in dieser Unterhaltung nicht durchsucht werden, da der Benutzer nicht über cloudbasierten Postfächer verfügen. 
+    > In einer Exchange-hybridbereitstellung können Benutzer mit einem lokalen Postfach Unterhaltungen teilnehmen, die Teil der Liste der Chat in Microsoft-Teams sind. Inhalte aus dieser Unterhaltungen kann in diesem Fall auch durchsucht werden, da es eine Cloud-basierten Speicherbereich (einem *cloudbasierten Postfach für lokale Benutzer*genannt) für Benutzer gespeichert wird, die über ein lokales Postfach verfügen. Weitere Informationen finden Sie unter [Suchen cloudbasierten Postfächer für lokale Benutzer in Office 365](search-cloud-based-mailboxes-for-on-premises-users.md).
   
 - Jede Microsoft-Teams oder ein Team Kanal enthält ein Wiki für Notizen und die Zusammenarbeit. Der Wiki-Inhalt wird automatisch in eine Datei mit einem MHT-Format gespeichert. Diese Datei ist in der Dokumentbibliothek Teams Wiki-Daten auf SharePoint-Teamwebsite gespeichert. Inhalt Such-Tool können Sie das Wiki suchen, indem Sie SharePoint-Teamwebsite als Content Speicherort zu suchen. 
     

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Grundlegende Spam-filtereinstellungen umfassen auswählen die Aktion, die auf Nachrichten angewendet werden, die als Spam identifiziert werden und auswählen, ob Sie Nachrichten zu filtern, die in bestimmten Sprachen geschrieben oder von bestimmten Ländern oder Regionen gesendet werden.
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180895"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614479"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
   
@@ -51,7 +51,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
     
       - **Nachricht löschen** Löscht die gesamte Nachricht, einschließlich aller Anlagen. 
         
-      - **Nachricht in Quarantäne verschieben** Verschiebt die Nachricht in Quarantäne, anstatt sie an die vorgesehenen Empfänger zu senden. Geben Sie bei Auswahl dieser Option im Eingabefeld **Spamnachrichten aufbewahren für (Tage)** die Anzahl der Tage an, für die die Nachricht in Quarantäne bleiben soll. (Nach Ablauf des angegebenen Zeitraums wird die Nachricht automatisch gelöscht. Der Standardwert beträgt 15 Tage, dies ist der Maximalwert. Der Mindestwert ist 1 Tag.)<br/><br/>Tipp: Informationen dazu, wie Administratoren e-Mails verwalten können, die sich in der Quarantäne in der Exchange-Verwaltungskonsole befinden, finden Sie unter [Quarantäne](quarantine.md) und [finden und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > Weitere Informationen zum Konfigurieren von Nachrichten an Benutzer gesendet werden finden Sie unter [Configure End-User Spam Notifications in EOP-](configure-end-user-spam-notifications-in-eop.md) oder [Configure End-User Spam-Benachrichtigungen in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+      - **Nachricht in Quarantäne verschieben** Verschiebt die Nachricht in Quarantäne, anstatt sie an die vorgesehenen Empfänger zu senden. Geben Sie bei Auswahl dieser Option im Eingabefeld **Spamnachrichten aufbewahren für (Tage)** die Anzahl der Tage an, für die die Nachricht in Quarantäne bleiben soll. (Nach Ablauf des angegebenen Zeitraums wird die Nachricht automatisch gelöscht. Der Standardwert beträgt 15 Tage, dies ist der Maximalwert. Der Mindestwert ist 1 Tag.)<br/><br/>Tipp: Informationen dazu, wie Administratoren e-Mails verwalten können, die sich in der Quarantäne in der Exchange-Verwaltungskonsole befinden, finden Sie unter [Quarantäne](quarantine.md) und [finden und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > Informationen zur Konfiguration von Nachrichten an Benutzer gesendet werden finden Sie unter [Configure End-User Spam Notifications in EOP-](configure-end-user-spam-notifications-in-eop.md) oder [Configure End-User Spam-Benachrichtigungen in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
       - **Nachricht in Junk-E-Mail-Ordner verschieben** Sendet Nachrichten an den Ordner "Junk-E-Mail" der angegebenen Empfänger. Dies ist die Standardaktion für beide Schwellenwerte für die Vertrauenswürdigkeit.<br/><br/>**Wichtig: Für Kunden mit Exchange Online Protection (EOP): In der Reihenfolge für die Aktion zum Arbeiten mit lokalen Postfächern, müssen Sie zwei Exchange-Transportregeln auf Ihren lokalen Servern zum Erkennen von Spam-Headern von EOP hinzugefügte konfigurieren. Weitere Informationen hierzu finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner des Benutzers weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
   
@@ -62,6 +62,8 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
       - Wenn Sie Leerzeichen im benutzerdefinierten Headertext enthalten, oder wenn Sie den Doppelpunkt selbst hinzufügen (z. B. "X Dies ist die benutzerdefinierte Kopfzeile" oder "X-This-is-my-custom-header:"), der X-Header-Text wird wieder auf den Standardwert als "X-dieser-ist-Spam: Diese Meldung wird angezeigt, um Spam handelt."
     
       - Ist nicht möglich, geben Sie den Headertext im Format \< *Header*  \>:\<  *Wert*  \>. Wenn Sie dies tun, beide Werte, die vor und nach der Doppelpunkt ignoriert wird und der Standardtext X-Header stattdessen angezeigt: "X-dieser-ist-Spam: Diese Meldung wird angezeigt, um Spam handelt." 
+      
+      - Beachten Sie, dass e-Mails mit diesen X-Header weiterhin auf Junk-e-Mail-Postfachordner aufgrund von Junk-e-Konfiguration für Postfächer verschoben werden können. Sie können dies durch Deaktivieren dieser Funktion mit Set-MailboxJunkEmailConfiguration ändern.
         
       - **Prepend Betreffzeile mit text** Sendet die Nachricht an die vorgesehenen Empfänger, aber die Betreffzeile mit dem Text, den Sie in das **Präfix für Betreff mit diesem Text** Eingabefeld angeben voranzustellen. Verwenden diesen Text als Bezeichner, können Sie optional erstellen Regeln zum Filtern und Weiterleiten von Nachrichten nach Bedarf. 
         

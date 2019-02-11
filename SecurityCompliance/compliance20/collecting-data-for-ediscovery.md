@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607808"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695051"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>Sammeln von Daten für eine Anfrage in erweiterten eDiscovery (Preview)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Sammeln von Daten für eine Anfrage in erweiterten eDiscovery (Preview)
 
 Wenn Sie festgestellt haben Verwalter und Datenquellen, die für den Fall von Interesse sind, ist es Zeit zur Kennzeichnung der Gruppe von Dokumenten, die in ausführlicher behandelt. Das Suchtool können im erweiterten eDiscovery (Preview) Sie um diese von freiheitsentziehenden und freiheitsentziehenden Speicherorten in Office 365 zu identifizieren.
 

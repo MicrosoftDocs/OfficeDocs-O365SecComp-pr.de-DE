@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Editors communications
+title: Verwenden des Kommunikations-Editors
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,21 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 107f45510bcf70942c6f03bdfed0a9090f1d83c0
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: b148ff1a77cd9225a26f98e7612e9fb5b57331e3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607797"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706056"
 ---
-# <a name="using-the-communications-editor"></a>Verwenden des Editors Communications
+# <a name="use-the-communications-editor"></a>Verwenden des Kommunikations-Editors
+
 Wie Sie den Inhalt Ihrer Portalinhalt definieren, Legal halten, Benachrichtigungen und Erinnerungen/Eskalationen Verwandte, und Sie können den Communications-Editor, formatieren und dynamisch anpassen Ihrer Inhalte nutzen.
 
-## <a name="rich-text-editor"></a>Rich-Text-Editor 
+## <a name="rich-text-editor"></a>Rich-Text-editor 
 
 Der Communications-Editor können Benutzer zum Anpassen des Texts mithilfe der Editoroptionen. Benutzer können beispielsweise Schriftarttypen ändern, Erstellen von Listen mit Aufzählungszeichen, Hervorheben Inhalts- und vieles mehr. 
-
-<<include screenshot>>
 
 ## <a name="merge-field-variables"></a>Zusammenführen von Feldvariablen
 
@@ -37,10 +36,11 @@ Sie können e-Mail-Zusammenführung Variablen aus dem Communications-Editor ange
 E-Mail-zusammenführungsfelds können, indem Sie die Symbole **Seriendruckfeld** am oberen Rand der Rich-Text-Editor-Steuerelement auswählen. Der Platzhalter wird je deaktiviert den Speicherort der Cursor des Benutzers hinzugefügt. 
 
 ### <a name="list-of-merge-field-variables"></a>Liste der Merge Feldvariablen
-| Name des Felds                  | Feld-Details | 
-| :------------------- | :-------------------: |
-| Anzeigename  | Verwaltungsberechtigter vor- und Nachname | 
-| Bestätigung Link                 | Benutzerdefinierte Verknüpfung zu notieren Sie jeden Verwaltungsberechtigter Bestätigung                 |
-| Portal-Verknüpfung     | Benutzerdefinierte Verknüpfung für der Verwaltungsberechtigte Compliance-Portal                 |
-| Ausstellen Officer                   | E-Mail-Adresse von der angegebenen ausstellenden officer                   |
-| Ausstellen von Datum                   | Datum, an dem die Anmerkung (UTC) ausgestellt wurde              |
+
+| Feldname                  | Feld-details | 
+| :------------------- | :------------------- |
+| Anzeigename  | Der Verwaltungsberechtigte vor- und Nachname. | 
+| Bestätigung Link | Angepasste Link zu jedem Verwaltungsberechtigter Bestätigung aufzeichnen.|                 |
+| Portal-Verknüpfung     | Eine benutzerdefinierte Verknüpfung für der Verwaltungsberechtigte Compliance-Portal.|                |
+| Ausstellen Officer                   | Die e-Mail-Adresse von der angegebenen ausstellenden Officer.|                   |
+| Ausstellen von Datum                   | Das Datum, das die Bekanntmachung (UTC) ausgestellt wurde.              |

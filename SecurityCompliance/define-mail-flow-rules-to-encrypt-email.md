@@ -12,18 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Administratoren können Mail Flow Regeln (auch als Transportregeln bezeichnet) zum Verschlüsseln und Entschlüsseln von Nachrichten mithilfe von Office 365 Message Encryption (OME) erstellen zu informieren.
-ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: db421c808f1eed69ddbece2b333f9edd61712235
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749359"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696279"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365
 
 Als globaler Office 365-Administrator können Sie Mail Flow Regeln (auch als Transportregeln bezeichnet) erstellen, zum Schutz von e-Mail-Nachrichten senden und empfangen. Sie können Regeln zum Verschlüsseln von ausgehenden e-Mail-Nachrichten und Entfernen der Verschlüsselung von verschlüsselten Nachrichten, die von innerhalb Ihrer Organisation oder von Antworten auf verschlüsselte Nachrichten aus Ihrer Organisation einrichten. Der Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell können Sie um diese Regeln zu erstellen. Zusätzlich zu den allgemeinen verschlüsselungsregeln können Sie auch auswählen, aktivieren oder Deaktivieren der einzelnen Nachricht Kennwortverschlüsselungsoptionen für Endbenutzer.
 
-Wenn Sie kürzlich von AD RMS in Azure Information Protection migriert, müssen Sie überprüfen Ihrer vorhandenen e-Mail-Flussregeln, um sicherzustellen, dass sie auch weiterhin in der neuen Umgebung funktionieren. Wenn Sie die neuen Office 365 Message Encryption (OME)-Funktionen Ihnen über Azure Information Protection nutzen möchten, müssen Sie darüber hinaus Ihre vorhandenen e-Mail-Flussregeln zu aktualisieren. Andernfalls erhalten Ihre Benutzer weiterhin verschlüsselten e-Mail-Nachrichten, die das vorherige HTML-Anlagenformat anstelle der neuen, nahtlosen OME-Umgebung verwendet wird. Wenn Sie OME noch eingerichtet haben, finden Sie unter [Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf der Basis Azure Information Protection](set-up-new-message-encryption-capabilities.md) Informationen.
+||
+|:-----|
+|Dieser Artikel ist Teil einer größeren Reihe von Artikeln zur Office 365 Message Encryption. In diesem Artikel ist für Administratoren und IT-Fachleute vorgesehen. Wenn Sie sich gerade befinden Suchen nach Informationen zu senden oder Empfangen einer verschlüsselten Nachricht, finden Sie in der Liste der Artikel in [Office 365 Message Encryption (OME)](ome.md) , und suchen Sie im Artikel, der am besten Ihren Anforderungen entspricht. |
+||
+
+Wenn Sie kürzlich von AD RMS in Azure Information Protection migriert, müssen Sie überprüfen Ihrer vorhandenen e-Mail-Flussregeln, um sicherzustellen, dass sie auch weiterhin in der neuen Umgebung funktionieren. Wenn Sie die neuen Office 365 Message Encryption (OME)-Funktionen Ihnen über Azure Information Protection nutzen möchten, müssen Sie darüber hinaus Ihre vorhandenen e-Mail-Flussregeln zu aktualisieren. Andernfalls erhalten Ihre Benutzer weiterhin verschlüsselten e-Mail-Nachrichten, die das vorherige HTML-Anlagenformat anstelle der neuen, nahtlosen OME-Umgebung verwendet wird. Wenn Sie OME noch eingerichtet haben, finden Sie unter [Einrichten von neuen Funktionen von Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md) Informationen.
 
 Informationen zu den Komponenten, aus denen e-Mail-Flussregeln und wie e-Mail-Fluss-Regeln funktionieren, finden Sie unter [E-Mail-Flussregeln (Transportregeln) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules). Weitere Informationen zur Funktionsweise von e-Mail-Flussregeln mit Azure Information Protection finden Sie unter [Konfigurieren von Exchange Online e-Mail-Flussregeln für Azure Information Protection Etiketten](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
 
@@ -51,7 +56,7 @@ Sie können e-Mail-Flussregeln zum Auslösen von Verschlüsselung von Nachrichte
    1. Wählen Sie unter **Diese Regel anwenden, wenn****the recipient is** (Der Empfänger ist) aus.
 
    2. Wählen Sie in der Kontaktliste einen vorhandenen Namen aus, oder geben Sie im Feld **Namen prüfen** eine neue E-Mail-Adresse ein.
-    
+
       - Um einen vorhandenen Namen auszuwählen, wählen Sie ihn in der Liste aus, und klicken Sie dann auf **OK**.
 
       - Geben Sie einen neuen Namen ein, geben Sie im Feld **Namen prüfen** eine e-Mail-Adresse, und wählen Sie dann auf **Namen überprüfen** \> **OK**.
@@ -62,7 +67,7 @@ Sie können e-Mail-Flussregeln zum Auslösen von Verschlüsselung von Nachrichte
 
 8. Zum Aktivieren der Verschlüsselung mithilfe der neuen OME-Funktionen aus, **die folgenden Schritte aus**, wählen Sie **nachrichtensicherheit ändern** , und wählen Sie dann **Office 365-Nachrichtenverschlüsselung anwenden und Schutzrechte**. Wählen Sie eine RMS-Vorlage aus der Liste aus, wählen Sie **Speichern**, und wählen Sie dann auf **OK**.
   
-  Die Liste der Vorlagen enthält alle Standardvorlagen und Optionen sowie die von denen Ihnen für erstellten benutzerdefinierten Vorlagen von Office 365 verwenden. Wenn die Liste leer ist, stellen Sie sicher, dass Sie Office 365 Message Encryption mit den neuen Funktionen eingerichtet haben wie unter [Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf den oberen Bereich des Azure Information Protection](set-up-new-message-encryption-capabilities.md)beschrieben. Informationen zu den standardmäßigen Vorlagen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Informationen über die Option **Nicht weiterleiten** finden Sie unter [nicht weiterleiten Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen über die Option **nur zu verschlüsseln** finden Sie unter [Verschlüsseln nur die Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+  Die Liste der Vorlagen enthält alle Standardvorlagen und Optionen sowie die von denen Ihnen für erstellten benutzerdefinierten Vorlagen von Office 365 verwenden. Wenn die Liste leer ist, stellen Sie sicher, dass Sie Office 365 Message Encryption mit den neuen Funktionen eingerichtet haben wie unter [Set up neuen Funktionen von Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md)beschrieben. Informationen zu den standardmäßigen Vorlagen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Informationen über die Option **Nicht weiterleiten** finden Sie unter [nicht weiterleiten Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen über die Option **nur zu verschlüsseln** finden Sie unter [Verschlüsseln nur die Option-e-Mails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
   Sie können **Aktion hinzufügen** auswählen, wenn Sie eine andere Aktion angeben möchten.
 
@@ -104,7 +109,7 @@ Wenn Sie noch nicht Office 365-Organisation auf die neuen Funktionen der OME bew
 
 5. Geben Sie im Feld **Name**einen Namen für die Regel, z. B. e-Mails für DrToniRamos@hotmail.com verschlüsseln.
 
-6. Wählen Sie unter **Diese Regel anwenden, wenn** eine Bedingung aus, und geben Sie ggf. einen Wert ein. Geben Sie beispielsweise Folgendes ein, um Nachrichten an "DrToniRamos@hotmail.com" zu verschlüsseln: 
+6. Wählen Sie unter **Diese Regel anwenden, wenn** eine Bedingung aus, und geben Sie ggf. einen Wert ein. Geben Sie beispielsweise Folgendes ein, um Nachrichten an "DrToniRamos@hotmail.com" zu verschlüsseln:
 
    1. Wählen Sie unter **Diese Regel anwenden, wenn****the recipient is** (Der Empfänger ist) aus.
 
@@ -132,7 +137,7 @@ Wenn Sie noch nicht Office 365-Organisation auf die neuen Funktionen der OME bew
 
    Dieses Beispiel erfordert, dass alle e-Mail-Nachrichten DrToniRamos@hotmail.com verschlüsselt werden müssen.
 
-   ```
+   ```powershell
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
@@ -176,7 +181,7 @@ Wenn Ihre e-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
 
    Dieses Beispiel entfernt die Verschlüsselung von Nachrichten an Empfänger in der Office 365-Organisation.
 
-   ```
+   ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
@@ -184,7 +189,7 @@ Wenn Ihre e-Mail-Benutzer verschlüsselte Nachrichten senden, können Empfänger
 
    - Der eindeutige Name der neuen Regel ist "Remove-Verschlüsselung von eingehende e-Mail".
 
-   - Der Parameter _SentToScope_ gibt den Speicherort der Empfänger der Nachricht. In diesem Beispiel wird der Wert `InOrganization` Wert verwendet, wodurch angegeben wird: 
+   - Der Parameter _SentToScope_ gibt den Speicherort der Empfänger der Nachricht. In diesem Beispiel wird der Wert `InOrganization` Wert verwendet, wodurch angegeben wird:
 
      - Der Empfänger ist ein Postfach, e-Mail-Benutzer, Gruppe oder e-Mail-aktivierte Öffentliche Ordner in Ihrer Organisation.
 
@@ -198,7 +203,7 @@ Detaillierte Informationen zur Syntax und den Parametern finden Sie unter [New-T
 
 [Verschlüsselung in Office 365](encryption.md)
 
-[Einrichten von neuen Office 365 Message Encryption-Funktionen, die auf der Basis Azure Information Protection](set-up-new-message-encryption-capabilities.md)
+[Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md)
 
 [Hinzufügen von Branding zu verschlüsselten Nachrichten](add-your-organization-brand-to-encrypted-messages.md)
 

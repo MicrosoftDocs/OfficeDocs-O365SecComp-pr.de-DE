@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Überprüfen von app-Discovery-Berichten in Advanced Security Management kann Ihnen weitere Informationen zur Verwendung von Personen in Ihrer Organisation Cloud-apps. Nachdem Sie die app-Discovery-Berichte mithilfe von Protokolldateien von Firewalls und Proxys erstellt haben, überprüfen Sie die Ergebnisse in das app-Discovery-Dashboard.
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706259"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603746"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706259"
    
 Das Cloud-Discovery-Dashboard funktioniert mit Ihrer Organisation Web Datenverkehr Protokolle mit detaillierten Informationen zur Verwendung von Cloud-app. Wenn Sie ein globaler Administrator, Sicherheitsadministrator oder Sicherheit-Reader sind und Ihre Organisation hat die [app-Discovery-Berichte in Office 365-Cloud-App-Sicherheit erstellt](create-app-discovery-reports-in-ocas.md), können Sie das Dashboard Cloud Discovery Einblick in festlegen, wie Benutzer Ihrer Office 365 und anderen apps Cloud Organisation verwenden. (Das Cloud-Discovery-Dashboard ist auch bekannt als Produktivität App Discovery).
   
- **Ab März 2018, das Cloud-Discovery-Dashboard verfügt über neue Features** , mit denen leichter wie Benutzern in Ihrer Organisation Office 365 und andere apps verwendet werden detaillierte Informationen anzeigen. 
+ Das Cloud-Discovery-Dashboard können Sie ausführliche Informationen wie Benutzern in Ihrer Organisation Office 365 und andere apps verwendet werden. 
   
 ![Wurde aktualisiert, das Cloud-Discovery-dashboard](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>Wechseln Sie zu dem Cloud-Discovery-dashboard
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Klicken Sie auf das Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.
     
-2. In das Wertpapier &amp; Compliance Center, wählen Sie **Warnungen** \> **Verwalten erweiterte Warnungen**.<br/>(Falls die Office 365-Cloud-App-Sicherheit noch nicht aktiviert, und Sie sind ein globaler Administrator, [Office 365-Cloud-App-Sicherheit zu aktivieren](turn-on-office-365-cas.md).)
-    
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-4. Wechseln Sie zu **Discover** \> **Cloud Discovery-Dashboard**.
+2. Wechseln Sie zu **Discover** \> **Cloud Discovery-Dashboard**.
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Finden Sie unter der Top-Benutzer, IP-Adressen, apps und Risikoebenen
 

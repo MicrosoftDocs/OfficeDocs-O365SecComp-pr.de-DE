@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3ebb9a40d3fb055fbb88b32175a4a22df3da44af
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607833"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706136"
 ---
 # <a name="create-a-search-to-collect-data"></a>Erstellen einer Suche zum Sammeln von Daten
 

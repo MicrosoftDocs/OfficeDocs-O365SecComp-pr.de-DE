@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607817"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695181"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>Verwalten von Haltestatus in erweiterten eDiscovery (Preview)
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Verwalten von Haltestatus in erweiterten eDiscovery (Preview)
 
 Erweiterte eDiscovery (Preview)-Fällen können zum Erstellen von Haltestatus, um Inhalte zu erhalten, die möglicherweise für Ihr Fall relevant. Verwenden die erweiterte eDiscovery (Preview) Funktionen halten, können Sie Haltebereiche Platzieren auf Verwalter und deren Datenquellen. Darüber hinaus können Sie einen Haltestatus freiheitsentziehenden auf Postfächer und OneDrive for Business-Websites platzieren. Sie können auch einen Haltestatus auf die Gruppe Postfach-, SharePoint-Website und OneDrive for Business-Site für eine Office 365-Gruppe platzieren. In ähnlicher Weise können Sie einen Haltestatus platzieren, auf das Postfach und die Website, die Microsoft-Teams zugeordnet sind. Wenn Sie die Speicherorte für Inhalte in der Warteschleife einleiten, wird Inhalt gespeichert, bis Sie der Verwaltungsberechtigte Version, entfernen einen spezifischen Standort oder die Aufbewahrungsrichtlinie vollständig löschen.
 

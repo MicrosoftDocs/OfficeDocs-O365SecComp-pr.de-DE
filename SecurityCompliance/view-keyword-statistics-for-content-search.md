@@ -1,5 +1,5 @@
 ---
-title: Schlüsselwortstatistiken für die Inhaltssuche Ergebnisse anzeigen
+title: Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Verwenden Sie das Feature Suchstatistik zum Anzeigen und Vergleichen von Statistiken für mehrere Content-Suche in Office 365-Sicherheit &amp; Compliance Center. Sie können auch die Schlüsselwortliste konfigurieren, beim Erstellen oder eine Suchabfrage bearbeiten um erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente jedes Schlüsselwort oder Stichwortbegriff übereinstimmt.
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529515"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209806"
 ---
-# <a name="view-keyword-statistics-for-content-search-results"></a>Schlüsselwortstatistiken für die Inhaltssuche Ergebnisse anzeigen
+# <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse
 
 Nachdem Sie erstellen und einer Inhaltssuche ausführen, können Sie Statistiken zu der geschätzten Suchergebnisse anzeigen. Dies umfasst eine Zusammenfassung der Suchergebnisse (vergleichbar mit der Zusammenfassung der geschätzten Suchergebnisse im Detailbereich angezeigt) die Abfragestatistiken wie die Anzahl der Speicherorte für Inhalte mit Elementen, die die Suchabfrage erfüllen und den Namen der Speicherorte für Inhalte die die meisten übereinstimmenden Elemente aufweisen. Sie können Statistiken für einen oder mehrere Content-Suche anzeigen. Auf diese Weise können Sie schnell vergleichen Sie die Ergebnisse für mehrere Suchen und bestimmen, welche Informationen die Effektivität von Suchabfragen.
   
@@ -100,6 +100,10 @@ So zeigen Sie Statistiken für Content-Suche an:
 ## <a name="get-keyword-statistics-for-content-searches"></a>Rufen Sie schlüsselwortstatistiken für Content-Suche
 
 Wie vorherige erläutert, die Seite **Abfragen** zeigt die Suchabfrage und die Anzahl (und Größe) von Elementen, die mit die Abfrage übereinstimmen. Wenn Sie eine Schlüsselwortliste beim Erstellen oder eine Suchabfrage bearbeiten verwenden, können Sie erweiterte Statistik abrufen, die zeigen, wie viele Elemente jedes Schlüsselwort oder Stichwortbegriff übereinstimmt. Dadurch können Sie schnell erkennen, welche Teile der Abfrage die am häufigsten (und mindestens) wirksam werden. Wenn ein Schlüsselwort eine große Anzahl von Elementen zurückgibt, können Sie verfeinern die Schlüsselwort-Abfrage aus, um die Suchergebnisse einzuschränken. Sie können eine Schlüsselwortliste beim Erstellen oder einer Inhaltssuche bearbeiten einrichten. 
+
+
+
+
   
 So erstellen Sie eine Schlüsselwortliste und schlüsselwortstatistiken für ein Inhaltssuche anzuzeigen:
   
@@ -130,3 +134,6 @@ So erstellen Sie eine Schlüsselwortliste und schlüsselwortstatistiken für ein
     - Die tatsächlichen Suchabfrage für jedes Schlüsselwort, die etwaige Auflagen aus der die Suchabfrage enthält. 
     
     - Die vollständige Suchabfrage (als **primäre** in der Spalte **Teil** identifiziert) und die Statistiken für die Abfrage abgeschlossen. Beachten Sie, dass diese die gleichen Statistiken auf der Seite **Zusammenfassung** angezeigt werden. 
+
+> [!NOTE]
+> Zur Verringerung der Probleme aufgrund von großen Listen Sie nun auf ein Maximum von 20 Zeilen in der Schlüsselwortliste einer Suchabfrage begrenzt.

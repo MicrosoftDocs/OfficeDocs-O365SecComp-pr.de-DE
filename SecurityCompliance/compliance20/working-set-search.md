@@ -1,5 +1,5 @@
 ---
-title: Abfragen von Daten in ein Arbeitssatz
+title: Abfragen der Daten in einem Arbeitssatz
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 03c82741b3a4433c43ef709701ab40330ac5fd1f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607794"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29694991"
 ---
-# <a name="querying-data-in-a-working-set"></a>Abfragen von Daten in ein Arbeitssatz
+# <a name="query-the-data-in-a-working-set"></a>Abfragen der Daten in einem Arbeitssatz
 
 In den meisten Fällen ist es hilfreich sein, können Architekturprinzipien tiefer Was gibt es in einem Arbeitssatz und effizienter überprüfen zu organisieren. Abfragen in einer Arbeitssatzes können Sie hierzu mit deren Hilfe Sie auf eine Teilmenge von Dokumenten konzentrieren, die gleichzeitig von Ihnen festgelegten Kriterien erfüllen.
 

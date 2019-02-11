@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Dieser Artikel beschreibt die neue Version des erweiterten eDiscovery (Preview) in Microsoft 365.
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636621"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695061"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Versionshinweise für Daten Untersuchungen (Preview) in Microsoft 365
 
-Das neue Tool Daten Untersuchungen (Preview) können in Microsoft 365 selektieren, untersuchen und Warten von Daten miteinander verknüpft, Vorfälle, wie eine Daten stellen Vorfall oder einer internen Untersuchung. Die öffentliche Datenvorschau Untersuchungen enthält frühe Zugriff auf die in Kürze verfügbare Funktionalität und Updates. Um frühen Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Daten Untersuchungen (Preview) in die Office 365-Sicherheit & Compliance Center. Informationen hierzu finden Sie unter [Verwalten von einem Daten stellen Vorfall in Microsoft 365](manage-data-spillage-incidents.md).
+Das neue Tool Daten Untersuchungen (Preview) können in Microsoft 365 selektieren, untersuchen und Warten von Daten miteinander verknüpft, Vorfälle, wie eine Daten stellen Vorfall oder einer internen Untersuchung. Die öffentliche Datenvorschau Untersuchungen enthält frühe Zugriff auf die in Kürze verfügbare Funktionalität und Updates. Um frühen Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Daten Untersuchungen (Preview) in die Office 365-Sicherheit & Compliance Center. Informationen hierzu finden Sie unter [Verwalten einer Daten stellen Vorfall in Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Neuigkeiten 
 

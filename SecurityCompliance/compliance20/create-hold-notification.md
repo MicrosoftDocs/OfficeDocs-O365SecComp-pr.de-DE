@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9949fcc5876e1d0fa2f877333c5a9e5abae8c2a7
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607855"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706076"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen Sie eine Anmerkung zur rechtlichen Aufbewahrungspflicht
 
@@ -56,7 +56,7 @@ So erstellen Sie den Portal-Inhalt
 3. Klicken Sie auf **Weiter**.
 
   >[!Tip]
-  >Weitere Informationen zum Anpassen können, den Inhalt und Format der Portal-Inhalt finden Sie unter [Verwenden des Editors Communications](using-communications-editor.md).
+  >Weitere Informationen zum Anpassen können, den Inhalt und Format der Portal-Inhalt finden Sie unter [Verwendung des Editors Communications](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Schritt 3: Festlegen der erforderlichen Benachrichtigungen
 

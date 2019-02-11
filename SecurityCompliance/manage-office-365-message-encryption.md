@@ -3,7 +3,6 @@ title: Verwalten der Office 365-Nachrichtenverschlüsselung
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +11,25 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 description: Nachdem Sie die Einstellung von Office 365 Message Encryption (OME) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf unterschiedliche Weise anpassen. Beispielsweise können Sie konfigurieren, ob aktivieren einmalige Kenncodes verlangt, schützen die Schaltfläche in Outlook auf den Web- und vieles mehr angezeigt. Die Aufgaben in diesem Artikel wird beschrieben, wie.
-ms.openlocfilehash: 460ac0bba4d10fe8bef896a23a20f74527f031b2
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+ms.openlocfilehash: 6a9eddae2d3d166d96979d88b15845c3b7379bd9
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750054"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696229"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
-Nachdem Sie die Einstellung von Office 365 Message Encryption (OME) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf unterschiedliche Weise anpassen. Beispielsweise können Sie konfigurieren, ob aktivieren einmalige Kenncodes verlangt, **schützen** die Schaltfläche in Outlook auf den Web- und vieles mehr angezeigt. Die Aufgaben in diesem Artikel wird beschrieben, wie. 
+Nachdem Sie die Einstellung von Office 365 Message Encryption (OME) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf unterschiedliche Weise anpassen. Beispielsweise können Sie konfigurieren, ob aktivieren einmalige Kenncodes verlangt, **schützen** die Schaltfläche in Outlook auf den Web- und vieles mehr angezeigt. Die Aufgaben in diesem Artikel wird beschrieben, wie.
   
 ||
 |:-----|
-|Dieser Artikel ist Teil einer größeren Reihe von Artikeln zur Office 365 Message Encryption. In diesem Artikel ist für Administratoren und IT-Spezialisten vorgesehen. Wenn Sie sich gerade befinden Suchen nach Informationen zu senden oder Empfangen einer verschlüsselten Nachricht, finden Sie in der Liste der Artikel in [Office 365 Message Encryption (OME)](ome.md) , und suchen Sie im Artikel, der am besten Ihren Anforderungen entspricht. |
+|Dieser Artikel ist Teil einer größeren Reihe von Artikeln zur Office 365 Message Encryption. In diesem Artikel ist für Administratoren und IT-Fachleute vorgesehen. Wenn Sie sich gerade befinden Suchen nach Informationen zu senden oder Empfangen einer verschlüsselten Nachricht, finden Sie in der Liste der Artikel in [Office 365 Message Encryption (OME)](ome.md) , und suchen Sie im Artikel, der am besten Ihren Anforderungen entspricht. |
+||
 
 ## <a name="managing-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Verwalten von, ob Google, Yahoo! und Microsoft Account Empfänger diese Konten, zur Anmeldung verwenden können bei Office 365 Message Encryption-portal
 
-Standardmäßig Wenn Sie die neuen Funktionen für Office 365 Message Encryption einrichten können Benutzer in Ihrer Organisation Nachrichten an Empfänger senden, die sich außerhalb Ihrer Office 365-Organisation befinden. Wenn der Empfänger eine *ID für soziale Netzwerke* wie Google-Konto, Yahoo-Konto oder Microsoft-Konto verwendet wird, kann der Empfänger OME-Portal mit der sozialen-ID. anmelden Wenn Sie möchten, können Sie auswählen, die nicht für soziale Netzwerke IDs verwenden Sie zur Anmeldung bei des OME-Portals-Empfänger zuzulassen. 
+Standardmäßig Wenn Sie die neuen Funktionen für Office 365 Message Encryption einrichten können Benutzer in Ihrer Organisation Nachrichten an Empfänger senden, die sich außerhalb Ihrer Office 365-Organisation befinden. Wenn der Empfänger eine *ID für soziale Netzwerke* wie Google-Konto, Yahoo-Konto oder Microsoft-Konto verwendet wird, kann der Empfänger OME-Portal mit der sozialen-ID. anmelden Wenn Sie möchten, können Sie auswählen, die nicht für soziale Netzwerke IDs verwenden Sie zur Anmeldung bei des OME-Portals-Empfänger zuzulassen.
   
 ### <a name="to-manage-whether-or-not-to-allow-recipients-to-use-social-ids-to-sign-in-to-the-ome-portal"></a>Ob Sie Empfänger für soziale Netzwerke IDs OME-Portal Anmeldung verwenden darf verwalten
   
@@ -37,21 +37,21 @@ Standardmäßig Wenn Sie die neuen Funktionen für Office 365 Message Encryption
 
 2. Führen Sie das Cmdlet "Set-OMEConfiguration" mit dem Parameter SocialIdSignIn wie folgt aus:
 
-  ```
-  Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
-  ```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
+   ```
 
-  Geben Sie beispielsweise Folgendes ein, um die IDs für soziale Netzwerke deaktivieren:
-  
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
-  ```
+   Geben Sie beispielsweise Folgendes ein, um die IDs für soziale Netzwerke deaktivieren:
 
-  So aktivieren Sie IDs für soziale Netzwerke
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
+   ```
 
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
-  ```
+   So aktivieren Sie IDs für soziale Netzwerke
+
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
+   ```
 
 ## <a name="managing-the-use-of-one-time-pass-codes-for-signing-in-to-the-office-365-message-encryption-portal"></a>Die Verwendung der einmaligen Kenncodes zum Anmelden bei Office 365 Message Encryption-Portal verwalten
 
@@ -63,19 +63,25 @@ Wenn der Empfänger einer Nachricht verschlüsselt, OME Outlook, unabhängig von
 
 2. Führen Sie das Cmdlet Set-OMEConfiguration, mit dem Parameter OTPEnabled:
 
-   ```Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   ```
 
    Geben Sie beispielsweise Folgendes ein, um die einmalige Kenncodes zu deaktivieren:
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false
+   ```
 
    So aktivieren Sie das einmalige Kenncodes verlangt:
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
+   ```
 
 ## <a name="managing-the-display-of-the-protect-button-in-outlook-on-the-web"></a>Verwaltung der Anzeige der Schaltfläche Protect in Outlook im Web
 
-Standardmäßig ist die Schaltfläche **Protect** in Outlook im Web nicht aktiviert, wenn Sie OME einrichten. Als Administrator können Sie, ob diese Schaltfläche für Endbenutzer angezeigt werden soll oder nicht verwalten. 
+Standardmäßig ist die Schaltfläche **Protect** in Outlook im Web nicht aktiviert, wenn Sie OME einrichten. Als Administrator können Sie, ob diese Schaltfläche für Endbenutzer angezeigt werden soll oder nicht verwalten.
   
 ### <a name="to-manage-whether-or-not-the-protect-button-appears-in-outlook-on-the-web"></a>Zum Verwalten von wird angezeigt, unabhängig davon, ob die Schaltfläche Protect in Outlook im Web
   
@@ -83,15 +89,21 @@ Standardmäßig ist die Schaltfläche **Protect** in Outlook im Web nicht aktivi
 
 2. Führen Sie das Cmdlet Set-IRMConfiguration, mit dem Parameter - SimplifiedClientAccessEnabled:
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
+   ```
 
    Geben Sie beispielsweise Folgendes ein, um die Schaltfläche **Protect** zu deaktivieren:
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
    So aktivieren Sie die Schaltfläche **schützen** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $true```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Aktivieren Sie dienstseitige Entschlüsselung von e-Mails für iOS Mail-app-Benutzer
 
@@ -99,7 +111,7 @@ Die Mail-app für iOS kann nicht mit Office 365 Message Encryption geschützten 
   
 Wenn Sie nicht entschlüsselte Nachrichten gesendet werden können iOS mail-app-Benutzer, Benutzer erhalten die Meldung, die besagt, dass sie nicht über die Rechte zum Anzeigen der Meldung verfügen. Standardmäßig ist die dienstseitige Entschlüsselung der e-Mail-Nachrichten nicht aktiviert.
   
-Weitere Informationen und einen Überblick über die Clientumgebung finden Sie im Abschnitt, "[Anzeigen von verschlüsselten Nachrichten auf dem iPhone oder iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf#iOSEncryptedMail)" in [verschlüsselten Nachrichten auf dem iPhone oder iPad anzuzeigen](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
+Weitere Informationen und einen Überblick über die Clientumgebung finden Sie unter [View verschlüsselte Nachrichten auf dem iPhone oder iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
   
 ### <a name="to-manage-whether-or-not-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Zum Verwalten, unabhängig davon, ob e-Mail von iOS-app-Benutzer kann von Office 365 Message Encryption geschützte Nachrichten anzeigen.
   
@@ -107,19 +119,25 @@ Weitere Informationen und einen Überblick über die Clientumgebung finden Sie i
 
 2. Führen Sie das Cmdlet Set-ActiveSyncOrganizations, mit dem Parameter AllowRMSSupportForUnenlightenedApps:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
+   ```
 
    Beispiel-mail-so konfigurieren Sie den Dienst, um Nachrichten zu entschlüsseln, bevor sie unenlightened Apps gesendet werden wie iOS app:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
+   ```
 
    Oder Sie den Dienst nicht zum Senden von entschlüsselter Nachrichten an unenlightened apps zu konfigurieren:
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Aktivieren Sie dienstseitige Entschlüsselung der e-Mail-Anlagen für Webbrowser Mail-clients
 
-Wenn Sie Office 365-nachrichtenverschlüsselung verwenden, werden normalerweise automatisch Anlagen verschlüsselt. Als Office 365-Administrator können Sie dienstseitige Entschlüsselung für e-Mail-Anlagen anwenden, die Benutzer über einen Webbrowser herunterladen. 
+Wenn Sie Office 365-nachrichtenverschlüsselung verwenden, werden normalerweise automatisch Anlagen verschlüsselt. Als Office 365-Administrator können Sie dienstseitige Entschlüsselung für e-Mail-Anlagen anwenden, die Benutzer über einen Webbrowser herunterladen.
   
 Wenn Sie dazu entschließen, sendet der Dienst eine verschlüsselte Kopie der Datei auf das Gerät. Die Nachricht wird weiterhin verschlüsselt. Die e-Mail-Anlage behält auch Informationen über die Nutzungsrechte, obwohl im Browser nicht mithilfe der clientseitigen Nutzungsrechte für den Benutzer angewendet werden kann. Dies bedeutet, dass der Benutzer kann kopieren oder die e-Mail-Anlage drucken, selbst wenn sie ursprünglich nicht über die Rechte dazu verfügt. Jedoch, wenn der Benutzer versucht, eine Aktion ausführen, in der Office 365-Mailserver, wie die Anlage weiterleiten erfordert der Server die Aktion lässt, wenn der Benutzer nicht ursprünglich Usage dazu berechtigt.
   
@@ -135,15 +153,21 @@ Weitere Informationen dazu, wie Office 365 für e-Mails und e-Mail-Anlagen mit d
 
 2. Führen Sie das Cmdlet Set-IRMConfiguration, mit dem Parameter DecryptAttachmentFromPortal:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   ```
 
    Beispielsweise gedownloadet zum Konfigurieren des Dienstes zum Entschlüsseln von e-Mail-Anlagen, wenn ein Benutzer über einen Webbrowser:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $true```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   ```
 
    So konfigurieren Sie den Dienst, um verschlüsselte e-Mail-Anlagen lassen, wie sie beim Download sind:
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $false```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   ```
 
 ## <a name="customizing-the-appearance-of-email-messages-and-the-ome-portal"></a>Anpassen der Darstellung von e-Mail-Nachrichten und das OME-portal
 
@@ -159,8 +183,12 @@ Hoffentlich sie kommen nicht, wenn Sie aber, deaktivieren die neuen Funktionen f
 
 2. Wenn Sie die Schaltfläche **Protect** in Outlook im Web aktiviert, deaktivieren Sie ihn durch das Cmdlet Set-IRMConfiguration mit dem Parameter SimplifiedClientAccessEnabled ausführen. Andernfalls überspringen Sie diesen Schritt.
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
 3. Deaktivieren Sie die neuen Funktionen für OME durch Ausführen des Set-IRMConfiguration-Cmdlets mit dem AzureRMSLicensingEnabled-Parameter auf False festgelegt:
 
-   ```Set-IRMConfiguration -AzureRMSLicensingEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -AzureRMSLicensingEnabled $false
+   ```
