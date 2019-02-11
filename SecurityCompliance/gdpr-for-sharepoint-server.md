@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie, wie Sie mit DSGVO-Anforderungen in lokalen SharePoint Servern umgehen.
-ms.openlocfilehash: f6f5e4a1b9309f846d47fda69a76ab4da396b2f5
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 05c64c10c2fea80ed410258433c35efc33c4a9de
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272390"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740827"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>DSGVO für SharePoint Server
 
@@ -36,7 +36,7 @@ Der empfohlene grundlegende Ansatz für die von Benutzern erstellten Inhalte auf
 
 Die empfohlene Vorgehensweise für  Dateifreigaben, Websites und Bibliotheken von SharePoint und umfasst die folgenden Schritte:
 
-1.  **Installieren und konfigurieren Sie den Azure Information Protection-Scanner.**
+1.  **[Installieren und konfigurieren Sie den Azure Information Protection-Scanner.](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Entscheiden Sie, welche vertraulichen Datentypen Sie verwenden möchten.
 
@@ -116,32 +116,32 @@ Mit dem folgenden Verfahren können Sie Abfragen aus den Protokolltabellen in Li
 
 ```sql
 [In dbo].[LinkStore_<ID>]:
-CREATE PROCEDURE proc_MSS_GetQueryTermsForUser 
-( 
-    @UserName nvarchar(256), 
-    @StartTime datetime 
-) 
-AS 
-BEGIN 
-    SET NOCOUNT ON; 
-    SELECT searchTime, queryString 
-    FROM 
-        dbo.MSSQLogPageImpressionQuery 
-    WITH 
-        (NOLOCK) 
-    WHERE 
-        userName = @UserName AND 
-        searchTime > @StartTime 
-END 
-GO 
+CREATE PROCEDURE proc_MSS_GetQueryTermsForUser 
+( 
+    @UserName nvarchar(256), 
+    @StartTime datetime 
+) 
+AS 
+BEGIN 
+    SET NOCOUNT ON; 
+    SELECT searchTime, queryString 
+    FROM 
+        dbo.MSSQLogPageImpressionQuery 
+    WITH 
+        (NOLOCK) 
+    WHERE 
+        userName = @UserName AND 
+        searchTime > @StartTime 
+END 
+GO 
 ```
 
 #### <a name="export-a-users-queries-from-the-past-100-days"></a>Exportieren der Abfragen eines Benutzers für die letzten 100 Tage
 
 ```sql
-DECLARE @FROMDATE datetime 
-SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
-EXECUTE proc_MSS_GetQueryTermsForUser '0#.w|domain\username', @FROMDATE 
+DECLARE @FROMDATE datetime 
+SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
+EXECUTE proc_MSS_GetQueryTermsForUser '0#.w|domain\username', @FROMDATE 
 ```
 
 #### <a name="export-a-users-favorite-queries"></a>Exportieren der am häufigsten genutzten Abfragen eines Benutzers
@@ -150,34 +150,34 @@ Mit dem folgenden Verfahren können Sie die am häufigsten genutzten Abfragen ei
 
 ```sql
 In [dbo].[Search_<ID>]:
-CREATE PROCEDURE proc_MSS_GetPersonalFavoriteQueries 
-( 
-    @UserName nvarchar(256), 
-    @SearchTime datetime 
-) 
-AS 
-BEGIN 
-    SET NOCOUNT ON; 
-    SELECT max(queries.SearchTime) as SearchTime, 
-           max(queries.querystring) as queryString, 
-           max(url.url) as URL 
-    FROM MSSQLogOwner owners WITH(NOLOCK) 
-    JOIN MSSQLogPersonalResults results WITH(NOLOCK) on owners.OwnerId = results.OwnerId 
-    JOIN MSSQLogUrl url WITH(NOLOCK) on results.ClickedUrlId = url.urlId 
-    JOIN MSSQLogPersonalQueries queries WITH(NOLOCK) on results.OwnerId = queries.OwnerId 
-    WHERE queries.SearchTime > @SearchTime 
-        AND queries.UserName = @UserName 
-        GROUP BY queries.QueryString,url.url 
-END 
-GO 
+CREATE PROCEDURE proc_MSS_GetPersonalFavoriteQueries 
+( 
+    @UserName nvarchar(256), 
+    @SearchTime datetime 
+) 
+AS 
+BEGIN 
+    SET NOCOUNT ON; 
+    SELECT max(queries.SearchTime) as SearchTime, 
+           max(queries.querystring) as queryString, 
+           max(url.url) as URL 
+    FROM MSSQLogOwner owners WITH(NOLOCK) 
+    JOIN MSSQLogPersonalResults results WITH(NOLOCK) on owners.OwnerId = results.OwnerId 
+    JOIN MSSQLogUrl url WITH(NOLOCK) on results.ClickedUrlId = url.urlId 
+    JOIN MSSQLogPersonalQueries queries WITH(NOLOCK) on results.OwnerId = queries.OwnerId 
+    WHERE queries.SearchTime > @SearchTime 
+        AND queries.UserName = @UserName 
+        GROUP BY queries.QueryString,url.url 
+END 
+GO 
 ```
 
-#### <a name="export-a-users-favorite-queries-from-the-past-100-days"></a>Exportieren der am häufigsten genutzten Abfragen eines Benutzers für die letzten 100 Tage 
+#### <a name="export-a-users-favorite-queries-from-the-past-100-days"></a>Exportieren der am häufigsten genutzten Abfragen eines Benutzers für die letzten 100 Tage 
 
 ```sql
-DECLARE @FROMDATE datetime 
-SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
-EXECUTE proc_MSS_GetPersonalFavoriteQueries '0#.w|domain\username', @FROMDATE 
+DECLARE @FROMDATE datetime 
+SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
+EXECUTE proc_MSS_GetPersonalFavoriteQueries '0#.w|domain\username', @FROMDATE 
 ```
 
 #### <a name="remove-references-to-user-names-that-are-more-than-x-days-old"></a>Entfernen von Verweisen auf Benutzernamen, die älter als X Tage sind
@@ -185,28 +185,28 @@ EXECUTE proc_MSS_GetPersonalFavoriteQueries '0#.w|domain\username', @FROMDATE
 Mit dem folgenden Verfahren können Sie Verweise, die älter als @Tage sind, in Bezug auf *alle* Benutzernamen aus den Protokolltabellen in Links Store entfernen. Durch dieses Verfahren werden Verweise in umgekehrt chronologischer Reihenfolge entfernt, bis der @ZeitpunktDerLetztenBereinigung erreicht ist.
 
 ```sql
-In [dbo].[LinksStore_<ID>]:  
-CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
-( 
-    @LastCleanupTime datetime, 
-    @Days int 
-) 
-AS 
-BEGIN 
-    DECLARE @TooOld datetime 
-    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
-    DECLARE @FromLast datetime 
-    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
-    BEGIN TRANSACTION 
-         UPDATE MSSQLogPageImpressionQuery 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
-    UPDATE MSSQLogO14PageClick 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
-    COMMIT TRANSACTION 
-END 
-GO 
+In [dbo].[LinksStore_<ID>]:  
+CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
+( 
+    @LastCleanupTime datetime, 
+    @Days int 
+) 
+AS 
+BEGIN 
+    DECLARE @TooOld datetime 
+    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
+    DECLARE @FromLast datetime 
+    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
+    BEGIN TRANSACTION 
+         UPDATE MSSQLogPageImpressionQuery 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
+    UPDATE MSSQLogO14PageClick 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld 
+    COMMIT TRANSACTION 
+END 
+GO 
 ```
 
 #### <a name="remove-references-to-a-specific-user-name-thats-more-than-x-days-old"></a>Entfernen von Verweisen auf einen bestimmten Benutzernamen, die älter als X Tage sind
@@ -215,67 +215,69 @@ Mit dem folgenden Verfahren können Sie Verweise, die älter als @Tage sind, in 
 
 ```sql
 In [dbo].[LinksStore_<ID>]:
-CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
-( 
-    @UserName nvarchar(256),
-    @LastCleanupTime datetime, 
-    @Days int 
-) 
-AS 
-BEGIN 
-    DECLARE @TooOld datetime 
-    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
-    DECLARE @FromLast datetime 
-    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
-    BEGIN TRANSACTION 
-         UPDATE MSSQLogPageImpressionQuery 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
-    UPDATE MSSQLogO14PageClick 
-    SET userName = 'NA' 
-    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
-    COMMIT TRANSACTION 
-END 
-GO 
+CREATE PROCEDURE proc_MSS_QLog_Cleanup_Users 
+( 
+    @UserName nvarchar(256),
+    @LastCleanupTime datetime, 
+    @Days int 
+) 
+AS 
+BEGIN 
+    DECLARE @TooOld datetime 
+    SET @TooOld = DATEADD(day, -@Days, GETUTCDATE()) 
+    DECLARE @FromLast datetime 
+    SET @FromLast = DATEADD(day, -@Days, @LastCleanupTime) 
+    BEGIN TRANSACTION 
+         UPDATE MSSQLogPageImpressionQuery 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
+    UPDATE MSSQLogO14PageClick 
+    SET userName = 'NA' 
+    WHERE @FromLast <= searchTime AND searchTime < @TooOld AND userName = @UserName
+    COMMIT TRANSACTION 
+END 
+GO 
 ```
 
 #### <a name="remove-references-to-all-user-names-in-the-query-history-from-a-date-and-up-to-the-past-30-days"></a>Entfernen von Verweisen auf alle Benutzernamen Verlauf der Suchabfragen ab einem bestimmten Datum und bis auf die letzten 30 Tage
 
 ```sql
-EXECUTE proc_MSS_QLog_Cleanup_Users '1-1-2017', 30 
+EXECUTE proc_MSS_QLog_Cleanup_Users '1-1-2017', 30 
 ```
 
 ### <a name="delete-usage-records"></a>Löschen von Verwendungsprotokollen
 
 In SharePoint Server werden Verwendungsprotokolle nach 3 Jahren automatisch gelöscht. Sie können diese Datensätze mit dem folgenden Verfahren manuell löschen:
 
-So löschen Sie alle die Verwendungsprotokolle, die gelöschten Dokumenten zugeordnet sind 
+So löschen Sie alle die Verwendungsprotokolle, die gelöschten Dokumenten zugeordnet sind 
 
-1.  Stellen Sie sicher, dass das neueste SharePoint-Update installiert ist. 
+1.  Stellen Sie sicher, dass das neueste SharePoint-Update installiert ist. 
 
 2.  Starten Sie eine SharePoint-Verwaltungsshell.
 
-3.  Beenden und löschen Sie die Verwendungsanalyse: 
+3.  Beenden und löschen Sie die Verwendungsanalyse: 
 
     ```powershell
-    $tj = Get-SPTimerJob -Type Microsoft.Office.Server.Search.Analytics.UsageAnalyticsJobDefinition 
-    $tj.StopAnalysis() 
-    $tj.ClearAnalysis() 
+    $tj = Get-SPTimerJob -Type Microsoft.Office.Server.Search.Analytics.UsageAnalyticsJobDefinition 
+    $tj.DisableTimerjobSchedule()
+    $tj.StopAnalysis() 
+    $tj.ClearAnalysis() 
+    $tj.EnableTimerjobSchedule()
     ```
 
-4.  Warten Sie, bis die Analyse erneut gestartet wird (kann bis zu 24 Stunden dauern). 
+4.  Warten Sie, bis die Analyse erneut gestartet wird (kann bis zu 24 Stunden dauern). 
 
 5.  Bei der nächsten Ausführung der Analyse werden Sicherungskopien aller Datensätze aus der Analytics Reporting-Datenbank erstellt. Bei einer großen Datenbank mit vielen Einträgen kann das Erstellen dieser Sicherungskopie eine Weile dauern.
 
-6.  Warten Sie zehn Tage. Die Analyse wird täglich ausgeführt und Datensätze, die gelöschten Dokumenten zugeordnet sind, werden nach der zehnten Ausführung entfernt. Diese Ausführung dauert länger als normal, wenn viele Datensätze gelöscht werden müssen. 
+6.  Warten Sie zehn Tage. Die Analyse wird täglich ausgeführt und Datensätze, die gelöschten Dokumenten zugeordnet sind, werden nach der zehnten Ausführung entfernt. Diese Ausführung dauert länger als normal, wenn viele Datensätze gelöscht werden müssen. 
 
 ### <a name="personal-information-and-search-in-sharepoint-server-2010"></a>Personenbezogene Daten und Suche in SharePoint Server 2010
 
-#### <a name="fast-search-server-2010-for-sharepoint"></a>FAST Search Server 2010 for SharePoint 
+#### <a name="fast-search-server-2010-for-sharepoint"></a>FAST Search Server 2010 for SharePoint 
 
 Zusätzlich zur Speicherung von Dateien im Index, speichert das FAST Search Server 2010-Add-On die Dateien auch in einem temporären Format namens FixML. FiXML-Dateien werden standardmäßig jede Nacht zwischen 3 und 5 Uhr komprimiert. Durch die Komprimierung werden gelöschte Dateien automatisch aus den FiXML-Dateien gelöscht. Um sicherzustellen, dass Informationen zu gelöschten Benutzern oder Dokumenten zeitnah entfernt werden, sollte diese Komprimierung immer aktiviert sein.
 
-### <a name="hybrid-search"></a>Hybridsuche 
+### <a name="hybrid-search"></a>Hybridsuche 
 
 Die empfohlenen Aktionen für Lösungen für die Hybridsuche stimmen mit denen für die Suche in SharePoint Server oder SharePoint Online überein. Es gibt zwei Lösungen für die Hybridsuche:
 
@@ -317,7 +319,7 @@ $credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredential
 $clientContext.Credentials = $credentials
 if (!$clientContext.ServerObjectIsNull.Value)
 {
-    Write-Host "Connected to SharePoint Online site: '$Url'" -ForegroundColor Green
+    Write-Host "Connected to SharePoint Online site: '$Url'" -ForegroundColor Green
 }
 
 # Get user

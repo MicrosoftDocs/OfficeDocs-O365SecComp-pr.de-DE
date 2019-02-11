@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
 ms.openlocfilehash: 781b32cf77d8e016273c555b3ffd01382cc892a9
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25346007"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28021664"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
