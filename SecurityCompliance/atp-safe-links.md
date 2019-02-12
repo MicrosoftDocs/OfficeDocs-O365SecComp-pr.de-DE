@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/11/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Die sichere Links-Funktion bietet Zeit des klicken Sie auf Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing und anderen Angriffen zu schützen.
-ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
+ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792240"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29888031"
 ---
 # <a name="office-365-atp-safe-links"></a>ATP-sichere Links in Office 365
 
@@ -98,7 +98,7 @@ Im nächsten Schritt stellen Sie sicher, dass alle Richtlinien ATP sichere Links
     
 - Über ihr Konto arbeiten oder Schule **Benutzer in Office 365 angemeldet haben** . (Siehe [Office oder Office 365 anmelden](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
     
-- **E-Mail von Ihrer Organisation in Office 365 gehostet wird**. 
+- **Ihres Unternehmens e-Mails über Exchange Online Protection übergibt**.  
 
 Um ATP Richtlinien definieren (oder bearbeiten), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden:
 

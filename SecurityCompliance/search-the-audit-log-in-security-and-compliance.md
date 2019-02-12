@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Sicherheit in Office 365 & Compliance Center, um unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
-ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
-ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
+ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735467"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29890056"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Sicherheit in Office 365 Compliance Center &
 
@@ -55,7 +55,7 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
 - Benutzer- und Admin-Aktivität in Microsoft Stream
     
    
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die Office 365 in das Überwachungsprotokoll lesen.
   
@@ -281,7 +281,7 @@ Sie können die Ergebnisse einer Audit Log-Suche in einer durch Trennzeichen get
 
 ## <a name="audited-activities"></a>Überwachten Aktivitäten
 
-Die Tabellen in diesem Abschnitt beschreiben die Aktivitäten, die in Office 365 überwacht werden. Sie können für diese Ereignisse durch Suchen der Überwachungsprotokolle in das Wertpapier protokollieren suchen &amp; Compliance Center. Klicken Sie auf die Registerkarte **Suchen im Überwachungsprotokoll** für eine schrittweise Anleitung. 
+Die Tabellen in diesem Abschnitt beschreiben die Aktivitäten, die in Office 365 überwacht werden. Sie können für diese Ereignisse suchen, indem Sie das Überwachungsprotokoll in die & Security Compliance Center suchen.
   
 Diese Tabellen Gruppieren verwandter Aktivitäten oder die Aktivitäten aus einem bestimmten Office 365-Dienst. Die Tabellen enthalten den Anzeigenamen, der in der Dropdown-Liste von **Aktivitäten** angezeigt wird und den Namen der entsprechenden Vorgang, der angezeigt wird, in die detaillierten Informationen eines Datensatzes Audit und in der CSV-Datei, wenn Sie die Suchergebnisse exportieren. Beschreibung der ausführliche Informationen finden Sie unter [Detailangaben zu den Eigenschaften in der Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -293,9 +293,10 @@ Klicken Sie auf eine der folgenden Links, um zu einer bestimmten Tabelle zu wech
 |[Synchronisierung Aktivitäten](#synchronization-activities)<br/> |[Site-Verwaltungsaktivitäten](#site-administration-activities)<br/> |[Exchange-Postfach-Aktivitäten](#exchange-mailbox-activities)<br/> |
 |[Sway Aktivitäten](#sway-activities) <br/> |[Die Verwaltung Benutzeraktivitäten](#user-administration-activities) <br/> |[Azure Active Directory-Gruppe Administration Aktivitäten](#azure-ad-group-administration-activities) <br/> |
 |[Anwendung Administration Aktivitäten](#application-administration-activities) <br/> |[Rolle Administration Aktivitäten](#role-administration-activities) <br/> |[Directory Administration Aktivitäten](#directory-administration-activities) <br/> |
-|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft-Teams, Aktivitäten](#microsoft-teams-activities) <br/> |
-|[Yammer-Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange-Administrator-Überwachungsprotokoll](#exchange-admin-audit-log) <br/> |
+|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Jahrestag Analytics](#microsoft-workplace-analytics-activities)<br/>|
+[Microsoft-Teams, Aktivitäten](#microsoft-teams-activities) <br/> |[Yammer-Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange Admin-Aktivitäten](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Datei und Seite Aktivitäten
@@ -326,6 +327,7 @@ In der folgenden Tabelle werden die Datei und Seite Aktivitäten in SharePoint O
 |Hochgeladene Datei  <br/> |FileUploaded  <br/> |Benutzer hochgeladen ein Dokument in einen Ordner auf einer Website.  <br/> |
 |Angezeigte Seite  <br/> |PageViewed  <br/> |Benutzer zeigt eine Seite auf einer Website. Dies umfasst nicht mit einem Webbrowser anzeigen von Dateien in einer Dokumentbibliothek befinden.  <br/> |
 |(kein Rahmen)  <br/> |PageViewedExtended  <br/> |Dies bezieht sich auf der Seite"Ansicht" Aktivitäten (PageViewed). Ein PageViewedExtended-Ereignis wird protokolliert, wenn die gleiche Person ständig eine Webseite für einen längeren Zeitraum (bis zu 3 Stunden) anzeigt. Protokollieren von Ereignissen PageViewedExtended dient zum Verringern der Anzahl PageViewed Ereignisse, die protokolliert werden, wenn eine Seite ständig angezeigt wird. Dies hilft bei der Rauschen von mehrere PageViewed-Datensätzen für was im Wesentlichen ist Benutzeraktivität und Sie sich auf das erste (und wichtiger) PageViewed Ereignis konzentrieren können.  <br/> |
+||||
   
 ### <a name="folder-activities"></a>Ordner Aktivitäten
   
@@ -342,6 +344,7 @@ In der folgenden Tabelle werden die Ordner Aktivitäten in SharePoint Online und
 |Verschobene Ordner  <br/> |FolderMoved  <br/> |Benutzer Verschiebt einen Ordner an einen anderen Ort auf einer Website.  <br/> |
 |Umbenannte Ordner  <br/> |FolderRenamed  <br/> |Einen Ordner auf einer Website umbenannt wird.  <br/> |
 |Wiederhergestellte Ordner  <br/> |FolderRestored  <br/> |Benutzer wiederherstellen ein gelöschtes Ordners aus dem Papierkorb auf einer Website.  <br/> |
+||||
   
 ### <a name="sharing-and-access-request-activities"></a>Freigabe und Access Anforderung Aktivitäten
   
@@ -382,6 +385,7 @@ In der folgenden Tabelle werden die Benutzer Freigabe und Access Anforderung Akt
 |Benutzer, die sichere Verbindung  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die als sharing sichere Verbindung verwenden können.  <br/> |
 |Benutzer von sichere Verbindung entfernt  <br/> |RemovedFromSecureLink  <br/> |Ein Benutzer wurde aus der Liste der Entitäten entfernt, die als sharing sichere Verbindung verwenden können.  <br/> |
 |Einstellten Einladung zur Freigabe  <br/> |SharingInvitationRevoked  <br/> |Benutzer einstellten eine Einladung zur Freigabe auf eine Ressource.  <br/> |
+||||
   
 ### <a name="synchronization-activities"></a>Synchronisierung Aktivitäten
   
@@ -395,6 +399,7 @@ Die folgende Tabelle enthält die Datei Synchronisierung Aktivitäten in SharePo
 |Heruntergeladene Datei Änderungen an computer  <br/> |FileSyncDownloadedPartial  <br/> |Benutzer herunterlädt Änderungen an Dateien erfolgreich aus einer Dokumentbibliothek. Diese Aktivität gibt an, dass alle Änderungen, die in der Dokumentbibliothek Dateien vorgenommen wurden auf dem Computer des Benutzers heruntergeladen wurden. Nur Änderungen wurden heruntergeladen, da die Dokumentbibliothek vom Benutzer zuvor heruntergeladen wurde (wie die **Dateien auf Computer heruntergeladen** Aktivität angegeben).<br/> |
 |Hochgeladenen Dateien in Dokumentbibliothek  <br/> |FileSyncUploadedFull  <br/> |Benutzer richtet eine Beziehung Sync und erfolgreich Dateien zum ersten Mal von ihrem Computer in einer Dokumentbibliothek hochgeladen.  <br/> |
 |Hochgeladene Datei Änderungen an einer Dokumentbibliothek  <br/> |FileSyncUploadedPartial  <br/> |Benutzer werden die Änderungen erfolgreich in Dateien in einer Dokumentbibliothek hochgeladen. Dieses Ereignis gibt an, dass alle an der lokalen Version einer Datei aus einer Dokumentbibliothek vorgenommenen Änderungen erfolgreich in die Dokumentbibliothek hochgeladen werden. Nur Änderungen entladen werden, da diese Dateien vom Benutzer bereits hochgeladen wurden (durch die ** Dateien in die Dokumentbibliothek hochgeladen ** Aktivität).  <br/> |
+||||
   
 ### <a name="site-administration-activities"></a>Site-Verwaltungsaktivitäten
   
@@ -432,6 +437,7 @@ Die folgende Tabelle enthält die Ereignisse, die von Site-Administrationsaufgab
 |Geo geplanten Website verschieben  <br/> |SiteGeoMoveScheduled  <br/> |Eine SharePoint oder globaler Administrator plant erfolgreich eine SharePoint oder OneDrive Website Geo verschoben werden. Die Multi-Geo-Funktion können eine Office 365-Organisation mehrere Regionen für die Office 365-Datacenter, umfassen die Geos bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
 |Set-Hostwebsite  <br/> |HostSiteSet  <br/> |Eine SharePoint oder globaler Administrator festgelegte Website zum Hosten von persönlichen oder OneDrive für Websites mit Geschäftsdaten geändert.  <br/> |
 |Aktualisierte Gruppe  <br/> |GroupUpdated  <br/> |Websiteadministrator oder Besitzer die Einstellungen einer Gruppe für eine Website geändert. Dazu kann gehören, ändern den Namen der Gruppe, anzeigen oder Bearbeiten der Gruppenmitgliedschaft und wie Mitgliedschaft Anforderungen behandelt werden kann.  <br/> |
+||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange-Postfach-Aktivitäten
   
@@ -454,6 +460,7 @@ Die folgende Tabelle enthält die Aktivitäten, die vom Postfach protokolliert w
 |Aktualisierte Nachricht  <br/> |Aktualisieren  <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |
 |Benutzer, die im Postfach angemeldet  <br/> |MailboxLogin  <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |
 |(kein Rahmen)  <br/> |UpdateInboxRules  <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. Posteingangsregeln dienen zum Verarbeiten von Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen und Aktionen, wenn die Bedingung einer Regel erfüllt sind, wie eine Nachricht in einen bestimmten Ordner verschieben oder Löschen einer Nachricht.<br/> Zum Zurückgeben von Einträgen für Posteingang Regel Aktivitäten, müssen Sie **Ergebnisse für alle Aktivitäten** in der Liste der **Aktivitäten** aus. Verwenden Sie den Bereich Datumsfeldern und **der Benutzerliste** , um die Suchergebnisse einzuschränken.<br/> |
+||||
   
 ### <a name="sway-activities"></a>Sway Aktivitäten
   
@@ -475,6 +482,7 @@ Die folgende Tabelle enthält die Benutzer- und Admin Aktivitäten in Schlingern
 |Schlingern Service deaktiviert  <br/> |SwayServiceOff  <br/> |Administrator deaktiviert Schlingern für die gesamte Organisation mithilfe der Office 365-Verwaltungskonsole.  <br/> |
 |Schlingern Service aktiviert  <br/> |SwayServiceOn  <br/> |Administrator kann Schlingern für die gesamte Organisation mithilfe des Office 365 Administrationscenter (Schlingern Dienst in der Standardeinstellung aktiviert ist).  <br/> |
 |Angezeigte Schlingern  <br/> |SwayView  <br/> |Benutzer zeigt eine Schlingern.  <br/> |
+||||
 
   
 ### <a name="user-administration-activities"></a>Die Verwaltung Benutzeraktivitäten
@@ -491,6 +499,7 @@ Die folgende Tabelle enthält die Administration Benutzeraktivitäten, die proto
 |Legen Sie-Eigenschaft, die erzwingt, dass Benutzer das Kennwort ändern  <br/> |Set-Force-Benutzerkennwort ändern  <br/> |Administrator festlegen die Eigenschaft, die einen Benutzer das Ändern ihres Kennworts, das das nächste Mal Benutzer anmelden bei Office 365, erzwingt.  <br/> |
 |Lizenz-Eigenschaften festlegen  <br/> |Lizenz-Eigenschaften festlegen  <br/> |Administrator ändert die Eigenschaften einer lizenzierten einem Benutzer zugewiesen.  <br/> |
 |Aktualisierte Benutzer  <br/> |Benutzer aktualisieren  <br/> |Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos ein. Eine Liste mit den Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Benutzerattribute aktualisieren" in [Azure Active Directory Bericht Überwachungsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
+||||
   
 ### <a name="azure-ad-group-administration-activities"></a>Azure Active Directory-Gruppe Administration Aktivitäten
   
@@ -503,6 +512,7 @@ Die folgende Tabelle enthält die Gruppe Verwaltung der Aktivitäten, die protok
 |Gelöschte Gruppe  <br/> |Gruppe löschen  <br/> |Eine Gruppe wurde gelöscht.  <br/> |
 |Entfernte Mitglied aus Gruppe  <br/> |Mitglied aus Gruppe entfernen  <br/> |Es wurde ein Mitglied aus einer Gruppe entfernt.  <br/> |
 |Aktualisierte Gruppe  <br/> |Aktualisierungsgruppe  <br/> |Eine Eigenschaft einer Gruppe wurde geändert.  <br/> |
+||||
    
 ### <a name="application-administration-activities"></a>Anwendung Administration Aktivitäten
   
@@ -517,6 +527,7 @@ Die folgende Tabelle enthält die Anwendung Admin Aktivitäten, die protokollier
 |Entfernt einen Dienstprinzipal aus dem Verzeichnis  <br/> |Entfernen von Dienstprinzipalnamen  <br/> |Eine Anwendung wurde aus dem Azure Active Directory gelöscht/nicht registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.  <br/> |
 |Entfernte Anmeldeinformationen aus einem Dienst Prinzipal  <br/> |Principal Dienstanmeldeinformationen entfernen  <br/> |Anmeldeinformationen wurden aus einem Dienst in Azure AD principal entfernt. Ein Dienst Prinzip stellt eine Anwendung im Verzeichnis dar.  <br/> |
 |Set-Delegierung-Eintrag  <br/> |Set-Delegierung-Eintrag  <br/> |Eine Authentifizierung Berechtigung wurde für eine Anwendung in Azure Active Directory aktualisiert.  <br/> |
+||||
 
 ### <a name="role-administration-activities"></a>Rolle Administration Aktivitäten
   
@@ -527,6 +538,7 @@ Die folgende Tabelle enthält die Azure AD-Rolle Administration Aktivitäten pro
 |Mitglied der Rolle hinzufügen  <br/> |Fügen Sie der Rolle Rolle  <br/> |Einen Benutzer hinzugefügt zu einer Administratorrolle im Office 365.  <br/> |
 |Entfernt einen Benutzer aus einer Rolle directory  <br/> |Mitglied der Rolle von Rolle entfernen  <br/> |Entfernt einen Benutzer aus einer Administratorrolle in Office 365.  <br/> |
 |Legen Sie die Kontaktinformationen für Unternehmen  <br/> |Legen Sie die Kontaktinformationen für Unternehmen  <br/> |Aktualisiert die Unternehmensebene Kontakten Vorgaben für Office 365-Organisation. Dazu gehören e-Mail-Adressen für Abonnement-bezogene e-Mail vom Office 365 sowie technische Benachrichtigungen zu Office 365-Dienste gesendet.  <br/> |
+||||
    
 ### <a name="directory-administration-activities"></a>Directory Administration Aktivitäten
   
@@ -546,6 +558,7 @@ Die folgende Tabelle listet Azure Active Directory Directory und Domänen-bezoge
 |Aktualisierte Domäne  <br/> |Domäne aktualisieren  <br/> |Aktualisiert die Einstellungen einer Domäne in Office 365-Organisation.  <br/> |
 |Überprüften Domäne  <br/> |Überprüfen der Domäne  <br/> |Sichergestellt, dass Ihre Organisation den Besitzer einer Domäne ist.  <br/> |
 |Überprüften e-Mail überprüften Domäne  <br/> |Überprüfen von e-Mail-überprüften Domäne  <br/> |Verwendeten e-Mail-Überprüfung, um sicherzustellen, dass Ihre Organisation den Besitzer einer Domäne ist.  <br/> |
+||||
    
 ### <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
   
@@ -572,6 +585,24 @@ Sie können das Überwachungsprotokoll Aktivitäten in Power BI suchen. Informat
   
 Beachten Sie, dass die überwachungsprotokollierung für Power BI standardmäßig nicht aktiviert ist. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Eine Anleitung finden Sie im Abschnitt "Überwachungsprotokolle" [Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)-Verwaltungsportal.
   
+### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Jahrestag Analytics Aktivitäten
+
+Die folgende Tabelle enthält die Admin und Überwachungsprotokoll Analyst Aktivitäten in Microsoft Jahrestag Analytics, die in der Office 365 angemeldet sind. Jahrestag Analytics stellt einen Einblick in die Zusammenarbeit von Gruppen in der Office 365-Organisation bereit. Weitere Informationen finden Sie unter [Arbeitsplatz Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+
+|**Anzeigename**|**Operation**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Zugegriffen OData-link <br/> |AccessedOdataLink <br/> |Analyst Zugriff auf den OData-Link für eine Abfrage.|
+|Abfrage abgebrochen <br/> |CanceledQuery <br/> |Analyst abgebrochen eine Abfrage ausgeführt wird.|
+|Erstellte Besprechung Ausschluss <br/> |MeetingExclusionCreated <br/> |Erstellt ein neues Analyst meeting Ausschlussregel.|
+|Gelöschte Ergebnis <br/> |DeletedResult <br/> |Analyst gelöscht ein Abfrageergebnisses.|
+|Heruntergeladenen Bericht <br/> |DownloadedReport <br/> |Analyst heruntergeladen eine Abfrage Ergebnisdatei.|
+|Ausgeführte Abfrage <br/> |ExecutedQuery <br/> |Analyst wurde eine Abfrage ausgeführt.|
+|Aktualisierte Datenzugriff festlegen <br/> |UpdatedDataAccessSetting <br/> |Admin aktualisiert die Einstellungen für die Daten.|
+|Aktualisierte für den Datenschutz <br/> |UpdatedPrivacySetting <br/> |Admin aktualisiert datenschutzeinstellungen. beispielsweise minimale Gruppengröße.|
+|Hochgeladenen Unternehmensdaten <br/> |UploadedOrgData <br/> |Admin hochgeladen Unternehmensdaten-Datei.|
+|Angezeigt erkunden <br/> |ViewedExplore <br/> |Analyst Visualisierungen in eine oder mehrere durchsuchen Blattregister angezeigt.|
+||||
+
 ### <a name="microsoft-teams-activities"></a>Microsoft-Teams, Aktivitäten
   
 Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Aktivitäten in Microsoft-Teams, die in der Office 365 angemeldet sind. Microsoft-Teams, ist ein Chat zentriert Arbeitsbereich in Office 365. Es vereint Unterhaltungen, Besprechungen, Dateien und Notizen ein Team in einem einzigen Speicherort. Weitere Informationen und Links zu Themen können finden Sie unter:
@@ -601,6 +632,7 @@ Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Akti
 |Aktualisierte connector  <br/> |ConnectorUpdated  <br/> |Ein Benutzer eine Verbindung in einem Kanal geändert hat.  <br/> |
 |Aktualisierte Registerkarte  <br/> |TabUpdated  <br/> |Ein Benutzer eine Registerkarte in einem Kanal geändert hat.  <br/> |
 |Benutzer angemeldet Teams  <br/> |TeamsSessionStarted  <br/> |Ein Benutzer anmeldet an einen Microsoft-Teams, Client.  <br/> |
+||||
 
 ### <a name="yammer-activities"></a>Yammer-Aktivitäten
   
@@ -625,6 +657,7 @@ Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Akti
 |Aktualisierte DateiBeschreibung  <br/> |FileUpdateDescription  <br/> |Benutzer, ändert die Beschreibung einer Datei.  <br/> |
 |Aktualisierter Dateiname  <br/> |FileUpdateName  <br/> |Benutzer ändert den Namen einer Datei.  <br/> |
 |Angezeigten Datei  <br/> |FileVisited  <br/> |Benutzer zeigt eine Datei.  <br/> |
+||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 

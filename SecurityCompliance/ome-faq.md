@@ -3,7 +3,7 @@ title: FAQ zur Office 365-Nachrichtenverschlüsselung
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2018
+ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Fragen zur Funktionsweise von der neuen Nachricht Schutzfunktionen in Office 365? Überprüfen Sie nach einer Antwort hier.
-ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696269"
+ms.locfileid: "29890036"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ zur Office 365-Nachrichtenverschlüsselung
 
@@ -48,7 +48,7 @@ Sie können die neuen Funktionen für OME unter den folgenden Umständen verwend
 
 Um die neuen OME-Funktionen zu verwenden, benötigen Sie einen der folgenden Pläne:
   
-- Office 365 Message Encryption wird als Teil von Office 365 E3 und E5, Microsoft E3 und E5, Office 365 A1, A3, und A5 und Office 365 G3 und G5 angeboten werden. Kunden benötigen keine zusätzliche Lizenzen die neuen Schutzfunktionen unterstützt von Azure Information Protection empfangen. 
+- Office 365 Message Encryption wird als Teil von Office 365 Enterprise E3 und E5, Microsoft Enterprise E3 und E5, Microsoft 365 Business, Office 365 A1, A3, und A5 und Office 365 Government G3 und G5 angeboten werden. Kunden benötigen keine zusätzliche Lizenzen die neuen Schutzfunktionen unterstützt von Azure Information Protection empfangen. 
     
 - Sie können auch die Azure Informationen Protection Plan 1 die folgenden Pläne erhalten Sie die neuen Funktionen von Office 365 Message Encryption hinzufügen: Exchange Online – Plan 1, Exchange Online – Plan 2, Office 365 F1, Office 365 Business Essentials, Office 365 Business Premium oder Office 365 Enterprise E1.
     
