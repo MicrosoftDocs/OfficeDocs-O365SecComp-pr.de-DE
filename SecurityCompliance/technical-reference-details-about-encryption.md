@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Technische Details zu Verschlüsselung in Office 365 anzeigen.
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326936"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966189"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Technische Details zur Verschlüsselung in Office 365
 
@@ -89,6 +89,9 @@ Starten 1 Dezember 2014 begann Office 365 das Deaktivieren der Unterstützung f�
 <a name="TLSCipherSuites"> </a>
 
 Eine Verschlüsselungssammlung ist eine Sammlung von Verschlüsselungsalgorithmen, die TLS verwendet, um sichere Verbindungen herzustellen. Von Office 365 unterstützte Verschlüsselungssammlungen werden in der folgenden Tabelle nach der Stärke aufgeführt, wobei die stärkste Verschlüsselungssammlung an erster Stelle steht. Wenn Office 365 eine Verbindungsanforderung empfängt, versucht Office 365 zunächst eine Verbindung mithilfe der obersten Verschlüsselungssammlung herzustellen. Falls dies nicht erfolgreich ist, wird die zweite Verschlüsselungssammlung in der Liste verwendet und so weiter. Wenn Office 365 eine Verbindungsanforderung an einen anderen Server oder einen Client sendet, wählt der empfangende Server oder Client die Verschlüsselungssammlung aus oder ob TLS überhaupt verwendet wird.
+
+> [!IMPORTANT]
+> Beachten Sie, das Verwerfen der TLS-Versionen und, die veraltete Versionen *sollte nicht verwendet werden* , auf dem neuere Versionen verfügbar sind. Anders ausgedrückt, überall wo sie diese TLS 1.0 gelistet hat 1.1 und 1.2 werden unterstützt, wählen Sie die *aktuellste* Version (TLS 1.2).
   
 |**Protokolle**|**Name der Verschlüsselungssammlung**|**Schlüsselaustauschalgorithmus/Stärke**|**Unterstützung von Perfect Forward Secrecy**|**Authentifizierungsalgorithmus/Stärke**|**Verschlüsselung/Stärke**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
