@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und bei der Übertragung, mit der stärksten Verschlüsselung, Protokolle und -Technologien verfügbar verschlüsselt. Rufen Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972287"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995106"
 ---
 # <a name="encryption-in-office-365"></a>Verschlüsselung in Office 365
 
@@ -61,7 +61,7 @@ Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
     
 - [Aktivieren der Rechteverwaltung im Office 365 Admin Center](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
-- [Festlegen von Information Rights Management (IRM) im SharePoint Administrationscenter](set-up-irm-in-sp-admin-center.md)
+- [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
     
 ## <a name="how-do-i"></a>Gewusst wie...
 

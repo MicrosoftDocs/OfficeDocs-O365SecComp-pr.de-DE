@@ -3,7 +3,7 @@ title: Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: Erfahren Sie mehr über Explorer (auch als Bedrohung Explorer bezeichnet) in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699928"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995116"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center
 
@@ -27,6 +28,9 @@ Wenn Ihre Organisation über [Office 365 Bedrohungsanalyse](office-365-ti.md)ver
 ![Wechseln Sie zu Threat Management \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Mit Explorer in die Sicherheit &amp; Compliance Center, navigieren Sie zur **Bedrohung Management** \> **Explorer**.
+
+> [!IMPORTANT]
+> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Übersicht über Explorer
 

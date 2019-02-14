@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: Informationen Sie zu Bedrohung Tracker, einschließlich der neuen erwähnenswerte Tracker, mit denen Ihre Organisation auf der Basis von Sicherheitsbedenken bleiben.
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014997"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995306"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
 [Office 365 Bedrohungsanalyse](office-365-ti.md) ermöglicht Ihrer Organisation Security Team, zu ermitteln und Ausführen einer Aktion gegen Bedrohungen für Sicherheit im Internet. Beginnend in Ende März 2018 und in den nächsten Wochen, wird Office 365 Bedrohungsanalyse neue Bedrohung Tracker-Features, einschließlich erwähnenswerte Tracker enthalten. Lesen Sie diesen Artikel, um eine Übersicht über diese neuen Features und die nächsten Schritte zu erhalten. 
+
+> [!IMPORTANT]
+> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Was sind Bedrohung Tracker?
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie die Sicherheit in Office 365 & Compliance Center, um unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890056"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995406"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Sicherheit in Office 365 Compliance Center &
 
@@ -53,9 +53,11 @@ Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt
 - Benutzer- und Admin-Aktivität in Microsoft Flow
     
 - Benutzer- und Admin-Aktivität in Microsoft Stream
+
+- Analyst und Admin-Aktivität in Microsoft Jahrestag Analytics
     
    
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die Office 365 in das Überwachungsprotokoll lesen.
   
@@ -562,7 +564,7 @@ Die folgende Tabelle listet Azure Active Directory Directory und Domänen-bezoge
    
 ### <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
   
-Content-Suche und eDiscovery-bezogene Aktivitäten, die in Office 365-Sicherheit ausgeführt werden &amp; Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets im Überwachungsprotokoll Office 365 angemeldet sind. Dazu gehören die folgenden Aktivitäten:
+Inhaltssuche und eDiscovery-bezogene Aktivitäten, die in Office 365-Sicherheit & Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets ausgeführt werden, werden im Überwachungsprotokoll Office 365 protokolliert. Dazu gehören die folgenden Aktivitäten:
   
 - Erstellen und Verwalten von eDiscovery-Fällen
     
@@ -587,7 +589,7 @@ Beachten Sie, dass die überwachungsprotokollierung für Power BI standardmäßi
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Jahrestag Analytics Aktivitäten
 
-Die folgende Tabelle enthält die Admin und Überwachungsprotokoll Analyst Aktivitäten in Microsoft Jahrestag Analytics, die in der Office 365 angemeldet sind. Jahrestag Analytics stellt einen Einblick in die Zusammenarbeit von Gruppen in der Office 365-Organisation bereit. Weitere Informationen finden Sie unter [Arbeitsplatz Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Jahrestag Analytics stellt einen Einblick in die Zusammenarbeit von Gruppen in der Office 365-Organisation bereit. Die folgende Tabelle enthält die Aktivitäten von Benutzern, die der Administratorrolle oder der Analyst Rollen in Jahrestag Analytics zugewiesen sind. Benutzer der Rolle Analyst haben vollen Zugriff auf alle Funktionen und verwenden Sie das Produkt, um die Analyse durchzuführen. Benutzer zugewiesen sind, die Administratorrolle können Konfigurieren von datenschutzeinstellungen und Systemstandardwerte können vorbereiten, hochladen und Unternehmensdaten in Jahrestag Analytics überprüfen. Weitere Informationen finden Sie unter [Arbeitsplatz Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|

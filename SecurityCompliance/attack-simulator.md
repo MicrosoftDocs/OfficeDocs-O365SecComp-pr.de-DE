@@ -3,7 +3,7 @@ title: Angriffssimulator in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/02/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,17 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.collection:
+- M365-security-compliance
 description: Als globaler Office 365-Administrator können Sie Angriff Simulator realistische Angriff Szenarien in Ihrer Organisation ausführen. Dies hilft Ihnen zu identifizieren und anfällig Benutzer vor ein tatsächlichen Angriff Ihres Unternehmens Treffer zu finden.
-ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 77de6af6546ae584e3bd25c0d1a59d9f26928f33
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015037"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995166"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
 **Zusammenfassung** Wenn Sie ein Office 365 globaler Administrator sind und Ihre Organisation [Office 365 Bedrohungsanalyse verfügt](office-365-ti.md), können Angriff Simulator Sie realistisch Angriff Szenarien in Ihrer Organisation auszuführen. Dies hilft Ihnen zu identifizieren und anfällig Benutzer vor ein tatsächlichen Angriff wirkt sich auf die Ihre bedeutsam zu finden. Lesen Sie diesen Artikel, um mehr zu erfahren.
+
+> [!IMPORTANT]
+> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Die Angriffe
 

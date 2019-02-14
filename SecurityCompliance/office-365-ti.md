@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
+ms.collection: M365-security-compliance
 description: Hier finden Sie heraus, wie Bedrohung BI-Funktionen in erweiterten Schutz können Sie die Recherchieren Gefahren für Ihre Organisation, reagieren Sie auf Schadsoftware, Phishing und andere Angriffe, die Office 365 in Ihrem Auftrag erkannt hat, und suchen Sie nach Bedrohung Indikatoren.
-ms.openlocfilehash: 5dfd0377c4cafe89c5f69ea080f07d04d892329e
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 632a2387e7cb5a30745459383e670d08c9b84aff
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792260"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995096"
 ---
 # <a name="office-365-threat-intelligence"></a>Informationen zu Bedrohungen in Office 365
 

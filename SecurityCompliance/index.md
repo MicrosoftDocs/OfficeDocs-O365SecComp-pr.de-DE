@@ -6,17 +6,18 @@ author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.service: office-365
+ms.collection: M365-security-compliance
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
-ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
+ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27449879"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995176"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365-Sicherheit und Compliance
 
@@ -51,7 +52,7 @@ Wenn Ihre Organisation muss Ihre Daten zu schützen oder rechtliche oder behörd
                     </div>
                     <div class="cardText">
                         <h3>Nächste Schritte in 90 Tage</h3>
-                        <p>Diese Aufgaben erfordern etwas mehr Zeit zum Planen und implementieren, aber Ihre Sicherheitsstatus beträchtlich: <br> - <a href="attack-simulator.md">Angriff mit Simulationen durchführen</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Überprüfung Compliance-Manager</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Konfigurieren der Identitätsverwaltung von Azure privilegierten</a> <br> - <a href="privileged-access-management-configuration.md">Konfigurieren der Verwaltung von Systemzugriff</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Mehrstufige Authentifizierung aktivieren</a> <br> - <a href="protect-against-threats.md">Überprüfen und Update-Richtlinien</a> </p>
+                        <p>Diese Aufgaben erfordern etwas mehr Zeit zum Planen und implementieren, aber Ihre Sicherheitsstatus beträchtlich: <br> - <a href="attack-simulator.md">Angriff mit Simulationen durchführen</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Überprüfung Compliance-Manager</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Konfigurieren der Identitätsverwaltung von Azure privilegierten</a> <br> - <a href="privileged-access-management-configuration.md">Konfigurieren der Verwaltung von Systemzugriff</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Mehrstufige Authentifizierung aktivieren</a> <br> - <a href="protect-against-threats.md">Überprüfen Sie & Update-Richtlinien</a> </p>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@ Wenn Ihre Organisation muss Ihre Daten zu schützen oder rechtliche oder behörd
                     <div class="cardText">
                         <h3>Einhaltung von Richtlinien</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Microsoft Trust Center</a></p>
-                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft-Dienst Vertrauensstellung Portal</a></p>
+                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft Service Trust Portal</a></p>
                     </div>
                 </div>
             </div>

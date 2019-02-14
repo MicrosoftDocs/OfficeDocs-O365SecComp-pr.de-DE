@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
+ms.collection: M365-security-compliance
 description: Beim Einrichten Ihrer ATP sichere Links Richtlinien können Sie eine Not Rewrite einschließen ' Liste der URLs zum Aktivieren von einigen Personen in Ihrer Organisation Websites besuchen, die Sie in der Liste enthalten.
-ms.openlocfilehash: 5eb2d09f1d1d77fa9d6ffdb9f14ba9e7522da287
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755286"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995376"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte-nicht-zum Umschreiben von Adressen URLs-Liste mit sicheren Links zu Office 365 ATP
+
+> [!IMPORTANT]
+> In diesem Artikel wird für Unternehmenskunden vorgesehen. Wenn Sie eine Suche nach Informationen zu sicheren Links in Outlook Privatbenutzer sind, finden Sie unter [Outlook.com erweiterte Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Mit [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP) kann Ihrer Organisation eine [benutzerdefinierte blockierte URLs](set-up-a-custom-blocked-urls-list-wtih-atp.md)so, dass beim Klicken Sie auf Personen Web-Adressen (URLs) in e-Mail-Nachrichten oder bestimmte Office-Dokumente, sie werden daran gehindert unterschiedlich sein und sollte diesen URLs. Ihrer Organisation kann auch benutzerdefinierte "nicht rewrite" Listen für bestimmte Gruppen in Ihrer Organisation haben. Eine Liste "nicht rewrite" kann einige Personen URLs zu besuchen, die andernfalls [ATP sichere](atp-safe-links.md)Links in Office 365 blockiert sind. 
   

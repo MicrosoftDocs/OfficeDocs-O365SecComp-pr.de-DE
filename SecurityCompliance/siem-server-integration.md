@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
+- M365-security-compliance
 description: 'Zusammenfassung: Lesen Sie diesen Artikel, um eine Übersicht über SIEM-Server-Integration in Microsoft 365 erhalten.'
-ms.openlocfilehash: bd512ca6d75928712e3444581a78610a0869123d
-ms.sourcegitcommit: 63ed467fc3e1ab1ab9ee122df97c64737169834e
+ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25842681"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995196"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM-Server-Integration mit Microsoft-365-Diensten und Clientanwendungen
 
@@ -44,7 +45,7 @@ Ein Server SIEM empfangen von Daten aus einer Vielzahl von Microsoft-365-Dienste
 
 Stellen Sie sicher, dass die überwachungsprotokollierung vor dem Konfigurieren der SIEM-Server-Integration aktiviert ist. 
 
-- Für SharePoint Online, OneDrive for Business und Azure Active Directory [überwachungsprotokollierung im Compliance Center & Sicherheit aktiviert ist](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- Für SharePoint Online, OneDrive for Business und Azure Active Directory, [in der & Security Compliance Center überwachungsprotokollierung eingeschaltet ist](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
 
 - Für Exchange Online, [überwachungsprotokollierung mit Windows PowerShell aktiviert ist](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  

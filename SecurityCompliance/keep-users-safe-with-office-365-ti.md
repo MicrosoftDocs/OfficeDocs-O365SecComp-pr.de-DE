@@ -3,7 +3,7 @@ title: Schützen von Office 365-Benutzern mit Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/12/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
+ms.collection: M365-security-compliance
 description: Hier erfahren Sie, wie Office 365 Bedrohungsanalyse Ihrer Organisation Angriffe und Bedrohungen, erkennen und schnell zu mindern und Wiederherstellen von Bedrohungen helfen kann.
-ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706099"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995366"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Schützen von Office 365-Benutzern mit Office 365 Threat Intelligence
 
@@ -27,6 +28,9 @@ ms.locfileid: "26706099"
 Wissen Sie, welche Benutzer Office 365-Angriff erfolgt sind, oder schlechter - gefährdet? Wissen zu mindern und vor Angriffen, auf die Ihre Benutzer abzielen wiederherstellen? Wussten Sie, dass Sie genau mit Sicherheitsfunktionen möglich, die bereits im Office 365 verfügbar sind? 
   
 [Office 365 Bedrohungsanalyse](office-365-ti.md) ist eine Reihe von Funktionen in Ihrem Office 365 E5 Abonnement enthalten. Office 365 Bedrohungsanalyse hat Microsoft IT durchschnittliche Zeit für Social-Engineering Vorfälle um 80 % und höheren Durchsatz Groß-/Kleinschreibung 37 % pro Monat im Vergleich zu den vorherigen 2 Quartale Problembehebung geholfen! 
+
+> [!IMPORTANT]
+> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Wir haben kürzlich neue Funktionen zur Verbesserung von zum Erkennen und Wiederherstellen von Bedrohungen hinzugefügt! Hier ist eine schnelle Einführung in der wie der aktualisierte Bedrohungsanalyse Dienst noch effizienter werden kann.
   

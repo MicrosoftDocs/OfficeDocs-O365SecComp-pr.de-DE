@@ -3,7 +3,7 @@ title: Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
+ms.collection: M365-security-compliance
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 erweiterte Threat Protection in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014947"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995226"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 erweiterte Threat Protection
 
@@ -79,7 +80,6 @@ Wenn Sie über eine Leiste im Diagramm bewegen, können Sie sehen, welche Aktion
 
 Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen verschiedene andere Berichte, wie in der folgenden Tabelle beschrieben:
 
-
 |Berichtstyp  |Weitere Informationen  |
 |---------|---------|
 |**E-Mail-Sicherheitsberichte**wie etwa eine häufigste Absender und Empfänger Bericht, einen Bericht Spoofing Mail und einen Bericht Spamerkennungen. | [Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center](view-email-security-reports.md)        |
@@ -90,14 +90,14 @@ Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen verschie
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Welche Berechtigungen sind erforderlich, damit die ATP-Berichte anzeigen?
 
-Anzeigen und verwenden die Berichte in diesem Artikel beschriebenen **benötigen Sie eine entsprechende Rolle in beiden das Wertpapier zugewiesen &amp; Compliance Center und der Exchange-Verwaltungskonsole**.
+Anzeigen und verwenden die Berichte in diesem Artikel beschriebenen **benötigen Sie eine entsprechende Rolle zugewiesen sind beide Sicherheit &amp; Compliance Center und der Exchange-Verwaltungskonsole**.
 
 - Für die Sicherheit &amp; Compliance Center, benötigen Sie eine der folgenden Rollen zugewiesen:
     - Organisationsverwaltung
-    - Sicherheitsadministrator
+    - Sicherheitsadministrator (Dies kann in der Verwaltungskonsole von Azure Active Directory zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Sicherheit-Reader
 
-- Für Exchange Online müssen Sie eine der folgenden Rollen zugewiesen:
+- Für Exchange Online müssen Sie eine der folgenden Rollen in der Exchange-Verwaltungskonsole zugewiesen haben ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Organisationsverwaltung
     - Organisationsverwaltung mit Leserechten
     - Rolle „Empfänger mit Leserechten“

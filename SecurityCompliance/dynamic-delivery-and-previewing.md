@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
+ms.collection:
+- M365-security-compliance
 description: Wenn Sie Ihre ATP sichere Anlagen Richtlinien eingerichtet haben, wählen Sie dynamische Übermittlung Nachricht Verzögerungen bei der vermieden, und aktivieren Personen für die Vorschau von Anlagen, die gescannt werden.
-ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: ae027986cf5114bd024c679a59975d1e4be52d32
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789463"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995146"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Übermittlung und Anzeigen der Vorschau mit Office 365 ATP sichere Anlagen
 
