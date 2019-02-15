@@ -14,99 +14,99 @@ search.appverid:
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
-description: Informationen Sie zu Office 365 Bedrohungsanalyse und Entwicklersicht.
-ms.openlocfilehash: f4480e6cdf5a845f591ad118858703dee4d4e631
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Erfahren Sie mehr über Office 365 Threat Intelligence und die ersten Schritte.
+ms.openlocfilehash: 6412f575bbe581aa469c7ad615213564b728d0aa
+ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995236"
+ms.locfileid: "30051166"
 ---
-# <a name="get-started-with-office-365-advanced-threat-protection-plan-2-formerly-office-365-threat-intelligence"></a>Erste Schritte mit Office 365 erweiterte Threat Protection Plan 2 (früher Office 365 Bedrohungsanalyse)
+# <a name="get-started-with-threat-intelligence"></a>Erste Schritte mit Threat Intelligence
 
-Wenn Sie in Ihrer Organisation Security Team sind, können Sie Threat Intelligence-Funktionen verwenden, müssen um die Benutzer vor Angriffen zu schützen. Office 365 erweiterte Threat Protection Plan 2 (früher Office 365 Bedrohungsanalyse) erleichtert die Sicherheitsspezialisten und Administratoren Benutzer weiterhin, indem Sie Einblicke in die bubbling und identifizieren Aktion basierend auf was geschieht ihre Office 365-Umgebung. Diese Einblicke basieren auf eine umfassende Sammlung von Threat Intelligence-Daten und Systeme und Spotfarben Muster, die zum Verhalten und verdächtige Aktivitäten Angriff entsprechen.
+Wenn Sie Teil des Sicherheitsteams Ihrer Organisation sind, können Sie mithilfe von Threat Intelligence-Funktionen Ihre Benutzer vor Angriffen schützen. Office 365 Advanced Threat Protection Plan 2 (ehemals Office 365 Threat Intelligence) unterstützt Sicherheitsanalysten und Administratoren bei der Sicherheit von Benutzern, indem Sie Einblicke und die Identifizierung von Aktionen basierend auf den Vorgängen in Ihrer Office 365-Umgebung aufheben. Diese Erkenntnisse basieren auf einem umfassenden Repository von Daten und Systemen zur bedrohungsaufklärung, um Muster zu erkennen, die mit Angriffsverhalten und verdächtigen Aktivitäten übereinstimmen.
   
-Lesen Sie diesen Artikel, um weitere Informationen zu Bedrohungsanalyse und Entwicklersicht.
+In diesem Artikel erfahren Sie mehr über Threat Intelligence und die ersten Schritte.
   
-## <a name="what-is-threat-intelligence"></a>Was ist Bedrohungsanalyse?
+## <a name="what-is-threat-intelligence"></a>Was ist Threat Intelligence?
+
+Threat Intelligence ist eine Sammlung von Einblicken und Informationen, die im Office &amp; 365 Security Compliance Center verfügbar sind. Diese Erkenntnisse helfen dem Sicherheitsteam Ihrer Organisation, Office 365-Benutzer vor Angriffen zu schützen. Threat Intelligence überwacht Signale und erfasst Daten aus verschiedenen Quellen wie Benutzeraktivität, Authentifizierung, e-Mail, kompromittierte PCs und Sicherheitsvorfälle. Geschäftliche Entscheidungsträger und Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheitsanalysten können die Informationen in Office 365 verwenden, die Threat Intelligence bietet, um Bedrohungen für Office 365-Benutzer zu verstehen und darauf zu reagieren. Eigenschaft.
 
 > [!IMPORTANT]
-> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
-
-Bedrohungsanalyse ist eine Auflistung von Informationen zur Verfügung, in die Office 365-Sicherheit und Einblicke in die &amp; Compliance Center. Diese Einblicke helfen Security-Team Ihrer Organisation Office 365-Benutzer vor Angriffen zu schützen. Bedrohungsanalyse Signale überwacht und sammelt Daten aus mehreren Quellen, wie etwa Benutzeraktivität, Authentifizierung, e-Mail, kompromittierten PCs und Sicherheitsvorfälle. Business Decision Makers und globale Office 365-Administratoren, Sicherheitsadministratoren und Sicherheitsspezialisten können alle welche Informationen Bedrohungsanalyse für Office 365 verwenden bereitgestellt werden, um zu verstehen und reagieren auf Bedrohungen für Office 365-Benutzer und geistigen -Eigenschaft.
+> Beginnend im Februar 2019 und über die nächsten Monate hinaus wird Office 365 Threat Intelligence zu Office 365 Advanced Threat Protection Plan 2 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
-## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Lernen Sie die Bedrohung Dashboard, Explorer und Vorfälle
+## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Kennenlernen des Bedrohungs Dashboards, des Explorers und der vorFälle
 
-Verfahren zum Erstellen von Intelligence Flächen in das Wertpapier &amp; Compliance Center als eine Reihe von Tools und Berichte, einschließlich der [Bedrohung Dashboard](get-started-with-ti.md#dashboard), [Threat Explorer](get-started-with-ti.md#explorer)und [Vorfälle](get-started-with-ti.md#incidents).
+Threat Intelligence-Oberflächen im &amp; Security Compliance Center, als eine Reihe von Tools und Berichten, einschließlich des [Bedrohungs Dashboards](get-started-with-ti.md#dashboard), des Bedrohungs- [Explorers](get-started-with-ti.md#explorer)und der Vorfälle. [](get-started-with-ti.md#incidents)
   
-### <a name="threat-dashboard"></a>Bedrohung dashboard
+### <a name="threat-dashboard"></a>Bedrohungs Dashboard
 
-Verwenden des Bedrohung-Dashboards (Dies wird auch als die [Sicherheits-Dashboard](security-dashboard.md)bezeichnet), um schnell herauszufinden, welcher Probleme behoben werden, und als eine Möglichkeit zum Bericht für geschäftliche Entscheidungsträger visuellen wie Office 365-Diensten sind Schutz Ihres Unternehmens.
+Verwenden Sie das Bedrohungs-Dashboard (Dies wird auch als [Sicherheits-Dashboard](security-dashboard.md)bezeichnet), um schnell zu erkennen, welche Bedrohungen adressiert wurden, und als visuelle Möglichkeit, Entscheidungsträgern zu melden, wie Office 365-Dienste Ihr Unternehmen sichern.
   
 ![Threat Intelligence-Dashboard](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-Anzeigen und verwenden das Dashboard in das Wertpapier &amp; Compliance Center, navigieren Sie zur **Bedrohung Management** \> **Dashboard**.
+Um dieses Dashboard anzuzeigen und zu verwenden, navigieren Sie &amp; im Security Compliance Center zu **Threat Management** \> **Dashboard**.
   
-### <a name="threat-explorer"></a>Threat Explorer
+### <a name="threat-explorer"></a>Bedrohungs-Explorer
 
-Verwenden Sie die Bedrohung Explorer (Dies wird auch Explorer bezeichnet) Bedrohungen analysieren, finden Sie unter der Lautstärke des Angriffe über einen Zeitraum und Analysieren von Daten nach Bedrohungsfamilien und Angreifer Infrastruktur. Threat Explorer ist der Ausgangspunkt für alle Security-Analyst Untersuchung Workflow.
+Verwenden Sie den Bedrohungs-Explorer (Dies wird auch als Explorer bezeichnet), um Bedrohungen zu analysieren, die Anzahl der Angriffe über die Zeit zu erkennen und Daten nach Bedrohungs Familien, der Angreifer-Infrastruktur und mehr zu analysieren. Der Bedrohungs-Explorer ist der Ausgangspunkt für den Untersuchungs Workflow eines Sicherheitsanalysten.
   
-![Threat explorer](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Bedrohungs-Explorer](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-Anzeigen und verwenden diesen Bericht in das Wertpapier &amp; Compliance Center, navigieren Sie zur **Bedrohung Management** \> **Explorer**.
+Um diesen Bericht anzuzeigen und zu verwenden, navigieren Sie &amp; im Security Compliance Center zu **Threat Management** \> **Explorer**.
   
  ### <a name="incidents"></a>Vorfälle
 
-Verwenden Sie die Vorfälle-Liste (Dies wird auch Untersuchungen bezeichnet), um eine Liste der im Flug Sicherheitsvorfälle finden Sie unter. Vorfälle dienen zum Nachverfolgen von Bedrohungen wie verdächtigen e-Mails und weiteren Untersuchung und-Wartung durchführen.
+Verwenden Sie die Liste vorFälle (Dies wird auch als Ermittlungen bezeichnet), um eine Liste der Sicherheitsvorfälle in Flugsicherheit anzuzeigen. VorFälle werden verwendet, um Bedrohungen wie verdächtige e-Mail-Nachrichten nachzuverfolgen und weitere Untersuchungen und Korrekturen durchzuführen.
   
-![Liste der aktuellen Vorfälle in Office 365 Bedrohungsanalyse](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Liste der aktuellen vorFälle in Office 365 Threat Intelligence](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
-Zum Anzeigen der Liste der aktuellen Vorfälle für Ihre Organisation in das Wertpapier &amp; Compliance Center, navigieren Sie zur **Bedrohung Management** \> **Überprüfung** \> **Vorfälle**.
+Um die Liste der aktuellen Vorfälle für Ihre Organisation anzuzeigen, wechseln Sie &amp; im Security Compliance Center zu " **Threat Management** \> **Review** \> **Incidents**".
   
-![In das Wertpapier &amp; Compliance Center, wählen Sie Threat Management \> überprüfen](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![Wählen Sie im &amp; Security Compliance Center Überprüfung der \> Bedrohungs Verwaltung aus.](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
   
-## <a name="learn-more-about-malware-amp-threats"></a>Erfahren Sie mehr über Malware &amp; Bedrohungen
+## <a name="learn-more-about-malware-amp-threats"></a>Weitere Informationen zu Malware &amp; Bedrohungen
 
-Als Bestandteil der Office 365 erweiterte Threat Protection Plan 2 Angebot können Sicherheitsspezialisten Details über eine bekannte Bedrohung zu prüfen. Dies ist nützlich, um festzustellen, ob es weitere Schritte zur Vorbeugung Measures /, die ausgeführt werden kann sind, um Benutzer zu schützen.
+Als Teil des Angebots von Office 365 Advanced Threat Protection-Plan 2 können Sicherheitsanalysten Details zu einer bekannten Bedrohung überwachen. Dies ist hilfreich, um festzustellen, ob zusätzliche vorbeugende Maßnahmen/Schritte erforderlich sind, um die Benutzer zu schützen.
   
-![Zeigt Informationen zu letzte Bedrohungen für Sicherheit Trends](media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
+![Sicherheits Trends mit Informationen zu aktuellen Bedrohungen](media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
-## <a name="how-do-we-get-threat-intelligence"></a>Wie können erhalten wir Bedrohungsanalyse?
+## <a name="how-do-we-get-threat-intelligence"></a>Wie erhalten wir Threat Intelligence?
 
-**Bedrohungsanalyse ist jetzt Teil in Office 365 erweiterte Threat Protection Plan 2**, was ist enthalten in in bestimmten Abonnements, wie [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5 Office 365 Education A5 usw. Wenn Ihre Organisation ein Abonnement, die nicht in Office 365 ATP enthalten ist verfügt, können Sie potenziell ATP als Add-on erwerben. Weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).
+**Threat Intelligence ist jetzt Bestandteil von in office 365 Advanced Threat Protection Plan 2**, der in bestimmten Abonnements enthalten ist, beispielsweise [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education A5 usw. Wenn Ihre Organisation über ein Abonnement verfügt, das nicht Office 365 ATP umfasst, können Sie möglicherweise ATP als Add-on erwerben. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).
   
-1. Als ein globaler Office 365-Administrator, wechseln Sie zur [https://portal.office.com](https://portal.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. 
+1. Wechseln Sie als globaler Office 365-Administrator zu [https://portal.office.com](https://portal.office.com) und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. 
     
-2. Wählen Sie **Admin** \> **Abrechnung** sehen, was Ihr aktuelle Abonnement enthält. 
+2. Wählen Sie **Administrator** \> **Abrechnung** aus, um zu sehen, was Ihr aktuelles Abonnement enthält. 
 
-    - Wenn Sie **Office 365 Enterprise E5**angezeigt wird, hat Ihre Organisation Office 365 erweiterte Threat Protection Plan 2, die Bedrohungsanalyse enthält. 
-    - Wenn Sie ein anderes Abonnement, wie **Office 365 Enterprise E3** oder **Office 365 Enterprise E1**, finden Sie unter erwägen Sie erweiterte Threat Protection Plan 2. (Klicken Sie dazu wählen Sie **+ Abonnement hinzufügen**aus.)
+    - Wenn Sie **office 365 Enterprise E5**sehen, verfügt Ihre Organisation über Office 365 Advanced Threat Protection Plan 2, der Threat Intelligence umfasst. 
+    - Wenn ein anderes Abonnement angezeigt wird, beispielsweise **office 365 Enterprise E3** oder **Office 365 Enterprise E1**, empfiehlt es sich, Advanced Threat Protection Plan 2 hinzuzufügen. (Klicken Sie dazu auf **+ Abonnement hinzufügen**.)
     
-3. Wählen Sie im Office 365 Administrationscenter **Benutzer** \> **aktive Benutzer**.
+3. wählen sie im Office 365 admin center die option **users** \> **Active users**aus.
     
-5. Alle aktiven Benutzer Office 365 erweiterte Threat Protection-Lizenzen zuweisen. (Nur Benutzer, die eine Lizenz für Threat Intelligence-Funktionen können werden in Berichte wie etwa Explorer angezeigt wird.)
+5. Zuweisen von Office 365 Advanced Threat Protection-Lizenzen für alle aktiven Benutzer. (Nur Benutzer, die über eine Lizenz für Threat Intelligence-Funktionen verfügen, werden in Berichten wie Explorer angezeigt.)
     
-6. Zuweisen von Rollen an Personen in Ihrer Organisation, die mit Office 365 erweiterte Threat Protection arbeitet. Finden Sie unter [Gewähren des Zugriffs auf die Office 365-Sicherheit &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md), und in der folgenden Tabelle finden Sie unter:
+6. Weisen Sie Personen in Ihrer Organisation Rollen zu, die mit dem Office 365 Advanced Threat Protection arbeiten. Weitere Informationen finden Sie unter [Gewähren von Benutzern Zugriff &amp; auf das Office 365 Security Compliance Center](grant-access-to-the-security-and-compliance-center.md)und in der folgenden Tabelle:
     
 |||
 |:-----|:-----|
-|**Diese Aktivität ausführen...** <br/> |**Sie müssen eine der folgenden Rollen verfügen** <br/> |
-|Verwenden Sie das Dashboard Bedrohung (oder das neue [Dashboard Sicherheit](security-dashboard.md))  <br/> Anzeigen von Informationen über kürzlich geführten oder aktuellen Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in der Verwaltungskonsole von Azure Active Directory zugewiesen)  <br/> Sicherheit-Reader (in der Verwaltungskonsole von Azure Active Directory zugewiesen)  <br/> |
-|Verwenden Sie Threat Explorer (auch als Explorer bezeichnet)  <br/> Analysieren der Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Vorfälle anzeigen (auch als Untersuchungen bezeichnet) <br/> E-Mail-Nachrichten auf einen Vorfall hinzufügen  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Sicherheit Leser (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Trigger-e-Mail-Aktionen in einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mails  <br/> |Office 365 globaler Administrator oder Sicherheitsadministrator  <br/> Eine der oben genannten Funktionen und suchen und löschen (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> |
-|Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection  <br/> Integrieren von Office 365 Bedrohungsanalyse mit einem SIEM-server  <br/> |Office 365 globaler Administrator  <br/> Sicherheitsadministrator (in das Wertpapier zugewiesen &amp; Compliance Center)  <br/> Entsprechende Rolle zugewiesen in zusätzliche Applications (wie Windows Defender erweiterte Threat Protection-Portal oder einem Server SIEM)  <br/> |
+|**So machen Sie diese Aktivität...** <br/> |**Sie müssen eine dieser Rollen haben.** <br/> |
+|Verwenden des Bedrohungs-Dashboards (oder des neuen [Sicherheits Dashboards](security-dashboard.md))  <br/> Anzeigen von Informationen zu letzten oder aktuellen Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (zugewiesen im Azure Active Directory Admin Center)  <br/> Sicherheits Leser (zugewiesen im Azure Active Directory Admin Center)  <br/> |
+|Verwenden des Bedrohungs-Explorers (auch als Explorer bezeichnet)  <br/> Analysieren von Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Sicherheits Leser (im Security &amp; Compliance Center zugewiesen)  <br/> |
+|Anzeigen von vorFällen (auch als Untersuchungen bezeichnet) <br/> Hinzufügen von e-Mail-Nachrichten zu einem Vorfall  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Sicherheits Leser (im Security &amp; Compliance Center zugewiesen)  <br/> |
+|Auslösen von e-Mail-Aktionen bei einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mail-Nachrichten  <br/> |Office 365 globaler Administrator oder Sicherheitsadministrator  <br/> Eine der oben genannten Rollen und suchen und löschen (zugewiesen im Security &amp; Compliance Center)  <br/> |
+|Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection  <br/> Integrieren von Office 365 Threat Intelligence mit einem SIEM-Server  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Entsprechende Rolle in zusätzlichen Anwendungen (beispielsweise Windows Defender Advanced Threat Protection-Portal oder SIEM-Server)  <br/> |
    
-Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Erfahren Sie mehr über Bedrohung Tracker - neue und erwähnenswerte](threat-trackers.md)
+- [Informationen zu Threat Tracker – neu und bemerkenswert](threat-trackers.md)
     
-- [Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde](investigate-malicious-email-that-was-delivered.md)
+- [Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Intelligence)](investigate-malicious-email-that-was-delivered.md)
     
 - [Integrieren von Office 365 Threat Intelligence in Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
     
-- [Erfahren Sie mehr über Angriff Simulator](attack-simulator.md)
+- [Informationen zu anGriffs Simulator](attack-simulator.md)
   
 
