@@ -1,5 +1,5 @@
 ---
-title: Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
+title: Verwenden von DKIM für e-Mails in Ihrer benutzerdefinierten Domäne in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a076e70b72711d1b812ffb0d30fba0ffb322d6b7
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696332"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29954258"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
- **Zusammenfassung:** Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden. 
+ **Zusammenfassung:** In diesem Artikel wird beschrieben, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-e-Mail-Systeme Nachrichten Vertrauen, die von Ihrer benutzerdefinierten Domäne ausgehen. 
   
 Sie sollten DKIM zusätzlich zu SPF und DMARC verwenden, um zu verhindern, dass Spoofers Nachrichten senden, die aussehen, als würden sie von Ihrer Domäne stammen. Mit DKIM können Sie E-Mail-Nachrichten in der Kopfzeile der Nachricht eine digitale Signatur hinzufügen. Klingt kompliziert, ist es aber nicht. Wenn Sie DKIM konfigurieren, autorisieren Sie Ihre Domäne mithilfe der kryptografischen Authentifizierung, ihren Namen mit einer E-Mail-Nachricht zu verknüpfen oder zu signieren. E-Mail-Systeme, die E-Mails von Ihrer Domäne empfangen, können diese digitale Signatur verwenden, um zu ermitteln, ob eingehende E-Mails legitim sind.
   
@@ -85,10 +85,10 @@ Für jede Domäne, für die Sie eine DKIM-Signatur in DNS hinzufügen möchten, 
   
  Office 365 führt die automatische Schlüsselrotation unter Verwendung der beiden eingerichteten Datensätze durch. Wenn Sie neben der ersten Domäne zusätzliche benutzerdefinierte Domänen in Office 365 bereitgestellt haben, müssen Sie zwei CNAME-Einträge für jede zusätzliche Domäne veröffentlichen. Wenn Sie also zwei Domänen haben, müssen Sie zwei zusätzliche CNAME-Einträge veröffentlichen usw.
   
-Verwenden Sie das folgende Format für CNAME-Einträge.
+Verwenden Sie das folgende Format für die CNAME-Einträge.
 
 > [!IMPORTANT]
-> Wenn Sie eine hohe GCC Kunden sind, berechnen wir unterschiedlich _DomainGuid_ ! Anstelle von Nachschlagen des MX-Eintrags für Ihre _InitialDomain_ _DomainGuid_berechnet, berechnen stattdessen wir es direkt aus der benutzerdefinierten Domäne. Beispielsweise wenn Ihre benutzerdefinierte Domäne "contoso.com" ist Ihre DomainGuid wird "Contoso-com", alle Zeiträume werden mit einem Gedankenstrich ersetzt. Ja, unabhängig davon welche MX-Eintrag Ihrer InitialDomain verweist, immer die oben genannten-Methode verwenden Sie zum Berechnen der DomainGuid in die CNAME-Einträge verwenden.
+> Wenn Sie einer unserer GCC-High-Kunden sind, berechnen wir _domainGuid_ unterschiedlich! Anstatt den MX-Eintrag für Ihre _initialDomain_ zum Berechnen von _domainGuid_zu suchen, berechnen wir Sie direkt aus der angepassten Domäne. Wenn Ihre angepasste Domäne beispielsweise "contoso.com" ist, wird Ihr domainGuid zu "contoso-com", und alle Zeiträume werden durch einen Strich ersetzt. Unabhängig davon, auf welchen MX-Eintrag Ihr initialDomain verweist, verwenden Sie daher immer die obige Methode, um die domainGuid zu berechnen, die in Ihren CNAME-Datensätzen verwendet werden soll.
 
   
 ```
@@ -105,13 +105,13 @@ Dabei gilt Folgendes:
   
 - Für Office 365 sind die Selektoren immer „selector1" oder „selector2". 
     
-- _DomainGUID_ ist identisch mit der _DomainGUID_ des angepassten MX-Eintrags für Ihre benutzerdefinierte Domäne, die vor dem mail.protection.outlook.com angezeigt wird. In den folgenden MX-Eintrag für die Domäne "contoso.com" wird die _DomainGUID_ beispielsweise Contoso-com: 
+- _domainGUID_ ist identisch mit der _domainGUID_ im angepassten MX-Eintrag für Ihre benutzerdefinierte domäne, die vor Mail.Protection.Outlook.com angezeigt wird. Im folgenden MX-Eintrag für die Domäne contoso.com ist der _domainGUID_ beispielsweise contoso-com: 
     
     ```
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _InitialDomain_ ist die Domäne, die Sie verwendet, wenn Sie sich für Office 365 haben angemeldet. Anfängliche Domänen enden immer "onmicrosoft.com" dargestellt. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ ist die Domäne, die Sie bei der Registrierung für Office 365 verwendet haben. Anfängliche Domänen enden immer in onmicrosoft.com. Informationen zum Ermitteln Ihrer anfänglichen Domäne finden Sie unter [Domains FAQ](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Wenn Sie beispielsweise als erste Domäne „cohovineyardandwinery.onmicrosoft.com" und zwei benutzerdefinierte Domänen „cohovineyard.com" und „cohowinery.com" haben, müssten Sie zwei CNAME-Einträge für jede zusätzliche Domäne einrichten, also insgesamt vier CNAME-Einträge.
   
@@ -160,7 +160,7 @@ Nachdem Sie die CNAME-Einträge im DNS veröffentlicht haben, können Sie die DK
     New-DkimSigningConfig -DomainName <domain> -Enabled $true
     ```
 
-   Wobei _Domäne_ der Name der benutzerdefinierten Domäne ist, die Sie mit DKIM Signieren für aktivieren möchten. 
+   Dabei ist _Domain_ der Name der benutzerdefinierten Domäne, für die Sie die DKIM-Signierung aktivieren möchten. 
     
    Beispiel für die Domäne „contoso.com":
     
@@ -249,7 +249,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-In diesem Beispiel enthalten den Hostnamen und die Domäne der Werte, die auf denen der CNAME-Eintrag zeigen würde, wenn vom Domänenadministrator für fabrikam.com DKIM Signieren aktiviert wurde. Schließlich wird jede einzelne Nachricht, die von Office 365 gesendet DKIM signiert werden. Wenn Sie DKIM selbst aktivieren, wird die Domäne sein identisch mit der Domäne in der From: Adresse im in Groß-/Kleinschreibung fabrikam.com. Wenn dies nicht der Fall, wird keine Ausrichtung und wird stattdessen die erste Domäne Ihrer Organisation verwenden. Informationen zu Ihrer ursprüngliche Domäne ermitteln finden Sie unter [Häufig gestellte Fragen zu Domänen](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+In diesem Beispiel enthalten der Hostname und die Domäne die Werte, auf die der CNAME verweisen würde, wenn die DKIM-Signierung für fabrikam.com vom Domänenadministrator aktiviert wurde. Schließlich wird jede einzelne Nachricht, die von Office 365 gesendet wird, DKIM-signiert. Wenn Sie DKIM selbst aktivieren, ist die Domäne identisch mit der Domäne in der von:-Adresse, in diesem Fall fabrikam.com. Wenn dies nicht der Fall ist, wird die ursprüngliche Domäne Ihrer Organisation nicht ausgerichtet und stattdessen verwendet. Informationen zum Ermitteln Ihrer anfänglichen Domäne finden Sie unter [Domains FAQ](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Einrichten von DKIM, damit ein Drittanbieterdienst E-Mails im Auftrag Ihrer benutzerdefinierten Domäne senden oder fälschen kann
 <a name="SetUp3rdPartyspoof"> </a>
@@ -277,11 +277,11 @@ In diesem Beispiel sind zu diesem Zweck die folgenden Schritte erforderlich:
     
     Absender @**contoso.com**
     
-    d =**"contoso.com"**
+    d =**contoso.com**
     
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Nächste Schritte: Nach dem Einrichten von DKIM für Office 365
 <a name="DKIMNextSteps"> </a>
 
-Obwohl DKIM entwickelt wurde, um zu verhindern, spoofing, funktioniert DKIM besser mit SPF und DMARC. Nachdem Sie DKIM, eingerichtet haben, wenn Sie nicht bereits SPF eingerichtet haben, sollten Sie dies tun. Eine kurze Einführung in SPF und erhalten sie schnell konfiguriert finden Sie unter [Einrichten von SPF in Office 365, um spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Ausführlichere Informationen zu der Verwendung von Office 365 SPF oder zur Problembehandlung oder nicht standardmäßigen Bereitstellungen wie hybridbereitstellungen beginnen Sie mit [wie Office 365 verwendet Sender Policy Framework (SPF), um spoofing zu verhindern](how-office-365-uses-spf-to-prevent-spoofing.md). Im nächsten Schritt finden Sie unter [Verwendung von DMARC zum Überprüfen von e-Mail in Office 365](use-dmarc-to-validate-email.md). [Anti-Spam Message Headers](anti-spam-message-headers.md) enthält die Syntax und Header-Felder, die von Office 365 für DKIM Prüfungen verwendet wird. 
+DKIM dient zwar zur Verhinderung von Spoofing, funktioniert aber besser mit SPF und DMARC. Nachdem Sie DKIM eingerichtet haben, sollten Sie den SPF-Wert nicht bereits eingerichtet haben. Eine kurze Einführung in SPF und eine schnelle Konfiguration finden Sie unter [Set up SPF in Office 365, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Ein tieferes Verständnis dafür, wie Office 365 SPF verwendet, oder für die Problembehandlung oder nicht standardmäßige Bereitstellungen wie hybridbereitstellungen, beginnen Sie mit der [Verwendung von Sender Policy Framework (SPF) durch office 365, um Spoofing zu verhindern](how-office-365-uses-spf-to-prevent-spoofing.md). Weitere Informationen finden Sie unter [Verwenden von DMARC zum Überprüfen von e-Mails in Office 365](use-dmarc-to-validate-email.md). [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md) umfasst die Syntax-und Kopfzeilenfelder, die von Office 365 für DKIM-Prüfungen verwendet werden. 
   
 

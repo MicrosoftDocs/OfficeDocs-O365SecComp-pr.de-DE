@@ -1,9 +1,8 @@
 ---
 title: Office 365-Verschlüsselung für Daten während der Übertragung
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,34 +10,34 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 'Zusammenfassung: Eine kurze Erläuterung der wie Microsoft Daten während der Übertragung verschlüsselt.'
-ms.openlocfilehash: 8f4781cf1127fb1b6bf742c267c76e3df39b8209
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Zusammenfassung: eine kurze Erläuterung, wie Microsoft Daten während der Übertragung verschlüsselt.'
+ms.openlocfilehash: fcb93bdda792a174c00bc5b2fc2153faeb049465
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528905"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664151"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365-Verschlüsselung für Daten während der Übertragung
 
-Zusätzlich zum Schutz von Kundendaten im Ruhezustand verwendet Microsoft-verschlüsselungstechnologien um zu Office 365-Kundendaten während der Übertragung zu schützen. 
+Zusätzlich zum Schutz von Kundendaten im Ruhezustand verwendet Microsoft Verschlüsselungstechnologien, um Office 365-Kundendaten während der Übertragung zu schützen. 
 
-Daten werden während der Übertragung:
-- Bei ein Clientcomputer mit einem Office 365-Server kommuniziert.
-- Wenn ein Office 365-Server mit einem anderen Office 365-Server kommuniziert. und
-- Wenn ein Office 365-Server mit einem nicht - Office 365-Server (z. B. Versendung e-Mails an einen fremden e-Mail-Server Exchange Online) kommuniziert.
+Die Daten werden übermittelt:
+- Wenn ein Clientcomputer mit einem Office 365-Server kommuniziert;
+- Wenn ein Office 365-Server mit einem anderen Office 365-Server kommuniziert; und
+- Wenn ein Office 365-Server mit einem nicht-Office 365-Server kommuniziert (beispielsweise Exchange Online, der e-Mails an einen fremden e-Mail-Server zustellt).
 
-Inter-Datacenter-Kommunikation zwischen Office 365-Servern erfolgt über TLS oder IPsec und alle Kunden auszufüllende Server eine sichere Sitzung mit TLS mit Clientcomputern Aushandeln (z. B. Exchange Online verwendet TLS 1.2 mit Stärke 256-Bit-Verschlüsselung wird verwendet (FIPS 140-2-Ebene 2 überprüft). (Siehe [technische Details über die Verschlüsselung in Office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) für eine Liste der TLS-Verschlüsselung-Versionen von Office 365 unterstützt.) Dies gilt für die Protokolle, die von den Clients wie Outlook, Skype für Unternehmen und Outlook im Web (z. B. HTTP, POP3, usw.) verwendet werden.
+Die Kommunikation zwischen Datencentern zwischen Office 365-Servern erfolgt über TLS oder IPsec, und alle kundenorientierten Server verhandeln eine sichere Sitzung mit TLS mit Clientcomputern (beispielsweise verwendet Exchange Online TLS 1,2 mit 256-Bit-Verschlüsselungsstärke wird verwendet (FIPS 140-2 Level 2-validiert). (Siehe [technische Referenzdetails zur Verschlüsselung in office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) für eine Liste der von Office 365 unterstützten TLS-Verschlüsselungs Pakete.) Dies gilt für die Protokolle, die von Clients wie Outlook, Skype for Business und Outlook im Web (beispielsweise HTTP, POP3 usw.) verwendet werden.
 
-Öffentliche Zertifikate werden von Microsoft IT SSL ausgestellt von SSLAdmin, ein internes Microsoft-Tool zum Schutz Vertraulichkeit der übertragenen Informationen. Alle von Microsoft IT ausgestellten Zertifikate müssen mindestens 2.048 Bit lang Länge und [Webtrust](http://www.webtrust.org/homepage-documents/item70372.pdf) Compliance erfordert SSLAdmin, um sicherzustellen, dass nur für öffentliche IP-Adressen im Besitz von Microsoft Zertifikate ausgestellt werden. IP-Adressen, für die dieses Kriterium erfüllen, werden durch ein Prozess, der Ausnahme weitergeleitet.
+Die öffentlichen Zertifikate werden von Microsoft IT SSL mithilfe von SSLAdmin, einem internen Microsoft-Tool zum Schutz der Vertraulichkeit von übermittelten Informationen, ausgegeben. Alle von Microsoft ausgegebenen Zertifikate haben ein Minimum von 2048 Bit Länge, und [](http://www.webtrust.org/homepage-documents/item70372.pdf) die WebTrust-Compliance erfordert SSLAdmin, um sicherzustellen, dass Zertifikate nur für öffentliche IP-Adressen ausgestellt werden, die im Besitz von Microsoft sind. Alle IP-Adressen, die dieses Kriterium nicht erfüllen, werden durch einen Ausnahme Prozess weitergeleitet.
 
-Alle Details der Implementierung wie die Version von TLS verwendet wird, ob Forward Secrecy (EA) aktiviert ist, die Reihenfolge der Verschlüsselungsanbieter-Suites usw., sind öffentlich verfügbar. Eine Möglichkeit, diese Informationen finden Sie unter ist die Verwendung eine Drittanbieter-Website, wie etwa Qualys SSL Labs (www.ssllabs.com). Im folgenden finden Sie die Links zu automatisierten Testseiten aus Qualys, die Informationen für die folgenden Dienste an:
+Alle Implementierungsdetails wie die verwendete TLS-Version, ob das Forward-Geheimhaltungsverfahren (FS) aktiviert ist, die Reihenfolge der Verschlüsselungs Pakete usw. sind öffentlich verfügbar. Eine Möglichkeit, diese Details anzuzeigen, ist die Verwendung einer Drittanbieterwebsite wie Qualys SSL Labs (www.ssllabs.com). Nachfolgend finden Sie die Links zu automatisierten Testseiten von Qualys, die Informationen für die folgenden Dienste anzeigen:
 - [Office 365-Portal](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
-- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
-- [Skype für Unternehmen (SIP)](https://www.ssllabs.com/ssltest/analyze.html?d=sipdir.online.lync.com)
-- [Skype für Unternehmen (Web)](https://www.ssllabs.com/ssltest/analyze.html?d=webdir.online.lync.com&hideResults=on)
+- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
+- [Skype for Business (SIP)](https://www.ssllabs.com/ssltest/analyze.html?d=sipdir.online.lync.com)
+- [Skype for Business (Web)](https://www.ssllabs.com/ssltest/analyze.html?d=webdir.online.lync.com&hideResults=on)
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)
 - [Microsoft Teams](https://www.ssllabs.com/ssltest/analyze.html?d=teams.microsoft.com&latest)
 
-Für Exchange Online Protection unterscheiden sich von Mandanten Namen URLs. alle Kunden können jedoch Office 365 mit **Microsoft-com.mail.protection.outlook.com**testen.
+Für Exchange Online Protection variieren URLs nach Mandantennamen; Allerdings können alle Kunden Office 365 mit **Microsoft-com.Mail.Protection.Outlook.com**testen.
