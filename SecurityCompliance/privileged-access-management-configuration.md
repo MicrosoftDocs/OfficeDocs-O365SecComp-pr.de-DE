@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Systemzugriff Management in Office 365
+title: Konfigurieren von privileged Access Management in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,84 +9,86 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.custom: Ent_Solutions
 ms.assetid: ''
-description: Verwenden Sie in diesem Thema, um weitere Informationen zum Konfigurieren der Systemzugriff Management in Office 365
-ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: In diesem Thema erfahren Sie mehr über das Konfigurieren von privileged Access Management in Office 365
+ms.openlocfilehash: 63780da59afb245b35916a1e7a5b2eb780d535a8
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522256"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090917"
 ---
-# <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von Systemzugriff Management in Office 365
+# <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von privileged Access Management in Office 365
 
 > [!IMPORTANT]
-> In diesem Thema werden die Hinweise zur Bereitstellung und Konfiguration für derzeit nur in Office 365 E5 und erweiterte Compliance-SKUs verfügbaren Features behandelt.
+> Dieses Thema enthält Informationen zur Bereitstellung und Konfiguration von Features, die derzeit nur in Office 365 E5 und Advanced Compliance-SKUs verfügbar sind.
 
-In diesem Thema führt Sie durch Aktivieren und Konfigurieren von Systemzugriff Management in Office 365-Organisation. Sie können Microsoft 365 Admin Center oder Exchange Management PowerShell verwenden, verwalten und Systemzugriff verwenden. 
+In diesem Thema erfahren Sie, wie Sie die privilegierte Zugriffsverwaltung in Ihrer Office 365-Organisation aktivieren und konfigurieren. Sie können entweder das Microsoft 365 Admin Center oder die Exchange-Verwaltungs-PowerShell verwenden, um den privilegierten Zugriff zu verwalten und zu verwenden. 
 
-## <a name="enable-and-configure-privileged-access-management"></a>Aktivieren und Konfigurieren der Verwaltung von Systemzugriff
+## <a name="enable-and-configure-privileged-access-management"></a>Aktivieren und Konfigurieren der Verwaltung privilegierter Zugriffsrechte
 
-Führen Sie diese Schritte zum Einrichten und Verwenden von Systemzugriff in Office 365-Organisation aus:
+Führen Sie die folgenden Schritte aus, um den privilegierten Zugriff in Ihrer Office 365-Organisation einzurichten und zu verwenden:
 
-- [Schritt 1: Erstellen einer genehmigenden Person Gruppe](privileged-access-management-configuration.md#step1)
+- [Schritt 1: Erstellen der Gruppe einer genehmigenden Person](privileged-access-management-configuration.md#step1)
 
-    Bevor Sie mit Berechtigung Access beginnen, bestimmen Sie die Genehmigungsberechtigung für eingehende Anforderungen für den Zugriff auf Aufgaben mit erhöhten Rechten und Berechtigungen besitzen. Jeder Benutzer, der Teil der Gruppe der genehmigenden Personen ist werden Genehmigen von zugriffsanforderungen. Dies ist aktiviert, indem Sie eine e-Mail-aktivierte Sicherheitsgruppe in Office 365 erstellen.
+    Bevor Sie mit dem Verwenden von Berechtigungszugriff beginnen, bestimmen Sie, wer über Genehmigungsautorität für eingehende Anforderungen für den Zugriff auf erhöhte und privilegierte Aufgaben verfügt. Jeder Benutzer, der Teil der Gruppe der genehmigenden Personen ist, kann Zugriffsanforderungen genehmigen. Dies wird durch das Erstellen einer e-Mail-aktivierten Sicherheitsgruppe in Office 365 aktiviert.
 
-- [Schritt 2: Aktivieren von Systemzugriff](privileged-access-management-configuration.md#step2)
+- [Schritt 2: Aktivieren des privilegierten Zugriffs](privileged-access-management-configuration.md#step2)
 
-    Systemzugriff muss explizit aktiviert werden in Office 365 mit der Standardgruppe genehmigende Person und einschließlich einer Reihe von Systemkonten, die Sie aus der Systemzugriff Management Zugriffssteuerung ausgeschlossen werden möchten.
+    Privilegierter Zugriff muss explizit in Office 365 mit der standardmäßigen genehmigenden Gruppe aktiviert werden und eine Reihe von Systemkonten enthalten, die Sie aus der Zugriffssteuerung für die privilegierte Zugriffsverwaltung ausschließen möchten.
 
-- [Schritt 3: Erstellen einer Richtlinie für den Zugriff](privileged-access-management-configuration.md#step3)
+- [Schritt 3: Erstellen einer Zugriffsrichtlinie](privileged-access-management-configuration.md#step3)
 
-    Erstellen einer Richtlinie für die Genehmigung können Sie die Genehmigung von bestimmten Anforderungen an einzelne Aufgaben bezogenen definieren. Die Typ von Genehmigungsoptionen werden **automatisch** oder **manuell**.
+    Durch das Erstellen einer Genehmigungsrichtlinie können Sie die spezifischen Genehmigungsanforderungen für einzelne Aufgaben definieren. Die Optionen für den Genehmigungs sind **automatisch** oder **manuell**.
 
-- [Schritt 4: Genehmigen Sie Systemzugriff Anforderungen übermitteln /](privileged-access-management-configuration.md#step4)
+- [Schritt 4: überMitteln/genehmigen von privilegierten Zugriffsanforderungen](privileged-access-management-configuration.md#step4)
 
-    Aktiviert, privilegierten Zugriff erfordert Genehmigungen für das Ausführen aller Aufgaben, die eine Genehmigung zugeordnete Richtlinie definiert wurde. Benutzer müssen zum Ausführen von Aufgaben, die eine Genehmigung Richtlinie müssen anfordern und zugriffsgenehmigung, um die erforderlichen Berechtigungen zum Ausführen der Aufgabe lassen erteilt werden.
+    Nach der Aktivierung erfordert der privilegierte Zugriff Genehmigungen für die Ausführung von Aufgaben, für die eine zugehörige Genehmigungsrichtlinie definiert ist. Benutzer, die Aufgaben ausführen müssen, die in der Genehmigungsrichtlinie enthalten sind, müssen die Zugriffsgenehmigung anfordern und erhalten, um die zum Ausführen der Aufgabe erforderlichen Berechtigungen zu erhalten.
 
-Nachdem die Zustimmung eingeholt wurde, der anfordernde Benutzer kann den beabsichtigten Vorgang ausführen und Systemzugriff autorisieren und Ausführen die Aufgabe im Auftrag eines Benutzers wird. Die Genehmigung bleibt gültig für den angeforderten Dauer (Dauer der Standardwert lautet 4 Stunden), in dem die anfordernde Person die vorgesehene Aufgabe mehrmals führen kann. Alle solchen Ausführungen sind angemeldet und für Sicherheit und Compliance Überwachung zur Verfügung gestellt. 
+Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgesehene Aufgabe ausführen, und der privilegierte Zugriff autorisiert und führt die Aufgabe im Namen der Benutzer aus. Die Genehmigung bleibt für die angeforderte Dauer (Standarddauer 4 Stunden) gültig, während der der anfordernde die vorgesehene Aufgabe mehrmals ausführen kann. Alle derartigen Ausführungen werden protokolliert und für die Sicherheits-und Konformitätsüberwachung zur Verfügung gestellt. 
 
 > [!NOTE]
-> Wenn Sie Exchange Management PowerShell zur Aktivierung und Konfiguration Systemzugriff verwenden möchten, führen Sie die Schritte in Verbindung mit Exchange Online PowerShell mit Ihrer Office 365 [Connect to Exchange Online PowerShell mithilfe von Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) Anmeldeinformationen. Sie müssen nicht die mehrstufige Authentifizierung für Office 365-Organisation mit den Schritten um Systemzugriff zu ermöglichen, während eine Verbindung mit Exchange Online PowerShell aktivieren. Herstellen einer Verbindung mit Multi-Factor Authentication erstellt ein OAuth-Token, das vom Systemzugriff für die Anmeldung Ihre Anforderungen verwendet wird.
+> Wenn Sie die Exchange-Verwaltungsshell zum Aktivieren und Konfigurieren des privilegierten Zugriffs verwenden möchten, führen Sie die Schritte unter [Herstellen einer Verbindung mit Exchange Online PowerShell mithilfe der mehr](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) stufigen Authentifizierung zum Herstellen einer Verbindung mit Exchange Online PowerShell mit ihrem Office 365 aus. Anmeldeinformationen. Sie müssen die mehrstufige Authentifizierung für Ihre Office 365-Organisation nicht aktivieren, um die Schritte zum Aktivieren des privilegierten Zugriffs beim Herstellen einer Verbindung mit Exchange Online PowerShell zu verwenden. Beim Herstellen einer Verbindung mit mehrstufiger Authentifizierung wird ein OAuth-Token erstellt, das von privilegiertem Zugriff zum Signieren von Anforderungen verwendet wird.
 
 <a name="step1"> </a>
 
-## <a name="step-1---create-an-approvers-group"></a>Schritt 1: Erstellen einer genehmigenden Person Gruppe
+## <a name="step-1---create-an-approvers-group"></a>Schritt 1: Erstellen einer Gruppe von genehmigenden Personen
 
-1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie in der Verwaltungskonsole **Gruppen** > **Gruppe hinzufügen**.
+2. Wechseln Sie im Admin Center zu **Gruppen** > **Hinzufügen einer Gruppe**.
 
-3. Wählen Sie die **e-Mail-aktivierte Sicherheitsgruppe** Gruppentyp aus, und führen Sie dann die Felder **Name**, **Gruppe e-Mail-Adresse**und **Beschreibung** für die neue Gruppe.
+3. Wählen Sie den Gruppentyp **e-Mail-aktivierte Sicherheitsgruppe** aus, und füllen Sie dann die Felder **Name**, **Gruppen-e-Mail-Adresse**und **Beschreibung** für die neue Gruppe aus.
 
-4. Speichern Sie die Gruppe. Es dauert ein paar Minuten für die Gruppe vollständig konfiguriert werden und in der Office 365-Verwaltungskonsole angezeigt werden.
+4. Speichern Sie die Gruppe. Es kann einige Minuten dauern, bis die Gruppe vollständig konfiguriert ist und im Office 365 Admin Center angezeigt wird.
 
-5. Wählen Sie die neue genehmigende Person aus, und wählen Sie zum Hinzufügen von Benutzern der Gruppe **Bearbeiten** .
+5. Wählen Sie die Gruppe neuer genehmigender aus, und wählen Sie **Bearbeiten** aus, um Benutzer zur Gruppe hinzuzufügen.
 
 6. Speichern Sie die Gruppe.
 
 <a name="step2"> </a>
 
-## <a name="step-2---enable-privileged-access"></a>Schritt 2: Aktivieren von Systemzugriff
+## <a name="step-2---enable-privileged-access"></a>Schritt 2: Aktivieren des privilegierten Zugriffs
 
-### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie in der Verwaltungskonsole zur **Einstellungen > Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen > Security & Privacy** > **privileged Access**.
 
-3. Aktivieren Sie das Steuerelement **Genehmigungen für Systemzugriff erfordern** .
+3. Aktivieren Sie das Kontrollelement **Genehmigungen für privilegierten Zugriff anfordern** .
 
-4. Weisen Sie in Schritt 1 als den **Standard-Gruppe der genehmigenden Personen**erstellten Gruppe der genehmigenden Person.
+4. Weisen Sie die Gruppe der genehmigenden Personen, die Sie in Schritt 1 erstellt haben, als **Standardgruppe für genehmigende**Personen zu.
 
-5. **Speichern** und **Schließen**.
+5. **Speichern** und **Beenden**.
 
-### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell Systemzugriff aktivieren und der genehmigenden Person Gruppe zuweisen:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den privilegierten Zugriff zu aktivieren und die Gruppe der genehmigenden Personen zuzuweisen:
 ```
 Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccounts @('<systemAccountUPN1>','<systemAccountUPN2>')
 ```
@@ -96,41 +98,41 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 ```
 
 > [!NOTE]
-> Systemkonten, dass das Feature um sicherzustellen, dass bestimmte der Automatisierung innerhalb Ihrer Organisation zur Verfügung gestellt wird ohne Abhängigkeit an Systemzugriff arbeiten können, aber es wird empfohlen, dass solche Ausschlüsse außergewöhnliche werden und die zulässigen genehmigt und überwacht werden sollte Führen Sie regelmäßige.
+> Das Feature "System Konten" wird bereitgestellt, um sicherzustellen, dass bestimmte Automatisierungen in Ihrer Organisation ohne Abhängigkeit vom privilegierten Zugriff funktionieren können, es wird jedoch empfohlen, dass diese Ausnahmen außergewöhnlich sind und diese zulässig sind. regelmäßig.
 
 <a name="step3"> </a>
 
-## <a name="step-3---create-an-access-policy"></a>Schritt 3: Erstellen einer Richtlinie für den Zugriff
+## <a name="step-3---create-an-access-policy"></a>Schritt 3: Erstellen einer Zugriffsrichtlinie
 
-Sie können erstellen und Konfigurieren von bis zu 30 Systemzugriff Richtlinien für Office 365-Organisation.
+Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Office 365-Organisation erstellen und konfigurieren.
 
-### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
-3. Wählen Sie **Verwalten Zugriffsrichtlinien und Anforderungen**.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
-4. Wählen Sie **Richtlinien konfigurieren** , und wählen Sie **eine Richtlinie hinzufügen**.
+4. Wählen Sie **Richtlinien konfigurieren** aus, und wählen Sie **Richtlinie hinzufügen**aus.
 
-5. Wählen Sie aus dem Dropdown-Feldern die entsprechenden Werte für Ihre Organisation:
+5. Wählen Sie in den Dropdownfeldern die entsprechenden Werte für Ihre Organisation aus:
     
-    **Richtlinientyp**: Vorgangs-, Rolle oder Rollengruppe
+    **Richtlinientyp**: Aufgabe, Rolle oder Rollengruppe
 
-    **Richtlinie auf Benutzerebene**: Exchange oder Office 365
+    **Richtlinienbereich**: Exchange oder Office 365
 
-    **Richtlinienname**: Wählen Sie aus den verfügbaren Richtlinien
+    **Richtlinienname**: Wählen Sie aus den verfügbaren Richtlinien aus
 
-    **Typ der statusgenehmigung**: manuell oder automatisch
+    **** Genehmigungs: manuell oder automatisch
 
-    **Genehmigungsgruppe**: Wählen Sie die in Schritt 1 erstellte Gruppe der genehmigenden Personen
+    **Genehmigungsgruppe**: Wählen Sie die in Schritt 1 erstellte genehmigende Gruppe aus.
 
-6. Wählen Sie **Erstellen** und dann auf **Schließen**. Es kann einige Minuten für die Richtlinie vollständig konfiguriert und aktiviert worden ist.
+6. Klicken Sie auf **Erstellen** und dann auf **Schließen**. Es kann einige Minuten dauern, bis die Richtlinie vollständig konfiguriert und aktiviert ist.
 
-### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie folgenden Befehl in Exchange Online PowerShell zum Erstellen und eine Genehmigung zu definieren:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine Genehmigungsrichtlinie zu erstellen und zu definieren:
 
 ```
 New-ElevatedAccessApprovalPolicy -Task 'Exchange\<exchange management cmdlet name>' -ApprovalType <Manual, Auto> -ApproverGroup '<default/custom approver group>'
@@ -142,37 +144,37 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 <a name="step4"> </a>
 
-## <a name="step-4-submitapprove-privileged-access-requests"></a>Schritt 4: Genehmigen Sie Systemzugriff Anforderungen übermitteln /
+## <a name="step-4-submitapprove-privileged-access-requests"></a>Schritt 4: überMitteln/genehmigen von privilegierten Zugriffsanforderungen
 
-### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Elevation-Autorisierung auszuführende Aufgaben privilegierte anfordern
+### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Anfordern einer Erhöhungs Autorisierung zum Ausführen privilegierter Aufgaben
 
-Anforderungen für Systemzugriff gelten für bis zu 24 Stunden, nachdem die Anforderung gesendet wird. Wenn nicht genehmigt oder abgelehnt, die Anfragen ablaufen und Zugriff ist nicht genehmigt.
+Anforderungen für den privilegierten Zugriff sind bis zu 24 Stunden nach der Übermittlung der Anforderung gültig. Wenn diese nicht genehmigt oder verweigert werden, werden die Anforderungen ablaufen, und der Zugriff wird nicht genehmigt.
 
-#### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+#### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der [Microsoft 365 Admin Center](https://portal.office.com) mit Ihren Anmeldeinformationen.
+1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://portal.office.com) an.
 
-2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
-3. Wählen Sie **Verwalten Zugriffsrichtlinien und Anforderungen**.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
-4. Wählen Sie **neue Anforderung**. Wählen Sie aus dem Dropdown-Feldern die entsprechenden Werte für Ihre Organisation:
+4. Wählen Sie **neue Anforderung**aus. Wählen Sie in den Dropdownfeldern die entsprechenden Werte für Ihre Organisation aus:
 
-    **Anforderungstyp**: Vorgangs-, Rolle oder Rollengruppe
+    **Anforderungstyp**: Aufgabe, Rolle oder Rollengruppe
 
-    **Bereich anfordern**: Exchange
+    **Anforderungsbereich**: Exchange
 
     **Anforderung für**: Wählen Sie aus den verfügbaren Richtlinien
 
-    **Dauer (in Stunden)**: Anzahl von Stunden für den angeforderten Zugriff. Es ist kein Grenzwert für die Anzahl der Stunden, die angefordert werden können.
+    **Dauer (Stunden)**: Anzahl der Stunden des angeforderten Zugriffs. Es gibt keine Begrenzung für die Anzahl der Stunden, die angefordert werden können.
 
-    **Kommentare**: Textfeld für Kommentare im Zusammenhang mit Ihrer Access-Anforderung
+    **Kommentare**: Textfeld für Kommentare in Bezug auf ihre Zugriffsanforderung
 
-5. Wählen Sie **Speichern** und dann auf **Schließen**. Ihre Anforderung wird der genehmigenden Person Gruppe per e-Mail gesendet werden.
+5. Klicken Sie auf **Speichern** und dann auf **Schließen**. Ihre Anfrage wird per e-Mail an die Gruppe der genehmigenden Person gesendet.
 
-#### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+#### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell zum Erstellen und senden eine Aufforderung zur Genehmigung an die Gruppe der genehmigenden Person:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine Genehmigungsanforderung an die Gruppe der genehmigenden Personen zu erstellen und zu übermitteln:
 ```
 New-ElevatedAccessRequest -Task 'Exchange\<exchange management cmdlet name>' -Reason '<appropriate reason>' -DurationHours <duration in hours>
 ```
@@ -180,22 +182,22 @@ Beispiel:
 ```
 New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting to fix the user mailbox error' -DurationHours 4
 ```
-### <a name="view-status-of-elevation-requests"></a>Anzeigen des Status der Elevation-Anforderungen
-Nach dem Erstellen einer genehmigungsanforderung Elevation Anforderungsstatus in der Verwaltungskonsole überprüft werden kann oder im Exchange Management PowerShell Anforderung mit der zugeordnete ID.
+### <a name="view-status-of-elevation-requests"></a>Anzeigen des Status von Ansichts Anforderungen
+Nachdem eine Genehmigungsanforderung erstellt wurde, kann der Status der Höhen Anforderung im Admin Center oder in der Exchange-Verwaltungs-PowerShell mithilfe der ID der Anforderung zugeordnet werden.
 
-#### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+#### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der [Microsoft 365 Admin Center](https://portal.office.com) mit Ihren Anmeldeinformationen.
+1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://portal.office.com) an.
 
-2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
-3. Wählen Sie **Verwalten Zugriffsrichtlinien und Anforderungen**.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
-4. Wählen Sie **Ansicht** zum Filtern von weitergeleiteten Anfragen nach dem Status **ausstehender**, **genehmigt**, **verweigert**oder **Kunden Lockbox** .
+4. Wählen Sie **Ansicht** aus, um übermittelte Anforderungen nach dem Status Ausstehend, **genehmigt**, **verweigert**oder **Kunden** zu filtern. ****
 
-#### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+#### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell, um eine Anforderung Genehmigungsstatus für eine bestimmte Anforderung ID anzuzeigen:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den Status einer Genehmigungsanforderung für eine bestimmte Anforderungs-ID anzuzeigen:
 ```
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus
 ```
@@ -204,24 +206,24 @@ Beispiel:
 Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | select RequestStatus
 ```
 
-### <a name="approving-an-elevation-authorization-request"></a>Eine Erhöhung Autorisierung Anforderung genehmigen
-Wenn eine Aufforderung zur Genehmigung erstellt wird, Mitglied der Gruppe relevanten genehmigende Person erhält eine e-Mail-Benachrichtigung und genehmigen die Anforderung der Anforderung ID zugeordnet werden kann Der Requestor wird die Anforderung zur Genehmigung oder Ablehnung per e-Mail-Nachricht benachrichtigt werden.
+### <a name="approving-an-elevation-authorization-request"></a>Genehmigen einer Elevation-Autorisierungsanforderung
+Wenn eine Genehmigungsanforderung erstellt wird, erhalten Mitglieder der entsprechenden genehmigenden Gruppe eine e-Mail-Benachrichtigung und können die Anforderung genehmigen, die der Anforderungs-ID zugeordnet ist. Der Anforderer wird über eine e-Mail-Nachricht über die Genehmigung oder Ablehnung der Anforderung benachrichtigt.
 
-#### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+#### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der [Microsoft 365 Admin Center](https://portal.office.com) mit Ihren Anmeldeinformationen.
+1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://portal.office.com) an.
 
-2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
-3. Wählen Sie **Verwalten Zugriffsrichtlinien und Anforderungen**.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
-4. Wählen Sie eine aufgelistete Anforderung, um die Details anzuzeigen und auszuführende Aktion auf die Anforderung.
+4. Wählen Sie eine aufgeführte Anforderung aus, um die Details anzuzeigen und Aktionen für die Anforderung durchführen zu können.
 
-5. Wählen Sie **Genehmigen** genehmigen die Anforderung, oder wählen Sie **Verweigern** , um die Anforderung zu verweigern. Zuvor können genehmigte Anforderungen durch Auswählen von **Sperren**widerrufen zugreifen.
+5. Wählen **** Sie genehmigen aus, um die Anforderung zu genehmigen, oder wählen Sie **verweigern** , um die Anforderung zu verweigern. Zuvor genehmigten Anforderungen kann der Zugriff widerrufen werden, indem Sie **REVOKE**auswählen.
 
-#### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+#### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell, um eine Erhöhung Autorisierung Anforderung genehmigen:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine Elevation-Autorisierungsanforderung zu genehmigen:
 
 ```
 Approve-ElevatedAccessRequest -RequestId <request id> -Comment '<approval comment>'
@@ -231,7 +233,7 @@ Beispiel:
 Approve-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<approval comment>'
 ```
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell, um eine Erhöhung Autorisierung Anforderung zu verweigern:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine Elevation-Autorisierungsanforderung zu verweigern:
 
 ```
 Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
@@ -241,46 +243,46 @@ Beispiel:
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
 ```
 
-## <a name="delete-a-privileged-access-policy-in-office-365"></a>Löschen einer Richtlinie Systemzugriff in Office 365
-Sie können eine Richtlinie Systemzugriff löschen, wenn es in Ihrer Organisation nicht mehr benötigt wird.
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>Löschen einer Richtlinie für privilegierten Zugriff in Office 365
+Sie können eine Richtlinie für den privilegierten Zugriff löschen, wenn Sie in Ihrer Organisation nicht mehr benötigt wird.
 
-### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
-3. Wählen Sie **Verwalten Zugriffsrichtlinien und Anforderungen**.
+3. Wählen Sie **Zugriffsrichtlinien und-Anforderungen verwalten**aus.
 
-4. Wählen Sie **Richtlinien konfigurieren**.
+4. Wählen Sie **Richtlinien konfigurieren**aus.
 
-5. Wählen Sie die Richtlinie, den, die Sie löschen möchten, und wählen Sie **Richtlinie zu entfernen**.
+5. Wählen Sie die Richtlinie aus, die Sie löschen möchten, und wählen Sie dann **Richtlinie entfernen**aus.
 
-6. Wählen Sie **Schließen**aus.
+6. Klicken Sie auf **Beenden**.
 
-### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie den folgenden Befehl in Exchange Online Powershell, um eine Richtlinie Systemzugriff zu löschen:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine privilegierte Zugriffsrichtlinie zu löschen:
 
 ```
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
-## <a name="disable-privileged-access-in-office-365"></a>Deaktivieren Sie Systemzugriff in Office 365
+## <a name="disable-privileged-access-in-office-365"></a>Deaktivieren des privilegierten Zugriffs in Office 365
 
-Falls erforderlich, können Sie für Ihre Organisation Systemzugriff Management deaktivieren. Deaktivieren von Berechtigungen wird Access keine zugehörigen Genehmigung Richtlinien oder eine genehmigende Person Gruppen gelöscht.
+Bei Bedarf können Sie die privilegierte Zugriffsverwaltung für Ihre Organisation deaktivieren. Durch das Deaktivieren des privilegierten Zugriffs werden keine zugehörigen Genehmigungsrichtlinien oder genehmigenden Gruppen gelöscht.
 
-### <a name="using-the-microsoft-365-admin-center"></a>Verwenden das Microsoft 365 Admin Center
+### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich bei der Verwendung von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation [Microsoft 365 Admin Center](https://portal.office.com) .
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Wechseln Sie in der Verwaltungskonsole auf **Einstellungen** > **Sicherheit und Datenschutz** > **Systemzugriff**.
+2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
-3. Aktivieren Sie das Steuerelement **Genehmigungen für Systemzugriff erfordern** .
+3. Aktivieren Sie das Kontrollelement **Genehmigungen für privilegierten Zugriff anfordern** .
 
-### <a name="using-exchange-management-powershell"></a>Verwenden von PowerShell für Exchange-Verwaltung
+### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 
-Führen Sie den folgenden Befehl in Exchange Online Powershell, um Systemzugriff zu deaktivieren:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den privilegierten Zugriff zu deaktivieren:
 
 ```
 Disable-ElevatedAccessControl

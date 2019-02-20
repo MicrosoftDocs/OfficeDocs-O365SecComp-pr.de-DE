@@ -1,5 +1,5 @@
 ---
-title: Office 365-API-Management-Aktivität
+title: Office 365-Verwaltungsaktivitäts-API
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,16 +10,18 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Eine kurze Übersicht über die Office 365 Management Aktivität-API.
-ms.openlocfilehash: 4753be89c008676d5244b5c659c3dd1a545975b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-analytics
+description: Eine kurze Zusammenfassung zur Office 365-Verwaltungs Aktivitäts-API.
+ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528947"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090558"
 ---
-# <a name="office-365-management-activity-api"></a>Office 365-API-Management-Aktivität
-Microsoft bietet reporting Services, mit denen Administratoren die aggregierten transaktionale Informationen über ihre Office 365-Mandanten zu erhalten. Der [Office 365-Verwaltungs-Aktivität API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) verwendet ein Industriestandard RESTful Entwurf und OAuth-v2 für die Authentifizierung, was mit Abrufen von Daten, und es in Visualisierungstools und Applikationen Aufnahme auszuprobieren erleichtert. Die API bietet einen Feed, der Informationen zur Aktivität Vorgänge, Benutzer, Administratoren und Sicherheit in Office 365 enthält. Die Daten können gespeichert, um die behördlichen oder mit Protokolldaten aus einer lokalen Infrastruktur oder anderen Datenquellen zum Erstellen einer überwachen Lösung für Vorgänge, Sicherheit und Compliance unternehmensweit beschafft kombiniert werden.
+# <a name="office-365-management-activity-api"></a>Office 365-Verwaltungsaktivitäts-API
+Microsoft bietet Reporting Services, mit denen Administratoren aggregierte Transaktionsinformationen zu Ihrem Office 365-Mandanten abrufen können. Die [Office 365-Verwaltungs AKTIVITÄTS-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) verwendet einen Industriestandard-RESTful-Entwurf und OAuth v2 für die Authentifizierung, wodurch das Experimentieren mit dem Abrufen von Daten und deren Einnahme in Visualisierungstools und-Anwendungen erleichtert wird. Die API stellt einen Datenfeed bereit, der Informationen zu Benutzer-, Administrator-, Betriebs-und Sicherheitsaktivitäten in Office 365 enthält. Die Daten können aus regulatorischen Gründen aufbewahrt werden oder mit Protokolldaten kombiniert werden, die von einer lokalen Infrastruktur oder anderen Quellen bezogen werden, um eine Überwachungslösung für Vorgänge, Sicherheit und Compliance im gesamten Unternehmen zu erstellen.
 
-Die Office 365-Verwaltungs-Aktivität-API enthält Informationen zu verschiedenen Benutzer, Admin, System, und Richtlinienaktionen und Ereignisse aus Office 365 und Azure Active Directory-Aktivitätsprotokolle. Die API bietet ein konsistentes Audit Schema mit über mehr als 10 Felder, die in allen Diensten gemeinsam sind. Auf diese Weise können Organisationen die einfache Verbindungen zwischen den Ereignissen herstellen und neue Möglichkeiten zum Grund über die Daten ermöglicht. Dutzende von unabhängigen Softwarehersteller (ISVs) Partnerschaft mit Microsoft und Lösungen auf Grundlage der API integriert. Einige Lösungen sind ausschließlich auf Office 365-Daten beschäftigt, während andere Benutzer die Möglichkeit, Daten aus mehreren Cloud-Anbietern und lokalen Systemen zum Erstellen einer einheitlichen Ansicht aller Vorgänge, Sicherheit und Compliance-bezogene Aktivität Aufnahme bereitstellen. Weitere Informationen finden Sie in der [Office 365 Management Aktivität-API-Referenz](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
+Die Office 365-Verwaltungs Aktivitäts-API enthält Informationen zu verschiedenen Benutzer-, Administrator-, System-und Richtlinienaktionen und-Ereignissen aus Office 365-und Azure Active Directory-Aktivitätsprotokollen. Die API bietet ein konsistentes Überwachungsschema mit mehr als 10 Feldern, die für alle Dienste gemeinsam sind. Dies ermöglicht es Organisationen, einfache Verbindungen zwischen Ereignissen zu erstellen und neue Möglichkeiten zum Überprüfen der Daten zu ermöglichen. Dutzende von unabhängigen Software Anbietern (ISVs) haben eine Partnerschaft mit Microsoft hergestellt und Lösungen basierend auf der API erstellt. Einige Lösungen konzentrieren sich ausschließlich auf Office 365-Daten, während andere die Möglichkeit bieten, Daten von mehreren Cloud-Anbietern und lokalen Systemen zu erfassen, um eine einheitliche Ansicht aller Vorgänge, der Sicherheit und der Compliance-bezogenen Aktivitäten zu erstellen. Weitere Informationen finden Sie in der [Office 365-Verwaltungs AKTIVITÄTS-API-Referenz](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).

@@ -1,5 +1,5 @@
 ---
-title: Was ist neu in Office 365-Cloud-App-Sicherheit
+title: Was ist neu in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,33 +12,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
-description: Finden Sie unter Neuigkeiten in Office 365-Cloud-App-Sicherheit
-ms.openlocfilehash: ad16a215332e183c2bf821095610f6379a88be01
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+description: Informationen zu Neuerungen in Office 365 Cloud App Security
+ms.openlocfilehash: 9c0a93a29efb71704cf4ed0f9219018b5dd79d88
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570191"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087354"
 ---
-# <a name="what-is-new-in-office-365-cloud-app-security"></a>Was ist neu in Office 365-Cloud-App-Sicherheit
+# <a name="what-is-new-in-office-365-cloud-app-security"></a>Was ist neu in Office 365 Cloud App Security
 
-**Zusammenfassung** Lesen Sie diesen Artikel, um einen schnellen Überblick über Updates und neuen Features in Office 365-Cloud App-Sicherheit (früher als Office 365 Advanced Security Management bezeichnet) abzurufen, die von [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)bereitgestellt wird.
+**Zusammenfassung** In diesem Artikel erhalten Sie einen schnellen Überblick über Updates und neue Features in Office 365 Cloud App Security, die von [Microsoft Cloud App Security](https://aka.ms/whatiscas)betrieben wird.
   
 > [!TIP]
-> In diesem Artikel wird häufig aktualisiert, wie Features hinzugefügt oder verbessert werden. Office 365-Cloud-App-Sicherheits-Updates werden ungefähr zwei Wochen nach Microsoft Cloud App-Sicherheitsupdates freigegeben, und nicht alle Microsoft Cloud App-Sicherheitsupdates gelten für Office 365-Cloud-App-Sicherheit. Darüber hinaus können die neuen Features für mindestens eine Woche nach ihrer Veröffentlichungsdatum in der Cloud App Sicherheit in Office 365-Umgebung angezeigt wird dauern.
+> Dieser Artikel wird häufig aktualisiert, wenn Features hinzugefügt oder verbessert werden. Sicherheitsupdates für Office 365 Cloud App werden ungefähr zwei Wochen nach Microsoft Cloud App-Sicherheitsupdates veröffentlicht, und nicht alle Sicherheitsupdates von Microsoft Cloud App gelten für Office 365 Cloud App Security. Darüber hinaus können neue Features eine Woche oder mehr nach dem Veröffentlichungsdatum in Ihrer Office 365 Cloud App-Sicherheitsumgebung angezeigt werden.
 
-## <a name="office-365-cloud-app-security-releases-139-140"></a>Office 365 Cloud App-Sicherheit Versionen 139 140
+## <a name="office-365-cloud-app-security-releases-139-140"></a>Office 365 Cloud App Security Releases 139, 140
 
-*22 Januar 2019 veröffentlicht*
+*Veröffentlicht am 22. Januar 2019*
 
-**Folgen von [Microsoft Cloud App-Sicherheit Versionen 139 140](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-139-140)**:
+**Folgende [Microsoft Cloud App Security releases 139, 140](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-139-140)**:
 
-- **Optimierung für die Erkennungsrichtlinien Anomalie erweitert** Sie können jetzt das Anomalie Erkennungsmodul zum unterdrücken oder Warnungen nach Bedarf Offenlegen beeinflussen. In der Richtlinie unmöglich Reisen können Sie festlegen, den Vertraulichkeit Schieberegler zum Bestimmen der Ebene von abweichendem Verhalten erforderlich, bevor eine Warnung ausgegeben wird. Sie können auch konfigurieren, ob der Benachrichtigung für die Aktivität aus seltene Land, anonyme IP-Adressen, verdächtige IP-Adressen und unmöglich Geschäftsreisen fehlgeschlagenen und erfolgreichen Anmeldungen oder nur erfolgreicher Anmeldungen analysieren sollten. 
+- **Erweiterte Optimierung für Anomalien-Erkennungsrichtlinien** Sie können nun das Anomalie-Erkennungsmodul auswirken, um Warnungen entsprechend Ihren Einstellungen zu unterdrücken oder anzuzeigen. In der unMöglichen Reiserichtlinie können Sie den Schieberegler für die Empfindlichkeit festlegen, um den Grad des anomalen Verhaltens zu bestimmen, der erforderlich ist, bevor eine Warnung ausgelöst wird. Sie können auch konfigurieren, ob die Warnungen für Aktivitäten aus einem unregelmäßigen Land, anonyme IP-Adressen, verdächtige IP-Adressen und unmögliche Reisen sowohl fehlerhafte als auch erfolgreiche Anmeldungen oder nur erfolgreiche Anmeldungen analysieren sollen. 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Finden Sie im 2018 Updates für Office 365-Cloud-App-Sicherheit](new-in-office-365-cas-2018.md)
+[Weitere Informationen finden Sie im 2018-Updates für Office 365 Cloud App Security](new-in-office-365-cas-2018.md)
 
-[Finden Sie im 2017 Updates für Office 365-Cloud-App-Sicherheit](new-in-office-365-cas-2017.md)
+[Weitere Informationen finden Sie im 2017-Updates für Office 365 Cloud App Security](new-in-office-365-cas-2017.md)
     
 [Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security](utilization-activities-for-ocas.md)

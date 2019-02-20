@@ -1,5 +1,5 @@
 ---
-title: Office 365 interne Protokollierung für Office 365-Entwicklung
+title: Office 365 Internal Logging für Office 365 Engineering
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,32 +9,34 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Eine Erläuterung der wie interne Protokollierung für Office 365 Engineering teams funktioniert.
-ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Eine Erläuterung der Funktionsweise der internen Protokollierung für Office 365-Entwicklungsteams.
+ms.openlocfilehash: cf11a52541f6434a580435688db0f986f670bd31
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038188"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090757"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Interne Protokollierung für Office 365 Engineering
-Zusätzlich zu den Ereignissen und die Protokolldaten für Kunden zur Verfügung ist auch ein interner Datenerfassung, die für Mitarbeiter des Office 365 verfügbar ist. Viele verschiedene Typen von Protokolldaten werden von Office 365-Servern in einer internen, big Daten computing-Dienst namens Cosmos hochgeladen. Jedes Team Service hochgeladen Überwachungsprotokolle aus den jeweiligen Server in die Datenbank Cosmos für Aggregation und Analysen. Diese Datenübertragung erfolgt über eine FIPS 140-2-validiert TLS-Verbindung speziell genehmigte Ports und Protokolle, die mithilfe des Tools proprietäre Automation Office Daten Loader (ODL). Die Tools, die zum Sammeln von in Office 365 verwendet und Überwachungseinträge Prozess nicht permanente zulassen oder nicht rückgängig gemacht werden Änderungen an den ursprünglichen Datensatz Inhalts- oder Zeit Sortierung überwachen.
+Zusätzlich zu den für Kunden verfügbaren Ereignissen und Protokolldaten gibt es auch ein internes Protokoll Datenerfassungssystem, das Office 365-Ingenieuren zur Verfügung steht. Viele verschiedene Typen von Protokolldaten werden von Office 365-Servern auf einen internen, großen Datenverarbeitungsdienst namens Cosmos hochgeladen. Jedes Dienst Team lädt Überwachungsprotokolle von ihren jeweiligen Servern in die Cosmos-Datenbank für Aggregation und Analyse hoch. Diese Datenübertragung erfolgt über eine FIPS 140-2-validierte TLS-Verbindung auf speziell genehmigten Ports und Protokollen mithilfe eines proprietären Automatisierungstools namens Office Data Loader (ODL). Die Tools, die in Office 365 zum Erfassen und Verarbeiten von Überwachungsdatensätzen verwendet werden, lassen keine dauerhaften oder irreversiblen Änderungen am ursprünglichen Inhalt oder der Zeitreihen Folge des Überwachungsdatensatzes zu.
 
-Service-Teams verwenden Cosmos als zentrales Repository, um eine Analyse der Anwendungsverwendung, bis auf System und betrieblichen messen und suchen Sie nach Mängel und Muster, die Sicherheit Probleme hindeuten durchführen. Jedes Team Service uploads Grundlinie der Protokolle in Cosmos, je nach zur Analyse gewünschter, die häufig enthalten:
+Service Teams verwenden Cosmos als zentrales Repository, um eine Analyse der Anwendungsnutzung durchzuführen, die System-und Betriebsleistung zu messen und nach Anomalien und Mustern zu suchen, die auf Probleme oder Sicherheitsprobleme hindeuten können. Jedes Dienst Team lädt eine Basis von Protokollen in Cosmos hoch, je nachdem, was Sie analysieren möchten, und zwar oft:
 - Ereignisprotokolle
 - AppLocker-Protokolle
 - Leistungsdaten
 - System Center-Daten
-- Call Detail Records
-- Daten Quality of experience
-- IIS-Webserver-Protokolle
+- Anruf Detaildatensätze
+- Quality of Experience-Daten
+- IIS-Webserverprotokolle
 - SQL Server-Protokolle
 - Syslog-Daten
-- Sicherheit von Überwachungsprotokollen
+- Sicherheitsüberwachungsprotokolle
 
-Vor dem Hochladen von Daten in Cosmos, wird die ODL-Anwendung ein scrubbing Service verschleiern alle Felder, die Kundendaten, wie etwa Mandanten und Endbenutzer identifizierbare Informationen enthalten, und ersetzen diese Felder mit einem Hashwert verwendet. Die anonymes und Hash-Protokolle sind umgeschrieben und klicken Sie dann in Cosmos hochgeladen werden. Service-Teams ausführen Bereichsbezogene Abfragen ihre Daten in Cosmos für die Korrelation, warnen und Bericht. Die Dauer der Beibehaltung des Änderungsprotokolls Daten Audit in Cosmos ist von den Serviceteams festgestellt wird. Die meisten Überwachungsprotokolldaten werden für 90 Tage oder mehr Sicherheit Vorfall Untersuchungen unterstützen und gesetzlichen Aufbewahrung Anforderungen erfüllt beibehalten.
+Vor dem Hochladen von Daten in Cosmos verwendet die ODL-Anwendung einen Scrubbing-Dienst, um alle Felder zu verbergen, die Kundendaten wie Mandanteninformationen und Endbenutzer identifizierbare Informationen enthalten, und diese Felder durch einen Hashwert zu ersetzen. Die anonymisierten und gehashten Protokolle werden umgeschrieben und dann in Cosmos hochgeladen. Dienst Teams führen bereichsbezogene Abfragen mit Ihren Daten in Cosmos aus, um Korrelationen, Warnungen und Berichte zu erhalten. Der Zeitraum der Aufbewahrungszeit für Überwachungsprotokolle in Cosmos wird von den Service Teams bestimmt. die meisten Überwachungsprotokolldaten werden 90 Tage lang aufbewahrt, um Sicherheitsverletzungen zu unterstützen und die gesetzlichen Aufbewahrungsanforderungen zu erfüllen.
 
-Zugriff auf Office 365 in Cosmos gespeicherten Daten ist auf autorisierte Personen beschränkt. Microsoft beschränkt die Verwaltung von Überwachungsfunktionen auf der begrenzten Anzahl Service-Teammitglieder, die Audit-Funktionen, die verantwortlich sind. Diese Teammitglieder müssen keinen die Möglichkeit zum Ändern oder Löschen von Daten aus Cosmos, und alle Änderungen an Protokollierungsmechanismen für Cosmos aufgezeichnet und überwacht werden.
+Der Zugriff auf Office 365-Daten, die in Cosmos gespeichert sind, ist auf autorisierte Mitarbeiter beschränkt. Microsoft schränkt die Verwaltung der Überwachungsfunktionalität auf die eingeschränkte Teilmenge der Dienst Teammitglieder ein, die für die Überwachungsfunktionalität zuständig sind. Diese Teammitglieder haben nicht die Möglichkeit, Daten aus Cosmos zu ändern oder zu löschen, und alle Änderungen an den Protokollierungsmechanismen für Cosmos werden aufgezeichnet und überwacht.
 
-Jedes Team Dienst greift auf die Protokolldaten für die Analyse durch autorisieren bestimmte Anwendungen, um bestimmte Analysen durchzuführen. Beispielsweise verwendet das Sicherheit in Office 365-Team Daten aus Cosmos über eine proprietäre Ereignisprotokoll-Parser zum Korrelieren, Benachrichtigung und bearbeitungsfähige Berichte auf mögliche verdächtige Aktivitäten in der Office 365-produktionsumgebung. Die Berichte über diese Daten dienen zur Behebung von Sicherheitsrisiken und zur Verbesserung der allgemeinen Leistung des Diensts. Wenn eine bestimmte benachrichtigungs- oder einen weiteren Untersuchung erforderlich sind, können Servicemitarbeiter anfordern Daten wieder in Office 365-Dienst importiert werden. Seit das spezifische Protokoll von Cosmos importiert wird ist verschlüsselt und Service-Mitarbeiter haben keinen Zugriff auf Entschlüsselungsschlüssel, das Zielprotokoll wird programmgesteuert über ein Entschlüsselung-Dienst, der bewertete Ergebnisse zurückgibt, die an die Mitarbeiter autorisierten Service übergeben. Aus dieser Übung gefundenen Sicherheitslücken gemeldet und mithilfe des Microsoft Security standard Problemmanagement Kanäle weitergeleitet werden.
+Jedes Dienst Team greift zur Analyse auf seine Protokolldaten zu, indem bestimmte Anwendungen autorisiert werden, bestimmte Analysen durchzuführen. Beispielsweise verwendet das Office 365-Sicherheitsteam Daten aus Cosmos über einen proprietären Ereignisprotokoll Parser, um Berichte über mögliche verdächtige Aktivitäten in der Office 365-Produktionsumgebung zu korrelieren, zu benachrichtigen und zu generieren. Die Berichte aus diesen Daten werden verwendet, um Sicherheitsrisiken zu beheben und die Gesamtleistung des Diensts zu verbessern. Wenn für eine bestimmte Warnung oder einen Bericht weitere Untersuchungen erforderlich sind, kann das Servicepersonal anfordern, dass Daten wieder in den Office 365-Dienst importiert werden. Da das spezifische Protokoll, das aus Cosmos importiert wird, verschlüsselt ist und das Dienstpersonal keinen Zugriff auf Entschlüsselungsschlüssel hat, wird das Zielprotokoll programmgesteuert über einen Entschlüsselungs Dienst weitergeleitet, der bereichsbezogene Ergebnisse an das autorisierte Servicepersonal zurückgibt. Alle Sicherheitsanfälligkeiten aus dieser Übung werden mithilfe der standardmäßigen Verwaltungs Kanäle für Sicherheitsvorfälle von Microsoft gemeldet und eskaliert.

@@ -1,5 +1,5 @@
 ---
-title: Office 365-Mandantenisolation in Office 365-Suche
+title: Office 365-Mandanten Isolierung in Office 365-Suche
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,45 +10,47 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Zusammenfassung: Eine Erläuterung der mandantenisolation in Office 365-Suche.'
-ms.openlocfilehash: cc73f3c157ffd20b3891a6b7c58e7d0b2adf4e55
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: 'Zusammenfassung: eine Erläuterung der Mandanten Isolierung in der Office 365-Suche.'
+ms.openlocfilehash: b9faae9f1d61af181807f60243890b5115c0d679
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528849"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090807"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Mandantenisolation in Office 365-Suche
-SharePoint Online-Suche verwendet ein Mandant Trennung Modell, das die Effizienz der freigegebenen Datenstrukturen mit Schutz gegen Informationen verloren gehen, zwischen Mandanten ausgeglichen. Mit diesem Modell zu verhindern, dass wir die Suchfunktionen aus:
-- Rückgabe von Abfrageergebnissen, die Dokumente aus anderen Mandanten enthalten
-- Verfügbarmachen von über ausreichend Informationen in den Abfrageergebnissen angezeigt, dass ein geübt Benutzer Informationen zu anderen Mandanten ableiten konnte
-- Anzeigen von Schema oder Einstellungen aus einer anderen Mandanten
-- Mischen von Analytics processing zwischen Mandanten oder Speichern der Ergebnisse im falschen Mandanten
-- Verwenden von Wörterbucheinträge aus einer anderen Mandanten
+# <a name="tenant-isolation-in-office-365-search"></a>Mandantenisolation in der Office 365-Suche
+Bei der SharePoint Online-Suche wird ein Mandanten Trennungsmodell verwendet, das die Effizienz freigegebener Datenstrukturen mit dem Schutz vor Datenverlust zwischen Mandanten abgleicht. Bei diesem Modell wird verhindert, dass die Suchfunktionen:
+- Zurückgeben von Abfrageergebnissen, die Dokumente von anderen Mandanten enthalten
+- Verfügbar machen ausreichender Informationen in Abfrageergebnissen, dass ein qualifizierter Benutzerinformationen zu anderen Mandanten ableiten kann
+- Anzeigen von Schema oder Einstellungen eines anderen Mandanten
+- Mischen von Analyse Verarbeitungsinformationen zwischen Mandanten oder Speichern von Ergebnissen im falschen Mandanten
+- Verwenden von Wörterbucheinträgen eines anderen Mandanten
 
-Für jede Art von Mandantendaten verwenden wir eine oder mehrere Schutzebenen im Code, um versehentliche Eindruck von Informationen zu verhindern. Die wichtigsten Daten hat die meisten Schutzebenen um sicherzustellen, dass Sie ein einzelner Fehler tatsächliche oder wahrgenommene Informationslecks führen nicht.
+Für jeden Typ von Mandantendaten verwenden wir eine oder mehrere Schutzebenen im Code, um versehentliches Auslaufen von Informationen zu verhindern. Die kritischsten Daten verfügen über die meisten Schutzschichten, um sicherzustellen, dass ein einzelner Fehler nicht zu tatsächlichen oder vermeintlichen Informationslecks führt.
 
-## <a name="tenant-separation-for-the-search-index"></a>Mandanten Trennung für den Suchindex
-Der Suchindex wird auf dem Datenträger, auf den Servern, die indexkomponenten hosten gespeichert und die Mandanten die Indexdateien freigeben. Indizierte Dokumente einen Mandanten sind nur für Abfragen für diese Mandanten angezeigt. Drei unabhängige Mechanismen zu verhindern, dass Informationslecks:
+## <a name="tenant-separation-for-the-search-index"></a>MandantenTrennung für den suchIndex
+Der Suchindex wird auf dem Datenträger auf den Servern gespeichert, auf denen die Indexkomponenten gehostet werden, und die Mandanten teilen die Indexdateien. Indizierte Dokumente eines Mandanten sind nur für Abfragen für diesen Mandanten sichtbar. Drei unabhängige Mechanismen verhindern Informationslecks:
 - Mandanten-ID-Filterung
-- Mandanten ID Begriff voranstellen
-- ACL-Überprüfung
+- Mandanten-ID-Präfix
+- ACL-Prüfungen
 
-Alle drei Mechanismen müssten ausfallen für die Suche auf Dokumente, die dem falschen Mandanten zurückgegeben.
+Alle drei Mechanismen müssten fehlschlagen, damit die Suche Dokumente an den falschen Mandanten zurückgibt.
 
-## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Mandanten-ID-Filterung und Mandanten-ID Begriff voranstellen
-Suche Präfixe jeder Begriff, der in den Volltextindex mit der Mandanten-ID indiziert ist Angenommen, wenn der Begriff "*Foo*" für einen Mandanten mit der ID "*123*" indiziert ist, der Eintrag in der Volltextindex ist "*123foo.*"
+## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Mandanten-ID-Filterung und Mandanten-ID-Präfix
+Such Präfixe alle im Volltextindex indizierten Ausdrücke mit der Mandanten-ID. Wenn der Ausdruck "*foo*" beispielsweise für einen Mandanten mit der ID "*123*" indiziert ist, lautet der Eintrag im Volltextindex "123foo"*.*
 
-Jede Abfrage wird zum Einschließen von der Mandanten-ID unter Verwendung der sogenannten Mandanten-ID-Filterung konvertiert. Beispielsweise wird die Abfrage "*Foo*" in "<*Guid*>. konvertiert *"Foo"* UND *TenantID*: <*Guid*> ", wobei <*Guid*> den Mandanten Ausführen der Abfrage darstellt. Diese Abfrage Konvertierung in jeder Indexknoten auftritt, und Verarbeitung der Abfrage weder Inhalt kann es beeinflussen. Da jede Abfrage die Mandanten-ID hinzugefügt wird, kann nicht die Häufigkeit von einem Ausdruck in anderen Mandanten Schlüsseltokens im besten Übereinstimmung in einem Mandanten ranking abgeleitet werden.
+Jede Abfrage wird in die Mandanten-ID mit dem Prozess Mandanten-ID-Filterung konvertiert. Beispielsweise wird die Abfrage "*foo*" in "<*GUID*>" konvertiert. *foo* UND *mandantEN*-ID: <*GUID*_GT_ ", wobei <*GUID*> den Mandanten darstellt, der die Abfrage ausführt. Diese Abfrage Konvertierung erfolgt innerhalb jedes Index Knotens, und weder die Abfrage-noch die Inhaltsverarbeitung kann Sie beeinflussen. Da die Mandanten-ID jeder Abfrage hinzugefügt wird, kann die Häufigkeit eines Ausdrucks in anderen Mandanten nicht abgeleitet werden, indem die Best Match-Rangfolge in einem Mandanten betrachtet wird.
 
-Mandanten ID Begriff voranstellen tritt nur in den Volltextindex. Mit denen sich Suchvorgängen, z. B. "*Titel: Foo*", die eine synthetische Suchindex, in dem Begriffe vorangestellt werden nicht durch Mandanten-ID Stattdessen werden der Name des Felds mit denen sich Suchvorgänge vorangestellt. Beispielsweise wird die Abfrage "*Titel: Foo*" in konvertiert "*fields.title:foo und fields.tenantID*: <*Guid*>." Da die Häufigkeit eines Begriffs Bewertung von Treffer im Suchindex synthetische beeinflussen nicht, besteht keine Notwendigkeit zur Mandanten Trennung Begriff vorangestellt. Für eine Suche fielded wie "*Titel: Foo*" hängt Mandanten-ID-Filterung nach Abfrage Konvertierung Content Trennung Mandanten.
+Das Präfix für die Mandanten-ID wird nur im Volltextindex angezeigt. Feld Suchen, wie "*Title: foo*", wechseln zu einem synthetischen Suchindex, in dem Ausdrücke nicht der Mandanten-ID vorangestellt werden. Stattdessen wird FIELDED searchs der Feldname vorangestellt. Die Abfrage "*Title: foo*" wird beispielsweise in "Fields *. Title: foo und Fields. Mandantin*: <*GUID*>." konvertiert. Da die Häufigkeit eines Ausdrucks die Rangfolge der Treffer im synthetischen Suchindex nicht beeinflusst, besteht keine Notwendigkeit für eine mandantentrennung nach Begriffs Präfix. Für eine Feld Suche wie "*Title: foo*" hängt die Inhalts Trennung des Mandanten von der Mandanten-ID-Filterung nach der Abfrage Konvertierung ab.
 
-## <a name="document-access-control-list-checks"></a>Liste überprüft Dokument Access Steuerelement
-Suche steuert den Zugriff auf Dokumente über ACLs, die im Suchindex gespeichert sind. Jedes Element wird mit einem Satz von Ausdrücken in einem speziellen ACL-Feld indiziert. Das ACL-Feld enthält einen Begriff pro Gruppen- oder Benutzernamen, die das Dokument anzeigen können. Jede Abfrage wird mit einer Liste von Access-Steuerelement (Entry, ACE) ausgedrückt, eine für jede Gruppe erweitert, zu der der authentifizierte Benutzer gehört.
+## <a name="document-access-control-list-checks"></a>ÜberPrüfungen der Dokumentzugriffs Steuerungsliste
+Die Suche steuert den Zugriff auf Dokumente über ACLs, die im Suchindex gespeichert sind. Jedes Element wird mit einem Satz von Begriffen in einem speziellen ACL-Feld indiziert. Das ACL-Feld enthält einen Ausdruck pro Gruppe oder Benutzer, der das Dokument anzeigen kann. Jede Abfrage wird mit einer Liste von ACE-Ausdrücken (Access Control Entry, Zugriffssteuerungseintrag) ergänzt, eine für jede Gruppe, zu der der authentifizierte Benutzer gehört.
 
-Beispielsweise eine Abfrage wie "<*Guid*>. *Foo und TenantID*: <*Guid*> "wird:" <*Guid*>. *Foo und TenantID*: <*Guid*> *AND* (*DocACL:*<*ace1*> *OR DocACL*: <*ace2*> *OR DocACL*: <*ace3*> *... *)"
+Beispiel: eine Abfrage wie "<*GUID*>. *foo und mandantEN-* ID: <*GUID*> "wird:" <*GUID*>. *foo und Mandanten-* ID: <-*GUID*> *und* (*docACL:*<*ace1*> *oder docACL*: <*ace2*> *oder docACL*: <*ace3*> *... *)"
 
-Da Benutzer und Gruppen-IDs und daher ACEs sind eindeutig, dadurch wird eine zusätzliche Sicherheitsebene zwischen Mandanten für Dokumente, die nur für einige Benutzer sichtbar sind. Die gleichen wird die Groß-/Kleinschreibung für die spezielle "alle Benutzer mit Ausnahme von externen Benutzern" ACE, der im Mandanten Empfängerbenutzer Zugriff gewährt. Da die Zugriffssteuerungseinträge für "Jeder" für alle Mandanten identisch sind, Mandanten Trennung für Öffentliche Dokumente richtet sich jedoch Mandanten-ID-Filterung. Verweigern Sie ACEs werden ebenfalls unterstützt. Die Abfrage anspruchserweiterung Fügt eine Klausel, die ein Dokument aus dem Ergebnis entfernt, wenn eine Übereinstimmung mit einen Deny-ZUGRIFFSSTEUERUNGSEINTRAG vorhanden ist.
+Da Benutzer-und Gruppen-IDs und damit auch ACEs eindeutig sind, bietet dies eine zusätzliche Sicherheitsstufe zwischen Mandanten für Dokumente, die für einige Benutzer nur sichtbar sind. Das gleiche gilt für das besondere "alle außer externen Benutzer"-ACE, die regulären Benutzern im Mandanten Zugriff gewährt. Da ACEs für "alle" jedoch für alle Mandanten identisch sind, hängt die mandantentrennung für öffentliche Dokumente von der Mandanten-ID-Filterung ab. Deny-ACEs werden ebenfalls unterstützt. Die Abfrageerweiterung fügt eine Klausel hinzu, die ein Dokument aus dem Ergebnis entfernt, wenn eine Übereinstimmung mit einem Deny-ACE vorliegt.
 
-Der Index ist in Exchange Online-Suche auf Postfach-ID für einzelne Benutzer Postfächer anstelle von Mandanten-ID (Abonnement-ID) wie in SharePoint Online partitioniert. Der Partitionierung Mechanismus ist identisch mit SharePoint Online, aber es gibt keine ACL filtern.
+In der Exchange Online-Suche wird der Index für die Postfächer der einzelnen Benutzer anstelle der Mandanten-ID (Abonnement-ID), wie in SharePoint Online, partitioniert. Der Partitionierungs Mechanismus ist identisch mit SharePoint Online, aber es gibt keine ACL-Filterung.

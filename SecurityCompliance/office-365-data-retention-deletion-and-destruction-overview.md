@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Eine Übersicht über die Microsoft-Richtlinien für Office 365 zur Aufbewahrung, Löschung und Vernichtung von Daten.
-ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: c6c5e1f28ee9d2d4dc8ac85a8af47bdd18037fb0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "24961571"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090847"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Aufbewahren, Löschen und Zerstören von Daten in Office 365
 

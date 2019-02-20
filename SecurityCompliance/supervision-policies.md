@@ -9,257 +9,259 @@ f1_keywords:
 - ms.o365.cc.SupervisoryReview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
-description: Grundlegendes zu aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
-ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
+description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
+ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29760077"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090977"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
-Aufsichtsrichtlinien in Office 365 ermöglichen die Kommunikation der Mitarbeiter zur Prüfung durch festgelegten Bearbeiter erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mail, Microsoft-Teams oder 3rd Party Communications in Ihrer Organisation zu erfassen. Bearbeiter können dann überprüfen Sie die Nachrichten aus, um sicherzustellen, dass sie mit Ihrer Organisation Nachricht Standards kompatibel sind und beheben Sie diese mit Klassifizierungstyp. Diese Richtlinien können Sie viele moderne Compliance-Lösung, einschließlich einer steigenden Typen der Kommunikationskanäle, erhöhen die Lautstärke des Meldungsdaten und behördlichen Erzwingung & das Risiko von Bußgelder Überwachung dieses Problems auch helfen.
+Mit Aufsichtsrichtlinien in Office 365 können Sie Mitarbeiterkommunikation zur Prüfung durch bestimmte Prüfer erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder 3rd-Party-Kommunikationen in Ihrer Organisation erfassen. Die Bearbeiter können die Nachrichten dann überprüfen, um sicherzustellen, dass Sie mit den Nachrichtenstandards Ihrer Organisation kompatibel sind und diese mit dem Klassifizierungs auflösen. Mit diesen Richtlinien können Sie auch viele moderne Compliance-Herausforderungen bewältigen, einschließlich der Überwachung zunehmender Arten von Kommunikationskanälen, erhöhen des Volumens von Nachrichtendaten und der behördlichen Durchsetzung & das Risiko von Geldbußen.
 
-In einigen Organisationen möglicherweise eine Trennung von Aufgaben zwischen IT-Support und der Gruppe Compliance Management. Office 365 unterstützt die Trennung zwischen den Mandanten mit Aufsicht Richtlinienfeatures Support und die Konfiguration von Richtlinien konfigurieren und reagieren auf aufgezeichneten Communications. Die IT-Abteilung für eine Organisation möglicherweise beispielsweise verantwortlich für das Einrichten von Berechtigungen für Rollen und Gruppen aufsichtsrichtlinien unterstützen, die konfiguriert und von der Organisation Compliance-Team verwaltet werden.
+In einigen Organisationen gibt es möglicherweise eine Trennung der Aufgaben zwischen dem IT-Support und der Compliance-Verwaltungsgruppe. Office 365 unterstützt die Trennung zwischen der Konfiguration des Mandanten mit den Aufsichtsrichtlinien-Supportfunktionen und der Konfiguration von Richtlinien und der Reaktion auf aufgezeichnete Kommunikation. Die IT-Gruppe für eine Organisation kann beispielsweise für das Einrichten von Rollen Berechtigungen und Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
 
-## <a name="scenarios-for-supervision-policies"></a>Szenarien für aufsichtsrichtlinien
+## <a name="scenarios-for-supervision-policies"></a>Szenarien für Aufsichtsrichtlinien
 
-Aufsichtsrichtlinien können monitoring Communications in Ihrer Organisation in unterschiedlichen Bereichen unterstützen:
+Aufsichtsrichtlinien können die Überwachung der Kommunikation in Ihrer Organisation in mehreren Bereichen unterstützen:
 
 - **Unternehmensrichtlinien**
 
-    Akzeptable verwenden, ethische Standards und andere Unternehmensrichtlinien in ihre geschäftliche Kommunikation müssen Mitarbeiter entsprechen. Aufsichtsrichtlinien können Verstöße erkennen und Ihnen bei der Maßnahmen zum Verringern dieser Arten von Vorfälle übernehmen. Beispielsweise könnten Sie Ihre Organisation für potenzielle Personalabteilung Verstöße wie Belästigung oder die Verwendung von ungeeignetes oder anstößige Sprache in Mitarbeiter Communications überwachen.
+    Mitarbeiter müssen in allen unternehmensbezogenen Kommunikationen eine akzeptable Nutzung, ethische Standards und andere Unternehmensrichtlinien einhalten. Aufsichtsrichtlinien können Richtlinienverstöße ermitteln und Ihnen helfen, Korrekturmaßnahmen zu ergreifen, um diese Art von Vorfällen zu verringern. Beispielsweise können Sie Ihre Organisation auf potenzielle Verletzungen der Personalabteilung überwachen, beispielsweise Belästigung oder die Verwendung ungeeigneter oder anstößiger Sprachen in der Mitarbeiterkommunikation.
 
 - **Risikomanagement**
 
-    Organisationen sind zuständig, um die gesamte Kommunikation über ihre Infrastruktur und Systemen Unternehmensnetzwerk verteilt. Aufsichtsrichtlinien zum Identifizieren und verwalten potenzielle rechtliche Folgen und des Risikomanagements mit hilft bei Risiken minimieren, bevor Vorgänge im Unternehmen beschädigt werden kann. Beispielsweise könnten Sie Ihre Organisation für unbefugte Kommunikation für vertrauliche Projekte wie anstehende Übernahmen, Fusionen, Einnahmen Angaben, Reorganisationen oder führende Team Änderungen überwachen.
+    Organisationen sind für alle Kommunikationen verantwortlich, die über Ihre Infrastruktur und Unternehmensnetzwerk Systeme verteilt sind. Durch die Verwendung von Aufsichtsrichtlinien zur Identifizierung und Verwaltung potenzieller rechtlicher Risiken und Risiken kann das Risiko minimiert werden, bevor es zu Unternehmens Vorgängen kommen kann. Beispielsweise können Sie Ihre Organisation auf unbefugte Kommunikation für vertrauliche Projekte wie anstehende Akquisitionen, Zusammenschlüsse, ergebnisoffen Legungen, Umstrukturierungen oder Änderungen des Führungsteams überwachen.
 
-- **Einhaltung von Vorschriften**
+- **Einhaltung gesetzlicher Vorschriften**
 
-    Die meisten Organisationen müssen einige Typ der Einhaltung von Vorschriften Standards im Rahmen ihrer normalen Betrieb Verfahren entsprechen. Diese Auflagen erfordern häufig Organisationen eine Art von generelle implementieren oder Aufsicht Prozess für messaging, die für ihre Branche geeignet ist. Die finanziellen Branche behördlichen Autorität (FINRA) Regel 3110 ist ein gutes Beispiel für eine Anforderung für Organisationen verfügen generelle Prozeduren direkt zum Überwachen der Aktivitäten der Mitarbeiter und die Typen von Unternehmen es abwickelt. Ein weiteres Beispiel möglicherweise Bedarf für Broker-Händler in Ihrer Organisation zum Schutz gegen mögliche Geldwäsche, bezüglich Insider, Absprache oder Bestechung Aktivitäten zu überwachen. Aufsichtsrichtlinien können Ihre Organisation diese Anforderungen erfüllen, durch die Bereitstellung eines Prozesses zum Überwachen und Unternehmenskommunikation-Bericht helfen.
+    Die meisten Organisationen müssen im Rahmen ihrer normalen Betriebsverfahren irgendeine Art von Compliance-Standards erfüllen. Diese Bestimmungen erfordern häufig eine Art Aufsichts-oder Überwachungsverfahren für Messaging, das für die jeweilige Branche geeignet ist. Die Regel 3110 der Finanzindustrie-Regulierungsbehörde (FINRA) ist ein gutes Beispiel dafür, dass Organisationen über Aufsichtsverfahren verfügen, um die Aktivitäten Ihrer Mitarbeiter zu überwachen und die Arten von Geschäften, in denen Sie tätig sind. Ein weiteres Beispiel ist die Überprüfung von Broker Händlern in Ihrer Organisation, um gegen mögliche Geldwäsche, Insiderhandel, Absprachen oder Bestechungsaktivitäten zu schützen. Aufsichtsrichtlinien können Ihre Organisation bei der Erfüllung dieser Anforderungen unterstützen, indem Sie einen Prozess zur Überwachung und Berichterstellung über die Unternehmenskommunikation bereitstellen.
 
-## <a name="feature-components"></a>Featurekomponenten
+## <a name="feature-components"></a>Feature-Komponenten
 
 ### <a name="supervision-policy"></a>Aufsichtsrichtlinie
 
-Aufsichtsrichtlinien erstellen Sie in der & Security Compliance Center. Diese Richtlinien definieren, welche Communications und Benutzer in Ihrer Organisation überprüft werden, definieren Sie benutzerdefinierte Bedingung, dass die Kommunikation erfüllen müssen, und gibt an, die überprüft werden soll. Benutzer in die generelle Überprüfung Rollengruppe einrichten kann Richtlinien und jeder Benutzer, der diese Rolle zugewiesen wurde, können die Seite Überwachung unter Steuerung der Daten in der Office 365-Sicherheit & Compliance Center zugreifen.
+Sie erstellen Aufsichtsrichtlinien im Security & Compliance Center. Diese Richtlinien legen fest, welche Kommunikationen und Benutzer in Ihrer Organisation überprüft werden sollen, definieren benutzerdefinierte Bedingungen, die die Kommunikation erfüllen muss, und gibt an, wer Bewertungen durchführen soll. Benutzer, die in der Rollengruppe "Supervisory Review" enthalten sind, können Richtlinien einrichten, und alle Personen, denen diese Rolle zugewiesen wurde, können auf die Seite "Aufsicht" unter Datensteuerung im Office 365 Security & Compliance Center zugreifen.
 
-### <a name="supervised-users"></a>Überwachten Benutzer
+### <a name="supervised-users"></a>ÜberWachte Benutzer
 
-Bevor Sie beginnen, Überwachung verwenden, müssen Sie bestimmen, wer ihre Kommunikation überprüft haben. Verwenden Sie die e-Mail-Adressen in der Richtlinie zum Identifizieren von Personen oder Gruppen von Personen zu überwachen. Einige Beispiele für diese Gruppen sind Gruppen von Office 365, Exchange-basierten Verteilerlisten und Microsoft-Teams, Kanäle. Sie können auch bestimmte Benutzer oder Gruppen ausschließen, Überwachung, die innerhalb einer überwachten Gruppe oder eine Liste von Gruppen enthalten sind.
+Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, für wen Ihre Kommunikationen überprüft werden sollen. In der Richtlinie verwenden Sie Benutzer-e-Mail-Adressen, um Personen oder Gruppen von Personen zu überwachen. Beispiele für diese Gruppen sind Office 365-Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen aus der Überwachung ausschließen, die in einer überwachten Gruppe oder in einer Liste von Gruppen enthalten sind.
 
 > [!IMPORTANT]
-> Alle Benutzer von aufsichtsrichtlinien überwacht werden, müssen eine Office 365 Enterprise E3 Lizenz mit dem Add-on erweiterte Compliance oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie keinen vorhandenen Enterprise-E5 Plan haben und Überwachung ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Alle Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen entweder über eine Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie keinen Enterprise E5-Plan haben und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Bearbeiter
 
-Wenn Sie eine Richtlinie für Überwachung erstellen, ermitteln Sie auch, wem die Überprüfung der Nachrichten der überwachten Benutzer ausgeführt werden soll. In der Richtlinie verwenden Sie die e-Mail-Adressen zum Identifizieren von Personen oder Gruppen von Personen zu einer überwachten durchstellung Communications überprüfen.
+Wenn Sie eine Aufsichtsrichtlinie erstellen, bestimmen Sie auch, wer die Überprüfungen der Nachrichten der überwachten Benutzer ausführen soll. In der Richtlinie verwenden Sie Benutzer-e-Mail-Adressen, um Personen oder Personengruppen zu identifizieren, überwachte Kommunikationen zu überprüfen.
 
-### <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für überwachten Benutzer und Bearbeiter
+### <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für überwachte Benutzer und Prüfer
 
-Um das Setup zu vereinfachen, Erstellen von Gruppen für Personen, die ihre Kommunikation überprüft haben, werden und Gruppen für Personen, die diese Kommunikation überprüft werden. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Angenommen, wenn Sie die Kommunikation zwischen zwei unterschiedlichen Gruppen von Personen überwachen möchten, oder wenn Sie möchten, um eine Gruppe anzugeben, die überwacht werden und sollte nicht zur Verfügung.
+Um das Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüft haben, und Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überwachen möchten, oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht werden soll.
 
 ### <a name="supported-communication-types"></a>Unterstützte Kommunikationstypen
 
-Mit aufsichtsrichtlinien können Sie Nachrichten in einem oder mehreren der folgenden Kommunikation Plattformen überwachen:
+Mit Aufsichtsrichtlinien können Sie Nachrichten auf einer oder mehreren der folgenden Kommunikationsplattformen überwachen:
 
-- **Exchange-e-Mail:** Postfächer, die als Teil Ihres Office 365-Abonnements auf Exchange Online gehostet werden sind alle für die Nachricht Überwachung. -E-Mails und Anlagen Drahtloszugriff Aufsicht sind für die Überwachung und Berichte Aufsicht sofort verfügbar. Anlagen in unterstützten Typen für Überwachung stimmen die [Dateitypen für Exchange Mail Flow Regel Content Kontrollen unterstützt](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
-- **Microsoft-Teams:** Chat Communications und der zugeordneten Anlagen in öffentlichen und privaten Microsoft-Teams, Kanäle und einzelne Chats können überwacht werden. Teams Chats Aufsicht Drahtloszugriff Übereinstimmung einmal alle 24 Stunden verarbeitet werden und klicken Sie dann stehen für die Überwachung und in Berichten Überwachung.
-- **Drittanbieter-Quellen:** Sie können Communications von Drittanbieter-Quellen (wie von Facebook oder Ablage) überwacht, wenn Sie diese Daten in Office 365-Postfächer in Ihrer Organisation importiert haben. [Informationen zum Importieren von Daten in Office 365 3rd Party](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
+- **Exchange-e-Mail:** Postfächer, die als Teil Ihres Office 365-Abonnements in Exchange Online gehostet werden, sind alle für die Nachrichten Aufsicht berechtigt. E-Mails und Anhänge passender Aufsichtsrichtlinien Bedingungen stehen sofort für die Überwachung und in Aufsichtsberichten zur Verfügung. Unterstützte Anlagentypen für die Überwachung sind identisch mit den [Dateitypen, die für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützt](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)werden.
+- **Microsoft Teams:** Chatnachrichten und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelnen Chats können überwacht werden. Teams-Chats, die Aufsichtsrichtlinien Bedingungen entsprechen, werden alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung.
+- **Drittanbieterquellen:** Sie können die Kommunikation von Drittanbieter-Quellen überwachen (wie bei Facebook oder DropBox), wenn Sie diese Daten in Office 365-Postfächern in Ihrer Organisation importiert haben. [Informationen zum Importieren von drittanbieterdaten in Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
 ### <a name="policy-settings"></a>Richtlinieneinstellungen
 
 #### <a name="direction"></a>Direction
 
-Standardmäßig wird die Bedingung **Richtung ist** wird angezeigt und kann nicht entfernt werden. Richtung für die Netzwerkkommunikation in einer Richtlinie können einzeln oder zusammen ausgewählt werden:
+Standardmäßig wird die **Richtung** Bedingung angezeigt und kann nicht entfernt werden. Die Kommunikations Richtungseinstellungen in einer Richtlinie können einzeln oder zusammen ausgewählt werden:
 
-- **Eingehend** - Sie können **eingehende** Kommunikation zu überprüfen, die **an** gesendet werden die Personen, die Sie ausgewählt, zur Überwachung **von** Personen haben in der Richtlinie nicht enthalten.
-- **Ausgehend** - **ausgehend** u. wenn Communications zu überprüfen, die die Personen, die Sie ausgewählt haben, **um** Personen über innehaben nicht, in der Richtlinie enthalten **aus** gesendet werden soll.
-- **Internal** - u. **intern** , um zu prüfen, die gesendet werden, **zwischen** identifizierten Personen in der Richtlinie.
+- **Eingehend** – Sie können eine **eingehende** Nachricht auswählen, um die Kommunikation zu überwachen, die **an** die Personen gesendet werden, die Sie **von** Personen, die nicht in der Richtlinie enthalten sind, überwacht haben.
+- **** Ausgehend – Sie können **ausgehende Anrufe** auswählen, wenn Sie die Kommunikation überwachen möchten, die von den **** Personen gesendet werden, die Sie für die Überwachung **von** Personen erhalten, die nicht in der Richtlinie enthalten sind.
+- **Intern** -Sie können die Kommunikation **zwischen** den Personen, die Sie in der Richtlinie identifiziert haben, **intern** auswählen.
 
 #### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
-Sie haben die Möglichkeit, einschließlich der Typen vertraulicher Informationen als Teil Ihrer aufsichtsrichtlinie. Typen vertraulicher Informationen sind entweder vordefinierten oder benutzerdefinierten Datentypen, die identifizieren und schützen Sie Kreditkarte Zahlen, Bankkonto Zahlen, Ausweisnummern und helfen kann. Als Bestandteil von Office 365 [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)kann die Konfiguration von vertraulichen Informationen Muster, Character Nähe, Confidence Levels und sogar benutzerdefinierte Datentypen zum Identifizieren und kennzeichnen, die möglicherweise vertrauliche Inhalte nutzen. Die Standardtypen vertrauliche Informationen sind:
+Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Aufsichtsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die dazu beitragen können, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Als Teil von Office 365 [Data Loss Prevention (DLP)](data-loss-prevention-policies.md)kann die Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Zuverlässigkeits Stufen und sogar benutzerdefinierte Datentypen zur Identifizierung und Kennzeichnung von vertraulichen Inhalten nutzen. Die Standardtypen für vertrauliche Informationen sind:
 
-- Finanzielle
-- Medizinische und Integritätsdatenerfassung
+- Finanz
+- Medizin und Gesundheit
 - Datenschutz
-- Benutzerdefinierte Informationen-Typ
+- Benutzerdefinierter Informationstyp
 
-Weitere Informationen zu vertrauliche Informationen und die Muster in die Standardtypen enthalten finden, finden Sie unter [welche Arten von vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen zu vertraulichen Informationen und den in den Standardtypen enthaltenen Mustern finden Sie unter [welche Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
 
-#### <a name="custom-keyword-dictionaries"></a>Schlüsselwort für benutzerdefinierte Wörterbücher
+#### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Keyword-Wörterbücher
 
-Konfigurieren benutzerdefinierte Schlüsselwortsuche Wörterbücher (oder Lexika) können einfache Verwaltung von Schlüsselwörtern, die speziell für Ihre Organisation oder aus dem Gesundheitswesen enthalten und kann bis zu 100.000 Begriffe pro Wörterbuch unterstützen. Bei Bedarf können Sie mehrere benutzerdefinierte Schlüsselwortsuche Wörterbücher auf eine einzelne Richtlinie anwenden oder ein einzelnes Schlüsselwort Wörterbuch pro Richtlinie haben. Diese Wörterbücher sind in einer Richtlinie für Überwachung zugewiesen und können als Quelle stammen aus einer Datei (beispielsweise eine Liste CSV- oder TXT) oder aus einer Liste können Sie [direkt in einem PowerShell-Cmdlet eingeben](create-a-keyword-dictionary.md).
+Das Konfigurieren von benutzerdefinierten Keyword-Wörterbüchern (oder Lexika) ermöglicht die einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Branche und kann bis zu 100.000 Ausdrücke pro Wörterbuch unterstützen. Bei Bedarf können Sie mehrere benutzerdefinierte Keyword-Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Stichwort Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie eine CSV-oder txt-Liste) oder aus einer Liste, die Sie [direkt in ein PowerShell-Cmdlet eingeben](create-a-keyword-dictionary.md)können, bezogen werden.
 
 #### <a name="conditional-settings"></a>Bedingte Einstellungen
 
-Die Bedingungen für die Richtlinie gewählte werden für die Kommunikation von e-Mails und 3rd Party Quellen in Ihrer Organisation (wie von Facebook oder Ablage) gelten.
+Die Bedingungen, die Sie für die Richtlinie auswählen, gelten für die Kommunikation von e-Mails und Drittanbieterquellen in Ihrer Organisation (wie bei Facebook oder DropBox).
 
-Die folgende Tabelle erläutert mehr zu jeder Bedingung.
+In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingungen erläutert.
   
 |**Bedingung**|**Verwendung**|
 |:-----|:-----|
-|Nachricht ist von diesen Domänen empfangen.  <br><br> Nachricht wird aus diesen Domänen nicht empfangen. | Um die Richtlinie anwenden, wenn bestimmte Domänen oder ausgeschlossen werden in einer empfangenen Nachricht, geben Sie jede Domäne, und trennen Sie mehrere Domänen durch ein Komma. Jede Domäne, die Sie eingeben, werden separat angewendet (nur eine dieser Domänen muss für die Richtlinie angewendet, die der Nachricht angewendet). |
-|Nachricht wird an diesen Domänen gesendet.  <br><br> Nachricht wird an diesen Domänen nicht gesendet. | Um die Richtlinie anwenden, wenn bestimmte Domänen oder ausgeschlossen werden in eine gesendete Nachricht, geben Sie jede Domäne, und trennen Sie mehrere Domänen durch ein Komma. Jede Domäne, die Sie eingeben, werden separat angewendet (nur eine dieser Domänen muss für die Richtlinie angewendet, die der Nachricht angewendet). |
-|Nachricht ist mit einem der folgenden Bezeichnungen klassifiziert.  <br><br> Nachricht wird nicht mit einem der folgenden Bezeichnungen klassifiziert. | Die Richtlinie anwenden, wenn bestimmte Aufbewahrung Etiketten ein- oder ausgeschlossen werden in einer Nachricht. Aufbewahrung Etiketten müssen separat konfiguriert werden und konfigurierte Etiketten im Rahmen dieser Bedingung ausgewählt werden können. Jede Etiketten separat angewendet werden (nur eine der folgenden Bezeichnungen muss für die Richtlinie angewendet, die der Nachricht anwenden). Weitere Informationen zum Konfigurieren von Beschriftungen Aufbewahrung finden Sie unter [Übersicht über die Aufbewahrung Beschriftungen](https://docs.microsoft.com/office365/securitycompliance/labels).|
-|Nachricht enthält eines dieser Wörter  <br><br> Nachricht enthält keine der folgenden Wörter | Geben Sie zum Anwenden der Richtlinie, wenn bestimmte Wörter oder Ausdrücke ein- oder ausgeschlossen werden in einer Nachricht, einzelnen Wörter oder Ausdrücke in einer separaten Zeile ein. Jede Zeile der eingegebenen Wörter separat angewendet werden (nur eine der folgenden Zeilen muss für die Richtlinie angewendet, die der Nachricht angewendet). Weitere Informationen zum Eingeben von Wörtern oder Begriffen finden Sie im nächsten Abschnitt [übereinstimmende Wörter und Ausdrücke zum-e-Mails oder Anhänge](supervision-policies.md#Matchwords).|
-|Anlage enthält eines dieser Wörter  <br><br> Anlage enthält keine der folgenden Wörter | Um die Richtlinie anwenden, wenn bestimmte Wörter oder Ausdrücke ein- oder ausgeschlossen werden in e-Mail-Anlagen (beispielsweise ein Word-Dokument), geben Sie jedes Wort oder Ausdruck in einer separaten Zeile ein. Jede Zeile der eingegebenen Wörter separat angewendet werden (nur eine Zeile gilt für die Richtlinie auf die Anlage angewendet). Weitere Informationen zum Eingeben von Wörtern oder Begriffen finden Sie im nächsten Abschnitt [übereinstimmende Wörter und Ausdrücke zum-e-Mails oder Anhänge](supervision-policies.md#Matchwords).|
-|Anlage ist eine der folgenden Dateitypen  <br><br> Anlage ist keiner dieser Dateitypen | Um eine Kommunikation überwachen, die ein- oder ausschließen bestimmte Typen von Anlagen an, geben Sie die Dateierweiterungen (wie .exe oder PDF). Wenn Sie ein- oder Ausschließen von mehreren Dateierweiterungen möchten, geben Sie diese in separaten Zeilen. Nur eine Anlage-Erweiterung muss für die Richtlinie angewendet übereinstimmen.|
-|Nachricht ist größer als  <br><br> Nachrichtengröße ist nicht größer als | Verwenden Sie diese Bedingungen-Mails basierend auf eine bestimmte Größe um zu überprüfen, um die maximale oder minimale Größe anzugeben, die eine Nachricht werden kann, bevor es überprüft wird. Beispielsweise, wenn Sie die **Nachrichtengröße ist größer als** angeben \> **1.0 MB**, alle Nachrichten, die 1.01 MB und größere wird sind hin überprüft werden. Sie können Bytes, KB, MB oder GB für diese Bedingung auswählen.|
-|Anlage ist größer als  <br><br> Anlage ist nicht größer als | Um Nachrichten basierend auf deren Anlagengröße zu überprüfen, geben Sie die maximale oder minimale Größe einer Anlage kann sein, bevor Sie die Nachricht und ihre Anhänge unterliegen überprüfen. Wenn Sie die **Anlage ist größer als** angeben beispielsweise \> **2.0 MB**, alle Nachrichten mit Anlagen 2.01 MB und Failover wird überprüft. Sie können Bytes, KB, MB oder GB für diese Bedingung auswählen.|
+|Die Nachricht wird von einer dieser Domänen empfangen.  <br><br> Nachricht wird von keiner dieser Domänen empfangen | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine empfangene Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
+|Die Nachricht wird an eine dieser Domänen gesendet.  <br><br> Nachricht wird an keine dieser Domänen gesendet | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine gesendete Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
+|Die Nachricht wird mit einer dieser Bezeichnungen klassifiziert.  <br><br> Die Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert | Anwenden der Richtlinie, wenn bestimmte Aufbewahrungs Bezeichnungen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und konfigurierte Bezeichnungen können als Teil dieser Bedingung ausgewählt werden. Jede ausgewählte Bezeichnung wird separat angewendet (nur eines dieser Bezeichnungen muss angewendet werden, damit die Richtlinie auf die Nachricht angewendet werden kann). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Übersicht über Aufbewahrungs Beschriftungen](https://docs.microsoft.com/office365/securitycompliance/labels).|
+|Nachricht enthält eines dieser Wörter  <br><br> Nachricht enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene Zeile wird separat angewendet (nur eine dieser Zeilen muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt, der [Wörter und Phrasen mit e-Mails oder Anlagen übereinstimmt](supervision-policies.md#Matchwords).|
+|Anlage enthält eines dieser Wörter  <br><br> Anlage enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachrichtenanlage eingeschlossen oder ausgeschlossen werden (beispielsweise ein Word-Dokument), geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinie gelten, die auf die Anlage angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt, der [Wörter und Phrasen mit e-Mails oder Anlagen übereinstimmt](supervision-policies.md#Matchwords).|
+|Attachment ist einer dieser Dateitypen  <br><br> Attachment ist keiner dieser Dateitypen | Um die Kommunikation zu überwachen, in der bestimmte Typen von Anlagen eingeschlossen oder ausgeschlossen werden, geben Sie die Dateierweiterungen ein (wie. exe oder. pdf). Wenn Sie mehrere Dateierweiterungen einschließen oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Für die anzuwendende Richtlinie muss nur eine Anlagenerweiterung übereinstimmen.|
+|Nachricht ist größer als  <br><br> Die Nachrichtengröße ist nicht größer als | Um Nachrichten anhand einer bestimmten Größe zu überarbeiten, verwenden Sie diese Bedingungen, um die maximale oder minimale Größe einer Nachricht anzugeben, bevor Sie überprüft werden kann. wenn sie beispielsweise die **nachrichtengröße größer als** \> **1,0 mb**angeben, werden alle nachrichten, die 1,01 mb groß sind, überprüft. Sie können für diese Bedingung Byte, Kilobyte, Megabytes oder Gigabytes auswählen.|
+|Die Anlage ist größer als  <br><br> Die Anlage ist nicht größer als | Um Nachrichten anhand der Größe Ihrer Anlagen zu überarbeiten, geben Sie die maximale oder minimale Größe an, die eine Anlage aufweisen kann, bevor die Nachricht und ihre Anlagen überprüft werden können. wenn sie beispielsweise attachment angeben, **ist größer als** \> **2,0 mb**, werden alle nachrichten mit anlagen 2,01 mb und mehr überprüft. Sie können für diese Bedingung Byte, Kilobyte, Megabytes oder Gigabytes auswählen.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"> </a>
 
-Jede Zeile der eingegebenen Wörter separat angewendet werden (nur eine Zeile muss für die Richtlinie Bedingung auf das e-Mail- oder Anlage anwenden anwenden). Verwenden Sie die Bedingung, die **Nachricht enthält eines dieser Wörter**, mit den Schlüsselwörtern "Banker" und "Insider-Geschäften" beispielsweise fangen wir an in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder der Ausdruck "Insider-Geschäften" enthält. Nur eine der folgenden Wörter oder Ausdrücke muss für diese Richtlinie Bedingung anwenden auftreten. Wörter in die Nachricht oder Anlage müssen exakt übereinstimmen, was Sie eingeben.
+Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinienbedingung gelten, die auf die e-Mail oder Anlage angewendet werden soll). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**mit den Stichwörtern "Banker" und "Insider Trading" in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder "Insider Trading" enthalten. Nur eines dieser Wörter oder Ausdrücke muss auftreten, damit diese Richtlinienbedingung angewendet wird. Wörter in der Nachricht oder Anlage müssen genau mit Ihren Angaben übereinstimmen.
   
 ##### <a name="entering-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 
-Wenn Sie mehrere Bedingungen eingeben, verwendet Office 365 aller Bedingungen um zu bestimmen, wann die Richtlinie auf Kommunikationselemente anwenden zusammen. Wenn Sie mehrere Bedingungen eingerichtet haben, müssen sie alle für die Richtlinie angewendet wurde, erfüllt sein, wenn Sie eine Ausnahme eingeben. Nehmen wir beispielsweise an, dass Sie eine Richtlinie erstellen, die angewendet werden soll, wenn eine Nachricht das Wort "Handel enthält" und größer als 2 MB ist müssen. Wenn die Nachricht auch die Wörter "Von Contoso finanzielle genehmigt enthält" sollten jedoch die Richtlinie nicht angewendet. In diesem Fall würde die drei Bedingungen folglich wie folgt lauten:
+Wenn Sie mehrere Bedingungen eingeben, verwendet Office 365 alle Bedingungen, um zu bestimmen, wann die Richtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen Sie alle erfüllt sein, damit die Richtlinie angewendet wird, es sei denn, Sie geben eine Ausnahme ein. Angenommen, Sie müssen eine Richtlinie erstellen, die angewendet werden sollte, wenn eine Nachricht das Wort "Trade" enthält und größer als 2MB ist. Wenn die Nachricht jedoch auch die Wörter "Approved by Contoso Financial" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Fall würden die drei Bedingungen wie folgt aussehen:
   
-- **Nachricht enthält eines dieser Wörter**, mit den Schlüsselwörtern "Handel"
+- Die **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Trade".
 
-- **Nachrichtengröße ist größer als**, mit dem Wert von 2 MB
+- Die **Nachrichtengröße ist größer als**, mit dem Wert 2 MB
 
-- **Nachricht enthält keine der folgenden Wörter**, mit den Schlüsselwörtern "Contoso finanzielle Teams genehmigt".
+- Die **Nachricht enthält keines dieser Wörter**, mit den Stichwörtern "von Contoso Financial Team genehmigt".
 
-#### <a name="review-percentage"></a>Überprüfen der Prozentsatz
+#### <a name="review-percentage"></a>Prozentsatz der Überprüfungen
 
-Sie können einen Prozentsatz der gesamten Kommunikation, die durch eine Richtlinie für Überwachung gesteuert wird, wenn Sie die Menge des Inhalts, um zu prüfen reduzieren möchten, angeben. Wir werden nach dem Zufallsprinzip, Umfang des Inhalts aus der Gesamtprozentsatz auswählen, die die Bedingungen entspricht, den, die Sie ausgewählt haben. Wenn Sie Bearbeiter alle Elemente überprüfen möchten, können Sie in einer Richtlinie für Überwachung **100 %** eingeben.
+Sie können einen Prozentsatz der gesamten Kommunikation angeben, die von einer Aufsichtsrichtlinie gesteuert wird, wenn Sie die Menge der zu überprüfenden Inhalte reduzieren möchten. Wir wählen nach dem Zufallsprinzip die Menge an Inhalten aus dem Gesamtprozentsatz aus, der den von Ihnen ausgewählten Bedingungen entspricht. Wenn Sie möchten, dass die Bearbeiter alle Elemente überwachen, können Sie **100%** in eine Aufsichtsrichtlinie eingeben.
 
-## <a name="monitoring--managing"></a>Verwalten von & Monitoring
+## <a name="monitoring--managing"></a>ÜberWachen der &-Verwaltung
 
-Überwachung der Ergebnisse Ihrer Richtlinien für die Überwachung und Anwenden von einem Tag Lösung ist einfach und bequem. Sie können den Status der überprüften Elemente, die Benutzer und Gruppen unter Überwachung, und die Benutzer und Gruppen, die als Bearbeiter schnell sehen.
+Die Überwachung der Ergebnisse ihrer Aufsichtsrichtlinien und die Anwendung eines Lösungs Tags ist einfach und bequem. Sie können den Status von überprüfte Elemente, die Benutzer und Gruppen unter Aufsicht und die Benutzer und Gruppen, die als Prüfer festgelegt sind, schnell anzeigen.
 
-### <a name="supervision-policy-dashboard"></a>Überwachung Richtlinie dashboard
+### <a name="supervision-policy-dashboard"></a>Überwachungsrichtlinien-Dashboard
 
-Die einfachste Möglichkeit zum Verwalten der Überwachung Gruppenrichtlinienergebnissen und zum Auflösen der ausstehenden Elemente ist die Verwendung das Überwachung Richtlinie Dashboard. Das Dashboard ermöglicht Bearbeiter schnell finden Artikel, die überprüft werden, Ausführen einer Aktion für ein Element, und überprüfen Sie die Ergebnisse von zuvor überprüft und Elemente für jede aufsichtsrichtlinie aufgelöst. Sie können das Überwachung Richtlinie Dashboard in der Office 365-Sicherheit & Compliance Center unter **Überwachung**zugreifen > *Your benutzerdefinierte Richtlinie* > **Öffnen**.
+Am einfachsten können Sie die Ergebnisse der Aufsichtsrichtlinien verwalten und ausstehende Elemente lösen, indem Sie das Dashboard für Aufsichtsrichtlinien verwenden. Mit diesem Dashboard können Prüfer schnell die Elemente anzeigen, die überprüft werden müssen, Maßnahmen für ein Element ergreifen und die Ergebnisse der zuvor überprüften und gelösten Elemente für jede Aufsichtsrichtlinie überprüfen. sie können auf das dashboard "aufsichtsrichtlinien" im Office 365 Security & Compliance Center unter " **aufsicht** > *über ihre benutzerdefinierte richtlinie* > **öffnen**" zugreifen.
 
 #### <a name="dashboard-home"></a>Dashboard-Startseite
 
-Die **Startseite** Dashboardseite hat mehrere Abschnitte, die Sie schnell auf Ihre aufsichtsrichtlinien ergreifen unterstützen. Hier können Sie:
+Die Dashboard- **Start** Seite verfügt über mehrere Abschnitte, die Ihnen helfen, schnell Maßnahmen für Ihre Aufsichtsrichtlinien durchführen zu können. Hier können Sie folgende Schritte durchgehen:
 
-- Kurz die ausstehenden und aufgelöst Highlights für die Woche
+- Schnelles überarbeiten der ausstehenden und aufgelösten Highlights der Woche
 - Anzeigen einer Liste der überwachten Benutzer und überwachten Gruppen für die ausgewählte Richtlinie
-- Finden Sie eine Liste der Bearbeiter und überprüfen Teams für die ausgewählte Richtlinie
-- Erfahren Sie, welche Plattformen Kommunikation Inhalte unter Überwachung für die Richtlinie ein.
+- Anzeigen einer Liste der Prüfer und Überprüfen von Teams für die ausgewählte Richtlinie
+- Sehen Sie, welche Kommunikationsplattformen Inhalte unter Überwachung für die Richtlinie enthalten.
 
-#### <a name="supervise-tab"></a>Registerkarte Überwachung
+#### <a name="supervise-tab"></a>ÜberWachen der Registerkarte
 
-Die Registerkarte **Supervise** wird, in dem Bearbeiter Ausführen einer Aktion und Elemente auflösen können durch die ausgewählte Richtlinie identifiziert. Hier können Sie:
+Auf **** der Registerkarte überwachen können Prüfer Aktionen ausführen und von der ausgewählten Richtlinie identifizierte Elemente auflösen. Hier können Sie folgende Schritte durchgehen:
 
-- Ausstehende kompatible, nicht kompatible und fragwürdige Elemente filtern, indem Sie
-- Markieren Sie ein einzelnes Element als kompatible, nicht kompatible oder fragwürdige. Sie können auch einen Kommentar mit dem Element, um zu verdeutlichen, dass die Kategorien ausgeführte Aktion aufzeichnen.
-- Massen Markieren mehrerer Elemente als kompatible, nicht kompatible oder fragwürdige. Sie können auch einen Kommentar mit mehreren Elementen, um zu verdeutlichen, dass die Kategorien ausgeführte Aktion aufzeichnen.
-- Anzeigen des Verlaufs von der Kategorien für ein einzelnes Element, einschließlich, die das Element, das Datum und Uhrzeit der die Aktion, die Lösung Tag und Kommentare enthalten aufgelöst.
-- Klassifizieren Sie zuvor überprüfte Elemente als kompatible, nicht kompatible oder fragwürdige. Sie können auch einen Kommentar mit einzelne oder mehrere Elemente aus, um zu verdeutlichen, dass die erneute Klassifizierung Aktion aufzeichnen.
+- Filtern nach ausstehenden, kompatiblen, nicht kompatiblen und fragwürdigen Elementen
+- Kennzeichnen eines einzelnen Elements als kompatibel, nicht kompatibel oder fragwürdig. Sie können auch einen Kommentar mit dem Element aufzeichnen, um die getroffene Markierungs Aktion zu veranschaulichen.
+- Massen Kennzeichnung mehrerer Elemente als kompatibel, nicht kompatibel oder fragwürdig. Sie können auch einen Kommentar mit mehreren Elementen aufzeichnen, um die getroffene Markierungs Aktion zu veranschaulichen.
+- Anzeigen des Verlaufs des Taggings für ein einzelnes Element, einschließlich der Person, die das Element aufgelöst hat, des Datums und der Uhrzeit der Aktion, des Lösungs Tags und der enthaltenen Kommentare.
+- Neu klassifizieren Sie zuvor überprüfte Elemente als kompatibel, nicht konform oder fragwürdig. Sie können auch einen Kommentar mit einzelnen oder mehreren Elementen aufzeichnen, um die umklassifizierungs Aktion zu veranschaulichen.
 
-#### <a name="resolved-items-tab"></a>Registerkarte Elemente aufgelöst
+#### <a name="resolved-items-tab"></a>Registerkarte "aufgelöste Elemente"
 
-Die Registerkarte **Elemente aufgelöst** wird, auf alle zuvor aufgelöst Elemente für die ausgewählte Richtlinie Bearbeiter angezeigt werden. Hier können Sie:
+Auf der Registerkarte **aufgelöste Elemente** können Prüfer alle zuvor aufgelöste Elemente für die ausgewählte Richtlinie anzeigen. Hier können Sie folgende Schritte durchgehen:
 
-- Schnelles Anzeigen und den Betreff, Absender und Datum behoben Elemente sortieren.
-- Anzeigen des Verlaufs Klassifizierung und Kommentar eines beliebigen ausgewählten Elements
+- Schnelles anzeigen und Sortieren des Betreffs, des Absenders und des Datums der aufgelösten Elemente.
+- Anzeigen des Klassifizierungs-und Kommentar Verlaufs eines ausgewählten Elements
 
-### <a name="other-ways-to-review-items"></a>Weitere Methoden zum Lesen von Elementen
+### <a name="other-ways-to-review-items"></a>Weitere Möglichkeiten zum Überarbeiten von Elementen
 
-Wenn Bearbeiter nicht das Dashboard Überwachung in Office 365 verwenden möchten, müssen sie auch andere Optionen, um zu prüfen und Verwalten von aufsichtsrichtlinien erfassten Elemente.
+Wenn die Bearbeiter das Aufsichts Dashboard in Office 365 nicht verwenden möchten, haben Sie auch weitere Optionen zum überarbeiten und Verwalten von Elementen, die von Aufsichtsrichtlinien erfasst werden.
 
 #### <a name="outlook-on-the-web"></a>Outlook im Web
 
-Benutzer, die als Bearbeiter in einer aufsichtsrichtlinie für Outlook im Web verwenden können, um zu prüfen und Überwachung Elementen behoben. Die Add-in-Überwachung wird automatisch in Outlook im Web für alle Bearbeiter installiert, die Sie in der Richtlinie angegeben. Ihre Organisation für die Überwachung Richtlinie freigegebene Ordner für konfigurierten Bearbeiter verfügbar sein soll ist keine zusätzliche Konfiguration erforderlich.
+Benutzer, die in einer Aufsichtsrichtlinie als Prüfer festgelegt sind, können mithilfe von Outlook im Web Aufsichts Elemente überwachen und lösen. Das Überwachungs-Add-in wird automatisch in Outlook im Web für alle in der Richtlinie angegebenen Prüfer installiert. Es ist keine zusätzliche Konfiguration erforderlich, damit Ihre Organisation für Aufsichtsrichtlinie freigegebene Ordner für konfigurierte Prüfer verfügbar ist.
 
-Verwenden von Outlook im Web, können Bearbeiter:
+Mit Outlook im Web können Prüfer folgende Möglichkeiten nutzen:
 
-- Zeigen Sie gefilterte Elemente an, indem Sie kompatible, nicht kompatible, fragwürdige und aufgelöst status
-- Markieren Sie ein einzelnes Element als kompatible, nicht kompatible, fragwürdige oder aufgelöst. Sie können auch einen Kommentar mit dem Element, um zu verdeutlichen, dass die Kategorien ausgeführte Aktion aufzeichnen.
-- Anzeigen des Verlaufs von der Kategorien für ein einzelnes Element, einschließlich, die das Element, das Datum und Uhrzeit der die Aktion, die Lösung Tag und Kommentare enthalten aufgelöst.
-- Klassifizieren Sie zuvor überprüfte Elemente als kompatible, nicht kompatible oder fragwürdige. Sie können auch einen Kommentar mit einzelner Elemente, um zu verdeutlichen, dass die erneute Klassifizierung Aktion aufzeichnen.
+- Anzeigen gefilterter Elemente nach dem Status "kompatibel", "nicht kompatibel", "fragwürdig" und "aufgelöst"
+- Kennzeichnen eines einzelnen Elements als kompatibel, nicht kompatibel, fraglich oder aufgelöst. Sie können auch einen Kommentar mit dem Element aufzeichnen, um die getroffene Markierungs Aktion zu veranschaulichen.
+- Anzeigen des Verlaufs des Taggings für ein einzelnes Element, einschließlich der Person, die das Element aufgelöst hat, des Datums und der Uhrzeit der Aktion, des Lösungs Tags und der enthaltenen Kommentare.
+- Neu klassifizieren Sie zuvor überprüfte Elemente als kompatibel, nicht konform oder fragwürdig. Sie können auch einen Kommentar mit einzelnen Elementen aufzeichnen, um die umklassifizierungs Aktion zu veranschaulichen.
 
 #### <a name="microsoft-outlook"></a>Microsoft Outlook
 
-Um Communications identifiziert durch eine Richtlinie für die Überwachung zu überprüfen, können Bearbeiter auch des Aufsicht-add-Ins für Microsoft Outlook verwenden. Bearbeiter müssen jedoch über einige Schritte zur Installation in der Desktopversion von Outlook ausführen. Ausführliche Hilfestellungen zur Überwachung-add-in für Outlook installieren finden Sie unter [Configure aufsichtsrichtlinien](configure-supervision-policies.md).
+Zur Überprüfung der durch eine Aufsichtsrichtlinie identifizierten Kommunikation können Prüfer auch das Aufsichts-Add-in für Microsoft Outlook verwenden. Die Prüfer müssen jedoch einige Schritte ausführen, um Sie in der Desktop Version von Outlook zu installieren. Ausführliche Anleitungen zum Installieren des Aufsichts-Add-Ins für Outlook finden Sie unter [Konfigurieren von Aufsichtsrichtlinien](configure-supervision-policies.md).
 
-Mit Outlook können Bearbeiter:
+Mithilfe von Outlook können Prüfer:
 
-- Zeigen Sie gefilterte Elemente an, indem Sie kompatible, nicht kompatible, fragwürdige und aufgelöst status
-- Markieren Sie ein einzelnes Element als kompatible, nicht kompatible, fragwürdige oder aufgelöst. Sie können auch einen Kommentar mit dem Element, um zu verdeutlichen, dass die Kategorien ausgeführte Aktion aufzeichnen.
-- Anzeigen des Verlaufs von der Kategorien für ein einzelnes Element, einschließlich, die das Element, das Datum und Uhrzeit der die Aktion, die Lösung Tag und Kommentare enthalten aufgelöst.
-- Klassifizieren Sie zuvor überprüfte Elemente als kompatible, nicht kompatible oder fragwürdige. Sie können auch einen Kommentar mit einzelner Elemente, um zu verdeutlichen, dass die erneute Klassifizierung Aktion aufzeichnen.
+- Anzeigen gefilterter Elemente nach dem Status "kompatibel", "nicht kompatibel", "fragwürdig" und "aufgelöst"
+- Kennzeichnen eines einzelnen Elements als kompatibel, nicht kompatibel, fraglich oder aufgelöst. Sie können auch einen Kommentar mit dem Element aufzeichnen, um die getroffene Markierungs Aktion zu veranschaulichen.
+- Anzeigen des Verlaufs des Taggings für ein einzelnes Element, einschließlich der Person, die das Element aufgelöst hat, des Datums und der Uhrzeit der Aktion, des Lösungs Tags und der enthaltenen Kommentare.
+- Neu klassifizieren Sie zuvor überprüfte Elemente als kompatibel, nicht konform oder fragwürdig. Sie können auch einen Kommentar mit einzelnen Elementen aufzeichnen, um die umklassifizierungs Aktion zu veranschaulichen.
 
 ## <a name="reporting"></a>Berichte
 
-Verwenden Sie die Überwachung Berichte, um die Überprüfung Aktivität Ebene der Richtlinie und Bearbeiter finden Sie unter. Für jede Richtlinie können Sie auch live Statistiken auf den aktuellen Status der Überprüfung Aktivität anzeigen. Sie können die Überwachung Berichte verwenden:
+Verwenden Sie die Überwachungsberichte, um die Überprüfungsaktivität auf Richtlinie und Prüfer Ebene anzuzeigen. Für jede Richtlinie können Sie auch Live Statistiken zum aktuellen Status der Überprüfungen anzeigen. Sie können die Überwachungsberichte für folgende Zwecke verwenden:
   
 - Stellen Sie sicher, dass Ihre Richtlinien wie gewünscht funktionieren.
-- Hier erfahren Sie, wie viele Communications zur Prüfung erkannt werden.
-- Erfahren Sie, wie viele Communications nicht kompatibel sind und welche übergeben werden überprüfen. Diese Informationen helfen Ihnen die Entscheidung für Optimieren Ihrer Richtlinien oder Ändern der Anzahl der Bearbeiter.
+- Erfahren Sie, wie viele Kommunikationen zur Überprüfungen identifiziert werden.
+- Erfahren Sie, wie viele Kommunikationen nicht kompatibel sind und welche Überprüfungen durchgeführt werden. Anhand dieser Informationen können Sie entscheiden, ob Sie Ihre Richtlinien optimieren oder die Anzahl der Bearbeiter ändern möchten.
 
-### <a name="view-the-supervision-report"></a>Anzeigen des Berichts zu Überwachung
+### <a name="view-the-supervision-report"></a>Anzeigen des Aufsichts Berichts
 
-1. Melden Sie sich bei der [Sicherheit & Compliance Center](https://protection.office.com/) mit den Anmeldeinformationen für ein Administratorkonto in Office 365-Organisation, die über Berechtigungen zum Anzeigen von Berichten Aufsicht verfügt.
-2. Wechseln Sie zu **Berichte** \> **Dashboard** oder **Überwachung**. Sehen Sie eine Überwachung reporting Widget mit einer Zusammenfassung der aktuellen Aufsicht Policy-Aktivität ein.
-3. Wählen Sie das Widget **Überwachung** , um die Seite detaillierten Bericht öffnen.
+1. Melden Sie sich beim [Security _AMP_ Compliance Center](https://protection.office.com/) mithilfe der Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an, das über Berechtigungen zum Anzeigen von Überwachungsberichten verfügt.
+2. Wechseln Sie zu **Berichte** \> **Dashboard** oder **Überwachung**. Es wird ein Widget "Aufsichtsbericht" mit einer Zusammenfassung der aktuellen Aufsichtsrichtlinien Aktivität angezeigt.
+3. Wählen Sie das **Überwachungs** -widget aus, um die Seite detaillierte Berichte zu öffnen.
 
 > [!NOTE]
-> Wenn Sie auf die Seite **Berichte** zugreifen nicht, überprüfen Sie, ob Sie ein Mitglied der Rollengruppe generelle Überprüfung sind wie unter [Überwachung in Ihrer Organisation zur Verfügung stellen](configure-supervision-policies.md). In dieser Rolle Gruppe können Sie erstellen und Verwalten der Überwachung eingeschlossen werden Richtlinien, und führen Sie den Bericht.
+> Wenn Sie nicht auf die Seite " **Berichte** " zugreifen können, stellen Sie sicher, dass Sie Mitglied der rollenGruppe "Supervisory Review" sind, wie unter [machen der Aufsicht in Ihrer Organisation](configure-supervision-policies.md)beschrieben. Wenn Sie in diese Rollengruppe eingeschlossen werden, können Sie Aufsichtsrichtlinien erstellen und verwalten und den Bericht ausführen.
   
-### <a name="how-to-use-the-report"></a>So verwenden Sie den Bericht
+### <a name="how-to-use-the-report"></a>Verwenden des Berichts
 
-Wenn eine Richtlinie für Überwachung Kommunikation-Nachricht zum Überarbeiten erkannt wird, wird die e-Mail in der Prüfer Aufsicht Ordner in Outlook und Outlook übermittelt Web app. Dieser Bericht listet die Namen der einzelnen Richtlinien und die Anzahl der Kommunikation in den einzelnen Phasen des Prozesses überprüfen.
+Wenn eine Überwachungsrichtlinie eine Kommunikations Nachricht zur Überprüfung identifiziert, wird die e-Mail an den Aufsichts Ordner der Prüfer in Outlook und Outlook Web App übermittelt. In diesem Bericht werden die Namen der einzelnen Richtlinien und die Anzahl der Kommunikationen in jeder Phase des überarbeits Vorgangs aufgelistet.
   
-Verwenden Sie den Bericht an:
+Verwenden Sie den Bericht für Folgendes:
   
 - Anzeigen von Daten für alle oder bestimmte Richtlinien.
-- Anzeigen von Daten, die gruppiert nach Tag Typs (beispielsweise konform, Questionable usw.), Bearbeiter oder Nachrichtentyp.
-- Exportieren von Daten in eine CSV-Datei basierend auf das Aktivitätsdatum, Richtlinie, und durch Reviewer-Aktivität.
-- Filtern von Daten basierend auf das Aktivitätsdatum, Tagtyp, Reviewer und Nachrichtentyp.
+- Anzeigen von Daten nach Transpondertyp gruppiert (beispielsweise kompatibel, fragwürdig, etc.), Prüfer oder Nachrichtentyp.
+- Exportieren von Daten in eine CSV-Datei basierend auf dem Aktivitätsdatum, der Richtlinie und der Prüfer Aktivität.
+- Filtern von Daten basierend auf dem Aktivitätsdatum, dem Tag-Typ, dem Prüfer und dem Nachrichtentyp.
 
-Es folgt eine Aufschlüsselung der Werte, die möglicherweise in der Spalte **Typ Tag** angezeigt.
+Nachfolgend finden Sie eine Aufstellung der Werte, die in der **** Spalte Transpondertyp angezeigt werden können.
   
-|**Tagtyp**|**Was bedeutet, dass**|
+|**Tagtyp**|**Bedeutung**|
 |:-----|:-----|
-| Nicht überprüft. | Die Anzahl der e-Mails, die noch nicht überprüft. Diese e-Mails werden zur Überprüfung im Office 365 Aufsicht Dashboard oder in der Prüfer Aufsicht Ordner in Outlook-/Outlook Web App erwartet.|
-| Kompatible | Die Anzahl der e-Mails überprüft und als kompatibel markiert. Diese Nachrichten müssen noch aufgelöst werden. |
-| Fragwürdige | Die Anzahl der e-Mails überprüft und fragwürdige gekennzeichnet. Dies fungiert als Flag. andere Bearbeiter helfen überprüfen, ob eine e-Mail-Nachricht für die Einhaltung der Untersuchung benötigt. Diese Nachrichten müssen noch aufgelöst werden. |
-| Nicht kompatible (aktiv) | Die Anzahl der nicht konforme e-Mails, die derzeit Bearbeiter untersuchen. |
-| Nicht-kompatible (aufgelöst) | Die Anzahl der nicht konforme e-Mails, die Bearbeiter untersucht und aufgelöst. |
-| Drücken Sie die Richtlinie | Die Gesamtzahl (täglich) von Nachrichten von Exchange, Teams und Drittanbieter-Datenquellen, die eine oder mehrere der in einer Richtlinie für Überwachung festgelegten Bedingungen entsprechen. |
-| Im Geltungsbereich | Die Gesamtzahl (täglich) von Nachrichten von Exchange, Teams und Drittanbieter-Datenquellen, die durch eine Richtlinie für Überwachung überprüft |
-| Aufgelöst | Die Gesamtzahl der Nachrichten von Exchange, Teams und Drittanbieter-Datenquellen, die als **gelöst** klassifiziert wurden|
+| Nicht überprüft | Die Anzahl von e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Office 365-überwachungsdashboard oder im Ordner "Überwachung" in Outlook/Outlook Web App.|
+| Kompatibel | Die Anzahl der überprüften und als kompatibel markierten e-Mails. Diese Nachrichten müssen noch aufgelöst werden. |
+| Fragwürdige | Die Anzahl der überprüften und markierten e-Mails. Dies dient als Kennzeichnung; andere Prüfer können untersuchen, ob eine e-Mail-Konformitätsprüfung erforderlich ist. Diese Nachrichten müssen noch aufgelöst werden. |
+| Nicht konform (aktiv) | Die Anzahl der nicht kompatiblen e-Mails, die von den Prüfern derzeit untersucht werden. |
+| Nicht kompatibel (aufgelöst) | Die Anzahl der nicht kompatiblen e-Mails, die von den Bearbeitern untersucht und aufgelöst wurden. |
+| Treffer Richtlinie | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die mit einem oder mehreren Bedingungen übereinstimmten, die in einer Aufsichtsrichtlinie definiert sind. |
+| Im Zuständigkeitsbereich | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die von einer Aufsichtsrichtlinie überprüft wurden. |
+| Aufgelöst | Die Gesamtanzahl von Nachrichten von Exchange, Teams und drittanbieterdaten Quellen, die als **aufgelöst** klassifiziert wurden|
 
 > [!NOTE]
-> Aufsichtsrichtlinien müssen zuerst bereitgestellt werden, bevor sie in diesem Bericht angezeigt werden. Wenn Richtlinien gelöscht werden, werden darüber hinaus noch Verlaufsdaten angezeigt. Allerdings sie "nicht vorhandene Richtlinie" gekennzeichnet sind, und die **Export** -Funktion ist nicht verfügbar.
+> Aufsichtsrichtlinien müssen zuerst eingerichtet werden, bevor Sie in diesem Bericht angezeigt werden. Wenn Richtlinien gelöscht werden, werden außerdem Verlaufsdaten angezeigt. Sie werden jedoch als "nicht vorhandene Richtlinie" angezeigt, und die **Export** Funktion ist nicht verfügbar.
 
 ## <a name="auditing"></a>Überwachung
 
-In einigen Fällen müssen Sie Informationen zur Einhaltung behördlicher bereitstellen oder Compliance-Auditoren Überwachung der Mitarbeiteraktivitäten und Communications nachzuweisen. Dies ist möglicherweise eine Zusammenfassung der alle generelle Aktivitäten im Zusammenhang mit einer definierten Richtlinie oder, jedes Mal, wenn eine Richtlinie für Überwachung geändert oder aktualisiert wurde. Aufsichtsrichtlinien haben integrierten Prüflisten für vollständige Bereitschaft für interne oder externe Überwachungen. Nachweis der generelle Verfahren kann mit einen detaillierten Audit Verlauf aller Aktionen, die von Ihrer aufsichtsrichtlinien überwacht nachgewiesen werden.
+In einigen Fällen müssen Sie den Zulassungs Prüfern Informationen zur Verfügung stellen, um die Überwachung der Mitarbeiter Aktivitäten und-Kommunikation nachzuweisen. Dabei kann es sich um eine Zusammenfassung aller Aufsichtsaktivitäten handeln, die mit einer definierten Richtlinie oder zu jeder Zeit geändert oder aktualisiert wurden. Aufsichtsrichtlinien verfügen über integrierte Überwachungspfade für die vollständige Bereitschaft für interne oder externe Überprüfungen. Der Nachweis der Aufsichtsverfahren kann mit einem detaillierten Überwachungsverlauf jeder von ihren Aufsichtsrichtlinien überwachten Aktion demonstriert werden.
 
-Die folgenden Aufsicht Richtlinie Aktivitäten überwacht werden sollen, und können mithilfe der unified Office 365-Überwachungsprotokolle angezeigt werden:
+Die folgenden Aufsichtsrichtlinien Aktivitäten werden überwacht und können mithilfe der Unified Office 365-Überwachungsprotokolle angezeigt werden:
 
 |**Aktivität**|**Zugeordnete Befehle**|
 |:-----|:-----|
-| Erstellen einer Richtlinie | Neue SupervisoryReviewPolicy <br> Neue SupervisoryReviewRule |
+| Erstellen einer Richtlinie | New-SupervisoryReviewPolicy <br> New-SupervisoryReviewRule |
 | Bearbeiten einer Richtlinie | Set-SupervisoryReviewPolicy <br> Set-SupervisoryReviewRule |
 | Löschen einer Richtlinie| Remove-SupervisoryReviewPolicy |
 
-Die Überwachungen können abgerufen werden, mit der Suchfunktion von einheitlichen Audit Log oder mithilfe des [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) -PowerShell-Cmdlets.
+Die Überwachungen können mithilfe der Unified Audit Log-Suchfunktion oder mithilfe des PowerShell-Cmdlets [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) abgerufen werden.
 
-Beispielsweise das folgende Beispiel gibt die Aktivitäten für die alle generelle Überprüfung Aktivitäten (Richtlinien und Regeln) und enthält detaillierte Informationen für die einzelnen:
+Das folgende Beispiel gibt beispielsweise die Aktivitäten für alle Aufsichts Überprüfungen (Richtlinien und Regeln) zurück und listet detaillierte Informationen zu jedem:
 
 ```
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
 ```
 
-Zusätzlich zu den Informationen in die Überwachung von Berichten und Protokollen können Sie auch das PowerShell-Cmdlet [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) verwenden, um eine vollständige Liste aller Aufsicht detaillierte Richtlinie Aktivitäten zurückzugeben.
+Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das PowerShell [-Cmdlet Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit für die ersten Schritte?
 
-Zum Konfigurieren der Überwachung Richtlinien für Ihre Organisation zu starten, finden Sie unter [Configure aufsichtsrichtlinien](configure-supervision-policies.md).
+Informationen zum Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation finden Sie unter [Konfigurieren von Aufsichtsrichtlinien](configure-supervision-policies.md).

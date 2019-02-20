@@ -1,9 +1,9 @@
 ---
-title: Berichte in Office 365-Sicherheit &amp; Compliance Center
+title: Berichte im Office 365 Security & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/1/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
@@ -11,57 +11,57 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
-description: 'Verwenden Sie die Office 365-Sicherheit &amp; Compliance Center verschiedene Berichte für Ihre Exchange Online und SharePoint Online-Organisation abgerufen, plus Azure Active Directory-Berichte.  '
-ms.openlocfilehash: 019ccc49352db1aaf392287f62fa63f66913e293
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: 'Verwenden Sie das Office 365 Security & Compliance Center, um verschiedene Berichte für Ihre SharePoint Online-und Exchange Online-Organisation sowie Azure Active Directory-Berichte zu erhalten.  '
+ms.openlocfilehash: 36e6d3efce1758d52cd30451a2b60b19f4654056
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038338"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087304"
 ---
-# <a name="reports-in-the-office-365-security-amp-compliance-center"></a>Berichte in Office 365-Sicherheit &amp; Compliance Center
+# <a name="reports-in-the-office-365-security--compliance-center"></a>Berichte im Office 365 Security & Compliance Center
 
-Sie können die Seite **Berichte anzeigen** in der Office 365-Sicherheit &amp; Compliance Center schnellen Zugriff auf Überwachungsberichte für Ihre Exchange Online und SharePoint Online-Organisationen. Sie können auch auf Azure Active Directory (AD)-Anmeldung Benutzerberichte, Benutzeraktivität meldet, und der Azure AD-Überwachungsprotokolle melden Sie sich von der Seite **Berichte anzeigen** . Dies ist, da Ihres kostenpflichtigen Office 365-Abonnements in Microsoft Azure ein kostenloses Abonnement enthält. Beim ersten, die Sie versuchen, diese Azure Berichte, zugreifen müssen Sie eine einmalige Registrierungsvorgangs. 
+Auf der Seite **Berichte anzeigen** im Office 365 Security _AMP_ Compliance Center können Sie schnell auf Überwachungsberichte für Ihre SharePoint Online-und Exchange Online-Organisationen zugreifen. Sie können auf der Seite **Berichte anzeigen** auch auf Azure Active Directory (AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD-Überwachungsprotokoll zugreifen. Dies liegt daran, dass Ihr bezahltes Office 365-Abonnement ein kostenloses Abonnement für Microsoft Azure enthält. Wenn Sie versuchen, auf diese Azure-Berichte zuzugreifen, müssen Sie einen einmaligen Registrierungsvorgang ausführen. 
   
 > [!TIP]
-> Weitere Berichte über die Aktivität in Office 365-Organisation finden Sie unter [Berichte im Office 365 Administrationscenter](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
+> Weitere Berichte zu Aktivitäten in Ihrer Office 365-Organisation finden Sie unter [Aktivitätsberichte im office 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
   
  **Bevor Sie beginnen**
   
-Sie benötigen die folgenden Berechtigungen zum Anzeigen von Berichten in das Wertpapier &amp; Compliance Center.
+Sie benötigen die folgenden Berechtigungen zum Anzeigen von Berichten im Security & Compliance Center.
   
-- Sie müssen die Sicherheit Reader-Rolle in der Exchange-Verwaltungskonsole (EAC) anzeigen von Berichten in das Wertpapier zugewiesen werden &amp; Compliance Center. Standardmäßig wird diese Rolle Rollengruppen Organization Management und Sicherheit Reader in der Exchange-Verwaltungskonsole zugewiesen.
+- Sie müssen der Sicherheits Lese Rolle in der Exchange-Verwaltungskonsole (EAC) zugewiesen sein, um Berichte im Security & Compliance Center anzuzeigen. Diese Rolle wird standardmäßig den Rollengruppen "Organisationsverwaltung" und "Sicherheits Leser" in der Exchange-Verwaltungskonsole zugewiesen.
     
-- Sie müssen die Rolle des DLP Compliance Management in das Wertpapier zugewiesen werden &amp; Compliance Center zum Anzeigen von DLP-Berichte (und DLP-Richtlinien) in die Sicherheit &amp; Compliance Center. Standardmäßig ist dieser Rolle zugewiesen, die Compliance-Administrator, Organization Management und Sicherheitsadministrator Rollengruppen in das Wertpapier &amp; Compliance Center.
-    
-Darüber hinaus müssen Sie die Verhinderung von Datenverlust Rolle in der Exchange-Verwaltungskonsole zum Anzeigen von DLP-Berichte (und DLP-Richtlinien) zugewiesen werden in der Exchange-Verwaltungskonsole. Standardmäßig wird diese Rolle Rollengruppen Compliance Management und Organization Management in der Exchange-Verwaltungskonsole zugewiesen.
+- Sie müssen im Security & Compliance Center über die Verwaltungsrolle "View-Only DLP Compliance Management" verfügen, um DLP-Berichte im Security & Compliance Center anzuzeigen. Diese Rolle wird standardmäßig den Rollengruppen "Compliance-Administrator", "Organisationsverwaltung", "Sicherheitsadministrator" und "Sicherheits Leser" im Security & Compliance Center zugewiesen.
+
+- Darüber hinaus müssen Sie die Rolle "nur anzeigen" in der Exchange-verwaltungsKONSOLE besitzen, um DLP-Berichte in der Exchange-verwaltungsKONSOLE anzuzeigen. Diese Rolle wird standardmäßig den Rollengruppen "Compliance Management", "Organization Management" und "View-Only Organization Management" in der Exchange-verwaltungsKONSOLE zugewiesen.
   
- **So öffnen Sie die Seite "Berichte anzeigen" in die Sicherheit &amp; Compliance Center:**
+ **So öffnen Sie die Seite Berichte anzeigen im Security & Compliance Center:**
   
 1. Wechseln Sie zu [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
-2. Melden Sie sich bei Office 365 mit den Anmeldeinformationen für ein Benutzerkonto in Office 365-Organisation.
+2. Melden Sie sich bei Office 365 mit den Anmeldeinformationen für ein Benutzerkonto in Ihrer Office 365-Organisation an.
     
-Klicken Sie auf der Seite **Berichte anzeigen** können Sie die folgenden Berichtstypen anzeigen: 
+Auf der Seite **Berichte anzeigen** können Sie die folgenden Arten von Berichten anzeigen: 
   
 - [Überwachungsberichte in EOP](#auditing-reports)
-- [Überprüfungsbericht generelle](#supervisory-review-report)
+- [Bericht über die aufsichtsüberprüfung](#supervisory-review-report)
 - [Berichte zur Verhinderung von Datenverlust](#data-loss-prevention-reports)
     
 ## <a name="auditing-reports"></a>Überwachungsberichte
 
-Die folgende Tabelle beschreibt die Berichte im Abschnitt **Überwachung** auf der Seite " **Berichte anzeigen** " in das Wertpapier &amp; Compliance Center. 
+In der folgenden Tabelle werden die Berichte im Abschnitt **Überwachung** auf der Seite **Berichte anzeigen** im Security & Compliance Center beschrieben. 
   
 |**Bericht**|**Beschreibung**|
 |:-----|:-----|
-|**Die Überwachungsprotokollbericht Office 365** <br/> |Sie können das Office 365-Überwachungsprotokoll für Benutzer- und Admin-Aktivität in Office 365-Organisation suchen. Der Bericht enthält Einträge Benutzer- und Admin-Aktivität in Exchange Online, SharePoint Online, OneDrive für Unternehmen und Azure Active Directory, der den Verzeichnisdienst für Office 365 ist. Weitere Informationen finden Sie unter [Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).<br/> |
-|**Azure AD-Berichte** <br/> |Um für ungewöhnliche oder verdächtigen-Anmeldung Aktivität in Office 365-Organisation zu suchen, können-Anmeldung und die Aktivitäten Berichte in Microsoft Azure. Sie können auch Ereignisse im Überwachungsprotokoll Azure AD anzeigen. Klicken Sie zum Anzeigen von Berichten in Azure einfach auf **Berichte anzeigen Azure AD**. Weitere Informationen finden Sie unter:<br/><br/>[Verwenden Sie Ihr kostenloses Azure Active Directory-Abonnement in Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ihre Verwendung Berichte anzeigen](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
-|**Exchange-Überwachungsberichte** <br/> | Die Überprüfungsfunktionen können in Office 365 zum Nachverfolgen von Änderungen an der Exchange Online-Konfiguration von den Administratoren Ihrer Organisation. Änderungen an Ihrer Exchange Online-Organisation von einem Administrator der Microsoft Data Center oder von einem delegierten Administrator werden ebenfalls protokolliert. Für Exchange Online, Administrator-Überwachungsprotokolleinträge-Protokollierung ist standardmäßig aktiviert, so Sie nichts Unternehmen, um es zu aktivieren müssen. Exchange Online bietet auch postfachüberwachungsprotokollierung Sie den Zugriff auf Postfächer durch eine andere Person als der Postfachbesitzer verfolgen können. Sie müssen Aktivieren der postfachüberwachungsprotokollierung für jedes Postfach, die nicht-Besitzer Access nachverfolgen möchten.<br/>  Postfachüberwachungsprotokollierung für Admin und Postfach, können Sie Überwachungsberichte zum Anzeigen der Überwachungsprotokolleinträgen ausgeführt werden. Sie können auch Postfach- und Admin Überwachungsprotokolle exportieren, die an Sie innerhalb von 24 Stunden in einer XML-Datei gesendet werden, die e-Mail-Nachricht angefügt ist.<br/><br/>Weitere Informationen zum Exportieren von Überwachungsprotokollen finden Sie unter:  <br/><br/> [Exportieren von Postfachüberwachungsprotokollen](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Zeigen Sie an und exportieren Sie des Datencenter-administratorüberwachungsprotokolls](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Durchsuchen der rollengruppenänderungen oder Administrator Überwachungsprotokolle](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Exchange-Überwachungsberichte](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
+|**Office 365-Überwachungsprotokollbericht** <br/> |Sie können das Office 365-Überwachungsprotokoll nach Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation durchsuchen. Der Bericht enthält Einträge Benutzer-und Administratoraktivitäten in Exchange Online, SharePoint Online, OneDrive for Business und Azure Active Directory, bei dem es sich um den Verzeichnisdienst für Office 365 handelt. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).<br/> |
+|**Azure AD-Berichte** <br/> |Um ungewöhnliche oder verdächtige Anmeldeaktivitäten in Ihrer Office 365-Organisation zu suchen, können Sie Anmelde-und Aktivitätsberichte in Microsoft Azure verwenden. Sie können auch Ereignisse im Azure AD-Überwachungsprotokoll anzeigen. Klicken Sie zum Anzeigen von Berichten in Azure einfach auf **Azure AD-Berichte anzeigen**. Weitere Informationen finden Sie unter:<br/><br/>[Verwenden Sie Ihr freies Azure Active Directory-Abonnement in Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Zeigen Sie Ihre Access-und Nutzungsberichte](http://go.microsoft.com/fwlink/p/?LinkId=506902)an.  <br/> |
+|**Exchange-Überwachungsberichte** <br/> | Mithilfe der Überwachungsfunktionen in Office 365 können Sie Änderungen an Ihrer Exchange Online-Konfiguration nachverfolgen, die von den Administratoren Ihrer Organisation vorgenommen wurden. Änderungen, die von einem Microsoft-Datencenter Administrator oder einem Delegierten Administrator an Ihrer Exchange Online-Organisation vorgenommen wurden, werden ebenfalls protokolliert. Für Exchange Online ist die Administrator-Überwachungsprotokollierung standardmäßig aktiviert, sodass Sie nichts tun müssen, um Sie zu aktivieren. Exchange Online bietet außerdem die postfachüberwachungsprotokollierung, mit der Sie den Zugriff auf Postfächer von anderen Benutzern als dem Postfachbesitzer nachverfolgen können. Sie müssen die postfachüberwachungsprotokollierung für jedes Postfach aktivieren, für das der Zugriff durch nicht-Besitzer überwacht werden soll.<br/>  Sowohl für die Administrator-als auch für die postfachüberwachungsprotokollierung können Sie Überwachungsberichte ausführen, um die Überwachungsprotokolleinträge anzuzeigen. Sie können auch Postfach-und Administratorüberwachungsprotokolle exportieren, die innerhalb von 24 Stunden in einer XML-Datei an Sie gesendet werden, die an eine e-Mail-Nachricht angefügt ist.<br/><br/>Weitere Informationen zum Exportieren von Überwachungsprotokollen finden Sie unter:  <br/><br/> [Exportieren von Postfachüberwachungsprotokollen](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Anzeigen und Exportieren des Überwachungsprotokolls des Datencenter-Administrators](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Durchsuchen der Rollengruppenänderungen oder Administratorüberwachungsprotokolle](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Exchange-Überwachungsberichte](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
    
-## <a name="supervisory-review-report"></a>Überprüfungsbericht generelle
+## <a name="supervisory-review-report"></a>Bericht über die aufsichtsüberprüfung
 
-Mit dem Überprüfungsbericht generelle sehen Sie den Status aller generelle Überprüfung Richtlinien in Ihrer Organisation. Weitere Informationen finden Sie unter [Configure generelle Richtlinien für Ihre Organisation überprüfen](configure-supervision-policies.md).
+Mit dem Bericht über die aufsichtsüberprüfung können Sie den Status aller Aufsichtsrichtlinien in Ihrer Organisation anzeigen. Weitere Informationen finden Sie unter [configure Supervisory Review Policies for your organization](configure-supervision-policies.md).
   
 ## <a name="data-loss-prevention-reports"></a>Berichte zur Verhinderung von Datenverlust
 
-Verhinderung von Datenverlust (DLP)-Berichte enthalten Informationen zu DLP-Richtlinien und Regeln, die auf Inhalte angewendet wurden vertrauliche Daten in Office 365-Organisation enthalten. Sie können auch den Bericht zum Anzeigen von Informationen zu DLP-Aktionen, die auf Ihrer DLP-Richtlinien und Regeln basierten konfigurieren. Weitere Informationen finden Sie unter [Anzeigen des Berichts für die Verhinderung von Datenverlust](view-the-dlp-reports.md).
+Data Loss Prevention (DLP)-Berichte enthalten Informationen zu den DLP-Richtlinien und-Regeln, die auf Inhalte mit vertraulichen Daten in Ihrer Office 365-Organisation angewendet wurden. Sie können den Bericht auch so konfigurieren, dass Informationen zu DLP-Aktionen angezeigt werden, die auf Ihren DLP-Richtlinien und-Regeln basieren. Weitere Informationen finden Sie unter [Anzeigen des Berichts zur Verhinderung von Datenverlust](view-the-dlp-reports.md).

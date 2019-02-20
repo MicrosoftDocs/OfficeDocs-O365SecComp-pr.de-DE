@@ -1,5 +1,5 @@
 ---
-title: Office 365-Mandantenisolation im Büro Diagramm und eingegangen
+title: Office 365-Mandanten Isolierung im Office-Diagramm
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,28 +10,30 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Zusammenfassung: Eine Erläuterung der mandantenisolation in das Office-Diagramm und Delve.'
-ms.openlocfilehash: bdc0f34d558f25ec139861c9a91261a72418f18a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: 'Zusammenfassung: eine Erläuterung der Mandanten Isolierung im Office-Diagramm und in "einTauchen".'
+ms.openlocfilehash: 7e4951889ffd5dd52b6e3cb61c4b62a120843077
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529289"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091117"
 ---
-# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Mandanten Isolation im Büro Diagramm und eingegangen
+# <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Mandantenisolation in Office Graph und Delve
 
-## <a name="tenant-isolation-in-the-office-graph"></a>Mandantenisolation im Office-Diagramm
-Die [Office-Diagramm](https://dev.office.com/officegraph) Modelle Aktivität in Office 365-Dienste, einschließlich Exchange Online, SharePoint Online, Yammer, Skype für Unternehmen, Azure Active Directory und weitere, und externe Dienste, wie andere Microsoft-Dienste oder Drittanbieter-Dienste. Office-Diagramm-Komponenten werden in der gesamten Office 365 verwendet. Das Office-Diagramm stellt eine Auflistung von Inhalt und Aktivitäten und die Beziehungen zwischen ihnen, die über die gesamte Office Suite auftreten. Anspruchsvolle Techniken erlernen Computer verwendet, um Personen mit der relevante Inhalte, Gespräche und Mitarbeiter um verbinden. Beispielsweise der Mandanten Index in SharePoint Online verfügt über den Office-Diagramm Index, mit dem Delve Abfragen dienen, dem Analysemodul Processing in SharePoint Online wird verwendet, um speichern Signale und Insights berechnen und Exchange Online berechnet des Benutzers Empfängercache als Eingabe für Mandanten Analytics.
+## <a name="tenant-isolation-in-the-office-graph"></a>Mandanten Isolierung im Office-Diagramm
+Die [Office Graph](https://dev.office.com/officegraph) -Modell Aktivitäten in Office 365-Diensten, einschließlich Exchange Online, SharePoint Online, jammern, Skype for Business, Azure Active Directory und mehr, und in externen Diensten wie anderen Microsoft-Diensten oder Drittanbieterdiensten. Office Graph-Komponenten werden in Office 365 verwendet. Das Office Graph stellt eine Sammlung von Inhalten und Aktivitäten sowie die Beziehungen zwischen diesen dar, die in der gesamten Office-Suite stattfinden. Es verwendet ausgefeilte Techniken des maschinellen Lernens, um Personen mit den relevanten Inhalten, Unterhaltungen und Personen zu verbinden. Beispielsweise verfügt der Mandanten Index in SharePoint Online über einen Office Graph-Index, der für vertiefte Abfragen verwendet wird, das Analyse Verarbeitungsmodul in SharePoint Online dient zum Speichern von Signalen und Berechnen von Einblicken, und Exchange Online berechnet die einzelnen Benutzer Empfängercache als Eingabe in Mandanten Analyse.
 
-Das Office-Diagramm enthält Informationen zu Enterprise-Objekten, wie Personen und Dokumenten, als auch die Beziehungen und Interaktionen zwischen diesen Objekten. Die Beziehungen und Interaktionen werden als *Kanten*dargestellt. Im Office-Diagramm ist nach Mandant segmentierte, sodass Kanten nur zwischen *Knoten* in der gleichen Instanz vorhanden sein können. Ein *Knoten* ist eine Entität mit Uniform Resource Identifier (URI), Knotentyp, Zugriffssteuerungsliste und eine Reihe von Facetten, *Metadaten* und Kanten enthält. Jeder Knoten sind Metadaten und Kanten, angeordnet in *Facetten* wie in der allgemeinen Knowledge Modell zugeordnet. *Metadaten* sind benannte Eigenschaften gespeichert, die auf einem Knoten die für die Suche, filtern oder Analyse innerhalb des Office-Diagramms verwendet werden kann. Ein *Aspekt* ist eine logische Sammlung von Metadaten und Ränder auf einen Knoten. Jede Facetten beschreibt einen Aspekt eines Knotens an. 
+Das Office Graph enthält Informationen zu Unternehmens Objekten wie Personen und Dokumenten sowie zu den Beziehungen und Interaktionen zwischen diesen Objekten. Die Beziehungen und Interaktionen werden als *Kanten*dargestellt. Das Office-Diagramm wird nach Mandanten segmentiert, sodass Kanten nur zwischen *Knoten* in derselben Mandantschaft vorhanden sein können. Ein *Knoten* ist eine Entität mit einem URI (Uniform Resource Identifier), Knotentyp, Zugriffssteuerungsliste und einer Gruppe von Facets, die *Metadaten* und Ränder enthalten. Jeder Knoten hat Metadaten und Kanten zugeordnet, die in *Facets* wie im allgemeinen Wissens Modell angeordnet sind. *Metadaten* sind benannte Eigenschaften, die in einem Knoten gespeichert sind, der zum Suchen, Filtern oder analysieren innerhalb des Office-Diagramms verwendet werden kann. Ein *Facet* ist eine logische Sammlung von Metadaten und Rändern auf einem Knoten. Jedes facet beschreibt einen Aspekt eines Knotens. 
 
-Das Office-Diagramm bringt nicht alle Daten in einem Repository; Vielmehr speichert sie Metadaten und Beziehungen zu Daten, die an anderer Stelle befindet. Im Office-Diagramm besteht aus mehreren Datenspeichern und Verarbeitungskomponenten:
-- Die Mandanten Diagramm Store bietet die Bulk-Speicher für effiziente Analytics optimiert.
-- Die aktiven Cache-Inhalt enthält zufällige schnell aktiven Knoten und Kanten auf Laufwerk Benutzererlebnis.
-- Der Eingabe Router benachrichtigt Komponenten internen und externen über Änderungen an einem Diagramm Mandanten.
+Das Office-Diagramm bringt nicht alle Daten in ein einzelnes Repository; Stattdessen werden Metadaten und Beziehungen zu Daten gespeichert, die an anderer Stelle Leben. Das Office-Diagramm besteht aus mehreren Daten speichern und Verarbeitungskomponenten:
+- Der Mandanten Diagrammspeicher bietet Massenspeicher, der für effiziente Analysen optimiert ist.
+- Der aktive Inhalts Cache ermöglicht den schnellen Zufallszugriff auf aktive Knoten und Edges, um die Benutzerfreundlichkeit zu steigern.
+- Der Eingabe Router benachrichtigt interne und externe Komponenten über Änderungen am Mandanten Diagramm.
 
-Analytics innerhalb jeder Arbeitslast Einblicke in die gesamte Mandanten Berechnungen für die Überprüfung relevante ableiten, und drücken sie an einem Diagramm Mandanten. Mandanten über alle Aktivitäten eines Mandanten Analytics Gründe für Einblicke in Verhalten, das Muster zu erstellen. Exchange Online wird beispielsweise die Empfängercache für jeden Benutzer mit Analysen, die über das Postfach des Benutzers effizient Grund berechnet. Diese Analytics pro Benutzer erzeugen eine Reihe von *RecipientCache Kanten* auf jede Person, die wiederum dem Mandanten Diagramm abgelegt. Auf diese Weise wird die wie viel die Analytics processing erreicht bald wie möglich die Quelldaten.
+Analysen innerhalb jeder Arbeitslast leiten Erkenntnisse, die für die Mandanten weiten Berechnungen relevant sind, und führen Sie an das Mandanten Diagramm weiter. Mandanten Analyse Gründe für alle Aktivitäten in einem Mandanten, um Einblicke in Verhaltensmuster zu erzielen. Exchange Online berechnet beispielsweise den Empfängercache für jeden Benutzer mit Analysen, die für das Postfach der einzelnen Benutzer effizient sind. Diese pro-Benutzer-Analyse erzeugt eine Reihe von *RecipientCache-Kanten* für jede Person, die wiederum an das Mandanten Diagramm geschoben werden. Dadurch wird die Verarbeitung der Analyse so weit wie möglich bei den Quelldaten beibehalten.
 
-## <a name="tenant-isolation-in-delve"></a>Mandantenisolation in ausführlicher behandelt.
-Wie bereits erwähnt, das Office-Diagramm eignet sich ideal für Erfahrungen, mit deren Hilfe Benutzer ermitteln und Zusammenarbeit auf aktuellen Aktivitäten in ihrem Unternehmen und bietet eine Entität-centric Plattform für Analytics auf Grund über Inhalt und Aktivität Arbeitslasten und über Office 365. Eingegangen ist der erste solche Erfahrung verfügt über das Office-Diagramm. Eingegangen ist eine Office 365 Web wünschen, die Inhalte von Office 365 und Yammer Enterprise zu Office 365-Benutzer über das Office-Diagramm Flächen. Für die Webbenutzeroberfläche zeigt Daten als unterschiedliche bewertungseinrichtungen, jeweils mit einem bestimmten Thema wie *Trending um mich* oder *geändert von mir*. Jedes Board umfasst mehrere Karten Dokument die Anzeige von zusammengefassten Texts und ein Bild aus dem Dokument. Die Karte kann Benutzer Aktionen wie das Dokument oder eine Seite Yammer für das Dokument zu öffnen. Es ist eine Seite für jede Person in einer Office 365-Mandanten, in dem die zutreffenden Dokumente für diese Person angezeigt und Symbole, die Exchange Online oder Skype für Unternehmen für die Interaktion mit dieser Person aufrufen können. Da Delve auf der Office-Diagramm-API basiert, wird durch die Mandanten-basierte Isolation diese API gebunden.
+## <a name="tenant-isolation-in-delve"></a>Mandanten Isolierung in verTiefen
+Wie bereits erwähnt, macht der Office Graph Erfahrungen, die Personen bei der Ermittlung und Zusammenarbeit an aktuellen Aktivitäten in Ihrem Unternehmen helfen, und bietet eine Entitäts zentrierte Plattform für Analysen, um die Inhalte und Aktivitäten über Arbeitslasten hinweg zu überdenken und Beyond Office 365. VerTiefen ist die erste solche Erfahrung, die von der Office-Grafik unterstützt wird. VerTiefen ist eine Office 365-Web-Erfahrung, die Inhalte aus Office 365 und jammert Enterprise zu Office 365-Benutzer über das Office-Diagramm. Die Webumgebung zeigt Daten als unterschiedliche Bretter an, die jeweils ein bestimmtes Thema aufweisen, wie etwa *Trending um mich herum* oder *von mir geändert*. Jedes Board besteht aus mehreren Dokumentkarten, in denen Zusammenfassender Text und ein Bild aus dem Dokument angezeigt werden. Die Karte ermöglicht es Benutzern, das Dokument oder eine Jammer Seite für das Dokument zu öffnen. Für jede Person in einem Office 365-Mandanten gibt es eine Seite, die die relevantesten Dokumente für diese Person anzeigt, sowie Symbole, die Exchange Online oder Skype for Business für die Interaktion mit dieser Person aufrufen können. Da Sie auf der Office Graph-API basieren, ist Sie an die Mandanten basierte Isolierung dieser API gebunden.

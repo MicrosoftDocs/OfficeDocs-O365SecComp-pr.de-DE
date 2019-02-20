@@ -1,5 +1,5 @@
 ---
-title: Steuerelemente für Office 365 Isolation
+title: Isolierungssteuerungen in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,22 +10,24 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Zusammenfassung: Eine Erläuterung der Isolation Steuerelemente in Office 365.'
-ms.openlocfilehash: 3a5c06d0675a4503d9f5e5edd58535688fb9180a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: 'Zusammenfassung: eine Erläuterung der Isolations Steuerelemente in Office 365.'
+ms.openlocfilehash: ad39f300445485e46699b509f845ac363d3041fa
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530111"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090967"
 ---
-# <a name="office-365-isolation-controls"></a>Steuerelemente für Office 365 Isolation 
+# <a name="office-365-isolation-controls"></a>Isolierungssteuerungen in Office 365 
 
-Microsoft versucht kontinuierlich, um sicherzustellen, dass die Architektur mit mehreren Mandanten von Office 365 Unternehmensebene Sicherheit, Vertraulichkeit, Datenschutz, Integrität und Verfügbarkeit [Standards](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)sowie lokale und internationale Standards unterstützt. Wenn die Skalierung und des Umfangs der von Microsoft bereitgestellten Dienste, wäre es schwierig und nicht wirtschaftliche zum Verwalten von Office 365 erhebliche Benutzerinteraktionen erforderlich waren. Office 365-Dienste werden über mehreren weltweit verteilten Rechenzentren in einer Weise hoch automatisiert bereitgestellt, wobei sehr wenige Datacenter Vorgänge erfordern eine human Fingereingabe und sogar weniger Vorgänge benötigen Zugriff auf Inhalte für Kunden. Unsere Mitarbeiter unterstützt diese Dienste und Rechenzentren mit automatisierten Tools und extrem sicheren Remotezugriff. Details zur Verwendung einiger betrieben werden umfangreiche Services in Office 365 finden Sie unter [einem Behind, die Office 365 für IT-Experten im Hintergrund betrachten](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC202).
+Microsoft arbeitet ständig daran, sicherzustellen, dass die Architektur mit mehreren Mandanten von Office 365 die Sicherheit, Vertraulichkeit, Datenschutz, Integrität und Verfügbarkeit von [Standards](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons)auf Unternehmensebene sowie lokale und internationale Standards unterstützt. Angesichts des Umfangs und des Umfangs der von Microsoft bereitgestellten Dienste wäre es schwierig und nicht wirtschaftlich, Office 365 zu verwalten, wenn eine erhebliche menschliche Interaktion erforderlich wäre. Office 365-Dienste werden in einer hoch automatisierten Weise über mehrere global verteilte Rechenzentren bereitgestellt, wobei für äußerst wenige Rechenzentrums Vorgänge eine menschliche Note erforderlich ist und noch weniger Vorgänge den Zugriff auf Kunden Inhalte erfordern. Unsere Mitarbeiter unterstützen diese Dienste und Rechenzentren mit automatisierten Tools und hoch sicherem Remotezugriff. Einige Details zur Verwendung von umfangreichen Diensten in Office 365 finden Sie unter ["Behind the Scenes" in office 365 für IT-Experten](https://channel9.msdn.com/Events/SharePoint-Conference/2014/SPC202).
 
-Office 365 besteht mehrere Dienste, die wichtige geschäftliche Funktionalität und dazu beitragen, für die gesamte Office 365-Funktionen. Jeder dieser Dienste dient unabhängig sein und miteinander zu integrieren. Office 365 ist mit den Prinzipien eine [Service-orientierte Architektur](https://msdn.microsoft.com/library/aa480021.aspx)entwickelt, die als entwerfen und Entwickeln von Software in Form von interoperablen Diensten, die beim Bereitstellen von klar definierten Business-Funktionalität und [betriebliche Sicherheit definiert ist Assurance](http://www.microsoft.com/download/details.aspx?id=40872), ein Rahmen, der die Kenntnisse erlangt über eine Vielzahl von Funktionen, die an Microsoft, einschließlich Microsoft [Security Development Lifecycle](https://www.microsoft.com/sdl/default.aspx), die [Microsoft Security Response Center](https://technet.microsoft.com/library/dn440717.aspx)und intensive eindeutig sind zur Förderung des Bekanntheitsgrads der Bedrohungslandschaft Sicherheit im Internet.
+Office 365 besteht aus mehreren Diensten, die wichtige Geschäftsfunktionen bereitstellen und zur gesamten Office 365-Umgebung beitragen. Jeder dieser Dienste ist eigenständig und kann miteinander integriert werden. Office 365 wurde mit den Prinzipien einer [DienstorientiertEn Architektur](https://msdn.microsoft.com/library/aa480021.aspx)entworfen, die als entwerfen und entwickeln von Software in Form von interoperablen Diensten definiert ist, die eine klar definierte Geschäftsfunktionalität und [Betriebssicherheit bieten. Assurance](http://www.microsoft.com/download/details.aspx?id=40872), ein Framework, das die erworbenen Kenntnisse durch eine Vielzahl von Funktionen umfasst, die für Microsoft einzigartig sind, einschließlich des Microsoft- [Sicherheits Entwicklungslebenszyklus](https://www.microsoft.com/sdl/default.aspx), des [Microsoft Security Response Center](https://technet.microsoft.com/library/dn440717.aspx)und Deep Bewusstsein für die Cyber-Bedrohungslandschaft.
 
-Office 365-Diensten miteinander interagieren, aber entworfen und implementiert, sodass bereitgestellt und als autonome Dienste unabhängig voneinander betrieben werden kann. Microsoft verfügt, Aufgaben und Bereiche der Verantwortung für eine Office 365 zur Reduzierung von Verkaufschancen für nicht autorisierte oder unbeabsichtigte Änderung oder Missbrauch von Ressourcen der Organisation. Office 365-Teams, die im Rahmen einer umfassenden rollenbasierte Zugriff Steuerelement Mechanismus Rollen definiert haben.
+Office 365-Dienste arbeiten miteinander zusammen, sind jedoch so konzipiert und implementiert, dass Sie unabhängig von einander als autonome Dienste bereitgestellt und betrieben werden können. Microsoft trennt Aufgaben und Zuständigkeitsbereiche für Office 365, um die Möglichkeiten für unbefugte oder unbeabsichtigte Änderungen oder Missbrauch der Ressourcen der Organisation zu verringern. Office 365 Teams haben Rollen als Teil einer umfassenden rollenbasierten Zugriffssteuerungsmethode definiert.
 
-## <a name="customer-content-isolation"></a>Inhaltliche Trennung von Kunden
-Alle Kunden Inhalte, die zu einem Mandanten gehören wird isoliert von anderen Mandanten und die Vorgänge und Systemen Daten in die Verwaltung von Office 365 verwendet. Mehrere Formulare des Schutzes es wurden in der gesamten Office 365, um das Risiko der Gefährdung keinen Office 365-Dienst oder Anwendung oder eine beliebige erlangen unberechtigte Zugriff auf die Informationen des Mandanten oder die Office 365-System selbst zu minimieren implementiert. Informationen dazu, wie Microsoft logischen Isolierung von Mandantendaten in Office 365 implementiert wird finden Sie unter [Mandantenisolation in Office 365](office-365-tenant-isolation-overview.md).
+## <a name="customer-content-isolation"></a>Kunden-Inhalts Isolierung
+Alle Kunden Inhalte, die zu einem Mandanten gehören, werden von anderen Mandanten isoliert und von den Betriebs-und Systemdaten, die bei der Verwaltung von Office 365 verwendet werden. Es wurden mehrere Schutzformen in Office 365 implementiert, um das Risiko einer Gefährdung eines beliebigen Office 365-Diensts oder einer Anwendung zu minimieren, oder um einen unbefugten Zugriff auf die Informationen von Mandanten oder das Office 365-System selbst zu erlangen. Informationen dazu, wie Microsoft die logische Isolierung von Mandantendaten in Office 365 implementiert, finden Sie unter [mandantEn Isolierung in office 365](office-365-tenant-isolation-overview.md).

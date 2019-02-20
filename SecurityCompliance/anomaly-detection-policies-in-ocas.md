@@ -3,7 +3,7 @@ title: Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/28/2019
+ms.date: 02/15/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,98 +12,99 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
-description: 'Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit verwenden integrierte Algorithmen, um potenzielle Probleme aufdecken. Sie sollten mindestens eine Anomalie Erkennung Richtlinie verfügen, die Sie optimiert werden können (bei der Erstellung) mithilfe von Filtern. '
-ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'Anomalie-Erkennungsrichtlinien in Office 365 Cloud App Security verwenden Sie integrierte Algorithmen, um mögliche Probleme aufzudecken. Sie sollten über mindestens eine Anomalie-Erkennungsrichtlinie verfügen, die Sie (bei der Erstellung) mithilfe von Filtern optimieren können. '
+ms.openlocfilehash: a3c7fb16ab10b0bcfaca444093e4e1f52468f0c8
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29612708"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087364"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 
-Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherheit.
-  
-|Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
+|Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](ocas-conditional-access-app-control.md) <br/> |[Verwendung beginnen](utilization-activities-for-ocas.md) <br/> |
    
-Ab [Microsoft Cloud App-Sicherheit Version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116), enthält Office 365-Cloud-App-Sicherheit mehrere vordefinierte Anomalie Erkennungsrichtlinien ("sofort einsetzbar"), die Benutzer und Entität Verhalten Analytics (UEBA) und Computer lernen (ML) enthalten.
+Beginnend mit der [Microsoft Cloud App Security release 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116)enthält Office 365 Cloud App Security mehrere vordefinierte Anomalie-Erkennungsrichtlinien ("Out of the Box"), die Benutzer-und Entitäts Verhaltensanalysen (UEBA) und Maschinelles Lernen (ml) umfassen.
   
-![Wählen Sie zum Anzeigen Ihrer Anomalie Erkennungsrichtlinien Steuerelement \> Richtlinien.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
+![Um Ihre Erkennungsrichtlinien für Anomalien anzuzeigen, wählen \> Sie Steuerungsrichtlinien aus.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
-Diese Anomalie Erkennungsrichtlinien bieten sofortige Ergebnisse durch Bereitstellen sofortigen erkannte, Zielgruppenadressierung zahlreiche Verhalten Abweichung über Ihre Benutzer und Computer und Geräte mit dem Netzwerk verbunden. Darüber hinaus stellen die neuen Richtlinien weitere Daten aus der Cloud App Erkennung Engine zur Untersuchung beschleunigen und die laufende Bedrohungen enthalten.
+Diese Erkennungsrichtlinien für Anomalien bieten sofortige Ergebnisse, indem Sie sofort Erkennungen bereitstellen, die zahlreiche Verhaltensanomalien für Ihre Benutzer und die Computer und Geräte, die mit Ihrem Netzwerk verbunden sind, abzielen. Darüber hinaus werden durch die neuen Richtlinien weitere Daten aus dem Sicherheits Erkennungsmodul für die Cloud-App zur Verfügung gestellt, um den Ermittlungsprozess zu beschleunigen und laufende Bedrohungen einzudämmen.
   
-Als globaler Office 365-Administrator oder Sicherheitsadministrator können Sie überprüfen, und Sie bei Bedarf überarbeiten die Standardrichtlinien, die mit Office 365-Cloud-App-Sicherheit verfügbar sind.
+Als globaler Administrator oder Sicherheitsadministrator von Office 365 können Sie die Standardrichtlinien, die mit Office 365 Cloud App Security zur Verfügung stehen, überprüfen und gegebenenfalls überarbeiten.
   
  > [!IMPORTANT]
-> Es gibt ein Zeitraum anfänglichen Learning sieben (7) Tage in denen abweichendem Verhalten Benachrichtigungen nicht ausgelöst werden. Der Algorithmus Anomalie Erkennung wird zur Verringerung der Anzahl von falsch positiven Warnungen optimiert. 
+> Es gibt einen anfänglichen Lernzeitraum von sieben (7) Tagen, in dem anomale Verhaltens Warnungen nicht ausgelöst werden. Der Algorithmus zur Erkennung von Anomalien wurde optimiert, um die Anzahl falsch positiver Warnungen zu reduzieren. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie Folgendes sicher:
   
-- Ihre Organisation verfügt [Office 365-Cloud-App-Sicherheit](office-365-cas-overview.md), und der Dienst ist [aktiviert](turn-on-office-365-cas.md).
+- Ihre Organisation verfügt über [Office 365 Cloud App Security](office-365-cas-overview.md), und der Dienst ist [aktiviert](turn-on-office-365-cas.md).
     
-- [Protokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Office 365-Umgebung aktiviert. 
+- Die [Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für ihre Office 365-Umgebung aktiviert. 
     
 - Sie sind ein globaler Administrator oder Sicherheitsadministrator für Office 365.
     
-## <a name="view-your-anomaly-detection-policies"></a>Zeigen Sie Ihre Anomalie Erkennungsrichtlinien
+## <a name="view-your-anomaly-detection-policies"></a>Anzeigen der Anomalie-Erkennungsrichtlinien
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zum Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.<br>Dadurch gelangen Sie zur Seite Office 365 Cloud App-Sicherheitsrichtlinien.
+1. Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zum Sicherheitsportal der Cloud-app ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), und melden Sie sich an.<br>Dadurch gelangen Sie zur Seite Office 365 Cloud App Security Policies.
     
-2. Wählen Sie in der Liste **Typ** **Anomalie Erkennung Richtlinie**aus.<br>Ihre Organisation Standard (oder einer vorhandenen) Anomalie Erkennungsrichtlinien werden angezeigt.<br>![Anomalieerkennungsrichtlinien in Office 365 Cloud App Security](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
+2. Wählen Sie in der Liste **Typ** die Option **Anomalie-Erkennungsrichtlinie**aus.<br>Die standardmäßigen (oder vorhandenen) Erkennungsrichtlinien für Anomalien Ihrer Organisation werden angezeigt.<br>![Anomalieerkennungsrichtlinien in Office 365 Cloud App Security](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
   
-3. Wählen Sie eine Richtlinie zum Lesen oder Bearbeiten der Einstellungen aus.
+3. Wählen Sie eine Richtlinie aus, um Ihre Einstellungen zu überarbeiten.
     
 4. Wählen Sie **Update** aus, um die Änderungen zu speichern. 
     
-## <a name="learn-more-about-anomaly-detection-policies"></a>Erfahren Sie mehr über Anomalie Erkennungsrichtlinien
+## <a name="learn-more-about-anomaly-detection-policies"></a>Weitere Informationen zu Anomalie-Erkennungsrichtlinien
 
-Anomalie Erkennungsrichtlinien sind automatisch aktiviert. Office 365-Cloud-App-Sicherheit verfügt jedoch über einen Zeitraum anfänglichen Learning sieben Tage, die während der nicht alle, die Anomalie Erkennung Warnungen ausgelöst werden. Danach wird jede Sitzung auf die Aktivität, wenn der Benutzer aktiv waren, IP-Adressen, Geräte usw. erkannt wird, über den letzten Monat und das Risiko Score dieser Aktivitäten verglichen. Diese erkannte sind Teil der heuristische Anomalie Erkennung Engine, die Profile von Ihrer Umgebung und löst die Benachrichtigungen in Bezug auf eine Baseline, die für Ihre Organisation Aktivität ausfindig gemacht wurde. Diese erkannte nutzen auch Computer Learning Algorithmen entwickelt, um die profile der Benutzer und melden Sie sich in Muster, um falsch positive Ergebnisse zu reduzieren.
+Anomalie-Erkennungsrichtlinien werden automatisch aktiviert; Office 365 Cloud App Security hat jedoch einen anfänglichen Lernzeitraum von sieben Tagen, in dem nicht alle Warnungen zur Anomalie-Erkennung ausgelöst werden. Danach wird jede Sitzung mit der Aktivität verglichen, wenn Benutzer aktiv waren, IP-Adressen, Geräte usw., die im letzten Monat erkannt wurden, und die Risikobewertung dieser Aktivitäten. Diese Erkennungen sind Teil des Erkennungsmoduls für die heuristische Anomalie, das Ihre Umgebung profiliert und Warnungen in Bezug auf eine Baseline auslöst, die für die Aktivität Ihrer Organisation erlernt wurde. Diese Entdeckungen nutzen auch maschinelle Lernalgorithmen, die zum Profilieren der Benutzer und Anmelde Muster entworfen wurden, um falsch positive Ergebnisse zu reduzieren.
   
-Abweichung werden durch Scannen Benutzeraktivität erkannt. Das Risiko wird ausgewertet, verfolgen über 30 verschiedene Risikoindikatoren in mehrere Risiko Faktoren, wie riskant IP-Adresse, Anmeldefehler, Admin-Aktivität, inaktiven Konten, Speicherort, unmöglich Reisen, Geräte und Benutzer-Agent und Aktivität Rate gruppiert.
+Anomalien werden durch Überprüfen der Benutzeraktivität erkannt. Das Risiko wird anhand von über 30 verschiedenen Risikoindikatoren bewertet, die in mehrere Risikofaktoren gruppiert sind, wie beispielsweise riskante IP-Adressen, Anmeldefehler, Administrator Aktivität, inaktive Konten, Standort, unmöglich Reisen, Geräte-und Benutzer-Agent und Aktivitätsrate.
   
-Basierend auf den Gruppenrichtlinienergebnissen, werden Sicherheitswarnungen ausgelöst. Office 365-Cloud-App-Sicherheit befasst sich mit jeder benutzersitzung in Office 365 und gewarnt, wenn ein Fehler auftritt, die sich aus der Grundlinie Ihrer Organisation oder aus einem regulären Benutzeraktivität unterscheidet.
+Basierend auf den Richtlinien Ergebnissen werden Sicherheitswarnungen ausgelöst. Office 365 Cloud App Security sucht bei jeder Benutzersitzung in Office 365 und benachrichtigt Sie, wenn etwas geschieht, das sich von der Grundlinie Ihrer Organisation oder von der regulären Aktivität eines Benutzers unterscheidet.
   
-In der folgenden Tabelle werden die Standardrichtlinien für Anomalie Erkennung, ihre Funktion und deren Funktionsweise beschrieben.
+In der folgenden Tabelle werden die standardmäßigen Erkennungsrichtlinien für Anomalien, ihre Funktion und ihre Funktionsweise beschrieben.
   
-|**Anomalie Erkennung Richtlinienname**|**Funktionsweise**|
+|**Name der Anomalie-Erkennungsrichtlinie**|**Funktionsweise**|
 |:-----|:-----|
-|Unmöglich travel  <br/> |Identifiziert die zwei Benutzeraktivitäten (ist eine einzelne oder mehrere Sitzungen) stammt geografisch entfernten Standorten innerhalb eines Zeitraums kürzer als die Zeit es würde getroffen haben Reisen aus dem ersten Speicherort der zweiten, das angibt, dass dem Benutzer einen anderen Benutzer wird die gleichen Anmeldeinformationen verwendet. Diese Erkennung nutzt einen Computer erlernen Hashalgorithmus offensichtlich "falsch positive Ergebnisse" Belohnung von der Bedingung unmöglich Geschäftsreisen wie VPNs und Speicherorte von anderen Benutzern in der Organisation regelmäßig verwendet ignoriert. Die Erkennung verfügt über einen Zeitraum anfänglichen Learning sieben Tage in denen sie einen neuen Benutzer Aktivität Muster lernen.  <br/> |
-|Aktivität aus seltene Land  <br/> |Ältere Aktivität Speicherorte betrachtet, um neue und seltene Speicherorte zu bestimmen. Das Anomalie Erkennungsmodul speichert Informationen zu vorherigen Speicherorte von Benutzern in der Organisation verwendet. Wenn eine Aktivität von einem Speicherort auftritt, die nicht kürzlich oder nie vom Benutzer oder von jedem Benutzer in der Organisation besucht wurde, wird eine Warnung ausgelöst.  <br/> |
-|Aktivität von anonymen IP-Adressen  <br/> |Gibt an, dass Benutzer aus einer IP-Adresse aktiv waren, die als anonyme Proxy IP-Adresse identifiziert wurde. Diese Proxys werden von Personen verwendet, die IP-Adresse des Geräts ausblenden möchten, und für böswilligen Absichten verwendet werden kann. Diese Erkennung nutzt einen Computer erlernen Algorithmus, der reduziert "falsch positive Ergebnisse", wie beispielsweise falsch bereichsspezifische IP-Adressen, die häufig von Benutzern in der Organisation verwendet werden.  <br/> |
-|Aktivität von verdächtigen IP-Adressen  <br/> |Gibt an, dass Benutzer aus einer IP-Adresse aktiv waren, die von Microsoft Threat Intelligence als riskant identifiziert wurde. Diese IP-Adressen sind beteiligt böswillige Aktivitäten, wie Botnet C&amp;C, und darauf hinweisen kompromittierten Konto. Diese Erkennung nutzt einen Computer erlernen Algorithmus, der reduziert "falsch positive Ergebnisse", wie beispielsweise falsch bereichsspezifische IP-Adressen, die häufig von Benutzern in der Organisation verwendet werden.  <br/> |
-|Ungewöhnliche Aktivitäten (durch Benutzer)  <br/> | Identifiziert die Benutzer, die ungewöhnliche Aktivitäten ausführen:  <br/>  --Mehrere Dateidownloads  <br/>  --Dateifreigabe-Aktivitäten  <br/>  --Datei löschen Aktivitäten  <br/>  --Identitätswechsel Aktivitäten  <br/>  --Administrativer Aktivitäten  <br/>  Diese Richtlinien Suchen nach Aktivitäten innerhalb einer einzelnen Sitzung in Bezug auf die geplante gelernt haben, die auf einer Verletzung Versuch angeben kann. Diese erkannte nutzen ein Computers erlernen Algorithmus, mit dem Muster Profile der Benutzer anmelden und falsch positive Ergebnisse reduziert. Diese erkannte sind Teil der heuristische Anomalie Erkennung Engine, die Profile von Ihrer Umgebung und löst die Benachrichtigungen in Bezug auf eine Baseline, die für Ihre Organisation Aktivität ausfindig gemacht wurde.  <br/> |
-|Mehrere fehlgeschlagene Anmeldeversuche  <br/> |Benutzer, die mehrere Anmeldeversuche in einer einzigen Sitzung fehlgeschlagen identifiziert in Bezug auf die geplante gelernt haben, die einer Verletzung Versuch angeben kann.  <br/> |
+|Unmöglich Reisen  <br/> |Identifiziert zwei Benutzeraktivitäten (eine einzelne oder mehrere Sitzungen), die aus geografisch entfernten Standorten innerhalb eines Zeitraums liegen, der kürzer als der Zeitpunkt ist, zu dem der Benutzer von der ersten Stelle zur zweiten zu reisen, was darauf hinweist, dass eine andere der Benutzer verwendet die gleichen Anmeldeinformationen. Diese Erkennung nutzt einen Computer Lernalgorithmus, der offensichtliche "falsch positive Ergebnisse" ignoriert, die zur unmöglichen Reise Bedingung beitragen, beispielsweise VPNs und Standorte, die von anderen Benutzern in der Organisation regelmäßig verwendet werden. Die Erkennung hat einen anfänglichen Lernzeitraum von sieben Tagen, in dem Sie das Aktivitätsmuster eines neuen Benutzers erlernt.  <br/> |
+|Aktivität aus unregelmäßigem Land  <br/> |Berücksichtigt vergangene Aktivitäts Standorte, um neue und seltene Standorte zu ermitteln. Das Anomalie-Erkennungsmodul speichert Informationen zu früheren Speicherorten, die von Benutzern in der Organisation verwendet werden. Eine Warnung wird ausgelöst, wenn eine Aktivität an einem Ort stattfindet, der weder vor kurzem noch vom Benutzer oder von einem anderen Benutzer in der Organisation besucht wurde.  <br/> |
+|Aktivität von anonymen IP-Adressen  <br/> |Gibt an, dass Benutzer von einer IP-Adresse aktiv waren, die als anonyme Proxy-IP-Adresse identifiziert wurde. Diese Proxys werden von Personen verwendet, die die IP-Adresse Ihres Geräts ausblenden möchten und möglicherweise für böswillige Absicht verwendet werden. Diese Erkennung nutzt einen Computer Lernalgorithmus, der "falsch positive Ergebnisse" reduziert, beispielsweise falsch gekennzeichnete IP-Adressen, die von Benutzern in der Organisation weitgehend verwendet werden.  <br/> |
+|Aktivität von verdächtigen IP-Adressen  <br/> |Identifiziert, dass Benutzer von einer IP-Adresse aktiv waren, die von Microsoft Threat Intelligence als riskant identifiziert wurde. Diese IP-Adressen sind an böswilligen Aktivitäten wie Botnet C&amp;c beteiligt und können auf ein kompromittiertes Konto hindeuten. Diese Erkennung nutzt einen Computer Lernalgorithmus, der "falsch positive Ergebnisse" reduziert, beispielsweise falsch gekennzeichnete IP-Adressen, die von Benutzern in der Organisation weitgehend verwendet werden.  <br/> |
+|Ungewöhnliche Aktivitäten (nach Benutzer)  <br/> | Identifiziert Benutzer, die ungewöhnliche Aktivitäten wie z. b. ausführen:  <br/>  --Mehrere Dateidownloads  <br/>  --Dateifreigabe Aktivitäten  <br/>  --Löschaktivitäten für Dateien  <br/>  -Identitätswechsel Aktivitäten  <br/>  --Administrative Aktivitäten  <br/>  Diese Richtlinien suchen nach Aktivitäten innerhalb einer einzelnen Sitzung im Hinblick auf die gelernte Grundlinie, die auf einen Verletzungsversuch hinweisen könnte. Diese Entdeckungen nutzen einen Computer Lernalgorithmus, der das Muster der Benutzer protokolliert und falsch positive Ergebnisse reduziert. Diese Erkennungen sind Teil des Erkennungsmoduls für die heuristische Anomalie, das Ihre Umgebung profiliert und Warnungen in Bezug auf eine Baseline auslöst, die für die Aktivität Ihrer Organisation erlernt wurde.  <br/> |
+|Mehrere fehlgeschlagene Anmeldeversuche  <br/> |Identifiziert Benutzer, bei denen mehrere Anmeldeversuche in einer einzelnen Sitzung im Hinblick auf die gelernte Grundlinie fehlgeschlagen sind, was auf einen Verletzungsversuch hindeuten könnte.  <br/> |
    
-## <a name="triage-anomaly-detection-alerts"></a>Ursachenanalyse Anomalie Erkennung Benachrichtigungen
+## <a name="triage-anomaly-detection-alerts"></a>Erkennung von Anomalien der Erkennungs Warnungen
 
-Wie Benachrichtigungen empfangen werden, können Sie diese Warnungen schnell selektieren und bestimmen, welche zuerst behandeln. Mit Kontext für eine Benachrichtigung können Sie finden im Bild, und bestimmen, ob etwas böswilligen tatsächlich geschieht. Verwenden Sie das folgende Verfahren für den Einstieg erkunden eine Warnung:
+Sobald Warnungen eingehen, können Sie diese Warnungen schnell selektieren und bestimmen, welche zuerst verarbeitet werden sollen. Wenn Sie Kontext für eine Warnung haben, können Sie das größere Bild sehen und ermitteln, ob tatsächlich etwas bösartiges geschieht. Gehen Sie folgendermaßen vor, um mit der Erkundung einer Warnung zu beginnen:
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zum Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung. 
+1. Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zum Sicherheitsportal der Cloud-app ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), und melden Sie sich an. 
     
-2. Wählen Sie **Benachrichtigungen** , um Warnungen anzuzeigen. 
+2. Wählen **** Sie Alerts aus, um Ihre Benachrichtigungen anzuzeigen. 
     
-3. Wenn Kontext für eine Benachrichtigung erhalten möchten, gehen Sie folgendermaßen vor:
+3. Führen Sie die folgenden Schritte aus, um den Kontext für eine Warnung abzurufen:
     
-4. Wählen Sie **untersuchen** \> **Aktivitätsprotokolls**.
+4. Wählen Sie **Aktivitätsprotokoll** **untersuchen** \> aus.
     
-5. Wählen Sie ein Element, wie Sie einen Benutzer oder eine IP-Adresse. Die relevanten Insights Papiereinzug wird geöffnet.<br>![Überprüfen Sie im Protokoll Aktivität eine IP-Adresse.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
+5. Wählen Sie ein Element aus, beispielsweise einen Benutzer oder eine IP-Adresse. Dadurch wird die relevante Insights-Schublade geöffnet.<br>![Im Aktivitätsprotokoll können Sie eine IP-Adresse untersuchen.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
   
-6. Klicken Sie auf einen verfügbaren Befehl, wie ein Symbol im Abschnitt **Ähnliche Elemente anzeigen** , in der entsprechenden Insights Papiereinzug.<br> ![Klicken Sie auf das Uhrsymbol um Aktivitäten, die innerhalb einer ausgewählten Aktivität 48 Stunden ausgeführt finden Sie unter](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+6. Klicken Sie in der entsprechenden Einblicke-Schublade auf einen verfügbaren Befehl, beispielsweise ein Symbol im Abschnitt **ähnliche anzeigen** .<br> ![Klicken Sie auf das Symbol Uhr, um Aktivitäten anzuzeigen, die innerhalb von 48 Stunden nach einer ausgewählten Aktivität durchgeführt wurden.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-7. Erhalten Sie Einblick in die das ausgewählte Element, indem Sie zum Untersuchen der Details für dieses Element übergehen können.
+7. Erhalten Sie Einblicke in das ausgewählte Element, indem Sie weitere Details zu diesem Element erkunden.
     
-Eine Benachrichtigung auf mehreren fehlgeschlagenen Anmeldungen möglicherweise tatsächlich verdächtigen und einen potenziellen Brute-Force-Angriff kann anzugeben. Eine solche Warnung kann jedoch auch eine Anwendung Konfigurationsfehlers, verursacht die Benachrichtigung duldet falsch positiv sein. Wenn Sie eine Benachrichtigung mehrere Fehler Anmeldungen mit zusätzlichen verdächtigen Aktivitäten angezeigt wird, ist eine höhere Wahrscheinlichkeit, dass ein Konto gefährdet ist. Angenommen Sie, dass eine Warnung mehrere Fehler bei Anmeldung Aktivität aus einer TOR IP-Adresse und unmöglich Geschäftsreisen Aktivität, beide starken Indikatoren für Kompromiss folgen. Sie möglicherweise auch sehen, dass derselbe Benutzer eine Aktivität Masse Download durchgeführt, die häufig ein Indikator der Angreifer Exfiltration der Daten ausgeführt wird. Es handelt sich um Dinge wie, die Sie untersuchen können in Office 365-Cloud-App-Sicherheit zum Anzeigen und Selektieren von Warnungen und Ausführen einer Aktion bei Bedarf.
+Eine Warnung bei mehreren fehlgeschlagenen Anmeldungen kann in der Tat verdächtig sein und auf einen möglichen Brute-Force-Angriff hindeuten. Eine solche Warnung kann jedoch auch eine Anwendung Fehlkonfiguration sein, wodurch die Warnung als gutartige true positive. Wenn eine Warnung bei mehreren fehlgeschlagenen Anmeldungen mit zusätzlichen verdächtigen Aktivitäten angezeigt wird, besteht eine höhere Wahrscheinlichkeit, dass ein Konto kompromittiert wird. Nehmen wir beispielsweise an, dass eine Warnung mit mehreren fehlgeschlagenen Anmeldeinformationen von Aktivitäten aus einer TOR-IP-Adresse und unmöglichen Reiseaktivitäten, sowohl starke Indikatoren als Kompromiss, gefolgt wird. Möglicherweise sehen Sie sogar, dass derselbe Benutzer eine massendownload Aktivität durchgeführt hat, was oft ein Indikator für die Durchführung der Datenfilterung durch den Angreifer ist. Es handelt sich um solche, die Sie in Office 365 Cloud App Security erkunden können, um Ihre Benachrichtigungen anzuzeigen und zu selektieren und gegebenenfalls Maßnahmen zu ergreifen.
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Integrieren von Ihrem Server SIEM](integrate-your-siem-server-with-office-365-cas.md)
+- [Bereitstellen von App-Steuerelement für den bedingten Zugriff für Office 365-apps](ocas-deploy-conditional-access-app-control.md)
+
+- [Gruppieren Ihrer IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
+
+- [Integrieren Ihres SIEM-Servers](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Lesen und Ausführen einer Aktion Warnungen](review-office-365-cas-alerts.md)
+- [Überarbeiten und Aktionen für Warnungen](review-office-365-cas-alerts.md)
     
-- [Gruppieren Sie Ihre IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
     
 

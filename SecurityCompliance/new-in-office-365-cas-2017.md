@@ -1,5 +1,5 @@
 ---
-title: Office 365-Cloud App-Sicherheits-Updates während 2017
+title: Office 365 Cloud App-Sicherheitsupdates während 2017
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -8,91 +8,89 @@ ms.topic: reference
 ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
-description: Finden Sie unter Was für Office 365-Cloud-App-Sicherheit in 2017 veröffentlicht
-ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+description: Sehen Sie, was in 2017 für Office 365 Cloud App Security veröffentlicht wurde.
+ms.openlocfilehash: cfc5d9d06c1b2296b82c35fc5fdd6e4bc0deb42b
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570181"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087404"
 ---
-# <a name="office-365-cloud-app-security-updates-during-2017"></a>Office 365-Cloud App-Sicherheits-Updates während 2017
+# <a name="office-365-cloud-app-security-updates-during-2017"></a>Office 365 Cloud App-Sicherheitsupdates während 2017
     
-## <a name="office-365-cloud-app-security-release-112"></a>Office 365 Cloud App-Sicherheit Version 112
+## <a name="office-365-cloud-app-security-release-112"></a>Office 365 Cloud App Security Release 112
 
-*24 Dezember 2017 veröffentlicht* 
+*Veröffentlicht am 24. Dezember 2017* 
   
-**Folgen von [Microsoft Cloud App-Sicherheit Version 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
+**Folgende [Microsoft Cloud App Security Release 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
   
-- **Relevante Erkenntnisse Papiereinzug**. Im Protokoll Aktivität können Sie nun die relevanten Erkenntnisse Papiereinzug, indem Sie auf einen Benutzer- oder IP-Adresse zugreifen. 
+- **Relevante Insight-Schublade**. Im Aktivitätsprotokoll können Sie nun auf die entsprechende Insight-Schublade zugreifen, indem Sie auf einen Benutzernamen oder eine IP-Adresse klicken. 
     
-    ![Klicken Sie auf einen Benutzer- oder IP-Adresse der relevanten Erkenntnisse Papiereinzug im Protokoll Aktivität finden Sie unter.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
+    ![Klicken Sie auf einen Benutzernamen oder eine IP-Adresse, um die relevante Insight-Schublade im Aktivitätsprotokoll anzuzeigen.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
   
-- Die **Möglichkeit, mehrere Aktivitäten mit einem Klick anzuzeigen**. In der entsprechenden Erkenntnisse Papiereinzug können Sie das Uhrsymbol, um alle Aktivitäten ausgeführt innerhalb von 48 Stunden einer ausgewählten Aktivität anzeigen klicken. 
+- **Möglichkeit zum Anzeigen weiterer Aktivitäten mit einem Mausklick**. In der relevanten Insight-Schublade können Sie auf das Symbol Uhr klicken, um alle Aktivitäten anzuzeigen, die innerhalb von 48 Stunden nach einer ausgewählten Aktivität durchgeführt wurden. 
     
-    ![In der entsprechenden Insights Papiereinzug können Sie das Uhrsymbol, um Aktivitäten, die innerhalb einer ausgewählten Aktivität 48 Stunden ausgeführt finden Sie unter klicken.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+    ![In der relevanten Insights-Schublade können Sie auf das Uhrzeit Symbol klicken, um Aktivitäten anzuzeigen, die innerhalb von 48 Stunden nach einer ausgewählten Aktivität durchgeführt werden.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-- **Log Parser Verbesserungen für Juniper SRX**. Verbesserungen bei der Cloud Discovery Log Parser für Juniper SRX wurde. 
+- **Verbesserungen bei der Protokollierung von Juniper SRX**. Verbesserungen wurden am Cloud Discovery Log-Parser für Juniper SRX vorgenommen. 
     
-## <a name="office-365-cloud-app-security-release-111"></a>Office 365 Cloud App-Sicherheit Version 111
+## <a name="office-365-cloud-app-security-release-111"></a>Office 365 Cloud App Security Release 111
 
-*10 Dezember 2017 veröffentlicht* 
+*Veröffentlicht am 10. Dezember 2017* 
   
-**Folgen von [Microsoft Cloud App-Sicherheit Version 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
+**Folgende [Microsoft Cloud App Security Release 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
   
-- **Zeit Filter Verbesserungen**. Zeitfilter sind nun leichter zu verwenden. Zugriff auf eine Zeitfilter, in einer Ansicht, wie etwa Aktivitätsprotokolls, Richtlinien, Benachrichtigungen, mit der erweiterten Ansicht, wählen Sie in der Liste der Filter **Datum** . Wählen Sie dann eine Option wie vor, nach oder in zwischen den Zeitfilter anwenden. 
+- **Zeitfilter Verbesserungen**. Zeitfilter sind jetzt einfacher zu verwenden. Um auf einen Zeitfilter zuzugreifen, wählen Sie in einer Ansicht wie Aktivitätsprotokoll, Richtlinien, Warnungen, in der erweiterten Ansicht die Option **Datum** in der Liste der Filter aus. Wählen Sie dann eine Option aus, beispielsweise before, after oder in between, um den Zeitfilter anzuwenden. 
     
-    ![Verwenden Sie den Datumsfilter, um Informationen vor, nach oder zwischen Datumsangaben anzuzeigen.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
+    ![Verwenden Sie den Datumsfilter, um Informationen vor, nach oder zwischen Daten anzuzeigen.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
   
-## <a name="office-365-cloud-app-security-release-110"></a>Office 365 Cloud App-Sicherheit Version 110
+## <a name="office-365-cloud-app-security-release-110"></a>Office 365 Cloud App Security Release 110
 
-*26 November 2017 veröffentlicht* 
+*Veröffentlicht am 2017* 
   
-**Folgen von [Microsoft Cloud App-Sicherheit Version 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
+**Folgende [Microsoft Cloud App Security Release 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
   
-- **SIEM-Server-Integration jetzt erhältlich**. Verbinden Sie Ihre Server SIEM mit Office 365-Cloud-App-Sicherheit. Sie können jetzt Warnungen und Aktivitäten automatisch auf Ihrem Server SIEM Wahl senden, SIEM Agents konfigurieren. Finden Sie unter [Integrieren Ihrer SIEM Server mit Office 365-Cloud-App-Sicherheit](integrate-your-siem-server-with-office-365-cas.md).
+- **Siem-Server Integration jetzt allgemein verfügbar**. Verbinden Sie Ihren SIEM-Server mit Office 365 Cloud App Security. Sie können jetzt Warnungen und Aktivitäten automatisch an Ihren SIEM-Server Ihrer Wahl senden, indem Sie SIEM-Agents konfigurieren. Weitere Informationen finden Sie unter [integrieren Ihres Siem-Servers in Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md).
     
-- **Einfacher Zugriff auf Inhalte zu unterstützen**. Verwenden das neue Fragezeichen in der oberen rechten Ecke, können Sie jetzt den Hilfeinhalt von innerhalb der Seiten von der Cloud App Sicherheit in Office 365-Portal zugreifen. Jeder Link ist kontextbezogene, wobei Sie mit den Informationen, die, den Sie benötigen, basierend auf der Seite Sie sich befinden. 
+- **Einfacher Zugriff auf Hilfeinhalte**. Mit dem neuen Fragezeichen in der oberen rechten Ecke können Sie nun über die Seiten des Office 365 Cloud App Security-Portals auf die Hilfeinhalte zugreifen. Jeder Link ist kontextbezogen und führt Sie zu den Informationen, die Sie benötigen, basierend auf der Seite, auf der Sie sich befinden. 
     
-- **Senden Sie uns Feedback**. Verwenden das Smiley in der oberen rechten Ecke, können Sie jetzt Feedback von jeder Seite des Office 365-Cloud-App-Sicherheit Portals senden. So können Sie zum Melden von Fehlern, fordern die neuen Features und Ihre Erfahrung direkt mit dem Office 365-Cloud-App-Sicherheit Team freigeben. 
+- **Senden Sie uns Feedback**. Mithilfe der Smiley-Oberfläche in der oberen rechten Ecke können Sie jetzt Feedback von jeder Seite des Office 365 Cloud App Security-Portals senden. Auf diese Weise können Sie Fehler melden, neue Funktionen anfordern und ihre Erfahrungen direkt mit dem Office 365 Cloud App Security-Team austauschen. 
     
-## <a name="office-365-cloud-app-security-release-102"></a>Office 365 Cloud App-Sicherheit Version 102
+## <a name="office-365-cloud-app-security-release-102"></a>Office 365 Cloud App Security Release 102
 
-*13 August 2017 veröffentlicht* 
+*Veröffentlicht am 13. August 2017* 
   
-**Nach [Microsoft Cloud App-Sicherheit 102 freizugeben](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
+**Folgende [Microsoft Cloud App Security Release 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
   
-- **Neue Untersuchung Benutzeraktionen** aktivieren ein höheres Maß an-Drilldown zum Benutzer Untersuchungen. Auf einer Seite untersuchen können und bewegen Sie den Mauszeiger auf eine Aktivität, Benutzer oder Konto als Filter anwenden, und von dort können Sie die zugehörige Aktivitäten oder Ereignisse anzeigen. 
+- **Neue Benutzer Ermittlungsaktionen** ermöglichen eine zusätzliche Drilldownebene für Benutzer Untersuchungen. Auf einer untersuchen-Seite können Sie auf eine Aktivität, einen Benutzer oder ein Konto zeigen und Sie als Filter anwenden, und von dort aus können Sie verwandte Aktivitäten oder Ereignisse anzeigen. 
     
-## <a name="office-365-cloud-app-security-release-100"></a>Office 365 Cloud App-Sicherheit Version 100
+## <a name="office-365-cloud-app-security-release-100"></a>Office 365 Cloud App Security Release 100
 
-*17 Juli 2017 veröffentlicht* 
+*Veröffentlicht am 2017* 
   
-**Folgen von [Microsoft Cloud App-Sicherheit Version 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
+**Folgende [Microsoft Cloud App Security Release 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
   
-- **Sicherheit Extensions** ist ein neues Dashboard, in dem Sie alle Ihre Sicherheit Erweiterungen zentral für Office 365 Cloud App-Sicherheit, einschließlich API Token und SIEM Agents verwalten können. Zum Anzeigen eines Dashboards Extensions Sicherheit, gehen Sie folgendermaßen vor: 
+- **Security Extensions** ist ein neues Dashboard, in dem Sie alle Ihre Sicherheitserweiterungen für Office 365 Cloud-App-Sicherheit, einschließlich API-Token und Siem-Agents, zentral verwalten können. Gehen Sie folgendermaßen vor, um das Security Extensions-Dashboard anzuzeigen: 
     
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. (Dadurch gelangen Sie zum Security &amp; Compliance Center.) 
     
-2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
+2. Wechseln Sie zu **Warnungen** \> **Verwalten erweiterter Warnungen**.
     
-3. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.
-    
-    ![In das Wertpapier &amp; Compliance Center, wählen Sie Warnungen \> erweiterte Benachrichtigungen verwalten \> wechseln Sie zur erweiterten Sicherheit-Verwaltung](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
+3. Wählen Sie **Gehe zu Office 365 Cloud App Security**.
   
-4. **Auswählen von** \> **Security Extensions**.
+4. Wählen Sie **Sicherheitserweiterungen**für **Einstellungen** \> aus.
     
-    ![Wählen Sie im Portal ASM Einstellungen \> Security-Erweiterungen](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
+    ![Wählen Sie im ASM-Portal Einstellungen \> für Sicherheitserweiterungen aus.](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
   
-- **Verbesserte analysieren**. Im Protokoll Cloud Discovery Analyse Mechanismus wurden Verbesserungen vorgenommen. Interne Fehler sind weitaus geringerer Wahrscheinlichkeit auftreten. 
+- **Verbesserte Analyse**. Verbesserungen wurden im Analyse Mechanismus des Cloud-Ermittlungs Protokolls vorgenommen. Interne Fehler sind erheblich unwahrscheinlicher. 
     
-- **Erwartete Protokollformate**. Das erwartete Format für Cloud-Discovery-Protokolle enthält nun Beispiele für sowohl Syslog und FTP-Format. 
+- **Erwartete Protokollformate**. Das erwartete Protokollformat für Cloud-Erkennungsprotokolle enthält jetzt Beispiele für syslog-und FTP-Formate. 
     
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Hilfeinhalte für Office 365-Cloud-App-Sicherheit](office-365-cas-help.md)
+[Office 365 Cloud App Security-Hilfeinhalt](office-365-cas-help.md)
 
-[Was ist neu in Office 365-Cloud-App-Sicherheit](new-in-office-365-cas.md)
+[Was ist neu in Office 365 Cloud App Security](new-in-office-365-cas.md)
   
 [Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security](utilization-activities-for-ocas.md)
 

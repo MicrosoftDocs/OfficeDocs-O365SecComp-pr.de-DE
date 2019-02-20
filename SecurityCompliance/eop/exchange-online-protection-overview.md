@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, mit dem Sie Ihre Organisation vor Spam und Schadsoftware schützen können.
-ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686364"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087344"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter E-Mail-Filteru
   
 EOP kann in erster Linie über die folgenden Methoden für den Nachrichtenschutz eingesetzt werden:
   
-- **In einem eigenständigen Szenario** EOP bietet Cloud-basierte e-Mail-Schutz für Ihre lokale Microsoft Exchange Server 2013-Umgebung, Legacyversionen von Exchange Server oder eine beliebige andere lokale SMTP-e-Mail-Lösung. 
+- **In einem eigenständigen Szenario** EOP bietet Cloud-basierten e-Mail-Schutz für Ihre lokale Microsoft Exchange Server 2013-Umgebung, Legacyversionen von Exchange Server oder für andere lokale SMTP-e-Mail-Lösungen. 
     
 - **Als Bestandteil von Microsoft Exchange Online** EOP schützt standardmäßig cloudgehostete Postfächer von Microsoft Exchange Online. 
     
@@ -36,7 +36,7 @@ Die Funktionsweise von EOP lässt sich am besten an der Verarbeitung eingehender
   
 ![EOP-e-Mail-Verarbeitung](../media/EOP-email-processing.png)
   
-Eine eingehende Nachricht durchläuft zunächst Verbindungsfilter, die der Sender Reputation überprüft, und untersucht die Meldung für Schadsoftware. Die meisten Spam ist zu diesem Zeitpunkt beendet und von EOP gefiltert werden gelöscht. Nachrichten weiterhin über richtlinienfilterung, wobei Nachrichten für benutzerdefinierte Transportregeln ausgewertet werden, die Sie erstellen oder aus einer Vorlage zu erzwingen. Beispielsweise haben Sie eine Regel, die eine Benachrichtigung an einen Manager, beim Eintreffen von Nachrichten von einem bestimmten Absender sendet. (Data Loss Prevention überprüft auch zu diesem Zeitpunkt bei auftreten, die Funktion; Informationen zur Verfügbarkeit von Features finden Sie in der [Exchange Online Protection Service Description](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Übergeben Sie im nächsten Schritt Nachrichten über Content-Filterung, auf dem Inhalt für Terminologie oder allgemeine Eigenschaften auf spam überprüft wird. Eine Nachricht festgestellt, dass Spam vom Inhaltsfilter auf Junk-e-Mail-Ordner eines Benutzers oder der Quarantäne unter Weitere Optionen, basierend auf Ihrer Einstellungen gesendet werden kann. Nachdem eine Nachricht alle diese Ebenen Schutz erfolgreich übergibt, wird es an den Empfänger übermittelt.
+Eine eingehende Nachricht durchläuft zunächst die Verbindungsfilterung, die den Ruf des Absenders überprüft und die Nachricht auf Schadsoftware überprüft. Die Mehrzahl der Spam-Mails wird an dieser Stelle angehalten und von EOP gelöscht. Nachrichten werden durch die Richtlinienfilterung fortgesetzt, bei der Nachrichten anhand benutzerdefinierter Transportregeln ausgewertet werden, die Sie aus einer Vorlage erstellen oder erzwingen. Sie können beispielsweise über eine Regel verfügen, die eine Benachrichtigung an einen Vorgesetzten sendet, wenn e-Mails von einem bestimmten Absender eingehen. (Datenverlust-Vermeidungs Überprüfungen treten auch an diesem Punkt auf, wenn Sie diese Funktion haben; weitere Informationen zur Verfügbarkeit von Funktionen finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Im nächsten Schritt werden Nachrichten durch Inhaltsfilterung geleitet, bei der Inhalte auf Terminologie oder gemeinsame Eigenschaften für Spam überprüft werden. Eine Nachricht, die vom Inhaltsfilter als Spam festgelegt wurde, kann je nach Ihren Einstellungen an den Junk-e-Mail-Ordner eines Benutzers oder an die Quarantäne gesendet werden. Nachdem eine Nachricht alle diese Schutzebenen erfolgreich übergeben hat, wird Sie an den Empfänger übermittelt.
   
 ### <a name="eop-datacenters"></a>EOP-Datencenter
 
@@ -47,13 +47,13 @@ EOP führt einen Lastenausgleich zwischen Rechenzentren aus, jedoch nur innerhal
     
 - In Europa, dem Nahen Osten und Afrika (EMEA) befinden sich alle Exchange Online-Postfächer in EMEA-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über EMEA-Rechenzentren geleitet.
     
-- In Asien-Pazifik ("APAC"), befinden sich alle Exchange Online-Postfächern in Rechenzentren "APAC", aber Nachrichten derzeit über "APAC" Rechenzentren für EOP-Filterung geleitet werden.
-=======
-- In der amerikanischen Kontinent befinden sich alle Exchange Online-Postfächern in US-Datencentern, mit Ausnahme von Südamerika, wo Rechenzentren in Brasilien und Chile verwendet werden, und in Kanada, in denen Rechenzentren in Kanada verwendet werden. Alle e-Mail-Nachrichten, einschließlich Nachrichten für Kunden in Südamerika und in Kanada, werden über lokale Rechenzentren für EOP-Filterung weitergeleitet; Quarantäne gestellte e-Mails wird im Datencenter gespeichert, in dem der Mandant befindet.
+- In Asien-Pazifik (APAC) befinden sich alle Exchange Online-Postfächer in APAC-Rechenzentren, Nachrichten werden derzeit über APAC-Rechenzentren zur EOP-Filterung weitergeleitet.
+
+- In Amerika befinden sich alle Exchange Online-Postfächer in US-Rechenzentren, mit Ausnahme von Südamerika, in dem Datencenter in Brasilien und Chile verwendet werden, und in Kanada, in denen Rechenzentren in Kanada verwendet werden. Alle e-Mail-Nachrichten, einschließlich Nachrichten für Kunden in Südamerika und Kanada, werden für EOP-Filterung über lokale Datencenter geroutet. quaratined-e-Mails werden im Datencenter gespeichert, in dem sich der Mandant befindet.
     
 - In Europa, dem Nahen Osten und Afrika (EMEA) befinden sich alle Exchange Online-Postfächer in EMEA-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über EMEA-Rechenzentren geleitet.
     
-- In Asien-Pazifik ("APAC"), befinden sich alle Exchange Online-Postfächern in Rechenzentren "APAC", und Nachrichten werden derzeit über "APAC" Rechenzentren für EOP-Filterung weitergeleitet.
+- In Asien-Pazifik (APAC) befinden sich alle Exchange Online-Postfächer in APAC-Rechenzentren, und Nachrichten werden derzeit über APAC-Rechenzentren zur EOP-Filterung weitergeleitet.
     
 - Alle Exchange Online-Postfächer für die Government Community Cloud (GCC) befinden sich in US-Rechenzentren, und alle Nachrichten werden zur EOP-Filterung über US-Rechenzentren geleitet.
     
