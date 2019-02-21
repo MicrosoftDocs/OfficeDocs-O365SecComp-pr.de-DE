@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
+title: Einrichten von Office 365 ATP-Richtlinien für sichere Anlagen
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,88 +13,88 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection: M365-security-compliance
-description: Definieren Sie sichere Anlagen Richtlinien zum Schutz Ihrer Organisation aus schädliche Dateien in e-Mail.
-ms.openlocfilehash: c089d46da2070f32f2452bab1fd2f7c15a39861c
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor schädlichen Dateien in e-Mails.
+ms.openlocfilehash: dc3235dc8225a46ee28ea8bd0342721b4d55f4f0
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995386"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123936"
 ---
-# <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Richtlinien für Office 365 ATP sichere Anlagen
+# <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Office 365 ATP-Richtlinien für sichere Anlagen
 
-Benutzer regelmäßig senden, empfangen und Freigeben von Anlagen, wie Dokumente, Kalkulationstabellen, Präsentationen und vieles mehr. Es ist nicht immer leicht zu erkennen, ob eine Anlage sicherer oder böswilliges ist einfach anhand einer e-Mail-Nachricht. Und die letzte gewünschte ist eine bösartige Anlage abzurufenden über, einem Chaos für Ihre Organisation. Zum Glück kann [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP) helfen. Sie können Richtlinien [ATP sichere Anlagen](atp-safe-attachments.md) einrichten, um sicherzustellen, dass Ihre Organisation vor Angriffen durch unsichere e-Mail-Anlagen geschützt ist. 
+Personen, die regelmäßig Anhänge senden, empfangen und freigeben, wie Dokumente, Präsentationen, Tabellenkalkulationen und vieles mehr. Es ist nicht immer einfach zu erkennen, ob eine Anlage sicher oder bösartig ist, indem Sie sich eine e-Mail-Nachricht ansehen. Und das letzte, was Sie wollen, ist eine Schadsoftware, die Sie durchlaufen und verheerend für Ihre Organisation anrichten können. Glücklicherweise kann [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) helfen. Sie können ATP-Richtlinien für [sichere Anlagen](atp-safe-attachments.md) einrichten, um sicherzustellen, dass Ihre Organisation vor Angriffen durch unsichere e-Mail-Anhänge geschützt ist. 
   
 ## <a name="what-to-do"></a>Nächste Schritte 
   
-1. [Überprüfen Sie die erforderlichen Komponenten](#review-the-prerequisites)
+1. [Überarbeiten der Voraussetzungen](#review-the-prerequisites)
     
-2. [Richten Sie eine Richtlinie ATP sichere Anlagen](#set-up-an-atp-safe-attachments-policy)
+2. [Einrichten einer Richtlinie zu sicheren ATP-Anlagen](#set-up-an-atp-safe-attachments-policy)
     
-3. [Erfahren Sie mehr über Richtlinienoptionen ATP sichere Anlagen](#learn-about-atp-safe-attachments-policy-options)
+3. [Informationen zu Richtlinienoptionen für ATP-sichere Anlagen](#learn-about-atp-safe-attachments-policy-options)
     
-## <a name="step-1-review-the-prerequisites"></a>Schritt 1: Überprüfen der erforderlichen Komponenten
+## <a name="step-1-review-the-prerequisites"></a>Schritt 1: Überarbeiten der Voraussetzungen
 
-- Stellen Sie sicher, dass Ihre Organisation [Office 365 erweiterte Schutz](office-365-atp.md)verfügt.
+- Stellen Sie sicher, dass Ihre Organisation über [Office 365 Advanced Threat Protection](office-365-atp.md)verfügt.
     
-- Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen verfügen. Um ATP Richtlinien definieren (oder bearbeiten), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden: <br>
+- Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen. Um ATP-Richtlinien zu definieren (oder zu bearbeiten), muss Ihnen eine entsprechende Rolle zugewiesen werden. Einige Beispiele werden in der folgenden Tabelle beschrieben: <br>
 
-    |Rolle  |WHERE/wie zugewiesen.  |
+    |Rolle  |Wo/wie zugewiesen  |
     |---------|---------|
-    |Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
-    |Sicherheitsadministrator |Azure Active Directory-Verwaltungskonsole ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+    |Office 365 globaler Administrator |Die Person, die sich für den Kauf von Office 365 registriert, ist standardmäßig globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+    |Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
+    |Exchange Online-Organisationsverwaltung |Exchange-Verwaltungskonsole[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
-    Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- [Informieren Sie sich über Richtlinienoptionen ATP sichere Anlagen](#learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, wie die Optionen Monitor oder ersetzen können dazu führen eine geringfügige Verzögerung von e-Mails während Anlagen überprüft werden. Nachricht verzögert zu vermeiden, erwägen Sie [Dynamische Übermittlung und Anzeigen der Vorschau](dynamic-delivery-and-previewing.md).
+- Informationen [zu Richtlinienoptionen für ATP-sichere Anlagen](#learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, wie beispielsweise die Optionen zum Überwachen oder ersetzen, können zu einer geringfügigen Verzögerung von e-Mails führen, während Anlagen gescannt werden. Um Nachrichten Verzögerungen zu vermeiden, sollten Sie die [dynamische Übermittlung und Vorschau](dynamic-delivery-and-previewing.md)verwenden.
     
-- Können Sie bis zu 30 Minuten für die neue oder aktualisierte Richtlinie in allen Office 365-Rechenzentren verteilen.
+- Erlauben Sie bis zu 30 Minuten, bis Ihre neue oder aktualisierte Richtlinie auf alle Office 365-Rechenzentren verteilt ist.
     
-## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: Einrichten eine Richtlinie für den sicheren Anlagen ATP (oder bearbeiten)
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Schritt 2: einrichten (oder bearbeiten) einer ATP-Richtlinie für sichere Anlagen
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Geschäfts-oder Schulkonto an. 
     
-2. In der Office 365-Sicherheit &amp; Compliance Center, wählen Sie im linken Navigationsbereich unter **Threat Management** **Policy** \> **Sichere Anlagen**.
+2. wählen sie im Office 365 &amp; Security Compliance Center im linken navigationsbereich unter bedrohungs **verwaltung**die option **richtlinie** \> für **sichere anlagen**aus.
     
-3. Wenn Sie **für SharePoint, OneDrive, und Microsoft-Teams, ATP einschalten**angezeigt wird, wird empfohlen, dass Sie diese Option auswählen. Dadurch können [Office 365 erweiterte Bedrohungsschutz für SharePoint, OneDrive, und Microsoft-Teams](atp-for-spo-odb-and-teams.md) für die Office 365-Umgebung. 
+3. Wenn Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**, wird empfohlen, diese Option auszuwählen. Dadurch wird [office 365 Advanced Threat Protection für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) für ihre Office 365-Umgebung aktiviert. 
     
-4. Wählen Sie **neu** (die neue Schaltfläche ähnelt ein Pluszeichen ( **+**)) zum erstmaligen Erstellen der Richtlinie.
+4. Wählen Sie **neu** aus (die Schaltfläche neu ähnelt einem Plus **+** Zeichen ()), um mit dem Erstellen Ihrer Richtlinie zu beginnen.
     
-5. Geben Sie Name, Beschreibung und Einstellungen für die Richtlinie ein.<br/><br/>**Beispiel:** Um eine Richtlinie namens "keine Verzögerungen" eingerichtet, die alle Nachrichten sofort übermittelt und Anlagen dann überwacht werden, nachdem sie überprüft haben, können Sie die folgenden Einstellungen angeben: 
+5. Geben Sie den Namen, die Beschreibung und die Einstellungen für die Richtlinie an.<br/><br/>**Beispiel:** Sie können die folgenden Einstellungen angeben, um eine Richtlinie mit dem Namen "keine Verzögerungen" einzurichten, die alle Nachrichten sofort bereitstellt und dann Anhänge anfügt, nachdem Sie gescannt wurden: 
     
-      - Geben Sie im Feld **Name** keine verzögert.
+      - Geben Sie im Feld **Name** keine Verzögerungen ein.
     
-      - Geben Sie im Feld **Beschreibung** eine Beschreibung wie sofort bietet Nachrichten und Anlagen überwacht nach der Überprüfung.
+      - Geben Sie im Feld **Beschreibung** eine Beschreibung ein, die Nachrichten sofort übermittelt und nach der Überprüfung Anhänge anfügt.
     
-      - Wählen Sie im Abschnitt Antwort **Dynamische Übermittlung** . ([Erfahren Sie mehr über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md)).
+      - Wählen Sie im Abschnitt Antwort die Option **dynamische Zuschaltung** aus. ([Erfahren Sie mehr über die dynamische bereit-und Vorschau mit sicheren ATP-Anlagen](dynamic-delivery-and-previewing.md).)
     
-      - Wählen Sie die Option zum Umleiten aktivieren, und geben Sie die e-Mail-Adresse des Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheit Analyst, die bösartige Anlagen untersuchen, klicken Sie im Abschnitt **Anlage umleiten** . 
+      - Wählen Sie im Abschnitt umLeitungs **Anlage** die Option Umleitung aktivieren aus, und geben Sie die e-Mail-Adresse des globalen Administrators, Sicherheitsadministrators oder Sicherheitsanalysten ihres Office 365 ein, der böswillige Anlagen untersucht. 
     
-      - **Angewendet auf** Sie im Abschnitt wählen Sie **die Domäne des Empfängers ist**, und wählen Sie dann Ihre Domäne aus. Wählen Sie **Hinzufügen**, und wählen Sie dann auf **OK**.
+      - Wählen Sie im Abschnitt **angewendet** am **die Option Empfängerdomäne ist**aus, und wählen Sie dann Ihre Domäne aus. Klicken Sie auf **Hinzufügen**und dann auf **OK**.
     
 6. Klicken Sie auf **Save**.
     
-Verwenden Sie nach Möglichkeit mehrere sichere Anlagen ATP-Richtlinien für Ihre Organisation. Diese Richtlinien werden in der Reihenfolge angewendet werden, die sie auf der Seite **ATP sichere Anlagen** aufgeführt werden. Nachdem eine Richtlinie definiert oder bearbeitet wurde, können Sie mindestens 30 Minuten für die Richtlinien in der gesamten Microsoft-Rechenzentren wirksam wird. 
+Erwägen Sie das Einrichten mehrerer ATP-Richtlinien für sichere Anlagen für Ihre Organisation. Diese Richtlinien werden in der Reihenfolge angewendet, in der Sie auf der Seite " **sichere Anlagen** " aufgeführt sind. Nachdem eine Richtlinie definiert oder bearbeitet wurde, können die Polizeibehörden mindestens 30 Minuten lang in Microsoft-Rechenzentren wirksam werden. 
   
-## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Schritt 3: Informationen Sie zu Richtlinienoptionen ATP sichere Anlagen
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Schritt 3: Informationen zu Richtlinien Optionen für ATP Safe Attachments
 
-Wie Sie Ihre Richtlinien ATP sichere Anlagen eingerichtet haben, wählen Sie ein Gerät viele Optionen, einschließlich Monitor, blockieren, ersetzen, dynamische Übermittlung und So weiter. Für den Fall, dass Sie wissen möchten, wie Sie, diese Optionen vorgehen, die in der folgenden Tabelle werden alle zusammengefasst und ihre Auswirkung.
+Bei der Einrichtung Ihrer Richtlinien für sichere ATP-Anlagen wählen Sie aus zahlreichen Optionen, einschließlich Monitor, Block, ersetzen, dynamischer Bereitstellung usw. Wenn Sie sich Fragen, was diese Optionen tun, werden in der folgenden Tabelle die einzelnen und ihre Auswirkungen zusammengefasst.
   
-|**Option**|**Effekt**|**Wird verwendet, wenn Sie möchten:**|
+|**Option**|**Effekt**|**Verwenden Sie, wenn Sie Folgendes möchten:**|
 |:-----|:-----|:-----|
-|**Off** <br/> |Anlagen für Malware überprüft nicht  <br/> Nachrichtenübermittlung werden nicht verzögert.  <br/> |Deaktivieren Sie Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur ordnungsgemäßen Anlagen senden  <br/> Verhindern, dass unnötige Verzögerungen bei der internen e-Mail-Routings  <br/> **Diese Option ist nicht für die meisten Benutzer empfohlen. Sie können Sie deaktivieren ATP sichere Anlagen scannen für eine kleine Gruppe von internen Absendern.**           |
-|**Monitor** <br/> |Übermittelt Nachrichten mit Anlagen, und klicken Sie dann verfolgt was passiert, mit erkannte Schadsoftware  <br/> |Finden Sie unter erkannte Schadsoftware in Ihrer Organisation, auf dem wechselt  <br/> |
-|**Blockieren** <br/> |Verhindert, dass Nachrichten mit Anlagen aus fortfahren erkannte Schadsoftware  <br/> Sendet Nachrichten mit erkannte Schadsoftware in [Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in dem ein Sicherheitsadministrator oder Analyst überprüfen und release (diese Nachrichten oder löschen kann)  <br/> Zukünftige Nachrichten und Anlagen blockiert automatisch  <br/> |Schützen der Organisation wiederholte Angriffe mit der gleichen Malware Anlagen  <br/> |
-|**Ersetzen** <br/> |Entfernt Anlagen Schadsoftware erkannt  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden  <br/> Sendet Nachrichten mit erkannte Schadsoftware in [Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in dem ein Sicherheitsadministrator oder Analyst überprüfen und release (diese Nachrichten oder löschen kann)  <br/> |Auslösen der Sichtbarkeit an Empfänger, dass Anlagen aufgrund gefundene Malware entfernt wurden  <br/> |
-|**Dynamische Übermittlung** <br/> |Übermittelt Nachrichten sofort  <br/> Anlagen ersetzt mit einer Platzhalterdatei, bis Überprüfung abgeschlossen ist, und klicken Sie dann die Anlagen überwacht, wenn keine Schadsoftware ermittelt wird  <br/> Enthält als Anlage Vorschau von Funktionen für die meisten PDF-Dateien und Office-Dateien während der Überprüfung  <br/> Sendet Nachrichten mit erkannte Schadsoftware in Quarantäne, in dem ein Sicherheitsadministrator oder Analyst überprüfen und release (diese Nachrichten oder löschen kann)  <br/> [Erfahren Sie mehr über dynamische Übermittlung und sichere Anlagen ATP Vorschau](dynamic-delivery-and-previewing.md) <br/> |Vermeiden Sie Nachricht Verzögerungen beim Schützen der Empfänger schädliche Dateien  <br/> Aktivieren von Empfängern für die Vorschau von Anlagen im abgesicherten Modus während Überprüfung durchgeführt wird  <br/> |
-|**Aktivieren Sie die Umleitung** <br/> |Gilt, wenn die Option überwachen, blockieren oder Ersetzen ausgewählt wird  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, in dem können Sicherheitsadministratoren oder Analysten untersuchen  <br/> |Aktivieren der Sicherheitsadministratoren und Analysten verdächtige Anlagen überprüfen  <br/> |
+|**Off** <br/> |Die Anlagen werden nicht auf Schadsoftware überprüft  <br/> Nachrichtenübermittlung wird nicht verzögert  <br/> |Deaktivieren Sie die Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur bekannte, gute Anlagen senden.  <br/> Vermeiden unnötiger Verzögerungen beim Routing interner e-Mails  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Es ermöglicht Ihnen, die Überprüfung von ATP Safe Attachments für eine kleine Gruppe interner Absender zu aktivieren.**           |
+|**Monitor** <br/> |Übermittelte Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht  <br/> |Siehe wo erkannte Schadsoftware in Ihrer Organisation geht  <br/> |
+|**Block** <br/> |Verhindert das Fortsetzen von Nachrichten mit erkannter Schadsoftware  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen  <br/> |Schützen Sie Ihre Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen  <br/> |
+|**Ersetzen** <br/> |Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> |Erhöhen der Sichtbarkeit von Empfängern, dass Anlagen aufgrund erkannter Schadsoftware entfernt wurden  <br/> |
+|**Dynamische Verteilung** <br/> |Sofortiges übermitteln von Nachrichten  <br/> Ersetzt Anlagen mit einer Platzhalterdatei, bis die Überprüfung abgeschlossen ist, und fügt die Anlagen dann erneut an, wenn keine Schadsoftware erkannt wird.  <br/> Enthält Funktionen für die Vorschau von Anlagen für die meisten PDFs und Office-Dateien während des Scans  <br/> Sendet Nachrichten mit erkannter Schadsoftware in Quarantäne, in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> [Informationen zur dynamischen bereitstellen und Vorschau mit sicheren ATP-Anlagen](dynamic-delivery-and-previewing.md) <br/> |Vermeiden von Nachrichten Verzögerungen beim Schützen von Empfängern vor schädlichen Dateien  <br/> Empfänger können Anhänge im abgesicherten Modus anzeigen, während die Überprüfung stattfindet  <br/> |
+|**Umleitung aktivieren** <br/> |Gilt, wenn die Option Monitor, Block oder ersetzen ausgewählt ist.  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, die von Sicherheitsadministratoren oder Analysten untersucht werden kann  <br/> |Aktivieren von Sicherheitsadministratoren und Analysten zur Untersuchung verdächtiger Anlagen  <br/> |
    
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Ihre ATP sichere Anlagen Richtlinien vorhanden sind, können Sie sehen, wie für Ihre Organisation ATP funktionsfähig ist, indem Sie Berichte anzeigen. Finden Sie in den folgenden Ressourcen, um mehr zu erfahren:
-- [Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
-- [Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
+Nachdem Sie Ihre ATP-Richtlinien für sichere Anlagen eingerichtet haben, können Sie sehen, wie ATP für Ihre Organisation funktioniert, indem Sie Berichte anzeigen. Weitere Informationen finden Sie in den folgenden Ressourcen:
+- [Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+- [Verwenden des Explorers im Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
 
-Neue Features der ATP behalten. Besuchen Sie die [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) , und informieren Sie sich über [neue Features, die ATP hinzugefügt wird](office-365-atp.md#new-features-are-continually-being-added-to-atp).
+Bleiben Sie auf dem neuesten Stand der neuen Features für ATP. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) , und erfahren Sie mehr über [neue Features, die ATP hinzugefügt werden](office-365-atp.md#new-features-in-office-365-atp).
  
