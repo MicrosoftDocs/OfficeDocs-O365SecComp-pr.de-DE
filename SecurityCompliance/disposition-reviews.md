@@ -1,124 +1,124 @@
 ---
-title: Übersicht über die Disposition Reviews (engl.)
+title: Übersicht über Dispositionsüberprüfungen
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
-description: Wenn Sie eine Beschriftung, die Inhalte in Office 365 behält erstellen, können Sie auswählen, Disposition Wiederholung am Ende des Aufbewahrungszeitraums ausgelöst.
-ms.openlocfilehash: c0a2933f597c9b314ac4ce2e72de9619fac90082
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Wenn Sie eine Bezeichnung erstellen, in der Inhalte in Office 365 aufbewahrt werden, können Sie eine Disposition-Überprüfungen am Ende des Aufbewahrungszeitraums auslösen.
+ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013719"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215005"
 ---
-# <a name="overview-of-disposition-reviews"></a>Übersicht über die Disposition Reviews (engl.)
+# <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositionsüberprüfungen
 
-Wenn Inhalte am Ende der Aufbewahrungsdauer erreicht, sind verschiedene Gründe, warum Sie möglicherweise überprüfen möchten, dass Inhalte entscheiden, ob sicher gelöscht werden kann ("freigegeben"). Sie können beispielsweise Folgendes ausführen:
+Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht hat, gibt es mehrere Gründe, warum Sie diesen Inhalt überprüfen möchten, um zu entscheiden, ob er sicher gelöscht werden kann ("verworfen"). Beispielsweise müssen Sie Folgendes tun:
   
-- Das Löschen ("Disposition") relevante Inhalte im Fall von Rechtsstreitigkeiten oder eine Prüfung anhalten.
+- UnterBrechen des Löschens ("Disposition") relevanter Inhalte im Fall eines Rechtsstreits oder einer Überwachung.
     
-- Entfernen Sie Inhalt aus der Liste der Disposition von Dokumenten in einem Archiv gespeichert, wenn dieser Inhalte Research oder zurückliegenden Wert hat.
+- Entfernen Sie Inhalte aus der Dispositionsliste, um Sie in einem Archiv zu speichern, wenn dieser Inhalt Forschungs-oder Verlaufswerte aufweist.
     
-- Weisen Sie eine andere Aufbewahrungsdauer den Inhalt, wenn die ursprüngliche Richtlinie einer Lösung temporären oder vorläufigen wurde.
+- Weisen Sie dem Inhalt einen anderen Aufbewahrungszeitraum zu, wenn die ursprüngliche Richtlinie eine temporäre oder provisorische Lösung war.
     
-- Den Inhalt an Clients zurückgeben oder auf einer anderen Organisation übertragen.
+- Den Inhalt an Clients zurückgeben oder an eine andere Organisation übertragen.
     
-Wenn Sie eine Beschriftung, die Inhalte in Office 365 behält erstellen, können Sie auswählen, Disposition Wiederholung am Ende des Aufbewahrungszeitraums ausgelöst. Bei einer Überprüfung Disposition:
+Wenn Sie eine Bezeichnung erstellen, in der Inhalte in Office 365 aufbewahrt werden, können Sie eine Disposition-Überprüfungen am Ende des Aufbewahrungszeitraums auslösen. Bei einer Disposition:
   
-- Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass sie Inhalte überprüfen aufweisen. Diese Bearbeiter können einzelnen Benutzern, Verteilergruppen oder Sicherheitsgruppen oder Office 365 Gruppen sein. Beachten Sie, dass wöchentlich Benachrichtigungen gesendet werden.
+- Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überarbeitung haben. Diese Prüfer können einzelne Benutzer, Verteiler-oder Sicherheitsgruppen oder Office 365-Gruppen sein. Beachten Sie, dass Benachrichtigungen wöchentlich gesendet werden.
     
-- Die Bearbeiter wechseln Sie zur Seite **Disposition von Dokumenten** in das Wertpapier &amp; Compliance Center, um den Inhalt zu überprüfen. 
+- Die Bearbeiter wechseln zur Seite " **Disposition** " im Security &amp; Compliance Center, um den Inhalt zu Überprüfung. 
     
-- Für jedes Dokument kann der Prüfer:
+- Für jedes Dokument kann der Prüfer Folgendes tun:
     
-  - Eine andere Bezeichnung anwenden.
+  - Anwenden einer anderen Bezeichnung
     
-  - Erweitern Sie die Aufbewahrungsdauer.
+  - Verlängern des Aufbewahrungszeitraums.
     
-  - Dauerhaft löschen.
+  - Endgültig löschen.
     
-- Prüfer können entweder ausstehende oder zurückliegenden Abschneidedispositionen anzeigen und diese Liste als CSV-Datei zu exportieren.
+- Prüfer können ausstehende oder historische Dispositionen anzeigen und diese Liste als CSV-Datei exportieren.
     
-Beachten Sie, Disposition Bewertungen ein Office 365 Enterprise E5 Abonnement benötigen.
+Beachten Sie, dass für Dispositions Prüfungen ein Office 365 Enterprise E5-Abonnement erforderlich ist.
   
-Disposition Wiederholung kann in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Gruppen für Office 365 enthalten. Eine Disposition Prüfung an diesen Speicherorten Inhalt wird gelöscht, erst nach ein Bearbeiter möchte die Inhalte dauerhaft gelöscht.
+Eine Disposition-Überprüfungen kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Office 365-Gruppen einbeziehen. Inhalte, die auf eine Disposition-Überprüfungen an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
   
-![Disposition-Seite](media/b7436fb2-1f35-4146-8ca2-32c9d10f7e09.png)
+![DisPositions Seite](media/b7436fb2-1f35-4146-8ca2-32c9d10f7e09.png)
   
-## <a name="setting-up-the-disposition-review-by-creating-a-label"></a>Einrichten der Disposition überprüfen, indem Sie eine Beschriftung erstellen
+## <a name="setting-up-the-disposition-review-by-creating-a-label"></a>Einrichten der Disposition-Überprüfungen durch Erstellen einer Bezeichnung
 
-Dies ist der grundlegende Workflow für das Einrichten einer Disposition überprüfen. Beachten Sie, dass diesem Datenstrom eine Beschriftung zeigt, veröffentlicht, und klicken Sie dann manuell von einem Benutzer zugewiesen. auch kann eine Beschriftung, die eine Überprüfung Disposition ausgelöst wird automatisch auf Inhalte angewendet wird.
+Dies ist der grundlegende Workflow für das Einrichten einer Disposition-Überprüfungen. Beachten Sie, dass dieser Fluss eine Beschriftung anzeigt, die veröffentlicht und dann von einem Benutzer manuell angewendet wird. Alternativ kann eine Bezeichnung, die eine Dispositions Überprüfung auslöst, automatisch auf Inhalte angewendet werden.
   
-![Diagramm mit der Funktionsweise der Disposition Ablauf](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Diagramm mit dem Ablauf der Funktionsweise der Disposition](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Disposition Wiederholung ist eine Option aus, wenn Sie eine Beschriftung in Office 365 erstellen. Beachten Sie, dass diese Option nicht in einer Aufbewahrungsrichtlinie jedoch nur in einem Bezeichnungsfeld mit Einstellungen für die Aufbewahrung verfügbar ist.
+Eine Dispositions Überprüfung ist eine Option, wenn Sie eine Bezeichnung in Office 365 erstellen. Beachten Sie, dass diese Option nicht in einer Aufbewahrungsrichtlinie, sondern nur in einer Bezeichnung mit Aufbewahrungseinstellungen verfügbar ist.
   
-Weitere Informationen zu Etiketten finden Sie unter [Übersicht über die Beschriftungen](labels.md).
+Weitere Informationen über Bezeichnungen finden Sie unter [Übersicht über Bezeichnungen](labels.md).
   
-![Einstellungen für eine Beschriftung für die Aufbewahrung](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+![Aufbewahrungseinstellungen für eine Bezeichnung](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
   
-## <a name="disposing-content"></a>Verwerfen von Inhalten
+## <a name="disposing-content"></a>Freigeben von Inhalten
 
-Wenn ein Bearbeiter per e-Mail benachrichtigt wird, dass Inhalte bereit, um zu prüfen, können sie wechseln Sie zur Seite **Disposition von Dokumenten** in das Wertpapier &amp; Compliance Center, und wählen Sie einen oder mehrere Elemente. Der Prüfer können Sie: 
+Wenn ein Prüfer per e-Mail benachrichtigt wird, dass der Inhalt bereit ist, zu überprüfen, können Sie die Seite " **Disposition** " im &amp; Security Compliance Center aufrufen und ein oder mehrere Elemente auswählen. Der Prüfer kann dann Folgendes tun: 
   
-- Eine andere Bezeichnung anwenden.
+- Anwenden einer anderen Bezeichnung
     
-- Erweitern Sie die Aufbewahrungsdauer.
+- Verlängern Sie den Aufbewahrungszeitraum.
     
-- Löschen Sie das Element endgültig.
+- Das Element endgültig löschen.
     
-Ein Prüfer können den Link Sie das Dokument am ursprünglichen Speicherort, anzeigen, wenn der Prüfer Berechtigungen für diesen Speicherort verfügt. Während der Überprüfung Disposition der Inhalt wird nie vom ursprünglichen Speicherort verschoben, und es wird nie gelöscht, bis der Prüfer dazu auswählt.
+Ein Prüfer kann den Link verwenden, um das Dokument an seinem ursprünglichen Speicherort anzuzeigen, wenn der Prüfer über Berechtigungen für diesen Speicherort verfügt. Während einer Disposition-Überprüfungen werden die Inhalte nie vom ursprünglichen Speicherort verschoben, und Sie werden nie gelöscht, bis sich der Prüfer dazu entscheidet.
   
-Beachten Sie, dass an Prüfer wöchentlich automatisch die e-Mail-Benachrichtigungen gesendet werden. Aus diesem Grund wenn Inhalte am Ende der Aufbewahrungsdauer erreicht, dauern bis zu sieben Tage für Bearbeiter an die e-Mail-Benachrichtigung, dass Inhalte Disposition wartet.
+Beachten Sie, dass die e-Mail-Benachrichtigungen wöchentlich automatisch an die Bearbeiter gesendet werden. Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht hat, kann es daher bis zu sieben Tage dauern, bis die Bearbeiter die e-Mail-Benachrichtigung erhalten haben, dass Inhalte auf Ihre Disposition warten.
   
-Beachten Sie außerdem, dass alle Dispositionsaktionen überwacht werden. Zu diesem Zweck müssen Sie mindestens einen Tag vor der ersten Dispositionsaktion - Weitere Informationen zu Überwachung einzuschalten, finden Sie unter [Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Beachten Sie, dass alle Dispositionsaktionen überwacht werden. Um dies sicherzustellen, müssen Sie die Überwachung mindestens einen Tag vor der ersten Dispositionsaktion aktivieren – Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 &amp; Security Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
-![Disposition Optionen für ein Dokument](media/771630fd-a9b0-47cf-983b-fe85eb4cdafd.png)
+![DisPositions Optionen für ein Dokument](media/771630fd-a9b0-47cf-983b-fe85eb4cdafd.png)
   
-## <a name="permissions-for-disposition"></a>Berechtigungen für die disposition
+## <a name="permissions-for-disposition"></a>Berechtigungen für die Disposition
 
-Wenn Sie Zugriff auf die Seite **Disposition** erhalten möchten, müssen Bearbeiter Mitglieder von der **Disposition** Verwaltungsrolle und der Rolle für **Überwachungsprotokolle Kontaktobjekts** sein. Erstellen einer neuen Rollengruppe Disposition Bearbeiter aufgerufen, dieser Rollengruppe dieser beiden Rollen hinzugefügt und dann Hinzufügen von Mitgliedern der Rollengruppe empfohlen. 
+Um Zugriff auf die disPositions Seite zu erhalten, müssen die Bearbeiter Mitglieder der Rolle " **dispositionverwaltung** " und " **View-Only** " sein. **** Es wird empfohlen, eine neue Rollengruppe mit dem Namen disPositions Prüfer zu erstellen, diese beiden Rollen dieser Rollengruppe hinzuzufügen und dann der Rollengruppe Mitglieder hinzuzufügen. 
   
-Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf die Office 365-Sicherheit &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md)
+Weitere Informationen finden Sie unter [Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center](grant-access-to-the-security-and-compliance-center.md)
   
-## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Wie lange dauert die verworfene Inhalte dauerhaft gelöscht wird
+## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Dauer bis zum endgültigen Löschen des verworfenen Inhalts
 
-Inhalte, die eine Disposition Prüfung wird gelöscht, erst nach ein Bearbeiter möchte die Inhalte dauerhaft gelöscht. Wenn der Prüfer diese Option wählt, wird der Inhalt in der SharePoint-Website oder das OneDrive-Konto für den standard-Cleanup-Prozess in diesem Abschnitt beschriebenen Kandidaten: [Funktionsweise eine Aufbewahrungsrichtlinie mit Inhalten](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+Inhalte, die auf eine Disposition-Überprüfungen warten, werden erst gelöscht, nachdem ein Prüfer den Inhalt endgültig gelöscht hat. Wenn der Prüfer diese Option auswählt, wird der Inhalt der SharePoint-Website oder des OneDrive-Kontos für den in diesem Abschnitt beschriebenen Standard Bereinigungsprozess zugelassen: [Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
-Dies bedeutet, dass:
+Dies führt dazu, dass:
   
-- Inhalte in einer Dokumentbibliothek werden in der ersten Stufe Papierkorb **in 7 Tage** der Disposition verschoben, und klicken Sie dann endgültig gelöscht **93 Tage** nach Ausführung dieses. Der Papierkorb ist nicht von der Suche indiziert und seinen Inhalt sind daher nicht zu einem Haltestatus eDiscovery verfügbar. 
+- Inhalte in einer Dokumentbibliothek werden **innerhalb von 7 Tagen** nach der Disposition in den endgültigen Papierkorb verschoben und anschließend **93 Tage** danach endgültig gelöscht. Der Papierkorb wird nicht durch die Suche indiziert, und daher stehen die Inhalte für einen eDiscovery-Speicher nicht zur Verfügung. 
     
-- Inhalt in der Beibehaltung halten Bibliothek dauerhaft sein wird gelöscht **in 7 Tage** der Disposition. 
+- Inhalte in der Bibliothek zur Aufbewahrungsdauer werden **innerhalb von 7 Tagen** nach der Disposition dauerhaft gelöscht. 
     
-## <a name="view-pending-and-completed-dispositions"></a>Ansicht ausstehenden und abgeschlossenen Abschneidedispositionen
+## <a name="view-pending-and-completed-dispositions"></a>Ausstehende und abgeschlossene Dispositionen anzeigen
 
-Auf der Seite **Disposition** der Sicherheit &amp; Compliance Center, Sie können ausstehende und abgeschlossene Abschneidedispositionen anzeigen: 
+Auf der Seite " **Disposition** " des &amp; Security Compliance Centers können Sie ausstehende und abgeschlossene Dispositionen anzeigen: 
   
-- **Ausstehende** Abschneidedispositionen am Ende der Aufbewahrungszeitraum erreicht haben und Disposition Wiederholung erfordern. Überprüfen Sie jedes Element, entscheiden Sie, ob Sie eine andere Bezeichnung zuweisen, zur Erweiterung der Aufbewahrungszeitraum oder dauerhaft löschen möchten. 
+- **** Ausstehende Dispositionen haben das Ende des Aufbewahrungszeitraums erreicht und erfordern eine Disposition-Überprüfungen. Entscheiden Sie nach der Überprüfung der einzelnen Elemente, ob Sie eine andere Bezeichnung zuweisen möchten, verlängern Sie die Aufbewahrungsdauer, oder löschen Sie sie endgültig. 
     
-- **Completed** Abschneidedispositionen zum Löschen während der Überprüfung Disposition genehmigt wurden und sind nun gerade dauerhaft gelöscht. Elemente, die wurde für eine andere Bezeichnung angewendet oder der Aufbewahrungszeitraum erweitert als Teil einer Überprüfung hier nicht angezeigt wird. 
+- **Abgeschlossene** Dispositionen wurden während einer Disposition-Überprüfung zum Löschen genehmigt und sind jetzt permanent gelöscht. Elemente, auf die eine andere Bezeichnung angewendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfungen verlängert wurde, werden hier nicht angezeigt. 
     
-### <a name="filter-the-disposition-views"></a>Filtern der Disposition Ansichten
+### <a name="filter-the-disposition-views"></a>Filtern der Dispositions Ansichten
 
-Sie können diese Ansichten nach Bezeichnung oder den Zeitraum filtern. Für ausstehende Abschneidedispositionen, der Zeitbereich des Ablaufdatums basiert auf. Für zurückliegenden Abschneidedispositionen der Zeitbereich das Löschdatum basiert.
+Sie können diese Ansichten nach Beschriftung oder Zeitspanne filtern. Bei ausstehenden Dispositionen basiert der Zeitintervall auf dem Ablaufdatum. Bei historischen Dispositionen basiert der Zeitintervall auf dem Löschdatum.
   
-![Filteroptionen auf Disposition-Seite](media/8682a9f5-a77d-45ae-b902-8418a3ebbea1.png)
+![Filter Optionen auf der Seite "Disposition"](media/8682a9f5-a77d-45ae-b902-8418a3ebbea1.png)
   
-### <a name="export-the-disposition-items"></a>Exportieren der Disposition Elemente
+### <a name="export-the-disposition-items"></a>Exportieren der Dispositionselemente
 
-Darüber hinaus können Sie die Elemente in einer Ansicht als CSV-Datei exportieren, die Sie in Excel öffnen können.
+Darüber hinaus können Sie die Elemente in einer der beiden Ansichten als CSV-Datei exportieren, die Sie in Excel öffnen können.
   
-![Disposition exportierten Daten in Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Exportierte Dispositionsdaten in Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 
