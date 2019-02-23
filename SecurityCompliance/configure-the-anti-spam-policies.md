@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Antispamrichtlinien
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/9/2015
 ms.audience: ITPro
@@ -12,27 +12,29 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 31279431-828d-48bd-b979-20b6de15fa4a
+ms.collection:
+- M365-security-compliance
 description: Die Spamfilterung wird durch die standardmäßigen Antispamrichtlinien automatisch unternehmensweit aktiviert (Verbindungsfilter, Spamfilter und ausgehende Spamnachrichten). Als Administrator können Sie die standardmäßigen Antispamrichtlinien zwar nicht löschen, aber anzeigen und bearbeiten, sodass Sie sie optimal an die Anforderungen Ihrer Organisation anpassen können. Für eine höhere Granularität können Sie auch benutzerdefinierte Richtlinien erstellen und diese bestimmten Benutzern, Gruppen oder Domänen in Ihrer Organisation zuweisen. Standardmäßig haben die benutzerdefinierten Richtlinien Vorrang vor den Standardrichtlinien. Sie können die Prioritäten Ihrer Richtlinien jedoch verändern.
-ms.openlocfilehash: c1bec3c7e8db3222f25a423ac94068d537529cac
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: ebd65050fb5a0d3862653e0279ef530fbcabc042
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002337"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215425"
 ---
-# <a name="configure-the-anti-spam-policies"></a><span data-ttu-id="d12df-106">Konfigurieren der Antispamrichtlinien</span><span class="sxs-lookup"><span data-stu-id="d12df-106">Configure the anti-spam policies</span></span>
+# <a name="configure-the-anti-spam-policies"></a><span data-ttu-id="257ed-106">Konfigurieren der Antispamrichtlinien</span><span class="sxs-lookup"><span data-stu-id="257ed-106">Configure the anti-spam policies</span></span>
 
-<span data-ttu-id="d12df-p102">Die Spamfilterung wird durch die standardmäßigen Antispamrichtlinien automatisch unternehmensweit aktiviert (Verbindungsfilter, Spamfilter und ausgehende Spamnachrichten). Als Administrator können Sie die standardmäßigen Antispamrichtlinien zwar nicht löschen, aber anzeigen und bearbeiten, sodass Sie sie optimal an die Anforderungen Ihrer Organisation anpassen können. Für eine höhere Granularität können Sie auch benutzerdefinierte Richtlinien erstellen und diese bestimmten Benutzern, Gruppen oder Domänen in Ihrer Organisation zuweisen. Standardmäßig haben die benutzerdefinierten Richtlinien Vorrang vor den Standardrichtlinien. Sie können die Prioritäten Ihrer Richtlinien jedoch verändern.</span><span class="sxs-lookup"><span data-stu-id="d12df-p102">Spam filtering is automatically enabled company-wide through the default anti-spam policies (connection filter, spam filter, and outbound spam). As an administrator, you can view and edit, but not delete, the default anti-spam policies so that they are tailored to best meet the needs of your organization. For greater granularity, you can also create custom policies and apply them to specified users, groups, or domains in your organization. By default, custom policies take precedence over the default policy, but you can change the priority of your policies.</span></span> 
+<span data-ttu-id="257ed-p102">Die Spamfilterung wird durch die standardmäßigen Antispamrichtlinien automatisch unternehmensweit aktiviert (Verbindungsfilter, Spamfilter und ausgehende Spamnachrichten). Als Administrator können Sie die standardmäßigen Antispamrichtlinien zwar nicht löschen, aber anzeigen und bearbeiten, sodass Sie sie optimal an die Anforderungen Ihrer Organisation anpassen können. Für eine höhere Granularität können Sie auch benutzerdefinierte Richtlinien erstellen und diese bestimmten Benutzern, Gruppen oder Domänen in Ihrer Organisation zuweisen. Standardmäßig haben die benutzerdefinierten Richtlinien Vorrang vor den Standardrichtlinien. Sie können die Prioritäten Ihrer Richtlinien jedoch verändern.</span><span class="sxs-lookup"><span data-stu-id="257ed-p102">Spam filtering is automatically enabled company-wide through the default anti-spam policies (connection filter, spam filter, and outbound spam). As an administrator, you can view and edit, but not delete, the default anti-spam policies so that they are tailored to best meet the needs of your organization. For greater granularity, you can also create custom policies and apply them to specified users, groups, or domains in your organization. By default, custom policies take precedence over the default policy, but you can change the priority of your policies.</span></span> 
   
-<span data-ttu-id="d12df-111">Weitere Informationen zum Konfigurieren der Antispamrichtlinien finden Sie unter den folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="d12df-111">For more about configuring your anti-spam policies, see the following topics:</span></span>
+<span data-ttu-id="257ed-111">Weitere Informationen zum Konfigurieren der Antispamrichtlinien finden Sie unter den folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="257ed-111">For more about configuring your anti-spam policies, see the following topics:</span></span>
   
-[<span data-ttu-id="d12df-112">Konfigurieren der Verbindungsfilterrichtlinie</span><span class="sxs-lookup"><span data-stu-id="d12df-112">Configure the connection filter policy</span></span>](configure-the-connection-filter-policy.md)
+[<span data-ttu-id="257ed-112">Konfigurieren der Verbindungsfilterrichtlinie</span><span class="sxs-lookup"><span data-stu-id="257ed-112">Configure the connection filter policy</span></span>](configure-the-connection-filter-policy.md)
   
-[<span data-ttu-id="d12df-113">Konfigurieren von Spamfilterrichtlinien</span><span class="sxs-lookup"><span data-stu-id="d12df-113">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
+[<span data-ttu-id="257ed-113">Konfigurieren von Spamfilterrichtlinien</span><span class="sxs-lookup"><span data-stu-id="257ed-113">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
   
 > [!IMPORTANT]
-> <span data-ttu-id="d12df-p103">Für Kunden der eigenständigen EOP-Lösung: Standardmäßig leiten die EOP-Inhaltsfilter als Spam erkannte Nachrichten an den Junk-E-Mail-Ordner der einzelnen Empfänger weiter. Damit die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** jedoch bei lokalen Postfächern angewendet wird, müssen Sie auf Ihren lokalen Servern zwei Exchange-Transportregeln konfigurieren, um Spamkopfzeilen zu erkennen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).</span><span class="sxs-lookup"><span data-stu-id="d12df-p103">For EOP standalone customers: By default, the EOP content filters send spam-detected messages to each recipients' Junk Email folder. However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange Transport rules on your on-premises servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).</span></span> 
+> <span data-ttu-id="257ed-p103">Für Kunden der eigenständigen EOP-Lösung: Standardmäßig leiten die EOP-Inhaltsfilter als Spam erkannte Nachrichten an den Junk-E-Mail-Ordner der einzelnen Empfänger weiter. Damit die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** jedoch bei lokalen Postfächern angewendet wird, müssen Sie auf Ihren lokalen Servern zwei Exchange-Transportregeln konfigurieren, um Spamkopfzeilen zu erkennen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).</span><span class="sxs-lookup"><span data-stu-id="257ed-p103">For EOP standalone customers: By default, the EOP content filters send spam-detected messages to each recipients' Junk Email folder. However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange Transport rules on your on-premises servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).</span></span> 
   
-[<span data-ttu-id="d12df-117">Konfigurieren der Richtlinie für ausgehende Spamnachrichten</span><span class="sxs-lookup"><span data-stu-id="d12df-117">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
+[<span data-ttu-id="257ed-117">Konfigurieren der Richtlinie für ausgehende Spamnachrichten</span><span class="sxs-lookup"><span data-stu-id="257ed-117">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
   
 

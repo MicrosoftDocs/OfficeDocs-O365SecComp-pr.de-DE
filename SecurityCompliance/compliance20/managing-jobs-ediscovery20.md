@@ -1,12 +1,12 @@
 ---
-title: Verwalten von Aufträgen in erweiterten eDiscovery (Preview)
+title: Verwalten von Aufträgen in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 03165ba64ed5b75fa2d327ee798dc6a8e43fe908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694801"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214985"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery-preview"></a><span data-ttu-id="7bc52-102">Verwalten von Aufträgen in erweiterten eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="7bc52-102">Manage jobs in Advanced eDiscovery (Preview)</span></span>
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a><span data-ttu-id="ec72c-102">Verwalten von Aufträgen in Advanced eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="ec72c-102">Manage jobs in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="7bc52-103">Es folgt eine Liste der Projekte, die auf der Registerkarte **Aufträge** einer Anfrage in erweiterten eDiscovery (Preview) nachverfolgt werden.</span><span class="sxs-lookup"><span data-stu-id="7bc52-103">Here's a list of the jobs that are tracked on the **Jobs** tab of a case in Advanced eDiscovery (Preview).</span></span>
+<span data-ttu-id="ec72c-103">Nachfolgend finden Sie eine Liste der Aufträge, die auf der Registerkarte **Aufträge** eines Falls in Advanced EDiscovery (Preview) nachverfolgt werden.</span><span class="sxs-lookup"><span data-stu-id="ec72c-103">Here's a list of the jobs that are tracked on the **Jobs** tab of a case in Advanced eDiscovery (Preview).</span></span>
 
-- <span data-ttu-id="7bc52-104">Erneute Indizierung Verwaltungsberechtigter Daten</span><span class="sxs-lookup"><span data-stu-id="7bc52-104">Re-indexing custodian data</span></span>
-- <span data-ttu-id="7bc52-105">Schätzen von Suchergebnissen</span><span class="sxs-lookup"><span data-stu-id="7bc52-105">Estimating search results</span></span>
-- <span data-ttu-id="7bc52-106">Vorbereiten der Suchvorschau</span><span class="sxs-lookup"><span data-stu-id="7bc52-106">Preparing search preview</span></span>
-- <span data-ttu-id="7bc52-107">Hinzufügen von Daten zu einem Arbeitssatz</span><span class="sxs-lookup"><span data-stu-id="7bc52-107">Adding data to a working set</span></span>
-- <span data-ttu-id="7bc52-108">Hinzufügen von Daten auf einer anderen Workingset</span><span class="sxs-lookup"><span data-stu-id="7bc52-108">Adding data to another working set</span></span>
-- <span data-ttu-id="7bc52-109">Hinzufügen von nicht - Office 365-Daten auf einer Workingset</span><span class="sxs-lookup"><span data-stu-id="7bc52-109">Adding non-Office 365 data to a working set</span></span>
-- <span data-ttu-id="7bc52-110">Vorbereiten der Fehlerbehebung</span><span class="sxs-lookup"><span data-stu-id="7bc52-110">Preparing for error resolution</span></span>
-- <span data-ttu-id="7bc52-111">Hinzufügen von Daten für gewartete Workingset</span><span class="sxs-lookup"><span data-stu-id="7bc52-111">Adding remediated data to a working set</span></span>
-- <span data-ttu-id="7bc52-112">Vergleichen von Load festgelegt.</span><span class="sxs-lookup"><span data-stu-id="7bc52-112">Comparing load sets</span></span>
-- <span data-ttu-id="7bc52-113">Markieren von Dokumenten</span><span class="sxs-lookup"><span data-stu-id="7bc52-113">Tagging documents</span></span>
-- <span data-ttu-id="7bc52-114">Ausführen von analytics</span><span class="sxs-lookup"><span data-stu-id="7bc52-114">Running analytics</span></span>
-- <span data-ttu-id="7bc52-115">Vorbereiten von Daten für den export</span><span class="sxs-lookup"><span data-stu-id="7bc52-115">Preparing data for export</span></span>
+- <span data-ttu-id="ec72c-104">Erneutes Indizieren von Depotdaten</span><span class="sxs-lookup"><span data-stu-id="ec72c-104">Re-indexing custodian data</span></span>
+- <span data-ttu-id="ec72c-105">Schätzen von Suchergebnissen</span><span class="sxs-lookup"><span data-stu-id="ec72c-105">Estimating search results</span></span>
+- <span data-ttu-id="ec72c-106">Vorbereiten der Suchvorschau</span><span class="sxs-lookup"><span data-stu-id="ec72c-106">Preparing search preview</span></span>
+- <span data-ttu-id="ec72c-107">Hinzufügen von Daten zu einem Workingset</span><span class="sxs-lookup"><span data-stu-id="ec72c-107">Adding data to a working set</span></span>
+- <span data-ttu-id="ec72c-108">Hinzufügen von Daten zu einem anderen Arbeitssatz</span><span class="sxs-lookup"><span data-stu-id="ec72c-108">Adding data to another working set</span></span>
+- <span data-ttu-id="ec72c-109">Hinzufügen von nicht-Office 365-Daten zu einem Workingset</span><span class="sxs-lookup"><span data-stu-id="ec72c-109">Adding non-Office 365 data to a working set</span></span>
+- <span data-ttu-id="ec72c-110">Vorbereiten auf die Fehlerbehebung</span><span class="sxs-lookup"><span data-stu-id="ec72c-110">Preparing for error resolution</span></span>
+- <span data-ttu-id="ec72c-111">Hinzufügen von vermittelten Daten zu einem Workingset</span><span class="sxs-lookup"><span data-stu-id="ec72c-111">Adding remediated data to a working set</span></span>
+- <span data-ttu-id="ec72c-112">Vergleichen von Auslastungs Sätzen</span><span class="sxs-lookup"><span data-stu-id="ec72c-112">Comparing load sets</span></span>
+- <span data-ttu-id="ec72c-113">Markieren von Dokumenten</span><span class="sxs-lookup"><span data-stu-id="ec72c-113">Tagging documents</span></span>
+- <span data-ttu-id="ec72c-114">Running Analytics</span><span class="sxs-lookup"><span data-stu-id="ec72c-114">Running analytics</span></span>
+- <span data-ttu-id="ec72c-115">Vorbereiten von Daten für den Export</span><span class="sxs-lookup"><span data-stu-id="ec72c-115">Preparing data for export</span></span>
