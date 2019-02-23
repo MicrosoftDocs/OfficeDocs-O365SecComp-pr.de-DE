@@ -1,12 +1,11 @@
 ---
-title: Richten Sie ein Archiv und Löschung Richtlinie für Postfächer in Ihrer Organisation Office 365
+title: Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -15,229 +14,229 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Erstellen Sie eine Richtlinie Archivierung und Löschung in Office 365, die automatisch Elemente zum Archivpostfach des Benutzers verschoben wird.
-ms.openlocfilehash: 903a91c590c47ad5de0b89ae51a25983221d2ffe
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
+ms.openlocfilehash: 09fef681884dd12b76bf0e30aa757d6e656f99a7
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240578"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223514"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Richten Sie ein Archiv und Löschung Richtlinie für Postfächer in Ihrer Organisation Office 365
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 
- In Office 365 können Administratoren eine Archivierung und Löschung Richtlinie erstellen, die automatisch Verschiebt Elemente in Archivpostfach des Benutzers und werden automatisch Elemente aus dem Postfach gelöscht. Der Administrator führt dies durch Erstellen einer Aufbewahrungsrichtlinie, die Postfächer zugewiesen ist, und verschiebt Elemente in Archivpostfach des Benutzers, nachdem eine gewisse Zeit und, Elemente auch aus dem Postfach, löscht Nachdem sie eine bestimmte Verfallszeit erreichen. Die tatsächlichen Regeln, die bestimmen, welche Elemente verschoben oder gelöscht werden und in diesem Fall aufgerufene aufbewahrungstags werden. Aufbewahrungstags werden einer Aufbewahrungsrichtlinie verknüpft, die wiederum dem Postfach eines Benutzers zugewiesen wird. Ein aufbewahrungstag gilt beibehaltungseinstellungen für einzelne Nachrichten und Ordnern im Postfach des Benutzers an. Es definiert, wie lange eine Nachricht im Postfach verbleibt und welche Aktion ausgeführt wird, wenn die Meldung die angegebenen Aufbewahrungszeitraum erreicht. Wenn eine Nachricht den Aufbewahrungszeitraum erreicht, entweder auf das Postfach des Benutzers Archiv verschoben wird, oder wird gelöscht. 
+ In Office 365 können Administratoren eine Archivierungs-und Löschrichtlinie erstellen, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt und automatisch Elemente aus dem Postfach löscht. Hierzu erstellt der Administrator eine Aufbewahrungsrichtlinie, die Postfächern zugewiesen ist, und verschiebt Elemente nach einem bestimmten Zeitraum in das Archivpostfach eines Benutzers und löscht außerdem Elemente aus dem Postfach, nachdem Sie eine bestimmte Altersgrenze erreicht haben. Die tatsächlichen Regeln, die bestimmen, welche Elemente verschoben oder gelöscht werden, und wenn dies der Fall ist, werden als Aufbewahrungstags bezeichnet. Aufbewahrungstags sind mit einer Aufbewahrungsrichtlinie verknüpft, die wiederum dem Postfach eines Benutzers zugewiesen wird. Ein Aufbewahrungs wendet Aufbewahrungseinstellungen auf einzelne Nachrichten und Ordner im Postfach eines Benutzers an. Es definiert, wie lange eine Nachricht im Postfach verbleibt und welche Aktion ausgeführt wird, wenn die Nachricht das angegebene Aufbewahrungs Alter erreicht. Wenn eine Nachricht das Aufbewahrungs Alter erreicht, wird Sie entweder in das Archivpostfach des Benutzers verschoben oder gelöscht. 
   
-Die Schritte in diesem Artikel werden eine Richtlinie Archivierung und Aufbewahrung für einen fiktiven Organisation mit dem Namen Alpine House eingerichtet. Einrichten von dieser Richtlinie umfasst die folgenden Aufgaben:
+Mit den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsrichtlinie für eine fiktive Organisation namens "Alpine House" eingerichtet. Das Einrichten dieser Richtlinie umfasst die folgenden Aufgaben:
   
-- Aktivieren eines archivpostfachs für jeden Benutzer in der Organisation. Dies ermöglicht es den Benutzern Postfachspeicher hinzufügen, und ist erforderlich, damit eine Aufbewahrungsrichtlinie Elemente in das Archivpostfach verschoben werden kann. Es Elemente wir auch eine Archivierung Store Benutzerinformationen durch Verschieben in ihre Archivpostfach. 
+- Aktivieren eines Archivpostfachs für jeden Benutzer in der Organisation. Dadurch erhält der Benutzer zusätzlichen Postfachspeicher und ist erforderlich, damit eine Aufbewahrungsrichtlinie Elemente in das Archivpostfach verschieben kann. Außerdem können benutzerarchiv Informationen speichern, indem Sie Elemente in Ihr Archivpostfach bewegen. 
     
-- Erstellen von drei benutzerdefinierte Retention Tags, die die folgenden Aktionen aus: 
+- Erstellen von drei benutzerdefinierten Aufbewahrungstags, die folgende Aufgaben ausführen: 
     
-  - Automatisch Verschiebt Elemente, die 3 Jahre Archivpostfach des Benutzers sind. Verschieben von Elementen in das Archivpostfach Freigabe von Speicherplatz im primären Postfach eines Benutzers.
+  - Verschiebt Elemente, die 3 Jahre alt sind, automatisch in das Archivpostfach des Benutzers. Das Verschieben von Elementen in das Archivpostfach gibt Speicherplatz im primären Postfach eines Benutzers frei.
     
-  - Auf Elemente mit fünf Jahren aus dem Ordner Gelöschte Elemente werden automatisch gelöscht. Dies setzt auch Speicherplatz im primären Postfach des Benutzers. Des Benutzers wird die Möglichkeit, diese Elemente bei Bedarf wiederhergestellt haben. Siehe die Fußnote im Abschnitt [Weitere Informationen](#more-information) für weitere Details. 
+  - Löscht Elemente, die 5 Jahre alt sind, automatisch aus dem Ordner "Gelöschte Elemente". Dadurch wird auch Speicherplatz im primären Postfach des Benutzers freigegeben. Die Benutzer haben die Möglichkeit, diese Elemente bei Bedarf wiederherzustellen. Weitere Informationen finden Sie in der Fußnote im Abschnitt [Weitere Informationen](#more-information) . 
     
-  - Automatisch (und dauerhaft) werden die Elemente, die aus der primären 7 Jahre und Archivpostfach sind gelöscht. Einige Unternehmen müssen aufgrund von Vorschriften e-Mail für einen bestimmten Zeitraum beibehalten. Nach Ablauf dieses Zeitraums möglicherweise eine Organisation diese Benutzerpostfächer Elemente dauerhaft entfernen möchten. 
+  - Löscht Elemente, die 7 Jahre alt sind, automatisch (und dauerhaft) aus dem primären und dem Archivpostfach. Aufgrund von Compliance-Vorschriften müssen einige Organisationen e-Mails für einen bestimmten Zeitraum aufbewahren. Nach Ablauf dieses Zeitraums kann eine Organisation diese Elemente für Benutzerpostfächer dauerhaft entfernen. 
     
-- Erstellen einer neuen Aufbewahrungsrichtlinie, und die neue benutzerdefinierte aufbewahrungstags hinzugefügt. Darüber hinaus fügen Sie integrierte aufbewahrungstags auch auf die neue Aufbewahrungsrichtlinie. Dazu gehören persönliche Tags, die Benutzer Elemente in ihrem Postfach zuweisen können. Sie können auch ein aufbewahrungstag hinzufügen, die Elemente aus dem Ordner "wiederherstellbare Elemente" im primären Postfach des Benutzers in den Ordner wiederherstellbare Elemente in ihrem Archivpostfach verschoben. Auf diese Weise können Geben Sie Speicherplatz in den Ordner eines Benutzers wiederherstellbare Elemente, wenn ihr Postfach in der Warteschleife platziert wird.
+- Erstellen einer neuen Aufbewahrungsrichtlinie und Hinzufügen der neuen benutzerdefinierten Aufbewahrungstags. Darüber hinaus fügen Sie der neuen Aufbewahrungsrichtlinie auch integrierte Aufbewahrungstags hinzu. Dies umfasst persönliche Tags, die Benutzer Elementen in Ihrem Postfach zuweisen können. Außerdem fügen Sie ein Aufbewahrungs hinzu, mit dem Elemente aus dem Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers in den Ordner "Wiederherstellbare Elemente" im Archivpostfach verschoben werden. Dadurch wird der Speicherplatz im Ordner "Wiederherstellbare Elemente" eines Benutzers freigegeben.
     
-Führen Sie einige oder alle Schritte in diesem Artikel können Sie ein Archiv und Löschung Richtlinie für Postfächer in Ihrer Organisation einrichten. Es wird empfohlen, diesen Vorgang für einige Postfächer testen, bevor es für alle Postfächer in Ihrer Organisation zu implementieren.
+Sie können einige oder alle Schritte in diesem Artikel ausführen, um eine Archiv-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess für einige Postfächer zu testen, bevor Sie ihn für alle Postfächer in Ihrer Organisation implementieren.
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen ein globaler Administrator in Office 365-Organisation zum Ausführen der Schritte in diesem Thema werden. 
+- Sie müssen ein globaler Administrator in Ihrer Office 365-Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
--  Wenn Sie ein neues Benutzerkonto in Office 365 erstellen und weisen Sie dem Benutzer eine Lizenz Exchange Online, wird automatisch ein Postfach für den Benutzer erstellt. Wenn das Postfach erstellt wird, hat diese eine Standardaufbewahrungsrichtlinie, mit dem Namen MRM-Standardrichtlinie automatisch zugewiesen. In diesem Artikel erstellen eine neuen Aufbewahrungsrichtlinie und weisen Sie es dann auf die Benutzerpostfächer, ersetzen die Standard-MRM-Richtlinie. Ein Postfach kann nur eine Aufbewahrungsrichtlinie jeweils zugewiesen haben.
+-  Wenn Sie in Office 365 ein neues Benutzerkonto erstellen und dem Benutzer eine Exchange Online-Lizenz zuweisen, wird automatisch ein Postfach für den Benutzer erstellt. Wenn das Postfach erstellt wird, wird ihm automatisch eine standardmäßige Aufbewahrungsrichtlinie namens "Default MRM Policy" zugewiesen. In diesem Artikel erstellen Sie eine neue Aufbewahrungsrichtlinie und weisen Sie dann den Benutzerpostfächern zu, wobei Sie die Standard-MRM-Richtlinie ersetzen. Einem Postfach kann jeweils nur eine Aufbewahrungsrichtlinie zugewiesen sein.
     
-- Finden Sie weitere Informationen zu aufbewahrungstags und Aufbewahrungsrichtlinien in Exchange Online finden Sie unter [aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/p/?LinkId=404424).
+- Weitere Informationen zu Aufbewahrungstags und-Richtlinien in Exchange Online finden Sie unter [Aufbewahrungstags und](https://go.microsoft.com/fwlink/p/?LinkId=404424)Aufbewahrungsrichtlinien.
     
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>Schritt 1: Aktivieren von archivpostfächern für Benutzer
 
-Der erste Schritt ist das Archivpostfach für jeden Benutzer in Ihrer Organisation zu aktivieren. Archivpostfach des Benutzers muss aktiviert sein, damit ein aufbewahrungstag mit einem "verschieben" Retention ins Archiv das Element verschoben werden kann, nachdem der Aufbewahrungszeitraum abgelaufen ist. 
+Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer Organisation zu aktivieren. Das Archivpostfach eines Benutzers muss aktiviert sein, damit ein Aufbewahrungs mit einer Aufbewahrungsaktion "in Archiv verschieben" das Element nach Ablauf des Aufbewahrungszeitraums verschieben kann. 
   
 > [!NOTE]
-> Archivpostfächer können jederzeit während dieses Vorgangs Sie einfach, solange sie zu einem bestimmten Zeitpunkt aktiviert sind, bevor Sie den Vorgang abzuschließen. Wenn ein Archivpostfach nicht aktiviert ist, wird keine Aktion auf alle Elemente ausgeführt, die ein Archivrichtlinie zugewiesen haben. 
+> Sie können Archivpostfächer jederzeit während dieses Vorgangs aktivieren, solange Sie zu einem bestimmten Zeitpunkt aktiviert sind, bevor Sie den Vorgang abschließen. Wenn ein Archivpostfach nicht aktiviert ist, wird für Elemente, denen eine Archivrichtlinie zugewiesen ist, keine Aktion ausgeführt. 
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrer globalen Administratorkonto an.
+2. Melden Sie sich mit ihrem globalen Administratorkonto bei Office 365 an.
     
     
-3. In das Wertpapier &amp; Compliance Center, navigieren Sie zur **Steuerung der Daten** \> **Archiv**.
+3. Wechseln Sie im &amp; Security Compliance Center zu **Data Governance** \> **Archive**.
     
-    Eine Liste der Postfächer in Ihrer Organisation wird angezeigt und gibt an, ob das entsprechende Archivpostfach aktiviert oder deaktiviert ist. 
+    Eine Liste der Postfächer in Ihrer Organisation wird angezeigt und ob das entsprechende Archivpostfach aktiviert oder deaktiviert ist. 
     
-4. Wählen Sie alle Postfächer auf dem ersten in der Liste die **UMSCHALTTASTE** gedrückt, und klicken Sie dann auf das letzte Element in der Liste aus. 
+4. Wählen Sie alle Postfächer aus, indem Sie auf den ersten Eintrag in der Liste klicken, die **UMSCHALT** Taste gedrückt halten und dann auf den letzten Eintrag in der Liste klicken. 
     
     > [!TIP]
-    > In diesem Schritt wird davon ausgegangen, dass keine archivpostfächer aktiviert sind. Wenn Sie alle Postfächer mit dem Archiv aktiviert haben, halten Sie die **STRG** -Taste gedrückt, und klicken Sie auf jedem Postfach, für ein Archivpostfach deaktiviert ist. Oder Sie können auf die Spaltenüberschrift **Archivpostfach** zum Sortieren der Zeilen basierend auf gibt an, ob das Archivpostfach aktiviert oder deaktiviert, um Postfächer auszuwählen erleichtern. 
+    > Bei diesem Schritt wird davon ausgegangen, dass keine Archivpostfächer aktiviert sind. Wenn Sie Postfächer mit aktiviertem Archiv haben, halten Sie die **STRG** -Taste gedrückt, und klicken Sie auf jedes Postfach, das ein deaktiviertes Archivpostfach aufweist. Sie können auch auf die Spaltenüberschrift **Archivpostfach** klicken, um die Zeilen abhängig davon zu sortieren, ob das Archivpostfach aktiviert oder deaktiviert ist, um die Auswahl von Postfächern zu erleichtern. 
   
-5. Klicken Sie im Detailbereich unter **Massenbearbeitung**auf **Aktivieren**.
+5. Klicken Sie im Detailbereich unter **Massenbearbeitung**auf **aktivieren**.
     
-    Eine Warnung wird angezeigt, die besagt, dass Elemente, die älter als zwei Jahre sind in das neue Archivpostfach verschoben werden sollen. Dies ist, da die Standardrichtlinie für die Aufbewahrung, die ein neues Benutzerpostfach zugewiesen hat, bei der Erstellung ein Archiv Richtlinie Standardtag verfügt, die ein Aufbewahrungszeitraum 2 Jahre hat. Das Archiv der benutzerdefinierten Richtlinie Standardtag, das Sie in Schritt2 erstellen, verfügt über eine Aufbewahrungszeitraum von 3 Jahren. Das bedeutet, dass Elemente, die 3 Jahren sind oder älter wird in das Archivpostfach verschoben werden.
+    Es wird eine Warnung angezeigt, die besagt, dass Elemente, die älter als zwei Jahre sind, in das neue Archivpostfach verschoben werden. Der Grund ist, dass die standardmäßige Aufbewahrungsrichtlinie, der ein neues Benutzerpostfach zugewiesen wird, wenn es erstellt wird, ein Standardrichtlinientag für Archive mit einem Aufbewahrungszeitraum von 2 Jahren aufweist. Das Standardrichtlinientag für das benutzerdefinierte Archiv, das Sie in Schritt 2 erstellen, hat ein Aufbewahrungs Alter von 3 Jahren. Daher werden Elemente, die 3 Jahre oder älter sind, in das Archivpostfach verschoben.
     
-6. Klicken Sie auf **Ja** , um die Warnmeldung zu schließen, und starten Sie den Vorgang, um das Archivpostfach für jedes ausgewählten Postfach zu aktivieren. 
+6. Klicken Sie auf **Ja** , um die Warnmeldung zu beenden und den Prozess zu starten, um das Archivpostfach für jedes ausgewählte Postfach zu aktivieren. 
     
-7. Klicken Sie auf **Aktualisieren** , wenn der Vorgang abgeschlossen ist, ![aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) zum Aktualisieren der Liste auf der Seite **Archiv** . 
+7. Klicken Sie **** ![nach Abschluss des Vorgangs auf Aktualisieren aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die Liste auf der Seite **Archiv** zu aktualisieren. 
     
     Das Archivpostfach ist für alle Benutzer in Ihrer Organisation aktiviert.
     
-    ![Die Liste der Postfächer mit das Archivpostfach aktiviert](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
+    ![Die Liste der Postfächer, für die das Archivpostfach aktiviert ist](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Lassen Sie die Sicherheit &amp; Compliance Center öffnen. Im nächsten Schritt verwenden Sie es.
+8. Lassen Sie das &amp; Security Compliance Center geöffnet. Sie werden es im nächsten Schritt verwenden.
     
-## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Schritt 2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien
+## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien
 
-In diesem Schritt erstellen Sie die drei benutzerdefinierte aufbewahrungstags, die weiter oben beschrieben wurden.
+In diesem Schritt erstellen Sie die drei zuvor beschriebenen benutzerdefinierten Aufbewahrungstags.
   
-- Alpine House 3 Jahr in Archiv verschieben (benutzerdefinierte Archivrichtlinie)
+- Alpine House 3 Jahre Umzug in Archiv (benutzerdefinierte Archivrichtlinie)
     
-- Alpine House 7 Jahr endgültig löschen (benutzerdefinierte Löschung Policy)
+- Alpine House 7 Jahr dauerhaft löschen (benutzerdefinierte Löschrichtlinie)
     
-- Alpine House gelöschte Elemente, 5 Jahre löschen und Wiederherstellung zulassen (benutzerdefinierte Tags für den Ordner Gelöschte Objekte)
+- Alpine House gelöschte Elemente 5 Jahre löschen und Wiederherstellung zulassen (benutzerdefiniertes Tag für den Ordner "Gelöschte Elemente")
     
-Um neue aufbewahrungstags zu erstellen, verwenden Sie die Exchange-Verwaltungskonsole (EAC) in Ihrer Exchange Online-Organisation.
+Zum Erstellen neuer Aufbewahrungstags verwenden Sie die Exchange-Verwaltungskonsole in Ihrer Exchange Online-Organisation.
   
-1. In das Wertpapier &amp; Compliance Center, klicken Sie auf der app in der oberen linken Ecke, und klicken Sie dann auf die Kachel " **Admin** ". 
+1. Klicken Sie im &amp; Security Compliance Center in der oberen linken Ecke auf das App-Startfeld, und klicken Sie dann auf die Kachel **Admin** . 
     
-2. Klicken Sie auf **Admin zentriert**im linken Navigationsbereich des Office 365 Administrationscenter, und klicken Sie dann auf **Exchange**.
+2. Klicken Sie im linken Navigationsbereich des Office 365 Admin Center auf **Admin**Center, und klicken Sie dann auf **Exchange**.
     
     ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
-3. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Verwaltung der Richtlinientreue** \> **aufbewahrungstags**
+3. Navigieren Sie in der Exchange- **Verwaltungs** \> Konsole zu **Aufbewahrungstags** für die Compliance-Verwaltung.
     
-    Es wird eine Liste der Retention Tags für Ihre Organisation angezeigt.
+    Eine Liste der Aufbewahrungstags für Ihre Organisation wird angezeigt.
     
-### <a name="create-a-custom-archive-default-policy-tag"></a>Erstellen einer benutzerdefinierten Archiv Richtlinie Standardtag
+### <a name="create-a-custom-archive-default-policy-tag"></a>Erstellen eines benutzerdefinierten Archiv-Standardrichtlinientags
   
-Zuerst erstellen Sie ein benutzerdefiniertes Archiv Standard-Richtlinie Tag (DPT), die Elemente nach 3 Jahren in das Archivpostfach verschoben werden. 
+Zuerst erstellen Sie ein benutzerdefiniertes Standardrichtlinientag für das Archiv, mit dem Elemente nach 3 Jahren in das Archivpostfach verschoben werden. 
   
-1. Klicken Sie auf der Seite **aufbewahrungstags** auf **Neues Tag**![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), und wählen Sie dann **auf gesamte Postfach (Standard) automatisch angewendet**. 
+1. Klicken Sie auf der Seite **Aufbewahrungstags** auf **Neues Tag**![-Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), und wählen Sie dann **automatisch auf gesamtes Postfach angewendet (Standard)** aus. 
     
-2. Füllen Sie auf der Seite **Neues Tag automatisch auf die gesamte Postfach (Standard) angewendet** die folgenden Felder aus: 
+2. Füllen Sie auf der Seite **Neues Tag automatisch auf gesamtes Postfach angewendet (Standard)** die folgenden Felder aus: 
     
-    ![Einstellungen zum Erstellen einer neuen Archiv Richtlinie Standardtag](media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![Einstellungen zum Erstellen eines neuen Standardrichtlinientags für Archive](media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
-1. **Name** Geben Sie einen Namen für die neue aufbewahrungstag. 
+1. **Name** Geben Sie einen Namen für das neue Aufbewahrungs ein. 
     
-2. **Aufbewahrungsaktion** Wählen Sie aus, **in Archiv verschieben** , Elemente in das Archivpostfach verschieben, wenn der Aufbewahrungszeitraum abgelaufen ist. 
+2. **Aufbewahrungsaktion** Wählen Sie **in Archiv verschieben** aus, um Elemente nach Ablauf des Aufbewahrungszeitraums in das Archivpostfach zu verschieben. 
     
-3. **Aufbewahrungszeitraum** Wählen Sie aus, **Wenn das Element das folgende Alter (in Tagen) erreicht**, und geben Sie die Dauer des Aufbewahrungszeitraums. In diesem Szenario werden Elemente nach 1095 Tagen (in 3 Jahren) in das Archivpostfach verschoben.
+3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1095 Tagen (3 Jahre) in das Archivpostfach verschoben.
     
-4. **Kommentar** (Optional) Geben Sie einen Kommentar, der den Zweck des benutzerdefinierten Retention Tags erläutert. 
+4. **Kommentar** Optional Geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
     
-3. Klicken Sie auf **Speichern** , um das Archiv der benutzerdefinierten DPT erstellen. 
+3. Klicken Sie auf **Speichern** , um die benutzerdefinierte Archiv-Standardrichtlinien zu erstellen. 
     
-    Die neue Archiv DPT wird in der Liste der aufbewahrungstags angezeigt.
+    Der neue Archiv-Standardrichtlinientag wird in der Liste der Aufbewahrungstags angezeigt.
     
-### <a name="create-a-custom-deletion-default-policy-tag"></a>Erstellen einer benutzerdefinierten Löschung Richtlinie Standardtag
+### <a name="create-a-custom-deletion-default-policy-tag"></a>Erstellen eines Standardrichtlinientags für das Löschen von benutzerdefinierten Löschungen
   
-Im nächsten Schritt erstellen Sie eine andere benutzerdefinierte DPT, aber diese wird eine Löschung-Richtlinie, die Elemente nach 7 Jahren dauerhaft gelöscht werden.
+Als Nächstes erstellen Sie einen weiteren benutzerdefinierten Standardrichtlinientag, aber hierbei handelt es sich um eine Löschrichtlinie, die Elemente dauerhaft nach 7 Jahren löscht.
   
-1. Klicken Sie auf der Seite **aufbewahrungstags** auf **Neues Tag**![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), und wählen Sie dann **auf gesamte Postfach (Standard) automatisch angewendet**. 
+1. Klicken Sie auf der Seite **Aufbewahrungstags** auf **Neues Tag**![-Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), und wählen Sie dann **automatisch auf gesamtes Postfach angewendet (Standard)** aus. 
     
-2. Füllen Sie auf der Seite **Neues Tag automatisch auf die gesamte Postfach (Standard) angewendet** die folgenden Felder aus: 
+2. Füllen Sie auf der Seite **Neues Tag automatisch auf gesamtes Postfach angewendet (Standard)** die folgenden Felder aus: 
     
-    ![Einstellungen zum Erstellen einer neuen Standardtag Richtlinie löschen](media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![Einstellungen zum Erstellen eines neuen Standardrichtlinientags für das Löschen](media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
-1. **Name** Geben Sie einen Namen für die neue aufbewahrungstag. 
+1. **Name** Geben Sie einen Namen für das neue Aufbewahrungs ein. 
     
-2. **Aufbewahrungsaktion** Wählen Sie **Endgültig löschen** , um Elemente aus dem Postfach löschen, wenn der Aufbewahrungszeitraum abgelaufen ist. 
+2. **Aufbewahrungsaktion** Wählen Sie **endgültig löschen** aus, um Elemente aus dem Postfach zu entfernen, wenn der Aufbewahrungszeitraum abgelaufen ist. 
     
-3. **Aufbewahrungszeitraum** Wählen Sie aus, **Wenn das Element das folgende Alter (in Tagen) erreicht**, und geben Sie die Dauer des Aufbewahrungszeitraums. In diesem Szenario werden nach 2555 Tagen (7 Jahre) Elemente gelöscht werden.
+3. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 2555 Tagen (7 Jahre) gelöscht.
     
-4. **Kommentar** (Optional) Geben Sie einen Kommentar, der den Zweck des benutzerdefinierten Retention Tags erläutert. 
+4. **Kommentar** Optional Geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
     
-3. Klicken Sie auf **Speichern** , um den benutzerdefinierten Löschvorgang DPT erstellen. 
+3. Klicken Sie auf **Speichern** , um die benutzerdefinierte Löschungsrichtlinien Erstellung zu erstellen. 
     
-    Die neue Löschung DPT wird in der Liste der aufbewahrungstags angezeigt.
+    Der neue Lösch richtlinientag wird in der Liste der Aufbewahrungstags angezeigt.
     
-### <a name="create-a-custom-retention-policy-tag-for-the-deleted-items-folder"></a>Erstellen einer benutzerdefinierten Aufbewahrungsrichtlinien-Tag für den Ordner Gelöschte Elemente
+### <a name="create-a-custom-retention-policy-tag-for-the-deleted-items-folder"></a>Erstellen eines benutzerdefinierten Aufbewahrungsrichtlinientags für den Ordner "Gelöschte Elemente"
   
-Das letzte aufbewahrungstag, das Sie erstellen, ist eine benutzerdefinierte Aufbewahrungsrichtlinien-Tag (außer) für den Ordner Gelöschte Objekte. Dieses Tag Löschen von Elementen im Ordner "Gelöschte Elemente" wird nach fünf Jahren und bietet einen Zeitraum für die Wiederherstellung Wenn Benutzer das gelöschte Elemente wiederherstellen-Tool zum Wiederherstellen eines Elements verwenden können.
+Das letzte Aufbewahrungs, das Sie erstellen, ist ein benutzerdefiniertes Aufbewahrungsrichtlinientag (rpt) für den Ordner "Gelöschte Elemente". Mit diesem Tag werden Elemente im Ordner Gelöschte Elemente nach 5 Jahren gelöscht, und es wird ein Wiederherstellungszeitraum bereitgestellt, wenn Benutzer das Tool gelöschte Elemente wiederherstellen verwenden können, um ein Element wiederherzustellen.
   
-1. Klicken Sie auf der Seite **aufbewahrungstags** auf **Neues Tag** ![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), und wählen Sie dann **auf einen Standardordner automatisch angewendet**. 
+1. Klicken Sie auf der Seite **Aufbewahrungstags** auf **Neues Tag** ![-Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif), und wählen Sie dann **automatisch auf einen Standardordner angewendet**aus. 
     
-2. Füllen Sie auf der Seite **Neues Tag automatisch auf einen Standardordner angewendet** die folgenden Felder aus: 
+2. Füllen Sie für das **neue Tag, das automatisch auf eine Standardordner Seite angewendet** wird, die folgenden Felder aus: 
     
-    ![Einstellungen zum Erstellen eines neuen Aufbewahrungsrichtlinien-Tags für den Ordner Gelöschte Elemente](media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Einstellungen zum Erstellen eines neuen Aufbewahrungsrichtlinientags für den Ordner "Gelöschte Elemente"](media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
-1. **Name** Geben Sie einen Namen für die neue aufbewahrungstag. 
+1. **Name** Geben Sie einen Namen für das neue Aufbewahrungs ein. 
     
-2. **Dieses Tag in den folgenden Standardordner übernehmen** Wählen Sie in der Dropdown-Liste **Gelöschte Elemente**.
+2. **Anwenden dieses Tags auf den folgenden Standardordner** Wählen Sie in der Dropdownliste **Gelöschte Elemente**aus.
     
-3. **Aufbewahrungsaktion** Wählen Sie **Löschen und Wiederherstellung zulassen** Elemente löschen, wenn der Aufbewahrungszeitraum abgelaufen ist, aber zulassen, Benutzer ein gelöschtes Element innerhalb der Aufbewahrungszeit für gelöschte Elemente wiederherstellen dass (die standardmäßig 14 Tage ist). 
+3. **Aufbewahrungsaktion** Wählen Sie **Löschen und Wiederherstellung zulassen** aus, um Elemente zu löschen, wenn der Aufbewahrungszeitraum abgelaufen ist, aber Benutzern das Wiederherstellen eines gelöschten Elements innerhalb des Aufbewahrungszeitraums für gelöschte Elemente (standardmäßig 14 Tage) gestatten. 
     
-4. **Aufbewahrungszeitraum** Wählen Sie aus, **Wenn das Element das folgende Alter (in Tagen) erreicht**, und geben Sie die Dauer des Aufbewahrungszeitraums. In diesem Szenario werden Elemente nach 1825 Tagen (5 Jahre) gelöscht.
+4. **Aufbewahrungszeitraum** Wählen Sie aus, **wann das Element das folgende Alter (in Tagen) erreicht**, und geben Sie dann die Dauer des Aufbewahrungszeitraums ein. In diesem Szenario werden Elemente nach 1825 Tagen (5 Jahre) gelöscht.
     
-5. **Kommentar** (Optional) Geben Sie einen Kommentar, der den Zweck des benutzerdefinierten Retention Tags erläutert. 
+5. **Kommentar** Optional Geben Sie einen Kommentar ein, der den Zweck des benutzerdefinierten Aufbewahrungstags erläutert. 
     
-3. Klicken Sie auf **Speichern** , um die benutzerdefinierten Aufbewahrungsrichtlinientag für den Ordner Gelöschte Objekte zu erstellen. 
+3. Klicken Sie auf **Speichern** , um die benutzerdefinierte RPT für den Ordner Gelöschte Elemente zu erstellen. 
     
-    Die neue Berichtskopf wird in der Liste der aufbewahrungstags angezeigt.
+    Die neue RPT wird in der Liste der Aufbewahrungstags angezeigt.
 
 ## <a name="step-3-create-a-new-retention-policy"></a>Schritt 3: Erstellen einer neuen Aufbewahrungsrichtlinie
 
-Nachdem die benutzerdefinierte aufbewahrungstags erstellt wurde, besteht der nächste Schritt zum Erstellen einer neuen Aufbewahrungsrichtlinie und die aufbewahrungstags hinzufügen. Sie fügen die drei benutzerdefinierte aufbewahrungstags, die Sie in Schritt2 erstellt haben, und die integrierten Tags, die im ersten Abschnitt erwähnt wurden. In Schritt 4 werden Sie diese neue Aufbewahrungsrichtlinie auf Benutzerpostfächer zuweisen.
+Nachdem Sie die benutzerdefinierten Aufbewahrungstags erstellt haben, besteht der nächste Schritt darin, eine neue Aufbewahrungsrichtlinie zu erstellen und die Aufbewahrungstags hinzuzufügen. Sie fügen die drei benutzerdefinierten Aufbewahrungstags hinzu, die Sie in Schritt 2 erstellt haben, und die integrierten Tags, die im ersten Abschnitt erwähnt wurden. In Schritt 4 weisen Sie diese neue Aufbewahrungsrichtlinie den Benutzerpostfächern zu.
   
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Verwaltung der Richtlinientreue** \> **Aufbewahrungsrichtlinien**.
+1. Wechseln Sie in der Exchange- **Verwaltungs** \> Konsole zu **Aufbewahrungsrichtlinien**für Compliance-Verwaltung.
     
-2. Klicken Sie auf der Seite **Aufbewahrungsrichtlinien** auf **neu** ![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+2. Klicken Sie auf der Seite Aufbewahrungs **** ![ **Richtlinien** auf neues](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)Symbol.
     
-3. Geben Sie im Feld **Name** einen Namen für die neue Aufbewahrungsrichtlinie; beispielsweise **Alpine House-Archivierung und Löschung**. 
+3. Geben Sie im Feld **Name** einen Namen für die neue Aufbewahrungsrichtlinie ein. Beispiel: **Alpine House Archiv-und Löschrichtlinie**. 
     
-4. Klicken Sie auf **Hinzufügen** , klicken Sie unter **Retention Tags**, ![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif).
+4. Klicken Sie unter **Aufbewahrungstags**auf neues](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)Symbol **Hinzufügen** ![.
     
-    Es wird eine Liste der Retention Tags in Ihrer Organisation angezeigt. Beachten Sie, dass der benutzerdefinierte Tags, die Sie in Schritt2 erstellt haben, angezeigt werden.
+    Eine Liste der Aufbewahrungstags in Ihrer Organisation wird angezeigt. Hinweis die benutzerdefinierten Tags, die Sie in Schritt 2 erstellt haben, werden angezeigt.
     
-5. Fügen Sie die 9 Retention Tags, die hervorgehoben sind im folgenden Screenshot (diese Tags werden ausführlich im Abschnitt [Weitere Informationen](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) beschrieben). Um ein aufbewahrungstag hinzuzufügen, wählen Sie sie aus, und klicken Sie dann auf **Hinzufügen**. 
+5. Fügen Sie die 9 Aufbewahrungstags hinzu, die im folgenden Screenshot hervorgehoben werden (diese Tags werden im Abschnitt [Weitere Informationen](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) ausführlicher beschrieben). Zum Hinzufügen eines Aufbewahrungstags wählen Sie es aus, und klicken Sie dann auf **Hinzufügen**. 
     
-    ![Die neue Aufbewahrungsrichtlinie Retention Tags hinzufügen](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
+    ![Hinzufügen von Aufbewahrungstags zur neuen Aufbewahrungsrichtlinie](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
     > [!TIP]
-    > Sie können mehrere aufbewahrungstags auswählen, indem Sie die **STRG** -Taste gedrückt halten und dann auf jedes Tag. 
+    > Sie können mehrere Aufbewahrungstags auswählen, indem Sie die **STRG** -Taste gedrückt halten und dann auf die einzelnen Tags klicken. 
   
-6. Nachdem Sie die aufbewahrungstags hinzugefügt haben, klicken Sie auf **OK**.
+6. Nachdem Sie die Aufbewahrungstags hinzugefügt haben, klicken Sie auf **OK**.
     
-7. Klicken Sie auf der Seite **Neue Aufbewahrungsrichtlinie** auf **Speichern** , um die neue Richtlinie erstellen. 
+7. Klicken Sie auf der Seite **neue Aufbewahrungsrichtlinie** auf **Speichern** , um die neue Richtlinie zu erstellen. 
     
-    Die neue Aufbewahrungsrichtlinie wird in der Liste angezeigt. Wählen Sie aus, um die aufbewahrungstags verknüpften im Detailbereich anzuzeigen.
+    Die neue Aufbewahrungsrichtlinie wird in der Liste angezeigt. Wählen Sie diese Option aus, um die mit ihr verknüpften Aufbewahrungstags im Detailbereich anzuzeigen.
     
-    ![Die neue Aufbewahrungsrichtlinie und die Liste der verknüpfte aufbewahrungstags](media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
+    ![Die neue Aufbewahrungsrichtlinie und die Liste der verknüpften Aufbewahrungstags](media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
-## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Schritt 4: Zuweisen von Benutzerpostfächern in die neue Aufbewahrungsrichtlinie
+## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Schritt 4: Zuweisen der neuen Aufbewahrungsrichtlinie zu Benutzerpostfächern
 
-Wenn ein neues Postfach erstellt wird, wird eine Aufbewahrungsrichtlinie mit dem Namen Standard-MRM-Standardrichtlinie es standardmäßig zugewiesen. In diesem Schritt werden Sie diese Aufbewahrungsrichtlinie ersetzen (, da ein Postfach nur eine Aufbewahrungsrichtlinie zugewiesen werden kann) durch die neue Aufbewahrungsrichtlinie, die Sie in Schritt 3 auf die Benutzerpostfächer in Ihrer Organisation erstellt zuweisen. In diesem Schritt wird davon ausgegangen, dass die neue Richtlinie auf alle Postfächer in Ihrer Organisation zugewiesen werden.
+Wenn ein neues Postfach erstellt wird, wird standardmäßig eine Aufbewahrungsrichtlinie namens "Default MRM Policy" zugewiesen. In diesem Schritt ersetzen Sie diese Aufbewahrungsrichtlinie (da einem Postfach nur eine Aufbewahrungsrichtlinie zugewiesen werden kann), indem Sie die neue Aufbewahrungsrichtlinie, die Sie in Schritt 3 erstellt haben, den Benutzerpostfächern in Ihrer Organisation zuweisen. Bei diesem Schritt wird davon ausgegangen, dass Sie die neue Richtlinie allen Postfächern in Ihrer Organisation zuweisen.
   
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Empfänger** \> **Postfächer**.
     
-    Es wird eine Liste aller Postfächer für Benutzer in Ihrer Organisation angezeigt. 
+    Eine Liste aller Benutzerpostfächer in Ihrer Organisation wird angezeigt. 
     
-2. Wählen Sie alle Postfächer auf dem ersten in der Liste die **UMSCHALTTASTE** gedrückt, und klicken Sie dann auf das letzte Element in der Liste aus. 
+2. Wählen Sie alle Postfächer aus, indem Sie auf den ersten Eintrag in der Liste klicken, die **UMSCHALT** Taste gedrückt halten und dann auf den letzten Eintrag in der Liste klicken. 
     
-3. Klicken Sie im Detailbereich auf der rechten Seite von der Exchange-Verwaltungskonsole unter **Massenbearbeitung**auf **Weitere Optionen**.
+3. Klicken Sie im Detailbereich auf der rechten Seite der Exchange-verwaltungsKONSOLE unter **Massenbearbeitung**auf **Weitere Optionen**.
     
 4. Klicken Sie unter **Aufbewahrungsrichtlinie** auf **Aktualisieren**.
     
-5. Wählen Sie auf der Seite **Bulk zuweisen Aufbewahrungsrichtlinie** in der Dropdownliste **Wählen Sie die Aufbewahrungsrichtlinie** die Aufbewahrungsrichtlinie, die Sie in Schritt 3 erstellt; beispielsweise **Alpine House Archive und Aufbewahrungsrichtlinien**.
+5. Wählen Sie auf der Seite **massenzuweisung** für Aufbewahrungsrichtlinie in der Dropdownliste **Aufbewahrungsrichtlinie auswählen** die Aufbewahrungsrichtlinie aus, die Sie in Schritt 3 erstellt haben. Beispiel: **Alpine House Archive and Retention Policy**.
     
-6. Klicken Sie auf **Speichern** , um die neue Retention Policy Zuweisung zu speichern. 
+6. Klicken Sie auf **Speichern** , um die neue Aufbewahrungsrichtlinien Zuweisung zu speichern. 
     
-7. Um sicherzustellen, dass die neue Aufbewahrungsrichtlinie auf Postfächer zugewiesen wurde, können Sie die folgenden Aktionen ausführen: Wählen Sie ein Postfach auf der Seite Postfächer aus, und klicken Sie dann auf Bearbeiten. 
+7. Gehen Sie wie folgt vor, um zu überprüfen, ob die neue Aufbewahrungsrichtlinie Postfächern zugewiesen wurde: Wählen Sie auf der Seite Postfächer ein Postfach aus, und klicken Sie dann auf Bearbeiten. 
     
-1. Wählen Sie ein Postfach auf der Seite **Postfächer** aus, und klicken Sie dann auf **Bearbeiten** ![bearbeiten](media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png). 
+1. Wählen Sie auf der Seite **Postfächer** ein Postfach aus, **** ![und klicken](media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png)Sie dann auf bearbeiten bearbeiten. 
     
-2. Klicken Sie auf der Eigenschaftenseite des Postfachs für den ausgewählten Benutzer die auf **Postfachfunktionen**.
+2. Klicken Sie auf der Eigenschaftenseite des Postfachs für den ausgewählten Benutzer auf **Postfachfunktionen**.
     
-    Der Name der neuen Richtlinie zugewiesen an das Postfach wird in der **Aufbewahrungsrichtlinie** Dropdown-Liste angezeigt. 
+    Der Name der neuen Richtlinie, die dem Postfach zugewiesen wurde, wird in der Dropdownliste **Aufbewahrungsrichtlinie** angezeigt. 
 
-## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Optional) Schritt 5: Führen Sie den Assistenten für verwaltete Ordner, um die neuen Einstellungen anzuwenden
+## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>Optional Schritt 5: Ausführen des Assistenten für verwaltete Ordner zum Anwenden der neuen Einstellungen
 
-Nachdem Sie die neue Aufbewahrungsrichtlinie auf Postfächer in Schritt 4 anwenden, kann es bis zu sieben Tage in Exchange Online für die neue Einstellungen für die Aufbewahrung auf die Postfächer angewendet werden soll dauern. Dies ist, da ein Prozess der Assistenten für verwaltete Ordner Prozesse Postfächer einmal alle 7 Tage aufgerufen. Anstelle von Warten auf Assistenten für verwaltete Ordner ausführen, können Sie dies durch Ausführen des **Start-ManagedFolderAssistant-** Cmdlets in Exchange Online PowerShell erzwingen. 
+Nachdem Sie die neue Aufbewahrungsrichtlinie in Schritt 4 auf Postfächer angewendet haben, kann es bis zu 7 Tage dauern, bis die neuen Aufbewahrungseinstellungen auf die Postfächer angewendet werden. Der Grund ist, dass ein Prozess, der als Assistent für verwaltete Ordner bezeichnet wird, Postfächer alle 7 Tage verarbeitet. Anstatt zu warten, bis der Assistent für verwaltete Ordner ausgeführt wird, können Sie dies erzwingen, indem Sie das Cmdlet **Start-ManagedFolderAssistant** in Exchange Online PowerShell ausführen. 
   
- **Was geschieht, wenn Sie den Assistenten für verwaltete Ordner ausführen?** Es gilt die Einstellungen in der Aufbewahrungsrichtlinie, indem Prüfen von Elementen im Postfach und bestimmen, ob sie unterliegen Aufbewahrung sind. Es versieht klicken Sie dann mit der entsprechenden aufbewahrungstag Artikeln, für die Aufbewahrung und nimmt dann die angegebenen Aufbewahrungsaktion für Elemente nach deren Aufbewahrungszeitraum. 
+ **Was geschieht, wenn Sie den Assistenten für verwaltete Ordner ausführen?** Die Einstellungen werden in der Aufbewahrungsrichtlinie angewendet, indem Elemente im Postfach überprüft werden und festgestellt wird, ob Sie aufbewahrt werden. Anschließend werden Elemente, die der Aufbewahrung unterliegen, mit dem entsprechenden Aufbewahrungs gestempelt, und anschließend wird die angegebene Aufbewahrungsaktion für Elemente nach Ihrem Aufbewahrungszeitraum ausgeführt. 
   
-Hier sind die Schritte zum Verbinden mit Exchange Online PowerShell, und führen Sie den Assistenten für verwaltete Ordner auf alle Postfächer in Ihrer Organisation.
+Im folgenden finden Sie die Schritte zum Herstellen einer Verbindung mit Exchange Online PowerShell und zum Ausführen des Assistenten für verwaltete Ordner für jedes Postfach in Ihrer Organisation.
   
 1. Öffnen Sie auf Ihrem lokalen Computer Windows PowerShell, und führen Sie dann den folgenden Befehl aus.
     
@@ -245,7 +244,7 @@ Hier sind die Schritte zum Verbinden mit Exchange Online PowerShell, und führen
     $UserCredential = Get-Credential
     ```
 
-    Klicken Sie im Dialogfeld **Windows PowerShell anmelden** Geben Sie den Benutzernamen und das Kennwort für Ihr Office 365 globaler Administrator-Konto ein, und klicken Sie dann auf **OK**.
+    Geben Sie im Dialogfeld **Windows PowerShell-Anmeldeinformationen anfordern** den Benutzernamen und das Kennwort für Ihr globales Administratorkonto von Office 365 ein, und klicken Sie dann auf **OK**.
     
 2. Führen Sie den folgenden Befehl aus.
     
@@ -266,9 +265,9 @@ Hier sind die Schritte zum Verbinden mit Exchange Online PowerShell, und führen
     ```
 
     > [!NOTE]
-    > Weitere Informationen oder wenn Sie eine Verbindung mit Ihrer Exchange Online-Organisation Probleme haben, finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
+    > Weitere Informationen oder Probleme beim Herstellen einer Verbindung mit Ihrer Exchange Online-Organisation finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283). 
   
-5. Führen Sie die folgenden zwei Befehle aus, um den Assistenten für verwaltete Ordner für alle Benutzerpostfächer in Ihrer Organisation zu starten.
+5. Führen Sie die folgenden beiden Befehle aus, um den Assistenten für verwaltete Ordner für alle Benutzerpostfächer in Ihrer Organisation zu starten.
     
     ```
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
@@ -278,46 +277,46 @@ Hier sind die Schritte zum Verbinden mit Exchange Online PowerShell, und führen
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
-Das wars! Sie haben ein Archiv und Löschung Richtlinie für die Organisation Alpine House einrichten.
+Das wars! Sie haben eine Archiv-und Löschrichtlinie für die Alpine House-Organisation eingerichtet.
   
-## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>(Optional) Schritt 6: Stellen Sie der neue Aufbewahrungsrichtlinie die Standardeinstellung für Ihre Organisation
+## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Optional Schritt 6: Festlegen der standardmäßigen Aufbewahrungsrichtlinie für Ihre Organisation
 
-In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandene Postfächer zuweisen. Aber Sie können Exchange Online konfigurieren, sodass die neue Aufbewahrungsrichtlinie auf neue Postfächer zugewiesen ist, die in der Zukunft erstellt werden. Zu diesem Zweck mit Exchange Online PowerShell, um Ihrer Organisation Default Mailbox Plan zu aktualisieren. Einen *postfachplan* ist eine Vorlage, die Eigenschaften für neue Postfächer automatisch konfiguriert.  In diesem Schritt optional können Sie die aktuellen Aufbewahrungsrichtlinie ersetzen, die das die postfachplan (standardmäßig die MRM-Standardrichtlinie) mit der Aufbewahrungsrichtlinie zugeordnet ist, die Sie in Schritt 3 erstellt haben. Nach dem Aktualisieren der postfachplan, wird die neue Aufbewahrungsrichtlinie neue Postfächer zugewiesen werden.
+In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfächern zuweisen. Sie können Exchange Online jedoch so konfigurieren, dass die neue Aufbewahrungsrichtlinie neuen Postfächern zugewiesen wird, die in der Zukunft erstellt werden. Hierzu können Sie Exchange Online PowerShell verwenden, um den Standard Postfachplan Ihrer Organisation zu aktualisieren. Ein *Postfachplan* ist eine Vorlage, mit der Eigenschaften für neue Postfächer automatisch konfiguriert werden.  In diesem optionalen Schritt können Sie die aktuelle Aufbewahrungsrichtlinie ersetzen, die dem Postfachplan (standardmäßig der MRM-Standardrichtlinie) mit der in Schritt 3 erstellten Aufbewahrungsrichtlinie zugewiesen ist. Nachdem Sie den Postfachplan aktualisiert haben, wird die neue Aufbewahrungsrichtlinie neuen Postfächern zugewiesen.
 
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) oder finden Sie unter Schritt 5.
+1. Stellen Sie [eine Verbindung mit Exchange Online PowerShell her,](https://go.microsoft.com/fwlink/p/?LinkId=517283) oder lesen Sie Schritt 5.
 
-2. Führen Sie den folgenden Befehl aus, um Informationen zu den postfachplänen in Ihrer Organisation anzuzeigen.
+2. Führen Sie den folgenden Befehl aus, um Informationen zu den Postfachplänen in Ihrer Organisation anzuzeigen.
 
     ```
     Get-MailboxPlan | Format-Table DisplayName,RetentionPolicy,IsDefault
     ```
-    Beachten Sie die postfachplan, die als Standard festgelegt wird.
+    Beachten Sie den Postfachplan, der als Standard festgelegt ist.
 
-3. Führen Sie den folgenden Befehl zuweisen, die Sie in Schritt 3 (beispielsweise **Alpine House Archive und Aufbewahrungsrichtlinien**) erstellt die neue Aufbewahrungsrichtlinie auf den Default Mailbox Plan. In diesem Beispiel wird davon ausgegangen, dass der Name des standardmäßigen Mailbox Plans **ExchangeOnlineEnterprise**ist.
+3. Führen Sie den folgenden Befehl aus, um die neue Aufbewahrungsrichtlinie, die Sie in Schritt 3 (beispielsweise **Alpine House Archive and Retention Policy**) erstellt haben, dem Standard Postfachplan zuzuweisen. In diesem Beispiel wird davon ausgegangen, dass der Name des Standard Postfachplans **exchangeonlineenterprise zurückgegeben**ist.
 
     ```
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
     ```
-4. Sie können den Befehl erneut ausführen, in Schritt 2, um sicherzustellen, dass die Aufbewahrungsrichtlinie auf den Default Mailbox Plan zugewiesen geändert wurde.
+4. Sie können den Befehl in Schritt 2 erneut ausführen, um zu überprüfen, ob die dem Standard Postfachplan zugewiesene Aufbewahrungsrichtlinie geändert wurde.
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Wie wird der Aufbewahrungszeitraum berechnet? Der Aufbewahrungszeitraum Postfachelemente aus dem Datum der Lieferung oder das Erstellungsdatum für Elemente wie Entwurf-Nachrichten, die gesendet werden nicht berechnet wird, aber vom Benutzer erstellt werden. Wenn die Assistenten für verwaltete Ordner Elemente in einem Postfach verarbeitet, stempelt sie ein Startdatum und ein Ablaufdatum für alle Elemente, die mit der Aufbewahrungsaktion löschen und Wiederherstellung zulassen oder endgültig löschen aufbewahrungstags aufweisen. Auf Elemente mit einem Tag Archiv werden mit einem Datum der Verschiebung versehen. 
+- Wie wird das Aufbewahrungszeitraum berechnet? Das Aufbewahrungs Alter von Postfachelementen wird ab dem Lieferdatum oder dem Erstellungsdatum für Elemente wie Entwurfsnachrichten berechnet, die nicht gesendet, sondern vom Benutzer erstellt werden. Wenn der Assistent für verwaltete Ordner Elemente in einem Postfach verarbeitet, werden ein Startdatum und ein Ablaufdatum für alle Elemente mit Aufbewahrungstags mit der Aktion löschen und Wiederherstellung zulassen oder dauerhaft löschen gestempelt. Elemente mit einem Archiv-Tag werden mit einem Verschiebungsdatum gestempelt. 
     
-- Die folgende Tabelle enthält weitere Informationen zu den einzelnen Retention Tags, die die benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt wird, die mithilfe der Schritte in diesem Thema erstellt wurde.
+- Die folgende Tabelle enthält weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die mit den Schritten in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungstag**|**Funktionsweise dieses tag**|**Integrierte oder benutzerdefinierte?**|**Typ**|
+    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Typ**|
     |:-----|:-----|:-----|:-----|
-    |3 Jahre, Alpine House in Archiv verschieben  <br/> |Verschiebt Elemente, die in das Archivpostfach alte 1095 Tage (in 3 Jahren) sind.  <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Richtlinie Standardtag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
-    |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente in das primäre Postfach oder das Archivpostfach dauerhaft, wenn sie 7 Jahre alt sind.  <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Richtlinie Standardtag (löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
-    |Alpine House gelöschte Elemente 5 Jahre löschen und Wiederherstellung zulassen  <br/> |Löscht Elemente aus dem Ordner Gelöschte Objekte, die 5 Jahre alt sind. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Benutzerdefinierte (finden Sie unter [Schritt2: Erstellen von neuen aufbewahrungstags für die Archivierung und Löschung Richtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Aufbewahrungsrichtlinien-Tag (Gelöschte Objekte); Dieses Tag wird automatisch auf Elemente im Ordner "Gelöschte Elemente" angewendet.  <br/> |
-    |Wiederherstellbare Elemente, 14 Tage verschieben in Archiv  <br/> |Verschiebt Elemente, die im Ordner "wiederherstellbare Elemente" in den Ordner wiederherstellbare Elemente im Archivpostfach 14 Tagen wurden.  <br/> |Integriert  <br/> |Aufbewahrungsrichtlinien-Tag (wiederherstellbare Elemente); Dieses Tag wird automatisch auf Elemente im Ordner "wiederherstellbare Elemente" angewendet.  <br/> |
-    |Junk-e-Mail  <br/> |Löscht dauerhaft Elemente, die in den Junk-e-Mail-Ordner für 30 Tage wurden. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Aufbewahrungsrichtlinien-Tag (Junk-e); Dieses Tag wird automatisch auf Elemente in den Junk-e-Mail-Ordner angewendet.  <br/> |
-    |1 Monat, löschen  <br/> |Löscht dauerhaft Elemente, die 30 Tage alt sind. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche; Dieses Tag kann von Benutzern angewendet werden.  <br/> |
-    |1 Jahr, löschen  <br/> |Löscht dauerhaft Elemente, die 365 Tage alt sind. Benutzer können diese Elemente für von 14 Tagen, nachdem sie gelöscht sind wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche; Dieses Tag kann von Benutzern angewendet werden.  <br/> |
-    |Nie löschen  <br/> |Dieses Tag verhindern, dass Elemente durch eine Aufbewahrungsrichtlinie gelöscht.  <br/> |Integriert  <br/> |Persönliche; Dieses Tag kann von Benutzern angewendet werden.  <br/> |
-    |Persönlich, 1 Jahre, in Archiv verschieben  <br/> |Verschiebt Elemente in das Archivpostfach nach einem Jahr an.  <br/> |Integriert  <br/> |Persönliche; Dieses Tag kann von Benutzern angewendet werden.  <br/> |
+    |Alpine House 3 Jahre in Archiv verschieben  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
+    |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
+    |Alpine House gelöschte Elemente 5 Jahre löschen und Wiederherstellung zulassen  <br/> |Löscht Elemente aus dem Ordner Gelöschte Elemente, die 5 Jahre alt sind. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |AufbewahrungsRichtlinientag (Gelöschte Elemente); Dieses Tag wird automatisch auf Elemente im Ordner "Gelöschte Elemente" angewendet.  <br/> |
+    |Wiederherstellbare Elemente, 14 Tage, in Archiv verschieben  <br/> |Verschiebt Elemente, die sich im Ordner "Wiederherstellbare Elemente" befinden, 14 Tage lang in den Ordner "Wiederherstellbare Elemente" im Archivpostfach.  <br/> |Integriert  <br/> |AufbewahrungsRichtlinientag (Wiederherstellbare Elemente); Dieses Tag wird automatisch auf Elemente im Ordner "Wiederherstellbare Elemente" angewendet.  <br/> |
+    |Junk-e-Mail  <br/> |Löscht Elemente, die sich im Junk-e-Mail-Ordner befinden, endgültig 30 Tage lang. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |AufbewahrungsRichtlinientag (Junk-e-Mail); Dieses Tag wird automatisch auf Elemente im Junk-e-Mail-Ordner angewendet.  <br/> |
+    |1 Monat, löschen  <br/> |Löscht Elemente, die 30 Tage alt sind, endgültig. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |
+    |1 Jahr, löschen  <br/> |Löscht Elemente, die 365 Tage alt sind, endgültig. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |
+    |Nie löschen  <br/> |Dieses Tag verhindert, dass Elemente durch eine Aufbewahrungsrichtlinie gelöscht werden.  <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |
+    |Persönlich, 1 Jahre, in Archiv verschieben  <br/> |Verschiebt Elemente nach einem Jahr in das Archivpostfach.  <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |
    
-    > <sup>\*</sup>Benutzer können das Tool gelöschte Elemente wiederherstellen in Outlook und Outlook Web App verwenden, um ein gelöschtes Element in die Aufbewahrungszeit für gelöschte Elemente wiederherstellen, die standardmäßig 14 Tage in Exchange Online ist. Ein Administrator kann Windows PowerShell verwenden, um die Aufbewahrungszeit auf ein Maximum von 30 Tagen zu erhöhen. Weitere Informationen finden Sie unter: [Wiederherstellen gelöschter Elemente in Outlook für Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) und [Änderung der Aufbewahrungszeit für ein Postfach in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>Benutzer können das Tool gelöschte Elemente wiederherstellen in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) verwenden, um ein gelöschtes Element innerhalb des Aufbewahrungszeitraums für gelöschte Elemente wiederherzustellen, der standardmäßig 14 Tage in Exchange Online ist. Ein Administrator kann Windows PowerShell verwenden, um die Aufbewahrungsdauer für gelöschte Elemente auf maximal 30 Tage zu verlängern. Weitere Informationen finden Sie unter: [Wiederherstellen von gelöschten Elementen in Outlook für Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) und [Ändern des Aufbewahrungszeitraums für gelöschte Elemente für ein Postfach in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940)
   
-- Verwendet werden, die **wiederherstellbare Elemente, 14 Tage, in Archiv verschieben** Retention Tags wird freien Speicherplatz im Ordner "wiederherstellbare Elemente" im primären Postfach des Benutzers. Dies ist nützlich, wenn dem Postfach eines Benutzers in der Warteschleife, platziert wird, d. h., nothing jemals dauerhaft ist, das Postfach des Benutzers gelöscht. Ohne Elemente in das Archivpostfach verschieben, ist es möglich, das Speicherkontingent für den Ordner wiederherstellbare Elemente im Postfach primären erreicht wird. Weitere Informationen hierzu und wie Sie dies vermeiden finden Sie unter [Erhöhen der wiederherstellbare Elemente Kontingent für Postfächer auf halten](https://go.microsoft.com/fwlink/p/?LinkId=786479).
+- Die Verwendung des Recoverable **Items 14 Days Move to Archive** Retention Tag trägt dazu bei, Speicherplatz im Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers freizugeben. Dies ist hilfreich, wenn das Postfach eines Benutzers in den Wartebereich gestellt wird, was bedeutet, dass das Postfach des Benutzers nie dauerhaft gelöscht wird. Ohne Elemente in das Archivpostfach zu bewegen, ist es möglich, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" im primären Postfach erreicht wird. Weitere Informationen zu diesem Thema und dazu, wie Sie es vermeiden können, finden Sie unter [increase the recoverAble Items Quota for Mailboxes on Hold](https://go.microsoft.com/fwlink/p/?LinkId=786479).

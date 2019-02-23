@@ -3,10 +3,9 @@ title: Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Beschreibungen zusätzlicher Eigenschaften, die in einem Office 365-Überwachungsprotokolldaten Satz enthalten sind.
-ms.openlocfilehash: e2450f8d4f9a613d6b21e373d2a2de841cfc7ca0
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 0219ed1fe29dc3ae1f940cd6991781368ae2d519
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29890046"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223474"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll
 
@@ -36,11 +35,11 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die in Abhängigk
 |**Eigenschaft**|**Beschreibung**|**Office 365-Dienst mit dieser Eigenschaft**|
 |:-----|:-----|:-----|
 |Darsteller  <br/> |Das Benutzer-oder Dienstkonto, mit dem die Aktion ausgeführt wurde. |Azure Active Directory  <br/> |
-|AddOnName  <br/> |Der Name eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Der Typ von Add-ons in Microsoft Teams ist ein bot, ein Konnektor oder eine Registerkarte.  <br/> |Microsoft Teams  <br/> |
-|AddOntype  <br/> |Der Typ eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Die folgenden Werte geben den Typ des Add-ons an.<br/> **1** -gibt einen bot an.<br/> **2** – gibt eine Verbindung an.<br/> **3** – gibt eine Registerkarte an. |Microsoft Teams  <br/> |
+|AddOnName  <br/> |Der Name eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Der Typ von Add-ons in Microsoft Teams ist ein bot, ein Konnektor oder eine Registerkarte.  <br/> |Microsoft Teams  <br/> |
+|AddOntype  <br/> |Der Typ eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Die folgenden Werte geben den Typ des Add-ons an.<br/> **1** -gibt einen bot an.<br/> **2** – gibt eine Verbindung an.<br/> **3** – gibt eine Registerkarte an. |Microsoft Teams  <br/> |
 |AzureActiveDirectoryEventType  <br/> |Der Typ des Azure Active Directory-Ereignisses. Die folgenden Werte geben den Typ des Ereignisses an.<br/> **0** – gibt ein Konto Anmeldeereignis an.<br/> **1** – gibt ein Azure-Anwendungs Sicherheitsereignis an. |Azure Active Directory  <br/> |
-|ChannelGuid  <br/> |Die ID eines Microsoft Teams-Kanals. Das Team, in dem sich der Kanal befindet, wird durch **** die Eigenschaften Teamname und **TeamGuid** identifiziert.<br/> |Microsoft Teams  <br/> |
-|ChannelName  <br/> |Der Name eines Microsoft Teams-Kanals. Das Team, in dem sich der Kanal befindet, wird durch **** die Eigenschaften Teamname und **TeamGuid** identifiziert.<br/> |Microsoft Teams  <br/> |
+|ChannelGuid  <br/> |Die ID eines Microsoft Teams-Kanals. Das Team, in dem sich der Kanal befindet, wird durch **** die Eigenschaften Teamname und **TeamGuid** identifiziert.<br/> |Microsoft Teams  <br/> |
+|ChannelName  <br/> |Der Name eines Microsoft Teams-Kanals. Das Team, in dem sich der Kanal befindet, wird durch **** die Eigenschaften Teamname und **TeamGuid** identifiziert.<br/> |Microsoft Teams  <br/> |
 |Client  <br/> |Das Clientgerät, das Gerätebetriebssystem und der für das Anmeldeereignis verwendete Gerätebrowser (beispielsweise Nokia 920; Windows Phone 8; IE Mobile 11).  <br/> |Azure Active Directory  <br/> |
 |ClientInfoString  <br/> |Informationen zum e-Mail-Client, der zum Ausführen des Vorgangs verwendet wurde, beispielsweise eine Browserversion, eine Outlook-Version und Informationen zu mobilen Geräten  <br/> |Exchange (Post Fach Aktivität)  <br/> |
 |ClientIP  <br/> |Die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird in einem IPv4-oder IPv6-Adressformat angezeigt.  <br/> |Exchange und Azure Active Directory  <br/> |
@@ -59,7 +58,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die in Abhängigk
 |LOGON  <br/> |Der Typ des Postfachzugriffs. Die folgenden Werte geben den Typ des Benutzers an, der auf das Postfach zugegriffen hat.<br/><br/> **0** -gibt einen Postfachbesitzer an.<br/> **1** – gibt einen Administrator an.<br/> **2** – gibt einen Stellvertreter an. <br/>**3** – gibt den Transportdienst im Microsoft-Datencenter an.<br/> **4** – gibt ein Dienstkonto im Microsoft-Datencenter an. <br/>**6** – gibt einen delegierten Administrator an. |Exchange (Post Fach Aktivität)  <br/> |
 |MailboxGuid  <br/> |Die Exchange-GUID des Postfachs, auf das zugegriffen wurde.  <br/> |Exchange (Post Fach Aktivität)  <br/> |
 |MailboxOwnerUPN  <br/> |Die e-Mail-Adresse der Person, die das Postfach besitzt, auf das zugegriffen wurde.  <br/> |Exchange (Post Fach Aktivität)  <br/> |
-|Mitglieder  <br/> |Listet die Benutzer auf, die einem Team hinzugefügt oder daraus entfernt wurden. Die folgenden Werte geben den dem Benutzer zugewiesenen Rollentyp an.<br/><br/> **1** – gibt die Rolle des Besitzers an.<br/> **2** – gibt die Rolle des Mitglieds an.<br/> **3** -gibt die Gastrolle an. <br/><br/>Die Members-Eigenschaft enthält auch den Namen Ihrer Organisation und die e-Mail-Adresse des Mitglieds.  <br/> |Microsoft Teams  <br/> |
+|Mitglieder  <br/> |Listet die Benutzer auf, die einem Team hinzugefügt oder daraus entfernt wurden. Die folgenden Werte geben den dem Benutzer zugewiesenen Rollentyp an.<br/><br/> **1** – gibt die Rolle des Besitzers an.<br/> **2** – gibt die Rolle des Mitglieds an.<br/> **3** -gibt die Gastrolle an. <br/><br/>Die Members-Eigenschaft enthält auch den Namen Ihrer Organisation und die e-Mail-Adresse des Mitglieds.  <br/> |Microsoft Teams  <br/> |
 |ModifiedProperties (Name, neuWert, OldValue)  <br/> |Die Eigenschaft ist für Administrator Ereignisse wie das Hinzufügen eines Benutzers als Mitglied einer Website oder einer Websitesammlungsadministrator Gruppe enthalten. Die Eigenschaft enthält den Namen der geänderten Eigenschaft (beispielsweise die Gruppe der Websiteadministratoren) den neuen Wert der geänderten Eigenschaft (beispielsweise den Benutzer, der als Websiteadministrator hinzugefügt wurde, und den vorherigen Wert des geänderten Objekts.  <br/> |Alle (Administrator Aktivität)  <br/> |
 |ObjectID  <br/> |Für die Exchange-Administrator-Überwachungsprotokollierung der Name des Objekts, das vom Cmdlet geändert wurde.  <br/> Für SharePoint-Aktivität den vollständigen URL-Pfadnamen der Datei oder des Ordners, auf den ein Benutzer zugreift.  <br/> Für Azure AD-Aktivität den Namen des geänderten Benutzerkontos.  <br/> |Alle  <br/> |
 |Vorgang  <br/> |Der Name der Benutzer-oder Administrator Aktivität. Der Wert dieser Eigenschaft entspricht dem Wert, der in der Dropdownliste **Aktivitäten** ausgewählt wurde. Wenn **Ergebnisse für alle Aktivitäten anzeigen** ausgewählt wurde, enthält der Bericht Einträge für alle Benutzer-und Administratoraktivitäten für alle Dienste. Eine Beschreibung der Vorgänge/Aktivitäten, die im Office 365-Überwachungsprotokoll protokolliert werden, finden Sie auf der Registerkarte "über **wachte Aktivitäten** " unter [Durchsuchen des Überwachungs &amp; Protokolls im Office 365 Security Compliance Center](search-the-audit-log-in-security-and-compliance.md).<br/> Bei Exchange-Verwaltungsaktivitäten identifiziert diese Eigenschaft den Namen des ausgeführten Cmdlets.  <br/> |Alle  <br/> |
@@ -76,10 +75,10 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die in Abhängigk
 |SourceFileName  <br/> |Der Name der Datei oder des Ordners, auf die der Benutzer zugegriffen hat.  <br/> |SharePoint  <br/> |
 |SourceRelativeUrl  <br/> |Die URL des Ordners, der die Datei enthält, auf die der Benutzer zugegriffen hat. Die Kombination der Werte für die Eigenschaften **SiteUrl**, **SourceRelativeURL**und **sourceFileName** ist identisch mit dem Wert für die **objectID** -Eigenschaft, bei dem es sich um den vollständigen Pfadnamen für die Datei handelt, auf die der Benutzer Zugriff hat.<br/> |SharePoint  <br/> |
 |Subject  <br/> |Die Betreffzeile der Nachricht, auf die zugegriffen wurde.  <br/> |Exchange (Post Fach Aktivität)  <br/> |
-|TabType  <br/> | Der Typ der Registerkarte, die in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Die möglichen Werte für diese Eigenschaft sind:<br/><br/> **Excelpin** – eine Excel-Registerkarte.  <br/> **Extension** -alle Erstanbieter-und Drittanbieter-apps; wie Planer, VSTS und Formulare.  <br/> **Notizen** – Registerkarte "OneNote".  <br/> **Pdfpin** – eine PDF-Registerkarte.  <br/> **Powerbi** – eine Registerkarte "Powerbi".  <br/> **Powerpointpin** – eine PowerPoint-Registerkarte.  <br/> **Sharepointfiles** – eine Registerkarte "SharePoint".  <br/> **Webseite** – eine angeheftete Website-Registerkarte.  <br/> **Wiki-Registerkarte** – eine wiki-Registerkarte.  <br/> **Wordpin** – eine Word-Registerkarte.  <br/> |Microsoft Teams  <br/> |
+|TabType  <br/> | Der Typ der Registerkarte, die in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Die möglichen Werte für diese Eigenschaft sind:<br/><br/> **Excelpin** – eine Excel-Registerkarte.  <br/> **Extension** -alle Erstanbieter-und Drittanbieter-apps; wie Planer, VSTS und Formulare.  <br/> **Notizen** – Registerkarte "OneNote".  <br/> **Pdfpin** – eine PDF-Registerkarte.  <br/> **Powerbi** – eine Registerkarte "Powerbi".  <br/> **Powerpointpin** – eine PowerPoint-Registerkarte.  <br/> **Sharepointfiles** – eine Registerkarte "SharePoint".  <br/> **Webseite** – eine angeheftete Website-Registerkarte.  <br/> **Wiki-Registerkarte** – eine wiki-Registerkarte.  <br/> **Wordpin** – eine Word-Registerkarte.  <br/> |Microsoft Teams  <br/> |
 |Ziel  <br/> |Der Benutzer, für den die Aktion (in der Eigenschaft " **Operation** " bezeichnet) ausgeführt wurde. Wenn beispielsweise ein Gastbenutzer zu SharePoint oder einem Microsoft-Team hinzugefügt wird, wird dieser Benutzer in dieser Eigenschaft aufgeführt.<br/> |Azure Active Directory  <br/> |
-|TeamGuid  <br/> |Die ID eines Teams in Microsoft Teams.  <br/> |Microsoft Teams  <br/> |
-|Teamnamen  <br/> |Der Name eines Teams in Microsoft Teams.  <br/> |Microsoft Teams  <br/> |
+|TeamGuid  <br/> |Die ID eines Teams in Microsoft Teams.  <br/> |Microsoft Teams  <br/> |
+|Teamnamen  <br/> |Der Name eines Teams in Microsoft Teams.  <br/> |Microsoft Teams  <br/> |
 |UserAgent  <br/> |Informationen zum Browser des Benutzers. Diese Informationen werden vom Browser bereitgestellt.  <br/> |SharePoint  <br/> |
 |User Domain  <br/> |Identitätsinformationen zur mandantenorganisation des Benutzers (Akteur), der die Aktion ausgeführt hat.  <br/> |Azure Active Directory  <br/> |
 |UserID  <br/> |Der Benutzer, der die Aktion (in der Eigenschaft " **Operation** " angegeben) ausgeführt hat, die dazu geführt hat, dass der Datensatz protokolliert wird. Beachten Sie, dass Datensätze für Aktivitäten, die von Systemkonten ausgeführt werden (wie SHAREPOINT\system oder NT AUTHORITY\SYSTEM), ebenfalls im Überwachungsprotokoll enthalten sind.<br/> |Alle  <br/> |

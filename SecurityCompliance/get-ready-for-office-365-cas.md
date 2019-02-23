@@ -4,21 +4,21 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
-ms.topic: overview
+ms.topic: article
 ms.date: 02/15/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Erste Schritte mit Office 365 Cloud App Security
-ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087434"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223714"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Einstieg in Office 365 Cloud App Security
   
@@ -73,9 +73,9 @@ Einrichten und Erzwingen von Steuerelementen in den Apps ihrer Organisation basi
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Schützen von apps mit Office 365 Cloud App Security Conditional Access-App-Steuerelement](ocas-conditional-access-app-control.md)
+- [Schützen von Apps mit der App-Steuerung für bedingten Zugriff in Office 365 Cloud App Security](ocas-conditional-access-app-control.md)
 
-- [Bereitstellen von App-Steuerelement für den bedingten Zugriff für Office 365-apps](ocas-deploy-conditional-access-app-control.md)
+- [Bereitstellen der App-Steuerung für bedingten Zugriff für Office 365-Apps](ocas-deploy-conditional-access-app-control.md)
 
 ## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>Schritt 6: Informationen zur Cloud-Nutzung in Ihrer Organisation
 

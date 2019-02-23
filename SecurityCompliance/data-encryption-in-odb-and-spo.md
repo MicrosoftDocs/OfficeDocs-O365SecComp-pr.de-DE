@@ -1,10 +1,27 @@
 ---
-Title: "Datenverschlüsselung in OneDrive for Business und SharePoint Online" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 7/2/2018 ms. Audience: ITPro ms. Topic: Overview ms. Service: O365-seccomp localization_priority: normal Search. appverid: 
+title: Datenverschlüsselung in OneDrive for Business und SharePoint Online
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 7/2/2018
+ms.audience: ITPro
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - SPO160
-- MET150 ms. Asset-Nr.: 6501b5ef-6bf7-43df-b60d-f65781847d6c ms. Collection:
-    - M365-Security-Compliance Description: "grundlegende Elemente der Verschlüsselung für die Datensicherheit in OneDrive for Business und SharePoint Online."
+- MET150
+ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
+ms.collection:
+- M365-security-compliance
+description: Verstehen Sie die grundlegenden Elemente der Verschlüsselung für die Datensicherheit in OneDrive for Business und SharePoint Online.
+ms.openlocfilehash: a43db3da6e4663aee4437689ff51276972298872
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223214"
 ---
-
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Datenverschlüsselung in OneDrive for Business und SharePoint Online
 
 Verstehen Sie die grundlegenden Elemente der Verschlüsselung für die Datensicherheit in OneDrive for Business und SharePoint Online.

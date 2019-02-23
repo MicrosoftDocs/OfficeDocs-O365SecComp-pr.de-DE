@@ -10,19 +10,17 @@ ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: Ermitteln Sie, ob Ihre Organisation als Teil des DSGVO-Plans Bezeichnungen implementiert.
-ms.openlocfilehash: 82eec50284f0aa4b0b74346c9fbbfc717dc08d07
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 4ec495d82a37742d1315673e2a7d089778cd52e4
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272250"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223534"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Entwerfen eines Klassifikationsschemas für personenbezogene Daten
 
@@ -153,7 +151,7 @@ Die wichtige Schlussfolgerung besteht darin, sicherzustellen, dass die Arbeit, d
 <td align="left"><p>KQL</p>
 <p>RegEx</p></td>
 <td align="left"><p>KQL — Approved for Public Release*</p>
-<p>RegEx — (?i)(\bApproved for Public Release \d{2}\/\d{4}\b)</p></td>
+<p>RegEx – (?i)(\bApproved for Public Release \d{2}\/\d{4}\b)</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Kundendaten</td>
@@ -167,7 +165,7 @@ Die wichtige Schlussfolgerung besteht darin, sicherzustellen, dass die Arbeit, d
 <td align="left"><p>KQL</p>
 <p>RegEx</p></td>
 <td align="left"><p>KQL — CONTOSO-9*</p>
-<p>RegEx — (\bCONTOSO-9\d{5}\b)</p></td>
+<p>RegEx – (\bCONTOSO-9\d{5}\b)</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Personaldaten – Gehaltsdaten</td>
@@ -175,7 +173,7 @@ Die wichtige Schlussfolgerung besteht darin, sicherzustellen, dass die Arbeit, d
 <td align="left"><p>KQL</p>
 <p>RegEx</p></td>
 <td align="left"><p>KQL — Contoso AND (Salary OR Compensation)</p>
-<p>RegEx — (\bCONTOSO-9\d{5}\b)</p></td>
+<p>RegEx – (\bCONTOSO-9\d{5}\b)</p></td>
 </tr>
 <tr class="even">
 <td align="left">Vertraulich</td>
@@ -191,7 +189,7 @@ Die wichtige Schlussfolgerung besteht darin, sicherzustellen, dass die Arbeit, d
 <td align="left"><p>KQL</p>
 <p>RegEx</p></td>
 <td align="left"><p>KQL — Contoso Secret OR Secret-C*</p>
-<p>RegEx — (?i)(\bContoso Secret\b)|(\bSecret-C\d{4}\b)</p></td>
+<p>RegEx – (?i)(\bContoso Secret\b)|(\bSecret-C\d{4}\b)</p></td>
 </tr>
 </tbody>
 </table>

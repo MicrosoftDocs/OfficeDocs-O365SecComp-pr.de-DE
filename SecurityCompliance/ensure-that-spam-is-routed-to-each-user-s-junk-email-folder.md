@@ -15,12 +15,12 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: Die standardmäßige Antispamaktion für EOP-Kunden ist das Verschieben von Spamnachrichten in den Junk-E-Mail-Ordner der Empfänger. Für diese Arbeit mit lokalen Postfächern müssen Sie Exchange-Transportrichtlinien auf Ihren lokalen Edge- oder Hub-Servern konfigurieren, um von EOP hinzugefügte Spam-Kopfzeilen zu erkennen. Über diese Transportregeln wird der von der SclJunkThreshold-Eigenschaft des Set-OrganizationConfig-Cmdlets verwendete SCL-Wert so festgelegt, dass Spam in den Junk-E-Mail-Ordner der einzelnen Postfächer verschoben wird.
-ms.openlocfilehash: d0ae9637ce95a1a8f0d4d241b3aef928c84ba3fa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221025"
+ms.locfileid: "30222884"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird
 

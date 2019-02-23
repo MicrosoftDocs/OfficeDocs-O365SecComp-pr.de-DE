@@ -3,110 +3,108 @@ title: Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Comp
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Verwenden Sie die Sicherheit in Office 365 & Compliance Center, um unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation zu suchen. '
-ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 'Verwenden Sie das Office 365 Security & Compliance Center, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
+ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995406"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223764"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Suchen Sie das Überwachungsprotokoll in die Sicherheit in Office 365 Compliance Center &
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center
 
-Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus dem Postfach gelöscht? Wenn also die Sicherheit der Office 365 verwendbare &amp; Compliance Center, um das unified Überwachungsprotokoll zum Anzeigen von Benutzer- und Administrator-Aktivität in Office 365-Organisation durchsuchen. Warum einer einheitlichen Audit protokolliert? Da Sie für die folgenden Typen von Benutzer- und Admin Aktivität in Office 365 suchen können:
+Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? In diesem Fall können Sie das Office 365 Security &amp; Compliance Center verwenden, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in ihrer Office 365-Organisation anzuzeigen. Warum ein einheitliches Überwachungsprotokoll? Da Sie für die folgenden Arten von Benutzer-und Administratoraktivitäten in Office 365 suchen können:
   
-- Benutzeraktivität in SharePoint Online und OneDrive für Unternehmen
+- Benutzeraktivität in SharePoint Online und OneDrive for Business
     
-- Benutzeraktivität in Exchange Online (Exchange-Postfach postfachüberwachungsprotokollierung)
+- Benutzeraktivität in Exchange Online (Exchange-postfachüberwachungsprotokollierung)
     
     > [!IMPORTANT]
-    > Mailbox Audit Logging muss aktiviert werden für jedes Benutzerpostfach bevor Benutzeraktivität in Exchange Online protokolliert werden. Weitere Informationen finden Sie unter [Aktivieren der Überwachung in Office 365 Postfach](enable-mailbox-auditing.md).
+    > Die postfachüberwachungsprotokollierung muss für jedes Benutzerpostfach aktiviert sein, bevor die Benutzeraktivität in Exchange Online protokolliert wird. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](enable-mailbox-auditing.md).
   
-- Admin-Aktivität in SharePoint Online
+- Administrator Aktivität in SharePoint Online
     
-- Admin-Aktivität in Azure Active Directory (Verzeichnisdienst für Office 365)
+- Administrator Aktivität in Azure Active Directory (der Verzeichnisdienst für Office 365)
     
-- Admin-Aktivität in Exchange Online (Exchange Admin postfachüberwachungsprotokollierung)
+- Administrator Aktivität in Exchange Online (Exchange-Administrator-Überwachungsprotokollierung)
     
-- Benutzer- und Admin-Aktivität im Schlingern
+- Benutzer-und Administrator Aktivität in Sway
     
-- eDiscovery-Aktivitäten in der Office 365-Sicherheit & Compliance Center
+- eDiscovery-Aktivitäten im Office 365 Security & Compliance Center
     
-- Benutzer- und Admin Aktivität in Power BI
+- Benutzer-und Administrator Aktivität in Power BI
     
-- Benutzer- und Admin-Aktivität in Microsoft-Teams
+- Benutzer-und Administratoraktivitäten in Microsoft Teams
 
-- Benutzer- und Admin Aktivität in Dynamics 365
+- Benutzer-und Administrator Aktivität in Dynamics 365
     
-- Benutzer- und Admin Aktivität in Yammer
+- Benutzer-und Administrator Aktivität in jammern
  
-- Benutzer- und Admin-Aktivität in Microsoft Flow
+- Benutzer-und Administratoraktivitäten in Microsoft Flow
     
-- Benutzer- und Admin-Aktivität in Microsoft Stream
+- Benutzer-und Administrator Aktivität in Microsoft Stream
 
-- Analyst und Admin-Aktivität in Microsoft Jahrestag Analytics
+- Analysten-und Administratoraktivitäten in Microsoft Workplace Analytics
     
    
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die Office 365 in das Überwachungsprotokoll lesen.
+Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen.
   
-- Sie (oder ein anderes Admin) muss zunächst auf die Protokollierung, bevor Sie beginnen können, suchen das Office 365-Überwachungsprotokoll aktivieren. Um sie zu aktivieren, klicken Sie einfach auf **die Benutzer- und Admin Aktivität Aufzeichnung starten** auf der Seite **Audit Log Suche** in das Wertpapier &amp; Compliance Center. (Wenn Sie diese Verknüpfung nicht angezeigt wird, wurde die Überwachung bereits für Ihre Organisation aktiviert.) Nachdem Sie es aktivieren, wird eine Meldung angezeigt, die besagt, das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche, in ein paar Stunden ausführen können nach Abschluss die Vorbereitung. Sie müssen nur einmal erforderlich. 
+- Sie (oder ein anderer Administrator) müssen zunächst die Überwachungsprotokollierung aktivieren, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen können. Klicken Sie zum Aktivieren auf der Seite **Überwachungsprotokoll Suche** im Security &amp; Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung für Ihre Organisation aktiviert.) Nachdem Sie es aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird, und dass Sie eine Suche in ein paar Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen dies nur einmal tun. 
     
     > [!NOTE]
-    > Wir sind während der Aktivierung der Überwachung in der Standardeinstellung. Bis zu diesem Zeitpunkt können Sie es aktivieren wie weiter oben beschrieben. 
+    > Wir sind dabei, die Überwachung standardmäßig zu aktivieren. Bis zu diesem Zeitpunkt können Sie ihn wie zuvor beschrieben aktivieren. 
   
-- Sie müssen die Rolle des Kontaktobjekts überwachen Protokolle oder Protokolle überwachen im Exchange Online um das Office 365-Überwachungsprotokoll durchsuchen zugewiesen werden. Standardmäßig werden die Verwaltung der Richtlinientreue und Organization Management Rollengruppen auf der Seite **Berechtigungen** in der Exchange-Verwaltungskonsole dieser Rollen zugewiesen. Wenn einem Benutzer die Möglichkeit, die das Überwachungsprotokoll Office 365 mit der Mindestmaß an Privilegien durchsuchen übergeben möchten, können Sie erstellen eine benutzerdefinierte Rollengruppe in Exchange Online, Kontaktobjekts überwachen Protokolle oder Protokolle überwachen-Rolle hinzufügen, und fügen Sie den Benutzer als Mitglied der neuen Rollengruppe. Weitere Informationen finden Sie unter [Manage Role Gruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" verfügen, um das Office 365-Überwachungsprotokoll durchsuchen zu können. Diese Rollen werden standardmäßig den Rollengruppen "Compliance-Verwaltung" und "Organisationsverwaltung" auf der Seite " **Berechtigungen** " im Exchange Admin Center zugewiesen. Um einem Benutzer die Möglichkeit zu geben, das Office 365-Überwachungsprotokoll mit den Mindestberechtigungen zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Überwachungsprotokolle oder Überwachungsprotokoll Rollen der Ansicht hinzufügen und dann den Benutzer als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Wenn Sie einem Benutzer die Rolle Kontaktobjekts überwachen Protokolle oder Protokolle überwachen auf der Seite **Berechtigungen** in das Wertpapier zuweisen &amp; Compliance Center, sie nicht möglich, das Office 365-Überwachungsprotokoll durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuzuweisen. Dies ist, da das zugrunde liegende-Cmdlet verwendet, um das Überwachungsprotokoll durchsuchen Exchange Online-Cmdlet ist. 
+    > Wenn Sie einem Benutzer die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite " **Berechtigungen** " im &amp; Security Compliance Center zuweisen, können Sie das Office 365-Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Dies liegt daran, dass das zugrunde liegende Cmdlet zum Durchsuchen des Überwachungsprotokolls ein Exchange Online-Cmdlet ist. 
   
-- Wenn eine überwachte Aktivität durch einen Benutzer oder Administrator ausgeführt wird, ein Audit-Datensatz erstellt und im Überwachungsprotokoll Office 365 für Ihre Organisation gespeichert. Die Zeitdauer, die ein Datensatz Audit aufbewahrt werden (und in das Überwachungsprotokoll durchsuchbar) ist, hängt davon ab Ihres Office 365-Abonnements und ausdrücklich den Typ der Lizenz, die das einen bestimmten Benutzer zugeordnet ist.
+- Wenn eine überwachte Aktivität von einem Benutzer oder Administrator ausgeführt wird, wird ein Überwachungsdatensatz generiert und im Office 365-Überwachungsprotokoll für Ihre Organisation gespeichert. Die Dauer, die ein Überwachungsdatensatz aufbewahrt wird (und im Überwachungsprotokoll durchsuchbar ist), hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist.
 
-     - **Office 365 E3** - Audit Datensätze 90 Tage lang aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb der letzten 90 Tage durchgeführt wurden.
+     - **Office 365 E3** -Überwachungsdatensätze werden für 90 Tage aufbewahrt. Das führt dazu, dass Sie das Überwachungsprotokoll nach Aktivitäten durchsuchen können, die innerhalb der letzten 90 Tage durchgeführt wurden.
 
-     - **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Dies bedeutet, dass Sie das Überwachungsprotokoll Aktivitäten suchen können, die innerhalb des letzten Jahres ausgeführt wurden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Benutzer, die eine E3/Exchange Online – Plan 1-Lizenz zugewiesen sind, und haben eine zusätzliche Lizenz für Office 365 erweiterte Compliance verfügbar.
+     - **Office 365 E5** -Überwachungsdatensätze werden für 365 Tage (ein Jahr) aufbewahrt. Das führt dazu, dass Sie das Überwachungsprotokoll nach Aktivitäten durchsuchen können, die im letzten Jahr durchgeführt wurden. Das aufBewahren von Überwachungsdatensätzen für ein Jahr ist auch für Benutzer verfügbar, denen eine E3/Exchange Online-Plan 1-Lizenz zugewiesen ist und die über eine Office 365 Advanced Compliance-Add-on-Lizenz verfügt.
 
         > [!NOTE]
-        > Die einjährige Aufbewahrungsdauer für Audit-Datensätze für E5 (oder E3 Organisationen, die erweiterte Compliance Add-on Lizenzen haben) ist derzeit nur als Teil eines Programms private Preview. In diesem Vorschauprogramm zu registrieren, um Bitte Datei eine Anforderung mit [Microsoft-Support](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) und als Beschreibung der Sie Hilfe benötigen, sind: "Langfristige Office 365 Audit Log private Preview".
+        > Die einjährige Aufbewahrungsdauer für Überwachungsdatensätze für E5-Organisationen (oder E3-Organisationen mit erweiterten Compliance-Add-on-Lizenzen) ist derzeit nur im Rahmen eines privaten Vorschau Programms verfügbar. Wenn Sie sich für dieses Vorschau Programm anmelden möchten, geben Sie eine Anforderung beim [Microsoft-Support](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) ein, und fügen Sie Folgendes als Beschreibung der benötigten Hilfe zu: "Long-term Office 365 Audit Log private Preview".
 
-- Wenn Sie die Audit Log-Suche in Office 365 für Ihre Organisation zu deaktivieren möchten, können Sie den folgenden Befehl in remote-PowerShell mit Ihrer Exchange Online-Organisation verbunden ausführen:
+- Wenn Sie die Überwachungsprotokoll Suche in Office 365 für Ihre Organisation deaktivieren möchten, können Sie den folgenden Befehl in Remote-PowerShell ausführen, die mit Ihrer Exchange Online-Organisation verbunden ist:
     
   ```
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
-    Um Audit Suche erneut aktivieren, können Sie in Exchange Online PowerShell den folgenden Befehl ausführen:
+    Wenn Sie die Überwachungs Suche erneut aktivieren möchten, können Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
     
   ```
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
   ```
 
-    Weitere Informationen finden Sie unter [Audit Log Suche in Office 365 deaktivieren](turn-audit-log-search-on-or-off.md).
+    Weitere Informationen finden Sie unter [Deaktivieren der Suche in einem Überwachungsprotokoll in Office 365](turn-audit-log-search-on-or-off.md).
     
-- Wie bereits zuvor erwähnt ist das zugrunde liegende-Cmdlet verwendet, um das Überwachungsprotokoll Durchsuchen einer Exchange Online-Cmdlet **Search-UnifiedAuditLog**. Verwenden Sie dieses Cmdlet, um das Office 365-Überwachungsprotokoll statt der Seite **Protokoll Such-** in das Wertpapier durchsuchen bedeutet &amp; Compliance Center. Sie müssen zum Ausführen dieses Cmdlet in remote-PowerShell mit Ihrer Exchange Online-Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Wie bereits erwähnt, ist das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet, das **Search-UnifiedAuditLog**ist. Daher können Sie dieses Cmdlet verwenden, um das Office 365-Überwachungsprotokoll zu durchsuchen, statt die Seite **Überwachungsprotokoll Suche** im &amp; Security Compliance Center zu verwenden. Sie müssen dieses Cmdlet in einer Remote-PowerShell ausführen, die mit Ihrer Exchange Online-Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
-- Wenn Sie Daten aus dem Office 365-Überwachungsprotokoll programmgesteuert herunterladen möchten, sollten Sie die Office 365-Verwaltungs-Aktivität API statt eines PowerShell-Skripts verwenden. Die Office 365-Verwaltungs-Aktivität-API ist eine REST-Webdienst, den Sie zum Entwickeln von Operationen, Sicherheit und Compliance-monitoring-Lösungen für Ihre Organisation verwenden können. Weitere Informationen finden Sie unter [Office 365 Management Aktivität-API-Referenz](https://go.microsoft.com/fwlink/?linkid=852309).
+- Wenn Sie Daten programmgesteuert aus dem Office 365-Überwachungsprotokoll herunterladen möchten, wird empfohlen, die Office 365-Verwaltungs Aktivitäts-API anstelle eines PowerShell-Skripts zu verwenden. Die Office 365-Verwaltungs Aktivitäts-API ist ein REST-Webdienst, den Sie zum Entwickeln von Betriebs-, Sicherheits-und Compliance-Überwachungslösungen für Ihre Organisation verwenden können. Weitere Informationen finden Sie unter [Office 365 Management Activity API Reference](https://go.microsoft.com/fwlink/?linkid=852309).
     
-- Es kann bis zu 30 Minuten dauern oder von 24 Stunden nach Ereignis tritt ein, die der entsprechenden Überwachungsprotokolleintrag in den Suchergebnissen angezeigt werden. Die folgende Tabelle zeigt den Zeitaufwand für die verschiedenen Dienste in Office 365.
+- Es kann bis zu 30 Minuten oder bis zu 24 Stunden dauern, bis ein Ereignis eintritt, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. Die folgende Tabelle zeigt die Zeit, die für die verschiedenen Dienste in Office 365 benötigt wird.
     
     |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
     |:-----|:-----|:-----|
-    |Erweiterte Schutz und Bedrohungsanalyse  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-    |Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-    |Azure Active Directory (Admin Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-    |Azure Active Directory (Benutzer Anmeldung Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-    |Verhinderung von Datenverlust  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Advanced Threat Protection und Threat Intelligence  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory (Benutzeranmelde Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory (admin-Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Verhinderung von Datenverlust  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       <br/>| |
     |Dynamics 365 CRM <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |eDiscovery  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -114,632 +112,632 @@ Stellen Sie sicher, dass die folgenden Elemente, bevor Sie beginnen, suchen die 
     |Microsoft Forms  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- Azure Active Directory (AD Azure) ist der Verzeichnisdienst für Office 365. Unified Überwachungsprotokoll enthält Benutzer, Gruppe, Anwendung, Domäne und Directory Aktivitäten ausgeführt in Office 365 Administrationscenter oder in der in Azure-Verwaltungsportal. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory Bericht Überwachungsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
+- Azure Active Directory (Azure AD) ist der Verzeichnisdienst für Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen-und Verzeichnis Aktivitäten, die im Office 365 Admin Center oder im Azure-Verwaltungsportal durchgeführt werden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsbericht Ereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
-- Exchange Online Überwachungsprotokolle bestehen aus zwei Arten von Ereignissen: Exchange Admin-Ereignisse (von Administratoren ausgeführten Aktionen) und Postfach-Ereignisse (von Benutzern für Postfächer ausgeführte Aktionen). Beachten Sie, dass die Überwachung von Postfächern in der Standardeinstellung nicht aktiviert ist. Es muss für jedes Benutzerpostfach aktivieren, bevor der Postfach-Ereignisse im Überwachungsprotokoll Office 365 für durchsucht werden können. Weitere Informationen zur Überwachung von Postfächern und die postfachüberwachung für Aktionen, die angemeldet sind, finden Sie unter [Überwachung in Office 365 Postfach zu aktivieren](enable-mailbox-auditing.md).
+- Exchange Online-Überwachungsprotokolle bestehen aus zwei Arten von Ereignissen: Exchange-Verwaltungsereignisse (von Administratoren ausgeführte Aktionen) und Post Fach Ereignisse (Aktionen, die von Benutzern in Postfächern ausgeführt werden). Beachten Sie, dass die postfachüberwachung nicht standardmäßig aktiviert ist. Sie muss für jedes Benutzerpostfach aktiviert werden, bevor nach Post Fach Ereignissen im Office 365-Überwachungsprotokoll gesucht werden kann. Weitere Informationen zur postfachüberwachung und zu den protokollierten Post Fach Überwachungsaktionen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](enable-mailbox-auditing.md).
     
-- Überwachungsprotokollierung für Power BI ist nicht standardmäßig aktiviert. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Eine Anleitung finden Sie im Abschnitt "Überwachungsprotokolle" [Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)-Verwaltungsportal.
+- Die Überwachungsprotokollierung für Power BI ist nicht standardmäßig aktiviert. Um nach Power BI-Aktivitäten im Office 365-Überwachungsprotokoll zu suchen, müssen Sie die Überwachung im Power BI Admin-Portal aktivieren. Anweisungen finden Sie im Abschnitt "Überwachungsprotokolle" im [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
 ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
 
-Hier ist der Prozess für die Suche im Überwachungsprotokolls in Office 365.
+Hier finden Sie den Prozess zum Durchsuchen des Überwachungsprotokolls in Office 365.
   
-[Schritt 1: Führen Sie eine Audit Log-Suche](#step-1-run-an-audit-log-search)
+[Schritt 1: Ausführen einer Überwachungsprotokoll Suche](#step-1-run-an-audit-log-search)
   
 [Schritt 2: Anzeigen der Suchergebnisse](#step-2-view-the-search-results)
 
-[Schritt 3: Filtern von Suchergebnissen](#step-3-filter-the-search-results)
+[Schritt 3: Filtern der Suchergebnisse](#step-3-filter-the-search-results)
 
-[Schritt 4: Exportieren Sie die Suchergebnisse in eine Datei.](#step-4-export-the-search-results-to-a-file)
+[Schritt 4: Exportieren der Suchergebnisse in eine Datei](#step-4-export-the-search-results-to-a-file)
   
-### <a name="step-1-run-an-audit-log-search"></a>Schritt 1: Führen Sie eine Audit Log-Suche
+### <a name="step-1-run-an-audit-log-search"></a>Schritt 1: Ausführen einer Überwachungsprotokoll Suche
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
-    > Verwenden eine private Browsersitzung (nicht regulären Sitzung) greifen Sie auf die Office 365-Sicherheit &amp; Compliance Center, da dies die Anmeldeinformationen verhindert wird, die Sie derzeit mit angemeldet sind verwendet werden. Um eine Sitzung InPrivate-Browsen in Internet Explorer oder Microsoft Edge zu öffnen, drücken Sie STRG + UMSCHALT + P. Um eine private Browsersitzung Google Chrome (als ein incognito Fenster bezeichnet) zu öffnen, drücken Sie STRG + UMSCHALT + N. 
+    > Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Office &amp; 365 Security Compliance Center, da dadurch die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, nicht verwendet werden. Drücken Sie STRG + UMSCHALT + P, um eine inPrivate-Browsing-Sitzung in Internet Explorer oder Microsoft Edge zu öffnen. Drücken Sie STRG + UMSCHALT + N, um eine private Browsersitzung in Google Chrome (als inkognito-Fenster bezeichnet) zu öffnen. 
   
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Im linken Bereich der Sicherheit &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung**, und klicken Sie auf **Audit Log suchen**.
+3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Such &amp; Prüfung**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
     
-    **Audit Log** Suchseite wird angezeigt. 
+    Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
     
-    ![Konfigurieren von Kriterien, und klicken Sie dann auf Suchen, um den Bericht ausführen](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Konfigurieren Sie Kriterien, und klicken Sie dann auf suchen, um Bericht auszuführen.](media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
     > [!NOTE]
-    > Sie müssen überwachungsprotokollierung vor dem Ausführen einer Audit Log-Suche zum ersten Mal einschalten. Wenn die Verknüpfung **Benutzer- und Admin Aktivität Aufzeichnung starten** angezeigt wird, klicken Sie auf, um die Überwachung einzuschalten. Wenn Sie diese Verknüpfung nicht angezeigt wird, wurde die Überwachung bereits für Ihre Organisation aktiviert. 
+    > Sie müssen zuerst die Überwachungsprotokollierung aktivieren, bevor Sie eine Überwachungsprotokoll Suche ausführen können. Wenn der Link **Benutzer-und Administrator Aktivität starten** angezeigt wird, klicken Sie darauf, um die Überwachung zu aktivieren. Wenn dieser Link nicht angezeigt wird, wurde die Überwachung für Ihre Organisation aktiviert. 
   
 4. Konfigurieren Sie die folgenden Suchkriterien:
     
-    a. **Aktivitäten** klicken Sie auf die Dropdown-Liste die Aktivitäten angezeigt werden sollen, denen Sie für suchen können. Benutzer- und Admin Aktivitäten sind an eine Gruppe von Aktivitäten in organisiert. Sie können bestimmte Aktivitäten auswählen, oder Sie können den Gruppennamen Aktivität alle Aktivitäten in der Gruppe auswählen auf. Klicken Sie auf einen ausgewählten Aktivität zum Aufheben der Auswahl. Nachdem Sie die Suche ausführen werden nur die Überwachungsprotokolleinträge für den ausgewählten Aktivitäten angezeigt. **Ergebnisse für alle Aktivitäten anzeigen** auswählen zeigt die Ergebnisse für alle Aktivitäten, die von den ausgewählten Benutzer oder die Gruppe von Benutzern durchgeführt. 
+    a. **Aktivitäten** klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Benutzer-und Administratoraktivitäten sind in Gruppen verwandter Aktivitäten organisiert. Sie können bestimmte Aktivitäten auswählen oder auf den Namen der Aktivitätsgruppe klicken, um alle Aktivitäten in der Gruppe auszuwählen. Sie können auch auf eine ausgewählte Aktivität klicken, um die Auswahl zu löschen. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden die Ergebnisse für alle Aktivitäten angezeigt, die vom ausgewählten Benutzer oder einer Benutzergruppe ausgeführt werden. 
     
-    Mehr als 100 Benutzer und Admin Aktivitäten werden im Überwachungsprotokoll Office 365 protokolliert. Klicken Sie auf der Registerkarte **Löschvorgänge Aktivitäten** im Thema dieses Artikels finden in den Beschreibungen jeder Aktivität in jeder der verschiedenen Office 365-Dienste. 
+    Mehr als 100 Benutzer-und Administratoraktivitäten werden im Office 365-Überwachungsprotokoll protokolliert. Klicken Sie zum Thema dieses Artikels auf die Registerkarte "über **wachte Aktivitäten** ", um die Beschreibungen jeder Aktivität in den verschiedenen Office 365-Diensten anzuzeigen. 
     
-    b. **Startdatum** und **Enddatum** den letzten sieben Tagen sind standardmäßig aktiviert. Wählen Sie einen Bereich für Datum und Uhrzeit der Ereignisse angezeigt, die innerhalb dieses Zeitraums aufgetreten sind. Datum und Uhrzeit werden in koordinierter Weltzeit (UTC) Format angezeigt. Der maximale Zeitraum, den Sie angeben können, ist 90 Tage. Ein Fehler wird angezeigt, wenn des ausgewählten Datumsbereichs älter als 90 Tage ist. 
-    
-    > [!TIP]
-    > Wenn Sie den maximale Datumsbereich der 90 Tage verwenden, wählen Sie die aktuelle Zeit für das **Startdatum**an. Andernfalls erhalten Sie eine Fehlermeldung ausgegeben, die das Startdatum einer älteren Version als das Enddatum ist. Wenn Sie innerhalb der letzten 90 Tage Überwachung aktiviert haben, kann nicht der maximalen Zeitraum vor dem Datum gestartet, die Überwachung aktiviert wurde. 
-  
-    c-Ergebnis für **Benutzer** klicken Sie in dieses Feld ein und wählen Sie einen oder mehrere Benutzer, um die Suche angezeigt werden. Die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten, die von den Benutzern, die Sie in dieses Feld auswählen, werden in der Liste der Ergebnisse angezeigt. Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Benutzer (und Dienstkonten) in Ihrer Organisation. 
-    
-    d. **Datei, Ordner, oder** Geben Sie einige oder alle ein File- oder Folder Name für die Suche nach Aktivitäten im Zusammenhang mit der Datei des Ordners, der das angegebene Schlüsselwort enthält. Sie können auch eine URL einer Datei oder eines Ordners angeben. Enthalten Sie Wenn Sie eine URL verwenden, sicherzustellen, dass der Typ der vollständige URL-Pfad sein oder wenn Sie nur einen Teil der URL eingeben nicht keine Sonderzeichen oder Leerzeichen. 
-    
-    Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Dateien und Ordner in Ihrer Organisation.
+    b. **Start Datum** und **Enddatum** die letzten sieben Tage sind standardmäßig ausgewählt. Wählen Sie einen Datums-und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Datum und Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Zeitraum, den Sie angeben können, beträgt 90 Tage. Wenn der ausgewählte Datumszeitraum größer als 90 Tage ist, wird ein Fehler angezeigt. 
     
     > [!TIP]
-    > Wenn Sie für alle Aktivitäten im Zusammenhang mit einer **Website**suchen, fügen Sie das Platzhalterzeichen (\*) nach der URL, die alle Einträge für diese Website; zurückgeben beispielsweise **"https://contoso-my.sharepoint.com/personal/*"**.
+    > Wenn Sie den maximalen Datumswert von 90 Tagen verwenden, wählen Sie die aktuelle Uhrzeit für das **Start Datum**aus. Andernfalls erhalten Sie eine Fehlermeldung, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der maximale Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde. 
+  
+    c. **Benutzer** klicken in dieses Feld und wählen dann einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Die Überwachungsprotokolleinträge für die ausgewählte Aktivität, die von den Benutzern, die Sie in diesem Feld ausgewählt haben, ausgeführt werden, werden in der Ergebnisliste angezeigt. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation zurückzugeben. 
     
-5. Klicken Sie auf **Suche** zum Ausführen der Suche mit den Suchkriterien. 
+    d. **Datei, Ordner oder Website** geben Sie einen oder alle Datei-oder Ordnernamen ein, um nach Aktivitäten im Zusammenhang mit der Ordner Datei zu suchen, die das angegebene Schlüsselwort enthält. Sie können auch eine URL einer Datei oder eines Ordners angeben. Wenn Sie eine URL verwenden, stellen Sie sicher, dass Sie den vollständigen URL-Pfad eingeben, oder geben Sie nur einen Teil der URL ein, und schließen Sie keine Sonderzeichen oder Leerzeichen ein. 
     
-    Die Suchergebnisse werden geladen, und nach einigen Augenblicken sie unter **Ergebnisse**angezeigt werden. Wenn die Suche abgeschlossen ist, wird die Anzahl der gefundenen Ergebnisse angezeigt. Beachten Sie, dass maximal 5.000 Ereignisse in Schritten von 150 Ereignisse im **Ergebnisbereich** angezeigt wird. Wenn mehr als 5.000 Ereignisse den Suchkriterien entsprechen, werden die neuesten 5.000 Ereignisse angezeigt. 
+    Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben.
     
-    ![Die Anzahl der Ergebnisse werden angezeigt, nachdem die Suche abgeschlossen ist](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
+    > [!TIP]
+    > Wenn Sie nach allen Aktivitäten im Zusammenhang mit einer **Website**suchen, fügen Sie das Platz\*Halter Symbol () nach der URL hinzu, um alle Einträge für diese Website zurückzugeben. Beispiel: **https://contoso-my.sharepoint.com/personal/"*"**.
+    
+5. Klicken Sie auf **Suchen** , um die Suche mit Ihren Suchkriterien auszuführen. 
+    
+    Die Suchergebnisse werden geladen, und nach ein paar Augenblicken werden Sie unter **Ergebnisse**angezeigt. Wenn die Suche abgeschlossen ist, wird die Anzahl der gefundenen Ergebnisse angezeigt. Beachten Sie, dass im **Ergebnis** Bereich in schritten von 150 ereignissen maximal 5.000 Ereignisse angezeigt werden. Wenn mehr als 5.000 Ereignisse den Suchkriterien entsprechen, werden die neuesten 5.000-Ereignisse angezeigt. 
+    
+    ![Die Anzahl der Ergebnisse wird angezeigt, nachdem die Suche abgeschlossen ist.](media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
   
   
-#### <a name="tips-for-searching-the-audit-log"></a>Tipps für die Suche im Überwachungsprotokolls
+#### <a name="tips-for-searching-the-audit-log"></a>Tipps zum Durchsuchen des Überwachungsprotokolls
 
-- Sie können bestimmte Aktivitäten zu suchenden, indem Sie auf den Namen der Aktivität auswählen. Oder Sie können für alle Aktivitäten in einer Gruppe (beispielsweise **Datei- und Aktivitäten**), indem Sie auf den Namen der Gruppe suchen. Wenn eine Aktivität ausgewählt ist, können Sie darauf, um die Auswahl Abbrechen klicken. Das Suchfeld können auch die Aktivitäten anzuzeigen, die das Schlüsselwort enthalten, das Sie eingeben.
+- Sie können bestimmte Aktivitäten auswählen, nach denen Sie suchen möchten, indem Sie auf den Aktivitätsnamen klicken. Sie können auch nach allen Aktivitäten in einer Gruppe (beispielsweise **Datei-und Ordner Aktivitäten**) suchen, indem Sie auf den Gruppennamen klicken. Wenn eine Aktivität ausgewählt ist, können Sie darauf klicken, um die Auswahl abzubrechen. Sie können auch das Suchfeld verwenden, um die Aktivitäten anzuzeigen, die das von Ihnen eingegebene Stichwort enthalten.
     
-    ![Klicken Sie auf Aktivität Gruppennamen, wählen Sie alle Aktivitäten](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
+    ![Klicken Sie auf Aktivitätsgruppen Name, um alle Aktivitäten auszuwählen.](media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
   
-- Sie müssen **Ergebnisse für alle Aktivitäten anzeigen** wählen Sie in der Liste **Aktivitäten** Ereignisse aus dem Exchange Admin-Überwachungsprotokoll angezeigt. Ereignisse aus dieser Überwachungsprotokoll einen Cmdlet-Namen (beispielsweise " **Set-Mailbox** ") in der **Aktivität** -Spalte in den Ergebnissen angezeigt. Weitere Informationen klicken Sie auf der Registerkarte **Aktivitäten Löschvorgänge** in diesem Thema aus, und klicken Sie dann auf **Exchange-Admin-Aktivitäten**.
+- Sie müssen in der Liste **Aktivitäten** die Option **Ergebnisse für alle Aktivitäten anzeigen** auswählen, um Ereignisse aus dem Exchange-administratorüberwachungsprotokoll anzuzeigen. Ereignisse in diesem Überwachungsprotokoll zeigen einen Cmdlet-Namen (beispielsweise **Set-Mailbox** ) in der Spalte **Activity** in den Ergebnissen an. Weitere Informationen finden Sie, wenn Sie auf die Registerkarte über **wachte Aktivitäten** in diesem Thema klicken und dann auf **Exchange-Verwaltungsaktivitäten**klicken.
     
-    In ähnlicher Weise werden einige auditing Aktivitäten, die nicht über ein entsprechendes Element in der Liste **Aktivitäten** verfügen. Wenn Sie den Namen des Vorgangs für das Rollout kennen, können Sie für alle Aktivitäten zu suchen und dann die Ergebnisse filtern, indem Sie im Feld für die **Aktivität** Spalte den Namen des Vorgangs eingeben. Finden Sie unter [Schritt 3: Filtern von Suchergebnissen](#step-3-filter-the-search-results) Weitere Informationen zum Filtern der Ergebnisse. 
+    Entsprechend gibt es einige Überwachungsaktivitäten, die kein entsprechendes Element in der Liste **Aktivitäten** enthalten. Wenn Sie den Namen des Vorgangs für diese Aktivitäten kennen, können Sie nach allen Aktivitäten suchen und dann die Ergebnisse filtern, indem Sie den Namen des Vorgangs in das Feld für die Spalte **Aktivität** eingeben. Weitere Informationen zum Filtern der Ergebnisse finden Sie unter [Schritt 3: Filtern der Suchergebnisse](#step-3-filter-the-search-results) . 
     
-- Klicken Sie auf **Deaktivieren** , um die aktuellen Suchkriterien zu löschen. Der Datumsbereich gibt den letzten sieben Tagen wird der Standardwert zurück. Sie können auch **alle zum Anzeigen der Ergebnisse für alle Aktivitäten löschen** , um alle ausgewählten Aktivitäten Abbrechen klicken. 
+- Klicken Sie auf **Löschen** , um die aktuellen Suchkriterien zu löschen. Der Datumsbereiche gibt den Standardwert der letzten sieben Tage zurück. Sie können auch auf **Alle löschen klicken, um die Ergebnisse für alle Aktivitäten anzuzeigen** , um alle ausgewählten Aktivitäten abzubrechen. 
     
-- Wenn 5000 Ergebnisse gefunden werden, können Sie wahrscheinlich davon ausgehen, dass es sind mehr als 5.000 Ereignisse, die die Suchkriterien erfüllen. Können Sie die Suchkriterien verfeinern und führen Sie die Suche zum Zurückgeben von Ergebnissen aus weniger erneut aus, oder alle der Suchergebnisse zu exportieren, indem Sie die **Ergebnisse exportieren** auswählen \> **alle Ergebnisse herunterladen**.
+- Wenn 5.000 Ergebnisse gefunden werden, können Sie wahrscheinlich davon ausgehen, dass es mehr als 5.000 Ereignisse gibt, die den Suchkriterien entsprechen. Sie können entweder die Suchkriterien verfeinern und die Suche erneut ausführen, um weniger Ergebnisse zurückzugeben, oder Sie können alle Suchergebnisse exportieren, indem Sie die Option **Ergebnisse** \> **herunterladen alle Ergebnisse**auswählen.
 
   
 ### <a name="step-2-view-the-search-results"></a>Schritt 2: Anzeigen der Suchergebnisse
 
-Die Ergebnisse einer Audit Log Suche werden auf der Seite **Protokoll Such-** unter **Ergebnisse** angezeigt. Wie bereits erwähnt, maximal 5.000 (neu) Ereignisse in Schritten von 150 Ereignisse angezeigt werden. Zum Anzeigen von mehr Ereignisse können Sie im **Ergebnisbereich** die Bildlaufleiste oder drücken Sie **UMSCHALT + Ende** der nächsten 150 Ereignisse angezeigt. 
+Die Ergebnisse einer Überwachungsprotokoll Suche werden unter **Ergebnisse** auf der Seite **Überwachungsprotokoll Suche** angezeigt. Wie bereits erwähnt, werden maximal 5.000 (neueste) Ereignisse in Schritten von 150 Ereignissen angezeigt. Um weitere Ereignisse anzuzeigen, können Sie die Bildlaufleiste im **Ergebnis** Bereich verwenden, oder Sie können **Umschalt + Ende** drücken, um die nächsten 150-Ereignisse anzuzeigen. 
   
-Die Ergebnisse enthalten die folgende Informationen zu jedem Ereignis, das von der Suche zurückgegebenen.
+Die Ergebnisse enthalten die folgenden Informationen zu jedem von der Suche zurückgegebenen Ereignis.
   
-- **Datum:** Datum und Uhrzeit (in UTC-Format), die das Ereignis auftrat. 
+- **Date:** Das Datum und die Uhrzeit (im UTC-Format), als das Ereignis aufgetreten ist. 
     
-- **IP-Adresse:** Die IP-Adresse des Geräts, das verwendet wurde, wenn die Aktivität protokolliert wurde. Die IP-Adresse wird in ein IPv4 oder IPv6-Adressformat angezeigt. 
+- **IP-Adresse:** Die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird in einem IPv4-oder IPv6-Adressformat angezeigt. 
     
-- **Benutzer:** Der Benutzer (oder ein Dienstkonto), die die Aktion, die das Ereignis ausgelöst hat ausgeführt. 
+- **Benutzer:** Der Benutzer (oder das Dienstkonto), der die Aktion ausgeführt hat, die das Ereignis ausgelöst hat. 
     
-- **Aktivität:** Die Aktivitäten des Benutzers. Dieser Wert entspricht der Aktivitäten, die Sie in der Dropdownliste **Aktivitäten** ausgewählt haben. Für ein Ereignis aus dem Exchange Admin-Überwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet. 
+- **Aktivität:** Die vom Benutzer ausgeführte Aktivität. Dieser Wert entspricht den Aktivitäten, die Sie in der Dropdownliste **Aktivitäten** ausgewählt haben. Bei einem Ereignis aus dem Exchange-administratorüberwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet. 
     
-- **Element:** Das Objekt, das erstellt oder als Ergebnis der entsprechenden Aktivität geändert wurde. Die Datei, die angezeigt oder geändert wurde oder das Benutzerkonto, das aktualisiert wurde. Nicht alle Aktivitäten haben einen Wert in dieser Spalte. 
+- **Element:** Das Objekt, das als Ergebnis der entsprechenden Aktivität erstellt oder geändert wurde. Beispielsweise die Datei, die angezeigt oder geändert wurde, oder das Benutzerkonto, das aktualisiert wurde. Nicht alle Aktivitäten haben einen Wert in dieser Spalte. 
     
-- **Detail:** Weitere Informationen zur Aktivität. In diesem Fall müssen nicht alle Aktivitäten einen Wert. 
+- **Detail:** Weitere Details zu einer Aktivität. Auch hier haben nicht alle Aktivitäten einen Wert. 
     
 > [!TIP]
-> Klicken Sie auf eine Spaltenüberschrift unter **Ergebnisse** zum Sortieren der Ergebnisse. Sie können die Ergebnisse von A bis Z oder Z sortieren, um A. Klicken Sie auf der **Date** -Header zum Sortieren der Ergebnisse vom ältesten zu neuesten oder Absteigend. 
+> Klicken Sie unter **Ergebnisse** auf eine Spaltenüberschrift, um die Ergebnisse zu sortieren. Sie können die Ergebnisse von A bis Z oder Z in A sortieren. Klicken Sie auf die Kopfzeile **Datum** , um die Ergebnisse von der ältesten nach neuesten oder neuesten in die älteste zu sortieren. 
   
-#### <a name="view-the-details-for-a-specific-event"></a>Zeigen Sie die Details für ein bestimmtes Ereignis
+#### <a name="view-the-details-for-a-specific-event"></a>Anzeigen der Details für ein bestimmtes Ereignis
 
-Sie können weitere Details zu einem Ereignis anzeigen, indem Sie auf der Ereignisprotokolleintrag in der Liste der Suchergebnisse. Eine Seite **Details** angezeigt, die die detaillierten Eigenschaften aus dem Ereignisdatensatz enthält. Die Eigenschaften, die angezeigt werden, abhängig von der Office 365-Dienst, in dem das Ereignis tritt auf, ab. Um diese Details anzuzeigen, klicken Sie auf **Weitere Informationen**. Beschreibungen finden Sie unter [Detailangaben zu den Eigenschaften in der Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
+Sie können weitere Details zu einem Ereignis anzeigen, indem Sie in der Liste der Suchergebnisse auf den Ereigniseintrag klicken. Es wird eine **Detail** Seite mit detaillierten Eigenschaften aus dem Ereignisdatensatz angezeigt. Welche Eigenschaften angezeigt werden, hängt vom Office 365-Dienst ab, in dem das Ereignis auftritt. Klicken Sie auf **Weitere Informationen**, um diese Details anzuzeigen. Beschreibungen finden Sie unter [detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
   
-![Klicken Sie auf Weitere Informationen zum Anzeigen der detaillierten Eigenschaften des Datensatzes Audit log](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+![Klicken Sie auf Weitere Informationen, um die detaillierten Eigenschaften des Überwachungsprotokoll-Ereignisdatensatzes anzuzeigen.](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
   
-### <a name="step-3-filter-the-search-results"></a>Schritt 3: Filtern von Suchergebnissen
+### <a name="step-3-filter-the-search-results"></a>Schritt 3: Filtern der Suchergebnisse
 
-Zusätzlich zum Sortieren, können Sie auch die Ergebnisse einer Audit Log Suche filtern. Dies ist ein hervorragendes Feature, mit denen Sie die Ergebnisse für einen bestimmten Benutzer oder eine Aktivität schnell filtern kann. Sie können zunächst eine Breite Suche erstellen und dann schnell Filtern der Ergebnisse, um bestimmte Ereignisse finden Sie unter. Klicken Sie dann können Sie die Suchkriterien eingrenzen und führen Sie die Suche zum Zurückgeben von einer kleineren, kürzeren Gruppe von Ergebnissen erneut aus.
+Zusätzlich zur Sortierung können Sie auch die Ergebnisse einer Überwachungsprotokoll Suche filtern. Dies ist eine hervorragende Funktion, mit der Sie die Ergebnisse für einen bestimmten Benutzer oder eine bestimmte Aktivität schnell filtern können. Sie können zunächst eine breite Suche erstellen und dann schnell die Ergebnisse filtern, um bestimmte Ereignisse anzuzeigen. Dann können Sie die Suchkriterien einschränken und die Suche erneut ausführen, um eine kleinere, übersichtlichere Ergebnismenge zurückzugeben.
   
-Um die Ergebnisse zu filtern:
+So filtern Sie die Ergebnisse
   
-1. Führen Sie eine Audit Log-Suche.
+1. Führen Sie eine Überwachungsprotokoll Suche aus.
     
 2. Wenn die Ergebnisse angezeigt werden, klicken Sie auf **Ergebnisse filtern**.
     
-    Schlüsselwort-Felder werden unter jeder Spaltenüberschrift angezeigt.
+    Stichwort Felder werden unter jeder Spaltenüberschrift angezeigt.
     
-3. Klicken Sie auf eines der Felder unter eine Spaltenüberschrift, und geben Sie ein Wort oder Ausdruck, je nach der Spalte, der Sie filtern möchten. Die Ergebnisse werden dynamisch textlichen, um die Ereignisse anzuzeigen, die den Filter entsprechen.
+3. Klicken Sie auf eines der Felder unter einer Spaltenüberschrift, und geben Sie je nach der Spalte, nach der gefiltert werden soll, ein Wort oder einen Ausdruck ein. Die Ergebnisse werden dynamisch angepasst, um die Ereignisse anzuzeigen, die dem Filter entsprechen.
     
-    ![Geben Sie ein Wort im angegebenen Ereignisse angezeigt, die dem Filter entsprechen](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
+    ![Geben Sie ein Wort in Filter ein, um die Ereignisse anzuzeigen, die dem Filter entsprechen.](media/542dc323-a997-402c-934b-cc5e218e50bc.png)
   
-4. Um einen Filter zu löschen, klicken Sie auf das **X** im Filterfeld, oder klicken Sie einfach auf **Filtern ausblenden**.
+4. Wenn Sie einen Filter löschen möchten, klicken Sie im Feld Filter auf das **X** , oder klicken Sie einfach auf **Filterung ausblenden**.
     
 > [!TIP]
-> Geben Sie zum Anzeigen von Ereignissen aus dem Exchange Admin-Überwachungsprotokoll ein **-** (Strich) im Filterfeld **Aktivität** . Dadurch wird die Cmdlet-Namen angezeigt, die in der Spalte **Aktivität** für Exchange Admin-Ereignisse angezeigt werden. Anschließend können Sie die Cmdlet-Namen in alphabetischer Reihenfolge sortiert werden. 
+> Zum Anzeigen von Ereignissen aus dem Exchange-Administrator-Überwachungsprotokoll **-** geben Sie im Feld **Aktivitäts** Filter einen (Strich) ein. Dadurch werden die Cmdlet-Namen angezeigt, die in der Spalte **Aktivität** für Exchange-Verwaltungsereignisse angezeigt werden. Anschließend können Sie die Cmdlet-Namen in alphabetischer Reihenfolge sortieren. 
 
-### <a name="step-4-export-the-search-results-to-a-file"></a>Schritt 4: Exportieren Sie die Suchergebnisse in eine Datei.
+### <a name="step-4-export-the-search-results-to-a-file"></a>Schritt 4: Exportieren der Suchergebnisse in eine Datei
 
-Sie können die Ergebnisse einer Audit Log-Suche in einer durch Trennzeichen getrennten Werten (CSV)-Datei auf Ihrem lokalen Computer exportieren. Sie können diese Datei in Microsoft Excel öffnen und verwenden Features wie beispielsweise die Suche, sortieren, Filtern und Aufteilen einer einzelnen Spalteninhalts (die Zellen mit mehreren Werte enthält) in mehreren Spalten.
+Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei (Comma Separated Value) auf Ihrem lokalen Computer exportieren. Sie können diese Datei in Microsoft Excel öffnen und Features wie suchen, sortieren, Filtern und Aufteilen einer einzelnen Spalte (die mehrwertige Zellen enthält) in mehrere Spalten verwenden.
   
-1. Führen Sie eine Audit Log-Suche, und Überarbeiten Sie die Suchkriterien, bis Sie die gewünschten Ergebnisse haben.
+1. Führen Sie eine Überwachungsprotokoll Suche aus, und überprüfen Sie dann die Suchkriterien, bis Sie die gewünschten Ergebnisse erhalten haben.
     
 2. Klicken Sie auf **Ergebnisse exportieren** , und wählen Sie eine der folgenden Optionen aus: 
     
-  - **Geladenen Ergebnisse speichern** Wählen Sie diese Option, um nur die Einträge zu exportieren, der unter **Ergebnisse** angezeigt werden, auf die ** Audit Log Suche ** Seite. Die CSV-Datei, die heruntergeladen wird enthält dieselben Spalten (und Daten) angezeigt, auf der Seite (Datum, Benutzer, Aktivität, Artikel und Details). Eine weitere Spalte ( **Weitere**Namens) ist in der CSV-Datei enthalten, die Informationen aus dem Überwachungseintrag Protokoll enthält. Da Sie die gleichen Ergebnisse exportieren, die geladen (und angezeigt werden können) sind auf der Seite **Audit Log Suche** maximal 5.000 Einträge werden exportiert. 
+  - **Geladene Ergebnisse speichern** Wählen Sie diese Option aus, um nur die Einträge zu exportieren, die unter **Ergebnisse** auf der Seite * * Überwachungsprotokoll Suche * * angezeigt werden. Die heruntergeladene CSV-Datei enthält die gleichen Spalten (und Daten), die auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). In der CSV-Datei ist eine zusätzliche Spalte mit dem Namen **more**enthalten, die weitere Informationen aus dem Überwachungsprotokolleintrag enthält. Da Sie die gleichen Ergebnisse exportieren, die auf der Seite **Überwachungsprotokoll Suche** geladen (und angezeigt) werden, werden maximal 5.000 Einträge exportiert. 
     
-  - **Laden Sie alle Ergebnisse** Wählen Sie diese Option, um alle Einträge aus dem Office 365-Überwachungsprotokoll, die die Suchkriterien erfüllen exportieren. Wählen Sie für eine große Gruppe von Suchergebnissen diese Option, um alle Einträge aus dem Überwachungsprotokoll zusätzlich zu den 5000 Ergebnisse herunterladen, die auf der Seite **Protokoll Such-** angezeigt werden kann. Diese Option wird die Rohdaten in eine CSV-Datei aus dem Überwachungsprotokoll herunterladen und enthält zusätzliche Informationen aus dem Überwachungseintrag melden Sie sich in einer Spalte mit dem Namen **AuditData**. Länger kann dauern, die Datei herunterzuladen, wenn Sie diese Exportoption auswählen, da die Datei wesentlich größer als der sein kann, die heruntergeladen wird, wenn Sie die Option andere ausgewählt.
+  - **Alle Ergebnisse herunterladen** Wählen Sie diese Option aus, um alle Einträge aus dem Office 365-Überwachungsprotokoll zu exportieren, die den Suchkriterien entsprechen. Wählen Sie diese Option aus, um alle Einträge aus dem Überwachungsprotokoll neben den 5.000-Ergebnissen herunterzuladen, die auf der Seite für die **Überwachungsprotokoll Suche** angezeigt werden können. Mit dieser Option werden die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen und zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte mit dem Namen **Auditdata**. Es kann länger dauern, bis Sie die Datei herunterladen, wenn Sie diese Exportoption wählen, da die Datei viel größer sein kann als diejenige, die heruntergeladen wird, wenn Sie die Option andere auswählen.
     
     > [!IMPORTANT]
-    > Sie können maximal 50.000 Einträge aus einer einzigen Audit Log-Suche in einer CSV-Datei herunterladen. Wenn 50.000 Einträge in der CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es sind mehr als 50.000 Ereignisse, die die Suchkriterien erfüllen. Wenn mehr als diese Grenze exportieren möchten, verwenden Sie einen Datumsbereich zur Reduzierung der Anzahl von Überwachungsprotokolleinträgen. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereiche für mehr als 50.000 Einträge exportieren durchgeführt werden. 
+    > Sie können maximal 50.000 Einträge in eine CSV-Datei aus einer einzelnen Überwachungsprotokoll Suche herunterladen. Wenn 50.000-Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es mehr als 50.000 Ereignisse gibt, die die Suchkriterien erfüllen. Wenn Sie mehr als diesen Grenzwert exportieren möchten, verwenden Sie einen Datumsbereich, um die Anzahl der Überwachungsprotokolleinträge zu reduzieren. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereichen ausführen, um mehr als 50.000 Einträge zu exportieren. 
   
-3. Nachdem Sie eine Exportoption ausgewählt haben, wird eine Meldung am unteren Rand des Fensters angezeigt, die aufgefordert, öffnen Sie die CSV-Datei, speichern Sie die Downloads-Ordner oder in einen bestimmten Ordner zu speichern.
+3. Nachdem Sie eine Exportoption ausgewählt haben, wird unten im Fenster eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen, im Ordner "Downloads" zu speichern oder in einem bestimmten Ordner zu speichern.
 
   
-#### <a name="more-information-about-exporting-audit-log-search-results"></a>Weitere Informationen zum Exportieren von Audit Log-Suchergebnisse
+#### <a name="more-information-about-exporting-audit-log-search-results"></a>Weitere Informationen zum Exportieren von Überwachungsprotokoll-Suchergebnissen
 
-- Die Option **alle Ergebnisse laden** lädt die Rohdaten aus der Office 365-Überwachungsprotokoll in eine CSV-Datei. Diese Datei enthält verschiedene Spaltennamen (CreationDate, Benutzer-IDs, Vorgang, AuditData) als die Datei, die heruntergeladen wird, wenn Sie die Option **Speichern geladenen Ergebnisse** auswählen. Die Werte in zwei verschiedenen CSV-Dateien für die gleiche Aktivität können auch anders lauten. Beispielsweise die Aktivität in der Spalte **Aktion** in der CSV-Datei und weist möglicherweise einen anderen Wert als die "benutzerfreundlichen" Version, die in der Spalte **Aktivität** auf der Seite **Audit Log Suche** ; angezeigt wird Beispielsweise können Sie MailboxLogin im Vergleich zu Benutzer in Postfach angemeldet.
+- Die Option **alle Ergebnisse herunterladen** downloadet die Rohdaten aus dem Office 365-Überwachungsprotokoll in eine CSV-Datei. Diese Datei enthält unterschiedliche Spaltennamen (CreationDate, UserIds, Operation, AuditData) als die Datei, die heruntergeladen wird, wenn Sie die Option geladene **Ergebnisse speichern** auswählen. Die Werte in den beiden unterschiedlichen CSV-Dateien für dieselbe Aktivität können ebenfalls unterschiedlich sein. Beispiel: die Aktivität in der Spalte " **Aktion** " in der CSV-Datei und möglicherweise einen anderen Wert als die benutzerfreundliche Version, die in der Spalte " **Aktivität** " auf der Suchseite für das **Überwachungsprotokoll** angezeigt wird; Beispiel: Mailbox Login: vs. User angemeldet bei Mailbox.
     
-- Wenn Sie alle Ergebnisse herunterladen, enthält die CSV-Datei eine Spalte mit dem Namen **AuditData**, die zusätzliche Informationen zu jedem Ereignis enthält. Wie bereits erwähnt enthält diese Spalte eine mehrwertige Eigenschaft für mehrere Eigenschaften aus dem Audit Log Datensatz. Jede **Eigenschaft-Wert** -Paare im dieses mehrwertige Eigenschaften werden durch ein Komma getrennt. Sie können die Power-Abfrage in Excel verwenden, mehrere Spalten in dieser Spalte aufgeteilt werden, damit jede Eigenschaft eine eigenen Spalte verwendet werden. Dadurch können Sie sortieren und Filtern für ein oder mehrere dieser Eigenschaften. Finden Sie Informationen hierzu finden Sie im Abschnitt "Teilen einer Spalte durch Trennzeichen" Split [Text (Power Query) in einer Spalte](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
+- Wenn Sie alle Ergebnisse herunterladen, enthält die CSV-Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Wie bereits erwähnt, enthält diese Spalte eine mehrwertige Eigenschaft für mehrere Eigenschaften aus dem Überwachungsprotokolldaten Satz. Jedes der **Property: Value** -Paare in dieser mehrwertigen Eigenschaft werden durch ein Komma getrennt. Sie können die Power-Abfrage in Excel verwenden, um diese Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft eine eigene Spalte hat. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und filtern. Weitere Informationen hierzu finden Sie im Abschnitt "Split a Column by Delimiter" unter [Split a Column of Text (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
     
-    Nachdem Sie die Spalte **AuditData** geteilt, können Sie in der Spalte **Vorgänge** zum Anzeigen der detaillierten Eigenschaften für einen bestimmten Objekttyp Aktivität filtern. 
+    Nachdem Sie die **Auditdata** -Spalte geteilt haben, können Sie nach der Spalte **Vorgänge** filtern, um die detaillierten Eigenschaften für einen bestimmten Aktivitätstyp anzuzeigen. 
     
-- Es besteht ein 3,060 Zeichen-Grenzwert für die Daten, die im Feld **AuditData** für einen Audit-Eintrag angezeigt wird. Die 3,060-Zeichen überschritten wird, werden die Daten in diesem Feld abgeschnitten. 
+- Es gibt eine 3.060-Zeichen Grenze für die Daten, die im Feld **Auditdata** für einen Überwachungsdatensatz angezeigt werden. Wenn die 3.060-Zeichen Grenze überschritten wird, werden die Daten in diesem Feld abgeschnitten. 
     
-- Wenn Sie alle Ergebnisse aus einer Suchabfrage, die Ereignisse aus verschiedenen Office 365-Dienste enthält herunterladen, enthält die **AuditData** -Spalte in der CSV-Datei verschiedene Eigenschaften, je nachdem, denen was in Service die Aktion ausgeführt wurde. Beispielsweise enthalten Einträge aus Exchange und Azure AD Überwachungsprotokolle eine Eigenschaft mit dem Namen **ResultStatus** , die angibt, ob die Aktion erfolgreich war. Diese Eigenschaft ist nicht mit inbegriffen für Ereignisse in SharePoint. In ähnlicher Weise SharePoint-Ereignisse haben eine Eigenschaft identifiziert die Website URL für Dateien und Ordner-bezogene Aktivitäten. Um dieses Verhalten zu verringern, sollten Sie in Betracht ziehen, unterschiedliche Suchen durchführen So exportieren Sie die Ergebnisse für Aktivitäten aus einem einzelnen Dienst zu verwenden. 
+- Wenn Sie alle Ergebnisse aus einer Suchabfrage herunterladen, die Ereignisse aus verschiedenen Office 365-Diensten enthält, enthält die Spalte **Auditdata** in der CSV-Datei unterschiedliche Eigenschaften, je nachdem, in welchem Dienst die Aktion ausgeführt wurde. Beispielsweise enthält Einträge aus Exchange-und Azure AD-Überwachungsprotokollen eine Eigenschaft mit dem Namen **ResultStatus** , die angibt, ob die Aktion erfolgreich war oder nicht. Diese Eigenschaft ist für Ereignisse in SharePoint nicht enthalten. Entsprechend verfügen SharePoint-Ereignisse über eine Eigenschaft, die die Website-URL für Datei-und Ordner bezogene Aktivitäten identifiziert. Um dieses Verhalten zu verringern, sollten Sie verschiedene Suchvorgänge verwenden, um die Ergebnisse für Aktivitäten aus einem einzelnen Dienst zu exportieren. 
     
-    Eine Beschreibung der Eigenschaften, die in der Spalte **AuditData** in der CSV-Datei aufgelistet sind, wenn Sie alle Ergebnisse und den Dienst jedes Herunterladen einer betrifft, finden Sie unter [Detailangaben zu den Eigenschaften in der Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
+    Eine Beschreibung der Eigenschaften, die in der **Auditdata** -Spalte in der CSV-Datei aufgeführt sind, wenn Sie alle Ergebnisse herunterladen, und der jeweilige Dienst gilt, finden Sie unter [detaillierte eigenschaften im Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
-## <a name="audited-activities"></a>Überwachten Aktivitäten
+## <a name="audited-activities"></a>ÜberWachte Aktivitäten
 
-Die Tabellen in diesem Abschnitt beschreiben die Aktivitäten, die in Office 365 überwacht werden. Sie können für diese Ereignisse suchen, indem Sie das Überwachungsprotokoll in die & Security Compliance Center suchen.
+In den Tabellen in diesem Abschnitt werden die in Office 365 überwachten Aktivitäten beschrieben. Sie können nach diesen Ereignissen suchen, indem Sie das Überwachungsprotokoll im Security & Compliance Center durchsuchen.
   
-Diese Tabellen Gruppieren verwandter Aktivitäten oder die Aktivitäten aus einem bestimmten Office 365-Dienst. Die Tabellen enthalten den Anzeigenamen, der in der Dropdown-Liste von **Aktivitäten** angezeigt wird und den Namen der entsprechenden Vorgang, der angezeigt wird, in die detaillierten Informationen eines Datensatzes Audit und in der CSV-Datei, wenn Sie die Suchergebnisse exportieren. Beschreibung der ausführliche Informationen finden Sie unter [Detailangaben zu den Eigenschaften in der Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
+Diese Tabellen Gruppieren verwandte Aktivitäten oder Aktivitäten von einem bestimmten Office 365-Dienst. Die Tabellen enthalten den Anzeigenamen, der in der Dropdownliste **Aktivitäten** angezeigt wird, sowie den Namen des entsprechenden Vorgangs, der in den detaillierten Informationen eines Überwachungsdatensatzes und in der CSV-Datei angezeigt wird, wenn Sie die Suchergebnisse exportieren. Beschreibungen der detaillierten Informationen finden Sie unter [detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
   
-Klicken Sie auf eine der folgenden Links, um zu einer bestimmten Tabelle zu wechseln.
+Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu wechseln.
   
 ||||
 |:-----|:-----|:-----|
-|[Datei und Seite Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[Freigabe und Access Anforderung Aktivitäten](#sharing-and-access-request-activities)<br/> |
-|[Synchronisierung Aktivitäten](#synchronization-activities)<br/> |[Site-Verwaltungsaktivitäten](#site-administration-activities)<br/> |[Exchange-Postfach-Aktivitäten](#exchange-mailbox-activities)<br/> |
-|[Sway Aktivitäten](#sway-activities) <br/> |[Die Verwaltung Benutzeraktivitäten](#user-administration-activities) <br/> |[Azure Active Directory-Gruppe Administration Aktivitäten](#azure-ad-group-administration-activities) <br/> |
-|[Anwendung Administration Aktivitäten](#application-administration-activities) <br/> |[Rolle Administration Aktivitäten](#role-administration-activities) <br/> |[Directory Administration Aktivitäten](#directory-administration-activities) <br/> |
-|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Jahrestag Analytics](#microsoft-workplace-analytics-activities)<br/>|
-[Microsoft-Teams, Aktivitäten](#microsoft-teams-activities) <br/> |[Yammer-Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange Admin-Aktivitäten](#exchange-admin-audit-log)<br/>
+|[Datei-und Seiten Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |
+|[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Aktivitäten der Websiteverwaltung](#site-administration-activities)<br/> |[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |
+|[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |[Verwaltungsaktivitäten der Azure AD-Gruppe](#azure-ad-group-administration-activities) <br/> |
+|[Aktivitäten der Anwendungsverwaltung](#application-administration-activities) <br/> |[Rollen Verwaltungsaktivitäten](#role-administration-activities) <br/> |[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/> |
+|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Aktivitäten mit jammern](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>
 ||||
    
   
-### <a name="file-and-page-activities"></a>Datei und Seite Aktivitäten
+### <a name="file-and-page-activities"></a>Datei-und Seiten Aktivitäten
   
-In der folgenden Tabelle werden die Datei und Seite Aktivitäten in SharePoint Online und OneDrive für Unternehmen beschrieben.
+In der folgenden Tabelle werden die Datei-und Seiten Aktivitäten in SharePoint Online und OneDrive for Business beschrieben.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Geöffneten Datei  <br/> |FileAccessed  <br/> |Benutzer- oder Systemkonto greift auf eine Datei.  <br/> |
-|(kein Rahmen)  <br/> |FileAccessedExtended  <br/> |Dies bezieht sich auf die Datei"Zugriff" Aktivität (FileAccessed). Wenn die gleiche Person ständig eine Datei für einen längeren Zeitraum (bis zu 3 Stunden) zugreift, wird ein FileAccessedExtended-Ereignis protokolliert. Protokollieren von Ereignissen FileAccessedExtended dient zum Verringern der Anzahl FileAccessed Ereignisse, die protokolliert werden, wenn eine Datei ständig zugegriffen wird. Dies hilft bei der Rauschen von mehrere FileAccessed-Datensätzen für was im Wesentlichen ist Benutzeraktivität und Sie sich auf das erste (und wichtiger) FileAccessed Ereignis konzentrieren können.  <br/> |
-|Datei eingecheckt  <br/> |FileCheckedIn  <br/> |Benutzerprüfungen in einem Dokument, das sie aus einer Dokumentbibliothek ausgecheckt.  <br/> |
-|Datei ausgecheckt  <br/> |FileCheckedOut  <br/> |Benutzer checkt ein Dokument befindet sich in einer Dokumentbibliothek aus. Benutzer können Auschecken und vornehmen von Änderungen an Dokumenten, die mit diesen freigegeben wurden.  <br/> |
-|Kopierte Datei  <br/> |FileCopied  <br/> |Benutzer kopiert ein Dokument aus einer Website. Die kopierte Datei kann in einen anderen Ordner auf der Website gespeichert werden.  <br/> |
-|Gelöschte Datei  <br/> |FileDeleted  <br/> |Benutzer löscht ein Dokument aus einer Website.  <br/> |
-|Gelöschte Datei aus dem Papierkorb  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Benutzer löscht eine Datei aus dem Papierkorb einer Website.  <br/> |
-|Gelöschte Datei aus dem endgültigen Papierkorb  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.  <br/> |
-|Erkannte Schadsoftware in Datei  <br/> |FileMalwareDetected  <br/> |SharePoint-Antivirus-Modul erkennt schädlichen Code in einer Datei.  <br/> |
-|Verworfene Auscheckvorgang  <br/> |FileCheckOutDiscarded  <br/> |Benutzer verwirft eine ausgecheckte Datei, oder macht dies rückgängig. Alle Änderungen, die an der Datei vorgenommen wurden, als sie ausgecheckt war, werden verworfen und nicht in der Dokumentversion in der Dokumentbibliothek gespeichert.  <br/> |
-|Heruntergeladene Datei  <br/> |FileDownloaded  <br/> |Benutzer lädt ein Dokument aus einer Website.  <br/> |
-|Geänderte Datei  <br/> |FileModified  <br/> |Benutzer oder Systemkonto ändert den Inhalt oder die Eigenschaften eines Dokuments auf einer Website befindet.  <br/> |
-|(kein Rahmen)  <br/> |FileModifiedExtended  <br/> |Dies bezieht sich auf die Datei"Modified" Aktivität (FileModified). Ein Ereignis FileModifiedExtended wird protokolliert, wenn die gleiche Person ständig eine Datei für einen längeren Zeitraum (bis zu 3 Stunden) ändert. Protokollieren von Ereignissen FileModifiedExtended dient zum Verringern der Anzahl FileModified Ereignisse, die protokolliert werden, wenn eine Datei ständig geändert wird. Dies hilft bei der Rauschen von mehrere FileModified-Datensätzen für was im Wesentlichen ist Benutzeraktivität und Sie sich auf das erste (und wichtiger) FileModified Ereignis konzentrieren können.  <br/> |
-|Verschobene Datei  <br/> |FileMoved  <br/> |Benutzer verschoben ein Dokument von seinem aktuellen Speicherort auf einer Website an einen neuen Speicherort.  <br/> |
-|Alle Nebenversionen der Datei im Papierkorb  <br/> |FileVersionsAllMinorsRecycled  <br/> |Benutzer löscht alle Nebenversionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.  <br/> |
-|Alle Versionen der Datei im Papierkorb  <br/> |FileVersionsAllRecycled  <br/> |Benutzer löscht alle Versionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.  <br/> |
-|Wiederverwendeten Version der Datei  <br/> |FileVersionRecycled  <br/> |Benutzer löscht eine Version aus dem Versionsverlauf einer Datei. Die gelöschte Version wird in den Papierkorb der Website verschoben.  <br/> |
-|Umbenannte Datei  <br/> |FileRenamed  <br/> |Ein Dokument auf einer Website umbenannt wird.  <br/> |
-|Wiederhergestellten Datei  <br/> |FileRestored  <br/> |Benutzer wiederherstellen ein Dokuments aus dem Papierkorb einer Website.  <br/> |
-|Hochgeladene Datei  <br/> |FileUploaded  <br/> |Benutzer hochgeladen ein Dokument in einen Ordner auf einer Website.  <br/> |
-|Angezeigte Seite  <br/> |PageViewed  <br/> |Benutzer zeigt eine Seite auf einer Website. Dies umfasst nicht mit einem Webbrowser anzeigen von Dateien in einer Dokumentbibliothek befinden.  <br/> |
-|(kein Rahmen)  <br/> |PageViewedExtended  <br/> |Dies bezieht sich auf der Seite"Ansicht" Aktivitäten (PageViewed). Ein PageViewedExtended-Ereignis wird protokolliert, wenn die gleiche Person ständig eine Webseite für einen längeren Zeitraum (bis zu 3 Stunden) anzeigt. Protokollieren von Ereignissen PageViewedExtended dient zum Verringern der Anzahl PageViewed Ereignisse, die protokolliert werden, wenn eine Seite ständig angezeigt wird. Dies hilft bei der Rauschen von mehrere PageViewed-Datensätzen für was im Wesentlichen ist Benutzeraktivität und Sie sich auf das erste (und wichtiger) PageViewed Ereignis konzentrieren können.  <br/> |
+|Datei mit Zugriff  <br/> |FileAccessed  <br/> |Benutzer-oder Systemkonto greift auf eine Datei zu.  <br/> |
+|keine  <br/> |FileAccessedExtended  <br/> |Dies bezieht sich auf die Aktivität "Zugriff auf Datei" (fileAccessed). Ein FileAccessedExtended-Ereignis wird protokolliert, wenn dieselbe Person ständig auf eine Datei über einen längeren Zeitraum (bis zu 3 Stunden) zugreift. Der Zweck der Protokollierung von FileAccessedExtended-Ereignissen besteht darin, die Anzahl von fileAccessed-Ereignissen zu verringern, die protokolliert werden, wenn auf eine Datei ständig zugegriffen wird. Dadurch wird das Rauschen mehrerer fileAccessed-Datensätze für die im Wesentlichen dieselbe Benutzeraktivität reduziert, und Sie können sich auf das anfängliche (und noch wichtigere) fileAccessed-Ereignis konzentrieren.  <br/> |
+|Eingecheckt  <br/> |FileCheckedin  <br/> |Der Benutzer checkt ein Dokument ein, das er aus einer Dokumentbibliothek ausgecheckt hat.  <br/> |
+|Ausgecheckte Datei  <br/> |FileChecked  <br/> |Der Benutzer checkt ein Dokument aus einer Dokumentbibliothek aus. Benutzer können Dokumente auschecken und ändern, die für Sie freigegeben wurden.  <br/> |
+|Kopierte Datei  <br/> |FileCopied  <br/> |Ein Benutzer kopiert ein Dokument von einer Website. Die kopierte Datei kann in einem anderen Ordner auf der Website gespeichert werden.  <br/> |
+|Gelöschte Datei  <br/> |FileDeleted  <br/> |Ein Benutzer löscht ein Dokument von einer Website.  <br/> |
+|Gelöschte Datei aus dem Papierkorb  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.  <br/> |
+|Gelöschte Datei aus dem endgültigen Papierkorb  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.  <br/> |
+|Erkannte Schadsoftware in der Datei  <br/> |FileMalwareDetected  <br/> |Das SharePoint-Antivirus-Modul erkennt Schadsoftware in einer Datei.  <br/> |
+|Auschecken verworfener Dateien  <br/> |FileCheckOutDiscarded  <br/> |Benutzer verwirft eine ausgecheckte Datei, oder macht dies rückgängig. Alle Änderungen, die an der Datei vorgenommen wurden, als sie ausgecheckt war, werden verworfen und nicht in der Dokumentversion in der Dokumentbibliothek gespeichert.  <br/> |
+|HeruntergeLadene Datei  <br/> |FileDownloaded  <br/> |Ein Benutzer lädt ein Dokument von einer Website herunter.  <br/> |
+|Geänderte Datei  <br/> |FileModified  <br/> |Benutzer-oder Systemkonto ändert den Inhalt oder die Eigenschaften eines Dokuments, das sich auf einer Website befindet.  <br/> |
+|keine  <br/> |FileModifiedExtended  <br/> |Dies bezieht sich auf die "geänderte Datei" (fileModified)-Aktivität. Ein FileModifiedExtended-Ereignis wird protokolliert, wenn dieselbe Person ständig eine Datei für einen längeren Zeitraum (bis zu 3 Stunden) ändert. Der Zweck der Protokollierung von FileModifiedExtended-Ereignissen besteht darin, die Anzahl der fileModified-Ereignisse zu verringern, die protokolliert werden, wenn eine Datei ständig geändert wird. Dadurch wird das Rauschen mehrerer fileModified-Datensätze für die im Wesentlichen dieselbe Benutzeraktivität reduziert, und Sie können sich auf das anfängliche (und noch wichtigere) fileModified-Ereignis konzentrieren.  <br/> |
+|Verschobene Datei  <br/> |FileMoved  <br/> |Ein Benutzer verschiebt ein Dokument von seinem aktuellen Speicherort auf einer Website an einen neuen Speicherort.  <br/> |
+|Alle Nebenversionen der Datei werden wieder verwendet.  <br/> |FileVersionsAllMinorsRecycled  <br/> |Der Benutzer löscht alle Nebenversionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.  <br/> |
+|Alle Dateiversionen wurden recycelt  <br/> |FileVersionsAllRecycled  <br/> |Der Benutzer löscht alle Versionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.  <br/> |
+|Recycelte Version der Datei  <br/> |FileVersionRecycled  <br/> |Der Benutzer löscht eine Version aus dem Versionsverlauf einer Datei. Die gelöschte Version wird in den Papierkorb der Website verschoben.  <br/> |
+|UmBenannte Datei  <br/> |FileRenamed  <br/> |Der Benutzer benennt ein Dokument auf einer Website um.  <br/> |
+|Wiederhergestellte Datei  <br/> |FileRestored  <br/> |Der Benutzer stellt ein Dokument aus dem Papierkorb einer Website wieder her.  <br/> |
+|HochgeLadene Datei  <br/> |File uploaded  <br/> |Ein Benutzer lädt ein Dokument in einen Ordner auf einer Website hoch.  <br/> |
+|Angezeigte Seite  <br/> |Seitenzugriffe  <br/> |Benutzer zeigt eine Seite auf einer Website an. Hierzu gehört nicht die Verwendung eines Webbrowsers zum Anzeigen von Dateien in einer Dokumentbibliothek.  <br/> |
+|keine  <br/> |PageViewedExtended  <br/> |Dies bezieht sich auf die "viewed page"-Aktivität. Ein PageViewedExtended-Ereignis wird protokolliert, wenn dieselbe Person ständig eine Webseite für einen längeren Zeitraum (bis zu 3 Stunden) anzeigt. Der Zweck der Protokollierung von PageViewedExtended-Ereignissen besteht darin, die Anzahl der aufgetretenen Ereignisse zu verringern, die protokolliert werden, wenn eine Seite ständig angezeigt wird. Dies trägt dazu bei, das Rauschen von mehreren aufgegebenen Datensätzen für die im Wesentlichen dieselbe Benutzeraktivität zu reduzieren, und Sie können sich auf das anfängliche (und noch wichtigere) geteilte Ereignis konzentrieren.  <br/> |
 ||||
   
 ### <a name="folder-activities"></a>Ordner Aktivitäten
   
-In der folgenden Tabelle werden die Ordner Aktivitäten in SharePoint Online und OneDrive für Unternehmen beschrieben.
+In der folgenden Tabelle werden die Ordner Aktivitäten in SharePoint Online und OneDrive for Business beschrieben.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Kopierte Ordner  <br/> |FolderCopied  <br/> |Benutzer kopiert einen Ordner aus einer Website in eine andere Position in SharePoint oder OneDrive für Unternehmen.  <br/> |
-|Erstellte Ordner  <br/> |FolderCreated  <br/> |Benutzer erstellt einen Ordner auf einer Website.  <br/> |
-|Gelöschte Ordner  <br/> |FolderDeleted  <br/> |Benutzer löscht einen Ordner aus einer Website.  <br/> |
-|Gelöschte Ordner aus dem Papierkorb  <br/> |FolderDeletedFirstStageRecycleBin  <br/> |Benutzer löscht einen Ordner aus dem Papierkorb auf einer Website.  <br/> |
-|Gelöschte Ordner aus im endgültigen Papierkorb  <br/> |FolderDeletedSecondStageRecycleBin  <br/> |Benutzer löscht einen Ordner aus dem endgültigen Papierkorb auf einer Website.  <br/> |
-|Geänderte Ordner  <br/> |FolderModified  <br/> |Benutzer ändert einen Ordner auf einer Website. Dazu gehört das Ändern der Ordnermetadaten, wie Kategorien und Eigenschaften ändern.  <br/> |
-|Verschobene Ordner  <br/> |FolderMoved  <br/> |Benutzer Verschiebt einen Ordner an einen anderen Ort auf einer Website.  <br/> |
-|Umbenannte Ordner  <br/> |FolderRenamed  <br/> |Einen Ordner auf einer Website umbenannt wird.  <br/> |
-|Wiederhergestellte Ordner  <br/> |FolderRestored  <br/> |Benutzer wiederherstellen ein gelöschtes Ordners aus dem Papierkorb auf einer Website.  <br/> |
+|Kopierter Ordner  <br/> |FolderCopied  <br/> |Der Benutzer kopiert einen Ordner von einer Website an einen anderen Speicherort in SharePoint oder OneDrive for Business.  <br/> |
+|Erstellter Ordner  <br/> |FolderCreated  <br/> |Der Benutzer erstellt einen Ordner auf einer Website.  <br/> |
+|Gelöschter Ordner  <br/> |FolderDeleted  <br/> |Ein Benutzer löscht einen Ordner von einer Website.  <br/> |
+|Gelöschter Ordner aus dem Papierkorb  <br/> |FolderDeletedFirstStageRecycleBin  <br/> |Ein Benutzer löscht einen Ordner aus dem Papierkorb auf einer Website.  <br/> |
+|Gelöschter Ordner aus dem endgültigen Papierkorb  <br/> |FolderDeletedSecondStageRecycleBin  <br/> |Ein Benutzer löscht einen Ordner aus dem endgültigen Papierkorb auf einer Website.  <br/> |
+|Geänderter Ordner  <br/> |FolderModified  <br/> |Der Benutzer ändert einen Ordner auf einer Website. Dazu gehört das Ändern der Ordnermetadaten wie das Ändern von Tags und Eigenschaften.  <br/> |
+|Verschobener Ordner  <br/> |FolderMoved  <br/> |Der Benutzer verschiebt einen Ordner an einen anderen Speicherort auf einer Website.  <br/> |
+|UmBenannter Ordner  <br/> |FolderRenamed  <br/> |Der Benutzer benennt einen Ordner auf einer Website um.  <br/> |
+|Wiederhergestellter Ordner  <br/> |FolderRestored  <br/> |Der Benutzer stellt einen gelöschten Ordner aus dem Papierkorb auf einer Website wieder her.  <br/> |
 ||||
   
-### <a name="sharing-and-access-request-activities"></a>Freigabe und Access Anforderung Aktivitäten
+### <a name="sharing-and-access-request-activities"></a>Freigabe-und Zugriffs Anforderungs Aktivitäten
   
-In der folgenden Tabelle werden die Benutzer Freigabe und Access Anforderung Aktivitäten in SharePoint Online und OneDrive für Unternehmen beschrieben. Für die Freigabe von Ereignissen, die Spalte **Details** unter **Ergebnisse** identifiziert den Namen des Benutzers oder der Gruppe, die für das Element freigegeben wurde, und gibt an, ob Benutzer oder die Gruppe ist ein Element oder Gast in Ihrer Organisation. Weitere Informationen finden Sie unter [Überwachung in das Überwachungsprotokoll Office 365 Freigabe verwenden](use-sharing-auditing.md).
+In der folgenden Tabelle werden die Benutzer Freigabe-und Zugriffs Anforderungs Aktivitäten in SharePoint Online und OneDrive for Business beschrieben. Bei Freigabe Ereignissen identifiziert die **Detail** Spalte unter **Ergebnisse** den Namen des Benutzers oder der Gruppe, für die das Element freigegeben wurde, und gibt an, ob dieser Benutzer oder diese Gruppe Mitglied oder Gast in Ihrer Organisation ist. Weitere Informationen finden Sie unter [Verwenden der Freigabe Überwachung im Office 365-Überwachungsprotokoll](use-sharing-auditing.md).
   
 > [!NOTE]
-> Benutzer können *Mitglieder* oder *Gäste* auf Basis der UserType-Eigenschaft des User-Objekts sein. Ein Element wird in der Regel ein Mitarbeiter und Gast ist in der Regel ein Collaborator außerhalb Ihrer Organisation. Wenn ein Benutzer eine Einladung zur Freigabe akzeptiert (und noch nicht Teil der Organisation), wird im Verzeichnis Ihrer Organisation ein Gastkonto erstellt. Sobald der Gastbenutzer ein Konto in Ihrem Verzeichnis verfügt, können Ressourcen (ohne eine Einladung) direkt mit freigegeben werden. 
+> Benutzer können auf Basis der usertype-Eigenschaft des User-Objekts entweder *Mitglieder* oder *Gäste* sein. Bei einem Mitglied handelt es sich normalerweise um einen Mitarbeiter, und ein Gast ist normalerweise außerhalb Ihres Unternehmens ein Mitarbeiter. Wenn ein Benutzer eine Freigabeeinladung akzeptiert (und nicht bereits Teil Ihrer Organisation ist), wird im Verzeichnis Ihrer Organisation ein Gastkonto erstellt. Sobald der Gastbenutzer über ein Konto in Ihrem Verzeichnis verfügt, können Ressourcen direkt mit diesen freigegeben werden (ohne dass eine Einladung erforderlich ist). 
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Access-Anforderung akzeptiert  <br/> |AccessRequestAccepted  <br/> |Eine Access-Anforderung an eine Website, Ordner oder Dokument wurde angenommen und der anfordernde Benutzer Zugriff gewährt wurde.  <br/> |
-|Akzeptiert eine freigabeeinladung  <br/> |SharingInvitationAccepted  <br/> |Benutzer (Mitglied oder Gast) akzeptiert eine Einladung zur Freigabe, und Zugriff auf eine Ressource erteilt wurde. Dieses Ereignis enthält Informationen zu den Benutzer, die eingeladen wurde und die e-Mail-Adresse, die verwendet wurde, um die Einladung anzunehmen (sie können unterschiedliche sein). Diese Aktivität wird häufig von einem zweiten Ereignis begleitet, die beschreibt, wie der Benutzer erteilt wurde Zugriff auf die Ressource hinzufügen des Benutzers zu einer Gruppe, die Zugriff auf die Ressource hat.  <br/> |
-|Hinzugefügte Berechtigungsstufe für Websitesammlung  <br/> |PermissionLevelAdded  <br/> |Eine Berechtigungsstufe wurde in eine Websitesammlung hinzugefügt.  <br/> |
-|Benutzer, die sichere Verbindung  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die diese Freigabe sichere Verbindung verwenden können.  <br/> |
-|Einladung zur Freigabe blockiert  <br/> |SharingInvitationBlocked  <br/> | Eine Einladung zur Freigabe von einem Benutzer in Ihrer Organisation gesendet wird aufgrund eines externen Freigaberichtlinie blockiert, die erteilt oder verweigert externe Freigabe auf Basis der Domäne des Zielbenutzers. In diesem Fall wurde die Einladung zur Freigabe, da blockiert:<br/>  Domäne des Zielbenutzers ist nicht in der Liste der zugelassenen Domänen enthalten.  <br/>  Oder  <br/>  Domäne des Zielbenutzers ist in der Liste der blockierten Domänen enthalten.  <br/>  Weitere Informationen zum Zulassen oder Sperren externe Freigabe basierend auf Domänen finden Sie unter [eingeschränkten Freigabe in SharePoint Online und OneDrive für Unternehmen Domänen](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Eingestellt wurde Ebene Vererbung von Berechtigungen  <br/> |PermissionLevelsInheritanceBroken  <br/> |Ein Element wurde geändert, sodass es nicht mehr Berechtigungsstufen von der übergeordneten Website erbt.  <br/> |
-|Freigeben von Vererbung eingestellt wurde  <br/> |SharingInheritanceBroken  <br/> |Ein Element wurde geändert, sodass es nicht mehr Freigabeberechtigungen von der übergeordneten Website erbt.  <br/> |
-|Erstellung eines Unternehmens freigebbare links  <br/> |CompanyLinkCreated  <br/> |Der Benutzer erstellt einen unternehmensweite Link zu einer Ressource. unternehmensweite Links kann nur von Mitgliedern in Ihrer Organisation verwendet werden. Sie können nicht von Gästen verwendet werden.  <br/> |
-|Access-Anforderung erstellt  <br/> |AccessRequestCreated  <br/> |Benutzer fordert den Zugriff auf eine Website, Ordner, oder sie nicht über Berechtigungen zum Zugriff auf verfügen.  <br/> |
-|Erstellt einen anonymen link  <br/> |AnonymousLinkCreated  <br/> |Der Benutzer erstellt einen anonymen Link zu einer Ressource. Jeder Benutzer mit diesen Link kann die Ressource zugreifen, ohne authentifiziert werden.  <br/> |
-|Sichere Verbindung erstellt  <br/> |SecureLinkCreated  <br/> |Auf dieses Element wurde als sichere Verbindung für die Freigabe erstellt.  <br/> |
-|Einladung zur Freigabe erstellt  <br/> |SharingInvitationCreated  <br/> |Benutzer freigegebene Ressource in SharePoint Online oder OneDrive für Unternehmen mit einem Benutzer, die nicht im Verzeichnis Ihrer Organisation befindet.  <br/> |
-|Gelöschte sichere Verbindung  <br/> |SecureLinkDeleted  <br/> |Eine sichere Freigabe Verknüpfung wurde gelöscht.  <br/> |
-|Access-Anforderung abgelehnt  <br/> |AccessRequestDenied  <br/> |Eine Access-Anforderung an eine Website, Ordner oder Dokument wurde verweigert.  <br/> |
-|Geänderte Berechtigungsstufe in der Websitesammlung  <br/> |PermissionLevelModified  <br/> |Eine Berechtigungsstufe wurde für eine Websitesammlung geändert.  <br/> |
-|Entfernt einen Unternehmen freigebbare link  <br/> |CompanyLinkRemoved  <br/> |Benutzer entfernt einen unternehmensweite Link zu einer Ressource. Die Verknüpfung kann nicht mehr verwendet werden, Zugriff auf die Ressource.  <br/> |
-|Entfernt einen anonymen link  <br/> |AnonymousLinkRemoved  <br/> |Benutzer entfernt einen anonymen Link zu einer Ressource. Die Verknüpfung kann nicht mehr verwendet werden, Zugriff auf die Ressource.  <br/> |
-|Berechtigungsstufe aus der Websitesammlung entfernt  <br/> |PermissionLevelRemoved  <br/> |Eine Berechtigungsstufe wurde aus der Websitesammlung entfernt.  <br/> |
-|Freigeben von Vererbung wiederhergestellt  <br/> |SharingInheritanceReset  <br/> |Es wurde eine Änderung vorgenommen, so, dass ein Element Freigabeberechtigungen von der übergeordneten Website erbt.  <br/> |
-|Freigegebene Datei, Ordner oder site  <br/> |SharingSet  <br/> |Benutzer (Mitglied oder Gast) freigegebene Dateien, Ordner oder einer Website in SharePoint oder OneDrive für Unternehmen mit einem Benutzer in das Verzeichnis der Organisation. Der Wert in der Spalte **Details** für diese Aktivität gibt den Namen des Benutzers, den für die Ressource freigegeben wurde und ob dieser Benutzer Mitglied oder Gast ist. Diese Aktivität wird häufig von einem zweiten Ereignis begleitet, die beschreibt, wie der Benutzer Zugriff auf die Ressource gewährt wurde; Angenommen, hinzufügen den Benutzer zu einer Gruppe, die Zugriff auf die Ressource hat.<br/> |
-|Aktualisierte zugriffsanforderung  <br/> |AccessRequestUpdated  <br/> |Eine zugriffsanforderung auf ein Element aktualisiert wurde.  <br/> |
-|Aktualisiert einen anonymen link  <br/> |AnonymousLinkUpdated  <br/> |Benutzer aktualisiert einen anonymen Link auf eine Ressource. Das aktualisierte Feld ist in der EventData-Eigenschaft enthalten, wenn Sie die Suchergebnisse exportieren.  <br/> |
-|Aktualisiert eine freigabeeinladung  <br/> |SharingInvitationUpdated  <br/> |Eine externe freigabeeinladung wurde aktualisiert.  <br/> |
-|Verwendet einen anonymen link  <br/> |AnonymousLinkUsed  <br/> |Anonymer Benutzer auf eine Ressource mithilfe einer Verknüpfung auf der anonymen zugegriffen. Die Identität des Benutzers ist möglicherweise nicht bekannt, aber Sie können andere Informationen wie IP-Adresse des Benutzers abrufen.  <br/> |
-|Datei nicht freigegeben, Ordner oder site  <br/> |SharingRevoked  <br/> |Benutzer (Mitglied oder Gast) nicht freigegeben, Dateien, Ordner oder Website, die zuvor mit einem anderen Benutzer freigegeben wurde.  <br/> |
-|Einen Unternehmen freigebbare Link verwendet  <br/> |CompanyLinkUsed  <br/> |Benutzer Zugriff auf eine Ressource über eine unternehmensweite Verknüpfung.  <br/> |
-|Sichere Verbindung verwendet  <br/> |SecureLinkUsed  <br/> |Ein Benutzer verwendet eine sichere Verbindung.  <br/> |
-|Benutzer, die sichere Verbindung  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die als sharing sichere Verbindung verwenden können.  <br/> |
-|Benutzer von sichere Verbindung entfernt  <br/> |RemovedFromSecureLink  <br/> |Ein Benutzer wurde aus der Liste der Entitäten entfernt, die als sharing sichere Verbindung verwenden können.  <br/> |
-|Einstellten Einladung zur Freigabe  <br/> |SharingInvitationRevoked  <br/> |Benutzer einstellten eine Einladung zur Freigabe auf eine Ressource.  <br/> |
+|Akzeptierte Zugriffsanforderungen  <br/> |AccessRequestAccepted  <br/> |Eine Zugriffsanforderung für eine Website, einen Ordner oder ein Dokument wurde akzeptiert, und dem anfordernden Benutzer wurde der Zugriff erteilt.  <br/> |
+|Akzeptierte Freigabeeinladung  <br/> |SharingInvitationAccepted  <br/> |Benutzer (Mitglied oder Gast) akzeptierte eine Freigabeeinladung und erhielt Zugriff auf eine Ressource. Dieses Ereignis enthält Informationen über den Benutzer, der eingeladen wurde, und die e-Mail-Adresse, die zum Annehmen der Einladung verwendet wurde (Sie können unterschiedlich sein). Diese Aktivität wird häufig durch ein zweites Ereignis begleitet, das beschreibt, wie dem Benutzer der Zugriff auf die Ressource gewährt wurde, beispielsweise das Hinzufügen des Benutzers zu einer Gruppe, die Zugriff auf die Ressource hat.  <br/> |
+|Berechtigungsstufe zur Websitesammlung HinzugeFügt  <br/> |PermissionLevelAdded  <br/> |Einer Websitesammlung wurde eine Berechtigungsstufe hinzugefügt.  <br/> |
+|Benutzer zu Secure Link hinzugefügt  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die diesen sicheren Freigabe Link verwenden können.  <br/> |
+|Blockierte Freigabeeinladung  <br/> |SharingInvitationBlocked  <br/> | Eine Freigabeeinladung, die von einem Benutzer in Ihrer Organisation gesendet wurde, wird aufgrund einer externen Freigaberichtlinie blockiert, durch die die externe Freigabe basierend auf der Domäne des Zielbenutzers zugelassen oder verweigert wird. In diesem Fall wurde die Freigabeeinladung blockiert, weil:<br/>  Die Domäne des Zielbenutzers ist nicht in der Liste der zulässigen Domänen enthalten.  <br/>  Oder  <br/>  Die Domäne des Zielbenutzers ist in der Liste der blockierten Domänen enthalten.  <br/>  Weitere Informationen zum Zulassen oder Blockieren von externer Freigabe auf Domänenbasis finden Sie unter [restricted Domains Sharing in SharePoint Online und OneDrive for Business](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
+|Vererbung der Berechtigungen für "Broke"  <br/> |PermissionLevelsInheritanceBroken  <br/> |Ein Element wurde so geändert, dass es keine Berechtigungsstufen mehr von seinem übergeordneten Objekt erbt.  <br/> |
+|Freigabe Vererbung abgebrochen  <br/> |SharingInheritanceBroken  <br/> |Ein Element wurde so geändert, dass es keine Freigabeberechtigungen mehr von seinem übergeordneten Objekt erbt.  <br/> |
+|Unternehmens Freigabe Link erstellt  <br/> |CompanyLinkCreated  <br/> |Der Benutzer hat einen unternehmensweiten Link zu einer Ressource erstellt. unternehmensweite Links können nur von Mitgliedern in Ihrer Organisation verwendet werden. Sie können nicht von Gästen verwendet werden.  <br/> |
+|Erstellte Zugriffsanforderung  <br/> |AccessRequestCreated  <br/> |Benutzer fordert Zugriff auf eine Website, einen Ordner oder ein Dokument an, für die Sie keine Zugriffsberechtigungen haben.  <br/> |
+|Anonyme Verknüpfung erstellt  <br/> |AnonymousLinkCreated  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource erstellt. Jeder Benutzer mit diesem Link kann auf die Ressource zugreifen, ohne authentifiziert werden zu müssen.  <br/> |
+|Erstellter sicherer Link  <br/> |SecureLinkCreated  <br/> |Ein sicherer Freigabe Link wurde für dieses Element erstellt.  <br/> |
+|Freigabeeinladung erstellt  <br/> |SharingInvitationCreated  <br/> |Der Benutzer hat eine Ressource in SharePoint Online oder OneDrive für Unternehmen mit einem Benutzer freigegeben, der sich nicht im Verzeichnis Ihrer Organisation befindet.  <br/> |
+|Gelöschte sichere Verbindung  <br/> |SecureLinkDeleted  <br/> |Ein sicherer Freigabe Link wurde gelöscht.  <br/> |
+|Verweigerte Zugriffsanforderung  <br/> |AccessRequestDenied  <br/> |Eine Zugriffsanforderung für eine Website, einen Ordner oder ein Dokument wurde verweigert.  <br/> |
+|Geänderte Berechtigungsstufe für die Websitesammlung  <br/> |PermissionLevelModified  <br/> |Eine Berechtigungsstufe wurde für eine Websitesammlung geändert.  <br/> |
+|Entfernen eines Unternehmens Freigabelinks  <br/> |CompanyLinkRemoved  <br/> |Der Benutzer hat einen unternehmensweiten Link zu einer Ressource entfernt. Der Link kann nicht mehr für den Zugriff auf die Ressource verwendet werden.  <br/> |
+|Anonymer Link entfernt  <br/> |AnonymousLinkRemoved  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource entfernt. Der Link kann nicht mehr für den Zugriff auf die Ressource verwendet werden.  <br/> |
+|Berechtigungsstufe aus Websitesammlung entfernt  <br/> |PermissionLevelRemoved  <br/> |Eine Berechtigungsstufe wurde aus einer Websitesammlung entfernt.  <br/> |
+|Wiederhergestellte Freigabe Vererbung  <br/> |SharingInheritanceReset  <br/> |Es wurde eine Änderung vorgenommen, sodass ein Element Freigabeberechtigungen von seinem übergeordneten Objekt erbt.  <br/> |
+|FreigeGebene Datei, Ordner oder Website  <br/> |SharingSet  <br/> |Benutzer (Mitglied oder Gast) haben eine Datei, einen Ordner oder eine Website in SharePoint oder OneDrive für Unternehmen mit einem Benutzer im Verzeichnis Ihrer Organisation freigegeben. Der Wert in der **Detail** Spalte für diese Aktivität identifiziert den Namen des Benutzers, für den die Ressource freigegeben wurde, und gibt an, ob dieser Benutzer ein Mitglied oder ein Gast ist. Diese Aktivität wird häufig durch ein zweites Ereignis begleitet, das beschreibt, wie dem Benutzer der Zugriff auf die Ressource gewährt wurde. Beispielsweise wird der Benutzer zu einer Gruppe hinzugefügt, die Zugriff auf die Ressource hat.<br/> |
+|Aktualisierte Zugriffsanforderung  <br/> |AccessRequestUpdated  <br/> |Eine Zugriffsanforderung für ein Element wurde aktualisiert.  <br/> |
+|Anonymer Link wurde aktualisiert  <br/> |AnonymousLinkUpdated  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource aktualisiert. Das aktualisierte Feld ist in der EventData-Eigenschaft enthalten, wenn Sie die Suchergebnisse exportieren.  <br/> |
+|Aktualisierte Freigabeeinladung  <br/> |SharingInvitationUpdated  <br/> |Eine externe Freigabeeinladung wurde aktualisiert.  <br/> |
+|Verwendet einen anonymen Link  <br/> |AnonymousLinkUsed  <br/> |Ein anonymer Benutzer hat auf eine Ressource über einen anonymen Link zugegriffen. Die Identität des Benutzers ist möglicherweise unbekannt, aber Sie können weitere Details wie die IP-Adresse des Benutzers abrufen.  <br/> |
+|Nicht freigegebene Datei, Ordner oder Website  <br/> |SharingRevoked  <br/> |Benutzer (Mitglied oder Gast) die Freigabe einer Datei, eines Ordners oder einer Website, die zuvor für einen anderen Benutzer freigegeben wurde.  <br/> |
+|Verwendeter Link zu einem Unternehmen  <br/> |CompanyLinkUsed  <br/> |Der Benutzer hat auf eine Ressource über einen unternehmensweiten Link zugegriffen.  <br/> |
+|Verwendeter sicherer Link  <br/> |SecureLinkUsed  <br/> |Ein Benutzer hat einen sicheren Link verwendet.  <br/> |
+|Benutzer zu Secure Link hinzugefügt  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die einen sicheren Freigabe Link verwenden können.  <br/> |
+|Benutzer wurde aus "Secure Link" entfernt  <br/> |RemovedFromSecureLink  <br/> |Ein Benutzer wurde aus der Liste der Entitäten entfernt, die einen sicheren Freigabe Link verwenden können.  <br/> |
+|Einladung zur Freigabe wurde zurückgezogen  <br/> |SharingInvitationRevoked  <br/> |Der Benutzer hat eine Freigabeeinladung zu einer Ressource zurückgezogen.  <br/> |
 ||||
   
-### <a name="synchronization-activities"></a>Synchronisierung Aktivitäten
+### <a name="synchronization-activities"></a>Synchronisierungsaktivitäten
   
-Die folgende Tabelle enthält die Datei Synchronisierung Aktivitäten in SharePoint Online und OneDrive für Unternehmen.
+In der folgenden Tabelle sind die Datei Synchronisierungsaktivitäten in SharePoint Online und OneDrive for Business aufgeführt.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Computer zum Synchronisieren von Dateien zulässig  <br/> |ManagedSyncClientAllowed  <br/> |Benutzer richtet erfolgreich eine Sync-Beziehung mit einer Website. Die Sync-Beziehung ist erfolgreich, da es sich bei dem Computer des Benutzers ein Mitglied einer Domäne ist, die die Liste der Domänen (mit der Bezeichnung der *Liste sicherer Empfänger* ) hinzugefügt wurden, die Dokumentbibliotheken in Ihrer Organisation zugreifen können.<br/> Weitere Informationen zu diesem Feature finden Sie unter [Use Windows PowerShell-Cmdlets zum OneDrive-Synchronisierung für Domänen aktivieren, die in der Liste sicherer Empfänger sind](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
-|Blockierte Computer aus der Synchronisierung von Dateien  <br/> |UnmanagedSyncClientBlocked  <br/> |Benutzer versucht, eine Synchronisierung Beziehung mit einer Website von einem Computer herstellen, der nicht Mitglied einer Domäne Ihrer Organisation ist, oder ist ein Mitglied einer Domäne, die nicht in die Liste der Domänen hinzugefügt wurde (aufgerufen, die *Liste sicherer Empfänger)* , die auf Dokument zugreifen können Bibliotheken in Ihrer Organisation. Die Sync-Beziehung ist nicht zulässig, und dem Computer des Benutzers synchronisiert wird, herunterladen oder Hochladen von Dateien in einer Dokumentbibliothek blockiert ist.<br/> Informationen zu diesem Feature finden Sie unter [Use Windows PowerShell-Cmdlets zum OneDrive-Synchronisierung für Domänen aktivieren, die in der Liste sicherer Empfänger sind](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
-|Heruntergeladenen Dateien auf dem computer  <br/> |FileSyncDownloadedFull  <br/> |Benutzer richtet eine Beziehung Sync und downloads erfolgreich Dateien zum ersten Mal auf Ihrem jeweiligen Computer aus einer Dokumentbibliothek.  <br/> |
-|Heruntergeladene Datei Änderungen an computer  <br/> |FileSyncDownloadedPartial  <br/> |Benutzer herunterlädt Änderungen an Dateien erfolgreich aus einer Dokumentbibliothek. Diese Aktivität gibt an, dass alle Änderungen, die in der Dokumentbibliothek Dateien vorgenommen wurden auf dem Computer des Benutzers heruntergeladen wurden. Nur Änderungen wurden heruntergeladen, da die Dokumentbibliothek vom Benutzer zuvor heruntergeladen wurde (wie die **Dateien auf Computer heruntergeladen** Aktivität angegeben).<br/> |
-|Hochgeladenen Dateien in Dokumentbibliothek  <br/> |FileSyncUploadedFull  <br/> |Benutzer richtet eine Beziehung Sync und erfolgreich Dateien zum ersten Mal von ihrem Computer in einer Dokumentbibliothek hochgeladen.  <br/> |
-|Hochgeladene Datei Änderungen an einer Dokumentbibliothek  <br/> |FileSyncUploadedPartial  <br/> |Benutzer werden die Änderungen erfolgreich in Dateien in einer Dokumentbibliothek hochgeladen. Dieses Ereignis gibt an, dass alle an der lokalen Version einer Datei aus einer Dokumentbibliothek vorgenommenen Änderungen erfolgreich in die Dokumentbibliothek hochgeladen werden. Nur Änderungen entladen werden, da diese Dateien vom Benutzer bereits hochgeladen wurden (durch die ** Dateien in die Dokumentbibliothek hochgeladen ** Aktivität).  <br/> |
+|Zulässiger Computer zum Synchronisieren von Dateien  <br/> |ManagedSyncClientAllowed  <br/> |Der Benutzer richtet eine Synchronisierungsbeziehung mit einer Website erfolgreich ein. Die Synchronisierungsbeziehung ist erfolgreich, da der Computer des Benutzers Mitglied einer Domäne ist, die der Liste der Domänen (als *Liste sicherer Empfänger* bezeichnet) hinzugefügt wurde, die auf Dokumentbibliotheken in Ihrer Organisation zugreifen kann.<br/> Weitere Informationen zu dieser Funktion finden Sie unter [Verwenden von Windows PowerShell-Cmdlets zum Aktivieren der OneDrive-Synchronisierung für Domänen, die sich in der Liste der sicheren Empfänger befinden](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
+|Blockierte Computer aus der Synchronisierung von Dateien  <br/> |UnmanagedSyncClientBlocked  <br/> |Der Benutzer versucht, eine Synchronisierungsbeziehung mit einer Website von einem Computer aus einzurichten, der kein Mitglied der Domäne Ihrer Organisation ist oder Mitglied einer Domäne ist, die der Liste der Domänen (als *sichere Empfängerliste bezeichnet)* nicht hinzugefügt wurde, die auf das Dokument zugreifen kann. Bibliotheken in Ihrer Organisation. Die Synchronisierungsbeziehung ist nicht zulässig, und der Computer des Benutzers ist für das Synchronisieren, herunterladen oder Hochladen von Dateien in einer Dokumentbibliothek gesperrt.<br/> Informationen zu diesem Feature finden Sie unter [Verwenden von Windows PowerShell-Cmdlets zum Aktivieren der OneDrive-Synchronisierung für Domänen, die sich in der Liste sicherer Empfänger befinden](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
+|HeruntergeLadene Dateien auf den Computer  <br/> |FileSyncDownloadedFull  <br/> |Der Benutzer richtet eine Synchronisierungsbeziehung ein und lädt Dateien zum ersten Mal aus einer Dokumentbibliothek auf Ihren Computer herunter.  <br/> |
+|HeruntergeLadene Dateiänderungen am Computer  <br/> |FileSyncDownloadedPartial  <br/> |Der Benutzer lädt erfolgreich alle Änderungen an Dateien aus einer Dokumentbibliothek herunter. Diese Aktivität weist darauf hin, dass alle Änderungen an Dateien in der Dokumentbibliothek auf den Computer des Benutzers heruntergeladen wurden. Nur Änderungen wurden heruntergeladen, da die Dokumentbibliothek zuvor vom Benutzer heruntergeladen wurde (wie durch die **herunterGeladenen Dateien auf Computer** Aktivität angegeben).<br/> |
+|HochgeLadene Dateien in die Dokumentbibliothek  <br/> |FileSyncUploadedFull  <br/> |Der Benutzer richtet eine Synchronisierungsbeziehung ein und lädt Dateien zum ersten Mal vom Computer in eine Dokumentbibliothek hoch.  <br/> |
+|HochgeLadene Dateiänderungen an der Dokumentbibliothek  <br/> |FileSyncUploadedPartial  <br/> |Der Benutzer lädt Änderungen an Dateien in einer Dokumentbibliothek erfolgreich hoch. Dieses Ereignis gibt an, dass alle Änderungen, die an der lokalen Version einer Datei aus einer Dokumentbibliothek vorgenommen wurden, erfolgreich in die Dokumentbibliothek hochgeladen werden. Nur Änderungen werden entladen, da diese Dateien zuvor vom Benutzer hochgeladen wurden (wie in der * * uploaded files to Document Library * * Activity angegeben).  <br/> |
 ||||
   
-### <a name="site-administration-activities"></a>Site-Verwaltungsaktivitäten
+### <a name="site-administration-activities"></a>Aktivitäten der Websiteverwaltung
   
-Die folgende Tabelle enthält die Ereignisse, die von Site-Administrationsaufgaben in SharePoint Online.
+In der folgenden Tabelle sind die Ereignisse aufgeführt, die sich aus Websiteverwaltungsaufgaben in SharePoint Online ergeben.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Ausgenommene Benutzer-Agent hinzugefügt  <br/> |ExemptUserAgentSet  <br/> |Eine SharePoint oder globaler Administrator Fügt einen Benutzer-Agent zur Liste der ausgenommene Benutzer-Agents in der SharePoint-Verwaltungskonsole.  <br/> |
-|Hinzugefügte Websitesammlungs-Administrator  <br/> |SiteCollectionAdminAdded  <br/> |Websitesammlungs-Administrator oder Besitzer eine Person, die als ein Websitesammlungsadministrator für eine Website hinzugefügt werden. Websitesammlungsadministratoren haben Vollzugriff-Berechtigungen für die Websitesammlung und aller Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator selbst Zugriff auf ein Benutzerkonto OneDrive haben (nach dem Benutzerprofil in der SharePoint-Verwaltungskonsole oder [mithilfe von Office 365 Administrationscenter](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)bearbeiten).<br/> |
-|(kein Rahmen)  <br/> |SiteCollectionAdminRemoved <br/> |Websitesammlungs-Administrator oder Besitzer entfernt eine Person als Websitesammlungsadministrator für eine Website. Diese Aktivität wird auch protokolliert, wenn ein Administrator selbst aus der Liste der Websitesammlungsadministratoren für ein Benutzerkonto OneDrive entfernt (nach dem Benutzerprofil im SharePoint Administrationscenter bearbeiten).  Beachten Sie, dass wenn diese Aktivität in den Suchergebnissen für Audit Log zurückgeben möchten, Sie für alle Aktivitäten zu suchen müssen. <br/> |
-|Hinzugefügte Benutzer oder Gruppen zu SharePoint-Gruppe  <br/> |AddedToGroup  <br/> |Benutzer werden ein Element oder Gast zu einer SharePoint-Gruppe hinzugefügt. Dies möglicherweise eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität, wie ein Ereignis sharing wurden.  <br/> |
-|Zulässige Benutzer zum Erstellen von Gruppen  <br/> |AllowGroupCreationSet  <br/> |Websiteadministrator oder Besitzer Fügt eine Berechtigungsstufe auf einer Website, die einem Benutzer ermöglicht, die Berechtigung zum Erstellen einer Gruppe für diesen Standort zugewiesen.  <br/> |
-|Geo abgebrochen Website verschieben  <br/> |SiteGeoMoveCancelled  <br/> |Eine SharePoint oder globaler Administrator hebt erfolgreich eine SharePoint oder OneDrive Website Geo verschoben werden. Die Multi-Geo-Funktion können eine Office 365-Organisation mehrere Regionen für die Office 365-Datacenter, umfassen die Geos bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
-|Geändert von einer Freigaberichtlinie  <br/> |SharingPolicyChanged  <br/> |Eine SharePoint globaler Administrator geändert oder eine SharePoint Freigaberichtlinie mithilfe der Office 365-Verwaltungsportal, SharePoint-Admin-Portal oder SharePoint Online-Verwaltungsshell. Jede Änderung an den Einstellungen in die Freigaberichtlinie in Ihrer Organisation wird angemeldet sein. Die Richtlinie, die geändert wurde, wird im Feld **geänderte Eigenschaften** in die Detailangaben zu den Eigenschaften des Datensatzes identifiziert.<br/> |
-|Gerät Zugriffsrichtlinie geändert  <br/> |DeviceAccessPolicyChanged  <br/> |Eine SharePoint oder der globale Administrator hat die nicht verwalteten Geräten-Richtlinie für Ihre Organisation geändert. Diese Richtlinie steuert den Zugriff auf SharePoint, OneDrive und Office 365 von Geräten, die Ihre Organisation verknüpft werden. Konfigurieren diese Richtlinie erfordert eine Enterprise-Mobilität + Security-Abonnement. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).<br/> |
-|Geänderte ausgenommene Benutzer-agents  <br/> |CustomizeExemptUsers  <br/> |Eine SharePoint oder globaler Administrator angepasst die Liste der ausgenommene Benutzer-Agents in der SharePoint-Verwaltungskonsole. Sie können die Benutzer-Agents zu erhalten, eine gesamte Webseite Index ausgenommen angeben. Dies bedeutet, dass wenn eine Benutzer-Agent, der Sie ein InfoPath-Formular als ausgenommen stößt angegeben haben, wird das Formular als XML-Datei, anstatt eine gesamte Webseite zurückgegeben werden soll. Dies beschleunigt Indizierung InfoPath-Formularen.  <br/> |
-|Netzwerk-Zugriffsrichtlinie geändert  <br/> |NetworkAccessPolicyChanged  <br/> |Ein SharePoint oder globaler Administrator sich die standortbasierte Zugriffsrichtlinie (auch als eine vertrauenswürdige Netzwerkgrenze bezeichnet) in der SharePoint-Verwaltungskonsole oder mithilfe von SharePoint Online-PowerShell geändert. Dieser Typ der Richtlinie-Steuerelemente, die SharePoint- und OneDrive Ressourcen in einer Organisation anhand von autorisierten IP-Adressbereiche, die Sie angeben zugreifen können. Weitere Informationen finden Sie unter [Steuern des Zugriffs auf SharePoint Online und OneDrive Daten basierend auf Speicherort im Netzwerk](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).<br/> |
-|Abgeschlossene Website Geo verschieben  <br/> |SiteGeoMoveCompleted  <br/> |Eine Website Geo Verschiebung, die durch ein globaler Administrator in Ihrer Organisation geplant wurde wurde erfolgreich abgeschlossen. Die Multi-Geo-Funktion können eine Office 365-Organisation mehrere Regionen für die Office 365-Datacenter, umfassen die Geos bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
-|Erstellte Gruppe  <br/> |GroupAdded  <br/> |Websiteadministrator oder Besitzer erstellt eine Gruppe für eine Website oder führt eine Aufgabe, die Ergebnisse in einer Gruppe erstellt wird. Beispielsweise wird erstmals ein Benutzer einen Link, um eine Dateifreigabe erstellt, eine Systemgruppe OneDrive for Business-Standort des Benutzers hinzugefügt. Dieses Ereignis kann auch ein Ergebnis eines Benutzers erstellen eine Verknüpfung mit Berechtigungen für eine freigegebene Datei bearbeiten.  <br/> |
-|Erstellte Verbindung senden an  <br/> |SendToConnectionAdded  <br/> |Eine SharePoint oder globaler Administrator erstellt eine neue Verbindung senden an auf der Seite Records Management in der SharePoint-Verwaltungskonsole. Eine Verbindung zum Senden an gibt die Einstellungen für einem Dokumentrepository oder einem Datenarchiv. Wenn Sie eine Verbindung zum Senden an erstellen, können die Inhaltsorganisation Dokumente an der angegebenen Position übermitteln.  <br/> |
-|Erstellten Websitesammlung  <br/> |SiteCollectionCreated  <br/> |Eine SharePoint oder globaler Administrator erstellt eine neue Websitesammlung in die SharePoint Online-Organisation oder ein Benutzer bereitgestellt wird, ihre OneDrive for Business-Site.  <br/> |
-|Gelöschte Gruppe  <br/> |GroupRemoved  <br/> |Benutzer löscht eine Gruppe aus einer Website.  <br/> |
-|Gelöschte Verbindung senden an  <br/> |SendToConnectionRemoved  <br/> |Eine SharePoint oder globaler Administrator Löscht eine Verbindung senden an auf der Seite Records Management in der SharePoint-Verwaltungskonsole.  <br/> |
-|Gelöschte Website  <br/> |SiteDeleted  <br/> |Websiteadministrator eine Website gelöscht.  <br/> |
-|Dokumentvorschau aktiviert  <br/> |PreviewModeEnabledSet  <br/> |Websiteadministrator kann Dokumentvorschau für eine Website.  <br/> |
-|Legacy-Workflow aktiviert  <br/> |LegacyWorkflowEnabledSet  <br/> |Websiteadministrator oder Besitzer fügt der Website den Inhaltstyp für SharePoint 2013-Workflowtask hinzu. Globale Administratoren können auch im SharePoint Admin Center Workflows für die gesamte Organisation aktivieren.  <br/> |
-|Aktiviert Office on Demand  <br/> |OfficeOnDemandSet  <br/> |Websiteadministrator ermöglicht Office on Demand, dem Benutzer die neueste Version des Office-desktopanwendungen zugreifen kann. Office on Demand ist aktiviert, in der SharePoint-Verwaltungskonsole und erfordert ein Office 365-Abonnement, die vollständige, installierte Office-Clientanwendungen enthält.  <br/> |
-|Aktivierte RSS-feeds  <br/> |NewsFeedEnabledSet  <br/> |Websiteadministrator oder Besitzer können RSS-Feeds für eine Website. Globale Administratoren können RSS-Feeds für die gesamte Organisation im SharePoint Administrationscenter aktivieren.  <br/> |
-|Geänderte zugriffsanforderung festlegen  <br/> |WebRequestAccessModified  <br/> |Die Einstellungen für die Anforderung wurden auf einer Website geändert.  <br/> |
-|Geänderte Elemente können freigeben-Einstellung  <br/> |WebMembersCanShareModified  <br/> |Die Einstellung **Mitglieder können freigeben** wurde auf einer Website geändert.  <br/> |
-|Geänderte Projektwebsite-Berechtigungen  <br/> |SitePermissionsModified  <br/> |Websiteadministrator oder Besitzer (oder Systemkonto) ändert sich die Berechtigungsstufe, die eine Gruppe auf einer Website zugeordnet sind. Diese Aktivität wird auch protokolliert, wenn alle Berechtigungen aus einer Gruppe entfernt werden.<br/> > [!NOTE]>, die diesen Vorgang in SharePoint Online veraltet ist. Damit Ereignisse ermittelt wird, können Sie für andere Aktivitäten Berechtigungen in Zusammenhang stehen, wie **Websitesammlungsadministrator hinzugefügt**, **Es wurden Benutzer oder eine Gruppe zu SharePoint-Gruppe**, **Zugelassene Benutzer zum Erstellen von Gruppen**, **Gruppe erstellt**und **Deleted suchen Gruppe.**         |
-|Benutzer oder eine Gruppe von SharePoint-Gruppe entfernt.  <br/> |RemovedFromGroup  <br/> |Benutzer entfernt ein Element oder Gast aus einer SharePoint-Gruppe an. Dies kann eine beabsichtigte Aktion oder das Ergebnis einer anderen Aktivität, wie ein Ereignis Sperren wurden.  <br/> |
-|Umbenannte Website  <br/> |SiteRenamed  <br/> |Benennt Websiteadministrator oder Besitzer eine Website  <br/> |
-|Administratorberechtigungen für die angeforderte Website  <br/> |SiteAdminChangeRequest  <br/> |Benutzeranfragen als ein Websitesammlungsadministrator für eine Websitesammlung hinzugefügt werden soll. Websitesammlungsadministratoren haben Vollzugriff-Berechtigungen für die Websitesammlung und aller Unterwebsites.  <br/> |
-|Geo geplanten Website verschieben  <br/> |SiteGeoMoveScheduled  <br/> |Eine SharePoint oder globaler Administrator plant erfolgreich eine SharePoint oder OneDrive Website Geo verschoben werden. Die Multi-Geo-Funktion können eine Office 365-Organisation mehrere Regionen für die Office 365-Datacenter, umfassen die Geos bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
-|Set-Hostwebsite  <br/> |HostSiteSet  <br/> |Eine SharePoint oder globaler Administrator festgelegte Website zum Hosten von persönlichen oder OneDrive für Websites mit Geschäftsdaten geändert.  <br/> |
-|Aktualisierte Gruppe  <br/> |GroupUpdated  <br/> |Websiteadministrator oder Besitzer die Einstellungen einer Gruppe für eine Website geändert. Dazu kann gehören, ändern den Namen der Gruppe, anzeigen oder Bearbeiten der Gruppenmitgliedschaft und wie Mitgliedschaft Anforderungen behandelt werden kann.  <br/> |
+|Freigestellter Benutzer-Agent HinzugeFügt  <br/> |ExemptUserAgentSet  <br/> |Ein SharePoint-oder globaler Administrator fügt einen Benutzer-Agent zur Liste der ausgenommenen Benutzer-Agents im SharePoint Admin Center hinzu.  <br/> |
+|Websitesammlungsadministrator HinzugeFügt  <br/> |SiteCollectionAdminAdded  <br/> |Der Websitesammlungsadministrator oder-Besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriffsberechtigungen für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (indem er das Benutzerprofil im SharePoint Admin Center oder [mithilfe des Office 365 admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)bearbeitet).<br/> |
+|keine  <br/> |SiteCollectionAdminRemoved <br/> |Der Websitesammlungsadministrator oder-Besitzer entfernt eine Person als Websitesammlungsadministrator für eine Website. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst aus der Liste der Websitesammlungsadministratoren für das OneDrive-Konto eines Benutzers entfernt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center).  Beachten Sie, dass Sie nach allen Aktivitäten suchen müssen, um diese Aktivität in den Suchergebnissen des Überwachungsprotokolls zurückzugeben. <br/> |
+|Benutzer oder Gruppe zu SharePoint-Gruppe HinzugeFügt  <br/> |AddedToGroup  <br/> |Der Benutzer hat ein Mitglied oder einen Gast zu einer SharePoint-Gruppe hinzugefügt. Dies ist möglicherweise eine absichtliche Aktion oder das Ergebnis einer anderen Aktivität, wie etwa ein Freigabe Ereignis.  <br/> |
+|Berechtigte Benutzer zum Erstellen von Gruppen  <br/> |AllowGroupCreationSet  <br/> |Der Websiteadministrator oder-Besitzer fügt eine Berechtigungsstufe zu einer Website hinzu, die es einem Benutzer ermöglicht, die Berechtigung zum Erstellen einer Gruppe für diese Website zuzuweisen.  <br/> |
+|Gelöschte Website Geo-Verschiebung  <br/> |SiteGeoMoveCancelled  <br/> |Ein SharePoint-oder globaler Administrator bricht erfolgreich eine SharePoint-oder OneDrive Site Geo-Verschiebung ab. Die Multi-Geo-Funktion ermöglicht eine Office 365-Organisation, die mehrere Office 365-Datencenter-geographies umfasst, die GEOS genannt werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
+|Ändern einer Freigaberichtlinie  <br/> |SharingPolicyChanged  <br/> |Ein SharePoint-oder globaler Administrator hat eine SharePoint-Freigaberichtlinie mithilfe des Office 365-Verwaltungsportals, des SharePoint-Verwaltungsportals oder der SharePoint Online-Verwaltungsshell geändert. Jede Änderung an den Einstellungen in der Freigaberichtlinie in Ihrer Organisation wird protokolliert. Die geänderte Richtlinie wird im Feld **ModifiedProperties** in den detaillierten Eigenschaften des Ereignisdatensatzes identifiziert.<br/> |
+|Geänderte Gerätezugriffs Richtlinie  <br/> |DeviceAccessPolicyChanged  <br/> |Ein SharePoint-oder globaler Administrator hat die Richtlinie für nicht verwaltete Geräte für Ihre Organisation geändert. Diese Richtlinie steuert den Zugriff auf SharePoint, OneDrive und Office 365 von Geräten, die nicht mit Ihrer Organisation verbunden sind. Zum Konfigurieren dieser Richtlinie ist ein Enterprise Mobility +-Sicherheitsabonnement erforderlich. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).<br/> |
+|Geänderte Ausgeschlossene Benutzer-Agents  <br/> |CustomizeExemptUsers  <br/> |Ein SharePoint-oder globaler Administrator hat die Liste der ausgenommenen Benutzer-Agents im SharePoint Admin Center angepasst. Sie können angeben, welche Benutzer-Agents vom Empfang einer vollständigen Webseite zu indizieren sind. Wenn ein Benutzer-Agent, den Sie als ausgenommen angegeben haben, ein InfoPath-Formular findet, wird das Formular anstelle einer gesamten Webseite als XML-Datei zurückgegeben. Dadurch wird die Indizierung von InfoPath-Formularen beschleunigt.  <br/> |
+|Geänderte Netzwerkzugriffsrichtlinie  <br/> |NetworkAccessPolicyChanged  <br/> |Ein SharePoint-oder globaler Administrator hat die standortbasierte Zugriffsrichtlinie (auch als vertrauenswürdige Netzwerkgrenze bezeichnet) im SharePoint Admin Center oder mithilfe von SharePoint Online PowerShell geändert. Dieser Richtlinientyp steuert, wer auf SharePoint-und OneDrive-Ressourcen in Ihrer Organisation basierend auf autorisierten IP-Adressbereichen zugreifen kann, die Sie angeben. Weitere Informationen finden Sie unter [Steuern des Zugriffs auf SharePoint Online-und OneDrive-Daten basierend auf dem Netzwerkspeicherort](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).<br/> |
+|Abgeschlossene Website Geo-Verschiebung  <br/> |SiteGeoMoveCompleted  <br/> |Eine Standort Geo-Verschiebung, die von einem globalen Administrator in Ihrer Organisation geplant wurde, wurde erfolgreich abgeschlossen. Die Multi-Geo-Funktion ermöglicht eine Office 365-Organisation, die mehrere Office 365-Datencenter-geographies umfasst, die GEOS genannt werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
+|Erstellte Gruppe  <br/> |GroupAdded  <br/> |Der Websiteadministrator oder-Besitzer erstellt eine Gruppe für eine Website oder führt eine Aufgabe aus, die dazu führt, dass eine Gruppe erstellt wird. Wenn ein Benutzer zum ersten Mal einen Link zum Freigeben einer Datei erstellt, wird eine Systemgruppe zur OneDrive für Business-Website des Benutzers hinzugefügt. Dieses Ereignis kann auch darauf hinweisen, dass ein Benutzer eine Verknüpfung mit Bearbeitungsberechtigungen für eine freigegebene Datei erstellt.  <br/> |
+|Erstellt an Connection  <br/> |SendToConnectionAdded  <br/> |Ein SharePoint-oder globaler Administrator erstellt eine neue Verbindung senden an auf der Seite Datensatzverwaltung im SharePoint Admin Center. Eine Sende-an-Verbindung gibt Einstellungen für ein Dokument-Repository oder ein Datenarchiv an. Wenn Sie eine senden-an-Verbindung erstellen, kann ein Inhalts Organisator Dokumente an den angegebenen Speicherort übermitteln.  <br/> |
+|Erstellte Websitesammlung  <br/> |SiteCollectionCreated  <br/> |Ein SharePoint-oder globaler Administrator erstellt eine neue Websitesammlung in Ihrer SharePoint Online-Organisation, oder ein Benutzer stellt die OneDrive for Business-Website bereit.  <br/> |
+|Gelöschte Gruppe  <br/> |GroupRemoved  <br/> |Der Benutzer löscht eine Gruppe aus einer Website.  <br/> |
+|Gelöscht an Verbindung gesendet  <br/> |SendToConnectionRemoved  <br/> |Ein SharePoint-oder globaler Administrator löscht eine senden-an-Verbindung auf der Seite Datensatzverwaltung im SharePoint Admin Center.  <br/> |
+|Gelöschte Website  <br/> |SiteDeleted  <br/> |Websiteadministrator löscht eine Website.  <br/> |
+|Aktivierte Dokumentvorschau  <br/> |PreviewModeEnabledSet  <br/> |Der Websiteadministrator aktiviert die Dokumentvorschau für eine Website.  <br/> |
+|Aktivierter Legacy Workflow  <br/> |LegacyWorkflowEnabledSet  <br/> |Websiteadministrator oder Besitzer fügt der Website den Inhaltstyp für SharePoint 2013-Workflowtask hinzu. Globale Administratoren können auch im SharePoint Admin Center Workflows für die gesamte Organisation aktivieren.  <br/> |
+|Aktivieren von Office bei Bedarf  <br/> |OfficeOnDemandSet  <br/> |Der Websiteadministrator aktiviert Office on Demand, sodass Benutzer auf die neueste Version von Office-Desktopanwendungen zugreifen können. Office on Demand ist im SharePoint Admin Center aktiviert und erfordert ein Office 365-Abonnement, das vollständige, installierte Office-Anwendungen enthält.  <br/> |
+|Aktivierte RSS-Feeds  <br/> |NewsFeedEnabledSet  <br/> |Der Websiteadministrator oder-Besitzer aktiviert RSS-Feeds für eine Website. Globale Administratoren können RSS-Feeds für die gesamte Organisation im SharePoint Admin Center aktivieren.  <br/> |
+|Geänderte Zugriffs Anforderungs Einstellung  <br/> |WebRequestAccessModified  <br/> |Die Einstellungen für die Zugriffsanforderung wurden auf einer Website geändert.  <br/> |
+|Geänderte Elemente können die Einstellung freigeben  <br/> |WebMembersCanShareModified  <br/> |Die Einstellung der **Mitglieder kann** auf einer Website geändert werden.  <br/> |
+|Geänderte Websiteberechtigungen  <br/> |SitePermissionsModified  <br/> |Websiteadministrator oder Besitzer (oder Systemkonto) ändert die Berechtigungsstufe, die einer Gruppe auf einer Website zugewiesen ist. Diese Aktivität wird auch protokolliert, wenn alle Berechtigungen aus einer Gruppe entfernt werden.<br/> > [!NOTE]> dieser Vorgang ist in SharePoint Online veraltet. Zum Suchen nach verwandten Ereignissen können Sie nach anderen Berechtigungs bezogenen Aktivitäten wie **Hinzufügen des Websitesammlungsadministrators**, **Hinzufügen von Benutzer oder Gruppen zu SharePoint-Gruppen**, Benutzer **Gruppen erstellen**, **erstellte Gruppe**und gelöscht suchen. ** Group.**         |
+|Benutzer oder Gruppe aus SharePoint-Gruppe entfernt  <br/> |RemovedFromGroup  <br/> |Der Benutzer hat ein Mitglied oder einen Gast aus einer SharePoint-Gruppe entfernt. Dies ist möglicherweise eine absichtliche Aktion oder das Ergebnis einer anderen Aktivität, beispielsweiseeines Unsharing-Ereignisses.  <br/> |
+|UmBenannte Website  <br/> |SiteRenamed  <br/> |Websiteadministrator oder Besitzer benennt eine Website um  <br/> |
+|Angeforderte Websiteadministrator Berechtigungen  <br/> |SiteAdminChangeRequest  <br/> |Benutzeranforderungen, die als Websitesammlungsadministrator für eine Websitesammlung hinzugefügt werden sollen. Websitesammlungsadministratoren verfügen über Vollzugriffsberechtigungen für die Websitesammlung und alle Unterwebsites.  <br/> |
+|Geplante Standort Geo-Verschiebung  <br/> |SiteGeoMoveScheduled  <br/> |Ein SharePoint-oder globaler Administrator plant erfolgreich eine SharePoint-oder OneDrive Site Geo-Verschiebung. Die Multi-Geo-Funktion ermöglicht eine Office 365-Organisation, die mehrere Office 365-Datencenter-geographies umfasst, die GEOS genannt werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
+|Festlegen der Hostwebsite  <br/> |HostSiteSet  <br/> |Ein SharePoint-oder globaler Administrator ändert die designierte Website, um persönliche oder OneDrive for Business-Websites zu hosten.  <br/> |
+|Aktualisierte Gruppe  <br/> |GroupUpdated  <br/> |Der Websiteadministrator oder Besitzer ändert die Einstellungen einer Gruppe für eine Website. Dazu gehört das Ändern des Gruppennamens, der die Gruppenmitgliedschaft anzeigen oder bearbeiten kann und wie Mitgliedschaftsanfragen behandelt werden.  <br/> |
 ||||
   
-### <a name="exchange-mailbox-activities"></a>Exchange-Postfach-Aktivitäten
+### <a name="exchange-mailbox-activities"></a>Exchange-Postfachaktivitäten
   
-Die folgende Tabelle enthält die Aktivitäten, die vom Postfach protokolliert werden können postfachüberwachungsprotokollierung. Postfach Aktivitäten von den Besitzer des Postfachs, ein delegierte Benutzer oder Administrator angemeldet sind. Standardmäßig ist nicht Überwachung von Postfächern in Office 365 aktiviert. Mailbox Audit Logging muss aktiviert werden für jedes Postfach vor dem Postfach Aktivität protokolliert werden. Weitere Informationen finden Sie unter [Aktivieren der Überwachung in Office 365 Postfach](https://go.microsoft.com/fwlink/p/?LinkID=626109).
+In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfachüberwachungsprotokollierung protokolliert werden können. Postfachaktivitäten, die vom Postfachbesitzer, einem Delegierten Benutzer oder einem Administrator ausgeführt werden, werden protokolliert. Die postfachüberwachung in Office 365 ist standardmäßig nicht aktiviert. Die postfachüberwachungsprotokollierung muss für jedes Postfach aktiviert sein, bevor die Post Fach Aktivität protokolliert wird. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Hinzugefügten Stellvertretung Postfachberechtigungen  <br/> |Add-MailboxPermission  <br/> |Ein Administrator hat die Berechtigung FullAccess Postfach an einen Benutzer (als Stellvertreter bezeichnet) an eine andere Person Postfach festgelegt. Die Berechtigung FullAccess ermöglicht es der Stellvertretung zum Öffnen des anderen Teilnehmers Postfach, und lesen und den Inhalt des Postfachs verwalten.  <br/> |
-|Die kopierten Nachrichten in einen anderen Ordner  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
-|Erstellte Postfach-Element  <br/> |Erstellen  <br/> |Ein Element wird in den Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht wird nicht überwacht. Erstellen einen Postfachordner wird auch nicht überwacht.  <br/> |
-|Gelöschte Nachrichten aus dem Ordner Gelöschte Elemente  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner Gelöschte Elemente gelöscht. Diese Elemente werden in den Ordner "wiederherstellbare Elemente" verschoben. Nachrichten werden auch in den Ordner wiederherstellbare Elemente verschoben, wenn ein Benutzer wählt sie aus, und drücken **UMSCHALT + ENTF**.<br/> |
+|Stellvertretungs-Postfachberechtigungen HinzugeFügt  <br/> |Add-MailboxPermission  <br/> |Ein Administrator hat dem Postfach einer anderen Person die Berechtigung FullAccess-Postfach für einen Benutzer (als Stellvertretung bezeichnet) zugewiesen. Die FullAccess-Berechtigung ermöglicht es der Stellvertretung, das Postfach der anderen Person zu öffnen und den Inhalt des Postfachs zu lesen und zu verwalten.  <br/> |
+|Nachrichten in einen anderen Ordner kopiert  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
+|Erstelltes Postfachelement  <br/> |Erstellen  <br/> |Ein Element wird im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
+|Gelöschte Nachrichten aus Ordner "Gelöschte Elemente"  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft aus dem Ordner "Gelöschte Elemente" gelöscht oder gelöscht. Diese Elemente werden in den Ordner "Wiederherstellbare Elemente" verschoben. Nachrichten werden auch in den Ordner "Wiederherstellbare Elemente" verschoben, wenn ein Benutzer Sie auswählt und **UMSCHALT + ENTF**drückt.<br/> |
 |Nachrichten in einen anderen Ordner verschoben  <br/> |Verschieben  <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |
-|Nachrichten in Ordner Gelöschte Elemente verschoben  <br/> |MoveToDeletedItems  <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
-|Geänderte Ordnerberechtigungen  <br/> |UpdateFolderPermissions  <br/> |Eine Ordnerberechtigung wurde geändert. Ordner Berechtigungen-steuern, welche Benutzer in Ihrer Organisation Postfachordner und die Nachrichten im Ordner zugreifen können.  <br/> |
-|Gelöschten Nachrichten aus dem Postfach  <br/> |HardDelete  <br/> |Eine Nachricht wurde aus "wiederherstellbare Elemente" (dauerhaft aus dem Postfach gelöscht) gelöscht.  <br/> |
-|Entfernte Delegat Postfachberechtigungen  <br/> |Remove-MailboxPermission  <br/> |Ein Administrator entfernt die Berechtigung FullAccess (die Stellvertreter zugewiesen wurde) aus einer Person Postfach. Nachdem die Berechtigung FullAccess entfernt wurde, kann nicht die Stellvertretung Öffnen des anderen Teilnehmers Postfach oder Zugriff auf alle Inhalte darin.  <br/> |
-|Gesendete Nachricht mit der Berechtigung Senden als  <br/> |"SendAs"  <br/> |Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.  <br/> |
-|Nachricht gesendet Senden im Auftrag von Berechtigungen  <br/> |Sendonbehalf werden standardmäßig  <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |
-|Aktualisierte Delegieren des Zugriffs auf Kalenderordner  <br/> |UpdateCalendarDelegation  <br/> |Eine kalenderdelegierung wurde eines Postfachs zugewiesen. Kalenderdelegierung ermöglicht eine andere Person in der gleichen Organisationsberechtigungen zum Verwalten des Postfachbesitzers Kalenders.  <br/> |
+|Nachrichten in Ordner "Gelöschte Elemente" verschoben  <br/> |MoveToDeletedItems  <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
+|Berechtigung für geänderte Ordner  <br/> |UpdateFolderPermissions  <br/> |Eine Ordnerberechtigung wurde geändert. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Postfachordner und die Nachrichten im Ordner zugreifen können.  <br/> |
+|Gelöschte Nachrichten aus dem Postfach  <br/> |HardDelete  <br/> |Eine Nachricht wurde aus dem Ordner "Wiederherstellbare Elemente" entfernt (dauerhaft aus dem Postfach gelöscht).  <br/> |
+|Berechtigungen für Stellvertreter Postfächer entfernt  <br/> |Remove-MailboxPermission  <br/> |Ein Administrator hat die FullAccess-Berechtigung (die einem Stellvertreter zugewiesen wurde) aus dem Postfach einer Person entfernt. Nachdem die FullAccess-Berechtigung entfernt wurde, kann die Stellvertretung das Postfach der anderen Person nicht öffnen oder auf Inhalte zugreifen.  <br/> |
+|Gesendete Nachricht unter Verwendung der Berechtigung "Senden als"  <br/> |SendAs  <br/> |Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.  <br/> |
+|Gesendete Nachricht mithilfe von "Senden im Auftrag von"-Berechtigungen  <br/> |SendOnBehalf  <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |
+|Aktualisierter Stellvertretungszugriff auf Kalenderordner  <br/> |UpdateCalendarDelegation  <br/> |Einem Postfach wurde eine Kalender Delegierung zugewiesen. Die Kalender Delegierung erteilt anderen Benutzern in derselben Organisation Berechtigungen zum Verwalten des Kalenders des Postfachbesitzers.  <br/> |
 |Aktualisierte Nachricht  <br/> |Aktualisieren  <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |
-|Benutzer, die im Postfach angemeldet  <br/> |MailboxLogin  <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |
-|(kein Rahmen)  <br/> |UpdateInboxRules  <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. Posteingangsregeln dienen zum Verarbeiten von Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen und Aktionen, wenn die Bedingung einer Regel erfüllt sind, wie eine Nachricht in einen bestimmten Ordner verschieben oder Löschen einer Nachricht.<br/> Zum Zurückgeben von Einträgen für Posteingang Regel Aktivitäten, müssen Sie **Ergebnisse für alle Aktivitäten** in der Liste der **Aktivitäten** aus. Verwenden Sie den Bereich Datumsfeldern und **der Benutzerliste** , um die Suchergebnisse einzuschränken.<br/> |
+|Benutzer bei Postfach angemeldet  <br/> |Mailbox Login:  <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |
+|keine  <br/> |UpdateInboxRules  <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. PostEingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen auszuführen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen bestimmten Ordner oder das Löschen einer Nachricht.<br/> Wenn Sie Einträge für Posteingangsregel Aktivitäten zurückgeben möchten, müssen Sie in der Liste **Aktivitäten** die Option **Ergebnisse für alle Aktivitäten anzeigen** auswählen. Verwenden Sie die Felder Datumsbereiche und **Benutzer** , um die Suchergebnisse einzuschränken.<br/> |
 ||||
   
-### <a name="sway-activities"></a>Sway Aktivitäten
+### <a name="sway-activities"></a>Sway-Aktivitäten
   
-Die folgende Tabelle enthält die Benutzer- und Admin Aktivitäten in Schlingern. Schlingern ist eine Office 365-app, die Benutzer zu erfassen, formatieren und Freigeben von Ideen, Textabschnitte und Präsentationen auf eine interaktive, webbasierte Zeichenbereich helfen. Weitere Informationen finden Sie unter [häufig gestellte Fragen zu Schlingern - Admin-Hilfe](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
+In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Sway aufgeführt. Sway ist eine Office 365-APP, die Benutzern hilft, Ideen, Geschichten und Präsentationen auf einer interaktiven, webbasierten Leinwand zu sammeln, zu formatieren und zu teilen. Weitere Informationen finden Sie unter [häufig gestellte Fragen zu Sway-Admin-Hilfe](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Geänderte Schlingern Freigabe-Ebene  <br/> |SwayChangeShareLevel  <br/> |Benutzer, die Zugriffsebene Freigeben einer Schlingern ändert. Dieses Ereignis erfasst den Benutzer ändern den Bereich der Freigabe einer Schlingern zugeordnet. beispielsweise Öffentliche im Vergleich zu innerhalb der Organisation.  <br/> |
-|Erstellte Schlingern  <br/> |SwayCreate  <br/> |Benutzer erstellt eine Schlingern.  <br/> |
-|Gelöschte Schlingern  <br/> |SwayDelete  <br/> |Benutzer löscht eine Schlingern.  <br/> |
-|Deaktivierte Schlingern Duplizierung  <br/> |SwayDisableDuplication  <br/> |Benutzer wird die Duplizierung von einer Schlingern deaktiviert.  <br/> |
-|Duplizierte Schlingern  <br/> |SwayDuplicate  <br/> |Benutzer dupliziert eine Schlingern.  <br/> |
-|Bearbeitete Schlingern  <br/> |SwayEdit  <br/> |Benutzer bearbeitet ein Schlingern.  <br/> |
-|Aktivierte Schlingern Duplizierung  <br/> |EnableDuplication  <br/> |Benutzer kann die Duplizierung von einer Schlingern. die Möglichkeit, um die Duplizierung von einem Schlingern zu ermöglichen, ist standardmäßig aktiviert.  <br/> |
-|Gesperrte Schlingern Freigabe  <br/> |SwayRevokeShare  <br/> |Freigeben einer Schlingern durch Aufheben der Zugriff darauf beendet. Widerrufen des Zugriffs ändert die Links eine Schlingern zugeordnet.  <br/> |
-|Freigegebene Schlingern  <br/> |SwayShare  <br/> |Benutzer beabsichtigt, eine Schlingern freigeben. Dieses Ereignis erfasst die Aktion des Benutzers auf bestimmte Freigabeziel in das Menü Schlingern freigeben. Das Ereignis gibt nicht an, ob der Benutzer die Freigabe Aktion ausgeführt.  <br/> |
-|Externe Freigabe von Schlingern deaktiviert  <br/> |SwayExternalSharingOff  <br/> |Administrator deaktiviert externe Schlingern Freigabe für die gesamte Organisation mithilfe der Office 365-Verwaltungskonsole.  <br/> |
-|Externe Freigabe von Schlingern aktiviert  <br/> |SwayExternalSharingOn  <br/> |Administrator kann externe Schlingern Freigabe für die gesamte Organisation mithilfe der Office 365-Verwaltungskonsole.  <br/> |
-|Schlingern Service deaktiviert  <br/> |SwayServiceOff  <br/> |Administrator deaktiviert Schlingern für die gesamte Organisation mithilfe der Office 365-Verwaltungskonsole.  <br/> |
-|Schlingern Service aktiviert  <br/> |SwayServiceOn  <br/> |Administrator kann Schlingern für die gesamte Organisation mithilfe des Office 365 Administrationscenter (Schlingern Dienst in der Standardeinstellung aktiviert ist).  <br/> |
-|Angezeigte Schlingern  <br/> |SwayView  <br/> |Benutzer zeigt eine Schlingern.  <br/> |
+|Geänderte Sway-Freigabestufe  <br/> |SwayChangeShareLevel  <br/> |Der Benutzer ändert die Freigabeebene eines Sway. Dieses Ereignis erfasst den Benutzer, der den Bereich der Freigabe ändert, die mit einem Sway verbunden ist; beispielsweise Public versus innerhalb der Organisation.  <br/> |
+|Erstellt Sway  <br/> |SwayCreate  <br/> |Der Benutzer erstellt eine Sway.  <br/> |
+|Gelöschte Sway  <br/> |SwayDelete  <br/> |Der Benutzer löscht eine Sway.  <br/> |
+|DeAktivierte Sway-Duplizierung  <br/> |SwayDisableDuplication  <br/> |Der Benutzer deaktiviert die Duplizierung eines Sway.  <br/> |
+|Duplizierte Sway  <br/> |SwayDuplicate  <br/> |Der Benutzer dupliziert eine Sway.  <br/> |
+|Bearbeitet Sway  <br/> |SwayEdit  <br/> |Benutzer bearbeitet eine Sway.  <br/> |
+|Aktivierte Sway-Duplizierung  <br/> |EnableDuplication  <br/> |Der Benutzer ermöglicht die Duplizierung einer Sway; die Möglichkeit für einen Benutzer, die Duplizierung einer Sway zu aktivieren, ist standardmäßig aktiviert.  <br/> |
+|Widerrufen der Sway-Freigabe  <br/> |SwayRevokeShare  <br/> |Der Benutzer beendet die Freigabe eines Sway durch widerrufen des Zugriffs. Beim widerrufen des Zugriffs werden die mit einem Sway verknüpften Links geändert.  <br/> |
+|Gemeinsame Sway  <br/> |SwayShare  <br/> |Der Benutzer beabsichtigt, eine Sway zu teilen. Dieses Ereignis erfasst die Benutzeraktion des Klickens auf ein bestimmtes freigabeziel im Sway-Freigabe Menü. Das Ereignis gibt nicht an, ob der Benutzer die Freigabe Aktion abgeschlossen hat.  <br/> |
+|Externe Freigabe von Sway deaktiviert  <br/> |SwayExternalSharingOff  <br/> |Der Administrator deaktiviert die externe Sway-Freigabe für die gesamte Organisation mithilfe des Office 365 Admin Center.  <br/> |
+|Aktivierte externe Freigabe von Sway  <br/> |SwayExternalSharingOn  <br/> |Der Administrator aktiviert die externe Sway-Freigabe für die gesamte Organisation mithilfe des Office 365 Admin Center.  <br/> |
+|Turned off Sway Service  <br/> |SwayServiceOff  <br/> |Der Administrator deaktiviert Sway für die gesamte Organisation mithilfe des Office 365 Admin Center.  <br/> |
+|Turned on Sway Service  <br/> |SwayServiceOn  <br/> |Der Administrator aktiviert die Sway für die gesamte Organisation mithilfe des Office 365 Admin Center (der Sway-Dienst ist standardmäßig aktiviert).  <br/> |
+|Sway  <br/> |SwayView  <br/> |Benutzeransicht ein Sway.  <br/> |
 ||||
 
   
-### <a name="user-administration-activities"></a>Die Verwaltung Benutzeraktivitäten
+### <a name="user-administration-activities"></a>Benutzer Verwaltungsaktivitäten
   
-Die folgende Tabelle enthält die Administration Benutzeraktivitäten, die protokolliert werden, wenn ein Administrator hinzufügen oder ändern ein Benutzerkonto mithilfe von Office 365 Administrationscenter oder dem Azure-Verwaltungsportal.
+In der folgenden Tabelle werden die Aktivitäten der Benutzerverwaltung aufgelistet, die protokolliert werden, wenn ein Benutzerkonto mithilfe des Office 365 admin Centers oder des Azure-Verwaltungsportals hinzugefügt oder geändert wird.
   
 |**Aktivität**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Benutzer wurde hinzugefügt.  <br/> |Benutzer hinzufügen  <br/> |Ein Office 365-Benutzerkonto erstellt wurde.  <br/> |
-|Geänderte Benutzerlizenz  <br/> |Change-Benutzerlizenz  <br/> |Die Lizenz zugewiesen, die einem Benutzer, was sich geändert hat. Um herauszufinden, welche Lizenzen Änderungen wurden, finden Sie unter den entsprechenden Benutzeraktivität **aktualisiert** .<br/> |
-|Geänderte Benutzerkennwort  <br/> |Benutzerkennwort ändern  <br/> |Administrator geändert, das Kennwort das Kennwort für einen Benutzer.  <br/> |
+|Benutzer HinzugeFügt  <br/> |Benutzer hinzufügen  <br/> |Ein Office 365-Benutzerkonto wurde erstellt.  <br/> |
+|Geänderte Benutzerlizenz  <br/> |Ändern der Benutzerlizenz  <br/> |Die einem Benutzer zugewiesene Lizenz, was geändert wurde. Informationen dazu, welche Lizenzen geändert wurden, finden Sie in der entsprechenden **aktualisierten Benutzer** Aktivität.<br/> |
+|Geändertes Benutzerkennwort  <br/> |Benutzerkennwort ändern  <br/> |Der Administrator hat das Kennwort als Kennwort für einen Benutzer geändert.  <br/> |
 |Gelöschter Benutzer  <br/> |Löschen eines Benutzers  <br/> |Ein Office 365-Benutzerkonto wurde gelöscht.  <br/> |
-|Benutzerkennwort zurücksetzen  <br/> |Benutzerkennwort zurücksetzen  <br/> |Administrator Zurücksetzen des Kennworts für einen Benutzer.  <br/> |
-|Legen Sie-Eigenschaft, die erzwingt, dass Benutzer das Kennwort ändern  <br/> |Set-Force-Benutzerkennwort ändern  <br/> |Administrator festlegen die Eigenschaft, die einen Benutzer das Ändern ihres Kennworts, das das nächste Mal Benutzer anmelden bei Office 365, erzwingt.  <br/> |
-|Lizenz-Eigenschaften festlegen  <br/> |Lizenz-Eigenschaften festlegen  <br/> |Administrator ändert die Eigenschaften einer lizenzierten einem Benutzer zugewiesen.  <br/> |
-|Aktualisierte Benutzer  <br/> |Benutzer aktualisieren  <br/> |Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos ein. Eine Liste mit den Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Benutzerattribute aktualisieren" in [Azure Active Directory Bericht Überwachungsereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
+|Benutzerkennwort zurücksetzen  <br/> |Benutzerkennwort zurücksetzen  <br/> |Der Administrator hat das Kennwort für einen Benutzer zurückgesetzt.  <br/> |
+|Eigenschaft festlegen, die den Benutzer zum Ändern des Kennworts zwingt  <br/> |Erzwingen der Änderung des Benutzerkennworts  <br/> |Administrator legen Sie die Eigenschaft fest, die es einem Benutzer erzwingt, sein Kennwort zu ändern, wenn sich der Benutzer das nächste Mal bei Office 365 anmeldet.  <br/> |
+|Festlegen von Lizenzeigenschaften  <br/> |Festlegen von Lizenzeigenschaften  <br/> |Der Administrator ändert die Eigenschaften einer einem Benutzer zugewiesenen Lizenz.  <br/> |
+|Aktualisierter Benutzer  <br/> |Benutzer aktualisieren  <br/> |Der Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos. Eine Liste der Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Aktualisieren von Benutzerattributen" in [Azure Active Directory-Überwachungsbericht Ereignissen](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
 ||||
   
-### <a name="azure-ad-group-administration-activities"></a>Azure Active Directory-Gruppe Administration Aktivitäten
+### <a name="azure-ad-group-administration-activities"></a>Verwaltungsaktivitäten der Azure AD-Gruppe
   
-Die folgende Tabelle enthält die Gruppe Verwaltung der Aktivitäten, die protokolliert werden, wenn ein Administrator oder von einem Benutzer erstellt oder eine Office 365-Gruppe ändert oder ein Administrator eine Sicherheitsgruppe mithilfe von Office 365 Administrationscenter oder dem Azure-Verwaltungsportal erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [anzeigen, erstellen und Löschen von Gruppen in Office 365 Administrationscenter](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+In der folgenden Tabelle sind die Aktivitäten der Gruppenverwaltung aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Office 365-Gruppe erstellt oder ändert oder wenn ein Administrator eine Sicherheitsgruppe mithilfe des Office 365 admin Centers oder des Azure-Verwaltungsportals erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [anzeigen, erstellen und Löschen von Gruppen im office 365 Admin Center](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Hinzugefügte Gruppe  <br/> |Gruppe hinzufügen  <br/> |Eine Gruppe erstellt wurde.  <br/> |
-|Mitglied der Gruppe hinzugefügt  <br/> |Mitglied der Gruppe hinzufügen  <br/> |Ein Mitglied wurde zu einer Gruppe hinzugefügt.  <br/> |
+|Gruppe HinzugeFügt  <br/> |Gruppe hinzufügen  <br/> |Eine Gruppe wurde erstellt.  <br/> |
+|Mitglied zu Gruppe HinzugeFügt  <br/> |Mitglied zu Gruppe hinzufügen  <br/> |Ein Mitglied wurde einer Gruppe hinzugefügt.  <br/> |
 |Gelöschte Gruppe  <br/> |Gruppe löschen  <br/> |Eine Gruppe wurde gelöscht.  <br/> |
-|Entfernte Mitglied aus Gruppe  <br/> |Mitglied aus Gruppe entfernen  <br/> |Es wurde ein Mitglied aus einer Gruppe entfernt.  <br/> |
-|Aktualisierte Gruppe  <br/> |Aktualisierungsgruppe  <br/> |Eine Eigenschaft einer Gruppe wurde geändert.  <br/> |
+|Element aus Gruppe entfernt  <br/> |Element aus Gruppe entfernen  <br/> |Ein Mitglied wurde aus einer Gruppe entfernt.  <br/> |
+|Aktualisierte Gruppe  <br/> |Gruppe aktualisieren  <br/> |Eine Eigenschaft einer Gruppe wurde geändert.  <br/> |
 ||||
    
-### <a name="application-administration-activities"></a>Anwendung Administration Aktivitäten
+### <a name="application-administration-activities"></a>Aktivitäten der Anwendungsverwaltung
   
-Die folgende Tabelle enthält die Anwendung Admin Aktivitäten, die protokolliert werden, wenn ein Administrator hinzufügen oder ändern eine Anwendung, die in Azure Active Directory registriert ist. Eine beliebige Anwendung, die Azure AD für die Authentifizierung verwendet, muss in das Verzeichnis registriert werden.
+In der folgenden Tabelle sind die Anwendungsadministrator Aktivitäten aufgeführt, die protokolliert werden, wenn ein Administrator eine in Azure AD registrierte Anwendung hinzufügt oder ändert. Alle Anwendungen, die Azure AD für die Authentifizierung benötigen, müssen im Verzeichnis registriert sein.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Hinzugefügte Delegierung-Eintrag  <br/> |Fügen Sie Delegierung Eintrag hinzu  <br/> |Eine Berechtigung für die Authentifizierung war zu einer Anwendung in Azure Active Directory erstellt/erteilt.  <br/> |
-|Hinzugefügte Dienstprinzipalnamen  <br/> |Hinzufügen von Dienstprinzipalnamen  <br/> |Eine Anwendung wurde in Azure Active Directory registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.  <br/> |
-|Hinzugefügte Anmeldeinformationen eines Prinzipals service  <br/> |Hinzufügen von Anmeldeinformationen für den Prinzipal Dienst  <br/> |Anmeldeinformationen wurden mit einem Prinzipal in Azure Active Directory-Dienst hinzugefügt. Ein Dienst Prinzip stellt eine Anwendung im Verzeichnis dar.  <br/> |
-|Entfernte Delegierung-Eintrag  <br/> |Delegierung Eintrag entfernen  <br/> |Eine Authentifizierung Berechtigung wurde von einer Anwendung in Azure Active Directory entfernt.  <br/> |
-|Entfernt einen Dienstprinzipal aus dem Verzeichnis  <br/> |Entfernen von Dienstprinzipalnamen  <br/> |Eine Anwendung wurde aus dem Azure Active Directory gelöscht/nicht registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.  <br/> |
-|Entfernte Anmeldeinformationen aus einem Dienst Prinzipal  <br/> |Principal Dienstanmeldeinformationen entfernen  <br/> |Anmeldeinformationen wurden aus einem Dienst in Azure AD principal entfernt. Ein Dienst Prinzip stellt eine Anwendung im Verzeichnis dar.  <br/> |
-|Set-Delegierung-Eintrag  <br/> |Set-Delegierung-Eintrag  <br/> |Eine Authentifizierung Berechtigung wurde für eine Anwendung in Azure Active Directory aktualisiert.  <br/> |
+|Delegierungs Eintrag HinzugeFügt  <br/> |Delegierungs Eintrag hinzufügen  <br/> |Eine Authentifizierungs Berechtigung wurde für eine Anwendung in Azure AD erstellt/erteilt.  <br/> |
+|Dienstprinzipal HinzugeFügt  <br/> |Hinzufügen eines Dienst Prinzipals  <br/> |Eine Anwendung wurde in Azure AD registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.  <br/> |
+|Anmeldeinformationen zu einem Dienstprinzipal HinzugeFügt  <br/> |Hinzufügen von Dienstprinzipal Anmeldeinformationen  <br/> |Anmeldeinformationen wurden einem Dienstprinzipal in Azure AD hinzugefügt. Ein Dienst Prinzip stellt eine Anwendung im Verzeichnis dar.  <br/> |
+|Delegierungs Eintrag entfernt  <br/> |Delegierungs Eintrag entfernen  <br/> |Eine Authentifizierungs Berechtigung wurde aus einer Anwendung in Azure AD entfernt.  <br/> |
+|Ein Dienstprinzipal wurde aus dem Verzeichnis entfernt.  <br/> |Dienstprinzipal entfernen  <br/> |Eine Anwendung wurde aus Azure AD gelöscht/nicht registriert. Eine Anwendung wird durch einen Dienstprinzipal im Verzeichnis dargestellt.  <br/> |
+|Die Anmeldeinformationen wurden aus einem Dienstprinzipal entfernt.  <br/> |Entfernen von Dienstprinzipal Anmeldeinformationen  <br/> |Anmeldeinformationen wurden aus einem Dienstprinzipal in Azure AD entfernt. Ein Dienst Prinzip stellt eine Anwendung im Verzeichnis dar.  <br/> |
+|Festlegen des Delegierungs Eintrags  <br/> |Festlegen des Delegierungs Eintrags  <br/> |Eine Authentifizierungs Berechtigung wurde für eine Anwendung in Azure AD aktualisiert.  <br/> |
 ||||
 
-### <a name="role-administration-activities"></a>Rolle Administration Aktivitäten
+### <a name="role-administration-activities"></a>Rollen Verwaltungsaktivitäten
   
-Die folgende Tabelle enthält die Azure AD-Rolle Administration Aktivitäten protokolliert werden, wenn ein Administrator Administratorrollen in Office 365 Administrationscenter oder in der Azure-Verwaltungsportal verwaltet.
+Die folgende Tabelle enthält eine Liste der Azure AD Role Administration-Aktivitäten, die protokolliert werden, wenn ein Administrator Administratorrollen im Office 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Mitglied der Rolle hinzufügen  <br/> |Fügen Sie der Rolle Rolle  <br/> |Einen Benutzer hinzugefügt zu einer Administratorrolle im Office 365.  <br/> |
-|Entfernt einen Benutzer aus einer Rolle directory  <br/> |Mitglied der Rolle von Rolle entfernen  <br/> |Entfernt einen Benutzer aus einer Administratorrolle in Office 365.  <br/> |
-|Legen Sie die Kontaktinformationen für Unternehmen  <br/> |Legen Sie die Kontaktinformationen für Unternehmen  <br/> |Aktualisiert die Unternehmensebene Kontakten Vorgaben für Office 365-Organisation. Dazu gehören e-Mail-Adressen für Abonnement-bezogene e-Mail vom Office 365 sowie technische Benachrichtigungen zu Office 365-Dienste gesendet.  <br/> |
+|Mitglied zu Rolle hinzufügen  <br/> |Rollenmitglied zu Rolle hinzufügen  <br/> |Benutzer zu einer Administratorrolle in Office 365 HinzugeFügt.  <br/> |
+|Entfernen eines Benutzers aus einer Verzeichnis Rolle  <br/> |Rollenelement aus Rolle entfernen  <br/> |Ein Benutzer wurde aus einer Administratorrolle in Office 365 entfernt.  <br/> |
+|Unternehmenskontakt Informationen festlegen  <br/> |Unternehmenskontakt Informationen festlegen  <br/> |Die Kontakteinstellungen auf Unternehmensebene für Ihre Office 365-Organisation wurden aktualisiert. Dazu gehören e-Mail-Adressen für abonnementbezogene e-Mails, die von Office 365 gesendet werden, sowie technische Benachrichtigungen zu Office 365-Diensten.  <br/> |
 ||||
    
-### <a name="directory-administration-activities"></a>Directory Administration Aktivitäten
+### <a name="directory-administration-activities"></a>Aktivitäten der Verzeichnisverwaltung
   
-Die folgende Tabelle listet Azure Active Directory Directory und Domänen-bezogenen Aktivitäten, die protokolliert werden, wenn ein Administrator ihre Office 365-Organisation in Office 365 Administrationscenter oder in der Azure-Verwaltungsportal verwaltet.
+In der folgenden Tabelle werden die Azure AD-Verzeichnis-und domänenbezogenen Aktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator die Office 365-Organisation im Office 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Hinzugefügte Domäne für Unternehmen  <br/> |Hinzufügen einer Domäne zu Unternehmen  <br/> |Eine Domäne hinzugefügt zu Office 365-Organisation.  <br/> |
-|Einen Partner hinzugefügt zum Verzeichnis.  <br/> |Hinzufügen von Partnern für Unternehmen  <br/> |Partner (delegierte Administrator) hinzugefügt zu Office 365-Organisation.  <br/> |
-|Entfernte Domäne in Unternehmen  <br/> |Entfernen von Domänen in Unternehmen  <br/> |Entfernt eine Domäne aus Office 365-Organisation.  <br/> |
-|Einen Partner entfernt aus dem Verzeichnis.  <br/> |Entfernen Sie Partner in Unternehmen  <br/> |Partner (delegierte Administrator) entfernt von Office 365-Organisation.  <br/> |
-|Set-Firmeninformationen  <br/> |Set-Firmeninformationen  <br/> |Aktualisiert die Firmeninformationen für Office 365-Organisation. Dazu gehören e-Mail-Adressen für Abonnement-bezogene e-Mail vom Office 365 sowie technische Benachrichtigungen zu Office 365-Dienste gesendet.  <br/> |
-|Festlegen der Domänenauthentifizierung  <br/> |Festlegen der Domänenauthentifizierung  <br/> |Die Einstellung für die Authentifizierung für Office 365-Organisation geändert.  <br/> |
-|Aktualisiert die verbundeinstellungen für eine Domäne  <br/> |Festlegen von verbundeinstellungen für Domäne  <br/> |Geändert (externe Freigabe) verbundeinstellungen für Office 365-Organisation.  <br/> |
-|Set-Kennwortrichtlinie  <br/> |Set-Kennwortrichtlinie  <br/> |Die Pfadlängen- und Einschränkungen für Benutzerkennwörter in Office 365-Organisation geändert.  <br/> |
-|Azure AD-Synchronisierung – aktiviert  <br/> |Festlegen von DirSyncEnabled Flag für Unternehmen  <br/> |Legen Sie die Eigenschaft, die ein Verzeichnis für Azure AD-Synchronisierung – ermöglicht.  <br/> |
-|Aktualisierte Domäne  <br/> |Domäne aktualisieren  <br/> |Aktualisiert die Einstellungen einer Domäne in Office 365-Organisation.  <br/> |
-|Überprüften Domäne  <br/> |Überprüfen der Domäne  <br/> |Sichergestellt, dass Ihre Organisation den Besitzer einer Domäne ist.  <br/> |
-|Überprüften e-Mail überprüften Domäne  <br/> |Überprüfen von e-Mail-überprüften Domäne  <br/> |Verwendeten e-Mail-Überprüfung, um sicherzustellen, dass Ihre Organisation den Besitzer einer Domäne ist.  <br/> |
+|Domäne zu Firma HinzugeFügt  <br/> |Hinzufügen einer Domäne zu Firma  <br/> |Domäne zu Ihrer Office 365-Organisation HinzugeFügt.  <br/> |
+|Partner zum Verzeichnis HinzugeFügt  <br/> |Hinzufügen eines Partners zu Unternehmen  <br/> |Partner (Delegierter Administrator) zu Ihrer Office 365-Organisation HinzugeFügt.  <br/> |
+|Domäne aus Firma entfernt  <br/> |Domäne aus Firma entfernen  <br/> |Eine Domäne aus Ihrer Office 365-Organisation entfernt.  <br/> |
+|Partner aus dem Verzeichnis entfernt  <br/> |Partner aus Firma entfernen  <br/> |Ein Partner (Delegierter Administrator) wurde aus Ihrer Office 365-Organisation entfernt.  <br/> |
+|Unternehmensinformationen festlegen  <br/> |Unternehmensinformationen festlegen  <br/> |Unternehmensinformationen für Ihre Office 365-Organisation aktualisiert. Dazu gehören e-Mail-Adressen für abonnementbezogene e-Mails, die von Office 365 gesendet werden, sowie technische Benachrichtigungen zu Office 365-Diensten.  <br/> |
+|Festlegen der Domänenauthentifizierung  <br/> |Festlegen der Domänenauthentifizierung  <br/> |Die Domänen Authentifizierungseinstellung für Ihre Office 365-Organisation wurde geändert.  <br/> |
+|Die Verbund Einstellungen für eine Domäne wurden aktualisiert.  <br/> |Festlegen von Verbund Einstellungen für die Domäne  <br/> |Die Einstellungen für den Verbund (externe Freigabe) für Ihre Office 365-Organisation wurden geändert.  <br/> |
+|Festlegen der Kennwortrichtlinie  <br/> |Festlegen der Kennwortrichtlinie  <br/> |Die Längen-und Zeicheneinschränkungen für Benutzerkennwörter in Ihrer Office 365-Organisation wurden geändert.  <br/> |
+|Azure AD-Synchronisierung aktiviert  <br/> |DirSyncEnabled-Flag für Unternehmen festlegen  <br/> |Legen Sie die Eigenschaft fest, die ein Verzeichnis für die Azure AD-Synchronisierung aktiviert.  <br/> |
+|Aktualisierte Domäne  <br/> |Domäne aktualisieren  <br/> |Die Einstellungen einer Domäne in Ihrer Office 365-Organisation wurden aktualisiert.  <br/> |
+|Verifizierte Domäne  <br/> |Domäne überprüfen  <br/> |Überprüft, ob Ihre Organisation der Besitzer einer Domäne ist.  <br/> |
+|Verifizierte e-Mail verifizierte Domäne  <br/> |Überprüfen der e-Mail verifizierte Domäne  <br/> |Verwenden Sie die e-Mail-Überprüfung, um sicherzustellen, dass Ihre Organisation der Besitzer einer Domäne ist.  <br/> |
 ||||
    
 ### <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
   
-Inhaltssuche und eDiscovery-bezogene Aktivitäten, die in Office 365-Sicherheit & Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets ausgeführt werden, werden im Überwachungsprotokoll Office 365 protokolliert. Dazu gehören die folgenden Aktivitäten:
+Inhaltssuche und eDiscovery-bezogene Aktivitäten, die im Office 365 Security & Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets ausgeführt werden, werden im Office 365-Überwachungsprotokoll protokolliert. Hierzu gehören die folgenden Aktivitäten:
   
 - Erstellen und Verwalten von eDiscovery-Fällen
     
-- Erstellen, starten und Bearbeiten von Content-Suche
+- Erstellen, starten und Bearbeiten von Inhalts suchen
     
-- Ausführen Inhaltssuche Aktionen, beispielsweise das Anzeigen einer Vorschau, führt zu ausführenden und Löschen von Suche
+- Ausführen von Inhalts Suchaktionen wie Vorschau, exportieren und Löschen von Suchergebnissen
     
-- Konfigurieren von Berechtigungen für die Inhaltssuche filtern
+- Konfigurieren der Filterung von Berechtigungen für die Inhaltssuche
     
-- Verwalten von eDiscovery-Administratorrolle
+- Verwalten der eDiscovery-Administrator Rolle
     
-Eine Liste und eine detaillierte Beschreibung der eDiscovery-Aktivitäten, die protokolliert werden, finden Sie unter [Suchen für eDiscovery-Aktivitäten in der Office 365 in das Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md).
+Eine Liste und eine detaillierte Beschreibung der zu protokollierenden eDiscovery-Aktivitäten finden Sie unter [Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md).
   
 > [!NOTE]
-> Es dauert bis zu 30 Minuten für Ereignisse, die aus den Aktivitäten aufgeführt, die unter dem **eDiscovery-Aktivitäten** in der Dropdownliste **Aktivitäten** , die in den Suchergebnissen angezeigt werden. Dagegen dauert bis zu 24 Stunden für die entsprechenden Ereignisse aus eDiscovery Cmdlet Aktivitäten aus, die in den Suchergebnissen angezeigt werden. 
+> Es dauert bis zu 30 Minuten für Ereignisse, die sich aus den unter **eDiscovery-Aktivitäten** aufgeführten Aktivitäten in der Dropdownliste **Aktivitäten** ergeben, die in den Suchergebnissen angezeigt werden sollen. Umgekehrt kann es bis zu 24 Stunden dauern, bis die entsprechenden Ereignisse aus eDiscovery-Cmdlet-Aktivitäten in den Suchergebnissen angezeigt werden. 
   
 ### <a name="power-bi-activities"></a>Power BI-Aktivitäten
   
-Sie können das Überwachungsprotokoll Aktivitäten in Power BI suchen. Informationen zu Power BI-Aktivitäten finden Sie im Abschnitt "Vorgänge überwacht von Power Power BI" unter [Using Überwachung innerhalb Ihrer Organisation](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Power BI durchsuchen. Informationen zu Power BI-Aktivitäten finden Sie im Abschnitt "Aktivitäten, die von Power Power BI überwacht werden" unter [Verwenden der Überwachung in Ihrer Organisation](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
   
-Beachten Sie, dass die überwachungsprotokollierung für Power BI standardmäßig nicht aktiviert ist. Zum Suchen von Power BI-Aktivitäten im Überwachungsprotokoll Office 365 müssen Sie zum Aktivieren der Überwachung in Power BI-Admin-Portal. Eine Anleitung finden Sie im Abschnitt "Überwachungsprotokolle" [Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)-Verwaltungsportal.
+Beachten Sie, dass die Überwachungsprotokollierung für Power BI standardmäßig nicht aktiviert ist. Um nach Power BI-Aktivitäten im Office 365-Überwachungsprotokoll zu suchen, müssen Sie die Überwachung im Power BI Admin-Portal aktivieren. Anweisungen finden Sie im Abschnitt "Überwachungsprotokolle" im [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
-### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Jahrestag Analytics Aktivitäten
+### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics-Aktivitäten
 
-Jahrestag Analytics stellt einen Einblick in die Zusammenarbeit von Gruppen in der Office 365-Organisation bereit. Die folgende Tabelle enthält die Aktivitäten von Benutzern, die der Administratorrolle oder der Analyst Rollen in Jahrestag Analytics zugewiesen sind. Benutzer der Rolle Analyst haben vollen Zugriff auf alle Funktionen und verwenden Sie das Produkt, um die Analyse durchzuführen. Benutzer zugewiesen sind, die Administratorrolle können Konfigurieren von datenschutzeinstellungen und Systemstandardwerte können vorbereiten, hochladen und Unternehmensdaten in Jahrestag Analytics überprüfen. Weitere Informationen finden Sie unter [Arbeitsplatz Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen in Ihrer Office 365-Organisation. In der folgenden Tabelle werden die Aktivitäten aufgeführt, die von Benutzern ausgeführt werden, denen die Rolle Administrator oder Analyst in Workplace Analytics zugewiesen wurde. Benutzer, denen die Rolle "Analyst" zugewiesen ist, haben vollständigen Zugriff auf alle Dienstfunktionen und verwenden das Produkt für die Analyse. Benutzer, denen die Administrator Rolle zugewiesen ist, können Datenschutzeinstellungen und Systemstandardwerte konfigurieren und Organisationsdaten in der Workplace Analytics vorbereiten, hochladen und überprüfen. Weitere Informationen finden Sie unter [Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Zugegriffen OData-link <br/> |AccessedOdataLink <br/> |Analyst Zugriff auf den OData-Link für eine Abfrage.|
-|Abfrage abgebrochen <br/> |CanceledQuery <br/> |Analyst abgebrochen eine Abfrage ausgeführt wird.|
-|Erstellte Besprechung Ausschluss <br/> |MeetingExclusionCreated <br/> |Erstellt ein neues Analyst meeting Ausschlussregel.|
-|Gelöschte Ergebnis <br/> |DeletedResult <br/> |Analyst gelöscht ein Abfrageergebnisses.|
-|Heruntergeladenen Bericht <br/> |DownloadedReport <br/> |Analyst heruntergeladen eine Abfrage Ergebnisdatei.|
-|Ausgeführte Abfrage <br/> |ExecutedQuery <br/> |Analyst wurde eine Abfrage ausgeführt.|
-|Aktualisierte Datenzugriff festlegen <br/> |UpdatedDataAccessSetting <br/> |Admin aktualisiert die Einstellungen für die Daten.|
-|Aktualisierte für den Datenschutz <br/> |UpdatedPrivacySetting <br/> |Admin aktualisiert datenschutzeinstellungen. beispielsweise minimale Gruppengröße.|
-|Hochgeladenen Unternehmensdaten <br/> |UploadedOrgData <br/> |Admin hochgeladen Unternehmensdaten-Datei.|
-|Angezeigt erkunden <br/> |ViewedExplore <br/> |Analyst Visualisierungen in eine oder mehrere durchsuchen Blattregister angezeigt.|
+|Zugriff auf OData-Link <br/> |AccessedOdataLink <br/> |Der Analytiker hat auf den OData-Link für eine Abfrage zugegriffen.|
+|Abgebrochene Abfrage <br/> |CanceledQuery <br/> |Analyst hat eine laufende Abfrage abgebrochen.|
+|Erstellter Besprechungs Ausschluss <br/> |MeetingExclusionCreated <br/> |Der Analytiker hat eine neue Ausschlussregel für Besprechungen erstellt.|
+|Gelöschtes Ergebnis <br/> |DeletedResult <br/> |Der Analytiker hat ein Abfrageergebnis gelöscht.|
+|HeruntergeLadener Bericht <br/> |DownloadedReport <br/> |Analyst hat eine Abfrageergebnis Datei heruntergeladen.|
+|Ausgeführte Abfrage <br/> |ExecutedQuery <br/> |Eine Abfrage wurde vom Analysten ausgeführt.|
+|Aktualisierte Datenzugriffs Einstellung <br/> |UpdatedDataAccessSetting <br/> |Admin hat Datenzugriffs Einstellungen aktualisiert.|
+|Aktualisierte Datenschutzeinstellung <br/> |UpdatedPrivacySetting <br/> |Admin aktualisierte Datenschutzeinstellungen; Beispiel: minimale Gruppengröße.|
+|HochgeLadene Organisationsdaten <br/> |UploadedOrgData <br/> |Admin-hochgeladene Organisations Datendatei.|
+|Viewed Explore <br/> |ViewedExplore <br/> |Von Analysten angezeigte Visualisierungen auf einer oder mehreren Registerkarten der Seite "Durchsuchen".|
 ||||
 
-### <a name="microsoft-teams-activities"></a>Microsoft-Teams, Aktivitäten
+### <a name="microsoft-teams-activities"></a>Microsoft Teams-Aktivitäten
   
-Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Aktivitäten in Microsoft-Teams, die in der Office 365 angemeldet sind. Microsoft-Teams, ist ein Chat zentriert Arbeitsbereich in Office 365. Es vereint Unterhaltungen, Besprechungen, Dateien und Notizen ein Team in einem einzigen Speicherort. Weitere Informationen und Links zu Themen können finden Sie unter:
+In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Microsoft Teams aufgeführt, die im Office 365-Überwachungsprotokoll protokolliert werden. Microsoft Teams ist ein Chat-zentrierter Arbeitsbereich in Office 365. Die Unterhaltungen, Besprechungen, Dateien und Notizen eines Teams werden an einem zentralen Ort zusammengeführt. Weitere Informationen und Links zu Hilfethemen finden Sie unter:
   
-- [Häufig gestellte Fragen zu Microsoft-Teams - Admin-Hilfe](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
+- [Häufig gestellte Fragen zu Microsoft Teams-Administratorhilfe](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
     
-- [Hilfe für Microsoft-Teams](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
+- [Microsoft Teams-Hilfe](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Hinzugefügte Bot an das team  <br/> |BotAddedToTeam  <br/> |Ein Benutzer hinzugefügt ein Team einen Bot.  <br/> |
-|DDE-Kanal hinzugefügt  <br/> |ChannelAdded  <br/> |Ein Benutzer hinzugefügt ein Team einen Kanal.  <br/> |
-|Hinzugefügte connector  <br/> |ConnectorAdded  <br/> |Ein Benutzer hinzugefügt eine Verbindung zu einem Kanal.  <br/> |
-|Hinzugefügte Elemente an das team  <br/> |MemberAdded  <br/> |Der Teambesitzer einer hinzugefügt ein Team Mitglieder.  <br/> |
-|Hinzugefügte Registerkarte  <br/> |TabAdded  <br/> |Ein Benutzer hinzugefügt einen Kanal eine Registerkarte.  <br/> |
-|Kanal-Einstellung geändert  <br/> |ChannelSettingChanged  <br/> | Der Vorgang ChannelSettingChanged wird protokolliert, wenn die folgenden Aktivitäten von einem Teammitglied ausgeführt werden. Eine Beschreibung der Einstellung, die geändert wurde (siehe unten Klammer) wird für jede dieser Aktivitäten in der Spalte **Element** in den Suchergebnissen für Audit Log angezeigt.<br/> <br/>-Der Name des einer Team-Kanal ( **DDE-Kanalname**) geändert.  <br/>  <br/>-Die Beschreibung des einer Team-Kanal ( **DDE-Kanal Beschreibung**) geändert.  <br/> |
-|Organisation Einstellung geändert  <br/> |TeamsTenantSettingChanged  <br/> | Der Vorgang TeamsTenantSettingChanged wird protokolliert, wenn die folgenden Aktivitäten ausgeführt werden, durch den ein globaler Administrator (mithilfe des Office 365 Administrationscenter). Beachten Sie, dass diese Aktivitäten organisationsweiten Microsoft-Teams Einstellungen auswirken. Weitere Informationen finden Sie unter [Administrator-Einstellungen für Microsoft-Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).<br/>  Eine Beschreibung der Einstellung, die geändert wurde (siehe unten Klammer) wird für jede dieser Aktivitäten in der Spalte **Element** in den Suchergebnissen für Audit Log angezeigt.  <br/><br/>-Aktiviert oder deaktiviert Microsoft-Teams für die Organisation ( **Microsoft-Teams**).  <br/><br/>-Aktiviert oder deaktiviert die Interoperabilität zwischen Microsoft-Teams und Skype für Unternehmen für die Organisation ( **Skype für die Interoperabilität Business**).<br/><br/>-Aktiviert oder deaktiviert die Organigramms Ansicht im Microsoft-Teams, Clients ( **Org Diagrammansicht**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder private Besprechungstermine ( **Private Besprechung planen**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder Besprechungstermine DDE-Kanal ( **DDE-Kanal auf Besprechung planen**).  <br/><br/>-Aktiviert oder deaktiviert video Aufrufen in Teams Besprechungen ( **Video für Skype Besprechungen**).  <br/><br/>-Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft-Teams, Meetups für die Organisation ( **Bildschirmfreigabe Skype-Besprechungen**).  <br/><br/>-Aktiviert oder deaktiviert diese Möglichkeit zum Hinzufügen von animierte Bilder (als Giphys bezeichnet) auf Teams Unterhaltungen ( **animierter Bilder**).  <br/><br/>-Die Inhalte zur Bewertung der Einstellung für die Organisation ( **zum Bewerten**) ändert. Zum Bewerten der schränkt des Typs der Animation, die in Unterhaltungen angezeigt werden kann.<br/><br/>-Aktiviert, oder deaktiviert die Option für Teammitgliedern zum Hinzufügen von anpassbarer Bildern (benutzerdefinierte Memes genannt) aus dem Internet auf Team Unterhaltungen ( **anpassbar Bilder aus dem Internet**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit von Teammitgliedern zum Hinzufügen von bearbeitbaren Bildern (Aufkleber genannt) Team Unterhaltungen ( **bearbeitbare Bilder**).<br/><br/>-Aktiviert oder deaktiviert diese Möglichkeit für Teammitglieder Bots in Microsoft-Teams, Chats und Kanäle ( **Org geltende Bots**) verwenden.<br/><br/>-Können bestimmte Bots für Microsoft-Teams. Dies umfasst nicht den T-Bot, also die Hilfe Bot Teams, die verfügbar ist, wenn für die Organisation ( **einzelne Bots**) Bots aktiviert sind.  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder Extensions oder Registerkarten ( **Extensions oder Registerkarten**) hinzufügen.  <br/><br/>-Aktiviert oder deaktiviert das Laden Seite proprietäre Bots für Microsoft-Teams ( **Seite Laden von Programmen**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Benutzer zum Senden von e-Mail-Nachrichten an einen Microsoft-Teams-Kanal ( **DDE-Kanal e-Mail**).  <br/> |
-|Geänderte Rolle von Mitgliedern in team  <br/> |MemberRoleChanged  <br/> |Ein Teambesitzer ändert die Rolle des Mitglieder in einem Team. Die folgenden Werte geben Sie an, die dem Benutzer zugewiesene Rollentyp.<br/><br/><br/> **1** – gibt die Rolle des Eigentümers an.<br/>**2** – gibt die Rolle an. <br/>**3** – gibt an, die Guest-Rolle. <br/>Members-Eigenschaft enthält auch den Namen Ihrer Organisation und e-Mail-Adresse des Mitglieds.  <br/> |
-|Team Einstellung geändert  <br/> |TeamSettingChanged  <br/> | Der Vorgang TeamSettingChanged wird protokolliert, wenn von einer Teambesitzer die folgenden Aktivitäten ausgeführt werden. Eine Beschreibung der Einstellung, die geändert wurde (siehe unten Klammer) wird für jede dieser Aktivitäten in der Spalte **Element** in den Suchergebnissen für Audit Log angezeigt.<br/><br/>-Ändert den Zugriffstyp für ein Team. Teams können als privat oder öffentlich ( **Team Zugriffstyp**) liegen. Wenn ein Team ist privat (Standardeinstellung) Benutzer können nur über eine Einladung das Team zugreifen. Wenn ein Team öffentlich ist, ist es von jedem Benutzer sichtbar.<br/><br/>-Die Klassifizierung Informationen eines Teams ( **Team Klassifizierung**) ändert.  <br/>  Beispielsweise können Teams Daten als hohe geschäftliche Relevanz, mittlere geschäftliche Relevanz oder niedrig geschäftliche Relevanz klassifiziert werden.<br/><br/>-Der Name eines Teams ( **Teamname**) geändert.  <br/><br/>-Ändert die Beschreibung eines Teams ( **Team Beschreibung**). <br/><br/>-Änderungen an das Team-Einstellungen. Ein Teambesitzer kann diese Einstellungen in einer Clientdatenbank Teams indem Sie mit der rechten Maustaste ein Team, auf **Team verwalten**, und klicken Sie dann auf die Registerkarte **Einstellungen** zugreifen. Für das Rollout wird der Name der Einstellung, die geändert wurde in der Spalte **Element** in den Suchergebnissen für Audit Log angezeigt.<br/> |
-|Erstellte team  <br/> |TeamCreated  <br/> |Ein Benutzer erstellt ein neues Team.  <br/> |
-|Gelöschte DDE-Kanal  <br/> |ChannelDeleted  <br/> |Ein Benutzer löscht einen Kanal aus einem Team.  <br/> |
-|Gelöschte team  <br/> |TeamDeleted  <br/> |Der Teambesitzer einer Löscht ein Team.  <br/> |
-|Entfernte Bot-Teams  <br/> |BotRemovedFromTeam  <br/> |Ein Benutzer entfernt ein Bot aus einem Team.  <br/> |
-|Entfernte connector  <br/> |ConnectorRemoved  <br/> |Ein Benutzer entfernt Connector aus einem Kanal.  <br/> |
-|Entfernte Elemente-Teams  <br/> |MemberRemoved  <br/> |Ein Teambesitzer entfernt Mitglieder aus einem Team.  <br/> |
+|Bot zu Team HinzugeFügt  <br/> |BotAddedToTeam  <br/> |Ein Benutzer fügt einem Team einen bot hinzu.  <br/> |
+|Kanal HinzugeFügt  <br/> |ChannelAdded  <br/> |Ein Benutzer fügt einem Team einen Kanal hinzu.  <br/> |
+|Connector HinzugeFügt  <br/> |ConnectorAdded  <br/> |Ein Benutzer fügt einem Kanal einen Konnektor hinzu.  <br/> |
+|Mitglieder zu Team HinzugeFügt  <br/> |MemberAdded  <br/> |Ein Teambesitzer fügt einem Teammitglieder hinzu.  <br/> |
+|Registerkarte HinzugeFügt  <br/> |TabAdded  <br/> |Ein Benutzer fügt einem Kanal eine Registerkarte hinzu.  <br/> |
+|Geänderte Kanaleinstellung  <br/> |ChannelSettingChanged  <br/> | Der ChannelSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem Teammitglied ausgeführt werden. Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.<br/> <br/>-Ändert den Namen eines Team Kanals ( **Kanalname**).  <br/>  <br/>-Ändert die Beschreibung eines Team Kanals ( **Kanalbeschreibung**).  <br/> |
+|Geänderte Organisations Einstellung  <br/> |TeamsTenantSettingChanged  <br/> | Der TeamsTenantSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem globalen Administrator (mit dem Office 365 Admin Center) ausgeführt werden. Beachten Sie, dass sich diese Aktivitäten auf organisationsweite Microsoft Teams-Einstellungen auswirken. Weitere Informationen finden Sie unter [Administrator Einstellungen für Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).<br/>  Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.  <br/><br/>– Aktiviert oder deaktiviert Microsoft Teams für die Organisation ( **Microsoft Teams**).  <br/><br/>– Aktiviert oder deaktiviert die Interoperabilität zwischen Microsoft Teams und Skype for Business für die Organisation ( **Skype for Business-Interoperabilität**).<br/><br/>– Aktiviert oder deaktiviert die Ansicht Organisationsdiagramm in Microsoft Teams-Clients (Organigramm- **Ansicht**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, private Besprechungen (private Termin **Planung**) zu planen.  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Kanal Besprechungen ( **Kanal Besprechungsplanung**) einzuplanen.  <br/><br/>-Aktiviert oder deaktiviert Videoanrufe in Teams-Besprechungen ( **Video für Skype**-Besprechungen).  <br/><br/>-Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft Teams-Meetups für die Organisation ( **Bildschirmfreigabe für Skype**-Besprechungen).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit, animierte Bilder (als Giphys bezeichnet) zu Teams-Unterhaltungen ( **animierte Bilder**) hinzuzufügen.  <br/><br/>-Ändert die Einstellung der Inhaltsbewertung für die Organisation ( **Inhaltsbewertung**). Die Inhaltsbewertung schränkt den Typ des animierten Bilds ein, das in Unterhaltungen angezeigt werden kann.<br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, anpassbare Bilder (als benutzerdefinierte Meme bezeichnet) aus dem Internet zu Team Unterhaltungen hinzuzufügen ( **anpassbare Bilder aus dem Internet**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, bearbeitbare Bilder (als Aufkleber bezeichnet) zu Team Unterhaltungen hinzuzufügen ( **bearbeitbare Bilder**).<br/><br/>-Aktiviert oder deaktiviert diese Fähigkeit für Teammitglieder, Bots in Microsoft Teams-Chats und-Kanälen ( **org-weite Bots**) zu verwenden.<br/><br/>-Aktiviert bestimmte Bots für Microsoft Teams; Dies beinhaltet nicht den T-bot, der Teams-Hilfe-bot, der verfügbar ist, wenn Bots für die Organisation aktiviert sind ( **einzelne Bots**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Erweiterungen oder Registerkarten ( **Erweiterungen oder Registerkarten**) hinzuzufügen.  <br/><br/>-Aktiviert oder deaktiviert das Side-Loading von proprietären Bots für Microsoft Teams ( **Side loading of Bots**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Benutzer, e-Mail-Nachrichten an einen Microsoft Teams-Kanal ( **Kanal-e-Mail**) zu senden.  <br/> |
+|Geänderte Rolle der Mitglieder im Team  <br/> |MemberRoleChanged  <br/> |Ein Teambesitzer ändert die Rolle von Mitgliedern in einem Team. Die folgenden Werte geben den dem Benutzer zugewiesenen Rollentyp an.<br/><br/><br/> **1** – gibt die Rolle des Besitzers an.<br/>**2** – gibt die Rolle des Mitglieds an. <br/>**3** -gibt die Gastrolle an. <br/>Die Members-Eigenschaft enthält auch den Namen Ihrer Organisation und die e-Mail-Adresse des Mitglieds.  <br/> |
+|Einstellung für das geänderte Team  <br/> |TeamSettingChanged  <br/> | Der TeamSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem Teambesitzer ausgeführt werden. Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.<br/><br/>-Ändert den Zugriffstyp für ein Team. Teams können als privat oder öffentlich festgelegt werden ( **Team Zugriffstyp**). Wenn ein Team privat ist (Standardeinstellung), können Benutzer nur auf Einladung auf das Team zugreifen. Wenn ein Team öffentlich ist, kann es von allen Benutzern ermittelt werden.<br/><br/>-Ändert die Klassifikation der Informationen eines Teams ( **Team Klassifizierung**).  <br/>  Team Daten können beispielsweise als hohe geschäftliche Auswirkungen, mittlere geschäftliche Auswirkungen oder geringe geschäftliche Auswirkungen klassifiziert werden.<br/><br/>-Ändert den Namen eines Teams ( **Teamname**).  <br/><br/>-Ändert die Team Beschreibung ( **Team Description**). <br/><br/>-Änderungen an den Team Einstellungen. Ein Teambesitzer kann auf diese Einstellungen in einem Teams-Client zugreifen, indem er mit der rechten Maustaste auf ein Team klickt, auf **Team verwalten**klickt und dann auf die Registerkarte **Einstellungen** klickt. Für diese Aktivitäten wird der Name der geänderten Einstellung in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.<br/> |
+|Erstelltes Team  <br/> |TeamCreated  <br/> |Ein Benutzer erstellt ein neues Team.  <br/> |
+|Gelöschter Kanal  <br/> |ChannelDeleted  <br/> |Ein Benutzer löscht einen Kanal aus einem Team.  <br/> |
+|Gelöschtes Team  <br/> |TeamDeleted  <br/> |Ein Teambesitzer löscht ein Team.  <br/> |
+|Entfernte bot aus dem Team  <br/> |BotRemovedFromTeam  <br/> |Ein Benutzer entfernt einen bot aus einem Team.  <br/> |
+|Entfernter Connector  <br/> |ConnectorRemoved  <br/> |Ein Benutzer entfernt den Konnektor aus einem Kanal.  <br/> |
+|Mitglieder aus Team entfernt  <br/> |MemberRemoved  <br/> |Ein Teambesitzer entfernt Mitglieder aus einem Team.  <br/> |
 |Entfernte Registerkarte  <br/> |TabRemoved  <br/> |Ein Benutzer entfernt eine Registerkarte aus einem Kanal.  <br/> |
-|Aktualisierte connector  <br/> |ConnectorUpdated  <br/> |Ein Benutzer eine Verbindung in einem Kanal geändert hat.  <br/> |
-|Aktualisierte Registerkarte  <br/> |TabUpdated  <br/> |Ein Benutzer eine Registerkarte in einem Kanal geändert hat.  <br/> |
-|Benutzer angemeldet Teams  <br/> |TeamsSessionStarted  <br/> |Ein Benutzer anmeldet an einen Microsoft-Teams, Client.  <br/> |
+|Aktualisierter Connector  <br/> |ConnectorUpdated  <br/> |Ein Benutzer hat einen Konnektor in einem Kanal geändert.  <br/> |
+|Aktualisierte Registerkarte  <br/> |TabUpdated  <br/> |Ein Benutzer hat eine Registerkarte in einem Kanal geändert.  <br/> |
+|Benutzer angemeldet bei Teams  <br/> |TeamsSessionStarted  <br/> |Ein Benutzer meldet sich bei einem Microsoft Teams-Client an.  <br/> |
 ||||
 
-### <a name="yammer-activities"></a>Yammer-Aktivitäten
+### <a name="yammer-activities"></a>Aktivitäten mit jammern
   
-Die folgende Tabelle enthält den Benutzer und Überwachungsprotokoll Admin Aktivitäten in Yammer, die in der Office 365 angemeldet sind. Wenn zurückgeben möchten, dass in das Überwachungsprotokoll Yammer-bezogene Aktivitäten aus der Office 365, müssen Sie **Ergebnisse für alle Aktivitäten** in der Liste der **Aktivitäten** aus. Verwenden Sie den Bereich Datumsfeldern und **der Benutzerliste** , um die Suchergebnisse einzuschränken. 
+In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in jammern aufgeführt, die im Office 365-Überwachungsprotokoll protokolliert werden. Wenn Sie Aktivitäten im Zusammenhang mit dem Office 365-Überwachungsprotokoll zurückgeben möchten, müssen Sie in der Liste **Aktivitäten** die Option **Ergebnisse für alle Aktivitäten anzeigen** auswählen. Verwenden Sie die Felder Datumsbereiche und **Benutzer** , um die Suchergebnisse einzuschränken. 
   
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Geänderte Datenaufbewahrungsrichtlinie  <br/> |SoftDeleteSettingsUpdated  <br/> |Überprüften Admin aktualisiert die Einstellung für das Netzwerk Daten Aufbewahrungsrichtlinie auf Festplatte löschen oder weiche löschen. Dieser Vorgang kann nur überprüften-Admins ausgeführt werden.  <br/> |
-|Geänderte Netzwerkkonfiguration  <br/> |NetworkConfigurationUpdated  <br/> |Netzwerk- oder überprüften Admin ändert den Yammer-Netzwerk Konfiguration. Dazu gehört das Intervall für das Exportieren von Daten und Aktivieren von Chat festlegen.  <br/> |
-|Geänderte Netzwerk-profileinstellungen  <br/> |ProcessProfileFields  <br/> |Netzwerk- oder überprüften Admin ändert die angezeigten Informationen auf Member Profile für Benutzer Netzwerk-Netzwerk.  <br/> |
-|Private Modus Inhalt geändert  <br/> |SupervisorAdminToggled  <br/> |Überprüften Admin schaltet *Private Inhalte-Modus* oder aus. In diesem Modus können Beiträge Sicht Admin im privaten Gruppen und Anzeigen von private Nachrichten zwischen den einzelnen Benutzer (oder Gruppen von Benutzern). Dieser Vorgang kann nur überprüften-Admins nur ausgeführt werden.<br/> |
-|Geänderte Sicherheitskonfiguration  <br/> |NetworkSecurityConfigurationUpdated  <br/> |Überprüften Admin aktualisiert die Yammer-Netzwerk-Sicherheitskonfiguration. Dazu gehören Richtlinien für den Kennwortablauf Einstellung und Einschränkungen für IP-Adressen. Dieser Vorgang kann nur überprüften-Admins ausgeführt werden.  <br/> |
-|Erstellte Datei  <br/> |FileCreated  <br/> |Benutzer hochlädt eine Datei.  <br/> |
-|Erstellte Gruppe  <br/> |GroupCreation  <br/> |Benutzer erstellt eine neue Gruppe.  <br/> |
-|Gelöschte Gruppe  <br/> |GroupDeletion  <br/> |Eine Gruppe wird aus Yammer gelöscht.  <br/> |
-|Gelöschte Nachricht  <br/> |MessageDeleted  <br/> |Benutzer wird eine Nachricht gelöscht.  <br/> |
-|Heruntergeladene Datei  <br/> |FileDownloaded  <br/> |Benutzer herunterlädt eine Datei.  <br/> |
-|Exportierten Daten  <br/> |Datenexport  <br/> |Überprüften Admin exportiert Daten für Yammer-Netzwerk. Dieser Vorgang kann nur überprüften-Admins ausgeführt werden.  <br/> |
-|Freigegebene Datei  <br/> |FileShared  <br/> |Benutzer kann eine Datei mit einem anderen Benutzer freigeben.  <br/> |
-|Angehaltenen Netzwerkbenutzer  <br/> |NetworkUserSuspended  <br/> |Hält die Netzwerk- oder überprüften Admin (deaktiviert) eines Benutzers von Yammer.  <br/> |
-|Gesperrte Mitglied  <br/> |UserSuspension  <br/> |Benutzerkonto wird angehalten (deaktiviert).  <br/> |
-|Aktualisierte DateiBeschreibung  <br/> |FileUpdateDescription  <br/> |Benutzer, ändert die Beschreibung einer Datei.  <br/> |
-|Aktualisierter Dateiname  <br/> |FileUpdateName  <br/> |Benutzer ändert den Namen einer Datei.  <br/> |
-|Angezeigten Datei  <br/> |FileVisited  <br/> |Benutzer zeigt eine Datei.  <br/> |
+|Geänderte Datenaufbewahrungsrichtlinie  <br/> |SoftDeleteSettingsUpdated  <br/> |Verifizierte Administrator aktualisiert die Einstellung für die Richtlinie zur Netzwerkdaten Aufbewahrung entweder auf Hard Delete oder auf Weiche Löschung. Nur verifizierte Administratoren können diesen Vorgang ausführen.  <br/> |
+|Geänderte Netzwerkkonfiguration  <br/> |NetworkConfigurationUpdated  <br/> |Netzwerk oder überprüfter Administrator ändert die Konfiguration des Jammer-Netzwerks. Dazu gehört das Festlegen des Intervalls für den Export von Daten und Aktivieren des Chats.  <br/> |
+|Geänderte Netzwerkprofil Einstellungen  <br/> |ProcessProfileFields  <br/> |Netzwerk-oder verifizierte Administratoren ändern die Informationen, die in Mitglieds Profilen für Netzwerkbenutzer Netzwerk angezeigt werden.  <br/> |
+|Privater Inhalts Modus geändert  <br/> |SupervisorAdminToggled  <br/> |Verifizierter Administrator aktiviert oder deaktiviert den *privaten Inhalts Modus* . In diesem Modus können Administratoren Beiträge in privaten Gruppen anzeigen und private Nachrichten zwischen einzelnen Benutzern (oder Benutzergruppen) anzeigen. Nur verifizierte Administratoren können diesen Vorgang nur ausführen.<br/> |
+|Geänderte Sicherheitskonfiguration  <br/> |NetworkSecurityConfigurationUpdated  <br/> |Verifizierte Administrator aktualisiert die Sicherheitskonfiguration des Jammer-Netzwerks. Hierzu gehören das Festlegen von Kennwortablauf Richtlinien und Einschränkungen für IP-Adressen. Nur verifizierte Administratoren können diesen Vorgang ausführen.  <br/> |
+|Erstellte Datei  <br/> |FileCreated  <br/> |Ein Benutzer lädt eine Datei hoch.  <br/> |
+|Erstellte Gruppe  <br/> |GroupCreation  <br/> |Der Benutzer erstellt eine neue Gruppe.  <br/> |
+|Gelöschte Gruppe  <br/> |GroupDeletion  <br/> |Eine Gruppe wird aus jammern gelöscht.  <br/> |
+|Gelöschte Nachricht  <br/> |MessageDeleted  <br/> |Der Benutzer löscht eine Nachricht.  <br/> |
+|HeruntergeLadene Datei  <br/> |FileDownloaded  <br/> |Der Benutzer lädt eine Datei herunter.  <br/> |
+|Exportierte Daten  <br/> |DataExport  <br/> |Verifizierte admin exportiert Jammer Netzwerkdaten. Nur verifizierte Administratoren können diesen Vorgang ausführen.  <br/> |
+|FreigeGebene Datei  <br/> |FileSharing  <br/> |Der Benutzer teilt eine Datei mit einem anderen Benutzer.  <br/> |
+|Gesperrter Netzwerkbenutzer  <br/> |NetworkUserSuspended  <br/> |Das Netzwerk oder der verifizierte Administrator suspendiert (deaktiviert) einen Benutzer aus jammern.  <br/> |
+|Angehaltene Benutzer  <br/> |UserSuspension  <br/> |Das Benutzerkonto ist angehalten (deaktiviert).  <br/> |
+|Aktualisierte Dateibeschreibung  <br/> |FileUpdateDescription  <br/> |Der Benutzer ändert die Beschreibung einer Datei.  <br/> |
+|Dateiname aktualisiert  <br/> |FileUpdatename  <br/> |Der Benutzer ändert den Namen einer Datei.  <br/> |
+|Angezeigte Datei  <br/> |FileVisited  <br/> |Benutzer zeigt eine Datei an.  <br/> |
 ||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
-Sie können das Überwachungsprotokoll Aktivitäten in Microsoft Flow suchen. Hierzu zählen erstellen, bearbeiten und Löschen von fließt und Ändern der Berechtigungen für den Nachrichtenfluss. Informationen zur Überwachung für Workflowaktivitäten finden Sie im Blogbeitrag [Microsoft Fluss Überwachen von Ereignissen, die nun in Office 365-Sicherheit & Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Informationen zur Überwachung von Flow-Aktivitäten finden Sie in den Blog- [Microsoft Flow-Überwachungsereignissen, die jetzt im Office 365 Security _AMP_ Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
-Sie können das Überwachungsprotokoll Aktivitäten in Microsoft Stream suchen. Hierzu zählen video Aktivitäten von Benutzer, Gruppe Channel Aktivitäten und Admin Aktivitäten wie Verwalten von Benutzern, Verwalten von Einstellungen der Organisation und Exportieren von Berichten. Eine Beschreibung dieser Aktivitäten finden Sie im Abschnitt "Aktivitäten protokolliert in Stream Microsoft" in [Überwachungsprotokollen in Microsoft Stream-Objekt](https://docs.microsoft.com/stream/audit-logs).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Stream durchsuchen. Zu diesen Aktivitäten gehört das Ausführen von Video Aktivitäten durch Benutzer, Gruppenkanal Aktivitäten und Administratoraktivitäten wie das Verwalten von Benutzern, das Verwalten von Organisationseinstellungen und das Exportieren von Berichten. Eine Beschreibung dieser Aktivitäten finden Sie im Abschnitt "Aktivitäten, die in Microsoft Stream protokolliert werden" in [Überwachungsprotokollen in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
   
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administrator-Überwachungsprotokoll
   
-Exchange-Administrator-überwachungsprotokollierung – aktiviert, die standardmäßig in Office 365 – zeichnet ein Ereignis in das Überwachungsprotokoll Office 365, wenn ein Administrator (oder ein Benutzer mit Administratorberechtigungen zugewiesen wurde) in Ihrer Exchange Online-Organisation eine Änderung vornimmt. Mithilfe der Exchange-Verwaltungskonsole oder durch Ausführen eines Cmdlets in Windows PowerShell vorgenommenen Änderungen werden im Exchange Admin Audit Log protokolliert. Ausführlichere Informationen zu Admin überwachen Sie die Protokollierung in Exchange finden Sie [administratorüberwachungsprotokollierung](https://go.microsoft.com/fwlink/p/?LinkID=619225).
+Die Exchange-Administrator-Überwachungsprotokollierung, die standardmäßig in Office 365 aktiviert ist, protokolliert ein Ereignis im Office 365-Überwachungsprotokoll, wenn ein Administrator (oder ein Benutzer, dem Administratorberechtigungen zugewiesen wurden) eine Änderung in Ihrer Exchange Online-Organisation vorgenommen hat. Änderungen, die mithilfe der Exchange-Verwaltungskonsole oder durch Ausführen eines Cmdlets in Windows PowerShell vorgenommen wurden, werden im Exchange-administratorüberwachungsprotokoll protokolliert. Detailliertere Informationen zur Administrator-Überwachungsprotokollierung in Exchange finden Sie unter [Administrator-Überwachungsprotokollierung](https://go.microsoft.com/fwlink/p/?LinkID=619225).
   
-Hier sind einige Tipps für die Suche nach Aktivität im Exchange Admin-Überwachungsprotokoll ein:
+Im folgenden finden Sie einige Tipps zum Suchen von Aktivitäten im Exchange-Administrator-Überwachungsprotokoll:
   
-- Zum Zurückgeben von Einträgen aus dem Exchange Admin-Überwachungsprotokoll, müssen Sie **Ergebnisse für alle Aktivitäten** in der Liste der **Aktivitäten** aus. Verwenden Sie den Bereich Datumsfeldern und **der Benutzerliste** die Suchergebnisse für Cmdlets, die von einem bestimmten Exchange-Administrator innerhalb eines bestimmten Zeitraums ausgeführt werden können. 
+- Wenn Sie Einträge aus dem Exchange-Administrator-Überwachungsprotokoll zurückgeben möchten, müssen Sie in der Liste **Aktivitäten** die Option **Ergebnisse für alle Aktivitäten anzeigen** auswählen. Verwenden Sie die Felder Datumsbereich und **Benutzer** , um die Suchergebnisse für Cmdlets einzuschränken, die von einem bestimmten Exchange-Administrator innerhalb eines bestimmten Datumsintervalls ausgeführt werden. 
     
-- Zum Anzeigen von Ereignissen aus dem Exchange Admin-Überwachungsprotokoll Filtern der Suchergebnisse und Typ einen **-** (Strich) im Filterfeld **Aktivität** . Dadurch wird die Cmdlet-Namen angezeigt, die in der Spalte **Aktivität** für Exchange Admin-Ereignisse angezeigt werden. Anschließend können Sie die Cmdlet-Namen in alphabetischer Reihenfolge sortiert werden. 
+- Um Ereignisse aus dem Exchange-administratorüberwachungsprotokoll anzuzeigen, Filtern Sie die Suchergebnisse, **-** und geben Sie im Feld **Aktivitäts** Filter einen (Strich) ein. Dadurch werden die Cmdlet-Namen angezeigt, die in der Spalte **Aktivität** für Exchange-Verwaltungsereignisse angezeigt werden. Anschließend können Sie die Cmdlet-Namen in alphabetischer Reihenfolge sortieren. 
     
-    ![Geben Sie einen Bindestrich im Aktivitäten zum Filtern von Exchange Admin-Ereignisse](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+    ![Geben Sie im feldaktivitäten einen Strich ein, um die Exchange-Verwaltungsereignisse zu filtern](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
   
-- Zum Abrufen von Informationen über welche Cmdlet ausgeführt wurde, welche Parameter und Parameterwerte verwendet wurden und welche Objekte betroffen sind, müssen Sie die Suchergebnisse exportieren, und wählen Sie die Option **alle Ergebnisse herunterladen** . 
+- Um Informationen darüber zu erhalten, welches Cmdlet ausgeführt wurde, welche Parameter und Parameterwerte verwendet wurden und welche Objekte betroffen waren, müssen Sie die Suchergebnisse exportieren und die Option **alle Ergebnisse herunterladen** auswählen. 
     
-- Sie können Ereignisse auch mithilfe der Exchange-Verwaltungskonsole in der Exchange-administratorüberwachungsprotokoll anzeigen. Anweisungen finden Sie unter [administratorüberwachungsprotokoll anzeigen](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
+- Sie können Ereignisse auch im Exchange Admin-Überwachungsprotokoll anzeigen, indem Sie das Exchange Admin Center verwenden. Weitere Informationen finden Sie unter [Anzeigen des administratorüberwachungsprotokolls](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
   
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Wo finde ich über die Features, die von der Überwachung in Office 365-Dienst angeboten?**
+**Wo finde ich Informationen zu den Features, die der Überwachungsdienst in Office 365 bietet?**
 
-Weitere Informationen über die Überwachung und reporting Features in Office 365 finden Sie unter [Überwachung und Berichterstellung in Office 365](office-365-auditing-and-reporting-overview.md). 
+Weitere Informationen zu den in Office 365 verfügbaren Überwachungs-und Berichterstattungsfunktionen finden Sie unter [Überwachung und Berichterstellung in office 365](office-365-auditing-and-reporting-overview.md). 
 
-**Was sind die verschiedenen Office 365-Dienste, die derzeit überwacht werden?**
+**Was sind unterschiedliche Office 365-Dienste, die derzeit überwacht werden?**
 
-Die am häufigsten verwendeten Office 365-Dienste wie Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft-Teams, CRM, erweiterte Threat Protection und Data Loss Prevention überwacht werden sollen. Siehe Abschnitt [Einführung](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) in diesem Artikel finden Sie eine vollständige Liste.
+Die am häufigsten verwendeten Office 365-Dienste wie Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft Teams, CRM, erweiterter BedrohungsSchutz und verHinderung von Datenverlust werden überwacht. Eine vollständige Liste finden Sie im [Intro](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) -Abschnitt in diesem Artikel.
 
-**Welche Aktivitäten überwacht werden durch die Überwachung der Dienst in Office 365?**
+**Welche Aktivitäten werden vom Überwachungsdienst in Office 365 überwacht?**
 
-Siehe Abschnitt [Löschvorgänge Aktivitäten](#audited-activities) in diesem Artikel finden Sie eine Liste und Beschreibung der Aktivitäten, die in Office 365 überwacht werden.
+Eine Liste und Beschreibung der in Office 365 überwachten Aktivitäten finden Sie im Abschnitt über [wachte Aktivitäten](#audited-activities) in diesem Artikel.
 
-**Wie lange dauert es für einen auditing-Eintrag zur Verfügung stehen, nachdem ein Ereignis aufgetreten ist?**
+**Wie lange dauert es, bis ein Überwachungsdatensatz verfügbar ist, nachdem ein Ereignis aufgetreten ist?**
 
-Die meisten Überwachung von Daten innerhalb von 30 Minuten ist verfügbar, aber nach dem Auftreten eines Ereignisses für das entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt werden bis zu 24 Stunden dauern. Finden Sie in der Tabelle im Abschnitt [vor Beginn](#before-you-begin) dieses Artikels, die die Zeit anzeigt, die für Ereignisse in den verschiedenen Office 365-Diensten benötigt verfügbar sein soll.
+Die meisten Überwachungsdaten sind innerhalb von 30 Minuten verfügbar, es kann jedoch bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. In der Tabelle im Abschnitt [bevor Sie beginnen](#before-you-begin) dieses Artikels wird gezeigt, wie lange es dauert, bis Ereignisse in den verschiedenen Office 365-Diensten verfügbar sind.
 
-**Wie lange werden für das Überwachungsprotokoll Datensätze beibehalten?**
+**Wie lange werden die Überwachungseinträge aufbewahrt?**
 
-Wie bereits erklärt hängt von der Aufbewahrungszeitraum für Audit Datensätze Office 365-Abonnement Ihrer Organisation.  
+Wie bereits erläutert, hängt die Aufbewahrungsdauer für Überwachungsdatensätze vom Office 365-Abonnement Ihrer Organisation ab.  
 
-- **Office 365 E3** - Audit Datensätze 90 Tage lang aufbewahrt werden.
+- **Office 365 E3** -Überwachungsdatensätze werden für 90 Tage aufbewahrt.
 
-- **Office 365 E5** - Audit 365 Tage (ein Jahr) Datensätze aufbewahrt werden. Aufbewahren von Audit-Datensätze für ein Jahr ist auch für Organisationen, die ein Abonnement E3 und ein Office 365 erweiterte Compliance Add-on-Abonnement verfügen verfügbar.
+- **Office 365 E5** -Überwachungsdatensätze werden für 365 Tage (ein Jahr) aufbewahrt. Das aufBewahren von Überwachungsdatensätzen für ein Jahr steht auch für Organisationen zur Verfügung, die über ein E3-Abonnement und ein Office 365 Advanced Compliance-Add-on-Abonnement verfügen.
 
      > [!NOTE]
-     > Wie bereits erläutert, die einjährige Aufbewahrungsdauer für Audit-Datensätze für E5 (oder E3 Organisationen, die erweiterte Compliance Add-on Lizenzen haben) ist derzeit nur als Teil eines Programms private Preview. In diesem Vorschauprogramm zu registrieren, um Bitte Datei eine Anforderung mit [Microsoft-Support](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) und als Beschreibung der Sie Hilfe benötigen, sind: "Langfristige Office 365 Audit Log private Preview".
+     > Wie bereits erläutert, ist die Aufbewahrungsdauer für ein Jahr für die Überwachungsdatensätze für E5-Organisationen (oder E3-Organisationen mit erweiterten Compliance-Add-on-Lizenzen) derzeit nur als Teil eines privaten Vorschau Programms verfügbar. Wenn Sie sich für dieses Vorschau Programm anmelden möchten, geben Sie eine Anforderung beim [Microsoft-Support](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) ein, und fügen Sie Folgendes als Beschreibung der benötigten Hilfe zu: "Long-term Office 365 Audit Log private Preview".
 
-Beachten Sie außerdem, dass die Dauer des Aufbewahrungszeitraums für Audit Datensätze auf Benutzerebene Lizenzierung basiert. Beispielsweise wenn ein Benutzer in Ihrer Organisation eine Lizenz für Office 365 E3 zugewiesen ist, werden dann die Überwachungseinträge für Aktivitäten, die ausgeführt werden, die von diesem Benutzer 90 Tage lang aufbewahrt. Wenn ein anderer Benutzer eine Lizenz für Office 365 E5 zugewiesen ist, werden ihre Überwachungseinträge für ein Jahr beibehalten. 
+Beachten Sie, dass die Dauer des Aufbewahrungszeitraums für Überwachungsdatensätze auf der benutzerbasierten Lizenzierung basiert. Wenn beispielsweise einem Benutzer in Ihrer Organisation eine Office 365 E3-Lizenz zugewiesen ist, werden die Überwachungsdatensätze für die von diesem Benutzer ausgeführten Aktivitäten für 90 Tage aufbewahrt. Wenn einem anderen Benutzer eine Office 365 E5-Lizenz zugewiesen ist, werden die Überwachungsdatensätze für ein Jahr aufbewahrt. 
 
-**Kann ich die Überwachung von Daten programmgesteuert zugreifen?**
+**Kann ich programmgesteuert auf die Überwachungsdaten zugreifen?**
 
-Ja. Die Office 365-Verwaltungs-Aktivität-API wird verwendet, um die Überwachungsprotokolle programmgesteuert abgerufen.  Zum Einstieg finden Sie unter [Erste Schritte mit Office 365-Management-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+Ja. Die Office 365-Verwaltungs Aktivitäts-API wird zum programmgesteuerten Abrufen der Überwachungsprotokolle verwendet.  Informationen zu den ersten Schritten finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Gibt es andere Methoden, um die Protokolle mit der Sicherheit in Office 365 & Compliance Center oder Office 365 Management Aktivität API Überwachung abrufen?**
+**Gibt es andere Möglichkeiten zum Abrufen von Überwachungsprotokollen außer der Verwendung des Office 365 Security & Compliance Centers oder der Office 365-Verwaltungs Aktivitäts-API?**
 
-Nein. Dies sind die nur zwei Methoden zum Abrufen von Daten aus dem Office 365-Überwachung-Dienst. 
+Nein. Dies sind die einzigen beiden Möglichkeiten zum Abrufen von Daten aus dem Office 365-Überwachungsdienst. 
 
-**Müssen einzeln Aktivieren der Überwachung in alle Dienste, die ich für Überwachungsprotokolle erfassen möchten?**
+**Muss die Überwachung in jedem Dienst, für den Überwachungsprotokolle erfasst werden sollen, einzeln aktiviert werden?**
 
-In den meisten Office 365-Diensten ist standardmäßig aktiviert, nachdem Sie anfänglich Überwachung für Office 365-Organisation (wie im Abschnitt [bevor Sie beginnen:](#before-you-begin) in diesem Artikel beschrieben) aktivieren. Allerdings müssen Sie aktivieren Postfach Überwachung in Exchange Online für jedes Postfach, das Sie überwachen möchten.   Wir arbeiten zum Aktivieren der Überwachung von Postfächern in der Standardeinstellung für alle Postfächer in einer Office 365-Organisation. Weitere Informationen finden Sie unter "Überwachung von Exchange-Postfächern in der Standardeinstellung im [Blog des Microsoft Security, Privatsphäre und Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171)aktiviert wird".
+In den meisten Office 365-Diensten ist die Überwachung standardmäßig aktiviert, nachdem Sie die Überwachung für Ihre Office 365-Organisation (wie im Abschnitt [bevor Sie beginnen](#before-you-begin) in diesem Artikel beschrieben) aktivieren. Sie müssen jedoch die postfachüberwachung in Exchange Online für jedes Postfach aktivieren, das Sie überwachen möchten.   Wir arbeiten daran, die postfachüberwachung standardmäßig für alle Postfächer in einer Office 365-Organisation zu aktivieren. Weitere Informationen finden Sie unter "Exchange-postfachüberwachung wird standardmäßig aktiviert" im [Microsoft-Blog für Sicherheit, Datenschutz und Kompatibilität](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
 
-**Deduplizierung der Office 365-Überwachung Servicesupport von Datensätzen?**
+**Unterstützt der Office 365-Überwachungsdienst die Deduplizierung von Datensätzen?**
 
-Nein. Pipeline für die Überwachung Service ist nahezu in Echtzeit und kann daher nicht Deduplizierung unterstützen.
+Nein. Die Überwachungsdienst-Pipeline ist nahezu in Echtzeit und kann daher keine Deduplizierung unterstützen.
  
-**Werden Office 365 Überwachung von Daten werden über Landesgrenzen übergeben?**
+**Wird in Office 365 der Datenfluss über geographies hinweg überwacht?**
 
-Nein. Wir haben gerade Überwachung Pipeline Bereitstellungen NA (Nordamerika), EMEA (Europa, Naher Osten und Afrika) und "APAC" (Asien-Pazifik) Regionen. Jedoch können wir die Daten über diese Bereiche für den Lastenausgleich und nur während der live-Site Probleme übergeben. Wenn wir diese Aktivitäten ausführen, werden die Daten während der Übertragung verschlüsselt.   
+Nein. Derzeit haben wir Überwachungs Pipeline-Bereitstellungen in den Regionen NA (Nordamerika), EMEA (Europa, Mittlerer Osten und Afrika) und APAC (Asia Pacific). Allerdings können wir die Daten in diesen Regionen für den Lastenausgleich und nur während der Live-Website-Probleme übertragen. Wenn wir diese Aktivitäten ausführen, werden die Daten in Transit verschlüsselt.   
  
-**Ist die verschlüsselten Daten Überwachung?**
+**Werden Überwachungsdaten verschlüsselt?**
 
-Überwachen von Daten wird in Exchange-Postfächern (Daten im Ruhezustand) im selben Bereich gespeichert, in der Pipeline für die Überwachung bereitgestellt wird. Diese Daten werden nicht verschlüsselt. Allerdings werden immer Daten während der Übertragung verschlüsselt. 
+Überwachungsdaten werden in Exchange-Postfächern (Rest-Daten) in derselben Region gespeichert, in der die Überwachungs Pipeline bereitgestellt wird. Diese Daten werden nicht verschlüsselt. Daten werden jedoch immer verschlüsselt. 
 
 
 

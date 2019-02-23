@@ -1,107 +1,106 @@
 ---
-title: Übersicht über die uneingeschränkte Archivierung in Office 365
+title: Übersicht über die unbegrenzte Archivierung in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
-description: Erfahren Sie mehr über automatisch erweitert die Archivierung in Office 365, unbegrenzte Archivierung für Exchange Online-Postfächer enthält.
-ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Erfahren Sie mehr über die automatische Erweiterung der Archivierung in Office 365, die unbegrenzten Archivspeicher für Exchange Online-Postfächer bereitstellt.
+ms.openlocfilehash: fa1fc2a8b2de577232a50ecb1f89b53d52012096
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740817"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223484"
 ---
-# <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die uneingeschränkte Archivierung in Office 365
+# <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die unbegrenzte Archivierung in Office 365
 
-In Office 365 bieten archivpostfächer den Benutzern zusätzliche Postfach Speicherplatz. Nach dem Postfach eines Benutzers Archivieren aktiviert ist, ist bis zu 100 GB zusätzlicher Speicher verfügbar. Wenn das Speicherkontingent 100 GB erreicht ist, mussten wenden Sie sich an Microsoft zu Anforderung zusätzlicher Speicherplatz für ein Archivpostfach Organisationen. Dies ist nicht mehr der Fall. Das neue Feature der unbegrenzte Archivierung in Office 365 (bezeichnet *Archivierung erweiterbares*) bietet eine unbegrenzte an Speicherplatz in archivpostfächer. Nun, wenn das Speicherkontingent in das Archivpostfach erreicht ist, Office 365 wird automatisch erhöht, die Größe des Archivs, d. h., Benutzer werden nicht, nicht genügend Speicherplatz Postfach ausgeführt und Administratoren nicht zusätzlichen Speicher für archivpostfächer anfordern müssen .
+In Office 365 stellen Archivpostfächer Benutzern zusätzlichen Speicherplatz zur Verfügung. Nachdem das Archivpostfach eines Benutzers aktiviert wurde, stehen bis zu 100 GB zusätzlicher Speicher zur Verfügung. Wenn das 100 GB-Speicherkontingent erreicht ist, mussten Organisationen Microsoft kontaktieren, um zusätzlichen Speicherplatz für ein Archivpostfach anzufordern. Das ist nicht mehr der Fall. Die neue unbegrenzte Archivierungsfunktion in Office 365 (sog. *Auto Expanding*Archiving) bietet eine unbegrenzte Menge an Speicherplatz in archivpostfächern. Wenn nun das Speicherkontingent im Archivpostfach erreicht wird, erhöht Office 365 automatisch die Größe des Archivs, was bedeutet, dass dem Benutzer kein Speicherplatz mehr zur Verfügung steht und Administratoren keinen zusätzlichen Speicher für Archivpostfächer anfordern müssen. .
   
-Für eine schrittweise Anleitung zum Aktivieren der automatischen Erweitern Archivierung, finden Sie unter [Aktivieren unbegrenzte Archivierung in Office 365](enable-unlimited-archiving.md).
+Schrittweise Anleitungen zum Aktivieren der automatischen Erweiterung der Archivierung finden Sie unter [enable Unlimited Archiving in Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> Erweiterbares auch Archivierung unterstützt freigegebene Postfächer. Um das Archiv für ein freigegebenes Postfach zu aktivieren, ist eine Lizenz für Exchange Online – Plan 2 oder eine Lizenz Exchange Online – Plan 1 mit Exchange Online-Archivierung-Lizenz erforderlich. 
+> Die automatisch wachsende Archivierung unterstützt auch freigegebene Postfächer. Zum Aktivieren des Archivs für ein freigegebenes Postfach ist eine Exchange Online-Lizenz für den Plan 2 oder eine Exchange Online-Plan 1-Lizenz mit einer Exchange Online-Archivierungslizenz erforderlich. 
   
-## <a name="how-auto-expanding-archiving-works"></a>Funktionsweise der Archivierung wie erweiterbares
+## <a name="how-auto-expanding-archiving-works"></a>FunktionsWeise der automatischen Erweiterung der Archivierung
 
-Wie bereits erklärt, zusätzliche Postfach wird Speicherplatz erstellt, wenn Archivpostfach des Benutzers aktiviert ist. Erweiterbares Archivierung aktiviert, prüft die Office 365 in regelmäßigen Abständen die Größe des archivpostfachs. Wenn ein Archivpostfach erreicht bald Speichergrenzwert erhält, erstellt Office 365 automatisch zusätzlicher Speicherplatz für das Archiv. Wenn der Benutzer nicht genügend diese zusätzlichen Speicherplatz ausgeführt wird, fügt Office 365 mehr Speicherplatz in Archiv des Benutzers an. Dieser Prozess wird automatisch, was bedeutet, dass Administratoren anfordern zusätzliche Archivspeicher oder Verwalten der Archivierung automatisch erweitert haben. 
+Wie bereits erläutert, wird zusätzlicher Speicherplatz für Postfächer erstellt, wenn das Archivpostfach eines Benutzers aktiviert ist. Wenn die automatische Erweiterung der Archivierung aktiviert ist, überprüft Office 365 regelmäßig die Größe des Archivpostfachs. Wenn ein Archivpostfach dem Speichergrenzwert in der Nähe entspricht, erstellt Office 365 automatisch zusätzlichen Speicherplatz für das Archiv. Wenn der Benutzer diesen zusätzlichen Speicherplatz ausgeht, fügt Office 365 mehr Speicherplatz zum Archiv des Benutzers hinzu. Dieser Vorgang geschieht automatisch, was dazu führt, dass Administratoren keinen zusätzlichen Archivspeicher anfordern oder die automatisch wachsende Archivierung verwalten müssen. 
   
-Nachfolgend finden Sie ein schnellen Überblick über den Prozess.
+Hier finden Sie eine kurze Übersicht über den Prozess.
   
-![Übersicht über die Archivierung automatisch erweitert](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![Übersicht über den automatisch expandierenden Archivierungsprozess](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
   
-1. Archivierung ist für ein Benutzerpostfach oder ein freigegebenes Postfach aktiviert. Ein Archivpostfach mit 100 GB freier Speicherplatz wird erstellt, und das Warnung Kontingent für das Archivpostfach auf 90 GB festgelegt ist.
+1. Die Archivierung ist für ein Benutzerpostfach oder ein freigegebenes Postfach aktiviert. Ein Archivpostfach mit 100 GB Speicherplatz wird erstellt, und das Warnungskontingent für das Archivpostfach ist auf 90 GB festgelegt.
     
-2. Ein Administrator kann erweiterbares Archivierung für das Postfach. Klicken Sie dann, wenn das Archivpostfach (einschließlich des Ordners wiederherstellbare Elemente) 90 GB erreicht, wird es in einem Archiv erweiterbares konvertiert und Office 365 fügt Speicherplatz in das Archiv. Beachten Sie, dass dauert bis zu 30 Tage für den zusätzlichen Speicherplatz bereitgestellt werden.
+2. Ein Administrator ermöglicht die automatische Erweiterung der Archivierung für das Postfach. Wenn das Archivpostfach (einschließlich des Ordners "Wiederherstellbare Elemente") dann 90 GB erreicht, wird es in ein automatisch erweiterbares Archiv konvertiert, und in Office 365 wird dem Archivspeicher Platz hinzugefügt. Beachten Sie, dass es bis zu 30 Tage dauern kann, bis der zusätzliche Speicherplatz bereitgestellt wird.
     
-3. Office 365 fügt mehr Speicherplatz automatisch in das Archiv bei Bedarf.
+3. Bei Bedarf fügt Office 365 automatisch mehr Speicherplatz zum Archiv hinzu.
   
 > [!IMPORTANT]
-> Wenn ein Postfach in die Warteschleife gestellt oder um eine Aufbewahrungsrichtlinie für Office 365 zugeordnet ist, wird das Speicherkontingent für die Archivierung Maibox auf 110 GB erhöht, wenn erweiterbares Archivierung aktiviert ist. Auf ähnliche Weise wird die Kontingentgrenzwert auf 100 GB erhöht.
+> Wenn ein Postfach gehalten oder einer Office 365-Aufbewahrungsrichtlinie zugewiesen wird, wird das Speicherkontingent für das Archiv maibox auf 110 GB erhöht, wenn die automatische Erweiterung der Archivierung aktiviert ist. Entsprechend wird das Kontingent für die Archiv Warnung auf 100 GB erhöht.
 
-## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Was wird auf den Speicherplatz zusätzliche Archiv verschoben?
+## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Was wird auf den zusätzlichen Archivspeicher Platz verschoben?
 
-Um Archivspeicher erweiterbares effizient zu nutzen, möglicherweise Ordner verschoben werden. Office 365 wird bestimmt, welche Ordner verschoben, wenn das Archiv zusätzlicher Speicher hinzugefügt wird. Wenn ein Ordner verschoben wird, wird automatisch ein Unterordner unter dem ursprünglichen Ordner im Archiv Teil der Ordnerliste in Outlook erstellt. Diese neue Unterordner verweist auf die Elemente, die verschoben wurden. Die Benennungskonvention, die Office 365 wird verwendet, um nennen Sie diesen Ordner ist ** \<Ordnername\>_yyyy (auf erstellt mmm TT, JJJJ H_mm)**, wobei: 
+Um den automatisch expandierenden Archivspeicher effizient zu nutzen, werden Ordner möglicherweise verschoben. Office 365 bestimmt, welche Ordner verschoben werden, wenn dem Archiv zusätzlicher Speicher hinzugefügt wird. Wenn ein Ordner verschoben wird, wird automatisch ein Unterordner im Archivteil der Ordnerliste in Outlook im ursprünglichen Ordner erstellt. Dieser neue Unterordner verweist auf die Elemente, die verschoben wurden. die benennungskonvention, die Office 365 zum benennen dieses ordners verwendet, ist der ** \<ordner\>name _yyyy (erstellt auf mmm dd, yyyy h_mm)**, wobei folgendes gilt: 
   
-- **JJJJ** ist das Jahr, den, das die Nachrichten im Ordner empfangen wurden. 
+- **yyyy** ist das Jahr, in dem die Nachrichten im Ordner empfangen wurden. 
     
-- **mmm TT, JJJJ H_m** ist das Datum und die Uhrzeit, die der Unterordner von Office 365, im UTC-Format, basierend auf der Zeitzone des Benutzers und der regionalen Einstellungen in Outlook erstellt wurde. 
+- **Mmm dd, yyyy h_m** ist das Datum und die Uhrzeit, zu der der Unterordner von Office 365 im UTC-Format erstellt wurde, basierend auf der Zeitzone des Benutzers und den regionalen Einstellungen in Outlook. 
     
-Die folgenden Screenshots anzeigen eine Ordnerliste vor und nach Nachrichten in einem Archiv automatisch erweitert verschoben werden.
+Die folgenden Screenshots zeigen eine Ordnerliste vor und nach dem Verschieben von Nachrichten in einem automatisch erweiterten Archiv.
   
- **Vor dem Hinzufügen zusätzlichen Speichers**
+ **Bevor zusätzlicher Speicher hinzugefügt wird**
   
-![Ordnerliste Archivpostfach bevor erweiterbares Archiv bereitgestellt ist.](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![Ordnerliste des Archivpostfachs vor dem automatischen Erweitern des Archivs](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
   
- **Nach dem Hinzufügen zusätzlichen Speichers**
+ **Nachdem zusätzlicher Speicher hinzugefügt wurde**
   
-![Ordnerliste Archivpostfach nach erweiterbares Archiv bereitgestellt ist.](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![Ordnerliste des Archivpostfachs nach dem automatischen Erweitern des Archivs](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
-## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook-Anforderungen für den Zugriff auf Elemente in einem Archiv automatisch erweitert
+## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook-Anforderungen für den Zugriff auf Elemente in einem automatisch erweiterten Archiv
 
-Um Nachrichten zugreifen, die in einem Archiv automatisch erweitert gespeichert sind, müssen Benutzer eine der folgenden Outlook-Clients verwenden:
+Für den Zugriff auf Nachrichten, die in einem automatisch erweiterten Archiv gespeichert sind, müssen Benutzer einen der folgenden Outlook-Clients verwenden:
   
-- 2016 Outlook oder Outlook 2019 für Windows
+- Outlook 2016 oder Outlook 2019 für Windows
     
 - Outlook im Web 
     
-- 2016 Outlook oder Outlook 2019 für Mac 
+- Outlook 2016 oder Outlook 2019 für Mac 
     
 > [!NOTE]
-> Outlook 2013-Benutzer können nur Zugriff auf Elemente, die ursprünglich in ihre Archivpostfach gespeichert wurden. Sie werden kann nicht für den Zugriffselemente, die in zusätzliche Archivspeicher verschoben werden. 
+> Outlook 2013-Benutzer können nur auf Elemente zugreifen, die ursprünglich in Ihrem Archivpostfach gespeichert waren. Sie können nicht auf Elemente zugreifen, die in zusätzlichen Archivspeicher verschoben werden. 
   
-Hier sind einige Punkte, berücksichtigen Sie beim Verwenden von Outlook oder Outlook im Web zum Zugriff auf Nachrichten in einem Archiv automatisch erweitert gespeichert.
+Bei der Verwendung von Outlook oder Outlook im Web für den Zugriff auf Nachrichten, die in einem automatisch erweiterten Archiv gespeichert sind, sollten Sie Folgendes berücksichtigen.
   
-- Sie können ein beliebiger Ordner im Archivpostfach, einschließlich Schriftarten, die in den Bereich für die automatische erweiterte Speicherung verschoben wurden zugreifen.
+- Sie können auf einen beliebigen Ordner in Ihrem Archivpostfach zugreifen, einschließlich derer, die in den automatisch erweiterten Speicherbereich verschoben wurden.
     
-- Sie können nach Elementen suchen, die in einen Bereich zusätzlicher Speicher verschoben wurden, nur, indem Sie den Ordner selbst suchen. Dies bedeutet, dass Sie den Archivordner in Ordnerliste, um die **Aktuellen Ordner** als den Suchbereich auswählen aus. Enthält ein Ordner in einem automatisch erweitert Speicherbereich Unterordner, müssen Sie auf ähnliche Weise jedem Unterordner separat zu suchen. 
+- Sie können nur nach Elementen suchen, die in einen zusätzlichen Speicherbereich verschoben wurden, indem Sie den Ordner selbst durchsuchen. Dies führt dazu, dass Sie den Ordner Archiv in der Ordnerliste auswählen müssen, um die Option **Aktueller Ordner** als Suchbereich auszuwählen. Auch wenn ein Ordner in einem automatisch erweiterten Speicherbereich Unterordner enthält, müssen Sie die einzelnen Unterordnern separat durchsuchen. 
     
-- Anzahl der Element in Outlook und Lese-/ungelesen zählt (in Outlook und Outlook im Web) in einem Archiv automatisch erweitert ist möglicherweise nicht korrekt.
+- Die Anzahl der Elemente in Outlook und das Lesen/ungelesene zählen (in Outlook und Outlook im Web) in einem automatisch erweiterten Archiv ist möglicherweise nicht korrekt.
     
-- Sie können Löschen von Elementen in einem Unterordner, der auf einen Speicherbereich automatische erweitert verweist, aber der Ordner selbst kann nicht gelöscht werden.
+- Sie können Elemente in einem Unterordner löschen, der auf einen automatisch erweiterten Speicherbereich zeigt, aber der Ordner selbst kann nicht gelöscht werden.
     
-- Sie können das Feature gelöschte Elemente wiederherstellen Wiederherstellen eines Elements, das in einem Speicher automatisch erweitert gelöscht wurde.
+- Sie können das Feature Gelöschte Elemente wiederherstellen nicht verwenden, um ein Element wiederherzustellen, das aus einem automatisch erweiterten Speicherbereich gelöscht wurde.
   
-## <a name="auto-expanding-archiving-and-other-office-365-compliance-features"></a>Erweiterbares Archivierung und andere Office 365 Compliance-features
+## <a name="auto-expanding-archiving-and-other-office-365-compliance-features"></a>Automatisches Erweitern von Archivierungs-und anderen Office 365-Kompatibilitätsfeatures
 
-In diesem Abschnitt wird die Funktionalität zwischen erweiterbares Archivierung und andere Office 365 Compliance und Daten Governance Features erläutert.
+In diesem Abschnitt wird die Funktionalität zwischen der automatischen Erweiterung der Archivierung und anderen Office 365-Kompatibilitäts-und Daten Steuerungsfeatures erläutert.
   
-- **eDiscovery** - bei Verwendung ein Office 365 eDiscovery-Tools, z. B. Inhaltssuche oder Compliance-eDiscovery, die Bereiche zusätzlicher Speicher in einem Archiv automatisch erweitert werden ebenfalls durchsucht.
+- **eDiscovery** -Wenn Sie ein Office 365 eDiscovery-Tool wie Inhaltssuche oder in-Place eDiscovery verwenden, werden auch die zusätzlichen Speicherbereiche in einem automatisch erweiterten Archiv durchsucht.
     
-- **Aufbewahrung** - Wenn Sie ein Postfach auf platzieren halten mithilfe von Tools wie Aufbewahrung für eventuelle Rechtsstreitigkeiten im Exchange Online oder eDiscovery-Fall enthält und Aufbewahrungsrichtlinien in die Sicherheit in Office 365 Compliance Center, Content & befindet sich in einem Archiv automatisch erweitert ist auch in der Warteschleife platziert.
+- **Aufbewahrung** – Wenn Sie ein Postfach mithilfe von Tools wie der Beweissicherung in Exchange Online oder eDiscovery Case Holds und Aufbewahrungsrichtlinien im Office 365 Security _AMP_ Compliance Center halten, werden Inhalte, die sich in einem automatisch erweiterten Archiv befinden, auch in der Warteschleife gehalten.
     
-- **Messaging-datensatzverwaltung (MRM)** - Wenn Sie Löschrichtlinien MRM in Exchange Online verwenden, um abgelaufene Postfachelemente, befindet sich im Archiv automatisch erweitert abgelaufene Elemente endgültig löschen, werden ebenfalls gelöscht.
+- **Messaging Records Management (MRM)** – Wenn Sie in Exchange Online MRM-Löschrichtlinien verwenden, um abgelaufene Postfachelemente dauerhaft zu löschen, werden auch abgelaufene Elemente im automatisch erweiterten Archiv gelöscht.
     
-- **Importieren von Dienst** - Sie können den Dienst Office 365 importieren zum Importieren von PST-Dateien des Benutzers automatisch erweitert Archiv verwenden. Sie können bis zu 100 GB an Daten aus PST-Dateien in Archivpostfach des Benutzers importieren. 
+- **Import Dienst** – Sie können den Office 365-Import Dienst verwenden, um PST-Dateien in das automatisch erweiterte Archiv eines Benutzers zu importieren. Sie können bis zu 100 GB Daten aus PST-Dateien in das Archivpostfach des Benutzers importieren. 
 
 ## <a name="more-information"></a>Weitere Informationen
 
-Ausführliche technische Informationen zur Archivierung, finden Sie unter erweiterbares [Office 365: Archive – häufig gestellte Fragen erweiterbares](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+Weitere technische Details zur automatisch expandierenden Archivierung finden Sie unter [Office 365: häufig gestellte Fragen zur automatischen Erweiterung](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)von Archiven.

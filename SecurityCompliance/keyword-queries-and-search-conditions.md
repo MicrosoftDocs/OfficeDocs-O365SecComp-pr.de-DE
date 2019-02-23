@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online-Postfächern und in SharePoint oder OneDrive for Business-Websites mithilfe &amp; des Tools für die Inhaltssuche im Office 365 Security Compliance Center durchsuchen können.  '
-ms.openlocfilehash: b3d0e7bb18513765c48bfc5ca324f13e5abc4c27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3963105a790f8cc149bb5522f386f7bffe974e6c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214075"
+ms.locfileid: "30223694"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 

@@ -1,9 +1,26 @@
 ---
-Title: "Schutz vor Spoofing in Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/06/2018 ms. Audience: ITPro ms. Topic: article ms. Service: O365-seccomp localization_priority: normal Search. appverid:
-- MET150 ms. Asset-Nr.: d24bb387-c65d-486e-93e7-06a4f1a436c0 ms. Collection:
-    - M365-Security-Compliance Description: "in diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe abschwächt, die gefälschte Absenderdomänen, also gefälschte Domänen, verwenden. Dies wird durch Analysieren der Nachrichten und Blockieren der authentifizierten neithe mithilfe von Standard-e-Mail-Authentifizierungsmethoden oder anderer Absender Zuverlässigkeits Techniken erreicht. Diese Änderung wird implementiert, um die Anzahl von Phishing-Angriffen zu verringern, denen Organisationen in Office 365 ausgesetzt sind. "
+title: Antispoofingschutz in Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/06/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
+ms.collection:
+- M365-security-compliance
+description: In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe abschwächt, bei denen gefälschte Absenderdomänen verwendet werden, also Domänen, die gefälscht sind. Dies wird durch Analysieren der Nachrichten und Blockieren der authentifizierten neithe mithilfe von Standard-e-Mail-Authentifizierungsmethoden oder anderer Absender Zuverlässigkeits Techniken erreicht. Diese Änderung wird implementiert, um die Anzahl von Phishing-Angriffen zu verringern, denen Organisationen in Office 365 ausgesetzt sind.
+ms.openlocfilehash: 041d2ee2cbad1c051c0ca4724d42b189215f0e82
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223874"
 ---
-
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 
 In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe abschwächt, bei denen gefälschte Absenderdomänen verwendet werden, also Domänen, die gefälscht sind. Dies wird durch Analysieren der Nachrichten und Blockieren der mit Standard-e-Mail-Authentifizierungsmethoden oder anderen Absender Zuverlässigkeits Techniken authentifizierten. Diese Änderung wird implementiert, um die Anzahl von Phishing-Angriffen zu reduzieren, denen Kunden ausgesetzt sind.
