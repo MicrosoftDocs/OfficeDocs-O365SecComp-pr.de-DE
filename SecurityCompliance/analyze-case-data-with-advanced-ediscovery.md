@@ -1,55 +1,55 @@
 ---
-title: Analysieren von Groß-/Kleinschreibung Daten mit Office 365 erweiterte eDiscovery
+title: Analysieren von Falldaten mit Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: 'Erhalten Sie einen Überblick über den Prozess analysieren, wodurch Sie Parameter festlegen, Optionen ausführen und Ergebnisse in Office 365 erweiterte eDiscovery anzeigen. '
-ms.openlocfilehash: d20ce3acb9c21e8c35b098df2ffae3fa6c871c3e
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Hier erhalten Sie einen Überblick über den Analyseprozess, mit dem Sie Parameter festlegen, Optionen ausführen und Ergebnisse anzeigen können, in Office 365 Advanced eDiscovery. '
+ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529976"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217465"
 ---
-# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a><span data-ttu-id="d4cf3-103">Analysieren von Groß-/Kleinschreibung Daten mit Office 365 erweiterte eDiscovery</span><span class="sxs-lookup"><span data-stu-id="d4cf3-103">Analyze case data with Office 365 Advanced eDiscovery</span></span>
+# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a><span data-ttu-id="aa0d4-103">Analysieren von Falldaten mit Office 365 Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="aa0d4-103">Analyze case data with Office 365 Advanced eDiscovery</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d4cf3-p101">Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="d4cf3-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="aa0d4-p101">Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span><span class="sxs-lookup"><span data-stu-id="aa0d4-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
-<span data-ttu-id="d4cf3-106">**Vorbereiten** der \> **Analyze** Prozess in erweiterten eDiscovery gilt die folgende Funktionalität für die enthaltenen Dateien:</span><span class="sxs-lookup"><span data-stu-id="d4cf3-106">The **Prepare** \> **Analyze** process in Advanced eDiscovery applies the following functionality to the included files:</span></span> 
+<span data-ttu-id="aa0d4-106">Der **Vorbereitungs** \> **Analyse** Prozess in Advanced eDiscovery wendet die folgenden Funktionen auf die enthaltenen Dateien an:</span><span class="sxs-lookup"><span data-stu-id="aa0d4-106">The **Prepare** \> **Analyze** process in Advanced eDiscovery applies the following functionality to the included files:</span></span> 
   
-- <span data-ttu-id="d4cf3-107">Identifiziert und die geladenen Dateien in Gruppen von eindeutige Dateien, Duplikate und in der Nähe Duplikate organisiert.</span><span class="sxs-lookup"><span data-stu-id="d4cf3-107">Identifies and organizes the loaded files into groups of unique files, duplicates, and near-duplicates.</span></span>
+- <span data-ttu-id="aa0d4-107">Identifiziert und organisiert die geladenen Dateien in Gruppen von eindeutigen Dateien, Duplikaten und beinahe-Duplikaten.</span><span class="sxs-lookup"><span data-stu-id="aa0d4-107">Identifies and organizes the loaded files into groups of unique files, duplicates, and near-duplicates.</span></span>
     
-- <span data-ttu-id="d4cf3-108">Identifiziert und -e-Mails in der e-Mail-Threads, basierend auf der schrittweisen Inclusiveness der e-Mails, die hierarchisch strukturierter Gruppen organisiert.</span><span class="sxs-lookup"><span data-stu-id="d4cf3-108">Identifies and organizes emails into hierarchically structured groups of email threads, based on the progressive inclusiveness of the emails.</span></span>
+- <span data-ttu-id="aa0d4-108">Identifiziert und organisiert e-Mails in hierarchisch strukturierten Gruppen von e-Mail-Threads, basierend auf der progressiven Inklusivität der e-Mails.</span><span class="sxs-lookup"><span data-stu-id="aa0d4-108">Identifies and organizes emails into hierarchically structured groups of email threads, based on the progressive inclusiveness of the emails.</span></span>
     
-- <span data-ttu-id="d4cf3-109">Ermöglicht die Verwendung von Designs im erweiterten eDiscovery Verarbeitung und Batchverarbeitung von Dateien an.</span><span class="sxs-lookup"><span data-stu-id="d4cf3-109">Enables the use of Themes in Advanced eDiscovery processing and file batching.</span></span>
+- <span data-ttu-id="aa0d4-109">Ermöglicht die Verwendung von Designs in Advanced eDiscovery processing und File Batching.</span><span class="sxs-lookup"><span data-stu-id="aa0d4-109">Enables the use of Themes in Advanced eDiscovery processing and file batching.</span></span>
     
- <span data-ttu-id="d4cf3-110">Analysieren der führen Sie Optionen können Sie die Parameter festlegen, und zeigen Sie die Ergebnisse, wie folgt:</span><span class="sxs-lookup"><span data-stu-id="d4cf3-110">Analyze allows you to set parameters, run options, and view the results, as follows:</span></span> 
+ <span data-ttu-id="aa0d4-110">Mit Analyze können Sie wie folgt Parameter festlegen, Optionen ausführen und die Ergebnisse anzeigen:</span><span class="sxs-lookup"><span data-stu-id="aa0d4-110">Analyze allows you to set parameters, run options, and view the results, as follows:</span></span> 
   
-- <span data-ttu-id="d4cf3-111">**Analyze Setup**: Einstellungen vor dem Ausführen der Analyse für die Dateien angegeben werden können.</span><span class="sxs-lookup"><span data-stu-id="d4cf3-111">**Analyze setup**: Allows settings to be specified before running Analyze on the files.</span></span>
+- <span data-ttu-id="aa0d4-111">**Analyse von Setup**: ermöglicht die Angabe von Einstellungen vor dem Ausführen von ANALYZE für die Dateien.</span><span class="sxs-lookup"><span data-stu-id="aa0d4-111">**Analyze setup**: Allows settings to be specified before running Analyze on the files.</span></span>
     
-- <span data-ttu-id="d4cf3-112">**Analyze Ergebnisse**: Metriken der Analyse angezeigt.</span><span class="sxs-lookup"><span data-stu-id="d4cf3-112">**Analyze results**: Displays metrics of the analysis.</span></span> 
+- <span data-ttu-id="aa0d4-112">**Ergebnisse analysieren**: zeigt Metriken der Analyse an.</span><span class="sxs-lookup"><span data-stu-id="aa0d4-112">**Analyze results**: Displays metrics of the analysis.</span></span> 
     
-<span data-ttu-id="d4cf3-113">Vor dem Ausführen von Analyze, definieren Sie die Kriterien für die Auswahl und Verarbeiten von Dateien, einschließlich die geladenen Dateien analysiert werden und den Typ der Analyse an den jeden Dateityp gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="d4cf3-113">Before running Analyze, define the criteria for selecting and processing files, including which loaded files will be analyzed and the type of analysis to which each type of file will be submitted.</span></span> 
+<span data-ttu-id="aa0d4-113">Definieren Sie vor dem Durchführen von ANALYZE die Kriterien für die Auswahl und Verarbeitung von Dateien, einschließlich der geladenen Dateien, die analysiert werden sollen, und der Art der Analyse, auf die die einzelnen Dateitypen übermittelt werden.</span><span class="sxs-lookup"><span data-stu-id="aa0d4-113">Before running Analyze, define the criteria for selecting and processing files, including which loaded files will be analyzed and the type of analysis to which each type of file will be submitted.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="d4cf3-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d4cf3-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aa0d4-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="aa0d4-114">See also</span></span>
 
-[<span data-ttu-id="d4cf3-115">Office 365 Erweiterte eDiscovery</span><span class="sxs-lookup"><span data-stu-id="d4cf3-115">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="aa0d4-115">Office 365 Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="aa0d4-115">Office 365 Advanced eDiscovery</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="d4cf3-116">Grundlegendes zu Dokument Ähnlichkeit</span><span class="sxs-lookup"><span data-stu-id="d4cf3-116">Understanding document similarity</span></span>](understand-document-similarity-in-advanced-ediscovery.md)
+[<span data-ttu-id="aa0d4-116">Grundlegendes zur Dokument Ähnlichkeit</span><span class="sxs-lookup"><span data-stu-id="aa0d4-116">Understanding document similarity</span></span>](understand-document-similarity-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="d4cf3-117">Die Einstellung Text ignorieren</span><span class="sxs-lookup"><span data-stu-id="d4cf3-117">Setting ignore text</span></span>](set-ignore-text-in-advanced-ediscovery.md)
+[<span data-ttu-id="aa0d4-117">Festlegen des Texts ignorieren</span><span class="sxs-lookup"><span data-stu-id="aa0d4-117">Setting ignore text</span></span>](set-ignore-text-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="d4cf3-118">Analysieren der Einstellung Erweiterte Einstellungen</span><span class="sxs-lookup"><span data-stu-id="d4cf3-118">Setting Analyze advanced settings</span></span>](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[<span data-ttu-id="aa0d4-118">Einstellung "Erweiterte Einstellungen analysieren"</span><span class="sxs-lookup"><span data-stu-id="aa0d4-118">Setting Analyze advanced settings</span></span>](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[<span data-ttu-id="d4cf3-119">Anzeigen von Vorgängen analysieren</span><span class="sxs-lookup"><span data-stu-id="d4cf3-119">Viewing Analyze tasks</span></span>](view-analyze-results-in-advanced-ediscovery.md)
+[<span data-ttu-id="aa0d4-119">Anzeigen von Analyseaufgaben</span><span class="sxs-lookup"><span data-stu-id="aa0d4-119">Viewing Analyze tasks</span></span>](view-analyze-results-in-advanced-ediscovery.md)
 

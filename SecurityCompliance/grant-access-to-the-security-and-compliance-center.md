@@ -1,5 +1,5 @@
 ---
-title: Gewähren des Benutzerzugriffs auf die Office 365-Sicherheit &amp; Compliance Center
+title: Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,87 +8,87 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Benutzer müssen in der Office 365-Sicherheit Berechtigungen zugewiesen werden &amp; Compliance Center, bevor sie die Sicherheits- oder kompatibilitätsanforderungen Features des verwalten können.
-ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
-ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
+description: Benutzern müssen Berechtigungen im Office 365 Security &amp; Compliance Center zugewiesen werden, bevor Sie Ihre Sicherheits-oder Compliance-Funktionen verwalten können.
+ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27221066"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216305"
 ---
-# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a><span data-ttu-id="7c76a-103">Gewähren des Benutzerzugriffs auf die Office 365-Sicherheit &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="7c76a-103">Give users access to the Office 365 Security &amp; Compliance Center</span></span>
+# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a><span data-ttu-id="fbdf8-103">Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center</span><span class="sxs-lookup"><span data-stu-id="fbdf8-103">Give users access to the Office 365 Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="7c76a-p101">Benutzer müssen in der Office 365-Sicherheit Berechtigungen zugewiesen werden &amp; Compliance Center, bevor sie die Sicherheits- oder kompatibilitätsanforderungen Features des verwalten können. Als globaler Office 365-Administrator oder Mitglied der Rollengruppe in das Wertpapier OrganizationManagement &amp; Compliance Center, Sie können diesen Benutzern Berechtigungen erteilen. Benutzer können nur die Sicherheit und Compliance-Features verwalten, mit denen Sie Zugriff auf erhalten.</span><span class="sxs-lookup"><span data-stu-id="7c76a-p101">Users need to be assigned permissions in the Office 365 Security &amp; Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security &amp; Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.</span></span> 
+<span data-ttu-id="fbdf8-p101">Benutzern müssen Berechtigungen im Office 365 Security &amp; Compliance Center zugewiesen werden, bevor Sie Ihre Sicherheits-oder Compliance-Funktionen verwalten können. Als globaler Office 365-Administrator oder Mitglied der Rollengruppe Rolle OrganizationManagement anzuzeigen im Security &amp; Compliance Center können Sie diese Berechtigungen Benutzern erteilen. Benutzer können nur die Sicherheits-oder Compliance-Funktionen verwalten, auf die Sie Zugriff haben.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-p101">Users need to be assigned permissions in the Office 365 Security &amp; Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security &amp; Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.</span></span> 
   
-<span data-ttu-id="7c76a-107">Weitere Informationen zu den verschiedenen Berechtigungen können Sie erteilen für Benutzer in das Wertpapier &amp; Compliance Center, Auschecken [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="7c76a-107">For more information about the different permissions you can give to users in the Security &amp; Compliance Center, check out [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+<span data-ttu-id="fbdf8-107">Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im Security &amp; Compliance Center erteilen können, finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="fbdf8-107">For more information about the different permissions you can give to users in the Security &amp; Compliance Center, check out [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="7c76a-108">Was sollten Sie wissen, bevor Sie beginnen?</span><span class="sxs-lookup"><span data-stu-id="7c76a-108">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="fbdf8-108">Was sollten Sie wissen, bevor Sie beginnen?</span><span class="sxs-lookup"><span data-stu-id="fbdf8-108">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="7c76a-109">Sie müssen ein globaler Office 365-Administrator oder ein Mitglied der Rollengruppe OrganizationManagement in das Wertpapier sein &amp; Compliance Center, um die Schritte in diesem Artikel auszuführen.</span><span class="sxs-lookup"><span data-stu-id="7c76a-109">You need to be an Office 365 global admin, or a member of the OrganizationManagement role group in the Security &amp; Compliance Center, to complete the steps in this article.</span></span>
+- <span data-ttu-id="fbdf8-109">Um die Schritte in diesem Artikel ausführen zu können, müssen Sie ein Office 365-globaler Administrator oder ein Mitglied &amp; der Rollengruppe Rolle OrganizationManagement anzuzeigen im Security Compliance Center sein.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-109">You need to be an Office 365 global admin, or a member of the OrganizationManagement role group in the Security &amp; Compliance Center, to complete the steps in this article.</span></span>
     
-- <span data-ttu-id="7c76a-110">Rollengruppen für die Sicherheit &amp; Compliance Center möglicherweise ähnliche Namen der Rollengruppe in Exchange Online, aber sie sind nicht identisch.</span><span class="sxs-lookup"><span data-stu-id="7c76a-110">Role groups for the Security &amp; Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.</span></span> 
+- <span data-ttu-id="fbdf8-110">Rollengruppen für das Security &amp; Compliance Center haben möglicherweise ähnliche Namen wie die Rollengruppen in Exchange Online, sind aber nicht identisch.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-110">Role groups for the Security &amp; Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.</span></span> 
     
-- <span data-ttu-id="7c76a-111">Rolle Gruppenmitgliedschaften werden nicht zwischen Exchange Online und die Sicherheit shared &amp; Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="7c76a-111">Role group memberships aren't shared between Exchange Online and the Security &amp; Compliance Center.</span></span>
+- <span data-ttu-id="fbdf8-111">Rollengruppenmitgliedschaften werden zwischen Exchange Online und dem Security &amp; Compliance Center nicht freigegeben.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-111">Role group memberships aren't shared between Exchange Online and the Security &amp; Compliance Center.</span></span>
     
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="7c76a-112">Verwenden Sie das Office 365 Administrationscenter zu einem anderen Benutzerzugriff auf der Sicherheit ermöglichen &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="7c76a-112">Use the Office 365 admin center to give another user access to the Security &amp; Compliance Center</span></span>
+## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="fbdf8-112">Verwenden des Office 365 Admin Center, um einem anderen Benutzer Zugriff auf das &amp; Security Compliance Center zu gewähren</span><span class="sxs-lookup"><span data-stu-id="fbdf8-112">Use the Office 365 admin center to give another user access to the Security &amp; Compliance Center</span></span>
 
-1. <span data-ttu-id="7c76a-113">[Anmelden bei Office 365 und im Administrationscenter zu wechseln](https://go.microsoft.com/fwlink/p/?LinkId=525275).</span><span class="sxs-lookup"><span data-stu-id="7c76a-113">[Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).</span></span>
+1. <span data-ttu-id="fbdf8-113">[Melden Sie sich bei Office 365 an, und wechseln Sie zum Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=525275).</span><span class="sxs-lookup"><span data-stu-id="fbdf8-113">[Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).</span></span>
     
-2. <span data-ttu-id="7c76a-114">**Admin zentriert** öffnen Sie in der Office 365-Verwaltungskonsole, und klicken Sie dann auf **Security &amp; Compliance**.</span><span class="sxs-lookup"><span data-stu-id="7c76a-114">In the Office 365 admin center, open **Admin centers** and then click **Security &amp; Compliance**.</span></span> 
+2. <span data-ttu-id="fbdf8-114">Öffnen Sie im Office 365 Admin Center **Admin** Center, und klicken Sie dann auf **Sicherheits &amp; Konformität**.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-114">In the Office 365 admin center, open **Admin centers** and then click **Security &amp; Compliance**.</span></span> 
     
-3. <span data-ttu-id="7c76a-115">In das Wertpapier &amp; Compliance Center, **Berechtigungen**zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="7c76a-115">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
+3. <span data-ttu-id="fbdf8-115">Wechseln Sie im &amp; Security Compliance Center zu **Berechtigungen**.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-115">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
     
-4. <span data-ttu-id="7c76a-116">Wählen Sie aus der Liste die Rollengruppe, die Sie verwenden möchten, fügen Sie den Benutzer an, und klicken Sie auf **Bearbeiten** ![Bearbeitungssymbol](media/O365_MDM_CreatePolicy_EditIcon.gif).</span><span class="sxs-lookup"><span data-stu-id="7c76a-116">From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).</span></span>
+4. <span data-ttu-id="fbdf8-116">Wählen Sie in der Liste die Rollengruppe aus, der Sie den Benutzer hinzufügen möchten, \*\*\*\* ![und klicken Sie](media/O365_MDM_CreatePolicy_EditIcon.gif)auf Bearbeitungssymbol bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-116">From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).</span></span>
     
-5. <span data-ttu-id="7c76a-117">Klicken Sie auf der Eigenschaftenseite unter **Mitglieder**der Rollengruppe **Hinzufügen**![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) und wählen Sie den Namen des Benutzers (oder Benutzer) Sie hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="7c76a-117">In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.</span></span> 
+5. <span data-ttu-id="fbdf8-117">Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder**auf \*\*\*\*![Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, und wählen Sie den Namen des Benutzers aus, den Sie hinzufügen möchten.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-117">In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.</span></span> 
     
-6. <span data-ttu-id="7c76a-118">Wenn Sie alle Benutzer, die Sie verwenden möchten, der Rollengruppe hinzufügen, klicken Sie auf ausgewählt haben \*\*Hinzufügen-\> \*\* , und klicken Sie dann **OK**.</span><span class="sxs-lookup"><span data-stu-id="7c76a-118">When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.</span></span>
+6. <span data-ttu-id="fbdf8-118">Wenn Sie alle Benutzer ausgewählt haben, die Sie der Rollengruppe hinzufügen möchten, klicken Sie auf **hinzu\> fügen-** und dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-118">When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.</span></span>
     
-7. <span data-ttu-id="7c76a-119">Klicken Sie auf **Speichern**, um die Änderungen an der Rollengruppe zu speichern.</span><span class="sxs-lookup"><span data-stu-id="7c76a-119">Click **Save** to save the changes to the role group.</span></span> 
+7. <span data-ttu-id="fbdf8-119">Klicken Sie auf **Speichern**, um die Änderungen an der Rollengruppe zu speichern.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-119">Click **Save** to save the changes to the role group.</span></span> 
     
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="7c76a-120">Woher wissen Sie, dass dieses Verfahren erfolgreich war?</span><span class="sxs-lookup"><span data-stu-id="7c76a-120">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="fbdf8-120">Woher wissen Sie, dass dieses Verfahren erfolgreich war?</span><span class="sxs-lookup"><span data-stu-id="fbdf8-120">How do you know this worked?</span></span>
 
-1. <span data-ttu-id="7c76a-121">In das Wertpapier &amp; Compliance Center, **Berechtigungen**zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="7c76a-121">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
+1. <span data-ttu-id="fbdf8-121">Wechseln Sie im &amp; Security Compliance Center zu **Berechtigungen**.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-121">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
     
-2. <span data-ttu-id="7c76a-122">Wählen Sie aus der Liste der Rollengruppe aus, um die Mitglieder anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="7c76a-122">From the list, select the role group to view the members.</span></span>
+2. <span data-ttu-id="fbdf8-122">Wählen Sie in der Liste die Rollengruppe aus, um die Mitglieder anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-122">From the list, select the role group to view the members.</span></span>
     
-3. <span data-ttu-id="7c76a-123">Auf der rechten Seite können Sie in den Details der Rolle, die Mitglieder der Rollengruppe anzeigen.</span><span class="sxs-lookup"><span data-stu-id="7c76a-123">On the right, in the role group details, you can view the members of the role group.</span></span>
+3. <span data-ttu-id="fbdf8-123">Auf der rechten Seite in den Rollengruppen Details können Sie die Mitglieder der Rollengruppe anzeigen.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-123">On the right, in the role group details, you can view the members of the role group.</span></span>
     
-## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="7c76a-124">Verwenden von PowerShell zu einem anderen Benutzerzugriff auf der Sicherheit ermöglichen &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="7c76a-124">Use PowerShell to give another user access to the Security &amp; Compliance Center</span></span>
+## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="fbdf8-124">Verwenden von PowerShell, um einem anderen Benutzer Zugriff auf &amp; das Security Compliance Center zu gewähren</span><span class="sxs-lookup"><span data-stu-id="fbdf8-124">Use PowerShell to give another user access to the Security &amp; Compliance Center</span></span>
 
-1. <span data-ttu-id="7c76a-125">[Verbinden mit Office 365-Sicherheit und Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="7c76a-125">[Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
+1. <span data-ttu-id="fbdf8-125">Stellen [Sie eine Verbindung mit Office 365 Security _AMP_ Compliance Center PowerShell her](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span><span class="sxs-lookup"><span data-stu-id="fbdf8-125">[Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
     
-2. <span data-ttu-id="7c76a-126">Verwenden Sie den Befehl **Add-RoleGroupMember** zum Hinzufügen eines Benutzers zur Rolle "Organisationsverwaltung", wie im folgenden Beispiel gezeigt.</span><span class="sxs-lookup"><span data-stu-id="7c76a-126">Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.</span></span> 
+2. <span data-ttu-id="fbdf8-126">Verwenden Sie den Befehl **Add-RoleGroupMember** zum Hinzufügen eines Benutzers zur Rolle "Organisationsverwaltung", wie im folgenden Beispiel gezeigt.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-126">Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.</span></span> 
     
   ```
   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
   
   ```
 
- <span data-ttu-id="7c76a-127">**Parameter**</span><span class="sxs-lookup"><span data-stu-id="7c76a-127">**Parameters**</span></span>
+ <span data-ttu-id="fbdf8-127">**Parameter**</span><span class="sxs-lookup"><span data-stu-id="fbdf8-127">**Parameters**</span></span>
   
-- <span data-ttu-id="7c76a-128">_-Identity_ ist die Rollengruppe, zu der ein Mitglied hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="7c76a-128">_-Identity_ is the role group to add a member to.</span></span> 
+- <span data-ttu-id="fbdf8-128">_-Identity_ ist die Rollengruppe, zu der ein Mitglied hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-128">_-Identity_ is the role group to add a member to.</span></span> 
     
-- <span data-ttu-id="7c76a-p102">_Member_ ist das Postfach, universelle Sicherheitsgruppe (USG) oder Computer der Rollengruppe hinzufügen. Sie können jeweils nur ein Element angeben.</span><span class="sxs-lookup"><span data-stu-id="7c76a-p102">_Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.</span></span> 
+- <span data-ttu-id="fbdf8-p102">_Member_ ist das Postfach, die universelle Sicherheitsgruppe (USG) oder der Computer, der der Rollengruppe hinzugefügt werden soll. Sie können jeweils nur ein Element angeben.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-p102">_Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.</span></span> 
     
-<span data-ttu-id="7c76a-131">Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).</span><span class="sxs-lookup"><span data-stu-id="7c76a-131">For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).</span></span>
+<span data-ttu-id="fbdf8-131">Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).</span><span class="sxs-lookup"><span data-stu-id="fbdf8-131">For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).</span></span>
   
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="7c76a-132">Woher wissen Sie, dass dieses Verfahren erfolgreich war?</span><span class="sxs-lookup"><span data-stu-id="7c76a-132">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="fbdf8-132">Woher wissen Sie, dass dieses Verfahren erfolgreich war?</span><span class="sxs-lookup"><span data-stu-id="fbdf8-132">How do you know this worked?</span></span>
 
-<span data-ttu-id="7c76a-133">Um sicherzustellen, dass Sie Benutzern Zugriff auf die Sicherheit erteilt haben &amp; Compliance Center, verwenden Sie das Cmdlet **Get-RoleGroupMember** zum Anzeigen der Elemente in der Rollengruppe "Organisationsverwaltung", wie im folgenden Beispiel dargestellt.</span><span class="sxs-lookup"><span data-stu-id="7c76a-133">To verify that you've given users access to the Security &amp; Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.</span></span> 
+<span data-ttu-id="fbdf8-133">Um zu überprüfen, ob Sie Benutzern Zugriff auf das &amp; Security Compliance Center gewährt haben, verwenden Sie das Cmdlet **Get-RoleGroupMember** , um die Mitglieder in der Rollengruppe Organisationsverwaltung anzuzeigen, wie im folgenden Beispiel gezeigt.</span><span class="sxs-lookup"><span data-stu-id="fbdf8-133">To verify that you've given users access to the Security &amp; Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.</span></span> 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"
 
 ```
 
-<span data-ttu-id="7c76a-134">Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).</span><span class="sxs-lookup"><span data-stu-id="7c76a-134">For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).</span></span>
+<span data-ttu-id="fbdf8-134">Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).</span><span class="sxs-lookup"><span data-stu-id="fbdf8-134">For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).</span></span>
   
 
