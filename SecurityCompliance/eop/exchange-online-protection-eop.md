@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: Hier sind einige Dinge, denen Ihnen bekannt sein sollten vor Beginn der Arbeit mit EOP.
-ms.openlocfilehash: 21d1bfe34485e97b35755bc2f88f3ba13066a616
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: Es folgen einige Punkte, die Sie beachten sollten, bevor Sie mit der Arbeit mit EOP beginnen.
+ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026382"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206558"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -42,7 +42,7 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
     
 - [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md) Schrittweise Anleitung zum Einrichten des EOP-Diensts sowie Links zu weiteren Informationen. 
     
-- [Wechseln zu EOP von Google Postini, Barracuda Spam und Virus Firewall oder Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Beschreibt den Prozess für den Wechsel zu EOP aus einer anderen e-Mail-Schutzprodukt. 
+- [Wechseln Sie zu EoP von Google Postini, der Barracuda-Spam-und-Viren Firewall oder Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Beschreibt das Verfahren für das Wechseln zu EOP von einem anderen e-Mail-Schutz Produkt. 
     
 - [Verwalten von Empfängern und Administratorrollengruppen in EOP](manage-recipients-and-admin-role-groups-in-eop.md) Anleitung zum Verwalten von Empfängern und zum Zuweisen von Benutzern zu Administratorrollengruppen. 
     
@@ -56,9 +56,9 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
     
 - [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Beschreibung der verfügbaren Berichte und Problembehandlungstools. 
     
-- [Exchange-Verwaltungskonsole in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Beschreibt das Zugreifen auf und Navigieren durch die Verwaltungsschnittstelle Exchange Admin Center (EAC), um Ihren EOP-Dienst zu verwalten. 
+- [Exchange Admin Center in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) In diesem Artikel wird beschrieben, wie Sie die Verwaltungsschnittstelle des Exchange Admin Centers (EAC) zugreifen und diese navigieren, um den EOP-Dienst zu verwalten. 
     
-- [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Enthält Informationen zu remote-PowerShell, dem Sie Ihren EOP-Dienst über die Befehlszeile verwalten kann. 
+- [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Enthält Informationen zur Remote-PowerShell, mit der Sie Ihren EOP-Dienst über die Befehlszeile verwalten können. 
     
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support. 
     
@@ -69,11 +69,11 @@ Der Hilfeinhalt zur Unterstützung der EOP-Endbenutzer beim Umgang mit Spam umfa
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) Erläuterungen, wie Endbenutzer ihre eigenen Nachrichten in Spamquarantäne über die Spamquarantäne-Benutzeroberfläche finden und freigeben und diese optional als Nicht-Junk-E-Mail an Microsoft melden können. 
         
-- [Absenden Spam, nicht-Spam und Phishing-Betrug Nachrichten an Microsoft zur Analyse](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Beschreibt die verschiedenen Verfahren Endbenutzer Spam (Junk) und (kein junk) nichtspamnachrichten an Microsoft übermitteln können. Dieses Thema enthält Links zu den reporting Tools verfügbar in Microsoft Outlook und OWA. 
+- Über [Mitteln von Spam-, nicht-Spam-und Phishing-Betrugs Nachrichten an Microsoft zur Analyse](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Beschreibt die unterschiedlichen Möglichkeiten, wie Endbenutzer Spam-und nicht-Spam-Nachrichten (nicht Junk-e-Mails) an Microsoft senden können. Dieses Thema enthält Links zu den Berichterstattungstools, die in Microsoft Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) verfügbar sind. 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Erläuterungen, wie Endbenutzer Schadsoftware übermitteln können, die die Filter passiert hat, oder wie sie eine Datei übermitteln können, die fälschlicherweise als Schadsoftware identifiziert wurde. 
     
-- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder eine Liste der blockierten Absender hinzufügen, indem deren junk-e-Mail-Einstellungen in Microsoft OWA oder Outlook konfigurieren. Beachten Sie, dass von blockierten Absendern gesendete Nachrichten werden als Spam markierte nicht abgelehnt, was bedeutet, dass sie abgerufen werden können, aus der Junk-e-Mail-Ordner oder die Quarantäne (abhängig davon, wo Ihre Admin des Diensts zum Senden von Spam konfiguriert wurden.) Weitere Informationen finden Sie unter [Verwenden des Berichtnachricht-add-ins](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder einer Liste blockierter Absender hinzufügen, indem Sie Ihre Junk-e-Mail-Einstellungen in Outlook oder Outlook im Web konfigurieren. Beachten Sie, dass Nachrichten, die von blockierten Absendern gesendet werden, als Spam gekennzeichnet sind, nicht abgelehnt, was bedeutet, dass Sie aus dem Junk-e-Mail-Ordner oder aus der Quarantäne abgerufen werden können (je nachdem, wo Ihr Administrator den Dienst zum Senden von Spam konfiguriert hat.) Weitere Informationen finden Sie unter [Verwenden des Berichtnachrichten-Add-ins](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support. 
     

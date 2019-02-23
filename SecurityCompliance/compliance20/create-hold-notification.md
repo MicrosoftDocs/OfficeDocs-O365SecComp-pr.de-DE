@@ -1,12 +1,12 @@
 ---
-title: Erstellen Sie eine Anmerkung zur rechtlichen Aufbewahrungspflicht
+title: Erstellen einer gesetzlichen Aufbewahrungspflicht
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,166 +14,166 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 7d2746699a427fa3c7ad3afd7cf791c61cd55249
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706076"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213095"
 ---
-# <a name="create-a-legal-hold-notice"></a>Erstellen Sie eine Anmerkung zur rechtlichen Aufbewahrungspflicht
+# <a name="create-a-legal-hold-notice"></a>Erstellen einer gesetzlichen Aufbewahrungspflicht
 
-Erweiterte eDiscovery (Preview) Verwaltungsberechtigter Communications verwenden, können Organisationen ihre Workflow um eine Kommunikation mit Verwalter verwalten. Durch das Tool Communications rechtlichen Teams können systematisch senden, erfassen und rechtliche Aufbewahrungspflicht Benachrichtigungen verfolgen. Der Erstellungsprozess für flexible ermöglicht es auch Teams zum Anpassen von Workflows Benachrichtigung halten und den Inhalt in den Hinweisen Verwalter gesendet. 
+Mithilfe der Advanced eDiscovery (Preview)-Depot Kommunikation können Organisationen ihren Workflow für die Kommunikation mit Depotbank verwalten. Mithilfe des Kommunikationstools können juristische Teams die Benachrichtigungen über zugelassene Warteschleife systematisch senden, sammeln und nachverfolgen. Der Prozess der flexiblen Erstellung ermöglicht es Teams auch, den Workflow für die Aufbewahrungs Benachrichtigung und den Inhalt der an die Verwalter gesendeten Benachrichtigungen anzupassen. 
 
-Der Artikel beschreibt die Schritte im Workflow Benachrichtigung halten.
+In diesem Artikel werden die Schritte im Workflow zum Anhalten von Benachrichtigungen erläutert.
 
 ## <a name="step-1-specify-communication-details"></a>Schritt 1: Angeben von Kommunikationsdetails
 
-Der erste Schritt besteht die entsprechenden Details zur rechtlichen Aufbewahrungspflicht Hinweise oder andere Verwaltungsberechtigter Kommunikation an. 
+Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufbewahrungs Hinweise oder andere Depot Kommunikationen anzugeben. 
 
-1. Wechseln Sie in die Sicherheit & Compliance Center **eDiscovery > erweiterte eDiscovery (Preview)** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Wechseln Sie im Security & Compliance Center zu **eDiscovery _GT_ Advanced eDiscovery (Preview)** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
    
-2. Klicken Sie auf der Registerkarte **Kommunikation** , und klicken Sie dann auf **neue Kommunikation**.
+2. Klicken Sie auf die Registerkarte **Kommunikation** , und klicken Sie dann auf **neue Kommunikation**.
    
-3. Geben Sie auf der Seite **Name Kommunikation** die folgenden (erforderlich) Kommunikationsdetails ein.
+3. Geben Sie auf der Seite **Name Communication** die folgenden (erforderlichen) Kommunikationsdetails an.
 
-    - **Name**: Dies ist der Name für die Kommunikation verwendet.
+    - **Name**: Dies ist der Name für die Kommunikation.
     
-    - **Ausstellenden Officer**: die Dropdown-Liste zeigt eine Liste der Groß-/Kleinschreibung Elemente. Jeden Bekanntmachung Verwalter gesendet werden im Namen der angegebenen ausstellenden Officer versendet.
+    - AusStell ender **Offizier**: in der Dropdownliste wird eine Liste mit den Fall Mitgliedern angezeigt. Jeder Hinweis, der an Verwalter gesendet wird, wird im Auftrag des angegebenen ausstellenden beauftragten gesendet.
 
 4. Klicken Sie auf **Weiter**.
 
-## <a name="step-2-define-the-portal-content"></a>Schritt 2: Definieren des Portalinhalt
+## <a name="step-2-define-the-portal-content"></a>Schritt 2: Definieren des Portalinhalts
 
-Im nächsten Schritt können Sie erstellen, und fügen Sie den Inhalt der Bekanntmachung halten. Geben Sie auf der Seite des Assistenten **Erstellen Kommunikation** **Portalinhalt definieren** den Inhalt der Bekanntmachung halten. Dieser Inhalt wird automatisch die Veröffentlichungslizenz, erneut, Erinnerung und Ausweitung Hinweise angefügt werden. Dieser Inhalt wird darüber hinaus in der Verwaltungsberechtigte Compliance-Portal angezeigt. 
+Als nächstes können Sie den Inhalt des Notiz Speichers erstellen und hinzufügen. Geben Sie auf der Seite **Portalinhalt definieren** im Assistenten zum **Erstellen** von Kommunikationen den Inhalt des Notiz Speichers an. Dieser Inhalt wird automatisch den Benachrichtigungen zu Ausstellung, erneuter Ausstellung, Erinnerung und Eskalation angefügt. Darüber hinaus werden diese Inhalte im Compliance-Portal des Depotbank angezeigt. 
 
-So erstellen Sie den Portal-Inhalt
+So erstellen Sie den Portalinhalt:
 
-1. Ihre Sperre beachten im Textfeld für den Portalinhalt Typ (oder Ausschneiden und Paster aus einem anderen Dokument). 
+1. Geben Sie (oder Ausschneiden und Einfügen aus einem anderen Dokument) Ihre Notiz im Textfeld für den Portalinhalt ein. 
 
-2. Fügen Sie Merge-Variablen in Ihre Benachrichtigung zum Anpassen der Bekanntmachung und Freigeben von Compliance-Portal Verwaltungsberechtigter ein.
+2. Fügen Sie Merge-Variablen in Ihre Nachricht ein, um den Hinweis anzupassen und das Depotschutz-Portal zu teilen.
 
 3. Klicken Sie auf **Weiter**.
 
   >[!Tip]
-  >Weitere Informationen zum Anpassen können, den Inhalt und Format der Portal-Inhalt finden Sie unter [Verwendung des Editors Communications](using-communications-editor.md).
+  >Weitere Informationen dazu, wie Sie den Inhalt und das Format des Portalinhalts anpassen können, finden Sie unter [use the Communications Editor](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Schritt 3: Festlegen der erforderlichen Benachrichtigungen
 
-Nachdem Sie den Inhalt der Bekanntmachung Haltestatus definiert haben, können Sie die Workflows, um senden und Verwalten des Vorgangs für Benachrichtigung einrichten. Benachrichtigungen werden e-Mail-Nachrichten, die gesendet werden, um zu benachrichtigen und die Nachsorge mit Verwalter. Jeder Verwaltungsberechtigter hinzugefügt, um die Kommunikation wird dieselbe Benachrichtigung. 
+Nachdem Sie den Inhalt des Haltestatus festgelegt haben, können Sie die Workflows zum Senden und Verwalten des Benachrichtigungsprozesses einrichten. Benachrichtigungen sind e-Mail-Nachrichten, die zur Benachrichtigung und Nachverfolgung mit Depotbank gesendet werden. Jeder Verwalter, der der Kommunikation hinzugefügt wird, erhält dieselbe Benachrichtigung. 
 
-Zum Einrichten und senden eine Benachrichtigung halten, müssen Sie Emission, Re-Emission, umfassen und Freigeben von Benachrichtigungen.
+Zum Einrichten und Senden einer Aufbewahrungs Benachrichtigung müssen Sie Veröffentlichungs-, erneute Veröffentlichungs-und Versions Benachrichtigungen enthalten.
 
-### <a name="issuance-notification"></a>Veröffentlichungslizenzen Benachrichtigung 
+### <a name="issuance-notification"></a>Veröffentlichungs Benachrichtigung 
 
-Nach dem Erstellen der Kommunikation wird die **Veröffentlichungslizenz Benachrichtigung** durch die angegebenen ausstellen Officer initiiert. Die Veröffentlichungslizenz-Benachrichtigung wird die erste Kommunikation an der Verwaltungsberechtigte gesendet werden, um über deren Beibehaltung Verpflichtungen zu informieren. 
+Nachdem die Kommunikation erstellt wurde, wird die **Veröffentlichungs Benachrichtigung** vom angegebenen ausstellenden Offizier initiiert. Die Veröffentlichungs Benachrichtigung ist die erste Nachricht, die an die Depotbank gesendet wurde, um Sie über Ihre Aufbewahrungspflichten zu informieren. 
 
-So erstellen Sie eine Veröffentlichungslizenz-Benachrichtigung
+So erstellen Sie eine Veröffentlichungs Benachrichtigung
 
-1. Der **Veröffentlichungslizenz** -Kachel und klicken Sie auf **Bearbeiten**.
+1. Klicken Sie in der **Ausstellungs** Kachel auf **Bearbeiten**.
    
-2. Wenn notwendig, fügen Sie zusätzliche Groß-/Kleinschreibung Member oder Mitarbeiter in die Felder **Cc** und **Bcc** . Um diese Felder mehrere Benutzer hinzuzufügen, trennen Sie e-Mail-Adressen durch Semikolons voneinander getrennt ein.
+2. Fügen Sie gegebenenfalls zusätzliche Fall Mitglieder oder Mitarbeiter zu den Feldern **CC** und **Bcc** hinzu. Wenn Sie diesen Feldern mehrere Benutzer hinzufügen möchten, trennen Sie die e-Mail-Adressen durch ein Semikolon.
    
-3. Geben Sie den **Betreff** für die Anmerkung (erforderlich).
+3. Geben Sie den **Betreff** für den Hinweis an (erforderlich).
    
-4. Geben Sie den Inhalt oder zusätzliche Anweisungen, die Sie der Verwaltungsberechtigte (erforderlich) bereitstellen möchten. Beachten Sie, dass das Ende der Veröffentlichungslizenz Bekanntmachung Portal-Inhalt, den Sie in Schritt2 definiert hinzugefügt wird. 
+4. Geben Sie die Inhalte oder zusätzlichen Anweisungen an, die Sie der Depotbank zur Verfügung stellen möchten (erforderlich). Beachten Sie, dass der in Schritt 2 definierte Portalinhalt am Ende der Veröffentlichungs Benachrichtigung hinzugefügt wird. 
    
 5. Klicken Sie auf **Speichern**. 
 
-### <a name="re-issuance-notification"></a>Erneute Ausstellung Benachrichtigung 
+### <a name="re-issuance-notification"></a>Erneute Veröffentlichungs Benachrichtigung 
 
-Verlauf der Groß-/Kleinschreibung möglicherweise Verwalter benötigt, um zusätzliche oder weniger Daten aufbewahren als zuvor beschrieben wurde. Nachdem Sie den Inhalt der Bekanntmachung Haltestatus aktualisieren, Warnungen die erneute Ausstellung Benachrichtigung der Verwalter zu den Änderungen an ihren Verpflichtungen permanentes.
+Bei Fortschreiten des Falls sind möglicherweise depotbanks erforderlich, um zusätzliche oder geringere Daten beizubehalten, als Sie zuvor angewiesen wurden. Nach dem Aktualisieren des Inhalts des Notiz Speichers wird die Benachrichtigung der Verwalter zu den Änderungen an den Aufbewahrungspflichten von der erneuten Ausstellung benachrichtigt.
 
-So erstellen Sie eine Benachrichtigung über eine erneute Ausstellung: 
+So erstellen Sie eine erneute Veröffentlichungs Benachrichtigung: 
 
-1. Klicken Sie auf **Bearbeiten**, in die Kachel **Wiederholen** .
+1. Klicken Sie in der Kachel erneut **herausstellen** auf **Bearbeiten**.
    
-2. Wenn notwendig, fügen Sie zusätzliche Groß-/Kleinschreibung Member oder Mitarbeiter in die Felder **Cc** und **Bcc** . Um diese Felder mehrere Benutzer hinzuzufügen, trennen Sie e-Mail-Adressen durch Semikolons voneinander getrennt ein.
+2. Fügen Sie gegebenenfalls zusätzliche Fall Mitglieder oder Mitarbeiter zu den Feldern **CC** und **Bcc** hinzu. Wenn Sie diesen Feldern mehrere Benutzer hinzufügen möchten, trennen Sie die e-Mail-Adressen durch ein Semikolon.
    
-3. Geben Sie den **Betreff** für die Anmerkung (erforderlich).
+3. Geben Sie den **Betreff** für den Hinweis an (erforderlich).
    
-4. Geben Sie den Inhalt oder zusätzliche Anweisungen, die Sie der Verwaltungsberechtigte (erforderlich) bereitstellen möchten. Beachten Sie, dass das Ende der Bekanntmachung Re-Ausstellung Portal-Inhalt, den Sie in Schritt2 definiert hinzugefügt wird.
+4. Geben Sie die Inhalte oder zusätzlichen Anweisungen an, die Sie der Depotbank zur Verfügung stellen möchten (erforderlich). Beachten Sie, dass der in Schritt 2 definierte Portalinhalt am Ende der erneuten Veröffentlichungs Benachrichtigung hinzugefügt wird.
    
 5. Klicken Sie auf **Speichern**.
 
 >[!Note]
->Wenn eine Warteschleife Benachrichtigung geändert wird, wird die erneute Ausstellung Benachrichtigung automatisch alle Verwalter zugewiesen sind, auf die Benachrichtigung gesendet. Nachdem die Benachrichtigung gesendet wird, werden Verwalter aufgefordert, Kenntnis Haltestatus erneut zu bestätigen. Wenn Sie alle Workflows Erinnerung oder Ausweitung eingerichtet haben, werden diese ebenfalls neu gestartet. 
+>Wenn eine Hold-Benachrichtigung geändert wird, wird die erneute Veröffentlichungs Benachrichtigung automatisch an alle Verwalter gesendet, die der Nachricht zugewiesen sind. Nachdem die Benachrichtigung gesendet wurde, werden die Verwalter aufgefordert, ihren Haltestatus erneut anzuerkennen. Wenn Sie Mahn-oder Eskalations Workflows eingerichtet haben, werden diese ebenfalls neu gestartet. 
 
-### <a name="release-notification"></a>Version-Benachrichtigung
+### <a name="release-notification"></a>Versions Benachrichtigung
 
-Nachdem eine Frage aufgelöst wird oder wenn ein Verwaltungsberechtigter unterliegt nicht mehr ist das Aufbewahren von Inhalten, können Sie der Verwaltungsberechtigte aus einem Fall freigeben. Wenn der Verwaltungsberechtigte zuvor eine Warteschleife Bekanntmachung ausgestellt wurde, kann die Benachrichtigung Version verwendet werden, Verwalter informiert, dass ihre Verpflichtung veröffentlicht wurden.
+Nachdem eine Angelegenheit aufgelöst wurde oder ein depotverwalter nicht mehr Inhalte aufbewahrt, können Sie die Depotbank aus einem Fall freigeben. Wenn der Depotbank zuvor eine Hold-Benachrichtigung ausgegeben wurde, kann die Freigabemeldung verwendet werden, um Verwalter zu warnen, dass Sie von ihrer Verpflichtung befreit wurden.
 
-So erstellen Sie eine Benachrichtigung Version: 
+So erstellen Sie eine Versions Benachrichtigung 
 
-1. Klicken Sie in der **Version** -Kachel auf **Bearbeiten**.
+1. Klicken Sie auf der **Freigabe** Kachel auf **Bearbeiten**.
    
-2. Wenn notwendig, fügen Sie zusätzliche Groß-/Kleinschreibung Member oder Mitarbeiter in die Felder **Cc** und **Bcc** . Um diese Felder mehrere Benutzer hinzuzufügen, trennen Sie e-Mail-Adressen durch Semikolons voneinander getrennt ein.
+2. Fügen Sie gegebenenfalls zusätzliche Fall Mitglieder oder Mitarbeiter zu den Feldern **CC** und **Bcc** hinzu. Wenn Sie diesen Feldern mehrere Benutzer hinzufügen möchten, trennen Sie die e-Mail-Adressen durch ein Semikolon.
    
-3. Geben Sie den **Betreff** für die Anmerkung (erforderlich).
+3. Geben Sie den **Betreff** für den Hinweis an (erforderlich).
    
-4. Geben Sie den Inhalt oder zusätzliche Anweisungen, die Sie der Verwaltungsberechtigte (erforderlich) bereitstellen möchten.
+4. Geben Sie die Inhalte oder zusätzlichen Anweisungen an, die Sie der Depotbank zur Verfügung stellen möchten (erforderlich).
    
-5. Klicken Sie auf **Speichern** , und wechseln Sie mit dem nächsten Schritt fort. 
+5. Klicken Sie auf **Speichern** , und fahren Sie mit dem nächsten Schritt fort. 
 
-## <a name="optional-step-4-set-the-optional-notifications"></a>(Optional) Schritt 4: Festlegen der optionalen Benachrichtigungen
+## <a name="optional-step-4-set-the-optional-notifications"></a>Optional Schritt 4: Festlegen der optionalen Benachrichtigungen
 
-Optional können Sie den Workflow für die Einhaltung von mit nicht reagiert Verwalter durch Erstellen und planen automatisierte Erinnerung und Ausweitung Benachrichtigungen vereinfachen.
+Optional können Sie den Workflow für die Weiterleitung mit nicht reagierenden Verwalter vereinfachen, indem Sie automatisierte Mahn-und Eskalations Benachrichtigungen erstellen und planen.
 
 ### <a name="reminders"></a>Erinnerungen
 
-Nachdem Sie eine Warteschleife Benachrichtigung gesendet haben, können Sie Nachsorge mit Verwalter nicht reagiert, indem Definieren eines Workflows Erinnerung. 
+Nachdem Sie eine Aufbewahrungs Benachrichtigung gesendet haben, können Sie nicht reagierende Verwalter durch Definieren eines Erinnerungs Workflows nachverfolgen. 
 
 So planen Sie Erinnerungen:
 
-1. Der **Erinnerung** -Kachel und klicken Sie auf **Bearbeiten**.
+1. Klicken Sie in der Kachel **Erinnerung** auf **Bearbeiten**.
    
-2. Aktivieren Sie den Workflow **Erinnerung** durch Einschalten der **Status** ein-/ausschalten (erforderlich).
+2. Aktivieren Sie den **Erinnerungs** Workflow, indem Sie die **Status** Umschalttaste (erforderlich) einschalten.
    
-3. Gibt das **Intervall (in Tagen) Erinnerung** (erforderlich). Dies ist die Anzahl von Tagen an, bevor die erste und weitere Erinnerung Benachrichtigungen gesendet werden. Beispielsweise wenn Sie das Erinnerungsintervall auf sieben Tage festgelegt, würde dann die erste Erinnerung gesendet werden sieben Tage nach zunächst die Warteschleife Benachrichtigung ausgestellt wurde. Alle nachfolgende Erinnerungen würde auch alle 7 Tage gesendet werden.
+3. Angeben des **Intervalls für die Erinnerung (in Tagen)** (erforderlich). Dies ist die Anzahl der Tage, die gewartet werden muss, bevor die ersten und nach Verfolgungs Benachrichtigungen gesendet werden. Wenn Sie beispielsweise das Erinnerungsintervall auf 7 Tage festlegen, wird die erste Erinnerung 7 Tage nach der anfänglichen Benachrichtigung der Warteschlange gesendet. Alle nachfolgenden Erinnerungen würden auch alle 7 Tage gesendet.
    
-4. Geben Sie die **Anzahl der Reminders** (erforderlich). Dieses Feld gibt an, wie viele Erinnerungen nicht schnell Verwalter senden. Wenn Sie die Anzahl der Erinnerungen auf 3 festgelegt, würde ein Verwaltungsberechtigter beispielsweise maximal 3 Reminders erhalten. Nachdem ein Verwaltungsberechtigter die Warteschleife Benachrichtigung bestätigt, werden Erinnerungen für diesen Benutzer nicht mehr versendet.
+4. Geben Sie die **Anzahl der Erinnerungen** an (erforderlich). Dieses Feld gibt an, wie viele Erinnerungen an nicht reagierende Verwalter gesendet werden. Wenn Sie beispielsweise die Anzahl der Erinnerungen auf 3 festlegen, erhält ein Verwalter maximal 3 Erinnerungen. Nachdem ein depotverwalter die Hold-Benachrichtigung bestätigt hat, werden Erinnerungen an diesen Benutzer nicht mehr gesendet.
    
-5. Geben Sie den **Betreff** für die Anmerkung (erforderlich). 
+5. Geben Sie den **Betreff** für den Hinweis an (erforderlich). 
    
-6. Geben Sie den Inhalt oder zusätzliche Anweisungen, die Sie der Verwaltungsberechtigte (erforderlich) bereitstellen möchten. Beachten Sie, dass der Portal-Inhalt, die, den Sie in Schritt2 definiert haben, bis zum Ende der Bekanntmachung Erinnerung hinzugefügt wird.
+6. Geben Sie die Inhalte oder zusätzlichen Anweisungen an, die Sie der Depotbank zur Verfügung stellen möchten (erforderlich). Beachten Sie, dass der in Schritt 2 definierte Portalinhalt am Ende der Mahnungsbenachrichtigung hinzugefügt wird.
    
-7. Klicken Sie auf **Speichern** , und gehen Sie die im nächsten Schritt.
+7. Klicken Sie auf **Speichern** , und fahren Sie mit dem nächsten Schritt fort.
 
 ### <a name="escalations"></a>Eskalationen 
 
-In manchen Fällen zusätzliche Möglichkeiten zum Nachsorge mit Verwalter nicht reagiert möglicherweise. Wenn ein Verwaltungsberechtigter eine Warteschleife Benachrichtigung nach Empfang der angegebenen Anzahl von Erinnerungen bestätigen nicht, kann das juristische Team einen Workflow, um automatisch eine Benachrichtigung Ausweitung der Verwaltungsberechtigte und deren Manager senden angeben.
+In einigen Situationen benötigen Sie möglicherweise zusätzliche Möglichkeiten zum Nachverfolgen mit nicht reagierenden Verwalter. Wenn ein depotverwalter eine Hold-Benachrichtigung nach Erhalt der angegebenen Anzahl von Erinnerungen nicht anerkennt, kann das juristische Team einen Workflow angeben, um automatisch eine Eskalations Nachricht an die Depotbank und deren Vorgesetzten zu senden.
 
 So planen Sie Eskalationen:
 
-1. Klicken Sie in die Kachel **Ausweitung** auf **Bearbeiten**.
+1. Klicken Sie **** in der Eskalations Kachel auf **Bearbeiten**.
    
-2. Aktivieren Sie den Workflow **Ausweitung** durch Einschalten der **Status** ein-/ausschalten.
+2. Aktivieren Sie **** den Eskalations Workflow, indem Sie die **Status** -Umschaltfläche einschalten.
    
-3. Gibt das **Intervall (in Tagen) Ausweitung** (erforderlich). 
+3. Geben Sie das **Eskalations Intervall (in Tagen)** (erforderlich) an. 
    
-4. Geben Sie die **Anzahl der Eskalationen** (erforderlich). Dieses Feld gibt an, wie viele Eskalationen nicht schnell Verwalter senden. Beispielsweise, wenn Sie die Anzahl der Eskalationen auf 3 festgelegt, würde dann eine Benachrichtigung Ausweitung an der Verwaltungsberechtigte und ihren Manager maximal 3 Mal gesendet werden. Nachdem ein Verwaltungsberechtigter die Warteschleife Benachrichtigung bestätigt hat, werden nicht mehr Eskalationen gesendet werden. 
+4. Geben Sie die **Anzahl der Eskalationen** an (erforderlich). Dieses Feld gibt an, wie viele Eskalationen an nicht reagierende Verwalter gesendet werden. Wenn Sie beispielsweise die Anzahl der Eskalationen auf 3 festlegen, wird eine Eskalations Benachrichtigung an die Depotbank und deren Vorgesetzten maximal 3 Mal gesendet. Nachdem ein depotverwalter die Hold-Benachrichtigung bestätigt hat, werden Eskalationen nicht mehr gesendet. 
    
-5. Geben Sie den **Betreff** für die Anmerkung (erforderlich). 
+5. Geben Sie den **Betreff** für den Hinweis an (erforderlich). 
    
-6. Geben Sie den Inhalt oder zusätzliche Anweisungen, die Sie der Verwaltungsberechtigte (erforderlich) bereitstellen möchten. Beachten Sie, dass das Ende der Ausweitung Bekanntmachung Portal-Inhalt, den Sie in Schritt2 definiert hinzugefügt wird.
+6. Geben Sie die Inhalte oder zusätzlichen Anweisungen an, die Sie der Depotbank zur Verfügung stellen möchten (erforderlich). Beachten Sie, dass der in Schritt 2 definierte Portalinhalt am Ende der Eskalations Benachrichtigung hinzugefügt wird.
    
-7. Klicken Sie auf **Speichern** , und gehen Sie die im nächsten Schritt.
+7. Klicken Sie auf **Speichern** , und fahren Sie mit dem nächsten Schritt fort.
    
-## <a name="step-5-assign-custodians"></a>Schritt 5: Zuweisen von Verwalter 
+## <a name="step-5-assign-custodians"></a>Schritt 5: Zuweisen von Verwaltern 
 
-Nachdem Sie den Inhalt für Benachrichtigungen abgeschlossen haben, wählen Sie die Verwalter die Benachrichtigungen zu senden. 
+Nachdem Sie den Inhalt für Benachrichtigungen abgeschlossen haben, wählen Sie die Verwalter aus, an die die Benachrichtigungen gesendet werden sollen. 
 
 So fügen Sie Verwalter hinzu:
 
-1. Weisen Sie die Kommunikation Verwalter durch Klicken auf das Kontrollkästchen neben dem Namen.
+1. Weisen Sie der Kommunikation Verwalter zu, indem Sie auf das Kontrollkästchen neben Ihrem Namen klicken.
 
-    Nach dem Erstellen der Kommunikation wird der Workflow für Benachrichtigung über automatisch auf den ausgewählten Verwalter angewendet.
+    Nachdem die Kommunikation erstellt wurde, wird der Benachrichtigungs Workflow automatisch auf die ausgewählten Verwalter angewendet.
    
-2. Klicken Sie auf **Weiter** , um die Einstellungen für die Kommunikation und die Details zu überprüfen.
+2. Klicken Sie auf **weiter** , um die Kommunikationseinstellungen und Details zu überarbeiten.
  
 >[!NOTE]
->Sie können nur Verwalter hinzufügen, die die Groß-/Kleinschreibung hinzugefügt wurden und noch nicht innerhalb der Groß-/Kleinschreibung eine weitere Benachrichtigung gesendet wurde.
+>Sie können nur Verwalter hinzufügen, die dem Fall hinzugefügt wurden und keine weitere Benachrichtigung innerhalb des Falls gesendet wurden.
 
-## <a name="step-6-review-settings"></a>Schritt 6: Überprüfen Sie die Einstellungen
+## <a name="step-6-review-settings"></a>Schritt 6: Überarbeiten der Einstellungen
 
-Nachdem Sie überprüfen Sie die Einstellungen, und klicken Sie auf **Senden** , um den Datenaustausch auszuführen, wird das System Kommunikations-Workflow automatisch starten, indem der Veröffentlichungslizenz Bekanntmachung senden.
+Nachdem Sie die Einstellungen überprüft und auf **senden** klicken, um die Kommunikation abzuschließen, wird der Kommunikations Workflow vom System automatisch gestartet, indem der Veröffentlichungshinweis gesendet wird.

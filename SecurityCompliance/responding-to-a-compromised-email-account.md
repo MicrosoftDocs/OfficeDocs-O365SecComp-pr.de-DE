@@ -8,127 +8,125 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
-description: Erfahren Sie, wie erkennen und reagieren auf eine kompromittierten e-Mail-Konto in Office 365
-ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+description: Informationen zum erkennen und beantworten eines kompromittierten e-Mail-Kontos in Office 365
+ms.openlocfilehash: 8d2e7f501b6e3ee73a14d4d7b3edb4c49f99d051
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341420"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213215"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
-**Zusammenfassung** Informationen Sie zum Erkennen und reagieren auf eine kompromittierten e-Mail-Konto in Office 365.
+**Zusammenfassung** Erfahren Sie, wie Sie ein kompromittiertes e-Mail-Konto in Office 365 erkennen und darauf reagieren.
 
-## <a name="what-is-a-compromised-email-account-in-office-365"></a>Was ist ein gefährdet e-Mail-Konto in Office 365?
-Zugriff auf Office 365-Postfächer, Daten und andere Dienste, die durch die Verwendung von Anmeldeinformationen, beispielsweise ein Benutzername und Kennwort oder eine PIN gesteuert wird. Wenn eine andere Person als der gewünschte Benutzer diese Anmeldeinformationen entwendet, gelten die gestohlenen Anmeldeinformationen möglicherweise gefährdet. Mit diesen kann der Angreifer als der ursprünglichen Benutzer anmelden und unerlaubte Aktionen ausführen. Die gestohlenen Anmeldeinformationen verwenden, kann der Angreifer Office 365-Postfach des Benutzers, SharePoint-Ordner oder Dateien in OneDrive des Benutzers zugreifen. Eine Aktion im Allgemeinen ist der Angreifer e-Mails an Empfänger innerhalb und außerhalb der Organisation als des ursprünglichen Benutzers senden. Wenn der Angreifer Daten an externe Empfänger-e-Mails, wird diese Daten Exfiltration aufgerufen.
+## <a name="what-is-a-compromised-email-account-in-office-365"></a>Was ist ein kompromittiertes e-Mail-Konto in Office 365?
+Der Zugriff auf Office 365-Postfächer, Daten und andere Dienste wird über die Verwendung von Anmeldeinformationen gesteuert, beispielsweise einen Benutzernamen und ein Kennwort oder eine PIN. Wenn eine andere Person als der vorgesehene Benutzer diese Anmeldeinformationen stiehlt, gelten die gestohlenen Anmeldeinformationen als kompromittiert. Bei diesen kann sich der Angreifer als ursprünglicher Benutzer anmelden und illegale Aktionen ausführen. Unter Verwendung der gestohlenen Anmeldeinformationen kann der Angreifer auf das Office 365-Postfach des Benutzers, auf SharePoint-Ordner oder auf Dateien in der OneDrive des Benutzers zugreifen. Eine häufig verwendete Aktion ist, dass der Angreifer e-Mails als ursprünglichen Benutzer an Empfänger sowohl innerhalb als auch außerhalb der Organisation sendet. Wenn der Angreifer Daten an externe Empfänger sendet, wird dies als Datenfilterung bezeichnet.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptome eines kompromittierten Office 365-e-Mail-Kontos
-Benutzer möglicherweise beachten und ungewöhnliche Aktivität in ihre Office 365-Postfächer. Im folgenden sind einige häufige Symptome:
-- Verdächtige Aktivitäten wie fehlende oder gelöschte-e-Mails.
-- Andere Benutzer möglicherweise dieses Konto ohne entsprechende im Ordner " **Gesendete Elemente** " des Absenders einer vorhandenen e-Mail-e-Mails erhalten.
-- Das Vorhandensein von Posteingangsregeln, die von der gewünschten Benutzer oder der Administrator erstellt wurden nicht. Diese Regeln möglicherweise automatisch Weiterleiten von e-Mails an unbekannte Adressen oder verschieben Sie sie in den Ordner **Notizen**, **Junk-e-Mail-** oder **RSS-Abonnements** .
-- Anzeigename des Benutzers kann in der globalen Adressliste geändert werden.
-- Das Postfach des Benutzers wird verhindert, dass das Senden von e-Mails.
-- Der Ordner gesendet oder gelöschte Objekte in Microsoft Outlook oder Microsoft Outlook Web App enthalten allgemeine gehackt Konto Nachrichten, wie "Ich in London Geld senden hängen bin."
-- Ungewöhnliche Profil ändert, beispielsweise den Namen, die Telefonnummer oder die Postleitzahl wurden aktualisiert.
-- Ungewöhnliche Anmeldeinformationen geändert wird, wie mehrere kennwortänderungen sind erforderlich.
-- E-Mail-Weiterleitung wurde kürzlich hinzugefügt.
-- Eine ungewöhnliche Signatur wurde kürzlich hinzugefügt, wie eine Signatur gefälschten Bankgeschäfte oder eine Aufgabenebene Drug Signatur.
+Benutzer können ungewöhnliche Aktivitäten in Ihren Office 365-Postfächern bemerken und melden. Es folgen einige häufige Symptome:
+- Verdächtige Aktivitäten wie fehlende oder gelöschte e-Mails.
+- Andere Benutzer erhalten möglicherweise e-Mails vom kompromittierten Konto, ohne dass die entsprechende e-Mail im Ordner " **Gesendete Elemente** " des Absenders vorhanden ist.
+- Das vorhanden sein von Posteingangsregeln, die nicht vom beabsichtigten Benutzer oder vom Administrator erstellt wurden. Diese Regeln können e-Mails automatisch an unbekannte Adressen weiterleiten oder in die Ordner **Notizen**, **Junk-e-Mail**oder **RSS-Abonnements** verschieben.
+- Der Anzeigename des Benutzers kann in der globalen Adressliste geändert werden.
+- Das Senden von e-Mails ist für das Postfach des Benutzers blockiert.
+- Die Ordner "gesendete oder gelöschte Elemente" in Microsoft Outlook oder Outlook im Web (früher als Outlook Web App bezeichnet) enthalten allgemeine Nachrichten mit gehackten Konten, beispielsweise "Ich bin in London fest, sende Geld".
+- Ungewöhnliche Profiländerungen wie der Name, die Telefonnummer oder die Postleitzahl wurden aktualisiert.
+- Ungewöhnliche Anmeldeinformationen, wie etwa mehrere Kennwortänderungen, sind erforderlich.
+- Die e-Mail-Weiterleitung wurde kürzlich hinzugefügt.
+- Eine ungewöhnliche Signatur wurde kürzlich hinzugefügt, beispielsweise eine gefälschte Bank Signatur oder eine verschreibungspflichtige Medikamenten Signatur.
 
-Wenn ein Benutzer die oben genannten Symptome meldet, sollten Sie weiteren Untersuchung durchführen. Die Office 365-Sicherheit und Compliance Center und der Azure-Verwaltungsportal bieten Tools, mit denen Sie die Aktivität eines Benutzerkontos untersuchen, die vermutlich möglicherweise gefährdet ist.
-- Office 365 Unified Überwachungsprotokolle im Compliance Center- & Sicherheit überprüfen alle Aktivitäten für das Konto verdächtige Nachrichten durch Filtern der Ergebnisse für das Datum Bereich übergreifende aus unmittelbar vor dem verdächtige Aktivitäten auf das aktuelle Datum ist aufgetreten. Nicht filtern Sie auf die Aktivitäten bei der Suche.
-- Verwenden Sie die Protokolle Azure AD-Anmeldung und andere Risikoberichte, die im Azure AD-Portal zur Verfügung stehen. Überprüfen Sie die Werte in den folgenden Spalten:
-    - Überprüfen Sie die IP-Adresse
-    - Anmeldung Speicherorte
-    - -in Zeiten
-    - Anmeldung Erfolg oder Fehler
+Wenn ein Benutzer eines der oben genannten Symptome meldet, sollten Sie weitere Untersuchungen durchführen. Das Office 365 Security & Compliance Center und das Azure-Portal bieten Tools, die Ihnen dabei helfen, die Aktivität eines Benutzerkontos zu untersuchen, das Sie möglicherweise gefährden.
+- Office 365 Unified Audit Logs im Security & Compliance Center-überprüfen Sie alle Aktivitäten für das mutmaßliche Konto, indem Sie die Ergebnisse für den Datumsbereich von unmittelbar vor der verdächtigen Aktivität auf das aktuelle Datum filtern. Filtern Sie nicht nach den Aktivitäten während der Suche.
+- Verwenden Sie die Azure AD-Anmelde Protokolle und andere Risikoberichte, die im Azure AD-Portal verfügbar sind. ÜberPrüfen Sie die Werte in den folgenden Spalten:
+    - Überprüfende IP-Adresse
+    - Anmelde Standorte
+    - Anmeldezeiten
+    - Erfolg oder Fehler bei der Anmeldung
 
-
-
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Sichern und Wiederherstellen von e-Mail-Funktion in einen verdächtige Nachrichten wie Office 365-Konto und das Postfach gefährdet
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>Sichern und Wiederherstellen der e-Mail-Funktion in einem mutmaßlich kompromittierten Office 365-Konto und-Postfach
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
-Auch nach dem Sie Zugriff auf Ihr Konto wiederhergestellt haben, hat der Angreifer möglicherweise Back-Tür Einträge hinzugefügt, mit die der Angreifer Steuerelement des Kontos fortsetzen zu können.
+Auch nachdem Sie den Zugriff auf Ihr Konto wiedererlangt haben, hat der Angreifer möglicherweise Back-Door-Einträge hinzugefügt, die es dem Angreifer ermöglichen, die Kontrolle über das Konto wieder aufzunehmen.
 
-Sie müssen alle folgenden Schritte aus, um Zugriff auf Ihr Konto wieder zu übernehmen, stellen Sie sicher, dass die Hijacker fortsetzen nicht besser steuern die früher Ihr Konto ausführen. Diese Schritte können Sie die Back-Tür Einträge zu entfernen, die die Hijacker auf Ihr Konto möglicherweise hinzugefügt. Nachdem Sie diese Schritte ausgeführt haben, wird empfohlen, dass Sie einen VirusScan dafür sorgen, dass Ihr Computer beeinträchtigt wird nicht ausgeführt.
+Sie müssen alle folgenden Schritte ausführen, um den Zugriff auf Ihr Konto wiederherzustellen, je früher desto besser, um sicherzustellen, dass der Hijacker das Konto nicht mehr steuert. Mit diesen Schritten können Sie alle Back-Door-Einträge entfernen, die der Hijacker Ihrem Konto hinzugefügt hat. Nachdem Sie diese Schritte ausgeführt haben, sollten Sie eine Virenprüfung ausführen, um sicherzustellen, dass Ihr Computer nicht kompromittiert wird.
 
-### <a name="step-1-reset-the-users-password"></a>Schritt 1 Zurücksetzen eines Benutzerkennworts
+### <a name="step-1-reset-the-users-password"></a>Schritt 1 Zurücksetzen des Kennworts des Benutzers
 > [!WARNING]
-> Senden Sie das neue Kennwort nicht an die vorgesehenen Benutzer per e-Mail, wie der Angreifer weiterhin Zugriff auf das Postfach zu diesem Zeitpunkt hat.
+> Senden Sie das neue Kennwort nicht per e-Mail an den beabsichtigten Benutzer, da der Angreifer weiterhin Zugriff auf das Postfach hat.
 
-1. Führen Sie das Kennwort zurücksetzen einer Office 365 Business nach einer Person anderen Verfahren in [Admins: Office 365 zurücksetzen Business Kennwörter](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
+1. Folgen Sie dem Zurücksetzen eines Office 365 Business-Kennworts für eine andere Prozedur in [Administratoren: Zurücksetzen von office 365 Business](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c) passwords
 
 **Hinweise:**
-- Stellen Sie sicher, dass das Kennwort stark ist und dass sie Groß-und Kleinbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen enthält. 
-- Wiederverwenden Sie nicht keinem der letzten fünf Kennwörter. Obwohl die Anforderung Verlauf einer neueren Kennwort erneut verwenden kann, sollten Sie etwas auswählen, die der Angreifer ermittelt werden kann.
-- Wenn Ihre lokalen Identität mit Office 365 im Verbund befindet, müssen Sie Ihre lokalen Kennwort ändern, und klicken Sie dann müssen Sie den Administrator der Gefährdung benachrichtigen.
+- Stellen Sie sicher, dass das Kennwort stark ist und dass es groß-und Kleinbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen enthält. 
+- Verwenden Sie keines der letzten fünf Kennwörter. Auch wenn Sie mit der Kennwortverlaufs Anforderung ein jüngeres Kennwort wieder verwenden können, sollten Sie etwas auswählen, das der Angreifer nicht erraten kann.
+- Wenn Ihre lokale Identität mit Office 365 verbunden ist, müssen Sie Ihr Kennwort lokal ändern und dann Ihren Administrator über die Gefährdung informieren.
 
 > [!TIP]
-> Es wird dringend empfohlen, Multi-Factor Authentication (mehrstufiger Authentifizierung das), um zu verhindern, dass Kompromiss, insbesondere für Konten mit Administratorrechten zu aktivieren.  Erfahren Sie mehr [hier](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> Es wird dringend empfohlen, die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) zu aktivieren, um eine Gefährdung zu vermeiden, insbesondere für Konten mit Administratorrechten.  Weitere Informationen finden Sie [hier](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
-### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2 Remove verdächtigen e-Mail-Weiterleitung-Adressen
-1. Öffnen der **Office 365 Admin Center > aktive Benutzer**.
-2. Suchen Sie das betreffende Benutzerkonto aus, und erweitern Sie **E-Mail-Einstellungen**.
-3. **Weiterleiten von E-Mail**klicken Sie auf **Bearbeiten**.
-4. Alle verdächtigen Weiterleitungsadressen zu entfernen.
+### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Schritt 2 entfernen verdächtiger e-Mail-Weiterleitungsadressen
+1. Öffnen Sie das **Office 365 Admin Center _GT_ Active Users**.
+2. Suchen Sie nach dem fraglichen Benutzerkonto, und erweitern Sie **e-Mail-Einstellungen**.
+3. Klicken Sie für die **e-Mail-Weiterleitung**auf **Bearbeiten**.
+4. Entfernen Sie alle verdächtigen Weiterleitungsadressen.
 
-### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Schritt 3 deaktivieren alle verdächtigen Posteingangsregeln
-1. Melden Sie sich das Postfach des Benutzers mit Outlook Web App (OWA).
-2. Klicken Sie auf das Zahnradsymbol, und klicken Sie auf **Mail**.
-3. Klicken Sie auf **Posteingang und Sweep Regeln** , und überprüfen Sie die Regeln.
-4. Deaktivieren oder Löschen von verdächtigen Regeln.
+### <a name="step-3-disable-any-suspicious-inbox-rules"></a>Schritt 3 Deaktivieren aller Verdächtigen Posteingangsregeln
+1. Melden Sie sich mit Outlook im Web beim Benutzerpostfach an.
+2. Klicken Sie auf das Zahnradsymbol und dann auf **e-Mail**.
+3. Klicken Sie auf postEingangs **-und Sweep-Regeln** , und lesen Sie die Regeln.
+4. Deaktivieren oder löschen Sie verdächtige Regeln.
 
-### <a name="step-4-unblock-the-user-from-sending-mail"></a>Schritt 4 zulassen der Benutzer am Senden von e-Mail
-Wenn das verdächtige Nachrichten kompromittierte Postfach zum Senden von Spam-e-Mail-unrechtmäßig verwendet wurde, ist es wahrscheinlich, dass das Postfach senden von Nachrichten blockiert wurde.
-1. Zum Aufheben der Blockierung eines Postfachs Senden von Nachrichten, gehen Sie wie unter [Entfernen eines Benutzers, Domäne oder IP-Adresse von einer Sperrliste nach dem Spam-e-Mail zu senden](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email ).
+### <a name="step-4-unblock-the-user-from-sending-mail"></a>Schritt 4 Entsperren des Benutzers zum Senden von e-Mails
+Wenn das mutmaßlich kompromittierte Postfach zum Senden von Spam-e-Mails illegal verwendet wurde, ist es wahrscheinlich, dass das Postfach nicht mehr gesendet werden kann.
+1. Führen Sie die Verfahren unter [Entfernen eines Benutzers, einer Domäne oder einer IP-Adresse aus einer Sperrliste nach dem Senden von Spam-e-](https://docs.microsoft.com/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email )Mails aus, um die Blockierung eines Postfachs vom Senden von e-Mails aufzuheben.
 
-### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>Schritt 5-Optional: Blockieren Sie das Benutzerkonto anmelden bei
+### <a name="step-5-optional-block-the-user-account-from-signing-in"></a>Schritt 5 optional: Blockieren des Benutzerkontos bei der Anmeldung
 > [!IMPORTANT]
-> Sie können dieses verdächtige Nachrichten Konto aus Anmeldung, bis Sie Ihrer Meinung nach Access wieder aktivieren sicher ist blockieren.
+> Sie können das mutmaßlich kompromittierte Konto vor der Anmeldung blockieren, bis Sie der Meinung sind, dass der Zugriff erneut aktiviert werden kann.
 
 1. Navigieren Sie zum Office 365 Admin Center.
-2. Wählen Sie im Office 365 Administrationscenter **Benutzer**.
-3. Wählen Sie den Mitarbeiter, den Sie sperren möchten, und wählen Sie dann im Bereich Benutzer neben **Anmeldestatus** **Bearbeiten**
-4. Wählen Sie im Bereich **Anmeldestatus** **- Anmeldung blockiert** , und klicken Sie dann auf **Speichern**. 
-5. Erweitern Sie in der Office 365-Verwaltungskonsole in der unteren linken Navigationsbereich **Admin Center** - **Exchange**.
-6. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Empfänger > Postfächer**.
-7. Wählen Sie den Benutzer und auf der Seite Benutzer Eigenschaften unter **Mobile Geräte**, klicken Sie auf **Exchange-ActivcSync deaktivieren** und **OWA for Devices deaktivieren** , und beide **Ja** beantworten.
-8. Klicken Sie unter **E-Mail-Konnektivität**, **Deaktivieren** und Antwort **Ja**. 
+2. Wählen Sie im Office 365 Admin Center die Option **Benutzer** aus.
+3. Wählen Sie den Mitarbeiter aus, den Sie blockieren möchten, und wählen Sie dann **Bearbeiten** neben **Anmeldestatus** im Benutzerbereich
+4. Wählen Sie im Bereich **Anmeldestatus** die Option **Anmeldung blockiert** und dann **Speichern** aus. 
+5. Erweitern Sie im Office 365 Admin Center im unteren linken Navigationsbereich **Admin Center** , und wählen Sie **Exchange**aus.
+6. Navigieren Sie im Exchange Admin Center zu **Empfänger _GT_ Postfächer**.
+7. Wählen Sie den Benutzer aus, und klicken Sie auf der Seite Benutzereigenschaften unter **Mobile Geräte**auf **Exchange-ActivcSync deaktivieren** , und deaktivieren Sie **** **OWA für Geräte** , und beantworten Sie beide.
+8. **Deaktivieren** Sie unter **e-Mail-Konnektivität**die Option **Ja**. 
 
-### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Schritt 6 Optional: Entfernen Sie dieses Konto verdächtige Nachrichten aus allen Gruppen der Administratorrolle
+### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Schritt 6 optional: Entfernen des mutmaßlichen kompromittierten Kontos aus allen administrativen Rollengruppen
 > [!NOTE]
-> Administratorrolle Gruppenmitgliedschaft kann wiederhergestellt werden, nachdem das Konto gesichert wurde.
+> Die Mitgliedschaft in einer Administratorrollengruppe kann wiederhergestellt werden, nachdem das Konto gesichert wurde.
 
-1. Melden Sie sich bei Office 365 Admin Center mit einem globalen Administratorkonto an, und öffnen Sie **Aktive Benutzer**.
-2. Hier finden Sie die verdächtige gefährdet Konto und manuell überprüfen, um festzustellen, ob alle Administratorrollen für das Konto zugewiesen sind.
-3. Öffnen Sie die **Sicherheit und Compliance Center**.
+1. Melden Sie sich beim Office 365 Admin Center mit einem globalen Administratorkonto an, und öffnen Sie **aktive Benutzer**.
+2. Suchen Sie nach dem mutmaßlich kompromittierten Konto, und überprüfen Sie, ob dem Konto Administratorrollen zugewiesen sind.
+3. Öffnen Sie das **Security _AMP_ Compliance Center**.
 4. Klicken Sie auf **Berechtigungen**.
-5. Die Rollengruppen, um herauszufinden, wenn die verdächtige gefährdet Konto ein Mitglied eines davon ist manuell zu überprüfen.  Wenn es ist: a klicken Sie auf die Rollengruppe, und klicken Sie auf **Rollengruppe bearbeiten**.  b. Klicken Sie auf **Ausgewählte Mitglieder** und **Bearbeiten** , um den Benutzer aus der Rollengruppe zu entfernen.
-6. Öffnen Sie die **Exchange-Verwaltungskonsole**
+5. Überprüfen Sie die Rollengruppen manuell, um festzustellen, ob das mutmaßlich kompromittierte Konto Mitglied einer dieser Benutzer ist.  Wenn dies der Fall ist: a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Rollengruppe bearbeiten**.  b. Klicken Sie auf **Mitglieder auswählen** und **Bearbeiten** , um den Benutzer aus der Rollengruppe zu entfernen.
+6. Öffnen des **Exchange Admin Center**
 7. Klicken Sie auf **Berechtigungen**.
-8. Die Rollengruppen, um herauszufinden, wenn die verdächtige gefährdet Konto ein Mitglied eines davon ist manuell zu überprüfen. Wenn es ist: a, klicken Sie auf die Rollengruppe, und klicken Sie auf **Bearbeiten**.  b. verwenden Sie Abschnitt **Mitglieder** , um den Benutzer aus der Rollengruppe zu entfernen.
+8. Überprüfen Sie die Rollengruppen manuell, um festzustellen, ob das mutmaßlich kompromittierte Konto Mitglied einer dieser Benutzer ist. Wenn dies der Fall ist: a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Bearbeiten**.  b. verwenden Sie den Abschnitt **Members** , um den Benutzer aus der Rollengruppe zu entfernen.
 
-### <a name="step-7-optional-additional-precautionary-steps"></a>Optional Schritt 7: Zusätzliche Vorsichtsmaßnahmen
-1. Stellen Sie sicher, dass Sie gesendete Objekte überprüfen. Möglicherweise müssen Sie die Personen in Ihrer Kontaktliste zu informieren, dass Ihr Konto gefährdet wurde. Der Angreifer kann sie nach der Money, gefragt haben spoofing, beispielsweise, dass in einem anderen Land isolierte wurden und benötigt der Money oder der Angreifer möglicherweise Sie ihnen einen Virus senden auf ihren Computern auch unerlaubterweise.
-2. Keine anderen Dienste, die diese Exchange-Konto verwendet, wie das alternative e-Mail-Konto möglicherweise beschädigt wurde. Zuerst, führen Sie diese Schritte für Ihr Office 365-Abonnement, und führen Sie diese Schritte für die anderen Konten.
-3. Stellen Sie sicher, dass Ihre Kontaktinformationen wie Telefonnummern und Adressen, korrekt ist.
+### <a name="step-7-optional-additional-precautionary-steps"></a>Schritt 7 optional: zusätzliche Vorsichtsmaßnahmen
+1. Vergewissern Sie sich, dass Sie die gesendeten Elemente überprüft haben. Möglicherweise müssen Sie die Personen in Ihrer Kontaktliste darüber informieren, dass Ihr Konto kompromittiert wurde. Der Angreifer hat Sie möglicherweise um Geld und Spoofing gebeten, beispielsweise, dass Sie in einem anderen Land gestrandet waren und Geld benötigten, oder der Angreifer kann Ihnen einen Virus senden, um auch Ihre Computer zu entführen.
+2. Möglicherweise wurden alle anderen Dienste, die dieses Exchange-Konto als alternatives e-Mail-Konto verwendet haben, kompromittiert. Führen Sie zunächst die folgenden Schritte für Ihr Office 365-Abonnement aus, und führen Sie die folgenden Schritte für Ihre anderen Konten aus.
+3. Stellen Sie sicher, dass Ihre Kontaktinformationen, wie Telefonnummern und Adressen, korrekt sind.
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie eine pro Sicherheit im Internet
-Ihr Office 365-Abonnement verfügt über eine leistungsstarke Reihe von Sicherheitsfunktionen, die Sie verwenden können, um Ihre Daten und Ihre Benutzer zu schützen.  Verwendung der [Wegweiser für Office 365-Sicherheit: Top-Prioritäten für den ersten 30 Tagen 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) zur Implementierung von Microsoft empfohlene bewährte Methoden zum Sichern Ihrer Office 365-Mandanten.
-- Aufgaben in den ersten 30 Tagen ausgeführt.  Diesen sofort einen Einfluss darauf haben und klein sind für die Benutzer.
-- Aufgaben in 90 Tage ausgeführt. Diese erfordern etwas mehr Zeit zum Planen und implementieren, aber Ihre Sicherheitsstatus erheblich verbessert.
-- Mehr als 90 Tage. Erstellen Sie diese Verbesserungen in Ihrer ersten 90 Tage Arbeit.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Secure Office 365 wie ein Cyber pro
+Ihr Office 365-Abonnement verfügt über eine Reihe leistungsstarker Sicherheitsfunktionen, die Sie zum Schutz Ihrer Daten und ihrer Benutzer verwenden können.  Verwenden Sie die [office 365 Security Roadmap: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) , um die empfohlenen bewährten Methoden von Microsoft für die Sicherung ihres Office 365-Mandanten zu implementieren.
+- Aufgaben, die in den ersten 30 Tagen erledigt werden müssen.  Diese haben sofortige Auswirkungen und sind für Ihre Benutzer gering.
+- Aufgaben in 90 Tagen. Diese benötigen etwas mehr Zeit, um ihre Sicherheitslage zu planen und zu implementieren.
+- Über 90 Tage. Diese Verbesserungen werden in den ersten 90-Tagen ausgeführt.
 
 ## <a name="see-also"></a>Siehe auch:
 - [Bewährte Methoden für die Sicherheit in Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-- [Internet Crime kompatibles Center](http://www.ic3.gov/preventiontips.aspx)
-- [Sicherheit und Exchange Provision - Betrug "Phishing"](http://www.sec.gov/investor/pubs/phishing.htm)
+- [Internet Crime Complaint Center](http://www.ic3.gov/preventiontips.aspx)
+- [Wertpapier-und Exchange-Kommission-Betrugsbekämpfung](http://www.sec.gov/investor/pubs/phishing.htm)

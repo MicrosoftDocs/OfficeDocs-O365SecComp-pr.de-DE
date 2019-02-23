@@ -1,35 +1,35 @@
 ---
-title: EU-Steuernummer
+title: USt-ID-Nummer
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: In diesem Thema wird eine Data Loss Prevention (DLP) Richtlinie sieht für bei der Entdeckung des Typs der EU Steuernummer vertraulichen Informationen. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 5192496b393d15fd6d063e09c9bfe1cb3dd7e2dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Steuernummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529425"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213825"
 ---
-# <a name="eu-tax-identification-number"></a>EU-Steuernummer
+# <a name="eu-tax-identification-number"></a>USt-ID-Nummer
 
-In diesem Thema dargestellt was eine Data Loss Prevention (DLP)-Richtlinie für den Typ der EU Tax Identification-Nummer (US) vertrauliche Daten erkannt. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie bei der Erkennung des vertraulichen Informationstyps "TIN" (EU Tax Identification Number) sucht. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
   
 ## <a name="austria"></a>Österreich
 
 ### <a name="format"></a>Format
 
-Neun Ziffern mit bedingter Trennstrich und Schrägstrich
+Neun Ziffern mit optionalem Bindestrich und Schrägstrich
   
 ### <a name="pattern"></a>Muster
 
-Neun Ziffern mit bedingter Trennstrich und Schrägstrich:
+Neun Ziffern mit optionalem Bindestrich und Schrägstrich:
   
 -  Zwei Ziffern 
     
@@ -49,13 +49,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_austria_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_austria_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_austria_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_austria_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_austria_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -70,7 +70,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
@@ -91,7 +91,7 @@ Steuernummer
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen und Trennzeichen
+11 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -99,11 +99,11 @@ Steuernummer
   
 - Zwei Ziffern
     
-- Eine "0" oder "1"
+- "0" oder "1"
     
 - Eine Ziffer
     
-- Eine "0" oder "1" oder "2" oder "3" 
+- "0" oder "1" oder "2" oder "3" 
     
 - Sechs Ziffern
     
@@ -115,9 +115,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_belgium_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_belgium_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_belgium_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_belgium_eu_tax_file_number` aus wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -129,32 +129,32 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
 Steuernummer
   
-Nummer der Eintragung
+nationale Registrierungsnummer
   
 Steuernummer
   
 tax id
 
   
-if
+NIF
   
-if-
+NIF
   
-Numéro de Registre national
+Numéro de Registre National
   
-Numéro d ' Identification fiscale
+Numéro d'identification Fiscale
   
 ## <a name="bulgaria"></a>Bulgarien
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern ohne Leerzeichen und Trennzeichen
+Zehn Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -168,13 +168,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_bulgaria_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_bulgaria_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_bulgaria_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_bulgaria_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_bulgaria_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_bulgaria_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -189,51 +189,51 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsbulgariaeutaxfilenumber"></a>Keywords_bulgaria_eu_tax_file_number
 
-bucn
+BUCN
   
-Uniform der Anzahl
+einheitliche Zivil Nummer
   
-Bucn #
+BUCN
   
-Uniformcivilnumber #
+uniformcivilnumber #
   
-Uniform der id
+einheitliche Civil ID
   
-Uniform der Nr.
+einheitliches ziviles Nein
   
-egn
+EGN
   
-Bulgarisch uniform der Anzahl
+Bulgarische einheitliche Zivil Nummer
   
-Uniformcivilno #
+uniformcivilno #
   
-Egn #
+EGN
   
-УНИФОРМ ГРАЖДАНСКИ НОМЕР
+униформ граждански номер
   
-Униформ-id
+униформ-ID
   
-Униформ граждански-id
+униформ-граждански-ID
   
-УНИФОРМ ГРАЖДАНСКИ НЕ
+униформ граждански не
   
 ## <a name="croatia"></a>Kroatien
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen oder Trennzeichen
+11 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
 11 Ziffern:
   
-- Zehn Ziffern, zufällig ausgewählte
+- Zehn Ziffern, zufällig gewählt
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -243,13 +243,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_croatia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_croatia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_croatia_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_croatia_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_croatia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_croatia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -264,38 +264,38 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
 Steuernummer
   
-tax
+Steuer
   
 tax id
 
   
 OID
   
-OID-
+OID
   
-Porezni broj
+porezni Broj
   
 ## <a name="cyprus"></a>Zypern
 
 ### <a name="format"></a>Format
 
-Acht Ziffern und einem Buchstaben in das angegebene Muster
+Acht Ziffern und ein Buchstabe im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern und einem Buchstaben:
+Acht Ziffern und ein Buchstabe:
   
--  EINE "0" 
+-  Ein "0" 
     
 - Sieben Ziffern 
     
-- Ein Buchstabe (nicht Groß-/Kleinschreibung)
+- Ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -305,13 +305,13 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_cyprus_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_cyprus_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_cyprus_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_cyprus_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_cyprus_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -326,42 +326,42 @@ Pattern confidenceLevel="75">
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
 Steuernummer
   
-tax
+Steuer
   
 tax id
 
   
-Tax Kenncode
+USt-ID-Code
   
-Teilstrichen
+TIC
   
-Teilstrichen #
+TIC
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+αριθμός φορολογικού μητρώου
   
-ΦΟΡΟΛΟΓΙΚΉ ΤΑΥΤΌΤΗΤΑ
+φορολογική ταυτότητα
   
-ΚΩΔΙΚΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+κωδικός φορολογικού μητρώου
   
-## <a name="czech-republic"></a>Tschechische Republik
+## <a name="czech-republic"></a>Tschechien
 
 ### <a name="format"></a>Format
 
-Neun oder zehn Ziffern und optional einen umgekehrten Schrägstrich
+Neun oder zehn Ziffern mit optionalem Backslash
   
 ### <a name="pattern"></a>Muster
 
-Neun oder zehn Ziffern mit einem optionalen Backslashl:
+Neun oder zehn Ziffern mit einem optionalen umgekehrten Schrägstrich:
   
 - Sechs Ziffern 
     
-- Einen umgekehrten Schrägstrich (optional)
+- Ein umgekehrter Schrägstrich (optional)
     
 - Drei oder vier Ziffern
     
@@ -373,9 +373,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_czech_republic_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_czech_republic_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_czech_republic_eu_tax_file_number` aus wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -387,13 +387,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
 Steuernummer
   
-tax
+Steuer
   
 tax id
 
@@ -408,17 +408,17 @@ Osobní číslo
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern, die einen Bindestrich enthält
+Zehn Ziffern mit einem Bindestrich
   
 ### <a name="pattern"></a>Muster
 
-Zehn Ziffern, die ein Hyphenl enthält:
+Zehn Ziffern, die einen Bindestrich enthalten:
   
--  Sechs Ziffern, die das Geburtsdatum (DDMMYY) entsprechen 
+-  Sechs Ziffern, die dem Geburtsdatum entsprechen (TTMMJJ) 
     
 - Ein Bindestrich 
     
-- Vier Ziffern, die ein, wobei die erste Ziffer der Century Geburtsdatum entspricht, Sequenznummer entsprechen und die letzte Ziffer entspricht der betroffenen Person Geschlecht (ungerade für Männlich und sogar weiblich)
+- Vier Ziffern, die einer Sequenznummer entsprechen, wobei die erste Ziffer dem Jahrhundert der Geburt entspricht und die letzte Ziffer dem Geschlecht des einzelnen entspricht (ungerade für männlich und sogar für weiblich)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -428,13 +428,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_denmark_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_denmark_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_denmark_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_denmark_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_denmark_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_denmark_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -449,42 +449,42 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
 Steuernummer
   
-tax
+Steuer
   
 tax id
 
   
-CPR Anzahl
+CPR-Nummer
   
-CPR-
+CPR
   
-Skat nummer
+Skate Nummer
   
-Skat-id
+Skat-ID
   
 ## <a name="estonia"></a>Estland
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen oder Trennzeichen
+11 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
 11 Ziffern:
   
--  Eine Zahl, die Geschlecht und Century Geburtsdatum, in dem eine ungerade Anzahl gibt Männlich und die gerade Zahl Weiblich wie folgt, entspricht: 1, 2 für die 19. Century; 3, 4 für die allem; 5 und 6 für 2015 
+-  Eine Ziffer, die dem Geschlecht und dem Jahrhundert der Geburt entspricht, wobei eine ungerade Zahl männliche und die gerade Zahl angibt, wie folgt: 1,2 für das 19. Jahrhundert; 3, 4 für das 20. Jahrhundert; und 5, 6 für das 21. Jahrhundert 
     
-- Sechs Ziffern, die Geburtsdatum (JJMMTT) entsprechen
+- Sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT)
     
-- Drei Ziffern, die eine fortlaufende Zahl, die Personen, die an demselben Tag geboren trennt entsprechen
+- Drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am selben Datum geboren wurden
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -494,13 +494,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_estonia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_estonia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_estonia_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_estonia_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_estonia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_estonia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -515,42 +515,42 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
 Steuernummer
   
-tax
+Steuer
   
 tax id
 
   
-Persönliche code
+persönlicher Code
   
 maksunumber
   
-Maksu-id
+maksu-ID
   
-isikukood
+Isikukood
   
 ## <a name="finland"></a>Finnland
 
 ### <a name="format"></a>Format
 
-Eine Kombination aus 11 Zeichen Ziffern, Buchstaben, und Plus- und Minuszeichen
+Eine 11-stellige Kombination aus Ziffern, Buchstaben und Plus-und Minuszeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine Kombination aus 11 Zeichen Ziffern, Buchstaben, und Plus- und Minuszeichen:
+Eine 11-stellige Kombination aus Ziffern, Buchstaben und Plus-und Minuszeichen:
   
 - Sechs Ziffern
     
-- Einer der folgenden: ein Pluszeichen (+), ein Minuszeichen oder dem Buchstaben "A" (nicht Groß-/Kleinschreibung), in dem das Pluszeichen (+) bedeutet, dass, zwischen 1800-1899 geboren, Signieren das Minuszeichen bedeutet, dass zwischen geboren 1900-1999, und "A" bedeutet, dass geboren 2000 und nach
+- Eine der folgenden Optionen: ein Pluszeichen, ein Minuszeichen oder der Buchstabe "A" (ohne Beachtung der Groß-/Kleinschreibung), wobei das Pluszeichen zwischen 1800-1899, das Minuszeichen zwischen 1900-1999 und "A" als geboren 2000 und nach
     
 - Drei Ziffern
     
-- Einen Buchstaben oder eine Zahl
+- Ein Buchstaben oder eine Zahl
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -560,13 +560,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_finland_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_finland_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_finland_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_finland_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_finland_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_finland_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -581,62 +581,62 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
 
   
-Persönliche id
+persönliche ID
   
-Anzahl der Identität
+Identitätsnummer
   
-Anzahl der Finnland Personalausweis
+nationale finnische ID-Nummer
   
-Personalidnumber #
+personalidnumber #
   
-National Identifikationsnummer
+nationale Identifikationsnummer
   
 ID-Nummer
   
-Personalausweis keine.
+nationale ID-Nr.
   
-Ausweis-Id-Nummer
+nationale ID-Nummer
   
-ID keine
+ID Nein
   
 tunnistenumero
   
 henkilötunnus
   
-Yksilöllinen Henkilökohtainen tunnistenumero
+yksilöllinen henkilökohtainen tunnistenumero
   
-Ainutlaatuinen Henkilökohtainen tunnus
+ainutlaatuinen henkilökohtainen tunnus
   
-Identiteetti numero
+identiteetti numero
   
-Suomen Kansallinen henkilötunnus
+Suomen der Kok henkilötunnus
   
-Henkilötunnusnumero #
+henkilötunnusnumero #
   
-Kansallisen tunnistenumero
+kansallisen tunnistenumero
   
 tunnusnumero
   
-Kansallinen Tunnus numero
+der Kok tunnus numero
   
 ## <a name="france"></a>Frankreich
 
 ### <a name="format"></a>Format
 
-13 Stellen für einzelne Benutzer und neun Ziffern für Entitäten
+13 Ziffern für Einzelpersonen und neun Ziffern für Entitäten
   
 ### <a name="pattern"></a>Muster
 
-13 Stellen für einzelne Benutzer:
+13 Ziffern für Einzelpersonen:
   
-- Eine Zahl, die 0, 1, 2 oder 3 sein müssen
+- Eine Ziffer, die 0, 1, 2 oder 3 sein muss
     
 - 12 Ziffern
     
@@ -650,13 +650,13 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_france_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_france_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_france_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_france_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_france_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_france_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -671,32 +671,32 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-Steuernummer
+USt-ID-Nummer
   
 Steuernummer
   
 tax id
 
   
-Numéro d ' Identification fiscale
+Numéro d'identification Fiscale
   
 ## <a name="germany"></a>Deutschland
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen und Trennzeichen
+11 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
-11 Stellen:
+11 Ziffern:
   
 -  Zehn Ziffern 
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -706,13 +706,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_germany_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_germany_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_germany_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_germany_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_germany_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_germany_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -727,40 +727,40 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
 tax id
 
   
-Taxid #
+getaxit #
+  
+USt-ID-Nummer
+  
+USt-ID-Nr.
   
 Steuernummer
   
-Steuernummer nicht.
+Ingo-ID
   
-Steuernummer
-  
-Steuer-id
-  
-steueridentifikationsnummer
+Steueridentifikationsnummer
   
 ## <a name="greece"></a>Griechenland
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -774,9 +774,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_greece_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_greece_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_greece_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_greece_eu_tax_file_number` aus wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -788,7 +788,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsgreeceeutaxfilenumber"></a>Keywords_greece_eu_tax_file_number
 
@@ -797,51 +797,51 @@ AFM
 tin
 
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-keine Steuernummer
+USt-ID-Nr.
   
-Steuernummer
+USt-ID-Nummer
   
-Registrierung Steuernummer
+Steuerregistrierungsnummer
   
-Steuern Sie Registrierung nicht.
+Steuerregistrierungsnummer
   
-AFM #
+AFM
   
-Steuernummer #
+Zinn
   
-Taxidno #
+taxidno #
   
-Taxregistryno #
+taxregistryno #
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+αριθμός φορολογικού μητρώου
   
 aφμ
   
-Aφμ αριθμός
+aφμ αριθμός
   
-ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ ΝΟ.
+φορολογικού μητρώου νο.
   
-ΤΟΝ ΑΡΙΘΜΌ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+τον αριθμό φορολογικού μητρώου
   
 ## <a name="hungary"></a>Ungarn
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern ohne Leerzeichen oder Trennzeichen
+Zehn Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
 Zehn Ziffern:
   
--  Eine Zahl, die "8" sein müssen 
+-  Eine Ziffer, die "8" sein muss 
     
-- Fünf Ziffern, die die Anzahl der Tage zwischen dem Datum entsprechen, 01/01/1867 und das Geburtsdatum der Person
+- Fünf Ziffern, die der Anzahl von Tagen zwischen dem Datum 01/01/1867 und dem Geburtsdatum des einzelnen entsprechen
     
-- Drei Ziffern, die die Anzahl an Personen, die an demselben Tag geboren unterscheiden zufällig generiert entsprechen
+- Drei Ziffern, die der Zahl entsprechen, die von Wahrscheinlichkeit zur Unterscheidung von Individuen generiert wurde, die am selben Tag geboren wurden
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -851,13 +851,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_hungary_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_hungary_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_hungary_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_hungary_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_hungary_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_hungary_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -872,51 +872,51 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
-Ungarisch Steuernummer
+ungarische Steuernummer
   
-Ungarisch Steuernummer
+ungarische Dose
   
-Steuernummer
+USt-ID-Nummer
   
-Anzahl der Mehrwertsteuer
+USt-IdNr.
   
-Behörde nicht steuern
+Finanzamt Nein
   
-Tax Identität Steuernummer
+USt-ID-Steuernummer
   
-Taxidnumber #
+taxidnumber #
   
-Steuernummer #
+Zinn
   
-Hungatiantin #
+hungatiantin #
   
-keine Steuernummer
+USt-ID-Nr.
   
-Taxidno #
+taxidno #
   
-Adóazonosító szám
+adóazonosító szám
   
 adószám
   
-Adóhatóság szám
+adóhatóság szám
   
 ## <a name="ireland"></a>Irland
 
 ### <a name="format"></a>Format
 
-Sieben Ziffern, gefolgt von einem Buchstaben ohne Leerzeichen oder Trennzeichen
+Sieben Ziffern, gefolgt von einem Buchstaben ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Sieben Ziffern, gefolgt von einem Buchstaben:
+Sieben Ziffern gefolgt von einem Buchstaben:
   
 -  Sieben Ziffern  
     
-- Ein Buchstabe (nicht Groß-/Kleinschreibung)
+- Ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -926,13 +926,13 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_ireland_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_ireland_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_ireland_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_ireland_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_ireland_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_ireland_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -947,57 +947,57 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
-öffentliche Dienstleistungen keine
+öffentlicher Dienst Nein
   
-Persönliche öffentliche Dienstleistungen keine
+persönlicher öffentlicher Dienst Nein
   
-PPS keine
+PPS Nein
   
-Persönliche Nein service
+persönlicher Dienst Nein
   
-PPS-service Nein
+PPS-Dienst Nein
   
-Ppsno #
+ppsno #
   
-Irland Pps keine
+Irisch PPS Nein
   
-Publicserviceno #
+publicserviceno #
   
-Anzahl der persönlichen öffentliche Dienstleistungen
+persönliche öffentliche Dienstnummer
   
-Uimhir Phearsanta Seirbhíse poiblí
+uimhir phearsanta seirbhíse poiblí
   
 PPS-uimh
   
-Uimhir Aitheantais phearsanta
+uimhir aitheantais phearsanta
   
 ## <a name="italy"></a>Italien
 
 ### <a name="format"></a>Format
 
-16 Buchstaben und Ziffern in dem angegebenen Muster
+16 Buchstaben und Ziffern im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
 16 Buchstaben und Ziffern:
   
--  Drei Buchstaben, die die ersten drei Doppelkonsonanten in der der Name der entsprechen 
+-  Drei Buchstaben, die den ersten drei Konsonanten im Familiennamen entsprechen 
     
-- Drei Buchstaben, die die erste, dritte und vierte entsprechen, Doppelkonsonanten in den Vornamen
+- Drei Buchstaben, die dem ersten, dritten und vierten Konsonanten im Vornamen entsprechen
     
-- Zwei Ziffern, die auf die letzte Ziffern des Jahres Geburtsdatum entsprechen
+- Zwei Ziffern, die den letzten Ziffern des Geburtsjahrs entsprechen
     
-- Eine Ziffer, die den Monat Geburtsdatum entspricht – Buchstaben werden in alphabetischer Reihenfolge verwendet, aber nur die Buchstaben A bis E, H, L, M, P, R t verwendet werden (also Januar ist eine und Oktober R)
+- Eine Ziffer, die dem Geburtsmonat entspricht – Buchstaben werden in alphabetischer Reihenfolge verwendet, aber nur die Buchstaben A bis E, H, L, M, P, R bis T werden verwendet (also Januar ist A und Oktober ist R)
     
-- Zwei Ziffern, die den Tag des Monats Geburtsdatum entsprechen, in dem der Tag Geburtsdaten von bestimmten zur Unterscheidung von Männlich 40 hinzugefügt wird
+- Zwei Ziffern, die dem Tag des Geburtsmonats entsprechen, wobei 40 zum Geburtstag hinzugefügt wird, damit Frauen von Männern unterschieden werden.
     
-- Vier Ziffern, die speziell für die Gemeinde Ortskennzahl entsprechen, in die Person geboren wurde – Land geltende Codes für Ausland verwendet werden
+- Vier Ziffern, die einer Ortskennzahl für die Gemeinde entsprechen, in der die Person geboren wurde – landesweite Codes werden für fremde Länder verwendet
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1007,13 +1007,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_italy_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_italy_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_italy_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_italy_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_italy_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_italy_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1028,42 +1028,42 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
 tax id
 
   
-Taxid #
+getaxit #
   
-Fiscal code
+Fiskal Code
   
-Codice fiscale
+Geschäftsjahr
   
 ## <a name="latvia"></a>Lettland
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen oder Trennzeichen
+11 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
-11 Stellen in dem angegebenen Muster
+11 Ziffern im angegebenen Muster
   
--  Sechs Ziffern, die das Geburtsdatum (DDMMYY) entsprechen 
+-  Sechs Ziffern, die dem Geburtsdatum entsprechen (TTMMJJ) 
     
-- Eine Zahl, die die Century Geburtsdatum entspricht, in dem 19. Century entspricht "0", "1" entspricht allem und 2015 "2" entspricht
+- Eine Ziffer, die dem Jahrhundert der Geburt entspricht, wobei "0" dem 19. Jahrhundert entspricht, "1" entspricht dem 20. Jahrhundert, und "2" entspricht dem 21. Jahrhundert
     
 - Vier Ziffern
     
@@ -1075,13 +1075,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_latvia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_latvia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_latvia_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_latvia_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_latvia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_latvia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1096,40 +1096,40 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
 tax id
 
   
-Taxid #
+getaxit #
   
-Steuernummer
+USt-ID-Nummer
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-Nodokļa numurs
+nodokļa numurs
   
-Nodokļu Identifikācijas numurs
+nodokļu identifikācijas numurs
   
-Nodokļu Identifikācija numurs
+nodokļu identifikācija numurs
   
 ## <a name="lithuania"></a>Litauen
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen oder Trennzeichen
+11 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1143,13 +1143,13 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_lithuania_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_lithuania_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_lithuania_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_lithuania_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_lithuania_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1164,40 +1164,40 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Steuerinformationen Nein #
+Steuernummer
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
 tax id
 
   
-Taxid #
+getaxit #
   
-Steuernummer
+USt-ID-Nummer
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-Mokesčių-id
+mokesčių-ID
   
-Mokesčių numeris
+mokesčių Numeris
   
-Mokesčių Identifikavimas numeris
+mokesčių identifikavimas Numeris
   
 ## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Format
 
-13 Stellen ohne Leerzeichen oder Trennzeichen
+13 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1215,13 +1215,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_luxemburg_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_luxemburg_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_luxemburg_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_luxemburg_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_luxemburg_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_luxemburg_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1236,52 +1236,52 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
 tax id
 
   
-Taxid #
+getaxit #
+  
+USt-ID-Nummer
+  
+USt-ID-Nr.
   
 Steuernummer
   
-Steuernummer nicht.
+Ingo-ID
   
-Steuernummer
-  
-Steuer-id
-  
-steueridentifikationsnummer
+Steueridentifikationsnummer
   
 ## <a name="malta"></a>Malta
 
 ### <a name="format"></a>Format
 
-Maltesisch Staatsangehörigen: 7 Ziffern und einem Buchstaben in das angegebene Muster
+Für maltesische Staatsangehörige: 7 Ziffern und ein Buchstabe im angegebenen Muster
   
-Nicht-Maltesisch Staatsangehörigen und Maltesisch Entitäten: 9 Ziffern
+Nicht maltesische Staatsangehörige und maltesische Entitäten: 9 Ziffern
   
 ### <a name="pattern"></a>Muster
 
-Maltesisch Staatsangehörigen: 7 Ziffern und einem Buchstaben
+Maltesische Staatsangehörige: 7 Ziffern und ein Buchstabe
   
 -  Sieben Ziffern  
     
-- Ein Buchstabe (nicht Groß-/Kleinschreibung)
+- Ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
     
-Nicht-Maltesisch Staatsangehörigen und Maltesisch Entitäten: 9 Ziffern
+Nicht maltesische Staatsangehörige und maltesische Entitäten: 9 Ziffern
   
 -  Neun Ziffern 
     
@@ -1293,13 +1293,13 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_malta_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_malta_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_malta_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_malta_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_malta_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_malta_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1314,40 +1314,40 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
 tax id
 
   
-Taxid #
+getaxit #
   
-Steuernummer
+USt-ID-Nummer
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-Numru Tat-taxxa
+numru tat-Taxxa
   
-ID Tat-taxxa
+ID tat-Taxxa
   
-Numru ta ' Identifikazzjoni Tat-Taxxa
+numru ta ' identifikazzjoni tat-Taxxa
   
 ## <a name="netherlands"></a>Niederlande
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen oder Trennzeichen
+Neun Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1361,13 +1361,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_netherlands_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_netherlands_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_netherlands_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_netherlands_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_netherlands_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_netherlands_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1382,65 +1382,65 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-Niederlande Steuernummer
+niederländische Steuernummer
   
-Niederlande Steuernummer
+niederländische Steueridentifikation
   
-der niederländische Steuernummer
+USt-ID-Nummer Niederlande
   
-der niederländische Steuernummer
+niederländische Steueridentifikation
   
-Steuernummer
+USt-ID-Nummer
   
-Niederländische Steuernummer
+niederländische Steuernummer
   
-Niederländische Steuernummer
+niederländische Steuernummer
   
 tax id
 
   
-Nr.
+USt-ID-Nummer
   
 Steuernummer
   
-Steuerinformationen Nein #
+Steuernummer
   
-Tax #
+Steuer
   
 tin
 
   
-Steuernummer #
+Zinn
   
-Niederlande Steuernummer
+Niederlande Zinn
   
-der niederländische Steuernummer
+Zinn der Niederlande
   
-Niederlande Belasting identificatienummer
+Nederlands identificatienummer
   
-Identificatienummer van belasting
+identificatienummer van belastend
   
-Identificatienummer belasting
+identificatienummer-Belastungen
   
-Niederlande Belasting identificatie
+Nederlands identificatie
   
-Niederlande Belasting-Id-nummer
+Nederlands-Nummer-ID
   
-Niederlande belastingnummer
+Nederlands belastingnummer
   
-btw Nummer
+BTW Nummer
   
-Nederlandse Belasting identificatie
+Nederlandse identificatie
   
 ## <a name="poland"></a>Polen
 
 ### <a name="format"></a>Format
 
-Elf Ziffern ohne Leerzeichen oder Trennzeichen
+Elf Ziffern ohne Leerzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -1454,13 +1454,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_poland_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_poland_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_poland_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_poland_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_poland_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_poland_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1475,58 +1475,58 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
-Aktivieren der
+NIP
   
-Aktivieren der #
+NIP
   
 tax id
 
   
-Nr.
+USt-ID-Nummer
   
-Aktivieren der id
+NIP-ID
   
-Aktivieren der ID-Nummer
+NIP-ID #
   
-Steuernummer
+USt-ID-Nummer
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-Anzahl der Mehrwertsteuer
+USt-IdNr.
   
-Umsatzsteuer.
+USt-IdNr.
   
-Vatno #
+vatno #
   
-ber
+USt-ID
   
-Mehrwertsteuer-ID-Nummer
+USt-ID #
   
-Anzahl Identyfikacji podatkowej
+Numer identyfikacji podatkowej
   
-Polski Anzahl Identyfikacji podatkowej
+Polski Numer identyfikacji podatkowej
   
-Numeridentyfikacjipodatkowej #
+numeridentyfikacjipodatkowej #
   
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen oder Trennzeichen
+Neun Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1540,13 +1540,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_portugal_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_portugal_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_portugal_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_portugal_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_portugal_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_portugal_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1561,33 +1561,33 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
 Steuernummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Taxno #
+taxno #
   
-Taxnumber #
+taxnumber #
   
 taxnumber
   
-if
+NIF
   
-if-
+NIF
   
-Numero Geschäftsjahr
+Numero Fiscal
   
-Número de Identificação Geschäftszeiträume
+número de identificação Fiscal
   
 ## <a name="romania"></a>Rumänien
 
 ### <a name="format"></a>Format
 
-13 Stellen ohne Leerzeichen oder Trennzeichen
+13 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1601,9 +1601,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_romania_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_romania_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_romania_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_romania_eu_tax_file_number` aus wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1615,38 +1615,38 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
 
   
-Steuernummer
+USt-ID-Nummer
   
-Datei nicht steuern
+Steuerdatei Nein
   
 
 
 tax file number
   
-Nein Steuerinformationen
+Steuernummer
   
 Steuernummer
   
-Taxid #
+getaxit #
   
-Taxno #
+taxno #
   
-ID-Ul taxei
+ID – UL-taxei
   
-Numărul de Identificare fiscală
+numărul de identificare fiscală
   
 ## <a name="slovakia"></a>Slowakei
 
 ### <a name="format"></a>Format
 
-10 Ziffern ohne Leerzeichen oder Trennzeichen
+10 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1660,9 +1660,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovakia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_slovakia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_slovakia_eu_tax_file_number` aus wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1674,49 +1674,49 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
 
   
-Steuernummer
+USt-ID-Nummer
   
-Steuernummer-id
+Tin-ID
   
-Steuernummer Nr.
+Tin Nein
   
-Slowakische Steuernummer-id
+Slowakische Tin-ID
   
 tin
 
   
-Datei nicht steuern
+Steuerdatei Nein
   
 
 
 tax file number
   
-Nein Steuerinformationen
+Steuernummer
   
 Steuernummer
   
-Taxid #
+getaxit #
   
-Taxno #
+taxno #
   
-Daňové Identifikačné číslo
+Daňové identifikačné číslo
   
 Daňové číslo
   
-Daňové číslo súboru
+Daňové číslo SÚBORU
   
 ## <a name="slovenia"></a>Slowenien
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen oder Trennzeichen
+Acht Ziffern ohne Leerzeichen oder Begrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -1730,13 +1730,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_slovenia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_slovenia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_slovenia_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_slovenia_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_slovenia_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1751,89 +1751,89 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
 
   
-Steuernummer
+USt-ID-Nummer
   
-Steuernummer-id
+Tin-ID
   
-Steuernummer Nr.
+Tin Nein
   
-Slowenisch Steuernummer-id
+slowenische Tin-ID
   
 tin
 
   
-Datei nicht steuern
+Steuerdatei Nein
   
 
 
 tax file number
   
-Nein Steuerinformationen
+Steuernummer
   
 Steuernummer
   
-Taxid #
+getaxit #
   
-Taxno #
+taxno #
   
-Identifikacijska številka davka
+identifikacijska številka beim Davka
   
-Davčna številka
+davčna številka
   
-Številka Davčne datoteke
+številka davčne datoteke
   
 ## <a name="spain"></a>Spanien
 
 ### <a name="format"></a>Format
 
-Sieben oder acht Ziffern und ein oder zwei Buchstaben in das angegebene Muster
+Sieben oder acht Ziffern und ein oder zwei Buchstaben im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Spanische natürliche Personen mit einer Spanien National Identität Karte:
+Spanische natürliche Personen mit einem nationalen spanischen Identitätsausweis:
   
 -  Acht Ziffern 
     
-- Einen Großbuchstaben (Groß-/Kleinschreibung) 
+- Ein Großbuchstabe (Groß-/Kleinschreibung beachtet) 
     
-Nicht Spaniards ohne eine Spanien National-Personalausweis
+Nicht residente Spanier ohne nationalen Personalausweis
   
-- Einen Großbuchstaben "L" (Groß-/Kleinschreibung)
+- Ein Großbuchstabe "L" (Groß-/Kleinschreibung)
     
 - Sieben Ziffern 
     
-- Einen Großbuchstaben (Groß-/Kleinschreibung) 
+- Ein Großbuchstabe (Groß-/Kleinschreibung beachtet) 
     
-Berater Spaniards unter 14 Jahre ohne eine Spanien National Personalausweis:
+Residente Spanier unter 14 Jahren ohne National Ausweis für Spanien:
   
-- Ein Großbuchstabe "K" (Groß-/Kleinschreibung)
+- Ein Großbuchstabe "K" (Groß-/Kleinschreibung beachten)
     
 -  Sieben Ziffern  
     
-- Einen Großbuchstaben (Groß-/Kleinschreibung)
+- Ein Großbuchstabe (Groß-/Kleinschreibung beachtet)
     
-Foreigners mit einer Foreigner-ID
+Ausländer mit der IdentifikationsNummer eines ausLänders
   
-- Einen Großbuchstaben Buchstabe d. h., "X", "Y" oder "Z" (Groß-/Kleinschreibung) 
+- Ein Großbuchstabe, der "X", "Y" oder "Z" ist (Groß-/Kleinschreibung) 
     
 - Sieben Ziffern 
     
-- Einen Großbuchstaben (Groß-/Kleinschreibung) 
+- Ein Großbuchstabe (Groß-/Kleinschreibung beachtet) 
     
-Foreigners ohne eine Foreigner-ID-Nummer
+Ausländer ohne IdentifikationsNummer eines ausLänders
   
-- Einen Großbuchstaben, das "M" (Groß-/Kleinschreibung) ist. 
+- Ein Großbuchstabe, der "M" (Groß-/Kleinschreibung beachtet) ist 
     
 - Sieben Ziffern 
     
-- Einen Großbuchstaben (Groß-/Kleinschreibung) 
+- Ein Großbuchstabe (Groß-/Kleinschreibung beachtet) 
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1843,13 +1843,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_spain_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_spain_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_spain_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_spain_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_spain_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_spain_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1864,78 +1864,78 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
 
   
-Steuernummer
+USt-ID-Nummer
   
-Cif-id
+CIF-ID
   
-Cif keine
+CIF Nein
   
-Spanische Cif-id
+spanische CIF-ID
   
-cif
+CIF
   
-Datei nicht steuern
+Steuerdatei Nein
   
-Spanische Cif-Anzahl
+spanische CIF-Nummer
   
 
 
 tax file number
   
-Spanische Cif keine
-  
-Nein Steuerinformationen
+Spanisch (CIF) Nein
   
 Steuernummer
   
-Taxid #
+Steuernummer
   
-Taxno #
+getaxit #
+  
+taxno #
   
 CIFID #
   
-Spanishcifid #
+spanishcifid #
   
-Spanishcifno #
+spanishcifno #
   
-Número de contribuyente
+número de contribuyente
   
-Número de Impuesto corporativo
+número de Impuesto Corporativo
   
-Número de Identificación Geschäftszeiträume
+número de Identificación Fiscal
   
-Cif-número
+CIF-número
   
-Cifnúmero #
+cifnúmero #
   
 ## <a name="sweden"></a>Schweden
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern und ein Symbol in das angegebene Muster
+Zehn Ziffern und ein Symbol im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
 Zehn Ziffern und ein Symbol:
   
--  Sechs Ziffern, die das Geburtsdatum (JJMMTT) entsprechen 
+-  Sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT) 
     
-- Ein Pluszeichen (+), Minuszeichen oder umgekehrter Schrägstrich
+- Ein Pluszeichen, Minuszeichen oder umgekehrter Schrägstrich
     
-- Drei Ziffern, aus die die Kennung zusammensetzt Nummer eindeutige Where wählen: 
+- Drei Ziffern, die die Identifizierungsnummer eindeutig machen, wobei: 
     
-  - Zahlen, die vor dem 1990 ausgestellt wurden identifizieren Sie die siebte und die achte Ziffer den Kanton des Geburtsdatum oder foreign-born Personen
+  - Für Zahlen, die vor 1990 ausgegeben wurden, kennzeichnen die siebte und die achte Ziffer den Geburtsort oder die im Ausland geborenen Personen.
     
-  - Die Ziffer in der neunten Position gibt Geschlecht nach entweder ungerade für männlich oder sogar Weiblich
+  - Die Ziffer in der neunten Position gibt an, dass Geschlecht entweder ungerade für männlich oder sogar für weiblich ist.
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1945,13 +1945,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_sweden_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_sweden_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_sweden_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_sweden_eu_tax_file_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_sweden_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_sweden_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1966,53 +1966,53 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
 
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-Steuernummer
+USt-ID-Nummer
   
 tax identification
 
   
-Tax Identification #
+USt-Identifikationsnummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Tax #
+Steuer
   
-Taxid #
+getaxit #
   
-Tax-Datei
+Steuerdatei
   
-Steuern Sie Datei nicht.
+Steuerdatei Nr.
   
-Persönliche Id-Nummer
+persönliche ID-Nummer
   
-Skatt-Id-nummer
+Skate ID Nummer
   
-Skatt identifikation
+Skate Identifikation
   
-personnummer
+PERSONNUMMER
   
-## <a name="uk"></a>GROßBRITANNIEN
+## <a name="uk"></a>UK
 
 ### <a name="format"></a>Format
 
-Eindeutige Steuernummer-Referenz (UTR): 10 Ziffern ohne Leerzeichen und Trennzeichen
+Eindeutige Steuerzahler-Referenz (UTR): 10 Ziffern ohne Leerzeichen und Abgrenzungen
   
-Sozialversicherungsnummer (NINO): Weitere Informationen hierzu finden Sie im Abschnitt "Großbritannien National Insurance Anzahl (NINO)" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+National Insurance Number (NINO): Weitere Informationen finden Sie im Abschnitt "UK National Insurance Number (NINO)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Muster
 
-Eindeutige Steuernummer-Referenz (UTR): 10 Ziffern
+Eindeutige Steuerzahler-Referenz (UTR): 10 Ziffern
   
-Sozialversicherungsnummer (NINO): Weitere Informationen hierzu finden Sie im Abschnitt "Großbritannien National Insurance Anzahl (NINO)" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+National Insurance Number (NINO): Weitere Informationen finden Sie im Abschnitt "UK National Insurance Number (NINO)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2022,9 +2022,9 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_uk_eu_tax_file_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_uk_eu_tax_file_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_uk_eu_tax_file_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_uk_eu_tax_file_number` aus wurde gefunden. 
     
 ```
  <!-- EU Tax File Number -->
@@ -2036,31 +2036,31 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
 
   
-Steuernummer nicht.
+USt-ID-Nr.
   
-Steuernummer
+USt-ID-Nummer
   
 tax identification
 
   
-Tax Identification #
+USt-Identifikationsnummer
   
-Steuern Sie Nein.
+Steuernummer
   
-Tax #
+Steuer
   
-Taxid #
+getaxit #
   
-Tax-Datei
+Steuerdatei
   
-Steuern Sie Datei nicht.
+Steuerdatei Nr.
   
 ## <a name="see-also"></a>Siehe auch
 

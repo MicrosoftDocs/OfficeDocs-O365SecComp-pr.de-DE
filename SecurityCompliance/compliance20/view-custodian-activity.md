@@ -1,12 +1,12 @@
 ---
-title: Ansicht Verwaltungsberechtigter Audit-Aktivität
+title: Anzeigen der Depotbank-Überwachungsaktivität
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,91 +14,91 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: eb32b465fa10f6236ffe00db255c89e33ce7412d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706146"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213735"
 ---
-# <a name="view-custodian-audit-activity"></a>Ansicht Verwaltungsberechtigter Audit-Aktivität
+# <a name="view-custodian-audit-activity"></a>Anzeigen der Depotbank-Überwachungsaktivität
 
-Erforderlich, um zu ermitteln, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus dem Postfach gelöscht? Erweiterte eDiscovery (Preview) ist jetzt in der vorhandenen Audit Log Suchfunktion in die & Security Compliance Center integriert. Verwenden diese eingebetteten Erfahrung, können des erweiterten eDiscovery (Preview) Verwaltungsberechtigter-Verwaltungstools Sie um Ihre Untersuchung zu vereinfachen, indem auf einfache Weise den Zugriff auf und suchen die Aktivität für Verwalter innerhalb der Fall.
+Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? Advanced eDiscovery (Preview) ist jetzt in das vorhandene Überwachungsprotokoll-Such Tool im Security & Compliance Center integriert. Mithilfe dieser eingebetteten Benutzeroberfläche können Sie das Tool für die Verwaltung der erweiterten eDiscovery-Daten (Vorschau) verwenden, um Ihre Untersuchung zu erleichtern, indem Sie einfach auf die Aktivitäten für Verwalter in Ihrem Fall zugreifen und diese durchsuchen.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen die Rolle des Kontaktobjekts überwachen Protokolle oder Protokolle überwachen im Exchange Online um das Office 365-Überwachungsprotokoll durchsuchen zugewiesen werden. Standardmäßig werden diese Rollen Organization Management Rollengruppen auf der Seite Berechtigungen in der Exchange-Verwaltungskonsole und der Verwaltung der Richtlinientreue zugewiesen. Wenn einem Benutzer die Möglichkeit, die das Überwachungsprotokoll erweiterte eDiscovery (Preview) mit der Mindestmaß an Privilegien durchsuchen übergeben möchten, erstellen eine benutzerdefinierte Rollengruppe in Exchange Online, die Kontaktobjekts überwachen Protokolle oder Protokolle überwachen Rolle hinzufügen und fügen Sie dann den Benutzer als Mitglied der neuen Rolle g Wiederherstellen. Weitere Informationen finden Sie unter Verwalten von Rollengruppen in Exchange Online.
+Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" verfügen, um das Office 365-Überwachungsprotokoll durchsuchen zu können. Diese Rollen werden standardmäßig den Rollengruppen "Compliance-Verwaltung" und "Organisationsverwaltung" auf der Seite "Berechtigungen" im Exchange Admin Center zugewiesen. Um einem Benutzer die Möglichkeit zu geben, das erweiterte eDiscovery (Preview)-Überwachungsprotokoll mit den Mindestberechtigungen zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Überwachungsprotokolle oder Überwachungsprotokoll Rollen hinzufügen und den Benutzer dann als Mitglied der neuen Rolle GR hinzufügen. OUP. Weitere Informationen finden Sie unter Verwalten von Rollengruppen in Exchange Online.
 
 > [!IMPORTANT]
-> Wenn Sie einem Benutzer die Rolle Kontaktobjekts überwachen Protokolle oder Protokolle überwachen auf der Seite Berechtigungen in der & Security Compliance Center zuweisen, werden sie kann nicht auf das Office 365-Überwachungsprotokoll durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuzuweisen. Dies ist, da das zugrunde liegende-Cmdlet verwendet, um das Überwachungsprotokoll durchsuchen Exchange Online-Cmdlet ist.
+> Wenn Sie einem Benutzer die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite "Berechtigungen" im Security & Compliance Center zuweisen, können Sie das Office 365-Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Dies liegt daran, dass das zugrunde liegende Cmdlet zum Durchsuchen des Überwachungsprotokolls ein Exchange Online-Cmdlet ist.
 
-## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>Schritt 1: Erstellen einer erweiterten eDiscovery (Preview) Audit Log-Suche
+## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>Schritt 1: Erstellen einer erweiterten eDiscovery (Preview)-Überwachungsprotokoll Suche
 
-   1. Wählen Sie eine vorhandene Anfrage aus der **Sicherheit & Compliance Center > erweiterte eDiscovery (Preview)**.
+   1. Wählen Sie im **Security _AMP_ Compliance Center _GT_ Advanced eDiscovery (Preview)** einen vorhandenen Fall aus.
    
-   2. Navigieren Sie zur Registerkarte **Verwalter** , und wählen Sie ein Verwaltungsberechtigter.
+   2. Navigieren Sie zur Registerkarte **Depotverwalter** , und wählen Sie eine Depotbank aus.
    
-   3. Wenn Sie ein Verwaltungsberechtigter ausgewählt haben, klicken Sie auf **Ansicht Verwaltungsberechtigter Aktivität** aus dem Detailbereich.
+   3. Nachdem Sie eine Depotbank ausgewählt haben, klicken Sie im Detailbereich auf **Depot Aktivität anzeigen** .
    
    4. Konfigurieren Sie die folgenden Suchkriterien:
       
-      a. **Aktivitäten** - klicken Sie auf die Dropdown-Liste die Aktivitäten angezeigt werden sollen, denen Sie für suchen können. Nachdem die Suche ausgeführt wurde, werden nur die Audit-Datensätze für die ausgewählten Aktivitäten angezeigt. Auswählen der **Ergebnisse für alle Aktivitäten anzeigen** zeigt Ergebnisse für alle Aktivitäten, die die anderen Suchkriterien erfüllen.
+      a. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
       
-      b. **Startdatum und Enddatum** – wählen Sie einen Bereich Datum und Uhrzeit, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten. Die letzten sieben Tagen sind standardmäßig aktiviert. Datum und Uhrzeit werden in koordinierter Weltzeit (UTC) Format angezeigt. Der maximale Zeitraum, den Sie angeben können, ist ein Jahr.
+      b. **Start-und Enddatum** – wählen Sie einen Datums-und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Datum und Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Zeitraum, den Sie angeben können, beträgt ein Jahr.
       
-      c. **Verwalter** - klicken Sie in diesem Feld und wählen Sie ein bestimmtes Verwaltungsberechtigter anzuzeigenden Suche Ergebnisse für die. Audit-Einträge für die ausgewählten Aktivitäten, die von den Benutzern, die Sie in dieses Feld auswählen, werden in der Liste der Ergebnisse angezeigt.
+      c. **Verwalter** – klicken Sie in dieses Feld, und wählen Sie einen bestimmten Verwalter aus, für den Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern, die Sie in diesem Feld ausgewählt haben, ausgeführt werden, werden in der Ergebnisliste angezeigt.
     
-    1. Klicken Sie auf **Suche** zum Ausführen der Suche mit den Suchkriterien. Die Suchergebnisse werden geladen, und werden sie nach einigen Augenblicken unter Ergebnisse angezeigt, auf der Seite Verwaltungsberechtigter Aktivitäten. 
+    1. Klicken Sie auf **Suchen** , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach ein paar Augenblicken werden Sie unter Ergebnisse auf der Such Seite der Depotbank-Aktivitäten angezeigt. 
 
-## <a name="step-2-view-the-audit-log-search-results"></a>Schritt 2: Anzeigen der Audit Log der Suchergebnisse
+## <a name="step-2-view-the-audit-log-search-results"></a>Schritt 2: Anzeigen der Suchergebnisse des Überwachungsprotokolls
 
-Die Ergebnisse einer Audit Log Suche werden auf der Seite Verwaltungsberechtigter überwachen Protokoll unter Ergebnisse angezeigt. Maximal 5.000 (neu) Ereignisse werden in Schritten von 150 Ereignisse angezeigt. Zum Anzeigen von mehr Ereignisse können Sie im Ergebnisbereich die Bildlaufleiste oder drücken Sie UMSCHALT + Ende, um die nächsten 150 Ereignisse anzuzeigen.
+Die Ergebnisse einer Überwachungsprotokoll Suche werden unter Ergebnisse auf der Seite Depot Überwachungsprotokoll angezeigt. Maximal 5.000 (neueste) Ereignisse werden in Schritten von 150 Ereignissen angezeigt. Um weitere Ereignisse anzuzeigen, können Sie die Bildlaufleiste im Ergebnisbereich verwenden, oder Sie können Umschalt + Ende drücken, um die nächsten 150-Ereignisse anzuzeigen.
 
-Die Ergebnisse enthalten die folgende Informationen zu jedem Ereignis, das von der Suche zurückgegebenen.
-- **Datum**: Datum und Uhrzeit (in UTC-Format), die das Ereignis auftrat.
+Die Ergebnisse enthalten die folgenden Informationen zu jedem von der Suche zurückgegebenen Ereignis.
+- **Datum**: das Datum und die Uhrzeit (im UTC-Format), als das Ereignis aufgetreten ist.
 
-- **IP-Adresse**: die IP-Adresse des Geräts, das verwendet wurde, wenn die Aktivität protokolliert wurde. Die IP-Adresse wird in ein IPv4 oder IPv6-Adressformat angezeigt.
+- **IP-Adresse**: die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird in einem IPv4-oder IPv6-Adressformat angezeigt.
 
-- **Benutzer**: die Benutzer (oder ein Dienstkonto), die die Aktion, die das Ereignis ausgelöst hat ausgeführt.
+- **Benutzer**: der Benutzer (oder das Dienstkonto), der die Aktion ausgeführt hat, die das Ereignis ausgelöst hat.
 
-- **Aktivität**: die Aktivitäten des Benutzers. Dieser Wert entspricht der Aktivitäten, die Sie in der Dropdownliste Aktivitäten ausgewählt haben. Für ein Ereignis aus dem Exchange Admin-Überwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet.
+- **Activity**: die vom Benutzer ausgeführte Aktivität. Dieser Wert entspricht den Aktivitäten, die Sie in der Dropdownliste Aktivitäten ausgewählt haben. Bei einem Ereignis aus dem Exchange-administratorüberwachungsprotokoll ist der Wert in dieser Spalte ein Exchange-Cmdlet.
 
-- **Artikel**: das Objekt, das erstellt oder als Ergebnis der entsprechenden Aktivität geändert wurde. Die Datei, die angezeigt oder geändert wurde oder das Benutzerkonto, das aktualisiert wurde. Nicht alle Aktivitäten haben einen Wert in dieser Spalte.
+- **Item**: das Objekt, das als Ergebnis der entsprechenden Aktivität erstellt oder geändert wurde. Beispielsweise die Datei, die angezeigt oder geändert wurde, oder das Benutzerkonto, das aktualisiert wurde. Nicht alle Aktivitäten haben einen Wert in dieser Spalte.
 
-- **Detail**: Weitere Informationen zur Aktivität. In diesem Fall müssen nicht alle Aktivitäten einen Wert.
+- **Detail**: Weitere Details zu einer Aktivität. Auch hier haben nicht alle Aktivitäten einen Wert.
 
-## <a name="step-3-filter-the-search-results"></a>Schritt 3: Filtern von Suchergebnissen
+## <a name="step-3-filter-the-search-results"></a>Schritt 3: Filtern der Suchergebnisse
 
-Zusätzlich zum Sortieren, können Sie auch die Ergebnisse einer Audit Log Suche filtern. Dies hilft schnell Filtern der Ergebnisse für einen bestimmten Benutzer oder eine Aktivität. 
+Zusätzlich zur Sortierung können Sie auch die Ergebnisse einer Überwachungsprotokoll Suche filtern. Auf diese Weise können Sie die Ergebnisse für einen bestimmten Benutzer oder eine bestimmte Aktivität schnell filtern. 
 
-Um die Ergebnisse zu filtern:
+So filtern Sie die Ergebnisse
 
- 1. Erstellen und Ausführen einer Audit Log-Suche.
+ 1. Erstellen und Ausführen einer Überwachungsprotokoll Suche.
   
 2. Wenn die Ergebnisse angezeigt werden, klicken Sie auf **Ergebnisse filtern**.
  
-3. Schlüsselwort-Felder werden unter jeder Spaltenüberschrift angezeigt.
+3. Stichwort Felder werden unter jeder Spaltenüberschrift angezeigt.
   
-4. Klicken Sie auf eines der Felder unter eine Spaltenüberschrift, und geben Sie ein Wort oder Ausdruck, je nach der Spalte, der Sie filtern möchten. Die Ergebnisse werden dynamisch textlichen, um die Ereignisse anzuzeigen, die den Filter entsprechen.
+4. Klicken Sie auf eines der Felder unter einer Spaltenüberschrift, und geben Sie je nach der Spalte, nach der gefiltert werden soll, ein Wort oder einen Ausdruck ein. Die Ergebnisse werden dynamisch angepasst, um die Ereignisse anzuzeigen, die dem Filter entsprechen.
   
-5. Um einen Filter zu löschen, klicken Sie auf das **X** im Filterfeld, oder klicken Sie einfach auf **Filtern ausblenden**.
+5. Wenn Sie einen Filter löschen möchten, klicken Sie im Feld Filter auf das **X** , oder klicken Sie einfach auf **Filterung ausblenden**.
 
-## <a name="export-the-search-results-to-a-file"></a>Die Suchergebnisse in eine Datei exportieren
+## <a name="export-the-search-results-to-a-file"></a>Exportieren der Suchergebnisse in eine Datei
 
-Sie können die Ergebnisse einer Audit Log-Suche in einer durch Trennzeichen getrennten Werten (CSV)-Datei auf Ihrem lokalen Computer exportieren. Sie können diese Datei in Microsoft Excel öffnen und verwenden Features wie beispielsweise die Suche, sortieren, Filtern und Aufteilen einer einzelnen Spalteninhalts (die Zellen mit mehreren Werte enthält) in mehreren Spalten.
+Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei (Comma Separated Value) auf Ihrem lokalen Computer exportieren. Sie können diese Datei in Microsoft Excel öffnen und Features wie suchen, sortieren, Filtern und Aufteilen einer einzelnen Spalte (die mehrwertige Zellen enthält) in mehrere Spalten verwenden.
 
-1. Führen Sie eine Audit Log-Suche, und Überarbeiten Sie die Suchkriterien, bis Sie die gewünschten Ergebnisse haben.
+1. Führen Sie eine Überwachungsprotokoll Suche aus, und überprüfen Sie dann die Suchkriterien, bis Sie die gewünschten Ergebnisse erhalten haben.
   
-2. Klicken Sie auf Exportergebnisse, und wählen Sie eine der folgenden Optionen aus:
+2. Klicken Sie auf Ergebnisse exportieren, und wählen Sie eine der folgenden Optionen aus:
 
-    - **Speichern geladen Ergebnisse:** Wählen Sie diese Option, um nur die Einträge zu exportieren, die auf der Seite **Verwaltungsberechtigter Audit Log Suche** unter **Ergebnisse** angezeigt werden. Die CSV-Datei, die heruntergeladen wird enthält dieselben Spalten (und Daten) angezeigt, auf der Seite (Datum, Benutzer, Aktivität, Artikel und Details). Eine weitere Spalte (mit dem Titel **Weitere**) ist in der CSV-Datei enthalten, die Informationen aus dem Überwachungseintrag Protokoll enthält. Da Sie die gleichen Ergebnisse exportieren, die geladen (und angezeigt werden können) sind auf der Seite Audit Log Suche maximal 5.000 Einträge werden exportiert.
+    - **Gespeicherte Ergebnisse speichern:** Wählen Sie diese Option aus, um nur die Einträge zu exportieren, die auf der Suchseite des **Depot Überwachungsprotokolls** unter **Ergebnisse** angezeigt werden. Die heruntergeladene CSV-Datei enthält die gleichen Spalten (und Daten), die auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). Eine weitere Spalte ( **mehr**Titel) ist in der CSV-Datei enthalten, die weitere Informationen aus dem Überwachungsprotokolleintrag enthält. Da Sie die gleichen Ergebnisse exportieren, die auf der Seite Überwachungsprotokoll Suche geladen (und angezeigt) werden, werden maximal 5.000 Einträge exportiert.
         
-    - **Alle Ergebnisse herunterladen:** Wählen Sie diese Option, um alle Einträge aus dem Office 365-Überwachungsprotokoll, die die Suchkriterien erfüllen exportieren. Wählen Sie für eine große Gruppe von Suchergebnissen diese Option, um alle Einträge aus dem Überwachungsprotokoll zusätzlich zu den 5000 Ergebnisse herunterladen, die auf der Seite **Verwaltungsberechtigter Audit Log** angezeigt werden kann. Diese Option wird die Rohdaten in eine CSV-Datei aus dem Überwachungsprotokoll herunterladen und enthält zusätzliche Informationen aus dem Überwachungseintrag melden Sie sich in einer Spalte mit dem Namen AuditData. Länger kann dauern, die Datei herunterzuladen, wenn Sie diese Exportoption auswählen, da die Datei wesentlich größer als der sein kann, die heruntergeladen wird, wenn Sie die Option andere ausgewählt.
+    - **Alle Ergebnisse herunterladen:** Wählen Sie diese Option aus, um alle Einträge aus dem Office 365-Überwachungsprotokoll zu exportieren, die den Suchkriterien entsprechen. Wählen Sie diese Option aus, um eine Vielzahl von Suchergebnissen aus dem Überwachungsprotokoll herunterzuladen, zusätzlich zu den 5.000-Ergebnissen, die auf der Suchseite des **Depot Überwachungsprotokolls** angezeigt werden können. Mit dieser Option werden die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen und zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte mit dem Namen AuditData. Es kann länger dauern, bis Sie die Datei herunterladen, wenn Sie diese Exportoption wählen, da die Datei viel größer sein kann als diejenige, die heruntergeladen wird, wenn Sie die Option andere auswählen.
     
       > [!IMPORTANT]
-      > Sie können maximal 50.000 Einträge aus einer einzigen Audit Log-Suche in einer CSV-Datei herunterladen. Wenn 50.000 Einträge in der CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es sind mehr als 50.000 Ereignisse, die die Suchkriterien erfüllen. Wenn mehr als diese Grenze exportieren möchten, verwenden Sie einen Datumsbereich zur Reduzierung der Anzahl von Überwachungsprotokolleinträgen. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereiche für mehr als 50.000 Einträge exportieren durchgeführt werden.
+      > Sie können maximal 50.000 Einträge in eine CSV-Datei aus einer einzelnen Überwachungsprotokoll Suche herunterladen. Wenn 50.000-Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es mehr als 50.000 Ereignisse gibt, die die Suchkriterien erfüllen. Wenn Sie mehr als diesen Grenzwert exportieren möchten, verwenden Sie einen Datumsbereich, um die Anzahl der Überwachungsprotokolleinträge zu reduzieren. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereichen ausführen, um mehr als 50.000 Einträge zu exportieren.
         
 
-3. Nach der Auswahl einer Exportoption von wird eine Meldung am unteren Rand des Fensters angezeigt, die aufgefordert, öffnen Sie die CSV-Datei, speichern Sie die Downloads-Ordner oder in einen bestimmten Ordner zu speichern
+3. Nachdem Sie eine Exportoption ausgewählt haben, wird unten im Fenster eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen, im Ordner "Downloads" zu speichern oder in einem bestimmten Ordner zu speichern.
 
-Weitere Informationen zum Anzeigen filtern oder Exportieren von Suchergebnissen aus Audit Log, finden Sie unter [Suchen der Überwachungsprotokolle melden Sie sich bei der Sicherheit in Office 365 & Compliance Center](../search-the-audit-log-in-security-and-compliance.md).
+Weitere Informationen zum Anzeigen, Filtern oder Exportieren von Überwachungsprotokoll-Suchergebnissen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security _AMP_ Compliance Center](../search-the-audit-log-in-security-and-compliance.md).

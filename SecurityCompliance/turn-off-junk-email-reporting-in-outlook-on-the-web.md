@@ -1,60 +1,60 @@
 ---
-title: Deaktivieren der junk-e-Berichte in Outlook im Web
+title: Deaktivieren von Junk-e-Mail-Berichten in Outlook im Web
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2015
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
-description: Als ein Office 365-Administrator können Sie die Möglichkeit für die Personen auf Bericht e-Mails als Junk-e-deaktivieren.
-ms.openlocfilehash: 8ee5ff87408b80c443e4cf950ce49f624096becb
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Als Office 365-Administrator können Sie die Möglichkeit für Personen, e-Mails als Junk-e-Mails zu melden, deaktivieren.
+ms.openlocfilehash: 4c84ae6b92658d045675fd8e8ffe6a6cff516886
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272040"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213915"
 ---
-# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Deaktivieren der junk-e-Berichte in Outlook im Web
+# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Deaktivieren von Junk-e-Mail-Berichten in Outlook im Web
 
-Sie können für die Analyse mithilfe der Outlook auf das Web junk-e-Optionen, reporting, wie beschrieben in den [junk-e-Bericht und Phishing-Mails in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)Junk, Phishing und nicht-junknachrichten an Microsoft senden. Wenn Sie keine dieser Optionen verwenden möchten, können Administratoren diese über das Cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) deaktivieren. 
+Sie können Junk-, Phishing-und nicht-Junk-e-Mail-Nachrichten mithilfe der Optionen Outlook im Web (früher als Outlook Web App bezeichnet) Junk-Email-Berichterstellung an Microsoft senden, wie in [Bericht Junk-e-Mail und Phishing-Scams in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)beschrieben. Wenn Sie diese Optionen nicht verwenden möchten, können Administratoren Sie über das Cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) deaktivieren. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 <a name="sectionSection0"> </a>
 
-- Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
+- Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
     
-- Sie müssen Berechtigungen zugewiesen werden, bevor Sie dieses Verfahren oder Verfahren ausführen können. Welche Berechtigungen Sie benötigen, finden Sie unter den Eintrag "Outlook Web App-Postfachrichtlinien" im Thema [Outlook Web App-Berechtigungen](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
-    
-- Vor dem Ausführen der Cmdlets zum Deaktivieren von Berichten zur junk-e-Mail-erforderlich sind, kann es hilfreich sein, lesen Sie die Informationen in den Themen [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) und [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) sein. 
-    
-## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Schalten Sie junk, Phishing und keine Junk-Mails an Microsoft
+- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Outlook im Web-Postfachrichtlinien" im Thema [Outlook im Web Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
+
+- Informationen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Deaktivieren von Junk-, Phishing-und nicht Junk-Berichterstellung an Microsoft
 <a name="sectionSection1"> </a>
 
-Führen Sie zuerst das folgende Cmdlet aus, um die virtuellen Verzeichnisse abzurufen, für die Sie die Meldung deaktivieren möchten:
+Führen Sie zunächst den folgenden Befehl aus, um die Namen der verfügbaren Outlook im Web-Postfachrichtlinien abzurufen:
   
 ```
-Get-OwaMailboxPolicy -Identity <parameter>
+Get-OwaMailboxPolicy | Format-Table Name
 ```
 
-Führen Sie dann das folgende Cmdlet aus, um die Meldung von Junk- und Nicht-Junk-E-Mails an Microsoft zu deaktivieren:
+Verwenden Sie als nächstes die folgende Syntax, um Junk-und nicht Junk-Berichte zu Microsoft in Outlook im Web zu aktivieren oder zu deaktivieren:
   
 ```
-Set-OwaMailboxPolicy -Identity <parameter> -ReportJunkEmailEnabled $false
+Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
 ```
 
-Mit dem folgenden Cmdlet wird beispielsweise die Meldung für das virtuelle Verzeichnis "Contoso\owa" deaktiviert:
+In diesem Beispiel wird die Berichterstellung in der Outlook Web App-Standardpostfachrichtlinie deaktiviert:
   
 ```
-Set-OwaMailboxPolicy -Identity Default -ReportJunkEmailEnabled $false
+Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
 ```
+
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) und [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).
 
 ## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 <a name="sectionSection2"> </a>
 
-Führen Sie Get-OWAMailboxPolicy, um die Parameterwerte zu prüfen und dann Outlook im Web zugreifen, und stellen Sie sicher, dass die Optionen zum Melden von Junk-e-, Phishing, und nicht auf Junk-e-nicht verfügbar sind. Sie werden möglicherweise trotzdem Nachrichten als Junk-e-, Phishing markieren und keine Junk-e-, aber nicht möglich, diese zu melden. 
-  
-
+Führen Sie **Get-OwaMailboxPolicy** aus, um die Parameterwerte zu überprüfen, und öffnen Sie dann Outlook im Web für einen betroffenen Benutzer (auf den die Outlook in der Web-Postfachrichtlinie angewendet wurde), und stellen Sie sicher, dass die Optionen zum Melden von Junk-, Phishing-und nicht Junk-e-Mails nicht verfügbar sind. Sie können Nachrichten weiterhin als Junk-e-Mail, als Phishing und nicht als Junk markieren, aber Sie können Sie nicht melden. 

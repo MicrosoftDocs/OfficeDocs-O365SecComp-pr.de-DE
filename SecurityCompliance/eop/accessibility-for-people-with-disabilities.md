@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für jeden möglichst einfach zu gestalten.
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026212"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206378"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Barrierefreiheit für Personen mit Einschränkungen
 
@@ -25,11 +25,11 @@ ms.locfileid: "22026212"
 
 Die folgenden Funktionen erleichtern Personen mit Behinderungen den Zugriff auf Microsoft Exchange:
   
-- [Tastenkombinationen in Exchange 2013 Preview](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Tastenkombinationen in Exchange Server](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [Tastenkombinationen in Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [Tastenkombinationen in Outlook im Web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-Darüber hinaus können einige Eingabehilfen und Dienstprogramme von Windows Exchange-Benutzer mit behinderungen profitieren. Darüber hinaus Windows PowerShell Größe und Farbe Änderungen Eingabehilfen der Exchange-Verwaltungsshell nutzen können. Weitere Informationen zu Windows PowerShell-Eingabehilfen finden Sie unter [Eingabehilfen in Windows PowerShell 2.0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+Darüber hinaus können einige Barrierefreiheitsfunktionen und Windows-Dienstprogramme Exchange-Benutzern mit Behinderungen zugute kommen. Außerdem bieten Windows PowerShell-Größen-und Farbänderungen bei Verwendung der Exchange-Verwaltungsshell Eingabehilfen. Weitere Informationen zu den verfügbaren Windows PowerShell-Optionen finden Sie unter [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Barrierefreiheitsfunktionen von Exchange Help
 

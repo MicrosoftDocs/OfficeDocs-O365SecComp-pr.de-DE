@@ -1,46 +1,31 @@
 ---
-title: Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
-description: Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren.
-ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875797"
+Title: "Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP" MS. Author: krowley Author: kccross Manager: laurawi ms. Audience: ITPro ms. Topic: article ms. Service: O365-seccomp ms. Custom: TN2DMC-localization_priority: Standard Search. appverid:
+- MET150 ms. Asset-Nr.: e9947db5-1dd1-4493-872d-7362b24c7ba0 ms. Collection:
+    - M365-Security-Compliance Description: "Sie können Endbenutzer-Spambenachrichtigungen für die standardmäßige unternehmensweite Inhaltsfilter Richtlinie oder für benutzerdefinierte Inhaltsfilter Richtlinien konfigurieren, die auf Domänen angewendet werden."
 ---
+
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
   
 > [!IMPORTANT]
-> Dieses Thema ist für Exchange Online Protection (EOP) Standalone-Kunden, die lokalen Postfächer geschützt werden. Exchange Online-Postfächer schützen Kunden sollten stattdessen das folgende Thema lesen: [Configure End-User Spam-Benachrichtigungen in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+> Dieses Thema richtet sich an eigenständige Exchange Online Protection (EOP)-Kunden, die lokale Postfächer schützen. Exchange Online-Kunden, die in der Cloud gehostete Postfächer schützen, sollten stattdessen das folgende Thema lesen: [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
 Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren. Wenn Sie Spambenachrichtigungen für Endbenutzer aktivieren, können Ihre Endbenutzer ihre Nachrichten in der Spamquarantäne selbst verwalten. Spambenachrichtigungen für Endbenutzer können nicht bei Richtlinien angewendet werden, die auf Benutzer oder Gruppen oder eine Richtlinie mit Ausnahmen angewendet werden.
   
 Spambenachrichtigungen für Endbenutzer enthalten eine Liste aller Nachrichten in der Spamquarantäne, die der Endbenutzer in dem von Ihnen konfigurierten Zeitraum (zwischen 1 und 15 Tagen) erhalten hat. Sie können auch die Sprache festlegen, in der die Benachrichtigung geschrieben wird.
   
-Endbenutzer können nach dem Empfang einer Benachrichtigung, aus den folgenden Optionen auswählen:
+Nach dem Empfang einer Benachrichtigung können Endbenutzer aus den folgenden Optionen wählen:
 
-**Vorschau** der Nachricht, wenn Sie eine Vorschau des Inhalts oder der Header vor der Aktion anzeigen möchten.
+Zeigen Sie eine **Vorschau** der Nachricht an, wenn Sie eine Vorschau des Inhalts oder der Kopfzeile vor der Aktion anzeigen möchten.
 
-**Laden Sie** die Nachricht, wenn Sie die Nachricht und Anlagen (falls vorhanden) auf dem Gerät vor der Aktion überprüfen möchten.
+**Laden** Sie die Nachricht herunter, wenn Sie die Nachricht und die Anhänge (falls vorhanden) auf Ihrem Gerät vor der Aktion überarbeiten möchten.
 
-**Version** Wenn die Nachricht ist nicht-Spam- und Office 365 ein, um die Nachricht an Ihr Postfach senden möchten.
+**Release** , wenn es sich bei der Nachricht nicht um Spam handelt und Sie möchten, dass Office 365 die Nachricht an Ihr Postfach sendet.
 
-**Version & Absender zulassen** , wenn die Nachricht ist nicht-Spam- und Office 365 ein, um den Absender Ihrer sicherer Absender und Empfänger für zukünftige e-Mails hinzufügen möchten. Beachten Sie, dass Ihre Admin andere Organisation breit zulassen/blockieren-Konfigurationen, die die Liste der sicheren Absender überschreiben möglicherweise beibehalten.
+**Release _AMP_ Allow Absender** , wenn die Nachricht nicht Spam ist und Sie möchten, dass Office 365 den Absender zur Liste sicherer Absender und Empfänger für zukünftige e-Mails hinzufügt. Denken Sie daran, dass Ihr Administrator möglicherweise andere organisationsweite Allow/Block-Konfigurationen besitzt, die Ihre Liste sicherer Absender außer Kraft setzen.
 
-**Version & Bericht**, wenn die Nachricht Spam und Sie nicht möchten, senden die Nachricht an Ihr Postfach und zur Analyse an Microsoft melden.
+**Veröffentlichen Sie _AMP_ Bericht**, wenn es sich bei der Nachricht nicht um Spam handelt und Sie die Nachricht an Ihr Postfach senden und zu Analyseberichten möchten.
 
-**Blockieren** , wenn Sie Office 365 an den Absender zur Liste blockierter Absender hinzufügen möchten.
+**Blockieren** Wenn Sie möchten, dass Office 365 den Absender zu Ihrer Liste blockierter Absender hinzufügt.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 <a name="sectionSection0"> </a>

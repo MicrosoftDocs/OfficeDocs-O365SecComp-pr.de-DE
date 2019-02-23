@@ -1,25 +1,9 @@
 ---
-title: Häufig gestellte Fragen zum Antispamschutz
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003074"
+Title: "Anti-Spam Protection FAQ" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. Audience: ITPro ms. Topic: article ms. Service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
+- MET150 ms. Asset-Nr.: c534a35d-B121-45da-9d0a-ce738ce51fce ms. Collection:
+    - M365-Security-Compliance Description: "dieses Thema enthält häufig gestellte Fragen und Antworten zum Schutz vor Spam. Die Antworten gelten für Kunden von Microsoft Exchange Online und Exchange Online Protection (EOP). "
 ---
+
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
 Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection. 
@@ -72,9 +56,9 @@ A. Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kei
   
 A. Ja, Sie können beispielsweise einen Spamerkennungsbericht im Office 365 Admin Center abrufen. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
   
-Exchange Online-Kunden: [Monitoring, Reporting, und Verfolgung in Exchange Online-Nachricht](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online-Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Kunden mit Exchange Online Protection: [Berichterstellung und nachrichtenablaufverfolgung in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Exchange Online Protection-Kunden: [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **F. Jemand hat mir eine Nachricht gesendet, aber ich finde sie nicht. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?**
   
@@ -108,7 +92,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
   
 1. **Die Domain des E-Mail-Absenders sollte im DNS aufgelöst werden können.**
     
-    Wenn der Absender user@example.com ist, löst der Domäne example.com beispielsweise in die IP-Adresse 192.0.43.10. Wenn eine sendende Domäne keinen A-Datensatz hat und keine MX-Eintrags in DNS, den Dienst die Nachricht über den höheren Risiko Delivery Pool unabhängig davon leitet, ob der Inhalt der Nachricht Spam ist. Weitere Informationen zu einer höheren Risiko Delivery Pool finden Sie unter [hohem Delivery Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md). 
+    Wenn der Absender beispielsweise user@example.com ist, wird die Domäne example.com in die IP-Adresse 192.0.43.10 aufgelöst. Wenn eine sendende Domäne keinen A-Record und keinen MX-Eintrag in DNS aufweist, leitet der Dienst die Nachricht über Ihren Pool mit höherem Risiko ab, unabhängig davon, ob der Inhalt der Nachricht Spam ist oder nicht. Weitere Informationen zum Pool mit höheren Risiken finden Sie unter [High-Risk-Übermittlungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **Die Absender-IP-Adresse des ausgehenden E-Mail-Servers sollte über einen Reverse-DNS-Eintrag (PTR-Eintrag) verfügen.**
     

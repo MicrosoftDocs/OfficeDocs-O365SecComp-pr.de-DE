@@ -6,25 +6,25 @@ manager: laurawi
 ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
-description: Vergleichen Sie die Optionen zur Verschlüsselung in Office 365, einschließlich Office Message Encryption (OME), S/MIME, (Information Rights Management, IRM) und Informationen zu Transport Layer Security (TLS).
-ms.openlocfilehash: a6db6c9cf6af180fe84e955613fb6b1175ee0747
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Vergleichen Sie die Verschlüsselungsoptionen in Office 365, einschließlich Office-Nachrichtenverschlüsselung (OM), S/MIME, Information Rights Management (IRM), und erfahren Sie mehr über Transport Layer Security (TLS).
+ms.openlocfilehash: 92751bd34a3ff002d53a8b1d088d5d1ac3fcb078
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995356"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213369"
 ---
 # <a name="email-encryption-in-office-365"></a>E-Mail-Verschlüsselung in Office 365
 
-In diesem Artikel vergleicht Optionen zur Verschlüsselung in Office 365, einschließlich Office Message Encryption (OME), S/MIME, (Information Rights Management, IRM) und führt Transport Layer Security (TLS).
+In diesem Artikel werden Verschlüsselungsoptionen in Office 365 mit Office-Nachrichtenverschlüsselung (OM), S/MIME, Information Rights Management (IRM) und die Transport Layer Security (TLS) erläutert.
   
-Office 365 bietet mehrere Optionen können Sie Ihre geschäftlichen Anforderungen für e-Mail-Sicherheit. Dieser Artikel enthält Informationen zu drei Methoden zum Verschlüsseln von e-Mail in Office 365. Wenn Sie weitere Informationen zu allen Sicherheitsfeatures in Office 365 erfahren möchten, besuchen Sie das [Office 365-Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=282470). In diesem Artikel werden die drei Typen der Verschlüsselung für Office 365-Administratoren zur sicheren e-Mail in Office 365 verfügbar eingeführt:
+Office 365 bietet mehrere Verschlüsselungsoptionen, die Ihnen dabei helfen, Ihre geschäftlichen Anforderungen an die e-Mail-Sicherheit zu erfüllen. In diesem Artikel werden drei Möglichkeiten zum Verschlüsseln von e-Mails in Office 365 vorgestellt. Wenn Sie mehr über alle Sicherheitsfunktionen in Office 365 erfahren möchten, besuchen Sie das [office 365 Trust Center](http://go.microsoft.com/fwlink/p/?LinkID=282470). In diesem Artikel werden die drei Arten von Verschlüsselung für Office 365-Administratoren zur Unterstützung von e-Mails in Office 365 vorgestellt:
   
 - Office-Nachrichtenverschlüsselung (Office Message Encryption, OME)
     
@@ -34,37 +34,37 @@ Office 365 bietet mehrere Optionen können Sie Ihre geschäftlichen Anforderunge
     
 ## <a name="what-is-email-encryption-and-how-does-office-365-use-it"></a>Was ist E-Mail-Verschlüsselung, und wie wird sie in Office 365 verwendet?
 
-Verschlüsselung ist der Prozess, mit dem Informationen codiert ist, damit nur autorisierter Empfänger decodieren und die Informationen nutzen kann. Office 365 verwendet eine Verschlüsselung auf zwei Arten: im Dienst und als Steuerelement Customer. In den Dienst wird die Verschlüsselung in Office 365 standardmäßig verwendet. Sie müssen nicht vornehmen. Office 365 wird beispielsweise Transport Layer Security (TLS) verschlüsselt die Verbindung oder Sitzung zwischen zwei Servern verwendet. 
+Verschlüsselung ist der Prozess, mit dem Informationen codiert werden, sodass nur ein autorisierter Empfänger die Informationen decodieren und nutzen kann. Office 365 verwendet Verschlüsselung auf zweierlei Weise: im Dienst und als Kunden Steuerelement. Im Dienst wird die Verschlüsselung in Office 365 standardmäßig verwendet. Sie müssen nichts konfigurieren. Beispielsweise verwendet Office 365 TLS (Transport Layer Security), um die Verbindung zwischen zwei Servern zu verschlüsseln. 
   
-Hier wird die Funktionsweise von e-Mail-Verschlüsselung in der Regel:
+So funktioniert die e-Mail-Verschlüsselung in der Regel:
   
-- Eine Nachricht wird verschlüsselt oder von nur-Text in darstellbare verschlüsselten, auf dem Computer des Senders oder von einem zentralen Server umgewandelt wird, während die Nachricht während der Übertragung ist.
+- Eine Nachricht wird verschlüsselt oder aus nur-Text in unlesbar verschlüsselte Chiffre, entweder auf dem Computer des Absenders oder von einem zentralen Server, während die Nachricht übermittelt wird.
     
-- Die Nachricht verbleibt in verschlüsselten Text, während sie während der Übertragung ist, um es geschützt, gelesen, für den Fall, dass die Nachricht abgefangen wird.
+- Die Nachricht verbleibt während der Übertragung in einem verschlüsselten Text, um Sie beim Abfangen der Nachricht zu schützen.
     
 - Nachdem die Nachricht vom Empfänger empfangen wurde, wird sie mit einer der folgenden zwei Methoden wieder in lesbaren Nur-Text umgewandelt:
     
-  - Dem Computer des Empfängers verwendet einen Schlüssel zum Entschlüsseln der Nachricht oder
+  - Der Computer des Empfängers verwendet einen Schlüssel zum Entschlüsseln der Nachricht oder
     
-  - Ein zentraler Server entschlüsselt die Nachricht im Auftrag des Empfängers nach Überprüfung der Identität des Empfängers.
+  - Ein zentraler Server entschlüsselt die Nachricht im Namen des Empfängers, nachdem die Identität des Empfängers überprüft wurde.
     
-Weitere Informationen wie Office 365-Kommunikation zwischen Servern sichert verwendet wie zwischen Organisationen in Office 365 oder zwischen Office 365 und einen vertrauenswürdigen Geschäftspartner außerhalb von Office 365, finden Sie unter [wie Exchange Online TLS, um sichere e-Mail Verbindungen in Office 365](exchange-online-uses-tls-to-secure-email-connections.md).
+Weitere Informationen dazu, wie Office 365 die Kommunikation zwischen Servern sichert, beispielsweise zwischen Organisationen in Office 365 oder zwischen Office 365 und einem vertrauenswürdigen Geschäftspartner außerhalb von Office 365, finden Sie unter [how Exchange Online TLS to Secure Email Verbindungen in Office 365](exchange-online-uses-tls-to-secure-email-connections.md).
   
-In diesem Video wird eine Einführung in die [Verschlüsselung in Office 365](https://www.youtube.com/watch?v=KmfxCd5ublI).
+Sehen Sie sich dieses Video an, um eine Einführung in die [Verschlüsselung in Office 365](https://www.youtube.com/watch?v=KmfxCd5ublI)zu erfahren.
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Vergleichen der in Office 365 verfügbaren E-Mail-Verschlüsselungsoptionen
 
-||        ![Konzeptionelle Grafik, die OME beschreibt.](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![Konzeptionelle Grafik, die IRM beschreibt.](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![Konzeptionelle Grafik, die SMIME beschreibt.](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
+||![Konzeptionelle Grafik, die OME beschreibt.](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![Konzeptionelle Grafik, die IRM beschreibt.](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![Konzeptionelle Grafik, die SMIME beschreibt.](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
 |:-----|:-----|:-----|:-----|
-|Was ist das?  <br/> |Office 365-Nachrichtenverschlüsselung (Office Message Encryption, OME) ist ein Dienst, der auf Azure Rights Management (Azure RMS) aufbaut und mit dem Sie verschlüsselte E-Mails an Personen innerhalb oder außerhalb Ihrer Organisation senden können, unabhängig von der E-Mail-Zieladresse (Gmail, Yahoo! Mail, Outlook.com usw.).  <br/> Als Administrator können Sie Transportregeln einrichten, die die Bedingungen für die Verschlüsselung definieren. Wenn ein Benutzer eine Nachricht sendet, die mit einer Regel übereinstimmt, wird die Verschlüsselung automatisch angewendet.  <br/> Zum Anzeigen von verschlüsselter Nachrichten Empfänger können entweder eine einmalige Kennung, melden Sie sich mit einem Microsoft-Konto oder melden Sie sich mit einem Arbeit erhalten möchten, oder Schule mit Office 365-Konto. Empfänger können verschlüsselte Antworten auch senden. Sie benötigen kein Office 365-Abonnement zu verschlüsselte Nachrichten senden oder verschlüsselte Antworten.  <br/> |IRM ist eine Verschlüsselungslösung, die auch Nutzungseinschränkungen auf E-Mail-Nachrichten anwendet. Mit dieser Lösung können Sie verhindern, dass vertrauliche Informationen von nicht autorisierten Personen gedruckt, weitergeleitet oder kopiert werden.  <br/> IRM-Funktionen in Office 365 verwenden Azure Rights Management (Azure RMS). 
-  <br/> |S/MIME ist eine Verschlüsselung zertifikatbasierte-Lösung, mit dem Sie sowohl verschlüsseln eine Nachricht digital signieren. Die Verschlüsselung von Nachrichten wird sichergestellt, dass nur der beabsichtigte Empfänger öffnen und die Nachricht lesen kann. Die digitale Signatur kann den Empfänger die Identität des Absenders zu überprüfen.  <br/> Digitale Signaturen und Nachrichtenverschlüsselung werden durch Verwendung eindeutiger digitaler Zertifikate ermöglicht, die die Schlüssel für das Überprüfen von digitalen Signaturen und das Verschlüsseln oder Entschlüsseln von Nachrichten enthalten.  <br/> Verwendung von S/MIME, benötigen Sie öffentliche Schlüssel für jeden Empfänger auf Datei. Empfänger müssen ihre eigenen privaten Schlüssel verwalten die dauerhaft gesichert werden müssen. Wenn der private Schlüssel des Empfängers gefährdet sind, muss der Empfänger zum Abrufen eines neuen privaten Schlüssels und öffentlichen Schlüssel an alle Absender potenzielle verteilen.  <br/> |
-|Vorhandene Funktionen  <br/> | OME:  <br/>  Verschlüsselt Nachrichten, die an interne oder externe Empfänger gesendet werden.  <br/>  Ermöglicht Benutzern das Senden verschlüsselter Nachrichten an beliebige E-Mail-Adressen, einschließlich Outlook.com, Yahoo! Mail und Gmail.  <br/>  Ermöglicht es Ihnen, als Administrator, zu die anzeigeportal entsprechend Ihrer Organisation Marke e-Mail anpassen.  <br/>  Microsoft sicher verwaltet und speichert die Schlüssel, damit Sie auf nicht.  <br/>  Es ist keine spezielle clientseitige Software erforderlich, sofern die verschlüsselte Nachricht (als HTML-Anlage gesendet) in einem Browser geöffnet werden kann.  <br/> | IRM:  <br/>  Verwendet Verschlüsselung und Nutzungsbeschränkungen, um Online- und Offlineschutz für E-Mail-Nachrichten und Anlagen bereitzustellen.  <br/>  Gibt Ihnen als Administrator die Möglichkeit, Transportregeln oder Outlook-Schutzregeln einzurichten, um IRM automatisch auf ausgewählte Nachrichten anzuwenden.  <br/>  Ermöglicht Benutzern das manuelle Anwenden von Vorlagen in Outlook oder Outlook Web App.  <br/> |In S/MIME erfolgt die Absenderauthentifizierung durch digitale Signaturen, und die Vertraulichkeit von Nachrichten wird durch Verschlüsselung sichergestellt.  <br/> |
-|Nicht vorhandene Funktionen  <br/> |OME kann nicht Sie Usage Einschränkungen auf Nachrichten anwenden. Angenommen, können sie Sie um durch weiterleiten oder Drucken eine verschlüsselte Nachricht einen Empfänger zu beenden.  <br/> |Einige Anwendungen möglicherweise IRM-e-Mails nicht auf allen Geräten unterstützt. Weitere Informationen zu diesen und anderen Produkten, die IRM für e-Mail zu unterstützen, finden Sie unter [Client Gerätefunktionen](https://technet.microsoft.com/library/dn655136.aspx#BKMK_ClientCapabilities).<br/> |S/MIME zulässig verschlüsselte Nachrichten für Schadsoftware, Spam oder Richtlinien erzwungen wird nicht ist.  <br/> |
-|Empfehlungen und Beispielszenarien  <br/> | Es wird empfohlen, OME verwenden, wenn Sie vertrauliche Geschäftsdaten an Personen außerhalb Ihrer Organisation senden möchten, ob sie Verbraucher oder andere Unternehmen sind. Zum Beispiel:  <br/>  Ein Bankangestellter sendet Kreditkartenabrechnungen an Kunden  <br/>  Senden von Patientendaten zu einem Patienten ein Arzt office  <br/>  Ein Anwalt sendet vertrauliche Rechtsinformationen an einen anderen Anwalt.  <br/> | Die Verwendung von IRM wird empfohlen, wenn Sie Nutzungseinschränkungen und Verschlüsselung anwenden möchten. Beispiel:  <br/>  Ein Manager sendet vertrauliche Informationen an ihr Team über ein neues Produkt gilt die Option "Nicht weiterleiten".  <br/>  Eine Führungskraft muss ein Angebot für ein anderes Unternehmen freigeben, das eine Anlage von einem Partner enthält, der Office 365 verwendet, und sowohl die E-Mail als auch die Anlage müssen geschützt werden.  <br/> | Es wird empfohlen, mit S/MIME, wenn Ihre Organisation oder des Empfängers Organisation true Peer-zu-Peer-Verschlüsselung erforderlich ist.  <br/>  S/MIME wird am häufigsten in den folgenden Szenarien verwendet:  <br/>  Kommunikation zwischen Behörden  <br/>  Kommunikation zwischen einem Unternehmen und einer Behörde  <br/> |
+|Was ist das?|Office 365-Nachrichtenverschlüsselung (Office Message Encryption, OME) ist ein Dienst, der auf Azure Rights Management (Azure RMS) aufbaut und mit dem Sie verschlüsselte E-Mails an Personen innerhalb oder außerhalb Ihrer Organisation senden können, unabhängig von der E-Mail-Zieladresse (Gmail, Yahoo! Mail, Outlook.com usw.).  <br/> Als Administrator können Sie Transportregeln einrichten, die die Bedingungen für die Verschlüsselung definieren. Wenn ein Benutzer eine Nachricht sendet, die mit einer Regel übereinstimmt, wird die Verschlüsselung automatisch angewendet.  <br/> Um verschlüsselte Nachrichten anzuzeigen, können Empfänger entweder eine einmalige Kennung abrufen, sich mit einem Microsoft-Konto anmelden oder sich mit einem Arbeits-oder Schulkonto anmelden, das Office 365 zugeordnet ist. Empfänger können auch verschlüsselte Antworten senden. Sie benötigen kein Office 365-Abonnement, um verschlüsselte Nachrichten anzuzeigen oder verschlüsselte Antworten zu senden.|IRM ist eine Verschlüsselungslösung, die auch Nutzungseinschränkungen auf E-Mail-Nachrichten anwendet. Mit dieser Lösung können Sie verhindern, dass vertrauliche Informationen von nicht autorisierten Personen gedruckt, weitergeleitet oder kopiert werden.  <br/> IRM-Funktionen in Office 365 verwenden Azure Rights Management (Azure RMS). 
+|S/MIME ist eine zertifikatbasierte Verschlüsselungslösung, mit der Sie eine Nachricht sowohl verschlüsseln als auch digital signieren können. Die Nachrichtenverschlüsselung trägt dazu bei, sicherzustellen, dass nur der vorgesehene Empfänger die Nachricht öffnen und lesen kann. Eine digitale Signatur hilft dem Empfänger, die Identität des Absenders zu überprüfen.  <br/> Digitale Signaturen und Nachrichtenverschlüsselung werden durch Verwendung eindeutiger digitaler Zertifikate ermöglicht, die die Schlüssel für das Überprüfen von digitalen Signaturen und das Verschlüsseln oder Entschlüsseln von Nachrichten enthalten.  <br/> Um S/MIME zu verwenden, müssen Sie öffentliche Schlüssel für jeden Empfänger in der Datei haben. Empfänger müssen ihre eigenen privaten Schlüssel verwalten, die sicher bleiben müssen. Wenn die privaten Schlüssel eines Empfängers kompromittiert werden, muss der Empfänger einen neuen privaten Schlüssel erhalten und die öffentlichen Schlüssel an alle potenziellen Absender verteilen.|
+|Vorhandene Funktionen|OME:  <br/>  Verschlüsselt Nachrichten, die an interne oder externe Empfänger gesendet werden.  <br/>  Ermöglicht Benutzern das Senden verschlüsselter Nachrichten an beliebige E-Mail-Adressen, einschließlich Outlook.com, Yahoo! Mail und Gmail.  <br/>  Als Administrator können Sie das e-Mail-Anzeige Portal anpassen, um die Marke Ihrer Organisation widerzuspiegeln.  <br/>  Microsoft verwaltet und speichert die Schlüssel sicher.  <br/>  Es ist keine spezielle clientseitige Software erforderlich, sofern die verschlüsselte Nachricht (als HTML-Anlage gesendet) in einem Browser geöffnet werden kann.|IRM:  <br/>  Verwendet Verschlüsselung und Nutzungsbeschränkungen, um Online- und Offlineschutz für E-Mail-Nachrichten und Anlagen bereitzustellen.  <br/>  Gibt Ihnen als Administrator die Möglichkeit, Transportregeln oder Outlook-Schutzregeln einzurichten, um IRM automatisch auf ausgewählte Nachrichten anzuwenden.  <br/>  Ermöglicht Benutzern das manuelle Anwenden von Vorlagen in Outlook oder Outlook im Web (früher als Outlook Web App bezeichnet).|In S/MIME erfolgt die Absenderauthentifizierung durch digitale Signaturen, und die Vertraulichkeit von Nachrichten wird durch Verschlüsselung sichergestellt.|
+|Nicht vorhandene Funktionen|Sie können keine Verwendungseinschränkungen auf Nachrichten anwenden. Sie können es beispielsweise nicht verwenden, um zu verhindern, dass ein Empfänger eine verschlüsselte Nachricht weiterleitet oder druckt.|Einige Anwendungen unterstützen IRM-e-Mails möglicherweise nicht auf allen Geräten. Weitere Informationen zu diesen und anderen Produkten, die IRM-e-Mails unterstützen, finden Sie unter [Client Device Capabilities](https://technet.microsoft.com/library/dn655136.aspx#BKMK_ClientCapabilities).|S/MIME erlaubt nicht, dass verschlüsselte Nachrichten auf Schadsoftware, Spam oder Richtlinien überprüft werden.|
+|Empfehlungen und Beispielszenarien|Wir empfehlen die Verwendung von OM, wenn Sie vertrauliche Geschäftsinformationen an Personen außerhalb Ihrer Organisation senden möchten, unabhängig davon, ob es sich um Consumer oder andere Unternehmen handelt. Zum Beispiel:  <br/>  Ein Bankangestellter sendet Kreditkartenabrechnungen an Kunden  <br/>  Ärztliche Unterlagen werden an einen Patienten gesendet  <br/>  Ein Anwalt sendet vertrauliche Rechtsinformationen an einen anderen Anwalt.|Die Verwendung von IRM wird empfohlen, wenn Sie Nutzungseinschränkungen und Verschlüsselung anwenden möchten. Beispiel:  <br/>  Ein Manager, der vertrauliche Informationen zu einem neuen Produkt an das Team sendet, wendet die Option "nicht weiterleiten" an.  <br/>  Eine Führungskraft muss ein Angebot für ein anderes Unternehmen freigeben, das eine Anlage von einem Partner enthält, der Office 365 verwendet, und sowohl die E-Mail als auch die Anlage müssen geschützt werden.|Wir empfehlen die Verwendung von S/MIME, wenn entweder Ihre Organisation oder die Organisation des Empfängers eine echte Peer-zu-Peer-Verschlüsselung erfordert.  <br/>  S/MIME wird am häufigsten in den folgenden Szenarien verwendet:  <br/>  Kommunikation zwischen Behörden  <br/>  Kommunikation zwischen einem Unternehmen und einer Behörde|
    
 ## <a name="what-encryption-options-are-available-for-my-office-365-subscription"></a>Welche Verschlüsselungsoptionen sind für mein Office 365-Abonnement verfügbar?
 
-Informationen zu e-Mail-Verschlüsselungsoptionen für Ihre Office 365-Abonnements finden Sie in der [Exchange Online-dienstbeschreibung](https://technet.microsoft.com/en-us/library/exchange-online-service-description.aspx). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfeatures:
+Informationen zu e-Mail-Verschlüsselungsoptionen für Ihr Office 365-Abonnement finden Sie in der [Exchange Online-Dienstbeschreibung](https://technet.microsoft.com/en-us/library/exchange-online-service-description.aspx). Hier finden Sie Informationen zu den folgenden Verschlüsselungsfunktionen:
   
 - Azure RMS, einschließlich IRM-Funktionen und OME
     
@@ -76,7 +76,7 @@ Informationen zu e-Mail-Verschlüsselungsoptionen für Ihre Office 365-Abonnemen
     
 ## <a name="what-about-encryption-for-data-at-rest"></a>Wissenswertes zur Verschlüsselung von Daten im Ruhezustand
 
-"Daten im Ruhezustand" bezieht sich auf Daten, die während der Übertragung aktiv ist. In Office 365 werden die e-Mail-Daten im Ruhezustand mit BitLocker Drive Encryption verschlüsselt. BitLocker verschlüsselt die Festplatten in Office 365-Rechenzentren verbesserten Schutz vor nicht autorisiertem Zugriff bereitstellen. Finden Sie weitere Informationen finden Sie unter [BitLocker Overview](https://go.microsoft.com/fwlink/p/?LinkId=394737).
+"Data at Rest" bezieht sich auf Daten, die nicht aktiv übertragen werden. In Office 365 werden e-Mail-Daten im Ruhezustand mithilfe der BitLocker-Laufwerkverschlüsselung verschlüsselt. BitLocker verschlüsselt die Festplatten in Office 365-Rechenzentren, um einen verbesserten Schutz vor nicht autorisiertem Zugriff zu gewährleisten. Weitere Informationen finden Sie unter [BitLocker Overview](https://go.microsoft.com/fwlink/p/?LinkId=394737).
   
 ## <a name="more-information-about-email-encryption-options-in-office-365"></a>Weitere Informationen zu E-Mail-Verschlüsselungsoptionen in Office 365
 
@@ -98,10 +98,10 @@ Weitere Informationen zu den in diesem Artikel vorgestellten E-Mail-Verschlüsse
   
 [Grundlegendes zu S/MIME](https://technet.microsoft.com/library/aa995740%28v=exchg.65%29.aspx)
   
-[Grundlegendes zu öffentlichen Schlüsseln](https://technet.microsoft.com/library/aa998077%28v=exchg.65%29.aspx)
+[Grundlegendes zur Kryptografie mit öffentlichen Schlüsseln](https://technet.microsoft.com/library/aa998077%28v=exchg.65%29.aspx)
   
  **TLS**
   
-[Konfigurieren der benutzerdefinierten Nachrichtenübermittlung mithilfe von Connectors in Office 365](https://technet.microsoft.com/en-us/library/jj723138%28v=exchg.150%29.aspx)
+[Konfigurieren von benutzerdefiniertem Nachrichtenfluss mithilfe von Connectors in Office 365](https://technet.microsoft.com/en-us/library/jj723138%28v=exchg.150%29.aspx)
   
 

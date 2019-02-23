@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090977"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214115"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -215,7 +215,7 @@ Verwenden Sie die Überwachungsberichte, um die Überprüfungsaktivität auf Ric
   
 ### <a name="how-to-use-the-report"></a>Verwenden des Berichts
 
-Wenn eine Überwachungsrichtlinie eine Kommunikations Nachricht zur Überprüfung identifiziert, wird die e-Mail an den Aufsichts Ordner der Prüfer in Outlook und Outlook Web App übermittelt. In diesem Bericht werden die Namen der einzelnen Richtlinien und die Anzahl der Kommunikationen in jeder Phase des überarbeits Vorgangs aufgelistet.
+Wenn eine Überwachungsrichtlinie eine Kommunikations Nachricht zur Überprüfung identifiziert, wird die e-Mail an den Aufsichts Ordner der Prüfer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) übermittelt. In diesem Bericht werden die Namen der einzelnen Richtlinien und die Anzahl der Kommunikationen in jeder Phase des überarbeits Vorgangs aufgelistet.
   
 Verwenden Sie den Bericht für Folgendes:
   
@@ -228,7 +228,7 @@ Nachfolgend finden Sie eine Aufstellung der Werte, die in der **** Spalte Transp
   
 |**Tagtyp**|**Bedeutung**|
 |:-----|:-----|
-| Nicht überprüft | Die Anzahl von e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Office 365-überwachungsdashboard oder im Ordner "Überwachung" in Outlook/Outlook Web App.|
+| Nicht überprüft | Die Anzahl von e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Office 365-überwachungsdashboard oder im Ordner "Aufsicht" des Rezensenten in Outlook/Outlook im Web.
 | Kompatibel | Die Anzahl der überprüften und als kompatibel markierten e-Mails. Diese Nachrichten müssen noch aufgelöst werden. |
 | Fragwürdige | Die Anzahl der überprüften und markierten e-Mails. Dies dient als Kennzeichnung; andere Prüfer können untersuchen, ob eine e-Mail-Konformitätsprüfung erforderlich ist. Diese Nachrichten müssen noch aufgelöst werden. |
 | Nicht konform (aktiv) | Die Anzahl der nicht kompatiblen e-Mails, die von den Prüfern derzeit untersucht werden. |

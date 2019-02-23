@@ -1,25 +1,10 @@
 ---
-title: Blockieren von Spam-E-Mail mit dem Office 365-Spamfilter zur Vermeidung von Problemen mit falsch negativen Nachrichten
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 7/2/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Priority
-search.appverid:
+Title: "Blockieren von e-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Problemen" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 7/2/2018 ms. Audience: admin ms. Topic: article ms. Service: O365-seccomp localization_priority: Priority Search. appverid: 
 - MOE150
-- MET150
-ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
-description: Tipps zum Einrichten des Office 365-Spamfilters, um Spam-E-Mail zu blockieren und falsch negative Nachrichten zu verhindern. Ein Administrator verwendet den Spamfilter in Office 365, um zu verhindern, dass Spam an die Posteingänge der Benutzer gesendet wird.
-ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769869"
+- MET150 ms. Asset-Nr.: da21c0b6-e8f0-4cc8-af2e-5029a9433d59 ms. Collection:
+    - M365-Security-Compliance Description: "Tipps zum Einrichten des Office 365-Spamfilters zum Blockieren von e-Mail-Spam und zum Verhindern von falsch negativen Nachrichten verwendet ein Administrator die Antispamfilter von Office 365, um zu verhindern, dass Spam an Benutzer Postfächer gesendet wird."
 ---
+
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>Blockieren von Spam-E-Mail mit dem Office 365-Spamfilter zur Vermeidung von Problemen mit falsch negativen Nachrichten
 
 Exchange Online Protection (EOP) ist ein cloudbasierter E-Mail-Filterdienst, der Ihnen hilft, Ihre Organisation vor Spam und Schadsoftware zu schützen. Wenn Sie über Postfächer in Office 365 verfügen, werden diese bereits standardmäßig mit EOP geschützt. 
@@ -34,38 +19,38 @@ Ein Administrator kann mehrere Office 365-Spamfiltereinstellungen verwenden, um 
 
 Passen Sie Ihren Office 365-Spamfilter an, indem Sie die Absender-IP-Adresse zur Liste blockierter IP-Adressen für den Verbindungsfilter hinzufügen:
   
-1. Rufen Sie die Kopfzeilen der Nachrichten ab, die Sie in Ihrem E-Mail-Client wie Outlook oder Outlook Web App blockieren möchten, wie in [Nachrichtenkopfanalyse](https://go.microsoft.com/fwlink/p/?LinkId=306583) beschrieben wird.
+1. Rufen Sie die Kopfzeilen für die Nachricht ab, die Sie in Ihrem e-Mail-Client wie Outlook oder Outlook im Web (früher als Outlook Web App bezeichnet) blockieren möchten, wie in [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583)beschrieben.
     
 2. Suchen Sie in der [Nachrichtenkopfanalyse](https://testconnectivity.microsoft.com/?tabid=mha) oder manuell nach der IP-Adresse, die auf das CIP-Tag in der Kopfzeile X-Forefront-Antispam-Report folgt. 
     
-3. Fügen Sie die IP-Adresse der IP-Sperrliste hinzu, indem Sie die Schritte unter „Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole“ in [Konfigurieren der Verbindungsfilterrichtlinie](https://technet.microsoft.com/de-DE/library/jj200718%28v=exchg.150%29.aspx) ausführen.
+3. Fügen Sie die IP-Adresse der IP-Sperrliste hinzu, indem Sie die Schritte unter „Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole“ in [Konfigurieren der Verbindungsfilterrichtlinie](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx) ausführen.
     
 ### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Blockieren von Massensendungen mit Transportregeln oder dem Spamfilter
 
-Handelt es sich bei Spam in erster Linie um Massensendungen, z. B. Newsletter oder Werbeaktionen? Sie können den Spamfilter in Office 365 anpassen, wenn Sie [Transportregeln verwenden, um Massen-E-Mail-Nachrichten aggressiv zu filtern](https://technet.microsoft.com/de-DE/library/dn720438%28v=exchg.150%29.aspx) oder die Einstellung **Massensendungen** in den [erweiterten Spamfilteroptionen](https://technet.microsoft.com/de-DE/library/jj200750%28v=exchg.150%29.aspx) Ihres Spamfilters aktivieren. Klicken Sie zunächst im Exchange Admin Center auf **Schutz** \> **Inhaltsfilter**, und doppelklicken Sie dann auf die Filterrichtlinie, die Sie anpassen möchten. Klicken Sie auf die Option für Spam- und Massensendungsaktionen****, um die Einstellungen, wie hier gezeigt, anzupassen. 
+Handelt es sich bei Spam in erster Linie um Massensendungen, z. B. Newsletter oder Werbeaktionen? Sie können den Spamfilter in Office 365 anpassen, wenn Sie [Transportregeln verwenden, um Massen-E-Mail-Nachrichten aggressiv zu filtern](https://technet.microsoft.com/en-us/library/dn720438%28v=exchg.150%29.aspx) oder die Einstellung **Massensendungen** in den [erweiterten Spamfilteroptionen](https://technet.microsoft.com/en-us/library/jj200750%28v=exchg.150%29.aspx) Ihres Spamfilters aktivieren. Klicken Sie zunächst im Exchange Admin Center auf **Schutz** \> **Inhaltsfilter**, und doppelklicken Sie dann auf die Filterrichtlinie, die Sie anpassen möchten. Klicken Sie auf die Option für Spam- und Massensendungsaktionen****, um die Einstellungen, wie hier gezeigt, anzupassen. 
   
 ![Festlegen des Massen-E-Mail-Filters in Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Blockieren von Spam-E-Mails mithilfe von Spamfilter-Sperrlisten
 
-[Konfigurieren Sie Ihre Spamfilterrichtlinien](https://technet.microsoft.com/de-DE/library/jj200684%28v=exchg.150%29.aspx) so, dass Sie im Spamfilter die Adresse des Absenders der Absender-Sperrliste bzw. die Domäne der Liste der gesperrten Domänen hinzufügen. E-Mails von einem Absender oder einer Domäne auf einer Spamfilter-Sperrliste werden als Spam gekennzeichnet. 
+[Konfigurieren Sie Ihre Spamfilterrichtlinien](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) so, dass Sie im Spamfilter die Adresse des Absenders der Absender-Sperrliste bzw. die Domäne der Liste der gesperrten Domänen hinzufügen. E-Mails von einem Absender oder einer Domäne auf einer Spamfilter-Sperrliste werden als Spam gekennzeichnet. 
   
 ### <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
 
-[Konfigurieren Sie Ihre Spamfilterrichtlinien](https://technet.microsoft.com/de-DE/library/jj200684%28v=exchg.150%29.aspx), und aktivieren Sie zusätzliche [erweiterte Spamfilterungsoptionen](https://technet.microsoft.com/de-DE/library/jj200750%28v=exchg.150%29.aspx).
+[Konfigurieren Sie Ihre Spamfilterrichtlinien](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx), und aktivieren Sie zusätzliche [erweiterte Spamfilterungsoptionen](https://technet.microsoft.com/en-us/library/jj200750%28v=exchg.150%29.aspx).
   
 Allgemeine Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Verwenden einer Liste sicherer Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](prevent-email-from-being-marked-as-spam-0.md). Dies ist hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und Sie falsch positive Ergebnisse vermeiden möchten.
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>E-Mail-Benutzer können außerdem dazu beitragen, dass falsch negative und Spam-E-Mails mit dem Office 365-Spamfilter blockiert werden
 
-Sie unterstützen Ihre Office 365-Antispammaßnahmen zur Vermeidung falsch negativer und Junk-E-Mails, wenn Sie Ihre Benutzer auffordern, die Spam-Absenderadresse ihrer Liste der blockierten Absender in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) oder [Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=294862) hinzuzufügen. Klicken Sie zunächst in Outlook Web App auf **Einstellungen** \> **Optionen** \> **Blockieren oder zulassen**, und fügen Sie dann die Adresse der Liste **Blockierte Absender** hinzu, wie hier gezeigt. 
+Es hilft Ihren Office 365 Anti-Spam-Maßnahmen, um falsche Negative und Junk-e-Mails zu vermeiden, wenn Sie Ihren Benutzern sagen, dass Sie die Spam-Absenderadresse Ihrer Liste blockierter Absender in [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) oder [Outlook im Web](https://go.microsoft.com/fwlink/p/?LinkId=294862)hinzufügen möchten. Klicken Sie in Outlook im Web zunächst auf **Einstellungs** \> **Optionen** \> **blockieren oder zulassen**, und fügen Sie dann die Adresse zur Liste **blockierter Absender** hinzu, wie hier gezeigt. 
   
-![Blockieren eines Absenders in der Outlook Web App](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Blockieren eines Absenders in Outlook im Web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Weitere Informationen zu Listen mit sicheren Absendern finden Sie unter [FAQ zu Listen sicherer Absender und blockierter Absender](https://technet.microsoft.com/de-DE/library/dn133608%28v=exchg.150%29.aspx). 
+> Weitere Informationen zu Listen mit sicheren Absendern finden Sie unter [FAQ zu Listen sicherer Absender und blockierter Absender](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
-Die obigen Absätze in diesem Unterabschnitt gelten nur für Kunden, die EOP als Dienst zum Schutz von lokalen E-Mail-Systemen oder im Rahmen einer hybriden E-Mail-Bereitstellung verwenden. Weitere Informationen zu EOP finden Sie auf der [Exchange Online Protection-Homepage](https://products.office.com/de-DE/exchange/exchange-email-security-spam-protection).
+Die obigen Absätze in diesem Unterabschnitt gelten nur für Kunden, die EOP als Dienst zum Schutz von lokalen E-Mail-Systemen oder im Rahmen einer hybriden E-Mail-Bereitstellung verwenden. Weitere Informationen zu EOP finden Sie auf der [Exchange Online Protection-Homepage](https://products.office.com/en-us/exchange/exchange-email-security-spam-protection).
   
 ## <a name="eop-only-customers-set-up-the-office-365-spam-filter-to-block-email-spam"></a>Kunden, die nur EOP verwenden: Einrichten des Office 365-Spamfilters zum Blockieren von Spam-E-Mail
 
@@ -94,7 +79,7 @@ Der EOP-Dienst ist darauf ausgelegt, die sicheren und blockierten Absender des B
     Da der SCL-Wert auf dem lokalen Exchange-Server 0 ist, werden Nicht-Spam-Nachrichten an die Posteingänge der Benutzer übermittelt, aber es ist dennoch möglich, dass die Liste lokaler blockierter Absender der Benutzer diese an den Junk-E-Mail-Ordner sendet. Wenn Sie Spam-Quarantäne in EOP verwenden, ist es weiterhin möglich, dass Absender, die sich auf der Liste sicherer Absender Ihrer Benutzer befinden, als Spam identifiziert und in Quarantäne gesetzt werden. Wenn Sie allerdings den Junk-E-Mail-Ordner in Ihrem lokalen Postfach verwenden, werden Nachrichten sicherer Absender an den Posteingang übermittelt.
 
 > [!WARNING]
-> Wenn Sie eine Nachrichtenflussregel verwenden, um den SCL-Wert in 0 (oder einen anderen Wert als -1) zu ändern, werden alle Outlook-Junk-E-Mail-Optionen auf die Nachricht angewendet. Dies bedeutet, dass Listen mit gesperrten und sicheren Absendern berücksichtigt werden, aber auch, dass Nachrichten von Adressen, die sich auf der Liste blockierter oder sicherer Absender befinden, durch die clientseitige Junk-E-Mail-Filter-Verarbeitung möglicherweise als Junk markiert werden. Wenn Outlook die blockierten und sicheren Listen verarbeiten soll, aber nicht den clientseitigen Junk-E-Mail-Filter verwenden soll, müssen Sie in den Outlook Junk-E-Mail-Optionen die Option auf „Keine automatische Filterung“ festlegen. „Keine automatische Filterung“ ist die Standardoption in den neuesten Versionen von Outlook, aber Sie sollten überprüfen, ob diese Einstellung aktiviert ist, um sicherzustellen, dass auf die Nachrichten nicht der clientseitige Junk-E-Mail-Filter angewendet wird. Als Administrator können Sie die Deaktivierung der Junk-E-Mail-Filterung in Outlook erzwingen, indem Sie die Anleitung in [Outlook: Richtlinieneinstellung zur Deaktivierung der Benutzeroberfläche und des Filtermechanismus für Junk-E-Mails](https://support.microsoft.com/de-DE/kb/2180568) befolgen.
+> Wenn Sie eine Nachrichtenflussregel verwenden, um den SCL-Wert in 0 (oder einen anderen Wert als -1) zu ändern, werden alle Outlook-Junk-E-Mail-Optionen auf die Nachricht angewendet. Dies bedeutet, dass Listen mit gesperrten und sicheren Absendern berücksichtigt werden, aber auch, dass Nachrichten von Adressen, die sich auf der Liste blockierter oder sicherer Absender befinden, durch die clientseitige Junk-E-Mail-Filter-Verarbeitung möglicherweise als Junk markiert werden. Wenn Outlook die blockierten und sicheren Listen verarbeiten soll, aber nicht den clientseitigen Junk-E-Mail-Filter verwenden soll, müssen Sie in den Outlook Junk-E-Mail-Optionen die Option auf „Keine automatische Filterung“ festlegen. „Keine automatische Filterung“ ist die Standardoption in den neuesten Versionen von Outlook, aber Sie sollten überprüfen, ob diese Einstellung aktiviert ist, um sicherzustellen, dass auf die Nachrichten nicht der clientseitige Junk-E-Mail-Filter angewendet wird. Als Administrator können Sie die Deaktivierung der Junk-E-Mail-Filterung in Outlook erzwingen, indem Sie die Anleitung in [Outlook: Richtlinieneinstellung zur Deaktivierung der Benutzeroberfläche und des Filtermechanismus für Junk-E-Mails](https://support.microsoft.com/en-us/kb/2180568) befolgen.
   
 ## <a name="see-also"></a>Siehe auch
 

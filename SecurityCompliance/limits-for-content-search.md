@@ -1,78 +1,77 @@
 ---
-title: Grenzwerte für die Inhaltssuche in Office 365-Sicherheit &amp; Compliance Center
+title: Grenzwerte für die Inhaltssuche im Office 365 &amp; Security Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: 'Erfahren Sie mehr über die Grenzwerte für die Inhaltssuche-Funktion in die Office 365-Sicherheit &amp; Compliance Center, wie beispielsweise die maximale Anzahl von gleichzeitigen Suchvorgänge. '
-ms.openlocfilehash: 79142edf2e80378bf6f22474fca55c54fe5cc776
-ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
+description: 'Informieren Sie sich über die Grenzwerte für die Inhaltssuche im Office 365 Security &amp; Compliance Center, wie beispielsweise die maximale Anzahl gleichzeitiger Suchvorgänge. '
+ms.openlocfilehash: 711aedf8df80bfe2c769721b8c16b01fb705c289
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27544106"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213285"
 ---
-# <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Grenzwerte für die Inhaltssuche in Office 365-Sicherheit &amp; Compliance Center
+# <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Grenzwerte für die Inhaltssuche im Office 365 &amp; Security Compliance Center
 
 > [!NOTE]
-> Die Grenzwerte für die in diesem Thema unterscheiden sich von der aktuellen Grenzwerte für Compliance-eDiscovery in Exchange Online und für das eDiscovery Center in SharePoint Online. 
+> Die Grenzwerte in diesem Thema unterscheiden sich von den aktuellen Grenzwerten für in-Place-eDiscovery in Exchange Online und für das eDiscovery Center in SharePoint Online. 
   
-Verschiedene Grenzwerte gelten für das Inhaltssuche-Feature in die Office 365-Sicherheit &amp; Compliance Center. Führen Sie diese Include-suchen auf der Seite **Inhaltssuche** und Suchvorgänge an, die einem eDiscovery-Fall zugeordnet sind. Diese Grenzwerte helfen, die Integrität und die Qualität der Office 365-Organisationen bereitgestellten Dienste verwalten. Es gibt auch Grenzwerte, die im Zusammenhang mit der Indizierung von e-Mail-Nachrichten in Exchange Online für die Suche. Die Inhaltssuche oder e-Mail-Grenzwerte für die Indizierung können nicht geändert werden, aber Sie sollten bekannt sein, sodass diese Grenzwerte bei der Planung, Ausführung und Problembehandlung Content-Suche berücksichtigt werden können. 
+Auf die Inhaltssuche im Office 365 Security &amp; Compliance Center werden verschiedene Grenzwerte angewendet. Hierzu gehören Suchvorgänge, die auf der Seite für die **Inhaltssuche** ausgeführt werden, und Suchvorgänge, die einem eDiscovery-Fall zugeordnet sind. Diese Grenzwerte tragen dazu bei, die Integrität und Qualität von Diensten für Office 365-Organisationen aufrechtzuerhalten. Außerdem gibt es Beschränkungen im Zusammenhang mit der Indizierung von e-Mail-Nachrichten in Exchange Online für die Suche. Sie können die Grenzwerte für die Inhaltssuche oder e-Mail-Indizierung nicht ändern, aber Sie sollten Sie beachten, damit Sie diese Einschränkungen bei der Planung, beim Ausführen und bei der Problembehandlung bei der Inhaltssuche berücksichtigen. 
   
-## <a name="content-search-limits"></a>Grenzwerte für Inhaltssuche
+## <a name="content-search-limits"></a>Grenzwerte für die Inhaltssuche
 
-Die folgende Tabelle enthält die Grenzwerte für die Suche in das Wertpapier &amp; Compliance Center.
+In der folgenden Tabelle sind die Such Grenzwerte im &amp; Security Compliance Center aufgeführt.
   
 |**Beschreibung der Beschränkung**|**Grenzwert**|
 |:-----|:-----|
-|Die maximale Anzahl von Postfächern oder Websites, die in einer einzelnen Content-Suche durchsucht werden können  <br/> |Keine Begrenzung  <br/> |
-|Die maximale Anzahl der Content-Suche, die in Ihrer Organisation gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> |
-|Die maximale Anzahl der Content-Suche, die ein einzelner Benutzer zur selben Zeit starten können. Beachten Sie, dass dieser Grenzwert wahrscheinlich erreicht wird, wenn der Benutzer versucht, starten Sie mehrere Suchvorgänge mithilfe der **Get-ComplianceSearch \| Start ComplianceSearch** in Sicherheit und Compliance Center PowerShell Command.<br/> |10   <br/> |
-|Die maximale Anzahl der Elemente pro Postfach des Benutzers, die beim Anzeigen der Vorschau der Suchergebnisse auf der Vorschauseite angezeigt werden.  <br/> |100  <br/> |
-|Die maximale Anzahl der Elemente in allen Benutzerpostfächern, die auf der Vorschauseite angezeigt werden, bei der Vorschau der Suchergebnisse gefunden. Die neuesten Elemente werden angezeigt.  <br/> |1,000  <br/> |
-|Die maximale Anzahl von Benutzerpostfächern, die in der Vorschau für Suchergebnisse angezeigt werden können. Wenn mehr als 1000 Postfächer, die Inhalte enthalten, die die Suchabfrage entspricht vorhanden sind, werden nur die oberste 1000 Postfächer mit den meisten Suchergebnissen für die Vorschau.  <br/> |1,000  <br/> |
-|Die maximale Anzahl von Elementen in SharePoint und OneDrive for Business-Websites, die auf der Vorschauseite angezeigt werden, bei der Vorschau der Suchergebnisse gefunden. Die neuesten Elemente werden angezeigt.  <br/> |200  <br/> |
-|Die maximale Anzahl von Websites (in SharePoint und OneDrive für Unternehmen), die in der Vorschau für Suchergebnisse angezeigt werden können. Wenn mehr als 200 insgesamt Websites, die Inhalte enthalten, die die Suchabfrage entspricht vorhanden sind, werden nur die 200 Websites auf oberster Ebene mit den meisten Suchergebnissen für die Vorschau.  <br/> |200  <br/> |
-|Die maximale Anzahl der Elemente pro Postfach für Öffentliche Ordner, die beim Anzeigen der Vorschau der Suchergebnisse auf der Vorschauseite angezeigt werden.  <br/> |100  <br/> |
-|Die maximale Anzahl von Elementen, die gefunden in alle Postfächer für Öffentliche Ordner, die beim Anzeigen der Vorschau der Suchergebnisse auf der Vorschauseite angezeigt werden.  <br/> |200  <br/> |
-|Die maximale Anzahl der öffentlichen Postfächer, die in der Vorschau für Suchergebnisse angezeigt werden können. Wenn mehr als 500 Postfächer für Öffentliche Ordner, die Inhalte enthalten, die die Suchabfrage entspricht vorhanden sind, werden nur die oberen 500 Postfächer für Öffentliche Ordner mit den meisten Suchergebnissen für die Vorschau.  <br/> |500  <br/> |
-|Die maximale Anzahl von Zeichen für die Suchabfrage für ein Inhaltssuche (einschließlich Operatoren und Bedingungen).  <br/><br/> **Hinweis:** Dieser Grenzwert wird erst wirksam, nachdem die Abfrage erweitert wird, was bedeutet, dass die Abfrage für jedes Schlüsselwort erweitert abgerufen wird. Beispielsweise wenn Ruft eine Suchabfrage 15 Schlüsselwörter und zusätzliche Parameter und Bedingungen verfügt, die Abfrage 15 Mal jeweils mit den anderen Parametern und Bedingungen in der Abfrage erweitert. Obwohl die Anzahl der Zeichen in der Suchabfrage unter den Grenzwert möglicherweise, also es die erweiterten Abfrage, die Überschreitung dieses Grenzwerts dazu beitragen kann.<br/> |**Postfächer:** 10.000  <br/> **Websites:** 4.000 bei der Suche alle Websites oder 2.000, bei der Suche von bis zu 20 Websites <sup>1</sup> <br/> |
-|Maximale Anzahl von Varianten beim Präfix Platzhalter verwenden, suchen Sie nach einem exakten Wortlaut in einer Suchabfrage oder bei Verwendung von Platzhalterzeichen Präfix und der boolesche Operator **NEAR** oder **ONEAR** zurückgegeben wird.  <br/> |10.000 <sup>2</sup> <br/> |
-|Die minimale Anzahl von alpha-Zeichen für Präfix Platzhalter; beispielsweise `time*`, `one*`, oder `set*`.  <br/> |3  <br/> |
-|Die maximale Anzahl von Postfächern in einer Content-Suche, die Sie löschen können Elemente, indem Sie eine Aktion "Suchen und löschen" (mithilfe der **New-ComplianceSearchAction-bereinigen** Befehl). Besitzt die Content-Suche, die Sie für eine Aktion durchführen Weitere Quellpostfächer als dieser Grenzwert, wird bei der Aktion fehl. Weitere Informationen zu suchen und löschen können finden Sie unter [Suchen und Löschen von e-Mail-Nachrichten in Office 365-Organisation](search-for-and-delete-messages-in-your-organization.md).<br/> |50.000  <br/> |
+|Die maximale Anzahl von Postfächern oder Websites, die in einer einzelnen Inhaltssuche durchsucht werden können  <br/> |Keine Begrenzung  <br/> |
+|Die maximale Anzahl von Inhalts suchVorgängen, die in Ihrer Organisation gleichzeitig ausgeführt werden können.  <br/> |Keine Begrenzung  <br/> |
+|Die maximale Anzahl von Inhalts suchVorgängen, die ein einzelner Benutzer gleichzeitig starten kann. Beachten Sie, dass dieser Grenzwert höchstwahrscheinlich betroffen ist, wenn der Benutzer versucht, mehrere Suchen mithilfe des Befehls **get \| -ComplianceSearch Start-ComplianceSearch** in Security & Compliance Center PowerShell zu starten.<br/> |10   <br/> |
+|Die maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite angezeigt werden, wenn Sie die Anzeige der Inhalts Suchergebnisse anzeigen.  <br/> |100  <br/> |
+|Die maximale Anzahl von Elementen, die in allen Benutzerpostfächern gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Anzeige der Inhalts Suchergebnisse anzeigen. Die neuesten Elemente werden angezeigt.  <br/> |1,000  <br/> |
+|Die maximale Anzahl von Benutzerpostfächern, die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn es mehr als 1000 Postfächer gibt, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die oberen 1000-Postfächer mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |1,000  <br/> |
+|Die maximale Anzahl von Elementen, die in SharePoint-und OneDrive für Business-Websites gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Anzeige der Inhalts Suchergebnisse anzeigen. Die neuesten Elemente werden angezeigt.  <br/> |200  <br/> |
+|Die maximale Anzahl von Websites (in SharePoint und OneDrive for Business), die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn es mehr als 200 gesamt Websites mit Inhalten gibt, die mit der Suchabfrage übereinstimmen, stehen nur die Top 200-Websites mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |200  <br/> |
+|Die maximale Anzahl von Elementen pro Postfach für Öffentliche Ordner, die auf der Vorschauseite angezeigt werden, wenn Sie die Anzeige der Inhalts Suchergebnisse anzeigen.  <br/> |100  <br/> |
+|Die maximale Anzahl von Elementen, die in allen Postfächern für Öffentliche Ordner gefunden werden, die auf der Vorschauseite angezeigt werden, wenn Sie die Inhalts Suchergebnisse anzeigen.  <br/> |200  <br/> |
+|Die maximale Anzahl von öffentlichen Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn mehr als 500 Postfächer für Öffentliche Ordner vorhanden sind, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die oberen 500-Postfächer für Öffentliche Ordner mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |500  <br/> |
+|Die maximale Anzahl von Zeichen für die Suchabfrage (einschließlich Operatoren und Bedingungen) für eine Inhaltssuche.  <br/><br/> **Hinweis:** Diese Grenze wird wirksam, nachdem die Abfrage erweitert wurde, was bedeutet, dass die Abfrage für jedes Schlüsselwort erweitert wird. Wenn beispielsweise eine Suchabfrage 15 Schlüsselwörter und zusätzliche Parameter und Bedingungen enthält, wird die Abfrage 15 Mal erweitert, wobei sich die anderen Parameter und Bedingungen in der Abfrage befinden. Auch wenn die Anzahl der Zeichen in der Suchabfrage möglicherweise unter dem Grenzwert liegt, ist es die Erweiterte Abfrage, die dazu beitragen kann, diesen Grenzwert zu überschreiten.<br/> |**Postfächer:** 10.000  <br/> **Websites:** 4.000 beim Durchsuchen aller websites oder 2.000 bei der Suche von bis zu 20 Websites <sup>1</sup> <br/> |
+|Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix Platzhalter verwendet wird, um nach einem exakten Ausdruck in einer Suchabfrage oder bei Verwendung eines Präfix Platzhalters und des booleschen Operators **near** oder **ONEAR** zu suchen.  <br/> |10.000 <sup>2</sup> <br/> |
+|Die Mindestanzahl von Alphazeichen für Präfix Platzhalter; Beispiel `time*` `one*`:, oder `set*`.  <br/> |3  <br/> |
+|Die maximale Anzahl von Postfächern in einer Inhaltssuche, in der Sie Elemente löschen können, indem Sie eine Aktion "suchen und löschen" ausführen (mithilfe des Befehls **New-ComplianceSearchAction-Purge** ). Wenn die Inhaltssuche, für die Sie eine Aktion zum Löschen ausführen, mehr Quellpostfächer als diesen Grenzwert hat, schlägt die Löschaktion fehl. Weitere Informationen zu Suche und Säuberung finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Office 365-Organisation](search-for-and-delete-messages-in-your-organization.md).<br/> |50.000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> bei der Suche SharePoint- und OneDrive for Business-Standorte werden die Zeichen in den URLs der Websites, der durchsucht wird mit dem Grenzwert gezählt.<br/> <sup>2</sup> für nicht-Satz Abfragen (ein Schlüsselwortwert, der keine Anführungszeichen verwendet) verwenden wir einen spezielle Präfix Index. Hier erfahren wir, dass ein Wort in einem Dokument, jedoch nicht im Dokument Auftretens auftritt. Klicken Sie dazu eine Abfrage Phrase (ein Schlüsselwortwert in doppelte Anführungszeichen) müssen wir die Position innerhalb des Dokuments für die Wörter im Ausdruck verglichen werden soll. Dies bedeutet, dass wir den Präfix Index für Phrase Abfragen verwendet werden können. In diesem Fall erweitert wir intern die Abfrage mit alle möglichen Wörter, denen das Präfix auf Erweitert. beispielsweise `"time*"` können erweitern bis `"time OR timer OR times OR timex OR timeboxed OR …"`. 10.000 ist die maximale Anzahl von Varianten, die das Wort, nicht die Anzahl der Dokumente, die mit der Abfrage übereinstimmen erweitert werden kann. Es ist keine Obergrenze für nicht-Satz Begriffe. 
+> <sup>1</sup> beim durchSuchen von SharePoint-und OneDrive für Business-Standorte werden die Zeichen in den URLs der Websites, die durchsucht werden, mit diesem Grenzwert gezählt.<br/> <sup>2</sup> für nicht-Phrase-Abfragen (ein Schlüsselwortwert, der keine doppelten Anführungszeichen verwendet) verwenden wir einen speziellen Präfix Index. Dies weist darauf hin, dass ein Wort in einem Dokument vorkommt, aber nicht, wo es im Dokument vorkommt. Wenn Sie eine Ausdrucks Abfrage (einen Stichwort Wert mit doppelten Anführungszeichen) ausführen möchten, müssen wir die Position im Dokument mit den Wörtern im Ausdruck vergleichen. Dies führt dazu, dass der Präfix Index für Ausdrucks Abfragen nicht verwendet werden kann. In diesem Fall erweitern wir die Abfrage intern mit allen möglichen Wörtern, auf die das Präfix erweitert wird. beispielsweise `"time*"` kann zu `"time OR timer OR times OR timex OR timeboxed OR …"`erweitern. 10.000 ist die maximale Anzahl von Varianten, auf die das Wort erweitert werden kann, und nicht die Anzahl der Dokumente, die mit der Abfrage übereinstimmen. Es gibt keine Obergrenze für nicht-Phrasen Ausdrücke. 
   
-## <a name="indexing-limits-for-email-messages"></a>Grenzwerte für die Indizierung für e-Mail-Nachrichten
+## <a name="indexing-limits-for-email-messages"></a>Indizierungs Grenzwerte für e-Mail-Nachrichten
 
-Die folgende Tabelle beschreibt die Grenzwerte für die Indizierung, die in einer e-Mail-Nachricht als ein nicht-indizierten Element oder eine teilweise indizierten Element in den Ergebnissen einer Inhaltssuche zurückgegeben wird, führen können.
+In der folgenden Tabelle werden die Indizierungs Grenzwerte beschrieben, die dazu führen können, dass eine e-Mail-Nachricht als nicht indiziertes Element oder als Teil indizierten Element in den Ergebnissen einer Inhaltssuche zurückgegeben wird.
   
-|**Indizierung Grenzwert**|**Maximalwert**|**Beschreibung**|
+|**Indizierungs Grenzwert**|**Maximalwert**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Maximale Anlagengröße (außer Excel-Dateien)  <br/> |150 MB  <br/> |Die maximale Größe einer e-Mail-Anlage, die für die Indizierung analysiert werden. Mindestens eine Anlage, die größer als dieser Grenzwert ist für die Indizierung wird nicht analysiert werden kann, und die Nachricht mit der Anlage wird als teilweise indiziert gekennzeichnet.<br/> <br/>**Hinweis:** Die Analyse ist der Prozess, in dem der Indexdienst extrahiert den Text aus der Anlage, unnötige Zeichen wie Punkte und Leerzeichen entfernt und dividiert den Text in Wörter (in einem Prozess Tokenvorgang bezeichnet), die dann in den Index gespeichert werden.           |
-|Maximale Größe des Excel-Dateien  <br/> |4 MB  <br/> |Die maximale Größe einer Excel-Datei befindet sich auf einer Website oder einer e-Mail-Nachricht, die für die Indizierung zu analysierende zugeordnet. Eine Excel-Datei, die größer als dieser Grenzwert wird nicht analysiert werden kann, und die Datei oder der e-Mail, die, der die Nachricht mit der Dateianlage als gekennzeichnet wird, nicht indizierten ist.  <br/> |
-|Maximale Anzahl von Anlagen  <br/> |250  <br/> |Die maximale Anzahl von Dateien als Anlage einer e-Mail-Nachricht, die für die Indizierung analysiert werden soll. Wenn eine Nachricht mehr als 250 Anlagen enthält, die ersten 250 Anlagen analysiert und indiziert werden, und die Nachricht wird als teilweise indiziert werden, da sie zusätzliche Anlagen hatte, die analysiert waren nicht gekennzeichnet.  <br/> |
-|Maximale Anlage Tiefe  <br/> |30  <br/> |Die maximale Anzahl von geschachtelten Anlagen, die analysiert werden. Beispielsweise werden, wenn eine e-Mail-Nachricht eine andere Nachricht als Anlage und die Anlage eine angefügte Word-Dokument hat, das Word-Dokument und die Nachricht angefügte indiziert. Dieses Verhalten weiterhin für bis zu 30 geschachtelten Anlagen.  <br/> |
-|Maximale Anzahl von angefügte Bilder  <br/> |0  <br/> |Ein Bild, das an eine e-Mail-Nachricht angefügt wird vom Parser übersprungen, und ist nicht indiziert.  <br/> |
-|Maximale Zeitaufwand für die Analyse eines Elements  <br/> |30 Sekunden  <br/> |Maximal 30 Sekunden ist für die Analyse eines Elements für die Indizierung aufgewendet wurde. Wenn die Analyse Zeit 30 Sekunden überschreitet, wird das Element als teilweise indiziert gekennzeichnet.  <br/> |
-|Maximale Parser-Ausgabe  <br/> |2 Millionen Zeichen  <br/> |Die maximale Größe der Textausgabe aus der Parser, der indiziert ist. Beispielsweise werden der Parser 8 Millionen Zeichen aus einem Dokument extrahiert haben, nur die ersten 2 Millionen Zeichen indiziert.  <br/> |
-|Maximale Annotation Token  <br/> |2 Millionen  <br/> |Wenn eine e-Mail-Nachricht indiziert ist, wird jedes Wort mit verschiedenen verarbeitungsanweisungen gekennzeichnet, die angeben, wie das Wort indiziert werden soll. Jede Gruppe von verarbeitungsanweisungen ist ein Token Annotation aufgerufen. Um die Qualität des Diensts in Office 365 verwalten, besteht es ein Grenzwert von 2 Millionen Annotation Token für eine e-Mail-Nachricht.  <br/> |
-|Maximale Größe des Hauptteils im index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtzahl der Zeichen in den Textkörper einer e-Mail-Nachricht und alle zugehörigen Anlagen. Bei eine e-Mail-Nachricht indiziert ist, wird die gesamte Text im Textkörper der Nachricht und alle Anlagen in einer einzelnen Zeichenfolge verkettet. Diese Zeichenfolge, die indiziert ist die maximale Größe beträgt 67 Millionen Zeichen.  <br/> |
-|Maximale eindeutige Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, Token sind das Ergebnis der Extrahieren von Text aus dem Inhalt, Interpunktionszeichen und Leerzeichen entfernt, und klicken Sie dann Inhaltsmengen in Wörter (als Token bezeichnet), die im Index gespeichert sind. Beispielsweise den Ausdruck `"cat, mouse, bird, dog, dog"` 5 Token enthält. Aber nur 4 dieser Token eindeutig sind. Es besteht ein Grenzwert von 1 Million eindeutige Token pro e-Mail-Nachricht, die verhindert, dass den Index zu groß mit zufälligen Token abrufen.<br/> |
+|Maximale Anlagengröße (ohne Excel-Dateien)  <br/> |150 MB  <br/> |Die maximale Größe einer e-Mail-Anlage, die für die Indizierung analysiert wird. Anlagen, die größer als dieser Grenzwert sind, werden nicht für die Indizierung analysiert, und die Nachricht mit der Anlage wird als teilweise indiziert markiert.<br/> <br/>**Hinweis:** Bei der Analyse handelt es sich um den Prozess, bei dem der Indexdienst Text aus der Anlage extrahiert, unnötige Zeichen wie Interpunktion und Leerräume entfernt und dann den Text in Wörter (in einem Prozess namens "Tokenisierung") unterteilt, die dann im Index gespeichert werden.           |
+|Maximale Größe von Excel-Dateien  <br/> |4 MB  <br/> |Die maximale Größe einer Excel-Datei, die sich auf einer Website befindet oder an eine e-Mail-Nachricht angefügt ist, die zum Indizieren analysiert wird. Alle Excel-Dateien, die größer als dieser Grenzwert sind, werden nicht analysiert, und die Datei oder die e-Mail-Nachricht mit der Dateianlage wird als nicht indiziert markiert.  <br/> |
+|Maximale Anzahl von Anlagen  <br/> |250  <br/> |Die maximale Anzahl von Dateien, die an eine e-Mail-Nachricht angehängt werden, die für die Indizierung analysiert wird. Wenn eine Nachricht mehr als 250 Anlagen enthält, werden die ersten 250-Anlagen analysiert und indiziert, und die Nachricht wird als teilweise indiziert markiert, da Sie zusätzliche Anlagen hatte, die nicht analysiert wurden.  <br/> |
+|Maximale Anlagen Tiefe  <br/> |30  <br/> |Die maximale Anzahl von geschachtelten Anlagen, die analysiert werden. Wenn beispielsweise eine e-Mail-Nachricht mit einer anderen Nachricht verbunden ist und die angefügte Nachricht ein angefügtes Word-Dokument enthält, werden das Word-Dokument und die angefügte Nachricht indiziert. Dieses Verhalten wird für bis zu 30 verschachtelte Anlagen fortgesetzt.  <br/> |
+|Maximale Anzahl der angefügten Bilder  <br/> |0  <br/> |Ein Bild, das an eine e-Mail-Nachricht angefügt ist, wird vom Parser übersprungen und nicht indiziert.  <br/> |
+|Maximale Zeit für die Analyse eines Elements  <br/> |30 Sekunden  <br/> |Es werden maximal 30 Sekunden für die Analyse eines Elements für die Indizierung verwendet. Wenn die Analysezeit 30 Sekunden überschreitet, wird das Element als teilweise indiziert markiert.  <br/> |
+|Maximale Ausgabe des Parsers  <br/> |2 Millionen Zeichen  <br/> |Die maximale Menge an Text, die vom Parser indiziert wird. Wenn der Parser beispielsweise 8 Millionen Zeichen aus einem Dokument extrahiert hat, werden nur die ersten 2 Millionen Zeichen indiziert.  <br/> |
+|Maximale Anmerkungs Token  <br/> |2 Millionen  <br/> |Wenn eine e-Mail-Nachricht indiziert wird, wird jedes Wort mit verschiedenen Verarbeitungsanweisungen versehen, die angeben, wie dieses Wort indiziert werden soll. Jeder Satz von Verarbeitungsanweisungen wird als Anmerkungs Token bezeichnet. Um die Dienstqualität in Office 365 zu erhalten, gibt es eine Grenze von 2 Millionen-Anmerkungs Token für eine e-Mail-Nachricht.  <br/> |
+|Maximale Größe des Texts im Index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtzahl der Zeichen im Textkörper einer e-Mail-Nachricht und aller Anlagen. Wenn eine e-Mail-Nachricht indiziert wird, wird der gesamte Text im Nachrichtentext und in allen Anlagen in einer einzelnen Zeichenfolge verkettet. Die maximale Größe dieser Zeichenfolge, die indiziert wird, ist 67 Millionen Zeichen.  <br/> |
+|Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Mio.  <br/> |Wie bereits erläutert, sind Token das Ergebnis der Extraktion von Text aus Inhalten, das Entfernen von Interpunktion und Leerzeichen und das anschließende Teilen in Wörter (als Token bezeichnet), die im Index gespeichert sind. Der Ausdruck `"cat, mouse, bird, dog, dog"` enthält beispielsweise 5 Token. Aber nur 4 davon sind eindeutige Token. Es gibt eine Grenze von 1 Million eindeutigen Token pro e-Mail-Nachricht, wodurch verhindert wird, dass der Index mit zufälligen Token zu lang wird.<br/> |
   
 ## <a name="more-information"></a>Weitere Informationen
 
-Es sind zusätzliche Einschränkungen im Zusammenhang mit verschiedenen Aspekte der Inhalte Suche, wie das Exportieren von Suchergebnissen und Indizieren von Inhalt. Eine Beschreibung der mit diesen Grenzwerten finden Sie unter den folgenden Themen:
+Es gibt zusätzliche Beschränkungen im Zusammenhang mit verschiedenen Aspekten der Inhaltssuche, beispielsweise beim Exportieren von Suchergebnissen und der Inhaltsindizierung. Eine Beschreibung dieser Grenzwerte finden Sie in den folgenden Themen:
   
 - [Exportieren von Inhaltssuchergebnissen ](export-search-results.md#export-limits)
     
@@ -80,10 +79,10 @@ Es sind zusätzliche Einschränkungen im Zusammenhang mit verschiedenen Aspekte 
     
 - [Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Suchbeschränkungen für SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Such Grenzwerte für SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
     
-Informationen zum Content-Suche finden Sie unter:
+Informationen zu Inhalts suchen finden Sie unter:
   
-- [Content-Suche in Office 365](content-search.md)
+- [Inhaltssuche in Office 365](content-search.md)
     
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)

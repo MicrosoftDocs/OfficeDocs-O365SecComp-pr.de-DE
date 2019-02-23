@@ -5,60 +5,60 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
-description: Verwenden Sie die Seite Warnungen in Office 365-Cloud-App-Sicherheit, zum Anzeigen von potenzieller Problemen und Ausführen einer Aktion. Sie können schließen oder Beheben von Benachrichtigungen, und Sie bei Bedarf anhalten ein Benutzerkontos.
-ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Verwenden Sie die Seite "Benachrichtigungen" in Office 365 Cloud App Security, um potenzielle Probleme anzuzeigen und Maßnahmen zu ergreifen. Sie können Benachrichtigungen schließen oder auflösen und gegebenenfalls ein Benutzerkonto anhalten.
+ms.openlocfilehash: 6c2f9788cb238e86abc347a3a118eb08fa84e971
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603676"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213165"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security
   
-|Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
+|Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |[Starten Sie Bereitstellen von](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](#next-steps) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](#next-steps) <br/> |
    
-Sie können die Seite Warnungen in Office 365-Cloud-App-Sicherheit verwenden, potenzielle Probleme anzeigen und, falls erforderlich, Aktion.
+Sie können die Seite "Benachrichtigungen" in Office 365 Cloud App Security verwenden, um potenzielle Probleme anzuzeigen und gegebenenfalls Maßnahmen zu ergreifen.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator oder Sicherheitsadministrator zum Ausführen der Aufgaben in diesem Artikel werden. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Sie müssen ein globaler Administrator oder Sicherheitsadministrator sein, um die Aufgaben in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-## <a name="how-to-get-to-the-alerts-page"></a>Wie Sie auf der Seite Warnungen abrufen
+## <a name="how-to-get-to-the-alerts-page"></a>So gelangen Sie zur Seite "Benachrichtigungen"
 
-1. Klicken Sie auf das Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung.
+1. Wechseln Sie zum Cloud App Security Portal ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), und melden Sie sich an.
   
-2. Wählen Sie in der Navigationsleiste oben auf dem Bildschirm **Benachrichtigungen**.<br/>![Klicken Sie auf der Seite Warnungen finden Sie unter Benachrichtigungen, die ausgelöst wurden und Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. Klicken Sie in der Navigationsleiste am oberen Rand des Bildschirms auf **Benachrichtigungen**.<br/>![Auf der Seite Warnungen werden Warnungen angezeigt, die ausgelöst wurden, und alle ausgeführten Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
-## <a name="review-and-handle-alerts"></a>Überprüfen und Handle Warnungen
+## <a name="review-and-handle-alerts"></a>Überarbeiten und behandeln von Warnungen
 
-Benachrichtigungen können Sie die Aktivitäten in der Office 365-Cloud-Umgebung zu identifizieren, die Sie möglicherweise weiter zu untersuchen. Sie könnten auch neue Richtlinien erstellen oder Bearbeiten von vorhandenen Richtlinien basierend auf der Warnungen an, die Sie sehen. Wenn Sie einen Administrator Anmelden von einem seltsam Standort angezeigt wird, können Sie eine Richtlinie, die verhindert, dass Administratoren anmelden bei Office 365 aus bestimmten Positionen einrichten.
+Warnungen helfen Ihnen dabei, Aktivitäten in Ihrer Office 365-Cloud-Umgebung zu identifizieren, die Sie möglicherweise weiter untersuchen möchten. Sie können auch beschließen, neue Richtlinien zu erstellen oder vorhandene Richtlinien basierend auf den Warnungen zu bearbeiten, die Ihnen angezeigt werden. Wenn ein Administrator sich beispielsweise an einem seltsamen Ort anmeldet, können Sie eine Richtlinie einrichten, die verhindert, dass Administratoren sich an bestimmten Standorten bei Office 365 anmelden.
   
 > [!TIP]
-> Sie können Benachrichtigungen nach **Kategorie** oder nach **Schweregrad** filtern, sodass Sie zuerst die wichtigsten verwalten können. 
+> Sie können die Warnungen nach **Kategorie** oder nach **Schweregrad** filtern, damit Sie die wichtigsten zuerst verwalten können. 
   
-Untersuchen Sie für jede Warnung was ihm verursachten, sodass Sie entscheiden können, welche Aktion. Weitere Details zu einer Warnung angezeigt und auszuführende Aktion wie etwa Auflösen der Warnung oder Anhalten eines Benutzerkontos wählen Sie die Benachrichtigung zu eine Seite zu öffnen aus. Auf der Detailseite können Sie überprüfen die Aktivitätsprotokolls sowie die Konten und Benutzer, die im Zusammenhang mit der Benachrichtigung, und wie die folgenden Aktionen:
+Untersuchen Sie für jede Warnung, was Sie verursacht hat, damit Sie entscheiden können, welche Aktion ausgeführt werden soll. Wenn Sie weitere Details zu einer Warnung anzeigen und Maßnahmen ergreifen möchten, wie beispielsweise das Auflösen der Warnung oder das Anhalten eines Benutzerkontos, wählen Sie die Warnung aus, um eine Detailseite zu öffnen. Auf der Seite Details können Sie das Aktivitätsprotokoll, die Konten und Benutzer, die mit der Benachrichtigung verbunden sind, überwachen und folgende Aktionen ausführen:
   
-- **Schließen** Wenn die Benachrichtigung falsch positives Ergebnis war, schließen Sie es. Sie können optional hinzufügen ein Kommentars erläutert, warum es geschlossen. 
+- **Entlassen** Wenn die Warnung falsch positiv war, schließen Sie Sie. Sie können optional einen Kommentar hinzufügen, der erklärt, warum Sie ihn entlassen haben. 
     
-- **Warnung auflösen** Wenn die Warnung ausgelöst wurde, indem eine Aktivität, die Sie kennen keine Bedrohung ist, lösen. Sie können optional einen Kommentar erläutert, warum Sie gelöst hinzufügen. 
+- **Warnung auflösen** Wenn die Warnung durch eine Aktivität ausgelöst wurde, von der Sie wissen, dass es sich nicht um eine Bedrohung handelt, beheben Sie Sie. Sie können optional einen Kommentar hinzufügen, der erklärt, warum Sie ihn aufgelöst haben. 
     
-- **Anhalten** Wenn Sie nicht autorisierten Anmeldung, ins auf einem Konto an, beispielsweise eine Person Anmelden aus einem anderen Land vermute, wenn Sie diese Person kennen physisch an einer Niederlassung befindet, können Sie [Unterbrechen Sie das Konto](suspend-or-restore-an-account-in-ocas.md) , während Sie untersuchen, was passiert. 
+- **Anhalten** Wenn Sie vermuten, dass unbefugte Benutzer sich für ein Konto anmelden, beispielsweise jemanden, der sich in einem anderen Land anmeldet, wenn Sie wissen, dass sich diese Person physisch in einem lokalen Büro befindet, können Sie [das Konto anhalten](suspend-or-restore-an-account-in-ocas.md) , während Sie untersuchen, was vor sich geht. 
     
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Untersuchen Sie eine Aktivität](investigate-an-activity-in-office-365-cas.md)
+- [Untersuchen einer Aktivität](investigate-an-activity-in-office-365-cas.md)
     
 - [Anhalten oder Wiederherstellen eines Benutzerkontos](suspend-or-restore-an-account-in-ocas.md)
     
-- Anzeigen einer Liste mit unterstützten [Web Datenverkehr Protokolle und Datenquellen](web-traffic-logs-and-data-sources-for-ocas.md)
+- Anzeigen einer Liste unterstützter [Webdatenverkehr-Protokolle und Datenquellen](web-traffic-logs-and-data-sources-for-ocas.md)
     
-- Überprüfen der [Auslastung Aktivitäten für Office 365-Cloud-App-Sicherheit](utilization-activities-for-ocas.md)
+- Überwachen Ihrer [Nutzungsaktivitäten für Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 

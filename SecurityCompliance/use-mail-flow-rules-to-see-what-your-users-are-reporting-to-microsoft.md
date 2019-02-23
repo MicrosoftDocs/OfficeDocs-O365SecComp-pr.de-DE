@@ -11,23 +11,23 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
-description: Sie können eine Exchange-Transportregel zum verhindern, dass Ihre Benutzer am Senden von e-Mail-Nachrichten an Microsoft zur Analyse und deren Verwendung in Ihrer eigenen Sicherheitsprozesse erstellen
-ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Sie können eine Exchange-Transport Regel erstellen, um zu verhindern, dass Ihre Benutzer e-Mail-Nachrichten zur Analyse an Microsoft senden und in ihren eigenen Sicherheitsprozessen verwenden.
+ms.openlocfilehash: 7ee8fb2bca1071ccd4080379485c1670a5e66a73
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002623"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206408"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Verwenden von Nachrichtenflussregeln, um anzuzeigen, was Ihre Benutzer an Microsoft melden
 
-Es gibt mehrere Methoden, die Sie false positive und false negative Nachrichten an Microsoft zur Analyse senden können. E-Mail-Flussregeln können Sie als Administrator finden Sie unter was Ihre Benutzer an Microsoft als Spam, nicht-Spam und Phishing-Angriffen reporting. Weitere Informationen finden Sie unter [Submit Spam, nicht-Spam und Phishing-Betrug Nachrichten an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Im Gegensatz dazu können Sie eine Exchange-Transportregel zum verhindern, dass Ihre Benutzer am Senden von e-Mail-Nachrichten an Microsoft zur Analyse und deren Verwendung in Ihrer eigenen Sicherheitsprozesse erstellen.
+Es gibt mehrere Möglichkeiten, wie Sie falsch positive und falsch negative Nachrichten zur Analyse an Microsoft senden können. Als Administrator können Sie Nachrichtenfluss Regeln verwenden, um zu sehen, was Ihre Benutzer an Microsoft als Spam-, nicht-Spam-und Phishing-Scams melden. Weitere Informationen finden Sie unter [Submit Spam, Non-Spam, and Phishing Scam messages to Microsoft for Analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Umgekehrt können Sie eine Exchange-Transport Regel erstellen, um zu verhindern, dass Ihre Benutzer e-Mail-Nachrichten zur Analyse an Microsoft senden und in ihren eigenen Sicherheitsprozessen verwenden.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
 Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
   
-Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unterEintrag „Transportregeln" im Thema [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) und Eintrag „Outlook Web App-Postfachrichtlinien" im Thema [Clients and mobile devices permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx). 
+Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Transport Regeln" im Thema [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) and the "Outlook on the Web Mailbox Policies" im Thema [Clients and Mobile Devices Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) . 
   
 Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
   
@@ -42,14 +42,14 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
 4. Unter **Diese Regel anwenden, wenn...** können Sie **Empfänger** und anschließend **Adresse enthält eines dieser Wörter** wählen.
     
 5. Im Feld **Wörter oder Ausdrücke angeben** müssen Sie folgende Änderungen vornehmen: 
-    - Typ `abuse@messaging.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und geben Sie `junk@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif). Diese e-Mail-Adressen dienen zum Übermitteln von falsch negativer Nachrichten an Microsoft.
-    - Typ `phish@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif). Diese e-Mail-Adresse wird verpassten Phishing-Mails an Microsoft zu übermitteln.
-    - Typ `false_positive@messaging.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und geben Sie `not_junk@office365.microsoft.com` , und klicken Sie dann auf ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif). Diese e-Mail-Adressen werden verwendet, um falsch positiver Nachrichten an Microsoft zu übermitteln.
+    - Geben `abuse@messaging.microsoft.com` Sie ein, ![und klicken](media/ITPro-EAC-AddIcon.gif)Sie dann auf Symbol `junk@office365.microsoft.com` hinzufügen, ![und geben](media/ITPro-EAC-AddIcon.gif)Sie dann auf Symbol hinzufügen. Diese e-Mail-Adressen werden verwendet, um falsch negative Nachrichten an Microsoft zu senden.
+    - Geben `phish@office365.microsoft.com` Sie ein, ![und klicken](media/ITPro-EAC-AddIcon.gif)Sie auf Symbol hinzufügen. Diese e-Mail-Adresse wird verwendet, um verpasste Phishing-Nachrichten an Microsoft zu senden.
+    - Geben `false_positive@messaging.microsoft.com` Sie ein, ![und klicken](media/ITPro-EAC-AddIcon.gif)Sie dann auf Symbol `not_junk@office365.microsoft.com` hinzufügen, ![und geben](media/ITPro-EAC-AddIcon.gif)Sie dann auf Symbol hinzufügen. Diese e-Mail-Adressen werden verwendet, um falsch positive Nachrichten an Microsoft zu senden.
     - Klicken Sie auf **OK**.
     
 6. Wählen Sie unter **Folgendes ausführen** die Option **Bcc der Nachricht an...** aus, und wählen Sie dann die Postfächer aus, in denen Sie Nachrichten erhalten möchten. 
     
-7. Wenn Sie möchten, können Sie, Auswahl der Überwachungsregel, testen Sie die Regel, aktivieren die Regel während eines bestimmten Zeitraums und andere Auswahl. Es wird empfohlen, testen die Regel für einen bestimmten Zeitraum, bevor Sie es erzwingen. Finden Sie [Vorgehensweisen für e-Mail-Flussregeln](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures). 
+7. Wenn Sie möchten, können Sie eine Auswahl treffen, um die Regel zu überwachen, die Regel zu testen, die Regel während eines bestimmten Zeitraums zu aktivieren und andere Optionen auszuwählen. Es wird empfohlen, die Regel für einen Zeitraum zu testen, bevor Sie Sie erzwingen. Weitere Informationen finden Sie unter [Verfahren für Nachrichtenfluss Regeln](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures). 
     
 8. Klicken Sie auf die Schaltfläche **Speichern**, um die Regel zu speichern. Sie wird in der Liste der Regeln angezeigt. 
     
