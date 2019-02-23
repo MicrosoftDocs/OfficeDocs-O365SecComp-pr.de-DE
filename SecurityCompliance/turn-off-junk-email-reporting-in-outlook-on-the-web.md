@@ -1,60 +1,60 @@
 ---
-title: Deaktivieren der junk-e-Berichte in Outlook im Web
+title: Deaktivieren von Junk-e-Mail-Berichten in Outlook im Web
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2015
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
-description: Als ein Office 365-Administrator können Sie die Möglichkeit für die Personen auf Bericht e-Mails als Junk-e-deaktivieren.
-ms.openlocfilehash: 8ee5ff87408b80c443e4cf950ce49f624096becb
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Als Office 365-Administrator können Sie die Möglichkeit für Personen, e-Mails als Junk-e-Mails zu melden, deaktivieren.
+ms.openlocfilehash: 4c84ae6b92658d045675fd8e8ffe6a6cff516886
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272040"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213915"
 ---
-# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a><span data-ttu-id="1aa74-103">Deaktivieren der junk-e-Berichte in Outlook im Web</span><span class="sxs-lookup"><span data-stu-id="1aa74-103">Turn off junk email reporting in Outlook on the web</span></span>
+# <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a><span data-ttu-id="4aaf5-103">Deaktivieren von Junk-e-Mail-Berichten in Outlook im Web</span><span class="sxs-lookup"><span data-stu-id="4aaf5-103">Turn off junk email reporting in Outlook on the web</span></span>
 
-<span data-ttu-id="1aa74-p101">Sie können für die Analyse mithilfe der Outlook auf das Web junk-e-Optionen, reporting, wie beschrieben in den [junk-e-Bericht und Phishing-Mails in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)Junk, Phishing und nicht-junknachrichten an Microsoft senden. Wenn Sie keine dieser Optionen verwenden möchten, können Administratoren diese über das Cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="1aa74-p101">You can send junk, phishing, and not junk messages to Microsoft for analysis using the Outlook on the web junk email reporting options, as described in [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). If you don't want to use these options,admins can turn them off via the [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet.</span></span> 
+<span data-ttu-id="4aaf5-p101">Sie können Junk-, Phishing-und nicht-Junk-e-Mail-Nachrichten mithilfe der Optionen Outlook im Web (früher als Outlook Web App bezeichnet) Junk-Email-Berichterstellung an Microsoft senden, wie in [Bericht Junk-e-Mail und Phishing-Scams in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)beschrieben. Wenn Sie diese Optionen nicht verwenden möchten, können Administratoren Sie über das Cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="4aaf5-p101">You can send junk, phishing, and not junk messages to Microsoft for analysis using the Outlook on the web (formerly known as Outlook Web App) junk email reporting options, as described in [Report junk email and phishing scams in Outlook on the web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). If you don't want to use these options,admins can turn them off via the [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) cmdlet.</span></span> 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="1aa74-106">Was sollten Sie wissen, bevor Sie beginnen?</span><span class="sxs-lookup"><span data-stu-id="1aa74-106">What do you need to know before you begin?</span></span>
-<span data-ttu-id="1aa74-107"><a name="sectionSection0"> </a></span><span class="sxs-lookup"><span data-stu-id="1aa74-107"></span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="4aaf5-106">Was sollten Sie wissen, bevor Sie beginnen?</span><span class="sxs-lookup"><span data-stu-id="4aaf5-106">What do you need to know before you begin?</span></span>
+<span data-ttu-id="4aaf5-107"><a name="sectionSection0"> </a></span><span class="sxs-lookup"><span data-stu-id="4aaf5-107"></span></span>
 
-- <span data-ttu-id="1aa74-108">Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten</span><span class="sxs-lookup"><span data-stu-id="1aa74-108">Estimated time to complete: 5 minutes</span></span>
+- <span data-ttu-id="4aaf5-108">Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten</span><span class="sxs-lookup"><span data-stu-id="4aaf5-108">Estimated time to complete: 5 minutes</span></span>
     
-- <span data-ttu-id="1aa74-p102">Sie müssen Berechtigungen zugewiesen werden, bevor Sie dieses Verfahren oder Verfahren ausführen können. Welche Berechtigungen Sie benötigen, finden Sie unter den Eintrag "Outlook Web App-Postfachrichtlinien" im Thema [Outlook Web App-Berechtigungen](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) .</span><span class="sxs-lookup"><span data-stu-id="1aa74-p102">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Outlook Web App permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) topic.</span></span> 
-    
-- <span data-ttu-id="1aa74-111">Vor dem Ausführen der Cmdlets zum Deaktivieren von Berichten zur junk-e-Mail-erforderlich sind, kann es hilfreich sein, lesen Sie die Informationen in den Themen [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) und [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) sein.</span><span class="sxs-lookup"><span data-stu-id="1aa74-111">Before you run the cmdlets required to turn off junk email reporting, it might be helpful to review the reference information in the [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) and [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) topics.</span></span> 
-    
-## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a><span data-ttu-id="1aa74-112">Schalten Sie junk, Phishing und keine Junk-Mails an Microsoft</span><span class="sxs-lookup"><span data-stu-id="1aa74-112">Turn off junk, phishing, and not junk reporting to Microsoft</span></span>
-<span data-ttu-id="1aa74-113"><a name="sectionSection1"> </a></span><span class="sxs-lookup"><span data-stu-id="1aa74-113"></span></span>
+- <span data-ttu-id="4aaf5-p102">Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Outlook im Web-Postfachrichtlinien" im Thema [Outlook im Web Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) .</span><span class="sxs-lookup"><span data-stu-id="4aaf5-p102">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook on the web mailbox policies" entry in the [Outlook on the web permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) topic.</span></span> 
 
-<span data-ttu-id="1aa74-114">Führen Sie zuerst das folgende Cmdlet aus, um die virtuellen Verzeichnisse abzurufen, für die Sie die Meldung deaktivieren möchten:</span><span class="sxs-lookup"><span data-stu-id="1aa74-114">First, run the following cmdlet to get the virtual directories for which you want to turn off reporting:</span></span>
+- <span data-ttu-id="4aaf5-111">Informationen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="4aaf5-111">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span>
+
+## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a><span data-ttu-id="4aaf5-112">Deaktivieren von Junk-, Phishing-und nicht Junk-Berichterstellung an Microsoft</span><span class="sxs-lookup"><span data-stu-id="4aaf5-112">Turn off junk, phishing, and not junk reporting to Microsoft</span></span>
+<span data-ttu-id="4aaf5-113"><a name="sectionSection1"> </a></span><span class="sxs-lookup"><span data-stu-id="4aaf5-113"></span></span>
+
+<span data-ttu-id="4aaf5-114">Führen Sie zunächst den folgenden Befehl aus, um die Namen der verfügbaren Outlook im Web-Postfachrichtlinien abzurufen:</span><span class="sxs-lookup"><span data-stu-id="4aaf5-114">First, run the following command to get the names of your available Outlook on the web mailbox policies:</span></span>
   
 ```
-Get-OwaMailboxPolicy -Identity <parameter>
+Get-OwaMailboxPolicy | Format-Table Name
 ```
 
-<span data-ttu-id="1aa74-115">Führen Sie dann das folgende Cmdlet aus, um die Meldung von Junk- und Nicht-Junk-E-Mails an Microsoft zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="1aa74-115">Next, run the following cmdlet to turn off junk and not junk reporting to Microsoft:</span></span>
+<span data-ttu-id="4aaf5-115">Verwenden Sie als nächstes die folgende Syntax, um Junk-und nicht Junk-Berichte zu Microsoft in Outlook im Web zu aktivieren oder zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="4aaf5-115">Next, use the following syntax to enable or disable junk and not junk reporting to Microsoft in Outlook on the web:</span></span>
   
 ```
-Set-OwaMailboxPolicy -Identity <parameter> -ReportJunkEmailEnabled $false
+Set-OwaMailboxPolicy -Identity "<OWAMailboxPolicyName>" -ReportJunkEmailEnabled <$true | $false>
 ```
 
-<span data-ttu-id="1aa74-116">Mit dem folgenden Cmdlet wird beispielsweise die Meldung für das virtuelle Verzeichnis "Contoso\owa" deaktiviert:</span><span class="sxs-lookup"><span data-stu-id="1aa74-116">For example, the following cmdlet turns off reporting for virtual directory Contoso\owa:</span></span>
+<span data-ttu-id="4aaf5-116">In diesem Beispiel wird die Berichterstellung in der Outlook Web App-Standardpostfachrichtlinie deaktiviert:</span><span class="sxs-lookup"><span data-stu-id="4aaf5-116">This example turns off reporting in the default Outlook web app mailbox policy:</span></span>
   
 ```
-Set-OwaMailboxPolicy -Identity Default -ReportJunkEmailEnabled $false
+Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ReportJunkEmailEnabled $false
 ```
 
-## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="1aa74-117">Woher wissen Sie, dass dieses Verfahren erfolgreich war?</span><span class="sxs-lookup"><span data-stu-id="1aa74-117">How do you know this worked?</span></span>
-<span data-ttu-id="1aa74-118"><a name="sectionSection2"> </a></span><span class="sxs-lookup"><span data-stu-id="1aa74-118"></span></span>
+<span data-ttu-id="4aaf5-117">Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) und [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).</span><span class="sxs-lookup"><span data-stu-id="4aaf5-117">For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](http://technet.microsoft.com/library/bdd580d3-8812-4b4a-93e8-c6401b0d2f0f.aspx) and [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx).</span></span>
 
-<span data-ttu-id="1aa74-p103">Führen Sie Get-OWAMailboxPolicy, um die Parameterwerte zu prüfen und dann Outlook im Web zugreifen, und stellen Sie sicher, dass die Optionen zum Melden von Junk-e-, Phishing, und nicht auf Junk-e-nicht verfügbar sind. Sie werden möglicherweise trotzdem Nachrichten als Junk-e-, Phishing markieren und keine Junk-e-, aber nicht möglich, diese zu melden.</span><span class="sxs-lookup"><span data-stu-id="1aa74-p103">Run Get-OWAMailboxPolicy to check the parameter values, and then access Outlook on the web and verify that the options to report junk, phishing, and not junk are not available. You'll still be able to mark messages as junk, phishing, and not junk, but you won't be able to report them.</span></span> 
-  
+## <a name="how-do-you-know-this-worked"></a><span data-ttu-id="4aaf5-118">Woher wissen Sie, dass dieses Verfahren erfolgreich war?</span><span class="sxs-lookup"><span data-stu-id="4aaf5-118">How do you know this worked?</span></span>
+<span data-ttu-id="4aaf5-119"><a name="sectionSection2"> </a></span><span class="sxs-lookup"><span data-stu-id="4aaf5-119"></span></span>
 
+<span data-ttu-id="4aaf5-p103">Führen Sie **Get-OwaMailboxPolicy** aus, um die Parameterwerte zu überprüfen, und öffnen Sie dann Outlook im Web für einen betroffenen Benutzer (auf den die Outlook in der Web-Postfachrichtlinie angewendet wurde), und stellen Sie sicher, dass die Optionen zum Melden von Junk-, Phishing-und nicht Junk-e-Mails nicht verfügbar sind. Sie können Nachrichten weiterhin als Junk-e-Mail, als Phishing und nicht als Junk markieren, aber Sie können Sie nicht melden.</span><span class="sxs-lookup"><span data-stu-id="4aaf5-p103">Run **Get-OWAMailboxPolicy** to check the parameter values, and then open Outlook on the web for an affected user (who has the Outlook on the web mailbox policy applied to them) and verify that the options to report junk, phishing, and not junk are not available. You'll still be able to mark messages as junk, phishing, and not junk, but you won't be able to report them.</span></span> 
