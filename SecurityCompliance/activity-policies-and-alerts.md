@@ -6,75 +6,73 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
-description: Definieren Sie die Aktivität Richtlinien mit Office 365-Cloud-App-Sicherheit, um Benachrichtigungen einrichten ausgelöst, wenn bestimmte Aktivitäten auftreten oder zu häufig vorkommen. Durch das Einrichten von Richtlinien für Warnungen ausgelöst, benachrichtigt werden können und bestimmte Vorgänge überwachen.
-ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Definieren Sie Aktivitätsrichtlinien mit Office 365 Cloud App Security, um Warnungen einzurichten, die ausgelöst werden, wenn bestimmte Aktivitäten zu häufig stattfinden. Durch das Einrichten von Richtlinien zum Auslösen von Warnungen können Sie über bestimmte Aktivitäten benachrichtigt werden und diese überwachen.
+ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29604092"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219765"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Aktivitätsrichtlinien und Warnungen in Office 365 Cloud App Security
 
-Office 365 Advanced Security Management ist jetzt Office 365-Cloud-App-Sicherheit.
-  
-|Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
+|Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](anomaly-detection-policies-in-ocas.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](anomaly-detection-policies-in-ocas.md) <br/> |[Verwendung beginnen](utilization-activities-for-ocas.md) <br/> |
    
-Mit Office 365 Cloud App-Sicherheit auslösen erweiterte Cloud Informationsverwaltungsrichtlinien Warnungen für bestimmte Aktivitäten, die auftreten oder zu häufig vorkommen. Nehmen wir beispielsweise bei ein Benutzer versucht, sich bei Office 365 anmelden und ein Fehler auftritt, 70 Mal in einer Minute. Angenommen Sie, ein anderer Benutzer 7.000 Dateien Downloads oder angezeigt wird, in Kanada angemeldet sein, wenn der Benutzer an einem anderen Standort werden soll. Oder schlechter, nehmen Sie an, dass die Person Konto gefährdet, und ein Angreifer dieses Konto Zugriff auf die Cloud apps Ihrer Organisation und vertrauliche Daten verwendet.
+Mit Office 365 Cloud App Security lösen erweiterte Cloud-Verwaltungsrichtlinien Warnungen für bestimmte Aktivitäten aus, die passieren oder zu häufig auftreten. Nehmen Sie beispielsweise an, ein Benutzer versucht, sich bei Office 365 anzumelden und schlägt in einer Minute 70-mal fehl. Nehmen wir an, dass ein anderer Benutzer 7.000-Dateien herunterlädt oder anscheinend aus Kanada angemeldet ist, wenn sich dieser Benutzer an einem anderen Standort befinden soll. Oder schlimmer noch: angenommen, das Konto eines Benutzers wurde kompromittiert, und ein Angreifer verwendet dieses Konto, um auf Cloud-apps und vertrauliche Daten Ihrer Organisation zuzugreifen.
   
-Wenn Sie ein [globaler Administrator oder Sicherheitsadministrator](permissions-in-the-security-and-compliance-center.md)sind, benachrichtigen Aktivität Benachrichtigungen, dass Sie, wenn Ereignisse wie diese auftreten. Sie können dann übernehmen bestimmte Aktionen, wie beispielsweise ein Benutzerkonto aussetzen, bis Sie untersuchen können, was passiert ist.
+Wenn Sie ein [globaler Administrator oder Sicherheitsadministrator](permissions-in-the-security-and-compliance-center.md)sind, Benachrichtigen Sie Aktivitäts Warnungen, wenn Ereignisse wie diese auftreten. Sie können dann bestimmte Aktionen ausführen, beispielsweise das Anhalten eines Benutzerkontos, bis Sie untersuchen können, was passiert ist.
   
 > [!NOTE]
-> Office 365 Cloud App-Sicherheitsrichtlinien unterscheiden sich von [Warnen Richtlinien in die Office 365-Sicherheit &amp; Compliance Center](alert-policies.md). Cloud-Umgebung Ihrer Organisation verwalten der Aktivität in diesem Artikel beschriebenen Richtlinien sind in der Cloud App Sicherheit in Office 365-Portal definiert und können Ihnen helfen. 
+> Office 365 Cloud App-Sicherheitsrichtlinien unterscheiden sich von [Warnungsrichtlinien im office 365 &amp; Security Compliance Center](alert-policies.md). Die in diesem Artikel beschriebenen Aktivitätsrichtlinien sind im Sicherheitsportal der Office 365 Cloud App definiert und können Ihnen dabei helfen, die Cloud-Umgebung Ihrer Organisation besser zu verwalten. 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie Folgendes sicher:
   
-- Ihre Organisation verfügt [Office 365-Cloud-App-Sicherheit](office-365-cas-overview.md), und der Dienst ist [aktiviert](turn-on-office-365-cas.md).
+- Ihre Organisation verfügt über [Office 365 Cloud App Security](office-365-cas-overview.md), und der Dienst ist [aktiviert](turn-on-office-365-cas.md).
     
-- [Protokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Office 365-Umgebung aktiviert. 
+- Die [Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für ihre Office 365-Umgebung aktiviert. 
     
 - Sie sind ein globaler Administrator oder Sicherheitsadministrator für Office 365.
     
-## <a name="create-a-new-activity-policy"></a>Erstellen einer neuen Richtlinie Aktivität
+## <a name="create-a-new-activity-policy"></a>Erstellen einer neuen Aktivitätsrichtlinie
 
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zum Portal Cloud App-Sicherheit ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) und zur Anmeldung. <br>Dadurch gelangen Sie zur Seite Office 365 Cloud App-Sicherheitsrichtlinien.<br>![Wenn Sie das Cloud-App Sicherheit in Office 365-Portal aufrufen, beginnen Sie mit der Seite Richtlinien](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zum Sicherheitsportal der Cloud-app ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), und melden Sie sich an. <br>Dadurch gelangen Sie zur Seite Office 365 Cloud App Security Policies.<br>![Wenn Sie zum Office 365 Cloud App Security Portal wechseln, beginnen Sie mit der Seite Richtlinien](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-2. Klicken Sie auf **Richtlinie erstellen**, und wählen Sie dann auf **Richtlinie Aktivität**.<br>![Wenn Sie eine Richtlinie in O365 CAS erstellen, können Sie zwischen Aktivität und Normalbetriebswerte Richtlinien auswählen.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Klicken Sie auf **Richtlinie erstellen**, und wählen Sie dann **Aktivitätsrichtlinie**aus.<br>![Wenn Sie eine Richtlinie in O365-CAS erstellen, können Sie zwischen Aktivitätsrichtlinien und Erkennungsrichtlinien für Anomalien wählen.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-3. Geben Sie auf der Seite **die Aktivität Richtlinie erstellen** den **Richtliniennamen** und eine **Beschreibung**ein. Um die Richtlinie auf eine entsprechende Standardvorlage basieren soll, wählen Sie in der Liste **Vorlagen für Gruppenrichtlinien** , oder erstellen Sie eine eigene Richtlinie ohne eine Vorlage.<br>![Sie können mit Office 365-Cloud-App-Sicherheit Aktivität Richtlinien erstellen.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. Geben Sie auf der Seite **Aktivitätsrichtlinie erstellen** den Namen und die **Beschreibung**der **Richtlinie** an. Wenn Sie die Richtlinie auf einer Standardvorlage basieren möchten, wählen Sie eine in der Liste **Richtlinienvorlage** aus, oder erstellen Sie Ihre eigene Richtlinie, ohne eine Vorlage zu verwenden.<br>![Sie können Aktivitätsrichtlinien mit Office 365 Cloud App Security erstellen.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-4. Wählen Sie eine **Richtlinie Schweregrad** (niedrig, Mittel oder hoch), mit denen gemessen, wie schwerwiegend für Sie ist, wenn diese Richtlinie eine Warnung ausgelöst wird. So können Sie Warnungen gefiltert werden, wenn Sie später überprüfen möchten. 
+4. Wählen Sie einen **Richtlinien Schweregrad** (niedrig, Mittel oder hoch) aus, der misst, wie schwerwiegend es für Sie ist, wenn diese Richtlinie eine Warnung auslöst. Dadurch können Sie Warnungen filtern, wenn Sie Sie später überprüfen. 
     
-5. Wählen Sie eine **Kategorie** für diese Richtlinie. Dies hilft Ihnen filtern und Sortieren Warnungen, die ausgelöst wurden, oder wenn Sie diese Änderungen vornehmen können Sie feststellen, Gruppenrichtlinien. 
+5. Wählen Sie eine **Kategorie** für diese Richtlinie aus. Dadurch können Sie Warnungen Filtern und sortieren, die ausgelöst wurden, oder Gruppenrichtlinien, wenn Sie Sie überprüfen, um Änderungen vorzunehmen. 
     
-6. Wählen Sie **über Benutzeraktivität – Filter** einrichten, andere Aktionen oder Metriken, die eine Warnung basierend auf dieser Richtlinie ausgelöst werden. 
+6. Wählen Sie **Aktivitäts Filter** aus, um andere Aktionen oder Metriken einzurichten, die eine Warnung basierend auf dieser Richtlinie auslösen. 
     
-7. Klicken Sie unter **Aktivität Parametern entsprechen**Geben Sie an, ob eine Richtlinie Verletzung ausgelöst wird, wenn eine einzelne Aktivität die Filter entspricht, oder ob eine angegebene Anzahl von Aktivitäten wiederholt erforderlich ist, bevor die Warnung löst.<br>Wenn Sie **wiederholt Aktivität**auswählen, geben Sie die Anzahl der Aktivitäten, den Zeitrahmen und gibt an, ob eine Verletzung für einen Benutzer in eine bestimmte app oder für den gleichen Benutzer mit einer beliebigen app zählen wird.
+7. Geben Sie unter **Vorgangs Übereinstimmungsparameter**an, ob eine Richtlinienverletzung ausgelöst wird, wenn eine einzelne Aktivität mit den Filtern übereinstimmt oder ob eine angegebene Anzahl von wiederholten Aktivitäten vor dem Auslösen der Warnung erforderlich ist.<br>Wenn Sie **wiederholte Aktivität**auswählen, geben Sie die Anzahl der Aktivitäten, den Zeitrahmen und an, ob eine Verletzung für einen Benutzer innerhalb einer bestimmten app oder für denselben Benutzer mit einer beliebigen App gezählt werden soll.
     
-8. Optional können Sie **Create-Benachrichtigung** , die zusätzliche Benachrichtigungen Erhalt von Benachrichtigungen aus dieser Richtlinie (per e-Mail, Textnachricht oder beides) erstellen auswählen.<br>**Stellen Sie sicher, dass Ihre e-Mail-Anbieter von gesendeten e-Mails nicht blockiert `no-reply@cloudappsecurity.com` **. 
+8. Optional können Sie **Alert erstellen** auswählen, um zusätzliche Benachrichtigungen für den Empfang von Benachrichtigungen von dieser Richtlinie zu erstellen (per e-Mail, Textnachricht oder beides).<br>**Stellen Sie sicher, dass Ihr e-Mail-Anbieter `no-reply@cloudappsecurity.com`e-Mails, die gesendet werden, nicht blockiert **. 
   
-9. Wählen Sie die **Aktionen** , die ausgeführt werden sollte, wenn eine Warnung ausgegeben wird, zu der Benutzer muss der Benutzer erneut anmelden für Office 365-apps. 
+9. Wählen Sie die **Aktionen** aus, die ausgeführt werden sollen, wenn eine Warnung ausgelöst wird, um den Benutzer anzuhalten, oder wenn der Benutzer sich erneut bei Office 365-Apps anmelden muss. 
     
-10. Wählen Sie **Create** zum Abschließen der Erstellung der Richtlinie. 
+10. Klicken Sie auf **Erstellen** , um die Erstellung der Richtlinie abzuschließen. 
     
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Anomalie Erkennungsrichtlinien](anomaly-detection-policies-in-ocas.md)
+- [Erkennungsrichtlinien für Anomalien](anomaly-detection-policies-in-ocas.md)
     
-- [Integrieren von Ihrem Server SIEM](integrate-your-siem-server-with-office-365-cas.md)
+- [Integrieren Ihres SIEM-Servers](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Lesen und Ausführen einer Aktion Warnungen](review-office-365-cas-alerts.md)
+- [Überarbeiten und Aktionen für Warnungen](review-office-365-cas-alerts.md)
     
-- [Gruppieren Sie Ihre IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
+- [Gruppieren Ihrer IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
     
 

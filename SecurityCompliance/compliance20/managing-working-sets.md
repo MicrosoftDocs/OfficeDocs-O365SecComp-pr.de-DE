@@ -1,12 +1,12 @@
 ---
-title: Verwalten von Arbeitsseiten in erweiterten eDiscovery (Preview)
+title: Verwalten von Arbeitsmappen in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,28 +14,28 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 04078141e9a515cf7a3c34aa353759039cc00283
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 56d0fc0e32c5370d912241e50d0ea0153e4496a1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694831"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214185"
 ---
-# <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>Verwalten von Arbeitsseiten in erweiterten eDiscovery (Preview)  
+# <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>Verwalten von Arbeitsmappen in Advanced eDiscovery (Preview)  
 
 Inhalt bald verfügbar.
 
 ## <a name="more-information"></a>Weitere Informationen
 
-Die folgende Tabelle enthält die Grenzwerte für Arbeitsseiten in erweiterten eDiscovery (Preview).  Alle Elemente, die einzelne Datei Maximalwerte übersteigen, werden als Verarbeitungsfehler angezeigt.
+In der folgenden Tabelle sind die Grenzwerte für Working Sets in Advanced eDiscovery (Preview) aufgeführt.  Alle Elemente, die die maximale Anzahl der einzelnen Dateien überschreiten, werden als Verarbeitungsfehler angezeigt.
     
   |**Beschreibung der Beschränkung**|**Grenzwert**|
   |:-----|:-----|
-  |Maximale Anzahl von Arbeitsseiten  <br/> |50  <br/> |
-  |Gesamtanzahl von Dokumenten, die in eine Anfrage (für alle Arbeitsseiten in die Groß-/Kleinschreibung) aufgenommen werden können  <br/> |1 Mio.  <br/> |
-  |Gesamtgröße pro laden  <br/> |100 GB  <br/> |
-  |Maximale Größe einer Datei   <br/> |100 MB  <br/> |
-  |Maximale Anzahl von Zeichen aus einer einzelnen Datei extrahiert  <br/> |10 Millionen  <br/> |
+  |Maximale Anzahl von Arbeitsmappen  <br/> |50  <br/> |
+  |Gesamtanzahl der Dokumente, die in einen Fall aufgenommen werden können (für alle Arbeitsmappen im Fall)  <br/> |1 Mio.  <br/> |
+  |Gesamtgröße der Datei pro Ladevorgang  <br/> |100 GB  <br/> |
+  |Maximale Größe einer einzelnen Datei   <br/> |100 MB  <br/> |
+  |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen  <br/> |
   |Tiefe der eingebetteten Elemente in einem Dokument  <br/> |25  <br/> |
   
 

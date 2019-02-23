@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Erläuterung dazu, wie Microsoft Mandanten Grenzen für Office 365 überwacht und testet.'
-ms.openlocfilehash: 25b6f713d766b4b12e1c250b54421ad99dff8a1c
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fce217bfcb5fec1ba3fb6da70eb6f9da9a2c1d44
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090937"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221095"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Überwachen und Testen von Mandantengrenzen
 Microsoft überwacht und überprüft die Schwachstellen und Sicherheitsrisiken in Mandanten Grenzen kontinuierlich, einschließlich der Überwachung von Angriffen, Berechtigungs Verletzungen und Ressourcenknappheit. Wir verwenden auch mehrere interne Systeme, um die unangemessene Ressourcenauslastung kontinuierlich zu überwachen, was bei Erkennung die integrierte Drosselung auslöst.

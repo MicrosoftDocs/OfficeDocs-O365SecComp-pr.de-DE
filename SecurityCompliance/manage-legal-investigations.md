@@ -1,140 +1,139 @@
 ---
-title: Verwalten von rechtlichen Ermittlungen in Office 365
+title: Verwalten von rechtlichen Untersuchungen in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Verwenden von eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center zum Verwalten von Ihrer Organisation rechtliche Untersuchung. Wenn Sie ein E5-Abonnement verfügen, können Sie weitere Groß-/Kleinschreibung Daten analysieren, mithilfe von Text Analytics, Computer Lern- und vorhersehbare Codierung Funktionen des erweiterten eDiscovery.
-ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
-ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
+description: Verwenden Sie eDiscovery-Fälle im Office 365 &amp; Security Compliance Center, um die rechtlichen Untersuchungen Ihrer Organisation zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten mithilfe der Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery weiter analysieren.
+ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719049"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214395"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Ermittlungen in Office 365
+# <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Untersuchungen in Office 365
 
-Organisationen verfügen über viele Gründe für die auf eine rechtliche Anfrage im Zusammenhang mit bestimmten Führungskräfte oder andere Mitarbeiter in Ihrer Organisation zu reagieren. Dies kann umfassen schnell suchen und Aufbewahren von weiteren Untersuchung bestimmte Informationen in e-Mail, Dokumenten, Sofortnachrichtenunterhaltungen und andere Speicherorte für Inhalte von Personen in ihrer täglichen Arbeitsaufgaben verwendet. Sie können diese und viele andere ähnlichen Aktivitäten ausführen, mit der Groß-/Kleinschreibung eDiscovery-Tools in der Office 365-Sicherheit &amp; Compliance Center.
+Organisationen haben viele Gründe, auf einen Rechtsstreit mit bestimmten Führungskräften oder anderen Mitarbeitern in Ihrer Organisation zu reagieren. Dies kann dazu führen, dass Sie weitere Untersuchungen in e-Mails, Dokumenten, Sofortnachrichtenunterhaltungen und anderen Inhaltsspeicherorten, die von Personen in ihren täglichen Arbeitsaufgaben verwendet werden, schnell finden und behalten. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery Case Tools im Office 365 Security &amp; Compliance Center ausführen.
   
-[Verwalten von rechtlichen Ermittlungen mit eDiscovery-Fällen](#manage-legal-investigations-with-ediscovery-cases)
+[Verwalten von rechtlichen Untersuchungen mit eDiscovery-Fällen](#manage-legal-investigations-with-ediscovery-cases)
   
-[Analysieren der Groß-/Kleinschreibung-Daten mithilfe von Office 365 erweiterte eDiscovery](#analyze-case-data-using-office-365-advanced-ediscovery)
+[Analysieren von Falldaten mit Office 365 Advanced eDiscovery](#analyze-case-data-using-office-365-advanced-ediscovery)
   
-**Möchten Sie wissen, wie Microsoft die eDiscovery Ermittlungen verwaltet?** Hier ist ein [Whitepaper](https://go.microsoft.com/fwlink/?linkid=852161) , die Sie herunterladen können, die erläutert, wie wir die gleichen Office 365 Such- und Untersuchung Tools zum Verwalten von unserem interne eDiscovery-Workflow.
+**Möchten Sie wissen, wie Microsoft eDiscovery-Untersuchungen verwaltet?** Hier ist ein [Technisches Whitepaper](https://go.microsoft.com/fwlink/?linkid=852161) , das Sie herunterladen können, das erklärt, wie wir dieselben Office 365-Such-und-Untersuchungs Tools verwenden, um unseren internen eDiscovery-Workflow zu verwalten.
    
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Verwalten von rechtlichen Ermittlungen mit eDiscovery-Fällen
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Verwalten von rechtlichen Untersuchungen mit eDiscovery-Fällen
 
-eDiscovery-Fällen können Sie steuern, wer erstellen, Zugriff und eDiscovery-Fälle in Ihrer Organisation verwalten kann. Anwendungsfälle Elemente und welche Arten von Aktionen, die sie ausführen, platzieren Sie einen Haltestatus auf Speicherorte für Inhalte in eine rechtliche Anfrage relevant und Verwenden der Suchfunktion von Inhalten die Speicherorte für die Suche nach Inhalten zu halten, die möglicherweise Ihre Anfrage schnell-Steuerelement hinzufügen. Sie können auch exportieren, und diese Ergebnisse zur weiteren Untersuchung von externen Prüfern herunterladen. Wenn Ihre Office 365-Organisation ein Abonnement E5 verfügt, können Sie auch Suchergebnisse für die Analyse in erweiterten eDiscovery vorbereiten.
+mit eDiscovery-Fällen können Sie steuern, wer eDiscovery-Fälle in Ihrer Organisation erstellen, darauf zugreifen und verwalten kann. Verwenden Sie Fälle, um Mitglieder hinzuzufügen und zu steuern, welche Arten von Aktionen Sie ausführen können, halten Sie die für einen Rechtsstreit relevanten inhaltsspeicherorte fest, und verwenden Sie das Inhaltssuche-Tool, um die Speicherorte für Inhalte zu durchsuchen, die möglicherweise auf Ihren Fall reagieren. Anschließend können Sie diese Ergebnisse für weitere Untersuchungen durch externe Prüfer exportieren und herunterladen. Wenn Ihre Office 365-Organisation über ein E5-Abonnement verfügt, können Sie auch Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten.
   
-- [Verwalten des Workflows eDiscovery](ediscovery-cases.md) durch Erstellen und Verwenden von eDiscovery-Fälle für jede rechtliche Untersuchung verpflichten sich muss Ihre Organisation 
+- [Verwalten Sie Ihren eDiscovery-Workflow](ediscovery-cases.md) durch Erstellen und Verwenden von eDiscovery-Fällen für jede juristische Untersuchung, die Ihre Organisation ausführen muss. 
     
-- [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md) steuern, wer erstellen und Verwalten von eDiscovery-Fälle in Ihrer Organisation 
+- [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md) zum Steuern, wer eDiscovery-Fälle in Ihrer Organisation erstellen und verwalten kann 
     
-- [Einrichten von Compliance-Grenzen](set-up-compliance-boundaries.md) , die Speicherorte für Benutzer Inhalte steuern, die eDiscovery-Manager durchsuchen können 
+- [Einrichten von Konformitäts Grenzen](set-up-compliance-boundaries.md) zur Steuerung der Benutzerinhalts Speicherorte, die eDiscovery-Manager durchsuchen können 
     
 - [Suchen nach Inhalten](search-for-content.md) in Ihrer Organisation 
     
-- [Vorbereiten von Groß-/Kleinschreibung Inhalte für erweiterte eDiscovery](prepare-search-results-for-advanced-ediscovery.md) , damit Sie mithilfe der Analyse ausführen, können erweiterte des eDiscovery leistungsstarke analytic Tools wie optische zeichenerkennung, e-Mail-threading und vorhersehbare codieren 
+- [Vorbereiten von Case-Inhalten für Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md) , damit Sie Analysen mit den leistungsfähigen analyseTools von Advanced eDiscovery wie optische Zeichenerkennung, e-Mail-Threading und Vorhersage Codierung ausführen können 
     
 ### <a name="use-scripts-for-advanced-scenarios"></a>Verwenden von Skripts für erweiterte Szenarien
 
-Wie im vorherigen Abschnitt, die Skripts für die Inhaltssuche Szenarien aufgelistet haben wir auch einige Sicherheit erstellt &amp; Compliance Center PowerShell-Skripts zur einfacheren Verwaltung von eDiscovery-Fälle.
+Wie im vorherigen Abschnitt, in dem Skripts für die Inhaltssuche aufgeführt wurden, haben wir auch &amp; einige PowerShell-Skripts für Security Compliance Center erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
   
-- [Erstellen einer eDiscovery-Haltebericht](create-a-report-on-holds-in-ediscovery-cases.md) , die enthält Informationen zu allen enthält in Ihrer Organisation zugeordnet, mit eDiscovery-Fälle 
+- [Erstellen Sie einen eDiscovery-Aufbewahrungsbericht](create-a-report-on-holds-in-ediscovery-cases.md) mit Informationen zu allen mit eDiscovery-Fällen in Ihrer Organisation verknüpften Haltebereichen. 
     
-- Halten Sie [Postfächer hinzufügen und OneDrive-Speicherorte](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) für eine Liste von Benutzern zu einer eDiscovery 
+- [Hinzufügen von Postfächern und OneDrive-Standorten](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) für eine Liste von Benutzern zu einem eDiscovery-Speicher 
   
-## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analysieren der Groß-/Kleinschreibung-Daten mithilfe von Office 365 erweiterte eDiscovery
+## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analysieren von Falldaten mit Office 365 Advanced eDiscovery
 
-Office 365 erweiterte eDiscovery basiert auf den Content Such- und eDiscovery-Funktionen in den vorherigen Abschnitten beschrieben. Nach der Erstellung eines eDiscovery-Fall Place Verwaltungsberechtigter Speicherorte auf halten und Sammeln von Daten, die möglicherweise auf die Groß-/Kleinschreibung reagieren, Sie können dann weiter analysieren, die Daten mithilfe der Analytics Text, den Computer erlernen und die Vorhersagen Codierung Funktionen von erweitert eDiscovery. Dadurch kann Ihre Organisation schnell Tausende von e-Mail-Nachrichten, Dokumente und andere Arten von Daten finden Sie diese Objekte an, die sich am ehesten sind, relevant mit einer bestimmten Anfrage verarbeiten. Wir haben unified Fallmanagement und erweiterte eDiscovery, so dass Sie die gleiche Groß-/Kleinschreibung innerhalb der Sicherheit nahtlos verwalten können und &amp; Compliance Center.
+Office 365 Advanced eDiscovery baut auf den in den vorherigen Abschnitten beschriebenen Inhaltssuche-und eDiscovery-Funktionen auf. Nachdem Sie einen eDiscovery-Fall erstellt haben, die Aufbewahrungsorte in die Warteschleife gestellt und Daten gesammelt haben, die möglicherweise auf den Fall reagieren, können Sie die Daten mithilfe der Funktionen "Textanalyse", "Maschinelles Lernen" und "Predictive Coding capabilities of Advanced" weiter analysieren. eDiscovery. Dadurch kann Ihre Organisation Tausende von e-Mail-Nachrichten, Dokumenten und anderen Arten von Daten schnell verarbeiten, um die Elemente zu finden, die für einen bestimmten Fall wahrscheinlich relevant sind. Und wir haben Unified Case Management und Advanced eDiscovery, damit Sie den gleichen Fall innerhalb des Security &amp; Compliance Center nahtlos verwalten können.
   
 > [!NOTE]
-> Um eine erweiterte eDiscovery mit Benutzerdaten zu analysieren, muss der Benutzer (der Verwaltungsberechtigte der Daten) eine Lizenz für Office 365 E5 zugewiesen werden. Alternativ können der Benutzer mit einer Lizenz für Office 365 E1 oder E3 eine erweiterte eDiscovery eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die zugewiesenen Fällen und erweiterte eDiscovery verwenden, um Daten zu analysieren erforderlich keine E5-Lizenz. 
+> Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (der Depotbank der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-Standalone-Lizenz zugewiesen werden. Administratoren und Compliance Officer, denen Fälle zugeordnet sind und die erweiterte eDiscovery zur Analyse von Daten verwenden, benötigen keine E5-Lizenz. 
   
 ### <a name="get-started"></a>Erste Schritte
 
-Die schnellste Möglichkeit zum Einstieg in erweiterten eDiscovery ist eine Anfrage erstellen und Vorbereiten von Suchergebnissen in Security &amp; Compliance Center, laden Sie die Ergebnisse in erweiterten eDiscovery, und führen Sie case-Daten, und klicken Sie dann exportieren Express-Analyse zum Analysieren der Ergebnisse für eine externe Prüfung.
+Die schnellste Möglichkeit, mit Advanced eDiscovery zu beginnen, besteht darin, einen Fall zu erstellen und Suchergebnisse im &amp; Security Compliance Center vorzubereiten, diese Ergebnisse in Advanced eDiscovery zu laden und dann die Express Analyse auszuführen, um die Falldaten zu analysieren und dann die Ergebnisse für externe Überprüfungen.
   
-- [Erhalten Sie einen schnellen Überblick](quick-setup-for-advanced-ediscovery.md) , der den erweiterten eDiscovery-workflow 
+- [Schnellübersicht](quick-setup-for-advanced-ediscovery.md) über den erweiterten eDiscovery-Workflow 
     
-- [Einrichten von Benutzern und Anfragen](set-up-users-and-cases-in-advanced-ediscovery.md) für erweiterte eDiscovery durch Erstellen einer Anfrage, Zuweisen von Berechtigungen für eDiscovery und Hinzufügen von case-Elemente, alle mithilfe der Sicherheits &amp; Compliance Center 
+- [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md) für Advanced eDiscovery durch Erstellen eines Falls, Zuweisen von eDiscovery-Berechtigungen und Hinzufügen von Fall Mitgliedern, alle mithilfe &amp; des Security Compliance Centers 
     
-- [Vorbereiten und Laden von Suchdaten](prepare-data-for-advanced-ediscovery.md) zu der erweiterten eDiscovery-Fall 
+- [Vorbereiten und Laden von Such Daten](prepare-data-for-advanced-ediscovery.md) in den Fall in Advanced eDiscovery 
     
-- [Nicht-Office 365 Laden von Daten](import-non-office-365-data-into-advanced-ediscovery.md) in einer Anfrage zum Analysieren der erweiterten eDiscovery 
+- [Laden von nicht-Office 365-Daten](import-non-office-365-data-into-advanced-ediscovery.md) in einen Fall zur Analyse in Advanced eDiscovery 
     
-- [Analysis Express verwenden](use-express-analysis-in-advanced-ediscovery.md) , um die Daten in dem Fall schnell zu analysieren und die Ergebnisse auf einfache Weise exportieren 
+- [Verwenden Sie die Express Analyse](use-express-analysis-in-advanced-ediscovery.md) , um die Daten in einem Fall schnell zu analysieren und dann einfach die Ergebnisse zu exportieren. 
     
 ### <a name="analyze-data"></a>Analysieren von Daten
 
-Nach dem Suchen von Daten in die Groß-/Kleinschreibung im erweiterten eDiscovery geladen werden, verwenden Sie des Moduls analysieren, Starten der Analyse. Der erste Teil des Analyseprozesses umfasst das Organisieren von Dateien in Gruppen von eindeutige Dateien, Duplikate, und in der Nähe Duplikate (auch bekannt als Dokument Ähnlichkeit). Klicken Sie dann können Sie die Daten erneut in hierarchisch strukturierter Gruppen von e-Mail-Threads und Designs organisieren und, optional, Set ignorieren Textfilter bestimmten Text aus der Analyse ausschließen. Klicken Sie dann Sie führen Sie die Analyse und die Ergebnisse anzeigen.
+Nachdem die Such Daten in Advanced eDiscovery in den Fall geladen wurden, verwenden Sie das Analysemodul, um mit der Analyse zu beginnen. Der erste Teil des Analyseprozesses besteht darin, Dateien in Gruppen von eindeutigen Dateien, Duplikaten und beinahe-Duplikaten zu organisieren (auch als Dokument Ähnlichkeit bekannt). Dann organisieren Sie die Daten erneut in hierarchisch strukturierten Gruppen von e-Mail-Threads und-Designs und legen optional Textfilter ignorieren fest, um bestimmten Text aus der Analyse auszuschließen. Anschließend führen Sie die Analyse aus und zeigen die Ergebnisse an.
   
-- [Informieren Sie sich über Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md) zur Vorbereitung der Analysieren von Daten in erweiterten eDiscovery 
+- Informationen zur [Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md) bei der Vorbereitung der Analyse von Daten in Advanced eDiscovery 
     
-- [Richten Sie die Optionen](set-analyze-options-in-advanced-ediscovery.md) für in der Nähe Duplikate, Designs und e-Mail-threading und führen Sie das Analyse-Modul 
+- [Richten Sie die Optionen](set-analyze-options-in-advanced-ediscovery.md) für Near-Duplicates, Designs und e-Mail-Threading ein, und führen Sie dann das Analysemodul aus. 
     
-- Ausschließen von Text und Textzeichenfolgen aus der analysierten [ignorieren Textfilter einrichten](set-ignore-text-in-advanced-ediscovery.md) . Diese Filter ignoriert auch Text, bei der Ausführung Relevanz Analyse 
+- [Einrichten von Text filtern ignorieren](set-ignore-text-in-advanced-ediscovery.md) , damit Text und Textzeichenfolgen nicht analysiert werden können Diese Filter ignorieren auch Text, wenn Sie die Relevanz-Analyse ausführen. 
     
-- [Anzeigen der Ergebnisse](view-analyze-results-in-advanced-ediscovery.md) der Analyse abgeschlossen 
+- [Anzeigen der Ergebnisse](view-analyze-results-in-advanced-ediscovery.md) des Analyseprozesses 
     
-- [Konfigurieren von erweiterten Einstellungen](set-analyze-advanced-settings-in-advanced-ediscovery.md) für die Analyseprozess 
+- [Konfigurieren erweiterter Einstellungen](set-analyze-advanced-settings-in-advanced-ediscovery.md) für den Analyseprozess 
     
-### <a name="set-up-relevance-training"></a>Einrichten von Relevanz-Schulung
+### <a name="set-up-relevance-training"></a>Einrichten des Relevanztrainings
 
-Vorhersehbare codieren (gewählte Relevanz) im Dialogfeld Erweitert eDiscovery können Sie die Schulen auf was Sie suchen mit deren Hilfe Sie bestimmen, welche (Informationen, ob etwas relevant oder nicht ist), um des Systems auf einer kleinen Anzahl von Dokumenten.
+PreDictive Coding (called Relevance) in Advanced eDiscovery ermöglicht Ihnen, das System auf das zu trainieren, wonach Sie suchen, indem Sie Entscheidungen treffen (um zu entscheiden, ob etwas relevant ist).
   
-- [Hier finden Sie Informationen zum Einrichten von Relevanz Schulung](manage-relevance-setup-in-advanced-ediscovery.md) , finden Sie in Kategorien Dateien, die mit einer Anfrage relevant sind, und Definieren der Fall Problemen 
+- Informationen [zum Einrichten von Relevanz-Schulungen](manage-relevance-setup-in-advanced-ediscovery.md) , zum Markieren von Dateien, die für einen Fall relevant sind, und zum Definieren von Fall Problemen 
     
-- [Groß-/Kleinschreibung definieren Probleme](define-issues-and-assign-users.md) , und weisen Sie einem Benutzer, die die Dateien Schulen wird jedes Problem 
+- [Definieren von Fall Problemen](define-issues-and-assign-users.md) und Zuweisen jedes Problems zu einem Benutzer, der die Dateien ausbildet 
     
-- [Fügen Sie die importierte Dateien zu aktuellen oder neuen Auslastung](set-up-loads-to-add-imported-files.md) , die die Relevanz Schulung hinzugefügt werden soll; eine Auslastung ist, einen neuen Batch von Dateien, die mit einer Anfrage hinzugefügt und dann für Relevanz Schulung verwendet werden 
+- [Hinzufügen von importierten Dateien zu aktueller oder neuer Auslastung](set-up-loads-to-add-imported-files.md) , die der Relevanz-Schulung hinzugefügt wird; eine Auslastung ist ein neuer Batch von Dateien, die zu einem Fall hinzugefügt werden und dann für Relevanz-Schulung verwendet werden. 
     
-- [Definieren hervorgehoben Schlüsselwörter](define-highlighted-keywords-and-advanced-options.md) , die die Relevanz Schulung hinzugefügt werden können. Dadurch können Sie die Dateien besser zu identifizieren, die mit einer Anfrage relevant sind 
+- [Definieren Sie hervorgehobene Schlüsselwörter](define-highlighted-keywords-and-advanced-options.md) , die der Relevanz-Schulung hinzugefügt werden können. auf diese Weise können Sie Dateien, die für einen Fall relevant sind, besser identifizieren. 
     
-### <a name="run-the-relevance-module"></a>Führen Sie das Modul Relevanz
+### <a name="run-the-relevance-module"></a>Ausführen des Relevance-Moduls
 
-Nach dem Einrichten Schulung können Sie zum Ausführen des Moduls Relevanz und Bewertung der Wirksamkeit der Schulung Einstellungen, die diese Ergebnisse in einer nach Relevanz, die Ihnen helfen zu entscheiden, ob Sie zusätzliche Schulungen durchführen müssen, oder wenn Sie zum Markieren von Dateien als starten bereit sind für diesen Fall relevant.
+Nachdem Sie die Schulung eingerichtet haben, können Sie das Relevanz-Modul ausführen und die Effektivität der Schulungs Einstellungen bewerten, die zu einer Relevanz-Rangfolge führen, mit der Sie entscheiden können, ob Sie zusätzliche Schulungen durchführen müssen, oder ob Sie bereit sind, mit dem Tagging von Dateien zu beginnen. relevant für Ihren Fall.
   
-- [Informieren Sie sich über den Prozess Relevanz](use-relevance-in-advanced-ediscovery.md) und der iterative Prozess der Bewertung, anhand tagging, nachverfolgen und Weiterbildung Beispielsatz von Dateien 
+- [Erfahren Sie mehr über den relevanzprozess](use-relevance-in-advanced-ediscovery.md) und den iterativen Prozess der Bewertung, des Tagging, der Nachverfolgung und des Umschulungs Vorgangs basierend auf einem Beispielsatz von Dateien 
     
-- [Informieren Sie sich über die Bewertung](assessment-in-relevance-in-advanced-ediscovery.md) , in denen einer vertrauten Experten mit der Groß-/Kleinschreibung beschreibt eine Reihe von Groß-/Kleinschreibung Dateien und bestimmt die Effektivität der Relevanz Schulung 
+- [Erfahren Sie mehr über die Bewertung](assessment-in-relevance-in-advanced-ediscovery.md) , bei der ein Experte, der mit dem Fall vertraut ist, eine Reihe von Fall Dateien prüft und die effektivItät der Relevanz-Schulung bestimmt. 
     
-- [Assess Groß-/Kleinschreibung Dateien](tagging-and-assessment-in-advanced-ediscovery.md) zum Berechnen der Effektivität ( *Funktionsvielfalt* genannt) der Schulung Einstellungen, und klicken Sie dann Tagdateien als relevant ist oder nicht relevant sind, zu der Fall; Dadurch können Sie bestimmen, ob die Schulung für der aktuelle ausreicht oder wenn Sie die Schulung Einstellungen anpassen sollten. 
+- [Bewerten Sie die Fall Dateien](tagging-and-assessment-in-advanced-ediscovery.md) , um die Effektivität (so genannte *Reichhaltigkeit* ) von Trainingseinstellungen zu berechnen, und markieren Sie dann Dateien als relevant oder nicht relevant für Ihren Fall. auf diese Weise können Sie ermitteln, ob die aktuelle Schulung ausreicht oder ob Sie die Trainingseinstellungen anpassen sollten. 
     
-- [Ausführen der Relevanz Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md) nach Assessment abgeschlossen ist, und klicken Sie dann noch einmal Markieren von Dateien als relevant ist oder nicht für die von Ihnen definierten Probleme relevant für die Groß-/Kleinschreibung 
+- Führen Sie nach Abschluss [der Bewertung die Relevanz-Schulung aus](tagging-and-relevance-training-in-advanced-ediscovery.md) , und markieren Sie dann erneut Dateien als relevant oder nicht relevant für die Probleme, die Sie für den Fall definiert haben. 
     
-- [Nachverfolgen der Relevanz Analyse](track-relevance-analysis-in-advanced-ediscovery.md) Prozess zu ermitteln, ob die Relevanz Schulung erreicht hat, Ziel-Bewertung (bekannt als *stabil Schulung Status* ) oder gibt an, ob weitere Schulungen erforderlich ist; Sie können auch die Ergebnisse der Relevanz für jedes Groß-/Kleinschreibung Problem anzeigen. 
+- [Verfolgen Sie den Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md) Prozess, um festzustellen, ob die Relevanz-Schulung Ihr Bewertungs Ziel erreicht hat (als *stabiler Ausbildungsstatus* bezeichnet) oder ob mehr Schulungen erforderlich sind. Sie können auch die Relevanz-Ergebnisse für jedes Fall Problem anzeigen 
     
-- Bestimmen, ob die Größe des resultierenden Satzes von Fall Dateien [basierend auf Relevanz Analyse treffe](decision-based-on-the-results-in-advanced-ediscovery.md) können zur Prüfung exportiert werden 
+- [Entscheidungen basierend auf der Relevanz-Analyse treffen](decision-based-on-the-results-in-advanced-ediscovery.md) , um die Größe der sich ergebenden Fall Dateien zu bestimmen, die zur Überprüfung exportiert werden können 
     
-- [Testen Sie die Qualität der Relevanz Analyse](test-relevance-analysis-in-advanced-ediscovery.md) überprüft die Cullingverfahren getroffenen während des Aktivierungsvorgangs Relevanz 
+- [Testen der Qualität der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md) , um die während des Relevanz-Vorgangs getroffenen Entscheidungen zu überprüfen 
     
-### <a name="export-results"></a>Exportieren von Ergebnissen
+### <a name="export-results"></a>Ergebnisse exportieren
 
-Der letzte Schritt beim Analysieren von Groß-/Kleinschreibung Daten in erweiterten eDiscovery wird zum Exportieren der Ergebnisse der Analyse für eine externe Prüfung.
+Der letzte Schritt bei der Analyse von Falldaten in Advanced eDiscovery ist das Exportieren der Ergebnisse der Analyse für die externe Überprüfung.
   
-- [Erfahren Sie mehr über die Groß-/Kleinschreibung Datenexport](export-case-data-in-advanced-ediscovery.md)
+- [Informationen zum Exportieren von Falldaten](export-case-data-in-advanced-ediscovery.md)
     
-- [Groß-/Kleinschreibung Exportieren von Daten](export-results-in-advanced-ediscovery.md)
+- [Exportieren von Falldaten](export-results-in-advanced-ediscovery.md)
     
-- [Batch-Verlauf anzeigen und Exportieren von ältere Ergebnisse](view-batch-history-and-export-past-results.md)
+- [Anzeigen des Batchverlaufs und Exportieren vergangener Ergebnisse](view-batch-history-and-export-past-results.md)
     
 - [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md)
     
-### <a name="other-advanced-ediscovery-tools"></a>Andere erweiterte eDiscovery-tools
+### <a name="other-advanced-ediscovery-tools"></a>Weitere Erweiterte eDiscovery-Tools
 
-Erweiterte eDiscovery finden Sie weitere Tools und Funktionen Groß-/Kleinschreibung Datenanalyse Relevanz-Analyse und Exportieren von Daten.
+Advanced eDiscovery bietet zusätzliche Tools und Funktionen, die über die Analyse von Falldaten, die Relevanz-Analyse und den Export von Daten hinausgehen.
   
-- [Ausführen von erweiterten eDiscovery-Berichten](run-reports-in-advanced-ediscovery.md)
+- [Ausführen erweiterter eDiscovery-Berichte](run-reports-in-advanced-ediscovery.md)
     
-- [Definieren von Groß-/Kleinschreibung und Mandanten-Einstellungen](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+- [Definieren von Groß-/Kleinschreibung und Mandanten Einstellungen](define-case-and-tenant-settings-in-advanced-ediscovery.md)
     
-- [Erweiterte eDiscovery-Hilfsprogramme](use-advanced-ediscovery-utilities.md)
+- [Erweiterte eDiscovery-Dienstprogramme](use-advanced-ediscovery-utilities.md)

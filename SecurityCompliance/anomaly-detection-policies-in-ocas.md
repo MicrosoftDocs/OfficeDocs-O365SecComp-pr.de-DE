@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 02/15/2019
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Anomalie-Erkennungsrichtlinien in Office 365 Cloud App Security verwenden Sie integrierte Algorithmen, um mögliche Probleme aufzudecken. Sie sollten über mindestens eine Anomalie-Erkennungsrichtlinie verfügen, die Sie (bei der Erstellung) mithilfe von Filtern optimieren können. '
-ms.openlocfilehash: a3c7fb16ab10b0bcfaca444093e4e1f52468f0c8
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087364"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220675"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 
@@ -98,7 +98,7 @@ Eine Warnung bei mehreren fehlgeschlagenen Anmeldungen kann in der Tat verdächt
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Bereitstellen von App-Steuerelement für den bedingten Zugriff für Office 365-apps](ocas-deploy-conditional-access-app-control.md)
+- [Bereitstellen der App-Steuerung für bedingten Zugriff für Office 365-Apps](ocas-deploy-conditional-access-app-control.md)
 
 - [Gruppieren Ihrer IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
 

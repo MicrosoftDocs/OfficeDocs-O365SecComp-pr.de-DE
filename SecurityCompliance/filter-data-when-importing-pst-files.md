@@ -6,139 +6,139 @@ manager: laurawi
 ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-description: 'Verwenden Sie das neue Feature für intelligente Import in den Import von Office 365-Dienst zum Filtern der Elemente, die tatsächlich an die Ziel-Postfächer importiert. Intelligente importieren können Sie die proaktiv entscheiden, welche Daten zu importieren und zu bleiben. Intelligente Import außerdem Insights auf die Daten, die Sie zu Office 365 importieren. '
-ms.openlocfilehash: c90d9df62c7d8c411196b283acec37959fc95e57
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: 'Verwenden Sie die neue intelligente Importfunktion im Office 365-Import Dienst, um die Elemente zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Mit dem intelligenten Import können Sie proaktiv entscheiden, welche Daten importiert und welche hinterlassen werden sollen. Der intelligente Import bietet außerdem Einblicke in die Daten, die Sie in Office 365 importieren. '
+ms.openlocfilehash: 49399f11a71069059ffae2d03482ac7ffe03daf0
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038198"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219815"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtern von Daten beim Importieren von PST-Dateien in Office 365
 
-Verwenden Sie das neue Feature für intelligente Import in den Import von Office 365-Dienst zum Filtern der Elemente in PST-Dateien, die tatsächlich an die Ziel-Postfächer importiert. Hier wird die Funktionsweise:
+Verwenden Sie die neue intelligente Importfunktion im Office 365-Import Dienst, um die Elemente in PST-Dateien zu filtern, die tatsächlich in die Zielpostfächer importiert werden. So funktioniert es:
   
-- Nachdem Sie erstellen und senden einen Auftrag für Import von PST-Datei, werden PST-Dateien in einen Bereich Azure-Speicher in der Microsoft-Cloud hochgeladen.
+- Nachdem Sie einen PST-Importauftrag erstellt und übermittelt haben, werden PST-Dateien in einen Azure-Speicherbereich in der Microsoft-Cloud hochgeladen.
     
-- Office 365 analysiert die Daten in die PST-Dateien auf sichere Weise durch das Identifizieren von des Alters der Postfachelemente und die verschiedenen Nachrichtentypen in PST-Dateien enthalten.
+- Office 365 analysiert die Daten in den PST-Dateien auf sichere und sichere Weise, indem das Alter der Postfachelemente und die verschiedenen Nachrichtentypen in den PST-Dateien angegeben werden.
     
-- Wenn die Analyse abgeschlossen ist, und die Daten zum Importieren bereit sind, müssen Sie die Option zum Importieren alle Daten in die PST-Dateien oder erhöhen, die Daten, die durch Festlegen von Filtern, die steuern, welche Daten importierten ruft importiert wird. Sie können beispielsweise an:
+- Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, haben Sie die Möglichkeit, alle Daten in den PST-Dateien zu importieren, oder die importierten Daten zu trimmen, indem Sie Filter festlegen, die Steuern, welche Daten importiert werden. Sie können beispielsweise Folgendes auswählen:
     
-  - Importieren Sie nur die Elemente mit einem bestimmten Alter.
+  - Nur Elemente eines bestimmten Alters importieren.
     
-  - Importieren von ausgewählten Nachrichtentypen.
+  - Importiert ausgewählte Nachrichtentypen.
     
-  - Ausschließen von Nachrichten von bestimmten Personen gesendet oder empfangen.
+  - Ausschließen von Nachrichten, die von bestimmten Personen gesendet oder empfangen werden.
     
-- Nach der Konfiguration der filtereinstellungen importiert Office 365 nur die Daten, die an die Ziel-Postfächer in den Importauftrag angegebenen Filterkriterien erfüllt.
+- Nachdem Sie die Filtereinstellungen konfiguriert haben, importiert Office 365 nur die Daten, die den Filterkriterien entsprechen, auf die im Importauftrag angegebenen Zielpostfächer.
     
-In der folgenden Grafik veranschaulicht den intelligenten importieren, und die Aufgaben, die ausgeführt werden und die Aufgaben, die von Office 365 durchgeführt werden.
+Die folgende Grafik zeigt den intelligenten Import Prozess und hebt die Aufgaben, die Sie ausführen, und die Aufgaben, die von Office 365 ausgeführt werden.
   
-![Der intelligente Importvorgang in Office 365](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
+![Der intelligente Import Prozess in Office 365](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Die Schritte in diesem Thema wird vorausgesetzt, dass Sie einen Auftrag für Import von PST-Datei im Office 365 importieren-Dienst mithilfe von Netzwerk hochladen oder Laufwerk des Protokollversands erstellt haben. Eine schrittweise Anleitung finden Sie in den folgenden Themen:
+- Bei den Schritten in diesem Thema wird davon ausgegangen, dass Sie einen PST-Importauftrag im Office 365-Import Dienst mithilfe des Netzwerk-Uploads oder des Laufwerk Versands erstellt haben. Schrittweise Anleitungen finden Sie in einem der folgenden Themen:
     
   - [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien in Office 365](use-network-upload-to-import-pst-files.md)
     
   - [Verwenden des Laufwerkversands zum Importieren von PST-Dateien in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Nach dem Erstellen einer Importauftrag mithilfe von Netzwerk-Upload Seite des Status für den Importauftrag für den Import in Office 365-Sicherheit &amp; Compliance Center auf festgelegt ist **Analysis ausgeführt**, was bedeutet, dass Office 365 die Daten in die PST-Dateien analysiert, die Sie hochgeladen. Klicken Sie auf **Aktualisieren**![aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) zum Aktualisieren des Status für den Importauftrag. 
+- Nachdem Sie einen Importauftrag mithilfe des Netzwerk Uploads erstellt haben, ist der Status für den Importauftrag auf der Seite "Importieren &amp; " in Office 365 Security Compliance Center auf " **Analyse wird ausgeführt**" festgelegt, was bedeutet, dass Office 365 die Daten in den PST-Dateien analysiert, die Sie geladen. Klicken Sie auf](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Refresh aktualisieren, um den Status für den Importauftrag zu aktualisieren. ****![ 
     
-- Für Laufwerk ausgeliefert Importaufträge werden die Daten von Office 365 analysiert nach Microsoft Mitarbeiter im Rechenzentrum Ihrer Festplatte empfangen und Hochladen von PST-Dateien in den Bereich der Azure-Speicher für Ihre Organisation.
+- Bei Import Aufträgen für den Laufwerk Versand werden die Daten von Office 365 analysiert, nachdem Microsoft-Rechenzentrumsmitarbeiter Ihre Festplatte erhalten und die PST-Dateien in den Azure-Speicherbereich für Ihre Organisation hochgeladen haben.
   
-## <a name="filter-data-that-gets-imported-to-mailboxes"></a>Filtern von Daten, die auf Postfächer importiert Ruft
+## <a name="filter-data-that-gets-imported-to-mailboxes"></a>Filtern von Daten, die in Postfächer importiert werden
 
-Nach dem Erstellen eine PST-Datei importieren Auftrag, befolgen Sie diese Schritte, um die Daten zu filtern, bevor Sie es in Office 365 importieren.
+Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Schritte aus, um die Daten zu filtern, bevor Sie Sie in Office 365 importieren.
   
-1. Wechseln Sie zu [https://protection.office.com/](https://protection.office.com/) und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Office 365-Organisation. 
+1. Wechseln Sie [https://protection.office.com/](https://protection.office.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
-2. Im linken Bereich der Office 365-Sicherheit &amp; Compliance Center, klicken Sie auf **Daten Governance** \> **Importieren**.
+2. klicken sie im linken bereich des Office 365 Security &amp; Compliance centers auf **Data governance** \> - **Import**.
     
-    Der Importaufträge für Ihre Organisation werden auf der Seite **Importieren** aufgelistet. Beachten Sie, dass der **Analyse abgeschlossen** Wert in der Spalte **Status** der Importaufträge angibt, die haben von Office 365 analysiert wurde und für die Sie importieren bereit sind. 
+    Die Importaufträge für Ihre Organisation werden auf der Seite **importieren** aufgeführt. Beachten Sie, dass der Wert **Analyse abgeschlossen** in der Spalte **Status** die Importaufträge angibt, die von Office 365 analysiert wurden und für den Import bereit sind. 
     
-    ![Analyse abgeschlossen Status gibt an, dass es sich bei Office 365 die Daten in PST-Dateien analysiert hat](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
+    ![Analysis Complete Status gibt an, dass Office 365 die Daten in PST-Dateien analysiert hat.](media/de5294f4-f0ba-4b92-a48a-a4b32b6da490.png)
   
-3. Klicken Sie auf **importieren zu Office 365** für den Importauftrag aus, dem Sie ausführen möchten. 
+3. Klicken Sie auf bereit, um den Importauftrag, den Sie abschließen möchten, **in Office 365 zu importieren** . 
     
-    Ausfliegen Seite wird mit Informationen zu den PST-Dateien und andere Informationen zu den Importauftrag angezeigt.
+    Eine Fly-Out-Seite wird mit Informationen zu den PST-Dateien und weiteren Informationen zum Importauftrag angezeigt.
     
-4. Klicken Sie auf **Import zu Office 365**.
+4. Klicken Sie auf **in Office 365 importieren**.
     
-    Die Seite **Filtern die Daten** wird angezeigt. Einblicke in die Daten zu den Daten in die PST-Dateien für den Importauftrag, einschließlich Informationen über das Alter der Daten enthält. 
+    Die Seite **Filter Ihre Daten** wird angezeigt. Sie enthält Daten Einblicke in die Daten in den PST-Dateien für den Importauftrag, einschließlich Informationen zum Alter der Daten. 
     
-    ![Der Filter der Datenseite zeigt Einblicke in die Daten der PST-Dateien für den Importauftrag](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
+    ![Auf der Seite Filter Ihre Daten werden Daten Einblicke in die PST-Dateien für den Importauftrag angezeigt.](media/3b537ec0-25a4-45a4-96d5-a429e2a33128.png)
   
-5. Basierend auf unabhängig davon, ob Sie gekürzt werden die Daten, die in Office 365,, klicken Sie unter importiert wird möchten **möchten Sie Ihre Daten filtern?**, eine der folgenden Aktionen aus:
+5. Führen Sie eine der folgenden Aktionen aus, je nachdem, ob Sie die Daten, die in Office 365 importiert werden, kürzen möchten **.**
     
-    a. Klicken Sie auf **Ja, ich möchte vor dem Importieren von Filtern** , um die Daten zu kürzen, die Sie importieren, und klicken Sie dann auf **Weiter**.
+    a. Klicken Sie auf **Ja, ich möchte Sie vor dem Importieren Filtern** , um die importierten Daten zu trimmen, und klicken Sie dann auf **weiter**.
     
-    Das **Importieren von Daten in Office 365-Seite** mit Detaildaten Insights aus der Analyse angezeigt wird, das Office 365 ausgeführt. 
+    Die **Seite Daten in office 365 importieren** wird mit detaillierten Daten Einblicken aus der Analyse angezeigt, die von Office 365 ausgeführt wurde. 
     
-    ![Office 365 zeigt detaillierte Daten Einblicke in der Analyse der PST-Dateien](media/4881205f-0288-4c32-a440-37e2160295f2.png)
+    ![Office 365 zeigt detaillierte Daten Einblicke aus der Analyse der PST-Dateien](media/4881205f-0288-4c32-a440-37e2160295f2.png)
   
-    Das Diagramm auf dieser Seite zeigt die Menge der Daten, die importiert werden. Informationen zu jedem Nachrichtentyp in PST-Dateien gefunden werden im Diagramm angezeigt. Sie können den Cursor über jeder Balken anzuzeigenden spezifische Informationen zu diesem Nachrichtentyp bewegen. Es ist auch ein Dropdown-Listenfeld mit verschiedenen Alter Werte basierend auf der Analyse der PST-Dateien. Wenn Sie ein Alter in der Dropdown-Liste auswählen, wird im Diagramm aktualisiert, um anzuzeigen, wie viele Daten für das ausgewählte Alter importiert werden sollen. 
+    Das Diagramm auf dieser Seite zeigt die Menge der Daten an, die importiert werden. Informationen zu den einzelnen Nachrichtentypen in den PST-Dateien werden im Diagramm angezeigt. Sie können den Mauszeiger über die einzelnen Balken bewegen, um bestimmte Informationen zu diesem Nachrichtentyp anzuzeigen. Es gibt auch eine Dropdownliste mit unterschiedlichen Alters Werten basierend auf der Analyse der PST-Dateien. Wenn Sie in der Dropdownliste ein Alter auswählen, wird das Diagramm aktualisiert, um anzuzeigen, wie viele Daten für das ausgewählte Alter importiert werden. 
     
-    b. zum Konfigurieren der Addition Filter an, um die Datenmenge zu reduzieren, die importiert wird, klicken Sie auf **Weitere Filteroptionen**.
+    b. zum Konfigurieren von Zusatz Filtern zum Verringern der importierten Datenmenge klicken Sie auf **Weitere Filteroptionen**.
     
-    ![Konfigurieren Sie die Filter auf der Seite für weitere Optionen zu erhöhen, die Daten, die importiert werden](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
+    ![Konfigurieren der Filter auf der Seite Weitere Optionen zum Kürzen der importierten Daten](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     Sie können diese Filter konfigurieren:
     
-      - **Alter** - wählen Sie ein Alter, sodass nur Elemente vorhanden und neuer ist als der angegebene Alter sind importiert werden sollen. Finden Sie im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) darüber, wie Office 365 mit der ALTER-Buckets für den Filter **Alter** bestimmt eine Beschreibung ein. 
+      - **Age** – wählen Sie ein Alter aus, sodass nur Elemente importiert werden, die neuer als das angegebene Alter sind. Im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) finden Sie eine Beschreibung dazu, wie Office 365 die Age-Buckets für den **Age** -Filter bestimmt. 
     
-      - **Typ** – in diesem Abschnitt zeigt alle Nachrichtentypen, die in die PST-Dateien für den Importauftrag gefunden wurden. Deaktivieren Sie ein Kontrollkästchen neben einem Nachrichtentyp, die Sie ausschließen möchten. Beachten Sie, dass Sie den anderen Nachrichtentyp ausschließen ist nicht möglich. Finden Sie im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) erhalten Sie eine Liste der Postfachelemente, die in der anderen Kategorie enthalten sind. 
+      - **Type** -dieser Abschnitt enthält alle Nachrichtentypen, die in den PST-Dateien für den Importauftrag gefunden wurden. Sie können das Kontrollkästchen neben einem Nachrichtentyp deaktivieren, den Sie ausschließen möchten. Beachten Sie, dass Sie den anderen Nachrichtentyp nicht ausschließen können. Im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) finden Sie eine Liste der Postfachelemente, die in der anderen Kategorie enthalten sind. 
     
-      - **Benutzer** : Sie können Nachrichten, die gesendet oder Empfangen von bestimmten Personen werden ausschließen. Ausschließen von Personen, die in der From stehen: Feld, um: Field- oder Cc: Feld von Nachrichten, klicken Sie neben diesem Empfängertyp auf **Ausschließen von Benutzern** . Geben Sie die e-Mail-Adresse (SMTP-Adresse) der Person ein, klicken Sie auf **Hinzufügen**![New Icon](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) diese zur Liste der ausgeschlossenen Benutzer für diesen Empfänger hinzufügen, und klicken Sie dann auf **Speichern** , um die Liste der ausgeschlossenen Benutzer speichern. 
+      - **Benutzer** – Sie können Nachrichten ausschließen, die von bestimmten Personen gesendet oder empfangen werden. Wenn Sie Personen ausschließen möchten, die im Feld from:, to: Field oder im Feld CC: von Nachrichten angezeigt werden, klicken Sie neben diesem Empfängertyp auf **Benutzer ausschließen** . Geben Sie die e-Mail-Adresse (SMTP-Adresse) der Person ein](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , klicken Sie auf neues Symbol **Hinzufügen**![, um Sie der Liste der ausgeschlossenen Benutzer für diesen Empfängertyp hinzuzufügen, und klicken Sie dann auf **Speichern** , um die Liste der ausgeschlossenen Benutzer zu speichern. 
     
         > [!NOTE]
-        > Office 365 wird Einblicke in die Daten aus dem Festlegen des Filters **Personen** nicht angezeigt. Wenn Sie diesen Filter, Nachrichten von bestimmten Personen gesendet oder empfangen auszuschließen festlegen, werden diese Nachrichten während des tatsächlichen Importvorgangs ausgeschlossen werden. 
+        > In Office 365 werden keine Daten Einblicke angezeigt, die sich aus dem Festlegen des **Personen** Filters ergeben. Wenn Sie diesen Filter jedoch so festlegen, dass Nachrichten, die von bestimmten Personen gesendet oder empfangen werden, ausgeschlossen werden, werden diese Nachrichten während des tatsächlichen Importvorgangs ausgeschlossen. 
   
-    c. Klicken Sie auf **Übernehmen** in die Seite zum Speichern Ihrer filtereinstellungen für Ausfliegen **Weitere Filteroptionen** . 
+    c. Klicken Sie in der Seite **Weitere Filteroptionen** fliegen auf über **nehmen** , um die Filtereinstellungen zu speichern. 
     
-    Die Daten, die auf der Seite **Daten importieren auf Office 365** Insights basierend auf Ihrer filtereinstellungen für aktualisiert werden, einschließlich der Gesamtmenge der Daten, die importiert werden auf der Basis Filter. Beachten Sie, dass auch eine Zusammenfassung der filtereinstellungen für angezeigt wird. Sie können **Bearbeiten** neben einen Filter zum Ändern der Einstellung bei Bedarf klicken. 
+    Die Daten Einblicke auf die Seite **Import Data to Office 365** werden basierend auf Ihren Filtereinstellungen aktualisiert, einschließlich der Gesamtmenge der Daten, die basierend auf den Filtereinstellungen importiert werden. Beachten Sie, dass auch eine Zusammenfassung der Filtereinstellungen angezeigt wird. Sie können neben einem Filter auf **Bearbeiten** klicken, um die Einstellung bei Bedarf zu ändern. 
     
-    ![Einblicke in die die Daten werden basierend auf Ihrer filtereinstellungen für aktualisiert.](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
+    ![Die Daten Einblicke werden basierend auf Ihren Filtereinstellungen aktualisiert.](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. Klicken Sie auf **Weiter**.
+    d. Klicken Sie auf **weiter**.
     
-    Anzeigen Ihrer filtereinstellungen für eine Statusseite angezeigt. In diesem Fall können Sie Filter Einstellungen bearbeiten.
+    Eine Statusseite mit den Filtereinstellungen wird angezeigt. Sie können auch die Filtereinstellungen bearbeiten.
     
-    e. Klicken Sie auf **Daten importieren** , um den Import starten. Beachten Sie, dass die Gesamtmenge der Daten, die importiert werden angezeigt wird. 
+    e. Klicken Sie auf **Daten importieren** , um den Import zu starten. Beachten Sie, dass die Gesamtmenge der importierten Daten angezeigt wird. 
     
     Oder
     
-    a. Klicken Sie auf **Nein, ich möchte alles importieren** , um alle Daten in die PST-Dateien in Office 365 zu importieren, und klicken Sie dann auf **Weiter**.
+    a. Klicken Sie auf **Nein, ich möchte alles importieren** , um alle Daten in den PST-Dateien in Office 365 zu importieren, und klicken Sie dann auf **weiter**.
     
-    b. Klicken Sie auf der Seite **Importieren von Daten zu Office 365** klicken Sie auf **Daten importieren** , um den Import starten. Beachten Sie, dass die Gesamtmenge der Daten, die importiert werden angezeigt wird. 
+    b. Klicken Sie auf der Seite **Daten in Office 365 importieren** auf **Daten importieren** , um den Import zu starten. Beachten Sie, dass die Gesamtmenge der importierten Daten angezeigt wird. 
     
-6. Klicken Sie auf der Seite **Importieren** auf **Refresh** ![aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png). Der Status für den Importauftrag wird in der Spalte **Status** angezeigt. 
+6. Klicken Sie auf der Seite **importieren** auf **** ![Aktualisierung](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)aktualisieren. Der Status für den Importauftrag wird in der Spalte **Status** angezeigt. 
     
-7. Klicken Sie auf dem Import der Auftrag zum Anzeigen von Ausführlichere Informationen, wie der Status für jede PST-Datei und der filtereinstellungen, die Sie konfiguriert haben.
+7. Klicken Sie auf den Auftrag importieren, um detailliertere Informationen anzuzeigen, beispielsweise den Status für jede PST-Datei und die Filtereinstellungen, die Sie konfiguriert haben.
 
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- Bestimmt Office 365 wie die Schritten für den Filter ALTER? Office 365 eine PST-Datei analysiert, sucht unter der gesendete oder empfangene Zeitstempel der einzelnen Elemente (wenn ein Element einen Zeitstempel gesendeten und empfangenen wurde, wird das älteste Datum ausgewählt). Klicken Sie dann Office 365 befasst sich mit den Wert des Jahres für diese Zeitstempel und vergleicht ihn mit dem aktuellen Datum das Alter des Elements bestimmt. Diese Jahren werden dann als die Werte in der Dropdown-Liste für den **Age** -Filter verwendet. Wenn eine PST-Datei Nachrichten von 2015, 2016 und 2014 aufweist, Werte in der **Age** -Filter würde beispielsweise **1 Jahr**, **2 Jahre**und **3 Jahren**sein.
+- Wie ermittelt Office 365 die Inkremente für den Age-Filter? Wenn Office 365 eine PST-Datei analysiert, sieht es den gesendeten oder empfangenen Zeitstempel der einzelnen Elemente aus (wenn ein Element sowohl einen gesendeten als auch einen empfangenen Timestamp hat, ist das älteste Datum ausgewählt). Dann sucht Office 365 den Year-Wert für diesen Zeitstempel und vergleicht ihn mit dem aktuellen Datum, um das Alter des Elements zu bestimmen. Diese Ages werden dann als Werte in der Dropdownliste für den **Age** -Filter verwendet. Wenn eine PST-Datei beispielsweise Nachrichten von 2016, 2015 und 2014 enthält, wären Werte im **Age** -Filter **1 Jahr**, **2 Jahre**und **3 Jahre**.
     
-- Die folgende Tabelle enthält die Nachrichtentypen, die in der **anderen** Kategorie im **Typ** Filter auf der Seite Ausfliegen **Weitere Optionen** enthalten sind (siehe Schritt 5 b in der vorherigen Prozedur). Sie können nicht aktuell, Elemente in der Kategorie "Andere" ausgeschlossen werden beim Importieren von PST-Dateien in Office 365. 
+- In der folgenden Tabelle sind die Nachrichtentypen aufgeführt, die in der **anderen** Kategorie im **** Feld Typfilter auf der Seite **Weitere Optionen** fliegen enthalten sind (siehe Schritt 5B im vorherigen Verfahren). Derzeit können Sie Elemente in der Kategorie "Sonstiges" nicht ausschließen, wenn Sie PST in Office 365 importieren. 
     
-    |**ID der Nachrichtenklasse**|**Postfachelemente, die diese Nachrichtenklasse verwenden**|
+    |**Nachrichtenklassen-ID**|**Postfachelemente, die diese Nachrichtenklasse verwenden**|
     |:-----|:-----|
-    |IPM. Aktivität  <br/> |Journaleinträge  <br/> |
+    |IPM. Aktivität  <br/> |Journal Einträge  <br/> |
     |IPM. Dokument  <br/> |Dokumente und Dateien (nicht an eine e-Mail-Nachricht angefügt)  <br/> |
-    |IPM. Datei  <br/> |(identisch mit IPM. Dokument)  <br/> |
-    |IPM. Note.IMC.Notification  <br/> |Berichte vom Internet Mail eine Verbindung herzustellen, ist das Exchange Server-Gateway zum Internet gesendet  <br/> |
-    |IPM. Note.Microsoft.Fax  <br/> |Faxnachrichten  <br/> |
-    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Abwesenheits automatische Antwortnachrichten  <br/> |
-    |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Eine Posteingangsregel gesendeten Antworten  <br/> |
-    |IPM. OLE. Klasse  <br/> |Ausnahmen für eine Besprechungsserie  <br/> |
-    |IPM. Recall.Report  <br/> |Berichte zum Nachrichtenrückruf  <br/> |
-    |IPM. Remote  <br/> |Remote-Mail-Nachrichten  <br/> |
-    |IPM. Bericht  <br/> |Element Statusberichte  <br/> |
+    |IPM. Datei  <br/> |(identisch mit IPM. Dokument  <br/> |
+    |IPM. Hinweis. IMC. Notification  <br/> |Von Internet Mail Connect gesendete Berichte, die das Exchange Server-Gateway zum Internet sind  <br/> |
+    |IPM. Hinweis. Microsoft. Fax  <br/> |Faxnachrichten  <br/> |
+    |IPM. Hinweis. Rules. OOF. Template. Microsoft  <br/> |Abwesenheitsnachrichten für automatische Antworten  <br/> |
+    |IPM. Hinweis. Rules. ReplyTemplate. Microsoft  <br/> |Von einer Posteingangsregel gesendete Antworten  <br/> |
+    |IPM. OLE. Klasse  <br/> |Ausnahmen für eine wiederkehrende Serie  <br/> |
+    |IPM. ReCall. Report  <br/> |Nachrichtenrückruf Berichte  <br/> |
+    |IPM. Remote  <br/> |Remote-e-Mail-Nachrichten  <br/> |
+    |IPM. Bericht  <br/> |Elementstatus Berichte  <br/> |

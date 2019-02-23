@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Eine kurze Zusammenfassung zur Office 365-Verwaltungs Aktivitäts-API.
-ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: df90eba0d019a862d4699f3e2aa0a04e88b0c371
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090558"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214575"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365-Verwaltungsaktivitäts-API
 Microsoft bietet Reporting Services, mit denen Administratoren aggregierte Transaktionsinformationen zu Ihrem Office 365-Mandanten abrufen können. Die [Office 365-Verwaltungs AKTIVITÄTS-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) verwendet einen Industriestandard-RESTful-Entwurf und OAuth v2 für die Authentifizierung, wodurch das Experimentieren mit dem Abrufen von Daten und deren Einnahme in Visualisierungstools und-Anwendungen erleichtert wird. Die API stellt einen Datenfeed bereit, der Informationen zu Benutzer-, Administrator-, Betriebs-und Sicherheitsaktivitäten in Office 365 enthält. Die Daten können aus regulatorischen Gründen aufbewahrt werden oder mit Protokolldaten kombiniert werden, die von einer lokalen Infrastruktur oder anderen Quellen bezogen werden, um eine Überwachungslösung für Vorgänge, Sicherheit und Compliance im gesamten Unternehmen zu erstellen.

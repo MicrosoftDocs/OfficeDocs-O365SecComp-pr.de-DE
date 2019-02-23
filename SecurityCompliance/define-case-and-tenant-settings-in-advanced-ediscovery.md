@@ -1,94 +1,94 @@
 ---
-title: Definieren von Groß-/Kleinschreibung und Mandanten Settings in Office 365 erweiterte eDiscovery
+title: Definieren von Fall- und Mandanteneinstellungen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Informationen Sie zu den Etiketten, übergreifende Modul und Mandanten Einstellungen, die Sie auf der Groß-/Kleinschreibung Ebene in Office 365 erweiterte eDiscovery definieren können.  '
-ms.openlocfilehash: 2230be8365e74ab21a0525bc2accc8469b22c9ed
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Erfahren Sie mehr über die Einstellungen für Bezeichnungen, Cross-Module und Mandanten, die Sie auf der Fallebene in Office 365 Advanced eDiscovery definieren können.  '
+ms.openlocfilehash: e27f33f15d133d502e01a780d6f05ca85cce41a5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530112"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219365"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definieren von Groß-/Kleinschreibung und Mandanten Settings in Office 365 erweiterte eDiscovery
+# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definieren von Fall- und Mandanteneinstellungen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In diesem Thema werden die Einstellungen für die erweiterte eDiscovery-Fall und Mandanten beschrieben.
+Die erweiterten eDiscovery-Fall-und Mandanten Einstellungen werden in diesem Thema beschrieben.
   
-## <a name="case-settings"></a>Groß-/Kleinschreibung Einstellungen
+## <a name="case-settings"></a>Fall Einstellungen
 
-In diesem Abschnitt wird beschrieben, die Einstellungen, die auf der Ebene der Groß-/Kleinschreibung definiert werden können.
+In diesem Abschnitt werden die Einstellungen beschrieben, die auf der Fallebene definiert werden können.
   
 > [!NOTE]
-> Wenn keinesfalls in erweiterten eDiscovery derzeit ausgewählt ist, ist die **Groß-/Kleinschreibung Einstellungen** Registerkarte inaktiv. 
+> Wenn in Advanced eDiscovery derzeit kein Fall ausgewählt ist, ist die Registerkarte **Fall Einstellungen** inaktiv. 
   
-### <a name="cross-module"></a>Cross-Modul
+### <a name="cross-module"></a>Kreuz Modul
 
-Die folgenden Cross-Modul Einstellungen sind Groß-/Kleinschreibung Optionen, die für erweiterte eDiscovery Module gelten.
+Die folgenden Cross-Module-Einstellungen sind Fall Optionen, die für erweiterte eDiscovery-Module gelten.
   
-- Standardseite nach der Anmeldung: Legt die Standardseite, beim Starten von erweiterten eDiscovery angezeigt werden soll.
+- Standardseite nach Anmeldung: legt die Standardseite fest, die beim Starten von Advanced eDiscovery angezeigt werden soll.
     
-- Anzeigename der Datei: Datei-ID, die in der gesamten erweiterte eDiscovery, identifizieren Sie die Datei als Alternative zu den erweiterten eDiscovery Anzeigenamen der Datei Titel-Pfad oder e-Mail-Betreff angezeigt werden.
+- Dateianzeige Name: Dateibezeichner, der in der erweiterten eDiscovery angezeigt wird, um die Datei zu identifizieren, als Alternative zum erweiterten eDiscovery-Anzeigenamen für Datei Titel/Pfad oder e-Mail-Betreff.
     
-1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das Symbol **Cogwheel** . Open **Einstellungen und Dienstprogramme \> Case Einstellungen** Registerkarte \> **Modul schneidet**. 
+1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. Öffnen Sie die Registerkarte \> **Cross-Modul** **Einstellungen und \> Utilities Case-Einstellungen** . 
     
-2. Wählen Sie aus der Standardoptionen **Seite nach der Anmeldung** : 
+2. Wählen Sie nach Anmeldeoptionen von der **Standardseite** aus: 
     
-  - **Letzte Seite des vorherigen Anmeldung**
+  - **Letzte Seite der vorherigen Anmeldung**
     
   - **Seite "Anfragen"**
     
 3. Klicken Sie auf **Speichern**.
     
-## <a name="tenant-settings"></a>Mandanten-Einstellungen
+## <a name="tenant-settings"></a>Mandanten Einstellungen
 
-In diesem Abschnitt werden die erweiterten eDiscovery-Mandanten Einstellungen beschrieben.
+Die erweiterten eDiscovery-Mandanten Einstellungen werden in diesem Abschnitt beschrieben.
   
 ### <a name="user-administration"></a>Benutzerverwaltung
 
-In [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md)sind die Verwaltungsoptionen für Benutzer beschrieben.
+Die Optionen für die Benutzerverwaltung werden unter [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md)beschrieben.
   
 ### <a name="event-log"></a>Ereignisprotokoll
 
-Das Ereignisprotokoll enthält Metadaten zu im Zusammenhang mit erweiterten eDiscovery Verarbeitung jederzeit während der erweiterten eDiscovery-Vorgang. Beispielsweise umfasst auch die Anfangszeit der eDiscovery-Hauptfenster erweiterte Prozesse (importieren, Analyse, Relevanz und Export) sowie die Endzeit und den Status. Dieses Protokoll kann für die Überwachung und Problembehandlung Datenverarbeitung Aktivitäten und zum Umgang mit Fehlern und Warnungen verwendet werden.
+Im Ereignisprotokoll werden Metadaten zur erweiterten eDiscovery-Verarbeitung jederzeit während des erweiterten eDiscovery-Vorgangs bereitgestellt. Sie enthält beispielsweise die Startzeit der wichtigsten erweiterten eDiscovery-Prozesse (Import, Analyse, Relevanz und Export) sowie Endzeit und Status. Dieses Protokoll kann zum Nachverfolgen und zur Problembehandlung von Datenverarbeitungsaktivitäten sowie zum Beheben von Fehlern und Warnungen verwendet werden.
   
-1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das Symbol **Cogwheel** . 
+1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. 
     
-2. In der **Einstellungen und Dienstprogramme \> Mandanten Einstellungen** Registerkarte, wählen Sie **Ereignisprotokoll**aus. Die Ereignisprotokoll-Daten werden angezeigt.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramm \> Mandanten Einstellungen** die Option **Ereignisprotokoll**aus. Die Ereignisprotokolldaten werden angezeigt.
     
-  - Wählen Sie die Protokollausgabe ein Case zum Filtern die Groß-/Kleinschreibung aus der Liste der **Fälle** . 
+  - Wenn Sie die Protokollausgabe durch einen Fall filtern möchten, wählen Sie in **** der Liste Cases den Fall aus. 
     
   - Klicken Sie auf eine Spaltenüberschrift, um das Protokoll nach Spalten zu sortieren. 
     
-  - Klicken Sie auf, und ziehen Sie die Spaltenüberschrift, um Spaltenreihenfolge ändern.
+  - Um die Spaltenreihenfolge zu ändern, klicken Sie auf, und ziehen Sie die Spaltenüberschrift.
     
-  - Wenn zwischen Seiten verschieben möchten, klicken Sie auf **\>** und **\<** Symbole. 
+  - Klicken Sie **\>** auf und **\<** , um zwischen den Protokollseiten zu wechseln. 
     
-### <a name="system-information"></a>Systeminformationen
+### <a name="system-information"></a>System Informationen
 
-Erweiterte eDiscovery Version Systeminformationen und Aufgaben werden in der Registerkarte Mandanten Einstellungen angezeigt.
+Erweiterte eDiscovery-Version-Systeminformationen und aktive Aufgaben werden auf der Registerkarte Mandanten Einstellungen angezeigt.
   
-1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das Symbol **Cogwheel** . 
+1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. 
     
-2. In der **Einstellungen und Dienstprogramme \> Mandanten Einstellungen** Registerkarte, **Systeminformationen**. Die Versionsinformationen wird angezeigt.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramm \> Mandanten Einstellungen** **System Informationen**aus. Die Versionsinformationen werden angezeigt.
     
-Die Anzeige kann aktualisiert werden, indem Sie auf das Symbol **Aktualisieren** unterhalb der Mandanten-Informationen. 
+Die Anzeige kann durch Klicken auf das Symbol **Aktualisieren** unter den Mandanteninformationen aktualisiert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Verwenden die Dienstprogramme](use-advanced-ediscovery-utilities.md)
+[Verwenden von Hilfsprogrammen](use-advanced-ediscovery-utilities.md)
 

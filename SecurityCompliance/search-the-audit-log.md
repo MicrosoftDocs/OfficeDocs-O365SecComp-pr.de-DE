@@ -1,26 +1,26 @@
 ---
-title: Suchen Sie das Überwachungsprotokoll für Benutzer- und Admin-Aktivität in Office 365
+title: Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: 'Das Überwachungsprotokoll Office 365 ist ein unified Überwachungsprotokoll. Warum einer einheitlichen Audit protokolliert? Da Ereignisse aus, dass Sie die Organisation sind die meisten Office 365-Dienste abonniert werden in einer einzelnen Überwachungsprotokoll aufgezeichnet, die durchsucht werden. Dies bedeutet, dass Sie für Benutzer und Admin-Aktivität in diese Dienste suchen können:'
-ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: 'Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse aus den meisten Office 365-Diensten, die Sie in der Organisation abonnieren, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das führt dazu, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können:'
+ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038028"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214085"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Suchen Sie das Überwachungsprotokoll für Benutzer- und Admin-Aktivität in Office 365
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365
 
-Das Überwachungsprotokoll Office 365 ist ein unified Überwachungsprotokoll. Warum einer einheitlichen Audit protokolliert? Da Ereignisse aus, dass Sie die Organisation sind die meisten Office 365-Dienste abonniert werden in einer einzelnen Überwachungsprotokoll aufgezeichnet, die durchsucht werden. Dies bedeutet, dass Sie für Benutzer und Admin-Aktivität in diese Dienste suchen können: 
+Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse aus den meisten Office 365-Diensten, die Sie in der Organisation abonnieren, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das führt dazu, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können: 
   
 - SharePoint
 - OneDrive
@@ -35,18 +35,18 @@ Das Überwachungsprotokoll Office 365 ist ein unified Überwachungsprotokoll. Wa
    
  ## <a name="set-up-auditing"></a>Einrichten der Überwachung
   
-Es gibt einige Dinge, die Sie tun, bevor das Office 365-Überwachungsprotokoll durchsucht werden müssen.
+Es gibt einige Schritte, die Sie ausführen müssen, bevor Sie das Office 365-Überwachungsprotokoll durchsuchen können.
   
-- [Aktivieren der Suche für Audit Log](turn-audit-log-search-on-or-off.md) Aufzeichnen von Ereignissen zu starten, denen Sie für suchen können 
+- [Aktivieren Sie die Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md) , um mit der Aufzeichnung von Ereignissen zu beginnen, nach denen Sie suchen können. 
     
-- [Aktivieren der Überwachung von Postfächern](enable-mailbox-auditing.md) , damit Sie für Ereignisse im Zusammenhang mit dem Postfach suchen können; beispielsweise wenn ein Benutzer auf ihre Postfach oder Benutzerkontenverwaltung Elemente aus ihren Ordner "wiederherstellbare Elemente" anmeldet 
+- [Aktivieren Sie die postfachüberwachung](enable-mailbox-auditing.md) , um nach Post fachbezogenen Ereignissen zu suchen. beispielsweise wenn sich ein Benutzer bei seinem Postfach anmeldet oder Elemente aus seinem Ordner "Wiederherstellbare Elemente" löscht 
     
  ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
   
-Nachdem Sie die Überwachung einzuschalten, suchen Sie nach Hunderten von einzelnen Arten von Ereignissen aus mehreren Office 365-Dienste.
+Nachdem Sie die Überwachung aktiviert haben, suchen Sie in mehreren Office 365-Diensten nach Hunderten von einzelnen Ereignistypen.
   
-- [Suchen Sie das Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) für Benutzer- und Admin-Aktivitäten 
+- [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md) nach Benutzer-und Administratoraktivitäten 
     
-- [Verstehen die Detailangaben zu den Eigenschaften](detailed-properties-in-the-office-365-audit-log.md) in jedem auditing Datensatz in den Suchergebnissen enthalten 
+- GrundLegendes zu [den detaillierten Eigenschaften](detailed-properties-in-the-office-365-audit-log.md) in jedem in den Suchergebnissen enthaltenen Überwachungsdatensatz 
     
-- [Suchen nach eDiscovery-bezogene Aktivitäten](search-for-ediscovery-activities-in-the-audit-log.md) , die von Administratoren und Compliance-Manager durchgeführt 
+- [Suche nach eDiscovery-bezogenen Aktivitäten](search-for-ediscovery-activities-in-the-audit-log.md) , die von Administratoren und Compliance-Managern ausgeführt wurden 

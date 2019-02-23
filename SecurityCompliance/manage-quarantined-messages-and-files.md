@@ -1,206 +1,206 @@
 ---
-title: Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Administrator in Office 365
+title: Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
-description: 'Als Administrator können Sie anzeigen, freigeben und melden false positive in Quarantäne verschobenen Nachrichten in Office 365. Sie können Richtlinien festlegen, sodass Office 365 Nachrichten filtert und sendet sie zur aus verschiedenen Gründen in Quarantäne:, da sie als Spam, Massen, Phishing, Schadsoftware erkannt wurden oder sie eine e-Mail-Flussregel übereinstimmen. '
-ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'Als Administrator können Sie falsch positiv isolierte Nachrichten in Office 365 anzeigen, freigeben und melden. Sie können Richtlinien so einrichten, dass Office 365 Nachrichten filtert und Sie aus verschiedenen Gründen an die Quarantäne sendet: da Sie als Spam, Massen, Phishing, Schadsoftware oder als Übereinstimmung mit einer Nachrichtenfluss Regel identifiziert wurden. '
+ms.openlocfilehash: d62aded09f3560de6ba4485757c1bb5ce3f8cb6d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792506"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219195"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von in Quarantäne verschobenen Nachrichten und Dateien als Administrator in Office 365
+# <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 
-Als Administrator können Sie anzeigen, freigeben und Löschen von Nachrichten in Quarantäne und Bericht falsch positive Nachrichten in Quarantäne in Office 365. Sie können auch anzeigen, herunterladen und Löschen von isolierten Dateien von Advance Threat Protection (ATP) für SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams erfasst. Sie können Richtlinien festlegen, sodass Office 365 Nachrichten filtert und sendet sie zur aus verschiedenen Gründen in Quarantäne:, da sie als Spam, Massen-Mail Phishing-Mail, die mit Malware, identifiziert wurden oder da sie eine e-Mail-Flussregel übereinstimmen.
+Als Administrator können Sie isolierte Nachrichten anzeigen, freigeben und löschen sowie falsch positiv isolierte Nachrichten in Office 365 melden. Sie können auch isolierte Dateien, die von Advance Threat Protection (ATP) für SharePoint Online, OneDrive for Business und Microsoft Teams erfasst wurden, anzeigen, herunterladen und löschen. Sie können Richtlinien so einrichten, dass Office 365 Nachrichten filtert und Sie aus verschiedenen Gründen an die Quarantäne sendet: da Sie als Spam, Massenmail, Phishing-e-Mail, mit Schadsoftware oder mit einer Nachrichtenfluss Regel identifiziert wurden.
   
-In der Standardeinstellung sendet Office 365 Phishing und Nachrichten mit Schadsoftware direkt zu isolieren. Andere gefilterten Nachrichten werden an Benutzer Junk-e-Mail-Ordner gesendet, es sei denn, Sie eine Richtlinie einrichten, die Nachrichten in Quarantäne gesendet.
+Standardmäßig sendet Office 365 Phishing-Nachrichten und Nachrichten mit Schadsoftware direkt in Quarantäne. Andere gefilterte Nachrichten werden an den Junk-e-Mail-Ordner der Benutzer gesendet, es sei denn, Sie richten eine Richtlinie für die Quarantäne ein.
   
-Sie müssen berechtigt globaler Administrator (GA) in Office 365 Nachrichten in Quarantäne entwickelt, die an andere Benutzer gesendet wurden und zur Arbeit mit Dateien in Quarantäne.
+Sie benötigen globale Administratorberechtigungen (GA) in Office 365, damit Sie mit isolierten Nachrichten arbeiten können, die an andere Benutzer gesendet wurden und mit Quarantänedateien arbeiten.
   
 > [!IMPORTANT]
->Standardmäßig werden Spam, Massen und Phishing-Nachrichten in Quarantäne 30 Tage gespeichert. Nachrichten, die isoliert werden, da sie eine e-Mail-Fluss-Regel erfüllt werden in Quarantäne 7 Tage gespeichert. Nachrichten mit Schadsoftware werden in Quarantäne 15 Tage gespeichert. Sie können die Spam-Quarantäne Zeit in Anti-Spam-Einstellungen in das Wertpapier anpassen &amp; Compliance Center. Sie können nicht Office 365 eine Nachricht aus der Quarantäne gelöscht, es wieder erhalten. Wenn Sie möchten, können Sie die Beibehaltungsdauer für Nachrichten in Quarantäne in Ihrer Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen von der Aufbewahrungszeitraum Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
+>Spam-, Massen-und Phishing-Nachrichten werden standardmäßig 30 Tage lang in Quarantäne gehalten. Nachrichten, die unter Quarantäne gestellt werden, da Sie einer e-Mail-Fluss Regel entsprechen, werden 7 Tage lang in Quarantäne gehalten. Schadsoftware-Nachrichten werden 15 Tage lang in Quarantäne aufbewahrt. Sie können die Spamquarantäne Zeit in den Antispam-Einstellungen im Security &amp; Compliance Center anpassen. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht mehr zurück erhalten. Wenn Sie möchten, können Sie den Aufbewahrungszeitraum für isolierte Nachrichten in ihren Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen der Aufbewahrungsdauer für Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
   
-## <a name="view-your-organizations-quarantined-messages"></a>Anzeigen von in Quarantäne verschobenen Nachrichten Ihrer Organisation
+## <a name="view-your-organizations-quarantined-messages"></a>Anzeigen der isolierten Nachrichten in Ihrer Organisation
 
-1. Melden Sie sich mit einem arbeiten oder Schule Konto mit globalen Administratorrechten in Office 365-Organisation, bei Office 365 und [Wechseln Sie zur Sicherheit und Compliance Center](go-to-the-securitycompliance-center.md).
+1. Melden Sie sich bei einem Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Office 365-Organisation bei Office 365 an, und [wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
     
-2. In der Liste auf der linken Seite erweitern Sie **Threat Management**, wählen Sie **Überprüfen**und wählen Sie dann die **Quarantäne**.
+2. Erweitern Sie in der Liste auf der linken Seite **Bedrohungs Verwaltung**, klicken Sie auf **Überarbeiten**, und wählen Sie dann **Quarantäne**aus.
     
     > [!TIP]
-    > So rufen direkt an die Seite **Quarantäne** in das Wertpapier &amp; Compliance Center, verwenden Sie diese URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Um direkt zur **Quarantäne** Seite im Security &amp; Compliance Center zu wechseln, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
-    Standardmäßig wird die Sicherheit &amp; Compliance Center zeigt alle e-Mail-Nachrichten, die isoliert wurden als Spam. Die Nachrichten werden vom neuesten zum ältesten basierend auf dem **Datum** sortiert, die die Nachricht empfangen wurde. **Absender**, **Betreff**und das Ablaufdatum (unter **Expires** ) sind auch für jede Nachricht angezeigt. Sie können auf ein Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift; Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge rückgängig zu machen. 
+    Standardmäßig zeigt das Security &amp; Compliance Center alle e-Mail-Nachrichten an, die als Spam isoliert wurden. Die Nachrichten werden basierend auf dem **Datum** , an dem die Nachricht eingegangen ist, vom neuesten zum ältesten sortiert. **Absender**, **Betreff**und Ablaufdatum (unter Expires **** ) werden auch für jede Nachricht angezeigt. Sie können ein Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift klicken. Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren. 
     
-3. Können Sie eine Liste aller Nachrichten in Quarantäne anzeigen, oder Sie können das Resultset durch Filtern reduzieren. Sie können nur tun Massenvorgänge für bis zu 100 Elemente so filtern auch das Resultset verringern kann, wenn Sie mehr als, haben. Sie können Nachrichten für einen einzelnen Quarantäne Grund schnell filtern, durch Auswählen einer Option aus dem Filter am oberen Rand der Seite. Optionen gehören:
+3. Sie können eine Liste aller isolierten Nachrichten anzeigen, oder Sie können das Resultset durch Filterung reduzieren. Sie können nur Massenvorgänge mit bis zu 100 Elementen ausführen, sodass die Filterung auch dazu beitragen kann, Ihr Resultset zu reduzieren, wenn Sie mehr als das haben. Sie können Nachrichten für einen einzelnen Quarantäne Grund schnell filtern, indem Sie eine Option aus dem Filter oben auf der Seite auswählen. Folgende Optionen sind verfügbar:
     
-  - E-Mail als Spam identifiziert
+  - Als Spam identifizierte E-Mails
     
-  - E-Mail-Nachrichten unter Quarantäne gestellte e-Mails, da es eine Richtlinie festlegen, indem eine e-Mail-Flussregel (auch als Transportregeln bezeichnet) abgeglichen
+  - Isolierte E-Mails, da Sie einer Richtlinie mit einer e-Mail-Fluss Regel (auch als Transportregel bezeichnet) entspricht
     
-  - E-Mails, die als Massen-mail
+  - Als Massenmail identifizierte E-Mail
     
-  - E-Mails, die als Phishing-mail
+  - Als Phishing-e-Mail identifizierte E-Mails
     
-  - E-Mail-Nachrichten unter Quarantäne gestellte e-Mails, da es Schadsoftware enthält
+  - Isolierte E-Mails, da Sie Schadsoftware enthalten
     
-Sie können außerdem als Administrator, alle für Ihre Organisation oder nur an Sie gesendeten Nachrichten zu filtern. Beenden der Benutzer kann nur Anzeigen von und Arbeiten mit Nachrichten, die an Sie gesendet.
+Darüber hinaus können Sie als Administrator auswählen, ob alle Nachrichten für Ihre Organisation oder nur an Sie gesendete Nachrichten gefiltert werden sollen. Endbenutzer können nur Nachrichten anzeigen und daran arbeiten, die an Sie gesendet werden.
   
-Sie können auch Ihre Ergebnisse, um bestimmte Nachrichten suchen filtern. Tipps finden Sie unter [Filtern von Ergebnissen und hier finden unter Quarantäne gestellte Nachrichten und Dateien](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in diesem Artikel. 
+Sie können Ihre Ergebnisse auch filtern, um nach Nachrichten zu suchen. Tipps finden Sie unter [So filtern Sie Ergebnisse und suchen nach Nachrichten und Dateien in Quarantäne](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in diesem Artikel. 
   
-Wenn Sie eine bestimmte quarantänenachricht gefunden haben, klicken Sie auf die Nachricht an die Details zu ihr anzeigen, und Aktionen Sie, wie die Nachricht an die Mailbox Person freigeben.
+Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, klicken Sie auf die Nachricht, um Details dazu anzuzeigen, und führen Sie Aktionen aus, wie das Freigeben der Nachricht an das Postfach eines Benutzers.
   
-## <a name="view-your-organizations-quarantined-files"></a>Anzeigen von in Quarantäne verschobenen Dateien Ihres Unternehmens
+## <a name="view-your-organizations-quarantined-files"></a>Anzeigen der in Quarantäne gestellten Dateien Ihrer Organisation
 
-1. Melden Sie sich einer Arbeit oder Schule Konto, das globale in Office 365-Organisation Administratorrechten zu Office 365 und [Wechseln Sie zur Sicherheit und Compliance Center](go-to-the-securitycompliance-center.md).
+1. Melden Sie sich bei einem Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Office 365-Organisation bei Office 365 an, und [wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
     
-2. Auf der linken Seite erweitern Sie **Threat Management**, wählen Sie **Überprüfen**und wählen Sie dann die **Quarantäne**. <br/>
+2. Erweitern Sie im linken Bereich **Bedrohungs Verwaltung**, klicken Sie auf **Überarbeiten**, und wählen Sie dann **Quarantäne**aus. <br/>
     > [!TIP]
-    > So rufen direkt an die Seite **Quarantäne** in das Wertpapier &amp; Compliance Center, verwenden Sie diese URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Um direkt zur **Quarantäne** Seite im Security &amp; Compliance Center zu wechseln, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
-3. Die Seite wird standardmäßig unter Quarantäne gestellte e-Mails angezeigt. Um isolierte Dateien anzuzeigen, legen Sie die Filter am oberen Rand der Seite zum Anzeigen von **Dateien**, unter Quarantäne gestellte e-Mails aufgrund von **Schadsoftware**. Sie benötigen Administratorberechtigungen in Office 365 mit isolierten Dateien arbeiten. 
+3. Standardmäßig werden auf der Seite isolierte e-Mail-Nachrichten angezeigt. Zum Anzeigen von isolierten Dateien legen Sie die Filter oben auf der Seite so fest, dass **Dateien**angezeigt werden, die aufgrund von **Schadsoftware**isoliert wurden. Sie benötigen Administratorberechtigungen in Office 365, um mit isolierten Dateien zu arbeiten. 
     
-4. Die Dateien werden vom neuesten zum ältesten basierend auf das Datum sortiert, die Datei unter Quarantäne gestellt wurde. Der **Benutzer** , der zuletzt geändert hat die Datei, den **Dienst** , der die Datei gebucht wurde und der **Dateiname**, **Speicherort**, **Dateigröße**, und das Ablaufdatum ( **Expires**) werden ebenfalls aufgelistet, für jede Datei. Sie können auf ein Feld sortieren, indem Sie auf eine Kopfzeile; Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge rückgängig zu machen.
+4. Die Dateien werden basierend auf dem Datum, an dem die Datei isoliert wurde, vom neuesten zum ältesten sortiert. Der **Benutzer** , der die Datei zuletzt geändert hat, der **Dienst** , für den die Datei bereitgestellt wurde, der **Dateiname**, der **Speicherort**, die **Dateigröße**und das Ablaufdatum ( **läuft ab**), werden auch für jede Datei aufgelistet. Sie können ein Feld sortieren, indem Sie auf eine Kopfzeile klicken. Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren.
     
-Können Sie eine Liste aller Dateien in Quarantäne anzeigen, oder Sie können bestimmte Dateien nach Filterung suchen. Genau wie Nachrichten nur möglich Massenvorgänge für bis zu 100 Elemente. Derzeit die Sicherheit &amp; Compliance Center können Sie anzeigen und Verwalten von Dateien, die in Quarantäne sind, da sie als mit Malware identifiziert wurden. Tipps finden Sie unter [Filtern von Ergebnissen und hier finden unter Quarantäne gestellte Nachrichten und Dateien](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in diesem Artikel. 
+Sie können eine Liste aller isolierten Dateien anzeigen, oder Sie können nach bestimmten Dateien suchen, indem Sie filtern. Genau wie Nachrichten können Sie nur Massenvorgänge mit bis zu 100 Elementen ausführen. Derzeit können Sie mit &amp; dem Security Compliance Center Dateien, die sich in Quarantäne befinden, anzeigen und verwalten, da Sie als Schadsoftware identifiziert wurden. Tipps finden Sie unter [So filtern Sie Ergebnisse und suchen nach Nachrichten und Dateien in Quarantäne](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) in diesem Artikel. 
   
-## <a name="to-filter-results-and-find-quarantined-messages-and-files"></a>Zum Filtern der Ergebnisse und hier finden unter Quarantäne gestellte Nachrichten und Dateien
+## <a name="to-filter-results-and-find-quarantined-messages-and-files"></a>So filtern Sie Ergebnisse und finden isolierte Nachrichten und Dateien
 <a name="BKMK_AdvSearch"> </a>
 
-Je nach Ihrer Einstellungen möglicherweise viel isolierte Nachrichten und Dateien. Um eine bestimmte Nachricht oder eine Datei oder eine Gruppe von Nachrichten oder Dateien zu suchen, können Sie ein isoliertes basierend auf einer Vielzahl von Zusatzinformationen filtern.
+Je nach Ihren Einstellungen kann es viele isolierte Nachrichten und Dateien geben. Um nach einer bestimmten Nachricht oder Datei oder einem Satz von Nachrichten oder Dateien zu suchen, können Sie isolierte Elemente basierend auf einer Vielzahl von zusätzlichen Informationen filtern.
   
-1. Stellen Sie sicher, dass die oberste Zeile der Filter zum Anzeigen von Nachrichten oder Dateien entsprechend festgelegt ist, klicken Sie auf der Seite **Quarantäne** : 
+1. Stellen Sie auf der Seite **Quarantäne** sicher, dass die oberste Filterreihe so festgelegt ist, dass Nachrichten oder Dateien angezeigt werden: 
     
-      - Um für Dateien zu suchen, setzen Sie Filter zum Anzeigen von **Dateien** unter Quarantäne gestellte e-Mails aufgrund von **Schadsoftware**.<br/>
-    Für Dateien unter Quarantäne zeigt die Seite alle isolierte Dateien nicht nur Ihre eigene, unabhängig davon, was Ihnen sagen It angezeigt.
+      - Zum Suchen nach Dateien legen Sie die Filter so fest, dass **Dateien** , die **** aufgrund von Schadsoftware isoliert wurden, angezeigt werden.<br/>
+    Bei isolierten Dateien werden alle isolierten Dateien angezeigt, nicht nur Ihre eigenen, unabhängig davon, was Sie anzeigen möchten.
     
-      - Legen Sie zum Suchen von Nachrichten in Quarantäne Filter, um **Alle** anzeigen oder **nur meine** **e-Mail**. Für der letzte Filter wählen Sie dem Typ der in Quarantäne verschobenen Nachricht, die Sie gesuchten. Sie können für isolierte Nachrichten suchen, die als **Spam**für Nachrichten identifiziert wurden, die eine e-Mail-Fluss oder **Transportregel**, **Massen** -, **Phishing** Mail oder e-Mail ein, die **Schadsoftware**enthält abgeglichen.
+      - Zum Suchen nach Nachrichten in Quarantäne legen Sie Filter so fest, dass **alle** oder **nur meine** **e-Mails**angezeigt werden. Für den letzten Filter wählen Sie den Typ der Quarantäne Nachricht aus, nach der Sie suchen. Sie können nach Nachrichten, die als **Spam**identifiziert wurden, nach Nachrichten suchen, die mit einer Nachrichtenfluss-oder **Transportregel**, **Massen** Mail, **Phishing** -e-Mails oder **** e-Mails mit Schadsoftware übereinstimmen.
     
-2. Wählen Sie unter **Ergebnisse wie folgt sortieren**den oder die Filter, den, die Sie verwenden, um aus dem Dropdown-Listen suchen möchten. Die Optionen abhängig, ob Sie Dateien oder Nachrichten suchen. Platzhalter sind in Suchfelder zu diesem Zeitpunkt nicht unterstützt.<br/><br/>Für Dateien und Nachrichten Sie können auswählen, Filtern nach dem Datum die Nachricht oder Datei in Quarantäne gesendet wurde. Sie können das Datum oder einen Datumsbereich, einschließlich der Zeit angeben. Sie können auch die Suchergebnisse durch das Ablaufdatum filtern, auf dem die Datei oder die Nachricht aus der Quarantäne gelöscht wird oder eine Kombination von Filtern können. Um nach Ablaufdatum suchen, wählen Sie **Erweiterte Filter**. Unter **Expires**können Sie auswählen, Nachrichten, die innerhalb der nächsten 24 Stunden ( **heute**), innerhalb der nächsten 48 Stunden ( **nächsten 2 Tage**), innerhalb der nächsten Woche ( **nächsten 7 Tage**) aus der Quarantäne gelöscht werden, oder Sie können ein benutzerdefiniertes Zeitintervall auswählen.<br/><br/>Für Nachrichten müssen Sie die folgenden zusätzlichen Optionen:
+2. Wählen Sie unter **Ergebnisse sortieren nach**den Filter aus, den Sie für die Suche verwenden möchten, in den Dropdownlisten. Die Optionen variieren je nachdem, ob Sie nach Dateien oder Nachrichten suchen. Platzhalter werden in Suchfeldern zu diesem Zeitpunkt nicht unterstützt.<br/><br/>Sowohl für Dateien als auch für Nachrichten können Sie nach dem Datum filtern, an dem die Nachricht oder Datei an die Quarantäne gesendet wurde. Sie können das Datum oder einen Datumszeitraum angeben, einschließlich der Uhrzeit. Sie können Ihre Suchergebnisse auch nach dem Ablaufdatum filtern, an dem die Datei oder Nachricht aus der Quarantäne gelöscht wird, oder Sie können eine Kombination aus Filtern verwenden. Wählen Sie **Erweiterter Filter**aus, um nach Ablaufdatum zu suchen. Unter **Expires**können Sie Nachrichten auswählen, die innerhalb der nächsten 24 Stunden ( **heute**), innerhalb der nächsten 48 Stunden ( **Nächste 2 Tage**), innerhalb der nächsten Woche ( **nächsten 7 Tage**) aus der Quarantäne gelöscht werden sollen, oder Sie können ein benutzerdefiniertes Zeitintervall auswählen.<br/><br/>Für Nachrichten haben Sie die folgenden zusätzlichen Optionen:
     
-      - **Nachrichten-ID**. Hiermit können Sie um eine bestimmte Nachricht zu identifizieren, wenn Sie wissen, dass die Nachrichten-ID.<br/><br/>Beispielsweise, wenn eine bestimmte Nachricht gesendeten oder für einen Benutzer in Ihrer Organisation vorgesehen ist, jedoch niemals ihr Ziel erreicht, Sie können Suchen für die Nachricht mithilfe einer nachrichtenablaufverfolgung (siehe [Ausführen einer nachrichtenablaufverfolgung und Anzeigen der Ergebnisse](https://go.microsoft.com/fwlink/?LinkId=799737)). Wenn Sie feststellen, dass die Nachricht gesendet wurde, vielleicht isoliert werden, da es eine e-Mail-Flussregel übereinstimmen oder als Spam identifiziert wurde, klicken Sie dann finden auf einfache Weise diese Nachricht in Quarantäne Sie durch Angeben der Nachrichten-ID Achten Sie darauf, dass Sie die vollständige e-Mail-ID-Zeichenfolge enthalten. Beispiele spitze Klammern (\<\>), zum Beispiel:<br/>
+      - Nach **richten-ID**. Verwenden Sie diese, um eine bestimmte Nachricht zu identifizieren, wenn Sie die Nachrichten-ID kennen.<br/><br/>Wenn beispielsweise eine bestimmte Nachricht von einem Benutzer in Ihrer Organisation gesendet oder für diesen vorgesehen ist, aber nie sein Ziel erreicht hat, können Sie mithilfe einer Nachrichtenablaufverfolgung nach der Nachricht suchen (siehe [Ausführen einer Nachrichtenablaufverfolgung und Anzeigen der Ergebnisse](https://go.microsoft.com/fwlink/?LinkId=799737)). Wenn Sie feststellen, dass die Nachricht an die Quarantäne gesendet wurde, da Sie möglicherweise mit einer Nachrichtenfluss Regel übereinstimmt oder als Spam identifiziert wurde, können Sie diese Nachricht in Quarantäne finden, indem Sie Ihre Nachrichten-ID angeben. Stellen Sie sicher, dass Sie die vollständige Nachricht-ID-Zeichenfolge angeben. Dies kann beispielsweise eine eckige Klammer (\<\>) einschließen:<br/>
     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
     
-      - **E-Mail-Adresse des Absenders**. Wählen Sie zum Filtern nach einer einzelnen Absender e-Mail-Adresse. 
+      - **Absender-e-Mail-Adresse**. Wählen Sie aus, um nach einer einzelnen Absender-e-Mail-Adresse zu filtern. 
     
-      - **E-Mail-Adresse des Empfängers**. Wählen Sie zum Filtern nach einer einzigen e-Mail-Adresse. 
+      - **E-Mail-Adresse**des Empfängers. Wählen Sie aus, um nach einer einzelnen Empfänger-e-Mail-Adresse zu filtern. 
     
-      - **Betreff**. Geben Sie den Betreff einer e-Mail-Adresse, den Sie suchen möchten. Platzhaltersuche nicht unterstützt wird, müssen Sie den gesamten Betreff der Nachricht für die Suche verwendet, damit die Nachricht in den Ergebnissen zurückgegeben. Die Suche wird nicht beachtet. 
+      - **Betreff**. Geben Sie den Betreff einer e-Mail-Adresse ein, die Sie suchen möchten. Da die Platzhaltersuche nicht unterstützt wird, müssen Sie den gesamten Betreff der Nachricht verwenden, damit die Suche die Nachricht in den Ergebnissen zurückgibt. Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. 
     
-## <a name="view-details-about-quarantined-messages-and-files"></a>Anzeigen von Details zu isolierte Nachrichten und Dateien
+## <a name="view-details-about-quarantined-messages-and-files"></a>Anzeigen von Details zu isolierten Nachrichten und Dateien
 
-Bei der Auswahl eines Elements in der Quarantäneliste angezeigt werden, sehen Sie eine Zusammenfassung der seine Eigenschaften im **Detailbereich** auf der rechten Seite des Wertpapiers &amp; Compliance Center. 
+Wenn Sie ein Element auswählen, das in der Quarantäneliste angezeigt wird, wird im **Detail** Bereich auf der rechten Seite des Security &amp; Compliance Centers eine Zusammenfassung seiner Eigenschaften angezeigt. 
   
-**Details für isolierte Nachrichten angezeigt**
+**Für isolierte Nachrichten angezeigte Details**
   
-- **Nachrichten-ID**. Der eindeutige Bezeichner für die Nachricht. 
+- Nach **richten-ID**. Der eindeutige Bezeichner für die Nachricht. 
     
-- **Adresse des Absenders**. Absender der Nachricht. 
+- **Absenderadresse**. Absender der Nachricht. 
     
-- **Empfangen**. Das Datum und die Zeit, die die Nachricht empfangen wurde. 
+- **Empfangen**. Datum und Uhrzeit der Übermittlung der Nachricht. 
     
 - **Betreff**. Der Text der Betreffzeile der Nachricht. 
     
-- **Typ**. Wird angezeigt, wenn eine Nachricht als **Spam**, **Massen**, **Phishing**, abgeglichen eine Regel für e-Mail-Fluss ( **Transportregel**) oder als mit **Schadsoftware**erkannt wurde identifiziert wurde.
+- **Type**. Zeigt an, ob eine Nachricht als **Spam**, als **Massen**-, **Phishing**-, Übereinstimmung mit einer e-Mail-Fluss Regel ( **Transport Regel**) oder als mit **Schadsoftware**gekennzeichnet erkannt wurde.
     
-- **Läuft ab**. Datum und Uhrzeit, wann die Nachricht automatisch aus der Quarantäne gelöscht werden. 
+- **Läuft ab**. Das Datum und die Uhrzeit, zu denen die Nachricht automatisch aus der Quarantäne gelöscht wird. 
     
-- **Für freigegeben**. Alle e-Mail-Adressen (falls vorhanden), die die Nachricht freigegeben wurde. 
+- **Veröffentlicht an**. Alle e-Mail-Adressen (sofern vorhanden), für die die Nachricht freigegeben wurde. 
     
-- **Für die noch nicht freigegeben**. Alle e-Mail-Adressen (falls vorhanden), die die Nachricht nicht noch freigegeben wurde. 
+- **Noch nicht für veröffentlicht**. Alle e-Mail-Adressen (sofern vorhanden), für die die Nachricht noch nicht freigegeben wurde. 
     
- **Details für isolierte Dateien angezeigt**
+ **Details angezeigt für Quarantänedateien**
   
 - **Dateiname** Der Name der Datei in Quarantäne. 
     
 - **Websitepfad** URL, die den Speicherort der Datei in Office 365 definiert. 
     
-- **Erkannt Datum / Uhrzeit** Das Datum und die Zeit, die die Datei unter Quarantäne gestellt wurde. 
+- **ErkanntEs Datum/Uhrzeit** Das Datum und die Uhrzeit, zu der die Datei isoliert wurde. 
     
-- **Läuft ab** Das Datum, wenn die Nachricht aus der Quarantäne gelöscht werden. 
+- **Läuft ab** Das Datum, an dem die Nachricht aus der Quarantäne gelöscht wird. 
     
-- **Erkannte durch** Die Methode zum Erkennen von Schadsoftware in der Datei verwendet. Dies kann ATP (Erweiterter Schutz) oder von Microsoft Anti-Malware Engine sein. 
+- **Erkannt von** Die Methode zum Auffinden der Schadsoftware in der Datei. Dabei kann es sich entweder um ATP (Advanced Threat Protection) oder um das Antischadsoftware-Modul von Microsoft handeln. 
     
-- **Veröffentlicht** Beschreibt, unabhängig davon, ob die Datei freigegeben wurde. 
+- **Veröffentlicht** Beschreibt, ob die Datei freigegeben wurde. 
     
-- **Name der Schadsoftware** Familie und der Name der Schadsoftware erkannt wird, in der Datei. 
+- **Schadsoftware** Familie und Name der Schadsoftware, die in der Datei erkannt wurde. 
     
 - **Dokument-ID** Ein eindeutiger Bezeichner für das Dokument. 
     
 - **Dateigröße** Die Größe der Datei in KB. 
     
-- **Organisation** Ihre Organisation die eindeutige ID in Office 365. 
+- **Organisation** Die eindeutige ID Ihrer Organisation in Office 365. 
     
-- **Geändert von** Das arbeiten oder Schule Konto des Benutzers, der die Datei zuletzt geändert wurde. 
+- **Geändert von** Das Arbeits-oder Schulkonto des Benutzers, der die Datei zuletzt geändert hat. 
     
 - **Dateigröße** Die Größe der Datei in KB. 
     
-- **SHA256-Hash** Den Hash der Datei. Sie können dies zum Nachschlagen von anderen Reputation speichern, die möglicherweise oder untersuchen, wo die Datei in Ihrer Umgebung möglicherweise. 
+- **SHA256-Hash** Der Hash der Datei. Sie können dies verwenden, um andere Reputation Stores zu suchen, die Sie möglicherweise haben, oder um zu untersuchen, wo sich die Datei in Ihrer Umgebung befinden könnte. 
     
 ## <a name="managing-messages-and-files-in-quarantine"></a>Verwalten von Nachrichten und Dateien in Quarantäne
 <a name="BKMK_ManageQuarantinedItem"> </a>
 
-Nachdem Sie eine Nachricht oder eine Gruppe von Nachrichten ausgewählt haben Sie mehrere Optionen für die Verwaltung von Nachrichten in Quarantäne.
+Nachdem Sie eine Nachricht oder eine Gruppe von Nachrichten ausgewählt haben, haben Sie mehrere Optionen für die Verwaltung von Nachrichten in Quarantäne.
   
-- Keine Aktion ausführen. Wenn Sie nichts tun entscheiden, wird die Nachricht von Office 365 automatisch nach Ablauf gelöscht werden. Standardmäßig werden Spam, Massen, Malware, Phishing und Nachrichten unter Quarantäne gestellte e-Mails, da sie eine e-Mail-Flussregel übereinstimmen in Quarantäne für 30 Tage gespeichert. Sie können nicht Office 365 eine Nachricht aus der Quarantäne gelöscht, es wieder erhalten. Wenn Sie möchten, können Sie die Aufbewahrungsdauer für Nachrichten in Quarantäne ändern, indem Sie die Einstellung **Spam für (Tage) aufbewahren** in Ihrer Anti-Spam-Richtlinien konfigurieren. Weitere Informationen finden Sie unter [Festlegen von der Aufbewahrungszeitraum Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
+- Nichts tun. Wenn Sie nichts tun, wird die Nachricht nach Ablauf automatisch von Office 365 gelöscht. Spam, Massen, Schadsoftware, Phishing und Nachrichten, die in Quarantäne verschoben wurden, da Sie einer e-Mail-Fluss Regel entsprechen, werden 30 Tage lang in Quarantäne gehalten. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht mehr zurück erhalten. Wenn Sie möchten, können Sie den Aufbewahrungszeitraum für isolierte Nachrichten ändern, indem Sie die Einstellung **Spam für (Tage)** in ihren Anti-Spam-Richtlinien konfigurieren. Weitere Informationen finden Sie unter [Festlegen der Aufbewahrungsdauer für Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
     
-- **Nachrichtenkopf anzeigen** Wählen Sie diesen Link, um den Nachrichtentext für die Kopfzeile finden Sie unter. Um die Kopfzeile im Detail zu analysieren, den Nachrichtentext-Header in die Zwischenablage kopieren und anschließend auf **Microsoft Message Headers Analyzer** , fahren Sie mit der Remote Connectivity Analyzer (mit der rechten Maustaste, und wählen Sie **in einer neuen Registerkarte geöffnet** , wenn Sie nicht, lassen Sie Office möchten 365 zum Abschließen dieser Aufgabe). Fügen Sie die Nachrichtenkopfzeile auf die Seite im Abschnitt Nachricht Kopfzeile Analyzer, und wählen Sie **Kopfzeilen analysieren**.
+- **Nachrichtenkopfzeile anzeigen** Klicken Sie auf diesen Link, um den Nachrichten Kopftext anzuzeigen. Wenn Sie die Kopfzeile eingehend analysieren möchten, kopieren Sie den Nachrichtenkopf in die Zwischenablage, und wählen Sie dann **Microsoft Message Header Analyzer** aus, um zur Remote Verbindungs Untersuchung zu wechseln (Klicken Sie mit der rechten Maustaste, und wählen Sie **in einer neuen Registerkarte öffnen** aus, wenn Sie Office nicht verlassen möchten. 365 zum Abschließen dieser Aufgabe). Fügen Sie den Nachrichtenkopf im Abschnitt Nachrichtenkopf Analyse auf der Seite ein, und wählen Sie **Kopfzeilen analysieren**aus.
     
-- **Meldung zur Vorschau** Ermöglicht die finden Sie unter Rohdaten oder HTML-Versionen der Textkörper der Nachricht. Links sind in der HTML-Ansicht deaktiviert. 
+- **Vorschau Nachricht** Ermöglicht das Anzeigen von RAW-oder HTML-Versionen des Nachrichtentext Texts. In der HTML-Ansicht sind Links deaktiviert. 
     
-- **Nachricht herunterladen** , oder **Laden Sie die Datei**. Wählen Sie diese Option, um eine Kopie der Nachricht oder eine Datei auf Ihrem lokalen Gerät herunterladen. Sie müssen sicherstellen, dass Sie verstehen die Risiken im Zusammenhang mit Elementen aus der Quarantäne heruntergeladen wurde, bevor Sie dazu berechtigt sind. Nachrichten werden im EML-Format in einem Ordner gespeichert, die von die Ihnen angegebenen. Unter Quarantäne gestellte Dateien werden im Originalformat gespeichert.
+- **Herunterladen der Nachricht** oder **herunterladen der Datei**. Wählen Sie diese Option aus, um eine Kopie der Nachricht oder Datei auf Ihr lokales Gerät herunterzuladen. Sie müssen sich vergewissern, dass Sie die Risiken im Zusammenhang mit dem Herunterladen von Elementen aus der Quarantäne verstehen, bevor Sie dazu berechtigt sind. Nachrichten werden im eml-Format in einem von Ihnen angegebenen Ordner gespeichert. Isolierte Dateien werden im ursprünglichen Format gespeichert.
     
-- **Löschen** Wenn Sie möchten, können Sie sofort eine isolierte Element (oder Satz Elemente) anstelle von Warten auf das Ablaufdatum Festlegen von Office 365 löschen. Zum Löschen einer Nachricht oder Datei in der Quarantäne-Liste, wählen Sie das Element, und wählen Sie dann auf **Löschen**. Um mehrere Elemente gleichzeitig zu löschen, aktivieren Sie das Kontrollkästchen links neben der Elemente in der Quarantäne-Liste, und wählen Sie dann auf der angezeigten Seite **Massenaktionen** **ausgewählte Nachrichten löschen** oder **Löschen von ausgewählten Dateien**.
+- **Löschen** Wenn Sie möchten, können Sie ein isoliertes Element (oder eine Gruppe von Elementen) sofort löschen, statt auf das von Office 365 festgelegte Ablaufdatum zu warten. Wenn Sie eine Nachricht oder Datei löschen möchten, wählen Sie in der Quarantäneliste das Element aus, und wählen Sie dann **Löschen**aus. Wenn Sie mehrere Elemente gleichzeitig löschen möchten, aktivieren Sie das Kontrollkästchen links neben den Elementen in der Quarantäneliste, und wählen Sie dann auf der daraufhin angezeigten Seite **Massenaktionen** die Option **ausgewählte Nachrichten löschen** oder **ausgewählte Dateien löschen**aus.
     
-- **Version** Freigeben Sie einer isolierten Element (oder einen Satz von Elementen) und die Elemente als fälschlicherweise unter Quarantäne gestellte (falsch positive Ergebnisse) an Microsoft. 
+- **Release** Freigeben eines isolierten Elements (oder einer Gruppe von Elementen) und melden der Elemente als falsch isoliert (falsch positives Ergebnis) an Microsoft. 
     
-    Zum Freigeben und Melden von einer einzelnen Nachricht oder Datei, in der Quarantäneliste wählen Sie des Elements aus, und wählen Sie **Datei** oder **Freigeben Nachricht**. Auf der nächsten Seite stellen Sie sicher, dass **Berichtnachrichten an Microsoft zur Analyse** oder **Berichtsdateien an Microsoft zur Analyse** ausgewählt ist. 
+    Wenn Sie eine einzelne Nachricht oder Datei freigeben und melden möchten, wählen Sie in der Quarantäneliste das Element aus **** , wählen Sie releasedatei oder **Release Message**aus. Stellen Sie sicher, dass auf der nächsten Seite die Option **Berichte an Microsoft für Analysen** oder **Berichtdateien an Microsoft zur Analyse** angezeigt wird. 
     
-    Um mehrere Elemente gleichzeitig freizugeben, aktivieren Sie das Kontrollkästchen links neben der Elemente in der Quarantäne-Liste, und wählen Sie dann auf der angezeigten Seite **Massenaktionen** **Release-Dateien** oder **Freigeben von Nachrichten**. Auf der nächsten Seite stellen Sie sicher, dass **Berichtnachrichten an Microsoft zur Analyse** oder **Berichtsdateien an Microsoft zur Analyse** ausgewählt ist. 
+    Wenn Sie mehrere Elemente gleichzeitig freigeben möchten, aktivieren Sie das Kontrollkästchen links neben den Elementen in der Quarantäneliste, und wählen Sie dann auf der daraufhin angezeigten Seite **Massenaktionen** die Option **Dateien freigeben** oder **Nachrichten**freigeben aus. Stellen Sie sicher, dass auf der nächsten Seite die Option **Berichte an Microsoft für Analysen** oder **Berichtdateien an Microsoft zur Analyse** angezeigt wird. 
     
-Wenn Sie Nachrichten freigeben möchten, sollten Sie Folgendes beachten:
+Beachten Sie beim Freigeben von Nachrichten Folgendes:
   
-- Wenn Sie eine Massen-Version von mehrere Nachrichten gleichzeitig ausführen, werden die Nachrichten an alle Empfänger ursprünglich identifizierten freigegeben. Wenn Sie nur Nachrichten nur an bestimmte Empfänger freigeben möchten, müssen Sie die Nachrichten eines zu einem Zeitpunkt freigeben und die Empfänger einzeln zu identifizieren.
+- Wenn Sie eine Massenfreigabe mehrerer Nachrichten gleichzeitig durchführen, werden die Nachrichten an alle ursprünglich identifizierten Empfänger freigegeben. Wenn Sie nur Nachrichten nur für bestimmte Empfänger freigeben möchten, müssen Sie die Nachrichten nacheinander freigeben und die Empfänger einzeln identifizieren.
     
-- Eine Nachricht kann nicht mehr als einmal an den gleichen Empfänger freigegeben werden muss.
+- Eine Nachricht kann nicht mehr als einmal an denselben Empfänger freigegeben werden.
     
-- Wenn Sie eine Nachricht an mehrere Empfänger freigegeben sind, werden nur Empfänger, die zuvor nicht die Nachricht erhalten haben in der Liste der potenziellen Empfänger angezeigt.
+- Wenn Sie eine Nachricht an mehrere Empfänger freigeben, werden nur Empfänger, die die Nachricht zuvor nicht erhalten haben, in der Liste der potenziellen Empfänger angezeigt.
     
-- Bei der Auswahl Unwichtigstes falsch positive Ergebnisse, wenn die Nachricht oder Nachrichten, die Sie freigeben, als Spam, Massen, Phishing oder als Benutzer mit Malware isoliert wurden, wird die Nachricht auch die Microsoft-Spamanalyseteam gemeldet werden. Das Team bewerten und analysieren die Nachricht wird, und, abhängig von den Ergebnissen der Analyse, die gesamte Service Spam Inhaltsfilterregeln geändert werden, um die Nachricht über ermöglichen.
+- Wenn Sie sich für die Meldung falsch positiver Ergebnisse entscheiden, wird die Nachricht auch dem Microsoft-Spam Analyse Team gemeldet, wenn die von Ihnen veröffentlichten Nachrichten als Spam, Massen, Phishing oder Schadsoftware isoliert wurden. Das Team bewertet und analysiert die Nachricht, und je nach Ergebnis der Analyse können die Filterregeln des Dienst weiten Spam Inhalts angepasst werden, um die Nachricht zu überprüfen.
     
-## <a name="setting-the-quarantine-retention-period"></a>Festlegen der Aufbewahrungszeitraum Quarantäne
+## <a name="setting-the-quarantine-retention-period"></a>Festlegen der Aufbewahrungsdauer für Quarantäne
 <a name="BKMK_ModQuarantineTime"> </a>
 
-Sie können konfigurieren, wie lange Nachrichten und Dateien bleibt in Quarantäne, bevor diese ablaufen. Standardmäßig werden ein isoliertes 30 Tage gespeichert. Sie konfigurieren Sie diese Einstellung für jede Richtlinie, die Sie erstellen. Sie können auch den Wert für die Standardrichtlinie, wie in diesem Artikel beschrieben ändern. 
+Sie können konfigurieren, wie lange Nachrichten und Dateien in Quarantäne bleiben, bevor Sie ablaufen. Standardmäßig werden isolierte Elemente 30 Tage lang aufbewahrt. Sie konfigurieren diese Einstellung für jede Richtlinie, die Sie erstellen. Sie können den Wert für die Standardrichtlinie auch ändern, wie in diesem Artikel beschrieben. 
   
-### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>So ändern Sie die Quarantäne Aufbewahrungsdauer für die Standardrichtlinie für Spam-Filter in die Sicherheit und Compliance Center
+### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>So ändern Sie die Aufbewahrungsdauer für die Quarantäne für die standardmäßige Spamfilter Richtlinie im Security and Compliance Center
 
-1. Melden Sie sich einer Arbeit oder Schule Konto, das globale in Office 365-Organisation Administratorrechten zu Office 365 und [Wechseln Sie zur Sicherheit und Compliance Center](go-to-the-securitycompliance-center.md).
+1. Melden Sie sich bei einem Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Office 365-Organisation bei Office 365 an, und [wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
     
-2. Auf der linken Seite erweitern Sie **Threat Management**, wählen Sie **Richtlinie**aus, und wählen Sie dann **Anti-Spam**. <br/>
+2. Erweitern Sie auf der linken Seite **Bedrohungs Verwaltung**, wählen Sie **Richtlinie**aus, und wählen Sie dann **Antispam**aus. <br/>
     > [!TIP]
-    > So rufen direkt auf der Seite **Anti-Spam** in das Wertpapier &amp; Compliance Center, verwenden Sie diese URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > Um direkt zur Seite **Anti-Spam** im Security &amp; Compliance Center zu wechseln, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
-3. Wählen Sie **benutzerdefinierte** zum Anzeigen der Registerkarte **Benutzerdefinierte Einstellungen** . 
+3. Wählen Sie **Benutzerdefiniert** aus, um die Registerkarte **benutzerdefinierte Einstellungen** anzuzeigen. 
     
-4. Erweitern Sie die Zeile **Spam-Filter Standardrichtlinie (immer ON)** . 
+4. Erweitern Sie die **standardmäßige Spamfilter Richtlinie (Always on)** . 
     
-5. Wählen Sie **Richtlinie bearbeiten**. Die Einstellungen für die Standardrichtlinie für Spam-Filter werden in eine neue Seite angezeigt.
+5. Wählen Sie **Richtlinie bearbeiten**aus. Die Einstellungen für die standardmäßige Spamfilter Richtlinie werden auf einer neuen Seite angezeigt.
     
-6. Erweitern Sie **Spam und Massen-Aktionen**.
+6. Erweitern Sie **Spam-und Massenaktionen**.
     
-7. Geben Sie unter **Quarantäne**in das Textfeld **beibehalten Spam für (Tage)** die Zeitspanne, die Office 365-Nachrichten und Dateien in Quarantäne beibehalten werden soll. Der Standardwert ist 30 Tage. Dies ist auch das Maximum. 
+7. Geben Sie unter **Quarantäne**im Textfeld **Spam für (Tage) aufbewahren** die Zeitdauer ein, für die Office 365 Nachrichten und Dateien in Quarantäne speichern soll. Der Standardwert ist 30 Tage. Dies ist auch die maximale. 
     
 8. Klicken Sie auf **Save**.
     

@@ -1,88 +1,88 @@
 ---
-title: Richten Sie eine benutzerdefinierte blockierte URLs Liste mit sicheren Links zu Office 365 ATP
+title: Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-sicheren Links
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection: M365-security-compliance
-description: Hier erfahren Sie, wie Sie eine Liste der blockierten URLs für Ihre Organisation mit Office 365 erweiterte Threat Protection einrichten. Blockierte URLs werden auf e-Mail-Nachrichten und Office-Dokumenten gemäß Ihrer ATP sichere Links Richtlinien angewendet.
-ms.openlocfilehash: 261d85ce72de3a19ed4c2327d56fe1f32107781b
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Erfahren Sie, wie Sie mithilfe von Office 365 Advanced Threat Protection eine Liste blockierter URLs für Ihre Organisation einrichten. Die blockierten URLs gelten für e-Mail-Nachrichten und Office-Dokumente gemäß ihren Richtlinien für ATP Safe Links.
+ms.openlocfilehash: ad9c613221b94e61022b11541ee068e35e47cc70
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995316"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213025"
 ---
-# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Richten Sie eine benutzerdefinierte blockierte URLs Liste mit sicheren Links zu Office 365 ATP
+# <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-sicheren Links
 
 > [!IMPORTANT]
-> In diesem Artikel wird für Unternehmenskunden vorgesehen. Wenn Sie eine Suche nach Informationen zu sicheren Links in Outlook Privatbenutzer sind, finden Sie unter [Outlook.com erweiterte Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden. Wenn Sie ein Benutzer sind, der nach Informationen zu sicheren Links in Outlook sucht, lesen Sie den Thema [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Mit [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation eine benutzerdefinierte Liste von Website-Adressen (URLs verwendet) haben, die blockiert werden. Wenn eine URL blockiert wird, Personen, die Links zu den blockierten URL klicken Sie auf einer [Seite Warnung](atp-safe-links-warning-pages.md) wird aufgerufen, die in der folgenden Abbildung ähneln: 
+Mit [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) kann Ihre Organisation über eine benutzerdefinierte Liste von Websiteadressen (URLs) verfügen, die blockiert werden. Wenn eine URL blockiert wird, werden Personen, die auf Links zu der blockierten URL klicken, zu einer [Warnungsseite](atp-safe-links-warning-pages.md) weitergeleitet, die der folgenden Abbildung ähnelt: 
   
-![Diese Website wird blockiert.](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+![Diese Website ist blockiert](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-Die Liste der blockierte URLs von Office 365-Security-Team Ihrer Organisation definiert ist, und dieser Liste gilt für alle Benutzer in der Organisation, die von sicheren Links zu Office 365 ATP Richtlinien abgedeckt wird. 
+Die Liste Blockierte URLs wird vom Office 365-Sicherheitsteam Ihrer Organisation definiert, und diese Liste gilt für alle in der Organisation, die von Office 365 ATP Safe Links-Richtlinien abgedeckt werden. 
   
-Lesen Sie diesen Artikel erfahren, wie Ihre Organisation benutzerdefinierte blockierte URLs Liste für [ATP sichere Links in Office 365](atp-safe-links.md)einrichten.
+In diesem Artikel erfahren Sie, wie Sie die Liste der benutzerdefinierten blockierten URLs für [ATP-sichere Links in Office 365](atp-safe-links.md)einrichten.
   
-## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Zeigen Sie an oder bearbeiten Sie eine benutzerdefinierte Liste der blockierten URLs
+## <a name="view-or-edit-a-custom-list-of-blocked-urls"></a>Anzeigen oder Bearbeiten einer benutzerdefinierten Liste blockierter URLs
 
-[ATP sichere Links in Office 365](atp-safe-links.md) verwendet mehrere Listen, einschließlich Ihrer Organisation benutzerdefinierte blockierte URLs Liste. Wenn Sie die erforderlichen Berechtigungen verfügen, können Sie benutzerdefinierte Liste in Ihrer Organisation einrichten. Zu diesem Zweck Ihrer Organisation Standardrichtlinie sichere Links bearbeiten.
+[ATP-sichere Links in Office 365](atp-safe-links.md) verwenden mehrere Listen, einschließlich der benutzerdefinierten Liste blockierter URLs Ihrer Organisation. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie die benutzerdefinierte Liste Ihrer Organisation einrichten. Hierzu bearbeiten Sie die Standardrichtlinie für sichere Links in Ihrer Organisation.
 
-Um ATP Richtlinien bearbeiten (oder definieren), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen zugewiesen werden: 
+Um ATP-Richtlinien zu bearbeiten (oder zu definieren), müssen Sie eine der in der folgenden Tabelle beschriebenen Rollen besitzen: 
 
-|Rolle  |WHERE/wie zugewiesen.  |
+|Rolle  |Wo/wie zugewiesen  |
 |---------|---------|
-|Office 365 globaler Administrator |Die Person, die zum Erwerben von Office 365 angemeldet ist ein globaler Administrator in der Standardeinstellung. (Siehe [zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) , um mehr zu erfahren.)         |
-|Sicherheitsadministrator |Azure Active Directory-Verwaltungskonsole ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Verwaltung von Exchange Online-Organisation |Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Office 365 globaler Administrator |Die Person, die sich für den Kauf von Office 365 registriert, ist standardmäßig globaler Administrator. (Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
+|Sicherheitsadministrator |Azure Active Directory Admin Center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
+|Exchange Online-Organisationsverwaltung |Exchange-Verwaltungskonsole[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() <br>oder <br>  PowerShell-Cmdlets (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
-> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>Anzeigen oder bearbeiten eine benutzerdefinierte Liste der blockierte URLs
+### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>So können Sie eine benutzerdefinierte Liste blockierter URLs anzeigen oder bearbeiten
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich mit Ihrem Konto arbeiten oder Schule. 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Geschäfts-oder Schulkonto an. 
     
-2. Wählen Sie im linken Navigationsbereich, klicken Sie unter **Threat Management** **Policy** \> **Sichere Links**.
+2. Wählen Sie im linken Navigationsbereich unter **Bedrohungs Verwaltung**die Option **Richtlinie** \> für **sichere Links**aus.
     
-3. Klicken Sie im Abschnitt **Richtlinien, die für die gesamte Organisation gelten,** **Standard**wählen Sie aus, und wählen Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten hat einen Stift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für sichere Links Protection bearbeiten](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Dadurch können Sie Ihrer Liste der blockierten URLs anzuzeigen. Zunächst verfügen Sie möglicherweise keine hier aufgeführten URLs.<br/>![Liste der URLs in der Standardrichtlinie für sichere Links blockiert](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. Wählen Sie in den **Richtlinien für den Abschnitt gesamte Organisation** die Option **Standard**aus, und klicken Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten ähnelt einem Bleistift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für den Schutz sicherer Links zu bearbeiten.](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Auf diese Weise können Sie die Liste der blockierten URLs anzeigen. Am Anfang haben Sie möglicherweise keine URLs aufgelistet.<br/>![Liste blockierter URLs in der Standardrichtlinie für sichere Links](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
-4. Feld **Geben Sie eine gültige URL** auswählen, geben Sie eine URL ein, und wählen Sie dann auf das Pluszeichen (**+**). 
+4. Aktivieren Sie das Kontrollkästchen **gültige URL eingeben** , geben Sie eine URL ein, und klicken Sie dann**+** auf das Pluszeichen (). 
 
-5. Wenn Sie das Hinzufügen von URLs in der unteren rechten Ecke des Bildschirms abgeschlossen haben, wählen Sie **Speichern**.
+5. Wenn Sie mit dem Hinzufügen von URLs fertig sind, wählen Sie in der unteren rechten Ecke des Bildschirms **Speichern**aus.
     
-## <a name="a-few-things-to-keep-in-mind"></a>Einige Dinge im Hinterkopf behalten
+## <a name="a-few-things-to-keep-in-mind"></a>Einige Dinge, die Sie beachten sollten
 
-Während Sie URLs zur Kontaktliste hinzufügen, sollten beachten Sie die folgenden Punkte: 
+Beachten Sie beim Hinzufügen von URLs zu Ihrer Liste die folgenden Punkte: 
 
-- Schließen Sie keinen Schrägstrich ( **/**) am Ende der URL. Beispielsweise statt `http://www.contoso.com/`, geben Sie `http://www.contoso.com`.
+- Fügen Sie am Ende der URL keinen **/** Schrägstrich () ein. Geben Sie beispielsweise statt Eingabe `http://www.contoso.com/`ein ein `http://www.contoso.com`.
     
-- Sie können eine Domäne-only-URL angeben (wie `contoso.com` oder `tailspintoys.com`). Dies wird blockiert, Klicks für jede URL, die die Domäne enthält.
+- Sie können eine nur-Domäne-URL angeben ( `contoso.com` wie `tailspintoys.com`oder). Dadurch werden Klicks auf alle URLs blockiert, die die Domäne enthalten.
 
-- Sie können eine Unterdomäne angeben (wie `toys.contoso.com*`) ohne zu eine vollständige Domäne blockieren (wie `contoso.com`). Dadurch Block klickt auf einen beliebigen URL, die die Unterdomäne enthält, aber es nicht blockieren Klicks auf eine URL, die die vollständige Domäne enthält.  
+- Sie können eine Unterdomäne (like `toys.contoso.com*`) angeben, ohne eine vollständige Domäne zu `contoso.com`blockieren (like). Dadurch wird das Klicken auf eine beliebige URL blockiert, die die Unterdomäne enthält, es werden jedoch keine Klicks auf eine URL blockiert, die die vollständige Domäne enthält.  
     
-- Sie können bis zu drei Platzhalter Sternchen einschließen (\*) pro URL. Die folgende Tabelle enthält einige Beispiele für die Eingabe und Einfluss auf diese Einträge haben.
+- Sie können bis zu drei Platzhalter Sternchen (\*) pro URL hinzufügen. In der folgenden Tabelle sind einige Beispiele für die Eingabe und die Auswirkungen dieser Einträge aufgeführt.
     
-|**Beispieleintrag**|**Sinn und Zweck**|
+|**Beispieleintrag**|**Funktionsweise**|
 |:-----|:-----|
-|`contoso.com`oder`*contoso.com*`  <br/> |Blockiert die Domäne, untergeordnete Domänen und Pfade, wie `https://www.contoso.com`, `http://sub.contoso.com`, und`http://contoso.com/abc`  <br/> |
-|`http://contoso.com/a`  <br/> |Eine Website blockiert `http://contoso.com/a` aber keine zusätzliche Pfade`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Eine Website blockiert `http://contoso.com/a` und wie Sie zusätzliche Pfade`http://contoso.com/a/b`  <br/> |
-|`http://toys.contoso.com*`  <br/> |Blöcke eine Unterdomäne (in diesem Fall "Toys"), aber zulassen Klicks zu anderen Domänen-URLs (wie `http://contoso.com` oder `http://home.contoso.com`).  <br/> |
+|`contoso.com`oder`*contoso.com*`  <br/> |Blockiert die Domäne, Unterdomänen und Pfade, wie `https://www.contoso.com` `http://sub.contoso.com`, und`http://contoso.com/abc`  <br/> |
+|`http://contoso.com/a`  <br/> |Blockiert eine Website `http://contoso.com/a` , jedoch keine zusätzlichen Unterpfade wie`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Blockiert eine Website `http://contoso.com/a` und weitere Unterpfade wie`http://contoso.com/a/b`  <br/> |
+|`http://toys.contoso.com*`  <br/> |Blockiert eine Unterdomäne (in diesem Fall "Toys"), ermöglicht jedoch das Klicken auf andere Domänen- `http://contoso.com` URLs `http://home.contoso.com`(wie oder).  <br/> |
    
 
-## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Gewusst wie: Definieren von Ausnahmen für bestimmte Benutzer in einer Organisation
+## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Definieren von Ausnahmen für bestimmte Benutzer in einer Organisation
 
-Bestimmte Gruppen können URLs anzuzeigen, die für andere Benutzer blockiert werden soll, können Sie eine sichere Links ATP Richtlinie angeben, die für bestimmte Empfänger gilt. Finden Sie unter [Einrichten einer benutzerdefinierten "nicht rewrite" URLs Liste verwenden ATP sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+Wenn Sie möchten, dass bestimmte Gruppen URLs anzeigen können, die möglicherweise für andere blockiert werden, können Sie eine ATP-Richtlinie für sichere Links angeben, die für bestimmte Empfänger gilt. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten "nicht umschreiben"-URL-Liste mit ATP-sicheren Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
   
 

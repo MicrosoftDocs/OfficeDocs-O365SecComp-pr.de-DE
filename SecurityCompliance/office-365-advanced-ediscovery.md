@@ -3,54 +3,53 @@ title: Office 365 Erweiterte eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
-description: Erfahren Sie, wie Office 365 erweiterte eDiscovery können Sie Analysieren von Daten in Office 365 und Optimierung des Dokuments Reviews treffe für effiziente eDiscovery.
-ms.openlocfilehash: e13d320d633cc0b3a6ab4566f54afa982de317f9
-ms.sourcegitcommit: 0f5a75d1cea0e61a7ac7e0459447fd785566b75d
+description: Erfahren Sie, wie Sie mit Office 365 Advanced eDiscovery Daten in Office 365 analysieren, Dokumentüberprüfungen optimieren und Entscheidungen für effiziente eDiscovery treffen können.
+ms.openlocfilehash: 7bef666b4b178fee883f52549ae75717bd55f45a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "29559038"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219275"
 ---
 # <a name="office-365-advanced-ediscovery"></a>Office 365 Erweiterte eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Mit erweiterten eDiscovery können Sie besser verstehen, Ihre Office 365-Daten und eDiscovery senken. Erweiterte eDiscovery können Sie die unstrukturierte Daten in Office 365 analysieren, führen Sie eine effizientere Dokument überprüfen und treffe für eDiscovery Daten zu reduzieren. Sie können mit den Daten in Exchange Online, SharePoint Online, OneDrive für Unternehmen, Skype für Unternehmen, Office 365-Gruppen und Microsoft-Teams arbeiten. Bei der Durchführung einer eDiscovery-Suche in der Office 365-Sicherheit &amp; Compliance Center zum Suchen nach Inhalten in Gruppen, einzelne Postfächer und Websites, und klicken Sie dann Analysieren der Suche mit erweiterten eDiscovery erzeugt. Beachten Sie, dass beim Vorbereiten der Suchergebnisse für die Analyse in erweiterten eDiscovery, optische Zeichenerkennung die Extraktion von Text aus dem Bilder ermöglicht. Dieses Feature ermöglicht die leistungsstarke Text Analysefunktionen der erweiterten eDiscovery auf Bilddateien angewendet werden soll.
+Mit Advanced eDiscovery können Sie Ihre Office 365-Daten besser verstehen und ihre eDiscovery-Kosten reduzieren. Mit Advanced eDiscovery können Sie unstrukturierte Daten in Office 365 analysieren, eine effizientere Dokumentüberprüfung durchführen und Entscheidungen zur Reduzierung von Daten für eDiscovery treffen. Sie können mit Daten arbeiten, die in Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, Office 365-Gruppen und Microsoft Teams gespeichert sind. Sie können eine eDiscovery-Suche im Office 365 Security &amp; Compliance Center durchführen, um nach Inhalten in Gruppen, einzelnen Postfächern und Websites zu suchen und dann die Suchergebnisse mit Advanced eDiscovery zu analysieren. Beachten Sie, dass beim Vorbereiten der Suchergebnisse für die Analyse in Advanced eDiscovery die optische Zeichenerkennung die Extraktion von Text aus Bildern ermöglicht. Mit diesem Feature können die leistungsstarken Textanalyse Funktionen von Advanced eDiscovery auf Bilddateien angewendet werden.
   
-Erweiterte eDiscovery vereinfacht und beschleunigt die Überprüfung des Dokuments durch das Identifizieren von redundanten Informationen mit Features wie in der Nähe Duplikate Erkennung und e-Mail-Thread Analysis. Das Relevanz Feature gilt vorhersehbare Codierung Technologie bereitgestellt, um relevante Dokumente zu identifizieren. Erweiterte eDiscovery aus der Kategorien Entscheidung Beispieldokumente lernen und wendet statistische und Self Lern-Techniken zur Berechnung der Relevanz von jedes Dokument in das DataSet. So können Sie wichtige Dokumente im Fokus, schnelle noch informiert treffe Strategie für die Groß-/Kleinschreibung, ausgemerzte Daten und priorisieren überprüfen.
+Mit Advanced eDiscovery wird der Dokument Überprüfungsprozess optimiert und beschleunigt, indem redundante Informationen mit Features wie near-Duplicate-Erkennung und e-Mail-Thread Analyse identifiziert werden. Die Relevanz-Funktion wendet die Technologie zur Vorhersage Codierung an, um relevante Dokumente zu identifizieren. Advanced eDiscovery lernt aus ihren Tagging-Entscheidungen in Beispiel Dokumenten und wendet statistische und selbstlernende Techniken an, um die Relevanz der einzelnen Dokumente im DataSet zu berechnen. Auf diese Weise können Sie sich auf wichtige Dokumente konzentrieren, schnell und dennoch fundierte Entscheidungen zu Fall Strategie, culldaten und Priorisierung der Überprüfungen treffen.
   
- **Warum erweiterte eDiscovery?** Office 365 erweiterte eDiscovery, basiert auf den vorhandenen Satz von eDiscovery-Funktionen in Office 365. Sie können beispielsweise die Suchfunktion verwenden, in die Office 365-Sicherheit &amp; Compliance Center anfänglichen unbefugt des gesamten Inhalts Datenquellen in Ihrer Organisation zu identifizieren und Sammeln Sie die Daten, die mit einer bestimmten rechtliche Anfrage relevant sein können. Klicken Sie dann können Sie Analysis für diese Daten ausführen, indem die Analytics Text, den Computer erlernen und die Relevanz/vorhersehbare Codierung Funktionen der erweiterten eDiscovery anwenden. Dadurch kann Ihre Organisation schnell Tausende von e-Mail-Nachrichten, Dokumente und andere Arten von Daten finden Sie diese Objekte an, die sich am ehesten sind, relevant mit einer bestimmten Anfrage verarbeiten. Das reduzierte DataSet können dann aus Office 365 zur späteren Überprüfung exportiert werden. 
+ **Warum Advanced eDiscovery?** Office 365 Advanced eDiscovery basiert auf den vorhandenen eDiscovery-Funktionen in Office 365. Beispielsweise können Sie die Suchfunktion im Office 365 Security &amp; Compliance Center verwenden, um eine erste Suche nach allen Inhaltsquellen in Ihrer Organisation durchzuführen, um die Daten zu identifizieren und zu erfassen, die für einen bestimmten Rechtsfall relevant sein können. Anschließend können Sie eine Analyse dieser Daten durchführen, indem Sie die Funktionen Textanalyse, Maschinelles Lernen und Relevanz/Vorhersage Codierung von Advanced eDiscovery anwenden. Dadurch kann Ihre Organisation Tausende von e-Mail-Nachrichten, Dokumenten und anderen Arten von Daten schnell verarbeiten, um die Elemente zu finden, die für einen bestimmten Fall wahrscheinlich relevant sind. Das reduzierte DataSet kann dann aus Office 365 exportiert werden, um es erneut zu überarbeiten. 
   
 ## <a name="office-365-advanced-ediscovery"></a>Office 365 Erweiterte eDiscovery
 
-Die folgenden Themen beschreiben die Einrichtung und Verwendung von erweiterten eDiscovery-Module und Features:
+In den folgenden Themen werden die Einrichtung und Verwendung von erweiterten eDiscovery-Modulen und-Features beschrieben:
   
-- [Schnelles Setup](quick-setup-for-advanced-ediscovery.md) - unterstützt Sie beim Einstieg in erweiterten eDiscovery. 
+- [Quick Setup](quick-setup-for-advanced-ediscovery.md) – hilft Ihnen bei den ersten Schritten mit Advanced eDiscovery. 
     
-- [Das Modul Prozess ausgeführt](run-the-process-module-in-advanced-ediscovery.md) – ermöglicht die Vorbereitung der Dateien aus der angegebenen Datenquellen. 
+- [Die Ausführung des Process](run-the-process-module-in-advanced-ediscovery.md) -Moduls ermöglicht das Vorbereiten von Dateien aus angegebenen Datenquellen. 
     
-- [Analysieren von Groß-/Kleinschreibung Daten](analyze-case-data-with-advanced-ediscovery.md) - Identifikation und Gruppieren von nahezu doppelte Dateien und hierarchisch strukturiert Gruppen e-Mail-Threads ermöglicht. 
+- [Analysieren](analyze-case-data-with-advanced-ediscovery.md) von Falldaten – ermöglicht die Identifizierung und Gruppierung von nahezu doppelten Dateien und hierarchisch strukturierten Gruppen von e-Mail-Threads. 
 
-- [Using Express Analysis](use-express-analysis-in-advanced-ediscovery.md) - ermöglicht schnellen Analyse der Groß-/Kleinschreibung Daten und exportieren Sie die Ergebnisse. 
+- Die [Verwendung der Express Analyse](use-express-analysis-in-advanced-ediscovery.md) ermöglicht die schnelle Analyse von Falldaten und das Exportieren der Ergebnisse. 
     
-- [Einrichten des Moduls Relevanz](manage-relevance-setup-in-advanced-ediscovery.md) - ermöglicht die Definition der Parameter für die Verarbeitung der Relevanz. 
+- [Einrichten des Relevance](manage-relevance-setup-in-advanced-ediscovery.md) -Moduls – ermöglicht die Definition von Parametern für die Relevanz-Verarbeitung. 
     
-- [Mithilfe des Moduls Relevanz](use-relevance-in-advanced-ediscovery.md) - identifiziert und Rang Dateien nach Relevanz Faktoren, die frühe Groß-/Kleinschreibung Bewertung hilft, culling dokumentieren, und überprüfen. 
+- [Mithilfe des Relevance](use-relevance-in-advanced-ediscovery.md) -Moduls werden Dateien nach Relevanz-Bewertungen identifiziert und klassifiziert, die bei der frühen Fall Bewertung, beim Ausmerzen von Dokumenten und bei der Überprüfung behilflich sind. 
     
-- [Exportieren von Daten der Groß-/Kleinschreibung](export-case-data-in-advanced-ediscovery.md) - ermöglicht den Export von erweiterten eDiscovery-Daten und Ergebnisse zur Überprüfung. 
+- [Exportieren](export-case-data-in-advanced-ediscovery.md) von Falldaten – ermöglicht den Export von fortgeschrittenen eDiscovery-Daten und-Ergebnissen zur Überarbeitung. 
     
-- [Ausführen von Berichten](run-reports-in-advanced-ediscovery.md) - aktiviert die Generierung der Ausgabe der CSV-Datei für die ausgewählten Berichte. 
+- [Running Reports](run-reports-in-advanced-ediscovery.md) -ermöglicht die Generierung der CSV-Dateiausgabe für die ausgewählten Berichte. 
     
-- [Definieren von Groß-/Kleinschreibung und Organisation Einstellungen](define-case-and-tenant-settings-in-advanced-ediscovery.md) - ermöglicht die Definition der Parameter Ebene der Groß-/Kleinschreibung und der Organisation. 
+- [Definieren von Fall-und Organisationseinstellungen](define-case-and-tenant-settings-in-advanced-ediscovery.md) – ermöglicht die Definition von Parametern auf Fall-und Organisationsebene. 
     
-- [Verwenden erweiterter eDiscovery Dienstprogramme](use-advanced-ediscovery-utilities.md) - ermöglicht die Ausführung des erweiterten eDiscovery Dienstprogramme auf Groß-/Kleinschreibung Daten. 
+- [Mit Advanced eDiscovery Utilities](use-advanced-ediscovery-utilities.md) – ermöglicht die Ausführung von Advanced eDiscovery Utilities für Falldaten. 

@@ -6,56 +6,56 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'Informationen Sie zum Konfigurieren von Benutzerrollen, Fälle erstellen und Zuweisen von Benutzern zu Fällen in Office 365 erweiterte eDiscovery.  '
-ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'Erfahren Sie, wie Sie Benutzerrollen konfigurieren, Fälle erstellen und Benutzer zu Fällen in Office 365 Advanced eDiscovery zuweisen.  '
+ms.openlocfilehash: f393c59a9726baa6d7423eacb33543ae7adf5065
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559058"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212988"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Einrichten von Benutzern und Fällen in Office 365 Advanced eDiscovery
 
-In diesem Thema wird beschrieben, wie Benutzer und für Office 365 erweiterte eDiscovery-Fälle einrichten.
+In diesem Thema wird beschrieben, wie Sie Benutzer und Fälle für Office 365 Advanced eDiscovery einrichten.
   
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Vor dem Einrichten von Fällen und Benutzer in erweiterten eDiscovery, ist Folgendes erforderlich:
+Bevor Sie Fälle und Benutzer in Advanced eDiscovery einrichten, ist Folgendes erforderlich:
   
-- Um eine erweiterte eDiscovery mit Benutzerdaten zu analysieren, muss der Benutzer (der Verwaltungsberechtigte der Daten) eine Lizenz für Office 365 E5 zugewiesen werden. Alternativ können der Benutzer mit einer Lizenz für Office 365 E1 oder E3 eine erweiterte eDiscovery eigenständige Lizenz zugewiesen werden. Administratoren und Compliance Officer, die zugewiesenen Fällen und erweiterte eDiscovery verwenden, um Daten zu analysieren erforderlich keine E5-Lizenz. 
+- Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (der Depotbank der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-Standalone-Lizenz zugewiesen werden. Administratoren und Compliance Officer, denen Fälle zugeordnet sind und die erweiterte eDiscovery zur Analyse von Daten verwenden, benötigen keine E5-Lizenz. 
     
-- Sie müssen ein Mitglied der Rollengruppe eDiscovery-Manager in der Office 365-Sicherheit sein &amp; Compliance Center zum Erstellen eines eDiscovery-Fall und Mitglieder hinzufügen. Selbst bei der Sicherheit der eDiscovery-Manager-Rollengruppe hinzufügen &amp; Compliance Center, Sie müssen ein globaler Administrator in Office 365-Organisation sein. Wenn Sie kein globaler Administrator angemeldet sind, müssen Sie bitten Sie einen globalen Administrator So fügen Sie der eDiscovery-Manager-Rollengruppe hinzu. Weitere Informationen finden Sie unter:
+- Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Office 365 Security &amp; Compliance Center sein, um einen eDiscovery-Fall zu erstellen und ihm Mitglieder hinzuzufügen. Um sich selbst der eDiscovery-Manager-Rollengruppe im &amp; Security Compliance Center hinzuzufügen, müssen Sie ein globaler Administrator in ihrer Office 365-Organisation sein. Wenn Sie kein globaler Administrator sind, müssen Sie einen globalen Administrator bitten, Sie der Rollengruppe "eDiscovery-Manager" hinzuzufügen. Weitere Informationen finden Sie unter:
     
   - [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
-  - [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md)
+  - [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md)
     
-## <a name="step-1-assign-users-ediscovery-permissions"></a>Schritt 1: Zuweisen von Benutzern Berechtigungen für eDiscovery
+## <a name="step-1-assign-users-ediscovery-permissions"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen für Benutzer
 
-Der erste Schritt besteht, Benutzern die Anforderung Zuweisen von Berechtigungen in das Wertpapier &amp; Compliance Center, damit sie können mich als Mitglied einer eDiscovery-Fall hinzugefügt. Nachdem ein Benutzer, als Mitglied einer Anfrage in das Wertpapier hinzugefügt wird &amp; Compliance Center, werden auf die Groß-/Kleinschreibung im erweiterten eDiscovery zugreifen.
+Der erste Schritt besteht darin, Benutzern die Anforderungs Berechtigungen im Security &amp; Compliance Center zuzuweisen, damit Sie als Mitglied eines eDiscovery-Falls hinzugefügt werden können. Nachdem ein Benutzer als Mitglied eines Falls im Security &amp; Compliance Center hinzugefügt wurde, kann er in Advanced eDiscovery auf den Fall zugreifen.
   
-Wenn einem Benutzer die erforderlichen Berechtigungen zuweisen, damit sie als Mitglied einer eDiscovery-Fall hinzugefügt werden können, finden Sie unter Schritt 1 in [eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+Wenn Sie einem Benutzer die erforderlichen Berechtigungen zuweisen möchten, damit er als Mitglied eines eDiscovery-Falls hinzugefügt werden kann, lesen Sie Schritt 1 in [eDiscovery- &amp; fällen im Office 365 Security Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
   
-## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>Schritt 2: Erstellen einen eDiscovery-Fall und Hinzufügen von Mitgliedern
+## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>Schritt 2: Erstellen eines eDiscovery-Falls und Hinzufügen von Mitgliedern
 
-Im nächste Schritt ist die Erstellung einen neuen eDiscovery-Fall in das Wertpapier &amp; Compliance Center und Hinzufügen von Mitgliedern. Mitglieder der Groß-/Kleinschreibung werden klicken Sie dann auf die Groß-/Kleinschreibung im erweiterten eDiscovery zugreifen.
+Im nächsten Schritt erstellen Sie einen neuen eDiscovery-Fall im Security &amp; Compliance Center und fügen Mitglieder hinzu. Die Mitglieder des Falles können dann in Advanced eDiscovery auf den Fall zugreifen.
   
-1. Erstellen einen neue eDiscovery-Fall, finden Sie unter Schritt2 im [eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
+1. Informationen zum Erstellen eines neuen eDiscovery-Falls finden Sie unter Schritt 2 in [eDiscovery-Fällen im &amp; Office 365 Security Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
     
-2. Zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter Schritt 3 in [eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](ediscovery-cases.md#step-3-add-members-to-a-case)
+2. Informationen zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter Schritt 3 in [eDiscovery- &amp; fällen im Office 365 Security Compliance Center](ediscovery-cases.md#step-3-add-members-to-a-case)
     
-## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>Schritt 3: Eine Anfrage in erweiterten eDiscovery wechseln
+## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>Schritt 3: gehen Sie zu einem Fall in Advanced eDiscovery
 
-Nachdem Sie einen eDiscovery-Fall erstellen und Hinzufügen von Mitgliedern, können Sie (oder ein beliebiges Element von der Groß-/Kleinschreibung) die entsprechende Groß-/Kleinschreibung im erweiterten eDiscovery zugreifen. Zugriff auf eine Anfrage in erweiterten eDiscovery finden Sie in Schritt 8 in [eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
+Nachdem Sie einen eDiscovery-Fall erstellt und Mitglieder hinzugefügt haben, können Sie (oder ein beliebiger Member) in Advanced eDiscovery auf den entsprechenden Fall zugreifen. Informationen zum Zugriff auf einen Fall in Advanced eDiscovery finden Sie in Schritt 8 in [eDiscovery-Fällen im &amp; Office 365 Security Compliance Center](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
   
 ## <a name="see-also"></a>Siehe auch
 

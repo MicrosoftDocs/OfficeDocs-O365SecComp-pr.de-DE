@@ -1,80 +1,80 @@
 ---
-title: Definieren Sie in Office 365 erweiterte eDiscovery hervorgehobenen Schlüsselwörter und erweiterte Optionen
+title: Definieren von hervorgehobenen Schlüsselwörtern und erweiterten Optionen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'Hier erfahren Sie, wie benutzerdefinierte Schlüsselwörter Relevanz zum Identifizieren der entsprechende Dateien während in Office 365 erweiterte eDiscovery tagging und Angeben der Parameter Kosten hinzugefügt.  '
-ms.openlocfilehash: c7e16fc18ba724d5b778b42e3782e04df10c50ec
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Erfahren Sie, wie Sie benutzerdefinierte Schlüsselwörter zu Relevanz hinzufügen, um relevante Dateien beim Tagging in Office 365 Advanced eDiscovery und zum Angeben von Kostenparametern zu identifizieren.  '
+ms.openlocfilehash: e380f63691d30216a082a51aac406329a9d0159f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529285"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220655"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren Sie in Office 365 erweiterte eDiscovery hervorgehobenen Schlüsselwörter und erweiterte Optionen
+# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren von hervorgehobenen Schlüsselwörtern und erweiterten Optionen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In erweiterten eDiscovery ist es möglich, benutzerdefinierte Schlüsselwörter zur Relevanz hinzufügen, um relevante Dateien während tagging zu identifizieren. Schlüsselwörter werden in den angegebenen Farben in angezeigt **Relevanz \> Tag**. 
+In Advanced eDiscovery können benutzerdefinierte Schlüsselwörter zu Relevanz hinzugefügt werden, damit Sie relevante Dateien beim taggen identifizieren können. Schlüsselwörter werden in den angegebenen Farben in **Relevanz \> -Tag**angezeigt. 
   
-Wie nachfolgend beschrieben, Schlüsselwortlisten hinzugefügt werden können, und Farben, die der Liste Schlüsselwörter und Verwandte Probleme zugewiesen. Eine QuickInfo das Schlüsselwort Beschreibung angezeigt, sofern vorhanden, wie durch doppelt unterstrichen angezeigt.
+Wie unten beschrieben, können Stichwortlisten hinzugefügt werden, und Farben, die der Stichwörter Liste und den verwandten Problemen zugewiesen sind. Eine QuickInfo zeigt die Beschreibung des Schlüsselwortes an, sofern vorhanden, wie durch eine doppelte Unterstreichung angedeutet.
   
 > [!IMPORTANT]
-> Trefferposition Hervorhebung Relevanz und Anzeigen von Schlüsselwort Treffer Ergebnisse in Dokumenten während der Relevanz markieren funktioniert nicht bei der Japanisch, Chinesisch (vereinfacht) und Koreanisch Doppelbyte-Zeichensätzen. 
+> Treffer Hervorhebung in Relevanz und Anzeigen von Keyword-Treffer Ergebnissen innerhalb von Dokumenten während des Relevanz-Taggings funktioniert nicht für die Doppelbyte-Zeichensätze Japanisch, Chinesisch und Koreanisch. 
   
-## <a name="adding-highlighted-keywords"></a>Hinzufügen von Stichwörtern hervorgehobenen
+## <a name="adding-highlighted-keywords"></a>Hinzufügen hervorgehobener Schlüsselwörter
 
-1. In der **Relevanz \> Relevanz Setup** Registerkarte, wählen Sie **Schlüsselwörter hervorgehoben**.
+1. Wählen Sie auf der Registerkarte ** \> Relevanz Relevanz** die Option **hervorgehobene Schlüsselwörter**aus.
     
-2. Klicken Sie auf die **+** Symbol Schlüsselwörter hinzufügen. Klicken Sie im Dialogfeld **neue Schlüsselwörter hinzufügen** wird angezeigt. 
+2. Klicken Sie **+** auf das Symbol, um Stichwörter hinzuzufügen. Das Dialogfeld **neue Schlüsselwörter hinzufügen** wird angezeigt. 
     
-3. Geben Sie **Schlüsselwörter**der Liste Schlüsselwörter Schlüsselwörter durch Kommas trennen. 
+3. Geben Sie in **Schlüssel**Wörter die Liste Stichwörter ein, und trennen Sie Stichwörter durch Kommata. 
     
-4. Wählen Sie in der Liste **Farbe** die Farbe zum Hervorheben von der eingegebenen Stichwörter Liste aus. 
+4. Wählen Sie in der Liste **Farbe** die Farbe aus, die die Liste eingegebene Schlüsselwörter hervorheben soll. 
     
-5. Wählen Sie in der Liste **Wählen Sie Problem** , ob die Liste der Schlüsselwörter für "Alle Probleme" oder ausgewählte Probleme gelten. 
+5. Wählen Sie in der Liste **Problem auswählen** aus, ob die Stichwörter Liste auf alle Probleme oder auf ausgewählte Probleme angewendet werden soll. 
     
-6. Geben Sie **Beschreibung**in die Liste Schlüsselwörter (optional).
+6. Geben Sie in **Beschreibung**die Liste Stichwörter (optional) ein.
     
     ![Neue Schlüsselwörter hinzufügen](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
-7. Klicken Sie auf **OK** , wenn Sie fertig. Die erstellte Liste kann wird die Tabelle "Schlüsselwörter" hinzugefügt und bearbeitet oder gelöscht werden. 
+7. Klicken Sie auf **OK** , wenn Sie fertig sind. Die erstellte Liste wird der Liste der Schlüsselwörter hinzugefügt und kann bearbeitet oder gelöscht werden. 
     
     ![Liste der Relevanzeinrichtungsschlüsselwörter](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
-Die benutzerdefinierte Schlüsselwörter werden angezeigt, in den angegebenen Farben in Relevanz \> Tag. 
+Die benutzerdefinierten Schlüsselwörter werden im angegebenen Colors- \> Tag angezeigt. 
   
-## <a name="specifying-relevance-setup-advanced-settings"></a>Erweiterte Einstellungen angeben Relevanz-setup
+## <a name="specifying-relevance-setup-advanced-settings"></a>Angeben der erweiterten Einstellungen für das Relevanz-Setup
 
-Diese Einstellungen wirken sich auf den Titel und Decide Diagrammen in Relevanz.
+Diese Einstellungen wirken sich auf die Spur-und Entscheidungsdiagramme aus.
   
-1. In der **Relevanz \> Relevanz Setup** Registerkarte, wählen Sie **Erweiterte Einstellungen**.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz Setup** die Option **Erweiterte Einstellungen**aus.
     
-2. Klicken Sie im Dialogfeld **Kosten Parameter** treffen Sie die folgende Auswahl: 
+2. Wählen Sie im Dialogfeld **Kosten Parameter** die folgenden Optionen aus: 
     
-1. Klicken Sie in der Liste **Kosten pro Stunde ($) überprüfen** wählen Sie die Zeitspanne in Dollar, oder übernehmen Sie den Standardwert. 
+1. Wählen Sie in der Liste **Kostenüberprüfung pro Stunde ($)** den Betrag in Dollar aus, oder übernehmen Sie den Standardwert. 
     
-2. Wählen Sie in der Liste **Anzahl der pro Stunde überprüft Dateien** die Zeitspanne, oder übernehmen Sie den Standardwert. 
+2. Wählen Sie in der Liste **Anzahl der überprüften Dateien pro Stunde** den Betrag aus, oder übernehmen Sie den Standardwert. 
     
     ![Kostenparameter für Relevanzeinrichtung](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. Klicken Sie auf **Speichern**. Die ausgewählten Einstellungen gespeichert werden.
+3. Klicken Sie auf **Speichern**. Die ausgewählten Einstellungen werden gespeichert.
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
 [Definieren von Problemen und Zuweisen von Benutzern](define-issues-and-assign-users.md)
   
-[Einrichten von Lasten importierte Dateien hinzufügen](set-up-loads-to-add-imported-files.md)
+[Einrichten von Lasten zum Hinzufügen importierter Dateien](set-up-loads-to-add-imported-files.md)
 

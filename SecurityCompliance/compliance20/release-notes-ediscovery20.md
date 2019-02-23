@@ -1,64 +1,64 @@
 ---
-title: Versionshinweise für erweiterte eDiscovery (Preview)
+title: Versionshinweise zu Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dieser Artikel enthält die Versionshinweise für erweiterte eDiscovery (Preview).
-ms.openlocfilehash: 305d1da31c9628f4f87b7b50da0b48c64efb808d
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+description: Dieser Artikel enthält die Versionshinweise zu Advanced eDiscovery (Preview).
+ms.openlocfilehash: c717a07d75e84046de07203515fceaf26aab5a41
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607798"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212935"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>Versionshinweise für erweiterte eDiscovery (Preview)
+# <a name="release-notes-for-advanced-ediscovery-preview"></a>Versionshinweise zu Advanced eDiscovery (Preview)
 
-Das Programm Public Preview für erweiterte eDiscovery ist die Möglichkeit, frühen Zugriff auf die in Kürze verfügbare Funktionalität und Updates abrufen. Wenn frühen Zugriff auf die neuesten Funktionen erhalten möchten, erstellen, und einen Fall erweiterte eDiscovery (Preview) in der Office 365-Sicherheit & Compliance Center verwenden. Finden Sie unter [Erstellen einer neuen Anfrage](create-new-ediscovery-case.md).
+Das öffentliche Vorschauprogramm für Advanced eDiscovery ist die Möglichkeit, frühzeitig Zugriff auf die bevorstehenden Funktionen und Updates zu erhalten. Wenn Sie frühzeitig auf die neuesten Funktionen zugreifen möchten, erstellen Sie einfach einen Advanced eDiscovery (Preview)-Fall im Office 365 Security & Compliance Center. Weitere Informationen finden Sie unter [Create a New Case](create-new-ediscovery-case.md).
 
-## <a name="issues-fixed-in-this-release"></a>In dieser Version behobenen Problemen
+## <a name="issues-fixed-in-this-release"></a>In dieser Ausgabe behobene Probleme
 
-- DCR: Ausnahmebehandlung bei Unindexed und verwaiste Elemente
-- DCR: Haltestatus Benachrichtigungen
+- DCR: Ausnahmebehandlung für nicht indizierte und verwaiste Elemente
+- DCR: Benachrichtigungen halten
 - DCR: Verwalter in eDiscovery
 
 ## <a name="whats-new"></a>Neuigkeiten
 
-- **Navigation im Compliance Center Sicherheit & Redesigned** – erweiterte eDiscovery (Preview) hat ein neues Aussehen und Verhalten. Verwenden Sie erweiterte eDiscovery (Preview), um mehrere der Groß-/Kleinschreibung Workflow verwalten.
+- **Die neu gestaltete Navigation im Security _AMP_ Compliance Center** – Advanced EDiscovery (Preview) hat ein neues Aussehen und Verhalten. Verwenden Sie Advanced eDiscovery (Preview), um einen größeren Fall Workflow zu verwalten.
 
-- **Fallmanagement** – zusätzliche Unterstützung für neue Groß-/Kleinschreibung vorhanden ist. Sie können auch auswählen und speichern Sie Ihre aktuelle und bevorzugten Fälle. Zurückverfolgen und überwachen-Aktivität innerhalb und zwischen Anfragen mithilfe von neuen Dashboards.
+- **Case Management** – zusätzliche Unterstützung für neue Falltypen. Sie können auch Ihre letzten und bevorzugten Fälle auswählen und speichern. Verfolgen und Überwachen von Aktivitäten innerhalb und über die Fälle mithilfe neuer Dashboards.
 
-- **Verwaltungsberechtigter Management** – hinzufügen und Entfernen von Benutzern als Verwalter von Daten innerhalb einer Anfrage.
+- **Depotverwaltung** – hinzufügen und Entfernen von Benutzern als Datenverwalter innerhalb eines Falls.
 
-- **Exchange, OneDrive, und Teams Integration** – automatisch eine Anfrage aktuellen Postfach eines Benutzers, OneDrive for Business-Konto und Microsoft-Teams, Websites hinzufügen. 
+- **Exchange-, OneDrive-und Teams-Integration** – fügen Sie automatisch die aktuellen Postfach-, OneDrive for Business-und Microsoft Teams-Websites eines Benutzers zu einem Fall hinzu. 
 
-- **Verwaltungsberechtigter Communications** – senden und rechtliche Aufbewahrungspflicht Benachrichtigungen im Namen Ihrer Organisation zu verwalten.
+- **Depot Kommunikation** – senden und Verwalten von Benachrichtigungen für zugelassene Aufbewahrungsdaten im Namen Ihrer Organisation.
 
-- **Verwaltungsberechtigter Portal** – neue Portal für Verwalter ihre aktiv Zugriff auf halten Hinweise.
+- **Depot Portal** – neues Portal für Verwalter für den Zugriff auf Ihre Active Hold-Benachrichtigungen.
 
-- **Tiefe Indizierung** – erneute Durchforstung teilweise indizierte Elemente nach Bedarf.
+- **Deep Indexing** – beim erneuten durchforsten teilweise indizierter Elemente bei Bedarf.
 
-- **Error Remediation** – Remediate oder Herunterladen Verarbeitungsfehler; Dazu gehören Remediation-Unterstützung für große Dateitypen, kennwortgeschützte Dateien und mehr. 
+- **Fehler** Korrektur – beheben oder Herunterladen von Verarbeitungsfehlern; Hierzu gehört die Korrektur Unterstützung für umfangreiche Dateitypen, kennwortgeschützte Dateien und vieles mehr. 
 
-- **Verbesserungen bei der Suche** – Erstellen einer Suche durch das Identifizieren von Verwalter und/oder Speicherorte.
+- **Verbesserungen bei der Suche** – erstellen Sie eine Suche, indem Sie Verwalter und/oder Standorte identifizieren.
 
-- **Legt arbeiten** – Audit statische, nachverfolgen und verwalten festgelegt von Dokumenten.
+- **Arbeitsmappen** – verwalten, nachverfolgen und Überwachen von statischen Dokumentsätzen.
 
-- **Überprüfen Sie** – verwenden eine systemeigene, Text und in der Nähe einheitlichen Ansicht Dokumente hinzugefügt werden, um das Workingset überprüfen.
+- **Review** – verwenden Sie eine native, Text-und systemeigene Ansicht, um Dokumente zu überprüfen, die Ihrem Workingset hinzugefügt wurden.
 
-- **Redact, markieren, und mit Anmerkungen versehen** – Schwärzen Text und Anwenden von Tags Anmerkungen machen, wie Sie Dokumente lesen.
+- **Redact, Tags und Anmerkungen** – Redact Text, wendet Tags an und macht Anmerkungen, wenn Sie Dokumente überprüfen.
   
-- **Analytics-basiertes überprüfen**– nutzen eDiscovery Analytics finden, suchen und ausgemerzte Ergebnisse innerhalb einer Gruppe arbeiten.
+- **Analytics-powered Review**– Nutzung von eDiscovery-Analysen zum Suchen, suchen und Ausschlachten von Ergebnissen in einem Arbeitssatz.
 
-- **Aufträge** – Status langer-Prozessen zu verfolgen.
+- **Jobs** – verfolgen Sie den Status lang andauernder Prozesse.
 
-- Benutzeraktivität für erweiterte eDiscovery zu **New Aktivitäten überwachen** – nachverfolgen und neue Ansicht überwachen.
+- **Neue Überwachungsaktivitäten** – verfolgen und Anzeigen neuer Überwachungsaktivitäten für erweiterte eDiscovery.

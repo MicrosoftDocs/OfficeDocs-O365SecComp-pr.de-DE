@@ -3,31 +3,30 @@ title: Erste Schritte mit dem Microsoft Service Trust Portal
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Für Office 365, Azure und Dynamics 365 Online Einhaltung von Vorschriften-Berichte um herauszufinden, Drittanbieter-Überwachungen, erfahren Sie, wie Microsoft Kundendaten sicher sind und wie Sie können ISO, HIPAA, NIST, FINRA, GDPR und FedRAMP einhalten, wenn Sie diese online-Dienste verwenden.
-ms.openlocfilehash: 0eb2281307812a7c190eda734c8a462a15d81ce9
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Informationen zu Office 365-, Azure-und Dynamics 365 Online-Konformitätsberichten, um Drittanbieter-Audits zu sehen, erfahren Sie, wie Microsoft Kundendaten sicher hält und wie Sie mit ISO, HIPAA, NIST, FINRA, DSGVO und FedRAMP kompatibel sind, wenn Sie diese Onlinedienste verwenden.
+ms.openlocfilehash: 6a34fd325934d76271f5ce3a4d760580de830457
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29786322"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220255"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust Portal
 
-Das Microsoft Service vertrauen Portal bietet eine Vielzahl von Inhalten, Tools und andere Ressourcen zu Microsoft-Sicherheit, Datenschutz und Compliance-Methoden.
+Das Microsoft Service Trust Portal bietet eine Vielzahl von Inhalten, Tools und anderen Ressourcen zu Microsoft-Sicherheits-, Datenschutz-und Compliance-Verfahren.
   
-## <a name="accessing-the-service-trust-portal"></a>Zugreifen auf die Vertrauensstellung Dienstportal
+## <a name="accessing-the-service-trust-portal"></a>Zugreifen auf das Dienst Vertrauensstellungs Portal
 
-Das Service vertrauen Portal enthält Details zu Microsoft Implementierung der Steuerelemente und Prozesse, die unsere Cloud-Dienste und die Kundendaten darin zu schützen. Um einige der Ressourcen auf dem Dienst vertrauen Portal zuzugreifen, melden Sie sich als authentifizierter Benutzer mit Ihrem Microsoft Cloud Services-Konto (einer Organisation Azure Active Directory-Konto oder eine Microsoft Account) und überprüfen und akzeptieren die Microsoft Vertraulichkeitsvereinbarung für Compliance-Materialien.
+Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von Steuerelementen und Prozessen von Microsoft, mit denen unsere Cloud-Dienste und die darin enthaltenen Kundendaten geschützt werden. Um auf einige Ressourcen im Dienst Vertrauensstellungs Portal zuzugreifen, müssen Sie sich mit Ihrem Microsoft Cloud Services-Konto als authentifizierter Benutzer anmelden (entweder ein Azure Active Directory-organisationskonto oder ein Microsoft-Konto) und die Microsoft GeheimhaltungsVereinbarung für Compliance-Materialien.
   
-**Bestehende Kunden vertrauen Service Portal zugreifen können** , unter [https://aka.ms/STP](https://aka.ms/STP) mit einem der folgenden online Abonnements (Test- oder kostenpflichtige): 
+**Bestehende Kunden können auf das Service Trust** -Portal [https://aka.ms/STP](https://aka.ms/STP) bei einem der folgenden Online-Abonnements (Trial or Paid) zugreifen: 
   
 - Office 365
 
@@ -36,137 +35,137 @@ Das Service vertrauen Portal enthält Details zu Microsoft Implementierung der S
 - Azure
     
  > [!NOTE]
- > Azure Active Directory-Konten, die Organisationen zugeordnet haben Zugriff auf den gesamten Bereich der Dokumente und Features wie Compliance Manager. Microsoft-Konten für die persönliche Verwendung erstellt haben Zugriff auf den Dienst vertrauen Portal Inhalt beschränkt. 
+ > Azure Active Directory-Konten, die Organisationen zugeordnet sind, haben Zugriff auf die gesamte Bandbreite von Dokumenten und Features wie Compliance-Manager. Microsoft-Konten, die für den persönlichen Gebrauch erstellt wurden, haben begrenzten Zugriff auf Inhalte des Service Trust-Portals. 
   
-**Neue Kunden und Auswerten von Microsoft online Services-Kunden**
+**Neue Kunden und Kunden, die Microsoft Online Services evaluieren**
   
-Um ein neues Konto erstellen oder ein Testkonto erstellen, verwenden Sie eine der folgenden Anmeldung Formate (auch bei Testkonten verwendet), um Zugriff auf das STP abzurufen.
+Wenn Sie ein neues Konto erstellen oder ein Test Konto erstellen möchten, verwenden Sie eines der folgenden Anmeldeformulare (auch für Testkonten), um Zugriff auf STP zu erhalten.
   
-- Melden Sie sich für ein neues [Office 365 Business Testkonto](https://go.microsoft.com/fwlink/p/?LinkID=507653) oder ein neues [Testkonto Office 365 Enterprise.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Registrieren Sie sich für ein neues [office 365 Business-Test Konto](https://go.microsoft.com/fwlink/p/?LinkID=507653) oder ein neues [Office 365 Enterprise-Test Konto](https://go.microsoft.com/fwlink/p/?LinkID=698279) .
 
-- Melden Sie sich für ein neues [Testkonto Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
+- Registrieren Sie sich für ein neues [Dynamics 365-Test Konto](https://go.microsoft.com/fwlink/?LinkId=252780) .
 
-- Melden Sie sich bei einem neuen [Azure Testkonto](https://go.microsoft.com/fwlink/?LinkId=722737). 
+- Registrieren Sie sich für ein neues [Azure](https://go.microsoft.com/fwlink/?LinkId=722737)-Testkonto. 
     
-Wenn Sie sich für eine kostenlose Testversion oder ein Abonnement registrieren, müssen Sie Azure Active Directory zur Unterstützung des Zugriffs auf das STP aktivieren.
+Wenn Sie sich für eine ﻿kostenlose Testversion oder ein Abonnement registrieren, müssen Sie Azure Active Directory aktivieren, um den Zugriff auf STP zu unterstützen.
   
-## <a name="using-the-service-trust-portal"></a>Mithilfe des Diensts Trust-Portals
+## <a name="using-the-service-trust-portal"></a>Verwenden des Dienst Vertrauensstellungs Portals
 
-Vertrauen Dienstportal Features und Inhalte sind im Hauptmenü zugegriffen werden.
+Auf die Features und Inhalte des Service Trust Portals kann über das Hauptmenü zugegriffen werden.
   
-![Menü Dienstportal vertrauen](media/STPMenus1.png)
+![Menü "Service Trust Portal"](media/STPMenus1.png)
 
-In den folgenden Abschnitten wird jedes Element im Hauptmenü beschrieben.
+In den folgenden Abschnitten werden die einzelnen Elemente im Hauptmenü beschrieben.
   
 ### <a name="service-trust-portal"></a>Vertrauensstellungsportal (STP)
 
-Der **Dienst vertrauen Portal** Link zeigt die Homepage an. Es bietet eine schnelle Möglichkeit, um zur Startseite zurückzukehren.
+Der Link **Service Trust Portal** zeigt die Homepage an. Es bietet eine schnelle Möglichkeit, zur Homepage zurückzukehren.
 
 ### <a name="compliance"></a>Compliance
 
-Bietet die folgenden Compliance-bezogene Tools und Ressourcen:
+Stellt die folgenden Tools und Ressourcen zur Kompatibilität bereit:
 
-- **Von Überwachungsberichten** - eine Liste der unabhängigen Audit und Bewertung Berichte über Microsoft Cloud-Dienste wird angezeigt. Diese Berichte enthalten Informationen zur Kompatibilität mit Microsoft Cloud Services Data Protection Standards und gesetzliche Vorschriften, z. B.:
+- **Überwachungsberichte** : eine Liste unabhängiger Überwachungs-und Bewertungsberichte zu Microsoft-Cloud-Diensten wird angezeigt. Diese Berichte enthalten Informationen zur Einhaltung von Datenschutzstandards und behördlichen Vorschriften für Microsoft Cloud Services, wie zum Beispiel:
   
-    - International Organization for Standardization (ISO)
-    - Organisation steuert (SOC)
+    - Internationale Organisation für Standardisierung (ISO)
+    - Dienst Organisations-Steuerelemente (SOC)
     - National Institute of Standards and Technology (NIST)
-    - Federal Risiken und Autorisierung Management-Programm (FedRAMP)
-    - Allgemeine Data Protection Regulierung (GDPR)
+    - Federal Risk and Authorization Management Program (FedRAMP)
+    - Allgemeine Datenschutzverordnung (DSGVO)
 
-  Informationen zu Überwachungsberichten und einen Link zur Seite **von Überwachungsberichten** wird auch auf der Homepage Service vertrauen Portal angezeigt. 
+  Informationen zu Überwachungsberichten und einem Link zur Seite **Überwachungsberichte** werden auch auf der Startseite des Dienst Vertrauensstellungs Portals angezeigt. 
   
-- **Compliance Manager** - Compliance Manager ist ein Workflow-basierter Risiko Assessment-Tool, das Sie verfolgen, zuweisen und Überprüfen Ihrer Organisation Einhaltung von Vorschriften Aktivitäten in Zusammenhang mit Microsoft-Cloud-Dienste, wie etwa Office 365, Dynamics 365, unterstützt und Azure. Verwenden Sie Compliance-Manager zum Verwalten der Einhaltung von Vorschriften innerhalb des Modells gemeinsame Verantwortung der Cloud. Weitere Informationen finden Sie unter [Verwendung von Compliance-Manager zur Einhaltung von Datenschutz und behördlichen Anforderungen bei Verwendung der Microsoft-Cloud-Dienste](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Compliance** -Manager – Compliance-Manager ist ein Workflow basiertes Risiko Bewertungstool, mit dem Sie die behördlichen Compliance-Aktivitäten Ihrer Organisation im Zusammenhang mit Microsoft-Cloud-Diensten wie Office 365, Dynamics 365 und Azure. Verwenden Sie Compliance-Manager, um die Einhaltung gesetzlicher Vorschriften im gemeinsamen Verantwortungs Modell der Cloud zu verwalten. Weitere Informationen finden Sie unter [use Compliance Manager zur Erfüllung von Datenschutz-und behördlichen Anforderungen bei der Verwendung von Microsoft Cloud Services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
 ### <a name="industries--regions"></a>Branchen & Regionen
 
-Informationen aus dem Gesundheitswesen und regionsspezifische Compliance zu Microsoft-Cloud-Dienste.
+Bietet Branchen-und regionsspezifische Kompatibilitätsinformationen zu Microsoft Cloud Services.
 
-- **Branchen** - bietet Branchen-Angebotsseiten Informationen und dazu, wie Microsoft Cloud Services Ihrer Organisation mit Normen und Vorschriften für diese Branchen kompatibel sein:
+- **Industries** – bietet branchenspezifische Zielseiten für Informationen und darüber, wie Microsoft Cloud Services Ihre Organisation bei der Einhaltung von Standards und Vorschriften für diese Branchen unterstützt:
 
     - Schulung und Weiterbildung
-    - Finanzdienstleister
-    - US-Regierung
+    - Finanzdienstleistungen
+    - Regierung
     - Integrität
     - Fertigung
     - Einzelhandel
 
-- **Regionen** - bietet rechtliche Meinung über Microsoft Cloud Services-Kompatibilität mit verschiedenen den Gesetzen der verschiedenen Ländern. Bestimmte Ländern enthalten Australien, Tschechische Republik, Deutschland, Polen, Rumänien, Spanien und im Vereinigten Königreich.
+- **Regionen** – bietet Rechtsgutachten zu Microsoft Cloud Services Compliance mit verschiedenen Gesetzen verschiedener Länder. Zu den einzelnen Ländern gehört Australien, Tschechien, Deutschland, Polen, Rumänien, Spanien und das Vereinigte Königreich.
   
 ### <a name="documents--resources"></a>Dokumente & Ressourcen
 
-Bietet eine Vielzahl von Sicherheit und Informationen zum Entwurf mit dem Ziel, die Einhaltung von Vorschriften Ziele erfüllen, Sie verstehen, wie Microsoft Cloud Services Schutz Ihrer Daten zu erleichtern. Um den Inhalt zu überprüfen, wählen Sie eine der Optionen auf der Seite **Dokumente & Ressourcen** .
+Bietet eine Fülle von Sicherheits Implementierungs-und-Entwurfsinformationen mit dem Ziel, die Einhaltung gesetzlicher Vorgaben zu vereinfachen, indem Sie verstehen, wie Microsoft Cloud Services Ihre Daten sicher halten. Zum Überarbeiten von Inhalten wählen Sie eine der Optionen auf der Seite **Documents _AMP_ Resources** aus.
 
-- Whitepapers, häufig gestellte Fragen und Gewusst wie-zu-Artikel
+- Whitepapers, FAQs und vorGehensWeisen
 - Compliance-Leitfäden
-- Tests Stift und Aktivitäten
-- Sichere Score
-- Azure-Sicherheit und Compliance-Pläne
-- Überwachten Steuerelemente
+- Pen-Tests und Sicherheitsbewertungen
+- Sicheres Ergebnis
+- Azure-Sicherheits-und Konformitäts Pläne
+- ÜberWachte Steuerelemente
   
 ### <a name="trust-center"></a>Sicherheitscenter
 
-Enthält Links zu [Microsoft Trust Center](https://www.microsoft.com/trustcenter), die Weitere Informationen zur Sicherheit, Kompatibilität und den Datenschutz in der Microsoft-Cloud bereitstellt. Hierzu zählen Informationen über die Funktionen in Microsoft Cloud-Dienste, die Sie verwenden können, bestimmte Anforderungen von der GDPR Dokumentation hilfreich, um Ihre GDPR Accountability und Ihre Kenntnisse über die technischen und organisatorischen Maßnahmen beheben Microsoft hat zur Unterstützung der GDPR übernommen.
+Links zum [Microsoft Trust Center](https://www.microsoft.com/trustcenter), das weitere Informationen zu Sicherheit, Compliance und Datenschutz in der Microsoft-Cloud bereitstellt. Hierzu gehören Informationen zu den Funktionen in Microsoft Cloud Services, die Sie verwenden können, um bestimmte Anforderungen des DSGVO zu erfüllen, Dokumentationen, die für Ihre DSGVO-Verantwortlichkeit und Ihr Verständnis der technischen und organisatorischen Maßnahmen hilfreich sind. Microsoft hat die DSGVO unterstützt.
   
 ### <a name="my-library"></a>Meine Bibliothek
 
-Diese neuen Features können, die Sie speichern (oder *Pin*) dokumentiert, sodass Sie schnell auf Ihrer Seite Meine Bibliothek zugreifen können. Sie können auch Benachrichtigungen einrichten, sodass Microsoft Sie eine e-Mail-Nachricht sendet, wenn Dokumente in Ihre eigene Bibliothek aktualisiert werden. Weitere Informationen finden Sie im Abschnitt " [My Library](#my-library-1) " in diesem Artikel.
+Mit diesem neuen Feature können Sie Dokumente speichern (oder *anheften*), sodass Sie auf Ihrer Seite Meine Bibliothek schnell darauf zugreifen. Sie können Benachrichtigungen auch einrichten, sodass Microsoft Ihnen eine e-Mail-Nachricht sendet, wenn Dokumente in ihrer meine-Bibliothek aktualisiert werden. Weitere Informationen finden Sie im Abschnitt [Meine Bibliothek](#my-library-1) in diesem Artikel.
 
 ### <a name="admin"></a>Administrator
 
-Administrative Funktionen, die nur für das globale Administratorkonto ein verfügbar sind. Diese Option steht nur, wenn Sie als globaler Administrator angemeldet sind.
+Verwaltungsfunktionen, die nur für das globale Administratorkonto zur Verfügung stehen. Diese Option ist nur sichtbar, wenn Sie als globaler Administrator angemeldet sind.
   
- Die Seite **Einstellungen** können Sie rollenbasierten zu Compliance Manager zuweisen. Weitere Informationen finden Sie im Abschnitt "Berechtigungen und Role-based Access Control" in [Verwendung Compliance Manager zur Einhaltung von Datenschutz und behördlichen Anforderungen bei Verwendung der Microsoft-Cloud-Dienste](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
+ Auf der Seite " **Einstellungen** " können Sie dem Compliance-Manager den rollenbasierten Zugriff zuweisen. Weitere Informationen finden Sie im Abschnitt "Berechtigungen und rollenbasierte Zugriffssteuerung" unter [use Compliance Manager zur Erfüllung von Datenschutz-und behördlichen Anforderungen bei der Verwendung von Microsoft Cloud Services](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
 ### <a name="search"></a>Suche
 
-Klicken Sie auf das Lupensymbol in der oberen rechten Ecke der Seite Dienstportal vertrauen, erweitern das Feld, geben die Suchbegriffe, und drücken die **EINGABETASTE**.
+Klicken Sie auf die Lupe in der oberen rechten Ecke der Seite Service Trust Portal, um das Feld zu erweitern, Ihre Suchbegriffe einzugeben und die **Eingabe**Taste zu drücken.
 
 ![Service Trust-Portal – Sucheingabefeld](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
- **Suchseite** wird angezeigt, mit den Suchbegriff in das Suchfeld angezeigt, und die Ergebnisse der unten aufgeführten.
+ Die **** Suchseite wird angezeigt, wobei der Suchbegriff im Suchfeld und die unten aufgeführten Suchergebnisse angezeigt werden.
   
 ![Service Trust Portal – Suchen in Dokumenten mit angewendetem Filter](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Standardmäßig gibt Suche Dokument Ergebnisse zurück. Sie können die Ergebnisse mithilfe der Dropdownlisten an die Liste der angezeigten Dokumente anpassen. Sie können mehrere Filter verwenden, um die Liste von Dokumenten einzuschränken. Filter enthalten, die bestimmte Clouddienste, Kategorien von Compliance oder Sicherheitsmaßnahmen, Regionen und Branchen. Klicken Sie auf den Link des Dokument zum Herunterladen des Dokuments.
+Standardmäßig gibt die Suche Dokument Ergebnisse zurück. Sie können die Ergebnisse mithilfe von Dropdownlisten zum Verfeinern der angezeigten Dokumentliste verwenden. Sie können mehrere Filter verwenden, um die Liste der Dokumente einzuschränken. Zu den Filtern gehört die spezifische Cloud-Dienste, Kategorien von Konformitäts-oder Sicherheitsmethoden, Regionen und Branchen. Klicken Sie auf den Link Dokumentname, um das Dokument herunterzuladen.
   
-Liste Steuerelemente aus der Bewertung im Compliance-Manager im Zusammenhang Suchbegriffe, klicken Sie auf **Compliance Manager**. Die Suchergebnisse anzeigen, dem Datum die Bewertung erstellt wurde, wird der Name der Bewertung gruppieren, den entsprechenden Microsoft Cloud-Dienst und gibt an, ob das Steuerelement von Microsoft oder Kunden verwaltet wird. Klicken Sie auf den Namen des Steuerelements, das Steuerelement in der Bewertung im Compliance-Manager anzuzeigen.
+Klicken Sie auf **Compliance-Manager**, um die Steuerelemente aus Bewertungen im Compliance-Manager aufzulisten. Die Suchergebnisse zeigen das Datum, an dem die Bewertung erstellt wurde, den Namen der Bewertungs Gruppierung, den entsprechenden Microsoft-Clouddienst und ob das Steuerelement von Microsoft oder vom Kunden verwaltet wird. Klicken Sie auf den Namen des Steuerelements, um das Steuerelement im Assessment im Compliance-Manager anzuzeigen.
   
 ![Service Trust Portal – Suchen in Compliance-Manager-Steuerelementen](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Dienst vertrauen Portal-Berichte und Dokumente stehen zum Herunterladen für mindestens 12 Monate nach dem Veröffentlichen oder bis eine neue Version des Dokuments verfügbar ist.
+> Berichte und Dokumente des Service Trust Portals stehen mindestens 12 Monate nach der Veröffentlichung oder bis eine neue Version von Document verfügbar ist, zum Download bereit.
   
 ## <a name="my-library"></a>Meine Bibliothek
 
-Verwenden Sie das Feature Meine Bibliothek, um Dokumente und Ressourcen auf dem Dienst vertrauen Portal auf Ihrer Seite Meine Bibliothek hinzuzufügen. Auf diese Weise können Sie Zugriff auf Dokumente, die in einem einzigen Speicherort für Sie relevant sind.  Um Ihre eigene Bibliothek ein Dokument hinzuzufügen, klicken Sie auf das Menü **...** rechts eines Dokuments, und wählen Sie dann **zur Bibliothek hinzufügen**. Sie können mehrere Dokumente auf Ihre eigene Bibliothek durch Klicken auf das Kontrollkästchen neben einem oder mehreren Dokumenten und dann auf **Speichern in Bibliothek** am oberen Rand der Seite hinzufügen.
+Verwenden Sie das Feature Meine Bibliothek, um der Seite Meine Bibliothek Dokumente und Ressourcen im Dienst Vertrauensstellungs Portal hinzuzufügen. Auf diese Weise können Sie auf Dokumente zugreifen, die für Sie an einem zentralen Ort relevant sind.  Klicken Sie zum Hinzufügen eines Dokuments zu Ihrer Bibliothek auf das Menü **...** rechts neben einem Dokument, und wählen Sie dann **zu Bibliothek hinzufügen**aus. Sie können Ihrer meine Bibliothek mehrere Dokumente hinzufügen, indem Sie auf das Kontrollkästchen neben einem oder mehreren Dokumenten klicken und dann oben auf der Seite **auf in Bibliothek speichern** klicken.
 
-Außerdem können Sie das Feature Benachrichtigungen Ihre eigene Bibliothek so konfigurieren, dass eine e-Mail-Nachricht an Sie gesendet wird, wenn Microsoft ein Dokument aktualisiert, die Sie Ihre eigene Bibliothek hinzugefügt haben. Um Benachrichtigungen einzurichten, rufen Sie Ihre eigene Bibliothek, und klicken Sie auf **Einstellungen für Kalenderbenachrichtigungen**. Sie können wählen Sie die Häufigkeit der Benachrichtigungen, und geben eine e-Mail-Adresse in Ihrer Organisation zum Senden von Benachrichtigungen. E-Mail-Benachrichtigungen enthalten Links zu den Dokumenten, die aktualisiert wurden und eine kurze Beschreibung des Updates.
+Darüber hinaus können Sie mit der Benachrichtigungsfunktion Ihre meine Bibliothek so konfigurieren, dass eine e-Mail-Nachricht an Sie gesendet wird, wenn Microsoft ein Dokument aktualisiert, das Sie Ihrer meine Bibliothek hinzugefügt haben. Um Benachrichtigungen einzurichten, wechseln Sie zu "Meine Bibliothek", und klicken Sie auf **Benachrichtigungseinstellungen**. Sie können die Häufigkeit von Benachrichtigungen auswählen und eine e-Mail-Adresse in Ihrer Organisation angeben, an die Benachrichtigungen gesendet werden sollen. E-Mail-Benachrichtigungen enthalten Links zu den Dokumenten, die aktualisiert wurden, sowie eine kurze Beschreibung des Updates.
 
-Beachten Sie außerdem, dass wir alle Dokumente in Ihre eigene Bibliothek identifizieren, die in den letzten 30 Tagen, unabhängig davon, ob Sie Benachrichtigungen aktivieren aktualisiert wurden. Eine kurze Beschreibung des Updates wird auch als QuickInfo angezeigt. 
+Beachten Sie, dass alle Dokumente in ihrer meine-Bibliothek identifiziert werden, die innerhalb der letzten 30 Tage aktualisiert wurden, unabhängig davon, ob Sie Benachrichtigungen aktivieren oder nicht. Eine kurze Beschreibung des Updates wird auch in einer QuickInfo angezeigt. 
 
-## <a name="starter-packs"></a>Starter packs
+## <a name="starter-packs"></a>Starter Packs
 
-Starter Packs stellen eine Microsoft-curated Dokumentation zu Microsoft-Cloud-Diensten für bestimmte Branchen. Gegenwärtig bietet Service Portal vertrauen die folgenden drei Starter Packs für Finanzdienstleister. Diese Starter Packs können Organisationen bewerten und Sicherheit, Kompatibilität und den Datenschutz in der Microsoft-Cloud bewerten und bieten Unterstützung Microsoft Cloud Services in hochgradig regulierten Finanzdienstleister implementieren zum.
+Starter Packs sind eine von Microsoft kuratierte Dokumentation zu Microsoft Cloud Services für bestimmte Branchen. Derzeit bietet das Service Trust-Portal die folgenden drei Starter Packs für Finanzdienstleister. Diese Starter Packs helfen Organisationen bei der Bewertung und Bewertung von Sicherheit, Compliance und Datenschutz in der Microsoft-Cloud und bieten Hinweise zur Implementierung von Microsoft Cloud Services in der hoch regulierten Finanzdienstleistungsbranche.
 
-- **Evaluation-Startpaket** - Verwendung für frühe Auswertung der Microsoft Cloud für Finanzdienstleister.
+- **Evaluation Starter Pack** -verwenden Sie für eine frühe Bewertung der Microsoft-Cloud für Finanzdienstleister.
 
-- **Assessment-Startpaket** - Bewertung, verwenden Sie nach der Prüflisten und weitere Anweisungen unter dieser Startpaket für Ihre Organisation bewerten der Risiken im Zusammenhang mit der Sicherheit, Kompatibilität und den Datenschutz.
+- **Assessment-Starter Pack** – verwenden Sie nach der Evaluierung die Prüflisten und andere Anweisungen in diesem Starter Pack, damit Ihre Organisation Risiken im Zusammenhang mit Sicherheit, Compliance und Datenschutz bewerten kann.
 
-- **Audit-Startpaket** - Benutzer diese Startpaket Anleitungen unter Verwendung auditing Steuerelemente und andere Tools unterstützen die Implementierung von Microsoft Cloud Services in eine Möglichkeit, mit deren verringern Gefährdung Ihrer Organisation.
+- ÜberWachen des **Starter** Pack-users dieses Starter Paket für Hilfe bei der Verwendung von Überwachungs Steuerelementen und anderen Tools, die die Implementierung von Microsoft Cloud Services in einer Art und Weise unterstützen, die die Risikoanfälligkeit Ihrer Organisation reduziert.
 
-Zugriff auf diese Starter Packs wechseln Sie zu **vertrauen Dienstportal > Branchen & Regionen > Branche Lösungen > Finanzdienstleister**. Sie können öffnen oder einem Download von Dokumenten aus einem Starter pack oder in Ihre eigene Bibliothek speichern.
+Um auf diese Starter Packs zuzugreifen, wechseln Sie zu **Service Trust Portal _GT_ Industries _AMP_ Regionen _GT_ Industry Solutions _GT_ Financial Services**. Sie können Dokumente aus einem Starter Pack öffnen oder herunterladen oder in ihrer meine Bibliothek speichern.
 
 ## <a name="localization-support"></a>Unterstützung der Lokalisierung
 
-Service vertrauen Portal können Sie den Inhalt in verschiedenen Sprachen anzeigen. Um die Seitensprache zu ändern, klicken Sie auf das Globussymbol in der unteren linken Ecke der Seite auf und wählen Sie die Sprache Ihrer Wahl. 
+Mit dem Dienst Vertrauensstellungs Portal können Sie den Seiteninhalt in verschiedenen Sprachen anzeigen. Um die Sprache der Seite zu ändern, klicken Sie einfach auf das Globussymbol in der unteren linken Ecke der Seite und wählen Sie die Sprache Ihrer Wahl aus. 
   
 ![Service Trust Portal – Optionen für lokalisierte Inhalte](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Feedback
 
-Wir unterstützen mit Fragen zum Dienst vertrauen Portal oder Fehler, die auftreten, wenn Sie das Portal verwenden. Sie können auch mit Fragen und Feedback zu Service Vertrauensstellung Portal Compliance-Berichte und Vertrauenswürdigkeit Ressourcen Kontakt mit dem Feedback-Link am unteren Rand der STP-Seiten.
+Wir helfen Ihnen bei Fragen zum Service Trust Portal oder bei Fehlern bei der Verwendung des Portals. Sie können sich auch mit Fragen und Feedback zu Kompatibilitätsberichten für Service Trust Portals und zu vertrauenswürdigen Ressourcen über den Link Feedback am unteren Rand der STP-Seiten in Verbindung setzen.
   
-Ihr Feedback ist für uns sehr wichtig. Klicken Sie auf die Schaltfläche Feedback am unteren Rand der Seite So senden Sie uns Kommentare zu was Sie haben oder hat nicht gefallen oder Vorschläge, die Sie zur Verbesserung der unseren Produkten oder Produktfeatures haben können.
+Ihr Feedback ist uns sehr wichtig. Klicken Sie unten auf der Seite auf die Schaltfläche Feedback, um uns Kommentare darüber zu senden, was Sie getan oder nicht gemocht haben, oder Vorschläge zur Verbesserung unserer Produkte oder Produktfeatures.
   
 ![](media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

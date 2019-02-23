@@ -1,37 +1,37 @@
 ---
-title: Ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse
+title: Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: Sie können die Standardgröße von PST-Dateien ändern, die beim Exportieren von eDiscovery-Suchergebnisse auf den Computer heruntergeladen werden.
-ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: Sie können die Standardgröße von PST-Dateien ändern, die beim Exportieren von eDiscovery-Suchergebnissen auf Ihren Computer heruntergeladen werden.
+ms.openlocfilehash: 8a956091f29ec1b564d3194c7e3ca2680fdeb564
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522246"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214625"
 ---
-# <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse
+# <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
-Wenn Sie das Office 365 eDiscovery-Export-Tool verwenden, um die e-Mail-Ergebnisse einer eDiscovery-Suche aus der verschiedenen Microsoft eDiscovery-Tools zu exportieren, wird die Standardgröße des eine PST-Datei, die exportiert werden kann 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, mit denen Sie die Suchergebnisse exportieren. Ein Grund hierfür ist, sodass eine PST-Datei auf das Wechselmedium, solche einer DVD, einer CD oder ein USB-Laufwerk passen. 
+Wenn Sie das Office 365 eDiscovery-Export Tool verwenden, um die e-Mail-Ergebnisse einer eDiscovery-Suche aus den verschiedenen Microsoft eDiscovery-Tools zu exportieren, beträgt die Standardgröße einer PST-Datei, die exportiert werden kann, 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, den Sie zum Exportieren der Suchergebnisse verwenden. Ein Grund hierfür ist, dass eine PST-Datei auf Wechseldatenträger, eine DVD, eine CD oder ein USB-Laufwerk angepasst werden kann. 
   
 > [!NOTE]
->  Das Office 365 eDiscovery-Export-Tool wird verwendet, um die Suchergebnisse zu exportieren, bei der Verwendung von Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center, Compliance-eDiscovery in Exchange Online und das eDiscovery Center in SharePoint Online. 
+>  Das Office 365 eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie die Inhaltssuche &amp; im Office 365 Security Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden. 
   
-## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Erstellen Sie einen Registrierungseintrag so ändern Sie die Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse
+## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Erstellen einer Registrierungseinstellung zum Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
-Führen Sie das folgende Verfahren auf dem Computer, mit denen Sie die Ergebnisse einer eDiscovery-Suche exportiert werden.
+Führen Sie auf dem Computer, auf dem Sie die Ergebnisse einer eDiscovery-Suche exportieren möchten, das folgende Verfahren aus.
   
-1. Schließen Sie das Office 365 eDiscovery-Export-Tool aus, wenn es geöffnet ist. 
+1. Schließen Sie das Office 365 eDiscovery-Export Tool, wenn es geöffnet ist. 
     
-2. Speichern Sie den folgenden Text zu einer Registrierungsdatei Fenster mithilfe der Dateiname Suffix reg; beispielsweise PstExportSize.reg. 
+2. Speichern Sie den folgenden Text in einer Fenster Registrierungsdatei mithilfe eines Dateinamen Suffixes von. reg; Beispiel: PstExportSize. reg. 
     
     ```
     Windows Registry Editor Version 5.00
@@ -39,45 +39,45 @@ Führen Sie das folgende Verfahren auf dem Computer, mit denen Sie die Ergebniss
     "PstSizeLimitInBytes"="1073741824"
     ```
 
-    Im obigen Beispiel die `PstSizeLimitInBytes` Wert auf 1.073.741.824 Bytes oder ungefähr 1 GB festgelegt ist. Hier sind einige andere Beispielwerte für die `PstSizeLimitInBytes` Einstellung. 
+    Im obigen Beispiel ist der `PstSizeLimitInBytes` wert auf 1.073.741.824 Byte oder ungefähr 1 GB festgelegt. Im folgenden finden Sie einige andere Beispielwerte `PstSizeLimitInBytes` für die Einstellung. 
     
-    |**Größe in GB (etwa)**|**Größe in bytes**|
+    |**Größe in GB (ca.)**|**Größe in Byte**|
     |:-----|:-----|
     |.7 GB (700 MB)  <br/> |751619277  <br/> |
-    |2 GB  <br/> |2147483648  <br/> |
+    |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
     |8 GB  <br/> |8589934592  <br/> |
    
-3. Ändern der `PstSizeLimitInBytes` Wert auf die gewünschte maximale Größe einer PST-Datei bei der Suchergebnisse exportieren und speichern Sie die Datei. 
+3. Ändern Sie `PstSizeLimitInBytes` den Wert in die gewünschte maximale Größe einer PST-Datei, wenn Sie die Suchergebnisse exportieren, und speichern Sie die Datei. 
     
-4. Klicken Sie in Windows Explorer auf, oder doppelklicken Sie auf die REG-Datei, die Sie in den vorherigen Schritten erstellt haben.
+4. Klicken oder Doppelklicken Sie in Windows Explorer auf die. reg-Datei, die Sie in den vorherigen Schritten erstellt haben.
     
-5. Klicken Sie auf **Ja,** um den Registrierungs-Editor die Änderung vornehmen zu lassen, klicken Sie im Fenster User Access Control. 
+5. Klicken Sie im Fenster Benutzerzugriffssteuerung auf **Ja** , um die Änderung des Registrierungs-Editors zu ermöglichen. 
     
-6. Wenn Sie aufgefordert werden, um den Vorgang fortzusetzen, klicken Sie auf **Ja**.
+6. Wenn Sie zum Fortfahren aufgefordert werden, klicken Sie auf **Ja**.
     
-    Den Registrierungs-Editor zeigt eine Meldung, dass die Einstellung der Registrierung erfolgreich hinzugefügt wurde.
+    Der Registrierungs-Editor zeigt eine Meldung an, dass die Einstellung der Registrierung erfolgreich hinzugefügt wurde.
     
-7. Sie können wiederholen Sie die Schritte 3 bis 6 zum Ändern des Werts für die `PstSizeLimitInBytes` Einstellung in der Registrierung. 
+7. Sie können die Schritte 3-6 wiederholen, um den Wert `PstSizeLimitInBytes` für die Registrierungseinstellung zu ändern. 
   
-## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Häufig gestellte Fragen zum Ändern der Standardgröße von PST-Dateien beim Exportieren von eDiscovery-Suchergebnisse
+## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Häufig gestellte Fragen zum Ändern der Standardgröße von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
- **Warum ist der Standardwert 10 GB Größe?**
+ **Warum ist die Standardgröße 10 GB?**
   
-Die Standardgröße von 10 GB wurde basierend auf Feedback von Kunden; 10 GB lautet ein guter Kompromiss zwischen den optimalen Umfang des Inhalts in einer einzelnen PST-Datei und eine minimale Möglichkeit der Beschädigung der Datei.
+Die Standardgröße von 10 GB basierte auf Kundenfeedback; 10 GB stellt eine gute Balance zwischen der optimalen Menge an Inhalten in einer einzelnen PST-Datei und einer minimalen Wahrscheinlichkeit für eine Beschädigung von Dateien dar.
   
- **Ich habe erhöhen oder verringern Sie die Standardgröße von PST-Dateien?**
+ **Sollte ich die Standardgröße von PST-Dateien vergrößern oder verkleinern?**
   
-Kunden in der Regel die maximale Größe reduzieren, sodass die Suchergebnisse auf Wechselmedium passt, dass sie andere Standorte in ihrer Organisation physisch versenden können. Es wird nicht empfohlen, dass Sie die Standardgröße erhöhen, da PST-größer Dateien als 10 GB Beschädigung Probleme auftreten.
+Kunden neigen dazu, die Größenbeschränkung zu verringern, sodass die Suchergebnisse auf Wechseldatenträger angepasst werden, die Sie physisch an andere Standorte in Ihrer Organisation senden können. Es wird nicht empfohlen, dass Sie die Standardgröße vergrößern, da PST-Dateien, die größer als 10 GB sind, möglicherweise beschädigte Probleme aufweisen.
   
- **Welche Computer müssen dazu auf werden?**
+ **Auf welchem Computer muss ich vorgehen?**
   
-Sie müssen die Einstellung in der Registrierung auf einem lokalen Computer zu ändern, die Sie für das Office 365 eDiscovery-Export-Tool ausführen.
+Sie müssen die Registrierungseinstellung auf jedem lokalen Computer ändern, auf dem Sie das Office 365 eDiscovery-Export Tool ausführen.
   
- **Nachdem ich diese Einstellung ändern, müssen ich den Computer neu starten?**
+ **Muss ich den Computer neu starten, nachdem ich diese Einstellung geändert habe?**
   
-Nein, müssen Sie den Computer neu starten. Jedoch nicht, wenn das Office 365 eDiscovery-Export-Tool ausgeführt wird, müssen Sie es und dem Neustart zu schließen, nachdem Sie diese Einstellung ändern.
+Nein, Sie müssen den Computer nicht neu starten. Wenn jedoch das Office 365 eDiscovery-Export Tool läuft, müssen Sie es beenden und es nach dem Ändern dieser Einstellung neu starten.
   
- **Bearbeitet ein bereits vorhandenen Registrierungsschlüssel abrufen, oder haben ein neues Schlüssels erstellt abrufen?**
+ **Wird ein vorhandener Registrierungsschlüssel bearbeitet oder wird ein neuer Schlüssel erstellt?**
   
-Ein neuen Registrierungsschlüssel wird beim ersten erstellt, wenn Sie die REG-Datei ausführen, die Sie in diesem Verfahren erstellt haben. Die Einstellung wird dann jedes Mal bearbeitet, Sie ändern, und führen Sie die REG-Datei bearbeiten erneut aus.
+Bei der ersten Ausführung der reg-Datei, die Sie in diesem Verfahren erstellt haben, wird ein neuer Registrierungsschlüssel erstellt. Dann wird die Einstellung jedes Mal bearbeitet, wenn Sie die reg-Bearbeitungs Datei ändern und erneut ausführen.

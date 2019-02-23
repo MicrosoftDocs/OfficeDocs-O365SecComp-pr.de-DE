@@ -1,174 +1,173 @@
 ---
-title: eDiscovery-Lösung Datenreihe Daten stellen-Szenario – suchen und löschen
+title: eDiscovery Solution Series Data Spilling Scenario-Suche und Säuberung
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
-description: Verwenden Sie eDiscovery, und suchen Sie Office 365-Tools zum Verwalten und reagieren auf eine Daten stellen Vorfall in Ihrer Organisation.
-ms.openlocfilehash: d2c5a0a6efcc75a38df97c7c597503e5642f83eb
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+description: Verwenden Sie Office 365 eDiscovery und Such Tools, um einen Vorfall mit Datenausfällen in Ihrer Organisation zu verwalten und darauf zu reagieren.
+ms.openlocfilehash: 0da49dfbe8104d89a1abf4a14adce51ec0ef25f1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575349"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219425"
 ---
-# <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösung Series: Daten stellen Szenario - suchen und löschen
+# <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario für Daten verschütten – suchen und löschen
 
- **Daten stellen Neuigkeiten und warum sollte Sie das interessieren?** Daten stellen ist, wenn ein vertrauliches Dokument in einer nicht vertrauenswürdigen Umgebung freigegeben ist. Wenn ein Daten stellen Vorfall erkannt wird, ist es wichtig, schnell Bewerten der Größe und Standorte von der Stellen, untersuchen Sie die Benutzeraktivitäten herum und verschütteten Daten dann dauerhaft aus dem System löschen. 
+ **Was geschieht bei Daten verschütten?** Bei Daten verschütten wird ein vertrauliches Dokument in einer nicht vertrauenswürdigen Umgebung veröffentlicht. Wenn ein Vorfall mit Daten verschütten erkannt wird, ist es wichtig, schnell die Größe und die Speicherorte des Ausfalls zu ermitteln, die Benutzeraktivitäten zu untersuchen und dann die verschütteten Daten dauerhaft aus dem System zu entfernen. 
   
-## <a name="data-spillage-scenario"></a>Daten stellen Szenario
+## <a name="data-spillage-scenario"></a>Szenario für Daten verschütten
 
-Sie können eine Lead Information Security Officer bei Contoso. Sie sind für eine Situation, stellen Daten darüber informiert, in dem ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail gemeinsam genutzt. Möchten Sie schnell bewerten, die in diesem Dokument intern und extern empfangen. Sobald identifiziert, möchten Sie Groß-/Kleinschreibung Ergebnisse mit anderen Prüfer, um zu prüfen, und entfernen Sie die Daten endgültig aus Office 365 freigeben. Nach Abschluss die Untersuchung, erstellen Sie einen Bericht mit dem Beweis des endgültig zu löschen und andere Groß-/Kleinschreibung Details für alle zukünftigen werden soll.
+Sie sind Lead Information Security Officer bei Contoso. Sie werden über eine Daten verschüttende Situation informiert, in der ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail geteilt hat. Sie möchten schnell bewerten, wer dieses Dokument intern und extern erhalten hat. Nachdem Sie identifiziert wurden, möchten Sie die Fall Ergebnisse mit anderen Ermittlern teilen, um Sie zu überprüfen und die Daten dann endgültig aus Office 365 zu entfernen. Nachdem die Untersuchung abgeschlossen ist, möchten Sie einen Bericht mit den Nachweise für die dauerhafte Entfernung und weitere Details zu jedem späteren Zeitpunkt generieren.
   
-### <a name="scope-of-this-article"></a>Themenbereich dieses Artikels
+### <a name="scope-of-this-article"></a>Bereich dieses Artikels
 
-Dieses Dokument enthält eine Liste von Anweisungen zum dauerhaft entfernen einer Nachricht aus Office 365, damit nicht zugänglich oder wiederhergestellt ist. Zum Löschen einer Nachricht, und machen es wiederherstellbare, bis die Aufbewahrungszeit für gelöschte abläuft, finden Sie unter [Suchen und Löschen von e-Mail-Nachrichten in Office 365-Organisation](search-for-and-delete-messages-in-your-organization.md).
+Dieses Dokument enthält eine Liste mit Anweisungen dazu, wie Sie eine Nachricht aus Office 365 dauerhaft entfernen, damit Sie nicht zugänglich oder wiederhergestellt werden kann. Informationen zum Löschen einer Nachricht und zur Wiederherstellung bis zum Ablauf der Aufbewahrungszeit für gelöschte Elemente finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten in Ihrer Office 365-Organisation](search-for-and-delete-messages-in-your-organization.md).
   
-## <a name="workflow-for-managing-data-spillage-incidents"></a>Workflows zum Verwalten von Daten stellen Vorfälle
+## <a name="workflow-for-managing-data-spillage-incidents"></a>Workflow für die Verwaltung von Datenüberlauf Ereignissen
 
-Wie sieht einen Daten stellen Vorfall verwalten:
+Hier finden Sie eine Vorgehensweise zum Verwalten eines Daten verschüttenden Vorfalls:
 
-![Schritt 8 Workflows zum Verwalten von Daten stellen Vorfälle](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
+![Der 8-stufige Workflow für die Verwaltung von Daten verschüttender Vorfälle](media/O365-eDiscoverySolutions-DataSpillage-workflow.png)
   
-[(Optional) Schritt 1: Verwalten Sie können, wer Zugriff auf die Groß-/Kleinschreibung und Compliance-Grenzen festlegen](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
-[Schritt 2: Erstellen Sie einen eDiscovery-Fall](#step-2-create-an-ediscovery-case)<br/>
-[Schritt 3: Suchen nach die verschütteten Daten](#step-3-search-for-the-spilled-data)<br/>
-[Schritt 4: Überprüfen Sie, und überprüfen Sie die Groß-/Kleinschreibung Ergebnisse](#step-4-review-and-validate-case-findings)<br/>
-[Schritt 5: Verwendung Nachricht Ablaufverfolgungsprotokoll wie verschütteten Daten überprüft wurde freigegeben.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)<br/>
+[Optional Schritt 1: Verwalten der Benutzer, die auf den Fall zugreifen können, und Festlegen von Konformitäts Grenzen](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)<br/>
+[Schritt 2: Erstellen eines eDiscovery-Falls](#step-2-create-an-ediscovery-case)<br/>
+[Schritt 3: Suchen nach verschütteten Daten](#step-3-search-for-the-spilled-data)<br/>
+[Schritt 4: überprüfen und Überprüfen der Fall Ergebnisse](#step-4-review-and-validate-case-findings)<br/>
+[Schritt 5: Verwenden des Nachrichtenablauf Verfolgungsprotokolls zum Überprüfen der Freigabe von verschütteten Daten](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)<br/>
 [Schritt 6: Vorbereiten der Postfächer](#step-6-prepare-the-mailboxes)<br/>
-[Schritt 7: Die verschütteten Daten endgültig löschen](#step-7-permanently-delete-the-spilled-data)<br/>
-[Schritt 8: Stellen Sie sicher, nachweisen des Löschens und überwachen](#step-8-verify-provide-a-proof-of-deletion-and-audit)<br/>
+[Schritt 7: Dauerhaftes Löschen der verschütteten Daten](#step-7-permanently-delete-the-spilled-data)<br/>
+[Schritt 8: überprüfen, einen Nachweis für das Löschen und überwachen](#step-8-verify-provide-a-proof-of-deletion-and-audit)<br/>
 
-## <a name="things-to-know-before-you-start"></a>Wichtige Informationen, bevor Sie beginnen
+## <a name="things-to-know-before-you-start"></a>Wissenswertes vor dem Start
 
-- Wenn ein Postfach in der Warteschleife ist, bleibt eine gelöschte Nachricht im Ordner "wiederherstellbare Elemente", bis der Aufbewahrungszeitraum abgelaufen ist oder die Aufbewahrungsrichtlinie deaktiviert wird. [Schritt 6](#step-6-prepare-the-mailboxes) wird beschrieben, wie die Postfächer Halten aufheben. Wenden Sie sich die Verwaltung von Datensätzen und rechtliche Abteilungen vor dem Haltebereich zu entfernen. Ihre Organisation möglicherweise eine Richtlinie, die definiert, ob ein Postfach auf halten oder ein Daten stellen Vorfall Vorrang. 
+- Wenn ein Postfach aufbewahrt wird, verbleibt eine gelöschte Nachricht im Ordner "Wiederherstellbare Elemente", bis der Aufbewahrungszeitraum abgelaufen ist oder der Haltestatus aufgehoben wird. In [Schritt 6](#step-6-prepare-the-mailboxes) wird beschrieben, wie Sie die Aufbewahrung aus den Postfächern entfernen. Erkundigen Sie sich bei ihrer Datensatzverwaltung oder Rechtsabteilung vor dem Entfernen des haltebereichs. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein Postfach in der Warteschleife oder ein Vorfall mit Daten ausschütten Vorrang hat. 
     
-- Um zu steuern, welche Benutzerpostfächer ein Daten stellen Prüfer kann suchen und verwalten, die die Groß-/Kleinschreibung zugreifen können, können Sie Compliance-Grenzen einrichten und erstellen eine benutzerdefinierten Rollengruppe, die in [Schritt 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)beschrieben ist. Zu diesem Zweck müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" oder die Verwaltungsrolle Rolle zugewiesen werden. Wenn Sie oder in Administrator in Ihrer Organisation bereits Set Compliance Grenzen hat, können Sie Schritt 1 überspringen.
+- Um zu steuern, welche Benutzerpostfächer ein Daten verschütteter Prüfer durchsuchen und verwalten kann, wer auf den Fall zugreifen kann, können Sie Compliance-Grenzen einrichten und eine benutzerdefinierte Rollengruppe erstellen, die in [Schritt 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)beschrieben wird. Zu diesem Zweck müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" sein oder der Rolle "Rollenverwaltung" zugewiesen sein. Wenn Sie oder der Administrator in Ihrer Organisation bereits Kompatibilitäts Grenzen festgelegt haben, können Sie Schritt 1 überspringen.
     
-- Um eine Anfrage zu erstellen, müssen Sie Mitglied der Gruppe der eDiscovery-Manager-Rolle sein oder ein Mitglied einer benutzerdefinierten Rollengruppe, die die Groß-/Kleinschreibung Verwaltungsrolle zugewiesen hat. Wenn Sie kein Mitglied sind, bitten Sie einen Office 365-Administrator, [Fügen Sie der Gruppe eDiscovery-Manager-Rolle hinzu](assign-ediscovery-permissions.md).
+- Zum Erstellen einer Groß-/Kleinschreibung müssen Sie Mitglied der eDiscovery-Manager-Rollengruppe sein oder Mitglied einer benutzerdefinierten Rollengruppe sein, der die Rolle "Fallverwaltung" zugewiesen ist. Wenn Sie kein Mitglied sind, bitten Sie einen Office 365-Administrator, [Sie der Rollengruppe "eDiscovery-Manager" hinzuzufügen](assign-ediscovery-permissions.md).
     
-- Zum Löschen von Daten, die in Ihrer Organisation verschüttet ist, müssen Sie den Befehl [Search-Mailbox-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) in Exchange Online PowerShell verwenden. Wenn Sie den Parameter *DeleteContent* verwenden, müssen Sie darüber hinaus auch ein Mitglied einer Rollengruppe in Exchange Online sein, die die Postfach Import/Export-Rolle zugewiesen hat. Finden Sie im Abschnitt "Hinzufügen eine Rolle zu einer Rollengruppe" [Rollengruppen verwalten](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
+- Zum Löschen von Daten, die in Ihrer Organisation verschüttet wurden, müssen Sie den Befehl [Search-Mailbox-deletecontent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) in Exchange Online PowerShell verwenden. Außerdem müssen Sie zur Verwendung des *deletecontent* -Parameters auch Mitglied einer Rollengruppe in Exchange Online sein, der die Rolle "Post Fach Import-Export" zugewiesen ist. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" unter [Verwalten von Rollengruppen](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
     
-- Um die Office 365 Audit Log eDiscovery Aktivitäten in Schritt 8 zu suchen, muss die Überwachung für Ihre Organisation aktiviert werden. Sie können nach Aktivitäten suchen, die innerhalb der letzten 90 Tage durchgeführt wurden. Finden Sie weitere Informationen zum Aktivieren und mithilfe der Überwachung finden Sie im Abschnitt [Überwachung stellen Untersuchung von Daten](#auditing-the-data-spillage-investigation-process) in Schritt 8 ein. 
+- So durchsuchen Sie die eDiscovery-Aktivitäten des Office 365-Überwachungsprotokolls in Schritt 8 muss die Überwachung für Ihre Organisation aktiviert sein. Sie können nach Aktivitäten suchen, die innerhalb der letzten 90 Tage durchgeführt wurden. Weitere Informationen zum Aktivieren und Verwenden der Überwachung finden Sie im Abschnitt überprüfen [des datenspill-Ermittlungsprozesses](#auditing-the-data-spillage-investigation-process) in Schritt 8. 
     
-## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Optional) Schritt 1: Verwalten Sie können, wer Zugriff auf die Groß-/Kleinschreibung und Compliance-Grenzen festlegen
+## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Optional Schritt 1: Verwalten der Benutzer, die auf den Fall zugreifen können, und Festlegen von Konformitäts Grenzen
 
-Je nach Ihrer Organisation praktischen müssen Sie steuern, wer die eDiscovery-Fall verwendet, um eine Daten stellen Vorfall untersuchen und Einrichten von Compliance-Grenzen zugreifen kann. Die einfachste Möglichkeit hierzu ist Prüfer als Mitglieder von einer vorhandenen Rollengruppe im Compliance Center & Sicherheit in Office 365 hinzufügen und anschließend die Rollengruppe als Mitglied der eDiscovery-Fall hinzugefügt. Informationen zu integrierten eDiscovery Rollengruppen und Hinzufügen von Mitgliedern zu einer eDiscovery-Fall finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
+Je nach ihrer Organisationspraxis müssen Sie steuern, wer auf den eDiscovery-Fall zugreifen kann, der zur Untersuchung eines Daten verschütteten Ereignisses verwendet wird, und die Konformitäts Grenzen einrichten. Am einfachsten können Sie dies tun, indem Sie Ermittler als Mitglieder einer vorhandenen Rollengruppe im Office 365 Security & Compliance Center hinzufügen und die Rollengruppe dann als Mitglied des eDiscovery-Falls hinzufügen. Informationen zu den integrierten eDiscovery-Rollengruppen und zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter [assign eDiscovery Permissions in the Office &amp; 365 Security Compliance Center](assign-ediscovery-permissions.md).
   
-Sie können auch eine neue Rollengruppe erstellen, die mit Ihrer Anforderungen in der Organisation abschließt. Beispielsweise sollten Sie eine Gruppe von Daten stellen Prüfer in der Organisation für den Zugriff und auf allen Daten stellen Fällen zusammenarbeiten. Sie können hierzu eine Rollengruppe "Daten stellen Prüfer" erstellen, zuweisen die entsprechenden Rollen (Export, RMS entschlüsseln, überprüfen, Preview, Compliance-Suche und Case Management), die Daten stellen Prüfer der Rollengruppe hinzufügen und klicken Sie dann Hinzufügen der Rollengruppe als Mitglied der Daten stellen eDiscovery-Fall. Informationen dazu finden Sie unter [Einrichten von Compliance-Grenzen für eDiscovery Untersuchungen in Office 365](set-up-compliance-boundaries.md) . 
+Sie können auch eine neue Rollengruppe erstellen, die Ihren organisatorischen Anforderungen entspricht. Sie können beispielsweise eine Gruppe von Daten verschütteten Ermittlern in der Organisation für den Zugriff auf und die Zusammenarbeit an allen Daten, die verschüttet werden müssen. Hierzu können Sie die Rollengruppe "Data Spill Investigator" erstellen, die entsprechenden Rollen zuweisen (Export, RMS entSchlüsseln, überprüfen, Vorschau, Konformitäts Suche und Fallverwaltung), die Daten verschütteten Ermittler zur Rollengruppe hinzufügen und dann die Rollengruppe als Mitglied des Daten verschüttenden eDiscovery-Falls. Detaillierte Anweisungen dazu finden Sie unter [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](set-up-compliance-boundaries.md) . 
   
-## <a name="step-2-create-an-ediscovery-case"></a>Schritt 2: Erstellen Sie einen eDiscovery-Fall
+## <a name="step-2-create-an-ediscovery-case"></a>Schritt 2: Erstellen eines eDiscovery-Falls
 
-EDiscovery-Fall bietet eine effiziente Möglichkeit, Ihre Daten stellen Untersuchung verwalten. Sie können Hinzufügen von Mitgliedern der Rollengruppe, die Sie in Schritt 1 erstellt haben, hinzufügen die Rollengruppe als Mitglied der neuen eDiscovery-Fall, iterative Suchvorgänge die verschütteten Daten suchen, das Exportieren eines Berichts für die Freigabe Nachverfolgen des Status von der Groß-/Kleinschreibung durchführen und dann wieder auf die Details der c verweisen ASE, falls erforderlich. Festlegen einer Namenskonvention für eDiscovery-Fälle verwendet für Daten stellen Vorfälle berücksichtigen und können in Groß-/Kleinschreibung Name und Beschreibung können Suchen und finden Sie in der Zukunft bei Bedarf Informationen bereit.
+Ein eDiscovery-Fall bietet eine effektive Möglichkeit zum Verwalten der Untersuchung von Daten verschütten. Sie können der Rollengruppe, die Sie in Schritt 1 erstellt haben, Mitglieder hinzufügen, die Rollengruppe als Mitglied eines neuen eDiscovery-Falls hinzufügen, iterative suchen ausführen, um die verschütteten Daten zu finden, einen Bericht zur Freigabe zu exportieren, den Status des Falls nachzuverfolgen und dann auf die Details des c ASE, falls erforderlich. Erwägen Sie, eine Benennungskonvention für eDiscovery-Fälle einzurichten, die für Daten verschüttete Vorfälle verwendet werden, und geben Sie so viele Informationen wie möglich im Fallname und in der Beschreibung an, damit Sie in Zukunft gegebenenfalls suchen und darauf verweisen können.
   
-Um einen neuen Vorgang erstellen, können Sie eDiscovery in das Wertpapier &amp; Compliance Center. Finden Sie unter "Erstellen eines neuen Vorgangs in [eDiscovery-Fälle im Compliance Center & Sicherheit in Office 365"](ediscovery-cases.md#step-2-create-a-new-case).
+Um einen neuen Fall zu erstellen, können Sie eDiscovery im Security &amp; Compliance Center verwenden. Weitere Informationen finden Sie unter "Erstellen eines neuen Falls" in [eDiscovery-Fällen im Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
   
-## <a name="step-3-search-for-the-spilled-data"></a>Schritt 3: Suchen nach die verschütteten Daten
+## <a name="step-3-search-for-the-spilled-data"></a>Schritt 3: Suchen nach verschütteten Daten
 
-Nun, dass Sie eine Anfrage und verwalteten Zugriff erstellt haben, können Sie die Groß-/Kleinschreibung, bei der Suche iterativ die verschütteten Daten suchen und identifizieren die Postfächer, die die verschütteten Daten enthalten. Sie verwenden die gleichen Search-Abfrage, mit der Sie die e-Mail-Nachrichten an die gleichen Nachrichten im [Schritt 7](#step-7-permanently-delete-the-spilled-data)löschen finden.
+Nachdem Sie einen Fall und verwalteten Zugriff erstellt haben, können Sie den Fall verwenden, um iterativ nach den verschütteten Daten zu suchen und die Postfächer zu identifizieren, die die verschütteten Daten enthalten. Sie verwenden die gleiche Suchabfrage, die Sie zum Auffinden der e-Mail-Nachrichten verwendet haben, um diese Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)zu löschen.
   
-So erstellen Sie einen Inhalt Suchvorgänge mit einem eDiscovery-Fall verknüpft ist, finden Sie unter "Erstellen und ausführen, der eine Anfrage eine Inhaltssuche zugeordnet" in [eDiscovery-Fälle, in der Office 365-Sicherheit und Compliance Center](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
+Informationen zum Erstellen einer Inhaltssuche, die mit einem eDiscovery-Fall verknüpft ist, finden Sie unter "erstellen und Ausführen einer mit einem Fall verknüpften Content Search" in [eDiscovery-Fällen im Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
   
- **Wichtig:** Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, können die tatsächlichen verschütteten Daten enthalten, denen Sie suchen. Wenn Sie die Suche nach Dokumenten mit einer Sozialversicherungsnummer und Sie die It als Suchbegriff in die Suche verwenden, müssen Sie die Abfrage anschließend zur Vermeidung von weiteren stellen löschen. Finden Sie in Schritt 8 [Löschen der Suchabfrage](#deleting-the-search-query) . 
+ **Wichtig:** Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, enthalten möglicherweise die tatsächlich verschütteten Daten, nach denen Sie suchen. Wenn Sie beispielsweise nach Dokumenten suchen, die eine Sozialversicherungsnummer enthalten, und das Schlüsselwort IT as Search verwenden, müssen Sie die Abfrage später löschen, um weiteres verschütten zu vermeiden. Weitere Informationen finden Sie unter [Löschen der Suchabfrage](#deleting-the-search-query) in Schritt 8. 
   
-## <a name="step-4-review-and-validate-case-findings"></a>Schritt 4: Überprüfen Sie, und überprüfen Sie die Groß-/Kleinschreibung Ergebnisse
+## <a name="step-4-review-and-validate-case-findings"></a>Schritt 4: überprüfen und Überprüfen der Fall Ergebnisse
 
-Nachdem Sie eine Inhaltssuche erstellt haben, müssen Sie überprüfen, und überprüfen Sie, ob die Suche führt zu, und stellen Sie sicher, dass sie nur aus der e-Mail-Nachrichten bestehen, die gelöscht werden müssen. In einer Inhaltssuche können Sie eine Stichproben von 1.000 e-Mails Vorschau anzeigen, ohne die Suchergebnisse zur Vermeidung von weiteren stellen Daten exportieren. Lesen Sie mehr zu den Einschränkungen Preview unter [Grenzwerte für die Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center](limits-for-content-search.md).
+Nachdem Sie eine Inhaltssuche erstellt haben, müssen Sie die Suchergebnisse überprüfen und überprüfen und sicherstellen, dass Sie nur aus den e-Mail-Nachrichten bestehen, die gelöscht werden müssen. In einer Inhaltssuche können Sie eine Vorschau einer Zufallsstichprobe von 1.000-e-Mail-Nachrichten anzeigen, ohne die Suchergebnisse zu exportieren, um weitere Daten zu vermeiden. Weitere Informationen zu den Einschränkungen der Vorschau finden Sie unter [Limits for Content Search im Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
   
-Wenn Sie Postfächer mehr als 1.000 oder mehr als 100 e-Mail-Nachrichten pro Postfach, um zu prüfen verfügen, können Sie mehrere Suchvorgänge zusätzliche Schlüsselwörter oder Bedingungen wie Datumsbereich oder Absender/Empfänger mithilfe die erste Suche unterteilen und überprüfen Sie die Ergebnisse jeder Suche einzeln. Stellen Sie sicher, dass Sie notieren Sie alle von Suchabfragen verwenden, wenn Sie in [Schritt 7](#step-7-permanently-delete-the-spilled-data)Nachrichten löschen.
+Wenn Sie mehr als 1.000 Postfächer oder mehr als 100 e-Mail-Nachrichten pro Postfach überarbeiten, können Sie die anfängliche Suche in mehrere Suchvorgänge unterteilen, indem Sie zusätzliche Schlüsselwörter oder Bedingungen wie Datumsbereich oder Absender/Empfänger verwenden und die Ergebnisse jeder Suche überarbeiten. individuell. Notieren Sie sich alle Suchabfragen, die beim Löschen von Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)verwendet werden sollen.
 
-Wenn ein Verwaltungsberechtigter oder Endbenutzer eine Office 36 E5 Lizenz zugewiesen ist, können Sie bis zu 10.000 Suchergebnisse, die gleichzeitig mit Office 365 erweiterte eDiscovery überprüfen. Wenn mehr als 10.000 e-Mail-Nachrichten überprüfen vorhanden sind, können Sie teilen Sie die Suchabfrage durch Datumsbereich und überprüfen jedes Ergebnis einzeln als suchen, die Ergebnisse nach Datum sortiert werden. Im erweiterten eDiscovery können Suchergebnisse mit der **Bezeichnung als** Feature im Vorschaufenster markieren und filtern, indem Sie das Tag, das Sie mit der Bezeichnung das Suchergebnis. Dies ist hilfreich, wenn Sie mit einer sekundären Reviewer zusammenarbeiten. Mit zusätzlichen Analytics Tools in erweiterten eDiscovery, wie optische zeichenerkennung, e-Mail-threading und vorhersehbare codieren, können Sie schnell zu verarbeiten und Tausende von Nachrichten überprüfen und markieren sie zur späteren Überprüfung. Finden Sie [Schnelles Setup für Office 365 erweiterte eDiscovery](quick-setup-for-advanced-ediscovery.md).
+Wenn einem Verwalter oder Endbenutzer eine Office 36 E5-Lizenz zugewiesen ist, können Sie bis zu 10.000 Suchergebnisse gleichzeitig mit Office 365 Advanced eDiscovery überprüfen. Wenn mehr als 10.000 e-Mail-Nachrichten überprüft werden sollen, können Sie die Suchabfrage nach Datumsbereich teilen und jedes Ergebnis einzeln überarbeiten, da Suchergebnisse nach Datum sortiert werden. In Advanced eDiscovery können Sie Suchergebnisse mit der **Bezeichnung als** -Funktion im Vorschaufenster kennzeichnen und das Suchergebnis anhand der Beschriftung Filtern. Dies ist hilfreich, wenn Sie mit einem sekundären Prüfer zusammenarbeiten. Mithilfe zusätzlicher Analysetools in Advanced eDiscovery, wie beispielsweise der optischen Zeichenerkennung, des e-Mail-Threadings und der Predictive-Codierung, können Sie Tausende von Nachrichten schnell verarbeiten und überarbeiten und Sie zur weiteren Überprüfungen kennzeichnen. Siehe [Quick Setup für Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md).
 
-Wenn Sie eine e-Mail-Nachricht, die verschütteten Daten enthält gefunden, überprüfen Sie die Empfänger der Nachricht zu ermitteln, ob sie extern freigegeben wurde. Weitere verfolgen können eine Nachricht Sie sammeln Absenderinformationen und Datumsbereich, sodass Sie die Ablaufverfolgungsprotokolle Nachricht verwenden können, die in [Schritt 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)beschrieben wird.
+Wenn Sie eine e-Mail-Nachricht mit verschütteten Daten finden, überprüfen Sie die Empfänger der Nachricht, um festzustellen, ob Sie extern freigegeben wurde. Wenn Sie eine Nachricht weiter verfolgen möchten, können Sie die Absenderinformationen und den Zeitraum erfassen, sodass Sie die in [Schritt 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)beschriebenen Nachrichtenablauf Protokolle verwenden können.
 
-Afer Sie die Suchergebnisse überprüft haben, sollten Sie Ihre Ergebnisse für eine sekundäre Überprüfung für andere Benutzer freizugeben. Personen, die Sie in Schritt 1 der Fall zugewiesen haben können die Groß-/Kleinschreibung Inhalte in eDiscovery und erweiterte eDiscovery überprüfen und Genehmigen von Groß-/Kleinschreibung Ergebnisse. Sie können auch einen Bericht generieren, ohne die tatsächlichen Inhalte zu exportieren. Sie können auch in demselben Bericht als Beweis für löschen, die in [Schritt 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)beschrieben wird.
+Nachdem Sie die Suchergebnisse überprüft haben, können Sie Ihre Ergebnisse mit anderen Benutzern für eine sekundäre Überprüfung freigeben. Personen, die Sie dem Fall in Schritt 1 zugeordnet haben, können den Fall Inhalt sowohl in eDiscovery als auch in Advanced eDiscovery überarbeiten und die Fall Ergebnisse genehmigen. Sie können auch einen Bericht generieren, ohne den tatsächlichen Inhalt zu exportieren. Sie können diesen Bericht auch als einen Lösch Nachweis verwenden, der in [Schritt 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)beschrieben wird.
   
- **Einen Bericht statistische:**
+ **So generieren Sie einen statistischen Bericht**
   
-1. Wechseln Sie zu der Seite **Suchen** in der eDiscovery-Fall, und klicken Sie auf die Suche, der Sie für einen Bericht erstellen möchten. 
+1. Wechseln Sie im eDiscovery-Fall zur Seite **Suchen** , und klicken Sie auf die Suche, für die Sie einen Bericht generieren möchten. 
     
-2. Klicken Sie auf der Seite flyoutmenü auf **mehr > Exportieren Bericht**.
+2. Klicken Sie auf der Seite Flyout auf **Weitere >-Export Bericht**.
  
-      Die Export-Bericht angezeigt wird.
+      Die Seite Bericht exportieren wird angezeigt.
 
-    ![Wählen Sie die Suche, und klicken Sie auf Weiter > Exportieren Bericht auf der Seite flyoutmenü](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Wählen Sie die Suche aus, und klicken Sie dann auf der Seite Flyout auf weitere >-Export Bericht.](media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
-3. Wählen Sie **alle Elemente, einschließlich Schriftarten, die unbekanntes Format haben, verschlüsselt werden, oder aus anderen Gründen indiziert wurden nicht** aus, und klicken Sie dann auf **Bericht generieren**.
+3. Wählen Sie **alle Elemente aus, einschließlich derer, die nicht erkannt wurden, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden** , und klicken Sie dann auf **Bericht generieren**.
 
-4. Klicken Sie in der eDiscovery-Fall auf **Exportieren** , um die Liste der Exportaufträge anzuzeigen. Möglicherweise müssen Sie auf **Aktualisieren** , zum Aktualisieren der Liste, um den Exportauftrag anzuzeigen, den Sie gerade erstellt haben.
+4. Klicken Sie im eDiscovery-Fall auf **exportieren** , um die Liste der Exportaufträge anzuzeigen. Möglicherweise müssen Sie auf **Aktualisieren** klicken, um die Liste zu aktualisieren, um den soeben erstellten Exportauftrag anzuzeigen.
 
-5. Klicken Sie auf den Exportauftrag aus, und klicken Sie dann auf Bericht auf der Seite flyoutmenü **herunterladen** .
+5. Klicken Sie auf den Auftrag exportieren, und klicken Sie dann auf der Seite Flyout auf Bericht **herunterladen** .
  
-    ![Klicken Sie auf der Seite exportieren auf die exportieren, und klicken Sie dann auf "Bericht herunterladen"](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![Klicken Sie auf der Seite exportieren auf den Export, und klicken Sie dann auf "Bericht herunterladen".](media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-Der **Exportieren zusammenfassenden** Bericht enthält die Anzahl der Standorte gefunden, deren Ergebnisse und die Größe der Suchergebnisse. Hiermit können Sie mit dem Bericht generiert nach Löschvorgang vergleichen und als Beweis des Löschens bereitstellen. Der Bericht der **Suchergebnisse** enthält eine ausführlichere Zusammenfassung der Suchergebnisse, einschließlich der Betreff, Absender, Empfänger, wenn die Nachricht gelesen wurde, Datumsangaben und Größe der einzelnen Nachrichten. Wenn alle Details in diesem Bericht enthält die tatsächlichen verschütteten Daten, müssen Sie unbedingt die Datei Results.csv dauerhaft zu löschen, wenn die Untersuchung abgeschlossen wurde.
+Der **Zusammenfassungsbericht exportieren** enthält die Anzahl der gefundenen Speicherorte und die Größe der Suchergebnisse. Sie können dies verwenden, um mit dem Bericht zu vergleichen, der nach dem Löschen generiert wurde, und als Beweis für das Löschen angeben. Der **Ergebnis** Bericht enthält eine detailliertere Zusammenfassung der Suchergebnisse, einschließlich Betreff, Absender, Empfänger, wenn die e-Mail gelesen wurde, Daten und Größe der einzelnen Nachrichten. Wenn eines der Details in diesem Bericht die tatsächlich verschütteten Daten enthält, müssen Sie die Datei "results. csv" nach Abschluss der Untersuchung dauerhaft löschen.
 
-Weitere Informationen zum Exportieren von Berichten finden Sie unter [Exportieren eines Berichts Inhaltssuche](export-a-content-search-report.md).
+Weitere Informationen zum Exportieren von Berichten finden Sie unter [Exportieren eines Inhalts Suchberichts](export-a-content-search-report.md).
     
-## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>Schritt 5: Verwendung Nachricht Ablaufverfolgungsprotokoll wie verschütteten Daten überprüft wurde freigegeben.
+## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>Schritt 5: Verwenden des Nachrichtenablauf Verfolgungsprotokolls zum Überprüfen der Freigabe von verschütteten Daten
 
-Um weitere untersuchen, wenn e-Mail mit verschütteten Daten freigegeben wurde, können Sie optional die Ablaufverfolgungsprotokolle Nachricht mit der Absenderinformationen und die Informationen zu Datumsbereich, die Sie in Schritt 4 gesammelt Abfragen. Beachten Sie, dass der Aufbewahrungszeitraum für nachrichtenablaufverfolgung 30 Tage für Echtzeitdaten und 90 Tage Verlaufsdaten ist.
+Um zu untersuchen, ob e-Mails mit verschütteten Daten freigegeben wurden, können Sie optional die Nachrichtenablauf Protokolle mit den Absenderinformationen und den Datumsbereichen Abfragen, die Sie in Schritt 4 gesammelt haben. Beachten Sie, dass der Aufbewahrungszeitraum für die Nachrichtenablaufverfolgung 30 Tage für Echtzeitdaten und 90 Tage für Verlaufsdaten beträgt.
   
-Sie können die nachrichtenablaufverfolgung im Compliance Center & Sicherheit verwenden oder verwenden Sie die entsprechenden Cmdlets in Exchange Online PowerShell. Es ist wichtig, beachten Sie, dass nachrichtenablaufverfolgung vollständige Garantien für die Vollständigkeit der zurückgegebenen Daten nicht angeboten wird. Weitere Informationen zur Verwendung von nachrichtenablaufverfolgung finden Sie unter: 
+Sie können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden oder die entsprechenden Cmdlets in Exchange Online PowerShell verwenden. Beachten Sie, dass die Nachrichtenablaufverfolgung keine vollständigen Garantien für die Vollständigkeit der zurückgegebenen Daten bietet. Weitere Informationen zur Verwendung der Nachrichtenablaufverfolgung finden Sie unter: 
   
-- [Nachricht Trace in die Office 365-Sicherheit &amp; Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Nachrichtenablaufverfolgung im Office 365 Security &amp; Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Neue Message Trace in Office 365-Sicherheit &amp; Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Neue Nachrichtenablaufverfolgung im Office 365 &amp; Security Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Schritt 6: Vorbereiten der Postfächer
 
-Nachdem Sie überprüfen, und überprüfen, dass die Suchergebnisse enthält nur die Nachrichten, die gelöscht werden müssen, müssen Sie eine Liste der e-Mail-Adressen der betroffenen Postfächer verwenden Sie in Schritt 7 beim Ausführen des Befehls **Search-Mailbox-DeleteContent** sammeln. Sie müssen auch die Postfächer vorbereiten, bevor Sie endgültig löschen, können e-Mail-Nachrichten, abhängig davon, ob der Wiederherstellung einzelner Elemente auf die Postfächer, die die verschütteten Daten enthalten, oder aktiviert ist wenn eines dieser Postfächer auf halten.
+Nachdem Sie überprüft und überprüft haben, ob die Suchergebnisse nur die Nachrichten enthalten, die gelöscht werden müssen, müssen Sie eine Liste der e-Mail-Adressen der betroffenen Postfächer sammeln, die Sie in Schritt 7 beim Ausführen des Befehls **Search-Mailbox-deletecontent** verwenden müssen. Möglicherweise müssen Sie auch die Postfächer vorbereiten, bevor Sie e-Mail-Nachrichten dauerhaft löschen können, je nachdem, ob die Wiederherstellung einzelner Elemente in den Postfächern aktiviert ist, die die verschütteten Daten enthalten, oder ob eines dieser Postfächer in der Warteschleife ist.
   
-### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Abrufen einer Liste von Adressen der Postfächer mit verschütteten Daten
+### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Abrufen einer Liste von Adressen von Postfächern mit verschütteten Daten
 
-Es gibt zwei Methoden, um eine Liste der e-Mail-Adressen von Postfächern mit verschütteten Daten erfassen.
+Es gibt zwei Möglichkeiten, um eine Liste der e-Mail-Adressen von Postfächern mit verschütteten Daten zu sammeln.
 
-**Option 1: Abrufen einer Liste von Adressen der Postfächer mit verschütteten Daten**
+**Option 1: Abrufen einer Liste von Adressen von Postfächern mit verschütteten Daten**
 
-1. Öffnen Sie die eDiscovery-Fall, wechseln Sie zu **der Seite** , und wählen Sie den entsprechenden Inhalten suchen. 
+1. Öffnen Sie den eDiscovery-Fall, wechseln Sie zur Seite **Suchen** , und wählen Sie die entsprechende Inhaltssuche aus. 
     
-2. Klicken Sie auf der Seite flyoutmenü auf **Ergebnisse anzeigen**.
+2. Klicken Sie auf der Seite Flyout auf **Ergebnisse anzeigen**.
     
-3. Klicken Sie in der Dropdownliste **einzelne Ergebnisse** auf **Suchstatistik**.
+3. Klicken Sie in der Dropdownliste **Einzelergebnisse** auf **Suchstatistiken**.
     
-4. Klicken Sie in der Dropdownliste **Typ** auf **oberen Speicherorte**.
+4. Klicken Sie in der Dropdownliste **Typ** auf **oberster Speicherort**.
     
-    ![Abrufen einer Liste der Postfächer, die Suchergebnisse auf der Seite Leiste Speicherorte in die Suchstatistik enthalten](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
+    ![Abrufen einer Liste von Postfächern, die Suchergebnisse enthalten, auf der Seite "Top-Speicherorte" in der Suchstatistik](media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
-    Eine Liste der Postfächer, die Suchergebnisse enthalten wird angezeigt. Die Anzahl der Elemente in den einzelnen Postfächern, die die Suchabfrage entsprechen wird auch angezeigt.
+    Eine Liste mit Postfächern, die Suchergebnisse enthalten, wird angezeigt. Die Anzahl der Elemente in jedem Postfach, die mit der Suchabfrage übereinstimmen, wird ebenfalls angezeigt.
     
-5. Kopieren Sie die Informationen in der Liste und in eine Datei zu speichern Sie, oder klicken Sie auf **herunterladen** , um die Informationen in eine CSV-Datei herunterladen. 
+5. Kopieren Sie die Informationen in der Liste, speichern Sie Sie in einer Datei, oder klicken Sie auf **herunterladen** , um die Informationen in eine CSV-Datei herunterzuladen. 
     
-**Option 2: Get-Postfach Speicherorte aus dem Bericht exportieren**
+**Option 2: Abrufen von Postfachspeicher Orten aus dem Exportbericht**
 
-Öffnen Sie in [Schritt 4](#step-4-review-and-validate-case-findings)der Zusammenfassungsbericht exportieren, die Sie heruntergeladen haben. Die e-Mail-Adresse der einzelnen Postfächer wird in der ersten Spalte im Bericht klicken Sie unter **Speicherorte**aufgeführt.
+Öffnen Sie den zusammenfassenden Bericht exportieren, den Sie in [Schritt 4](#step-4-review-and-validate-case-findings)heruntergeladen haben. In der ersten Spalte des Berichts wird die e-Mail-Adresse jedes Postfachs unter **Speicherorte**aufgeführt.
   
-### <a name="prepare-the-mailboxes-so-you-can-delete-the-spilled-data"></a>Vorbereiten der Postfächer, damit können Sie die verschütteten Daten löschen
+### <a name="prepare-the-mailboxes-so-you-can-delete-the-spilled-data"></a>Vorbereiten der Postfächer, damit die verschütteten Daten gelöscht werden können
 
-Wenn die Wiederherstellung einzelner Elemente aktiviert ist, oder wenn ein Postfach in die Warteschleife gestellt wird, wird eine endgültig gelöschte (Zeitfenster) Nachricht im Ordner wiederherstellbare Elemente aufbewahrt werden. Bevor Sie verschütteten Daten endgültig löschen können, müssen Sie so überprüfen die vorhandenen Postfachkonfigurationen und Wiederherstellung einzelner Elemente deaktivieren und entfernen Sie alle Haltestatus oder Office 365-Aufbewahrungsrichtlinie. Lassen Sie beachten Sie, dass Sie können ein Postfach zu einem Zeitpunkt vorbereiten und führen Sie den gleichen Befehl auf verschiedene Postfächer, oder ein PowerShell-Skripts erstellen, um mehrere Postfächer gleichzeitig vorzubereiten.
+Wenn die Wiederherstellung einzelner Elemente aktiviert ist oder ein Postfach in der Warteschleife gespeichert wird, wird eine dauerhaft gelöschte Nachricht im Ordner "Wiederherstellbare Elemente" aufbewahrt. Bevor Sie verschüttete Daten löschen können, müssen Sie daher die vorhandenen Postfachkonfigurationen überprüfen und die Wiederherstellung einzelner Elemente deaktivieren und alle Aufbewahrungs-oder Office 365-Speicherrichtlinien entfernen. Denken Sie daran, dass Sie ein Postfach gleichzeitig vorbereiten können, und führen Sie dann denselben Befehl für verschiedene Postfächer aus, oder erstellen Sie ein PowerShell-Skript, um mehrere Postfächer gleichzeitig vorzubereiten.
 
-- Finden Sie unter "Schritt 1: Sammeln von Informationen über das Postfach" in Anweisungen zu überprüfen, ob die Wiederherstellung einzelner Elemente aktiviert ist oder wenn das Postfach befindet Archiv oder zugeordnet ist, zum [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) einer Aufbewahrungsrichtlinie. 
+- Weitere Informationen dazu, wie Sie überprüfen können, ob die Wiederherstellung einzelner Elemente aktiviert ist, oder ob das Postfach in den Speicher verschoben wird, oder dass es einem Benutzer zugewiesen ist, finden Sie unter "Schritt 1: Sammeln von Information über das Postfach" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) " in "Aufbewahrung". Aufbewahrungsrichtlinie. 
     
-- Finden Sie unter "Schritt 2: Vorbereiten des Postfachs" in eine Anleitung zum Deaktivieren der Wiederherstellung einzelner Elemente [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
+- Weitere Informationen zum Deaktivieren der Wiederherstellung einzelner Elemente finden Sie unter "Schritt 2: Vorbereiten des Postfachs" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) . 
     
-- Finden Sie unter "Schritt 3: Entfernen Sie alle Haltestatus aus dem Postfach" in eine Anleitung zum Entfernen eine Richtlinie halten oder die Aufbewahrung von ein Postfach [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) . 
+- Weitere Informationen dazu, wie Sie einen Haltebereich oder eine Aufbewahrungsrichtlinie aus einem Postfach entfernen, finden Sie unter "Schritt 3: alle haltebereiche aus dem Postfach entfernen" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von Cloud-basierten Postfächern](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) . 
 
-- Finden Sie unter "Schritt 4: entfernen, halten Sie die Verzögerung aus dem Postfach" in das [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) Anweisungen zum Entfernen der Verzögerung halten, die für das Postfach befindet, nachdem alle Arten von Haltestatus entfernt wurde.
+- Weitere Informationen finden Sie unter "Schritt 4: Entfernen der Verzögerungsdauer aus dem Postfach" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" für Cloud-basierte Postfächer in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) .
     
- **Wichtig:** Mit der datensatzverwaltung oder der rechtlichen Abteilungen vor dem Entfernen einer Richtlinie halten oder die Aufbewahrung prüfen. Ihrer Organisation möglicherweise eine Richtlinie, die definiert, ob ein Postfach auf halten, oder ein Daten stellen Vorfall Vorrang. 
+ **Wichtig:** Erkundigen Sie sich bei ihrer Datensatzverwaltung oder Rechtsabteilung vor dem Entfernen einer Aufbewahrungs-oder Archivierungsrichtlinie. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein Postfach in der Warteschleife oder ein Vorfall mit Daten ausschütten Vorrang hat. 
   
-Achten Sie darauf, dass das vorherigen Konfigurationen für das Postfach wiederherzustellen, nachdem Sie überprüft haben, dass die verschütteten Daten dauerhaft gelöscht wurde. Finden Sie die Details in [Schritt 7](#step-7-permanently-delete-the-spilled-data).
+Stellen Sie sicher, dass Sie das Postfach auf vorherige Konfigurationen zurücksetzen, nachdem Sie sichergestellt haben, dass die verschütteten Daten dauerhaft gelöscht wurden. Details finden Sie in [Schritt 7](#step-7-permanently-delete-the-spilled-data).
 
-## <a name="step-7-permanently-delete-the-spilled-data"></a>Schritt 7: Die verschütteten Daten endgültig löschen
+## <a name="step-7-permanently-delete-the-spilled-data"></a>Schritt 7: Dauerhaftes Löschen der verschütteten Daten
 
-Verwenden die Postfach-Speicherorte, die gesammelt und in Schritt 6 und die Suchabfrage, die erstellt wurde und in Schritt 3, um e-Mail-Nachrichten suchen, die die verschütteten Daten enthalten eingeschränkt vorbereitet haben, können Sie jetzt dauerhaft verschütteten Daten löschen. Wie bereits erklärt müssen Sie die Rolle Postfach Import/Export in Exchange Online zum Löschen von Nachrichten anhand des folgenden Verfahrens zugewiesen werden.
+Mithilfe der Postfachspeicher Orte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der in Schritt 3 erstellten und verfeinerten Suchabfrage, um e-Mail-Nachrichten mit den verschütteten Daten zu finden, können Sie die verschütteten Daten jetzt endgültig löschen. Wie bereits erläutert, muss Ihnen die Rolle "Post Fach Import-Export" in Exchange Online zugewiesen werden, um Nachrichten mithilfe des folgenden Verfahrens zu löschen.
   
 1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554).
     
@@ -178,7 +177,7 @@ Verwenden die Postfach-Speicherorte, die gesammelt und in Schritt 6 und die Such
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
     ```
   
-3. Führen Sie den vorherigen Befehl für jedes Postfach mit den verschütteten Daten, indem Sie den Wert für den Parameter Identity ersetzen erneut aus; Zum Beispiel:
+3. Führen Sie den vorherigen Befehl für jedes Postfach, das die verschütteten Daten enthält, erneut aus, indem Sie den Wert für den Parameter Identity ersetzen. Zum Beispiel:
 
     ```
     Search-Mailbox -Identity sarad@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
@@ -192,34 +191,34 @@ Verwenden die Postfach-Speicherorte, die gesammelt und in Schritt 6 und die Such
    Search-Mailbox -Identity pilarp@contoso.onmicrosoft.com -SearchQuery <search query> -DeleteContent
    ```
   
-Wie bereits zuvor erwähnt können auch ein [Powershell-Skript](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) erstellen und ausführen, gegen eine Liste der Postfächer, dass das Skript die verschütteten Daten in jedem Postfach gelöscht.
+Wie bereits erwähnt, können Sie auch ein [PowerShell-Skript](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) erstellen und es mit einer Liste von Postfächern ausführen, damit das Skript die verschütteten Daten in jedem Postfach löscht.
   
-## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: Stellen Sie sicher, nachweisen des Löschens und überwachen
+## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: überprüfen, einen Nachweis für das Löschen und überwachen
 
-Der letzte Schritt des Workflows zum Verwalten von eines Daten stellen Vorfalls ist, um sicherzustellen, dass die verschütteten Daten dauerhaft aus dem Postfach entfernt wurde zu eDiscovery-Fall und erneutes Ausführen der gleichen Search-Abfrage, die verwendet wurde, um den Daten, um sicherzustellen, dass keine Ergebnisse Ar löschen e zurückgegeben. Nach dem Sie, dass die verschütteten Daten dauerhaft entfernt wurde bestätigen, können Sie Exportieren eines Berichts und (zusammen mit den ursprünglichen Bericht) als einen Nachweis des Löschens einzuschließen. Anschließend können Sie [die Groß-/Kleinschreibung schließen](ediscovery-cases.md#optional-step-9-close-a-case), denen Sie es erneut öffnen, wenn Sie haben darauf verweisen in der Zukunft können. Darüber hinaus können Sie auch Postfächer zurückkehren löschen Sie den vorherigen Zustand, die die Suchabfrage verwendet, um die verschütteten Daten suchen, und suchen für die Überwachung von Datensätzen Aufgaben beim Verwalten des Daten stellen Vorfalls ausgeführt. 
+Der letzte Schritt im Workflow zum Verwalten eines Daten verschüttenden Vorfalls besteht darin, zu überprüfen, ob die verschütteten Daten dauerhaft aus dem Postfach entfernt wurden, indem Sie zum eDiscovery-Fall wechseln und dieselbe Suchabfrage erneut ausführen, die zum Löschen dieser Daten verwendet wurde, um zu bestätigen, dass keine Ergebnisse AR e zurückgegeben. Nachdem Sie sichergestellt haben, dass die verschütteten Daten dauerhaft entfernt wurden, können Sie einen Bericht exportieren und ihn (zusammen mit dem ursprünglichen Bericht) als Beweis für das Löschen einbinden. Dann können Sie [den Fall schließen, der](ediscovery-cases.md#optional-step-9-close-a-case)es Ihnen ermöglicht, es erneut zu öffnen, wenn Sie in Zukunft darauf verweisen. Darüber hinaus können Sie Postfächer auch in den vorherigen Zustand zurücksetzen, die Suchabfrage zum Auffinden der verschütteten Daten löschen und nach Überwachungsdatensätzen der ausgeführten Aufgaben suchen, wenn Sie den Vorfall zur Daten Auslagen Verwaltung ausführen. 
   
-### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Die Postfächer in den vorherigen Zustand zurücksetzen
+### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Zurücksetzen der Postfächer in den vorherigen Zustand
 
-Wenn Sie geändert Konfiguration für Postfächer in Schritt 6 haben, um die Postfächer vorzubereiten, bevor die verschütteten Daten gelöscht wurde, müssen Sie sie in den vorherigen Zustand zurückgesetzt. Finden Sie unter "Schritt 6: das Postfach in den vorherigen Zustand zurückgesetzt" in das [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
+Wenn Sie in Schritt 6 eine Postfachkonfiguration geändert haben, um die Postfächer vorzubereiten, bevor die verschütteten Daten gelöscht wurden, müssen Sie Sie in den vorherigen Zustand zurücksetzen. Weitere Informationen finden Sie unter "Schritt 6: Zurücksetzen des Postfachs in den vorherigen Status" unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
   
 ### <a name="deleting-the-search-query"></a>Löschen der Suchabfrage
 
-Wenn die Schlüsselwörter in der Suchabfrage, die Sie erstellt und verwendet in Schritt 3 enthält einige oder alle der tatsächlichen verschütteten Daten, sollten Sie die Search-Abfrage aus, um weitere stellen Daten zu verhindern löschen.
+Wenn die Schlüsselwörter in der Suchabfrage, die Sie in Schritt 3 erstellt und verwendet haben, einige der tatsächlich verschütteten Daten enthalten, sollten Sie die Suchabfrage löschen, um zu verhindern, dass weitere Daten verschüttet werden.
   
-1. Öffnen Sie im Compliance Center & Sicherheit die eDiscovery-Fall, wechseln Sie zu **der Seite** , und wählen Sie die entsprechenden Inhaltssuche.
+1. Öffnen Sie im Security & Compliance Center den eDiscovery-Fall, wechseln Sie zur Seite **Suchen** , und wählen Sie die entsprechende Inhaltssuche aus.
     
-2. Klicken Sie auf der Seite flyoutmenü auf **Löschen**.
+2. Klicken Sie auf der Seite Flyout auf **Löschen**.
 
-    ![Wählen Sie die Suche, und klicken Sie dann auf Löschen klicken Sie auf der Seite flyoutmenü](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Wählen Sie die Suche aus, und klicken Sie dann auf der Seite Flyout auf Löschen.](media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
     
-### <a name="auditing-the-data-spillage-investigation-process"></a>Überwachung stellen Untersuchung von Daten
+### <a name="auditing-the-data-spillage-investigation-process"></a>ÜberWachen des Ermittlungsprozesses für Daten ausschütten
 
-Sie können das Office 365-Überwachungsprotokoll für die eDiscovery-Aktivitäten suchen, die während der Untersuchung ausgeführt wurden. Sie können auch suchen im Überwachungsprotokoll Rückgabe der Audit-Einträge, die erstellt wurden, wenn Sie den Befehl **Search-Mailbox-DeleteContent** zum Löschen der Daten verschütteten ausgeführt haben. Weitere Informationen finden Sie unter:
+Sie können im Office 365-Überwachungsprotokoll nach den eDiscovery-Aktivitäten suchen, die während der Untersuchung durchgeführt wurden. Sie können auch das Überwachungsprotokoll durchsuchen, um die Überwachungsdatensätze zurückzugeben, die beim Ausführen des Befehls **Search-Mailbox-deletecontent** erstellt wurden, um die verschütteten Daten zu löschen. Weitere Informationen finden Sie unter:
 
 - [Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md)
 
-- [Suchen Sie nach eDiscovery-Aktivitäten im Überwachungsprotokoll Office 365](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- Finden Sie im Abschnitt "Überwacht Aktivitäten - Exchange-Administrator-Überwachungsprotokoll" bei der [Suche der Überwachungsprotokolle melden Sie sich bei der Office 365-Sicherheit und Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities) Hinweise zum Suchen nach Audit Datensätze im Zusammenhang mit der Ausführung des Cmdlets in Exchange Online.
+- Weitere Informationen zum Suchen nach Überwachungsdatensätzen im Zusammenhang mit ausgeführten Cmdlets in Exchange Online finden Sie im Abschnitt "überwachte Aktivitäten-Exchange-administratorüberwachungsprotokoll" unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities) .
   
 

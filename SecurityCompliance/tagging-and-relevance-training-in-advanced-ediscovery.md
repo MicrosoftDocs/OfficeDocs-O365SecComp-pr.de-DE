@@ -1,112 +1,112 @@
 ---
-title: Kategorien und Relevanz Schulung in Office 365 erweiterte eDiscovery
+title: Schulung zur Markierung und Relevanz in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Informationen zu den Schritten in Tag, und klicken Sie dann mit einer Stichprobe Schulung von 40 Dateien während der Phase Relevanz Schulung für Office 365 erweiterte eDiscovery arbeiten.  '
-ms.openlocfilehash: 90272452c8c1317957e542eba07bc43722f9c0e9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Hier finden Sie Informationen zu den Schritten zur Kennzeichnung und zum Arbeiten mit einem Schulungs Beispiel von 40-Dateien während der Relevanz-Schulungsstufe von Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529486"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221065"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Kategorien und Relevanz Schulung in Office 365 erweiterte eDiscovery
+# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Schulung zur Markierung und Relevanz in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In diesem Thema wird das Verfahren für die Arbeit mit der erweiterten eDiscovery Relevanz Schulungsmodul. 
+In diesem Thema wird die Vorgehensweise für das Arbeiten mit dem Advanced eDiscovery Relevance Training-Modul beschrieben. 
   
-Nach Bewertung in erweiterten eDiscovery abgeschlossen ist, und geben Sie die Relevanz Schulung Phase, ist ein Beispiel für die Schulung von 40 Dateien in die Registerkarte-Tag zum Markieren von eingebunden. 
+Nachdem die Bewertung in Advanced eDiscovery abgeschlossen ist und Sie die Relevanz-Schulungsstufe eingeben, wird ein Übungsbeispiel von 40-Dateien in die Tag-Registerkarte zum Taggen gebracht. 
   
-## <a name="performing-relevance-training"></a>Ausführen der Relevanz-Schulung
+## <a name="performing-relevance-training"></a>Durchführen von Relevanz-Schulungen
 
-1. In der **Relevanz \> Tag** Registerkarte im Bereich Kategorien von standardmäßig in der linken und dem Beispiel Dateien angezeigt werden, jeweils einmal für die Markierung angezeigt wird. 
+1. Auf der Registerkarte ** \> relevanztag** wird der Bereich Tagging standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden nacheinander für Tagging angezeigt. 
     
     ![Relevanztagbereich](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    Anzeigename für die Datei wird in der Registerkarte **Tag** angezeigt. Der Pfad, e-Mail-Betreff, Titel oder benutzerdefinierter Name möglicherweise. Die ID, Dateipfad oder Textpfad kann mit der rechten Maustaste auf den Pfad der Datei kopiert werden. 
+    Auf der Registerkarte **Tag** wird der Anzeigename der Datei angezeigt. Dabei kann es sich um den Pfad, den e-Mail-Betreff, den Titel oder den benutzerdefinierten Namen handeln. Die ID, der Dateipfad oder der Textpfad können kopiert werden, indem Sie mit der rechten Maustaste auf den Pfad der Datei klicken. 
     
-    Die Registerkarte **Tag** tagging Statistiken anzeigen, die Beispiel-Dateinummer (oben links), die Anzahl der aktuell angezeigten-Datei aus der Dateien insgesamt in der Stichprobe (unten rechts) und die Gesamtzahl der markierten Dateien in der Stichprobe (unterer Teil von t entspricht er links Bereich), wodurch geändert wird, wie Sie Dateien markieren. Dies gilt für alle Relevanz tagging durchgeführt, in Assessment, Schulungen, synchronisieren oder Test. 
+    Die Tagging-Statistik des **Tag-Tags** zeigt die Datei Beispiel Nummer (oben im linken Bereich), die Anzahl der aktuell angezeigten Datei aus den Gesamtdateien im Beispiel (unten im rechten Bereich) und die aktuelle Gesamtanzahl der markierten Dateien im Beispiel (unten in t er Linker Bereich), der sich während der Tag-Dateien ändert. Dies gilt für alle relevanten Taggings, sei es bei der Bewertung, Schulung, catch-up oder Test. 
     
-    Symbole, die angibt, des Vorhandenseins von Kommentaren, Kategorien und Produktfamilie Dateien werden in der Dateiansicht in einer Leiste über die Datei angezeigt.
+    Symbole, die das vorhanden sein von Kommentaren, Tags und Familiendateien angeben, werden in der Datei Ansicht in einer Leiste oberhalb der Datei angezeigt.
     
-2. Bestimmen Sie die Datei Relevanz für die Groß-/Kleinschreibung Problem und markieren Sie die Datei mit dem Tag Optionsfelder Symbol oder Tastenkombinationen, wie in der folgenden Tabelle dargestellt:
+2. Bestimmen Sie die Relevanz der Datei für das Fall Problem, und markieren Sie die Datei mithilfe der Symbolschaltflächen oder Tastenkombinationen für die Tagging-Option, wie in der folgenden Tabelle dargestellt:
     
 | |
-|**Markieren die option**|**Beschreibung**|**Tastenkombination**|**Massen Sie für mehrere Probleme --Tag Tastenkombination**|
+|**Tagging-Option**|**Beschreibung**|**Tastenkombination**|**Für mehrere Probleme-Tastenkombination für Massen Tags**|
 |:-----|:-----|:-----|:-----|
-|R  <br/> |Relevante  <br/> |Z  <br/> |Umschalttaste + Z  <br/> |
-|NR.  <br/> |Nicht relevant  <br/> |X  <br/> |Umschalttaste + X  <br/> |
+|R  <br/> |Relevanten  <br/> |Z  <br/> |UMSCHALT + Z  <br/> |
+|NR  <br/> |Nicht relevant  <br/> |X  <br/> |UMSCHALT + X  <br/> |
 |Überspringen  <br/> |Überspringen  <br/> |C  <br/> |UMSCHALT + A  <br/> |
    
-  - Wenn mehrere Probleme für eine Datei vorhanden sind, nach der Markierung ein Problem verschiebt die Markierung zum nächsten Problem (falls vorhanden). 
+  - Wenn mehrere Probleme für eine Datei vorhanden sind, wird nach dem Markieren eines Problems die Auswahl zum nächsten Problem verschoben (falls verfügbar). 
     
-  - Schlüsselwörter, die durch den Administrator oder die Groß-/Kleinschreibung Manager definiert wurden, wenn Sie Schlüsselwörter hervorheben (Relevanz Setup \> Schlüsselwörter hervorgehoben), wird zur Identifizierung der relevante Dateien während tagging (im angegebenen Farben) angezeigt. Wenn ein Schlüsselwort doppelte unterstrichen ist, kann darauf geklickt werden, um eine QuickInfo mit dem Schlüsselwort Beschreibung anzuzeigen. 
+  - Schlüsselwörter, die vom Administrator oder Case Manager beim Hervorheben von Stichwörtern (Relevanz \> Setup hervorgehobene Schlüsselwörter) definiert wurden, werden angezeigt (in bestimmten Farben), um relevante Dateien beim taggen zu identifizieren. Wenn ein Schlüsselwort eine doppelte Unterstreichung aufweist, können Sie darauf klicken, um einen Tooltip mit der Beschreibung des Schlüsselwortes anzuzeigen. 
     
-    Klicken Sie optional auf der Registerkarte **Tag** auf **Einstellungen** , um die folgenden Optionen festlegen: 
+    Klicken Sie optional auf der Registerkarte **Tag** auf **Tag-Einstellungen** , um die folgenden Optionen festzulegen: 
     
     ![Relevanztageinstellungen](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
-  - **Massen-Tag**: mit dieser Option können Sie mehrere Probleme für eine Datei, indem Sie **Alle** das Tag für die ausgewählte Datei für alle Probleme (überschreibt bereits markierte Probleme) festlegen oder durch auswählen **der Rest** anzuwendende das Tag für die verbleibenden ohne Tags Probleme zuweisen. Die ausgewählte Option bleibt in Kraft für alle Fälle des Benutzers, bis die von diesem Benutzer geändert (Einstellung ist für alle Benutzer Fällen pro Benutzer). 
+  - **Massentag**: Verwenden Sie diese Option, um mehrere Probleme für eine Datei zuzuweisen, indem Sie **alle** auswählen, um das Tag für die ausgewählte Datei für alle Probleme festzulegen (Überschreibt bereits markierte Probleme) oder indem Sie **den Rest** auswählen, um das Tag auf die verbleibenden nicht markierten Probleme anzuwenden. Die ausgewählte Option bleibt für alle Fälle dieses Benutzers gültig, bis Sie von diesem Benutzer geändert wurde (Einstellung ist pro Benutzer für alle Fälle des Benutzers). 
     
-  - **Automatische Tag**: Aktivieren Sie dieses Kontrollkästchen, das andere Probleme für eine Datei als nicht festgelegt nach einer einzelnen relevanten tagging relevant.
+  - **Auto-Tag**: Aktivieren Sie dieses Kontrollkästchen, um andere Probleme für eine Datei nach einem einzelnen relevanten Tagging als nicht relevant festzulegen.
     
-  - **Automatische Advance**: Aktivieren Sie dieses Kontrollkästchen angezeigte Datei mit der nächsten Datei zu markieren, wenn die letzte oder nur ohne Tags Problem markieren. 
+  - **Auto Advance**: Aktivieren Sie dieses Kontrollkästchen, um die angezeigte Dateiauswahl in die nächste Datei zu verschieben, wenn Sie das letzte oder nur nicht gekennzeichnete Problem kennzeichnen. 
     
-    Übersprungene Dateien werden nicht für die Relevanz Schulung und Punktzahl Relevanz berücksichtigt.
+    ÜberSprungene Dateien werden nicht für Relevanz Schulungen und Relevanz Scoring Zwecke berücksichtigt.
     
-3. Freitext-, einer Datei zugeordneten Kommentare können angezeigt und über die Option **Kommentar** in der linken Dropdownliste bearbeitet werden. (optional) 
+3. Freitextkommentare, die einer Datei zugeordnet sind, können über die **Kommentar** Option in der Dropdownliste im linken Bereich angezeigt und bearbeitet werden. optional 
     
-4. Richtlinien für die Markierung können durch Auswählen der Option **Markieren von Richtlinien** in den linken Bereich Dropdown-Liste angezeigt werden. 
+4. Die Richtlinien für das Tagging können angezeigt werden, indem Sie die Option **Tagging Guidelines** in der linken Dropdownliste auswählen. 
     
-5. Nachdem Sie alle Dateien in der Liste Kategorien Fertig stellen und zum Berechnen der Ergebnisse bereit sind, klicken Sie auf **berechnen**. Die Registerkarte **Nachverfolgen** wird angezeigt. 
+5. Nachdem Sie alle Dateien in der Liste gekennzeichnet haben und bereit sind, die Ergebnisse zu berechnen, klicken Sie auf **berechnen**. Die Registerkarte **Spur** wird angezeigt. 
     
-## <a name="working-with-the-sample-files-list"></a>Arbeiten mit der Liste der Beispiel-Dateien
+## <a name="working-with-the-sample-files-list"></a>Arbeiten mit der Liste "Beispieldateien"
 
-Die Beispielliste Dateien können Sie zum Anzeigen einer Liste der Dateien in einer Stichprobe Schulung und verschiedene Aktionen für eine oder mehrere Dateien ausführen. In der **Relevanz** \> **Tag** Registerkarte **Beispieldateien** linke Bereich zeigt eine Liste der Beispieldateien für die Verarbeitung von Geschäftsprozessen mit Assessment, Schulungen, synchronisieren und Inkonsistenzen. 
+In der Liste Beispieldateien können Sie eine Liste der Dateien in einem Schulungs Beispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien ausführen. Auf der Registerkarte **relevanztag** \> **** wird im linken Bereich **Beispieldateien** eine Liste der Beispieldateien für die Verarbeitung mit den Prozessen Bewertung, Schulung, catch-up und Inkonsistenzen angezeigt. 
   
-1. In der **Relevanz \> Tag** Registerkarte, wählen Sie die Beispieldateien in den linken Bereich Dropdown-Liste aus. Klicken Sie im linken Bereich sind die Beispieldateien aufgeführt. 
+1. Wählen Sie **auf \> ** der Registerkarte relevanztag die Beispieldateien in der Dropdownliste im linken Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet. 
     
     ![Relevanztag: Liste mit Beispieldateien](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
-2. Wählen Sie eine bestimmte Anzahl von Beispieldaten oder Datei durch eingeben oder auswählen die Nummer in den Feldern **Beispiel** oder eine **Datei** aus. 
+2. Wählen Sie eine bestimmte Beispiel-oder Dateinummer aus, indem Sie die Nummer in den Feldern **Sample** oder **File** eingeben oder auswählen. 
     
-  -   - Eine Sequenznummer Datei wird in der linken Spalte der Liste angezeigte Datei auf der Registerkarte " **Tag** " aufgeführt. Durch Klicken auf die Kopfzeile, gibt die ursprüngliche angezeigte Reihenfolge der Dateien zurück, mit der ursprünglichen Reihenfolge. 
+  -   - Eine Dateisequenz Nummer wird in der linken Spalte der angezeigten Dateiliste auf der Registerkarte **Tag** aufgelistet. Durch Klicken auf die Kopfzeile wird die ursprüngliche Reihenfolge der Dateien zurückgegeben. 
     
-  - Durch Klicken auf eine Zeile Datei zeigt seinen Inhalt im rechten Bereich.
+  - Durch Klicken auf eine Datei Zeile wird der zugehörige Inhalt im rechten Bereich angezeigt.
     
-  - Navigieren Sie zwischen Dateien im aktuellen Beispiel mithilfe der unteren Optionen der Menüleiste. Darüber hinaus stehen Navigation Tastenkombinationen zur Verfügung:
+  - Navigieren Sie zwischen Dateien im aktuellen Beispiel, indem Sie die Optionen Untermenüleiste verwenden. Darüber hinaus stehen Navigationstasten Kombinationen zur Verfügung:
     
-    Um die erste Datei in der Stichprobe zu navigieren: UMSCHALT + STRG +\<
+    So navigieren Sie zu der ersten Datei im Beispiel: UMSCHALT + STRG +\<
     
-    Navigieren Sie auf die vorherige Datei im Beispiel: UMSCHALT +\<
+    So navigieren Sie zur vorherigen Datei im Beispiel: UMSCHALT +\<
     
-    Navigieren Sie in der nächsten Datei in der Stichprobe: UMSCHALT +\>
+    So navigieren Sie zur nächsten Datei im Beispiel: UMSCHALT +\>
     
-    Um auf die letzte Datei in der Stichprobe zu navigieren: UMSCHALT + STRG +\>
+    So navigieren Sie zur letzten Datei im Beispiel: UMSCHALT + STRG +\>
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Grundlegendes zur Bewertung in Relevanz](assessment-in-relevance-in-advanced-ediscovery.md)
+[Bedeutung der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Kategorien und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
+[Tagging und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Nachverfolgen der Relevanz Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
+[Nachverfolgen der Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Entscheiden je nach den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Entscheiden basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testen der Relevanz Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
 

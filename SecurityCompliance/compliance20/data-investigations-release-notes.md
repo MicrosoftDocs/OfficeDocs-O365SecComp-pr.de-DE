@@ -1,48 +1,48 @@
 ---
-title: Versionshinweise für Daten Untersuchungen (Preview) in Microsoft 365
+title: Versionshinweise zu Daten Untersuchungen (Preview) in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Dieser Artikel beschreibt die neue Version des erweiterten eDiscovery (Preview) in Microsoft 365.
-ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: In diesem Artikel wird die neue Version von Advanced eDiscovery (Preview) in Microsoft 365 beschrieben.
+ms.openlocfilehash: 851712d6eae876f4c74c4d3322de487d3ff14858
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695061"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212805"
 ---
-# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Versionshinweise für Daten Untersuchungen (Preview) in Microsoft 365
+# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Versionshinweise zu Daten Untersuchungen (Preview) in Microsoft 365
 
-Das neue Tool Daten Untersuchungen (Preview) können in Microsoft 365 selektieren, untersuchen und Warten von Daten miteinander verknüpft, Vorfälle, wie eine Daten stellen Vorfall oder einer internen Untersuchung. Die öffentliche Datenvorschau Untersuchungen enthält frühe Zugriff auf die in Kürze verfügbare Funktionalität und Updates. Um frühen Zugriff auf die neuesten Funktionen erhalten möchten, erstellen Sie eine neue Untersuchung in Daten Untersuchungen (Preview) in die Office 365-Sicherheit & Compliance Center. Informationen hierzu finden Sie unter [Verwalten einer Daten stellen Vorfall in Microsoft 365](manage-data-spillage-incidents.md).
+Sie können das neue Tool für Daten Untersuchungen (Preview) in in Microsoft 365 verwenden, um datenbezogene Vorfälle, wie beispielsweise einen Vorfall mit Datenausfällen oder interne Untersuchungen, zu selektieren, zu untersuchen und zu beheben. Die öffentliche Vorschau der Daten Untersuchungen bietet Ihnen frühzeitigen Zugriff auf die bevorstehenden Funktionen und Updates. Um frühzeitig Zugriff auf die neuesten Features zu erhalten, erstellen Sie eine neue Untersuchung in Daten Untersuchungen (Preview) im Office 365 Security & Compliance Center. Weitere Informationen finden Sie unter [manage a Data Spilling Incident in Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Neuigkeiten 
 
-- **Untersuchungen** - können Sie Suchvorgänge und Vorfälle durch Erstellen einer Untersuchung gruppieren. Verwalten Sie, wer die Untersuchung durch Hinzufügen oder Entfernen von Mitgliedern zugreifen kann.  Sie können auch auswählen und Ihre bevorzugten Untersuchungen zu kennzeichnen. Zurückverfolgen und überwachen-Aktivität innerhalb und zwischen Untersuchungen neue Dashboards verwenden. Nachdem Sie Ihre Untersuchung abgeschlossen haben, können Sie schließen oder löschen Sie ihn.
+- **** Untersuchungen – Sie können Suchvorgänge und Vorfälle gruppieren, indem Sie eine Überprüfung erstellen. Verwalten der Benutzer, die auf die Untersuchung zugreifen können, indem Sie Mitglieder hinzufügen oder entfernen.  Sie können Ihre bevorzugten Untersuchungen auch markieren und markieren. Verfolgen und Überwachen von Aktivitäten innerhalb und zwischen den Untersuchungen mithilfe neuer Dashboards. Nachdem Sie die Untersuchung abgeschlossen haben, können Sie Sie schließen oder löschen.
 
-- **Interessante Menschen** – Wenn Sie Untersuchungen als interessante Menschen Benutzer hinzufügen, können Sie ihr Postfach, OneDrive for Business-Konto und Microsoft-Teams, Websites anzeigen. Sie können genauer von Suchvorgängen Gültigkeitsbereich festgelegt. Sie können auch anzeigen, um eine Person von Interesse weiter zu untersuchen, audit-Datensätze im Zusammenhang mit deren Aktivitäten in Office 365 und anderen Microsoft-Diensten.
+- **Personen von Interesse** – Wenn Sie Benutzer zu Untersuchungen als Interessengruppen hinzufügen, können Sie die Websites Mailbox, OneDrive for Business und Microsoft Teams anzeigen. Sie können Sie verwenden, um die Suche nach Inhalten zu bereichern. Um eine Person weiter zu untersuchen, können Sie auch Überwachungsdatensätze anzeigen, die sich auf ihre Aktivitäten in Office 365 und anderen Microsoft-Diensten beziehen.
 
-- **Suche** – erstellen eine unternehmensweite Suche mit verschiedenen Suchoptionen Bedingung. Wenn Sie wissen Benutzer oder Websites, die Sie suchen möchten, können Sie dazu hinzufügen, die diese Benutzer Personen von Interesse oder angeben Standorte im Assistenten zum Erstellen der Suche. 
+- **** Suchen – erstellen Sie eine organisationsweite Suche mit verschiedenen Suchbedingungen. Wenn Sie wissen, Benutzer oder Websites, die Sie durchsuchen möchten, können Sie dies tun, indem Sie diese Benutzer als interessante Personen hinzufügen oder Websitespeicher Orte im Such Erstellungs-Assistenten angeben. 
 
-- **Vorfälle** – erstellen einen neuen Vorfall und fügen Suchergebnisse, die Sie überprüfen möchten. Einzelne Dokumente überprüfen können, um Untersuchung Notes lassen Kommentieren und exportieren die Ergebnisse in einer anderen Umgebung verschieben. 
+- **Incidents** – erstellen Sie einen neuen Vorfall, und fügen Sie Suchergebnisse hinzu, die Sie überarbeiten möchten. Sie können einzelne Dokumente überarbeiten, Anmerkungen hinzufügen, um Untersuchungen zu hinterlassen und Ergebnisse zu exportieren, um in eine andere Umgebung zu wechseln. 
 
-- **Überprüfen Sie** – verwenden eine systemeigene, Text und in der Nähe Native anzeigen, lesen Sie die Dokumente auf einen Vorfall hinzugefügt. Sie können auch zu Dokumenten zum Gruppieren von Elementen Analytics anwenden, indem Duplikate, e-Mail-Threads und Designs, die die Überprüfung des Vorfalls unterstützen kann. 
+- **Review** – verwenden Sie eine systemeigene, Text-und systemeigene Ansicht, um die zu einem Vorfall hinzugefügten Dokumente zu überprüfen. Sie können Analysen auch auf Dokumente anwenden, um Elemente nach Duplikaten, e-Mail-Threads und Designs zu gruppieren, was Ihnen helfen kann, den Vorfall zu überarbeiten. 
 
-- **Redact, markieren, und mit Anmerkungen versehen** – Schwärzen Text und Anwenden von Tags Anmerkungen machen, wie Sie Dokumente lesen.
+- **Redact, Tags und Anmerkungen** – Redact Text, wendet Tags an und macht Anmerkungen, wenn Sie Dokumente überprüfen.
   
-- **Tiefe Indizierung** – Wenn eine beliebige teilweise indizierte Elemente vorhanden sind, bei Bedarf neu indiziert werden, damit alle Daten für die Suche zur Verfügung stehen.
+- **Deep Indexing** – wenn teilweise indizierte Elemente vorhanden sind, werden Sie bei Bedarf erneut indiziert, sodass alle Daten für die Suche zur Verfügung stehen.
 
-- **Error Remediation** – Remediate oder herunterladen, die Verarbeitung von Fehlern. Hierzu zählen außerdem Unterstützung für große Dateitypen Remediation, kennwortgeschützte Dateien und andere Probleme im Zusammenhang mit der Indizierung Fehler. 
+- **Fehler** Korrektur – beheben oder Herunterladen von Verarbeitungsfehlern. Dies umfasst die Behebung der Unterstützung für umfangreiche Dateitypen, kennwortgeschützte Dateien und andere Probleme im Zusammenhang mit Indizierungs Fehlern. 
 
-- **Aufträge** – Status langer-Prozessen zu verfolgen.
+- **Jobs** – verfolgen Sie den Status lang andauernder Prozesse.
 
-- **Postfachelemente Festplatten-Delete** - In dringenden Fällen müssen Sie fehlende Elemente endgültig löschen. Zu diesem Zweck führen Sie die **neu ComplianceSearchAction-löschen - PurgeType HardDelete** Command in Security & Compliance Center PowerShell Elemente dauerhaft aus Postfächer zu entfernen. Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Löschen von Postfachelementen** – in dringenden Situationen müssen Sie möglicherweise nicht verlegte Elemente endgültig löschen. Hierzu können Sie den Befehl **New-ComplianceSearchAction-Purge-purgeType HardDelete** in Security _AMP_ Compliance Center PowerShell ausführen, um Elemente dauerhaft aus Postfächern zu entfernen. Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

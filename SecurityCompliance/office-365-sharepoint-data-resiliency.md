@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Übersicht über die Datensicherheit in SharePoint Online in Office 365.
-ms.openlocfilehash: c550cb6572cb71b53cd544af64339129f72b888f
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4fd17b50551639f6e11975acbc3822fb6ffa8bb2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090887"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214805"
 ---
 # <a name="sharepoint-online-data-resiliency"></a>SharePoint Online-Datensicherheit
 Ein zentrales Prinzip für SharePoint Online besteht darin, nie eine einzelne Kopie eines Datenteils zu haben. SharePoint Online verwendet die SQL Server-Replikation, bei der es sich um eine Reihe von Technologien für das Kopieren und Verteilen von Daten und Datenbankobjekten aus einer Datenbank in eine andere handelt und die anschließende Synchronisierung zwischen Datenbanken, um die Konsistenz zu gewährleisten. 

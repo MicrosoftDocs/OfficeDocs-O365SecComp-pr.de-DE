@@ -6,21 +6,21 @@ manager: laurawi
 ms.date: 1/14/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
-description: 'Die Junk-e-Mail-Reporting Add-in für Microsoft Outlook können Exchange Online und Exchange Online Protection Benutzer melden auf einfache Weise (Spam) Junk-e-Mail an Microsoft zur Analyse zur Reduzierung der Anzahl und die Auswirkungen von zukünftigen junk-e-Mail-Nachrichten, die vom Dienst gefiltert. Kompatibel mit Microsoft Outlook 2013, Outlook 2010 oder Outlook 2007 mit Windows 7, Windows 8 oder Windows 10, bietet das reporting-add-in die folgenden Vorteile:'
-ms.openlocfilehash: 80ebbb0c202daec54722d3f87a92e85a8d500164
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: 'Mit dem Add-in "Junk-e-Mail-Berichterstellung" für Microsoft Outlook können Exchange Online-und Exchange Online Protection-Benutzer auf einfache Weise Junk-e-Mails an Microsoft melden, um die Anzahl und die Auswirkungen zukünftiger Junk-e-Mails zu verringern, die vom Dienst gefiltert werden. Das Reporting-Add-in, das mit Microsoft Outlook 2013, Outlook 2010 oder Outlook 2007 mit Windows 7, Windows 8 oder Windows 10 kompatibel ist, bietet die folgenden Vorteile:'
+ms.openlocfilehash: ec99ecc16137741b2f0de3043601105825417d37
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272210"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214585"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Add-In „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook
 
-Die Junk-e-Mail-Reporting Add-in für Microsoft Outlook können Exchange Online und Exchange Online Protection Benutzer melden auf einfache Weise (Spam) Junk-e-Mail an Microsoft zur Analyse zur Reduzierung der Anzahl und die Auswirkungen von zukünftigen junk-e-Mail-Nachrichten, die vom Dienst gefiltert. Kompatibel mit Microsoft Outlook 2013, Outlook 2010 oder Outlook 2007 mit Windows 7, Windows 8 oder Windows 10, bietet das reporting-add-in die folgenden Vorteile:
+Mit dem Add-in "Junk-e-Mail-Berichterstellung" für Microsoft Outlook können Exchange Online-und Exchange Online Protection-Benutzer auf einfache Weise Junk-e-Mails an Microsoft melden, um die Anzahl und die Auswirkungen zukünftiger Junk-e-Mails zu verringern, die vom Dienst gefiltert werden. Das Reporting-Add-in, das mit Microsoft Outlook 2013, Outlook 2010 oder Outlook 2007 mit Windows 7, Windows 8 oder Windows 10 kompatibel ist, bietet die folgenden Vorteile:
   
 - Melden von Junk-E-Mails mit nur einem Mausklick, sodass Benutzer Junk-E-Mails problemlos auswählen und zur Analyse an Microsoft übermitteln können.
     
@@ -32,10 +32,10 @@ Die Junk-e-Mail-Reporting Add-in für Microsoft Outlook können Exchange Online 
     
 In den folgenden Themen wird beschrieben, wie Sie das Add-In „Junk-E-Mail-Berichtsprogramm“ für Outlook bereitstellen und verwenden und wie Sie Probleme mit diesem Add-In beheben.
   
-- [Installieren Sie die Junk-e-Add-in für Microsoft Outlook Reporting](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md) Enthält Informationen für Administratoren zum Installieren und Bereitstellen des Add-Ins in ihrer Organisation. Darüber hinaus Informationen dazu, wie Sie das Add-in zu deinstallieren. 
+- [Installieren des Junk-e-Mail-Berichts-Add-Ins für Microsoft Outlook](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md) Stellt Informationen für Administratoren bereit, um das Add-in in Ihrer Organisation zu installieren und bereitzustellen. Außerdem werden Informationen zum Deinstallieren des Add-ins bereitgestellt. 
     
-- [Bericht junk-e-Mails an Microsoft](report-junk-email-messages-to-microsoft.md) Enthält Informationen für Endbenutzer dazu, wie Sie das Add-in verwenden, um junk-e-Mails an Microsoft. 
+- [Melden von Junk-e-Mails an Microsoft](report-junk-email-messages-to-microsoft.md) Enthält Informationen für Endbenutzer zur Verwendung des Add-Ins zum Melden von Junk-e-Mails an Microsoft. 
     
-- [Problembehandlung und Supportinformationen](troubleshooting-and-support-information.md) Enthält Schritte zur Problembehandlung für Endbenutzer und Administratoren und Informationen zum Kontaktieren des technischen Supports. 
+- [Problembehandlung und Supportinformationen](troubleshooting-and-support-information.md) Enthält Schritte zur Problembehandlung für Endbenutzer und Administratoren sowie Informationen zum Kontaktieren des technischen Supports. 
     
 

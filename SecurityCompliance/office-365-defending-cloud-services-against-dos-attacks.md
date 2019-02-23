@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Wie Microsoft seine Cloud-Dienste gegen Denial-of-Service-Angriffe (DoS) verteidigt.
-ms.openlocfilehash: 64a99347e22612bba2035092764ed3714b596228
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: d284ace935e0f90417b3b009d76e3b282b08bc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090997"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212795"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Schützen von Microsoft Cloud Services vor Denial-of-Service-anGriffen
 

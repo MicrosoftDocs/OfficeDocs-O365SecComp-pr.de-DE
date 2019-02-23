@@ -1,135 +1,135 @@
 ---
-title: Legen Sie Text ignorieren-Option für die Analyse in Office 365 erweiterte eDiscovery
+title: Festlegen der Option zum Ignorieren von Text für die Analyse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Erfahren Sie, wie die Regel, um bestimmten Text ignoriert wird, wenn mit den Modulen analysieren und Prozess in Office 365 erweiterte eDiscovery definieren.  '
-ms.openlocfilehash: eb7e7052979087b7dba98aac3b0c9ab75ec0d02a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Erfahren Sie, wie Sie die Regel definieren, um bestimmten Text zu ignorieren, wenn Sie die Module analyze und Process in Office 365 Advanced eDiscovery verwenden.  '
+ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529494"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214245"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Legen Sie Text ignorieren-Option für die Analyse in Office 365 erweiterte eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Festlegen der Option zum Ignorieren von Text für die Analyse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Das Feature ignorieren Text angewendet werden soll, auf alle oder auf die folgenden erweiterten eDiscovery-Module: Analysieren (in der Nähe Duplikate, E-Mail-Threads Designs) und Relevanz. Ignorierte Text wird nicht angezeigt, in der Dateien werden in Relevanz angezeigt, und die Analysis-Berechnungen verwirft des ignorierten Texts.
+Das Feature Text ignorieren kann auf alle oder eines der folgenden erweiterten eDiscovery-Module angewendet werden: analysieren (Near-Duplikate, e-Mail-Threads, Designs) und Relevanz. Ignorierter Text wird nicht in der Relevanz angezeigt, und die Analyse/Berechnungen verwirft den ignorierten Text.
   
-Wenn das Feature Text ignorieren für Module zuvor definiert wurde, die bereits ausgeführt haben, wird die Einstellung Text ignorieren geändert wird, wird nun geschützt werden. Das Feature ignorieren Text für das Modul Relevanz kann jedoch weiterhin jederzeit geändert werden.
+Wenn das Feature Text ignorieren zuvor für Module definiert wurde, die bereits ausgeführt wurden, wird die Einstellung Text ignorieren jetzt vor der Änderung geschützt. Das Feature Text ignorieren für das Relevance-Modul kann jedoch jederzeit geändert werden.
   
-## <a name="how-ignore-text-filters-are-applied"></a>Anwenden von Filtern für Text ignorieren
+## <a name="how-ignore-text-filters-are-applied"></a>Anwenden von Ignore-Text filtern
 
-Mehrere Text ignorieren Filter werden in der Reihenfolge angewendet, dass sie eingegeben wurden. Zum Ändern der Reihenfolge, in der sie angewendet werden, müssen sie gelöscht und in der gewünschten Reihenfolge erneut eingegeben werden.
+Mehrere Ignore-Text Filter werden in der Reihenfolge angewendet, in der Sie eingegeben wurden. Um die Reihenfolge zu ändern, in der Sie angewendet werden, müssen Sie gelöscht und in der gewünschten Reihenfolge erneut eingegeben werden.
   
-Beispiel: bei der Textinhalt ist: "DAVE BOB ALICE CAROL EVE", die im folgenden sind Beispiele für ignorieren Texteinträge und die Ergebnisse:
+Wenn der Textinhalt beispielsweise "DAVE BOB ALICE CAROL EVE" lautet, sind die folgenden Beispiele für Ignore-Texteinträge und die Ergebnisse:
   
 ||||
 |:-----|:-----|:-----|
-|**Texteinträge ignorieren** <br/> |**==\>** <br/> |**Ergebnisse** <br/> |
+|**Text Einträge ignorieren** <br/> |**==\>** <br/> |**Ergebnisse** <br/> |
 |"ALICE", "BOB CAROL"  <br/> |==\>  <br/> |"DAVE EVE"  <br/> |
 |"ALICE", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"DAVE BOB CAROL EVE"  <br/> |
    
-Die zweite ignorieren Texteingabe ist nicht implementiert, da die Zeichenfolge als solche nicht gefunden wird, nachdem der erste ignorieren Text angewendet wurde.
+Der zweite Ignore-Texteintrag wird nicht implementiert, da die Zeichenfolge nicht als solches gefunden wird, nachdem der erste Text ignoriert wurde.
   
-## <a name="use-regular-expressions-when-defining-ignore-text"></a>Verwenden Sie reguläre Ausdrücke beim Definieren der Text ignorieren
+## <a name="use-regular-expressions-when-defining-ignore-text"></a>Verwenden regulärer Ausdrücke beim Definieren von Text ignorieren
 
-Reguläre Ausdrücke werden für die Verwendung unterstützt, wenn Text ignorieren definieren. Es folgen Beispiele für die Syntax für reguläre Ausdrücke und Verwendung:
+Reguläre Ausdrücke werden für die Verwendung beim Definieren von Text ignorieren unterstützt. Im folgenden finden Sie Beispiele für Syntax und Verwendung regulärer Ausdrücke:
   
-- So entfernen Sie (ignorieren) Text vom Anfang bis zum Ende einer Zeile:
+- So entfernen (ignorieren) Sie Text von Anfang bis zum Ende einer Zeile:
     
      `Begin(.*)$`
     
-    Dabei ist "Begin" das erste Auftreten des diese Zeichenfolge in der Zeile.
+    Dabei ist "BEGIN" das erste Vorkommen dieser Zeichenfolge in der Linie.
     
-    Zum Beispiel für den folgenden Text:
+    Beispiel für den folgenden Text:
     
-    **"Dies ist ersten Satz und die erste Zeile**
+    **"Dies ist der erste Satz und die erste Reihe**
     
-    **Dies ist die zweite Satz und zweiten Zeile"**
+    **Dies ist der zweite Satz und die zweite Reihe.**
     
-    der reguläre Ausdruck first(.\*) $ führt zu:
+    der reguläre Ausdruck zuerst (.\*) $ führt zu:
     
     **"Dies ist**
     
-    **Dies ist die zweite Satz und zweiten Zeile"**
+    **Dies ist der zweite Satz und die zweite Reihe.**
     
-- So entfernen Sie Haftungsausschluss und rechtliche Anweisungen automatisch am Ende des e-Mail-Threads eingefügt:
+- So entfernen Sie Haftungsausschlüsse und-Anweisungen, die am Ende der e-Mail-Threads automatisch eingefügt werden:
     
      `Begin(.|\s)*End`
     
-    wobei "Begin" und "End" eindeutige Zeichenfolgen am Anfang und Ende eines Absatzes umbrochenen Text sind. 
+    wobei "BEGIN" und "End" eindeutige Zeichenfolgen am Anfang und am Ende eines umgebrochenen Textabsatzes sind. 
     
-    Im folgende reguläre Ausdruck entfernt beispielsweise Haftungsausschluss und rechtliche Anweisungen, die in der e-Mail-Thread zwischen den Zeichenfolgen Begin- und End wurden:
+    Der folgende reguläre Ausdruck entfernt beispielsweise Haftungsausschlüsse und rechtliche Anweisungen, die sich im e-Mail-Thread zwischen der BEGIN-und der End-Zeichenfolge befanden:
     
-    **Diese Nachricht enthält vertrauliche Informationen (. | \s)\*, wenn die Überprüfung erforderlich ist, fordern Sie eine harte Kopie-Version**
+    **Diese Nachricht enthält vertrauliche Informationen (. | \s)\*wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy-Version an.**
     
-- So entfernen Sie einen Haftungsausschluss (einschließlich Sonderzeichen) 
+- So entfernen Sie einen Haftungsausschluss (einschließlich Sonderzeichen): 
     
-    Zum Beispiel für den folgenden Text (mit der Haftungsausschluss hier dargestellt durch x): 
+    Beispielsweise für den folgenden Text (mit dem hier durch x dargestellten Haftungsausschluss): 
     
-    **/\*\ Diese Nachricht enthält vertrauliche Informationen. Xxxx-xxxx**
+    **/\*\ Diese Nachricht enthält vertrauliche Informationen. xxxx xxxx**
     
-    **Xxxx Xxxx Xxxx Xxxx Xxxx-Xxxx-xxxx**
+    **xxxx xxxx xxxx xxxx xxxx xxxx xxxx**
     
-    **Xxxx-Xxxx, wenn die Überprüfung erforderlich ist, fordern Sie eine harte Kopie Version. /\*\**
+    **xxxx xxxx wenn eine Überprüfung erforderlich ist, fordern Sie eine Version an. /\*\**
     
-    der reguläre Ausdruck, den oben genannten Haftungsausschluss entfernen sollte sein: 
+    der reguläre Ausdruck zum Entfernen des obigen Haftungsausschlusses sollte: 
     
-    **\/\\*\\Diese Nachricht enthält vertrauliche Informationen\.(. | \s)\* , wenn die Überprüfung erforderlich ist, fordern Sie eine harte Kopie Version\.\/\\*\\**
+    **\/\\*\\Diese Nachricht enthält vertrauliche\.Informationen (. | \s)\* wenn eine Überprüfung erforderlich ist, fordern Sie eine Hardcopy\. -Version an.\/\\*\\**
     
-- Regeln für den regulären Ausdruck:
+- Regeln für reguläre Ausdrücke:
     
-  - Alle Zeichen, die nicht Teil des Alphabets mit Ausnahme aufhören, "_" sind und "-" muss vorangestellt werden "\".
+  - Alle Zeichen, die nicht Teil des Alphabets sind, mit Ausnahme von Space (s), "_" und "-" müssen vorangestellt\"werden. "
     
-  - Feld reguläre eExpression kann unbegrenzte Länge sein.
+  - Das reguläre eExpression-Feld kann unbegrenzte Länge aufweisen.
     
 > [!TIP]
-> Eine Erläuterung und Informationen zur Syntax von regulären Ausdrücken finden Sie unter: [Regulären Ausdruck Language - Quick Reference](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
+> Eine Erläuterung und ausführliche Syntax regulärer Ausdrücke finden Sie unter: [Regular Expression Language-Quick Reference](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
   
-## <a name="define-ignore-text-rule"></a>Definieren der Regel Text ignorieren
+## <a name="define-ignore-text-rule"></a>Ignore-Text Regel definieren
 
-1. In der **verwalten \> Analyze \> analysieren Optionen** Registerkarte im Abschnitt **Text ignoriert wird** , klicken Sie auf die **+** Symbol, um eine Regel hinzuzufügen. 
+1. Klicken Sie auf der Registerkarte **Analyse \> \> Optionen verwalten** im Abschnitt **Text ignorieren** auf das **+** Symbol, um eine Regel hinzuzufügen. 
     
-2. Geben Sie im Dialogfeld **Ignorieren Text hinzufügen** im Feld **Name** einen Namen für die Regel Text ignoriert wird. 
+2. Geben Sie im Dialogfeld **ignorieren-Text hinzufügen** unter **Name** einen Namen für die Regel zum Ignorieren von Text ein. 
     
     ![Ignorierten Text hinzufügen](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
-3. Geben Sie in das **Textfeld** den Text ignoriert werden soll. Das Textfeld ermöglicht eine unbegrenzte Anzahl von Zeichen. 
+3. Geben Sie **** in das Textfeld den zu ignorierenden Text ein. Das Textfeld erlaubt eine unbegrenzte Anzahl von Zeichen. 
     
     > [!TIP]
-    > Wie im obigen Fenster angezeigt wird, klicken Sie auf **Glühbirne** um allgemeine Syntax Richtlinien für die Regel ignorieren Text anzuzeigen. 
+    > Wie im obigen Fenster angezeigt, klicken Sie **** auf Glühbirne, um allgemeine Syntax Richtlinien für die Ignore-Textregel anzuzeigen. 
   
-4. Wählen Sie bei Bedarf das Kontrollkästchen **Groß-/Kleinschreibung beachten** . 
+4. Aktivieren Sie bei Bedarf das Kontrollkästchen **groß** -/Kleinschreibung beachten. 
     
-5. Wählen Sie in der Liste **Übernehmen für** die erweiterte eDiscovery-Module in der Definition die angewendet. 
+5. Wählen Sie in der Liste **übernehmen für** die erweiterten eDiscovery-Module aus, auf die die Definition angewendet werden soll. 
     
-6. Wenn Sie einen Testlauf auf Beispieltext möchten, geben Sie in das Textfeld **Eingabe** Beispieltext ein, und klicken Sie auf **Testen**. Die Ergebnisse werden in das Textfeld **Ausgabe** angezeigt. 
+6. Wenn Sie einen Testlauf im Beispieltext ausführen möchten, geben Sie Beispieltext in das Textfeld **Eingabe** ein, und klicken Sie auf **Testen**. Die Ergebnisse werden im Textfeld **Ausgabe** angezeigt. 
     
-7. Klicken Sie auf **OK** , um die Regel ignorieren Text zu speichern. Die definierte Text ignorieren Regel wird angezeigt. 
+7. Klicken Sie auf **OK** , um die ignoriertext-Regel zu speichern. Die definierte Ignore-Textregel wird angezeigt. 
     
     ![Set hat Textname ignoriert](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Grundlegendes zu Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
+[Grundlegendes zur Dokument Ähnlichkeit](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Festlegen von Optionen für Analyse](set-analyze-options-in-advanced-ediscovery.md)
+[Festlegen von Analyseoptionen](set-analyze-options-in-advanced-ediscovery.md)
   
-[Analysieren der Einstellung Erweiterte Einstellungen](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Einstellung "Erweiterte Einstellungen analysieren"](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Anzeigen von Ergebnissen der Analyse](view-analyze-results-in-advanced-ediscovery.md)
+[Anzeigen von Analyseergebnissen](view-analyze-results-in-advanced-ediscovery.md)
 

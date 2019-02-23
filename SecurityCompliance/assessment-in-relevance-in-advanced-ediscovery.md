@@ -1,66 +1,66 @@
 ---
-title: Grundlegendes zu Assessment in Relevanz in Office 365 erweiterte eDiscovery
+title: Grundlegendes zur Beurteilung in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 'Rufen Sie eine Übersicht über die Bewertungsphase und seiner Rolle bei der Bestimmung der Umfang der Probleme während der Relevanz Schulung in Office 365 erweiterte eDiscovery.  '
-ms.openlocfilehash: a54a4134609b16568586f3cb6b60ebdeba860bac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Hier erhalten Sie einen Überblick über die Bewertungsstufe und ihre Rolle bei der Ermittlung der reichhaltigen Probleme beim Relevanz-Training in Office 365 Advanced eDiscovery.
+ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529461"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212975"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Grundlegendes zu Assessment in Relevanz in Office 365 erweiterte eDiscovery
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Grundlegendes zur Beurteilung in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Erweiterte eDiscovery ermöglicht frühe Bewertung, beispielsweise für die definierten Probleme und die Daten für eine Anfrage importiert. Erweiterte eDiscovery ermöglicht den Experten für einen angenommene Ansatz Entscheidungen treffen Sie auf Überprüfung Dokumentprojekt anwenden.
+Advanced eDiscovery ermöglicht eine frühe Bewertung, beispielsweise für die definierten Probleme und die für einen Fall importierten Daten. Advanced eDiscovery ermöglicht es dem Experten, Entscheidungen über eine angenommene Vorgehensweise zu treffen und diese auf das Dokument Übersichts Projekt anzuwenden.
   
 ## <a name="understanding-assessment"></a>Grundlegendes zur Bewertung
 
-Bewertung überprüft der Experte einen zufällig ausgewählten Satz von mindestens 500-Dateien, die verwendet werden, um den Umfang der Probleme zu ermitteln und Statistiken zu erstellen, die die Schulung Ergebnisse widerspiegeln. Assessment ist erfolgreich, wenn genügend relevanten Dateien gefunden werden, ein statistische Niveau erreicht, die erweiterte eDiscovery Relevanz genaue Statistiken bereitstellen und tatsächlich die Stabilisierung Stelle der Schulung bestimmen helfen. 
+In der Bewertung prüft der Experte eine zufällige Gruppe von mindestens 500-Dateien, die verwendet werden, um die Reichhaltigkeit der Probleme zu bestimmen und um Statistiken zu erstellen, die die Trainingsergebnisse widerspiegeln. Die Bewertung ist erfolgreich, wenn genügend relevante Dateien gefunden werden, um einen statistischen Grad zu erreichen, der die FortgeSchrittene eDiscovery-Relevanz für genaue Statistiken und zur effektiven Bestimmung des Stabilisierungs Punkts im Schulungsprozess unterstützt. 
   
-Je höher die Anzahl der relevanten in die Bewertung festgelegt sind, desto genauer die Statistiken und die Effektivität des Algorithmus Stabilität Dateien. Die Anzahl der relevanten Dateien innerhalb der Bewertung Dateien hängt vom Umfang des Problems. Wie umfangreich ist der geschätzte Prozentsatz der entsprechenden Dateien in der Gruppe für ein Problem relevant. Probleme mit einer höheren Funktionsvielfalt werden eine größere Anzahl von relevanten Dateien schneller als Probleme mit niedrigeren Funktionsvielfalt erreichen. Probleme mit sehr niedrige Funktionsvielfalt (beispielsweise 2 % oder weniger) erfordern eine sehr große Bewertung gesetzt, um eine beträchtliche Anzahl von relevanten Dateien zu.
+Je höher die Anzahl der relevanten Dateien in der Bewertung ist, desto genauer sind die Statistiken und die Effektivität des Stabilitäts Algorithmus. Die Anzahl der relevanten Dateien in den Evaluierungs Dateien hängt vom Umfang des Problems ab. Reichtum ist der geschätzte Prozentsatz der relevanten Dateien in der Gruppe, die für ein Problem relevant ist. Probleme mit höherer Reichweite erreichen eine höhere Anzahl von relevanten Dateien schneller als Probleme mit geringem Umfang. Probleme mit extrem geringem Reichtum (beispielsweise 2% oder weniger) erfordern eine sehr umfangreiche Bewertung, um eine beträchtliche Anzahl von relevanten Dateien zu erreichen.
   
-Die Statistiken, die in den Registerkarten nachverfolgen und Decide während der Schulung und nach der Batch Berechnung vorgelegt werden, umfassen Abschätzung der Rückruf für verschiedene Überprüfung festgelegt. Innerhalb der Statistik, Einschätzung, die auf einer Stichprobe basieren festgelegt (in diesem Fall die Assessment-Dateien) enthalten, dem der Fehler und die Vertrauensstufe der jeweilige Fehler Rand. Beispielsweise möglicherweise geschätzte Rückruf 80 % Rand Fehler von Plus oder minus 5 % mit einer Vertrauensstufe von 95 %. Dies bedeutet, dass der geschätzte Rückruf ist tatsächlich 75-85 % dieser Schätzung 95 % Confidence hat. Je größer der Bewertung festgelegt, wird des Rands des Fehlers kleiner und die Statistiken verständlich sind. 
+Die Statistiken, die während des Trainings und nach der Batch Berechnung auf den Registerkarten "Titel" und "Entscheidung" angezeigt werden, enthalten Schätzungen des Rückrufs für verschiedene Übersichts Sätze. In Statistiken sind Schätzungen, die auf einer Beispiel Gruppe basieren (in diesem Fall die Bewertungsdateien), die Fehlertoleranz und die Zuverlässigkeitsstufe dieses fehlerbereichs. Beispielsweise kann der geschätzte Rückruf von 80% einen Fehlerwert von Plus oder minus 5% mit einer Konfidenz Stufe von 95% aufweisen. Dies bedeutet, dass der geschätzte Rückruf tatsächlich 75%-85% ist und diese Schätzung 95% vertrauenswürdig ist. Je größer der Bewertungs Satz ist, desto geringer ist der Fehlerspielraum, und die Statistiken sind genauer. 
   
-Nachdem der Experte eine erste Einschätzung Menge von 500 Dateien überprüft, kann Relevanz den aktuellen Rand von Fehler der Rückruf Werte zu bestimmen. Relevanz wird auch einen standardmäßigen Rand des Fehlers festgelegt, die es empfiehlt erreichen, um die Bewertung zu optimieren. Es folgen einige Beispiele:
+Nachdem der Experte einen anfänglichen Bewertungs Satz von 500-Dateien überprüft hat, kann die Relevanz den aktuellen Fehler Rand der Rückruf Werte bestimmen. Relevanz wird auch einen standardmäßigen Fehler Rand festlegen, der zur Optimierung des Bewertungs Satzes empfohlen wird. Es folgen einige Beispiele:
   
-- Wenn die Bewertung bereits einen Rand des Fehlers von Plus oder minus 10 % bereitgestellt wurde, wird Relevanz wird empfohlen, zu Schulungen verschieben, klicken Sie auf (keine zusätzliche Bewertung ist erforderlich). 
+- Wenn für den assessmentsatz bereits eine Fehlergrenze von Plus oder minus 10% vorliegt, wird empfohlen, zur Schulung zu wechseln (es ist keine zusätzliche Bewertung erforderlich). 
     
-- Wenn der Bewertung Satz einen Rand des Fehlers von Plus oder minus 13 % brachte, möglicherweise Relevanz wird die Überprüfung von einem anderen Satz von Assessment Dateien in einen kleineren Rand erreichen empfohlen. 
+- Wenn der Beurteilungs Satz eine Fehlergrenze von Plus oder minus 13% ergab, kann die Relevanz die Überprüfung eines anderen Satzes von Bewertungsdateien empfehlen, um einen geringeren Seitenrand zu erreichen. 
     
-- Wenn Funktionsvielfalt sehr gering ist, wird Relevanz möglicherweise empfehlen Assessment stoppen, obwohl der Rand des Fehlers (wobei Statistiken nicht praktikabel) groß ist, da festgelegten Assessment benötigt, um eine nützliche Rand von Fehler zu erreichen ist zu groß.
+- Wenn der Umfang äußerst gering ist, empfiehlt es sich möglicherweise, die Bewertung zu beenden, obwohl die Fehlergrenze hoch ist (Statistiken sind nicht praktikabel), da die zum Erreichen einer nützlichen Fehlergrenze erforderliche Bewertung zu umfangreich ist.
     
-Jedes Problem verfügt über eine eigene Funktionsvielfalt, aktuellen Rand von Fehler, und daher geschätzte Anzahl der zusätzliche Assessment-Dateien. Der nächste Satz Assessment wird entsprechend die maximale Anzahl von Dateien (bis zu 1.000 in einem einzigen Satz) erstellt.
+Jedes Problem hat seinen eigenen Umfang, den aktuellen Fehlerspielraum und als Ergebnis die geschätzte Anzahl zusätzlicher Evaluierungs Dateien. Der nächste Bewertungs Satz wird entsprechend der maximalen Anzahl von Dateien (bis zu 1.000 in einem einzelnen Satz) erstellt.
   
-Können Sie die Relevanz Empfehlungen akzeptieren oder den aktuellen Rand von Fehler entsprechend Ihren Anforderungen anpassen. Der aktuellen standardmäßigen Rand des Fehlers wird für den Wiederaufruf gleich mindestens 75 % bestimmt.
+Sie können die Relevanz-Empfehlungen akzeptieren oder den aktuellen Fehlerspielraum gemäß Ihren Anforderungen anpassen. Der standardmäßige aktuelle Fehler ist für den Rückruf bei gleich oder über 75% bestimmt.
   
 > [!NOTE]
-> Die Phase Assessment kann umgangen werden, in der **Relevanz \> nachverfolgen** Registerkarte in der erweiterten Ansicht für ein Problem, indem Sie das Kontrollkästchen **Assessment** pro Problem, und klicken Sie dann für "alle Probleme" deaktivieren. Dementsprechend, werden es jedoch keine Statistiken für dieses Problem. > Deaktivieren des Kontrollkästchens **Assessment** kann nur ausgeführt werden, bevor Assessment ausgeführt wird. In dem Fall mehrere Probleme vorhanden sind, wird zur Bewertung umgangen nur, wenn das Kontrollkästchen für jedes Problem deaktiviert ist 
+> Die Bewertungsstufe kann auf der Registerkarte ** \> Relevanz verfolgen** in der erweiterten Ansicht für ein Problem umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für alle Probleme deaktiviert wird. Daher gibt es für dieses Problem keine Statistiken. > das Kontrollkästchen **Bewertung** kann nur ausgeführt werden, bevor die Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Kategorien und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
+[Tagging und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Kategorien und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging-und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Nachverfolgen der Relevanz Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
+[Nachverfolgen der Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Entscheiden je nach den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Entscheiden basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testen der Relevanz Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
 

@@ -1,136 +1,136 @@
 ---
-title: Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center
+title: Verwenden des Explorers im Security &amp; Compliance Center
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection: M365-security-compliance
-description: Erfahren Sie mehr über Explorer (auch als Bedrohung Explorer bezeichnet) in das Wertpapier &amp; Compliance Center.
-ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Informationen zu Explorer (auch als Bedrohungs-Explorer bezeichnet) &amp; im Security Compliance Center.
+ms.openlocfilehash: 439a7d53e185e12ddd5d2e19b9d88bd8c9b47dad
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995116"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218985"
 ---
-# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Verwenden Sie in das Wertpapier Explorer &amp; Compliance Center
+# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Verwenden des Explorers im Security &amp; Compliance Center
 
-Wenn Ihre Organisation über [Office 365 Bedrohungsanalyse](office-365-ti.md)verfügt und Sie über die erforderlichen Berechtigungen verfügen, können Sie Explorer zum Identifizieren und Analysieren von Bedrohungen verwenden. Sie können beispielsweise identifizieren und Löschen von böswilligen e-Mail, die übermittelt wurde oder finden Sie unter Schadsoftware, die von Office 365-Sicherheitsfeatures abgefangen wurde. Explorer (auch als Bedrohung Explorer bezeichnet) ist ein leistungsfähiges nahezu in Echtzeit-Bericht in das Wertpapier &amp; Compliance Center.
+Wenn Ihre Organisation über [Office 365 Threat Intelligence](office-365-ti.md)verfügt und Sie über die erforderlichen Berechtigungen verfügen, können Sie mithilfe von Explorer Bedrohungen erkennen und analysieren. Sie können beispielsweise infizierte e-Mails identifizieren und löschen, die übermittelt wurden, oder Malware, die von den Office 365-Sicherheitsfeatures abgefangen wurde. Explorer (auch als Bedrohungs-Explorer bezeichnet) ist ein leistungsfähiger Near Real-Time- &amp; Bericht im Security Compliance Center.
   
-![Wechseln Sie zu Threat Management \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Wechseln Sie zu Threat \> Management Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-Mit Explorer in die Sicherheit &amp; Compliance Center, navigieren Sie zur **Bedrohung Management** \> **Explorer**.
+Um Explorer zu verwenden, wechseln Sie &amp; im Security Compliance Center zu **Threat Management** \> **Explorer**.
 
 > [!IMPORTANT]
-> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Beginnend im Februar 2019 und über die nächsten Monate hinaus wird Office 365 Threat Intelligence zu Office 365 Advanced Threat Protection Plan 2 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
-## <a name="explorer-overview"></a>Übersicht über Explorer
+## <a name="explorer-overview"></a>Übersicht über den Explorer
 
-Explorer zeigt Informationen zu verdächtige Schadsoftware in e-Mail-Dateien in Office 365, als auch Sicherheitsrisiken und andere Risiken für Ihre Organisation. Wenn Sie Explorer zum ersten Mal öffnen, zeigt die Standardansicht erkannte Schadsoftware aus antivirus für die letzten 7 Tage. Explorer kann auch anzeigen Security Features zum Schutz in Office 365, einschließlich [Sichere Links](atp-safe-links.md) und [Sichere Anlagen](atp-safe-attachments.md) und zum Anzeigen von Daten für den letzten 30 Tagen geändert werden kann.
+Der Explorer zeigt Informationen zu mutmaßlicher Schadsoftware in e-Mails und Dateien in Office 365 sowie andere Sicherheitsbedrohungen und-Risiken für Ihre Organisation an. Wenn Sie den Explorer zum ersten Mal öffnen, zeigt die Standardansicht Malware-Entdeckungen von Antivirensoftware für die letzten 7 Tage. Der Explorer kann auch Sicherheitsschutz Features in Office 365, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md) , anzeigen und so geändert werden, dass Daten für die letzten 30 Tage angezeigt werden.
   
-![Explorer zeigt Informationen über die wichtigste Schadsoftware und Zielgruppe](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
+![Explorer zeigt Informationen zu Top-Schadsoftware und zu den Ziel Benutzern](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
-Verwenden Sie im Menü Ansicht ändern, welche Informationen angezeigt werden.
+Verwenden Sie das Menü Ansicht, um zu ändern, welche Informationen angezeigt werden.
   
-![Für Explorer im Menü Ansicht](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
+![Das Menü "Ansicht" für Explorer](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-Explorer verfügt über mehrere filtern und Abfragefunktionen, die Sie in den Details der Drilldown erfolgen soll wie oben geplant, Benutzer und oberen Malware-Familien ermöglichen. Jede Art von Bericht bietet eine Vielzahl von Methoden zum Anzeigen und Erforschen von Daten.
+Der Explorer verfügt über mehrere Filter-und Abfragefunktionen, mit denen Sie Details wie die wichtigsten Zielbenutzer, die wichtigsten Schadsoftware-Familien und vieles mehr eingehen können. Jede Art von Bericht bietet eine Vielzahl von Möglichkeiten zum Anzeigen und Durchsuchen von Daten.
 
 > [!IMPORTANT]
-> Verwenden Sie Platzhalterzeichen, wie ein Sternchen (*) oder ein Fragezeichen (?), mit Explorer nicht. Wenn Sie im Feld Betreff für e-Mail-Nachrichten suchen, führt Explorer übereinstimmenden und Rendite Teilergebnisse eine Platzhaltersuche ähnelt.
+> Verwenden Sie keine Platzhalterzeichen wie ein Sternchen (*) oder ein Fragezeichen (?) mit Explorer. Wenn Sie im Feld Betreff für e-Mail-Nachrichten suchen, führt der Explorer eine partielle Übereinstimmung aus und liefert Ergebnisse, die der Platzhaltersuche ähneln.
 
-## <a name="email--malware"></a>E-Mail- \> Schadsoftware
+## <a name="email--malware"></a>E \> -Mail-Schadsoftware
 
-In dieser Ansicht werden e-Mail-Nachrichten, die als mit Malware identifiziert.  
+In dieser Ansicht werden e-Mail-Nachrichten mit Schadsoftware angezeigt.  
 
-Anzeigen von Informationen in das Diagramm durch Malware-Familie, Absenderdomäne, Absender-IP, Schutzstatus (Aktionen, die von den Features zum Schutz Bedrohung und Richtlinien in Office 365) und Erkennung-Technologie (wie die Schadsoftware erkannt wurde).  
+Anzeigen von Informationen im Diagramm anhand der Schadsoftware-Familie, der Absenderdomäne, der Absender-IP-Adresse, des Schutzstatus (Aktionen, die von ihren Threat Protection-Features und-Richtlinien in Office 365 ausgeführt wurden) und der Erkennungstechnologie (wie die Schadsoftware erkannt wurde).  
 
-![Anzeigen von Daten über erkannte Schadsoftware](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
+![Anzeigen von Daten zu erkannter Schadsoftware](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
 
-Unterhalb des Diagramms, Anzeigen von Details zu oberen Malware-Familien geplant Top-Benutzer und weitere Details zu bestimmten Nachrichten. 
+Sehen Sie sich unter dem Diagrammdetails zu den häufigsten Schadsoftware-Familien, die wichtigsten Zielbenutzer und weitere Details zu bestimmten Nachrichten an. 
 
-## <a name="email--phish"></a>E-Mail- \> Phishing
+## <a name="email--phish"></a>E \> -Mail-Phishing
 
-In dieser Ansicht werden e-Mail-Nachrichten, die als Phishing versucht identifiziert.  
+Diese Ansicht zeigt e-Mail-Nachrichten an, die als Phishing-Versuche identifiziert wurden.  
 
-Anzeigen von Informationen durch Absenderdomäne, Absender-IP und Schutzstatus (Aktionen, die von den Features zum Schutz Bedrohung und Richtlinien in Office 365). 
+Anzeigen von Informationen nach Absenderdomäne, Absender-IP und Schutzstatus (Aktionen, die von ihren Funktionen zum Schutz vor Bedrohungen in Office 365 ausgeführt werden). 
 
-![Anzeigen von Daten über e-Mail, die als Phishing-Versuche](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
+![Anzeigen von Daten über e-Mails, die als Phishing-Versuche identifiziert wurden](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
 
-Unterhalb des Diagramms können zeigen Sie weitere Details zu bestimmten Nachrichten an. 
+Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Nachrichten an. 
 
-## <a name="email--user-reported"></a>E-Mail- \> Benutzer gemeldet
+## <a name="email--user-reported"></a>E \> -Mail-Benutzer gemeldet
 
-In dieser Ansicht werden e-Mail, dass Benutzer als Junk, keine Junk-e- oder Phishing-e-Mail-gemeldet haben.  
+In dieser Ansicht werden e-Mails angezeigt, die von Benutzern als Junk-e-Mail oder Phishing-Nachricht gemeldet wurden.  
 
-Anzeigen von Informationen durch Berichtstyp (des Benutzers Bestimmung, dass die e-Mail-Nachricht Junk, keine Junk-e- oder Phishing war) sowie durch Übermittlung Grund (Gründe, warum e-Mail an einer bestimmten Position, wie eine Filterrichtlinie für Spam, eine e-Mail-Fluss-Regel, eine Liste der blockierten Absender, eine Liste sicherer Absender aufgetreten ist usw.).  
+Informationen nach Berichtstyp anzeigen (die Bestimmung des Benutzers, dass es sich bei der e-Mail um Junk-e-Mail, nicht um Junk oder Phishing handelt) und nach Zustellungs Grund (Gründe dafür, warum e-Mails an einen bestimmten Speicherort gesendet wurden, beispielsweise eine Spamfilter Richtlinie, eine Nachrichtenfluss Regel, eine Liste blockierter Absender, eine Liste sicherer Absender, usw.).  
 
-![Anzeigen von Daten über e-Mail-Benutzer als Junk, keine Junk-e- oder Phishing gemeldet](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
+![Anzeigen von Daten über e-Mail-Benutzer, die als Junk, nicht als Junk oder Phishing gemeldet wurden](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
 
-Unterhalb des Diagramms können zeigen Sie weitere Details zu bestimmten e-Mail-Nachrichten, wie die Betreffzeile, IP-Adresse des Absenders, der Benutzer, der die Nachricht als Junk-e-, nicht Junk, oder Phishing und mehr gemeldet an. 
+Zeigen Sie unterhalb des Diagramms weitere Details zu bestimmten e-Mail-Nachrichten wie Betreff, die IP-Adresse des Absenders, der Benutzer, der die Nachricht als Junk, nicht Junk oder Phishing gemeldet hat, und vieles mehr an. 
 
-## <a name="email--all-mail"></a>E-Mail- \> alle e-Mail-Nachrichten
+## <a name="email--all-mail"></a>Alle \> e-Mails senden
 
-Diese Ansichten zeigt eine alle-nach-oben-Ansicht der e-Mail-Aktivität, einschließlich e-Mail identifiziert wie böswilligen Fälligkeitsdatum Phishing oder Schadsoftware, sowie alle unbeabsichtigte Mail (normaler e-Mails, spam und Massen-Mail). 
+Diese Ansichten zeigen eine Übersicht über e-Mail-Aktivitäten, einschließlich e-Mails, die aufgrund von Phishing oder Schadsoftware als böswillig identifiziert wurden, sowie für alle nicht-böswilligen e-Mails (normale e-Mail, Spam und Massensendungen). 
 
 > [!NOTE]
-> Wenn Sie eine Fehlermeldung erhalten, die liest **zu viele Daten anzeigen**, fügen Sie einen Filter und einschränken den Datumsbereich, die Sie anzeigen möchten. 
+> Wenn Sie eine Fehlermeldung erhalten, die zu **viele anzuzeigende Daten**liest, fügen Sie einen Filter hinzu, und schränken Sie gegebenenfalls den angezeigten Datums Umfang ein. 
 
-Anwenden eines Filters, **Absender**auswählen, wählen Sie ein Element in der Liste, und klicken Sie dann auf die Schaltfläche Aktualisieren. In unserem Beispiel haben wir die **Erkennung Technologie** als Filter (stehen mehrere Optionen zur Verfügung) verwendet. Anzeigen von Informationen von Absender Domäne des Absenders Empfänger Betreff Dateiname der Anlage Malware-Familie Schutzstatus (Aktionen, die von den Features zum Schutz Bedrohung und Richtlinien in Office 365), Erkennung-Technologie (wie die Schadsoftware erkannt wurde) und Weitere. 
+Wenn Sie einen Filter anwenden möchten, wählen Sie **Absender**aus, wählen Sie ein Element in der Liste aus, und klicken Sie dann auf die Schaltfläche Aktualisieren. In unserem Beispiel wurde die **Erkennungstechnologie** als Filter verwendet (es stehen mehrere Optionen zur Verfügung). Anzeigen von Informationen nach Absender, Absenderdomäne, Empfänger, Betreff, Anlage Dateiname, Schadsoftware-Familie, Schutzstatus (Aktionen, die von ihren Threat Protection-Features und-Richtlinien in Office 365 ausgeführt werden), Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und mehr. 
 
-![Informationen zu erkannten e-Mail nach Erkennung Technologie-Daten anzeigen](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
+![Anzeigen von Daten zu erkannten e-Mails anhand der Erkennungstechnologie](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
-Unterhalb des Diagramms können zeigen Sie weitere Details zu bestimmten e-Mail-Nachrichten, wie die Betreffzeile, Empfänger, Absender, Status und usw. an. 
+Zeigen Sie unter dem Diagramm weitere Details zu bestimmten e-Mail-Nachrichten an, beispielsweise Betreff, Empfänger, Absender, Status usw. 
 
-## <a name="content--malware"></a>Content \> Schadsoftware
+## <a name="content--malware"></a>Inhalts \> -Schadsoftware
 
-In dieser Ansicht werden die Dateien, die als böswillige in SharePoint Online, OneDrive für Unternehmen und die Microsoft-Teams erkannt wurden.
+Diese Ansicht zeigt Dateien, die in SharePoint Online, OneDrive for Business und Microsoft Teams als schädlich identifiziert wurden.
 
-Anzeigen von Informationen nach Malware Familie Erkennung-Technologie (wie die Schadsoftware erkannt wurde), und die Arbeitslast (OneDrive, SharePoint oder Teams). 
+Anzeigen von Informationen nach Malwarefamilie, Erkennungstechnologie (wie die Malware erkannt wurde) und Arbeitslast (OneDrive, SharePoint oder Teams). 
 
-![Anzeigen von Daten über erkannte Schadsoftware](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
+![Anzeigen von Daten zu erkannter Schadsoftware](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
 
-Unterhalb des Diagramms zeigen Sie weitere Details zu bestimmten Dateien, beispielsweise Dateiname der Anlage, Arbeitslast, Dateigröße, der letzten der Datei und vieles mehr Änderung an. 
+Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Dateien an, beispielsweise Dateiname der Anlage, Arbeitsauslastung, Dateigröße, wer die Datei zuletzt geändert hat, und vieles mehr. 
   
-## <a name="new-click-to-filter-capabilities"></a>(Neu!) Klicken Sie auf Filterfunktionen
+## <a name="new-click-to-filter-capabilities"></a>(Neu!) Click-to-Filter-Funktionen
 
-Neue ist-Explorer die Möglichkeit, per Mausklick filtern. Seit Ende Mai 2018, wenn Sie ein Element in der Legende klicken, wird, dass das Element einen Filter für den Bericht an. Nehmen wir beispielsweise an, dass wir die Malware Ansicht im Explorer angezeigt werden:
+Neu in Explorer ist die Möglichkeit zum Filtern. Ab Ende Mai 2018 wird das Element, wenn Sie auf ein Element in der Legende klicken, zu einem Filter für den Bericht. Nehmen wir beispielsweise an, dass Sie die Malware Ansicht im Explorer betrachten:
   
-![Wechseln Sie zu Threat Management \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Wechseln Sie zu Threat \> Management Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-Klicken Sie dann auf **ATP Detonationsfestigkeit** in diesem Diagramm Ergebnisse in einer Ansicht wie folgt: 
+Wenn Sie in diesem Diagramm auf **ATP-Detonation** klicken, wird eine Ansicht wie die folgende angezeigt: 
   
-![Explorer gefiltert, sodass nur ATO Detonationsfestigkeit Ergebnisse angezeigt.](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer gefiltert, um nur die Ergebnisse der ATO-Detonation anzuzeigen](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
-In dieser Ansicht wird nun Daten für Dateien gesucht, die von [Office 365 ATP sichere Anlagen](atp-safe-attachments.md)detonated wurden. Unterhalb des Diagramms sehen wir Details zu bestimmten e-Mail-Nachrichten, die Anlagen, die vom ATP sichere Anlagen erkannt wurden.
+In dieser Ansicht betrachten wir nun Daten für Dateien, die von [Office 365 ATP Safe Attachments](atp-safe-attachments.md)gezündet wurden. Unter dem Diagramm können Details zu bestimmten e-Mail-Nachrichten mit Anlagen angezeigt werden, die von sicheren ATP-Anlagen erkannt wurden.
   
 ![Spezifische Details zu e-Mail-Nachrichten mit erkannten Anlagen](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
   
-Ein oder mehrere Elemente auswählen, wird im Menü **Aktionen** , das bietet mehrere Optionen für die ausgewählten Elemente auswählen aktiviert. 
+Durch Auswählen eines oder mehrerer Elemente wird das Menü " **Aktionen** " aktiviert, das verschiedene Auswahlmöglichkeiten für die ausgewählten Elemente bietet. 
   
-![Auswählen eines Elements aktiviert im Menü Aktionen](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+![Durch Auswählen eines Elements wird das Menü "Aktionen" aktiviert.](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
   
-Die Möglichkeit zum Filtern in einem Klick, und navigieren Sie zu speziellen Details können Sie viel Zeit in Untersuchen von Bedrohungen speichern.
+Die Möglichkeit, mit einem Klick zu filtern und zu bestimmten Details zu navigieren, kann Ihnen viel Zeit bei der Untersuchung von Bedrohungen ersparen.
   
-## <a name="how-do-i-get-explorer"></a>Wie erhalte ich Explorer?
+## <a name="how-do-i-get-explorer"></a>Wie erhalte ich einen Explorer?
 
-Explorer ist in [Office 365 Bedrohungsanalyse](office-365-ti.md)enthalten. 
+Explorer ist in der [Office 365 Threat Intelligence](office-365-ti.md)enthalten. 
 
-Sie benötigen die entsprechende Berechtigungen, wie einer Sicherheitsadministrator oder Sicherheit Leser, zum Anzeigen und Verwenden der Explorer erteilt. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Sie müssen über die entsprechenden Berechtigungen verfügen, beispielsweise solche, die einem Sicherheitsadministrator oder einem Sicherheits Leser erteilt wurden, um den Explorer anzuzeigen und zu verwenden. Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Berichte und Einblicke in die Office 365-Sicherheit &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Berichte und Einblicke im Office 365 &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde](investigate-malicious-email-that-was-delivered.md)
+[Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Intelligence)](investigate-malicious-email-that-was-delivered.md)
   
 [Antispam- und Antischadsoftwareschutz in Office 365](anti-spam-and-anti-malware-protection.md)
   

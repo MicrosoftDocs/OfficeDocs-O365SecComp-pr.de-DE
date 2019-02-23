@@ -1,127 +1,127 @@
 ---
-title: Übersicht über die Sicherheit-dashboard
+title: Übersicht über das Sicherheits Dashboard
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection: M365-security-compliance
-description: Verwenden Sie das neue Dashboard Sicherheit, um Office 365 Threat Protection Status überprüfen und anzeigen und Bearbeiten von Sicherheitswarnungen.
-ms.openlocfilehash: 403c47ed09e9652a66abeafb93be02589c9b1702
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Verwenden Sie das neue Sicherheits Dashboard, um den Status der BedrohungsSchutz in Office 365 zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
+ms.openlocfilehash: 7fcf570887e5ed720e2e62d627b442597b824e84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995126"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215174"
 ---
-# <a name="security-dashboard"></a>Sicherheits-Dashboard
+# <a name="security-dashboard"></a>Sicherheits Dashboard
 
 ## <a name="overview"></a>Übersicht
 
-Die [Sicherheit &amp; Compliance Center](go-to-the-securitycompliance-center.md) ermöglicht Ihrem Unternehmen zum Verwalten von Datenschutz und Compliance. Vorausgesetzt, dass Sie die erforderlichen Berechtigungen verfügen, können das Dashboard Sicherheit Sie Ihren Schutzstatus Bedrohung überprüfen als auch anzeigen und Bearbeiten von Sicherheitswarnungen. 
+Mit [dem &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) kann Ihre Organisation Datenschutz und-Compliance verwalten. Unter der Voraussetzung, dass Sie über die erforderlichen Berechtigungen verfügen, können Sie mithilfe des Sicherheits Dashboards den Status des BedrohungsSchutzes überprüfen und Sicherheitswarnungen anzeigen und bearbeiten. 
   
-Video ansehen, wenn Sie eine Übersicht über erhalten möchten, und Lesen Sie diesen Artikel, um mehr zu erfahren.
+Sehen Sie sich das Video an, um einen Überblick zu erhalten, und lesen Sie diesen Artikel, um mehr zu erfahren.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
   
-Je nachdem, welche Ihrer Organisation-Office 365-Abonnement umfasst, enthält das Dashboard Sicherheit mehrere Widgets, wie etwa Threat Management Zusammenfassung, Bedrohung Schutzstatus, globale wöchentliche Bedrohung erkannte, Malware und mehr, wie beschrieben in der folgenden Abschnitten.
+Je nach dem, was das Office 365-Abonnement Ihrer Organisation enthält, enthält das Sicherheits Dashboard mehrere Widgets, wie etwa die Zusammenfassung der Bedrohungs Verwaltung, den Status des BedrohungsSchutzes, globale wöchentliche Bedrohungs Erkennungsmethoden, Schadsoftware und vieles mehr, wie im Abschnitte.
   
-Zum Anzeigen des Dashboards Sicherheit in der [Sicherheit in Office 365 &amp; Compliance Center](go-to-the-securitycompliance-center.md), wechseln Sie zu **Verwaltung der Bedrohung** \> **Dashboard**.
+wechseln sie zum anzeigen des sicherheits dashboards im [Office 365 &amp; security Compliance Center](go-to-the-securitycompliance-center.md)zu **Threat management** \> **dashboard**.
   
 > [!NOTE]
-> Sie müssen ein globaler Office 365-Administrator, einen Sicherheitsadministrator oder ein Sicherheit Reader zum Anzeigen des Dashboards Sicherheit sein. Einige Widgets erfordern zusätzliche Berechtigungen zum Anzeigen. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Sie müssen ein globaler Office 365-Administrator, ein Sicherheitsadministrator oder ein Sicherheits-Lesegerät sein, um das Sicherheits Dashboard anzuzeigen. Einige Widgets erfordern zusätzliche Berechtigungen zum anzeigen. Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-## <a name="threat-management-summary"></a>Threat Management Zusammenfassung
+## <a name="threat-management-summary"></a>Zusammenfassung der Bedrohungs Verwaltung
 
-Das Widget Threat Management Zusammenfassung erfahren Sie auf einen Blick wie Ihre Organisation in den letzten sieben (7) Tagen vor Angriffen geschützt wurde.
+Das zusammenfassende Widget "Threat Management" informiert Sie auf einen Blick, wie Ihre Organisation vor Bedrohungen in den letzten sieben (7) Tagen geschützt wurde.
 
-![Sicherheits-Dashboard - Widget Threat Management Zusammenfassung](media/SecDash-ThreatMgmtSummary.png)
+![Sicherheits Dashboard-Widget "Zusammenfassung der Bedrohungs Verwaltung"](media/SecDash-ThreatMgmtSummary.png)
 
-Die Informationen, die Sie in der Zusammenfassung der Threat Management sehen werden, hängt davon ab, was Sie-Abonnement umfasst. In der folgenden Tabelle wird beschrieben, welche Informationen für Office 365 Enterprise E3 und Office 365 Enterprise E5 enthalten sind.
+Die Informationen, die Sie in der Zusammenfassung der Bedrohungs Verwaltung sehen, hängen davon ab, was Ihr Abonnement enthält. In der folgenden Tabelle wird beschrieben, welche Informationen für Office 365 Enterprise E3 und Office 365 Enterprise E5 enthalten sind.
 
 
 |Office 365 Enterprise E3  |Office 365 Enterprise E5  |
 |---------|---------|
-|Malware Nachrichten blockiert<br/>Blockiert Phishing-Nachrichten<br>Nachrichten, die vom Benutzer gemeldet wurde<br><br><br><br> |Malware Nachrichten blockiert<br>Blockiert Phishing-Nachrichten<br>Nachrichten, die vom Benutzer gemeldet wurde<br>Zero-Day-Schadsoftware blockiert<br>Erweiterte Phishingnachrichten erkannt<br>Schädliche URLs blockiert |
+|Blockierte Schadsoftware<br/>Blockierte Phishing-Nachrichten<br>Von Benutzern gemeldete Nachrichten<br><br><br><br> |Blockierte Schadsoftware<br>Blockierte Phishing-Nachrichten<br>Von Benutzern gemeldete Nachrichten<br>Blockierte Zero-Day-Schadsoftware<br>Erweiterte Phishing-Nachrichten erkannt<br>Blockierte bösartige URLs |
 
-Um anzuzeigen, oder das Widget Threat Management Zusammenfassung zuzugreifen, müssen Sie die Berechtigung zum Anzeigen der erweiterte Schutz-Berichte verfügen. Weitere Informationen finden Sie unter [Welche Berechtigungen erforderlich sind, um die ATP-Berichte anzeigen?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
+Zum Anzeigen oder zugreifen auf das zusammenfassende Widget für die Bedrohungs Verwaltung benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-## <a name="threat-protection-status"></a>Bedrohung Schutzstatus
+## <a name="threat-protection-status"></a>Status des BedrohungsSchutzes
 
-Das Widget Bedrohung Schutzstatus zeigt Threat Protection Effektivität eine Trend und detaillierte Ansicht der Phishing und Malware. 
+Das Widget Threat Protection Status zeigt die Effektivität des Schutz vor Bedrohungen mit einer Trend-und Detailansicht von Phishing und Schadsoftware. 
 
-![Threat Protection Status widget](media/tpswidget.png)
+![Widget "Threat Protection Status"](media/tpswidget.png)
 
-Die Details hängen davon ab, ob Ihr Office 365-Abonnement [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) mit oder ohne [Office 365 erweiterte Threat Protection](office-365-atp.md) (ATP) enthält.
+Die Details hängen davon ab, ob Ihr Office 365 [-Abonnement Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) mit oder ohne [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) enthält.
 
 
-|Wenn Ihr Abonnement enthält... |Sehen Sie diese details |
+|Wenn Ihr Abonnement enthält... |Diese Details werden angezeigt. |
 |---------|---------|
-|EOP jedoch nicht Office 365 ATP     |Böswillige e-Mail, die wurde erkannt und blockiert von EOP gefiltert werden<br> Finden Sie unter [Threat Protection Statusbericht (EOP)](view-email-security-reports.md#threat-protection-status-report).| |
-|Office 365 ATP |Bösartige Webinhalte und Schadsoftware e-Mails erkannt und von EOP und Office 365 ATP blockiert<br>Aggregierte Anzahl eindeutiger e-Mail-Nachrichten mit schädlichem Inhalt vom antischadsoftwaremodul, [0 (null)-Stunden automatisch löschen](zero-hour-auto-purge.md)und ATP-Funktionen (einschließlich [Sicherer Links](atp-safe-links.md), [Sichere Anlagen](atp-safe-attachments.md)und [ATP Phishing](atp-anti-phishing.md)) blockiert.<br>Finden Sie unter [Threat Protection Statusbericht (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
+|EOP, jedoch nicht Office 365 ATP     |Bösartige e-Mails, die von EOP erkannt und blockiert wurden<br> Siehe [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).| |
+|Office 365 ATP |Bösartige Inhalte und bösartige e-Mails, die von EOP und Office 365 ATP erkannt und blockiert wurden<br>Aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten, die vom Antischadsoftware-Modul blockiert wurden, [Zero-Hour-automatische Bereinigung](zero-hour-auto-purge.md)und ATP-Funktionen (einschließlich [sicherer Links](atp-safe-links.md), [sicherer Anlagen](atp-safe-attachments.md)und [ATP-Phishing](atp-anti-phishing.md)).<br>Siehe [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
-Um anzuzeigen, oder das Widget Bedrohung Schutzstatus zuzugreifen, müssen Sie die Berechtigung zum Anzeigen der erweiterte Schutz-Berichte verfügen. Weitere Informationen finden Sie unter [Welche Berechtigungen erforderlich sind, um die ATP-Berichte anzeigen?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
+Zum Anzeigen oder zugreifen auf das Widget Threat Protection Status benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-## <a name="global-weekly-threat-detections"></a>Globale wöchentliche Bedrohung erkannte
+## <a name="global-weekly-threat-detections"></a>Globale wöchentliche BedrohungsEntdeckungen
  
-Das Widget globale wöchentliche Bedrohung erkannte zeigt, wie viele Bedrohungen in e-Mail-Nachrichten in den letzten sieben (7) Tagen erkannt wurden.
+Das Widget "globale wöchentliche BedrohungsErkennungen" zeigt, wie viele Bedrohungen in e-Mail-Nachrichten in den letzten sieben (7) Tagen erkannt wurden.
 
-![Globale wöchentliche Bedrohung erkannte widget](media/globalweeklythreatdetections.png)
+![Widget "globale wöchentliche Bedrohungs Ermittlungen"](media/globalweeklythreatdetections.png)
 
-Die Metriken werden berechnet, wie in der folgenden Tabelle beschrieben:
+Die Metriken werden wie in der folgenden Tabelle beschrieben berechnet:
 
-|Metrik  |Wie berechnet  |
+|Metrik  |Berechnung  |
 |---------|---------|
-|Nachrichten, die gescannt |Anzahl der e-Mail-Nachrichten überprüft und der Anzahl von Empfängern |
-|Bedrohungen beendet  |Anzahl der e-Mail-Nachrichten, die als mit Malware und der Anzahl von Empfängern |
-|Von [ATP](office-365-atp.md) blockiert |Anzahl der e-Mail-Nachrichten, die durch die Anzahl von Empfängern multipliziert ATP blockiert |
-|Nach der Übermittlung entfernt |Anzahl der Nachrichten, die durch [null-Stunden automatisch löschen](zero-hour-auto-purge.md) und der Anzahl von Empfängern entfernt |
+|Gescannte Nachrichten |Anzahl der gescannten e-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger |
+|Bedrohungen gestoppt  |Anzahl der e-Mail-Nachrichten, die mit der Anzahl von Empfängern mit Schadsoftware multipliziert wurden |
+|Gesperrt von [ATP](office-365-atp.md) |Anzahl der von ATP blockierten e-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger |
+|Nach der Lieferung entfernt |Anzahl der Nachrichten, die von der [automatischen Bereinigung von Null Stunden](zero-hour-auto-purge.md) entfernt wurden, multipliziert mit der Anzahl der Empfänger |
 
 ## <a name="malware"></a>Schadsoftware
 
-Malware Widgets zeigt Details zu Malwaretrends und Malware-Produktfamilie Typen in den letzten sieben (7) Tagen.
+Malware-Widgets zeigen in den letzten sieben (7) Tagen Details zu Malware Trends und Schadsoftware-Familientypen.
 
-![Malwaretrends und Typen der Familien](media/malwarewidgetatpe5.png)
+![Malware Trends und Familientypen](media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>Einblicke
 
-Einblicke in die Oberfläche nicht nur wichtige Punkte, die Sie überprüfen sollten, dazu gehören auch Empfehlungen und Aktionen zu berücksichtigen sind. 
+EinBlicke nicht nur die wichtigsten Probleme, die Sie überprüfen sollten, Sie auch Empfehlungen und Maßnahmen zu berücksichtigen. 
 
-![Intelligente insights](media/smartinsights.png)
+![Intelligente Einblicke](media/smartinsights.png)
 
-Beispielsweise können Sie sehen, dass Phishing-e-Mail-Nachrichten gesendet werden, da einige Benutzer ihre Junk-e-Mail-Optionen deaktiviert haben. Erfahren Sie mehr über die Funktionsweise von Insights, finden Sie unter [Berichte und Einblicke in die Office 365-Sicherheit &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md).
+So können Sie beispielsweise feststellen, dass Phishing-e-Mails übermittelt werden, da einige Benutzer Ihre Junk-e-Mail-Optionen deaktiviert haben. Weitere Informationen zur Funktionsweise von Einblicken finden Sie unter [Berichte und Einblicke &amp; im Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
-## <a name="threat-intelligence"></a>Bedrohungsanalyse
+## <a name="threat-intelligence"></a>Bedrohungs Intelligenz
 
-Wenn Abonnement Ihrer Organisation [Threat Intelligence-Funktionen](office-365-ti.md)enthält, hat Ihr Dashboard Sicherheit einen **Bedrohungsanalyse** Abschnitt, erweiterte Tools. Security-Team Ihrer Organisation können die Informationen in diesem Abschnitt neue Kampagnen verstehen, untersuchen Bedrohungen und Verwalten von Vorfälle. 
+Wenn das Abonnement Ihrer Organisation [Bedrohungen Intelligence-Funktionen](office-365-ti.md)enthält, weist Ihr Sicherheits Dashboard einen Abschnitt " **Threat Intelligence** " auf, der erweiterte Tools enthält. Das Sicherheitsteam Ihrer Organisation kann die Informationen in diesem Abschnitt verwenden, um sich mit neuen Kampagnen vertraut zu machen, Bedrohungen zu untersuchen und Vorfälle zu verwalten. 
   
-![Bedrohungsanalyse hilft Ihnen das Verständnis von Ihrer Organisation in der Übergangsphase Angriffe](media/threatintelwidget.png)
+![Threat Intelligence hilft Ihnen bei der Veranschaulichung von Angriffen in Ihrer Organisation](media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>Trends
 
-Am unteren Rand des Dashboards Sicherheit ist ein Abschnitt **Trends** , der e-Mail-Fluss Trends für Ihre Organisation zusammenfasst. Berichte enthalten Informationen zu e-Mail als Spam, Malware, Phishing-Versuche und eine gute e-Mail kategorisiert. Klicken Sie auf eine Kachel, um ausführlichere Informationen im Bericht anzuzeigen. 
+Am unteren Rand des Sicherheits Dashboards befindet sich ein Abschnitt **Trends** , in dem die Trends für den e-Mail-Fluss für Ihre Organisation zusammengefasst werden. Berichte bieten Informationen zu e-Mails, die als Spam, Schadsoftware, Phishing-Versuche und gute e-Mails kategorisiert werden. Klicken Sie auf eine Kachel, um detailliertere Informationen im Bericht anzuzeigen. 
   
-![Im Abschnitt Trends Überblick über die e-Mail-Fluss Trends für die Organisation](media/trends.png)
+![Im Abschnitt Trends werden die Trends für den e-Mail-Fluss für die Organisation zusammengefasst.](media/trends.png)
   
-Und wenn Ihre Organisation Office 365-Abonnements [Threat Intelligence-Funktionen](office-365-ti.md)enthält, haben Sie einen Bericht **letzten Threat Management** in diesem Abschnitt, die zum Anzeigen und Ausführen einer Aktion auf Security Team ermöglicht Sicherheitshinweise mit hoher Priorität. 
+Und wenn das Office 365-Abonnement Ihrer Organisation [Threat Intelligence-Funktionen](office-365-ti.md)enthält, haben Sie auch einen **aktuellen Bericht über Warnmeldungen zur Gefahren Verwaltung** in diesem Abschnitt, der Ihrem Sicherheitsteam das Anzeigen und Ausführen von Aktionen ermöglicht. Sicherheitswarnungen mit hoher Priorität. 
 
-Um anzuzeigen, oder das Widget gesendete und empfangene E-Mails zugreifen, müssen Sie die Berechtigung zum Anzeigen der erweiterte Schutz-Berichte verfügen. Weitere Informationen finden Sie unter [Welche Berechtigungen erforderlich sind, um die ATP-Berichte anzeigen?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
+Zum Anzeigen oder zugreifen auf das gesendete und empfangene e-Mail-widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-Um anzuzeigen, oder das Widget Threat Management letzten zugreifen, benötigen Sie Berechtigungen zum Anzeigen von Warnungen. Finden Sie weitere Informationen finden Sie unter [RBAC-Berechtigungen erforderlich, um Warnungen anzuzeigen](alert-policies.md#rbac-permissions-required-to-view-alerts).
+Zum Anzeigen oder zugreifen auf das kürzlich veröffentlichte Widget "Threat Management Alerts" benötigen Sie Berechtigungen zum Anzeigen von Warnungen. Weitere Informationen finden Sie unter [RBAC Permissions Required to View Alerts](alert-policies.md#rbac-permissions-required-to-view-alerts).
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Anzeigen von e-Mail-Sicherheitsberichte in das Wertpapier &amp; Compliance Center](view-email-security-reports.md)
+[Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md)
   
-[Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
+[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

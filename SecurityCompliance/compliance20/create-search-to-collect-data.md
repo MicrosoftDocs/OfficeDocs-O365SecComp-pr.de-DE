@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 09af09c4a538bb43fed5fce044eb1be60c235aaa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706136"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212645"
 ---
 # <a name="create-a-search-to-collect-data"></a>Erstellen einer Suche zum Sammeln von Daten
 
-Auf der Registerkarte **Suchvorgänge** in Ihrem Fall können Sie eine neue Suche erstellen, indem Sie auf **neu zu suchen** , und folgen den Assistenten.
+Auf der Registerkarte **Suchvorgänge** in Ihrem Fall können Sie eine neue Suche erstellen, indem Sie auf **neue Suche** klicken und den Assistenten ausführen.
 
-## <a name="name-your-search-and-give-description"></a>Nennen Sie die Suche, und weisen Sie Beschreibung
+## <a name="name-your-search-and-give-description"></a>Benennen Sie Ihre Suche, und geben Sie eine Beschreibung
 
-Jeder Suche mit Fall sollte einen eindeutigen Namen besitzen. Optional können Sie eine Beschreibung für die Suche angeben. 
+Jede Suche mit einem Fall sollte einen eindeutigen Namen haben. Optional können Sie eine Beschreibung für Ihre Suche bereitstellen. 
 
 ## <a name="define-your-conditions"></a>Definieren der Bedingungen
 
-Sie können die Bedingungen für die Suche über die vordefinierte Bedingung Karten oder mithilfe von Keyword Query Language (KQL) definieren. Weitere Informationen finden Sie unter [Erstellen von Suchabfragen](building-search-queries.md).
+Sie können die Bedingungen für Ihre Suche mithilfe der vordefinierten Bedingungs Karten oder mithilfe von Keyword Query Language (KQL) definieren. Weitere Informationen finden Sie unter [Erstellen von Suchabfragen](building-search-queries.md).
 
-## <a name="choose-the-custodians-to-search-from"></a>Wählen Sie die Verwalter für die Suche
+## <a name="choose-the-custodians-to-search-from"></a>Wählen Sie die zu suchenden Verwalter aus.
 
-Nachdem Sie Ihre Bedingungen definiert haben, müssen Sie welche Standorte wählen Sie durchsuchen möchten. Eine Möglichkeit, dies ist durch angeben, welche Verwalter die Groß-/Kleinschreibung bereits hinzugefügt haben, die Sie suchen möchten. Indem Sie ein Verwaltungsberechtigter auswählen, führen Sie die Suche für alle Datenquellen, die der Verwaltungsberechtigte zugeordnet sind. Weitere Informationen zum Verwalter für diesen Fall hinzufügen und Verwalten von deren Datenquellen finden Sie unter [Arbeiten mit Verwalter](managing-custodians.md) .
+Nachdem Sie Ihre Bedingungen definiert haben, müssen Sie auswählen, welche Standorte Sie durchsuchen möchten. Eine Möglichkeit besteht darin, die Verwalter anzugeben, die Sie bereits zu dem Fall hinzugefügt haben, den Sie durchsuchen möchten. Durch Auswählen einer Depotbank führen Sie die Suche für alle Datenquellen aus, die der Depotbank zugeordnet sind. Weitere Informationen dazu, wie Sie Verwalter zu Ihrem Fall hinzufügen und Ihre Datenquellen verwalten, finden Sie unter [work with custodys](managing-custodians.md) .
 
-## <a name="choose-non-custodial-locations"></a>Wählen Sie-freiheitsentziehenden Speicherorte
+## <a name="choose-non-custodial-locations"></a>Wählen Sie Standorte ohne Freiheitsentzug aus.
 
-In einigen Fällen können Sie Datenquellen suchen, die ein Verwaltungsberechtigter nicht zugeordnet sind. In diesem Fall können Sie die Speicherorte angeben, den, die Sie suchen, oder wählen alle Speicherorte für Inhalte für einen bestimmten Office 365-Dienst (beispielsweise Durchsuchen aller Exchange-Postfächer oder alle SharePoint und OneDrive for Business-Websites) suchen möchten.
+In einigen Fällen möchten Sie möglicherweise Datenquellen durchsuchen, die keinem Verwalter zugeordnet sind. In diesem Fall können Sie die Speicherorte angeben, die Sie durchsuchen möchten, oder alle inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (beispielsweisedurch Suchen aller Exchange-Postfächer oder aller SharePoint-und OneDrive für Business-Websites).

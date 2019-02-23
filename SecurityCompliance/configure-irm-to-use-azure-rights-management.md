@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von IRM für die Verwendung von Azure Rights Management
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15
+ms.collection:
+- M365-security-compliance
 description: Mit der Veröffentlichung der neuen Funktionen für Office 365-Nachrichtenverschlüsselung (OME) müssen Sie IRM nicht mehr separat einrichten. Das Einrichten neuer Bereitstellungen mithilfe von älteren Versionen von OME und IRM mit Azure Rights Management wird von Microsoft nicht empfohlen. Weitere Informationen über die neuen OME-Funktionen finden Sie in den Häufig gestellten Fragen zur Office 365-Nachrichtenverschlüsselung. Wenn Sie die neuen OME-Funktionen in Ihrer Organisation verwenden möchten, finden Sie unter Einrichten von neuen Funktionen für die Office 365-Nachrichtenverschlüsselung, die auf Azure Information Protection aufbauen weitere Informationen dazu.
-ms.openlocfilehash: bf49f2950e179e2805bde6cc4c02f4d6e533a301
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 131543e835f4b74e5f9238f67ca19857da1100a1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003234"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212865"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Konfigurieren von IRM für die Verwendung von Azure Rights Management
 

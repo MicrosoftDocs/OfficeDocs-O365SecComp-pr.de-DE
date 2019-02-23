@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 68931eb3c6c653677d4cc09e48b451df2b78d17e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706126"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214765"
 ---
 # <a name="themes"></a>Designs
 
-Wenn jemand ein Dokument verfasst, führen Sie diese Wörter nicht nach dem Zufallsprinzip ausgewählt; Sie versuchen, einige Ideen oder Konzepte zu vermitteln, und die Wörter entsprechend ausgewählt sind. Designs-Module-Cluster Dokumente, die ähnliche Themen beschreiben, damit Bearbeiter in durchgehen Dokumente besser geeignet sein können.
+Wenn ein Benutzer ein Dokument verfasst, wählen Sie Wörter nicht willkürlich aus; Sie versuchen, einige Ideen oder Konzepte zu vermitteln, und die Wörter werden dementsprechend ausgewählt. Designs-Module Clustern Dokumente, die ähnliche Themen behandeln, sodass Prüfer effizienter werden können, um Dokumente zu durchlaufen.
 
-## <a name="how-does-themes-work"></a>Funktionsweise von Designs
-Designs Analyse von Dokumenten mit Text in einem Arbeitssatz, allgemeine Designs zu analysieren, die in Dokumenten angezeigt werden. Klicken Sie dann, weist sie diese Designs die Dokumente an, in denen sie angezeigt werden. Es Etiketten mit Wörter, die in den Dokumenten, die Vertreter des Designs verwendet. Da ein Dokument über mehrere Fachbereichen sein kann, hat ein Dokument in vielen Fällen mehrere Designs zugewiesen. Das Design, das am häufigsten hervorgehoben in einem Dokument angezeigt wird, wird als dessen dominanten Design festgelegt.
+## <a name="how-does-themes-work"></a>Wie funktionieren Designs?
+Designs analysiert Dokumente mit Text in einem Arbeitssatz, um allgemeine Designs zu analysieren, die in den Dokumenten angezeigt werden. Dann werden diese Designs den Dokumenten zugewiesen, in denen Sie angezeigt werden. Außerdem werden alle Wörter mit Wörtern in den Dokumenten gekennzeichnet, die für das Design repräsentativ sind. Da es sich bei einem Dokument um mehr als einen Gegenstand handeln kann, ist in vielen Fällen einem Dokument mehr als ein Design zugewiesen. Das Design, das am deutlichsten in einem Dokument angezeigt wird, wird als dominierendes Design festgelegt.

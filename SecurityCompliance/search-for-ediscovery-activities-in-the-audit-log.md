@@ -1,187 +1,187 @@
 ---
-title: Suchen Sie nach eDiscovery-Aktivitäten im Überwachungsprotokoll Office 365
+title: Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Erfahren Sie, wie das Überwachungsprotokoll Office 365 für Ereignisse zu suchen, die protokolliert werden, wenn Administratoren Compliance Inhaltssuche und eDiscovery Groß-/Kleinschreibung in das Wertpapier Aufgaben &amp; Compliance Center.
-ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+description: Erfahren Sie, wie Sie im Office 365-Überwachungsprotokoll nach Ereignissen suchen, die protokolliert werden, wenn Kompatibilitäts Administratoren Inhaltssuche und eDiscovery Case &amp; -Aufgaben im Security Compliance Center ausführen.
+ms.openlocfilehash: 1e364e1d82acb7ad72c4a6d3fb27421a9a89916c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698031"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220895"
 ---
-# <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Suchen Sie nach eDiscovery-Aktivitäten im Überwachungsprotokoll Office 365
+# <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll
 
-Content-Suche und eDiscovery-bezogene Aktivitäten, die in Office 365-Sicherheit ausgeführt werden &amp; Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets im Überwachungsprotokoll Office 365 angemeldet sind. Ereignisse protokolliert, wenn Administratoren oder Compliance-Administratoren (oder jedes Benutzers, der eDiscovery-zugewiesenen Berechtigungen wird) den folgenden Inhaltssuche und Aufgaben im Zusammenhang mit eDiscovery in die Office 365-Sicherheit ausführen &amp; Compliance Center:
+Inhaltssuche und eDiscovery-bezogene Aktivitäten, die im Office 365 Security &amp; Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets ausgeführt werden, werden im Office 365-Überwachungsprotokoll protokolliert. Ereignisse werden protokolliert, wenn Administratoren oder Compliance-Administratoren (oder alle Benutzer, denen eDiscovery-Berechtigungen zugewiesen sind) die folgenden Aufgaben im Zusammenhang mit Inhaltssuche und eDiscovery &amp; im Office 365 Security Compliance Center ausführen:
   
 - Erstellen und Verwalten von eDiscovery-Fällen
     
-- Erstellen, starten und Bearbeiten von Content-Suche
+- Erstellen, starten und Bearbeiten von Inhalts suchen
     
-- Ausführen Inhaltssuche Aktionen, beispielsweise das Anzeigen einer Vorschau, führt zu ausführenden und Löschen von Suche
+- Ausführen von Inhalts Suchaktionen wie Vorschau, exportieren und Löschen von Suchergebnissen
     
-- Konfigurieren von Berechtigungen für die Inhaltssuche filtern
+- Konfigurieren der Filterung von Berechtigungen für die Inhaltssuche
     
-- Verwalten von eDiscovery-Administratorrolle
+- Verwalten der eDiscovery-Administrator Rolle
     
 > [!IMPORTANT]
-> In diesem Artikel beschriebenen Aktivitäten sind das Ergebnis der eDiscovery-Aufgaben mithilfe der Sicherheits &amp; Compliance Center. eDiscovery-Aufgaben, die mithilfe des Compliance-eDiscovery-Tools in Exchange Online oder das eDiscovery Center in SharePoint Online ausgeführt wurden, werden nicht berücksichtigt. 
+> Die in diesem Artikel beschriebenen Aktivitäten sind nur das Ergebnis von eDiscovery-Aufgaben, die mithilfe des &amp; Security Compliance Centers ausgeführt wurden. eDiscovery-Aufgaben, die mit dem in-Place-eDiscovery-Tool in Exchange Online oder dem eDiscovery Center in SharePoint Online ausgeführt wurden, sind nicht enthalten. 
   
-Weitere Informationen zur Suche des Office 365-Überwachungsprotokolls die Berechtigungen, die erforderlich sind, und Exportieren von Suchergebnissen finden Sie unter [Suchen Sie das Überwachungsprotokoll in die Office 365-Sicherheit &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Weitere Informationen zum Durchsuchen des Office 365-Überwachungsprotokolls, zu den erforderlichen Berechtigungen und zum Exportieren der Suchergebnisse finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office &amp; 365 Security Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
-## <a name="how-to-search-for-and-view-ediscovery-activities"></a>Suchen nach und eDiscovery-Aktivitäten anzeigen
+## <a name="how-to-search-for-and-view-ediscovery-activities"></a>Suchen und Anzeigen von eDiscovery-Aktivitäten
 
-Aktuell, müssen Sie einige bestimmte Aufgaben zum Anzeigen von eDiscovery-Aktivitäten in das Überwachungsprotokoll Office 365. Hier ist wie.
+Derzeit müssen Sie einige spezifische Schritte ausführen, um eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll anzuzeigen. So wird es gemacht.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich auf **Suche &amp; Untersuchung**, und klicken Sie auf **Audit Log suchen**.
+3. Klicken Sie im linken Bereich auf **Such &amp; Prüfung**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
     
-4. Klicken Sie in der Dropdownliste **Aktivitäten** unter **eDiscovery Aktivitäten**, auf eine oder mehrere Aktivitäten zu suchenden. Oder Sie können auf **eDiscovery Aktivitäten** aus, die für alle Aktivitäten im Zusammenhang mit eDiscovery suchen. 
+4. Klicken Sie in der Dropdownliste **Aktivitäten** unter **eDiscovery-Aktivitäten**auf eine oder mehrere Aktivitäten, nach denen gesucht werden soll. Sie können auch auf **eDiscovery-Aktivitäten** klicken, um nach allen eDiscovery-bezogenen Aktivitäten zu suchen. 
     
     > [!NOTE]
-    > Die Aktivitäten Dropdown Liste enthält auch eine Gruppe von Aktivitäten, die mit dem Namen **eDiscovery-Cmdlet Aktivitäten** , mit denen Datensätze aus dem Überwachungsprotokoll Cmdlet zurückgegeben wird. 
+    > Die Dropdownliste Aktivitäten enthält auch eine Gruppe von Aktivitäten namens EDiscovery- **Cmdlet-Aktivitäten** , die Datensätze aus dem Cmdlet-Überwachungsprotokoll zurückgeben. 
   
-5.  Wählen Sie einen Datum und Uhrzeit Bereich eDiscovery Ereignisse angezeigt, die innerhalb dieses Zeitraums aufgetreten sind. 
+5.  Wählen Sie einen Datums-und Uhrzeitbereich aus, um eDiscovery-Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. 
     
-6. Wählen Sie im Feld **Benutzer** einen oder mehrere Benutzer Anzeige von Suchergebnissen für ein. Lassen Sie dieses Feld leer, Zurückgeben von Einträgen für alle Benutzer. 
+6. Wählen Sie im Feld **Benutzer** einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. Lassen Sie dieses Feld leer, um Einträge für alle Benutzer zurückzugeben. 
     
-7. Klicken Sie auf **Suche** zum Ausführen der Suche mit den Suchkriterien. 
+7. Klicken Sie auf **Suchen** , um die Suche mit Ihren Suchkriterien auszuführen. 
     
-8. Nachdem die Suchergebnisse angezeigt werden, können Sie **Filterergebnisse** filtern oder sortieren die resultierende Aktivitätsdatensätze klicken. Leider können Sie filtern explizit Ausschließen bestimmter Aktivitäten. 
+8. Nachdem die Suchergebnisse angezeigt wurden, können Sie auf **Ergebnisse filtern** klicken, um die resultierenden Aktivitätsdatensätze zu filtern oder zu sortieren. Sie können die Filterung nicht verwenden, um bestimmte Aktivitäten explizit auszuschließen. 
     
-9. Um Details zu einer Aktivität anzeigen möchten, klicken Sie auf den Datensatz in der Liste der Suchergebnisse. 
+9. Zum Anzeigen von Details zu einer Aktivität klicken Sie in der Liste der Suchergebnisse auf den Aktivitätsdatensatz. 
     
-    **Details** Ausfliegen Seite wird angezeigt, die die detaillierten Eigenschaften aus dem Ereignisdatensatz enthält. Um weitere Details anzuzeigen, klicken Sie auf **Weitere Informationen**. Eine Beschreibung dieser Eigenschaften finden Sie im Abschnitt [Detailangaben zu den Eigenschaften für eDiscovery-Aktivitäten](#detailed-properties-for-ediscovery-activities) . 
+    Es wird eine Seite mit **Details** fliegen angezeigt, die die detaillierten Eigenschaften aus dem Ereignisdatensatz enthält. Klicken Sie auf **Weitere Informationen**, um zusätzliche Details anzuzeigen. Eine Beschreibung dieser Eigenschaften finden Sie im Abschnitt [detaillierte Eigenschaften für eDiscovery-Aktivitäten](#detailed-properties-for-ediscovery-activities) . 
 
   
 ## <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
 
-Die folgende Tabelle beschreibt die Inhaltssuche und eDiscovery-bezogene Aktivitäten, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität führt mithilfe der Sicherheits &amp; Compliance Center oder durch Ausführen des entsprechenden Cmdlets Remote-PowerShell, die Sicherheit Ihrer Organisation verbunden ist &amp; Compliance Center. 
+In der folgenden Tabelle werden die Inhaltssuche und eDiscovery-bezogenen Aktivitäten beschrieben, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine eDiscovery-bezogene Aktivität &amp; mithilfe des Security Compliance Centers ausführt oder das entsprechende Cmdlet in Remote-PowerShell, die mit dem Security &amp; Compliance Center Ihrer Organisation verbunden ist. 
   
 > [!NOTE]
-> In diesem Abschnitt beschriebenen eDiscovery Aktivitäten bieten ähnliche Informationen wie die eDiscovery-Cmdlet-Aktivitäten im nächsten Abschnitt beschrieben. Es wird empfohlen, dass Sie verwenden die eDiscovery-Aktivitäten, die in diesem Abschnitt beschrieben werden, da sie in den Suchergebnissen für Audit Log innerhalb von 30 Minuten angezeigt werden. Es dauert bis zu 24 Stunden für den eDiscovery Cmdlet Aktivitäten aus, die in Audit Log-Suchergebnissen angezeigt werden. 
+> Die in diesem Abschnitt beschriebenen eDiscovery-Aktivitäten enthalten ähnliche Informationen zu den im nächsten Abschnitt beschriebenen eDiscovery-Cmdlet-Aktivitäten. Es wird empfohlen, die in diesem Abschnitt beschriebenen eDiscovery-Aktivitäten zu verwenden, da Sie innerhalb von 30 Minuten in den Suchergebnissen des Überwachungsprotokolls angezeigt werden. Es dauert bis zu 24 Stunden, bis die eDiscovery-Cmdlet-Aktivitäten in den Überwachungsprotokoll-Suchergebnissen angezeigt werden. 
   
-|**Anzeigename**|**Operation**|**Entsprechende cmdlet**|**Beschreibung**|
+|**Anzeigename**|**Operation**|**Entsprechendes Cmdlet**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|Element zu eDiscovery-Fall hinzugefügt  <br/> |CaseMemberAdded  <br/> |Hinzufügen von ComplianceCaseMember  <br/> |Ein Benutzer wurde als Mitglied einer eDiscovery-Fall hinzugefügt. Als Mitglied der Fall kann ein Benutzer verschiedene Aufgaben im Zusammenhang mit Groß-/Kleinschreibung je nachdem, ob sie die erforderlichen Berechtigungen zugewiesen wurden, ausführen.  <br/> |
-|Geänderte Inhaltssuche  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Eine vorhandene Inhalte Suche wurde geändert. Hinzufügen oder Entfernen von Speicherorte für Inhalte oder bearbeiten die Suchabfrage, können Änderungen enthalten.  <br/> |
-|Mitgliedschaft in der Administratorgruppe geänderten eDiscovery  <br/> |CaseAdminUpdated  <br/> |Update-eDiscoveryCaseAdmin  <br/> |Die Liste der eDiscovery-Administratoren in Ihrer Organisation wurde geändert. Diese Aktivität wird protokolliert, wenn die Liste der eDiscovery-Administratoren mit einer Gruppe von neuen Benutzern ersetzt wird. Wenn ein einzelner Benutzer hinzugefügt oder entfernt wird, wird der Vorgang CaseAdminAdded protokolliert.  <br/> |
-|Geänderte eDiscovery-Fall  <br/> |CaseUpdated  <br/> |Set-ComplianceCase  <br/> |EDiscovery-Fall wurde geändert. Änderungen enthalten Schließen einer offenen Anfrage oder eine geschlossene Anfrage erneut öffnen.  <br/> |
-|Groß-/Kleinschreibung geänderten eDiscovery-Mitgliedschaft  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |Liste der Mitglieder einer eDiscovery-Fall wurde geändert. Wenn alle Mitglieder einer Gruppe von neuen Benutzern ersetzt werden, wird diese Aktivität protokolliert. Wenn ein einzelnes Element hinzugefügt oder entfernt wird, wird die CaseMemberAdded oder CaseMemberRemoved Vorgang protokolliert.  <br/> |
-|Suchfilter Berechtigungen geändert  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Suchfilter Berechtigungen wurde geändert.  <br/> |
-|Geänderte Suchabfrage für eDiscovery Groß-/Kleinschreibung Haltestatus  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Eine abfragebasierte Aufbewahrung, eDiscovery-Fall zugeordnet wurde geändert. Mögliche Änderungen gehören das Bearbeiten der Abfrage, oder halten Sie Datumsbereich für eine Abfrage basiert.  <br/> |
-|Inhaltssuche Preview Element heruntergeladen  <br/> |PreviewItemDownloaded  <br/> |n. v.  <br/> |Ein Benutzer heruntergeladen ein Element auf ihrem lokalen Computer (durch Klicken auf den Link **herunterladen Originalelement** ) beim Anzeigen einer Vorschau der Suchergebnisse.  <br/> |
-|Inhaltssuche Preview Element aufgelistet.  <br/> |PreviewItemListed  <br/> |n. v.  <br/> |Ein Benutzer geklickt **Vorschau der Suchergebnisse** zum Anzeigen der Vorschau Suchergebnisseite, der bis zu 1000 Elemente aus den Ergebnissen einer Inhaltssuche aufgeführt sind.  <br/> |
-|Inhaltssuche Preview Element angezeigt.  <br/> |PreviewItemRendered  <br/> |n. v.  <br/> |Ein eDiscovery-Manager angezeigt ein Elements durch Klicken auf beim Anzeigen der Vorschau der Suchergebnisse.  <br/> |
-|Erstellte Inhaltssuche  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Eine neue Inhaltssuche erstellt wurde.  <br/> |
-|Erstellte eDiscovery-administrator  <br/> |CaseAdminAdded  <br/> |Hinzufügen von eDiscoveryCaseAdmin  <br/> |Ein Benutzer wurde als einer eDiscovery-Administrator in der Organisation hinzugefügt.  <br/> |
-|Erstellte eDiscovery-Fall  <br/> |CaseAdded  <br/> |Neue ComplianceCase  <br/> |EDiscovery-Fall erstellt wurde. Wenn eine Anfrage erstellt wurde, müssen Sie nur einen Namen zu geben. Andere Case-bezogene Aufgaben wie das Hinzufügen von Mitgliedern, Haltestatus erstellen und Erstellen von Suchen in zusätzliche Ereignisse protokolliert wird die Groß-/Kleinschreibung Ergebnis zugeordnet.  <br/> |
-|Suchfilter Berechtigungen erstellt  <br/> |SearchPermissionCreated  <br/> |Neue ComplianceSecurityFilter  <br/> |Suchfilter Berechtigungen erstellt wurde.  <br/> |
-|Erstellte Suchabfrage für eDiscovery Groß-/Kleinschreibung Haltestatus  <br/> |HoldCreated  <br/> |Neue CaseHoldRule  <br/> |Eine abfragebasierte Aufbewahrung, eDiscovery-Fall zugeordnet wurde erstellt.  <br/> |
+|Mitglied zu eDiscovery-Fall HinzugeFügt  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Ein Benutzer wurde als Mitglied eines eDiscovery-Falls hinzugefügt. Als Mitglied eines Falls kann ein Benutzer verschiedene fallbezogene Aufgaben ausführen, je nachdem, ob ihm die erforderlichen Berechtigungen zugewiesen wurden.  <br/> |
+|Geänderte Inhaltssuche  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Eine vorhandene Inhaltssuche wurde geändert. Zu den Änderungen gehört das Hinzufügen oder Entfernen von Inhaltsspeicherorten oder das Bearbeiten der Suchabfrage.  <br/> |
+|Geänderte eDiscovery-Administrator Mitgliedschaft  <br/> |CaseAdminUpdated  <br/> |Update-eDiscoveryCaseAdmin  <br/> |Die Liste der eDiscovery-Administratoren in Ihrer Organisation wurde geändert. Diese Aktivität wird protokolliert, wenn die Liste der eDiscovery-Administratoren durch eine Gruppe neuer Benutzer ersetzt wird. Wenn ein einzelner Benutzer hinzugefügt oder entfernt wird, wird der CaseAdminAdded-Vorgang protokolliert.  <br/> |
+|Geänderter eDiscovery-Fall  <br/> |CaseUpdated  <br/> |Set-ComplianceCase  <br/> |Ein eDiscovery-Fall wurde geändert. Zu den Änderungen gehört das Schließen eines geöffneten Falls oder das erneute Öffnen eines geschlossenen Falls.  <br/> |
+|Geänderte eDiscovery-Fall Mitgliedschaft  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |Die Mitgliedschaftsliste eines eDiscovery-Falls wurde geändert. Diese Aktivität wird protokolliert, wenn alle Mitglieder durch eine Gruppe neuer Benutzer ersetzt werden. Wenn ein einzelnes Element hinzugefügt oder entfernt wird, wird CaseMemberAdded-oder CaseMemberRemoved-Vorgang protokolliert.  <br/> |
+|Filter für geänderte Suchberechtigungen  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Ein Filter für Suchberechtigungen wurde geändert.  <br/> |
+|Geänderte Suchabfrage für eDiscovery Case Hold  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Eine abfragebasierte Aufbewahrung, die einem eDiscovery-Fall zugeordnet ist, wurde geändert. Zu den möglichen Änderungen gehört das Bearbeiten der Abfrage oder des Datumsbereichs für eine abfragebasierte Aufbewahrung.  <br/> |
+|Inhaltssuche-Vorschau Element heruntergeladen  <br/> |PreviewItemDownloaded  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat ein Element auf seinen lokalen Computer heruntergeladen (durch Klicken auf den Link zum **herunterladen des ursprünglichen Elements** ), wenn die Vorschau der Suchergebnisse angezeigt wird.  <br/> |
+|Element der Inhaltssuche (Vorschau)  <br/> |PreviewItemListed  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat auf **Vorschau der Such** Ergebnisse geklickt, um die Seite Vorschau der Suchergebnisse anzuzeigen, in der bis zu 1000 Elemente aus den Ergebnissen einer Inhaltssuche aufgelistet werden.  <br/> |
+|Vorschau Element der Inhaltssuche angezeigt  <br/> |PreviewItemRendered  <br/> |Nicht zutreffend  <br/> |Ein eDiscovery-Manager hat ein Element durch Klicken bei der Vorschau der Suchergebnisse angezeigt.  <br/> |
+|Erstellte Inhaltssuche  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Es wurde eine neue Inhaltssuche erstellt.  <br/> |
+|Erstellter eDiscovery-Administrator  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Ein Benutzer wurde als eDiscovery-Administrator in der Organisation hinzugefügt.  <br/> |
+|Erstellter eDiscovery-Fall  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Ein eDiscovery-Fall wurde erstellt. Wenn ein Fall erstellt wird, müssen Sie ihm nur einen Namen geben. Weitere fallbezogene Aufgaben wie das Hinzufügen von Elementen, das Erstellen von Haltebereichen und das Erstellen von Inhalts suchen, die mit dem Fall verbunden sind, führen dazu, dass zusätzliche Ereignisse protokolliert werden.  <br/> |
+|Filter für erstellte Suchberechtigungen  <br/> |SearchPermissionCreated  <br/> |New-ComplianceSecurityFilter  <br/> |Ein Filter für Suchberechtigungen wurde erstellt.  <br/> |
+|Erstellte Suchabfrage für eDiscovery Case Hold  <br/> |HoldCreated  <br/> |New-CaseHoldRule  <br/> |Es wurde eine abfragebasierte Aufbewahrungszeit erstellt, die einem eDiscovery-Fall zugeordnet ist.  <br/> |
 |Gelöschte Inhaltssuche  <br/> |SearchRemoved  <br/> |Remove-ComplianceSearch  <br/> |Eine vorhandene Inhaltssuche wurde gelöscht.  <br/> |
-|Gelöschte eDiscovery-administrator  <br/> |CaseAdminRemoved  <br/> |Remove-eDiscoveryCaseAdmin  <br/> |Eine eDiscovery-Administrator wurde aus Ihrer Organisation gelöscht.  <br/> |
-|Gelöschte eDiscovery-Fall  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |EDiscovery-Fall wurde gelöscht. Beachten Sie, dass eine Sperre die Groß-/Kleinschreibung zugeordnet, entfernt werden soll, bevor die Groß-/Kleinschreibung gelöscht werden kann.  <br/> |
-|Gelöschte Berechtigungen Suchfilter  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Suchfilter Berechtigungen wurde gelöscht.  <br/> |
-|Gelöschte Suchabfrage für eDiscovery Groß-/Kleinschreibung Haltestatus  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Eine abfragebasierte Aufbewahrung, eDiscovery-Fall zugeordnet wurde gelöscht. Entfernen der Abfrage aus dem Haltestatus ist häufig das Ergebnis des Löschens von eines Haltestatus. Wenn einem Haltestatus oder eine Abfrage Haltestatus gelöscht werden, werden die Speicherorte für Inhalte, die in der Warteschleife waren freigegeben.  <br/> |
-|Heruntergeladenen Export von Inhaltssuche  <br/> |SearchExportDownloaded  <br/> |n. v.  <br/> |Ein Benutzer heruntergeladen die Ergebnisse einer Suche Content auf ihrem lokalen Computer. Beachten Sie, dass eine Aktivität **gestartet Exportieren der Inhaltssuche** initiiert werden, bevor die Suchergebnisse heruntergeladen werden können.<br/> |
-|Als Vorschau angezeigte Ergebnisse der Inhaltssuche  <br/> |SearchPreviewed  <br/> |n. v.  <br/> |Ein Benutzer eine Vorschau der Ergebnisse einer Suche Content.  <br/> |
-|Zeitfenster Ergebnisse der Inhaltssuche  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer gelöscht die Ergebnisse einer Inhaltssuche durch Ausführen der **New-ComplianceSearchAction-bereinigen** Befehl.  <br/> |
-|Entfernte Analyse der Inhaltssuche  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche vorbereiten Aktion (zum Vorbereiten der Suchergebnisse für Office 365 erweiterte eDiscovery) wurde gelöscht. Wenn die Aktion zur Vorbereitung auf weniger als zwei Wochen war, wurden die Suchergebnisse, die für erweiterte eDiscovery vorbereitet wurden aus dem Bereich der Microsoft Azure-Speicher gelöscht. Wenn die Aktion Vorbereitung älter als zwei Wochen wurde, gibt dieses Ereignis, dass nur die entsprechende Aktion Vorbereitung gelöscht wurde.  <br/> |
-|Entfernte Export von Inhaltssuche  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche Export-Aktion wurde gelöscht. Wenn die Export-Aktion weniger als zwei Wochen war, wurden die Suchergebnisse, die für die Microsoft Azure Storage Area hochgeladen wurden gelöscht. Wenn die Export-Aktion älter als zwei Wochen wurde, gibt dieses Ereignis, dass nur die entsprechende Aktion Export gelöscht wurde.  <br/> |
-|Entfernte Member von eDiscovery-Fall  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Ein Benutzer wurde als Mitglied einer eDiscovery-Fall entfernt.  <br/> |
-|Entfernt Vorschau der Ergebnisse von Inhaltssuche  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche Preview Aktion wurde gelöscht.  <br/> |
-|Entfernte Purge-Aktion für die Inhaltssuche  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Bei der Aktion ein Inhaltssuche wurde gelöscht.  <br/> |
-|Entfernt Suchbericht  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche exportieren Bericht, dass Aktion gelöscht wurde.  <br/> |
-|Schritte Analyse der Inhaltssuche  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Die Ergebnisse einer Inhaltssuche wurden für die Analyse in erweiterten eDiscovery vorbereitet.  <br/> |
-|Schritte Inhaltssuche  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Eine Inhaltssuche wurde gestartet. Beim Erstellen oder Ändern einer Inhaltssuche mithilfe der Sicherheits &amp; Compliance Center GUI, für die Suche wird automatisch gestartet. Wenn Sie erstellen oder ändern eine Suche mithilfe des **New-ComplianceSearch** oder **Set-ComplianceSearch** -Cmdlet, müssen Sie das Cmdlet **Start-ComplianceSearch** zum Starten der Suche auszuführen.<br/> |
-|Schritte beim Export von Inhaltssuche  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer exportiert die Ergebnisse einer Suche Content.  <br/> |
-|Schritte beim Exportbericht  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer exportiert einen Inhaltssuche-Bericht.  <br/> |
-|Beendet die Inhaltssuche  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Ein Benutzer hat eine Inhaltssuche beendet.  <br/> |
+|Gelöschter eDiscovery-Administrator  <br/> |CaseAdminRemoved  <br/> |Remove-eDiscoveryCaseAdmin  <br/> |Ein eDiscovery-Administrator wurde aus Ihrer Organisation gelöscht.  <br/> |
+|Gelöschter eDiscovery-Fall  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Ein eDiscovery-Fall wurde gelöscht. Beachten Sie, dass jeder mit der Anfrage verknüpfte Aufbewahrungsbereich entfernt werden muss, bevor der Fall gelöscht werden kann.  <br/> |
+|Filter für gelöschte Suchberechtigungen  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Ein Filter für Suchberechtigungen wurde gelöscht.  <br/> |
+|Gelöschte Suchabfrage für eDiscovery Case Hold  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Ein abfragebasierter Speicher, der einem eDiscovery-Fall zugeordnet ist, wurde gelöscht. Das Entfernen der Abfrage aus dem Haltebereich ist häufig das Ergebnis des Löschens eines haltebereichs. Wenn ein Hold-oder eine Hold-Abfrage gelöscht wird, werden die in der Warteschleife befindlichen inhaltsspeicherorte freigegeben.  <br/> |
+|HeruntergeLadener Export der Inhaltssuche  <br/> |SearchExportDownloaded  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche auf den lokalen Computer heruntergeladen. Beachten Sie, dass ein **gestarteter Export der Inhaltssuche** initiiert werden muss, bevor Suchergebnisse heruntergeladen werden können.<br/> |
+|Vorschau der Ergebnisse der Inhaltssuche  <br/> |SearchPreviewed  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat eine Vorschau der Ergebnisse einer Inhaltssuche angezeigt.  <br/> |
+|Bereinigte Ergebnisse der Inhaltssuche  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche gelöscht, indem er den Befehl **New-ComplianceSearchAction-Purge** ausführt.  <br/> |
+|Analyse der Inhaltssuche entfernt  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche Prepare-Aktion (zur Vorbereitung der Suchergebnisse für Office 365 Advanced eDiscovery) wurde gelöscht. Wenn die Vorbereitungs Aktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die für Advanced eDiscovery vorbereitet wurden, aus dem Microsoft Azure-Speicherbereich gelöscht. Wenn die Vorbereitungs Aktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Vorbereitungs Aktion gelöscht wurde.  <br/> |
+|Export der Inhaltssuche entfernt  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Exportaktion für Inhaltssuche wurde gelöscht. Wenn die Exportaktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die in den Microsoft Azure-Speicherbereich hochgeladen wurden, gelöscht. Wenn die Exportaktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Exportaktion gelöscht wurde.  <br/> |
+|Entferntes Element aus eDiscovery-Fall  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Ein Benutzer wurde als Mitglied eines eDiscovery-Falls entfernt.  <br/> |
+|Vorschau Ergebnisse der Inhaltssuche entfernt  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Vorschau Aktion der Inhaltssuche wurde gelöscht.  <br/> |
+|Entfernen der Aufräumaktion für die Inhaltssuche  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche-Löschaktion wurde gelöscht.  <br/> |
+|Suchbericht entfernt  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |Die Aktion Exportbericht für Inhaltssuche wurde gelöscht.  <br/> |
+|Analyse der Inhaltssuche gestartet  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Die Ergebnisse einer Inhaltssuche wurden für die Analyse in Advanced eDiscovery vorbereitet.  <br/> |
+|Inhaltssuche gestartet  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Eine Inhaltssuche wurde gestartet. Wenn Sie eine Inhaltssuche mithilfe der Security &amp; Compliance Center-Benutzeroberfläche erstellen oder ändern, wird die Suche automatisch gestartet. Wenn Sie eine Suche mithilfe des Cmdlets **New-ComplianceSearch** oder **Set-ComplianceSearch** erstellen oder ändern, müssen Sie das Cmdlet **Start-ComplianceSearch** ausführen, um die Suche zu starten.<br/> |
+|Export der Inhaltssuche gestartet  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche exportiert.  <br/> |
+|Exportbericht gestartet  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat einen Inhalts Suchbericht exportiert.  <br/> |
+|Angehaltene Inhaltssuche  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Ein Benutzer hat eine Inhaltssuche angehalten.  <br/> |
   
-## <a name="ediscovery-cmdlet-activities"></a>eDiscovery-Cmdlet Aktivitäten
+## <a name="ediscovery-cmdlet-activities"></a>eDiscovery-Cmdlet-Aktivitäten
 
-Die folgende Tabelle enthält die Cmdlet-Überwachungsprotokolldatensätze, die protokolliert werden, wenn ein Administrator oder Benutzer eine eDiscovery-bezogene Aktivität führt mithilfe der Sicherheits &amp; Compliance Center oder durch Ausführen des entsprechenden Cmdlets in remote-PowerShell, die den verbunden mit Sicherheit Ihrer Organisation &amp; Compliance Center. Beachten Sie, dass die detaillierte Informationen in den Protokolleintrag Audit für die in dieser Tabelle aufgeführten Cmdlets Aktivitäten und die eDiscovery-Aktivitäten, die im vorherigen Abschnitt beschrieben ist. 
+In der folgenden Tabelle sind die Cmdlet-Überwachungsprotokolldatensätze aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine eDiscovery- &amp; bezogene Aktivität mithilfe des Security Compliance Centers oder durch Ausführen des entsprechenden Cmdlets in der Remote-PowerShell ausführt, die mit dem Security &amp; Compliance Center Ihrer Organisation verbunden. Beachten Sie, dass die detaillierten Informationen im Überwachungsprotokoll für die in dieser Tabelle aufgeführten Cmdlet-Aktivitäten und die im vorherigen Abschnitt beschriebenen eDiscovery-Aktivitäten unterschiedlich sind. 
   
-Wie bereits zuvor erwähnt dauert bis zu 24 Stunden für eDiscovery Cmdlet Aktivitäten aus, die in den Suchergebnissen für Audit Log angezeigt werden.
+Wie bereits erwähnt, dauert es bis zu 24 Stunden, bis die eDiscovery-Cmdlet-Aktivitäten in den Suchergebnissen des Überwachungsprotokolls angezeigt werden.
   
 > [!TIP]
-> Die Cmdlets in der Spalte **Vorgang** in der folgenden Tabelle sind zum entsprechenden Cmdlet Hilfethema auf TechNet-Website verknüpft. Wechseln Sie zum Cmdlet Hilfethema eine Beschreibung der verfügbaren Parameter für jedes-Cmdlet. Der Parameter und der Wert des Parameters, die mit einem-Cmdlet verwendet wurden sind in der Überwachungsprotokolleintrag für jede eDiscovery-Cmdlet-Aktivität enthalten, die angemeldet ist. 
+> Die Cmdlets in der Spalte **Vorgang** in der folgenden Tabelle sind mit dem entsprechenden Cmdlet-Hilfethema auf TechNet verknüpft. Eine Beschreibung der verfügbaren Parameter für die einzelnen Cmdlets finden Sie im Hilfethema zum Cmdlet. Der Parameter und der Parameterwert, die mit einem Cmdlet verwendet wurden, sind im Überwachungsprotokolleintrag für jede zu protokollierende eDiscovery-Cmdlet-Aktivität enthalten. 
   
-|**Anzeigename**|**Vorgang (Cmdlet)**|**Beschreibung**|
+|**Anzeigename**|**Operation (Cmdlet)**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Erstellte Haltestatus in eDiscovery-Fall  <br/> |[Neue CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |Ein Haltestatus wurde für einen eDiscovery-Fall erstellt. Ein Haltestatus kann mit oder ohne Angabe einer Inhaltsquelle erstellt werden. Inhaltsquellen angegeben, werden sie in der Überwachungsprotokolleintrag identifiziert werden.  <br/> |
-|Gelöschte halten von eDiscovery-Fall  <br/> |[Remove-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |Ein Haltestatus, der einem eDiscovery-Fall zugeordnet ist, wurde gelöscht. Löschen von einem Haltestatus gibt alle die Speicherorte für Inhalte aus dem Haltestatus frei. Löschen den Haltestatus auch führt zu löschen der Groß-/Kleinschreibung Hold-Regeln, die dem Haltebereich zugeordnet (siehe **Remove-CaseHoldRule** unten).<br/> |
-|Geänderte Haltestatus in eDiscovery-Fall  <br/> |[Set-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823815) <br/> |Ein Haltestatus, der ein eDiscovery zugeordnet ist, wurde geändert. Mögliche Änderungen enthalten, hinzufügen oder Entfernen von Speicherorte für Inhalte oder ausschalten (deaktivieren) den Haltebereich.  <br/> |
-|Erstellte Suchabfrage für eDiscovery Groß-/Kleinschreibung Haltestatus  <br/> |[Neue CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823816) <br/> |Eine abfragebasierte Aufbewahrung, eDiscovery-Fall zugeordnet wurde erstellt.  <br/> |
-|Gelöschte Suchabfrage für eDiscovery Groß-/Kleinschreibung Haltestatus  <br/> |[Remove-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823820) <br/> |Eine abfragebasierte Aufbewahrung, eDiscovery-Fall zugeordnet wurde gelöscht. Entfernen der Abfrage aus dem Haltestatus ist häufig das Ergebnis des Löschens von eines Haltestatus. Wenn einem Haltestatus oder eine Abfrage Haltestatus gelöscht werden, werden die Speicherorte für Inhalte, die in der Warteschleife waren freigegeben.  <br/> |
-|Geänderte Suchabfrage für eDiscovery Groß-/Kleinschreibung Haltestatus  <br/> |[Set-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823819) <br/> |Eine abfragebasierte Aufbewahrung, eDiscovery-Fall zugeordnet wurde geändert. Mögliche Änderungen gehören das Bearbeiten der Abfrage, oder halten Sie Datumsbereich für eine Abfrage basiert.  <br/> |
-|Erstellte eDiscovery-Fall  <br/> |[Neue ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823842) <br/> |EDiscovery-Fall erstellt wurde. Wenn eine Anfrage erstellt wurde, müssen Sie nur einen Namen zu geben. Andere Case-bezogene Aufgaben wie das Hinzufügen von Mitgliedern, Haltestatus erstellen und Erstellen von Suchen in zusätzliche Ereignisse protokolliert wird die Groß-/Kleinschreibung Ergebnis zugeordnet.  <br/> |
-|Gelöschte eDiscovery-Fall  <br/> |[Remove-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823844) <br/> |EDiscovery-Fall wurde gelöscht. Beachten Sie, dass eine Sperre die Groß-/Kleinschreibung zugeordnet, entfernt werden soll, bevor die Groß-/Kleinschreibung gelöscht werden kann.  <br/> |
-|Geänderte eDiscovery-Fall  <br/> |[Set-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823846) <br/> |EDiscovery-Fall wurde geändert. Änderungen enthalten Schließen einer offenen Anfrage oder eine geschlossene Anfrage erneut öffnen.  <br/> |
-|Element zu eDiscovery-Fall hinzugefügt  <br/> |[Hinzufügen von ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823848) <br/> |Ein Benutzer wurde als Mitglied einer eDiscovery-Fall hinzugefügt. Als Mitglied der Fall kann ein Benutzer verschiedene Aufgaben im Zusammenhang mit Groß-/Kleinschreibung je nachdem, ob sie die erforderlichen Berechtigungen zugewiesen wurden, ausführen.  <br/> |
-|Entfernte Member von eDiscovery-Fall  <br/> |[Remove-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823849) <br/> |Ein Benutzer wurde als Mitglied einer eDiscovery-Fall entfernt.  <br/> |
-|Groß-/Kleinschreibung geänderten eDiscovery-Mitgliedschaft  <br/> |[Update-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823850) <br/> |Liste der Mitglieder einer eDiscovery-Fall wurde geändert. Wenn alle Mitglieder einer Gruppe von neuen Benutzern ersetzt werden, wird diese Aktivität protokolliert. Wenn ein einzelnes Element hinzugefügt oder entfernt wird, wird der Vorgang **Hinzufügen ComplianceCaseMember** oder **Remove-ComplianceCaseMember** protokolliert.<br/> |
-|Erstellte Inhaltssuche  <br/> |[New-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517935) <br/> |Eine neue Inhaltssuche erstellt wurde.  <br/> |
+|Erstellter Speicher im eDiscovery-Fall  <br/> |[New-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |Für einen eDiscovery-Fall wurde ein Speicher erstellt. Ein Haltebereich kann mit oder ohne Angabe einer Inhaltsquelle erstellt werden. Wenn Inhaltsquellen angegeben werden, werden Sie im Überwachungsprotokolleintrag identifiziert.  <br/> |
+|Aufbewahrungszeit aus eDiscovery-Fall gelöscht  <br/> |[Remove-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |Ein mit einem eDiscovery-Fall verknüpfter Speicher wurde gelöscht. Durch das Löschen eines Haltestatus werden alle inhaltsspeicherorte aus dem Haltebereich freigegeben. Durch das Löschen des haltebereichs werden auch die mit dem Haltebereich verknüpften Case Hold-Regeln gelöscht (siehe **Remove-CaseHoldRule** unten).<br/> |
+|Haltestatus in eDiscovery-Fall geändert  <br/> |[Set-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823815) <br/> |Ein mit einer eDiscovery verknüpfter Haltebereich wurde geändert. Zu den möglichen Änderungen gehört das Hinzufügen oder Entfernen von Inhaltsspeicherorten oder das Deaktivieren des haltebereichs.  <br/> |
+|Erstellte Suchabfrage für eDiscovery Case Hold  <br/> |[New-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823816) <br/> |Es wurde eine abfragebasierte Aufbewahrungszeit erstellt, die einem eDiscovery-Fall zugeordnet ist.  <br/> |
+|Gelöschte Suchabfrage für eDiscovery Case Hold  <br/> |[Remove-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823820) <br/> |Ein abfragebasierter Speicher, der einem eDiscovery-Fall zugeordnet ist, wurde gelöscht. Das Entfernen der Abfrage aus dem Haltebereich ist häufig das Ergebnis des Löschens eines haltebereichs. Wenn ein Hold-oder eine Hold-Abfrage gelöscht wird, werden die in der Warteschleife befindlichen inhaltsspeicherorte freigegeben.  <br/> |
+|Geänderte Suchabfrage für eDiscovery Case Hold  <br/> |[Set-CaseHoldRule](https://go.microsoft.com/fwlink/p/?LinkId=823819) <br/> |Eine abfragebasierte Aufbewahrung, die einem eDiscovery-Fall zugeordnet ist, wurde geändert. Zu den möglichen Änderungen gehört das Bearbeiten der Abfrage oder des Datumsbereichs für eine abfragebasierte Aufbewahrung.  <br/> |
+|Erstellter eDiscovery-Fall  <br/> |[New-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823842) <br/> |Ein eDiscovery-Fall wurde erstellt. Wenn ein Fall erstellt wird, müssen Sie ihm nur einen Namen geben. Weitere fallbezogene Aufgaben wie das Hinzufügen von Elementen, das Erstellen von Haltebereichen und das Erstellen von Inhalts suchen, die mit dem Fall verbunden sind, führen dazu, dass zusätzliche Ereignisse protokolliert werden.  <br/> |
+|Gelöschter eDiscovery-Fall  <br/> |[Remove-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823844) <br/> |Ein eDiscovery-Fall wurde gelöscht. Beachten Sie, dass jeder mit der Anfrage verknüpfte Aufbewahrungsbereich entfernt werden muss, bevor der Fall gelöscht werden kann.  <br/> |
+|Geänderter eDiscovery-Fall  <br/> |[Set-ComplianceCase](https://go.microsoft.com/fwlink/p/?LinkId=823846) <br/> |Ein eDiscovery-Fall wurde geändert. Zu den Änderungen gehört das Schließen eines geöffneten Falls oder das erneute Öffnen eines geschlossenen Falls.  <br/> |
+|Mitglied zu eDiscovery-Fall HinzugeFügt  <br/> |[Add-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823848) <br/> |Ein Benutzer wurde als Mitglied eines eDiscovery-Falls hinzugefügt. Als Mitglied eines Falls kann ein Benutzer verschiedene fallbezogene Aufgaben ausführen, je nachdem, ob ihm die erforderlichen Berechtigungen zugewiesen wurden.  <br/> |
+|Entferntes Element aus eDiscovery-Fall  <br/> |[Remove-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823849) <br/> |Ein Benutzer wurde als Mitglied eines eDiscovery-Falls entfernt.  <br/> |
+|Geänderte eDiscovery-Fall Mitgliedschaft  <br/> |[Update-ComplianceCaseMember](https://go.microsoft.com/fwlink/p/?LinkId=823850) <br/> |Die Mitgliedschaftsliste eines eDiscovery-Falls wurde geändert. Diese Aktivität wird protokolliert, wenn alle Mitglieder durch eine Gruppe neuer Benutzer ersetzt werden. Wenn ein einzelnes Element hinzugefügt oder entfernt wird, wird der Vorgang **Add-ComplianceCaseMember** oder **Remove-ComplianceCaseMember** protokolliert.<br/> |
+|Erstellte Inhaltssuche  <br/> |[New-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517935) <br/> |Es wurde eine neue Inhaltssuche erstellt.  <br/> |
 |Gelöschte Inhaltssuche  <br/> |[Remove-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517936) <br/> |Eine vorhandene Inhaltssuche wurde gelöscht.  <br/> |
-|Geänderte Inhaltssuche  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |Eine vorhandene Inhalte Suche wurde geändert. Hinzufügen oder Entfernen von Speicherorte für Inhalte, die durchsucht werden und bearbeiten die Suchabfrage, können Änderungen enthalten.  <br/> |
-|Schritte Inhaltssuche  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |Eine Inhaltssuche wurde gestartet. Beim Erstellen oder Ändern einer Inhaltssuche mithilfe der Sicherheits &amp; Compliance Center GUI, für die Suche wird automatisch gestartet. Wenn Sie erstellen oder ändern eine Suche mithilfe des **New-ComplianceSearch** oder **Set-ComplianceSearch** -Cmdlet, müssen Sie das Cmdlet **Start-ComplianceSearch** zum Starten der Suche auszuführen.<br/> |
-|Beendet die Inhaltssuche  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |Eine Inhaltssuche, der ausgeführt wurde, wurde beendet.  <br/> |
-|Inhaltssuche-Aktion erstellt  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |Eine Inhaltssuche-Aktion erstellt wurde. Inhaltssuche zählen Vorschau der Suchergebnisse, Suchergebnisse exportieren, Vorbereiten der Suchergebnisse für die Analyse in Office 365 erweiterte eDiscovery und Elemente, die die Suchkriterien ein Inhaltssuche endgültig gelöscht werden.  <br/> |
-|Gelöschte Inhaltssuche-Aktion  <br/> |[Remove-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |Eine Aktion Inhaltssuche wurde gelöscht.  <br/> |
-|Suchfilter Berechtigungen erstellt  <br/> |[Neue ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |Suchfilter Berechtigungen erstellt wurde.  <br/> |
-|Gelöschte Berechtigungen Suchfilter  <br/> |[Remove-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617543) <br/> |Suchfilter Berechtigungen wurde gelöscht.  <br/> |
-|Suchfilter Berechtigungen geändert  <br/> |[Set-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617544) <br/> |Suchfilter Berechtigungen wurde geändert.  <br/> |
-|Erstellte eDiscovery-administrator  <br/> |[Hinzufügen von eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=798217) <br/> |Ein Benutzer wurde als einer eDiscovery-Administrator in Ihrer Organisation hinzugefügt.  <br/> |
-|Gelöschte eDiscovery-administrator  <br/> |[Remove-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823945) <br/> |Eine eDiscovery-Administrator wurde aus Ihrer Organisation gelöscht.  <br/> |
-|Mitgliedschaft in der Administratorgruppe geänderten eDiscovery  <br/> |[Update-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823946) <br/> |Die Liste der eDiscovery-Administratoren in Ihrer Organisation wurde geändert. Diese Aktivität wird protokolliert, wenn die Liste der eDiscovery-Administratoren mit einer Gruppe von neuen Benutzern ersetzt wird. Wenn ein einzelner Benutzer hinzugefügt oder entfernt wird, wird der Vorgang **Hinzufügen eDiscoveryCaseAdmin** oder **Remove-eDiscoveryCaseAdmin** protokolliert.<br/> |
+|Geänderte Inhaltssuche  <br/> |[Set-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517937) <br/> |Eine vorhandene Inhaltssuche wurde geändert. Zu den Änderungen zählen das Hinzufügen oder Entfernen von Inhaltsspeicherorten, die durchsucht werden, und das Bearbeiten der Suchabfrage.  <br/> |
+|Inhaltssuche gestartet  <br/> |[Start-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517938) <br/> |Eine Inhaltssuche wurde gestartet. Wenn Sie eine Inhaltssuche mithilfe der Security &amp; Compliance Center-Benutzeroberfläche erstellen oder ändern, wird die Suche automatisch gestartet. Wenn Sie eine Suche mithilfe des Cmdlets **New-ComplianceSearch** oder **Set-ComplianceSearch** erstellen oder ändern, müssen Sie das Cmdlet **Start-ComplianceSearch** ausführen, um die Suche zu starten.<br/> |
+|Angehaltene Inhaltssuche  <br/> |[Stop-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517939) <br/> |Eine Inhaltssuche wurde beendet.  <br/> |
+|Erstellte Inhalts Suchaktion  <br/> |[New-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=527971) <br/> |Eine Inhalts Suchaktion wurde erstellt. Zu den Aktionen für die Inhaltssuche gehört das Anzeigen einer Vorschau der Suchergebnisse, das Exportieren der Suchergebnisse, das Vorbereiten der Suchergebnisse für die Analyse in Office 365 Advanced eDiscovery und das dauerhafte Löschen von Elementen, die den Suchkriterien einer Inhaltssuche entsprechen.  <br/> |
+|Gelöschte Inhaltssuche (Aktion)  <br/> |[Remove-ComplianceSearchAction](https://go.microsoft.com/fwlink/p/?LinkId=824027) <br/> |Eine Inhalts Suchaktion wurde gelöscht.  <br/> |
+|Filter für erstellte Suchberechtigungen  <br/> |[New-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617542) <br/> |Ein Filter für Suchberechtigungen wurde erstellt.  <br/> |
+|Filter für gelöschte Suchberechtigungen  <br/> |[Remove-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617543) <br/> |Ein Filter für Suchberechtigungen wurde gelöscht.  <br/> |
+|Filter für geänderte Suchberechtigungen  <br/> |[Set-ComplianceSecurityFilter](https://go.microsoft.com/fwlink/p/?LinkId=617544) <br/> |Ein Filter für Suchberechtigungen wurde geändert.  <br/> |
+|Erstellter eDiscovery-Administrator  <br/> |[Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=798217) <br/> |Ein Benutzer wurde als eDiscovery-Administrator in Ihrer Organisation hinzugefügt.  <br/> |
+|Gelöschter eDiscovery-Administrator  <br/> |[Remove-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823945) <br/> |Ein eDiscovery-Administrator wurde aus Ihrer Organisation gelöscht.  <br/> |
+|Geänderte eDiscovery-Administrator Mitgliedschaft  <br/> |[Update-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkId=823946) <br/> |Die Liste der eDiscovery-Administratoren in Ihrer Organisation wurde geändert. Diese Aktivität wird protokolliert, wenn die Liste der eDiscovery-Administratoren durch eine Gruppe neuer Benutzer ersetzt wird. Wenn ein einzelner Benutzer hinzugefügt oder entfernt wird, wird der Vorgang **Add-eDiscoveryCaseAdmin** oder **Remove-eDiscoveryCaseAdmin** protokolliert.<br/> |
    
-## <a name="detailed-properties-for-ediscovery-activities"></a>Detailangaben zu den Eigenschaften für eDiscovery-Aktivitäten
+## <a name="detailed-properties-for-ediscovery-activities"></a>Detaillierte Eigenschaften für eDiscovery-Aktivitäten
 
-Die folgende Tabelle beschreibt die Eigenschaften, die eingebunden werden, wenn Sie **Weitere Informationen** auf der Seite **Details** für eine eDiscovery-Aktivität in den Suchergebnissen aufgeführt. Diese Eigenschaften sind auch in der CSV-Datei enthalten, wenn Sie die Ergebnisse der Audit Log exportieren. Beachten Sie, dass ein Audit Log-Eintrag für eine eDiscovery-Aktivität für jede unten aufgeführten detaillierte Eigenschaft wird nicht. 
+In der folgenden Tabelle werden die Eigenschaften beschrieben, die enthalten sind, wenn Sie auf der Seite **Details** auf **Weitere Informationen** für eine eDiscovery-Aktivität klicken, die in den Suchergebnissen aufgeführt ist. Diese Eigenschaften sind auch in der CSV-Datei enthalten, wenn Sie die Suchergebnisse des Überwachungsprotokolls exportieren. Beachten Sie, dass ein Überwachungsprotokolleintrag für eine eDiscovery-Aktivität nicht alle unten aufgeführten detaillierten Eigenschaften enthalten kann. 
   
 > [!TIP]
-> Wenn Sie die Suchergebnisse exportieren, enthält die CSV-Datei eine Spalte mit dem Namen **Detail**, das detaillierten Eigenschaften beschrieben, die in der folgenden Tabelle in eine mehrwertige Eigenschaft enthält. Sie können die Abfrage Power-Funktion in Excel verwenden, mehrere Spalten in dieser Spalte aufgeteilt werden, damit jede Eigenschaft eine eigenen Spalte verwendet werden. Dadurch können Sie sortieren und Filtern für ein oder mehrere dieser Eigenschaften. Weitere Informationen finden Sie im Abschnitt "Die Suchergebnisse in eine Datei exportieren" bei der [Suche der Überwachungsprotokolle melden Sie sich bei der Office 365-Sicherheit und Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file). 
+> Wenn Sie die Suchergebnisse exportieren, enthält die CSV-Datei eine Spalte mit dem Namen **Detail**, die die in der folgenden Tabelle beschriebenen detaillierten Eigenschaften in einer mehrwertigen Eigenschaft enthält. Sie können die Power Query-Funktion in Excel verwenden, um diese Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft eine eigene Spalte hat. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und filtern. Weitere Informationen finden Sie im Abschnitt "Exportieren der Suchergebnisse in eine Datei" unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security _AMP_ Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file). 
   
 |**Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|Fall  <br/> |Die Identität (GUID) des eDiscovery-Fall, die erstellt, geändert oder gelöscht wurde.  <br/> |
-|ClientApplication  <br/> |eDiscovery-Cmdlet Aktivitäten verwendet einen Wert von **EMC** für diese Eigenschaft. Dies gibt an, die Aktivität ausgeführt wurde, mithilfe der Sicherheits &amp; Compliance Center GUI oder das Cmdlet in PowerShell ausführen.<br/> |
-|ClientIP  <br/> |Die IP-Adresse des Geräts, das verwendet wurde, wenn die Aktivität protokolliert wurde. Die IP-Adresse wird in ein IPv4 oder IPv6-Adressformat angezeigt.  <br/> |
-|ClientRequestId  <br/> | Diese Eigenschaft ist für eDiscovery-Aktivitäten in der Regel leer.  <br/> |
-|CmdletVersion  <br/> |Die Buildnummer für die Version der Sicherheit &amp; in Ihrer Organisation ausgeführten Compliance Center.  <br/> |
-|CreationTime  <br/> |Das Datum und die Uhrzeit in koordinierter Weltzeit (UTC), wenn die eDiscovery-Aktivität abgeschlossen wurde.  <br/> |
-|EffectiveOrganization  <br/> |Der Name der die Office 365-Organisation.  <br/> |
-|ExchangeLocations  <br/> |Exchange Online-Postfächer, die in einer Inhaltssuche enthalten oder gebracht werden in einem eDiscovery-Fall halten.  <br/> |
-|Ausschlüsse  <br/> |Postfach oder einer Website Standorte, die von einem Inhaltssuche oder einem Haltestatus in einem eDiscovery-Fall ausgeschlossen werden.  <br/> |
-|ExtendedProperties  <br/> |Zusätzliche Eigenschaften aus einem Inhalt suchen, eine Aktion Inhaltssuche oder halten Sie in einem eDiscovery-Fall, wie die Objekt-GUID und der entsprechenden Cmdlet und Cmdlet-Parameter, die verwendet wurden, wenn die Aktivität ausgeführt wurde.  <br/> |
-|Id  <br/> |Die ID des Berichts-Eintrags. Die ID identifiziert eindeutig die Überwachungsprotokolleintrag.  <br/> |
-|NonPIIParameters  <br/> |Eine Liste der Parameter (ohne Werte), die mit dem Cmdlet in der Eigenschaft Vorgang identifiziert verwendet wurden. In dieser Eigenschaft aufgeführten Parameter sind die gleichen, die in der Parameters-Eigenschaft aufgeführt.  <br/> |
-|ObjectId  <br/> |Die GUID oder den Namen des Objekts (beispielsweise eine Inhaltssuche oder einem eDiscovery-Fall), das erstellt wurde, geändert oder gelöscht, indem Sie die Aktivität, die in die Operation-Eigenschaft aufgelistet. Dieses Objekt wird auch in der Spalte Element in den Suchergebnissen für Audit Log identifiziert.  <br/> |
-|ObjectType  <br/> |Die Art der eDiscovery-Objekt, das der Benutzer erstellt, gelöscht oder geändert. Beispiel einer Aktion Inhaltssuche (Preview, exportieren oder löschen), einem eDiscovery-Fall oder eine Inhaltssuche.  <br/> |
-|Vorgang  <br/> |Der Name des Vorgangs, der die Aktivität eDiscovery entspricht, die durchgeführt wurden.  <br/> |
-|Organisations-ID an  <br/> |Die GUID für Office 365-Organisation.  <br/> |
-|Parameter  <br/> |Der Name und Wert für die Parameter, die mit dem entsprechenden Cmdlet verwendet wurden.  <br/> |
-|PublicFolderLocations  <br/> |Halten Sie die Speicherorte für Öffentliche Ordner in Exchange-Online, die in einer Inhaltssuche enthalten oder gebracht werden in einem eDiscovery-Fall.  <br/> |
-|Abfrage  <br/> |Die Suchabfrage die Aktivität, wie eine Inhaltssuche oder eine abfragebasierte Aufbewahrung zugeordnet.  <br/> |
-|RecordType  <br/> |Der Typ des Vorgangs durch den Eintrag angegeben. Der Wert von **18** gibt ein Ereignis im Zusammenhang mit einer Aktivität im Abschnitt [eDiscovery-Cmdlet Aktivitäten](#ediscovery-cmdlet-activities) aufgelistet. Der Wert **24** gibt an, ein Ereignis im Zusammenhang mit einer Aktivität im Abschnitt [Suchen nach und Anzeigen von Aktivitäten eDiscovery](#how-to-search-for-and-view-ediscovery-activities) aufgeführt.<br/> |
-|ResultStatus  <br/> |Gibt an, ob die Aktion (in der Operation-Eigenschaft angegeben) erfolgreich war.  <br/> |
-|SecurityComplianceCenterEventType  <br/> |Gibt an, dass die Aktivität eines Wertpapiers wurde &amp; Compliance Center-Ereignis. Alle eDiscovery-Aktivitäten müssen einen Wert von **0** für diese Eigenschaft.<br/> |
-|SharepointLocations  <br/> |SharePoint Online-Websites, die in einer Inhaltssuche enthalten oder gebracht werden in einem eDiscovery-Fall halten.  <br/> |
-|StartTime  <br/> |Das Datum und die Uhrzeit in koordinierter Weltzeit (UTC), wenn die eDiscovery-Aktivität gestartet wurde.  <br/> |
-|Benutzer-ID  <br/> |Der Benutzer, der die Aktivität (in der Operation-Eigenschaft angegeben) ausgeführt wird, die den Datensatz protokolliert geführt hat. Beachten Sie, dass Einträge für eDiscovery-Aktivitäten von Systemkonten (beispielsweise NT-Autorität\System) auch im Überwachungsprotokoll enthalten sind.  <br/> |
-|UserKey  <br/> |Eine alternative ID für den Benutzer in der UserId-Eigenschaft identifiziert. Für eDiscovery-Aktivitäten ist der Wert für diese Eigenschaft in der Regel die UserId-Eigenschaft identisch.  <br/> |
-|UserServicePlan  <br/> |Das Office 365-Abonnement Ihrer Organisation verwendeten. Diese Eigenschaft ist für eDiscovery-Aktivitäten in der Regel leer.  <br/> |
-|UserType  <br/> |Der Typ des Benutzers, der der Vorgang ausgeführt wird. Die folgenden Werte geben den Benutzer.  <br/> 0 ein regelmäßiger Benutzer. 2 ein Administrator in Office 365-Organisation. 3 als Microsoft Datacenter-Administrator oder Datacenter Systemkonto berücksichtigt. 4 als Systemkonto berücksichtigt. 5 eine Anwendung. 6 einen Dienstprinzipal. |
-|Version  <br/> |Gibt die Versionsnummer der Aktivität (identifiziert durch die Operation-Eigenschaft), die angemeldet ist.  <br/> |
-|Arbeitslast  <br/> |Der Office 365-Dienst, in die Aktivität aufgetreten ist. Für eDiscovery-Aktivitäten ist der Wert **SecurityComplianceCenter**.<br/> |
+|Fall  <br/> |Die Identität (GUID) des eDiscovery-Falls, die erstellt, geändert oder gelöscht wurde.  <br/> |
+|ClientApplication  <br/> |eDiscovery-Cmdlet-Aktivitäten weisen für diese Eigenschaft den Wert **EMC** auf. Dies gibt an, dass die Aktivität mithilfe der GUI &amp; Security Compliance Center oder Ausführen des Cmdlets in PowerShell ausgeführt wurde.<br/> |
+|ClientIP  <br/> |Die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird in einem IPv4-oder IPv6-Adressformat angezeigt.  <br/> |
+|ClientRequestId  <br/> | Für eDiscovery-Aktivitäten ist diese Eigenschaft normalerweise leer.  <br/> |
+|CmdletVersion  <br/> |Die Buildnummer für die Version des Security &amp; Compliance Centers, die in Ihrer Organisation läuft.  <br/> |
+|CreationTime  <br/> |Datum und Uhrzeit in koordinierter weltZeit (UTC), als die eDiscovery-Aktivität abgeschlossen wurde.  <br/> |
+|EffectiveOrganization  <br/> |Der Name der Office 365-Organisation.  <br/> |
+|ExchangeLocations  <br/> |Die Exchange Online-Postfächer, die in einer Inhaltssuche enthalten sind oder in einem eDiscovery-Fall aufbewahrt werden.  <br/> |
+|Ausschlüsse  <br/> |Postfach-oder Websitespeicher Orte, die von einer Inhaltssuche oder einem Haltebereich in einem eDiscovery-Fall ausgeschlossen werden.  <br/> |
+|ExtendedProperties  <br/> |Zusätzliche Eigenschaften aus einer Inhaltssuche, einer Inhalts Suchaktion oder in einem eDiscovery-Fall, beispielsweise die Objekt-GUID und die entsprechenden Cmdlet-und Cmdlet-Parameter, die beim Ausführen der Aktivität verwendet wurden.  <br/> |
+|Id  <br/> |Die ID des Berichts Eintrags. Die ID identifiziert den Überwachungsprotokolleintrag eindeutig.  <br/> |
+|NonPIIParameters  <br/> |Eine Liste der Parameter (ohne Werte), die mit dem in der Operation-Eigenschaft angegebenen Cmdlet verwendet wurden. Die in dieser Eigenschaft aufgeführten Parameter sind identisch mit den in der Parameters-Eigenschaft aufgeführten Parametern.  <br/> |
+|ObjectId  <br/> |Die GUID oder der Name des Objekts (beispielsweise eine Inhaltssuche oder ein eDiscovery-Fall), die von der in der Operation-Eigenschaft aufgeführten Aktivität erstellt, geändert oder gelöscht wurden. Dieses Objekt wird auch in der Spalte Element in den Suchergebnissen des Überwachungsprotokolls identifiziert.  <br/> |
+|ObjectType  <br/> |Der Typ des eDiscovery-Objekts, das der Benutzer erstellt, gelöscht oder geändert hat; beispielsweise eine Inhalts Suchaktion (Vorschau, Export oder Bereinigung), einen eDiscovery-Fall oder eine Inhaltssuche.  <br/> |
+|Vorgang  <br/> |Der Name des Vorgangs, der der ausgeführten eDiscovery-Aktivität entspricht.  <br/> |
+|Organisations  <br/> |Die GUID für Ihre Office 365-Organisation.  <br/> |
+|Parameter  <br/> |Der Name und der Wert für die Parameter, die mit dem entsprechenden Cmdlet verwendet wurden.  <br/> |
+|PublicFolderLocations  <br/> |Die Speicherorte für Öffentliche Ordner in Exchange Online, die in einer Inhaltssuche enthalten sind oder in einem eDiscovery-Fall gespeichert werden.  <br/> |
+|Abfrage  <br/> |Die der Aktivität zugeordnete Suchabfrage, beispielsweise eine Inhaltssuche oder eine abfragebasierte Aufbewahrung.  <br/> |
+|RecordType  <br/> |Der vom Datensatz angegebene Vorgangstyp. Der Wert **18** gibt ein Ereignis im Zusammenhang mit einer Aktivität an, die im Abschnitt [Aktivitäten des eDiscovery](#ediscovery-cmdlet-activities) -Cmdlets aufgeführt ist. Der Wert **24** gibt ein Ereignis im Zusammenhang mit einer im Abschnitt Vorgehens [Weise suchen und Anzeigen von eDiscovery-Aktivitäten](#how-to-search-for-and-view-ediscovery-activities) aufgeführten Aktivität an.<br/> |
+|ResultStatus  <br/> |Gibt an, ob die Aktion (in der Eigenschaft "Operation" angegeben) erfolgreich war oder nicht.  <br/> |
+|SecurityComplianceCenterEventType  <br/> |Gibt an, dass die Aktivität ein &amp; Security Compliance Center-Ereignis war. Alle eDiscovery-Aktivitäten haben den Wert **0** für diese Eigenschaft.<br/> |
+|SharepointLocations  <br/> |Die SharePoint Online-Websites, die in einer Inhaltssuche enthalten sind oder in einem eDiscovery-Fall aufbewahrt werden.  <br/> |
+|StartTime  <br/> |Das Datum und die Uhrzeit in koordinierter weltZeit (UTC), als die eDiscovery-Aktivität gestartet wurde.  <br/> |
+|UserId  <br/> |Der Benutzer, der die Aktivität (angegeben in der Eigenschaft "Operation") ausgeführt hat, die dazu geführt hat, dass der Datensatz protokolliert wird. Beachten Sie, dass Datensätze für eDiscovery-Aktivitäten, die von Systemkonten ausgeführt werden (beispielsweise NT AUTHORITY\SYSTEM), ebenfalls im Überwachungsprotokoll enthalten sind.  <br/> |
+|UserKey  <br/> |Eine Alternative ID für den in der UserId-Eigenschaft angegebenen Benutzer. Bei eDiscovery-Aktivitäten ist der Wert für diese Eigenschaft in der Regel dieselbe wie die UserId-Eigenschaft.  <br/> |
+|UserServicePlan  <br/> |Das Office 365-Abonnement, das von Ihrer Organisation verwendet wird. Für eDiscovery-Aktivitäten ist diese Eigenschaft normalerweise leer.  <br/> |
+|UserType  <br/> |Der Typ des Benutzers, der den Vorgang ausgeführt hat. Die folgenden Werte geben den Benutzertyp an.  <br/> 0 ein regulärer Benutzer. 2 ein Administrator in Ihrer Office 365-Organisation. 3 ein Microsoft-Datencenter-Administrator-oder Datacenter-Systemkonto. 4 ein Systemkonto. 5 eine Anwendung. 6 ein Dienstprinzipal. |
+|Version  <br/> |Gibt die Versionsnummer der Aktivität an (identifiziert durch die Eigenschaft "Operation"), die protokolliert wird.  <br/> |
+|Arbeitslast  <br/> |Der Office 365-Dienst, in dem die Aktivität aufgetreten ist. Für eDiscovery-Aktivitäten lautet der Wert **SecurityComplianceCenter**.<br/> |

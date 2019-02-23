@@ -1,12 +1,12 @@
 ---
-title: Schließen oder Löschen einer Anfrage
+title: Schließen oder Löschen eines Falls
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 77bfc2572e312c864b4cc262f2c46ecc9117fff3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: a5a82a1e6ef9b4a4b1033bedf8951dcc109d2983
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607783"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212685"
 ---
-# <a name="close-or-delete-a-case"></a>Schließen oder Löschen einer Anfrage
+# <a name="close-or-delete-a-case"></a>Schließen oder Löschen eines Falls
 
-Inhalt bald verfügbar.
+Wenn der von einem eDiscovery-Fall unterstützte Rechtsfall oder die Untersuchung abgeschlossen ist, können Sie den Fall abschließen. Hier sehen Sie, was passiert, wenn Sie einen Fall abschließen:
+
+- Wenn die Groß-/Kleinschreibung inhaltsspeicherorte enthält, wird diese Sperre deaktiviert. Dies kann dazu führen, dass Inhalte dauerhaft gelöscht oder entfernt werden, entweder durch den Benutzer oder durch einen automatisierten Prozess wie eine Löschrichtlinie.
+
+- Durch das Schließen einer Groß-/Kleinschreibung werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere aufbewahrungsbereiche an einem Inhaltsspeicherort platziert werden (beispielsweise in einem Rechtsstreit. eine erHaltungs Richtlinie oder ein Einhalt aus einem anderen eDiscovery-Fall), werden diese Haltestatus weiterhin beibehalten.
+
+- Der Fall wird weiterhin auf der eDiscovery-Seite im Security & Compliance Center aufgeführt. Die Details, Haltestatus, suchen und Elemente einer geschlossenen Groß-/Kleinschreibung werden beibehalten.
+
+- Sie können einen Fall nach dem Schließen bearbeiten. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen, Suchergebnisse exportieren und das Suchergebnis für die Analyse in Advanced eDiscovery vorbereiten. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass haltebereiche deaktiviert sind, wenn ein Fall geschlossen wird.
+
+So können Sie eine Groß-/Kleinschreibung abschließen:
+
+1. Wechseln Sie auf der Seite **Advanced eDiscovery (Preview)** zu Ihrem Fall.
+
+2. Wechseln Sie zu **Einstellungen** , und wählen Sie **Fall Informationen**aus. 
+
+3. Klicken Sie auf **Fall abschließen**. 
+
+So löschen Sie einen Fall:
+
+1. Wechseln Sie auf der Seite **Advanced eDiscovery (Preview)** zu Ihrem Fall.
+
+2. Wechseln Sie zu **Einstellungen** , und wählen Sie **Fall Informationen**aus. 
+
+3. Klicken Sie auf **Fall löschen**. 
