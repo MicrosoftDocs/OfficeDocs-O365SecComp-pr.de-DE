@@ -1,12 +1,12 @@
 ---
-title: Laden Sie Beschränkungen in erweiterten eDiscovery (Preview)
+title: Download Grenzwerte in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 975095ad4f2c3dd8f48ed0616f272335f0811ddc
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 16e033f67a4e56af74065e33456e531af7292c07
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607778"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214665"
 ---
-# <a name="download-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="45c5f-102">Laden Sie Beschränkungen in erweiterten eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="45c5f-102">Download limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="download-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="b65d0-102">Download Grenzwerte in Advanced eDiscovery (Preview)</span><span class="sxs-lookup"><span data-stu-id="b65d0-102">Download limits in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="45c5f-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="45c5f-103">Content coming soon.</span></span>
+<span data-ttu-id="b65d0-103">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="b65d0-103">Content coming soon.</span></span>
