@@ -1,35 +1,35 @@
 ---
-title: EU Reisepassnummer
+title: EU-Passport-Nummer
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
-description: In diesem Thema dargestellt was eine Data Loss Prevention (DLP)-Richtlinie für den Typ der EU Reisepassnummer vertrauliche Daten erkannt. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Passport-Nummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25840324"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218265"
 ---
-# <a name="eu-passport-number"></a>EU Reisepassnummer
+# <a name="eu-passport-number"></a>EU-Passport-Nummer
 
-In diesem Thema dargestellt was eine Data Loss Prevention (DLP)-Richtlinie für den Typ der EU Reisepassnummer vertrauliche Daten erkannt. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Passport-Nummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
   
 ## <a name="austria"></a>Österreich
 
 ### <a name="format"></a>Format
 
-Einen Buchstaben gefolgt von einem optionalen Leerzeichen und sieben Ziffern
+Ein Buchstabe gefolgt von einem optionalen Leerzeichen und sieben Ziffern
   
 ### <a name="pattern"></a>Muster
 
-Eine Kombination von einem Buchstaben, sieben Ziffern und ein Leerzeichen:
+Eine Kombination aus einem Buchstaben, sieben Ziffern und einem Leerzeichen:
   
 - Ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -45,9 +45,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_austria_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_austria_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_austria_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -64,17 +64,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> österreichische Reisepassnummer  <br/> Passport keine  <br/> Reisepass  <br/> Österreichisch reisepass  <br/> |
+|Passnummer  <br/> Österreichische Passnummer  <br/> Passport-Nr.  <br/> Reisepass  <br/> österreichisch Reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgien
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sechs Ziffern, ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben und gefolgt von sechs Ziffern
+Zwei Buchstaben, gefolgt von sechs Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -84,9 +84,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_belgium_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_belgium_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_belgium_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_belgium_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -103,13 +103,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> belgische Reisepassnummer  <br/> Passport keine  <br/> paspoort  <br/> paspoortnummer  <br/> Kein Reisepass  <br/> Reisepass  <br/> |
+|Passnummer  <br/> belgische Passnummer  <br/> Passport-Nr.  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarien
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -123,9 +123,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_bulgaria_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_bulgaria_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_bulgaria_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_bulgaria_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -142,13 +142,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Bulgarisch Reisepassnummer  <br/> Passport keine  <br/> НОМЕР НА ПАСПОРТА  <br/> |
+|Passnummer  <br/> Bulgarische Passnummer  <br/> Passport-Nr.  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Kroatien
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -162,9 +162,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_croatia_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_croatia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_croatia_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_croatia_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -181,17 +181,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Kroatisch Reisepassnummer  <br/> Passport keine  <br/> Broj putovnice  <br/> |
+|Passnummer  <br/> Kroatische Passnummer  <br/> Passport-Nr.  <br/> Broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Zypern
 
 ### <a name="format"></a>Format
 
-Einen Buchstaben gefolgt von 6 bis 8 Ziffern ohne Leerzeichen oder Trennzeichen
+Ein Buchstabe, gefolgt von 6-8 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
-Ein Zeichen, gefolgt von sechs bis acht Ziffern
+Ein Buchstabe gefolgt von sechs bis acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -201,9 +201,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_cyprus_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_cyprus_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_cyprus_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -220,17 +220,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Zypern Reisepassnummer  <br/> Passport keine  <br/> ΑΡΙΘΜΌ ΔΙΑΒΑΤΗΡΊΟΥ  <br/> |
+|Passnummer  <br/> Zypern-Passnummer  <br/> Passport-Nr.  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>Tschechien
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen oder Trennzeichen
+Acht Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern ohne Leerzeichen oder Trennzeichen
+Acht Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -240,9 +240,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_czech_republic_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_czech_republic_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_czech_republic_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -259,13 +259,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Tschechische Reisepassnummer  <br/> Passport keine  <br/> Cestovní pas  <br/> PAS  <br/> |
+|Passnummer  <br/> Tschechische Passnummer  <br/> Passport-Nr.  <br/> Cestovní Pas  <br/> Pas  <br/> |
    
 ## <a name="denmark"></a>Dänemark
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -279,9 +279,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_denmark_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_denmark_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_denmark_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_denmark_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -298,17 +298,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Dänische Reisepassnummer  <br/> Passport keine  <br/> PAS  <br/> pasnummer  <br/> |
+|Passnummer  <br/> dänische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estland
 
 ### <a name="format"></a>Format
 
-Einen Buchstaben gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Ein Buchstaben, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Einen Buchstaben gefolgt von sieben Ziffern
+Ein Buchstabe gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -318,9 +318,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_estonia_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_estonia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_estonia_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_estonia_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -337,25 +337,25 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Estnisch Reisepassnummer  <br/> Passport keine  <br/> übergeben Sie Eesti kodaniku  <br/> |
+|Passnummer  <br/> Estnische Passnummer  <br/> Passport-Nr.  <br/> Eesti kodaniku-Durchlauf  <br/> |
    
 ## <a name="finland"></a>Finnland
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Finnland Reisepassnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "Finland Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>Frankreich
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Französische Reisepassnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "Frankreich Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Deutschland
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Deutschland Reisepassnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "Deutschland Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Griechenland
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -369,9 +369,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_greece_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_greece_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_greece_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_greece_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -388,17 +388,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Griechische Reisepassnummer  <br/> Passport keine  <br/> ΔΙΑΒΑΤΗΡΙΟ  <br/> |
+|Passnummer  <br/> griechische Passnummer  <br/> Passport-Nr.  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Ungarn
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben gefolgt von sechs oder sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sechs oder sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben gefolgt von sechs oder sieben Ziffern
+Zwei Buchstaben, gefolgt von sechs oder sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -408,9 +408,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_hungary_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_hungary_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_hungary_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_hungary_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -427,17 +427,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Ungarisch Reisepassnummer  <br/> Passport keine  <br/> Útlevél száma  <br/> |
+|Passnummer  <br/> ungarische Passnummer  <br/> Passport-Nr.  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irland
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
+Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -451,9 +451,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_ireland_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_ireland_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_ireland_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_ireland_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -470,17 +470,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Irland Reisepassnummer  <br/> Passport keine  <br/> PAS  <br/> passport  <br/> passeport  <br/> Passeport numero  <br/> |
+|Passnummer  <br/> irische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> passport  <br/> Passeport  <br/> Passeport numero  <br/> |
    
 ## <a name="italy"></a>Italien
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
+Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -494,9 +494,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_italy_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_italy_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_italy_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_italy_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -513,17 +513,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|Italienische Reisepassnummer  <br/> Repubblica Italiana passaporto  <br/> passaporto  <br/> Passaporto italiana  <br/> Reisepassnummer  <br/> Italiana Passaporto numero  <br/> Passaporto numero  <br/> Numéro Passeport italien  <br/> Numéro passeport  <br/> |
+|italienische Passnummer  <br/> Repubblica Italiana Passa Porto  <br/> Passa Porto  <br/> Passa Porto Italiana  <br/> Passnummer  <br/> Italiana Passa Porto numero  <br/> Passa Porto numero  <br/> Numéro Passeport Italien  <br/> Numéro Passeport  <br/> |
    
 ## <a name="latvia"></a>Lettland
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
+Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -537,9 +537,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_latvia_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_latvia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_latvia_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_latvia_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -556,17 +556,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Lettisch Reisepassnummer  <br/> Passport keine  <br/> Pase numurs  <br/> |
+|Passnummer  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Litauen
 
 ### <a name="format"></a>Format
 
-Acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
+Acht Ziffern oder Buchstaben ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern oder Buchstaben (ohne Beachtung von Groß-/Kleinschreibung)
+Acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -576,9 +576,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_lithuania_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_lithuania_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_lithuania_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -595,17 +595,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Lithunian Reisepassnummer  <br/> Passport keine  <br/> Paso numeris  <br/> |
+|Passnummer  <br/> lithunian-Passport-Nummer  <br/> Passport-Nr.  <br/> Paso Numeris  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Format
 
-Acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
+Acht Ziffern oder Buchstaben ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern oder Buchstaben (ohne Beachtung von Groß-/Kleinschreibung)
+Acht Ziffern oder Buchstaben (Groß-/Kleinschreibung nicht beachtet)
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -615,9 +615,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_nation_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_nation_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_nation_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_nation_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -634,13 +634,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Lettisch Reisepassnummer  <br/> Passport keine  <br/> Passnummer  <br/> |
+|Passnummer  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Passnummer  <br/> |
    
 ## <a name="malta"></a>Malta
 
 ### <a name="format"></a>Format
 
-Sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Sieben Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -654,9 +654,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_malta_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_malta_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_malta_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_malta_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -673,13 +673,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Maltesisch Reisepassnummer  <br/> Passport keine  <br/> Numru Tal-passaport  <br/> |
+|Passnummer  <br/> Maltesische Passnummer  <br/> Passport-Nr.  <br/> numru Tal-Passaport  <br/> |
    
 ## <a name="netherlands"></a>Niederlande
 
 ### <a name="format"></a>Format
 
-Neun Buchstaben oder Ziffern ohne Leerzeichen oder Trennzeichen
+Neun Buchstaben oder Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -693,9 +693,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_netherlands_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_netherlands_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_netherlands_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_netherlands_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -712,21 +712,21 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|Niederländische Reisepassnummer  <br/> Reisepassnummer  <br/> Niederlande Reisepassnummer  <br/> Nederlanden Paspoort nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|niederländische Passnummer  <br/> Passnummer  <br/> niederländische Passnummer  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polen
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Polen Reisepassnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "polnische Passnummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Format
 
-Ein Zeichen, gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
+Ein Buchstaben, gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Einen Buchstaben gefolgt von sechs Ziffern:
+Ein Buchstabe gefolgt von sechs Ziffern:
   
 - Ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -740,9 +740,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_portugal_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_portugal_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_portugal_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_portugal_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -759,13 +759,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Portugiesisch Reisepassnummer  <br/> Passport keine  <br/> Número passaporte  <br/> |
+|Passnummer  <br/> portugiesische Passnummer  <br/> Passport-Nr.  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>Rumänien
 
 ### <a name="format"></a>Format
 
-Acht oder neun Ziffern ohne Leerzeichen und Trennzeichen
+Acht oder neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -779,9 +779,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_romania_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_romania_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_romania_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_romania_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -798,17 +798,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Rumänisch Reisepassnummer  <br/> Passport keine  <br/> Numărul pașaportului  <br/> |
+|Passnummer  <br/> rumänische Passnummer  <br/> Passport-Nr.  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>Slowakei
 
 ### <a name="format"></a>Format
 
-Eine Ziffern oder Buchstaben gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Eine Ziffer oder ein Buchstaben, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine Ziffern oder Buchstaben (ohne Beachtung von Groß-/Kleinschreibung) gefolgt von sieben Ziffern
+Eine Ziffer oder ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung), gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -818,9 +818,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovakia_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_slovakia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_slovakia_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -837,21 +837,21 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Slowakische Reisepassnummer  <br/> Passport keine  <br/> Číslo pasu  <br/> |
+|Passnummer  <br/> Slowakische Passnummer  <br/> Passport-Nr.  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Slowenien
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben gefolgt von sieben Ziffern:
+Zwei Buchstaben, gefolgt von sieben Ziffern:
   
 - Der Buchstabe "P"
     
-- Einen Großbuchstaben
+- Ein Großbuchstabe
     
 - Sieben Ziffern
     
@@ -863,9 +863,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovenia_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_slovenia_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_slovenia_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -882,21 +882,21 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|Reisepassnummer  <br/> Slowenisch Reisepassnummer  <br/> Passport keine  <br/> Številka Potnega lista  <br/> |
+|Passnummer  <br/> slowenische Passnummer  <br/> Passport-Nr.  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>Spanien
 
 ### <a name="format"></a>Format
 
-Eine acht oder neun Zeichen Kombination von Buchstaben und Zahlen ohne Leerzeichen oder Trennzeichen
+Eine acht-oder neunstellige Kombination aus Buchstaben und Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine Kombination der acht oder neun Zeichen Buchstaben und Zahlen:
+Eine Kombination aus Buchstaben und Zahlen mit acht oder neun Zeichen:
   
 -  Zwei Ziffern oder Buchstaben 
     
-- Eine Ziffern oder Buchstaben (optional)
+- Eine Ziffer oder ein Buchstabe (optional)
     
 - Sechs Ziffern
     
@@ -908,9 +908,9 @@ Nicht zutreffend
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_spain_eu_passport_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_spain_eu_passport_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_spain_eu_passport_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_spain_eu_passport_number` aus wurde gefunden. 
     
 ```
  <!-- EU Passport Number -->
@@ -927,15 +927,15 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> Spanien passport  <br/> Passport-Adressbuch  <br/> Reisepassnummer  <br/> Passport keine  <br/> Libreta pasaporte  <br/> Número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
+|passport  <br/> Spanien Passport  <br/> Passport-Buch  <br/> Passnummer  <br/> Passport-Nr.  <br/> Libreta Pasaporte  <br/> número Pasaporte  <br/> ESPAÑA PASAPORTE  <br/> Pasaporte  <br/> |
    
 ## <a name="sweden"></a>Schweden
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Schwedische Reisepassnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "schwedische Passport-Nummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
-## <a name="uk"></a>GROßBRITANNIEN
+## <a name="uk"></a>UK
 
-Weitere Informationen hierzu finden Sie im Abschnitt "US / Großbritannien Reisepassnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "U.S./UK Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Siehe auch
 

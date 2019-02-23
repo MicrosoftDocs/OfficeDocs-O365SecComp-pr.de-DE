@@ -1,52 +1,52 @@
 ---
-title: Verwenden von spambenachrichtigungen für Benutzer zum Freigeben und Melden von Nachrichten in Quarantäne in Office 365
+title: Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und Melden von isolierten Nachrichten in Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 5/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
-description: Wenn Ihr Administrator die Benachrichtigungen für Benutzer aktiviert, erhalten Sie eine Benachrichtigung, die an Ihr Postfach gesendete Nachrichten sind aufgeführt, die als Spam, Massen oder Phishing-Nachrichten erkannt wurden. Sie können Version oder den Bericht Nachrichten nach benachrichtigt wird.
-ms.openlocfilehash: e355a94af5ac295503a8e205b1a896afc1c54fb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Wenn Ihr Administrator die Benachrichtigungen für Benutzer aktiviert, erhalten Sie eine Benachrichtigung, die an Ihr Postfach gesendete Nachrichten auflistet, die als Spam, Massen oder Phishing-Nachrichten identifiziert wurden. Sie können Nachrichten nach der Benachrichtigung freigeben oder melden.
+ms.openlocfilehash: eb51d8f73ff00781b74cfba4e580668710ce7a76
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529197"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216395"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Verwenden von spambenachrichtigungen für Benutzer zum Freigeben und Melden von Nachrichten in Quarantäne in Office 365
+# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und Melden von isolierten Nachrichten in Office 365
 
-Der Admin-spambenachrichtigungen für Benutzer aktiviert, erhalten Sie eine Benachrichtigung, in der Nachrichten an Ihr Postfach, die als Spam identifiziert wurden und unter Quarantäne gestellte e-Mails stattdessen aufgelistet.
+Wenn Ihr Administrator Spambenachrichtigungen für Benutzer aktiviert, erhalten Sie eine Benachrichtigung, die an Ihr Postfach adressierte Nachrichten auflistet, die als Spam identifiziert und stattdessen isoliert wurden.
   
 > [!TIP]
-> Wenn Sie Administrator an, und dieses Feature aktivieren möchten sind, können Sie wählen Sie die Option Wenn Sie [eine standardmäßige Anti-Spam-Richtlinie zu ändern](https://go.microsoft.com/fwlink/?LinkId=800313). 
+> Wenn Sie ein Administrator sind und dieses Feature aktivieren möchten, können Sie die Option auswählen, wenn Sie [eine standardmäßige Antispampolitik ändern](https://go.microsoft.com/fwlink/?LinkId=800313). 
   
-Die empfangenen Nachricht enthält die Anzahl der Nachrichten in Spam-Quarantäne, die Ihnen, sowie Datum und Uhrzeit (in koordinierter Weltzeit oder UTC) der letzten Nachricht in der Liste. Die Liste enthält für jede Nachricht Folgendes:
+Die Nachricht, die Sie erhalten, enthält die Anzahl von Nachrichten in Spamquarantäne und das Datum und die Uhrzeit (in UTC) der letzten Nachricht in der Liste. Die Liste enthält für jede Nachricht Folgendes:
   
-- **Absender** Der Send Name und e-Mail-Adresse der in Quarantäne verschobenen Nachricht. 
+- **Absender** Der Absender Name und die e-Mail-Adresse der isolierten Nachricht. 
     
 - **Betreff** Der Betreffzeilentext der in Quarantäne verschobenen Nachricht. 
     
 - **Datum** Datum und Uhrzeit (UTC-Angabe) der Verschiebung der Nachricht in Quarantäne. 
     
-- **Größe** Die Größe der Nachricht, in Kilobyte (KB). 
+- **Größe** Die Größe der Nachricht in Kilobyte (KBs). 
     
-Zurzeit stehen zwei Aktionen, die Sie, mit einer Nachricht in Quarantäne ergreifen können:
+Derzeit gibt es zwei Aktionen, die Sie mit einer isolierten Nachricht durchführen können:
   
-- **Freigabe für Posteingang** Wählen Sie diese Option zum Senden der Nachricht an Ihren Posteingang, in dem Sie es anzeigen können. 
+- Im **Posteingang freigeben** Wählen Sie diese Option aus, um die Nachricht an Ihren Posteingang zu senden, wo Sie Sie anzeigen können. 
     
-- **Als Junk melden** Wählen Sie diese Option, um eine Kopie der Nachricht an Microsoft zur Analyse senden. Das Team Spam ausgewertet wird und analysiert die Nachricht und, abhängig von den Ergebnissen der Analyse, passt die Anti-Spam-Filterregeln, um die Nachricht über ermöglichen. 
+- **Bericht als nicht-Junk** Wählen Sie diese Option aus, um eine Kopie der Nachricht zur Analyse an Microsoft zu senden. Das Spam-Team bewertet und analysiert die Nachricht, und je nach Ergebnis der Analyse werden die Anti-Spam-Filterregeln angepasst, um die Nachricht zu überprüfen. 
     
-Beachten Sie sollten Sie Folgendes:
+Beachten Sie Folgendes:
   
-- Nachrichten, die isoliert werden, da sie eine e-Mail-Flussregel übereinstimmen sind nicht in Nachrichten unter Quarantäne gestellte e-Mails Benutzers enthalten. Es werden nur Nachrichten in Spam-Quarantäne aufgelistet.
+- Nachrichten, die unter Quarantäne gestellt werden, da Sie mit einer Nachrichtenfluss Regel übereinstimmen, sind nicht in Benutzer isolierten Nachrichten enthalten. Nur Nachrichten in Spamquarantäne werden aufgeführt.
     
 - Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden.
     

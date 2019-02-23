@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Verbindungsfilterrichtlinie
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-description: Um sicherzustellen, dass von Personen, denen, die Sie vertrauen, gesendete e-Mail nicht gesperrt hat, können Sie der verbindungsfilterrichtlinie verwenden, um eine Liste, auch bekannt als eine Liste sicherer Absender verwendet werden, der IP-Adressen zu erstellen, denen Sie vertrauen. Sie können auch eine Liste der blockierten Absender erstellen.
-ms.openlocfilehash: 2f8ec3d01de4358d7394c68d0efae9222db08282
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.collection:
+- M365-security-compliance
+description: Wenn Sie sicherstellen möchten, dass e-Mails von vertrauenswürdigen Personen nicht blockiert werden, können Sie mithilfe der Verbindungsfilter Richtlinie eine Zulassungsliste mit vertrauenswürdigen IP-Adressen erstellen. Sie können auch eine Liste blockierter Absender erstellen.
+ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793560"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216905"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
  
@@ -35,13 +37,13 @@ Im folgenden Video wird die Vorgehensweise zur Konfiguration der Verbindungsfilt
 
 - Geschätzte Zeit zur Durchführung: 15 Minuten
     
-- Sie müssen Berechtigungen zugewiesen werden, bevor Sie dieses Verfahren oder Verfahren ausführen können. Welche Berechtigungen Sie benötigen, finden Sie unter den Eintrag "AntiSpam" im Thema [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Antispam" im Thema [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
-- Um die IP-Adresse des Absenders abzurufen, deren Nachrichten, die Sie zulassen oder blockieren möchten, können Sie die Internet-Kopfzeile der Nachricht überprüfen. Suchen Sie nach der Kopfzeile CIP gemäß [Anti-Spam Message Headers](anti-spam-message-headers.md). Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen e-Mail-Clients finden Sie unter [Message Headers Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
+- Zum Abrufen der IP-Adresse des Absenders, dessen Nachrichten Sie zulassen oder blockieren möchten, können Sie den Internet-Header der Nachricht überprüfen. Suchen Sie den CIP-Header, wie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md)beschrieben. Informationen zum Anzeigen eines Nachrichtenkopfs in verschiedenen e-Mail-Clients finden Sie unter [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
     
 - E-Mails, die von einer IP-Adresse aus der IP-Sperrliste gesendet werden, werden abgelehnt, nicht als Spam gekennzeichnet, und es werden keine weiteren Filter angewendet.
     
-- Das folgende Verfahren der Connection Filter kann auch über remote-PowerShell erfolgen. Verwenden Sie das Cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) , um Ihre Einstellungen, und das [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) zum Bearbeiten Ihrer filtereinstellungen Richtlinie Verbindung prüfen. Weitere Informationen zu Windows PowerShell verwenden, um die Verbindung mit Exchange Online Protection finden Sie unter [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). So verwenden Sie Windows PowerShell für die Verbindung zu Exchange Online finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Das folgende Verbindungsfilter Verfahren kann auch über Remote-PowerShell ausgeführt werden. Verwenden Sie das Cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) , um Ihre Einstellungen zu überarbeiten, und die [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) , um die Einstellungen für die Verbindungsfilter Richtlinie zu bearbeiten. Informationen dazu, wie Sie mit Windows PowerShell eine Verbindung mit Exchange Online Protection herstellen, finden Sie unter [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Informationen zur Verwendung von Windows PowerShell zum Herstellen einer Verbindung mit Exchange Online finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole
 <a name="sectionSection1"> </a>
@@ -55,13 +57,13 @@ Durch Bearbeiten der Verbindungsfilterrichtlinie in der Exchange-Verwaltungskons
     Klicken Sie zum Erstellen dieser Listen auf ![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif). Geben Sie im folgenden Dialogfeld die IP-Adressen oder den IP-Adressbereich an, und klicken Sie dann auf **OK**. Wiederholen Sie diesen Vorgang, um weitere Adressen hinzuzufügen. (Sie können IP-Adressen auch bearbeiten oder entfernen, nachdem sie hinzugefügt wurden.)
     
     > [!NOTE]
-    >  Wenn Sie eine IP-Adresse beiden Listen hinzufügen, wird von dieser IP-Adresse gesendete e-Mail zulässig ist. 
+    >  Wenn Sie beide Listen eine IP-Adresse hinzufügen, werden e-Mails, die von dieser IP-Adresse gesendet werden, zugelassen. 
 
-    Geben Sie IPv4-IP-Adressen an, in dem Format sind, wobei Nnn eine Zahl zwischen 0 und 255 ist. Sie können auch Classless Inter-Domain Routing (CIDR) Bereiche in der Format-nnn.nnn.nnn.nnn/rr angeben, wobei rr eine Zahl von 24 bis 32 ist. Wenn Sie Bereiche außerhalb des Bereichs 24 bis 32 angeben, finden Sie unter [zusätzliche Überlegungen beim Konfigurieren der IP-Zulassungsliste Listen](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). 
+    Geben Sie IPV4-IP-Adressen im Format nnn. nnn. nnn. nnn an, wobei nnn eine Zahl zwischen 0 und 255 ist. Sie können auch klassenübergreifende CIDR-Bereiche (Inter-Domain Routing) im Format nnn. nnn. nnn. nnn/RR angeben, wobei RR eine Zahl zwischen 24 und 32 ist. Wenn Sie Bereiche außerhalb des Bereichs 24 bis 32 angeben möchten, finden Sie weitere Informationen zum [Konfigurieren von IP-Zulassungslisten](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). 
 
-    Sie können maximal 1273 Einträge angeben, wobei ein Eintrag einer einzelnen IP-Adresse oder einem CIDR Bereich von IP-Adressen von/24 bis / 32 ist. > Wenn Sie TLS-verschlüsselte Nachrichten senden, werden IPv6-Adressen und -Adressbereiche nicht unterstützt. 
+    Sie können maximal 1273 Einträge angeben, wobei ein Eintrag entweder eine einzelne IP-Adresse oder ein CIDR-Adressfeld mit IP-Adressen von/24 zu/32 ist. > Wenn Sie TLS-verschlüsselte Nachrichten senden, werden IPv6-Adressen und Adressbereiche nicht unterstützt. 
   
-3. Wählen Sie optional das Kontrollkästchen **sicheren Liste aktivieren** , um zu verhindern, dass e-Mail-Nachrichten von bestimmten bekannte Absender fehlt. Auf welche Weise? Microsoft abonniert Drittanbieter-Quellen der sicheren Absender enthalten. Mit dieser Liste sicherer bedeutet, dass diese vertrauenswürdige Absender versehentlich als Spam gekennzeichnet werden nicht. Es wird empfohlen, diese Option, da es sollte reduzieren Sie die Anzahl der falsch positive Ergebnisse (unbedenkliche e-Mails, die als Spam klassifiziert ist), die Sie erhalten. 
+3. Aktivieren Sie optional das Kontrollkästchen **sichere Liste aktivieren** , um die fehlenden e-Mails bestimmter bekannter Absender zu verhindern. , Wie? Microsoft abonniert Drittanbieterquellen von vertrauenswürdigen Absendern. Die Verwendung dieser sicheren Liste bedeutet, dass diese vertrauenswürdigen Absender nicht fälschlicherweise als Spam gekennzeichnet werden. Es wird empfohlen, diese Option auszuwählen, da Sie die Anzahl falsch positiver e-Mail-Nachrichten, die als Spam klassifiziert werden, verringern sollte. 
     
 4. Klicken Sie auf **Speichern**. Im Bereich auf der rechten Seite wird eine Zusammenfassung der Standardrichtlinieneinstellungen angezeigt.
     
@@ -72,9 +74,9 @@ Folgende Überlegungen sollten Sie anstellen, wenn Sie eine Liste zugelassener I
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Angeben eines CIDR-Bereichs, der außerhalb des empfohlenen Bereichs liegt
 
-Um eine CIDR-IP-Adressbereich aus /1 an /23 angeben, müssen Sie erstellen eine e-Mail-Fluss-Regel, die für den IP-Adressbereich ausgeführt wird, die die Spam Confidence Level (SCL) festlegt **Umgehung Spamfilterung** (d. h., alle Nachrichten, die von innerhalb dieser IP-Adressbereich werden Legen Sie auf "nicht spam") und keine zusätzliche Filterung vom Dienst ausgeführt wird). Wenn alle diese IP-Adressen auf angezeigt werden Microsofts proprietäre Block enthält oder auf einem der unsere Drittanbieter-Block enthält, werden diese Nachrichten weiterhin blockiert. Es wird daher dringend empfohlen, für die Verwendung von/24 bis / zu /32 IP-Adressbereich. 
+Wenn Sie einen CIDR-IP-Adressbereich von/1 bis/23 angeben möchten, müssen Sie eine e-Mail-Fluss Regel erstellen, die auf dem IP-Adressbereich ausgeführt wird, der das Spam Confidence Level (SCL) zur **Umgehung der Spamfilterung** festlegt (d. h., alle Nachrichten, die innerhalb dieses IP-Adressbereichs empfangen werden, sind wird auf "kein Spam" festgelegt), und es wird keine zusätzliche Filterung vom Dienst ausgeführt). Wenn jedoch eine dieser IP-Adressen in einer der proprietären Sperrlisten von Microsoft oder in einer unserer Sperrlisten von Drittanbietern angezeigt wird, werden diese Nachrichten weiterhin blockiert. Es wird daher dringend empfohlen, den IP-adressumfang von/24 to/32 zu verwenden. 
   
-Um diese e-Mail-Flussregel zu erstellen, führen Sie die folgenden Schritte aus.
+Führen Sie die folgenden Schritte aus, um diese e-Mail-Fluss Regel zu erstellen.
   
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
     
@@ -84,15 +86,15 @@ Um diese e-Mail-Flussregel zu erstellen, führen Sie die folgenden Schritte aus.
     
 4. Wählen Sie unter **Diese Regel wird ausgeführt, wenn** die Option **Absender**, und wählen Sie dann **IP-Adresse ist in keinem dieser Bereiche oder stimmt mit keinem Bereich völlig überein**.
     
-5. In der **IP-Adressen angeben**, geben Sie den IP-Adressbereich aus, klicken Sie auf **Hinzufügen** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und klicken Sie dann auf **ok**.
+5. Geben Sie in die IP- **Adressen angeben**den IP-Adressbereiche an, klicken](media/ITPro-EAC-AddIcon.gif)Sie auf Add-Symbol **Hinzufügen** ![, und klicken Sie dann auf **OK**.
     
 6. Legen Sie unter **Gehen Sie folgendermaßen vor:** die Aktion fest, indem Sie erst **Nachrichteneigenschaften ändern** wählen und dann die **SCL-Bewertung (Spam Confidence Level) festlegen**. Wählen Sie im Feld **SCL angeben** die Option **Spamfilter umgehen**, und klicken Sie auf **OK**.
     
-7. Wenn Sie möchten, können Sie, Auswahl der Überwachungsregel, testen Sie die Regel, aktivieren die Regel während eines bestimmten Zeitraums und andere Auswahl. Es wird empfohlen, testen die Regel für einen bestimmten Zeitraum, bevor Sie es erzwingen. [Regeln für die Verfahren für die Nachrichtenübermittlung in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) enthält weitere Informationen zu diesen Auswahlmöglichkeiten. 
+7. Wenn Sie möchten, können Sie eine Auswahl treffen, um die Regel zu überwachen, die Regel zu testen, die Regel während eines bestimmten Zeitraums zu aktivieren und andere Optionen auszuwählen. Es wird empfohlen, die Regel für einen Zeitraum zu testen, bevor Sie Sie erzwingen. Die [Verfahren für Nachrichtenfluss Regeln in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) enthalten weitere Informationen zu diesen Auswahlmöglichkeiten. 
     
-8. Klicken Sie auf **Speichern** , um die Regel zu speichern. Die Regel in der Liste der Regeln wird angezeigt. 
+8. Klicken Sie auf **Speichern** , um die Regel zu speichern. Die Regel wird in der Liste der Regeln angezeigt. 
     
-Nachdem Sie erstellen und der Regel erzwingen, umgeht der Dienst Spamfilterung für den IP-Adressbereich, den Sie angegeben haben.
+Nachdem Sie die Regel erstellt und erzwungen haben, umgeht der Dienst die Spamfilterung für den angegebenen IP-Adressbereiche.
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Bereichsfestlegung für Ausnahmen von einer Liste der zugelassenen IP-Adressen einer bestimmten Domäne
 
@@ -110,17 +112,17 @@ Führen Sie dazu die folgenden Schritte aus:
     
 4. Wählen Sie unter **Diese Regel wird ausgeführt, wenn** die Option **Absender**, und wählen Sie dann **IP-Adresse ist in keinem dieser Bereiche oder stimmt mit keinem Bereich völlig überein**.
     
-5. Geben Sie im Feld **IP-Adressen angeben** , die IP-Adresse oder die IP-Adressbereich, die Sie in der IP-Zulassungsliste eingegeben haben, klicken Sie auf **Hinzufügen** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif), und klicken Sie dann auf **ok**.
+5. Geben Sie im Feld IP- **Adressen angeben** die IP-Adresse oder den IP-Adressbereiche an, die Sie in die **** ![IP-Zulassungs](media/ITPro-EAC-AddIcon.gif)Liste eingegeben haben, klicken Sie auf Hinzufügen, und klicken Sie dann auf **OK**.
     
 6. Legen Sie unter **Gehen Sie folgendermaßen vor:** die Aktion fest, indem Sie erst **Nachrichteneigenschaften ändern** wählen und dann die **SCL-Bewertung (Spam Confidence Level) festlegen**. Wählen Sie im Feld **SCL angeben** die Option **0**, und klicken Sie auf **OK**.
     
 7. Klicken Sie unter **Außer wenn** auf **Ausnahme hinzufügen**, und wählen Sie erst **Absender** und dann **Domäne ist**. 
     
-8. Geben Sie in das Feld **Geben Sie die Domäne** der Domäne für die umgehen der Spamfilterung wie **contosob.com**werden soll. Klicken Sie auf **Hinzufügen** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) in der Liste der Ausdrücke zu verschieben. Wiederholen Sie diesen Schritt, wenn Sie verwenden möchten, fügen Sie zusätzliche Domänen als Ausnahmen, und klicken Sie auf **ok** , wenn Sie fertig sind. 
+8. Geben Sie im Feld **Domäne angeben** die Domäne ein, für die Sie die Spamfilterung umgehen möchten, beispielsweise **contosob.com**. Klicken Sie auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, um es in die Liste der Ausdrücke zu verschieben. **** ![ Wiederholen Sie diesen Schritt, wenn Sie zusätzliche Domänen als Ausnahmen hinzufügen möchten, und klicken Sie auf **OK** , wenn Sie fertig sind. 
     
-9. Wenn Sie möchten, können Sie, Auswahl der Überwachungsregel, testen Sie die Regel, aktivieren die Regel während eines bestimmten Zeitraums und andere Auswahl. Es wird empfohlen, testen die Regel für einen bestimmten Zeitraum, bevor Sie es erzwingen. [Regeln für die Verfahren für die Nachrichtenübermittlung in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) enthält weitere Informationen zu diesen Auswahlmöglichkeiten. 
+9. Wenn Sie möchten, können Sie eine Auswahl treffen, um die Regel zu überwachen, die Regel zu testen, die Regel während eines bestimmten Zeitraums zu aktivieren und andere Optionen auszuwählen. Es wird empfohlen, die Regel für einen Zeitraum zu testen, bevor Sie Sie erzwingen. Die [Verfahren für Nachrichtenfluss Regeln in Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) enthalten weitere Informationen zu diesen Auswahlmöglichkeiten. 
     
-10. Klicken Sie auf **Speichern** , um die Regel zu speichern. Die Regel in der Liste der Regeln wird angezeigt. 
+10. Klicken Sie auf **Speichern** , um die Regel zu speichern. Die Regel wird in der Liste der Regeln angezeigt. 
     
 Nach Erstellen und Erzwingen der Regel wird der Spamfilter für die von Ihnen angegebene IP-Adresse bzw. IP-Adressbereich nur für die von Ihnen eingegebene Domänenausnahme umgangen.
   

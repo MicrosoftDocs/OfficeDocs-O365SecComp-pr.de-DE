@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/16/2014
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - WSU150
@@ -14,64 +14,64 @@ search.appverid:
 - OSU150
 - MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
-description: Eine Informationsverwaltungsrichtlinie ist eine Reihe von Regeln für einen Inhaltstyp. Informationen Informationsverwaltungsrichtlinien können Organisationen und nachzuverfolgen wie lange Inhalte beibehalten werden oder welche Aktionen die Benutzer kann mit dieser Inhalte nutzen. Informationsverwaltungsrichtlinien können Organisationen rechtlichen oder behördlichen Regelungen Vorschriften helfen, oder können sie interne Geschäftsprozesse einfach erzwingen.
-ms.openlocfilehash: 9ec64cd7e015acc6a7d8da324ba18cf74405cc71
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln für einen Inhaltstyp. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen Dinge wie lange Inhalte beibehalten oder welche Aktionen Benutzer mit diesen Inhalten ausführen können. Informationsverwaltungsrichtlinien können Organisationen dabei helfen, gesetzliche oder behördliche Bestimmungen einzuhalten, oder Sie können nur interne Geschäftsprozesse erzwingen.
+ms.openlocfilehash: 0ac273a62464e8a02668396dbeabb6bbd473dc0d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529347"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218355"
 ---
 # <a name="introduction-to-information-management-policies"></a>Einführung in Informationsverwaltungsrichtlinien
 
-Eine Informationsverwaltungsrichtlinie ist eine Reihe von Regeln für einen Inhaltstyp. Informationen Informationsverwaltungsrichtlinien können Organisationen und nachzuverfolgen wie lange Inhalte beibehalten werden oder welche Aktionen die Benutzer kann mit dieser Inhalte nutzen. Informationsverwaltungsrichtlinien können Organisationen rechtlichen oder behördlichen Regelungen Vorschriften helfen, oder können sie interne Geschäftsprozesse einfach erzwingen. 
+Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln für einen Inhaltstyp. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen Dinge wie lange Inhalte beibehalten oder welche Aktionen Benutzer mit diesen Inhalten ausführen können. Informationsverwaltungsrichtlinien können Organisationen dabei helfen, gesetzliche oder behördliche Bestimmungen einzuhalten, oder Sie können nur interne Geschäftsprozesse erzwingen. 
   
-Beispielsweise eine Organisation, die erfordern, dass sie "angemessene Steuerelemente" deren Abschluss veranschaulichen behördlichen Vorschriften einhalten muss möglicherweise Erstellen von mindestens Informationsverwaltungsrichtlinien, die überwacht werden bestimmte Aktionen in der Erstellung und Genehmigungsprozess für alle Dokumente im Zusammenhang mit Finanzdaten.
+Beispielsweise kann eine Organisation, die den behördlichen Vorschriften folgen muss, dass Sie "angemessene Kontrollen" ihrer Abschlüsse demonstrieren, eine oder mehrere Informationsverwaltungsrichtlinien erstellen, die bestimmte Aktionen in der Erstellungs-und Genehmigungsprozess für alle Dokumente im Zusammenhang mit finanziellen Anmeldungen.
   
-Gewusst wie-Informationen finden Sie unter [Erstellen und Anwenden von Informationsverwaltungsrichtlinien](create-info-mgmt-policies.md).
+Informationen zu Vorgehensweisen finden Sie unter [Erstellen und Anwenden von Informationsverwaltungsrichtlinien](create-info-mgmt-policies.md).
   
 ## <a name="features-of-information-management-policies"></a>Features von Informationsverwaltungsrichtlinien
 <a name="__top"> </a>
 
-Es gibt vier Hauptkategorien vordefinierte Richtlinienfeatures, die Organisationen einzeln oder in Kombination Inhalte und Prozesse verwaltet. 
+Es gibt vier grundlegende Kategorien von vordefinierten Richtlinienfeatures, die Organisationen einzeln oder in Kombination zum Verwalten von Inhalten und Prozessen verwenden können. 
   
-![Typen von Inhaltsrichtlinien](media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Arten von Inhaltsrichtlinien](media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
-Die überwachungsrichtlinienfeatures kann Organisationen analysieren, wie ihre Content Management-Systemen verwendet werden, indem Protokollieren von Ereignissen und Vorgänge, die in Dokumenten und Listenelementen ausgeführt werden. Sie können die überwachungsrichtlinienfeatures zum Protokollieren von Ereignissen, beispielsweise wenn ein Dokument oder Element bearbeitet wird, angezeigt, eingecheckt, ausgecheckt gelöscht, oder verfügt über die Berechtigungen geändert wurden. Alle Überwachungsinformationen in einer einzelnen Überwachungsprotokoll auf dem Server gespeichert ist, und Websiteadministratoren können Berichte auf ausführen. 
+Mit dem Überwachungsrichtlinienfeature können Organisationen analysieren, wie Ihre Inhaltsverwaltungssysteme verwendet werden, indem Ereignisse und Vorgänge protokolliert werden, die für Dokumente und Listenelemente ausgeführt werden. Sie können das Überwachungsrichtlinienfeature so konfigurieren, dass Ereignisse wie beim Bearbeiten, anzeigen, Einchecken, Auschecken, löschen oder Ändern der Berechtigungen protokolliert werden. Alle Überwachungsinformationen werden in einem einzelnen Überwachungsprotokoll auf dem Server gespeichert, und Websiteadministratoren können Berichte darauf ausführen. 
   
-Das ablaufrichtlinienfeature kann Organisationen löschen oder Entfernen von veralteten Inhalt von ihren Websites in eine einheitliche und nachvollziehbare Weise. Dadurch können Sie die Kosten und Risiken im Zusammenhang mit der Beibehaltung von veralteten Inhalt verwalten. Sie können konfigurieren eine Ablaufrichtlinie, um anzugeben, dass bestimmte Inhaltstypen ablaufen, an einem bestimmten Datum oder innerhalb eines Zeitraums, nach dem das Dokument erstellt oder zuletzt geändert wurde.
+Mit dem Ablaufrichtlinienfeature können Organisationen veraltete Inhalte von ihren Websites auf konsistente, nach verfolgbare Weise löschen oder entfernen. Auf diese Weise können Sie sowohl die Kosten als auch das Risiko verwalten, die mit der Beibehaltung von veralteten Inhalten verbunden sind. Sie können eine Ablaufrichtlinie konfigurieren, um anzugeben, dass bestimmte Inhaltstypen an einem bestimmten Datum oder innerhalb eines Zeitraums ablaufen, nachdem das Dokument erstellt oder zuletzt geändert wurde.
   
-Organisationen können auch erstellen und Bereitstellen von benutzerdefinierten Richtlinienfeatures, um bestimmte Anforderungen erfüllen. Beispiel möchten eine Organisation Fertigung eine Informationsverwaltungsrichtlinie für alle Entwurf Produkt-Design-Spezifikationsdokumente definieren, die Benutzer von drucken Kopien dieser Dokumente auf nicht sicheren Druckern verbietet. Um dieser Art von Informationsverwaltungsrichtlinie zu definieren, können Sie erstellen und Bereitstellen einer Einschränkung drucken Richtlinienfeature, die die relevanten Informationsverwaltungsrichtlinie für den Inhaltstyp Product Design Spezifikation hinzugefügt werden kann.
+Organisationen können auch benutzerdefinierte Richtlinienfeatures erstellen und bereitstellen, um bestimmte Anforderungen zu erfüllen. Eine Produktionsorganisation kann beispielsweise eine Informationsverwaltungsrichtlinie für alle Entwurfs Spezifikationsdokumente definieren, die es Benutzern untersagt, Kopien dieser Dokumente auf nicht sicheren Druckern zu drucken. Um diese Art von Informationsverwaltungsrichtlinie zu definieren, können Sie ein Feature für die Druck Einschränkungsrichtlinie erstellen und bereitstellen, das der relevanten Informationsverwaltungsrichtlinie für den Inhaltstyp Product Design Specification hinzugefügt werden kann.
   
-## <a name="locations-to-use-an-information-management-policy"></a>Speicherorte mithilfe eine Informationsverwaltungsrichtlinie
+## <a name="locations-to-use-an-information-management-policy"></a>Standorte für die Verwendung einer Informationsverwaltungsrichtlinie
 <a name="__toc340213528"> </a>
 
-Um eine Informationsverwaltungsrichtlinie zu implementieren, müssen Sie es mit einer Liste, einer Bibliothek oder einer Inhaltstyp in einer Website hinzufügen. Der Speicherort, an dem Sie erstellen oder hinzufügen eine Informationsverwaltungsrichtlinie, wirkt sich auf wie weit verbreitet die Richtlinie angewendet wird, oder wie weit verbreitet dieser verwendet werden kann. Sie können:
+Um eine Informationsverwaltungsrichtlinie zu implementieren, müssen Sie Sie einer Liste, einer Bibliothek oder einem Inhaltstyp in einer Website hinzufügen. Der Speicherort, an dem Sie eine Informationsverwaltungsrichtlinie erstellen oder hinzufügen, wirkt sich auf die Breite der Richtlinie oder ihre Breite aus. Sie können:
   
- **Erstellen Sie eine Websitesammlungsrichtlinie und fügen Sie diese Richtlinie zu einem Inhaltstyp, Liste oder Bibliothek** Sie können eine Websitesammlungsrichtlinie in der Liste der Richtlinien in der Website auf oberster Ebene einer Websitesammlung erstellen. Nachdem Sie eine Websitesammlungsrichtlinie erstellt haben, können Sie sie exportieren, damit Administratoren von anderen Websitesammlungen in ihrer Liste der Richtlinien importieren können. Erstellen eine "Exportierbar" markieren Websitesammlungsrichtlinie können Sie die Informationsverwaltungsrichtlinien in die Websites in Ihrer Organisation zu standardisieren. 
+ **Erstellen Sie eine Websitesammlungsrichtlinie, und fügen Sie diese Richtlinie dann einem Inhaltstyp, einer Liste oder einer Bibliothek hinzu** . Sie können eine Websitesammlungsrichtlinie in der Liste Richtlinien auf der Website auf oberster Ebene einer Websitesammlung erstellen. Nachdem Sie eine Websitesammlungsrichtlinie erstellt haben, können Sie Sie exportieren, sodass Administratoren anderer Websitesammlungen Sie in Ihre Richtlinienliste importieren können. Durch das Erstellen einer exportierbaren Websitesammlungsrichtlinie können Sie die Informationsverwaltungsrichtlinien für die Standorte in Ihrer Organisation standardisieren. 
   
-Wenn Sie eine Websitesammlungsrichtlinie zu einem Websiteinhaltstyp hinzufügen und eine Instanz dieses Websiteinhaltstyps zu einer Liste oder Bibliothek hinzugefügt wird, kann nicht der Besitzer dieser Liste oder Bibliothek die Websitesammlungsrichtlinie für die Liste oder Bibliothek ändern. Hinzufügen, dass eine Websitesammlungsrichtlinie zu einem Websiteinhaltstyp ein geeignetes Verfahren, um diese Website Auflistung Richtlinien sicherzustellen ist auf jeder Ebene der Websitehierarchie erzwungen werden.
+Wenn Sie eine Websitesammlungsrichtlinie einem Websiteinhaltstyp hinzufügen und eine Instanz dieses Websiteinhaltstyps einer Liste oder Bibliothek hinzugefügt wird, kann der Besitzer dieser Liste oder Bibliothek die Websitesammlungsrichtlinie für die Liste oder Bibliothek nicht ändern. Das Hinzufügen einer Websitesammlungsrichtlinie zu einem Websiteinhaltstyp ist eine gute Möglichkeit, um sicherzustellen, dass Websitesammlungsrichtlinien auf jeder Ebene ihrer Websitehierarchie erzwungen werden.
   
-![Verknüpfung mit Inhalt Typ Richtlinienvorlage auf der Seite Websiteeinstellungen](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Link zur Inhaltstyp-Richtlinienvorlage auf der Seite Websiteeinstellungen](media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
- **Erstellen eine Informationsverwaltungsrichtlinie für einen Websiteinhaltstyp im Websiteinhaltstyp-Katalog der Website auf oberster Ebene, und fügen Sie diesen Inhaltstyp auf eine oder mehrere Listen oder Bibliotheken** Sie können auch eine Informationsverwaltungsrichtlinie direkt für einen Websiteinhaltstyp erstellen, und ordnen Sie anschließend eine Instanz dieses Websiteinhaltstyps mit mehreren Listen oder Bibliotheken. Wenn Sie eine Informationsverwaltungsrichtlinie auf diese Weise erstellen, verfügt jedes Element in der Websitesammlung des Inhaltstyps oder eines Inhaltstyps, das von diesem Inhaltstyp erbt die Richtlinie an. Wenn Sie eine Informationsverwaltungsrichtlinie direkt für einen Websiteinhaltstyp erstellen, es ist jedoch schwieriger zu dieser Informationsverwaltungsrichtlinie in anderen Websitesammlungen wiederzuverwenden, da Richtlinien, die auf diese Weise erstellt werden nicht exportiert werden können. 
+ **Erstellen Sie eine Informationsverwaltungsrichtlinie für einen Websiteinhaltstyp im Websiteinhaltstyp Katalog der Website auf oberster Ebene, und fügen Sie diesen Inhaltstyp einer oder mehreren Listen oder Bibliotheken hinzu.** Sie können auch eine Informationsverwaltungsrichtlinie direkt für einen Websiteinhaltstyp erstellen und dann eine Instanz dieses Websiteinhaltstyps mehreren Listen oder Bibliotheken zuordnen. Wenn Sie eine Informationsverwaltungsrichtlinie auf diese Weise erstellen, weist jedes Element in der Websitesammlung dieses Inhaltstyps oder eines Inhaltstyps, der von diesem Inhaltstyp erbt, die Richtlinie auf. Wenn Sie jedoch eine Informationsverwaltungsrichtlinie direkt für einen Websiteinhaltstyp erstellen, ist es schwieriger, diese Informationsverwaltungsrichtlinie in anderen Websitesammlungen wiederzuverwenden, da Richtlinien, die auf diese Weise erstellt werden, nicht exportiert werden können. 
   
-![Website-Inhaltstypen Link auf der Seite Websiteeinstellungen](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Link "Websiteinhaltstypen" auf der Seite "Websiteeinstellungen"](media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
-![Link auf der Einstellungsseite für einem Websiteinhaltstyp Informationsverwaltungsrichtlinie](media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
+![Link zur Informationsverwaltungsrichtlinie auf der Seite "Einstellungen" für einen Websiteinhaltstyp](media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
   
-Hinweis zu steuern, welche Richtlinien in einer Websitesammlung verwendet werden, Websitesammlungs-Administratoren können die Möglichkeit zum Festlegen von Richtlinienfeatures direkt auf einem Inhaltstyp deaktivieren. Diese Einschränkung aktiviert ist, können Benutzer, die Inhaltstypen erstellen, beschränkt die Richtlinien websitesammlungsliste Richtlinien auswählen.
+Hinweis um zu steuern, welche Richtlinien in einer Websitesammlung verwendet werden, können Websitesammlungsadministratoren die Möglichkeit zum Festlegen von Richtlinienfeatures für einen Inhaltstyp deaktivieren. Wenn diese Einschränkung aktiviert ist, sind Benutzer, die Inhaltstypen erstellen, auf die Auswahl von Richtlinien in der Liste websitesammlungsRichtlinien beschränkt.
   
- **Erstellen einer Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek** Wenn Ihre Organisation eine sehr begrenzte Auswahl von Inhalt eine bestimmte Informationsverwaltungsrichtlinie gilt muss, können Sie eine Informationsverwaltungsrichtlinie erstellen, die nur für eine einzelne Liste oder Bibliothek gilt. Diese Methode zum Erstellen einer Informationsverwaltungsrichtlinie ist die am wenigsten flexible, da die Richtlinie nur für einen Speicherort gilt und nicht exportiert oder für andere Speicherorte wiederverwendet. Jedoch müssen in einigen Fällen Sie eindeutigen Informationen erstellen Informationsverwaltungsrichtlinien mit begrenzten Anwendungsmöglichkeiten bestimmte Situationen zu behandeln. 
+ **Erstellen einer Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek** Wenn Ihre Organisation eine bestimmte Informationsverwaltungsrichtlinie auf einen sehr begrenzten Satz von Inhalten anwenden muss, können Sie eine Informationsverwaltungsrichtlinie erstellen, die nur für eine einzelne Liste oder Bibliothek gilt. Diese Methode zum Erstellen einer Informationsverwaltungsrichtlinie ist am wenigsten flexibel, da die Richtlinie nur für einen Standort gilt und nicht für andere Speicherorte exportiert oder wieder verwendet werden kann. Manchmal müssen Sie jedoch möglicherweise eindeutige Informationsverwaltungsrichtlinien mit eingeschränkter Anwendbarkeit erstellen, um bestimmte Situationen zu beheben. 
   
-![Informationslink Management Richtlinien auf der Einstellungsseite für die Dokumentbibliothek](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Informationsverwaltungsrichtlinien-Link auf der Seite "Einstellungen" für die Dokumentbibliothek](media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
 Notes 
   
-Sie können eine Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek erstellen, nur, wenn dieser Liste oder Bibliothek nicht mehrere Inhaltstypen unterstützt. Wenn eine Liste oder Bibliothek mehrere Inhaltstypen unterstützt, müssen Sie eine Informationsverwaltungsrichtlinie für jeden einzelnen Listeninhaltstyp definieren, die dieser Liste oder Bibliothek zugeordnet ist. (Instanzen von einem Websiteinhaltstyp, die eine bestimmte Liste oder Bibliothek zugeordnet sind, werden als Listeninhaltstypen bezeichnet.)
+Sie können eine Informationsverwaltungsrichtlinie nur für eine Liste oder Bibliothek erstellen, wenn diese Liste oder Bibliothek nicht mehrere Inhaltstypen unterstützt. Wenn eine Liste oder Bibliothek mehrere Inhaltstypen unterstützt, müssen Sie für jeden einzelnen Listeninhaltstyp, der dieser Liste oder Bibliothek zugeordnet ist, eine Informationsverwaltungsrichtlinie definieren. (Instanzen eines Websiteinhaltstyps, die einer bestimmten Liste oder Bibliothek zugeordnet sind, werden als Listeninhaltstypen bezeichnet.)
   
-Um zu steuern, welche Richtlinien in einer Websitesammlung verwendet werden, können die Websitesammlungs-Administratoren die Möglichkeit zum Festlegen von Richtlinienfeatures direkt auf einer Liste oder Bibliothek deaktivieren. Diese Einschränkung aktiviert ist, können Benutzer, die Listen oder Bibliotheken verwalten beschränkt die Richtlinien websitesammlungsliste Richtlinien auswählen.
+Um zu steuern, welche Richtlinien in einer Websitesammlung verwendet werden, können Websitesammlungsadministratoren die Möglichkeit zum Festlegen von Richtlinienfeatures für eine Liste oder Bibliothek deaktivieren. Wenn diese Einschränkung aktiviert ist, sind Benutzer, die Listen oder Bibliotheken verwalten, auf die Auswahl von Richtlinien in der Liste websitesammlungsRichtlinien beschränkt.
   
-[Eine Informationsverwaltungsrichtlinie ist eine Reihe von Regeln für einen Inhaltstyp. Informationen Informationsverwaltungsrichtlinien können Organisationen und nachzuverfolgen wie lange Inhalte beibehalten werden oder welche Aktionen die Benutzer kann mit dieser Inhalte nutzen. Informationsverwaltungsrichtlinien können Organisationen rechtlichen oder behördlichen Regelungen Vorschriften helfen, oder können sie interne Geschäftsprozesse einfach erzwingen. Beispielsweise eine Organisation, die erfordern, dass sie "angemessene Steuerelemente" deren Abschluss veranschaulichen behördlichen Vorschriften einhalten muss möglicherweise Erstellen von mindestens Informationsverwaltungsrichtlinien, die überwacht werden bestimmte Aktionen in der Erstellung und Genehmigungsprozess für alle Dokumente im Zusammenhang mit Finanzdaten. Weitere Informationen finden Sie unter Erstellen und Anwenden von Informationsverwaltungsrichtlinien.](intro-to-info-mgmt-policies.md#__top)
+[Eine Informationsverwaltungsrichtlinie ist ein Satz von Regeln für einen Inhaltstyp. Mithilfe von Informationsverwaltungsrichtlinien können Organisationen Dinge wie lange Inhalte beibehalten oder welche Aktionen Benutzer mit diesen Inhalten ausführen können. Informationsverwaltungsrichtlinien können Organisationen dabei helfen, gesetzliche oder behördliche Bestimmungen einzuhalten, oder Sie können nur interne Geschäftsprozesse erzwingen. Beispielsweise kann eine Organisation, die den behördlichen Vorschriften folgen muss, dass Sie "angemessene Kontrollen" ihrer Abschlüsse demonstrieren, eine oder mehrere Informationsverwaltungsrichtlinien erstellen, die bestimmte Aktionen in der Erstellungs-und Genehmigungsprozess für alle Dokumente im Zusammenhang mit finanziellen Anmeldungen. Informationen zu Vorgehensweisen finden Sie unter Erstellen und Anwenden von Informationsverwaltungsrichtlinien.](intro-to-info-mgmt-policies.md#__top)
   
 

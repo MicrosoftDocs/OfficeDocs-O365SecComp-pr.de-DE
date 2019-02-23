@@ -1,79 +1,79 @@
 ---
-title: Führen Sie das Modul Prozess in Office 365 erweiterte eDiscovery
+title: Ausführen des Prozessmoduls in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: 'Informationen Sie zu Richtlinien für die Vorbereitung Groß-/Kleinschreibung von Dateien von Office 365-Daten für die Analyse mit Office 365 erweiterte eDiscovery.  '
-ms.openlocfilehash: 52b1dce9fb778c6628d90c39135f0c93f08134d7
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informationen zu den Richtlinien für die Vorbereitung von Fall Dateien von Office 365-Daten für die Analyse mit Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530002"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216115"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Führen Sie das Modul Prozess in Office 365 erweiterte eDiscovery
+# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ausführen des Prozessmoduls in Office 365 Advanced eDiscovery
 
-Groß-/Kleinschreibung Dateien werden in der erweiterten eDiscovery geladen, während der **Vorbereitung** \> **Prozess**. 
+Fall Dateien werden während des **Prepare** \> - **Vorgangs**in die erweiterte eDiscovery geladen. 
   
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Richtlinien: Vorbereiten von Daten für erweiterte eDiscovery
+## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>Richtlinien: Vorbereiten von Daten für Advanced eDiscovery
 
-- **Qualität**: eindeutig identifizieren die Groß-/Kleinschreibung Datei Auffüllung für die Groß-/Kleinschreibung relevant sind.
+- **Qualität**: identifizieren Sie eindeutig die für den Fall relevante Datei Auffüllung.
     
-- **Lädt**: Laden Sie die Dateien in einem Speicherort, der für erweiterte eDiscovery zugänglich ist.
+- **Lasten**: Laden Sie die Dateien an einen Speicherort, auf den Advanced eDiscovery zugegriffen werden kann.
     
-- **Datei-ID**: einen eindeutigen Bezeichner in erweiterten eDiscovery. Wenn kein Dateibezeichner importiert ist, generiert erweiterte eDiscovery automatisch die-ID. Wenn Sie die nachfolgende Ladevorgänge Prozess-ID zugeordnet, und ordnen einen anderen Pfad als in der ersten Prozess laden, wird erweiterte eDiscovery ersetzen Sie den Pfad (anstatt einen neuen Dateieintrag hinzufügen). Die ID kann als Referenz in den Exportvorgang verwendet werden. Der ID-Wert darf nicht "-1" sein.
+- **Datei-ID**: ein eindeutiger Dateibezeichner in Advanced eDiscovery. Wenn kein Dateibezeichner importiert wird, generiert Advanced eDiscovery automatisch die ID. Wenn Sie die ID in einem nachfolgenden Prozess laden zuordnen und einen anderen Pfad als bei der anfänglichen Prozessauslastung zuordnen, wird der Pfad von Advanced eDiscovery ersetzt (statt einen neuen Dateieintrag hinzuzufügen). Die ID kann als Referenz im Export Prozess verwendet werden. Der ID-Wert sollte nicht "-1" lauten.
     
-- **MD5**: Diese Signatur wird verwendet, um zwischen Dateien zu unterscheiden (zwei Dateien gelten nicht als genaue Duplikate, wenn sie die gleiche MD5 haben). Standardmäßig berechnet erweiterte eDiscovery MD5-Dateien. Wenn die geladenen Dateien Textdateien sind, empfiehlt es sich zum Laden und zum Zuordnen des Originalwert MD5, anstatt es in erweiterten eDiscovery berechnen.
+- **MD5**: Diese Signatur wird verwendet, um zwischen Dateien zu unterscheiden (zwei Dateien werden nicht als exakte Duplikate betrachtet, es sei denn, Sie haben den gleichen MD5). Standardmäßig berechnet Advanced eDiscovery die MD5-Dateien. Wenn es sich bei den geladenen Dateien um Textdateien handelt, wird empfohlen, den ursprünglichen MD5-Wert zu laden und zu zuordnen, statt ihn in Advanced eDiscovery zu berechnen.
     
-- **Typ und Name der**:
+- **Dateityp und Name**:
     
-  - Erweiterte eDiscovery kann verarbeitet Dateien in verschiedenen Formaten und extrahieren geladene systemeigene Dateien in ein Standardformat wie \*. TXT, HTML oder. XML-. Verarbeitung von Textdateien ist schneller als systemeigene Dateien. Extrahierten Textdateien werden im Ordner "Case" gespeichert.
+  - Advanced eDiscovery kann Dateien mit verschiedenen Formaten verarbeiten und geladene systemeigene Dateien in ein Standardformat wie \*. TXT, HTML oder. XML. processing von Textdateien ist schneller als systemeigene Dateien. Extrahierte Textdateien werden im Case-Ordner gespeichert.
     
-  - Geladen Sie Dateien, die extrahiert werden können, wie Systemdateien oder Grafiken, werden nicht werden. Diese Dateien können eine Verzögerung Verarbeitung.
+  - Laden Sie keine Dateien, die nicht extrahiert werden können, wie Systemdateien oder Grafik Bilder nicht. Diese Dateien können die Verarbeitung verzögern.
     
-  - Stellen Sie sicher, dass erheblich Dateinamen heißen und Pfade richtig sind.
+  - Stellen Sie sicher, dass die Dateinamen bedeutend benannt werden und die Pfade korrekt sind.
     
-- **Pfad**: Erweiterte eDiscovery kann Dateien mit Länge des Pfads bis 400 Zeichen zu laden.
+- **** Dateipfad: Advanced eDiscovery kann Dateien mit Pfad Längen von bis zu 400 Zeichen laden.
     
-- **Extraktion von Text**: beim Extrahieren von Text aus Originaldateien, zusätzlich zu den normalen Text werden auch die folgenden extrahiert: ausgeblendeter Text (Excel und doc) ausgeblendet Spalten (Excel), Nachverfolgen von Änderungen (.doc) und Lautsprecher Notizen (PPT), eingebettete Objekte (z. b Excel-Objekte in einer PPT). Diese können im Text-Editor angezeigt werden.
+- **Textextraktion**: beim Extrahieren von Text aus systemeigenen Dateien werden zusätzlich zu normalem Text auch folgende Elemente extrahiert: ausgeblendeter Text (Excel und doc), ausgeblendete Spalten (Excel), Nachverfolgen von Änderungen (. doc), Vortragsnotizen (PPT), eingebettete Objekte (beispielsweise Excel-Objekte in a. ppt). Diese können im Text-Editor angezeigt werden.
     
-- **Text zu ignorieren**: dieses Feature optionale wird definiert, nachdem der Prozess ausgeführt wird und vor der Analyse. Ignorieren Text sollte mit Bedacht verwendet werden, da deren Verwendung die Leistung von Dateianalyse verringern kann.
+- **Text ignorieren**: dieses optionale Feature wird definiert, nachdem der Prozess ausgeführt und analysiert wurde. Ignore Text sollte mit Bedacht verwendet werden, da seine Verwendung die Leistung der Dateianalyse reduzieren kann.
     
-- **Mehrsprachiger Text**: Erweiterte eDiscovery nicht aktuell mehrsprachige Namen für Tags, Verwaltungsberechtigter und Probleme behandelt.
+- **Mehrsprachiger Text**: Erweiterte eDiscovery verwendet derzeit keine mehrsprachigen Namen für Tags, Verwalter und Probleme.
     
-- **Metadaten**: ermitteln, ob Metadaten, die in der Groß-/Kleinschreibung Datenbank für die zukünftige wie Datumsbereich, Dateigröße, Dateityp, Verwaltungsberechtigter, speichern und subject werden soll. Metadaten kann geladen werden, nachdem die Dateien ohne erneutes Ausführen der Inventar oder erneute Verarbeitung führt zu mehr Verarbeitungsaufwand hinzufügen bereits geladen wurden. 
+- **Metadaten**: bestimmen Sie, ob es sich bei Metadaten, die Sie in der falldatenbank speichern möchten, um zukünftige Referenzen wie Datumsbereich, Dateigröße, Dateityp, Depotbank und Betreff gibt. Metadaten können geladen werden, nachdem Dateien bereits geladen wurden, ohne das Inventar erneut auszuführen oder den Aufwand für die erneute Verarbeitung hinzugefügt. 
     
-  - Wenn die Dateien vom Pfad ursprünglich geladen wurden, ordnen Sie die Pfad-Spalte beim Importieren der Metadaten weiter unten. Es ist möglich, verweisen auf die Datei nach ID und einen anderen Pfad zuzuordnen. Dies ist ein Szenario hilfreich, wenn die Dateipfade ändern.
+  - Wenn die Dateien ursprünglich über den Pfad geladen wurden, ordnen Sie die Spalte path beim späteren Importieren von Metadaten zu. Sie können auf die Datei anhand der ID verweisen und einen anderen Pfad zuordnen. Dies ist ein nützliches Szenario, wenn sich die Dateipfade ändern.
     
-  - Wenn die Dateien ursprünglich nach ID-Datei geladen wurden, ordnen Sie die ID-Spalte beim Laden der Metadaten. Verweisen auf die Datei durch Pfad (anstelle der ID) verursacht Dateien mit einer anderen ID erneut geladen werden Erweiterte eDiscovery erstellt Kopien der Dateien vielmehr, Laden von Metadaten der vorhandenen Dateien.
+  - Wenn die Dateien ursprünglich mit der Datei-ID geladen wurden, ordnen Sie die ID-Spalte beim Laden von Metadaten zu. Wenn Sie auf die Datei nach Pfad (anstelle von ID) verweisen, werden Dateien mit einer anderen ID erneut geladen. Erweiterte eDiscovery erstellt Kopien der Dateien, statt die Metadaten der vorhandenen Dateien zu laden.
     
-- **Familien**: Es ist nicht möglich, eine Familie ohne seines übergeordneten (Head-Produktfamilie) zu laden. 
+- **Familien**: Es ist nicht möglich, eine Familie ohne das übergeordnete Element (Familienoberhaupt) zu laden. 
     
-- **Dateigröße**: Es gibt keine Einschränkung auf die Größe der Dateien in erweiterten eDiscovery geladen. Für die Analyse (analysieren, Relevanz usw.) ist die Grenze 5.242.880 extrahierten Textzeichen. Größere Dateien werden ignoriert (beispielsweise in Relevanz, Dateien der Relevanz Schulung Prozess nicht teilnehmen und erhalten Sie eine Bewertung Relevanz nicht nach Batch Berechnung).
+- **Dateigröße**: Es gibt keine Beschränkung für die Größe der Dateien, die in Advanced eDiscovery geladen wurden. Für Analysen (analysieren, Relevanz usw.) beträgt die Grenze 5.242.880 Zeichen des extrahierten Texts. Größere Dateien werden ignoriert (beispielsweise in Relevanz, Dateien nehmen nicht am Relevanz-Schulungsprozess Teil und erhalten nach der Batch Berechnung kein Relevanz-Ergebnis).
     
-- **Datei Menge**: Es gibt keine empfohlene Höchstgrenze für die Anzahl der Dateien, die in einer einzelnen Fall behandelt werden kann. Leistung hängt von den Ressourcen des Systems. 
+- **Datei Menge**: Es wird kein Grenzwert für die Anzahl der Dateien empfohlen, die in einem einzelnen Fall verarbeitet werden können. Die Leistung hängt von den Ressourcen Ihres Systems ab. 
     
 ## <a name="filtering-files"></a>Filtern von Dateien
 
-Eine benutzerdefinierte Bezeichnung kann eine Reihe von Dateien, deren Prozess oder andere Aufgaben auszuschließende zugeordnet werden. Jede Sitzung Prozess ist eine Batch-ID zugeordnet Obwohl die Batch-ID nicht an den Experten in Relevanz angezeigt wird, kann dies mit einer Suchfunktion durch einen Filter für den aktuellen Batch hinzufügen, und markieren alle entsprechende Dateien mit einer benutzerdefinierten Bezeichnung. 
+Eine benutzerdefinierte Bezeichnung kann mit einer Reihe von Dateien verknüpft werden, um Sie von Prozess-oder anderen Aufgaben auszuschließen. Jeder Prozess Sitzung ist eine Batch-ID zugeordnet. Obwohl die Batch-ID für den Experten nicht relevant ist, kann dies mithilfe eines Such Dienstprogramms erfolgen, indem ein Filter für den aktuellen Batch hinzugefügt wird und alle entsprechenden Dateien mit einer benutzerdefinierten Bezeichnung gekennzeichnet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Das Prozess-Modul ausgeführt, und Laden von Daten](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+[Prozessmodul wird ausgeführt und Daten geladen](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   
-[Anzeigen von Ergebnissen der Prozess Modul](view-process-module-results-in-advanced-ediscovery.md)
+[Anzeigen der Ergebnisse des Prozess Moduls](view-process-module-results-in-advanced-ediscovery.md)
 

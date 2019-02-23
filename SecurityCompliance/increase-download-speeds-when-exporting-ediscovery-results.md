@@ -1,36 +1,36 @@
 ---
-title: Die Download-Leistung zu steigern, beim Exportieren von eDiscovery-Suchergebnisse aus Office 365
+title: Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: Informationen zum Konfigurieren der Windows-Registrierung, um den Datendurchsatz beim Herunterladen der Suchergebnisse zu erhöhen und Suchen von Daten aus der Office 365-Sicherheit &amp; Compliance Center und Office 365 erweiterte eDiscovery.
-ms.openlocfilehash: a05c2b786d1d1de7ff5014d12c708484345f908b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Erfahren Sie, wie Sie die Windows-Registrierung konfigurieren, um den Datendurchsatz beim Herunterladen von Suchergebnissen und Such Daten &amp; aus dem Office 365 Security Compliance Center und Office 365 Advanced eDiscovery zu erhöhen.
+ms.openlocfilehash: bafe9eda98b411472098770e4178748eb84f8afd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038118"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216245"
 ---
-# <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Die Download-Leistung zu steigern, beim Exportieren von eDiscovery-Suchergebnisse aus Office 365
+# <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365
 
-Wenn Sie das Office 365 eDiscovery-Export-Tool verwenden, um Laden Sie die Ergebnisse einer Inhaltssuche in die Office 365-Sicherheit &amp; Compliance Center oder Download von Daten aus Office 365 erweiterte eDiscovery, das Tool startet eine bestimmte Anzahl von gleichzeitigen exportieren Vorgänge, die Daten auf den lokalen Computer herunterladen. Standardmäßig ist die Anzahl der gleichzeitigen Operationen auf 8 Mal die Anzahl der Prozessorkerne auf dem Computer festgelegt, den Sie verwenden, um die Daten herunterladen. Wenn Sie einen dual-Core-Computer (d. h. zwei Prozessoren auf einem Chip) verfügen, ist die Standardanzahl zulässiger gleichzeitige Exportvorgänge beispielsweise 16. Um die Daten Übertragungsdurchsatz und beschleunigen der Downloadvorgang erhöhen möchten, können Sie die Anzahl der gleichzeitigen Operationen erhöhen, durch eine Einstellung für die Windows-Registrierung konfigurieren, auf dem Computer, mit denen Sie die Suchergebnisse herunterladen. Um den Download-Vorgang beschleunigen wird empfohlen, dass Sie mit der Einstellung der 24 gleichzeitige Vorgänge beginnen.
+Wenn Sie das Office 365 eDiscovery-Export Tool zum Herunterladen der Ergebnisse einer Inhaltssuche im Office 365 Security &amp; Compliance Center oder zum Herunterladen von Daten aus Office 365 Advanced eDiscovery verwenden, startet das Tool eine bestimmte Anzahl gleichzeitiger Export Vorgänge zum Herunterladen der Daten auf den lokalen Computer. Standardmäßig ist die Anzahl der gleichzeitigen Vorgänge auf die Anzahl der Kerne auf dem Computer festgelegt, den Sie zum Herunterladen der Daten verwenden. Wenn Sie beispielsweise einen Dual-Core-Computer (also zwei zentrale Verarbeitungseinheiten auf einem Chip) haben, ist die Standardanzahl gleichzeitiger Exportvorgänge 16. Um den Durchsatz bei der Datenübertragung zu erhöhen und den Downloadprozess zu beschleunigen, können Sie die Anzahl gleichzeitiger Vorgänge erhöhen, indem Sie auf dem Computer, auf dem Sie die Suchergebnisse herunterladen, eine Windows-Registrierungseinstellung konfigurieren. Um den Downloadprozess zu beschleunigen, empfehlen wir, dass Sie mit einer Einstellung von 24 gleichzeitigen Vorgängen beginnen.
   
-Wenn Sie die Suchergebnisse über ein Netzwerk mit niedriger Bandbreite herunterladen, möglicherweise Erhöhung dieser Einstellung negativ auswirken. Alternativ können Sie möglicherweise auf die Einstellung für mehr als 24 gleichzeitige Transaktionen in einem Netzwerk mit hoher Bandbreite erhöhen (die maximale Anzahl der gleichzeitigen Operationen ist 512). Nachdem Sie diese Einstellung in der Registrierung konfiguriert haben, müssen Sie möglicherweise ändern, um die optimale Anzahl gleichzeitiger Vorgänge für Ihre Umgebung zu suchen.
+Wenn Sie Suchergebnisse über ein Netzwerk mit niedriger Bandbreite herunterladen, kann sich die Erhöhung dieser Einstellung negativ auswirken. Alternativ können Sie die Einstellung möglicherweise auf mehr als 24 gleichzeitige Vorgänge in einem Netzwerk mit hoher Bandbreite (die maximale Anzahl gleichzeitiger Vorgänge beträgt 512). Nachdem Sie diese Registrierungseinstellung konfiguriert haben, müssen Sie Sie möglicherweise ändern, um die optimale Anzahl gleichzeitiger Vorgänge für Ihre Umgebung zu ermitteln.
   
-## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>Erstellen einer Einstellung so ändern Sie die Anzahl der gleichzeitigen Operationen beim Exportieren von Daten in der Registrierungs
+## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>Erstellen einer Registrierungseinstellung zum Ändern der Anzahl gleichzeitiger Vorgänge beim Exportieren von Daten
 
-Führen Sie das folgende Verfahren auf dem Computer, mit denen Sie die Sicherheit der Suchergebnisse heruntergeladen werden &amp; Compliance Center oder die Daten aus der erweiterten eDiscovery.
+Führen Sie das folgende Verfahren auf dem Computer aus, auf dem Sie Suchergebnisse aus dem Security &amp; Compliance Center oder Daten aus Advanced eDiscovery herunterladen möchten.
   
-1. Schließen Sie das Office 365 eDiscovery-Export-Tool aus, wenn es geöffnet ist. 
+1. Schließen Sie das Office 365 eDiscovery-Export Tool, wenn es geöffnet ist. 
     
-2. Speichern Sie den folgenden Text zu einer Registrierungsdatei Fenster mithilfe der Dateiname Suffix reg; beispielsweise ConcurrentOperations.reg. 
+2. Speichern Sie den folgenden Text in einer Fenster Registrierungsdatei mithilfe eines Dateinamen Suffixes von. reg; Beispiel: ConcurrentOperations. reg. 
     
     ```
     Windows Registry Editor Version 5.00
@@ -38,32 +38,32 @@ Führen Sie das folgende Verfahren auf dem Computer, mit denen Sie die Sicherhei
     "DownloadConcurrency"="24"
     ```
 
-    Wie vorherige erläutert, es wird empfohlen, dass Sie mit 24 gleichzeitige Vorgänge starten, und klicken Sie dann diese Einstellung nach Bedarf ändern.
+    Wie bereits erläutert, empfiehlt es sich, mit 24 gleichzeitigen Vorgängen zu beginnen und diese Einstellung gegebenenfalls zu ändern.
     
-3. Klicken Sie in Windows Explorer auf, oder doppelklicken Sie auf die REG-Datei, die Sie im vorherigen Schritt erstellt haben.
+3. Klicken oder Doppelklicken Sie in Windows Explorer auf die. reg-Datei, die Sie im vorherigen Schritt erstellt haben.
     
-4. Klicken Sie auf **Ja,** um den Registrierungs-Editor die Änderung vornehmen zu lassen, klicken Sie im Fenster User Access Control. 
+4. Klicken Sie im Fenster Benutzerzugriffssteuerung auf **Ja** , um die Änderung des Registrierungs-Editors zu ermöglichen. 
     
-5. Wenn Sie aufgefordert werden, um den Vorgang fortzusetzen, klicken Sie auf **Ja**.
+5. Wenn Sie zum Fortfahren aufgefordert werden, klicken Sie auf **Ja**.
     
-    Den Registrierungs-Editor zeigt eine Meldung, dass die Einstellung der Registrierung erfolgreich hinzugefügt wurde.
+    Der Registrierungs-Editor zeigt eine Meldung an, dass die Einstellung der Registrierung erfolgreich hinzugefügt wurde.
     
-6. Sie können wiederholen Sie die Schritte 2 bis 5 zum Ändern des Werts für die `DownloadConcurrency` Einstellung in der Registrierung. 
+6. Sie können die Schritte 2-5 wiederholen, um den Wert `DownloadConcurrency` für die Registrierungseinstellung zu ändern. 
     
     > [!IMPORTANT]
-    > Nachdem Sie erstellen oder Ändern der `DownloadConcurrency` Registrierung festlegen, müssen Sie unbedingt Erstellen eines neuen Auftrags Export oder neu starten einer vorhandenen Exportauftrag für die Suchergebnisse oder Daten, die Sie herunterladen möchten. Finden Sie [Weitere Informationen](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) im Abschnitt Weitere Informationen. 
+    > Nachdem Sie die `DownloadConcurrency` Registrierungseinstellung erstellt oder geändert haben, müssen Sie einen neuen Exportauftrag erstellen oder einen vorhandenen Exportauftrag für die Suchergebnisse oder Daten, die Sie herunterladen möchten, neu starten. Weitere Informationen finden Sie im Abschnitt [More Information](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) . 
   
 ## <a name="more-information"></a>Weitere Informationen
 
-- Ein neuen Registrierungsschlüssel wird beim ersten erstellt, wenn Sie die REG-Datei ausführen, die Sie in diesem Verfahren erstellt haben. Anschließend wird die `DownloadConcurrency` registrierungseinstellung bearbeitet wird bei jedem ändern, und führen Sie die REG-Datei bearbeiten erneut aus. 
+- Bei der ersten Ausführung der reg-Datei, die Sie in diesem Verfahren erstellt haben, wird ein neuer Registrierungsschlüssel erstellt. Dann wird `DownloadConcurrency` die Registrierungseinstellung jedes Mal bearbeitet, wenn Sie die reg-Bearbeitungs Datei ändern und erneut ausführen. 
     
-- Das Office 365 eDiscovery-Export-Tool verwendet die [Azure AzCopy Dienstprogramm](https://go.microsoft.com/fwlink/?linkid=849949) zum Suchen von Daten aus der Sicherheit herunterladen &amp; Compliance Center oder von erweiterten eDiscovery. Konfigurieren der `DownloadConcurrency` registrierungseinstellung ist ähnlich wie die Verwendung **des/NC** -Parameters beim Ausführen des Dienstprogramms AzCopy. Damit die Einstellung der Registrierung des `"DownloadConcurrency=24"` müssten die gleiche Auswirkung wie die Verwendung des Werts des Parameters des `/NC:24` mit dem Dienstprogramm AzCopy. 
+- Das Office 365 eDiscovery-Export Tool verwendet das [Azure AzCopy-Dienstprogramm](https://go.microsoft.com/fwlink/?linkid=849949) zum Herunterladen von &amp; Such Daten aus dem Security Compliance Center oder von Advanced eDiscovery. Das konfigurieren `DownloadConcurrency` der Registrierungseinstellung ähnelt der Verwendung des **/NC** -Parameters beim Starten des AzCopy-Dienstprogramms. Daher hätte die Registrierungseinstellung `"DownloadConcurrency=24"` von den gleichen Effekt wie die Verwendung des Parameterwerts von `/NC:24` mit dem AzCopy-Dienstprogramm. 
     
-- Wenn Sie einen Export Download beenden, der ist derzeit in Arbeit und starten Sie ihn neu (mit dem Versuch, die Suchergebnisse erneut laden), versucht das Office 365 eDiscovery-Export-Tool den gleichen Download fortzusetzen. Ja, wenn Sie einen Download starten, beenden, und ändern Sie die `DownloadConcurrency` Registrierung festlegen, die heruntergeladene Datei wahrscheinlich fehl, wenn Sie ihn neu starten, (durch Klicken auf **Download exportiert Ergebnisse**). Dies ist, da das Exporttool versucht, das Fortsetzen des vorherigen Downloads von Einstellungen, die nicht gültig sind, da Sie die Einstellung der Registrierung geändert haben.
+- Wenn Sie einen Export Download beenden, der derzeit ausgeführt wird, und diesen dann erneut starten (indem Sie versuchen, die Suchergebnisse erneut herunterzuladen), versucht das Office 365 eDiscovery-Export Tool, den gleichen Download wieder aufzunehmen. Wenn Sie also einen Download starten, ihn beenden und dann die `DownloadConcurrency` Registrierungseinstellung ändern, wird der Download wahrscheinlich fehlschlagen, wenn Sie ihn neu starten (indem Sie auf exportierte **Ergebnisse herunterladen**klicken). Dies liegt daran, dass das Export Tool versucht, den vorherigen Download mithilfe von Einstellungen fortzusetzen, die nicht gültig sind, da Sie die Registrierungseinstellung geändert haben.
     
-    Aus diesem Grund nach dem Ändern der `DownloadConcurrency` Registrierung festlegen, müssen Sie unbedingt den Exportauftrag neu starten (durch Klicken auf **Export starten**) in das Wertpapier &amp; Compliance Center. Anschließend können Sie die exportierten Ergebnisse herunterladen. Weitere Informationen zum Exportieren von Suchergebnissen und Daten finden Sie unter:
+    Nachdem Sie die `DownloadConcurrency` Registrierungseinstellung geändert haben, müssen Sie daher den Exportauftrag (durch Klicken auf **Neustart exportieren**) im Security &amp; Compliance Center neu starten. Dann können Sie die exportierten Ergebnisse herunterladen. Weitere Informationen zum Exportieren von Suchergebnissen und Daten finden Sie unter:
     
-  - [Exportieren von Suchergebnissen aus der Office 365-Sicherheit &amp; Compliance Center](export-search-results.md)
+  - [Exportieren von Inhalts Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md)
     
   - [Exportieren von Ergebnissen in Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
     

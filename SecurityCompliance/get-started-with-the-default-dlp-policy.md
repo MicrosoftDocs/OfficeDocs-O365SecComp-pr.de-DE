@@ -6,76 +6,76 @@ manager: laurawi
 ms.date: 8/10/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
-description: Bevor Sie Ihre erste Data Loss Prevention (DLP) Richtlinie selbst erstellen, trägt DLP zum Schutz Ihrer vertraulichen Informationen mit als Standardrichtlinie behandelt. Diese Standardrichtlinie und seine Empfehlung (siehe unten) Hilfe Keep Ihrer sicher aufgefordert werden, wenn e-Mail oder Dokumente, die ein Credit Anzahl Karte vertrauliche Inhalte mit einer anderen Person außerhalb Ihrer Organisation freigegeben wurden.
-ms.openlocfilehash: 1b522a2c04e72353970ef5dfcd62183023a01994
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Bevor Sie Ihre erste DLP-Richtlinie (Data Loss Prevention, Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (siehe unten) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie benachrichtigt werden, wenn e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine andere Person außerhalb Ihrer Organisation freigegeben wurden.
+ms.openlocfilehash: 25d42a7c7598a82fcf153ce05b64ee990e104b40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22530114"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216585"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Erste Schritte mit der standardmäßigen DLP-Richtlinie
 
-Bevor Sie Ihre erste Data Loss Prevention (DLP) Richtlinie selbst erstellen, trägt DLP zum Schutz Ihrer vertraulichen Informationen mit als Standardrichtlinie behandelt. Diese Standardrichtlinie und seine Empfehlung (siehe unten) Hilfe Keep Ihrer sicher aufgefordert werden, wenn e-Mail oder Dokumente, die ein Credit Anzahl Karte vertrauliche Inhalte mit einer anderen Person außerhalb Ihrer Organisation freigegeben wurden. Sehen Sie auf **der Homepage der Sicherheit** diese Empfehlung &amp; Compliance Center. 
+Bevor Sie Ihre erste DLP-Richtlinie (Data Loss Prevention, Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (siehe unten) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie benachrichtigt werden, wenn e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine andere Person außerhalb Ihrer Organisation freigegeben wurden. Diese Empfehlung wird auf der **Start** Seite des Security &amp; Compliance Centers angezeigt. 
   
-Sie können dieses Widget verwenden, um schnell anzuzeigen, wann und wie viel vertraulicher Informationen freigegeben wurde, und Optimieren Sie die standardmäßige DLP-Richtlinie in einem Mausklick oder zwei. Sie können auch die standardmäßige DLP-Richtlinie können Sie jederzeit bearbeiten, da es vollständig anpassbar ist. Beachten Sie, die Wenn Sie nicht zuerst mit dieser Empfehlung sehen klicken Sie auf **+ Weitere** am unteren Rand der Abschnitt **empfohlen für Sie** . 
+Sie können dieses Widget verwenden, um schnell anzuzeigen, wann und wie viele vertrauliche Informationen freigegeben wurden, und dann die standardmäßige DLP-Richtlinie in nur einem oder zwei Klicken verfeinern. Sie können die Standard-DLP-Richtlinie auch jederzeit bearbeiten, da Sie vollständig anpassbar ist. Beachten Sie, dass wenn die Empfehlung zunächst nicht angezeigt wird, klicken Sie unten im Abschnitt **Empfohlene für Sie** auf **+ mehr** . 
   
-![Mit dem Namen weiterführende Widget schützen freigegebenen Inhalt](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget mit dem Namen weiter schützen freigegebene Inhalte](media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
-## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Zeigen Sie des Berichts an und Optimieren Sie die standardmäßige DLP-Richtlinie
+## <a name="view-the-report-and-refine-the-default-dlp-policy"></a>Anzeigen des Berichts und verfeinern der standardmäßigen DLP-Richtlinie
 
-Wenn das Widget zeigt, dass Benutzer mit Personen außerhalb Ihrer Organisation vertraulichen Informationen freigegeben haben, wählen Sie am unteren **verfeinern DLP-Richtlinie** . 
+Wenn das Widget zeigt, dass Benutzer vertrauliche Informationen für Personen außerhalb Ihrer Organisation freigegeben haben, wählen Sie unten die Option **DLP-Richtlinie verfeinern** aus. 
   
-Der detaillierte Bericht zeigt an, wann und wie viel Inhalt mit Kreditkarte Zahlen in den letzten 30 Tagen freigegeben wurde. Beachten Sie, dass regelübereinstimmungen, bis zu 48 Stunden in das Widget angezeigt ergreifen können wird.
+Der ausführliche Bericht zeigt Ihnen, wann und wie viele Inhalte mit Kreditkartennummern in den letzten 30 Tagen freigegeben wurden. Beachten Sie, dass Regel Übereinstimmungen bis zu 48 Stunden dauern können, bis Sie im Widget angezeigt werden.
   
-Zum Schutz den vertraulichen Informationen, die Standard-DLP-Richtlinie:
+Zum Schutz der vertraulichen Informationen, die standardmäßige DLP-Richtlinie:
   
-- Erkennt, wenn Inhalte in Exchange, SharePoint und OneDrive, die mindestens eine Kreditkartennummer enthält mit Personen außerhalb Ihrer Organisation gemeinsam genutzt wird.
+- Erkennt, wenn Inhalte in Exchange, SharePoint und OneDrive, die mindestens eine Kreditkartennummer enthalten, für Personen außerhalb Ihrer Organisation freigegeben werden.
     
-- Zeigt einen richtlinientipp und sendet eine e-Mail-Benachrichtigung an Benutzer, wenn sie versuchen, diese vertraulichen Informationen mit Personen außerhalb Ihrer Organisation freigeben. Weitere Informationen zu diesen Optionen finden Sie unter [Senden von e-Mail-Benachrichtigungen und richtlinientipps für DLP-Richtlinien anzeigen](use-notifications-and-policy-tips.md).
+- Zeigt einen richtlinientipp an und sendet eine e-Mail-Benachrichtigung an Benutzer, wenn Sie versuchen, diese vertraulichen Informationen für Personen außerhalb Ihrer Organisation freizugeben. Weitere Informationen zu diesen Optionen finden Sie unter [Senden von e-Mail-Benachrichtigungen und Anzeigen von Richtlinien Tipps für DLP-Richtlinien](use-notifications-and-policy-tips.md).
     
-- Generiert ausführliche Berichte an, sodass Sie nachzuverfolgen können, die den Inhalt für Personen außerhalb Ihrer Organisation freigegeben und beim auftreten. Können die [DLP-Berichte](view-the-dlp-reports.md) und [Überwachen von Protokolldaten](search-the-audit-log-in-security-and-compliance.md) (wobei **Aktivität** = **DLP**) auf diese Informationen angezeigt.
+- Generiert detaillierte Aktivitätsberichte, mit denen Sie nachverfolgen können, wer die Inhalte für Personen außerhalb Ihrer Organisation freigegeben hat. Sie können die [DLP-Berichte](view-the-dlp-reports.md) und [Überwachungsprotokolldaten](search-the-audit-log-in-security-and-compliance.md) (bei **Aktivitäts** = -**DLP**) verwenden, um diese Informationen anzuzeigen.
     
-Um die standardmäßige DLP-Richtlinie zu optimieren, können Sie auswählen, damit diese:
+Um die standardmäßige DLP-Richtlinie schnell zu verfeinern, haben Sie folgende Möglichkeiten:
   
-- Senden Sie Ihnen eine e-Mail schadensbericht, wenn der Benutzer diese vertraulichen Informationen mit Personen außerhalb Ihrer Organisation freigeben.
+- Senden Sie einen Vorfall Bericht per e-Mail, wenn Benutzer diese vertraulichen Informationen für Personen außerhalb Ihrer Organisation freigeben.
     
-- Die e-Mail-schadensbericht andere Benutzer hinzufügen.
+- Fügen Sie dem e-Mail-Vorfall Bericht weitere Benutzer hinzu.
     
-- Blockieren Sie den Zugriff auf den Inhalt, die vertrauliche Informationen enthält, jedoch durch den Benutzer außer Kraft setzen und freigeben oder senden, wenn dies erforderlich ist.
+- Blockieren des Zugriffs auf den Inhalt, der die vertraulichen Informationen enthält, aber es dem Benutzer ermöglichen, zu überschreiben und freizugeben oder zu senden, wenn Sie dies benötigen.
     
-Weitere Informationen zu Vorfall Berichte oder Beschränkung des Zugriffs finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md).
+Weitere Informationen zu Vorfall Berichten oder zum Einschränken des Zugriffs finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md).
   
-Wenn Sie diese Optionen später ändern möchten, können Sie die Standardeinstellung bearbeiten DLP-Richtlinie zu einem beliebigen Zeitpunkt - finden Sie im nächsten Abschnitt.
+Wenn Sie diese Optionen später ändern möchten, können Sie die Standard-DLP-Richtlinie jederzeit bearbeiten – weitere Informationen finden Sie im nächsten Abschnitt.
   
-![Einstellungen für weitere namens Widget schützen freigegebenen Inhalt](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Einstellungen für das benannte Widget weiter schützen von freigegebenen Inhalten](media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
-## <a name="edit-the-default-dlp-policy"></a>Bearbeiten Sie die standardmäßige DLP-Richtlinie
+## <a name="edit-the-default-dlp-policy"></a>Bearbeiten der standardmäßigen DLP-Richtlinie
 
-Diese Richtlinie ist mit dem Namen **Default Office 365 DLP-Richtlinie** und unter **Verhinderung von Datenverlust** angezeigt wird, auf der Seite **Richtlinie** für die Sicherheit &amp; Compliance Center. 
+Diese Richtlinie heißt **default Office 365 DLP Policy** und wird unter **Data Loss Prevention** auf der Seite **Richtlinie** des Security &amp; Compliance Centers angezeigt. 
   
-Diese Richtlinie ist vollständig anpassbar, die gleiche wie alle DLP-Richtlinie, dass Sie selbst von Grund auf neu erstellen. Sie können auch deaktivieren oder löschen die Richtlinie so, dass Ihre Benutzer nicht mehr erhalten Tipps zu Richtlinien, oder e-Mail-Benachrichtigungen.
+Diese Richtlinie ist vollständig anpassbar, genauso wie alle DLP-Richtlinien, die Sie selbst neu erstellen. Sie können die Richtlinie auch deaktivieren oder löschen, damit Ihre Benutzer keine Richtlinien Tipps oder e-Mail-Benachrichtigungen mehr erhalten.
   
-![DLP-Richtlinie mit dem Namen Default Office 365 DLP-Richtlinie](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![DLP-Richtlinie namens "Standard Office 365 DLP-Richtlinie"](media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
-## <a name="when-the-widget-does-and-does-not-appear"></a>Wenn das Widget ist und wird nicht angezeigt
+## <a name="when-the-widget-does-and-does-not-appear"></a>Wenn das Widget nicht angezeigt wird
 
-Das Widget mit dem Namen **weiteren Schutz freigegebenen Inhalt** angezeigt wird, im Abschnitt **empfohlen, für die Sie** **der Homepage der Sicherheit** &amp; Compliance Center. 
+Das Widget **Weitere Schutz freigegebene Inhalte** wird im Abschnitt **Empfohlene für Sie** auf der **Start** Seite des Security &amp; Compliance Centers angezeigt. 
   
-Dieses Widget erscheint nur, wenn:
+Dieses Widget wird nur angezeigt, wenn:
   
-- Es werden keine Richtlinien zur Verhinderung von Datenverlust in das Wertpapier &amp; Compliance Center oder die Exchange-Verwaltungskonsole. Dieses Widget soll Ihnen dabei helfen mit DLP beginnen, damit es nicht angezeigt wird, wenn Sie bereits über DLP-Richtlinien verfügen.
+- Im Security &amp; Compliance Center oder Exchange Admin Center gibt es keine Richtlinien zur Verhinderung von Datenverlust. Dieses Widget soll Ihnen die ersten Schritte mit DLP erleichtern, sodass es nicht angezeigt wird, wenn Sie bereits über DLP-Richtlinien verfügen.
     
-- Inhalte mit mindestens einem Kreditkarte wurde mit einer anderen Person außerhalb Ihrer Organisation in den letzten 30 Tagen freigegeben.
+- Inhalte, die mindestens eine Kreditkarte enthalten, wurden in den letzten 30 Tagen für eine andere Person außerhalb Ihrer Organisation freigegeben.
     
-Beachten Sie, dass regelübereinstimmungen für das Widget verfügbar sein, damit nach sensible Informationen extern erkannt wird, für die Empfehlung angezeigt werden bis zu zwei Tage dauern kann bis zu 48 Stunden dauern können.
+Beachten Sie, dass Regel Übereinstimmungen bis zu 48 Stunden dauern können, um für das Widget verfügbar zu sein, daher kann es bis zu zwei Tage dauern, bis die Empfehlung angezeigt wird, nachdem vertrauliche Informationen extern freigegeben wurden.
   
-Nachdem Sie das Widget verwenden, um die standardmäßige DLP-Richtlinie verfeinern, verschwindet das Widget schließlich aus **der Homepage** . 
+Nachdem Sie das Widget zum Verfeinern der standardmäßigen DLP-Richtlinie verwendet haben, wird das Widget auf der **Homepage** ausgeblendet. 
   
 

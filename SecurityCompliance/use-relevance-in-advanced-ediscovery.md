@@ -1,146 +1,146 @@
 ---
-title: Verwenden Sie das Modul Relevanz in Office 365 erweiterte eDiscovery
+title: Verwenden des Relevanz-Moduls in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: 'Lernen Sie das Modul Relevanz in Office 365 erweiterte eDiscovery, einschließlich eines Workflows und Richtlinien und Schritte zur Schulung und Datei überprüfen.  '
-ms.openlocfilehash: 2cf75ef95291c5393367ce01fb0cd660f9b99145
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Erfahren Sie mehr über das Relevanz-Modul in Office 365 Advanced eDiscovery, einschließlich eines Workflows und Richtlinien und Schritte für Schulung und Dateiüberprüfung.  '
+ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529212"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217455"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Verwenden Sie das Modul Relevanz in Office 365 erweiterte eDiscovery
+# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Verwenden des Relevanz-Moduls in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Erweiterte eDiscovery enthält das Modul Relevanz der Relevanz Schulung und Überprüfung von Dateien im Zusammenhang mit der Fall. Der Relevanz Workflow wird angezeigt und wie folgt beschrieben:
+In Advanced eDiscovery umfasst das Relevance-Modul die Relevanz von Schulungen und Überprüfungen von Dateien im Zusammenhang mit einem Fall. Der Relevanz-Workflow wird angezeigt und wie folgt beschrieben:
   
 ![Relevanzworkflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- **Zyklen der Bewertung und Nachverfolgen von Änderungen**:
+- **Zyklen der Bewertung und Nachverfolgung**:
     
-  - **Assessment**: Erweiterte eDiscovery ermöglicht frühe Assessment basierend auf einer Stichprobe von Dateien und wird mit dieser Bewertung Entscheidungen, die Leistung der vorhersehbare Codierung bestimmen angewendet. 
+  - **Bewertung**: Advanced eDiscovery ermöglicht eine frühe Bewertung basierend auf einer Zufallsstichprobe von Dateien und verwendet diese Bewertung, um Entscheidungen zu treffen, um die Leistung des vorher sagenden Codierungsprozesses zu bestimmen. 
     
-  - **Titel**: Erweiterte eDiscovery berechnet und anzeigt Zwischenergebnisse der Bewertung bei der Überwachung statistische Gültigkeit des Prozesses. 
+  - **Track**: Erweiterte eDiscovery berechnet und zeigt Zwischenergebnisse der Bewertung an, während die statistische Gültigkeit des Prozesses überwacht wird. 
     
-- **Zyklen Schulung und Nachverfolgen von Änderungen**:
+- **Schulungs-und Überwachungs Zyklen**:
     
-  - **Tag**: Erweiterte eDiscovery lernen Relevanz Kriterien speziell für jedes Problem basierend auf der Experte iterative überprüfen und Kategorien der einzelnen Dateien.
+  - **Tag**: Advanced eDiscovery lernt anhand der iterativen Überprüfungen und Markierungen von einzelnen Dateien, welche Relevanz-Kriterien für jedes Problem gelten.
     
-  - **Titel**: Erweiterte eDiscovery berechnet und anzeigt Zwischenergebnisse der Schulung Relevanz bei der Überwachung statistische Gültigkeit des Prozesses. 
+  - **Track**: Erweiterte eDiscovery berechnet und zeigt zwischenErgebnisse der Relevanz-Schulung, während die statistische Gültigkeit des Prozesses überwacht wird. 
     
-- **Batch-Berechnung**: Erweiterte eDiscovery übernimmt die kumulierte und gelernten Relevanz Kriterien, betrifft die gesamte Dateisammlung und Relevanz der Ergebnisse für jede Datei generiert.
+- **Batch Berechnung**: die erweiterte eDiscovery verwendet die akkumulierten und erlernten Relevanz-Kriterien, wendet Sie auf die gesamte Dateisammlung an und generiert Relevanzwerte für jede Datei.
     
-- **Decide**: Erweiterte eDiscovery zeigt die Ergebnisse der Analyse auf die gesamte Groß-/Kleinschreibung nach Batch Berechnung angewendet, und zeigt die Daten für das Dokument überprüfen Entscheidung.
+- **Entscheiden**: Advanced eDiscovery zeigt die Ergebnisse der Analyse an, die nach der Batch Berechnung auf den gesamten Fall angewendet werden, und zeigt Daten zum Durchführen von Dokument Überprüfungs Entscheidungen an.
     
-- **Test**: Erweiterte eDiscovery-Suchergebnissen zum Überprüfen der Gültigkeit und Effektivität der eDiscovery-erweiterte Verarbeitung getestet werden können.
+- **Test**: Erweiterte eDiscovery-Ergebnisse können getestet werden, um die Gültigkeit und Wirksamkeit der erweiterten eDiscovery-Verarbeitung zu überprüfen.
     
-## <a name="guidelines-for-relevance-training-and-review"></a>Richtlinien für die Relevanz Schulung und überprüfen
+## <a name="guidelines-for-relevance-training-and-review"></a>Richtlinien für Relevanz Schulungen und Überprüfungen
 
-Es folgt eine Übersicht über Richtlinien für die Relevanz Schulung und überprüfen:
+Es folgt eine Übersicht über die Richtlinien für die Relevanz von Schulungen und Überprüfungen:
   
-- **Fehler und Inkonsistenzen**: Kategorien Fehler während des Trainings vorgenommen wurde, kehren Sie zur vorherigen Datei herunter, die zu korrigieren. Wenn aufgrund zu vieler Fehler an den richtigen vorhanden sind, oder es eine neue Perspektive der Groß-/Kleinschreibung oder Problem ist, die Relevanz Kriterien sollten vom Administrator neu definiert werden, und die Relevanz Schulung neu gestartet.
+- **Fehler und**Inkonsistenzen: Wenn während des Trainings Markierungsfehler auftreten, kehren Sie zu früheren Datei Beispielen zurück, um Sie zu korrigieren. Wenn zu viele Fehler zu korrigieren sind oder eine neue Perspektive für den Fall oder das Problem vorliegt, sollten die Relevanz-Kriterien vom Administrator neu definiert werden, und das Relevanz-Training wurde erneut gestartet.
     
-- **Tag und Schulung**: 
+- **Tagging und Schulung**: 
     
-  - Dateien sollten basierend auf dem Inhalt nur markiert werden. Metadaten wie der Verwaltungsberechtigte, Datum oder Dateipfad nicht berücksichtigt. 
+  - Dateien sollten nur auf der Grundlage von Inhalten gekennzeichnet werden. Berücksichtigen Sie keine Metadaten wie Depot, Datum oder Dateipfad. 
     
-  - Berücksichtigen Sie den Datum nicht Bereich Angaben im Text beim Markieren von Dateien.
+  - Beachten Sie beim Taggen von Dateien keine Datumsbereiche im Text.
     
-  - Berücksichtigt beim Markieren von Dateien keine eingebettete Grafiken.
+  - Berücksichtigen Sie beim Taggen von Dateien keine eingebetteten Grafiken.
     
-  - Wenn eine Datei in das Symbol **formatierten Textansicht** beim tagging anzeigen, die Formatierung von Text nicht berücksichtigt. Beispielsweise wird ein Wort durchgestrichen (eine horizontale Linie durch seine Mitte, der angibt, löschen) nach Relevanz als Teil der analysierten Text weiterhin betrachtet. 
+  - Wenn Sie eine Datei mit dem Symbol für die **formatierte Textansicht** beim Markieren anzeigen, sollten Sie die Formatierung von Text nicht berücksichtigen. Beispielsweise wird ein Wort, das durchgestrichen angezeigt wird (eine horizontale Linie durch sein Zentrum, die den Löschvorgang angibt) weiterhin als Teil des analysierten Texts als relevant betrachtet. 
     
-  - Ignorieren angewendetem zur Relevanz (gemäß Festlegung von der Groß-/Kleinschreibung Manager oder Administrator) Text wird in der Relevanz in der angezeigten Datei in der Textansicht entfernt. Wenn die Werte für Text ignorieren nach Relevanz Schulung bereits Schritte definiert wurden, wird der neue Text ignorierte auf Beispieldateien aus den Punkt in dem er definiert wurde erstellt angewendet werden. Das Feature Text ignorieren sollte mit Bedacht, verwendet werden, da die Verwendung die Leistung von Dateianalyse verringern kann
+  - Text ignorieren, der auf Relevanz angewendet wird (wie vom Fall-Manager oder Administrator festgelegt) wird in der angezeigten Dateiinhalt in der Textansicht relevant entfernt. Wenn die Werte für Ignore Text definiert wurden, nachdem Relevanz Training bereits gestartet wurde, wird der neue ignorierte Text auf Beispieldateien angewendet, die von dem Punkt erstellt wurden, an dem Sie definiert wurde. Das Feature Text ignorieren sollte vorsichtig verwendet werden, da die Verwendung die Leistung der Dateianalyse reduzieren kann.
     
-  - Verwenden Sie die **Überspringen tagging** Option nur bei Bedarf. Erweiterte eDiscovery wird nicht basierend auf Übersprungene Dateien Schulen. Bewertung, wenn es schwierig ist, sagen, ob eine Datei relevant ist ist es besser, Tag als Relevant (R) oder nicht relevant (Nr.) nach Möglichkeit statt **Überspringen**auswählen. Wenn erweiterte eDiscovery Training ausgewertet wird, kann diese klicken Sie dann wie gut diese Dateitypen verarbeitet wurden angezeigt werden.
+  - Verwenden Sie die Option **Tagging überspringen** nur bei Bedarf. Erweiterte eDiscovery wird nicht basierend auf übersprungenen Dateien trainiert. Wenn es schwierig ist, zu beurteilen, ob eine Datei relevant ist, sollten Sie bei der Bewertung, wann immer möglich, nicht über **springen**, sondern als relevant (R) oder nicht relevant (Nr) markieren. Wenn Advanced eDiscovery das Training auswertet, kann dann gesehen werden, wie gut diese Dateitypen verarbeitet wurden.
     
-  - Selbst Dateien, die mit einer sehr geringen extrahierte Text sollte in Schulung nicht als "Überspringen", wenn möglich, sondern als R/Nr. markiert werden. 
+  - Auch Dateien mit sehr kleinem extrahiertem Text sollten, wenn möglich, als R/NR als "Skip" markiert werden. 
     
-  - Kategorien, kann die Klassifizierung auswirken, solange die Datei gelesen werden kann und als R/Nr. markiert werden kann.
+  - Tagging kann sich auf die Klassifizierung auswirken, solange die Datei lesbar ist und als R/NR gekennzeichnet werden kann.
     
-  - Die Datei Sequenznummer in der angezeigten Liste der Beispiel-Dateien auf der Registerkarte **Tag** ermöglicht es dem Benutzer wieder an die ursprüngliche Reihenfolge der Dateien angezeigt. 
+  - Die Dateisequenz Nummer in der Liste angezeigte Beispieldateien auf der Registerkarte **Tag** ermöglicht es dem Benutzer, zur ursprünglichen angezeigten Reihenfolge der Dateien zurückzukehren. 
     
-  - Können Sie zurück zur Beispiele, und ändern Sie die Kennzeichnung der Bewertung und Schulung Dateien festgelegt. Beim Erstellen von im nächsten Beispiels werden die Änderungen angewendet.
+  - Sie können zu einem beliebigen Beispiel zurückkehren und das Tagging der Assessment-und Trainingssatz Dateien ändern. Die Änderungen werden beim Erstellen des nächsten Beispiels angewendet.
     
-  - Überprüften Excel, die Dateien im PDF-Format müssen behandelt als systemeigene Excel-Dateien beim Markieren von Dateien.
+  - Gescannte Excel-Dateien im PDF-Format sollten beim Taggen von Dateien genauso behandelt werden wie native Excel-Dateien.
     
-  - Wenden Sie im unsicheren bezüglich der Relevanz Markieren einer Datei sich an einen Experten. Falsche Kategorien während der Relevanz Schulung kann dazu führen, dass später im Vorgang Verlust von Zeit und möglicherweise auch eine negative Auswirkung auf die Qualität der Gesamtergebnisse.
+  - Wenn Sie Zweifel bezüglich des Relevanz-Taggings einer Datei haben, konsultieren Sie einen Experten. Das falsche Tagging während der Relevanz-Schulung kann zu einem späteren Zeitpunkt im Prozess zu Zeitverlusten führen und sich auch negativ auf die Qualität der Gesamtergebnisse auswirken.
     
-  - Schlüsselwörter, die definiert wurden in-Schlüsselwort werden in Farben, um die relevante Dateien während tagging identifizieren Benutzerhilfe Listen angezeigt werden.
+  - Schlüsselwörter, die in Stichwortlisten definiert wurden, werden in Farben angezeigt, damit der Benutzer relevante Dateien beim taggen identifiziert.
     
-- **Batch-Berechnung**: Dateien, die markiert wurden, erhalten diese R/Nr. mithilfe der Experte eine integritätsbewertung von 0 und 100. Dies gilt für tagging vor dem Batch Berechnung vorgenommen. Wenn der Experte das Problem im Leerlauf nach Batch Berechnung gewechselt und Fortsetzung dieses Problem markieren, werden die neu markierten Faktoren nicht 100/0, sondern vielmehr die ursprüngliche Bewertung.
+- **Batch Berechnung**: Dateien, die vom Experten als R/Nr markiert wurden, erhalten eine Bewertung von 0 oder 100. Dies gilt für das Tagging vor der Batch Berechnung. Wenn der Experte das Problem nach der Batch Berechnung in den Leerlauf umgeschaltet hat und dieses Problem weiterhin kennzeichnet, werden die neu markierten Ergebnisse nicht 100/0, sondern die ursprüngliche Partitur.
     
-- **Probleme und sampling Modus**: Probleme werden in der Regel deaktiviert, wenn Arbeit abgeschlossen ist (Relevanz Schulung ist konstant und Batch Berechnung ausgeführt wurde), wenn die Probleme abgebrochen werden, oder wenn ein anderer Benutzer die Fragen funktionsfähig ist.
+- **Probleme und Samplingmodus**: Probleme werden normalerweise deaktiviert, wenn die Arbeit an diesen abgeschlossen ist (Relevanz-Schulung wird stabilisiert und die Batch Berechnung durchgeführt), wenn die Probleme abgebrochen werden oder wenn ein anderer Benutzer an den Problemen arbeitet.
     
-## <a name="steps-in-relevance-training"></a>Schritte im Relevanz-Schulung
+## <a name="steps-in-relevance-training"></a>Schritte in Relevanz Schulung
 
-In der **Relevanz \> nachverfolgen** Registerkarte Erweiterte eDiscovery Leitfaden zur Vorgehensweise bei der Verarbeitung, mit den folgenden Schritten weiter. Bei jeder der folgenden Schritte im Prozess Schulung Relevanz empfohlen wird, werden die Auswirkungen nachfolgend beschrieben. 
+Auf der Registerkarte **Relevanz \> verfolgen** bietet Advanced eDiscovery Empfehlungen für die Fortsetzung der Verarbeitung mit den folgenden Schritten. Die Implikationen werden im folgenden beschrieben, wenn jeder der folgenden Schritte im Relevanz-Schulungsprozess empfohlen wird. 
   
-- Markieren / Continue-tagging: Datei überprüfen und die Relevanz tagging durchgeführte Experte für jede Datei und Problem innerhalb einer Stichprobe.
+- Tagging/Continue Tagging: Dateiüberprüfung und Relevanz-Tagging, die von einem Experten für jede Datei und jedes Problem innerhalb eines Beispiels ausgeführt werden.
     
-  - Implikation: Vorhandenen Beispiels markiert werden muss.
+  - Implikation: ein vorhandenes Beispiel muss markiert werden.
     
-- Bewertung / Continue-Bewertung: ermöglicht frühe Validierung von Groß-/Kleinschreibung Problem Relevanz und eine vorläufige Ansicht der Relevanz von der Datei Auffüllung für die aktuelle Groß-/Kleinschreibung importiert.
+- Bewertung/Fortsetzung der Bewertung: ermöglicht die vorzeitige Validierung der Relevanz der Groß-/Kleinschreibung und eine vorläufige Ansicht der Relevanz der für den aktuellen Fall importierten Datei Auffüllung.
     
-  - Implikation: Weitere Bewertung erforderlich oder empfohlen.
+  - Implikation: mehr Bewertung ist erforderlich oder empfohlen.
     
-- Schulung / Continue-Training: Prozess während der erweitert eDiscovery vom Experten, die die Datei tagging ist lernen Beispiele und erhält die Möglichkeit zum Identifizieren der Relevanz Kriterien für jedes Problem im Kontext des Einzelfall relevant sind.
+- Schulung/Fortbildung: Prozess, bei dem Advanced eDiscovery vom Experten, der die Dateibeispiele kennzeichnet, erlernt und die Möglichkeit erhält, Relevanz-Kriterien für jedes Problem im Kontext jedes Falls zu identifizieren.
     
-  - Implikation: Das Problem Bedarf weitere Schulungen. Im nächste Beispiel sollte erstellt und markiert werden. 
+  - Implikation: das Problem benötigt mehr Schulung; Das nächste Beispiel sollte erstellt und gekennzeichnet werden. 
     
-- Batch-Berechnung: Relevanz Prozess in welche erweitert eDiscovery nimmt die während der Phase der Schulung erworbene Kenntnisse und die gesamte Datei Auffüllung betrifft. Alle Dateien in der Dateigruppe relevanten sind für Relevanz bewertet und einen Faktor Relevanz zugewiesen.
+- Batch Berechnung: Relevanzprozess, bei dem Advanced eDiscovery das während der Schulung erworbene Wissen einnimmt und es auf die gesamte Datei Auffüllung anwenden kann. Alle Dateien in der entsprechenden Dateigruppe werden auf Relevanz ausgewertet und einem Relevanz-Wert zugewiesen.
     
-  - Implikation: Das Problem hat konstant und Batch Berechnung ausgeführt werden kann.
+  - Implikation: das Problem wurde stabilisiert, und die Batch Berechnung kann ausgeführt werden.
     
-- Synchronisieren: Relevanz gibt an, wann ein Experte überprüft und tags eine Stichprobe Dateien aus Laden einer zusätzlichen Datei ausgewählt, während ein Szenario lädt Gang (engl.).
+- Catch-up: Relevanz gibt an, wann ein Experte ein Beispiel von Dateien überprüft und markiert, die aus einer zusätzlichen Datei Auslastung während eines Szenarios für die parallele Auslastung ausgewählt wurden.
     
-  - Implikation: Eine neue Last wurde hinzugefügt, und synchronisieren weiterzuarbeiten erforderlich ist.
+  - Implikation: Es wurde eine neue Ladung hinzugefügt, und der Nachholbedarf ist erforderlich, um weiter zu arbeiten.
     
-- Markieren von Inkonsistenzen: Prozess identifiziert, über eine erweiterte eDiscovery-Algorithmus Inkonsistenzen in der Datei tagging-Prozess, die sich negativ auf die Analyse auswirken können.
+- Tag Inkonsistenzen: Prozess identifiziert über einen erweiterten eDiscovery-Algorithmus Inkonsistenzen im Datei Kennzeichnungs Prozess, die sich negativ auf die Analyse auswirken können.
     
-  - Implikation: Im nächste Beispiel enthält Dateien, die markiert wurden in den vorherigen Beispielen und deren tagging muss wiederhergestellt werden.
+  - Implikation: im nächsten Beispiel werden Dateien enthalten, die in vorherigen Beispielen markiert wurden, und Ihr Tagging muss erneut ausgeführt werden.
     
-- Aktualisieren der Klassifizierung: ermöglicht dem Benutzer das tagging oder seeding Änderungen anwenden.
+- Klassifizierung aktualisieren: ermöglicht dem Benutzer das Anwenden von Markierungs-oder Seeding Änderungen.
     
-  - Implikation: Kategorien und seeding Änderungen können angewendet werden ohne ein weiteres Beispiel der Relevanz manuell ausführen.
+  - Implikation: Tagging-und Seeding Änderungen können angewendet werden, ohne dass ein weiteres Beispiel für die Relevanz manuell ausgeführt werden muss.
     
-- In der Warteschleife: die Relevanz Training abgeschlossen ist.
+- In der Warteschleife: der Relevanz-Schulungsprozess ist abgeschlossen.
     
-  - Implikation: Keine Relevanz Schulung ist erforderlich, zu diesem Zeitpunkt.
+  - Implikation: an dieser Stelle ist keine Relevanz-Schulung erforderlich.
     
-Obwohl erweiterte eDiscovery Sie durch den Prozess mit weitere Schritte in verschiedenen Phasen empfohlen führt, außerdem können Sie zwischen den Seiten und Registerkarten navigieren und Auswahlmöglichkeiten für Situationen vornehmen, die für Ihre Einzelfall Problem relevant sind möglicherweise oder Überprüfung des Dokuments. 
+Obwohl Advanced eDiscovery Sie durch den Prozess führt, mit empfohlenen nächsten Schritten in unterschiedlichen Phasen, können Sie auch zwischen Registerkarten und Seiten navigieren und Entscheidungen treffen, um Situationen zu beheben, die für Ihren Einzelfall, Ihr Problem oder Ihre Prozess zur Dokumentüberprüfung. 
   
-Es ist möglich, übernehmen oder erweiterte eDiscovery Nächstes Verarbeitung Auswahlmöglichkeiten überschreiben. Wenn Sie möchten, führen Sie einen Schritt als Nächstes empfohlen, klicken Sie auf der **nächste Schritt** in der erweiterten Problem Anzeige im Dialogfeld aufgeführt, klicken Sie auf die Schaltfläche **Ändern** neben im nächsten Schritt, und wählen Sie eine andere Option für nächsten Schritt. 
+Es ist möglich, erweiterte eDiscovery-Verarbeitungsoptionen für die nächste Schritt Verarbeitung zu akzeptieren oder zu überschreiben. Wenn Sie einen anderen als den empfohlenen nächsten Schritt ausführen möchten, klicken Sie auf den **nächsten Schritt** , der in der erweiterten Problemanzeige im Dialogfeld angezeigt wird, klicken Sie neben dem nächsten Schritt auf die Schaltfläche **ändern** , und wählen Sie eine andere Option für nächsten Schritt aus. 
   
 > [!NOTE]
-> Einige Optionen bleiben deaktivierte nach entsperren, wie sie für die Verwendung im Prozess zu diesem Zeitpunkt nicht unterstützt werden. 
+> Einige Optionen bleiben nach dem entriegeln möglicherweise deaktiviert, da Sie nicht für die Verwendung an diesem Punkt des Prozesses unterstützt werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Grundlegendes zur Bewertung in Relevanz](assessment-in-relevance-in-advanced-ediscovery.md)
+[Bedeutung der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Kategorien und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
+[Tagging und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Kategorien und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging-und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Nachverfolgen der Relevanz Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
+[Nachverfolgen der Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Entscheiden je nach den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Entscheiden basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testen der Relevanz Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
 

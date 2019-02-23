@@ -1,41 +1,41 @@
 ---
-title: EU Sozialversicherungsnummer oder einer ähnlichen-ID
+title: EU-sozialVersicherungsNummer oder entsprechende ID
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: In diesem Thema wird eine Data Loss Prevention (DLP) Richtlinie sieht für beim Erkennen des EU Sozialversicherungsnummer oder gleichwertige ID vertrauliche Informationen-Typs. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn die EU-sozialVersicherungsNummer oder der entsprechende ID-vertrauliche Informationstyp erkannt wird. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529332"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216525"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>EU Sozialversicherungsnummer oder einer ähnlichen-ID
+# <a name="eu-social-security-number-or-equivalent-id"></a>EU-sozialVersicherungsNummer oder entsprechende ID
 
-In diesem Thema wird, wonach eine Data Loss Prevention (DLP) Richtlinie sucht bei der Entdeckung des EU Sozialversicherungsnummer (SSN) oder die entsprechende ID vertrauliche Informationen Typs. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn die EU-sozialVersicherungsNummer (SSN) oder der entsprechende ID-vertrauliche Informationstyp erkannt wird. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
   
 ## <a name="austria"></a>Österreich
 
 ### <a name="format"></a>Format
 
-10 Ziffern im angegebenen format
+10 Ziffern im angegebenen Format
   
 ### <a name="pattern"></a>Muster
 
 10 Ziffern:
   
--  Drei Ziffern, die eine fortlaufende Zahl entsprechen 
+-  Drei Ziffern, die einer Seriennummer entsprechen 
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
-- Sechs Ziffern, die das Geburtsdatum (DDMMYY) entsprechen
+- Sechs Ziffern, die dem Geburtsdatum entsprechen (TTMMJJ)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -45,13 +45,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_austria_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_austria_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_austria_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_austria_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_austria_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -66,11 +66,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsaustriaeussnorequivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-soziale Sicherheit keine
+Sozialversicherungsnummer
   
 social security number
 
@@ -78,23 +78,23 @@ social security number
 
 social security code
   
-Versicherungsvertreter Anzahl
+Versicherungsnummer
   
-österreichische ssn
+Austrian SSN
   
-ssn #
+SSN
   
-ssn
+SSN
   
-Versicherungsvertreter code
+versicherungscode
   
-Versicherungsvertreter Code #
+versicherungscode #
   
-Socialsecurityno #
+socialsecurityno #
   
 Sozialversicherungsnummer
   
-Soziale Sicherheit kein
+soziale Sicherheit kein
   
 Versicherungsnummer
   
@@ -102,7 +102,7 @@ Versicherungsnummer
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen oder Trennzeichen
+11 Ziffern ohne Leerzeichen oder Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -116,13 +116,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_belgium_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_belgium_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_belgium_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_belgium_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_belgium_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_belgium_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -137,51 +137,51 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsbelgiumeussnorequivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
-belgische Vorwahl
+belgische nationale Nummer
   
-Vorwahl
+nationale Nummer
   
 social security number
 
   
-Nationalnumber #
+nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-Bnn #
+BNN
   
-bnn
+BNN
   
-Persönliche Id-Nummer
+persönliche ID-Nummer
   
-Personalidnumber #
+personalidnumber #
   
-national numéro
+Numéro National
   
 numéro de sécurité
 
   
-Numéro d'Assuré
+Numéro d'assuré
   
-national identifiant
+identifizierbare nationale
   
-Identifiantnational #
+identifiantnational #
   
-Numéronational #
+numéronational #
   
 ## <a name="croatia"></a>Kroatien
 
 ### <a name="format"></a>Format
 
-11 Zahlen ohne Leerzeichen und Trennzeichen
+11 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -189,7 +189,7 @@ Numéronational #
   
 -  Zehn Ziffern 
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -199,13 +199,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_croatia_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_croatia_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_croatia_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_croatia_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_croatia_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_croatia_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -220,56 +220,56 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordscroatiaeussnorequivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
-Persönliche Identifikationsnummer
+persönliche Identifikationsnummer
   
-Anzahl der Master Bürger
+Master-Bürgerzahl
   
-National Identifikationsnummer
+nationale Identifikationsnummer
   
 social security number
 
   
-Nationalnumber #
+nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-Bnn #
+BNN
   
-bnn
+BNN
   
-Persönliche Id-Nummer
+persönliche ID-Nummer
   
-Personalidnumber #
+personalidnumber #
   
-oib
+OIB
   
-Osobni Identifikacijski broj
+Osobni identifikacijski Broj
   
-## <a name="czech-republic"></a>Tschechische Republik
+## <a name="czech-republic"></a>Tschechien
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern und einem umgekehrten Schrägstrich in dem angegebenen Muster
+Zehn Ziffern und ein umgekehrter Schrägstrich im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Zehn Ziffern und einem umgekehrten Schrägstrich:
+Zehn Ziffern und ein umgekehrter Schrägstrich:
   
-- Sechs Ziffern, die das Geburtsdatum (JJMMTT) entsprechen: 
+- Sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT): 
     
-- Ein umgekehrter Schrägstrich
+- Einen umgekehrten Schrägstrich
     
-- Drei Ziffern, die eine fortlaufende Zahl entsprechen, die Personen, die an demselben Tag geboren trennt
+- Drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am selben Datum geboren wurden
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -279,13 +279,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_czech_republic_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_czech_republic_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_czech_republic_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_czech_republic_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_czech_republic_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -300,52 +300,52 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsczechrepubliceussnorequivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
-Geburtsdatum Anzahl
+Geburtsnummer
   
-National Identifikationsnummer
+nationale Identifikationsnummer
   
-Persönliche Identifikationsnummer
+persönliche Identifikationsnummer
   
 social security number
 
   
-Nationalnumber #
+nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
-Vorwahl
+nationale Nummer
   
-Persönliche Id-Nummer
+persönliche ID-Nummer
   
-Personalidnumber #
+personalidnumber #
   
 rč
   
-Rodné číslo
+rodné číslo
   
-Rodne cislo
+rodne cislo
   
 ## <a name="denmark"></a>Dänemark
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern und ein Bindestrich in dem angegebenen Muster
+Zehn Ziffern und ein Bindestrich im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
 Zehn Ziffern und ein Bindestrich:
   
-- Sechs Ziffern, die das Geburtsdatum (DDMMYY) entsprechen 
+- Sechs Ziffern, die dem Geburtsdatum entsprechen (TTMMJJ) 
     
 - Ein Bindestrich 
     
-- Vier Ziffern, die eine Sequenznummer entsprechen
+- Vier Ziffern, die einer Sequenznummer entsprechen
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -355,13 +355,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_denmark_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_denmark_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_denmark_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_denmark_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_denmark_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_denmark_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -376,56 +376,56 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsdenmarkeussnorequivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
 
-Persönliche Identifikationsnummer
+persönliche Identifikationsnummer
   
-National Identifikationsnummer
+nationale Identifikationsnummer
   
 social security number
 
   
-Nationalnumber #
+nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
-Vorwahl
+nationale Nummer
   
-Persönliche Id-Nummer
+persönliche ID-Nummer
   
-Personalidnumber #
+personalidnumber #
   
-CPR-nummer
+CPR-Nummer
   
-personnummer
+PERSONNUMMER
   
 ## <a name="finland"></a>Finnland
 
 ### <a name="format"></a>Format
 
-Eine Kombination 11 Zeichen im angegebenen format
+Eine Kombination aus 11 Zeichen im angegebenen Format
   
 ### <a name="pattern"></a>Muster
 
-Eine Kombination der 11 Zeichen im angegebenen Format:
+Eine Kombination aus 11 Zeichen im angegebenen Format:
   
 -  Sechs Ziffern 
     
-- Eine Instanz einer der folgenden:
+- Eine der folgenden Instanzen:
     
-  - Plus -symbol
+  - Plus-Symbol
     
-  - Minuszeichen
+  - Minus Zeichen
     
-  - Die Buchstaben "A" (nicht Groß-/Kleinschreibung)
+  - Der Buchstabe "A" (Groß-/Kleinschreibung wird nicht beachtet)
     
 - Drei Ziffern
     
-- Einen Buchstaben oder eine Ziffer
+- Ein Buchstabe oder eine Ziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -435,13 +435,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_finland_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_finland_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_finland_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_finland_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_finland_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_finland_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -456,70 +456,70 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
 
   
-Persönliche id
+persönliche ID
   
-Anzahl der Identität
+Identitätsnummer
   
-Anzahl der Finnland Personalausweis
+nationale finnische ID-Nummer
   
-Personalidnumber #
+personalidnumber #
   
-National Identifikationsnummer
+nationale Identifikationsnummer
   
 ID-Nummer
   
-Personalausweis keine.
+nationale ID-Nr.
   
-Ausweis-Id-Nummer
+nationale ID-Nummer
   
-ID keine
+ID Nein
   
 tunnistenumero
   
 henkilötunnus
   
-Yksilöllinen Henkilökohtainen tunnistenumero
+yksilöllinen henkilökohtainen tunnistenumero
   
-Ainutlaatuinen Henkilökohtainen tunnus
+ainutlaatuinen henkilökohtainen tunnus
   
-Identiteetti numero
+identiteetti numero
   
-Suomen Kansallinen henkilötunnus
+Suomen der Kok henkilötunnus
   
-Henkilötunnusnumero #
+henkilötunnusnumero #
   
-Kansallisen tunnistenumero
+kansallisen tunnistenumero
   
 tunnusnumero
   
-Kansallinen Tunnus numero
+der Kok tunnus numero
   
-hetu
+Hetu
   
 ## <a name="france"></a>Frankreich
 
-Weitere Informationen hierzu finden Sie im Abschnitt "französische Sozialversicherungsnummer (INSEE)" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "französische sozialVersicherungsNummer (INSEE)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Deutschland
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Deutschland Identität Card-Nummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "Deutschland PersonalausweisNummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Griechenland
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Griechenland nationale d ' Identité" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "GriechenLand National ID Card" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Ungarn
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -533,13 +533,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_hungary_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_hungary_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_hungary_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_hungary_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_hungary_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_hungary_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -554,72 +554,72 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordshungaryeussnorequivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-Ungarisch Sozialversicherungsnummer
+Sozialversicherungsnummer (ungarisch)
   
 social security number
 
   
-Socialsecuritynumber #
+socialsecuritynumber #
   
-Hssn #
+hssn #
   
 socialsecuritynno
   
 hssn
   
-taj
+Taj
   
-Taj #
+Taj
   
-ssn
+SSN
   
-ssn #
+SSN
   
-soziale Sicherheit keine
+Sozialversicherungsnummer
   
-áfa
+ÁFA
   
-Közösségi adószám
+közösségi adószám
   
-Általános Forgalmi Adó szám
+Általános forgalmi adó szám
   
-Hozzáadottérték adó
+hozzáadottérték adó
   
-Áfa szám
+ÁFA szám
   
-Magyar Áfa szám
+Magyar ÁFA szám
   
 ## <a name="portugal"></a>Portugal
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Portugal Bürger Card-Nummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "portugiesische Bürgerkarten Nummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="spain"></a>Spanien
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Spanien Sozialversicherungsnummer (SSN)" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "sozialVersicherungsNummer (SSN) in Spanien" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="sweden"></a>Schweden
 
 ### <a name="format"></a>Format
 
-12 Ziffern ohne Leerzeichen und Trennzeichen
+12 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
   
--  Acht Ziffern, die das Geburtsdatum (JJJJMMTT) entsprechen 
+-  Acht Ziffern, die dem Geburtsdatum entsprechen (JJJJMMTT) 
     
-- Drei Ziffern, die eine fortlaufende Zahl entsprechen, in dem: 
+- Drei Ziffern, die einer Seriennummer entsprechen, wobei: 
     
-  - Die letzte Ziffer in der Seriennummer gibt Geschlecht an, durch die Zuweisung von eine ungerade Anzahl für Männlich und eine gerade Anzahl für Weiblich
+  - Die letzte Ziffer in der Seriennummer kennzeichnet das Geschlecht durch die Zuweisung einer ungerade Zahl für männliche und eine gerade Zahl für weibliche
     
-  - Bis zu 1990 entsprach die Zuordnung der Seriennummer auf den Kanton Geburtsbetriebs der Anzahl der Bearer oder (wenn vor 1947 geboren), in dem er hatte wurde Leben, gemäß Tax-Datensätze auf Januar 1, 1947 mit einen speziellen Code (in der Regel 9 als 7. Ziffer) für Einwanderer 
+  - Bis zu 1990 entspricht die Zuordnung der Seriennummer der Grafschaft, in der der Träger der Nummer geboren wurde, oder (wenn er vor 1947 geboren wurde), in dem er nach Steuerdaten Sätzen am 1. Januar 1947 lebte, mit einem speziellen Code (in der Regel 9 als 7. Ziffer) für Einwanderer 
     
-- Ein Kontrollkästchen Ziffer
+- Eine Prüfziffer
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -629,13 +629,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_sweden_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_sweden_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_sweden_eu_ssn_or_equivalent` gefunden wird. 
+- Ein Schlüsselwort `Keywords_sweden_eu_ssn_or_equivalent` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_sweden_eu_ssn_or_equivalent` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_sweden_eu_ssn_or_equivalent` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -650,36 +650,36 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsswedeneussnorequivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
-Persönliche Id-Nummer
+persönliche ID-Nummer
   
 identification number
 
   
-Persönliche Id keine
+persönliche ID Nein
   
-Identität keine
+Identität Nein
   
-Kennung keine
+Identifikationsnummer
   
-Persönliche Identifikationsnummer keine
+persönliche Identifikationsnummer
   
-Personnummer-id
+PERSONNUMMER-ID
   
-Personligt-Id-nummer
+personligt-ID-Nummer
   
-Unikt-Id-nummer
+unikt-ID-Nummer
   
-personnummer
+PERSONNUMMER
   
 identifikationsnumret
   
-Personnummer #
+PERSONNUMMER #
   
-Identifikationsnumret #
+identifikationsnumret #
   
 ## <a name="see-also"></a>Siehe auch
 

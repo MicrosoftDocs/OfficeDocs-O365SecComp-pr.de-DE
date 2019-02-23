@@ -1,42 +1,42 @@
 ---
-title: Erstellen eines Berichts in Archiven in eDiscovery-Fälle in Office 365
+title: Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 9/11/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Verwenden Sie das Skript einen Bericht mit Informationen über alle Haltestatus, die eDiscovery-Fälle in die Office 365-Sicherheit zugeordnet sind in diesem Artikel &amp; Compliance Center.
-ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Verwenden Sie das Skript in diesem Artikel, um einen Bericht zu generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im Office &amp; 365 Security Compliance Center zugeordnet sind.
+ms.openlocfilehash: cf547ff7c76ba6e16a3bde18465ae0aef9ab4075
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038208"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217436"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Erstellen eines Berichts in Archiven in eDiscovery-Fälle in Office 365
+# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Erstellen eines Berichts zu Haltebereichen in eDiscovery-Fällen in Office 365
   
-Das Skript in diesem Artikel kann Administratoren die eDiscovery und eDiscovery-Manager erstellen Sie einen Bericht mit Informationen über alle Haltestatus, die eDiscovery-Fälle in die Office 365-Sicherheit zugeordnet sind &amp; Compliance Center. Der Bericht enthält Informationen, wie der Name der Anfrage einem Haltebereich zugeordnet, die Speicherorte für Inhalte, die in der Warteschleife platziert werden und ob die Sperre abfragebasierter ist. Wenn Anfragen, die nicht über einen Haltestatus verfügen vorhanden sind, wird das Skript einen Bericht zusätzlichen mit einer Liste von Fällen ohne Haltestatus erstellen.
+Mit dem Skript in diesem Artikel können eDiscovery-Administratoren und eDiscovery-Manager einen Bericht generieren, der Informationen zu allen Haltebereichen enthält, die eDiscovery-Fällen im &amp; Office 365 Security Compliance Center zugeordnet sind. Der Bericht enthält Informationen wie den Namen des Falls, dem ein Haltebereich zugeordnet ist, die inhaltsspeicherorte, die in die Warteschleife gestellt werden, und ob die Aufbewahrung Abfrage basiert ist. Wenn es Fälle gibt, in denen keine haltebereiche vorhanden sind, erstellt das Skript einen zusätzlichen Bericht mit einer Liste von Fällen ohne Aufbewahrung.
 
-Finden Sie [Weitere Informationen](#more-information) im Abschnitt eine ausführliche Beschreibung der Informationen in den Bericht einbezogen. 
+Im Abschnitt [Weitere Informationen](#more-information) finden Sie eine ausführliche Beschreibung der im Bericht enthaltenen Informationen. 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Um einen Bericht über alle eDiscovery-Fälle in Ihrer Organisation generiert werden soll, müssen Sie eine eDiscovery-Administrator in Ihrer Organisation sein. Wenn Sie ein eDiscovery-Manager sind, wird der Bericht nur Informationen zu den Fällen berücksichtigen, die Sie zugreifen können. Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](assign-ediscovery-permissions.md).
+- Wenn Sie einen Bericht zu allen eDiscovery-Fällen in Ihrer Organisation generieren möchten, müssen Sie ein eDiscovery-Administrator in Ihrer Organisation sein. Wenn Sie ein eDiscovery-Manager sind, enthält der Bericht nur Informationen zu den Fällen, auf die Sie zugreifen können. Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office &amp; 365 Security Compliance Center](assign-ediscovery-permissions.md).
     
-- Das Skript in diesem Artikel enthält minimale Fehlerbehandlung. Der primäre Zweck ist Bericht zu den Haltebereichen schnell zu erstellen, die eDiscovery-Fälle in Ihrer Organisation zugeordnet sind.
+- Das Skript in diesem Artikel hat eine minimale Fehlerbehandlung. Der Hauptzweck besteht darin, Schnellbericht zu den Haltebereichen zu erstellen, die den eDiscovery-Fällen in Ihrer Organisation zugeordnet sind.
     
 - Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Schritt 1: Verbinden mit der Sicherheit &amp; Compliance Center mit Remote-PowerShell
+## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Schritt 1: Herstellen einer Verbindung mit &amp; dem Security Compliance Center mithilfe von Remote-PowerShell
 
-Der erste Schritt besteht Verbindung von Windows PowerShell für die Sicherheit &amp; Compliance Center für Ihre Organisation.
+Der erste Schritt besteht darin, Windows PowerShell mit dem Security &amp; Compliance Center für Ihre Organisation zu verbinden.
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei, mithilfe der Dateiname Suffix. ps1; beispielsweise `ConnectSCC.ps1`. 
+1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `ConnectSCC.ps1`. 
     
       ```
       # Get login credentials 
@@ -48,19 +48,19 @@ Der erste Schritt besteht Verbindung von Windows PowerShell für die Sicherheit 
 
 2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, und wechseln Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. 
     
-3. Führen Sie das Skript; Zum Beispiel:
+3. Führen Sie das Skript aus; Zum Beispiel:
 
     ```
     .\ConnectSCC.ps1
     ```
    
-4. Geben Sie nach Ihren Anmeldeinformationen gefragt Ihre e-Mail-Adresse und das Kennwort ein, und klicken Sie dann auf **OK**. 
+4. Wenn Sie zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden, geben Sie Ihre e-Mail-Adresse und Ihr Kennwort ein, und klicken Sie auf **OK**. 
   
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Schritt 2: Ausführen enthält des Skripts in den Bericht eDiscovery-Fälle zugeordnet
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Schritt 2: Ausführen des Skripts zum Melden von Haltebereichen im Zusammenhang mit eDiscovery-Fällen
 
-Nachdem Sie die Sicherheit verbunden sind &amp; Compliance Center mit remote-PowerShell, im nächsten Schritt erstellen und Ausführen des Skripts, das Informationen über die eDiscovery-Fälle in Ihrer Organisation erfasst wird. 
+Nachdem Sie mit der Remote-PowerShell &amp; eine Verbindung mit dem Security Compliance Center hergestellt haben, besteht der nächste Schritt im erstellen und Ausführen des Skripts, das Informationen zu den eDiscovery-Fällen in Ihrer Organisation sammelt. 
   
-1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei, mithilfe der Dateiname Suffix. ps1; beispielsweise CaseHoldsReport.ps1. 
+1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: CaseHoldsReport. ps1. 
     
   ```
 #script begin
@@ -150,49 +150,49 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 #script end
   ```
 
-2. In der Windows PowerShell-Sitzung, die in Schritt 1 geöffnet, wechseln Sie zu dem Ordner, in dem Sie das Skript gespeichert haben. 
+2. Wechseln Sie in der Windows PowerShell-Sitzung, die in Schritt 1 geöffnet wurde, zu dem Ordner, in dem Sie das Skript gespeichert haben. 
     
-3. Führen Sie das Skript; Zum Beispiel:
+3. Führen Sie das Skript aus; Zum Beispiel:
 
     ```
     .\CaseHoldsReport.ps1
     ```
 
-    Das Skript fordert einen Zielordner aus, um den Bericht zu speichern. 
+    Das Skript fordert einen Zielordner an, in dem der Bericht gespeichert werden soll. 
     
-4. Geben Sie den vollständigen Pfadnamen des Ordners, in den Bericht zu speichern, und drücken Sie die **EINGABETASTE**.
+4. Geben Sie den vollständigen Pfadnamen des Ordners ein, in dem der Bericht gespeichert werden soll, und drücken Sie dann die **Eingabe**Taste.
     
     > [!TIP]
-    > Um den Bericht im selben Ordner zu speichern, die in das Skript gespeichert ist, geben Sie einen Punkt (".") Wenn Sie einen Zielordner aufgefordert werden. Um den Bericht in einem Unterordner im Ordner zu speichern, in das Skript gespeichert ist, geben Sie einfach den Namen des Unterordners. 
+    > Zum Speichern des Berichts in demselben Ordner, in dem sich das Skript befindet, geben Sie einen Punkt (".") ein, wenn Sie für einen Zielordner aufgefordert werden. Zum Speichern des Berichts in einem Unterordner in dem Ordner, in dem sich das Skript befindet, geben Sie einfach den Namen des Unterordners ein. 
   
-    Das Skript startet das Erfassen von Informationen zu den eDiscovery-Fällen in Ihrer Organisation. Greifen Sie auf nicht Berichtsdatei während der Ausführung des Skripts. Nachdem das Skript abgeschlossen ist, wird eine Meldung zur Bestätigung in der Windows PowerShell-Sitzung angezeigt. Nachdem diese Meldung angezeigt wird, können Sie den Bericht im Ordner zugreifen, die Sie in Schritt 4 angegeben. Der Dateiname für den Bericht ist `CaseHoldsReport<DateTimeStamp>.csv`.
+    Das Skript fängt an, Informationen zu allen eDiscovery-Fällen in Ihrer Organisation zu sammeln. Greifen Sie während des Skripts nicht auf die Berichtsdatei zu. Nach Abschluss des Skripts wird in der Windows PowerShell-Sitzung eine Bestätigungsmeldung angezeigt. Nachdem diese Meldung angezeigt wurde, können Sie auf den Bericht in dem Ordner zugreifen, den Sie in Schritt 4 angegeben haben. Der Dateiname für den Bericht lautet `CaseHoldsReport<DateTimeStamp>.csv`.
 
-    Auch, erstellt das Skript auch einen Bericht mit einer Liste von Anfragen, die nicht über einen Haltestatus verfügen. Der Dateiname für diesen Bericht ist `CaseswithNoHolds<DateTimeStamp>.csv`.
+    Außerdem erstellt das Skript einen Bericht mit einer Liste von Fällen, die keine haltebereiche enthalten. Der Dateiname für diesen Bericht lautet `CaseswithNoHolds<DateTimeStamp>.csv`.
     
-    Es folgt ein Beispiel der Ausführung des Skripts CaseHoldsReport.ps1. 
+    Nachfolgend finden Sie ein Beispiel für die Verwendung des CaseHoldsReport. ps1-Skripts. 
     
-    ![Die Ausgabe nach der Ausführung des Skripts CaseHoldsReport.ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![Die Ausgabe nach dem Ausführen des CaseHoldsReport. ps1-Skripts](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Weitere Informationen
 
-Die Groß-/Kleinschreibung enthält Bericht, der beim Ausführen des Skripts in diesem Artikel erstellt wird, die folgende Informationen zu jedem Haltebereich enthält. Wie bereits erklärt müssen Sie eine eDiscovery-Administrator sein, um die Informationen für alle Haltestatus in Ihrer Organisation zurückgegeben werden. Weitere Informationen zu Fall enthält, finden Sie unter [eDiscovery-Fälle in die Office 365-Sicherheit &amp; Compliance Center](ediscovery-cases.md).
+Der Fall enthält Bericht, der erstellt wird, wenn Sie das Skript in diesem Artikel ausführen enthält die folgenden Informationen zu den einzelnen Haltebereichen. Wie bereits erläutert, müssen Sie ein eDiscovery-Administrator sein, um Informationen für alle haltebereiche in Ihrer Organisation zurückzugeben. Weitere Informationen zu Fall Haltebereichen finden Sie unter [eDiscovery Cases im Office 365 &amp; Security Compliance Center](ediscovery-cases.md).
   
-  - Der Name des Haltestatus und den Namen der eDiscovery-Fall, die der Haltebereich zugeordnet ist.
+  - Der Name des haltebereichs und der Name des eDiscovery-Falls, dem der Haltebereich zugeordnet ist.
     
-  - Unabhängig davon, ob die eDiscovery-Fall aktiv oder geschlossen ist.
+  - Gibt an, ob der eDiscovery-Fall aktiv oder geschlossen ist.
     
-  - Unabhängig davon, ob die Sperre aktiviert oder deaktiviert ist.
+  - Gibt an, ob der Haltestatus aktiviert oder deaktiviert ist.
     
-  - Die Mitglieder von eDiscovery-Fall, die der Haltebereich zugeordnet ist. Groß-/Kleinschreibung Mitglieder können anzeigen und verwalten eine Anfrage, abhängig von den eDiscovery-Berechtigungen, die sie zugewiesen wurde, haben.
+  - Die Mitglieder des eDiscovery-Falls, dem der Haltebereich zugeordnet ist. Fall Mitglieder können eine Groß-/Kleinschreibung abhängig von den Ihnen zugewiesenen eDiscovery-Berechtigungen anzeigen oder verwalten.
     
-  - Datum und die Uhrzeit der Erstellung die Groß-/Kleinschreibung.
+  - Die Uhrzeit und das Datum, an dem die Anfrage erstellt wurde.
     
-  - Wenn eine Anfrage geschlossen ist, wurde die Person, die geschlossen wurde, und die Uhrzeit und Datum geschlossen.
+  - Wenn eine Groß-/Kleinschreibung geschlossen wird, die Person, die Sie geschlossen hat, und die Uhrzeit und das Datum, zu dem Sie geschlossen wurde.
     
-  - Die Exchange-Postfächern und SharePoint-Websites Speicherorte, die in der Warteschleife sind.
+  - Die Speicherorte von Exchange-Postfächern und SharePoint-Websites.
     
-  - Wenn die Sperre abfragebasierte, ist die Abfragesyntax.
+  - Wenn der Haltebereich Abfrage basiert ist, wird die Abfragesyntax.
     
-  - Die Zeit und Datum, an dem Haltebereich erstellt wurde und die Person, die sie erstellt haben.
+  - Die Uhrzeit und das Datum, an dem die Aufbewahrungszeit erstellt wurde, und die Person, die Sie erstellt hat.
     
-  - Die Zeit und Datum, an dem Haltebereich zuletzt geändert wurde und die Person, die sie geändert.
+  - Uhrzeit und Datum der letzten Änderung und die Person, die Sie geändert hat.

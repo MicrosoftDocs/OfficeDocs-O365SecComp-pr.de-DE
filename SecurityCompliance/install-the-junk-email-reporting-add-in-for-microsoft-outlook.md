@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
-description: In diesem ArticleSupported LanguagesInstall die Junk-e-e-Mail-Reporting-Add-InUninstall die Junk-e-Mail-Reporting hinzufügen-an Weitere Informationen
-ms.openlocfilehash: 4204c80f298a0756f8e2fde2d0845d07570eaff9
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: In diesem articleSupported LanguagesInstall die Junk-e-Mail-Berichterstellung Add-inDeinstallieren die Junk-e-Mail-Reporting Add-Infor Weitere Informationen
+ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272320"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217025"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installation des Add-Ins „Junk-E-Mail-Berichtsprogramm“ für Microsoft Outlook
   
@@ -62,9 +62,9 @@ Die folgenden Sprachen werden von dem Add-In "Junk-E-Mail-Berichtsprogramm" unte
 
 Sie können das Add-Ins „Junk-E-Mail-Berichtsprogramm“ installieren:
   
-- Durch Ausführen von Windows Installer-Pakets wie andere MSI-Datei. Wenn Sie das Add-in installieren, wird eine Benutzeroberfläche wird geöffnet und in den Installationsbildschirmen aufgefordert. Weitere Informationen finden Sie unter [der Junk-e-Mail-Reporting-Add-In mit dem Setup-Assistenten installieren](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard). OR
+- Durch das Windows Installer-Paket wie jede andere MSI-Datei. Wenn Sie das Add-in installieren, wird eine GUI-Oberfläche geöffnet, in der Sie über die Installationsbildschirme gefragt werden. Weitere Informationen finden Sie unter [Installieren des Add-Ins "Junk-e-Mail-Berichterstellung" mithilfe des Setup-Assistenten](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-InUsingtheSetupWizard). ODER
     
-- Durch Ausführen einer automatischen Installations, die Benutzeroberfläche wird unterdrückt. Stattdessen geben Sie die Befehlszeilenoptionen, die ein Installationsskript ausgeführt. Wenn Sie das Add-in installieren, stehen zusätzliche Konfigurationsoptionen für die nicht mithilfe der Benutzeroberfläche verfügbar sind. Weitere Informationen finden Sie unter [Installieren der Junk-e-Mail-Reporting-Add-In unbeaufsichtigten Modus verwenden](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
+- Durch das Durchführen einer unbeaufsichtigten Installation, die die Installationsbenutzeroberfläche unterdrückt. Stattdessen geben Sie Befehlszeilenoptionen an, die ein Installationsskript ausführen. Wenn Sie das Add-in installieren, stehen zusätzliche Konfigurationsoptionen zur Verfügung, die über die GUI-Schnittstelle nicht verfügbar sind. Weitere Informationen finden Sie unter [Installieren des Add-Ins "Junk-e-Mail-Berichterstellung" mithilfe des unbeaufsichtigten Modus](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
     
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -76,11 +76,11 @@ Installationsvoraussetzungen für das Microsoft-Add-In „Junk-E-Mail-Berichtspr
     
 - Primäre Interop-Assemblys für Microsoft Office: 
     
-  - Informationen zum Herunterladen der primären Interop-Assemblys für Microsoft Office 2010 oder höher, fahren Sie mit dem [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=166026).
+  - Um die primären Interop-Assemblys für Microsoft Office 2010 oder höher herunterzuladen, wechseln Sie zum [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=166026).
     
-  - Wenn die primären Interop-Assemblys für Microsoft Office 2007 herunterladen möchten, wechseln Sie zum [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=72637).
+  - Um die primären Interop-Assemblys für Microsoft Office 2007 herunterzuladen, wechseln Sie zum [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=72637).
     
-- Microsoft .NET Framework, [Version 2.0](https://go.microsoft.com/fwlink/?LinkID=208706).
+- Microsoft .NET Framework, [Version 2,0](https://go.microsoft.com/fwlink/?LinkID=208706).
     
 > [!NOTE]
 > Für den Computer, auf dem das Add-In installiert werden soll, sind Administratorrechte erforderlich. 
@@ -90,7 +90,7 @@ Installationsvoraussetzungen für das Microsoft-Add-In „Junk-E-Mail-Berichtspr
 
 1. Schließen Sie Outlook auf Ihrem Computer.
     
-2. Klicken Sie auf der Seite Microsoft Download Center für die Microsoft Junk-e-Mail Reporting Add-In für Microsoft Outlook [https://go.microsoft.com/fwlink/?LinkID=147248](https://go.microsoft.com/fwlink/?LinkID=147248) , und Laden Sie die MSI-Datei. 
+2. Wechseln Sie zur Seite Microsoft Download Center für das Microsoft-Add-in "Junk-e- [https://go.microsoft.com/fwlink/?LinkID=147248](https://go.microsoft.com/fwlink/?LinkID=147248) Mail-Berichterstellung für Microsoft Outlook", und laden Sie die MSI-Datei herunter. 
     
 3. Doppelklicken Sie auf die MSI-Datei. 
     
@@ -102,7 +102,7 @@ Installationsvoraussetzungen für das Microsoft-Add-In „Junk-E-Mail-Berichtspr
     
 7. Starten Sie Outlook.
     
-8. Suchen Sie die **Junk-e-** Schaltfläche auf Ihrem Outlook-Menüband. Sie können jetzt Junk-e-Mails an Microsoft, indem Sie die junk-e-Mail-Nachrichten in Ihrem Posteingang auswählen und klicken auf die Schaltfläche **Bericht Junk** melden. 
+8. Suchen Sie im Outlook-Menüband nach der Schaltfläche **Junk** . Sie können jetzt Junk-e-Mails an Microsoft melden, indem Sie die Junk-e-Mail-Nachrichten in Ihrem Posteingang auswählen und auf die Schaltfläche **Junk melden** klicken. 
     
 9. Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzeigen, z. B. **Als betrügerischen Phishing-Versuch melden**, wenn Sie Phishing-Scam-E-Mails an Microsoft melden möchten. In Ihrem Junk-E-Mailordner können Sie auch **Keine Junk-E-Mail** auswählen, wenn eine E-Mail-Nachricht fälschlicherweise als Junk-E-Mail gekennzeichnet wurde. 
     
@@ -115,22 +115,22 @@ Installationsvoraussetzungen für das Microsoft-Add-In „Junk-E-Mail-Berichtspr
     
 3. Falls Sie das Add-In direkt ohne optionale Parameter installieren möchten, geben Sie Folgendes an:
     
-  - X86-Computern Outlook:`msiexec /qn /i JunkReportingAdd-in.x86-en.msi`
+  - Computer, auf denen x86 Outlook läuft:`msiexec /qn /i JunkReportingAdd-in.x86-en.msi`
     
-  - X64-Computern Outlook:`msiexec /qn /i JunkReportingAdd-in.x64-en.msi`
+  - Computer, auf denen x64 Outlook läuft:`msiexec /qn /i JunkReportingAdd-in.x64-en.msi`
     
     Sie können auch die optionalen Parameter "MaxMessageSelection" und "BccEmailAddress" angeben:
     
-  - MaxMessageSelection ermöglicht Administratoren, die maximale Anzahl von Nachrichten zu definieren, die von Benutzern für die Übermittlung in einem einzigen Klick ausgewählt werden kann. Der Bereich umfasst 1 bis 50 Nachrichten, und der Standardwert ist 10 Nachrichten.
+  - MaxMessageSelection ermöglicht es Administratoren, die maximale Anzahl von Nachrichten zu definieren, die von Benutzern für die Übermittlung in einem einzigen Mausklick ausgewählt werden können. Der Wert von 1 bis 50 Nachrichten, und der standardmäßige ist 10 Nachrichten.
     
-    Beispiel: Wenn Sie die maximale Anzahl von Nachrichten, die von Benutzern für die Übermittlung in einem einzigen Klick an 16 ausgewählt werden können, festlegen möchten, verwenden Sie die folgende Option als Teil des Installationsbefehls:`MaxMessageSelection=16`
+    Beispiel: Wenn Sie die maximale Anzahl von Nachrichten festlegen möchten, die von Benutzern für die Übermittlung in einem einzigen Klick auf 16 ausgewählt werden können, verwenden Sie die folgende Option als Teil des Installationsbefehls:`MaxMessageSelection=16`
     
-  - BccEmailAddress kann Administratoren ein Postfach einrichten, um eine Kopie der alle ihre Benutzerübermittlungen erhalten, indem Sie eine e-Mail-Adresse "Bcc" festlegen. Wenn das Postfach, eine Kopie aller übermittelt eingerichtet ist werden an die BccEmailAddress-e-Mails gesendet. Andernfalls ist die Standardeinstellung keine Bcc-e-Mail-Adresse.
+  - Mit BccEmailAddress können Administratoren ein Postfach einrichten, um eine Kopie aller Benutzerübermittlungen zu erhalten, indem Sie eine Bcc-e-Mail-Adresse festlegen. Wenn das Postfach eingerichtet ist, wird eine Kopie aller übermittelten e-Mails an den BccEmailAddress gesendet. Andernfalls ist die Standardeinstellung keine Bcc-e-Mail-Adresse.
     
-    Beispiel: Wenn Sie junkReports@contoso.com als die Bcc-e-Mail-Adresse für alle Übermittlungen verwenden möchten, verwenden Sie den folgenden Befehl ein:`BccEmailAddress="junkReports@contoso.com"`
+    Beispiel: Wenn Sie junkReports@contoso.com als Bcc-e-Mail-Adresse für alle Übermittlungen verwenden möchten, verwenden Sie den folgenden Befehl:`BccEmailAddress="junkReports@contoso.com"`
     
     > [!NOTE]
-    > Sie können mehrere Bcc e-Mail-Adressen, indem sie mit einem Semikolon als Trennzeichen eingeben festlegen. Beispiel:`BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"`
+    > Sie können mehrere Bcc-e-Mail-Adressen festlegen, indem Sie Sie mit einem Semikolon-Trennzeichen eingeben. Beispiel`BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"`
   
     Zum Hinzufügen dieser beiden optionalen Parameter würden Sie gemäß den oben stehenden Beispielen für einen Computer, auf dem x86 Outlook ausgeführt wird, Folgendes eingeben: 
     
@@ -140,7 +140,7 @@ Installationsvoraussetzungen für das Microsoft-Add-In „Junk-E-Mail-Berichtspr
 
 4. Nachdem die Installation abgeschlossen ist, starten Sie Outlook.
     
-5. Suchen Sie die **Junk-e-** Schaltfläche auf Ihrem Outlook-Menüband. Sie können jetzt Junk-e-Mails an Microsoft, indem Sie die junk-e-Mail-Nachrichten in Ihrem Posteingang auswählen und klicken auf die Schaltfläche **Bericht Junk** melden. 
+5. Suchen Sie im Outlook-Menüband nach der Schaltfläche **Junk** . Sie können jetzt Junk-e-Mails an Microsoft melden, indem Sie die Junk-e-Mail-Nachrichten in Ihrem Posteingang auswählen und auf die Schaltfläche **Junk melden** klicken. 
     
 6. Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzeigen, z. B. **Als betrügerischen Phishing-Versuch melden**, wenn Sie Phishing-Scam-E-Mails an Microsoft melden möchten. In Ihrem Junk-E-Mailordner können Sie auch **Keine Junk-E-Mail** auswählen, wenn eine E-Mail-Nachricht fälschlicherweise als Junk-E-Mail gekennzeichnet wurde. 
     
@@ -183,7 +183,7 @@ Wählen Sie zum Deinstallieren des Add-Ins „Junk-E-Mail-Berichtsprogramm“ ei
   
 2. Führen Sie die MSI-Datei aus, die Sie zuvor ausgeführt haben, um das Add-In zu installieren. 
     
-    (Wechseln Sie zur Seite im Microsoft Download Center für die Microsoft Junk-e-Mail Reporting Add-In für Microsoft Outlook [https://go.microsoft.com/fwlink/?LinkId=147248](https://go.microsoft.com/fwlink/?LinkId=147248), laden Sie die MSI-Datei, und doppelklicken Sie dann auf die MSI-Datei.) 
+    (Wechseln Sie zur Seite Microsoft Download Center für das Microsoft Junk-e-Mail-Berichts-Add [https://go.microsoft.com/fwlink/?LinkId=147248](https://go.microsoft.com/fwlink/?LinkId=147248)-in für Microsoft Outlook, laden Sie die MSI-Datei herunter, und doppelklicken Sie dann auf die MSI-Datei.) 
     
 3. Folgen Sie den Eingabeaufforderungen, um das Add-In zu deinstallieren.
     
@@ -201,9 +201,9 @@ Wählen Sie zum Deinstallieren des Add-Ins „Junk-E-Mail-Berichtsprogramm“ ei
     
 3. Geben Sie die folgenden Befehlszeilenparameter an:
     
-    X86-Computern Outlook:`msiexec /x JunkReportingAdd-in.x86-en.msi /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"`
+    Computer, auf denen x86 Outlook läuft:`msiexec /x JunkReportingAdd-in.x86-en.msi /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"`
     
-    X64-Computern Outlook:`msiexec /x JunkReportingAdd-in.x64-en.msi /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"`
+    Computer, auf denen x64 Outlook läuft:`msiexec /x JunkReportingAdd-in.x64-en.msi /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"`
     
 4. Starten Sie Outlook neu, um sich davon zu überzeugen, dass das Add-In nicht mehr in der Outlook-Menüleiste angezeigt wird.
     

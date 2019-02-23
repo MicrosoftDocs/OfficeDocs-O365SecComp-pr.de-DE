@@ -1,143 +1,143 @@
 ---
-title: Einrichten von Lasten importierte Dateien in Office 365 erweiterte eDiscovery hinzu
+title: Einrichten von Lasten zum Hinzufügen von importierten Dateien in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Überprüfen Sie die Schritte aus, um die letzten definierten laden oder einen Batch von Dateien mit früherer ausführen Relevanz Schulung in Office 365 erweiterte eDiscovery importierte Dateien hinzugefügt.  '
-ms.openlocfilehash: 2c986578b969b671351930fd6939a90e3a821dc2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Lesen Sie die Schritte zum Hinzufügen von importierten Dateien zur zuletzt definierten Last oder zum letzten Batch von Dateien, bevor Sie die Relevanz-Schulung in Office 365 Advanced eDiscovery ausführen.  '
+ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529974"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215985"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Einrichten von Lasten importierte Dateien in Office 365 erweiterte eDiscovery hinzu
+# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Einrichten von Lasten zum Hinzufügen von importierten Dateien in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Im erweiterten eDiscovery ist eine Last einen neuen Batch von Dateien in eine Anfrage hinzugefügt. Standardmäßig wird ein Hardwaregerät definiert und alle importierte Dateien hinzugefügt. Bevor Sie Relevanz Schulungen durchführen, müssen die Last importierte Dateien hinzugefügt werden. 
+In Advanced eDiscovery ist eine Auslastung ein neuer Batch von Dateien, die zu einem Fall hinzugefügt werden. Standardmäßig wird eine Auslastung definiert, und alle importierten Dateien werden ihr hinzugefügt. Vor der Durchführung der Relevanz-Schulung müssen importierte Dateien der Belastung hinzugefügt werden. 
   
 Berücksichtigen Sie die folgenden Szenarien:
   
-- Neue Dateien bekanntermaßen ähnlich wie bei der vorherigen Dateien auf die Groß-/Kleinschreibung Datenbank geladen werden, oder der vorherigen Laden der Dateien einer zufällig ausgewählten Satz aus der Auflistung der Datei wurde. Fügen Sie in diesem Fall die importierten Dateien das Laden der aktuellen Datei hinzu.
+- Neue Dateien sind bekanntermaßen vergleichbar mit den vorherigen Dateien, die in die Case-Datenbank geladen wurden, oder die frühere Datei Last war ein Zufalls Satz aus der file-Auflistung. Fügen Sie in dieser Instanz die importierten Dateien der aktuellen Datei Auslastung hinzu.
     
-- Neue Dateien unterscheiden sich von vorherigen Unterhaltungen (beispielsweise aus einer anderen Quelle), oder Sie haben keine Vorkenntnisse, dass sie ähnliche oder auf den vorherigen Lasten unterschiedliche sind. Fügen Sie in diesem Szenario die importierten Dateien zu einer neuen Datei laden. Erweiterte eDiscovery dies als einen parallelen Lasten Szenario erkennt, ruft einen Ausgleich Prozess, sperrt Relevanz Schulung und Batch Berechnungen, bis die Ermittlung abgeschlossen ist, und die neue Last integriert und geschult ist. 
+- Neue Dateien unterscheiden sich von den vorherigen (beispielsweise aus einer anderen Quelle), oder Sie haben keine Vorkenntnisse, dass Sie ähnlich oder unterschiedlich zu den vorherigen Lasten sind. Fügen Sie in diesem Szenario die importierten Dateien einem neuen Datei Ladevorgang hinzu. Advanced eDiscovery erkennt dies als Roll laden Szenario, Ruft einen Aufholprozess ab, sperrt Relevanz Schulungen und Batch Berechnungen, bis das Catch-up abgeschlossen ist, und die neue Last ist integriert und geschult. 
     
-## <a name="adding-imported-files-to-the-current-load"></a>Importierte Dateien hinzufügen, um die aktuelle Auslastung
+## <a name="adding-imported-files-to-the-current-load"></a>Hinzufügen von importierten Dateien zur aktuellen Auslastung
 
-Eine Auslastung im erweiterten eDiscovery verarbeitet werden müssen alle importierte Dateien hinzugefügt werden. Importierte Dateien werden die letzten definierten Last hinzugefügt. Wenn Sie später weitere Dateien importieren, müssen sie auch die Last hinzugefügt.
+Alle importierten Dateien müssen zu einer zu verarbeitenden Ladung in Advanced eDiscovery hinzugefügt werden. Importierte Dateien werden der zuletzt definierten Last hinzugefügt. Wenn Sie später weitere Dateien importieren, müssen Sie auch der Lade hinzugefügt werden.
   
-1. In der **Relevanz \> Relevanz Setup** **Lasten**wählen Sie Registerkarte.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz Setup** die Option **Lasten**aus.
     
     ![Relevanzeinrichtungslasten (Registerkarte)](media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
-2. **Include-Dateien**: Wählen Sie eine Option für Dateien hinzu. In der Standardeinstellung Dateien hinzufügen, um die aktuelle Auslastung der Auffüllung "Alle Dateien" basiert.
+2. **Include Files**: Wählen Sie eine Option für die einzuschließenden Dateien aus. Das Hinzufügen von Dateien zur aktuellen Auslastung basiert standardmäßig auf der Auffüllung "alle Dateien".
     
     > [!TIP]
-    > Laden Sie alle verfügbare culled Dateien in Relevanz. Wenn Sie nur eine Teilmenge der verfügbaren Dateien laden möchten, zuerst finden Sie mit der Unterstützung von wie Laden Teilmengen Relevanz Schulung beeinträchtigen kann. 
+    > Laden Sie alle verfügbaren gekeulten Dateien in Relevanz. Wenn Sie nur eine Teilmenge der verfügbaren Dateien laden möchten, konsultieren Sie zunächst den Support, da das Laden von Teilmengen sich negativ auf die Relevanz-Schulung auswirken kann. 
   
-3. Wählen Sie in **Management wird geladen**eine Auslastung.
+3. Wählen Sie unter **Lasten Verwaltung**eine Last aus.
     
-4. Klicken Sie auf **Dateien hinzufügen**. Die Dateien werden an die Last hinzugefügt und ein Bestätigungsdialogfeld wird angezeigt. 
+4. Klicken Sie auf **Dateien hinzufügen**. Die Dateien werden dem Ladevorgang hinzugefügt, und eine Bestätigungsmeldung wird angezeigt. 
     
 5. Klicken Sie auf **OK**.
     
-Die Dateien können nun im erweiterten eDiscovery Relevanz für die Dateien Schulung bearbeitet werden.
+Die Dateien können nun in Advanced eDiscovery-Relevanz für das Training der Dateien verarbeitet werden.
   
-## <a name="editing-a-load-name-within-a-case"></a>Bearbeiten einer Last Name innerhalb einer Anfrage
+## <a name="editing-a-load-name-within-a-case"></a>Bearbeiten eines Lade namens in einem Fall
 
-Wenn die Last Name ändern, wird empfohlen, einen Namen zu verwenden, der an die Groß-/Kleinschreibung relevant ist.
+Wenn Sie den ladenamen ändern, empfiehlt es sich, einen für den Fall bedeutsamen Namen zu verwenden.
   
-1. In der **Relevanz \> Relevanz Setup** **Lasten**wählen Sie Registerkarte.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz Setup** die Option **Lasten**aus.
     
-2. Wählen Sie einen, und klicken Sie auf das Symbol **Bearbeiten** , aus der Liste **Lasten Management** . Das Load-Fenster bearbeiten wird angezeigt. 
+2. Wählen Sie in der Liste **Lasten Verwaltung** eine Lade aus, und klicken Sie auf das Symbol **Bearbeiten** . Das fensterladen bearbeiten wird angezeigt. 
     
-3. Geben Sie die Änderungen, und klicken Sie dann auf **OK**.
+3. Geben Sie die Änderungen ein, und klicken Sie dann auf **OK**.
     
-## <a name="adding-imported-files-to-a-new-load"></a>Importierte Dateien hinzufügen, um ein neues laden
+## <a name="adding-imported-files-to-a-new-load"></a>Hinzufügen von importierten Dateien zu einer neuen Ladung
 
-Nach dem Starten Relevanz Schulungen oder Batch Berechnung ausführen, sollten Sie zum Importieren und einen weiteren Satz von Dateien zu verarbeiten. 
+Nachdem Sie das Relevanz-Training gestartet oder die Batch Berechnung ausgeführt haben, können Sie einen zusätzlichen Satz von Dateien importieren und verarbeiten. 
   
-Bei der Ermittlung können Sie erstellen, markieren und analysieren den Ermittlung Satz. Erweiterte eDiscovery vergleicht seine Bewertung Relevant und nicht Relevant Dateien in die neue Last auf diejenigen in vorherigen wird geladen. Basierend auf den Ergebnissen, werden Sie aufgefordert, Synchronisieren beim treffen Falls erforderlich, und erweiterten eDiscovery Empfehlungen basierend auf den aufgelaufenen Relevanz Informationen bereitstellt. 
+Während des catch-up können Sie den catch-up-Satz erstellen, taggen und analysieren. Advanced eDiscovery vergleicht die Bewertung relevanter und nicht relevanter Dateien in der neuen Last mit denen in früheren Lasten. Basierend auf den Ergebnissen werden Sie aufgefordert, ggf. Nachhol Entscheidungen vorzunehmen, und erweiterte eDiscovery bietet Empfehlungen basierend auf den gesammelten Relevanzinformationen. 
   
-Paralleles wird geladen, und dieser Funktionalität hängt wie folgt: 
+Die Roll laden und die Catch-up-Funktionalität unterscheiden sich wie folgt: 
   
-- Wenn Sie eine neue Dateilast nach Batch Berechnung importieren, bestimmt erweiterte eDiscovery, inwieweit die Dateien in eine der folgenden Kategorien fallen:
+- Wenn Sie eine neue Datei Auslastung nach der Batch Berechnung importieren, bestimmt Advanced eDiscovery, in welchem Umfang die Dateien in eine der folgenden Kategorien fallen:
     
-  - Ähnlich wie (homogene): ein neues, benutzerdefiniertes Round Relevanz Schulungen ist nicht erforderlich, und die Kenntnisse aus der vorherigen Last aufgelaufene kann angewendet werden "wie gesehen" auf die neue Load. 
+  - Ähnlich (homogen): eine neue, benutzerdefinierte Round-of-Relevance-Schulung ist nicht erforderlich, und das von der vorherigen Auslastung erworbene Wissen kann auf die neue Belastung angewendet werden. 
     
-  - DISTINCT (heterogenen): ein neues, benutzerdefiniertes Round Relevanz Schulungen erforderlich ist und die Kenntnisse aus der vorherigen Last aufgelaufene kann nicht angewendet werden. 
+  - Distinct (heterogenes): eine neue, benutzerdefinierte Round-of-Relevance-Schulung ist erforderlich, und das vom vorherigen Laden erworbene Wissen kann nicht angewendet werden. 
     
-    Diese Begriffe beziehen sich auf die Ebene der Ähnlichkeit von Dateien zwischen Lasten und nicht innerhalb der wird geladen. 
+    Diese Begriffe beziehen sich auf den Grad der Ähnlichkeit von Dateien zwischen Lasten und nicht innerhalb der Lasten. 
     
-- Beim Importieren eines neuen Datei laden während der Relevanz Schulung (vor dem Batch Berechnung) kann synchronisieren Sie Relevanz Schulungen auf den Dateisatz united weiter. Erweiterte eDiscovery wird nicht schätzen Sie, ob die neue Last ähnelt oder die vorherige Ladung voneinander ist. Es einfach sammelt Informationen über die neuen Last und ermöglicht die Relevanz Schulungen auf den neuen und vorherigen fortgesetzt von Dateien festgelegt. 
+- Beim Importieren eines neuen Datei Ladevorgangs während des Relevanz-Trainings (vor der Batch Berechnung) können Sie die Relevanz-Schulung im United-Dateisatz fortsetzen. Erweiterte eDiscovery schätzt nicht, ob die neue Auslastung der vorherigen Belastung ähnelt oder nicht. Sie sammelt lediglich Informationen über die neue Auslastung und ermöglicht die Fortsetzung der Relevanz-Schulung für die neuen und früheren Dateigruppen. 
     
-- Wenn vorhanden mehrere Probleme in Relevanz Schulung sowie Probleme nach Batch Berechnung sind, wird der Prozess der Ermittlung einmal für alle Probleme ausgeführt, und die Ergebnisse werden berechnet und für jedes Problem angezeigt.
+- Wenn mehrere Probleme in Relevanz und Probleme nach der Batch Berechnung auftreten, wird der Aufholprozess für alle Probleme einmal ausgeführt, und die Ergebnisse werden für jedes Problem berechnet und angezeigt.
     
 > [!NOTE]
-> Der Umfang der Stichprobe synchronisieren kann variieren. Es hängt von der Größe der neuen Last relativ zum Laden vorherigen und für die Anzahl der Beispiele, die vor dem Hinzufügen des neuen Laden abgeschlossen. Im Beispiel synchronisieren ist in der Regel eine Reihe von 200 bis 2.000 Dateien aus der neuen laden. 
+> Die Größe des catch-up-Beispiels kann variieren. Es hängt von der Größe der neuen Last im Verhältnis zu den vorherigen Lasten und der Anzahl der vor dem Hinzufügen der neuen Last abgeschlossenen Beispiele ab. Das Catch-up-Beispiel ist in der Regel eine Reihe von 200 bis 2.000-Dateien aus der neuen Lade. 
   
 > [!TIP]
-> Ermittlung andere Aufgaben beendet und erfordert einzelne Datei markieren und überprüfen. Daher können Sie führt zu mehr Verarbeitungsaufwand reduzieren, wenn Sie neue Dateien in großen Batches hinzufügen. 
+> Catch-up beendet alle anderen Aufgaben und erfordert einzelne Dateikennzeichnung und-Überprüfungen. Daher können Sie den Aufwand reduzieren, wenn Sie neue Dateien in größeren Batches hinzufügen. 
   
-## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Lädt ein neue Datei Laden von hervorgehobene und paralleles hinzufügen
+## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Hinzufügen einer neuen Datei Last mit catch-up und Rolling Loads
 
-1. In der **Relevanz \> Relevanz Setup** **Lasten**wählen Sie Registerkarte.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz Setup** die Option **Lasten**aus.
     
-2. Klicken Sie unter **Lasten Management**, klicken Sie auf die **+** Symbol, um eine Auslastung hinzuzufügen. Ein Bestätigungsdialogfeld wird angezeigt. 
+2. Klicken Sie unter **Lasten Verwaltung**auf **+** das Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
     
-3. Klicken Sie auf **Ja,** um den Vorgang fortzusetzen. Klicken Sie im Dialogfeld **neue hinzufügen laden** wird angezeigt. 
+3. Klicken Sie auf **Ja** , um fortzufahren. Das Dialogfeld **neuen Ladevorgang hinzufügen** wird angezeigt. 
     
     > [!NOTE]
-    > Sie können ein neues Laden nur hinzufügen, wenn Aktionen auf die vorherige Load durchgeführt wurden. 
+    > Sie können nur dann eine neue Ladung hinzufügen, wenn Aktionen zur vorherigen Belastung ausgeführt wurden. 
   
-4. Klicken Sie im Dialogfeld **neue hinzufügen laden** Typinformationen in **Laden Name** und **Beschreibung** , und klicken Sie dann auf **OK**. Erweiterte eDiscovery Fügt ein neues laden.
+4. Geben Sie im Dialogfeld **neuen Ladevorgang hinzufügen** Informationen in **Laden Name** und **Beschreibung** ein, und klicken Sie dann auf **OK**. Advanced eDiscovery fügt eine neue Auslastung hinzu.
     
-5. Klicken Sie auf **Dateien hinzufügen**, um die neue Load-Datei zu importieren. Diese Auslastung werden alle neue Dateien hinzugefügt. Nach dem Import der Dateien erweiterte eDiscovery erkennt das Szenario der parallelen Lasten und synchronisieren im nächsten Schritt angibt.
+5. Klicken Sie auf **Dateien hinzufügen**, um die neue Ladedatei zu importieren. Alle neuen Dateien werden dieser Belastung hinzugefügt. Nachdem die Dateien von Advanced eDiscovery importiert wurden, erkennt es das Szenario "Rolling Loads" und zeigt als nächster Schritt catch-up an.
     
-6. Klicken Sie auf **Synchronisieren** Sie unten im Dialogfeld, um das Szenario ausgeführt. 
+6. Klicken Sie unten im Dialogfeld auf **catch-up** , um das Szenario auszuführen. 
     
-    Ein einzelner Satz zu synchronisieren, in der Regel mit 200 bis 2.000 Dateien aus der neuen Load wird für alle Probleme zum gleichzeitigen Datei tagging zulassen erstellt.
+    Ein einzelner catch-up-Satz, der normalerweise 200 bis 2.000-Dateien aus der neuen Lade enthält, wird für alle Probleme erstellt, um die gleichzeitige Dateikennzeichnung zu ermöglichen.
     
-    Details dienen, ob Lasten ähnliche oder unterschiedliche sind, gibt an, ob erweiterte eDiscovery zusammenführen oder teilen die Lasten automatisch und Informationen im Hinblick auf Verarbeitung im nächsten Schritt.
+    Details dazu, ob Lasten ähnlich oder unterschiedlich sind, ob Advanced eDiscovery die Lasten automatisch zusammengeführt oder geteilt hat, sowie Informationen zur Verarbeitung im nächsten Schritt.
     
-    Sie können Dateien markieren und führen Sie einen Vorgang berechnen. Die Kategorien Relevanz zu ermitteln, ob Lasten ähnliche oder unterschiedliche sind aktiviert und ermöglicht das Fortsetzen des neuen Satz von Dateien.
+    Anschließend können Sie Dateien markieren und einen Berechnungsvorgang ausführen. Das Tagging ermöglicht die Relevanz, um zu bestimmen, ob Lasten ähnlich oder unterschiedlich sind, und ermöglicht es Ihnen, weiterhin an den neuen Dateien zu arbeiten.
     
-7. Nach der Ermittlung Satz überprüft werden, anzeigen **Relevanz \> nachverfolgen** für die Ermittlung Ergebnisse. 
+7. Nach der Überprüfung des catch-up-Satzes zeigen Sie die **Relevanz \> -Spur** für die Catch-up-Ergebnisse an. 
     
-1. Wenn das Laden der neuen Datei während der Relevanz Schulung hinzugefügt wurde ist eine (d. h., das Problem nicht noch Batch Berechnung durchlaufen hat), **Weiter Schulung** im nächsten Schritt, unabhängig von den Ergebnissen synchronisieren. 
+1. Wenn die neue Datei Auslastung während des Relevance-Trainings hinzugefügt wurde (was bedeutet, dass das Problem noch nicht durch die Batch Berechnung durchgeführt wurde), ist die **Weiterbildung** der nächste Schritt, unabhängig von den catch-up-Ergebnissen. 
     
-    Die neuen und vorherigen geladen werden als ein Hardwaregerät verarbeitet, und Relevanz Schulung in der united Satz fortgesetzt. Sie sind jetzt mit diesem Verfahren abgeschlossen und Relevanz Schulung fortgesetzt. 
+    Die neue und frühere Lasten werden verarbeitet, während eine Last-und Relevanz-Schulung auf dem United-Set fortgesetzt wird. Sie sind jetzt fertig mit diesem Verfahren und können die Relevanz-Schulung fortsetzen. 
     
-2. Wenn die neue Auslastung nach Batch Berechnung hinzugefügt wurde, fahren Sie mit den folgenden Schritten.
+2. Wenn die neue Ladung nach der Batch Berechnung hinzugefügt wurde, führen Sie die folgenden Schritte aus.
     
-8. Für neue Lasten nach Batch Berechnung hinzugefügt bestimmt die erweiterte eDiscovery ist die neue Last ähnelt oder vom vorherigen geladen wird, wie folgt:
+8. Für neue Lasten, die nach der Batch Berechnung hinzugefügt werden, bestimmt Advanced eDiscovery, ob die neue Last ähnlich oder unterscheidet sich von früheren Lasten wie folgt:
     
-1. Lädt ähneln gefunden: keine weiteren Relevanz Schulung erforderlich ist. Das Dashboard zeigt die empfohlenen nächsten Schritt wird ausgeführt ** Berechnung Batch ** erneut aus, um die Relevanz der Ergebnisse für die neue Auslastung berechnen. Lädt gefunden ähnlich, sein, damit die vorherigen Analyse Klassifizierung auf die neuen Dateien ausgeführt werden kann. 
+1. Wenn Lasten ähnlich sind, ist keine zusätzliche Relevanz erforderlich. Im Dashboard wird der Empfohlene nächste Schritt angezeigt: * * Batch Berechnung * * erneut ausführen, um die Relevanz für die neue Auslastung zu berechnen. Es wurde festgestellt, dass Lasten ähnlich sind, sodass die frühere Klassifizierungsanalyse für die neuen Dateien ausgeführt werden kann. 
     
-2. Wenn Lasten gefunden wurden, eindeutig sein: mehr Relevanz Schulungen erforderlich ist und im nächsten Schritt wird die Entscheidung synchronisieren. Wählen Sie eine Entscheidung Ermittlung wie folgt aus:
+2. Wenn Lasten unterschiedlich festgestellt wurden: mehr Relevanz Training ist erforderlich, und der nächste Schritt ist catch-up Entscheidung. Wählen Sie eine Aufhol Entscheidung wie folgt aus:
     
-    Wenn Sie **Zusammenführen Lasten**auswählen, werden erweiterte eDiscovery vorherige und neue Lasten für die Schulung ein miteinander verbunden. Obwohl die erstmalige laden durchlaufen Batch Berechnung haben, ist Weitere Schulungen erforderlich. Schulung von neuen und vorherigen Lasten zusammen fortgesetzt werden. Batch Berechnung wird dann erneut ausführen und die Ergebnisse der vorherigen Batch Berechnung ignoriert werden soll. Wählen Sie die Auswahl dieser Option, wenn Relevanz Bewertungen für vorhandenen Lasten, beispielsweise neu berechnet werden können bei der Überprüfung der vorhandenen Datei Lasten nicht gestartet wurde.
+    Wenn Sie **Lasten zusammenführen**auswählen, werden von Advanced eDiscovery frühere und neue Lasten für den Trainingssatz zusammengeführt. Obwohl der erste Ladevorgang die Batch Berechnung durchführte, ist mehr Schulung erforderlich. Trainieren Sie neue und frühere Lasten zusammen. Die Batch Berechnung wird dann erneut ausgeführt, und die vorherigen Batch Berechnungsergebnisse sollten ignoriert werden. Wählen Sie diese Option aus, wenn die Relevanz für vorhandene Lasten neu berechnet werden kann, beispielsweise wenn die Überprüfungen vorhandener Datei Lasten nicht gestartet wurden.
     
-    Wenn Sie **geteilte lädt**auswählen, Relevanz Schulung nur auf die neue Last weiter aus. In diesem Fall werden vorherige Batch Berechnung Bewertungen bleiben unverändert. Wählen Sie diese Option bei vorhandene Relevanz Bewertungen für vorhandenen Lasten, beispielsweise nicht neu berechnet wird, wenn die Überprüfung der vorhandenen Lasten bereits gestartet wurde. Relevanz Bewertungen von diesem Punkt an separat verwaltet werden und können nicht zusammengeführt werden.
+    Wenn Sie geTeilte **Lasten**auswählen, wird die Relevanz-Schulung nur für die neue Last fortgesetzt. In dieser Instanz bleiben frühere Batch Berechnungsergebnisse unverändert. Wählen Sie diese Option aus, wenn vorhandene Relevanzwerte für vorhandene Lasten nicht neu berechnet werden können, beispielsweise wenn die Überprüfungen vorhandener Lasten bereits begonnen haben. Relevanz-Ergebnisse werden ab diesem Zeitpunkt separat verwaltet und können nicht zusammengeführt werden.
     
-3. Klicken Sie auf **Weiter Schulung**.
+3. Klicken Sie auf **Training fortfahren**.
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
 [Definieren von Problemen und Zuweisen von Benutzern](define-issues-and-assign-users.md)
   
-[Schlüsselwörter hervorgehoben definieren und erweiterte Optionen](define-highlighted-keywords-and-advanced-options.md)
+[Definieren hervorgehobener Schlüsselwörter und erweiterte Optionen](define-highlighted-keywords-and-advanced-options.md)
 

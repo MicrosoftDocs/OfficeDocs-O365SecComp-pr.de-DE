@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
-description: Finden Sie, wie Sie aus einen Einblick in einen detaillierten Bericht in das Wertpapier verschieben können &amp; Compliance Center über ein Beispiel für Data Loss Prevention.
-ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Sehen Sie sich an, wie Sie mit einem Beispiel zur Verhinderung von &amp; Datenverlust von einem Einblick in einen detaillierten Bericht im Security Compliance Center navigieren können.
+ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014857"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217325"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
 
-Wenn Sie zum ersten Mal [Berichte und Einblicke in die Office 365-Sicherheit &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), es möglicherweise hilfreich sein, um anzuzeigen, wie Sie auf einfache Weise aus einen detaillierten Bericht aufrufen können. 
+Wenn Sie neue [Berichte und Einblicke im &amp; Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md)haben, kann es hilfreich sein, um zu sehen, wie Sie einfach von einem Einblick zu einem detaillierten Bericht navigieren können. 
   
-Dies ist eine von mehreren exemplarischen Vorgehensweisen für die [Sicherheit &amp; Compliance Center](https://protection.office.com). Weitere exemplarische Vorgehensweisen finden Sie im Abschnitt [Siehe auch](#related-topics) . 
+Dies ist eine von mehreren exemplarischen Vorgehensweisen für das [ &amp; Security Compliance Center](https://protection.office.com). Weitere Exemplarische Vorgehensweisen finden Sie im Abschnitt " [Verwandte Themen](#related-topics) ". 
   
-## <a name="from-an-insight-to-a-detailed-report"></a>Um einen detaillierten Bericht aus
+## <a name="from-an-insight-to-a-detailed-report"></a>Von einem Einblick in einen detaillierten Bericht
 
-Lassen Sie uns durchgehen der Ablauf aus dem Dashboard zu einer Insight um einen detaillierten Bericht für das Durchsuchen von Daten. (Dies ist ein Beispiel für kurze [Verhinderung von Datenverlust](data-loss-prevention-policies.md) ). 
+Lassen Sie uns den Fluss vom Dashboard zu einem Einblick in einen detaillierten Bericht zur Datenexploration durchlaufen. (Dies ist ein kurzes Beispiel zur Verhinderung von [Datenverlust](data-loss-prevention-policies.md) .) 
   
-1. Wir beginnen mit einem Dashboard in der [Sicherheit &amp; Compliance Center](https://protection.office.com). (Gehe zu **Berichten** \> **Dashboard**.)<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie Berichte \> Dashboard](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Wir beginnen mit einem Dashboard im [ &amp; Security Compliance Center](https://protection.office.com). (Wechseln Sie zum **Dashboard** **Berichte** \> .)<br/>![Klicken Sie im &amp; Security Compliance Center auf Dashboards für Berichte \> .](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-2. In der oberen Ecke des Dashboards, left, neben **Top Insights &amp; Empfehlungen**, wir haben einen Link. (Klicken Sie auf **Alle anzeigen**).<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie Berichte \> Dashboards für Ihre oberen Insights finden Sie unter](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Dadurch gelangen uns, um eine Liste der Insights für unser Unternehmen.<br/>![In das Wertpapier &amp; Compliance Center, können Sie alle Einblicke in einer Liste anzeigen](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
+2. In der oberen linken Ecke des Dashboards neben den **wichtigsten &amp; Einblicke-Empfehlungen**haben wir einen Link. (Klicken Sie auf **Alle anzeigen**.)<br/>![Klicken Sie im &amp; Security Compliance Center auf Dashboards für Berichte \> , um die wichtigsten Einblicke anzuzeigen.](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Dadurch erhalten wir eine Liste der Einblicke für unsere Organisation.<br/>![Im Security &amp; Compliance Center können Sie alle Einblicke in einer Liste anzeigen.](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
-3. Auswählen eines Elements in der Liste öffnet ein Fenster, in dem wir Nähere Informationen darüber, dass das Element anzeigen kann. (Klicken Sie auf ein Element).<br/>![Details für einen ausgewählten insight](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Wir finden Sie unter Aktionen empfohlen, die wir berücksichtigen sollten, wie die Überprüfung von Richtlinien. ([Erfahren Sie mehr über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)).
+3. Wenn Sie ein Element in der Liste auswählen, wird ein Bereich geöffnet, in dem weitere Details zu diesem Element angezeigt werden können. (Klicken Sie auf ein Element.)<br/>![Details zu einem ausgewählten Einblick](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Es werden empfohlene Aktionen angezeigt, wie etwa die Überprüfung von Richtlinien. ([Erfahren Sie mehr über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md).)
     
-4. Wir haben außerdem einen Link, um weitere Details anzuzeigen. (Klicken Sie auf **verwandte Aktivität im Explorer angezeigt**.)<br/>Dadurch gelangen uns einem Berichtstyp gewählte [Explorer](use-explorer-in-security-and-compliance.md) (auch als Bedrohung Explorer bezeichnet), filtert, wir angewendet werden kann und in bestimmten Details der Drilldown erfolgen soll.<br/>![Explorer-Ansicht mit mehr Details zu einem ausgewählten Erkenntnisse](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. Wir haben auch einen Link, um weitere Details anzuzeigen. (Klicken Sie **im Explorer auf verwandte Aktivitäten anzeigen**.)<br/>Dadurch gelangen wir zu einem Berichtstyp namens " [Explorer](use-explorer-in-security-and-compliance.md) " (auch als Bedrohungs-Explorer bezeichnet), in dem wir Filter anwenden können, um bestimmte Details zu bohren.<br/>![Explorer-Ansicht mit ausführlicheren Informationen zu einem ausgewählten Einblick](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
-Auf diese Weise können wir ganz einfach verschieben aus einen Einblick in den zugrunde liegenden Details und treffen informierter Entscheidungen zur Verhinderung von Datenverlust für eine Organisation.
+Auf diese Weise können wir problemlos von einem Einblick in die zugrunde liegenden Details bewegen und fundiertere Entscheidungen zur Verhinderung von Datenverlust für eine Organisation treffen.
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Exemplarische Vorgehensweise: aus einen detaillierten Bericht zu einer insight](from-a-detailed-report-to-an-insight.md)
+[Exemplarische vorGehensWeise: von einem detaillierten Bericht zu einem Einblick](from-a-detailed-report-to-an-insight.md)
   
-[Exemplarische Vorgehensweise: aus einem Dashboard, um einen Einblick](from-a-dashboard-to-an-insight.md)
+[Exemplarische vorGehensWeise: von einem Dashboard zu einem Einblick](from-a-dashboard-to-an-insight.md)
   
 

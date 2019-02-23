@@ -1,63 +1,63 @@
 ---
-title: Erstellen Sie eine Aufbewahrung für eventuelle Rechtsstreitigkeiten in Office 365
+title: Erstellen eines Rechtsstreits in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/13/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: aa78d12046108aa1f1b974f01c02ff923b99b97b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f2d3793eac84e8f80158842c833c30986b0549c5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037958"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218655"
 ---
-# <a name="create-a-litigation-hold-in-office-365"></a>Erstellen Sie eine Aufbewahrung für eventuelle Rechtsstreitigkeiten in Office 365
+# <a name="create-a-litigation-hold-in-office-365"></a>Erstellen eines Rechtsstreits in Office 365
 
-Sie können ein Postfach auf Aufbewahrung für eventuelle Rechtsstreitigkeiten, die beibehalten werden alle Inhalt von Postfächern, einschließlich der gelöschten Elemente und der ursprünglichen Versionen geänderter Objekte platzieren. Wenn Sie ein Benutzerpostfach beweissicherungsverfahrens einleiten, wird Inhalt im Archivpostfach des Benutzers (falls aktiviert) auch beibehalten. Wenn Sie einen Haltestatus erstellen, können Sie eine Warteschleife Dauer (auch als *zeitbasierte Aufbewahrung*bezeichnet) angeben, sodass gelöscht und geänderte Elemente für einen bestimmten Zeitraum aufbewahrt und dauerhaft aus dem Postfach gelöscht werden. Oder Sie können nur Inhalt auf unbestimmte Zeit beibehalten (eine *unendliche Warteschleife*genannt) oder bis die Aufbewahrung für eventuelle Rechtsstreitigkeiten entfernt wird. Wenn Sie einen Haltestatus Dauer angeben, wird ab dem Datum berechnet eine Nachricht empfangen oder ein Postfach-Element erstellt wird. 
+Sie können ein Postfach für die Aufbewahrung von Rechtsstreitigkeiten platzieren, um alle Postfachinhalte beizubehalten, einschließlich gelöschter Elemente und der ursprünglichen Versionen geänderter Elemente. Wenn Sie ein Benutzerpostfach für die Beweissicherung festlegen, werden Inhalte im Archivpostfach des Benutzers (falls aktiviert) ebenfalls beibehalten. Wenn Sie einen Haltestatus erstellen, können Sie eine Aufbewahrungsdauer (auch als *zeitbasierte Aufbewahrung*bezeichnet) angeben, sodass gelöschte und geänderte Elemente für einen bestimmten Zeitraum aufbewahrt und dann endgültig aus dem Postfach gelöscht werden. Oder Sie können Inhalte auf unbestimmte Zeit aufbewahren (so genannte *unendliche Haltestatus*) oder bis die Beweissicherung entfernt wird. Wenn Sie einen Zeitraum für die Aufbewahrungsdauer angeben, wird er ab dem Datum berechnet, an dem eine Nachricht empfangen oder ein Postfachelement erstellt wird. 
   
-Hier ist, was geschieht, wenn Sie eine Aufbewahrung für eventuelle Rechtsstreitigkeiten erstellen.
+Hier erfahren Sie, was passiert, wenn Sie einen Rechtsstreit halten.
   
-- Elemente, die vom Benutzer endgültig gelöscht werden, werden im Ordner "wiederherstellbare Elemente" im Postfach des Benutzers für die Dauer des Haltestatus beibehalten.
+- Elemente, die vom Benutzer dauerhaft gelöscht werden, werden für die Dauer des haltebereichs im Ordner "Wiederherstellbare Elemente" im Postfach des Benutzers aufbewahrt.
     
-- Elemente, die vom Benutzer aus dem Ordner wiederherstellbare Elemente gelöscht werden, werden für die Dauer des Haltestatus beibehalten.
+- Elemente, die vom Benutzer aus dem Ordner "Wiederherstellbare Elemente" gelöscht werden, werden für die Dauer des haltebereichs beibehalten.
     
-- Das Speicherkontingent für "wiederherstellbare Elemente" wird von 30 GB auf 110 GB erhöht.
+- Das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" wurde von 30 GB auf 110 GB erhöht.
     
-- Elemente des Benutzers primärer und die archivpostfächer werden beibehalten.
+- Elemente in den primären und archivpostfächern des Benutzers werden beibehalten
     
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Um ein Exchange Online-Postfach auf Aufbewahrung für eventuelle Rechtsstreitigkeiten zu platzieren, müssen sie eine Lizenz für Exchange Online – Plan 2 zugewiesen werden. Wenn ein Postfach eine Exchange Online – Plan 1-Lizenz zugewiesen ist, müssten Sie weisen Sie ihr eine separate Lizenz der Exchange Online-Archivierung auf platziert halten.
+- Um ein Exchange Online-Postfach für die Aufbewahrung von Rechtsstreitigkeiten zu aktivieren, muss ihm eine Exchange Online-Plan 2-Lizenz zugewiesen sein. Wenn einem Postfach eine Exchange Online-Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um es in der Warteschleife zu platzieren.
     
 
-## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a>Platzieren eines Postfachs Aufbewahrung für eventuelle Rechtsstreitigkeiten im Office 365 Administrationscenter
+## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a>AufbewahrungsPflicht für ein Postfach im Office 365 Admin Center
 
-Hier sind die Schritte, um eine Maibox auf Aufbewahrung für eventuelle Rechtsstreitigkeiten im Office 365 Admin Center zu platzieren.
+Im folgenden finden Sie die Schritte, mit denen Sie mit dem Office 365 Admin Center ein maibox in den Prozess halten können.
 
-1. Wechseln Sie zu https://portal.office.com/adminportal/home und melden Sie sich über das globale Administratorkonto.
-2. Klicken Sie auf **Benutzer** > **aktive Benutzer** im linken Navigationsbereich.
-3. Wählen Sie den Benutzer, deren Postfach Sie beweissicherungsverfahrens platzieren möchten.
-4. Klicken Sie auf der Seite hinausfliegenden klicken Sie auf **E-Mail-Einstellungen**, und klicken Sie dann auf **Bearbeiten** , neben **Aufbewahrung für eventuelle Rechtsstreitigkeiten**.
-5. Klicken Sie auf der Seite **Aufbewahrung für eventuelle Rechtsstreitigkeiten** auf die Umschaltfläche, um Aufbewahrung für eventuelle Rechtsstreitigkeiten zu aktivieren, und schließen Sie die folgenden optionalen Einstellungen, die angezeigt werden:
+1. Wechseln Sie https://portal.office.com/adminportal/home zu, und melden Sie sich mit ihrem globalen Administratorkonto an.
+2. Klicken Sie im linken Navigationsbereich auf**aktive Benutzer Benutzer** . **** > 
+3. Wählen Sie den Benutzer aus, dessen Postfach Sie bei der Beweissicherung platzieren möchten.
+4. Klicken Sie auf der Seite "Fly-Out" auf **e-Mail-Einstellungen**, und klicken Sie dann neben **rechtsStreit anhalten**auf **Bearbeiten** .
+5. Klicken Sie auf der Seite für die **Beweis** Sicherung auf die Umschaltfläche, um das Verfahren für die Aufbewahrung zu aktivieren, und füllen Sie die folgenden optionalen Einstellungen aus:
  
-    ![O365_LitigationHold1.PNG](media/O365-LitigationHold1.png)
+    ![O365_LitigationHold1. png](media/O365-LitigationHold1.png)
 
-    a. **halten Dauer (in Tagen)** -verwenden Sie dieses Feld zum Erstellen einer zeitbasierte Aufbewahrung und angeben, wie lange Postfachelemente gehalten werden, wenn das Postfach in der Aufbewahrung für eventuelle Rechtsstreitigkeiten eingefügt wird. Ein Element Postfach empfangen oder erstellt wird, wird die Dauer ab dem Datum berechnet. Wenn Sie dieses Feld leer lassen, werden Elemente aufrechterhalten, auf unbestimmte Zeit oder, bis die Sperre entfernt wurde. Verwenden von Tagen die Dauer angeben.
+    a. **Hold-Dauer (Tage)** – verwenden Sie dieses Feld, um einen zeitbasierten Haltebereich zu erstellen, und geben Sie an, wie lange Postfachelemente aufbewahrt werden, wenn das Postfach in den Rechtsstreit versetzt wird. Die Dauer wird anhand des Datums berechnet, an dem ein Postfachelement empfangen oder erstellt wird. Wenn Sie dieses Feld leer lassen, werden Elemente dauerhaft oder bis zum Entfernen des haltebereichs aufbewahrt. Verwenden Sie Days, um die Dauer anzugeben.
     
-    b. **Hinweis** - verwenden Sie dieses Feld informiert den Benutzer, den ihr Postfach auf Aufbewahrung für eventuelle Rechtsstreitigkeiten ist. Die Notiz wird auf der Seite Kontoinformationen in das Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Zugriff auf dieser Seite können Benutzer die **Datei** in Outlook klicken.
+    b. **Hinweis** : Verwenden Sie dieses Feld, um dem Benutzer mitzuteilen, dass sein Postfach in einem Rechtsstreit gehalten wird. Der Hinweis wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn er Outlook 2010 oder höher verwendet. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
      
-    c. **Webseite** - verwenden Sie dieses Feld, um den Benutzer auf eine Website für Weitere Informationen zur Aufbewahrung für eventuelle Rechtsstreitigkeiten zu leiten. Diese URL wird auf der Seite Kontoinformationen in das Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Zugriff auf dieser Seite können Benutzer die **Datei** in Outlook klicken.
+    c. **Webseite** – verwenden Sie dieses Feld, um den Benutzer zu einer Website zu leiten, um weitere Informationen zur Aufbewahrung von Rechtsstreitigkeiten zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn Sie Outlook 2010 oder höher verwenden. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
  
-6. Klicken Sie auf **Speichern** , um die Aufbewahrung für eventuelle Rechtsstreitigkeiten erstellen.
+6. Klicken Sie auf speichern, um die Beweis **Sicherung** zu erstellen.
 
-Nachdem Sie den Haltestatus erstellen, die e-Mail-Einstellungen auf der Seite hinausfliegenden zeigt an, Aufbewahrung für eventuelle Rechtsstreitigkeiten für den ausgewählten Benutzer aktiviert ist.
+Nachdem Sie den Haltebereich erstellt haben, wird in den e-Mail-Einstellungen auf der Seite "Fly-Out" angezeigt, dass für den ausgewählten Benutzer die Option "Beweissicherung" aktiviert ist.
 
-![O365_LitigationHold2.PNG](media/O365-LitigationHold2.png)
+![O365_LitigationHold2. png](media/O365-LitigationHold2.png)
 
-Weitere Informationen zum Erstellen und Verwalten von Rechtsstreitigkeiten enthält und erstellen mithilfe von Exchange Online PowerShell Massen-Aufbewahrung für eventuelle enthält finden Sie unter [Place ein Postfach auf Aufbewahrung für eventuelle Rechtsstreitigkeiten](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold).
+Weitere Informationen zum Erstellen und Verwalten von Rechtsstreitigkeiten und zum Verwenden von Exchange Online PowerShell zum Massen Erstellen von Rechtsstreitigkeiten finden Sie unter [platzieren eines Postfachs in der Beweis](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold)Sicherung.

@@ -6,199 +6,199 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: 'Hier erfahren Sie, wie Sie Optionen für den Export von Ergebnissen aus Office 365 erweiterte eDiscovery, einschließlich des Verfahrens zum Angeben der Parameter für einen Batch Export definieren. '
-ms.openlocfilehash: 49dab9820735af3bf5c322fc531c78a6baab2f8e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'Erfahren Sie, wie Sie Optionen zum Exportieren von Ergebnissen aus Office 365 Advanced eDiscovery definieren, einschließlich des Verfahrens zum Angeben von Parametern für einen Export Batch. '
+ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559048"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218095"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportieren von Ergebnissen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In diesem Thema werden die erweiterten eDiscovery exportieren Setupoptionen.
+In diesem Thema werden die erweiterten eDiscovery-Export-Setup Optionen beschrieben.
   
  **Inhalt dieses Themas:**
   
-- [Definieren von Export Batches und Sitzungen](export-results-in-advanced-ediscovery.md#BK_Define)
+- [Definieren von Export Batches und-Sitzungen](export-results-in-advanced-ediscovery.md#BK_Define)
     
 - [Inkrementelle und zusätzliche Exporte](export-results-in-advanced-ediscovery.md#BK_IncrementalReports)
     
-- [Einrichten von Batch Export-Parameter](export-results-in-advanced-ediscovery.md#BK_SetUpExport)
+- [Einrichten von Batch Exportparametern](export-results-in-advanced-ediscovery.md#BK_SetUpExport)
     
-- [Exportieren von Ausgabedateien Bericht](export-results-in-advanced-ediscovery.md#BK_ExportOutputFIles)
+- [Exportieren von Berichtsausgabe Dateien](export-results-in-advanced-ediscovery.md#BK_ExportOutputFIles)
     
-## <a name="defining-export-batches-and-sessions"></a>Definieren von Export Batches und Sitzungen
+## <a name="defining-export-batches-and-sessions"></a>Definieren von Export Batches und-Sitzungen
 <a name="BK_Define"> </a>
 
-Ein Export Batch ermöglicht Exportvorgang mithilfe einer Reihe von definierten Parameter. Erweiterte eDiscovery können Sie Batches zum Anpassen der einzelnen Export definieren.
+Ein Export Batch ermöglicht die Export Verarbeitung mithilfe einer Reihe von definierten Parametern. Mit Advanced eDiscovery können Sie Batches definieren, um die einzelnen Exporte anzupassen.
   
-Parameter werden pro Export Batch definiert. In der Standardeinstellung für den ersten Batch einer Anfrage wird ein Batches mit dem Namen "Exportieren Batch 01" erstellt. Sie können auch den Namen und die Beschreibung bearbeiten.
+Parameter werden pro Export Batch definiert. Ein Batch mit dem Namen "Export Batch 01" wird standardmäßig für den ersten Batch eines Falls erstellt. Sie können auch den Namen und die Beschreibung des Batches bearbeiten.
   
-Eine Export-Sitzung ist Ausführung des erweiterten eDiscovery-Export innerhalb eines Batches exportieren.
+Bei einer Export Sitzung handelt es sich um eine Ausführung des erweiterten eDiscovery-Exports innerhalb eines Export Batches.
   
 ## <a name="incremental-and-additional-exports"></a>Inkrementelle und zusätzliche Exporte
 <a name="BK_IncrementalReports"> </a>
 
-Sie können mehrere Export Sitzungen innerhalb eines Batches exportieren, um sicherzustellen, dass übereinstimmende Ergebnisse basierend auf dem gleichen Exportvorlage und Parameter ausführen. Für jede Sitzung in einem Batch können Sie Analytics exportieren, neu Groß-/Kleinschreibung Daten verarbeitet und Verarbeiten von jeweils "inkrementell".
+Sie können mehrere Export Sitzungen innerhalb eines Export Batches ausführen, um konsistente Ergebnisse auf der Grundlage derselben Exportvorlage und Parameter sicherzustellen. Für jede Sitzung innerhalb eines Batches können Sie Analysen für neu verarbeitete Falldaten exportieren und diese inkrementell verarbeiten.
   
-Um mit anderen Parametern zu exportieren, müssen Sie zuerst einen neuen Batch zu erstellen. Die erste Sitzung in das neue Blatt erzeugt Ergebnisse für Dateien verarbeitet im Fall bisher, unabhängig davon, ob diese Dateien importiert und über eine oder mehrere Imports verarbeitet wurden. Jedem Batch wird die Pivot-Elemente, Ähnlichkeit, Inclusives neu berechnet. Sitzungen verwenden Sie die Parameter für den Batch definiert und nicht neu berechnet Pivot-Elemente, Ähnlichkeit, Inclusives usw. für jede Sitzung Ausführung.
+Wenn Sie einen anderen Satz von Parametern exportieren möchten, müssen Sie zunächst einen neuen Batch erstellen. Die erste Sitzung im neuen Batch erzeugt Ergebnisse für im Fall verarbeitete Dateien, unabhängig davon, ob diese Dateien importiert und über einen oder mehrere imPorte verarbeitet wurden. Jeder Batch berechnet Pivots, Similarity, inclusive, etc. Sitzungen verwenden die für den Batch definierten Parameter und berechnen Pivots, Similarity, inclusives, etc. für jede Sitzungs Ausführung nicht neu.
   
-Nehmen wir beispielsweise an eine Anfrage importiert wurde, und seine Daten analysiert. Um in der Nähe Duplikate und Threading-e-Mail-Ergebnisse für die inkrementellen Daten abzurufen, klicken Sie auf **Create Session exportieren** im selben Batch, der zuvor zum Exportieren von Daten verwendet wurde. 
+Nehmen wir beispielsweise an, ein Fall wurde importiert, und die Daten wurden analysiert. Um Near-Duplicates-und e-Mail-Threading-Ergebnisse für die inkrementellen Daten abzurufen, klicken Sie auf **Export Sitzung** in demselben Batch erstellen, der zuvor zum Exportieren von Daten verwendet wurde. 
   
-## <a name="set-up-batch-export-parameters"></a>Einrichten von Batch Export-Parameter
+## <a name="set-up-batch-export-parameters"></a>Einrichten von Batch Exportparametern
 <a name="BK_SetUpExport"> </a>
 
-Die eDiscovery-Exporttool wird verwendet, um Suchergebnisse aus erweiterte eDiscovery auf Ihrem lokalen Computer zu exportieren. Um die Daten Übertragungsdurchsatz und beschleunigen der Exportvorgang erhöhen möchten, können Sie eine Einstellung für die Windows-Registrierung auf dem Computer konfigurieren, mit denen Sie die Suchergebnisse exportieren. Wenn Sie die Download-Geschwindigkeit erhöhen möchten, konfigurieren Sie die Einstellung der Registrierung, bevor Sie die Exportparameter einrichten. Weitere Informationen finden Sie unter [erhöhen die Geschwindigkeit Download beim Exportieren von eDiscovery-Suchergebnisse aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+Das eDiscovery-Export Tool wird verwendet, um Suchergebnisse aus Advanced eDiscovery auf Ihren lokalen Computer zu exportieren. Um den Durchsatz bei der Datenübertragung zu erhöhen und den Exportvorgang zu beschleunigen, können Sie eine Windows-Registrierungseinstellung auf dem Computer konfigurieren, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Downloadgeschwindigkeit verlängern möchten, konfigurieren Sie die Registrierungseinstellung, bevor Sie die Exportparameter einrichten. Weitere Informationen finden Sie unter [höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. Wählen Sie eine Anfrage im erweiterte eDiscovery, und klicken Sie auf **Exportieren** \> **Setup**.
+1. Wählen Sie unter Erweiterte eDiscovery eine Groß-/Kleinschreibung aus, und klicken Sie auf **Setup** **exportieren** \> .
     
-    - Aus der Liste **Exportieren Batch** wählen den Blattnamen oder Exportieren von Ergebnissen in Export Batch 01 (Standard). 
+    - Wählen Sie in der Liste **Export Batch** den Namen des Batches aus, oder exportieren Sie die Ergebnisse, um den Batch 01 zu exportieren (Standard Batch). 
     
-    - Um Ergebnisse für neue Dateien zu exportieren, die Sie einer vorhandenen Anfrage hinzugefügt haben, fahren Sie mit Ihren aktuellen Stapel. Zum Erstellen einer Sitzung im Batch, wählen Sie die gleiche Anzahl von Batch aus, und klicken Sie auf **Create Session exportieren** können Sie diese Option verwenden, so exportieren Sie die gleichen Parameter als den vorherigen Batch eine inkrementelle Weise. 
+    - Wenn Sie Ergebnisse für neue Dateien exportieren möchten, die Sie einem vorhandenen Fall hinzugefügt haben, fahren Sie mit dem aktuellen Batch fort. Um eine Sitzung im Batch zu erstellen, wählen Sie dieselbe Batchnummer aus, und klicken Sie auf **Export Sitzung erstellen** mit dieser Option können Sie die gleichen Parameter wie im vorherigen Batch inkrementell exportieren. 
     
-    - Klicken Sie auf **Hinzufügen** , um einen neuen Batch zu exportieren, ![Symbol hinzufügen](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)und geben Sie einen neuen Namen in **Blattname** (oder übernehmen Sie den Standardwert) und eine Beschreibung im **Feld Beschreibung Batch**. Klicken Sie auf **OK**.
+    - Um in einen neuen Batch zu exportieren, klicken Sie auf](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)hinzufügen Symbol **Hinzufügen** ![, und geben Sie einen neuen Namen in den **batchnamen** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
     
-    - Um einen Namen oder die Beschreibung zu bearbeiten, wählen Sie den Namen im **Batch exportieren**, klicken Sie auf **Bearbeiten** ![Bearbeitungssymbol](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), und klicken Sie dann die Felder zu ändern.
+    - Wenn Sie einen batchnamen oder eine Beschreibung bearbeiten möchten, wählen Sie den Namen unter **Export Batch**aus](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und ändern Sie dann die Felder.
     
       > [!NOTE]
-      > Nach dem Ausführen Sitzungen für einen Batch Export können sie gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, sobald die erste Sitzung ausgeführt wird. 
+      > Nachdem Sie Sitzungen für einen Export Batch ausgeführt haben, können diese nicht gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, nachdem die erste Sitzung ausgeführt wurde. 
   
-    - Wählen Sie zum Erstellen eines Batches für die doppelte Export **Duplikat Export Batch** ![doppelte Export Batch-Symbol erstellen](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) , und geben Sie einen Namen und eine Beschreibung für den doppelten Batch in der Systemsteuerung. 
+    - Wenn Sie einen doppelten Export Batch erstellen möchten, wählen Sie **Duplicate** ![Export Batch Create a Duplicate](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Export Batch Icon aus, und geben Sie im Bereich einen Namen und eine Beschreibung für den doppelten Batch ein. 
     
-    - Wählen Sie zum Löschen eines Batches Export **Löschen** ![löschen Symbolgröße Batch Export](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - Wenn Sie einen Export Batch löschen möchten **** ![, klicken Sie auf Löschen eines](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Export Batch-Symbols.
     
-    - Wählen Sie zum Anzeigen des Verlaufs eines Batches **Batch Verlauf** ![Ansicht Verlauf Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
+    - Um den Verlauf eines Batches anzuzeigen, wählen **** ![Sie Verlaufs Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für den Stapelverarbeitungs Verlauf.
     
-2. Wählen Sie unter **Auffüllung** **Includedateien nur über Relevanz Grenzwert Score** und/oder **verfeinern Export Batch** , wenn Sie die Einstellungen für Ihren Export-Stapel optimieren möchten. 
+2. Wählen Sie unter **Auffüllung**die Option **nur Dateien über Relevanz Cut-Off Score** und/oder **Export Batch verfeinern** aus, wenn Sie die Einstellungen für Ihren Export Batch optimieren möchten. 
     
-3. Wenn Sie **nur Dateien über Relevanz Grenzwert Score einschließen**ausgewählt haben, ist das **Problem** aktiviert. Wenn die Datei Relevanz Score höher ist als die Bewertung Grenzwert für das ausgewählte Problem ist, wird die Datei exportiert werden, wenn es vom Filter "zur Prüfung" ausgeschlossen wird. 
+3. Wenn Sie **nur Dateien über Relevanz Cut-Off-Score einbeziehen**aktivieren, wird das **Problem** aktiviert. Wenn der relevanzwert der Datei höher ist als der Wert für das ausgewählte Problem, wird die Datei exportiert, es sei denn, Sie wird durch den Filter ' for Review ' ausgeschlossen. 
   
-    Bei Auswahl von **verfeinern Export Batch**, die **Deduplizierung** und Filter von 'Zur Überprüfung' Feld Optionsfelder aktiviert sind. Bei Auswahl von **Deduplizierung**, und klicken Sie dann duplizierte Dateien gemäß der Richtlinie definierten herausgefiltert [Case-Ebene (Standard): aus jeder Gruppe von duplizierten Dateien in der gesamten Groß-/Kleinschreibung, alle jedoch eine Datei Aufhebung der duped werden soll. Verwaltungsberechtigter Ebene: aus jeder Gruppe von duplizierten Dateien von der gleichen Verwaltungsberechtigte, werden alle jedoch eine Datei Aufhebung der duped werden.] Die Export-Ausgabe enthält einen Datensatz für alle duplizierten Dateien. Wenn Sie **von 'zur Prüfung"** Filterfeld auswählen, wählen Sie **ändern unter Metadaten** Geben Sie Ihre Einstellungen **'zur Prüfung"** dar. Wählen Sie **input Includedateien** Quelldateien im Paketinhalt enthalten. Deaktivieren Sie diese Einstellung, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden sollen. 
+    Wenn Sie **Export Batch verfeinern**auswählen, werden die Optionsfelder **de-dupe** und Filter by Review aktiviert. Wenn Sie Deduplizierung auswählen, werden doppelte Dateien entsprechend der definierten Richtlinie gefiltert [Case Level (Standard): aus jedem Satz doppelter Dateien im gesamten Fall werden nur eine Datei debetrogen. **** Depot Ebene: aus jeder Gruppe von doppelten Dateien desselben Depotbank wird nur eine Datei debetrogen.] Die Ausgabe des Exports enthält einen Datensatz aller doppelten Dateien. Wenn Sie **Filtern nach ' zur Überarbeitung '** wählen, wählen Sie **unter Metadaten ändern** , um die Feld Einstellungen **für die Überprüfungen** einzugeben. Wählen Sie **Eingabedateien einfügen** aus, um Quelldateien in den Paketinhalt einzubeziehen. Sie können diese Einstellung deaktivieren, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden. 
     
-4. Wählen Sie unter **Metadaten**aus der folgenden Optionen in der Liste **Vorlage exportieren** (einmal pro Sitzung). 
+4. Wählen Sie unter **Metadaten**aus den folgenden Optionen in der Liste **Export Vorlage** (einmal pro Sitzung) aus. 
     
-    - **Standard**: grundlegende Satz von Datenelemente, Metadaten und Eigenschaften. Verwenden Sie diese Option aus, wenn Daten importieren bereits im erweiterten eDiscovery verarbeitet wurde und Exportieren von Daten an ein System, das bereits die Dateien enthält hochgeladen. Exportieren Sie standardmäßig Vorlage Spalten erstellt und aufgefüllt werden.
+    - **Standard**: grundlegende Gruppe von Datenelementen, Metadaten und Eigenschaften. Verwenden Sie diese Option, wenn Importdaten bereits in Advanced eDiscovery verarbeitet wurden und Exportdaten in ein System hochgeladen werden, in dem die Dateien bereits enthalten sind. Standardmäßig werden Spalten für das Exportieren von Vorlagen erstellt und ausgefüllt.
     
-    - **Alle**: umfassende Auswahl an standard-Metadaten sowie alle Verarbeiten von Daten, analysieren und Relevanz Bewertungen. Diese Vorlage ist erforderlich, wenn erweiterte eDiscovery die Verarbeitung führt und Dateidaten werden zum ersten Mal mit einem externen System hochgeladen.
+    - **All**: vollständiger Satz von Standardmetadaten einschließlich aller verarbeitungsDaten sowie Analyse-und Relevanzwerte. Diese Vorlage ist erforderlich, wenn Advanced eDiscovery die Verarbeitung ausführt und Dateidaten zum ersten Mal auf ein externes System hochgeladen werden.
     
-    - **Probleme**: Wählen Sie **Alle Probleme** oder ein bestimmtes Problem, das Sie erstellt haben. 
+    - **Probleme**: Wählen Sie **alle Probleme** aus, oder wählen Sie ein bestimmtes Problem aus, das Sie erstellt haben. 
     
-5. Klicken Sie unter **Ziel**:
+5. Unter **Ziel**:
     
-    - **Laden Sie auf dem lokalen Computer**
+    - **Auf lokalen Computer herunterladen**
     
-    - **Export in Azure Blob benutzerdefinierte**: Wenn diese Option aktiviert ist, können Sie angeben, dass ein Container-URL und SAS-Token.
+    - **In benutzerdefinierten Azure-BLOB exportieren**: Wenn diese Option aktiviert ist, können Sie eine Container-URL und ein SAS-Token angeben.
     
       > [!NOTE]
-      > Sobald ein Exportpaket zu gespeichert wurde die benutzerdefinierten Azure Blob, die Daten werden nicht mehr verwaltet von erweiterten eDiscovery; Es wird von den Azure Blob verwaltet. Dies bedeutet, wenn Sie die Groß-/Kleinschreibung löschen, die exportierten Dateien weiterhin auf die Azure Blob verbleibt. 
+      > Nachdem ein Exportpaket im benutzerdefinierten Azure-BLOB gespeichert wurde, werden die Daten nicht mehr von Advanced eDiscovery verwaltet. Sie wird vom Azure-BLOB verwaltet. Wenn Sie also den Fall löschen, verbleiben die exportierten Dateien weiterhin im Azure-BLOB. 
   
-    - **Token für zukünftige Export-Sitzung speichern SAS**: Wenn diese Einstellung aktiviert, wird das SAS-Token in der erweiterten eDiscovery interne Datenbank für die zukünftige Verwendung verschlüsselt werden.
+    - **SAS-Token für zukünftige Export Sitzung speichern**: Wenn diese Option aktiviert ist, wird das SAS-Token in der internen Datenbank von Advanced eDiscovery für zukünftige Verwendung verschlüsselt.
     
       > [!NOTE]
-      > Derzeit läuft ab das Token SAS nach Monat. Wenn Sie versuchen, die nach mehr als einem Monat herunterladen Sie die letzten Sitzung rückgängig zu machen müssen, exportieren Sie dann erneut. 
+      > Derzeit läuft das SAS-Token nach einem Monat ab. Wenn Sie versuchen, nach mehr als einem Monat herunterzuladen, müssen Sie die letzte Sitzung rückgängig machen und dann erneut exportieren. 
   
-6. Klicken Sie auf **Ändern** , um die Feldeigenschaften "zur Prüfung" festgelegt. 
+6. Klicken Sie auf **ändern** , um die Feld Einstellungen für Überprüfungen festzulegen. 
     
-    ![Einrichten von für überprüfen Sie die Einstellungen für einen Batch Export dar](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Einrichten von Feld Einstellungen für Überprüfungen für einen Export Batch](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
-   - **Für Überarbeitung dar**in Szenario Pulldownmenü Liste **auswählen** , wählen Sie unter der Szenario und des Umfangs der Überprüfung. Die Einstellungen werden basierend auf Ihrer Auswahl angezeigt.
+   - Wählen Sie unter **für Überprüfungen von Feld Einstellungen**in Dropdownliste **Szenario auswählen** das Szenario und den Umfang der Überprüfungen aus. Die Einstellungen werden basierend auf Ihrer Auswahl angezeigt.
     
-      - **Alle überprüfen** (Standard): alle e-Mails, Anlagen und Dokumente standardmäßig ausgewählt sind. 
+      - **Alle überarbeiten** (Standard): alle e-Mails, Anlagen und Dokumente sind standardmäßig ausgewählt. 
     
-      - **Überprüfen Sie alle eindeutigen Inhalte in einem Satz**: Inclusives eindeutige inklusive Kopien, eindeutige Anlagen in e-Mail eingestellt aus jeder Gruppe von genaue Duplikate repräsentative Ebene.
+      - **Überarbeiten Sie alle eindeutigen Inhalte in einem Satz**: inclusives und Unique inclusive copies, Unique Attachments in e-Mail-Set-Ebene, repräsentativ aus jedem Satz von exakten Duplikaten.
     
-      - **Überprüfen Sie alle eindeutigen Inhalt in einem Satz - keine inklusiven Kopien**: Inclusives, legen Sie eindeutige Anlagen in e-Mail Ebene, repräsentative aus jeder Gruppe von genaue Duplikate.
+      - **Überarbeiten Sie alle eindeutigen Inhalte in einem Set-No inclusive-Kopien**: inclusives, Unique Attachments in e-Mail-Set-Ebene, repräsentativ aus jedem Satz von exakten Duplikaten.
     
-      - **Überprüfen Sie alle eindeutige und die zugehörige Produktfamilie Dateien**: Inclusives eindeutige Anlagen in e-Mail-Ebene festlegen Vertreter jede Gruppe von genaue Duplikate zu erweitern, um Produktfamilie Dateien enthalten.
+      - **Überarbeiten Sie alle eindeutigen Inhalte und verwandten Familiendateien**: inclusives, Unique Attachments in e-Mail-Set-Ebene, repräsentativ aus jedem Satz von exakten Duplikaten, erweitern Sie, um Familiendateien einzubeziehen.
     
-      - **Benutzerdefinierte** (können Sie die Optionen im Dialogfeld definieren): die Standardmethode ist auf die aktuelle Auswahl beibehalten und aktivieren alle Dialogfeld Optionen, um ihre Auswahl zu ermöglichen. Wenn Sie diese Option auswählen, können Sie dann die Einstellungen für e-Mails, Dokumente, Anlagen anpassen und sonstige.
+      - **Benutzerdefiniert** (ermöglicht es Ihnen, die Optionen im Dialogfeld zu definieren): die Standardeinstellung ist, aktuelle Auswahl beizubehalten und alle Dialog Optionen zu aktivieren, um die Auswahl zu ermöglichen. Wenn Sie diese Option auswählen, können Sie die Einstellungen für e-Mails, Dokumente, Anlagen und Verschiedenes anpassen.
     
-    - Wählen Sie unter **-e-Mails**die e-Mails, die Sie exportieren möchten.
+    - Wählen Sie unter **e-Mails**die e-Mails aus, die Sie exportieren möchten.
     
-      - **Alle e-Mails**: (Standardeinstellung) alle e-Mails ausgewählt sind.
+      - **Alle e-Mails**: (Standard) alle e-Mails sind ausgewählt.
     
-      - **Inclusives**: eine inklusive e-Mail ist eine letzte e-Mail von einem Thread, und alle e-Mails aus dem Thread enthält.
+      - **Inclusives**: eine umfassende e-Mail ist eine letzte e-Mail eines Threads und enthält alle anderen e-Mails aus dem Thread.
     
-      - **Inclusives und eindeutige inklusive Kopien**: inklusive Kopien und Inclusives mit dem gleichen Betreff, Textkörper und Anlagen; eindeutige inklusive Kopien werden eindeutige Kopien der diese e-Mails.
+      - Inclusive **-und Unique inclusive-Kopien**: inklusive Kopien und Inklusivleistungen mit demselben Betreff, Körper und Anlagen; eindeutige inklusive Kopien sind eindeutige Kopien dieser e-Mails.
     
-    - Wählen Sie unter **Dokumente**die Dokumente, die Sie exportieren möchten. 
+    - Wählen Sie unter **Dokumente**die Dokumente aus, die Sie exportieren möchten. 
     
-      - **Alle Dokumente**: (Standardeinstellung) alle Dokumente ausgewählt sind.
+      - **Alle Dokumente**: (Standard) alle Dokumente sind ausgewählt.
     
-      - **Pivot-Elemente**: eine Datei als repräsentativ für die in der Nähe Duplikate festgelegt, die in der Regel als Grundlinie verwendet wird, wenn die Gruppe zu überprüfen.
+      - **Pivots**: eine Datei, die als Vertreter des Satzes für nahezu Duplikate ausgewählt wurde, der normalerweise beim Überprüfen des Satzes als Baseline verwendet wird.
     
-      - **Repräsentative aus jeder Gruppe von genaue Duplikate**: eindeutige nahezu doppelte Dateien (einschließlich das Pivot).
+      - **Repräsentativ aus jeder Gruppe von exakten Duplikaten**: einzigartige near-Duplicate-Dateien (einschließlich Pivot).
     
-    - Wählen Sie unter **Anlagen**die Anlagen, die Sie exportieren möchten. 
+    - Wählen Sie unter **Anlagen**die zu exportierenden Anlagen aus. 
     
-      - **Alle Anlagen**: (Standardeinstellung) alle Anlagen ausgewählt sind.
+      - **Alle Anlagen**: (Standard) alle Anlagen sind ausgewählt.
     
-      - **Eindeutige Anlage in Groß-/Kleinschreibung Ebene**: eindeutige Anlagedateien innerhalb der angegebenen Groß-/Kleinschreibung.
+      - **Eindeutige Anlage im Fallebene**: eindeutige Anlagendateien innerhalb des angegebenen Falls.
     
-      - **Legen Sie eindeutige Anlagen in e-Mail-Nachricht**: eindeutige Anlagedateien in die angegebene e-Mail-Groß-/Kleinschreibung.
+      - **Eindeutige Anlage im e-Mail-Set-Level**: eindeutige Anlagendateien innerhalb des angegebenen e-Mail-Falls.
     
-   - Sie können unter**Micellaneous** **Anlagen als Dokumente behandelt**, **wie Dokumente-e-Mails behandelt**oder **erweitern, um Produktfamilie Includedateien**angeben. Bei der Auswahl **erweitern, um Produktfamilie Includedateien**, für jede Datei zur Prüfung gekennzeichnet ist, werden auch alle Dateien derselben Familie gekennzeichnet.
+   - Unter**Micellaneous**können Sie **Anhänge als Dokumente behandeln**, **e-Mails als Dokumente behandeln**oder **Familiendateien hinzufügen**. Wenn Sie erweitern auswählen, **um Familiendateien einzubeziehen**, werden für jede zur Überarbeitung gekennzeichnete Datei alle Dateien derselben Familie ebenfalls gekennzeichnet.
     
-7. Wählen Sie **Speichern** , um die Einstellungen zu speichern. 
+7. Klicken Sie auf **Speichern** , um die Einstellungen zu speichern. 
     
-8. Nachdem Sie Exportparameter angeben, um Export-Batch starten klicken Sie auf **Create Session exportieren**.
+8. Nachdem Sie Exportparameter angegeben haben, klicken Sie auf **Export Sitzung erstellen**, um den Export Batch zu starten.
     
-    Während des Exportvorgangs wird der Status in **Aufgabenstatus**angezeigt. Die Ergebnisse werden in der **Zusammenfassung Export**angezeigt.
+    Während des Exports wird der Status im **Vorgangsstatus**angezeigt. Die Ergebnisse werden in der **Export Zusammenfassung**angezeigt.
     
-9. Klicken Sie auf **in die Zwischenablage kopieren** , um den Schlüssel exportieren kopieren, klicken Sie im Fenster **Downloaddateien** . 
+9. Klicken Sie im Fenster **Dateien herunterladen** auf in **Zwischenablage kopieren** , um den Export Schlüssel zu kopieren. 
     
-    ![Herunterladen von Dateien](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
+    ![Dateien herunterladen](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Klicken Sie auf **Schließen**. 
     
-    Die eDiscovery-Exporttool wird gestartet.
+    Das eDiscovery-Export Tool wurde gestartet.
     
     ![eDiscovery-Exporttool](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
-11. In der **eDiscovery-Exporttool**:
+11. Im **eDiscovery-Export Tool**:
     
-    -  Fügen Sie in **Einfügen der Signatur Zugriff freigegeben, die zum Verbinden mit der Datenquelle verwendet wird**dem Schlüssel exportieren, Youcopied in die Zwischenablage in Schritt 7.
+    -  Fügen Sie in **Einfügen der gemeinsamen Zugriffssignatur, die zum Herstellen einer Verbindung mit der Quelle verwendet wird**, in Schritt 7 den Export Schlüssel ein, der youcopied in die Zwischenablage kopiert.
     
-    - Klicken Sie auf **Durchsuchen** , um den Zielspeicherort zum Speichern der heruntergeladenen Exportdateien auf dem lokalen Computer auszuwählen. 
+    - Klicken Sie auf **Durchsuchen** , um den Zielspeicherort für die heruntergeladenen Exportdateien auf dem lokalen Computer auszuwählen. 
     
-    - Klicken Sie auf **Start**. Die Exportdateien werden auf den lokalen Computer heruntergeladen. Wenn Sie in Schritt 4 **Export in Azure Blob Benutzerdefiniert** ausgewählt haben, wird die Sitzung an ein BLOB-Speicher-Ziel-URL Ihrer Wahl exportiert.
+    - Klicken Sie auf **starten**. Die Exportdateien werden auf den lokalen Computer heruntergeladen. Wenn Sie in Schritt 4 die Option **zum Exportieren in benutzerdefiniertEs Azure-BLOB** ausgewählt haben, wird die Sitzung in ein BLOB-Speicher-URL-Ziel Ihrer Wahl exportiert.
     
-Eine vollständige Beschreibung der Felder in den Exportbericht finden Sie unter [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md).
+Eine vollständige Beschreibung der Felder im Exportbericht finden Sie unter [Export Report Fields](export-report-fields-in-advanced-ediscovery.md).
   
-## <a name="export-report-output-files"></a>Exportieren von Ausgabedateien Bericht
+## <a name="export-report-output-files"></a>Exportieren von Berichtsausgabe Dateien
 <a name="BK_ExportOutputFIles"> </a>
 
-Die folgende Tabelle enthält die Ausgabedateien, die beim Ausführen eines Batches Export generiert werden.
+In der folgenden Tabelle sind die Ausgabedateien aufgeführt, die beim Ausführen eines Export Batches generiert werden.
   
 |**Dateiname**|**Dateityp**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Zusammenfassung exportieren  <br/> |CSV  <br/> |Eine Protokolldatei generiert, indem die eDiscovery Exporttool.  <br/> |
-|Spur  <br/> |txt  <br/> |Eine Protokolldatei generiert, indem die eDiscovery Exporttool.  <br/> |
-|Extrahierten Textdateien  <br/> |Dateiordner  <br/> |Ordner, der die extrahierten Textdateien der exportierten Dateien enthält.  <br/> |
-|Eingabe oder systemeigene Dateien  <br/> |Dateiordner  <br/> |Ordner, die systemeigenen und input-Dateien der exportierten Dateien enthält.  <br/> |
-|Liste exportieren  <br/> |xlsx  <br/> |Metadaten der exportierten Dateien im Xlsx-Format dar. Felder in Dateien werden gemäß der Vorlage Benutzer wählt zu exportieren. Falls erforderlich, mehrere Dateien erstellt wurden, jeweils 100-150 KB Zeilen enthält. Wenn Sie ein bestimmten Wert enthält mehr Zeichen als eine Excel-Zelle enthalten kann (derzeit die Grenze liegt bei 32.767 Zeichen), und klicken Sie dann der Wert wird auf die maximal zulässige Länge gekürzt werden. Wenn Sie ein Wert abgeschnitten wird, ist Hintergrundfarbe der Zelle an, dass dies dem Benutzer Rot." E-Mail Teilnehmer"ist ein Beispiel für ein Feld, das die maximale Länge überschreiten kann, wenn die e-Mail-Nachricht an eine große Verteilergruppe gesendet wurde. Details zu den Ausgabefeldern finden Sie unter [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md) .<br/> |
-|Datei laden  <br/> |CSV  <br/> |Metadaten der exportierten Dateien im CSV-Format in einer anderen Anwendung geladen. Felder in Dateien werden gemäß der Vorlage Benutzer wählt zu exportieren.  <br/> |
-|Symbol für Erfolg  <br/> |txt  <br/> |Nur erstellt beim Exportieren einer 3rd Azure Blob Partei. Wenn der Export erfolgreich ausgeführt werden, wird die Datei erstellt. Bei einem Ausfall oder den partiellen wird Erfolg die Datei nicht erstellt werden. Datei wird im Stammordner, ermöglicht die automatisierte Tracking auf verschiedenen Export Batches-Sitzungen Statusarten erstellt werden. Dies ist eine leere Datei. Ihr Name lautet: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt.  <br/> |
+|Zusammenfassung exportieren  <br/> |CSV  <br/> |Eine vom eDiscovery-Export Tool generierte Protokolldatei.  <br/> |
+|Ablaufverfolgung  <br/> |txt  <br/> |Eine vom eDiscovery-Export Tool generierte Protokolldatei.  <br/> |
+|Extrahierte Textdateien  <br/> |Datei Ordner  <br/> |Ordner, der die extrahierten Textdateien der exportierten Dateien enthält.  <br/> |
+|Eingabe-oder systemeigene Dateien  <br/> |Datei Ordner  <br/> |Ordner, der die systemeigenen und Eingabedateien der exportierten Dateien enthält.  <br/> |
+|Liste exportieren  <br/> |xlsx  <br/> |Exportierte Metadaten im XLSX-Format. Die Felder in den Dateien entsprechen der Auswahl des Vorlagen Benutzers für den Export. Bei Bedarf werden mehrere Dateien erstellt, die jeweils 100 150K Zeilen enthalten. Wenn ein bestimmter Wert mehr Zeichen enthält, als eine Excel-Zelle enthalten kann (derzeit ist der Grenzwert 32.767 Zeichen), wird der Wert auf die zulässige maximale Länge gekürzt. Wenn ein Wert gekürzt wird, ist die Hintergrundfarbe der Zelle rot, um dies dem Benutzer anzuzeigen. " E-Mail-Teilnehmer "ist ein Beispiel für ein Feld, das den Längen Grenzwert überschreiten kann, wenn die e-Mail an eine umfangreiche Verteilung gesendet wurde. Details zu den Ausgabefeldern finden Sie unter [Export Report Fields](export-report-fields-in-advanced-ediscovery.md) .<br/> |
+|Datei laden  <br/> |CSV  <br/> |Exportierte Metadaten im CSV-Format zum Laden in eine andere Anwendung. Die Felder in den Dateien entsprechen der Auswahl des Vorlagen Benutzers für den Export.  <br/> |
+|Erfolgsindikator  <br/> |txt  <br/> |Wird nur beim Exportieren in ein Azure-BLOB von einem Drittanbieter erstellt. Wenn der Export vollständig erfolgreich verläuft, wird die Datei erstellt. Bei einem Fehler oder teilweiser Erfolg wird die Datei nicht erstellt. Die Datei wird im Stammordner erstellt und ermöglicht die automatische Nachverfolgung in verschiedenen Export Batches/-Sitzungsstatus. Dies ist eine leere Datei. Der Name lautet: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Anzeigen des Verlaufs Batch und ältere Ergebnisse exportieren](view-batch-history-and-export-past-results.md)
+[Anzeigen des Batch Verlaufs und exportieren vergangener Ergebnisse](view-batch-history-and-export-past-results.md)
   
 [Schnelleinrichtung für Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md)
   
-[Die Download-Leistung zu steigern, beim Exportieren von eDiscovery-Suchergebnisse aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
+[Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
 

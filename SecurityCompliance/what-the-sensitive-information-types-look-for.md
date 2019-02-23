@@ -9,21 +9,21 @@ search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: Verhinderung von Datenverlust (DLP) in die Office 365-Sicherheit &amp; Compliance Center umfasst 80 vertraulichen Informationstypen, die Sie in Ihrer DLP-Richtlinien verwendet werden. Dieses Thema enthält eine Liste aller diese Typen vertraulicher Informationen und dargestellt was eine DLP-Richtlinie für jeden Typ erkannt.
-ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+description: Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält 80 vertrauliche Informationstypen, die Sie in ihren DLP-Richtlinien verwenden können. In diesem Thema werden alle diese Typen von vertraulichen Informationen aufgeführt, und es wird gezeigt, worauf eine DLP-Richtlinie bei der Erkennung der einzelnen Typen sucht.
+ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194736"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216355"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
-Verhinderung von Datenverlust (DLP) in die Office 365-Sicherheit &amp; Compliance Center enthält viele Arten von vertraulichen Informationen, die Sie in Ihrer DLP-Richtlinien verwendet werden. Dieses Thema enthält eine Liste aller diese Typen vertraulicher Informationen und dargestellt was eine DLP-Richtlinie für jeden Typ erkannt. Ein Typ von vertraulichen Informationen wird durch ein Muster definiert, die mit einem regulären Ausdruck oder eine Funktion identifiziert werden kann. Darüber hinaus kann bestätigende Nachweis Stichwörter und Prüfsumme verwendet werden, um ein anderes vertrauliche Informationen zu identifizieren. Vertrauensstufe und Nähe zum werden auch in der Evaluierung verwendet.
+Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält viele vertrauliche Informationstypen, die Sie in ihren DLP-Richtlinien verwenden können. In diesem Thema werden alle diese Typen von vertraulichen Informationen aufgeführt, und es wird gezeigt, worauf eine DLP-Richtlinie bei der Erkennung der einzelnen Typen sucht. Ein vertraulicher Informationstyp wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Darüber hinaus können nachweisbare Beweise wie Schlüsselwörter und Prüfsummen verwendet werden, um einen vertraulichen Informationstyp zu identifizieren. Die Zuverlässigkeitsstufe und die Näherung werden auch im Evaluierungsprozess verwendet.
   
 ## <a name="aba-routing-number"></a>ABA Routing Number (US-Bankleitzahl)
 
@@ -35,12 +35,12 @@ Verhinderung von Datenverlust (DLP) in die Office 365-Sicherheit &amp; Complianc
 
 Formatiert:
 - Vier Ziffern, beginnend mit 0, 1, 2, 3, 6, 7 oder 8
-- Ein Bindestrich
+- Ein Bindestrich 
 - Vier Ziffern
-- Ein Bindestrich
+- Ein Bindestrich 
 - Eine Ziffer
 
-Unformatiert: 9 aufeinander folgenden Ziffern beginnend mit 0, 1, 2, 3, 6, 7 oder 8 
+Unformatiert: 9 aufeinanderfolgende Ziffern beginnend mit 0, 1, 2, 3, 6, 7 oder 8 
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -72,7 +72,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 aba #
 - 
 aba routing #
-- ABA routing Anzahl
+- ABA-Routingnummer
 - 
 aba#
 - 
@@ -112,7 +112,7 @@ Acht Ziffern, durch Punkte getrennt
 Acht Ziffern:
 - Zwei Ziffern
 - Ein Punkt 
-- Drei Ziffern
+- Drei Ziffern 
 - Ein Punkt 
 - Drei Ziffern
 
@@ -143,10 +143,10 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Argentina National Identity number
  
 - Identität 
-- Kennung National Personalausweis 
+- Identifizierung nationaler Identitätsausweis 
 - DNI
  
-- NIC National Registrierung von Personen 
+- NIC National Registry of persons 
 - Documento Nacional de Identidad
  
 - Registro Nacional de las Personas
@@ -164,9 +164,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="pattern"></a>Muster
 
-Account-Nummer ist 6 bis 10 Ziffern. Australien Zustand Bankleitzahl:
+Die Kontonummer ist 6-10 Ziffern. Australische Bank Filialnummer:
 - Drei Ziffern 
-- Ein Bindestrich  
+- Ein Bindestrich 
 - Drei Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -199,7 +199,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
 
@@ -289,7 +289,7 @@ australian automobile association
 international driving permit
 - DriverLicence
 - DriverLicences
-- Treiber Lic
+- Treiber lic
 - Driver Licence
 
 - Driver Licences
@@ -297,24 +297,24 @@ international driving permit
 - DriversLic
 - DriversLicence
 - DriversLicences
-- Treiber Lic
-- Treiber Lics
-- Treiber-Lizenz
-- Treiber-Lizenzen
+- Treiber lic
+- Treiber LiCS
+- Führerschein
+- Treiber Lizenzen
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
 - Driver'Licences
-- Treiber ' Lic
-- Treiber ' Lics
-- Treiber ' Lizenz
-- Treiber ' Lizenzen
+- Treiber lic
+- Driver ' LiCS
+- Führerschein
+- Führerscheine
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- Des Treibers Lic
-- Lics des Treibers
+- Treiber lic
+- LiCS des Treibers
 - Driver's Licence
 
 - Driver's Licences
@@ -333,8 +333,8 @@ Driver Lics#
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
-- Treiber Lic #
-- Treiber Lics #
+- Treiber lic #
+- Treiber LiCS #
 - Treiber Lizenz #
 - Treiber Lizenzen #
 - Driver' Lic#
@@ -349,8 +349,8 @@ Driver Lics#
 
 - Driver' Lics#
 
-- Treiber '-Lizenz
-- Treiber ' Lizenzen #
+- Treiber Lizenz #
+- Treiber Lizenzen #
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
@@ -359,28 +359,28 @@ Driver Lics#
 
 - Driver's Lics#
 
-- Des Treibers Lizenz #
-- Des Treibers Lizenzen # 
+- Führerschein #
+- Führerscheine # 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - aaa
 - DriverLicense
 - DriverLicenses
-- Treiber-Lizenz
-- Treiber-Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
 - DriversLicense
 - DriversLicenses
-- Treiber-Lizenz
-- Treiber-Lizenzen
-- Driver'License
-- Driver'Licenses
-- Treiber ' Lizenz
-- Treiber ' Lizenzen
+- Treiber Lizenz
+- Treiber Lizenzen
+- Driver ' License
+- Driver ' Licenses
+- Treiber Lizenz
+- Treiber Lizenzen
 - Driver'sLicense
 - Driver'sLicenses
-- Personalausweis
-- Des Treibers Lizenzen
+- Führerschein
+- Treiber Lizenzen
 - DriverLicense #
 - DriverLicenses #
 - Treiber Lizenz #
@@ -469,7 +469,7 @@ information branch
 credit card loan
 - 
 department of human services
-- Lokaler Dienst
+- lokaler Dienst
 - 
 
 medicare
@@ -493,7 +493,7 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_australia_passport_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number gefunden wird.
+- Ein Schlüsselwort aus Keyword_passport oder Keyword_australia_passport_number wurde gefunden.
 
 ```
 <!-- Australia Passport Number -->
@@ -519,7 +519,7 @@ Passport No
 
 - Passport#
 
-- PassportID
+- Passport-Nr.
 - Passportno
 
 - passportnumber
@@ -564,7 +564,7 @@ department of immigration and citizenship
 
 - 
 national identity card
-- Reisepassnummer
+- Passnummer
 - 
 travel document
 - 
@@ -643,7 +643,7 @@ tax file number
 - 66666666
 - 77777777
 - 88888888
-- 99999999 sein
+- 99999999
 - 000000000
 - 111111111
 - 222222222
@@ -677,7 +677,7 @@ tax file number
 - Sechs Ziffern und zwei Punkte im Format JJ.MM.TT für das Geburtsdatum  
 - Ein Bindestrich  
 - Drei aufeinander folgende Ziffern (ungerade für Männer, gerade für Frauen)  
-- Ein Punkt  
+- Ein Punkt 
 - Zwei Ziffern als Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
@@ -745,12 +745,12 @@ identité
 ### <a name="pattern"></a>Muster
 
 Formatiert:
-- Drei Ziffern 
+- Drei Ziffern  
+- Ein Punkt  
+- Drei Ziffern  
 - Ein Punkt  
 - Drei Ziffern 
-- Ein Punkt  
-- Drei Ziffern 
-- Ein Bindestrich  
+- Ein Bindestrich 
 - Zwei Ziffern, die Prüfziffern sind
 
 Unformatiert:
@@ -813,7 +813,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 14 Ziffern plus Trennzeichen:
 - Zwei Ziffern 
-- Ein Punkt  
+- Ein Punkt 
 - Drei Ziffern 
 - Ein Punkt  
 - Drei Ziffern (diese ersten acht Ziffern sind die Registrierungsnummer)  
@@ -897,20 +897,20 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Registro Geral (altes Format): neun Ziffern
 
-Registro de Identidade (RIC) (neue-Format): 11 Ziffern
+Registro de Identidade (RIC) (neues Format): 11 Ziffern
 
 ### <a name="pattern"></a>Muster
 
 Registro Geral (altes Format):
 - Zwei Ziffern 
-- Ein Punkt  
+- Ein Punkt 
 - Drei Ziffern 
-- Ein Punkt  
+- Ein Punkt 
 - Drei Ziffern 
 - Ein Bindestrich  
 - Eine Ziffer als Prüfziffer
 
-Registro de Identidade (RIC) (neue-Format):
+Registro de Identidade (RIC) (neues Format):
 - 10 Ziffern  
 - Ein Bindestrich  
 - Eine Ziffer als Prüfziffer
@@ -947,7 +947,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
-Cédula de Identidade Personalausweis Personalausweis Número de Rregistro Registro de Iidentidade Registro Geral RG (dieses Schlüsselwort ist Groß-/Kleinschreibung beachten) RIC (dieses Schlüsselwort ist Groß-/Kleinschreibung beachten) 
+Cédula de identidade Identity Card National ID número de rregistro Registro de Iidentidade Registro Geral RG (dieses Schlüsselwort wird Groß-/Kleinschreibung beachtet) RIC (bei diesem Schlüsselwort wird die Groß-/Kleinschreibung beachtet) 
    
 ## <a name="canada-bank-account-number"></a>Kanadische Bankkontonummer
 
@@ -1139,10 +1139,10 @@ Der Name der Provinz, beispielsweise „Alberta“
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- Treiber Lic
-- Treiber Lics
-- Treiber-Lizenz
-- Treiber-Lizenzen
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
 - Driver Licence
 
 - Driver Licences
@@ -1153,39 +1153,39 @@ Der Name der Provinz, beispielsweise „Alberta“
 - DriversLicences
 - DriversLicense
 - DriversLicenses
-- Treiber Lic
-- Treiber Lics
-- Treiber-Lizenz
-- Treiber-Lizenzen
-- Treiber-Lizenz
-- Treiber-Lizenzen
+- Treiber lic
+- Treiber LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Treiber Lizenzen
 - Driver'Lic
 - Driver'Lics
-- Driver'License
-- Driver'Licenses
+- Driver ' License
+- Driver ' Licenses
 - Driver'Licence
 - Driver'Licences
-- Treiber ' Lic
-- Treiber ' Lics
-- Treiber ' Lizenz
-- Treiber ' Lizenzen
-- Treiber ' Lizenz
-- Treiber ' Lizenzen
+- Treiber lic
+- Driver ' LiCS
+- Treiber Lizenz
+- Treiber Lizenzen
+- Führerschein
+- Führerscheine
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicense
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- Des Treibers Lic
-- Lics des Treibers
-- Personalausweis
-- Des Treibers Lizenzen
+- Treiber lic
+- LiCS des Treibers
+- Führerschein
+- Treiber Lizenzen
 - Driver's Licence
 
 - Driver's Licences
 
-- Permis de Conduire
+- Permis de conduire
 - id
 - IDs
 - 
@@ -1196,9 +1196,9 @@ idcard numbers
 idcard #
 - 
 idcard #s
-- Idcard Karte
-- Idcard Karten
-- idcard
+- Personalausweis-Karte
+- Personalausweis-Karten
+- Personalausweis
 - identification number
 
 - identification numbers
@@ -1207,8 +1207,8 @@ idcard #s
 
 - 
 identification #s
-- Ausweis
-- Kennung Visitenkarten (engl.)
+- Identitätskarte
+- Identifikationskarten
 - 
 identification
  
@@ -1240,8 +1240,8 @@ Driver Lics#
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
-- Treiber Lic # 
-- Treiber Lics # 
+- Treiber lic # 
+- Treiber LiCS # 
 - Treiber Lizenz # 
 - Treiber Lizenzen # 
 - Treiber Lizenz # 
@@ -1266,8 +1266,8 @@ Driver Lics#
  
 - Driver' Licenses#
  
-- Treiber '-Lizenz 
-- Treiber ' Lizenzen # 
+- Treiber Lizenz # 
+- Treiber Lizenzen # 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
@@ -1282,11 +1282,11 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- Des Treibers Lizenz # 
-- Des Treibers Lizenzen # 
-- Permis de Conduire # 
-- ID-Nummer 
-- -IDs 
+- Führerschein # 
+- Führerscheine # 
+- Permis de conduire # 
+- ID 
+- IDs 
 - idcard card#
  
 - idcard cards#
@@ -1339,7 +1339,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - personal health number
 - 
 patient information
-- Health services
+- Gesundheitsdienste
 - 
 speciality services
 - 
@@ -1371,7 +1371,7 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_canada_passport_number findet Inhalte, die dem Muster entsprechen.
-- Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport gefunden wird.
+- Ein Schlüsselwort aus Keyword_canada_passport_number oder Keyword_passport wurde gefunden.
 
 ``` 
 <!-- Canada Passport Number -->
@@ -1416,7 +1416,7 @@ Passport No
 
 - Passport#
 
-- PassportID
+- Passport-Nr.
 - Passportno
 
 - passportnumber
@@ -1458,7 +1458,7 @@ Nein
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: der reguläre Ausdruck Regex_canada_phin sucht nach Inhalten, die dem Muster entspricht. Mindestens zwei Schlüsselwörter aus Keyword_canada_phin oder Keyword_canada_provinces gefunden werden.
+Eine DLP-Richtlinie ist 75% sicher, dass Sie diese Art von vertraulichen Informationen erkannt hat, wenn in einer Nähe von 300 Zeichen: der reguläre Ausdruck Regex_canada_phin findet Inhalte, die mit dem Muster übereinstimmen. Es werden mindestens zwei Schlüsselwörter aus Keyword_canada_phin oder Keyword_canada_provinces gefunden.
 
 ```
 <!-- Canada PHIN -->
@@ -1551,7 +1551,7 @@ Formatiert:
 - Ein Bindestrich oder ein Leerzeichen  
 - Drei Ziffern
 
-Unformatiert: Neun Ziffern
+Unformatiert: neun Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1594,19 +1594,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordsin"></a>Keyword_sin
 
-- sin 
+- Sünde 
 - social insurance
  
 - numero d'assurance sociale
  
 - sins
  
-- ssn 
-- ssns 
+- SSN 
+- SSNs 
 - soziale Sicherheit 
 - numero d'assurance social
  
-- National Identifikationsnummer 
+- nationale Identifikationsnummer 
 - 
 national id 
 - sin#
@@ -1620,7 +1620,7 @@ national id
 
 - driver's license 
 - drivers license 
-- des Treibers-Lizenz 
+- Führerschein 
 - drivers licence 
 - DOB
  
@@ -1633,7 +1633,7 @@ national id
 
 ### <a name="format"></a>Format
 
-7 und 8 Ziffern plus Trennzeichen ein Kontrollkästchen Ziffern oder Buchstaben
+7-8 Ziffern Plus Trennzeichen eine Prüfziffer oder ein Buchstaben
 
 ### <a name="pattern"></a>Muster
 
@@ -1641,7 +1641,7 @@ national id
 - 1-2 Ziffern  
 - Ein Punkt  
 - Drei Ziffern 
-- Ein Punkt  
+- Ein Punkt 
 - Drei Ziffern 
 - Ein Bindestrich 
 - Eine Ziffer oder ein Buchstabe (Groß-/Kleinschreibung nicht unterschieden), die bzw. der eine Prüfziffer ist
@@ -1685,7 +1685,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Identification 
 - Rol Único Nacional
  
-- AUSFÜHREN 
+- FÜHREN 
 - Rol Único Tributario
  
 - RUT
@@ -1747,8 +1747,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - Resident Identity Card
  
-- PRC
- 
+- PRC 
 - National Identification Card
  
 - 身份证  
@@ -1766,7 +1765,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-16 Stellen die formatiert werden können oder unformatierte (Dddddddddddddddd), und geben Sie den Test mit Luhn müssen.
+16 Ziffern, die formatiert oder unformatiert (dddddddddddddddd) werden können und den Luhn-Test bestehen müssen.
 
 ### <a name="pattern"></a>Muster
 
@@ -1845,7 +1844,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 - Prufziffer
 
-- Sicherheits-Kode
+- Sicherheits Kode
 - Sicherheitscode
 
 - Sicherheitsnummer
@@ -1856,7 +1855,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 - cod. sicurezza
 
-- COD sicurezza
+- COD Sicurezza
 - 
 n autorizzazione
 - código
@@ -1865,7 +1864,7 @@ n autorizzazione
 
 - cod. seg
 
-- COD seg
+- COD SEG
 - código de segurança
 
 - codigo de seguranca
@@ -1876,12 +1875,12 @@ n autorizzazione
 
 - cód. segurança
 
-- COD. Seguranca Cod. segurança
+- COD. Seguranca COD. Segurança
 - cód. seguranca
 
-- Cód segurança
-- Kabeljau Seguranca Cod segurança
-- Cód seguranca
+- cód Segurança
+- COD Seguranca COD Segurança
+- cód Seguranca
 - número de verificação
 
 - numero de verificacao
@@ -1944,7 +1943,7 @@ mc
 - mastercards
 - 
 master cards
-- die Bestellung Club
+- Diner es Club
 - diners club
 
 - dinersclub
@@ -1964,8 +1963,8 @@ master cards
 
 - credit card
 
-- Kreditkartennummer
-- cc:
+- CC
+- cc #:
 - 
 expiration date
 - exp date
@@ -2073,16 +2072,16 @@ Kartennr
 - Kartennummer
 - 
 Kreditkartennummer
-- Kreditkarten-nummer
+- Kreditkarten-Nummer
 - carta di credito
 
 - carta credito
 
 - Carta
-- n carta
+- n Carta
 - nr. carta
 
-- Carta Nr.
+- Nr Carta
 - numero carta
 
 - numero della carta
@@ -2113,7 +2112,7 @@ tarjeta de débito
 
 - no. de tarjeta
 
-- keine de tarjeta
+- keine de Tarjeta
 - numero de tarjeta
 
 - número de tarjeta
@@ -2157,13 +2156,13 @@ numero do cartao
 
 - numero de cartao
 
-- Nº cartão
+- nº do Cartão
 - nº do cartao
 
 - nº. do cartão
 
-- keine cartão
-- keine cartao
+- Nein do Cartão
+- keine do cartao
 - no. do cartão
 
 - 
@@ -2174,7 +2173,7 @@ no. do cartao
 
 ### <a name="format"></a>Format
 
-Neun Ziffern
+Neun Stellen
 
 ### <a name="pattern"></a>Muster
 
@@ -2218,7 +2217,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 11 Ziffern:
 - 10 Ziffern 
-- Letzte Ziffer ein Kontrollkästchen Ziffer der aus Gründen der internationalen Datenaustausch ist, werden die Buchstaben HR hinzugefügt, die elf Ziffern vor.
+- Die letzte Ziffer ist eine Prüfziffer für die Zwecke des internationalen Datenaustauschs, die Buchstaben HR werden vor den elf Ziffern hinzugefügt.
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2259,11 +2258,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 
    
-## <a name="czech-personal-identity-number"></a>Tschechische private Identität Anzahl
+## <a name="czech-personal-identity-number"></a>Tschechische Personalausweisnummer
 
 ### <a name="format"></a>Format
 
-Neun Ziffern mit optionalen Schrägstrich (altes Format) 10 Ziffern mit optionalen Schrägstrich (neue-Format)
+Neun Ziffern mit optionalem Schrägstrich (altes Format) 10 Ziffern mit optionalem Schrägstrich (neues Format)
 
 ### <a name="pattern"></a>Muster
 
@@ -2272,18 +2271,18 @@ Neun Ziffern (altes Format):
 
 ODER
 
-- Sechs Ziffern, die das Geburtsdatum darstellen.
+- Sechs Ziffern, die das Geburtsdatum darstellen
 - Ein Schrägstrich 
 - Drei Ziffern
 
-10 Ziffern (neue-Format):
+10 Ziffern (neues Format):
 - 10 Ziffern
 
 ODER
 
-- Sechs Ziffern, die das Geburtsdatum darstellen.
+- Sechs Ziffern, die das Geburtsdatum darstellen
 - Ein Schrägstrich  
-- Vier Ziffern, wobei die letzte Ziffer eine Kontrollkästchen Ziffer ist
+- Vier Ziffern, wobei die letzte Ziffer eine Prüfziffer ist
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2291,7 +2290,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist 85 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: die Funktion Func_czech_id_card sucht nach Inhalten, die dem Muster entspricht. Ein Schlüsselwort aus Keyword_czech_id_card gefunden wird. Die Prüfsumme übergibt.
+Eine DLP-Richtlinie ist 85% sicher, dass Sie diese Art von vertraulichen Informationen erkannt hat, wenn in einer Nähe von 300 Zeichen: die Funktion Func_czech_id_card findet Inhalte, die mit dem Muster übereinstimmen. Ein Schlüsselwort aus Keyword_czech_id_card wurde gefunden. Die Prüfsumme wird erfolgreich durchlaufen.
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2304,7 +2303,7 @@ Eine DLP-Richtlinie ist 85 % sicher, dass diese Art von vertraulichen Informatio
 ```
 ### <a name="keywords"></a>Schlüsselwörter
 
-- Tschechische private Identität Anzahl
+- Tschechische Personalausweisnummer
 - Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	Dänemark – Persönliche Identifikationsnummer
@@ -2326,7 +2325,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: der reguläre Ausdruck Regex_denmark_id sucht nach Inhalten, die dem Muster entspricht. Ein Schlüsselwort aus Keyword_denmark_id gefunden wird. Die Prüfsumme übergibt.
+Eine DLP-Richtlinie ist 75% sicher, dass Sie diese Art von vertraulichen Informationen erkannt hat, wenn in einer Nähe von 300 Zeichen: der reguläre Ausdruck Regex_denmark_id findet Inhalte, die mit dem Muster übereinstimmen. Ein Schlüsselwort aus Keyword_denmark_id wurde gefunden. Die Prüfsumme wird erfolgreich durchlaufen.
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2430,14 +2429,14 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- Account-Nummer 
+- Kontonummer 
 - card number
  
 - card no.
  
 - security number
  
-- Kreditkartennummer 
+- CC 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
@@ -2632,7 +2631,7 @@ Kartennr
 - Kartennummer 
 - Kreditkarte
  
-- Kreditkarten-nummer 
+- Kreditkarten-Nummer 
 - Kreditkarteninhaber
  
 - Kreditkarteninstitut
@@ -2653,18 +2652,18 @@ Kartennr
 - MC 
 - mister cash
  
-- n carta 
+- n Carta 
 - Carta 
-- keine de tarjeta 
-- keine cartao 
-- keine cartão 
+- keine de Tarjeta 
+- keine do cartao 
+- Nein do Cartão 
 - no. de tarjeta
  
 - no. do cartao
  
 - no. do cartão
  
-- Carta Nr. 
+- Nr Carta 
 - nr. carta
  
 - numeri di scheda
@@ -2701,7 +2700,7 @@ Kartennr
  
 - nº do cartao
  
-- Nº cartão 
+- nº do Cartão 
 - nº. do cartão
  
 - número de cartao
@@ -2767,7 +2766,7 @@ Kartennr
  
 - v pay
  
-- V kostenpflichtig 
+- v-Pay 
 - visa
  
 - visa plus
@@ -2789,10 +2788,10 @@ Kartennr
  
 - cid
  
-- COD seg 
-- COD seguranca 
-- COD segurança 
-- COD sicurezza 
+- COD SEG 
+- COD Seguranca 
+- COD Segurança 
+- COD Sicurezza 
 - cod. seg
  
 - cod. seguranca
@@ -2817,7 +2816,7 @@ Kartennr
  
 - cryptogramme
  
-- cv2 
+- CV2 
 - cvc
  
 - CVC2 
@@ -2826,8 +2825,8 @@ Kartennr
 - cvv
  
 - CVV2 
-- Cód seguranca 
-- Cód segurança 
+- cód Seguranca 
+- cód Segurança 
 - cód. seguranca
  
 - cód. segurança
@@ -2946,7 +2945,7 @@ Kartennr
  
 - exp datum
  
-- Ablaufdatum 
+- Ablauf 
 - expire
  
 - expires
@@ -2994,25 +2993,25 @@ Kartennr
 - válido hasta
  
    
-## <a name="eu-drivers-license-number"></a>EU Führerscheinnummer
+## <a name="eu-drivers-license-number"></a>EU-Führerscheinnummer
 
-Finden Sie weitere Informationen finden Sie unter [vertrauliche Informationen vom Typ des Treibers EU-Lizenz Zahl](eu-driver-s-license-number.md).
+Weitere Informationen finden Sie unter [sicherheitsTyp für die EU-Treiber Lizenznummer](eu-driver-s-license-number.md).
   
-## <a name="eu-national-identification-number"></a>EU National Identifikationsnummer
+## <a name="eu-national-identification-number"></a>Nationale IdentifikationsNummer der EU
 
-Weitere Informationen finden Sie finden Sie unter [Identifikationsnummer der EU National vertrauliche Informationstyp](eu-national-identification-number.md).
+Weitere Informationen finden Sie unter [sensibler informationsTyp der EU-nationalen Identifikationsnummer](eu-national-identification-number.md).
   
-## <a name="eu-passport-number"></a>EU Reisepassnummer
+## <a name="eu-passport-number"></a>EU-Passport-Nummer
 
-Finden Sie weitere Informationen finden Sie unter [EU Reisepassnummer vertrauliche Informationstyp](eu-passport-number.md).
+Weitere Informationen finden Sie unter Sicherheitstyp für die [EU-Passport-Nummer](eu-passport-number.md).
   
-## <a name="eu-social-security-number-or-equivalent-id"></a>EU Sozialversicherungsnummer oder einer ähnlichen-ID
+## <a name="eu-social-security-number-or-equivalent-id"></a>EU-sozialVersicherungsNummer oder entsprechende ID
 
-Weitere Informationen finden Sie unter [EU Sozialversicherungsnummer oder gleichwertige ID vertrauliche Informationstyp](eu-social-security-number-or-equivalent-id.md).
+Weitere Informationen finden Sie unter [EU-Sozialversicherungsnummer oder entsprechende ID-vertraulicher Informationstyp](eu-social-security-number-or-equivalent-id.md).
   
-## <a name="eu-tax-identification-number"></a>EU-Steuernummer
+## <a name="eu-tax-identification-number"></a>USt-ID-Nummer
 
-Finden Sie weitere Informationen finden Sie unter [EU Steuernummer vertrauliche Informationstyp](eu-tax-identification-number.md).
+Weitere Informationen finden Sie unter Sicherheitstyp für die [EU-Steuernummer](eu-tax-identification-number.md).
   
 ## <a name="finland-national-id"></a>Finland National ID (Finnischer Personalausweis)
 
@@ -3061,9 +3060,9 @@ Sosiaaliturvatunnus
    
 ## <a name="finland-passport-number"></a>Finnische Reisepassnummer
 
-Formatieren der Kombination von neun Buchstaben und Ziffern Muster Kombination von neun Buchstaben und Ziffern: zwei Buchstaben (ohne Beachtung von Groß-/Kleinschreibung) sieben Ziffern Prüfsumme No Definition eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informationen Wenn festgestellt wurde, innerhalb einer Nähe von 300 Zeichen: der reguläre Ausdruck Regex_finland_passport_number sucht nach Inhalten, die dem Muster entspricht. Ein Schlüsselwort aus Keyword_finland_passport_number gefunden wird. <!-- Finland Passport Number --> 
- <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
- </Entity> Schlüsselwörter Keyword_finland_passport_number Passport passive
+Format-Kombination aus neun Buchstaben und Ziffern Muster Kombination aus neun Buchstaben und Ziffern: zwei Buchstaben (ohne Berücksichtigung von Groß-/Kleinschreibung) siebenstellige prüfSumme keine Definition eine DLP-Richtlinie ist 75% sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn innerhalb eines Nähe von 300 Zeichen: der reguläre Ausdruck Regex_finland_passport_number findet Inhalte, die mit dem Muster übereinstimmen. Ein Schlüsselwort aus Keyword_finland_passport_number wurde gefunden. Schlüsselwörter <!-- Finland Passport Number --> 
+ <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> 
+ Passi <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> </Entity>
    
 ## <a name="france-drivers-license-number"></a>Französische Führerscheinnummer
 
@@ -3108,7 +3107,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - drivers license
 - driving licence
 
-- gesteuerte Lizenz
+- Führerschein
 - 
 permis de conduire
 - 
@@ -3197,7 +3196,7 @@ Passport No
 
 - Passport#
 
-- PassportID
+- Passport-Nr.
 - Passportno
 
 - passportnumber
@@ -3234,7 +3233,7 @@ Passeportn °
 ### <a name="pattern"></a>Muster
 
 Muss einem von zwei Mustern entsprechen:
-- 13 Stellen, gefolgt von einem Leerzeichen, gefolgt von zwei Ziffern<br/>
+- 13 Ziffern gefolgt von einem Leerzeichen, gefolgt von zwei Ziffern<br/>
 oder
 - 15 aufeinanderfolgende Ziffern
 
@@ -3245,12 +3244,12 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 95 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_french_insee oder Func_fr_insee sucht nach Inhalten, die dem Muster entspricht.
+- Die Funktion Func_french_insee oder Func_fr_insee sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Ein Schlüsselwort aus Keyword_fr_insee wurde gefunden.
 - Die Prüfsumme stimmt.
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_french_insee oder Func_fr_insee sucht nach Inhalten, die dem Muster entspricht.
+- Die Funktion Func_french_insee oder Func_fr_insee sucht nach Inhalten, die mit dem Muster übereinstimmen.
 - Es wurde kein Schlüsselwort aus Keyword_fr_insee gefunden.
 - Die Prüfsumme stimmt.
 
@@ -3289,7 +3288,7 @@ national id
 national identification
 - 
 numéro d'identité
-- keine d'Identité
+- keine d ' identité
 - 
 no. d'identité
 - 
@@ -3327,7 +3326,7 @@ Kombination von 11 Ziffern und Buchstaben
 ### <a name="pattern"></a>Muster
 
 11 Zahlen und Buchstaben (ohne Beachtung der Groß-/Kleinschreibung):
-- Eine Ziffer oder ein Buchstabe 
+- Eine Ziffer oder ein Buchstaben  
 - Zwei Ziffern 
 - Sechs Ziffern oder Buchstaben 
 - Eine Ziffer 
@@ -3435,23 +3434,23 @@ Driv Licenses
  
 - Driver Licen
  
-- Treiber-Lizenz 
-- Treiber-Lizenzen 
+- Treiber Lizenz 
+- Treiber Lizenzen 
 - Driver Licence
  
 - Driver Licences
  
-- Treiber Lic 
-- Treiber Licen 
-- Treiber-Lizenz 
-- Treiber-Lizenzen 
-- Treiber-Lizenz 
-- Treiber-Lizenzen 
-- Des Treibers Lic 
+- Treiber lic 
+- Treiber Läuse 
+- Treiber Lizenz 
+- Treiber Lizenzen 
+- Führerschein 
+- Treiber Lizenzen 
+- Treiber lic 
 - Driver's Licen
  
-- Personalausweis 
-- Des Treibers Lizenzen 
+- Führerschein 
+- Treiber Lizenzen 
 - Driver's Licence
  
 - Driver's Licences
@@ -3600,7 +3599,7 @@ Ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
-Nicht-Reisepass Nr.-Reisepass
+No-Reisepass Nr-Reisepass
 
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
@@ -3609,7 +3608,7 @@ Reisepass-Nr
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
-bnationalit.t
+bnationalit. t
    
 ## <a name="germany-identity-card-number"></a>Deutsche Personalausweisnummer
 
@@ -3617,7 +3616,7 @@ bnationalit.t
 
 Seit dem 1. November 2010: neun Buchstaben und Ziffern
 
-Aus dem 1. April 1987 bis 31 Oktober 2010:10 Ziffern
+Vom 1. April 1987 bis 31. Oktober 2010:10 Stellen
 
 ### <a name="pattern"></a>Muster
 
@@ -3625,7 +3624,7 @@ Seit 1. November 2010:
 - Ein Buchstaben (Groß-/Kleinschreibung irrelevant)  
 - Acht Ziffern
 
-Aus dem 1. April 1987 bis 31. Oktober 2010:
+Vom 1. April 1987 bis 31. Oktober 2010:
 - 10 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -3752,12 +3751,12 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- Hongkong Personalausweis
+- Hongkong-Identitätskarte
 - HKIDC
 - ID-Karte
 - identity card
-- HK Personalausweis
-- Hongkong-id
+- HK-Identitätskarte
+- Hongkong-ID
 - 香港身份證
 
 - 香港永久性居民身份證
@@ -3846,9 +3845,9 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
-- Vier Ziffern 
+- Vier Ziffern  
 - Eine optionales Leerzeichen oder ein Bindestrich  
-- Vier Ziffern 
+- Vier Ziffern  
 - Eine optionales Leerzeichen oder ein Bindestrich  
 - Die letzte Ziffer, die eine Prüfziffer ist
 
@@ -3858,7 +3857,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist 85 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: die Funktion Func_india_aadhaar sucht nach Inhalten, die dem Muster entspricht. Ein Schlüsselwort aus Keyword_india_aadhar gefunden wird. Die Prüfsumme übergibt. Eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: die Funktion Func_india_aadhaar sucht nach Inhalten, die dem Muster entspricht. Die Prüfsumme übergibt. <!-- India Unique Identification (Aadhaar) number -->
+Eine DLP-Richtlinie ist 85% sicher, dass Sie diese Art von vertraulichen Informationen erkannt hat, wenn in einer Nähe von 300 Zeichen: die Funktion Func_india_aadhaar findet Inhalte, die mit dem Muster übereinstimmen. Ein Schlüsselwort aus Keyword_india_aadhar wurde gefunden. Die Prüfsumme wird erfolgreich durchlaufen. Eine DLP-Richtlinie ist 75% sicher, dass Sie diese Art von vertraulichen Informationen erkannt hat, wenn in einer Nähe von 300 Zeichen: die Funktion Func_india_aadhaar findet Inhalte, die mit dem Muster übereinstimmen. Die Prüfsumme wird erfolgreich durchlaufen. <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3978,7 +3977,7 @@ Komplexes Muster, das formatierte (Punkte) und unformatierte (keine Punkte) Vers
 
 ### <a name="pattern"></a>Muster
 
-### <a name="checksum"></a>Prüfsumme
+### <a name="checksum"></a>Checksum
 
 Nein
 
@@ -3994,7 +3993,7 @@ Für IPv4 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 
 Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
 - Der reguläre Ausdruck Regex_ipv6_address findet Inhalte, die dem Muster entsprechen.
-- Es wurde kein Schlüsselwort aus Keyword_ipaddress gefunden.
+- Es wird kein Schlüsselwort aus Keyword_ipaddress gefunden.
 
 ```
     <!-- IP Address -->
@@ -4020,7 +4019,7 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
     </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Keywords
 
 #### <a name="keywordipaddress"></a>Keyword_ipaddress
 
@@ -4033,7 +4032,7 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 IP-כתובת ה
  
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Internationale Klassifikation Krankheiten (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Internationale Klassifikation von Krankheiten (ICD-10-CM)
 
 ### <a name="format"></a>Format
 
@@ -4050,7 +4049,7 @@ Nein
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Ein Schlüsselwort aus Dictionary_icd_10_cm gefunden wird.
+- Ein Schlüsselwort aus Dictionary_icd_10_cm wurde gefunden.
 
 ```
       <!-- ICD-10 CM -->
@@ -4063,10 +4062,10 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 Schlüsselwörter
 
-Jedem anderen Begriff aus dem Dictionary_icd_10_cm Schlüsselwort Wörterbuch der [International Klassifizierung der Krankheiten, Zehntelsekunde Version klinischer Änderung (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604)basiert. Dieses Typs sucht nur nach dem Begriff, nicht die Versicherungsvertreter Codes.
+Ein beliebiger Begriff aus dem Dictionary_icd_10_cm-Stichwort Wörterbuch, das auf der [internationalen Klassifikation der Krankheiten, der zehnTen Revision, der klinischen Modifikation (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604)basiert. Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungs Codes.
 
    
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Internationale Klassifikation Krankheiten (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Internationale Klassifikation von Krankheiten (ICD-9-CM)
 
 ### <a name="format"></a>Format
 
@@ -4083,7 +4082,7 @@ Nein
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Ein Schlüsselwort aus Dictionary_icd_9_cm gefunden wird.
+- Ein Schlüsselwort aus Dictionary_icd_9_cm wurde gefunden.
 
 ```
       <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -4095,25 +4094,25 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-Jedem anderen Begriff aus dem Dictionary_icd_9_cm Schlüsselwort Wörterbuch der [International Klassifizierung der Krankheiten, neunte Version klinischer Änderung (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605)basiert. Dieses Typs sucht nur nach dem Begriff, nicht die Versicherungsvertreter Codes.
+Ein beliebiger Begriff aus dem Dictionary_icd_9_cm-Stichwort Wörterbuch, das auf der [internationalen Klassifikation der Krankheiten, der neunTen Revision, der klinischen Modifikation (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605)basiert. Dieser Typ sucht nur nach dem Begriff, nicht nach den Versicherungs Codes.
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Irland – Personal Public Service-Nummer (PPS)
 
 ### <a name="format"></a>Format
 
-Altes Format (bis zum 31. Dezember 2012):
+Altes Format (bis 31. Dez 2012):
 - Sieben Ziffern, gefolgt von 1-2 Buchstaben  
 
-Neue Format (1. Januar 2013 und nach):
+Neues Format (1 Jan 2013 und nachher):
 - Sieben Ziffern, gefolgt von zwei Buchstaben
 
 ### <a name="pattern"></a>Muster
 
-Altes Format (bis zum 31. Dezember 2012):
+Altes Format (bis 31. Dez 2012):
 - Sieben Ziffern  
 - 1-2 Buchstaben (Groß-/Kleinschreibung irrelevant)  
 
-Neue Format (1. Januar 2013 und nach):
+Neues Format (1 Jan 2013 und nachher):
 - Sieben Ziffern  
 - Ein Buchstabe (Groß-/Kleinschreibung irrelevant), wobei es sich um eine alphabetische Prüfziffer handelt  
 - Die Buchstaben "A" oder "H" (Groß-/Kleinschreibung irrelevant)
@@ -4165,7 +4164,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
  
 - PPS #
  
-- PPS- 
+- PPS 
 - PPSN
  
 - Public Services Card
@@ -4280,7 +4279,7 @@ Eine Kombination von 10 Buchstaben und Ziffern
 ### <a name="pattern"></a>Muster
 
 - Eine Kombination aus 10 Buchstaben und Ziffern:
-- Ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung) 
+- Ein Buchstaben (Groß-/Kleinschreibung irrelevant)  
 - Der Buchstabe „A“ oder „W“ (ohne Beachtung der Groß-/Kleinschreibung) 
 - Sieben Buchstaben (ohne Beachtung der Groß-/Kleinschreibung), Ziffern oder der Unterstrich 
 - Ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung)
@@ -4402,7 +4401,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 - Savings Account Number
  
-- Einsparungen Konto 
+- Sparkonto 
 - Savings Account #
  
 - Savings Acct Number
@@ -4516,9 +4515,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
 - dl# 
-- DL- 
+- DL 
 - dls# 
-- VERTEILERLISTEN # 
+- DLS 
 - driver license 
 - driver licenses 
 - drivers license 
@@ -4528,9 +4527,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - driving licence
  
 - lic# 
-- LIC # 
+- LIC 
 - lics# 
-- Status-id 
+- Status-ID 
 - state identification
  
 - state identification number
@@ -4705,7 +4704,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - 社会保険番号
  
 
-## <a name="japanese-residence-card-number"></a>Japanische US-Bundesstaates Card-Nummer
+## <a name="japanese-residence-card-number"></a>Nummer der japanischen Residenzkarte
 
 ### <a name="format"></a>Format
 
@@ -4725,8 +4724,8 @@ Nein
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Der reguläre Ausdruck Regex_jp_residence_card_number sucht nach Inhalten, die dem Muster entspricht.
-- Ein Schlüsselwort aus Keyword_jp_residence_card_number gefunden wird.
+- Der reguläre Ausdruck Regex_jp_residence_card_number findet Inhalte, die mit dem Muster übereinstimmen.
+- Ein Schlüsselwort aus Keyword_jp_residence_card_number wurde gefunden.
 
 ```
 <!--Japan Residence Card Number-->
@@ -4742,9 +4741,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
 
-- US-Bundesstaates Card-Nummer
-- US-Bundesstaates Karte Nein
-- US-Bundesstaates Karte #
+- Nummer der Residenzkarte
+- Aufenthaltskarte Nein
+- Residenzkarte #
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Malaysia -ID-Kartennummer
@@ -4788,30 +4787,30 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- digitale Anwendung Karte
-- Ich / C
-- Ich / C keine
+- digitale Anwendungs Karte
+- i/c
+- i/c Nein
 - IC
-- IC keine
+- IC Nein
 - ID-Karte
-- Ausweis
+- Identitätskarte
 - identity card
 - k/p
-- k/p keine
-- Kad Akuan diri
-- Kad Aplikasi digitale
-- Kad Pengenalan malaysia
+- k/p Nein
+- Kad akuan Diri
+- Kad aplikasi Digital
+- Kad Einführung in Malaysia
 - KP
-- KP keine
-- mykad
+- KP Nein
+- MyKAD
 - mykas
 - mykid
 - mypr
 - mytentera
-- Malaysia Personalausweis
-- Malaysia Personalausweis
-- nric
-- Persönliche Identifikationsnummer Karte
+- Malaysia-Identitätskarte
+- malaysischer Identitätsausweis
+- NRIC
+- Personalausweis
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Niederlande – Bürgerdienstnummer (BSN)
 
@@ -4878,7 +4877,7 @@ Drei Buchstaben, ein Leerzeichen (optional) und vier Ziffern
 
 ### <a name="pattern"></a>Muster
 
-Drei Buchstaben (nicht Groß-/Kleinschreibung) eine Speicherplatz um vier Ziffern (optional)
+Drei Buchstaben (ohne Beachtung der Groß-/Kleinschreibung) ein Leerzeichen (optional) vier Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -4976,7 +4975,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 12 Ziffern:
 - Vier Ziffern 
-- Ein Bindestrich  
+- Ein Bindestrich 
 - Sieben Ziffern  
 - Ein Bindestrich  
 - Eine Ziffer
@@ -5028,7 +5027,7 @@ Ja
 
 ### <a name="definition"></a>Definition
 
-Eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informationen festgestellt wurde "If"; innerhalb einer Nähe von 300 Zeichen: die Funktion Func_polish_national_id sucht nach Inhalten, die dem Muster entspricht. Ein Schlüsselwort aus Keyword_polish_national_id_passport_number gefunden wird. Die Prüfsumme übergibt.
+Eine DLP-Richtlinie ist 75% sicher, dass Sie diese Art von vertraulichen Informationen erkannt hat, wenn in einer Nähe von 300 Zeichen: die Funktion Func_polish_national_id findet Inhalte, die mit dem Muster übereinstimmen. Ein Schlüsselwort aus Keyword_polish_national_id_passport_number wurde gefunden. Die Prüfsumme wird erfolgreich durchlaufen.
 
 ```
 <!-- Poland Identity Card-->
@@ -5045,9 +5044,9 @@ Eine DLP-Richtlinie ist 75 % sicher, dass diese Art von vertraulichen Informatio
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - Dowód osobisty
-- Anzahl Dowodu osobistego
-- Nazwa ich Anzahl Dowodu Osobistego
-- Nazwa ich Nr. Dowodu Osobistego
+- Numer dowodu osobistego
+- Nazwa i Numer dowodu osobistego
+- Nazwa i Nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 
 - Dowód Tożsamości
@@ -5131,8 +5130,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Anzahl paszportu
-- Paszportu Nr.
+- Numer paszportu
+- Nr. Paszportu
 - Paszport
 
    
@@ -5292,7 +5291,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 13 Ziffern:
 - Sechs Ziffern im Format JJMMTT, die das Geburtsdatum angeben  
-- Vier Ziffern 
+- Vier Ziffern  
 - Ein einstelliger Citizenship-Indikator  
 - Die Ziffer "8" oder "9"  
 - Eine Ziffer als Prüfsummenziffer
@@ -5392,7 +5391,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="pattern"></a>Muster
 
-11 bis 12 Ziffern:
+11-12 Ziffern:
 - Zwei Ziffern 
 - Ein Schrägstrich (optional) 
 - 7 bis 8 Ziffern 
@@ -5527,7 +5526,7 @@ Passport No
  
 - Passport#
  
-- PassportID 
+- Passport-Nr. 
 - Passportno
  
 - passportnumber
@@ -5594,7 +5593,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 - iso 9362
  
-- iso9362 
+- ISO9362 
 - SWIFT\# 
 - swiftcode
  
@@ -5602,7 +5601,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 - swiftroutingnumber
  
-- SWIFT-code 
+- SWIFT-Code 
 - swift number #
  
 - swift routing number
@@ -5615,7 +5614,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - BIC\# 
 - bank identifier code
  
-- 標準化9362 
+- 標準化 9362 
 - 迅速 #
  
 - SWIFTコード
@@ -5715,15 +5714,15 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-- Biometrische Reisepassnummer: neun Ziffern
-- Nicht-biometrische Reisepassnummer: neun Ziffern
+- Biometrische Passnummer: neun Ziffern
+- Nicht-biometrische Passnummer: neun Ziffern
 
 ### <a name="pattern"></a>Muster
-Biometrische Reisepassnummer:
+Biometrische Passnummer:
 - Die Ziffer "3"  
 - Acht Ziffern
 
-Nicht-biometrische Reisepassnummer:
+Nicht-biometrische Passport-Nummer:
 - Neun Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -5752,8 +5751,8 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - ROC passport number
  
-- Reisepassnummer 
-- Passport keine 
+- Passnummer 
+- Passport-Nr. 
 - Passport Num
  
 - Passport#
@@ -5802,14 +5801,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 - Resident Certificate
  
-- Wohnen Cert 
+- Residentes Zertifikat 
 - Resident Cert.
  
-- Ausweis 
+- Identitätskarte 
 - Alien Resident Certificate
  
-- ARC
- 
+- Bogens 
 - Taiwan Area Resident Certificate
  
 - TARC
@@ -5821,7 +5819,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - 台灣地區居留證
  
 
-## <a name="thai-population-identification-code"></a>Thailändische Auffüllung Kenncode
+## <a name="thai-population-identification-code"></a>Thai-Populations Identifizierungs Code
 
 ### <a name="format"></a>Format
 
@@ -5830,7 +5828,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 13 Ziffern:
-- Erste Ziffer ist nicht 0 oder 9 
+- Die erste Ziffer ist 0 oder 9. 
 - 12 Ziffern
 
 ### <a name="checksum"></a>Prüfsumme
@@ -5840,11 +5838,11 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die dem Muster entspricht.
-- Ein Schlüsselwort aus Keyword_Thai_Citizen_Id gefunden wird.
+- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Ein Schlüsselwort aus Keyword_Thai_Citizen_Id wurde gefunden.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die dem Muster entspricht.
+- Die Funktion Func_Thai_Citizen_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 
 ```
 <!-- Thai Citizen ID -->
@@ -5864,13 +5862,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
 
 - ID Number
-- ID-Nummer
+- IdentifikationsNummer
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>Türkisch National Identifikationsnummer
+## <a name="turkish-national-identification-number"></a>Türkische nationale IdentifikationsNummer
 
 ### <a name="format"></a>Format
 
@@ -5887,11 +5885,11 @@ Ja
 ### <a name="definition"></a>Definition
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die dem Muster entspricht.
-- Ein Schlüsselwort aus Keyword_Turkish_National_Id gefunden wird.
+- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Ein Schlüsselwort aus Keyword_Turkish_National_Id wurde gefunden.
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
-- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die dem Muster entspricht.
+- Die Funktion Func_Turkish_National_Id sucht nach Inhalten, die mit dem Muster übereinstimmen.
 
 ```
 <!-- Turkish National Identity -->
@@ -5910,10 +5908,10 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
 
-- TC Kimlik Nr.
-- TC Kimlik numarası
+- TC KİMLİK Nein
+- TC KİMLİK numarası
 - Vatandaşlık numarası
-- Vatandaşlık keine
+- Vatandaşlık Nein
 
 ## <a name="uk-drivers-license-number"></a>Britische Führerscheinnummer
 
@@ -6103,7 +6101,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - GP 
 - DOB
  
-- D.O.B 
+- D. O. B 
 - Date of Birth
  
 - Birth Date
@@ -6113,15 +6111,15 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-7 oder 9 Zeichen getrennt durch Leerzeichen oder Strich
+7 Zeichen oder 9 Zeichen voneinander getrennt durch Leerzeichen oder Bindestriche
 
 ### <a name="pattern"></a>Muster
 
 Zwei mögliche Muster:
 
-- Zwei Buchstaben (gültige NINOs verwenden Sie nur bestimmte Zeichen in dieses Präfix, das von diesem Muster überprüft; nicht Groß-/Kleinschreibung beachten)
+- Zwei Buchstaben (gültige NINOs verwenden nur bestimmte Zeichen in diesem Präfix, die dieses Muster validiert; Groß-/Kleinschreibung nicht beachtet)
 - Sechs Ziffern
-- Entweder 'A', 'B', 'C', oder hatte ' (wie das Präfix nur bestimmte Zeichen in das Suffix; nicht zwischen Groß-und Kleinschreibung sind zulässig)
+- Entweder "A", "B", "C" oder "'D" (wie das Präfix, nur bestimmte Zeichen sind im Suffix zulässig; Groß-/Kleinschreibung wird nicht beachtet)
 
 ODER
 
@@ -6133,7 +6131,7 @@ ODER
 - Ein Leerzeichen oder ein Bindestrich
 - Zwei Ziffern
 - Ein Leerzeichen oder ein Bindestrich
-- Entweder 'A', 'B', 'C', oder hatte '
+- Entweder "A", "B", "C" oder "'D"
 
 ### <a name="checksum"></a>Prüfsumme
 
@@ -6235,7 +6233,7 @@ Passport No
  
 - Passport#
  
-- PassportID 
+- Passport-Nr. 
 - Passportno
  
 - passportnumber
@@ -6429,34 +6427,34 @@ IDs#
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- Treiber Lic 
-- Treiber Lics 
-- Treiber-Lizenz 
-- Treiber-Lizenzen 
+- Treiber lic 
+- Treiber LiCS 
+- Treiber Lizenz 
+- Treiber Lizenzen 
 - DriversLic 
 - DriversLics 
 - DriversLicense 
 - DriversLicenses 
-- Treiber Lic 
-- Treiber Lics 
-- Treiber-Lizenz 
-- Treiber-Lizenzen 
+- Treiber lic 
+- Treiber LiCS 
+- Treiber Lizenz 
+- Treiber Lizenzen 
 - Driver'Lic 
 - Driver'Lics 
-- Driver'License 
-- Driver'Licenses 
-- Treiber ' Lic 
-- Treiber ' Lics 
-- Treiber ' Lizenz 
-- Treiber ' Lizenzen
+- Driver ' License 
+- Driver ' Licenses 
+- Treiber lic 
+- Driver ' LiCS 
+- Treiber Lizenz 
+- Treiber Lizenzen
 - Driver'sLic 
 - Driver'sLics 
 - Driver'sLicense 
 - Driver'sLicenses 
-- Des Treibers Lic 
-- Lics des Treibers 
-- Personalausweis 
-- Des Treibers Lizenzen 
+- Treiber lic 
+- LiCS des Treibers 
+- Führerschein 
+- Treiber Lizenzen 
 - identification number
  
 - identification numbers
@@ -6465,8 +6463,8 @@ IDs#
  
 - ID-Karte 
 - ID-Karten 
-- Ausweis 
-- Kennung Visitenkarten (engl.) 
+- Identitätskarte 
+- Identifikationskarten 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
@@ -6481,8 +6479,8 @@ Driver Lics#
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
-- Treiber Lic # 
-- Treiber Lics # 
+- Treiber lic # 
+- Treiber LiCS # 
 - Treiber Lizenz # 
 - Treiber Lizenzen # 
 - Driver' Lic#
@@ -6513,7 +6511,7 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- d ' identité # 
+- ID-Karte # 
 - id cards#
  
 - identification card#
@@ -6609,7 +6607,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
  
 - itin
  
-- ssn 
+- SSN 
 - tin
  
 - soziale Sicherheit 

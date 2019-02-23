@@ -1,147 +1,147 @@
 ---
-title: Verwalten eines Daten stellen Vorfalls in Microsoft 365
+title: Verwalten eines Daten verschüttenden Vorfalls in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In diesem Artikel wird beschrieben, mit dem neuen Daten-Untersuchungen (Preview)-Tool in der Office 365-Sicherheit & Compliance Center zum Verwalten von eines Daten stellen Vorfalls.
-ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: In diesem Artikel wird beschrieben, wie Sie mit dem Tool "neue Daten Untersuchungen (Vorschau)" im Office 365 Security & Compliance Center einen Vorfall mit Datenausfällen verwalten können.
+ms.openlocfilehash: 93cbbed8763f0af31ab8d4e32348f01bfda17a2a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706176"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218125"
 ---
-# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Daten stellen Vorfalls in Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Daten verschüttenden Vorfalls in Microsoft 365 
 
-Daten stellen ist, wenn ein vertrauliches Dokument in einer nicht vertrauenswürdigen Umgebung freigegeben ist. Wenn ein Daten stellen Vorfall erkannt wird, ist es wichtig, schnell Bewerten der Größe und Standorte von der Stellen, untersuchen Sie die Benutzeraktivitäten herum und verschütteten Daten dann dauerhaft aus dem System löschen.
+Bei Daten verschütten wird ein vertrauliches Dokument in einer nicht vertrauenswürdigen Umgebung veröffentlicht. Wenn ein Vorfall mit Daten verschütten erkannt wird, ist es wichtig, schnell die Größe und die Speicherorte des Ausfalls zu ermitteln, die Benutzeraktivitäten zu untersuchen und dann die verschütteten Daten dauerhaft aus dem System zu entfernen.
 
-## <a name="scope-of-this-article"></a>Themenbereich dieses Artikels
+## <a name="scope-of-this-article"></a>Bereich dieses Artikels
 
-Dieser Artikel enthält eine Liste von Anweisungen zum Entfernen von Elementen dauerhaft in Office 365-Postfächer, sodass sie nicht mehr verfügbar oder durch Benutzer oder Administratoren wiederhergestellt werden. 
+Dieser Artikel enthält eine Liste mit Anweisungen zum dauerhaften Entfernen von Elementen aus Office 365-Postfächern, damit diese nicht mehr von Benutzern oder Administratoren wiederhergestellt werden können. 
 
 > [!NOTE]
-> Beim Löschen von Elementen in einem SharePoint oder OneDrive for Business-Site befinden werden für 93 Tagen ab dem Zeitpunkt beibehalten, die Sie sie aus dem ursprünglichen Speicherort löschen.
+> Wenn Sie Elemente in einer SharePoint-oder OneDrive for Business-Website löschen, werden diese 93 Tage lang aufbewahrt, ab dem Zeitpunkt, zu dem Sie Sie am ursprünglichen Speicherort gelöscht haben.
 
 ## <a name="scenario"></a>Szenario
 
-Sie haben eine Daten stellen Vorfall darüber informiert, in dem ein Mitarbeiter unwissentlich ein streng vertraulich Dokument mit mehreren Personen per e-Mail gemeinsam genutzt. Möchten Sie schnell bewerten, die dieses Dokument, sowohl innerhalb als auch außerhalb Ihrer Organisation empfangen. Nachdem Sie haben den Vorfall untersuchen, Planen Sie Ihre Ergebnisse mit anderen Prüfer, um zu prüfen, und entfernen Sie die verschütteten Daten endgültig aus Office 365 freigeben. Nach Abschluss die Untersuchung möchten Sie alle Spuren entfernen. 
+Sie werden über einen Vorfall bei Datenübertragung informiert, bei dem ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail geteilt hat. Sie möchten schnell bewerten, wer dieses Dokument sowohl innerhalb als auch außerhalb Ihrer Organisation erhalten hat. Nachdem Sie den Vorfall untersucht haben, planen Sie, ihre Ergebnisse für andere Prüfer zu überprüfen und die verschütteten Daten dann endgültig aus Office 365 zu entfernen. Nach Abschluss der Untersuchung möchten Sie alle Nachweise entfernen. 
 
 ## <a name="workflow"></a>Workflow
 
-Hier wird der Workflow für die Verwendung von Daten Untersuchungen (Preview) einen Daten stellen Vorfall verwalten:
+Im folgenden finden Sie den Workflow für die Verwendung von Daten Untersuchungen (Preview) zum Verwalten eines Datenausfalls:
 
-1.  Erstellen Sie eine Untersuchung von Daten.
+1.  Erstellen Sie eine Datenermittlung.
 
-2.  Suchen Sie nach der verschütteten Daten.
+2.  Suchen Sie nach verschütteten Daten.
 
-3.  Überprüfen Sie und untersuchen Sie des Vorfalls.
+3.  Überprüfen und untersuchen des Vorfalls.
 
 4.  Löschen Sie die verschütteten Daten endgültig.
 
-5.  Schließen oder die Untersuchung löschen.
+5.  Beenden oder löschen Sie die Untersuchung.
 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Verwenden Sie das Tool Daten Untersuchungen (Preview) in die Sicherheit in Office 365 Compliance Center & eine Untersuchung erstellen, suchen Sie nach der verschütteten Daten, und überprüfen und analysieren. Sicherheit & Compliance Center PowerShell verwenden Sie dann die verschütteten Daten aus Office 365 endgültig löschen. 
+- Sie verwenden das Tool Daten Untersuchungen (Vorschau) im Office 365 Security & Compliance Center, um eine Untersuchung zu erstellen, nach verschütteten Daten zu suchen und diese zu überprüfen und zu analysieren. Anschließend verwenden Sie die Security & Compliance Center PowerShell, um die verschütteten Daten endgültig aus Office 365 zu löschen. 
 
-- Um eine Untersuchung zu erstellen, müssen Sie Mitglied der Rollengruppe in der & Security Compliance Center Compliance-Administrator sein.
+- Zum Erstellen einer Untersuchung müssen Sie Mitglied der Rollengruppe "Compliance-Administrator" im Security & Compliance Center sein.
 
-- Um Nachrichten zu löschen, müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" in der & Security Compliance Center oder die Rolle suchen und löschen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [gewähren Sie Benutzerzugriff auf die Sicherheit & Compliance Center](../grant-access-to-the-security-and-compliance-center.md). 
+- Zum Löschen von Nachrichten müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center sein oder der Rolle "suchen und löschen" zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Gewähren von Benutzern Zugriff auf das Security _AMP_ Compliance Center](../grant-access-to-the-security-and-compliance-center.md). 
 
-- Um zu steuern, welche Benutzerpostfächer und OneDrive-Konten ein Prüfer suchen kann, kann Compliance-Grenzen Ihrer Organisation einrichten. Weitere Informationen, [Compliance-Grenzen für eDiscovery Untersuchungen einrichten](../set-up-compliance-boundaries.md). 
+- Um zu steuern, welche Benutzerpostfächer und OneDrive-Konten ein Prüfer durchsuchen kann, kann Ihre Organisation Konformitäts Grenzen einrichten. Um weitere Informationen zu erhalten, [richten Sie Compliance-Grenzen für eDiscovery](../set-up-compliance-boundaries.md)-Untersuchungen ein. 
 
-## <a name="step-1-create-a-data-investigation"></a>Schritt 1: Erstellen einer Untersuchung von Daten
+## <a name="step-1-create-a-data-investigation"></a>Schritt 1: Erstellen einer Datenermittlung
 
-So erstellen Sie eine Untersuchung von Daten:
+So erstellen Sie eine Datenuntersuchung:
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie in der & Security Compliance Center auf **Daten Untersuchungen**.
+3. Klicken Sie im Security & Compliance Center auf **Daten Untersuchungen**.
  
-4. Klicken Sie auf **Erstellen einer neuen Untersuchung**, auf der Seite **Daten Untersuchungen (Preview)** .
+4. Klicken Sie auf der Seite **Daten Untersuchungen (Vorschau)** auf **neue Untersuchung erstellen**.
     
-5. Benennen Sie auf der Seite **neue Daten Untersuchung** flyoutmenü der Untersuchung (erforderlich), und geben Sie eine Nummer optional Untersuchung und eine Beschreibung ein. Beachten Sie, dass der Name muss in Ihrer Organisation eindeutig sein.
+5. Geben Sie auf der Seite **Neues Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich) ein, und geben Sie dann eine optionale Untersuchungs Nummer und eine Beschreibung ein. Beachten Sie, dass der Name in Ihrer Organisation eindeutig sein muss.
 
-6. Klicken Sie unter **möchten Sie zusätzliche Einstellungen konfigurieren, nach dem Erstellen dieser Untersuchung?**, eine der folgenden Aktionen aus:
+6. Führen **Sie unter möchten Sie nach dem Erstellen dieser Untersuchung zusätzliche Einstellungen konfigurieren?** eine der folgenden Aktionen aus:
 
-    - Klicken Sie auf **Ja,** um die Untersuchung zu erstellen und Anzeigen der Seite **Einstellungen** in der neuen Groß-/Kleinschreibung. Dadurch können Sie die Untersuchung Mitglieder hinzu.
+    - Klicken Sie auf **Ja** , um die Untersuchung zu erstellen, und zeigen Sie die Seite **Einstellungen** im neuen Fall an. Dies ermöglicht Ihnen das Hinzufügen von Mitgliedern zur Untersuchung.
     
-    - Klicken Sie auf **Nein** , um nur die Untersuchung erstellen und anzeigen in der Liste der Anfragen auf der Seite **Daten Untersuchungen (Preview)** . Wenn Sie diese Option auswählen, werden Sie hinzugefügt werden, wie das einzige Mitglied die Untersuchung und die Standardeinstellungen für Suche und-Analyse verwendet wird. Sie können Mitglieder hinzufügen oder ändern, jederzeit nach die Untersuchung erstellt wird.
+    - Klicken Sie auf **Nein** , um die Untersuchung zu erstellen und in der Liste der Fälle auf der Seite **Daten Untersuchungen (Vorschau)** anzuzeigen. Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet. Sie können jederzeit nach der Erstellung der Untersuchung Mitglieder hinzufügen oder Einstellungen ändern.
 
 7. Klicken Sie auf **Speichern** , um die Untersuchung zu erstellen.
 
     Die neue Untersuchung wird in der Liste auf der Seite **Daten Untersuchungen (Preview)** angezeigt. 
 
-8. Um eine Untersuchung zu öffnen, klicken Sie auf den Namen der Untersuchung. 
+8. Klicken Sie auf den Namen der Untersuchung, um eine Untersuchung zu öffnen. 
 
-    Für die Untersuchung die Registerkarte **Start** wird angezeigt. 
+    Die Registerkarte **Start** für die Untersuchung wird angezeigt. 
 
 > [!TIP]
-> Berücksichtigen Sie festlegen einer Namenskonvention für Untersuchungen, und geben Sie so viele Informationen wie können Sie in den Namen und die Beschreibung, sodass Sie suchen und finden Sie in der Zukunft bei Bedarf.
+> Erwägen Sie, eine Benennungskonvention für Untersuchungen einzurichten, und geben Sie so viele Informationen wie möglich in den Namen und die Beschreibung ein, damit Sie in Zukunft gegebenenfalls suchen und darauf verweisen können.
  
-## <a name="step-2-search-for-the-spilled-data"></a>Schritt 2:-Suche für die verschütteten Daten 
+## <a name="step-2-search-for-the-spilled-data"></a>Schritt 2: Suchen nach verschütteten Daten 
  
-Wenn Sie die Benutzer verschütteten Daten suchen möchten kennen, können Sie sie als Personen von Interesse zum Zuordnen von deren Datenquellen für die Untersuchung und schnelles Suchen, deren Postfach und OneDrive-Konto hinzufügen. Um die Untersuchung interessante Menschen hinzuzufügen, klicken Sie auf **Personen von Interesse**, und klicken Sie dann auf **Hinzufügen von Personen von Interesse**. 
+Wenn Sie wissen, welche Benutzer Sie nach verschütteten Daten durchsuchen möchten, können Sie diese als interessante Personen hinzufügen, um Ihre Datenquellen der Untersuchung zuzuordnen und Ihr Postfach und Ihr OneDrive-Konto schnell zu durchsuchen. Klicken Sie zum Hinzufügen von Personen, die für die Untersuchung von Interesse sind, auf **Personen**von Interesse, und klicken Sie dann auf **interessante Personen hinzufügen**. 
 
-Klicken Sie auf der Registerkarte **Suchen** können Sie einer Suche zum Suchen Sie die verschütteten Daten erstellen. Sie werden die gleichen Suchabfrage verwenden, die Sie verwendet verschütteten So löschen Sie die gleichen Nachrichten in [Schritt 4](##step-4:-permanently-delete-the-spilled-data)zu finden. Weitere Informationen zum Erstellen von sucht finden Sie unter [Erstellen einer Suche zum Sammeln von Daten](create-search-to-collect-data.md).
+Auf der Registerkarte **Suchvorgänge** können Sie suchen erstellen, um die verschütteten Daten zu finden. Sie verwenden die gleiche Suchabfrage, die Sie zum Auffinden der verschütteten Daten verwendet haben, um diese Nachrichten in [Schritt 4](##step-4:-permanently-delete-the-spilled-data)zu löschen. Weitere Informationen zum Erstellen von Suchvorgängen finden Sie unter [Erstellen einer Suche zum Sammeln von Daten](create-search-to-collect-data.md).
 
-Nach dem Ausführen die Suche können Sie eine Vorschau anzeigen Beispiele für Suchergebnisse und Ansicht Suchstatistik für die Effektivität der Suchabfrage ausgewertet werden soll. Nachdem Sie die Elemente zu, die Sie aus Office 365 löschen möchten identifizieren, können Suchergebnisse, die diese Elemente enthalten Sie klicken Sie auf der Registerkarte **Vorfälle** und klicken Sie dann einen Vorfall erstellen und hinzufügen. 
+Nachdem Sie die Suche ausgeführt haben, können Sie eine Vorschau der Suchergebnisse anzeigen und Suchstatistiken ansehen, um die Effektivität Ihrer Suchabfrage zu bewerten. Nachdem Sie die Elemente identifiziert haben, die Sie aus Office 365 löschen möchten, können Sie auf **** die Registerkarte Incidents klicken und dann einen Vorfall erstellen und Suchergebnisse hinzufügen, die diese Elemente enthalten. 
 
-Klicken Sie hierzu auf die Suche, die Sie untersuchen möchten. Klicken Sie auf der Seite flyoutmenü klicken Sie auf **Add Ergebnisse auf Vorfall** , und befolgen Sie die Anweisungen. Klicken Sie dann in den Vorfall können Sie einzelne Dokumente zu überprüfen, untersuchen, die Zugriff auf Dokumente hatte, und exportieren die Dokumente. Um die Dokumente anstelle von hierfür, einfach zu löschen, fahren Sie mit [Schritt 4](##step-4:-permanently-delete-the-spilled-data). 
+Klicken Sie dazu auf die Suche, die Sie untersuchen möchten. Klicken Sie auf der Seite Flyout auf **Ergebnisse zu Vorfall hinzufügen** , und folgen Sie den Anweisungen. Dann können Sie im Vorfall einzelne Dokumente überprüfen, den Zugriff auf Dokumente untersuchen und die Dokumente exportieren. Um die Dokumente einfach zu löschen, anstatt Sie zu überprüfen, fahren Sie mit [Schritt 4](##step-4:-permanently-delete-the-spilled-data)fort. 
 
 > [!IMPORTANT]
-> Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, können die tatsächlichen verschütteten Daten enthalten, denen Sie suchen. Wenn Sie die Suche nach Dokumenten mit einer Sozialversicherungsnummer und Sie als ein Schlüsselwort in der Suchabfrage verwenden, müssen Sie die Abfrage anschließend zur Vermeidung von weiteren stellen löschen. Sie können löschen suchen oder die gesamte Untersuchung in [Schritt 5](##step-5:-close-or-delete-investigation). 
+> Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, enthalten möglicherweise die tatsächlich verschütteten Daten, nach denen Sie suchen. Wenn Sie beispielsweise nach Dokumenten suchen, die eine Sozialversicherungsnummer enthalten, und Sie in der Suchabfrage als Schlüsselwort verwenden, müssen Sie die Abfrage löschen, um weiteres verschütten zu vermeiden. Sie können die Suche löschen oder die gesamte Untersuchung in [Schritt 5](##step-5:-close-or-delete-investigation)löschen. 
 
-## <a name="step-3-review-and-investigate"></a>Schritt 3: Überprüfen und untersuchen 
+## <a name="step-3-review-and-investigate"></a>Schritt 3: überprüfen und untersuchen 
 
-In der Untersuchung wechseln Sie zur Registerkarte **Vorfälle** , und klicken Sie auf der Vorfall, den Sie im vorherigen Schritt erstellt haben. Nach der Verarbeitung der Auftrag abgeschlossen ist, und die Suchergebnisse des Vorfalls hinzugefügt werden, können Sie einzelne Dokumente im systemeigenen Format, Text-Format oder ein in der Nähe systemeigenen Format überprüfen. Sie können zusätzliche Abfragen zur weiteren Einschränkung der Liste von Dokumenten und Kennzeichnen von Dokumenten an, dass die Ergebnisse aus der Prüfung erstellen.
+Wechseln Sie in der Untersuchung zur Registerkarte **Incidents** , und klicken Sie auf den Vorfall, den Sie im vorherigen Schritt erstellt haben. Nachdem der Verarbeitungsauftrag abgeschlossen ist und die Suchergebnisse dem Vorfall hinzugefügt wurden, können Sie einzelne Dokumente im systemeigenen Format, im Text Format oder in einem nahezu systemeigenen Format überarbeiten. Sie können zusätzliche Abfragen erstellen, um die Liste der Dokumente weiter einzuschränken und Dokumente zu markieren, um die Ergebnisse ihrer Untersuchung anzugeben.
 
-Klicken Sie zum Gruppieren von Dokumenten, und erhalten Sie weitere Unterstützung für die Überprüfung, auf **Vorfall verwalten**. Klicken Sie in die Kachel **Analytics** auf **Analysieren**. Dadurch wird die erweiterte Analytics wie Erkennung von Duplikaten, e-Mail-threading und Design Analyse ausgeführt. Weitere Informationen finden Sie unter:
+Klicken Sie auf **Vorfall verwalten**, um Dokumente zu gruppieren und weitere Unterstützung zu erhalten. Klicken Sie in der **Analytics** -Kachel auf **analysieren**. Dadurch werden erweiterte Analysen wie doppelte Erkennung, e-Mail-Threading und Design Analyse ausgeführt. Weitere Informationen finden Sie unter:
 
 - [Erkennen von Quasiduplikaten](near-duplicates.md)
 - [E-Mail-Threading](email-threading.md)
 - [Designs](themes.md)
 
-Um zu bestimmen, welche Benutzer an die Daten stellen beteiligt sind, können Sie Erstellen einer neuen Abfrage in der Vorfall und verwenden Sie die/Author Absender und Empfänger Bedingungen. Dadurch wird eine Liste aller Absender, Empfänger und Autoren gefunden in gesammelten Daten, die den Vorfall hinzugefügt wurde, erstellt. Achten Sie darauf, untersuchen Sie die Liste, um festzustellen, ob externe Benutzer in der Liste vorhanden sind. Weitere Informationen finden Sie unter [Search Conditions](../keyword-queries-and-search-conditions.md#search-conditions).
+Um zu ermitteln, welche Benutzer am Datenüberlauf beteiligt sind, können Sie eine neue Abfrage im Vorfall erstellen und dann die Bedingungen Absender/Autor und Empfänger verwenden. Dadurch wird eine Liste aller Absender, Empfänger und Autoren erstellt, die in gesammelten Daten gefunden wurden, die dem Vorfall hinzugefügt wurden. Überprüfen Sie unbedingt die Liste, um festzustellen, ob externe Benutzer in der Liste vorhanden sind. Weitere Informationen finden Sie unter [Suchbedingungen](../keyword-queries-and-search-conditions.md#search-conditions).
 
-## <a name="step-4-permanently-delete-the-spilled-data"></a>Schritt 4: Die verschütteten Daten endgültig löschen
+## <a name="step-4-permanently-delete-the-spilled-data"></a>Schritt 4: Dauerhaftes Löschen der verschütteten Daten
 
-### <a name="deleting-mailbox-items"></a>Löschen von postfachelementen
+### <a name="deleting-mailbox-items"></a>Löschen von Postfachelementen
 
-Nachdem Sie überprüfen, und überprüfen Sie, ob die Suchergebnisse nur die e-Mail-Nachrichten enthalten, die gelöscht werden müssen, Sie dauerhaft löschen durch Ausführen der **New-ComplianceSearchAction-löschen - PurgeType HardDelete** Command in Security & Compliance Center PowerShell. Anweisungen finden Sie unter [Suchen und Löschen von e-Mail-Nachrichten](../search-for-and-delete-messages-in-your-organization.md). 
+Nachdem Sie überprüft und überprüft haben, dass die Suchergebnisse nur die e-Mail-Nachrichten enthalten, die gelöscht werden müssen, können Sie sie dauerhaft löschen, indem Sie den Befehl **New-ComplianceSearchAction-Purge-purgeType HardDelete** in Security & Compliance ausführen. Center PowerShell. Anweisungen finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten](../search-for-and-delete-messages-in-your-organization.md). 
 
-Beachten Sie, die Wiederherstellung einzelner Elemente für Postfächer in Ihrer Organisation aktiviert ist dauerhaft Objekte gelöschte werden in den Ordner des Benutzers wiederherstellbare Elemente aufbewahrt werden (und von Administratoren verfügbar) bis gelöschter Elemente Aufbewahrung Ende der (Standardeinstellung ist 14 Tage). Darüber hinaus der Postfächer, die verschütteten Daten enthalten sind, eine rechtliche Aufbewahrungspflicht oder eine Aufbewahrungsrichtlinie zugewiesen, wird Zeitfenster Nachricht beibehalten werden im Ordner "wiederherstellbare Elemente", bis die Sperre entfernt wurde, oder das Postfach von Aufbewahrungsrichtlinien ausgeschlossen wird. Auf der Festplatte löschen von Nachrichten müssen Sie sofort Addition Aufgaben ausführen. Anweisungen finden Sie unter [Löschen von Elementen im Ordner des cloudbasierten Postfächer auf halten wiederherstellbaren Elementen ](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
+Beachten Sie, dass, wenn die Wiederherstellung einzelner Elemente für Postfächer in Ihrer Organisation aktiviert ist, dauerhaft gelöschte Elemente im Ordner "Wiederherstellbare Elemente" des Benutzers aufbewahrt werden (und von Administratoren zugänglich sind), bis der Aufbewahrungszeitraum für gelöschte Elemente endet (Standard ist 14 Tage). Wenn eines der Postfächer, die verschüttete Daten enthalten, über eine gesetzliche Aufbewahrungspflicht verfügt oder einer Beibehaltungsrichtlinie zugewiesen ist, wird die bereinigte Nachricht weiterhin im Ordner "Wiederherstellbare Elemente" aufbewahrt, bis die Aufbewahrung entfernt oder das Postfach nicht mehr in den Speicherrichtlinien eingeschlossen ist. Wenn Sie Nachrichten sofort löschen möchten, müssen Sie zusätzliche Aufgaben ausführen. Anweisungen hierzu finden Sie unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife ](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
 
 > [!IMPORTANT]
-> Mit der datensatzverwaltung oder der rechtlichen Abteilungen vor dem Entfernen einer Richtlinie halten oder die Aufbewahrung prüfen. Ihrer Organisation möglicherweise eine Richtlinie, die definiert, ob ein Postfach auf halten, oder ein Daten stellen Vorfall Vorrang. 
+> Erkundigen Sie sich bei ihrer Datensatzverwaltung oder Rechtsabteilung vor dem Entfernen einer Aufbewahrungs-oder Archivierungsrichtlinie. Ihre Organisation verfügt möglicherweise über eine Richtlinie, die definiert, ob ein Postfach in der Warteschleife oder ein Vorfall mit Daten ausschütten Vorrang hat. 
 
-### <a name="deleting-site-items"></a>Löschen von Website-Elementen
+### <a name="deleting-site-items"></a>Löschen von Websiteelementen
 
-Zum dauerhaft löschen eines Dokuments aus einer SharePoint-Website oder OneDrive for Business-Konto, haben Sie von der Website löschen, und löschen Sie ihn aus der Websitesammlung Papierkorb und Sie haben, ihn zu löschen. Anweisungen finden Sie unter [Löschen von Dokumenten in SharePoint und OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
+Um ein Dokument dauerhaft aus einer SharePoint-Website oder einem OneDrive for Business-Konto zu löschen, müssen Sie es löschen und es dann aus dem Papierkorb der Websitesammlung löschen. Anweisungen hierzu finden Sie unter [Löschen von Dokumenten in SharePoint und OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
-Alternativ können Sie eine komplette Websitesammlung, der verschütteten Daten enthalten möglicherweise löschen. Anweisungen finden Sie unter [Löschen einer Websitesammlung](https://docs.microsoft.com/sharepoint/delete-site-collection).
+Alternativ können Sie eine gesamte Websitesammlung löschen, die verschüttete Daten enthalten könnte. Anweisungen finden Sie unter [Löschen einer Websitesammlung](https://docs.microsoft.com/sharepoint/delete-site-collection).
 
-## <a name="step-5-close-or-delete-the-investigation"></a>Schritt 5: Schließen Sie oder löschen Sie die Untersuchung
+## <a name="step-5-close-or-delete-the-investigation"></a>Schritt 5: beenden oder Löschen der Untersuchung
 
-Nachdem Sie Dokumente in der quellspeicherorte für Inhalte (Postfächer oder Websites) zu löschen, müssen Sie dennoch Kopien dieser Dokumente, die im Rahmen Ihrer Untersuchung Vorfälle hinzugefügt. Um weitere stellen Daten zu vermeiden, sollten Sie die Untersuchung löschen.
+Nachdem Sie Dokumente in den Quellinhalts Speicherorten (Postfächer oder Websites) gelöscht haben, verfügen Sie weiterhin über Kopien dieser Dokumente, die Sie bei der Untersuchung Vorfällen hinzugefügt haben. Um weitere Daten zu vermeiden, sollten Sie die Untersuchung löschen.
 
 So löschen Sie eine Untersuchung:
 
-1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Untersuchung Informationen**.
+1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
 
-2. Klicken Sie auf die **Anfrage zu löschen**. 
+2. Klicken Sie auf **Fall löschen**. 
 
-Wenn Sie nicht die Untersuchung löschen müssen oder speichern Sie die Informationen, die Sie bei der Untersuchung erfasst werden sollen, können Sie den **Fall schließen**klicken. Zu einem späteren Zeitpunkt können Sie geschlossene Untersuchungen erneut öffnen.
+Wenn Sie die Untersuchung nicht löschen müssen oder wenn Sie die während der Untersuchung gesammelten Informationen speichern möchten, klicken Sie auf **Fall abschließen**. Zu einem späteren Zeitpunkt können geschlossene Untersuchungen erneut geöffnet werden.

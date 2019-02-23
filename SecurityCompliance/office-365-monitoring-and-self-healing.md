@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informationen zu den Überwachungs-und Self-Healing-Funktionen von Office 365.
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090517"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217545"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Office 365-Überwachung und Selbstheilung
 Angesichts des Umfangs von Office 365 wäre es nicht möglich, Kundendaten widerstandsfähig zu halten und vor Schadsoftware zu schützen, ohne dass eine integrierte Überwachung umfassend, intelligent und schnell und zuverlässig ist. Das überWachen einer Reihe von Diensten auf der Ebene von Office 365 ist sehr schwierig. Es muss eine neue Denkweise und Methodologie eingeführt werden, und es müssen vollständig neue Technologien erstellt werden, um den Dienst in einer verbundenen globalen Umgebung zu betreiben und zu verwalten. Wir haben uns vom herkömmlichen Überwachungsansatz der Datenerfassung und-Filterung entfernt, um Warnungen zu einem Ansatz zu erstellen, der auf der Datenanalyse basiert. Signale zu erstellen und das Vertrauen in diese Daten und dann mithilfe der Automatisierung zu erholen oder das Problem zu beheben. Diese Vorgehensweise hilft den Menschen bei der Wiederherstellungs Gleichung, wodurch Vorgänge kostengünstiger, schneller und weniger fehleranfällig sind. 

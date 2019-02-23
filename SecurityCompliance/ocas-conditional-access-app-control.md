@@ -1,5 +1,5 @@
 ---
-title: Schützen von apps mit Office 365 Cloud App Security Conditional Access-App-Steuerelement
+title: Schützen von Apps mit der App-Steuerung für bedingten Zugriff in Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Stop Verstöße und Lecks in Echtzeit mit Office 365 Cloud App Security Conditional Access app Control.
-ms.openlocfilehash: 8656bf9d3e028bf6b44731c397b74d9c883db707
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 23c4b29e86eb8ba92cfa8a544d6484965ec6372b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103360"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217085"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Schützen von apps mit Office 365 Cloud App Security Conditional Access-App-Steuerelement
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Schützen von Apps mit der App-Steuerung für bedingten Zugriff in Office 365 Cloud App Security
 
 |Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
@@ -104,7 +104,7 @@ Weitere apps werden kontinuierlich an die Sitzungssteuerung weitergegeben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Bereitstellen von App-Steuerelement für den bedingten Zugriff für Office 365-apps](ocas-deploy-conditional-access-app-control.md)
+- [Bereitstellen der App-Steuerung für bedingten Zugriff für Office 365-Apps](ocas-deploy-conditional-access-app-control.md)
 
 - [Informationen zu Sitzungs Richtlinien in Office 365 Cloud App Security](ocas-session-policies.md)
 

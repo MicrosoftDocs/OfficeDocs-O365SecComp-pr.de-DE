@@ -6,27 +6,27 @@ manager: laurawi
 ms.date: 6/12/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
-description: Ihre Organisation Fällen müssen Sie für eine bestimmte Zeitspanne aufgrund von Kompatibilitäts-, rechtliche, Dokumente oder andere geschäftlichen Anforderungen beibehalten werden. Wenn Ihre Organisation Dokumente länger als erforderlich gespeichert sind, erstellen Sie unnötige rechtliche Risiken. Sie können mit einer dokumentlöschrichtlinie proaktiv Risiko reduzieren, durch das Löschen von Dokumenten in einer Website nach einem bestimmten Zeitraum – beispielsweise Dokumente löschen in der Benutzer OneDrive for Business-Websites fünf Jahre nach die Dokumente erstellt wurden.
-ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: Möglicherweise muss Ihre Organisation Dokumente aufgrund von Compliance-, rechts-oder anderen geschäftlichen Anforderungen für einen bestimmten Zeitraum aufbewahren. Wenn Ihre Organisation Dokumente jedoch länger hält als erforderlich, verursachen Sie unnötige rechtliche Risiken. Mit einer Dokument Löschrichtlinie können Sie das Risiko proaktiv verringern, indem Sie Dokumente auf einer Website nach einem bestimmten Zeitraum löschen, beispielsweise fünf Jahre nach dem Erstellen der Dokumente in den OneDrive-Websites von Benutzern.
+ms.openlocfilehash: 9f1355e8a522900aa47ef20ef580918ab5584b99
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002668"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218435"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Übersicht über Dokumentlöschrichtlinien
 
 > [!IMPORTANT]
-> Vorwärts verschoben, es wird empfohlen, dass Sie eine Aufbewahrungsrichtlinie oder in das Wertpapier erstellt Etiketten verwenden &amp; Compliance Center anstelle einer dokumentlöschrichtlinie. Dokumentlöschrichtlinien werden weiterhin parallel zu Aufbewahrungsrichtlinien funktionieren, aber wenn Sie müssen beibehalten oder Löschen von Inhalt an einer beliebigen Stelle in Office 365, es wird empfohlen, dass Sie eine Aufbewahrungsrichtlinie zu verwenden. Weitere Informationen finden Sie unter [Verwendung einer Aufbewahrungsrichtlinie anstelle dieser Features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
+> Es wird empfohlen, eine Aufbewahrungsrichtlinie oder Bezeichnungen zu verwenden, die im Security &amp; Compliance Center anstelle einer Dokument Löschrichtlinie erstellt wurden. Dokument Löschrichtlinien arbeiten weiterhin nebeneinander mit Aufbewahrungsrichtlinien, aber wenn Sie Inhalte in Office 365 beibehalten oder löschen müssen, empfiehlt es sich, eine Aufbewahrungsrichtlinie zu verwenden. Weitere Informationen finden Sie unter [Verwenden einer Aufbewahrungsrichtlinie anstelle dieser Features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
-Ihre Organisation Fällen müssen Sie für eine bestimmte Zeitspanne aufgrund von Kompatibilitäts-, rechtliche, Dokumente oder andere geschäftlichen Anforderungen beibehalten werden. Wenn Ihre Organisation Dokumente länger als erforderlich gespeichert sind, erstellen Sie unnötige rechtliche Risiken. Sie können mit einer dokumentlöschrichtlinie proaktiv Risiko reduzieren, durch das Löschen von Dokumenten in einer Website nach einem bestimmten Zeitraum – beispielsweise Dokumente löschen in der Benutzer OneDrive for Business-Websites fünf Jahre nach die Dokumente erstellt wurden.
+Möglicherweise muss Ihre Organisation Dokumente aufgrund von Compliance-, rechts-oder anderen geschäftlichen Anforderungen für einen bestimmten Zeitraum aufbewahren. Wenn Ihre Organisation Dokumente jedoch länger hält als erforderlich, verursachen Sie unnötige rechtliche Risiken. Mit einer Dokument Löschrichtlinie können Sie das Risiko proaktiv verringern, indem Sie Dokumente auf einer Website nach einem bestimmten Zeitraum löschen, beispielsweise fünf Jahre nach dem Erstellen der Dokumente in den OneDrive-Websites von Benutzern.
   
-Dokumentlöschrichtlinien werden leistungsfähige noch flexibler – Sie können beispielsweise:
+Dokument Löschrichtlinien sind leistungsfähig und dennoch flexibel – Sie können beispielsweise Folgendes tun:
   
 - Erlauben Sie Websitebesitzern, die von Ihnen erstellten und verwalteten Richtlinien auszuwählen. Sie können Websitebesitzern auch erlauben, eine Richtlinie abzuwählen, falls sie für ihre Inhalte nicht geeignet sein sollte.
     
@@ -36,7 +36,7 @@ Dokumentlöschrichtlinien werden leistungsfähige noch flexibler – Sie können
     
 - Erstellen Sie eine Richtlinie mit mehreren Löschregeln, aus denen ein Websitebesitzer wählen kann.
     
-Sie erstellen und Verwalten von dokumentlöschrichtlinien mithilfe der Löschvorgang Richtlinie Dokumentcenter, die finden Sie unter **Beibehaltung** in die Office 365-Sicherheit &amp; Compliance Center. Alternativ können Sie das Richtlinie Center manuell durch [Erstellen der Websitesammlung](https://go.microsoft.com/fwlink/p/?LinkID=404342) , und wählen **Compliance Richtlinie Center** auf die Registerkarte **Unternehmen** erstellen. Jeder Mandant kann nur ein Dokument löschen Richtlinie Center, und es werden automatisch erstellt werden, wenn Sie über die Sicherheit starten &amp; Compliance Center. 
+Sie erstellen und verwalten Dokument Löschrichtlinien mithilfe des Dokument LöschungsRichtlinien Centers, das Sie im Office **** 365 Security &amp; Compliance Center unter Aufbewahrung finden. Alternativ können Sie das Richtlinien Center manuell erstellen, indem Sie [die Websitesammlung erstellen](https://go.microsoft.com/fwlink/p/?LinkID=404342) und auf der Registerkarte **Enterprise** die Option **Compliance Policy Center** auswählen. Jeder Mandant kann nur ein Dokument Löschrichtlinien Center haben, und es wird automatisch erstellt, wenn Sie im Security &amp; Compliance Center starten. 
   
 ![Startseite von Document Deletion Policy Center](media/IP-Document-Deletion-Policy-Center-home-page.png)
   
@@ -52,7 +52,7 @@ Zusätzlich zu Dokumentlöschrichtlinien enthält Office 365 die folgenden Aufb
     
 Die einzelnen Richtlinientypen eignen sich am besten für einen bestimmten Website- oder Datentyp. Angenommen, Ihre Organisation hat eine hochgradig strukturierte Website, die Inhaltstypen verwendet, wie z. B. eine Finanzwebsite für Verträge oder eine Wissensdatenbank für Artikel. In diesem Fall können Sie Inhaltstyprichtlinien verwenden. Oder angenommen, Ihre Organisation muss rechtliche Dokumente aufbewahren. In diesem Fall könnten Sie Inhaltstypen und ein Datenarchiv verwenden, um einen Dateiplan zu implementieren.
   
-Dokumentlöschrichtlinien ersetzen nicht Records Management oder Informationen Informationsverwaltungsrichtlinien, Sie die am besten mit strukturierten Daten und Inhaltstypen. In diesem Fall sollten Sie dokumentlöschrichtlinien verwenden, wenn Sie die automatische Löschung unstrukturierte Daten wie OneDrive for Business-Websites und Teamwebsites Allgemein verwalten müssen.
+Dokument Löschrichtlinien ersetzen keine Daten Satz Verwaltungs-oder Informationsverwaltungsrichtlinien, die am besten mit strukturierten Daten und Inhaltstypen funktionieren. Stattdessen sollten Sie Dokument Löschrichtlinien verwenden, wenn Sie das automatische Löschen von unstrukturierten Daten wie OneDrive for Business-Websites und Teamwebsites im allgemeinen verwalten müssen.
   
 ![Diagramm der Aufbewahrungsrichtlinien für Websiteinhalte](media/IP-Retention-policies-for-site-content.png)
   
@@ -76,7 +76,7 @@ Wenn eine Richtlinie mehr als eine Regel enthält, können Websitebesitzer die R
   
 ## <a name="policies-and-assignments"></a>Richtlinien und Zuweisungen
 
-Nachdem Sie eine dokumentlöschrichtlinie erstellt haben, können Sie ihn auf eine Vorlage für Websitesammlung zuweisen – beispielsweise Sie können eine Richtlinie zuweisen die OneDrive for Business-Vorlage, damit sie jedes Benutzers OneDrive Website enthält. Wenn Sie eine Richtlinie einer Vorlage für Websitesammlung zuweisen, gilt dies für alle Websitesammlungen, die bereits erstellt aus der Vorlage, zusätzlich zur alle Websitesammlungen in der Zukunft aus dieser Vorlage erstellt.
+Nachdem Sie eine Dokument Löschrichtlinie erstellt haben, können Sie Sie einer websitesammlungsvorlage zuweisen, beispielsweise können Sie eine Richtlinie der OneDrive for Business-Vorlage zuweisen, sodass Sie die OneDrive-Website jedes Benutzers enthält. Wenn Sie einer websitesammlungsvorlage eine Richtlinie zuweisen, gilt dies für alle Websitesammlungen, die bereits aus dieser Vorlage erstellt wurden, sowie für alle Websitesammlungen, die in Zukunft aus dieser Vorlage erstellt werden.
   
 ![Seite "Vorlage wählen" mit der Option "OneDrive"](media/IP-Choose-a-template.png)
   
@@ -90,19 +90,19 @@ Statt eine einzelne Richtlinie als obligatorisch zu kennzeichnen, können Sie ei
   
 ### <a name="one-rule-or-several-rules-to-choose-from"></a>Eine Regel oder mehrere Regeln zur Auswahl
 
-Jede Richtlinie kann wiederum viele Regeln enthalten – beispielsweise möglicherweise eine Löschung Richtlinie für allgemeine Geschäftsdokumente zwei Regeln:
+Jede Richtlinie kann wiederum viele Regeln enthalten, beispielsweise kann eine Löschrichtlinie für allgemeine Geschäftsdokumente zwei Regeln aufweisen:
   
-- Dokumente, bei denen es nicht basierend auf Vorschriften oder laufender Geschäftsprozesse aufzubewahren sollte nicht mehr als ein Jahr nach Erstellung aufbewahrt werden.
+- Dokumente, die keine Aufbewahrung basierend auf gesetzlichen Verpflichtungen oder laufendem Geschäftsbedarf erfordern, sollten nicht länger als ein Jahr nach ihrer Erstellung aufbewahrt werden.
     
 - Dokumente, die für aktive fortlaufende Geschäftsprozesse und länger als ein Jahr benötigt werden, sollten nicht länger als drei Jahre nach ihrer Erstellung aufbewahrt werden.
     
-Websitebesitzer kann bestimmen, dass ihre Website allgemeine Business enthält Dokumente, wählen Sie diese Richtlinie löschen aus, und wählen Sie dann die entsprechende Regel aus der Richtlinie. Sie können nur eine Regel auswählen, aus der Richtlinie, die derzeit auf der Website (also nicht von einer Richtlinie) angewendet wird, und die Regel gilt für alle Dokumentbibliotheken in der Website.
+Ein Websitebesitzer kann festlegen, dass die Website allgemeine Geschäftsdokumente enthält, wählen Sie diese Löschrichtlinie aus, und wählen Sie dann die entsprechende Regel aus der Richtlinie aus. Sie können nur eine Regel aus der Richtlinie auswählen, die derzeit auf die Website angewendet wird (nicht in einer Richtlinie), und die Regel gilt für alle Dokumentbibliotheken der Website.
   
 ## <a name="the-relationship-of-site-collections-policies-and-rules"></a>Beziehung zwischen Websitesammlungen, Richtlinien und Regeln
 
 Die grundlegende Beziehung ist:
   
-Eine Websitesammlung oder einer Vorlage für Websitesammlung kann eine oder mehrere Richtlinien zugewiesen haben, und jeweils die Richtlinien kann eine oder mehrere Regeln verwendet. Allerdings kann nur eine Richtlinie, die pro Website aktiv ist, und kann nur eine Löschregel, die zu einem beliebigen Zeitpunkt für die Bibliotheken, die innerhalb der Website aktiv ist.
+Einer Websitesammlung oder einer websitesammlungsvorlage können eine oder mehrere Richtlinien zugewiesen werden, und jede dieser Richtlinien kann eine oder mehrere Regeln aufweisen. Es kann jedoch nur eine Richtlinie pro Website aktiv sein, und es kann nur eine Löschregel geben, die jederzeit für die Bibliotheken innerhalb der Website aktiv ist.
   
 ![Diagramm der Beziehungen zwischen Richtlinien](media/IP-Two-policies-four-rules.png)
   
@@ -112,7 +112,7 @@ So wie Berechtigungen, Navigation und viele andere Websitefunktionen werden auch
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Erstmaliges Zuweisen von Dokumentlöschrichtlinien
 
-Es ist wichtig zu verstehen, dass den Zeitraum an, die für ein Dokument angegeben Löschung die Zeit bedeutet seit das Dokument wurde erstellt oder geändert werden, nicht die Zeit, da die Richtlinie zugewiesen wurde. Beispielsweise können Sie erstellen eine dokumentlöschrichtlinie, die Dokumente löscht dauerhaft zwei Jahre, nachdem sie erstellt wurden, und weisen Sie die Richtlinie einer Vorlage für Websitesammlung aus der mehrere Websitesammlungen vier oder fünf Jahren erstellt wurden. In diesem Fall ist es wahrscheinlich, dass die vorhandene Websitesammlungen viele Dokumente enthalten, die bereits älter als die zwei Jahre durch die Löschung-Richtlinie angegeben sind – das bedeutet viel Inhalt bald nach dem Zuweisen der dokumentlöschrichtlinie für das erste gelöscht wird Zeit.
+Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlinie angegebenen Zeitraum um die Zeit seit dem Erstellen oder Ändern des Dokuments handelt, nicht um den Zeitpunkt, zu dem die Richtlinie zugewiesen wurde. Sie können beispielsweise eine Dokument Löschrichtlinie erstellen, die Dokumente zwei Jahre nach der Erstellung dauerhaft löscht, und diese Richtlinie dann einer websitesammlungsvorlage zuweisen, von der mehrere Websitesammlungen vor vier oder fünf Jahren erstellt wurden. In diesem Fall ist es wahrscheinlich, dass die vorhandenen Websitesammlungen viele Dokumente enthalten, die bereits älter als die zwei Jahre sind, die in der Löschrichtlinie angegeben sind – dies heißt, dass viele Inhalte bald nach dem Zuweisen der Dokument Löschrichtlinie für den ersten gelöscht werden. Zeit.
   
 Wenn Sie die Richtlinie zum ersten Mal zuweisen, werden alle Dokumente auf der Website ausgewertet und, falls sie die Kriterien erfüllen, gelöscht. Dies trifft auf alle vorhandenen Dokumente zu, nicht nur auf neue Dokumente, die seit der Zuweisung der Richtlinie erstellt wurden. Denken Sie auch daran, dass der Zeitraum das Alter eines Dokuments darstellt, nicht den Zeitraum ab der erstmaligen Zuweisung der Richtlinie.
   
@@ -122,15 +122,15 @@ Daher sollten Sie vor dem erstmaligen Zuweisen einer Richtlinie zu einer Website
 
 Nachdem Sie einer Websitesammlung Richtlinien zugewiesen haben, können Websitebesitzer über den Link **Dokumentlöschrichtlinien** auf der Seite **Websiteeinstellungen** die für die Website verfügbaren Richtlinien anzeigen und anwenden. 
   
-Der Link **Dokumentlöschrichtlinien** wird nicht angezeigt, es sei denn, für die Websitesammlung Richtlinien zugewiesen wurden. Darüber hinaus der Link wird nicht angezeigt, unmittelbar nachdem Richtlinien, zu der Website zugewiesen sind – dauert bis zu 24 Stunden aus, wenn die Richtlinien zugewiesen sind, wenn der Link **Dokumentlöschrichtlinien** angezeigt wird. 
+Der Link **Dokument Löschrichtlinien** wird nur angezeigt, wenn der Websitesammlung Richtlinien zugewiesen wurden. Außerdem wird der Link nicht sofort angezeigt, nachdem der Website Richtlinien zugewiesen wurden – es kann bis zu 24 Stunden dauern, bis die Richtlinien zugewiesen sind, wenn der Link zum **Löschen von Dokument** Richtlinien angezeigt wird. 
   
 ## <a name="permissions"></a>Berechtigungen
 
 Mitglieder Ihres Kompatibilitätsteams, die das Document Deletion Policy Center verwenden, benötigen Berechtigungen für das Policy Center und die Websitesammlungen, auf die die Richtlinien angewendet werden sollen. Wir empfehlen, dass Sie wie folgt vorgehen:
   
-1. Erstellen Sie eine Sicherheitsgruppe, die alle Benutzer der der Löschvorgang Richtlinie Dokumentcenter enthält – wahrscheinlich Compliance richtlinienverwaltung Team. Weitere Informationen finden Sie unter [Manage Mail-Enabled-Sicherheitsgruppen](https://go.microsoft.com/fwlink/p/?LinkID=404345) . 
+1. Erstellen Sie eine Sicherheitsgruppe, die alle Benutzer des Dokument Löschrichtlinien Centers enthält – höchstwahrscheinlich ihr Compliance Policy-Management-Team. Weitere Informationen finden Sie unter [Verwalten von e-Mail-aktivierten Sicherheitsgruppen](https://go.microsoft.com/fwlink/p/?LinkID=404345) . 
     
-2. Im Dokument löschen Richtlinie Center Websitesammlung Besitzerberechtigungen der Sicherheitsgruppe zuweisen. Weitere Informationen finden Sie unter [Berechtigungen für Administratoren von Websitesammlungen](https://go.microsoft.com/fwlink/p/?LinkID=404346) . 
+2. Weisen Sie der Sicherheitsgruppe im Dokument Löschrichtlinien Center Websitesammlungsbesitzer Berechtigungen zu. Weitere Informationen finden Sie unter [Berechtigungen für Websitesammlungsadministratoren](https://go.microsoft.com/fwlink/p/?LinkID=404346) . 
     
 3. Weisen Sie in jeder Websitesammlung, der Sie Dokumentlöschrichtlinien zuweisen müssen, Websitesammlungs-Besitzerberechtigungen zu der Sicherheitsgruppe zu.
     

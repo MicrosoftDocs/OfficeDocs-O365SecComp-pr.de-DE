@@ -1,12 +1,12 @@
 ---
-title: Erweiterte Indizierung von Verwaltungsberechtigten Daten
+title: Erweiterte Indizierung der Daten von Verwaltungsberechtigten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 158af8acf4acdb8ad6650c377a23b44ed28c6f54
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: f8f1a92f001bf8f9e23f54bbb05fbbcf443bf4b9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607762"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218665"
 ---
-# <a name="advanced-indexing-of-custodian-data"></a>Erweiterte Indizierung von Verwaltungsberechtigten Daten
+# <a name="advanced-indexing-of-custodian-data"></a>Erweiterte Indizierung der Daten von Verwaltungsberechtigten
 
-Wenn ein Verwaltungsberechtigter zu einem Fall erweiterte eDiscovery (Preview) hinzugefügt wird, ist keine Inhalte in Office 365, die als gilt als wurde teilweise indiziert erneut verarbeiteten vollständig durchsuchbare machen.  Dieser Vorgang wird als *erweiterte Indizierung*bezeichnet. Inhalte kann teilweise für eine Reihe von Gründe für das Vorhandensein von Bildern, nicht unterstützte Dateitypen oder bei Auftreten von Indizierung maximale Dateigröße indiziert werden.  Weitere Informationen zum teilweise indizierte Elemente finden Sie unter [teilweise indizierte Elemente in Inhaltssuche in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search).
+Wenn eine Depotbank zu einem Advanced eDiscovery (Preview)-Fall hinzugefügt wird, werden alle Inhalte in Office 365, die als teilweise indiziert angesehen wurden, erneut verarbeitet, damit Sie vollständig durchsuchbar sind.  Dieser Vorgang wird als *Erweiterte Indizierung*bezeichnet. Inhalte können teilweise aus verschiedenen Gründen indiziert werden, einschließlich der Existenz von Bildern, nicht unterstützten Dateitypen oder bei der Indizierung von Dateigrößenbeschränkungen.  Weitere Informationen zu teilweise indizierten Elementen finden Sie unter [teilweise indizierte Elemente in der Inhaltssuche in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search).
 
-## <a name="viewing-advanced-indexing-results"></a>Anzeigen von Ergebnissen der erweiterte Indizierung
+## <a name="viewing-advanced-indexing-results"></a>Anzeigen erweiterter Indizierungs Ergebnisse
 
-Nachdem der erweiterte Indizierung abgeschlossen ist, können Sie einen Überblick über die Effektivität des erneute Verarbeitung abrufen.  In der Ansicht Verwaltungsberechtigter Indizierung enthält das Diagramm alle Elemente auf den *Hybriden Index*hinzugefügt.  Der Hybrid-Index ist, wo den Inhalt erneut verarbeiteten auf Erweiterte eDiscovery (Preview) gespeichert werden.
+Nach Abschluss des erweiterten Indizierungsprozesses können Sie sich über die Effektivität der erneuten Verarbeitung informieren.  In der Ansicht Depot Indizierung werden alle dem *Hybrid Index*hinzugefügten Elemente aufgelistet.  Im Hybrid Index werden die neu verarbeiteten Inhalte von Advanced eDiscovery (Preview) gespeichert.
 
-Das Diagramm enthält auch die Anzahl der Elemente, die Remediation erfordern und eine andere Grafik von Fehlern nach Dateityp. Weitere Informationen finden Sie unter [Error Remediation beim Verarbeiten von Daten](error-remediation.md).
+Das Diagramm enthält außerdem die Anzahl der Elemente, für die eine Korrektur erforderlich ist, und einen weiteren Diagramm mit Fehlern nach Dateityp. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten](error-remediation.md).
 
-## <a name="updating-advanced-indexes-for-custodians"></a>Aktualisieren von erweiterten Indizes für Verwalter
+## <a name="updating-advanced-indexes-for-custodians"></a>Aktualisieren erweiterter Indizes für Verwalter
 
-Wenn ein Verwaltungsberechtigter zu einem Fall erweiterte eDiscovery (Preview) hinzugefügt wird, werden alle teilweise indizierte Elemente erneut verarbeitet. Mit der Zeit können mehr teilweise indizierte Elemente Postfach oder OneDrive-Konto des Benutzers hinzugefügt werden.  Bei Bedarf können Sie die Indizes aktualisieren.
+Wenn einem erweiterten eDiscovery-Fall (Preview) ein Depot hinzugefügt wird, werden alle teilweise indizierten Elemente erneut verarbeitet. Im Laufe der Zeit können jedoch mehr teilweise indizierte Elemente zum Postfach-oder OneDrive-Konto eines Benutzers hinzugefügt werden.  Bei Bedarf können Sie die Indizes aktualisieren.
 
 > [!NOTE]
-> Aktualisieren von Indizes Verwaltungsberechtigter ist ein langer Prozess. Es wird empfohlen, dass Sie Indizes nur einmal pro Tag in dem Fall nicht aktualisieren.
+> Das Aktualisieren von Depot Indizes ist ein langwieriger Prozess. Es wird empfohlen, die Indizes in einem Fall nicht mehr als einmal pro Tag zu aktualisieren.

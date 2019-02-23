@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,33 +14,33 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b148ff1a77cd9225a26f98e7612e9fb5b57331e3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 967320aeb960258d77d90cca4e3b681849f9952e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706056"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215805"
 ---
 # <a name="use-the-communications-editor"></a>Verwenden des Kommunikations-Editors
 
-Wie Sie den Inhalt Ihrer Portalinhalt definieren, Legal halten, Benachrichtigungen und Erinnerungen/Eskalationen Verwandte, und Sie können den Communications-Editor, formatieren und dynamisch anpassen Ihrer Inhalte nutzen.
+Wenn Sie den Inhalt Ihres Portalinhalts, rechtliche Aufbewahrungs Benachrichtigungen und zugehörige Erinnerungen/Eskalationen definieren, können Sie den Kommunikations-Editor nutzen, um Ihre Inhalte zu formatieren und dynamisch anzupassen.
 
-## <a name="rich-text-editor"></a>Rich-Text-editor 
+## <a name="rich-text-editor"></a>Rich-Text-Editor 
 
-Der Communications-Editor können Benutzer zum Anpassen des Texts mithilfe der Editoroptionen. Benutzer können beispielsweise Schriftarttypen ändern, Erstellen von Listen mit Aufzählungszeichen, Hervorheben Inhalts- und vieles mehr. 
+Der Kommunikations-Editor ermöglicht es dem Benutzer, den Text mithilfe der Editor-Optionen anzupassen. Benutzer können beispielsweise Schriftarten ändern, Aufzählungslisten erstellen, Inhalte hervorheben und vieles mehr. 
 
-## <a name="merge-field-variables"></a>Zusammenführen von Feldvariablen
+## <a name="merge-field-variables"></a>Feld Variablen zusammenführen
 
-Sie können e-Mail-Zusammenführung Variablen aus dem Communications-Editor angepassten Verwaltungsberechtigter Attribute in Textkörper eine Mitteilung einbetten nutzen. Wenn an der Verwaltungsberechtigte gesendet wird, wird das Seriendruckfeld mit dem entsprechenden Feld aufgefüllt werden. Beispielsweise würde beim an Verwaltungsberechtigter John Smith gesendet, das Seriendruckfeld [Verwaltungsberechtigter Name] mit dem entsprechenden Namen übersetzt werden. 
+Sie können die e-Mail-Zusammenführungs Variablen aus dem Kommunikations-Editor nutzen, um angepasste Depot Attribute in den Textkörper einer Kommunikation einzubetten. Bei der Übermittlung an die Depotbank wird das Seriendruckfeld mit dem entsprechenden Feld aufgefüllt. Wenn Sie beispielsweise an Depotbank John Smith gesendet haben, würde das Seriendruckfeld [Depot Name] mit dem entsprechenden Namen übersetzt. 
 
-E-Mail-zusammenführungsfelds können, indem Sie die Symbole **Seriendruckfeld** am oberen Rand der Rich-Text-Editor-Steuerelement auswählen. Der Platzhalter wird je deaktiviert den Speicherort der Cursor des Benutzers hinzugefügt. 
+Sie können e-Mail-Seriendruckfelder verwenden, indem Sie die Symbole für das **Seriendruckfeld** oben im Rich-Text-Editor-Steuerelement auswählen. Der Platzhalter wird basierend auf dem Speicherort des Cursors der Benutzer hinzugefügt. 
 
-### <a name="list-of-merge-field-variables"></a>Liste der Merge Feldvariablen
+### <a name="list-of-merge-field-variables"></a>Liste der Seriendruckfeld Variablen
 
-| Feldname                  | Feld-details | 
+| Feldname                  | Feld Details | 
 | :------------------- | :------------------- |
-| Anzeigename  | Der Verwaltungsberechtigte vor- und Nachname. | 
-| Bestätigung Link | Angepasste Link zu jedem Verwaltungsberechtigter Bestätigung aufzeichnen.|                 |
-| Portal-Verknüpfung     | Eine benutzerdefinierte Verknüpfung für der Verwaltungsberechtigte Compliance-Portal.|                |
-| Ausstellen Officer                   | Die e-Mail-Adresse von der angegebenen ausstellenden Officer.|                   |
-| Ausstellen von Datum                   | Das Datum, das die Bekanntmachung (UTC) ausgestellt wurde.              |
+| Anzeigename  | Der vor-und Nachname der Depotbank. | 
+| Bestätigungs Link | Ein benutzerdefinierter Link zum Aufzeichnen der Bestätigung der einzelnen depotverwalter.|                 |
+| Portal Link     | Ein angepasster Link für das Compliance-Portal des Depotbank.|                |
+| AusStellende Offizier                   | Die e-Mail-Adresse des angegebenen ausstellenden Offiziers.|                   |
+| AusStellendes Datum                   | Das Datum, an dem der Hinweis ausgegeben wurde (UTC).              |

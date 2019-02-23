@@ -1,9 +1,26 @@
 ---
-Title: "Schutz vor Phishing in Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 10/11/2018 ms. Audience: ITPro ms. Topic: article ms. Service: O365-seccomp localization_priority: normal Search. appverid:
-- MET150 ms. Asset-Nr.: 75af74b2-c7ea-4556-a912-8c48e07271d3 ms. Collection:
-    - M365-Security-Compliance Description: "Office 365 bietet eine Vielzahl von Schutz vor Phishing-Angriffen standardmäßig und auch durch zusätzliche Angebote wie ATP-Phishing. In diesem Thema werden die Online Ressourcen vorgestellt, die Sie verwenden können, um Anti-Phishing-Optionen und-Strategien in Office 365 zu erlernen und zu implementieren. "
+title: Antiphishingschutz in Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/11/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.collection:
+- M365-security-compliance
+description: Office 365 bietet eine Vielzahl von Schutz vor Phishing-Angriffen standardmäßig und auch durch zusätzliche Angebote wie ATP-Phishing. In diesem Thema werden die Online Ressourcen vorgestellt, die Sie verwenden können, um Anti-Phishing-Optionen und-Strategien in Office 365 zu erlernen und zu implementieren.
+ms.openlocfilehash: b930e4d41e96225e9b2685ebda02c74c5f8bb7d1
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222804"
 ---
-
 # <a name="anti-phishing-protection-in-office-365"></a>Antiphishingschutz in Office 365
 
 Office 365 bietet eine Vielzahl von Schutz vor Phishing-Angriffen standardmäßig und auch durch zusätzliche Angebote wie ATP-Phishing. In diesem Thema werden die Online Ressourcen vorgestellt, die Sie verwenden können, um Anti-Phishing-Optionen und-Strategien in Office 365 zu erlernen und zu implementieren.

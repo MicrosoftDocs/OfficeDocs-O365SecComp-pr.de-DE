@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
+ms.collection:
+- M365-security-compliance
 description: Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert.
-ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002787"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215256"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
-Für die Verwendung mit lokalen Bereitstellungen verwendet (Information Rights Management, IRM) in Exchange Online Active Directory Rights Management Services (AD RMS), ein Protection Informationstechnologie in Windows Server 2008 und höher. IRM-Schutz wird auf e-Mail angewendet, indem Sie eine Vorlage für Benutzerrechterichtlinien AD RMS auf einer e-Mail-Nachricht anwenden. Rechte sind an die Nachricht an sich selbst angefügt, damit Schutz online und offline und innerhalb und außerhalb der Firewall Ihrer Organisation erfolgt.
+Zur Verwendung mit lokalen Bereitstellungen verwendet die Verwaltung von Informationsrechten (IRM) in Exchange Online die Active Directory-RechteverwaltungsDienste (AD RMS), eine Informationsschutztechnologie in Windows Server 2008 und höher. Der IRM-Schutz wird auf e-Mails angewendet, indem eine AD RMS-Vorlage für Rechte Richtlinien auf eine e-Mail-Nachricht angewandt wird. Rechte werden an die Nachricht selbst angefügt, sodass der Schutz sowohl online als auch offline und innerhalb und außerhalb der Firewall Ihrer Organisation erfolgt.
   
-In diesem Thema wird das Konfigurieren von IRM für die Verwendung einer AD RMS-Servers veranschaulicht. Informationen zur Verwendung der neuen Funktionen für Office 365 Message Encryption mit Azure Active Directory und Azure Rights Management finden Sie im [Office 365 Message Encryption – Häufig gestellte Fragen](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+In diesem Thema wird gezeigt, wie Sie IRM für die Verwendung eines AD RMS-Servers konfigurieren. Informationen zur Verwendung der neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 mit Azure Active Directory und Azure Rights Management finden Sie in den häufig gestellten [Fragen zur office 365-Nachrichtenverschlüsselung](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
   
 Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von Informationsrechten in Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -99,7 +101,7 @@ Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD das Cmdlet **G
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Schritt 3: Verwenden der Exchange-Verwaltungsshell zur Verteilung einer AD RMS-Rechterichtlinienvorlage
 
-Nach dem Import der TPD müssen Sie sicherstellen, dass eine AD RMS-Rechterichtlinienvorlage verteilt wird. Eine verteilte Vorlage ist für Outlook Web App-Benutzer sichtbar, die die Vorlage dann auf eine E-Mail anwenden können.
+Nachdem Sie den TPD importiert haben, müssen Sie sicherstellen, dass eine AD RMS-Vorlage für Rechte Richtlinien verteilt wird. Eine verteilte Vorlage ist für Outlook im Web (ehemals Outlook Web App)-Benutzer sichtbar, die die Vorlagen dann auf eine e-Mail-Nachricht anwenden können.
   
 Führen Sie den folgenden Befehl aus, um eine Liste aller Vorlagen in der Standard-TPD anzuzeigen:
   
@@ -107,7 +109,7 @@ Führen Sie den folgenden Befehl aus, um eine Liste aller Vorlagen in der Standa
 Get-RMSTemplate -Type All | fl
 ```
 
-Wenn der Wert des Parameters  _Type_ `Archived` lautet, ist die Vorlage nicht für Benutzer sichtbar. Nur verteilte Vorlagen in der Standard-TPD sind in Outlook Web App verfügbar.
+Wenn der Wert des _Type_ -Parameters lautet, wird `Archived`die Vorlage für Benutzer nicht angezeigt. Nur verteilte Vorlagen in der Standard-TPD sind in Outlook im Web verfügbar.
   
 Führen Sie zum Verteilen einer Vorlage den folgenden Befehl aus:
   
@@ -165,6 +167,6 @@ Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD und einer erfo
   
 - Verwenden Sie das Cmdlet **Test-IRMConfiguration**, um die Funktionalität von IRM zu überprüfen. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Erstellen Sie eine neue Nachricht in Outlook Web App, und versehen Sie diese mit IRM-Schutz durch Auswahl der Option **Berechtigungen festlegen** im erweiterten Menü ( ![Weitere Optionen (Symbol)](media/ITPro-EAC-MoreOptionsIcon.gif)).
+- Erstellen Sie eine neue Nachricht in Outlook im Web, und IRM-protect it, indem Sie im erweiterten Menü ( ![weitere Optionen](media/ITPro-EAC-MoreOptionsIcon.gif)) die Option **Berechtigungen festlegen** auswählen.
     
 

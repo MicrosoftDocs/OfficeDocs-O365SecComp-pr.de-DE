@@ -1,71 +1,71 @@
 ---
-title: Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde
+title: Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Intelligence)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: M365-security-compliance
-description: Erfahren Sie, wie Bedrohungsanalyse zu finden und Untersuchen von böswilligen e-Mail verwenden.
-ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Nachrichten nach bösartigen e-Mails suchen und diese untersuchen.
+ms.openlocfilehash: adf4066b5119f131b90dc88b99be4011582931c2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995186"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215495"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Finden und Untersuchen von böswilligen e-Mail, die (Office 365 Bedrohungsanalyse) übermittelt wurde
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Intelligence)
 
-[Office 365 Bedrohungsanalyse](office-365-ti.md) können Sie Aktivitäten zu untersuchen, die Ihre Benutzer gefährden und Ausführen einer Aktion zum Schutz Ihrer Organisation. Wenn Sie in Ihrer Organisation Security Team sind, können Sie beispielsweise suchen und untersuchen verdächtigen e-Mails, die an die Benutzer übermittelt wurden. Diese Schritte können Sie mithilfe von [Explorer Bedrohung](get-started-with-ti.md#threat-explorer)durchführen.
+Mit [Office 365 Threat Intelligence](office-365-ti.md) können Sie Aktivitäten untersuchen, die Ihre Benutzer gefährden und Maßnahmen zum Schutz Ihrer Organisation ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, finden und untersuchen Sie verdächtige e-Mail-Nachrichten, die an Ihre Benutzer übermittelt wurden. Verwenden Sie dazu den [Threat Explorer](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> Im Februar 2019 beginnen und anschließend in den nächsten Monaten einführen, gewinnt Office 365 Bedrohungsanalyse Office 365 erweiterte Threat Protection Plan 2, mit zusätzlichen Bedrohung Schutzfunktionen. Finden Sie weitere Informationen finden Sie unter [Erweiterte Threat Protection von Office 365-Pläne und zu Preisen](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 erweiterte Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Beginnend im Februar 2019 und über die nächsten Monate hinaus wird Office 365 Threat Intelligence zu Office 365 Advanced Threat Protection Plan 2 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen...
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
   
-- Ihre Organisation verfügt über [Office 365 Bedrohungsanalyse](office-365-ti.md) und [Zuweisen von Lizenzen für Benutzer in Office 365 für Unternehmen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Ihre Organisation verfügt über [office 365 Threat Intelligence](office-365-ti.md) und [weist benutzern in Office 365 for Business Lizenzen zu](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
-- [Office 365-Protokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
+- [Office 365 die Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
     
-- Ihre Organisation enthält Richtlinien für Anti-Spam-, Anti-Malware, Anti-Phishing und So weiter definiert. Finden Sie unter [Bedrohung Management in die Office 365-Sicherheit &amp; Compliance Center](threat-management.md).
+- Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Antiphishingfunktionen definiert sind. Siehe [Threat Management im Office 365 Security &amp; Compliance Center](threat-management.md).
     
-- Sie sind Administrator für Office 365 globaler oder Sie haben die Sicherheitsadministrator oder Rolle suchen und Löschen in das Wertpapier &amp; Compliance Center. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Sie sind ein globaler Office 365-Administrator, oder Sie haben entweder den Sicherheitsadministrator oder die Rolle "suchen und löschen" im &amp; Security Compliance Center zugewiesen. Weitere Informationen finden Sie unter [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
 ## <a name="dealing-with-suspicious-emails"></a>Umgang mit verdächtigen e-Mails
 
-Angreifer möglicherweise Senden von Nachrichten an Ihre Benutzer zu testen und Phishing ihre Anmeldeinformationen und Zugriff auf Ihre Kennwörter im Unternehmen! Um dies zu vermeiden, sollten Sie die Bedrohung Protection Dienste von Office 365, einschließlich Exchange Online Protection und erweiterte Threat Protection verwenden. Es gibt jedoch Zeiten, wenn ein Angreifer senden Sie eine e-Mail an die Benutzer, die eine URL enthält kann, und nehmen Sie nur höher auf diesem Zeitpunkt URL schädlichem Inhalt (Malware usw.). Alternativ können Sie zu spät bewusst, dass ein Benutzer in Ihrer Organisation gefährdet und während der Benutzer gefährdet wurde, ein Angreifer dieses Kontos verwendet Senden von e-Mails an andere Benutzer in Ihrem Unternehmen. Als Teil des beide Szenarien bereinigen können Sie e-Mail-Nachrichten aus Posteingänge der Benutzer entfernen möchten. In solchen Situationen können Sie Threat Explorer zum Suchen und entfernen diese e-Mail-Nachrichten nutzen!
+Böswillige Angreifer können e-Mails an Ihre Benutzer senden, um Ihre Anmeldeinformationen zu testen und Ihren Zugriff auf Ihre Unternehmensgeheimnisse zu erhalten. Um dies zu verhindern, sollten Sie die von Office 365 angebotenen Threat Protection-Dienste verwenden, einschließlich Exchange Online Protection und Advanced Threat Protection. Es gibt jedoch Situationen, in denen ein Angreifer e-Mails an Benutzer senden kann, die eine URL enthalten, und diese URL dann später auf bösartige Inhalte (Schadsoftware usw.) verweisen. Alternativ können Sie zu spät erkennen, dass ein Benutzer in Ihrer Organisation kompromittiert wurde, und während dieser Benutzer kompromittiert wurde, hat ein Angreifer dieses Konto verwendet, um e-Mails an andere Benutzer in Ihrem Unternehmen zu senden. Im Rahmen der Bereinigung beider Szenarien möchten Sie möglicherweise e-Mail-Nachrichten von Benutzer Postfächern entfernen. In solchen Situationen können Sie den Bedrohungs-Explorer nutzen, um diese e-Mail-Nachrichten zu finden und zu entfernen.
   
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Suchen und Löschen von verdächtigen e-Mails, die übermittelt wurde
+## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Suchen und löschen verdächtiger e-Mails, die übermittelt wurden
 
 > [!TIP]
-> [Threat Explorer](get-started-with-ti.md#threat-explorer) (auch als Explorer bezeichnet), ist ein leistungsstarker Bericht, der verschiedene Zwecke wie Suchen und Löschen von Nachrichten, identifizieren die IP-Adresse des e-Mail-Absender oder starten einen Vorfall zur weiteren Untersuchung dienen kann. Das folgende Verfahren konzentriert sich auf die Verwendung von Explorer zum Suchen und Löschen von böswilligen e-Mail-Postfächern der Empfänger. 
+> [Bedrohungs-Explorer](get-started-with-ti.md#threat-explorer) (auch als Explorer bezeichnet) ist ein leistungsstarker Bericht, der mehrere Zwecke erfüllen kann, beispielsweise das Suchen und Löschen von Nachrichten, die Identifizierung der IP-Adresse eines böswilligen e-Mail-Absenders oder das Starten eines Vorfalls zur weiteren Untersuchung. Das folgende Verfahren konzentriert sich auf die Verwendung von Explorer zum Suchen und Löschen von böswilligen e-Mails aus Empfängerpostfächern. 
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center. 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security &amp; Compliance Center. 
     
-2. Wählen Sie im linken Navigationsbereich **Threat Management** \> **Explorer**.
+2. Klicken Sie im linken Navigationsbereich auf **Threat Management** \> **Explorer**.
     
-3. Wählen Sie im Menü Ansicht **Alle e-Mails**.<br/>![Verwenden Sie im Menü Ansicht zwischen e-Mail- und Content-Berichte](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. Wählen Sie im Menü Ansicht die Option **alle e-Mails**aus.<br/>![Verwenden des Menüs "Ansicht" zur Auswahl zwischen E-Mails und Inhalts Berichten](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Beachten Sie die Beschriftungen, die im Bericht wie **übermittelte**, **unbekannt**oder **den Junk-e-zugestellt**angezeigt werden.<br/>![Anzeigen von Daten für alle e-Mails Threat Explorer](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Je nach den Aktionen, die für e-Mail-Nachrichten für Ihre Organisation erstellt wurden, möglicherweise zusätzliche Bezeichnungen, beispielsweise **blockiert** oder **ersetzt**angezeigt werden.)
+4. Beachten Sie die Beschriftungen, die im Bericht angezeigt werden, **** beispielsweise "Delivered", " **Unknown**" oder " **an Junk geliefert**".<br/>![Bedrohungs-Explorer mit Daten für alle e-Mails](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Abhängig von den Aktionen, die für e-Mail-Nachrichten für Ihre Organisation durchgeführt wurden, werden möglicherweise zusätzliche Bezeichnungen angezeigt, wie **blockiert** oder **ersetzt**.)
     
-5. Wählen Sie im Bericht **gesendet** , um nur e-Mails anzuzeigen, die im Posteingang der Benutzer am Ende aus.<br/>![Durch Klicken auf "An Junk übermittelt" entfernt diese Daten aus der Ansicht](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. Wählen Sie im Bericht **geliefert** aus, um nur e-Mails anzuzeigen, die in den Posteingängen der Benutzer landeten.<br/>![Durch Klicken auf "an Junk geliefert" werden die Daten aus der Ansicht entfernt.](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. Überprüfen Sie die **E-Mail** -Liste unterhalb des Diagramms, unterhalb des Diagramms.<br/>![Unterhalb des Diagramms Anzeigen einer Liste von e-Mail-Nachrichten, die erkannt wurden](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Überarbeiten Sie unterhalb des Diagramms die **e-Mail-** Liste unterhalb des Diagramms.<br/>![Zeigen Sie unterhalb des Diagramms eine Liste der erkannten e-Mail-Nachrichten an.](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. Wählen Sie in der Liste ein Element, um weitere Informationen zu dieser e-Mail-Nachricht anzeigen aus. Beispielsweise können Sie die Betreffzeile zum Anzeigen von Informationen über den Absender, Empfänger, Anlagen und andere ähnliche e-Mail-Nachrichten klicken.<br/>![Sie können zusätzliche Informationen zu einem Element, einschließlich Details und alle Anlagen anzeigen.](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. Wählen Sie in der Liste ein Element aus, um weitere Details zu dieser e-Mail-Nachricht anzuzeigen. Sie können beispielsweise auf die Betreffzeile klicken, um Informationen zum Absender, zu Empfängern, Anlagen und anderen ähnlichen e-Mail-Nachrichten anzuzeigen.<br/>![Sie können zusätzliche Informationen zu einem Element anzeigen, einschließlich Details und Anlagen](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. Nach dem Anzeigen von Informationen zu e-Mail-Nachrichten, wählen Sie ein oder mehrere Elemente in der Liste **+ Aktionen**zu aktivieren.
+8. Nachdem Sie Informationen zu e-Mail-Nachrichten angezeigt haben, wählen Sie ein oder mehrere Elemente in der Liste aus, um **+-Aktionen**zu aktivieren.
     
-9. Verwenden Sie die Liste **+ Aktionen** , um eine Aktion wie etwa **Verschieben auf gelöschte** Elemente anzuwenden. Dadurch werden die ausgewählten Nachrichten aus den Postfächern der Empfänger gelöscht.<br/>![Wenn Sie einen oder mehrere e-Mail-Nachrichten auswählen, können Sie mehrere verfügbaren Aktionen auswählen](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Verwenden Sie die Liste **+-Aktionen** , um eine Aktion wie **Verschieben in gelöschte** Elemente anzuwenden. Dadurch werden die ausgewählten Nachrichten aus den Postfächern der Empfänger gelöscht.<br/>![Wenn Sie eine oder mehrere e-Mail-Nachrichten auswählen, können Sie aus verschiedenen verfügbaren Aktionen auswählen.](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
 ## <a name="related-topics"></a>Verwandte Themen
 
@@ -73,6 +73,6 @@ Angreifer möglicherweise Senden von Nachrichten an Ihre Benutzer zu testen und 
   
 [Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
   
-[Anzeigen von Berichten für Office 365 erweiterte Threat Protection](view-reports-for-atp.md)
+[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)
   
 

@@ -6,148 +6,148 @@ manager: laurawi
 ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
-description: Office 365 funktioniert Cloud App-Sicherheit mit Web-Datenverkehr Protokolle aus einer Vielzahl von Anbietern. Lesen Sie diesen Artikel, um weitere Informationen zu Web-Datenverkehr Protokolle und unterstützte Datenquellen für Office 365-Cloud-App-Sicherheit.
-ms.openlocfilehash: ab962e4a030d06c133ad9fc4aa62a60755793bc3
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+description: Office 365 Cloud App Security arbeitet mit Webprotokollen von einer Vielzahl von Anbietern. In diesem Artikel erfahren Sie mehr über Webprotokolle und unterstützte Datenquellen für Office 365 Cloud App Security.
+ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447053"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218105"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Protokolle für Webdatenverkehr und Datenquellen für Office 365 Cloud App Security
   
-|Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
+|Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |[Starten Sie Bereitstellen von](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](#next-steps) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](#next-steps) <br/> |
   
-Sie können eine Vielzahl von Protokolldateien für Web-Datenverkehr und Datenquellen mit Office 365-Cloud-App-Sicherheit verwenden. Jedoch die Protokolldateien für Web-Datenverkehr müssen enthalten spezifische Informationen und eine bestimmte Weise, damit sie mit Office 365-Cloud-App-Sicherheit app Discovery-Berichten und das Cloud-Discovery-Dashboard funktionieren formatiert werden. Verwenden Sie diesen Artikel als Leitfaden für die Web-Datenverkehr Protokolle und Datenquellen, die mit Office 365-Cloud-App-Sicherheit verwendet werden.
+Sie können eine Vielzahl von Webprotokolldateien und Datenquellen mit Office 365 Cloud App Security verwenden. Ihre Webprotokolldateien müssen jedoch bestimmte Informationen aufweisen und so formatiert werden, dass Sie mit Office 365 Cloud App Security App Discovery Reports und dem Cloud Discovery Dashboard funktionieren. Verwenden Sie diesen Artikel als Referenz für die Webprotokolle und Datenquellen, die Sie mit Office 365 Cloud App Security verwenden.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, Sicherheitsadministrator oder Sicherheit Reader Zugriff auf die Sicherheit sein &amp; Compliance Center und Cloud App Sicherheit in Office 365-Portal. Finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Sie müssen ein globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser sein, um auf das Security &amp; Compliance Center und das Office 365 Cloud App Security-Portal zugreifen zu können. Weitere Informationen finden Sie unter [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
-## <a name="web-traffic-log-requirements"></a>Melden Sie sich für von Web-Datenverkehr
+## <a name="web-traffic-log-requirements"></a>Webtraffic-Protokollanforderungen
 
-Office 365 Cloud App-Sicherheit verwendet Daten in Ihre Web-Datenverkehr Protokolle können Sie sehen, welche apps in Ihrer Organisation für die Personensuche verwenden. Weitere Details, die in die Protokolldateien, die eine bessere Sichtbarkeit haben Sie in Benutzeraktivität enthalten sind.
+Office 365 Cloud App Security verwendet Daten in ihren Webprotokollen, um zu verstehen, welche apps Personen in Ihrer Organisation verwenden. Je mehr Details in den Protokolldateien enthalten sind, desto besser ist die Sichtbarkeit in der Benutzeraktivität.
   
-Den folgenden Abschnitten sind die erforderlichen Attribute und zusätzliche Anforderungen für die Web-Datenverkehr Protokolle mit Office 365-Cloud-App-Sicherheit ordnungsgemäß funktioniert.
+In den folgenden Abschnitten werden die erforderlichen Attribute und zusätzlichen Anforderungen aufgeführt, damit Ihre Webprotokolle ordnungsgemäß mit Office 365 Cloud App Security funktionieren.
 
 ### <a name="attributes"></a>Attribute
 
-Office 365 Cloud App-Sicherheit kann nicht angezeigt oder analysieren Attribute, die nicht in der Web-Datenverkehr Protokolle enthalten sind. Cisco ASA Firewall Standardformat für Protokolldateien Format verfügt beispielsweise nicht die Anzahl der hochgeladenen Bytes pro Transaktion, den Benutzernamen oder ein Ziel-URL (nur eine Ziel-IP). Aus diesem Grund diese Attribute werden nicht angezeigt, in der Cloud-Discovery-Daten und Einblick in die Cloud-apps ist beschränkt. Für Cisco ASA Firewalls muss die Informationen auf 6 festgelegt werden. 
+Office 365 Cloud App Security kann Attribute nicht anzeigen oder analysieren, die nicht in ihren Webprotokollen enthalten sind. Das Standardprotokoll Format der Cisco ASA-Firewall hat beispielsweise nicht die Anzahl der hochgeladenen Bytes pro Transaktion, den Benutzernamen oder eine Ziel-URL (nur eine Ziel-IP). Daher werden diese Attribute nicht in Cloud-Ermittlungsdaten angezeigt, und die Sichtbarkeit der Cloud-Apps ist begrenzt. Für Cisco ASA-Firewalls muss die Informationsebene auf 6 festgelegt werden. 
 
-Die Web-Datenverkehr Protokolle sollten die folgenden Attribute enthalten:
+Ihre Webprotokolle sollten folgende Attribute aufweisen:
 
 - Datum der Transaktion
 - Quell-IP
-- Benutzer (dringend empfohlen)
+- Quellbenutzer (dringend empfohlen)
 - Ziel-IP-Adresse
-- Ziel-URL (empfohlen. URLs bereitstellen höhere Genauigkeit für die Erkennung von Cloud-app als IP-Adressen)
-- Gesamtmenge der Daten (empfohlen; Dateninformationen sind sehr hilfreiche)
-- Umfang der hoch- oder heruntergeladen Daten (empfohlen; bietet Einblicke in die Cloud app Verwendungsmuster)
-- Aktion (zulässige oder blockierte)
+- Ziel-URL (empfohlen; URLs bieten eine höhere Genauigkeit für die Erkennung von Cloud-Apps als IP-Adressen)
+- Gesamtmenge an Daten (empfohlen; Daten Informationen sind sehr wertvoll)
+- Menge der hochgeladenen oder gedownloadeten Daten (empfohlen; bietet Einblicke in Cloud-App-Nutzungsmuster)
+- Aktion ausgeführt (zulässig oder blockiert)
 
 ### <a name="additional-requirements"></a>Zusätzliche Anforderungen 
 
-Zusätzlich zu den weiter oben in diesem Artikel aufgeführten Attribute, sollte die Protokolle der Web-Datenverkehr über die folgenden Anforderungen erfüllen:
+Zusätzlich zu den weiter oben in diesem Artikel aufgeführten Attributen sollten die Webprotokolle die folgenden Anforderungen erfüllen:
 
 - Die Datenquelle für die Protokolldateien muss unterstützt werden.
-- Das Format, das die Protokolldateien zu verwenden, muss das Standardformat übereinstimmen. Wenn die Datei hochgeladen wurde, wird app Discovery dies zu überprüfen.
-- Die Ereignisse im Protokoll müssen nicht mehr als 90 Tage zurückliegt stattgefunden haben.
-- Die Protokolldatei muss ausgehenden Datenverkehr Informationen enthalten, die für die Netzwerkaktivität analysiert werden können.
+- Das von den Protokolldateien verwendete Format muss mit dem Standardformat übereinstimmen. Wenn die Datei hochgeladen wird, überprüft die APP-Erkennung dies.
+- Die Ereignisse im Protokoll müssen nicht mehr als 90 Tage zurückliegen.
+- Die Protokolldatei muss Informationen zum ausgehenden Datenverkehr aufweisen, die für die Netzwerkaktivität analysiert werden können.
   
-## <a name="data-attributes-for-different-vendors"></a>Data-Attribute für verschiedener Anbieter
+## <a name="data-attributes-for-different-vendors"></a>Daten Attribute für verschiedene Anbieter
 
-In der folgenden Tabelle werden die Informationen im Web Datenverkehr Protokolle aus verschiedenen Anbietern zusammengefasst. **Müssen Sie den Anbieter für die aktuellsten Informationen zu überprüfen.**
+In der folgenden Tabelle werden die Informationen in Webprotokollen von verschiedenen Anbietern zusammengefasst. Erkundigen Sie sich bei **Ihrem Anbieter nach den neuesten Informationen.**
 
 
-|                 Datenquelle                  |    Ziel-App-URL    |    Ziel-IP-App     |       Benutzername       |      Ursprung IP       |    Gesamten Datenverkehrs     |    Hochgeladenen bytes    |
+|                 Datenquelle                  |    Ziel-App-URL    |    Ziel-App-IP     |       Username       |      Ursprungs-IP       |    Gesamtdaten Verkehr     |    HochgeLadene bytes    |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 |                  Barracuda                   | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          |          Nein          |
-|                  Blue Coat                   | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
-|                  Prüfpunkt                  |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |          Nein          |          Nein          |
-|              Cisco ASA (Syslog)              |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          |
-|           Cisco ASA mit FirePOWER           | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|                  Blaues Fell                   | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|                  Prüf Punkt                  |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |          Nein          |          Nein          |
+|              Cisco ASA (syslog)              |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          |
+|           Cisco ASA mit Feuerkraft           | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                  Cisco FWSM                  |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          |
-|              Cisco Ironport WSA              | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|              Cisco IronPort WSA              | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                 Cisco Meraki                 | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |          Nein          |          Nein          |
-|           Clavister NGFW (Syslog)            | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
-|                SonicWall (früher Dell)                | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
-|            Digitale Kunst i-FILTER             | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
-|                  Antivirenfirewall                   |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|           Clavister-NGFW (syslog)            | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|                SonicWall (ehemals Dell)                | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|            Digitaler Kunst-i-FILTER             | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|                  Fortigate                   |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                 Juniper SRX                  |          Nein          | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                 Juniper SSG                  |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                  McAfee SWG                  | <strong>Ja</strong> |          Nein          |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                    MS TMG                    | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
-|              Palo auch Netzwerke              |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|              Palo Alto-Netzwerke              |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                    Sophos                    | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          |
-|                Kalmare (Allgemein)                | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |
-|                Kalmare (systemeigen)                | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |
-| Websense - genauer Detailbericht (CSV) | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
-|    Websense - Aktivität Internet-Protokoll (CEF)    | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|                Squid (allgemein)                | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |
+|                Squid (nativ)                | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> | <strong>Ja</strong> |          Nein          | <strong>Ja</strong> |
+| Websense-investigativer Detailbericht (CSV) | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
+|    Websense-Internet Activity Log (CEF)    | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
 |                   Zscaler                    | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> | <strong>Ja</strong> |
    
-## <a name="supported-vendor-firewalls-and-proxies"></a>Unterstützte Hersteller Firewalls und Proxys
+## <a name="supported-vendor-firewalls-and-proxies"></a>Unterstützte Anbieter Firewalls und Proxys
 
-Office 365-Cloud-App-Sicherheit unterstützt die folgenden Firewalls und -Proxys.
+Office 365 Cloud App Security unterstützt die folgenden Firewalls und Proxys.
   
-- Barracuda - Web App Firewall (W3C)  
-- Blau Coat Proxy SG - Access-Protokoll (W3C)
-- Kontrollkästchen Punkt
-- Cisco ASA Firewall (Stellen Sie sicher, dass Sie die Informationen auf 6 festgelegt)
-- Cisco ASA mit FirePOWER   
+- Barracuda-Web App Firewall (W3C)  
+- Blue Coat Proxy SG-Access Log (W3C)
+- Kontrollpunkt
+- Cisco ASA Firewall (stellen Sie sicher, dass Sie die Informationsebene auf 6 festlegen)
+- Cisco ASA mit Feuerkraft   
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Melden Sie Cisco Merkai - URLs
-- Clavister NGFW (Syslog)
-- Digitale Kunst i-FILTER
-- Fortinet Antivirenfirewall
-- Iboss Secure Cloud-Gateway
+- Cisco-Merkai-Protokoll für URLs
+- Clavister-NGFW (syslog)
+- Digitaler Kunst-i-FILTER
+- Fortinet Fortigate
+- iboss Secure Cloud Gateway
 - Juniper SRX
 - Juniper SSG
-- McAfee sichere Web-Gateway
+- McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
-- Palo auch Datenreihe Firewall
-- SonicWALL (früher Dell)   
+- Firewall der Palo Alto-Serie
+- SonicWALL (ehemals Dell)   
 - Sophos SG
 - Sophos XG
 - Sophos Cyberoam
-- Kalmare (Allgemein)
-- Kalmare (systemeigen)
-- Websense - Web Security Solutions - genauer Detailbericht (CSV)
-- Websense - Web Security Solutions - Internet-Aktivitätsprotokolls (CEF)
+- Squid (allgemein)
+- Squid (nativ)
+- Websense-Web Security Solutions-investigativer Detailbericht (CSV)
+- Websense-Web Security Solutions-Internet Activity Log (CEF)
 - Zscaler
     
 > [!NOTE]
-> Wenn eine Datenquelle, die Sie verwenden möchten, hier nicht enthalten ist, können Sie anfordern, dass er die app-Ermittlung hinzugefügt werden. Klicken Sie dazu beim Erstellen eines Berichts, wählen Sie **andere** für **die Datenquelle**. Geben Sie den Namen der Datenquelle, die Sie hochladen möchten. Wir überprüfen Sie das Protokoll und informiert Sie, wenn wir Unterstützung für dieses Protokoll Typs hinzufügen. Alternativ können Sie, Ihr Format passt, [definieren ein benutzerdefiniertes Parsers](https://docs.microsoft.com/cloud-app-security/custom-log-parser) . 
+> Wenn eine Datenquelle, die Sie verwenden möchten, hier nicht enthalten ist, können Sie die APP-Erkennung hinzufügen. Wählen Sie dazu beim Erstellen eines Berichts für **Datenquelle**die Option **Sonstiges** aus. Geben Sie dann den Namen der Datenquelle ein, die Sie hochladen möchten. Wir überarbeiten das Protokoll und informieren Sie, ob die Unterstützung für diesen Protokolltyp hinzugefügt wird. Alternativ können Sie [einen benutzerdefinierten Parser definieren](https://docs.microsoft.com/cloud-app-security/custom-log-parser) , der mit Ihrem Format übereinstimmt. 
   
-## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>Behandeln von Problemen bei Protokolldateien hochgeladen werden
+## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>Behandeln von Fehlern beim Hochladen von Protokolldateien
 
-Nach dem Web-Datenverkehr Protokolldateien hochladen, überprüfen Sie des Protokolls Governance, um festzustellen, ob Fehler aufgetreten sind. Wenn Fehler aufgetreten sind, anhand der Informationen in der folgenden Tabelle, um diesen Fehler zu beheben.
+Überprüfen Sie nach dem Hochladen der Webprotokolldateien im Steuerungsprotokoll, ob Fehler aufgetreten sind. Wenn Fehler auftreten, verwenden Sie die Informationen in der folgenden Tabelle, um diese Fehler zu beheben.
   
 |**Fehler**|**Beschreibung**|**Lösung**|
 |:-----|:-----|:-----|
-|Nicht unterstützte Dateityp  <br/> |Die Datei hochgeladen ist keine gültige Protokolldatei. Beispielsweise eine Bilddatei.  <br/> |Hochladen einer Text, Zip oder Gzip-Datei, die direkt aus Ihrer Firewall oder der Proxyserver exportiert wurde.  <br/> |
-|Interner Fehler  <br/> |Es wurde ein Fehler bei der internen Ressourcen erkannt.  <br/> |Klicken Sie auf **Wiederholen** , um den Vorgang erneut auszuführen.  <br/> |
-|Das Format stimmt nicht überein.  <br/> |Das Format, das Sie hochgeladen entspricht nicht das erwartete Format für diese Datenquelle.  <br/> |
-Stellen Sie sicher, dass das Protokoll nicht beschädigt ist. Vergleichen und match das Format in das Beispiel-Format auf der Seite "Hochladen" angezeigt. |
-|Transaktionen sind mehr als 90 Tage  <br/> |Alle Transaktion mehr als 90 Tage alt sind und daher werden ignoriert.  <br/> |Exportieren Sie ein neues Protokoll mit den jüngsten und Sie erneut hochladen.  <br/> |
-|Keine Transaktionen Cloud-Katalog-apps  <br/> |Keine Transaktion für alle erkannten Cloud-apps finden Sie im Protokoll.  <br/> |Stellen Sie sicher, dass das Protokoll ausgehenden Datenverkehr Informationen enthält.  <br/> |
-|Nicht unterstützte Protokolltyp  <br/> |Bei Auswahl **Datenquelle = andere (nicht unterstützte)**, das Protokoll wird nicht analysiert werden. Stattdessen wird es zur Überprüfung an das Team der [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas) technische gesendet.<br/> |Das [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas) technische Team erstellt einen dedizierten Parser für jede Datenquelle. Besonders beliebte-Datenquellen werden bereits unterstützt. Wenn eine nicht unterstützte Datenquelle hochgeladen wird, ist es überprüft und die Liste der potenziellen neuen Data Source Parser hinzugefügt.<br/> Wenn ein neuer Parser zu dem Feature hinzugefügt wird, ist eine Benachrichtigung in der Microsoft-Cloud-App-Sicherheit Anmerkungen zu dieser Version enthalten.  <br/> |
+|Nicht unterstützter Dateityp  <br/> |Die hochgeladene Datei ist keine gültige Protokolldatei. Beispiel: eine Bilddatei.  <br/> |Laden Sie eine Text-, ZIP-oder gzip-Datei hoch, die direkt aus Ihrer Firewall oder Ihrem Proxy exportiert wurde.  <br/> |
+|Interner Fehler  <br/> |Ein interner Ressourcenfehler wurde erkannt.  <br/> |Klicken Sie auf wieder **holen** , um die Aufgabe erneut auszuführen.  <br/> |
+|Das Protokollformat stimmt nicht überein  <br/> |Das hochgeladene Protokollformat stimmt nicht mit dem erwarteten Protokollformat für diese Datenquelle überein.  <br/> |
+Stellen Sie sicher, dass das Protokoll nicht beschädigt ist. Vergleichen Sie das Protokolldateiformat, und passen Sie es dem auf der Seite hochladen angezeigten Beispielformat an. |
+|Transaktionen sind mehr als 90 Tage alt  <br/> |Alle Transaktionen sind mehr als 90 Tage alt und werden daher ignoriert.  <br/> |Exportieren Sie ein neues Protokoll mit den letzten Ereignissen, und laden Sie es erneut hoch.  <br/> |
+|Keine Transaktionen zu Katalog Cloud-apps  <br/> |Im Protokoll werden keine Transaktionen zu erkannten Cloud-apps gefunden.  <br/> |Stellen Sie sicher, dass das Protokoll ausgehende Datenverkehrsinformationen enthält.  <br/> |
+|Nicht unterstützter Protokolltyp  <br/> |Wenn Sie **Datenquelle = Sonstiges (nicht unterstützt)** auswählen, wird das Protokoll nicht analysiert. Stattdessen wird es zur Überarbeitung an das [Microsoft Cloud App Security](https://aka.ms/whatiscas) Technical-Team gesendet.<br/> |Das [Microsoft Cloud App Security](https://aka.ms/whatiscas) Technical Team erstellt für jede Datenquelle einen dedizierten Parser. Die beliebtesten Datenquellen werden bereits unterstützt. Wenn eine nicht unterstützte Datenquelle hochgeladen wird, wird Sie überprüft und zur Liste der potenziellen neuen Datenquellen Parser hinzugefügt.<br/> Wenn dem Feature ein neuer Parser hinzugefügt wird, ist eine Benachrichtigung in den Microsoft Cloud App Security Release Notes enthalten.  <br/> |
    
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Lesen und Ausführen einer Aktion Warnungen](review-office-365-cas-alerts.md)
+- [Überarbeiten und Aktionen für Warnungen](review-office-365-cas-alerts.md)
     
-- [Erstellen von Berichten für app-Ermittlung](create-app-discovery-reports-in-ocas.md)
+- [Erstellen von App-Ermittlungs Berichten](create-app-discovery-reports-in-ocas.md)
     
-- [Überprüfen der Ergebnisse der app-Ermittlung](review-app-discovery-findings-in-ocas.md)
+- [Überarbeiten der Ergebnisse der APP-Suche](review-app-discovery-findings-in-ocas.md)
     
-- [Überprüfen Sie Ihre Aktivitäten Auslastung für Office 365-Cloud-App-Sicherheit](utilization-activities-for-ocas.md)
+- [Überwachen Ihrer Nutzungsaktivitäten für Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 

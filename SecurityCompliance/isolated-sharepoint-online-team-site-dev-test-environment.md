@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: 0aa5e6e47344134b1e103fb287f627afd2808af6
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345817"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217135"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -149,7 +149,7 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
   
-1. Mithilfe eines Browsers entweder auf den lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierten Enterprise-Konfiguration), melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit Ihrer globalen Administratorkonto an.
+1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit ihrem globalen Administratorkonto an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -217,7 +217,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
     
-3. Melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit den Designer führen Kontonamen und das zugehörige Kennwort.
+3. Melden Sie sich beim Office 365-Portal[https://portal.office.com](https://portal.office.com)() mithilfe des Lead Designer-Kontonamens und des Kennworts an.
     
 4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -247,7 +247,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
   
-1. Melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit der Entwicklung VP Kontoname und das zugehörige Kennwort.
+1. Melden Sie sich beim Office 365-Portal[https://portal.office.com](https://portal.office.com)() mit dem Development VP-Kontonamen und dem Kennwort an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -263,7 +263,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
     
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
   
-1. Melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit den Kontonamen des Benutzers 3 und das zugehörige Kennwort.
+1. Melden Sie sich beim Office 365-Portal[https://portal.office.com](https://portal.office.com)() mit dem Kontonamen und dem Kennwort für den Benutzer 3 an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     

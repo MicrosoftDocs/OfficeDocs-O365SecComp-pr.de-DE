@@ -1,78 +1,78 @@
 ---
-title: Vorbereiten der Daten für Office 365 erweiterte eDiscovery
+title: Vorbereiten von Daten für Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Hier erfahren Sie, wie Sie die Office 365-Sicherheit &amp; Compliance Center zu Office 365-Daten für die Analyse mit Office 365 erweiterte eDiscovery vorzubereiten. '
-ms.openlocfilehash: cf0c76b0c274121da435de7829c769abf5111cab
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informationen zur Verwendung des Office 365 Security &amp; Compliance Center zum Vorbereiten von Office 365-Daten für die Analyse mit Office 365 Advanced eDiscovery. '
+ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529845"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218795"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Vorbereiten der Daten für Office 365 erweiterte eDiscovery
+# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Vorbereiten von Daten für Office 365 Advanced eDiscovery
 
-In diesem Thema wird beschrieben, wie die Ergebnisse einer Inhaltssuche in einem Fall erweiterte eDiscovery geladen werden. 
+In diesem Thema wird beschrieben, wie Sie die Ergebnisse einer Inhaltssuche in einen Fall in Advanced eDiscovery laden. 
   
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten der Daten von Office 365 für erweiterte eDiscovery
+## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten von Office 365-Daten für erweiterte eDiscovery
 
-Zum Analysieren von Daten mit erweiterten eDiscovery können Sie die Ergebnisse einer Content-Suche, die Sie in der Office 365-Sicherheit ausgeführt &amp; Compliance Center (auf der Seite **Inhaltssuche** in die Office 365-Sicherheit aufgeführten &amp; Compliance Center) oder eine Suche mit einem eDiscovery-Fall verknüpft ist (auf der Seite **eDiscovery** in das Wertpapier aufgeführten &amp; Compliance Center). 
+Um Daten mit Advanced eDiscovery zu analysieren, können Sie die Ergebnisse einer Inhaltssuche verwenden, die Sie im Office 365 Security &amp; Compliance Center (auf der Seite " **Inhaltssuche** " im Office 365 Security &amp; Compliance Center) ausführen oder eine Suche mit einem eDiscovery-Fall verknüpft (auf der **eDiscovery** -Seite im Security &amp; Compliance Center aufgeführt). 
   
-Die ausführliche Schritte zur Vorbereitung der Suchergebnisse für die Analyse in erweiterten eDiscovery finden Sie unter [Vorbereiten der Suchergebnisse für Office 365 erweiterte eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
+Die detaillierten Schritte zum Vorbereiten der Suchergebnisse für die Analyse in Advanced eDiscovery finden Sie unter [Prepare Search results for Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> Wenn Sie Daten außerhalb von Office 365 haben und möchten, damit Sie vorbereiten und im erweiterten eDiscovery, eine finden Sie unter analysieren können in Office 365 importieren [Übersicht über das Importieren von PST-Dateien zu Office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) und [Archivierung Drittanbieter - Daten in Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> Wenn Sie Daten außerhalb von Office 365 haben und Sie in Office 365 importieren möchten, damit Sie Sie in Advanced eDiscovery vorbereiten und analysieren können, finden Sie unter [Übersicht über das Importieren von PST-Dateien in office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) und das Archivieren von [drittanbieterdaten in Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918). 
   
-## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Schritt 2: Suche Ergebnisdaten Laden in einem Fall erweiterte eDiscovery
+## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>Schritt 2: Laden der Suchergebnis Daten in einen Fall in Advanced eDiscovery
 
-Wenn Sie die Suchergebnisse in das Wertpapier vorbereitet haben &amp; Compliance Center für die Analyse, im nächste Schritt werden die Suchergebnisse in einem Fall erweiterte eDiscovery geladen. Ausführlichere Informationen finden Sie unter [Ausführen des Moduls Prozess](run-the-process-module-in-advanced-ediscovery.md).
+Nachdem Sie die Suchergebnisse im Security &amp; Compliance Center für die Analyse vorbereitet haben, besteht der nächste Schritt darin, die Suchergebnisse in einen Fall in Advanced eDiscovery zu laden. Ausführlichere Informationen finden Sie unter [Run the Process Module](run-the-process-module-in-advanced-ediscovery.md).
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Konto arbeiten oder Schule Office 365.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. In das Wertpapier &amp; Compliance Center, klicken Sie auf **Suche &amp; Untersuchung** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
+3. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
     
-4. Klicken Sie neben die Groß-/Kleinschreibung, die Sie Daten in in erweiterten eDiscovery laden möchten **Öffnen** . 
+4. Klicken Sie neben dem Fall, in den Sie Daten laden möchten, in Advanced eDiscovery auf **Öffnen** . 
     
-5. Klicken Sie auf **der Homepage für den Fall** **Erweiterte eDiscovery**auf. 
+5. Klicken Sie auf der Seite **Start** für den Fall auf **Advanced eDiscovery**. 
     
-    ![Klicken Sie auf Wechseln zu erweiterten eDiscovery So öffnen Sie die Groß-/Kleinschreibung in erweiterten eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Klicken Sie auf zu Advanced eDiscovery wechseln, um den Fall in Advanced eDiscovery zu öffnen.](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    **Herstellen einer Verbindung mit erweiterten eDiscovery** Statusanzeige wird angezeigt. Wenn Sie erweiterte eDiscovery verbunden sind, wird eine Liste der Container auf der Setupseite für die Groß-/Kleinschreibung angezeigt. 
+    Die Statusleiste **Verbinden mit Advanced eDiscovery** wird angezeigt. Wenn Sie mit Advanced eDiscovery verbunden sind, wird auf der Setup Seite für den Fall eine Liste der Container angezeigt. 
     
-    ![Die Groß-/Kleinschreibung wird in erweiterten eDiscovery angezeigt.](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![Die Groß-/Kleinschreibung wird in Advanced eDiscovery angezeigt.](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Diese Container darstellen der Suchergebnisse, die Sie für die Analyse in erweiterten eDiscovery in Schritt 1 vorbereitet haben. Beachten Sie, dass der Name des Containers den gleichen Namen wie die Content-Suche in der Groß-/Kleinschreibung in das Wertpapier hat &amp; Compliance Center. Der Container in der Liste sind diejenigen aus, denen Sie vorbereitet haben. Wenn ein anderer Benutzer die Suchergebnisse für die erweiterte eDiscovery vorbereitet, wird nicht die entsprechenden Container in der Liste enthalten. 
+     Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 1 für die Analyse in Advanced eDiscovery vorbereitet haben. Beachten Sie, dass der Name des Containers den gleichen Namen wie die Inhaltssuche im Fall im Security &amp; Compliance Center hat. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen. 
     
-6. Um die Suche Ergebnisdaten aus einem Container in der Anfrage in erweiterten eDiscovery zu laden, wählen Sie einen Container, und klicken Sie dann auf **Prozess**.
+6. Wenn Sie die Suchergebnis Daten aus einem Container in den Fall in Advanced eDiscovery laden möchten, wählen Sie einen Container aus, und klicken Sie dann auf **verarbeiten**.
     
-Nachdem die Suchergebnisse aus der Sicherheit &amp; Compliance Center werden im nächsten Schritt wird die Verwendung der Tools in erweiterten eDiscovery zu analysieren und die Daten, die für die Groß-/Kleinschreibung relevant ist ausgemerzte zu in erweiterten eDiscovery-Fall hinzugefügt. 
+Nachdem die Suchergebnisse aus dem Security &amp; Compliance Center zu dem Fall in Advanced eDiscovery hinzugefügt wurden, besteht der nächste Schritt darin, die Tools in Advanced eDiscovery zum Analysieren und Ausmerzen der für den Fall relevanten Daten zu verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Einrichten von Benutzern und Anfragen](set-up-users-and-cases-in-advanced-ediscovery.md)
+[Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md)
   
-[Analysieren von Daten der Groß-/Kleinschreibung](analyze-case-data-with-advanced-ediscovery.md)
+[Analysieren von Falldaten](analyze-case-data-with-advanced-ediscovery.md)
   
-[Verwalten von Relevanz setup](manage-relevance-setup-in-advanced-ediscovery.md)
+[Verwalten des Relevanz-Setups](manage-relevance-setup-in-advanced-ediscovery.md)
   
-[Mithilfe des Moduls Relevanz](use-relevance-in-advanced-ediscovery.md)
+[Verwenden des Relevanzmoduls](use-relevance-in-advanced-ediscovery.md)
   
-[Exportieren von Daten der Groß-/Kleinschreibung](export-case-data-in-advanced-ediscovery.md)
+[Exportieren von Falldaten](export-case-data-in-advanced-ediscovery.md)
 

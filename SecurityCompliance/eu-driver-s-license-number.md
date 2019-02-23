@@ -1,31 +1,31 @@
 ---
-title: EU Führerscheinnummer
+title: EU-Führerscheinnummer
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
-description: In diesem Thema wird eine Data Loss Prevention (DLP) Richtlinie sieht für Wenn vertrauliche Informationen vom Typ der EU-Treiber Lizenz Zahl erkannt. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 065684249f9766d567c63e6b8170d36f56692e45
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Treiber Lizenznummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529414"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217745"
 ---
-# <a name="eu-drivers-license-number"></a>EU Führerscheinnummer
+# <a name="eu-drivers-license-number"></a>EU-Führerscheinnummer
 
-In diesem Thema wird eine Data Loss Prevention (DLP) Richtlinie sieht für Wenn vertrauliche Informationen vom Typ der EU-Treiber Lizenz Zahl erkannt. Dieses Typs vertrauliche Informationen definiert unterschiedliche Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Treiber Lizenznummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
   
 ## <a name="austria"></a>Österreich
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+Acht Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -39,9 +39,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_austria_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_austria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_austria_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_austria_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
 <!-- EU Driver's License Number -->
@@ -54,18 +54,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_austria_eu_driver'S_license_number**|
+|**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> des Treibers-Lizenz  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/>  Führerscheinnummer ein  <br/> Dlno #  <br/> fuhrerschein  <br/> Fuhrerschein Republik osterreich  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> Führerschein  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/>  Führerscheinnummer  <br/> dlno #  <br/> Fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
    
 ## <a name="belgium"></a>Belgien
 
 ### <a name="format"></a>Format
 
-10 Ziffern ohne Leerzeichen und Trennzeichen
+10 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -79,9 +79,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_belgium_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_belgium_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_belgium_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_belgium_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -94,18 +94,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords__belgium_eu_driver'S_license_number**|
+|**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> Führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr.  <br/> Fuehrerschein-Nr.  <br/> Fuehrerschein-Nr.  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> Führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> Fuehrerschein-Nr  <br/> Fuehrerschein-Nr  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarien
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -119,9 +119,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_bulgaria_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_bulgaria_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_bulgaria_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_bulgaria_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -134,18 +134,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_bulgaria_eu_driver'S_license_number**|
+|**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> СВИДЕТЕЛСТВО ЗА УПРАВЛЕНИЕ НА МПС  <br/> СВИДЕТЕЛСТВО ЗА УПРАВЛЕНИЕ НА МОТОРНО ПРЕВОЗНО СРЕДСТВО  <br/> СУМПС  <br/> ШОФЬОРСКА КНИЖКА  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Kroatien
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+Acht Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -159,9 +159,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_croatia_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_croatia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_croatia_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_croatia_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -174,18 +174,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_croatia_eu_driver'S_license_number**|
+|**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Vozačka dozvola  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>Zypern
 
 ### <a name="format"></a>Format
 
-12 Ziffern ohne Leerzeichen und Trennzeichen
+12 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -199,9 +199,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_cyprus_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_cyprus_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_cyprus_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_cyprus_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -213,14 +213,14 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_cyprus_eu_driver'S_license_number**|
+|**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> ΆΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
-## <a name="czech-republic"></a>Tschechische Republik
+## <a name="czech-republic"></a>Tschechien
 
 ### <a name="format"></a>Format
 
@@ -230,7 +230,7 @@ Zwei Buchstaben gefolgt von sechs Ziffern
 
 Acht Buchstaben und Ziffern:
   
-- Zwei Buchstaben (nicht Groß-/Kleinschreibung)
+- Zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet)
     
 - Ein Leerzeichen (optional) 
     
@@ -244,9 +244,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_czech_republic_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_czech_republic_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_czech_republic_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_czech_republic_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -259,18 +259,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_czech_republic_eu_driver'S_license_number**|
+|**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Řidičský prúkaz  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Dänemark
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+Acht Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -284,9 +284,9 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_denmark_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_denmark_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_denmark_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_denmark_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -299,12 +299,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_denmark_eu_driver'S_license_number**|
+|**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estland
 
@@ -316,7 +316,7 @@ Zwei Buchstaben gefolgt von sechs Ziffern
 
 Zwei Buchstaben und sechs Ziffern:
   
--  Die Buchstaben "ET" (nicht Groß-/Kleinschreibung) 
+-  Die Buchstaben "ET" (Groß-/Kleinschreibung wird nicht beachtet) 
     
 - Sechs Ziffern
     
@@ -328,9 +328,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_estonia_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_estonia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_estonia_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_estonia_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -342,12 +342,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_estonia_eu_driver'S_license_number**|
+|**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> 
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> 
 permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finnland
@@ -358,7 +358,7 @@ permis de conduire  <br/> |
   
 ### <a name="pattern"></a>Muster
 
-10 Ziffern, die einen Bindestrich enthält:
+10 Ziffern mit einem Bindestrich:
   
 -  Sechs Ziffern 
     
@@ -374,9 +374,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_finland_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_finland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_finland_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_finland_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -388,26 +388,26 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_finland_eu_driver'S_license_number**|
+|**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> ajokortti  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>Frankreich
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Französische Führerscheinnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "Frankreich Driver es License Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Deutschland
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Deutsche Führerscheinnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "German Driver es License Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Griechenland
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -421,9 +421,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_greece_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_greece_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_greece_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_greece_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -435,12 +435,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_greece_eu_driver'S_license_number**|
+|**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|DlL-  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> ΔΕΙΑ ΟΔΉΓΗΣΗΣ  <br/> Adeia odigisis  <br/> |
+|DlL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
 ## <a name="hungary"></a>Ungarn
 
@@ -452,7 +452,7 @@ Zwei Buchstaben gefolgt von sechs Ziffern
 
 Zwei Buchstaben und sechs Ziffern:
   
--  Zwei Buchstaben (nicht Groß-/Kleinschreibung) 
+-  Zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
     
 - Sechs Ziffern
     
@@ -464,9 +464,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_hungary_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_hungary_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_hungary_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_hungary_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -478,18 +478,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_hungary_eu_driver'S_license_number**|
+|**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Vezetoi engedely  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irland
 
 ### <a name="format"></a>Format
 
-Sechs Ziffern, gefolgt von vier Buchstaben
+Sechs Ziffern gefolgt von vier Buchstaben
   
 ### <a name="pattern"></a>Muster
 
@@ -497,7 +497,7 @@ Sechs Ziffern und vier Buchstaben:
   
 - Sechs Ziffern
     
-- Vier Buchstaben (nicht Groß-/Kleinschreibung)
+- Vier Buchstaben (Groß-/Kleinschreibung nicht beachtet)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -507,9 +507,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_ireland_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_ireland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_ireland_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_ireland_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -521,16 +521,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_ireland_eu_driver'S_license_number**|
+|**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Ceadúnas tiomána  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Ceadúnas Tiomána  <br/> |
    
 ## <a name="italy"></a>Italien
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Italien Führerscheinnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "Italy Driver es License Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="latvia"></a>Lettland
 
@@ -542,7 +542,7 @@ Drei Buchstaben, gefolgt von sechs Ziffern
 
 Drei Buchstaben und sechs Ziffern:
   
--  Drei Buchstaben (nicht Groß-/Kleinschreibung) 
+-  Drei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
     
 - Sechs Ziffern
     
@@ -554,9 +554,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_latvia_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_latvia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_latvia_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_latvia_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -568,18 +568,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_latvia_eu_driver'S_license_number**|
+|**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Autovadītāja apliecība  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Litauen
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen und Trennzeichen
+Acht Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -593,9 +593,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_lithuania_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_lithuania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_lithuania_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_lithuania_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -607,18 +607,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_lithuania_eu_driver'S_license_number**|
+|**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Vairuotojo pažymėjimas  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Format
 
-Sechs Ziffern ohne Leerzeichen und Trennzeichen
+Sechs Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -632,9 +632,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_luxemburg_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_luxemburg_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_luxemburg_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_luxemburg_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -646,24 +646,24 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_luxemburg_eu_driver'S_license_number**|
+|**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Fahrerlaubnis  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malta
 
 ### <a name="format"></a>Format
 
-Kombination von zwei Zeichen und sechs Ziffern in dem angegebenen Muster
+Kombination aus zwei Zeichen und sechs Ziffern im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Kombination von zwei Zeichen und sechs Ziffern:
+Kombination aus zwei Zeichen und sechs Ziffern:
   
-- Zwei Zeichen (Ziffern oder Buchstaben, nicht die Groß-/Kleinschreibung beachtet)
+- Zwei Zeichen (Ziffern oder Buchstaben, keine Groß-/Kleinschreibung)
     
 - Ein Leerzeichen (optional) 
     
@@ -681,9 +681,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_malta_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_malta_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_malta_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_malta_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
 <!-- EU Driver's License Number -->
@@ -695,18 +695,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_malta_eu_driver'S_license_number**|
+|**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Liċenzja Aufgaben-sewqan  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Liċenzja TAS-Sewqan  <br/> |
    
 ## <a name="netherlands"></a>Niederlande
 
 ### <a name="format"></a>Format
 
-10 Ziffern ohne Leerzeichen und Trennzeichen
+10 Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -720,9 +720,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_netherlands_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_netherlands_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_netherlands_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_netherlands_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -734,19 +734,19 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_netherlands_eu_driver'S_license_number**|
+|**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> 
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> 
 permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Polen
 
 ### <a name="format"></a>Format
 
-14 Stellen mit 2 Schrägstriche
+14 Ziffern mit 2 Schrägstrichen
   
 ### <a name="pattern"></a>Muster
 
@@ -770,9 +770,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_poland_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_poland_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_poland_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_poland_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -784,24 +784,24 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_poland_eu_driver'S_license_number**|
+|**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Prawo jazdy  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben gefolgt von einem sieben Zahlen in dem angegebenen Muster
+Zwei Buchstaben gefolgt von sieben Zahlen im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben gefolgt von sieben Ziffern mit Sonderzeichen:
+Zwei Buchstaben gefolgt von sieben Zahlen mit Sonderzeichen:
   
--  Zwei Buchstaben (nicht Groß-/Kleinschreibung) 
+-  Zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet) 
     
 - Ein Bindestrich 
     
@@ -819,9 +819,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_portugal_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_portugal_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_portugal_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_portugal_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -833,12 +833,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_portugal_eu_driver'S_license_number**|
+|**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Carteira de motorista  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Rumänien
 
@@ -848,9 +848,9 @@ Ein Zeichen, gefolgt von acht Ziffern
   
 ### <a name="pattern"></a>Muster
 
-Ein Zeichen, gefolgt von acht Stellen:
+Ein Zeichen, gefolgt von acht Ziffern:
   
--  Eine (nicht Groß-/Kleinschreibung) Buchstabe oder Zahl 
+-  Ein Buchstabe (ohne Unterscheidung von Groß-/Kleinschreibung) oder Ziffer 
     
 - Acht Ziffern
     
@@ -862,9 +862,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_romania_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_romania_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_romania_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_romania_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -876,12 +876,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_romania_eu_driver'S_license_number**|
+|**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Permis de conducere  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>Slowakei
 
@@ -893,7 +893,7 @@ Ein Zeichen, gefolgt von sieben Ziffern
 
 Ein Zeichen, gefolgt von sieben Ziffern
   
-- Eine (nicht Groß-/Kleinschreibung) Buchstabe oder Zahl
+- Ein Buchstabe (ohne Unterscheidung von Groß-/Kleinschreibung) oder Ziffer
     
 -  Sieben Ziffern 
     
@@ -905,9 +905,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovakia_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_slovakia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_slovakia_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_slovakia_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -919,18 +919,18 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_slovakia_eu_driver'S_license_number**|
+|**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Vodičský preukaz  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Slowenien
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Trennzeichen
+Neun Ziffern ohne Leerzeichen und Abgrenzungen
   
 ### <a name="pattern"></a>Muster
 
@@ -944,9 +944,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_slovenia_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_slovenia_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_slovenia_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_slovenia_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -958,26 +958,26 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_slovenia_eu_driver'S_license_number**|
+|**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> Vozniško dovoljenje  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozniško Dovoljenje  <br/> |
    
 ## <a name="spain"></a>Spanien
 
 ### <a name="format"></a>Format
 
-Acht Ziffern, gefolgt von einem Zeichen
+Acht Ziffern gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern, gefolgt von einem Zeichen:
+Acht Ziffern gefolgt von einem Zeichen:
   
 -  Acht Ziffern 
     
-- Eine Ziffern oder Buchstaben (nicht Groß-/Kleinschreibung)
+- Eine Ziffer oder ein Buchstaben (Groß-/Kleinschreibung nicht beachtet)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -987,9 +987,9 @@ Ja
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_spain_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Die Funktion `Func_spain_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_spain_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_spain_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1001,23 +1001,23 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_spain_eu_driver'S_license_number**|
+|**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|Dlno #  <br/> dl#  <br/> Treiber Lic.  <br/> Treiber-Lizenz  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> des Treibers-Lizenz  <br/> driver's license  <br/> driving licence
-  <br/> gesteuerte Lizenz  <br/> Anzahl der Treiber-Lizenz  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber Lizenz Anzahl  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer  <br/> Anzahl der lenken-Lizenz  <br/> Führerscheinnummer ein  <br/> gesteuerter zulassen  <br/> Anzahl der steuernde zulassen  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> Número Licencia conducir  <br/> Número de Carnet de conducir  <br/> Número Carnet conducir  <br/> Licencia conducir  <br/> Número de Permiso de conducir  <br/> Número de Permiso conducir  <br/> Número Permiso conducir  <br/> Permiso conducir  <br/> Licencia de sein  <br/> El Carnet de conducir  <br/> Carnet conducir  <br/> |
+|dlno #  <br/> dl#  <br/> Treiber lic.  <br/> Treiber Lizenz  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> Führerschein  <br/> driver's license  <br/> driving licence
+  <br/> Führerschein  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Fahrerlaubnis  <br/> Führerscheinnummer  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> número licencia Conducir  <br/> número de carnet de Conducir  <br/> número Carnet Conducir  <br/> licencia Conducir  <br/> número de Permiso de Conducir  <br/> número de Permiso Conducir  <br/> número Permiso Conducir  <br/> Permiso Conducir  <br/> licencia de Manejo  <br/> El Carnet de Conducir  <br/> Carnet Conducir  <br/> |
    
 ## <a name="sweden"></a>Schweden
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern, die einen Bindestrich enthält
+Zehn Ziffern mit einem Bindestrich
   
 ### <a name="pattern"></a>Muster
 
-Zehn Ziffern, die einen Bindestrich enthält:
+Zehn Ziffern mit einem Bindestrich:
   
 -  Sechs Ziffern 
     
@@ -1033,9 +1033,9 @@ Nein
 
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Der reguläre Ausdruck `Regex_sweden_eu_driver's_license_number` sucht nach Inhalten, die dem Muster entspricht. 
+- Der reguläre Ausdruck `Regex_sweden_eu_driver's_license_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
-- Ein Schlüsselwort aus `Keywords_sweden_eu_driver's_license_number` gefunden wird. 
+- Ein Schlüsselwort `Keywords_sweden_eu_driver's_license_number` aus wurde gefunden. 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1047,16 +1047,16 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity> 
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
-|**Keywords_sweden_eu_driver'S_license_number**|
+|**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Anzahl der Treiber-Lizenz  <br/> Treiber-Lizenz  <br/> Treiber Lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Führerscheinnummer  <br/> Lizenznummer  <br/> Führerscheinnummer ein  <br/> Dlno #  <br/> körkort  <br/> |
+|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> körkort  <br/> |
    
-## <a name="uk"></a>GROßBRITANNIEN
+## <a name="uk"></a>UK
 
-Weitere Informationen hierzu finden Sie im Abschnitt "Großbritannien Führerscheinnummer" in [welche Arten der vertraulichen Informationen gesucht](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "UK Driver es License Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Siehe auch
 

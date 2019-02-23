@@ -1,12 +1,12 @@
 ---
-title: Analysieren von Daten in einem Arbeitssatz in erweiterten eDiscovery (Preview)
+title: Analysieren von Daten in einem Arbeitssatz in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ae024f423ac9b4ab9210ddfab519093a9fee3e42
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695141"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216795"
 ---
-# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analysieren von Daten in einem Arbeitssatz in erweiterten eDiscovery (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analysieren von Daten in einem Arbeitssatz in Advanced eDiscovery (Preview)
 
-Wenn die Anzahl der gesammelten Dokumente umfangreich ist, kann es nur schwer alle diese überprüfen sein. Erweiterte eDiscovery (Preview) bietet eine Reihe von Tools zum Analysieren der Dokumente zum Verringern der Lautstärke für Dokumente ohne Verlust in Informationen überprüft werden und auf die Dokumente in einer wirkungsvoll zu organisieren. Weitere Informationen zu diesen Funktionen finden Sie unter:
+Wenn die Anzahl der gesammelten Dokumente groß ist, kann es schwierig sein, Sie alle zu überarbeiten. Advanced eDiscovery (Preview) bietet eine Reihe von Tools, mit denen die Dokumente analysiert werden können, um den Umfang der zu überprüfenden Dokumente ohne Verlust an Informationen zu reduzieren und Sie bei der Organisation der Dokumente auf kohärente Weise zu unterstützen. Weitere Informationen zu diesen Funktionen finden Sie unter:
 
 - [Erkennen von Quasiduplikaten](near-duplicates.md)
 - [E-Mail-Threading](email-threading.md)
@@ -31,29 +31,29 @@ Wenn die Anzahl der gesammelten Dokumente umfangreich ist, kann es nur schwer al
 
 So analysieren Sie Daten in einem Arbeitssatz:
 
-1. Konfigurieren Sie Einstellungen für den Fall Analytics. Weitere Informationen finden Sie unter [Configure Search und-Analyse Settings](configure-search-analytics-settings.md).
-2. Öffnen Sie das Workingset Sie analysieren möchten.
-3. Wechseln Sie zu "Arbeitssatzes verwalten".
-4. Klicken Sie auf "Analysieren".
+1. Konfigurieren Sie Analyse Einstellungen für Ihren Fall. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-analytics-settings.md).
+2. Öffnen Sie den zu analysierenden Arbeitssatz.
+3. Wechseln Sie zu "Arbeitsmappe verwalten".
+4. Klicken Sie auf "analysieren".
 
 Sie können den Fortschritt der Analyse auf der Registerkarte Aufträge in Ihrem Fall überprüfen.
 
- Nach Abschluss der Analyse können Sie Analytics-Bericht anzeigen, ausgeführte Abfragen innerhalb Ihrer Arbeit festlegen für Ausgaben der Analyse (für Weitere Informationen finden Sie unter [Abfrage innerhalb Ihrer Arbeit festgelegt](working-set-search.md)), und finden Sie unter Verwandte Dokumente eines bestimmten Dokuments (für Weitere Informationen finden Sie unter [ So überprüfen Sie Daten in Arbeitssatzes](reviewing-data-in-working-set.md)).
+ Nach Abschluss der Analyse können Sie Analyseberichte anzeigen, Abfragen in Ihrem Workingset für die Ergebnisse der Analyse ausführen (Weitere Informationen finden Sie unter [Abfrage innerhalb des Arbeitssatzes](working-set-search.md)) und weitere Informationen zu einem bestimmten Dokument anzeigen (mehr dazu finden Sie unter [ ÜberPrüfen von Daten im Arbeitssatz](reviewing-data-in-working-set.md)).
 
-## <a name="analytics-report"></a>Analytics-Bericht
+## <a name="analytics-report"></a>Analysebericht
 
-So zeigen Sie Analytics-Bericht für Ihre Arbeit an:
+So zeigen Sie einen Analysebericht für Ihren Arbeitssatz an
 
-1. Öffnen Sie das Workingset.
-2. Wechseln Sie zu "Arbeitssatzes verwalten".
-3. Klicken Sie auf "Report".
+1. Öffnen Sie Ihre Arbeitsmappe.
+2. Wechseln Sie zu "Arbeitsmappe verwalten".
+3. Klicken Sie auf "Bericht".
 
-Der Bericht hat vier Komponenten aus Analyse:
+Der Bericht enthält vier Komponenten aus der Analyse:
 
-- **Strukturplan** - wie viele e-Mail-Nachrichten, Anlagen und weit Dokumente wurden in den Arbeitsseiten gefunden.
+- **Aufteilung** -wie viele e-Mails, Anlagen und lose Dokumente im Arbeitssatz gefunden wurden.
 
-- **Dokumente (ausgenommen Anlagen)** : wie viele weit Dokumente Pivot-Elemente, in der Nähe Duplikate ein Pivot oder exakt mit einem anderen Dokument eindeutig sind.
+- **Dokumente (ausgenommen Anlagen)** -wie viele Lose Dokumente waren Pivots, eindeutige nahe Duplikate eines Pivots oder ein genaues Duplikat eines anderen Dokuments.
 
-- **E-Mails** - wie viele-e-Mails Inclusives, inklusive Kopien, inklusive Nachteile oder keine der oben genannten wurden.
+- **E-Mails** -wie viele e-Mails inklusive, einschließlich Kopien, inklusive minus, oder keines der obigen.
 
-- **Anlagen** – wie viele e-Mail-Anlagen wurden eindeutige oder eine andere e-Mail-Anlage innerhalb des Arbeitssatzes dupliziert.
+- **Attachments** -wie viele e-Mail-Anlagen waren eindeutig oder Duplikate einer anderen e-Mail-Anlage innerhalb des Arbeitssatzes.

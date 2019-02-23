@@ -5,19 +5,19 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Überprüfen der APP-Ermittlungsberichte in Office 365 Cloud-App-Sicherheit kann Ihnen helfen, mehr darüber zu erfahren, wie Personen in Ihrer Organisation Cloud-Apps verwenden. Nachdem Sie die APP-Ermittlungsberichte mithilfe von Protokolldateien aus Ihren Firewalls und Proxys erstellt haben, überarbeiten Sie die Ergebnisse im Dashboard App Discovery.
-ms.openlocfilehash: fa5ab7c6cd734feb26878cf1a97f7ce708aa1478
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087334"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216255"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security
   

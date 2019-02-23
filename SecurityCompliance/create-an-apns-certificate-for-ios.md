@@ -1,15 +1,15 @@
 ---
-title: Erstellen Sie ein Zertifikat APNs für iOS-Geräte
+title: Erstellen eines APNs-Zertifikats für iOS-Geräte
 ms.author: brendonb
 author: brendonb
 manager: laurawi
 ms.date: 8/5/2016
 ms.audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 f1_keywords:
 - O365M_APNCertMDM
 - O365E_APNCertMDM
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -17,58 +17,58 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
-description: Zum Verwalten von iOS-Geräte wie iPad und iPhones in Verwaltung mobiler Geräte für Office 365 folgendermaßen Sie vor, um ein Zertifikat APNs zuerst zu erstellen.
-ms.openlocfilehash: 28e8888d7dd57c3052cdcb5994725f11a5f0445f
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Um iOS-Geräte wie iPad und iPhones in der Verwaltung mobiler Geräte für Office 365 zu verwalten, führen Sie die folgenden Schritte aus, um zuerst ein APNs-Zertifikat zu erstellen.
+ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272050"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220455"
 ---
-# <a name="create-an-apns-certificate-for-ios-devices"></a>Erstellen Sie ein Zertifikat APNs für iOS-Geräte
+# <a name="create-an-apns-certificate-for-ios-devices"></a>Erstellen eines APNs-Zertifikats für iOS-Geräte
 
- Zum Verwalten von iOS-Geräte wie iPad und iPhones in Verwaltung mobiler Geräte für Office 365 müssen Sie ein Zertifikat APNs erstellen. 
+ Um iOS-Geräte wie iPad und iPhones in der Verwaltung mobiler Geräte für Office 365 zu verwalten, müssen Sie ein APNs-Zertifikat erstellen. 
   
-Zu diesem Zweck führen Sie die Schritte auf der Seite Verwaltungsportals über den Link **Einrichten** . (Wechseln Sie zu **Sicherheit &amp; Compliance Center** \> **Sicherheitsrichtlinien** \> **Gerätemanagement** \> **Einstellungen verwalten**.)
+Führen Sie dazu die Schritte aus dem Link **Einrichten** auf der Portalseite aus. (Gehen Sie **zu &amp; Security Compliance Center** \> - **Sicherheitsrichtlinien** \> **Geräteverwaltung** \> **Einstellungen verwalten**.)
   
-![Richten Sie die Verwaltung von mobilen Geräten erforderlich und empfohlene Schritte](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
+![Einrichten der erforderlichen und empfohlenen Schritte für die Verwaltung mobiler Geräte](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
   
-1. Wählen Sie neben **Konfigurieren eines Zertifikats APNs für iOS-Geräte** **Einrichten**.
+1. Wählen Sie neben **Konfigurieren eines APNs-Zertifikats für IOS-Geräte**die Option **Einrichten**aus.
     
-2. Wählen Sie **die CSR-Datei herunterladen** und speichern Sie die zertifikatanforderung für den signierenden um an einer Stelle auf dem Computer, den Sie problemlos wiederfinden. 
+2. Wählen Sie **CSR-Datei herunterladen** aus, und speichern Sie die Zertifikatsignaturanforderung auf einem Speicherort auf Ihrem Computer, den Sie sich merken werden. 
     
-    ![Im Dialogfeld APN Zertifikat installieren](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
+    ![Installieren des APN-Zertifikats (Dialogfeld)](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
   
-3. Wählen Sie **Weiter**aus.
+3. Wählen Sie **Weiter** aus.
     
-4. Erstellen Sie ein Zertifikat APN.
+4. Erstellen Sie ein APN-Zertifikat.
     
-  - Wählen Sie **Apple APNS Portal** , um die Apple-Push Zertifikate Portal zu öffnen. 
+  - Wählen Sie **Apple APNS-Portal** aus, um das Apple Push Certificates-Portal zu öffnen. 
     
-    ![Installieren von APN Cert Benachrichtigungsdialogfeld mit Apple APNS Portal ausgewählt](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
+    ![Installieren des APN-Benachrichtigungs-CERT-Dialogs mit ausgewähltem Apple APNS-Portal](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
   
-  - Melden Sie sich mit einem Apple-ID.
+  - Melden Sie sich mit einer Apple-ID an.
     
     > [!IMPORTANT]
-    > Verwenden Sie ein Unternehmen, der ein e-Mail-Konto Apple-ID, die mit Ihrer Organisation bleiben zugeordnet, selbst wenn der Benutzer, der das Konto verwaltet verlässt. Speichern Sie diese ID, da Sie müssen die gleiche-ID verwenden, wird das Zertifikat zu erneuern. 
+    > Verwenden Sie eine Unternehmens Apple-ID, die einem e-Mail-Konto zugeordnet ist, das in Ihrer Organisation verbleiben soll, auch wenn der Benutzer, der das Konto verwaltet, verlässt. Speichern Sie diese ID, da Sie beim Erneuern des Zertifikats dieselbe ID verwenden müssen. 
   
-  - Wählen Sie **ein Zertifikat erstellen** aus, und akzeptieren Sie die **Rechtlichen Hinweisen**.
+  - Wählen Sie **Zertifikat erstellen** und die **Nutzungsbedingungen**akzeptieren aus.
     
-  - **Navigieren** Sie zu signierenden Zertifikat anfordern, dass Sie von Office 365 an Ihren Computer heruntergeladen haben, und wählen Sie die **Hochladen**.
+  - **Wechseln** Sie zur zertifikatsignieranforderung, die Sie von Office 365 auf Ihren Computer heruntergeladen haben, und wählen Sie **hochladen**aus.
     
-  - **Laden Sie** erstellt das Zertifikat APN Apple Push Zertifikat Portal an Ihren Computer. 
+  - **Laden** Sie das vom Apple Push Certificate Portal erstellte APN-Zertifikat auf Ihren Computer herunter. 
     
     > [!TIP]
-    > Wenn Sie das Zertifikat herunterladen Probleme haben, aktualisieren Sie den Browser. 
+    > Wenn Sie Probleme beim Herunterladen des Zertifikats haben, aktualisieren Sie Ihren Browser. 
   
-5. Gehen Sie zurück zu Office 365, und wählen Sie **Weiter** , um die Seite **Hochladen APNS Zertifikat** abzurufen. 
+5. Wechseln Sie zurück zu Office 365, und wählen Sie **weiter** , um zur Seite **APNS-Zertifikat hochladen** zu gelangen. 
     
-6. Navigieren Sie zu der APN-Zertifikat, das Sie über das Apple-Push Zertifikate Portal heruntergeladen haben.
+6. Navigieren Sie zum APN-Zertifikat, das Sie aus dem Apple Push Certificates-Portal heruntergeladen haben.
     
-    ![Klicken Sie auf die Schaltfläche Durchsuchen, um APNS Zertifikat auszuwählen, die Sie von Apple heruntergeladen haben](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
+    ![Klicken Sie auf die Schaltfläche Durchsuchen, um APNS CERT auszuwählen, das Sie von Apple heruntergeladen haben](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Wählen Sie auf **Fertig stellen**.
+7. Wählen Sie **Fertig stellen**aus.
     
-Wechseln Sie wieder zu **Sicherheit &amp; Compliance Center** \> **Sicherheitsrichtlinien** \> **Gerätemanagement** \> **Einstellungen verwalten** , um die Installation abzuschließen. 
+Gehen Sie zurück zu Security ** &amp; Compliance Center** \> **Security Policies** \> **Device Management** \> **Manage Settings** , um das Setup abzuschließen. 
   
 

@@ -1,12 +1,12 @@
 ---
-title: Konfigurieren der Suche und-Analyse
+title: Konfigurieren der Such- und Analyseeinstellungen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,41 +14,41 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9528a4bcfaa77f2e232b25d03eda46cce42ebb9
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 253650bb9916da8260491870d1a0bc899d6245c8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607787"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217105"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Suche und-Analyse
+# <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
 
 
-## <a name="near-duplicates-and-email-threading"></a>In der Nähe von Duplikaten und threading-e-Mail
+## <a name="near-duplicates-and-email-threading"></a>Near-Duplikate und e-Mail-Threading
 
-In diesem Abschnitt können Sie die Parameter für die Erkennung von Duplikaten, in der Nähe Erkennung von Duplikaten und e-Mail-threading festlegen.
+In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, fast doppelt Erkennung und e-Mail-Threading festlegen.
 
-- Aktivieren/deaktivieren: enthalten Sie Erkennung von Duplikaten, in der Nähe Erkennung von Duplikaten und e-Mail-threading als Teil des Analytics Ablauf aktiviert. Da sie übereinander erstellen, müssen Sie alle diese aktivieren oder Deaktivieren aller Folien.
+- Aktivieren/deaktivieren: doppelte Erkennung, Erkennung in der Nähe von Duplikaten und e-Mail-Threading als Teil des Analyse Flusses, falls aktiviert, einbeziehen. Da Sie sich übereinander aufbauen, müssen Sie alle aktivieren oder alle deaktivieren.
 
-- Schwellenwert: Wenn die Ebene der Ähnlichkeit von zwei Dokumenten oberhalb der Schwelle sind, werden sie in der gleichen nahezu doppelte Set versetzt.
+- Schwellenwert: Wenn die Ähnlichkeits Stufe zweier Dokumente über dem Schwellenwert liegt, werden Sie in derselben fast doppelt vorhandenen Gruppe platziert.
 
-- Ausblenden von Duplikaten standardmäßig: Wenn diese Einstellung aktiviert ist, wird ein Filter, um doppelte Dokumente ausblenden in die Arbeitsseiten standardmäßig angewendet werden. Der Filter kann manuell in die Arbeitsseiten bei Bedarf entfernt werden.
+- Duplikate standardmäßig ausblenden: Wenn diese Einstellung aktiviert ist, wird standardmäßig ein Filter zum Ausblenden doppelter Dokumente angewendet. Der Filter kann bei Bedarf manuell im Arbeitssatz entfernt werden.
 
-- Minimale/maximale Anzahl von Wörtern: in der Nähe von Duplikaten und e-Mail-threading nur bei Dokumenten mit mindestens die minimale Anzahl von Wörtern und höchstens die maximale Anzahl von Wörtern ausgeführt wird. Weitere Informationen finden Sie [in der Nähe Erkennung von Duplikaten](near-duplicates.md) und [threading-e-Mail](email-threading.md).
+- Minimale/maximale Anzahl von Wörtern: in der Nähe von Duplikaten und e-Mail-Threading wird nur für Dokumente ausgeführt, die mindestens die Mindestanzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen. Weitere Informationen finden Sie unter [near Duplicate Detection](near-duplicates.md) and [Email Threading](email-threading.md).
 
 ## <a name="themes"></a>Designs
 
-In diesem Abschnitt können Sie die Parameter für Designs festlegen.
+In diesem Abschnitt können Sie Parameter für Designs festlegen.
 
-- Aktivieren/deaktivieren: enthalten Sie Designs clustering als Teil des Analytics Ablauf aktiviert.
-- Maximale Anzahl von Designs dynamisch dynamisch anpassen: in bestimmten Fällen sind nicht genügend Dokumente, um die gewünschte Anzahl von Designs zu erstellen. Wenn diese Einstellung aktiviert ist, klicken Sie dann statt So erzwingen Sie die gewünschte maximale Anzahl von Designs, versucht das System maximale Anzahl von Designs passt dynamisch an.
-- Maximale Anzahl von Designs: gewünschte Anzahl der Designs
-- Zahlen in Designs enthalten: Wenn aktiviert, wird es Zahlen in einschließen, wenn Designs zu generieren.  
+- Aktivieren/deaktivieren: Thema-Clustering als Teil des Analyse Flusses einbeziehen, falls aktiviert.
+- Stellen Sie die maximale Anzahl von Designs dynamisch dynamisch ein: in bestimmten Fällen gibt es nicht genügend Dokumente, um die gewünschte Anzahl von Designs zu erzeugen. Wenn diese Einstellung aktiviert ist, wird anstelle der gewünschten maximalen Anzahl von Designs das System die maximale Anzahl von Designs dynamisch angepasst.
+- Maximale Anzahl von Designs: gewünschte Anzahl von Designs
+- Zahlen in Designs einbeziehen: Wenn diese Option aktiviert ist, werden beim Generieren von Designs Zahlen eingeschlossen.  
 
-## <a name="optical-character-recognition-ocr"></a>Optische zeichenerkennung (OCR)
+## <a name="optical-character-recognition-ocr"></a>Optische Zeichenerkennung (OCR)
 
-Wenn diese Einstellung aktiviert ist, wird OCR auf Bilder ausgeführt werden, die in Arbeitsseiten aufgenommen werden, damit sie durchsucht werden können.
+Wenn diese Einstellung aktiviert ist, wird die OCR auf Bildern ausgeführt, die in Arbeitsmappen aufgenommen werden, damit Sie durchsuchbar werden können.
 
-## <a name="ignore-text"></a>Ignorieren von text
+## <a name="ignore-text"></a>Text ignorieren
 
-Es gibt Situationen, in dem bestimmte Texte die Qualität der Analyse, wie lange Haftungsausschlüssen abnehmen, die auf bestimmte unabhängig vom Inhalt der e-Mail-e-Mails hinzugefügt werden. Wenn Sie solchen Fällen kennen, können Sie diesen Text aus Analytics ausschließen, indem Text (RegEx wird unterstützt) und dem angibt Module, die für Text ausgeschlossen werden soll.
+Es gibt Fälle, in denen bestimmte Texte die Qualität der Analysen verringern, wie lange Haftungsausschlüsse, die zu bestimmten e-Mails hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie solche Fälle wissen, können Sie diesen Text aus der Analyse ausschließen, indem Sie den Text angeben (RegEx wird unterstützt) und für welche Module Dieser Text ausgeschlossen werden soll.

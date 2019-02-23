@@ -1,86 +1,86 @@
 ---
-title: Führen Sie das Modul Prozess und Laden von Daten in Office 365 erweiterte eDiscovery
+title: Ausführen des Prozessmoduls und Laden von Daten in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Hier erfahren Sie, wie Sie die Office 365-Sicherheit &amp; Compliance Center zu Office 365 erweiterte eDiscovery zugreifen, und führen Sie das Prozess-Modul für eine Anfrage.  '
-ms.openlocfilehash: 32052bccc37d20c8707a1efb0592f7c93daf3590
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informationen zur Verwendung des Office 365 Security &amp; Compliance Center für den Zugriff auf Office 365 Advanced eDiscovery und zum Ausführen des Prozess Moduls für einen Fall.  '
+ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529462"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217605"
 ---
-# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Führen Sie das Modul Prozess und Laden von Daten in Office 365 erweiterte eDiscovery
+# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ausführen des Prozessmoduls und Laden von Daten in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In diesem Abschnitt wird die Funktionalität des Moduls Prozess erweiterte eDiscovery. 
+In diesem Abschnitt wird die Funktionalität des erweiterten eDiscovery-Prozess Moduls beschrieben. 
   
-Zusätzlich zur Dateidaten kann in Metadaten wie Dateityp, Erweiterung, Standort oder Pfad, Erstellungsdatum und Uhrzeit, Autor, Verwaltungsberechtigter und Betreff, geladen werden erweiterte eDiscovery und für jeden Fall gespeichert. Einigen Metadaten, die wird beispielsweise von erweiterten eDiscovery berechnet, wenn systemeigene Dateien geladen werden. 
+Zusätzlich zu Dateidaten können Metadaten wie Dateityp, Erweiterung, Speicherort oder Pfad, Erstellungsdatum und-Uhrzeit, Autor, Depotbank und Betreff in Advanced eDiscovery geladen und für jeden Fall gespeichert werden. Einige Metadaten werden beispielsweise von Advanced eDiscovery berechnet, wenn systemeigene Dateien geladen werden. 
   
-Erweiterte eDiscovery bietet System Metadatenwerte wie nahezu doppelte Gruppen oder Relevanz Bewertungen. Andere Metadaten wie der Datei Anmerkungen, kann vom Administrator hinzugefügt werden. 
+Erweiterte eDiscovery stellt System Metadatenwerte bereit, beispielsweise beinahe doppelt vorhandene Gruppierungen oder Relevanz-Ergebnisse. Andere Metadaten, wie etwa Datei Anmerkungen, können vom Administrator hinzugefügt werden. 
   
-## <a name="running-process"></a>Laufenden Prozess
+## <a name="running-process"></a>Ausgeführter Prozess
 
 > [!NOTE]
-> Batch-Nummern werden in eine Datei während der Prozess zugewiesen, um die Überwachung der Dateien zu ermöglichen. Die Anzahl der Batch kann auch die Identifikation des Prozesses Batches für Anwendereingabe Optionen. Zusätzliche Filter stehen zum Filtern nach Batch Anzahl und Sitzungen zur Verfügung. 
+> Batch Nummern werden während des Prozesses einer Datei zugewiesen, um die Nachverfolgung von Dateien zu ermöglichen. Die Chargennummer ermöglicht auch die Identifizierung von Prozess Batches für Wiederaufbereitungs Optionen. Für die Filterung nach Batch Nummern und Sitzungen stehen zusätzliche Filter zur Verfügung. 
   
-Führen Sie die folgenden Schritte aus, um den Prozess ausgeführt werden.
+Führen Sie die folgenden Schritte aus, um Process auszuführen.
   
-1. [Öffnen Sie die Office 365-Sicherheit &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. [Öffnen Sie das Office 365 &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) . 
     
-2. Wechseln Sie zu **Suche &amp; Untersuchung** \> **eDiscovery** , und klicken Sie dann auf **Gehe zu erweiterten eDiscovery**.
+2. Wechseln Sie **zur &amp; Such Untersuchung** \> **eDiscovery** , und klicken Sie dann auf **zur erweiterten eDiscovery**.
     
-3. Erweiterte eDiscovery wählen Sie die entsprechende Anfrage in der angezeigten Seite **Fällen** und dann auf **Gehe zu Fall**.
+3. Wählen Sie in Erweiterte eDiscovery in der Seite angezeigte **Anfragen** den entsprechenden Fall aus, und klicken Sie auf **Gehe zu Groß-/Kleinschreibung**.
     
-4. Unter **Prepare** \> **Prozess** \> **Setup**, wählen Sie eine Container aus der Liste der verfügbaren Container aus.
+4. Wählen Sie unter **Prepare** \> **Process** \> **Setup**einen Container aus der Liste der verfügbaren Container aus.
     
-    ![Klicken Sie auf fortsetzen, um die Suchergebnisse die Groß-/Kleinschreibung hinzuzufügen](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Klicken Sie auf Prozess, um die Suchergebnisse der Anfrage hinzuzufügen.](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
-5. Klicken Sie auf **Erweiterte Einstellungen...** , wenn Sie den Container als Ausgangswert Dateien oder als vor dem markierten Dateien hinzufügen möchten. 
+5. Klicken Sie auf **Erweiterte Einstellungen...** , wenn Sie den Container als Seed-Dateien oder als vordefinierte Dateien hinzufügen möchten. 
     
-    Seed Dateien die Schulung für Probleme mit geringer Funktionsvielfalt beschleunigen verwenden (in der Regel 2 % oder weniger). Seed-Dateien, wird empfohlen, dass Sie wählen Sie eine Vielzahl von Messagingsysteme relevanten Dateien und zu verarbeiten 20 – 50 Basis pro Problem (zu viele Seed-Dateien können Relevanz Ergebnisse verzerren). Durch die gleiche Person, die das Problem Schulen wird, sollte SEED Dateien überprüft werden.
+    Verwenden Sie Seed-Dateien, um das Training bei Problemen mit geringem Reichtum (in der Regel 2% oder weniger) zu beschleunigen. Bei Seed-Dateien empfiehlt es sich, eine Vielzahl von deutlich relevanten Dateien auszuwählen und ungefähr 20-50 Samen pro Problem zu verarbeiten (zu viele seeddateien können Relevanz-Ergebnisse verzerren). Seed-Dateien sollten von derselben Person überprüft werden, die das Problem trainieren wird.
     
-    Verwenden Sie vor dem markierte Dateien Relevanz Schulungen zu automatisieren. Sie sollten mindestens 1.500 Dateien, und beibehalten dem Anteil der-relevanten Dateien für die Überprüfung relevante genauso wie in der Auflistung, Relevanz hinzugefügt wurde. Diese Dateien manuell markiert werden soll, und Sie sollten sich die Qualität von Kategorien sicher sein.
+    Verwenden Sie vordefinierte Dateien, um die Relevanz-Schulung zu automatisieren. Sie sollten mindestens 1.500-Dateien markieren und den Anteil relevanter und nicht relevanter Dateien genauso wie in der Sammlung, die der Relevanz hinzugefügt wurde, beibehalten. Diese Dateien sollten manuell gekennzeichnet werden, und Sie sollten auf die Qualität der Markierung Vertrauen.
     
-    ![Screenshot der erweiterte Einstellungsseite für die Verarbeitung von Batchdateien](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Screenshot der Seite "Erweiterte Einstellungen" für die Verarbeitung von Batchdateien](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - Im Abschnitt **Seed** : 
     
-    Wählen Sie **als Ausgangswert Dateien markieren** markieren Sie den Container als Ausgangswert-Dateien. Sie müssen auch das **Problem** Dropdown-pro Problem zuweisen auswählen. Wählen Sie aus der Dropdownliste **Tag** **Relevant** oder **nicht relevant** . 
+    Wählen Sie **als Seed-Dateien markieren** aus, um den Container als Seed-Dateien zu kennzeichnen. Sie müssen Sie auch wählen, um Sie pro Problem aus der Dropdownliste **für Problem** zuzuweisen. Wählen Sie im Dropdown **** - **Tag** entweder **relevant** oder irrelevant aus. 
     
     > [!NOTE]
-    > Nachdem Sie die Dateien als **Ausgangswert**festlegen, können nicht Sie sie als **vorab markierte**markieren. 
+    > Nachdem Sie Dateien als Startwert festgelegt haben, können Sie Sie nicht als **Pre-Tagged**markieren. **** 
   
-  - Im Abschnitt **vor dem markierten Dateien** : 
+  - Im Abschnitt **Pre-Tagged files** : 
     
-    Wählen Sie **als vorab markierte Dateien markieren** markieren Sie den Container als vor dem markierten Dateien. Sie müssen auch diese pro Problem in der **für Problem** Dropdown-Liste zuordnen. Wählen Sie aus der Dropdownliste **Tag** **Relevant** oder **nicht relevant** . 
+    Wählen Sie **als vordefinierte Dateien markieren** aus, um den Container als vorgetaggte Dateien zu markieren. Sie müssen Sie auch pro Problem aus der Dropdownliste **für Problem** zuweisen. Wählen Sie im Dropdown **** - **Tag** entweder **relevant** oder irrelevant aus. 
     
     > [!NOTE]
-    > Nachdem Sie Dateien als **markierte vor dem**festlegen, können nicht Sie sie als **Ausgangswert**markieren. 
+    > Nachdem Sie Dateien als vorDefinierte **Tags**festgelegt haben, können Sie **** Sie nicht als Startwert markieren. 
   
-  - Im Abschnitt **E-Mail zu markieren** . festlegen, welcher Teil einer verarbeiteten e-Mail sind, als Seed oder vor dem markierten markiert werden soll. 
+  - Im Abschnitt **e-Mail-Tagging** . Legen Sie fest, welcher Teil einer verarbeiteten e-Mail als Seed oder Pre-Tagged gekennzeichnet werden soll. 
     
-6. Klicken Sie zunächst auf **Prozess**. Wenn abgeschlossen ist, werden die Prozess-Ergebnisse angezeigt.
+6. Klicken Sie zunächst auf **Prozess**. Nach Abschluss des Vorgangs werden die Ergebnisse des Prozesses angezeigt.
     
-7. (Optional) Wenn Sie ein bestimmtes Verwaltungsberechtigter Datenquellen zuweisen müssen, können Sie hinzufügen und bearbeiten Sie Verwaltungsberechtigter Namen in der **Verwalter** \> **Verwalten** und zuweisen Verwalter in **Verwalter** \> **zuweisen**. 
+7. Optional Wenn Sie einer bestimmten Depotbank Datenquellen zuweisen müssen, können Sie **** \> Depotnamen in Verwalter **Verwalten** und zuweisen, die Verwalter in **Verwalter** \> **zuweisen**. 
     
-Wenn Sie die Groß-/Kleinschreibung hinzugefügt haben, können Sie dann erneut verarbeitet werden.
+Wenn Sie den Fall hinzufügen, können Sie erneut verarbeiten.
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Anzeigen von Ergebnissen der Prozess Modul](view-process-module-results-in-advanced-ediscovery.md)
+[Anzeigen der Ergebnisse des Prozess Moduls](view-process-module-results-in-advanced-ediscovery.md)
 

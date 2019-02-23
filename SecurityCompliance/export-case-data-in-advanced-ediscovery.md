@@ -1,47 +1,47 @@
 ---
-title: Groß-/Kleinschreibung Exportieren von Daten in Office 365 erweiterte eDiscovery
+title: Exportieren von Falldaten in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Verstehen der Richtlinien zum Exportieren von eDiscovery-Fall Daten und Ergebnisse mit den Exportvorgang in Office 365 erweiterte eDiscovery zur Überprüfung.  '
-ms.openlocfilehash: 1cb4cb45b1456649f7b3e12ed07565694b6bf6ec
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Informationen zu den Richtlinien zum Exportieren von eDiscovery-Falldaten und-Ergebnissen mithilfe des Export Prozesses in Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: 01997d3c799eeabc9686e3d747652d54fc963d26
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529438"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215575"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Groß-/Kleinschreibung Exportieren von Daten in Office 365 erweiterte eDiscovery
+# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Exportieren von Falldaten in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Der Exportvorgang in erweiterten eDiscovery ermöglicht der erweiterten eDiscovery-Inhalten und die Ergebnisse für eine externe Prüfung exportiert. 
+Der Exportprozess in Advanced eDiscovery ermöglicht den Export von FortgeSchrittenen eDiscovery-Inhalten und Ergebnissen für die externe Überprüfungen. 
   
-## <a name="guidelines-for-exporting-data"></a>Richtlinien für das Exportieren von Daten
+## <a name="guidelines-for-exporting-data"></a>Richtlinien für den Export von Daten
 
-- Sie können die Exportieren von Daten aus erweiterte eDiscovery, beispielsweise zum Verteilen von relevanten Elemente an das Team der Dokument überprüfen oder Export an eine externe Dokument überprüfen Tool generiert ansehen.
+- Sie können die aus Advanced eDiscovery generierten Exportdaten überarbeiten, um beispielsweise relevante Elemente an das Dokument Übersichts Team zu verteilen oder zu einem externen Dokument Übersichts Tool zu exportieren.
     
-- Sie können generieren und bearbeiten die Export-Ausgabe können Sie jederzeit während und nach der Verarbeitung von erweiterten eDiscovery. In einem Szenario mit standard werden erhebliche Ergebnisse erzielt nach Relevanz Schulung und Berechnung Batch erfolgreich abgeschlossen wurden. Beispielsweise können Sie ein Beispiel für die zutreffenden 1000 Dateien generieren und erweiterte eDiscovery Leistung bewerten, bevor Sie fortfahren.
+- Sie können die Exportausgabe jederzeit während und nach der erweiterten eDiscovery-Verarbeitung generieren und bearbeiten. In einem Standardszenario werden bedeutende Ergebnisse erzielt, nachdem die Relevanz und die Batch Berechnung erfolgreich abgeschlossen wurden. Sie können beispielsweise ein Beispiel der 1.000 relevantesten Dateien generieren und die erweiterte eDiscovery-Leistung bewerten, bevor Sie fortfahren.
     
-- Exportieren eine große Menge von Daten in eine Datenbank möglicherweise eine erhebliche Auswirkungen auf die erforderlichen Datenbankgröße und die erforderliche Konfiguration der erweiterten eDiscovery-Datenbank.
+- Das Exportieren einer großen Datenmenge in eine Datenbank hat möglicherweise erhebliche Auswirkungen auf die erforderliche Datenbankgröße und die erforderliche Konfiguration der erweiterten eDiscovery-Datenbank.
     
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Exportieren Sie Ergebnisse](export-results-in-advanced-ediscovery.md)
+[Exportieren von Ergebnissen](export-results-in-advanced-ediscovery.md)
   
-[Batch Anzeigeverlauf und Exportergebnisse](view-batch-history-and-export-past-results.md)
+[Anzeigen des Batch Verlaufs und Exportieren von Ergebnissen](view-batch-history-and-export-past-results.md)
 
 [Exportieren von Berichtsfeldern](export-report-fields-in-advanced-ediscovery.md)
 

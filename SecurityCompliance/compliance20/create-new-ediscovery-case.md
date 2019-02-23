@@ -1,12 +1,12 @@
 ---
-title: Erstellen Sie einen neuen Fall in erweiterten eDiscovery (Preview)
+title: Erstellen eines neuen Falls in Advanced eDiscovery (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,37 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 038d4b83fc547713e537c29592e1dcf96e1cc4a7
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d01a0c8951ff1ae203bca54c4e196b747a79c378
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29629037"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220335"
 ---
-# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Erstellen Sie einen neuen Fall in erweiterten eDiscovery (Preview)    
+# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Erstellen eines neuen Falls in Advanced eDiscovery (Preview)    
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie in der & Security Compliance Center auf **eDiscovery > erweiterte eDiscovery**.
+3. Klicken Sie im Security & Compliance Center auf **eDiscovery _GT_ Advanced eDiscovery**.
  
-4. Klicken Sie auf der Seite **Erweiterte eDiscovery (Preview)** auf **einen Fall erstellen**.
+4. Klicken Sie auf der Seite **Erweiterte eDiscovery (Vorschau)** auf **Fall erstellen**.
     
-5. Klicken Sie auf der Seite **neue eDiscovery-Fall** flyoutmenü benennen Sie der Groß-/Kleinschreibung (erforderlich), und geben Sie eine optionale Groß-/Kleinschreibung Anzahl und eine Beschreibung. Beachten Sie, dass die Groß-/Kleinschreibung Name in Ihrer Organisation eindeutig sein muss.
+5. Geben Sie auf der Seite **Neues eDiscovery-Fall** -Flyout den Fall einen Namen (erforderlich) ein, und geben Sie dann eine optionale Fallnummer und eine Beschreibung ein. Beachten Sie, dass der Fallname in Ihrer Organisation eindeutig sein muss.
 
-6. Klicken Sie unter **möchten Sie zusätzliche Einstellungen konfigurieren, nach dem in diesem Fall erstellen?**, eine der folgenden Aktionen aus:
+6. Führen **Sie unter möchten Sie zusätzliche Einstellungen nach dem Erstellen dieses Falls konfigurieren?** eine der folgenden Aktionen aus:
 
-    - Klicken Sie auf **Ja,** um die Groß-/Kleinschreibung zu erstellen und Anzeigen der Seite **Einstellungen** in der neuen Groß-/Kleinschreibung. Dadurch können Sie die Groß-/Kleinschreibung Mitglieder hinzu.
+    - Klicken Sie auf **Ja** , um den Fall zu erstellen, und zeigen Sie die Seite **Einstellungen** im neuen Fall an. Dies ermöglicht Ihnen das Hinzufügen von Mitgliedern zu der Groß-/Kleinschreibung.
     
-    - Klicken Sie auf **Nein** , um nur die Groß-/Kleinschreibung erstellen und anzeigen in der Liste der Anfragen auf der Seite **Erweiterte eDiscovery (Preview)** . Wenn Sie diese Option auswählen, werden Sie hinzugefügt werden, wie das einzige Mitglied die Groß-/Kleinschreibung und die Standardeinstellungen für Suche und-Analyse verwendet wird. Sie können Mitglieder hinzufügen oder ändern, jederzeit nach dem Erstellen der Groß-/Kleinschreibung.
+    - Klicken Sie auf **Nein** , um den Fall nur zu erstellen und in der Liste der Fälle auf der **Advanced eDiscovery (Preview)** -Seite anzuzeigen. Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied des Falls hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet. Sie können jederzeit Elemente hinzufügen oder Einstellungen ändern, nachdem der Fall erstellt wurde.
 
-7. Klicken Sie auf **Speichern** , um die Groß-/Kleinschreibung zu erstellen.
+7. Klicken Sie auf **Speichern** , um die Anfrage zu erstellen.
 
-    Die neue Groß-/Kleinschreibung wird in der Liste der Anfragen auf der Seite **Erweiterte eDiscovery (Preview)** angezeigt. 
+    Der neue Fall wird in der Liste der Fälle auf der **erweiterten eDiscovery-Seite (Preview)** angezeigt. 
 
-8. Um eine Anfrage zu öffnen, klicken Sie auf den Namen der die Groß-/Kleinschreibung. 
+8. Um einen Fall zu öffnen, klicken Sie auf den Namen der Groß-/Kleinschreibung. 
 
-    Auf der Registerkarte **Startseite** die Groß-/Kleinschreibung wird angezeigt. Hier wird beispielsweise eine neue Anfrage namens *"Contoso" Untersuchung*.
+    Die Registerkarte **Start** für die Groß-/Kleinschreibung wird angezeigt. Hier ist beispielsweise ein neuer Fall mit dem Namen *contoso Investigation*.
 
-    ![Der Registerkarte Startseite für einen neuen Fall in erweiterten eDiscovery](../media/newAeDcase.png)
+    ![Die Registerkarte "Start" für einen neuen Fall in Advanced eDiscovery](../media/newAeDcase.png)

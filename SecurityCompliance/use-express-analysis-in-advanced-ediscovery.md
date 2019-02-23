@@ -1,133 +1,133 @@
 ---
-title: Verwenden Sie Analyse Express in Office 365 erweiterte eDiscovery
+title: Verwenden der Express-Analyse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
-description: Erfahren Sie, wie den Modus Express Analyse der Office 365 erweiterte eDiscovery ausführen
-ms.openlocfilehash: a71e6775b1116e805e455815dca53a727d887809
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Informationen zum Ausführen des Express Analysemodus von Office 365 Advanced eDiscovery
+ms.openlocfilehash: e306aa03962c646ce4083b7385e527b523e86fd6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529315"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217625"
 ---
-# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Verwenden Sie Analyse Express in Office 365 erweiterte eDiscovery
+# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Verwenden der Express-Analyse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Sie können **Express Analysis** Sie schnell eine Anfrage zu analysieren und Exportieren der Ergebnisse. 
+Sie können die **Express Analyse** verwenden, um einen Fall schnell zu analysieren und die Ergebnisse zu exportieren. 
   
-Express-Analyse können Sie in der Nähe Duplikate berechnen und e-Mail-Threads und Designs zu berechnen. Sie können auch bestimmte Parameter für Designs, Dokument Ähnlichkeit und das Exportieren von Dateien in den [erweiterten Einstellungen für die Analyse Express](use-express-analysis-in-advanced-ediscovery.md#BK_AdvancedSettings)festlegen.
+Sie können die Expressanalyse verwenden, um beinahe-Duplikate und e-Mail-Threads zu berechnen und Designs zu berechnen. Sie können auch bestimmte Parameter für Designs, die Dokument Ähnlichkeit und die Exportdateien in den [erweiterten Einstellungen für die Express Analyse](use-express-analysis-in-advanced-ediscovery.md#BK_AdvancedSettings)festlegen.
   
-## <a name="run-express-analysis"></a>Führen Sie Express-Analyse
+## <a name="run-express-analysis"></a>Ausführen der Express Analyse
 
-1. In der Registerkarte **Analyse Express** (1) Wählen Sie einen Container Aktivieren der ** Express Analysis ** (2), und Schaltflächen **Erweiterte Einstellungen** . 
+1. Wählen Sie auf der Registerkarte **Express Analyse** (1) einen Container aus, um die Schaltflächen * * Expressanalyse * * (2) und **Erweiterte Einstellungen** zu aktivieren. 
     
-    ![Screenshot der Seite Analysis Express](media/60009974-5d1f-4971-8ebe-e5ec74e7fd2a.jpg)
+    ![Screenshot der Seite für die Express Analyse](media/60009974-5d1f-4971-8ebe-e5ec74e7fd2a.jpg)
   
-2. Klicken Sie unter **Parameter analysieren**:
+2. Unter **analyze Parameters**:
     
-  - Überprüfen Sie **in Ihrer Nähe Duplikate zu berechnen und e-Mail-Threads** , wenn Sie die Analyse ausführen möchten. Es ist standardmäßig aktiviert. 
+  - Aktivieren Sie die Option **near-Duplikate und e-Mail-Threads berechnen** , wenn Sie die Analyse ausführen möchten. Sie ist standardmäßig ausgewählt. 
     
-  - Überprüfen Sie **Berechnen Designs** zur Verarbeitung aller Dateien und Designs zuweisen. Es ist standardmäßig aktiviert. 
+  - Aktivieren Sie die Option **Designs berechnen** , um alle Dateien zu verarbeiten, und weisen Sie Ihnen Designs zu. Sie ist standardmäßig ausgewählt. 
     
-3. Klicken Sie unter **Ziel für das Exportieren**:
+3. Unter **Export Ziel**:
     
-  - Überprüfen Sie **auf dem lokalen Computer herunterladen** , auf dem lokalen Computer herunterzuladen. 
+  - Aktivieren Sie das Kontrollkästchen auf **lokalen Computer herunter** laden, um es auf Ihren lokalen Computern herunterzuladen. 
     
-  - Wenn Sie den **Export in Azure Blob benutzerdefinierte** aktivieren können Sie auch ein Container-URL und SAS-Token angeben. 
+  - Wenn Sie **den Export in ein benutzerdefiniertEs Azure-BLOB aktivieren,** können Sie auch eine Container-URL und ein SAS-Token angeben. 
     
     > [!NOTE]
-    > Sobald ein Exportpaket zu gespeichert wurde die benutzerdefinierten Azure Blob, die Daten nicht mehr vom erweiterte eDiscovery verwaltet werden. Es wird von den Azure Blob verwaltet. Dies bedeutet, wenn Sie die Groß-/Kleinschreibung löschen, die exportierten Dateien weiterhin auf die Azure Blob verbleibt. 
+    > Nachdem ein Exportpaket im benutzerdefinierten Azure-BLOB gespeichert wurde, werden die Daten nicht mehr von Advanced eDiscovery verwaltet. Sie wird vom Azure-BLOB verwaltet. Wenn Sie also den Fall löschen, verbleiben die exportierten Dateien weiterhin im Azure-BLOB. 
   
-  - **Token für zukünftige Export-Sitzung speichern SAS**: Wenn diese Einstellung aktiviert, wird das SAS-Token in der erweiterten eDiscovery interne Datenbank für die zukünftige Verwendung verschlüsselt werden.
+  - **SAS-Token für zukünftige Export Sitzung speichern**: Wenn diese Option aktiviert ist, wird das SAS-Token in der internen Datenbank von Advanced eDiscovery für zukünftige Verwendung verschlüsselt.
     
     > [!NOTE]
-    > Derzeit läuft ab das Token SAS nach Monat. Wenn Sie versuchen, die nach mehr als einem Monat herunterladen Sie die letzten Sitzung rückgängig zu machen müssen, exportieren Sie dann erneut. 
+    > Derzeit läuft das SAS-Token nach einem Monat ab. Wenn Sie versuchen, nach mehr als einem Monat herunterzuladen, müssen Sie die letzte Sitzung rückgängig machen und dann erneut exportieren. 
   
-4. Die express Analyse mit Default starten zu Einstellungen, wählen Sie **Express Analyse**und die Seite **Aufgabenstatus** wird angezeigt. 
+4. Um die Expressanalyse mit den Standardeinstellungen zu starten, wählen Sie **Expressanalyse**und die Seite **Vorgangsstatus** wird angezeigt. 
     
-    Klicken Sie auf der Seite **Aufgabenstatus** können Sie die **Prozess**, **Analysieren** und **Exportieren von** Registerkarten zum Anzeigen von Details zu den express ausführen erweitern. 
+    Auf der Seite **Vorgangsstatus** können Sie die Registerkarten **Prozess**, **Analyse** und **Export** erweitern, um Details zum Express-Durchlauf anzuzeigen. 
     
-    ![Screenshot der erweiterte eDiscovery Express Analysis Aufgabe Statusseite](media/bf30ab02-9828-4a6d-a485-0babc2c49ae5.jpg)
+    ![Screenshot der erweiterten eDiscovery Express Analysis-Aufgabenstatus Seite](media/bf30ab02-9828-4a6d-a485-0babc2c49ae5.jpg)
   
-5. Wählen Sie die Seite **Zusammenfassung Analysis Express** detaillierte Informationen über die Ausführung aufgelistet. 
+5. Wählen Sie die Zusammenfassungsseite für **Express Analysen** aus, um detaillierte Informationen zur Ausführung aufzulisten. 
     
-    Am unteren Rand der Seite **Zusammenfassung Analysis Express** wählen Sie in der **letzten Sitzung herunterladen** , dem Analyse Dateien Tp Ihrem lokalen Computer herunterladen. Sie müssen zuerst herunterladen eDiscovery-Export-Tool, und fügen Sie die Export-Taste, um das eDiscovery-Export-Tool. 
+    Klicken Sie unten auf der Zusammenfassungsseite der **Express Analyse** auf **letzte Sitzung herunterladen** , um die Analysedateien auf dem lokalen Computer herunterzuladen. Sie müssen zunächst das eDiscovery-Export Tool herunterladen und den Exportschlüssel in das eDiscovery-Export Tool einfügen. 
     
-## <a name="advanced-settings-for-express-analysis"></a>Erweiterte Einstellungen für die Analyse Express
+## <a name="advanced-settings-for-express-analysis"></a>Erweiterte Einstellungen für die Express Analyse
 <a name="BK_AdvancedSettings"> </a>
 
-Sie können **Erweiterte Einstellungen** , so ändern Sie die Express-Analyse Standardparametern optional festlegen. 
+Optional können Sie **Erweiterte Einstellungen** festlegen, um die standardmäßigen Express Analyseparameter zu ändern. 
   
-1. Im Abschnitt **Analysieren** : 
+1. Im Abschnitt **analysieren** : 
     
-  - Geben Sie in der **in der Nähe von Duplikaten und e-Mail-Threads**den Wert **Dokument Ähnlichkeit** oder übernehmen Sie den Standardwert von 65 %. 
+  - Geben Sie im Feld **near Duplicates and Email**den Wert für die **Dokument Ähnlichkeit** ein, oder übernehmen Sie die Standardeinstellung von 65%. 
     
-  - Die **maximale Anzahl von Designs** Geben Sie, oder wählen Sie einen Wert für die Anzahl der Designs zu erstellen. Der Standardwert ist 200. 
+  - Geben Sie in die **Maximale Anzahl von Designs** ein, oder wählen Sie einen Wert für die Anzahl der zu erstellende Designs aus. Der Standardwert ist 200. 
     
     > [!NOTE]
-    > Erhöhung der Anzahl der Designs wirkt sich auf Leistung als auch die Möglichkeit eines Designs, verallgemeinern. Je höher die Anzahl der Designs, die eine genauere sind. Beispielsweise, wenn eine Reihe von 50 Designs ein Design wie "Basketball, beleben, geschoren Lakers" enthalten 300 Designs separate Designs enthalten können: "Beleben", "Geschoren", "Lakers". Wenn Sie keine zur Förderung des Bekanntheitsgrads des Designs "Basketball" hatte und verwenden Sie diese Funktion für ECA, konnte das Design anzeigen "Basketball" nützlich sein. Wenn die Verarbeitung zu viele Designs hatten, Sie jedoch möglicherweise noch nie das Wort "Basketball" angezeigt und können nicht kennen, beleben und geschoren gute Basketball Designs sind, um zu prüfen, anstatt Elemente, die auf startet und für haarstrich verwendet. 
+    > Das Erhöhen der Anzahl von Designs wirkt sich auf die Leistung und die Möglichkeit, ein Design zu verallgemeinern. Je höher die Anzahl der Designs ist, desto detaillierter sind Sie. Wenn beispielsweise ein Satz von 50 Designs ein Design wie "Basketball, Spurs, Clippers, Lakers" enthält, 300 Designs können separate Designs aufweisen: "Spurs", "Clippers", "Lakers". Wenn Sie kein Bewusstsein für das Thema "Basketball" hatten und dieses Feature für ECA verwenden, könnte das Thema "Basketball" nützlich sein. Aber wenn die Verarbeitung zu viele Designs hatte, werden Sie möglicherweise nie das Wort "Basketball" sehen und wissen möglicherweise nicht, dass Spurs und Clippers gute Basketball Designs sind, anstatt Elemente, die auf Stiefel gehen und für Haare verwendet werden. 
   
-  - Wählen Sie in der **vorgeschlagene Designs** **Ändern** zum Vorschlagen des Designs Wörter zum Steuern der Verarbeitung Designs aus. Erweiterte eDiscovery wird den Schwerpunkt auf folgenden vorgeschlagenen Wörter und versuchen, eine oder mehrere relevante Designs, basierend auf der Einstellung "Maximale Anzahl der Designs" zu erstellen. 
+  - Wählen Sie in den **vorgeschlagenen Designs** **ändern** , um Design Wörter zur Steuerung der Verarbeitung von Designs zu vorschlagen. Advanced eDiscovery konzentriert sich auf diese vorgeschlagenen Wörter und versucht, ein oder mehrere relevante Designs basierend auf den Einstellungen für "maximale Anzahl von Designs" zu erstellen. 
     
-    Beispielsweise wird das vorgeschlagene Wort "Computer", und Sie als die "maximale Anzahl der Designs" "2" angegeben, erweiterte eDiscovery versuchen, zwei Designs zu generieren, die sich auf das Wort "Computer" beziehen. Zwei Designs können beispielsweise "Computersoftware" und "Computerhardware" sein.
+    Wenn das vorgeschlagene Wort beispielsweise "Computer" lautet und Sie "2" als "maximale Anzahl von Designs" angegeben haben, versucht Advanced eDiscovery, zwei Designs zu generieren, die sich auf das Wort "Computer" beziehen. Die beiden Designs können beispielsweise "Computer Software" und "Computer Hardware" sein.
     
     ![Vorgeschlagenes Design hinzufügen](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
-  - **Modus** Wählen Sie aus der Dropdownliste ein **Designs** -Option aus: 
+  - **Modus** Wählen Sie in der Dropdownliste eine **Designs** -Option aus: 
     
-  - **Erstellen und Anwenden von Modell**: berechnet Designs von Modellen aus einem Segment der Dateien und dann verteilt zwischen diesen Dateien.
+  - **Modell erstellen und anwenden**: berechnet Designs anhand von Modellen aus einem Segment der Dateien und verteilt dann Dateien darunter.
     
-  - **Create-Modell**: ein Designs-Modell aus einem Segment der Dateien berechnet. Der übernehmen Prozess der Division von Dateien ist separat zu einem späteren Zeitpunkt ausgeführt.
+  - **Modell erstellen**: berechnet ein Design Modell aus einem Segment der Dateien. Der Prozess der Aufteilung von Dateien erfolgt separat zu einem anderen Zeitpunkt.
     
-  - **Apply-Modell**: Diese Option wird nur angezeigt, wenn ein Modell wurde bereits zuvor erstellt und noch nicht angewendet. Dadurch werden die Dateien basierend auf der Designs dividiert.
+  - **Modell anwenden**: diese Option wird nur angezeigt, wenn ein Modell zuvor erstellt und noch nicht angewendet wurde. Dadurch werden die Dateien basierend auf den Designs unterteilt.
     
-2. Im Abschnitt **Exportieren** : 
+2. Im Abschnitt **exportieren** : 
     
-1. In den **Batch wählen Sie exportieren**:
+1. **Wählen Sie im Export Batch auswählen**:
     
-  - Aus der Liste **Exportieren Batch** wählen den Blattnamen oder Exportieren von Ergebnissen in Export Batch 01 (Standard). 
+  - Wählen Sie in der Liste **Export Batch** den Namen des Batches aus, oder exportieren Sie die Ergebnisse, um den Batch 01 zu exportieren (Standard Batch). 
     
-  - Um Ergebnisse für neue Dateien zu exportieren, die Sie einer vorhandenen Anfrage hinzugefügt haben, fahren Sie mit Ihren aktuellen Stapel. Zum Erstellen einer Sitzung im Batch, wählen Sie die gleiche Anzahl von Batch aus, und klicken Sie auf **Create Session exportieren** können Sie diese Option verwenden, so exportieren Sie die gleichen Parameter als den vorherigen Batch eine inkrementelle Weise. 
+  - Wenn Sie Ergebnisse für neue Dateien exportieren möchten, die Sie einem vorhandenen Fall hinzugefügt haben, fahren Sie mit dem aktuellen Batch fort. Um eine Sitzung im Batch zu erstellen, wählen Sie dieselbe Batchnummer aus, und klicken Sie auf **Export Sitzung erstellen** mit dieser Option können Sie die gleichen Parameter wie im vorherigen Batch inkrementell exportieren. 
     
-  - Klicken Sie auf **Hinzufügen**, um einen neuen Batch zu exportieren,![Symbol hinzufügen](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) und geben Sie einen neuen Namen in **Blattname** (oder übernehmen Sie den Standardwert) und eine Beschreibung im **Feld Beschreibung Batch**. Klicken Sie auf **OK**.
+  - Um in einen neuen Batch zu exportieren, klicken Sie auf](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) hinzufügen Symbol **Hinzufügen**![, und geben Sie einen neuen Namen in den **batchnamen** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
     
-  - Um einen Namen oder die Beschreibung zu bearbeiten, wählen Sie den Namen im **Batch exportieren**, klicken Sie auf **Bearbeiten** ![Bearbeitungssymbol](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), und klicken Sie dann die Felder zu ändern.
+  - Wenn Sie einen batchnamen oder eine Beschreibung bearbeiten möchten, wählen Sie den Namen unter **Export Batch**aus](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und ändern Sie dann die Felder.
     
     > [!NOTE]
-    > Nach dem Ausführen Sitzungen für einen Batch Export können sie gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, sobald die erste Sitzung ausgeführt wird. 
+    > Nachdem Sie Sitzungen für einen Export Batch ausgeführt haben, können diese nicht gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, nachdem die erste Sitzung ausgeführt wurde. 
   
-  - Wählen Sie zum Erstellen eines Batches für die doppelte Export **Duplikat Export Batch**![doppelte Export Batch-Symbol erstellen](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) , und geben Sie einen Namen und eine Beschreibung für den doppelten Batch in der Systemsteuerung. 
+  - Wenn Sie einen doppelten Export Batch erstellen möchten, wählen Sie **Duplicate**![Export Batch Create a Duplicate](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Export Batch Icon aus, und geben Sie im Bereich einen Namen und eine Beschreibung für den doppelten Batch ein. 
     
-  - Wählen Sie zum Löschen eines Batches Export **Löschen**![löschen Symbolgröße Batch Export](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+  - Wenn Sie einen Export Batch löschen möchten ****![, klicken Sie auf Löschen eines](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Export Batch-Symbols.
     
-  - Wählen Sie zum Anzeigen des Verlaufs eines Batches **Batch Verlauf**![Ansicht Verlauf Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
+  - Um den Verlauf eines Batches anzuzeigen, wählen ****![Sie Verlaufs Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für den Stapelverarbeitungs Verlauf.
     
-2. Klicken Sie unter Define p **Opulation:** **Includedateien nur über Relevanz Grenzwert Score** und/oder **verfeinern Export Batch** wählen, wenn Sie die Einstellungen für Ihren Export-Stapel optimieren möchten. Wenn Sie **nur Dateien über Relevanz Grenzwert Score einschließen**ausgewählt haben, klicken Sie dann das **Problem** ist aktiviert, und wenn die Datei Relevanz Score höher ist als die Bewertung Grenzwert für das ausgewählte Problem ist, klicken Sie dann die Datei wird exportiert. Die Datei exportiert werden, es sei denn, es von ausgeschlossen ist die ' **zur Prüfung** Filter. Bei Auswahl von **verfeinern Export Batch**, und klicken Sie dann die **Deduplizierung** und **Filter von 'Zur Überprüfung' Feld** Optionsfelder aktiviert sind. Falls gewünscht **Deduplizierung**, und klicken Sie dann Duplikate Dateien gefiltert gemäß der Richtlinie definierten skalierten werden werden: [Case-Ebene (Standard): aus jeder Gruppe von duplizierten Dateien in der gesamten Groß-/Kleinschreibung, alle jedoch eine Datei Aufhebung der duped werden soll. Verwaltungsberechtigter Ebene: aus jeder Gruppe von duplizierten Dateien von der gleichen Verwaltungsberechtigte, alle jedoch eine Datei Aufhebung der duped werden soll. Eine Aufzeichnung aller duplizierten Dateien ist Export Ausgabe verfügbar. Wenn Sie **von 'zur Prüfung"** Filterfeld auswählen, wählen Sie **ändern unter Metadaten** Geben Sie Ihre Einstellungen **'zur Prüfung"** dar. Wählen Sie **input Includedateien**Quelldateien im Paketinhalt enthalten. Deaktivieren Sie diese Option, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden sollen.
+2. Klicken Sie unter define p **Bevölkerung:** wählen Sie **nur Dateien über Relevanz Cut-Off** und/oder **Export Batch verfeinern** , wenn Sie die Einstellungen für Ihren Export Batch optimieren möchten. Wenn Sie **nur Dateien über Relevanz Cut-Off-Wert einbeziehen**auswählen, wird das **Problem** aktiviert, und wenn die Relevanz der Datei höher ist als die Cut-Off-Bewertung für das ausgewählte Problem, wird die Datei exportiert. Die Datei wird exportiert, es sei denn, Sie wird durch den Filter ' **for Review** ' ausgeschlossen. Wenn Sie **Export Batch verfeinern**auswählen, werden die Optionsfelder **de-dupe** und **Filter by Review** aktiviert. Wenn Sie die **** Deduplizierung auswählen, werden die Duplikatdateien entsprechend der definierten Richtlinie gefiltert: [Case Level (Standard): aus allen doppelten Dateien im gesamten Fall werden nur eine Datei debetrogen. Depot Ebene: aus jeder Gruppe von doppelten Dateien desselben Depotbank wird eine Datei mit bis zu einer Deduplizierung entfernt. Ein Datensatz aller doppelten Dateien ist in der Exportausgabe verfügbar. Wenn Sie **Filtern nach ' zur Überarbeitung '** wählen, wählen Sie **unter Metadaten ändern** , um die Feld Einstellungen **für die Überprüfungen**einzugeben. Wählen Sie **Eingabedateien einfügen**aus, um Quelldateien in den Paketinhalt einzubeziehen. Sie können diese Option deaktivieren, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden.
     
-3. Wählen Sie unter **Define Metadaten**aus den folgenden Optionen in der Liste **Vorlage exportieren** (einmal pro Sitzung). 
+3. Wählen Sie unter **Metadaten definieren**aus den folgenden Optionen in der Liste **Export Vorlage** (einmal pro Sitzung) aus. 
     
-  - **Standard**: grundlegende Satz von Datenelemente, Metadaten und Eigenschaften. Verwenden Sie diese Option aus, wenn Daten importieren bereits im erweiterten eDiscovery verarbeitet wurde und Exportieren von Daten an ein System, das bereits die Dateien enthält hochgeladen. Exportieren Sie standardmäßig Vorlage Spalten erstellt und aufgefüllt werden.
+  - **Standard**: grundlegende Gruppe von Datenelementen, Metadaten und Eigenschaften. Verwenden Sie diese Option, wenn Importdaten bereits in Advanced eDiscovery verarbeitet wurden und Exportdaten in ein System hochgeladen werden, in dem die Dateien bereits enthalten sind. Standardmäßig werden Spalten für das Exportieren von Vorlagen erstellt und ausgefüllt.
     
-  - **Alle**: umfassende Auswahl an standard-Metadaten sowie alle Verarbeiten von Daten, analysieren und Relevanz Bewertungen. Diese Vorlage ist erforderlich, wenn erweiterte eDiscovery die Verarbeitung führt und Dateidaten werden zum ersten Mal mit einem externen System hochgeladen.
+  - **All**: vollständiger Satz von Standardmetadaten einschließlich aller verarbeitungsDaten sowie Analyse-und Relevanzwerte. Diese Vorlage ist erforderlich, wenn Advanced eDiscovery die Verarbeitung ausführt und Dateidaten zum ersten Mal auf ein externes System hochgeladen werden.
     
-  - **Probleme**: Wählen Sie **Alle Probleme** oder ein bestimmtes Problem, das Sie erstellt haben. 
+  - **Probleme**: Wählen Sie **alle Probleme** aus, oder wählen Sie ein bestimmtes Problem aus, das Sie erstellt haben. 
     
-Wählen Sie **OK**um die erweiterten Einstellungen zu speichern, verwenden Sie die Standardwerte **Wiederherstellen** oder **Abbrechen** , um den erweiterten Einstellungen festlegen Abbrechen. 
+Klicken Sie auf **OK**, um die erweiterten Einstellungen zu speichern, die Standardwerte **wiederherzustellen** , oder **Abbrechen** , um die Einstellung der erweiterten Einstellungen abzubrechen. 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="BK_AdvancedSettings"> </a>
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 

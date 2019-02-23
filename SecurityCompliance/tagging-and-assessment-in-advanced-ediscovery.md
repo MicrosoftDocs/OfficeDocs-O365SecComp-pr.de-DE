@@ -1,136 +1,136 @@
 ---
-title: Kategorien und Bewertung in Office 365 erweiterte eDiscovery
+title: Markieren und Beurteilung in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Überprüfen Sie die Schritte zum Ausführen der Bewertung Training, einschließlich Markieren von Dateien und zur der Bewertungsergebnisse im Office 365 erweiterte eDiscovery überprüfen. '
-ms.openlocfilehash: 0f67dd4780a29536888231f556c18fe887f230ba
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Überprüfen Sie die Schritte zur Durchführung von Assessment-Schulungen, einschließlich Taggingdateien, und überprüfen Sie die Ergebnisse der Bewertung in Office 365 Advanced eDiscovery. '
+ms.openlocfilehash: 02dae23b6489b40243272beea1d79e871ca6a911
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22529320"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217935"
 ---
-# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Kategorien und Bewertung in Office 365 erweiterte eDiscovery
+# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Markieren und Beurteilung in Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In diesem Abschnitt wird das Verfahren für die erweiterte eDiscovery Relevanz Assessment Modul. 
+In diesem Abschnitt wird das Verfahren für das Modul Advanced eDiscovery Relevance Assessment beschrieben. 
   
-## <a name="performing-assessment-training-and-analysis"></a>Schulung zur Bewertung und Analysen durchführen
+## <a name="performing-assessment-training-and-analysis"></a>Durchführen von Assessment-Schulungen und-Analysen
 
-1. In der **Relevanz \> nachverfolgen** auf **Assessment** um Groß-/Kleinschreibung Bewertung zu starten. 
+1. Klicken Sie auf der Registerkarte ** \> Relevanz verfolgen** auf **Bewertung** , um die Fall Bewertung zu starten. 
     
-    Beispielsweise Zwecke in diesem Verfahren, eine Reihe von 500 Dateien Beispieldaten-Bewertung wird erstellt, und die Registerkarte **Tag** wird angezeigt, die den Bereich Kategorien, angezeigte Dateiinhalte und andere Kategorien Optionen enthält. 
+    In diesem Verfahren wird beispielsweise ein Beispiel für eine Bewertung von 500-Dateien erstellt, und die Registerkarte **Tag** wird angezeigt, die das Markierungsfeld enthält, die Dateiinhalte und andere Tagging-Optionen angezeigt. 
     
     ![Registerkarte „Relevanztag“ für Bewertung](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
-2. Überprüfen Sie jede Datei in der Stichprobe, Bestimmen der Relevanz für jedes Groß-/Kleinschreibung Problem der Datei, und markieren Sie die Datei mithilfe der Relevance (R) nicht relevant (Nr.) und überspringen Schaltflächen im Bereich **Kategorien Systemsteuerung** . 
+2. Überprüfen Sie jede Datei im Beispiel, bestimmen Sie die Relevanz der Datei für jeden Fall Problem, und markieren Sie die Datei mithilfe der Tasten Relevanz (R), nicht relevant (NR) und **** überspringen im Bereich des taggingbereichs. 
     
     > [!NOTE]
-    >  Assessment erfordert 500 markierte Dateien. Wenn Dateien "übersprungen" sind, erhalten Sie weitere Dateien zu markieren. 
+    >  Die Bewertung erfordert 500 gekennzeichnete Dateien. Wenn Dateien übersprungen werden, erhalten Sie weitere zu markierende Dateien. 
   
-3. Klicken Sie nachdem Sie alle Dateien in der Stichprobe tagging auf **berechnen**. 
+3. Nachdem Sie alle Dateien im Beispiel gekennzeichnet haben, klicken Sie auf **berechnen**. 
     
-    Die Bewertung aktuellen Fehler Rand und wie umfangreich berechnet und in der Registerkarte **Relevanz nachverfolgen** mit erweiterten Details pro Problem, angezeigt wird, wie unten dargestellt. Weitere Informationen zu diesem Dialogfeld werden später im Abschnitt "Überarbeiten Bewertung Ergebnisse" beschrieben. 
+    Die aktuelle Fehlergrenze und der Umfang der Bewertung werden auf der Registerkarte **Relevanz verfolgen** mit erweiterten Details pro Problem berechnet und angezeigt (siehe unten). Weitere Informationen zu diesem Dialog werden im späteren Abschnitt "überPrüfen der Ergebnisse der Bewertung" beschrieben. 
     
     ![Relevanznachverfolgung – Bewertung](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > Standardmäßig wird empfohlen, dass Sie mit dem nächsten Schritt Standard vornehmen, wenn die Statusanzeige zur Bewertung für das Problem abgeschlossen wurde, gibt an, dass das Bewertung Beispiel überprüft wurde und ausreichend relevante Dateien markiert wurden. > Andernfalls, wenn Sie die **Nachverfolgen** Registerkarte Ergebnisse und die Kontrolle der Rand von Fehler- und im nächsten Schritt anzeigen möchten, klicken Sie auf **Ändern** neben der **Nächste Schritt darin**, wählen Sie **Weiter zur Bewertung**und klicken Sie dann auf **OK**. 
+    > Standardmäßig wird empfohlen, mit dem standardmäßigen nächsten Schritt fortzufahren, wenn die Anzeige des Bewertungs Fortschritts für das Problem abgeschlossen wurde, was darauf hinweist, dass das Bewertungs Beispiel überprüft wurde und ausreichende relevante Dateien markiert wurden. > andernfalls können Sie, wenn Sie die Ergebnisse der Registerkarte " **Spur** " anzeigen und die Fehlergrenze und den nächsten Schritt steuern möchten, auf neben dem **nächsten Schritt** **ändern** klicken, die Option **Bewertung fortsetzen**und dann auf **OK**klicken. 
   
-1. Klicken Sie auf **Ändern** rechts neben das Kontrollkästchen **Assessment** zum Anzeigen und Bewertung Parameter pro Problem angeben. Ein Dialogfeld **Assessment Ebene** für jedes Problem wird angezeigt, wie im folgenden Beispiel dargestellt: 
+1. Klicken Sie rechts neben dem Kontrollkästchen **Bewertung** auf **ändern** , um Bewertungsparameter pro Problem anzuzeigen und anzugeben. Ein Dialogfeld zur **Beurteilungs Stufe** für jedes Problem wird angezeigt, wie im folgenden Beispiel dargestellt: 
     
     ![Fallproblem mit Bewertungsebene](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
-    Die folgenden Parameter für das Problem werden berechnet und im Dialogfeld **Assessment Ebene** angezeigt: 
+    Die folgenden Parameter für das Problem werden im Dialogfeld Beurteilungs **Stufe** berechnet und angezeigt: 
     
-    **Ziel Fehler Seitenrand für den Wiederaufruf schätzt**: basierend auf diesen Wert, wird die geschätzte Anzahl der zusätzliche Dateien erforderlich, um zu prüfen berechnet. Der Seitenrand für den Rückruf verwendet ist mehr als 75 % und mit einer 95 % Confidence Level. 
+    **Ziel Fehlermarge für Rückruf Schätzungen**: basierend auf diesem Wert wird die geschätzte Anzahl der zu überprüfenden zusätzlichen Dateien berechnet. Der für den Rückruf verwendete Margin-Wert ist größer als 75% und mit einem Konfidenzniveau von 95%. 
     
-    **Zusätzliche Assessment Dateien erforderlich**: Gibt an, wie viele weitere Dateien sind erforderlich, wenn der aktuelle Fehler Seitenrand Anforderungen nicht erfüllt sind. 
+    **Weitere erforderliche Testdateien**: gibt an, wie viele Dateien erforderlich sind, wenn die Anforderungen des aktuellen Fehler Rands nicht erfüllt sind. 
     
-2. So passen Sie den aktuellen Fehler Rand und finden Sie unter den Effekt der anderen Fehler Ränder (pro Problem):
+2. So passen Sie den aktuellen Fehler Rand an und sehen die Auswirkungen unterschiedlicher Fehler Ränder (pro Problem):
     
-1. Wählen Sie in der Liste **Wählen Sie Problem** ein Problem. 
+1. Wählen Sie in der Liste **Problem auswählen** ein Problem aus. 
     
-2. Geben Sie im **Ziel Fehler Seitenrand für den Wiederaufruf schätzt**einen neuen Wert ein.
+2. Geben Sie unter **Ziel Fehlermarge für Rückruf Schätzungen**einen neuen Wert ein.
     
-3. Klicken Sie auf **Werte aktualisieren** , um die Auswirkungen der die Korrekturen finden Sie unter. 
+3. Klicken Sie auf **Werte aktualisieren** , um die Auswirkungen der Anpassungen anzuzeigen. 
     
-3. Klicken Sie auf **Erweitert** im Dialogfeld **Assessment Ebene** , auf die folgenden zusätzlichen Parameter und ausführliche Informationen finden Sie unter: 
+3. Klicken Sie im Dialogfeld **Bewertung** auf **erweitert** , um die folgenden zusätzlichen Parameter und Details anzuzeigen: 
     
     ![Bewertungsebene: erweiterte Ansicht für Fallproblem](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
-    **Geschätzte Funktionsvielfalt**: geschätzte Funktionsvielfalt gemäß den aktuellen Bewertungsergebnisse zur
+    **Geschätzte Reichhaltigkeit**: geschätzte Reichhaltigkeit gemäß den aktuellen Bewertungsergebnissen
     
-    **Für den Rückruf angenommenen**: standardmäßig am Rand der Ziel-Fehler angewendet wird, um mehr als 75 % zurückzurufen. Klicken Sie auf **Bearbeiten** , wenn Sie möchten, ändern Sie diesen Parameter und Steuern des Rands von Fehler auf einem anderen Wertebereich Rückruf. 
+    **Für angenommene Rückrufaktion**: Standardmäßig gilt die Ziel Fehlermarge für den rückruf über 75%. Klicken Sie auf **Bearbeiten** , wenn Sie diesen Parameter ändern und die Fehlergrenze für einen anderen Bereich von Rückruf Werten steuern möchten. 
     
-    **Vertrauensebene**: Standardmäßig ist die empfohlene Fehler Seitenrands Confidence 95 %. Wenn Sie diesen Parameter ändern möchten, klicken Sie auf **Bearbeiten** . 
+    **Zuverlässigkeitsstufe**: Standardmäßig ist der empfohlene Fehlerbereich für das Vertrauen 95%. Klicken Sie auf **Bearbeiten** , wenn Sie diesen Parameter ändern möchten. 
     
-    **Erwartete Funktionsvielfalt Fehler Rand**: anhand der aktualisierten Werte, dies ist der erwartete Rand von Fehler wie umfangreich die, nachdem alle zusätzlichen Assessment-Dateien überprüft werden.
+    Erwartete reichhaltige **Fehlermarge**: Angesichts der aktualisierten Werte ist dies der erwartete Fehlerspielraum des Reichtums, nachdem alle zusätzlichen Bewertungsdateien überprüft wurden.
     
-    **Zusätzliche Assessment Dateien erforderlich**: anhand der aktualisierten Werte, die Anzahl der zusätzlichen Assessment Dateien, die zum Erreichen der des Ziels des Vorgangs überprüft werden müssen.
+    **Erforderliche zusätzliche Analysedateien**: Angesichts der aktualisierten Werte muss die Anzahl zusätzlicher Evaluierungs Dateien, die überprüft werden müssen, um das Ziel zu erreichen.
     
-    **Insgesamt Assessment Dateien erforderlich**: anhand der aktualisierten Werte, für die Überprüfung erforderliche Assessment Dateien insgesamt.
+    **Erforderliche Gesamt Beurteilungs Dateien**: Angesichts der aktualisierten Werte sind die Gesamtbewertung für die Überprüfung erforderlichen Dateien erforderlich.
     
-    **Erwartete Anzahl der relevanten Dateien in Assessment**: anhand der aktualisierten Werte, die erwartete Anzahl von relevanten Dateien in der gesamten Bewertung, nachdem alle zusätzlichen Assessment-Dateien überprüft werden.
+    **Erwartete Anzahl der relevanten Dateien in der Bewertung**: Angesichts der aktualisierten Werte wird die erwartete Anzahl von relevanten Dateien in der gesamten Bewertung nachgeprüft, nachdem alle zusätzlichen Bewertungsdateien überprüft wurden.
     
-4. Klicken Sie auf die **Werte neu zu berechnen**, wenn Parameter geändert werden. Wenn Sie fertig sind, wenn ein Problem vorliegt, klicken Sie auf **OK** , um die Änderungen (oder **Weiter** , wenn es sind mehrere Probleme überprüfen oder ändern und dann auf **Fertig stellen**) zu speichern. 
+4. Klicken Sie auf **Werte neu berechnen**, wenn Parameter geändert werden. Wenn Sie fertig sind, klicken Sie bei einem Problem auf **OK** , um die Änderungen zu speichern (oder als **nächstes** , wenn mehrere Probleme zu überprüfende oder **** zu ändern sind, und schließen Sie dann). 
     
-    Wenn mehrere Probleme vorhanden sind, nachdem alle Probleme überprüft oder korrigiert, wurden eine **Assessment Ebene: Zusammenfassung** Dialogfeld wird angezeigt, wie im folgenden Beispiel dargestellt. 
+    Wenn es mehrere Probleme gibt, wird, nachdem alle Probleme überprüft oder angepasst wurden, **** ein Zusammenfassungs Dialogfeld angezeigt, wie im folgenden Beispiel gezeigt. 
     
     ![Zusammenfassung der Bewertungsebene](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
-    Fahren Sie nach dem erfolgreichen Abschluss der Bewertung in die nächste Phase Relevanz Schulung fort.
+    Gehen Sie nach erfolgreichem Abschluss der Bewertung zur nächsten Stufe in Relevanz Training.
     
-## <a name="reviewing-assessment-results"></a>Überprüfen der Bewertungsergebnisse
+## <a name="reviewing-assessment-results"></a>ÜberPrüfen der Bewertungsergebnisse
 
-Nachdem ein Beispiel zur Bewertung markiert ist, werden die Bewertungsergebnisse zur berechnet und auf der Registerkarte Relevanz nachverfolgen angezeigt.
+Nachdem ein Bewertungs Beispiel markiert wurde, werden die Bewertungsergebnisse berechnet und auf der Registerkarte Relevanz verfolgen angezeigt.
   
-Die folgenden Ergebnisse angezeigt werden im erweiterten Track-Anzeige: 
+Die folgenden Ergebnisse werden in der erweiterten Spuranzeige angezeigt: 
   
-- Schätzt die aktuellen Fehler Seitenrand für den Wiederaufruf Bewertung
+- Bewertung aktueller Fehlermarge für Rückruf Schätzungen
     
-- Geschätzte Funktionsvielfalt
+- Geschätzter Umfang
     
-- Zusätzliche Assessment-Dateien (zur Überarbeitung) erforderlich
+- Erforderliche zusätzliche Evaluierungs Dateien (zur Überprüfung)
     
-Assessment aktuelle Fehler Rand wird der Fehler Rand von erweiterten eDiscovery empfohlen. Dieser Empfehlung entspricht die Anzahl für "zusätzliche Assessment erforderlichen Dateien" angezeigt.
+Die Bewertung Current Error Margin ist der von Advanced eDiscovery Empfohlene Fehler Rand. Die für die "zusätzlichen Assessment-Dateien erforderlich" angezeigte Nummer entspricht dieser Empfehlung.
   
-Die Bewertung-Statusanzeige wird der Fertigstellung der Bewertung, erhält den aktuellen Fehler Rand. Wenn der Bewertung aktiviert wird, wird der Benutzer ein weiteres Beispiel für Assessment markieren.
+Die Anzeige des Bewertungs Fortschritts zeigt den Grad des Abschlusses der Bewertung bei der aktuellen Fehlergrenze an. Wenn die Bewertung durchgeführt wird, wird ein weiteres Bewertungs Beispiel gekennzeichnet.
   
-Wenn die Statusanzeige Assessment Assessment als abgeschlossen angezeigt wird, bedeutet, dass die Bewertung Beispiel abgeschlossen wurde und ausreichend relevante Dateien markiert wurden. 
+Wenn die Beurteilungs Fortschrittsanzeige die Bewertung als abgeschlossen anzeigt, ist die Bewertung der Test Beispiel Überprüfung abgeschlossen und ausreichende relevante Dateien wurden markiert. 
   
-Erweiterte Track-Anzeige sind empfohlene Nächstes, die Statistiken zur Bewertung und Zugriff auf ausführliche Ergebnisse.
+Die erweiterte Spuranzeige zeigt den empfohlenen nächsten Schritt, die Bewertungsstatistiken und den Zugriff auf detaillierte Ergebnisse.
   
-Wenn Umfang sehr gering ist, ist die Anzahl der zusätzlichen Assessment Dateien erforderlich, um eine minimale Anzahl von relevanten Dateien nützliche Statistiken zu erreichen sehr hoch. Erweiterte eDiscovery wird dann empfehlen zur Schulung übergeht. Die Statusanzeige Assessment wird grau schattiert dargestellt werden, und keine Statistiken zur Verfügung gestellt. 
+Wenn der Umfang sehr gering ist, ist die Anzahl der zusätzlichen Bewertungsdateien, die erforderlich sind, um eine minimale Anzahl von relevanten Dateien zu erreichen, um nützliche Statistiken zu erstellen, sehr hoch. Advanced eDiscovery empfiehlt dann die Weiterbildung. Die Anzeige für den Fortschrittsstatus wird schattiert angezeigt, und es sind keine Statistiken verfügbar. 
   
-Keine der Stabilisierung statistisch basiert werden Ergebnisse mit einen geringeren Genauigkeit und Confidence Level. Allerdings können diese Ergebnisse, relevante Dateien zu finden, wenn Sie nicht wissen, den Prozentsatz der relevanten gefundenen Dateitypen müssen verwendet werden. In ähnlicher Weise kann dieser Status verwendet werden zu schulen Probleme mit geringer Funktionsvielfalt, in dem können Relevanz Bewertungen Zugriff auf Dateien an einem bestimmten Problem relevant zu beschleunigen.
+Fehlt eine statistisch basierte Stabilisierung, gibt es Ergebnisse mit einer niedrigeren Genauigkeitsstufe und Zuverlässigkeitsstufe. Diese Ergebnisse können jedoch verwendet werden, um relevante Dateien zu finden, wenn Sie den Prozentsatz der gefundenen relevanten Dateien nicht kennen müssen. Auf ähnliche Weise kann dieser Status verwendet werden, um Probleme mit geringem Umfang zu trainieren, bei denen die Relevanz-Ergebnisse den Zugriff auf Dateien beschleunigen können, die für ein bestimmtes Problem relevant sind.
   
 > [!TIP]
-> In der **Relevanz \> nachverfolgen** Registerkarte Erweiterte Problem anzeigen, stehen die folgenden Optionen zum Anzeigen: > den empfohlene nächsten Schritt, z. B. **nächsten Schritt: Tagging** können (pro Problem) umgangen werden, indem Sie auf die Schaltfläche **Ändern** , um dessen rechts, und klicken Sie dann im **nächsten Schritt**Auswählen eines anderen Schritts. Wenn Sie die Statusanzeige Assessment nicht abgeschlossen wurde, müssen zur Bewertung die empfohlene Option zum Markieren von weitere Assessment-Dateien und Statistiken Genauigkeit erhöhen. > Sie können den Rand Fehler ändern und seine Auswirkung bewerten, indem Sie auf **Ändern**, und **Bewertung Ebene Dialogfeld**, das **Ziel Fehler Seitenrand für den Wiederaufruf schätzt**, ändern und auf **Update Werte**. In diesem Dialogfeld können Sie darüber hinaus erweiterte Optionen anzeigen, indem Sie auf **Erweitert**. > Sie können zusätzliche Assessment Ebene Verwendungsstatistiken und deren Einfluss anzeigen, indem Sie auf **Ansicht**. Die angezeigten Ergebnisse Dialogfeld mit den Details stehen in Statistiken pro Problem, wenn mindestens 500 markierte Assessment-Dateien vorhanden sind und mindestens 18 Dateien als Relevant für das Problem markiert sind. 
+> Auf der Registerkarte ** \> Relevanz verfolgen** , erweiterte Problemanzeige, sind die folgenden Anzeigeoptionen verfügbar: > der Empfohlene nächste Schritt, wie **Nächster Schritt: Tagging** kann umgangen werden (pro Problem), indem Sie auf die Schaltfläche **ändern** , um die , und wählen Sie dann einen anderen Schritt im **nächsten Schritt**aus. Wenn die Anzeige für den Beurteilungs Fortschritt nicht abgeschlossen ist, ist die Bewertung die nächste empfohlene Option, um mehr Bewertungsdateien zu kennzeichnen und die Genauigkeit der Statistiken zu verbessern. > Sie können den Fehler Rand ändern und seine Auswirkungen bewerten, indem Sie auf **ändern**klicken und im **Dialogfeld Beurteilungs Stufe**den **Ziel Fehlerbereich für Rückruf Schätzungen**ändern und auf **Werte aktualisieren**klicken. Außerdem können Sie in diesem Dialogfeld Erweiterte Optionen anzeigen, indem Sie auf **erweitert**klicken. > Sie können zusätzliche Statistiken zum Bewertungs Level und deren Auswirkungen anzeigen, indem Sie auf **Ansicht**klicken. Im Dialogfeld Detail Ergebnisse angezeigt werden Statistiken pro Problem zur Verfügung gestellt, wenn mindestens 500 markierte Bewertungsdateien vorhanden sind und mindestens 18 Dateien für das Problem relevant sind. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Grundlegendes zur Bewertung in Relevanz](assessment-in-relevance-in-advanced-ediscovery.md)
+[Bedeutung der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Kategorien und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging-und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Nachverfolgen der Relevanz Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
+[Nachverfolgen der Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Entscheiden je nach den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Entscheiden basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Testen der Relevanz Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
+[Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
 

@@ -1,113 +1,113 @@
 ---
-title: Anzeigen von Ergebnisse der Prozess-Modul in Office 365 erweiterte eDiscovery
+title: Anzeigen von Prozessmodulergebnissen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Informationen Sie zu Updates für die Ergebnisse eines Moduls Prozess in Office 365 erweiterte eDiscovery, einschließlich Vorgangsstatus und zusammenfassende Prozess ausgeführt.  '
-ms.openlocfilehash: 01093b0230aaf78ab7ccf1235f0874a0b69aa1bd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Erfahren Sie, wie Sie die Ergebnisse eines Process-Moduls in Office 365 Advanced eDiscovery finden, einschließlich Vorgangsstatus und Prozesszusammenfassung.  '
+ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528866"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218055"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Anzeigen von Ergebnisse der Prozess-Modul in Office 365 erweiterte eDiscovery
+# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Anzeigen von Prozessmodulergebnissen in Office 365 Advanced eDiscovery
 
-Nach dem **Vorbereiten** \> **Prozess** wird initiiert, können Sie Status und die Ergebnisse anzeigen. 
+Nachdem der **Vorbereitungs** \> **Prozess** eingeleitet wurde, können Sie den Fortschritt und die Ergebnisse anzeigen. 
   
 > [!NOTE]
-> Erweiterte eDiscovery erfordert eine Office 365 E3 mit das Add-on erweiterte Compliance oder ein Abonnement E5 für Ihre Organisation. Wenn Sie nicht, Planen haben und erweiterte eDiscovery ausprobieren möchten, können Sie die [Melden Sie sich für eine Testversion von Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="process-task-status"></a>Process Vorgangsstatus
+## <a name="process-task-status"></a>Prozess Vorgangsstatus
 
-Unter **Prepare** \> **Prozess** \> **Ergebnisse**, die auf der Seite wird der aktuelle Status (Wenn Prozess derzeit ausgeführt wird) oder den letzten Prozess Status Aufgabenstatus wie im folgenden Beispiel dargestellt.
+In **Prepare** \> **Process** \> **results**zeigt die Seite den aktuellen Status (falls Prozess derzeit ausgeführt wird) oder den Status Task der letzten Prozessstatus an, wie im folgenden Beispiel gezeigt.
   
 ![Prozessmodul-Aufgabenstatus](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
-Die angezeigten Aufgaben variieren je nach den ausgewählten Optionen Prozess. 
+Die angezeigten Aufgaben können abhängig von den ausgewählten Prozessoptionen variieren. 
   
-- **Inventar**: Erweiterte eDiscovery durchlaufen und alle Dateien, die für den Vorgang ausgewählt und führt die grundlegenden Datensammlung.
+- **Inventory**: Advanced eDiscovery durchläuft alle für Process ausgewählten Dateien und führt grundlegende Datensammlung aus.
     
-- **Calculate-Signaturen**: die digitalen Signaturen MD5 berechnet.
+- **Signaturen berechnen**: berechnet die digitalen MD5-Signaturen.
     
-- **Verbindung Extraction**: extrahiert innere oder enthaltenen Dateien rekursiv aus zusammengesetzter-Dateien (beispielsweise PST ZIP, MSG). Extrahierte Dateien werden im Ordner "Case" von der Groß-/Kleinschreibung gespeichert.
+- **Compounds Extraction**: extrahiert innere oder enthaltene Dateien rekursiv aus Verbunddateien (beispielsweise PST, ZIP, msg). Extrahierte Dateien werden im Case-Ordner des Falls gespeichert.
     
-- **Synchronisieren von Datenbank**: interne Datenbank Prozess.
+- **Synchronisieren der Datenbank**: interner Datenbankprozess.
     
-- **Kopieren von Dateien**: Kopien von Dateien. Für diese Aufgabe wird immer angezeigt, auch wenn die Option Dateien erweiterte Kopie ausgewählt ist.
+- **Dateikopie**: kopiert Prozessdateien. Diese Aufgabe wird immer angezeigt, auch wenn die Option Erweiterte Kopiendateien ausgewählt ist.
     
-- **Extraktion von Text**: systemeigene Dateien vorhanden sind, extrahiert erweiterte eDiscovery Text aus diesen Dateien DTSearch verwenden. Der extrahierte Text, der diese Dateien als Textdateien im Ordner "Case" gespeichert.
+- **Textextraktion**: Wenn systemeigene Dateien vorhanden sind, extrahiert Advanced eDiscovery Text aus diesen Dateien mithilfe von DTSearch. Der extrahierte Text dieser Dateien wird als Textdateien im Case-Ordner gespeichert.
     
-- **Aktualisieren von Metadaten**: die geladene Metadaten verarbeitet. 
+- **Aktualisieren von Metadaten**: verarbeitet die geladenen Metadaten. 
     
-- **Abschluss**: Interner, die Daten der schließt geladen Groß-/Kleinschreibung Dateien (beispielsweise identifizieren Fehler- und Erfolgsmeldungen-Dateien). 
+- **Finalisieren**: interne Verarbeitung, die die Daten der geladenen Fall Dateien finalisiert (beispielsweise identifizieren von Fehler-und Erfolgs Dateien). 
     
-Taskstatus: nach Abschluss des Tasks angezeigt. Während der Ausführung der Aufgaben, wird zur Dauer angezeigt.
+Vorgangsstatus: wird nach Abschluss der Aufgabe angezeigt. Während Vorgänge ausgeführt werden, wird die Ausführungsdauer angezeigt.
   
 > [!NOTE]
-> Abgeschlossene Aufgaben umfassen möglicherweise auch Summen für Dateien, die Verarbeitung abgeschlossen oder Dateien mit Fehlern. 
+> Abgeschlossene Aufgaben können auch Gesamtsummen für Dateien sein, die die Verarbeitung abgeschlossen haben, oder Dateien mit Fehlern. 
   
 > [!TIP]
-> "Abbrechen" bietet die Rollbackoption halten Sie die Ausführung der Prozess und klicken Sie dann auf den vorherigen Data Populator Rollback oder verarbeitete Daten gespeichert. Rollback löscht alle verarbeitete Daten. Wenn Sie nicht möchten, dass die verarbeiteten Daten an (beispielsweise planen, diese Dateien erneut zu laden), wählen Sie die "Abbrechen" Option in diesem Fenster zu wählen, führen Sie ein Rollback nicht verloren gehen. 
+> "Cancel" bietet eine Rollbackoption zum Beenden der Prozessausführung und zum erneuten Ausführen eines Rollbacks zur vorherigen Datenauffüllung oder zum Speichern der verarbeiteten Daten. Rollback löscht alle verarbeiteten Daten. Wenn Sie nicht möchten, dass die verarbeiteten Daten verloren gehen (beispielsweise möchten Sie diese Dateien erneut laden), wählen Sie die Option "Abbrechen" in diesem Fenster aus, um ein Rollback zu wählen. 
   
 ## <a name="process-summary"></a>Prozesszusammenfassung
 
-Unter Prepare \> Prozess \> Ergebnisse \> Process Zusammenfassung, wird eine Aufschlüsselung der geladene Dateiergebnisse entsprechend erfolgreiche Verarbeitung und Fehler Ergebnisse angezeigt.
+In Prepare \> Process \> results \> Process Summary wird eine Aufteilung der Ergebnisse der geladenen Dateien entsprechend den Ergebnissen der erfolgreichen Dateiverarbeitung und des Fehlers angezeigt.
   
-Die Bereiche präsentieren grafisch dargestellt der importierten Dateistatistiken, wie folgt:
+Die Bereiche enthalten eine grafische Darstellung der importierten Dateistatistiken wie folgt:
   
-- **Zusammenfassung Prozess angesammelt**d: alle Dateien in die Groß-/Kleinschreibung.
+- **Process Summary akkumulieren**d: alle Dateien im Fall.
     
-- **Zusammenfassung zuletzt verarbeitet**: Dateien aus dem letzten Sitzung oder Aktion geladen. 
+- **Prozesszusammenfassung**: Dateien, die aus der letzten Sitzung oder Aktion geladen wurden. 
     
-- **Letzte Familien**: Familie Informationen in die Groß-/Kleinschreibung (falls vorhanden).
+- **Familien Last**: Family Information in dem Fall (falls vorhanden).
     
-- Wenn **Seed** Dateien hinzugefügt wurden, wird die Anzahl der Startwert Dateien pro Problem aufgeführt, die für die Dateien definiert wurde. 
+- Wenn **seeddateien** hinzugefügt wurden, wird die Anzahl der Seed-Dateien pro Problem aufgeführt, das für die Dateien definiert wurde. 
     
-    Wenn die Markierung von **Seed** Dateien ausgefallen ist, wird, die auch hingewiesen. 
+    Wenn die Markierung von **Seed** -Dateien fehlgeschlagen ist, wird ebenfalls darauf hingewiesen. 
     
-- Wenn **vor dem markierte** Dateien hinzugefügt wurden, wird die Anzahl der Überprüfung vor dem markierten Dateien pro Problem aufgeführt, die für die Dateien definiert wurde. 
+- Wenn **** vordefinierte Dateien hinzugefügt wurden, wird die Anzahl der vorgetaggten Dateien pro Problem aufgeführt, das für die Dateien definiert wurde. 
     
-    Wenn das Markieren von Dateien **vor dem tagged** ausgefallen ist, ist, die auch darauf hingewiesen. 
+    Wenn die Markierung von **** Dateien mit Vorzeichen fehlgeschlagen ist, wird ebenfalls darauf hingewiesen. 
     
 ![Zusammenfassung des Prozessmoduls](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
-## <a name="process-summary-accumulated-and-last-charts"></a>Prozesszusammenfassung gesammelt und die letzte Diagramme
+## <a name="process-summary-accumulated-and-last-charts"></a>Zusammenfassung Kumulierter und letzter Diagramme
 
-Die linke Balken umfasst, Quelle + extrahierten Dateien: also alle Dateien gefunden. 
+Die linke Leiste enthält Quell-und extrahierte Dateien: alle gefundenen Dateien. 
   
-Das Recht, verarbeitet, umfasst:
+Der Rechte Balken, verarbeitet, umfasst:
   
-- Dateien mit Ladefehler
+- Dateien mit Ladefehlern
     
-- Erfolgreich geladenen Dateien, unter anderem der folgenden: 
+- Erfolgreich geladene Dateien, die Folgendes aufweisen können: 
     
-  - **Vorhandene**: Dateien, die geladen wurden, bevor und werden jetzt (einschließlich Duplikate) erneut geladen.
+  - **Vorhanden**: Dateien, die zuvor geladen wurden und erneut geladen werden (einschließlich Duplikate).
     
   - **Text**: eindeutige Dateien mit Text.
     
-  - **Nicht-Text**: Textdateien, leere systemeigene Textdateien, nicht-Text-Dateien zu leeren. 
+  - **Nicht-Text**: leere Textdateien, leere systemeigene Textdateien, systemeigene nicht-Textdateien. 
     
-  - **Doppelte**s: Duplicate-Dateien mit Text.
+  - **Duplikat**s: doppelte Dateien mit Text.
     
-## <a name="last-process-errors"></a>Letzte Prozess-Fehler
+## <a name="last-process-errors"></a>Letzte Prozessfehler
 
-Unter Prepare \> Prozess \> Ergebnisse \> letzten Prozess Fehler, Details der Fehler in der letzten Sitzung oder ausgeführte Aktion angezeigt werden.
+In Prepare \> Process \> results \> werden beim letzten Prozessfehler Details zu den Fehlern in der letzten ausgeführten Sitzung oder Aktion angezeigt.
   
 ![Prozessmodulfehler](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Erweiterte eDiscovery](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Das Prozess-Modul ausgeführt, und Laden von Daten](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+[Prozessmodul wird ausgeführt und Daten geladen](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

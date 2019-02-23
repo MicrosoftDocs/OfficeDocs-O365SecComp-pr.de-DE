@@ -6,83 +6,83 @@ manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 41eb4324-c513-4fa5-91c8-8fbd8aaba83b
-description: Mit der DLP-Berichte in Office 365 können Sie schnell die Anzahl der DLP-Richtlinie entspricht, überschreibt oder falsch positive Ergebnisse anzeigen; sehen Sie, ob sie über einen Zeitraum nach oben oder unten Trend sind; Filtern Sie den Bericht auf unterschiedliche Weise. und weitere Details durch Auswählen eines Punkts in einer Zeile im Diagramm anzeigen.
-ms.openlocfilehash: 379e66fc3f2611cf338739d030c2b1d48e7416d8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Mit den DLP-Berichten in Office 365 können Sie schnell die Anzahl der Übereinstimmungen, Überschreibungen oder falsch positiver DLP-Richtlinien anzeigen. sehen Sie nach, ob Sie im Laufe der Zeit nach oben oder unten tendieren; Filtern Sie den Bericht auf unterschiedliche Weise. , und zeigen Sie zusätzliche Details an, indem Sie einen Punkt auf einer Position im Diagramm auswählen.
+ms.openlocfilehash: 4e9e5405b5c35719c1b14efca91cdf87f416e7bd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013909"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217575"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Anzeigen der Berichtr zur Verhinderung von Datenverlust
 
-Nachdem Sie Ihre Data Loss Prevention (DLP) Richtlinien erstellen, sollten Sie sicherstellen, dass sie als Sie für die direkte Verwendung und hilft Ihnen, kompatibel bleiben arbeiten. Mit der DLP-Berichte in die Office 365-Sicherheit &amp; Compliance Center, Sie können schnell anzeigen:
+Nachdem Sie die Data Loss Prevention (DLP)-Richtlinien erstellt haben, sollten Sie sicherstellen, dass Sie wie gewünscht funktionieren und Ihnen helfen, die Kompatibilität zu behalten. Mit den DLP-Berichten im Office 365 Security &amp; Compliance Center können Sie schnell Folgendes anzeigen:
   
-- **DLP-richtlinienübereinstimmungen** In diesem Bericht werden die Anzahl der Übereinstimmungen mit DLP-Richtlinie über einen Zeitraum. Sie können den Bericht nach Datum, Position, Richtlinie oder Aktion filtern. Sie können diesen Bericht verwenden: 
+- **DLP-Richtlinien Übereinstimmungen** Dieser Bericht zeigt die Anzahl der DLP-Richtlinien Übereinstimmungen im Laufe der Zeit an. Sie können den Bericht nach Datum, Ort, Richtlinie oder Aktion filtern. Sie können diesen Bericht verwenden, um Folgendes zu tun: 
     
-  - Feinabstimmung oder verfeinern Ihrer DLP-Richtlinien, wie Sie sie im Testmodus ausführen. Sie können die Regel anzeigen, die den Inhalt abgeglichen.
+  - Optimieren oder optimieren Sie Ihre DLP-Richtlinien im Testmodus. Sie können die spezifische Regel anzeigen, die mit dem Inhalt übereinstimmte.
     
   - Sie können sich auf bestimmte Zeiträume konzentrieren und so mehr über die Gründe für Spitzen und Trends erfahren.
     
-  - Entdecken von Geschäftsprozessen, die Ihre Organisation DLP-Richtlinien verletzen.
+  - Entdecken Sie Geschäftsprozesse, die die DLP-Richtlinien Ihrer Organisation verletzen.
     
-  - Verstehen Sie alle geschäftliche Relevanz des DLP-Richtlinien von sehen, welche Aktionen auf Inhalte angewendet werden.
+  - Verstehen Sie alle geschäftlichen Auswirkungen der DLP-Richtlinien, indem Sie sehen, welche Aktionen auf Inhalte angewendet werden.
     
   - Sie können die Einhaltung einer bestimmten DLP-Richtlinie durch Anzeigen von Übereinstimmungen für diese Richtlinie überprüfen.
     
-  - Anzeigen einer Liste der wichtigsten Benutzer, und wiederholen Sie die Benutzer, die auf Vorfälle in Ihrer Organisation beitragen.
+  - Hier finden Sie eine Liste der wichtigsten Benutzer und Benutzer, die zu Vorfällen in Ihrer Organisation beitragen.
     
-  - Hier wird eine Liste der oberen Arten von vertraulichen Informationen in Ihrer Organisation.
+  - Zeigen Sie eine Liste der wichtigsten Arten von vertraulichen Informationen in Ihrer Organisation an.
     
-- **DLP-Vorfälle** In diesem Bericht werden auch Richtlinie Übereinstimmungen im Laufe der Zeit ein, wie die Richtlinie Bericht übereinstimmt. Die Richtlinie entspricht jedoch Bericht zeigt Übereinstimmungen auf einer Regelebene. Wenn eine e-Mail-Nachricht auf drei verschiedene Regeln entspricht, entspricht die Richtlinie beispielsweise Bericht zeigt drei verschiedene Zeilenelemente. Im Gegensatz dazu zeigt der Bericht Vorfälle Übereinstimmungen auf einer Elementebene; Beispielsweise zeigt Übereinstimmung eine e-Mail mit drei verschiedene Regeln, der Bericht Vorfälle ein einzelnes Line-Element für diesen Teil des Inhalts. 
+- **DLP** -Vorfälle Dieser Bericht zeigt auch Richtlinien Übereinstimmungen im Laufe der Zeit, wie der Bericht mit den Richtlinien Übereinstimmungen. Der Bericht mit den Richtlinien Übereinstimmungen zeigt jedoch Übereinstimmungen auf Regelebene an; Wenn beispielsweise eine e-Mail mit drei verschiedenen Regeln übereinstimmt, werden im Bericht mit den Richtlinien Übereinstimmungen drei verschiedene Einzelposten angezeigt. Im Gegensatz dazu zeigt der Vorfall Bericht Übereinstimmungen auf Elementebene an; Wenn beispielsweise eine e-Mail mit drei verschiedenen Regeln übereinstimmt, zeigt der Vorfall Bericht ein einzelnes Einzelteil für diesen Inhalt an. 
     
-  Da die Zahlen im Bericht unterschiedlich aggregiert werden, ist der Richtlinie Übereinstimmungen Bericht besser zum Identifizieren von Übereinstimmungen mit bestimmten Regeln und Feinabstimmung DLP-Richtlinien. Der Bericht Vorfälle ist besser geeignet, die bestimmte Teile des Inhalts, die für die DLP-Richtlinien problematisch sind identifiziert.
+  Da die Anzahl der Berichte unterschiedlich aggregiert ist, ist der Bericht "Richtlinien Übereinstimmungen" besser zur Identifizierung von Übereinstimmungen mit bestimmten Regeln und zur Optimierung von DLP-Richtlinien. Der Vorfall Bericht eignet sich besser für die Identifizierung bestimmter Inhaltsteile, die für ihre DLP-Richtlinien problematisch sind.
     
-- **Falsch positive Ergebnisse DLP und überschreibt** Wenn DLP-Richtlinie Benutzern ermöglicht das Überschreiben oder ein falsch positives Ergebnis angeben, wird in diesem Bericht Anzahl der solche Instanzen im Zeitverlauf. Sie können den Bericht nach Datum, Standort oder Richtlinie filtern. Sie können diesen Bericht verwenden: 
+- **DLP-falsch positive und-außer Kraft** setzungen Wenn Ihre DLP-Richtlinie es Benutzern ermöglicht, Sie zu überschreiben oder ein falsch positives Ergebnis zu melden, wird in diesem Bericht die Anzahl solcher Instanzen im Laufe der Zeit angezeigt. Sie können den Bericht nach Datum, Ort oder Richtlinie filtern. Sie können diesen Bericht verwenden, um Folgendes zu tun: 
     
-  - Feinabstimmung oder Ihrer DLP-Richtlinien verfeinern, indem Sie sehen, welche Richtlinien eine hohe Anzahl von falsch positive Ergebnisse entstehen.
+  - Optimieren oder optimieren Sie Ihre DLP-Richtlinien, indem Sie erkennen, welche Richtlinien eine hohe Anzahl falsch positiver Ergebnisse verursachen.
     
-  - Zeigen Sie die Nachweise von Benutzern gesendet werden, wenn sie einen richtlinientipp beheben, indem Sie die Richtlinie zu überschreiben.
+  - Zeigen Sie die von Benutzern übermittelten Begründungen an, wenn Sie einen richtlinientipp auflösen, indem Sie die Richtlinie überschreiben.
     
-  - Entdecken Sie die DLP-Richtlinien Konflikt mit gültigen Geschäftsprozesse durch eine hohe Anzahl von Benutzer tätigen, in dem außer Kraft gesetzt.
+  - Stellen Sie fest, wo DLP-Richtlinien mit gültigen Geschäftsprozessen in Konflikt stehen, indem Sie eine hohe Anzahl von Benutzerüberschreibungen verursachen.
     
-Alle DLP-Berichte können Daten aus der letzten vier Monat Zeitraum anzeigen. Die aktuellsten Daten dauert bis zu 24 Stunden in den Berichten angezeigt werden.
+Alle DLP-Berichte können Daten aus dem letzten viermonatigen Zeitraum anzeigen. Die neuesten Daten können bis zu 24 Stunden dauern, bis Sie in den Berichten angezeigt werden.
   
-Sie finden diese Berichte in das Wertpapier &amp; Compliance Center \> **Berichte** \> **Dashboard**.
+Diese Berichte finden Sie im **Dashboard**für Security &amp; Compliance Center \> - **Berichte** \> .
   
-![DLP-richtlinienübereinstimmungen Bericht](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![Bericht zu DLP-Richtlinien Übereinstimmungen](media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
-## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Zeigen Sie die Ausrichtung eines Benutzers für eine Außerkraftsetzung übermittelten an
+## <a name="view-the-justification-submitted-by-a-user-for-an-override"></a>Anzeigen der von einem Benutzer für eine Außerkraftsetzung übermittelten Ausrichtung
 
-Wenn DLP-Richtlinie außer Kraft setzen, Benutzer zulässt, können Sie das false positive Ergebnis verwenden und Überschreiben des Berichts, um den Text von Benutzern in den richtlinientipp übermittelt anzuzeigen.
+Wenn Ihre DLP-Richtlinie es Benutzern ermöglicht, diese zu überschreiben, können Sie den Bericht falsch positiv und außer Kraft setzen verwenden, um den von Benutzern im richtlinientipp übermittelten Text anzuzeigen.
   
-![Begründung Feld in den Details der DLP falsch positives Ergebnis und Außerkraftsetzung Bericht](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Feld "Ausrichtung" in Details des DLP-falsch positiven und-Außerkraftsetzungs Berichts](media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a>Ausführen einer Aktion auf Insights und Empfehlungen
+## <a name="take-action-on-insights-and-recommendations"></a>Ergreifen von Einblicken und Empfehlungen
 
-Berichte können anzeigen, Insights und Empfehlungen, in dem können Sie auf das rote Symbol finden Sie unter Details zur Ermittlung möglicher Probleme und mögliche Abhilfemaßnahmen übernehmen klicken.
+Berichte können Einblicke und Empfehlungen enthalten, mit denen Sie auf das rote Warnsymbol klicken können, um Details zu potenziellen Problemen anzuzeigen und mögliche Abhilfemaßnahmen zu ergreifen.
   
-![Durch Klicken auf ein Insights-Symbol, um Details und Aktionen finden Sie unter](media/51782036-7299-4960-8175-75c2b1637159.png)
+![Klicken auf ein Einblicke-Symbol, um Details und auszuführende Aktionen anzuzeigen](media/51782036-7299-4960-8175-75c2b1637159.png)
   
-## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Hier finden Sie die Cmdlets für die DLP-Berichte
+## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Suchen der Cmdlets für die DLP-Berichte
 
-Die meisten der Cmdlets für die Sicherheit zu verwendenden &amp; Compliance Center, müssen Sie:
+Um die meisten Cmdlets für das Security &amp; Compliance Center zu verwenden, müssen Sie Folgendes tun:
   
-1. [Verbinden mit der Office 365-Sicherheit &amp; Compliance Center mit remote-PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Verwenden Sie eine der folgenden [Sicherheit in Office 365 &amp; Compliance Center Cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Verwenden eines dieser [Office 365 Security &amp; Compliance Center](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409) -Cmdlets
     
-DLP-Berichte müssen jedoch Daten aus über Office 365, einschließlich Exchange Online ziehen. Aus diesem Grund stehen die Cmdlets für die DLP-Berichte in Exchange Online Powershell – nicht in Security &amp; Compliance Center Powershell. Aus diesem Grund müssen für die Verwendung von Cmdlets für die DLP-Berichte:
+DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich Exchange Online. Aus diesem Grund stehen die Cmdlets für die DLP-Berichte in Exchange Online PowerShell zur Verfügung, nicht &amp; im Security Compliance Center PowerShell. Um die Cmdlets für die DLP-Berichte zu verwenden, müssen Sie daher Folgendes tun:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
-2. Verwenden Sie eine dieser Cmdlets für die DLP-Berichte:
+2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
       - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
     

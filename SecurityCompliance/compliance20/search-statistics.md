@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,57 +14,53 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0cfc1e5f04887cbdbcc0be8854fc50d6f9b5f1f2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 98999d3d82efaace7673d70b0334cb0efb80fc08
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706006"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215205"
 ---
 # <a name="search-statistics"></a>Suchstatistiken
 
-Eine Möglichkeit, Sie können die Suchergebnisse überprüfen können ist, sehen Sie sich die Statistiken, um die Ergebnisse, um sicherzustellen, dass sie die gewünschte ausgerichtet. Wenn eine Suche abgeschlossen ist, sind allgemeine Statistiken für die Suche Details flyoutmenü aufgeführt:
-- Anzahl und Volumen der Elemente abgerufen, die von der Suche
-- Anzahl und Menge der indiziert/nicht indizierten teilweise Elemente, die in der Suche gefunden wurden
-- Anzahl der Postfächer und Speicherorte durchsucht. Um eine detaillierte Statistik anzuzeigen, klicken Sie auf "Statistik" aus der Suche Details flyoutmenü.
+Sie können Ihre Suchergebnisse auf eine Weise überprüfen, indem Sie sich die Statistiken rund um Ihre Ergebnisse ansehen, um sicherzustellen, dass Sie Ihren Erwartungen entsprechen. Wenn eine Suche abgeschlossen ist, werden allgemeine Statistiken im Such Detail Flyout angezeigt:
+- Anzahl und Umfang der von der Suche abgerufenen Elemente
+- Anzahl und Volumen von teilweise indizierten/nicht indizierten Elementen, die in den Suchspeicherorten gefunden wurden
+- Anzahl der durchsuchten Postfächer und Speicherorte. Um detailliertere Statistiken anzuzeigen, klicken Sie im Such Detail Flyout auf "Statistiken".
 
 ## <a name="summary"></a>Zusammenfassung
 
-In der Ansicht "Zusammenfassung" können Sie die Suchergebnisse, aufgeschlüsselt nach Typ des Speicherorts (z. B. Exchange) finden Sie unter. Für jeden Standort sehen Sie:
-- Anzahl von Standorten, die Elemente, die die Suchkriterien entsprechen.
-- Anzahl von Elementen aus dieser Speicherorte, die die Suchkriterien entsprechen.
-- Gesamtvolumen der Elemente, die die Suchkriterien entsprechen.
+In der Zusammenfassungsansicht können die Suchergebnisse nach Standorttyp aufgeschlüsselt angezeigt werden (beispielsweise Exchange). Für jeden Standorttyp können Sie Folgendes sehen:
+- Anzahl der Standorte mit Elementen, die den Suchbedingungen entsprechen
+- Anzahl der Elemente aus diesen Speicherorten, die den Suchbedingungen entsprechen
+- Gesamtvolumen der Elemente, die den Suchbedingungen entsprechen.
 
-## <a name="top-locations"></a>Obere Speicherorte
+## <a name="top-locations"></a>Top-Standorte
 
-In der oberen Speicherorte Ansicht finden Sie unter den einzelnen Standorten mit die meisten Übereinstimmungen. Für jeden Standort sehen Sie:
-- Name des Standorts (z. B. SharePoint-URL)
+In der Ansicht der oberen Speicherorte werden die einzelnen Standorte mit den meisten Treffern angezeigt. Für jeden Standort wird Folgendes angezeigt:
+- Speicherort Name (z. b. SharePoint-URL)
 - Typ des Speicherorts
-- Anzahl der Elemente, die die Suchkriterien entsprechen.
-- Gesamtvolumen der Elemente, die die Suchkriterien entsprechen.
+- Anzahl der Elemente, die den Suchbedingungen entsprechen
+- Gesamtvolumen der Elemente, die den Suchbedingungen entsprechen.
 
 ## <a name="queries"></a>Abfragen
 
-Wenn Sie (C:s) Schlüsselwort oder Schlüsselwort Zeilen in der Abfrage verwendet haben, können Sie die Aufschlüsselung der Abfrage in der Ansicht "Abfragen" pro Speicherorttyp sehen. Für jeden Standort sehen Sie:
+Wenn Sie in Ihrer Abfrage (c:s) Schlüsselwort-oder Stichwort Zeilen verwendet haben, können Sie den aufschlüsseln der Abfrage in der Ansicht Abfragen pro Standorttyp erkennen. Für jeden Standorttyp wird Folgendes angezeigt:
 
-- Teil: Diese Spalte wird entweder das Wort "Primary" oder "Schlüsselwort" haben. "Primary" bedeutet, dass die Zeile Statistiken auf die gesamte Abfrage darstellt, während "Schlüsselwort" eine der Abfragekomponenten bedeutet.
+- Bauteil: Diese Spalte hat entweder das Wort "Primary" oder "Schlüsselwort". "Primary" bedeutet, dass die Zeile Statistiken über die gesamte Abfrage enthält, wohingegen "Keyword" eine der Abfragekomponenten bedeutet.
 
-- Abfrage: die tatsächlichen Abfragekomponente verweist auf die Zeile. Wenn "Primary" gehört, wird dadurch der gesamten Abfrage; Wenn Teil "Schlüsselwort" war, sehen Sie eine der hier die Abfragekomponenten.
+- Query: die tatsächliche Abfragekomponente, auf die sich die Zeile bezieht. Wenn der Webpart "Primary" ist, handelt es sich um die gesamte Abfrage. Wenn Teil "Schlüsselwort" war, wird eine der Abfragekomponenten hier angezeigt.
   
-  - Wenn Sie alle InhaltKontextabhängiges Postfächer (durch Angabe keine Schlüsselwörter) suchen, ist die eigentliche Abfrage (Größe > = 0), damit alle Elemente zurückgegeben werden
+  - Wenn Sie alle Inhalte in Postfächern Durchsuchen (ohne Schlüsselwörter anzugeben), lautet die tatsächliche Abfrage (Größe > = 0), sodass alle Elemente zurückgegeben werden.
   
-  - Wenn Sie SharePoint Online und OneDrive for Business-Websites suchen, werden die beiden folgenden Komponenten hinzugefügt:
+  - Beim Durchsuchen von SharePoint Online-und OneDrive für Business-Websites werden die beiden folgenden Komponenten hinzugefügt:
     
-    - NICHT IsExternalContent:1 - schließt alle Inhalte aus einer lokalen SharePoint-Organisation
+    - NICHT IsExternalContent: 1-schließt Inhalte aus einer lokalen SharePoint-Organisation aus
     
-    - NICHT IsOneNotePage: 1 - schließt alle OneNote-Dateien, da diese Duplikate eines beliebigen Dokuments wäre, die mit die Suchabfrage übereinstimmt.
+    - NICHT isOneNotePage: 1-schließt alle OneNote-Dateien aus, da es sich dabei um Duplikate eines Dokuments handeln würde, das mit der Suchabfrage übereinstimmt.
 
-- Anzahl der Standorte, die Elemente hatte, die die Suchkriterien entsprechen.
+- Anzahl der Standorte mit Elementen, die den Suchbedingungen entsprechen.
 
-- Die Anzahl von Elementen aus dieser Speicherorte, die die Suchkriterien entsprechen.
+- Die Anzahl der Elemente aus diesen Speicherorten, die den Suchbedingungen entsprechen.
 
-- Gesamtvolumen der Elemente, die die Suchkriterien entsprechen.
-
-## <a name="refiners"></a>Einschränkungen
-
-Für eine Exchange-Postfächer kann Einschränkungen Ansicht zusätzliche Abstürzen von ItemClass, Absender und Empfänger. Für jeden Wert, Speicherort und Einschränkung sehen Sie, wie viele Dokumente in die Suche zurückgegeben wurden.
+- Gesamtvolumen der Elemente, die den Suchbedingungen entsprechen.

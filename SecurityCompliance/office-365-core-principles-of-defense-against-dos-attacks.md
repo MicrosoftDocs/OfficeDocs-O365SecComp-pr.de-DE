@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Wie Microsoft die Kernprinzipien der Absorption, der Erkennung und der Schadensminimierung bei der Abwehr von DoS-Angriffen (Denial-of-Service) nutzt.
-ms.openlocfilehash: 17dc583258cdb4781dbe2a715e1ce153ee769ed3
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091007"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216005"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Wichtige Grundsätze zum Schutz vor Denial-of-Service-Angriffen
 

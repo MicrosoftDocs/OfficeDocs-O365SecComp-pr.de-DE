@@ -5,52 +5,52 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
-description: Lesen Sie diesen Artikel erfahren, wie Office 365 Advanced Security Management, unterstützt von Cloud-App-Sicherheit in Microsoft Azure zu aktivieren.
-ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: In diesem Artikel erfahren Sie, wie Sie die Sicherheit von Office 365 Cloud-Apps aktivieren, die von Cloud App Security in Microsoft Azure unterstützt wird.
+ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603776"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220365"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren von Office 365 Cloud App Security
   
-|Auswertung **\>**|Planen der **\>**|Bereitstellung **\>**|Auslastung ***|
+|Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Starten Sie auswerten](office-365-cas-overview.md) <br/> |[Starten der Planung](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](activity-policies-and-alerts.md) <br/> |[Starten Sie die Nutzung](utilization-activities-for-ocas.md) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](activity-policies-and-alerts.md) <br/> |[Verwendung beginnen](utilization-activities-for-ocas.md) <br/> |
   
 ## <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren von Office 365 Cloud App Security
 
 > [!IMPORTANT]
-> Sie müssen ein globaler Administrator oder Sicherheitsadministrator zum Ausführen der folgenden Aufgabe sein. Weitere Informationen finden Sie unter [Berechtigungen in der Office 365-Sicherheit &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In der Reihenfolge für Office 365-Cloud-App-Sicherheit zu beheben, **muss die überwachungsprotokollierung aktiviert werden** , für die Office 365-Umgebung. Weitere Informationen finden Sie unter [Aktivieren von Office 365 Such-Protokoll aktiviert oder deaktiviert](turn-audit-log-search-on-or-off.md). 
+> Sie müssen ein globaler Administrator oder Sicherheitsadministrator sein, um die folgende Aufgabe ausführen zu können. Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Damit Office 365 Cloud App Security korrekt funktioniert, **muss die Überwachungsprotokollierung** für ihre Office 365-Umgebung aktiviert sein. Weitere Informationen finden Sie unter [Turn Office 365 Audit Log Search on or off](turn-audit-log-search-on-or-off.md). 
   
-1. Als globaler Administrator oder Sicherheitsadministrator, wechseln Sie zur [https://protection.office.com](https://security.microsoft.com) und melden Sie sich über Ihr Konto arbeiten oder Schule für Office 365. (Dadurch gelangen Sie zu der Sicherheit &amp; Compliance Center.) 
+1. Gehen Sie als globaler Administrator oder Sicherheitsadministrator zu und [https://protection.office.com](https://security.microsoft.com) melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. (Dadurch gelangen Sie zum Security &amp; Compliance Center.) 
     
-2. Wechseln Sie zu **Benachrichtigungen** \> **Verwalten erweiterte Warnungen**.
+2. Wechseln Sie zu **Warnungen** \> **Verwalten erweiterter Warnungen**.
     
-3. Aktivieren Sie das Kontrollkästchen Sie **auf Office 365-Cloud-App-Sicherheit**.
+3. Wählen Sie **Office 365 Cloud App Security**aktivieren aus.
     
-4. Wählen Sie, **Wechseln Sie zu Office 365-Cloud-App-Sicherheit**.<br/>![In das Wertpapier &amp; Compliance Center, wählen Sie erweiterte Benachrichtigungen verwalten, fahren Sie mit Office 365-Cloud-App-Sicherheit](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Dadurch gelangen Sie Cloud App Sicherheit in Office 365-Portal, können Berichte anzeigen und erstellen oder Bearbeiten Ihrer Richtlinien.
+4. Wählen Sie **Gehe zu Office 365 Cloud App Security**.<br/>![Wählen Sie im &amp; Security Compliance Center erweiterte Warnungen verwalten aus, um zu Office 365 Cloud App Security zu wechseln.](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Dadurch gelangen Sie zum Office 365 Cloud App-Sicherheitsportal, in dem Sie Berichte anzeigen und Richtlinien erstellen oder bearbeiten können.
 
-Nachdem Sie Office 365-Cloud-App-Sicherheit aktiviert haben, Sie gelangen zum Portal Cloud App-Sicherheit Vorsichtsmaßnahmen [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) von und Anmelden bei.
+Nachdem Sie Office 365 Cloud App Security aktiviert haben, können Sie zum Cloud App Security Portal navigieren, indem [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) Sie sich anmelden.
     
 > [!NOTE]
-> Wenn Sie Office 365-Cloud-App-Sicherheit aktivieren, wird in [Microsoft Cloud App-Sicherheit](https://aka.ms/whatiscas)Überwachungsinformationen über Ihre Office 365-Benutzerkonten und die Benutzeraktivitäten übertragen. Dies ermöglicht Office 365 erweiterte Benachrichtigungen, Filtern und anderen Features bereitstellen, damit können Sie Informationen abrufen und Ausführen einer Aktion zu verdächtigen Aktivitäten. 
+> Wenn Sie Office 365 Cloud App Security aktivieren, werden Überwachungsinformationen zu Ihren Office 365-Benutzerkonten und Benutzeraktivitäten an [Microsoft Cloud App Security](https://aka.ms/whatiscas)übertragen. Dadurch kann Office 365 erweiterte Warnungen, Filterung und andere Features bereitstellen, damit Sie Informationen abrufen und Maßnahmen zu verdächtigen Aktivitäten ergreifen können. 
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Richtlinien für die Aktivität](activity-policies-and-alerts.md)
+- [Aktivitätsrichtlinien](activity-policies-and-alerts.md)
     
-- [Anomalie Erkennungsrichtlinien](anomaly-detection-policies-in-ocas.md)
+- [Erkennungsrichtlinien für Anomalien](anomaly-detection-policies-in-ocas.md)
     
-- [Integrieren von Ihrem Server SIEM](integrate-your-siem-server-with-office-365-cas.md)
+- [Integrieren Ihres SIEM-Servers](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Gruppieren Sie Ihre IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
+- [Gruppieren Ihrer IP-Adressen zur Vereinfachung der Verwaltung](group-your-ip-addresses-in-ocas.md)
     
 
