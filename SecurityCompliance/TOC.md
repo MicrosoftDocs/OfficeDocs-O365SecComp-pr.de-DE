@@ -146,7 +146,7 @@
 #### [Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [S/MIME](s-mime-for-message-signing-and-encryption.md)
 #### [S/MIME für die Nachrichtensignierung und -verschlüsselung](s-mime-for-message-signing-and-encryption.md)
-#### [Konfigurieren von S/MIME-Einstellungen für Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+#### [Konfigurieren von S/MIME-Einstellungen für Outlook im Web](configure-s-mime-settings-for-outlook-web-app.md)
 #### [Senden und Empfangen S/MIME-signierter und -verschlüsselter E-Mails](send-and-receive-s-mime-signed-and-encrypted-email.md)
 #### [Synchronisierung von Benutzerzertifikaten nach Office 365 für S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 #### [Einrichten einer virtuellen Zertifikatauflistung für die Überprüfung von S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
@@ -282,7 +282,7 @@
 
 ### [Verwalten von Speichern](compliance20/managing-holds.md)
 
-### [Beheben von Verarbeitungsfehlern](compliance20/processing-data-for-case.md)
+### [Arbeiten mit Verarbeitungsfehlern](compliance20/processing-data-for-case.md)
 #### [Erweiterte Indizierung der Daten von Verwaltungsberechtigten](compliance20/indexing-custodian-data.md)
 #### [Beheben von Fehlern beim Verarbeiten von Daten](compliance20/error-remediation.md)
 
