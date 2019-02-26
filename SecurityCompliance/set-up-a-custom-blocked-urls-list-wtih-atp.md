@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Office 365 Advanced Threat Protection eine Liste blockierter URLs für Ihre Organisation einrichten. Die blockierten URLs gelten für e-Mail-Nachrichten und Office-Dokumente gemäß ihren Richtlinien für ATP Safe Links.
-ms.openlocfilehash: ad9c613221b94e61022b11541ee068e35e47cc70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c5444e644a35688ea626004fbc6865df4ae645f9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213025"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241917"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-sicheren Links
 

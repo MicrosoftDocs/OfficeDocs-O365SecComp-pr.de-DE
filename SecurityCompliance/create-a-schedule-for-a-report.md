@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Erfahren Sie, wie Sie im Security &amp; Compliance Center einen Zeitplan für einen Bericht einrichten.
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216755"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241867"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center
 
@@ -45,7 +45,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und](reports-and-in
   
     Wenn Sie den Berichtszeitplan anpassen möchten, können Sie die Häufigkeit des Berichts, die e-Mail-Adresse des Absenders und die e-Mail-Adresse eines Empfängers angeben. 
     
-Nachdem Sie einen Zeitplan für einen Bericht erstellt haben, wird dieser Bericht automatisch an die Emali-Adressen des Empfängers übermittelt. 
+Nachdem Sie einen Zeitplan für einen Bericht erstellt haben, wird dieser Bericht automatisch per e-Mail an die e-Mail-Adressen von Empfängern zugestellt. 
   
 ## <a name="related-topics"></a>Verwandte Themen
 
