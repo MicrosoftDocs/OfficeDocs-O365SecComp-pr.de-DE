@@ -5,19 +5,21 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
+ms.collection:
+- M365-security-compliance
 description: Administratoren können Informationen zum Erstellen von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) zum Verschlüsseln und Entschlüsseln von Nachrichten mit der Office 365-Nachrichtenverschlüsselung (OM) erlernen.
-ms.openlocfilehash: 38838bea22eda1b3bc92fa33902ed38f4cd052e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f76abe2d341b9e3677a90d447e70f6091e3a91cc
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218555"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276205"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Office 365
 

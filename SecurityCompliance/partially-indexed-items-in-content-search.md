@@ -5,24 +5,26 @@ author: markjjo
 manager: laurawi
 ms.date: 5/11/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - SPO160
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in einer Inhaltssuche über das Office 365 Security &amp; Compliance Center ausführen können. '
-ms.openlocfilehash: 1f307f3ecff1bb63c30ff6ce1f792901475fe2c4
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 8a04be425e2d9ea0f91518b99c18edfb25a85c63
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223434"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296748"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Teilweise indizierte Elemente in der Inhaltssuche in Office 365
 

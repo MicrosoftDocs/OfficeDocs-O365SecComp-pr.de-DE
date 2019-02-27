@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: In Office 365 können Sie die postfachüberwachungsprotokollierung aktivieren, um den Postfachzugriff durch Postfachbesitzer, Stellvertretungen und Administratoren zu protokollieren. Die postfachüberwachung in Office 365 ist standardmäßig nicht aktiviert. Nachdem Sie die postfachüberwachungsprotokollierung für ein Postfach aktiviert haben, können Sie im Office 365-Überwachungsprotokoll nach Aktivitäten suchen, die für das Postfach durchgeführt werden.
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214605"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295918"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Aktivieren der Postfachüberwachung in Office 365
   

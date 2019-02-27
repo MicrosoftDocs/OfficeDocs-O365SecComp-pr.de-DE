@@ -1,7 +1,7 @@
 ---
 title: Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
+ms.collection:
+- M365-security-compliance
 description: Als Exchange Online- oder Exchange Online Protection-Administrator (EOP) können Sie sicherstellen, dass eine E-Mail-Nachricht, die den Dienst durchläuft, nicht als Spam gekennzeichnet wird. Lesen Sie die aktualisierte Version der Tipps und Vorgehensweisen zu dieser Aufgabe unter Verhindern der Kennzeichnung von falsch positiver E-Mail als Spam mithilfe einer Liste sicherer Adressen oder anderer Techniken.
-ms.openlocfilehash: a28c20cf05b6054be06fba9deb821741d0ff262b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: e8fecb3bd7411f2d5d24bf607dc2517b278eb108
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003094"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275885"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird
 

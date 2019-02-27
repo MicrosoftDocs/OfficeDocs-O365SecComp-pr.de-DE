@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Office 365 Security & Compliance Center, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
-ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223764"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296608"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center
 
@@ -54,6 +56,8 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder
 - Benutzer-und Administrator Aktivität in Microsoft Stream
 
 - Analysten-und Administratoraktivitäten in Microsoft Workplace Analytics
+
+- Benutzer-und Administrator Aktivität in PowerApps
     
    
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
@@ -295,8 +299,8 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu wec
 |[Aktivitäten der Anwendungsverwaltung](#application-administration-activities) <br/> |[Rollen Verwaltungsaktivitäten](#role-administration-activities) <br/> |[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/> |
 |[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
 [Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Aktivitäten mit jammern](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>
-||||
+|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>|
+|||
    
   
 ### <a name="file-and-page-activities"></a>Datei-und Seiten Aktivitäten
@@ -663,6 +667,9 @@ In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in jamm
 
 Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Informationen zur Überwachung von Flow-Aktivitäten finden Sie in den Blog- [Microsoft Flow-Überwachungsereignissen, die jetzt im Office 365 Security _AMP_ Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+
+Sie können das Überwachungsprotokoll nach App-bezogenen Aktivitäten in PowerApps durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, starten und Veröffentlichen einer App. das Zuweisen von Berechtigungen zu apps wird ebenfalls überwacht. Eine Beschreibung aller PowerApps-Aktivitäten finden Sie unter [Aktivitätsprotokollierung für PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   

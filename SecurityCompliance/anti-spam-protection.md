@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Informationen zu den Antispam-Einstellungen und-Filtern, die Ihnen helfen, Spam in Exchange Online und Office 365 zu verhindern. Zu viel Spam in Office 365? Sie können Ihre Spamfilter und Anti-Spam-Richtlinieneinstellungen anpassen.
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223424"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296318"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Antispamschutz für Office 365-E-Mails
 
@@ -75,7 +75,7 @@ Wenn Sie sich Sorgen über Spam, Phishing und Spoofing in Office 365 machen, ver
   
 [Verwenden einer Liste sicherer IP-Adressen oder anderer Techniken, um zu verhindern, dass falsch positive E-Mails als Spam markiert werden](prevent-email-from-being-marked-as-spam-0.md)
   
-[Einrichten von Office 365-Spamfilterung zur Unterstützung der Blockierung von Junk-e-Mails](block-email-spam-to-prevent-false-negatives.md)
+[Einrichten von Office 365-Spamfilterung zur Unterstützung der Blockierung von Junk-e-Mails](reduce-spam-email.md)
   
 [Was ist der Unterschied zwischen Junk-e-Mails und Massen-e-Mails?](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   

@@ -7,18 +7,19 @@ ms.date: 1/30/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Verwenden Sie die Suchstatistik Funktion, um Statistiken für mehrere Inhalts suchVorgänge im Office 365 Security &amp; Compliance Center anzuzeigen und zu vergleichen. Sie können die Stichwortliste auch beim Erstellen oder Bearbeiten einer Suchabfrage konfigurieren, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern oder Schlüsselwörtern übereinstimmen.
-ms.openlocfilehash: c62f04e690661a5a7022fa00f727d1be39e74f12
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214827"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295728"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse
 

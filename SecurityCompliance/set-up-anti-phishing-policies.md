@@ -1,7 +1,7 @@
 ---
 title: Einrichten von ATP-Antiphishingrichtlinien in Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -9,13 +9,15 @@ ms.date: 02/06/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
+ms.collection:
+- M365-security-compliance
 description: Schutz vor Phishing, mit umfassendem Schutz als Teil von Office 365 Advanced Threat Protection und grundlegender Schutz in Office 365 Exchange Online Protection, können zum Schutz Ihrer Organisation vor böswilligen Identitätswechsel-basierten Phishing-Angriffen beitragen. und andere Phishing-Angriffe.
-ms.openlocfilehash: da18fdb3592d4d0dbe3d62c11627a7057fec5ed6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4a647463dd37261cfa1f4c2fd2901ed8f12902b7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213705"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276275"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP-Antiphishing-und-Phishing-Richtlinien
 
@@ -114,7 +116,7 @@ Der Sicherheitsadministrator bei Contoso kann Werte wie den folgenden verwenden,
 |:-----|:-----|
 |**Einstellung oder Option** <br/> |**Beispiel** <br/> |
 |Name  <br/> |Domäne und CEO  <br/> |
-|Description  <br/> |Stellen Sie sicher, dass der CEO und unsere Domäne nicht angenommen werden.  <br/> |
+|Beschreibung  <br/> |Stellen Sie sicher, dass der CEO und unsere Domäne nicht angenommen werden.  <br/> |
 |Hinzufügen von Benutzern zu schützen  <br/> |Die e-Mail-Adresse des CEO mindestens.  <br/> |
 |Hinzufügen von Domänen zum Schutz  <br/> |Die Organisationsdomäne, die das Office des CEO enthält.  <br/> |
 |Aktionen auswählen  <br/> |Wenn e-Mails von einem imitierten Benutzer gesendet werden: Wählen Sie **Nachricht an eine andere e-Mail-Adresse umleiten** aus, und geben Sie dann die e `securityadmin@contoso.com`-Mail-Adresse des Sicherheitsadministrators ein, beispielsweise.  <br/> Wenn e-Mails von einer angenommenen Domäne gesendet werden: Wählen Sie **Quarantäne Nachricht**aus.  <br/> |

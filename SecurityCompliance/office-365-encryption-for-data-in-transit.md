@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: 'Zusammenfassung: eine kurze Erläuterung, wie Microsoft Daten während der Übertragung verschlüsselt.'
-ms.openlocfilehash: 987e923e242b47b07ad1ef65e5c7ce791c27d5bd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 596b884ac76c9b138d01958363c7921acf926345
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217505"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275845"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365-Verschlüsselung für Daten während der Übertragung
 
@@ -34,7 +35,7 @@ Die öffentlichen Zertifikate werden von Microsoft IT SSL mithilfe von SSLAdmin,
 Alle Implementierungsdetails wie die verwendete TLS-Version, ob das Forward-Geheimhaltungsverfahren (FS) aktiviert ist, die Reihenfolge der Verschlüsselungs Pakete usw. sind öffentlich verfügbar. Eine Möglichkeit, diese Details anzuzeigen, ist die Verwendung einer Drittanbieterwebsite wie Qualys SSL Labs (www.ssllabs.com). Nachfolgend finden Sie die Links zu automatisierten Testseiten von Qualys, die Informationen für die folgenden Dienste anzeigen:
 - [Office 365-Portal](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
-- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
+- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
 - [Skype for Business (SIP)](https://www.ssllabs.com/ssltest/analyze.html?d=sipdir.online.lync.com)
 - [Skype for Business (Web)](https://www.ssllabs.com/ssltest/analyze.html?d=webdir.online.lync.com&hideResults=on)
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)

@@ -1,7 +1,7 @@
 ---
 title: Videos für erste Schritte mit EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 3/13/2015
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+ms.collection:
+- M365-security-compliance
 description: Die folgenden Videos unterstützen Sie beim Einrichten und Verwenden von des EOP-gehosteten (Exchange Online Protection) E-Mail-Filterungsdiensts.
-ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027642"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276005"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Videos für erste Schritte mit EOP
 
@@ -54,14 +56,14 @@ EOP enthält außerdem Einstellungen, um Schadsoftware zu behandeln, die vom Die
 - Konfigurieren der Richtlinie gegen Schadsoftware
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    Weitere Informationen finden Sie im Thema [Configure Anti-Malware Policies](../configure-anti-malware-policies.md) . 
+    Weitere Informationen finden Sie im Thema [configure Anti-Malware Policies](../configure-anti-malware-policies.md) . 
     
 Zum Filtern und Weiterleiten von Nachrichten, das auf den von Ihnen festgelegten Bedingungen oder auf Unternehmensrichtlinien bzw. Bestimmungen basiert, eignet sich das Video, in dem das Erstellen von Transportregeln besprochen wird.
   
 - Konfigurieren der Exchange-Transportregeln in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Weitere Informationen finden Sie im Thema [Mail Flow Regeln (Transportregeln) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) , wenn Sie EOP als eigenständige Lösung verwenden, oder finden Sie im Thema [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , wenn Sie Exchange Online verwenden. 
+    Weitere Informationen finden Sie unter [Nachrichtenfluss Regeln (Transportregeln) im Thema Exchange Online Protection](mail-flow-rules-transport-rules-0.md) , wenn Sie EoP eigenständig verwenden, oder lesen Sie das Thema [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , wenn Sie Exchange Online verwenden. 
     
 Wenn Sie den Dienst durch das Ausführen von Skripts in der Befehlszeile konfigurieren möchten, bietet das Video zu Remote PowerShell eine gute Einführung dazu.
   

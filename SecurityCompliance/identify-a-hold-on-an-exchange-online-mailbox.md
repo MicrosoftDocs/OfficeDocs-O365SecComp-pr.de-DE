@@ -7,17 +7,18 @@ ms.date: 6/22/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Erfahren Sie, wie Sie die verschiedenen Aufbewahrungsarten identifizieren können, die in einem Office 365-Postfach gespeichert werden dürfen. Zu diesen Aufbewahrungsarten gehört das Litigation Hold, eDiscovery Holds und Office 365 Retention Policies. Sie können auch feststellen, ob ein Benutzer von einer organisationsweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 9c286ac6303a4d1f85e94e4ae6ca2163081e51b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219105"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296808"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -88,7 +89,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 In der folgenden Tabelle werden die unterschiedlichen organisationsweiten Aufbewahrungsarten und die Identifizierung der einzelnen Typen anhand der GUIDs beschrieben, die in der *InPlaceHolds* -Eigenschaft enthalten sind, wenn Sie das Cmdlet **Get-OrganizationConfig** ausführen.
 
 
-|Haltebereichstyp  |Beispielwert  |Description  |
+|Haltebereichstyp  |Beispielwert  |Beschreibung  |
 |---------|---------|---------|
 |Office 365-Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und Teams-Chats angewendet werden    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer, öffentliche Exchange-Ordner und 1xN-Chats in Microsoft Teams angewendet werden, werden durch `mbx` GUIDs identifiziert, die mit dem Präfix beginnen. Beachten Sie, dass 1xN-Chats im Postfach der einzelnen Chat Teilnehmer gespeichert werden.      |
 |Office 365-Aufbewahrungsrichtlinie, die auf Office 365-Gruppen und Teams-Kanal Nachrichten angewendet wird     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organisationsweite Aufbewahrungsrichtlinien, die auf Office 365-Gruppen und Kanal Nachrichten in Microsoft Teams angewendet werden, werden durch GUIDs `grp` identifiziert, die mit dem Präfix beginnen. Beachten Sie, dass Kanal Nachrichten im Gruppenpostfach gespeichert sind, das einem Microsoft-Team zugeordnet ist.     |

@@ -7,18 +7,19 @@ ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Mithilfe des Cmdlets Search-Mailbox können Administratoren Benutzerpostfächer durchsuchen und anschließend Nachrichten aus Postfächern löschen.
-ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002824"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297128"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Suchen nach und Löschen von Nachrichten – Administratorhilfe
   
@@ -36,19 +37,19 @@ Als zusätzliche Schutzmaßnahme können Sie die Nachrichten zuerst in ein ander
     
 - Ihnen müssen die beiden folgenden Verwaltungsrollen zugewiesen sein, damit Sie in den Benutzerpostfächern nach Nachrichten suchen und Nachrichten löschen können:
     
-  - **Postfachsuche**– diese Rolle können Sie über mehrere Postfächer in Ihrer Organisation nach Nachrichten gesucht. Administratoren sind nicht dieser Rolle standardmäßig zugewiesen. Um sich selbst, damit Sie Postfächer suchen können diese Rolle zuweisen möchten, fügen Sie selbst als Mitglied der Rollengruppe "Discoveryverwaltung" hinzu. Finden Sie unter [Hinzufügen eines Benutzers auf die Rolle "Discoveryverwaltung"](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Postfachsuche**: mit dieser Rolle können Sie nach Nachrichten in mehreren Postfächern in Ihrer Organisation suchen. Administratoren wird diese Rolle nicht standardmäßig zugewiesen. Wenn Sie diese Rolle so zuweisen möchten, dass Sie Postfächer durchsuchen können, fügen Sie sich selbst als Mitglied der Rollengruppe "Discoveryverwaltung" hinzu. Weitere Informationen finden Sie unter [Hinzufügen eines Benutzers zur Rollengruppe "discoveryVerwaltung"](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Postfach Import/Export** - dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers zu löschen. Standardmäßig ist nicht dieser Rolle alle Rollengruppe zugewiesen. Um Nachrichten aus den Postfächern der Benutzer zu löschen, können Sie die Rolle Postfach Import/Export der Rollengruppe "Organisationsverwaltung" hinzufügen. Weitere Informationen finden Sie im Abschnitt "Hinzufügen eine Rolle zu einer Rollengruppe" in [Rollengruppen verwalten](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
+  - **Post Fach Import** – mit dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers löschen. Diese Rolle wird standardmäßig keiner Rollengruppe zugewiesen. Zum Löschen von Nachrichten aus Benutzerpostfächern können Sie die Rolle "Post Fach Import-Export" zur Rollengruppe "Organisationsverwaltung" hinzufügen. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" unter [Verwalten von Rollengruppen](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
     
 - Wenn für das Postfach, aus dem Sie Nachrichten löschen möchten, die Wiederherstellung einzelner Elemente aktiviert ist, müssen Sie diese Funktion zuerst deaktivieren. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der Wiederherstellung einzelner Elemente für ein Postfach](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Wenn das Postfach aus dem Sie Nachrichten löschen möchten, in die Warteschleife gestellt wird, wird empfohlen, dass Sie mit der Verwaltung von Datensätzen und die rechtsabteilung vor den Haltestatus entfernen und löschen den Inhalt von Postfächern überprüfen. Nachdem Sie Genehmigung erhalten haben, befolgen Sie die Schritte im Thema [Der Ordner für wiederherstellbare Elemente Clean](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)aus.
+- Wenn das Postfach, aus dem Sie Nachrichten löschen möchten, gespeichert wird, empfehlen wir, dass Sie sich vor dem Entfernen des haltebereichs und Löschen des Postfachinhalts bei ihrer Datensatzverwaltung oder Rechtsabteilung erkundigen. Nachdem Sie die Genehmigung erhalten haben, führen Sie die im Thema [Bereinigen des Ordners "Wiederherstellbare Elemente"](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)aufgeführten Schritte aus.
     
 - Mithilfe des Cmdlets **Search-Mailbox** können maximal 10.000 Postfächer durchsucht werden. Wenn Sie eine Exchange Online-Organisation mit mehr als 10.000 Postfächern haben, können Sie die Funktion „Compliancesuche" (oder das entsprechende Cmdlet **New-ComplianceSearch** ) verwenden, um eine unbegrenzte Anzahl von Postfächern zu durchsuchen. Anschließend können Sie mit dem Cmdlet **New-ComplianceSearchAction** die Nachrichten löschen, die von der Compliancesuche zurückgegeben wurden. Weitere Informationen finden Sie unter [Suchen und Löschen von E-Mail-Nachrichten in Ihrer Office 365-Organisation - Administratorhilfe](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     
 - Wenn Sie eine Suchabfrage (durch Verwendung des Parameters  *SearchQuery*  ) einschließen, gibt das Cmdlet **Search-Mailbox** maximal 10.000 Elemente in den Suchergebnissen zurück. Wenn Sie also eine Suchabfrage einschließen, müssen Sie den Befehl **Search-Mailbox** möglicherweise mehrere Male ausführen, um mehr als 10.000 Elemente zu löschen. 
     
-- Archivpostfach des Benutzers wird auch gesucht werden soll, wenn Sie das **Search-Mailbox** -Cmdlet ausführen. In ähnlicher Weise werden Elemente in der primären Archivpostfach beim Verwenden mit dem Cmdlet **Search-Mailbox** mit _der Option deletecontent_ gelöscht. Um dies zu verhindern, können Sie die Option *DoNotIncludeArchive* einschließen. Darüber hinaus wird empfohlen, dass Sie _der Option deletecontent_ nicht verwenden zum Löschen von Nachrichten in Exchange Online Postfächer, die automatisch erweitert Archivierung aktiviert, da unerwartete Datenverluste auftreten kann. 
+- Das Archivpostfach des Benutzers wird auch durchsucht, wenn Sie das Cmdlet **Search-Mailbox** ausführen. Entsprechend werden Elemente im primären Archivpostfach gelöscht, wenn Sie das Cmdlet **Search-Mailbox** mit der _deletecontent_ -Option verwenden. Um dies zu verhindern, können Sie die *DoNotIncludeArchive* -Option einbeziehen. Außerdem wird empfohlen, dass Sie die Option _deletecontent_ nicht verwenden, um Nachrichten in Exchange Online-Postfächern zu löschen, die die automatische Archivierung aktiviert haben, da unerwarteter Datenverlust auftreten kann. 
     
 ## <a name="search-messages-and-log-the-search-results"></a>Suchen von Nachrichten und Protokollieren der Suchergebnisse
 

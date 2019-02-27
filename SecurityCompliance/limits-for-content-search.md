@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Informieren Sie sich über die Grenzwerte für die Inhaltssuche im Office 365 Security &amp; Compliance Center, wie beispielsweise die maximale Anzahl gleichzeitiger Suchvorgänge. '
-ms.openlocfilehash: 0d114db30e9c5b61477789f8a2b91b88c936b253
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 1ac2566da67453c36f54f5371d3ec36518975246
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223114"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296938"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Grenzwerte für die Inhaltssuche im Office 365 &amp; Security Compliance Center
 

@@ -1,7 +1,7 @@
 ---
 title: Steuern ausgehender Spamnachrichten in Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: Admin
 ms.topic: overview
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
 description: Wenn Ihre Organisation eine große Anzahl von Massensendungen sendet, die als Spam gekennzeichnet sind, können Sie das Senden von e-Mails mit Office 365 blockieren. Lesen Sie diesen Artikel, um mehr darüber zu erfahren, warum dies geschieht und was Sie dagegen tun können.
-ms.openlocfilehash: 1098d22dedf9fd2a40b6ad8320c61ecd86f66593
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2cfcb7016b0c0d11117f6d78af2632229c70aa1d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218685"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275925"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Steuern ausgehender Spamnachrichten in Office 365
 

@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Spamfilterungsoptionen
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/26/2015
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Erweiterte Spam Filterungsoptionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird der Spamfaktor der Nachricht erhöht (wodurch das Potenzial für eine Identifizierung als Spam gesteigert wird) oder die Nachricht als Spam markiert wird. Die ASF-Optionen Zielen auf bestimmte Nachrichteneigenschaften wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten gefunden werden.
-ms.openlocfilehash: d9333fd4f5c8937e440efb15e1a04db787b39b78
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: dd782c4e1e95865651df7e9e14b72a920c8efd6f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218675"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275965"
 ---
 # <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
 

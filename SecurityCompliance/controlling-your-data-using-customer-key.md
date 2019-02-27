@@ -1,7 +1,7 @@
 ---
 title: Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 8/1/2018
 ms.audience: ITPro
@@ -14,16 +14,16 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie den Kundenschlüssel für Office 365 für Exchange Online, Skype for Business, SharePoint Online und OneDrive for Business einrichten. Mit dem Kundenschlüssel können Sie die Verschlüsselungsschlüssel Ihrer Organisation steuern und dann Office 365 so konfigurieren, dass Sie zum Verschlüsseln Ihrer Daten im Rest in Microsoft-Rechenzentren verwendet werden.
-ms.openlocfilehash: a14a213951bc87e4106e150c88c6b1461a5e685e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218755"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296668"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln
 
-Mit dem Kundenschlüssel können Sie die Verschlüsselungsschlüssel Ihrer Organisation steuern und dann Office 365 so konfigurieren, dass Sie zum Verschlüsseln Ihrer Daten im Rest in Microsoft-Rechenzentren verwendet werden. Zu den restlichen Daten gehören Daten aus Exchange Online und Skype for Business, die in Postfächern und Dateien gespeichert sind, die in SharePoint Online und OneDrive for Business gespeichert sind.
+Mit dem Kundenschlüssel können Sie die Verschlüsselungsschlüssel Ihrer Organisation steuern und dann Office 365 so konfigurieren, dass Sie zum Verschlüsseln Ihrer Daten im Rest in Microsoft-Rechenzentren verwendet werden. Mit anderen Worten: der Kundenschlüssel ermöglicht es Kunden, mit ihren Schlüsseln eine Verschlüsselungsschicht hinzuzufügen, die Ihnen gehört. Zu den restlichen Daten gehören Daten aus Exchange Online und Skype for Business, die in Postfächern und Dateien gespeichert sind, die in SharePoint Online und OneDrive for Business gespeichert sind.
   
 Sie müssen Azure einrichten, bevor Sie den Kundenschlüssel für Office 365 verwenden können. In diesem Thema werden die Schritte beschrieben, die Sie ausführen müssen, um die erforderlichen Azure-Ressourcen zu erstellen und zu konfigurieren und dann die Schritte zum Einrichten des Kunden Schlüssels in Office 365. Nachdem Sie das Azure-Setup abgeschlossen haben, legen Sie fest, welche Richtlinie und daher welche Schlüssel den Postfächern und Dateien in Ihrer Organisation zugewiesen werden sollen. Postfächer und Dateien, für die Sie keine Richtlinie zuweisen, verwenden Verschlüsselungsrichtlinien, die von Microsoft gesteuert und verwaltet werden. Weitere Informationen zum Kundenschlüssel oder eine allgemeine Übersicht finden Sie unter [Kundenschlüssel für Office 365 FAQ](service-encryption-with-customer-key-faq.md).
   

@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfach in Office 365 erstellen, indem Sie für das Postfach eine Aufbewahrungs-oder Office 365-Richtlinie anwenden und dann das entsprechende Office 365-Benutzerkonto löschen. Elemente in einem inaktiven Postfach werden für die Dauer der Aufbewahrungs-oder Beibehaltungsrichtlinie beibehalten, die vor der Deaktivierung der Sperre angewendet wurde. Wenn Sie ein inaktives Postfach dauerhaft löschen möchten, entfernen Sie einfach die Aufbewahrungsrichtlinie.
-ms.openlocfilehash: 8f798873da7d787b54932438e81aebf2dfe85181
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1f5d0aa01e9688aaa5955b9721dded9b85afdfba
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217775"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295518"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Erstellen und Verwalten inaktiver Postfächer in Office 365
 

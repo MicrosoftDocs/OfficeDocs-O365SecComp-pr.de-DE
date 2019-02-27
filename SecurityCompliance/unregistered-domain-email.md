@@ -1,7 +1,7 @@
 ---
 title: Nicht registrierte Domänen-e-Mails
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- M365-security-compliance
 description: Wenn Sie eine große Anzahl von nicht registrierten Domänen-e-Mails senden, besteht das Risiko, dass Ihre e-Mails blockiert werden. Lesen Sie diesen Artikel, um mehr zu erfahren.
-ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220775"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276225"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Nicht registrierte Domänen-e-Mails: was Sie wissen müssen
 

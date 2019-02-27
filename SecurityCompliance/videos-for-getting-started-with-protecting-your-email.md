@@ -1,7 +1,7 @@
 ---
 title: Videos für die ersten Schritte beim Schützen Ihrer E-Mails
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+ms.collection:
+- M365-security-compliance
 description: Die folgenden Einführungsvideos helfen Ihnen dabei, Ihre Postfächer mit Exchange Online Protection (EOP) zu schützen. Diese Videos richten sich an Kunden mit einer eigenständigen EOP-Lösung, die lokale Postfächer, wie z. B. Exchange Server 2013-Postfächer, schützen möchten und an Exchange Online-Kunden, deren cloudgehostete Postfächer standardmäßig durch EOP geschützt sind.
-ms.openlocfilehash: 42d92b36cbfcf3261e391c8b3d74f44050f2881a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b590ac9bdd12c49a644977573048edac22de21f1
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002914"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275875"
 ---
 # <a name="videos-for-getting-started-with-protecting-your-email"></a>Videos für die ersten Schritte beim Schützen Ihrer E-Mails
 
@@ -53,13 +55,13 @@ Es sind außerdem Einstellungen verfügbar, um Schadsoftware zu behandeln, die v
 - Konfigurieren der Antischadsoftware-Richtlinie
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    Weitere Informationen finden Sie im Thema [Configure Anti-Malware Policies](configure-anti-malware-policies.md) . 
+    Weitere Informationen finden Sie im Thema [configure Anti-Malware Policies](configure-anti-malware-policies.md) . 
     
 Zum Filtern und Weiterleiten von Nachrichten, das auf den von Ihnen festgelegten Bedingungen oder auf Unternehmensrichtlinien bzw. Bestimmungen basiert, eignet sich das Video, in dem das Erstellen von Transportregeln besprochen wird.
   
 - Konfigurieren der Exchange-Transportregeln in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Weitere Informationen finden Sie im Thema [Mail Flow Regeln (Transportregeln) in Exchange Online Protection](eop/mail-flow-rules-transport-rules-0.md) , wenn Sie EOP als eigenständige Lösung verwenden, oder finden Sie im Thema [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , wenn Sie Exchange Online verwenden. 
+    Weitere Informationen finden Sie unter [Nachrichtenfluss Regeln (Transportregeln) im Thema Exchange Online Protection](eop/mail-flow-rules-transport-rules-0.md) , wenn Sie EoP eigenständig verwenden, oder lesen Sie das Thema [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , wenn Sie Exchange Online verwenden. 
     
 

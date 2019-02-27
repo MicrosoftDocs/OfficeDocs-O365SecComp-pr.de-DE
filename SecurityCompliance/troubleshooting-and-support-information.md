@@ -1,7 +1,7 @@
 ---
 title: Problembehandlung und Supportinformationen
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
+ms.collection:
+- M365-security-compliance
 description: In diesem Thema werden die Schritte zur Problembehandlung für Endbenutzer und Administratoren beschrieben, und Sie erhalten Informationen zum Kontaktieren des technischen Supports.
-ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003124"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275995"
 ---
 # <a name="troubleshooting-and-support-information"></a>Problembehandlung und Supportinformationen
 
@@ -85,11 +87,11 @@ Als Administrator können Sie auf Probleme mit Benutzern stoßen, die das Add-In
     
 ## <a name="support-information"></a>Supportinformationen
 
-Wenn Sie Hilfe bei der Installation benötigen, Konfiguration oder Deinstallation des Add-Ins, wenden Sie sich an den neuen Dienst Anforderung Link auf der Seite Unterstützung im Office 365 Administrationscenter mit technischen Support. Zusätzliche Optionen, einschließlich Serviceanfrage über die Optionen zur Selbsthilfe und Telefon finden Sie unter [Hilfe und Support für EOP](eop/help-and-support-for-eop.md).
+Wenn Sie Hilfe bei der Installation, Konfiguration oder Deinstallation des Add-Ins benötigen, wenden Sie sich über den Link Neue Dienstanforderung auf der Support Seite im Office 365 Admin Center an den technischen Support. Weitere Optionen, einschließlich der Übermittlung einer Serviceanfrage über die Telefon-und Self-Support-Optionen, finden Sie unter [Hilfe und Support für EoP](eop/help-and-support-for-eop.md).
   
 ## <a name="for-more-information"></a>Weitere Informationen
 
-[Aktivieren des Berichtnachricht-add-Ins](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Aktivieren des Berichtsnachrichts-Add-Ins](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [Melden von Junk-E-Mails an Microsoft](report-junk-email-messages-to-microsoft.md)
   
