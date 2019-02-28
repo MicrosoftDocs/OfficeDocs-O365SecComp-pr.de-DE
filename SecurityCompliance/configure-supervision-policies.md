@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Einrichten einer Aufsichts Übersichts Richtlinie zur Erfassung der Mitarbeiterkommunikation zur Überprüfungen.
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216735"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313171"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -53,9 +53,9 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365-
 
     Das Testen Ihrer Aufsichtsrichtlinie, um sicherzustellen, dass Sie wie gewünscht funktioniert, ist ein wichtiger Teil, um sicherzustellen, dass Ihre Compliance-Strategie Ihren Standards entspricht.
 
-- **Schritt 6 – (optional)** [Einrichten von Outlook-Add-Ins für Prüfer, die das Office 365-überwachungsdashboard oder Outlook im Web (früher als Outlook Web App bezeichnet) nicht verwenden möchten, um die überwachte Kommunikation zu überarbeiten](configure-supervision-policies.md#UseOutlook)
+- **Schritt 6 – (optional)** [Konfigurieren von Outlook für Prüfer, die das Office 365-überwachungsdashboard oder Outlook im Web (früher als Outlook Web App bezeichnet) nicht verwenden möchten, um die überwachte Kommunikation zu überarbeiten](configure-supervision-policies.md#UseOutlook)
 
-    Das Überwachungs-Add-in für Outlook erteilt den Prüfern Zugriff auf die Überwachungsfunktionen direkt im Outlook-Client, damit Sie jedes Element bewerten und kategorisieren können.
+    Outlook kann so konfiguriert werden, dass Bearbeiter Zugriff auf die Überwachungsfunktionen innerhalb des Outlook-Clients erhalten, damit Sie jedes Element bewerten und kategorisieren können.
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ Nachdem Sie eine Aufsichtsrichtlinie erstellt haben, empfiehlt es sich zu testen
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>Schritt 6: Einrichten des Outlook-Add-Ins für Prüfer (optional)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Schritt 6: Konfigurieren von Outlook für Prüfer (optional)
 
-Prüfer, die Outlook verwenden möchten, anstatt das Aufsichts Dashboard in Office 365 oder Outlook im Web zum Überwachen der Kommunikation zu überwachen, müssen das Aufsichts-Add-in für Ihren Outlook-Client installieren.
+Prüfer, die Outlook verwenden möchten, anstatt das Aufsichts Dashboard in Office 365 zur Überprüfung der Kommunikation zu überwachen, müssen Ihren Outlook-Client konfigurieren.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Schritt 1: Kopieren der Adresse für das überwachungspostfach
 
-Um das Add-in für Outlook-Desktop zu installieren, benötigen Sie die Adresse für das überwachungspostfach, das im Rahmen der Einrichtung der Aufsichtsrichtlinie erstellt wurde.
+Zum Konfigurieren der Überprüfung für Outlook-Desktop oder Outlook für das Web benötigen Sie die Adresse für das Aufsichts Postfach, das als Teil der Aufsichtsrichtlinien Einrichtung erstellt wurde.
   
 > [!NOTE]
 > Wenn eine andere Person die Richtlinie erstellt hat, müssen Sie diese Adresse abrufen, um das Add-in zu installieren.
@@ -210,7 +210,7 @@ Um das Add-in für Outlook-Desktop zu installieren, benötigen Sie die Adresse f
 
 4. Kopieren Sie im Flyout Richtliniendetails unter **überwachungspostfach**die Adresse.<br/>![Der Abschnitt "Überwachungspostfach" im Detail Flyout der Aufsichtsrichtlinie mit der hervorgehobenen Überwachungs-Postfachadresse](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>Schritt 2: Konfigurieren des Überwachungs Postfachs für Outlook-Desktop Zugriff
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Schritt 2: Konfigurieren des Überwachungs Postfachs für Outlook-Zugriff
 
 Als nächstes müssen die Bearbeiter einige Exchange Online PowerShell-Befehle ausführen, damit Sie Outlook mit dem überwachungspostfach verbinden können.
   
