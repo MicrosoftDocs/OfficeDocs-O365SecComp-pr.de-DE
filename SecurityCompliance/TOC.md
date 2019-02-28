@@ -95,7 +95,7 @@
 ### [Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)
 ### [Verhindern, dass E-Mails in EOP und Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam-0.md)
 ### [Steuern ausgehender Spamnachrichten in Office 365](outbound-spam-controls.md)
-### [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](block-email-spam-to-prevent-false-negatives.md)
+### [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
 ### [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](zero-hour-auto-purge.md)
 ### [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [Melden von Junk-E-Mails an Microsoft](report-junk-email-messages-to-microsoft.md)
@@ -297,7 +297,7 @@
 #### [Verwalten von Ladesätzen](compliance20/manage-load-sets.md)
 #### [Laden von Nicht-Office 365-Daten in einen Arbeitssatz](compliance20/load-non-office365-data.md)
 #### [Abfragen der Daten in einem Arbeitssatz](compliance20/working-set-search.md)
-#### [Anzeigen von Dokumenten in einem Arbeitssatz](compliance20/annotating-and-redacting-documents.md)
+#### [Anzeigen von Dokumenten in einem Arbeitssatz](compliance20/view-documents-in-working-set.md)
 #### [Markieren von Dokumenten in einem Arbeitssatz](compliance20/tagging-documents.md)
 
 ### [Analysieren von Falldaten](compliance20/analyzing-data-in-working-set.md)
@@ -318,10 +318,7 @@
 #### [Konfigurieren der Such- und Analyseeinstellungen](compliance20/configure-search-analytics-settings.md)
 
 ### Referenz zu Advanced eDiscovery (Vorschau)
-#### [Suchbegrenzungen](compliance20/search-limits-ediscovery20.md)
-#### [Indizierungsgrenzwerte](compliance20/indexing-limits-ediscovery20.md)
-#### [Exportgrenzwerte](compliance20/export-limits-ediscovery20.md)
-#### [Grenzwerte für Downloads](compliance20/download-limits-ediscovery20.md)
+#### [Grenzwerte in Advanced eDiscovery (Vorschau)](compliance20/limits-ediscovery20.md)
 #### [Unterstützte Dateitypen](compliance20/supported-filetypes-ediscovery20.md)
 #### [Dokumentmetadatenfelder](compliance20/document-metadata-fields.md)
 
