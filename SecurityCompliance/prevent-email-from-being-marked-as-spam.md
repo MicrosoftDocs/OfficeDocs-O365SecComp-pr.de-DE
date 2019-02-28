@@ -14,24 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Erfahren Sie, wie Sie falsch positive Ergebnisse verhindern und echte E-Mail-Nachrichten davor schützen, im Junk-E-Mail-Ordner von Office 365 zu landen.
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219415"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296888"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden
 
  **Werden echte E-Mails in Office 365 als Spam gekennzeichnet? Hier kommt die Lösung.**
   
-Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, der dazu beiträgt, Ihre Organisation vor Spam und Schadsoftware zu schützen. Wenn Sie über Postfächer in Office 365 verfügen, werden diese automatisch von EOP geschützt, denn dies ist Teil des Diensts.
-
-EOP versucht, Spam herauszufiltern und Ihren Posteingang frei von Inhalten zu halten, die Benutzer nicht sehen möchten. Manchmal filtert EOP aber auch Nachrichten heraus, die Sie sehen möchten. Wenn eine Nachricht vom Spamfilter fälschlicherweise als Spam gekennzeichnet wird, wird dies als "falsch positives Ergebnis" bezeichnet.
-
 Wenn Sie ein falsch positives Ergebnis erhalten, sollten Sie die Nachricht an Microsoft melden. [Verwenden Sie dazu das Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Zusätzlich können Sie die Nachricht * als Anhang* an "not_junk@office365.microsoft.com" weiterleiten.
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**Wichtig** Wenn Sie die Nachrichten als Anlage nicht weiterleiten, fehlen uns die Kopfzeilen und wir können die Junk-E-Mail-Filterung in Office 365 nicht verbessern.
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Ermitteln der Ursache, warum die Nachricht als Spam gekennzeichnet wurde
 
