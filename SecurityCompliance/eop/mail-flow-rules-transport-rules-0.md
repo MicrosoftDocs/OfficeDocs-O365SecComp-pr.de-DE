@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Mithilfe von Nachrichtenflussregeln (auch bekannt als Transportregeln) können Sie Nachrichten, die über Ihre Office 365-Organisation fließen, identifizieren und Maßnahmen dafür ergreifen.
-ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+description: Mithilfe von Nachrichtenfluss Regeln (Transportregeln) können Sie Nachrichten identifizieren und Aktionen ausführen, die in Ihrer Office 365-Organisation durchlaufen werden.
+ms.openlocfilehash: a60035dc2ac17bcb944a5311827609381a7ed31e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723242"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341206"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
@@ -54,13 +54,13 @@ Eine Nachrichtenflussregel besteht aus Bedingungen, Ausnahmen, Aktionen und Eige
   
 - Anhand von **Bedingungen** werden die Nachrichten ermittelt, auf die Sie die Regel anwenden möchten. Mit einigen Bedingungen werden Nachrichtenkopfzeilenfelder geprüft (z. B. die Felder "An", "Von" oder "Cc"). Andere Bedingungen dienen zum Untersuchen von Nachrichteneigenschaften (z. B. Betreff, Text, Anlagen, Größe oder Klassifizierung der Nachricht). Bei den meisten Bedingungen müssen Sie einen Vergleichsoperator (z. B. Gleich, Ungleich oder Enthält) sowie einen abzugleichenden Wert angeben. Wenn keine Bedingungen oder Ausnahmen angegeben werden, wird die Regel auf alle Nachrichten angewendet. 
     
-    Weitere Informationen zum e-Mail-Fluss regelbedingungen in Exchange Online Protection, finden Sie unter [E-Mail-Fluss von regelbedingungen und Ausnahmen (Prädikate) in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+    Weitere Informationen zu Bedingungen für Nachrichtenfluss Regeln in Exchange Online Protection finden Sie unter [Mail Flow rule conditions and Exceptions (predicates) in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Ausnahmen** kennzeichnen optional die Nachrichten, auf die die Aktionen nicht angewendet werden sollen. In Ausnahmen sind die gleichen Nachrichten-IDs verfügbar wie in Bedingungen. Mit Ausnahmen werden Bedingungen außer Kraft gesetzt, und es wird verhindert, dass die Regelaktionen auf eine Nachricht angewendet werden, und zwar auch dann, wenn die Nachricht allen konfigurierten Bedingungen entspricht. 
     
 - **Aktionen** geben an, was mit Nachrichten geschehen soll, die den Bedingungen in der Regel und keiner der Ausnahmen entsprechen. Es stehen zahlreiche Aktionen zur Verfügung, wie Ablehnen, Löschen oder Umleiten von Nachrichten, Hinzufügen weiterer Empfänger, Hinzufügen von Präfixen zum Nachrichtenbetreff oder Einfügen von Haftungsausschlüssen in den Nachrichtentext. 
     
-    Weitere Informationen zum e-Mail-Fluss Regel verfügbaren Aktionen im Exchange Online Protection, finden Sie unter [Mail Flow Regelaktionen in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+    Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in Exchange Online Protection verfügbar sind, finden Sie unter [Mail Flow rule actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
     
 - **Eigenschaften** geben weitere Regeleinstellungen an, die keine Bedingungen, Ausnahmen oder Aktionen sind. Zum Beispiel, wann die Regel angewendet werden soll, ob die Regel erzwungen oder getestet werden soll und in welchem Zeitraum die Regel aktiv ist. 
     
@@ -86,7 +86,7 @@ Die folgende Tabelle beschreibt die Regeleigenschaften, die in Nachrichtenflussr
 |:-----|:-----|:-----|
 |**Priority** <br/> | _Priority_ <br/> |Gibt die Reihenfolge an, in der die Regeln auf Nachrichten angewendet werden. Die Standardpriorität basiert auf dem Erstellungsdatum der Regel (ältere Regeln haben eine höhere Priorität als neuere Regeln, und Regeln mit höherer Priorität werden vor Regeln mit niedrigerer Priorität verarbeitet).    <br/> Sie ändern die Regelpriorität in der Exchange-Verwaltungskonsole, indem Sie die Regel in der Liste der Regeln nach oben oder unten verschieben. In der PowerShell legen Sie die Prioritätsnummer fest (0 ist die höchste Priorität).    <br/> Wenn Sie z. B. eine Regel verwenden, um Nachrichten abzulehnen, die eine Kreditkartennummer enthalten, und eine andere Regel, die eine Genehmigung erfordert, sollte die Ablehnungsregel zuerst angewendet werden, und es sollten keine anderen Regeln mehr angewendet werden.    |
 |**Mode** <br/> | _Mode_ <br/> |Sie können angeben, ob die Regel sofort mit der Verarbeitung von Nachrichten beginnen soll oder ob Sie Regeln ohne Auswirkungen auf die Übermittlung der Nachricht (mit oder ohne Verhinderung von Datenverlust oder DLP-Richtlinientipps) testen möchten.  <br/> Richtlinientipps zeigen dem Ersteller einer Nachricht in Outlook oder Outlook im Web einen Hinweis mit Informationen über mögliche Richtlinienverletzungen an. Weitere Informationen finden Sie unter **Richtlinientipps**.  <br/> Weitere Informationen zu den Modi finden Sie unter **Test a mail flow rule**.  <br/> |
-|**Diese Regel an folgendem Datum aktivieren** <br/> **Diese Regel an folgendem Datum deaktivieren** <br/> | _ActivationDate_ <br/>  _ExpiryDate._ <br/> |Gibt den Datumsbereich an, in dem die Regel aktiv ist.  <br/> |
+|**Diese Regel an folgendem Datum aktivieren** <br/> **Diese Regel an folgendem Datum deaktivieren** <br/> | _ActivationDate_ <br/>  _Ablaufdatum_ <br/> |Gibt den Datumsbereich an, in dem die Regel aktiv ist.  <br/> |
 |Kontrollkästchen **Ein** aktiviert oder nicht aktiviert  <br/> |Neue Regeln: Parameter  _Enabled_ im Cmdlet **New-TransportRule**.  <br/> Vorhandene Regeln: Verwenden Sie die Cmdlets **Enable-TransportRule** oder **Disable-TransportRule**.  <br/> Der Wert wird in der **State** -Eigenschaft der Regel angezeigt.  <br/> |Sie können eine deaktivierte Regel erstellen und diese aktivieren, wenn Sie sie testen möchten. Alternativ können Sie eine Regel deaktivieren, ohne sie zu löschen, um die Einstellungen beizubehalten.  <br/> |
 |**Nachricht zurückstellen, wenn die Regelverarbeitung nicht abgeschlossen wird** <br/> | _RuleErrorAction_ <br/> |Sie können angeben, wie die Nachricht behandelt werden soll, wenn die Regelverarbeitung nicht abgeschlossen werden kann. Standardmäßig wird die Regel ignoriert, aber Sie können angeben, dass die Nachricht erneut zur Verarbeitung übermittelt werden soll.  <br/> |
 |**Absenderadresse in Nachricht vergleichen** <br/> | _SenderAddressLocation_ <br/> |Wenn die Regel Bedingungen oder Ausnahmen verwendet, die die E-Mail-Adresse des Absenders überprüfen, finden Sie den Wert in der Nachrichtenkopfzeile und/oder im Nachrichtenumschlag.  <br/> |
@@ -123,19 +123,9 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
 - Nach dem Erstellen oder Ändern einer E-Mail-Flussregel kann es bis zu 30 Minuten dauern, bis die neue oder aktualisierte Regel auf Nachrichten angewendet wird.
     
 ## <a name="for-more-information"></a>Weitere Informationen
-
-[Verwalten von Transportregeln](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx)
   
-[Transport Rule Predicates](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)
-  
-[Transport Rule Actions](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)
-  
-[Überprüfen von Nachrichtenanlagen mithilfe von Transportregeln](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+[Überprüfen von Nachrichtenanlagen in Exchange Online mithilfe von Nachrichtenfluss Regeln](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [E-Mail-Verschlüsselung in Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[Transportregelverfahren](http://technet.microsoft.com/library/bc682071-eb68-4cd9-a306-e5de0e1e79cc.aspx)
-  
-[Transport- und Postfachregelgrenzen](https://go.microsoft.com/fwlink/p/?LinkId=324584)
-  
-
+[Journal-, Transport-und postEingangsregel Grenzen](https://go.microsoft.com/fwlink/p/?LinkId=324584)

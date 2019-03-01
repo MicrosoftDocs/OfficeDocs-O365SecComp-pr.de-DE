@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre Office 365-Organisation noch nicht in die neuen OM-Funktionen verschoben haben, aber bereits OM bereitgestellt haben, beziehen sich die Informationen in diesem Artikel auf Ihre Organisation. Microsoft empfiehlt, einen Plan für die Umstellung auf die neuen Funktionen von OM zu erstellen, sobald es für Ihre Organisation sinnvoll ist. Anweisungen hierzu finden Sie unter Einrichten neuer Office 365-Nachrichten Verschlüsselungsfunktionen, die auf Azure Information Protection basieren. Wenn Sie mehr über die Funktionsweise der neuen Funktionen erfahren möchten, lesen Sie Office 365-Nachrichtenverschlüsselung. Der Rest dieses Artikels bezieht sich auf das Verhalten von OM vor der Freigabe der neuen OM-Funktionen.
-ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276065"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341496"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 
@@ -167,7 +167,7 @@ RMS bietet Funktionen zum Schutz von Informationsrechten für interne e-Mails ei
   
  **F. wie unterscheidet sich die Office 365-Nachrichtenverschlüsselung von S/MIME?**
   
-S/MIME ist im Grunde eine clientseitige Verschlüsselungstechnologie, für die eine komplizierte Zertifikatverwaltung und Veröffentlichungsinfrastruktur erforderlich ist. Die Office 365-Nachrichtenverschlüsselung verwendet Transportregeln und hängt nicht von der Veröffentlichung von Zertifikaten ab.
+S/MIME ist im Wesentlichen eine clientseitige Verschlüsselungstechnologie und erfordert eine komplizierte Infrastruktur für die Zertifikatverwaltung und-Veröffentlichung. Office 365 Nachrichtenverschlüsselung verwendet Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und ist nicht von der Zertifikatsveröffentlichung abhängig.
   
  **F. Kann ich über mobile Geräte verschlüsselten Nachrichten lesen?**
   
@@ -213,7 +213,7 @@ Nein. Sie können eine Nachricht nicht für eine bestimmte Person widerrufen, na
   
  **F: Kann ich einen Bericht über verschlüsselte Nachrichten anzeigen, die empfangen und gelesen wurden?**
   
-Es gibt keinen Bericht, der anzeigt, ob eine verschlüsselte Nachricht angezeigt wurde, aber es gibt Office 365-Berichte, die Sie nutzen können, um die Anzahl von Nachrichten zu ermitteln, die mit einer bestimmten Transportregel übereinstimmen, beispielsweise.
+Es gibt keinen Bericht, der anzeigt, ob eine verschlüsselte Nachricht angezeigt wurde, aber es stehen Office 365-Berichte zur Verfügung, die Sie nutzen können, um die Anzahl der Nachrichten zu ermitteln, die mit einer bestimmten Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmen.
   
  **F. Wofür verwendet Microsoft die von mir über das OME-Portal und die OME-Viewer-App eingegebenen Informationen?**
   

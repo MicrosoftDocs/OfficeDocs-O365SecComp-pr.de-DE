@@ -15,19 +15,19 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden spamfiltereinstellungen gehört das Auswählen der Aktion für Nachrichten, die als Spam identifiziert werden, und die Auswahl, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen geschrieben oder aus bestimmten Ländern oder Regionen gesendet werden.
-ms.openlocfilehash: 44ed773ae95976714d502a142aed75fa24a1b843
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 1f5ff5db88d11971df070d316ad4aaff6eb88712
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296988"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341806"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
   
 Zu den grundlegenden spamfiltereinstellungen gehört das Auswählen der Aktion für Nachrichten, die als Spam identifiziert werden. Einstellungen für Spam Filterrichtlinien werden nur auf eingehende Nachrichten angewendet. Sie können die standardmäßige Spamfilter Richtlinie bearbeiten, um Ihre unternehmensweiten spamfiltereinstellungen zu konfigurieren und benutzerdefinierte Spamfilter Richtlinien zu erstellen und diese dann auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anzuwenden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Reihenfolge ändern, in der die benutzerdefinierten Richtlinien ausgeführt werden, indem Sie die Priorität der einzelnen benutzerdefinierten Richtlinien ändern. Es gilt jedoch nur die Richtlinie mit der höchsten Priorität, wenn mehrere Richtlinien den festgelegten Kriterien entsprechen. 
   
 > [!IMPORTANT]
-> Für Kunden der eigenständigen Exchange Online Protection (EOP)-Lösung: Standardmäßig leiten die EOP-Spamfilter als Spam erkannte Nachrichten an den Junk-E-Mail-Ordner der einzelnen Empfänger weiter. Damit die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** jedoch bei lokalen Postfächern angewendet wird, müssen Sie auf Ihren lokalen Servern Exchange-Transportregeln konfigurieren, um Spamkopfzeilen zu erkennen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Für Kunden mit Exchange Online Protection (EOP): Standardmäßig senden die EOP-Spamfilter Spam erkannte Nachrichten an den Junk-e-Mail-Ordner der einzelnen Empfänger. Um jedoch sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** für lokale Postfächer funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um Spam Kopfzeilen zu finden, die von EoP. Weitere Informationen finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
 
@@ -45,7 +45,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
     
       - Überarbeiten Sie die standardmäßige unternehmensweite Richtlinie unter den Standardeinstellungen.
     
-      - Klicken Sie auf die Registerkarte **Benutzerdefiniert** , ändern Sie die **benutzerdefinierte Einstellungs** Auswahl in ein, und![klicken Sie](media/ITPro-EAC-AddIcon.gif) auf die Schaltfläche * * hinzufügen, um **eine Richtlinie erstellen** , um eine neue benutzerdefinierte Spamfilter Richtlinie zu erstellen, die auf Benutzer, Gruppen, **** und Domänen in Ihrer Organisation. Sie können auch vorhandene benutzerdefinierte Richtlinien bearbeiten, indem Sie darauf doppelklicken. 
+      - Klicken Sie auf die Registerkarte **Benutzerdefiniert** , ändern Sie die **** **benutzerdefinierte Einstellungs** Auswahl in ein ![, und](media/ITPro-EAC-AddIcon.gif) klicken Sie auf die Schaltfläche hinzufügen, um **eine Richtlinie erstellen** , um eine neue benutzerdefinierte Spamfilter Richtlinie zu erstellen, die auf Benutzer, Gruppen und Domänen in Ihrer Organisation. Sie können auch vorhandene benutzerdefinierte Richtlinien bearbeiten, indem Sie darauf doppelklicken. 
     
 3. Geben Sie nur für benutzerdefinierte Richtlinien einen Namen für die Richtlinie an. Optional können Sie auch eine ausführlichere Beschreibung angeben. Die Standardrichtlinie kann nicht umbenannt werden.<br/><br/>Hinweis: Wenn Sie eine Richtlinie erstellen, werden alle Konfigurationseinstellungen auf einem einzelnen Bildschirm angezeigt. Wenn Sie dagegen eine Richtlinie bearbeiten, müssen Sie durch mehrere Bildschirme navigieren. Die Einstellungen sind in beiden Fällen identisch, aber im restlichen Teil dieses Verfahrens wird beschrieben, wie Sie beim Bearbeiten einer Richtlinie auf diese Einstellungen zugreifen. 
   
@@ -55,7 +55,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
         
       - **Quarantäne Nachricht:** Sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Wenn Sie diese Option auswählen, geben Sie im Feld **Spam für (Tage) speichern** die Anzahl von Tagen an, in denen die Spamnachricht isoliert werden soll. (Es wird automatisch nach Ablauf der Zeit gelöscht. Der Standardwert beträgt 15 Tage, wobei es sich um den Maximalwert handelt. Der Mindestwert beträgt 1 Tag.)<br/><br/>Tipp: Informationen dazu, wie Administratoren e-Mail-Nachrichten verwalten können, die sich in der Exchange-verwaltungsKONSOLE in Quarantäne befinden, finden Sie unter [Quarantine](quarantine.md) and [Find and Release Quarantined Messages as an Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > Informationen zum Konfigurieren von Spam Benachrichtigungsnachrichten, die an Benutzer gesendet werden sollen, finden Sie unter [configure End-User Spam Notifications in EoP](configure-end-user-spam-notifications-in-eop.md) oder [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
-      - **Nachricht in Junk-e-Mail-Ordner verschieben:** Sendet die Nachricht an den Junk-e-Mail-Ordner der angegebenen Empfänger. Dies ist die Standardaktion für die beiden Konfidenz Schwellenwerte.<br/><br/>**WICHTIG: für Exchange Online Protection (EOP)-Kunden: damit diese Aktion mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Transport Regeln auf Ihren lokalen Servern konfigurieren, um von EOP hinzugefügte Spam Kopfzeilen zu finden. Weitere Informationen finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
+      - **Nachricht in Junk-e-Mail-Ordner verschieben:** Sendet die Nachricht an den Junk-e-Mail-Ordner der angegebenen Empfänger. Dies ist die Standardaktion für die beiden Konfidenz Schwellenwerte.<br/><br/>**Wichtig**: für Kunden von Exchange Online Protection (EoP): damit diese Aktion mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln auf Ihren lokalen Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu identifizieren. Weitere Informationen finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
       - **X-Header hinzufügen:** Sendet die Nachricht an die angegebenen Empfänger, fügt jedoch dem Nachrichtenkopf einen X-Header-Text hinzu, um die Nachricht als Spam zu identifizieren. Wenn Sie diesen Text als Bezeichner verwenden, können Sie optional Posteingangsregeln erstellen oder ein Downstream-Gerät verwenden, um die Nachricht zu bearbeiten. Der standardmäßige X-Header-Text ist **Diese Nachricht scheint Spam zu sein**.<br/>Sie können den X-Header-Text anpassen, indem Sie das Kontrollkästchen **diesen x-Kopfzeilentext hinzufügen** verwenden. Wenn Sie den X-Header-Text anpassen, beachten Sie die folgenden Bedingungen: 
     

@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Erläutert die Unterschiede in den Features, die mit verschiedenen Versionen der Office 365-Nachrichtenverschlüsselung geliefert werden, sowie der Zusammenarbeit der beiden.
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216675"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341436"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
@@ -31,7 +31,7 @@ In diesem Artikel wird die ältere Office 365-Nachrichtenverschlüsselung mit de
 |                                   |Alte Features       |                   |Neue Features              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Funktion**                     | **Legacy-OM**    | **IRM**           | **Neue OM-Funktionen** |
-|*Senden einer verschlüsselten e-Mail*        |Exchange-Nachrichtenfluss Regeln|Endbenutzer, die über Outlook-Desktop oder Outlook im Web initiiert wurden; oder über Exchange-Nachrichtenfluss Regeln|Vom Outlook-Desktop, Outlook für Mac oder Outlook im Web initiierter Endbenutzer Exchange-Transport Regeln und Office 365 Data Loss Prevention (DLP)|
+|*Senden einer verschlüsselten e-Mail*        |Exchange-Nachrichtenfluss Regeln|Endbenutzer, die über Outlook-Desktop oder Outlook im Web initiiert wurden; oder über Exchange-Nachrichtenfluss Regeln|Vom Outlook-Desktop, Outlook für Mac oder Outlook im Web initiierter Endbenutzer Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und Office 365 Data Loss Prevention (DLP)|
 |*Vorlage für Rechteverwaltung*       |   Nicht zutreffend      |Option und benutzerdefinierte Vorlagen nicht weiterleiten|Option, nur verSchlüsselte Option und benutzerdefinierte Vorlagen nicht weiterleiten|
 |*Empfängertyp*                   |Interne und externe Empfänger|Nur interne Empfänger         |Interne und externe Empfänger|
 |*Erfahrung für interne Empfänger*|Empfänger erhalten eine HTML-Nachricht, die Sie in einem Webbrowser oder in einer mobilen app herunterladen und öffnen.|Native Inline-Erfahrung in Outlook-Clients|Native Inline Experience für Office 365-Empfänger. Alle anderen Empfänger können Nachrichten aus dem OM-Portal lesen (kein Download oder keine app erforderlich).|

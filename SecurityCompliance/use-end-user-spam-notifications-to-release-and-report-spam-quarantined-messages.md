@@ -13,12 +13,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: 'Benutzer, die eine spambenachrichtigung über Endbenutzer von Ihrem Administrator über isolierte e-Mails erhalten, können diese Aktionen für die Nachrichten ergreifen. '
-ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275215"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341236"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Verwenden von Spambenachrichtigungen für Endbenutzer zum Freigeben und Melden von Nachrichten in Spam-Quarantäne
 
@@ -41,6 +41,6 @@ Sie können folgende Aktionen für jede Nachricht ausführen:
 - **Als Nicht-Junk-E-Mail melden** Mit einem Klick auf diesen Link wird eine Kopie der Nachricht zur Analyse an Microsoft geschickt. Das Spamteam bewertet und analysiert die Nachricht und passt, je nach Analyseergebnis, die Antispamfilterregeln so an, dass die Nachricht übergeben wird. 
     
 > [!NOTE]
->  Nachrichten, die aufgrund einer nicht eingehaltenen Transportregel in Quarantäne verschoben werden, werden nicht in die Spamquarantäne-Nachrichten von Endbenutzern aufgenommen. Es werden nur Spamquarantäne-Nachrichten aufgeführt. >  Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden. 
+>  Nachrichten, die aufgrund einer e-Mail-Fluss Regel (auch als Übereinstimmung bezeichnet) isoliert wurden, werden in Quarantäne Nachrichten für Endbenutzer nicht eingeschlossen. Nur Nachrichten in Spamquarantäne werden aufgeführt. > Sie können nur eine Nachricht freigeben und als falsch positives Ergebnis (kein Junk) melden. 
   
 

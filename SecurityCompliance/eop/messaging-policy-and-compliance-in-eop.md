@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: Microsoft Exchange Online Protection bietet Funktionen für Messagingrichtlinien und deren Einhaltung, mit denen Sie Ihre E-Mail-Daten verwalten können.
-ms.openlocfilehash: 1072656ee34b2745c86ec55353278ef878e0f0eb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1a084418cc6d66cd1ad8280b510bde5e630c7298
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026182"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341716"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>Messagingrichtlinien und Richtlinientreue in EOP
 
@@ -26,7 +26,5 @@ Microsoft Exchange Online Protection bietet Funktionen für Messagingrichtlinien
 
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Überwachungsberichte in EOP](auditing-reports-in-eop.md) <br/> |Überwachungsberichte bieten Informationen zum Ausführen des Administrator-Rollengruppenberichts, der Änderungen an den Verwaltungsrollengruppen in Ihrer Organisation innerhalb eines bestimmten Zeitraum enthält, und zum Ausführen Administrator-Überwachungsprotokolls, in dem alle in Ihrer Organisation vorgenommenen Konfigurationsänderungen aufgezeichnet werden.  <br/> |
-|[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) <br/> |: Bietet Informationen zu Transportregeln, mit denen Sie auf flexible Weise eigene unternehmensspezifische Richtlinien auf E-Mails anwenden können.  <br/> |
-   
-
+|[Überwachungsberichte in EOP](auditing-reports-in-eop.md)|Überwachungsberichte bieten Informationen zum Ausführen des Administrator-Rollengruppenberichts, der Änderungen an den Verwaltungsrollengruppen in Ihrer Organisation innerhalb eines bestimmten Zeitraum enthält, und zum Ausführen Administrator-Überwachungsprotokolls, in dem alle in Ihrer Organisation vorgenommenen Konfigurationsänderungen aufgezeichnet werden.|
+|[Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|Enthält Informationen zu Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), die Ihnen die Flexibilität bieten, ihre eigenen unternehmensspezifischen Richtlinien auf e-Mails anzuwenden.|

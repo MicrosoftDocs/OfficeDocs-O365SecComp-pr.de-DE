@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie sicherstellen möchten, dass e-Mails von vertrauenswürdigen Personen nicht blockiert werden, können Sie mithilfe der Verbindungsfilter Richtlinie eine Zulassungsliste mit vertrauenswürdigen IP-Adressen erstellen. Sie können auch eine Liste blockierter Absender erstellen.
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216905"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341606"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
  
@@ -98,9 +98,9 @@ Nachdem Sie die Regel erstellt und erzwungen haben, umgeht der Dienst die Spamfi
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Bereichsfestlegung für Ausnahmen von einer Liste der zugelassenen IP-Adressen einer bestimmten Domäne
 
-Sie sollten die IP-Adresse (oder IP-Adressbereiche) für alle Ihre Domänen, die Sie als sicher einschätzen, der Liste der zugelassenen IP-Adressen hinzufügen. Wenn Sie jedoch nicht wünschen, dass der Eintrag in dieser IP-Adressliste für alle Domänen gilt, erstellen Sie eine Transportregel, von der bestimmte Domänen ausgenommen sind. 
+Im Allgemeinen wird empfohlen, dass Sie die IP-Adressen (oder IP-Adressbereiche) für alle Domänen hinzufügen, die Sie als sicher für die IP-Zulassungsliste verwenden. Wenn Sie jedoch nicht möchten, dass der Eintrag für die IP-Zulassungsliste auf alle Domänen angewendet wird, können Sie eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, die mit Ausnahme bestimmter Domänen gilt. 
   
-Nehmen wir an, Sie haben drei Domänen: ContosoA.com, ContosoB.com und ContosoC.com. Sie wollen die IP-Adresse (zur Vereinfachung verwenden wir 1.2.3.4) hinzufügen und die Filterung nur für die Domäne ContosoB.com überspringen. Dazu müssten Sie eine IP-Zulassungsliste für 1.2.3.4 erstellen, mit der die SCL-Bewertung (Spam Confidence Level) für alle Domänen auf -1 gesetzt wird (was bedeutet, dass sie als "Kein Spam" klassifiziert wird). Sie können dann eine Transportregel erstellen, mit der die SCL-Bewertung für alle Domänen außer ContosoB.com auf 0 gesetzt wird. Das bewirkt, dass die Nachricht für alle Domänen, die der IP-Adresse zugeordnet sind, erneut überprüft wird - mit Ausnahme von ContosoB.com, weil diese Domäne als Ausnahme in der Regel definiert ist. ContosoB.com hat weiterhin eine SCL-Bewertung von -1, was das Überspringen der Filterung bedeutet, während ContosoA.com und ContosoC.com SCL-Bewertungen von 0 haben, was bedeutet, dass sie durch den Inhaltsfilter erneut überprüft werden.
+Nehmen wir beispielsweise an, Sie haben drei Domänen: ContosoA.com, ContosoB.com und ContosoC.com, und Sie möchten die IP-Adresse hinzufügen (aus Gründen der Einfachheit, Let es Use 1.2.3.4) und überspringen Filterung nur für Domänen ContosoB.com. Sie würden eine IP-Zulassungsliste für 1.2.3.4 erstellen, die die SCL-Bewertung (Spam Confidence Level) auf-1 (d. h. als nicht-Spam klassifiziert) für alle Domänen festlegt. Sie können dann eine Nachrichtenfluss Regel erstellen, die die SCL-Bewertung für alle Domänen außer ContosoB.com auf 0 festlegt. Dies führt dazu, dass die Nachricht für alle Domänen, die der IP-Adresse zugeordnet sind, mit Ausnahme von ContosoB.com erneut überprüft wird, wobei es sich um die Domäne handelt, die als Ausnahme in der Regel aufgeführt ist. ContosoB.com hat immer noch einen SCL-Wert von-1, was bedeutet, dass die Filterung übersprungen werden muss, wohingegen ContosoA.com und ContosoC.com SCLs 0 haben, was bedeutet, dass Sie vom Inhaltsfilter erneut überprüft werden.
   
 Führen Sie dazu die folgenden Schritte aus:
   

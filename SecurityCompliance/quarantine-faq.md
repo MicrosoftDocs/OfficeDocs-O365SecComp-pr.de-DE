@@ -15,12 +15,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt.
-ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276025"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341176"
 ---
 # <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
@@ -48,11 +48,11 @@ A. für den Zugriff auf die Spamquarantäne für Endbenutzer müssen Endbenutzer
   
  **Q. Können auch andere Nachrichten als Spam in Quarantäne gesendet werden?**
   
-A. Nachrichten, die der Transportregel entsprechen, können ebenfalls in Administrator-Quarantäne gesendet werden, wenn die Aktion entsprechend konfiguriert ist. Die Endbenutzer-Quarantäne ist nur für Spam vorgesehen.
+A. Nachrichten, die einer e-Mail-Fluss Regel (auch als Transportregel bezeichnet) entsprechen, können auch an die Administrator Quarantäne gesendet werden, wenn dies die konfigurierte Aktion ist. Die Quarantäne für Endbenutzer ist nur für Spam.
   
  **F. Wie lange bleiben Nachrichten in der Quarantäne?**
   
-A. Standardmäßig werden Nachrichten in Spamquarantäne in der Quarantäne für 30 Tage aufbewahrt, während isolierte Nachrichten, die einer Transportregel entsprechen, 7 Tage lang in der Quarantäne aufbewahrt werden. Nach diesem Zeitraum werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die einer Transportregel entsprechen, ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage)** in ihren Inhaltsfilter Richtlinien gesenkt werden. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md).
+A. Standardmäßig werden Nachrichten in Spamquarantäne in der Quarantäne für 30 Tage aufbewahrt, während isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, 7 Tage lang in der Quarantäne aufbewahrt werden. Nach diesem Zeitraum werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage)** in ihren Inhaltsfilter Richtlinien gesenkt werden. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md).
   
  **F. Kann ich mehr als eine Quarantänenachricht gleichzeitig freigeben oder melden?**
   

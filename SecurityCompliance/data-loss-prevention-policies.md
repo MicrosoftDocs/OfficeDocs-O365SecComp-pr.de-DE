@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218975"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341767"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -456,7 +456,7 @@ DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen
 
 Wenn Sie eine DLP-Richtlinie erstellen, die Exchange Online als Standort enthält, wird die Richtlinie vom Office 365 Security &amp; Compliance Center zu Exchange Online und dann von Exchange Online zu Outlook im Web und Outlook 2013 und höher synchronisiert.
   
-Wenn eine Nachricht in Outlook verfasst wird, kann der Benutzerrichtlinien Tipps anzeigen, während der erstellte Inhalt anhand von DLP-Richtlinien ausgewertet wird. Und nachdem eine Nachricht gesendet wurde, wird Sie anhand von DLP-Richtlinien als normaler Teil des e-Mail-Flusses ausgewertet, zusammen mit Exchange-Transportregeln und DLP-Richtlinien, die im Exchange Admin Center erstellt wurden (Weitere Informationen finden Sie im nächsten Abschnitt). DLP-Richtlinien überprüfen sowohl die Nachricht als auch alle Anhänge.
+Wenn eine Nachricht in Outlook verfasst wird, kann der Benutzerrichtlinien Tipps anzeigen, während der erstellte Inhalt anhand von DLP-Richtlinien ausgewertet wird. Und nachdem eine Nachricht gesendet wurde, wird Sie anhand von DLP-Richtlinien als normaler Teil des e-Mail-Flusses ausgewertet, zusammen mit Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und DLP-Richtlinien, die im Exchange Admin Center erstellt wurden (Weitere Informationen finden Sie im nächsten Abschnitt). DLP-Richtlinien überprüfen sowohl die Nachricht als auch alle Anhänge.
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Richtlinienbewertung in den Office 2016-Desktopprogrammen
 

@@ -14,27 +14,27 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence Level) einer E-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können z. B. die Spam-Inhaltsfilterung für Nachrichten umgehen, die von Mitarbeitern Ihrer Organisation gesendet werden, weil Sie darauf vertrauen, dass intern gesendete Nachrichten von Kollegen kein Spam sind. Die Verwendung von Transportregeln zur Festlegung des SCL-Wertes einer Nachricht gibt Ihnen bessere Kontrolle über den Umgang mit Spam.
-ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: Administratoren erfahren, wie Sie den SCL-Wert von Nachrichten in Exchange Online Protection festlegen.
+ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275625"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341346"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten 
 
-Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence Level) einer E-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können z. B. die Spam-Inhaltsfilterung für Nachrichten umgehen, die von Mitarbeitern Ihrer Organisation gesendet werden, weil Sie darauf vertrauen, dass intern gesendete Nachrichten von Kollegen kein Spam sind. Die Verwendung von Transportregeln zur Festlegung des SCL-Wertes einer Nachricht gibt Ihnen bessere Kontrolle über den Umgang mit Spam. 
+Sie können eine Nachrichtenfluss Regel (auch als Transportregel bezeichnet) erstellen, die die SCL-Bewertung (Spam Confidence Level) einer e-Mail-Nachricht festlegt. Die SCL-Bewertung ist ein Maß dafür, wie wahrscheinlich eine Nachricht Spam sein soll. Spam ist unerbetene (und in der Regel unerwünschte) e-Mail-Nachrichten. Der Dienst verwendet eine andere Aktion für eine Nachricht in Abhängigkeit von der SCL-Bewertung. Sie können beispielsweise die Filterung von Spam Inhalten für Nachrichten umgehen, die von Personen innerhalb Ihrer Organisation gesendet werden, da Sie darauf vertrauen, dass eine Nachricht, die intern von einem Kollegen gesendet wird, kein Spam ist. Wenn Sie den SCL-Wert einer Nachricht mithilfe von Nachrichtenfluss Regeln festlegen, können Sie die Kontrolle bei der Behandlung von Spam erhöhen. 
   
  **Was sollten Sie wissen, bevor Sie beginnen?**
   
 - Geschätzte Zeit bis zum Abschließen dieses Verfahrens: 10 Minuten.
     
-- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Transport Regeln" in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) oder [Feature Permissions in EoP](eop/feature-permissions-in-eop.md). 
+- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) oder [Feature Permissions in EoP](eop/feature-permissions-in-eop.md). 
     
-- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
+- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen in der Exchange-Verwaltungskonsole**.
     
-### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>So erstellen Sie eine Transportregel, mit der der SCL-Wert einer Nachricht festgelegt wird
+### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>So erstellen Sie eine Nachrichtenfluss Regel, mit der der SCL-Wert einer Nachricht festgelegt wird
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole (EAC) zu **Nachrichtenfluss** \> **Regeln**.
     
@@ -64,7 +64,7 @@ Sie können eine Transportregel erstellen, mit der der SCL-Wert (Spam Confidence
 7. Geben Sie zusätzliche Eigenschaften für die Regel an, und wählen Sie **Speichern**.
     
     > [!TIP]
-    > Weitere Informationen über die zusätzlichen Eigenschaften, die Sie für diese Regel auswählen oder festlegen können, erhalten Sie unter [Use the EAC to create a transport rule](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx#CreateEAC). 
+    > Weitere Informationen zu den zusätzlichen Eigenschaften, die Sie für diese Regel auswählen oder angeben können, finden Sie unter [Verwenden der Exchange-Verwaltungskonsole zum Erstellen von Nachrichtenfluss Regeln](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules). 
   
 ## <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 

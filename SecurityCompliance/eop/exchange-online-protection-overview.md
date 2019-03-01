@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) ist ein cloudbasierter Dienst zum Filtern von E-Mails, mit dem Sie Ihre Organisation vor Spam und Schadsoftware schützen können.
-ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087344"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341626"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection im Überblick
 
@@ -36,7 +36,7 @@ Die Funktionsweise von EOP lässt sich am besten an der Verarbeitung eingehender
   
 ![EOP-e-Mail-Verarbeitung](../media/EOP-email-processing.png)
   
-Eine eingehende Nachricht durchläuft zunächst die Verbindungsfilterung, die den Ruf des Absenders überprüft und die Nachricht auf Schadsoftware überprüft. Die Mehrzahl der Spam-Mails wird an dieser Stelle angehalten und von EOP gelöscht. Nachrichten werden durch die Richtlinienfilterung fortgesetzt, bei der Nachrichten anhand benutzerdefinierter Transportregeln ausgewertet werden, die Sie aus einer Vorlage erstellen oder erzwingen. Sie können beispielsweise über eine Regel verfügen, die eine Benachrichtigung an einen Vorgesetzten sendet, wenn e-Mails von einem bestimmten Absender eingehen. (Datenverlust-Vermeidungs Überprüfungen treten auch an diesem Punkt auf, wenn Sie diese Funktion haben; weitere Informationen zur Verfügbarkeit von Funktionen finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Im nächsten Schritt werden Nachrichten durch Inhaltsfilterung geleitet, bei der Inhalte auf Terminologie oder gemeinsame Eigenschaften für Spam überprüft werden. Eine Nachricht, die vom Inhaltsfilter als Spam festgelegt wurde, kann je nach Ihren Einstellungen an den Junk-e-Mail-Ordner eines Benutzers oder an die Quarantäne gesendet werden. Nachdem eine Nachricht alle diese Schutzebenen erfolgreich übergeben hat, wird Sie an den Empfänger übermittelt.
+Eine eingehende Nachricht durchläuft zunächst die Verbindungsfilterung, die den Ruf des Absenders überprüft und die Nachricht auf Schadsoftware überprüft. Die Mehrzahl der Spam-Mails wird an dieser Stelle angehalten und von EOP gelöscht. Nachrichten werden durch die Richtlinienfilterung fortgesetzt, bei der Nachrichten anhand von benutzerdefinierten Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) ausgewertet werden, die Sie aus einer Vorlage erstellen oder erzwingen. Sie können beispielsweise über eine Regel verfügen, die eine Benachrichtigung an einen Vorgesetzten sendet, wenn e-Mails von einem bestimmten Absender eingehen. (Datenverlust-Vermeidungs Überprüfungen treten auch an diesem Punkt auf, wenn Sie diese Funktion haben; weitere Informationen zur Verfügbarkeit von Funktionen finden Sie in der [Exchange Online Protection-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Im nächsten Schritt werden Nachrichten durch Inhaltsfilterung geleitet, bei der Inhalte auf Terminologie oder gemeinsame Eigenschaften für Spam überprüft werden. Eine Nachricht, die vom Inhaltsfilter als Spam festgelegt wurde, kann je nach Ihren Einstellungen an den Junk-e-Mail-Ordner eines Benutzers oder an die Quarantäne gesendet werden. Nachdem eine Nachricht alle diese Schutzebenen erfolgreich übergeben hat, wird Sie an den Empfänger übermittelt.
   
 ### <a name="eop-datacenters"></a>EOP-Datencenter
 

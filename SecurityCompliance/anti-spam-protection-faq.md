@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223054"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341676"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -34,7 +34,7 @@ Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispams
 A. **Für eingehende Nachrichten:** Der Großteil der Spamnachrichten wird mithilfe der Verbindungsfilterung gelöscht, die auf der IP-Adresse des Absenders basiert. Der Dienst untersucht anschließend den Inhalt der Nachricht. Standardmäßig wird durch die Inhaltsfilterung abgefangener Spam an den Junk E-Mail-Ordner des Empfängers gesendet. Sie können diese Aktion ändern. Beispielsweise können Sie durch Konfigurieren der Inhaltsfilterrichtlinie auswählen, dass Spamnachrichten stattdessen in die Quarantäne gesendet werden. 
   
 > [!IMPORTANT]
-> Für Kunden der eigenständigen Lösung von EOP: Damit die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** bei lokalen Postfächern angewendet wird, müssen Sie auf Ihren lokalen Servern zwei Exchange-Transportregeln konfigurieren, um Spamheader zu erkennen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Für eigenständige Kunden von EOP: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern ausgeführt wird, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) auf Ihren lokalen Servern konfigurieren, um von EOP hinzugefügte Spam Header. Weitere Informationen finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder durch den Pool für besonders riskante Zustellungen geleitet oder ist unzustellbar und wird nicht zugestellt. In diesem Fall sollte der Absender eine Benachrichtigung über den Übermittlungsstatus (Delivery Status Notification, DSN) erhalten, in der ihm mitgeteilt wird, dass die Nachricht nicht zugestellt werden konnte. 
   

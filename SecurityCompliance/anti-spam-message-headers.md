@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt.
-ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fa14d32f06d07bf7c5131e9c417e9baa0720fcdd
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276195"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341736"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 
@@ -46,10 +46,10 @@ Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-
 |IPV:CAL|Die Nachricht wurde durch die Spam-Filter gelassen, weil die IP-Adrese in einer IP-Zulassungsliste im Verbindungsfilter angegeben wurde.|
 |IPV:NLI|Die IP-Adresse war nicht in einer IP-Zuverlässigkeitsliste aufgeführt.|
 |SFV:SPM|Die Nachricht wurde vom Inhaltsfilter als Spam markiert.|
-|SFV:SKS|Die Nachricht wurde bereits als Spam markiert, noch bevor sie vom Inhaltsfilter verarbeitet wurde. Dies beinhaltet Nachrichten, bei denen die Nachricht einer Transportregel entsprach, die diese automatisch als Spam markiert und alle zusätzlichen Filterungen umgeht.|
+|SFV:SKS|Die Nachricht wurde als Spam markiert, bevor Sie vom Inhaltsfilter verarbeitet wurde. Hierzu gehören Nachrichten, bei denen die Nachricht mit einer Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmt, um Sie automatisch als Spam zu markieren und alle zusätzlichen Filter zu umgehen.|
 |SFV:SKA|Die Nachricht hat das Filtern übersprungen und wurde im Posteingang zugestellt, da sie einer Zulassenliste in der Richtlinie für den Spamfilter entsprach, wie z. B. die Liste **Absender zulassen**.  |
 |SFV:SKB|Die Nachricht wurde als Spam markiert, da sie einer Sperrliste in der Richtlinie für den Spamfilter entsprach, wie z. B. die Liste **Absender blockieren**.  |
-|SFV:SKN|Die Nachricht wurde bereits als Nicht-Spam markiert, noch bevor sie vom Inhaltsfilter verarbeitet wurde. Dies beinhaltet Nachrichten, bei denen die Nachricht einer Transportregel entsprach, die diese automatisch als Nicht-Spam markiert und alle zusätzlichen Filterungen umgeht.|
+|SFV:SKN|Die Nachricht wurde als nicht-Spam markiert, bevor Sie vom Inhaltsfilter verarbeitet wurde. Hierzu gehören Nachrichten, bei denen die Nachricht mit einer Nachrichtenfluss Regel übereinstimmt, um Sie automatisch als nicht-Spam zu markieren und alle zusätzlichen Filter zu umgehen.|
 |SFV:SKI|Ähnlich wie SFV:SKN, die Filterung der Nachricht wurde aus einem anderen Grund übersprungen, wie eine unternehmensinterne E-Mail innerhalb einer Mandantenstruktur.|
 |SFV:SKQ|Die Nachricht wurde aus der Quarantäne freigegeben und an die vorgesehenen Empfänger gesendet.|
 |SFV:NSPM|Die Nachricht wurde als "Nicht-Spam" markiert und an die vorgesehenen Empfänger gesendet.|

@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden.
-ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
-ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
+ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "23002213"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341556"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden. 
   
 > [!NOTE]
->  Einstellungen können zuverlässig an eine andere EOP Premium Organisation nur über ein EOP als eigenständige Lösung (Standard) Organisation zu einem anderen EOP Standard oder eine Exchange Enterprise CAL mit Diensten (EOP Premium) Organisation oder aus einer EOP Premium-Organisation verschoben, werden. Zum Wechseln von einer Organisation EOP Premium zu einer EOP Standard-Organisation sind möglicherweise nicht erfolgreich, da einige Premium-Features in EOP-Standard-Organisationen nicht unterstützt werden. > Diese Anweisungen sind für Organisationen, die nur zum Filtern von EOP. Zusätzliche Hinweise zur verschieben aus einer Exchange Online-Organisation in eine andere Exchange Online-Organisation sind vorhanden. Exchange Online-Organisationen sind außerhalb des Gültigkeitsbereichs für diese Anweisungen. 
+>  Einstellungen können nur zuverlässig von einer eigenständigen (Standard) EOP-Organisation zu einem anderen EOP-Standard oder einer Exchange Enterprise CAL with Services (EOP Premium)-Organisation oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EOP-Standardorganisationen nicht unterstützt werden, sind die Verschiebungen von einer EOP Premium-Organisation zu einer EOP-Standardorganisation möglicherweise nicht erfolgreich. > diese Anweisungen gelten nur für EOP-Filter Organisationen. Es gibt weitere Überlegungen beim Wechsel von einer Exchange Online-Organisation zu einer anderen Exchange Online-Organisation. Exchange Online-Organisationen sind für diese Anweisungen außerhalb des Bereichs. 
   
 Im folgenden Beispiel wurde Contoso, Ltd. mit Contoso Suites zusammengeführt. Auf dem folgenden Bild ist der Prozess für das Verschieben von Domänen, E-Mail-Benutzern und Gruppen sowie Einstellungen aus der EOP-Quellorganisation (contoso.onmicrosoft.com) zur EOP-Zielorganisation (contososuites.onmicrosoft.com) dargestellt:
   
@@ -47,10 +47,10 @@ Um die Quellorganisation in der Zielorganisation erneut zu erstellen, müssen Si
     
 - Connectors
     
-- Transportregeln
+- Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet)
     
     > [!NOTE]
-    > Der Cmdlet-Support für den Export und Import der Transportregelsammlung ist derzeit nur für EOP Premium-Abonnementpläne verfügbar. 
+    > Die Unterstützung von Cmdlets für den Export und Import der Nachrichtenfluss Regelsammlung wird derzeit nur für EOP Premium-Abonnement Pläne unterstützt. 
   
 Am einfachsten können Sie all Ihre Einstellungen mithilfe der Remote Windows PowerShell sammeln. Weitere Informationen über die Verbindungsherstellung zu EOP über die Remote Windows PowerShell finden Sie unter [Herstellen einer Verbindung mit Exchange Online Protection mithilfe der Remote-PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
@@ -66,10 +66,10 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Das folgende Skript kann zum Sammeln aller E-Mail-Benutzer, Gruppen, Antispam- und Anti-Malware-Einstellungen, Connectors und Transportregeln in der Quellorganisation verwendet werden. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei als Source_EOP_Settings.ps1 im eben erstellten Verzeichnis "Export", und führen Sie den folgenden Befehl aus:
+Das folgende Skript kann verwendet werden, um alle e-Mail-Benutzer, Gruppen, Antispam-Einstellungen, Antischadsoftware-Einstellungen, Connectors und Nachrichtenfluss Regeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, und fügen Sie ihn in einen Texteditor wie Notepad ein, speichern Sie die Datei als Source_EOP_Settings. ps1 im soeben erstellten Export Verzeichnis, und führen Sie den folgenden Befehl aus:
   
 ```
-&amp; "C:\EOP\Export\Source_EOP_Settings.ps1"
+& "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
@@ -133,11 +133,10 @@ Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
 Get-InboundConnector | Export-Clixml InboundConnector.xml
 Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 #****************************************************************************
-# Exchange transport rules
+# Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
-
 ```
 
 Führen Sie die folgenden Befehle im Export-Verzeichnis aus, um die XML-Dateien mit der Zielorganisation zu aktualisieren. Ersetzen Sie contoso.onmicrosoft.com und contososuites.onmicrosoft.com durch Ihre Quell- und Zielorganisationsnamen.
@@ -181,7 +180,7 @@ Jetzt können Sie die Informationen aus der Office 365-Verwaltungskonsole Ihrer 
     
 3. Klicken Sie auf die einzelnen **Setup starten**-Links, und fahren Sie dann mit dem Setup-Assistenten fort. 
     
-4. Wählen Sie auf der Seite **Confirm Gesamtbetriebskosten** für **finden Sie unter schrittweise Anleitung für diesen Schritt mit**, **Allgemeine Anweisungen**aus.
+4. Wählen Sie auf der Seite " **Besitz Bestätigung bestätigen** " **unter schrittweise Anweisungen für diesen Schritt mit**die Option **Allgemeine Anweisungen**aus.
     
 5. Protokollieren Sie den MX- oder TXT-Eintrag, den Sie für die Überprüfung Ihrer Domäne benötigen, und beenden Sie den Setup-Assistenten.
     

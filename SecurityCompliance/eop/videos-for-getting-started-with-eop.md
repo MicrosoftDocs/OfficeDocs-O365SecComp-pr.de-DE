@@ -13,12 +13,12 @@ ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: Die folgenden Videos unterstützen Sie beim Einrichten und Verwenden von des EOP-gehosteten (Exchange Online Protection) E-Mail-Filterungsdiensts.
-ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276005"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341186"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Videos für erste Schritte mit EOP
 
@@ -27,7 +27,7 @@ Die folgenden Videos unterstützen Sie beim Einrichten und Verwenden von des EOP
 > [!NOTE]
 > Vor dem Beginnen der in den Videos beschriebenen Aufgaben sollten Sie den Nachrichtenfluss festlegen. Weitere Informationen finden Sie im Thema [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-In diesen Videos geht es um das Anpassen Ihrer Antispameinstellungen, sodass sie den Anforderungen Ihrer Organisation entsprechen. Für eingehende E-Mails, die den Dienst Ihrer Organisation durchlaufen, umfasst dies das Erstellen von sicheren, auf IP-Adressen basierenden Listen für Absender und gesperrte Absender und das Konfigurieren von Inhaltsfiltereinstellungen. Außerdem ist ein Video verfügbar, in dem gezeigt wird, wie Administratoren Spamnachrichten mit Inhaltsfilterung oder Nachrichten, die einer Transportregel entsprechen und in die Quarantäne verschoben wurden, finden und freigeben können. Darin erfahren Sie auch, wie Sie Spamnachrichten melden und uns bei der Verbesserung des Diensts helfen können.
+Bei diesen Videos geht es darum, Ihre Anti-Spam-Einstellungen an die Anforderungen Ihrer Organisation anzupassen. Für eingehende e-Mails, die über den Dienst zu Ihrer Organisation Reisen, umfasst dies das Erstellen von Listen sicherer Absender und blockierter Absender basierend auf IP-Adressen und das Konfigurieren von Inhaltsfiltereinstellungen. Es gibt auch ein Video, in dem gezeigt wird, wie Administratoren Inhalts gefilterte Spamnachrichten oder Nachrichten finden und freigeben können, die mit einer Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmen, die an die Quarantäne gesendet wurden, sowie zum Melden von Spamnachrichten, um den Dienst zu verbessern.
   
 - Konfigurieren von Listen zugelassener IP-Adressen und Listen gesperrter IP-Adressen in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
@@ -58,12 +58,12 @@ EOP enthält außerdem Einstellungen, um Schadsoftware zu behandeln, die vom Die
   
     Weitere Informationen finden Sie im Thema [configure Anti-Malware Policies](../configure-anti-malware-policies.md) . 
     
-Zum Filtern und Weiterleiten von Nachrichten, das auf den von Ihnen festgelegten Bedingungen oder auf Unternehmensrichtlinien bzw. Bestimmungen basiert, eignet sich das Video, in dem das Erstellen von Transportregeln besprochen wird.
+Zum Filtern und Weiterleiten von Nachrichten basierend auf bestimmten Bedingungen, die Sie basierend auf Unternehmensrichtlinien oder-Vorschriften festgelegt haben, sollten Sie sich das Video über das Erstellen von Nachrichtenfluss Regeln ansehen.
   
-- Konfigurieren der Exchange-Transportregeln in EOP
+- Konfigurieren von Exchange-Nachrichtenfluss Regeln in EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Weitere Informationen finden Sie unter [Nachrichtenfluss Regeln (Transportregeln) im Thema Exchange Online Protection](mail-flow-rules-transport-rules-0.md) , wenn Sie EoP eigenständig verwenden, oder lesen Sie das Thema [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , wenn Sie Exchange Online verwenden. 
+    Weitere Informationen finden Sie unter [Nachrichtenfluss Regeln (Transportregeln) im Thema Exchange Online Protection](mail-flow-rules-transport-rules-0.md) , wenn Sie EoP eigenständig verwenden, oder unter [Nachrichtenfluss Regeln (Transportregeln) in](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) Exchange Online Thema, wenn Sie Exchange Online verwenden.
     
 Wenn Sie den Dienst durch das Ausführen von Skripts in der Befehlszeile konfigurieren möchten, bietet das Video zu Remote PowerShell eine gute Einführung dazu.
   

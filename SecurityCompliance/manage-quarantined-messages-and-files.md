@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Als Administrator können Sie falsch positiv isolierte Nachrichten in Office 365 anzeigen, freigeben und melden. Sie können Richtlinien so einrichten, dass Office 365 Nachrichten filtert und Sie aus verschiedenen Gründen an die Quarantäne sendet: da Sie als Spam, Massen, Phishing, Schadsoftware oder als Übereinstimmung mit einer Nachrichtenfluss Regel identifiziert wurden. '
-ms.openlocfilehash: 797a2e54d6f0a0b1f0d06bd287dd636988f078b5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276265"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341726"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 
@@ -87,7 +87,7 @@ Je nach Ihren Einstellungen kann es viele isolierte Nachrichten und Dateien gebe
       - Zum Suchen nach Dateien legen Sie die Filter so fest, dass **Dateien** , die **** aufgrund von Schadsoftware isoliert wurden, angezeigt werden.<br/>
     Bei isolierten Dateien werden alle isolierten Dateien angezeigt, nicht nur Ihre eigenen, unabhängig davon, was Sie anzeigen möchten.
     
-      - Zum Suchen nach Nachrichten in Quarantäne legen Sie Filter so fest, dass **alle** oder **nur meine** **e-Mails**angezeigt werden. Für den letzten Filter wählen Sie den Typ der Quarantäne Nachricht aus, nach der Sie suchen. Sie können nach Nachrichten, die als **Spam**identifiziert wurden, nach Nachrichten suchen, die mit einer Nachrichtenfluss-oder **Transportregel**, **Massen** Mail, **Phishing** -e-Mails oder **** e-Mails mit Schadsoftware übereinstimmen.
+      - Zum Suchen nach Nachrichten in Quarantäne legen Sie Filter so fest, dass **alle** oder **nur meine** **e-Mails**angezeigt werden. Für den letzten Filter wählen Sie den Typ der Quarantäne Nachricht aus, nach der Sie suchen. Sie können nach Nachrichten, die als **Spam**identifiziert wurden, nach Nachrichten suchen, die mit einer Nachrichtenfluss Regel (**Transportregel**), **Massen** Mail, **Phishing** -e-Mails oder e-Mails mit **Schadsoftware**übereinstimmen.
     
 2. Wählen Sie unter **Ergebnisse sortieren nach**den Filter aus, den Sie für die Suche verwenden möchten, in den Dropdownlisten. Die Optionen variieren je nachdem, ob Sie nach Dateien oder Nachrichten suchen. Platzhalter werden in Suchfeldern zu diesem Zeitpunkt nicht unterstützt.<br/><br/>Sowohl für Dateien als auch für Nachrichten können Sie nach dem Datum filtern, an dem die Nachricht oder Datei an die Quarantäne gesendet wurde. Sie können das Datum oder einen Datumszeitraum angeben, einschließlich der Uhrzeit. Sie können Ihre Suchergebnisse auch nach dem Ablaufdatum filtern, an dem die Datei oder Nachricht aus der Quarantäne gelöscht wird, oder Sie können eine Kombination aus Filtern verwenden. Wählen Sie **Erweiterter Filter**aus, um nach Ablaufdatum zu suchen. Unter **Expires**können Sie Nachrichten auswählen, die innerhalb der nächsten 24 Stunden ( **heute**), innerhalb der nächsten 48 Stunden ( **Nächste 2 Tage**), innerhalb der nächsten Woche ( **nächsten 7 Tage**) aus der Quarantäne gelöscht werden sollen, oder Sie können ein benutzerdefiniertes Zeitintervall auswählen.<br/><br/>Für Nachrichten haben Sie die folgenden zusätzlichen Optionen:
     
@@ -114,7 +114,7 @@ Wenn Sie ein Element auswählen, das in der Quarantäneliste angezeigt wird, wir
     
 - **Betreff**. Der Text der Betreffzeile der Nachricht. 
     
-- **Type**. Zeigt an, ob eine Nachricht als **Spam**, als **Massen**-, **Phishing**-, Übereinstimmung mit einer e-Mail-Fluss Regel ( **Transport Regel**) oder als mit **Schadsoftware**gekennzeichnet erkannt wurde.
+- **Type**. Zeigt an, ob eine Nachricht als **Spam**, als **Massen**-, **Phishing**-, Übereinstimmung mit einer e-Mail-Fluss Regel (**Transport Regel**) oder als mit **Schadsoftware**gekennzeichnet erkannt wurde.
     
 - **Läuft ab**. Das Datum und die Uhrzeit, zu denen die Nachricht automatisch aus der Quarantäne gelöscht wird. 
     

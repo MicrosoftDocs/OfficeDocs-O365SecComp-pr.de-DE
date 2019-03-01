@@ -14,12 +14,12 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
 - M365-security-compliance
 description: Als Exchange-Administrator können Sie das Branding Ihrer Organisation auf verschlüsselte e-Mail-Nachrichten Ihrer Organisation und auf die Inhalte des Verschlüsselungs Portals anwenden.
-ms.openlocfilehash: 237824890d2b519e36cf5205a1f5c3dcc0fe830a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213335"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341706"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Hinzufügen der Marke Ihres Unternehmens zu Ihren verschlüsselten Nachrichten
 

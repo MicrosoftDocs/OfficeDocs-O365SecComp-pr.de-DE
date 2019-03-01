@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten.
-ms.openlocfilehash: ef58e2cd5a3ffdbbeb02124442c355974d174073
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a70fe44eb80b49c6e8c6ea46bc1d38b92bd07279
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027272"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341546"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Bewährte Methoden für das Konfigurieren von EOP
   
@@ -32,28 +32,28 @@ Wenn Ihre Organisation über vorhandene Benutzerkonten in einer lokalen Active D
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>SPF-Eintrags-Anpassung zur Verhinderung von Spoofing
 
-Wenn Sie EOP eingerichtet haben, werden einen SPF (Sender Policy Framework)-Eintrag für EOP Ihren DNS-Einträgen hinzugefügt. Der SPF-Datensatz hilft spoofing zu verhindern. Weitere Informationen wie ein SPF-Datensatzes verhindert spoofing und wie Sie Ihre lokale IP-Adressen der SPF-Datensatz hinzufügen können finden Sie unter [Einrichten von SPF in Office 365, um spoofing zu verhindern](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+Beim Einrichten von EOP haben Sie einen SPF-Eintrag (Sender Policy Framework) für EOP zu Ihren DNS-Einträgen hinzugefügt. Der SPF-Eintrag hilft bei der Verhinderung von Spoofing. Weitere Informationen dazu, wie ein SPF-Eintrag Spoofing verhindert und wie Sie Ihre lokalen IP-Adressen dem SPF-Eintrag hinzufügen können, finden Sie unter [Einrichten von SPF in Office 365, um Spoofing zu verhindern](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
   
 ## <a name="set-anti-spam-options"></a>Festlegen von Antispamoptionen
 
-Des Umgangs mit Filtern die Verbindung Einstellungen durch zugelassene IP-Adressen und IP-Sperrlisten IP-Adressen hinzugefügt und durch Auswählen der Option **Liste sicheren aktivieren** , die sollte die Anzahl der falsch positive Ergebnisse (unbedenkliche e-Mails, die als Spam klassifiziert ist) reduzieren Sie erhalten. Weitere Informationen finden Sie unter [Konfigurieren der verbindungsfilterrichtlinie](../configure-the-connection-filter-policy.md). Sehen Sie für weitere Spameinstellungen, die für die gesamte Organisation gelten sich die [Vorgehensweise dazu beitragen, dass eine Nachricht als Spam gekennzeichnet ist nicht](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [e-Mail-Nachrichten mit dem Office 365-Spam-Filter auf false negative Probleme zu verhindern, dass spam blockieren](https://go.microsoft.com/fwlink/p/?LinkId=534225). Dies sind hilfreich, wenn Sie falsch positive Ergebnisse oder falsch negative verhindern möchten, und Sie auf Administratorebene-Steuerelement haben.
+Verwalten Sie die Einstellungen für den Verbindungsfilter, indem Sie IP-Adressen zu IP-Zulassungs-und IP-Sperrlisten hinzufügen, und wählen Sie die Option **sichere Liste aktivieren** aus, um die Anzahl falsch positiver e-Mail-Nachrichten, die als Spam klassifiziert werden, zu reduzieren. Weitere Informationen finden Sie unter [configure the Connection Filter Policy](../configure-the-connection-filter-policy.md). Weitere Spameinstellungen, die für die gesamte Organisation gelten, sehen Sie sich an, [wie Sie sicherstellen können, dass eine Nachricht nicht als Spam gekennzeichnet ist](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [e-Mail-Spam mit dem Office 365-Spamfilter blockiert, um falsche Negative Probleme zu vermeiden](https://go.microsoft.com/fwlink/p/?LinkId=534225). Diese sind hilfreich, wenn Sie die Kontrolle auf Administratorebene haben und falsch positive oder falsch negative Fehler vermeiden möchten.
   
-Verwalten von Inhaltsfilter überprüfen und optional ändern die Standardeinstellungen. Beispielsweise können Sie die Aktion für was, als Spam erkannten Nachrichten passiert ändern. Wenn Sie einen aggressiven Ansatz zum Filtern von Spam-verfolgen möchten, können Sie erweiterte spamfilterungsoptionen konfigurieren. Es wird empfohlen, dass Sie diese Optionen zuerst vor deren Implementierung in Ihrer produktionsumgebung (durch Klicken auf aktivieren) Es wird empfohlen, dass Organisationen, die betreffenden Informationen zu Phishing sind aktivieren Testen der **SPF-Datensatz: Schwerer Fehler** Option. Weitere Informationen finden Sie unter [Konfigurieren Ihrer Spam-Filter-Richtlinien](../configure-your-spam-filter-policies.md) und [Erweiterte Optionen für Spamfilterung](../advanced-spam-filtering-asf-options.md).
+Verwalten Sie Ihre Inhaltsfilter, indem Sie die Standardeinstellungen überprüfen und optional ändern. Sie können beispielsweise die Aktion für das geschehen mit Spam erkannten Nachrichten ändern. Wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten, können Sie Erweiterte Spam Filterungsoptionen konfigurieren. Es wird empfohlen, diese Optionen zuerst zu testen, bevor Sie Sie in Ihrer Produktionsumgebung implementieren (indem Sie Sie aktivieren), es wird empfohlen, dass Organisationen, die sich um Phishing kümmern, die Option **SPF-Eintrag: harter Fehler** aktivieren. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](../configure-your-spam-filter-policies.md) and [Advanced Spam Filtering Options](../advanced-spam-filtering-asf-options.md).
   
 > [!IMPORTANT]
-> Wenn Sie, um sicherzustellen, dass diese Aktion mit lokalen Postfächern die Inhaltsfilter Standardaktion **Nachricht in Junk-e-Mail-Ordner verschieben**möchten, verwenden, müssen Sie auch als Transportregeln, bezeichnet, auf dem lokalen Exchange Mail Flow Regeln konfigurieren. Server zum Erkennen von Spam-Headern von EOP gefiltert werden hinzugefügt. Weitere Informationen hierzu finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner des Benutzers weitergeleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Wenn Sie die standardmäßige Inhaltsfilteraktion, **Nachricht in Junk-e-Mail-Ordner verschieben**, um sicherzustellen, dass diese Aktion mit lokalen Postfächern funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Konfiguration konfigurieren. Server zum Aufspüren von Spam Kopfzeilen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
-Es wird empfohlen, dass Sie überprüfen des [Anti-Spam Protection FAQ](../anti-spam-protection-faq.md), einschließlich des ausgehenden Adressetiketts besten Practices Abschnitts, der hilft sicherzustellen, dass Ihre ausgehende Nachrichten übermittelt werden.
+Wir empfehlen, die Antispamschutz [-FAQ](../anti-spam-protection-faq.md)zu lesen, einschließlich des Abschnitts "Best Practices für ausgehende Nachrichten", um sicherzustellen, dass Ihre ausgehenden e-Mails zugestellt werden.
   
-Sie können falsch negative (Spam) und falsch positive Ergebnisse (nicht-Spam) an Microsoft zur Analyse auf verschiedene Weise übermitteln. Weitere Informationen hierzu finden Sie unter [Submit Spam, nicht-Spam und Phishing-Betrug Nachrichten an Microsoft zur Analyse](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Sie können auf verschiedene Weise falsch negative (Spam) und falsch positive (nicht-Spam) an Microsoft übermitteln. Weitere Informationen finden Sie unter [Submit Spam, Non-Spam, and Phishing Scam messages to Microsoft for Analysis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
   
 ## <a name="set-anti-malware-options"></a>Festlegen von Antimalwareoptionen
 
-Überprüfen und Feinabstimmung Ihrer filtereinstellungen für Schadsoftware in der Exchange-Admin-center(EAC). Weitere Informationen finden Sie unter [Configure Anti-Malware Policies](../configure-anti-malware-policies.md). Es wird empfohlen, Informationen zu anderen häufig gestellte Fragen und Antworten zur Anti-Malware Protection unserer [Anti-Malware Protection FAQ ](../anti-malware-protection-faq-eop.md)gelesen wird.
+Überdenken und optimieren Sie Ihre Filtereinstellungen für Schadsoftware im Exchange Admin Center (EAC). Weitere Informationen finden Sie unter [configure Anti-Malware Policies](../configure-anti-malware-policies.md). Wir empfehlen auch, sich über andere häufig gestellte Fragen und Antworten im Zusammenhang mit dem Schutz vor Schadsoftware zu verständigen. [ ](../anti-malware-protection-faq-eop.md)
   
-Wenn Sie befürchten, dass ausführbare Dateien Schadsoftware enthalten könnten, können Sie eine Exchange-Nachrichtenflussregel erstellen, durch die alle E-Mail-Anhänge mit ausführbaren Inhalten blockiert werden. Führen Sie die Schritte in [Reduzieren von Malware-Bedrohungen durch Dateianhangblockierung in Exchange Online Protection](https://support.microsoft.com/kb/2959596) aus, um die unter "Unterstützte ausführbare Dateitypen für die Überprüfung mit Transportregeln" in [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx) aufgelisteten Dateitypen zu blockieren.
+Wenn Sie sich Sorgen über ausführbare Dateien mit Schadsoftware machen, können Sie eine Exchange-Nachrichtenfluss Regel erstellen, die alle e-Mail-Anlagen blockiert, die ausführbare Inhalte enthalten. Führen Sie die Schritte in [How to Reduce Malware Threats through File Attachment Blocking in Exchange Online Protection](https://support.microsoft.com/kb/2959596) aus, um die in [use Mail Flow Rules aufgeführten Dateitypen zum Überprüfen von Nachrichtenanlagen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)zu blockieren.
   
-Sie können den Filter für gängige Anlagetypen in der Exchange-Verwaltungskonsole verwenden. Wählen Sie **Schutz** \> **Schadsoftwarefilter**. Sie können eine Exchange-Nachrichtenflussregel, auch als Transportregel bezeichnet, erstellen, durch die alle E-Mail-Anhänge mit ausführbarem Inhalt blockiert werden. 
+Sie können den Filter für gängige Anlagentypen in der Exchange-verwaltungsKONSOLE verwenden. Wählen Sie **Schutz** \> - **Malware Filter**aus. Sie können eine e-Mail-Fluss Regel erstellen, die alle e-Mail-Anlagen blockiert, die ausführbare Inhalte aufweisen. 
   
 Für einen höheren Schutz empfehlen wir, auch einige oder alle der folgenden Erweiterungen mithilfe von Nachrichtenflussregeln zu blockieren: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. Dies kann mithilfe der Bedingung **Mindestens eine Anlage... eine Dateierweiterung hat, die diese Wörter enthält** erfolgen. 
   
@@ -61,13 +61,13 @@ Administratoren und Endbenutzer können Malware, die an den Filtern vorbei gelan
   
 ## <a name="create-mail-flow-rules"></a>Erstellen von Nachrichtenflussregeln
 
-Erstellen Sie Nachrichtenflussregeln, die auch als Transportregeln oder benutzerdefinierte Filter bezeichnet werden, um den Anforderungen Ihres Unternehmens gerecht zu werden.
+Erstellen Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) oder benutzerdefinierte Filter, um Ihre geschäftlichen Anforderungen zu erfüllen.
   
 Wenn Sie eine neue Regel in die Produktion übernehmen, wählen Sie zunächst einen der Testmodi aus, um die Wirkung der Regeln zu überprüfen. Wenn Sie sicher sind, dass die Regel so funktioniert wie beabsichtigt, ändern Sie den Regelmodus in **Erzwingen**.
   
 Beim Bereitstellen neuer Regeln sollten Sie in Erwägung ziehen, als zusätzliche Aktion **Schadensbericht generieren** hinzuzufügen, um die betreffende Regel zu überwachen. 
   
-Bei der Konfiguration einer Hybridbereitstellung, bei der ein Teil der Organisation lokal und ein Teil in Office 365 verwaltet wird, können Sie Regeln erstellen, die sich auf die gesamte Organisation anwenden lassen. Dies ist nur möglich, wenn Sie Bedingungen verwenden, die sowohl lokal als auch in Office 365 verfügbar sind. Die meisten Bedingungen stehen zwar in beiden Bereitstellungen zur Verfügung, doch sind einige davon nur für bestimmte Bereitstellungsszenarien geeignet. Weitere Informationen finden Sie unter [Mail flow or Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
+Wenn Sie sich in einer Hybrid Bereitstellungskonfiguration befinden, in der sich ein Teil Ihrer Organisation lokal und ein Teil in Office 365 befindet, können Sie Regeln erstellen, die für die gesamte Organisation gelten. Verwenden Sie hierzu Bedingungen, die sowohl lokal als auch in Office 365 zur Verfügung stehen. Während die meisten Bedingungen in beiden Bereitstellungen verfügbar sind, gibt es eine kleine Gruppe, die spezifisch für ein bestimmtes Bereitstellungsszenario ist. Weitere Informationen finden Sie unter [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
 Wenn Sie in Ihrer Organisation E-Mail-Anlagen von Nachrichten während der Übermittlung überprüfen möchten, können Sie dazu Nachrichtenflussregeln einrichten. Führen Sie dann Aktionen für die überprüften Nachrichten basierend auf deren Inhalten oder Merkmalen dieser Anlagen durch. Weitere Informationen finden Sie unter [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx).
   
@@ -90,7 +90,7 @@ Spam und Phishing können ebenfalls durch Blockieren eingehender bösartiger E-M
   
 ### <a name="extension-blocking"></a>Erweiterungsblockierung
 
-Wenn Sie ausführbare Dateien mit Malware besorgt sind, können Sie Antischadsoftware-Richtlinien, um mindestens eine e-Mail-Anlage zu blockieren, die hat ausführbaren Inhalt konfigurieren. Führen Sie die Schritte unter [Configure Anti-Malware Policies](../configure-anti-malware-policies.md).
+Wenn Sie sich Sorgen über ausführbare Dateien mit Schadsoftware machen, können Sie Antischadsoftware-Richtlinien so konfigurieren, dass e-Mail-Anhänge blockiert werden, die ausführbare Inhalte enthalten. Führen Sie die Schritte unter [configure Anti-Malware Policies](../configure-anti-malware-policies.md)aus.
   
 Für einen höheren Schutz empfehlen wir, auch einige oder alle der folgenden Erweiterungen zu blockieren: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh.
   

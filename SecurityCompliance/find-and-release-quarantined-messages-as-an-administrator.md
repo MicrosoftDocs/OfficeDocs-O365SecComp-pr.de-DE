@@ -15,16 +15,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC).
-ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219035"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341786"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Finden und Freigeben von Nachrichten in Quarantäne als Administrator
 
-In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC). Diese Nachrichten wurden von Office 365 in Quarantäne gestellt, da sie entweder als Spam identifiziert wurden oder mit einer Transportregel übereinstimmen. 
+In diesem Thema wird beschrieben, wie Exchange Online-und Exchange Online Protection (EOP)-Administratoren isolierte Nachrichten im Exchange Admin Center (EAC) finden, freigeben und melden können. Office 365 leitet Nachrichten in Quarantäne, da Sie als Spam identifiziert wurden oder mit einer Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmen. 
   
 Verwenden Sie das &amp; Security Compliance Center anstelle der Exchange-Verwaltungskonsole, um diese Aufgaben auszuführen und mit Nachrichten zu arbeiten, die an die Quarantäne gesendet wurden, da Sie Schadsoftware enthalten. Weitere Informationen finden Sie unter [Isolieren von e-Mail-Nachrichten in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -70,9 +70,9 @@ Im Exchange Admin Center (EAC) können Sie mithilfe der erweiterten Suche anhand
 6. **Läuft ab** Sie können wählen, dass die Nachricht innerhalb der nächsten 24 Stunden ( **Heute**) aus der Quarantäne gelöscht wird, innerhalb der nächsten 48 Stunden ( **Nächste 2 Tage**), innerhalb der nächsten Woche ( **Nächste 7 Tage**), oder Sie können einen individuellen Zeitraum auswählen, während dem die Nachricht aus der Quarantäne gelöscht wird.
     
     > [!IMPORTANT]
-    > Standardmäßig werden in den Quarantäneordner verschobene Spamnachrichten 15 Tage lang aufbewahrt. Nachrichten im Quarantäneordner, die eine Transportregel erfüllen, werden 7 Tage lang aufbewahrt. Nach Ablauf dieses Zeitraums werden die Nachrichten von Office 365 gelöscht und können nicht mehr wiederhergestellt werden. Der Aufbewahrungszeitraum für Nachrichten im Quarantäneordner, die eine Transportregel erfüllt haben, ist nicht konfigurierbar. Der Aufbewahrungszeitraum für Nachrichten in der Spamquarantäne kann allerdings über die Einstellung **Spamnachrichten aufbewahren für (Tage)** in Ihren Inhaltsfilterrichtlinien verkürzt werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). 
+    > Standardmäßig werden Nachrichten in Spamquarantäne für 15 Tage in Quarantäne gehalten, während isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, 7 Tage lang in der Quarantäne aufbewahrt werden. Nach diesem Zeitraum löscht Office 365 die Nachrichten, und Sie können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage)** in ihren Inhaltsfilter Richtlinien gesenkt werden. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md). 
   
-7. **Typ** Sie können angeben, ob in der Quarantäne nach Nachrichten gesucht werden soll, die als **Spam** identifiziert wurden oder die einer **Transportregel** entsprachen.
+7. **Typ** Sie können angeben, ob nach Nachrichten, die als **Spam**identifiziert wurden, gesucht werden soll, oder ob Sie suchen möchten, die mit einer Nachrichtenfluss Regel (**Transport Regel**) übereinstimmen.
     
 3. Klicken Sie auf **OK**, um die erweiterte Suche zu starten. 
     
@@ -90,7 +90,7 @@ Nachdem Sie auf der Seite **Quarantäne** eine bestimmte isolierte Nachricht gef
     
     Für **Nachrichtenstatus** sind folgende Werte möglich: 
     
-  - **Typ** Zeigt an, ob die Nachricht als **Spam** identifiziert wurde oder einer **Transportregel** entsprach.
+  - **Typ** Gibt an, ob die Nachricht als **Spam** identifiziert wurde oder einer e-Mail-Fluss Regel (**Transport Regel**) entspricht.
     
   - **Läuft ab** Das Datum, an dem die Nachricht aus der Quarantäne gelöscht wird. 
     
@@ -145,7 +145,7 @@ Wenn Sie Nachrichten für Empfänger freigeben möchten, stehen dazu folgende M�
   
 Wählen Sie **Ausgewählte Nachricht freigeben und Absender zulassen** aus der Dropdownliste aus. 
     
-3. Das Dialogfeld **Nachricht freizugeben und Absender zulassen** wird geöffnet. Optional können Sie die Nachricht an Microsoft melden und dann auf **Freigeben und zulassen** klicken. Die Nachricht wird für alle Empfänger freigegeben, an die sie gerichtet ist, und alle zukünftigen Nachrichten von diesem Absender werden zugelassen. Wenn diese Nachricht allerdings aufgrund einer Transportregel oder eines blockierten Absenders unter Quarantäne gestellt wurde, werden zukünftige Nachrichten dieses Absenders weiterhin blockiert. 
+3. Das Dialogfeld **Nachricht freigeben und Absender zulassen** wird geöffnet. Optional können Sie die Nachricht an Microsoft melden und dann auf **Freigeben und zulassen**klicken. Die Nachricht wird an alle Empfänger freigegeben, an die Sie adressiert ist, und alle zukünftigen Nachrichten von diesem Absender werden zugelassen. Wenn diese Nachricht jedoch aufgrund einer e-Mail-Fluss Regel oder eines blockierten Absenders isoliert wurde, wird der Absender weiterhin für zukünftige Nachrichten blockiert. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Freigeben einer isolierten Nachricht für bestimmte Empfänger, ohne sie als falsch positives Ergebnis zu melden
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>

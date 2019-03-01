@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsch negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276095"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341526"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 
@@ -79,7 +79,7 @@ Leiten Sie Nichtspamnachrichten wie folgt weiter:
     
 - Wenn Sie die Aktion **Quarantäne Nachricht** anstelle der Aktion **Nachricht in Junk-e-Mail-Ordner verschieben verwenden,** Wenn Sie Ihre Inhaltsfilter konfigurieren: 
     
-  - Administratoren können Nachrichten in Spam-Quarantäne freigeben und diese als falsch positive Ergebnisse aus dem Exchange-Verwaltungskonsole melden. Weitere Informationen finden Sie unter [Suchen und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md).
+  - Administratoren können Spamnachrichten in Quaratäne freigeben und diese als falsch positive Nachrichten vom Exchange-Admin Center übermitteln. Weitere Informationen finden Sie unter [Finden und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md).
     
   - Benutzer können Ihre eigenen Nachrichten in Spamquarantäne freigeben und diese als falsch positive Ergebnisse über die folgenden Kanäle melden: 
     

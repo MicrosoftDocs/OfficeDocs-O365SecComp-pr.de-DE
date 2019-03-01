@@ -1,5 +1,5 @@
 ---
-title: Create organization-wide safe sender or blocked sender lists in Office 365
+title: Erstellen von organisationsweiten Listen sicherer Absender oder blockierter Absender in Office 365
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -12,40 +12,40 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Wenn Sie möchten, um sich zu vergewissern, dass Sie Nachrichten von einem bestimmten Absender, empfangen, da Sie sie und ihre Nachrichten vertrauen, können Sie Anpassen Ihrer Liste in einer Richtlinie Spam-Filter in der Exchange-Verwaltungskonsole zu ermöglichen.
-ms.openlocfilehash: a90679fc900ca5695904898af3627fc1900a8545
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender erhalten, weil Sie Ihnen und ihren Nachrichten Vertrauen, können Sie Ihre Zulassungsliste in einer Spamfilter Richtlinie im Exchange Admin Center anpassen.
+ms.openlocfilehash: 0759d054f270cae03b98d9da7e2e2dcfe442d68f
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003164"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341596"
 ---
-# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Create organization-wide safe sender or blocked sender lists in Office 365
+# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Erstellen von organisationsweiten Listen sicherer Absender oder blockierter Absender in Office 365
   
-Wenn Sie möchten, um sich zu vergewissern, dass Sie Nachrichten von einem bestimmten Absender, empfangen, da Sie sie und ihre Nachrichten vertrauen, können Sie Anpassen Ihrer Zulassungsliste in einer Richtlinie Spam-Filter in der Exchange-Verwaltungskonsole (EAC) unter **Schutz** \> **Spam-Filter**. Weitere Informationen hierzu unter [Ihrer Spam-Filter-Richtlinien konfigurieren](configure-your-spam-filter-policies.md). Eine weitere Option wäre eine Exchange-Transportregel erstellen, dass den Spam-Filter funktioniert wie in der Domäne oder benutzerbasierten Liste zulassen. Sie können Nachrichten von einer bestimmten Domäne oder eines Benutzers auf ähnliche Weise zu blockieren.
+Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender erhalten, weil Sie Ihnen und ihren Nachrichten Vertrauen, können Sie Ihre Zulassungsliste in einer Spamfilter Richtlinie im Exchange Admin Center (EAC) unter **Schutz** \> - **Spamfilter**anpassen. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md). Eine weitere Option wäre das Erstellen einer Exchange-Nachrichtenfluss Regel (auch als Transportregel bezeichnet), die wie die Domänen-oder benutzerbasierte Zulassungsliste im Spamfilter funktioniert. Sie können Nachrichten, die von einer bestimmten Domäne oder einem Benutzer gesendet werden, auch auf ähnliche Weise blockieren.
   
-Eine Transportregel würde in dieser Situation hilfreich sein, wenn Sie zum Filtern von komplexen Kriterien wie Nachrichtenkopfzeilen oder die Namen von Anlagen überprüfen müssen, oder wenn Sie komplexe Aktionen wie hinzufügen einen Haftungsausschluss auf die Nachricht oder einen bestimmten Zeitraum anwenden hinzufügen möchten, auf dem die Rul e ist aktiv. Es ist jedoch die bevorzugte Methode, um sicherzustellen, dass e-Mails von einem bestimmten Absender oder Domäne den Spamfilter umgehen diese Richtlinie Ihrer Spam-Filter hinzufügen. Erste Schritte mit dies in der Exchange-Verwaltungskonsole zu **Schutz** zugreifen, indem \> **Spam-Filter**. Weitere Informationen finden Sie unter [Konfigurieren von Richtlinien Ihrer Spam-Filter](configure-your-spam-filter-policies.md).
+Eine e-Mail-Fluss Regel wäre in dieser Situation hilfreich, wenn Sie nach komplexen Kriterien wie dem Überprüfen von Nachrichtenkopfzeilen oder den Namen von Anlagenfiltern möchten, oder wenn Sie komplexe Aktionen wie Hinzufügen eines Haftungsausschlusses zur Nachricht oder Anwenden eines Zeitraums, in dem die Regel e ist aktiv. Die bevorzugte Methode, um sicherzustellen, dass e-Mails von einem bestimmten Absender oder einer Domäne Ihren Spamfilter umgehen, besteht jedoch darin, Sie Ihrer Spamfilter Richtlinie hinzuzufügen. Erste Schritte mit diesem in der Exchange-Verwaltungskonsole, indem Sie auf **Schutz** \> - **Spam Filter**. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md).
   
 > [!TIP]
-> Eine Liste domänenbasierte in einer Transportregel nicht so sicher wie eine Liste mit IP-Adresse, da Domänen manipuliert werden können. Darüber hinaus ist die IP-Adresse des Absenders in einer Sperrliste, es weiterhin blockiert werden, auch wenn für die Domäne filtern oder Benutzer wird umgangen wird. Dies ist, da eine Transportregel auf eine Domäne oder einen Benutzer globale IP-Sperrliste nicht außer Kraft setzt. Es wird empfohlen, eine Liste mit IP-Adresse in den meisten Fällen verwenden. Um eine Liste mit IP-Adresse zu erstellen, können Sie die Liste zugelassener IP-Adressen oder IP-Sperrliste im Verbindungsfilter verwenden. Alle Nachrichten von dieser IP-Adressen werden vom Inhaltsfilter nicht überprüft. Anweisungen zum Konfigurieren der verbindungsfilterrichtlinie IP-Adressen hinzugefügt, zu der Liste zugelassener IP-Adressen oder IP-Sperrliste finden Sie unter [Konfigurieren der verbindungsfilterrichtlinie](configure-the-connection-filter-policy.md). 
+> Eine domänenbasierte Liste in einer e-Mail-Fluss Regel ist nicht so sicher wie eine IP-Adress basierte Liste, da Domänen gefälscht werden können. Wenn sich die sendende IP-Adresse in einer Sperrliste befindet, wird Sie auch dann blockiert, wenn die Filterung für die Domäne oder den Benutzer umgangen wird. Der Grund ist, dass eine e-Mail-Fluss Regel für eine Domäne oder einen Benutzer die globale IP-Sperrliste nicht außer Kraft setzt. In den meisten Fällen wird die Verwendung einer IP-Adress basierten Liste empfohlen. Zum Erstellen einer IP-Adress basierten Liste können Sie die IP-Zulassungsliste oder die IP-Sperrliste im Verbindungsfilter verwenden. Nachrichten, die von diesen IP-Adressen gesendet werden, werden nicht vom Inhaltsfilter überprüft. Anweisungen zum Konfigurieren der Verbindungsfilter Richtlinie durch Hinzufügen von IP-Adressen zur IP-Zulassungsliste oder IP-Sperrliste finden Sie unter [configure the Connection Filter Policy](configure-the-connection-filter-policy.md). 
   
-Informationen zu weiteren Verwaltungsaufgaben in Bezug auf Transportregeln finden Sie unter [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
+Weitere Verwaltungsaufgaben im Zusammenhang mit Nachrichtenfluss Regeln finden Sie unter [Mail Flow Rules (Transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
-## <a name="use-the-eac-to-customize-a-block-or-allow-list-to-prevent-or-receive-email-from-a-domain-or-user"></a>Verwenden der Exchange-Verwaltungskonsole, damit die Liste, um zu verhindern, dass oder Empfangen von e-Mails von einer Domäne oder eines Benutzers oder einen Block anpassen
+## <a name="use-the-eac-to-customize-a-block-or-allow-list-to-prevent-or-receive-email-from-a-domain-or-user"></a>Verwenden der Exchange-verwaltungsKONSOLE zum Anpassen eines Blocks oder einer Zulassungsliste zum verhindern oder empfangen von e-Mails von einer Domäne oder einem Benutzer
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Schutz** \> **Spam-Filter**. 
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Schutz** \> - **Spam Filter**. 
     
 2. Führen Sie auf der Seite **Allgemein** eine der folgenden Aktionen aus: 
     
-  - Doppelklicken Sie auf die Standardrichtlinie oder eine vorhandene Richtlinie, um die Bearbeitung zu starten.
+  - Doppelklicken Sie auf die Standardrichtlinie oder eine vorhandene Richtlinie, um Sie zu bearbeiten.
     
-  - Klicken Sie auf **neu** , um eine neue Richtlinie für den benutzerdefinierten Spam-Filter zu erstellen, die Benutzern, Gruppen und Domänen in Ihrer Organisation angewendet werden können. 
+  - Klicken Sie auf **neu** , um eine neue benutzerdefinierte Spamfilter Richtlinie zu erstellen, die auf Benutzer, Gruppen und Domänen in Ihrer Organisation angewendet werden kann. 
     
-3. Auf der Seite **Listen ermöglichen** können Sie angeben, Einträge, wie Absender oder Domänen, die immer in den Posteingang übermittelt werden können. E-Mail-Nachrichten von dieser Einträge wird von den Spam-Filter nicht verarbeitet. Die folgenden Schritte aus: 
+3. Auf der Seite **Zulassungslisten** können Sie Einträge wie Absender oder Domänen angeben, die immer an den Posteingang zugestellt werden. E-Mails aus diesen Einträgen werden nicht vom Spamfilter verarbeitet. Gehen Sie wie folgt vor: 
     
-  - Fügen Sie vertrauenswürdige Absender an den Absender Liste zulassen. Klicken Sie auf **Hinzufügen**, und fügen Sie im Dialogfeld Auswahl die Absenderadressen, die Sie zulassen möchten. Sie können mehrere Einträge mit einem Semikolon oder eine neue Zeile zu trennen. Klicken Sie auf Ok, um die Seite **Zulassen Listen** zurückzukehren. 
+  - Fügen Sie der Absender Zulassungsliste vertrauenswürdige Absender hinzu. Klicken Sie auf **Hinzufügen**, und fügen Sie dann im Dialogfeldauswahl die Absenderadressen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mit einem Semikolon oder einer neuen Zeilen trennen. Klicken Sie auf OK, um zur Seite **Zulassungslisten** zurückzukehren. 
     
-  - Fügen Sie vertrauenswürdige Domänen auf die Domäne Liste zulassen. Klicken Sie auf **Hinzufügen**, und fügen Sie im Dialogfeld Auswahl der Domänen, die Sie zulassen möchten. Sie können mehrere Einträge mit einem Semikolon oder eine neue Zeile zu trennen. Klicken Sie auf Ok, um die Seite **Zulassen Listen** zurückzukehren. 
+  - Hinzufügen vertrauenswürdiger Domänen zur Zulassungsliste der Domäne. Klicken Sie auf **Hinzufügen**, und fügen Sie dann im Dialogfeldauswahl die Domänen hinzu, die Sie zulassen möchten. Sie können mehrere Einträge mit einem Semikolon oder einer neuen Zeilen trennen. Klicken Sie auf OK, um zur Seite **Zulassungslisten** zurückzukehren. 
     
     > [!CAUTION]
     > Wenn Sie Domänen auf oberster Ebene zulassen, ist es wahrscheinlich, dass unerwünschte E-Mails an einen Posteingang übermittelt werden. 
@@ -59,24 +59,24 @@ Informationen zu weiteren Verwaltungsaufgaben in Bezug auf Transportregeln finde
     > [!CAUTION]
     > Wenn Sie Domänen auf oberster Ebene blockieren, ist es wahrscheinlich, dass E-Mails, die Sie erhalten möchten, als Spam markiert werden. 
   
-## <a name="what-do-you-need-to-know-before-you-begin-creating-a-transport-rule"></a>Wobei benötigen Sie wissen, bevor Sie mit dem Erstellen einer Transportregel beginnen?
+## <a name="what-do-you-need-to-know-before-you-begin-creating-a-mail-flow-rule"></a>Was müssen Sie wissen, bevor Sie mit dem Erstellen einer e-Mail-Fluss Regel beginnen?
     
-- Sie müssen nicht erstellen eine Transportregel zum Umgehen der Spamfilterung oder e-Mail als Spam für einen Absender oder eine Domäne markieren. Verwenden Sie den Exchange Online Protection-Block und ermöglichen Sie Listen in einer Spam-Richtlinie anstelle von Transportregel zu, wenn Sie einfach blockieren oder Zulassen eines bestimmten Absender oder einer Domäne und etwaige zusätzlichen Auflagen nicht anfügen möchten. Weitere Informationen hierzu unter [Ihrer Spam-Filter-Richtlinien konfigurieren](configure-your-spam-filter-policies.md).
+- Sie müssen keine Nachrichtenfluss Regel erstellen, um die Spamfilterung zu umgehen oder e-Mails als Spam für einen Absender oder eine Domäne zu markieren. Verwenden Sie die Exchange Online Protection-Blockierungs-und Zulassungslisten in einer Spam Richtlinie anstelle dieser Nachrichtenfluss Regel, wenn Sie nur einen bestimmten Absender oder eine Domäne blockieren oder zulassen möchten und keine zusätzlichen Bedingungen anfügen. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md).
     
-- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Transportregeln" im Thema [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx). 
+- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" im Thema [Messaging Policy and Compliance Permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) . 
     
 - Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen in der Exchange-Verwaltungskonsole**.
     
 > [!TIP]
-> Liegt ein Problem vor? Erhalten Sie in der Exchange-Foren. Besuchen Sie die Foren unter [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)oder [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Probleme? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie die Foren unter [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)oder [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="use-the-eac-to-create-a-transport-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Verwenden der Exchange-Verwaltungskonsole zum Erstellen einer Transportregel umgehen der Spamfilterung für eine Domäne oder einen Benutzer
+## <a name="use-the-eac-to-create-a-mail-flow-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Erstellen einer e-Mail-Fluss Regel zum Umgehen der Spamfilterung für eine Domäne oder einen Benutzer mithilfe der Exchange-verwaltungsKONSOLE
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**. Wählen Sie **Hinzufügen** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) und wählen Sie dann die **Umgehung Spam-Filter**.
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**. Wählen **** ![Sie Add Add](media/ITPro-EAC-AddIcon.gif) Icon aus, und wählen Sie dann **Spamfilterung umgehen**aus.
     
 2. Benennen Sie die Regel. Wählen Sie unter **Diese Regel anwenden, wenn** die Option **Der Absender** und dann eine der folgenden Bedingungen aus: 
     
-  - Wenn Sie eine Domäne angeben möchten, wählen Sie die **Domäne ist**. Geben Sie die Domäne des Absenders, den Sie als sicherer, beispielsweise "contoso.com" festlegen möchten, klicken Sie im Dialogfeld **Domäne angeben** . **Fügen Sie hinzu** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) in der Liste der Ausdrücke zu verschieben. Wiederholen Sie diesen Schritt, wenn Sie möchten zusätzliche Domänen hinzufügen, und klicken Sie auf **OK** , wenn Sie fertig sind. 
+  - Wenn Sie eine Domäne angeben möchten, wählen Sie **Domäne ist**. Geben Sie im Dialogfeld **Domäne angeben** die Domäne des Absenders ein, den Sie als sicher festlegen möchten, beispielsweise contoso.com. **Hinzufügen** ![Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, um es in die Liste der Ausdrücke zu verschieben. Wiederholen Sie diesen Schritt, wenn Sie zusätzliche Domänen hinzufügen möchten, und klicken Sie auf **OK** , wenn Sie fertig sind. 
     
   - Wenn Sie einen Benutzer angeben möchten, klicken Sie auf **ist diese Person**. Fügen Sie im Dialogfeld **Mitglieder hinzufügen** den Benutzer aus der Liste hinzu, geben Sie den Benutzernamen ein, und klicken Sie auf **Namen überprüfen**. Wiederholen Sie diesen Schritt ggf. für weitere Benutzer, und klicken Sie zum Abschluss auf **OK**. 
     
@@ -84,21 +84,21 @@ Informationen zu weiteren Verwaltungsaufgaben in Bezug auf Transportregeln finde
     
 4. Wählen Sie für **Absenderadresse in Nachricht** die Option **Kopfzeile oder Umschlag** aus.
     
-5. Auf Wunsch können Sie unter anderem auch Einstellungen zur Überwachung der Regel, zum Testen der Regel und zum Aktivieren der Regel in einem bestimmten Zeitraum vornehmen. Es wird empfohlen, die Regel eine Zeit lang zu testen, bevor Sie sie in Ihrer Organisation erzwingen. Weitere Informationen zu diesen Einstellungen finden Sie unter [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx).
+5. Auf Wunsch können Sie unter anderem auch Einstellungen zur Überwachung der Regel, zum Testen der Regel und zum Aktivieren der Regel in einem bestimmten Zeitraum vornehmen.
     
 6. Wählen Sie **Speichern** aus, um die Regel zu speichern. 
     
 Nachdem Sie die Regel erstellt und erzwungen haben, wird die Spamfilterung für die angegebene Domäne oder den angegebenen Benutzer umgangen.
   
-## <a name="use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>Verwenden der Exchange-Verwaltungskonsole eine Transportregel erstellen, die von einer Domäne oder Benutzer gesendete Nachrichten blockiert
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>Erstellen einer Nachrichtenfluss Regel, die Nachrichten blockiert, die von einer Domäne oder einem Benutzer gesendet werden, mithilfe der Exchange-verwaltungsKONSOLE
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**. Wählen Sie **Hinzufügen** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) und wählen Sie dann auf **neue Regel erstellen**.
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**. Wählen **** ![Sie Add Add](media/ITPro-EAC-AddIcon.gif) Icon aus, und wählen Sie dann **neue Regel erstellen**aus.
     
 2. Benennen Sie die Regel, und klicken Sie dann auf **Weitere Optionen**. 
     
 3. Wählen Sie unter **Diese Regel anwenden, wenn** die Option **Der Absender** und dann eine der folgenden Bedingungen aus: 
     
-  - Wenn Sie eine Domäne angeben möchten, wählen Sie die **Domäne ist**. Geben Sie im Dialogfeld Domäne angeben die Domäne des Absenders, von der Sie Nachrichten, beispielsweise "contoso.com" blockieren möchten. Klicken Sie auf **Hinzufügen** ![Symbol hinzufügen](media/ITPro-EAC-AddIcon.gif) in der Liste der Ausdrücke zu verschieben. Wiederholen Sie diesen Schritt, wenn Sie möchten zusätzliche Domänen hinzufügen, und klicken Sie auf **OK** , wenn Sie fertig sind. 
+  - Wenn Sie eine Domäne angeben möchten, wählen Sie **Domäne ist**. Geben Sie im Dialogfeld Domäne angeben die Absenderdomäne ein, aus der Sie Nachrichten blockieren möchten, beispielsweise contoso.com. Klicken Sie auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, um es in die Liste der Ausdrücke zu verschieben. **** ![ Wiederholen Sie diesen Schritt, wenn Sie zusätzliche Domänen hinzufügen möchten, und klicken Sie auf **OK** , wenn Sie fertig sind. 
     
   - Wenn Sie einen Benutzer angeben möchten, klicken Sie auf **ist diese Person**. Fügen Sie im Dialogfeld **Mitglieder hinzufügen** den Benutzer aus der Liste hinzu, geben Sie den Benutzernamen ein, und klicken Sie auf **Namen überprüfen**. Wiederholen Sie diesen Schritt ggf. für weitere Benutzer, und klicken Sie zum Abschluss auf **OK**. 
     
@@ -106,7 +106,7 @@ Nachdem Sie die Regel erstellt und erzwungen haben, wird die Spamfilterung für 
     
 5. Klicken Sie auf **Weitere Optionen**, und wählen Sie dann für **Absenderadresse in Nachricht** die Option **Kopfzeile oder Umschlag** aus.
     
-6. Auf Wunsch können Sie unter anderem auch Einstellungen zur Überwachung der Regel, zum Testen der Regel und zum Aktivieren der Regel in einem bestimmten Zeitraum vornehmen. Es wird empfohlen, die Regel eine Zeit lang zu testen, bevor Sie sie in Ihrer Organisation erzwingen. Weitere Informationen zu diesen Einstellungen finden Sie unter [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx).
+6. Wenn Sie möchten, können Sie eine Auswahl treffen, um die Regel zu überwachen, die Regel zu testen, die Regel während eines bestimmten Zeitraums zu aktivieren und andere Optionen auszuwählen. Es wird empfohlen, die Regel für einen bestimmten Zeitraum zu testen, bevor Sie Sie in Ihrer Organisation erzwingen.
     
 7. Wählen Sie **Speichern** aus, um die Regel zu speichern. 
     
@@ -116,5 +116,5 @@ Nachdem Sie die Regel erstellt und erzwungen haben, werden alle von der von Ihne
 
 [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md)
   
-[Verwenden von Transportregeln zum Konfigurieren von Massen-e-Mail-Filterung](use-transport-rules-to-configure-bulk-email-filtering.md)
+[Verwenden von Nachrichtenfluss Regeln zum Konfigurieren der Massen-e-Mail-Filterung](use-transport-rules-to-configure-bulk-email-filtering.md)
 

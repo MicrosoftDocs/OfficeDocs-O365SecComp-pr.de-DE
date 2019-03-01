@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Mit dem Office 365 &amp; Security Compliance Center können Sie Personen, die Compliance-Aufgaben wie Geräteverwaltung, Verhinderung von Datenverlust, eDiscovery, Aufbewahrung usw. ausführen, Berechtigungen erteilen. Diese Personen können nur die Aufgaben ausführen, denen Sie explizit Zugriff gewähren. Für den Zugriff auf &amp; das Security Compliance Center müssen Benutzer ein globaler Office 365-Administrator oder ein Mitglied einer oder mehrerer Rollengruppen &amp; des Security Compliance Centers sein.
-ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: e935c71f9324dbce8e0b359bfe723b93ff500b0a
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223504"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341356"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Berechtigungen im Office 365 Security &amp; Compliance Center
 
@@ -47,7 +47,7 @@ Sie können die vorhandenen Rollengruppen bearbeiten oder löschen, aber dies wi
 
 In der folgenden Tabelle sind die Standardrollengruppen aufgeführt, die im Security &amp; Compliance Center verfügbar sind. Wenn Sie einem Benutzerberechtigungen zum Ausführen einer Konformitäts Aufgabe erteilen möchten, fügen Sie diese der &amp; entsprechenden Sicherheits Kompatibilitäts Center-Rollengruppe hinzu.
   
-Durch das Verwalten von Berechtigungen &amp; im Security Compliance Center erhalten Benutzer nur Zugriff auf die Compliance-Funktionen, die im &amp; Security Compliance Center selbst zur Verfügung stehen. Wenn Sie anderen Compliance-Funktionen, die sich nicht im Security &amp; Compliance Center befinden, wie Exchange-Transportregeln, Berechtigungen erteilen möchten, müssen Sie das Exchange Admin Center verwenden.
+Durch das Verwalten von Berechtigungen &amp; im Security Compliance Center erhalten Benutzer nur Zugriff auf die Compliance-Funktionen, die im &amp; Security Compliance Center selbst zur Verfügung stehen. Wenn Sie anderen Kompatibilitätsfeatures, die sich nicht im Security &amp; Compliance Center befinden, wie Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet), Berechtigungen erteilen möchten, müssen Sie die Exchange-Verwaltungskonsole verwenden.
   
 Informationen zum Gewähren des Zugriffs auf das Security &amp; Compliance Center finden Sie unter [Benutzern zugriff auf Office 365 Compliance Admin Center](grant-access-to-the-security-and-compliance-center.md)erteilen.
   

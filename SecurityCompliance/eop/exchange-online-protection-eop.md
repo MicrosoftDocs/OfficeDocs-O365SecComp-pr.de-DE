@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Es folgen einige Punkte, die Sie beachten sollten, bevor Sie mit der Arbeit mit EOP beginnen.
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206558"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341746"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -50,7 +50,7 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
     
 - [Bewährte Methoden für das Konfigurieren von EOP](best-practices-for-configuring-eop.md) Beschreibung empfohlener Konfigurationseinstellungen und Überlegungen nach der Einrichtung und Bereitstellung des Diensts. 
     
-- [Messagingrichtlinien und Richtlinientreue in EOP](messaging-policy-and-compliance-in-eop.md) Anleitung zum Umsetzen bestimmter Unternehmensvorschriften und -richtlinien mithilfe von Exchange-Transport-Regeln (benutzerdefinierten Filterregeln) und zum Verfolgen von Konfigurationsänderungen am Dienst mithilfe von Überwachungsberichten. 
+- [Messaging Richtlinie und-Kompatibilität in EoP](messaging-policy-and-compliance-in-eop.md) Beschreibt, wie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) zum Erzwingen bestimmter Unternehmensrichtlinien und-Richtlinien verwendet werden und wie Überwachungsberichte zum Nachverfolgen von Konfigurationsänderungen am Dienst verwendet werden. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Erläuterung von Spam- und Malwarefilterung, einschließlich einer Anleitung zu deren Anpassung an die Anforderungen Ihrer Organisation, sowie Beschreibung der Aufgaben, die Administratoren und Endbenutzer für isolierte Nachrichten ausführen können. 
     

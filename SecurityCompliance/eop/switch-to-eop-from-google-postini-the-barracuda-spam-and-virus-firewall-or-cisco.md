@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-description: Der Zweck dieses Themas ist von der Prozess für den Wechsel von Exchange Online Protection (EOP) von einem lokalen e-Mail-Hygiene Appliance oder Protection cloudbasierten Service Verständnis und dann Ihnen Hilferessourcen, die die ersten Schritte beim bereitstellen.
-ms.openlocfilehash: d1dc75e8d020f865e4f358899802d0da320deeb5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: In diesem Thema wird erläutert, wie Sie das Verfahren für das Wechseln zu Exchange Online Protection (EOP) von einer lokalen e-Mail-Hygiene-Appliance oder einem cloudbasierten Schutzdienst verstehen und Ihnen dann Hilferessourcen für die ersten Schritte zur Verfügung stellen können.
+ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026402"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340756"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Wechseln zu EOP von Google Postini, Barracuda Spam &amp; Virus Firewall oder Cisco IronPort
 
@@ -56,9 +56,9 @@ Wenn Sie eine Hybridbereitstellung in Erwägung ziehen, ist [Exchange Server 201
 
 Wenn Sie sich für einen Wechsel zu EOP entscheiden, sollten Sie unbedingt folgenden Bereichen Beachtung schenken:
   
-- **Benutzerdefinierte Filterregeln**: Wenn Sie zum Abfangen bestimmter Junk-E-Mails benutzerdefinierte Filter oder geschäftspolitische Regeln verwenden, wird empfohlen, EOP eine Zeitlang mit den Standardeinstellungen auszuprobieren, bevor Sie zu Ihren eigenen Regeln migrieren. Die Standardeinstellungen von EOP bieten unternehmensgerechten Spamschutz, sodass einige Ihrer eigenen Regeln möglicherweise nicht zu EOP migriert werden müssen. Sollten bei Ihnen Regeln zur Umsetzung bestimmter benutzerdefinierter Unternehmensrichtlinien gelten, können Sie diese natürlich erstellen. Detaillierte Anweisungen zum Erstellen von Transportregeln in EOP finden Sie unter [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx). 
+- **Benutzerdefinierte Filterregeln** Wenn Sie über benutzerdefinierte Filter-oder Geschäftsrichtlinien Regeln verfügen, um bestimmte Spam abzufangen, empfiehlt es sich, EOP mit den Standardeinstellungen für einen Zeitraum zu testen, bevor Sie Ihre Regeln migrieren. EOP bietet Spam Schutz auf Unternehmensniveau mit den Standardeinstellungen kann es sein, dass Sie einige ihrer Regeln nicht zu EOP migrieren müssen. Wenn Sie über Regeln verfügen, mit denen bestimmte benutzerdefinierte Geschäftsrichtlinien erzwungen werden, können Sie diese erstellen. [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) enthält detaillierte Anweisungen zum Erstellen von Nachrichtenfluss Regeln in EoP. 
     
-- **IP-Zulassungsliste Listen und IP-Sperrlisten** Wenn Sie arbeiten erlauben pro Benutzer, Listen und Sperrlisten, können einige Zeit in den Listen zu EOP als Teil des Setup-Vorgang zu kopieren. Weitere Informationen zu IP-ermöglichen Sie Listen und IP-Sperrlisten, finden Sie unter [Konfigurieren der verbindungsfilterrichtlinie](../configure-the-connection-filter-policy.md).
+- **IP-Zulassungslisten und IP-Sperrlisten** Wenn Sie Zulassungslisten und Sperrlisten auf Benutzerbasis haben, lassen Sie die Listen in EOP als Teil des Setupvorgangs kopieren. Weitere Informationen zu IP-Zulassungslisten und IP-Sperrlisten finden Sie unter [configure the Connection Filter Policy](../configure-the-connection-filter-policy.md).
     
 - **Sichere Kommunikation**: Wenn Sie Partner haben, die verschlüsseltes Messaging erforderlich machen, sollten Sie dies über die Exchange-Verwaltungskonsole einrichten. Informationen zum Konfigurieren dieses Szenarios finden Sie unter [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     

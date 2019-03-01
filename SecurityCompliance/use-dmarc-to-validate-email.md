@@ -14,12 +14,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität (DMARC) konfigurieren, um Nachrichten zu überprüfen, die von Ihrer Office 365-Organisation gesendet werden.
-ms.openlocfilehash: 178eb9658f1cfe298d3b5600ecdc524d7bd66a72
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: d224acaf6b1d53cdf9ababca87c5880a5499c613
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276177"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341576"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Überprüfen von E-Mails in Office 365
 
@@ -209,7 +209,7 @@ Office 365 ist so konfiguriert, da einige autorisierte E-Mail-Nachrichten die DM
   
 - Benutzer fügen mithilfe des E-Mail-Clients sichere Absender einzeln hinzu
     
-- Administratoren erstellen eine Exchange-Transportregel (ETR) für alle Benutzer, die Nachrichten dieser bestimmten Absender zulassen 
+- Administratoren erstellen eine Exchange-Nachrichtenfluss Regel (auch als Transportregel bezeichnet) für alle Benutzer, die Nachrichten für diese bestimmten Absender zulassen. 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Problembehandlung bei der DMARC-Implementierung
 <a name="dmarctroubleshoot"> </a>

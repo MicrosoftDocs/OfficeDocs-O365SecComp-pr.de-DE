@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
-ms.author: tracyp
+ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: 982e9b73821553ae1f666cf54e143d4a806e3cb3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223164"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341506"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -61,8 +61,8 @@ Viele der Steuerelemente für Sicherheit und Schutz in der Exchange-Verwaltungsk
   
 |Bereich * * * *|Enthält eine Standardrichtlinie * * * *|Empfehlung * * * *|
 |:-----|:-----|:-----|
-|**Nachrichtenfluss** (Transport Regeln)  <br/> |Nein  <br/> | Hinzufügen einer e-Mail-Fluss Regel zum Schutz vor Ransomware. Weitere Informationen finden Sie unter "Verwenden von Exchange-Transport Regeln zum Nachverfolgen oder Blockieren von e-Mails mit Dateierweiterungen, die von Ransomware verwendet werden" in diesem Blog Artikel: [How to Deal with Ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Erstellen Sie eine Transportregel, um die automatische Weiterleitung von e-Mails an externe Domänen zu verhindern. Weitere Informationen finden Sie unter [mildernde Client External forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/> <br>Weitere Informationen: [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
-|**Aktivieren der modernen Authentifizierung** <br/> |Nein  <br/> | Die moderne Authentifizierung in Office 365 ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA). MFA wird empfohlen, um den Zugriff auf Cloud-Ressourcen, einschließlich e-Mails, zu sichern.<br/>  <br>Lesen Sie die folgenden Themen:  <br/> • [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> • [Skype for Business Online: Aktivieren des Mandanten für die moderne Authentifizierung](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>Die moderne Authentifizierung ist standardmäßig für Office 2016-Clients, SharePoint Online und OneDrive for Business aktiviert.  <br/>  <br>Weitere Informationen: [Verwenden der modernen Authentifizierung von office 365 mit Office-Clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
+|**Nachrichtenfluss** (Nachrichtenfluss Regeln, auch als Transportregeln bezeichnet)|Nein|Hinzufügen einer e-Mail-Fluss Regel zum Schutz vor Ransomware. Weitere Informationen finden Sie unter "Verwenden von Exchange-Transport Regeln zum Nachverfolgen oder Blockieren von e-Mails mit Dateierweiterungen, die von Ransomware verwendet werden" in diesem Blog Artikel: [How to Deal with Ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Erstellen Sie eine Nachrichtenfluss Regel, um die automatische Weiterleitung von e-Mails an externe Domänen zu verhindern. Weitere Informationen finden Sie unter [mildernde Client External forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/><br/> Weitere Informationen: [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Aktivieren der modernen Authentifizierung**|Nein|Die moderne Authentifizierung in Office 365 ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA). MFA wird empfohlen, um den Zugriff auf Cloud-Ressourcen, einschließlich e-Mails, zu sichern.<br/><br/> Lesen Sie die folgenden Themen:  <br/>• [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for Business Online: Aktivieren des Mandanten für die moderne Authentifizierung](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Die moderne Authentifizierung ist standardmäßig für Office 2016-Clients, SharePoint Online und OneDrive for Business aktiviert. <br/><br/> Weitere Informationen: [Verwenden der modernen Authentifizierung von office 365 mit Office-Clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Konfigurieren von Mandanten weiten Freigaberichtlinien im SharePoint Admin Center
 
@@ -74,7 +74,7 @@ Zur Unterstützung der Ziele für den grundlegenden Schutz konfigurieren Sie Man
   
 |Bereich * * * *|Enthält eine Standardrichtlinie * * * *|Empfehlung * * * *|
 |:-----|:-----|:-----|
-|**Freigabe** (SharePoint Online und OneDrive for Business)  <br/> |Ja  <br/> | Die externe Freigabe ist standardmäßig aktiviert. Diese Einstellungen werden empfohlen:<br/>  • Zulassen der Freigabe für authentifizierte externe Benutzer und Verwenden von anonymen Zugriffs Links (Standardeinstellung).  <br/>  • Anonyme Zugriffs links laufen in dieser Anzahl von Tagen ab. Geben Sie, falls gewünscht, eine Zahl wie 30 Tage ein.<br/>  • Standard Linktyp – wählen Sie Internal (nur Personen in der Organisation) aus. Benutzer, die die Verwendung anonymer Links freigeben möchten, müssen diese Option im Menü Freigabe auswählen.<br/>  <br>Weitere Informationen: [Übersicht über die externe Freigabe](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85) <br/> |
+|**Freigabe** (SharePoint Online und OneDrive for Business)|Ja|Die externe Freigabe ist standardmäßig aktiviert. Diese Einstellungen werden empfohlen:<br/>• Zulassen der Freigabe für authentifizierte externe Benutzer und Verwenden von anonymen Zugriffs Links (Standardeinstellung). <br/>  • Anonyme Zugriffs links laufen in dieser Anzahl von Tagen ab. Geben Sie, falls gewünscht, eine Zahl wie 30 Tage ein.<br/>• Standard Linktyp – wählen Sie Internal (nur Personen in der Organisation) aus. Benutzer, die die Verwendung anonymer Links freigeben möchten, müssen diese Option im Menü Freigabe auswählen.<br/><br/> Weitere Informationen: [Übersicht über die externe Freigabe](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85)|
    
 Das SharePoint Admin Center und das OneDrive for Business Admin Center bieten dieselben Einstellungen. Die Einstellungen im Admin Center gelten für beide.
   
@@ -118,7 +118,7 @@ Weitere Informationen:
     
 ![Cloud App Security-Dashboard](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+## <a name="additional-resources"></a>Weitere Ressourcen
 
 Diese Artikel und Leitfäden enthalten zusätzliche normative Informationen zum Sichern Ihrer Office 365-Umgebung:
   

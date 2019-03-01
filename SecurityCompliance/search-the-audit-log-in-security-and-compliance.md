@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Office 365 Security & Compliance Center, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
-ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ac4ded889b913b2a090e4002f917ec06485948e1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296608"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341776"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center
 
@@ -295,12 +295,13 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu wec
 |:-----|:-----|:-----|
 |[Datei-und Seiten Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |
 |[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Aktivitäten der Websiteverwaltung](#site-administration-activities)<br/> |[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |
-|[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |[Verwaltungsaktivitäten der Azure AD-Gruppe](#azure-ad-group-administration-activities) <br/> |
-|[Aktivitäten der Anwendungsverwaltung](#application-administration-activities) <br/> |[Rollen Verwaltungsaktivitäten](#role-administration-activities) <br/> |[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/> |
-|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
-[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Aktivitäten mit jammern](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>|
-|||
+|[Aufbewahrungsrichtlinie und Bezeichnungs Aktivitäten](#retention-policy-and-label-activities) <br/>|[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> 
+|[Verwaltungsaktivitäten der Azure AD-Gruppe](#azure-ad-group-administration-activities) <br/> |[Aktivitäten der Anwendungsverwaltung](#application-administration-activities) <br/> |[Rollen Verwaltungsaktivitäten](#role-administration-activities) <br/> |
+|[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/> |[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |
+|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Aktivitäten mit jammern](#yammer-activities) <br/> |
+[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
+|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Datei-und Seiten Aktivitäten
@@ -450,8 +451,10 @@ In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfach
 |**Anzeigename**|**Operation**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Stellvertretungs-Postfachberechtigungen HinzugeFügt  <br/> |Add-MailboxPermission  <br/> |Ein Administrator hat dem Postfach einer anderen Person die Berechtigung FullAccess-Postfach für einen Benutzer (als Stellvertretung bezeichnet) zugewiesen. Die FullAccess-Berechtigung ermöglicht es der Stellvertretung, das Postfach der anderen Person zu öffnen und den Inhalt des Postfachs zu lesen und zu verwalten.  <br/> |
+|Klassifizierte Nachricht als Datensatz  <br/> |ApplyRecordLabel<br/> |Eine Nachricht wurde als Datensatz klassifiziert. Dies tritt auf, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
 |Nachrichten in einen anderen Ordner kopiert  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
 |Erstelltes Postfachelement  <br/> |Erstellen  <br/> |Ein Element wird im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
+|Neue Posteingangsregel in Outlook Web App erstellt  <br/> |NewInboxRule<br/> |<br/> |
 |Gelöschte Nachrichten aus Ordner "Gelöschte Elemente"  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft aus dem Ordner "Gelöschte Elemente" gelöscht oder gelöscht. Diese Elemente werden in den Ordner "Wiederherstellbare Elemente" verschoben. Nachrichten werden auch in den Ordner "Wiederherstellbare Elemente" verschoben, wenn ein Benutzer Sie auswählt und **UMSCHALT + ENTF**drückt.<br/> |
 |Nachrichten in einen anderen Ordner verschoben  <br/> |Verschieben  <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |
 |Nachrichten in Ordner "Gelöschte Elemente" verschoben  <br/> |MoveToDeletedItems  <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
@@ -466,6 +469,28 @@ In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfach
 |keine  <br/> |UpdateInboxRules  <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. PostEingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen auszuführen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen bestimmten Ordner oder das Löschen einer Nachricht.<br/> Wenn Sie Einträge für Posteingangsregel Aktivitäten zurückgeben möchten, müssen Sie in der Liste **Aktivitäten** die Option **Ergebnisse für alle Aktivitäten anzeigen** auswählen. Verwenden Sie die Felder Datumsbereiche und **Benutzer** , um die Suchergebnisse einzuschränken.<br/> |
 ||||
   
+### <a name="retention-policy-and-label-activities"></a>Aufbewahrungsrichtlinie und Bezeichnungs Aktivitäten
+
+In der folgenden Tabelle werden die Aktivitäten im Zusammenhang mit Office 365-Aufbewahrungsrichtlinien und Office 365-Aufbewahrungs Bezeichnungen beschrieben.
+
+- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
+- [Übersicht über Aufbewahrungsbezeichnungen](labels.md)
+<br/>
+
+|**Aktivität**|**Operation**|**Beschreibung**|
+|:-----|:-----|:-----|
+| Erstellte Aufbewahrungs Konfiguration für eine Aufbewahrungsrichtlinie<br/> |NewRetentionComplianceRule<br/> |Der Administrator konfiguriert die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie. Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden, und was mit Elementen passiert, wenn der Aufbewahrungszeitraum abgelaufen ist (beispielsweise Löschen von Elementen, beibehalten von Elementen oder beibehalten und dann löschen). Diese Aktivität entspricht auch der Verwendung des [New-RetentionComplianceRule-](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) Cmdlets.<br/>|
+| Erstellte Aufbewahrungs Bezeichnung <br/> |NewComplianceTag<br/>  |Der Administrator erstellt eine neue Aufbewahrungs Bezeichnung.<br/> |
+| Erstellte Aufbewahrungsrichtlinie<br/> |NewRetentionCompliancePolicy<br/> |Der Administrator erstellt eine neue Aufbewahrungsrichtlinie.<br/>  |
+| Gelöschte Aufbewahrungs Konfiguration für eine Aufbewahrungsrichtlinie<br/> | RemoveRetentionComplianceRule<br/>| Der Administrator löscht die Konfigurationseinstellungen einer Aufbewahrungsrichtlinie. Diese Aktivität wird wahrscheinlich protokolliert, wenn ein Administrator eine Aufbewahrungsrichtlinie löscht oder das Cmdlet **Remove-RetentionComplianceRule** ausführt.<br/> |
+| Gelöschte Aufbewahrungs Bezeichnung <br/> |RemoveComplianceTag<br/>  | Der Administrator löscht eine Aufbewahrungs Bezeichnung.<br/>|
+| Gelöschte Aufbewahrungsrichtlinie<br/> |RemoveRetentionCompliancePolicy<br/> |Der Administrator löscht eine Aufbewahrungsrichtlinie. <br/>  |
+| Aktivieren von Compliance-Features<br/> |SetRestrictiveRetentionUI<br/> |Der Administrator aktiviert Compliance-Funktionen, indem er das Cmdlet **Set-RegulatoryComplianceUI** ausführt. Nachdem dieses Cmdlet ausgeführt wurde, können Administratoren eine Aufbewahrungsrichtlinie Sperren und mithilfe der Benutzeroberfläche Security & Compliance Center eine Aufbewahrungs Bezeichnung als behördlichen Daten Satz angeben. Bis eine Organisation das Cmdlet **Set-RegulatoryComplianceUI** verwendet, um diese Features zu aktivieren, kann das Sperren einer Aufbewahrungsrichtlinie und das Erstellen einer gesetzlichen Aufbewahrungs Bezeichnung nur mithilfe von PowerShell erfolgen.<br/>|
+| Aktualisierte Aufbewahrungs Konfiguration für eine Aufbewahrungsrichtlinie<br/> | SetRetentionComplianceRule<br/>| Der Administrator ändert die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie. Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden, und was mit Elementen passiert, wenn der Aufbewahrungszeitraum abgelaufen ist (beispielsweise Löschen von Elementen, beibehalten von Elementen oder beibehalten und dann löschen). Diese Aktivität entspricht auch der Verwendung des Cmdlets [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) .<br/>|
+| Aktualisierte Aufbewahrungs Bezeichnung <br/> |SetComplianceTag<br/>  | Der Administrator aktualisiert eine vorhandene Aufbewahrungs Bezeichnung.<br/>|
+| Aktualisierte Aufbewahrungsrichtlinie<br/> |SetRetentionCompliancePolicy <br/>|Der Administrator aktualisiert eine vorhandene Aufbewahrungsrichtlinie. Zu den Updates, die dieses Ereignis auslösen, gehört das Hinzufügen oder Ausschließen von Inhaltsspeicherorten, auf die die Aufbewahrungsrichtlinie angewendet wird.<br/>|
+||||
+
 ### <a name="sway-activities"></a>Sway-Aktivitäten
   
 In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Sway aufgeführt. Sway ist eine Office 365-APP, die Benutzern hilft, Ideen, Geschichten und Präsentationen auf einer interaktiven, webbasierten Leinwand zu sammeln, zu formatieren und zu teilen. Weitere Informationen finden Sie unter [häufig gestellte Fragen zu Sway-Admin-Hilfe](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
@@ -663,7 +688,7 @@ In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in jamm
 |Angezeigte Datei  <br/> |FileVisited  <br/> |Benutzer zeigt eine Datei an.  <br/> |
 ||||
    
-### <a name="microsoft-flow"></a>Microsoft Flow
+### <a name="microsoft-flow-activities"></a>Microsoft Flow-Aktivitäten
 
 Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Informationen zur Überwachung von Flow-Aktivitäten finden Sie in den Blog- [Microsoft Flow-Überwachungsereignissen, die jetzt im Office 365 Security _AMP_ Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
 
@@ -671,10 +696,10 @@ Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durch
 
 Sie können das Überwachungsprotokoll nach App-bezogenen Aktivitäten in PowerApps durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, starten und Veröffentlichen einer App. das Zuweisen von Berechtigungen zu apps wird ebenfalls überwacht. Eine Beschreibung aller PowerApps-Aktivitäten finden Sie unter [Aktivitätsprotokollierung für PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
-### <a name="microsoft-stream"></a>Microsoft Stream
+### <a name="microsoft-stream-activities"></a>Microsoft Stream-Aktivitäten
   
 Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Stream durchsuchen. Zu diesen Aktivitäten gehört das Ausführen von Video Aktivitäten durch Benutzer, Gruppenkanal Aktivitäten und Administratoraktivitäten wie das Verwalten von Benutzern, das Verwalten von Organisationseinstellungen und das Exportieren von Berichten. Eine Beschreibung dieser Aktivitäten finden Sie im Abschnitt "Aktivitäten, die in Microsoft Stream protokolliert werden" in [Überwachungsprotokollen in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
-  
+
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administrator-Überwachungsprotokoll
   
 Die Exchange-Administrator-Überwachungsprotokollierung, die standardmäßig in Office 365 aktiviert ist, protokolliert ein Ereignis im Office 365-Überwachungsprotokoll, wenn ein Administrator (oder ein Benutzer, dem Administratorberechtigungen zugewiesen wurden) eine Änderung in Ihrer Exchange Online-Organisation vorgenommen hat. Änderungen, die mithilfe der Exchange-Verwaltungskonsole oder durch Ausführen eines Cmdlets in Windows PowerShell vorgenommen wurden, werden im Exchange-administratorüberwachungsprotokoll protokolliert. Detailliertere Informationen zur Administrator-Überwachungsprotokollierung in Exchange finden Sie unter [Administrator-Überwachungsprotokollierung](https://go.microsoft.com/fwlink/p/?LinkID=619225).
