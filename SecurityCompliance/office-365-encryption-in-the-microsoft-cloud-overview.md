@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: Eine Übersicht über die Verschlüsselung in der Microsoft-Cloud.
-ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275945"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357516"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Verschlüsselung in der Microsoft-Cloud
 
@@ -36,6 +38,7 @@ In Übereinstimmung mit dem Betriebs Sicherheits Standard der Public Key-Infrast
 FIPS 140-2 ist ein Standard, der speziell für die Validierung von Produktmodulen entwickelt wurde, die Kryptografie anstelle der Produkte, die Sie verwenden, implementieren. Kryptografische Module, die innerhalb eines Diensts implementiert werden, können als Erfüllung der Anforderungen für Hash-Stärke, Schlüsselverwaltung und ähnliches zertifiziert werden. Wenn kryptografische Funktionen verwendet werden, um die Vertraulichkeit, Integrität und Verfügbarkeit von Daten in Microsoft Cloud Services zu schützen, erfüllen die verwendeten Module und Chiffren den FIPS 140-2-Standard.
 
 Microsoft bescheinigt die zugrunde liegenden kryptografischen Module, die in unseren Cloud-Diensten verwendet werden, mit den neuen Versionen des Windows-Betriebssystems:
+
 - Azure und Azure U.S. Government
 - Dynamics 365 und Dynamics 365 U.S. Government
 - Office 365, Office 365 U.S. Government und Office 365 U.S. Government Defense

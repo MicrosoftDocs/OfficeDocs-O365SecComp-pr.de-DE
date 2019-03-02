@@ -8,8 +8,6 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,13 +15,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: Minimieren Sie das Potenzial einer Datenverletzung oder eines kompromittierten Kontos, indem Sie diese empfohlenen bewährten Methoden befolgen.
-ms.openlocfilehash: ff91721569aae5a4982e3f1dd054575d00c278d8
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276125"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357526"
 ---
 # <a name="security-best-practices-for-office-365"></a>Bewährte Methoden für die Sicherheit in Office 365
 
@@ -46,37 +48,37 @@ Access Secure Score bei [https://SecureScore.office.com](https://SecureScore.off
 MFA fügt eine zusätzliche Schutzebene für eine starke Kenn Wort Strategie hinzu, indem Benutzer aufgefordert werden, einen Telefonanruf, eine Textnachricht oder eine APP-Benachrichtigung auf Ihrem Smartphone zu bestätigen, nachdem Sie das Kennwort richtig eingegeben haben. Bei Verwendung von MFA werden Office 365-Benutzerkonten auch dann noch vor unbefugtem Zugriff geschützt, wenn das Kennwort eines Benutzers kompromittiert wurde. Konten werden geschützt, da der Zugriff erst dann einem Konto gewährt wird, nachdem die zusätzliche Herausforderung erfüllt wurde. Ein kompromittiertes oder gestohlenes Kennwort genügt nicht.
   
 - [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
-    
+
 - [Einrichten der mehrstufigen Authentifizierung für Office 365-Benutzer](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
-    
+
 ## <a name="use-office-365-cloud-app-security"></a>Verwenden von Office 365 Cloud App Security
 
 Einrichten von Richtlinien basierend auf Ihren geschäftlichen Anforderungen, um anomale Aktivitäten nachzuverfolgen und darauf zu reagieren. Richten Sie Warnungen mit Office 365 Cloud App Security ein, damit Administratoren ungewöhnliche oder riskante Benutzeraktivitäten wie das Herunterladen umfangreicher Datenmengen, mehrere fehlgeschlagene Anmeldeversuche oder Anmeldungen von einer unbekannten oder gefährlichen IP-Adresse überarbeiten können. Für Organisationen mit einem Office 365 Enterprise E5-Plan können Sie sofort mit der Verwendung von Office 365 Cloud App Security beginnen. Wenn Sie über einen anderen Enterprise-Plan verfügen, können Sie Office 365 Cloud App Security als Add-on erwerben.
   
 - [Übersicht über die O365-Cloud-App-Sicherheit](office-365-cas-overview.md)
-    
+
 - [Aktivieren von Office 365 Cloud App Security](turn-on-office-365-cas.md)
-    
+
 ## <a name="secure-mail-flow"></a>Sicherer Nachrichtenfluss
 
 Implementieren Sie die umfangreichen Features, die in Exchange Online Protection festgelegt sind, und erhalten Sie mehr Sicherheit über die Identität des Absenders der einzelnen e-Mail-Nachrichten, und schützen Sie vor unbekannten Schadsoftware, Viren und bösartigen URLs, die über e-Mails übertragen
   
-- Konfigurieren von Richtlinien für [e-Mail-Antispamschutz für Office 365](anti-spam-protection.md) für Ihre Organisation. 
-    
+- Konfigurieren von Richtlinien für [e-Mail-Antispamschutz für Office 365](anti-spam-protection.md) für Ihre Organisation.
+
 - Erfahren Sie mehr über und verwenden Sie dann [Advanced Threat Protection für sichere Anlagen und sichere Links](https://technet.microsoft.com/library/mt148491.aspx).
-    
+
 - [Fügen Sie der Organisation den Schutz vor schadSoftware hinzu](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx).
-    
-- Informieren Sie sich über und aktivieren Sie [Sicherheitstipps in e-Mail-Nachrichten in Office 365](safety-tips-in-office-365.md) für Ihre Benutzer. 
-    
+
+- Informieren Sie sich über und aktivieren Sie [Sicherheitstipps in e-Mail-Nachrichten in Office 365](safety-tips-in-office-365.md) für Ihre Benutzer.
+
 - Wenn Sie in Office 365 eine benutzerdefinierte Domäne für Ihre Organisation verwenden, richten Sie SPF, DKIM und dann DMARC ein, um von Ihrer Organisation gesendete e-Mails zu überprüfen und Spoofing zu verhindern:
-    
+
   - [Richten Sie SPF in Office 365 ein, um Spoofing zu verhindern](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
-    
+
   - [Verwenden Sie DKIM zum Überprüfen ausgehender e-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
-    
+
   - [Verwenden Sie DMARC, um e-Mails in Office 365 zu überprüfen](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
+
 ## <a name="enable-mailbox-audit-logging"></a>Aktivieren der Postfachüberwachungsprotokollierung
 
 Einige Überwachungsprotokollierung wird automatisch für Sie in Office 365 aktiviert; die postfachüberwachungsprotokollierung ist jedoch nicht standardmäßig aktiviert. Sie aktivieren die Überwachungsprotokollierung für alle Benutzerpostfächer in Office 365 mithilfe von Exchange Online PowerShell. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
@@ -99,13 +101,11 @@ Als Office 365-Administrator können Sie mit der Customer Lockbox steuern, wie e
 Lesen Sie diese Sicherheitsfeatures, die in einem Office 365-Testabonnement ausgeführt werden, bevor Sie Sie in der Produktion übernehmen.
   
 - [Erstellen eines Office 365-Testabonnements](https://technet.microsoft.com/library/mt736406.aspx)
-    
-- [Konfigurieren und Testen von MFA für ein Benutzerkonto](https://technet.microsoft.com/library/mt492459.aspx)
-    
-- [Konfigurieren und testen Sie Office 365 Cloud App Security, um Sie über globale Administratoraktivitäten zu informieren.](https://technet.microsoft.com/library/mt757250.aspx)
-    
-- [Konfigurieren und Testen von ATP für verdächtige e-Mails](https://technet.microsoft.com/library/mt490479.aspx)
-    
-- Überprüfen Sie die [Office 365 Secure Score](https://securescore.office.com/) für Ihr Testabonnement für jeden der obigen Schritte. 
-    
 
+- [Konfigurieren und Testen von MFA für ein Benutzerkonto](https://technet.microsoft.com/library/mt492459.aspx)
+
+- [Konfigurieren und testen Sie Office 365 Cloud App Security, um Sie über globale Administratoraktivitäten zu informieren.](https://technet.microsoft.com/library/mt757250.aspx)
+
+- [Konfigurieren und Testen von ATP für verdächtige e-Mails](https://technet.microsoft.com/library/mt490479.aspx)
+
+- Überprüfen Sie die [Office 365 Secure Score](https://securescore.office.com/) für Ihr Testabonnement für jeden der obigen Schritte.

@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center, um zielgerichtete Auflistungen auszuführen. Eine zielgerichtete Sammlung stellt sicher, dass Elemente, die auf eine Groß-/Kleinschreibung oder privilegierte Elemente reagieren, sich in einem bestimmten Postfach oder Websiteordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für die bestimmten Postfach-oder Websiteordner abzurufen, die Sie durchsuchen möchten.
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296928"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354687"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden der Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
 Die Inhaltssuche im Office 365 Security &amp; Compliance Center bietet keine direkte Möglichkeit zur Suche bestimmter Ordner in Exchange-Postfächern oder SharePoint-und OneDrive für Business-Websites. Es ist jedoch möglich, bestimmte Ordner (als *Zielsammlung*bezeichnet) durchsuchen, indem Sie die Ordner-ID oder den Pfad in der tatsächlichen Suchabfrage Syntax angeben. Die Verwendung der Inhaltssuche zum Durchführen einer zielgerichteten Sammlung ist nützlich, wenn Sie sicher sind, dass Elemente, die auf eine Groß-/Kleinschreibung reagieren oder privilegierte Elemente in einem bestimmten Postfach oder Websiteordner befinden. Sie können das Skript in diesem Artikel verwenden, um die Ordner-ID für Postfachordner oder den Pfad für Ordner auf einer SharePoint-und OneDrive for Business-Website abzurufen. Dann können Sie die Ordner-ID oder den Pfad in einer Suchabfrage verwenden, um Elemente im Ordner zurückzugeben.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security &amp; Compliance Center sein, um das Skript in Schritt 1 ausführen zu können. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
     
@@ -55,7 +55,7 @@ Das Skript, das Sie in diesem ersten Schritt ausführen, gibt eine Liste von Pos
     
 - **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen zum Herstellen einer Verbindung mit Exchange Online &amp; und dem Security Compliance Center mit Remote-PowerShell. Wie bereits erläutert, müssen Sie die entsprechenden Berechtigungen für die erfolgreiche Ausführung dieses Skripts zugewiesen haben.
     
-So zeigen Sie eine Liste von Postfachordnern oder Websitepfad Namen an
+So zeigen Sie eine Liste von Postfachordnern oder Website documentlink (Pfad) an
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `GetFolderSearchParameters.ps1`.
     
@@ -66,9 +66,10 @@ So zeigen Sie eine Liste von Postfachordnern oder Websitepfad Namen an
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ So zeigen Sie eine Liste von Postfachordnern oder Websitepfad Namen an
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ Das Beispiel in Schritt 2 zeigt die Abfrage, die zum Durchsuchen des Unterordner
   
 ### <a name="script-output-for-site-folders"></a>Skriptausgabe für Websiteordner
 
-Wenn Sie Pfade von SharePoint-oder OneDrive for Business-Websites erhalten, stellt das Skript eine &amp; Verbindung mit dem Security Compliance Center mithilfe von Remote-PowerShell her, erstellt eine neue Inhaltssuche, die die Website nach Ordnern durchsucht, und zeigt dann eine Liste der Ordner an. befindet sich an der angegebenen Website. Das Skript zeigt den Namen der einzelnen Ordner an und fügt das Präfix **** des Pfads (der der Name der Site-Eigenschaft ist) zur Ordner-URL hinzu. Da die **path** -Eigenschaft eine durchsuchbare Eigenschaft ist, verwenden `path:<path>` Sie in einer Suchabfrage in Schritt 2, um diesen Ordner zu durchsuchen. 
+Wenn Sie documentlinks von SharePoint-oder OneDrive for Business-Websites erhalten, stellt das Skript eine &amp; Verbindung mit dem Security Compliance Center mithilfe von Remote-PowerShell her, erstellt eine neue Inhaltssuche, die die Website nach Ordnern durchsucht, und zeigt dann eine Liste der Ordner an der angegebenen Website. Das Skript zeigt den Namen der einzelnen Ordner an und fügt das Präfix **** des Pfads (der der Name der Site-Eigenschaft ist) zur Ordner-URL hinzu. Da die **path** -Eigenschaft eine durchsuchbare Eigenschaft ist, verwenden `path:<path>` Sie in einer Suchabfrage in Schritt 2, um diesen Ordner zu durchsuchen. 
   
 NachFolgend finden Sie ein Beispiel der Ausgabe, die vom Skript für Websiteordner zurückgegeben wird.
   
-![Beispiel für die Liste der Pfadnamen für Websiteordner, die vom Skript zurückgegeben werden](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Beispiel für die Liste der documentlink-Namen für Websiteordner, die vom Skript zurückgegeben werden](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>Schritt 2: Verwenden einer Ordner-ID oder eines Pfads zum Ausführen einer Zielsammlung
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Schritt 2: Verwenden einer Ordner-ID oder documentlink zum Ausführen einer Zielsammlung
 
-Nachdem Sie das Skript ausgeführt haben, um eine Liste von Ordner-IDs oder Pfaden für einen bestimmten Benutzer zu sammeln, gehen Sie als nächster &amp; Schritt zum Security Compliance Center und erstellen eine neue Inhaltssuche, um einen bestimmten Ordner zu durchsuchen. Sie verwenden `folderid:<folderid>` die `path:<path>` or-Eigenschaft in der Suchabfrage, die Sie im Schlüsselwort Feld für die Inhaltssuche konfigurieren (oder als Wert für den *ContentMatchQuery* -Parameter, wenn Sie das **New-ComplianceSearch-** Cmdlet verwenden). Sie können die `folderid` or `path` -Eigenschaft mit anderen Suchparametern oder Suchbedingungen kombinieren. Wenn Sie die `folderid` or `path` -Eigenschaft nur in die Abfrage einbeziehen, gibt die Suche alle Elemente zurück, die sich im angegebenen Ordner befinden. 
-  
-> [!NOTE]
-> Wenn Sie `path` die Eigenschaft zum Durchsuchen von OneDrive-Speicherorten verwenden, werden keine Mediendateien wie PNG-, TIFF-oder WAV-Dateien in den Suchergebnissen zurückgegeben. 
+Nachdem Sie das Skript ausgeführt haben, um eine Liste der Ordner-IDs oder documentlinks für einen bestimmten Benutzer zu sammeln, gehen Sie als nächster Schritt &amp; zum Security Compliance Center und erstellen eine neue Inhaltssuche, um einen bestimmten Ordner zu durchsuchen. Sie verwenden `folderid:<folderid>` die `documentlink:<path>` or-Eigenschaft in der Suchabfrage, die Sie im Schlüsselwort Feld für die Inhaltssuche konfigurieren (oder als Wert für den *ContentMatchQuery* -Parameter, wenn Sie das **New-ComplianceSearch-** Cmdlet verwenden). Sie können die `folderid` or `documentlink` -Eigenschaft mit anderen Suchparametern oder Suchbedingungen kombinieren. Wenn Sie die `folderid` or `documentlink` -Eigenschaft nur in die Abfrage einbeziehen, gibt die Suche alle Elemente zurück, die sich im angegebenen Ordner befinden. 
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
@@ -227,17 +225,17 @@ Nachdem Sie das Skript ausgeführt haben, um eine Liste von Ordner-IDs oder Pfad
     
 6. Klicken Sie auf **Weiter**.
     
-7. Fügen Sie im Feld Stichwort auf der Seite **Was möchten Sie uns** suchen nach den `folderid:<folderid>` oder `path:<path>` -Wert ein, der von dem Skript in Schritt 1 zurückgegeben wurde. 
+7. Fügen Sie im Feld Stichwort auf der Seite **Was möchten Sie uns** suchen nach den `folderid:<folderid>` oder `documentlink:<path>` -Wert ein, der von dem Skript in Schritt 1 zurückgegeben wurde. 
     
     Beispielsweise wird die Abfrage im folgenden Screenshot nach einem beliebigen Element im Unterordner "Purges" im Ordner "Wiederherstellbare Elemente" des Benutzers suchen (der Wert `folderid` der-Eigenschaft für den Unterordner purges wird im Screenshot in Schritt 1 angezeigt):
     
-    ![Fügen Sie die Ordner-oder Pfadangabe in das Feld Stichwort der Suchabfrage ein.](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Fügen Sie die Ordner-oder documentlink in das Stichwortfeld der Suchabfrage ein.](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Klicken Sie auf **Suchen** , um die gezielte Sammlungs Suche zu starten. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Beispiele für Suchabfragen für zielgerichtete Auflistungen
 
-Im folgenden finden Sie einige Beispiele für `folderid` die `path` Verwendung der Eigenschaften und in einer Suchabfrage, um eine zielgerichtete Sammlung auszuführen. Beachten Sie, dass Platzhalter verwendet `folderid:<folderid>` werden `path:<path>` , um Platz zu sparen. 
+Im folgenden finden Sie einige Beispiele für `folderid` die `documentlink` Verwendung der Eigenschaften und in einer Suchabfrage, um eine zielgerichtete Sammlung auszuführen. Beachten Sie, dass Platzhalter verwendet `folderid:<folderid>` werden `documentlink:<path>` , um Platz zu sparen. 
   
 - In diesem Beispiel werden drei verschiedene Postfachordner durchsucht. Sie können eine ähnliche Abfragesyntax verwenden, um die verborgenen Ordner im Ordner "Wiederherstellbare Elemente" eines Benutzers zu durchsuchen.
     
@@ -254,13 +252,13 @@ Im folgenden finden Sie einige Beispiele für `folderid` die `path` Verwendung d
 - In diesem Beispiel wird ein Websiteordner (und alle Unterordner) nach Dokumenten durchsucht, die die Buchstaben "NDA" im Titel enthalten.
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - In diesem Beispiel wird ein Websiteordner (und ein beliebiger Unterordner) nach Dokumenten gesucht, die in einem Datumsbereich geändert wurden.
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>Weitere Informationen
@@ -273,8 +271,6 @@ Beachten Sie beim Verwenden des Skripts in diesem Artikel die folgenden Punkte, 
     
 - Beim Durchsuchen von Postfachordnern wird nur der angegebene Ordner durch `folderid` sucht. Unterordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Ordner-ID für den Unterordner verwenden, den Sie durchsuchen möchten. 
     
-- Beim Durchsuchen von Websiteordnern wird der durch die `path` Eigenschaft identifizierte Ordner und alle Unterordner durchsucht. 
+- Beim Durchsuchen von Websiteordnern wird der durch die `documentlink` Eigenschaft identifizierte Ordner und alle Unterordner durchsucht. 
     
-- Wie bereits erwähnt, können Sie die `path` Eigenschaft nicht verwenden, um nach Mediendateien wie PNG-, TIFF-oder WAV-Dateien zu suchen, die sich an OneDrive-Speicherorten befinden. Verwenden Sie eine andere [Site-Eigenschaft](keyword-queries-and-search-conditions.md#searchable-site-properties) , um in OneDrive-Ordnern nach Mediendateien zu suchen. 
-
 - Beim Exportieren der Ergebnisse einer Suche, in der Sie die `folderid` Eigenschaft nur in der Suchabfrage angegeben haben, können Sie die erste Exportoption auswählen, "alle Elemente, ausgenommen diejenigen, die ein unbekanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden." Alle Elemente im Ordner werden immer unabhängig von Ihrem Indizierungsstatus exportiert, da die Ordner-ID immer indiziert ist.

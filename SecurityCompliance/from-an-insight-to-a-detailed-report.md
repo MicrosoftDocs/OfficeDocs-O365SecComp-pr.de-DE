@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
+ms.collection:
+- M365-security-compliance
 description: Sehen Sie sich an, wie Sie mit einem Beispiel zur Verhinderung von &amp; Datenverlust von einem Einblick in einen detaillierten Bericht im Security Compliance Center navigieren können.
-ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217325"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357416"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
 
