@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für DLP im Office 365 Security & Compliance Center erstellen und importieren.
-ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223304"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341516"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell
 
@@ -319,9 +319,9 @@ Wenn es fertig ist, sollte das RulePack-Element wie folgt aussehen.
   
 ## <a name="changes-for-exchange-online"></a>Änderungen für Exchange Online
 
-Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen für vertrauliche Informationen für DLP zu importieren. Sie können Ihre benutzerdefinierten Typen für vertrauliche Informationen sowohl im Exchange Admin Center als auch im Security &amp; Compliance Center verwenden. Als Teil dieser Verbesserung können Sie Security &amp; Compliance Center PowerShell verwenden, um Ihre benutzerdefinierten Typen für vertrauliche Informationen zu importieren – Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten Typen für vertrauliche Informationen funktionieren weiterhin wie zuvor. Es kann jedoch bis zu einer Stunde dauern, bevor Änderungen an benutzerdefinierten Typen für vertrauliche Informationen im Security &amp; Compliance Center in Exchange Admin Center angezeigt werden.
+Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen für vertrauliche Informationen für DLP zu importieren. Nun können Ihre benutzerdefinierten vertraulichen Informationstypen sowohl im Exchange Admin Center als auch im Security &amp; Compliance Center verwendet werden. Als Teil dieser Verbesserung sollten Sie die Security &amp; Compliance Center-PowerShell verwenden, um Ihre benutzerdefinierten vertraulichen Informationstypen zu importieren. Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten vertraulichen Informationstypen funktionieren weiterhin wie zuvor, es kann jedoch bis zu einer Stunde dauern, bis Änderungen, die Sie im Security &amp; Compliance Center an benutzerdefinierten vertraulichen Informationstypen vorgenommen haben, im Exchange Admin Center angezeigt werden.
   
-Beachten Sie, dass Sie im Security &amp; Compliance Center das `DlpSensitiveInformationTypeRulePackage`-Cmdlet zum Hochladen eines Regelpakets verwenden. Im Exchange Admin Center haben Sie zuvor das `ClassificationRuleCollection`-Cmdlet verwendet. 
+Beachten Sie, dass Sie im Security &amp; Compliance Center das Cmdlet `DlpSensitiveInformationTypeRulePackage` verwenden müssen, um ein Regelpaket hochzuladen. Im Exchange Admin Center wurde früher das Cmdlet `ClassificationRuleCollection` verwendet. 
   
 ## <a name="upload-your-rule-package"></a>Hochladen des Regelpakets
 

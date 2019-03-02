@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Erfahren Sie, wie Sie falsch positive Ergebnisse verhindern und echte E-Mail-Nachrichten davor schützen, im Junk-E-Mail-Ordner von Office 365 zu landen.
-ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296888"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341476"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden
 
@@ -41,7 +41,7 @@ Suchen Sie in der Kopfzeile nach den folgenden Überschriften und Werten.
 
 - **SFV:BLK** Gibt an, dass die Nachricht als Spam gekennzeichnet wurde, da sich die Absenderadresse auf der Liste blockierter Absender befindet. 
     
-- **SFV:SKS** Gibt an, dass die Nachricht vor dem Inhaltsfilter als Spam markiert wurde. Dies könnte eine Transportregel umfassen, durch die die Nachricht als Spam gekennzeichnet wird. Führen Sie eine Nachrichtenablaufverfolgung aus, um zu überprüfen, ob eine Transportregel ausgelöst wird, die möglicherweise eine hohe SCL-Bewertung (Spam Confidence Level) festgelegt hat. 
+- **SFV:SKS**Gibt an, dass die Nachricht vor dem Inhaltsfilter als Spam markiert wurde. Dies könnte eine E-Mail-Flussregel (auch als Transportregel bezeichnet) umfassen, durch die die Nachricht als Spam gekennzeichnet wird. Führen Sie eine Nachrichtenablaufverfolgung aus, um festzustellen, ob eine E-Mail-Flussregel ausgelöst wurde, die eine hohe SCL-Bewertung (Spam Confidence Level, SCL) festgelegt hat. 
     
 - **SFV:SKB** Gibt an, dass die Nachricht als Spam markiert, da sie einer Sperrliste in der Richtlinie für den Spamfilter entsprach. 
     
@@ -59,7 +59,7 @@ Um effektiv zu arbeiten, müssen Administratoren in Exchange Online Protection (
   
 ### <a name="for-admins"></a>Für Administratoren
 
-- **DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bieten kann, müssen die MX-DNS-Einträge (Mail Exchanger) für alle Domänen ausschließlich auf Office 365 zeigen. Wenn die MX-Einträge nicht auf Office 365 zeigen, bietet EOP keinen Spamfilter für Ihre Benutzer. Wenn Sie einen anderen Dienst oder eine andere Anwendung für den Spamfilter für Ihre Domäne verwenden möchten, sollten Sie den Spamschutz in EOP deaktivieren. Erstellen Sie hierfür eine Transportregel, durch die der SCL-Wert auf -1 festgelegt wird. Wenn Sie sich später entschließen, doch EOP zu verwenden, entfernen Sie diese Transportregel. 
+- **DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bieten kann, müssen die MX-DNS-Einträge (Mail Exchanger) für alle Domänen ausschließlich auf Office 365 zeigen. Wenn die MX-Einträge nicht auf Office 365 zeigen, bietet EOP keinen Spamfilter für Ihre Benutzer. Wenn Sie einen anderen Dienst oder eine andere Anwendung für den Spamfilter für Ihre Domäne verwenden möchten, sollten Sie den Spamschutz in EOP deaktivieren. Erstellen Sie hierfür eine E-Mail-Flussregel, durch die der SCL-Wert auf -1 festgelegt wird. Wenn Sie sich später entschließen, doch EOP zu verwenden, entfernen Sie diese E-Mail-Flussregel. 
     
 - **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
     

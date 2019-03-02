@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Dokument für Administratoren von EOP als eigenständige Lösung zum Verhindern falsch negativer Ergebnisse
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306544"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341816"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Anpassen des Office 365-Spamfilters mit diesen Einstellungen
 
@@ -37,9 +37,9 @@ Passen Sie Ihren Office 365-Spamfilter an, indem Sie die Absender-IP-Adresse zur
     
 3. Fügen Sie die IP-Adresse der IP-Sperrliste hinzu, indem Sie die Schritte unter „Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole“ in [Konfigurieren der Verbindungsfilterrichtlinie](https://technet.microsoft.com/de-DE/library/jj200718%28v=exchg.150%29.aspx) ausführen.
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Blockieren von Massensendungen mit Transportregeln oder dem Spamfilter
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Blockieren von Massensendungen mit E-Mail-Flussregeln (auch als Transportregeln bezeichnet) oder dem Spamfilter
 
-Handelt es sich bei Spam in erster Linie um Massensendungen, z. B. Newsletter oder Werbeaktionen? Sie können den Spamfilter in Office 365 anpassen, wenn Sie [Transportregeln verwenden, um Massen-E-Mail-Nachrichten aggressiv zu filtern](https://technet.microsoft.com/de-DE/library/dn720438%28v=exchg.150%29.aspx) oder die Einstellung **Massensendungen** in den [erweiterten Spamfilteroptionen](https://technet.microsoft.com/de-DE/library/jj200750%28v=exchg.150%29.aspx) Ihres Spamfilters aktivieren. Klicken Sie zunächst im Exchange Admin Center auf **Schutz** \> **Inhaltsfilter**, und doppelklicken Sie dann auf die Filterrichtlinie, die Sie anpassen möchten. Klicken Sie auf die Option für Spam- und Massensendungsaktionen****, um die Einstellungen, wie hier gezeigt, anzupassen. 
+Handelt es sich bei dem Spam in erster Linie um Massensendungen oder um Newsletters oder Werbesendungen? Sie können den Spamfilter in Office 365 anpassen, wenn Sie [E-Mail-Flussregeln verwenden, um das Herausfiltern von Massensendungen zu konfigurieren](use-transport-rules-to-configure-bulk-email-filtering.md), oder die Einstellung **Massensendungen** unter [Erweiterte Spamfilterungsoptionen](advanced-spam-filtering-asf-options.md) des Spamfilters aktivieren. Klicken Sie im Exchange Admin Center zunächst auf **Schutz** \> **Inhaltsfilter**, und doppelklicken Sie dann auf die Filterrichtlinie, die Sie anpassen möchten. Klicken Sie auf **Aktionen für Spam und Massensendungen**, um die Einstellungen wie hier gezeigt anzupassen. 
   
 ![Festlegen des Massen-E-Mail-Filters in Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   

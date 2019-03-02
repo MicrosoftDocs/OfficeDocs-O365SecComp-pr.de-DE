@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295508"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340886"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
@@ -28,11 +28,12 @@ ms.locfileid: "30295508"
   
 Es wird dringend empfohlen, uns über falsch negative Nachrichten [mit dem Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) zu informieren, damit wir unsere Filter verbessern können. Darüber hinaus können Sie die Nachricht *als Anlage* an "junk@office365.microsoft.com" oder "phish@office365.microsoft.com" (im Falle einer Phishing-Mail) weiterleiten.
 
->[Warnung] Wenn Sie davon ausgehen, dass es sich bei der Nachricht um eine Junk-E-Mail handelt, und diese sich im Junk-E-Mail-Ordner befindet, sollte dies kein Problem darstellen. Soll die Nachricht in gar keinem Postfach angezeigt werden, müssen Sie die Antispamrichtlinie so ändern, dass die Nachricht unter Quarantäne gestellt wird. Weitere Informationen zur Quarantäne für eine Nachricht finden Sie im Artikel [Unter Quarantäne stellen von E-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
+> [!TIP]
+> Wenn Sie davon ausgehen, dass es sich bei der Nachricht um eine Junk-E-Mail handelt, und diese sich im Junk-E-Mail-Ordner befindet, sollte dies kein Problem darstellen. Soll die Nachricht in gar keinem Postfach angezeigt werden, müssen Sie die Antispamrichtlinie so ändern, dass die Nachricht unter Quarantäne gestellt wird. Weitere Informationen zur Quarantäne für eine Nachricht finden Sie im Artikel [Unter Quarantäne stellen von E-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
 
 ## <a name="fixing-allowed-spam"></a>Korrigieren zulässiger Spam
 
-Wir stellen häufig fest, dass Kunden aufgrund falscher Konfigurationen Junk-E-Mails in ihrem Posteingang erhalten. Die häufigste Ursache ist das Konfigurieren von Domänen in einer Transportregel zum Umgehen von Filtern oder Auflisten der Domäne(n) in der Liste der zulässigen/sicheren Absender. Dies ist keine gute Vorgehensweise, da diese Nachrichten die Spamfilterung überspringen, obwohl sie andernfalls hätten abgefangen werden können.  
+Wir stellen häufig fest, dass Kunden aufgrund falscher Konfigurationen Junk-E-Mails in ihrem Posteingang erhalten. Die häufigste Ursache ist das Konfigurieren von Domänen in einer E-Mail-Flussregel (auch als Transportregel bezeichnet) zum Umgehen von Filtern oder Auflisten der Domäne(n) in der Liste der zulässigen/sicheren Absender. Dies ist keine gute Vorgehensweise, da diese Nachrichten die Spamfilterung überspringen, obwohl sie andernfalls hätten abgefangen werden können.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Lösungen für andere häufige Ursachen von zu viel Spam
 
@@ -50,7 +51,7 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
     
 - **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, [wie Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
     
-- **Einen Absender sofort blockieren** Wenn Sie einen Absender sofort blockieren müssen, können Sie anhand der E-Mail-Adresse, der Domäne oder der IP-Adresse blockieren. Lesen Sie die Informationen unter [Blockieren von Spam-E-Mail mit dem Office 365-Spamfilter, um falsch positive negative Ergebnisse zu verhindern](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user). Ein Eintrag in einer Liste zulässiger Absender eines Benutzers kann eine vom Administrator festgelegte Sperre überschreiben.
+- **Sofortiges Blockieren eines Absenders** Falls Sie einen Absender sofort blockieren müssen, können Sie ihn nach E-Mail-Adresse, Domäne oder IP-Adresse blockieren. Lesen Sie die Informationen unter [Verwenden des EAC zum Erstellen einer E-Mail-Flussregel, die Nachrichten einer bestimmten Domäne oder eines bestimmten Benutzers blockiert](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Ein Eintrag in einer Endbenutzer-Zulassungsliste kann eine vom Administrator festgelegten Blockung außer Kraft setzen.
     
 - **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
     
