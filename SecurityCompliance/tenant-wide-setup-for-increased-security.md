@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection:
+- Ent_O365
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 249ccda6bdd474c853dc5e1941d49ea182e2dad1
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341506"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373926"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -118,7 +122,7 @@ Weitere Informationen:
     
 ![Cloud App Security-Dashboard](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Diese Artikel und Leitfäden enthalten zusätzliche normative Informationen zum Sichern Ihrer Office 365-Umgebung:
   
