@@ -89,7 +89,7 @@
 
 # [Schutz vor Bedrohungen](protect-against-threats.md)
 ## [Antispam- und Antischadsoftwareschutz](anti-spam-and-anti-malware-protection.md)
-### [Videos für die ersten Schritte beim Schützen Ihrer E-Mails](videos-for-getting-started-with-protecting-your-email.md)
+### [Übersicht über EOP](videos-for-getting-started-with-protecting-your-email.md)
 ### [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
 ### [Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md)
 ### [Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)
@@ -501,7 +501,7 @@
 ## [Nachrichtenfluss in EOP](eop/mail-flow-in-eop.md)
 ### [Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 ### [Nachrichtenflussregeln (Transportregeln)](eop/mail-flow-rules-transport-rules-0.md)
-### [Konfigurieren von Transportregeln zum Konfigurieren der Massen-E-Mail-Filterung](use-transport-rules-to-configure-bulk-email-filtering.md)
+### [Konfigurieren von Nachrichtenflussregeln zum Konfigurieren der Massen-E-Mail-Filterung](use-transport-rules-to-configure-bulk-email-filtering.md)
 ### [Verwenden von Nachrichtenflussregeln, um anzuzeigen, was Ihre Benutzer an Microsoft melden](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ### [Reduzieren von Schadsoftwarebedrohungen durch das Blockieren von Dateianlagen](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ### [Berichterstellung und Nachrichtenablaufverfolgung](eop/reporting-and-message-trace-in-exchange-online-protection.md)
