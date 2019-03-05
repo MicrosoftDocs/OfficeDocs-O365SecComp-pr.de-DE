@@ -9,17 +9,18 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: Diese Lösung veranschaulicht, wie vertrauliche Daten, die in Office 365-Diensten gespeichert sind, geschützt werden können.
-ms.openlocfilehash: 3ec4f89ba0933ead52467d67ec0f3a5ace37ea4d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fb66eb36a08883b63267349b50d2f17b15eeef03
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219755"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373846"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Schutz von Informationen in Office 365 für die DSGVO
 
