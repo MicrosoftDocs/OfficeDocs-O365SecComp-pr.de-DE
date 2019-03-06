@@ -9,24 +9,24 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c2e588d3-8f4f-4937-a286-8c399f28953a
 description: Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält gebrauchsfertige Richtlinienvorlagen, die gängige Compliance-Anforderungen erfüllen, beispielsweise zum Schutz vertraulicher Informationen, die dem US-Krankenversicherungsgesetz unterliegen ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) oder U.S. Patriot Act. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, nach denen Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
-ms.openlocfilehash: a8c39d2ee3f8bf2097c07386bc1f775d947950c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213835"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30411010"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Inhalt der DLP-Richtlinienvorlagen
 
 Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält gebrauchsfertige Richtlinienvorlagen, die gängige Compliance-Anforderungen erfüllen, beispielsweise zum Schutz vertraulicher Informationen, die dem US-Krankenversicherungsgesetz unterliegen ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) oder U.S. Patriot Act. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, nach denen Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet. Dieses Thema enthält nicht alle Details zur Konfiguration jeder Richtlinienvorlage; Stattdessen stellt das Thema genügend Informationen zur Verfügung, mit denen Sie entscheiden können, welche Vorlage der beste Ausgangspunkt für Ihr Szenario ist. Denken Sie daran, dass Sie diese Richtlinienvorlagen an Ihre speziellen Anforderungen anpassen können.
   
-## <a name="australia-financial-data"></a>Finanzdaten - Australien
+## <a name="australia-financial-data"></a>Finanzdaten – Australien
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
@@ -131,7 +131,7 @@ Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthä
 |Geringe Anzahl von EU-vertraulichen Inhalten  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  EU Debit Card-Nummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  EU-Führerscheinnummer – min. 1, maximale Anzahl 9  <br/>  IdentifikationsNummer der EU – min. Anzahl 1, maximale Anzahl 9  <br/>  EU-Passport-Nummer – min. Anzahl 1, maximale Anzahl 9  <br/>  EU-sozialVersicherungsNummer (SSN) oder äquivalente ID – min. Anzahl 1, maximale Anzahl 9  <br/>  EU-Steuernummer (TIN) – min. Anzahl 1, maximale Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Senden von Vorfall Berichten an den Administrator  <br/> |
 |Große Anzahl von EU-sensiblen Inhalten  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  EU Debit Card-Nummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  EU-Führerscheinnummer – min. 1, maximale Anzahl 9  <br/>  IdentifikationsNummer der EU – min. Anzahl 1, maximale Anzahl 9  <br/>  EU-Passport-Nummer – min. Anzahl 1, maximale Anzahl 9  <br/>  EU-sozialVersicherungsNummer (SSN) oder äquivalente ID – min. Anzahl 1, maximale Anzahl 9  <br/>  EU-Steuernummer (TIN) – min. Anzahl 1, maximale Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Einschränken des Zugriffs auf Inhalte für externe Benutzer  <br/>  Benachrichtigen von Benutzern per e-Mail und Richtlinien Tipps  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Senden von Vorfall Berichten an den Administrator  <br/> |
    
-## <a name="germany-financial-data"></a>Finanzdaten - Deutschland
+## <a name="germany-financial-data"></a>Finanzdaten – Deutschland
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
@@ -219,15 +219,15 @@ Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthä
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|AMRA – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische National Health Service-Nummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|AMRA – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische National Health Service-Nummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|AMRA – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  UK Nationale Gesundheitsdienst Nummer – min. 1, maximale Anzahl 9  <br/>  UK Nationale Versicherungsnummer (NINO) – min. Anzahl 1, maximale Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|AMRA – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  UK National Health Service Number – min count 10, Max count any  <br/>  UK National Insurance Number (NINO) – min count 10, Max count any  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
 ## <a name="uk-data-protection-act"></a>Datenschutzgesetz – Vereinigtes Königreich
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|Datenschutzgesetz – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 1, Max. Anzahl 9  <br/>  US-amerikanische/britische Reisepassnummer – Min. Anzahl 1, Max. Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
-|Datenschutzgesetz – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  US-amerikanische/britische Reisepassnummer – Min. Anzahl 10, Max. Anzahl bel.  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
+|Datenschutzgesetz – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – niedrige Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 1, Max. Anzahl 9  <br/>  USA/U.K. Passnummer – min. 1, maximale Anzahl 9  <br/>  SWIFT-Code – Min. Anzahl 1, Max. Anzahl 9  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|Datenschutzgesetz – Vereinigtes Königreich: Extern weitergegebene Inhalte prüfen – hohe Anzahl  <br/> | Inhalt enthält vertrauliche Informationen:  <br/>  Britische nationale Versicherungsnummer (NINO) – Min. Anzahl 10, Max. Anzahl bel.  <br/>  USA/U.K. Passnummer – min. 10, maximale Anzahl  <br/>  SWIFT-Code – Min. Anzahl 10, Max. Anzahl bel.  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> | Zugriff auf Inhalt sperren  <br/>  Benachrichtigung senden  <br/>  Außerkraftsetzung zulassen  <br/>  Geschäftliche Begründung anfordern  <br/>  Schadensbericht senden  <br/> |
    
 ## <a name="uk-financial-data"></a>Finanzdaten – Vereinigtes Königreich
 
@@ -282,9 +282,9 @@ Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthä
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|
-|Inhalt entspricht U.S. HIPAA  <br/> | Enthält die folgenden vertraulichen Informationen:  <br/>  US-sozialVersicherungsNummer (SSN) – min. Anzahl 1, maximale Anzahl  <br/>  Drug Enforcement Agency (DEA) number – min count 1, Max count any  <br/> **UND** <br/>  Inhalt enthält die folgenden Begriffe:  <br/>  Internationale Klassifikation von Krankheiten (ICD-9-CM) – min. 1, maximale Anzahl  <br/>  Internationale Klassifikation von Krankheiten (ICD-10-CM) – min. 1, maximale Anzahl  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
+|Inhalt entspricht U.S. HIPAA  <br/> | Enthält die folgenden vertraulichen Informationen:  <br/>  US-sozialVersicherungsNummer (SSN) – min. Anzahl 1, maximale Anzahl  <br/>  Drug Enforcement Agency (DEA) number – min count 1, Max count any  <br/> **AND** <br/>  Inhalt enthält die folgenden Begriffe:  <br/>  Internationale Klassifikation von Krankheiten (ICD-9-CM) – min. 1, maximale Anzahl  <br/>  Internationale Klassifikation von Krankheiten (ICD-10-CM) – min. 1, maximale Anzahl  <br/>  Inhalt wird weitergegeben an:  <br/>  Personen außerhalb meiner Organisation  <br/> |Benachrichtigung senden  <br/> |
    
-## <a name="us-patriot-act"></a>Patriot Act - USA
+## <a name="us-patriot-act"></a>Patriot Act – USA
 
 |**Regelname**|**Bedingungen <br/> (einschließlich vertraulicher Informationstypen)**|**Aktionen**|
 |:-----|:-----|:-----|

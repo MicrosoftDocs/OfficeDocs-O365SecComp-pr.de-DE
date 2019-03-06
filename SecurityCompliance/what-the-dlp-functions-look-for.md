@@ -8,24 +8,23 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
 description: Die Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine korrekte Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Stichwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
-ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4cc6f4d27e106aeedb2fa8cae0f3634b9e3d6319
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219355"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410550"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Wonach die DLP-Funktionen suchen
 
-Schutz vor Datenverlust (Data Loss Prevention, DLP) umfasst Typen vertraulicher Informationen, wie z. B. Kreditkartennummern und EC-Kartennummern, die in Ihren DLP-Richtlinien verwendet werden können. Diese Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen sie durch Sicherstellen der ordnungsgemäßen Formatierung, durch Erzwingen von Prüfsummen und durch Suchen nach relevanten Schüsselwörtern oder anderen Informationen. Einige dieser Funktionen werden durch interne Funktionen ausgeführt. Der Typ vertraulicher Informationen für die Kreditkartennummer verwendet beispielsweise eine Funktion für die Suche nach Datumsangaben, die wie ein Ablaufdatum formatiert sind, um zu bestätigen, dass es sich bei einer Nummer um eine Kreditkartennummer handelt.
+Data Loss Prevention (DLP) enthält vertrauliche Informationstypen wie Kreditkartennummer und EC-Debitkarte, die Sie in ihren DLP-Richtlinien verwenden können. Diese Typen von vertraulichen Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine korrekte Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Stichwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. Beispielsweise verwendet der vertrauliche Informationstyp Kreditkartennummer eine Funktion, um nach Datumsangaben zu suchen, die wie ein Ablaufdatum formatiert sind, um zu bestätigen, dass eine Nummer eine Kreditkartennummer ist.
   
-In diesem Thema wird erläutert, wie diese Funktionen vorgehen, um die Funktionsweise der vordefinierten Typen vertraulicher Informationen besser zu verstehen. Weitere Informationen finden Sie unter [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren. Weitere Informationen finden Sie unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="funcusdate"></a>Func_us_date
 
@@ -57,7 +56,7 @@ Akzeptierte Monatsnamen:
     
 ## <a name="funceudate"></a>Func_eu_date
 
-Diese Funktion sucht nach einem Datum im häufig in der EU (und in den meisten Ländern außerhalb der USA) verwendeten Format. Dies umfasst die Formate „Tag/Monat/Jahr“, „Tag-Monat-Jahr“ und „Tag Monat Jahr“. Die Namen oder Abkürzungen der Monate unterscheiden nicht nach Groß- und Kleinschreibung.
+Diese Funktion sucht nach einem Datum im allgemeinen Format, das in der EU verwendet wird. (und die meisten Standorte außerhalb der USA). Dazu gehören die Formate "Tag/Monat/Jahr", "Tag-Monat-Jahr" und "Tag Monat Jahr". Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet.
   
 Beispiele:
   
@@ -85,7 +84,7 @@ Akzeptierte Monatsnamen:
     
 - Niederländisch
     
-  - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
+  - Januari, februari, maart, April, Mei, Juni, Juli, Augustus, September, ocktober, Oktober, November, Dezember
     
   - Jan Feb maart Apr Mei Jun Jul Aug Sep Sept Okt Okt Nov Dez
     
@@ -109,7 +108,7 @@ Akzeptierte Monatsnamen:
     
 - Portugiesisch
     
-  - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
+  - Janeiro, Fevereiro, Março, Marco, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro
     
   - Jan FEV Mar ABR Mai Jun Jul ago Set out Nov Dez
     
@@ -117,7 +116,7 @@ Akzeptierte Monatsnamen:
     
   - enero, Febrero, Marzo, Abril, Mayo, junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre
     
-  - enero Feb. Marzo ABR. Mayo Jun. Jul. Agosto Sept./Set. Okt. Nov. DIC.
+  - enero Feb. Marzo ABR. Mayo Jun. Juli. Agosto Sept./Set. Okt. Nov. DIC.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (veraltet)
 
@@ -146,7 +145,7 @@ Akzeptierte Monatsnamen:
   
 - Portugiesisch
     
-  - janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro
+  - Janeiro, Fevereiro, Março, Marco, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro
     
   - Jan FEV Mar ABR Mai Jun Jul ago Set out Nov Dez
     
@@ -177,7 +176,7 @@ Akzeptierte Monatsnamen:
   
 - Niederländisch
     
-  - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
+  - Januari, februari, maart, April, Mei, Juni, Juli, Augustus, September, ocktober, Oktober, November, Dezember
     
   - Jan Feb maart Apr Mei Jun Jul Aug Sep Sept Okt Okt Nov Dez
     
@@ -185,23 +184,23 @@ Akzeptierte Monatsnamen:
 
 Diese Funktion sucht nach einem Datum in den Formaten, die häufig von Kredit-und Debitkarten verwendet werden, die Tage für Monate ausschließen. Diese Funktion entspricht Datumsangaben im Format "month/year", "month-year", "[Month Name] Year" und "[month Abkürzung] Year". Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet.
   
-Beispiele
+Beispiele:
   
-- MM/JJ – z. B. 01/11 oder 1/11
+- MM/JJ--Beispiel: 01/11 oder 1/11
     
-- MM/JJJJ – z. B. 01/2011 oder 1/2011
+- MM/YYYY--zum Beispiel 01/2011 oder 1/2011
     
-- MM-JJ – z. B. 01-22 oder 1-11
+- MM-YY--zum Beispiel 01-22 oder 1-11
     
-- MM-JJJJ – z. B. 01-2000 oder 1-2000
+- MM-YYYY--zum Beispiel 01-2000 oder 1-2000
     
-Die folgenden Formate unterstützen JJ oder JJJJ:
+Die folgenden Formate unterstützen YY oder YYYY:
   
-- Monat-JJJJ – z. B. Jan-2010 oder Januar-2010 Jan-10 oder Januar-10
+- Month-YYYY--zum Beispiel,. Jan-2010 oder Januar-2010 oder Jan-10 oder Januar-10
     
-- Monat JJJJ – z. B. 'Januar 2010' oder 'Jan 2010' oder '10 Januar' oder 'Jan 10'
+- Monat YYYY--Beispiel: ' Januar 2010 ' oder ' Jan 2010 ' oder ' Januar 10 ' oder ' Jan 10 '
     
-- MonatJJJJ – zum Beispiel, 'Januar2010' oder 'Jan2010' oder 'Januar10' oder 'Jan10'
+- Monatjjjj--beispielsweise "january2010" oder "Jan2010" oder "january10" oder "Jan10"
     
 - Month/YYYY--beispielsweise ' Januar/2010 ' oder ' Jan/2010 ' oder ' Januar/10 ' oder ' Jan/10 '
     
@@ -215,15 +214,15 @@ Akzeptierte Monatsnamen:
     
 ## <a name="funcusaddress"></a>Func_us_address
 
-Diese Funktion sucht nach dem Namen eines Bundesstaats in den USA oder nach einer postalischen Abkürzung, gefolgt von einer gültigen Postleitzahl, wie sie in Postanschriften verwendet werden. Die Postleitzahl muss eine der richtigen Postleitzahlen sein, die dem Namen des Bundesstaats in den USA oder der Abkürzung zugeordnet ist. Der Name des Bundesstaats in den USA und die Postleitzahl können nicht durch Zeichensetzung oder Buchstaben getrennt werden.
+Diese Funktion sucht nach einem US-Bundesstaat oder einer postalischen Abkürzung gefolgt von einer gültigen Postleitzahl, genau wie Sie in Postanschriften verwendet wird. Bei der Postleitzahl muss es sich um einen der korrekten Postleitzahlen handeln, die dem US-Bundesstaat oder der Abkürzung zugeordnet sind. Der US-Bundesstaat und die Postleitzahl dürfen nicht durch Interpunktion oder Buchstaben getrennt werden.
   
 Beispiele:
   
-- 	Washington 98052
+- Washington 98052
     
 - Washington 98052-9998
     
-- 	WA 98052
+- WA 98052
     
 - WA 98052-9998
     

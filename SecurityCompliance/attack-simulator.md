@@ -3,7 +3,7 @@ title: Angriffssimulator in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/05/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als globaler Office 365-Administrator können Sie anGriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
-ms.openlocfilehash: ba5658dfa9075b5779f8ca09ccad3547dbddcbb5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 25686ce194deca8d1ca07fca40f8142492951574
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216275"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410830"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
@@ -50,13 +50,13 @@ Für den Zugriff auf Angriffs Simulator &amp; wählen Sie im Security Compliance
 
 Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen für anGriffs Simulator erfüllen:
       
-- Die e-Mails Ihrer Organisation werden in Exchange Online gehostet. (AnGriffs Simulator ist für lokale e-Mail-Server nicht verfügbar.)
+- **Die E-Mails Ihrer Organisation werden in Exchange Online gehostet**. (AnGriffs Simulator ist für lokale e-Mail-Server nicht verfügbar.)
     
-- Sie sind ein Office 365-globaler Administrator
+- **Sie sind ein Office 365-globaler Administrator**
     
-- Ihre Organisation verwendet mehrstufige [Authentifizierung für Office 365-Benutzer](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
+- **Die mehrstufige [Authentifizierung (Multi-Factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) , MFA) ist mindestens für das globale Administratorkonto von Office 365 aktiviert**. (Im Idealfall ist MFA für alle Benutzer in Ihrer Organisation aktiviert.)
  
-- ihre organisation verfügt über [Office 365 Threat Intelligence](office-365-ti.md), mit angriffs simulator im &amp; Security Compliance Center (zum **Threat management** \> -angriffs **simulator**)<br/>![Threat Management-anGriffs Simulator](media/ThreatMgmt-AttackSimulator.png)
+- **ihre organisation verfügt [über Office 365 Threat Intelligence](office-365-ti.md)**, mit angriffs simulator im &amp; Security Compliance Center (zum **Threat management** \> -angriffs **simulator**)<br/>![Threat Management-anGriffs Simulator](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Anzeigename Spear-Phishing-Angriff
@@ -81,7 +81,7 @@ Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst od
     
 5. Geben Sie Text für das Feld **from (Name)** an. Dies ist das Feld, das im **Anzeigenamen** im empfangenden e-Mail-Client angezeigt wird. 
     
-6. Geben Sie Text oder das Feld **von** ein. Dies ist das Feld, das als e-Mail-Adresse des Absenders im empfangenden e-Mail-Client angezeigt wird.<br/>Sie können einen vorhandenen e-Mail-Namespace in Ihrer Organisation eingeben (Dadurch wird die e-Mail-Adresse tatsächlich im empfangenden Client aufgelöst, wodurch ein sehr hohes vertrauenswürdiges Modell erleichtert wird), oder Sie können eine externe e-Mail-Adresse eingeben. Die angegebene e-Mail-Adresse muss nicht tatsächlich vorhanden sein, Sie muss jedoch das Format einer gültigen SMTP-Adresse wie Benutzer @ Domänenname. Extension befolgen. 
+6. Geben Sie Text oder das Feld **von** ein. Dies ist das Feld, das als e-Mail-Adresse des Absenders im empfangenden e-Mail-Client angezeigt wird. <br/>Sie können einen vorhandenen e-Mail-Namespace in Ihrer Organisation eingeben (Dadurch wird die e-Mail-Adresse tatsächlich im empfangenden Client aufgelöst, wodurch ein sehr hohes vertrauenswürdiges Modell erleichtert wird), oder Sie können eine externe e-Mail-Adresse eingeben. Die angegebene e-Mail-Adresse muss nicht tatsächlich vorhanden sein, Sie muss jedoch das Format einer gültigen SMTP-Adresse wie Benutzer @ Domänenname. Extension befolgen. 
   
 7. Wählen Sie mithilfe der Dropdownauswahl eine Phishing-Anmeldeserver-URL aus, die die Art der Inhalte widerspiegelt, die Sie in ihrem Angriff haben werden. Es werden mehrere Thema-URLs bereitgestellt, aus denen Sie auswählen können, beispielsweise Dokument Zustellungen, Technik, Abrechnung usw. Dies ist die URL, auf die gezielt Benutzer klicken müssen.
     
@@ -129,11 +129,19 @@ Ein Brute-Force-Kennwortangriff gegen eine Organisation wird in der Regel verwen
     
 ## <a name="new-features-in-attack-simulator"></a>Neue Features im anGriffs Simulator
 
-Dem anGriffs Simulator werden neue Features hinzugefügt. Hierzu gehört Folgendes:
+Dem anGriffs Simulator werden neue Features hinzugefügt. Zu diesen zählen:
+
 - **Erweiterte Berichterstellungsfunktionen**. Sie können beispielsweise die schnellste (oder langsamste) Zeit zum Öffnen einer e-Mail-Angriffssimulation sehen, die schnellste (oder langsamste) Zeit, um auf einen Link in der Nachricht zu klicken, und vieles mehr.
+
 - **E-Mail-Vorlageneditor**. Sie können eine benutzerdefinierte, wieder verwendbare e-Mail-Vorlage erstellen, die Sie für zukünftige Angriffssimulationen verwenden können.
 
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was sich in der Entwicklung befindet, was ausrollt und was bereits gestartet wurde.
+
+## <a name="see-also"></a>Siehe auch
+
+[Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+[Office 365 Advanced Threat Protection](office-365-atp.md)
 
 
 

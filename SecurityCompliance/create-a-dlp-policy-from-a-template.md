@@ -10,22 +10,20 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: 'Die einfachste, häufigste Methode für die ersten Schritte mit DLP-Richtlinien ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. '
-ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. '
+ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219435"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410950"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
-Die einfachste, häufigste Methode für die ersten Schritte mit DLP-Richtlinien ist die Verwendung einer der in Office 365 enthaltenen Vorlagen. Sie können eine der folgenden Vorlagen verwenden oder die Regeln anpassen, um die spezifischen Compliance-Anforderungen Ihrer Organisation zu erfüllen.
+Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. Sie können eine der folgenden Vorlagen verwenden oder die Regeln anpassen, um die spezifischen Compliance-Anforderungen Ihrer Organisation zu erfüllen.
   
 Office 365 umfasst mehr als 40 verwendungsbereite Vorlagen, mit denen Sie eine Vielzahl von allgemeinen behördlichen und geschäftlichen Richtlinienanforderungen erfüllen können. Es gibt z. B. DLP-Richtlinienvorlagen für:
   
@@ -43,7 +41,7 @@ Sie können auch die benutzerdefinierte Vorlage auswählen, die über keine Stan
   
 ## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>Beispiel: Identifizieren von vertraulichen Informationen in allen OneDrive für Business-Websites und Einschränken des Zugriffs für Personen außerhalb Ihrer Organisation
 
-Mit OneDrive for Business-Konten können Personen in Ihrer Organisation problemlos zusammenarbeiten und Dokumente freigeben. Ein allgemeines Problem bei Compliance-Verantwortlichen besteht jedoch darin, dass vertrauliche Informationen, die in OneDrive for Business-Konten gespeichert sind, versehentlich für Personen außerhalb Ihrer Organisation freigegeben werden. Eine DLP-Richtlinie kann dieses Risiko mindern.
+Mit OneDrive for Business-Konten können Personen in Ihrer Organisation problemlos zusammenarbeiten und Dokumente freigeben. Ein allgemeines Problem bei Compliance-Verantwortlichen besteht jedoch darin, dass vertrauliche Informationen, die in OneDrive for Business-Konten gespeichert sind, versehentlich für Personen außerhalb Ihrer Organisation freigegeben werden. Eine DLP-Richtlinie kann dieses Risiko verringern.
   
 In diesem Beispiel erstellen Sie eine DLP-Richtlinie, die US-PII-Daten identifiziert, einschließlich der einzelnen Steuernummern (ITIN), sozialVersicherungsnummern und U.S.-Passport-Nummern. Beginnen Sie mit der Verwendung einer Vorlage, und ändern Sie dann die Vorlage, um die Compliance-Anforderungen Ihrer Organisation zu erfüllen, insbesondere:
   
@@ -51,13 +49,13 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, die US-PII-Daten identifiz
     
 - Machen Sie die Richtlinie sensibler, sodass ein einzelnes Vorkommen von vertraulichen Informationen ausreicht, um den Zugriff für externe Benutzer einzuschränken.
     
-- Zulassen, dass Benutzer die Aktionen außer Kraft setzen, indem Sie eine geschäftliche Begründung angeben oder ein falsch positives Ergebnis melden. Auf diese Weise verhindern ihre DLP-Richtlinien nicht, dass Personen in Ihrer Organisation ihre Arbeit erledigen können, wenn Sie über einen gültigen geschäftlichen Grund für die Freigabe der vertraulichen Informationen verfügen.
+- Sie ermöglichen Benutzern, die Aktionen anhand einer geschäftlichen Begründung oder der Meldung eines falsch positiven Ergebnisses außer Kraft zu setzen. Auf diese Weise verhindern ihre DLP-Richtlinien nicht, dass Personen in Ihrer Organisation ihre Arbeit erledigen können, wenn Sie über einen gültigen geschäftlichen Grund für die Freigabe der vertraulichen Informationen verfügen.
     
 ### <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit Ihrem Geschäfts-oder Schulkonto bei Office 365 an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
+2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. Sie befinden sich jetzt im Office 365 Security &amp; Compliance Center.
     
 3. Im Security &amp; Compliance \> Center Left Navigation \> **Data Loss Prevention** \> **Policy** \> **+ Create a Policy**.
     
@@ -89,7 +87,7 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, die US-PII-Daten identifiz
     
 7. Wählen Sie \> **weiter** **Erweiterte Einstellungen verwenden** aus.
     
-8. Eine DLP-Richtlinienvorlage enthält vordefinierte Regeln mit Bedingungen und Aktionen, mit denen bestimmte Arten vertraulicher Informationen ermittelt und angewendet werden. Sie können die vorhandenen Regeln bearbeiten, löschen oder deaktivieren oder neue hinzufügen. Klicken Sie anschließend auf **weiter**.
+8. Eine DLP-Richtlinienvorlage enthält vordefinierte Regeln mit Bedingungen und Aktionen, die bestimmte Arten von vertraulichen Informationen erkennen und entsprechende Aktionen ausführen. Sie können die vorhandenen Regeln bearbeiten, löschen oder deaktivieren oder neue hinzufügen. Klicken Sie anschließend auf **weiter**.
     
     ![In der US-PII-Richtlinienvorlage Erweiterte Regeln](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
@@ -135,11 +133,11 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, die US-PII-Daten identifiz
     
 15. Lesen Sie die Bedingungen und Aktionen für diese \> Regel **als nächstes**.
     
-    Klicken Sie auf der rechten Seite auf den **Status** Schalter für die Regel. Wenn Sie eine gesamte Richtlinie deaktivieren, werden auch alle Regeln in der Richtlinie deaktiviert. Hier können Sie jedoch eine bestimmte Regel deaktivieren, ohne die gesamte Richtlinie zu deaktivieren. Dies kann hilfreich sein, wenn Sie eine Regel untersuchen müssen, die eine hohe Anzahl falsch positiver Ergebnisse generiert. 
+    Klicken Sie auf der rechten Seite auf den **Status** Schalter für die Regel. Wenn Sie eine gesamte Richtlinie deaktivieren, werden auch alle Regeln in der Richtlinie deaktiviert. Hier können Sie jedoch eine bestimmte Regel deaktivieren, ohne die gesamte Richtlinie zu deaktivieren. Dies kann hilfreich sein, wenn Sie eine Regel untersuchen müssen, die eine große Anzahl falsch positiver Ergebnisse generiert. 
     
 16. Lesen und verstehen Sie auf der nächsten Seite Folgendes, und wählen Sie dann aus, ob Sie die Regel aktivieren oder zuerst \> **** testen möchten.
     
-     Bevor Sie Ihre DLP-Richtlinien erstellen, sollten Sie diese schrittweise überprüfen, um ihre Auswirkungen zu bewerten und ihre Wirksamkeit zu testen, bevor Sie sie vollständig erzwingen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende Dokumente blockiert, die von den Benutzern benötigt werden, um Ihre Arbeit zu erledigen. 
+     Bevor Sie DLP-Richtlinien erstellen, sollten Sie sie erst einmal nach und nach bereitstellen, um die Auswirkungen beurteilen und ihre Effektivität testen zu können, bevor Sie sie vollständig durchsetzen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende Dokumente blockiert, die von den Benutzern benötigt werden, um Ihre Arbeit zu erledigen. 
     
     Wenn Sie DLP-Richtlinien mit einer hohen potenziellen Auswirkung erstellen, empfehlen wir die folgenden Schritte:
     
@@ -147,9 +145,9 @@ In diesem Beispiel erstellen Sie eine DLP-Richtlinie, die US-PII-Daten identifiz
     
 18. Fahren Sie im Testmodus mit Benachrichtigungen und Richtlinientipps fort, sodass Sie die Benutzer über die Einhaltungsrichtlinien in Kenntnis setzen und auf die Anwendung der Regeln vorbereiten können. In dieser Phase können Sie die Benutzer auch bitte, Sie über falsche Positivmeldungen zu benachrichtigen, damit Sie die Regeln noch besser abstimmen können.
     
-19. Aktivieren Sie die Richtlinien, damit die Regeln erzwungen und der Inhalt geschützt wird. Überwachen Sie weiterhin die DLP-Berichte und alle vorfallberichte oder Benachrichtigungen, um sicherzustellen, dass die Ergebnisse Ihren Anforderungen entsprechen. 
+19. Aktivieren Sie die Richtlinien, damit die Regeln erzwungen und der Inhalt geschützt wird. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
     
-    ![Optionen für die Verwendung des Testmodus und das Einschalten der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Optionen für die Verwendung des Testmodus und Aktivieren der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
 20. Überarbeiten Sie Ihre Einstellungen für \> diese Richtlinie wählen Sie **Erstellen**aus.
     
@@ -166,10 +164,10 @@ Nachfolgend werden die verschiedenen Statuswerte und deren Bedeutung beschrieben
 |**Aktivieren von...** <br/> |Die Richtlinie wird gerade für die Inhaltsquellen, die sie umfasst, bereitgestellt. Die Richtlinie wird noch nicht bei allen Quellen erzwungen.  <br/> |
 |**Testen, mit Benachrichtigungen** <br/> |Die Richtlinie ist im Testmodus. Die Aktionen in einer Regel werden nicht angewendet, aber Richtlinienübereinstimmungen werden mithilfe der DLP-Berichte zusammengestellt und angezeigt. Benachrichtigungen über Richtlinienübereinstimmungen werden an die angegebenen Empfänger gesendet.  <br/> |
 |**Testen, ohne Benachrichtigungen** <br/> |Die Richtlinie ist im Testmodus. Die Aktionen in einer Regel werden nicht angewendet, aber Richtlinienübereinstimmungen werden mithilfe der DLP-Berichte zusammengestellt und angezeigt. Benachrichtigungen über Richtlinienübereinstimmungen werden nicht an die angegebenen Empfänger gesendet.  <br/> |
-|**Ein** <br/> |Die Richtlinie ist aktiv und wird erzwungen. Die Richtlinie wurde erfolgreich für alle zugehörigen Inhaltsquellen bereitgestellt.  <br/> |
+|**On** <br/> |Die Richtlinie ist aktiv und wird erzwungen. Die Richtlinie wurde erfolgreich für alle zugehörigen Inhaltsquellen bereitgestellt.  <br/> |
 |**Wird deaktiviert...** <br/> |Die Richtlinie wird gerade aus den Inhaltsquellen, die sie umfasst, entfernt. Die Richtlinie kann noch bei einigen Quellen aktiv sein und erzwungen werden. Das Deaktivieren einer Richtlinie kann bis zu 45 Minuten dauern.  <br/> |
-|**Aus** <br/> |Die Richtlinie ist nicht aktiv und wird nicht erzwungen. Die Einstellungen für die Richtlinie (Quellen, Schlüsselwörter, Dauer usw.) werden gespeichert.  <br/> |
-|**Wird gelöscht...** <br/> |Die Richtlinie wird gerade gelöscht. Die Richtlinie ist nicht aktiv und wird nicht erzwungen.  <br/> |
+|**Off** <br/> |Die Richtlinie ist nicht aktiv und wird nicht erzwungen. Die Einstellungen für die Richtlinie (Quellen, Schlüsselwörter, Dauer usw.) werden gespeichert.  <br/> |
+|**Löschen...** <br/> |Die Richtlinie wird gerade gelöscht. Die Richtlinie ist nicht aktiv und wird nicht erzwungen.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Deaktivieren einer DLP-Richtlinie
 

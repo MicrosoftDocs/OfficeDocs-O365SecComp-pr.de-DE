@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Treiber Lizenznummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217745"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410750"
 ---
 # <a name="eu-drivers-license-number"></a>EU-Führerscheinnummer
 
@@ -59,7 +59,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> Führerschein  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/>  Führerscheinnummer  <br/> dlno #  <br/> Fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/>  Führerscheinnummer  <br/> dlno #  <br/> Fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
    
 ## <a name="belgium"></a>Belgien
 
@@ -99,7 +99,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> Führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> Fuehrerschein-Nr  <br/> Fuehrerschein-Nr  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> Führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> Fuehrerschein-Nr  <br/> Fuehrerschein-Nr  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarien
 
@@ -139,7 +139,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Kroatien
 
@@ -179,7 +179,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozačka dozvola  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>Zypern
 
@@ -218,7 +218,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>Tschechien
 
@@ -264,7 +264,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Dänemark
 
@@ -304,7 +304,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estland
 
@@ -347,8 +347,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> 
-permis de conduire  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finnland
 
@@ -393,7 +392,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> ajokortti  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>Frankreich
 
@@ -483,7 +482,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irland
 
@@ -526,7 +525,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Ceadúnas Tiomána  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Ceadúnas Tiomána  <br/> |
    
 ## <a name="italy"></a>Italien
 
@@ -573,7 +572,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Litauen
 
@@ -612,7 +611,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Vairuotojo pažymėjimas  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -651,7 +650,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Fahrerlaubnis  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -700,7 +699,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Liċenzja TAS-Sewqan  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Liċenzja TAS-Sewqan  <br/> |
    
 ## <a name="netherlands"></a>Niederlande
 
@@ -739,8 +738,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> 
-permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Polen
 
@@ -789,7 +787,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Prawo jazdy  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portugal
 
@@ -838,7 +836,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Carteira de motorista  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> Carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Rumänien
 
@@ -881,7 +879,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conducere  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>Slowakei
 
@@ -924,7 +922,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Slowenien
 
@@ -963,7 +961,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozniško Dovoljenje  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> vozniško Dovoljenje  <br/> |
    
 ## <a name="spain"></a>Spanien
 
@@ -1006,8 +1004,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> dl#  <br/> Treiber lic.  <br/> Treiber Lizenz  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> Führerschein  <br/> driver's license  <br/> driving licence
-  <br/> Führerschein  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Fahrerlaubnis  <br/> Führerscheinnummer  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> número licencia Conducir  <br/> número de carnet de Conducir  <br/> número Carnet Conducir  <br/> licencia Conducir  <br/> número de Permiso de Conducir  <br/> número de Permiso Conducir  <br/> número Permiso Conducir  <br/> Permiso Conducir  <br/> licencia de Manejo  <br/> El Carnet de Conducir  <br/> Carnet Conducir  <br/> |
+|dlno #  <br/> DL  <br/> Treiber lic.  <br/> Treiber Lizenz  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> Führerschein  <br/> driving license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> Fahrerlaubnis  <br/> Führerscheinnummer  <br/> Permiso de conducción  <br/> Permiso conducción  <br/> número licencia Conducir  <br/> número de carnet de Conducir  <br/> número Carnet Conducir  <br/> licencia Conducir  <br/> número de Permiso de Conducir  <br/> número de Permiso Conducir  <br/> número Permiso Conducir  <br/> Permiso Conducir  <br/> licencia de Manejo  <br/> El Carnet de Conducir  <br/> Carnet Conducir  <br/> |
    
 ## <a name="sweden"></a>Schweden
 
@@ -1052,11 +1049,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> körkort  <br/> |
+|DL  <br/> driver license  <br/> Treiber Lizenznummer  <br/> Treiber Lizenz  <br/> Treiber lic.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> Treiber Lizenznummer  <br/> Führerscheinnummer  <br/> Führerscheinnummer  <br/> dlno #  <br/> körkort  <br/> |
    
 ## <a name="uk"></a>UK
 
-Weitere Informationen finden Sie im Abschnitt "UK Driver es License Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "U.K. Lizenznummer des Treibers "in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,15 +7,15 @@ ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Passport-Nummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218265"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410930"
 ---
 # <a name="eu-passport-number"></a>EU-Passport-Nummer
 
@@ -64,7 +64,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Österreichische Passnummer  <br/> Passport-Nr.  <br/> Reisepass  <br/> österreichisch Reisepass  <br/> |
+|passport number  <br/> Österreichische Passnummer  <br/> Passport-Nr.  <br/> Reisepass  <br/> österreichisch Reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgien
 
@@ -103,7 +103,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> belgische Passnummer  <br/> Passport-Nr.  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
+|passport number  <br/> belgische Passnummer  <br/> Passport-Nr.  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarien
 
@@ -142,7 +142,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Bulgarische Passnummer  <br/> Passport-Nr.  <br/> номер на паспорта  <br/> |
+|passport number  <br/> Bulgarische Passnummer  <br/> Passport-Nr.  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Kroatien
 
@@ -181,7 +181,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Kroatische Passnummer  <br/> Passport-Nr.  <br/> Broj putovnice  <br/> |
+|passport number  <br/> Kroatische Passnummer  <br/> Passport-Nr.  <br/> Broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Zypern
 
@@ -220,7 +220,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Zypern-Passnummer  <br/> Passport-Nr.  <br/> αριθμό διαβατηρίου  <br/> |
+|passport number  <br/> Zypern-Passnummer  <br/> Passport-Nr.  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>Tschechien
 
@@ -259,7 +259,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Tschechische Passnummer  <br/> Passport-Nr.  <br/> Cestovní Pas  <br/> Pas  <br/> |
+|passport number  <br/> Tschechische Passnummer  <br/> Passport-Nr.  <br/> Cestovní Pas  <br/> Pas  <br/> |
    
 ## <a name="denmark"></a>Dänemark
 
@@ -298,7 +298,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> dänische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> pasnummer  <br/> |
+|passport number  <br/> dänische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estland
 
@@ -337,7 +337,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Estnische Passnummer  <br/> Passport-Nr.  <br/> Eesti kodaniku-Durchlauf  <br/> |
+|passport number  <br/> Estnische Passnummer  <br/> Passport-Nr.  <br/> Eesti kodaniku-Durchlauf  <br/> |
    
 ## <a name="finland"></a>Finnland
 
@@ -388,7 +388,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> griechische Passnummer  <br/> Passport-Nr.  <br/> διαβατηριο  <br/> |
+|passport number  <br/> griechische Passnummer  <br/> Passport-Nr.  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Ungarn
 
@@ -427,7 +427,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> ungarische Passnummer  <br/> Passport-Nr.  <br/> útlevél száma  <br/> |
+|passport number  <br/> ungarische Passnummer  <br/> Passport-Nr.  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irland
 
@@ -470,7 +470,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> irische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> passport  <br/> Passeport  <br/> Passeport numero  <br/> |
+|passport number  <br/> irische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> Pass  <br/> Passeport  <br/> Passeport numero  <br/> |
    
 ## <a name="italy"></a>Italien
 
@@ -513,7 +513,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|italienische Passnummer  <br/> Repubblica Italiana Passa Porto  <br/> Passa Porto  <br/> Passa Porto Italiana  <br/> Passnummer  <br/> Italiana Passa Porto numero  <br/> Passa Porto numero  <br/> Numéro Passeport Italien  <br/> Numéro Passeport  <br/> |
+|italienische Passnummer  <br/> Repubblica Italiana Passa Porto  <br/> Passa Porto  <br/> Passa Porto Italiana  <br/> passport number  <br/> Italiana Passa Porto numero  <br/> Passa Porto numero  <br/> Numéro Passeport Italien  <br/> Numéro Passeport  <br/> |
    
 ## <a name="latvia"></a>Lettland
 
@@ -556,7 +556,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Pase numurs  <br/> |
+|passport number  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Litauen
 
@@ -595,7 +595,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> lithunian-Passport-Nummer  <br/> Passport-Nr.  <br/> Paso Numeris  <br/> |
+|passport number  <br/> lithunian-Passport-Nummer  <br/> Passport-Nr.  <br/> Paso Numeris  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
@@ -634,7 +634,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Passnummer  <br/> |
+|passport number  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Passnummer  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -673,7 +673,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Maltesische Passnummer  <br/> Passport-Nr.  <br/> numru Tal-Passaport  <br/> |
+|passport number  <br/> Maltesische Passnummer  <br/> Passport-Nr.  <br/> numru Tal-Passaport  <br/> |
    
 ## <a name="netherlands"></a>Niederlande
 
@@ -712,7 +712,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|niederländische Passnummer  <br/> Passnummer  <br/> niederländische Passnummer  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|niederländische Passnummer  <br/> passport number  <br/> niederländische Passnummer  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polen
 
@@ -759,7 +759,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> portugiesische Passnummer  <br/> Passport-Nr.  <br/> número do passaporte  <br/> |
+|passport number  <br/> portugiesische Passnummer  <br/> Passport-Nr.  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>Rumänien
 
@@ -798,7 +798,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> rumänische Passnummer  <br/> Passport-Nr.  <br/> numărul pașaportului  <br/> |
+|passport number  <br/> rumänische Passnummer  <br/> Passport-Nr.  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>Slowakei
 
@@ -837,7 +837,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> Slowakische Passnummer  <br/> Passport-Nr.  <br/> číslo Pasu  <br/> |
+|passport number  <br/> Slowakische Passnummer  <br/> Passport-Nr.  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Slowenien
 
@@ -882,7 +882,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|Passnummer  <br/> slowenische Passnummer  <br/> Passport-Nr.  <br/> številka potnega lista  <br/> |
+|passport number  <br/> slowenische Passnummer  <br/> Passport-Nr.  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>Spanien
 
@@ -927,7 +927,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> Spanien Passport  <br/> Passport-Buch  <br/> Passnummer  <br/> Passport-Nr.  <br/> Libreta Pasaporte  <br/> número Pasaporte  <br/> ESPAÑA PASAPORTE  <br/> Pasaporte  <br/> |
+|Pass  <br/> Spanien Passport  <br/> Passport-Buch  <br/> passport number  <br/> Passport-Nr.  <br/> Libreta Pasaporte  <br/> número Pasaporte  <br/> ESPAÑA PASAPORTE  <br/> Pasaporte  <br/> |
    
 ## <a name="sweden"></a>Schweden
 
@@ -935,7 +935,7 @@ Weitere Informationen finden Sie im Abschnitt "schwedische Passport-Nummer" in [
   
 ## <a name="uk"></a>UK
 
-Weitere Informationen finden Sie im Abschnitt "U.S./UK Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Weitere Informationen finden Sie im Abschnitt "U.S./U.K. Passport-Nummer "in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Siehe auch
 

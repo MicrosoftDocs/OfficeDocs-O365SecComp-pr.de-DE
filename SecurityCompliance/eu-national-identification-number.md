@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp EU National Identification Number erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220635"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410970"
 ---
 # <a name="eu-national-identification-number"></a>Nationale IdentifikationsNummer der EU
 
@@ -67,7 +67,6 @@ nationale Identitätsnummer
   
 Identitätsnummer
   
-
 national id
   
 Personalausweis Republik Österreich
@@ -135,7 +134,6 @@ Bulgarische Nationale Nummer
 nationale Nummer
   
 social security number
-
   
 nationalnumber #
   
@@ -203,7 +201,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ID-Kartennummer
   
-nationale Identifikationsnummer
+national identification number
   
 persönliche ID-Nummer
   
@@ -274,7 +272,7 @@ persönlicher Identifizierungscode
   
 persönliche Identifikationsnummer
   
-nationale Identifikationsnummer
+national identification number
   
 nationale Nummer
   
@@ -357,7 +355,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 persönliche Identifikationsnummer
   
 identification number
-
   
 persönliche ID-Nummer
   
@@ -433,7 +430,6 @@ RSI-No
 persönliche Identifikationsnummer
   
 identification number
-
   
 persönliche ID-Nummer
   
@@ -926,7 +922,7 @@ CNP
   
 CNP
   
-Anheften
+PIN
   
 PIN
   
@@ -1001,12 +997,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Geburtsnummer
   
-nationale Identifikationsnummer
+national identification number
   
 persönliche Identifikationsnummer
   
 social security number
-
   
 nationalnumber #
   
@@ -1139,7 +1134,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 DNI
   
-nationale Identifikationsnummer
+national identification number
   
 nationale Identitätsnummer
   

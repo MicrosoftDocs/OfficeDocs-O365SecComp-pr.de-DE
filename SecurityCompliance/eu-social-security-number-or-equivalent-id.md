@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn die EU-sozialVersicherungsNummer oder der entsprechende ID-vertrauliche Informationstyp erkannt wird. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216525"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410800"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>EU-sozialVersicherungsNummer oder entsprechende ID
 
@@ -73,9 +73,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 Sozialversicherungsnummer
   
 social security number
-
   
-
 social security code
   
 Versicherungsnummer
@@ -146,7 +144,6 @@ belgische nationale Nummer
 nationale Nummer
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +164,6 @@ personalidnumber #
 Numéro National
   
 numéro de sécurité
-
   
 Numéro d'assuré
   
@@ -228,10 +224,9 @@ persönliche Identifikationsnummer
   
 Master-Bürgerzahl
   
-nationale Identifikationsnummer
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -306,12 +301,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Geburtsnummer
   
-nationale Identifikationsnummer
+national identification number
   
 persönliche Identifikationsnummer
   
 social security number
-
   
 nationalnumber #
   
@@ -382,10 +376,9 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 persönliche Identifikationsnummer
   
-nationale Identifikationsnummer
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -461,7 +454,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
-
   
 persönliche ID
   
@@ -471,7 +463,7 @@ nationale finnische ID-Nummer
   
 personalidnumber #
   
-nationale Identifikationsnummer
+national identification number
   
 ID-Nummer
   
@@ -561,7 +553,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 Sozialversicherungsnummer (ungarisch)
   
 social security number
-
   
 socialsecuritynumber #
   
@@ -657,7 +648,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 persönliche ID-Nummer
   
 identification number
-
   
 persönliche ID Nein
   

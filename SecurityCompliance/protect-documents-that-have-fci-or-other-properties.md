@@ -12,23 +12,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
-ms.assetid: 1b9e3c6c-4308-4a20-b11e-c37b8013e177
-description: Viele Organisationen verfügen bereits über einen Prozess zum Identifizieren und klassifizieren vertraulicher Informationen mithilfe der Klassifizierungseigenschaften in Windows Server-Datei Klassifikations Infrastruktur (FCI), den Dokumenteigenschaften in SharePoint oder den Dokumenteigenschaften von einem Drittanbietersystem angewendet. Wenn dies Ihre Organisation beschreibt, können Sie eine DLP-Richtlinie in Office 365 erstellen, die die Eigenschaften erkennt, die auf Dokumente von Windows Server FCI oder einem anderen System angewendet wurden, damit die DLP-Richtlinie in Office-Dokumenten mit bestimmter FCI oder anderen Eigenschaftswerte.
-ms.openlocfilehash: 71f37d616c6bb6c3e63bad8707b650b36f66fa62
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+description: Viele Organisationen verfügen mithilfe der Klassifikationseigenschaften in Windows Dateiklassifizierungsinfrastruktur (FCI, File Classification Infrastructure), der Dokumenteigenschaften in SharePoint oder Dokumenteigenschaften, die von einem Drittanbietersystem angewendet werden, bereits über einen Prozess zum Identifizieren und Klassifizieren vertraulicher Informationen. Wenn dies auf Ihre Organisation zutrifft, können Sie eine DLP-Richtlinie in Office 365 erstellen, welche die Eigenschaften erkennt, die von Windows Server FCI oder einem anderen System auf Dokumente angewendet wurden, damit die DLP-Richtlinie bei Office-Dokumenten mit bestimmten FCI- oder anderen Eigenschaftswerten erzwungen werden kann.
+ms.openlocfilehash: d4468859781703012438a06ec782b75d1acce963
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214365"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410530"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften
 
 In Office 365 können Sie eine DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) verwenden, um vertrauliche Informationen zu ermitteln, zu überwachen und zu schützen. Viele Organisationen verfügen mithilfe der Klassifikationseigenschaften in Windows Dateiklassifizierungsinfrastruktur (FCI, File Classification Infrastructure), der Dokumenteigenschaften in SharePoint oder Dokumenteigenschaften, die von einem Drittanbietersystem angewendet werden, bereits über einen Prozess zum Identifizieren und Klassifizieren vertraulicher Informationen. Wenn dies auf Ihre Organisation zutrifft, können Sie eine DLP-Richtlinie in Office 365 erstellen, welche die Eigenschaften erkennt, die von Windows Server FCI oder einem anderen System auf Dokumente angewendet wurden, damit die DLP-Richtlinie bei Office-Dokumenten mit bestimmten FCI- oder anderen Eigenschaftswerten erzwungen werden kann.
   
-![Diagramm, das Office 365 und ein externes Klassifizierungssystem zeigt](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![Diagramm mit Office 365 und externem Klassifikationssystem](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-Ihre Organisation kann beispielsweise Windows Server FCI verwenden, um Dokumente mit personenbezogenen Informationen (PII) wie Sozialversicherungsnummern zu identifizieren und das Dokument dann durch Festlegen der **persönlich identifizierbaren Informationen** zu klassifizieren. Eigenschaft auf **hoch**, **moderat**, **niedrig**, **öffentlich**oder **nicht PII** basierend auf dem Typ und der Anzahl der Vorkommen von PII im Dokument. In Office 365 können Sie eine DLP-Richtlinie erstellen, die Dokumente identifiziert, deren Eigenschaft auf bestimmte Werte wie **High** und **Medium**festgelegt ist, und dann eine Aktion wie das Blockieren des Zugriffs auf diese Dateien ausführt. Dieselbe Richtlinie kann eine andere Regel haben, die eine andere Aktion ausführt, wenn die Eigenschaft auf **niedrig**festgelegt ist, wie das Senden einer e-Mail-Benachrichtigung. Auf diese Weise wird DLP in Office 365 in Windows Server FCI integriert und kann dazu beitragen, Office-Dokumente, die hochgeladen oder in Office 365 freigegeben wurden, von Windows Server-basierten Dateiservern zu schützen.
+Ihre Organisation verwendet z. B. möglicherweise Windows Server FCI zum Identifizieren von Dokumenten mit personenbezogenen Informationen (PII) wie Sozialversicherungsnummern und zum anschließenden Klassifizieren des Dokuments durch Festlegen der Eigenschaft **Personenbezogene Informationen** auf **Hoch**, **Mittel**, **Niedrig**, **Öffentlich** oder **Keine personenbezogenen Informationen** basierend auf dem Typ und der Anzahl von Vorkommen von personenbezogenen Informationen, die im Dokument gefunden werden. In Office 365 können Sie eine DLP-Richtlinie erstellen, die Dokumente identifiziert, bei denen diese Eigenschaft auf bestimmte Werte festgelegt ist, z. B. **Hoch** und **Mittel**, und dann eine Aktion ausführt und z. B. den Zugriff auf diese Dateien sperrt. Die gleiche Richtlinie kann eine andere Regel enthalten, die eine andere Aktion ausführt, wenn die Eigenschaft auf **Niedrig** festgelegt ist und z. B. eine E-Mail-Benachrichtigung sendet. Auf diese Weise wird DLP in Office 365 in Windows Server FCI integriert und kann dazu beitragen, Office-Dokumente, die hochgeladen oder in Office 365 freigegeben wurden, von Windows Server-basierten Dateiservern zu schützen.
   
 Eine DLP-Richtlinie sucht einfach nach einem bestimmten Eigenschafts-Name-Wert-Paar. Eine beliebige Dokumenteigenschaft kann verwendet werden, solange die Eigenschaft über eine entsprechende verwaltete Eigenschaft für die SharePoint-Suche verfügt. Eine SharePoint-Websitesammlung verwendet z. B. möglicherweise einen Inhaltstyp namens **Reisebericht** mit einem erforderlichen Feld namens **Kunde**. Wenn eine Person einen Reisebericht erstellt, muss sie den Namen des Kunden eingeben. Dieses Eigenschafts-Name-Wert-Paar kann auch in einer DLP-Richtlinie verwendet werden – z. B. wenn Sie eine Regel möchten, die den Zugriff auf das Dokument für externe Benutzer sperrt, wenn das Feld **Kunde****Contoso** enthält.
   
@@ -46,7 +45,7 @@ Weitere Informationen zu Such-und verwalteten Eigenschaften finden Sie unter [Ma
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Schritt 1: Hochladen eines Dokuments mit der erforderlichen Eigenschaft in Office 365
 
-Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in ihrer DLP-Richtlinie verweisen möchten. Office 365 ermittelt die Eigenschaft und erstellt automatisch eine durchforstete Eigenschaft davon. Im nächsten Schritt erstellen Sie eine verwaltete Eigenschaft und ordnen die verwaltete Eigenschaft dann dieser durchforstete Eigenschaft zu.
+Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in der DLP-Richtlinie verweisen möchten. Office 365 erkennt die Eigenschaft und erstellt daraus automatisch eine durchforstete Eigenschaft. Im nächsten Schritt erstellen Sie eine verwaltete Eigenschaft und ordnen die verwaltete Eigenschaft dann dieser durchforstete Eigenschaft zu.
   
 ### <a name="step-2-create-a-managed-property"></a>Schritt 2: Erstellen einer verwalteten Eigenschaft
 
@@ -56,11 +55,11 @@ Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in ih
     
 3. Wählen Sie in der linken Navigations **** \> Leiste auf der Seite \> **Suchverwaltung** die Option Such **Schema verwalten**aus.
     
-    ![Seite „Suchverwaltung“ im SharePoint Admin Center](media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+    ![Seite "Suchverwaltung" im SharePoint Admin Center](media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
 4. Auf der Seite " **verwaltete Eigenschaften** " \> wird eine **neue verwaltete Eigenschaft**angezeigt.
     
-    ![Seite „Verwaltete Eigenschaften“ mit hervorgehobener Schaltfläche „Neue verwaltete Eigenschaft“](media/b161c764-414c-4037-83ed-503a49fb4410.png)
+    ![Seite "verwaltete Eigenschaften" mit hervorgehobener Schaltfläche "neue verwaltete Eigenschaft"](media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
 5. Geben Sie einen Namen und eine Beschreibung für die Eigenschaft ein. Dieser Name wird in den DLP-Richtlinien angezeigt.
     
@@ -72,7 +71,7 @@ Sie müssen zuerst ein Dokument mit der Eigenschaft hochladen, auf die Sie in ih
     
 9. Suchen und wählen Sie im Dialogfeld **** \> durch **forstete Eigenschaften Auswahl** die durchforstete Eigenschaft aus, die der Windows Server FCI-Eigenschaft oder anderen Eigenschaften entspricht, die Sie in der DLP \> -Richtlinie verwenden möchten.
     
-    ![Dialogfeld für Auswahl für durchforstete Eigenschaft](media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+    ![Dialogfeld für die Auswahl der gecrawlten Eigenschaft](media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
 10. Am unteren Rand der Seite \> **OK**.
     
@@ -116,9 +115,9 @@ Weitere Informationen zu diesen Cmdlets finden Sie unter [Office 365 Security &a
     
 Wenn Sie fertig sind, sollte Ihre Richtlinie zwei neue Regeln haben, die beide die Dokumenteigenschaften verwenden, die **eine dieser Werte Bedingung enthalten** . Beachten Sie, dass diese Bedingung nicht auf der Benutzeroberfläche angezeigt wird, obwohl die anderen Bedingungen, Aktionen und Einstellungen angezeigt werden. 
   
-Eine Regel blockiert den Zugriff auf Inhalte, bei denen die Eigenschaft **persönlich identifizierbare Informationen** gleich **hoch** oder **moderat**ist. Eine zweite Regel sendet eine Benachrichtigung über Inhalte, bei denen die Eigenschaft **persönlich identifizierbare Informationen** gleich **niedrig**ist.
+Eine Regel sperrt den Zugriff auf Inhalte, bei denen die Eigenschaft **Personenbezogene Informationen** den Wert **Hoch** oder **Mittel** aufweist. Eine zweite Regel sendet eine Benachrichtigung über Inhalte, bei denen die Eigenschaft **Personenbezogene Informationen** den Wert **Niedrig** aufweist.
   
-![Neues DLP-Richtliniendialogfeld mit zwei soeben erstellten Regeln](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![Neues DLP-Richtlinien Dialogfeld mit zwei soeben erstellten Regeln](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
   
 ## <a name="after-you-create-the-dlp-policy"></a>Nachdem Sie die DLP-Richtlinie erstellt haben
 
@@ -127,7 +126,7 @@ Durch Ausführen der Schritte in den vorherigen Abschnitten wird eine DLP-Richtl
 Um überall Inhalte mit dieser Eigenschaft zu ermitteln, sollten Sie manuell anfordern, dass die Bibliothek, Website oder Websitesammlung neu indiziert werden, damit die DLP-Richtlinie alle Inhalte mit dieser Eigenschaft kennt. In SharePoint Online werden Inhalte basierend auf einem definierten Durchforstungszeitplan automatisch durchforstet. Der Crawler ruft Inhalte ab, die seit der letzten Durchforstung geändert wurden, und aktualisiert den Index. Wenn Ihre DLP-Richtlinie Inhalte vor der nächsten geplanten Durchforstung schützen soll, können Sie diese Schritte ausführen.
   
 > [!CAUTION]
-> Die erneute Indizierung einer Website kann zu einer erheblichen Belastung des Suchsystems führen. Indizieren Sie Ihre Website nur dann neu, wenn Ihr Szenario dies unbedingt erfordert. 
+> Erneute Indizierung einer Website kann das Suchsystem massiv belasten. Indizieren Sie Ihre Website nur dann neu, wenn Ihr Szenario dies unbedingt erfordert. 
   
 Weitere Informationen finden Sie unter [Manuelles anfordern von Crawlen und Neuindizieren einer Website, einer Bibliothek oder einer Liste](http://go.microsoft.com/fwlink/p/?LinkID=627457).
   

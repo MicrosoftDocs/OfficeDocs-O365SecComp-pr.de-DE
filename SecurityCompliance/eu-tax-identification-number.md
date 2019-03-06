@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Steuernummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213825"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410910"
 ---
 # <a name="eu-tax-identification-number"></a>USt-ID-Nummer
 
@@ -76,12 +76,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 Steuernummer
   
-Anzahl
+number
   
 Steuernummer
   
 tax id
-
   
 St.Nr.
   
@@ -140,7 +139,6 @@ nationale Registrierungsnummer
 Steuernummer
   
 tax id
-
   
 NIF
   
@@ -273,9 +271,8 @@ Steuernummer
 Steuer
   
 tax id
-
   
-OID
+oid
   
 OID
   
@@ -335,7 +332,6 @@ Steuernummer
 Steuer
   
 tax id
-
   
 USt-ID-Code
   
@@ -396,7 +392,6 @@ Steuernummer
 Steuer
   
 tax id
-
   
 persönliche Nummer
   
@@ -458,7 +453,6 @@ Steuernummer
 Steuer
   
 tax id
-
   
 CPR-Nummer
   
@@ -524,7 +518,6 @@ Steuernummer
 Steuer
   
 tax id
-
   
 persönlicher Code
   
@@ -586,7 +579,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
-
   
 persönliche ID
   
@@ -596,7 +588,7 @@ nationale finnische ID-Nummer
   
 personalidnumber #
   
-nationale Identifikationsnummer
+national identification number
   
 ID-Nummer
   
@@ -680,7 +672,6 @@ USt-ID-Nummer
 Steuernummer
   
 tax id
-
   
 Numéro d'identification Fiscale
   
@@ -742,7 +733,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 getaxit #
   
@@ -794,8 +784,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 AFM
   
-tin
-
+Zinn
   
 USt-ID-Nr.
   
@@ -1043,7 +1032,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 getaxit #
   
@@ -1111,7 +1099,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 getaxit #
   
@@ -1179,7 +1166,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 getaxit #
   
@@ -1251,7 +1237,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 getaxit #
   
@@ -1329,7 +1314,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 getaxit #
   
@@ -1401,7 +1385,6 @@ niederländische Steuernummer
 niederländische Steuernummer
   
 tax id
-
   
 USt-ID-Nummer
   
@@ -1411,8 +1394,7 @@ Steuernummer
   
 Steuer
   
-tin
-
+Zinn
   
 Zinn
   
@@ -1494,7 +1476,6 @@ NIP
 NIP
   
 tax id
-
   
 USt-ID-Nummer
   
@@ -1620,14 +1601,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
-
   
 USt-ID-Nummer
   
 Steuerdatei Nein
   
-
-
 tax file number
   
 Steuernummer
@@ -1679,7 +1657,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
-
   
 USt-ID-Nummer
   
@@ -1689,13 +1666,10 @@ Tin Nein
   
 Slowakische Tin-ID
   
-tin
-
+Zinn
   
 Steuerdatei Nein
   
-
-
 tax file number
   
 Steuernummer
@@ -1756,7 +1730,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
-
   
 USt-ID-Nummer
   
@@ -1766,13 +1739,10 @@ Tin Nein
   
 slowenische Tin-ID
   
-tin
-
+Zinn
   
 Steuerdatei Nein
   
-
-
 tax file number
   
 Steuernummer
@@ -1869,7 +1839,6 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
-
   
 USt-ID-Nummer
   
@@ -1885,8 +1854,6 @@ Steuerdatei Nein
   
 spanische CIF-Nummer
   
-
-
 tax file number
   
 Spanisch (CIF) Nein
@@ -1971,14 +1938,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
-
   
 USt-ID-Nr.
   
 USt-ID-Nummer
   
 tax identification
-
   
 USt-Identifikationsnummer
   
@@ -2006,13 +1971,13 @@ PERSONNUMMER
 
 Eindeutige Steuerzahler-Referenz (UTR): 10 Ziffern ohne Leerzeichen und Abgrenzungen
   
-National Insurance Number (NINO): Weitere Informationen finden Sie im Abschnitt "UK National Insurance Number (NINO)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Nationale Versicherungsnummer (NINO): Weitere Informationen finden Sie im Abschnitt "U.K. National Insurance Number (NINO) "in [dem, wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Muster
 
 Eindeutige Steuerzahler-Referenz (UTR): 10 Ziffern
   
-National Insurance Number (NINO): Weitere Informationen finden Sie im Abschnitt "UK National Insurance Number (NINO)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Nationale Versicherungsnummer (NINO): Weitere Informationen finden Sie im Abschnitt "U.K. National Insurance Number (NINO) "in [dem, wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -2041,14 +2006,12 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
-
   
 USt-ID-Nr.
   
 USt-ID-Nummer
   
 tax identification
-
   
 USt-Identifikationsnummer
   

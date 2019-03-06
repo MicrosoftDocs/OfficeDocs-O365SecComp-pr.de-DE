@@ -3,7 +3,7 @@ title: Aktivieren des Berichtsnachrichts-Add-Ins
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie das Berichtnachrichten-Add-in für Outlook und Outlook im Web für einzelne Benutzer oder Ihre gesamte Organisation aktivieren können.
-ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341426"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410900"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtsnachrichts-Add-Ins
+
+> [!NOTE]
+> Das Berichtnachrichten-Add-in für Outlook und Outlook im Web ist nicht genau dasselbe wie der [Outlook-Junk-e-Mail-Filter](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), obwohl beide verwendet werden können, um e-Mails als Junk, nicht als Junk oder als Phishing-Versuch zu kennzeichnen. Der Unterschied besteht darin, dass das Berichtsnachrichten-Add-in für Outlook und Outlook im Web Microsoft über falsch klassifizierte e-Mails benachrichtigt, während der Outlook-Junk-e-Mail-Filter zum Organisieren von e-Mail-Nachrichten im Postfach eines Benutzers verwendet wird. 
 
 ## <a name="overview"></a>Übersicht
 
@@ -37,8 +40,7 @@ Das Berichtnachrichten-Add-in funktioniert mit Ihrem Office 365-Abonnement und d
  - Outlook 2016 für Mac
  - Outlook im Lieferumfang von Office 365 proPlus
 
-> [!NOTE]
-> Das Berichtnachrichten-Add-in für Outlook und Outlook im Web ist nicht genau dasselbe wie der [Outlook-Junk-e-Mail-Filter](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), obwohl beide verwendet werden können, um e-Mails als Junk, nicht als Junk oder als Phishing-Versuch zu kennzeichnen. Das Berichtnachrichten-Add-in für Outlook und Outlook im Web benachrichtigt Microsoft über falsch klassifizierte e-Mails, wohingegen der Outlook-Junk-e-Mail-Filter zum Organisieren von e-Mail-Nachrichten im Postfach eines Benutzers verwendet wird. 
+Der vorhandene Webbrowser sollte ausreichen, damit das Berichtnachrichten-Add-in funktioniert. Wenn Sie jedoch feststellen, dass das Add-in nicht verfügbar ist oder nicht wie erwartet funktioniert, probieren Sie einen anderen Browser aus.
   
 Wenn Sie ein einzelner Benutzer sind, können Sie [das Berichtnachrichten-Add-in für sich selbst aktivieren](#get-the-report-message-add-in-for-yourself). 
   
@@ -50,7 +52,7 @@ Wenn Sie ein globaler Office 365-Administrator oder ein Exchange Online-Administ
     
 2. Wählen Sie **get it now**aus.<br/>![Berichtnachricht-get it now](media/ReportMessageGETITNOW.png)<br/> 
     
-3. Lesen Sie die Nutzungsbedingungen und Datenschutzrichtlinien. Klicken Sie dann auf **weiter**. 
+3. Lesen Sie die Nutzungsbedingungen und Datenschutzrichtlinien. Wählen Sie dann **Continue** aus. 
     
 4. Melden Sie sich mit Ihrem Geschäfts-oder Schulkonto (für geschäftliche Zwecke) oder Ihrem Microsoft-Konto (für den persönlichen Gebrauch) bei Office 365 an.
     
@@ -119,7 +121,7 @@ Sie können eine Regel einrichten, um eine Kopie der von Benutzern in Ihrer Orga
     
 9. Wählen Sie unter **Wählen Sie einen Modus für diese Regel**aus die Option **erzwingen**aus.<br/>![Einrichten einer Regel zum Abrufen einer Kopie jeder gemeldeten Nachricht](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. Klicken Sie auf **Save**. 
+10. Wählen Sie **Speichern**. 
     
 Wenn diese Regel gilt, erhalten Benutzer, die in Ihrer Organisation eine e-Mail-Nachricht mit dem Berichtnachrichten-Add-in melden, ihren globalen Administrator, Sicherheitsadministrator und/oder Sicherheits Leser eine Kopie dieser Nachricht. Mit diesen Informationen können Sie Richtlinien wie [Office 365 ATP](atp-safe-links.md) -Richtlinien für sichere Links oder Ihre Antispameinstellungen einrichten [](anti-spam-protection.md) oder anpassen. 
 
@@ -139,10 +141,10 @@ Sie können die Standardeinstellungen für das Berichtnachrichten-Add-in auf der
 2. Suchen und wählen Sie das Add-in Berichtnachricht aus.<br/>![Suchen und auswählen des Add-Ins "Berichtnachricht"](media/FindReportMessageAddIn.png)<br/> 
     
 3. Überprüfung und Bearbeitung der Einstellungen für Ihre Organisation auf dem Bildschirm Bericht Meldung.<br/>![Einstellungen für das Berichtnachrichten-Add-in](media/EditReportMessageAddIn.png)<br/> 
-  
+
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Verwenden des Add-Ins Nachricht melden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+[Verwenden des Berichtnachrichten-Add-ins](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   
 [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md)
 

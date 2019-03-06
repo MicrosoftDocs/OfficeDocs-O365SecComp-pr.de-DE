@@ -9,23 +9,24 @@ ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum erkennen und beantworten eines kompromittierten e-Mail-Kontos in Office 365
-ms.openlocfilehash: 326ec01c570ad97b5f1eaf06dcfe1ad4e6ad76f4
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3f64cd249a425cc098fc49f6e9bbbe1901c734de
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341096"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412943"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Reagieren auf ein angegriffenes E-Mail-Konto in Office 365
 
 **Zusammenfassung** Erfahren Sie, wie Sie ein kompromittiertes e-Mail-Konto in Office 365 erkennen und darauf reagieren.
 
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>Was ist ein kompromittiertes e-Mail-Konto in Office 365?
-Der Zugriff auf Office 365-Postfächer, Daten und andere Dienste wird über die Verwendung von Anmeldeinformationen gesteuert, beispielsweise einen Benutzernamen und ein Kennwort oder eine PIN. Wenn eine andere Person als der vorgesehene Benutzer diese Anmeldeinformationen stiehlt, gelten die gestohlenen Anmeldeinformationen als kompromittiert. Bei diesen kann sich der Angreifer als ursprünglicher Benutzer anmelden und illegale Aktionen ausführen. Unter Verwendung der gestohlenen Anmeldeinformationen kann der Angreifer auf das Office 365-Postfach des Benutzers, auf SharePoint-Ordner oder auf Dateien in der OneDrive des Benutzers zugreifen. Eine häufig verwendete Aktion ist, dass der Angreifer e-Mails als ursprünglichen Benutzer an Empfänger sowohl innerhalb als auch außerhalb der Organisation sendet. Wenn der Angreifer Daten an externe Empfänger sendet, wird dies als Datenfilterung bezeichnet.
+Der Zugriff auf Office 365-Postfächer, Daten und andere Dienste wird über die Verwendung von Anmeldeinformationen gesteuert, beispielsweise einen Benutzernamen und ein Kennwort oder eine PIN. Wenn eine andere Person als der vorgesehene Benutzer diese Anmeldeinformationen stiehlt, gelten die gestohlenen Anmeldeinformationen als kompromittiert. Bei diesen kann sich der Angreifer als ursprünglicher Benutzer anmelden und illegale Aktionen ausführen.
+Unter Verwendung der gestohlenen Anmeldeinformationen kann der Angreifer auf das Office 365-Postfach des Benutzers, auf SharePoint-Ordner oder auf Dateien in der OneDrive des Benutzers zugreifen. Eine häufig verwendete Aktion ist, dass der Angreifer e-Mails als ursprünglichen Benutzer an Empfänger sowohl innerhalb als auch außerhalb der Organisation sendet. Wenn der Angreifer Daten an externe Empfänger sendet, wird dies als Datenfilterung bezeichnet.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptome eines kompromittierten Office 365-e-Mail-Kontos
 Benutzer können ungewöhnliche Aktivitäten in Ihren Office 365-Postfächern bemerken und melden. Es folgen einige häufige Symptome:
@@ -90,7 +91,7 @@ Wenn das mutmaßlich kompromittierte Postfach zum Senden von Spam-e-Mails illega
 > [!IMPORTANT]
 > Sie können das mutmaßlich kompromittierte Konto vor der Anmeldung blockieren, bis Sie der Meinung sind, dass der Zugriff erneut aktiviert werden kann.
 
-1. Navigieren Sie zum Office 365 Admin Center.
+1. Wechseln Sie zum Office 365 Admin Center.
 2. Wählen Sie im Office 365 Admin Center die Option **Benutzer** aus.
 3. Wählen Sie den Mitarbeiter aus, den Sie blockieren möchten, und wählen Sie dann **Bearbeiten** neben **Anmeldestatus** im Benutzerbereich
 4. Wählen Sie im Bereich **Anmeldestatus** die Option **Anmeldung blockiert** und dann **Speichern** aus. 
@@ -107,10 +108,12 @@ Wenn das mutmaßlich kompromittierte Postfach zum Senden von Spam-e-Mails illega
 2. Suchen Sie nach dem mutmaßlich kompromittierten Konto, und überprüfen Sie, ob dem Konto Administratorrollen zugewiesen sind.
 3. Öffnen Sie das **Security _AMP_ Compliance Center**.
 4. Klicken Sie auf **Berechtigungen**.
-5. Überprüfen Sie die Rollengruppen manuell, um festzustellen, ob das mutmaßlich kompromittierte Konto Mitglied einer dieser Benutzer ist.  Wenn dies der Fall ist: a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Rollengruppe bearbeiten**.  b. Klicken Sie auf **Mitglieder auswählen** und **Bearbeiten** , um den Benutzer aus der Rollengruppe zu entfernen.
+5. Überprüfen Sie die Rollengruppen manuell, um festzustellen, ob das mutmaßlich kompromittierte Konto Mitglied einer dieser Benutzer ist.  Wenn dies der Fall ist: a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Rollengruppe bearbeiten**.
+    b. Klicken Sie auf **Mitglieder auswählen** und **Bearbeiten** , um den Benutzer aus der Rollengruppe zu entfernen.
 6. Öffnen des **Exchange Admin Center**
 7. Klicken Sie auf **Berechtigungen**.
-8. Überprüfen Sie die Rollengruppen manuell, um festzustellen, ob das mutmaßlich kompromittierte Konto Mitglied einer dieser Benutzer ist. Wenn dies der Fall ist: a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Bearbeiten**.  b. verwenden Sie den Abschnitt **Members** , um den Benutzer aus der Rollengruppe zu entfernen.
+8. Überprüfen Sie die Rollengruppen manuell, um festzustellen, ob das mutmaßlich kompromittierte Konto Mitglied einer dieser Benutzer ist. Wenn dies der Fall ist: a. Klicken Sie auf die Rollengruppe, und klicken Sie auf **Bearbeiten**.
+    b. Verwenden Sie den Abschnitt **Members** , um den Benutzer aus der Rollengruppe zu entfernen.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Schritt 7 optional: zusätzliche Vorsichtsmaßnahmen
 1. Vergewissern Sie sich, dass Sie die gesendeten Elemente überprüft haben. Möglicherweise müssen Sie die Personen in Ihrer Kontaktliste darüber informieren, dass Ihr Konto kompromittiert wurde. Der Angreifer hat Sie möglicherweise um Geld und Spoofing gebeten, beispielsweise, dass Sie in einem anderen Land gestrandet waren und Geld benötigten, oder der Angreifer kann Ihnen einen Virus senden, um auch Ihre Computer zu entführen.

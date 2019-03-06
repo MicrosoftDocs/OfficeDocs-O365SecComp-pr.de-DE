@@ -5,26 +5,25 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341767"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410870"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
-Zur Einhaltung von Unternehmensstandards und Branchenvorschriften müssen Organisationen vertrauliche Informationen schützen und eine unbeabsichtigte Offenlegung verhindern. Beispiele für vertrauliche Informationen, die möglicherweise verhindern, dass Sie außerhalb Ihrer Organisation undicht sind, sind Finanzdaten oder personenbezogene Informationen (PII) wie Kreditkartennummern, Sozialversicherungsnummern oder Krankenakten. Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
+Um Geschäftsstandards und branchenspezifische Vorschriften einzuhalten, müssen Organisationen vertrauliche Informationen schützen und verhindern, dass sie versehentlich offengelegt werden. Beispiele für vertrauliche Informationen, bei denen Sie verhindern möchten, dass sie Ihre Organisation verlassen, sind Finanzdaten oder personenbezogene Informationen (PII) wie Kreditkartennummern, Sozialversicherungsnummern oder Gesundheitsakten. Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
   
 Mit einer DLP-Richtlinie haben Sie die folgenden Möglichkeiten:
   
@@ -38,15 +37,15 @@ Mit einer DLP-Richtlinie haben Sie die folgenden Möglichkeiten:
     
 - **Überwachen und Schützen von vertraulichen Informationen in den Desktopversionen von Excel 2016, PowerPoint 2016 und Word 2016.**
     
-    Genau wie in Exchange Online, SharePoint Online und OneDrive for Business verfügen diese Office 2016-Desktop Programme über dieselben Funktionen, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine kontinuierliche Überwachung, wenn Personen Inhalte in diesen Office 2016-Programmen freigeben.
+    Genau wie in Exchange Online, SharePoint Online und OneDrive for Business verfügen diese Office 2016-Desktop Programme über dieselben Funktionen, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine ständige Überwachung, wenn Personen Inhalte in diesen Office 2016-Programmen freigeben.
     
-- **Benutzern dabei helfen, zu erfahren, wie sie die Anforderungen erfüllen, ohne dabei ihren Arbeitsablauf unterbrechen zu müssen**
+- **Helfen Sie den Benutzern dabei, zu erfahren, wie sie die Anforderungen erfüllen, ohne dabei ihren Arbeitsablauf unterbrechen zu müssen.**
     
-    Sie können Ihre Benutzer über DLP-Richtlinien informieren und Ihnen helfen, weiterhin kompatibel zu bleiben, ohne Ihre Arbeit zu blockieren. Wenn ein Benutzer beispielsweise versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie Ihnen sowohl eine e-Mail-Benachrichtigung senden als auch einen richtlinientipp im Kontext der Dokumentbibliothek anzeigen, der es Ihnen ermöglicht, die Richtlinie außer Kraft zu setzen, wenn Sie über ein Unternehmen verfügen. Ausrichtung. Die gleichen Richtlinien Tipps werden auch in Outlook im Web, Outlook 2013 und höher, Excel 2016, PowerPoint 2016 und Word 2016 angezeigt.
+    Sie können die Benutzer über DLP-Richtlinien informieren und sie dabei unterstützen, den Anforderungen gerecht zu werden, ohne dass dies ihre Arbeit beeinträchtigt. Wenn ein Benutzer z. B. versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie eine E-Mail-Benachrichtigung senden und dem Benutzer einen Richtlinientipp im Kontext der Dokumentbibliothek anzeigen, welche ihm das Außerkraftsetzen erlaubt, wenn er über eine geschäftliche Rechtfertigung verfügt. Die gleichen Richtlinien Tipps werden auch in Outlook im Web, Outlook 2013 und höher, Excel 2016, PowerPoint 2016 und Word 2016 angezeigt.
     
 - **Zeigen Sie DLP-Berichte mit Inhalten an, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen.**
     
-    Um zu bewerten, wie Ihre Organisation eine DLP-Richtlinie einhält, können Sie sehen, wie viele Übereinstimmungen mit jeder Richtlinie und Regel im Laufe der Zeit haben. Wenn eine DLP-Richtlinie es Benutzern ermöglicht, einen richtlinientipp außer Kraft zu setzen und ein falsch positives Ergebnis zu melden, können Sie auch anzeigen, was Benutzer gemeldet haben.
+    Um die Einhaltung einer DLP-Richtlinie in Ihrer Organisation zu beurteilen, können Sie ermitteln, wie viele Übereinstimmungen jede Richtlinie und Regel in einem Zeitraum aufweist. Wenn eine DLP-Richtlinie es Benutzern ermöglicht, einen richtlinientipp außer Kraft zu setzen und ein falsch positives Ergebnis zu melden, können Sie auch anzeigen, was Benutzer gemeldet haben.
     
 Sie erstellen und verwalten DLP-Richtlinien auf der Seite zur Verhinderung von Daten &amp; Verlust im Office 365 Security Compliance Center.
   
@@ -68,7 +67,7 @@ Sie können eine Regel verwenden, um eine bestimmte Schutzanforderung zu erfüll
   
 Sie haben beispielsweise eine DLP-Richtlinie, die Ihnen hilft, das vorhanden sein von Informationen zu erfassen, die dem Krankenversicherungs-und Verantwortlichkeits-Act (HIPAA) unterliegen. Diese DLP-Richtlinie kann dazu beitragen, HIPAA-Daten (was) in allen SharePoint Online-Websites und allen OneDrive für Business-Websites zu schützen, indem ein Dokument mit diesen vertraulichen Informationen gefunden wird, das für Personen außerhalb Ihrer Organisation freigegeben ist (die Bedingungen) und dann den Zugriff auf das Dokument und das Senden einer Benachrichtigung (die Aktionen). Diese Anforderungen werden als einzelne Regeln gespeichert und als DLP-Richtlinie gruppiert, um die Verwaltung und Berichterstellung zu vereinfachen.
   
-![Diagramm zeigt, dass DLP-Richtlinie Speicherorte und Regeln enthält](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![Diagramm zeigt DLP-Richtlinie enthält Standorte und Regeln](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>Speicherorte
 
@@ -80,7 +79,7 @@ Beachten Sie, dass eine DLP-Richtlinie nicht mehr als 100 solche Einschlüsse un
   
 ### <a name="rules"></a>Regeln
 
-Durch Regeln werden Ihre geschäftlichen Anforderungen an den Inhalt Ihrer Organisation durchgesetzt. Eine Richtlinie enthält eine oder mehrere Regeln, und jede Regel besteht aus Bedingungen und Aktionen. Bei jeder Regel werden die Aktionen automatisch ausgeführt, wenn die Bedingungen erfüllt sind. Regeln werden sequenziell ausgeführt, beginnend mit der Regel mit der höchsten Priorität in jeder Richtlinie.
+Durch Regeln werden Ihre geschäftlichen Anforderungen an den Inhalt Ihrer Organisation durchgesetzt. Eine Richtlinie enthält eine oder mehrere Regeln, und jede Regel besteht aus Bedingungen und Aktionen. Wenn die Bedingungen der einzelnen Regeln erfüllt sind, werden automatisch die entsprechenden Aktionen ausgeführt. Regeln werden sequenziell ausgeführt, beginnend mit der Regel mit der höchsten Priorität in jeder Richtlinie.
   
 Eine Regel bietet auch Optionen zum Benachrichtigen von Benutzern (mit Richtlinien Tipps und e-Mail-Benachrichtigungen) und Administratoren (bei e-Mail-Vorfall Berichten), denen der Inhalt der Regel entspricht.
   
@@ -108,9 +107,9 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
 
 Eine DLP-Richtlinie kann dazu beitragen, vertrauliche Informationen zu schützen ****, die als vertraulicher Informationstyp definiert sind. Office 365 enthält Definitionen für viele allgemeine vertrauliche Informationstypen in vielen verschiedenen Regionen, die Sie verwenden können, beispielsweise eine Kreditkartennummer, Kontonummern, nationale ID-Nummern und Passport-Nummern. 
   
-![Liste der verfügbaren Typen vertraulicher Daten.](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
+![Liste der verfügbaren Typen für vertrauliche Informationen](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
-Wenn eine DLP-Richtlinie nach einem vertraulichen Informationstyp wie einer Kreditkartennummer sucht, sucht er nicht einfach nach einer 16-stelligen Nummer. Jeder Typ für vertrauliche Informationen wird mithilfe einer Kombination aus folgendem definiert und erkannt:
+Wenn eine DLP-Richtlinie nach einem vertraulichen Informationstyp wie einer Kreditkartennummer sucht, sucht er nicht einfach nach einer 16-stelligen Nummer. Jede Art vertraulicher Informationen wird durch eine Kombination der folgenden Elemente definiert und anhand dieser ermittelt:
   
 - Schlüsselwörter
     
@@ -130,9 +129,9 @@ Wenn der Inhalt einer Bedingung in einer Regel entspricht, können Sie Aktionen 
   
 Mit den jetzt verfügbaren Aktionen können Sie Folgendes tun:
   
-- **Einschränken des Zugriffs auf Inhalte** Für Websiteinhalte bedeuten dies, dass Berechtigungen für das Dokument für alle Benutzer eingeschränkt sind, mit Ausnahme des primären Websitesammlungsadministrators, des Dokumentbesitzers und der Person, die das Dokument zuletzt geändert hat. Diese Personen können vertrauliche Informationen aus dem Dokument entfernen oder andere Maßnahmen ergreifen. Wenn das Dokument kompatibel ist, werden die ursprünglichen Berechtigungen automatisch wiederhergestellt. Wenn der Zugriff auf ein Dokument blockiert wird, wird das Dokument mit einem speziellen richtlinientipp Symbol in der Bibliothek auf der Website angezeigt. 
+- **Einschränken des Zugriffs auf Inhalte** Für Websiteinhalte bedeuten dies, dass Berechtigungen für das Dokument für alle Benutzer eingeschränkt sind, mit Ausnahme des primären Websitesammlungsadministrators, des Dokumentbesitzers und der Person, die das Dokument zuletzt geändert hat. Diese Personen können die vertraulichen Informationen aus dem Dokument entfernen oder eine andere Aktion ausführen. Wenn das Dokument den Anforderungen entspricht, werden die ursprünglichen Berechtigungen automatisch wiederhergestellt. Wenn der Zugriff auf ein Dokument gesperrt ist, wird das Dokument in der Bibliothek auf der Website mit einem speziellen Richtlinientipp-Symbol angezeigt. 
     
-    ![Richtlinientipp, der zeigt, dass der Zugriff auf das Dokument gesperrt ist.](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+    ![Richtlinientipp mit Zugriff auf Dokument blockiert](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
     Bei e-Mail-Inhalten wird durch diese Aktion verhindert, dass die Nachricht gesendet wird. Je nach Konfiguration der DLP-Regel wird dem Absender ein NDR angezeigt oder (wenn die Regel eine Benachrichtigung verwendet) ein richtlinientipp und/oder eine e-Mail-Benachrichtigung.
     
@@ -140,7 +139,7 @@ Mit den jetzt verfügbaren Aktionen können Sie Folgendes tun:
   
 #### <a name="user-notifications-and-user-overrides"></a>Benutzer Benachrichtigungen und Benutzerüberschreibungen
 
-Sie können Benachrichtigungen und Außerkraftsetzungen verwenden, um Ihre Benutzer über DLP-Richtlinien zu informieren und Sie dabei zu unterstützen, ohne Ihre Arbeit zu blockieren. Wenn ein Benutzer beispielsweise versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie Ihnen sowohl eine e-Mail-Benachrichtigung senden als auch einen richtlinientipp im Kontext der Dokumentbibliothek anzeigen, der es Ihnen ermöglicht, die Richtlinie außer Kraft zu setzen, wenn Sie über ein Unternehmen verfügen. Ausrichtung.
+Sie können Benachrichtigungen und Außerkraftsetzungen verwenden, um Ihre Benutzer über DLP-Richtlinien zu informieren und Sie dabei zu unterstützen, ohne Ihre Arbeit zu blockieren. Wenn ein Benutzer z. B. versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie eine E-Mail-Benachrichtigung senden und dem Benutzer einen Richtlinientipp im Kontext der Dokumentbibliothek anzeigen, welche ihm das Außerkraftsetzen erlaubt, wenn er über eine geschäftliche Rechtfertigung verfügt.
   
 ![Benutzer Benachrichtigungen und Benutzerüberschreibungen Abschnitte des DLP-Regel-Editors](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
@@ -154,7 +153,7 @@ Zusätzlich zum Senden einer e-Mail-Benachrichtigung wird in einer Benutzerbenac
     
 - In Excel 2016, PowerPoint 2016 und Word 2016, wenn das Dokument auf einer Website gespeichert ist, die in einer DLP-Richtlinie enthalten ist.
     
-Der e-Mail-Benachrichtigungs-und richtlinientipp erläutert, warum Inhalte mit einer DLP-Richtlinie in Konflikt stehen. Wenn Sie möchten, können Benutzer mithilfe der e-Mail-Benachrichtigung und des Richtlinien Tipps eine Regel außer Kraft setzen, indem Sie ein falsch positives Ergebnis melden oder eine geschäftliche Begründung angeben. Auf diese Weise können Sie Benutzer über ihre DLP-Richtlinien informieren und Sie erzwingen, ohne dass Sie Ihre Arbeit verhindern. Informationen zu Außerkraftsetzungen und falsch positiven Ergebnissen werden auch für die Berichterstellung protokolliert (siehe unten über die DLP-Berichte) und in den Vorfall Berichten (nächster Abschnitt) enthalten, damit der Compliance Officer diese Informationen regelmäßig überprüfen kann.
+Der e-Mail-Benachrichtigungs-und richtlinientipp erläutert, warum Inhalte mit einer DLP-Richtlinie in Konflikt stehen. Wenn Sie möchten, können die E-Mail-Benachrichtigung und der Richtlinientipp Benutzern das Außerkraftsetzen einer Regel erlauben, indem sie ein falsch positives Ergebnis melden oder eine geschäftliche Begründung angeben. Dadurch können Sie Benutzer über Ihre DLP-Richtlinien informieren und diese umsetzen, ohne dass Benutzer bei der Arbeit behindert werden. Informationen zu Außerkraftsetzungen und falsch positiven Ergebnissen werden auch für Berichte (siehe Hinweise unten zu den DLP-Berichten) protokolliert und in die Schadensberichte (im nächsten Abschnitt) aufgenommen, sodass der Compliance-Beauftragte diese Informationen regelmäßig prüfen kann.
   
 So sieht ein richtlinientipp in einem OneDrive for Business-Konto aus.
   
@@ -164,7 +163,7 @@ So sieht ein richtlinientipp in einem OneDrive for Business-Konto aus.
 
 Wenn eine Regel abgeglichen wird, können Sie einen Vorfall Bericht an Ihren Compliance Officer (oder an alle Personen, die Sie auswählen) mit Details des Ereignisses senden. Dieser Bericht enthält Informationen zu dem Element, das abgeglichen wurde, den tatsächlichen Inhalt, der mit der Regel übereinstimmt, und den Namen der Person, die den Inhalt zuletzt geändert hat. Für e-Mail-Nachrichten enthält der Bericht auch als Anlage die ursprüngliche Nachricht, die einer DLP-Richtlinie entspricht.
   
-![Seite zum Konfigurieren von Vorfallberichten](media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![Seite zum Konfigurieren von Vorfall Berichten](media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
   
 ## <a name="grouping-and-logical-operators"></a>Gruppierungs-und logische Operatoren
 
@@ -174,7 +173,7 @@ Um beispielsweise Inhalte zu identifizieren, die dem US-KrankenversicherungsGese
   
 - Inhalte, die bestimmte Typen von vertraulichen Informationen enthalten, beispielsweise eine US-sozialVersicherungsNummer oder eine DEA-Nummer.
     
-    AND
+    UND
     
 - Schwer zu identifizierende Inhalte, beispielsweise Kommunikation über die Pflege eines Patienten oder Beschreibungen der bereitgestellten medizinischen Dienste. Für die Identifizierung dieses Inhalts sind Schlüsselwörter aus sehr großen Keyword-Listen wie der internationalen Klassifikation von Krankheiten (ICD-9-CM oder ICD-10-CM) erforderlich.
     
@@ -204,7 +203,7 @@ Beispielsweise verfügt die integrierte **U.S. HIPAA** -Richtlinie über eine Re
   
 - aus der Gruppe **PII-IDs** (mindestens eine SSN-Nummer **oder** eine DEA-Nummer) 
     
-    **UND**
+    **AND**
     
 - aus der Gruppe **medizinische Ausdrücke** (mindestens ein ICD-9-cm-Schlüsselwort **oder** ein ICD-10-cm-Schlüsselwort) 
     
@@ -236,7 +235,7 @@ Beachten Sie im Hinblick auf Richtlinien Tipps Folgendes:
   
 - Nur der richtlinientipp mit der höchsten Priorität wird angezeigt. Beispielsweise wird ein richtlinientipp aus einer Regel, die den Zugriff auf Inhalte blockiert, über einen richtlinientipp aus einer Regel angezeigt, die einfach eine Benachrichtigung sendet. Dadurch wird verhindert, dass Personen eine Kaskade von Richtlinien Tipps sehen.
     
-- Wenn die Richtlinientipps in der restriktivsten Regel Benutzern erlauben, die Regel außer Kraft zu setzen, dann werden durch das Außerkraftsetzen dieser Regel auch alle weiteren Regeln außer Kraft gesetzt, welche mit dem Inhalt übereinstimmten.
+- Wenn die Richtlinien Tipps in der restriktivsten Regel es Benutzern ermöglichen, die Regel außer Kraft zu setzen, überschreibt diese Regel auch alle anderen Regeln, die mit dem Inhalt übereinstimmten.
     
 ## <a name="tuning-rules-to-make-them-easier-or-harder-to-match"></a>Optimierungsregeln, damit diese leichter oder schwieriger übereinstimmen können
 
@@ -250,7 +249,7 @@ Um diese Probleme zu beheben, können Sie Ihre Regeln optimieren, indem Sie die 
   
 ### <a name="instance-count"></a>Anzahl der Instanzen
 
-Instanzenanzahl: gibt an, wie viele Vorkommen eines bestimmten Typs vertraulicher Informationen vorhanden sein müssen, damit der Inhalt mit der Regel übereinstimmt. Beispielsweise stimmt der Inhalt mit der unten gezeigten Regel überein, wenn zwischen 1 und 9 eindeutige U.S.-oder UK-Passport-Nummern identifiziert werden.
+Instanzenanzahl: gibt an, wie viele Vorkommen eines bestimmten Typs vertraulicher Informationen vorhanden sein müssen, damit der Inhalt mit der Regel übereinstimmt. Beispielsweise stimmt der Inhalt mit der unten gezeigten Regel überein, wenn zwischen 1 und 9 Unique U.S. oder U.K. Passport-Nummern werden identifiziert.
   
 Beachten Sie, dass die Anzahl der Instanzen nur **eindeutige** Übereinstimmungen für vertrauliche Informationstypen und Schlüsselwörter enthält. Wenn beispielsweise eine e-Mail 10 vorkommen mit derselben Kreditkartennummer enthält, zählen diese 10 vorkommen als eine einzelne Instanz einer Kreditkartennummer. 
   
@@ -380,33 +379,33 @@ Wenn Sie schnell zu einem Abschnitt wechseln möchten, klicken Sie auf ein Eleme
 
 Der erste Schritt beim Erstellen einer DLP-Richtlinie ist die Auswahl der zu schützenden Informationen. Wenn Sie mit einer DLP-Vorlage beginnen, können Sie die Arbeit des Erstellens einer neuen Regel von Grund auf neu speichern und herausfinden, welche Arten von Informationen standardmäßig enthalten sein sollen. Sie können diese Anforderungen dann hinzufügen oder ändern, um die Regel entsprechend den speziellen Anforderungen Ihrer Organisation zu optimieren.
   
-Eine vorkonfigurierte DLP-Richtlinienvorlage kann Ihnen dabei helfen, bestimmte Arten vertraulicher Informationen wie HIPAA-Daten, PCI-DSS-Daten, Gramm-Leach-Bliley Act-Daten oder sogar gebietsschemaspezifische personenbezogene Informationen zu erkennen. Damit Sie häufig verwendete Typen vertraulicher Informationen leichter finden und schützen können, enthalten die in Office 365 enthaltenen Richtlinienvorlagen bereits die am häufigsten verwendeten Typen vertraulicher Informationen, die für die ersten Schritte erforderlich sind.
+Eine vorkonfigurierte DLP-Richtlinienvorlage kann Ihnen dabei helfen, bestimmte Arten vertraulicher Informationen wie HIPAA-Daten, PCI-DSS-Daten, Gramm-Leach-Bliley Act-Daten oder sogar gebietsschemaspezifische personenbezogene Informationen zu erkennen. Um Ihnen das Auffinden und Schützen gängiger Typen von vertraulichen Informationen zu erleichtern, enthalten die Vorlagen in Office 365 bereits die am häufigsten verwendeten vertraulichen Informationstypen, die Sie zum Einstieg benötigen.
   
-![Liste der Vorlagen für Richtlinien zur Verhinderung von Datenverlust, wobei die Vorlage für die USA hervorgehoben ist Patriot Act](media/791b2403-430b-4987-8643-cc20abbd8148.png)
+![Liste der Vorlagen für Richtlinien zur Verhinderung von Datenverlust mit Fokus auf Vorlage für US-Patriot Act](media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
 Ihre Organisation kann auch eigene spezifische Anforderungen erfüllen, in diesem Fall können Sie eine DLP-Richtlinie von Grund auf neu erstellen, indem Sie die Option **benutzerdefinierte Richtlinie** auswählen. Eine benutzerdefinierte Richtlinie ist leer und enthält keine vordefinierten Regeln. 
   
 ## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>Allmähliches Bereitstellen von DLP-Richtlinien im Testmodus
 
-Wenn Sie DLP-Richtlinien erstellen, sollten Sie diese schrittweise überprüfen, um ihre Auswirkungen zu bewerten und ihre Wirksamkeit zu testen, bevor Sie sie vollständig erzwingen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende Dokumente blockiert, auf die die Benutzer Zugriff haben, um Ihre Arbeit zu erledigen.
+Wenn Sie DLP-Richtlinien erstellen, sollten Sie sie erst einmal nach und nach bereitstellen, um die Auswirkungen beurteilen und ihre Effektivität testen zu können, bevor Sie sie vollständig durchsetzen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende Dokumente blockiert, auf die die Benutzer Zugriff haben, um Ihre Arbeit zu erledigen.
   
 Wenn Sie DLP-Richtlinien mit einer hohen potenziellen Auswirkung erstellen, empfehlen wir die folgenden Schritte:
   
-1. **Starten Sie im Testmodus ohne Richtlinien Tipps** , und verwenden Sie dann die DLP-Berichte und alle vorfallberichte, um die Auswirkungen zu bewerten. Sie können DLP-Berichte verwenden, um die Anzahl, den Ort, den Typ und den Schweregrad der Richtlinien Übereinstimmungen anzuzeigen. Basierend auf den Ergebnissen können Sie die Regeln nach Bedarf optimieren. Im Testmodus wirken sich DLP-Richtlinien nicht auf die Produktivität von Personen aus, die in Ihrer Organisation arbeiten. 
+1. **Starten Sie im Testmodus ohne Richtlinien Tipps** , und verwenden Sie dann die DLP-Berichte und alle vorfallberichte, um die Auswirkungen zu bewerten. In den DLP-Berichten werden die Anzahl von Richtlinienübereinstimmungen, der Ort des Vorkommens, der Typ und der Schweregrad aufgeführt. Auf Grundlage der Ergebnisse können Sie die Regeln nach Bedarf genauer anpassen. Im Testmodus haben DLP-Richtlinien keinen Einfluss auf die Produktivität der Mitarbeiter in Ihrer Organisation. 
     
 2. **Fahren Sie im Testmodus mit Benachrichtigungen und Richtlinientipps fort**, sodass Sie die Benutzer über die Einhaltungsrichtlinien in Kenntnis setzen und auf die Anwendung der Regeln vorbereiten können. In dieser Phase können Sie die Benutzer auch bitte, Sie über falsche Positivmeldungen zu benachrichtigen, damit Sie die Regeln noch besser abstimmen können. 
     
-3. **Starten Sie die vollständige Erzwingung der Richtlinien** , damit die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle vorfallberichte oder Benachrichtigungen, um sicherzustellen, dass die Ergebnisse Ihren Anforderungen entsprechen. 
+3. **Starten Sie die vollständige Erzwingung der Richtlinien** , damit die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
     
-![Optionen für die Verwendung des Testmodus und das Einschalten der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+![Optionen für die Verwendung des Testmodus und Aktivieren der Richtlinie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
-Sie können eine DLP-Richtlinie jederzeit deaktivieren, was sich auf alle Regeln in der Richtlinie auswirkt. Jede Regel kann jedoch auch einzeln deaktiviert werden, indem Sie Ihren Status im Regel-Editor umschalten.
+Sie können eine DLP-Richtlinie jederzeit deaktivieren, was alle Regeln in der Richtlinie betrifft. Jede Regel kann jedoch auch einzeln deaktiviert werden, indem Sie Ihren Status im Regel-Editor umschalten.
   
-![Optionen für das Deaktivieren einer Regel in einer Richtlinie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+![Optionen zum Deaktivieren einer Regel in einer Richtlinie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
   
 ## <a name="dlp-reports"></a>DLP-Berichte
 
-Nachdem Sie Ihre DLP-Richtlinien erstellt und aktiviert haben, sollten Sie sicherstellen, dass Sie wie gewünscht funktionieren und Ihnen helfen, die Kompatibilität zu behalten. Mit DLP-Berichten können Sie schnell die Anzahl der DLP-Richtlinien und-Regel Übereinstimmungen im Laufe der Zeit sowie die Anzahl falsch positiver und Außerkraftsetzungen anzeigen. Für jeden Bericht können Sie diese Übereinstimmungen nach Ort, Zeitrahmen Filtern und sogar auf eine bestimmte Richtlinie, Regel oder Aktion einschränken.
+Nachdem Sie Ihre DLP-Richtlinien erstellt und aktiviert haben, sollten Sie sicherstellen, dass Sie wie gewünscht funktionieren und Ihnen helfen, die Kompatibilität zu behalten. Mit DLP-Berichten können Sie schnell die Anzahl der Übereinstimmungen mit DLP-Richtlinien und Regeln in einem Zeitraum sowie die Anzahl von falsch positiven Ergebnissen und Außerkraftsetzungen anzeigen. Bei jedem Bericht können Sie diese Übereinstimmungen nach Speicherort und Zeitraum filtern und sogar auf eine bestimmte Richtlinie, Regel oder Aktion einschränken.
   
 Mit den DLP-Berichten können Sie geschäftliche Einblicke erhalten und von folgenden Vorteilen profitieren:
   
@@ -440,7 +439,7 @@ Nachdem die Richtlinie mit den richtigen Speicherorten synchronisiert wurde, wer
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Richtlinienauswertung in OneDrive for Business- und SharePoint Online-Websites
 
-In allen SharePoint Online-Websites und OneDrive für Business-Websites werden Dokumente ständig geändert – Sie werden ständig erstellt, bearbeitet, freigegeben und so weiter. Dies führt dazu, dass Dokumente jederzeit in Konflikt stehen oder mit einer DLP-Richtlinie kompatibel werden können. Eine Person kann beispielsweise ein Dokument hochladen, das keine vertraulichen Informationen für Ihre Teamwebsite enthält, aber später kann eine andere Person dasselbe Dokument bearbeiten und vertrauliche Informationen hinzufügen.
+In allen SharePoint Online-Websites und OneDrive für Business-Websites werden Dokumente ständig geändert – Sie werden ständig erstellt, bearbeitet, freigegeben und so weiter. Dies bedeutet, dass Dokumente zu jedem Zeitpunkt gegen eine DLP-Richtlinie verstoßen können oder im Gegensatz dazu die DLP-Richtlinie erfüllen können. So kann es zum Beispiel sein, dass eine Person ein Dokument auf die Teamwebsite hochlädt, das keine vertraulichen Informationen enthält, zu einem späteren Zeitpunkt eine andere Person dasselbe Dokument jedoch bearbeitet und vertrauliche Informationen einfügt.
   
 Aus diesem Grund überprüfen DLP-Richtlinien Dokumente häufig im Hintergrund auf Richtlinienübereinstimmungen. Sie können sich dies als asynchrone Richtlinienauswertung vorstellen.
   
@@ -450,7 +449,7 @@ So funktioniert es. Wenn Benutzer Dokumente auf ihren Websites hinzufügen oder 
   
 Dokumente können jedoch nicht nur mit einer DLP-Richtlinie in Konflikt stehen, sondern es können auch Änderungen vorgenommen werden, die dazu führen, dass sie nun einer DLP-Richtlinie entsprechen. Wenn eine Person zum Beispiel einem Dokument Kreditkartennummern hinzufügt, kann dies dazu führen, dass die DLP-Richtlinie den Zugriff auf das Dokument automatisch sperrt. Wenn die Person jedoch später die vertraulichen Informationen entfernt, wird die Aktion (in diesem Fall die Sperre) automatisch entfernt, wenn das Dokument das nächste Mal anhand der Richtlinie ausgewertet wird.
   
-DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen dazu, welche Dateitypen standardmäßig gecrawlt werden, finden Sie unter [standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+DLP bewertet alle Inhalte, die indiziert werden können. Weitere Informationen dazu, welche Dateitypen standardmäßig gecrawlt werden, finden Sie unter [standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Richtlinienauswertung in Exchange Online, Outlook 2013 und höher und Outlook im Web
 
@@ -460,9 +459,9 @@ Wenn eine Nachricht in Outlook verfasst wird, kann der Benutzerrichtlinien Tipps
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Richtlinienbewertung in den Office 2016-Desktopprogrammen
 
-Excel 2016, PowerPoint 2016 und Word 2016 bieten die gleichen Möglichkeiten, vertrauliche Informationen zu identifizieren und DLP-Richtlinien als SharePoint Online und OneDrive for Business anzuwenden. Diese Office 2016-Programme synchronisieren ihre DLP-Richtlinien direkt aus dem zentralen Richtlinienspeicher und bewerten dann kontinuierlich den Inhalt anhand der DLP-Richtlinien, wenn Personen mit Dokumenten arbeiten, die von einer in einer DLP-Richtlinie enthaltenen Website geöffnet werden.
+Excel 2016 2016 PowerPoint und Word 2016 enthalten dieselben Funktionen wie SharePoint Online und OneDrive for Business, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. Diese Office 2016-Programme synchronisieren ihre DLP-Richtlinien direkt aus dem zentralen Richtlinienspeicher und bewerten dann kontinuierlich den Inhalt anhand der DLP-Richtlinien, wenn Personen mit Dokumenten arbeiten, die von einer in einer DLP-Richtlinie enthaltenen Website geöffnet werden.
   
-Die DLP-Richtlinienevaluierung in Office 2016 hat keine Auswirkungen auf die Leistung der Programme oder die Produktivität von Personen, die an Inhalten arbeiten. Wenn Sie an einem umfangreichen Dokument arbeiten oder der Computer des Benutzers ausgelastet ist, kann es einige Sekunden dauern, bis ein richtlinientipp angezeigt wird.
+DLP-Richtlinienauswertung in Office 2016 soll nicht die Leistung der Programme oder die Produktivität der Mitarbeiter, die an Inhalten arbeiten, beeinträchtigen. Wenn Sie an einem umfangreichen Dokument arbeiten oder der Computer des Benutzers ausgelastet ist, kann es einige Sekunden dauern, bis ein richtlinientipp angezeigt wird.
   
 ## <a name="permissions"></a>Berechtigungen
 
@@ -488,7 +487,7 @@ Um die meisten Cmdlets für das Security &amp; Compliance Center zu verwenden, m
     
 DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich Exchange Online. Aus diesem Grund stehen die Cmdlets für die DLP-Berichte in Exchange Online PowerShell zur Verfügung – nicht im &amp; Security Compliance Center PowerShell. Um die Cmdlets für die DLP-Berichte zu verwenden, müssen Sie daher Folgendes tun:
   
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
