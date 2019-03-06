@@ -5,21 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Mit Vertraulichkeitsbezeichnungen in Office 365 können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220945"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412953"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -97,9 +96,11 @@ Einem Dokument oder einer E-Mail kann nur eine einzelne Vertraulichkeitsbezeichn
 
 ### <a name="sublabels-grouping-labels"></a>Unterbezeichnungen (Gruppierungsbezeichnungen)
 
-Mit Unterbezeichnungen können Sie Bezeichnungen unter einer Überschrift zusammenfassen, die einem Benutzer in einer Office-App angezeigt wird. Beispielsweise kann Ihre Organisation unter „Vertraulich“ mehrere verschiedene Bezeichnungen für bestimmte Typen dieser Klassifizierung verwenden. In diesem Beispiel ist die Bezeichnung „Vertraulich“ einfach eine textuelle Bezeichnung ohne Schutzeinstellungen. Da sie Unterbezeichnungen beinhaltet, kann sie nicht auf Inhalte angewendet werden. Stattdessen müssen Benutzer zum Anzeigen der Unterbezeichnungen „Vertraulich“ auswählen. Anschließend können sie eine Unterbezeichnung auswählen, um sie auf Inhalte anzuwenden.
+Mit Unterbezeichnungen können Sie ein oder mehrere Bezeichnungen unter einer übergeordneten Bezeichnung gruppieren, die ein Benutzer in einer Office-App sieht. Unter "Vertraulich" kann Ihr Unternehmen beispielsweise mehrere verschiedene Bezeichnungen für bestimmte Arten dieser Klassifizierung verwenden. In diesem Beispiel ist die übergeordnete Bezeichnung "Vertraulich" einfach eine Textbezeichnung ohne Schutzeinstellungen, und da sie Unterbezeichnungen enthält, kann sie nicht auf Inhalt angewendet werden. Stattdessen müssen Benutzer "Vertraulich" auswählen, um die Unterbezeichnungen anzuzeigen, und können dann eine Unterbezeichnung auswählen, die auf Inhalt angewendet wird.
 
-Unterbezeichnungen sind einfach eine Möglichkeit, Benutzern Bezeichnungen in logischen Gruppen zu präsentieren. Unterbezeichnungen erben keine Einstellungen von der Bezeichnung, der sie untergeordnet sind.
+Unterbezeichnungen sind einfach eine Möglichkeit, Benutzern Bezeichnungen in logischen Gruppen zu bereitzustellen. Unterbezeichnungen erben keine Einstellungen von ihrer übergeordneten Bezeichnung. Unterbezeichnungen können auf Inhalt angewendet werden, übergeordnete Bezeichnungen nicht.
+
+(Zudem sollten Sie eine übergeordnete Bezeichnung nicht als Standardbezeichnung auswählen (siehe nächster Abschnitt) oder so konfigurieren, dass sie automatisch angewendet oder empfohlen wird, da die übergeordnete Bezeichnung nicht auf Inhalt in Office-Apps angewendet wird, die den Azure Information Protection-Client mit einheitlichen Bezeichnungen verwenden.)
 
 ![Gruppierte Unterbezeichnungen im Menüband](media/Sensitivity_label_grouped_labels.png)
 
@@ -117,7 +118,7 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
 - **Auswählen, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Bezeichnungen können für E-Mail-aktivierte Sicherheitsgruppen, Verteilergruppen, Office 365-Gruppen oder dynamische Verteilergruppen veröffentlicht werden.
 
-- **Anwenden einer Standardbezeichnung** auf alle neuen Dokumente und E-Mails, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt werden. Durch diese Standardbezeichnung kann eine Basisstufe an Schutzeinstellungen festgelegt werden, die auf alle Ihre Inhalte angewendet werden soll.
+- **Wenden Sie eine Standardbezeichnung** auf alle neuen Dokumente und E-Mails an, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden. Dieses Standardbezeichnung kann ein Basisniveau von Schutzeinstellungen festlegen, die auf alle Ihre Inhalte angewendet werden sollen. (Beachten Sie, dass ein)
 
 - **Anfordern einer Begründung für die Änderung einer Bezeichnung.** Wenn Inhalt als vertraulich markiert ist und ein Benutzer diese Bezeichnung entfernen oder durch eine niedrigere Klassifizierung, z. B. „Öffentlich“, ersetzen möchte, können Sie anfordern, dass der Benutzer eine Begründung für die Aktion angibt. Diese Begründungen sind dann für den Administrator zur Überprüfung verfügbar. Ein Bericht, in dem Administratoren die Begründungen der Benutzer anzeigen können, befindet sich in Entwicklung.
 
