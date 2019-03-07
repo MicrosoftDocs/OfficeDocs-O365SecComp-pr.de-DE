@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1f5f463bcda5c33df890547f7113a032ae935dbe
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295528"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455167"
 ---
 # <a name="view-custodian-audit-activity"></a>Anzeigen der Depotbank-Überwachungsaktivität
 
@@ -38,17 +38,19 @@ Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "�
    
    2. Navigieren Sie zur Registerkarte **Depotverwalter** , und wählen Sie eine Depotbank aus.
    
-   3. Nachdem Sie eine Depotbank ausgewählt haben, klicken Sie im Detailbereich auf **Depot Aktivität anzeigen** .
+   3. Nachdem Sie eine Depotbank ausgewählt haben, klicken Sie auf  ![Anzeigen der Depotbank-Aktivität](../media/ViewCustodianActivity.PNG)  im Detailbereich.
    
    4. Konfigurieren Sie die folgenden Suchkriterien:
       
-      a. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
+      a. **Aktivitäten** -klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen.
+
+      ![Liste der Aktivitäten](../media/CustodianActivityAudit.PNG)
       
       b. **Start-und Enddatum** – wählen Sie einen Datums-und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Datum und Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Zeitraum, den Sie angeben können, beträgt ein Jahr.
       
-      c. **Verwalter** – klicken Sie in dieses Feld, und wählen Sie einen bestimmten Verwalter aus, für den Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern, die Sie in diesem Feld ausgewählt haben, ausgeführt werden, werden in der Ergebnisliste angezeigt.
-    
-    1. Klicken Sie auf **Suchen** , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach ein paar Augenblicken werden Sie unter Ergebnisse auf der Such Seite der Depotbank-Aktivitäten angezeigt. 
+      c. **Verwalter** – klicken Sie in dieses Feld, und wählen Sie dann einen bestimmten Verwalter aus, für den Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern, die Sie in diesem Feld ausgewählt haben, ausgeführt werden, werden in der Ergebnisliste angezeigt.
+      
+   5. Klicken Sie auf   ![Schaltfläche "suchen"](../media/SearchButton.PNG)  , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach ein paar Augenblicken werden Sie unter Ergebnisse auf der Such Seite der Depotbank-Aktivitäten angezeigt. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Schritt 2: Anzeigen der Suchergebnisse des Überwachungsprotokolls
 
@@ -57,7 +59,7 @@ Die Ergebnisse einer Überwachungsprotokoll Suche werden unter Ergebnisse auf de
 Die Ergebnisse enthalten die folgenden Informationen zu jedem von der Suche zurückgegebenen Ereignis.
 - **Datum**: das Datum und die Uhrzeit (im UTC-Format), als das Ereignis aufgetreten ist.
 
-- **IP-Adresse**: die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird in einem IPv4-oder IPv6-Adressformat angezeigt.
+- **IP-Adresse**: die IP-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. Die IP-Adresse wird im Adressformat IPv4 oder IPv6 angezeigt.
 
 - **Benutzer**: der Benutzer (oder das Dienstkonto), der die Aktion ausgeführt hat, die das Ereignis ausgelöst hat.
 

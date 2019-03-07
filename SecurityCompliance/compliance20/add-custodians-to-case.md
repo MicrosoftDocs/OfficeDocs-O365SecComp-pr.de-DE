@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 730e1fe40756bcb38f3b071137828072f4e2dcb5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296718"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455297"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Hinzufügen von Bewahrern zu einem Advanced eDiscovery (Preview)-Fall
 
@@ -69,12 +69,10 @@ Je nach Fall möchten Sie möglicherweise auch Postfächer hinzufügen, die ein 
 ![Zuordnen zusätzlicher Datenquellen](../media/AddCustodianStep3.PNG)
 
 Zuordnen von Postfächern, Websites oder Teams zu einem bestimmten Depot:
+1. Wählen Sie **Hinzufügen** aus, um einem bestimmten Verwalter inhaltsspeicherorte wie Postfächer, Websites und Teams zuzuweisen. 
 
-1. Wählen Sie **Aktualisieren** aus, um einem bestimmten Verwalter inhaltsspeicherorte wie Postfächer, Websites und Teams zuzuweisen. 
-
-2. Geben Sie im Flyout Folgendes an:
-   
-    -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Zum Angeben von Postfächern, die dem ausgewählten depotverwalter zugewiesen werden sollen, verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch das zugeordnete Postfach für eine Office 365-Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+2. Geben Sie im Flyout Folgendes an: ![Zuordnen von Datenquellen](../media/AddCustodianStep4.PNG)
+  -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Zum Angeben von Postfächern, die dem ausgewählten depotverwalter zugewiesen werden sollen, verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch das zugeordnete Postfach für eine Office 365-Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
         > [!NOTE]
         > Wenn Sie auf Benutzer, Gruppen oder Teams zum Angeben von Postfächern klicken, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Wenn Sie Personen zu dieser Liste hinzufügen möchten, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein.
@@ -89,6 +87,8 @@ Nachdem Sie die Zuordnung Ihrer Quellen abgeschlossen haben, können Sie die Ges
 
 ## <a name="optional-step-4-place-custodians-on-hold"></a>Optional Schritt 4: Platzieren Sie Verwalter in der Warteschleife
 
+![Platz](../media/AddCustodianStep5.PNG)
+
 Nachdem Sie die Verwalter und Datenquellen, die Sie zu Ihrem Fall hinzufügen möchten, abgeschlossen haben, können Sie optional einige oder alle Ihre Verwalter aufbewahren. Wenn Sie eine Aufbewahrungsstelle aufbewahren, werden die diesem Benutzer zugeordneten Inhalte aufbewahrt, bis Sie die Depotbank aus dem Fall freigeben oder den Haltestatus löschen. In einigen Fällen möchten Sie möglicherweise Verwalter zu einem Fall hinzufügen, ohne Sie zu halten. 
 
 So platzieren Sie die ausgewählten Verwalter und Datenquellen in der Warteschleife:
@@ -99,4 +99,4 @@ So platzieren Sie die ausgewählten Verwalter und Datenquellen in der Warteschle
 
 3. Klicken Sie auf **Bearbeiten** , um alle ausgewählten Depotbank-Datenquellen anzuzeigen.
 
-    ![Platz](../media/AddCustodianStep4.PNG)
+   

@@ -14,22 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c7fa8c7229ebb6b5304b80e15fba604c139076cd
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296138"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455197"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen einer gesetzlichen Aufbewahrungspflicht
 
 Mithilfe der Advanced eDiscovery (Preview)-Depot Kommunikation können Organisationen ihren Workflow für die Kommunikation mit Depotbank verwalten. Mithilfe des Kommunikationstools können juristische Teams die Benachrichtigungen über zugelassene Warteschleife systematisch senden, sammeln und nachverfolgen. Der Prozess der flexiblen Erstellung ermöglicht es Teams auch, den Workflow für die Aufbewahrungs Benachrichtigung und den Inhalt der an die Verwalter gesendeten Benachrichtigungen anzupassen. 
+
+![Seite "Kommunikation"](../media/CommunicationPage.PNG)
 
 In diesem Artikel werden die Schritte im Workflow zum Anhalten von Benachrichtigungen erläutert.
 
 ## <a name="step-1-specify-communication-details"></a>Schritt 1: Angeben von Kommunikationsdetails
 
 Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufbewahrungs Hinweise oder andere Depot Kommunikationen anzugeben. 
+
+![Name Communication page](../media/NameCommunication.PNG)
 
 1. Wechseln Sie im Security & Compliance Center zu **eDiscovery _GT_ Advanced eDiscovery (Preview)** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
    
@@ -41,19 +45,21 @@ Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufb
     
     - AusStell ender **Offizier**: in der Dropdownliste wird eine Liste mit den Fall Mitgliedern angezeigt. Jeder Hinweis, der an Verwalter gesendet wird, wird im Auftrag des angegebenen ausstellenden beauftragten gesendet.
 
-4. Klicken Sie auf **Weiter**.
+4. Klicken Sie zum Senden von Kopien der Migrationsberichte an andere Benutzer unten auf der Seite auf **Durchsuchen**.
 
 ## <a name="step-2-define-the-portal-content"></a>Schritt 2: Definieren des Portalinhalts
 
 Als nächstes können Sie den Inhalt des Notiz Speichers erstellen und hinzufügen. Geben Sie auf der Seite **Portalinhalt definieren** im Assistenten zum **Erstellen** von Kommunikationen den Inhalt des Notiz Speichers an. Dieser Inhalt wird automatisch den Benachrichtigungen zu Ausstellung, erneuter Ausstellung, Erinnerung und Eskalation angefügt. Darüber hinaus werden diese Inhalte im Compliance-Portal des Depotbank angezeigt. 
 
+![Portal Inhaltsseite](../media/PortalContent.PNG)
+
 So erstellen Sie den Portalinhalt:
 
-1. Geben Sie (oder Ausschneiden und Einfügen aus einem anderen Dokument) Ihre Notiz im Textfeld für den Portalinhalt ein. 
+1. Geben Sie (oder Ausschneiden und Einfügen aus einem anderen Dokument) ihren Haltestatus im TextBox-Element für den Portalinhalt ein. 
 
 2. Fügen Sie Merge-Variablen in Ihre Nachricht ein, um den Hinweis anzupassen und das Depotschutz-Portal zu teilen.
 
-3. Klicken Sie auf **Weiter**.
+3. Klicken Sie zum Senden von Kopien der Migrationsberichte an andere Benutzer unten auf der Seite auf **Durchsuchen**.
 
   >[!Tip]
   >Weitere Informationen dazu, wie Sie den Inhalt und das Format des Portalinhalts anpassen können, finden Sie unter [use the Communications Editor](using-communications-editor.md).
@@ -119,7 +125,9 @@ So erstellen Sie eine Versions Benachrichtigung
 
 Optional können Sie den Workflow für die Weiterleitung mit nicht reagierenden Verwalter vereinfachen, indem Sie automatisierte Mahn-und Eskalations Benachrichtigungen erstellen und planen.
 
-### <a name="reminders"></a>Erinnerungen
+![Seite zur Erinnerung/Eskalation](../media/ReminderEscalations.PNG)
+
+### <a name="reminders"></a>Reminders
 
 Nachdem Sie eine Aufbewahrungs Benachrichtigung gesendet haben, können Sie nicht reagierende Verwalter durch Definieren eines Erinnerungs Workflows nachverfolgen. 
 
@@ -161,7 +169,9 @@ So planen Sie Eskalationen:
    
 ## <a name="step-5-assign-custodians"></a>Schritt 5: Zuweisen von Verwaltern 
 
-Nachdem Sie den Inhalt für Benachrichtigungen abgeschlossen haben, wählen Sie die Verwalter aus, an die die Benachrichtigungen gesendet werden sollen. 
+Nachdem Sie den Inhalt für Benachrichtigungen abgeschlossen haben, wählen Sie die Verwalter aus, an die Sie die Benachrichtigungen senden möchten. 
+
+![Seite "Depotverwalter auswählen"](../media/SelectCustodians.PNG)
 
 So fügen Sie Verwalter hinzu:
 

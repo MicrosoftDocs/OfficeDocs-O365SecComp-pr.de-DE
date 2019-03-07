@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: In Office 365 können Sie mit Bezeichnungen einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Bezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: f6686fdbd5e453938d2db4e0eb9e53018ecbd79a
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410690"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455107"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
@@ -58,7 +59,7 @@ Um die ereignisgesteuerte Aufbewahrung erfolgreich zu verwenden, müssen Sie die
     
   - Eine Asset-ID (für SharePoint- und OneDrive-Dokumente)
     
-  - Stichwörter (für Exchange-Elemente). In diesem Beispiel verwendet die Organisation einen Produktcode in Nachrichten, die Produktdatensätze beinhalten, sodass das Stichwort für Exchange-Elemente mit der Asset-ID für SharePoint- und OneDrive-Dokumente übereinstimmt.
+  - Schlüsselwörter (für Exchange-Elemente). In diesem Beispiel verwendet das Unternehmen einen Produktcode in Nachrichten, die Produktdatensätze enthalten, sodass das Schlüsselwort für Exchange-Elemente der Objekt-ID für SharePoint- und OneDrive-Dokumente entspricht.
     
   - Das Datum, an dem das Ereignis aufgetreten ist. Dieses Datum wird als Beginn des Aufbewahrungszeitraums verwendet. Dieses Datum kann nur das aktuelle Datum oder ein zukünftiges Datum sein, jedoch kein zurückliegendes Datum.
     
@@ -84,7 +85,7 @@ Beachten Sie, dass die ereignisgesteuerte Aufbewahrung in der Regel für Inhalte
   
 Beachten Sie außerdem, dass für die ereignisgesteuerte Aufbewahrung Aufbewahrungseinstellungen erforderlich sind, die:
   
-- den Inhalt beibehalten,
+- Inhalte aufbewahren.
     
 - den Inhalt automatisch löschen oder eine Dispositionsprüfung am Ende des Aufbewahrungszeitraums auslösen.
     
@@ -108,11 +109,11 @@ Genau wie jede andere Bezeichnung müssen Sie auch eine ereignisbasierte Bezeich
   
 ### <a name="step-4-enter-an-asset-id"></a>Schritt 4: Eine Asset-ID eingeben
 
-Nachdem eine ereignisgesteuerte Bezeichnung auf Inhalt angewendet wurde, können Sie für jedes Element eine Asset-ID eingeben. Ihre Organisation verwendet möglicherweise Folgendes:
+Nachdem eine ereignisgesteuerte Bezeichnung auf Inhalt angewendet wurde, können Sie für jedes Element eine Objekt-ID eingeben. Ihre Organisation kann beispielsweise folgende Elemente verwenden:
   
-- Produktcodes, die Sie zum Aufbewahren von Inhalten für ein bestimmtes Produkt verwenden können.
+- Produktcodes, um Inhalt nur für ein bestimmtes Produkt aufzubewahren.
     
-- Projektcodes, die Sie zum Aufbewahren von Inhalten für ein bestimmtes Projekt verwenden können.
+- Projektcodes, um Inhalt nur für ein bestimmtes Projekt aufzubewahren.
     
 - Mitarbeiter-IDs, die Sie zum Aufbewahren von Inhalten für eine bestimmte Person verwenden können.
     

@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
-ms. topic: article
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für DLP im Office 365 Security & Compliance Center erstellen und importieren.
-ms.openlocfilehash: bd85b28bab8201291070a72df799bbaf28acaa28
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 03121a76a7c7cf21d0ae21138c43bca594a7839b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410850"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455127"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell
 
@@ -151,13 +151,13 @@ Um zum Beispiel die Wahrscheinlichkeit zu erhöhen, Inhalt zu erkennen, der eine
   
 Beachten Sie einige wichtige Aspekte dieser Struktur:
   
-- Muster, die mehr Nachweise erfordern, haben einen höheren Zuverlässigkeitsgrad. Dies ist nützlich, wenn Sie später diesen vertraulichen Informationstyp in einer DLP-Richtlinie verwenden. Sie können dann restriktivere Aktionen (z. B. Blockieren von Inhalten) nur auf Übereinstimmungen mit einem hohen Zuverlässigkeitsgrad anwenden. Im Gegenzug dazu können Sie weniger restriktive Aktionen (z. B. Senden von Benachrichtigung) auf Übereinstimmungen mit einem geringerem Zuverlässigkeitsgrad anwenden.
+- Muster, die mehr Nachweise erfordern, weisen ein höheres Konfidenzniveau auf. Dies ist nützlich, denn wenn Sie später diesen vertraulichen Informationstyp in einer DLP-Richtlinie verwenden, können Sie restriktivere Aktionen (z. B. Inhalt blockieren) nur für Übereinstimmungen mit höherem Konfidenzniveau und weniger restriktive Aktionen (z. B. Benachrichtigung senden) für Übereinstimmungen mit geringerem Konfidenzniveau verwenden.
     
-- Die unterstützenden „IdMatch“- und „Match“-Elemente beziehen sich auf reguläre Ausdrücke und Stichwörter, die eigentlich untergeordnete Elemente des Regelelements und nicht des Musters sind. Das Muster verweist auf diese unterstützenden Elemente, sie sind jedoch in der Regel enthalten. Dies bedeutet, dass mehrere Entitäten und Muster auf eine einzelne Definition eines unterstützenden Elements, z. B. ein regulärer Ausdruck oder eine Stichwortliste, Bezug nehmen können.
+- Die unterstützenden Elemente "IdMatch" und "Match" verweisen auf reguläre Ausdrücke und Schlüsselwörter, die tatsächlich untergeordnete Elemente des Elements "Rule" und nicht des Elements "Pattern" sind. Auf diese unterstützenden Elemente wird von "Pattern" Bezug genommen, sie sind aber in "Rule" enthalten. Das bedeutet, dass auf eine einzelne Definition eines unterstützenden Elements, z. B. einen regulären Ausdruck oder eine Schlüsselwortliste, von mehreren Entitäten und Mustern Bezug genommen werden kann.
     
-## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Welche Entität müssen Sie identifizieren? [Element „Entity“, ID-Attribut]
+## <a name="what-entity-do-you-need-to-identify-entity-element-id-attribute"></a>Welche Entität muss erkannt werden? [Element "Entity", Attribut "id"]
 
-Eine Entität ist ein Typ vertraulicher Informationen, z. B. eine Kreditkartennummer, die ein klar definiertes Muster aufweist. Jede Entität hat eine eindeutige GUID als ID.
+Eine Entität ist ein vertraulicher Informationstyp (z. B. eine Kreditkartennummer), der ein klar definiertes Muster aufweist. Jede Entität hat eine eindeutige GUID als ID.
   
 ### <a name="name-the-entity-and-generate-its-guid"></a>Benennen der Entität und Generieren der GUID
 
@@ -181,11 +181,11 @@ Wenn eine Übereinstimmung gefunden wurde, gibt ein Muster eine Anzahl und einen
   
 Beim Erstellen des regulären Ausdrucks müssen Sie berücksichtigen, dass es potenzielle Probleme geben kann. Wenn Sie z. B. einen regulären Ausdruck schreiben und hochladen, der zu viel Inhalt erkennt, kann dies die Leistung beeinträchtigen. Weitere Informationen zu diesen potenziellen Problemen finden Sie im Abschnitt [Mögliche Überprüfungsprobleme, die Sie beachten müssen](#potential-validation-issues-to-be-aware-of).
   
-## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>Sollen weitere Nachweise erforderlich sein? [Element „Match“, minCount-Attribut]
+## <a name="do-you-want-to-require-additional-evidence-match-element-mincount-attribute"></a>Sollen weitere Nachweise erforderlich sein? [Element "Match", Attribut "minCount"]
 
-Zusätzlich zu „IdMatch“ kann ein Muster das Element „Match“ verwenden, um zusätzliche unterstützende Nachweise zu erfordern, z. B. ein Stichwort, einen regulären Ausdruck, ein Datum oder eine Adresse.
+Zusätzlich zu "IdMatch" kann in einem Muster das Element "Match" verwendet werden, um zusätzliche unterstützende Nachweise anzufordern, z. B. ein Schlüsselwort, einen regulären Ausdruck, ein Datum oder eine Adresse.
   
-Ein Pattern-Element kann mehrere Match-Elemente umfassen. Sie können direkt in das Pattern-Element einbezogen oder mit dem Any-Element kombiniert werden. Match-Element werden durch einen impliziten AND-Operator verknüpft. Es müssen alle Match-Elemente erfüllt sein, damit das Muster eine Übereinstimmung ist. Sie können das Any-Element verwenden, um AND- und OR-Operatoren einzuführen (mehr Informationen dazu weiter unten in diesem Abschnitt).
+Ein Muster kann mehrere "Match"-Elemente umfassen, die direkt im Element "Pattern" enthalten sein oder mithilfe des Elements "Any" kombiniert werden können. "Match"-Elemente werden mit einem impliziten AND-Operator verknüpft. Es müssen alle "Match"-Elemente erfüllt sein, damit eine Übereinstimmung mit dem Muster erkannt wird. Sie können das Element "Any" zum Einführen von AND- oder OR-Operatoren verwenden (weitere Informationen dazu sind in einem späteren Abschnitt enthalten).
   
 Sie können das optionale minCount-Attribut verwenden, um anzugeben, wie viele Instanzen einer Übereinstimmung für jedes der Match-Elemente gefunden werden müssen. Sie können z. B. angeben, dass eine Übereinstimmung mit einem Muster nur dann vorliegt, wenn mindestens zwei Stichwörter aus einer Stichwortliste gefunden werden.
   
@@ -225,7 +225,7 @@ In einem Pattern-Element werden alle IdMatch- und Match-Elemente durch einen imp
   
 Das Any-Element hat optionale minMatches- und maxMatches-Attribute, die Sie verwenden können, um zu definieren, wie viele der untergeordneten Match-Elemente erfüllt sein müssen, bevor das Muster als übereinstimmend angesehen wird. Beachten Sie, dass diese Attribute die Anzahl der Match-Elemente definiert, die erfüllt sein müssen, nicht die Anzahl der Instanzen gefundener Nachweise für die Übereinstimmungen. Zum Definieren einer Mindestanzahl von Instanzen für eine bestimmte Übereinstimmung, z. B. zwei Stichwörter aus einer Liste, verwenden Sie das minCount-Attribut für ein Match-Element (siehe oben).
   
-### <a name="match-at-least-one-child-match-element"></a>Übereinstimmung mit mindestens einem untergeordneten Match-Element
+### <a name="match-at-least-one-child-match-element"></a>Übereinstimmung mit mindestens einem untergeordneten "Match"-Element
 
 Wenn Sie möchten, dass nur eine Mindestanzahl von Match-Elementen erfüllt sein muss, können Sie das minMatches-Attribut verwenden. Diese Match-Elemente werden eigentlich durch einen impliziten OR-Operator verknüpft. Dieses Any-Element wird erfüllt, wenn ein US-formatiertes Datum oder ein Stichwort aus einer Liste gefunden wird.
   
@@ -261,7 +261,7 @@ Im nachstehenden Beispiel wird gezeigt, in welcher Weise das Näherungsfenster d
   
 Beachten Sie, dass bei E-Mails der Text und jede Anlage als separate Elemente behandelt werden. Dies bedeutet, dass sich das Näherungsfenster nicht über das Ende des jeweiligen Elements erstreckt. Für jedes Element (Anlage oder Text) muss sowohl idMatch als auch der bestätigende Nachweise vorhanden sein.
   
-## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>Was sind die richtigen Zuverlässigkeitsgrade für verschiedene Muster? [confidenceLevel-Attribut, recommendedConfidence-Attribut]
+## <a name="what-are-the-right-confidence-levels-for-different-patterns-confidencelevel-attribute-recommendedconfidence-attribute"></a>Welches sind die richtigen Konfidenzniveaus für verschiedene Muster? [Attribut "confidenceLevel", Attribut "recommendedConfidence"]
 
 Je mehr Nachweise für ein Muster erforderlich sind, desto höher ist der Zuverlässigkeitsgrad, dass eine tatsächliche Entität (z. B. Mitarbeiter-ID) beim Abgleich des Musters identifiziert wurde. So ist die Zuverlässigkeit beispielsweise größer bei einem Muster, für das eine neunstellige ID, das Einstellungsdatum und ein Stichwort in nächster Nähe erforderlich sind, als bei einem Muster, das nur eine neue neunstellige ID erfordert.
   
@@ -531,7 +531,7 @@ Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [S
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>Referenz: XML-Schemadefinition für Regelpaket
 
-Sie können dieses Markup kopieren, als eine XSD-Datei speichern und es verwenden, um die XML-Datei Ihres Regelpakets zu überprüfen.
+Sie können dieses Markup kopieren, als eine XSD-Datei speichern und diese zum Überprüfen der XML-Datei für das Regelpaket verwenden.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>

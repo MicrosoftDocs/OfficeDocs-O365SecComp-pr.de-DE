@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Administratoren können sich über die Nachrichtenschleifen Einblicke im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
-ms.openlocfilehash: 67d9fd7e7ffe54e78acf75cbafcbc21d7f733e1a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: babf102e7645de26d4af0a947319856468ccf755
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214831"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455237"
 ---
 # <a name="mail-loop-insight"></a>Einblick für E-Mail-Schleife
 

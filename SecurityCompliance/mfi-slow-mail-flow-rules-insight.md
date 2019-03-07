@@ -1,36 +1,36 @@
 ---
-title: Langsame Mail Flow Regeln Erkenntnisse
+title: Einblick für langsame Nachrichtenflussregeln
 ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Administratoren können über die langsame Mail Flow Regeln Einblicke im Dashboard Mail Flow in die Sicherheit in Office 365 Compliance Center & informieren.
-ms.openlocfilehash: 930ea7c57d896c75c6af1333f2bf202b56270199
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+description: Administratoren erfahren mehr über die langsamen Nachrichtenfluss Regeln im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center.
+ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685457"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454877"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>Langsame Mail Flow Regeln Erkenntnisse
+# <a name="slow-mail-flow-rules-insight"></a>Einblick für langsame Nachrichtenflussregeln
 
-Ineffiziente e-Mail-Flussregeln (auch als Transportregeln bezeichnet) können zu Mail Flow Verzögerungen für Ihre Organisation führen. Diese Erkenntnisse meldet e-Mail-Flussregeln, die auf Ihrer Organisation e-Mail-Fluss auswirken. Beispiele für diese Art von Regeln sind:
+Ineffiziente Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) können zu Verzögerungen bei der Nachrichtenübermittlung für Ihre Organisation führen. Dieser Einblick meldet Nachrichtenfluss Regeln, die sich auf den Nachrichtenfluss Ihrer Organisation auswirken. Beispiele für diese Regeln sind:
 
-- Bedingungen, die **Mitglied ist** für große Gruppen verwenden.
+- Bedingungen, die für umfangreiche Gruppen **Mitglied sind** .
 
-- Bedingungen, die komplexe reguläre Ausdrücke (Regex) Mustervergleich verwenden.
+- Bedingungen, die einen komplexen regulären Ausdruck (Regex)-Mustervergleich verwenden.
 
-- Bedingungen, mit denen Inhalt in Anlagen überprüfen.
+- Bedingungen, die die Inhaltsüberprüfung in Anlagen verwenden.
 
-Die Einblicke helfen Ihnen zu identifizieren und e-Mail-Flussregeln zur Verringerung von e-Mail-Fluss Verzögerungen zu optimieren.
+Die Einblicke helfen Ihnen bei der Identifizierung und Optimierung von Nachrichtenfluss Regeln, um die Verzögerungen bei der Nachrichtenübermittlung zu verringern.
 
-![Ein langsame e-Mail-Fluss Regeln Erkenntnisse im Dashboard Mail Flow in der Office 365-Sicherheit & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Eine langsame Nachrichtenfluss Regel Einblicke in das Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-Wenn Sie auf **Details anzeigen**klicken, wird ein Dropdown-Bereich, in dem Sie die Regel überprüfen können. Klicken Sie im Bereich flyoutmenü können klicken **Beispiel Meldungen** , um herauszufinden, welche Art von Nachrichten von der Regel betroffen sind.
+Wenn Sie auf **Details anzeigen**klicken, wird ein Flyout-Bereich angezeigt, in dem Sie die Regel überprüfen können. Klicken Sie im Flyoutbereich auch auf **Beispiel Nachrichten anzeigen** , um zu sehen, welche Art von Nachrichten von der Regel betroffen sind.
 
-![Dropdown-Bereich nach dem Klicken auf Details anzeigen bei einer langsamen Nachrichtenübermittlung Regeln Einblicke in die e-Mail-Fluss-dashboard](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Flyout-Bereich nach dem Klicken auf Details anzeigen in einem langsamen Nachrichtenfluss Regeln Einblicke in das Nachrichtenfluss-Dashboard](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)

@@ -9,18 +9,19 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält gebrauchsfertige Richtlinienvorlagen, die gängige Compliance-Anforderungen erfüllen, beispielsweise zum Schutz vertraulicher Informationen, die dem US-Krankenversicherungsgesetz unterliegen ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) oder U.S. Patriot Act. In diesem Thema werden alle Richtlinienvorlagen, die Arten von vertraulichen Informationen, nach denen Sie suchen, und die Standardbedingungen und-Aktionen aufgelistet.
-ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 00e2c4ff42df039804b1b8a3962be7e3c3798022
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411010"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455207"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Inhalt der DLP-Richtlinienvorlagen
 

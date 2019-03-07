@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297098"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455417"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Erfassen von Daten für einen Fall in Advanced eDiscovery (Preview)
 
@@ -27,7 +27,7 @@ Nachdem Sie Verwalter und Datenquellen identifiziert haben, die für Ihren Fall 
 
 Nachdem Sie eine Suche ausgeführt haben, können Sie Statistiken zu den abgerufenen Elementen wie den Standorten mit den meisten Elementen anzeigen, die mit der Suchabfrage übereinstimmen. Sie können auch eine Vorschau einer Teilmenge der Ergebnisse anzeigen. Wenn Sie die Gruppe von Dokumenten identifiziert haben, die Sie genauer untersuchen möchten, können Sie die Suchergebnisse einem Arbeitssatz hinzufügen und verarbeiten.
 
-## <a name="create-a-search"></a>Erstellen einer Suche
+## <a name="create-a-search"></a>Create a search
 
 Wenn Sie auf der Registerkarte **Suchvorgänge** auf **neue Suche** klicken, wird ein Assistent gestartet, der Sie beim Erstellen einer Suche unterstützt. Ausführliche Informationen zum Erstellen einer Suche finden Sie unter [Erstellen einer Suche zum Sammeln von Daten](create-search-to-collect-data.md).
 
@@ -41,7 +41,6 @@ Klicken Sie nach Abschluss der Such Schätzung auf die Suche, um die Seite Flyou
 - Zusammenfassung
 - Top-Standorte
 - Abfragen
-- Einschränkungen
 
 Weitere Informationen zu Suchstatistiken finden Sie unter [Suchstatistiken](search-statistics.md).
 

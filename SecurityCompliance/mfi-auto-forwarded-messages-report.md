@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratoren erfahren mehr über den Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center.
-ms.openlocfilehash: 5097a2842eeae56e1eb51b9fae4c0caf5263ad80
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219305"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454927"
 ---
 # <a name="auto-forwarded-messages-report"></a>Bericht über automatisch weitergeleitete Nachrichten
 
@@ -30,6 +30,6 @@ Wenn Sie auf die Anzahl der Nachrichten im Widget klicken, wird ein Flyout-Berei
 
 ![Das Detail Flyout für den Bericht "automatisch weitergeleitete Nachrichten" im Office 365 Security & Compliance Center](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
-## <a name="insights"></a>Einblicke
+## <a name="insights"></a>Insights
 
 Zwei Einblicke werden basierend auf den Berichtsdaten generiert: **neue Weiterleitungs Benutzer** und neue Weiterleitungs **Domänen**. Jeder Insight bietet eine Zusammenfassung der Anzahl der neuen Weiterleitungen oder Domänen mit einem Link zum **neuen Weiterleitungs Bericht** , der mehr Details für die beiden Typen von Daten bereitstellt. Der **neue Weiterleitungs Bericht** zeigt auch eine Zeitachsenansicht der neuen Aktivität an, und in der Tabelle Details wird angegeben, wer mit der Weiterleitung begonnen hat und zu welchen Domänen.

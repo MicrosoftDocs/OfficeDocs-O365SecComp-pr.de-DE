@@ -6,18 +6,19 @@ ms.date: 1/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: In Office 365 können Sie Bezeichnungen verwenden, um einen Aufbewahrungszeitplan für Ihre Organisation zu implementieren. Als Datensatzverwalter oder Compliance Officer müssen Sie vielleicht Hunderte von Bezeichnungen erstellen und veröffentlichen. Sie können hierfür die Benutzeroberfläche im Security and Compliance Center verwenden, das einzelne Erstellen von Bezeichnungen ist dagegen sehr zeitaufwändig und ineffizient. Mithilfe des folgenden Skripts und der CSV-Dateien können Sie Bezeichnungen und Bezeichnungsrichtlinien massenerstellen und veröffentlichen. Zunächst erstellen Sie eine Liste der Tabellen sowie eine Liste der Bezeichnungsrichtlinine in Excel, anschließend führen Sie eine Massenerstellung der Bezeichnungen und Bezeichnungsrichtlinien in diesen Listen mithilfe von PowerShell aus. Auf diese Weise wird das gleichzeitige Erstellen und Veröffentlichen aller Bezeichnungen vereinfacht, die für Ihren Aufbewahrungszeitraum erforderlich sind.
-ms.openlocfilehash: 273dbcd705792769b13a997ae6ca0bd5faaee31c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 982ce21a0cbd1c465f6e04db52e10022a4980c5b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410770"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454897"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Massenerstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell
 
@@ -43,7 +44,7 @@ Hinweise:
     
 - Wenn die CSV-Datei eine Bezeichnung mit demselben Namen wie eine bereits vorhandene Bezeichnung enthält, überspringt das Skript die Erstellung der Bezeichnung. Es werden keine doppelten Bezeichnungen erstellt.
     
-- Wenn Sie die Spaltenkopfzeilen ändern oder umbenennen, schlägt das Skript fehl. Das Skript erfordert eine CSV-Datei im hier bereitgestellten Format.
+- Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.
     
 ### <a name="sample-csv-file"></a>CSV-Beispieldatei
 
@@ -69,7 +70,7 @@ Hinweise:
     
 - Das Skript veröffentlicht nur Bezeichnungen, die manuell auf Inhalte angewendet werden. Dieses Skript unterstützt keine Bezeichnungen, die automatisch auf Inhalte angewendet werden.
     
-- Wenn Sie die Spaltenkopfzeilen ändern oder umbenennen, schlägt das Skript fehl. Das Skript erfordert eine CSV-Datei im hier bereitgestellten Format.
+- Wenn Sie die Spaltenüberschrift ändern oder umbenennen, schlägt das Skript fehl. Das Skript benötigt eine CSV-Datei im hier dargestellten Format.
     
 ### <a name="sample-csv-file"></a>CSV-Beispieldatei
 

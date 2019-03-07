@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
+ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214115"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30465472"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -59,7 +59,7 @@ Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, für wen Ihre Ko
 > [!IMPORTANT]
 > Alle Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen entweder über eine Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie keinen Enterprise E5-Plan haben und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
-### <a name="reviewers"></a>Bearbeiter
+### <a name="reviewers"></a>Reviewers
 
 Wenn Sie eine Aufsichtsrichtlinie erstellen, bestimmen Sie auch, wer die Überprüfungen der Nachrichten der überwachten Benutzer ausführen soll. In der Richtlinie verwenden Sie Benutzer-e-Mail-Adressen, um Personen oder Personengruppen zu identifizieren, überwachte Kommunikationen zu überprüfen.
 
@@ -89,7 +89,7 @@ Standardmäßig wird die **Richtung** Bedingung angezeigt und kann nicht entfern
 
 Sie haben die Möglichkeit, vertrauliche Informationstypen als Teil ihrer Aufsichtsrichtlinie einzubinden. Vertrauliche Informationstypen sind entweder vordefinierte oder benutzerdefinierte Datentypen, die dazu beitragen können, Kreditkartennummern, Bank Kontonummern, Passport-Nummern und vieles mehr zu identifizieren und zu schützen. Als Teil von Office 365 [Data Loss Prevention (DLP)](data-loss-prevention-policies.md)kann die Konfiguration vertraulicher Informationen Muster, Zeichen Nähe, Zuverlässigkeits Stufen und sogar benutzerdefinierte Datentypen zur Identifizierung und Kennzeichnung von vertraulichen Inhalten nutzen. Die Standardtypen für vertrauliche Informationen sind:
 
-- Finanz
+- Finanzmathematisch
 - Medizin und Gesundheit
 - Datenschutz
 - Benutzerdefinierter Informationstyp
@@ -111,20 +111,20 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
 |Die Nachricht wird von einer dieser Domänen empfangen.  <br><br> Nachricht wird von keiner dieser Domänen empfangen | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine empfangene Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
 |Die Nachricht wird an eine dieser Domänen gesendet.  <br><br> Nachricht wird an keine dieser Domänen gesendet | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine gesendete Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
 |Die Nachricht wird mit einer dieser Bezeichnungen klassifiziert.  <br><br> Die Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert | Anwenden der Richtlinie, wenn bestimmte Aufbewahrungs Bezeichnungen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und konfigurierte Bezeichnungen können als Teil dieser Bedingung ausgewählt werden. Jede ausgewählte Bezeichnung wird separat angewendet (nur eines dieser Bezeichnungen muss angewendet werden, damit die Richtlinie auf die Nachricht angewendet werden kann). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Übersicht über Aufbewahrungs Beschriftungen](https://docs.microsoft.com/office365/securitycompliance/labels).|
-|Nachricht enthält eines dieser Wörter  <br><br> Nachricht enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene Zeile wird separat angewendet (nur eine dieser Zeilen muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt, der [Wörter und Phrasen mit e-Mails oder Anlagen übereinstimmt](supervision-policies.md#Matchwords).|
-|Anlage enthält eines dieser Wörter  <br><br> Anlage enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachrichtenanlage eingeschlossen oder ausgeschlossen werden (beispielsweise ein Word-Dokument), geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinie gelten, die auf die Anlage angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt, der [Wörter und Phrasen mit e-Mails oder Anlagen übereinstimmt](supervision-policies.md#Matchwords).|
-|Attachment ist einer dieser Dateitypen  <br><br> Attachment ist keiner dieser Dateitypen | Um die Kommunikation zu überwachen, in der bestimmte Typen von Anlagen eingeschlossen oder ausgeschlossen werden, geben Sie die Dateierweiterungen ein (wie. exe oder. pdf). Wenn Sie mehrere Dateierweiterungen einschließen oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Für die anzuwendende Richtlinie muss nur eine Anlagenerweiterung übereinstimmen.|
-|Nachricht ist größer als  <br><br> Die Nachrichtengröße ist nicht größer als | Um Nachrichten anhand einer bestimmten Größe zu überarbeiten, verwenden Sie diese Bedingungen, um die maximale oder minimale Größe einer Nachricht anzugeben, bevor Sie überprüft werden kann. wenn sie beispielsweise die **nachrichtengröße größer als** \> **1,0 mb**angeben, werden alle nachrichten, die 1,01 mb groß sind, überprüft. Sie können für diese Bedingung Byte, Kilobyte, Megabytes oder Gigabytes auswählen.|
-|Die Anlage ist größer als  <br><br> Die Anlage ist nicht größer als | Um Nachrichten anhand der Größe Ihrer Anlagen zu überarbeiten, geben Sie die maximale oder minimale Größe an, die eine Anlage aufweisen kann, bevor die Nachricht und ihre Anlagen überprüft werden können. wenn sie beispielsweise attachment angeben, **ist größer als** \> **2,0 mb**, werden alle nachrichten mit anlagen 2,01 mb und mehr überprüft. Sie können für diese Bedingung Byte, Kilobyte, Megabytes oder Gigabytes auswählen.|
+|Nachricht enthält eines dieser Wörter  <br><br> Nachricht enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene Zeile wird separat angewendet (nur eine dieser Zeilen muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
+|Anlage enthält eines dieser Wörter  <br><br> Anlage enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachrichtenanlage eingeschlossen oder ausgeschlossen werden (beispielsweise ein Word-Dokument), geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene Zeile von Wörtern wird einzeln angewendet (nur eine Zeile muss zutreffen, damit die Richtlinie auf die Anlage angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
+|Attachment ist einer dieser Dateitypen  <br><br> Attachment ist keiner dieser Dateitypen | Um die Kommunikation zu überwachen, in der bestimmte Typen von Anlagen eingeschlossen oder ausgeschlossen werden, geben Sie die Dateierweiterungen ein (wie. exe oder. pdf). Wenn Sie mehrere Dateierweiterungen einschließen oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Damit die Richtlinie angewendet wird, muss nur eine Anlagenerweiterung übereinstimmen.|
+|Nachricht ist größer als  <br><br> Die Nachrichtengröße ist nicht größer als | Um Nachrichten anhand einer bestimmten Größe zu überarbeiten, verwenden Sie diese Bedingungen, um die maximale oder minimale Größe einer Nachricht anzugeben, bevor Sie überprüft werden kann. wenn sie beispielsweise die **nachrichtengröße größer als** \> **1,0 mb**angeben, werden alle nachrichten, die 1,01 mb groß sind, überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
+|Die Anlage ist größer als  <br><br> Die Anlage ist nicht größer als | Um Nachrichten anhand der Größe Ihrer Anlagen zu überarbeiten, geben Sie die maximale oder minimale Größe an, die eine Anlage aufweisen kann, bevor die Nachricht und ihre Anlagen überprüft werden können. wenn sie beispielsweise attachment angeben, **ist größer als** \> **2,0 mb**, werden alle nachrichten mit anlagen 2,01 mb und mehr überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"> </a>
 
-Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinienbedingung gelten, die auf die e-Mail oder Anlage angewendet werden soll). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**mit den Stichwörtern "Banker" und "Insider Trading" in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder "Insider Trading" enthalten. Nur eines dieser Wörter oder Ausdrücke muss auftreten, damit diese Richtlinienbedingung angewendet wird. Wörter in der Nachricht oder Anlage müssen genau mit Ihren Angaben übereinstimmen.
+Jede eingegebene Zeile von Wörtern wird einzeln angewendet (nur eine Zeile muss zutreffen, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**mit den Stichwörtern "Banker" und "Insider Trading" in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder "Insider Trading" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit Ihren Angaben übereinstimmen.
   
 ##### <a name="entering-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 
-Wenn Sie mehrere Bedingungen eingeben, verwendet Office 365 alle Bedingungen, um zu bestimmen, wann die Richtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen Sie alle erfüllt sein, damit die Richtlinie angewendet wird, es sei denn, Sie geben eine Ausnahme ein. Angenommen, Sie müssen eine Richtlinie erstellen, die angewendet werden sollte, wenn eine Nachricht das Wort "Trade" enthält und größer als 2MB ist. Wenn die Nachricht jedoch auch die Wörter "Approved by Contoso Financial" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Fall würden die drei Bedingungen wie folgt aussehen:
+Wenn Sie mehrere Bedingungen eingeben, verwendet Office 365 alle Bedingungen, um zu bestimmen, wann die Richtlinie auf Kommunikationselemente angewendet werden soll. Wenn Sie mehrere Bedingungen einrichten, müssen alle erfüllt sein, damit die Richtlinie angewendet wird, außer wenn Sie eine Ausnahme eingeben. Angenommen, Sie müssen eine Richtlinie erstellen, die angewendet werden sollte, wenn eine Nachricht das Wort "Trade" enthält und größer als 2MB ist. Wenn die Nachricht jedoch auch die Wörter "Approved by Contoso Financial" enthält, sollte die Richtlinie nicht angewendet werden. In diesem Fall würden die drei Bedingungen wie folgt aussehen:
   
 - Die **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Trade".
 
@@ -196,7 +196,7 @@ Mithilfe von Outlook können Prüfer:
 - Anzeigen des Verlaufs des Taggings für ein einzelnes Element, einschließlich der Person, die das Element aufgelöst hat, des Datums und der Uhrzeit der Aktion, des Lösungs Tags und der enthaltenen Kommentare.
 - Neu klassifizieren Sie zuvor überprüfte Elemente als kompatibel, nicht konform oder fragwürdig. Sie können auch einen Kommentar mit einzelnen Elementen aufzeichnen, um die umklassifizierungs Aktion zu veranschaulichen.
 
-## <a name="reporting"></a>Berichte
+## <a name="reporting"></a>Reporting
 
 Verwenden Sie die Überwachungsberichte, um die Überprüfungsaktivität auf Richtlinie und Prüfer Ebene anzuzeigen. Für jede Richtlinie können Sie auch Live Statistiken zum aktuellen Status der Überprüfungen anzeigen. Sie können die Überwachungsberichte für folgende Zwecke verwenden:
   
@@ -229,13 +229,13 @@ Nachfolgend finden Sie eine Aufstellung der Werte, die in der **** Spalte Transp
 |**Tagtyp**|**Bedeutung**|
 |:-----|:-----|
 | Nicht überprüft | Die Anzahl von e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Office 365-überwachungsdashboard oder im Ordner "Aufsicht" des Rezensenten in Outlook/Outlook im Web.
-| Kompatibel | Die Anzahl der überprüften und als kompatibel markierten e-Mails. Diese Nachrichten müssen noch aufgelöst werden. |
-| Fragwürdige | Die Anzahl der überprüften und markierten e-Mails. Dies dient als Kennzeichnung; andere Prüfer können untersuchen, ob eine e-Mail-Konformitätsprüfung erforderlich ist. Diese Nachrichten müssen noch aufgelöst werden. |
+| Compliant | Die Anzahl der überprüften und als kompatibel markierten e-Mails. Diese Nachrichten müssen noch aufgelöst werden. |
+| Fragwürdig | Die Anzahl der überprüften und markierten e-Mails. Dies dient als Kennzeichnung; andere Prüfer können untersuchen, ob eine e-Mail-Konformitätsprüfung erforderlich ist. Diese Nachrichten müssen noch aufgelöst werden. |
 | Nicht konform (aktiv) | Die Anzahl der nicht kompatiblen e-Mails, die von den Prüfern derzeit untersucht werden. |
 | Nicht kompatibel (aufgelöst) | Die Anzahl der nicht kompatiblen e-Mails, die von den Bearbeitern untersucht und aufgelöst wurden. |
 | Treffer Richtlinie | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die mit einem oder mehreren Bedingungen übereinstimmten, die in einer Aufsichtsrichtlinie definiert sind. |
 | Im Zuständigkeitsbereich | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die von einer Aufsichtsrichtlinie überprüft wurden. |
-| Aufgelöst | Die Gesamtanzahl von Nachrichten von Exchange, Teams und drittanbieterdaten Quellen, die als **aufgelöst** klassifiziert wurden|
+| Gelöst | Die Gesamtanzahl von Nachrichten von Exchange, Teams und drittanbieterdaten Quellen, die als **aufgelöst** klassifiziert wurden|
 
 > [!NOTE]
 > Aufsichtsrichtlinien müssen zuerst eingerichtet werden, bevor Sie in diesem Bericht angezeigt werden. Wenn Richtlinien gelöscht werden, werden außerdem Verlaufsdaten angezeigt. Sie werden jedoch als "nicht vorhandene Richtlinie" angezeigt, und die **Export** Funktion ist nicht verfügbar.
@@ -260,8 +260,8 @@ Das folgende Beispiel gibt beispielsweise die Aktivitäten für alle Aufsichts �
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
 ```
 
-Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das PowerShell [-Cmdlet Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
+Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das PowerShell [-Cmdlet Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
 
-## <a name="ready-to-get-started"></a>Sind Sie bereit für die ersten Schritte?
+## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
 Informationen zum Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation finden Sie unter [Konfigurieren von Aufsichtsrichtlinien](configure-supervision-policies.md).

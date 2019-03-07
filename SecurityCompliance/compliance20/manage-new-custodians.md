@@ -14,16 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95a1bcbbc279ad4e476fc479e701b0f8a921c83b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295678"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454937"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Verwalten von Verwaltern in einem erweiterten eDiscovery-Fall (Preview)
 
 Die Registerkarte Depotbanken enthält eine sortierbare Liste aller Verwalter in dem Fall. Nachdem Sie einem Fall Verwalter hinzugefügt haben, werden die Details zu den einzelnen Depotbanken automatisch aus Azure Active Directory gesammelt.
+
+![Verwalten von verWaltern](../media/CustodianDetails.PNG)
 
 ## <a name="viewing-custodian-details"></a>Anzeigen von Depot Details
 
@@ -56,7 +58,7 @@ Die Flyout-Seite mit Depot Details wird angezeigt, nachdem Sie einen Verwalter z
   - **IndexIng Last updated Time**: gibt den DATESTAMP an, in dem der Deep Indexing-Auftrag zuletzt ausgelöst wurde.
   - **Datenquellen**: zeigt die Anzahl von Postfächern, Websites und Teams an, die für die Depotbank ausgewählt wurden.
 
-## <a name="updating-a-custodian"></a>Aktualisieren einer Depotbank
+## <a name="editing-a-custodian"></a>Bearbeiten einer Depotbank
 
 Wenn Ihr Fall fortgeschritten ist, können Sie feststellen, dass möglicherweise zusätzliche Datenquellen relevant für eine bestimmte Depotbank & Ihrem Fall. In anderen Szenarien möchten Sie möglicherweise bestimmte Datenquellen entfernen, die überprüft und als nicht relevant eingestuft wurden.
 
@@ -67,6 +69,8 @@ So aktualisieren Sie einen Depotbank und die ausgewählten Datenquellen:
 2. Klicken Sie in dem Fall auf die Registerkarte **depotverwalter** .
   
 3. Wählen Sie die Verwalter aus der Liste aus, und klicken Sie auf **Quellen bearbeiten**.
+
+    ![Bearbeiten von Datenquellen](../media/EditCustodianDataSource.PNG)
   
 4. Aktualisieren Sie die Auswahl für Exchange-und OneDrive-Speicherorte, indem **Sie auf Datenquellen auswählen**klicken.
   
@@ -89,7 +93,7 @@ So lösen Sie einen erneuten Indizierungsprozess für teilweise indizierte Eleme
 
 2. Klicken Sie in diesem Fall auf die **Registerkarte depotverwalter**. 
 
-3. Wählen Sie die Depotbanken aus, die erneut indiziert werden müssen, und klicken Sie dann auf der Seite Flyout auf **Index aktualisieren** .
+3. Wählen Sie die Depotbanken aus, die erneut indiziert werden müssen, und klicken Sie dann auf ![Index aktualisieren](../media/UpdateIndex.PNG) auf der Flyout-Seite.
 
 4. Überprüfen Sie den Status des Depot Indexes, indem Sie auf der Registerkarte **Depotbanken** auf den Link in der Spalte **Status des Indizierungs Auftrags** klicken.  
 
@@ -109,7 +113,7 @@ So geben Sie eine Depotbank frei
 
 1.  Wechseln Sie zur Registerkarte **depotverwalter** .
 
-2.  Wählen Sie den Verwalter aus der Liste aus, und klicken Sie auf der Seite Flyout auf **Freigabe Verwalter** .
+2.  Wählen Sie den Verwalter aus der Liste aus, und klicken Sie auf ![Versionsverwalter](../media/ReleaseCustodian.PNG) auf der Flyout-Seite.
 
     Der Status der Depotbank auf der Register **** Karte depotbanks ist auf **Released** festgelegt, und der **Haltestatus** auf der Flyout-Seite wird in **inaktiv**geändert. 
 

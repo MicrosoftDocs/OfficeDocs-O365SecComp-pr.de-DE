@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f08fe644bfd4eaae27e1ef8718c54166417e53ae
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295828"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454947"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Verwenden des Relevance-Moduls zum Analysieren von Daten in Advanced eDiscovery (Preview)
 
-In Advanced eDiscovery (Preview) enthält das Relevance-Modul die Relevanz von Schulungen und Überprüfungen von Dateien im Zusammenhang mit einem Fall. Der Relevanz-Workflow wird angezeigt und wie folgt beschrieben:
+In Advanced eDiscovery (Preview) enthält das Relevance-Modul die Relevanz von Schulungen und Überprüfungen von Dateien im Zusammenhang mit einem Fall. Um den Relevanz-Workflow zu verwenden, wechseln Sie zu Arbeitsmappe verwalten in einem Arbeitssatz, und klicken Sie auf Relevanz anzeigen. Es gibt einige Schritte, die Sie ausführen müssen, bevor Sie den Workflow starten können:
+- Prozess: jeder dem Workingset hinzugefügte Auslastungs Satz wird hier als Container angezeigt. Sie müssen diese Dokumente verarbeiten, bevor Sie Sie zum Relevanz-Modul hinzufügen können. Dies ist auch der Ort, an dem Sie Sie als Seeds oder als Pre-Tagged für ein bestimmtes Problem markieren können.
+- Zur Relevanz hinzufügen: unter \> Relevanz laden können Sie Dokumente, die zu Relevanz verarbeitet wurden, hinzufügen, um Sie für Schulungen zur Verfügung zu stellen.
+
+Der Relevanz-Workflow wird angezeigt und wie folgt beschrieben:
   
-![Relevanzworkflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Relevanz-Workflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Zyklen der Bewertung und Nachverfolgung**:
     

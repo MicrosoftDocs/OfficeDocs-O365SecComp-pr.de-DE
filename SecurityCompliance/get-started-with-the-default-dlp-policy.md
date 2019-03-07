@@ -12,13 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
+ms.collection:
+- M365-security-compliance
 description: Bevor Sie Ihre erste DLP-Richtlinie (Data Loss Prevention, Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (siehe unten) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie benachrichtigt werden, wenn e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine andere Person außerhalb Ihrer Organisation freigegeben wurden.
-ms.openlocfilehash: 3182abcc825c8e27da83ebfb64ed8b2cba6ebcb3
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d965288a1ea44b1d0cb3d41e24611897a043f535
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341316"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455367"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Erste Schritte mit der standardmäßigen DLP-Richtlinie
 
