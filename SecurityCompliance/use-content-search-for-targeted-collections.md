@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center, um zielgerichtete Auflistungen auszuführen. Eine zielgerichtete Sammlung stellt sicher, dass Elemente, die auf eine Groß-/Kleinschreibung oder privilegierte Elemente reagieren, sich in einem bestimmten Postfach oder Websiteordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für die bestimmten Postfach-oder Websiteordner abzurufen, die Sie durchsuchen möchten.
-ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 1a2a104405cdbbbbbeba0bb62e302ae59638be07
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354687"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475715"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden der Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
 Die Inhaltssuche im Office 365 Security &amp; Compliance Center bietet keine direkte Möglichkeit zur Suche bestimmter Ordner in Exchange-Postfächern oder SharePoint-und OneDrive für Business-Websites. Es ist jedoch möglich, bestimmte Ordner (als *Zielsammlung*bezeichnet) durchsuchen, indem Sie die Ordner-ID oder den Pfad in der tatsächlichen Suchabfrage Syntax angeben. Die Verwendung der Inhaltssuche zum Durchführen einer zielgerichteten Sammlung ist nützlich, wenn Sie sicher sind, dass Elemente, die auf eine Groß-/Kleinschreibung reagieren oder privilegierte Elemente in einem bestimmten Postfach oder Websiteordner befinden. Sie können das Skript in diesem Artikel verwenden, um die Ordner-ID für Postfachordner oder den Pfad für Ordner auf einer SharePoint-und OneDrive for Business-Website abzurufen. Dann können Sie die Ordner-ID oder den Pfad in einer Suchabfrage verwenden, um Elemente im Ordner zurückzugeben.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security &amp; Compliance Center sein, um das Skript in Schritt 1 ausführen zu können. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
     
@@ -39,13 +39,13 @@ Die Inhaltssuche im Office 365 Security &amp; Compliance Center bietet keine dir
     
 - Das Skript enthält eine minimale Fehlerbehandlung. Der Hauptzweck des Skripts besteht darin, schnell eine Liste von Postfachordner-IDs oder Website Pfaden anzuzeigen, die in der Suchabfrage Syntax einer Inhaltssuche verwendet werden können, um eine gezielte Sammlung auszuführen.
     
-- Das Beispielskript in diesem Thema wird unter keinem Microsoft Standard-Support Programm oder-Dienst unterstützt. Das Beispielskript wird ohne Gewähr bereitgestellt. Microsoft lehnt weiterhin alle impliziten Garantien ab, einschließlich der impliziten Garantien der Marktgängigkeit oder der Eignung für einen bestimmten Zweck. Das gesamte Risiko, das sich aus der Verwendung oder Leistung des Beispielskripts und der Dokumentation ergibt, liegt bei Ihnen. In keinem Fall sind Microsoft, seine Autoren oder andere Personen, die an der Erstellung, Produktion oder Bereitstellung der Skripte beteiligt sind, haftbar für Schäden jeglicher Art (einschließlich, ohne Einschränkung, Schäden für Verlust von Geschäftsgewinnen, Betriebsunterbrechung, Verlust von geschäftliche Informationen oder sonstige Vermögensschäden, die sich aus der Verwendung oder nicht Verwendung der Beispielskripts oder Dokumentation ergeben, auch wenn Microsoft über die Möglichkeit solcher Schäden informiert wurde.
+- Das Beispielskript in diesem Thema wird unter keinem Microsoft Standard-Support Programm oder-Dienst unterstützt. Das Beispielskript wird ohne Gewähr bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das sich aus der Verwendung oder Leistung des Beispielskripts und der Dokumentation ergibt, liegt bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Schritt 1: Ausführen des Skripts zum Abrufen einer Liste von Ordnern für ein Postfach oder eine Website
 
 Das Skript, das Sie in diesem ersten Schritt ausführen, gibt eine Liste von Postfachordnern oder SharePoint-oder OneDrive für Business-Ordner sowie die entsprechende Ordner-ID oder den entsprechenden Pfad für jeden Ordner zurück. Wenn Sie dieses Skript ausführen, werden Sie aufgefordert, die folgenden Informationen einzugeben.
   
-- **E-Mail-Adresse oder Website-URL** Geben Sie eine e-Mail-Adresse der Depotbank ein, um eine Liste der Exchange-Postfachordner und Ordner-IDs zurückzugeben. Oder geben Sie die URL für eine SharePoint-Website oder eine OneDrive for Business-Website ein, um eine Liste der Pfade für die angegebene Website zurückzugeben. Hier einige Beispiele: 
+- **E-Mail-Adresse oder Website-URL** Geben Sie eine e-Mail-Adresse der Depotbank ein, um eine Liste der Exchange-Postfachordner und Ordner-IDs zurückzugeben. Oder geben Sie die URL für eine SharePoint-Website oder eine OneDrive for Business-Website ein, um eine Liste der Pfade für die angegebene Website zurückzugeben. Im Folgenden finden Sie einige Beispiele: 
     
   - **Exchange** -stacig@contoso.onmicrosoft.com 
     
@@ -188,6 +188,9 @@ So zeigen Sie eine Liste von Postfachordnern oder Website documentlink (Pfad) an
 ### <a name="script-output-for-mailbox-folders"></a>Skriptausgabe für Postfachordner
 
 Wenn Sie Postfachordner-IDs erhalten, stellt das Skript mithilfe der Remote-PowerShell eine Verbindung mit Exchange Online her, führt das Cmdlet **Get-MailboxFolderStatisics** aus und zeigt dann die Liste der Ordner aus dem angegebenen Postfach an. Für jeden Ordner im Postfach zeigt das Skript den Namen des Ordners in der Spalte **folderPath** und die Ordner-ID in der Spalte **FolderQuery** an. Darüber hinaus fügt das Skript das Präfix der **Ordner** -ID (die den Namen der Postfacheigenschaft ist) zur Ordner Kennung hinzu. Da es sich bei der **Folder** -Eigenschaft um eine durchsuchbare Eigenschaft `folderid:<folderid>` handelt, verwenden Sie in einer Suchabfrage in Schritt 2, um diesen Ordner zu durchsuchen. 
+
+> [!IMPORTANT]
+> Das Skript in diesem Artikel enthält die Codierungslogik, mit der die von **Get-MailboxFolderStatistics** zurückgegebenen 64-Zeichen-Ordner-ID-Werte in dasselbe 48-Zeichenformat konvertiert werden, das für die Suche indiziert ist. Wenn Sie das Cmdlet **Get-MailboxFolderStatistics** in PowerShell ausführen, um eine Ordner-ID zu erhalten (anstatt das Skript in diesem Artikel auszuführen), schlägt eine Suchabfrage fehl, die diesen Ordner-ID-Wert verwendet. Sie müssen das Skript ausführen, um die ordnungsgemäß formatierten Ordner-IDs abzurufen, die in einer Inhaltssuche verwendet werden können.
   
 Hier sehen Sie ein Beispiel der Ausgabe, die vom Skript für Postfachordner zurückgegeben wird.
   
@@ -223,7 +226,7 @@ Nachdem Sie das Skript ausgeführt haben, um eine Liste der Ordner-IDs oder docu
     
     - Klicken Sie auf **bestimmte Websites auswählen** , um die Suche durch zu durchsuchen, und fügen Sie dann die gleiche Website-URL hinzu, die Sie beim Ausführen des Skripts in Schritt 1 angegeben haben. 
     
-6. Klicken Sie auf **Weiter**.
+6. Klicken Sie zum Senden von Kopien der Migrationsberichte an andere Benutzer unten auf der Seite auf **Durchsuchen**.
     
 7. Fügen Sie im Feld Stichwort auf der Seite **Was möchten Sie uns** suchen nach den `folderid:<folderid>` oder `documentlink:<path>` -Wert ein, der von dem Skript in Schritt 1 zurückgegeben wurde. 
     
