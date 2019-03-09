@@ -1,7 +1,7 @@
 ---
 title: Dienste für Nicht-Kunden, die E-Mails an Office 365 senden
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
+ms.collection:
+- M365-security-compliance
 description: Damit Benutzer das Vertrauen in der Verwendung von E-Mails nicht verlieren, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz von Benutzern eingeführt.
-ms.openlocfilehash: fca916f57ad1b7dc6ebcd13fabbea2f0971f5a00
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 868f5491ae9433e115090567b40abcd39ef2ebf8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002703"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492794"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Dienste für Nicht-Kunden, die E-Mails an Office 365 senden
   
@@ -61,6 +63,6 @@ Hierbei handelt es sich um ein Self-Service-Portal, das Sie verwenden können, u
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online
 <a name="ReportOurJunk"> </a>
 
-Manchmal ist Office 365 zum Senden von Junk-e-Mail, gegen unsere Begriffe und Richtlinie von Drittanbietern verwendet. Wenn Sie Junk-e-Mail-von Office 365 erhalten, können Sie diese Nachrichten an [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)melden. Schließen Sie die problematischen Nachrichten, einschließlich der vollständigen Kopfzeile, im Format RFC 5322 oder ARF. Outlook auf dem Web-Benutzer können integrierten Tools auf junk-e-Bericht. Informationen finden Sie unter [junk-e-Bericht und Phishing-Mails in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+Manchmal wird Office 365 von Drittanbietern zum Senden von Junk-E-Mails entgegen den allgemeinen Geschäftsbedingungen und Nutzungsrichtlinien verwendet. Wenn Sie Junk-E-Mails von Office 365 erhalten, können Sie diese Nachrichten an [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) melden. Fügen Sie die anstößigen Nachrichten einschließlich der vollständigen Kopfzeile im RFC 5322- oder ARF-Format an. Outlook im Web-Benutzer können integrierte Tools zum Melden von Junk-E-Mails verwenden. Weitere Informationen finden Sie unter [melden von Junk-e-Mails und Phishing-Scams in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
   
 

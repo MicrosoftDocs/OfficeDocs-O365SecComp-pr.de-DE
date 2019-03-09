@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über das Konfigurieren von privileged Access Management in Office 365
-ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221085"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492824"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von privileged Access Management in Office 365
 
@@ -120,7 +120,7 @@ Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Office 365-Org
     
     **Richtlinientyp**: Aufgabe, Rolle oder Rollengruppe
 
-    **Richtlinienbereich**: Exchange oder Office 365
+    **Richtlinienbereich**: Exchange
 
     **Richtlinienname**: Wählen Sie aus den verfügbaren Richtlinien aus
 
@@ -258,7 +258,7 @@ Sie können eine Richtlinie für den privilegierten Zugriff löschen, wenn Sie i
 
 5. Wählen Sie die Richtlinie aus, die Sie löschen möchten, und wählen Sie dann **Richtlinie entfernen**aus.
 
-6. Klicken Sie auf **Beenden**.
+6. Wählen Sie **Schließen** aus.
 
 ### <a name="using-exchange-management-powershell"></a>Verwenden der Exchange-Verwaltungs-PowerShell
 

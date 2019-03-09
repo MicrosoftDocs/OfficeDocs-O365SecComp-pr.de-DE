@@ -13,12 +13,13 @@ search.appverid:
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Zielseite zur Planung von Sicherheit und Compliance
-ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218465"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512650"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planen der Sicherheits &amp; Konformität in Office 365
 
@@ -34,11 +35,11 @@ Orientieren Sie sich an den Informationsschutzfunktionen im Poster Information P
 
 Nachdem Sie Ihr Office 365-Abonnement eingerichtet haben, notieren Sie sich Ihre Start Punktzahl. Secure Score bietet Office 365-Konfigurationsvorschläge, die Sie ergreifen können, um Ihre Punktzahl zu verbessern. Das Ziel besteht darin, sich über Möglichkeiten zu informieren, die Sie zum Schutz Ihrer Umgebung ergreifen können, die sich negativ auf die Produktivität Ihrer Benutzer auswirken.
   
-- [Einführung des Office 365 Secure Score](office-365-secure-score.md)
+- [Einführung in die Office 365 Secure Score](office-365-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Schritt 3: Planen des Zugriffsschutzes für Identität und Geräte
 
-Das Schützen des Zugriffs auf Ihre Office 365-Daten und -Dienste ist entscheidend im Kampf gegen Cyberangriffe und Datenverluste.
+Der Schutz des Zugriffs auf Ihre Office 365-Daten und-Dienste ist entscheidend für die Abwehr von Cyber-Angriffen und Schutz vor Datenverlust.
   
 - [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
     

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465472"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492854"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -57,7 +57,8 @@ Sie erstellen Aufsichtsrichtlinien im Security & Compliance Center. Diese Richtl
 Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, für wen Ihre Kommunikationen überprüft werden sollen. In der Richtlinie verwenden Sie Benutzer-e-Mail-Adressen, um Personen oder Gruppen von Personen zu überwachen. Beispiele für diese Gruppen sind Office 365-Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen aus der Überwachung ausschließen, die in einer überwachten Gruppe oder in einer Liste von Gruppen enthalten sind.
 
 > [!IMPORTANT]
-> Alle Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen entweder über eine Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie keinen Enterprise E5-Plan haben und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on verfügen oder in ein Office 365 Enterprise E5-Abonnement aufgenommen werden.
+Wenn Sie keinen Enterprise E5-Plan haben und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -153,9 +154,9 @@ Die Dashboard- **Start** Seite verfügt über mehrere Abschnitte, die Ihnen helf
 - Anzeigen einer Liste der Prüfer und Überprüfen von Teams für die ausgewählte Richtlinie
 - Sehen Sie, welche Kommunikationsplattformen Inhalte unter Überwachung für die Richtlinie enthalten.
 
-#### <a name="supervise-tab"></a>ÜberWachen der Registerkarte
+#### <a name="review-tab"></a>Registerkarte "überarbeiten"
 
-Auf **** der Registerkarte überwachen können Prüfer Aktionen ausführen und von der ausgewählten Richtlinie identifizierte Elemente auflösen. Hier können Sie folgende Schritte durchgehen:
+Auf der Registerkarte **Überarbeiten** können Prüfer Aktionen ausführen und von der ausgewählten Richtlinie identifizierte Elemente auflösen. Hier können Sie folgende Schritte durchgehen:
 
 - Filtern nach ausstehenden, kompatiblen, nicht kompatiblen und fragwürdigen Elementen
 - Kennzeichnen eines einzelnen Elements als kompatibel, nicht kompatibel oder fragwürdig. Sie können auch einen Kommentar mit dem Element aufzeichnen, um die getroffene Markierungs Aktion zu veranschaulichen.

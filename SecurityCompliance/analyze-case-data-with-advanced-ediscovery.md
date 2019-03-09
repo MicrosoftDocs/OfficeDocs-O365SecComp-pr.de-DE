@@ -13,12 +13,13 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: 'Hier erhalten Sie einen Überblick über den Analyseprozess, mit dem Sie Parameter festlegen, Optionen ausführen und Ergebnisse anzeigen können, in Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0329e64bc507c0ddc3158ac6ae189730b506bb49
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217465"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512640"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analysieren von Falldaten mit Office 365 Advanced eDiscovery
 

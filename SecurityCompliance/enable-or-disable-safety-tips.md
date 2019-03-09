@@ -1,24 +1,9 @@
 ---
-title: Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/05/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
-description: Informiert Office 365-und EOP-Administratoren über die Aktivierung und Deaktivierung von Sicherheitstipps in e-Mail-Nachrichten.
-ms.openlocfilehash: f4e85b45c1483111d9edeb39d00d3f2cbafbf3ab
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215555"
+Title: "aktivieren oder Deaktivieren von Sicherheitstipps in Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/05/2018 ms. Audience: admin ms. Topic: article ms. Service: o365-Administration localization_priority: normal Search. appverid: 
+- MET150 ms. Asset-Nr.: f09668bd-fe1a-4c01-89e3-e88c370e66c7 ms. Collection:
+    - M365-Security-Compliance Description: "erklärt Office 365-und EOP-Administratoren, wie Sicherheitstipps in e-Mail-Nachrichten aktiviert und deaktiviert werden."
 ---
+
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
 
 Exchange Online Protection (EOP) fügt einen Sicherheitstipp für von ihm übermittelte e-Mail-Nachrichten hinzu oder stempelt diesen. Diese Sicherheitstipps bieten den Empfängern eine schnelle und visuelle Möglichkeit, um festzustellen, ob eine Nachricht von einem sicheren, überprüften Absender stammt, wenn die Nachricht von Office 365 als Spam gekennzeichnet wurde, wenn die Nachricht etwas Verdächtiges enthält, beispielsweise einen Phishing-Betrug, oder wenn externe Bilder blockiert. Office 365-und EOP-eigenständige Administratoren können eine Spam Richtlinieneinstellung bearbeiten, um zu aktivieren oder zu deaktivieren, dass Sicherheitstipps in Outlook und anderen Desktop-e-Mail-Clients in e-Mails angezeigt werden. 
@@ -60,7 +45,7 @@ Inhalt dieses Themas:
     
 9. Aktivieren Sie zur Aktivierung von Sicherheitstipps unter **Sicherheitstipps**das Kontrollkästchen **ein** . Um Sicherheitstipps zu deaktivieren, deaktivieren Sie das Kontrollkästchen **ein** . 
     
-10. Klicken Sie auf **Save**.
+10. Wählen Sie **Speichern** aus.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>So aktivieren oder deaktivieren Sie Sicherheitstipps mithilfe von PowerShell
 <a name="pshellsafetytip"> </a>
