@@ -1,5 +1,5 @@
 ---
-title: SIEM-Integration mit Office 365 Threat Intelligence und Advanced Threat Protection
+title: SIEM-Integration in Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 ms.collection:
 - M365-security-compliance
-description: Integrieren Sie den SIEM-Server Ihrer Organisation mit Office 365 Threat Intelligence und Advanced Threat Protection mit der Office 365 Activity Management-API.
-ms.openlocfilehash: 68d2b4387c1af2363fbb67d0671edeaaa4dc652d
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+description: Integrieren Sie den SIEM-Server Ihrer Organisation in Office 365 Advanced Threat Protection und zugehörige Bedrohungs Ereignisse in die Office 365 Activity Management-API.
+ms.openlocfilehash: 6c0468f8f3fdd25082bff8a3008d2abf00ed9d4d
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357436"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30523989"
 ---
-# <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>SIEM-Integration mit Office 365 Threat Intelligence und Advanced Threat Protection
+# <a name="siem-integration-with-office-365-advanced-threat-protection"></a>SIEM-Integration in Office 365 Advanced Threat Protection
 
-Wenn Ihre Organisation einen SIEM-Server (Security Incident and Event Management) verwendet, können Sie Office 365 Threat Intelligence und Advanced Threat Protection mit Ihrem SIEM-Server integrieren. Mit der SIEM-Integration können Sie Informationen, wie Malware, die von Office 365 Advanced Protection and Threat Intelligence erkannt wurden, in ihren SIEM-Server Berichten anzeigen. Um SIEM-Integration einzurichten, verwenden Sie die [Office 365 Activity Management-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
+Wenn Ihre Organisation einen SIEM-Server (Security Incident and Event Management) verwendet, können Sie Office 365 Advanced Threat Protection mit Ihrem SIEM-Server integrieren. Mit der SIEM-Integration können Sie in ihren SIEM-Server Berichten Informationen anzeigen, wie Malware oder Phishing, die von Office 365 Advanced Protection erkannt wurden. Um SIEM-Integration einzurichten, verwenden Sie die [Office 365 Activity Management-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). 
 
-Die Office 365 Activity Management-API ruft Informationen zu Benutzer-, Administrator-, System-und Richtlinienaktionen und-Ereignissen aus den Office 365-und Azure Active Directory-Aktivitätsprotokollen Ihrer Organisation ab. Das [Microsoft Office 365 Advanced Threat Protection-und Threat Intelligence-Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-intelligence-schema) funktioniert mit Threat Intelligence und/oder Advanced Threat Protection, wenn Ihre Organisation also fortschrittlichen Bedrohungsschutz, aber keine Bedrohungs Intelligenz (oder umgekehrt) besitzt, können Sie Verwenden Sie die gleiche API für Ihre SIEM-Server Integration. 
+Die Office 365 Activity Management-API ruft Informationen zu Benutzer-, Administrator-, System-und Richtlinienaktionen und-Ereignissen aus den Office 365-und Azure Active Directory-Aktivitätsprotokollen Ihrer Organisation ab. Das [office 365 Advanced Threat Protection-Schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-intelligence-schema) funktioniert mit Advanced Threat Protection, wenn Ihre Organisation also den Office 365 Advanced Threat Protection Plan 1 oder Plan 2 oder Office 365 E5 hat, können Sie diese API auch weiterhin für Ihre Siem-Server Integration verwenden. 
 
 Der SIEM-Server oder ein anderes ähnliches System sollte die **Überwachung Abfragen. allgemeine** Arbeitslast für den Zugriff auf Erkennungsereignisse. Weitere Informationen finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
@@ -34,7 +34,7 @@ Der SIEM-Server oder ein anderes ähnliches System sollte die **Überwachung Abf
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Informationen zu Bedrohungen in Office 365](office-365-ti.md)
+[Office 365 Bedrohungs Ermittlung und-Antwort](office-365-ti.md)
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)
 
@@ -42,4 +42,3 @@ Der SIEM-Server oder ein anderes ähnliches System sollte die **Überwachung Abf
   
 [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
   
-

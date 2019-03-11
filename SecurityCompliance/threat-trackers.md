@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich der neuen bemerkenswerten Tracker, damit Ihre Organisation auf Sicherheitsbedenken eingehen kann.
-ms.openlocfilehash: 072d64a056d88000ad615a896328b0144aef3d0f
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241987"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524049"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
-[Office 365 Threat Intelligence](office-365-ti.md) ermöglicht es dem Sicherheitsteam Ihrer Organisation, Cyber-Bedrohungen zu erkennen und Maßnahmen zu ergreifen. Ab Ende März 2018 und in den nächsten Wochen wird Office 365 Threat Intelligence neue Threat Tracker-Features, einschließlich bemerkenswerter Trackers, umfassen. Lesen Sie diesen Artikel, um einen Überblick über die neuen Features und die nächsten Schritte zu erhalten. 
+[Office 365 Bedrohungen für die Untersuchung und Reaktions](office-365-ti.md) Fähigkeit des Unternehmens ermöglichen es dem Sicherheitsteam Ihrer Organisation, Cyber-Bedrohungen zu erkennen und Maßnahmen zu ergreifen. Office 365 Bedrohungs Ermittlungs-und-Reaktionsfunktionen umfassen Bedrohungen-Tracker-Funktionen, einschließlich bemerkenswerter Trackers. Lesen Sie diesen Artikel, um einen Überblick über die neuen Features und die nächsten Schritte zu erhalten. 
 
 > [!IMPORTANT]
-> Beginnend im Februar 2019 und über die nächsten Monate hinaus wird Office 365 Threat Intelligence zu Office 365 Advanced Threat Protection Plan 2 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ist jetzt Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Was sind Threat Tracker?
 
@@ -38,9 +38,9 @@ Die meisten Tracker-Seiten enthalten Trend Zahlen, die regelmäßig aktualisiert
   
 ![Beispiel für Kampagneninformationen im Explorer](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Tracker sind nur einige der vielen tollen Features, die Sie mit [Office 365 Threat Intelligence](office-365-ti.md)erhalten. Wenn diese verfügbar sind, enthält Ihre neuen Threat Tracker [bemerkenswerte Tracker](threat-trackers.md#notey), [Trend Verfolgungs](threat-trackers.md#trending)Geräte, nachverfolgte [Abfragen](threat-trackers.md#trackedq)und [gespeicherte Abfragen](threat-trackers.md#savedq).
+Tracker sind nur einige der vielen tollen Features, die Sie mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)erhalten. Zu den Bedrohungs Tracker gehört [bemerkenswerte Tracker](threat-trackers.md#notey), [Trend Verfolgungs](threat-trackers.md#trending)Geräte, nachverfolgte [Abfragen](threat-trackers.md#trackedq)und [gespeicherte Abfragen](threat-trackers.md#savedq).
   
-Um Ihre Bedrohungs Verfolgungen anzuzeigen und zu verwenden, wenn Sie für Ihre Organisation verfügbar sind, wechseln &amp; Sie zum Security[https://protection.office.com](https://protection.office.com)Compliance Center (), und wählen Sie Threat **Management** \> **Threat Tracker**aus.
+Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security &amp; Compliance Center ([https://protection.office.com](https://protection.office.com)), und wählen Sie Threat- **Management** \> - **Bedrohungs Verfolgung**aus.
   
 > [!NOTE]
 > Um Threat Tracker zu verwenden, müssen Sie ein globaler Office 365-Administrator, Sicherheitsadministrator oder Sicherheits Leser sein. Weitere Informationen finden Sie unter [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
@@ -77,7 +77,7 @@ Sie können eine bemerkenswerte Tracker-Abfrage oder eigene Explorer-Abfragen je
 
 Unabhängig davon, ob Sie e-Mails, Inhalte oder Office-Aktivitäten (demnächst) überprüfen, arbeiten Explorer und Tracker zusammen, um Sicherheitsrisiken und-Bedrohungen zu untersuchen und nachzuverfolgen. Alle zusammen bieten Tracker Informationen, um Ihre Office 365-Benutzer zu schützen, indem Sie neue, bemerkenswerte und häufig durchsuchte Probleme hervorheben, um sicherzustellen, dass Ihr Unternehmen beim Verschieben in die Cloud besser geschützt ist.
   
-Wenn Ihnen Threat Tracker zur Verfügung stehen, probieren Sie Sie aus-und denken Sie daran, dass Sie uns jederzeit Feedback zu diesem oder anderen Office 365-Sicherheitsfunktionen geben können **** , indem Sie in der unteren rechten Ecke der [übersicht des Office 365 auf die Schaltfläche "Feedback" klicken. Security &amp; Compliance Center](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Und denken Sie daran, dass Sie uns jederzeit Feedback zu diesem oder anderen Office 365-Sicherheitsfeatures geben können, indem Sie in der unteren rechten Ecke der [Übersicht über das office 365 Security &amp; Compliance Center](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)auf die Schaltfläche **Feedback** klicken.
   
 ![Office 365 Security &amp; Compliance Center](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
@@ -93,7 +93,7 @@ Der neue bemerkenswerte Bedrohungs Filter hebt Elemente hervor, die vor kurzem d
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Wenn Ihre Organisation nicht bereits über Office 365 Threat Intelligence verfügt, erfahren Sie, [wie wir office 365 Threat Intelligence erhalten](get-started-with-ti.md).
+- Wenn Ihre Organisation nicht bereits über diese Funktionen für die Untersuchung und Antwort von Office 365 verfügt, finden Sie weitere Informationen unter [wie können wir office 365 Threat Investigation and Response Capabilities erhalten?](get-started-with-ti.md).
     
 - Stellen Sie sicher, dass Ihr Sicherheitsteam über die richtigen Rollen und Berechtigungen verfügt. Sie müssen ein globaler Office 365-Administrator sein oder die Rolle "Sicherheitsadministrator" oder "suchen und löschen" im &amp; Security Compliance Center zugewiesen haben. Weitere Informationen finden Sie unter [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     

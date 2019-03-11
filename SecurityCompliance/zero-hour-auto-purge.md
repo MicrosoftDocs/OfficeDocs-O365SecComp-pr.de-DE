@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (ZAP) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie ZAP Dies bewirkt, hängt vom Typ der erkannten bösartigen Inhalte ab.
-ms.openlocfilehash: 84d9c1dc12c3caf0630d25a3980cdaea1830a4c0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295638"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524019"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
@@ -44,7 +44,7 @@ Office 365 aktualisiert Anti-Spam-Modul und Schadsoftware-Signaturen in Echtzeit
 
 - Bei e-Mails, die als Spam identifiziert werden, verschiebt ZAP ungelesene Nachrichten in den Junk-e-Mail-Ordner der Benutzer. 
 
-- Bei e-Mails, die als Spam identifiziert werden, verschiebt ZAP Nachrichten in den Junk-e-Mail-Ordner der Benutzer, unabhängig davon, ob die e-Mail gelesen wurde.
+- Bei e-Mails, die als Phishing identifiziert werden, verschiebt ZAP Nachrichten in den Junk-e-Mail-Ordner der Benutzer, unabhängig davon, ob die e-Mail gelesen wurde.
 
 - Bei neu erkannter Schadsoftware entfernt ZAP Anhänge von e-Mail-Nachrichten, unabhängig davon, ob die e-Mail gelesen wurde. 
   
@@ -76,7 +76,7 @@ Im folgenden Beispiel ist ZAP für eine Inhaltsfilter Richtlinie mit dem Namen "
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
-## <a name="faq"></a>Häufig gestellte Fragen (FAQ)
+## <a name="faq"></a>Häufig gestellte Fragen
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>Was geschieht, wenn eine legitime Nachricht in den Junk-e-Mail-Ordner verschoben wird?
   

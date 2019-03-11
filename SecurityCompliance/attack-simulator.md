@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als globaler Office 365-Administrator können Sie anGriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
-ms.openlocfilehash: 25686ce194deca8d1ca07fca40f8142492951574
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cbe3c5c34bbc68fc89c8550d9711d953dced9b5
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410830"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524059"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
-**Zusammenfassung** Wenn Sie ein globaler Office 365-Administrator sind und Ihre Organisation über [office 365 Threat Intelligence](office-365-ti.md)verfügt, können Sie Angriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Dies kann Ihnen dabei helfen, anfällige Benutzer zu identifizieren und zu suchen, bevor sich ein echter Angriff auf Ihr Endergebnis auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
+**Zusammenfassung** Wenn Sie ein globales Office 365-Administrator sind und Ihre Organisation [office 365 Threat Investigation and Response capabilties](office-365-ti.md), können Sie Angriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Dies kann Ihnen dabei helfen, anfällige Benutzer zu identifizieren und zu suchen, bevor sich ein echter Angriff auf Ihr Endergebnis auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 > [!IMPORTANT]
-> Beginnend im Februar 2019 und über die nächsten Monate hinaus wird Office 365 Threat Intelligence zu Office 365 Advanced Threat Protection Plan 2 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ist jetzt Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Die Angriffe
 
@@ -137,7 +137,7 @@ Dem anGriffs Simulator werden neue Features hinzugefügt. Zu diesen zählen:
 
 Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap) , um zu sehen, was sich in der Entwicklung befindet, was ausrollt und was bereits gestartet wurde.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
