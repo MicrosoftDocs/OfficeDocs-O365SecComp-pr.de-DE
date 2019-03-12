@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält 80 vertrauliche Informationstypen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455267"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537642"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
@@ -566,7 +566,476 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Azure-DocumentDB-auth-Schlüssel
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "DocumentDb" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster erläutert werden.
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "DocumentDb"
+- Eine beliebige Kombination von zwischen 3-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Ein größer-als-Symbol (>), ein Gleichheitszeichen (=), ein Anführungszeichen (") oder ein Apostroph (')
+- Eine beliebige Kombination aus 86 unter-oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
+- Zwei Gleichheitszeichen (=)
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureDocumentDBAuthKey findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS-DatenbankVerbindungsZeichenfolge und Azure SQL-Verbindungszeichenfolge
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "Server", "Server" oder "Datenquelle" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge "cloudapp. Azure. <!--no-hyperlink-->com "oder" cloudapp. Azure. <!--no-hyperlink-->net "oder" Database. Windows. <!--no-hyperlink-->net "und die Zeichenfolge" Password "oder" Password "oder" pwd ".
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "Server", "Server" oder "Datenquelle"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "cloudapp. Azure". <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->net "oder" Database. Windows. <!--no-hyperlink-->net "
+- Eine beliebige Kombination von zwischen 1-300 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "Password", "Password" oder "pwd"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Ein oder mehrere Zeichen, die kein Semikolon (;), Anführungszeichen (") oder Apostroph (') sind.
+- Ein Semikolon (;), Anführungszeichen (") oder Apostroph (')
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iot-connection-string"></a>Azure viele-Verbindungszeichenfolge
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "HostName" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolgen "Azure-Devices". <!--no-hyperlink-->net "und" SharedAccessKey ".
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "HostName"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "Azure-Devices. <!--no-hyperlink-->net "
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "SharedAccessKey"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination aus 43 unter-oder Großbuchstaben, Ziffern, Schrägstrich (/) oder Pluszeichen (+)
+- Ein Gleichheitszeichen (=)
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureIoTConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-publish-setting-password"></a>Azure Publish-Einstellungs Kennwort
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "benutzerkwt =" gefolgt von einer alphanumerischen Zeichenfolge.
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "benutzerkwt ="
+- Eine beliebige Kombination von 60 Kleinbuchstaben oder Ziffern
+- Ein Anführungszeichen (")
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzurePublishSettingPasswords findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-redis-cache-connection-string"></a>Verbindungszeichenfolge für Azure-Cache-Zwischenspeicher
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "" "" "" "". <!--no-hyperlink-->net "gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge" Password "oder" pwd ".
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "" "" "" "". <!--no-hyperlink-->net "
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "Password" oder "pwd"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von 43 Zeichen, die klein-oder Großbuchstaben, Ziffern, Schrägstriche (/) oder ein Pluszeichen (+)
+- Ein Gleichheitszeichen (=)
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureRedisCacheConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-sas"></a>Azure SAS
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "SIG" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster erläutert werden.
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "SIG"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von zwischen 43-53 Zeichen, die klein-oder Großbuchstaben, Ziffern oder das Prozentzeichen (%)
+- Die Zeichenfolge "% 3D"
+- Ein beliebiges Zeichen, das kein klein-oder Großbuchstaben, eine Ziffer oder ein Prozentzeichen ist (%)
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureSAS findet Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Azure Service Bus-Verbindungszeichenfolge
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "Endpunkt" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolgen "ServiceBus. Windows. <!--no-hyperlink-->net "und" SharedAccesKey ".
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "Endpunkt"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "ServiceBus. Windows. <!--no-hyperlink-->net "
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "SharedAccessKey"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von 43 Zeichen, die klein-oder Großbuchstaben, Ziffern, Schrägstriche (/) oder ein Pluszeichen (+)
+- Ein Gleichheitszeichen (=)
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureServiceBusConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key"></a>Azure-Speicherkontoschlüssel
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "DefaultEndpointsProtocol" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge "AccountKey".
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "DefaultEndpointsProtocol"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "AccountKey"
+- 0-2 Leerzeichen
+- Ein Gleichheitszeichen (=)
+- 0-2 Leerzeichen
+- Eine beliebige Kombination von 86 Zeichen, die klein-oder Großbuchstaben, Ziffern, Schrägstriche (/) oder ein Pluszeichen (+)
+- Zwei Gleichheitszeichen (=)
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKey findet Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_AzureEmulatorStorageAccountFilter findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key-generic"></a>Azure-Speicherkontoschlüssel (generisch)
+
+### <a name="format"></a>Format
+
+Eine beliebige Kombination von 86 in Groß-und Kleinbuchstaben, Ziffern, dem Schrägstrich (/) oder Pluszeichen (+), vorangestellt oder gefolgt von den im folgenden Muster beschriebenen Zeichen.
+
+### <a name="pattern"></a>Muster
+
+- 0-1 des größer-als-Zeichens (>), Apostroph ('), Gleichheitszeichen (=), Anführungszeichen (") oder Nummernzeichen (#)
+- Eine beliebige Kombination von 86 Zeichen, die klein-oder Großbuchstaben, Ziffern, den Schrägstrich (/) oder ein Pluszeichen (+)
+- Zwei Gleichheitszeichen (=)
+
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_AzureStorageAccountKeyGeneric findet Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>Belgien – Nationale Nummer
 
 ### <a name="format"></a>Format
@@ -579,7 +1048,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - Sechs Ziffern und zwei Punkte im Format JJ.MM.TT für das Geburtsdatum  
 - Ein Bindestrich  
 - Drei aufeinander folgende Ziffern (ungerade für Männer, gerade für Frauen)  
-- Ein Punkt  
+- Ein Punkt 
 - Zwei Ziffern als Prüfziffer
 
 ### <a name="checksum"></a>Prüfsumme
@@ -707,7 +1176,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Drei Ziffern (diese ersten acht Ziffern sind die Registrierungsnummer)  
 - Ein Schrägstrich  
 - Vierstellige Zweignummer  
-- Ein Bindestrich  
+- Ein Bindestrich 
 - Zwei Ziffern, die Prüfziffern sind
 
 ### <a name="checksum"></a>Prüfsumme
@@ -832,7 +1301,7 @@ Eine kanadische Kontonummer umfasst sieben oder zwölf Ziffern.
 
 Eine kanadische Bankkontonummer setzt sich wie folgt zusammen:
 - Fünf Ziffern 
-- Ein Bindestrich 
+- Ein Bindestrich  
 - Drei Ziffern oder
 - Eine 0 (null)  
 - Acht Ziffern
@@ -1301,7 +1770,7 @@ Neun Ziffern mit optionalen Bindestrichen oder Leerzeichen
 ### <a name="pattern"></a>Muster
 
 Formatiert
-- Drei Ziffern  
+- Drei Ziffern 
 - Ein Bindestrich oder Leerzeichen 
 - Drei Ziffern 
 - Ein Bindestrich oder Leerzeichen 
@@ -3042,9 +3511,9 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
-- Vier Ziffern 
+- Vier Ziffern  
 - Eine optionales Leerzeichen oder ein Bindestrich  
-- Vier Ziffern 
+- Vier Ziffern  
 - Eine optionales Leerzeichen oder ein Bindestrich  
 - Die letzte Ziffer, die eine Prüfziffer ist
 
@@ -4498,7 +4967,83 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="keywords"></a>Schlüsselwörter
 
 None
-   
+
+## <a name="sql-server-connection-string"></a>SQL Server-Verbindungszeichenfolge
+
+### <a name="format"></a>Format
+
+Die Zeichenfolge "Benutzer-ID", "Benutzer-ID", "UID" oder "UserId" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster erläutert werden.
+
+### <a name="pattern"></a>Muster
+
+- Die Zeichenfolge "Benutzer-ID", "Benutzer-ID", "UID" oder "UserId"
+- Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
+- Die Zeichenfolge "Password" oder "pwd", wobei "pwd" keinem Kleinbuchstaben vorangestellt ist.
+- Ein Gleichheitszeichen (=)
+- Ein beliebiges Zeichen, das kein Dollarzeichen ($), Prozentzeichen (%), größer als Symbol (>), at-Zeichen (@), Anführungszeichen ("), Semikolon (;), linke geschweifte Klammer ([) oder linke eckige Klammer ({)
+- Eine beliebige Kombination von 7-128 Zeichen, die kein Semikolon (;), Schrägstrich (/) oder Anführungszeichen (") sind.
+- Ein Semikolon (;) oder Anführungszeichen (")
+
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
+- Der reguläre Ausdruck CEP_Regex_SQLServerConnectionString findet Inhalte, die mit dem Muster übereinstimmen.
+- Ein Schlüsselwort aus CEP_GlobalFilter wurde **nicht** gefunden.
+- Der reguläre Ausdruck CEP_PasswordPlaceHolder findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+- Der reguläre Ausdruck CEP_CommonExampleKeywords findet **keine** Inhalte, die mit dem Muster übereinstimmen.
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- Some-Password
+- somepassword
+- secretPassword
+- Beispiel
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- Password oder PWD gefolgt von 0-2 Leerzeichen, einem Gleichheits Signal (=), 0-2 Leerzeichen und einem Sternchen (*)--oder--
+- Password oder PWD gefolgt von:
+    - Gleichheitszeichen (=)
+    - Kleiner als Symbol (<)
+    - Eine beliebige Kombination von 1-200 Zeichen mit groß-oder Kleinbuchstaben, Ziffern, einem Sternchen (*), Bindestrich (-), Unterstreichung (_) oder Leerzeichen
+    - Größer als-Symbol (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Beachten Sie, dass dieser vertrauliche Informationstyp diese Schlüsselwörter mit einem regulären Ausdruck und nicht mit einer Schlüsselwortliste identifiziert.)
+
+- contoso
+- Fabrikam
+- Northwind
+- Sandbox
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
 ## <a name="sweden-national-id"></a>Schwedische Ausweisnummer
 
 ### <a name="format"></a>Format
