@@ -6,16 +6,16 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 Cloud App-Sicherheitszugriffs Richtlinien ermöglichen die Echtzeitüberwachung und Steuerung des Zugriffs auf Cloud-apps basierend auf Benutzer, Standort, Gerät und App. Sie können Zugriffsrichtlinien für ein beliebiges Gerät erstellen, einschließlich der Geräte, für die keine Domäne verbunden ist, und die nicht von Windows InTune verwaltet werden, indem Sie Clientzertifikate auf verwalteten Geräten oder mithilfe vorhandener Zertifikate wie Drittanbieter-MDM-Zertifikate bereitstellen. Sie können beispielsweise Clientzertifikate auf verwalteten Geräten bereitstellen und dann den Zugriff von Geräten ohne Zertifikat blockieren.
-ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219775"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312082"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Zugriffsrichtlinien in Office 365 Cloud App Security
 

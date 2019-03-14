@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Hier erfahren Sie, wie Sie ATP für SharePoint, OneDrive und Teams aktivieren, einschließlich der Festlegung von Warnungen für erkannte Dateien.
-ms.openlocfilehash: 88eae37b0da3df75807436d66a5c80e0c40f82d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220395"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242147"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -73,9 +74,9 @@ Um eine Benachrichtigung zu erhalten, wenn eine Datei in SharePoint Online, OneD
     
 5. Führen Sie im Abschnitt **Diese Warnung senden, wenn...** die folgenden Schritte aus: 
     
-    a. Wählen Sie in der Liste **Aktivitäten** die Option **erkannte Schadsoftware in der Datei**aus.
+    a. Wählen Sie in der Liste **Aktivitäten** die Option **erkannte Schadsoftware in Datei**aus.
     
-    b. lassen Sie das Feld **Benutzer** leer. 
+    b. Lassen Sie das Feld **Benutzer** leer. 
     
 6. Wählen Sie im Abschnitt **diese Benachrichtigung senden an** einen oder mehrere globale Administratoren, Sicherheitsadministratoren oder Sicherheits Leser aus, die Benachrichtigungen erhalten sollen, wenn eine bösartige Datei erkannt wird. 
     

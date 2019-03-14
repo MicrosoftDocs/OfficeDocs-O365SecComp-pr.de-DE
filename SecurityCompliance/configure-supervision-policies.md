@@ -17,19 +17,20 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Einrichten einer Aufsichts Übersichts Richtlinie zur Erfassung der Mitarbeiterkommunikation zur Überprüfungen.
-ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
+ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313171"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474156"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
 Verwenden Sie Aufsichtsrichtlinien, um die Mitarbeiterkommunikation zur Prüfung durch interne oder externe Prüfer zu erfassen. Weitere Informationen dazu, wie Sie mit Aufsichtsrichtlinien die Kommunikation in Ihrer Organisation überwachen können, finden Sie unter [Aufsichtsrichtlinien in Office 365](supervision-policies.md).
 
 > [!NOTE]
-> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen entweder über eine Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie keinen Enterprise E5-Plan haben und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Advanced Compliance-Add-on verfügen oder in ein Office 365 Enterprise E5-Abonnement aufgenommen werden.
+Wenn Sie keinen Enterprise E5-Plan haben und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365-Organisation einzurichten und zu verwenden:
   
@@ -79,7 +80,7 @@ Im Unternehmen Contoso Financial International muss eine Stichprobe der Kommunik
 |**Einrichten dieser Verteilergruppe**|**Gruppenadresse (Alias)**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Alle US-Broker | US_Brokers@Contoso.com | Diese Gruppe umfasst E-Mail-Adressen für alle US-basierten Broker, die für Contoso arbeiten. |
-| Alle Compliance Officer für die Vereinigten Staaten | US_Compliance@Contoso.com  | Diese Gruppe enthält e-Mail-Adressen für alle US-basierten Compliance Officer, die für Contoso arbeiten. Da diese Gruppe eine Teilmenge aller in der USA ansässigen Broker ist, können Sie diesen Alias verwenden, um die Compliance-Verantwortlichen von einer Aufsichtsrichtlinie zu befreien. |
+| Alle Compliance Officer für die Vereinigten Staaten | US_Compliance@Contoso.com  | Diese Gruppe umfasst E-Mail-Adressen für alle US-basierten Compliance Officer, die für Contoso arbeiten. Da diese Gruppe eine Teilmenge aller in der USA ansässigen Broker ist, können Sie diesen Alias verwenden, um die Compliance-Verantwortlichen von einer Aufsichtsrichtlinie zu befreien. |
   
 <a name="MakeAvailable"> </a>
 
@@ -105,7 +106,7 @@ Zu diesem Zweck können Sie sich selbst als Mitglied der Rollengruppe "Superviso
 
 2. Wechseln Sie im Security & Compliance Center zu **Berechtigungen** , und klicken Sie dann auf**+** hinzufügen ().
 
-3. Klicken Sie im Abschnitt **Rollen** auf Hinzufügen**+**(), und Scrollen Sie nach unten zum **Supervisory Review-Administrator**. Diese Rolle der Rollengruppe hinzufügen.
+3. Klicken Sie im Abschnitt **Rollen** auf Hinzufügen**+**(), und Scrollen Sie nach unten zum **Supervisory Review-Administrator**. Fügen Sie diese Rolle der Rollengruppe hinzu.
 
 4. Fügen Sie im Abschnitt **Mitglieder** die Personen hinzu, die die Überwachung für Ihre Organisation verwalten sollen.
 
@@ -214,7 +215,7 @@ Zum Konfigurieren der Überprüfung für Outlook-Desktop oder Outlook für das W
 
 Als nächstes müssen die Bearbeiter einige Exchange Online PowerShell-Befehle ausführen, damit Sie Outlook mit dem überwachungspostfach verbinden können.
   
-1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. [Wie mache ich das?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. [Wie muss ich vorgehen?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
 2. Führen Sie die folgenden Befehle aus, wobei *SupervisoryReview {GUID} @domain. onmicrosoft.com* die Adresse ist, die Sie in Schritt 1 oben kopiert haben, und *Benutzer* ist der Name des Rezensenten, der eine Verbindung mit dem überwachungspostfach in Schritt 3 herstellt.
 

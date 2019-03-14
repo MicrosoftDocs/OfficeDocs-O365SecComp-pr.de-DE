@@ -1,7 +1,7 @@
 ---
 title: Referenz Richtlinien, Methoden und Anleitungen
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: Microsoft hat entwickelt verschiedene Richtlinien, Verfahren und angenommenen mehrere bewährten um unsere Benutzer beleidigend, unerwünschte oder böswilligen e-Mail schützen.
-ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Branche eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
+ms.openlocfilehash: a7f29ed77b373ee2b66831e074fda16fcda30508
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003084"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276365"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
   
@@ -86,14 +88,14 @@ Microsoft arbeitet aktiv mit Branchenvertretern und Dienstanbietern zusammen, um
   
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
     
-- [Online Vertrauensstellung Allianz](https://www.otalliance.org/resources)
+- [Online Trust Alliance](https://www.otalliance.org/resources)
     
 - [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
     
 ## <a name="abuse-and-spam-reporting"></a>Missbrauchs- und Spamberichte
 <a name="AbuseSpamReports"> </a>
 
-Um zu melden unrechtmäßigen, beleidigend, unerwünschte oder böswilligen e-Mail, geben [die Junk-e-Mail- und Phishing-Angriffen in Outlook im Web-Bericht ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Senden von Risiko dieser Arten von Communications ist eine Verletzung der Microsoft-Richtlinie und entsprechende Maßnahmen ergriffen auf bestätigte Berichte.
+Melden Sie [Junk-e-Mails und Phishing-Scams in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), um unzulässige, missbräuchliche, unerwünschte oder böswillige e-Mails zu melden. Das Senden dieser Kommunikationstypen ist eine Verletzung der Microsoft-Richtlinie, und entsprechende Maßnahmen werden bei bestätigten Berichten ergriffen.
   
 ## <a name="law-enforcement"></a>Strafverfolgung
 <a name="sectionSection7"> </a>

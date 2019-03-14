@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Sie können Ihren SIEM-Server mit Office 365 Cloud App Security integrieren. Lesen Sie diesen Artikel, um sich einen Überblick über die Funktionsweise und die Einrichtung zu verschaffen.
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215875"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548585"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security
   
@@ -27,7 +27,7 @@ ms.locfileid: "30215875"
    
 ## <a name="overview-and-prerequisites"></a>Übersicht und Voraussetzungen
 
-Sie können [Office 365 Cloud App Security](get-ready-for-office-365-cas.md) in ihren Security Information and Event Management (SIEM)-Server integrieren, um eine zentralisierte Überwachung von Warnungen zu ermöglichen. Dies gilt insbesondere für Organisationen, die Cloud-Dienste und lokale Serveranwendungen verwenden. Die Integration mit einem SIEM-Server ermöglicht es Ihrem Sicherheitsteam, Ihre Office 365-Anwendungen besser zu schützen und gleichzeitig ihren üblichen Sicherheits Workflow beizubehalten, indem Sie bestimmte Sicherheitsverfahren automatisieren und zwischen Cloud-basierten und lokalen Ereignissen korrelieren.  
+Sie können [Office 365 Cloud App Security](get-ready-for-office-365-cas.md) in ihren Security Information and Event Management (SIEM)-Server integrieren, um eine zentralisierte Überwachung von Warnungen zu ermöglichen. Dies gilt insbesondere für Organisationen, die Cloud-Dienste und lokale Serveranwendungen verwenden. Sie können Ihren SIEM-Server integrieren, um Warnungen und Aktivitäten von Office 365 Cloud App Security auf Ihren SIEM-Server zu überführen. Die Integration mit einem SIEM-Server ermöglicht es Ihrem Sicherheitsteam, Ihre Office 365-Anwendungen besser zu schützen und gleichzeitig ihren üblichen Sicherheits Workflow beizubehalten, indem Sie bestimmte Sicherheitsverfahren automatisieren und zwischen Cloud-basierten und lokalen Ereignissen korrelieren.  
   
 Wenn Sie Ihren SIEM-Server zunächst mit der Office 365 Cloud App-Sicherheit integrieren, werden Warnungen der letzten beiden Tage an den SIEM-Server und alle Warnungen von dann an weitergeleitet (basierend auf den von Ihnen ausgewählten Filtern). Wenn Sie dieses Feature über einen längeren Zeitraum hinweg deaktivieren, werden Sie darüber hinaus die letzten zwei Tage mit Warnungen und dann alle Benachrichtigungen weiterleiten.
 
@@ -82,7 +82,8 @@ Office 365 Cloud App Security unterstützt derzeit die folgenden SIEM-Server:
   
 7. Führen Sie im Schritt **Datentypen** einen der folgenden Schritte aus, und klicken Sie dann auf **weiter**:
     - Standardeinstellung **aller Warnungen** beibehalten<br/>ODER
-    - Klicken Sie auf **alle Warnungen**, und wählen Sie dann **bestimmte Filter**aus. Definieren Sie Filter, um die Arten von Warnungen auszuwählen, die Sie an Ihren SIEM-Server senden möchten.<br/>![Datentypen Schritt des Assistenten](media/ArcSightS1ExportOptions.png)
+    - Klicken Sie auf **alle Warnungen**, und wählen Sie dann **bestimmte Filter**aus. Definieren Sie Filter, um die Arten von Warnungen auszuwählen, die Sie an Ihren SIEM-Server senden möchten.
+<br/>![Datentypen Schritt des Assistenten](media/ArcSightS1ExportOptions.png)
   
 8. Kopieren Sie auf dem Bildschirm Glückwünsche das Token, und speichern Sie es für später.<br/>![SIEM-Agent erstellter Bildschirm](media/SIEMAgentFinished.png) 
 
@@ -153,10 +154,10 @@ Es folgt ein Beispiel für Warnungs-Logfiles, die an einen SIEM-Server gesendet 
 Und hier ein weiteres Beispiel, diesmal im CEF-Format:
 
 
-|CEF-Feldname  | Description  |
+|CEF-Feldname  | Beschreibung  |
 |---------|---------|
-|Start     | Warnungszeit Stempel        |
-|Ende     | Warnungszeit Stempel        |
+|start     | Warnungszeit Stempel        |
+|end     | Warnungszeit Stempel        |
 |RT     | Warnungszeit Stempel        |
 |msg     | Warnungsbeschreibung im Office 365 Cloud App Security Portal        |
 |suser     | Warnungs Betreff-Benutzer        |
@@ -184,7 +185,7 @@ Wenn Sie Ihr Token verlieren, können Sie es erneut generieren.
 
 2. Suchen Sie die Zeile für den SIEM-Agent. 
 
-3. Klicken Sie auf die Ellipsen, und wählen Sie dann **Bearbeiten**aus. (Wenn Sie den SIEM-Agent bearbeiten, müssen Sie die JAR-Datei nicht erneut ausführen; Sie wird automatisch aktualisiert.)<br/>![Um Ihren SIEM-Agent zu bearbeiten, wählen Sie die Ellipsen aus und klicken dann auf Bearbeiten.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. Klicken Sie auf die Ellipsen, und wählen Sie dann **Bearbeiten**aus. (Wenn Sie den SIEM-Agent bearbeiten, müssen Sie die JAR-Datei nicht erneut ausführen; Sie wird automatisch aktualisiert.) <br/>![Um Ihren SIEM-Agent zu bearbeiten, wählen Sie die Ellipsen aus und klicken dann auf Bearbeiten.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>Löschen eines SIEM-Agents
 

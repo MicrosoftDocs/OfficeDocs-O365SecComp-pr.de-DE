@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Office 365 Bedrohungs Ermittlungs-und-Reaktionsfunktionen Ihre Organisation Eindringlinge und Bedrohungen erkennen und schnell die Bedrohungen verringern und wiederherstellen können.
-ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524029"
+ms.locfileid: "30536135"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Sicherstellen der Sicherheit Ihrer Office 365-Benutzer mit Office 365 Threat Investigation and Response Capabilities
 
@@ -31,7 +31,7 @@ Wissen Sie, welche Ihrer Office 365-Benutzer angegriffen oder verschlechtert wer
 [Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Reihe von Funktionen, die in ihrem Office 365 E5-Abonnement enthalten sind. Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben dazu beigetragen, dass Microsoft IT die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen gesenkt hat. 
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection und Threat Intelligence sind jetzt Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Advanced Threat Protection und Threat Investigation and Response (ehemals bekannt als Office 365 Threat Intelligence) sind jetzt Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Wir haben vor kurzem neue Funktionen hinzugefügt, um zu verbessern, wie Sie Bedrohungen aufspüren und wiederherstellen können. Hier finden Sie einen kurzen Überblick darüber, wie Sie mit den aktualisierten Funktionen zur Bedrohungsanalyse und-Antwort noch effizienter arbeiten können.
   
@@ -60,7 +60,7 @@ Wenn Sie diese Office 365-Bedrohungs Untersuchungs-und-Antwortfunktionen nicht b
 Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen werden mit Daten aus dem Microsoft Intelligent Security-Diagramm versorgt. Der Graph erhält das neueste Bedrohungs Signal von über 1 Milliarde Windows-Geräten, 450 Milliarden monatlichen Azure-Anmeldungen und 400 Milliarden monatlichen e-Mail-Nachrichten in Office 365. Dieses unübertroffene Bedrohungs Signal gibt der umfassenden Sichtbarkeit eines Kundenmandanten, der für Administratoren und Sicherheitsanalysten entscheidend ist, eine umfassende Übersicht über die Bedrohungen, die sich auf Ihre Organisation auswirken. 
   
    
-## <a name="why-threat-intelligence"></a>Warum Threat Intelligence?
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Gründe für die Verwendung von Bedrohungs Ermittlungs-und-Reaktionsfunktionen in Office 365
 
 Gartner schätzt, dass in 2017 allein mehr als $90B für Cyber verwendet wurde. Sid Deshpande, Principal Research Analyst bei Gartner, wird mit den Worten zitiert, dass "die Branche den Wechsel zu Erkennung und Antwort... sendet eine klare Meldung, dass die Prävention vergeblich ist, es sei denn, Sie ist an eine Erkennungs-und Reaktionsfunktion gebunden. " Die Bedrohungs investigtion und-Antwort ist ein wichtiger Bestandteil des Portfolios der Dienste jedes Unternehmens und kann als eigenständiger Dienst oder als Teil von Office 365 E5 genutzt werden.
   

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: In diesem Artikel wird beschrieben, wie Office 365 gegen Phishing-Angriffe abschwächt, die gefälschte Absenderdomänen verwenden, also Domänen, die gefälscht sind. Dies wird durch Analysieren der Nachrichten und Blockieren der authentifizierten, die weder mithilfe der standardmäßigen e-Mail-Authentifizierungsmethoden noch anderer Absender Zuverlässigkeits Techniken identifiziert werden können. Diese Änderung wurde implementiert, um die Anzahl von Phishing-Angriffen zu reduzieren, denen Organisationen in Office 365 zur Verfügung gestellt werden.
-ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465482"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492874"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Antispoofingschutz in Office 365
 

@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Hier erhalten Sie einen Überblick über die Berichte und Einblicke avialable im Security &amp; Compliance Center.
-ms.openlocfilehash: 194a7198e05e6d13cada9712f884f232abe2a8d1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 03b551a05d9e19be000ff9ba53e8afa11d8715f3
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217215"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242157"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Intelligente Berichte und Einblicke im Office 365 &amp; Security Compliance Center
 
@@ -53,7 +54,7 @@ Im Security &amp; Compliance Center stehen eine Vielzahl von Berichten zur Verf�
 |**Risikomanagement-Dashboard** (Dies wird auch als Sicherheits-Dashboard und Threat Intelligence-Dashboard bezeichnet)  <br/> Bedrohungs Ermittlungen, Malware Trends, die wichtigsten Zielbenutzer, Details zu gesendeten und empfangenen e-Mail-Nachrichten und mehr  <br/> |Navigieren Sie im &amp; Security Compliance Center zu **Threat Management** \> **Dashboard** <br/> |[Übersicht über das Sicherheits Dashboard](security-dashboard.md) <br/> |
 |**Bedrohungs-Explorer** (auch als Explorer bezeichnet)  <br/> Mutmaßliche Malware, die in e-Mails und Dateien in Office 365 erkannt wurde  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Explorer** . <br/> |[Verwenden des Explorers im Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md) <br/> |
 |**Erweiterte BedrohungsSchutz-und e-Mail-Sicherheitsberichte** <br/> Berichte über e-Mail-Sicherheit und Bedrohungsschutz (einschließlich Schadsoftware-, Spam-, Phishing-und Spoofing-Berichte)  <br/> |Wechseln Sie im &amp; Security Compliance Center zum **Dashboard** für **Berichte** \> . <br/> |[Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md) <br/><br/> [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md) <br/> |
-|**Nachrichtenfluss** <br/> Informationen über gesendete und empfangene e-Mail-Nachrichten, zuletzt verwendete Warnungen, häufigste Absender und Empfänger, e-Mail-Weiterleitungs Berichte und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Nachrichtenfluss** \> - **Dashboard** <br/> |[Nachrichtenfluss Einblicke im Office 365 &amp; Security Compliance Center](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46.aspx) <br/> |
+|**Nachrichtenübermittlung** <br/> Informationen über gesendete und empfangene e-Mail-Nachrichten, zuletzt verwendete Warnungen, häufigste Absender und Empfänger, e-Mail-Weiterleitungs Berichte und vieles mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Nachrichtenfluss** \> - **Dashboard** <br/> |[Nachrichtenfluss Einblicke im Office 365 &amp; Security Compliance Center](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46.aspx) <br/> |
 |**Einhaltung der DSGVO** <br/> Informationen zur Compliance von DSGVO, einschließlich Links zu Datensubjekten, Beschriftungs Trends &amp; und aktiven geschlossenen Fällen  <br/> |Navigieren Sie im &amp; Security Compliance Center zu **Data Privacy** \> **dsgvo Dashboard** <br/> |[Schutz von Informationen in Office 365 für die DSGVO](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
 |**Überwachungsprotokoll** <br/> Informationen zu Office 365-Aktivitäten, Benutzern, Dateien oder Ordnern und mehr  <br/> |Wechseln Sie im &amp; Security Compliance Center zur Such ** &amp; Untersuchungs** \> - **Überwachungsprotokoll** Suche. <br/> |[Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Kompatibilitätsberichte** <br/> Berichte zu FedRAMP, Governance, Risiko-und Konformitätsberichte, ISO-Informationssicherheitsmanagement-Berichte und Dienst Organisations-Steuerelemente Audit and Assessment Reports  <br/> |Wechseln Sie im &amp; Security Compliance Center zu **Dienst Assurance** \> - **Konformitätsberichten** . <br/> |[Planen der Sicherheits &amp; Konformität in Office 365](plan-for-security-and-compliance.md) <br/> |

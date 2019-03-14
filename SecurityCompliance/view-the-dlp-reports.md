@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den DLP-Berichten in Office 365 können Sie schnell die Anzahl der Übereinstimmungen, Überschreibungen oder falsch positiver DLP-Richtlinien anzeigen. sehen Sie nach, ob Sie im Laufe der Zeit nach oben oder unten tendieren; Filtern Sie den Bericht auf unterschiedliche Weise. , und zeigen Sie zusätzliche Details an, indem Sie einen Punkt auf einer Position im Diagramm auswählen.
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454847"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510222"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Anzeigen der Berichtr zur Verhinderung von Datenverlust
 
@@ -71,6 +71,16 @@ Berichte können Einblicke und Empfehlungen enthalten, mit denen Sie auf das rot
   
 ![Klicken auf ein Einblicke-Symbol, um Details und auszuführende Aktionen anzuzeigen](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>Berechtigungen für DLP-Berichte
+
+Zum Anzeigen von DLP-Berichten im Security & Compliance Center müssen Sie folgendem zugewiesen werden:
+
+- Rolle " **Sicherheits Leser** " im Exchange Admin Center. Diese Rolle wird standardmäßig den Rollengruppen "Organisationsverwaltung" und "Sicherheits Leser" im Exchange Admin Center zugewiesen.
+
+- **Verwaltungsrolle "DLP-Compliance-Verwaltung** " im Security _AMP_ Compliance Center. Diese Rolle wird standardmäßig den Rollengruppen "Compliance-Administrator", "Organisationsverwaltung", "Sicherheitsadministrator" und "Sicherheits Leser" im Security & Compliance Center zugewiesen.
+
+- Rolle "Empfänger" in der Exchange **-** Verwaltungskonsole. Diese Rolle wird standardmäßig den Rollengruppen "Compliance Management", "Organization Management" und "View-Only Organization Management" im Exchange Admin Center zugewiesen.
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Suchen der Cmdlets für die DLP-Berichte
 
 Um die meisten Cmdlets für das Security &amp; Compliance Center zu verwenden, müssen Sie Folgendes tun:

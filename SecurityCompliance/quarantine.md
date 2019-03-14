@@ -1,7 +1,7 @@
 ---
 title: Quarantine
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -11,16 +11,18 @@ ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f1
-description: Informationen Sie zu gehosteten Quarantäne für Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 2455f912fbe3b309e3759a0fdc3fd7df7ed47390
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
+ms.collection:
+- M365-security-compliance
+description: Erfahren Sie mehr über die gehostete Quarantäne für Exchange Online und Exchange Online Protection.
+ms.openlocfilehash: 9d0f00f5305838f1862eebdc649de0205679d282
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003004"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510212"
 ---
-# <a name="quarantine"></a>Quarantine
+# <a name="quarantine"></a>Quarantäne
 
 Die folgenden Themen bieten Informationen zur gehosteten Quarantäne für Administratoren und Endbenutzer von Exchange Online und Exchange Online Protection (EOP):
   
@@ -28,10 +30,10 @@ Die folgenden Themen bieten Informationen zur gehosteten Quarantäne für Admini
     
 - [Finden und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md) - Erläuterungen, wie Administratoren im Exchange Admin Center (EAC) Nachrichten finden und freigeben können, die sich in Quarantäne befinden, und diese optional als falsch positives Ergebnis (kein Junk) Microsoft melden können. 
     
-- [Find and Release Quarantined Messages (Endbenutzer)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) – beschreibt, wie Endbenutzer suchen und ihre eigenen Nachrichten Spam-Quarantäne in der Benutzeroberfläche der Spam-Quarantäne freigeben und als keine junk an Microsoft melden können. 
+- [Suchen und Freigeben von Nachrichten in Quarantäne (Endbenutzer)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) – beschreibt, wie Endbenutzer in der Spamquarantäne-Benutzeroberfläche eigene Nachrichten in Spamquarantäne finden und freigeben und diese als nicht-Junk-e-Mail an Microsoft melden können. 
     
     > [!IMPORTANT]
-    > Endbenutzer, um die Endbenutzer-Spamquarantäne zugreifen zu können, müssen einen gültigen Office 365-Benutzer-ID und ein Kennwort sein. Schützen von lokalen Postfächern EOP-Kunden müssen gültige e-Mail-Benutzer erstellt wurden, über die verzeichnissynchronisierung oder der Exchange-Verwaltungskonsole sein. EOP-Administratoren können zum [Verwalten von e-Mail-Benutzern in EOP](eop/manage-mail-users-in-eop.md)finden Sie weitere Informationen zum Verwalten von Benutzern. Für eigenständige EOP-Kunden wird empfohlen, verzeichnissynchronisierung und verzeichnisbasierte Edge-Blockierung aktivieren; Weitere Informationen finden Sie unter [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). 
+    > Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige e-Mail-Benutzer sein, die über die Verzeichnissynchronisierung oder die EAC erstellt werden. Weitere Informationen zum Verwalten von Benutzern finden Sie unter EOP-Administratoren unter [Verwalten von e-Mail-Benutzern in EoP](eop/manage-mail-users-in-eop.md). Für eigenständige EOP-Kunden empfehlen wir die Verwendung der Verzeichnissynchronisierung und die Aktivierung der verzeichnisbasierten Edge-Blockierung; Weitere Informationen finden Sie unter [Use Directory based Edge Blocking to Reject Messages Sent to invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). 
   
     
 
