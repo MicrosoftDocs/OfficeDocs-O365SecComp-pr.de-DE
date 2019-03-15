@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524089"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573549"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -56,8 +56,8 @@ Die Standardwerte sind **alle Absender** und **alle Empfänger**, aber Sie könn
 
 - **Für diese Personen**: Klicken Sie in dieses Feld, um einen oder mehrere Empfänger in Ihrer Organisation auszuwählen.
 
-> [!NOTE]Sie können auch die e-Mail-Adressen von externen Absendern und Empfängern eingeben. Platzhalter werden unterstützt`*@contoso.com` ( `scot?@contoso.com`oder), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.
-> [!NOTE]Sie können mehrere Absender oder Empfängerliste getrennt durch Semikolon (`;`) einfügen. Leerzeichen`\s`(), Wagenrücklauf`\r`() oder nächste Zeilen`\n`() sind zulässig.
+> [!NOTE]
+> Sie können auch die e-Mail-Adressen von externen Absendern und Empfängern eingeben. Platzhalter werden unterstützt`*@contoso.com` ( `scot?@contoso.com`oder), aber Sie können nicht gleichzeitig mehrere Platzhaltereinträge im gleichen Feld verwenden.<br/>Sie können mehrere Absender oder Empfängerliste getrennt durch Semikolon (`;`) einfügen. Leerzeichen`\s`(), Wagenrücklauf`\r`() oder nächste Zeilen`\n`() sind zulässig.
 
 ### <a name="time-range"></a>Zeitspanne
 
@@ -339,7 +339,7 @@ Ein **custom_data** -Wert, der `S:SFA` mit beginnt, stammt vom Spamfilter-Agent.
 |`DI=SJ`|Die Nachricht wurde an den Ordner "Junk-E-Mail" des Empfängers gesendet.|
 |`DI=SN`|Die Nachricht wurde durch den Pool für besonders riskante Zustellungen geleitet. Weitere Informationen finden Sie unter [High-Risk-Übermittlungs Pool für ausgehende Nachrichten](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Die Nachricht wurde durch den normalen Pool für ausgehende Zustellungen geleitet.|
-|' SFS = [a]|SFS = [b] '|Dies bedeutet, dass Übereinstimmungen mit den Spam-Regeln gefunden wurden.|
+|`SFS=[a]|SFS=[b]`|Dies bedeutet, dass Übereinstimmungen mit den Spam-Regeln gefunden wurden.|
 |`IPV=CAL`|Die Nachricht wurde durch die Spam-Filter gelassen weil die IP-Adrese in einer IP-Zulassungsliste im Verbindungsfilter angegeben wurde.|
 |`H=<EHLOstring>`|Die HELO-oder EHLO-Zeichenfolge des verbundenen e-Mail-Servers.|
 |`PTR=<ReverseDNS>`|Der PTR-Eintrag der IP-Adresse des Absenders, auch bekannt als Reverse-DNS-Adresse.|
@@ -354,7 +354,7 @@ Ein **custom_data** -Wert, der `S:AMA` mit beginnt, stammt vom Malware Filter-Ag
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|' AMA = Summe|v=1|` or `AMA=EV|v = 1 '|Die Nachricht enthält Schadsoftware. `SUM`Gibt an, dass die Schadsoftware von einer beliebigen Anzahl von Modulen erkannt wurde. `EV`Gibt an, dass die Schadsoftware von einem bestimmten Modul erkannt wurde. Wenn von einem Modul Schadsoftware erkannt wird, werden dadurch die nachfolgenden Aktionen ausgelöst.|
+|`AMA=SUM|v=1|` oder `AMA=EV|v=1`|Die Nachricht enthält Schadsoftware. `SUM`Gibt an, dass die Schadsoftware von einer beliebigen Anzahl von Modulen erkannt wurde. `EV`Gibt an, dass die Schadsoftware von einem bestimmten Modul erkannt wurde. Wenn von einem Modul Schadsoftware erkannt wird, werden dadurch die nachfolgenden Aktionen ausgelöst.|
 |`Action=r`|Die Nachricht wurde ersetzt.|
 |`Action=p`|Die Nachricht wurde umgangen.|
 |`Action=d`|Die Nachricht wurde zurückgestellt.|
@@ -377,7 +377,7 @@ Ein **custom_data** -Wert, der`S:TRA` mit beginnt, stammt aus dem Transportregel
 
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|' ETR|Regel-Nr. =<guid>`|Die ID der Regel, die abgeglichen wurde.|
+|`ETR|ruleId=<guid>`|Die ID der Regel, die abgeglichen wurde.|
 |`St=<datetime>`|Das Datum und die Uhrzeit in UTC, als die Regelübereinstimmung aufgetreten ist.|
 |`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
 |`Mode=<Mode>`|Der Modus der Regel. UserMailbox <br/>• **Erzwingen**: alle Aktionen für die Regel werden erzwungen. <br/>• **Test mit Richtlinien Tipps:**: alle richtlinientipp Aktionen werden gesendet, aber andere Durchsetzungs Aktionen werden nicht ausgeführt. <br/>• **Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgelistet, aber die Absender werden nicht benachrichtigt, und es werden keine Durchsetzungs Aktionen ausgeführt.|

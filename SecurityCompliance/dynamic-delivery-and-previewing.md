@@ -3,7 +3,7 @@ title: Dynamische bereit-und Vorschau mit Office 365 ATP Safe Attachments
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/08/2019
+ms.date: 03/12/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,16 +15,18 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Bei der Einrichtung Ihrer Richtlinien für sichere ATP-Anlagen wählen Sie dynamische Übermittlung aus, um Verzögerungen bei Nachrichten zu vermeiden und Personen eine Vorschau der zu überprüfenden Anhänge zu ermöglichen.
-ms.openlocfilehash: 1fb221d28a4089db8a4278903107c610d6825f5e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218395"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573509"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische bereit-und Vorschau mit Office 365 ATP Safe Attachments
 
-**Zusammenfassung**: dynamische Bereitstellung ist eine Option, die für [sichere ATP-Anlagen](atp-safe-attachments.md)ausgewählt werden kann. Lesen Sie diesen Artikel, um mehr über dynamische zuBereitungen und Anlagenvorschau Funktionen in [ATP Safe Attachments in Office 365](atp-safe-attachments.md)zu erfahren.
+## <a name="overview"></a>Übersicht
+
+Die dynamische Bereitstellung kann für [ATP Safe Attachments](atp-safe-attachments.md)ausgewählt werden. Lesen Sie diesen Artikel, um mehr über dynamische zuBereitungen und Anlagenvorschau Funktionen in [ATP Safe Attachments in Office 365](atp-safe-attachments.md)zu erfahren.
 
 Wenn Sie [Richtlinien für sichere Anlagen für ATP](set-up-atp-safe-attachments-policies.md) für Ihre Organisation einrichten, gibt es mehrere Optionen für die Behandlung von e-Mail-Anlagen. Hierzu gehört das **blockieren**, **ersetzen**und die **dynamische Bereitstellung**. Je nach Konfiguration von ATP-Richtlinien für sichere Anlagen können e-Mail-Empfänger bei der Überprüfung ihrer Anlagen möglicherweise eine kleine Verzögerung bei der e-Mail-Zusendung erfahren. Um Verzögerungen bei Nachrichten zu vermeiden, wählen Sie **dynamische Übermittlung**.
   
@@ -51,7 +53,7 @@ Angenommen, eine Organisation verwendet die dynamische Bereitstellung für Ihre 
   
 - Wenn ein Empfänger von einer Richtlinie für sichere Anlagen mit ATP-Datenträgern unter Verwendung der Option für die dynamische Lieferung abgedeckt wird, sieht der Empfänger den Platzhalter mit der Möglichkeit, eine Vorschau der kompatiblen Dateien anzuzeigen.
     
-- Wenn ein Empfänger nicht durch eine ATP-Richtlinie für sichere Anlagen abgedeckt wird, werden die e-Mail und die Anlage ohne ATP Safe Attachments Scanning oder Attachment Placeholders durchlaufen.
+- Wenn ein Empfänger nicht durch eine ATP-Richtlinie für sichere Anlagen abgedeckt wird, werden die e-Mail und die Anlage durchlaufen, ohne dass ein ATP Safe Attachments-oder Attachment-Platzhalter verwendet wird.
     
 ## <a name="whats-required-for-dynamic-delivery-to-work"></a>Was ist erforderlich, damit die dynamische bereitgestellt wird?
 
@@ -59,11 +61,11 @@ Angenommen, eine Organisation verwendet die dynamische Bereitstellung für Ihre 
     
 - Richtlinien müssen für ATP-sichere Anlagen mithilfe der Option für die dynamische Bereitstellung definiert werden (siehe [Einrichten von Richtlinien für sichere ATP-Anlagen in Office 365](set-up-atp-safe-attachments-policies.md))
     
-- Die e-Mail Ihrer Organisation muss in Office 365 gehostet werden.
+- Die e-Mail Ihrer Organisation muss in Office 365 gehostet werden. Obwohl [office 365 Advanced Threat Protection mit einem beliebigen SMTP-e-Mail-Übertragungs-Agent](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#requirements-for-office-365-advanced-threat-protection-atp) (beispielsweise Exchange Server) verwendet werden kann, erfordert die Option für die dynamische Übermittlung für sichere ATP-Anhänge, dass die e-Mails Ihrer Organisation in Office 365 gehostet werden. Wenn Ihre e-Mail-Adresse nicht in Office 365 gehostet wird, wählen Sie eine andere [Richtlinienoption für ATP Safe Attachments](set-up-atp-safe-attachments-policies.md#step-3-learn-about-atp-safe-attachments-policy-options), wie zum Beispiel " **blockieren**".
     
-## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>Gibt es Szenarien, für die die dynamische Bereitstellungen nicht verfügbar ist?
+## <a name="additional-considerations"></a>Zusätzliche Überlegungen
 
-Es gibt bestimmte Szenarien, in denen die dynamische Bereitstellungen nicht unterstützt werden. Hierzu gehört Folgendes:
+Es gibt bestimmte Szenarien, in denen die dynamische Bereitstellungen nicht unterstützt werden. Hierzu gehören:
   
 - E-Mail-Nachrichten in öffentlichen Ordnern
     
@@ -79,3 +81,4 @@ Es gibt bestimmte Szenarien, in denen die dynamische Bereitstellungen nicht unte
 
 - Mit [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)verSchlüsselte Nachrichten
 
+In Fällen, in denen die dynamische bereit Position nicht unterstützt wird, werden e-Mail-Nachrichten von ATP Safe-Anlagen nicht überprüft. Abhängig davon, wie Ihre ATP- [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) konfiguriert werden, werden jedoch URLs in e-Mail-Nachrichten (und Office-Dateien) überprüft.

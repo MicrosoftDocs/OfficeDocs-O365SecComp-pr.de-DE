@@ -1,10 +1,27 @@
 ---
-Title: "e-Mail-Verschlüsselung in Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 10/30/2018 ms. Audience: admin ms. Topic: Overview ms. Service: o365-Administration localization_priority: normal Search. appverid: 
+title: E-Mail-Verschlüsselung in Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/30/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
 - MOE150
-- MET150 ms. Asset-Nr.: c0d87cbe-6d65-4c03-88ad-5216ea5564e8 ms. Collection:
-    - M365-Security-Compliance Description: "Vergleiche Verschlüsselungsoptionen in Office 365, einschließlich Office-Nachrichtenverschlüsselung (OM), S/MIME, Information Rights Management (IRM), und erfahren Sie mehr über Transport Layer Security (TLS)."
+- MET150
+ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
+ms.collection:
+- M365-security-compliance
+description: Vergleichen Sie die Verschlüsselungsoptionen in Office 365, einschließlich Office-Nachrichtenverschlüsselung (OM), S/MIME, Information Rights Management (IRM), und erfahren Sie mehr über Transport Layer Security (TLS).
+ms.openlocfilehash: 8b8eb96b49d2b3d875ceba5216edfd0f12f8aa97
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573539"
 ---
-
 # <a name="email-encryption-in-office-365"></a>E-Mail-Verschlüsselung in Office 365
 
 In diesem Artikel werden Verschlüsselungsoptionen in Office 365 mit Office-Nachrichtenverschlüsselung (OM), S/MIME, Information Rights Management (IRM) und die Transport Layer Security (TLS) erläutert.
