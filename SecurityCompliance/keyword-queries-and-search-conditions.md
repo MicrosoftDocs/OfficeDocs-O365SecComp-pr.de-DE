@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online-Postfächern und in SharePoint oder OneDrive for Business-Websites mithilfe &amp; des Tools für die Inhaltssuche im Office 365 Security Compliance Center durchsuchen können.  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354757"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639162"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -123,11 +123,14 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
 
-Mithilfe der Inhaltssuche im Security &amp; Compliance Center können Sie nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern suchen, die in Dokumenten auf SharePoint-und OneDrive für Business-Websites gespeichert sind. Hierzu können Sie die `SensitiveType` -Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage `SensitiveType:"Credit Card Number"` gibt beispielsweise Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine US-Sozialversicherungsnummer enthalten. Eine Liste der vertraulichen Datentypen, nach denen Sie suchen können, finden Sie unter **Klassifizierungen** \> **vertrauliche Informationstypen** im Security &amp; Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** im Security &amp; Compliance Center PowerShell verwenden, um eine Liste der Typen vertraulicher Informationen anzuzeigen. 
+Sie können die Inhaltssuche im Security & Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten in SharePoint und OneDrive for Business-Websites gespeichert sind. Hierzu können Sie die `SensitiveType` -Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage `SensitiveType:"Credit Card Number"` gibt beispielsweise Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine US-Sozialversicherungsnummer enthalten. Eine Liste der vertraulichen Datentypen, nach denen Sie suchen können, finden Sie unter **Klassifizierungen** \> **vertrauliche Informationstypen** im Security &amp; Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** im Security &amp; Compliance Center PowerShell verwenden, um eine Liste der Typen vertraulicher Informationen anzuzeigen. 
   
 Sie können die `SensitiveType` -Eigenschaft auch verwenden, um nach dem Namen eines benutzerdefinierten Typs für vertrauliche Informationen zu suchen, den Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Beachten Sie, dass Sie die Spalte **Herausgeber** auf der Seite **vertrauliche Informationstypen** im &amp; Security Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell) verwenden können, um zwischen integrierten und benutzerdefinierten vertraulichen unterschieden Informationstypen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md).
   
 Weitere Informationen zum Erstellen von Abfragen mithilfe der `SensitiveType` -Eigenschaft finden Sie unter [Form a Query to Find sensitive data stored on Sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+
+> [!NOTE]
+> Sie können keine vertraulichen Datentypen und `SensitiveType` die Search-Eigenschaft verwenden, um in Exchange Online-Postfächern nach vertraulichen Daten zu suchen. Sie können jedoch mithilfe von Data Loss Prevention (DLP)-Richtlinien vertrauliche e-Mail-Daten während der Übertragung schützen. Weitere Informationen finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) und [Suchen und suchen von personenbezogenen Daten](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Suchoperatoren
 

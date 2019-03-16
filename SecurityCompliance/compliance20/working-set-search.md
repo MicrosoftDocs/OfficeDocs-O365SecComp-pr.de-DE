@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2523072181307cce510f0f318834329b2c70b376
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454987"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639012"
 ---
 # <a name="query-the-data-in-a-working-set"></a>Abfragen der Daten in einem Arbeitssatz
 
@@ -31,7 +31,7 @@ Klicken Sie im Arbeitsbereich auf "neue Abfrage", um eine Abfrage in Ihrem Arbei
 
 ## <a name="building-your-query"></a>Erstellen der Abfrage
 
-Sie können Ihre Abfrage mit einer Kombination aus Bedingungs Karten und Abfragesprache in der Bedingungs Karte für Schlüsselwörter erstellen.
+Sie können Ihre Abfrage mit einer Kombination aus Bedingungs Karten und Abfragesprache in der Bedingungs Karte für Schlüsselwörter erstellen. Sie können Bedingungs Karten als Block gruppieren, um eine komplexere Abfrage zu gestalten.
 
 ### <a name="condition-card"></a>Bedingungs Karte
 
@@ -46,3 +46,9 @@ Es gibt mehrere Arten von Bedingungs Karten:
 ### <a name="query-language"></a>Abfragesprache
 
 Zusätzlich zu den Bedingungs Karten können Sie eine KQL-ähnliche Abfragesprache in der Stichwörter Karte verwenden, um Ihre Abfrage zu gestalten. Die Abfragesprache unterstützt die standardmäßige KQL-Syntax wie AND, OR, NOT und NEAR (n). Außerdem werden Platzhalter mit einem Zeichen (?) und Platzhalter mit mehreren Zeichen (*) unterstützt.
+
+## <a name="filter"></a>Filter
+
+Zusätzlich zu den Abfragen, die Sie speichern können, können Sie mithilfe von Filtern zusätzliche Bedingungen direkt an die Abfrageergebnisse überlagern. Filter unterscheiden sich von Abfragen in einigen wichtigen Bereichen:
+- Filter sind vorübergehend (d. h., Sie werden nicht über verschiedene Sitzungen beibehalten), während Abfragen im Arbeitssatz gespeichert werden.
+- Filter sind immer Additiv; Filter gelten im oberen Bereich der Abfrage, die Sie derzeit anwenden, wohingegen durch das Anwenden einer Abfrage die Abfrage wirksam ersetzt wird.

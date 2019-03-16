@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Data Loss Prevention (DLP) in SharePoint Online können Sie Dokumente ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten. Nach der Ermittlung der Dokumente können Sie mit deren Besitzern zusammenarbeiten, um die Daten zu schützen. In diesem Thema wird das Erstellen einer Abfrage zur Suche nach vertraulichen Daten behandelt.
-ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455067"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639132"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 
@@ -64,9 +64,9 @@ In den folgenden Beispielen werden verschiedene vertrauliche Typen, Eigenschafte
 |**Query**|**Erläuterung**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |Der Name mag seltsam erscheinen, weil er so lang ist, aber er ist der richtige Name für diesen vertraulichen Typ. Stellen Sie sicher, dass Sie genaue Namen aus den [Typen der vertraulichen Informationen](https://go.microsoft.com/fwlink/?LinkID=509999)verwenden. Sie können auch den Namen eines [benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md) verwenden, den Sie für Ihre Organisation erstellt haben.  <br/> |
-| "Sensitivetype:" Kreditkartennummer|1.. 4294967295|1.. 100 "' <br/> |Dadurch werden Dokumente mit mindestens einer Übereinstimmung mit dem vertraulichen Typ "Kreditkartennummer" zurückgegeben. Die Werte für die einzelnen Bereiche sind die jeweiligen minimal-und Maximalwerte. Eine einfachere Möglichkeit zum Schreiben dieser Abfrage ist `SensitiveType:"Credit Card Number"`, aber wo ist der Spaß daran?  <br/> |
-| "Sensitivetype:" Kreditkartennummer| 5.. 25 "und LastSensitiveContentScan:" 8/11/2018.. 8/13/2018 "' <br/> |Dadurch werden Dokumente mit 5-25 Kreditkartennummern zurückgegeben, die vom 11. August 2018 bis 13. August 2018 gescannt wurden.  <br/> |
-| "Sensitivetype:" Kreditkartennummer| 5.. 25 "und LastSensitiveContentScan:" 8/11/2018.. 8/13/2018 "nicht FileExtension: XLSX" <br/> |Dadurch werden Dokumente mit 5-25 Kreditkartennummern zurückgegeben, die vom 11. August 2018 bis 13. August 2018 gescannt wurden. Dateien mit einer XLSX-Erweiterung sind nicht in den Abfrageergebnissen enthalten.  `FileExtension`ist eine von vielen Eigenschaften, die Sie in eine Abfrage aufnehmen können. Weitere Informationen finden Sie unter [Verwenden von Sucheigenschaften und Operatoren mit eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |Dadurch werden Dokumente mit mindestens einer Übereinstimmung mit dem vertraulichen Typ "Kreditkartennummer" zurückgegeben. Die Werte für die einzelnen Bereiche sind die jeweiligen minimal-und Maximalwerte. Eine einfachere Möglichkeit zum Schreiben dieser Abfrage ist `SensitiveType:"Credit Card Number"`, aber wo ist der Spaß daran?  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |Dadurch werden Dokumente mit 5-25 Kreditkartennummern zurückgegeben, die vom 11. August 2018 bis 13. August 2018 gescannt wurden.  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |Dadurch werden Dokumente mit 5-25 Kreditkartennummern zurückgegeben, die vom 11. August 2018 bis 13. August 2018 gescannt wurden. Dateien mit einer XLSX-Erweiterung sind nicht in den Abfrageergebnissen enthalten.  `FileExtension`ist eine von vielen Eigenschaften, die Sie in eine Abfrage aufnehmen können. Weitere Informationen finden Sie unter [Verwenden von Sucheigenschaften und Operatoren mit eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |Diese Abfrage gibt Dokumente zurück, die entweder eine Kreditkartennummer oder US-Sozialversicherungsnummer enthalten.  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>Beispiele
@@ -75,13 +75,13 @@ Nicht alle Abfragen sind gleich. In der folgenden Tabelle finden Sie Beispiele f
   
 |**Nicht unterstützte Abfrage**|**Grund**|
 |:-----|:-----|
-| "Sensitivetype:" Kreditkartennummer|.."` <br/> |Sie müssen mindestens eine Zahl hinzufügen.  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |Sie müssen mindestens eine Zahl hinzufügen.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"NotARule" ist kein gültiger vertraulicher Typname. Nur Namen in den [Typen vertraulicher Informationen](https://go.microsoft.com/fwlink/?LinkID=509999) werden in DLP-Abfragen verwendet.  <br/> |
-| "Sensitivetype:" Kreditkartennummer|0 "' <br/> |NULL ist weder als Minimalwert noch als Maximalwert in einem Range-Objekt gültig.  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |NULL ist weder als Minimalwert noch als Maximalwert in einem Range-Objekt gültig.  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |Es ist möglicherweise schwierig zu erkennen, aber es gibt zusätzlichen Leerraum zwischen "Guthaben" und "Karte", der die Abfrage ungültig macht. Verwenden Sie genaue vertrauliche Typnamen aus dem [Inventar der vertraulichen Informationstypen](https://go.microsoft.com/fwlink/?LinkID=509999).  <br/> |
-| "Sensitivetype:" Kreditkartennummer|1.. 3 "' <br/> |Die zwei-Perioden-Teil sollte nicht durch ein Leerzeichengetrennt werden.  <br/> |
-| "Sensitivetype:" Kreditkartennummer| |1..|80.. "' <br/> |Es gibt zu viele Pipe-Trennzeichen (|). Folgen Sie stattdessen diesem Format: ' Sensitivetype: "Kreditkartennummer|1..|80.. "' <br/> |
-| "Sensitivetype:" Kreditkartennummer|1..|80.. 101 "' <br/> |Da Zuverlässigkeitswerte einen Prozentsatz darstellen, dürfen Sie 100 nicht überschreiten. Wählen Sie einen Wert von 1 bis 100.  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |Die zwei-Perioden-Teil sollte nicht durch ein Leerzeichengetrennt werden.  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |Es gibt zu viele Pipe-Trennzeichen (|). Folgen Sie stattdessen diesem Format:`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Da Zuverlässigkeitswerte einen Prozentsatz darstellen, dürfen Sie 100 nicht überschreiten. Wählen Sie einen Wert von 1 bis 100.  <br/> |
    
 ## <a name="for-more-information"></a>Weitere Informationen
 

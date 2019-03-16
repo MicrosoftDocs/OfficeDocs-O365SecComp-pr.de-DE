@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455407"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639112"
 ---
 # <a name="document-metadata-fields"></a>Dokumentmetadatenfelder
 
 
 |**Feldname** </br>|**Durchsuchbar und in Arbeitsmappe sichtbar** |**Datei-Metadatenbereich** |**Exporte** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Case-Tags                  | Ja                                             |                         | Ja         |
+|Case-Tags                  | Ja (Tags)                                      |                         | Ja         |
 |Konformitäts Bezeichnungen          |                                                 |                         | Ja         |
 |Zusammengesetzter Pfad              |                                                 |                         | Ja         |
 |Container-ID               |                                                 |                         | Ja         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455407"
 |Deduplizierte zusammengesetzter Pfad      |                                                 |                         | Ja         |
 |Deduped Verwalter         |                                                 |                         | Ja         |
 |Deduplizierte Datei-IDs           |                                                 |                         | Ja         |
-|Dokumentautoren                |                                                 |                         | Ja         |
+|Dokumentautoren                | Ja (Autor) *                                   |                         | Ja         |
 |Doc-Kommentare               |                                                 |                         | Ja         |
 |Doc-Firma                |                                                 |                         | Ja         |
-|Dokument Erstellungsdatum           |                                                 |                         | Ja         |
-|Dokumentdatum geändert          |                                                 |                         | Ja         |
+|Dokument Erstellungsdatum           | Ja (erstellt) *                              |                         | Ja         |
+|Dokumentdatum geändert          | Ja (lastModifiedDate) *                         |                         | Ja         |
 |Doc-Schlüsselwörter               |                                                 |                         | Ja         |
 |Dokument zuletzt gespeichert von          |                                                 |                         | Ja         |
 |Dokument geändert von            |                                                 |                         | Ja         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455407"
 |ND ET Sort exkl. Attach     |                                                 |                         | Ja         |
 |ND ET Sort incl. Attach     |                                                 |                         | Ja         |
 |ND-Satz                     |                                                 |                         | Ja         |
-|O365 Autoren               |                                                 |                         | Ja         |
+|O365 Autoren               | Ja (Autor) *                                   |                         | Ja         |
 |O365 erstellt von            |                                                 |                         | Ja         |
-|O365-Erstellungsdatum          |                                                 |                         | Ja         |
-|O365 Datum geändert         |                                                 |                         | Ja         |
+|O365-Erstellungsdatum          | Ja (erstellt) *                              |                         | Ja         |
+|O365 Datum geändert         | Ja (lastModifiedDate) *                         |                         | Ja         |
 |O365 geändert von           |                                                 |                         | Ja         |
 |Übergeordneter Knoten                |                                                 |                         | Ja         |
 |Pivot-ID                   | Ja (pivotable)                                   |                         | Ja         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455407"
 |Ähnlichkeit prozentual         |                                                 |                         | Ja         |
 |Design Liste                | Ja (designlist)                                |                         | Ja         |
 |Word count                 | Ja (wordCount)                                 |                         | Ja         |
+|Relevanz (Problem)    | Ja (relevanceScore_issueNum)                   |                         |             |
+|Quantil lesen (Problem)    | Ja (readPercentile_issueNum)                   |                         |             |
+|Relevance-Tag (Problem)      | Ja (relevanceTag_issueNum)                     |                         |             |
+
+  \*Wenn in den Dokumenten eingebettete Werte vorhanden sind, priorisiert die Suche diese Werte für diese Felder. Andernfalls wird versucht, Werte aus O365 zu über stellen.

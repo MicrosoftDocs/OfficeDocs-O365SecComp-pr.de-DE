@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sie bei der Suche nach Bedrohungen für Ihre Organisation unterstützen, auf Schadsoftware, Phishing und andere Angriffe reagieren, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen Indikatoren.
-ms.openlocfilehash: e3696306b5188858e6ca72e265c4f1aa24574f79
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 54dbe4cc39456189bca2af71294d181adce6f50b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536185"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639032"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 Bedrohungs Ermittlung und-Antwort
 
@@ -41,7 +41,7 @@ Untersuchung und Antwortfunktionen für Bedrohungen in Office 365 Advanced Threa
 
 Früher waren Office 365 Threat Investigation and Response-Funktionen in Abonnements enthalten, wie Office 365 Enterprise E5. Dies ist immer noch der Fall, und jetzt sind diese Features jetzt Bestandteil von Office 365 Advanced Threat Protection Plan 2 (und dies ist in Office 365 Enterprise E5 enthalten). 
 
-Darüber hinaus waren Office 365 Threat Investigation and Response capbailities früher als Add-on für Office 365 für Geschäftskunden erhältlich. Diese Funktionen sind jetzt in Office 365 Advanced Threat Protection Plan 2 enthalten (dazu gehört auch Office 365 Advanced Threat Protection Plan 1). Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection Plans and Pricing](https://products.office.com/exchange/advance-threat-protection).
+Darüber hinaus waren Office 365 Threat Investigation and Response-Funktionen früher als Add-on für Office 365 für Geschäftskunden erhältlich. Diese Funktionen sind jetzt in Office 365 Advanced Threat Protection Plan 2 enthalten (dazu gehört auch Office 365 Advanced Threat Protection Plan 1). Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection Plans and Pricing](https://products.office.com/exchange/advance-threat-protection).
 
 Dies ist das folgende:
 
@@ -53,7 +53,7 @@ Dies ist das folgende:
 
 Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-investigaiton-and-response-capabilities"></a>Erste Schritte mit Bedrohungs-investigaiton und Reaktionsfunktionen
+## <a name="get-started-with-threat-investigation-and-response-capabilities"></a>Erste Schritte mit den Möglichkeiten zur Bedrohungsanalyse und-Antwort
 
 Verwenden Sie die folgenden Ressourcen, um mehr über die Möglichkeiten der Bedrohung bei der Untersuchung und Antwort in Office 365 zu erfahren, und wie Sie Sie verwenden können, um die Sicherheit von Personen in Ihrer Organisation zu schützen.
   

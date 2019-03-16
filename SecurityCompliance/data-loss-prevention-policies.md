@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Richtlinien zur Verhinderung von Datenverlust
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455047"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639142"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 

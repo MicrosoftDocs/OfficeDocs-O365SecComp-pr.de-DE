@@ -1,7 +1,7 @@
 ---
 title: Anzeigen der Berichtr zur Verhinderung von Datenverlust
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den DLP-Berichten in Office 365 können Sie schnell die Anzahl der Übereinstimmungen, Überschreibungen oder falsch positiver DLP-Richtlinien anzeigen. sehen Sie nach, ob Sie im Laufe der Zeit nach oben oder unten tendieren; Filtern Sie den Bericht auf unterschiedliche Weise. , und zeigen Sie zusätzliche Details an, indem Sie einen Punkt auf einer Position im Diagramm auswählen.
-ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
-ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
+ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30510222"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639022"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Anzeigen der Berichtr zur Verhinderung von Datenverlust
 

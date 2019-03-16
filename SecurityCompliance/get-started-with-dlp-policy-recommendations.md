@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit DLP-Richtlinienempfehlungen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Diese Insight-basierte Empfehlung hilft Ihrer Organisation, vertrauliche Inhalte zu schützen, wenn Sie in Office 365 gespeichert und freigegeben wird, indem Sie darüber informiert werden, wenn eine mögliche Lücke in der DLP-Richtlinien Abdeckung vorliegt. Diese Empfehlung wird auf der Startseite des Security &amp; Compliance Centers angezeigt, wenn Ihre Dokumente eine der fünf häufigsten Arten vertraulicher Informationen enthalten, aber nicht durch eine DLP-Richtlinie geschützt sind.
-ms.openlocfilehash: aabd1e6b3ce8ea4754192bd7b6f80262d9e83cf7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455117"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638882"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Erste Schritte mit DLP-Richtlinienempfehlungen
 

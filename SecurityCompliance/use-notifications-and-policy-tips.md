@@ -1,7 +1,7 @@
 ---
 title: Senden von e-Mail-Benachrichtigungen und Anzeigen von Richtlinien Tipps für DLP-Richtlinien
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn ein Benutzer mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Aufmerksamkeit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können den Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie über eine gültige geschäftliche Anforderung verfügen oder wenn die Richtlinie ein falsch positives Ergebnis ermittelt. '
-ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455187"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639152"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von e-Mail-Benachrichtigungen und Anzeigen von Richtlinien Tipps für DLP-Richtlinien
 
@@ -90,7 +90,7 @@ Für jede Regel in einer DLP-Richtlinie können Sie Folgendes tun:
 - Passen Sie den in der Benachrichtigung enthaltenen Text mithilfe von HTML oder Token an. Weitere Informationen finden Sie im folgenden Abschnitt.
     
 > [!NOTE]
->  E-Mail-Benachrichtigungen können nur an einzelne Empfänger gesendet werden – nicht an Gruppen oder Verteilerlisten. > nur neuer Inhalt löst eine e-Mail-Benachrichtigung aus. Das Bearbeiten vorhandener Inhalte löst Richtlinien Tipps aus, jedoch keine e-Mail-Benachrichtigung. 
+>  E-Mail-Benachrichtigungen können nur an einzelne Empfänger gesendet werden – nicht an Gruppen oder Verteilerlisten. Nur neuer Inhalt löst eine e-Mail-Benachrichtigung aus. Das Bearbeiten vorhandener Inhalte löst Richtlinien Tipps aus, jedoch keine e-Mail-Benachrichtigung. 
   
 ![E-Mail-Benachrichtigungsoptionen](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
