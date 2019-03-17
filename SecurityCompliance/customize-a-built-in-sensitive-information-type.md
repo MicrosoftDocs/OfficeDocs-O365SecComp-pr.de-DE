@@ -1,7 +1,7 @@
 ---
 title: Anpassen eines benutzerdefinierten vertraulichen Informationstyps
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten Regel enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird.
-ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455427"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639072"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -44,7 +44,7 @@ Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and 
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist.  `C:\custompath\` ist ein Platzhalter. 
+    > Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist. `C:\custompath\` ist ein Platzhalter. 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Suchen der Regel, die in der XML-Datei geändert werden soll
 
