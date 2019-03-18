@@ -106,7 +106,7 @@
 ### [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md)
 ### [Konfigurieren der Verbindungsfilterrichtlinie](configure-the-connection-filter-policy.md)
 ### [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
-### [Entfernen eines Benutzers, einer IP-Adresse oder einer Domäne aus einer Sperrliste](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränktem Zugriff nach dem Senden von Spam-E-Mails](removing-user-from-restricted-users-portal-after-spam.md)
 ### [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md)
 #### [Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten ](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
