@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Sie können Exchange Online Protection (EOP) verwenden, um e-Mail-aktivierte Gruppen für eine Exchange-Organisation zu erstellen. Sie können auch EOP definieren oder Aktualisieren von Eigenschaften für die Gruppe, die Mitgliedschaft, e-Mail-Adressen und andere Aspekte der Gruppen angeben.
-ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Sie können Exchange Online Protection (EOP) zur Erstellung E-Mail-aktivierter Gruppen für eine Exchange-Organisation verwenden. Sie können EOP auch verwenden, um Gruppeneigenschaften zu definieren oder zu aktualisieren, über die Mitgliedschaften, E-Mail-Adressen und andere Aspekte von Gruppen festgelegt werden.
+ms.openlocfilehash: 2e747dc9a26cbbc1ce214107235ccea62f175dd0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003174"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670460"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -79,7 +79,7 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
     
 2. Führen Sie einen der folgenden Schritte aus:
     
-  - So bearbeiten Sie eine Gruppe: In der Liste der Gruppen, klicken Sie auf die Verteilergruppe oder Sicherheitsgruppe an, die Sie anzeigen oder ändern möchten, und klicken Sie dann auf **Bearbeiten** ![Bearbeitungssymbol](../media/ITPro-EAC-EditIcon.gif). Sie können allgemeine Einstellungen aktualisieren, hinzufügen oder entfernen Gruppenbesitzer, und hinzufügen oder entfernen Gruppenmitglieder, je nach Bedarf.
+  - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Verteiler-oder Sicherheitsgruppe, die Sie anzeigen oder ändern möchten, **** ![und klicken Sie](../media/ITPro-EAC-EditIcon.gif)dann auf Bearbeitungssymbol bearbeiten. Sie können je nach Bedarf allgemeine Einstellungen aktualisieren sowie Gruppenbesitzer oder Gruppenmitglieder hinzufügen oder entfernen.
     
   - So entfernen Sie eine Gruppe Markieren Sie die Gruppe, und klicken Sie auf **Entfernen**![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.gif).
     
@@ -93,7 +93,7 @@ Diese Abschnitt enthält Informationen zum Erstellen von Gruppen und Ändern der
   
 In diesem Beispiel wird das [New-EOPDistributionGroup](http://technet.microsoft.com/library/4610dfe5-fca8-4ba8-be3c-535d1753e0f4.aspx)-Cmdlet verwendet, um eine Verteilergruppe mit dem Alias "itadmin" und dem Namen "IT Administrators" zu erstellen. Außerdem werden Benutzer als Mitglieder der Gruppe hinzugefügt. 
   
-```
+```Powershell
 New-EOPDistributionGroup -Type "Distribution" -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy "Member1"
 
 ```
@@ -102,21 +102,21 @@ Wenn Sie statt einer Verteilergruppe eine Sicherheitsgruppe erstellen möchten, 
   
 Um zu überprüfen, ob die Gruppe "IT Administrators" erfolgreich erstellt wurde, führen Sie das [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx)-Cmdlet aus, um Informationen über die neue Gruppe anzuzeigen: 
   
-```
+```Powershell
 Get-Recipient "IT Administrators" | Format-List
 
 ```
 
 Um eine Liste der Mitglieder in der Gruppe anzuzeigen, führen Sie das [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx)-Cmdlet wie folgt aus: 
   
-```
+```Powershell
 Get-DistributionGroupMember "IT Administrators"
 
 ```
 
 Um eine vollständige Liste aller Ihrer Gruppen anzuzeigen, führen Sie das [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx)-Cmdlet wie folgt aus: 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup" | FT | more
 
 ```
@@ -129,28 +129,28 @@ Hier einige Beispiele für die Verwendung von Windows Remote-PowerShell zur Änd
   
 In diesem Beispiel wird das [Set-EOPDistributionGroup](http://technet.microsoft.com/library/689a66c5-a524-4870-88f3-091fd6eae3b7.aspx)-Cmdlet verwendet, um die primäre SMTP-Adresse (auch als die Antwortadresse bezeichnet) für die Gruppe "Seattle Employees" in "sea.employees@contoso.com" zu ändern. 
   
-```
+```Powershell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 
 ```
 
 Um zu prüfen, ob Sie die Eigenschaften einer Gruppe erfolgreich geändert haben, überprüfen Sie die Änderungen mithilfe des [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx)-Cmdlets. Ein Vorteil der Verwendung von Remote-PowerShell besteht darin, dass Sie mehrere Eigenschaften für mehrere Gruppen anzeigen können. Führen Sie im obigen Beispiel, in dem die primäre SMTP-Adressgruppe geändert wurde, folgenden Befehl aus, um den neuen Wert zu überprüfen: 
   
-```
+```Powershell
 Get-Recipient "Seattle Employees" | FL "PrimarySmtpAddress"
 
 ```
 
 In diesem Beispiel wird das [Update-EOPDistributionGroupMember](http://technet.microsoft.com/library/a6d4f790-1b94-42f8-af6f-fa79c504d8ec.aspx)-Cmdlet verwendet, um alle Mitglieder der Gruppe "Seattle Employees" zu aktualisieren. Verwenden Sie ein Komma, um alle Mitglieder voneinander zu trennen. 
   
-```
+```Powershell
 Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
 
 ```
 
 Um eine Liste aller Mitglieder in der Gruppe "Seattle Employees" abzurufen, verwenden Sie wie folgt das [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx)-Cmdlet: 
   
-```
+```Powershell
 Get-DistributionGroupMember "Seattle Employees"
 
 ```
@@ -159,14 +159,14 @@ Get-DistributionGroupMember "Seattle Employees"
   
 In diesem Beispiel wird das [Remove-EOPDistributionGroup](http://technet.microsoft.com/library/a17b1307-3187-40b0-a438-c7b35a34c002.aspx)-Cmdlet verwendet, um eine Verteilergruppe mit dem Namen "IT Administrators" zu entfernen. 
   
-```
+```Powershell
 Remove-EOPDistributionGroup -Identity "IT Administrators" 
 
 ```
 
 Um zu überprüfen, ob die Gruppe entfernt wurde, führen Sie das [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx)-Cmdlet wie folgt aus, und überprüfen Sie, ob die Gruppe (in diesem Fall ("IT Administrators") gelöscht wurde. 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup"
 
 ```

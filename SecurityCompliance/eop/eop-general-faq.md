@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Hier werden die häufigsten allgemeinen Fragen zum cloudgehosteten E-Mail-Filterdienst Microsoft Exchange Online Protection (EOP) beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:'
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027382"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670450"
 ---
 # <a name="eop-general-faq"></a>EOP - Allgemeine häufig gestellte Fragen
 
@@ -26,13 +26,13 @@ Hier werden die häufigsten allgemeinen Fragen zum cloudgehosteten E-Mail-Filter
     
 - [Häufig gestellte Fragen zur delegierten Verwaltung](delegated-administration-faq.md)
     
-- [Anti-Spam-Schutz – häufig gestellte Fragen](../anti-spam-protection-faq.md)
+- [HÄUFIG gestellte Fragen zum Antispamschutz](../anti-spam-protection-faq.md)
     
 - [Listen sicherer und blockierter Absender in Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
 - [Häufig gestellte Fragen (FAQ) zur Quarantäne](../quarantine-faq.md)
     
-- [Anti-Malware Protection – häufig gestellte Fragen](../anti-malware-protection-faq-eop.md)
+- [HÄUFIG gestellte Fragen zum Schutz vor Schadsoftware](../anti-malware-protection-faq-eop.md)
     
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
@@ -64,7 +64,7 @@ A. Office 365 ist der Name einer Kollektion von Produkten und Dienstleistungen, 
   
  **F. Verfügt EOP über ein Kommunikationsportal, auf dem ich Informationen über bekannte Probleme und die zu erwartenden Lösungen abrufen kann? Wie verhält es sich mit neuen Funktionen?**
   
-A. Das Office 365 Admin Center hält einige Informationen hierzu bereit. Wenn Sie von einem Service Level-Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (üblicherweise begleitet von einem Glockensymbol), nachdem Sie sich am Office 365 Admin Center angemeldet haben. Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen.
+A. Das Microsoft 365 Admin Center hat einige dieser Informationen. Wenn Sie von einem Service Level-Ereignis betroffen sind, sollte eine Kommunikations Warnung angezeigt werden (in der Regel mit einem Bell-Symbol verbunden), nachdem Sie sich im Microsoft 365 Admin Center angemeldet haben. Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen.
   
 Was neue EOP-Funktionen angeht, ist die [Office 365-Roadmap](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) eine gute Ressource für Informationen zu bevorstehenden neuen Funktionen. Außerdem stellen wir auf der Website [Office-Blogs](https://go.microsoft.com/fwlink/p/?LinkId=392724) Blogbeiträge zu den neuen Features bereit. 
   

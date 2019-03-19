@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: Dieses Thema liefert häufig gestellte Fragen und Antworten für Microsoft-Partner und Wiederverkäufer, die delegierte Office 365-Verwaltungsaufgaben ausführen möchten, einschließlich der Verwaltung von Exchange Online Protection (EOP) für andere Mandanten (Unternehmen).
-ms.openlocfilehash: b6096e835f90a0d5f22a39a5df76e52f1a25a79d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 61f939932ab221343b67f87dd5c63f6697e70026
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027492"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670440"
 ---
 # <a name="delegated-administration-faq"></a>Häufig gestellte Fragen zur delegierten Verwaltung
 
@@ -24,7 +24,7 @@ Dieses Thema liefert häufig gestellte Fragen und Antworten für Microsoft-Partn
   
  **F. Ich bin Wiederverkäufer und muss die Mandanten meines Kunden verwalten. Wie funktioniert das?**
   
-A. Wenn Sie ein Microsoft-Partner oder Wiederverkäufer sind und sich als Microsoft Advisor-Partner registriert haben, können Sie die Berechtigung beantragen, deren Mandanten im Office 365 Admin Center zu verwalten. Dies wird als delegierte Administration bezeichnet und ermöglicht Ihnen die Verwaltung des Office 365-Mandanten (einschließlich EOP-Einstellungen), als wären Sie ein Administrator in ihrer Organisation. Die Schritte für die delegierte Verwaltung sind wie folgt:
+A. Wenn Sie Microsoft-Partner oder-Händler sind und sich als Microsoft Advisor angemeldet haben, können Sie die Berechtigung zum Verwalten des Mandanten innerhalb des Admin Centers anfordern. Dies wird als delegierte Administration bezeichnet und ermöglicht Ihnen die Verwaltung des Office 365-Mandanten (einschließlich EOP-Einstellungen), als wären Sie ein Administrator in ihrer Organisation. Die Schritte für die delegierte Verwaltung sind wie folgt:
   
 1. Registrieren Sie sich als [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits).
     
@@ -44,6 +44,6 @@ A. Office 365 unterstützt diese Funktion derzeit nicht.
   
  **F. Ist eine konsolidierte Berichterstellung über meine Untermandanten hinweg möglich?**
   
-A. Eine konsolidierte Berichterstellung über die von Ihnen verwalteten Unternehmen hinweg ist derzeit für die Office 365 Admin Center-Berichte nicht verfügbar. Dies ist jedoch über die Remote-Windows PowerShell oder den [Webdienst für die Berichterstellung](https://go.microsoft.com/fwlink/?LinkId=279926) möglich. 
+A. Die konsolidierte Berichterstellung für die von Ihnen verwalteten Unternehmen ist derzeit nicht für die Micrsoft 365 Admin Center-Berichte verfügbar. Dies ist jedoch über die Remote-Windows PowerShell oder den [Webdienst für die Berichterstellung](https://go.microsoft.com/fwlink/?LinkId=279926) möglich. 
   
 

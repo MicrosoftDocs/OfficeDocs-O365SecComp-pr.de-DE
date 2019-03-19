@@ -15,12 +15,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema werden die Schritte zur Problembehandlung für Endbenutzer und Administratoren beschrieben, und Sie erhalten Informationen zum Kontaktieren des technischen Supports.
-ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43af048a457835ef16e36c8587f811cb0963bc97
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275995"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670480"
 ---
 # <a name="troubleshooting-and-support-information"></a>Problembehandlung und Supportinformationen
 
@@ -87,7 +87,7 @@ Als Administrator können Sie auf Probleme mit Benutzern stoßen, die das Add-In
     
 ## <a name="support-information"></a>Supportinformationen
 
-Wenn Sie Hilfe bei der Installation, Konfiguration oder Deinstallation des Add-Ins benötigen, wenden Sie sich über den Link Neue Dienstanforderung auf der Support Seite im Office 365 Admin Center an den technischen Support. Weitere Optionen, einschließlich der Übermittlung einer Serviceanfrage über die Telefon-und Self-Support-Optionen, finden Sie unter [Hilfe und Support für EoP](eop/help-and-support-for-eop.md).
+Wenn Sie Hilfe bei der Installation, Konfiguration oder Deinstallation des Add-Ins benötigen, wenden Sie sich über den Link Neue Dienstanforderung auf der Support Seite im Microsoft 365 Admin Center an den technischen Support. Weitere Optionen, einschließlich der Übermittlung einer Serviceanfrage über die Telefon-und Self-Support-Optionen, finden Sie unter [Hilfe und Support für EoP](eop/help-and-support-for-eop.md).
   
 ## <a name="for-more-information"></a>Weitere Informationen
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: In diesem Artikel erfahren Sie, wie Sie Inhalts Suchaufgaben wie das Erstellen von Suchvorgängen und das Ausführen von &amp; Berichten über PowerShell-Skripts im Office 365 Security Compliance Center automatisieren.
-ms.openlocfilehash: c61a62c7b31d24346fd58b7562872a7c45d1c65d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213235"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670660"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen
 
@@ -52,15 +52,15 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
     ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
     ```
 
-    In der ersten Zeile oder Kopfzeile der Datei werden die Parameter aufgelistet, die vom **New-ComplianceSearch-** Cmdlet (im Skript in Schritt 3) zum Erstellen einer neuen Inhaltssuche verwendet werden. Jeder Parameter Name wird durch ein Komma getrennt. Stellen Sie sicher, dass keine Leerzeichen in der Kopfzeile vorhanden sind. Jede Zeile unter der Kopfzeile stellt die Parameterwerte für jede Suche dar. Stellen Sie sicher, dass Sie die Platzhalterdaten in der CSV-Datei durch ihre tatsächlichen Daten ersetzen. 
+    In der ersten Zeile oder Kopfzeile der Datei werden die Parameter aufgelistet, die vom **New-ComplianceSearch-** Cmdlet (im Skript in Schritt 3) zum Erstellen einer neuen Inhaltssuche verwendet werden. Die einzelnen Parameternamen werden jeweils durch ein Komma getrennt. Stellen Sie sicher, dass keine Leerzeichen in der Kopfzeile vorhanden sind. Jede Zeile unter der Kopfzeile stellt die Parameterwerte für jede Suche dar. Stellen Sie sicher, dass Sie die Platzhalterdaten in der CSV-Datei durch ihre tatsächlichen Daten ersetzen. 
     
 2. Öffnen Sie die txt-Datei in Excel, und verwenden Sie dann die Informationen in der folgenden Tabelle, um die Datei mit Informationen zu jeder Suche zu bearbeiten. 
     
     |**Parameter**|**Beschreibung**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |Die SMTP-Adresse des Postfachs des Benutzers.  <br/> |
-    | `SharePointLocation` <br/> |Die URL für die OneDrive für die Business-Website des Benutzers oder die URL für eine beliebige Website in Ihrer Organisation. Verwenden Sie für die URL für OneDrive for Business-Websites das folgende ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `Format:. Beispiel: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.<br/> |
-    | `ContentMatchQuery` <br/> |Die Suchabfrage für die Suche. Weitere Informationen zum Erstellen einer Suchabfrage finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).<br/> |
+    | `SharePointLocation` <br/> |Die URL für die OneDrive für die Business-Website des Benutzers oder die URL für eine beliebige Website in Ihrer Organisation. Verwenden Sie für die URL für OneDrive for Business-Websites das folgende ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `Format:. Beispiel:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `ContentMatchQuery` <br/> |Die Suchabfrage für die Suche. Weitere Informationen zum Erstellen einer Suchabfrage finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Für e-Mails das Datum, an dem oder nachdem eine Nachricht von einem Empfänger empfangen oder vom Absender gesendet wurde. Für Dokumente auf SharePoint-oder OneDrive für Business-Websites das Datum, an dem oder nachdem ein Dokument zuletzt geändert wurde.  <br/> |
     | `EndDate` <br/> |Bei e-Mails wurde das Datum, an dem eine Nachricht vom Benutzer gesendet wurde, an oder vor dem Senden gesendet. Für Dokumente auf SharePoint-oder OneDrive für Business-Websites das Datum, an dem oder bevor ein Dokument zuletzt geändert wurde.  <br/> |
    
@@ -98,7 +98,7 @@ So führen Sie das Skript aus
 
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `CreateSearches.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die anderen Dateien gespeichert haben.
     
-  ```
+  ```Powershell
   # Get the Search Group ID and the location of the CSV input file
   $searchGroup = Read-Host 'Search Group ID'
   $csvFile = Read-Host 'Source CSV file'
@@ -175,7 +175,7 @@ So führen Sie das Skript aus
 
 2. Wechseln Sie in Windows PowerShell zu dem Ordner, in dem Sie das Skript im vorherigen Schritt gespeichert haben, und führen Sie das Skript aus; Zum Beispiel:
     
-    ```
+    ```Powershell
     .\CreateSearches.ps1
     ```
 
@@ -187,7 +187,7 @@ So führen Sie das Skript aus
     
     Das Skript zeigt den Fortschritt beim Erstellen und Ausführen der Suche an. Wenn das Skript abgeschlossen ist, wird es an die Ansage zurückgegeben. 
     
-    ![Beispielausgabe für das Ausführen des Skripts zum Erstellen mehrere Compliancesuchen](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+    ![Beispielausgabe vom Ausführen des Skripts zum Erstellen mehrerer Kompatibilitäts Suchvorgänge](media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>Schritt 4: Ausführen des Skripts zum Melden der Such Schätzungen
 
@@ -195,7 +195,7 @@ Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `SearchReport.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die anderen Dateien gespeichert haben.
     
-  ```
+  ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
   $outputFile = Read-Host 'Enter a file name or file path to save the report to a .csv file. Leave blank to only display the report'
   $searches = Get-ComplianceSearch | ?{$_.Name -clike $searchGroup + "_*"}
@@ -250,7 +250,7 @@ Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin
 
 2. Wechseln Sie in Windows PowerShell zu dem Ordner, in dem Sie das Skript im vorherigen Schritt gespeichert haben, und führen Sie das Skript aus; Zum Beispiel:
     
-    ```
+    ```Powershell
     .\SearchReport.ps1
     ```
 
@@ -258,11 +258,11 @@ Nachdem Sie die Suchvorgänge erstellt haben, besteht der nächste Schritt darin
     
 4. Geben Sie im **Dateipfad zum Speichern des Berichts in einer CSV-Datei (lassen Sie leer, um die Meldung nur anzuzeigen)** einen Dateinamen Vollständiger Dateiname (einschließlich der CSV-Dateierweiterung) ein, wenn Sie den Bericht in einer CSV-Datei speichern möchten. der Name der CSV-Datei, einschließlich der CSV-Dateierweiterung. Sie können beispielsweise eingeben `ContosoCaseReport.csv` , um es im aktuellen Verzeichnis zu speichern, oder Sie können `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` eingeben, um es in einem anderen Ordner zu speichern. Sie können die Eingabeaufforderungen auch leer lassen, um den Bericht anzuzeigen, aber nicht in einer Datei zu speichern. 
     
-5. Drücken **Sie die Eingabe**Taste.
+5. Drücken Sie **EINGABE**.
     
     Das Skript zeigt den Fortschritt beim Erstellen und Ausführen der Suche an. Nach Abschluss des Skripts wird der Bericht angezeigt. 
     
-    ![Führen Sie den Suchbericht aus, um die Schätzwerte für die Suchgruppe anzuzeigen.](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+    ![Ausführen des Suchberichts zum Anzeigen der Schätzungen für die suchgruppe](media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
   
 > [!NOTE]
 > Wenn das gleiche Postfach oder die gleiche Website als Inhaltsspeicherort in mehr als einer Suche in einer suchgruppe angegeben wird, kann die geschätzte Summe der Ergebnisse im Bericht (für die Anzahl der Elemente und die Gesamtgröße) Ergebnisse für dieselben Elemente aufweisen. Das liegt daran, dass dieselbe e-Mail-Nachricht oder dasselbe Dokument mehr als einmal gezählt wird, wenn Sie mit der Abfrage für verschiedene Suchvorgänge in der suchgruppe übereinstimmt. 
@@ -273,7 +273,7 @@ Da Sie vielleicht viele Suchvorgänge durchführen, ist es mit diesem letzten Sk
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `DeleteSearches.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die anderen Dateien gespeichert haben.
     
-  ```
+  ```Powershell
   # Delete all searches in a search group
   $searchGroup = Read-Host 'Search Group ID'
   Get-ComplianceSearch |
@@ -289,7 +289,7 @@ Da Sie vielleicht viele Suchvorgänge durchführen, ist es mit diesem letzten Sk
 
 2. Wechseln Sie in Windows PowerShell zu dem Ordner, in dem Sie das Skript im vorherigen Schritt gespeichert haben, und führen Sie das Skript aus; Zum Beispiel:
     
-    ```
+    ```Powershell
     .\DeleteSearches.ps1
     ```
 
@@ -297,4 +297,4 @@ Da Sie vielleicht viele Suchvorgänge durchführen, ist es mit diesem letzten Sk
     
     Das Skript zeigt den Namen jeder gelöschten Suche an.
     
-    ![Führen Sie das Skript zum Löschen der Suchvorgänge in der Suchgruppe aus.](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+    ![Ausführen des Skripts zum Löschen der Suchvorgänge in der Gruppe "Suche"](media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

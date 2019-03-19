@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
-description: Microsoft bietet Unterstützung für EOP in verschiedenen Orten und einschließlich zur Selbsthilfe und Onlinesupport Methoden.
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: Microsoft bietet Hilfe zu EOP an verschiedenen Orten und Methoden, einschließlich Self-Support und Assisted-Support.
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027552"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670530"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -38,7 +38,7 @@ Bei der Anmeldung stellt das Office 365-Portal Informationen zum Status der Dien
   
 ## <a name="assisted-support-from-microsoft"></a>Persönlicher Support von Microsoft
 
-Wenn Sie Unterstützung von Microsoft wünschen, können Sie im Office 365 Admin Center eine Serviceanfrage übermitteln oder sich telefonisch an unsere Mitarbeiter wenden. Abonnenten von Premier Support erhalten besondere Support-Optionen.
+Sie können Hilfe von Microsoft erhalten, indem Sie eine neue Serviceanfrage im Microsoft 365 Admin Center starten oder indem Sie das Telefon anrufen. Abonnenten von Premier Support erhalten besondere Support-Optionen.
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Support für Abonnenten von Microsoft Premier Support
 
@@ -48,7 +48,7 @@ Weitere Informationen dazu, wie Ihre Organisation ihre IT-Investitionen mit Prem
   
 ### <a name="ask-for-help-on-the-web"></a>Unterstützung im Internet
 
-1. Melden Sie sich beim Office 365 Admin Center an.
+1. Melden Sie sich beim Microsoft 365 Admin Center an.
     
 2. Wechseln Sie zu **Support** \> **Kundensupport anfordern** \> **Neue Serviceanfrage**
     
@@ -56,7 +56,7 @@ Weitere Informationen dazu, wie Ihre Organisation ihre IT-Investitionen mit Prem
     
 ### <a name="ask-for-help-on-the-telephone"></a>Unterstützung per Telefon
 
-1. Melden Sie sich beim Office 365 Admin Center an.
+1. Melden Sie sich beim Microsoft 365 Admin Center an.
     
 2. Wechseln Sie bei allgemeinen Problemen mit Produkten zu **Support** \> **Kundensupport anfordern** \> **Technischen Support anrufen**.
     
@@ -70,19 +70,19 @@ Microsoft bietet lokale oder gebührenfreie Telefonnummern für den Produktsuppo
   
 |**Land oder Region**|**Fragen vor dem Kauf und zur Abrechnung**|**Fragen an den technischen Support**|
 |:-----|:-----|:-----|
-|Brasilien  <br/> |Gebührenfreie Rufnummer: 08007621146          Lokale Rufnummer: 1147001999  <br/> |Wie vorherige  <br/> |
-|Frankreich  <br/> |Gebührenfreie Rufnummer: 0805 540 594           Lokale Rufnummer: 01 57 32 42 97  <br/> |Wie vorherige  <br/> |
-|Deutschland  <br/> |Gebührenfreie Rufnummer: 0800 589 2332           Lokale Rufnummer: 069 380 789 508  <br/> |Wie vorherige  <br/> |
+|Brasilien  <br/> |Gebührenfreie Rufnummer: 08007621146          Lokale Rufnummer: 1147001999  <br/> |Gleich  <br/> |
+|Frankreich  <br/> |Gebührenfreie Rufnummer: 0805 540 594           Lokale Rufnummer: 01 57 32 42 97  <br/> |Gleich  <br/> |
+|Deutschland  <br/> |Gebührenfreie Rufnummer: 0800 589 2332           Lokale Rufnummer: 069 380 789 508  <br/> |Gleich  <br/> |
 |Japan  <br/> |Gebührenfreie Rufnummer: 0120-628860          Lokale Rufnummer: 343326257  <br/> |Gebührenfreie Rufnummer: 0120-996680          Lokale Rufnummer: 357679793  <br/> |
-|Korea  <br/> |Gebührenfreie Rufnummer: 080-495-0880          Lokale Rufnummer: 234831937  <br/> |Wie vorherige  <br/> |
-|Spanien  <br/> |Gebührenfreie Rufnummer: 900 814 197          Lokale Rufnummer: 912 718 160  <br/> |Wie vorherige  <br/> |
+|Korea  <br/> |Gebührenfreie Rufnummer: 080-495-0880          Lokale Rufnummer: 234831937  <br/> |Gleich  <br/> |
+|Spanien  <br/> |Gebührenfreie Rufnummer: 900 814 197          Lokale Rufnummer: 912 718 160  <br/> |Gleich  <br/> |
 |Vereinigtes Königreich  <br/> |Gebührenfreie Rufnummer: 0800 032 6417          Lokale Rufnummer: 0203 450 6455  <br/> |Wie vorherige  <br/> |
 |Vereinigte Staaten  <br/> |Gebührenfreie Rufnummer: 1-877-913-2707  <br/> |Gebührenfreie Rufnummer: 1-800-865-9408  <br/> |
    
 ## <a name="for-more-information-about-eop-documentation"></a>Weitere Informationen zur EOP-Dokumentation
 
-[Copyrighthinweise für Drittanbieterprodukte](third-party-copyright-notices.md)
+[Copyright Hinweise für Drittanbieter](third-party-copyright-notices.md)
   
-[Barrierefreiheit für Menschen mit Behinderung](accessibility-for-people-with-disabilities.md)
+[Barrierefreiheit für Personen mit Einschränkungen](accessibility-for-people-with-disabilities.md)
   
 

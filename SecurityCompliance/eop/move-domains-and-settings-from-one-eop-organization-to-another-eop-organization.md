@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden.
-ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 4cc3c7273a06374050f705f51d6b3d85fa8e037c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341556"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670590"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden. 
   
 > [!NOTE]
->  Einstellungen können nur zuverlässig von einer eigenständigen (Standard) EOP-Organisation zu einem anderen EOP-Standard oder einer Exchange Enterprise CAL with Services (EOP Premium)-Organisation oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EOP-Standardorganisationen nicht unterstützt werden, sind die Verschiebungen von einer EOP Premium-Organisation zu einer EOP-Standardorganisation möglicherweise nicht erfolgreich. > diese Anweisungen gelten nur für EOP-Filter Organisationen. Es gibt weitere Überlegungen beim Wechsel von einer Exchange Online-Organisation zu einer anderen Exchange Online-Organisation. Exchange Online-Organisationen sind für diese Anweisungen außerhalb des Bereichs. 
+>  Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EOP-Standardorganisationen nicht unterstützt werden, sind die Verschiebungen von einer EOP Premium-Organisation zu einer EOP-Standardorganisation möglicherweise nicht erfolgreich. >  Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt. 
   
 Im folgenden Beispiel wurde Contoso, Ltd. mit Contoso Suites zusammengeführt. Auf dem folgenden Bild ist der Prozess für das Verschieben von Domänen, E-Mail-Benutzern und Gruppen sowie Einstellungen aus der EOP-Quellorganisation (contoso.onmicrosoft.com) zur EOP-Zielorganisation (contososuites.onmicrosoft.com) dargestellt:
   
@@ -58,22 +58,22 @@ Als Nächstes können Sie alle Einstellungen sammeln und sie in eine XML-Datei e
   
 Nachdem Sie eine Verbindung mit der Remote Windows PowerShell hergestellt haben, erstellen Sie in einem leicht zu findenden Speicherort ein Verzeichnis mit dem Namen "Export", und wechseln Sie in dieses Verzeichnis. Beispiel:
   
-```
+```Powershell
 mkdir C:\EOP\Export
 ```
 
-```
+```Powershell
 cd C:\EOP\Export
 ```
 
-Das folgende Skript kann verwendet werden, um alle e-Mail-Benutzer, Gruppen, Antispam-Einstellungen, Antischadsoftware-Einstellungen, Connectors und Nachrichtenfluss Regeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, und fügen Sie ihn in einen Texteditor wie Notepad ein, speichern Sie die Datei als Source_EOP_Settings. ps1 im soeben erstellten Export Verzeichnis, und führen Sie den folgenden Befehl aus:
+Das folgende Skript kann verwendet werden, um alle e-Mail-Benutzer, Gruppen, Antispam-Einstellungen, Antischadsoftware-Einstellungen, Connectors und Nachrichtenfluss Regeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei als Source_EOP_Settings.ps1 im eben erstellten Verzeichnis "Export", und führen Sie den folgenden Befehl aus:
   
-```
+```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
-```
+```Powershell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -141,22 +141,22 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 
 Führen Sie die folgenden Befehle im Export-Verzeichnis aus, um die XML-Dateien mit der Zielorganisation zu aktualisieren. Ersetzen Sie contoso.onmicrosoft.com und contososuites.onmicrosoft.com durch Ihre Quell- und Zielorganisationsnamen.
   
-```
+```Powershell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
 
 ## <a name="step-2-add-domains-to-the-target-organization"></a>Schritt 2: Hinzufügen von Domänen zur Zielorganisation
 
-Fügen Sie Domänen zur Zielorganisation hinzu, indem Sie das folgende Skript verwenden. Kopieren Sie den Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie das Skript unter C:\EOP\Export\Add_Domains.ps1, und führen Sie den folgenden Befehl aus:
+Fügen Sie Domänen zur Zielorganisation hinzu, indem Sie das folgende Skript verwenden. Kopieren Sie den Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie das Skript unter C:\EOP\Export\Add_Domains.ps1, und führen Sie den folgenden Befehl aus:
   
-```
+```Powershell
 &amp; "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 Diese Domänen werden nicht überprüft und können nicht zum Weiterleiten von E-Mails verwendet werden. Sie können aber die benötigten Informationen sammeln, um die Domänen zu überprüfen, und schließlich Ihre MX-Einträge für den neuen Mandanten aktualisieren.
   
-```
+```Powershell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -172,21 +172,21 @@ Foreach ($domain in $Domains) {
 
 ```
 
-Jetzt können Sie die Informationen aus der Office 365-Verwaltungskonsole Ihrer Zielorganisation sammeln und überprüfen, sodass Sie Ihre Domänen bei Bedarf schnell überprüfen können:
+Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center ihrer Zielorganisation überprüfen und sammeln, damit Sie Ihre Domänen schnell überprüfen können, wenn der Zeitpunkt gekommen ist:
   
-1. Melden Sie sich bei der Office 365-Verwaltungskonsole unter [https://portal.office.com](https://portal.office.com) an.
+1. Melden Sie sich im Microsoft 365 Admin Center unter [https://portal.office.com](https://portal.office.com)an.
     
 2. Klicken Sie auf **Domänen**.
     
 3. Klicken Sie auf die einzelnen **Setup starten**-Links, und fahren Sie dann mit dem Setup-Assistenten fort. 
     
-4. Wählen Sie auf der Seite " **Besitz Bestätigung bestätigen** " **unter schrittweise Anweisungen für diesen Schritt mit**die Option **Allgemeine Anweisungen**aus.
+4. On the **Confirm ownership** page, for **See step-by-step instructions for performing this step with**, select **General instructions**.
     
 5. Protokollieren Sie den MX- oder TXT-Eintrag, den Sie für die Überprüfung Ihrer Domäne benötigen, und beenden Sie den Setup-Assistenten.
     
 6. Fügen Sie die TXT-Überprüfungseinträge zu Ihren DNS-Einträgen hinzu. Dadurch können Sie die Domänen in der Quellorganisation schneller überprüfen, nachdem sie aus der Zielorganisation entfernt wurden. Weitere Informationen über das Konfigurieren des DNS finden Sie unter [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
     
-## <a name="step-3-force-senders-to-queue-mail"></a>Schritt 3: Erzwingen, dass Absender-E-Mails in die Warteschlange kommen
+## <a name="step-3-force-senders-to-queue-mail"></a>Schritt 3: Erzwingen, dass Absender-E-Mails in die Warteschlange kommen
 
 Beim Verschieben Ihrer Domänen von einem Mandanten zu einem anderen müssen Sie die Domänen aus der Quellorganisation löschen und sie in Ihrer Zielorganisation überprüfen. Bei diesem Vorgang können keine E-Mails über EOP weitergeleitet werden.
   
@@ -203,11 +203,11 @@ Weitere Informationen über das Konfigurieren des DNS finden Sie unter [Erstelle
 
 Das folgende Skript entfernt Benutzer, Gruppen und Domänen aus dem Quellmandanten, indem die Remote Windows PowerShell für Windows Azure Active Directory verwendet wird. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Remove_Users_and_Groups.ps1, und führen Sie den folgenden Befehl aus:
   
-```
-&amp; "C:\EOP\Export\Remove_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,23 +243,23 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Schritt 5: Überprüfen von Domänen für die Zielorganisation
 
-1. Melden Sie sich bei der Office 365-Verwaltungskonsole unter [https://portal.office.com](https://portal.office.com) an.
+1. Melden Sie sich im Admin Center unter [https://portal.office.com](https://portal.office.com)an.
     
 2. Klicken Sie auf **Domänen**.
     
 3. Klicken Sie auf die einzelnen **Setup starten**-Links für die Zieldomäne, und fahren Sie mit dem Setup-Assistenten fort. 
     
-## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Schritt 6: Hinzufügen von E-Mail-Benutzern und Gruppen zur Zielorganisation
+## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Schritt 6: Hinzufügen von E-Mail-Benutzern und Gruppen zur Zielorganisation
 
 Eine bewährte Methode für EOP ist die Verwendung von Azure Active Directory für die Synchronisierung Ihres lokalen Active Directory mit Ihrem Zielmandanten. Weitere Informationen über die Vorgehensweise finden Sie unter "Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung" in [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md). Sie können auch das folgende Skript verwenden, um Ihre Benutzer und Gruppen aus dem Quellmandanten erneut zu erstellen. Hinweis: Benutzerkennwörter können nicht verschoben werden. Neue Benutzerkennwörter werden in der Datei UsersAndGroups.ps1 erstellt und gespeichert. (Weitere Informationen über das Zurücksetzen von Benutzerkennwörtern finden Sie unter [Zurücksetzen von Benutzerkennwörtern](https://office.microsoft.com/en-us/office365-suite-help/reset-a-user-s-password-HA102816058.aspx).)
   
 Kopieren Sie für die Verwendung des Skripts den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Add_Users_and_Groups.ps1, und führen Sie den folgenden Befehl aus:
   
-```
-&amp; "C:\EOP\Export\Add_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -608,13 +608,13 @@ Sie können das folgende Skript aus dem Export-Verzeichnis ausführen, während 
   
 Kopieren Sie den Skripttext, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Import_Settings.ps1, und führen Sie den folgenden Befehl aus:
   
-```
-&amp; "C:\EOP\Export\Import_Settings.ps1"
+```Powershell
+& "C:\EOP\Export\Import_Settings.ps1"
 ```
 
 Dieses Skript importiert die XML-Dateien und erstellt eine Windows PowerShell-Skriptdatei mit dem Namen Settings.ps1, die Sie überprüfen, bearbeiten und dann ausführen können, um Ihre Schutz- und Nachrichtenübermittlungseinstellungen erneut zu erstellen.
   
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -924,8 +924,8 @@ if($HostedContentFilterPolicyCount -gt 0){
  
 ```
 
-## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Schritt 8: Wiederherstellen Ihrer DNS-Einstellungen zum Beenden der E-Mail-Warteschlange
+## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Schritt 8: Wiederherstellen Ihrer DNS-Einstellungen zum Beenden der E-Mail-Warteschlange
 
-Wenn Sie Ihre MX-Einträge auf eine ungültige Adresse festgelegt haben, damit Absender-E-Mails während Ihres Übergangs in der Warteschlange aufgereiht werden, müssen Sie sie auf den korrekten Wert zurücksetzen, wie in der [Office 365-Verwaltungskonsole](https://portal.office.com) angegeben. Weitere Informationen über das Konfigurieren des DNS finden Sie unter [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Wenn Sie Ihre MX-Einträge auf eine ungültige Adresse festlegen, damit die Absender e-Mails während des Übergangs in die Warteschlange eingereiht werden, müssen Sie Sie auf den richtigen Wert festlegen, wie im [Admin Center](https://admin.microsoft.com)angegeben. Weitere Informationen über das Konfigurieren des DNS finden Sie unter [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
 

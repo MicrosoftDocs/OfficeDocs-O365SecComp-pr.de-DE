@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben im Exchange Admin Center (EAC) oder mit Windows Remote-PowerShell ausführen und andere im Microsoft Office 365 Admin Center durchgeführte Verwaltungsaufgaben überprüfen.
-ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben in der Exchange-Verwaltungskonsole (EAC) oder mithilfe der Remote-Windows PowerShell ausführen und andere Verwaltungsaufgaben im Microsoft 365 Admin Center überprüfen.
+ms.openlocfilehash: 52d423960444605382bd0314a5c12114fad755a2
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341656"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670400"
 ---
 # <a name="manage-recipients-in-eop"></a>Verwalten von Empfängern in EOP
 
-Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben im Exchange Admin Center (EAC) oder mit Windows Remote-PowerShell ausführen und andere im Microsoft Office 365 Admin Center durchgeführte Verwaltungsaufgaben überprüfen.
+Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben in der Exchange-Verwaltungskonsole (EAC) oder mithilfe der Remote-Windows PowerShell ausführen und andere Verwaltungsaufgaben im Microsoft 365 Admin Center überprüfen.
   
 EOP unterstützt die folgenden Typen von Empfängern:
   

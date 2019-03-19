@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center, um nach Inhalten in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Keyword-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzuschränken. Dann können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist auch ein effektives Tool, um nach Inhalten zu suchen, die möglicherweise mit einer DSGVO-Anforderung verbunden sind.
-ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296358"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670720"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
@@ -33,7 +33,7 @@ Sie können das eDiscovery-Tool für die Inhaltssuche im Office 365 &amp; Securi
     
 - Skype for Business-Unterhaltungen
     
-- Microsoft Teams 
+- Microsoft Teams 
     
 - Office 365-Gruppen
     
@@ -54,7 +54,7 @@ Um Zugriff auf die Seite " **Inhaltssuche** " zum Ausführen von Suchvorgängen 
     
     ![Die neue Dropdownliste für die Suche](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
-    Sie können eine der folgenden Optionen auswählen:
+    Verwenden Sie die Registerkarte Interne DNS-Lookups, um festzulegen, ob die DNS-Server verwendet werden sollen, die für einen auf diesem Server installierten Netzadapter konfiguriert sind, oder ob beim Auflösen der Adressen von E-Mail-Servern für die interne Nachrichtenzustellung bestimmte DNS-Server verwendet werden sollen. Interne DNS-Server werden zum Auflösen von IP-Adressen für Server innerhalb der Organisation verwendet.
     
   - **Guided search** -mit dieser Option wird ein Assistent gestartet, der Sie durch die Erstellung der Suche führt. Die Benutzeroberfläche, um inhaltsspeicherorte auszuwählen und die Suchabfrage zu erstellen, ist identisch mit der **neuen Such** Option. 
     
@@ -70,7 +70,7 @@ Um Zugriff auf die Seite " **Inhaltssuche** " zum Ausführen von Suchvorgängen 
     
     ![Angeben von Stichwörtern, Bedingungen und Speicherorten für die Suche](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Zu suchende Schlüsselwörter** -geben Sie im Feld **Stichwörter** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften wie Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde, angeben. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**und **near**. Sie können auch nach vertraulichen Informationen (wie Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen.
+- **Zu suchende Schlüsselwörter** -geben Sie im Feld **Stichwörter** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften , z. B. Sende- und Empfangsdatum, oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum der letzten Dokumentänderung. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**und **near**. Sie können auch nach vertraulichen Informationen (wie Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen.
     
     Alternativ können Sie auf das Kontrollkästchen **Keyword-Liste anzeigen** klicken und in jeder Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter in jeder Zeile durch einen logischen Operator ( **c:s**) verbunden, der in der Funktionalität mit dem **or** -Operator in der erstellten Suchabfrage vergleichbar ist. 
     
@@ -78,7 +78,7 @@ Um Zugriff auf die Seite " **Inhaltssuche** " zum Ausführen von Suchvorgängen 
 
     [!NOTE] Um Probleme zu vermeiden, die durch umfangreiche Stichwortlisten verursacht werden, sind Sie jetzt auf maximal 20 Zeilen in der Keyword-Liste beschränkt.
     
-- **Bedingungen** : Sie können Suchbedingungen hinzufügen, um eine Suche einzuschränken und eine genauere Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zu der Suchabfrage hinzu, die erstellt und beim Starten der Suche ausgeführt wird. Eine Bedingung ist logisch mit der Stichwortabfrage (angegeben im Stichwortfeld) durch einen logischen Operator ( **c:c**) verbunden, der in der Funktionalität mit dem **and-** Operator vergleichbar ist. Dies führt dazu, dass Elemente sowohl die Stichwortabfrage als auch eine oder mehrere Bedingungen erfüllen müssen, die in die Ergebnisse eingeschlossen werden sollen. Auf diese Weise können Sie Ihre Ergebnisse einschränken. Eine Liste und Beschreibung der Bedingungen, die Sie in einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchbedingungen" in [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
+- **Bedingungen** : Sie können Suchbedingungen hinzufügen, um eine Suche einzuschränken und eine genauere Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zu der Suchabfrage hinzu, die erstellt und beim Starten der Suche ausgeführt wird. Eine Bedingung ist logisch mit der Stichwortabfrage (angegeben im Stichwortfeld) durch einen logischen Operator ( **c:c**) verbunden, der in der Funktionalität mit dem **and-** Operator vergleichbar ist. Dies führt dazu, dass Elemente sowohl die Stichwortabfrage als auch eine oder mehrere Bedingungen erfüllen müssen, die in die Ergebnisse eingeschlossen werden sollen. Auf diese Weise können Sie Ihre Ergebnisse mit Bedingungen eingrenzen. Eine Liste und Beschreibung der Bedingungen, die Sie in einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchbedingungen" in [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Standorte** – wählen Sie die zu durchsuchenden inhaltsspeicherorte aus.
     
@@ -152,11 +152,11 @@ Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse
   
 So exportieren Sie Suchergebnisse:
   
-1. Klicken Sie auf der Seite **Inhaltssuche** im &amp; Security Compliance Center auf **Öffnen** , und klicken Sie dann auf die Suche, für die Sie die Suchergebnisse exportieren möchten. 
+1. Klicken Sie auf der Seite **Inhaltssuche** im &amp; Security Compliance Center auf die Suche, für die Sie die Suchergebnisse exportieren möchten. 
     
 2. Klicken Sie ![auf der Seite Fly Out auf Suchergebnis Symbol](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportieren **mehr**, und klicken Sie dann auf **Ergebnisse exportieren**. Beachten Sie, dass Sie einen Suchergebnisbericht auch exportieren können.
     
-3. Füllen Sie die Abschnitte auf der Fly-Out-Navigation der **Exportergebnisse** aus. Stellen Sie sicher, dass Sie Bildlaufleiste verwenden, um alle Exportoptionen anzuzeigen. 
+3. Führen Sie die Abschnitte auf der Seite **Export results** Fly Out aus. Verwenden Sie unbedingt die Bildlaufleiste, um alle Exportoptionen anzuzeigen. 
     
 Ausführlichere Anweisungen und Tipps zur Problembehandlung finden Sie unter:
   
@@ -209,7 +209,7 @@ Beachten Sie bei der Verwendung der Stichwortliste zum Erstellen einer Suchabfra
   
 - Sie müssen das Kontrollkästchen **Keyword-Liste anzeigen** aktivieren und dann jedes Schlüsselwort in eine separate Zeile eingeben, um eine Suchabfrage zu erstellen, in der die Schlüsselwörter (oder Stichwort Ausdrücke) in jeder Zeile durch den **or** -Operator verbunden werden. Wenn Sie nur eine Liste mit Stichwörtern in das Stichwortfeld einfügen oder die **Eingabe** Taste drücken, nachdem Sie ein Schlüsselwort eingegeben haben, werden Sie nicht durch den **or** -Operator verbunden. Hier sind falsch und richtig Beispiel für das Hinzufügen einer Liste von Schlüsselwörtern. 
     
-    **Falsche**
+    **Falsch**
     
     ![Die falsche Methode zum Formatieren einer Schlüsselwortliste (durch Einfügen der Liste in das Stichwortfeld)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
@@ -219,7 +219,7 @@ Beachten Sie bei der Verwendung der Stichwortliste zum Erstellen einer Suchabfra
   
 - Sie können auch eine Liste von Schlüsselwörtern oder Keyword-Phrasen in einer Excel-Datei oder in einer nur-Text-Datei vorbereiten und dann Ihre Liste in die Stichwortliste kopieren und einfügen. Hierzu müssen Sie das Kontrollkästchen **Keyword-Liste anzeigen** aktivieren. Klicken Sie dann auf die erste Zeile in der Stichwortliste, und fügen Sie Ihre Liste ein. Jede Zeile aus der Excel-oder Textdatei wird in eine separate Zeile in der Stichwortliste eingefügt. 
     
-- Nachdem Sie eine Abfrage mithilfe der Stichwortliste erstellt haben, empfiehlt es sich, die Suchabfrage Syntax zu überprüfen, um die beabsichtigte Suchabfrage zu aktivieren. In der Suchabfrage, die im Detailbereich unter **Query** angezeigt wird, werden die Schlüsselwörter durch den Text **(c:s)** getrennt. Dies gibt an, dass die Schlüsselwörter durch einen logischen Operator ähnlich der Funktionalität mit dem **or** -Operator verbunden sind. Wenn Ihre Suchabfrage Bedingungen enthält, werden die Schlüsselwörter und die Bedingungen entsprechend durch den Text **(c:c)** getrennt. Dies weist darauf hin, dass die Schlüsselwörter mit den Bedingungen mit einem logischen Operator verbunden sind, der in der Funktionalität mit dem **und** Operator. Nachfolgend finden Sie ein Beispiel für die Suchabfrage (wird im Detailbereich angezeigt), die bei Verwendung der Stichwortliste und einer Bedingung resultiert. 
+- Nachdem Sie eine Abfrage mithilfe der Stichwortliste erstellt haben, empfiehlt es sich, die Suchabfrage Syntax zu überprüfen, um die beabsichtigte Suchabfrage zu aktivieren. In der Suchabfrage, die im Detailbereich unter **Query** angezeigt wird, werden die Schlüsselwörter durch den Text **(c:s)** getrennt. Dies gibt an, dass die Schlüsselwörter durch einen logischen Operator ähnlich der Funktionalität mit dem **or** -Operator verbunden sind. Wenn Ihre Suchabfrage Bedingungen enthält, werden die Schlüsselwörter und die Bedingungen entsprechend durch den Text **(c:c)** getrennt. Dies gibt an, dass die Schlüsselwörter mit den Bedingungen mit einem logischen Operator ähnlich in der Funktionalität mit dem **and-** Operator verbunden sind. Nachfolgend finden Sie ein Beispiel für die Suchabfrage (wird im Detailbereich angezeigt), die bei Verwendung der Stichwortliste und einer Bedingung resultiert. 
     
     ![Beispiel für die Abfrage, die erstellt wird, wenn die Stichwortliste und eine Bedingung verwendet wird](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -342,7 +342,7 @@ Im Vorschaubereich können Sie eine Vorschau der unterstützten Dateitypen anzei
     
 Darüber hinaus werden die folgenden Dateicontainer Typen unterstützt. Sie können die Liste der Dateien im Container im Vorschaubereich anzeigen.
   
-- ZIP
+- . zip
     
 - . gzip
     

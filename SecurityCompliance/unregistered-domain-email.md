@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie eine große Anzahl von nicht registrierten Domänen-e-Mails senden, besteht das Risiko, dass Ihre e-Mails blockiert werden. Lesen Sie diesen Artikel, um mehr zu erfahren.
-ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276225"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670540"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Nicht registrierte Domänen-e-Mails: was Sie wissen müssen
 
@@ -37,7 +37,7 @@ Nach der Kompromittierung werden die Mandanten daran gehindert, ausgehende e-Mai
 
 Es gibt mehrere Schritte, die Sie ausführen müssen, wenn Sie für das Senden von nicht registrierten Domänen gesperrt werden:
 
-1. Stellen Sie sicher, dass Sie alle Ihre Domänen in Office 365 Admin Center registrieren. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Stellen Sie sicher, dass Sie alle Ihre Domänen in Microsoft 365 Admin Center registrieren. Weitere Informationen finden Sie [hier](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Suchen Sie nach ungewöhnlichen Konnektoren. Böswillige Akteure erstellen häufig neue eingehende Connectors in Ihrem Office 365-Mandanten, um Spam zu senden. Weitere Informationen zur Überprüfung ihrer Konnektoren finden Sie [hier](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 

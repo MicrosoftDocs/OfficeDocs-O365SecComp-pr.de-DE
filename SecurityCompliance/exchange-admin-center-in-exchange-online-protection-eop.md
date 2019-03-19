@@ -15,12 +15,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d1e3ee90f3df20359634ae55286270b49d766324
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220465"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670430"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Admin Center in Exchange Online Protection 
 
@@ -32,7 +32,7 @@ Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen find
   
 ## <a name="accessing-the-eac"></a>Zugreifen auf die Exchange-Verwaltungskonsole
 
-In den meisten Fällen greifen EOP-Kunden über das Office 365 Admin Center auf die Exchange-Verwaltungskonsole (EAC) zu. Einen Link zu EOP finden Sie im Dropdownmenü der **Admin**-Kachel, die sich neben der **Ich**-Kachel befindet. Klicken Sie auf die **Admin**-Kachel, und wählen Sie im Dropdownmenü **Exchange Online Protection**, um die Exchange-Verwaltungskonsole aufzurufen. 
+In den meisten Fällen greifen EOP-Kunden über das Microsoft 365 Admin Center auf die Exchange-Verwaltungskonsole zu. Einen Link zu EOP finden Sie im Dropdownmenü der **Admin**-Kachel, die sich neben der **Ich**-Kachel befindet. Klicken Sie auf die **Admin**-Kachel, und wählen Sie im Dropdownmenü **Exchange Online Protection**, um die Exchange-Verwaltungskonsole aufzurufen. 
   
 Sie können auch über den folgenden URL direkt auf das EAC-Zeichen auf der Seite zugreifen: https://admin.protection.outlook.com/ecp/\<companydomain\>. Beispiel: https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Nachdem Sie Ihre Benutzeranmeldeinformationen eingegeben haben, gelangen Sie direkt zur Exchange-Verwaltungskonsole.
   
@@ -68,7 +68,7 @@ Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie au
 |:-----|:-----|:-----|
 |![Hinzufügen (Symbol)](media/ITPro-EAC-AddIcon.gif)           <br/> |Hinzufügen, Neu  <br/> |Über dieses Symbol können Sie ein neues Objekt erstellen. Bei einigen dieser Symbole gibt es einen dazugehörigen nach unten zeigenden Pfeil, auf den Sie klicken können, um weitere Objekte anzuzeigen, die Sie erstellen können.  <br/> |
 |![Bearbeitungssymbol](media/ITPro-EAC-EditIcon.gif)           <br/> |Bearbeiten  <br/> |Über dieses Symbol können Sie ein Objekt bearbeiten.  <br/> |
-|![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Löschen  <br/> |Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.  <br/> |
+|![Löschen (Symbol)](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Delete  <br/> |Über dieses Symbol können Sie ein Objekt löschen. Bei einigen Löschsymbolen gibt es einen nach unten zeigenden Pfeil, auf den Sie zum Einblenden weiterer Optionen klicken können.  <br/> |
 |![Suchen (Symbol)](media/ITPro-EAC-.gif)           <br/> |Suche  <br/> |Über dieses Symbol können Sie ein Suchfeld öffnen, in das Sie den Suchbegriff für ein zu suchendes Objekt eingeben können.  <br/> |
 |![Aktualisieren (Symbol)](media/ITPro-EAC-RefreshIcon.gif)           <br/> |Aktualisieren  <br/> |Über dieses Symbol können Sie die Listenansicht aktualisieren.  <br/> |
 |![Weitere Optionen (Symbol)](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |Weitere Optionen  <br/> |Über dieses Symbol können Sie mehrere Aktionen anzeigen, die Sie auf die Objekte dieser Registerkarte anwenden können. Wenn Sie z. B. unter **Empfänger \> Benutzer** auf dieses Symbol klicken, wird die Option **Erweiterte Suche** angezeigt.  <br/> |
@@ -79,7 +79,7 @@ Für die meisten Registerkarten wird eine Symbolleiste angezeigt, nachdem Sie au
 
 Wenn Sie auf eine Registerkarte klicken, sehen Sie in den meisten Fällen eine Listenansicht. In der Listenansicht der Exchange-Verwaltungskonsole können ungefähr 10.000 Objekte angezeigt werden. Darüber hinaus können Sie die Ergebnisse seitenweise anzeigen.
   
-### <a name="details-pane"></a>Detailbereich
+### <a name="details-pane"></a>Bereich "Details"
 
 Wenn Sie in der Listenansicht ein Objekt auswählen, werden Informationen zu diesem Objekt im Detailbereich angezeigt. In einigen Fällen enthält der Detailbereich Verwaltungsaufgaben.
   
@@ -139,7 +139,7 @@ Die folgenden Sprachen werden für Exchange Online Protection unterstützt und z
     
 - Französisch
     
-- Galicisch
+- Galizisch
     
 - Deutsch
     
