@@ -3,7 +3,7 @@ title: Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat I
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,26 +14,26 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Nachrichten nach bösartigen e-Mails suchen und diese untersuchen.
-ms.openlocfilehash: d5b08338bc0a3a6a88ea498861ab9e27522b759d
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Reaktionsfunktionen bösartige e-Mails suchen und untersuchen können.
+ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241907"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692454"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Intelligence)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Advanced Threat Protection Plan 2)
 
-Mit [Office 365 Threat Intelligence](office-365-ti.md) können Sie Aktivitäten untersuchen, die Ihre Benutzer gefährden und Maßnahmen zum Schutz Ihrer Organisation ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, finden und untersuchen Sie verdächtige e-Mail-Nachrichten, die an Ihre Benutzer übermittelt wurden. Verwenden Sie dazu den [Threat Explorer](get-started-with-ti.md#threat-explorer).
+Mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) können Sie Aktivitäten untersuchen, die Ihre Benutzer gefährden und Maßnahmen zum Schutz Ihrer Organisation ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, finden und untersuchen Sie verdächtige e-Mail-Nachrichten, die an Ihre Benutzer übermittelt wurden. Verwenden Sie dazu den [Threat Explorer](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> Beginnend im Februar 2019 und über die nächsten Monate hinaus wird Office 365 Threat Intelligence zu Office 365 Advanced Threat Protection Plan 2 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ist jetzt Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen...
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
   
-- Ihre Organisation verfügt über [office 365 Threat Intelligence](office-365-ti.md) und [weist benutzern in Office 365 for Business Lizenzen zu](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Ihre Organisation verfügt über [office 365 Advanced Threat Protection-Plan 2](office-365-ti.md) und [weist benutzern in Office 365 für Unternehmen Lizenzen zu](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
 - [Office 365 die Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
     
@@ -70,7 +70,7 @@ Böswillige Angreifer können e-Mails an Ihre Benutzer senden, um Ihre Anmeldein
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Informationen zu Bedrohungen in Office 365](office-365-ti.md)
+[Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md)
   
 [Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
   

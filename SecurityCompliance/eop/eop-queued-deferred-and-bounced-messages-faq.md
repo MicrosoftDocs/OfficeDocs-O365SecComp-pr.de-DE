@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: Dieses Thema bietet Antworten auf häufig gestellte Fragen zu Nachrichten, die während des Microsoft Exchange Online Protection (EOP)-Filterungsprozesses in eine Warteschlange eingereiht, verzögert oder nicht zugestellt wurden.
-ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e8fdb07d11a1f540e94b82730eb848a97f51523a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686425"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693204"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten
 
@@ -32,7 +31,7 @@ A. Nachrichten werden zurückgehalten, wenn keine Verbindung zum Server des Empf
   
  **F. Wie lange werden Nachrichten zurückgestellt, und in welchem Intervall wird der Übertragungsversuch wiederholt?**
   
-A. Nachrichten in Verzögerungen bleibt in unseren Warteschlangen für 2 Tage. Nachricht an Eingabeversuchen basieren auf den Fehler, die wir wieder aus der Aufgabenliste des Empfängers e-Mail-System erhalten. Die ersten Paar Rückstellungen sind 15 Minuten oder weniger mit folgenden Wiederholungen (über die nächste halber zwölf oder dies) erhöhen das Intervall über mehrere Wiederholungsversuche auf ein Maximum von 60 Minuten. Die Erweiterung von Intervall Dauer ist dynamisch, Berücksichtigung mehrerer Variablen wie Warteschlange Größen und interne Nachrichtenpriorität. In Basic ist es 15 Minuten (oder weniger) zum Starten von dort in den nächsten paar Stunden auf erweitert max 60 Minuten.
+A. Zurückgestellte Nachrichten bleiben 2 Tage lang in der Warteschlange. Wiederholungsversuche hängen davon ab, welcher Fehler vom E-Mail-System des Empfängers zurückgegeben wird. Die ersten paar Verzögerungen sind 15 Minuten oder weniger, bei nachfolgenden Wiederholungen (in den nächsten zwölf Jahren) wird das Intervall über mehrere Versuche auf maximal 60 Minuten erhöht. Die Intervalldauer-Erweiterung ist dynamisch und unter Berücksichtigung mehrerer Variablen wie Warteschlangengrößen und interner Nachrichtenpriorität. In Basic ist es 15 Minuten (oder weniger), um zu starten und dann von dort in den nächsten Stunden auf 60 Minuten zu erweitern.
   
  **F. Wie werden Nachrichten aus einer Warteschlange verteilt, nachdem mein E-Mail-Server wiederhergestellt ist?**
   

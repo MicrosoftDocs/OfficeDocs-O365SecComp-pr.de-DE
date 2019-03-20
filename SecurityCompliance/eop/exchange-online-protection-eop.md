@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Es folgen einige Punkte, die Sie beachten sollten, bevor Sie mit der Arbeit mit EOP beginnen.
-ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341746"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692324"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -42,7 +41,7 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
     
 - [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md) Schrittweise Anleitung zum Einrichten des EOP-Diensts sowie Links zu weiteren Informationen. 
     
-- [Wechseln Sie zu EoP von Google Postini, der Barracuda-Spam-und-Viren Firewall oder Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Beschreibt das Verfahren für das Wechseln zu EOP von einem anderen e-Mail-Schutz Produkt. 
+- [Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Describes the process for switching to EOP from another email protection product. 
     
 - [Verwalten von Empfängern und Administratorrollengruppen in EOP](manage-recipients-and-admin-role-groups-in-eop.md) Anleitung zum Verwalten von Empfängern und zum Zuweisen von Benutzern zu Administratorrollengruppen. 
     
@@ -58,7 +57,7 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
     
 - [Exchange Admin Center in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) In diesem Artikel wird beschrieben, wie Sie die Verwaltungsschnittstelle des Exchange Admin Centers (EAC) zugreifen und diese navigieren, um den EOP-Dienst zu verwalten. 
     
-- [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Enthält Informationen zur Remote-PowerShell, mit der Sie Ihren EOP-Dienst über die Befehlszeile verwalten können. 
+- [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Provides information about remote PowerShell, which lets you manage your EOP service from the command line. 
     
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support. 
     

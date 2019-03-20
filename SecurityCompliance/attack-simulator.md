@@ -15,16 +15,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als globaler Office 365-Administrator können Sie anGriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
-ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536155"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693664"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
-**Zusammenfassung** Wenn Sie ein globales Office 365-Administrator sind und Ihre Organisation [office 365 Threat Investigation and Response capabilties](office-365-ti.md), können Sie Angriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Dies kann Ihnen dabei helfen, anfällige Benutzer zu identifizieren und zu suchen, bevor sich ein echter Angriff auf Ihr Endergebnis auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
+**Zusammenfassung** Wenn Sie ein globaler Office 365-Administrator sind und Ihre Organisation über [Untersuchungen und Reaktionsmöglichkeiten in office 365](office-365-ti.md)verfügt, können Sie mit Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Ihnen dabei helfen, anfällige Benutzer zu identifizieren und zu suchen, bevor sich ein echter Angriff auf Ihr Endergebnis auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 > [!IMPORTANT]
 > Office 365 Advanced Threat Protection und Threat Investigation and Response (ehemals Threat Intelligence) sind nun Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
@@ -56,7 +56,7 @@ Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen f
     
 - **Die mehrstufige [Authentifizierung (Multi-Factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) , MFA) ist mindestens für das globale Administratorkonto von Office 365 aktiviert**. (Im Idealfall ist MFA für alle Benutzer in Ihrer Organisation aktiviert.)
  
-- **ihre organisation verfügt [über Office 365 Threat Intelligence](office-365-ti.md)**, mit angriffs simulator im &amp; Security Compliance Center (zum **Threat management** \> -angriffs **simulator**)<br/>![Threat Management-anGriffs Simulator](media/ThreatMgmt-AttackSimulator.png)
+- **ihre organisation verfügt [über Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)**, mit angriffs simulator im &amp; Security Compliance Center (zum **Threat management** \> -angriffs **simulator**)<br/>![Threat Management-anGriffs Simulator](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Anzeigename Spear-Phishing-Angriff

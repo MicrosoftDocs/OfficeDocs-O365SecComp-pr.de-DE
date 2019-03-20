@@ -7,7 +7,6 @@ ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,18 +14,18 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert.
-ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215256"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693034"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
-Zur Verwendung mit lokalen Bereitstellungen verwendet die Verwaltung von Informationsrechten (IRM) in Exchange Online die Active Directory-RechteverwaltungsDienste (AD RMS), eine Informationsschutztechnologie in Windows Server 2008 und höher. Der IRM-Schutz wird auf e-Mails angewendet, indem eine AD RMS-Vorlage für Rechte Richtlinien auf eine e-Mail-Nachricht angewandt wird. Rechte werden an die Nachricht selbst angefügt, sodass der Schutz sowohl online als auch offline und innerhalb und außerhalb der Firewall Ihrer Organisation erfolgt.
+Zur Verwendung mit lokalen Bereitstellungen verwendet die Verwaltung von Informationsrechten (IRM) in Exchange Online die Active Directory-RechteverwaltungsDienste (AD RMS), eine Informationsschutztechnologie in Windows Server 2008 und höher. IRM-Schutz wird auf E-Mails angewendet, indem eine AD RMS-Berechtigungsrichtlinienvorlage auf eine E-Mail angewendet wird. Rechte werden der Nachricht selbst zugeordnet, sodass der Schutz sowohl online und offline als auch innerhalb und außerhalb der Firewall der Organisation stattfindet.
   
-In diesem Thema wird gezeigt, wie Sie IRM für die Verwendung eines AD RMS-Servers konfigurieren. Informationen zur Verwendung der neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 mit Azure Active Directory und Azure Rights Management finden Sie in den häufig gestellten [Fragen zur office 365-Nachrichtenverschlüsselung](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert. Informationen zur Verwendung der neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 mit Azure Active Directory und Azure Rights Management finden Sie in den häufig gestellten [Fragen zur office 365-Nachrichtenverschlüsselung](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
   
 Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von Informationsrechten in Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -49,7 +48,7 @@ Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von
 ## <a name="how-do-you-do-this"></a>Wie gehen Sie dazu vor?
 <a name="sectionSection1"> </a>
 
-### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Schritt 1: Verwenden der AD RMS-Konsole für den Export einer vertrauenswürdigen Veröffentlichungsdomäne von einem AD RMS-Server
+### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Schritt 1: Verwenden der AD RMS-Konsole für den Export einer vertrauenswürdigen Veröffentlichungsdomäne von einem AD RMS-Server
 
 Der erste Schritt ist das Exportieren einer vertrauenswürdigen Veröffentlichungsdomäne (TPD) vom lokalen AD RMS-Server in eine XML-Datei. Die vertrauenswürdige Veröffentlichungsdomäne (TPD) beinhaltet die folgenden, für die Verwendung von RMS-Funktionen erforderlichen Einstellungen: 
   
@@ -101,7 +100,7 @@ Führen Sie zur Überprüfung eines erfolgreichen Imports der TPD das Cmdlet **G
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Schritt 3: Verwenden der Exchange-Verwaltungsshell zur Verteilung einer AD RMS-Rechterichtlinienvorlage
 
-Nachdem Sie den TPD importiert haben, müssen Sie sicherstellen, dass eine AD RMS-Vorlage für Rechte Richtlinien verteilt wird. Eine verteilte Vorlage ist für Outlook im Web (ehemals Outlook Web App)-Benutzer sichtbar, die die Vorlagen dann auf eine e-Mail-Nachricht anwenden können.
+Nach dem Import der TPD müssen Sie sicherstellen, dass eine AD RMS-Rechterichtlinienvorlage verteilt wird. Eine verteilte Vorlage ist für Outlook im Web (ehemals Outlook Web App)-Benutzer sichtbar, die die Vorlagen dann auf eine e-Mail-Nachricht anwenden können.
   
 Führen Sie den folgenden Befehl aus, um eine Liste aller Vorlagen in der Standard-TPD anzuzeigen:
   
@@ -109,7 +108,7 @@ Führen Sie den folgenden Befehl aus, um eine Liste aller Vorlagen in der Standa
 Get-RMSTemplate -Type All | fl
 ```
 
-Wenn der Wert des _Type_ -Parameters lautet, wird `Archived`die Vorlage für Benutzer nicht angezeigt. Nur verteilte Vorlagen in der Standard-TPD sind in Outlook im Web verfügbar.
+Wenn der Wert des Parameters  _Type_ `Archived` lautet, ist die Vorlage nicht für Benutzer sichtbar. Nur verteilte Vorlagen in der Standard-TPD sind in Outlook im Web verfügbar.
   
 Führen Sie zum Verteilen einer Vorlage den folgenden Befehl aus:
   

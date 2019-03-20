@@ -6,24 +6,23 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren erhalten Informationen zu den Fehlercodes, die der Nachrichtenübermittlung mithilfe von Connectors in Office 365 (auch bekannt als Nachrichtenfluss-Intelligence) zugeordnet sind.
-ms.openlocfilehash: a679a3a50c2333a9f66509b69ec06ee96960bc83
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218715"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692774"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Mail Flow Intelligence in Office 365
 
-In der Regel verwenden Sie einen Connector zum Weiterleiten von e-Mail-Nachrichten von Ihrer Office 365-Organisation an Ihre lokale e-Mail-Umgebung. Sie können auch einen Connector zum Weiterleiten von Nachrichten von Office 365 an eine Partnerorganisation verwenden. Wenn Office 365 diese Nachrichten nicht über den Connector übermitteln kann, werden Sie in der Warteschlange in Office 365. In Office 365 wird die Übermittlung für jede Nachricht für 48 Stunden fortgesetzt. Nach 48 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht (auch bekannt als NDR oder Bounce-Nachricht) zurückgegeben.
+In der Regel verwenden Sie einen Connector zum Weiterleiten von e-Mail-Nachrichten von Ihrer Office 365-Organisation an Ihre lokale e-Mail-Umgebung. Sie können auch einen Konnektor verwenden, um Nachrichten von Office 365 zu einer Partnerorganisation weiterzuleiten. Wenn Office 365 diese Nachrichten nicht über den Konnektor senden kann, werden sie in die Office 365-Warteschlange gestellt. Office 365 versucht 48 Stunden, die Nachrichten zu senden. Nach 48 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht zurückgegeben (auch bekannt als NDR oder Unzustellbarkeitsnachricht).
 
-Office 365 generiert einen Fehler, wenn eine Nachricht nicht mithilfe eines Connectors übermittelt werden kann. Die häufigsten Fehler und deren Lösungen werden in diesem Thema beschrieben. Kollektiv werden Warteschlangen-und Benachrichtigungsfehler für unzustellbare Nachrichten, die über Connectors gesendet werden, als Nachrichtenübermittlungs _Nachrichten_bezeichnet.
+Office 365 generiert einen Fehler, wenn eine Nachricht nicht mithilfe eines Konnektors gesendet werden kann. In diesem Thema werden die am häufigsten auftretenden Fehler und die dazugehörigen Lösungen beschrieben. Kollektiv werden Warteschlangen-und Benachrichtigungsfehler für unzustellbare Nachrichten, die über Connectors gesendet werden, als Nachrichtenübermittlungs _Nachrichten_bezeichnet.
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>Fehlercode: 450 4.4.312 DNS-Abfragefehler
 
@@ -43,7 +42,7 @@ Dieser Fehler weist in der Regel darauf hin, dass Office 365 versucht hat, eine 
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>Fehlercode: 450 4.4.315 Timeout bei der Verbindung
 
-In der Regel ist dies der Fall, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen kann. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
+In der Regel ist dies der Fall, dass Office 365 keine Verbindung zum Ziel-e-Mail-Server herstellen kann. Die Fehlerdetails erläutern das Problem. Beispiel:
 
 - Der lokale e-Mail-Server ist ausgefallen.
 
@@ -51,7 +50,7 @@ In der Regel ist dies der Fall, dass Office 365 keine Verbindung zum Ziel-e-Mail
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>Wie behebe ich den Fehlercode 450 4.4.315?
 
-- Finden Sie heraus, welches Szenario für Sie gilt, und nehmen Sie die erforderlichen Korrekturen vor. Wenn der e-Mail-Fluss beispielsweise ordnungsgemäß funktioniert hat und Sie die Connectoreinstellungen nicht geändert haben, müssen Sie Ihre lokale e-Mail-Umgebung überprüfen, um festzustellen, ob der Server ausgefallen ist, oder wenn Änderungen an Ihrer Netzwerkinfrastruktur vorgenommen wurden (beispielsweise Sie haben Internetdienstanbieter geändert, sodass Sie jetzt über unterschiedliche IP-Adressen verfügen).
+- Erfahren Sie, welches Szenario für Sie gilt, und nehmen Sie die erforderlichen Korrekturen vor. Wenn der e-Mail-Fluss beispielsweise ordnungsgemäß funktioniert hat und Sie die Connectoreinstellungen nicht geändert haben, müssen Sie Ihre lokale e-Mail-Umgebung überprüfen, um festzustellen, ob der Server ausgefallen ist, oder wenn Änderungen an Ihrer Netzwerkinfrastruktur vorgenommen wurden (beispielsweise Sie haben Internetdienstanbieter geändert, sodass Sie jetzt über unterschiedliche IP-Adressen verfügen).
 
 - Wenn der Fehler von ihrer Partnerorganisation stammt (beispielsweise einem Cloud-Dienstanbieter eines Drittanbieters), wenden Sie sich an Ihren Partner, um das Problem zu beheben.
 
@@ -61,7 +60,7 @@ Dieser Fehler hat zur Folge, dass Office 365 einen Verbindungsfehler festgestell
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Wie behebe ich den Fehlercode 450 4.4.316?
 
-- Wenn Sie Postfächer in Ihrer lokalen Umgebung haben, müssen Sie Ihre Firewalleinstellungen so ändern, dass Verbindungen von Office 365-IP-Adressen am TCP-Anschluss 25 an Ihre lokalen e-Mail-Server zulässig sind. Eine Liste der Office 365-IP-Adressen finden Sie unter [office 365-URLs und IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx).
+- Wenn Sie Postfächer in Ihrer lokalen Umgebung haben, müssen Sie Ihre Firewalleinstellungen so ändern, dass Verbindungen von Office 365-IP-Adressen am TCP-Anschluss 25 an Ihre lokalen e-Mail-Server zulässig sind. Eine Liste der Office 365-IP-Adressen finden Sie unter [Office 365-URLs und -IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2.aspx).
 
 - Wenn keine weiteren Nachrichten an Ihre lokale Umgebung übermittelt werden sollen, klicken Sie in der Warnung auf **Jetzt korrigieren**, damit Office 365 die Nachrichten mit ungültigen Empfängern sofort ablehnen kann. Dadurch wird das Risiko verringert, dass das Kontingent für ungültige Empfänger Ihrer Organisation überschritten wird, wodurch die normale Nachrichtenübermittlung beeinträchtigt werden könnte. Alternativ können Sie das Problem mit den folgenden Anweisungen manuell beheben:
 
@@ -83,7 +82,7 @@ Dieser Fehler hat zur Folge, dass Office 365 einen Verbindungsfehler festgestell
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Fehlercode: 450 4.4.317 Fehler beim Herstellen der Verbindung mit Remote-Server
 
-Dieser Fehler bedeutet NormalerWeise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert hat oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Zum Beispiel:
+Dieser Fehler bedeutet NormalerWeise, dass Office 365 mit dem Ziel-e-Mail-Server verbunden ist, der Server jedoch mit einem unmittelbaren Fehler reagiert hat oder die Verbindungsanforderungen nicht erfüllt. Die Fehlerdetails erläutern das Problem. Beispiel:
 
 - Der Ziel-e-Mail-Server hat mit dem Fehler "Dienst nicht verfügbar" geantwortet, was darauf hinweist, dass der Server die Kommunikation mit Office 365 nicht aufrecht erhalten kann.
 
@@ -115,7 +114,7 @@ Dieser Fehler bedeutet NormalerWeise, dass Office 365 mit Ihrer lokalen e-Mail-U
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Fehlercode: 450 4.7.320 Zertifikatüberprüfungsfehler
 
-Dieser Fehler hat zur Folge, dass Office 365 beim Versuch, das Zertifikat des Ziel-e-Mail-Servers zu überprüfen, einen Fehler festgestellt hat. Die Fehlerdetails erläutern den Fehler. Zum Beispiel:
+Dieser Fehler hat zur Folge, dass Office 365 beim Versuch, das Zertifikat des Ziel-e-Mail-Servers zu überprüfen, einen Fehler festgestellt hat. Die Fehlerdetails erläutern den Fehler. Beispiel:
 
 - Zertifikat abgelaufen
 
@@ -131,6 +130,6 @@ Dieser Fehler hat zur Folge, dass Office 365 beim Versuch, das Zertifikat des Zi
 
 ## <a name="other-error-codes"></a>Andere Fehlercodes
 
-Office 365 hat Schwierigkeiten bei der Übermittlung von Nachrichten an Ihren lokalen oder Partner-e-Mail-Server. Verwenden Sie die Informationen zum **Zielserver** in dem Fehler, um das Problem in Ihrer Umgebung zu untersuchen, oder ändern Sie den Connector, wenn ein Konfigurationsfehler vorliegt. 
+Office 365 hat Schwierigkeiten bei der Übermittlung von Nachrichten an Ihren lokalen oder Partner-e-Mail-Server. Verwenden Sie die Informationen zum **Zielserver** im Fehler, um das Problem in Ihrer Umgebung zu untersuchen, oder ändern Sie den Konnektor bei einem Konfigurationsfehler. 
 
 Wenn der Fehler von Ihrer Partnerorganisation generiert wurde (beispielsweise einem Drittanbieter von Clouddiensten), müssen Sie sich zur Problembehebung an Ihren Partner wenden.

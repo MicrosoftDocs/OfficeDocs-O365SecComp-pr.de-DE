@@ -7,7 +7,6 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: 76267f89744b696185022a2bb036dcde09dfcde5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276105"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693594"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 
@@ -34,7 +33,7 @@ Ein SPF TXT-Eintrag ist ein DNS-Eintrag, der Ihnen hilft, Spoofing und Phishing 
 Domänenadministratoren veröffentlichen SPF-Informationen in TXT-Einträgen in DNS. Durch die SPF-Informationen werden autorisierte Server für ausgehende E-Mails identifiziert. Von Ziel-E-Mail-Systemen wird überprüft, ob die Nachrichten von autorisierten Servern für ausgehende E-Mails stammen. Wenn Sie bereits mit SPF vertraut sind oder über eine einfache Bereitstellung verfügen und nur wissen möchten, was Sie in Ihren SPF TXT-Eintrag in DNS für Office 365 einschließen müssen, können Sie zu [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) wechseln. Wenn Ihre Bereitstellung nicht vollständig in Office 365 gehostet wird, oder wenn Sie weitere Informationen zur Funktionsweise von SPF oder zur Problembehandlung von SPF für Office 365 benötigen, lesen Sie hier weiter.
   
 > [!NOTE]
-> In früheren Versionen mussten Sie Ihrer benutzerdefinierten Domäne einen anderen SPF TXT-Eintrag hinzufügen, wenn Sie auch SharePoint Online verwendet haben. Dies ist nicht mehr erforderlich. Diese Änderung sollte das Risiko reduzieren, dass SharePoint Online-Benachrichtigungsnachrichten im Junk-E-Mail-Ordner landen. Sie müssen die Änderungen nicht sofort vornehmen. Wenn jedoch der Fehler „Zu viele Suchvorgänge“ auftritt, müssen Sie Ihren SPF TXT-Eintrag, wie unter [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) beschrieben, ändern. 
+> Zuvor mussten Sie der benutzerdefinierten Domäne einen anderen SPF TXT-Eintrag hinzufügen, wenn Sie auch SharePoint Online verwendet haben. Dies ist nicht mehr erforderlich. Diese Änderung sollte das Risiko reduzieren, dass SharePoint Online-Benachrichtigungsnachrichten im Junk-E-Mail-Ordner landen. Sie müssen keine Änderungen sofort vornehmen, aber wenn Sie die Fehlermeldung "zu viele Suchvorgänge" erhalten, ändern Sie Ihren SPF TXT-Eintrag wie unter [Set up SPF in Office 365 beschrieben, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
      
 ## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>Funktionsweise von SPF zur Verhinderung von Spoofing und Phishing in Office 365
 <a name="HowSPFWorks"> </a>
@@ -72,14 +71,14 @@ Diese SPF-Regel weist den empfangenden E-Mail-Server an, dass er, wenn eine Nach
     
 Die folgenden Beispiele zeigen, wie SPF in unterschiedlichen Situationen funktioniert. In diesen Beispielen ist „contoso.com“ der Absender und „woodgrovebank.com“ der Empfänger.
   
-### <a name="example-1-email-authentication-of-a-message-sent-directly-from-sender-to-receiver"></a>Beispiel 1: E-Mail-Authentifizierung einer Nachricht, die direkt vom Absender an den Empfänger gesendet wird
+### <a name="example-1-email-authentication-of-a-message-sent-directly-from-sender-to-receiver"></a>Beispiel 1: E-Mail-Authentifizierung einer Nachricht, die direkt vom Absender an den Empfänger gesendet wird
 <a name="spfExample1"> </a>
 
 SPF funktioniert am besten, wenn der Pfad vom Absender zum Empfänger direkt ist, z. B.:
   
 ![Diagramm, in dem gezeigt wird, wie SPF E-Mails authentifiziert, wenn diese direkt von Server zu Server gesendet werden.](media/835c20a7-ed4c-49c4-91fe-b8ebb3e452a1.jpg)
   
-Wenn „woodgrovebank.com" die Nachricht empfängt, wenn IP-Adresse #1 im SPF TXT-Eintrag für „contoso.com" vorhanden ist, besteht die Meldung die SPF-Prüfung und wird authentifiziert.
+Wenn „woodgrovebank.com“ die Nachricht empfängt, wenn IP-Adresse #1 im SPF TXT-Eintrag für „contoso.com“ vorhanden ist, besteht die Meldung die SPF-Prüfung und wird authentifiziert.
   
 ### <a name="example-2-spoofed-sender-address-fails-the-spf-check"></a>Beispiel 2: Gefälschte Absenderadresse besteht die SPF-Prüfung nicht
 <a name="spfExample2"> </a>
@@ -90,7 +89,7 @@ Nehmen wir an, ein Phisher findet eine Möglichkeit zum Spoofing in „contoso.c
   
 Da die IP-Adresse #12 nicht im SPF TXT-Eintrag von „contoso.com" enthalten ist, besteht die Meldung die SPF-Prüfung nicht, und der Empfänger kann sie als Spam markieren.
   
-### <a name="example-3-spf-and-forwarded-messages"></a>Beispiel 3: SPF und weitergeleitete Nachrichten
+### <a name="example-3-spf-and-forwarded-messages"></a>Beispiel 3: SPF und weitergeleitete Nachrichten
 <a name="spfExample3"> </a>
 
 Ein Nachteil von SPF liegt darin, dass es nicht funktioniert, wenn eine E-Mail-Nachricht weitergeleitet wurde. Nehmen Sie beispielsweise an, dass der Benutzer in „woodgrovebank.com" eine Weiterleitungsregel eingerichtet hat, um alle E-Mail-Nachrichten an ein „outlook.com"-Konto zu senden:
@@ -181,7 +180,7 @@ v=spf1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-a-hybrid-scenario-with-one-on-premises-exchange-server-and-office-365"></a>Beispiel: SPF TXT-Eintrag für ein Hybridszenario mit einem lokalen Exchange-Server und Office 365
 <a name="ExampleSPFHybridOneExchangeServer"> </a>
 
-Wenn in einer Hybridumgebung die IP-Adresse des lokalen Exchange-Servers „192.168.0.1" lautet, um die SPF-Durchsetzungsregel auf einen schweren Fehler festzulegen, erstellen Sie den SPF TXT-Eintrag wie folgt:
+Wenn in einer Hybridumgebung die IP-Adresse des lokalen Exchange-Servers „192.168.0.1“ lautet, um die SPF-Durchsetzungsregel auf einen schweren Fehler festzulegen, erstellen Sie den SPF TXT-Eintrag wie folgt:
   
 ```
 v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all

@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Office 365 Bedrohungs Ermittlungs-und-Reaktionsfunktionen Ihre Organisation Eindringlinge und Bedrohungen erkennen und schnell die Bedrohungen verringern und wiederherstellen können.
-ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536135"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692284"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Sicherstellen der Sicherheit Ihrer Office 365-Benutzer mit Office 365 Threat Investigation and Response Capabilities
 
@@ -28,10 +28,10 @@ ms.locfileid: "30536135"
 
 Wissen Sie, welche Ihrer Office 365-Benutzer angegriffen oder verschlechtert werden? Wissen Sie, wie Sie Angriffe, die für Ihre Benutzer geeignet sind, verringern und wiederherstellen können? Wussten Sie, dass Sie genau dies mit Sicherheitsfunktionen tun können, die Ihnen in Office 365 bereits zur Verfügung stehen? 
   
-[Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Reihe von Funktionen, die in ihrem Office 365 E5-Abonnement enthalten sind. Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben dazu beigetragen, dass Microsoft IT die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen gesenkt hat. 
+[Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Reihe von Funktionen, die in ihrem Office 365 E5-Abonnement enthalten sind (als Teil von Office 365 Advanced Threat Protection Plan 2). Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben dazu beigetragen, dass Microsoft IT die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen gesenkt hat. 
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection und Threat Investigation and Response (ehemals bekannt als Office 365 Threat Intelligence) sind jetzt Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Threat Investigation and Response Capabilities (früher bekannt als Office 365 Threat Intelligence) sind jetzt ein Teil von Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Wir haben vor kurzem neue Funktionen hinzugefügt, um zu verbessern, wie Sie Bedrohungen aufspüren und wiederherstellen können. Hier finden Sie einen kurzen Überblick darüber, wie Sie mit den aktualisierten Funktionen zur Bedrohungsanalyse und-Antwort noch effizienter arbeiten können.
   
@@ -51,7 +51,7 @@ Sobald Sicherheitsadministratoren etwas verdächtiges oder böswilliges in Ihrem
   
  **Update:** Wir haben die Möglichkeit hinzugefügt, e-Mail-Nachrichten direkt aus dem Vorfall Framework zu löschen. Zuvor konnten Administratoren nur e-Mails in den Junk-Ordner eines Benutzers verschieben, in dem die Benutzer das Element wiederherstellen konnten. Mit den neu veröffentlichten Löschfunktionen können Sie nun sicher sein, dass eine böswillige oder unerwünschte e-Mail dauerhaft entfernt wird. 
   
-Wenn Sie diese Office 365-Bedrohungs Untersuchungs-und-Antwortfunktionen nicht bereits haben, [probieren Sie es jetzt](https://aka.ms/tryo365threatintel3)aus. Und [erfahren Sie mehr über die Funktionen zur Bedrohungsanalyse und-Reaktion in Office 365](https://aka.ms/readmoreabouto365threatintel).
+Wenn Sie diese Funktionen noch nicht haben, [probieren Sie es](https://aka.ms/tryo365threatintel3)aus! Und [erfahren Sie mehr über die Funktionen zur Bedrohungsanalyse und-Reaktion in Office 365](https://aka.ms/readmoreabouto365threatintel).
   
 ![Screenshot der e-Mail-Liste der Vorfall Sanierung](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
@@ -66,7 +66,7 @@ Gartner schätzt, dass in 2017 allein mehr als $90B für Cyber verwendet wurde. 
   
 ## <a name="whats-next"></a>Was kommt als nächstes
 
-- Weitere Informationen zu Office 365 Threat Investigation and Response Capabilities in this recorded session: [stay Ahead of the Cyberattacken mit office 365 Threat Intelligence](https://myignite.microsoft.com/videos/53723)
+- Weitere Informationen zu Office 365 Threat Investigation and Response Capabilities in this recorded session: [stay Ahead of the Cyberattacken with office 365](https://myignite.microsoft.com/videos/53723)
     
 - [Testen Sie die Funktionen der Bedrohungsanalyse und-Antwort von office 365 jetzt](https://aka.ms/tryo365threatintel3) , oder starten Sie Ihren Office E5-Test noch heute! 
     

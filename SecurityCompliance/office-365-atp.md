@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/20/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Anti-Phishing-Tools, Reporting-Tools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: 33a98781c29a6ab8a44a69922afd976ce044c09d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ce4652e19f97cda6dbbea7df8083531ee0a0a1fc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220005"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693054"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -35,7 +35,7 @@ Office 365 Advanced Threat Protection (ATP) schützt Ihre Organisation vor bösw
 
 - [Berichte](#view-atp-reports): Anzeigen von Echtzeitberichten zum Überwachen der ATP-Leistung in Ihrer Organisation. 
 
-- [Threat Intelligence-Funktionen](#utilize-threat-intelligence-capabilities): Verwenden Sie führende Tools, um Bedrohungen zu untersuchen, zu verstehen, zu simulieren und zu verhindern. 
+- [Möglichkeiten zur Bedrohungsanalyse und-Antwort](#use-threat-investigation-and-response-capabilities): Verwenden Sie führende Tools, um Bedrohungen zu untersuchen, zu verstehen, zu simulieren und zu verhindern. 
  
 
 ## <a name="configure-atp-policies"></a>Konfigurieren von ATP-Richtlinien
@@ -60,9 +60,9 @@ Office 365 ATP enthält ein erweitertes [Reporting-Dashboard](view-reports-for-a
 
 Berichte werden in Echtzeit aktualisiert, sodass Sie die neuesten Einblicke erhalten. Diese Berichte enthalten auch Empfehlungen und warnen Sie bei drohenden Bedrohungen. Zu den vorDefinierten Berichten gehören der [bedrohungSschutz Status Bericht](view-reports-for-atp.md#threat-protection-status-report), [ATP-Dateitypen](view-reports-for-atp.md#atp-file-types-report), [ATP-Nachrichten Disposition](view-reports-for-atp.md#atp-message-disposition-report) und vieles mehr. 
 
-## <a name="utilize-threat-intelligence-capabilities"></a>Verwenden von Threat Intelligence-Funktionen
+## <a name="use-threat-investigation-and-response-capabilities"></a>Verwenden von Ermittlungs-und Reaktionsfunktionen für Bedrohungen
 
-Office 365 ATP enthält Best-of-Class- [Threat Intelligence-Tools](office-365-ti.md) , mit denen das Sicherheitsteam Ihrer Organisation Vorwegnahme, verstehen und verhindern kann. 
+Office 365 ATP Plan 2 enthält Best-of-Class- [Tools zur Bedrohungsanalyse und-Antwort](office-365-ti.md) , die das Sicherheitsteam Ihrer Organisation bei der Vorgehensweise, beim verstehen und verhindern von böswilligen Angriffen unterstützen. 
 
 - [Threat Tracker](threat-trackers.md) bieten die neuesten Informationen zu vorherrschenden Cyber-Problemen. Sie können beispielsweise Informationen über die neueste Schadsoftware anzeigen und Gegenmaßnahmen ergreifen, bevor Sie zu einer tatsächlichen Bedrohung für Ihre Organisation wird. Zu den verfügbaren Tracker gehört [bemerkenswerte Tracker](threat-trackers.md#noteworthy-trackers), [Trend Verfolgungs](threat-trackers.md#trending-trackers)-und Überwachungs [Abfragen](threat-trackers.md#tracked-queries)sowie [gespeicherte Abfragen](threat-trackers.md#saved-queries).
 
@@ -80,7 +80,8 @@ Für den Zugriff auf ATP-Funktionen im Security & Compliance Center müssen Sie 
 |Sicherheitsadministrator |[Berechtigungen für Administrator Rollen in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online-Organisationsverwaltung |[Berechtigungen in Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>und<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-Siehe auch:
+Weitere Informationen finden Sie unter:
+
 - [Berechtigungen im Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) 
 
 - [Gewähren von Benutzern Zugriff auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)

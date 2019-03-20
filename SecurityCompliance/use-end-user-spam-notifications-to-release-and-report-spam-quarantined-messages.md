@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: 'Benutzer, die eine spambenachrichtigung über Endbenutzer von Ihrem Administrator über isolierte e-Mails erhalten, können diese Aktionen für die Nachrichten ergreifen. '
-ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341236"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691974"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Verwenden von Spambenachrichtigungen für Endbenutzer zum Freigeben und Melden von Nachrichten in Spam-Quarantäne
 
@@ -41,6 +40,6 @@ Sie können folgende Aktionen für jede Nachricht ausführen:
 - **Als Nicht-Junk-E-Mail melden** Mit einem Klick auf diesen Link wird eine Kopie der Nachricht zur Analyse an Microsoft geschickt. Das Spamteam bewertet und analysiert die Nachricht und passt, je nach Analyseergebnis, die Antispamfilterregeln so an, dass die Nachricht übergeben wird. 
     
 > [!NOTE]
->  Nachrichten, die aufgrund einer e-Mail-Fluss Regel (auch als Übereinstimmung bezeichnet) isoliert wurden, werden in Quarantäne Nachrichten für Endbenutzer nicht eingeschlossen. Nur Nachrichten in Spamquarantäne werden aufgeführt. > Sie können nur eine Nachricht freigeben und als falsch positives Ergebnis (kein Junk) melden. 
+>  Nachrichten, die aufgrund einer e-Mail-Fluss Regel (auch als Übereinstimmung bezeichnet) isoliert wurden, werden in Quarantäne Nachrichten für Endbenutzer nicht eingeschlossen. Es werden nur Spamquarantäne-Nachrichten aufgeführt. >  Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden. 
   
 

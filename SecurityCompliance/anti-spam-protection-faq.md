@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341676"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692234"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -34,7 +33,7 @@ Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispams
 A. **Für eingehende Nachrichten:** Der Großteil der Spamnachrichten wird mithilfe der Verbindungsfilterung gelöscht, die auf der IP-Adresse des Absenders basiert. Der Dienst untersucht anschließend den Inhalt der Nachricht. Standardmäßig wird durch die Inhaltsfilterung abgefangener Spam an den Junk E-Mail-Ordner des Empfängers gesendet. Sie können diese Aktion ändern. Beispielsweise können Sie durch Konfigurieren der Inhaltsfilterrichtlinie auswählen, dass Spamnachrichten stattdessen in die Quarantäne gesendet werden. 
   
 > [!IMPORTANT]
-> Für eigenständige Kunden von EOP: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern ausgeführt wird, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) auf Ihren lokalen Servern konfigurieren, um von EOP hinzugefügte Spam Header. Weitere Informationen finden Sie unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Für eigenständige Kunden von EOP: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern ausgeführt wird, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) auf Ihren lokalen Servern konfigurieren, um von EOP hinzugefügte Spam Header. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder durch den Pool für besonders riskante Zustellungen geleitet oder ist unzustellbar und wird nicht zugestellt. In diesem Fall sollte der Absender eine Benachrichtigung über den Übermittlungsstatus (Delivery Status Notification, DSN) erhalten, in der ihm mitgeteilt wird, dass die Nachricht nicht zugestellt werden konnte. 
   
@@ -110,7 +109,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
   
 1. **Die Domain des E-Mail-Absenders sollte im DNS aufgelöst werden können.**
     
-    Wenn der Absender beispielsweise user@example.com ist, wird die Domäne example.com in die IP-Adresse 192.0.43.10 aufgelöst. Wenn eine sendende Domäne keinen A-Record und keinen MX-Eintrag in DNS aufweist, leitet der Dienst die Nachricht über Ihren Pool mit höherem Risiko ab, unabhängig davon, ob der Inhalt der Nachricht Spam ist oder nicht. Weitere Informationen zum Pool mit höheren Risiken finden Sie unter [High-Risk-Übermittlungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md). 
+    Wenn der Absender beispielsweise "user@example.com" ist, wir die Domäne "example.com" zu der IP-Adresse 192.0.43.10 aufgelöst. Wenn eine sendende Domäne nicht über einen A-Eintrag und nicht über einen MX-Eintrag in DNS verfügt, leitet der Dienst die Nachricht stets durch den Pool für besonders riskante Zustellungen, unabhängig davon, ob es sich bei ihrem Inhalt um Spam handelt. Weitere Informationen zum Pool mit höheren Risiken finden Sie unter [High-Risk-Übermittlungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **Die Absender-IP-Adresse des ausgehenden E-Mail-Servers sollte über einen Reverse-DNS-Eintrag (PTR-Eintrag) verfügen.**
     

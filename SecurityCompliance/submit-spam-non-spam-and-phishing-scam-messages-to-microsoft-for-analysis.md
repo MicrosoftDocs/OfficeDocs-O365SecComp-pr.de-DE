@@ -7,7 +7,6 @@ ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsch negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341526"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693624"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 
@@ -34,7 +33,7 @@ Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-e-Mails (Spa
 
 Wenn Sie eine Nachricht erhalten, die die Spamfilter, die als Junk-e-Mail klassifiziert werden sollen, oder einen Phishing-Betrug übergeben haben, können Sie die Meldung "falsch negativ" an Microsoft-Spam Analyse-und Microsoft-Phishing-Analyseteams senden. Die Analysten überarbeiten die Nachricht und fügen Sie den Dienst weiten Filtern hinzu, wenn Sie die Klassifizierungskriterien erfüllt. 
   
-Weitere Spameinstellungen für die gesamte Organisation finden Sie unter Blockieren von [e-Mail-Spam mit dem Office 365-Spamfilter, um falsch negative Probleme zu vermeiden](https://go.microsoft.com/fwlink/p/?LinkId=534225). Dieser Artikel enthält Tipps zum Verhindern von falsch negativen.
+Informationen zu weiteren Spameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](https://go.microsoft.com/fwlink/p/?LinkId=534225). Dieser Artikel enthält Tipps zum Verhindern von falsch negativen.
   
 Sie können Junk-E-Mails wie folgt weiterleiten:
   
@@ -42,7 +41,7 @@ Sie können Junk-E-Mails wie folgt weiterleiten:
         
 - Sie können auch e-Mails verwenden, um Nachrichten an Microsoft zu übermitteln, die als Junk-oder Phishing-Scams klassifiziert werden sollen, wie im folgenden Verfahren beschrieben.
     
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Weiterleiten von Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingversuch gelten, per E-Mail an Microsoft
+### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Weiterleiten von Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingversuch gelten, per E-Mail an Microsoft 
 <a name="Useemailtosubmitjunkspamorphishingscammessages"> </a>
 
 So leiten Sie Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingversuch gelten, per E-Mail an Microsoft
@@ -58,16 +57,16 @@ So leiten Sie Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingver
 3. Kopieren Sie die Nachricht Junk-oder Phishing-Betrüger in die neue Nachricht als Anlage. 
     
     > [!NOTE]
-    > Sie können der neuen Nachricht mehrere Nachrichten anfügen. Stellen Sie sicher, dass alle Nachrichten denselben Typ aufweisen – entweder Phishing-Betrüger-oder Junk-e-Mail-Nachrichten. > lassen Sie den Textkörper der neuen Nachricht leer. 
+    > Sie können der neuen Nachricht mehrere Nachrichten anfügen. Stellen Sie sicher, dass alle Nachrichten denselben Typ aufweisen – entweder Phishing-Betrüger-oder Junk-e-Mail-Nachrichten. > Lassen Sie den Nachrichtentext leer. 
   
 4. Klicken Sie auf **Senden**.
     
 ## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Weiterleiten von Nachrichten, die als Junk markiert wurden, aber durchgelassen werden sollten
 <a name="sectionSection1"> </a>
 
-Wenn eine Nachricht fälschlicherweise als Junk identifiziert wurde, können Sie die Meldung "falsch positiv" an das Microsoft-Spam Analyse Team übermitteln. Die Analysten bewerten und analysieren die Nachricht. Abhängig von den Ergebnissen der Analyse können die Filterregeln des Dienst weiten Spam Inhalts angepasst werden, um die Nachricht zu überlassen.
+Wenn eine Nachricht fälschlicherweise als Junk identifiziert wurde, können Sie die Meldung "falsch positiv" an das Microsoft-Spam Analyse Team übermitteln. Die Analysten bewerten und analysieren die Nachricht. Abhängig vom Ergebnis der Analyse werden die Filterregeln für Spaminhalte des Diensts angepasst, damit die Nachricht zugestellt werden kann.
   
-Administratoren können weitere Spam Einstellungsinformationen anzeigen, die für eine ganze Organisation gelten. Erfahren Sie [, wie Sie sicherstellen, dass eine Nachricht nicht als Spam markiert wird](https://go.microsoft.com/fwlink/p/?LinkId=534224). Diese Informationen sind hilfreich, wenn Sie auf Administratorebene Steuern und falsch positive Ergebnisse verhindern möchten.
+Administratoren können weitere Spam Einstellungsinformationen anzeigen, die für eine ganze Organisation gelten. Erfahren Sie [, wie Sie sicherstellen, dass eine Nachricht nicht als Spam markiert wird](https://go.microsoft.com/fwlink/p/?LinkId=534224). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
   
 Leiten Sie Nichtspamnachrichten wie folgt weiter:
   
@@ -87,7 +86,7 @@ Leiten Sie Nichtspamnachrichten wie folgt weiter:
     
   - Über Nachrichten zur Spambenachrichtigung für Endbenutzer (falls vom Administrator aktiviert). 
     
-- Sie können auch e-Mails verwenden, um Nachrichten an Microsoft zu übermitteln, die nicht als Spam klassifiziert werden sollen. Wenn Sie dies tun, stellen Sie sicher, dass Sie die Schritte im folgenden Verfahren verwenden.
+- Sie können Nachrichten, die nicht als Spam klassifiziert werden sollen, auch per E-Mail an Microsoft weiterleiten. Wenn Sie dies tun, stellen Sie sicher, dass Sie die Schritte im folgenden Verfahren verwenden.
     
 ### <a name="use-email-to-submit-false-positive-messages"></a>Übermitteln falsch positiver Nachrichten per E-Mail
 
@@ -96,13 +95,13 @@ Verwenden Sie das gleiche Verfahren wie im Abschnitt "[Verwenden von e-Mails zum
 ## <a name="spam-evaluation-and-rules-deployment"></a>Bereitstellung von Spam Evaluierung und-Regeln
 <a name="sectionSection2"> </a>
 
-Das Spam Analyseteam untersucht Nachrichten, die Sie übermitteln, und passt die Spamfilter an, um zukünftige Junk-e-Mails zu verhindern. Dadurch werden Office 365-Spamfilter areconstantly verfeinert. Alle übermittelten Elemente werden auf Netzwerkebene ausgewertet. Falsch positive Übermittlungen werden untersucht und für eine mögliche Regelanpassung bewertet, um zukünftige Nachrichten über die Spamfilter zu ermöglichen. Daher ist es für Sie und alle Kunden, die das globale Netzwerk verwenden, von Vorteil, wenn der Dienst von falsch positiven und auch falschen negativen (ungefilterten Spam) benachrichtigt wird. Das Spam-Team untersucht Indikatoren innerhalb jeder übermittelten Nachricht, wie beispielsweise:
+Das Spam Analyseteam untersucht Nachrichten, die Sie übermitteln, und passt die Spamfilter an, um zukünftige Junk-e-Mails zu verhindern. Dadurch werden Office 365-Spamfilter areconstantly verfeinert. Alle übermittelten Elemente werden auf Netzwerkebene bewertet. Falsch positive Übermittlungen werden untersucht und für eine mögliche Regelanpassung bewertet, um zukünftige Nachrichten über die Spamfilter zu ermöglichen. Daher ist es für Sie und alle Kunden, die das globale Netzwerk verwenden, von Vorteil, wenn der Dienst von falsch positiven und auch falschen negativen (ungefilterten Spam) benachrichtigt wird. Das Spam-Team untersucht Indikatoren innerhalb jeder übermittelten Nachricht, wie beispielsweise:
   
 - Von Adresse
     
 - Sendende IP-Adresse
     
-- Schlüsselwörter
+- Schlüsselwörter
     
 - Ausdrücke
     

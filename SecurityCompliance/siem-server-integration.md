@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Zusammenfassung: Lesen Sie diesen Artikel, um einen Überblick über die SIEM-Server Integration mit Microsoft 365 zu erhalten.'
-ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357496"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693644"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM-Server Integration mit Microsoft 365-Diensten und-Anwendungen
 
@@ -33,12 +33,12 @@ Ein SIEM-Server kann Daten aus einer Vielzahl von Microsoft 365-Diensten und-Anw
 
 | Microsoft 365-Dienst oder-Anwendung | SIEM-Server Eingaben | Ressourcen für weitere Informationen |
 | --- | --- | --- |
-| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>   oder   <br/>[Informationen zu Bedrohungen in Office 365](office-365-ti.md) | Überwachungsprotokolle | [SIEM-Integration mit Office 365 Threat Intelligence und Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
+| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>   oder   <br/>[Informationen zu Bedrohungen in Office 365](office-365-ti.md) | Überwachungsprotokolle | [SIEM-Integration in Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Protokoll Integration | [SIEM-Integration in Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 Cloud App Security](office-365-cas-overview.md) | Protokoll Integration | [Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
 | [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Protokoll Integration | [Benachrichtigungen an Ihre SIEM-Tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Azure-Sicherheits Center](https://docs.microsoft.com/azure/security-center/security-center-intro) (BedrohungsSchutz und BedrohungsErkennung) | Warnungen | [Azure Security Data Export to SIEM-Pipeline Configuration-Preview](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Azure Active Directory-Identitätsschutz](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Überwachungsprotokolle | [Integrieren von Azure Active Directory-Überwachungsprotokollen](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
+| [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Überwachungsprotokolle | [Integrieren von Azure Active Directory-Überwachungsprotokollen](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Erweiterte Azure-BedrohungsAnalyse](https://docs.microsoft.com/azure/security/azure-threat-detection) | Protokoll Integration | [ATA SIEM-Protokoll Referenz](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
 
 ## <a name="audit-logging-must-be-turned-on"></a>Überwachungsprotokollierung muss aktiviert sein

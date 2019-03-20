@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,18 +13,18 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie e-Mail-Flussregeln in Exchange Online Protection für die Massen-e-Mail-Filterung verwenden.
-ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275685"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693284"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Verwenden von Nachrichtenfluss Regeln zum Konfigurieren der Massen-e-Mail-Filterung in Exchange Online Protection
 
 Sie können den unternehmensweiten Inhaltsfilter für Spam und Massen-E-Mails über die Standardrichtlinien für die Spam-Inhaltsfilterung festlegen. Informationen zum Festlegen der Richtlinien für die Inhaltsfilterung finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) und [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps). 
   
-Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden. Alle Nachrichten, die diese Merkmale enthalten, werden als Spam gekennzeichnet. Mithilfe dieser Regeln können Sie die Menge unerwünschter Massen-e-Mails reduzieren, die Ihre Organisation empfängt.
+Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden. Alle Nachrichten, die diese Merkmale enthalten, werden als Spam markiert. Mithilfe dieser Regeln können Sie die Menge an unterwünschten Massen-E-Mails verringern, die Ihre Organisation empfängt.
 
 > [!IMPORTANT]
 > Bevor Sie die in diesem Thema dokumentierten Nachrichtenfluss Regeln erstellen, sollten Sie zuerst lesen, [was der Unterschied zwischen Junk-e-Mail und Massen-e-Mails ist?](what-s-the-difference-between-junk-email-and-bulk-email.md) und [Werte für Massen Beschwerden](bulk-complaint-level-values.md).<br>Durch die folgenden Verfahren wird eine Nachricht für Ihre gesamte Organisation als Spam markiert. Sie können jedoch eine andere Bedingung hinzufügen, damit diese Regeln nur für bestimmte Empfänger in Ihrer Organisation gelten. Auf diese Weise können die aggressiven Filtereinstellungen für Massen-E-Mails nur für einige wenige Benutzer gelten, die verstärkt anvisiert werden, während der Rest Ihrer Benutzer (die zumeist die Massen-E-Mails erhalten, für die sie sich registriert haben) nicht betroffen sind. 
@@ -66,7 +65,7 @@ Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können 
     
    - `click (here to|the) unsubscribe`
     
-   Die obige Liste ist kein umfassender Satz regulärer Ausdrücke, die in Massen-e-Mails gefunden werden. Weitere können bei Bedarf hinzugefügt oder entfernt werden. Dies ist jedoch ein guter Ausgangspunkt.<br>Die Suche nach Wörtern oder Textmustern im Betreff oder anderen Kopfzeilenfeldern in der Nachricht tritt auf, *nachdem* die Nachricht aus der MIME-Inhalts Übertragungscodierungsmethode dekodiert wurde, die zum Übertragen der binären Nachricht zwischen SMTP-Servern im ASCII-Text verwendet wurde. Sie können keine Bedingungen oder Ausnahmen verwenden, um nach den rohen (normalerweise, base64) codierten Werten des Betreffs oder anderer Kopfzeilenfelder in Nachrichten zu suchen. 
+   Die obige Liste ist kein umfassender Satz regulärer Ausdrücke, die in Massen-e-Mails gefunden werden. Weitere können bei Bedarf hinzugefügt oder entfernt werden. Dies ist jedoch ein guter Ausgangspunkt.<br>Die Suche nach Wörtern oder Textmustern im Betreff oder anderen Kopfzeilenfeldern in der Nachricht tritt auf, *nachdem* die Nachricht aus der MIME-Inhalts Übertragungscodierungsmethode dekodiert wurde, die zum Übertragen der binären Nachricht zwischen SMTP-Servern im ASCII-Text verwendet wurde. Sie können keine Bedingungen oder Ausnahmen für die Suche nach Rohwerten (in der Regel Base64-codiert) im Betreff oder in anderen Kopfzeilenfeldern in Nachrichten verwenden. 
     
 6. Wählen Sie unter **Gehen Sie folgendermaßen vor...** die Option **Nachrichteneigenschaften ändern** \> **SCL-Bewertung (Spam Confidence Level) festlegen** aus.
     
@@ -88,7 +87,7 @@ Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können 
     
 3. Geben Sie einen Namen für die Regel ein.
     
-4. Klicken Sie auf **Weitere Optionen**. Wählen Sie unter **diese Regel anwenden, wenn** **den Betreff oder Textkörper** \> **oder Textkörper enthält eines dieser Wörter**aus.
+4. Click **More options**. Under **Apply this rule if**, select **The subject or body** \> **subject or body includes any of these words**.
     
 5. Geben Sie im Dialogfeld **Wörter oder Ausdrücke angeben** die folgenden häufig in Massen-E-Mails vorkommenden Ausdrücke nacheinander ein, und klicken Sie auf **OK**, sobald Sie fertig sind: 
     

@@ -3,7 +3,7 @@ title: Übersicht über das Sicherheits Dashboard
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/07/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie das neue Sicherheits Dashboard, um den Status der BedrohungsSchutz in Office 365 zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241887"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692754"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 
@@ -91,7 +91,7 @@ Malware-Widgets zeigen in den letzten sieben (7) Tagen Details zu Malware Trends
 
 ![Malware Trends und Familientypen](media/malwarewidgetatpe5.png)
  
-## <a name="insights"></a>Einblicke
+## <a name="insights"></a>Insights
 
 EinBlicke nicht nur die wichtigsten Probleme, die Sie überprüfen sollten, Sie auch Empfehlungen und Maßnahmen zu berücksichtigen. 
 
@@ -99,9 +99,9 @@ EinBlicke nicht nur die wichtigsten Probleme, die Sie überprüfen sollten, Sie 
 
 So können Sie beispielsweise feststellen, dass Phishing-e-Mails übermittelt werden, da einige Benutzer Ihre Junk-e-Mail-Optionen deaktiviert haben. Weitere Informationen zur Funktionsweise von Einblicken finden Sie unter [Berichte und Einblicke &amp; im Office 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
-## <a name="threat-intelligence"></a>Bedrohungs Intelligenz
+## <a name="threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen
 
-Wenn das Abonnement Ihrer Organisation [Bedrohungen Intelligence-Funktionen](office-365-ti.md)enthält, weist Ihr Sicherheits Dashboard einen Abschnitt " **Threat Intelligence** " auf, der erweiterte Tools enthält. Das Sicherheitsteam Ihrer Organisation kann die Informationen in diesem Abschnitt verwenden, um sich mit neuen Kampagnen vertraut zu machen, Bedrohungen zu untersuchen und Vorfälle zu verwalten. 
+Wenn das Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, weist Ihr Sicherheits Dashboard einen Abschnitt auf, der erweiterte Bedrohungs Untersuchungs-und-Antwort Tools enthält. Das Sicherheitsteam Ihrer Organisation kann die Informationen in diesem Abschnitt verwenden, um sich mit neuen Kampagnen vertraut zu machen, Bedrohungen zu untersuchen und Vorfälle zu verwalten. 
   
 ![Threat Intelligence hilft Ihnen bei der Veranschaulichung von Angriffen in Ihrer Organisation](media/threatintelwidget.png)
   
@@ -112,7 +112,7 @@ Am unteren Rand des Sicherheits Dashboards befindet sich ein Abschnitt **Trends*
   
 ![Im Abschnitt Trends werden die Trends für den e-Mail-Fluss für die Organisation zusammengefasst.](media/trends.png)
   
-Und wenn das Office 365-Abonnement Ihrer Organisation [Threat Intelligence-Funktionen](office-365-ti.md)enthält, haben Sie auch einen **aktuellen Bericht über Warnmeldungen zur Gefahren Verwaltung** in diesem Abschnitt, der Ihrem Sicherheitsteam das Anzeigen und Ausführen von Aktionen ermöglicht. Sicherheitswarnungen mit hoher Priorität. 
+Und wenn das Office 365-Abonnement Ihrer Organisation [office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, haben Sie auch einen aktuellen Bericht über **Warnmeldungen zur Gefahren Verwaltung** in diesem Abschnitt, mit dem Ihr Sicherheitsteam Sicherheitswarnungen mit hoher Priorität. 
 
 Zum Anzeigen oder zugreifen auf das gesendete und empfangene e-Mail-widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -126,6 +126,6 @@ Zum Anzeigen oder zugreifen auf das kürzlich veröffentlichte Widget "Threat Ma
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-[Informationen zu Bedrohungen in Office 365](office-365-ti.md)
+[Office 365 Bedrohungs Ermittlung und-Antwort](office-365-ti.md)
   
 

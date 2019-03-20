@@ -3,7 +3,7 @@ title: Anzeigen von Berichten für Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: 72776d6d7df98ffb43046a0d98e589c5ea39c257
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3a128103d16ed03edb18becde96a5d20ee6eca9b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341086"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692404"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -81,10 +81,10 @@ Wenn Sie auf einen Balken im Diagramm zeigen, können Sie sehen, welche Aktionen
 
 Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen mehrere weitere Berichte zur Verfügung, wie in der folgenden Tabelle beschrieben:
 
-|Berichtstyp  |Weitere Informationen  |
+|Berichttyp  |Weitere Informationen  |
 |---------|---------|
 |**E-Mail-Sicherheitsberichte**, wie beispielsweise ein Bericht über Top-Absender und-Empfänger, ein spoof-e-Mail-Bericht und ein Spam Erkennungs Bericht. | [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md)        |
-|**Explorer** (auch als Bedrohungs-Explorer bezeichnet, ist dies in [Office 365 Threat Intelligence](office-365-ti.md)enthalten)     | [Verwenden des Explorers im Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)        |
+|**Explorer** (auch als Bedrohungs-Explorer bezeichnet, ist dies in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthalten)     | [Verwenden des Explorers im Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)        |
 |**EoP und ATP-Ergebnisse** (Hierbei handelt es sich um einen benutzerdefinierten Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Informationen wie Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.  | [Get-MailTrafficATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
 |**EoP und ATP-Ermittlungen** (Hierbei handelt es sich um einen benutzerdefinierten Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Details zu schädlichen Dateien oder URLs, Phishing-versuchen, Identitätswechsel und anderen potenziellen Bedrohungen in e-Mails oder Dateien.   | [Get-MailDetailATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
 

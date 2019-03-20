@@ -7,7 +7,6 @@ ms.date: 4/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: Diese Artikel helfen externen Absendern beim Verbessern ihres Rufs und ihrer Fähigkeit zum Übermitteln von E-Mails an Benutzer in Office 365. Sie bieten auch einige Informationen zum Melden von Junk-E-Mails und Phishingversuchen, auch wenn Sie selbst kein Office 365-Benutzer sind.
-ms.openlocfilehash: a3988f6c6c5c8fca4b4f99df1d73df49175d853e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c3f9b6e383b604985a125d270a46c0b0211e7071
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275835"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692384"
 ---
 # <a name="sending-mail-to-office-365"></a>Senden von E-Mails an Office 365
 

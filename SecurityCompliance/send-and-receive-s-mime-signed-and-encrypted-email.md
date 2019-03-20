@@ -7,22 +7,21 @@ ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht.
-ms.openlocfilehash: 311da8b87994703b68d163ff60b25786719ab024
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: dabb911cf770ae843d97eb6ac8b0f683f27a78dd
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296638"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692684"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>Senden und empfangen von S/MIME-signierten und verschlüsselten e-Mails in Exchange Online
 
-Das Senden oder beantworten einer S/MIME-verschlüsselten Nachricht in Microsoft Outlook ähnelt der Erfahrung mit einer nicht verschlüsselten Nachricht. Weitere Informationen zum Lesen oder Senden von S/MIME-verschlüsselten Nachrichten aus einem e-Mail-Programm wie Outlook im Web (früher als Outlook Web App bezeichnet) finden Sie unter [Verwenden von Outlook zum Senden und beantworten von s/MIME-verschlüsselten Nachrichten](https://go.microsoft.com/fwlink/p/?LinkId=392520).
+Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht. Weitere Informationen zum Lesen oder Senden von S/MIME-verschlüsselten Nachrichten aus einem e-Mail-Programm wie Outlook im Web (früher als Outlook Web App bezeichnet) finden Sie unter [Verwenden von Outlook zum Senden und beantworten von s/MIME-verschlüsselten Nachrichten](https://go.microsoft.com/fwlink/p/?LinkId=392520).
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 03/19/2019
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Erweitern Sie Office 365 Advanced Threat Protection auf Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams, um eine sicherere Zusammenarbeit für Ihr Unternehmen zu ermöglichen.
-ms.openlocfilehash: d9d99041d002a6c43d7b6918f53aabb93f82339a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220605"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692444"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -46,11 +46,11 @@ Weitere Informationen finden Sie unter [Turn on Office 365 ATP for SharePoint, O
   
 ## <a name="keep-these-points-in-mind"></a>Bedenken Sie diese Punkte
 
-- ATP prüft nicht jede einzelne Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams. Dies ist beabsichtigt. Dateien werden asynchron durch einen Prozess übertragen, der Freigabe-und Gast Aktivitätsereignisse sowie intelligente Heuristiken und Bedrohungs Signale zur Identifizierung schädlicher Dateien verwendet.
+- ATP prüft nicht jede einzelne Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams. Dies ist so beabsichtigt. Dateien werden asynchron durch einen Prozess übertragen, der Freigabe-und Gast Aktivitätsereignisse sowie intelligente Heuristiken und Bedrohungs Signale zur Identifizierung schädlicher Dateien verwendet.
 
 - Stellen Sie sicher, dass Ihre SharePoint-Websites so konfiguriert sind, dass Sie die [moderne Umgebung](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)verwenden. Wenn eine Datei als bösartig und blockiert identifiziert wird, können die Benutzer erkennen, dass dies in der modernen Benutzeroberfläche stattgefunden hat, aber nicht in der klassischen Ansicht. ATP Protection gilt unabhängig davon, ob die moderne Erfahrung oder die klassische Ansicht verwendet wird; visuelle Indikatoren, die eine Datei blockiert, sind jedoch nur in der modernen Umgebung vorhanden.
     
-- Dateien, die in SharePoint Online, OneDrive for Business oder Microsoft Teams als schädlich identifiziert werden, werden in [Berichten für office 365 Advanced Threat Protection](view-reports-for-atp.md) und im Threat Explorer (Teil von [Office 365 Threat Intelligence](office-365-ti.md)) angezeigt.
+- Dateien, die in SharePoint Online, OneDrive for Business oder Microsoft Teams als schädlich identifiziert werden, werden in [Berichten für office 365 Advanced Threat Protection](view-reports-for-atp.md) und im Threat Explorer (Teil von [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) ) angezeigt. ).
     
 - ATP ist Teil der allgemeinen Bedrohungsschutz Strategie Ihrer Organisation, die Schutz vor Spam und Schadsoftware sowie sichere Links und sichere Anlagen umfasst. Weitere Informationen finden Sie unter [schützen vor Bedrohungen in Office 365](protect-against-threats.md).
     

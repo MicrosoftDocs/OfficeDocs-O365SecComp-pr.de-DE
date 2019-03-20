@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,17 +13,17 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren.
-ms.openlocfilehash: 87a55de49a01c69f3392a3740e19e52630f4dcc8
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341296"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692574"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
   
 > [!IMPORTANT]
-> Dieses Thema richtet sich an eigenständige Exchange Online Protection (EOP)-Kunden, die lokale Postfächer schützen. Exchange Online-Kunden, die in der Cloud gehostete Postfächer schützen, sollten stattdessen das folgende Thema lesen: [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+> Dieses Thema betrifft die Kunden einer eigenständigen Lösung von Exchange Online Protection (EOP), die lokale Postfächer schützen möchten. Exchange Online-Kunden, die in der Cloud gehostete Postfächer schützen, sollten stattdessen das folgende Thema lesen: [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
 Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren. Wenn Sie Spambenachrichtigungen für Endbenutzer aktivieren, können Ihre Endbenutzer ihre Nachrichten in der Spamquarantäne selbst verwalten. Spambenachrichtigungen für Endbenutzer können nicht bei Richtlinien angewendet werden, die auf Benutzer oder Gruppen oder eine Richtlinie mit Ausnahmen angewendet werden.
   
@@ -74,7 +73,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
 > [!NOTE]
 >  Spambenachrichtigungen für Endbenutzer können nur bei Inhaltsfilterrichtlinien verwendet werden, die aktiviert sind. >  Spam Endbenutzerbenachrichtigungen sind nur einmal pro Tag versendet. Die Zustellungszeit der Benachrichtigung kann für einen bestimmten Kunden nicht garantiert werden und kann nicht konfiguriert werden. 
   
- **Tipp:** Wenn Sie Spambenachrichtigungen für Endbenutzer testen möchten, indem Sie Sie an eine begrenzte Anzahl von Benutzern senden, bevor Sie sie vollständig implementieren, erstellen Sie eine benutzerdefinierte Inhaltsfilter Richtlinie, mit der Endbenutzer-Spambenachrichtigungen für die Domänen aktiviert werden, in denen sich die Benutzer befinden. Erstellen Sie dann in der Exchange-verwaltungsKONSOLE unter **Nachrichtenfluss \> Regeln**eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet), um Nachrichten von Quarantine@messaging.microsoft.com (die e-Mail-Adresse, die Benachrichtigungen sendet) mit Ausnahmen für die gewünschten Benutzer zu blockieren. , um die Benachrichtigungen zu empfangen. Die folgende Abbildung ist ein Beispiel für das Erstellen einer Ausnahme für zwei Benutzer (Sarad und ALEXD) aus der Domänen Contoso.com: 
+ **Tipp:** Wenn Sie Spambenachrichtigungen für Endbenutzer testen möchten, indem Sie sie an eine begrenzte Gruppe von Benutzern senden, bevor Sie sie implementieren, erstellen Sie eine benutzerdefinierte Inhaltsfilterrichtlinie, die Spambenachrichtigungen für Endbenutzer für die Domänen aktiviert, in denen sich die Benutzer befinden. Erstellen Sie dann in der Exchange-verwaltungsKONSOLE unter **Nachrichtenfluss \> Regeln**eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet), um Nachrichten von Quarantine@messaging.microsoft.com (die e-Mail-Adresse, die Benachrichtigungen sendet) mit Ausnahmen für die gewünschten Benutzer zu blockieren. , um die Benachrichtigungen zu empfangen. Die folgende Abbildung zeigt ein Beispiel für die Erstellung einer Ausnahme für zwei Benutzer (SaraD and AlexD) in der Domäne Contoso.com: 
   
 ![Transportregel zum Testen von Spambenachrichtigungen für Endbenutzer](media/EOP-ESN-testspecificusers.jpg)
   

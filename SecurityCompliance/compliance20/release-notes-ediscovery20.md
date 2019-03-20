@@ -14,20 +14,32 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Dieser Artikel enthält die Versionshinweise zu Advanced eDiscovery (Preview).
-ms.openlocfilehash: d3ea9a8e6b7c0adac32d342d3504eba0e54bd66f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295008"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684354"
 ---
 # <a name="release-notes-for-advanced-ediscovery-preview"></a>Versionshinweise zu Advanced eDiscovery (Preview)
 
 Das öffentliche Vorschauprogramm für Advanced eDiscovery ist die Möglichkeit, frühzeitig Zugriff auf die bevorstehenden Funktionen und Updates zu erhalten. Wenn Sie frühzeitig auf die neuesten Funktionen zugreifen möchten, erstellen Sie einfach einen Advanced eDiscovery (Preview)-Fall im Office 365 Security & Compliance Center. Weitere Informationen finden Sie unter [Create a New Case](create-new-ediscovery-case.md).
 
+## <a name="known-issues"></a>Bekannte Probleme
+
+**Microsoft Forms**
+
+- Die Daten, die einem Formular entsprechen, das vor dem 31. Januar 2019 erstellt wurde, können nicht durchsucht werden, wenn das Such Tool in Advanced eDiscovery (Preview) zum Durchsuchen von Depot Postfächern verwendet wird. Nach diesem Datum erstellte Formulare stehen für die Suche zur Verfügung.
+
+- Ein von einem Benutzer erstelltes Formular kann weiterhin Antworten erhalten, auch wenn der Benutzer, der das Formular erstellt hat, gelöscht wird. Die entsprechenden Daten für diese Antworten (die nach dem Löschen des Depotbank-Postfachs aufgetreten sind) können jedoch nicht durchsucht werden, wenn das Such Tool in Advanced eDiscovery (Preview) zum Durchsuchen von Depot Postfächern verwendet wird.
+ 
+**Microsoft Sway**
+
+- Wenn ein Benutzer eine Sway unmittelbar vor dem Löschen des Benutzerkontos für den Besitzer dieser Sway bearbeitet, sind diese Änderungen möglicherweise nicht durchsuchbar, wenn Sie das Such Tool in Advanced eDiscovery (Preview) zum Durchsuchen von Depot Postfächern verwenden. Sway blockiert Änderungen zu einem Sway, sobald es ein Signal empfängt, dass das Konto gelöscht wurde. Es gibt jedoch eine geringe Wahrscheinlichkeit, dass ein Sway bearbeitet werden kann, bevor dieses Signal empfangen wird.
+
 ## <a name="issues-fixed-in-this-release"></a>In dieser Ausgabe behobene Probleme
 
-- DCR: Ausnahmebehandlung für nicht indizierte und verwaiste Elemente
+- DCR: Ausnahmebehandlung für nicht indizierte Elemente und verwaiste Elemente
 - DCR: Benachrichtigungen halten
 - DCR: Verwalter in eDiscovery
 

@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,19 +13,19 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Spamfilter Richtlinie oder für benutzerdefinierte Spamfilter Richtlinien konfigurieren, die auf Domänen angewendet werden.
-ms.openlocfilehash: e3e5ce044879318dab55f5d08ec2ee0e3379dfb2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 33eb3eca1556507af22a6888a4455944ac51f0cf
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341366"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692474"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer in Exchange Online
 
 > [!IMPORTANT]
-> Dieses Thema richtet sich an Exchange Online-Kunden, die in der Cloud gehostete Postfächer schützen. Exchange Online Protection (EOP) Standalone-Kunden, die lokale Postfächer schützen, sollten stattdessen das folgende Thema lesen: [Konfigurieren von Endbenutzer-Spambenachrichtigungen in EoP](configure-end-user-spam-notifications-in-eop.md). 
+> Dieses Thema richtet sich an Exchange Online-Kunden, die cloudgehostete Postfächer schützen. Exchange Online Protection (EOP) Standalone-Kunden, die lokale Postfächer schützen, sollten stattdessen das folgende Thema lesen: [Konfigurieren von Endbenutzer-Spambenachrichtigungen in EoP](configure-end-user-spam-notifications-in-eop.md). 
   
-Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Spamfilter Richtlinie oder für benutzerdefinierte Spamfilter Richtlinien konfigurieren, die auf Domänen angewendet werden. Durch das Aktivieren von Spambenachrichtigungen für Endbenutzer können Ihre Endbenutzer ihre eigenen Nachrichten in Spamquarantäne selbst verwalten. Spambenachrichtigungen für Endbenutzer können nicht mit Richtlinien verwendet werden, die auf Benutzer oder Gruppen angewendet werden, oder auf eine Richtlinie mit Ausnahmen.
+Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Spamfilter Richtlinie oder für benutzerdefinierte Spamfilter Richtlinien konfigurieren, die auf Domänen angewendet werden. Wenn Sie Spambenachrichtigungen für Endbenutzer aktivieren, können Ihre Endbenutzer ihre Nachrichten in der Spamquarantäne selbst verwalten. Spambenachrichtigungen für Endbenutzer können nicht bei Richtlinien angewendet werden, die auf Benutzer oder Gruppen oder eine Richtlinie mit Ausnahmen angewendet werden.
   
 Spambenachrichtigungen für Endbenutzer enthalten eine Liste aller Nachrichten in der Spamquarantäne, die der Endbenutzer in dem von Ihnen konfigurierten Zeitraum (zwischen 1 und 15 Tagen) erhalten hat. Sie können auch die Sprache festlegen, in der die Benachrichtigung geschrieben wird.
   
@@ -48,9 +47,9 @@ Zeigen Sie eine **Vorschau** der Nachricht an, wenn Sie eine Vorschau des Inhalt
 
 Geschätzte Zeit bis zum Abschließen des Vorgangs: 2 Minuten
   
-Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Antispam" im Thema [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Antispam" im Thema [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
-Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
+Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen in der Exchange-Verwaltungskonsole**.
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer über die Exchange-Verwaltungskonsole
 
@@ -71,9 +70,9 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
 5. Klicken Sie auf **Speichern**. Eine Zusammenfassung der Spamfilter-Richtlinieneinstellungen, einschließlich der Einstellungen für Endbenutzer-Spambenachrichtigungen, werden im rechten Bereich angezeigt.
     
 > [!NOTE]
->  Spambenachrichtigungen für Endbenutzer sind nur für aktivierte Spamfilter Richtlinien funktionsfähig. >-Spambenachrichtigungen für Endbenutzer werden nur einmal pro Tag gesendet. Die Zustellungszeit der Benachrichtigung kann für einen bestimmten Kunden nicht garantiert werden und ist nicht konfigurierbar. 
+>  Spambenachrichtigungen für Endbenutzer sind nur für aktivierte Spamfilter Richtlinien funktionsfähig. >  Spam Endbenutzerbenachrichtigungen sind nur einmal pro Tag versendet. Die Zustellungszeit der Benachrichtigung kann für einen bestimmten Kunden nicht garantiert werden und kann nicht konfiguriert werden. 
   
- **Tipp:** Wenn Sie Spambenachrichtigungen für Endbenutzer testen möchten, indem Sie Sie an eine begrenzte Anzahl von Benutzern senden, bevor Sie sie vollständig implementieren, erstellen Sie eine benutzerdefinierte Spamfilter Richtlinie, die Endbenutzer-Spambenachrichtigungen für die Domänen ermöglicht, in denen sich die Benutzer befinden. Erstellen Sie dann in der Exchange-verwaltungsKONSOLE unter **Nachrichtenfluss \> Regeln**eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet), um Nachrichten von Quarantine@messaging.microsoft.com (die e-Mail-Adresse, die Benachrichtigungen sendet) mit Ausnahmen für die gewünschten Benutzer zu blockieren. , um die Benachrichtigungen zu empfangen. Die folgende Abbildung ist ein Beispiel für das Erstellen einer Ausnahme für zwei Benutzer (Sarad und ALEXD) aus der Domänen Contoso.com: 
+ **Tipp:** Wenn Sie Spambenachrichtigungen für Endbenutzer testen möchten, indem Sie Sie an eine begrenzte Anzahl von Benutzern senden, bevor Sie sie vollständig implementieren, erstellen Sie eine benutzerdefinierte Spamfilter Richtlinie, die Endbenutzer-Spambenachrichtigungen für die Domänen ermöglicht, in denen sich die Benutzer befinden. Erstellen Sie dann in der Exchange-verwaltungsKONSOLE unter **Nachrichtenfluss \> Regeln**eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet), um Nachrichten von Quarantine@messaging.microsoft.com (die e-Mail-Adresse, die Benachrichtigungen sendet) mit Ausnahmen für die gewünschten Benutzer zu blockieren. , um die Benachrichtigungen zu empfangen. Die folgende Abbildung zeigt ein Beispiel für die Erstellung einer Ausnahme für zwei Benutzer (SaraD and AlexD) in der Domäne Contoso.com: 
   
 ![Transportregel zum Testen von Spambenachrichtigungen für Endbenutzer](media/EOP-ESN-testspecificusers.jpg)
   

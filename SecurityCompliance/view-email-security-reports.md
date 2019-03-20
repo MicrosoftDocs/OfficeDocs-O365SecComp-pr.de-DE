@@ -3,7 +3,7 @@ title: Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Ce
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341446"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684364"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -68,9 +68,9 @@ Sie können auch das Menü Daten anzeigen nach verwenden, um die Ansicht zu änd
 
 ![Verschlüsselungs Bericht-Ansicht von Daten nach Menü](media/encryptionreport-viewdataby.png)
 
-Mit der Flexibilität des neuen Verschlüsselungs Berichts können Sie Trends anzeigen und entsprechende Aktionen ausführen. Wenn beispielsweise eine hohe Anzahl von e-Mail-Nachrichten angezeigt wird, die von Benutzern verschlüsselt wurden, können Sie eine Verschlüsselungsrichtlinie hinzufügen, um die Verschlüsselung für bestimmte Anwendungsfälle zu automatisieren. Wenn Sie eine Reihe von Verschlüsselungs Vorlagen zur Verfügung haben, die Sie jedoch nicht verwenden, können Sie ermitteln, ob die Benutzerschulungen für diese Funktion benötigen. 
+Mit der Flexibilität des neuen Verschlüsselungs Berichts können Sie Trends anzeigen und entsprechende Aktionen ausführen. Wenn beispielsweise eine hohe Anzahl von e-Mail-Nachrichten angezeigt wird, die von Benutzern verschlüsselt wurden, können Sie eine Verschlüsselungsrichtlinie hinzufügen, um die Verschlüsselung für bestimmte Anwendungsfälle zu automatisieren. (Weitere Informationen hierzu finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).) Wenn Sie eine Reihe von Verschlüsselungs Vorlagen zur Verfügung haben, die Sie jedoch nicht verwenden, können Sie untersuchen, ob die Benutzerschulungen für diese Funktion benötigen. 
 
-Mit diesem Bericht kann das Sicherheits-und Compliance-Team Ihrer Organisation überwachen, wie die Nachrichtenverschlüsselung verwendet wird und ob weitere Aktionen erforderlich sind.
+Mithilfe dieses Berichts kann das Sicherheits-und Compliance-Team Ihrer Organisation überwachen, wie die Nachrichtenverschlüsselung verwendet wird und ob weitere Aktionen erforderlich sind.
 
 ## <a name="threat-protection-status-report"></a>Status Bericht zum BedrohungsSchutz
 

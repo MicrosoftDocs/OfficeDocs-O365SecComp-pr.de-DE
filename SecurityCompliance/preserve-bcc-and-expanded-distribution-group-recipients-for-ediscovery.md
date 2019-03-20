@@ -7,16 +7,15 @@ ms.date: 6/19/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
-description: Compliance-Archiv, Aufbewahrung für eventuelle Rechtsstreitigkeiten und Office 365 Aufbewahrungsrichtlinien ermöglichen das Beibehalten von Inhalt von Postfächern zu Compliance und eDiscovery-Anforderungen erfüllen.
-ms.openlocfilehash: 1149834181bca527bd06cea846f455e36fad283c
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: In-Place-Speicher, Litigation Hold und Office 365-Aufbewahrungsrichtlinien ermöglichen das Aufbewahren von Postfachinhalten zur Erfüllung behördlicher Vorschriften und eDiscovery-Anforderungen.
+ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038158"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693234"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery
   

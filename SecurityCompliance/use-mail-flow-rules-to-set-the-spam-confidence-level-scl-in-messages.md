@@ -7,7 +7,6 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,22 +14,22 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Administratoren erfahren, wie Sie den SCL-Wert von Nachrichten in Exchange Online Protection festlegen.
-ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: e07b90ab1ab004c39ef36b2aa744ca87120c11fe
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341346"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692744"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten 
 
-Sie können eine Nachrichtenfluss Regel (auch als Transportregel bezeichnet) erstellen, die die SCL-Bewertung (Spam Confidence Level) einer e-Mail-Nachricht festlegt. Die SCL-Bewertung ist ein Maß dafür, wie wahrscheinlich eine Nachricht Spam sein soll. Spam ist unerbetene (und in der Regel unerwünschte) e-Mail-Nachrichten. Der Dienst verwendet eine andere Aktion für eine Nachricht in Abhängigkeit von der SCL-Bewertung. Sie können beispielsweise die Filterung von Spam Inhalten für Nachrichten umgehen, die von Personen innerhalb Ihrer Organisation gesendet werden, da Sie darauf vertrauen, dass eine Nachricht, die intern von einem Kollegen gesendet wird, kein Spam ist. Wenn Sie den SCL-Wert einer Nachricht mithilfe von Nachrichtenfluss Regeln festlegen, können Sie die Kontrolle bei der Behandlung von Spam erhöhen. 
+Sie können eine Nachrichtenfluss Regel (auch als Transportregel bezeichnet) erstellen, die die SCL-Bewertung (Spam Confidence Level) einer e-Mail-Nachricht festlegt. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können beispielsweise die Filterung von Spam Inhalten für Nachrichten umgehen, die von Personen innerhalb Ihrer Organisation gesendet werden, da Sie darauf vertrauen, dass eine Nachricht, die intern von einem Kollegen gesendet wird, kein Spam ist. Wenn Sie den SCL-Wert einer Nachricht mithilfe von Nachrichtenfluss Regeln festlegen, können Sie die Kontrolle bei der Behandlung von Spam erhöhen. 
   
  **Was sollten Sie wissen, bevor Sie beginnen?**
   
 - Geschätzte Zeit bis zum Abschließen dieses Verfahrens: 10 Minuten.
     
-- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) oder [Feature Permissions in EoP](eop/feature-permissions-in-eop.md). 
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) oder [Feature Permissions in EoP](eop/feature-permissions-in-eop.md). 
     
 - Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen in der Exchange-Verwaltungskonsole**.
     

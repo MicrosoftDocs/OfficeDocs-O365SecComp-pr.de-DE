@@ -7,16 +7,15 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: Als ein Exchange Online Protection (EOP) Kunde werden alle Nachrichten, die an Ihre Organisation gesendet werden, durch EOP geleitet, bevor die Mitarbeiter sie sehen. Ob Sie alle Ihre Postfächer in der Cloud mit Exchange Online hosten oder ob Sie Ihre Postfächer vor Ort hosten (genannt eigenständiges Szenario), haben Sie Optionen für die Art der Weiterleitung von Nachrichten, die zur Bearbeitung EOP durchlaufen, bevor sie an die Postfächer Ihrer Mitarbeiter weitergeleitet werden, um weiterhin die Vorteile Ihrer bestehenden Infrastruktur nutzen zu können.
-ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
-ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
+ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "23002142"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691714"
 ---
 # <a name="mail-flow-in-eop"></a>Nachrichtenfluss in EOP
 
@@ -36,7 +35,7 @@ Wenn Sie Ihrer Organisation Unterdomänen hinzufügen, können Sie auch diese mi
   
 Unter [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx) erhalten Sie eine Einführung in Connectors und erfahren, wie diese zum Anpassen von E-Mail-Routing verwendet werden können. Dazu gehören Szenarien zur Gewährleistung sicherer Kommunikation mit einer Partnerorganisation sowie das Einrichten eines Smarthosts. 
   
-Um sicherzustellen, dass junk-e-Mail-ordnungsgemäß an die Junk-e-Mail-Ordner des Benutzers weitergeleitet wird, müssen Sie einige Konfigurationsschritte ausführen. Diese werden in [Stellen Sie sicher, dass Spam an die Junk-e-Mail-Ordner des Benutzers geleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)ausführlich beschrieben. Wenn Sie nicht Nachrichten des Benutzers Junk-e-Mail-Ordner verschieben möchten, können Sie eine andere Aktion durch Ihre inhaltsfilterrichtlinien in der Exchange-Verwaltungskonsole bearbeiten wählen. Weitere Informationen finden Sie unter [Konfigurieren von Richtlinien Ihrer Spam-Filter](../configure-your-spam-filter-policies.md).
+Sie müssen eine Reihe von Konfigurationsschritten ausführen, um wirklich sicherzustellen, dass Junk-E-Mail in die Junk-E-Mail-Ordner der Benutzer umgeleitet werden. Diese werden ausführlich unter [sicherstellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Wenn die Nachrichten nicht in die Junk-E-Mail-Ordner der Benutzer verschoben werden sollen, können Sie eine andere Aktion auswählen, indem Sie die standardmäßige Inhaltsfilterrichtlinie im Exchange Admin Center bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](../configure-your-spam-filter-policies.md).
   
 ## <a name="verify-mail-flow"></a>Überprüfen des Nachrichtenflusses
 

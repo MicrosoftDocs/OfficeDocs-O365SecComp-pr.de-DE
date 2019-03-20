@@ -7,18 +7,17 @@ ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: Häufig werden vertrauliche Informationen wie Finanzdaten, Verträge, vertrauliche Produktinformationen, Verkaufsberichte und -prognosen oder Patienten-, Kunden- und Mitarbeiterdaten per E-Mail ausgetauscht. Postfächer können daher zu Repositories großer Mengen potenziell vertraulicher Informationen werden, und Informationsverluste können eine ernstzunehmende Bedrohung für die Organisation darstellen.
-ms.openlocfilehash: 5036fe359215de1c2674d7efabbb283c78418a19
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002566"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692344"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Verwaltung von Informationsrechten in Exchange Online
 
@@ -36,7 +35,7 @@ Für IRM in Exchange Online werden die lokalen Active Directory-Rechteverwaltung
   
 Benutzer können eine Vorlage auf eine E-Mail anwenden, um zu steuern, welche Berechtigungen Empfänger für die E-Mail erhalten. Aktionen wie das Extrahieren von Informationen aus einer Nachricht, Weiterleiten, Speichern oder Drucken einer Nachricht können durch Anwenden einer AD RMS-Rechterichtlinie auf die Nachricht gesteuert werden.
   
-Sie können IRM für die Verwendung eines AD RMS-Servers mit Windows Server 2008 oder höher konfigurieren. Dieser AD RMS-Server wird zum Verwalten der AD RMS-Rechterichtlinienvorlagen für die cloudbasierte Organisation verwendet. Der AD RMS-Server wird von Outlook auch verwendet, um Benutzern das Anwenden von IRM-Schutz auf die von ihnen gesendeten Nachrichten zu ermöglichen. Weitere Informationen finden Sie unter [Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md). 
+Sie können IRM für die Verwendung eines AD RMS-Servers mit Windows Server 2008 oder höher konfigurieren. Dieser AD RMS-Server wird zum Verwalten der AD RMS-Rechterichtlinienvorlagen für die cloudbasierte Organisation verwendet. Der AD RMS-Server wird von Outlook auch verwendet, um Benutzern das Anwenden von IRM-Schutz auf die von ihnen gesendeten Nachrichten zu ermöglichen. Weitere Informationen finden Sie unter [Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers](configure-irm-to-use-an-on-premises-ad-rms-server.md). 
   
 Nach der Aktivierung kann IRM-Schutz auf Nachrichten wie folgt angewendet werden:
   

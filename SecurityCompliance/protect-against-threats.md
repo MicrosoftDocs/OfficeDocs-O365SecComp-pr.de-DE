@@ -14,12 +14,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 Enterprise zum Schutz Ihrer Organisation vor einer Vielzahl von Bedrohungen wie Spoofing, Schadsoftware, Spam, Phishing-versuchen und nicht autorisiertem Zugriff auf Daten beitragen kann.
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245581"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693244"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
@@ -39,7 +39,7 @@ Mit Office 365 Enterprise können Sie Ihre Organisation vor einer Vielzahl von B
 
 - [Office 365 ATP Safe Attachments](atp-safe-attachments.md)
 
-- [ATP-sichere Links in Office 365](atp-safe-links.md)
+- [Office 365 ATP-sichere Links](atp-safe-links.md)
 
 ## <a name="anti-phishing"></a>AntiPhishing
 
@@ -55,7 +55,7 @@ Wenn Sie eine benutzerdefinierte Domäne in Office 365 verwenden, verhindern Sie
     
 - [Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden](use-dkim-to-validate-outbound-email.md)
     
-- [Verwenden von DMARC zum Überprüfen von E-Mails in Office 365](use-dmarc-to-validate-email.md)
+- [Verwenden von DMARC zum Überprüfen von e-Mails in Office 365](use-dmarc-to-validate-email.md)
 
 ## <a name="anti-spam"></a>Antispam
 
@@ -72,7 +72,7 @@ Konfigurieren von Richtlinien zur Verwaltung von Spoofing, zum Schutz vor Phishi
   
 - [Informationen zu Office 365 ATP](office-365-atp.md)
 
-- [Übersicht über Office 365 Threat Intelligence](office-365-ti.md)
+- [Übersicht über Office 365 ATP-Plan 2](office-365-ti.md)
     
 - [Einrichten von Richtlinien zum Schutz vor Phishing](set-up-anti-phishing-policies.md)
     

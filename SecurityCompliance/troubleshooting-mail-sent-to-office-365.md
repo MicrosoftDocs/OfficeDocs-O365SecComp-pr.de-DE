@@ -7,7 +7,6 @@ ms.date: 5/2/2016
 ms.audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme haben, E-Mails an Postfächer in Office 365 zu senden, und bewährte Methoden für Massenmailings an Office 365-Kunden.
-ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276295"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692104"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden
 
@@ -66,7 +65,7 @@ Anweisungen zum Erstellen und Verwalten von DNS-Einträgen, einschließlich des 
 
 Wir akzeptieren möglicherweise keine E-Mail-Nachrichten von Absendern, für die eine Reverse-DNS-Suche fehlschlägt. In einigen Fällen bewerben sich seriöse Absender fälschlicherweise als nicht routbare IP-Adresse bei dem Versuch, eine Verbindung zu EOP zu öffnen. IP-Adressen, die für private (nicht routbare) Netzwerke reserviert sind, enthalten:
   
-- 192.168.0.0/16 (oder 192.168.0.0 – 192.168.255.255)
+- 192.168.0.0/16 (oder 192.168.0.0 - 192.168.255.255)
     
 - 10.0.0.0/8 (oder 10.0.0.0 - 10.255.255.255)
     
@@ -117,14 +116,14 @@ Sie haben einen NDR erhalten, da an der betreffenden IP-Adresse eine verdächtig
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Ich kann keine E-Mails von Absendern in Office 365 erhalten.
 <a name="AllowEOPIPs"> </a>
 
- Um Nachrichten von unseren Benutzern zu empfangen, stellen Sie sicher, dass Ihr Netzwerkverbindungen von den IP-Adressen zulässt, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection-IP-Adressen](eop/exchange-online-protection-ip-addresses.md). 
+ Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection-IP-Adressen](eop/exchange-online-protection-ip-addresses.md). 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Bewährte Methoden für Massen-E-Mails an Office 365-Benutzer
 <a name="BulkMailer"> </a>
 
 Wenn Sie häufig Massen-E-Mail-Kampagnen für Benutzer von Office 365 durchführen und sicherstellen möchten, dass Ihre E-Mails sicher und zeitnah eintreffen, folgen Sie den Tipps in diesem Abschnitt.
   
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Stellen Sie sicher, dass der Name unter „Von:" angibt, wer die Nachricht sendet.
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Stellen Sie sicher, dass der Name unter „Von:“ angibt, wer die Nachricht sendet.
 
 Der Betreff sollte eine kurze Zusammenfassung der Nachricht darstellen, und der Nachrichtentext sollte klar und eindeutig angeben, um was es beim Angebot, Dienst oder Produkt geht. Beispiel:
   

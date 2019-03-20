@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. Exchange Online Protection (EOP)-Anti-Spam- und Anti-Phishing-Filtertechnologie wird plattformübergreifend über die E-Mail-Plattformen von Microsoft angewendet, um Benutzern die neuesten Anti-Spam- und Anti-Phishing-Tools und Innovationen im gesamten Netzwerk zur Verfügung zu stellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
-ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216565"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692854"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Bekämpfung von Junk-E-Mails, die an Office 365 gesendet werden
 
@@ -28,7 +27,7 @@ Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktü
   
 ## <a name="the-challenge"></a>Die Herausforderung
 
-E-Mail ist ein wichtiges Kommunikationstool geworden, nicht nur für Endkunden, sondern auch für Vermarkter, Supportmitarbeiter, Vertriebsorganisationen und Unternehmen aller Größen. Zusammen mit der E-Mail-Verwendung ist auch der E-Mail-Missbrauch gestiegen. Nicht überwachte Junk-E-Mails können Postfächer und Netzwerke verstopfen, sich auf die Benutzerzufriedenheit auswirken und die Effektivität der seriösen E-Mail-Kommunikation behindern. Deshalb investiert Microsoft weiter in Anti-Spam-Technologien. Einfach ausgedrückt beginnt alles mit dem Speichern und Filtern von Junk-E-Mails.  
+E-Mail ist ein wichtiges Kommunikationstool geworden, nicht nur für Endkunden, sondern auch für Vermarkter, Supportmitarbeiter, Vertriebsorganisationen und Unternehmen aller Größen. Zusammen mit der E-Mail-Verwendung ist auch der E-Mail-Missbrauch gestiegen. Nicht überwachte Junk-E-Mails können Postfächer und Netzwerke verstopfen, sich auf die Benutzerzufriedenheit auswirken und die Effektivität der seriösen E-Mail-Kommunikation behindern. Deshalb investiert Microsoft weiter in Anti-Spam-Technologien. Einfach ausgedrückt beginnt alles mit dem Speichern und Filtern von Junk-E-Mails. 
   
 ## <a name="our-efforts"></a>Unsere Bemühungen
 
@@ -50,7 +49,7 @@ Zusätzlich zu den Anti-Spam-Filtertechnologien gibt EOP dem Systemadministrator
   
 ### <a name="phishing-protection"></a>Schutz gegen Phishing
 
-Phishing („Fisching“ ausgesprochen) ist eine Form von Identitätsdiebstahl und eine der am schnellsten wachsenden Bedrohungen im Internet. Sie können eine Phishingnachricht häufig erkennen, wenn sie persönliche oder finanzielle Informationen anfordert oder einen Link zu einer Website enthält, die derartige Informationen anfordert. EOP bietet Phishingschutz als Teil der proprietären EOP-Filtertechnologien an. EOP-Filtertechnologien analysieren E-Mails, um betrügerische Links oder gefälschte Domänen zum Schutz der Benutzer vor diesen Arten von Onlinebetrug zu erkennen.
+Phishing („Fisching" ausgesprochen) ist eine Form von Identitätsdiebstahl und eine der am schnellsten wachsenden Bedrohungen im Internet. Sie können eine Phishingnachricht häufig erkennen, wenn sie persönliche oder finanzielle Informationen anfordert oder einen Link zu einer Website enthält, die derartige Informationen anfordert. EOP bietet Phishingschutz als Teil der proprietären EOP-Filtertechnologien an. EOP-Filtertechnologien analysieren E-Mails, um betrügerische Links oder gefälschte Domänen zum Schutz der Benutzer vor diesen Arten von Onlinebetrug zu erkennen.
   
 #### <a name="how-does-phishing-protection-work"></a>Wie funktioniert der Phishingschutz?
 
@@ -61,7 +60,7 @@ Microsoft konzentriert seine Anti-Phishing-Technologie auf zwei Punkte: Erstens 
 > [!TIP]
 > Internet Explorer ab Version 7 blockiert oder warnt Benutzer, wenn sie bekannte potenzielle Phishing-Websites besuchen, damit sie keine persönlichen Informationen bereitstellen.[Stellen Sie sicher, dass Sie die neueste Version von Internet Explorer haben](https://www.microsoft.com/windows/ie/default.mspx). 
   
-#### <a name="authentication"></a>Authentifizierung
+#### <a name="authentication"></a>Authentication
 
 Domänen-Spoofing ist eine Möglichkeit, eine seriöse E-Mail-Adresse zu imitieren, damit betrügerische E-Mails seriös erscheinen. Spoofing wird von böswilligen Personen oder Organisationen in Phishing-Betrugsversuchen verwendet, um Personen zum Preiszugeben vertraulicher persönlicher Informationen zu verleiten. Die Offenlegung dieser Informationen kann zu Identitätsdiebstahl und anderen Arten von Betrug führen.
   

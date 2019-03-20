@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie das Berichtnachrichten-Add-in für Outlook und Outlook im Web für einzelne Benutzer oder Ihre gesamte Organisation aktivieren können.
-ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410900"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693384"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtsnachrichts-Add-Ins
 
@@ -29,7 +29,7 @@ ms.locfileid: "30410900"
 
 ## <a name="overview"></a>Übersicht
 
-Das Berichtnachrichten-Add-in für Outlook und Outlook im Web ermöglicht es Benutzern, problemlos falsch klassifizierte e-Mails, ob sicher oder bösartig, an Microsoft und ihre Partner zur Analyse zu melden. Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern. Wenn in Ihrer Organisation [office 365 Advanced Threat Protection](office-365-atp.md) oder [Office 365 Threat Intelligence](office-365-ti.md)verwendet wird, stellt das Add-in "Berichtnachricht" Darüber hinaus für das Sicherheitsteam Ihrer Organisation nützliche Informationen zur Verfügung, die Sie zum überarbeiten und aktualisieren verwenden können. Sicherheitsrichtlinien. 
+Das Berichtnachrichten-Add-in für Outlook und Outlook im Web ermöglicht es Benutzern, problemlos falsch klassifizierte e-Mails, ob sicher oder bösartig, an Microsoft und ihre Partner zur Analyse zu melden. Microsoft verwendet diese Übermittlungen, um die Effektivität von e-Mail-Schutztechnologien zu verbessern. Wenn in Ihrer Organisation [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) oder [Plan 2](office-365-ti.md)verwendet wird, stellt das Add-in für Berichtnachrichten dem Sicherheitsteam Ihrer Organisation nützliche Informationen zur Verfügung, die Sie zum überarbeiten und Aktualisieren von Sicherheitsrichtlinien verwenden können. 
 
 Nehmen wir beispielsweise an, dass Benutzer viele Nachrichten als Phishing melden. Diese Informations Oberflächen werden im [Sicherheits Dashboard](security-dashboard.md) und in anderen Berichten angezeigt. Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Hinweis dafür verwenden, dass Anti-Phishing-Richtlinien möglicherweise aktualisiert werden müssen. Oder wenn Personen viele Nachrichten melden, die mit dem Add-in "Berichtnachricht" als Junk-e-Mail als nicht-Junk markiert wurden, muss das Sicherheitsteam Ihrer Organisation möglicherweise [Anti-Spam-Richtlinien](configure-the-anti-spam-policies.md)anpassen. 
 
@@ -121,7 +121,7 @@ Sie können eine Regel einrichten, um eine Kopie der von Benutzern in Ihrer Orga
     
 9. Wählen Sie unter **Wählen Sie einen Modus für diese Regel**aus die Option **erzwingen**aus.<br/>![Einrichten einer Regel zum Abrufen einer Kopie jeder gemeldeten Nachricht](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. Wählen Sie **Speichern**. 
+10. Wählen Sie **Speichern** aus. 
     
 Wenn diese Regel gilt, erhalten Benutzer, die in Ihrer Organisation eine e-Mail-Nachricht mit dem Berichtnachrichten-Add-in melden, ihren globalen Administrator, Sicherheitsadministrator und/oder Sicherheits Leser eine Kopie dieser Nachricht. Mit diesen Informationen können Sie Richtlinien wie [Office 365 ATP](atp-safe-links.md) -Richtlinien für sichere Links oder Ihre Antispameinstellungen einrichten [](anti-spam-protection.md) oder anpassen. 
 

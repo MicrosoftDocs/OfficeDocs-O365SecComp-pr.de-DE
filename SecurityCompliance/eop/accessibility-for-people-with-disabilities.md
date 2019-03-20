@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für jeden möglichst einfach zu gestalten.
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206378"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693104"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Barrierefreiheit für Personen mit Einschränkungen
 
@@ -29,7 +28,7 @@ Die folgenden Funktionen erleichtern Personen mit Behinderungen den Zugriff auf 
     
 - [Tastenkombinationen in Outlook im Web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-Darüber hinaus können einige Barrierefreiheitsfunktionen und Windows-Dienstprogramme Exchange-Benutzern mit Behinderungen zugute kommen. Außerdem bieten Windows PowerShell-Größen-und Farbänderungen bei Verwendung der Exchange-Verwaltungsshell Eingabehilfen. Weitere Informationen zu den verfügbaren Windows PowerShell-Optionen finden Sie unter [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+Auch einige der Barrierefreiheitsfunktionen und -dienstprogramme von Windows können für Exchange-Benutzer mit Behinderungen hilfreich sein. Für mehr Barrierefreiheit bei der Arbeit mit der Exchange-Verwaltungsshell stehen Ihnen außerdem Optionen zur Größen- und Farbanpassung in Windows PowerShell zur Verfügung. Weitere Informationen zu den verfügbaren Windows PowerShell-Optionen finden Sie unter [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Barrierefreiheitsfunktionen von Exchange Help
 
@@ -42,7 +41,7 @@ Die folgenden Abschnitte enthalten Informationen zu den folgenden Funktionen, Pr
 > [!NOTE]
 > Die Informationen in diesem Abschnitt gelten nur für Benutzer, die Microsoft-Produkte in den USA lizenzpflichtig nutzen. Wenn Sie dieses Produkt nicht in den USA erworben haben, finden Sie auf der [Microsoft-Website zum Thema Barrierefreiheit](https://www.microsoft.com/enable) eine Liste mit den Telefonnummern und Adressen des Produktsupports von Microsoft. Erfragen Sie bei Ihrer Niederlassung vor Ort, ob die in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Weitere Informationen zu den Barrierefreiheitsfunktionen in Microsoft-Produkten finden Sie auf der Website zum Thema Barrierefreiheit in Microsoft-Produkten. 
   
-### <a name="accessibility-features-of-windows"></a>Barrierefreiheitsfunktionen von Windows
+### <a name="accessibility-features-of-windows"></a>Barrierefreiheitsfeatures von Windows
 
 Das Windows-Betriebssystem bietet zahlreiche integrierte Barrierefreiheitsfunktionen, die für Personen hilfreich sind, die eine Tastatur oder eine Maus nur mit Schwierigkeiten bedienen können, blind oder sehbehindert sind oder gehörlos oder hörgeschädigt sind. Diese Funktionen werden beim Setup installiert. Weitere Informationen zu diesen Funktionen finden Sie in der Hilfe in Windows und auf der [Microsoft-Website zum Thema Barrierefreiheit](https://go.microsoft.com/fwlink/p/?linkId=18139).
   
@@ -52,7 +51,7 @@ Das Windows-Betriebssystem bietet zahlreiche integrierte Barrierefreiheitsfunkti
     
 - **Unterstützende Produkte für Windows** Für die einfachere Verwendung von Computern für Menschen mit Behinderungen ist eine umfangreiche Palette an unterstützenden Produkten verfügbar. Sie können unter "Microsoft-Barrierefreiheit" einen Katalog unterstützender Technologieprodukte, die mit Windows verwendet werden können, durchsuchen. 
     
-    Wenn Sie unterstützende Technologie verwenden, sollten Sie vor dem Aktualisieren Ihrer Software oder Hardware unbedingt an Ihren Händler für unterstützende Technologie wenden, um mögliche Kompatibilitätsprobleme zu klären. 
+    Wenn Sie Hilfstechnologie verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren. 
     
 ### <a name="documentation-in-alternative-formats"></a>Dokumentation in alternativen Formaten
 
@@ -62,13 +61,13 @@ Darüber hinaus können Sie zusätzliche Microsoft-Publikationen von Learning Al
   
 ||
 |:-----|
-|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540  <br/> Telefonnummer in den USA: (800) 221-4792  <br/> Website: [Learning Ally](https://www.learningally.org/) <br/> |
+|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540, USA  <br/> Telefonnummer in den USA: (800) 221-4792  <br/> Website: [Learning Ally](https://www.learningally.org/) <br/> |
    
-### <a name="customer-service-for-people-with-hearing-impairments"></a>Kundendienst für Personen mit eingeschränktem Hörvermögen
+### <a name="customer-service-for-people-with-hearing-impairments"></a>Kundenservice für Personen mit Hörschädigungen
 
-Für Gehörlose oder Personen mit eingeschränktem Hörvermögen steht ein barrierefreier Microsoft-Produkt- und Kundendienst über einen Schreibtelefondienst (TTY/TDD) zur Verfügung:
+Wenn Sie taub oder hörgeschädigt sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundendienste von Microsoft zugreifen:
   
-- Sie können den Kundendienst über das Microsoft Sales Information Center über ein Texttelefon unter (800) 892-5234 zwischen 6:30 Uhr und 17:30 Uhr Pacific Time von Montag bis Freitag (außer an Feiertagen) erreichen. 
+- Kundendienst und -support stellt das Microsoft Sales Information Center unter der Rufnummer (800) 892-5234 montags bis freitags von 06:30 bis 17:30 Uhr (Pacific Time), außer an Feiertagen, zur Verfügung. 
     
 - Zur Inanspruchnahme technischer Unterstützung in den USA können Sie sich von Montag bis Freitag (außer an Feiertagen) zwischen 6:00 Uhr und 18:00 Uhr (Pacific Time) unter der Telefonnummer (800) 892-5234 an den Microsoft-Produktsupport wenden. In Kanada steht der Produktsupport von Montag bis Freitag (außer an Feiertagen) von 8:00 Uhr bis 20:00 Uhr (Eastern Time) unter der Telefonnummer (905) 568-9641 zur Verfügung. 
     

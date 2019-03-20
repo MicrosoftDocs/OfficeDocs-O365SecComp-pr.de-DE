@@ -7,7 +7,6 @@ ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,16 +14,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC).
-ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341786"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693224"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Finden und Freigeben von Nachrichten in Quarantäne als Administrator
 
-In diesem Thema wird beschrieben, wie Exchange Online-und Exchange Online Protection (EOP)-Administratoren isolierte Nachrichten im Exchange Admin Center (EAC) finden, freigeben und melden können. Office 365 leitet Nachrichten in Quarantäne, da Sie als Spam identifiziert wurden oder mit einer Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmen. 
+In diesem Thema wird beschrieben, wie Administratoren von Exchange Online und Exchange Online Protection (EOP) isolierte Nachrichten finden, freigeben und Berichte dazu erstellen, die sich im Exchange Admin Center (EAC). Office 365 leitet Nachrichten in Quarantäne, da Sie als Spam identifiziert wurden oder mit einer Nachrichtenfluss Regel (auch als Transportregel bezeichnet) übereinstimmen. 
   
 Verwenden Sie das &amp; Security Compliance Center anstelle der Exchange-Verwaltungskonsole, um diese Aufgaben auszuführen und mit Nachrichten zu arbeiten, die an die Quarantäne gesendet wurden, da Sie Schadsoftware enthalten. Weitere Informationen finden Sie unter [Isolieren von e-Mail-Nachrichten in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -39,11 +38,11 @@ Sie können eine Liste aller isolierten Nachrichten anzeigen oder durch Angabe v
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 <a name="sectionSection0"> </a>
 
-- Bevor Sie dieses Verfahren ausführen können, müssen Ihnen Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Quarantäne" im Thema " [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) ". 
+- Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Quarantäne" im Thema " [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) ". 
     
 - Sie können auf der Seite **Quarantäne** mehrere Nachrichten auf einmal freizugeben oder melden. Alternativ können Sie dazu ein Windows PowerShellRemoteskript erstellen. Verwenden Sie das [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx)-Cmdlet, um nach Nachrichten zu suchen, und das [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx)-Cmdlet, um sie freizugeben. 
     
-- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen in der Exchange-Verwaltungskonsole**.
+- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie die Foren unter [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) oder [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -70,7 +69,7 @@ Im Exchange Admin Center (EAC) können Sie mithilfe der erweiterten Suche anhand
 6. **Läuft ab** Sie können wählen, dass die Nachricht innerhalb der nächsten 24 Stunden ( **Heute**) aus der Quarantäne gelöscht wird, innerhalb der nächsten 48 Stunden ( **Nächste 2 Tage**), innerhalb der nächsten Woche ( **Nächste 7 Tage**), oder Sie können einen individuellen Zeitraum auswählen, während dem die Nachricht aus der Quarantäne gelöscht wird.
     
     > [!IMPORTANT]
-    > Standardmäßig werden Nachrichten in Spamquarantäne für 15 Tage in Quarantäne gehalten, während isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, 7 Tage lang in der Quarantäne aufbewahrt werden. Nach diesem Zeitraum löscht Office 365 die Nachrichten, und Sie können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage)** in ihren Inhaltsfilter Richtlinien gesenkt werden. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](configure-your-spam-filter-policies.md). 
+    > Standardmäßig werden Nachrichten in Spamquarantäne für 15 Tage in Quarantäne gehalten, während isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, 7 Tage lang in der Quarantäne aufbewahrt werden. Nach diesem Zeitraum löscht Office 365 die Nachrichten, und Sie können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage)** in ihren Inhaltsfilter Richtlinien gesenkt werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). 
   
 7. **Typ** Sie können angeben, ob nach Nachrichten, die als **Spam**identifiziert wurden, gesucht werden soll, oder ob Sie suchen möchten, die mit einer Nachrichtenfluss Regel (**Transport Regel**) übereinstimmen.
     
@@ -145,7 +144,7 @@ Wenn Sie Nachrichten für Empfänger freigeben möchten, stehen dazu folgende M�
   
 Wählen Sie **Ausgewählte Nachricht freigeben und Absender zulassen** aus der Dropdownliste aus. 
     
-3. Das Dialogfeld **Nachricht freigeben und Absender zulassen** wird geöffnet. Optional können Sie die Nachricht an Microsoft melden und dann auf **Freigeben und zulassen**klicken. Die Nachricht wird an alle Empfänger freigegeben, an die Sie adressiert ist, und alle zukünftigen Nachrichten von diesem Absender werden zugelassen. Wenn diese Nachricht jedoch aufgrund einer e-Mail-Fluss Regel oder eines blockierten Absenders isoliert wurde, wird der Absender weiterhin für zukünftige Nachrichten blockiert. 
+3. Das Dialogfeld **Nachricht freizugeben und Absender zulassen** wird geöffnet. Optional können Sie die Nachricht an Microsoft melden und dann auf **Freigeben und zulassen** klicken. Die Nachricht wird für alle Empfänger freigegeben, an die sie gerichtet ist, und alle zukünftigen Nachrichten von diesem Absender werden zugelassen. Wenn diese Nachricht jedoch aufgrund einer e-Mail-Fluss Regel oder eines blockierten Absenders isoliert wurde, wird der Absender weiterhin für zukünftige Nachrichten blockiert. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Freigeben einer isolierten Nachricht für bestimmte Empfänger, ohne sie als falsch positives Ergebnis zu melden
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>
