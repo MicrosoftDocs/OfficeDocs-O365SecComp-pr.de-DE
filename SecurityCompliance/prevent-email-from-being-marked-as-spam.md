@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie falsch positive Ergebnisse verhindern und echte E-Mail-Nachrichten davor schützen, im Junk-E-Mail-Ordner von Office 365 zu landen.
-ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455097"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670650"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden
 
@@ -62,6 +62,10 @@ Um effektiv zu arbeiten, müssen Administratoren in Exchange Online Protection (
 - **DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bieten kann, müssen die MX-DNS-Einträge (Mail Exchanger) für alle Domänen ausschließlich auf Office 365 zeigen. Wenn die MX-Einträge nicht auf Office 365 zeigen, bietet EOP keinen Spamfilter für Ihre Benutzer. Wenn Sie einen anderen Dienst oder eine andere Anwendung für den Spamfilter für Ihre Domäne verwenden möchten, sollten Sie den Spamschutz in EOP deaktivieren. Erstellen Sie hierfür eine E-Mail-Flussregel, durch die der SCL-Wert auf -1 festgelegt wird. Wenn Sie sich später entschließen, doch EOP zu verwenden, entfernen Sie diese E-Mail-Flussregel. 
     
 - **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
+
+- **Stellen Sie sicher, dass sich die Benutzer innerhalb der zulässigen Grenzwerte** zum Senden und Empfangen von E-Mails befinden, wie [hier](https://docs.microsoft.com/de-DE/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) gezeigt.
+
+ - **Überprüfen Sie die Massenebenen, **wie [hier](bulk-complaint-level-values.md) angegeben.
     
 ### <a name="for-users"></a>Für Benutzer
     
@@ -74,7 +78,7 @@ Von EOP werden die sicheren Absender und Empfänger Ihrer Benutzer berücksichti
 - **Deaktivieren des SmartScreen-Filters in Outlook** Wenn Ihre Benutzer den Outlook-Desktopclient verwenden, sollten sie den SmartScreen-Filter deaktivieren, da dieser nicht mehr unterstützt wird. Wenn dieses Feature aktiviert ist, kann es zu falsch positiven Ergebnissen führen. führen. Dies sollte nicht erforderlich sein, wenn ein aktualisierter Desktopclient für Outlook ausgeführt wird.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Problembehandlung: Eine Nachricht befindet sich im Ordner "Junk", obwohl EOP die Nachricht als Nicht-Spam-Nachricht gekennzeichnet hat
-<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
 
 Wenn die Benutzer in Outlook die Option "Nur sichere Absender und Empfänger: Es werden nur Nachrichten von Personen und Domänen auf den Listen 'Sichere Absender' und 'Sichere Empfänger' in den Posteingang übermittelt" aktiviert haben, werden alle E-Mails von einem Absender in den Junk-E-Mail-Ordner verschoben, es sei denn, dieser Absender ist auf der Liste sicherer Absender des Empfängers verzeichnet. Dies erfolgt unabhängig davon, ob EOP eine Nachricht als Nicht-Spam-Nachricht kennzeichnet oder Sie in EOP eine Regel eingerichtet haben, um eine Nachricht als Nicht-Spam-Nachricht zu kennzeichnen.
   
@@ -90,7 +94,7 @@ Wenn Sie sich den Kopf einer Nachricht ansehen, finden Sie darin möglicherweise
     
 2. Führen Sie den folgenden Befehl aus, um die Junk-E-Konfigurationseinstellungen des Benutzers anzuzeigen:
     
-  ```
+  ```Powershell
   Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
   ```
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357546"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670560"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
@@ -56,6 +56,9 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
 - **Sofortiges Blockieren eines Absenders** Falls Sie einen Absender sofort blockieren müssen, können Sie ihn nach E-Mail-Adresse, Domäne oder IP-Adresse blockieren. Lesen Sie die Informationen unter [Verwenden des EAC zum Erstellen einer E-Mail-Flussregel, die Nachrichten einer bestimmten Domäne oder eines bestimmten Benutzers blockiert](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Ein Eintrag in einer Endbenutzer-Zulassungsliste kann eine vom Administrator festgelegten Blockung außer Kraft setzen.
     
 - **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
+- **Aktivieren der [DKIM](use-dkim-to-validate-outbound-email.md)**, um alle ausgehenden Nachrichten zu signieren, damit die Sicherheit in Ihrer Domäne und in Ihrem Mandanten gesteigert wird.
+ > [!TIP]
+> Nachdem Sie DKIM aktiviert haben, müssen Sie [DMARC](use-dkim-to-validate-outbound-email.md) aktivieren, da dieser Eintrag überprüft, ob DKIM und SPF korrekt arbeiten. Spoofing-E-Mails weisen die Signatur im Allgemeinen nicht auf, da O365 Ihren privaten und öffentlichen symmetrischen Schlüssel verwaltet.
     
 ### <a name="for-users"></a>Für Benutzer
 
