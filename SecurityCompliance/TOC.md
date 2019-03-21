@@ -88,12 +88,12 @@
 ### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Schutz vor Bedrohungen](protect-against-threats.md)
+## [Schnellstart-Handbuch: Einrichten von Office 365 Advanced Threat Protection](checklist-atp-setup.md)
 ## [Antispam- und Antischadsoftwareschutz](anti-spam-and-anti-malware-protection.md)
 ### [Übersicht über EOP](videos-for-getting-started-with-protecting-your-email.md)
 ### [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
 ### [Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md)
 ### [Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)
-### [Verhindern, dass E-Mails in EOP und Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam-0.md)
 ### [Steuern ausgehender Spamnachrichten in Office 365](outbound-spam-controls.md)
 ### [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
 ### [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md)
 ## [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md)
-## [Aktivieren der Postfachüberwachung](enable-mailbox-auditing.md)
+## [Verwalten der Postfächern](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
 ## [Verwenden des Überwachungsprotokoll zum Beheben häufiger Szenarien](auditing-troubleshooting-scenarios.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)

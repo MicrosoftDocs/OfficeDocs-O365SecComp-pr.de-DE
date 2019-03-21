@@ -3,23 +3,22 @@ title: Erstellen eines Schlüsselwörterbuchs
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 8e115c0feddbd55a498db3481e6ad4bc7ebb07e7
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 5561f8b11cf7bab8c726da332caca1484d455b35
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638912"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701310"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
@@ -27,17 +26,32 @@ Durch die Verhinderung von Datenverlusten (Data Loss Prevention, DLP) in Office 
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Grundlegende Schritte zum Erstellen eines Schlüsselwörterbuchs
 
-Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer Datei (etwa einer CSV- oder TXT-Liste), aus einer Liste, die Sie direkt in das Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch. Befolgen Sie beim Erstellen eines Schlüsselwörterbuchs die folgenden Kernschritte:
+Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer in den Dienst importierten Datei (etwa einer CSV- oder TXT-Liste), oder durch ein einem PowerShell-Cmdlet, aus einer Liste, die Sie direkt in das PowerShell-Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch.Beim Erstellen eines Schlüsselwörterbuchs befolgen Sie die gleichen einfachen Schritte:
   
-1. **Herstellen einer Verbindung mit Security &amp; Compliance Center PowerShell**: Weitere Informationen finden Sie in [diesem Thema](https://docs.microsoft.com/de-DE/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. Verwenden Sie das **Security & Compliance Center**, oder stellen Sie die Verbindung zu **Security &amp; Compliance Center PowerShell** her.
     
-2. **Definieren oder Laden der Schlüsselwörter aus der gewünschten Quelle**: Das Cmdlet zum Erstellen eines Schlüsselwörterbuchs akzeptiert eine durch Trennzeichen getrennte Liste von Schlüsselwörtern, dieser Schritt kann also in Abhängigkeit davon, woher Ihre Schlüsselwörter stammen, geringfügig anders sein. 
+2. **Definieren oder Laden der Schlüsselwörter aus der gewünschten Quelle**: Der Assistent und das Cmdlet akzeptieren eine durch Trennzeichen getrennte Liste von Schlüsselwörtern zum Erstellen eines benutzerdefinierten Schlüsselwörterbuchs, dieser Schritt kann also in Abhängigkeit davon, woher Ihre Schlüsselwörter stammen, geringfügig anders sein. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
     
-3. **Codieren der Schlüsselwörter**: Nach dem Laden werden diese in ein Bytearray konvertiert, bevor sie importiert werden. 
+3. **Erstellen des Wörterbuchs**: Wählen Sie einen Namen und eine Beschreibung aus, und erstellen Sie das Wörterbuch.
+
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Erstellen eines Schlüsselwörterbuchs mit dem Security & Compliance Center
+
+Verwenden Sie die folgenden Schritte zum Erstellen und Importieren von Schlüsselwörtern für ein Benutzerwörterbuch:
+
+1. Stellen Sie die Verbindung zum [Security & Compliance Center](https://protection.office.com) her.
+2. Navigieren Sie zu **Klassifizierungen > Typen vertraulicher Informationen**.
+3. Wählen Sie **Erstellen** aus, geben Sie einen **Namen** und eine **Beschreibung** für Ihren vertraulichen Infotyp ein, und wählen Sie dann **Weiter** aus.
+4. Wählen Sie **Element hinzufügen** und dann **Wörterbuch (große Schlüsselwörter)** in der Dropdownliste **Inhalt erkennen, der Folgendes enthält** aus.
+5. Wählen Sie **Wörterbuch hinzufügen** aus.
+6. Wählen Sie unter dem Steuerelement "Suche" die Option **Hier können Sie neue Schlüsselwörterbücher erstellen** aus.
+7. Geben Sie einen **Namen** für Ihr Benutzerwörterbuch ein.
+8. Klicken Sie auf **Importieren**, und wählen Sie dann entweder **Aus Text** oder **Aus CSV** aus, je nach Typ der Schlüsselwortdatei.
+9. Wählen Sie im Dialogfeld "Datei" die Schlüsselwortdatei auf Ihrem lokalen PC oder aus der Netzwerkfreigabe aus, und klicken Sie dann auf **Öffnen**.
+10. Klicken Sie auf **Speichern**, und wählen Sie dann Ihr Benutzerwörterbuch aus der Liste **Schlüsselwörterbücher** aus.
+11. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Weiter**.
+12. Überprüfen und vervollständigen Sie den ausgewählten Typ vertraulicher Informationen, und wählen Sie dann **Fertig stellen** aus.
     
-4. **Erstellen des Wörterbuchs**: Wählen Sie einen Namen und eine Beschreibung aus, und erstellen Sie das Wörterbuch. 
-    
-## <a name="create-a-keyword-dictionary-from-a-file"></a>Erstellen eines Schlüsselwörterbuchs aus einer Datei
+## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Erstellen eines Schlüsselwörterbuchs aus einer Datei mit PowerShell
 
 Wenn Sie ein großes Wörterbuch erstellen müssen, werden dafür häufig Schlüsselwörter aus einer Datei oder aus einer Liste verwendet, die aus einer anderen Quelle exportiert wurde. In diesem Fall erstellen Sie ein Schlüsselwörterbuch mit einer Liste unangemessener Begriffe, nach denen in externen E-Mails gesucht werden soll. Zunächst müssen Sie [eine Verbindung zu Office 365 Security &amp; Compliance Center PowerShell herstellen](https://docs.microsoft.com/de-DE/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
@@ -59,7 +73,9 @@ Wenn Sie ein großes Wörterbuch erstellen müssen, werden dafür häufig Schlü
 
 ## <a name="modifying-an-existing-keyword-dictionary"></a>Ändern eines vorhandenen Schlüsselwörterbuchs
 
-Vielleicht müssen Sie Schlüsselwörter in einem Ihrer Schlüsselwörterbucher ändern oder eines der integrierten Wörterbücher ändern. In diesem Beispiel ändern wir einige Ausdrücke in PowerShell, speichern die Ausdrücke lokal, wo Sie sie in einem Editor bearbeiten können, und aktualisieren dann die vorhandenen, früheren Ausdrücke. Rufen Sie zunächst das Wörterbuchobjekt ab:
+Möglicherweise müssen Sie einmal Schlüsselwörter in einem Ihrer Schlüsselwörterbücher oder in einem der integrierten Wörterbücher ändern. Derzeit können Sie mit PowerShell nur ein benutzerdefiniertes Schlüsselwörterbuch aktualisieren. 
+
+In diesem Beispiel ändern wir einige Ausdrücke in PowerShell, speichern die Ausdrücke lokal, wo Sie sie in einem Editor bearbeiten können, und aktualisieren anschließend die vorherigen Ausdrücke an Ort und Stelle. Rufen Sie zuerst das Wörterbuchobjekt ab:
   
 ```
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
