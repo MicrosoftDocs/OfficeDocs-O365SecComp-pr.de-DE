@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Einrichten einer Aufsichts Übersichts Richtlinie zur Erfassung der Mitarbeiterkommunikation zur Überprüfungen.
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474156"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701290"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -62,26 +62,20 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365-
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Schritt 1: Einrichten von Gruppen für die Überwachung (optional)
 
- Wenn Sie eine Aufsichtsrichtlinie erstellen, legen Sie fest, wer Ihre Kommunikation überprüft hat und wer diese Bewertungen durchführen wird. In der Richtlinie verwenden Sie e-Mail-Adressen, um Personen oder Personengruppen zu identifizieren. Um das Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüft haben, und Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere-beispielsweise, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überwachen möchten, oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht werden soll. Details zur Funktionsweise finden Sie unter [example Distribution Groups](configure-supervision-policies.md#GroupExample) .
-  
-Um die Kommunikation zwischen oder innerhalb von Gruppen in Ihrer Organisation zu überwachen, richten Sie Verteilergruppen in der Exchange-Verwaltungskonsole ein (wechseln Sie zu **Empfänger** \> **Gruppen**). Weitere Informationen zum Einrichten von Verteilergruppen finden Sie unter [Manage Distribution Groups](http://go.microsoft.com/fwlink/?LinkId=613635) .
-  
-> [!NOTE]
-> Sie können auch dynamische Verteilergruppen oder Sicherheitsgruppen für die Überwachung verwenden, wenn Sie es vorziehen. Informationen dazu, wie Sie entscheiden können, ob diese für Ihre Organisation besser geeignet sind, finden Sie unter [Verwalten von e-Mail-aktivierten Sicherheitsgruppen](http://go.microsoft.com/fwlink/?LinkId=627033)und [Verwalten dynamischer Verteilergruppen](http://go.microsoft.com/fwlink/?LinkId=627058).
-  
-<a name="GroupExample"> </a>
+ Wenn Sie eine Aufsichtsrichtlinie erstellen, legen Sie fest, wer Ihre Kommunikation überprüft hat und wer diese Bewertungen durchführen wird. In der Richtlinie verwenden Sie e-Mail-Adressen, um Personen oder Personengruppen zu identifizieren. Um das Setup zu vereinfachen, können Sie Gruppen für Personen erstellen, die Ihre Kommunikation überprüft haben, und Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere-beispielsweise, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überwachen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht werden soll.
 
-### <a name="example-distribution-groups"></a>Beispielverteilergruppen
+Anhand des folgenden Diagramms können Sie Gruppen in Ihrer Organisation für Aufsichtsrichtlinien konfigurieren:
 
-Dieses Beispiel enthält eine Verteilergruppe, die für eine Finanzorganisation namens Contoso Financial International eingerichtet wurde.
-  
-Im Unternehmen Contoso Financial International muss eine Stichprobe der Kommunikationen zwischen Brokern in den Vereinigten Staaten beaufsichtigt werden. Für die Compliance Officer in dieser Gruppe ist jedoch keine Aufsicht erforderlich. Für dieses Beispiel können wir die folgenden Gruppen erstellen:
-  
-|**Einrichten dieser Verteilergruppe**|**Gruppenadresse (Alias)**|**Beschreibung**|
+| **Richtlinienelement** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
-|Alle US-Broker | US_Brokers@Contoso.com | Diese Gruppe umfasst E-Mail-Adressen für alle US-basierten Broker, die für Contoso arbeiten. |
-| Alle Compliance Officer für die Vereinigten Staaten | US_Compliance@Contoso.com  | Diese Gruppe umfasst E-Mail-Adressen für alle US-basierten Compliance Officer, die für Contoso arbeiten. Da diese Gruppe eine Teilmenge aller in der USA ansässigen Broker ist, können Sie diesen Alias verwenden, um die Compliance-Verantwortlichen von einer Aufsichtsrichtlinie zu befreien. |
+|ÜberWachte Benutzer | Verteilergruppen <br> Office 365-Gruppen | Dynamische Verteilergruppen |
+| Reviewers | E-Mail-aktivierte Sicherheitsgruppen  | Verteilergruppen <br> Dynamische Verteilergruppen |
   
+Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
+- [Erstellen und Verwalten von Verteilergruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Übersicht über Office 365-Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>Schritt 2: Bereitstellen der Überwachung in Ihrer Organisation (erforderlich)
@@ -118,43 +112,26 @@ Weitere Informationen zu Rollengruppen und Berechtigungen finden Sie unter [Perm
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>Schritt 3-Erstellen benutzerdefinierter vertraulicher Informationstypen oder benutzerdefinierter Stichwort Wörterbücher (optional)
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Schritt 3-Erstellen benutzerdefinierter vertraulicher Informationstypen und benutzerdefinierter Stichwort Wörterbücher (optional)
 
 Um aus vorhandenen benutzerdefinierten vertraulichen Informationstypen oder benutzerdefinierten Keyword-Wörterbüchern im Assistenten für Aufsichtsrichtlinien auszuwählen, müssen Sie diese Elemente bei Bedarf zunächst erstellen.
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Erstellen benutzerdefinierter Stichwort Wörterbuch/Lexikon (optional)
+
+Erstellen Sie mithilfe eines Text-Editors (wie Notepad) eine neue Datei mit den Stichwortbegriffen, die Sie in einer Aufsichtsrichtlinie überwachen möchten. Stellen Sie sicher, dass sich jeder Ausdruck in einer separaten Leitung befindet, und speichern Sie die Datei im **Unicode/UTF-16 (Little Endian)-** Format.
+
 ### <a name="create-custom-sensitive-information-types"></a>Erstellen von benutzerdefinierten Typen für vertrauliche Informationen
 
-1. Erstellen Sie einen neuen vertraulichen Informationstyp im Office 365 Security & Compliance Center. Navigieren Sie zu **vertraulichen Info-Typen** für **Klassifikationen** \> , und führen Sie die Schritte im Assistenten für **neue vertrauliche Informationen**aus. Hier finden Sie die folgenden Schritte:
+1. Erstellen Sie einen neuen vertraulichen Informationstyp, und fügen Sie Ihr Benutzerwörterbuch im Office 365 Security & Compliance Center hinzu. Navigieren Sie zu **vertraulichen Info-Typen** für **Klassifikationen** \> , und führen Sie die Schritte im Assistenten für **neue vertrauliche Informationen**aus. Hier finden Sie die folgenden Schritte:
 
     - Definieren Sie einen Namen und eine Beschreibung für den vertraulichen Infotyp.
     - Definieren der Näherungs-, Konfidenz Grad-und primären Musterelemente
+    - Importieren des Benutzerwörterbuchs als Anforderung für das übereinstimmende Element
     - Überarbeiten Ihrer Auswahl und Erstellen des Typs für vertrauliche Informationen
 
-    Ausführlichere Informationen finden Sie unter [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md).
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>Erstellen benutzerdefinierter Stichwort Wörterbuch/Lexikon
-
-1. Erstellen Sie mithilfe eines Text-Editors (wie Notepad) eine neue Datei mit den Stichwortbegriffen, die Sie in einer Aufsichtsrichtlinie überwachen möchten. Stellen Sie sicher, dass sich jeder Ausdruck in einer separaten Leitung befindet, und speichern Sie die Datei im **Unicode/UTF-16 (Little Endian)-** Format.
-2. Importieren Sie die Schlüsselwortdatei mithilfe von PowerShell in Ihren Office 365-Mandanten. Informationen zum Herstellen einer Verbindung mit Office 365 mit PowerShell finden Sie unter [Connect to office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-
-    Nachdem Sie mit PowerShell eine Verbindung mit Office 365 hergestellt haben, führen Sie die folgenden Befehle aus, um Ihr Stichwort Wörterbuch zu importieren:
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    Ausführlichere Informationen finden Sie unter [Create a Keyword Dictionary](create-a-keyword-dictionary.md).
-
-3. Erstellen Sie einen neuen vertraulichen Informationstyp im Office 365 Security & Compliance Center. Navigieren Sie zu **vertraulichen Info-Typen** für **Klassifikationen** \> , und führen Sie die Schritte im Assistenten für **neue vertrauliche Informationen**aus. Hier finden Sie die folgenden Schritte:
-
-    - Definieren Sie einen Namen und eine Beschreibung für den vertraulichen Infotyp.
-    - Hinzufügen des Benutzerwörterbuchs als Anforderung für das übereinstimmende Element
-    - Überarbeiten Ihrer Auswahl und Erstellen des Typs für vertrauliche Informationen
+    Ausführlichere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md) und [Erstellen eines Stichwort Wörterbuchs](create-a-keyword-dictionary.md) .
 
     Nachdem das Benutzerwörterbuch/Lexikon erstellt wurde, können Sie die konfigurierten Schlüsselwörter mithilfe des Cmdlets [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) oder durch Hinzufügen und Entfernen von Ausdrücken mithilfe des Cmdlets [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) anzeigen.
-
-    Ausführlichere Informationen finden Sie unter [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md).
 
 <a name="setupsuper"> </a>
 

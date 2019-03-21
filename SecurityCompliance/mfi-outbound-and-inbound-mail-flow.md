@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Administratoren können sich über das Widget für ausgehende und eingehende Nachrichten im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454887"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720285"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Fluss eingehenden und ausgehender E-Mails
 
@@ -48,3 +48,7 @@ In der Ansicht **Nachrichtenfluss** wird die Anzahl der Nachrichten über den Co
 Sie können die Ansicht **TLS-Verwendung** aus der Dropdownliste auswählen, um den TLS-Schutz für Nachrichten über den Connector anzuzeigen. Wie im TLS-Übersichts **Bericht** Bericht wird in dieser Ansicht der Prozentsatz der verschiedenen TLS-Versionen angezeigt. Bei TLS 1,0-Verbindungen müssen Sie wirklich ihren e-Mail-Server oder den Server Ihres Partners aktualisieren oder reparieren, um Probleme zu vermeiden, wenn die TLS 1,0-Unterstützung schließlich in Office 365 veraltet ist. Weitere Informationen finden Sie unter [technische Referenzdetails zur Verschlüsselung in Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
 
 InSights verweisen auf Connectors, um Ihre Aufmerksamkeit auf mögliche TLS-Verschlüsselungsprobleme für den Connector zu lenken. Die Einblicke sind: **kein TLS ist mehr als 25%** oder **TLS 1,0 liegt über 50%**. Wenn diese Einblicke angezeigt werden, müssen Sie die e-Mail-Server untersuchen, die dem Connector zugeordnet sind, oder Ihre Partnerorganisation erreichen.
+
+## <a name="see-also"></a>Siehe auch
+
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights.md).

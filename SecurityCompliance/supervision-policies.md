@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492854"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720275"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -99,7 +99,7 @@ Weitere Informationen zu vertraulichen Informationen und den in den Standardtype
 
 #### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Keyword-Wörterbücher
 
-Das Konfigurieren von benutzerdefinierten Keyword-Wörterbüchern (oder Lexika) ermöglicht die einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Branche und kann bis zu 100.000 Ausdrücke pro Wörterbuch unterstützen. Bei Bedarf können Sie mehrere benutzerdefinierte Keyword-Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Stichwort Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie eine CSV-oder txt-Liste) oder aus einer Liste, die Sie [direkt in ein PowerShell-Cmdlet eingeben](create-a-keyword-dictionary.md)können, bezogen werden.
+Das Konfigurieren von benutzerdefinierten Keyword-Wörterbüchern (oder Lexika) ermöglicht die einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Branche und kann bis zu 100.000 Ausdrücke pro Wörterbuch unterstützen. Bei Bedarf können Sie mehrere benutzerdefinierte Keyword-Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Stichwort Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie eine CSV-oder txt-Liste) oder aus einer Liste, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können, bezogen werden.
 
 #### <a name="conditional-settings"></a>Bedingte Einstellungen
 
@@ -249,16 +249,17 @@ Die folgenden Aufsichtsrichtlinien Aktivitäten werden überwacht und können mi
 
 |**Aktivität**|**Zugeordnete Befehle**|
 |:-----|:-----|
-| Erstellen einer Richtlinie | New-SupervisoryReviewPolicy <br> New-SupervisoryReviewRule |
-| Bearbeiten einer Richtlinie | Set-SupervisoryReviewPolicy <br> Set-SupervisoryReviewRule |
-| Löschen einer Richtlinie| Remove-SupervisoryReviewPolicy |
+| Erstellen einer Richtlinie | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| Bearbeiten einer Richtlinie | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| Löschen einer Richtlinie| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| Anzeigen einer Richtlinie | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Die Überwachungen können mithilfe der Unified Audit Log-Suchfunktion oder mithilfe des PowerShell-Cmdlets [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) abgerufen werden.
 
 Das folgende Beispiel gibt beispielsweise die Aktivitäten für alle Aufsichts Überprüfungen (Richtlinien und Regeln) zurück und listet detaillierte Informationen zu jedem:
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 Zusätzlich zu den in den Überwachungsberichten und-Protokollen bereitgestellten Informationen können Sie auch das PowerShell [-Cmdlet Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) verwenden, um eine vollständige detaillierte Auflistung aller Aufsichtsrichtlinien Aktivitäten zurückzugeben.
