@@ -14,56 +14,58 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8b5651e7e1f1e15aae34a3100b25564f0b84abb7
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296158"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737705"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>Unterstützte Dateitypen in Advanced eDiscovery (Preview)
 
+Advance eDiscovery (Preview) unterstützt viele Dateitypen auf viele verschiedene Ebenen, die in der folgenden Tabelle beschrieben werden. Diese Liste ist nicht abgeschlossen, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. Die Tabelle gibt außerdem an, ob ein Dateityp in den verfügbaren Viewern im Voraus eDiscovery (Preview) angezeigt werden kann.
 
-| MIME-Typ | Datei Klasse (z. b. Bild, Archiv, E-Mail, Office-Dokument usw.) | Native Viewer | Text | Betrachter mit Anmerkungen versehen | Container Extraktion | Mögliche Erweiterungen |
+| MIME-Typ | File-Klasse | Native Viewer | Text Anzeige | Betrachter mit Anmerkungen versehen | Container Extraktion | Erweiterungen |
 | :- | :- | :- | :- | :- | :- | :- |
-| Anwendung/MSWord | Dokument | Ja | Ja  | Ja | Nein | . doc;. dat |
-| application/pdf | Dokument | Ja | Ja  | Ja | Nein | PDF |
-| Anwendung/RTF | Dokument | Ja | Ja  | Ja | Nein | RTF;. doc |
-| application/vnd. MS-Excel | Dokument | Ja | Ja  | Ja | Nein | . xls;. dat |
-| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Produktivität/Open Document Format | Ja | Ja | Nein  | Nein | XLSB |
-| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Dokument | Ja | Ja  | Ja | Nein | XLSM |
-| application/vnd. MS-Excel. Template. macroenabled. 12 | Produktivität/Open Document Format | Nein | Ja | Nein  | Nein | XLTM |
+| application/msword | Dokument | Ja | Ja | Ja | Nein | . doc;. dat |
+| application/pdf | Dokument | Ja | Ja | Ja | Nein | PDF |
+| Anwendung/RTF | Dokument | Ja | Ja | Ja | Nein | RTF;. doc |
+| application/vnd. MS-Excel | Dokument | Ja | Ja | Ja | Nein | . xls;. dat |
+| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Produktivität/Open Document Format | Ja | Ja | Nein | Nein | . xlsb |
+| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Dokument | Ja | Ja | Ja | Nein | . xlsm |
+| application/vnd. MS-Excel. Template. macroenabled. 12 | Produktivität/Open Document Format | Nein | Ja | Nein | Nein | . xltm |
 | application/vnd. MS-Outlook | Produktivität | Nein | Nein | Nein | Nein | . msg |
 | application/vnd. MS-Outlook-PST | Produktivität/Zusammenarbeit | Nein | Nein | Nein | Ja | PST |
-| application/vnd. MS-PowerPoint | Dokument | Ja | Ja  | Ja | Nein | . ppt;. PPS;. Topf |
-| application/vnd. MS-Word. Document. macroenabled. 12 | Dokument | Ja | Ja  | Ja | Nein | DOCM |
-| application/vnd. MS-Word. Template. macroenabled. 12 | Dokument | Ja | Ja  | Ja | Nein | DOTM |
-| application/vnd. Oasis. OpenDocument. Text | Dokument | Ja | Ja  | Ja | Nein | ODT  |
-| application/vnd. openxmlformats-officeDocument. PresentationML. Presentation | Dokument | Ja | Ja  | Ja | Nein | PPTX |
-| application/vnd. openxmlformats-officeDocument. PresentationML. Slideshow | Produktivität/Open Document Format | Ja | Ja  | Ja | Nein | . ppsx |
-| application/vnd. openxmlformats-officeDocument. PresentationML. Template | Dokument | Ja | Ja  | Ja | Nein | POTX |
-| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Sheet | Dokument | Ja | Ja  | Ja | Nein | XLSX |
-| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Dokument | Ja | Ja  | Ja | Nein | XLTX |
-| application/vnd. openxmlformats-officeDocument. WordprocessingML. Document | Dokument | Ja | Ja  | Ja | Nein | DOCX |
-| application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Dokument | Ja | Ja  | Ja | Nein | DOTX |
-| application/vnd. Visio | Dokument | Ja | Ja  | Ja | Nein | VSD |
+| application/vnd. MS-PowerPoint | Dokument | Ja | Ja | Ja | Nein | . ppt;. PPS;. Topf |
+| application/vnd. MS-Word. Document. macroenabled. 12 | Dokument | Ja | Ja | Ja | Nein | DOCM |
+| application/vnd. MS-Word. Template. macroenabled. 12 | Dokument | Ja | Ja | Ja | Nein | . dotm |
+| application/vnd. Oasis. OpenDocument. Text | Dokument | Ja | Ja | Ja | Nein | ODT  |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Dokument | Ja | Ja | Ja | Nein | PPTX |
+| application/vnd. openxmlformats-officeDocument. PresentationML. Slideshow | Produktivität/Open Document Format | Ja | Ja | Ja | Nein | . ppsx |
+| application/vnd. openxmlformats-officeDocument. PresentationML. Template | Dokument | Ja | Ja | Ja | Nein | . POTX |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Dokument | Ja | Ja | Ja | Nein | . xlsx |
+| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Dokument | Ja | Ja | Ja | Nein | . xltx |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Dokument | Ja | Ja | Ja | Nein | DOCX |
+| application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Dokument | Ja | Ja | Ja | Nein | . dotx |
+| application/vnd. Visio | Dokument | Ja | Ja | Ja | Nein | . vsd |
 | Application/x-7z-Compressed | Archiv/Container | Nein | Nein | Nein | Ja | .7z |
-| Application/XHTML + XML | Dokument | Ja | Ja  | Ja | Nein | . XHTML |
-| Anwendung/XML | Dokument | Ja | Ja  | Ja | Nein | XML |
-| Application/x-Msaccess | Dokument | Ja | Ja  | Ja | Nein | MDB |
-| Application/x-mspublisher | Dokument | Ja | Ja  | Ja | Nein | . pub |
+| Application/XHTML + XML | Dokument | Ja | Ja | Ja | Nein | . XHTML |
+| Anwendung/XML | Dokument | Ja | Ja | Ja | Nein | . XML |
+| Application/x-Msaccess | Dokument | Ja | Ja | Ja | Nein | . mdb |
+| Application/x-mspublisher | Dokument | Ja | Ja | Ja | Nein | . pub |
 | Anwendung/x-rar-komprimiert | Archiv/Container | Nein | Nein | Nein | Ja | . rar |
-| Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | ZIP |
-| Bild/BMP | Nur diesen Bilddateien zugeordneter Metadatentext wird überprüft. | Ja | Ja  | Ja | Nein | BMP |
-| Image/EMF | Nur diesen Bilddateien zugeordneter Metadatentext wird überprüft. | Ja | Ja  | Ja | Nein | EMF |
-| Bild/GIF | Dokument | Ja | Ja  | Ja | Nein | GIF |
-| Bild/JPEG | Nur diesen Bilddateien zugeordneter Metadatentext wird überprüft. | Ja | Ja  | Ja | Nein | . jpg;. JPEG;. dat;. jpgT |
-| Bild/PNG | Nur diesen Bilddateien zugeordneter Metadatentext wird überprüft. | Ja | Ja  | Ja | Nein | PNG |
-| Bild/TIFF | Nur diesen Bilddateien zugeordneter Metadatentext wird überprüft. | Ja | Ja  | Ja | Nein | TIF |
-| Image/vnd. DWG | Dokument | Ja | Ja  | Ja | Nein | . dwg;. DXF |
-| Image/WMF | Dokument | Ja | Ja  | Ja | Nein | WMF |
+| Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | . zip |
+| Bild/BMP | Image | Ja | Ja | Ja | Nein | . bmp |
+| Image/EMF | Image | Ja | Ja | Ja | Nein | . EMF |
+| image/gif | Dokument | Ja | Ja | Ja | Nein | . gif |
+| image/jpeg | Image | Ja | Ja | Ja | Nein | . jpg;. JPEG;. dat;. jpgT |
+| image/png | Image | Ja | Ja | Ja | Nein | . png |
+| Bild/TIFF | Image | Ja | Ja | Ja | Nein | . TIF |
+| Image/vnd. DWG | Dokument | Ja | Ja | Ja | Nein | . dwg;. DXF |
+| Image/WMF | Dokument | Ja | Ja | Ja | Nein | . WMF |
 | Nachricht/RFC822 | Produktivität/Zusammenarbeit | Nein | Nein | Nein | Nein | . eml |
-| Text/CSV | Dokument | Ja | Ja  | Ja | Nein | CSV |
-| Text/HTML | Dokument | Ja | Ja  | Ja | Nein | . html;. shtml;. htm |
-| text/plain | Dokument | Ja | Ja  | Ja | Nein | . txt;. CSS;. con;. pl;. CSV;. dat |
-| Text/vCard-Kontakt | Dokument | Ja | Ja  | Ja | Nein | . vcf |
+| Text/CSV | Dokument | Ja | Ja | Ja | Nein | . CSV |
+| Text/HTML | Dokument | Ja | Ja | Ja | Nein | . html;. shtml;. htm |
+| text/plain | Dokument | Ja | Ja | Ja | Nein | . txt;. CSS;. con;. pl;. CSV;. dat |
+| Text/vCard-Kontakt | Dokument | Ja | Ja | Ja | Nein | . vcf |
+||||||||

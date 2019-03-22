@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296728"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737675"
 ---
 # <a name="error-remediation-when-processing-data"></a>Beheben von Fehlern beim Verarbeiten von Daten
 
@@ -62,8 +62,8 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Advanced eDiscov
 
     ![Vorbereiten der Fehlerkorrektur](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > Wenn Sie Probleme mit diesem Befehl haben, finden https://go.microsoft.com/fwlink/?linkid=2038117 Sie weitere Informationen unter Tipps zur Problembehandlung.
+    > [!NOTE]
+    > Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Problembehandlung bei AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md)
 
 7. Nachdem Sie die Dateien heruntergeladen haben, können Sie Sie mit einem geeigneten Tool beheben. Für kennwortgeschützte Dateien gibt es eine Reihe von Kenn Wort Knack Werkzeugen, die Sie verwenden können. Wenn Sie die Kennwörter für die Dateien kennen, können Sie Sie öffnen und den Kennwortschutz entfernen.
     > [!NOTE]

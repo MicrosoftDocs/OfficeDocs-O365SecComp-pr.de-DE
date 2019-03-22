@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b177fc292c748f21907621196dc28d6b8fe17959
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296788"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737665"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Laden von Nicht-Office 365-Daten in einen Arbeitssatz
 
 Nicht alle Dokumente, die Sie möglicherweise mit Office 365 Advanced eDiscovery analysieren müssen, Leben in Office 365. Mit der nicht-Office 365-Inhalts Importfunktion in Advanced eDiscovery können Sie Dokumente, die nicht in Office 365 Leben, in einen Arbeitssatz hochladen, sodass Sie mit Advanced eDiscovery analysiert werden. In diesem Verfahren wird gezeigt, wie Sie Ihre nicht-Office 365-Dokumente in Advanced eDiscovery for Analysis einbinden.
 
 >[!Note]
->Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
+>Advanced eDiscovery erfordert eine Office 365 E3 mit dem Advanced Compliance-Add-on oder ein E5-Abonnement für Ihre Organisation. Wenn Sie diesen Plan nicht haben und die erweiterte eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 registrieren.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 Für die Verwendung der in diesem Verfahren beschriebenen Funktion zum Hochladen von nicht-Office 365-Funktionen ist Folgendes erforderlich:
@@ -38,6 +38,14 @@ Für die Verwendung der in diesem Verfahren beschriebenen Funktion zum Hochladen
 - Ein vorhandener eDiscovery-Fall.
 
 - Alle Dateien zum Hochladen in Ordner, in denen ein Ordner pro Depotbank vorhanden ist, und der Name der Ordner in diesem Format *Alias @ Domainname* . *Bei dem Alias @ Domain Name* muss es sich um Benutzer von Office 365 Alias und Domäne handeln. Sie können alle *Alias @ Domain Name* -Ordner in einem Stammordner sammeln. Der Stammordner kann nur die *Alias @ Domain Name* -Ordner enthalten, es dürfen keine losen Dateien im Stammordner vorhanden sein.
+
+   Die Ordnerstruktur für die nicht-Office 365-Daten, die Sie hochladen möchten, sollte ungefähr wie folgt aussehen:
+
+   - c:\nonO365\abraham.mcmahon@contoso.com
+   - c:\nonO365\jewell.gordon@contoso.com
+   - c:\nonO365\staci.gonzalez@contoso.com
+
+   Dabei sind abraham.mcmahon@contoso.com, jewell.gordon@contoso.com und staci.gonzalez@contoso.com die SMTP-Adressen der Verwalter in diesem Fall.
 
 - Ein Konto, das entweder ein eDiscovery-Manager oder ein eDiscovery-Administrator ist, Microsoft Azure-Speicher Tools, die auf einem Computer installiert sind, der Zugriff auf die nicht-Office 365-Inhaltsordner Struktur hat.
 
@@ -65,6 +73,9 @@ Für die Verwendung der in diesem Verfahren beschriebenen Funktion zum Hochladen
 ![Nicht-Office 365 Import-Uploaddateien](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
 ![Nicht-Office 365-Import-AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+
+> [!NOTE]
+> Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Problembehandlung von AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md)
 
 6. Kehren Sie schließlich zur Security & Compliance zurück, und klicken Sie auf die Schaltfläche **Weiter: Process files** .  Dadurch wird die Verarbeitung, die Textextraktion und die Indizierung der hochgeladenen Dateien initiiert.  Sie können den Fortschritt der Verarbeitung hier oder auf der Registerkarte **Aufträge** nachverfolgen.  Sobald der Vorgang abgeschlossen ist, sind die neuen Dateien im Arbeitssatz verfügbar.  Nach Abschluss der Verarbeitung können Sie den Assistenten schließen.
 
