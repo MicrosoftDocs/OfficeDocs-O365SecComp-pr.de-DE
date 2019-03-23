@@ -1,9 +1,9 @@
 ---
-title: Automatisierte Untersuchung und Antwort (AIR) mit Office 365 Threat Intelligence
+title: Automatisierte Untersuchung und Antwort (AIR) mit Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/21/2019
+ms.date: 03/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,56 +13,64 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr über automatisierte Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: c2d5acd0bf26dc28b30f26488adf47de2c834fb6
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.openlocfilehash: c6cfc03588e580382f673b2e9be8543bfcaf9ac1
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736335"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747561"
 ---
-# <a name="automated-investigation-and-response-air-with-office-365-threat-intelligence"></a>Automatisierte Untersuchung und Antwort (AIR) mit Office 365 Threat Intelligence
+# <a name="automated-investigation-and-response-air-with-office-365"></a>Automatisierte Untersuchung und Antwort (AIR) mit Office 365
 
-Automatisierte Untersuchung und Antwort (AIR) (demnächst in [Office 365 Threat Investigation and Response Capabilities](office-365-ti.md)) ermöglicht es Ihnen, automatisierte Untersuchungen und Korrekturen zu bekannten Bedrohungen durchzuführen, die es heute gibt. Lesen Sie diesen Artikel, um einen Überblick über die Luft zu erhalten und zu erfahren, wie Sie Ihr Unternehmen dabei unterstützen, Bedrohungen effektiver und effizienter zu verringern. Weitere Informationen dazu, wann AIR verfügbar ist, finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap).
+Automatisierte Untersuchung und Antwort (AIR) (demnächst in [Office 365 Threat Investigation and Response Capabilities](office-365-ti.md)) ermöglicht es Ihnen, automatisierte Untersuchungen und Korrekturen zu bekannten Bedrohungen durchzuführen, die es heute gibt. Lesen Sie diesen Artikel, um einen Überblick über die Luft zu erhalten und zu erfahren, wie Sie Ihren Organisationen und Sicherheitsteams helfen können, Bedrohungen effektiver und effizienter zu verringern. Weitere Informationen dazu, wann zusätzliche Funktionen in AIR verfügbar sind, finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="alerts"></a>Warnungen
 
 [Warnungen](alert-policies.md#viewing-alerts) stellen Auslöser für Sicherheitsoperationen-Team Workflows für Vorfalls Reaktionen dar. Das Priorisieren des richtigen Warnungs Satzes zur Untersuchung und sicherstellen, dass keine Bedrohungen unadressiert sind, ist eine Herausforderung. Wenn Untersuchungen zu Warnungen manuell durchgeführt werden, müssen Sicherheits Betriebsteams Entitäten (z. b. Inhalte, Geräte und Benutzer), die von Bedrohungen bedroht sind, aufspüren und korrelieren. Solche Aufgaben und Workflows sind sehr zeitaufwändig und beinhalten mehrere Tools und Systeme. Mit AIR werden Untersuchungen und Reaktionszeiten zu wichtigen Sicherheits-und Bedrohungs Verwaltungswarnungen automatisiert, die ihre Sicherheitsantwort-Manuskripte automatisch auslösen. 
 
-zum anzeigen von benachrichtigungen wählen sie im Office 365 Security & Compliance Center **alerts** > **anzeigen**.
+In der ersten Freigabe von AIR im April 2019 werden Warnungen, die aus den folgenden Ereignissen für Einzelereignisse generiert werden, automatisch untersucht. 
+
+1. Es wurde ein potenziell böswilliger URL-Klick erkannt
+2. Vom Benutzer als Phishing gemeldete E-Mail *
+3. Nach der Lieferung gelöschte e-Mail-Nachrichten mit Schadsoftware *
+4. Nach der Lieferung entfernte e-Mail-Nachrichten mit Phishing-URLs *
+
+* Hinweis: diesen Warnungen wurde in den entsprechenden Warnungsrichtlinien im Security and Compliance Center mit deaktivierten e-Mail-Benachrichtigungen eine "Information"-Schweregrad zugewiesen. Diese können über die Warnungsrichtlinien Konfiguration aktiviert werden.
+
+zum anzeigen von benachrichtigungen wählen sie im Office 365 Security & Compliance Center **alerts** > **anzeigen**. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **untersuchUng anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu wechseln.
 
 ![Warnungen, die auf Untersuchungen verweisen](media/air-alerts-page-details.png) 
 
-Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **untersuchUng anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu wechseln.
 
 ## <a name="security-playbooks"></a>Sicherheits Manuskripte
 
 Sicherheits Manuskripte sind Back-End-Richtlinien, die im Mittelpunkt der Automatisierung in Microsoft Threat Protection stehen. Die in AIR bereitgestellten Sicherheits Manuskripte basieren auf allgemeinen Sicherheitsszenarien in der Praxis. Ein Sicherheits Textbuch wird automatisch gestartet, wenn in Ihrer Organisation eine Warnung ausgelöst wird. Sobald die Warnung ausgelöst wird, wird das zugehörige Textbuch automatisch ausgeführt. Das Textbuch führt eine Untersuchung durch, untersucht alle zugehörigen Metadaten (einschließlich e-Mail-Nachrichten, Benutzer, betreffs, Absender usw.), und empfiehlt anhand der Ergebnisse eine Reihe von Aktionen, die das Sicherheitsteam Ihrer Organisation ausführen kann, um die Bedrohung. 
 
-Die Sicherheits Manuskripte, die Sie mit AIR erhalten, wurden entwickelt, um die häufigsten Bedrohungen zu bewältigen, denen Organisationen heute gegenüberstehen. Sie basieren auf Eingaben aus Sicherheits-und Vorfall Reaktions Teams, einschließlich derer, die bei der Verteidigung von Microsoft-Objekten helfen.
+Die Sicherheits Manuskripte, die Sie mit AIR erhalten, wurden entwickelt, um die häufigsten Bedrohungen zu bewältigen, denen Organisationen heute gegenüberstehen. Sie basieren auf Eingaben aus Sicherheits-und Vorfall Reaktions Teams, einschließlich derer, die dazu beitragen, Microsoft und unsere Kunden zu schützen.
 
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>Sicherheits Manuskripte werden phasenweise ausgeführt
 
 Als Teil von AIR werden Sicherheits Manuskripte phasenweise ausgeführt
 
-- **Phase 1 (April 2019)**: Manuskripte bieten Empfehlungen, die Sicherheitsadministratoren überarbeiten und genehmigen. 
+- **Phase 1 (April 2019)**: Manuskripte bieten Empfehlungen für Aktionen, die von Sicherheitsadministratoren überprüft und genehmigt werden. 
 
-- **Phase 2 (juni 2019)**: Sicherheitsadministratoren haben die Möglichkeit, Sicherheits-Textbuch zu ermöglichen, automatisch Maßnahmen ohne administrative Interaktion zu ergreifen.
+- **Phase 2 (juni 2019)**: Sicherheitsadministratoren haben die Möglichkeit, Sicherheits handtexte so zu konfigurieren, dass Sie automatisch und ohne administrative Interaktion ausgeführt werden.
 
 Phase 1 umfasst die folgenden Manuskripte:
 - Vom Benutzer gemeldete Phishing-Nachricht
-- URL Klick Urteil ändern und ATP Safe Links Block außer Kraft setzen
-- Malware ZAP
-- Phishing ZAP
-- Manuelle Untersuchungen (mit Explorer)
+- Änderung der URL-Click-Entscheidung 
+- Nach der Bereitstellung erkannte Schadsoftware (Malware ZAP)
+- Phishing-Erkennung nach der Lieferung ZAP (Phishing ZAP)
+- Manuelle e-Mail-Untersuchungen (mit Threat Explorer)
 
-Für Phase 2 sind mehrere Manuskripte geplant.
+Für Phase 2 sind mehrere andere Text Manuskripte geplant.
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Manuskripte schließen Untersuchungen und Empfehlungen ein
 
 Jedes Textbuch umfasst Folgendes: 
 - eine Stamm Ermittlung, 
-- Schritte zum Aufspüren anderer potenzieller Bedrohungen und 
-- Empfohlene Bedrohungs Korrektur.
+- Schritte zur Identifizierung und Korrelation anderer potenzieller Bedrohungen und 
+- Empfohlene Maßnahmen zur Behebung von Bedrohungen.
 
 Jeder allgemeine Schritt enthält viele unter Schritte, die ausgeführt werden, um eine umfassende, detaillierte und umfassende Antwort auf Bedrohungen bereitzustellen.
 
@@ -81,13 +89,13 @@ Während der Stamm Untersuchung werden verschiedene Aspekte der e-Mail ausgewert
 
 Nach Abschluss der Stamm Ermittlung enthält das Textbuch eine Liste der empfohlenen Aktionen.
   
-Als nächstes werden mehrere Jagd Schritte ausgeführt:
+Als nächstes werden mehrere Bedrohungs Ermittlungs-und-Jagd Schritte ausgeführt:
 
 - Ähnliche e-Mails in anderen e-Mail-Clustern werden durchsucht.
 - Das Signal wird für andere Plattformen wie [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)freigegeben.
-- Es wird festgelegt, ob Benutzer auf die verdächtige e-Mail-Nachricht geklickt haben.
-- Eine Überprüfung erfolgt in Office 365 [EoP](eop/exchange-online-protection-eop.md) und [ATP](office-365-atp.md) , um festzustellen, ob andere ähnliche Nachrichten von Benutzern gemeldet werden.
-- Es wird überprüft, ob ein Benutzer kompromittiert wurde. Diese Überprüfung nutzt Signale in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) und [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), korreliert alle zugehörigen Ereignisse oder Warnungen. 
+- Es wird festgelegt, ob Benutzer über Links in verdächtigen e-Mail-Nachrichten geklickt haben.
+- Eine Überprüfung erfolgt über Office 365 Exchange Online Protection ([EOP]) (EoP/Exchange-Online-Protection-EoP. MD) und Office 365 Advanced Therat Protection ([ATP]) (Office-365-atp.md), um festzustellen, ob andere ähnliche Nachrichten von Benutzern gemeldet werden.
+- Es wird überprüft, ob ein Benutzer kompromittiert wurde. Diese Überprüfung nutzt Signale in [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) und [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)und korreliert alle zugehörigen Anomalien der Benutzeraktivität. 
 
 Während der Jagd Phase werden Risiken und Bedrohungen verschiedenen Jagd Stufen zugeordnet.  
 
@@ -95,7 +103,7 @@ Sanierung ist die letzte Phase des Manuskripts. Während dieser Phase werden Beh
 
 ## <a name="getting-started"></a>Erste Schritte
 
-Um auf ihre Untersuchungen zuzugreifen, wechseln Sie als globaler Office 365-Administrator oder Sicherheitsadministrator zum Office 365 Security &[https://protection.office.com](https://protection.office.com)Compliance Center (), und melden Sie sich an. Führen Sie dann einen der folgenden Schritte aus:
+Um auf ihre Untersuchungen zuzugreifen, wechseln Sie als globaler Office 365-Administrator, Sicherheitsadministrator oder Sicherheits Leser zum Office 365 Security & Compliance[https://protection.office.com](https://protection.office.com)Center (), und melden Sie sich an. Führen Sie dann einen der folgenden Schritte aus:
 
 - Navigieren Sie im linken Navigationsbereich zu **Threat Management** > **Investigations**.
 
@@ -106,6 +114,8 @@ Um auf ihre Untersuchungen zuzugreifen, wechseln Sie als globaler Office 365-Adm
 ![AIR-Widgets](media/air-widgets.png)
 
 Ihre AIR-Widgets werden am oberen Rand des [Sicherheits Dashboards](security-dashboard.md)angezeigt. Wählen Sie ein Widget aus, um loszulegen.
+
+Sie können auch direkt über die entsprechenden Benachrichtigungen auf eine invesitgation zugreifen.
 
 ### <a name="automated-investigations"></a>Automatisierte Untersuchungen
 
@@ -132,7 +142,7 @@ Sie können:
 
 ### <a name="alert-investigation"></a>Warnungs Ermittlung
 
-Auf der Registerkarte **Benachrichtigungen** für eine Untersuchung werden alle für die Untersuchung relevanten Warnungen angezeigt. Details sind die Warnung, die die Untersuchung ausgelöst hat, sowie andere Warnungen, wie beispielsweise riskante Anmeldungen, Massendownloads usw., die mit der Untersuchung in Beziehung stehen. Auf dieser Seite kann ein Sicherheitsanalytiker auch zusätzliche Details zu einzelnen Warnungen anzeigen.
+Auf der Registerkarte **Benachrichtigungen** für eine Untersuchung können Sie Warnungen anzeigen, die für die Untersuchung relevant sind. Details sind die Warnung, die die Untersuchung ausgelöst hat, sowie andere Warnungen, wie beispielsweise riskante Anmeldungen, Massendownloads usw., die mit der Untersuchung in Beziehung stehen. Auf dieser Seite kann ein Sicherheitsanalytiker auch zusätzliche Details zu einzelnen Warnungen anzeigen.
 
 ![Seite "Luft Warnungen"](media/air-investigationalertspage.png)
 
@@ -151,7 +161,7 @@ Angesichts der schieren Menge an e-Mails, die Benutzer in einer Organisation sen
 
 kann viele Stunden in Anspruch nehmen. Mit AIR wird dieser Prozess automatisiert, und das Sicherheitsteam des Unternehmens spart Zeit und Aufwand. 
 
-Betrachten Sie als Beispiel die folgende Abbildung. Der erste Cluster von drei e-Mail-Nachrichten wurde als Phishing eingestuft. Es wurde ein weiterer Cluster ähnlicher Nachrichten mit derselben IP-Adresse und einem anderen Betreff gefunden, der als bösartig eingestuft wurde, da einige von Ihnen bei der Ersterkennung als Phishing identifiziert wurden. 
+Betrachten Sie als Beispiel das folgende Szenario. Der erste Cluster von drei e-Mail-Nachrichten wurde als Phishing eingestuft. Es wurde ein weiterer Cluster ähnlicher Nachrichten mit derselben IP-Adresse und einem anderen Betreff gefunden und als bösartig eingestuft, da einige von Ihnen bei der Ersterkennung als Phishing identifiziert wurden. 
 
 ![Seite zur Untersuchung der Luft e-Mail](media/air-investigationemailpage.png)
 
@@ -161,11 +171,13 @@ Sie können:
 
 ![Untersuchung per e-Mail mit Flyout-Details](media/air-investigationemailpageflyoutdetails.png)
 
+* Hinweis: im Zusammenhang mit e-Mails kann eine Bedrohungs Oberfläche für Volumen Anomalien im Rahmen der Untersuchung angezeigt werden. Eine Volumen Anomalie weist auf eine Spitze in ähnlichen e-Mails rund um die Untersuchungs Ereigniszeit im Vergleich zu früheren Zeitzonen hin. Diese Spitze im e-Mail-Datenverkehr mit ähnlichen Eigenschaften (beispielsweise Betreff-und Absenderdomäne, Text Ähnlichkeit und Absender-IP) ist typisch für den Beginn von e-Mail-Kampagnen oder-Angriffen. Aber auch Massen-und SPOM-e-Mail-Kampagnen teilen diese Merkmale. Volumen Anomalien stellen eine potenzielle Bedrohung dar und können daher im Vergleich zu Schadsoftware oder Phishing-Bedrohungen, die mithilfe von Antiviren-Engines, Detonation oder böswilliger Reputation identifiziert werden, niedriger sein.
+
 ### <a name="user-investigation"></a>Benutzer Ermittlung
 
 Auf der Registerkarte **Benutzer** werden alle Benutzer angezeigt, die im Rahmen der Untersuchung identifiziert wurden. 
 
-In der folgenden Abbildung hat AIR beispielsweise Indikatoren für Kompromisse und Anomalien basierend auf einer neuen Posteingangsregel ermittelt, die erstellt wurde. Weitere Details (Evidence) der Untersuchung sind über detaillierte Ansichten auf dieser Registerkarte verfügbar.
+In der folgenden Abbildung hat AIR beispielsweise Indikatoren für Kompromisse und Anomalien basierend auf einer neuen Posteingangsregel ermittelt, die erstellt wurde. Weitere Details (Evidence) der Untersuchung sind über detaillierte Ansichten auf dieser Registerkarte verfügbar. Indikatoren für Kompromisse und Anomalien können auch Anomalie-Entdeckungen von [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)sein.
 
 ![Seite "Luft Ermittlungs Benutzer"](media/air-investigationuserspage.png)
 
@@ -183,7 +195,7 @@ Im Rahmen der Untersuchung korreliert AIR e-Mail-Bedrohungen mit Geräten. Eine 
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die aktuellen Computer und Bedrohungen.
-- Wählen Sie einen Computer aus, um eine Ansicht zu öffnen, die in die zugehörigen [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)-Untersuchungen eingeht.
+- Wählen Sie einen Computer aus, um eine Ansicht zu öffnen, die in die zugehörigen [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) -Untersuchungen im Windows Defender ATP-Sicherheits Center integriert ist.
 
 ### <a name="entity-investigation"></a>Entitäts Untersuchung
 
@@ -201,7 +213,7 @@ Sie können:
 
 ### <a name="playbook-log"></a>Textbuch-Protokoll
 
-Auf der Registerkarte **Protokoll** werden alle Schritte für das Textbuch angezeigt, die während der Untersuchung aufgetreten sind. Das Protokoll erfasst eine vollständige Bestandsaufnahme aller Aktionen, die von Office 365 Threat Intelligence-Funktionen als Teil von AIR ausgeführt wurden. Es bietet eine übersichtliche Ansicht aller Schritte, einschließlich der Aktion selbst, einer Beschreibung und der Dauer des aktuellen vom Anfang bis zum Ende. 
+Auf der Registerkarte **Protokoll** werden alle Schritte für das Textbuch angezeigt, die während der Untersuchung aufgetreten sind. Das Protokoll erfasst eine vollständige Bestandsaufnahme aller Aktionen, die von Office 365-Funktionen zur automatischen Untersuchung als Teil von AIR ausgeführt wurden. Es bietet eine übersichtliche Ansicht aller Schritte, einschließlich der Aktion selbst, einer Beschreibung und der Dauer des aktuellen vom Anfang bis zum Ende. 
 
 ![Seite "AIR Investigation log"](media/air-investigationlogpage.png)
 
@@ -214,20 +226,20 @@ Sie können:
 
 Auf der Registerkarte **Aktionen** werden alle Text Handlung-Aktionen angezeigt, die nach Abschluss der Untersuchung zur Korrektur empfohlen werden. 
 
-Aktionen erfassen eine vollständige Liste aller Schritte, die Microsoft am Ende einer Untersuchung empfiehlt. Sie können Korrekturaktionen durchführen, indem Sie eine oder mehrere Aktionen auswählen. Wenn **** Sie auf Genehmigen klicken, kann die Korrektur beginnen. (Möglicherweise sind entsprechende Berechtigungen erforderlich. Beispielsweise kann ein Sicherheits Lesegerät Aktionen anzeigen, aber nicht genehmigen.)  
+Aktionen erfassen die Schritte, die Microsoft empfiehlt, die Sie am Ende einer Untersuchung ausführen. Sie können Korrekturaktionen durchführen, indem Sie eine oder mehrere Aktionen auswählen. Wenn **** Sie auf Genehmigen klicken, kann die Korrektur beginnen. (Entsprechende Berechtigungen sind erforderlich. Beispielsweise kann ein Sicherheits Lesegerät Aktionen anzeigen, aber nicht genehmigen.)  
 
 ![Seite "AIR Investigations Action"](media/air-investigationactionspage.png)
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die vom Textbuch empfohlenen Aktionen.
 - Wählen Sie eine einzelne Aktion oder mehrere Aktionen aus.
-- Genehmigen empfohlener Aktionen. (Diese werden sofort mit Kommentaren gestartet.)
+- Genehmigen oder ablehnen von empfohlenen Aktionen mit Kommentaren.
 - Exportieren Sie die Ergebnisse in eine CSV-Datei.
 - Filtern Sie die Ansicht.
 
 ## <a name="how-to-get-air"></a>So erhalten Sie AIR
 
-Derzeit ist AIR in der Vorschau. Bei der Veröffentlichung wird AIR in die folgenden Abonnements aufgenommen:
+Office 365 AIR befindet sich derzeit in der Vorschau. Office 365 AIR wird in die folgenden Abonnements aufgenommen:
 
 - Microsoft 365 Enterprise E5
 - Office 365 Enterprise E5
