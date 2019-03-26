@@ -1,5 +1,5 @@
 ---
-title: Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Intelligence)
+title: Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Bedrohungs Ermittlung und-Antwort
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Reaktionsfunktionen bösartige e-Mails suchen und untersuchen können.
-ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692454"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732248"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
     
 - [Office 365 die Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
     
-- Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Antiphishingfunktionen definiert sind. Siehe [Threat Management im Office 365 Security &amp; Compliance Center](threat-management.md).
+- Ihre Organisation verfügt über Richtlinien, die für Antispam-, Antischadsoftware-und Antiphishingfunktionen definiert sind. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection](office-365-atp.md).
     
 - Sie sind ein globaler Office 365-Administrator, oder Sie haben entweder den Sicherheitsadministrator oder die Rolle "suchen und löschen" im &amp; Security Compliance Center zugewiesen. Weitere Informationen finden Sie unter [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
     

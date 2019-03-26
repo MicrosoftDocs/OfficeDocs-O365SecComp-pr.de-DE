@@ -1,7 +1,7 @@
 ---
 title: Wonach die Typen von vertraulichen Informationen suchen
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Data Loss Prevention (DLP) im Office 365 Security &amp; Compliance Center enthält 80 vertrauliche Informationstypen, die Sie in ihren DLP-Richtlinien verwenden können. Dieses Thema enthält eine Liste aller dieser vertraulichen Informationstypen und zeigt, was eine DLP-Richtlinie sucht, wenn sie den jeweiligen Typen erkennt.
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537642"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639192"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Wonach die Typen von vertraulichen Informationen suchen
 
@@ -616,14 +616,14 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS-DatenbankVerbindungsZeichenfolge und Azure SQL-Verbindungszeichenfolge
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "Server", "Server" oder "Datenquelle" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge "cloudapp. Azure. <!--no-hyperlink-->com "oder" cloudapp. Azure. <!--no-hyperlink-->net "oder" Database. Windows. <!--no-hyperlink-->net "und die Zeichenfolge" Password "oder" Password "oder" pwd ".
+Die Zeichenfolge "Server", "Server" oder "Datenquelle" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge "cloudapp. Azure.<!--no-hyperlink-->com "oder" cloudapp. Azure.<!--no-hyperlink-->NET "oder" Database. Windows.<!--no-hyperlink-->NET "und die Zeichenfolge" Password "oder" Password "oder" pwd ".
 
 ### <a name="pattern"></a>Muster
 
@@ -632,7 +632,7 @@ Die Zeichenfolge "Server", "Server" oder "Datenquelle" gefolgt von den Zeichen u
 - Ein Gleichheitszeichen (=)
 - 0-2 Leerzeichen
 - Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
-- Die Zeichenfolge "cloudapp. Azure". <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->net "oder" Database. Windows. <!--no-hyperlink-->net "
+- Die Zeichenfolge "cloudapp. Azure".<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "oder" Database. Windows.<!--no-hyperlink-->NET
 - Eine beliebige Kombination von zwischen 1-300 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - Die Zeichenfolge "Password", "Password" oder "pwd"
 - 0-2 Leerzeichen
@@ -676,14 +676,14 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iot-connection-string"></a>Azure viele-Verbindungszeichenfolge
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "HostName" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolgen "Azure-Devices". <!--no-hyperlink-->net "und" SharedAccessKey ".
+Die Zeichenfolge "HostName" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolgen "Azure-Devices".<!--no-hyperlink-->NET "und" SharedAccessKey ".
 
 ### <a name="pattern"></a>Muster
 
@@ -692,7 +692,7 @@ Die Zeichenfolge "HostName" gefolgt von den Zeichen und Zeichenfolgen, die im fo
 - Ein Gleichheitszeichen (=)
 - 0-2 Leerzeichen
 - Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
-- Die Zeichenfolge "Azure-Devices. <!--no-hyperlink-->net "
+- Die Zeichenfolge "Azure-Devices.<!--no-hyperlink-->NET
 - Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - Die Zeichenfolge "SharedAccessKey"
 - 0-2 Leerzeichen
@@ -736,8 +736,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-publish-setting-password"></a>Azure Publish-Einstellungs Kennwort
 
@@ -787,18 +787,18 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-redis-cache-connection-string"></a>Verbindungszeichenfolge für Azure-Cache-Zwischenspeicher
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "" "" "" "". <!--no-hyperlink-->net "gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge" Password "oder" pwd ".
+Die Zeichenfolge "" "" "" "".<!--no-hyperlink-->NET "gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolge" Password "oder" pwd ".
 
 ### <a name="pattern"></a>Muster
 
-- Die Zeichenfolge "" "" "" "". <!--no-hyperlink-->net "
+- Die Zeichenfolge "" "" "" "".<!--no-hyperlink-->NET
 - Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - Die Zeichenfolge "Password" oder "pwd"
 - 0-2 Leerzeichen
@@ -842,8 +842,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-sas"></a>Azure SAS
 
@@ -883,7 +883,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-Die Zeichenfolge "Endpunkt" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolgen "ServiceBus. Windows. <!--no-hyperlink-->net "und" SharedAccesKey ".
+Die Zeichenfolge "Endpunkt" gefolgt von den Zeichen und Zeichenfolgen, die im folgenden Muster dargestellt sind, einschließlich der Zeichenfolgen "ServiceBus. Windows.<!--no-hyperlink-->NET "und" SharedAccesKey ".
 
 ### <a name="pattern"></a>Muster
 
@@ -892,7 +892,7 @@ Die Zeichenfolge "Endpunkt" gefolgt von den Zeichen und Zeichenfolgen, die im fo
 - Ein Gleichheitszeichen (=)
 - 0-2 Leerzeichen
 - Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
-- Die Zeichenfolge "ServiceBus. Windows. <!--no-hyperlink-->net "
+- Die Zeichenfolge "ServiceBus. Windows.<!--no-hyperlink-->NET
 - Eine beliebige Kombination von zwischen 1-200 Buchstaben, Ziffern, Symbolen, Sonderzeichen oder Leerzeichen
 - Die Zeichenfolge "SharedAccessKey"
 - 0-2 Leerzeichen
@@ -936,8 +936,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key"></a>Azure-Speicherkontoschlüssel
 
@@ -1002,8 +1002,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key-generic"></a>Azure-Speicherkontoschlüssel (generisch)
 
@@ -1046,7 +1046,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 11 Ziffern plus Trennzeichen:
 - Sechs Ziffern und zwei Punkte im Format JJ.MM.TT für das Geburtsdatum  
-- Ein Bindestrich  
+- Ein Bindestrich 
 - Drei aufeinander folgende Ziffern (ungerade für Männer, gerade für Frauen)  
 - Ein Punkt 
 - Zwei Ziffern als Prüfziffer
@@ -1176,7 +1176,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 - Drei Ziffern (diese ersten acht Ziffern sind die Registrierungsnummer)  
 - Ein Schrägstrich  
 - Vierstellige Zweignummer  
-- Ein Bindestrich 
+- Ein Bindestrich  
 - Zwei Ziffern, die Prüfziffern sind
 
 ### <a name="checksum"></a>Prüfsumme
@@ -2420,7 +2420,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-None
+Keines
 
    
 ## <a name="eu-debit-card-number"></a>EU Debit Card-Nummer
@@ -2923,7 +2923,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-None
+Keines
    
 ## <a name="france-passport-number"></a>Französische Reisepassnummer
 
@@ -3511,9 +3511,9 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 ### <a name="pattern"></a>Muster
 
 12 Ziffern:
-- Vier Ziffern  
+- Vier Ziffern 
 - Eine optionales Leerzeichen oder ein Bindestrich  
-- Vier Ziffern  
+- Vier Ziffern 
 - Eine optionales Leerzeichen oder ein Bindestrich  
 - Die letzte Ziffer, die eine Prüfziffer ist
 
@@ -3631,7 +3631,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-None
+Keines
 
    
 ## <a name="ip-address"></a>IP-Adresse
@@ -3702,7 +3702,7 @@ Für IPv6 ist eine DLP-Richtlinie zu 95 % sicher, dass diese Art von vertraulic
 
 ### <a name="format"></a>Format
 
-Wörterbuch
+Dictionary
 
 ### <a name="pattern"></a>Muster
 
@@ -3735,7 +3735,7 @@ Ein beliebiger Begriff aus dem Dictionary_icd_10_cm-Stichwort Wörterbuch, das a
 
 ### <a name="format"></a>Format
 
-Wörterbuch
+Dictionary
 
 ### <a name="pattern"></a>Muster
 
@@ -4966,7 +4966,7 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-None
+Keines
 
 ## <a name="sql-server-connection-string"></a>SQL Server-Verbindungszeichenfolge
 
@@ -5041,8 +5041,8 @@ Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Inform
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-national-id"></a>Schwedische Ausweisnummer
 

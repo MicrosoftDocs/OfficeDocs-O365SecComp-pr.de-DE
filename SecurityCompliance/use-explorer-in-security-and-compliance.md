@@ -3,7 +3,7 @@ title: Verwenden des Bedrohungs-Explorers &amp; im Security Compliance Center
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/10/2019
+ms.date: 03/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informationen zu Explorer (auch als Bedrohungs-Explorer bezeichnet) &amp; im Security Compliance Center.
-ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 202898873bb9611c747aed335d295c749c7cd0fa
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693614"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732258"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Verwenden des Bedrohungs-Explorers &amp; im Security Compliance Center
 
@@ -35,104 +35,92 @@ Um Explorer zu verwenden, wechseln Sie &amp; im Security Compliance Center zu **
       
 ## <a name="explorer-overview"></a>Übersicht über den Explorer
 
-Der Explorer zeigt Informationen zu mutmaßlicher Schadsoftware und Phishing in e-Mails und Dateien in Office 365 sowie andere Sicherheitsbedrohungen und-Risiken für Ihre Organisation an. Wenn Sie Explorer zuerst öffnen, werden in der Standardansicht e-Mail-Malware-Entdeckungen für die letzten 7 Tage angezeigt. Der Explorer kann auch Sicherheitsschutz Features in Office 365, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md) , anzeigen und so geändert werden, dass Daten für die letzten 30 Tage angezeigt werden. Wenn Sie über ein Test-Abonnement für Office 365 Advanced Threat Protection Plan 2 oder Office 365 E5 verfügen, werden nur Erkennungs-und e-Mail-Daten für die letzten 7 Tage angezeigt.
-  
-![Explorer zeigt Informationen zu Top-Schadsoftware und zu den Ziel Benutzern](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
-  
-Verwenden Sie das Menü Ansicht, um zu ändern, welche Informationen angezeigt werden.
-  
-![Das Menü "Ansicht" für Explorer](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
-  
-Der Explorer verfügt über mehrere Filterungs-und Abfragefunktionen, mit denen Sie Details wie die wichtigsten Zielbenutzer, die wichtigsten Malware Familien, die Erkennungstechnologie und vieles mehr eingehen können. Jede Art von Bericht bietet eine Vielzahl von Möglichkeiten zum Anzeigen und Durchsuchen von Daten.
+Wenn Ihr Unternehmen über [Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen](office-365-ti.md) verfügt (Dies ist im ATP-Plan 2 enthalten), und Sie über die erforderlichen Berechtigungen verfügen, können Sie Threat Explorer (auch als Explorer bezeichnet) verwenden, um Bedrohungen zu identifizieren und zu analysieren. (Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Explorer**.)
 
-> [!IMPORTANT]
-> Verwenden Sie keine Platzhalterzeichen wie ein Sternchen (*) oder ein Fragezeichen (?) mit Explorer. Wenn Sie im Feld Betreff für e-Mail-Nachrichten suchen, führt der Explorer eine partielle Übereinstimmung aus und liefert Ergebnisse, die der Platzhaltersuche ähneln.
-
-## <a name="email--malware"></a>E \> -Mail-Schadsoftware
-
-In dieser Ansicht werden e-Mail-Nachrichten mit Schadsoftware angezeigt.  
-
-Anzeigen von Informationen im Diagramm anhand der Schadsoftware-Familie, der Absenderdomäne, der Absender-IP-Adresse, des Schutzstatus (Aktionen, die von ihren Threat Protection-Features und-Richtlinien in Office 365 ausgeführt wurden) und der Erkennungstechnologie (wie die Schadsoftware erkannt wurde).  
-
-![Anzeigen von Daten zu erkannter Schadsoftware](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
-
-Sehen Sie sich unter dem Diagrammdetails zu den häufigsten Schadsoftware-Familien, die wichtigsten Zielbenutzer und weitere Details zu bestimmten Nachrichten an. 
-
-## <a name="email--phish"></a>E \> -Mail-Phishing
-
-Diese Ansicht zeigt e-Mail-Nachrichten an, die als Phishing-Versuche identifiziert wurden.  
-
-Anzeigen von Informationen nach Absenderdomäne, Absender-IP und Schutzstatus (Aktionen, die von ihren Funktionen zum Schutz vor Bedrohungen in Office 365 ausgeführt werden). 
-
-![Anzeigen von Daten über e-Mails, die als Phishing-Versuche identifiziert wurden](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
-
-Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Nachrichten an. 
-
-## <a name="email--user-reported"></a>E \> -Mail-Benutzer gemeldet
-
-In dieser Ansicht werden e-Mails angezeigt, die von Benutzern als Junk-e-Mail oder Phishing-Nachricht gemeldet wurden.  
-
-Informationen nach Berichtstyp anzeigen (die Bestimmung des Benutzers, dass es sich bei der e-Mail um Junk-e-Mail, nicht um Junk oder Phishing handelt) und nach Zustellungs Grund (Gründe dafür, warum e-Mails an einen bestimmten Speicherort gesendet wurden, beispielsweise eine Spamfilter Richtlinie, eine Nachrichtenfluss Regel, eine Liste blockierter Absender, eine Liste sicherer Absender, usw.).  
-
-![Anzeigen von Daten über e-Mail-Benutzer, die als Junk, nicht als Junk oder Phishing gemeldet wurden](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
-
-Zeigen Sie unterhalb des Diagramms weitere Details zu bestimmten e-Mail-Nachrichten wie Betreff, die IP-Adresse des Absenders, der Benutzer, der die Nachricht als Junk, nicht Junk oder Phishing gemeldet hat, und vieles mehr an. 
-
-## <a name="email--all-mail"></a>Alle \> e-Mails senden
-
-Diese Ansichten zeigen eine Übersicht über e-Mail-Aktivitäten, einschließlich e-Mails, die aufgrund von Phishing oder Schadsoftware als böswillig identifiziert wurden, sowie für alle nicht-böswilligen e-Mails (normale e-Mail, Spam und Massensendungen). 
-
-> [!NOTE]
-> Wenn Sie eine Fehlermeldung erhalten, die zu **viele anzuzeigende Daten**liest, fügen Sie einen Filter hinzu, und schränken Sie gegebenenfalls den angezeigten Datums Umfang ein. 
-
-Wenn Sie einen Filter anwenden möchten, wählen Sie **Absender**aus, wählen Sie ein Element in der Liste aus, und klicken Sie dann auf die Schaltfläche Aktualisieren. In unserem Beispiel wurde die **Erkennungstechnologie** als Filter verwendet (es stehen mehrere Optionen zur Verfügung). Anzeigen von Informationen nach Absender, Absenderdomäne, Empfänger, Betreff, Anlage Dateiname, Schadsoftware-Familie, Schutzstatus (Aktionen, die von ihren Threat Protection-Features und-Richtlinien in Office 365 ausgeführt werden), Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und mehr. 
-
-![Anzeigen von Daten zu erkannten e-Mails anhand der Erkennungstechnologie](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
-
-Zeigen Sie unter dem Diagramm weitere Details zu bestimmten e-Mail-Nachrichten an, beispielsweise Betreff, Empfänger, Absender, Status usw. 
-
-## <a name="content--malware"></a>Inhalts \> -Schadsoftware
-
-Diese Ansicht zeigt Dateien, die von Office 365 Advanced Threat Protection in SharePoint Online, OneDrive for Business und Microsoft Teams als bösartig identifiziert wurden.
-
-Anzeigen von Informationen nach Malwarefamilie, Erkennungstechnologie (wie die Malware erkannt wurde) und Arbeitslast (OneDrive, SharePoint oder Teams). 
-
-![Anzeigen von Daten zu erkannter Schadsoftware](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
-
-Zeigen Sie unter dem Diagramm weitere Details zu bestimmten Dateien an, beispielsweise Dateiname der Anlage, Arbeitsauslastung, Dateigröße, wer die Datei zuletzt geändert hat, und vieles mehr. 
-  
-## <a name="new-click-to-filter-capabilities"></a>(Neu!) Click-to-Filter-Funktionen
-
-Neu in Explorer ist die Möglichkeit zum Filtern. Wenn Sie in der Legende auf ein Element klicken, wird dieses Element zu einem Filter für den Bericht. Nehmen wir beispielsweise an, dass Sie die Malware Ansicht im Explorer betrachten:
-  
 ![Wechseln Sie zu Threat \> Management Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
-  
-Wenn Sie in diesem Diagramm auf **ATP-Detonation** klicken, wird eine Ansicht wie die folgende angezeigt: 
-  
-![Explorer gefiltert, um nur die Ergebnisse der ATO-Detonation anzuzeigen](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
-  
-In dieser Ansicht betrachten wir nun Daten für Dateien, die von [Office 365 ATP Safe Attachments](atp-safe-attachments.md)gezündet wurden. Unter dem Diagramm können Details zu bestimmten e-Mail-Nachrichten mit Anlagen angezeigt werden, die von sicheren ATP-Anlagen erkannt wurden.
-  
-![Spezifische Details zu e-Mail-Nachrichten mit erkannten Anlagen](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
-  
-Durch Auswählen eines oder mehrerer Elemente wird das Menü " **Aktionen** " aktiviert, das verschiedene Auswahlmöglichkeiten für die ausgewählten Elemente bietet. 
-  
-![Durch Auswählen eines Elements wird das Menü "Aktionen" aktiviert.](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
-  
-Die Möglichkeit, mit einem Klick zu filtern und zu bestimmten Details zu navigieren, kann Ihnen viel Zeit bei der Untersuchung von Bedrohungen ersparen.
-  
-## <a name="how-do-i-get-explorer"></a>Wie erhalte ich einen Explorer?
+
+In diesem Artikel werden einige Dinge beschrieben, die Sie mit Explorer tun können (es gibt viel mehr Möglichkeiten):
+
+- [Erfahren Sie, welche Arten von Schadsoftware in e-Mails erkannt wurden](#see-malware-detected-in-email-by-technology), und mit der Bedrohungsschutz Technologie (Schutz vor Schadsoftware, sichere ATP-Anhänge usw.)
+
+- [Anzeigen von Daten zu Phishing-Links (URLs)](#view-data-about-phishing-urls-and-click-verdict), und wie die Click-Urteile (URLs wurden blockiert, erlaubt oder besucht trotz Warnungen)
+
+- [Überprüfen von e-Mail-Nachrichten, die als Junk-, nicht Junk-oder Phishing-Nachricht gemeldet wurden](#review-email-messages-reported-by-users), und Identifizieren von Trends (beispielsweise eine größere Anzahl von Nachrichten, die als Phishing gemeldet wurden) 
+
+## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Schadsoftware nach Technologie
+
+Angenommen, Sie möchten Schadsoftware erkennen, die in e-Mails erkannt wurde, und die Technologie in Office 365. Zu diesem Zweck verwenden Sie die [e-Mail-_GT_ Malware-](threat-explorer-views.md#email--malware) Ansicht des Explorers.
+
+1. wählen sie im Office 365 Security & Compliance Center[https://protection.office.com](https://protection.office.com)() die option **Threat management** > **Explorer**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Schadsoftware**aus.<br/>![Menü ' Ansicht ' für Explorer](media/ExplorerViewEmailMalwareMenu.png)<br/>
+3. Klicken Sie auf **Absender**, und wählen Sie dann **grundlegende** > **Erkennungstechnologie**aus.<br/>Ihre Erkennungstechnologien sind jetzt als Filter für den Bericht verfügbar.<br/>![Malware Erkennungstechnologien](media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+4. Wählen Sie eine Option aus, und klicken Sie dann auf die Schaltfläche Aktualisieren, um diesen Filter anzuwenden.<br/>![Ausgewählte Erkennungstechnologie](media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+
+Der Bericht wird aktualisiert, um die in e-Mails festgestellten Ergebnisse mithilfe der von Ihnen ausgewählten technologieoption anzuzeigen. Von hier aus können Sie eine weitere Analyse durchführen.
+
+## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Anzeigen von Daten zu Phishing-URLs und klicken auf "Urteil"
+
+Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails anzeigen, einschließlich einer Liste von URLs, die zugelassen, blockiert und überschrieben wurden. Zu diesem Zweck verwenden Sie die [e-Mail-_GT_ Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers.
+
+1. wählen sie im Office 365 Security & Compliance Center[https://protection.office.com](https://protection.office.com)() die option **Threat management** > **Explorer**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Phishing**aus.<br/>![Menü ' Ansicht ' für Explorer](media/ExplorerViewEmailPhishMenu.png)<br/>
+3. Klicken Sie auf **Absender**, und wählen Sie dann **URLs** > **Klicken Sie auf Urteil**.
+4. Wählen Sie eine oder mehrere Optionen aus, beispielsweise **blockiert** und über **schrieben**, und klicken Sie dann auf die Schaltfläche **Aktualisieren** , um diesen Filter anzuwenden.<br/>![URLs und Klick Urteile](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+
+Der Bericht wird so aktualisiert, dass erkannte Phishing-URLs in e-Mails angezeigt werden, die blockiert (oder trotz einer Warnung besucht wurden) sowie e-Mail-Zustellungsstatus. Von hier aus können Sie eine weitere Analyse durchführen. Unter dem Diagramm können Sie beispielsweise die häufigsten URLs sehen, die in den e-Mails Ihrer Organisation blockiert wurden. 
+
+![Blockierte Explorer-URLs](media/ExplorerPhishClickVerdictURLs.png) 
+
+Wählen Sie eine URL aus, um detailliertere Informationen anzuzeigen.
+
+## <a name="review-email-messages-reported-by-users"></a>Überprüfende e-Mail-Nachrichten von Benutzern
+
+Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk, nicht als Junk oder als Phishing gemeldet haben, indem Sie das [Add-in Berichtnachricht für Outlook und Outlook im Web](enable-the-report-message-add-in.md)verwenden. Verwenden Sie hierzu die vom [Benutzer angegebene e-Mail->](threat-explorer-views.md#email--user-reported) -Ansicht des Explorers.
+
+1. wählen sie im Office 365 Security & Compliance Center[https://protection.office.com](https://protection.office.com)() die option **Threat management** > **Explorer**aus.
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail** > **-Benutzer gemeldet**aus.<br/>![Menü ' Ansicht ' für Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
+3. Klicken Sie auf **Absender**, und wählen Sie dann **Basis** > **Berichtstyp**aus.
+4. Wählen Sie eine Option wie **Phishing**aus, und klicken Sie dann auf die Schaltfläche **Aktualisieren** . <br/>![Vom Benutzer gemeldete Phishing-Nachweise](media/EmailUserReportedReportType.png)<br/> 
+
+Der Bericht wird aktualisiert, um Daten zu e-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishing-Versuch gemeldet haben. Sie können diese Informationen verwenden, um eine weitere Analyse durchzuführen und gegebenenfalls Ihre [ATP-AntiPhishing-Richtlinien](set-up-anti-phishing-policies.md)anzupassen.
+
+## <a name="theres-more"></a>Es gibt noch mehr!
+
+Zusätzlich zu den drei in diesem Artikel beschriebenen Szenarien stehen im Explorer viele Berichterstellungsszenarien zur Verfügung. Hier einige weitere Beispiele:
+
+- [Suchen und untersuchen von übermittelten Schad-e-Mails](investigate-malicious-email-that-was-delivered.md)
+
+- [Anzeigen schädlicher Dateien, die in SharePoint Online, OneDrive und Microsoft Teams erkannt wurden](malicious-files-detected-in-spo-odb-or-teams.md)
+
+- [Übersicht über die Ansichten im Bedrohungs-Explorer](threat-explorer-views.md)
+
+## <a name="how-to-get-explorer"></a>Abrufen des Explorers
 
 Der Explorer ist in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthalten. 
 
-Sie müssen über die entsprechenden Berechtigungen verfügen, beispielsweise solche, die einem Sicherheitsadministrator oder einem Sicherheits Leser erteilt wurden, um den Explorer anzuzeigen und zu verwenden. Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Zum Anzeigen und Verwenden des Explorers benötigen Sie die entsprechenden Berechtigungen, beispielsweise solche, die einem Sicherheitsadministrator oder Sicherheits Leser erteilt werden. 
+
+- Für das Security &amp; Compliance Center muss eine der folgenden Rollen zugewiesen sein:
+    - Organisationsverwaltung
+    - Sicherheits Administrator (kann im Azure Active Directory Admin Center[https://aad.portal.azure.com](https://aad.portal.azure.com)zugewiesen werden)
+    - Sicherheits Leser
+
+- Für Exchange Online müssen Sie über eine der folgenden Rollen verfügen, die entweder in der Exchange-Verwaltungskonsole[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() oder mit PowerShell-Cmdlets zugewiesen sind (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+    - Organisationsverwaltung
+    - Organisationsverwaltung mit Leserechten
+    - Rolle „Empfänger mit Leserechten“
+    - Verwaltung der Richtlinientreue
+
+Weitere Informationen finden Sie in den folgenden Ressourcen:
+
+- [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+
+- [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Berichte und Einblicke im Office 365 &amp; Security Compliance Center](reports-and-insights-in-security-and-compliance.md)
-  
-[Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Threat Invesitgation und Response)](investigate-malicious-email-that-was-delivered.md)
-  
-[Antispam- und Antischadsoftwareschutz in Office 365](anti-spam-and-anti-malware-protection.md)
-  
+- [Automatisierte Untersuchung und Antwort (AIR)](automated-investigation-response-office.md)
 
+- [Ansichten des Bedrohungs-Explorers](threat-explorer-views.md)
+
+- [Anzeigen von Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md)

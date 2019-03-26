@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Informationen zu Office 365-, Azure-und Dynamics 365 Online-Konformitätsberichten, um Drittanbieter-Audits zu sehen, erfahren Sie, wie Microsoft Kundendaten sicher hält und wie Sie mit ISO, HIPAA, NIST, FINRA, DSGVO und FedRAMP kompatibel sind, wenn Sie diese Onlinedienste verwenden.
-ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296688"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647335"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust Portal
 
@@ -33,7 +33,7 @@ Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von S
 
 - Dynamics 365
 
-- Azure
+- Azur
     
  > [!NOTE]
  > Azure Active Directory-Konten, die Organisationen zugeordnet sind, haben Zugriff auf die gesamte Bandbreite von Dokumenten und Features wie Compliance-Manager. Microsoft-Konten, die für den persönlichen Gebrauch erstellt wurden, haben begrenzten Zugriff auf Inhalte des Service Trust-Portals. 
@@ -100,7 +100,7 @@ Bietet eine Fülle von Sicherheits Implementierungs-und-Entwurfsinformationen mi
 - Whitepapers, FAQs und vorGehensWeisen
 - Compliance-Leitfäden
 - Pen-Tests und Sicherheitsbewertungen
-- Sicheres Ergebnis
+- Secure Score
 - Azure-Sicherheits-und Konformitäts Pläne
 - ÜberWachte Steuerelemente
   
@@ -139,7 +139,7 @@ Klicken Sie auf **Compliance-Manager**, um die Steuerelemente aus Bewertungen im
   
 ## <a name="my-library"></a>Meine Bibliothek
 
-Verwenden Sie das Feature Meine Bibliothek, um der Seite Meine Bibliothek Dokumente und Ressourcen im Dienst Vertrauensstellungs Portal hinzuzufügen. Auf diese Weise können Sie auf Dokumente zugreifen, die für Sie an einem zentralen Ort relevant sind.  Klicken Sie zum Hinzufügen eines Dokuments zu Ihrer Bibliothek auf das Menü **...** rechts neben einem Dokument, und wählen Sie dann **zu Bibliothek hinzufügen**aus. Sie können Ihrer meine Bibliothek mehrere Dokumente hinzufügen, indem Sie auf das Kontrollkästchen neben einem oder mehreren Dokumenten klicken und dann oben auf der Seite **auf in Bibliothek speichern** klicken.
+Verwenden Sie das Feature Meine Bibliothek, um der Seite Meine Bibliothek Dokumente und Ressourcen im Dienst Vertrauensstellungs Portal hinzuzufügen. Auf diese Weise können Sie auf Dokumente zugreifen, die für Sie an einem zentralen Ort relevant sind.  Klicken Sie zum Hinzufügen eines Dokuments zu Ihrer Bibliothek auf das Menü **...** rechts neben einem Dokument, und wählen Sie dann **in Bibliothek speichern**aus. Sie können Ihrer meine Bibliothek mehrere Dokumente hinzufügen, indem Sie auf das Kontrollkästchen neben einem oder mehreren Dokumenten klicken und dann oben auf der Seite **auf in Bibliothek speichern** klicken.
 
 Darüber hinaus können Sie mit der Benachrichtigungsfunktion Ihre meine Bibliothek so konfigurieren, dass eine e-Mail-Nachricht an Sie gesendet wird, wenn Microsoft ein Dokument aktualisiert, das Sie Ihrer meine Bibliothek hinzugefügt haben. Um Benachrichtigungen einzurichten, wechseln Sie zu "Meine Bibliothek", und klicken Sie auf **Benachrichtigungseinstellungen**. Sie können die Häufigkeit von Benachrichtigungen auswählen und eine e-Mail-Adresse in Ihrer Organisation angeben, an die Benachrichtigungen gesendet werden sollen. E-Mail-Benachrichtigungen enthalten Links zu den Dokumenten, die aktualisiert wurden, sowie eine kurze Beschreibung des Updates.
 
