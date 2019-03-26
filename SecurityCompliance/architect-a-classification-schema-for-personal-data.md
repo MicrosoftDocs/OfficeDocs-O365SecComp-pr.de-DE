@@ -3,7 +3,7 @@ title: Entwerfen eines Klassifikationsschemas für personenbezogene Daten
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Ermitteln Sie, ob Ihre Organisation als Teil des DSGVO-Plans Bezeichnungen implementiert.
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373866"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789440"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Entwerfen eines Klassifikationsschemas für personenbezogene Daten
 
@@ -45,13 +45,13 @@ Wählen Sie eine der folgenden Optionen.
 
 -   In Zukunft können sie auch mit Cloud App Security verwendet werden, sodass Sie vertraulichen Informationen in anderen SaaS-Apps erkennen können.
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>Option 2: Verwenden von vertraulichen Informationstypen und Office 365-Bezeichnungen
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Option 2: Verwenden von vertraulichen Informationstypen und Aufbewahrungsbezeichnungen
 
 -   Sie benötigen vertrauliche Informationstypen, um Bezeichnungen automatisch auf personenbezogene Daten anzuwenden, die der DSGVO unterliegen, diese sind somit eine Voraussetzung.
 
--   Mit Office-Bezeichnungen können Sie personenbezogene Daten, die der DSGVO unterliegen, in einen umfassenderen Plan für die Datenkontrolle für Ihre Organisation implementieren.
+-   Mit Aufbewahrungsbezeichnungen können Sie personenbezogene Daten, die der DSGVO unterliegen, in einen umfassenderen Plan für die Datenkontrolle für Ihre Organisation implementieren.
 
--   Office-Bezeichnungen werden später mit Azure Information Protection-Bezeichnungen in einem einheitlichen Klassifikations- und Bezeichnungsmodul zusammengeführt.
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Entwickeln eines Bezeichnungsschemas, das personenbezogene Daten enthält
 
