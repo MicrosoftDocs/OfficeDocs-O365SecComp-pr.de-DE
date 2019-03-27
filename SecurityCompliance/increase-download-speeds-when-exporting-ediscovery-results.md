@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Erfahren Sie, wie Sie die Windows-Registrierung konfigurieren, um den Datendurchsatz beim Herunterladen von Suchergebnissen und Such Daten &amp; aus dem Office 365 Security Compliance Center und Office 365 Advanced eDiscovery zu erhöhen.
-ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ddeb247be6981dbfdb874e270a123e4465914d86
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295428"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899924"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365
 
@@ -52,7 +52,7 @@ Führen Sie das folgende Verfahren auf dem Computer aus, auf dem Sie Suchergebni
 6. Sie können die Schritte 2-5 wiederholen, um den Wert `DownloadConcurrency` für die Registrierungseinstellung zu ändern. 
     
     > [!IMPORTANT]
-    > Nachdem Sie die `DownloadConcurrency` Registrierungseinstellung erstellt oder geändert haben, müssen Sie einen neuen Exportauftrag erstellen oder einen vorhandenen Exportauftrag für die Suchergebnisse oder Daten, die Sie herunterladen möchten, neu starten. Weitere Informationen finden Sie im Abschnitt [More Information](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) . 
+    > Nachdem Sie die `DownloadConcurrency` Registrierungseinstellung erstellt oder geändert haben, müssen Sie einen neuen Exportauftrag erstellen oder einen vorhandenen Exportauftrag für die Suchergebnisse oder Daten, die Sie herunterladen möchten, neu starten. Weitere Informationen finden Sie im Abschnitt [More Information](#more-information) . 
   
 ## <a name="more-information"></a>Weitere Informationen
 

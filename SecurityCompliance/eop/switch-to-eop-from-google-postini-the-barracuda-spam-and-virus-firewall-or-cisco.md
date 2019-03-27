@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: In diesem Thema wird erläutert, wie Sie das Verfahren für das Wechseln zu Exchange Online Protection (EOP) von einer lokalen e-Mail-Hygiene-Appliance oder einem cloudbasierten Schutzdienst verstehen und Ihnen dann Hilferessourcen für die ersten Schritte zur Verfügung stellen können.
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693414"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899954"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
 
@@ -25,14 +25,13 @@ Wenn Sie EOP noch nicht kennen und sich erst einen Überblick über seine Funkti
   
 Bevor Sie zu EOP wechseln, sollten Sie zuerst überlegen, ob Sie die EOP-geschützten Postfächer in der Cloud, mit Exchange Online, lokal oder in einem hybriden Szenario hosten möchten. (Bei einem hybriden Szenario werden Postfächer teils lokal und teils mit Exchange Online gehostet.) Jedes dieser Hostingszenarios - cloudbasiert, lokal oder hybrid - ist möglich, wird jedoch u. U. unterschiedlich eingerichtet. Die folgenden Überlegungen sollen Ihnen bei der Wahl der richtigen Bereitstellung helfen:
   
-- **EOP-Schutz mit lokalen Postfächern**: Dieses Szenario ist geeignet, wenn Sie eine vorhandene E-Mail-Hostinginfrastruktur verwenden möchten oder die geschäftlichen Anforderungen lokal gehostete Postfächer erforderlich machen und Sie den cloudbasierten E-Mail-Schutz von EOP nutzen möchten. Eine genauere Beschreibung dieses Szenarios finden Sie unter [Wechseln zu EOP als eigenständige Lösung](#BKMK_SwitchStandalone.md). 
+- **EOP-Schutz mit lokalen Postfächern**: Dieses Szenario ist geeignet, wenn Sie eine vorhandene E-Mail-Hostinginfrastruktur verwenden möchten oder die geschäftlichen Anforderungen lokal gehostete Postfächer erforderlich machen und Sie den cloudbasierten E-Mail-Schutz von EOP nutzen möchten. Eine genauere Beschreibung dieses Szenarios finden Sie unter [Wechseln zu EOP als eigenständige Lösung](#switch-to-eop-standalone). 
     
 - **EOP-Schutz mit Exchange Online-Postfächern**: Dieses Szenario ist geeignet, wenn Sie EOP-Schutz nutzen und alle Postfächer in der Cloud hosten möchten. Dadurch verringert sich die Komplexität, da Sie keine lokalen Messagingserver unterhalten müssen. Dieses Szenario wird unter [Wechseln zu Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) beschrieben. 
     
-- **EOP-Schutz mit hybriden Postfächern**: Vielleicht hätten Sie gerne Postfächer in der Cloud, müssen aber die Postfächer einiger Benutzer lokal hosten. Wählen Sie dieses Szenario, wenn Sie Postfächer teils lokal und teils mit Exchange Online hosten möchten. Dieses Szenario wird unter [Wechseln zu einer Hybridlösung](#BKMK_SwitchHybrid.md) beschrieben. 
+- **EOP-Schutz mit hybriden Postfächern**: Vielleicht hätten Sie gerne Postfächer in der Cloud, müssen aber die Postfächer einiger Benutzer lokal hosten. Wählen Sie dieses Szenario, wenn Sie Postfächer teils lokal und teils mit Exchange Online hosten möchten. Dieses Szenario wird unter [Wechseln zu einer Hybridlösung](#switch-to-a-hybrid-solution) beschrieben. 
     
 ## <a name="switch-to-eop-standalone"></a>Wechseln zu EOP als eigenständige Lösung
-<a name="BKMK_SwitchStandalone"> </a>
 
 Wenn Sie Postfächer derzeit lokal hosten und eine lokale Schutzvorrichtung oder einen cloudbasierten Messagingschutzdienst verwenden, können Sie zu EOP wechseln, um von seinen Schutzfunktionen und seiner Verfügbarkeit zu profitieren. Wenn Sie EOP als eigenständige Lösung einrichten möchten, d. h. mit lokal gehosteten Postfächern und EOP als E-Mail-Schutz, befolgen Sie die Anleitung unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md). Sie umfasst die Schritte zum Einrichten von EOP-Schutz, wie das Anmelden, das Hinzufügen einer Domäne und das Einrichten des Nachrichtenflusses mit Connectors.
   

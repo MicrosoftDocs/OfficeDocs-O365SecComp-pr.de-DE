@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Data Loss Prevention (DLP) in SharePoint Online können Sie Dokumente ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten. Nach der Ermittlung der Dokumente können Sie mit deren Besitzern zusammenarbeiten, um die Daten zu schützen. In diesem Thema wird das Erstellen einer Abfrage zur Suche nach vertraulichen Daten behandelt.
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639132"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900054"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 
@@ -53,7 +53,7 @@ Mithilfe des Konfidenzbereichs wird schließlich der Grad an Konfidenz angegeben
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>Im eDiscovery Center stehen weitere Abfrageeigenschaften und Suchoperatoren zur Verfügung.
 
-DLP in SharePoint bietet außerdem eine Einführung in die LastSensitiveContentScan-Eigenschaft, die Sie bei der Suche nach Dateien unterstützenkann, die innerhalb eines bestimmten Zeitrahmens gescannt werden. Abfragebeispiele mit der `LastSensitiveContentScan` -Eigenschaft finden Sie in den Beispielen für [komplexe Abfragen](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) im nächsten Abschnitt. 
+DLP in SharePoint bietet außerdem eine Einführung in die LastSensitiveContentScan-Eigenschaft, die Sie bei der Suche nach Dateien unterstützenkann, die innerhalb eines bestimmten Zeitrahmens gescannt werden. Abfragebeispiele mit der `LastSensitiveContentScan` -Eigenschaft finden Sie in den Beispielen für [komplexe Abfragen](#examples-of-complex-queries) im nächsten Abschnitt. 
   
 Sie können nicht nur DLP-spezifische Eigenschaften verwenden, um eine Abfrage zu erstellen, sondern auch standardmäßige SharePoint `Author` eDiscovery `FileExtension`-Sucheigenschaften wie oder. Sie können Operatoren verwenden, um komplexe Abfragen zu erstellen. Eine Liste der verfügbaren Eigenschaften und Operatoren finden Sie unter [using Search Properties and Operators with eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093) Blog Post. 
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Für Administratoren: Löschen Sie Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online-Postfach, auch wenn das Postfach in der gesetzlichen Aufbewahrungspflicht steht. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die versehentlich in Office 365 verschüttet wurden.'
-ms.openlocfilehash: 4b7b12b33a2364d76b5d7dab6c7e94dc8f00d151
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: a1abfd73d96db6d67e1e1fe13d5487ac55c40344
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296178"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900114"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von Cloud-basierten Postfächern in Hold-Admin-Hilfe
 
@@ -49,7 +49,7 @@ Der Ordner "Wiederherstellbare Elemente" für ein Exchange Online-Postfach ist v
     
   - **Postfachsuche** – mit dieser Rolle können Sie Postfächer in Ihrer Organisation durchsuchen. Exchange-Administratoren werden standardmäßig nicht dieser Rolle zugewiesen. Wenn Sie diese Rolle zuweisen möchten, fügen Sie sich selbst als Mitglied der Rollengruppe "Discoveryverwaltung" in Exchange Online hinzu. 
     
-  - **Post Fach Import** – mit dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers löschen. Diese Rolle wird standardmäßig keiner Rollengruppe zugewiesen. Zum Löschen von Nachrichten aus Benutzerpostfächern können Sie die Rolle "Post Fach Import-Export" zur Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. 
+  - **Post Fach Import** – mit dieser Rolle können Sie Nachrichten aus dem Postfach eines Benutzers löschen. Diese Rolle ist standardmäßig keiner Rollengruppe zugewiesen. Zum Löschen von Nachrichten aus Benutzerpostfächern können Sie die Rolle "Post Fach Import-Export" zur Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. 
     
 - Das in diesem Artikel beschriebene Verfahren wird für inaktive Postfächer nicht unterstützt. Das liegt daran, dass Sie nach dem Entfernen eine Aufbewahrungsrichtlinie (oder eine Office-365-Richtlinie) nicht mehr auf ein inaktives Postfach anwenden können. Wenn Sie einen Haltebereich aus einem inaktiven Postfach entfernen, wird er in ein normales gelöschtes Postfach geändert und dauerhaft aus Ihrer Organisation gelöscht, nachdem es vom Assistenten für verwaltete Ordner verarbeitet wurde.
     
@@ -63,11 +63,11 @@ Dieser erste Schritt besteht darin, ausgewählte Eigenschaften aus dem Zielpostf
   
 -  *SingleItemRecoveryEnabled* und *Parameter RetainDeletedItemsFor* ; Falls erforderlich, deaktivieren Sie einzelne Wiederherstellung, und erweitern Sie den Aufbewahrungszeitraum für gelöschte Elemente in Schritt 3. 
     
--  *LitigationHoldEnabled* und *InPlaceHolds* ; Sie müssen alle für das Postfach festgelegten haltebereiche identifizieren, damit Sie Sie vorübergehend in Schritt 3 entfernen können. Im Abschnitt [Weitere Informationen](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) finden Sie Tipps dazu, wie Sie den Typ Hold identifizieren, der möglicherweise in einem Postfach gespeichert wird. 
+-  *LitigationHoldEnabled* und *InPlaceHolds* ; Sie müssen alle für das Postfach festgelegten haltebereiche identifizieren, damit Sie Sie vorübergehend in Schritt 3 entfernen können. Im Abschnitt [Weitere Informationen](#more-information) finden Sie Tipps dazu, wie Sie den Typ Hold identifizieren, der möglicherweise in einem Postfach gespeichert wird. 
     
 Darüber hinaus müssen Sie die Einstellungen für den Post Fach Clientzugriff abrufen, damit Sie Sie vorübergehend deaktivieren können, damit der Besitzer (oder andere Benutzer) während dieses Verfahrens nicht auf das Postfach zugreifen kann. Schließlich können Sie die aktuelle Größe und Anzahl der Elemente im Ordner "Wiederherstellbare Elemente" abrufen. Nachdem Sie Elemente im Ordner "Wiederherstellbare Elemente" in Schritt 5 gelöscht haben, verwenden Sie diese Informationen, um zu überprüfen, ob die Elemente tatsächlich entfernt wurden.
   
-1. Stellen [Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554). Achten Sie darauf, einen Benutzernamen und ein Kennwort für ein Administratorkonto zu verwenden, dem die entsprechenden Verwaltungsrollen in Exchange Online zugewiesen wurden. 
+1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://go.microsoft.com/fwlink/?linkid=396554). Achten Sie darauf, einen Benutzernamen und ein Kennwort für ein Administratorkonto zu verwenden, dem die entsprechenden Verwaltungsrollen in Exchange Online zugewiesen wurden. 
     
 2. Führen Sie den folgenden Befehl aus, um Informationen zur Wiederherstellung einzelner Elemente und zur Aufbewahrungsdauer für gelöschte Elemente abzurufen.
 
@@ -170,7 +170,7 @@ Der letzte Schritt, bevor Sie Elemente aus dem Ordner "Wiederherstellbare Elemen
 > [!CAUTION]
 > Wie bereits erwähnt, erkundigen Sie sich bei ihrer Datensatzverwaltung oder Rechtsabteilung vor dem Entfernen eines haltebereichs aus einem Postfach. 
   
- ### <a name="litigation-hold"></a>Beweissicherungsverfahren
+ ### <a name="litigation-hold"></a>Aufbewahrung für eventuelle Rechtsstreitigkeiten
   
 Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um eine Beweissicherung aus dem Postfach zu entfernen.
 
@@ -190,7 +190,7 @@ Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den in-si
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
    
-Nachdem Sie den in-situ-Speicher identifiziert haben, können Sie die Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell verwenden, um das Postfach aus dem Haltebereich zu entfernen. Weitere Informationen finden Sie unter [erstellen oder Entfernen eines in-situ-](https://go.microsoft.com/fwlink/?linkid=852668)Speichers.
+Nachdem Sie den in-situ-Speicher identifiziert haben, können Sie die Exchange-Verwaltungskonsole (EAC) oder Exchange Online PowerShell verwenden, um das Postfach aus dem Haltebereich zu entfernen. Weitere Informationen finden Sie unter [Erstellen oder Entfernen eines Compliance-Archivs](https://go.microsoft.com/fwlink/?linkid=852668).
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>Office 365-Aufbewahrungsrichtlinien, die auf bestimmte Postfächer angewendet werden
   
@@ -273,7 +273,7 @@ Jetzt können Sie Elemente im Ordner "Wiederherstellbare Elemente" tatsächlich 
     
 - Elemente löschen, ohne Sie in ein Zielpostfach zu kopieren. 
     
-Beachten Sie, dass Elemente im Ordner "Wiederherstellbare Elemente" im primären Archivpostfach des Benutzers auch gelöscht werden, wenn Sie das Cmdlet " **Search-Mailbox** " ausführen. Um dies zu verhindern, können Sie die *DoNotIncludeArchive* -Option einbeziehen. Und wie bereits erwähnt, wenn die automatische Erweiterung der Archivierung für das Postfach aktiviert ist, löscht das * * Search-Mailbox * *-Cmdlet keine Elemente in einem zusätzlichen Archivpostfach. Weitere Informationen zum automatisch expandierenden Archiv finden Sie unter [Übersicht über die unbegrenzte Archivierung in Office 365](unlimited-archiving.md).
+Beachten Sie, dass Elemente im Ordner "Wiederherstellbare Elemente" im primären Archivpostfach des Benutzers auch gelöscht werden, wenn Sie das Cmdlet " **Search-Mailbox** " ausführen. Um dies zu verhindern, können Sie die Option  *DoNotIncludeArchive*  einschließen. Und wie bereits erwähnt, wenn die automatische Erweiterung der Archivierung für das Postfach aktiviert ist, löscht das * * Search-Mailbox * *-Cmdlet keine Elemente in einem zusätzlichen Archivpostfach. Weitere Informationen zum automatisch expandierenden Archiv finden Sie unter [Übersicht über die unbegrenzte Archivierung in Office 365](unlimited-archiving.md).
   
 > [!NOTE]
 > Wenn Sie eine Suchabfrage (durch Verwendung des Parameters  *SearchQuery*  ) einschließen, gibt das Cmdlet **Search-Mailbox** maximal 10.000 Elemente in den Suchergebnissen zurück. Wenn Sie also eine Suchabfrage einschließen, müssen Sie den Befehl **Search-Mailbox** möglicherweise mehrere Male ausführen, um mehr als 10.000 Elemente zu löschen. 
@@ -346,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
   
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Schritt 6: Zurücksetzen des Postfachs in den vorherigen Zustand
 
-Der letzte Schritt besteht darin, das Postfach wieder auf die vorherige Konfiguration zurückzusetzen. Dies ist das Zurücksetzen der Eigenschaften, die Sie in Schritt 2 geändert haben, und erneutes Anwenden der haltebereiche, die Sie in Schritt 3 entfernt haben. Hierzu gehören:
+Der letzte Schritt besteht darin, das Postfach wieder auf die vorherige Konfiguration zurückzusetzen. Dies ist das Zurücksetzen der Eigenschaften, die Sie in Schritt 2 geändert haben, und erneutes Anwenden der haltebereiche, die Sie in Schritt 3 entfernt haben. Dies umfasst Folgendes:
   
 - Ändern des Aufbewahrungszeitraums für gelöschte Elemente wieder auf den vorherigen Wert. Alternativ können Sie diese Einstellung nur auf 30 Tage festlegen, den Maximalwert in Exchange Online.
     
@@ -383,7 +383,7 @@ Führen Sie die folgenden Schritte (in der angegebenen Reihenfolge) in Exchange 
    
 4. Wenden Sie die in Schritt 3 entfernten haltebereiche erneut an. Verwenden Sie je nach Aufbewahrungs eines der folgenden Verfahren.
     
-    **Beweissicherungsverfahren**
+    **Aufbewahrung für eventuelle Rechtsstreitigkeiten**
     
     Führen Sie den folgenden Befehl aus, um die Beweissicherung für das Postfach erneut zu aktivieren.
     
@@ -432,9 +432,9 @@ Wie bereits erläutert, müssen Sie alle Haltestatus-und Office 365-Aufbewahrung
 |**Haltebereichstyp**|**Beispielwert**|**So identifizieren Sie den Haltestatus**|
 |:-----|:-----|:-----|
 |Beweissicherungsverfahren  <br/> | `True` <br/> |Die  *LitigationHoldEnabled*  -Eigenschaft wird festgelegt auf  `True`.  <br/> |
-|Compliance-Archiv  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der für das Postfach platziert wird. Sie können feststellen, dass dies ein in-situ-Speicher ist, da die GUID nicht mit einem Präfix beginnt.<br/> Sie können den `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Befehl in Exchange Online PowerShell verwenden, um Informationen zum in-situ-Speicher für das Postfach abzurufen.  <br/> |
-| Office 365-Aufbewahrungsrichtlinien im &amp; Security Compliance Center, die auf bestimmte Postfächer angewendet werden  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> oder  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Wenn Sie das Cmdlet **Get-Mailbox** ausführen, enthält die *InPlaceHolds* -Eigenschaft auch guids von Office 365-Aufbewahrungsrichtlinien, die auf das Postfach angewendet werden. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit `mbx` dem Präfix beginnt. Wenn die GUID der Aufbewahrungsrichtlinie mit dem `skp` Präfix beginnt, bedeutet dies, dass die Aufbewahrungsrichtlinie auf Skype for Business-Unterhaltungen angewendet wird.<br/> Führen Sie den folgenden Befehl in Security &amp; Compliance Center PowerShell aus, um die Office 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Entfernen Sie unbedingt das `mbx` Präfix oder `skp` , wenn Sie diesen Befehl ausführen.  <br/> |
-|Organisationsweite Office 365-Aufbewahrungsrichtlinien im Security &amp; Compliance Center  <br/> |Kein Wert  <br/> oder  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(gibt an, dass das Postfach von einer organisationsweiten Richtlinie ausgeschlossen ist)  <br/> |Auch wenn die *InPlaceHolds* -Eigenschaft beim Ausführen des Cmdlets **Get-Mailbox** leer ist, gibt es möglicherweise noch eine oder mehrere organisationsweite Office 365-Aufbewahrungsrichtlinien, die auf das Postfach angewendet werden.  <br/> Um dies zu überprüfen, können Sie `Get-OrganizationConfig | FL InPlaceHolds` den Befehl in Exchange Online PowerShell ausführen, um eine Liste der GUIDs für organisationsweite Office 365-Aufbewahrungsrichtlinien abzurufen. Die GUID für organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer `mbx` angewendet werden, beginnen mit dem Präfix; Beispiel `mbxa3056bb15562480fadb46ce523ff7b02`.<br/> Führen Sie den folgenden Befehl in Security &amp; Compliance Center PowerShell aus, um die organisationsweite Office 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Beachten Sie, dass, wenn ein Postfach von einer organisationsweiten Office 365-Aufbewahrungsrichtlinie ausgeschlossen wird, die GUID für die Aufbewahrungsrichtlinie in der *InPlaceHolds* -Eigenschaft des Postfachs des Benutzers angezeigt wird, wenn Sie das Cmdlet **Get-Mailbox** ausführen. Es wird durch das Präfix `-mbx`identifiziert; Zum Beispiel`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|eDiscovery-Fall in der Security &amp; Compliance Center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |Die *InPlaceHolds* -Eigenschaft enthält auch die GUID aller Haltestatus, der einem eDiscovery-Fall im &amp; Security Compliance Center zugeordnet ist, der möglicherweise im Postfach gespeichert wird. Sie können feststellen, dass dies eine eDiscovery-Groß-/Kleinschreibung ist, `UniH` da die GUID mit dem Präfix beginnt.<br/> Sie können das `Get-CaseHoldPolicy` Cmdlet im Security &amp; Compliance Center PowerShell verwenden, um Informationen über den eDiscovery-Fall abzurufen, dem das Postfach zugeordnet ist. Beispielsweise können Sie den Befehl `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` ausführen, um den Namen der Groß-/Kleinschreibung im Postfach anzuzeigen. Achten Sie darauf, das `UniH` Präfix zu entfernen, wenn Sie diesen Befehl ausführen.<br/><br/> Führen Sie die folgenden Befehle aus, um den eDiscovery-Fall zu identifizieren, dem das Postfach zugeordnet ist:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+|Compliance-Archiv  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der für das Postfach platziert wird. Sie können feststellen, dass dies ein in-situ-Speicher ist, da die GUID nicht mit einem Präfix beginnt.  <br/> Sie können den `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Befehl in Exchange Online PowerShell verwenden, um Informationen zum in-situ-Speicher für das Postfach abzurufen.  <br/> |
+| Office 365-Aufbewahrungsrichtlinien im &amp; Security Compliance Center, die auf bestimmte Postfächer angewendet werden  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> oder  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |Wenn Sie das Cmdlet **Get-Mailbox** ausführen, enthält die *InPlaceHolds* -Eigenschaft auch guids von Office 365-Aufbewahrungsrichtlinien, die auf das Postfach angewendet werden. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit `mbx` dem Präfix beginnt. Wenn die GUID der Aufbewahrungsrichtlinie mit dem `skp` Präfix beginnt, bedeutet dies, dass die Aufbewahrungsrichtlinie auf Skype for Business-Unterhaltungen angewendet wird.  <br/> Führen Sie den folgenden Befehl in Security &amp; Compliance Center PowerShell aus, um die Office 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Entfernen Sie die Präfix  `mbx` oder  `skp`, wenn Sie diesen Befehl ausführen.  <br/> |
+|Organisationsweite Office 365-Aufbewahrungsrichtlinien im Security &amp; Compliance Center  <br/> |Kein Wert  <br/> oder  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(gibt an, dass das Postfach von einer organisationsweiten Richtlinie ausgeschlossen ist)  <br/> |Auch wenn die *InPlaceHolds* -Eigenschaft beim Ausführen des Cmdlets **Get-Mailbox** leer ist, gibt es möglicherweise noch eine oder mehrere organisationsweite Office 365-Aufbewahrungsrichtlinien, die auf das Postfach angewendet werden.  <br/> Um dies zu überprüfen, können Sie `Get-OrganizationConfig | FL InPlaceHolds` den Befehl in Exchange Online PowerShell ausführen, um eine Liste der GUIDs für organisationsweite Office 365-Aufbewahrungsrichtlinien abzurufen. Die GUID für organisationsweite Aufbewahrungsrichtlinien, die auf Exchange-Postfächer `mbx` angewendet werden, beginnen mit dem Präfix; Beispiel `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> Führen Sie den folgenden Befehl in Security &amp; Compliance Center PowerShell aus, um die organisationsweite Office 365-Aufbewahrungsrichtlinie zu identifizieren, die auf das Postfach angewendet wird: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Beachten Sie, dass, wenn ein Postfach von einer organisationsweiten Office 365-Aufbewahrungsrichtlinie ausgeschlossen wird, die GUID für die Aufbewahrungsrichtlinie in der *InPlaceHolds* -Eigenschaft des Postfachs des Benutzers angezeigt wird, wenn Sie das Cmdlet **Get-Mailbox** ausführen. Es wird durch das Präfix `-mbx`identifiziert; Zum Beispiel`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|eDiscovery-Fall in der Security &amp; Compliance Center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |Die *InPlaceHolds* -Eigenschaft enthält auch die GUID aller Haltestatus, der einem eDiscovery-Fall im &amp; Security Compliance Center zugeordnet ist, der möglicherweise im Postfach gespeichert wird. Sie können erkennen, dass es sich hierbei um einen eDiscovery-Fall handelt, da die GUID mit dem Präfix  `UniH` beginnt.  <br/> Sie können das `Get-CaseHoldPolicy` Cmdlet im Security &amp; Compliance Center PowerShell verwenden, um Informationen über den eDiscovery-Fall abzurufen, dem das Postfach zugeordnet ist. Beispielsweise können Sie den Befehl `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` ausführen, um den Namen der Groß-/Kleinschreibung im Postfach anzuzeigen. Be sure to remove the  `UniH`, wenn Sie diesen Befehl ausführen.  <br/><br/> Führen Sie die folgenden Befehle aus, um den eDiscovery-Fall zu identifizieren, dem das Postfach zugeordnet ist:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

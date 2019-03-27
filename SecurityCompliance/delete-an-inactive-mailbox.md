@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Wenn Sie den Inhalt eines inaktiven Postfachs in Office 365 nicht mehr beibehalten müssen, können Sie das inaktive Postfach dauerhaft löschen, indem Sie den Haltebereich entfernen. Nach dem Entfernen des haltebereichs wird das inaktive Postfach zum Löschen markiert und nach der Verarbeitung dauerhaft gelöscht.
-ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 51f3181e77db2f36976f01f349f1c628f1e67bcf
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295738"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899984"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Löschen eines inaktiven Postfachs in Office 365
 
@@ -28,15 +28,15 @@ Ein inaktives Postfach wird verwendet, um die E-Mails eines ehemaligen Mitarbeit
 > [!IMPORTANT]
 > Wir haben den Stichtag (1. Juli 2017) zum Erstellen von neuem In-Situ-Speicher, um ein Postfach als inaktiv zu markieren, nach hinten verlegt. Ende dieses Jahres oder Anfang des nächsten Jahres können Sie keinen neuen In-Situ-Speicher in Exchange Online mehr erstellen. Es können dann nur noch das Beweissicherungsverfahren und Office 365-Aufbewahrungsrichtlinien zum Erstellen eines inaktiven Postfachs verwendet werden. Vorhandene inaktive Postfächer, die sich im In-Situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können weiterhin die In-Situ-Speicher für inaktive Postfächer verwalten. Dazu zählen das Ändern der Dauer eines In-Situ-Speichers sowie das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des In-Situ-Speichers. 
   
-Eine Beschreibung dessen, was geschieht, wenn Haltebereiche von einem inaktiven Postfach entfernt werden, finden Sie im Abschnitt [Weitere Informationen](delete-an-inactive-mailbox.md#moreinfo). 
+Eine Beschreibung dessen, was geschieht, wenn Haltebereiche von einem inaktiven Postfach entfernt werden, finden Sie im Abschnitt [Weitere Informationen](#more-information). 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen Exchange Online PowerShell verwenden, um eine Beweissicherung aus einem inaktiven Postfach zu entfernen. Die Exchange-Verwaltungskonsole kann nicht verwendet werden. Schrittweise Anleitungen finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Sie können Exchange Online PowerShell oder das EAC verwenden, um einen in-situ-Speicher aus einem inaktiven Postfach zu entfernen. 
+- Sie müssen Exchange Online PowerShell zum Entfernen eines Beweissicherungsverfahrens für ein inaktives Postfach verwenden. Sie können nicht die Exchange-Verwaltungskonsole (EAC) verwenden. Schrittweise Anleitungen finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Sie können die Exchange Online PowerShell oder die EAC verwenden, um einen In-Situ-Speicher von einem inaktiven Postfach zu entfernen. 
     
-- Sie können den Inhalt eines inaktiven Postfachs in ein anderes Postfach kopieren, bevor Sie den Haltebereich entfernen und ein inaktives Postfach löschen. Weitere Informationen finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](restore-an-inactive-mailbox.md).
+- Sie können die Inhalte eines inaktiven Postfachs in ein anderes Postfach kopieren, bevor Sie den Haltebereich entfernen und ein inaktives Postfach löschen. Weitere Informationen finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](restore-an-inactive-mailbox.md).
     
-- Wenn Sie den Haltestatus oder die Aufbewahrungsrichtlinie für Office 365 aus einem inaktiven Postfach entfernen und die Aufbewahrungsdauer für das Postfach für das gelöschte Postfach abgelaufen ist, wird das Postfach dauerhaft gelöscht. Nachdem Sie gelöscht wurde, kann Sie nicht wiederhergestellt werden. Stellen Sie vor dem Entfernen des haltebereichs sicher, dass Sie die Inhalte im Postfach nicht mehr benötigen. Wenn Sie ein inaktives Postfach erneut aktivieren möchten, können Sie es wiederherstellen. Weitere Informationen finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](recover-an-inactive-mailbox.md).
+- Wenn Sie den Haltebereich oder die Office 365-Aufbewahrungsrichtlinie für ein inaktives Postfach entfernen, während die Beibehaltungsdauer für das vorläufig gelöschte Postfach abgelaufen ist, wird das Postfach dauerhaft gelöscht. Nachdem es gelöscht wurde, kann es nicht wiederhergestellt werden. Stellen Sie vor dem Entfernen des Haltebereichs sicher, dass Sie die Inhalte im Postfach nicht mehr benötigen. Wenn Sie ein inaktives Postfach erneut aktivieren möchten, können Sie es wiederherstellen. Weitere Informationen finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](recover-an-inactive-mailbox.md).
     
 - Weitere Informationen zu inaktiven Postfächern finden Sie unter inAktive [Postfächer in Office 365](inactive-mailboxes-in-office-365.md).
     
@@ -67,7 +67,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 ```
 
 > [!TIP]
-> Wenn eine große Anzahl von in-situ-speichern in einem inaktiven Postfach platziert werden, werden nicht alle in-situ-halte-GUIDs angezeigt. Sie können den folgenden Befehl ausführen, um alle in-situ-Aufbewahrungs-GUIDs anzuzeigen:`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> Wenn viele In-Situ-Speicher für ein inaktives Postfach aktiviert werden, werden nicht alle In-Situ-Speicher-GUIDs angezeigt. Sie können den folgenden Befehl ausführen, um alle in-situ-Aufbewahrungs-GUIDs anzuzeigen:`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
 ## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>Schritt 2: Entfernen eines Haltebereichs von einem inaktiven Postfach
 
@@ -97,25 +97,25 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-the-eac-to-delete-an-in-place-hold"></a>Verwenden der EAC zum Löschen eines In-Situ-Speichers
 
-1. Wenn Sie den Namen des zu löschenden In-Situ-Speichers kennen, können Sie mit dem nächsten Schritt fortfahren. Andernfalls führen Sie den folgenden Befehl aus, um den Namen des In-Situ-Speichers abzurufen, der für das endgültig zu löschende inaktive Postfach aktiviert ist. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](delete-an-inactive-mailbox.md#step1) abgerufen haben.
+1. Wenn Sie den Namen des zu löschenden In-Situ-Speichers kennen, können Sie mit dem nächsten Schritt fortfahren. Andernfalls führen Sie den folgenden Befehl aus, um den Namen des In-Situ-Speichers abzurufen, der für das endgültig zu löschende inaktive Postfach aktiviert ist. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](#step-1-identify-the-holds-on-an-inactive-mailbox) abgerufen haben.
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. Navigieren Sie in EAC zu **Verwaltung der Richtlinientreue** \> **In-Situ-eDiscovery &amp; Haltebereich**.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Wählen Sie den in-situ-Speicher aus, den Sie löschen möchten **** ![, und klicken](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Sie dann auf Bearbeitungssymbol bearbeiten.
     
-4. Klicken Sie auf der Eigenschaftenseite für den **in &amp; -situ-eDiscovery-** Speicher auf **in-situ-** Speicherung, deaktivieren Sie das Kontrollkästchen Inhalt, der mit **der Suchabfrage in ausgewählten Postfächern übereinStimmt** , und klicken Sie dann auf **Speichern**.
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     
-5. Wählen Sie auf der Seite **in &amp; -situ-eDiscovery-Haltestatus** erneut den in-situ-Speicher aus, und](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)klicken Sie dann auf Löschsymbol **Löschen**![.
+5. On the **In-Place eDiscovery &amp; Hold** page, select the In-Place Hold again, and then click **Delete**![Delete icon](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
     
 6. Klicken Sie in der Warnung auf **Ja**, um den In-Situ-Speicher zu löschen. 
     
 #### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Verwenden von Exchange Online PowerShell zum Löschen eines In-Situ-Speichers
 
-1. Erstellen Sie eine Variable, die die Eigenschaften des zu löschenden In-Situ-Speichers enthält. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](delete-an-inactive-mailbox.md#step1) abgerufen haben.
+1. Erstellen Sie eine Variable, die die Eigenschaften des zu löschenden In-Situ-Speichers enthält. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](#step-1-identify-the-holds-on-an-inactive-mailbox) abgerufen haben.
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -135,17 +135,17 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Verwenden der EAC zum Entfernen eines inaktiven Postfachs aus einem In-Situ-Speicher
 
-1. Wenn Sie den Namen des In-Situ-Speichers kennen, der dem inaktiven Postfach zugeordnet ist, können Sie mit dem nächsten Schritt fortfahren. Führen Sie andernfalls den folgenden Befehl aus, um den Namen des In-Situ-Speichers abzurufen, der dem Postfach zugeordnet ist. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](delete-an-inactive-mailbox.md#step1) abgerufen haben.
+1. Wenn Sie den Namen des In-Situ-Speichers kennen, der dem inaktiven Postfach zugeordnet ist, können Sie mit dem nächsten Schritt fortfahren. Führen Sie andernfalls den folgenden Befehl aus, um den Namen des In-Situ-Speichers abzurufen, der dem Postfach zugeordnet ist. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](#step-1-identify-the-holds-on-an-inactive-mailbox) abgerufen haben.
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. Navigieren Sie in EAC zu **Verwaltung der Richtlinientreue** \> **In-Situ-eDiscovery &amp; Haltebereich**.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Wählen Sie den in-situ-Speicher für das inaktive Postfach aus, und **** ![klicken Sie dann](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)auf Bearbeitungssymbol bearbeiten.
     
-4. Klicken Sie auf der Eigenschaftenseite **in-situ-eDiscovery &amp; -Aufbewahrung** auf **Quellen**.
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **Sources**.
     
 5. Klicken Sie in der Liste der Quellpostfächer auf den Namen des inaktiven Postfachs, das Sie entfernen möchten, und dann auf **Entfernen**![Entfernen (Symbol)](media/adf01106-cc79-475c-8673-065371c1897b.gif).
     
@@ -157,7 +157,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 Wenn der In-Situ-Speicher eine große Anzahl von Postfächern enthält, ist das inaktive Postfach möglicherweise nicht auf der Seite **Quellen** in der Exchange-Verwaltungskonsole aufgelistet. Bis zu 3.000 Postfächer werden auf der Seite **Quellen** angezeigt, wenn Sie einen In-Situ-Speicher bearbeiten. Wenn ein inaktives Postfach nicht auf der Seite **Quellen** aufgelistet ist, können Sie Exchange Online PowerShell verwenden, um es aus dem In-Situ-Speicher zu entfernen. 
   
-1. Erstellen Sie eine Variable, die die Eigenschaften des In-Situ-Speichers enthält, der dem inaktiven Postfach zugeordnet ist. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](delete-an-inactive-mailbox.md#step1) abgerufen haben.
+1. Erstellen Sie eine Variable, die die Eigenschaften des In-Situ-Speichers enthält, der dem inaktiven Postfach zugeordnet ist. Verwenden Sie die In-Situ-Speicher-GUID, die Sie in [Schritt 1: Identifizieren der Haltebereiche für ein inaktives Postfach](#step-1-identify-the-holds-on-an-inactive-mailbox) abgerufen haben.
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -169,7 +169,7 @@ Wenn der In-Situ-Speicher eine große Anzahl von Postfächern enthält, ist das 
   $InPlaceHold.Sources
 ```
 
-   **Hinweis:** Die ** Sources-Eigenschaft des in-situ-Speichers identifiziert die Quellpostfächer anhand der *legacyExchangeDN* -Eigenschaften. Da diese Eigenschaft inaktive Postfächer eindeutig identifiziert ** , verhindert die Verwendung der Sources-Eigenschaft aus dem in-situ-Speicher das Entfernen des falschen Postfachs. Dadurch können auch Probleme vermieden werden, wenn zwei Postfächer denselben Alias oder dieselbe SMTP-Adresse aufweisen. 
+   **Hinweis:** Die ** Sources-Eigenschaft des in-situ-Speichers identifiziert die Quellpostfächer anhand der *legacyExchangeDN* -Eigenschaften. Da diese Eigenschaft inaktive Postfächer eindeutig identifiziert, können Sie mit der Eigenschaft *Sources* des In-Situ-Speichers verhindern, das falsche Postfach zu entfernen. Außerdem vermeiden Sie auch Probleme, wenn zwei Postfächer über denselben Alias oder dieselbe SMTP-Adresse verfügen. 
    
 3. Entfernen Sie das inaktive Postfach aus der Liste der Quellpostfächer in der Variablen. Achten Sie darauf, die Eigenschaft **LegacyExchangeDN** des inaktiven Postfachs zu verwenden, die von dem Befehl im vorherigen Schritt zurückgegeben wurde. 
     
@@ -209,9 +209,9 @@ Wenn der In-Situ-Speicher eine große Anzahl von Postfächern enthält, ist das 
     
 - **Wird ein inaktives Postfach sofort nach dem Entfernen des Haltebereichs dauerhaft gelöscht?** Wenn das Datum für vorläufig gelöschte Elemente für ein inaktives Postfach mehr als 30 Tage zurückliegt, wird das Postfach nicht sofort dauerhaft gelöscht, sobald Sie den Haltebereich entfernen. Das Postfach wird zum endgültigen Löschen markiert und bei der nächsten Verarbeitung gelöscht. 
     
-- **Wie wirkt sich die Beibehaltungsdauer für das weiche gelöschte Postfach auf inaktive Postfächer aus?** Wenn das Datum für die weiche Löschung für ein inaktives Postfach mehr als 30 Tage vor dem Datum liegt, an dem der Haltestatus entfernt wurde, wird das Postfach dauerhaft gelöscht. Wenn jedoch ein inaktives Postfach innerhalb der letzten 30 Tage ein Datum für die weiche Löschung aufweist und Sie den Haltestatus entfernt haben, können Sie das Postfach wiederherstellen, bis die Aufbewahrungsdauer für das weiche gelöschte Postfach abgelaufen ist. Weitere Informationen finden Sie unter [Löschen oder Wiederherstellen von Benutzerpostfächern in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Nach Ablauf der Aufbewahrungszeit für das weiche gelöschte Postfach müssen Sie die Verfahren zum Wiederherstellen eines inaktiven Postfachs ausführen. Weitere Informationen finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](recover-an-inactive-mailbox.md).
+- **Wie wirkt sich die Beibehaltungsdauer für das vorläufig gelöschte Postfach auf inaktive Postfächer aus?** Wenn das Datum für vorläufig gelöschte Elemente für ein inaktives Postfach über 30 Tage vor dem Datum liegt, an dem der Haltebereich entfernt wurde, wird das Postfach für die dauerhafte Löschung markiert. Wenn jedoch ein inaktives Postfach über ein Datum für das vorläufige Löschen innerhalb der letzten 30 Tage verfügt und Sie den Haltebereich entfernen, können Sie das Postfach bis zum Ablauf des Aufbewahrungszeitraums für das vorläufige Löschen wiederherstellen. Weitere Informationen finden Sie unter [Löschen oder Wiederherstellen von Benutzerpostfächern in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Nachdem die Beibehaltungsdauer für das vorläufig gelöschte Postfach abgelaufen ist, müssen Sie die Prozeduren für das Wiederherstellen eines inaktiven Postfachs befolgen. Weitere Informationen finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](recover-an-inactive-mailbox.md).
     
-- **Wie werden Informationen zu einem inaktiven Postfach angezeigt, nachdem der Haltebereich entfernt wurde?** Nachdem ein Haltebereich entfernt wurde und das inaktive Postfach wieder auf ein gelöschtes Postfach zurückgesetzt wurde, wird es nicht mithilfe des Parameters *InactiveMailboxOnly* mit dem Cmdlet **Get-Mailbox** zurückgegeben. Sie können jedoch Informationen über das Postfach mithilfe des Befehls **Get-Mailbox-SoftDeletedMailbox** anzeigen. Zum Beispiel: 
+- **Wie können Informationen über ein inaktives Postfach angezeigt werden, nachdem der Haltebereich entfernt wurde?** Nachdem ein Haltebereich entfernt wurde und das inaktive Postfach wieder auf ein gelöschtes Postfach zurückgesetzt wurde, wird es nicht mithilfe des Parameters *InactiveMailboxOnly* mit dem Cmdlet **Get-Mailbox** zurückgegeben. Sie können jedoch Informationen über das Postfach anzeigen, indem Sie den Befehl **Get-Mailbox -SoftDeletedMailbox** verwenden. Beispiel: 
     
 ```
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In

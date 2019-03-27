@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720275"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900094"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -73,7 +73,11 @@ Um das Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Komm
 Mit Aufsichtsrichtlinien können Sie Nachrichten auf einer oder mehreren der folgenden Kommunikationsplattformen überwachen:
 
 - **Exchange-e-Mail:** Postfächer, die als Teil Ihres Office 365-Abonnements in Exchange Online gehostet werden, sind alle für die Nachrichten Aufsicht berechtigt. E-Mails und Anhänge passender Aufsichtsrichtlinien Bedingungen stehen sofort für die Überwachung und in Aufsichtsberichten zur Verfügung. Unterstützte Anlagentypen für die Überwachung sind identisch mit den [Dateitypen, die für Exchange-Nachrichtenfluss Regel-Inhalts Prüfungen unterstützt](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)werden.
-- **Microsoft Teams:** Chatnachrichten und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelnen Chats können überwacht werden. Teams-Chats, die Aufsichtsrichtlinien Bedingungen entsprechen, werden alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung.
+- **Microsoft Teams:** Chatnachrichten und zugehörige Anlagen in öffentlichen und privaten Microsoft Teams-Kanälen und einzelnen Chats können überwacht werden. Teams-Chats, die Aufsichtsrichtlinien Bedingungen entsprechen, werden alle 24 Stunden verarbeitet und stehen dann für die Überwachung und in Aufsichtsberichten zur Verfügung. Verwenden Sie die folgenden Gruppen Verwaltungs Konfigurationen, um einzelne Benutzer Chats und die Kanal Kommunikation in Teams effektiv zu überwachen:
+
+    - **Für Teams Chat Aufsicht:** Sie müssen einzelne Benutzer zuweisen oder der Aufsichtsrichtlinie eine [Verteilergruppe](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) zuweisen. Dies gilt für 1-zu-1-oder 1: n-Benutzer/Chat-Beziehungen.
+    - **Für Teams-Kanal Kommunikation:** Sie müssen jeder Microsoft Team-Kanal-oder Office 365-Gruppe, die Sie überwachen möchten, einen bestimmten Benutzer der Aufsichtsrichtlinie zuweisen. Wenn Sie denselben Benutzer zu zusätzlichen Microsoft Teams-Kanälen oder zu Office 365-Gruppen hinzufügen, müssen Sie diese neuen Kanäle und Gruppen auch der Aufsichtsrichtlinie hinzufügen.
+
 - **Drittanbieterquellen:** Sie können die Kommunikation von Drittanbieter-Quellen überwachen (wie bei Facebook oder DropBox), wenn Sie diese Daten in Office 365-Postfächern in Ihrer Organisation importiert haben. [Informationen zum Importieren von drittanbieterdaten in Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
 ### <a name="policy-settings"></a>Richtlinieneinstellungen

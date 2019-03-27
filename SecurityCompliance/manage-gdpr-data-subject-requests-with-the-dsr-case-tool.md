@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Der DSGVO gibt EU-Bürgern (als betroffene Personen bezeichnet) spezifische Rechte für Ihre persönlichen Daten; zu diesen Rechten gehört das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen in einem elektronischen Format. Eine formelle Anforderung durch eine betroffene Person, eine Aktion zu Ihren personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Office 365 Security &amp; Compliance Center verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
-ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296588"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900144"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Office 365 &amp; Security Compliance Center
 
@@ -56,7 +56,7 @@ Mit dem DSR Case Tool können Sie Folgendes tun:
     
 Hier ist der allgemeine Prozess für die Verwendung des DSR-Fall Tools zur Verwaltung von DSR-Untersuchungen:
   
-[Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Schritt 2: Erstellen eines DSR-Falls und Hinzufügen von Mitgliedern](#step-2-create-a-dsr-case-and-add-members)
 
@@ -103,7 +103,7 @@ Der nächste Schritt besteht darin, einen DSR-Fall zu erstellen. Wenn Sie einen 
   
     Zu diesem Zeitpunkt können Sie eine der folgenden Aktionen ausführen:
     
-    a. durch Klicken auf **Zeige mir Suchergebnisse** wird die Suche gestartet. Dies ist die Standardauswahl. Die integrierte Suche, die ausgeführt wird, wenn Sie diese Option auswählen, und die zurückgegebenen Ergebnisse werden in Schritt 3 erläutert.
+    a. Wenn Sie auf **Suchergebnisse anzeigen klicken,** wird die Suche gestartet. Dies ist die Standardauswahl. Die integrierte Suche, die ausgeführt wird, wenn Sie diese Option auswählen, und die zurückgegebenen Ergebnisse werden in Schritt 3 erläutert.
     
     b. Wenn Sie auf **Fertig stellen** klicken, wird der neue DSR-Fall geschlossen, ohne die integrierte Suche zu starten. Wenn Sie diese Option auswählen, wird der neue DSR-Fall auf der Seite **Datensubjekt Anforderungen** angezeigt.
     
@@ -198,7 +198,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
     ![Konfigurieren der Exporteinstellungen](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    a. Wählen Sie unter **Ausgabeoptionen**die erste Option aus ( **alle Elemente, ausgenommen solche, die über ein unbekanntes Format verfügen, verschlüsselt oder aus anderen Gründen nicht indiziert**wurden), um nur indizierte Elemente zu exportieren. Der Grund, warum Sie nicht teilweise indizierte Elemente aus der integrierten Suche exportieren möchten, liegt darin, dass teilweise indizierte Elemente von anderen Benutzern exportiert werden. Wenn Sie nur die teilweise indizierten Elemente für die betroffene Person exportieren möchten, wird empfohlen, eine separate Suche zu erstellen. Weitere Informationen finden Sie unter [exportieren teilweise indizierter Elemente](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) im Abschnitt "Weitere Informationen zur Verwendung des DSR Case-Tools".
+    a. Wählen Sie unter **Ausgabeoptionen**die erste Option aus ( **alle Elemente, ausgenommen solche, die über ein unbekanntes Format verfügen, verschlüsselt oder aus anderen Gründen nicht indiziert**wurden), um nur indizierte Elemente zu exportieren. Der Grund, warum Sie nicht teilweise indizierte Elemente aus der integrierten Suche exportieren möchten, liegt darin, dass teilweise indizierte Elemente von anderen Benutzern exportiert werden. Wenn Sie nur die teilweise indizierten Elemente für die betroffene Person exportieren möchten, wird empfohlen, eine separate Suche zu erstellen. Weitere Informationen finden Sie unter [exportieren teilweise indizierter Elemente](#exporting-partially-indexed-items) im Abschnitt "Weitere Informationen zur Verwendung des DSR Case-Tools".
     
     b. Wählen Sie unter **Exchange-Inhalt exportieren als**die dritte Option aus, **eine PST-Datei, die alle Nachrichten in einem einzelnen Ordner enthält**. Da einige der Ergebnisse möglicherweise für Elemente vorhanden sind, die aus dem Postfach eines anderen Benutzers stammen, wird diese Option nur das Element in einem einzelnen Ordner aufgelistet, ohne das tatsächliche Postfach anzugeben, und ist die beste Option, die Sie verwenden können, wenn Sie die im nächsten Artikel empfohlenen Ergebnisse deaktivieren. . Diese Option ermöglicht es der betroffenen Person auch, Elemente in chronologischer Reihenfolge zu überarbeiten (Elemente werden nach gesendetem Datum sortiert), ohne dass Sie in der ursprünglichen Postfachordnerstruktur für jedes Element navigieren müssen.
     
@@ -214,7 +214,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
     
 7. Klicken Sie auf den soeben erstellten Exportauftrag, um die Seite zum Exportieren des Flyouts anzuzeigen. Auf dieser Seite werden Informationen zur Suche angezeigt, beispielsweise die Größe und die Gesamtzahl der zu exportierenden Elemente sowie der Prozentsatz der Elemente, die in einen Azure-Speicherbereich übertragen wurden. Klicken Sie auf **Aktualisieren** , um die Informationen zum Uploadstatus zu aktualisieren. 
     
-8. Klicken Sie unter **Schlüssel exportieren**auf **in Zwischenablage kopieren**. Sie werden diesen Schlüssel in Schritt 11 verwenden, um die Suchergebnisse herunterzuladen.
+8. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie werden diesen Schlüssel in Schritt 11 verwenden, um die Suchergebnisse herunterzuladen.
     
 9. Klicken ![Sie oben auf der](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Seite zum Exportieren des Flyouts auf Suchergebnis Symbol- **Download Ergebnisse** exportieren. 
     
@@ -235,7 +235,7 @@ Nachdem die Daten exportiert wurden, befinden sich die Suchergebnisse und Export
   
 ## <a name="optional-step-5-revise-the-built-in-search-query"></a>Optional Schritt 5: überArbeiten der integrierten Suchabfrage
 
-Nachdem Sie die integrierte Suche ausgeführt haben, können Sie Sie überarbeiten, um den Bereich so einzugrenzen, dass weniger Suchergebnisse zurückgegeben werden. Hierzu fügen Sie der Abfragebedingungen hinzu. Eine Bedingung ist logisch mit der Schlüsselwortabfrage vom **and-** Operator verbunden. Das muss in den Suchergebnissen zurückgegeben werden, Elemente müssen sowohl die Stichwortabfrage als auch alle hinzugefügten Bedingungen erfüllen. Auf diese Weise können Sie die Ergebnisse einschränken. Wenn Sie zwei oder mehr eindeutige Bedingungen zu einer Suchabfrage hinzufügen (Bedingungen, die verschiedene Eigenschaften angeben), werden diese Bedingungen logisch mit dem **and-** Operator verbunden. Dies führt dazu, dass nur Elemente zurückgegeben werden, die alle Bedingungen (zusätzlich zur Stichwortabfrage) erfüllen. Wenn Sie mehrere Werte (durch Kommas oder Semikolons getrennt) einer einzelnen Bedingung hinzufügen, werden diese Werte durch den **or** -Operator verbunden. Das Ergebnis ist, dass Elemente zurückgegeben werden, wenn Sie einen der angegebenen Werte für die Eigenschaft in der Bedingung enthalten. 
+Nachdem Sie die integrierte Suche ausgeführt haben, können Sie Sie überarbeiten, um den Bereich so einzugrenzen, dass weniger Suchergebnisse zurückgegeben werden. Hierzu fügen Sie der Abfragebedingungen hinzu. Eine Bedingung ist logisch mit der Schlüsselwortabfrage vom **and-** Operator verbunden. Das muss in den Suchergebnissen zurückgegeben werden, Elemente müssen sowohl die Stichwortabfrage als auch alle hinzugefügten Bedingungen erfüllen. Auf diese Weise können Sie die Ergebnisse einschränken. Wenn Sie zwei oder mehr eindeutige Bedingungen zu einer Suchabfrage hinzufügen (Bedingungen, die verschiedene Eigenschaften angeben), werden diese Bedingungen logisch mit dem **and-** Operator verbunden. Dies führt dazu, dass nur Elemente zurückgegeben werden, die alle Bedingungen (zusätzlich zur Stichwortabfrage) erfüllen. Wenn Sie mehrere Werte (durch Kommas oder Semikolons getrennt) einer einzelnen Bedingung hinzufügen, werden diese Werte durch den **or** -Operator verbunden. Das bedeutet, es werden Elemente zurückgegeben, die einen der angegebenen Werte für die Eigenschaft in der Bedingung enthalten. 
   
 Im folgenden finden Sie einige Beispiele für die Bedingungen, die Sie der integrierten Suchabfrage eines DSR-Gehäuses hinzufügen können. Der Name der tatsächlichen Eigenschaft, die in einer Suchabfrage verwendet wird, wird in Klammern angezeigt.
   
@@ -263,11 +263,11 @@ So ändern Sie die inhaltsspeicherorte für die Suche:
     
     ![Flyout-Seite "Speicherorte ändern"](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-    a. die Umschaltfläche **Wählen Sie unter alles** in Postfach auswählen oben auf der Seite Flyout aus, wodurch angegeben wird, dass alle Postfächer durchsucht werden. Klicken Sie zum Einschränken des Suchbereichs auf die Umschaltfläche, um die Auswahl zu deaktivieren, und klicken Sie dann auf **Benutzer, Gruppen oder Teams auswählen** , und wählen Sie bestimmte Postfächer für die Suche aus.
+    a. Die Umschaltfläche **Wählen Sie unter alles** in Postfach auswählen oben auf der Seite Flyout aus, wodurch angegeben wird, dass alle Postfächer durchsucht werden. Klicken Sie zum Einschränken des Suchbereichs auf die Umschaltfläche, um die Auswahl zu deaktivieren, und klicken Sie dann auf **Benutzer, Gruppen oder Teams auswählen** , und wählen Sie bestimmte Postfächer für die Suche aus.
     
-    b. die Umschaltfläche **Wählen Sie unter Alle auswählen** im Abschnitt Websites in der Mitte der Seite Flyout aus, wodurch angegeben wird, dass alle Websites durchsucht werden. Wenn Sie die Suche auf ausgewählte Websites einschränken möchten, heben Sie die Auswahl der Umschaltfläche auf, und klicken Sie dann auf **Websites auswählen**. Sie müssen jede bestimmte Website hinzufügen, die Sie durchsuchen möchten, einschließlich des OneDrive-Kontos des betroffenen.
+    b. Die Umschaltfläche **Wählen Sie unter Alle auswählen** im Abschnitt Websites in der Mitte der Seite Flyout aus, wodurch angegeben wird, dass alle Websites durchsucht werden. Wenn Sie die Suche auf ausgewählte Websites einschränken möchten, heben Sie die Auswahl der Umschaltfläche auf, und klicken Sie dann auf **Websites auswählen**. Sie müssen jede bestimmte Website hinzufügen, die Sie durchsuchen möchten, einschließlich des OneDrive-Kontos des betroffenen.
     
-    c. die Umschaltfläche im Abschnitt Öffentliche Exchange-Ordner wird ausgewählt, was bedeutet, dass alle öffentlichen Exchange-Ordner durchsucht werden. Beachten Sie, dass Sie nur alle öffentlichen Exchange-Ordner oder keine dieser Dateien durchsuchen können. Sie können keine bestimmten suchen.
+    c. Die Umschaltfläche im Abschnitt Öffentliche Exchange-Ordner wird ausgewählt, was bedeutet, dass alle öffentlichen Exchange-Ordner durchsucht werden. Beachten Sie, dass Sie nur alle öffentlichen Exchange-Ordner oder keine dieser Dateien durchsuchen können. Sie können keine bestimmten suchen.
     
 3. Wenn Sie die inhaltsspeicherorte in der integrierten Suche ändern, klicken Sie **auf &amp; ausführen** , um die Suche erneut zu starten. 
   
@@ -340,7 +340,7 @@ Wenn Sie Daten aus myAnalytics und dem Office Server-Roaming-Dienst exportieren,
     
     b. Wählen Sie unter **Exchange-Inhalt exportieren als**die zweite Option aus, **eine PST-Datei, die alle Nachrichten enthält**.
     
-    c. lassen Sie die restlichen Exportoptionen nicht ausgewählt.
+    c. Lassen Sie die restlichen Exportoptionen nicht ausgewählt.
     
 4. Klicken Sie nach Auswahl der Exporteinstellungen auf **exportieren**.
     
@@ -350,7 +350,7 @@ Wenn Sie Daten aus myAnalytics und dem Office Server-Roaming-Dienst exportieren,
     
 6. Klicken Sie auf den soeben erstellten Exportauftrag, um die Seite zum Exportieren des Flyouts anzuzeigen. 
     
-7. Klicken Sie unter **Schlüssel exportieren**auf **in Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 10, um die Suchergebnisse herunterzuladen.
+7. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 10, um die Suchergebnisse herunterzuladen.
     
 8. Klicken ![Sie oben auf der](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) Seite zum Exportieren des Flyouts auf Suchergebnis Symbol- **Download Ergebnisse** exportieren. 
     
@@ -425,4 +425,4 @@ Hier finden Sie eine allgemeine Vorgehensweise zum Suchen nach Elementen, die de
 
   - Durchsuchen aller öffentlichen Exchange-Ordner
     
-  - Nachdem Sie die Suche ausgeführt und abgeschlossen haben, können Sie die Suchergebnisse exportieren und herunterladen (wie in [Schritt 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)beschrieben). Verwenden Sie die folgenden Einstellungen, um teilweise indizierte Elemente zu exportieren. 
+  - Nachdem Sie die Suche ausgeführt und abgeschlossen haben, können Sie die Suchergebnisse exportieren und herunterladen (wie in [Schritt 4](#step-4-export-the-data)beschrieben). Verwenden Sie die folgenden Einstellungen, um teilweise indizierte Elemente zu exportieren. 

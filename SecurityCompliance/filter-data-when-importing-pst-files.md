@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Verwenden Sie die neue intelligente Importfunktion im Office 365-Import Dienst, um die Elemente zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Mit dem intelligenten Import können Sie proaktiv entscheiden, welche Daten importiert und welche hinterlassen werden sollen. Der intelligente Import bietet außerdem Einblicke in die Daten, die Sie in Office 365 importieren. '
-ms.openlocfilehash: 6091f6cca75bffbb05bcd59f70cfae0dbdcb9040
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 60177908f48c6de28578f8d8ba6329fb1bf8cb47
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297068"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900034"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtern von Daten beim Importieren von PST-Dateien in Office 365
 
@@ -47,7 +47,7 @@ Die folgende Grafik zeigt den intelligenten Import Prozess und hebt die Aufgaben
 
 - Bei den Schritten in diesem Thema wird davon ausgegangen, dass Sie einen PST-Importauftrag im Office 365-Import Dienst mithilfe des Netzwerk-Uploads oder des Laufwerk Versands erstellt haben. Schrittweise Anleitungen finden Sie in einem der folgenden Themen:
     
-  - [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien in Office 365](use-network-upload-to-import-pst-files.md)
+  - [Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien in Office 365](use-network-upload-to-import-pst-files.md)
     
   - [Verwenden des Laufwerkversands zum Importieren von PST-Dateien in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
@@ -87,28 +87,28 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
   
     Das Diagramm auf dieser Seite zeigt die Menge der Daten an, die importiert werden. Informationen zu den einzelnen Nachrichtentypen in den PST-Dateien werden im Diagramm angezeigt. Sie können den Mauszeiger über die einzelnen Balken bewegen, um bestimmte Informationen zu diesem Nachrichtentyp anzuzeigen. Es gibt auch eine Dropdownliste mit unterschiedlichen Alters Werten basierend auf der Analyse der PST-Dateien. Wenn Sie in der Dropdownliste ein Alter auswählen, wird das Diagramm aktualisiert, um anzuzeigen, wie viele Daten für das ausgewählte Alter importiert werden. 
     
-    b. zum Konfigurieren von Zusatz Filtern zum Verringern der importierten Datenmenge klicken Sie auf **Weitere Filteroptionen**.
+    b. Klicken Sie auf **Weitere Filteroptionen**, um zusätzliche Filter zu konfigurieren, um die Menge der importierten Daten zu reduzieren.
     
     ![Konfigurieren der Filter auf der Seite Weitere Optionen zum Kürzen der importierten Daten](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     Sie können diese Filter konfigurieren:
     
-      - **Age** – wählen Sie ein Alter aus, sodass nur Elemente importiert werden, die neuer als das angegebene Alter sind. Im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) finden Sie eine Beschreibung dazu, wie Office 365 die Age-Buckets für den **Age** -Filter bestimmt. 
+      - **Age** – wählen Sie ein Alter aus, sodass nur Elemente importiert werden, die neuer als das angegebene Alter sind. Im Abschnitt [Weitere Informationen](#more-information) finden Sie eine Beschreibung dazu, wie Office 365 die Age-Buckets für den **Age** -Filter bestimmt. 
     
-      - **Type** -dieser Abschnitt enthält alle Nachrichtentypen, die in den PST-Dateien für den Importauftrag gefunden wurden. Sie können das Kontrollkästchen neben einem Nachrichtentyp deaktivieren, den Sie ausschließen möchten. Beachten Sie, dass Sie den anderen Nachrichtentyp nicht ausschließen können. Im Abschnitt [Weitere Informationen](filter-data-when-importing-pst-files.md#moreinfo) finden Sie eine Liste der Postfachelemente, die in der anderen Kategorie enthalten sind. 
+      - **Type** -dieser Abschnitt enthält alle Nachrichtentypen, die in den PST-Dateien für den Importauftrag gefunden wurden. Sie können das Kontrollkästchen neben einem Nachrichtentyp deaktivieren, den Sie ausschließen möchten. Beachten Sie, dass Sie den anderen Nachrichtentyp nicht ausschließen können. Im Abschnitt [Weitere Informationen](#more-information) finden Sie eine Liste der Postfachelemente, die in der anderen Kategorie enthalten sind. 
     
       - **Benutzer** – Sie können Nachrichten ausschließen, die von bestimmten Personen gesendet oder empfangen werden. Wenn Sie Personen ausschließen möchten, die im Feld from:, to: Field oder im Feld CC: von Nachrichten angezeigt werden, klicken Sie neben diesem Empfängertyp auf **Benutzer ausschließen** . Geben Sie die e-Mail-Adresse (SMTP-Adresse) der Person ein](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) , klicken Sie auf neues Symbol **Hinzufügen**![, um Sie der Liste der ausgeschlossenen Benutzer für diesen Empfängertyp hinzuzufügen, und klicken Sie dann auf **Speichern** , um die Liste der ausgeschlossenen Benutzer zu speichern. 
     
         > [!NOTE]
         > In Office 365 werden keine Daten Einblicke angezeigt, die sich aus dem Festlegen des **Personen** Filters ergeben. Wenn Sie diesen Filter jedoch so festlegen, dass Nachrichten, die von bestimmten Personen gesendet oder empfangen werden, ausgeschlossen werden, werden diese Nachrichten während des tatsächlichen Importvorgangs ausgeschlossen. 
   
-    c. Klicken Sie in der Seite **Weitere Filteroptionen** fliegen auf über **nehmen** , um die Filtereinstellungen zu speichern. 
+    c. Klicken **** Sie auf der Seite **Weitere Filteroptionen** fliegen, um die Filtereinstellungen zu speichern. 
     
     Die Daten Einblicke auf die Seite **Import Data to Office 365** werden basierend auf Ihren Filtereinstellungen aktualisiert, einschließlich der Gesamtmenge der Daten, die basierend auf den Filtereinstellungen importiert werden. Beachten Sie, dass auch eine Zusammenfassung der Filtereinstellungen angezeigt wird. Sie können neben einem Filter auf **Bearbeiten** klicken, um die Einstellung bei Bedarf zu ändern. 
     
     ![Die Daten Einblicke werden basierend auf Ihren Filtereinstellungen aktualisiert.](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. Klicken Sie auf **weiter**.
+    d. Klicken Sie auf **Weiter**.
     
     Eine Statusseite mit den Filtereinstellungen wird angezeigt. Sie können auch die Filtereinstellungen bearbeiten.
     
@@ -131,16 +131,16 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
     
 - In der folgenden Tabelle sind die Nachrichtentypen aufgeführt, die in der **anderen** Kategorie im **** Feld Typfilter auf der Seite **Weitere Optionen** fliegen enthalten sind (siehe Schritt 5B im vorherigen Verfahren). Derzeit können Sie Elemente in der Kategorie "Sonstiges" nicht ausschließen, wenn Sie PST in Office 365 importieren. 
     
-    |**Nachrichtenklassen-ID**|**Postfachelemente, die diese Nachrichtenklasse verwenden**|
+    |**ID der Nachrichtenklasse**|**Postfachelemente, die diese Nachrichtenklasse verwenden**|
     |:-----|:-----|
-    |IPM. Aktivität  <br/> |Journal Einträge  <br/> |
-    |IPM. Dokument  <br/> |Dokumente und Dateien (nicht an eine e-Mail-Nachricht angefügt)  <br/> |
+    |IPM.Activity  <br/> |Journaleinträge  <br/> |
+    |IPM.Document  <br/> |Dokumente und Dateien (nicht an eine e-Mail-Nachricht angefügt)  <br/> |
     |IPM. Datei  <br/> |(identisch mit IPM. Dokument  <br/> |
-    |IPM. Hinweis. IMC. Notification  <br/> |Von Internet Mail Connect gesendete Berichte, die das Exchange Server-Gateway zum Internet sind  <br/> |
+    |IPM.Note.IMC.Notification  <br/> |Von Internet Mail Connect gesendete Berichte, die das Exchange Server-Gateway zum Internet sind  <br/> |
     |IPM. Hinweis. Microsoft. Fax  <br/> |Faxnachrichten  <br/> |
     |IPM. Hinweis. Rules. OOF. Template. Microsoft  <br/> |Abwesenheitsnachrichten für automatische Antworten  <br/> |
-    |IPM. Hinweis. Rules. ReplyTemplate. Microsoft  <br/> |Von einer Posteingangsregel gesendete Antworten  <br/> |
-    |IPM. OLE. Klasse  <br/> |Ausnahmen für eine wiederkehrende Serie  <br/> |
-    |IPM. ReCall. Report  <br/> |Nachrichtenrückruf Berichte  <br/> |
-    |IPM. Remote  <br/> |Remote-e-Mail-Nachrichten  <br/> |
-    |IPM. Bericht  <br/> |Elementstatus Berichte  <br/> |
+    |IPM.Note.Rules.ReplyTemplate.Microsoft  <br/> |Von einer Posteingangsregel gesendete Antworten  <br/> |
+    |IPM.OLE.Class  <br/> |Ausnahmen für eine wiederkehrende Serie  <br/> |
+    |IPM.Recall.Report  <br/> |Berichte zum Nachrichtenrückruf  <br/> |
+    |IPM.Remote  <br/> |Remote-e-Mail-Nachrichten  <br/> |
+    |IPM.Report  <br/> |Elementstatus Berichte  <br/> |

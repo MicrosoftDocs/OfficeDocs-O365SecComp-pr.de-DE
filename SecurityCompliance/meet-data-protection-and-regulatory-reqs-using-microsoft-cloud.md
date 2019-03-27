@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296838"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900174"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten
 
@@ -385,7 +385,7 @@ Bestimmte Vorschriften erfordern, dass eine Organisation in der Lage sein muss, 
   
 - [Suchen eines Benutzers](#search-for-a-user)
 
-- [Exportieren eines Berichts mit Kontoverlaufsdaten](#export-report-of-account-data-history)
+- [Exportieren eines Berichts mit Kontoverlaufsdaten](#export-a-report-of-account-data-history)
 
 - [Erneutes Zuweisen von Aktionselementen](#reassign-action-items)
 
@@ -512,9 +512,9 @@ So fügen Sie eine Bewertung zu Compliance-Manager hinzu
   
 1. Klicken Sie im Compliance-Manager-Dashboard auf ![Symbol zum Hinzufügen](media/ITPro-EAC-AddIcon.gif) **Bewertung hinzufügen**. 
     
-2. Im Fenster **Bewertung hinzufügen** können Sie eine neue Gruppe zum Hinzufügen der Bewertung erstellen, oder Sie können die Bewertung zu einer vorhandenen Gruppe hinzufügen (die integrierte Gruppe trägt den Namen „Erste Gruppe“). Je nachdem, welche Option Sie auswählen, geben Sie entweder den Namen einer neuen Gruppe ein, oder wählen Sie eine vorhandene Gruppe aus der Dropdownliste aus. Weitere Informationen finden Sie unter [Gruppieren von Bewertungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
+2. Im Fenster **Bewertung hinzufügen** können Sie eine neue Gruppe zum Hinzufügen der Bewertung erstellen, oder Sie können die Bewertung zu einer vorhandenen Gruppe hinzufügen (die integrierte Gruppe trägt den Namen „Erste Gruppe“). Je nachdem, welche Option Sie auswählen, geben Sie entweder den Namen einer neuen Gruppe ein, oder wählen Sie eine vorhandene Gruppe aus der Dropdownliste aus. Weitere Informationen finden Sie unter [Gruppieren von Bewertungen](#grouping-assessments).
     
-    Wenn Sie eine neue Gruppe erstellt haben, haben Sie auch die Möglichkeit, Informationen aus einer vorhandenen Gruppe in die neue Bewertung zu kopieren. Dies bedeutet, dass alle Informationen, die den Feldern für die Implementierungsdetails, den Testplan und die Verwaltungsantwort von vom Kunden verwalteten Steuerelementen aus Bewertungen in der Gruppe hinzugefügt wurden, aus der Sie Informationen kopieren, in dieselben (oder verknüpften) vom Kunden verwalteten Steuerelemente in der neuen Bewertung kopiert werden. Weitere Informationen finden Sie unter [Kopieren von Informationen aus vorhandenen Bewertungen](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying).
+    Wenn Sie eine neue Gruppe erstellt haben, haben Sie auch die Möglichkeit, Informationen aus einer vorhandenen Gruppe in die neue Bewertung zu kopieren. Dies bedeutet, dass alle Informationen, die den Feldern für die Implementierungsdetails, den Testplan und die Verwaltungsantwort von vom Kunden verwalteten Steuerelementen aus Bewertungen in der Gruppe hinzugefügt wurden, aus der Sie Informationen kopieren, in dieselben (oder verknüpften) vom Kunden verwalteten Steuerelemente in der neuen Bewertung kopiert werden. Weitere Informationen finden Sie unter [Kopieren von Informationen aus vorhandenen Bewertungen](#copying-information-from-existing-assessments).
     
 3. Klicken Sie auf **Weiter**, und gehen Sie folgendermaßen vor:
     
@@ -554,7 +554,7 @@ In ähnlicher Weise werden Informationen aus freigegebenen vom Kunden verwaltete
   
 1. In diesem Abschnitt wird die Bewertungszusammenfassung, einschließlich des Namens der Bewertungsgruppierung, des Produkts, des Bewertungsnamens und der Anzahl von Bewertungssteuerelementen, angezeigt.
     
-2. In diesem Abschnitt werden die Steuerelemente für den Bewertungsfilter angezeigt. Eine ausführlichere Erläuterung der Verwendung von Steuerelementen für den Bewertungsfilter finden Sie im Abschnitt [Verwalten des Bewertungsprozesses](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1). 
+2. In diesem Abschnitt werden die Steuerelemente für den Bewertungsfilter angezeigt. Eine ausführlichere Erläuterung der Verwendung von Steuerelementen für den Bewertungsfilter finden Sie im Abschnitt [Verwalten des Bewertungsprozesses](#managing-the-assessment-process). 
     
 3. In diesem Abschnitt werden die einzelnen Clouddienste dargestellt, die sich im Bereich der Bewertung befinden.
     
@@ -562,7 +562,7 @@ In ähnlicher Weise werden Informationen aus freigegebenen vom Kunden verwaltete
     
 5. Dieser Abschnitt enthält vom Kunden verwaltete Steuerelemente, die auch nach Steuerelementfamilie organisiert werden. Klicken Sie auf eine Steuerelementfamilie, um diese zu erweitern und die einzelnen Steuerelemente anzuzeigen.
     
-6. Zeigt die Gesamtzahl der Steuerelemente in der Steuerelementfamilie an und wie viele dieser Steuerelemente bewertet wurden. Eine wichtige Funktion von Compliance-Manager ist die Nachverfolgung des Fortschritts der Organisation im Hinblick auf die Bewertung der vom Benutzer verwalteten Steuerelemente. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zur Compliance-Bewertung](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore). 
+6. Zeigt die Gesamtzahl der Steuerelemente in der Steuerelementfamilie an und wie viele dieser Steuerelemente bewertet wurden. Eine wichtige Funktion von Compliance-Manager ist die Nachverfolgung des Fortschritts der Organisation im Hinblick auf die Bewertung der vom Benutzer verwalteten Steuerelemente. Weitere Informationen finden Sie im Abschnitt [Grundlegendes zur Compliance-Bewertung](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Verwaltung des Bewertungsprozesses
 
