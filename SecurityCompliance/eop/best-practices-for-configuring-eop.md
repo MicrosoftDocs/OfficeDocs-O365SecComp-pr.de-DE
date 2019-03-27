@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten.
-ms.openlocfilehash: e9bd83c8b38a20ae0ced4300648461c0cb135e4b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693184"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900184"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Bewährte Methoden für das Konfigurieren von EOP
   
@@ -102,8 +102,6 @@ Behandeln allgemeiner Probleme und Trends mithilfe der Berichte im Admin Center.
 [EOP - Allgemeine häufig gestellte Fragen](eop-general-faq.md)
   
 [Hilfe und Support für EOP](help-and-support-for-eop.md)
-  
-[Videos für erste Schritte mit EOP](videos-for-getting-started-with-eop.md)
   
 [So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   

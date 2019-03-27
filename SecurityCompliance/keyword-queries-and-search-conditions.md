@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online-Postfächern und in SharePoint oder OneDrive for Business-Websites mithilfe &amp; des Tools für die Inhaltssuche im Office 365 Security Compliance Center durchsuchen können.  '
-ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ec8f5c049fbaaa6cc17049154774faa128d2f18d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639162"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900204"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -76,7 +76,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|**Beispiel**|**Von den Beispielen zurückgegebene Suchergebnisse**|
 |:-----|:-----|:-----|:-----|
-|Autor|Das Author-Feld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und es an eine andere Person sendet, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`author:"Garth Fort"`|Alle Dokumente, die von Garth fort erstellt werden.|
+|Ursprung|Das Author-Feld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und es an eine andere Person sendet, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`author:"Garth Fort"`|Alle Dokumente, die von Garth fort erstellt werden.|
 |ContentType|Der SharePoint-Inhaltstyp eines Elements wie Element, Dokument oder Video.|`contenttype:document`|Alle Dokumente werden zurückgegeben.|
 |Erstellt|Das Datum, an dem ein Element erstellt wird.|`created\>=06/01/2016`|Alle Elemente, die am oder nach dem 1. Juni 2016 erstellt wurden.|
 |CreatedBy|Die Person, die ein Element erstellt oder hochgeladen hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`createdby:"Garth Fort"`|Alle Elemente, die von Garth fort erstellt oder hochgeladen wurden.|
@@ -87,7 +87,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |LastModifiedTime|Das Datum, an dem ein Element zuletzt geändert wurde.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Im ersten Beispiel werden Elemente zurückgegeben, die am oder nach dem 1. Mai 2016 geändert wurden. Im zweiten Beispiel werden Elemente zurückgegeben, die zwischen 1. Mai 2016 und dem 1. Juni 2016 geändert wurden.|
 |ModifiedBy|Die Person, die ein Element zuletzt geändert hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`modifiedby:"Garth Fort"`|Alle Elemente, die zuletzt von Garth fort geändert wurden.|
 |Pfad|Der Pfad (URL) einer bestimmten Website in einer SharePoint-oder OneDrive for Business-Website.  <br/> Zum Zurückgeben von Elementen in Ordnern in der Website, die Sie für die Path-Eigenschaft angeben, müssen Sie\* /der URL der angegebenen Website hinzufügen. Zum Beispiel`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Hinweis:** Wenn Sie `Path` die Eigenschaft zum Durchsuchen von OneDrive-Speicherorten verwenden, werden keine Mediendateien wie PNG-, TIFF-oder WAV-Dateien in den Suchergebnissen zurückgegeben. Verwenden Sie eine andere Site-Eigenschaft in Ihrer Suchabfrage, um in OneDrive-Ordnern nach Mediendateien zu suchen. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente in der angegebenen OneDrive for Business-Website zurückgegeben. Im zweiten Beispiel werden Dokumente auf der angegebenen Website (und Ordner auf der Website) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
-|SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer freigegeben wurden und auf der Seite für **mich freigegeben** auf der OneDrive für Business-Website des Benutzers angezeigt werden. Hierbei handelt es sich um Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Beim Exportieren von Dokumenten, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument für den angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Suchen nach Websiteinhalten, die in Ihrer Organisation freigegeben](keyword-queries-and-search-conditions.md#internal)sind.|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|In beiden Beispielen werden alle internen Dokumente zurückgegeben, die ausdrücklich für Garth fort freigegeben wurden und auf der Seite "für **mich freigegeben** " des OneDrive for Business-Kontos von Garth fort angezeigt werden.|
+|SharedWithUsersOWSUser|Dokumente, die für den angegebenen Benutzer freigegeben wurden und auf der Seite für **mich freigegeben** auf der OneDrive für Business-Website des Benutzers angezeigt werden. Hierbei handelt es sich um Dokumente, die von anderen Personen in Ihrer Organisation explizit für den angegebenen Benutzer freigegeben wurden. Beim Exportieren von Dokumenten, die einer Suchabfrage entsprechen, die die SharedWithUsersOWSUser-Eigenschaft verwendet, werden die Dokumente aus dem ursprünglichen Inhaltsspeicherort der Person exportiert, die das Dokument für den angegebenen Benutzer freigegeben hat. Weitere Informationen finden Sie unter [Suchen nach Websiteinhalten, die in Ihrer Organisation freigegeben](#searching-for-site-content-shared-within-your-organization)sind.|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|In beiden Beispielen werden alle internen Dokumente zurückgegeben, die ausdrücklich für Garth fort freigegeben wurden und auf der Seite "für **mich freigegeben** " des OneDrive for Business-Kontos von Garth fort angezeigt werden.|
 |Website|Die URL einer Website oder einer Gruppe von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente aus der OneDrive for Business-Websites für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Im ersten Beispiel werden Elemente zurückgegeben, die größer als 1 Byte sind. Im zweiten Beispiel werden Elemente von 1 bis 10.000 Byte in der Größe zurückgegeben.|
 |Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office-Dokumenten angegeben sind. Sie unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck Kommunikationsplan in der Eigenschaft title Metadata eines Office-Dokuments enthält.|
@@ -209,7 +209,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
   
 |**Bedingung**|**Beschreibung**|
 |:-----|:-----|
-|Autor|Das Author-Feld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und es an eine andere Person sendet, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
+|Ursprung|Das Author-Feld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn ein Benutzer beispielsweise ein Dokument erstellt und es an eine andere Person sendet, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
 |Position|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Sie unterscheidet sich vom Dateinamen des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Erfahren Sie, wie Sie die verschiedenen Aufbewahrungsarten identifizieren können, die in einem Office 365-Postfach gespeichert werden dürfen. Zu diesen Aufbewahrungsarten gehört das Litigation Hold, eDiscovery Holds und Office 365 Retention Policies. Sie können auch feststellen, ob ein Benutzer von einer organisationsweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296808"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900154"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -38,9 +38,10 @@ Office 365 bietet eine Reihe von Möglichkeiten, wie Sie verhindern können, das
 
     - **Spezifische Aufbewahrungsrichtlinien für Standorte** – Dies sind Richtlinien, die den Inhaltsspeicherorten bestimmter Benutzer zugewiesen sind. Sie verwenden das Cmdlet **Get-Mailbox** in Exchange Online PowerShell, um Informationen zu Aufbewahrungsrichtlinien abzurufen, die bestimmten Postfächern zugewiesen sind.
 
-    - **Organisationsweite Aufbewahrungsrichtlinien** -Dies sind Richtlinien, die allen Inhaltsspeicherorten in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien abzurufen. Weitere Informationen finden Sie im Abschnitt "Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder einen bestimmten Standort" unter [Übersicht über Office 365-Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    - **Organisationsweite Aufbewahrungsrichtlinien** -Dies sind Richtlinien, die allen Inhaltsspeicherorten in Ihrer Organisation zugewiesen sind. Verwenden Sie das Cmdlet **Get-OrganizationConfig** in Exchange Online PowerShell, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien abzurufen.
+  Weitere Informationen finden Sie im Abschnitt "Anwenden einer Aufbewahrungsrichtlinie auf eine gesamte Organisation oder einen bestimmten Standort" unter [Übersicht über Office 365-Aufbewahrungsrichtlinien](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Office 365-Aufbewahrungs Bezeichnungen** -wenn ein Benutzer eine Office 365-Aufbewahrungs Bezeichnung anwendet (eine, die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann Inhalt gelöscht wird), in einem *beliebigen* Ordner oder Element in Ihrem Postfach, wird ein Aufbewahrungszeitraum für das Postfach gespeichert, als ob das Postfach für die Aufbewahrung von Rechtsstreitigkeiten oder für die Zuweisung zu einer Office 365-Speicherrichtlinie. Weitere Informationen finden Sie unter [Identifizieren von Postfächern in der Warteschleife, da eine Aufbewahrungs Bezeichnung auf einen Ordner-oder Element](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) Abschnitt in diesem Artikel angewendet wurde.
+- **Office 365-Aufbewahrungs Bezeichnungen** -wenn ein Benutzer eine Office 365-Aufbewahrungs Bezeichnung anwendet (eine, die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann Inhalt gelöscht wird), in einem *beliebigen* Ordner oder Element in Ihrem Postfach, wird ein Aufbewahrungszeitraum für das Postfach gespeichert, als ob das Postfach für die Aufbewahrung von Rechtsstreitigkeiten oder für die Zuweisung zu einer Office 365-Speicherrichtlinie. Weitere Informationen finden Sie unter [Identifizieren von Postfächern in der Warteschleife, da eine Aufbewahrungs Bezeichnung auf einen Ordner-oder Element](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) Abschnitt in diesem Artikel angewendet wurde.
 
 um die aufbewahrungszeit von postfächern zu verwalten, müssen sie möglicherweise den aufbewahrungs für ein postfach ermitteln, sodass sie aufgaben wie das ändern der haltedauer, vorübergehendes oder dauerhaftes entfernen des haltebereichs oder das ausschließen eines postfachs aus einer Office 365-speicherrichtlinie ausführen können. In diesen Fällen müssen Sie zunächst den Aufbewahrungs des Postfachs identifizieren. Und da mehrere haltebereiche (und unterschiedliche Aufbewahrungs Typen) für ein einzelnes Postfach gespeichert werden können, müssen Sie alle für ein Postfach festgelegten haltebereiche identifizieren, wenn Sie diese Sperren entfernen oder ändern möchten.
 
@@ -70,7 +71,7 @@ In der folgenden Tabelle wird beschrieben, wie Sie unterschiedliche Aufbewahrung
 
 |Haltebereichstyp  |Beispielwert  |So identifizieren Sie den Haltestatus  |
 |---------|---------|---------|
-|Beweissicherungsverfahren     |    `True`     |     Die Beweissicherung für ein Postfach ist aktiviert, wenn die *LitigationHoldEnabled* -Eigenschaft `True`auf festgelegt ist.    |
+|Aufbewahrung für eventuelle Rechtsstreitigkeiten     |    `True`     |     Die Beweissicherung für ein Postfach ist aktiviert, wenn die *LitigationHoldEnabled* -Eigenschaft `True`auf festgelegt ist.    |
 |eDiscovery-Haltebereich     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   Die *InPlaceHolds-Eigenschaft* enthält die GUID eines beliebigen haltebereichs, der einem eDiscovery-Fall im Security _AMP_ Compliance Center zugeordnet ist. Sie können feststellen, dass dies ein eDiscovery-Speicher ist, da `UniH` die GUID mit dem Präfix beginnt (das einen einheitlichen Haltebereich bezeichnet).      |
 |Compliance-Archiv     |     `c0ba3ce811b6432a8751430937152491` <br/> oder <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der für das Postfach platziert wird. Sie können feststellen, dass es sich um einen in-situ-Speicher handelt, da die GUID entweder nicht mit einem `cld` Präfix beginnt oder mit dem Präfix startet.     |
 |Speziell auf das Postfach angewendete Aufbewahrungsrichtlinie für Office 365     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oder <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     Die InPlaceHolds-Eigenschaft enthält GUIDs einer bestimmten Aufbewahrungsrichtlinie für Standorte, die auf das Postfach angewendet wird. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit `mbx` dem oder `skp` dem Präfix beginnt. Das `skp` Präfix gibt an, dass die Aufbewahrungsrichtlinie auf Skype for Business-Unterhaltungen im Postfach des Benutzers angewendet wird.    |
@@ -138,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Informationen zum Herstellen einer Verbindung mit der Security & Compliance Center-PowerShell finden Sie unter [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>In-Situ-Speicher
+### <a name="in-place-holds"></a>In-situ-Aufbewahrung
 
 Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um den in-situ-Speicher zu identifizieren, der auf das Postfach angewendet wird. Verwenden Sie die GUID für den in-situ-Speicher, den Sie in Schritt 1 identifiziert haben. Der Befehl zeigt den Haltestatus und eine Liste der Postfächer an, auf die der Haltebereich angewendet wird.
 
@@ -195,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
 > [!TIP]
-> Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl besteht darin, den Distinguished Name oder den Exchange-GUID-Wert zu verwenden. Die Verwendung eines dieser Werte verhindert das versehentliche angeben des falschen Postfachs. 
+> Die beste Möglichkeit zum Angeben eines inaktiven Postfachs im vorherigen Befehl besteht darin, den Distinguished Name oder den Exchange-GUID-Wert zu verwenden. Durch Verwenden eines dieser Werte können Sie verhindern, versehentlich das falsche Postfach anzugeben. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
