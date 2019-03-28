@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: a32c6607ec43634e317ee92b8fed6698e3a5c3b9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297008"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935270"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 
@@ -61,7 +61,7 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich mit ihrem globalen Administratorkonto bei Office 365 an.
+2. Sign in to Office 365 using your global administrator account.
     
     
 3. Wechseln Sie im &amp; Security Compliance Center zu **Data Governance** \> **Archive**.
@@ -191,7 +191,7 @@ Nachdem Sie die benutzerdefinierten Aufbewahrungstags erstellt haben, besteht de
     
     Eine Liste der Aufbewahrungstags in Ihrer Organisation wird angezeigt. Hinweis die benutzerdefinierten Tags, die Sie in Schritt 2 erstellt haben, werden angezeigt.
     
-5. Fügen Sie die 9 Aufbewahrungstags hinzu, die im folgenden Screenshot hervorgehoben werden (diese Tags werden im Abschnitt [Weitere Informationen](set-up-an-archive-and-deletion-policy-for-mailboxes.md#moreinfo) ausführlicher beschrieben). Zum Hinzufügen eines Aufbewahrungstags wählen Sie es aus, und klicken Sie dann auf **Hinzufügen**. 
+5. Fügen Sie die 9 Aufbewahrungstags hinzu, die im folgenden Screenshot hervorgehoben werden (diese Tags werden im Abschnitt [Weitere Informationen](#more-information) ausführlicher beschrieben). Zum Hinzufügen eines Aufbewahrungstags wählen Sie es aus, und klicken Sie dann auf **Hinzufügen**. 
     
     ![Hinzufügen von Aufbewahrungstags zur neuen Aufbewahrungsrichtlinie](media/d8e87176-0716-4238-9e6a-7c4af35541dc.png)
   
@@ -279,7 +279,7 @@ Im folgenden finden Sie die Schritte zum Herstellen einer Verbindung mit Exchang
     $Mailboxes.Identity | Start-ManagedFolderAssistant
     ```
 
-Das wars! Sie haben eine Archiv-und Löschrichtlinie für die Alpine House-Organisation eingerichtet.
+Das ist alles. Sie haben eine Archiv-und Löschrichtlinie für die Alpine House-Organisation eingerichtet.
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>Optional Schritt 6: Festlegen der standardmäßigen Aufbewahrungsrichtlinie für Ihre Organisation
 
@@ -303,17 +303,17 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Wie wird das Aufbewahrungszeitraum berechnet? Das Aufbewahrungs Alter von Postfachelementen wird ab dem Lieferdatum oder dem Erstellungsdatum für Elemente wie Entwurfsnachrichten berechnet, die nicht gesendet, sondern vom Benutzer erstellt werden. Wenn der Assistent für verwaltete Ordner Elemente in einem Postfach verarbeitet, werden ein Startdatum und ein Ablaufdatum für alle Elemente mit Aufbewahrungstags mit der Aktion löschen und Wiederherstellung zulassen oder dauerhaft löschen gestempelt. Elemente mit einem Archiv-Tag werden mit einem Verschiebungsdatum gestempelt. 
+- Wie wird das Aufbewahrungszeitraum berechnet? Das Aufbewahrungs Alter von Postfachelementen wird ab dem Lieferdatum oder dem Erstellungsdatum für Elemente wie Entwurfsnachrichten berechnet, die nicht gesendet, sondern vom Benutzer erstellt werden. Wenn der Assistent für verwaltete Ordner Elemente in einem Postfach verarbeitet, werden alle Elemente, die Aufbewahrungstags mit der Aufbewahrungsaktion Löschen und Wiederherstellung zulassen oder Endgültig löschen aufweisen, mit einem Start- und einem Ablaufdatum gestempelt. Elemente mit einem Archiv-Tag werden mit einem Verschiebungsdatum gestempelt. 
     
 - Die folgende Tabelle enthält weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die mit den Schritten in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Typ**|
+    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Jahre in Archiv verschieben  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpine House gelöschte Elemente 5 Jahre löschen und Wiederherstellung zulassen  <br/> |Löscht Elemente aus dem Ordner Gelöschte Elemente, die 5 Jahre alt sind. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |AufbewahrungsRichtlinientag (Gelöschte Elemente); Dieses Tag wird automatisch auf Elemente im Ordner "Gelöschte Elemente" angewendet.  <br/> |
     |Wiederherstellbare Elemente, 14 Tage, in Archiv verschieben  <br/> |Verschiebt Elemente, die sich im Ordner "Wiederherstellbare Elemente" befinden, 14 Tage lang in den Ordner "Wiederherstellbare Elemente" im Archivpostfach.  <br/> |Integriert  <br/> |AufbewahrungsRichtlinientag (Wiederherstellbare Elemente); Dieses Tag wird automatisch auf Elemente im Ordner "Wiederherstellbare Elemente" angewendet.  <br/> |
-    |Junk-e-Mail  <br/> |Löscht Elemente, die sich im Junk-e-Mail-Ordner befinden, endgültig 30 Tage lang. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |AufbewahrungsRichtlinientag (Junk-e-Mail); Dieses Tag wird automatisch auf Elemente im Junk-e-Mail-Ordner angewendet.  <br/> |
+    |Junk-E-Mail  <br/> |Löscht Elemente, die sich im Junk-e-Mail-Ordner befinden, endgültig 30 Tage lang. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |AufbewahrungsRichtlinientag (Junk-e-Mail); Dieses Tag wird automatisch auf Elemente im Junk-e-Mail-Ordner angewendet.  <br/> |
     |1 Monat, löschen  <br/> |Löscht Elemente, die 30 Tage alt sind, endgültig. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |
     |1 Jahr, löschen  <br/> |Löscht Elemente, die 365 Tage alt sind, endgültig. Benutzer können diese Elemente bis zu 14 Tage nach dem Löschen wiederherstellen.<sup>\*</sup> <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |
     |Nie löschen  <br/> |Dieses Tag verhindert, dass Elemente durch eine Aufbewahrungsrichtlinie gelöscht werden.  <br/> |Integriert  <br/> |Persönliche Dieses Tag kann von Benutzern angewendet werden.  <br/> |

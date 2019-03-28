@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Zusätzlich zu der Basisrichtlinie, die durch BitLocker und Distributed Key Manager (DKM) aktiviert ist, bietet Office 365 eine zusätzliche Verschlüsselungsschicht auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich Daten aus Exchange Online, Skype for Business, SharePoint Online und OneDrive for Business. Dies wird als Dienst Verschlüsselung bezeichnet.
-ms.openlocfilehash: a9001db0f63183bf4694dfc880ab0940309d0375
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216505"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936765"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
 
 Zusätzlich zu der Basisrichtlinie, die durch BitLocker und Distributed Key Manager (DKM) aktiviert ist, bietet Office 365 eine zusätzliche Verschlüsselungsschicht auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich Daten aus Exchange Online, Skype for Business, SharePoint Online und OneDrive for Business. Dies wird als Dienst Verschlüsselung bezeichnet.
   
-Der Kundenschlüssel basiert auf der Dienst Verschlüsselung und ermöglicht Ihnen das Bereitstellen und Steuern von Schlüsseln, die zum Verschlüsseln von Daten in Rest in Office 365 verwendet werden, wie im Abschnitt [Online Services Terms (Ost)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)beschrieben. Mit dem Kundenschlüssel können Sie die Compliance-Verpflichtungen erfüllen, da Sie die Verschlüsselungsschlüssel steuern, die Office 365 zum Entschlüsseln von Daten verwendet.
+Der Kundenschlüssel basiert auf der Dienst Verschlüsselung und ermöglicht Ihnen das Bereitstellen und Steuern von Schlüsseln, die zum Verschlüsseln von Daten in Rest in Office 365 verwendet werden, wie im Abschnitt [Online Services Terms (Ost)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)beschrieben. Mit dem Kundenschlüssel können Sie Auflagen erfüllen, da Sie die Verschlüsselungsschlüssel steuern, mit denen Office 365 die Daten entschlüsselt.
   
 Um Feedback zum Kundenschlüssel, einschließlich der Dokumentation, zu geben, senden Sie Ihre Ideen, Vorschläge und Perspektiven an customerkeyfeedback@microsoft.com.
   
@@ -142,7 +142,7 @@ Office 365 verwendet den Verfügbarkeits Schlüssel für die Dienstverfügbarkei
   
 ![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
-Wenn beide Azure Key Vault-Schlüssel einer einzelnen Daten VerschlüsselungsRichtlinie nicht verfügbar sind, kann Office 365 den Verfügbarkeits Schlüssel verwenden, um zu einer neuen DEP zu wechseln. Office 365 bestimmt, ob der Verfügbarkeits Schlüssel für die Dienstverfügbarkeit unterschiedlich verwendet werden soll, je nachdem, ob ein vom Benutzer initiierte Aktivität, wenn ein Benutzer beispielsweise e-Mails an den Outlook-Client herunterlädt oder eine vom System initiierte Aktivität, wie das Indizieren von Postfachinhalten oder eDiscovery-suchen, hat den Prozess ausgelöst.
+Wenn beide Azure Key Vault-Schlüssel einer einzelnen Daten VerschlüsselungsRichtlinie nicht verfügbar sind, kann Office 365 den Verfügbarkeits Schlüssel verwenden, um zu einer neuen DEP zu wechseln. Office 365 bestimmt, ob der Verfügbarkeits Schlüssel für die Dienstverfügbarkeit unterschiedlich ist, je nachdem, ob eine vom Benutzer initiierte Aktivität, wenn beispielsweise ein Benutzer e-Mails an den Outlook-Client herunterlädt, oder eine vom System initiierte Aktivität wie die Indizierung Postfachinhalte oder für eDiscovery-suchen lösten den Prozess aus.
   
 Office 365 folgt diesem Prozess als Reaktion auf vom Benutzer initiierte Aktionen, um zu bestimmen, ob der Verfügbarkeits Schlüssel für Benutzerpostfächer verwendet werden soll:
   

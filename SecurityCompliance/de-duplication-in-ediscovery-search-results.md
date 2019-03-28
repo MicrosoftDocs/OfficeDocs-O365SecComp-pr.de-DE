@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Sie haben die Möglichkeit, eDiscovery-Suchergebnisse zu deduplizieren, die exportiert werden, damit nur eine Kopie einer e-Mail-Nachricht exportiert wird, obwohl mehrere Instanzen derselben Nachricht in unterschiedlichen Postfächern gefunden wurden.
-ms.openlocfilehash: f61c9e3caf7de3560a03f2b720822162ea98486d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296658"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936725"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplizierung in eDiscovery-Suchergebnissen
 
 In diesem Artikel wird beschrieben, wie die Deduplizierung von eDiscovery-Suchergebnissen funktioniert und wie die Einschränkungen des Algorithmus für die Deduplizierung erläutert werden.
   
-Wenn Sie die Ergebnisse einer eDiscovery-Suche mithilfe von Office 365 eDiscovery-Tools exportieren, haben Sie die Möglichkeit, die exportierten Ergebnisse zu deduplizieren. Was bedeutet das? Wenn Sie Deduplizierung aktivieren (Deduplizierung ist standardmäßig nicht aktiviert), wird nur eine Kopie einer e-Mail-Nachricht exportiert, obwohl in den durchsuchten Postfächern möglicherweise mehrere Instanzen derselben Nachricht gefunden wurden. Durch die Deduplizierung können Sie Zeit sparen, indem Sie die Anzahl der Elemente verringern, die Sie nach dem Export der Suchergebnisse überprüfen und analysieren müssen. Es ist jedoch wichtig zu verstehen, wie Deduplizierung funktioniert, und dass es Einschränkungen für den Algorithmus gibt, die dazu führen können, dass ein eindeutiges Element während des Exportvorgangs als Duplikat gekennzeichnet wird.
+Wenn Sie die Ergebnisse einer eDiscovery-Suche mithilfe von Office 365 eDiscovery-Tools exportieren, haben Sie die Möglichkeit, die exportierten Ergebnisse zu deduplizieren. Szenario Wenn Sie Deduplizierung aktivieren (Deduplizierung ist standardmäßig nicht aktiviert), wird nur eine Kopie einer e-Mail-Nachricht exportiert, obwohl in den durchsuchten Postfächern möglicherweise mehrere Instanzen derselben Nachricht gefunden wurden. Durch die Deduplizierung können Sie Zeit sparen, indem Sie die Anzahl der Elemente verringern, die Sie nach dem Export der Suchergebnisse überprüfen und analysieren müssen. Es ist jedoch wichtig zu verstehen, wie Deduplizierung funktioniert, und dass es Einschränkungen für den Algorithmus gibt, die dazu führen können, dass ein eindeutiges Element während des Exportvorgangs als Duplikat gekennzeichnet wird.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Identifizieren von doppelten Nachrichten
 

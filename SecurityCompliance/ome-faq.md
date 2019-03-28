@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Haben Sie Fragen zur Funktionsweise der neuen Nachrichtenschutzfunktionen in Office 365? Hier finden Sie eine Antwort.
-ms.openlocfilehash: 651d3f5953f0a6864259ed3a0c8ecde79f40d631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217115"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936785"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ zur Office 365-Nachrichtenverschlüsselung
 
@@ -68,7 +68,7 @@ Nein. OM und die Option zum Bereitstellen und Steuern ihrer eigenen Verschlüsse
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>Wie ist dieses Feature mit Legacy Office 365 Message Encryption (OM) und IRM-Funktionen (Information Rights Management, Verwaltung von Informationsrechten) verbunden?
 
-Die neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 sind eine Weiterentwicklung der vorhandenen IRM-und Legacy-Lösungen. Die folgende Tabelle enthält weitere Details.
+Die neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 sind eine Weiterentwicklung der vorhandenen IRM-und Legacy-Lösungen. In der folgenden Tabelle finden Sie weitere Details.
   
 **Vergleich der Funktionen von Legacy OM, IRM und New OM**
 
@@ -116,7 +116,7 @@ Wenn Sie eine PDF-Datei an eine geschützte Nachricht anfügen, wird die Nachric
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Werden OneDrive for Business-Anhänge unterstützt?
 
-Noch nicht. OneDrive for Business-Anhänge werden nicht unterstützt, und Endbenutzer können keine e-Mails mit einer Cloud-OneDrive for Business-Anlage verschlüsseln.
+Not yet. OneDrive for Business-Anhänge werden nicht unterstützt, und Endbenutzer können keine e-Mails mit einer Cloud-OneDrive for Business-Anlage verschlüsseln.
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Kann ich Nachrichten automatisch durch Einrichten von Richtlinien verschlüsseln?
 

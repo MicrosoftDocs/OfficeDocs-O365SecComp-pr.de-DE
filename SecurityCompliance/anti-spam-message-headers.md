@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt.
-ms.openlocfilehash: de5e1b16ac6c9e7515e23f083f2e938125c7e9cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693574"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936745"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 
@@ -28,7 +28,6 @@ Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder
 > Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). Sie können den Inhalt der Nachrichtenkopfzeile kopieren und in der [Nachrichtenkopfanalyse](https://testconnectivity.microsoft.com/?tabid=mha) einfügen. Wenn Sie im Exchange Admin Center eine Nachricht in Quarantäne auswählen, können Sie über den Link **Nachrichtenkopfzeile anzeigen** ganz einfach den Text der Nachrichtenkopfzeile kopieren und im Tool einfügen. Klicken Sie im Nachrichtenkopfanalyse-Tool auf **Kopfzeilen analysieren**, um Informationen zur Kopfzeile abzurufen.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Forefront-Antispam-Report
-<a name="sectionSection0"> </a>
 
 Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-Forefront-Antispam-Report**, und suchen Sie nach den folgenden Feldern: Andere Felder in dieser Kopfzeile werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
 
@@ -38,7 +37,7 @@ Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-
 |CTRY|Das Land, aus dem die Nachricht mit dem Dienst verbunden wurde. Es wird anhand der Verbindungs-IP-Adresse ermittelt, die nicht notwendigerweise mit der ursprünglichen Sende-IP-Adresse übereinstimmen muss.|
 |LANG|Die Sprache, in der die Nachricht verfasst wurde, wie im Ländercode angegeben (z. B. ru_RU für Russisch).|
 |SCL|Die SCL-Bewertung (Spam Confidence Level) einer Nachricht. Weitere Informationen zur Interpretation dieser Werte finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).  |
-|PCL|Der PCL-Wert (Phishing Confidence Level) der Nachricht. |
+|PCL|Der PCL-Wert (Phishing Confidence Level) der Nachricht.|
 |SRV:BULK|Die Nachricht wurde als Massen-E-Mail identifiziert. Ist die erweiterte Spamfilteroption **Alle Massen-E-Mail-Nachrichten sperren** aktiviert, wird sie als Spam markiert. Ist die nicht aktiviert, wird sie nur dann als Spam markiert, wenn der Rest der Filterungsregeln festlegt, dass es sich bei der Nachricht um Spam handelt.|
 |SFV:SFE|Filterung wurde übersprungen, und die Nachricht wurde durchgelassen, da sie von einem Absender aus der Liste mit sicheren Absendern stammt.|
 |SFV:BLK|Filterung wurde übersprungen, und die Nachricht wurde blockiert, da sie von einem Absender aus der Liste mit blockierten Absendern stammt.  <br/> **Tipp**: Weitere Informationen dazu, wie Endbenutzer sichere und blockierte Absenderlisten erstellen können, finden Sie unter [blockieren oder zulassen (Junk-e-Mail-Einstellungen)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook im Web) und [Übersicht über den Junk-e-Mail-Filter](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|
@@ -58,7 +57,6 @@ Suchen Sie nach dem Zugriff auf die Nachrichtenkopfzeileninformationen nach **X-
 |X-CustomSpam: [ASFOption]|Die Nachricht entsprach einer erweiterten Spamfilter Option. So bedeutet z. B. **X-CustomSpam: Bildlinks zu Remotestandorten**, dass eine Übereinstimmung mit der ASF-Option **Bildlinks zu Remotestandorten** besteht. Informationen dazu, welcher X-Header-Text für jede einzelne ASF-Option hinzugefügt wird, finden Sie unter [Advanced Spam Filtering Options](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Microsoft-Antispam
-<a name="sectionSection1"> </a>
 
 In der folgenden Tabelle werden die hilfreiche Felder der Nachrichtenkopfzeile **X-Microsoft-Antispam** beschrieben: Andere Felder in dieser Kopfzeile werden ausschließlich vom Microsoft-Antispamteam zu Diagnosezwecken verwendet.
   
@@ -68,16 +66,14 @@ In der folgenden Tabelle werden die hilfreiche Felder der Nachrichtenkopfzeile *
 |PCL|Der PCL-Wert (Phishing Confidence Level) der Nachricht, der anzeigt, ob es sich um eine Phishing-Nachricht handelt. Dieser Status kann als einer der folgenden numerischen Werte zurückgegeben werden: <br/>• **0-3**: der Inhalt der Nachricht ist wahrscheinlich kein Phishing. <br/>• **4-8**: der Inhalt der Nachricht ist wahrscheinlich Phishing. <br/>• **-9990**: (nur Exchange Online Protection) der Inhalt der Nachricht ist wahrscheinlich Phishing.  <br/>  Anhand dieser Werte wird ermittelt, welche Aktion Ihr E-Mail-Client für die Nachrichten ausführt. Outlook verwendet beispielsweise den PCL-Stempel, um den Inhalt verdächtiger Nachrichten zu blockieren. Weitere Informationen zu Phishing und zur Verarbeitung von Phishing-Nachrichten in Outlook finden Sie unter [Aktivieren oder Deaktivieren von Links in e-Mail-Nachrichten](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
    
 ## <a name="authentication-results-message-header"></a>Nachrichtenkopfzeile „Authentication-results“
-<a name="sectionSection2"> </a>
 
 Die Ergebnisse der SPF-, DKIM- und DMARC-Überprüfungen werden aufgezeichnet, oder in der Nachrichtenkopfzeile **Authentication-results** von Office 365 markiert, wenn unsere E-Mail-Server eine E-Mail erhalten.
   
 ### <a name="check-stamp-syntax-and-examples"></a>Überprüfen der Stempelsyntax und Beispiele
-<a name="referenceSPFstamp"> </a>
 
-The following syntax examples show a portion of the text "stamp" that Office 365 applies to the message header for each email that undergoes an email authentication check when it is received by our mail servers. The stamp is added to the **Authentication-Results** header.
+Die folgenden Syntaxbeispiele zeigen einen Teil des „Textstempels“, den Office 365 in der Nachrichtenkopfzeile für jede E-Mail-Nachricht anwendet, die beim Empfang durch Ihren Mailserver eine E-Mail-Authentifizierungsprüfung durchlaufen. Dieser Stempel wird der Kopfzeile mit den Authentifizierungsergebnissen hinzugefügt:
   
- **Syntax: SPF-Prüfstempel**
+**Syntax: SPF-Prüfstempel**
   
 Für SPF gilt die folgende Syntax.
   
@@ -85,14 +81,14 @@ Für SPF gilt die folgende Syntax.
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
- **Beispiele: SPF-Prüfstempel**
+**Beispiele: SPF-Prüfstempel**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
- **Syntax: DKIM-Prüfstempel**
+**Syntax: DKIM-Prüfstempel**
   
 Für DKIM gilt die folgende Syntax.
   
@@ -100,14 +96,14 @@ Für DKIM gilt die folgende Syntax.
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
- **Beispiele: DKIM-Prüfstempel**
+**Beispiele: DKIM-Prüfstempel**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
- **Syntax: DMARC-Prüfstempel**
+**Syntax: DMARC-Prüfstempel**
   
 Für DMARC gilt die folgende Syntax.
   
@@ -115,7 +111,7 @@ Für DMARC gilt die folgende Syntax.
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
- **Beispiele: DMARC-Prüfstempel**
+**Beispiele: DMARC-Prüfstempel**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -125,7 +121,6 @@ dmarc=fail action=oreject header.from=contoso.com
 ```
 
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Kopfzeilenfelder mit Authentifizierungsergebnissen, die von der Office 365-E-Mail-Authentifizierung verwendet werden
-<a name="referenceSPFstamp"> </a>
 
 In dieser Tabelle werden die Felder und die möglichen Werte für jede E-Mail-Authentifizierungsprüfung beschrieben.
   

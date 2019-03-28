@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Inhaltssuche-Tool im Office 365 &amp; Security Compliance Center, um verläuft-Chat Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung zu suchen und zu exportieren.
-ms.openlocfilehash: 148a5766342fcdd52e0505a59729cad3d2993908
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296698"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935230"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von cloudbasierten Postfächern für lokale Benutzer in Office 365
 
@@ -32,7 +32,7 @@ Hier sind die Anforderungen und Einschränkungen für das Einrichten und einrich
     
 - Das Cloud-basierte Postfach für lokale Benutzer wird nur für Speicher Teams-Chat Daten verwendet. Ein lokale Benutzer kann sich nicht bei dem cloudbasierten Postfach oder Zugriff anmelden. Sie kann nicht zum Senden oder empfangen von e-Mail-Nachrichten verwendet werden. 
     
-- Sie müssen eine Anforderung an den Microsoft-Support senden, damit Ihre Organisation nach Teams-Chat Daten in den cloudbasierten Postfächern für lokale Benutzer suchen kann. Weitere Informationen finden Sie unter [Einreichen einer Anforderung beim Microsoft-Support, um &amp; diese Funktion im Security Compliance Center](#filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center) in diesem Artikel zu aktivieren. 
+- Sie müssen eine Anforderung an den Microsoft-Support senden, damit Ihre Organisation nach Teams-Chat Daten in den cloudbasierten Postfächern für lokale Benutzer suchen kann. Weitere Informationen hierzu finden Sie unter [Einreichen einer Anforderung beim Microsoft-Support](#filing-a-request-with-microsoft-support-to-enable-this-feature) . 
     
  **Hinweis:** Teams-Kanal Unterhaltungen werden immer im cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das kann bedeuten, dass Sie die Inhaltssuche verwenden können, um Kanal Unterhaltungen zu durchsuchen, ohne eine Supportanfrage einreichen zu müssen. Weitere Informationen zum Durchsuchen von Teams-Kanal Unterhaltungen finden Sie unter [Suchen von Microsoft Teams und Office 365-Gruppen](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
@@ -46,7 +46,7 @@ Die folgende Grafik zeigt den Workflow, wie Teams Chat-Daten für lokale Benutze
   
 Zusätzlich zu dieser neuen Funktion können Sie die Inhaltssuche weiterhin für die Suche, Vorschau und Export von Teams-Inhalten auf der cloudbasierten SharePoint-Website und im Exchange-Postfach verwenden, die den einzelnen Microsoft Teams-und 1xN Teams-Chatdaten im Exchange Online-Postfach zugeordnet sind. Cloud-basierte Benutzer.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center"></a>Einreichen einer Anforderung beim Microsoft-Support, um diese Funktion im Security &amp; Compliance Center zu aktivieren
+## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Einreichen einer Anforderung beim Microsoft-Support, um dieses Feature zu aktivieren
 
 Sie müssen eine Anforderung beim Microsoft-Support einreichen, damit Ihre Organisation die grafische Benutzeroberfläche im Security &amp; Compliance Center verwenden kann, um in den cloudbasierten Postfächern für lokale Benutzer nach Teams-Chat Daten zu suchen. Beachten Sie, dass diese Funktion in Office 365 Security &amp; Compliance Center PowerShell verfügbar ist. Sie müssen keine Supportanforderung senden, um PowerShell für die Suche nach Teams-Chat Daten für lokale Benutzer zu verwenden. 
   

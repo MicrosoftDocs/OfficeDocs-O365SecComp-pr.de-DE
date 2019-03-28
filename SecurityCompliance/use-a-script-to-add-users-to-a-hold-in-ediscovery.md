@@ -14,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Führen Sie ein Skript aus, um Schnellpost Fächer und OneDrive für Business-Websites einem neuen Halt hinzuzufügen, der mit einem eDiscovery-Fall &amp; im Office 365 Security Compliance Center verknüpft ist.
-ms.openlocfilehash: b9d34f4576299dccf0f751c7f204639b5a770b32
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214285"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935240"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Verwenden eines Skripts zum Hinzufügen von Benutzern zu einem Haltestatus in einem eDiscovery-Fall im &amp; Office 365 Security Compliance Center
 
@@ -29,7 +29,7 @@ Das Skript fordert Sie auf, den Namen der mysite-Domäne Ihrer Organisation einz
   
 Hier sind die Schritte, um dies zu erreichen:
   
-[Schritt 1: Installieren der SharePoint Online-Verwaltungsshell](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step1)
+[Schritt 1: Installieren der SharePoint Online-Verwaltungsshell](#step-1-install-the-sharepoint-online-management-shell)
   
 [Schritt 2: Generieren einer Liste von Benutzern](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
   
