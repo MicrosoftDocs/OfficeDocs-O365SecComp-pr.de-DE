@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Als globaler Office 365-Administrator können Sie anGriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
-ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693664"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862457"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
@@ -33,11 +33,9 @@ ms.locfileid: "30693664"
 
 Derzeit stehen drei Arten von Angriffssimulationen zur Verfügung:
   
-- [Anzeigename Spear-Phishing-Angriff](attack-simulator.md#spearphish)
-    
-- [Kenn Wort Sprüh Angriff](attack-simulator.md#passwordspray)
-    
-- [Brute-Force-Kennwortangriff](attack-simulator.md#bruteforce)
+- [Anzeigename Spear-Phishing-Angriff](#display-name-spear-phishing-attack)
+- [Kenn Wort Sprüh Angriff](#password-spray-attack)
+- [Brute-Force-Kennwortangriff](#brute-force-password-attack)
     
 Damit ein Angriff erfolgreich gestartet werden kann, verwenden Sie die mehrstufige Authentifizierung für das Konto, mit dem Sie simulierte Angriffe ausführen. Darüber hinaus müssen Sie ein globaler Office 365-Administrator sein.
   

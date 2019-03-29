@@ -15,12 +15,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor schädlichen Dateien in e-Mails.
-ms.openlocfilehash: ed7ba8b1e9bdb2957239690b98b6c793781340cd
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 47587d9e189a6fcda2cac964130d0b257b4f4166
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241947"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862417"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Office 365 ATP-Richtlinien für sichere Anlagen
 
@@ -28,11 +28,11 @@ Personen, die regelmäßig Anhänge senden, empfangen und freigeben, wie Dokumen
   
 ## <a name="what-to-do"></a>Nächste Schritte 
   
-1. [Überarbeiten der Voraussetzungen](#review-the-prerequisites)
+1. Überarbeiten der Voraussetzungen
     
-2. [Einrichten einer Richtlinie zu sicheren ATP-Anlagen](#set-up-an-atp-safe-attachments-policy)
+2. Einrichten einer Richtlinie zu sicheren ATP-Anlagen
     
-3. [Informationen zu Richtlinienoptionen für ATP-sichere Anlagen](#learn-about-atp-safe-attachments-policy-options)
+3. Informationen zu Richtlinienoptionen für ATP-sichere Anlagen
     
 ## <a name="step-1-review-the-prerequisites"></a>Schritt 1: Überarbeiten der Voraussetzungen
 
@@ -48,7 +48,7 @@ Personen, die regelmäßig Anhänge senden, empfangen und freigeben, wie Dokumen
     
     Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Informationen [zu Richtlinienoptionen für ATP-sichere Anlagen](#learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, wie beispielsweise die Optionen zum Überwachen oder ersetzen, können zu einer geringfügigen Verzögerung von e-Mails führen, während Anlagen gescannt werden. Um Nachrichten Verzögerungen zu vermeiden, sollten Sie die [dynamische Übermittlung und Vorschau](dynamic-delivery-and-previewing.md)verwenden.
+- Informationen [zu Richtlinienoptionen für ATP-sichere Anlagen](#step-3-learn-about-atp-safe-attachments-policy-options) (in diesem Artikel). Einige Optionen, wie beispielsweise die Optionen zum Überwachen oder ersetzen, können zu einer geringfügigen Verzögerung von e-Mails führen, während Anlagen gescannt werden. Um Nachrichten Verzögerungen zu vermeiden, sollten Sie die [dynamische Übermittlung und Vorschau](dynamic-delivery-and-previewing.md)verwenden.
     
 - Erlauben Sie bis zu 30 Minuten, bis Ihre neue oder aktualisierte Richtlinie auf alle Office 365-Rechenzentren verteilt ist.
     
@@ -74,7 +74,7 @@ Personen, die regelmäßig Anhänge senden, empfangen und freigeben, wie Dokumen
     
       - Wählen Sie im Abschnitt **angewendet** am **die Option Empfängerdomäne ist**aus, und wählen Sie dann Ihre Domäne aus. Klicken Sie auf **Hinzufügen**und dann auf **OK**.
     
-6. Klicken Sie auf **Save**.
+6. Wählen Sie **Speichern** aus.
     
 Erwägen Sie das Einrichten mehrerer ATP-Richtlinien für sichere Anlagen für Ihre Organisation. Diese Richtlinien werden in der Reihenfolge angewendet, in der Sie auf der Seite " **sichere Anlagen** " aufgeführt sind. Nachdem eine Richtlinie definiert oder bearbeitet wurde, können die Polizeibehörden mindestens 30 Minuten lang in Microsoft-Rechenzentren wirksam werden. 
   
@@ -82,12 +82,12 @@ Erwägen Sie das Einrichten mehrerer ATP-Richtlinien für sichere Anlagen für I
 
 Bei der Einrichtung Ihrer Richtlinien für sichere ATP-Anlagen wählen Sie aus zahlreichen Optionen, einschließlich Monitor, Block, ersetzen, dynamischer Bereitstellung usw. Wenn Sie sich Fragen, was diese Optionen tun, werden in der folgenden Tabelle die einzelnen und ihre Auswirkungen zusammengefasst.
   
-|**Option**|**Effekt**|**Verwenden Sie, wenn Sie Folgendes möchten:**|
+|**Option**|**Effect**|**Verwenden Sie, wenn Sie Folgendes möchten:**|
 |:-----|:-----|:-----|
 |**Off** <br/> |Die Anlagen werden nicht auf Schadsoftware überprüft  <br/> Nachrichtenübermittlung wird nicht verzögert  <br/> |Deaktivieren Sie die Überprüfung für interne Absender, Scanner, Faxe oder Smarthosts, die nur bekannte, gute Anlagen senden.  <br/> Vermeiden unnötiger Verzögerungen beim Routing interner e-Mails  <br/> **Diese Option wird für die meisten Benutzer nicht empfohlen. Es ermöglicht Ihnen, die Überprüfung von ATP Safe Attachments für eine kleine Gruppe interner Absender zu aktivieren.**           |
 |**Monitor** <br/> |Übermittelte Nachrichten mit Anlagen und verfolgt dann, was mit erkannter Schadsoftware geschieht  <br/> |Siehe wo erkannte Schadsoftware in Ihrer Organisation geht  <br/> |
 |**Block** <br/> |Verhindert das Fortsetzen von Nachrichten mit erkannter Schadsoftware  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> Automatisches Blockieren zukünftiger Nachrichten und Anlagen  <br/> |Schützen Sie Ihre Organisation vor wiederholten Angriffen mit denselben Schadsoftware-Anlagen  <br/> |
-|**Ersetzen** <br/> |Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> |Erhöhen der Sichtbarkeit von Empfängern, dass Anlagen aufgrund erkannter Schadsoftware entfernt wurden  <br/> |
+|**Replace** <br/> |Entfernt erkannte Schadsoftware-Anlagen  <br/> Benachrichtigt Empfänger, dass Anlagen entfernt wurden.  <br/> Sendet Nachrichten mit erkannter Schadsoftware [in Quarantäne in Office 365](manage-quarantined-messages-and-files.md) , in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> |Erhöhen der Sichtbarkeit von Empfängern, dass Anlagen aufgrund erkannter Schadsoftware entfernt wurden  <br/> |
 |**Dynamische Verteilung** <br/> |Sofortiges übermitteln von Nachrichten  <br/> Ersetzt Anlagen mit einer Platzhalterdatei, bis die Überprüfung abgeschlossen ist, und fügt die Anlagen dann erneut an, wenn keine Schadsoftware erkannt wird.  <br/> Enthält Funktionen für die Vorschau von Anlagen für die meisten PDFs und Office-Dateien während des Scans  <br/> Sendet Nachrichten mit erkannter Schadsoftware in Quarantäne, in der ein Sicherheitsadministrator oder Analytiker diese Nachrichten überarbeiten und freigeben (oder löschen) kann  <br/> [Informationen zur dynamischen bereitstellen und Vorschau mit sicheren ATP-Anlagen](dynamic-delivery-and-previewing.md) <br/> |Vermeiden von Nachrichten Verzögerungen beim Schützen von Empfängern vor schädlichen Dateien  <br/> Empfänger können Anhänge im abgesicherten Modus anzeigen, während die Überprüfung stattfindet  <br/> |
 |**Umleitung aktivieren** <br/> |Gilt, wenn die Option Monitor, Block oder ersetzen ausgewählt ist.  <br/> Sendet Anlagen an eine angegebene e-Mail-Adresse, die von Sicherheitsadministratoren oder Analysten untersucht werden kann  <br/> |Aktivieren von Sicherheitsadministratoren und Analysten zur Untersuchung verdächtiger Anlagen  <br/> |
    

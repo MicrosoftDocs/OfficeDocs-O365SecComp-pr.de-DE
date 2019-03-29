@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Threat Tracker, einschließlich der neuen bemerkenswerten Tracker, damit Ihre Organisation auf Sicherheitsbedenken eingehen kann.
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693074"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862527"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Aufzeichnungen von Bedrohungen – neu und wichtig
 
@@ -38,7 +38,7 @@ Die meisten Tracker-Seiten enthalten Trend Zahlen, die regelmäßig aktualisiert
   
 ![Beispiel für Kampagneninformationen im Explorer](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Tracker sind nur einige der vielen tollen Features, die Sie mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)erhalten. Zu den Bedrohungs Tracker gehört [bemerkenswerte Tracker](threat-trackers.md#notey), [Trend Verfolgungs](threat-trackers.md#trending)Geräte, nachverfolgte [Abfragen](threat-trackers.md#trackedq)und [gespeicherte Abfragen](threat-trackers.md#savedq).
+Tracker sind nur einige der vielen tollen Features, die Sie mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)erhalten. Zu den Bedrohungs Tracker gehört [Noteworth-Tracker](#noteworthy-trackers), [Trend Verfolgungs](#trending-trackers)-Tracker, nachverfolgte [Abfragen](#tracked-queries)und [gespeicherte Abfragen](#saved-queries).
   
 Um Ihre Threat Tracker für Ihre Organisation anzuzeigen und zu verwenden, wechseln Sie zum Security &amp; Compliance Center ([https://protection.office.com](https://protection.office.com)), und wählen Sie Threat- **Management** \> - **Bedrohungs Verfolgung**aus.
   

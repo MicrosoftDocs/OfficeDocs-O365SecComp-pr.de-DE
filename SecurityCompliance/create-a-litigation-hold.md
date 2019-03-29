@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Rechtsstreits in Office 365
+title: Erstellen eines Beweissicherungsverfahrens
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,14 +10,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: f2d3793eac84e8f80158842c833c30986b0549c5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218655"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862407"
 ---
-# <a name="create-a-litigation-hold-in-office-365"></a>Erstellen eines Rechtsstreits in Office 365
+# <a name="create-a-litigation-hold"></a>Erstellen eines Beweissicherungsverfahrens
 
 Sie können ein Postfach für die Aufbewahrung von Rechtsstreitigkeiten platzieren, um alle Postfachinhalte beizubehalten, einschließlich gelöschter Elemente und der ursprünglichen Versionen geänderter Elemente. Wenn Sie ein Benutzerpostfach für die Beweissicherung festlegen, werden Inhalte im Archivpostfach des Benutzers (falls aktiviert) ebenfalls beibehalten. Wenn Sie einen Haltestatus erstellen, können Sie eine Aufbewahrungsdauer (auch als *zeitbasierte Aufbewahrung*bezeichnet) angeben, sodass gelöschte und geänderte Elemente für einen bestimmten Zeitraum aufbewahrt und dann endgültig aus dem Postfach gelöscht werden. Oder Sie können Inhalte auf unbestimmte Zeit aufbewahren (so genannte *unendliche Haltestatus*) oder bis die Beweissicherung entfernt wird. Wenn Sie einen Zeitraum für die Aufbewahrungsdauer angeben, wird er ab dem Datum berechnet, an dem eine Nachricht empfangen oder ein Postfachelement erstellt wird. 
   
@@ -36,28 +36,56 @@ Hier erfahren Sie, was passiert, wenn Sie einen Rechtsstreit halten.
 - Um ein Exchange Online-Postfach für die Aufbewahrung von Rechtsstreitigkeiten zu aktivieren, muss ihm eine Exchange Online-Plan 2-Lizenz zugewiesen sein. Wenn einem Postfach eine Exchange Online-Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um es in der Warteschleife zu platzieren.
     
 
-## <a name="place-a-mailbox-on-litigation-hold-in-the-office-365-admin-center"></a>AufbewahrungsPflicht für ein Postfach im Office 365 Admin Center
+## <a name="place-a-mailbox-on-litigation-hold"></a>Aktivieren des Beweissicherungsverfahrens für ein Postfach
 
-Im folgenden finden Sie die Schritte, mit denen Sie mit dem Office 365 Admin Center ein maibox in den Prozess halten können.
+Im folgenden finden Sie die Schritte, mit denen Sie ein Postfach mithilfe der Exchange-Verwaltungskonsole in einem Rechtsstreit halten können.
 
-1. Wechseln Sie https://portal.office.com/adminportal/home zu, und melden Sie sich mit ihrem globalen Administratorkonto an.
-2. Klicken Sie im linken Navigationsbereich auf**aktive Benutzer Benutzer** . **** > 
-3. Wählen Sie den Benutzer aus, dessen Postfach Sie bei der Beweissicherung platzieren möchten.
-4. Klicken Sie auf der Seite "Fly-Out" auf **e-Mail-Einstellungen**, und klicken Sie dann neben **rechtsStreit anhalten**auf **Bearbeiten** .
-5. Klicken Sie auf der Seite für die **Beweis** Sicherung auf die Umschaltfläche, um das Verfahren für die Aufbewahrung zu aktivieren, und füllen Sie die folgenden optionalen Einstellungen aus:
- 
-    ![O365_LitigationHold1. png](media/O365-LitigationHold1.png)
+1. Wechseln Sie [https://outlook.office.com/ecp](https://outlook.office.com/ecp) zu, und melden Sie sich mit ihrem globalen Administratorkonto an.
 
-    a. **Hold-Dauer (Tage)** – verwenden Sie dieses Feld, um einen zeitbasierten Haltebereich zu erstellen, und geben Sie an, wie lange Postfachelemente aufbewahrt werden, wenn das Postfach in den Rechtsstreit versetzt wird. Die Dauer wird anhand des Datums berechnet, an dem ein Postfachelement empfangen oder erstellt wird. Wenn Sie dieses Feld leer lassen, werden Elemente dauerhaft oder bis zum Entfernen des haltebereichs aufbewahrt. Verwenden Sie Days, um die Dauer anzugeben.
+2. Klicken Sie im linken Navigationsbereich auf **Empfänger _GT_ Postfächer** .
+
+3. Wählen Sie das Postfach aus, das Sie für die Beweissicherung festlegen möchten, und klicken Sie dann auf **Bearbeiten**.
+
+4. Klicken Sie auf der Eigenschaftenseite des Postfachs auf **Postfachfunktionen**.
     
-    b. **Hinweis** : Verwenden Sie dieses Feld, um dem Benutzer mitzuteilen, dass sein Postfach in einem Rechtsstreit gehalten wird. Der Hinweis wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn er Outlook 2010 oder höher verwendet. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
-     
-    c. **Webseite** – verwenden Sie dieses Feld, um den Benutzer zu einer Website zu leiten, um weitere Informationen zur Aufbewahrung von Rechtsstreitigkeiten zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn Sie Outlook 2010 oder höher verwenden. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
- 
-6. Klicken Sie auf speichern, um die Beweis **Sicherung** zu erstellen.
+5. Klicken Sie unter **Beweissicherungsverfahren: Deaktiviert** auf **Aktivieren**, um für das Postfach das Beweissicherungsverfahren zu aktivieren.
+    
+6. Geben Sie auf der Seite **Litigation Hold** die folgenden optionalen Informationen ein: 
+    
+    - **Dauer der Streitbeilegung (Tage)** – verwenden Sie dieses Feld, um einen zeitbasierten Haltebereich zu erstellen, und geben Sie an, wie lange Postfachelemente aufbewahrt werden sollen, wenn das Postfach in den Rechtsstreit versetzt wird. Der Zeitraum beginnt mit dem Datum, an dem das Postfachelement empfangen oder erstellt wurde. Wenn die Aufbewahrungsdauer für ein bestimmtes Element abgelaufen ist, wird das Element nicht mehr beibehalten. Wenn Sie dieses Feld leer lassen, werden Elemente unbegrenzt aufbewahrt oder bis die Aufbewahrung entfernt wird. Geben Sie die Dauer in Tagen an.
+    
+    - **Hinweis** : Verwenden Sie dieses Feld, um den Benutzer darüber zu informieren, dass das Postfach in einem Rechtsstreit gehalten wird. Der Hinweis wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn er Outlook 2010 oder höher verwendet. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
+    
+    - **URL** -verwenden Sie dieses Feld, um den Benutzer zu einer Website zu leiten, um weitere Informationen zur Aufbewahrung von Rechtsstreitigkeiten zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn Sie Outlook 2010 oder höher verwenden. Um auf diese Seite zuzugreifen, können Benutzer in Outlook auf **Datei** klicken.
 
-Nachdem Sie den Haltebereich erstellt haben, wird in den e-Mail-Einstellungen auf der Seite "Fly-Out" angezeigt, dass für den ausgewählten Benutzer die Option "Beweissicherung" aktiviert ist.
+7. Klicken Sie auf der Seite für die **Beweis** **Sicherung auf Speichern** , und klicken Sie dann auf der Eigenschaftenseite des Postfachs auf **Speichern** .
 
-![O365_LitigationHold2. png](media/O365-LitigationHold2.png)
+### <a name="create-a-litigation-hold-using-powershell"></a>Erstellen einer Beweissicherung mithilfe von PowerShell
 
-Weitere Informationen zum Erstellen und Verwalten von Rechtsstreitigkeiten und zum Verwenden von Exchange Online PowerShell zum Massen Erstellen von Rechtsstreitigkeiten finden Sie unter [platzieren eines Postfachs in der Beweis](https://docs.microsoft.com/office365/SecurityCompliance/place-a-mailbox-on-litigation-hold)Sicherung.
+Sie können auch eine Beweissicherung erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)ausführen:
+
+```
+Set-Mailbox <username> -LitigationHoldEnabled $true
+```
+
+Der vorherige Befehl behält Elemente unbegrenzt bei, da die Aufbewahrungsdauer nicht angegeben wird. So erstellen Sie eine zeitbasierte Aufbewahrung mit dem folgenden Befehl:
+
+```
+Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
+```
+
+Weitere Informationen finden Sie unter [Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/set-mailbox).
+
+## <a name="how-does-litigation-hold-work"></a>Wie funktioniert das Beweissicherungsverfahren?
+
+Beim normalen Löschworkflow wird ein dauerhaft gelöschtes (UMSCHALT+ENTF) oder aus dem Ordner „Gelöschte Elemente" gelöschtes Postfachelement in den Unterordner „Löschvorgänge" des Ordners „Wiederherstellbare Elemente" verschoben. Beim Anwenden einer Löschrichtlinie (hierbei handelt es sich um ein Aufbewahrungstag mit einer konfigurierten Aufbewahrungsaktion) werden Elemente auch nach Ablauf des Aufbewahrungszeitraums in den Unterordner „Löschvorgänge" verschoben. Beim dauerhaften Löschen eines Elements im Ordner „Wiederherstellbare Elemente" durch einen Benutzer oder nach Ablauf der Aufbewahrungsdauer wird das Element in den Unterordner „Endgültige Löschvorgänge" des Ordners „Wiederherstellbare Elemente" verschoben und zum endgültigen Löschen markiert. Das Element wird beim nächsten Verarbeiten des Postfachs vom Assistenten für verwalteten Ordner aus Exchange dauerhaft gelöscht.
+
+Ist für das Postfach das Beweissicherungsverfahren aktiviert, werden die Elemente im Unterordner „Endgültige Löschvorgänge" für die für das Beweissicherungsverfahren angegebene Aufbewahrungsdauer aufbewahrt. Die Aufbewahrungsdauer wird anhand des ursprünglichen Datums berechnet,an dem ein Element empfangen oder erstellt wurde und legt fest, wie lange die Elemente im Unterordner „Endgültige Löschvorgänge" aufbewahrt werden. Wenn die Aufbewahrungsdauer für ein Element im Unterordner „Endgültige Löschvorgänge" abläuft, wird das Element zum endgültigen Löschen vorgemerkt und beim nächsten Verarbeiten des Postfachs vom Assistenten für verwalteten Ordner dauerhaft aus Exchange gelöscht. Wenn die dauerhafte Aufbewahrung für ein Postfach aktiviert ist, werden die Elemente nicht aus dem Unterordner „Endgültige Löschvorgänge" gelöscht.
+
+Die folgende Abbildung zeigt die Unterordner in den Ordnern „Wiederherstellbare Elemente" und den Aufbewahrungsworkflowprozess.
+
+![Lebenszyklus](media/LitigationHoldLifeCycle.png)
+
+> [!NOTE]
+> Wenn ein mit einem eDiscovery-Fall verbundener Haltebereich auf ein Postfach gesetzt wird, werden die gelöschten Elemente aus dem Unterordner "Löschvorgänge" in den Unterordner DiscoveryHolds verschoben und bleiben erhalten, bis das Postfach aus dem eDiscovery-Speicher freigegeben wird.
+  

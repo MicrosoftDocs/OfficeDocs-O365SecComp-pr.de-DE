@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Konformitäts Grenzen, um logische Grenzen innerhalb einer Office 365-Organisation zu erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Konformitäts Grenzen verwenden Sie die Filterung von Suchberechtigungen (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 2671711d5b37f9f0f8793bb528741dc7b6d05680
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296428"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862437"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -101,7 +101,6 @@ Unter Verwendung des Contoso-Konformitäts Grenzen-Szenarios müssen vier Rollen
 
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Schritt 4: Erstellen eines Filters für Suchberechtigungen zum Erzwingen der Konformitäts Grenze
-<a name="step4"> </a>
 
 Nachdem Sie Rollengruppen für jede Agentur erstellt haben, besteht der nächste Schritt darin, die Such Berechtigungsfilter zu erstellen, die jede Rollengruppe ihrer jeweiligen Agentur zuordnen und die Konformitäts Grenze selbst definieren. Sie müssen für jede Agentur einen Filter für Suchberechtigungen erstellen. Weitere Informationen zum Erstellen von Sicherheits Berechtigungs Filtern finden Sie unter [configure Permissions Filtering for Content Search](permissions-filtering-for-content-search.md).
   
@@ -180,39 +179,40 @@ Beachten Sie beim Verwalten von eDiscovery-Fällen und Untersuchungen, die Konfo
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen
 
-Mit den Such Berechtigungs filtern können Sie auch steuern, wohin der Inhalt für den Export weitergeleitet wird und welches Rechenzentrum beim Durchsuchen von SharePoint-Websites und OneDrive-Konten in einer [SharePoint Multi-Geo-Umgebung](https://go.microsoft.com/fwlink/?linkid=860840)durchsucht werden kann:
+Mit den Such Berechtigungs filtern können Sie auch steuern, wohin der Inhalt für den Export weitergeleitet wird und welches Rechenzentrum beim Durchsuchen von Inhaltsspeicherorten in einer [Multi-Geo-Umgebung für SharePoint](https://go.microsoft.com/fwlink/?linkid=860840)durchsucht werden kann.
   
-- Exportieren von Suchergebnissen aus einem bestimmten Rechenzentrum Dies führt dazu, dass Sie den Speicherort des Datencenters angeben, aus dem Suchergebnisse exportiert werden.
+- **Suchergebnisse exportieren** – Sie können die Suchergebnisse aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten aus einem bestimmten Datencenter exportieren. Dies führt dazu, dass Sie den Speicherort des Datencenters angeben, aus dem Suchergebnisse exportiert werden.
+
+    Verwenden Sie den Parameter **Region** für die Cmdlets **New-ComplianceSecurityFilter** oder **Set-ComplianceSecurityFilter** , um das Datencenter zu erstellen oder zu ändern, über das der Export weitergeleitet wird.
+  
+    |**Übergebener Wert**|**Datencenter-Speicherort**|
+    |:-----|:-----|
+    |NAM  <br/> |Nordamerika (tatsächliche Rechenzentren befinden sich in den USA)  <br/> |
+    |EUR  <br/> |Europa  <br/> |
+    |APC  <br/> |Asien/Pazifik  <br/> |
+    |CAN <br/> |Kanada
     
-- Routensuche von SharePoint-Websites und OneDrive-Konten in einem Satelliten-Rechenzentrum. Sie können also den Speicherort des Rechenzentrums angeben, an dem die Suche ausgeführt wird.
+- **Routen von Inhalts suchen** – Sie können die Inhaltssuche von SharePoint-Websites und OneDrive-Konten zu einem Satellitendaten Center weiterleiten. Sie können also den Speicherort des Datencenters angeben, an dem die Suche ausgeführt wird.
     
-Verwenden Sie den Parameter **Region** für die Cmdlets **New-ComplianceSecurityFilter** oder **Set-ComplianceSecurityFilter** , um das Datencenter zu erstellen oder zu ändern, über das der Export weitergeleitet wird.
+    Verwenden Sie die folgenden Werte für die **Region** -Parameterwerte, um zu steuern, welches Datencenter beim Durchsuchen von SharePoint-Websites und OneDrive-Speicherorten in der Inhaltssuche ausgeführt wird. Beachten Sie, dass in der folgenden Tabelle gezeigt wird, welche Datencenter-Exporte weitergeleitet werden. 
   
-|**Übergebener Wert**|**Datencenter-Speicherort**|
-|:-----|:-----|
-|NAM  <br/> |Nordamerika (tatsächliche Rechenzentren befinden sich in den USA)  <br/> |
-|EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Asien/Pazifik  <br/> |
-|CAN <br/> |Kanada
+    |**Übergebener Wert**|**Datencenter-Routing Speicherorte für den Export**|
+    |:-----|:-----|
+    |NAM  <br/> |UNS  <br/> |
+    |EUR  <br/> |Europa  <br/> |
+    |APC  <br/> |Asien/Pazifik  <br/> |
+    |CAN  <br/> |UNS  <br/> |
+    |AUS  <br/> |Asien/Pazifik  <br/> |
+    |KOR  <br/> |Das Standarddaten Center der Organisation  <br/> |
+    |GBR  <br/> |Europa  <br/> |
+    |JPN  <br/> |Asien/Pazifik  <br/> |
+    |IND  <br/> |Asien/Pazifik  <br/> |
+    |LAM  <br/> |UNS  <br/> |
    
-Entsprechend können Sie die folgenden Werte für die **Region** -Parameterwerte verwenden, um zu steuern, welches Rechenzentrum beim Durchsuchen von SharePoint-und OneDrive-Speicherorten ausgeführt wird. Beachten Sie, dass in der folgenden Tabelle gezeigt wird, welche Datencenter-Exporte weitergeleitet werden. 
+> [!NOTE]
+> Wenn Sie den Parameter **Region** für einen Filter für Suchberechtigungen nicht angeben, wird die SharePoint-Standardregion Organisationen durchsucht, und die Suchergebnisse werden in das nächstgelegene Datencenter exportiert. 
   
-|**Übergebener Wert**|**Rechenzentrums-Routing Speicherorte für den Export**|
-|:-----|:-----|
-|NAM  <br/> |US  <br/> |
-|EUR  <br/> |Europa  <br/> |
-|APC  <br/> |Asien/Pazifik  <br/> |
-|CAN  <br/> |US  <br/> |
-|AUS  <br/> |Asien/Pazifik  <br/> |
-|KOR  <br/> |Das Standarddaten Center der Organisation  <br/> |
-|GBR  <br/> |Europa  <br/> |
-|JPN  <br/> |Asien/Pazifik  <br/> |
-|IND  <br/> |Asien/Pazifik  <br/> |
-|LAM  <br/> |US  <br/> |
-   
- **Hinweis:** Wenn Sie den Parameter Region für einen Filter für Suchberechtigungen nicht angeben, wird die SharePoint-Standardregion Organisationen durchsucht, und die Suchergebnisse werden in das nächstgelegene Rechenzentrum exportiert. 
-  
-Im folgenden finden Sie Beispiele für die Verwendung des **-Region-** Parameters beim Erstellen von Such Berechtigungs Filtern für Konformitäts Grenzen. Dabei wird davon ausgegangen, dass sich die Fourth Coffee-Tochtergesellschaft in Nordamerika befindet und dass es sich um Weinkellerei in Europa handelt. 
+Im folgenden finden Sie Beispiele für die Verwendung des **Region** -Parameters beim Erstellen von Such Berechtigungs Filtern für Konformitäts Grenzen. Dabei wird davon ausgegangen, dass sich die Fourth Coffee-Tochtergesellschaft in Nordamerika befindet und dass es sich um Weinkellerei in Europa handelt. 
   
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM

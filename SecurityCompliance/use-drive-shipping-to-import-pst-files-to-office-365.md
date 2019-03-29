@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Für Administratoren: erfahren Sie, wie Sie die PST-Dateien Ihrer Organisation in Office 365-Postfächern Massenimportieren, indem Sie PST-Dateien auf eine Festplatte kopieren und dann an Microsoft versenden. '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354747"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950472"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Verwenden des Laufwerk Versands zum Importieren Ihrer Organisations-PST-Dateien in Office 365
 
@@ -86,16 +86,16 @@ Häufig gestellte Fragen zur Verwendung des Laufwerk Versands zum Importieren vo
     
 - Beim Versand der Festplatte an Microsoft werden möglicherweise internationale Grenzen überschritten. Wenn dies der Fall ist, sind Sie dafür verantwortlich, dass die Festplatte und die darauf befindlichen Daten in Übereinstimmung mit dem jeweils geltenden Recht importiert bzw. exportiert werden. Erkundigen Sie sich vor dem Versenden der Festplatte bei dem entsprechenden Berater, ob die Festplatte und die Daten legal an das angegebene Microsoft-Rechenzentrum versandt werden können. Dadurch wird sichergestellt, dass die Festplatte Microsoft termingerecht erreicht.
     
-- Bei diesem Verfahren werden ein sicherer Speicherschlüssel und ein BitLocker-Verschlüsselungsschlüssel kopiert und gespeichert. Ergreifen Sie entsprechende Vorsichtsmaßnahmen, um diese Schlüssel so zu schützen, wie Sie Kennwörter oder andere Sicherheitsinformationen schützen würden. Sie können sie zum Beispiel in einem kennwortgeschützten Microsoft Word-Dokument oder auf einem verschlüsselten USB-Laufwerk speichern. Im Abschnitt [Weitere Informationen](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) finden Sie ein Beispiel für diese Tasten. 
+- Bei diesem Verfahren werden ein sicherer Speicherschlüssel und ein BitLocker-Verschlüsselungsschlüssel kopiert und gespeichert. Ergreifen Sie entsprechende Vorsichtsmaßnahmen, um diese Schlüssel so zu schützen, wie Sie Kennwörter oder andere Sicherheitsinformationen schützen würden. Sie können sie zum Beispiel in einem kennwortgeschützten Microsoft Word-Dokument oder auf einem verschlüsselten USB-Laufwerk speichern. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ein Beispiel für diese Tasten. 
     
-- Nachdem PST-Dateien in ein Office 365-Postfach importiert wurden, wird die Aufbewahrungszeit für das Postfach für eine unbegrenzte Dauer aktiviert. Dies führt dazu, dass die dem Postfach zugewiesene Aufbewahrungsrichtlinie erst verarbeitet wird, wenn Sie die Aufbewahrungsdauer deaktivieren oder ein Datum festlegen, um den Haltestatus zu deaktivieren. Warum tun wir das? Wenn Nachrichten, die in ein Postfach importiert wurden, alt sind, werden Sie möglicherweise dauerhaft gelöscht (bereinigt), da ihre Aufbewahrungszeit auf Grundlage der für das Postfach konfigurierten Aufbewahrungseinstellungen abgelaufen ist. Wenn Sie die Aufbewahrungszeit für das Postfach aktivieren, wird der Postfachbesitzer zum Verwalten dieser neu importierten Nachrichten oder zum Ändern der Aufbewahrungseinstellungen für das Postfach Zeit. Im Abschnitt [Weitere Informationen](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) finden Sie Vorschläge zum Verwalten der Aufbewahrungsdauer. 
+- Nachdem PST-Dateien in ein Office 365-Postfach importiert wurden, wird die Aufbewahrungszeit für das Postfach für eine unbegrenzte Dauer aktiviert. Dies führt dazu, dass die dem Postfach zugewiesene Aufbewahrungsrichtlinie erst verarbeitet wird, wenn Sie die Aufbewahrungsdauer deaktivieren oder ein Datum festlegen, um den Haltestatus zu deaktivieren. Warum tun wir das? Wenn Nachrichten, die in ein Postfach importiert wurden, alt sind, werden Sie möglicherweise dauerhaft gelöscht (bereinigt), da ihre Aufbewahrungszeit auf Grundlage der für das Postfach konfigurierten Aufbewahrungseinstellungen abgelaufen ist. Wenn Sie die Aufbewahrungszeit für das Postfach aktivieren, wird der Postfachbesitzer zum Verwalten dieser neu importierten Nachrichten oder zum Ändern der Aufbewahrungseinstellungen für das Postfach Zeit. Im Abschnitt [Weitere Informationen](#more-information) finden Sie Vorschläge zum Verwalten der Aufbewahrungsdauer. 
     
 - Standardmäßig beträgt die maximale Nachrichtengröße, die von einem Office 365-Postfach empfangen werden kann, 35 MB. Der Grund ist, dass der Standardwert für die *MaxReceiveSize* -Eigenschaft für ein postfach auf 35 MB festgelegt ist. Das Limit für die maximale Nachrichtenempfangs Größe in Office 365 beträgt jedoch 150 MB. Wenn Sie also eine PST-Datei importieren, die ein Element enthält, das größer als 35 MB ist, wird der Office 365-Import Dienst automatisch den Wert der *MaxReceiveSize* -Eigenschaft des zielpostfachs auf 150 MB ändern. Dadurch können Nachrichten bis zu 150 MB in Benutzerpostfächer importiert werden. 
     
     > [!TIP]
     > Um die Nachrichtenempfangs Größe für ein Postfach zu identifizieren, können Sie diesen Befehl in Exchange Online PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`ausführen. 
   
-- Sie können PST-Dateien in ein inaktives Postfach in Office 365 importieren. Hierzu geben Sie die GUID des inaktiven Postfachs im `Mailbox` Parameter in der PST-Import Zuordnungsdatei an. Weitere Informationen finden Sie unter [Schritt 3: Erstellen der PST-Import Zuordnungsdatei](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) . 
+- Sie können PST-Dateien in ein inaktives Postfach in Office 365 importieren. Hierzu geben Sie die GUID des inaktiven Postfachs im `Mailbox` Parameter in der PST-Import Zuordnungsdatei an. Weitere Informationen finden Sie unter [Schritt 3: Erstellen der PST-Import Zuordnungsdatei](#step-3-create-the-pst-import-mapping-file) . 
     
 - In einer Exchange-hybridbereitstellung können Sie PST-Dateien in ein cloudbasierten Archivpostfach für einen Benutzer importieren, dessen primäres Postfach lokal ist. Führen Sie dazu die folgenden Schritte in der PST-Import Zuordnungsdatei aus:
     
@@ -103,7 +103,7 @@ Häufig gestellte Fragen zur Verwendung des Laufwerk Versands zum Importieren vo
     
   - Geben Sie den Wert **true** im `IsArchive` Parameter an. 
     
-    Weitere Informationen finden Sie unter [Schritt 3: Erstellen der PST-Import Zuordnungsdatei](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) . 
+    Weitere Informationen finden Sie unter [Schritt 3: Erstellen der PST-Import Zuordnungsdatei](#step-3-create-the-pst-import-mapping-file) . 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>Schritt 1: Herunterladen des Secure Storage Keys und des PST-Import Tools
 
@@ -308,7 +308,7 @@ Im nächsten Schritt erstellen Sie den PST-Importauftrag im Import Dienst in Off
 Der nächste Schritt besteht darin, die Festplatte an Microsoft zu senden und dann die Nachverfolgungsnummer für die Versand-und Rückgabe Informationen für den Laufwerk Versandauftrag bereitzustellen. Nachdem das Laufwerk von Microsoft eingegangen ist, dauert es zwischen 7 und 10 Werktage für das Personal des Rechenzentrums, Ihre PST-Dateien in den Azure-Speicherbereich Ihrer Organisation hochzuladen.
   
 > [!NOTE]
-> Wenn Sie die Nachverfolgungsnummer und die Rückgabe Informationen nicht innerhalb von 14 Tagen nach dem Erstellen des importauftrags angeben, ist der Importauftrag abgelaufen. In diesem Fall müssen Sie einen neuen Importauftrag für den Laufwerk Versand (siehe [Schritt 4: Erstellen eines PST-importauftrags in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)) erstellen und die Laufwerk Datei und die PST-Import Zuordnungsdatei erneut übermitteln. 
+> Wenn Sie die Nachverfolgungsnummer und die Rückgabe Informationen nicht innerhalb von 14 Tagen nach dem Erstellen des importauftrags angeben, ist der Importauftrag abgelaufen. In diesem Fall müssen Sie einen neuen Importauftrag für den Laufwerk Versand (siehe [Schritt 4: Erstellen eines PST-importauftrags in Office 365](#step-4-create-a-pst-import-job-in-office-365)) erstellen und die Laufwerk Datei und die PST-Import Zuordnungsdatei erneut übermitteln. 
   
 ### <a name="ship-the-hard-drive"></a>Versenden der Festplatte
 
@@ -502,7 +502,7 @@ So installieren Sie den Azure Storage Explorer und stellen eine Verbindung mit I
     
   - Sie können die Aufbewahrungszeit nach einem bestimmten Zeitraum deaktivieren, indem Sie den `Set-Mailbox -RetentionHoldEnabled $false` Befehl ausführen. Weitere Informationen finden Sie unter [Platzieren einer aufbewahrungsZeit für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - Sie können die Aufbewahrungsdauer so konfigurieren, dass Sie zu einem bestimmten Zeitpunkt in der Zukunft deaktiviert wird. Führen Sie dazu den `Set-Mailbox -EndDateForRetentionHold <date>` Befehl aus. Wenn Sie beispielsweise davon ausgehen, dass das heutige Datum 1. Juli 2016 ist und die Aufbewahrungszeit in 30 Tagen deaktiviert werden soll, führen Sie den `Set-Mailbox -EndDateForRetentionHold 8/1/2016`folgenden Befehl aus:. In diesem Szenario lassen Sie die *RentionHoldEnabled* -Eigenschaft auf *true* festgelegt. Weitere Informationen finden Sie unter [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Sie können die Aufbewahrungsdauer so konfigurieren, dass Sie zu einem bestimmten Zeitpunkt in der Zukunft deaktiviert wird. Führen Sie dazu den `Set-Mailbox -EndDateForRetentionHold <date>` Befehl aus. Wenn Sie beispielsweise davon ausgehen, dass das heutige Datum 1. Juni 2016 ist und die Aufbewahrungszeit in 30 Tagen deaktiviert werden soll, führen Sie den `Set-Mailbox -EndDateForRetentionHold 7/1/2016`folgenden Befehl aus:. In diesem Szenario lassen Sie die *RentionHoldEnabled* -Eigenschaft auf *true*festgelegt. Weitere Informationen finden Sie unter [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
   - Sie können die Einstellungen für die Aufbewahrungsrichtlinie ändern, die dem Postfach zugewiesen ist, sodass ältere importierte Elemente nicht sofort gelöscht oder in das Archivpostfach des Benutzers verschoben werden. Sie können beispielsweise das Aufbewahrungs Alter für eine Lösch-oder Archivrichtlinie verlängern, die dem Postfach zugewiesen ist. In diesem Szenario würden Sie die Aufbewahrungszeit für das Postfach deaktivieren, nachdem Sie die Einstellungen der Aufbewahrungsrichtlinie geändert haben. Weitere Informationen finden Sie unter [Einrichten einer Archiv-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     

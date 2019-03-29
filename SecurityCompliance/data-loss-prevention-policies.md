@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639142"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862537"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -100,7 +100,7 @@ Mit den derzeit verfügbaren Bedingungen können Sie ermitteln, ob:
   
 - Inhalt enthält eine Art vertraulicher Informationen.
     
-- Inhalt enthält eine Bezeichnung. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie](data-loss-prevention-policies.md#label).
+- Inhalt enthält eine Bezeichnung. Weitere Informationen finden Sie im folgenden Abschnitt [Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Inhalte für Personen außerhalb oder innerhalb der Organisation freigegeben werden.
     
@@ -112,7 +112,7 @@ Eine DLP-Richtlinie kann dazu beitragen, vertrauliche Informationen zu schützen
   
 Wenn eine DLP-Richtlinie nach einem vertraulichen Informationstyp wie einer Kreditkartennummer sucht, sucht er nicht einfach nach einer 16-stelligen Nummer. Jede Art vertraulicher Informationen wird durch eine Kombination der folgenden Elemente definiert und anhand dieser ermittelt:
   
-- Schlüsselwörter
+- Schlüsselwörter
     
 - Interne Funktionen zur Überprüfung der Prüfsummen oder Zusammensetzung
     

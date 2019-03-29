@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Mit Office 365 Cloud App Security können Sie ein Benutzerkonto anhalten oder aufheben. '
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215095"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862447"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Sperren oder Wiederherstellen eines Benutzerkontos in Office 365 Cloud App Security
 
 |Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](#next-steps)<br/> |
    
 Angenommen, Sie erhalten eine Warnung, dass eines der Benutzerkonten Ihrer Organisation für Office 365 kompromittiert wurde. Oder nehmen wir an, Sie haben eine Warnung erhalten, die angibt, dass mit einem Benutzerkonto ein Fehler aufgetreten ist. Mit Office 365 Cloud App Security können Sie ein Benutzerkonto anhalten und später wiederherstellen, nachdem Sie die empfangenen Warnungen untersucht haben.
   

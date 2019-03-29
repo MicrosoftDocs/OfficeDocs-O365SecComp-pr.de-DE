@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die Untersuchung und Antwort von Office 365 und die ersten Schritte.
-ms.openlocfilehash: f30a3c8007d2643a67f59d9421496e9ae0bc6e8c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693134"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862519"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Erste Schritte mit der BedrohungsAnalyse und-Antwort (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Untersuchung und Reaktionsmöglichkeiten für Bedrohungen unterstützen die Einb
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Kennenlernen des Bedrohungs Dashboards, des Explorers und der vorFälle
 
-Diese Funktionen der Bedrohungsanalyse und-Reaktion werden &amp; im Security Compliance Center als eine Reihe von Tools und Antwort Workflows, einschließlich des [Bedrohungs Dashboards](get-started-with-ti.md#dashboard), des Bedrohungs- [Explorers](get-started-with-ti.md#explorer), der Vorfälle, des Angriffs, angezeigt. [](get-started-with-ti.md#incidents) [ Simulator](attack-simulator.md)und automatisierte UntersuchUngen _AMP_ Antwort.
+Diese Funktionen der Bedrohungsanalyse und-Reaktion werden &amp; im Security Compliance Center als eine Reihe von Tools und Antwort Workflows, einschließlich des [Bedrohungs Dashboards](#threat-dashboard), des Bedrohungs- [Explorers](#threat-explorer), der Vorfälle, des Angriffs, angezeigt. [](get-started-with-ti.md#incidents) [ Simulator](attack-simulator.md)und automatisierte UntersuchUngen _AMP_ Antwort.
   
 ### <a name="threat-dashboard"></a>Bedrohungs Dashboard
 
@@ -47,7 +47,7 @@ Verwenden Sie das Bedrohungs-Dashboard (Dies wird auch als [Sicherheits-Dashboar
   
 Um dieses Dashboard anzuzeigen und zu verwenden, navigieren Sie &amp; im Security Compliance Center zu **Threat Management** \> **Dashboard**.
   
-### <a name="threat-explorer"></a>Bedrohungs-Explorer
+### <a name="threat-explorer"></a>Sicherheitsrisiken-Explorer
 
 Verwenden Sie den Bedrohungs-Explorer (Dies wird auch als Explorer bezeichnet), um Bedrohungen zu analysieren, die Anzahl der Angriffe über die Zeit zu erkennen und Daten nach Bedrohungs Familien, der Angreifer-Infrastruktur und mehr zu analysieren. Der Bedrohungs-Explorer ist der Ausgangspunkt für den Untersuchungs Workflow eines Sicherheitsanalysten.
   

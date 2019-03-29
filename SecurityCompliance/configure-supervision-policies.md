@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Einrichten einer Aufsichts Übersichts Richtlinie zur Erfassung der Mitarbeiterkommunikation zur Überprüfungen.
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701290"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866391"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -71,6 +71,34 @@ Anhand des folgenden Diagramms können Sie Gruppen in Ihrer Organisation für Au
 |ÜberWachte Benutzer | Verteilergruppen <br> Office 365-Gruppen | Dynamische Verteilergruppen |
 | Reviewers | E-Mail-aktivierte Sicherheitsgruppen  | Verteilergruppen <br> Dynamische Verteilergruppen |
   
+Um überwachte Benutzer in großen Unternehmen zu verwalten, müssen Sie möglicherweise alle Benutzer über eine sehr große Gruppe hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Dies kann Ihnen helfen, Tausende von Benutzern mit einer einzigen Richtlinie zu überwachen und die Aufsichtsrichtlinie zu aktualisieren, wenn neue Mitarbeiter Ihrer Organisation beitreten.
+
+1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften. Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder für andere Office 365-Dienste verwendet wird.
+
+    - **MemberDepartRestriction = geschlossen**. Dadurch wird sichergestellt, dass Benutzer sich nicht aus der Verteilergruppe entfernen können.
+    - **MemberJoinRestriction = geschlossen**. Dadurch wird sichergestellt, dass Benutzer sich nicht der Verteilergruppe hinzufügen können.
+    - **ModerationEnabled = true**. Dadurch wird sichergestellt, dass alle an diese Gruppe gesendeten Nachrichten genehmigt werden müssen und dass die Gruppe nicht für die Kommunikation außerhalb der Aufsichtsrichtlinien Konfiguration verwendet wird.
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. Wählen Sie ein nicht verwendetes [benutzerdefiniertEs Exchange-Attribut](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) aus, das zum Nachverfolgen der Benutzer hinzugefügt wurde, die der Aufsichtsrichtlinie in Ihrer Organisation zugeordnet wurden.
+
+3. Führen Sie das folgende PowerShell-Skript nach einem wiederkehrenden Zeitplan aus, um der Aufsichtsrichtlinie Benutzer hinzuzufügen:
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 - [Erstellen und Verwalten von Verteilergruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)

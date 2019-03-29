@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center zum Durchsuchen von Postfächern, SharePoint Online-Websites und OneDrive für Geschäftsstandorte. '
-ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223734"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935320"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center 
 
@@ -29,7 +29,7 @@ Sie können das eDiscovery-Tool für die Inhaltssuche im Office 365 &amp; Securi
     
 - Skype for Business-Unterhaltungen
     
-- Microsoft Teams 
+- Microsoft Teams 
     
 - Office 365-Gruppen
     
@@ -37,17 +37,17 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
   
  **Inhalt**
   
-[Erstellen einer Suche](run-a-content-search-in-the-security-and-compliance-center.md#create)
+[Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
 [Exportieren der Suchergebnisse](run-a-content-search-in-the-security-and-compliance-center.md#export)
   
-[Vorschau auf Suchergebnisse anzeigen](run-a-content-search-in-the-security-and-compliance-center.md#preview)
+[Preview search results](run-a-content-search-in-the-security-and-compliance-center.md#preview)
   
-[Aktualisieren von Suchergebnissen](run-a-content-search-in-the-security-and-compliance-center.md#restart)
+[Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Bearbeiten einer Suche](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Erneutes Ausführen einer Suche](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -57,7 +57,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
 - Damit Sie Zugriff auf die Seite " **Inhaltssuche** " haben, um Suchergebnisse und eine Vorschau zu durchsuchen und zu exportieren, muss ein Administrator, ein Compliance Officer oder ein eDiscovery-Manager Mitglied der eDiscovery &amp; -Manager-Rollengruppe im Security Compliance Center. Sie müssen in Exchange Online, SharePoint Online oder für OneDrive für Unternehmen-Websites keine zusätzlichen Suchberechtigungen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
     
-- Für die Inhaltssuche gelten Grenzwerte, um die Integrität und Qualität der Dienste für Office 365-Organisationen zu gewährleisten. In den meisten Fällen können Sie diese Grenzwerte nicht ändern, aber Sie sollten Sie beachten, damit Sie diese Einschränkungen bei der Planung, beim Ausführen und bei der Problembehandlung bei der Suche berücksichtigen können. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
+- Für die Inhaltssuche gelten Grenzwerte, um die Integrität und Qualität der Dienste für Office 365-Organisationen zu gewährleisten. In den meisten Fällen können diese Grenzwerte nicht geändert werden, Sie sollten die Werte jedoch beachten, damit Sie die Grenzen bei der Planung, beim Ausführen und bei der Problembehandlung von Suchvorgängen berücksichtigen können. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
     
 - Weitere Informationen finden Sie im Abschnitt Geschätzte Suchzeiten basierend auf der Anzahl der Postfächer, die in einer einzelnen Inhaltssuche durchsucht werden. 
     
@@ -69,9 +69,9 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
     Im Abschnitt finden Sie Tipps zur Suche nach Inhalten in Office 365-Gruppen und Microsoft Teams. 
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
-## <a name="create-a-search"></a>Erstellen einer Suche
+## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
@@ -120,13 +120,13 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
     Bei öffentlichen Ordnern können Sie alle öffentlichen Ordner in Ihrer Exchange Online-Organisation durchsuchen oder keine öffentlichen Ordner durchsuchen.
     
-7. Klicken Sie auf **Weiter**.
+7. Klicken Sie dann auf **Weiter**.
     
 8. Auf der Seite **Neue Suche** können Sie Schlüsselwörter und Bedingungen zum Erstellen der Suchabfrage hinzufügen. 
     
     ![Erstellen einer Suchabfrage mit Schlüsselwörtern und Bedingungen](media/1b7cf7b5-f1e1-471a-ad5c-48aad8435b00.png)
   
-1. Geben Sie im Feld unter **wonach sollen wir suchen?** eine Suchabfrage in das Feld ein. Sie können Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften wie Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde, angeben. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (wie Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen. 
+1. Geben Sie im Feld unter **Wonach sollen wir für Sie suchen?** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften , z. B. Sende- und Empfangsdatum, oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum der letzten Dokumentänderung. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**, **near**oder **ONEAR**. Sie können auch nach vertraulichen Informationen (wie Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen. 
     
 2. Sie können auf das Kontrollkästchen **Keyword-Liste anzeigen** klicken und in jeder Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter in jeder Zeile durch den **or** -Operator in der erstellten Suchabfrage verbunden. 
     
@@ -138,7 +138,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
 3. Klicken Sie auf **Abfrage für Tippfehler über** prüfen, um die Abfrage auf nicht unterstützte Zeichen und boolesche Operatoren zu überprüfen, die möglicherweise nicht groß geschrieben werden. Nicht unterstützte Zeichen werden oft ausgeblendet und verursachen in der Regel einen Suchfehler oder geben unbeabsichtigte Ergebnisse zurück. Weitere Informationen zu den nicht unterstützten Zeichen, die überprüft werden, finden Sie unter [Überprüfen der Inhalts Suchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
     
-4. Fügen Sie unter **Bedingungen**einer Suchabfrage Bedingungen hinzu, um eine Suche einzuschränken und eine genauere Ergebnismenge zurückzugeben. Jede Bedingung fügt der KQL-Suchabfrage, die beim Starten der Suche erstellt und ausgeführt wird, eine Klausel hinzu. Eine Bedingung ist logisch mit der Schlüsselwortabfrage (angegeben im Stichwortfeld) durch den **and-** Operator verbunden. Dies führt dazu, dass Elemente sowohl die Stichwortabfrage als auch die Bedingung erfüllen müssen, die in die Ergebnisse eingeschlossen werden soll. Auf diese Weise können Sie Ihre Ergebnisse einschränken. 
+4. Fügen Sie unter **Bedingungen**einer Suchabfrage Bedingungen hinzu, um eine Suche einzuschränken und eine genauere Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zu der KQL-Suchabfrage hinzu, die beim Starten der Suche erstellt und ausgeführt wird. Eine Bedingung ist durch **AND**-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Dies bedeutet, dass Elemente sowohl die Schlüsselwortabfrage als auch die Bedingung erfüllen muss, damit sie in die Suchergebnisse aufgenommen werden. Auf diese Weise können Sie Ihre Ergebnisse mit Bedingungen eingrenzen. 
     
 ||
 |:-----|
@@ -154,7 +154,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
 2. Die Anzahl (und Gesamtgröße) der gefundenen Elemente, die mit der Suchabfrage übereinstimmen. Beispiele für Elementtypen sind e-Mail-Nachrichten, Kalenderelemente und Dokumente. Wenn ein Element mehrere Instanzen eines Schlüsselwortes enthält, nach dem gesucht wird, wird es nur einmal in der Gesamtanzahl der Elemente gezählt. Wenn Sie beispielsweise nach Wörtern "Stock" oder "Tip" suchen und eine e-Mail-Nachricht drei Instanzen des Wortes "Stock" enthält, wird Sie nur einmal in das Feld **Items** gezählt. 
     
-3. Die Anzahl und Gesamtgröße von nicht indizierten Elementen in den Inhaltsspeicherorten, die durchsucht wurden. Die Anzahl der nicht indizierten Elemente, die nicht den Suchkriterien entsprechen, wird in die im Detailbereich angezeigten Suchstatistiken eingeschlossen. Wenn ein nicht indiziertes Element mit der Suchabfrage übereinstimmt (da andere Nachrichten-oder Dokumenteigenschaften den Suchkriterien entsprechen), wird es nicht in der geschätzten Anzahl von nicht indizierten Elementen eingeschlossen. Wenn jedoch ein nicht indiziertes Element von den Suchkriterien ausgeschlossen wird, wird es nicht in die Schätzung der nicht indizierten Elemente eingeschlossen.
+3. Die Anzahl und Gesamtgröße von nicht indizierten Elementen in den Inhaltsspeicherorten, die durchsucht wurden. Die Anzahl nicht indizierter Elemente, die den Suchkriterien nicht entsprechen, werden in die Suchstatistiken einbezogen, die im Detailbereich angezeigt werden. Wenn ein nicht indiziertes Element mit der Suchabfrage übereinstimmt (da andere Nachrichten-oder Dokumenteigenschaften den Suchkriterien entsprechen), wird es nicht in der geschätzten Anzahl von nicht indizierten Elementen eingeschlossen. Wenn jedoch ein nicht indiziertes Element von den Suchkriterien ausgeschlossen wird, wird es nicht in die Schätzung der nicht indizierten Elemente eingeschlossen.
     
 4. Die Anzahl der einzelnen Inhaltsspeicher Typen, die durchsucht wurden. Beachten Sie bei Postfächern, dass Archivpostfächer in der Gesamtanzahl der durchsuchten Postfächer enthalten sind. Im vorherigen Beispiel wurden vier Benutzerpostfächer durchsucht, und das Archivpostfach für jeden dieser Benutzer ist aktiviert. Daher werden in der Suchstatistik acht Postfächer zitiert.
     
@@ -162,17 +162,17 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
     Klicken Sie bei Bedarf ****![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren, um die Informationen im Detailbereich für die ausgewählte Suche zu aktualisieren. 
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="export-search-results"></a>Exportieren der Suchergebnisse
 <a name="export"> </a>
 
-Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie e-Mail-Ergebnisse exportieren, werden Sie als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business-Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Es gibt auch zusätzliche Dokumente und Berichte, die in den exportierten Suchergebnissen enthalten sind. Weitere Informationen finden Sie unter [Exportieren von Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md).
+Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business-Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Es gibt auch zusätzliche Dokumente und Berichte, die in den exportierten Suchergebnissen enthalten sind. Weitere Informationen finden Sie unter [Exportieren von Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Suchergebnisse in der Vorschau anzeigen
 <a name="preview"> </a>
 
-Nachdem eine Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der Suchergebnisse anzeigen. Es gibt eine Reihe von Beschränkungen im Zusammenhang mit der Vorschau der Inhalts Suchergebnisse. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md). Beachten Sie, dass nicht indizierte Elemente für die Vorschau nicht verfügbar sind.
+Nachdem die Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der Suchergebnisse anzeigen. Im Zusammenhang mit dem Anzeigen von Inhaltssuchergebnissen in der Vorschau gibt es einige Einschränkungen. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md). Beachten Sie, dass nicht indizierte Elemente für die Vorschau nicht verfügbar sind.
   
 1. Wählen Sie auf der Seite **Inhaltssuche** eine Suche aus. 
     
@@ -187,7 +187,7 @@ Nachdem eine Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau de
 4. Wenn ein Dateityp für die Vorschau nicht unterstützt wird oder eine Kopie eines Dokuments heruntergeladen wird, können Sie auf **Originaldatei herunter** laden klicken, um Sie auf Ihren lokalen Computer herunterzuladen. Für aspx-Webseiten ist die URL für die Seite enthalten, obwohl Sie möglicherweise nicht über die Berechtigungen für den Zugriff auf die Seite verfügen. 
     
 > [!NOTE]
-> Wenn Sie eine Vorschau der Suchergebnisse für eine Suche anzeigen, die zuletzt vor mehr als 7 Tagen ausgeführt wurde, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Die Suche wird erneut ausgeführt, um die aktuellen Ergebnisse abzurufen, die der Suchabfrage entsprechen. 
+> Wenn Sie die Suchergebnisse einer Suche, die vor mehr als sieben Tagen ausgeführt wurde, in der Vorschau anzeigen, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Die Suche wird erneut ausgeführt, um die aktuellen Ergebnisse abzurufen, die der Suchabfrage entsprechen. 
   
 ### <a name="file-types-that-can-be-previewed"></a>Dateitypen, die in der Vorschau angezeigt werden können
 
@@ -205,11 +205,11 @@ Im Vorschaubereich können Sie eine Vorschau der unterstützten Dateitypen anzei
     
 Darüber hinaus werden die folgenden Dateicontainer Typen unterstützt. Sie können die Liste der Dateien im Container im Vorschaubereich anzeigen.
   
-- ZIP
+- . zip
     
 - . gzip
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Aktualisieren von Suchergebnissen
 <a name="restart"> </a>
@@ -220,9 +220,9 @@ Wenn Sie die Ergebnisse einer vorhandenen Inhaltssuche aktualisieren, wird die S
     
 2. Klicken Sie im Detailbereich unter **Ergebnisse** auf **Suchergebnisse aktualisieren**.
     
-    Es wird eine Statusmeldung angezeigt, die besagt, dass die Ergebnisse abgerufen werden. Wenn die Suche abgeschlossen ist, werden im Detailbereich unter **Ergebnisse** aktualisierte Informationen angezeigt. Beachten Sie, dass das Datum im Feld **gesucht am** im Detailbereich auf das aktuelle Datum und die Uhrzeit aktualisiert wird. Klicken Sie ****![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif)aktualisieren, um die Informationen in der Liste der Inhalts Suchvorgänge zu aktualisieren.
+    Es wird eine Statusmeldung angezeigt, dass die Ergebnisse abgerufen werden. Wenn die Suche abgeschlossen ist, werden die aktualisierten Informationen unter **Ergebnisse** im Detailbereich angezeigt. Beachten Sie, dass das Datum im Feld **Durchsucht am** im Detailbereich auf das aktuelle Datum und die Uhrzeit aktualisiert wird. Klicken Sie ****![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif)aktualisieren, um die Informationen in der Liste der Inhalts Suchvorgänge zu aktualisieren.
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Bearbeiten einer Suche
 <a name="edit"> </a>
@@ -250,32 +250,32 @@ Wenn bei einer Suche Fehler zurückgegeben werden, müssen Sie nicht alle inhalt
     
 2. Klicken Sie im Detailbereich unter **Fehler** auf **Suche wiederholen**.
     
-    Es wird eine Statusmeldung angezeigt, die besagt, dass die Ergebnisse abgerufen werden. Wenn die Suche abgeschlossen ist, werden im Detailbereich unter **Ergebnisse** aktualisierte Informationen angezeigt. Beachten Sie, dass das Datum im Feld **gesucht am** im Detailbereich auf das aktuelle Datum und die Uhrzeit aktualisiert wird. Um die Informationen in der Liste der Suchvorgänge zu aktualisieren ****![, klicken Sie](media/O365-MDM-Policy-RefreshIcon.gif)auf Aktualisierungssymbol aktualisieren.
+    Es wird eine Statusmeldung angezeigt, dass die Ergebnisse abgerufen werden. Wenn die Suche abgeschlossen ist, werden im Detailbereich unter **Ergebnisse** die aktualisierten Informationen angezeigt. Beachten Sie, dass das Datum im Feld **Durchsucht am** im Detailbereich auf das aktuelle Datum und die Uhrzeit aktualisiert wird. Um die Informationen in der Liste der Suchvorgänge zu aktualisieren ****![, klicken Sie](media/O365-MDM-Policy-RefreshIcon.gif)auf Aktualisierungssymbol aktualisieren.
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Nach oben](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>Weitere Informationen
 <a name="moreinfo"> </a>
 
 Hier finden Sie weitere Informationen zur Inhaltssuche.
   
-[Grenzen und Leistung](run-a-content-search-in-the-security-and-compliance-center.md#limits)
+[Grenzen und Leistung](#limits-and-performance)
   
-[Nicht indizierte Elemente](run-a-content-search-in-the-security-and-compliance-center.md#unindexeditems)
+[Nicht indizierte Elemente](#unindexed-items) 
+ 
+[Microsoft Teams und Office 365-Gruppen](#microsoft-teams-and-office-365-groups)
   
-[Microsoft Teams und Office 365-Gruppen](run-a-content-search-in-the-security-and-compliance-center.md#teams)
+[OneDrive for Business](#onedrive-for-business)
   
-[OneDrive for Business](run-a-content-search-in-the-security-and-compliance-center.md#onedrive)
+[Suchabfragen](#search-queries)
   
-[Suchabfragen](run-a-content-search-in-the-security-and-compliance-center.md#queries)
+[DurchSuchen inaktiver Postfächer](#searching-inactive-mailboxes)
   
-[DurchSuchen inaktiver Postfächer](run-a-content-search-in-the-security-and-compliance-center.md#inactivemailboxes)
+[Sonstiges](#miscellaneous)
   
-[Verschiedenes](run-a-content-search-in-the-security-and-compliance-center.md#misc)
+[Return to top](#before-you-begin)
   
-[(Zurück zum Seitenanfang)](run-a-content-search-in-the-security-and-compliance-center.md#top)
-  
- **Grenzen und Leistung**
+### <a name="limits-and-performance"></a>Grenzen und Leistung
   
 - Eine Beschreibung der Grenzwerte für die Inhaltssuche finden Sie unter [Grenzwerte für die Suche im Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
     
@@ -290,15 +290,14 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
 |50.000  <br/> |20 Minuten  <br/> |
 |100,000  <br/> |25 Minuten  <br/> |
    
-
   
- **Nicht indizierte Elemente**
+### <a name="unindexed-items"></a>Nicht indizierte Elemente
   
 - Wie bereits erläutert, sind nicht indizierte Elemente an Inhaltsspeicherorten, die durchsucht werden, in den geschätzten Suchergebnissen enthalten. Wenn ein nicht indiziertes Element mit der Suchabfrage übereinstimmt (da andere Nachrichten-oder Dokumenteigenschaften den Suchkriterien entsprechen), wird es nicht in der geschätzten Anzahl von nicht indizierten Elementen eingeschlossen. Wenn ein nicht indiziertes Element durch die Suchkriterien ausgeschlossen wird, wird es auch nicht in der geschätzten Anzahl von nicht indizierten Elementen eingeschlossen. Weitere Informationen finden Sie unter [unindizierte Elemente in der Inhaltssuche](https://go.microsoft.com/fwlink/p/?LinkId=780739).
     
 
   
- **Microsoft Teams und Office 365-Gruppen**
+### <a name="microsoft-teams-and-office-365-groups"></a>Microsoft Teams und Office 365-Gruppen
   
 - Microsoft Teams basieren auf Office 365-Gruppen. Daher ist die Suche nach diesen sehr ähnlich. Beachten Sie bei der Suche nach Inhalten in Microsoft Teams-und Office 365-Gruppen die folgenden Aspekte.
     
@@ -343,21 +342,18 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
     > [!NOTE]
     > Die Möglichkeit zum Durchsuchen des Wikis nach einem Microsoft-Team oder-Kanal (beim Durchsuchen der SharePoint-Website des Teams) wurde am 2017 veröffentlicht. Wiki-Seiten, die an diesem oder nach dem Datum gespeichert oder aktualisiert wurden, können durchsucht werden. Wiki-Seiten, die zuletzt gespeichert oder vor diesem Datum aktualisiert wurden, sind nicht für die Suche verfügbar. 
   
-
-  
- **OneDrive for Business **
+### <a name="onedrive-for-business"></a>OneDrive for Business
   
 - Informationen zum Erfassen einer Liste der URLs für die OneDrive für Business-Websites in Ihrer Organisation finden Sie unter [Erstellen einer Liste aller OneDrive-Standorte in Ihrer Organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Das Skript in diesem Artikel erstellt eine Textdatei, die eine Liste aller OneDrive für Business-Websites enthält. Um dieses Skript ausführen zu können, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Stellen Sie sicher, dass Sie die URL der mysite-Domäne Ihrer Organisation an jede OneDrive für Unternehmen-Website anfügen, die Sie durchsuchen möchten. Dies ist die Domäne, die alle Ihre OneDrive für Unternehmen enthält; Beispiel: `https://contoso-my.sharepoint.com`. NachFolgend finden Sie ein Beispiel für eine URL für die OneDrive für die Business- `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`Website eines Benutzers:.
     
 
-  
- **Suchabfragen**
+### <a name="search-queries"></a>Suchabfragen
   
 - Beachten Sie bei der Verwendung der Stichwortliste zum Erstellen einer Suchabfrage die folgenden Aspekte.
     
   - Sie müssen das Kontrollkästchen **Keyword-Liste anzeigen** aktivieren und dann jedes Schlüsselwort in eine separate Zeile eingeben, um eine Suchabfrage zu erstellen, in der die Schlüsselwörter (oder Stichwort Ausdrücke) in jeder Zeile durch den **or** -Operator verbunden werden. Wenn Sie nur eine Liste mit Stichwörtern in das Stichwortfeld einfügen oder die **Eingabe** Taste drücken, nachdem Sie ein Schlüsselwort eingegeben haben, werden Sie nicht durch den **or** -Operator verbunden. Hier sind falsch und richtig Beispiel für das Hinzufügen einer Liste von Schlüsselwörtern. 
     
-    **Falsche**
+    **Falsch**
     
     ![Die falsche Methode zum Formatieren einer Schlüsselwortliste (durch Einfügen der Liste in das Stichwortfeld)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
@@ -367,7 +363,7 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
   
   - Sie können auch eine Liste von Schlüsselwörtern oder Keyword-Phrasen in einer Excel-Datei oder in einer nur-Text-Datei vorbereiten und dann Ihre Liste in die Stichwortliste kopieren und einfügen. Hierzu müssen Sie das Kontrollkästchen **Keyword-Liste anzeigen** aktivieren. Klicken Sie dann auf die erste Zeile in der Stichwortliste, und fügen Sie Ihre Liste ein. Jede Zeile aus der Excel-oder Textdatei wird in eine separate Zeile in der Stichwortliste eingefügt. 
     
-  - Nachdem Sie eine Abfrage mithilfe der Stichwortliste erstellt haben, empfiehlt es sich, die Suchabfrage Syntax zu überprüfen (im Detailbereich der ausgewählten Suche), um die gewünschte Suchabfrage zu erstellen. In der Suchabfrage, die im Detailbereich unter **Query** angezeigt wird, werden die Schlüsselwörter durch den Text **(c:s)** getrennt. Dies gibt an, dass die Schlüsselwörter durch den **or** -Operator verbunden werden. Wenn Ihre Suchabfrage Bedingungen enthält, werden die Schlüsselwörter und die Bedingungen entsprechend durch den Text **(c:c)** getrennt. Dies gibt an, dass die Schlüsselwörter mit den Bedingungen des **and-** Operators verbunden sind. Nachfolgend finden Sie ein Beispiel für die Suchabfrage (wird im Detailbereich angezeigt), die bei Verwendung der Stichwortliste und einer Bedingung resultiert. 
+  - Nachdem Sie eine Abfrage mithilfe der Stichwortliste erstellt haben, empfiehlt es sich, die Suchabfrage Syntax zu überprüfen (im Detailbereich der ausgewählten Suche), um die gewünschte Suchabfrage zu erstellen. In der Suchabfrage, die im Detailbereich unter **Query** angezeigt wird, werden die Schlüsselwörter durch den Text **(c:s)** getrennt. Dies gibt an, dass die Schlüsselwörter durch den **or** -Operator verbunden werden. Wenn Ihre Suchabfrage Bedingungen enthält, werden die Schlüsselwörter und die Bedingungen entsprechend durch den Text **(c:c)** getrennt. Dies gibt an, dass die Schlüsselwörter mit den Bedingungen vom **and-** Operator verbunden sind. Nachfolgend finden Sie ein Beispiel für die Suchabfrage (wird im Detailbereich angezeigt), die bei Verwendung der Stichwortliste und einer Bedingung resultiert. 
     
     ![Beispiel für die Abfrage, die erstellt wird, wenn die Stichwortliste und eine Bedingung verwendet wird](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -384,8 +380,7 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
     Wenn Sie beispielsweise die Spracheinstellung in Chinesisch ändern möchten, verwenden `zh-CN` Sie den Wert für Kulturcode. Nachdem Sie die Spracheinstellung geändert haben, müssen Sie die Suche erneut ausführen. Eine Liste der möglichen Werte für Kulturcode finden Sie unter [CultureInfo-Klasse](https://go.microsoft.com/fwlink/p/?LinkID=184859). Es wird empfohlen, für die Inhaltssuche zwei teilige Kulturcodes für den Wert der Spracheinstellung zu verwenden. Beispiel: `ja-JP` und nicht `ja`.
     
 
-  
- **DurchSuchen inaktiver Postfächer**
+### <a name="searching-inactive-mailboxes"></a>DurchSuchen inaktiver Postfächer
   
 Wie bereits erwähnt, können Sie in einer Inhaltssuche inaktive Postfächer durchsuchen. Im folgenden finden Sie einige Punkte, die Sie beachten sollten, wenn Sie inaktive Postfächer durchsuchen.
   
@@ -401,14 +396,12 @@ Wie bereits erwähnt, können Sie in einer Inhaltssuche inaktive Postfächer dur
     
   - [Löschen eines inaktiven Postfachs in Office 365](delete-an-inactive-mailbox.md)
     
-
-  
- **Verschiedenes**
+### <a name="miscellaneous"></a>Sonstiges
   
 - Inhalts Suchvorgänge, die auf der Seite " **Inhaltssuche** " im Security &amp; Compliance Center erstellt wurden, werden nicht auf der Seite **in-situ-eDiscovery &amp; ** in der Exchange-Verwaltungskonsole angezeigt. Der Grund ist, dass die Architektur der Inhaltssuche und die im Security &amp; Compliance Center erstellten Suchobjekte vollständig von der in-Place-eDiscovery-Funktion in Exchange Online abweichen. 
     
     Aus demselben Grund werden Suchvorgänge, die auf der Seite für die **Inhaltssuche** erstellt wurden, nicht auf der Seite **Suchen** eines EDiscovery &amp; -Falls im Security Compliance Center angezeigt. 
     
-- Worin besteht der Unterschied zwischen dem Neustart und dem erneuten Versuch einer Suche? Wenn Sie eine Suche neu starten, werden alle in der Suche angegebenen inhaltsspeicherorte in einer neuen Vorschau Suche erneut durchsucht. Wenn Sie jedoch eine Suche wiederholen, werden nur die inhaltsspeicherorte durchsucht, die beim letzten Ausführen der Suche fehlgeschlagen sind.
+- Was ist der Unterschied zwischen dem Neustarten einer Suche und dem Wiederholen einer Suche? Wenn Sie eine Suche neu starten, werden alle in der Suche angegebenen inhaltsspeicherorte in einer neuen Vorschau Suche erneut durchsucht. Wenn Sie jedoch eine Suche wiederholen, werden nur die inhaltsspeicherorte durchsucht, die beim letzten Ausführen der Suche fehlgeschlagen sind.
    
 

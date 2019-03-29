@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit dem Tool "neue Daten Untersuchungen (Vorschau)" im Office 365 Security & Compliance Center einen Vorfall mit Datenausfällen verwalten können.
-ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 33943ee4367e01f413cfa7840c796d5197323185
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295808"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862557"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Daten verschüttenden Vorfalls in Microsoft 365 
 
@@ -96,14 +96,14 @@ So erstellen Sie eine Datenuntersuchung:
  
 Wenn Sie wissen, welche Benutzer Sie nach verschütteten Daten durchsuchen möchten, können Sie diese als interessante Personen hinzufügen, um Ihre Datenquellen der Untersuchung zuzuordnen und Ihr Postfach und Ihr OneDrive-Konto schnell zu durchsuchen. Klicken Sie zum Hinzufügen von Personen, die für die Untersuchung von Interesse sind, auf **Personen**von Interesse, und klicken Sie dann auf **interessante Personen hinzufügen**. 
 
-Auf der Registerkarte **Suchvorgänge** können Sie suchen erstellen, um die verschütteten Daten zu finden. Sie verwenden die gleiche Suchabfrage, die Sie zum Auffinden der verschütteten Daten verwendet haben, um diese Nachrichten in [Schritt 4](##step-4:-permanently-delete-the-spilled-data)zu löschen. Weitere Informationen zum Erstellen von Suchvorgängen finden Sie unter [Erstellen einer Suche zum Sammeln von Daten](create-search-to-collect-data.md).
+Auf der Registerkarte **Suchvorgänge** können Sie suchen erstellen, um die verschütteten Daten zu finden. Sie verwenden die gleiche Suchabfrage, die Sie zum Auffinden der verschütteten Daten verwendet haben, um diese Nachrichten in [Schritt 4](#step-4-permanently-delete-the-spilled-data)zu löschen. Weitere Informationen zum Erstellen von Suchvorgängen finden Sie unter [Erstellen einer Suche zum Sammeln von Daten](create-search-to-collect-data.md).
 
 Nachdem Sie die Suche ausgeführt haben, können Sie eine Vorschau der Suchergebnisse anzeigen und Suchstatistiken ansehen, um die Effektivität Ihrer Suchabfrage zu bewerten. Nachdem Sie die Elemente identifiziert haben, die Sie aus Office 365 löschen möchten, können Sie auf **** die Registerkarte Incidents klicken und dann einen Vorfall erstellen und Suchergebnisse hinzufügen, die diese Elemente enthalten. 
 
-Klicken Sie dazu auf die Suche, die Sie untersuchen möchten. Klicken Sie auf der Seite Flyout auf **Ergebnisse zu Vorfall hinzufügen** , und folgen Sie den Anweisungen. Dann können Sie im Vorfall einzelne Dokumente überprüfen, den Zugriff auf Dokumente untersuchen und die Dokumente exportieren. Um die Dokumente einfach zu löschen, anstatt Sie zu überprüfen, fahren Sie mit [Schritt 4](##step-4:-permanently-delete-the-spilled-data)fort. 
+Klicken Sie dazu auf die Suche, die Sie untersuchen möchten. Klicken Sie auf der Seite Flyout auf **Ergebnisse zu Vorfall hinzufügen** , und folgen Sie den Anweisungen. Dann können Sie im Vorfall einzelne Dokumente überprüfen, den Zugriff auf Dokumente untersuchen und die Dokumente exportieren. Um die Dokumente einfach zu löschen, anstatt Sie zu überprüfen, fahren Sie mit [Schritt 4](#step-4-permanently-delete-the-spilled-data)fort. 
 
 > [!IMPORTANT]
-> Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, enthalten möglicherweise die tatsächlich verschütteten Daten, nach denen Sie suchen. Wenn Sie beispielsweise nach Dokumenten suchen, die eine Sozialversicherungsnummer enthalten, und Sie in der Suchabfrage als Schlüsselwort verwenden, müssen Sie die Abfrage löschen, um weiteres verschütten zu vermeiden. Sie können die Suche löschen oder die gesamte Untersuchung in [Schritt 5](##step-5:-close-or-delete-investigation)löschen. 
+> Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, enthalten möglicherweise die tatsächlich verschütteten Daten, nach denen Sie suchen. Wenn Sie beispielsweise nach Dokumenten suchen, die eine Sozialversicherungsnummer enthalten, und Sie in der Suchabfrage als Schlüsselwort verwenden, müssen Sie die Abfrage löschen, um weiteres verschütten zu vermeiden. Sie können die Suche löschen oder die gesamte Untersuchung in [Schritt 5](#step-5-close-or-delete-the-investigation)löschen. 
 
 ## <a name="step-3-review-and-investigate"></a>Schritt 3: überprüfen und untersuchen 
 

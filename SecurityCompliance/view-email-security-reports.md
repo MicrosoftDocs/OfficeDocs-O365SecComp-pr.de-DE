@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684364"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862507"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -29,24 +29,15 @@ Im [ &amp; Security Compliance Center](https://protection.office.com) stehen ver
 ![Dashboard, in dem Sie sehen, wie Advanced Threat Protection funktioniert](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Zu Ihren e-Mail-Sicherheitsberichten gehört Folgendes:
-
 - [Verschlüsselungs Bericht](#encryption-report) (Neu!)
-  
-- [Status Bericht zum BedrohungsSchutz](view-email-security-reports.md#tps) 
-    
-- [Bericht über Schadsoftware](view-email-security-reports.md#maldet)
-    
+- [Status Bericht zum BedrohungsSchutz](#threat-protection-status-report) 
+- [Bericht über Schadsoftware](#malware-detections-report)    
 - [Häufigster Schadsoftware-Bericht](#top-malware-report)
-    
-- [Bericht "häufigste Absender und Empfänger"](view-email-security-reports.md#topsenders)
-    
-- [Spoof-e-Mail-Bericht](#spoof-mail-report)
-    
+- [Bericht "häufigste Absender und Empfänger"](#top-senders-and-recipients-report)
+- [Bericht über Spoof-Entdeckungen](#spoof-detections-report)
 - [Bericht über Spam-Entdeckungen](#spam-detections-report)
-    
-- [Gesendete und empfangene e-Mail-Berichte](view-email-security-reports.md#sentreceivedemail)
-
-- [Bericht über vom Benutzer gemeldete Nachrichten](view-email-security-reports.md#userreported)
+- [Gesendete und empfangene e-Mail-Berichte](#sent-and-received-email-report)
+- [Bericht über vom Benutzer gemeldete Nachrichten](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 

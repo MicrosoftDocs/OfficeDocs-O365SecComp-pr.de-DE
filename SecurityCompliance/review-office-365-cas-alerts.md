@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Verwenden Sie die Seite "Benachrichtigungen" in Office 365 Cloud App Security, um potenzielle Probleme anzuzeigen und Maßnahmen zu ergreifen. Sie können Benachrichtigungen schließen oder auflösen und gegebenenfalls ein Benutzerkonto anhalten.
-ms.openlocfilehash: 6c2f9788cb238e86abc347a3a118eb08fa84e971
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213165"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862467"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security
   
@@ -35,7 +35,10 @@ Sie können die Seite "Benachrichtigungen" in Office 365 Cloud App Security verw
 1. Wechseln Sie zum Cloud App Security Portal ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), und melden Sie sich an.
   
 2. Klicken Sie in der Navigationsleiste am oberen Rand des Bildschirms auf **Benachrichtigungen**.<br/>![Auf der Seite Warnungen werden Warnungen angezeigt, die ausgelöst wurden, und alle ausgeführten Aktionen.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
-  
+ 
+> [!NOTE]
+> sicherheitswarnungen in der Cloud-App werden auch im Office 365 security & Compliance Center angezeigt (gehen sie zu **warnungen** > **anzeigen**. Derzeit müssen Sie diese Warnungen jedoch sowohl im Cloud-App-Sicherheitsportal als auch im Office 365 Security & Compliance Center beheben. Weitere Informationen finden Sie unter [Anzeigen von Sicherheitswarnungen](alert-policies.md#viewing-cloud-app-security-alerts)in der Cloud-app.) 
+ 
 ## <a name="review-and-handle-alerts"></a>Überarbeiten und behandeln von Warnungen
 
 Warnungen helfen Ihnen dabei, Aktivitäten in Ihrer Office 365-Cloud-Umgebung zu identifizieren, die Sie möglicherweise weiter untersuchen möchten. Sie können auch beschließen, neue Richtlinien zu erstellen oder vorhandene Richtlinien basierend auf den Warnungen zu bearbeiten, die Ihnen angezeigt werden. Wenn ein Administrator sich beispielsweise an einem seltsamen Ort anmeldet, können Sie eine Richtlinie einrichten, die verhindert, dass Administratoren sich an bestimmten Standorten bei Office 365 anmelden.

@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Erfahren Sie, wie Administratoren Exchange Online PowerShell und eine CSV-Datei verwenden können, um externe Kontakte in die globale Adressliste zu importieren.
-ms.openlocfilehash: a38565d5cbff61a954914bf156fb1bac0814c815
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215915"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862497"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Massenimport externer Kontakte in Exchange Online
 
@@ -34,9 +34,9 @@ Verfügt Ihr Unternehmen über viele vorhandene Geschäftskontakte, die in das f
 
 Nachdem Sie diese Schritte zum Importieren von Kontakten ausgeführt haben, können Sie diese zusätzlichen Aufgaben ausführen:
   
-- [Hinzufügen weiterer externer Kontakte](bulk-import-external-contacts.md#AddMore)
+- [Hinzufügen weiterer externer Kontakte](#add-more-external-contacts)
   
-- [Ausblenden externer Kontakte aus dem freigegebenen Adressbuch](bulk-import-external-contacts.md#Hide)
+- [Ausblenden externer Kontakte aus dem freigegebenen Adressbuch](#hide-external-contacts-from-the-shared-address-book)
   
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>Schritt 1: Erstellen einer CSV-Datei mit Informationen zu den externen Kontakten
 
@@ -123,7 +123,7 @@ Nachdem Sie den Befehl in Schritt 2 ausgeführt haben, werden die externen Konta
     
 2. Klicken Sie auf einen Kontakt, **** ![und klicken Sie](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) dann auf Bearbeitungssymbol bearbeiten, um die Eigenschaften des Kontakts anzuzeigen. 
     
-Das wars! Benutzer können die Kontakte und die zusätzlichen Informationen im Adressbuch Outlook und Outlook im Web anzeigen.
+Das ist alles. Benutzer können die Kontakte und die zusätzlichen Informationen im Adressbuch Outlook und Outlook im Web anzeigen.
   
 ## <a name="add-more-external-contacts"></a>Hinzufügen weiterer externer Kontakte
 
@@ -134,7 +134,7 @@ Sie können die Schritte 1 bis 3 wiederholen, um in Exchange Online neue externe
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>Ausblenden externer Kontakte aus der freigegebenen Adresse book>
 
-Einige Unternehmen verwenden möglicherweise nur externe Kontakte, damit Sie als Mitglieder von Verteilergruppen hinzugefügt werden können. In diesem Szenario möchten Sie möglicherweise externe Kontakte aus dem freigegebenen Adressbuch ausblenden. So geht 's:
+Einige Unternehmen verwenden möglicherweise nur externe Kontakte, damit Sie als Mitglieder von Verteilergruppen hinzugefügt werden können. In diesem Szenario möchten Sie möglicherweise externe Kontakte aus dem freigegebenen Adressbuch ausblenden. Dazu gehen Sie so vor:
   
 1.  Verbinden Sie PowerShell mit Ihrer Exchange Online-Organisation. Schrittweise Anleitungen finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     

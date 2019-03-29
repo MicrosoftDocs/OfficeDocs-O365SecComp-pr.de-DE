@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Office 365 Security & Compliance Center, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411020"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935350"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center
+
+## <a name="introduction"></a>Einführung
 
 Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder ein Element aus seinem Postfach gelöscht hat? In diesem Fall können Sie das Office 365 Security &amp; Compliance Center verwenden, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in ihrer Office 365-Organisation anzuzeigen. Warum ein einheitliches Überwachungsprotokoll? Da Sie für die folgenden Arten von Benutzer-und Administratoraktivitäten in Office 365 suchen können:
   
@@ -57,7 +59,7 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder
 
 - Analysten-und Administratoraktivitäten in Microsoft Workplace Analytics
 
-- Benutzer-und Administrator Aktivität in PowerApps
+- Benutzer-und Administratoraktivitäten in Microsoft PowerApps
     
    
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
@@ -296,12 +298,11 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu wec
 |:-----|:-----|:-----|
 |[Datei-und Seiten Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |
 |[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Aktivitäten der Websiteverwaltung](#site-administration-activities)<br/> |[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |
-|[Aufbewahrungsrichtlinie und Bezeichnungs Aktivitäten](#retention-policy-and-label-activities) <br/>|[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> 
-|[Verwaltungsaktivitäten der Azure AD-Gruppe](#azure-ad-group-administration-activities) <br/> |[Aktivitäten der Anwendungsverwaltung](#application-administration-activities) <br/> |[Rollen Verwaltungsaktivitäten](#role-administration-activities) <br/> |
-|[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/> |[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |
-|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Aktivitäten mit jammern](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>
+|[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |[Verwaltungsaktivitäten der Azure AD-Gruppe](#azure-ad-group-administration-activities) <br/> 
+|[Aktivitäten der Anwendungsverwaltung](#application-administration-activities) <br/> |[Rollen Verwaltungsaktivitäten](#role-administration-activities) <br/> |[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/>| 
+|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Aktivitäten mit jammern](#yammer-activities) <br/> |[Microsoft Flow-Aktivitäten](#microsoft-flow-activities) <br/>|
+|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)<br/>|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities) <br/>|[Exchange-Verwaltungsaktivitäten](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -320,7 +321,7 @@ In der folgenden Tabelle werden die Datei-und Seiten Aktivitäten in SharePoint 
 |Gelöschte Datei aus dem Papierkorb  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.  <br/> |
 |Gelöschte Datei aus dem endgültigen Papierkorb  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.  <br/> |
 |Erkannte Schadsoftware in der Datei  <br/> |FileMalwareDetected  <br/> |Das SharePoint-Antivirus-Modul erkennt Schadsoftware in einer Datei.  <br/> |
-|Auschecken verworfener Dateien  <br/> |FileCheckOutDiscarded  <br/> |Benutzer verwirft eine ausgecheckte Datei, oder macht dies rückgängig. Alle Änderungen, die an der Datei vorgenommen wurden, als sie ausgecheckt war, werden verworfen und nicht in der Dokumentversion in der Dokumentbibliothek gespeichert.  <br/> |
+|Auschecken verworfener Dateien  <br/> |FileCheckOutDiscarded  <br/> |Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.  <br/> |
 |HeruntergeLadene Datei  <br/> |FileDownloaded  <br/> |Ein Benutzer lädt ein Dokument von einer Website herunter.  <br/> |
 |Geänderte Datei  <br/> |FileModified  <br/> |Benutzer-oder Systemkonto ändert den Inhalt oder die Eigenschaften eines Dokuments, das sich auf einer Website befindet.  <br/> |
 |keine  <br/> |FileModifiedExtended  <br/> |Dies bezieht sich auf die "geänderte Datei" (fileModified)-Aktivität. Ein FileModifiedExtended-Ereignis wird protokolliert, wenn dieselbe Person ständig eine Datei für einen längeren Zeitraum (bis zu 3 Stunden) ändert. Der Zweck der Protokollierung von FileModifiedExtended-Ereignissen besteht darin, die Anzahl der fileModified-Ereignisse zu verringern, die protokolliert werden, wenn eine Datei ständig geändert wird. Dadurch wird das Rauschen mehrerer fileModified-Datensätze für die im Wesentlichen dieselbe Benutzeraktivität reduziert, und Sie können sich auf das anfängliche (und noch wichtigere) fileModified-Ereignis konzentrieren.  <br/> |
@@ -468,28 +469,6 @@ In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfach
 |Aktualisierte Nachricht  <br/> |Aktualisieren  <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |
 |Benutzer bei Postfach angemeldet  <br/> |Mailbox Login:  <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |
 |keine  <br/> |UpdateInboxRules  <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. PostEingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen auszuführen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen bestimmten Ordner oder das Löschen einer Nachricht.  <br/> Wenn Sie Einträge für Posteingangsregel Aktivitäten zurückgeben möchten, müssen Sie in der Liste **Aktivitäten** die Option **Ergebnisse für alle Aktivitäten anzeigen** auswählen. Verwenden Sie die Felder Datumsbereiche und **Benutzer** , um die Suchergebnisse einzuschränken.  <br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>Aufbewahrungsrichtlinie und Bezeichnungs Aktivitäten
-
-In der folgenden Tabelle werden die Aktivitäten im Zusammenhang mit Aufbewahrungsrichtlinien und Aufbewahrungs Bezeichnungen im Security & Compliance Center beschrieben. Weitere Informationen finden Sie unter:
-
-- [Übersicht über Aufbewahrungsrichtlinien](retention-policies.md)
-- [Übersicht über Aufbewahrungsbezeichnungen](labels.md)
-<br/>
-
-|**Aktivität**|**Vorgang**|**Beschreibung**|
-|:-----|:-----|:-----|
-| Erstellte Aufbewahrungs Konfiguration für eine Aufbewahrungsrichtlinie<br/> |NewRetentionComplianceRule<br/> |Der Administrator konfiguriert die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie. Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden, und was mit Elementen passiert, wenn der Aufbewahrungszeitraum abgelaufen ist (beispielsweise Löschen von Elementen, beibehalten von Elementen oder beibehalten und dann löschen). Diese Aktivität entspricht auch der Verwendung des [New-RetentionComplianceRule-](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) Cmdlets.<br/>|
-| Erstellte Aufbewahrungs Bezeichnung <br/> |NewComplianceTag<br/>  |Der Administrator erstellt eine neue Aufbewahrungs Bezeichnung.<br/> |
-| Erstellte Aufbewahrungsrichtlinie<br/> |NewRetentionCompliancePolicy<br/> |Der Administrator erstellt eine neue Aufbewahrungsrichtlinie.<br/>  |
-| Gelöschte Aufbewahrungs Konfiguration für eine Aufbewahrungsrichtlinie<br/> | RemoveRetentionComplianceRule<br/>| Der Administrator löscht die Konfigurationseinstellungen einer Aufbewahrungsrichtlinie. Diese Aktivität wird wahrscheinlich protokolliert, wenn ein Administrator eine Aufbewahrungsrichtlinie löscht oder das Cmdlet **Remove-RetentionComplianceRule** ausführt.<br/> |
-| Gelöschte Aufbewahrungs Bezeichnung <br/> |RemoveComplianceTag<br/>  | Der Administrator löscht eine Aufbewahrungs Bezeichnung.<br/>|
-| Gelöschte Aufbewahrungsrichtlinie<br/> |RemoveRetentionCompliancePolicy<br/> |Der Administrator löscht eine Aufbewahrungsrichtlinie. <br/>  |
-| Aktivieren von Compliance-Features<br/> |SetRestrictiveRetentionUI<br/> |Der Administrator aktiviert Compliance-Funktionen, indem er das Cmdlet **Set-RegulatoryComplianceUI** ausführt. Nachdem dieses Cmdlet ausgeführt wurde, können Administratoren eine Aufbewahrungsrichtlinie Sperren und mithilfe der Benutzeroberfläche Security & Compliance Center eine Aufbewahrungs Bezeichnung als behördlichen Daten Satz angeben. Bis eine Organisation das Cmdlet **Set-RegulatoryComplianceUI** verwendet, um diese Features zu aktivieren, kann das Sperren einer Aufbewahrungsrichtlinie und das Erstellen einer gesetzlichen Aufbewahrungs Bezeichnung nur mithilfe von PowerShell erfolgen. <br/>|
-| Aktualisierte Aufbewahrungs Konfiguration für eine Aufbewahrungsrichtlinie<br/> | SetRetentionComplianceRule<br/>| Der Administrator ändert die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie. Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden, und was mit Elementen passiert, wenn der Aufbewahrungszeitraum abgelaufen ist (beispielsweise Löschen von Elementen, beibehalten von Elementen oder beibehalten und dann löschen). Diese Aktivität entspricht auch der Verwendung des Cmdlets [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) . <br/>|
-| Aktualisierte Aufbewahrungs Bezeichnung <br/> |SetComplianceTag<br/>  | Der Administrator aktualisiert eine vorhandene Aufbewahrungs Bezeichnung.<br/>|
-| Aktualisierte Aufbewahrungsrichtlinie<br/> |SetRetentionCompliancePolicy <br/>|Der Administrator aktualisiert eine vorhandene Aufbewahrungsrichtlinie. Zu den Updates, die dieses Ereignis auslösen, gehört das Hinzufügen oder Ausschließen von Inhaltsspeicherorten, auf die die Aufbewahrungsrichtlinie angewendet wird.<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Sway-Aktivitäten
@@ -725,7 +704,7 @@ Weitere Informationen zu den in Office 365 verfügbaren Überwachungs-und Berich
 
 **Was sind unterschiedliche Office 365-Dienste, die derzeit überwacht werden?**
 
-Die am häufigsten verwendeten Office 365-Dienste wie Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft Teams, CRM, erweiterter BedrohungsSchutz und verHinderung von Datenverlust werden überwacht. Eine vollständige Liste finden Sie im [Intro](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) -Abschnitt in diesem Artikel.
+Die am häufigsten verwendeten Office 365-Dienste wie Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection und Power BI werden überwacht. Eine Liste der zu überwachenden Dienste finden Sie im [Anfang dieses Artikels](search-the-audit-log-in-security-and-compliance.md) .
 
 **Welche Aktivitäten werden vom Überwachungsdienst in Office 365 überwacht?**
 
@@ -771,15 +750,3 @@ Nein. Derzeit haben wir Überwachungs Pipeline-Bereitstellungen in den Regionen 
 **Werden Überwachungsdaten verschlüsselt?**
 
 Überwachungsdaten werden in Exchange-Postfächern (Rest-Daten) in derselben Region gespeichert, in der die Überwachungs Pipeline bereitgestellt wird. Diese Daten werden nicht verschlüsselt. Daten werden jedoch immer verschlüsselt. 
-
-
-
-
-
-
-
-
-
-
-
-
