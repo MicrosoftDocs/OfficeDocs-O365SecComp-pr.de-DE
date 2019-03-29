@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: fadaea97a3e79130f33250e39ea642a040a40a69
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693324"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955268"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -30,9 +30,9 @@ In diesem Thema werden Sie durch die empfohlene Konfiguration für Mandantenweit
 
 Office 365 Secure Score analysiert die Sicherheit Ihrer Office 365-Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie einige Mandantenweite Einstellungen anpassen, erhöht sich Ihre Punktzahl. Das Ziel besteht nicht darin, die maximale Punktzahl zu erreichen, sondern sich über Möglichkeiten zum Schutz Ihrer Umgebung zu informieren, die sich nicht negativ auf die Produktivität Ihrer Benutzer auswirken. Weitere Informationen finden Sie unter [Einführung in die Office 365 Secure Score](office-365-secure-score.md).
   
-## <a name="tune-threat-management-policies-in-the-office-365-security-amp-compliance-center"></a>Optimieren von Richtlinien zur Gefahren Verwaltung im Office &amp; 365 Security Compliance Center
+## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>Optimieren von Richtlinien zur Gefahren Verwaltung im Microsoft 365-Sicherheitscenter
 
-Das Office 365 Security &amp; Compliance Center umfasst Funktionen zum Schutz Ihrer Umgebung. Sie enthält auch Berichte und Dashboards, die Sie verwenden können, um Maßnahmen zu überwachen und zu ergreifen. Einige Bereiche verfügen über Standardrichtlinien Konfigurationen. Einige Bereiche schließen keine Standardrichtlinien oder-Regeln ein. Besuchen Sie diese Richtlinien unter Threat Management, um die Einstellungen für die Bedrohungs Verwaltung für eine sicherere Umgebung zu optimieren. 
+Das Microsoft 365-Sicherheitscenter enthält Funktionen zum Schutz Ihrer Umgebung. Sie enthält auch Berichte und Dashboards, die Sie verwenden können, um Maßnahmen zu überwachen und zu ergreifen. Einige Bereiche verfügen über Standardrichtlinien Konfigurationen. Einige Bereiche schließen keine Standardrichtlinien oder-Regeln ein. Besuchen Sie diese Richtlinien unter Threat Management, um die Einstellungen für die Bedrohungs Verwaltung für eine sicherere Umgebung zu optimieren. 
   
 |Bereich * * * *|Enthält eine Standardrichtlinie * * * *|Empfehlung * * * *|
 |:-----|:-----|:-----|
@@ -41,27 +41,27 @@ Das Office 365 Security &amp; Compliance Center umfasst Funktionen zum Schutz Ih
 |**Sichere Anlagen in ATP** <br/> |Nein  <br/> | Schützen Sie auf der Hauptseite für sichere Anlagendateien in SharePoint, OneDrive und Microsoft Teams, indem Sie dieses Kontrollkästchen aktivieren:  <br/>  &ensp;&ensp;• Aktivieren von ATP für SharePoint, OneDrive und Microsoft Teams  <br/> <br> Fügen Sie eine neue Richtlinie für sichere Anlagen mit den folgenden Einstellungen hinzu:  <br/>  &ensp;&ensp;• Blockieren – Blockieren der aktuellen und zukünftigen e-Mails und Anlagen mit erkannter Schadsoftware (Wählen Sie diese Option)  <br/>  &ensp;&ensp;• Umleitung aktivieren – (markieren Sie dieses Kontrollkästchen, und geben Sie eine e-Mail-Adresse ein, beispielsweise ein Administrator-oder Quarantäne Konto).  <br/>  &ensp;&ensp;• Die obige Auswahl anwenden, wenn bei der Malware-Überprüfung auf Anlagen ein Timeout oder Fehler auftritt (aktivieren Sie dieses Kontrollkästchen)  <br/>  &ensp;&ensp;• Angewendet auf – die Empfängerdomäne lautet (Wählen Sie Ihre Domäne aus)  <br/>  <br>Weitere Informationen: [Einrichten von Office 365 ATP Safe Attachments Policies](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP-sichere Links** <br/> |Ja  <br/> | Diese Einstellung der Standardrichtlinie für die gesamte Organisation hinzufügen:  <br/> &ensp;&ensp;• Verwenden Sie sichere Links in: Office 365 proPlus, Office für iOS und Android (Wählen Sie diese Option aus).  <br/> <br>Empfohlene Richtlinie für bestimmte Empfänger:  <br/>  &ensp;&ensp;• URLs werden umgeschrieben und anhand einer Liste bekannter böswilliger Links überprüft, wenn der Benutzer auf den Link klickt (Wählen Sie diese Option aus).  <br/>  &ensp;&ensp;• Verwenden Sie sichere Anlagen zum Überprüfen von herunterladbaren Inhalten (aktivieren Sie dieses Kontrollkästchen).  <br/>  &ensp;&ensp;• Angewendet auf – die Empfängerdomäne lautet (Wählen Sie Ihre Domäne aus) aus.  <br/> <br> Weitere Informationen: [Office 365 ATP Safe Links](atp-safe-links.md).  <br/> |
 |**Antispam (e-Mail-Filterung)** <br/> |Ja  <br/> | Zu überwachen für:  <br/>  &ensp;&ensp;• Zu viel Spam – wählen Sie die benutzerdefinierten Einstellungen aus, und bearbeiten Sie die standardmäßige Spamfilter Richtlinie.  <br/>  &ensp;&ensp;• Spoof Intelligence – Überprüfungen von Absendern, die Ihre Domäne Spoofing. Blockieren oder zulassen dieser Absender.  <br/>  <br>Weitere Informationen: [Office 365 e-Mail-](anti-spam-protection.md)Antispamschutz.  <br/> |
-|***E-Mail-Authentifizierung*** <br/> |Ja  <br/> |Die e-Mail-Authentifizierung verwendet ein DNS (Domain Name System) zum Hinzufügen von überprüfbaren Informationen zu e-Mail-Nachrichten über den Absender einer e-Mail. Office 365 richtet die e-Mail-Authentifizierung für die Standarddomäne ein (onmicrosoft.com), aber Office 365-Administratoren können auch e-Mail-Authentifizierung für benutzerdefinierte Domänen verwenden. Es werden drei Authentifizierungsmethoden verwendet: <br/> <br> &ensp;&ensp;• Sender Policy Framework (SPF).<br/>&ensp;&ensp;&ensp;&ensp;– Informationen zur Einrichtung finden Sie unter [Set up SPF in Office 365, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). <br/> &ensp;&ensp;• DomainKeys Identified Mail (DKIM). <br/> &ensp;&ensp;&ensp;&ensp;-Siehe [Verwenden von DKIM für e-Mails in Ihrer benutzerdefinierten Domäne in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email). <br>&ensp;&ensp;&ensp;&ensp;-Nachdem Sie DKIM konfiguriert haben, aktivieren Sie es im Security &amp; Compliance Center.<br/> &ensp;&ensp;• Domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität (DMARC). <br/> &ensp;&ensp;&ensp;&ensp;-Für DMARC-Setup [verwenden Sie DMARC, um e-Mails in Office 365 zu überprüfen](use-dmarc-to-validate-email.md).<br/>  <br/>
+|***E-Mail-Authentifizierung*** <br/> |Ja  <br/> |Die e-Mail-Authentifizierung verwendet ein DNS (Domain Name System) zum Hinzufügen von überprüfbaren Informationen zu e-Mail-Nachrichten über den Absender einer e-Mail. Office 365 richtet die e-Mail-Authentifizierung für die Standarddomäne ein (onmicrosoft.com), aber Office 365-Administratoren können auch e-Mail-Authentifizierung für benutzerdefinierte Domänen verwenden. Es werden drei Authentifizierungsmethoden verwendet: <br/> <br> &ensp;&ensp;• Sender Policy Framework (SPF).<br/>&ensp;&ensp;&ensp;&ensp;– Informationen zur Einrichtung finden Sie unter [Set up SPF in Office 365, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). <br/> &ensp;&ensp;• DomainKeys Identified Mail (DKIM). <br/> &ensp;&ensp;&ensp;&ensp;-Siehe [Verwenden von DKIM für e-Mails in Ihrer benutzerdefinierten Domäne in Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email). <br>&ensp;&ensp;&ensp;&ensp;-Nachdem Sie DKIM konfiguriert haben, aktivieren Sie es im Sicherheitscenter.<br/> &ensp;&ensp;• Domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität (DMARC). <br/> &ensp;&ensp;&ensp;&ensp;-Für DMARC-Setup [verwenden Sie DMARC, um e-Mails in Office 365 zu überprüfen](use-dmarc-to-validate-email.md).<br/>  <br/>
 |
 
 > [!NOTE]
 > Für nicht standardmäßige Bereitstellungen von SPF, hybridbereitstellungen und Problembehandlung: [wie Office 365 das SPF (Sender Policy Framework) verwendet, um Spoofing zu verhindern](how-office-365-uses-spf-to-prevent-spoofing.md).
 
-## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>Anzeigen von Dashboards und Berichten im Security &amp; Compliance Center
+## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>Anzeigen von Dashboards und Berichten im Security and Compliance Center
 
-Besuchen Sie diese Berichte und Dashboards, um mehr über die Integrität Ihrer Umgebung zu erfahren. Die Daten in diesen Berichten werden reicher, da Ihre Organisation Office 365-Dienste verwendet. Im Moment sollten Sie mit dem, was Sie überwachen und Maßnahmen ergreifen können, vertraut sein. Weitere Informationen finden Sie unter: [Reports in Office 365 &amp; Security Compliance Center](reports-in-security-and-compliance.md).
+Besuchen Sie diese Berichte und Dashboards, um mehr über die Integrität Ihrer Umgebung zu erfahren. Die Daten in diesen Berichten werden reicher, da Ihre Organisation Office 365-Dienste verwendet. Im Moment sollten Sie mit dem, was Sie überwachen und Maßnahmen ergreifen können, vertraut sein. Weitere Informationen finden Sie unter: [Reports in Microsoft 365 Security and Compliance Centers](reports-in-security-and-compliance.md).
   
 |Dashboard * * * *|****Beschreibung****|
 |:-----|:-----|
-|Risikomanagement-Dashboard  <br/> |Verwenden Sie im Abschnitt "Bedrohungs &amp; Verwaltung" des Security Compliance Centers dieses Dashboard, um bereits behandelte Bedrohungen anzuzeigen, und als handliches Tool für die Berichterstellung an geschäftliche Entscheidungsträger, welche Bedrohungen Untersuchungen und Reaktionsmöglichkeiten aufweisen. bereits getan, um Ihr Unternehmen zu sichern.  <br/> |
-|Bedrohungs-Explorer  <br/> |Dies befindet sich auch im Abschnitt zur Bedrohungs Verwaltung &amp; von Security Compliance Center. Wenn Sie einen Angriff auf Ihren Office 365-Mandanten untersuchen oder auftreten, verwenden Sie den Bedrohungs-Explorer, um Bedrohungen zu analysieren. Der Bedrohungs-Explorer zeigt den Umfang der Angriffe über die Zeit an, und Sie können diese Daten anhand von Bedrohungs Familien, der Angreifer-Infrastruktur und vieles mehr analysieren. Sie können auch verdächtige e-Mails für die Vorfall Liste kennzeichnen.  <br/> |
-|Berichte – Dashboard  <br/> |Im Abschnitt Berichte des Security &amp; Compliance Centers können Sie Überwachungsberichte für Ihre SharePoint Online-und Exchange Online-Organisationen anzeigen. Sie können auf der Seite Berichte anzeigen auch auf Azure Active Directory (AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD-Überwachungsprotokoll zugreifen.  <br/> |
+|Risikomanagement-Dashboard  <br/> |Verwenden Sie im Abschnitt "Bedrohungs Verwaltung" des Sicherheitscenters dieses Dashboard, um bereits behandelte Bedrohungen anzuzeigen, und als handliches Tool für die Berichterstellung an geschäftliche Entscheidungsträger, welche Bedrohungen Untersuchungen und Reaktionsmöglichkeiten bereits ausgeführt haben. Sichern Sie Ihr Unternehmen.  <br/> |
+|Bedrohungs-Explorer  <br/> |Dies befindet sich auch im Abschnitt Bedrohungs Verwaltung des Sicherheitscenters. Wenn Sie einen Angriff auf Ihren Office 365-Mandanten untersuchen oder auftreten, verwenden Sie den Bedrohungs-Explorer, um Bedrohungen zu analysieren. Der Bedrohungs-Explorer zeigt den Umfang der Angriffe über die Zeit an, und Sie können diese Daten anhand von Bedrohungs Familien, der Angreifer-Infrastruktur und vieles mehr analysieren. Sie können auch verdächtige e-Mails für die Vorfall Liste kennzeichnen.  <br/> |
+|Berichte – Dashboard  <br/> |Zeigen Sie im Abschnitt Berichte des Sicherheitscenters Überwachungsberichte für Ihre SharePoint Online-und Exchange Online-Organisationen an. Sie können auf der Seite Berichte anzeigen auch auf Azure Active Directory (Azure AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD-Überwachungsprotokoll zugreifen.  <br/> |
    
-![Security &amp; Compliance Center-Dashboard](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Sicherheitscenter-Dashboard](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Konfigurieren zusätzlicher Mandanten weiter Einstellungen für Exchange Online
 
-Viele der Steuerelemente für Sicherheit und Schutz in der Exchange-Verwaltungskonsole sind auch im Security and Compliance Center enthalten. Sie müssen diese nicht an beiden Stellen konfigurieren. Hier sind ein paar zusätzliche Einstellungen, die empfohlen werden. 
+Viele der Steuerelemente für Sicherheit und Schutz in der Exchange-Verwaltungskonsole sind auch im Sicherheitscenter enthalten. Sie müssen diese nicht an beiden Stellen konfigurieren. Hier sind ein paar zusätzliche Einstellungen, die empfohlen werden. 
   
 |Bereich * * * *|Enthält eine Standardrichtlinie * * * *|Empfehlung * * * *|
 |:-----|:-----|:-----|
@@ -122,7 +122,7 @@ Weitere Informationen:
     
 ![Cloud App Security-Dashboard](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Diese Artikel und Leitfäden enthalten zusätzliche normative Informationen zum Sichern Ihrer Office 365-Umgebung:
   
