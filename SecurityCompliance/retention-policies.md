@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455447"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935300"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -244,7 +244,7 @@ Wir arbeiten noch an der Aufbewahrung in Teams, und es werden in Zukunft weitere
     
 - **Teams ist nicht in einer organisationsweiten Richtlinie eingeschlossen** Wenn Sie eine organisationsweite Richtlinie erstellen, ist Teams nicht eingeschlossen, da es eine separate Aufbewahrungsrichtlinie erfordert. 
     
-- **Teams unterstützt nicht die erweiterte Archivierung** Wenn Sie eine Aufbewahrungsrichtlinie erstellen und die [Erweiterten Einstellungen auswählen, nach denen eine Richtlinie nur auf Inhalte angewendet wird, die bestimmten Kriterien entsprechen](retention-policies.md#advanced), ist der Teams-Speicherort nicht verfügbar. Zu diesem Zeitpunkt betrifft die Aufbewahrung in Teams alle Chat- und Kanalnachrichteninhalte.
+- **Teams unterstützt nicht die erweiterte Archivierung** Wenn Sie eine Aufbewahrungsrichtlinie erstellen und die [Erweiterten Einstellungen auswählen, nach denen eine Richtlinie nur auf Inhalte angewendet wird, die bestimmten Kriterien entsprechen](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), ist der Teams-Speicherort nicht verfügbar. Zu diesem Zeitpunkt betrifft die Aufbewahrung in Teams alle Chat- und Kanalnachrichteninhalte.
     
 - **Teams-Inhalte müssen mindestens 30 Tage alt sein, um gelöscht werden zu können** Zu diesem Zeitpunkt wird das Erstellen einer Richtlinie, nach der Teams-Inhalte, die weniger als 30 Tage alt sind, gelöscht werden, nicht unterstützt. Wenn Sie diese Richtlinie auf Teams-Inhalte anwenden möchten, geben Sie einen Aufbewahrungszeitraum an, der gleich oder größer als 30 Tage ist. 
     
@@ -252,7 +252,7 @@ Wir arbeiten noch an der Aufbewahrung in Teams, und es werden in Zukunft weitere
     
 In einem Team werden Dateien, die im Chat freigegeben wurden, im OneDrive-Konto des Benutzers gespeichert, der die Datei freigegeben hat. Dateien, die in Kanäle hochgeladen wurden, werden in der SharePoint-Website für das Team gespeichert. Wenn Sie Daten in einem Team aufbewahren oder löschen möchten, müssen Sie daher eine Aufbewahrungsrichtlinie erstellen, die an den SharePoint- und OneDrive-Speicherorten gilt. Wenn Sie eine Richtlinie für die Dateien von nur einem bestimmten Team anwenden möchten, können Sie die SharePoint-Website für das Team und die OneDrive-Konten der Benutzer in dem Team auswählen.
   
-Eine Aufbewahrungsrichtlinie, die für Teams gilt, kann die [Erhaltungssperre](retention-policies.md#locking) nutzen.
+Eine Aufbewahrungsrichtlinie, die für Teams gilt, kann die [Erhaltungssperre](#locking-a-retention-policy) nutzen.
   
 ![Teams-Speicherorte für Chat- und Kanalnachrichten](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   

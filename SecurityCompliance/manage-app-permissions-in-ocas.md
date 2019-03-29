@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: OAuth apps in Office 365 Cloud-App-Sicherheit helfen Ihnen, die apps zu verwalten, die Ihre Benutzer für die Verwendung mit Office 365-Daten herunterladen
-ms.openlocfilehash: 510cb64f2267c99b783f86a69f7b7a84db8d84dd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219825"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862587"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Verwalten von OAuth-Apps mit Office 365 Cloud App Security
 
 |Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
-|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](manage-app-permissions-in-ocas.md#nextsteps) <br/> |
+|[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächste Schritte](#next-steps)<br/> |
    
 People Love apps und Sie laden Sie oft, insbesondere apps, die Leute denken, wird Zeit sparen, indem Sie es einfacher, ihre Arbeit oder Schulinformationen zu erhalten. Einige apps können jedoch möglicherweise ein Sicherheitsrisiko für Ihre Organisation darstellen, je nachdem, auf welche Informationen Sie zugreifen und wie diese Informationen verarbeitet werden. Mit [Office 365 Cloud App Security](office-365-cas-overview.md), wenn Sie ein globaler oder Sicherheitsadministrator sind, können Sie OAuth-Apps für Ihre Organisation verwalten. Sie können sehen, welche apps Benutzer mit Office 365-Daten verwenden, welche Berechtigungen diese apps haben und vieles mehr. 
   
@@ -49,9 +49,9 @@ In der folgenden Tabelle werden die Steuerelemente und Optionen beschrieben, die
 |Symbol "Erweitert" in der APP-Abfrage Leiste  <br/> ![Symbol, das die erweiterte Abfrageansicht für Abfragen angibt](media/9958d832-2c81-45ed-a642-d926310ba6b6.png)|Wählen Sie diese Option aus, um zur Standardansicht zu wechseln.  <br/> (Wenn Sie " **erweitert**" sehen, verwenden Sie die Standardansicht.)  <br/> |
 |Öffnen oder Schließen aller Details-Symbol in der APP-Liste  <br/> ![Klicken Sie auf dieses Symbol, um alle Details für alle apps zu öffnen oder zu schließen.](media/018fa996-10e8-48ff-986e-55f2b69a5753.png)|Wählen Sie dieses Symbol aus, um mehr oder weniger Details zu den einzelnen apps anzuzeigen.  <br/> |
 |Export Symbol in der APP-Liste  <br/> ![Klicken Sie auf dieses Symbol, um eine CSV-Datei aller apps zu exportieren.](media/98446851-fd96-4d09-9bb0-831db33090c1.png)|Wählen Sie dieses Symbol aus, um eine CSV-Datei zu exportieren, die eine Liste der apps, die Anzahl der Benutzer für jede APP, Berechtigungen für die APP, Berechtigungsstufe, App-Status und Community-Nutzungs Ebene enthält.  <br/> |
-|Name  <br/> |Verwenden Sie diese Option, um den Namen einer APP anzuzeigen. Wählen Sie den Namen aus, um weitere Informationen anzuzeigen, beispielsweise die Beschreibung, den Herausgeber, die APP-Website und die APP-ID.  <br/> |
+|Name  <br/> |Verwenden Sie diese, um den Namen einer APP anzuzeigen. Wählen Sie den Namen aus, um weitere Informationen anzuzeigen, beispielsweise die Beschreibung, den Herausgeber, die APP-Website und die APP-ID.  <br/> |
 |Autorisiert von  <br/> |Verwenden Sie diese Informationen, um zu sehen, wie viele Benutzer eine APP autorisiert haben, auf Ihr Office 365-Konto zuzugreifen. Wählen Sie die Nummer aus, um weitere Informationen anzuzeigen, beispielsweise eine Liste von Benutzerkonten.  <br/> |
-|Berechtigungsstufe  <br/> ![Symbol, das die permisiions-Ebene für eine APP angibt](media/aaebdd29-35b6-4c62-aef1-7c7817bd803d.png)|Verwenden Sie diese, um zu sehen, wie viel Zugriff eine APP auf Office 365-Daten hat. Berechtigungsstufen deuten auf **niedrig**, **Mittel**oder **hoch**hin, wobei **Low** darauf hindeuten kann, dass die app nur auf das Profil und den Namen eines Benutzers zugreift. Wählen Sie die Ebene aus, um weitere Informationen anzuzeigen, beispielsweise Berechtigungen, die der APP erteilt wurden, die Community-Nutzung und die zugehörigen Aktivitäten im [Steuerungsprotokoll](suspend-or-restore-an-account-in-ocas.md).<br/> |
+|Berechtigungsstufe  <br/> ![Symbol, das die permisiions-Ebene für eine APP angibt](media/aaebdd29-35b6-4c62-aef1-7c7817bd803d.png)|Verwenden Sie diese, um zu sehen, wie viel Zugriff eine APP auf Office 365-Daten hat. Berechtigungsstufen deuten auf **niedrig**, **Mittel**oder **hoch**hin, wobei **Low** darauf hindeuten kann, dass die app nur auf das Profil und den Namen eines Benutzers zugreift. Wählen Sie die Ebene aus, um weitere Informationen anzuzeigen, beispielsweise Berechtigungen, die der APP erteilt wurden, die Community-Nutzung und die zugehörigen Aktivitäten im [Steuerungsprotokoll](suspend-or-restore-an-account-in-ocas.md).  <br/> |
 |Zuletzt autorisiert <br/> |Verwenden Sie diese, um das Datum und die Uhrzeit anzuzeigen, zu der eine OAuth-App zuletzt autorisiert wurde, um auf die Office 365-Daten Ihrer Organisation zuzugreifen. <br/>  |
 |Aktionen<br/>![OAuth-apps](media/OCAS-OAuthAppApproveBanReport.png)<br/> |Verwenden Sie diese Funktion, um eine App als genehmigt oder gesperrt zu markieren, eine OAuth-APP an Microsoft zu melden oder Sie als unbestimmt zu belassen.  <br/> |
    
@@ -82,7 +82,7 @@ Wenn Sie eine OAuth-App zur Analyse an Microsoft übermitteln möchten, können 
 
 2. Wählen Sie die vertikalen Auslassungspunkte aus, und wählen Sie dann **Bericht-app...**.<br/>![Melden einer OAuth-App](media/OCAS-MarkOAuthReported.png)<br/>
 
-3. Geben Sie im Dialogfeld **diese APP melden** in der Dropdownliste ihre Bedenken an. Standardmäßig ist **diese APP bösartig** ausgewählt. Sie können jedoch eine der anderen verfügbaren Optionen auswählen.<br/>![Melden einer OAuth-App](media/OCAS-ReportOAuthApp.png)<br/>
+3. Geben Sie im Dialogfeld **diese APP melden** in der Dropdownliste ihre Bedenken an. Standardmäßig ist **diese APP bösartig** ausgewählt. Sie können jedoch eine der anderen verfügbaren Optionen auswählen. <br/>![Melden einer OAuth-App](media/OCAS-ReportOAuthApp.png)<br/>
 
 4. Empfohlen Halten Sie die Option, Kontakt mit Ihnen ausgewählt, und bestätigen (oder bearbeiten) Sie die e-Mail-Adresse aufgeführt.
 
