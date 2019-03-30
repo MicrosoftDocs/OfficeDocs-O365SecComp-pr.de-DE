@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Für Administratoren: erfahren Sie, wie Sie die automatische Erweiterung der Archivierung in Office 365 aktivieren, sodass Ihre Benutzer unbegrenzten Speicherplatz für Ihre Exchange Online-Postfächer bereitstellen können. Sie können die automatische Erweiterung der Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
-ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670620"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000848"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Aktivieren der unbegrenzten Archivierung in Office 365 – Administratorhilfe
 
@@ -31,20 +31,20 @@ Sie können das Feature für die automatische Erweiterung der Exchange Online-Ar
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365-Organisation oder ein Mitglied der Rollengruppe "Organisationsverwaltung" in Ihrer Exchange Online-Organisation sein, um die automatische Erweiterung der Archivierung für Ihre gesamte Organisation oder für bestimmte Benutzer zu aktivieren. Alternativ müssen Sie Mitglied einer Rollengruppe sein, der die Rolle e-Mail-Empfänger zugewiesen ist, um die automatische Erweiterung der Archivierung für bestimmte Benutzer zu aktivieren.
     
-- Das Archivpostfach eines Benutzers muss aktiviert sein, bevor Sie die automatische Erweiterung der Archivierung aktivieren können. Einem Benutzer muss eine Exchange Online-Plan 2-Lizenz zugewiesen sein, um das Archivpostfach zu aktivieren. Wenn einem Benutzer eine Exchange Online-Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um das Archivpostfach zu aktivieren. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern im Office 365 Security &amp; Compliance Center](enable-archive-mailboxes.md).
+- Das Archivpostfach eines Benutzers muss aktiviert sein, bevor Sie die automatische Erweiterung der Archivierung aktivieren können. Einem Benutzer muss eine Exchange Online-Plan 2-Lizenz zugewiesen sein, um das Archivpostfach zu aktivieren. Wenn einem Benutzer eine Exchange Online-Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, um das Archivpostfach zu aktivieren. Weitere Informationen finden Sie unter [Aktivieren von archivpostfächern im Security _AMP_ Compliance Center](enable-archive-mailboxes.md).
     
 - Sie können auch PowerShell verwenden, um Archivpostfächer zu aktivieren. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ein Beispiel für den PowerShell-Befehl, mit dem Sie Archivpostfächer für alle Benutzer in Ihrer Organisation aktivieren können. 
     
 - Die Archivierung mit automatischer Erweiterung unterstützt auch freigegebene Postfächer. Zum Aktivieren des Archivs für ein freigegebenes Postfach ist eine Exchange Online-Lizenz für den Plan 2 oder eine Exchange Online-Plan 1-Lizenz mit einer Exchange Online-Archivierungslizenz erforderlich.
     
-- Sie können das Exchange Admin Center oder das Security &amp; Compliance Center nicht verwenden, um die automatische Erweiterung der Archivierung zu aktivieren. Sie müssen Exchange Online PowerShell verwenden. Informationen zum Herstellen einer Verbindung mit Ihrer Exchange Online-Organisation mithilfe von Remote-PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Sie können das Exchange Admin Center oder das Security & Compliance Center nicht verwenden, um die automatische Erweiterung der Archivierung zu aktivieren. Sie müssen Exchange Online PowerShell verwenden. Informationen zum Herstellen einer Verbindung mit Ihrer Exchange Online-Organisation mithilfe von Remote-PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Aktivieren der automatischen Erweiterung der Archivierung für Ihre gesamte Organisation
 
 Sie können die automatische Erweiterung der Archivierung für Ihre gesamte Organisation aktivieren. Nachdem Sie es aktiviert haben, wird die automatische Vergrößerung der Archivierung für vorhandene Benutzerpostfächer und für neue Benutzerpostfächer, die erstellt werden. Wenn Sie neue Benutzerpostfächer erstellen, müssen Sie unbedingt das Hauptarchiv Postfach des Benutzers aktivieren, damit das Feature für die automatische Erweiterung der Archivierung für das neue Benutzerpostfach funktioniert.
   
-1. [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 2. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die automatische Erweiterung der Archivierung für Ihre gesamte Organisation zu aktivieren.
 
@@ -64,7 +64,7 @@ Wenn Sie die automatische Erweiterung der Archivierung für einen bestimmten Ben
     
 Dieser zusätzliche Speicherplatz wird hinzugefügt, um Speicherprobleme zu vermeiden, die auftreten können, bevor das automatisch expandierende Archiv bereitgestellt wird. Beachten Sie, dass zusätzlicher Speicherplatz nicht hinzugefügt *wird* , wenn Sie die automatische Erweiterung der Archivierung für Ihre gesamte Organisation aktivieren, wie im vorherigen Abschnitt beschrieben. 
   
-1. [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 2. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die automatische Erweiterung der Archivierung für einen bestimmten Benutzer zu aktivieren. Wie bereits erläutert, muss das Archivpostfach des Benutzers (Hauptarchiv) aktiviert sein, bevor Sie die automatische Erweiterung der Archivierung für diesen Benutzer aktivieren können.
     

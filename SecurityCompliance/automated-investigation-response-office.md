@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr über automatisierte Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792509"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000438"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Automatisierte Untersuchung und Antwort (AIR) mit Office 365
 
@@ -39,9 +39,9 @@ In der ersten Freigabe von AIR im April 2019 werden Warnungen, die von den Warnu
 
 ***Hinweis**: diesen Warnungen wurde in den entsprechenden Warnungsrichtlinien innerhalb des Security _AMP_ Compliance Centers mit deaktivierten e-Mail-Benachrichtigungen eine "Information"-Schweregrad zugewiesen. Diese können über die Warnungsrichtlinien Konfiguration aktiviert werden.
 
-zum anzeigen von benachrichtigungen wählen sie im Office 365 Security & Compliance Center **alerts** > **anzeigen**. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **untersuchUng anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu wechseln. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um Sie anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Sie Informationswarnungen enthält.
+Um Benachrichtigungen anzuzeigen, wählen Sie im Security & Compliance Center **Alerts** > **anzeigen**. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **untersuchUng anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu wechseln. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um Sie anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Sie Informationswarnungen enthält.
 
-Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein Informations-und Ereignisverwaltungssystem (Security Information and Event Management, SIEM) verwaltet, können Sie Office 365-Benachrichtigungen über eine e-Mail-Benachrichtigung oder über die [ Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Die Benachrichtigung über Untersuchungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Office 365 Security & Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
+Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein Informations-und Ereignisverwaltungssystem (Security Information and Event Management, SIEM) verwaltet, können Sie Office 365-Benachrichtigungen über eine e-Mail-Benachrichtigung oder über die [ Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Die Benachrichtigung über Untersuchungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security & Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
 
 ![Warnungen, die auf Untersuchungen verweisen](media/air-alerts-page-details.png) 
 
@@ -121,7 +121,7 @@ Nehmen Sie als weiteres Beispiel an, dass Sie Daten zu e-Mail-Nachrichten anzeig
 
 ## <a name="get-started"></a>Erste Schritte
 
-Um auf ihre Untersuchungen zuzugreifen, wechseln Sie als globaler Office 365-Administrator, Sicherheitsadministrator oder Sicherheits Leser zum Office 365 Security & Compliance[https://protection.office.com](https://protection.office.com)Center (), und melden Sie sich an. Führen Sie dann einen der folgenden Schritte aus:
+Um auf ihre Untersuchungen zuzugreifen, wechseln Sie als globaler Office 365-Administrator, Sicherheitsadministrator oder Sicherheits Leser zum Security & Compliance[https://protection.office.com](https://protection.office.com)Center (), und melden Sie sich an. Führen Sie dann einen der folgenden Schritte aus:
 
 - Navigieren Sie im linken Navigationsbereich zu **** > Warnungsbenachrichtigungen**anzeigen**, öffnen Sie eine der Untersuchungen zugehörigen Warnungen, und klicken Sie dann unten im Warnungs Flyout auf den Link **Untersuchung anzeigen** . 
 

@@ -6,23 +6,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Wie Microsoft die Kernprinzipien der Absorption, der Erkennung und der Schadensminimierung bei der Abwehr von DoS-Angriffen (Denial-of-Service) nutzt.
-ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216005"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004102"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Wichtige Grundsätze zum Schutz vor Denial-of-Service-Angriffen
 
-Die drei Hauptprinzipien bei der Verteidigung gegen netzwerkbasierte DoS-Angriffe sind Absorption, Erkennung und Minderung. Die Absorption geschieht vor der Erkennung, und die Erkennung geschieht vor der Minderung. Absorption ist die beste Verteidigung gegen DoS-Angriffe. Wenn der Angriff nicht erkannt werden kann, kann er nicht abgemildert werden. Aber wenn auch der kleinste DoS-Angriff nicht absorbiert werden kann, werden die Dienste nicht lange genug überleben, damit der Angriff erkannt wird.
+Die drei Hauptprinzipien bei der Verteidigung gegen netzwerkbasierte DoS-Angriffe sind Absorption, Erkennung und Minderung.
+Die Absorption geschieht vor der Erkennung, und die Erkennung geschieht vor der Minderung. Absorption ist die beste Verteidigung gegen DoS-Angriffe. Wenn der Angriff nicht erkannt werden kann, kann er nicht abgemildert werden. Aber wenn auch der kleinste DoS-Angriff nicht absorbiert werden kann, werden die Dienste nicht lange genug überleben, damit der Angriff erkannt wird.
 
 Natürlich ist es für die meisten Organisationen in der Regel nicht praktikabel, die Überkapazitäten zu erwerben, die zur Aufnahme von DoS-Angriffen erforderlich sind, da dies beträchtliche Investitionen in Technologie und technische Fähigkeiten erfordert. Dies weist auf einen der Sicherheitsvorteile der Verwendung von Microsoft Cloud Services hin. die schiere Skala unserer Dienste ermöglicht es uns, unseren Cloud-Kunden einen hohen Netzwerkschutz auf kosteneffektive Weise zu bieten. Doch selbst in unserem Umfang muss es dennoch ein Gleichgewichtzwischen Absorption, Erkennung und Minderung geben. Um diese Balance zu finden, untersuchen wir die Wachstumsrate eines Angriffs, um zu ermitteln, wie viel wir absorbieren müssen.
 

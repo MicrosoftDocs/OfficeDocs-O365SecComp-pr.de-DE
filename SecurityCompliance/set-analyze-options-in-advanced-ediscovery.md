@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Lesen Sie die Schritte zum Einrichten von Optionen für den Analyseprozess in Office 365 Advanced eDiscovery, einschließlich near-Duplicates, e-Mail-Threads und Designs.  '
-ms.openlocfilehash: 12bbe4043803c165a58adac80b72d03afd48adc7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4689638f5cebe2ef17fcea5a13ff06edc29e5930
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218225"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998528"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Festlegen von Analyseoptionen in Office 365 Advanced eDiscovery
 
@@ -31,7 +31,7 @@ Legen Sie in Advanced eDiscovery die Analyseoptionen vor dem Durchführen von AN
 
 Öffnen **Sie \> Prepare analyze** \> **Setup**. Das folgende Fenster wird angezeigt.
   
-![Analyseoptionen festlegen](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
+![Festlegen von Analyseoptionen](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
  **Near-Duplikate und e-Mail-Threads** Aktivieren Sie dieses Kontrollkästchen, wenn Sie die Analyse ausführen möchten. Sie ist standardmäßig ausgewählt. 
   
@@ -52,7 +52,7 @@ Legen Sie in Advanced eDiscovery die Analyseoptionen vor dem Durchführen von AN
   
 1. Klicken Sie auf **ändern**, um vorgeschlagene Designs anzuzeigen, hinzuzufügen oder zu bearbeiten.
     
-2. Klicken Sie im Bereich **vorgeschlagene Designs** auf das ****![Symbol hinzufügen](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) Symbol hinzufügen, um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagene Design hinzufügen** die Wörter durch Kommata getrennt hinzu. 
+2. Klicken Sie im Bereich **vorgeschlagene Designs** auf das **** ![Symbol hinzufügen](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) Symbol hinzufügen, um ein Design hinzuzufügen. Fügen Sie im Bereich **vorgeschlagene Design hinzufügen** die Wörter durch Kommata getrennt hinzu. 
     
 3. Wählen Sie unter **Anzahl der Designs**einen Wert aus, um die Anzahl der Designs zu ermitteln, die die erweiterte eDiscovery für diese Wörter generieren soll (standardmäßig 1 Design).
     
@@ -81,7 +81,7 @@ Nachdem Sie diese Optionen festgelegt haben, klicken Sie auf **analyze** to Run.
   
 [Text ignorieren festlegen](set-ignore-text-in-advanced-ediscovery.md)
   
-[Analysieren erweiterter Einstellungen festlegen](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Erweiterte Einstellungen für ANALYZE festlegen](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
 [Ergebnisse analysieren](view-analyze-results-in-advanced-ediscovery.md)
 

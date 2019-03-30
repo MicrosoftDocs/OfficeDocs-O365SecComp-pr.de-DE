@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Hier finden Sie eine Schnellstartanleitung, die Sie verwenden können, um sicherzustellen, dass Office 365 Advanced Threat Protection (ATP) für Ihre Organisation eingerichtet und konfiguriert ist.
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693296"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999398"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Schnell Start Handbuch: Einrichten von Office 365 Advanced Threat Protection
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Schnellstart-Handbuch: Einrichten von Office 365 Advanced Threat Protection
 
 Hier finden Sie eine Schnellstartanleitung, die Sie als Prüfliste verwenden können, um sicherzustellen, dass Office 365 Advanced Threat Protection (ATP) für Ihre Organisation eingerichtet ist. Wenn Sie noch nicht mit dem Bedrohungsschutz in Office 365 zu tun haben, oder wenn Sie nicht sicher sind, wo Sie anfangen sollen, verwenden Sie die folgenden Anweisungen als Ausgangspunkt. 
 
@@ -44,7 +44,7 @@ Hier finden Sie eine Schnellstartanleitung, die Sie als Prüfliste verwenden kö
 
 ## <a name="part-1---anti-malware"></a>Abschnitt 1-Antischadsoftware
 
-1. wählen sie im [Office 365 Security & Compliance Center](https://protection.office.com) **Threat management** > **Policy** > **Anti-schadsoftware**aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com) **Threat Management** > **Policy** > **Anti-Schadsoftware**aus.
 2. Doppelklicken Sie auf die **Standard** Richtlinie, und wählen Sie dann **Einstellungen**aus.
 3. Geben Sie die folgenden Einstellungen an:
     - Behalten Sie im Abschnitt **Malware Erkennungs Antwort** die Standardeinstellung **Nein**bei.
@@ -59,7 +59,7 @@ Zero-Day Protection ist durch Richtlinien wie ATP-sichere Links und sichere Anla
 
 ### <a name="atp-safe-attachments-policies"></a>Richtlinien für ATP-sichere Anlagen
 
-1. wählen sie im [Office 365 Security & Compliance Center](https://protection.office.com)" **Threat management** > **Policy** > **ATP safe attachments**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)" **Threat Management** > **Policy** > **ATP Safe Attachments**" aus.
 2. Aktivieren Sie die Option **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**.
 3. Klicken Sie im Abschnitt **e-Mail-Anlagen schützen** auf das**+** Pluszeichen ().
 4. Geben Sie die folgenden Einstellungen an:
@@ -76,7 +76,7 @@ Weitere Informationen finden Sie unter [Einrichten von office 365 ATP Safe Attac
 
 Um ATP-sichere Links einzurichten, überarbeiten Sie Ihre Standardrichtlinie und fügen eine Richtlinie hinzu.
 
-1. wählen sie im [Office 365 Security & Compliance Center](https://protection.office.com)" **Threat management** > **Policy** > **ATP Safe Links**" aus.
+1. Klicken Sie im [Security & Compliance Center](https://protection.office.com)auf **Threat Management** > **Policy** > **ATP Safe Links**.
 2. Doppelklicken Sie auf die **Standard** Richtlinie.
 3. Wählen Sie im Abschnitt **sichere Links verwenden in** die option **Office 365 ProPlus, Office für IOS und Android**aus, und klicken Sie dann auf **Speichern**.
 4. Klicken Sie im Abschnitt **Richtlinien für bestimmte Empfänger** auf das Pluszeichen (**+**).
@@ -94,7 +94,7 @@ Weitere Informationen finden Sie unter [Einrichten von Office 365 ATP-Richtlinie
 
 ## <a name="part-3---anti-phishing"></a>Abschnitt 3-AntiPhishing 
 
-1. wählen sie im [Office 365 Security & Compliance Center](https://protection.office.com)die option **Threat management** > **Policy** > **ATP anti-phishing**aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option **Threat Management** > **Policy** > **ATP Anti-Phishing**aus.
 2. Klicken Sie auf **Standardrichtlinie**.
 3. Klicken Sie im Abschnitt **Identitätswechsel** auf **Bearbeiten**, und geben Sie dann die folgenden Einstellungen an:
     -  Aktivieren Sie auf der Registerkarte **zu schützende Benutzer hinzufügen** den Schutz. Fügen Sie dann Benutzer wie die Vorstandsmitglieder Ihrer Organisation, ihren CEO, CFO und andere Führungskräfte hinzu. (Sie können eine einzelne e-Mail-Adresse eingeben oder auf klicken, um eine Liste anzuzeigen.)
@@ -112,7 +112,7 @@ Weitere Informationen zu den Optionen für die Anti-Phishing-Richtlinie finden S
 
 ## <a name="part-4---anti-spam"></a>Abschnitt 4-Antispam
 
-1. wählen sie im [Office 365 Security & Compliance Center](https://protection.office.com)" **Threat management** > **Policy** > **Anti-spam**" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)**Anti-Spam**für **Threat Management** > **Policy** > aus.
 2. Aktivieren Sie auf der Registerkarte **benutzerdefinierte** **Einstellungen** .
 3. Erweitern Sie **Standard-Spamfilter Richtlinie**, klicken Sie auf **Richtlinie bearbeiten**, und geben Sie dann die folgenden Einstellungen an:
     - Legen Sie im Abschnitt **Spam-und Massenaktionen** den Schwellenwert auf 5 oder 6 fest.

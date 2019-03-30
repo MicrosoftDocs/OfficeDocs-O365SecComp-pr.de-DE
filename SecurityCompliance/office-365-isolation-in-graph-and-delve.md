@@ -3,23 +3,22 @@ title: Office 365-Mandanten Isolierung im Office-Diagramm
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Erläuterung der Mandanten Isolierung im Office-Diagramm und in "einTauchen".'
-ms.openlocfilehash: cb1b432dccff6c4f890ef4aeb8ea4c19989b09d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 22bcf581c26ea4e334539a81861ff4dee68967ef
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216805"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004202"
 ---
 # <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Mandantenisolation in Office Graph und Delve
 
@@ -36,4 +35,5 @@ Das Office-Diagramm bringt nicht alle Daten in ein einzelnes Repository; Stattde
 Analysen innerhalb jeder Arbeitslast leiten Erkenntnisse, die für die Mandanten weiten Berechnungen relevant sind, und führen Sie an das Mandanten Diagramm weiter. Mandanten Analyse Gründe für alle Aktivitäten in einem Mandanten, um Einblicke in Verhaltensmuster zu erzielen. Exchange Online berechnet beispielsweise den Empfängercache für jeden Benutzer mit Analysen, die für das Postfach der einzelnen Benutzer effizient sind. Diese pro-Benutzer-Analyse erzeugt eine Reihe von *RecipientCache-Kanten* für jede Person, die wiederum an das Mandanten Diagramm geschoben werden. Dadurch wird die Verarbeitung der Analyse so weit wie möglich bei den Quelldaten beibehalten.
 
 ## <a name="tenant-isolation-in-delve"></a>Mandanten Isolierung in verTiefen
-Wie bereits erwähnt, macht der Office Graph Erfahrungen, die Personen bei der Ermittlung und Zusammenarbeit an aktuellen Aktivitäten in Ihrem Unternehmen helfen, und bietet eine Entitäts zentrierte Plattform für Analysen, um die Inhalte und Aktivitäten über Arbeitslasten hinweg zu überdenken und Beyond Office 365. VerTiefen ist die erste solche Erfahrung, die von der Office-Grafik unterstützt wird. VerTiefen ist eine Office 365-Web-Erfahrung, die Inhalte aus Office 365 und jammert Enterprise zu Office 365-Benutzer über das Office-Diagramm. Die Webumgebung zeigt Daten als unterschiedliche Bretter an, die jeweils ein bestimmtes Thema aufweisen, wie etwa *Trending um mich herum* oder *von mir geändert*. Jedes Board besteht aus mehreren Dokumentkarten, in denen Zusammenfassender Text und ein Bild aus dem Dokument angezeigt werden. Die Karte ermöglicht es Benutzern, das Dokument oder eine Jammer Seite für das Dokument zu öffnen. Für jede Person in einem Office 365-Mandanten gibt es eine Seite, die die relevantesten Dokumente für diese Person anzeigt, sowie Symbole, die Exchange Online oder Skype for Business für die Interaktion mit dieser Person aufrufen können. Da Sie auf der Office Graph-API basieren, ist Sie an die Mandanten basierte Isolierung dieser API gebunden.
+Wie bereits erwähnt, macht der Office Graph Erfahrungen, die Personen bei der Ermittlung und Zusammenarbeit an aktuellen Aktivitäten in Ihrem Unternehmen helfen, und bietet eine Entitäts zentrierte Plattform für Analysen, um die Inhalte und Aktivitäten über Arbeitslasten hinweg zu überdenken und Beyond Office 365. VerTiefen ist die erste solche Erfahrung, die von der Office-Grafik unterstützt wird.
+VerTiefen ist eine Office 365-Web-Erfahrung, die Inhalte aus Office 365 und jammert Enterprise zu Office 365-Benutzer über das Office-Diagramm. Die Webumgebung zeigt Daten als unterschiedliche Bretter an, die jeweils ein bestimmtes Thema aufweisen, wie etwa *Trending um mich herum* oder *von mir geändert*. Jedes Board besteht aus mehreren Dokumentkarten, in denen Zusammenfassender Text und ein Bild aus dem Dokument angezeigt werden. Die Karte ermöglicht es Benutzern, das Dokument oder eine Jammer Seite für das Dokument zu öffnen. Für jede Person in einem Office 365-Mandanten gibt es eine Seite, die die relevantesten Dokumente für diese Person anzeigt, sowie Symbole, die Exchange Online oder Skype for Business für die Interaktion mit dieser Person aufrufen können. Da Sie auf der Office Graph-API basieren, ist Sie an die Mandanten basierte Isolierung dieser API gebunden.

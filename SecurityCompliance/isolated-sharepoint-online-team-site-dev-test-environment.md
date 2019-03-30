@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217135"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000228"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -149,7 +149,7 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
   
-1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer (einfache Konfiguration) oder auf CLIENT1 (simulierte Unternehmenskonfiguration) beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit ihrem globalen Administratorkonto an.
+1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [https://admin.microsoft.com](https://admin.microsoft.com) unter Verwendung des globalen Administratorkontos an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -193,7 +193,7 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
     
 22. Schließen Sie die Registerkarte **Benutzer und Gruppen** in Ihrem Browser, klicken Sie auf die Registerkarte **ProjectX-Home** in Ihrem Browser, und schließen Sie dann den Bereich **Websiteberechtigungen**.
     
-Ergebnisse der Konfiguration von Berechtigungen:
+Nachfolgend finden Sie die Ergebnisse der Konfiguration von Berechtigungen:
   
 - Die SharePoint-Gruppe „ProjectX Members“ enthält nur die Zugriffsgruppe „ProjectX-Members“ (die nur die Benutzerkonten „Lead Designer“ und „Lead Researcher“ enthält) und die Gruppe „ProjectX“ (die nur das Benutzerkonto des globalen Administrators enthält).
     
@@ -217,7 +217,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
     
-3. Melden Sie sich beim Office 365-Portal[https://portal.office.com](https://portal.office.com)() mithilfe des Lead Designer-Kontonamens und des Kennworts an.
+3. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Lead Designers an.
     
 4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -247,7 +247,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
   
-1. Melden Sie sich beim Office 365-Portal[https://portal.office.com](https://portal.office.com)() mit dem Development VP-Kontonamen und dem Kennwort an.
+1. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Development VP an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -263,7 +263,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
     
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
   
-1. Melden Sie sich beim Office 365-Portal[https://portal.office.com](https://portal.office.com)() mit dem Kontonamen und dem Kennwort für den Benutzer 3 an.
+1. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort von Benutzer 3 an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die unerlaubte Einwilligung in Office 365 erkennen und beheben können.
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656071"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999938"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365
 
@@ -86,7 +86,7 @@ Das Skript erzeugt eine Datei mit dem Namen Permissions. CSV. Führen Sie die fo
 4.  Suchen Sie in der Spalte ClientDisplayName nach apps, die verdächtig erscheinen. Apps mit falsch geschriebenen Namen, Super Bland-Namen oder Hacker-klingenden Namen sollten sorgfältig überprüft werden.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Bestimmen des Umfangs des Angriffs
-Nachdem Sie den Anwendungszugriff inventarisiert haben, überprüfen Sie das Office 365- **Überwachungsprotokoll** , um den vollständigen Umfang der Verletzung zu ermitteln.  Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, die die illegale Anwendung Zugriff auf Ihre Organisation hatte, und die Berechtigungen, die die APP hatte. Sie können das **Überwachungsprotokoll** im [Office 365 Security and Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)durchsuchen. 
+Nachdem Sie den Anwendungszugriff inventarisiert haben, überprüfen Sie das Office 365- **Überwachungsprotokoll** , um den vollständigen Umfang der Verletzung zu ermitteln.  Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, die die illegale Anwendung Zugriff auf Ihre Organisation hatte, und die Berechtigungen, die die APP hatte. Sie können das **Überwachungsprotokoll** im [Microsoft 365 Security and Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)durchsuchen. 
 
 > [!IMPORTANT]
 > Die [postfachüberwachung](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) und [Aktivitätsüberwachung für Administratoren und Benutzer](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014) müssen vor dem Angriff aktiviert worden sein, damit Sie diese Informationen erhalten.

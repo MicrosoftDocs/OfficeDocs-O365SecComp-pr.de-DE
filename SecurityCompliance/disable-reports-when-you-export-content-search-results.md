@@ -1,5 +1,5 @@
 ---
-title: Deaktivieren von Berichten beim Exportieren von Inhalts Suchergebnissen im Office 365 Security &amp; Compliance Center
+title: Deaktivieren von Berichten beim Exportieren von Inhaltssuchergebnissen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Bearbeiten Sie die Windows-Registrierung auf dem lokalen Computer, um Berichte zu deaktivieren, wenn Sie die Ergebnisse einer Inhaltssuche aus dem &amp; Office 365 Security Comliance Center exportieren. Durch das Deaktivieren dieser Berichte kann die Downloadzeit beschleunigt und Speicherplatz gespart werden.
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: Bearbeiten Sie die Windows-Registrierung auf dem lokalen Computer, um Berichte zu deaktivieren, wenn Sie die Ergebnisse einer Inhaltssuche aus dem Security & Compliance Center in Office 365 exportieren. Durch das Deaktivieren dieser Berichte kann die Downloadzeit beschleunigt und Speicherplatz gespart werden.
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936715"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998765"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Deaktivieren von Berichten beim Exportieren von Inhalts Suchergebnissen im Office 365 Security &amp; Compliance Center
+# <a name="disable-reports-when-you-export-content-search-results"></a>Deaktivieren von Berichten beim Exportieren von Inhaltssuchergebnissen
 
-Wenn Sie das Office 365 eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security &amp; Compliance Center zu exportieren, erstellt und exportiert das Tool automatisch zwei Berichte, die zusätzliche Informationen zu den exportierten Inhalten enthalten. Diese Berichte sind die Datei results. CSV und die Datei Manifest. XML (Lesen Sie den Abschnitt [häufig gestellte Fragen zum Deaktivieren von Export Berichten](#frequently-asked-questions-about-disabling-export-reports) in diesem Thema für detaillierte Beschreibungen dieser Berichte). Da diese Dateien sehr umfangreich sein können, können Sie die Downloadzeit beschleunigen und Speicherplatz sparen, indem Sie verhindern, dass diese Dateien exportiert werden. Ändern Sie dazu die Windows-Registrierung auf dem Computer, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Berichte zu einem späteren Zeitpunkt hinzufügen möchten, können Sie die Registrierungseinstellung bearbeiten. 
+Wenn Sie das Office 365 eDiscovery-Export Tool verwenden, um die Ergebnisse einer Inhaltssuche im Security & Compliance Center zu exportieren, erstellt und exportiert das Tool automatisch zwei Berichte, die zusätzliche Informationen zu den exportierten Inhalten enthalten. Diese Berichte sind die Datei results. CSV und die Datei Manifest. XML (Lesen Sie den Abschnitt [häufig gestellte Fragen zum Deaktivieren von Export Berichten](#frequently-asked-questions-about-disabling-export-reports) in diesem Thema für detaillierte Beschreibungen dieser Berichte). Da diese Dateien sehr umfangreich sein können, können Sie die Downloadzeit beschleunigen und Speicherplatz sparen, indem Sie verhindern, dass diese Dateien exportiert werden. Ändern Sie dazu die Windows-Registrierung auf dem Computer, den Sie zum Exportieren der Suchergebnisse verwenden. Wenn Sie die Berichte zu einem späteren Zeitpunkt hinzufügen möchten, können Sie die Registrierungseinstellung bearbeiten. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Erstellen von Registrierungseinstellungen zum Deaktivieren der Export Berichte
 

@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Verwenden Sie die Suchstatistik Funktion, um Statistiken für mehrere Inhalts suchVorgänge im Office 365 Security &amp; Compliance Center anzuzeigen und zu vergleichen. Sie können die Stichwortliste auch beim Erstellen oder Bearbeiten einer Suchabfrage konfigurieren, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern oder Schlüsselwörtern übereinstimmen.
-ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Verwenden Sie die Suchstatistik Funktion, um Statistiken für mehrere Inhalts suchVorgänge im Security & Compliance Center anzuzeigen und zu vergleichen. Sie können die Stichwortliste auch beim Erstellen oder Bearbeiten einer Suchabfrage konfigurieren, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern oder Schlüsselwörtern übereinstimmen.
+ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295728"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001128"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse
 
@@ -33,7 +33,7 @@ Sie können die Suchstatistiken und Keyword-Statistiken auch in eine CSV-Datei h
 
 So zeigen Sie Statistiken für Inhalts suchVorgänge an
   
-1. wechseln sie im Office 365 &amp; Security Compliance Center zu such **suche &amp; ** \> - **inhaltssuche**.
+1. Navigieren Sie im Security & Compliance Center zur **Such** \> **Inhaltssuche**.
     
 2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, ****![und klicken Sie dann auf](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)Statistik Suchstatistik-Schaltfläche Durchsuchen.
     
@@ -41,21 +41,21 @@ So zeigen Sie Statistiken für Inhalts suchVorgänge an
   
 3. Klicken Sie auf der Seite **Suchstatistiken** auf einen der folgenden Links, um Statistiken zu den ausgewählten Suchvorgängen anzuzeigen. 
     
-    **Zusammenfassung**
+    **Summary**
     
     Auf dieser Seite werden Statistiken angezeigt, die denen ähneln, die im Detailbereich auf der Seite für die **Inhaltssuche** angezeigt werden. Die Statistik für alle ausgewählten suchen wird angezeigt. Beachten Sie, dass Sie die ausgewählten Suchvorgänge auf dieser Seite erneut ausführen können, um die Statistiken zu aktualisieren. 
     
     ![Zusammenfassung der Statistiken für die ausgewählten Suchvorgänge](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
-    a. der Name der Inhaltssuche. Wie bereits erwähnt, können Sie Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
+    a.  Der Name der Inhaltssuche. Wie bereits erwähnt, können Sie Statistiken für mehrere Suchvorgänge anzeigen und vergleichen.
     
-    b. der Typ des Inhaltsspeicherorts, der durchsucht wurde. In jeder Zeile werden Statistiken für Postfächer, Websites und öffentliche Ordner aus der angegebenen Suche angezeigt.
+    b. Der Typ des Inhaltsspeicherorts, der durchsucht wurde. In jeder Zeile werden Statistiken für Postfächer, Websites und öffentliche Ordner aus der angegebenen Suche angezeigt.
     
-    c. die Anzahl der inhaltsspeicherorte, die Elemente enthalten, die mit der Suchabfrage übereinstimmen. Bei Postfächern enthält diese Statistik auch die Anzahl der Archivpostfächer, die Elemente enthalten, die mit der Suchabfrage übereinstimmen.
+    c. Die Anzahl der inhaltsspeicherorte, die Elemente enthalten, die mit der Suchabfrage übereinstimmen. Bei Postfächern enthält diese Statistik auch die Anzahl der Archivpostfächer, die Elemente enthalten, die mit der Suchabfrage übereinstimmen.
     
-    d. die Gesamtzahl der Elemente aller angegebenen inhaltsspeicherorte, die mit der Suchabfrage übereinstimmen. Beispiele für Elementtypen sind e-Mail-Nachrichten, Kalenderelemente und Dokumente. Wenn ein Element mehrere Instanzen eines Schlüsselwortes enthält, nach dem gesucht wird, wird es nur einmal in der Gesamtanzahl der Elemente gezählt. Wenn Sie beispielsweise nach Wörtern "Stock" oder "Betrug" suchen und eine e-Mail-Nachricht drei Instanzen des Wortes "Stock" enthält, wird Sie nur einmal in der Spalte **Items** gezählt. 
+    d. Die Gesamtzahl der Elemente aller angegebenen inhaltsspeicherorte, die mit der Suchabfrage übereinstimmen. Beispiele für Elementtypen sind e-Mail-Nachrichten, Kalenderelemente und Dokumente. Wenn ein Element mehrere Instanzen eines Schlüsselwortes enthält, nach dem gesucht wird, wird es nur einmal in der Gesamtanzahl der Elemente gezählt. Wenn Sie beispielsweise nach Wörtern "Stock" oder "Betrug" suchen und eine e-Mail-Nachricht drei Instanzen des Wortes "Stock" enthält, wird Sie nur einmal in der Spalte **Items** gezählt. 
     
-    e. die Gesamtgröße aller Elemente, die am angegebenen Inhaltsspeicherort gefunden wurden, die mit der Suchabfrage übereinstimmen. 
+    e. Die Gesamtgröße aller Elemente, die am angegebenen Inhaltsspeicherort gefunden wurden, die mit der Suchabfrage übereinstimmen. 
     
     **Abfragen**
     
@@ -63,13 +63,13 @@ So zeigen Sie Statistiken für Inhalts suchVorgänge an
     
     ![Suchabfrage Statistik für die ausgewählten Suchvorgänge](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
-    a. der Name der Inhaltssuche, für die die Zeile Abfragestatistiken enthält.
+    a. Der Name der Inhaltssuche, für die die Zeile Abfragestatistiken enthält.
     
-    b. der Typ des Inhaltsspeicherorts, auf den die Abfragestatistiken angewendet werden.
+    b. Der Typ des Inhaltsspeicherorts, auf den die Abfragestatistiken angewendet werden.
     
-    c. diese Spalte gibt an, auf welchen Teil der Suchabfrage die Statistiken angewendet werden. **Primary** gibt die gesamte Suchabfrage an. Wenn Sie beim Erstellen oder Bearbeiten einer Suchabfrage eine Stichwortliste verwenden, sind die Statistiken für die einzelnen Komponenten der Abfrage in dieser Tabelle enthalten. Weitere Informationen finden Sie im Abschnitt [Get Keyword Statistics for Content searches](#get-keyword-statistics-for-content-searches) in diesem Artikel. 
+    c. Diese Spalte gibt an, auf welchen Teil der Suchabfrage die Statistiken angewendet werden. **Primary** gibt die gesamte Suchabfrage an. Wenn Sie beim Erstellen oder Bearbeiten einer Suchabfrage eine Stichwortliste verwenden, sind die Statistiken für die einzelnen Komponenten der Abfrage in dieser Tabelle enthalten. Weitere Informationen finden Sie im Abschnitt [Get Keyword Statistics for Content searches](#get-keyword-statistics-for-content-searches) in diesem Artikel. 
     
-    d. diese Spalte enthält die tatsächliche Suchabfrage, die vom Tool für die Inhaltssuche ausgeführt wird. Beachten Sie, dass das Tool automatisch einige zusätzliche Komponenten zu der erstellten Abfrage hinzufügt. 
+    d. Diese Spalte enthält die tatsächliche Suchabfrage, die vom Tool für die Inhaltssuche ausgeführt wird. Beachten Sie, dass das Tool automatisch einige zusätzliche Komponenten zu der erstellten Abfrage hinzufügt. 
 
     - Wenn Sie nach allen Inhalten in Postfächern suchen (indem Sie keine Schlüsselwörter angeben), ist `size>=0` die eigentliche Schlüsselwortabfrage so, dass alle Elemente zurückgegeben werden. 
     
@@ -80,11 +80,11 @@ So zeigen Sie Statistiken für Inhalts suchVorgänge an
           **Nicht IsOneNotePage: 1** -schließt alle OneNote-Dateien aus, da es sich dabei um Duplikate eines Dokuments handeln würde, das mit der Suchabfrage übereinstimmt. 
 
     
-    e. die Anzahl der inhaltsspeicherorte (angegeben in der Spalte * * Location Type * *), die Elemente enthalten, die mit der in der **Abfrage** Spalte aufgeführten Suchabfrage übereinstimmen. 
+    e. Die Anzahl der inhaltsspeicherorte (angegeben in der Spalte * * Location Type * *), die Elemente enthalten, die mit der in der **Abfrage** Spalte aufgeführten Suchabfrage übereinstimmen. 
     
-    f. die Anzahl der Elemente (aus dem angegebenen Inhaltsspeicherort), die mit der in der **Abfrage** Spalte aufgeführten Suchabfrage übereinstimmen. Wie bereits erläutert, wird ein Element, das mehrere Instanzen eines Schlüsselwortes enthält, nach dem gesucht wird, nur einmal in dieser Spalte gezählt. 
+    f. Die Anzahl der Elemente (aus dem angegebenen Inhaltsspeicherort), die mit der in der **Abfrage** Spalte aufgeführten Suchabfrage übereinstimmen. Wie bereits erläutert, wird ein Element, das mehrere Instanzen eines Schlüsselwortes enthält, nach dem gesucht wird, nur einmal in dieser Spalte gezählt. 
     
-    g. die Gesamtgröße aller Elemente, die gefunden wurden (am angegebenen Speicherort des Inhalts), die mit der Suchabfrage in der Spalte **Abfrage** übereinstimmen. 
+    g. Die Gesamtgröße aller Elemente, die im angegebenen Inhaltsspeicherort gefunden wurden und mit der Suchabfrage in der Spalte **Abfrage** übereinstimmen. 
     
     **Top-Standorte**
     
@@ -92,23 +92,20 @@ So zeigen Sie Statistiken für Inhalts suchVorgänge an
     
     ![Statistiken zur Anzahl der Elemente, die in den gesuchten Inhaltsspeicherorten gefunden wurden](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
-    a. der Name des Inhaltsspeicherorts.
+    a. Der Name des Inhaltsspeicherorts.
     
-    b. der Typ des Inhaltsspeicherorts, auf den die Standort Statistiken angewendet werden.
+    b. Der Typ des Inhaltsspeicherorts, auf den die Standort Statistiken angewendet werden.
     
-    c. für jede Suche, für die Sie Statistiken anzeigen, gibt es Spalten. In dieser Spalte wird die Anzahl (und Gesamtgröße) von Elementen angezeigt, die mit der Suchabfrage an den einzelnen Inhaltsspeicherorten übereinstimmen. Beachten Sie, dass beim Anzeigen von Statistiken für mehrere Suchvorgänge das "NA" in dieser Spalte angibt, dass der Inhaltsspeicherort nicht in die Suche einbezogen wurde. 
+    c. Für jede Suche, für die Sie Statistiken anzeigen, gibt es Spalten. In dieser Spalte wird die Anzahl (und Gesamtgröße) von Elementen angezeigt, die mit der Suchabfrage an den einzelnen Inhaltsspeicherorten übereinstimmen. Beachten Sie, dass beim Anzeigen von Statistiken für mehrere Suchvorgänge das "NA" in dieser Spalte angibt, dass der Inhaltsspeicherort nicht in die Suche einbezogen wurde. 
 
 ## <a name="get-keyword-statistics-for-content-searches"></a>Stichwort Statistiken für Inhaltssuche abrufen
 
 Wie zuvor erläutert, werden auf der Seite **Abfragen** die Suchabfrage und die Anzahl (und die Größe) der Elemente angezeigt, die mit der Abfrage übereinstimmen. Wenn Sie beim Erstellen oder Bearbeiten einer Suchabfrage eine Stichwortliste verwenden, erhalten Sie Erweiterte Statistiken, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern oder Schlüsselwörtern übereinstimmen. Auf diese Weise können Sie schnell erkennen, welche Teile der Abfrage am meisten (und am wenigsten) effektiv sind. Wenn beispielsweise ein Schlüsselwort eine hohe Anzahl von Elementen zurückgibt, können Sie die Stichwortabfrage verfeinern, um die Suchergebnisse einzuschränken. Sie können eine Stichwortliste einrichten, wenn Sie eine Inhaltssuche erstellen oder bearbeiten. 
 
 
-
-
-  
 So erstellen Sie eine Stichwortliste und zeigen Schlüsselwort Statistiken für eine Inhaltssuche an
   
-1. wechseln sie im Office 365 &amp; Security Compliance Center zu such **suche &amp; ** \> - **inhaltssuche**.
+1. Navigieren Sie im Security & Compliance Center zur **Such** \> **Inhaltssuche**.
     
 2. Klicken Sie in der Liste der Inhaltssuche auf und eine Suche, und klicken **** ![Sie dann auf](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Bearbeitungssymbol bearbeiten.
     
@@ -118,7 +115,7 @@ So erstellen Sie eine Stichwortliste und zeigen Schlüsselwort Statistiken für 
   
     a. Aktivieren Sie das Kontrollkästchen **Keyword-Liste anzeigen** . 
     
-    b. Geben Sie ein Schlüsselwort oder eine Stichwort Phase in eine Zeile in der Schlüsselwörter-Tabelle ein. Geben Sie beispielsweise in der ersten Zeile **Budget** ein, und geben Sie dann **Sicherheit** in der zweiten Zeile ein. 
+    b. Geben Sie ein Stichwort oder eine Stichwort Phase in eine Zeile in der Schlüsselwörter-Tabelle ein. Geben Sie beispielsweise in der ersten Zeile **Budget** ein, und geben Sie dann **Sicherheit** in der zweiten Zeile ein. 
     
 4. Klicken Sie nach dem Hinzufügen der Schlüsselwörter, die Sie suchen und Statistiken erhalten möchten, auf **Suchen** , um die überarbeitete Suche auszuführen. 
     

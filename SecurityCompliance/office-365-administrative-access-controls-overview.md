@@ -3,30 +3,29 @@ title: Administrative Zugriffssteuerungen in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Übersicht über administrative Zugriffssteuerungen und Datenkategorisierung von Office 365.'
-ms.openlocfilehash: b23fcdcb6c790b3860a24a555424beb3bb99e4f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216025"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004132"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Administrative Zugriffssteuerungen in Office 365 
 
 ## <a name="introduction"></a>Einführung
 Microsoft hat stark und dementsprechend in Systeme und Steuerelemente investiert, die die meisten Office 365-Vorgänge automatisieren und den Zugriff von Microsoft auf Kunden Inhalte absichtlich einschränken. Der Dienst wird vom Menschen beherrscht, und die Software betreibt den Dienst. Dadurch kann Microsoft Office 365 im Maßstab verwalten und die Risiken interner Bedrohungen für Kunden Inhalte wie böswillige Akteure, den Speer-Phishing eines Microsoft-Ingenieurs usw. verwalten.
 
-Standardmäßig verfügen Microsoft-Ingenieure über keine ständigen Verwaltungsrechte und keinen Zugriff auf Kunden Inhalte in Office 365. Ein Microsoft-Techniker kann begrenzten, überwachten und gesicherten Zugriff auf die Inhalte eines Kunden für einen begrenzten Zeitraum haben, jedoch nur, wenn dies für Dienstvorgänge erforderlich ist, und nur dann, wenn er von einem Mitglied von Microsoft Senior Management (und für Kunden, die für die Kunden-Lockbox-Funktion, den Kunden, lizenziert.
+Standardmäßig verfügen die Microsoft-Techniker über keine ständigen Administratorrechte und keinen ständigen Zugriff auf Kundeninhalte in Office 365. Ein Microsoft-Techniker kann begrenzten, überwachten und gesicherten Zugriff auf die Inhalte eines Kunden für einen begrenzten Zeitraum haben, jedoch nur, wenn dies für Dienstvorgänge erforderlich ist, und nur dann, wenn er von einem Mitglied von Microsoft Senior Management (und für Kunden, die für die Kunden-Lockbox-Funktion, den Kunden, lizenziert.
 
 Microsoft bietet Onlinedienste, einschließlich Office 365, mit mehreren Formen der Cloud-Bereitstellung:
 
@@ -53,7 +52,7 @@ In Kombination helfen diese Steuerelemente, bösartige Aktionen in Office 365 zu
 Mit Office 365 können Sie Ihre Daten auf die gleiche Art und Weise verwalten, wie Daten in lokalen Umgebungen verwaltet werden. Die Person, die eine Organisation für Office 365 anmeldet, wird automatisch zu einem globalen Administrator (admin). Der globale Administrator hat Zugriff auf alle Funktionen in den Verwaltungs Portalen (z. b. Admin Center und Remote-PowerShell) und kann Benutzer erstellen oder bearbeiten, anderen Administratorenrollen zuweisen, Benutzerkennwörter zurücksetzen, Benutzerlizenzen verwalten, Domänen verwalten und Kunden-Lockbox genehmigen. Anforderungen unter anderem. Es wird empfohlen, dass jede Organisation mindestens zwei Administratorkonten festlegt und abhängig von der Größe Ihrer Organisation mehrere Administratoren festlegen möchten, die unterschiedliche Funktionen nutzen. Informationen zum Zuweisen von Administratorrollen und Berechtigungen finden Sie unter [Zuweisen von Administratorrollen in office 365](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504) und [zu Office 365-Administratorrollen](https://support.office.com/article/Permissions-in-Office-365-DA585EEA-F576-4F55-A1E0-87090B6AAA9D).
 
 
-## <a name="related-links"></a>Verwandte Links
+## <a name="related-links"></a>Links zu verwandten Themen
 
 - [Isolations Steuerelemente](office-365-isolation-controls.md)
 - [Personal Steuerungen](office-365-personnel-controls.md)

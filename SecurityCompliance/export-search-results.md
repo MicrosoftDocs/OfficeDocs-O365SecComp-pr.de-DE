@@ -1,5 +1,5 @@
 ---
-title: Exportieren von Inhalts Suchergebnissen aus dem Office 365 Security & Compliance Center
+title: 'Exportieren von Inhaltssuchergebnissen '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,17 +17,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Office 365 Security & Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites werden als systemeigene Office-Dokumente exportiert. '
-ms.openlocfilehash: 1a94a7ed948de06bfc8f3f9a2dc9c8a5d26ca653
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Security & Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites werden als systemeigene Office-Dokumente exportiert. '
+ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296568"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000468"
 ---
-# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportieren von Inhalts Suchergebnissen aus dem Office 365 Security & Compliance Center
+# <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen 
 
-Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie e-Mail-Ergebnisse exportieren, werden Sie als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business-Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Die exportierten Suchergebnisse enthalten zusätzliche Dokumente und Berichte.
+Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business-Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Die exportierten Suchergebnisse enthalten zusätzliche Dokumente und Berichte.
   
 Darüber hinaus werden alle RMS-verschlüsselten e-Mail-Nachrichten, die in den Ergebnissen einer Inhaltssuche enthalten sind, entschlüsselt, wenn Sie Sie exportieren (als einzelne Nachrichten). Diese Entschlüsselungsfunktion ist standardmäßig für Mitglieder der eDiscovery-Manager-Rollengruppe aktiviert. Der Grund ist, dass die Verwaltungsrolle "RMS Decrypt" dieser Rollengruppe zugewiesen ist. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ausführliche Informationen zur RMS-Entschlüsselung beim Exportieren von Suchergebnissen. 
   
@@ -35,11 +35,9 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Um Suchergebnisse zu exportieren, muss Ihnen die Rolle Exportverwaltung im Office 365 Security &amp; Compliance Center zugewiesen sein. Diese Rolle wird der integrierten eDiscovery-Manager-Rollengruppe zugewiesen. Sie wird der Rollengruppe Organisationsverwaltung nicht standardmäßig zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
+- Um Suchergebnisse zu exportieren, muss Ihnen die Rolle "Export Management" im Security & Compliance Center zugewiesen sein. Diese Rolle wird der integrierten eDiscovery-Manager-Rollengruppe zugewiesen. Sie wird der Rollengruppe Organisationsverwaltung nicht standardmäßig zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
 - Der Computer, den Sie zum Exportieren der Suchergebnisse verwenden, muss die folgenden Voraussetzungen erfüllen:
-
-
     
   - 32- oder 64-Bit-Versionen von Windows 7 und höher
     
@@ -82,11 +80,11 @@ Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Er
 
 Der erste Schritt besteht darin, die Suchergebnisse für den Export vorzubereiten. Wenn Sie Ergebnisse vorbereiten, werden Sie an einen Azure-Speicherort in der Microsoft-Cloud hochgeladen. Beachten Sie, dass Inhalte von Postfächern und Websites mit einer maximalen Rate von 2 GB pro Stunde hochgeladen werden.
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** \> **Inhaltssuche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suche** \> **Inhaltssuche**.
     
 4. Wählen Sie auf der Seite **Inhaltssuche** eine Suche aus. 
     
@@ -148,9 +146,9 @@ Wie bereits erläutert, können Sie die Downloadgeschwindigkeit verlängern, ind
     
     - Gibt an, ob Versionen von SharePoint-Dokumenten heruntergeladen werden.
     
-    - Der Status des Export Vorbereitungs Vorgangs. Sie können mit dem Herunterladen von Suchergebnissen beginnen, auch wenn die Vorbereitung der Daten nicht abgeschlossen ist.
+    - Der Status des Vorbereitungsvorgangs für den Export. Sie können mit dem Herunterladen der Suchergebnisse auch dann beginnen, wenn die Vorbereitung der Daten nicht vollständig ist.
     
-2. Klicken Sie unter **Schlüssel exportieren**auf **in Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 5, um die Suchergebnisse herunterzuladen.
+2. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 5, um die Suchergebnisse herunterzuladen.
     
     > [!NOTE]
     > Da jeder das eDiscovery-Export Tool installieren und starten und dann diesen Schlüssel zum Herunterladen der Suchergebnisse verwenden kann, müssen Sie Vorkehrungen treffen, um diesen Schlüssel genau so zu schützen, als würden Sie Kennwörter oder andere sicherheitsrelevante Informationen schützen. 
@@ -161,7 +159,7 @@ Wie bereits erläutert, können Sie die Downloadgeschwindigkeit verlängern, ind
     
 5. Fügen Sie im **eDiscovery-Exporttool** den Export-Schlüssel, den Sie in Schritt 2 kopiert haben, in das entsprechende Feld ein.
     
-6. Klicken Sie auf **Durchsuchen**, um das Verzeichnis anzugeben, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen. 
+6. Klicken Sie auf **Durchsuchen**, und geben Sie das Verzeichnis an, in das die Dateien mit den Suchergebnissen heruntergeladen werden sollen. 
     
     > [!NOTE]
     > Aufgrund der hohen Datenträgeraktivität (Lese-und Schreibvorgänge) sollten Sie die Suchergebnisse auf ein lokales Laufwerk herunterladen. Laden Sie Sie nicht auf ein zugeordnetes Netzlaufwerk oder einen anderen Netzwerkspeicherort herunter. 
@@ -188,11 +186,11 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
 
 [Dateinamen der exportierten Elemente](#filenames-of-exported-items)  
   
-[Verschiedenes](#miscellaneous)
+[Sonstiges](#miscellaneous)
   
  ### <a name="export-limits"></a>Exportgrenzwerte
   
-- Beim Exportieren von Suchergebnissen aus &amp; dem Security Compliance Center gelten die folgenden Grenzwerte:
+- Beim Exportieren von Suchergebnissen aus dem Security & Compliance Center gelten die folgenden Grenzwerte:
     
   - Sie können maximal 2 TB Daten aus einer einzelnen Inhaltssuche exportieren. Wenn die Suchergebnisse größer als 2 TB sind, erwägen Sie die Verwendung von Datumsbereichen oder anderen Filtertypen, um die Gesamtgröße der Suchergebnisse zu verringern.
     
@@ -256,7 +254,7 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
   
 - Wenn Sie Postfachelemente aus einer Inhaltssuche exportieren, die alle Postfachelemente in den Suchergebnissen zurückgibt (da keine Schlüsselwörter in der Suchabfrage enthalten sind), werden teilweise indizierte Elemente nicht in die PST-Datei kopiert, die die nicht indizierten Elemente enthält. Der Grund dafür ist, dass alle Elemente, einschließlich aller teilweise indizierten Elemente, automatisch in die regulären Suchergebnisse eingeschlossen werden. Dies heißt, dass teilweise indizierte Elemente in einer PST-Datei (oder als einzelne Nachrichten) enthalten sind, die die anderen, indizierten Elemente enthält.
     
-    Wenn Sie sowohl die indizierten als auch teilweise indizierten Elemente exportieren oder nur die indizierten Elemente aus einer Inhaltssuche exportieren, die alle Elemente zurückgibt, wird die gleiche Anzahl von Elementen heruntergeladen. Dies geschieht auch dann, wenn die geschätzten Suchergebnisse für die Inhaltssuche (in der Suchstatistik im &amp; Security Compliance Center angezeigt) weiterhin eine separate Schätzung für die Anzahl der teilweise indizierten Elemente aufweisen. Nehmen wir beispielsweise an, dass die Schätzung für eine Suche, die alle Elemente (keine Schlüsselwörter in der Suchabfrage) enthält, zeigt, dass 1.000 Elemente gefunden wurden und 200 teilweise indizierte Elemente ebenfalls gefunden wurden. In diesem Fall schließen die 1.000-Elemente die teilweise indizierten Elemente ein, da die Suche alle Elemente zurückgibt. Anders ausgedrückt gibt es 1.000 Gesamtelemente, die von der Suche zurückgegeben werden, und nicht 1.200 Elemente (wie Sie vielleicht erwarten). Wenn Sie die Ergebnisse dieser Suche exportieren und indizierte und teilweise indizierte Elemente (oder nur indizierte Elemente) exportieren möchten, werden 1.000-Elemente heruntergeladen. Auch dies liegt daran, dass teilweise indizierte Elemente in den regulären (indizierten) Ergebnissen enthalten sind, wenn Sie eine leere Suchabfrage verwenden, um alle Elemente zurückzugeben. Wenn Sie in diesem Beispiel nur teilweise indizierte Elemente exportieren möchten, würden nur die 200 nicht indizierten Elemente heruntergeladen.
+    Wenn Sie sowohl die indizierten als auch teilweise indizierten Elemente exportieren oder nur die indizierten Elemente aus einer Inhaltssuche exportieren, die alle Elemente zurückgibt, wird die gleiche Anzahl von Elementen heruntergeladen. Dies geschieht auch dann, wenn die geschätzten Suchergebnisse für die Inhaltssuche (angezeigt in der Suchstatistik im Security & Compliance Center) weiterhin eine separate Schätzung für die Anzahl der teilweise indizierten Elemente enthält. Nehmen wir beispielsweise an, dass die Schätzung für eine Suche, die alle Elemente (keine Schlüsselwörter in der Suchabfrage) enthält, zeigt, dass 1.000 Elemente gefunden wurden und 200 teilweise indizierte Elemente ebenfalls gefunden wurden. In diesem Fall schließen die 1.000-Elemente die teilweise indizierten Elemente ein, da die Suche alle Elemente zurückgibt. Anders ausgedrückt gibt es 1.000 Gesamtelemente, die von der Suche zurückgegeben werden, und nicht 1.200 Elemente (wie Sie vielleicht erwarten). Wenn Sie die Ergebnisse dieser Suche exportieren und indizierte und teilweise indizierte Elemente (oder nur indizierte Elemente) exportieren möchten, werden 1.000-Elemente heruntergeladen. Auch dies liegt daran, dass teilweise indizierte Elemente in den regulären (indizierten) Ergebnissen enthalten sind, wenn Sie eine leere Suchabfrage verwenden, um alle Elemente zurückzugeben. Wenn Sie in diesem Beispiel nur teilweise indizierte Elemente exportieren möchten, würden nur die 200 nicht indizierten Elemente heruntergeladen.
     
     Beachten Sie, dass im vorherigen Beispiel (wenn Sie indizierte und teilweise indizierte Elemente exportieren oder nur indizierte Elemente exportieren) der **Export Zusammenfassungs** Bericht, der in den exportierten Suchergebnissen enthalten ist, Listen 1.000 Elemente geschätzte elemente und 1.000 heruntergeladen Elemente aus denselben Gründen wie zuvor beschrieben. 
     
@@ -325,9 +323,9 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
     
     Der Grund, warum Dateinamen von Dokumenten, die in die Bibliothek für die Konservierungs Aufbewahrung verschoben oder kopiert werden, ist, Konflikt verursachende Dateinamen zu verhindern. Weitere Informationen zum Aufbewahren von Websites und zur Aufbewahrungs Bibliothek finden Sie unter Übersicht über den [in-situ-Speicher in SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95).
     
- ### <a name="miscellaneous"></a>Verschiedenes
+ ### <a name="miscellaneous"></a>Sonstiges
   
-- Alle Suchergebnisse und die Export Berichte sind in einem Ordner mit dem gleichen Namen wie die Inhaltssuche enthalten. Die e-Mail-Nachrichten, die exportiert wurden, befinden sich in einem Ordner mit dem Namen **Exchange**. Dokumente befinden sich in einem Ordner mit dem Namen **SharePoint**. 
+- Alle Suchergebnisse und die Export Berichte sind in einem Ordner mit dem gleichen Namen wie die Inhaltssuche enthalten. Die E-Mail-Nachrichten, die exportiert wurden, befinden sich in einem Ordner mit dem Namen **Exchange**. Dokumente befinden sich in einem Ordner mit dem Namen **SharePoint**. 
     
 - Die Dateisystemmetadaten für Dokumente in SharePoint und OneDrive for Business-Websites werden beibehalten, wenn Dokumente auf Ihren lokalen Computer exportiert werden. Das führt dazu, dass Dokumenteigenschaften wie Erstellungs-und Datum der letzten Änderung beim Exportieren von Dokumenten nicht geändert werden.
 

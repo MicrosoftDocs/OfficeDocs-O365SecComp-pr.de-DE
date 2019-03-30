@@ -1,5 +1,5 @@
 ---
-title: Klonen einer Inhaltssuche im Office 365 Security &amp; Compliance Center
+title: Klonen einer Inhaltssuche
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel, um eine vorhandene Inhaltssuche in der &amp; Security Compliane Center-Suche schnell zu klonen. Wenn Sie eine Suche Klonen, wird eine neue Suche (mit einem neuen Namen) erstellt, die die gleichen Eigenschaften wie die ursprüngliche Suche enthält. Dann können Sie die neue Suche bearbeiten (indem Sie die Stichwortabfrage oder den Datumszeitraum ändern) und dann ausführen.
-ms.openlocfilehash: 15f1ca5d00f03f510745fef7ae8418192a9eb448
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Verwenden Sie das Windows PowerShell-Skript in diesem Artikel, um eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 schnell zu klonen. Wenn Sie eine Suche Klonen, wird eine neue Suche (mit einem neuen Namen) erstellt, die die gleichen Eigenschaften wie die ursprüngliche Suche enthält. Dann können Sie die neue Suche bearbeiten (indem Sie die Stichwortabfrage oder den Datumszeitraum ändern) und dann ausführen.
+ms.openlocfilehash: b08ccb6fbaf2dc9d92e0814fe9f92ea77c731147
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213545"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001198"
 ---
-# <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Klonen einer Inhaltssuche im Office 365 Security &amp; Compliance Center
+# <a name="clone-a-content-search"></a>Klonen einer Inhaltssuche
 
-Das Erstellen einer Inhaltssuche im Office 365 &amp; Security Compliance Center, das viele Postfächer oder SharePoint-und OneDrive für Business-Websites durchsucht, kann eine Weile dauern. Das Angeben der zu durchsuchenden Websites kann auch fehleranfällig sein, wenn Sie eine URL-Adresse nicht mehr eingeben. Um diese Probleme zu vermeiden, können Sie das Windows PowerShell-Skript in diesem Artikel verwenden, um eine vorhandene Inhaltssuche schnell zu klonen. Wenn Sie eine Suche Klonen, wird eine neue Suche (mit einem anderen Namen) erstellt, die die gleichen Eigenschaften (wie die inhaltsspeicherorte und die Suchabfrage) als ursprüngliche Suche enthält. Dann können Sie die neue Suche bearbeiten (indem Sie die Stichwortabfrage oder den Datumszeitraum ändern) und ausführen.
+Das Erstellen einer Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, die eine Vielzahl von Postfächern oder SharePoint-und OneDrive für Business-Websites durchsucht, kann eine Weile dauern. Das Angeben der zu durchsuchenden Websites kann auch fehleranfällig sein, wenn Sie eine URL-Adresse nicht mehr eingeben. Um diese Probleme zu vermeiden, können Sie das Windows PowerShell-Skript in diesem Artikel verwenden, um eine vorhandene Inhaltssuche schnell zu klonen. Wenn Sie eine Suche Klonen, wird eine neue Suche (mit einem anderen Namen) erstellt, die die gleichen Eigenschaften (wie die inhaltsspeicherorte und die Suchabfrage) als ursprüngliche Suche enthält. Dann können Sie die neue Suche bearbeiten (indem Sie die Stichwortabfrage oder den Datumszeitraum ändern) und ausführen.
   
 Gründe für das Klonen von Inhalts suchen
   
@@ -34,21 +34,21 @@ Gründe für das Klonen von Inhalts suchen
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security &amp; Compliance Center sein, um das in diesem Thema beschriebene Skript ausführen zu können.
+- Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security & Compliance Center sein, um das in diesem Thema beschriebene Skript ausführen zu können.
     
 - Das Skript enthält eine minimale Fehlerbehandlung. Der Hauptzweck des Skripts besteht darin, eine Inhaltssuche schnell zu klonen.
     
 - Das Skript erstellt eine neue Inhaltssuche, startet Sie jedoch nicht.
     
-- Dieses Skript berücksichtigt, ob die Inhaltssuche, die Sie Klonen, einem eDiscovery-Fall zugeordnet ist. Wenn die Suche mit einem Fall verknüpft ist, wird die neue Suche auch mit dem gleichen Fall verknüpft. Wenn die vorhandene Suche keinem Fall zugeordnet ist, wird die neue Suche auf der Seite " **Inhaltssuche** " im Security &amp; Compliance Center aufgeführt. 
+- Dieses Skript berücksichtigt, ob die Inhaltssuche, die Sie Klonen, einem eDiscovery-Fall zugeordnet ist. Wenn die Suche mit einem Fall verknüpft ist, wird die neue Suche auch mit dem gleichen Fall verknüpft. Wenn die vorhandene Suche keinem Fall zugeordnet ist, wird die neue Suche auf der Seite " **Inhaltssuche** " im Compliance Center aufgeführt. 
     
-- Das Beispielskript in diesem Thema wird unter keinem Microsoft Standard-Support Programm oder-Dienst unterstützt. Das Beispielskript wird ohne Gewähr bereitgestellt. Microsoft lehnt weiterhin alle impliziten Garantien ab, einschließlich der impliziten Garantien der Marktgängigkeit oder der Eignung für einen bestimmten Zweck. Das gesamte Risiko, das sich aus der Verwendung oder Leistung des Beispielskripts und der Dokumentation ergibt, liegt bei Ihnen. In keinem Fall sind Microsoft, seine Autoren oder andere Personen, die an der Erstellung, Produktion oder Bereitstellung der Skripte beteiligt sind, haftbar für Schäden jeglicher Art (einschließlich, ohne Einschränkung, Schäden für Verlust von Geschäftsgewinnen, Betriebsunterbrechung, Verlust von geschäftliche Informationen oder sonstige Vermögensschäden, die sich aus der Verwendung oder nicht Verwendung der Beispielskripts oder Dokumentation ergeben, auch wenn Microsoft über die Möglichkeit solcher Schäden informiert wurde.
+- Das Beispielskript in diesem Thema wird unter keinem Microsoft Standard-Support Programm oder-Dienst unterstützt. Das Beispielskript wird ohne Gewähr bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das sich aus der Verwendung oder Leistung des Beispielskripts und der Dokumentation ergibt, liegt bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
   
 ## <a name="step-1-run-the-script-to-clone-a-search"></a>Schritt 1: Ausführen des Skripts zum Klonen einer Suche
 
 Mit dem Skript in diesem Schritt wird eine neue Inhaltssuche erstellt, indem eine vorhandene geklont wird. Wenn Sie dieses Skript ausführen, werden Sie aufgefordert, die folgenden Informationen einzugeben:
   
-- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen zum Herstellen einer Verbindung &amp; mit dem Security Compliance Center für Ihre Office 365-Organisation mit Windows PowerShell. Wie bereits erwähnt, müssen Sie ein Mitglied der eDiscovery-Manager-Rollengruppe im Security &amp; Compliance Center sein, um das Skript auszuführen. 
+- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen zum Herstellen einer Verbindung mit dem Security _AMP_ Compliance Center für ihre Office 365-Organisation mit Windows PowerShell. Wie bereits erwähnt, müssen Sie ein Mitglied der eDiscovery-Manager-Rollengruppe im Security & compCompliance Center sein, um das Skript auszuführen. 
     
 - **Der Name der vorhandenen Suche** – hierbei handelt es sich um die Inhaltssuche, die Sie klonen möchten. 
     
@@ -59,7 +59,7 @@ So Klonen Sie eine Suche:
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `CloneSearch.ps1`.
     
   ```
-  # This PowerShell script clones an existing Content Search in the Office 365 Security &amp; Compliance Center
+  # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
   # Get login credentials from the user
   if(!$UserCredential)
   {
@@ -71,7 +71,7 @@ So Klonen Sie eine Suche:
           return
       }
       Import-PSSession $Session -AllowClobber -DisableNameChecking
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)"
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)"
   }
   # Ask for the name of the search you want to clone
   $searchName = Read-Host 'Enter the name of the search that you want to clone'
@@ -132,14 +132,14 @@ So Klonen Sie eine Suche:
     
     - Der Name der neuen Suche.
     
-    Das Skript erstellt die neue Inhaltssuche, startet Sie jedoch nicht. Dadurch haben Sie die Möglichkeit, die Suche im nächsten Schritt zu bearbeiten und auszuführen. Sie können die Eigenschaften der neuen Suche anzeigen, indem Sie das Cmdlet **Get-ComplianceSearch** ausführen oder im Security &amp; Compliance Center auf die Seite **Inhaltssuche** oder **eDiscovery** wechseln, je nachdem, ob die neue Suche mit einer Groß-/Kleinschreibung verknüpft. 
+    Das Skript erstellt die neue Inhaltssuche, startet Sie jedoch nicht. Dadurch haben Sie die Möglichkeit, die Suche im nächsten Schritt zu bearbeiten und auszuführen. Sie können die Eigenschaften der neuen Suche anzeigen, indem Sie das Cmdlet **Get-ComplianceSearch** ausführen oder die Seite **Inhaltssuche** oder **eDiscovery** im Compliance Center aufrufen, je nachdem, ob die neue Suche einem Fall zugeordnet ist oder nicht. 
   
-## <a name="step-2-edit-and-run-the-cloned-search-in-the-security-amp-compliance-center"></a>Schritt 2: Bearbeiten und Ausführen der geklonten Suche im Security &amp; Compliance Center
+## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Schritt 2: Bearbeiten und Ausführen der geklonten Suche im Compliance Center
 
-Nachdem Sie das Skript ausgeführt haben, um eine vorhandene Inhaltssuche zu klonen, besteht der nächste Schritt im Security &amp; Compliance Center, um die neue Suche zu bearbeiten und auszuführen. Wie bereits erwähnt, können Sie eine Suche bearbeiten, indem Sie die Keyword-Suchabfrage ändern und Suchbedingungen hinzufügen oder entfernen. Weitere Informationen finden Sie unter:
+Nachdem Sie das Skript ausgeführt haben, um eine vorhandene Inhaltssuche zu klonen, besteht der nächste Schritt im Compliance Center, um die neue Suche zu bearbeiten und auszuführen. Wie bereits erwähnt, können Sie eine Suche bearbeiten, indem Sie die Keyword-Suchabfrage ändern und Suchbedingungen hinzufügen oder entfernen. Weitere Informationen finden Sie unter:
   
 - [Inhaltssuche in Office 365](content-search.md)
     
 - [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
     
-- [eDiscovery-Fälle im Office 365 Security &amp; Compliance Center](ediscovery-cases.md)
+- [eDiscovery-Fälle](ediscovery-cases.md)

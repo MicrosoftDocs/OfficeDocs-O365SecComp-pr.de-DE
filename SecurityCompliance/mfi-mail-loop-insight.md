@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-description: Administratoren können sich über die Nachrichtenschleifen Einblicke im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
-ms.openlocfilehash: 5fa7267d68183ea9f8117e420a769a2beaafdac1
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Administratoren können sich über die Nachrichtenschleifen Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
+ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720295"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000318"
 ---
 # <a name="mail-loop-insight"></a>Einblick für E-Mail-Schleife
 
 Eine e-Mail-Schleife ist schlecht, da Sie Systemressourcen verschwendet, das e-Mail-Volumen Kontingent Ihrer Organisation nutzt und verwirrende Unzustellbarkeitsberichte (auch als Unzustellbarkeitsnachrichten bezeichnet) an die ursprünglichen Absender sendet. Dieser Insight berichtet, wenn eine e-Mail-Schleife in Ihrer Organisation gefunden wird, die e-Mail-Domänen, die an der Schleife beteiligt sind, und die Anzahl der Nachrichten vom Vortag, die in der Schleife waren.
 
-![Eine e-Mail-Loop-Einblicke im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+![Einblicke in die e-Mail-Schleife im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
 
 Sie können auf **Details anzeigen** klicken, um die Details in einem Flyoutbereich anzuzeigen. Außerdem werden die gängigsten Schleifen Szenarien identifiziert und die empfohlenen Aktionen (falls verfügbar) zur Behebung der Schleife bereitgestellt.
 

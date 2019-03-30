@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Wenn ein ehemaliger Mitarbeiter zu Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt wird, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
-ms.openlocfilehash: d5cdb07c7a7209f11021a8f4235280a6b27f216d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900044"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999818"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Wiederherstellen eines inaktiven Postfachs in Office 365
 
@@ -69,7 +69,7 @@ Verwenden Sie das Cmdlet **New-Mailbox** mit dem Parameter *InactiveMailbox* , u
 
     Die primäre SMTP-Adresse für das wiederhergestellte inaktive Postfach hat den gleichen Wert wie der durch den *MICROSOFTONLINESERVICESID* -Parameter. 
     
-Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 365-Benutzerkonto erstellt. Sie müssen dieses Benutzerkonto aktivieren, indem Sie eine Lizenz zuweisen. Weitere Informationen zum Zuweisen von Lizenzen im Office 365 Admin Center finden Sie unter [Zuweisen von Lizenzen und Aufheben der Zuweisung von Lizenzen für Office 365 Business](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 365-Benutzerkonto erstellt. Sie müssen dieses Benutzerkonto aktivieren, indem Sie eine Lizenz zuweisen. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter Zuweisen oder Aufheben der [Zuweisung von Lizenzen für Office 365 for Business](https://go.microsoft.com/fwlink/p/?LinkId=276798).
   
 ## <a name="more-information"></a>Weitere Informationen
 

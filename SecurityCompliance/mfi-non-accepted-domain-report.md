@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
+description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f7fc54a4b1d31d724a95c5d8540b95034effbab4
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722888"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998988"
 ---
 # <a name="non-accepted-domain-report"></a>Bericht über nicht akzeptierte Domänen
 
@@ -26,7 +26,7 @@ ms.locfileid: "30722888"
 
 Office 365 kann diese Nachrichten Drosseln, wenn wir über Daten nachweisen können, dass die Absicht dieser Nachrichten bösartig ist. Daher ist es wichtig, dass Sie verstehen, was geschieht, und um das Problem zu beheben.
 
-![Der Bericht über nicht akzeptierte Domäne im Nachrichtenübermittlungs-Dashboard im Office 365 Security & Compliance Center](media/non-accepted-domain-report-selected.png)
+![Der Bericht über nicht akzeptierte Domäne im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/non-accepted-domain-report-selected.png)
 
 Wenn Sie auf das Widget klicken, werden Sie zum vollständigen Bericht geleitet. Im vollständigen Bericht können Sie auf **Details anzeigen** klicken, um die Informationen in einer Tabelle anzuzeigen, wie im folgenden Diagramm dargestellt:
 

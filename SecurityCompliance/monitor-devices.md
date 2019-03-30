@@ -1,5 +1,5 @@
 ---
-title: Überwachen von Geräten in Microsoft 365 Sicherheit
+title: Überwachen von Geräten in Microsoft 365 Security
 description: Beschreibt, wie Sie Ihre Geräte sicher, auf dem neuesten Stand halten und potenzielle Bedrohungen in Ihrer Organisation erkennen können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Geräte
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 43d074a9d42703b60b7b8eb17bdaf83a9360ce2d
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: fea3f35e0fca3ccc8148d93b7a535c98dd2d32b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791722"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000528"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>Überwachen von Geräten in Microsoft 365 Sicherheit
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-devices-in-microsoft-365-security"></a>Überwachen von Geräten in Microsoft 365 Security
 
 Halten Sie Ihre Geräte sicher, auf dem neuesten Stand und stellen Sie potenzielle Bedrohungen im Microsoft 365 Security Center vor.
 

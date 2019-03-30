@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692234"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000988"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -71,7 +71,7 @@ A. Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kei
   
  **F. Kann ich Spamberichte abrufen?**
   
-A. Ja, Sie können beispielsweise einen Spamerkennungsbericht im Office 365 Admin Center abrufen. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
+A. Ja, Sie können beispielsweise einen Spam Erkennungs Bericht im Microsoft 365 Admin Center abrufen. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
   
 Exchange Online-Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   

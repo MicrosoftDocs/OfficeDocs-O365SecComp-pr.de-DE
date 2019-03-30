@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Bericht "Nachrichtenfluss Karte" im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
+description: Administratoren können sich über den Bericht "Nachrichtenfluss Karte" im e-Mail-Fluss-Dashboard im Security & Compliance Center informieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 14a98b57c277238d4f603b56386bf51ac310f7ef
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722879"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001138"
 ---
 # <a name="mail-flow-map-report"></a>Bericht über Nachrichtenfluss Karte
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722879"
 
 Dieser Bericht bietet Einblicke in die Art und Weise, wie e-Mails über Ihre Office 365-Organisation weitergeleitet werden. Sie können diese Informationen verwenden, um Muster zu erlernen, Anomalien zu identifizieren und Probleme beim Auftreten zu beheben.
 
-![Der Bericht "Nachrichtenfluss Karte" im e-Mail-Fluss-Dashboard im Office 365 Security & Compliance Center](media/mail-flow-map-selected.png)
+![Der Bericht "Nachrichtenfluss Karte" im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget "Nachrichtenfluss-Karte"
 

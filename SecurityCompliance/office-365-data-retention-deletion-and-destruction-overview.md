@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Übersicht über die Microsoft-Richtlinien für Office 365 zur Aufbewahrung, Löschung und Vernichtung von Daten.
-ms.openlocfilehash: 6aa272ece723aa83e15581062fd2348c508b04d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fcae11f10278f1357a68ea3f9a1178da97322775
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219955"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004122"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Aufbewahren, Löschen und Zerstören von Daten in Office 365
 
@@ -46,7 +46,7 @@ Im Fall einer kostenlosen Testversion wird Ihr Konto in den meisten Ländern und
 ## <a name="expedited-deletion"></a>Beschleunigter Löschvorgang
 Während der Laufzeit eines Abonnements kann ein Teilnehmer jederzeit den Microsoft-Support kontaktieren und eine beschleunigte Abonnement-Aufhebung anfordern. In diesem Prozess werden alle Benutzerdaten, einschließlich Daten in SharePoint Online, Exchange Online, die möglicherweise unterhalten oder in inaktiven Postfächern gespeichert sind, drei Tage nach dem Eintreten des von Microsoft bereitgestellten Sperrcodes durch den Administrator gelöscht. Weitere Informationen zur beschleunigten Deaktivierung finden Sie unter [Cancel Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
-## <a name="related-links"></a>Verwandte Links
+## <a name="related-links"></a>Links zu verwandten Themen
 - [Zerstörung von Daten](office-365-data-destruction.md)
 - [Unveränderbarkeit in Office 365](office-365-data-immutability.md)
 - [Löschen von Exchange Online-Daten](office-365-exchange-online-data-deletion.md)

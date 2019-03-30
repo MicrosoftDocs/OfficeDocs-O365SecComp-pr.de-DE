@@ -1,9 +1,8 @@
 ---
-title: Entscheidungen basierend auf den Ergebnissen in Office 365 Advanced eDiscovery
+title: Entscheidung aufgrund der Ergebnisse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Erfahren Sie, wie die Registerkarte "entscheiden" in Office 365 Advanced eDiscovery Daten enthält, die Sie bei der Bestimmung der richtigen Größe der Fall Dateien unterstützen können. '
-ms.openlocfilehash: c4767e703d03ef5dbdb808332e873d22094d7bca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216105"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999908"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Entscheidungen basierend auf den Ergebnissen in Office 365 Advanced eDiscovery
+# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Entscheidung aufgrund der Ergebnisse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -29,7 +28,7 @@ ms.locfileid: "30216105"
   
 ## <a name="using-the-decide-tab"></a>Verwenden der Registerkarte "entscheiden"
 
-![Relevanzentscheidung](media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![Relevanz entscheiden](media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 Diese Registerkarte umfasst Folgendes:
   

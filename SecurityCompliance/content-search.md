@@ -15,17 +15,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center, um nach Inhalten in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Keyword-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzuschränken. Dann können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist auch ein effektives Tool, um nach Inhalten zu suchen, die möglicherweise mit einer DSGVO-Anforderung verbunden sind.
-ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Verwenden Sie das Inhaltssuche-Tool im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Keyword-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzuschränken. Dann können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist auch ein effektives Tool, um nach Inhalten zu suchen, die möglicherweise mit einer DSGVO-Anforderung verbunden sind.
+ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900104"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001018"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
-Sie können das eDiscovery-Tool für die Inhaltssuche im Office 365 &amp; Security Compliance Center verwenden, um in ihrer Office 365-Organisation nach in-Place-Elementen wie e-Mails, Dokumenten und Chatnachrichten zu suchen. Verwenden Sie dieses Tool, um nach Elementen in diesen Office 365-Diensten zu suchen:
+Sie können das eDiscovery-Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 verwenden, um nach in-Place-Elementen wie e-Mails, Dokumenten und Sofortnachrichtenunterhaltungen in Ihrer Office 365-Organisation zu suchen. Verwenden Sie dieses Tool, um nach Elementen in diesen Office 365-Diensten zu suchen:
   
 - Exchange Online-Postfächer und öffentliche Ordner
     
@@ -42,62 +42,60 @@ Nachdem Sie eine Inhaltssuche ausgeführt haben, wird die Anzahl der inhaltsspei
 
 ## <a name="create-a-new-search"></a>Erstellen einer neuen Suche
 
-Um Zugriff auf die Seite " **Inhaltssuche** " zum Ausführen von Suchvorgängen und Vorschau-und Exportergebnisse zu haben, muss ein Administrator, ein Compliance Officer oder ein eDiscovery-Manager Mitglied der rollenGruppe " &amp; eDiscovery Manager" im Security Compliance Center sein. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
+Damit Sie Zugriff auf die Seite " **Inhaltssuche** " haben, um Suchergebnisse ausführen und eine Vorschau anzeigen und exportieren können, muss ein Administrator, ein Compliance Officer oder ein eDiscovery-Manager Mitglied der rollenGruppe "eDiscovery Manager" im Security _AMP_ Compliance Center sein. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit ihrer Office 365-e-Mail-Adresse und Ihrem Kennwort an.
     
-2. Melden Sie sich mit Ihrer Office 365-e-Mail-Adresse und Ihrem Kennwort an. 
+2. Klicken Sie auf **Such** \> **Inhaltssuche**.
     
-3. Klicken Sie im &amp; Security Compliance Center auf **Search &amp; Investigation** \> **Content Search**.
-    
-4. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![Symbol](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen. 
+3. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![Symbol](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen. 
     
     ![Die neue Dropdownliste für die Suche](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     Verwenden Sie die Registerkarte Interne DNS-Lookups, um festzulegen, ob die DNS-Server verwendet werden sollen, die für einen auf diesem Server installierten Netzadapter konfiguriert sind, oder ob beim Auflösen der Adressen von E-Mail-Servern für die interne Nachrichtenzustellung bestimmte DNS-Server verwendet werden sollen. Interne DNS-Server werden zum Auflösen von IP-Adressen für Server innerhalb der Organisation verwendet.
     
-  - **Guided search** -mit dieser Option wird ein Assistent gestartet, der Sie durch die Erstellung der Suche führt. Die Benutzeroberfläche, um inhaltsspeicherorte auszuwählen und die Suchabfrage zu erstellen, ist identisch mit der **neuen Such** Option. 
+    - **Guided search** -mit dieser Option wird ein Assistent gestartet, der Sie durch die Erstellung der Suche führt. Die Benutzeroberfläche, um inhaltsspeicherorte auszuwählen und die Suchabfrage zu erstellen, ist identisch mit der **neuen Such** Option. 
     
-  - **Neue Suche** : mit dieser Option wird eine aktualisierte Benutzeroberfläche zum Erstellen einer neuen Suche angezeigt. Dies ist die Standardoption, wenn Sie auf **neue Suche**klicken.
+    - **Neue Suche** : mit dieser Option wird eine aktualisierte Benutzeroberfläche zum Erstellen einer neuen Suche angezeigt. Dies ist die Standardoption, wenn Sie auf **neue Suche**klicken.
     
-  - **Suche nach ID-Liste** – mit dieser Option können Sie mit einer Liste von Exchange-IDs nach bestimmten e-Mail-Nachrichten und anderen Postfachelementen suchen. Um eine ID-Listensuche (formell als gezielte Suche bezeichnet) zu erstellen, übermitteln Sie eine CSV-Datei (Comma Separated Value), die die zu suchenden Postfachelemente identifiziert. Weitere Informationen finden Sie unter [Vorbereiten einer CSV-Datei für die Inhaltssuche einer ID-Liste in Office 365](csv-file-for-an-id-list-content-search.md).
+    - **Suche nach ID-Liste** – mit dieser Option können Sie mit einer Liste von Exchange-IDs nach bestimmten e-Mail-Nachrichten und anderen Postfachelementen suchen. Um eine ID-Listensuche (formell als gezielte Suche bezeichnet) zu erstellen, übermitteln Sie eine CSV-Datei (Comma Separated Value), die die zu suchenden Postfachelemente identifiziert. Weitere Informationen finden Sie unter [Vorbereiten einer CSV-Datei für die Inhaltssuche einer ID-Liste in Office 365](csv-file-for-an-id-list-content-search.md).
     
     Die restlichen Schritte in diesem Verfahren folgen dem standardmäßigen neuen Such Workflow.
     
-5. Klicken Sie in der Dropdownliste auf **neue Suche** . 
+4. Klicken Sie in der Dropdownliste auf **neue Suche** . 
     
-6. Geben Sie unter **Suchabfrage**die folgenden Punkte an.
+5. Geben Sie unter **Suchabfrage**die folgenden Punkte an.
     
     ![Angeben von Stichwörtern, Bedingungen und Speicherorten für die Suche](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Zu suchende Schlüsselwörter** -geben Sie im Feld **Stichwörter** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften , z. B. Sende- und Empfangsdatum, oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum der letzten Dokumentänderung. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**und **near**. Sie können auch nach vertraulichen Informationen (wie Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen.
+   - **Zu suchende Schlüsselwörter** -geben Sie im Feld **Stichwörter** eine Suchabfrage ein. Sie können Schlüsselwörter, Nachrichteneigenschaften , z. B. Sende- und Empfangsdatum, oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum der letzten Dokumentänderung. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**und **near**. Sie können auch nach vertraulichen Informationen (wie Sozialversicherungsnummern) in Dokumenten suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen.
     
-    Alternativ können Sie auf das Kontrollkästchen **Keyword-Liste anzeigen** klicken und in jeder Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter in jeder Zeile durch einen logischen Operator ( **c:s**) verbunden, der in der Funktionalität mit dem **or** -Operator in der erstellten Suchabfrage vergleichbar ist. 
+      Alternativ können Sie auf das Kontrollkästchen **Keyword-Liste anzeigen** klicken und in jeder Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter in jeder Zeile durch einen logischen Operator ( **c:s**) verbunden, der in der Funktionalität mit dem **or** -Operator in der erstellten Suchabfrage vergleichbar ist. 
     
-    Gründe für die Verwendung der Keyword-Liste Sie können Statistiken abrufen, die zeigen, wie viele Elemente mit jedem Stichwort übereinstimmen. Auf diese Weise können Sie schnell erkennen, welche Schlüsselwörter am meisten (und am wenigsten) wirksam sind. Sie können auch eine Schlüsselwortphrase (umgeben von Klammern) in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [View Keyword Statistics for Content Search results](view-keyword-statistics-for-content-search.md).
+      Gründe für die Verwendung der Keyword-Liste Sie können Statistiken abrufen, die zeigen, wie viele Elemente mit jedem Stichwort übereinstimmen. Auf diese Weise können Sie schnell erkennen, welche Schlüsselwörter am meisten (und am wenigsten) wirksam sind. Sie können auch eine Schlüsselwortphrase (umgeben von Klammern) in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [View Keyword Statistics for Content Search results](view-keyword-statistics-for-content-search.md).
 
     > [!NOTE]
     > Um Probleme zu vermeiden, die durch umfangreiche Stichwortlisten verursacht werden, sind Sie jetzt auf maximal 20 Zeilen in der Keyword-Liste beschränkt.
     
-- **Bedingungen** : Sie können Suchbedingungen hinzufügen, um eine Suche einzuschränken und eine genauere Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zu der Suchabfrage hinzu, die erstellt und beim Starten der Suche ausgeführt wird. Eine Bedingung ist logisch mit der Stichwortabfrage (angegeben im Stichwortfeld) durch einen logischen Operator ( **c:c**) verbunden, der in der Funktionalität mit dem **and-** Operator vergleichbar ist. Dies führt dazu, dass Elemente sowohl die Stichwortabfrage als auch eine oder mehrere Bedingungen erfüllen müssen, die in die Ergebnisse eingeschlossen werden sollen. Auf diese Weise können Sie Ihre Ergebnisse mit Bedingungen eingrenzen. Eine Liste und Beschreibung der Bedingungen, die Sie in einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchbedingungen" in [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
+    - **Bedingungen** : Sie können Suchbedingungen hinzufügen, um eine Suche einzuschränken und eine genauere Ergebnismenge zurückzugeben. Jede Bedingung fügt eine Klausel zu der Suchabfrage hinzu, die erstellt und beim Starten der Suche ausgeführt wird. Eine Bedingung ist logisch mit der Stichwortabfrage (angegeben im Stichwortfeld) durch einen logischen Operator ( **c:c**) verbunden, der in der Funktionalität mit dem **and-** Operator vergleichbar ist. Dies führt dazu, dass Elemente sowohl die Stichwortabfrage als auch eine oder mehrere Bedingungen erfüllen müssen, die in die Ergebnisse eingeschlossen werden sollen. Auf diese Weise können Sie Ihre Ergebnisse mit Bedingungen eingrenzen. Eine Liste und Beschreibung der Bedingungen, die Sie in einer Suchabfrage verwenden können, finden Sie im Abschnitt "Suchbedingungen" in [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md#search-conditions).
     
-- **Standorte** – wählen Sie die zu durchsuchenden inhaltsspeicherorte aus.
+       - **Standorte** – wählen Sie die zu durchsuchenden inhaltsspeicherorte aus.
     
-  - **Alle Standorte** -verwenden Sie diese Option, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Dazu gehören e-Mails in allen Exchange-Postfächern (einschließlich aller inaktiven Postfächer, Postfächer für alle Office 365-Gruppen, Postfächer für alle Microsoft Teams), alle Skype for Business-Unterhaltungen, alle SharePoint-und OneDrive für Business-Websites (einschließlich der Websites für alle Office 365-Gruppen und Microsoft Teams) und Elemente in allen öffentlichen Exchange-Ordnern.
+      - **Alle Standorte** -verwenden Sie diese Option, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Dazu gehören e-Mails in allen Exchange-Postfächern (einschließlich aller inaktiven Postfächer, Postfächer für alle Office 365-Gruppen, Postfächer für alle Microsoft Teams), alle Skype for Business-Unterhaltungen, alle SharePoint-und OneDrive für Business-Websites (einschließlich der Websites für alle Office 365-Gruppen und Microsoft Teams) und Elemente in allen öffentlichen Exchange-Ordnern.
     
-  - **Bestimmte Standorte** -verwenden Sie diese Option, um bestimmte inhaltsspeicherorte zu durchsuchen. Sie können alle inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (beispielsweisedurch Suchen aller Exchange-Postfächer oder Durchsuchen aller SharePoint-Websites), oder Sie können bestimmte Standorte in einem der Office 365-Dienste durchsuchen, die angezeigt werden. 
+      - **Bestimmte Standorte** -verwenden Sie diese Option, um bestimmte inhaltsspeicherorte zu durchsuchen. Sie können alle inhaltsspeicherorte für einen bestimmten Office 365-Dienst durchsuchen (beispielsweisedurch Suchen aller Exchange-Postfächer oder Durchsuchen aller SharePoint-Websites), oder Sie können bestimmte Standorte in einem der Office 365-Dienste durchsuchen, die angezeigt werden. 
     
-    ![Benutzeroberfläche zur Auswahl der zu durchsuchenden inhaltsspeicherorte](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Benutzeroberfläche zur Auswahl der zu durchsuchenden inhaltsspeicherorte](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
-    Beachten Sie, dass Sie der Liste der zu durchsuchenden Exchange-Postfächer auch Verteilergruppen hinzufügen können. Für Verteilergruppen werden die Postfächer der Gruppenmitglieder durchsucht. Beachten Sie, dass dynamische Verteilergruppen nicht unterstützt werden.
+         Beachten Sie, dass Sie der Liste der zu durchsuchenden Exchange-Postfächer auch Verteilergruppen hinzufügen können. Für Verteilergruppen werden die Postfächer der Gruppenmitglieder durchsucht. Beachten Sie, dass dynamische Verteilergruppen nicht unterstützt werden.
     
-    **Wichtig:** Wenn Sie alle Postfachspeicher Orte oder nur bestimmte Postfächer durchsuchen, werden Daten aus myAnalytics und anderen Office 365-Anwendungen, die in Benutzerpostfächern gespeichert sind, beim Exportieren der Ergebnisse einer Inhaltssuche eingeschlossen. Diese Daten werden nicht in die geschätzten Suchergebnisse eingeschlossen und stehen nicht für die Vorschau zur Verfügung. Sie wird nur beim Exportieren und Herunterladen der Suchergebnisse eingeschlossen. Weitere Informationen finden Sie unter [Exportieren von Daten aus myAnalytics und anderen Office 365-Anwendungen](#exporting-data-from-myanalytics-and-other-office-365-applications) im Abschnitt "Weitere Information über Inhaltssuche". 
+       **Wichtig:** Wenn Sie alle Postfachspeicher Orte oder nur bestimmte Postfächer durchsuchen, werden Daten aus myAnalytics und anderen Office 365-Anwendungen, die in Benutzerpostfächern gespeichert sind, beim Exportieren der Ergebnisse einer Inhaltssuche eingeschlossen. Diese Daten werden nicht in die geschätzten Suchergebnisse eingeschlossen und stehen nicht für die Vorschau zur Verfügung. Sie wird nur beim Exportieren und Herunterladen der Suchergebnisse eingeschlossen. Weitere Informationen finden Sie unter [Exportieren von Daten aus myAnalytics und anderen Office 365-Anwendungen](#exporting-data-from-myanalytics-and-other-office-365-applications) im Abschnitt "Weitere Information über Inhaltssuche". 
     
-7. Nachdem Sie Ihre Suchabfrage eingerichtet haben, klicken Sie **auf &amp; Run speichern**.
+6. Nachdem Sie Ihre Suchabfrage eingerichtet haben, klicken Sie **auf &amp; Run speichern**.
     
-8. Geben Sie auf der Seite **Suche speichern** einen Namen für die Suche und eine optionale Beschreibung ein, die die Suche erleichtert. Beachten Sie, dass der Name der Suche in Ihrer Organisation eindeutig sein muss. 
+7. Geben Sie auf der Seite **Suche speichern** einen Namen für die Suche und eine optionale Beschreibung ein, die die Suche erleichtert. Beachten Sie, dass der Name der Suche in Ihrer Organisation eindeutig sein muss. 
     
-9. Klicken Sie auf **Speichern** , um die Suche zu starten. 
+8. Klicken Sie auf **Speichern** , um die Suche zu starten. 
     
     Nachdem Sie die Suche gespeichert und ausgeführt haben, werden alle von der Suche zurückgegebenen Ergebnisse im Ergebnisbereich angezeigt. Je nachdem, wie Sie die Vorschau Einstellung konfiguriert haben, werden die Suchergebnisse angezeigt, oder Sie müssen auf **Vorschau Ergebnisse** klicken, um Sie anzuzeigen. Weitere Informationen finden Sie im nächsten Abschnitt. 
     
@@ -116,7 +114,7 @@ Es gibt zwei Konfigurationseinstellungen für die Vorschau der Suchergebnisse. N
     
 2. **Ergebnisse manuell** anzeigen – mit dieser Einstellung werden Platzhalter im Suchergebnisbereich angezeigt und die Schaltfläche **Vorschau Ergebnisse** angezeigt, auf die Sie klicken müssen, um die Suchergebnisse anzuzeigen. Dies ist die Standardeinstellung; Dadurch wird die Suchleistung verbessert, da beim Öffnen einer vorhandenen Suche nicht automatisch die Suchergebnisse angezeigt werden. 
     
-Es gibt Beschränkungen im Zusammenhang mit der Anzahl der verfügbaren Elemente für die Vorschau. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md). 
+Es gibt Beschränkungen im Zusammenhang mit der Anzahl der verfügbaren Elemente für die Vorschau. Weitere Informationen finden Sie unter [Grenzwerte für die Inhaltssuche](limits-for-content-search.md). 
   
 Eine Liste der unterstützten Dateitypen, die in der Vorschau angezeigt werden können, finden Sie unter [Vorschau der Suchergebnisse](#previewing-search-results) im Abschnitt "Weitere Informationen zur Inhaltssuche". Wenn ein Dateityp für die Vorschau nicht unterstützt wird oder eine Kopie eines Dokuments heruntergeladen wird, können Sie auf **Originaldatei herunter** laden klicken, um Sie auf Ihren lokalen Computer herunterzuladen. Für aspx-Webseiten ist die URL für die Seite enthalten, obwohl Sie möglicherweise nicht über die Berechtigungen für den Zugriff auf die Seite verfügen. 
   
@@ -130,7 +128,7 @@ Sie können die Suchstatistiken und Keyword-Statistiken auch in eine CSV-Datei h
   
 So zeigen Sie Suchstatistiken an
   
-1. Klicken Sie auf der Seite **Inhaltssuche** im &amp; Security Compliance Center auf **Öffnen** , und klicken Sie dann auf die Suche, für die Sie die Statistik anzeigen möchten. 
+1. Klicken Sie auf der Seite **Inhaltssuche** auf **Öffnen** , und klicken Sie dann auf die Suche, für die Sie die Statistik anzeigen möchten. 
     
 2. Klicken Sie auf der Seite Fly Out auf **Abfrage öffnen**. 
     
@@ -153,7 +151,7 @@ Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse
   
 So exportieren Sie Suchergebnisse:
   
-1. Klicken Sie auf der Seite **Inhaltssuche** im &amp; Security Compliance Center auf die Suche, für die Sie die Suchergebnisse exportieren möchten. 
+1. Klicken Sie auf der Seite **Inhaltssuche** auf die Suche, für die Sie die Suchergebnisse exportieren möchten. 
     
 2. Klicken Sie ![auf der Seite Fly Out auf Suchergebnis Symbol](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) exportieren **mehr**, und klicken Sie dann auf **Ergebnisse exportieren**. Beachten Sie, dass Sie einen Suchergebnisbericht auch exportieren können.
     
@@ -161,11 +159,10 @@ So exportieren Sie Suchergebnisse:
     
 Ausführlichere Anweisungen und Tipps zur Problembehandlung finden Sie unter:
   
-- [Exportieren von Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md)
+- [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
     
 - [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
     
-
   
 ## <a name="more-information-about-content-search"></a>Weitere Informationen zur Inhaltssuche
 
@@ -189,7 +186,7 @@ Weitere Informationen zu Inhalts suchen finden Sie in den folgenden Abschnitten.
   
 ### <a name="content-search-limits"></a>Grenzwerte für die Inhaltssuche
 
-- Eine Beschreibung der Grenzwerte für die Inhaltssuche finden Sie unter [Grenzwerte für die Suche im Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
+- Eine Beschreibung der Grenzwerte für die Inhaltssuche finden Sie unter [Grenzwerte für die Inhalts](limits-for-content-search.md)Suche.
     
 - Microsoft sammelt Leistungsinformationen für Inhaltssuche, die von allen Office 365-Organisationen ausgeführt werden. Während sich die Komplexität der Suchabfrage auf die Suchzeiten auswirken kann, ist der größte Faktor für die Dauer der Suche die Anzahl der durchsuchten Postfächer. Obwohl Microsoft keine Vereinbarung zum Service Level für Suchzeiten bereitstellt, werden in der folgenden Tabelle die durchschnittlichen Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der Postfächer aufgeführt, die in der Suche enthalten sind.
     
@@ -258,7 +255,7 @@ Beachten Sie bei der Suche nach Inhalten in Microsoft Teams-und Office 365-Grupp
   
 - Wenn das Postfach eines Benutzers durchsucht wird, wird jede Microsoft-Team-oder Office 365-Gruppe, der der Benutzer angehört, nicht durchsucht. Auf ähnliche Weise wird beim Durchsuchen eines Microsoft-Teams oder einer Office 365-Gruppe nur das Gruppenpostfach und die von Ihnen angegebene Gruppen Website durchsucht; die Postfächer und OneDrive für Geschäftskonten von Gruppenmitgliedern werden nicht durchsucht, es sei denn, Sie fügen Sie der Suche explizit hinzu.
     
-- Wenn Sie eine Liste der Mitglieder eines Microsoft-Teams oder einer Office 365-Gruppe abrufen möchten, können Sie die Eigenschaften auf der Seite **Start \> gruppen** im Office 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
+- Wenn Sie eine Liste der Mitglieder eines Microsoft-Teams oder einer Office 365-Gruppe abrufen möchten, können Sie die Eigenschaften auf der Seite **Start \> gruppen** im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -310,7 +307,7 @@ Beachten Sie, dass Bedingungen logisch mit der Schlüsselwortabfrage vom **and-*
   
 ### <a name="searching-inactive-mailboxes"></a>DurchSuchen inaktiver Postfächer
 
-Sie können inaktive Postfächer in einer Inhaltssuche durchsuchen. Führen Sie den Befehl `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell aus, um eine Liste der inaktiven Postfächer in Ihrer Organisation zu erhalten. Alternativ können Sie im](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> Security &amp; Compliance Center zu **Data Governance** \> **Retention** wechseln und dann auf **Weitere**![Navigationsleisten Ellipsen inaktive **Postfächer**klicken.
+Sie können inaktive Postfächer in einer Inhaltssuche durchsuchen. Führen Sie den Befehl `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell aus, um eine Liste der inaktiven Postfächer in Ihrer Organisation zu erhalten. Alternativ können Sie im Security & Compliance Center zu **Data Governance** \> **Retention** wechseln und dann auf **Weitere**![Navigationsleisten Ellipsen](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **inaktive Postfächer**klicken.
   
 Im folgenden finden Sie einige Punkte, die Sie beachten sollten, wenn Sie inaktive Postfächer durchsuchen.
   

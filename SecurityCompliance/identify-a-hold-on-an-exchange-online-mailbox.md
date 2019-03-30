@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Erfahren Sie, wie Sie die verschiedenen Aufbewahrungsarten identifizieren können, die in einem Office 365-Postfach gespeichert werden dürfen. Zu diesen Aufbewahrungsarten gehört das Litigation Hold, eDiscovery Holds und Office 365 Retention Policies. Sie können auch feststellen, ob ein Benutzer von einer organisationsweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900154"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001218"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 
@@ -28,7 +28,7 @@ Office 365 bietet eine Reihe von Möglichkeiten, wie Sie verhindern können, das
 
 - In Exchange Online werden die **Aufbewahrungsverfahren** für Benutzerpostfächer angewendet.
 
-- **eDiscovery-halte** Status, die einem eDiscovery-Fall im Security _AMP_ Compliance Center zugeordnet sind. eDiscovery-Speicher können auf Benutzerpostfächer und auf das entsprechende Postfach für Office 365-Gruppen und Microsoft Teams angewendet werden.
+- **eDiscovery-halte** Status, die einem eDiscovery-Fall im Security and Compliance Center zugeordnet sind. eDiscovery-Speicher können auf Benutzerpostfächer und auf das entsprechende Postfach für Office 365-Gruppen und Microsoft Teams angewendet werden.
 
 - Die **in-** situ-Speicher, die auf Benutzerpostfächer angewendet werden, indem Sie das in-situ-EDiscovery-& in der Exchange-verwaltungsKonsole in Exchange Online verwenden.
 
@@ -53,7 +53,7 @@ Sie können die folgenden beiden Cmdlets in Exchange Online PowerShell ausführe
 
 - **Get-OrganizationConfig** -verwenden Sie dieses Cmdlet, um die GUIDs für organisationsweite Aufbewahrungsrichtlinien abzurufen.
 
-Informationen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -72,7 +72,7 @@ In der folgenden Tabelle wird beschrieben, wie Sie unterschiedliche Aufbewahrung
 |Haltebereichstyp  |Beispielwert  |So identifizieren Sie den Haltestatus  |
 |---------|---------|---------|
 |Aufbewahrung für eventuelle Rechtsstreitigkeiten     |    `True`     |     Die Beweissicherung für ein Postfach ist aktiviert, wenn die *LitigationHoldEnabled* -Eigenschaft `True`auf festgelegt ist.    |
-|eDiscovery-Haltebereich     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   Die *InPlaceHolds-Eigenschaft* enthält die GUID eines beliebigen haltebereichs, der einem eDiscovery-Fall im Security _AMP_ Compliance Center zugeordnet ist. Sie können feststellen, dass dies ein eDiscovery-Speicher ist, da `UniH` die GUID mit dem Präfix beginnt (das einen einheitlichen Haltebereich bezeichnet).      |
+|eDiscovery-Haltebereich     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   Die *InPlaceHolds-Eigenschaft* enthält die GUID eines beliebigen haltebereichs, der einem eDiscovery-Fall im Security and Compliance Center zugeordnet ist. Sie können feststellen, dass dies ein eDiscovery-Speicher ist, da `UniH` die GUID mit dem Präfix beginnt (das einen einheitlichen Haltebereich bezeichnet).      |
 |Compliance-Archiv     |     `c0ba3ce811b6432a8751430937152491` <br/> oder <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     Die *InPlaceHolds* -Eigenschaft enthält die GUID des in-situ-Speichers, der für das Postfach platziert wird. Sie können feststellen, dass es sich um einen in-situ-Speicher handelt, da die GUID entweder nicht mit einem `cld` Präfix beginnt oder mit dem Präfix startet.     |
 |Speziell auf das Postfach angewendete Aufbewahrungsrichtlinie für Office 365     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> oder <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     Die InPlaceHolds-Eigenschaft enthält GUIDs einer bestimmten Aufbewahrungsrichtlinie für Standorte, die auf das Postfach angewendet wird. Sie können Aufbewahrungsrichtlinien identifizieren, da die GUID mit `mbx` dem oder `skp` dem Präfix beginnt. Das `skp` Präfix gibt an, dass die Aufbewahrungsrichtlinie auf Skype for Business-Unterhaltungen im Postfach des Benutzers angewendet wird.    |
 |Ausgeschlossen von einer organisationsweiten Office 365-Aufbewahrungsrichtlinie     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Wenn ein Postfach aus einer organisationsweiten Office 365-Aufbewahrungsrichtlinie ausgeschlossen ist, wird die GUID für die Aufbewahrungsrichtlinie, von der das Postfach ausgeschlossen wird, in der InPlaceHolds-Eigenschaft `-mbx` angezeigt und durch das Präfix gekennzeichnet.    |
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Informationen zum Herstellen einer Verbindung mit der Security & Compliance Center-PowerShell finden Sie unter [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Informationen zum Herstellen einer Verbindung mit Security & Compliance Center PowerShell finden Sie unter [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="in-place-holds"></a>In-situ-Aufbewahrung
 

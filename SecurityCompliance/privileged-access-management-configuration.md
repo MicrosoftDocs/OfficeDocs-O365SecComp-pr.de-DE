@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über das Konfigurieren von privileged Access Management in Office 365
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492824"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001148"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Konfigurieren von privileged Access Management in Office 365
 
@@ -58,13 +58,13 @@ Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgese
 
 ## <a name="step-1---create-an-approvers-group"></a>Schritt 1: Erstellen einer Gruppe von genehmigenden Personen
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Wechseln Sie im Admin Center zu **Gruppen** > **Hinzufügen einer Gruppe**.
 
 3. Wählen Sie den Gruppentyp **e-Mail-aktivierte Sicherheitsgruppe** aus, und füllen Sie dann die Felder **Name**, **Gruppen-e-Mail-Adresse**und **Beschreibung** für die neue Gruppe aus.
 
-4. Speichern Sie die Gruppe. Es kann einige Minuten dauern, bis die Gruppe vollständig konfiguriert ist und im Office 365 Admin Center angezeigt wird.
+4. Speichern Sie die Gruppe. Es kann einige Minuten dauern, bis die Gruppe vollständig konfiguriert ist und im Microsoft 365 Admin Center angezeigt wird.
 
 5. Wählen Sie die Gruppe neuer genehmigender aus, und wählen Sie **Bearbeiten** aus, um Benutzer zur Gruppe hinzuzufügen.
 
@@ -76,7 +76,7 @@ Nachdem die Genehmigung erteilt wurde, kann der anfordernde Benutzer die vorgese
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen > Security & Privacy** > **privileged Access**.
 
@@ -108,7 +108,7 @@ Sie können bis zu 30 privilegierte Zugriffsrichtlinien für Ihre Office 365-Org
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
@@ -152,7 +152,7 @@ Anforderungen für den privilegierten Zugriff sind bis zu 24 Stunden nach der Ü
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://portal.office.com) an.
+1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
@@ -187,7 +187,7 @@ Nachdem eine Genehmigungsanforderung erstellt wurde, kann der Status der Höhen 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://portal.office.com) an.
+1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
@@ -211,7 +211,7 @@ Wenn eine Genehmigungsanforderung erstellt wird, erhalten Mitglieder der entspre
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://portal.office.com) an.
+1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
@@ -248,7 +248,7 @@ Sie können eine Richtlinie für den privilegierten Zugriff löschen, wenn Sie i
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 
@@ -274,7 +274,7 @@ Bei Bedarf können Sie die privilegierte Zugriffsverwaltung für Ihre Organisati
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Verwenden des Microsoft 365 Admin Center
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://portal.office.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) mithilfe von Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
 2. Navigieren Sie im Admin Center zu **Einstellungen** > **Security & Privacy** > **privileged Access**.
 

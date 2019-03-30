@@ -10,22 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place-Speicher, Litigation Hold und Office 365-Aufbewahrungsrichtlinien ermöglichen das Aufbewahren von Postfachinhalten zur Erfüllung behördlicher Vorschriften und eDiscovery-Anforderungen.
-ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693234"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999518"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery
   
-Mit dem Compliance-Archiv, dem Beweissicherungsverfahren und [Office 365-Aufbewahrungsrichtlinien](http://go.microsoft.com/fwlink/?LinkID=827811) (erstellt in Office 365 Security &amp; Compliance Center) können Sie Postfachinhalte speichern, um rechtliche Vorschriften einzuhalten und eDiscovery-Anforderungen zu erfüllen. Informationen über Empfänger, die direkt in den Feldern "An" und "Cc" einer Nachricht adressiert werden, sind standardmäßig in allen Nachrichten enthalten, aber in Ihrer Organisation kann es erforderlich sein, nach detaillierten Informationen über alle Empfänger einer Nachricht zu suchen und sie zu reproduzieren. Dazu gehört Folgendes: 
+In-Place Hold, Litigation Hold, und [Office 365-Aufbewahrungsrichtlinien](http://go.microsoft.com/fwlink/?LinkID=827811) (erstellt im Security _AMP_ Compliance Center) ermöglichen das Aufbewahren von Postfachinhalten zur Erfüllung behördlicher Compliance-und eDiscovery-Anforderungen. Informationen über Empfänger, die direkt in den Feldern "An" und "Cc" einer Nachricht adressiert werden, sind standardmäßig in allen Nachrichten enthalten, aber in Ihrer Organisation kann es erforderlich sein, nach detaillierten Informationen über alle Empfänger einer Nachricht zu suchen und sie zu reproduzieren. Dazu gehört Folgendes: 
   
 - **Empfänger, die im Feld "Bcc" einer Nachricht adressiert werden:** Bcc-Empfänger werden in der Nachricht im Postfach des Absenders gespeichert, aber sind nicht in den Kopfzeilen der Nachricht enthalten, die an die Empfänger gesendet wird. 
     
 - **Empfänger in erweiterten Verteilergruppen:** Empfänger, die die Nachricht erhalten, weil sie Mitglieder einer Verteilergruppe sind, an die die Nachricht adressiert war, entweder im Feld "An", "CC", oder "Bcc". 
     
-Exchange Online und Exchange Server 2013 (kumulatives Update 7 und höher) behalten Informationen zu Bcc-Empfängern und Empfängern in erweiterten Verteilergruppen bei. Sie können mithilfe einer Compliance-eDiscovery-Suche in der Exchange-Verwaltungskonsole oder einer Inhaltssuche in der Security &amp; Compliance Center nach diesen Informationen suchen. 
+Exchange Online und Exchange Server 2013 (kumulatives Update 7 und höher) behalten Informationen zu Bcc-Empfängern und Empfängern in erweiterten Verteilergruppen bei. Sie können in der Exchange-Verwaltungskonsole (EAC) oder einer Inhaltssuche im Security & Compliance Center nach diesen Informationen suchen. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Wie Bcc-Empfänger und Empfänger in erweiterten Verteilergruppen beibehalten werden
 <a name="sectionSection0"> </a>

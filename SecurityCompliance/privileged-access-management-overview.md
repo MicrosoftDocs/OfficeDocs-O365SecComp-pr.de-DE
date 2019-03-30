@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: In diesem Thema erfahren Sie mehr über die Verwaltung privilegierter Zugriffsrechte in Office 365
-ms.openlocfilehash: d8b16d7dd73f99c15ec241963a58273966074318
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a464bacaa568515e470e29a0c9c45a91a79cf8e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214925"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001248"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilegierte Zugriffsverwaltung in Office 365
 
@@ -45,23 +45,23 @@ Die Verwaltung privilegierter Zugriffsrechte in Office 365 kann auf **Aufgaben**
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Privilegierte Zugriffs Verwaltungsarchitektur und Prozessfluss
 
-Jeder der folgenden Prozessabläufe skizziert die Architektur des privilegiert-Zugriffs und die Interaktion mit dem Office 365-Substrat, der Office 365-Überwachung und der Exchange-Verwaltungs Runspace.
+Jeder der folgenden Prozessabläufe skizziert die Architektur des privilegierten Zugriffs und deren Interaktion mit dem Office 365-Substrat, der Office 365-Überwachung und der Exchange-Runspace.
 
 ### <a name="step-1-configuring-a-privileged-access-policy"></a>Schritt 1: Konfigurieren einer privilegierten Zugriffsrichtlinie
 
-Beim Konfigurieren einer Richtlinie für privilegierten Zugriff mit dem Office 365 Admin Center oder der Exchange Management PowerShell erstellen und definieren Sie die Richtlinie, und die privilegierte Zugriffsfunktion verarbeitet die Richtlinien Attribute im Office 365-Substrat und protokolliert die Aktivität im Office 365 Security and Compliance Center. Die Richtlinie ist jetzt aktiviert und kann eingehende Anforderungen für Genehmigungen verarbeiten.
+Beim Konfigurieren einer privilegierten Zugriffsrichtlinie mithilfe des [Microsoft 365 admin Centers](https://admin.microsoft.com) oder der Exchange Management PowerShell erstellen und definieren Sie die Richtlinie, und die privilegierte Zugriffsfunktion verarbeitet die Richtlinien Attribute im Office 365-Substrat und protokolliert die Aktivität im Office 365 Security and Compliance Center. Die Richtlinie ist jetzt aktiviert und kann eingehende Anforderungen für Genehmigungen verarbeiten.
 
 ![Schritt 1: Erstellen von Richtlinien](media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Schritt 2: Zugriffsanforderung
 
-Über das Office 365 Admin Center oder die Exchange-Verwaltungs-PowerShell können Benutzer Zugriff auf erhöhte oder privilegierte Aufgaben anfordern. Die privilegierte Zugriffsfunktion sendet die Anforderung an das Office 365-Substrat zur Verarbeitung anhand der konfigurierten Zugriffsrichtlinie für Berechtigungen und zeichnet die sctivity in den Office 365 Security and Compliance Center-Protokollen auf.
+Mithilfe des [Microsoft 365 Admin Center](https://admin.microsoft.com) oder der Exchange-Verwaltungs-PowerShell können Benutzer Zugriff auf erhöhte oder privilegierte Aufgaben anfordern. Die privilegierte Zugriffsfunktion sendet die Anforderung an das Office 365-Substrat zur Verarbeitung anhand der konfigurierten Zugriffsrichtlinie für Berechtigungen und zeichnet die Aktivität in den Office 365 Security and Compliance Center-Protokollen auf.
 
 ![Schritt 2-Zugriffsanforderung](media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>Schritt 3: Zugriffsgenehmigung
 
-Eine Genehmigungsanforderung wird generiert, und die Genehmigungsgruppe wird per e-Mail der ausstehenden Anforderung benachrichtigt. Wenn die Genehmigung erteilt wird, wird die privilegierte Zugriffsanforderung als Genehmigung verarbeitet, und die Aufgabe kann abgeschlossen werden. Wenn die Anforderung abgelehnt wurde, wird die Aufgabe blockiert, und dem reqeustor wird kein Zugriff erteilt. Der Anforderer wird über eine e-Mail-Nachricht über die Genehmigung oder Ablehnung der Anforderung benachrichtigt.
+Eine Genehmigungsanforderung wird generiert, und die Genehmigungsgruppe wird per e-Mail der ausstehenden Anforderung benachrichtigt. Wenn die Genehmigung erteilt wird, wird die privilegierte Zugriffsanforderung als Genehmigung verarbeitet, und die Aufgabe kann abgeschlossen werden. Wenn die Anforderung abgelehnt wurde, wird die Aufgabe blockiert, und dem Requestor wird kein Zugriff erteilt. Der Anforderer wird über eine e-Mail-Nachricht über die Genehmigung oder Ablehnung der Anforderung benachrichtigt.
 
 ![Schritt 3: Zugriffsgenehmigung](media/pam-step3-access-approval.jpg)
 
@@ -84,7 +84,7 @@ Diese Funktion wird in Kürze in anderen Office 365-Arbeitsauslastungen angebote
 Wir planen, die aktuelle Grenze von 30 privilegierten Zugriffsrichtlinien pro Office 365-Organisation bald zu verlängern.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Muss ich ein globaler Administrator sein, um den privilegierten Zugriff in Office 365 zu verwalten?
-Nein, Sie müssen den Konten, die den privilegierten Zugriff in Office 365 verwalten, die Exchange-Rollenverwaltungsrolle zugewiesen haben. Die globale Administrator Rolle enthält jedoch standardmäßig diese Rolle und kann zum Verwalten des privilegierten Zugriffs verwendet werden, wenn Sie die Rollenverwaltungsrolle nicht als eigenständige Konto Berechtigung konfigurieren möchten. Benutzer, die in der Gruppe der genehmigenden Personen enthalten sind, müssen kein globaler Administrator sein oder die Rolle "Rollenverwaltung" zugewiesen haben, um Anforderungen zu überarbeiten und zu genehmigen. 
+Nein, Sie müssen den Konten, die den privilegierten Zugriff in Office 365 verwalten, die Exchange-Rollenverwaltungsrolle zugewiesen haben. Die globale Administrator Rolle enthält jedoch standardmäßig diese Rolle und kann zum Verwalten des privilegierten Zugriffs verwendet werden, wenn Sie die Rollenverwaltungsrolle nicht als eigenständige Konto Berechtigung konfigurieren möchten. Benutzer, die in der Gruppe der genehmigenden Personen enthalten sind, müssen kein globaler Administrator sein oder die Rolle "Rollenverwaltung" zugewiesen haben, um Anforderungen zu überarbeiten und zu genehmigen.
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Wie ist die privilegierte Zugriffsverwaltung in Office 365 im Zusammenhang mit der Kunden-Lockbox?
 [Kunden](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) -Lockbox ermöglicht eine Zugriffssteuerung für Organisationen für den Zugriff auf Daten durch Ihren Dienstanbieter, also Microsoft. Die privilegierte Zugriffsverwaltung in Office 365 ermöglicht eine granulare Zugriffssteuerung innerhalb einer Organisation für alle privilegierten Office 365-Aufgaben.

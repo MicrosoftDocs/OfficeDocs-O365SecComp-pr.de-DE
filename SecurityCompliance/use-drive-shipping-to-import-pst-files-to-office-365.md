@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Für Administratoren: erfahren Sie, wie Sie die PST-Dateien Ihrer Organisation in Office 365-Postfächern Massenimportieren, indem Sie PST-Dateien auf eine Festplatte kopieren und dann an Microsoft versenden. '
-ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: d0e2c155c267939755a85f30f1ad234dc57cfe5f
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950472"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999988"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Verwenden des Laufwerk Versands zum Importieren Ihrer Organisations-PST-Dateien in Office 365
 
@@ -52,7 +52,7 @@ Häufig gestellte Fragen zur Verwendung des Laufwerk Versands zum Importieren vo
 
 - Sie müssen die Rolle "Postfachimport-export" in Exchange Online zuweisen, um PST-Dateien in Office 365-Postfächer zu importieren. Diese Rolle wird standardmäßig keiner Rollengruppe in Exchange Online zugewiesen. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder "Erstellen einer Rollengruppe" unter [Verwalten von Rollengruppen](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    Darüber hinaus muss eine der folgenden Anforderungen erfüllt sein, um &amp; Importaufträge im Office 365 Security Compliance Center zu erstellen:
+    Darüber hinaus muss eine der folgenden Anforderungen erfüllt sein, um Importaufträge im Security & Compliance Center zu erstellen:
     
   - Sie müssen der Rolle e-Mail-Empfänger in Exchange Online zugewiesen werden. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -110,14 +110,14 @@ Häufig gestellte Fragen zur Verwendung des Laufwerk Versands zum Importieren vo
 Der erste Schritt besteht darin, den Secure Storage-Schlüssel und das Tool herunterzuladen, und die Sie in Schritt 2 verwenden, um PST-Dateien auf die Festplatte zu kopieren.
   
 > [!IMPORTANT]
-> Sie müssen Azure Import/Export Tool Version 1 (WAimportExportV1) verwenden, um PST-Dateien mithilfe der Laufwerk Versandart erfolgreich zu importieren. Version 2 des Azure-Import/Export-Tools wird nicht unterstützt, und die Verwendung der Festplatte für den Importauftrag wird fälschlicherweise vorbereitet. Stellen Sie sicher, dass Sie das Azure-Import/Export- &amp; Tool aus dem Security Compliance Center herunterladen, indem Sie die Verfahren in diesem Schritt befolgen. 
+> Sie müssen Azure Import/Export Tool Version 1 (WAimportExportV1) verwenden, um PST-Dateien mithilfe der Laufwerk Versandart erfolgreich zu importieren. Version 2 des Azure-Import/Export-Tools wird nicht unterstützt, und die Verwendung der Festplatte für den Importauftrag wird fälschlicherweise vorbereitet. Stellen Sie sicher, dass Sie das Azure-Import/Export-Tool aus dem Security & Compliance Center herunterladen, indem Sie die Verfahren in diesem Schritt befolgen. 
   
-1. Wechseln Sie [https://protection.office.com/](https://protection.office.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://compliance.microsoft.com/](https://compliance.microsoft.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
-2. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Data Governance** \> - **Import**.
+2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Data Governance** \> - **Import**.
     
     > [!NOTE]
-    > Wie bereits erwähnt, müssen Sie über die entsprechenden Berechtigungen für den Zugriff auf die Seite " **importieren** " im &amp; Security Compliance Center verfügen. 
+    > Wie bereits erwähnt, müssen Sie über die entsprechenden Berechtigungen für den Zugriff auf die Seite " **importieren** " im Security _AMP_ Compliance Center verfügen. 
   
 3. Klicken Sie **** ![auf der Seite importieren auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen **neuer Importauftrag**.
     
@@ -141,7 +141,7 @@ Der erste Schritt besteht darin, den Secure Storage-Schlüssel und das Tool heru
     
 7. Klicken Sie auf **Abbrechen** , um den Assistenten zu schließen. 
     
-    Sie kehren zurück zur Seite " **importieren** " im Security &amp; Compliance Center, wenn Sie den Importauftrag in Schritt 4 erstellen. 
+    Sie kehren zurück zur Seite " **importieren** " im Security _AMP_ Compliance Center, wenn Sie den Importauftrag in Schritt 4 erstellen. 
 
 ## <a name="step-2-copy-the-pst-files-to-the-hard-drive"></a>Schritt 2: Kopieren der PST-Dateien auf die Festplatte
 
@@ -242,14 +242,14 @@ Nachdem Microsoft Data Center-Mitarbeiter die PST-Dateien von der Festplatte in 
 
 Im nächsten Schritt erstellen Sie den PST-Importauftrag im Import Dienst in Office 365. Wie zuvor beschrieben, übermitteln Sie die in Schritt 3 erstellte PST-Importzuordnungsdatei. Nach dem Erstellen des neuen Auftrags verwendet der Import Dienst die Informationen in der Zuordnungsdatei, um die PST-Dateien in das angegebene Benutzerpostfach zu importieren, nachdem die PST-Dateien von der Festplatte in den Azure-Speicherbereich kopiert wurden, und Sie können den Importauftrag erstellen und starten.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
-2. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Datenverwaltung** , und klicken Sie dann auf **importieren**.
+2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Datenverwaltung** , und klicken Sie dann auf **importieren**.
     
 3. Klicken Sie **** ![auf der Seite importieren auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen **neuer Importauftrag**.
     
     > [!NOTE]
-    > Wie bereits erwähnt, müssen Sie über die entsprechenden Berechtigungen für den Zugriff auf die Seite " **importieren** " im &amp; Security Compliance Center verfügen. 
+    > Wie bereits erwähnt, müssen Sie über die entsprechenden Berechtigungen für den Zugriff auf die Seite " **importieren** " im Security _AMP_ Compliance Center verfügen. 
   
 4. Geben Sie einen Namen für den PST-Importauftrag ein, und klicken Sie dann auf **weiter**. Verwenden Sie Kleinbuchstaben, Zahlen, Bindestriche und Unterstriche. Sie können keine Großbuchstaben verwenden oder Leerzeichen im Namen einfügen.
     
@@ -328,7 +328,7 @@ Beachten Sie die folgenden Punkte, wenn Sie Festplatten an Microsoft senden:
 
 Nachdem Sie die Festplatte an Microsoft gesendet haben, führen Sie auf der Seite des Importdiensts die folgenden Schritte aus.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
 2. Klicken Sie im linken Bereich auf **Datenverwaltung** , und klicken Sie dann auf **importieren**.
     
@@ -354,7 +354,7 @@ Nachdem Ihre Festplatte von Microsoft empfangen wurde, ändert sich der Status f
   
 Nachdem PST-Dateien in Azure hochgeladen wurden, wird der Status **in Analyse ausgeführt**geändert. Dies weist darauf hin, dass Office 365 die Daten in den PST-Dateien (sicher und sicher) analysiert, um das Alter der Elemente und die verschiedenen Nachrichtentypen in den PST-Dateien zu identifizieren. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, wird der Status für den Importauftrag in **Analyse abgeschlossen**geändert. Zu diesem Zeitpunkt haben Sie die Möglichkeit, alle in den PST-Dateien enthaltenen Daten zu importieren, oder Sie können die importierten Daten trimmen, indem Sie Filter festlegen, die Steuern, welche Daten importiert werden.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
 2. Klicken Sie im linken Bereich auf **Data Governance** > -**Import**.
     
@@ -396,9 +396,9 @@ So installieren Sie den Azure Storage Explorer und stellen eine Verbindung mit I
   
 1. Führen Sie die folgenden Schritte aus, um die SAS-URL (Shared Access Signature) für Ihre Organisation abzurufen. Diese URL ist eine Kombination aus der Netzwerk-URL für den Azure-Speicherort in der Microsoft-Cloud für Ihre Organisation und einem SAS-Schlüssel. Dieser Schlüssel enthält die erforderlichen Berechtigungen für den Zugriff auf den Azure-Speicherort Ihrer Organisation.
     
-1. Wechseln Sie [https://protection.office.com/](https://protection.office.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://compliance.microsoft.com/](https://compliance.microsoft.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
-2. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Data Governance** \> - **Import**.
+2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Data Governance** \> - **Import**.
     
 3. Klicken Sie **** ![auf der Seite importieren auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen **neuer Importauftrag**.
     

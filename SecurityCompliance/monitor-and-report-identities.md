@@ -1,5 +1,5 @@
 ---
-title: Überwachen und melden von Identitäten in Microsoft 365 Sicherheit
+title: Überwachen und Berichten von Identitäten in Microsoft 365 Security
 description: Beschreibt, wie Sie die Identitäten in Ihrer Organisation überwachen und verdächtige oder riskante Verhaltensweisen verfolgen können.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Überwachung, Bericht, Identität
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4b2dfec483f4365c7eff132e2a2401734358ad7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 285bc5af108de8a59a65a088ec4e33ae27bff3c1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791701"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998888"
 ---
-# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Überwachen und melden von Identitäten in Microsoft 365 Sicherheit
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Überwachen und Berichten von Identitäten in Microsoft 365 Security
 
 Sie können die Identitäten in Ihrer Organisation überwachen und verdächtige oder riskante Verhaltensweisen verfolgen. In der **** Kategorie Identitäten der **Überwachung von &-Berichten**können Sie Folgendes verfolgen:
 

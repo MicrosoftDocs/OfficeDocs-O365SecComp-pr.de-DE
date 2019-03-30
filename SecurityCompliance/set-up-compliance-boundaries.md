@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Konformitäts Grenzen, um logische Grenzen innerhalb einer Office 365-Organisation zu erstellen, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Konformitäts Grenzen verwenden Sie die Filterung von Suchberechtigungen (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862437"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001088"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -34,7 +34,7 @@ In diesem Beispiel ist contoso LTD eine Office 365-Organisation, die aus zwei Ni
   
 - Die Funktion zum Filtern von Suchberechtigungen in der Inhaltssuche steuert die inhaltsspeicherorte, die eDiscovery-Manager und-Prüfer durchsuchen können. Dies führt dazu, dass eDiscovery-Manager und-Prüfer in der vierten Kaffee Agentur nur inhaltsspeicherorte in der Fourth Coffee-Niederlassung durchsuchen können. Die gleiche Einschränkung gilt für die Weinkellerei-Tochtergesellschaft.
     
-    Rollengruppen steuern, wer die eDiscovery-Fälle im Office 365 Security &amp; Compliance Center anzeigen kann. Dies führt dazu, dass eDiscovery-Manager und-Prüfer nur die eDiscovery-Fälle in Ihrer Agentur sehen können.
+    Rollengruppen steuern, wer die eDiscovery-Fälle im Security & Compliance Center anzeigen kann. Dies führt dazu, dass eDiscovery-Manager und-Prüfer nur die eDiscovery-Fälle in Ihrer Agentur sehen können.
     
 - Rollengruppen steuern außerdem, wer einem eDiscovery-Fall Mitglieder zuweisen kann. Dies führt dazu, dass eDiscovery-Manager und-Prüfer nur dann Mitglieder zuweisen können, wenn Sie selbst Mitglied sind.
     
@@ -84,9 +84,9 @@ Nachdem die technische Änderung vorgenommen wurde und das Attribut mit OneDrive
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Schritt 3: Erstellen einer Rollengruppe für jede Agentur
 
-Im nächsten Schritt werden die Rollengruppen im Office 365 Security &amp; Compliance Center erstellt, das an Ihre Agenturen ausgerichtet wird. Es wird empfohlen, eine neue Rollengruppe zu erstellen, indem Sie die integrierte eDiscovery-Manager-Gruppe kopieren, die entsprechenden Mitglieder hinzufügen und Rollen entfernen, die möglicherweise nicht Ihren Anforderungen entsprechen. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
+Im nächsten Schritt werden die Rollengruppen im Security & Compliance Center erstellt, das an Ihre Agenturen ausgerichtet wird. Es wird empfohlen, eine neue Rollengruppe zu erstellen, indem Sie die integrierte eDiscovery-Manager-Gruppe kopieren, die entsprechenden Mitglieder hinzufügen und Rollen entfernen, die möglicherweise nicht Ihren Anforderungen entsprechen. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security _AMP_ Compliance Center](assign-ediscovery-permissions.md).
   
-Um die Rollengruppen zu erstellen, wechseln Sie zur Seite **Berechtigungen** im Security &amp; Compliance Center, und erstellen Sie eine Rollengruppe für jedes Team in jeder Agentur, die Konformitäts Grenzen und eDiscovery-Fälle zum Verwalten von Untersuchungen verwendet. 
+Um die Rollengruppen zu erstellen, wechseln Sie zur Seite **Berechtigungen** im Security _AMP_ Compliance Center, und erstellen Sie eine Rollengruppe für jedes Team in jeder Agentur, die Konformitäts Grenzen und eDiscovery-Fälle zum Verwalten von Untersuchungen verwendet. 
   
 Unter Verwendung des Contoso-Konformitäts Grenzen-Szenarios müssen vier Rollengruppen erstellt und den jeweiligen Mitgliedern hinzugefügt werden.
   
@@ -144,16 +144,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>Schritt 5: Erstellen eines eDiscovery-Falls für interne Untersuchungen
 
-Der letzte Schritt besteht darin, einen neuen eDiscovery-Fall im Security &amp; Compliance Center zu erstellen und dann die Rollengruppe, die Sie in Schritt 3 erstellt haben, als Mitglied der Groß-/Kleinschreibung hinzuzufügen. Dies führt zu zwei wichtigen Merkmalen der Verwendung von Konformitäts Grenzen:
+Der letzte Schritt besteht darin, einen neuen eDiscovery-Fall im Security & Compliance Center zu erstellen und dann die Rollengruppe, die Sie in Schritt 3 erstellt haben, als Mitglied der Groß-/Kleinschreibung hinzuzufügen. Dies führt zu zwei wichtigen Merkmalen der Verwendung von Konformitäts Grenzen:
   
-- Nur Mitglieder der Rollengruppe, die dem Fall hinzugefügt wurden, können den Fall im Security &amp; Compliance Center anzeigen und darauf zugreifen. Wenn beispielsweise die Rollengruppe "Fourth Coffee Investigators" das einzige Mitglied eines Falls ist, können Mitglieder der Gruppe "vierte Kaffee-eDiscovery-Manager" (oder Mitglieder einer anderen Rollengruppe) den Fall nicht anzeigen oder darauf zugreifen.
+- Nur Mitglieder der Rollengruppe, die dem Fall hinzugefügt wurden, können den Fall im Security & Compliance Center sehen und darauf zugreifen. Wenn beispielsweise die Rollengruppe "Fourth Coffee Investigators" das einzige Mitglied eines Falls ist, können Mitglieder der Gruppe "vierte Kaffee-eDiscovery-Manager" (oder Mitglieder einer anderen Rollengruppe) den Fall nicht anzeigen oder darauf zugreifen.
     
 - Wenn ein Mitglied der Rollengruppe, die einem Fall zugewiesen ist, eine Suche ausführt, die dem Fall zugeordnet ist, können Sie nur die inhaltsspeicherorte innerhalb Ihrer Agentur Durchsuchen (Dies wird durch den Filter für Suchberechtigungen definiert, den Sie in Schritt 4 erstellt haben).
 
 
 So erstellen Sie eine neue Groß-/Kleinschreibung und weisen Mitglieder zu:
     
-1. Wechseln Sie zur **eDiscovery** -Seite im Security &amp; Compliance Center, und erstellen Sie einen neuen Fall. 
+1. Wechseln Sie zur **eDiscovery** -Seite im Security _AMP_ Compliance Center, und erstellen Sie einen neuen Fall. 
     
 2. Klicken Sie in der Liste der eDiscovery-Fälle auf den Namen der soeben erstellten Groß-/Kleinschreibung.
     
@@ -189,7 +189,7 @@ Mit den Such Berechtigungs filtern können Sie auch steuern, wohin der Inhalt f�
     |:-----|:-----|
     |NAM  <br/> |Nordamerika (tatsächliche Rechenzentren befinden sich in den USA)  <br/> |
     |EUR  <br/> |Europa  <br/> |
-    |APC  <br/> |Asien/Pazifik  <br/> |
+    |APC  <br/> |Asiatisch-pazifischer Raum  <br/> |
     |CAN <br/> |Kanada
     
 - **Routen von Inhalts suchen** – Sie können die Inhaltssuche von SharePoint-Websites und OneDrive-Konten zu einem Satellitendaten Center weiterleiten. Sie können also den Speicherort des Datencenters angeben, an dem die Suche ausgeführt wird.
@@ -200,13 +200,13 @@ Mit den Such Berechtigungs filtern können Sie auch steuern, wohin der Inhalt f�
     |:-----|:-----|
     |NAM  <br/> |UNS  <br/> |
     |EUR  <br/> |Europa  <br/> |
-    |APC  <br/> |Asien/Pazifik  <br/> |
+    |APC  <br/> |Asiatisch-pazifischer Raum  <br/> |
     |CAN  <br/> |UNS  <br/> |
-    |AUS  <br/> |Asien/Pazifik  <br/> |
+    |AUS  <br/> |Asiatisch-pazifischer Raum  <br/> |
     |KOR  <br/> |Das Standarddaten Center der Organisation  <br/> |
     |GBR  <br/> |Europa  <br/> |
-    |JPN  <br/> |Asien/Pazifik  <br/> |
-    |IND  <br/> |Asien/Pazifik  <br/> |
+    |JPN  <br/> |Asiatisch-pazifischer Raum  <br/> |
+    |IND  <br/> |Asiatisch-pazifischer Raum  <br/> |
     |LAM  <br/> |UNS  <br/> |
    
 > [!NOTE]
@@ -242,7 +242,7 @@ Beachten Sie beim Durchsuchen und Exportieren von Inhalten in Multi-Geo-Umgebung
 
  **Wer kann Such Berechtigungsfilter erstellen und verwalten (mithilfe von New-ComplianceSecurityFilter und Set-ComplianceSecurityFilter-Cmdlets)?**
   
-Zum Erstellen, anzeigen und Ändern von Such Berechtigungs filtern müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Security &amp; Compliance Center sein.
+Zum Erstellen, anzeigen und Ändern von Such Berechtigungs filtern müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center sein.
   
  **Wenn ein eDiscovery-Manager mehreren Rollengruppen zugewiesen ist, die mehrere Organisationen umfassen, wie Suchen Sie nach Inhalten in einer Agentur oder in der anderen?**
   

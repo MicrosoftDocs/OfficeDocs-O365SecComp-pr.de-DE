@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) bietet viele verschiedene Berichte an, mit deren Hilfe Sie den allgemeinen Status und die Integrität Ihrer Organisation ermitteln können. Außerdem gibt es Tools, mit denen Sie die Problembehebung für bestimmte Ereignisse (wenn beispielsweise eine Nachricht nicht beim gewünschten Empfänger ankommt) durchführen können, sowie Überwachungsberichte zur Einhaltung von Vorschriften. In der folgenden Tabelle sind die für EOP-Administratoren verfügbaren Berichte und Problembehandlungstools beschrieben.
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693164"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000948"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection
 
@@ -38,7 +38,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 - [Office 365-Berichte im Admin Center - Nutzung der E-Mail-Apps](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [Office 365-Berichte im Admin Center - Postfachnutzung](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Sicherheits &amp; Kompatibilitätsberichte im Office 365 Admin Center
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Sicherheits &amp; Kompatibilitätsberichte im Microsoft 365 Admin Center
 
 Diese erweiterten Berichte bieten eine interaktive Berichterstellung für EOP-Administratoren, die Zusammenfassungsinformationen und das Anzeigen von Detailinformationen umfasst.  
 
@@ -50,7 +50,7 @@ Diese erweiterten Berichte bieten eine interaktive Berichterstellung für EOP-Ad
 
 ##<a name="custom-reports-using-microsoft-graph"></a>Benutzerdefinierte Berichte mithilfe von Microsoft Graph
 
-Programmgesteuertes Erstellen von Berichten, die im Office 365 Admin Center mithilfe von Microsoft Graph verfügbar sind siehe Unterthemen zum [Arbeiten mit office 365-Nutzungsberichten in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
+Programmgesteuertes Erstellen von Berichten, die im Microsoft 365 Admin Center mithilfe von Microsoft Graph verfügbar sind siehe Unterthemen zum [Arbeiten mit Office 365-Nutzungsberichten in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>Benutzerdefinierte Berichte mit Berichtswebdiensten
 
@@ -83,6 +83,6 @@ In der folgenden Tabelle wird beschrieben, wann und für wie lange EOP-Berichte 
 |Daten der Nachrichtenablaufverfolgung  <br/> |90 Tage  <br/> |Wenn Sie eine Nachrichtenverfolgung für Nachrichten starten, die weniger als 7 Tage alt sind, sollten die Nachrichten innerhalb von 5-30 Minuten erscheinen.  <br/> Wenn Sie eine Ablaufverfolgung für Nachrichten ausführen, die älter als 7 Tage sind, kann es einige Stunden dauern, bis Ergebnisse ausgegeben werden.  <br/> |
    
 > [!NOTE]
-> Datenverfügbarkeit und Latenz sind gleich, unabhängig davon, ob Sie die Daten über das Office 365 Admin Center oder über Remote-PowerShell abrufen. 
+> Datenverfügbarkeit und Latenz sind identisch, unabhängig davon, ob Sie über das Microsoft 365 Admin Center oder die Remote-PowerShell angefordert werden. 
   
 

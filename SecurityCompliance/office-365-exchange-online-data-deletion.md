@@ -3,29 +3,28 @@ title: Office 365 Exchange Online-Datenlöschung
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Wie weiche und harte Datenlöschungen in Exchange Online verarbeitet werden.
-ms.openlocfilehash: 57b58be5c38e8ba6d0ea219087ccef75cc2c2fca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216915"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004192"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Löschen von Exchange Online-Daten in Office 365
 In Exchange Online gibt es zwei Arten von Löschungen: weiche Löschvorgänge und harte Löschvorgänge. Dies gilt für Postfächer und Elemente innerhalb eines Postfachs.
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>Weiche und gelöschte Postfächer
-Ein Soft-Deleted-Benutzerpostfach ist ein Postfach, das mit dem Office 365 Admin Center oder dem Cmdlet Remove-Mailbox gelöscht wurde und sich noch weniger als 30 Tage im Azure Active Directory-Papierkorb befindet. Ein Postfach kann auf eine der folgenden Arten als "Soft-Deleted" werden:
+Ein Soft-Deleted-Benutzerpostfach ist ein Postfach, das mit dem Microsoft 365 Admin Center oder dem Cmdlet Remove-Mailbox gelöscht wurde und sich noch weniger als 30 Tage im Azure Active Directory-Papierkorb befindet. Ein Postfach kann auf eine der folgenden Arten als "Soft-Deleted" werden:
 - Das zugeordnete Azure Active Directory-Benutzerkonto des Benutzerpostfachs ist Soft-deleted (das Benutzerobjekt befindet sich außerhalb des Bereichs oder im Papierkorb Container).
 - Das zugeordnete Azure Active Directory-Benutzerkonto des Benutzerpostfachs wurde schwer gelöscht, aber das Exchange Online-Postfach befindet sich in einem Rechtsstreit oder einer eDiscovery-Aufbewahrung.
 - Das zugeordnete Azure Active Directory-Benutzerkonto des Benutzerpostfachs wurde innerhalb der letzten 30 Tage bereinigt; bei der es sich um die maximale Aufbewahrungsdauer handelt, wird das Postfach von Exchange Online vor dem endgültigen Löschen und nicht behebbaren Zustand beibehalten.
@@ -38,9 +37,9 @@ Bei einem festgestellten Benutzerpostfach handelt es sich um ein Postfach, das a
 Bei den obigen Lösch Szenarien wird davon ausgegangen, dass sich das Benutzerpostfach nicht in einem der Aufbewahrungs Status befindet, wie beispielsweise Rechtsstreit oder eDiscovery-Speicher. Wenn ein Aufbewahrungs für das Postfach vorhanden ist, kann das Postfach nicht gelöscht werden. Für alle e-Mail-Benutzer Empfängertypen [](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) werden alle Aufbewahrungseinstellungen ignoriert und haben keine Auswirkungen auf Hard-und Löschvorgänge.
 
 ## <a name="soft-deleted-and-hard-deleted-items"></a>Weiche gelöschte und fest gelöschte Elemente
-Wenn ein Benutzer ein Postfachelement (beispielsweise eine e-Mail-Nachricht, einen Kontakt, einen Kalendertermin oder eine Aufgabe) löscht, wird das Element in den Ordner "Wiederherstellbare Elemente" und in einen Unterordner mit dem Namen "Löschungen" verschoben. Dies wird als weiche Löschung bezeichnet. Wie lange gelöschte Elemente im Ordner "Löschungen" aufbewahrt werden, hängt von der Aufbewahrungsdauer des gelöschten Elements ab, die für das Postfach festgelegt ist. Ein Exchange Online-Postfach hält gelöschte Elemente standardmäßig 14 Tage lang, aber Exchange Online-Administratoren können diese Einstellung ändern, um den Zeitraum auf maximal 30 Tage zu verlängern. (Ausführliche Schritte zum Verlängern des Aufbewahrungszeitraums für gelöschte Elemente für ein Exchange Online-Postfach finden Sie unter [ändern, wie lange dauerhaft gelöschte Elemente für ein Exchange Online-Postfach aufbewahrt werden](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).) Benutzer können gelöschte Elemente wiederherstellen oder löschen, bevor die Aufbewahrungszeit für ein gelöschtes Element abläuft. Zu diesem Zweck verwenden Sie die Funktion "Gelöschte Elemente wiederherstellen" in Microsoft Outlook oder Outlook im Web.
+Wenn ein Benutzer ein Postfachelement (beispielsweise eine e-Mail-Nachricht, einen Kontakt, einen Kalendertermin oder eine Aufgabe) löscht, wird das Element in den Ordner "Wiederherstellbare Elemente" und in einen Unterordner mit dem Namen "Löschungen" verschoben. Dies wird als weiche Löschung bezeichnet. Die Aufbewahrungsdauer für gelöschte Elemente im Ordner Löschvorgänge hängt von der Aufbewahrungsdauer für gelöschte Elemente ab, die für das Postfach festgelegt ist. Ein Exchange Online-Postfach hält gelöschte Elemente standardmäßig 14 Tage lang, aber Exchange Online-Administratoren können diese Einstellung ändern, um den Zeitraum auf maximal 30 Tage zu verlängern. (Ausführliche Schritte zum Verlängern des Aufbewahrungszeitraums für gelöschte Elemente für ein Exchange Online-Postfach finden Sie unter [ändern, wie lange dauerhaft gelöschte Elemente für ein Exchange Online-Postfach aufbewahrt werden](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).) Benutzer können gelöschte Elemente wiederherstellen oder löschen, bevor die Aufbewahrungszeit für ein gelöschtes Element abläuft. Zu diesem Zweck verwenden Sie die Funktion "Gelöschte Elemente wiederherstellen" in Microsoft Outlook oder Outlook im Web.
 
-Wenn ein Benutzer ein gelöschtes Element mithilfe des Features "Gelöschte Elemente wiederherstellen" in Outlook oder Outlook im Web löscht, wird dies als harte Löschung bezeichnet. In Exchange Online ist die Wiederherstellung einzelner Elemente standardmäßig aktiviert, wenn ein neues Postfach erstellt wird, sodass ein Administrator die festgestellten Elemente [Wiederherstellen](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/recover-deleted-messages) kann, bevor der Aufbewahrungszeitraum für gelöschte Elemente abgelaufen ist. Wenn eine Nachricht von einem Benutzer oder einem Prozess geändert wird, werden auch Kopien des ursprünglichen Elements beibehalten, wenn die Wiederherstellung einzelner Elemente aktiviert ist.
+Wenn ein Benutzer ein gelöschtes Element mithilfe des Features "Gelöschte Elemente wiederherstellen" in Outlook oder Outlook im Web löscht, wird dies als harte Löschung bezeichnet. In Exchange Online ist die Wiederherstellung einzelner Elemente standardmäßig aktiviert, wenn ein neues Postfach erstellt wird, sodass ein Administrator die festgestellten Elemente [Wiederherstellen](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/recover-deleted-messages) kann, bevor der Aufbewahrungszeitraum für gelöschte Elemente abgelaufen ist. Zudem werden Kopien des ursprünglichen Elements, wenn die Wiederherstellung einzelner Elemente aktiviert ist, beibehalten, sofern die Nachricht durch einen Benutzer oder Prozess geändert wird.
 
 ## <a name="page-zeroing"></a>Unwiderrufliches Löschen
 ** Bei Nullen handelt es sich um einen Sicherheitsmechanismus, der Nullen oder ein binäres Muster über gelöschte Daten schreibt, sodass die Wiederherstellung der gelöschten Daten schwieriger ist. In Exchange Online verwenden Postfachdatenbanken *Seiten* als Speichereinheit und implementieren einen überschreibenden Prozess, der mit dem Namen *Page Zeroing*ausgeführt wird. Das unwiderrufliche Löschen von Seiten ist standardmäßig aktiviert und kann nicht von Kunden oder von Microsoft deaktiviert werden. Die Vorgänge für die Seiten rücknullen werden in den Transaktionsprotokolldateien aufgezeichnet, sodass alle Kopien einer bestimmten Datenbank auf ähnliche Weise auf die Seite gesetzt werden. Wenn Sie eine Seite in einer aktiven Datenbankkopie aufNullieren, wird die Seite für passive Kopien der Datenbank auf NULL gesetzt.
@@ -67,7 +66,7 @@ In der folgenden Tabelle sind die Füllmuster zusammengestellt, die den speziell
 
 
 ### <a name="page-zeroing-process"></a>Prozess zum Löschen von Seiten
-Das Verfahren für das Löschen von Seiten hängt vom Lösch Szenario ab. In der folgenden Tabelle werden die Daten Bank Lösch Szenarien und die Funktion der Seiten rücknullen erläutert.
+Das Verfahren für das Löschen von Seiten hängt vom Lösch Szenario ab. In der folgenden Tabelle ist für verschiedene Datenbanklöschszenarien erläutert, wann Funktionen zum unwiderruflichen Löschen ausgeführt werden.
 
 | Datenbanklöschszenario | ESE-Vorgang und -Zeitrahmen für unwiderrufliches Löschen von Datenbankdaten |
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

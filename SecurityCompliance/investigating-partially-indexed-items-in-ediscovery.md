@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Teilweise indizierte Elemente (auch Aufruf von nicht indizierten Elementen) sind Exchange-Postfachelemente und Dokumente auf SharePoint-und OneDrive-Websites, die aus irgendeinem Grund nicht vollständig für die Inhaltssuche indiziert wurden. In diesem Artikel erfahren Sie, warum Elemente nicht für die Suche indiziert werden können und als teilweise indizierte Elemente zurückgegeben werden, Suchfehler für teilweise indizierte Elemente identifizieren und ein PowerShell-Skript verwenden, um die Exposition ihrer Organisation gegenüber teilweise indizierten e-Mails zu ermitteln. Elemente.
-ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295628"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000888"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Untersuchen von teilweise indizierten Elementen in Office 365 eDiscovery
 
-Eine Inhaltssuche, die Sie im Office 365 Security &amp; Compliance Center ausführen, enthält automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente auf SharePoint-und OneDrive für Business-Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. Die meisten e-Mail-Nachrichten und Website Dokumente werden erfolgreich indiziert, da Sie in die [Indizierungs Grenzen für e-Mail-Nachrichten](limits-for-content-search.md#indexing-limits-for-email-messages)fallen. Einige Elemente können jedoch diese Indizierungs Grenzwerte überschreiten und teilweise indiziert werden. Im folgenden finden Sie weitere Gründe, warum Elemente nicht für die Suche indiziert werden können und beim Ausführen einer Inhaltssuche als teilweise indizierte Elemente zurückgegeben werden:
+Eine Inhaltssuche, die Sie im Security & Compliance Center ausführen, enthält automatisch teilweise indizierte Elemente in den geschätzten Suchergebnissen, wenn Sie eine Suche ausführen. Teilweise indizierte Elemente sind Exchange-Postfachelemente und Dokumente auf SharePoint-und OneDrive für Business-Websites, die aus irgendeinem Grund nicht vollständig für die Suche indiziert wurden. Die meisten e-Mail-Nachrichten und Website Dokumente werden erfolgreich indiziert, da Sie in die [Indizierungs Grenzen für e-Mail-Nachrichten](limits-for-content-search.md#indexing-limits-for-email-messages)fallen. Einige Elemente können jedoch diese Indizierungs Grenzwerte überschreiten und teilweise indiziert werden. Im folgenden finden Sie weitere Gründe, warum Elemente nicht für die Suche indiziert werden können und beim Ausführen einer Inhaltssuche als teilweise indizierte Elemente zurückgegeben werden:
   
 - E-Mail-Nachrichten verfügen über eine angefügte Datei mit einem Dateityp, der nicht indiziert werden kann. in den meisten Fällen wird der Dateityp nicht [erkannt oder für die Indizierung nicht unterstützt](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search) .
     
@@ -37,7 +37,7 @@ Obwohl es unterschiedlich ist, haben die meisten Office 365-Organisationen Kunde
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Warum ändert sich die Anzahl der teilweise indizierten Elemente für eine Suche?
 
-Nachdem Sie eine Inhaltssuche im Office 365 Security &amp; Compliance Center ausgeführt haben, werden die Gesamtanzahl und Größe der teilweise indizierten Elemente an den durchsuchten Speicherorten in den Suchergebnis Statistiken aufgeführt, die in der detaillierten Statistik für die Suche. Hinweis Diese werden als nicht *indizierte Elemente* in der Suchstatistik bezeichnet. Es folgen einige Aspekte, die sich auf die Anzahl der teilweise indizierten Elemente auswirken, die in den Suchergebnissen zurückgegeben werden: 
+Nachdem Sie eine Inhaltssuche im Security & Compliance Center ausgeführt haben, werden die Gesamtanzahl und Größe der teilweise indizierten Elemente an den durchsuchten Speicherorten in den Suchergebnis Statistiken aufgeführt, die in der detaillierten Statistik für die Suche angezeigt werden. Hinweis Diese werden als nicht *indizierte Elemente* in der Suchstatistik bezeichnet. Es folgen einige Aspekte, die sich auf die Anzahl der teilweise indizierten Elemente auswirken, die in den Suchergebnissen zurückgegeben werden: 
   
 - Wenn ein Element teilweise indiziert ist und mit der Suchabfrage übereinstimmt, ist es sowohl in der Anzahl (als auch in der Größe) von Suchergebnis Elementen und teilweise indizierten Elementen enthalten. Wenn jedoch die Ergebnisse derselben Suche exportiert werden, wird das Element nur mit der Gruppe der Suchergebnisse eingeschlossen. Sie ist nicht als teilweise indiziertes Element enthalten.
     
@@ -122,7 +122,7 @@ In den folgenden Schritten wird gezeigt, wie Sie ein PowerShell-Skript ausführe
 
 ```
   write-host "**************************************************"
-  write-host "     Office 365 Security &amp; Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "**************************************************"
   " " 
@@ -164,9 +164,9 @@ In den folgenden Schritten wird gezeigt, wie Sie ein PowerShell-Skript ausführe
   
 ```
    
-2. Stellen [Sie eine Verbindung mit &amp; der Office 365 Security Compliance Center-PowerShell her](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. Stellen [Sie eine Verbindung mit Security _AMP_ Compliance Center PowerShell her](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
-3. Wechseln Sie &amp; im Security Compliance Center PowerShell zu dem Ordner, in dem Sie das Skript in Schritt 1 gespeichert haben, und führen Sie das Skript aus; Zum Beispiel:
+3. Wechseln Sie im Security & Compliance Center PowerShell zu dem Ordner, in dem Sie das Skript in Schritt 1 gespeichert haben, und führen Sie das Skript aus; Zum Beispiel:
 
     ```
     .\PartiallyIndexedItems.ps1

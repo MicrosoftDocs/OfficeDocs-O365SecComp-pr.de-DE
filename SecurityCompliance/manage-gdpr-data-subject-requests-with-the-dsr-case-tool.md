@@ -1,5 +1,5 @@
 ---
-title: Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Office 365 &amp; Security Compliance Center
+title: Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Security & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: Der DSGVO gibt EU-Bürgern (als betroffene Personen bezeichnet) spezifische Rechte für Ihre persönlichen Daten; zu diesen Rechten gehört das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen in einem elektronischen Format. Eine formelle Anforderung durch eine betroffene Person, eine Aktion zu Ihren personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Office 365 Security &amp; Compliance Center verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
-ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Der DSGVO gibt EU-Bürgern (als betroffene Personen bezeichnet) spezifische Rechte für Ihre persönlichen Daten; zu diesen Rechten gehört das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen in einem elektronischen Format. Eine formelle Anforderung durch eine betroffene Person, eine Aktion zu Ihren personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
+ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900144"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000108"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Office 365 &amp; Security Compliance Center
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Security & Compliance Center
 
 Bei der EU-allgemeinen Datenschutzverordnung (DSGVO) geht es um den Schutz und die Aktivierung der Datenschutz Rechte der einzelnen Personen innerhalb der Europäischen Union (EU). Das DSGVO gibt Personen in der Europäischen Union (als betroffene bezeichnet) das Recht, Ihre personenbezogenen Daten zu öffnen, abzurufen, zu korrigieren, zu löschen und zu verbieten. Personenbezogene Daten sind unter dem DSGVO alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Eine formelle Anfrage einer Person an Ihre Organisation, eine Aktion zu Ihren personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Ausführliche Informationen zur Reaktion auf DSRs für Daten in Office 365 finden Sie unter [office 365 Data Subject Request Guide](https://go.microsoft.com/fwlink/?linkid=871169 ).
   
-Um Untersuchungen als Reaktion auf einen von einer Person in Ihrer Organisation übermittelten DSR zu verwalten, können Sie das DSR Case Tool im &amp; Office 365 Security Compliance Center verwenden, um Inhalte zu finden, die in gespeichert sind:
+Um Untersuchungen als Reaktion auf einen DSR zu verwalten, der von einer Person in Ihrer Organisation übermittelt wurde, können Sie das DSR Case Tool im Security & Compliance Center verwenden, um Inhalte zu finden, die in:
   
 - Jedes Benutzerpostfach in Ihrer Organisation. Dazu gehören Skype for Business-Unterhaltungen und eins-zu-eins-Chats in Microsoft Teams.
     
@@ -42,7 +42,7 @@ Mit dem DSR Case Tool können Sie Folgendes tun:
   
 - Erstellen Sie eine separate Anfrage für jede Untersuchung einer Anforderung einer betroffenen Person.
     
-- Steuern, wer Zugriff auf den DSR-Fall hat, indem Personen als Mitglieder des Falls hinzugefügt werden; nur Mitglieder können auf den Fall zugreifen und können ihre Fälle nur in der Liste der Fälle auf der Seite mit den **DSR** -Fällen &amp; im Security Compliance Center anzeigen. Darüber hinaus können Sie verschiedenen Mitgliedern des gleichen falls unterschiedliche Berechtigungen zuweisen. Sie können beispielsweise zulassen, dass einige Mitglieder nur die Groß-/Kleinschreibung und Suchergebnisse anzeigen und anderen Mitgliedern die Suche und den Export von Suchergebnissen gestatten. 
+- Steuern, wer Zugriff auf den DSR-Fall hat, indem Personen als Mitglieder des Falls hinzugefügt werden; nur Mitglieder können auf den Fall zugreifen und können ihre Fälle nur in der Liste der Fälle auf der Seite mit den **DSR-Fällen** im Security _AMP_ Compliance Center anzeigen. Darüber hinaus können Sie verschiedenen Mitgliedern des gleichen falls unterschiedliche Berechtigungen zuweisen. Sie können beispielsweise zulassen, dass einige Mitglieder nur die Groß-/Kleinschreibung und Suchergebnisse anzeigen und anderen Mitgliedern die Suche und den Export von Suchergebnissen gestatten. 
     
 - Verwenden Sie die integrierte Suche, um nach allen Inhalten zu suchen, die von einem bestimmten Datensubjekt erstellt oder hochgeladen wurden.
     
@@ -73,20 +73,20 @@ Hier ist der allgemeine Prozess für die Verwendung des DSR-Fall Tools zur Verwa
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern
 
-Standardmäßig kann ein globaler Office 365-Administrator im Security &amp; Compliance Center auf das DSR Case-Tool zugreifen. Andere Benutzer wie ein Datenschutzbeauftragter, ein Personalleiter oder andere an den DSR-Untersuchungen beteiligte Personen haben keinen Zugriff auf das DSR-Fall Tool und müssen über die entsprechenden Berechtigungen für den Zugriff auf das Tool verfügen. Am einfachsten können Sie dies tun, indem Sie zur Seite **Berechtigungen** im Security &amp; Compliance Center wechseln und Benutzer zur eDiscovery-Manager-Rollengruppe hinzufügen. Beachten Sie, dass Sie diese Berechtigungen auch zuweisen müssen, damit Sie als Mitglieder des in Schritt 2 erstellten DSR-Falls hinzugefügt werden können. 
+Standardmäßig kann ein globaler Office 365-Administrator im Security & Compliance Center auf das DSR Case Tool zugreifen. Andere Benutzer wie ein Datenschutzbeauftragter, ein Personalleiter oder andere an den DSR-Untersuchungen beteiligte Personen haben keinen Zugriff auf das DSR-Fall Tool und müssen über die entsprechenden Berechtigungen für den Zugriff auf das Tool verfügen. Am einfachsten können Sie dies tun, indem Sie zur Seite **Berechtigungen** im Security _AMP_ Compliance Center wechseln und Benutzer zur EDiscovery-Manager-Rollengruppe hinzufügen. Beachten Sie, dass Sie diese Berechtigungen auch zuweisen müssen, damit Sie als Mitglieder des in Schritt 2 erstellten DSR-Falls hinzugefügt werden können. 
   
-Schrittweise Anleitungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
+Schrittweise Anleitungen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security _AMP_ Compliance Center](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> Standardmäßig verfügen ein globaler Office 365-Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im &amp; Security Compliance Center nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen (siehe Schritt 4 in diesem Artikel). Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der eDiscovery-Manager-Rollengruppe hinzufügen. 
+> Standardmäßig verfügen ein globaler Office 365-Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen (siehe Schritt 4 in diesem Artikel). Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der eDiscovery-Manager-Rollengruppe hinzufügen. 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>Schritt 2: Erstellen eines DSR-Falls und Hinzufügen von Mitgliedern
 
 Der nächste Schritt besteht darin, einen DSR-Fall zu erstellen. Wenn Sie einen Fall erstellen, können Sie die integrierte Suche starten, oder Sie können den Fall erstellen, ohne die Suche zu starten. Im folgenden Verfahren werden Sie aufgefordert, den Fall zu erstellen, ohne die Suche zu starten, und dann zu zeigen, wie Sie der Groß-/Kleinschreibung Mitglieder hinzufügen.
   
-1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto an. 
+1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto an. 
     
-2. Klicken Sie im &amp; Security Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken ![Sie dann](media/ITPro-EAC-AddIcon.gif) auf Symbol hinzufügen **neuer DSR-Fall**.
+2. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken ![Sie dann](media/ITPro-EAC-AddIcon.gif) auf Symbol hinzufügen **neuer DSR-Fall**.
     
 3. Geben Sie auf der Seite **Neues DSR-Fall** Flyout den Fall einen Namen ein, geben Sie eine optionale Beschreibung ein, und klicken Sie dann auf **weiter**. Beachten Sie, dass der Name des Falls in Ihrer Organisation eindeutig sein muss.
     
@@ -145,7 +145,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **So führen Sie die integrierte Suche nach einem DSR-Fall aus:**
   
-1. Klicken Sie im &amp; Security Compliance Center auf **Datenschutz** \> **Antragsteller-Anforderungen**, und klicken Sie dann neben dem in Schritt 2 erstellten DSR-Fall auf **Öffnen** . 
+1. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken Sie dann neben dem in Schritt 2 erstellten DSR-Fall auf **Öffnen** . 
     
     Klicken Sie oben auf der Seite auf die Registerkarte **Suchen** , und klicken Sie dann auf das Kontrollkästchen neben der integrierten Suche, die beim Erstellen des neuen DSR-Falls erstellt wurde. Hinweis die Suche hat den gleichen Namen wie der DSR-Fall. 
     
@@ -164,10 +164,10 @@ Sie können die integrierte Suchabfrage bearbeiten, die durchsuchten inhaltsspei
 
 Nachdem Sie die integrierte Suche ausgeführt haben, können Sie die Suchergebnisse exportieren. Alternativ können Sie, bevor Sie die Daten exportieren, die Abfrage überarbeiten, um die Anzahl der Suchergebnisse zu reduzieren. Weitere Informationen zum Einschränken der Suchergebnisse finden Sie in Schritt 5.
   
-Wenn Sie Suchergebnisse exportieren, können Postfachelemente in PST-Dateien oder als einzelne Nachrichten heruntergeladen werden. Wenn Sie Inhalte aus SharePoint-und OneDrive-Konten exportieren, werden Kopien von systemeigenen Office-Dokumenten und anderen Dokumenten exportiert. Eine Ergebnisdatei, die Informationen zu jedem exportierten Element enthält, ist auch in den Suchergebnissen enthalten. Ausführlichere Informationen zum Exportieren finden Sie unter [Exportieren von Inhalts Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md).
+Wenn Sie Suchergebnisse exportieren, können Postfachelemente in PST-Dateien oder als einzelne Nachrichten heruntergeladen werden. Wenn Sie Inhalte aus SharePoint-und OneDrive-Konten exportieren, werden Kopien von systemeigenen Office-Dokumenten und anderen Dokumenten exportiert. Eine Ergebnisdatei, die Informationen zu jedem exportierten Element enthält, ist auch in den Suchergebnissen enthalten. Ausführlichere Informationen zum Exportieren finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).
   
 > [!NOTE]
-> Standardmäßig verfügen ein globaler Office 365-Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im &amp; Security Compliance Center) nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen. Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der eDiscovery-Manager-Rollengruppe hinzufügen. 
+> Standardmäßig verfügen ein globaler Office 365-Administrator (oder andere Mitglieder der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center) nicht über die erforderlichen Berechtigungen zum Exportieren von Inhalts Suchergebnissen. Um dies zu beheben, kann ein Administrator sich selbst als Mitglied der eDiscovery-Manager-Rollengruppe hinzufügen. 
   
 Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Systemanforderungen erfüllen:
   
@@ -188,7 +188,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
   
  **So exportieren Sie Daten aus der integrierten Suche in einem DSR-Fall:**
   
-1. Klicken Sie im &amp; Security Compliance Center auf **Datenschutz** \> **Antragsteller-Anforderungen**, und klicken Sie dann neben dem DSR-Fall, für den Sie Daten exportieren möchten, auf **Öffnen** . 
+1. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken Sie dann neben dem DSR-Fall, für den Sie Daten exportieren möchten, auf **Öffnen** . 
     
 2. Klicken Sie oben auf der Seite auf die Registerkarte **Suchen** , und klicken Sie dann auf das Kontrollkästchen neben der integrierten Suche, die beim Erstellen des DSR-Falls erstellt wurde. Oder klicken Sie auf eine andere Suche, um Daten aus dieser Suche zu exportieren. 
     
@@ -229,7 +229,7 @@ Der Computer, den Sie zum Exportieren von Daten verwenden, muss die folgenden Sy
   
 13. Klicken Sie zum Herunterladen der Suchergebnisse auf Ihren Computer auf **Starten**. 
     
-    Das **eDiscovery-Export Tool** zeigt Statusinformationen zum Exportvorgang an, einschließlich einer Schätzung der Anzahl (und der Größe) der verbleibenden zu ladenden Elemente. Nach Abschluss des Exportvorgangs können Sie auf die Dateien am Speicherort zugreifen, an dem Sie heruntergeladen wurden. Weitere Informationen zu den Berichten, die beim Herunterladen von Inhalts Suchergebnissen enthalten sind, finden Sie im Abschnitt " [Weitere Informationen](export-search-results.md#more-information) unter" Exportieren von Inhalts Suchergebnissen &amp; aus dem Office 365 Security Compliance Center ". 
+    Das **eDiscovery-Export Tool** zeigt Statusinformationen zum Exportvorgang an, einschließlich einer Schätzung der Anzahl (und der Größe) der verbleibenden zu ladenden Elemente. Nach Abschluss des Exportvorgangs können Sie auf die Dateien am Speicherort zugreifen, an dem Sie heruntergeladen wurden. Weitere Informationen zu den Berichten, die beim Herunterladen von Inhalts Suchergebnissen enthalten sind, finden Sie im Abschnitt [Weitere Informationen](export-search-results.md#more-information) unter "Exportieren von Inhalts Suchergebnissen". 
     
 Nachdem die Daten exportiert wurden, befinden sich die Suchergebnisse und Export Berichte in einem Ordner mit dem Namen des DSR-Falls. Die PST-Dateien, die Postfachelemente enthalten, befinden sich in einem Unterordner mit dem Namen **Exchange**. Dokumente und andere Elemente aus Websites befinden sich in einem Unterordner mit dem Namen **SharePoint**. 
   
@@ -304,7 +304,7 @@ Wenn Sie Daten aus myAnalytics und dem Office Server-Roaming-Dienst exportieren,
    
  **So suchen und exportieren Sie die Daten von myAnalytics und Office-Roamingdienst:**
   
-1. Klicken Sie im &amp; Security Compliance Center auf **Datenschutz** \> **Antragsteller-Anforderungen**, und klicken Sie dann neben dem DSR-Fall für die betroffene Person, für die Sie Verwendungsdaten exportieren möchten, auf **Öffnen** . 
+1. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken Sie dann neben dem DSR-Fall für die betroffene Person, für die Sie Verwendungsdaten exportieren möchten, auf **Öffnen** . 
     
 2. Klicken Sie oben auf der Seite auf die Registerkarte **Suchen** , und klicken ![Sie dann](media/ITPro-EAC-AddIcon.gif) auf Symbol **gesteuerte Suche**hinzufügen.
     

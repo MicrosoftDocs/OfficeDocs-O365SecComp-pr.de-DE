@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Verwenden Sie die neue intelligente Importfunktion im Office 365-Import Dienst, um die Elemente zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Mit dem intelligenten Import können Sie proaktiv entscheiden, welche Daten importiert und welche hinterlassen werden sollen. Der intelligente Import bietet außerdem Einblicke in die Daten, die Sie in Office 365 importieren. '
-ms.openlocfilehash: 60177908f48c6de28578f8d8ba6329fb1bf8cb47
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900034"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999478"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtern von Daten beim Importieren von PST-Dateien in Office 365
 
@@ -51,7 +51,7 @@ Die folgende Grafik zeigt den intelligenten Import Prozess und hebt die Aufgaben
     
   - [Verwenden des Laufwerkversands zum Importieren von PST-Dateien in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- Nachdem Sie einen Importauftrag mithilfe des Netzwerk Uploads erstellt haben, ist der Status für den Importauftrag auf der Seite "Importieren &amp; " in Office 365 Security Compliance Center auf " **Analyse wird ausgeführt**" festgelegt, was bedeutet, dass Office 365 die Daten in den PST-Dateien analysiert, die Sie geladen. Klicken Sie auf](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Refresh aktualisieren, um den Status für den Importauftrag zu aktualisieren. ****![ 
+- Nachdem Sie einen Importauftrag mithilfe des Netzwerk Uploads erstellt haben, ist der Status für den Importauftrag auf der Seite "Importieren" im Security & Compliance Center auf " **Analyse wird ausgeführt**" festgelegt, was bedeutet, dass Office 365 die Daten in den hochgeLADENen PST-Dateien analysiert. Klicken Sie auf](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Refresh aktualisieren, um den Status für den Importauftrag zu aktualisieren. ****![ 
     
 - Bei Import Aufträgen für den Laufwerk Versand werden die Daten von Office 365 analysiert, nachdem Microsoft-Rechenzentrumsmitarbeiter Ihre Festplatte erhalten und die PST-Dateien in den Azure-Speicherbereich für Ihre Organisation hochgeladen haben.
   
@@ -59,9 +59,9 @@ Die folgende Grafik zeigt den intelligenten Import Prozess und hebt die Aufgaben
 
 Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Schritte aus, um die Daten zu filtern, bevor Sie Sie in Office 365 importieren.
   
-1. Wechseln Sie [https://protection.office.com/](https://protection.office.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://compliance.microsoft.com/](https://compliance.microsoft.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
-2. klicken sie im linken bereich des Office 365 Security &amp; Compliance centers auf **Data governance** \> - **Import**.
+2. Klicken Sie auf **Data Governance** \> - **Import**.
     
     Die Importaufträge für Ihre Organisation werden auf der Seite **importieren** aufgeführt. Beachten Sie, dass der Wert **Analyse abgeschlossen** in der Spalte **Status** die Importaufträge angibt, die von Office 365 analysiert wurden und für den Import bereit sind. 
     

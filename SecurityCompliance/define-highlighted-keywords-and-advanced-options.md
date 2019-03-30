@@ -1,9 +1,8 @@
 ---
-title: Definieren von hervorgehobenen Schlüsselwörtern und erweiterten Optionen in Office 365 Advanced eDiscovery
+title: Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Erfahren Sie, wie Sie benutzerdefinierte Schlüsselwörter zu Relevanz hinzufügen, um relevante Dateien beim Tagging in Office 365 Advanced eDiscovery und zum Angeben von Kostenparametern zu identifizieren.  '
-ms.openlocfilehash: e380f63691d30216a082a51aac406329a9d0159f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220655"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999338"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren von hervorgehobenen Schlüsselwörtern und erweiterten Optionen in Office 365 Advanced eDiscovery
+# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -46,11 +45,11 @@ Wie unten beschrieben, können Stichwortlisten hinzugefügt werden, und Farben, 
     
 6. Geben Sie in **Beschreibung**die Liste Stichwörter (optional) ein.
     
-    ![Neue Schlüsselwörter hinzufügen](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
+    ![Hinzufügen neuer Schlüsselwörter](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
 7. Klicken Sie auf **OK** , wenn Sie fertig sind. Die erstellte Liste wird der Liste der Schlüsselwörter hinzugefügt und kann bearbeitet oder gelöscht werden. 
     
-    ![Liste der Relevanzeinrichtungsschlüsselwörter](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
+    ![Keyword-Liste für Relevanz-Setup](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
 Die benutzerdefinierten Schlüsselwörter werden im angegebenen Colors- \> Tag angezeigt. 
   
@@ -66,7 +65,7 @@ Diese Einstellungen wirken sich auf die Spur-und Entscheidungsdiagramme aus.
     
 2. Wählen Sie in der Liste **Anzahl der überprüften Dateien pro Stunde** den Betrag aus, oder übernehmen Sie den Standardwert. 
     
-    ![Kostenparameter für Relevanzeinrichtung](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
+    ![Kosten Parameter für Relevanz-Setup](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
 3. Klicken Sie auf **Speichern**. Die ausgewählten Einstellungen werden gespeichert.
     

@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren erfahren mehr über die Fehlerbehebung der Absenderdomäne im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center.
+description: Administratoren erfahren mehr über die Fehlerbehebung der Absenderdomäne im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d98d2a2660c24a77db58215faa0de1a4a18ea1a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722882"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000308"
 ---
 # <a name="fix-sender-domain-insight"></a>Beheben von Absenderdomänen Einblicken
 
@@ -38,7 +38,7 @@ Nachrichten, die die Kriterien nicht erfüllen, werden der Organisation nicht zu
 
 Die Einblicke in die **Absenderdomäne von Fix** zeigen Ihnen e-Mails von Ihrer lokalen Umgebung, die nicht den Kriterien entsprechen, hilft Ihnen bei der Identifizierung potenziell gefährdeter Computer und Benutzerkonten in Ihrer lokalen e-Mail-Umgebung und unterstützt Sie bei der Durchführung Korrekturaktionen.
 
-![Die FehlerbeHebung der Absenderdomäne im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](media/sender-domain-insight-selected.png)
+![Die FehlerbeHebung der Absenderdomäne im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/sender-domain-insight-selected.png)
 
 Wenn Sie auf **Details anzeigen**klicken, werden Sie zu einem anderen Widget mit weiteren Details geführt, wie im folgenden Diagramm dargestellt:
 

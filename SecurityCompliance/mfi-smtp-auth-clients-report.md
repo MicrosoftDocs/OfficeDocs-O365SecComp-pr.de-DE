@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Bericht SMTP-AUTH-Clients im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
+description: Administratoren erfahren mehr über den Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0444ef85df8e7e26619f1af59cc90b6ab2a06460
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722889"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998708"
 ---
 # <a name="smtp-auth-clients-report"></a>Bericht über SMTP-AUTH-Clients
 
@@ -26,7 +26,7 @@ Im Bericht **SMTP AUTH Clients** wird die Verwendung des SMTP-AUTH-Client Überm
 
 Das im e-Mail-Fluss-Dashboard angezeigte Widget gibt die Anzahl der Benutzer oder Dienstkonten an, die das SMTP-Authentifizierungsprotokoll in den letzten 7 Tagen verwendet haben.
 
-![Der Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Office 365 Security & Compliance Center](media/smtp-auth-clients-report-selected.png)
+![Der Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/smtp-auth-clients-report-selected.png)
 
 Wenn Sie auf das Widget klicken, wird ein Flyout geöffnet, das eine aggregierte Ansicht der TLS-Nutzung und-Volumes für die letzte Woche bereitstellt.
 

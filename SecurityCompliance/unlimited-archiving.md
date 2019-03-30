@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über die automatische Erweiterung der Archivierung in Office 365, die unbegrenzten Archivspeicher für Exchange Online-Postfächer bereitstellt.
-ms.openlocfilehash: 4ed1260cdf348d0bd29d88952ab69d234f044c26
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296648"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000788"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die unbegrenzte Archivierung in Office 365
 
@@ -29,7 +29,7 @@ In Office 365 stellen Archivpostfächer Benutzern zusätzlichen Speicherplatz zu
 Schrittweise Anleitungen zum Aktivieren der automatischen Erweiterung der Archivierung finden Sie unter [enable Unlimited Archiving in Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> Die automatisch wachsende Archivierung unterstützt auch freigegebene Postfächer. Zum Aktivieren des Archivs für ein freigegebenes Postfach ist eine Exchange Online-Lizenz für den Plan 2 oder eine Exchange Online-Plan 1-Lizenz mit einer Exchange Online-Archivierungslizenz erforderlich. 
+> Die Archivierung mit automatischer Erweiterung unterstützt auch freigegebene Postfächer. Zum Aktivieren des Archivs für ein freigegebenes Postfach ist eine Exchange Online-Lizenz für den Plan 2 oder eine Exchange Online-Plan 1-Lizenz mit einer Exchange Online-Archivierungslizenz erforderlich. 
   
 ## <a name="how-auto-expanding-archiving-works"></a>FunktionsWeise der automatischen Erweiterung der Archivierung
 
@@ -97,7 +97,7 @@ In diesem Abschnitt wird die Funktionalität zwischen der automatischen Erweiter
   
 - **eDiscovery** -Wenn Sie ein Office 365 eDiscovery-Tool wie Inhaltssuche oder in-Place eDiscovery verwenden, werden auch die zusätzlichen Speicherbereiche in einem automatisch erweiterten Archiv durchsucht.
     
-- **Aufbewahrung** – Wenn Sie ein Postfach mithilfe von Tools wie der Beweissicherung in Exchange Online oder eDiscovery Case Holds und Aufbewahrungsrichtlinien im Office 365 Security _AMP_ Compliance Center halten, werden Inhalte, die sich in einem automatisch erweiterten Archiv befinden, auch in der Warteschleife gehalten.
+- **Aufbewahrung** – Wenn Sie ein Postfach mithilfe von Tools wie der Beweissicherung in Exchange Online oder eDiscovery-Fällen und Aufbewahrungsrichtlinien im Security and Compliance Center halten, werden auch Inhalte in einem automatisch erweiterten Archiv gespeichert.
     
 - **Messaging Records Management (MRM)** – Wenn Sie in Exchange Online MRM-Löschrichtlinien verwenden, um abgelaufene Postfachelemente dauerhaft zu löschen, werden auch abgelaufene Elemente im automatisch erweiterten Archiv gelöscht.
     

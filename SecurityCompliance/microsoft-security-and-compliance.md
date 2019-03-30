@@ -11,18 +11,18 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Machen Sie sich bereit für das neue Microsoft 365 Security Center und das Compliance Center.
-ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935200"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000688"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center sind jetzt allgemein verfügbar
 
 **Wir freuen uns, Ihnen mitzuteilen, dass das neue [Microsoft 365 Security Center](#microsoft-365-security-center) und das [Microsoft 365 Compliance Center](#microsoft-365-compliance-center)** jetzt allgemein verfügbar sind. Lesen Sie diesen Artikel, um einen Überblick über Neuigkeiten, [Erwartungen](#what-to-expect)und [erforderliche Lizenzen und Berechtigungen](#required-licenses-and-permissions)zu erhalten.
 
-## <a name="microsoft-365-security-center"></a>Microsoft 365-Sicherheitscenter
+## <a name="microsoft-365-security-center"></a>Microsoft 365 Security Center
 
 Ihr neues [Microsoft 365 Security Center](overview-security-center.md) enthält ein Dashboard, das Sie bei der Verwaltung und Überwachung der Sicherheit für Ihre Identitäten, Daten, Geräte, Apps und Infrastruktur unterstützt. Sie haben auch einfachen Zugriff auf ihre vollständig neuen [Microsoft Secure Score](microsoft-secure-score.md)-, neuen Device Threat-Berichte, neue Berichte zur Identitäts Bedrohung und ihre Sicherheitsberichte zur Cloud-app. 
 
@@ -70,7 +70,7 @@ Wenn in Ihrer Organisation Microsoft 365 Enterprise E3 oder E5 zur Verfügung st
 - Wechseln Sie zum Microsoft 365 Admin Center, und navigieren Sie dann zum neuen Microsoft 365 Security Center und Microsoft 365 Compliance Center (Links befinden sich unter Admin Center im linken Navigationsbereich).
 
 > [!TIP]
-> Wenn Sie das Office 365 Security & Compliance Center ([https://protection.office.com](http://protection.office.com)) verwenden, können Sie weiterhin ihre Office 365-Einstellungen in Ihrem vorhandenen Office 365 Security _AMP_ Compliance Center konfigurieren und verwalten. Konfigurationen werden im vorhandenen Office 365 Security & Compliance Center sowie im neuen Microsoft 365 Security Center und im Microsoft 365 Compliance Center verwaltet.  
+> Wenn Sie das Office 365 Security & Compliance Center ([https://protection.office.com](http://protection.office.com)) verwenden, können Sie weiterhin ihre Office 365-Einstellungen in Ihrem vorhandenen Security _AMP_ Compliance Center konfigurieren und verwalten. Konfigurationen werden im vorhandenen Security & Compliance Center sowie im neuen Microsoft 365 Security Center und im Microsoft 365 Compliance Center verwaltet.  
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
@@ -92,8 +92,8 @@ In der folgenden Tabelle wird zusammengefasst, wer über Azure, Office 365 und W
 
 |Portal |Globaler Administrator |Sicherheits Administrator, Sicherheits Operator oder Sicherheits Leser|Compliance-Administrator oder Compliance-Datenadministrator |
 |---------|---------|---------|---------|
-|[Office 365 Security & Compliance Center](https://protection.office.com) |Ja |Ja  |Ja |
-|[Microsoft 365-Sicherheitscenter](https://security.microsoft.com) |Ja  | Ja  | Nein        |
+|[Security & Compliance Center](https://protection.office.com) |Ja |Ja  |Ja |
+|[Microsoft 365 Security Center](https://security.microsoft.com) |Ja  | Ja  | Nein        |
 |[Microsoft 365 Compliance Center](https://compliance.microsoft.com) | Ja | Nein | Ja |
 |[Compliance-Manager](https://aka.ms/compliancemanager) |Ja | Ja |Ja  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Ja |Ja |Nein |

@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Administratoren können sich über Warteschlangen Warnungen und Warteschlangen im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
-ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Administratoren können sich über Warteschlangen Warnungen und Warteschlangen im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
+ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720305"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998608"
 ---
 # <a name="queue-alerts-and-queues"></a>Warteschlangenwarnungen und Warteschlangen
 
@@ -30,7 +30,7 @@ In Office 365 wird die Übermittlung für 48 Stunden fortgesetzt. Nach 48 Stunde
 
 Wenn der e-Mail-Datenträger in der Warteschlange den vordefinierten Schwellenwert überschreitet (standardmäßig 2000 Nachrichten), stehen die Warnungen im e-Mail-Fluss-Dashboard unter **Aktuelle Benachrichtigungen**zur Verfügung, und Administratoren erhalten eine e-Mail-Benachrichtigung (an Ihre alternative e-Mail-Adresse) . Informationen zum Konfigurieren des warnungsschwellenwerts, des täglichen Benachrichtigungslimits und/oder der Empfänger der Warnung finden Sie im Abschnitt **Anpassen der Warteschlangen Warnungen** weiter unten.
 
-![Warteschlangen Warnungen im Bereich "zuletzt verwendete Benachrichtigungen" des e-Mail-Fluss-Dashboards im Office 365 Security & Compliance Center](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![Warteschlangen Warnungen im Bereich "zuletzt verwendete Benachrichtigungen" des e-Mail-Fluss-Dashboards im Security & Compliance Center](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
 ## <a name="customize-queue-alerts"></a>Anpassen von Warteschlangen Warnungen
 
@@ -50,13 +50,13 @@ Das Blattinformationen wird in die **Richtlinie bearbeiten**geändert. Sie könn
 
 Wenn Sie auf die Benachrichtigung klicken, werden die Warnungsdetails in einem Flyout-Bereich angezeigt.
 
-![Wählen Sie im Bereich "zuletzt verwendete Benachrichtigungen" im e-Mail-Fluss-Dashboard im Office 365 Security & Compliance Center eine Warteschlangen Warnung aus.](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+![Wählen Sie im Bereich "zuletzt verwendete Benachrichtigungen" im e-Mail-Fluss-Dashboard im Security & Compliance Center eine Warteschlangen Warnung aus.](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![Das Flyout "Queue Alert Details" im Office 365 Security & Compliance Center](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![Das Flyout "Queue Alert Details" im Security & Compliance Center](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
 Sie können in den Warnungsdetails auf **Warteschlange anzeigen** klicken, um die Warteschlangendetails, Probleme und Links zu den verfügbaren Fixes in einem neuen Flyoutbereich anzuzeigen.
 
-![Das Flyout "Queue Alert Details" im Office 365 Security & Compliance Center](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![Das Flyout "Queue Alert Details" im Security & Compliance Center](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
 ![Warteschlange in den Warnungsdetails anzeigen](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
@@ -64,7 +64,7 @@ Sie können in den Warnungsdetails auf **Warteschlange anzeigen** klicken, um di
 
 Auch wenn der Nachrichten Datenträger in der Warteschlange den Schwellenwert nicht überschreitet, können Sie Nachrichten, die länger als eine Stunde in die Warteschlange eingereiht wurden, weiterhin im Bereich **Warteschlangen** des Nachrichtenflusses verwenden. Sie können den Bereich **warte** Schlangen verwenden, um die Anzahl der Nachrichten in der Warteschlange zu überwachen (der Wert 0 gibt an, dass der Nachrichtenfluss in Ordnung ist) und Maßnahmen zu ergreifen, bevor die Anzahl der Nachrichten in der Warteschlange zu hoch
 
-![Warteschlangen im Nachrichtenübermittlungs-Dashboard im Office 365 Security & Compliance Center](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Warteschlangen im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
 Wenn Sie auf die Anzahl der Warteschlangen Nachrichten in **warte**Schlangen klicken, werden die Warteschlangendetails und Anleitungen zur Behebung des Problems in einem Flyout-Bereich angezeigt (dasselbe Flyout, das angezeigt wird, nachdem Sie in den Details einer Warteschlangen Warnung auf **Warteschlange anzeigen** klicken).
 

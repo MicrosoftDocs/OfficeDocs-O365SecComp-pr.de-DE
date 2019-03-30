@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Informationen zum Ausführen des Express Analysemodus von Office 365 Advanced eDiscovery
-ms.openlocfilehash: e306aa03962c646ce4083b7385e527b523e86fd6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217625"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000958"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Verwenden der Express-Analyse in Office 365 Advanced eDiscovery
 
@@ -101,18 +101,18 @@ Optional können Sie **Erweiterte Einstellungen** festlegen, um die standardmä�
     
   - Wenn Sie Ergebnisse für neue Dateien exportieren möchten, die Sie einem vorhandenen Fall hinzugefügt haben, fahren Sie mit dem aktuellen Batch fort. Um eine Sitzung im Batch zu erstellen, wählen Sie dieselbe Batchnummer aus, und klicken Sie auf **Export Sitzung erstellen** mit dieser Option können Sie die gleichen Parameter wie im vorherigen Batch inkrementell exportieren. 
     
-  - Um in einen neuen Batch zu exportieren, klicken Sie auf](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) hinzufügen Symbol **Hinzufügen**![, und geben Sie einen neuen Namen in den **batchnamen** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
+  - Um in einen neuen Batch zu exportieren, klicken Sie auf](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) hinzufügen Symbol **Hinzufügen** ![, und geben Sie einen neuen Namen in den **batchnamen** ein (oder übernehmen Sie den Standardwert) und eine Beschreibung in der **Batch Beschreibung**. Klicken Sie auf **OK**.
     
   - Wenn Sie einen batchnamen oder eine Beschreibung bearbeiten möchten, wählen Sie den Namen unter **Export Batch**aus](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![, und ändern Sie dann die Felder.
     
     > [!NOTE]
     > Nachdem Sie Sitzungen für einen Export Batch ausgeführt haben, können diese nicht gelöscht werden. Darüber hinaus können nur einige Parameter bearbeitet werden, nachdem die erste Sitzung ausgeführt wurde. 
   
-  - Wenn Sie einen doppelten Export Batch erstellen möchten, wählen Sie **Duplicate**![Export Batch Create a Duplicate](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Export Batch Icon aus, und geben Sie im Bereich einen Namen und eine Beschreibung für den doppelten Batch ein. 
+  - Wenn Sie einen doppelten Export Batch erstellen möchten, wählen Sie **Duplicate** ![Export Batch Create a Duplicate](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) Export Batch Icon aus, und geben Sie im Bereich einen Namen und eine Beschreibung für den doppelten Batch ein. 
     
-  - Wenn Sie einen Export Batch löschen möchten ****![, klicken Sie auf Löschen eines](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Export Batch-Symbols.
+  - Wenn Sie einen Export Batch löschen möchten **** ![, klicken Sie auf Löschen eines](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)Export Batch-Symbols.
     
-  - Um den Verlauf eines Batches anzuzeigen, wählen ****![Sie Verlaufs Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für den Stapelverarbeitungs Verlauf.
+  - Um den Verlauf eines Batches anzuzeigen, wählen **** ![Sie Verlaufs Symbol](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)für den Stapelverarbeitungs Verlauf.
     
 2. Klicken Sie unter define p **Bevölkerung:** wählen Sie **nur Dateien über Relevanz Cut-Off** und/oder **Export Batch verfeinern** , wenn Sie die Einstellungen für Ihren Export Batch optimieren möchten. Wenn Sie **nur Dateien über Relevanz Cut-Off-Wert einbeziehen**auswählen, wird das **Problem** aktiviert, und wenn die Relevanz der Datei höher ist als die Cut-Off-Bewertung für das ausgewählte Problem, wird die Datei exportiert. Die Datei wird exportiert, es sei denn, Sie wird durch den Filter ' **for Review** ' ausgeschlossen. Wenn Sie **Export Batch verfeinern**auswählen, werden die Optionsfelder **de-dupe** und **Filter by Review** aktiviert. Wenn Sie die **** Deduplizierung auswählen, werden die Duplikatdateien entsprechend der definierten Richtlinie gefiltert: [Case Level (Standard): aus allen doppelten Dateien im gesamten Fall werden nur eine Datei debetrogen. Depot Ebene: aus jeder Gruppe von doppelten Dateien desselben Depotbank wird eine Datei mit bis zu einer Deduplizierung entfernt. Ein Datensatz aller doppelten Dateien ist in der Exportausgabe verfügbar. Wenn Sie **Filtern nach ' zur Überarbeitung '** wählen, wählen Sie **unter Metadaten ändern** , um die Feld Einstellungen **für die Überprüfungen**einzugeben. Wählen Sie **Eingabedateien einfügen**aus, um Quelldateien in den Paketinhalt einzubeziehen. Sie können diese Option deaktivieren, um den Exportvorgang zu beschleunigen. Beachten Sie, dass die systemeigenen Dateien in jedem Fall exportiert werden.
     

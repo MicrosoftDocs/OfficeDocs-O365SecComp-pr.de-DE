@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Verwenden Sie die Such-und Löschfunktion im Office 365 &amp; Security Compliance Center, um eine e-Mail-Nachricht von allen Postfächern in Ihrer Organisation zu suchen und zu löschen.
-ms.openlocfilehash: 4c98e73f74867b933560f163e80e74fd7bbd2bc5
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Verwenden Sie die Such-und Löschfunktion im Security & Compliance Center in Office 365, um eine e-Mail-Nachricht von allen Postfächern in Ihrer Organisation zu suchen und zu löschen.
+ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935160"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000268"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Suchen und Löschen von e-Mail-Nachrichten in Ihrer Office 365-Organisation-Administratorhilfe
 
@@ -39,7 +39,7 @@ Sie können die Inhaltssuche in Office 365 verwenden, um eine e-Mail-Nachricht v
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der **EDiscovery-Manager-** Rollengruppe sein oder der **Compliance-Such** Verwaltungsrolle zugewiesen sein. Zum Löschen von Nachrichten müssen Sie Mitglied der Rollengruppe " **Organisationsverwaltung** " sein oder der verwaltungsRolle " **Suchen und bereinigen** " zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Gewähren von Benutzern Zugriff auf das Office 365 Security _AMP_ Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der **EDiscovery-Manager-** Rollengruppe sein oder der **Compliance-Such** Verwaltungsrolle zugewiesen sein. Zum Löschen von Nachrichten müssen Sie Mitglied der Rollengruppe " **Organisationsverwaltung** " sein oder der verwaltungsRolle " **Suchen und bereinigen** " zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Gewähren von Benutzern Zugriff auf das Security and Compliance Center](grant-access-to-the-security-and-compliance-center.md).
     
 - Sie müssen die Security & Compliance Center PowerShell verwenden, um Nachrichten zu löschen. Informationen zum Herstellen einer Verbindung finden Sie in [Schritt 2](#step-2-connect-to-security--compliance-center-powershell) .
     
@@ -51,7 +51,7 @@ Sie können die Inhaltssuche in Office 365 verwenden, um eine e-Mail-Nachricht v
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Schritt 1: Erstellen Sie eine Inhaltssuche, um die zu löschende Nachricht zu suchen
 
-Als ersten Schritt müssen Sie eine Inhaltssuche erstellen und ausführen, um die Nachricht zu finden, die Sie aus den Postfächern in der Organisation löschen möchten. Sie können die Suche mithilfe des Security &amp; Compliance Centers oder durch Ausführen der Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** erstellen. Die Nachrichten, die mit der Abfrage für diese Suche übereinstimmen, werden durch Ausführen des Befehls **New-ComplianceSearchAction-Purge** in [Schritt 3](#step-3-delete-the-message)gelöscht. Informationen zum Erstellen einer Inhaltssuche und Konfigurieren von Suchabfragen finden Sie in den folgenden Themen: 
+Als ersten Schritt müssen Sie eine Inhaltssuche erstellen und ausführen, um die Nachricht zu finden, die Sie aus den Postfächern in der Organisation löschen möchten. Sie können die Suche mithilfe des Security & Compliance Center oder durch Ausführen der Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** erstellen. Die Nachrichten, die mit der Abfrage für diese Suche übereinstimmen, werden durch Ausführen des Befehls **New-ComplianceSearchAction-Purge** in [Schritt 3](#step-3-delete-the-message)gelöscht. Informationen zum Erstellen einer Inhaltssuche und Konfigurieren von Suchabfragen finden Sie in den folgenden Themen: 
   
 - [Inhaltssuche in Office 365](content-search.md)
     
@@ -76,7 +76,7 @@ Das Ziel der Suchabfrage ist es, die Ergebnisse der Suche auf die Nachricht oder
     
 - Zeigen Sie eine Vorschau der Suchergebnisse an, um sicherzustellen, dass die Suche nur die Nachricht (oder Nachrichten) zurückgegeben hat, die Sie löschen möchten.
     
-- Verwenden Sie die Such Vorkalkulations Statistik (angezeigt im Detailbereich der Suche im Security &amp; Compliance Center oder mithilfe des Cmdlets [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) ), um die Gesamtzahl der Ergebnisse zu ermitteln. 
+- Verwenden Sie die Such Vorkalkulations Statistik (angezeigt im Detailbereich der Suche im Security & Compliance Center oder mithilfe des Cmdlets [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) ), um die Gesamtzahl der Ergebnisse zu ermitteln. 
     
 Nachfolgend finden Sie zwei Beispiele für Abfragen, um verdächtige E-Mail-Nachrichten zu suchen.
   
@@ -94,13 +94,13 @@ Nachfolgend finden Sie zwei Beispiele für Abfragen, um verdächtige E-Mail-Nach
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center PowerShell
 
-Der nächste Schritt besteht darin, eine Verbindung zur Security & Compliance Center-PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen finden Sie unter [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Der nächste Schritt besteht darin, eine Verbindung zur Security & Compliance Center-PowerShell für Ihre Organisation herzustellen. Schrittweise Anleitungen finden Sie unter [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Wenn Ihr Office 365-Konto eine mehrstufige Authentifizierung (MFA) oder eine Verbundauthentifizierung verwendet, können Sie die Anweisungen im vorherigen Thema zur Verbindung mit Security & Compliance Center PowerShell nicht verwenden. Lesen Sie stattdessen die Anweisungen im Thema [Connect to Office 365 Security _AMP_ Compliance Center PowerShell mithilfe der mehr](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)stufigen Authentifizierung.
+Wenn Ihr Office 365-Konto eine mehrstufige Authentifizierung (MFA) oder eine Verbundauthentifizierung verwendet, können Sie die Anweisungen im vorherigen Thema zur Verbindung mit Security & Compliance Center PowerShell nicht verwenden. Lesen Sie stattdessen die Anweisungen im Thema [Connect to Security _AMP_ Compliance Center PowerShell using Multi-Factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-3-delete-the-message"></a>Schritt 3: Löschen der Nachricht
 
-Nachdem Sie eine Inhaltssuche erstellt und angepasst haben, um die Nachricht zurückzugeben, die Sie entfernen möchten und mit Security &amp; Compliance Center PowerShell verbunden sind, müssen Sie den letzten Schritt **** ausführen, um die Nachricht zu löschen. Sie können die Nachricht Soft-oder hart löschen. Eine weiche gelöschte Nachricht wird in den Ordner "Wiederherstellbare Elemente" eines Benutzers verschoben und bis zum Ablauf der Aufbewahrungszeit für gelöschte Elemente aufbewahrt. Fest gelöschte Nachrichten sind für eine dauerhafte Entfernung aus dem Postfach gekennzeichnet und werden bei der nächsten Verarbeitung des Postfachs durch den Assistenten für verwaltete Ordner endgültig entfernt. Wenn die Wiederherstellung einzelner Elemente für das Postfach aktiviert ist, werden endgültig gelöschte Elemente nach Ablauf des Aufbewahrungszeitraums für gelöschte Elemente dauerhaft entfernt. Wenn ein Postfach in der Warteschleife gehalten wird, bleiben gelöschte Nachrichten erhalten, bis die Aufbewahrungsdauer für das Element abläuft oder bis der Haltebereich aus dem Postfach entfernt wird.
+Nachdem Sie eine Inhaltssuche erstellt und verfeinert haben, um die Nachricht zurückzugeben, die Sie entfernen möchten und die mit Security & Compliance Center PowerShell verbunden sind, müssen Sie **** den letzten Schritt ausführen, um die Nachricht zu löschen. Sie können die Nachricht Soft-oder hart löschen. Eine weiche gelöschte Nachricht wird in den Ordner "Wiederherstellbare Elemente" eines Benutzers verschoben und bis zum Ablauf der Aufbewahrungszeit für gelöschte Elemente aufbewahrt. Fest gelöschte Nachrichten sind für eine dauerhafte Entfernung aus dem Postfach gekennzeichnet und werden bei der nächsten Verarbeitung des Postfachs durch den Assistenten für verwaltete Ordner endgültig entfernt. Wenn die Wiederherstellung einzelner Elemente für das Postfach aktiviert ist, werden endgültig gelöschte Elemente nach Ablauf des Aufbewahrungszeitraums für gelöschte Elemente dauerhaft entfernt. Wenn ein Postfach in der Warteschleife gehalten wird, bleiben gelöschte Nachrichten erhalten, bis die Aufbewahrungsdauer für das Element abläuft oder bis der Haltebereich aus dem Postfach entfernt wird.
   
 Im folgenden Beispiel löscht der Befehl die Suchergebnisse, die von einer Inhaltssuche mit dem Namen "Remove Phishing Message" zurückgegeben werden. 
 
@@ -142,6 +142,6 @@ Weitere Informationen finden Sie unter [New-ComplianceSearchAction](https://docs
 
     Nachdem die Nachricht gelöscht und in den Ordner "Purges" verschoben wurde, wird die Nachricht beibehalten, bis die Aufbewahrungsdauer abgelaufen ist. Wenn die Aufbewahrungsdauer unbegrenzt ist, werden die Elemente beibehalten, bis der Haltebereich entfernt oder die Aufbewahrungsdauer geändert wird.
     
-- **Warum ist der Workflow für suchen und entfernen unter verschiedenen Rollengruppen im Security & Compliance Center aufgeteilt?**
+- **Warum ist der Workflow für suchen und entfernen unter verschiedenen Rollengruppen im Security and Compliance Center aufgeteilt?**
 
     Wie bereits weiter oben erwähnt, muss ein Benutzer Mitglied der eDiscovery-Manager-Rollengruppe sein, oder ihm muss die Compliancesuche-Verwaltungsrolle zugewiesen sein, damit er Postfächer durchsuchen kann. Um Nachrichten löschen zu können, muss der Benutzer Mitglied der Rollengruppe „Organisationsverwaltung“ sein, oder ihm muss die Verwaltungsrolle zum Suchen und Löschen zugewiesen sein. Auf diese Weise kann geregelt werden, wer Postfächer in der Organisation durchsuchen und wer Nachrichten löschen kann. 

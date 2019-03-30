@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie Office 365 eDiscovery und Such Tools, um einen Vorfall mit Datenausfällen in Ihrer Organisation zu verwalten und darauf zu reagieren.
-ms.openlocfilehash: 50fab420ae0769e4675c5b6ff31307fa195d3950
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296598"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000148"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Szenario für Daten verschütten – suchen und löschen
 
@@ -60,7 +60,7 @@ Hier finden Sie eine Vorgehensweise zum Verwalten eines Daten verschüttenden Vo
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Optional Schritt 1: Verwalten der Benutzer, die auf den Fall zugreifen können, und Festlegen von Konformitäts Grenzen
 
-Je nach ihrer Organisationspraxis müssen Sie steuern, wer auf den eDiscovery-Fall zugreifen kann, der zur Untersuchung eines Daten verschütteten Ereignisses verwendet wird, und die Konformitäts Grenzen einrichten. Am einfachsten können Sie dies tun, indem Sie Ermittler als Mitglieder einer vorhandenen Rollengruppe im Office 365 Security & Compliance Center hinzufügen und die Rollengruppe dann als Mitglied des eDiscovery-Falls hinzufügen. Informationen zu den integrierten eDiscovery-Rollengruppen und zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter [assign eDiscovery Permissions in the Office &amp; 365 Security Compliance Center](assign-ediscovery-permissions.md).
+Je nach ihrer Organisationspraxis müssen Sie steuern, wer auf den eDiscovery-Fall zugreifen kann, der zur Untersuchung eines Daten verschütteten Ereignisses verwendet wird, und die Konformitäts Grenzen einrichten. Am einfachsten können Sie dies tun, indem Sie Ermittler als Mitglieder einer vorhandenen Rollengruppe im Security & Compliance Center hinzufügen und die Rollengruppe dann als Mitglied des eDiscovery-Falls hinzufügen. Informationen zu den integrierten eDiscovery-Rollengruppen und zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter [assign eDiscovery Permissions](assign-ediscovery-permissions.md).
   
 Sie können auch eine neue Rollengruppe erstellen, die Ihren organisatorischen Anforderungen entspricht. Sie können beispielsweise eine Gruppe von Daten verschütteten Ermittlern in der Organisation für den Zugriff auf und die Zusammenarbeit an allen Daten, die verschüttet werden müssen. Hierzu können Sie die Rollengruppe "Data Spill Investigator" erstellen, die entsprechenden Rollen zuweisen (Export, RMS entSchlüsseln, überprüfen, Vorschau, Konformitäts Suche und Fallverwaltung), die Daten verschütteten Ermittler zur Rollengruppe hinzufügen und dann die Rollengruppe als Mitglied des Daten verschüttenden eDiscovery-Falls. Detaillierte Anweisungen dazu finden Sie unter [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](set-up-compliance-boundaries.md) . 
   
@@ -68,19 +68,19 @@ Sie können auch eine neue Rollengruppe erstellen, die Ihren organisatorischen A
 
 Ein eDiscovery-Fall bietet eine effektive Möglichkeit zum Verwalten der Untersuchung von Daten verschütten. Sie können der Rollengruppe, die Sie in Schritt 1 erstellt haben, Mitglieder hinzufügen, die Rollengruppe als Mitglied eines neuen eDiscovery-Falls hinzufügen, iterative suchen ausführen, um die verschütteten Daten zu finden, einen Bericht zur Freigabe zu exportieren, den Status des Falls nachzuverfolgen und dann auf die Details des c ASE, falls erforderlich. Erwägen Sie, eine Benennungskonvention für eDiscovery-Fälle einzurichten, die für Daten verschüttete Vorfälle verwendet werden, und geben Sie so viele Informationen wie möglich im Fallname und in der Beschreibung an, damit Sie in Zukunft gegebenenfalls suchen und darauf verweisen können.
   
-Um einen neuen Fall zu erstellen, können Sie eDiscovery im Security &amp; Compliance Center verwenden. Weitere Informationen finden Sie unter "Erstellen eines neuen Falls" in [eDiscovery-Fällen im Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
+Um einen neuen Fall zu erstellen, können Sie eDiscovery im Security and Compliance Center verwenden. Weitere Informationen finden Sie unter "Erstellen eines neuen Falls" in [eDiscovery-Fällen](ediscovery-cases.md#step-2-create-a-new-case).
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Schritt 3: Suchen nach verschütteten Daten
 
 Nachdem Sie einen Fall und verwalteten Zugriff erstellt haben, können Sie den Fall verwenden, um iterativ nach den verschütteten Daten zu suchen und die Postfächer zu identifizieren, die die verschütteten Daten enthalten. Sie verwenden die gleiche Suchabfrage, die Sie zum Auffinden der e-Mail-Nachrichten verwendet haben, um diese Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)zu löschen.
   
-Informationen zum Erstellen einer Inhaltssuche, die mit einem eDiscovery-Fall verknüpft ist, finden Sie unter "erstellen und Ausführen einer mit einem Fall verknüpften Content Search" in [eDiscovery-Fällen im Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
+Informationen zum Erstellen einer Inhaltssuche, die mit einem eDiscovery-Fall verknüpft ist, finden Sie unter "erstellen und Ausführen einer mit einem Fall verknüpften Inhaltssuche" in [eDiscovery-Fällen](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
   
  **Wichtig:** Die Schlüsselwörter, die Sie in der Suchabfrage verwenden, enthalten möglicherweise die tatsächlich verschütteten Daten, nach denen Sie suchen. Wenn Sie beispielsweise nach Dokumenten suchen, die eine Sozialversicherungsnummer enthalten, und das Schlüsselwort IT as Search verwenden, müssen Sie die Abfrage später löschen, um weiteres verschütten zu vermeiden. Weitere Informationen finden Sie unter [Löschen der Suchabfrage](#deleting-the-search-query) in Schritt 8. 
   
 ## <a name="step-4-review-and-validate-case-findings"></a>Schritt 4: überprüfen und Überprüfen der Fall Ergebnisse
 
-Nachdem Sie eine Inhaltssuche erstellt haben, müssen Sie die Suchergebnisse überprüfen und überprüfen und sicherstellen, dass Sie nur aus den e-Mail-Nachrichten bestehen, die gelöscht werden müssen. In einer Inhaltssuche können Sie eine Vorschau einer Zufallsstichprobe von 1.000-e-Mail-Nachrichten anzeigen, ohne die Suchergebnisse zu exportieren, um weitere Daten zu vermeiden. Weitere Informationen zu den Einschränkungen der Vorschau finden Sie unter [Limits for Content Search im Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
+Nachdem Sie eine Inhaltssuche erstellt haben, müssen Sie die Suchergebnisse überprüfen und überprüfen und sicherstellen, dass Sie nur aus den e-Mail-Nachrichten bestehen, die gelöscht werden müssen. In einer Inhaltssuche können Sie eine Vorschau einer Zufallsstichprobe von 1.000-e-Mail-Nachrichten anzeigen, ohne die Suchergebnisse zu exportieren, um weitere Daten zu vermeiden. Weitere Informationen zu den Einschränkungen für die Vorschau finden Sie unter [Limits for Content Search](limits-for-content-search.md).
   
 Wenn Sie mehr als 1.000 Postfächer oder mehr als 100 e-Mail-Nachrichten pro Postfach überarbeiten, können Sie die anfängliche Suche in mehrere Suchvorgänge unterteilen, indem Sie zusätzliche Schlüsselwörter oder Bedingungen wie Datumsbereich oder Absender/Empfänger verwenden und die Ergebnisse jeder Suche überarbeiten. individuell. Notieren Sie sich alle Suchabfragen, die beim Löschen von Nachrichten in [Schritt 7](#step-7-permanently-delete-the-spilled-data)verwendet werden sollen.
 
@@ -116,11 +116,11 @@ Weitere Informationen zum Exportieren von Berichten finden Sie unter [Exportiere
 
 Um zu untersuchen, ob e-Mails mit verschütteten Daten freigegeben wurden, können Sie optional die Nachrichtenablauf Protokolle mit den Absenderinformationen und den Datumsbereichen Abfragen, die Sie in Schritt 4 gesammelt haben. Beachten Sie, dass der Aufbewahrungszeitraum für die Nachrichtenablaufverfolgung 30 Tage für Echtzeitdaten und 90 Tage für Verlaufsdaten beträgt.
   
-Sie können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden oder die entsprechenden Cmdlets in Exchange Online PowerShell verwenden. Beachten Sie, dass die Nachrichtenablaufverfolgung keine vollständigen Garantien für die Vollständigkeit der zurückgegebenen Daten bietet. Weitere Informationen zur Verwendung der Nachrichtenablaufverfolgung finden Sie unter: 
+Sie können die Nachrichtenablaufverfolgung im Security and Compliance Center verwenden oder die entsprechenden Cmdlets in Exchange Online PowerShell verwenden. Beachten Sie, dass die Nachrichtenablaufverfolgung keine vollständigen Garantien für die Vollständigkeit der zurückgegebenen Daten bietet. Weitere Informationen zur Verwendung der Nachrichtenablaufverfolgung finden Sie unter: 
   
-- [Nachrichtenablaufverfolgung im Office 365 Security &amp; Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Nachrichtenablaufverfolgung im Security & Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Neue Nachrichtenablaufverfolgung im Office 365 &amp; Security Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Neue Nachrichtenablaufverfolgung im Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Schritt 6: Vorbereiten der Postfächer
 
@@ -206,7 +206,7 @@ Wenn Sie in Schritt 6 eine Postfachkonfiguration geändert haben, um die Postfä
 
 Wenn die Schlüsselwörter in der Suchabfrage, die Sie in Schritt 3 erstellt und verwendet haben, einige der tatsächlich verschütteten Daten enthalten, sollten Sie die Suchabfrage löschen, um zu verhindern, dass weitere Daten verschüttet werden.
   
-1. Öffnen Sie im Security & Compliance Center den eDiscovery-Fall, wechseln Sie zur Seite **Suchen** , und wählen Sie die entsprechende Inhaltssuche aus.
+1. Öffnen Sie im Security and Compliance Center den eDiscovery-Fall, wechseln Sie zur Seite **Suchen** , und wählen Sie die entsprechende Inhaltssuche aus.
     
 2. Klicken Sie auf der Seite Flyout auf **Löschen**.
 
@@ -216,10 +216,10 @@ Wenn die Schlüsselwörter in der Suchabfrage, die Sie in Schritt 3 erstellt und
 
 Sie können im Office 365-Überwachungsprotokoll nach den eDiscovery-Aktivitäten suchen, die während der Untersuchung durchgeführt wurden. Sie können auch das Überwachungsprotokoll durchsuchen, um die Überwachungsdatensätze zurückzugeben, die beim Ausführen des Befehls **Search-Mailbox-deletecontent** erstellt wurden, um die verschütteten Daten zu löschen. Weitere Informationen finden Sie unter:
 
-- [Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md)
+- [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md)
 
-- [Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- Weitere Informationen zum Suchen nach Überwachungsdatensätzen im Zusammenhang mit ausgeführten Cmdlets in Exchange Online finden Sie im Abschnitt "überwachte Aktivitäten-Exchange-administratorüberwachungsprotokoll" unter [Durchsuchen des Überwachungsprotokolls im Office 365 Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities) .
+- Informationen zum Suchen nach Überwachungsdatensätzen im Zusammenhang mit ausgeführten Cmdlets in Exchange Online finden Sie im Abschnitt "überwachte Aktivitäten-Exchange-administratorüberwachungsprotokoll" im [Überwachungsprotokoll durchsuchen](search-the-audit-log-in-security-and-compliance.md#audited-activities) .
   
 

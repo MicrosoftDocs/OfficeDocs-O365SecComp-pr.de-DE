@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Status des Nachrichtenflusses im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
+description: Administratoren können sich über den Status des Nachrichtenflusses im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 04aa986982465a4c66fbf99f517fb34622d65e19
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722885"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000668"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Übersicht über die Nachrichtenflussstatus der oberen Domäne
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722885"
 
 Die **Nachrichtenflussstatus-** Einblicke der oberen Domänen bieten Ihnen den aktuellen Status der Domänen Ihrer Organisation im Hinblick auf den Nachrichtenfluss. Diese Einblicke helfen Ihnen bei der Identifizierung und Problembehandlung von Domänen, die Auswirkungen auf die ***Nachrichtenübermittlung*** haben (beispielsweise können keine externen e-Mails empfangen werden), insbesondere Domänen Ablauf oder Domänen mit falschen MX-Einträgen.
 
-![Die obere Domänen-Fluss Status Einblicke im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](media/domain-mail-flow-status-selected.png)
+![Die obere Domänen-Fluss Status Einblicke im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/domain-mail-flow-status-selected.png)
 
 Wenn Sie im Insight auf **Details anzeigen** klicken, wird ein Flyout angezeigt, in dem Sie weitere Details zum Status jeder Domäne sehen.
 

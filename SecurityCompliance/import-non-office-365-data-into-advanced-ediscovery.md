@@ -1,9 +1,8 @@
 ---
-title: Importieren von Inhalten, die nicht aus Office 365 stammen, für die Advanced eDiscovery-Analyse
+title: Importieren von nicht-Office 365-Inhalten für erweiterte eDiscovery-Analysen
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 5/25/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: VorGehensWeise zum Importieren von Inhalten, die nicht in O365 gespeichert sind, in einem Azure-BLOB, damit es mit AeD analysiert werden kann
-ms.openlocfilehash: 1019fa2e2429aeff8bd20bc3dfb266ab5fb25eaf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217065"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001168"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importieren von Inhalten, die nicht aus Office 365 stammen, für die Advanced eDiscovery-Analyse
+# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importieren von nicht-Office 365-Inhalten für erweiterte eDiscovery-Analysen
 
 Nicht alle Dokumente, die Sie möglicherweise mit Office 365 Advanced eDiscovery analysieren müssen, Leben in Office 365. Mit der nicht-Office 365-Inhalts Importfunktion in Advanced eDiscovery können Sie Dokumente hochladen, die nicht in Office 365 (außer PST-Dateien) enthalten sind, in einen mit dem Azure-Speicher BLOB verknüpften Fall und diese mit Advanced eDiscovery analysieren. In diesem Verfahren wird gezeigt, wie Sie Ihre nicht-Office 365-Dokumente in Advanced eDiscovery for Analysis einbinden.
   
@@ -62,7 +61,7 @@ Für die Verwendung der in diesem Verfahren beschriebenen Funktion zum Hochladen
     
 7. Erstellen Sie die AzCopy-Befehlszeile, um die Dateien wie folgt hochzuladen:
     
-    AzCopy/Source: " *Vollständiger Pfad zum Stammordner auf dem lokalen Computer* "/dest: "die *Container-URL bis zu dem, aber nicht mit dem?* "/DestSAS: " *Rest der Container-URL aus der? bis zum Ende* "/s 
+    AzCopy/Source: " *Vollständiger Pfad zum Stammordner auf dem lokalen Computer* "/dest: " *Container-URL bis zu, aber nicht einschließlich der?*  "/DestSAS:" *Rest der Container-URL aus der? bis zum Ende* "/s 
     
     Verwenden Sie beispielsweise die folgenden Werte: 
     

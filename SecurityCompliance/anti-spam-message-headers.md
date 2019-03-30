@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt.
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936745"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004242"
 ---
 # <a name="anti-spam-message-headers"></a>Antispam-Nachrichtenkopfzeilen
 
 Wenn Exchange Online Protection eingehende E-Mail-Nachrichten prüft, wird jeder Nachricht die Kopfzeile **X-Forefront-Antispam-Report** hinzugefügt. Mit den Feldern in dieser Kopfzeile können Administratoren Information zur Nachricht und deren Verarbeitung bereitgestellt werden. Die Felder in der Kopfzeile **X-Microsoft-Antispam** liefern zusätzliche Informationen über Massensendungen und Phishing. Zusätzlich zu diesen beiden Kopfzeilen fügt Exchange Online Protection auch E-Mail-Authentifizierungsergebnisse für jede verarbeitete Nachricht in die Kopfzeile **Authentication-results** ein.
+
+Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
   
 > [!TIP]
-> Informationen dazu, wie Sie einen E-Mail-Nachrichtenkopf in verschiedenen E-Mail-Clients anzeigen, finden Sie unter [Message Header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). Sie können den Inhalt der Nachrichtenkopfzeile kopieren und in der [Nachrichtenkopfanalyse](https://testconnectivity.microsoft.com/?tabid=mha) einfügen. Wenn Sie im Exchange Admin Center eine Nachricht in Quarantäne auswählen, können Sie über den Link **Nachrichtenkopfzeile anzeigen** ganz einfach den Text der Nachrichtenkopfzeile kopieren und im Tool einfügen. Klicken Sie im Nachrichtenkopfanalyse-Tool auf **Kopfzeilen analysieren**, um Informationen zur Kopfzeile abzurufen.
+>  Sie können den Inhalt des Nachrichtenkopfs kopieren und in das Tool für die [Nachrichten Analyse](https://testconnectivity.microsoft.com/?tabid=mha) einfügen. Mit diesem Tool können Sie die Kopfzeilen analysieren und in ein readible Format versetzen.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Felder der Nachrichtenkopfzeile X-Forefront-Antispam-Report
 

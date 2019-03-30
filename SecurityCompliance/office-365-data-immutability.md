@@ -7,19 +7,19 @@ ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Definiert und erläutert Daten Unveränderlichkeit oder Daten, die auffindbar und nicht zerstört oder geändert werden müssen.
-ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215565"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004152"
 ---
 # <a name="immutability-in-office-365"></a>Unveränderbarkeit in Office 365
 Für einige Organisationen ist die Aufbewahrung von e-Mails und zugehörigen Daten in einer auffindbaren Form für die Einhaltung von Vorschriften, internen Steuerungsanforderungen oder Rechtsstreitigkeiten erforderlich. Alle Daten im System müssen auffindbar sein, und keines davon kann zerstört oder geändert werden. Die branchenübliche Bezeichnung dafür ist "Unveränderlichkeit". 
@@ -35,9 +35,9 @@ Durch die Konfiguration der in-Place-Aufbewahrungs-und-Richtlinienfeatures für 
 - Während Onlinebesprechungen freigegebene Dokumente
 - Voicemails
 
-Darüber hinaus hat Microsoft Add-on-Features entwickelt, um die [Archivierung von Daten](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) aus anderen Quellen durch Integration in Datenerfassungs-und Verwaltungslösungen von Drittanbietern zu ermöglichen. Nachdem drittanbieterdaten importiert wurden, können Sie die Office-365-Kompatibilitätsfeatures auf die Daten anwenden, einschließlich des Rechtsstreits, in-situ-eDiscovery und-Speicherung, Compliance-Suche, in-situ-Archivierung,-Überwachung und-AufbewahrungsRichtlinien. Wenn beispielsweise ein Postfach in den Rechtsstreit versetzt wird, werden Daten von Drittanbietern beibehalten. Sie können drittanbieterdaten mithilfe der in-Place-eDiscovery-oder Compliance-Suche durchsuchen. Sie können auch Archivierungs-und Aufbewahrungsrichtlinien auf drittanbieterdaten anwenden, genau wie für Microsoft-Daten. Kurz gesagt, die Archivierung von drittanbieterdaten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien kompatibel bleibt.
+Darüber hinaus hat Microsoft Add-on-Features entwickelt, um die [Archivierung von Daten](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) aus anderen Quellen durch Integration in Datenerfassungs-und Verwaltungslösungen von Drittanbietern zu ermöglichen. Nachdem drittanbieterdaten importiert wurden, können Sie die Office-365-Kompatibilitätsfeatures auf die Daten anwenden, einschließlich des Rechtsstreits, in-situ-eDiscovery und-Speicherung, Compliance-Suche, in-situ-Archivierung,-Überwachung und-AufbewahrungsRichtlinien. Wenn ein Postfach zum Beispiel dem Beweissicherungsverfahren unterliegt, werden Drittanbieterdaten beibehalten. Sie können Drittanbieterdaten mithilfe von In-Situ-eDiscovery oder Compliancesuche durchsuchen. Oder Sie können (genau wie bei Microsoft-Daten) Archivierungs- und Aufbewahrungsrichtlinien auf Drittanbieterdaten anwenden. Kurz gesagt, die Archivierung von drittanbieterdaten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien kompatibel bleibt.
 
-Die Archivierung in Office 365 bietet die Regel 17a-4-konforme Speicherung der Securities and Exchange Commission (SEC) und behält permanente Dateien aller Daten bei, die in einem nicht-ReWriteable, nicht löschbaren Format mithilfe von in-situ-Aufbewahrungsrichtlinien und-Richtlinien erfasst werden. , einschließlich der Aufbewahrungs Sperre. Speziell
+Die Archivierung in Office 365 bietet die Regel 17a-4-konforme Speicherung der Securities and Exchange Commission (SEC) und behält permanente Dateien aller Daten bei, die in einem nicht-ReWriteable, nicht löschbaren Format mithilfe von in-situ-Aufbewahrungsrichtlinien und-Richtlinien erfasst werden. , einschließlich der Aufbewahrungs Sperre. Insbesondere gilt:
 - Alle Datensätze, die mit den oben aufgeführten Aufbewahrungsrichtlinien gespeichert werden, werden in einem dedizierten Speicherbereich außerhalb des Bereichs des normalen Benutzers aufbewahrt. Darüber hinaus können nur autorisierte Benutzer auf diese Datensätze zugreifen und diese durchsuchen, jedoch nicht ändern oder löschen.
 - Metadaten für jedes Element enthalten einen Zeitstempel, der bei der Berechnung der Aufbewahrungsdauer verwendet wird. Zeitstempel werden angewendet, wenn ein neues Element empfangen oder erstellt wird und nicht nachträglich geändert oder aus den Metadaten entfernt werden kann.
 - Die Archivierung in Office 365 ermöglicht Benutzern das Kombinieren verschiedener Aufbewahrungsrichtlinien und das Speichern von Aktionen zum Erstellen detaillierter Aufbewahrungsrichtlinien, um den Typ oder den Speicherort der Elemente zu definieren, die in unveränderbarer Form aufbewahrt werden sollen, und die Dauer einer solchen Aufbewahrung.

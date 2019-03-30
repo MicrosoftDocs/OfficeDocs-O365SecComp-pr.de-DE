@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Verwenden Sie eDiscovery-Fälle im Office 365 &amp; Security Compliance Center, um die rechtlichen Untersuchungen Ihrer Organisation zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten mithilfe der Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery weiter analysieren.
-ms.openlocfilehash: b97bd99740e2db090df70af0c76070186f5b8ccf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Verwenden Sie eDiscovery-Fälle im Security & Compliance Center in Office 365, um die rechtlichen Untersuchungen Ihrer Organisation zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten mithilfe der Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery weiter analysieren.
+ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296898"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999918"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Untersuchungen in Office 365
 
-Organisationen haben viele Gründe, auf einen Rechtsstreit mit bestimmten Führungskräften oder anderen Mitarbeitern in Ihrer Organisation zu reagieren. Dies kann dazu führen, dass Sie weitere Untersuchungen in e-Mails, Dokumenten, Sofortnachrichtenunterhaltungen und anderen Inhaltsspeicherorten, die von Personen in ihren täglichen Arbeitsaufgaben verwendet werden, schnell finden und behalten. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery Case Tools im Office 365 Security &amp; Compliance Center ausführen.
+Organisationen haben viele Gründe, auf einen Rechtsstreit mit bestimmten Führungskräften oder anderen Mitarbeitern in Ihrer Organisation zu reagieren. Dies kann dazu führen, dass Sie weitere Untersuchungen in e-Mails, Dokumenten, Sofortnachrichtenunterhaltungen und anderen Inhaltsspeicherorten, die von Personen in ihren täglichen Arbeitsaufgaben verwendet werden, schnell finden und behalten. Sie können diese und viele andere ähnliche Aktivitäten mithilfe der eDiscovery Case Tools im Security & Compliance Center ausführen.
   
 [Verwalten von rechtlichen Untersuchungen mit eDiscovery-Fällen](#manage-legal-investigations-with-ediscovery-cases)
   
@@ -46,7 +46,7 @@ mit eDiscovery-Fällen können Sie steuern, wer eDiscovery-Fälle in Ihrer Organ
     
 ### <a name="use-scripts-for-advanced-scenarios"></a>Verwenden von Skripts für erweiterte Szenarien
 
-Wie im vorherigen Abschnitt, in dem Skripts für die Inhaltssuche aufgeführt wurden, haben wir auch &amp; einige PowerShell-Skripts für Security Compliance Center erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
+Wie im vorherigen Abschnitt, in dem Skripts für die Inhaltssuche aufgeführt wurden, haben wir auch einige PowerShell-Skripts für Security & Compliance Center erstellt, die Sie bei der Verwaltung von eDiscovery-Fällen unterstützen.
   
 - [Erstellen Sie einen eDiscovery-Aufbewahrungsbericht](create-a-report-on-holds-in-ediscovery-cases.md) mit Informationen zu allen mit eDiscovery-Fällen in Ihrer Organisation verknüpften Haltebereichen. 
     
@@ -54,18 +54,18 @@ Wie im vorherigen Abschnitt, in dem Skripts für die Inhaltssuche aufgeführt wu
   
 ## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analysieren von Falldaten mit Office 365 Advanced eDiscovery
 
-Office 365 Advanced eDiscovery baut auf den in den vorherigen Abschnitten beschriebenen Inhaltssuche-und eDiscovery-Funktionen auf. Nachdem Sie einen eDiscovery-Fall erstellt haben, die Aufbewahrungsorte in die Warteschleife gestellt und Daten gesammelt haben, die möglicherweise auf den Fall reagieren, können Sie die Daten mithilfe der Funktionen "Textanalyse", "Maschinelles Lernen" und "Predictive Coding capabilities of Advanced" weiter analysieren. eDiscovery. Dadurch kann Ihre Organisation Tausende von e-Mail-Nachrichten, Dokumenten und anderen Arten von Daten schnell verarbeiten, um die Elemente zu finden, die für einen bestimmten Fall wahrscheinlich relevant sind. Und wir haben Unified Case Management und Advanced eDiscovery, damit Sie den gleichen Fall innerhalb des Security &amp; Compliance Center nahtlos verwalten können.
+Office 365 Advanced eDiscovery baut auf den in den vorherigen Abschnitten beschriebenen Inhaltssuche-und eDiscovery-Funktionen auf. Nachdem Sie einen eDiscovery-Fall erstellt haben, die Aufbewahrungsorte in die Warteschleife gestellt und Daten gesammelt haben, die möglicherweise auf den Fall reagieren, können Sie die Daten mithilfe der Funktionen "Textanalyse", "Maschinelles Lernen" und "Predictive Coding capabilities of Advanced" weiter analysieren. eDiscovery. Dadurch kann Ihre Organisation Tausende von e-Mail-Nachrichten, Dokumenten und anderen Arten von Daten schnell verarbeiten, um die Elemente zu finden, die für einen bestimmten Fall wahrscheinlich relevant sind. Und wir haben Unified Case Management und Advanced eDiscovery, damit Sie den gleichen Fall innerhalb des Security & Compliance Center nahtlos verwalten können.
   
 > [!NOTE]
 > Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (der Depotbank der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-Standalone-Lizenz zugewiesen werden. Administratoren und Compliance Officer, denen Fälle zugeordnet sind und die erweiterte eDiscovery zur Analyse von Daten verwenden, benötigen keine E5-Lizenz. 
   
 ### <a name="get-started"></a>Erste Schritte
 
-Die schnellste Möglichkeit, mit Advanced eDiscovery zu beginnen, besteht darin, einen Fall zu erstellen und Suchergebnisse im &amp; Security Compliance Center vorzubereiten, diese Ergebnisse in Advanced eDiscovery zu laden und dann die Express Analyse auszuführen, um die Falldaten zu analysieren und dann die Ergebnisse für externe Überprüfungen.
+Am schnellsten können Sie mit Advanced eDiscovery beginnen, einen Fall zu erstellen und die Suchergebnisse im Security & Compliance Center vorzubereiten, die Ergebnisse in Advanced eDiscovery zu laden und dann die Express Analyse auszuführen, um die Falldaten zu analysieren und dann die Ergebnisse zu exportieren. für externe Überprüfungen.
   
 - [Schnellübersicht](quick-setup-for-advanced-ediscovery.md) über den erweiterten eDiscovery-Workflow 
     
-- [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md) für Advanced eDiscovery durch Erstellen eines Falls, Zuweisen von eDiscovery-Berechtigungen und Hinzufügen von Fall Mitgliedern, alle mithilfe &amp; des Security Compliance Centers 
+- [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md) für Advanced eDiscovery durch Erstellen eines Falls, Zuweisen von eDiscovery-Berechtigungen und Hinzufügen von Fall Mitgliedern, alle mithilfe des Security _AMP_ Compliance Center 
     
 - [Vorbereiten und Laden von Such Daten](prepare-data-for-advanced-ediscovery.md) in den Fall in Advanced eDiscovery 
     

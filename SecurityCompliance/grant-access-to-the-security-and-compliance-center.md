@@ -3,7 +3,7 @@ title: Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Complia
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Benutzern müssen Berechtigungen im Office 365 Security &amp; Compliance Center zugewiesen werden, bevor Sie Ihre Sicherheits-oder Compliance-Funktionen verwalten können.
-ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216305"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997235"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center
 
@@ -65,7 +65,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
 1. Stellen [Sie eine Verbindung mit Office 365 Security _AMP_ Compliance Center PowerShell her](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Verwenden Sie den Befehl **Add-RoleGroupMember** zum Hinzufügen eines Benutzers zur Rolle "Organisationsverwaltung", wie im folgenden Beispiel gezeigt. 
+2. Verwenden Sie den **Add-RoleGroupMember-** Befehl, um einen Benutzer zur Organisations Verwaltungsrolle hinzuzufügen, wie im folgenden Beispiel gezeigt. 
     
   ```
   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
@@ -74,7 +74,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
  **Parameter**
   
-- _-Identity_ ist die Rollengruppe, zu der ein Mitglied hinzugefügt werden soll. 
+- _-Identity_ ist die Rollengruppe, der ein Mitglied hinzugefügt werden soll. 
     
 - _Member_ ist das Postfach, die universelle Sicherheitsgruppe (USG) oder der Computer, der der Rollengruppe hinzugefügt werden soll. Sie können jeweils nur ein Element angeben. 
     

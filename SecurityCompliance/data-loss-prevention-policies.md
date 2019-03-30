@@ -3,8 +3,8 @@ title: Übersicht über Richtlinien zur Verhinderung von Datenverlust
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862537"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000018"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -28,7 +28,7 @@ Um Geschäftsstandards und branchenspezifische Vorschriften einzuhalten, müssen
   
 Mit einer DLP-Richtlinie haben Sie die folgenden Möglichkeiten:
   
-- **Identifizieren Sie vertrauliche Informationen über viele Standorte hinweg, beispielsweise Exchange Online, SharePoint Online und OneDrive for Business.**
+- **Identifizieren Sie vertrauliche Informationen über viele Standorte hinweg, beispielsweise Exchange Online, SharePoint Online, OneDrive for Business und Microsoft Teams.**
     
     Sie können beispielsweise ein beliebiges Dokument mit einer Kreditkartennummer identifizieren, die in einer OneDrive for Business-Website gespeichert ist, oder Sie können nur die OneDrive-Websites bestimmter Personen überwachen.
     
@@ -36,13 +36,13 @@ Mit einer DLP-Richtlinie haben Sie die folgenden Möglichkeiten:
     
     Sie können beispielsweise alle Dokumente oder e-Mails identifizieren, die einen Integritätsdaten Satz enthalten, der für Personen außerhalb Ihrer Organisation freigegeben ist, und dann den Zugriff auf dieses Dokument automatisch blockieren oder verhindern, dass e-Mails gesendet werden.
     
-- **Überwachen und Schützen von vertraulichen Informationen in den Desktopversionen von Excel 2016, PowerPoint 2016 und Word 2016.**
+- **Überwachen und schützen Sie vertrauliche Informationen in den Desktop Versionen von Excel, PowerPoint und Word.**
     
-    Genau wie in Exchange Online, SharePoint Online und OneDrive for Business verfügen diese Office 2016-Desktop Programme über dieselben Funktionen, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine ständige Überwachung, wenn Personen Inhalte in diesen Office 2016-Programmen freigeben.
+    Genau wie in Exchange Online, SharePoint Online und OneDrive for Business verfügen diese Office-Desktop Programme über dieselben Funktionen, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. DLP bietet eine kontinuierliche Überwachung, wenn Personen Inhalte in diesen Office-Programmen freigeben.
     
 - **Helfen Sie den Benutzern dabei, zu erfahren, wie sie die Anforderungen erfüllen, ohne dabei ihren Arbeitsablauf unterbrechen zu müssen.**
     
-    Sie können die Benutzer über DLP-Richtlinien informieren und sie dabei unterstützen, den Anforderungen gerecht zu werden, ohne dass dies ihre Arbeit beeinträchtigt. Wenn ein Benutzer z. B. versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie eine E-Mail-Benachrichtigung senden und dem Benutzer einen Richtlinientipp im Kontext der Dokumentbibliothek anzeigen, welche ihm das Außerkraftsetzen erlaubt, wenn er über eine geschäftliche Rechtfertigung verfügt. Die gleichen Richtlinien Tipps werden auch in Outlook im Web, Outlook 2013 und höher, Excel 2016, PowerPoint 2016 und Word 2016 angezeigt.
+    Sie können die Benutzer über DLP-Richtlinien informieren und sie dabei unterstützen, den Anforderungen gerecht zu werden, ohne dass dies ihre Arbeit beeinträchtigt. Wenn ein Benutzer z. B. versucht, ein Dokument mit vertraulichen Informationen freizugeben, kann eine DLP-Richtlinie eine E-Mail-Benachrichtigung senden und dem Benutzer einen Richtlinientipp im Kontext der Dokumentbibliothek anzeigen, welche ihm das Außerkraftsetzen erlaubt, wenn er über eine geschäftliche Rechtfertigung verfügt. Die gleichen Richtlinien Tipps werden auch in Outlook im Web, Outlook, Excel, PowerPoint und Word angezeigt.
     
 - **Zeigen Sie DLP-Berichte mit Inhalten an, die mit den DLP-Richtlinien Ihrer Organisation übereinstimmen.**
     
@@ -56,7 +56,7 @@ Sie erstellen und verwalten DLP-Richtlinien auf der Seite zur Verhinderung von D
 
 Eine DLP-Richtlinie enthält einige grundlegende Punkte:
   
-- Wo die Inhalts **Speicherorte** wie Exchange Online, SharePoint Online und OneDrive for Business-Websites geschützt werden sollen. 
+- Wo die Inhalts **Speicherorte** wie Exchange Online, SharePoint Online und OneDrive for Business-Websites sowie Microsoft Teams-Chats und-Kanäle geschützt werden sollen. 
     
 - Wann und wie die Inhalte durch Durchsetzen von **Regeln** geschützt werden sollen, die Folgendes umfassen: 
     
@@ -72,7 +72,7 @@ Sie haben beispielsweise eine DLP-Richtlinie, die Ihnen hilft, das vorhanden sei
   
 ### <a name="locations"></a>Speicherorte
 
-Eine DLP-Richtlinie kann vertrauliche Informationen in Office 365 finden und schützen, unabhängig davon, ob sich diese Informationen in Exchange Online, SharePoint Online oder OneDrive for Business befinden. Sie können ganz einfach auswählen, ob Sie alle SharePoint-Websites oder OneDrive-Konten, nur bestimmte Websites oder Konten oder alle Postfächer schützen möchten. Beachten Sie, dass es noch nicht möglich ist, nur die Postfächer bestimmter Benutzer auszuwählen.
+Eine DLP-Richtlinie kann vertrauliche Informationen in Office 365 finden und schützen, unabhängig davon, ob sich diese Informationen in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können Inhalte in Exchange-e-Mails, Microsoft Teams-Chats und-Kanälen sowie alle SharePoint-oder OneDrive-Bibliotheken schützen oder bestimmte Speicherorte für eine Richtlinie auswählen.
   
 ![Optionen für Speicherorte, an denen eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ Die e-Mail kann die Person Benachrichtigen, die den Inhalt gesendet, freigegeben
   
 Zusätzlich zum Senden einer e-Mail-Benachrichtigung wird in einer Benutzerbenachrichtigung ein richtlinientipp angezeigt:
   
-- In Outlook 2013 und höher und Outlook im Web.
+- In Outlook und Outlook im Web.
     
 - Für das Dokument auf einer SharePoint Online-oder OneDrive for Business-Website.
     
-- In Excel 2016, PowerPoint 2016 und Word 2016, wenn das Dokument auf einer Website gespeichert ist, die in einer DLP-Richtlinie enthalten ist.
+- In Excel, PowerPoint und Word, wenn das Dokument auf einer Website gespeichert ist, die in einer DLP-Richtlinie enthalten ist.
     
 Der e-Mail-Benachrichtigungs-und richtlinientipp erläutert, warum Inhalte mit einer DLP-Richtlinie in Konflikt stehen. Wenn Sie möchten, können die E-Mail-Benachrichtigung und der Richtlinientipp Benutzern das Außerkraftsetzen einer Regel erlauben, indem sie ein falsch positives Ergebnis melden oder eine geschäftliche Begründung angeben. Dadurch können Sie Benutzer über Ihre DLP-Richtlinien informieren und diese umsetzen, ohne dass Benutzer bei der Arbeit behindert werden. Informationen zu Außerkraftsetzungen und falsch positiven Ergebnissen werden auch für Berichte (siehe Hinweise unten zu den DLP-Berichten) protokolliert und in die Schadensberichte (im nächsten Abschnitt) aufgenommen, sodass der Compliance-Beauftragte diese Informationen regelmäßig prüfen kann.
   
@@ -428,13 +428,15 @@ DLP erkennt vertrauliche Informationen mithilfe einer eingehenden Inhaltsanalyse
 
 Nachdem Sie im Security &amp; Compliance Center eine DLP-Richtlinie erstellt haben, wird Sie in einem zentralen Richtlinienspeicher gespeichert und dann mit den verschiedenen Inhaltsquellen synchronisiert, einschließlich:
   
-- Exchange Online und von dort zu Outlook im Web und Outlook 2013 und höher
+- Exchange Online und von dort zu Outlook im Web und Outlook
     
 - OneDrive for Business-Websites
     
 - SharePoint Online-Websites
     
-- Office 2016-Desktopprogramme (Excel 2016, PowerPoint 2016 und Word 2016)
+- Office-Desktop Programme (Excel, PowerPoint und Word)
+
+- Microsoft Teams-Kanäle und -Chats.
     
 Nachdem die Richtlinie mit den richtigen Speicherorten synchronisiert wurde, werden Inhalte ausgewertet und Aktionen erzwungen.
   
@@ -444,26 +446,36 @@ In allen SharePoint Online-Websites und OneDrive für Business-Websites werden D
   
 Aus diesem Grund überprüfen DLP-Richtlinien Dokumente häufig im Hintergrund auf Richtlinienübereinstimmungen. Sie können sich dies als asynchrone Richtlinienauswertung vorstellen.
   
-So funktioniert es. Wenn Benutzer Dokumente auf ihren Websites hinzufügen oder ändern, überprüft die Suchmaschine den Inhalt, sodass Sie später danach suchen können. Während dieses Vorgangs wird der Inhalt auch auf vertrauliche Informationen überprüft und überprüft, ob er freigegeben wurde. Alle vertraulichen Informationen, die gefunden werden, werden sicher im Suchindex gespeichert, sodass nur das Compliance-Team darauf zugreifen kann, jedoch keine typischen Benutzer. Jede DLP-Richtlinie, die Sie aktiviert haben, wird im Hintergrund ausgeführt (asynchron), die Suche wird häufig nach Inhalten überprüft, die einer Richtlinie entsprechen, und durch Anwenden von Aktionen, um Sie vor versehentlichen Lecks zu schützen.
+#### <a name="how-it-works"></a>Funktionsweise
+ 
+Wenn Benutzer Dokumente auf ihren Websites hinzufügen oder ändern, überprüft die Suchmaschine den Inhalt, sodass Sie später danach suchen können. Während dieses Vorgangs wird der Inhalt auch auf vertrauliche Informationen überprüft und überprüft, ob er freigegeben wurde. Alle vertraulichen Informationen, die gefunden werden, werden sicher im Suchindex gespeichert, sodass nur das Compliance-Team darauf zugreifen kann, jedoch keine typischen Benutzer. Jede DLP-Richtlinie, die Sie aktiviert haben, wird im Hintergrund ausgeführt (asynchron), die Suche wird häufig nach Inhalten überprüft, die einer Richtlinie entsprechen, und durch Anwenden von Aktionen, um Sie vor versehentlichen Lecks zu schützen.
   
 ![Diagramm, das zeigt, wie DLP-Richtlinien Inhalt asynchron auswerten](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 Dokumente können jedoch nicht nur mit einer DLP-Richtlinie in Konflikt stehen, sondern es können auch Änderungen vorgenommen werden, die dazu führen, dass sie nun einer DLP-Richtlinie entsprechen. Wenn eine Person zum Beispiel einem Dokument Kreditkartennummern hinzufügt, kann dies dazu führen, dass die DLP-Richtlinie den Zugriff auf das Dokument automatisch sperrt. Wenn die Person jedoch später die vertraulichen Informationen entfernt, wird die Aktion (in diesem Fall die Sperre) automatisch entfernt, wenn das Dokument das nächste Mal anhand der Richtlinie ausgewertet wird.
   
-DLP bewertet alle Inhalte, die indiziert werden können. Weitere Informationen dazu, welche Dateitypen standardmäßig gecrawlt werden, finden Sie unter [standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+DLP bewertet alle Inhalte, die indiziert werden können. Weitere Informationen dazu, welche Dateitypen standardmäßig gecrawlt werden, finden Sie unter [standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Richtlinienauswertung in Exchange Online, Outlook 2013 und höher und Outlook im Web
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Richtlinienauswertung in Exchange Online, Outlook und Outlook im Web
 
-Wenn Sie eine DLP-Richtlinie erstellen, die Exchange Online als Standort enthält, wird die Richtlinie vom Office 365 Security &amp; Compliance Center zu Exchange Online und dann von Exchange Online zu Outlook im Web und Outlook 2013 und höher synchronisiert.
+Wenn Sie eine DLP-Richtlinie mit Exchange Online als Standort erstellen, wird die Richtlinie vom Office 365 Security &amp; Compliance Center zu Exchange Online und dann von Exchange Online zu Outlook im Web und Outlook synchronisiert.
   
-Wenn eine Nachricht in Outlook verfasst wird, kann der Benutzerrichtlinien Tipps anzeigen, während der erstellte Inhalt anhand von DLP-Richtlinien ausgewertet wird. Und nachdem eine Nachricht gesendet wurde, wird Sie anhand von DLP-Richtlinien als normaler Teil des e-Mail-Flusses ausgewertet, zusammen mit Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) und DLP-Richtlinien, die im Exchange Admin Center erstellt wurden (Weitere Informationen finden Sie im nächsten Abschnitt). DLP-Richtlinien überprüfen sowohl die Nachricht als auch alle Anhänge.
+Wenn eine Nachricht in Outlook verfasst wird, kann der Benutzerrichtlinien Tipps anzeigen, während der erstellte Inhalt anhand von DLP-Richtlinien ausgewertet wird. Und nachdem eine Nachricht gesendet wurde, wird Sie anhand von DLP-Richtlinien als normaler Teil des Nachrichtenflusses zusammen mit Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) und DLP-Richtlinien ausgewertet, die im Exchange Admin Center erstellt werden. DLP-Richtlinien überprüfen sowohl die Nachricht als auch alle Anhänge.
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Richtlinienbewertung in den Office 2016-Desktopprogrammen
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Richtlinienauswertung in Office-Desktop Programmen
 
-Excel 2016 2016 PowerPoint und Word 2016 enthalten dieselben Funktionen wie SharePoint Online und OneDrive for Business, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. Diese Office 2016-Programme synchronisieren ihre DLP-Richtlinien direkt aus dem zentralen Richtlinienspeicher und bewerten dann kontinuierlich den Inhalt anhand der DLP-Richtlinien, wenn Personen mit Dokumenten arbeiten, die von einer in einer DLP-Richtlinie enthaltenen Website geöffnet werden.
+Excel, PowerPoint und Word verfügen über die gleichen Möglichkeiten, vertrauliche Informationen zu identifizieren und DLP-Richtlinien als SharePoint Online und OneDrive for Business anzuwenden. Diese Office-Programme synchronisieren ihre DLP-Richtlinien direkt aus dem zentralen Richtlinienspeicher und bewerten dann kontinuierlich den Inhalt anhand der DLP-Richtlinien, wenn Personen mit Dokumenten arbeiten, die von einer in einer DLP-Richtlinie enthaltenen Website geöffnet werden.
   
-DLP-Richtlinienauswertung in Office 2016 soll nicht die Leistung der Programme oder die Produktivität der Mitarbeiter, die an Inhalten arbeiten, beeinträchtigen. Wenn Sie an einem umfangreichen Dokument arbeiten oder der Computer des Benutzers ausgelastet ist, kann es einige Sekunden dauern, bis ein richtlinientipp angezeigt wird.
-  
+Die DLP-Richtlinienevaluierung in Office hat keine Auswirkungen auf die Leistung der Programme oder die Produktivität von Personen, die an Inhalten arbeiten. Wenn Sie an einem umfangreichen Dokument arbeiten oder der Computer des Benutzers ausgelastet ist, kann es einige Sekunden dauern, bis ein richtlinientipp angezeigt wird.
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Richtlinienauswertung in Microsoft Teams
+ 
+Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Standort enthält, wird die Richtlinie vom Office 365 Security &amp; Compliance Center auf Benutzerkonten und Microsoft Teams-Kanäle und-Chats synchronisiert. Je nachdem, wie DLP-Richtlinien konfiguriert werden, kann die Nachricht blockiert oder gesperrt werden, wenn jemand versucht, vertrauliche Informationen in einem Microsoft Teams-Chat oder-Kanal freizugeben. Und Dokumente mit vertraulichen Informationen, die für Gäste (externe Benutzer) freigegeben werden, werden für diese Benutzer nicht geöffnet.
+
+Nehmen wir beispielsweise an, dass jemand versucht, vertrauliche Informationen in einem Teams-Chat oder-Kanal mit externen Benutzern zu teilen. Angenommen, es ist eine DLP-Richtlinie definiert, um dies zu verhindern. Mit geschütztem Schutz werden Nachrichten mit vertraulichen Informationen, die an externe Benutzer gesendet werden, gelöscht. Dies geschieht innerhalb von Sekunden, und es geschieht automatisch, je nachdem, wie die DLP-Richtlinie konfiguriert ist.
+
+Richtlinien Tipps Benachrichtigen Absender darüber, warum Ihre Nachrichten blockiert oder gesperrt wurden. Beispielsweise kann einem Absender mitgeteilt werden, dass seine Nachricht personenbezogene Informationen enthält, die nicht für andere Personen freigegeben werden dürfen, oder dass ein Dokument, das PII enthält, nicht für Benutzer außerhalb Ihrer Organisation freigegeben werden kann. Der Absender kann dann seine Nachricht so bearbeiten, dass Sie mit DLP-Richtlinien kompatibel ist.
+ 
 ## <a name="permissions"></a>Berechtigungen
 
 Mitglieder des Compliance-Teams, die DLP-Richtlinien erstellen, benötigen Berechtigungen &amp; für das Security Compliance Center. Standardmäßig hat ihr mandantenadministrator Zugriff auf diesen Standort und kann Compliance-Verantwortlichen und anderen Benutzern Zugriff auf das Security &amp; Compliance Center gewähren, ohne Ihnen alle Berechtigungen eines Mandanten Administrators zu erteilen. Zu diesem Zweck wird Folgendes empfohlen:
@@ -482,19 +494,19 @@ Diese Berechtigungen sind nur erforderlich, um eine DLP-Richtlinie zu erstellen 
 
 Um die meisten Cmdlets für das Security &amp; Compliance Center zu verwenden, müssen Sie Folgendes tun:
   
-1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Eine Verbindung zum Office 365 Security &amp; Compliance Center mithilfe von Remote-PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. Verwenden eines dieser [Office 365 Security &amp; Compliance Center](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409) -Cmdlets
+2. Verwenden Sie eines der folgenden Cmdlets für [Richtlinien-und Kompatibilitäts-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich Exchange Online. Aus diesem Grund stehen die Cmdlets für die DLP-Berichte in Exchange Online PowerShell zur Verfügung – nicht im &amp; Security Compliance Center PowerShell. Um die Cmdlets für die DLP-Berichte zu verwenden, müssen Sie daher Folgendes tun:
+DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich Exchange Online. Aus diesem Grund stehen **die Cmdlets für die DLP-Berichte in Exchange Online PowerShell zur Verfügung – nicht im &amp; Security Compliance Center PowerShell**. Um die Cmdlets für die DLP-Berichte zu verwenden, müssen Sie daher Folgendes tun:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
-  - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Weitere Informationen
 

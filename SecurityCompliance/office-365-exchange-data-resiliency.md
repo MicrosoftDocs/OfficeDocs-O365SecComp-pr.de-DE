@@ -3,30 +3,29 @@ title: Office 365 Exchange-Datensicherheit
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Erläuterung der verschiedenen Aspekte der Ausfallsicherheit von Daten in Exchange Online und Office 365.
-ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220405"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004232"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Exchange Online-Datensicherheit in Office 365
 
 ## <a name="introduction"></a>Einführung
 Es gibt zwei Arten von Beschädigungen, die sich auf eine Exchange-Datenbank auswirken können: physische Beschädigungen, die in der Regel durch Hardware (insbesondere Speicherhardware) verursacht werden, und logische Beschädigungen, die aufgrund anderer Faktoren auftreten. Im Allgemeinen gibt es zwei Arten von logischen Beschädigungen, die in einer Exchange-Datenbank auftreten können: 
-- **Logische Beschädigung der Datenbank** – die Prüfsumme der Datenbankseite stimmt, aber die Daten auf der Seite sind logisch falsch. Dies kann auftreten, wenn das Datenbankmodul (ESE (Extensible Storage Engine)) versucht, eine Datenbankseite zu schreiben, und obwohl das Betriebssystem eine Erfolgsmeldung zurückgibt, die Daten entweder nie auf den Datenträger geschrieben werden oder an der falschen Stelle geschrieben werden. Dies wird als *Lost Flush*bezeichnet. ESE enthält zahlreiche Features und Sicherheitsvorkehrungen, die eine physische Beschädigung einer Datenbank und anderer datenverlustszenarien verhindern sollen. Um zu verhindern, dass Verlust von Datenverlusten verloren geht, enthält ESE einen Mechanismus zur Bereinigung von Leerzeichen in der Datenbank zusammen mit einem Feature (Einzelseiten Wiederherstellung), um es zu korrigieren. 
-- **Speicher logische Beschädigung** – Daten werden in einer vom Benutzer erwarteten Weise hinzugefügt, gelöscht oder manipuliert. Diese Fälle werden in der Regel durch Anwendungen von Drittanbietern verursacht. Es ist in der Regel nur eine Beschädigung in dem Sinne, dass der Benutzer es als Beschädigung betrachtet. Der Exchange-Speicher betrachtet die Transaktion, die die logische Beschädigung verursacht hat, als eine Reihe gültiger MAPI-Vorgänge. Die [in-situ-Aufbewahrungs](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) Funktionen in Exchange Online bieten Schutz vor Speicher logischen Beschädigungen (da verhindert wird, dass Inhalte dauerhaft von einem Benutzer oder einer Anwendung gelöscht werden). 
+- **Logische Beschädigung der Datenbank** – die Prüfsumme der Datenbankseite stimmt, aber die Daten auf der Seite sind logisch falsch. Dies kann auftreten, wenn das Datenbankmodul (ESE (Extensible Storage Engine)) versucht, eine Datenbankseite zu schreiben, und obwohl das Betriebssystem eine Erfolgsmeldung zurückgibt, die Daten entweder nie auf den Datenträger geschrieben werden oder an der falschen Stelle geschrieben werden. Dies wird als *verlorene Leerung* bezeichnet. ESE enthält zahlreiche Features und Sicherheitsvorkehrungen, die eine physische Beschädigung einer Datenbank und anderer datenverlustszenarien verhindern sollen. Um zu verhindern, dass Verlust von Datenverlusten verloren geht, enthält ESE einen Mechanismus zur Bereinigung von Leerzeichen in der Datenbank zusammen mit einem Feature (Einzelseiten Wiederherstellung), um es zu korrigieren. 
+- **Speicher logische Beschädigung** – Daten werden in einer vom Benutzer erwarteten Weise hinzugefügt, gelöscht oder manipuliert. Diese Fälle werden im Allgemeinen durch Anwendungen von Drittanbietern verursacht. Es handelt sich im Allgemeinen nur insofern um eine Beschädigung, als der Benutzer sie als Beschädigung betrachtet. Der Exchange-Speicher betrachtet die Transaktion, die zur logischen Beschädigung geführt hat, als eine Folge gültiger MAPI-Operationen. Die [in-situ-Aufbewahrungs](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) Funktionen in Exchange Online bieten Schutz vor Speicher logischen Beschädigungen (da verhindert wird, dass Inhalte dauerhaft von einem Benutzer oder einer Anwendung gelöscht werden). 
 
 Exchange Online führt während der Protokoll Überprüfung und der Protokollwiedergabe mehrere Konsistenzprüfungen für replizierte Protokolldateien aus. Diese Konsistenzprüfungen verhindern, dass physische Beschädigungen vom System repliziert werden. Beispielsweise gibt es bei der Protokoll Überprüfung eine physikalische Integritätsprüfung, die die Protokolldatei überprüft und überprüft, ob die in der Protokolldatei aufgezeichnete Prüfsumme mit der im Arbeitsspeicher generierten Prüfsumme übereinstimmt. Darüber hinaus wird der Protokoll Dateikopf überprüft, um sicherzustellen, dass die im Protokollheader aufgezeichnete Protokolldatei mit der Protokolldatei übereinstimmt. Während der Protokollwiedergabe wird die Protokolldatei genauer untersucht. Der Datenbankheader enthält beispielsweise auch die Protokollsignatur, die mit der Signatur der Protokolldatei verglichen wird, um sicherzustellen, dass Sie übereinstimmen. 
 
@@ -46,7 +45,7 @@ Weitere Informationen zu den oben aufgeführten systemeigenen Features erhalten 
 - [In-Situ-Speicher und Beweissicherungsverfahren](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds) 
 - [Aufbewahrungszeit für gelöschte Elemente und automatisch gelöschte Postfächer (beide sind standardmäßig aktiviert)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
-## <a name="database-availability-groups"></a>Database Availability Groups 
+## <a name="database-availability-groups"></a>DatenbankverfügbarkeitsGruppen 
 Jede Postfachdatenbank in Office 365 wird in einer [Database Availability Group (DAG)](https://docs.microsoft.com/exchange/back-up-email) gehostet und in geografisch getrennte Datencenter innerhalb derselben Region repliziert. Die häufigste Konfiguration ist vier Datenbankkopien in vier Rechenzentren; Einige Regionen verfügen jedoch über weniger Rechenzentren (Datenbankenwerden in drei Rechenzentren in Indien und zwei Rechenzentren in Australien und Japan repliziert). In allen Fällen verfügt jedoch jede Postfachdatenbank über vier Kopien, die über mehrere Rechenzentren verteilt sind, wodurch sichergestellt wird, dass die Postfachdaten vor Software-, Hardware-und sogar Rechenzentrums Fehlern geschützt sind. 
 
 Von diesen vier Kopien werden drei davon als hoch verfügbar konfiguriert. Die vierte Kopie ist als verzögerte [Datenbankkopie](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies)konfiguriert. Die verzögerte Datenbankkopie ist nicht für die Wiederherstellung einzelner Postfächer oder Postfachelemente vorgesehen. Ziel ist die Bereitstellungeines Wiederherstellungsmechanismus für das seltene Ereignis einer systemweiten, katastrophalen logischen Beschädigung. 

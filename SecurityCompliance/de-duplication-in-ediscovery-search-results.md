@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Sie haben die Möglichkeit, eDiscovery-Suchergebnisse zu deduplizieren, die exportiert werden, damit nur eine Kopie einer e-Mail-Nachricht exportiert wird, obwohl mehrere Instanzen derselben Nachricht in unterschiedlichen Postfächern gefunden wurden.
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936725"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999298"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Deduplizierung in eDiscovery-Suchergebnissen
 
@@ -66,7 +66,7 @@ Beachten Sie, dass eindeutige Nachrichten auch dann als Duplikate gekennzeichnet
 
 - Die Informationen in diesem Artikel gelten für den Export von Suchergebnissen mithilfe eines der folgenden eDiscovery-Tools:
     
-  - Inhaltssuche im Office 365 Security &amp; Compliance Center
+  - Inhaltssuche im Compliance Center in Office 365
     
   - Compliance-eDiscovery in Exchange Online
     
@@ -74,9 +74,9 @@ Beachten Sie, dass eindeutige Nachrichten auch dann als Duplikate gekennzeichnet
     
 - Weitere Informationen zum Exportieren von Suchergebnissen finden Sie unter:
     
-  - [Exportieren von Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md)
+  - [Exportieren der Inhaltssuche](export-search-results.md)
     
-  - [Exportieren eines Inhalts Suchberichts aus dem Office 365 Security &amp; Compliance Center](export-a-content-search-report.md)
+  - [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
     
   - [Exportieren von in-Place eDiscovery-Suchergebnissen in eine PST-Datei](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

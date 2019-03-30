@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie können das Office 365-Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie die Untersuchung eines kompromittierten Kontos zu beheben oder herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat.
-ms.openlocfilehash: bf07df7ef0767e525ca3e6ff7f5ce4c637880b80
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296768"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999628"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Durchsuchen des Office 365-Überwachungsprotokolls zur Behandlung allgemeiner Szenarien
 
@@ -32,7 +32,7 @@ In diesem Artikel wird beschrieben, wie Sie das Office 365-Überwachungsprotokol
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>Verwenden des Office 365-Überwachungsprotokoll-Such Tools
 
-Alle in diesem Artikel beschriebenen Problembehandlungsszenarien basieren auf der Verwendung des Überwachungsprotokoll-Such Tools im Office 365 Security & Compliance Center. In diesem Abschnitt werden die Berechtigungen aufgelistet, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, und die Schritte zum Zugreifen auf und Ausführen von Überwachungsprotokoll suchen. Jeder szenariobereich enthält spezifische Anleitungen zum Konfigurieren einer Suchabfrage für das Überwachungsprotokoll und zu den zu suchenden Details in den Überwachungsdatensätzen, die den Suchkriterien entsprechen.
+Alle in diesem Artikel beschriebenen Problembehandlungsszenarien basieren auf der Verwendung des Überwachungsprotokoll-Such Tools im Office 365 Security and Compliance Center. In diesem Abschnitt werden die Berechtigungen aufgelistet, die zum Durchsuchen des Überwachungsprotokolls erforderlich sind, und die Schritte zum Zugreifen auf und Ausführen von Überwachungsprotokoll suchen. Jeder szenariobereich enthält spezifische Anleitungen zum Konfigurieren einer Suchabfrage für das Überwachungsprotokoll und zu den zu suchenden Details in den Überwachungsdatensätzen, die den Suchkriterien entsprechen.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Erforderliche Berechtigungen für die Verwendung des Überwachungsprotokoll-Such Tools
 
@@ -40,13 +40,13 @@ Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "�
 
 ### <a name="running-audit-log-searches"></a>Durchführen von Überwachungsprotokoll suchen
 
-In diesem Abschnitt werden die Grundlagen zum Erstellen und Durchführen von Überwachungsprotokoll suchen beschrieben. Verwenden Sie diese Anweisungen als Ausgangspunkt für jedes Problembehandlungsszenario in diesem Artikel. Ausführlichere schrittweise Anleitungen finden Sie unter durch [Suchen des Überwachungsprotokolls im Office 365 Security _AMP_ Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+In diesem Abschnitt werden die Grundlagen zum Erstellen und Durchführen von Überwachungsprotokoll suchen beschrieben. Verwenden Sie diese Anweisungen als Ausgangspunkt für jedes Problembehandlungsszenario in diesem Artikel. Ausführlichere schrittweise Anleitungen finden Sie unter durch [Suchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
   
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
-3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Search & Investigation** > **Audit Log Search**.
+3. Klicken Sie im linken Bereich des Security and Compliance Centers auf **Such** > **Überwachungsprotokoll**Suche.
     
     Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
     
@@ -54,7 +54,7 @@ In diesem Abschnitt werden die Grundlagen zum Erstellen und Durchführen von Üb
   
 4. Sie können die folgenden Suchkriterien konfigurieren. Beachten Sie, dass für jedes Problembehandlungsszenario in diesem Artikel spezifische Anleitungen zum Konfigurieren dieser Felder empfohlen werden.
     
-    a. **Aktivitäten** – klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen. Außerdem müssen Sie dieses Feld in einigen der Problembehandlungsszenarien leer lassen.
+    a. **Aktivitäten** -klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsdatensätze für die ausgewählten Aktivitäten angezeigt. Wenn Sie **Ergebnisse für alle Aktivitäten anzeigen** auswählen, werden Ergebnisse für alle Aktivitäten angezeigt, die den anderen Suchkriterien entsprechen. Außerdem müssen Sie dieses Feld in einigen der Problembehandlungsszenarien leer lassen.
     
     b. **Start** -und **Enddatum** – wählen Sie einen Datums-und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Die letzten sieben Tage sind standardmäßig ausgewählt. Datum und Uhrzeit werden im UTC-Format (Coordinated Universal Time) angezeigt. Der maximale Zeitraum, den Sie angeben können, beträgt 90 Tage.
 
@@ -113,13 +113,13 @@ An dieser Stelle müssen Sie sich die Details der einzelnen Überwachungsdatens�
 
 ![Detaillierte Informationen aus dem Überwachungsdatensatz](media/emailforwarding2.png)
 
-a. im Feld **objectID** wird der Alias des Postfachs angezeigt, für das die e-Mail-Weiterleitung aktiviert wurde. Dieses Postfach wird auch in der Spalte **Element** auf der Suchergebnisseite angezeigt.
+a. Im Feld **objectID** wird der Alias des Postfachs, für das die e-Mail-Weiterleitung aktiviert wurde, angezeigt. Dieses Postfach wird auch in der Spalte **Element** auf der Suchergebnisseite angezeigt.
 
-b. im Feld **Parameter** gibt der Wert *ForwardingSmtpAddress* an, dass für das Postfach eine e-Mail-Weiterleitung festgelegt wurde. In diesem Beispiel wird die e-Mail an die e-Mail-Adresse mike@contoso.com weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com-Organisation befindet.
+b. Im Feld **Parameter** gibt der Wert *ForwardingSmtpAddress* an, dass für das Postfach eine e-Mail-Weiterleitung festgelegt wurde. In diesem Beispiel wird die e-Mail an die e-Mail-Adresse mike@contoso.com weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com-Organisation befindet.
 
-c. der *true* -Wert für den *DeliverToMailboxAndForward* -Parameter gibt an, dass eine kopie der Nachricht an Sarad@alpinehouse.onmicrosoft.com übermittelt *und* an die e-Mail-Adresse weitergeleitet wird, die von der *ForwardingSmtpAddress *der Parameter, der in diesem Beispiel Mike@contoso.com ist. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false*festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das Postfach zugestellt, das im **objectID** -Feld angegeben ist.
+c. Der *true* -Wert für den *DeliverToMailboxAndForward* -Parameter gibt an, dass eine kopie der Nachricht an Sarad@alpinehouse.onmicrosoft.com übermittelt *und* an die e-Mail-Adresse weitergeleitet wird, die von der *ForwardingSmtpAddress *der Parameter, der in diesem Beispiel Mike@contoso.com ist. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false*festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das Postfach zugestellt, das im **objectID** -Feld angegeben ist.
 
-d. das Feld **UserID** gibt den Benutzer an, der die e-Mail-Weiterleitung für das im Feld **objectID** angegebene Postfach festgelegt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt. In diesem Fall scheint es, dass der Besitzer des Postfachs e-Mail-Weiterleitung für Ihr Postfach festgelegt hat.
+d. Das Feld **UserID** gibt den Benutzer an, der die e-Mail-Weiterleitung für das im Feld **objectID** -Feld angegebene Postfach festgelegt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt. In diesem Fall scheint es, dass der Besitzer des Postfachs e-Mail-Weiterleitung für Ihr Postfach festgelegt hat.
 
 Wenn Sie feststellen, dass die e-Mail-Weiterleitung nicht für das Postfach festgelegt werden soll, können Sie Sie entfernen, indem Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
 
@@ -131,7 +131,9 @@ Weitere Informationen zu den Parametern für die e-Mail-Weiterleitung finden Sie
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>Ermitteln, ob ein Benutzer e-Mail-Elemente gelöscht hat
 
-Bevor Überwachungsprotokolleinträge zu gelöschten e-Mail-Elementen im Office 365-Überwachungsprotokoll gespeichert werden, muss die postfachüberwachung für jedes Benutzerpostfach in Ihrer Organisation aktiviert werden. Darüber hinaus müssen die SoftDelete-und HardDelete-Postfachaktionen für die Überwachung aktiviert sein. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](enable-mailbox-auditing.md). Wenn die postfachüberwachung für Benutzer bereits aktiviert ist, führen Sie die folgenden Schritte aus, um das Überwachungsprotokoll nach Ereignissen im Zusammenhang mit gelöschten e-Mail-Elementen zu durchsuchen.
+Ab Januar 2019 aktiviert Microsoft die postfachüberwachungsprotokollierung standardmäßig für alle Office 365 und Microsoft-Organisationen. Dies führt dazu, dass bestimmte Aktionen, die von Postfachbesitzern ausgeführt werden, automatisch protokolliert werden, und die entsprechenden Post Fach Überwachungseinträge stehen zur Verfügung, wenn Sie im postfachüberwachungsprotokoll nach diesen suchen. Bevor die postfachüberwachung standardmäßig aktiviert wurde, muss Sie für jedes Benutzerpostfach in Ihrer Organisation manuell aktiviert werden. 
+
+Die standardmäßig protokollierten Postfachaktionen schließen die Postfachaktionen SoftDelete und HardDelete ein, die von Postfachbesitzern ausgeführt werden. Dies führt dazu, dass Sie die folgenden Schritte ausführen können, um das Überwachungsprotokoll nach Ereignissen im Zusammenhang mit gelöschten e-Mail-Elementen zu durchsuchen. Weitere Informationen zur postfachüberwachung in der Standardeinstellung finden Sie unter [Verwalten der postfachüberwachung](enable-mailbox-auditing.md).
 
 Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses Szenario konfigurieren:
 
@@ -139,7 +141,7 @@ Hier erfahren Sie, wie Sie eine Überwachungsprotokoll-Suchabfrage für dieses S
 
 - **Gelöschte Nachrichten aus Ordner "Gelöschte Elemente"** – diese Aktivität entspricht der **SoftDelete** -Post Fach Überwachungsaktion. Diese Aktivität wird auch protokolliert, wenn ein Benutzer ein Element dauerhaft löscht, indem er es auswählt und **UMSCHALT + ENTF**drückt. Nachdem ein Element dauerhaft gelöscht wurde, kann der Benutzer es wiederherstellen, bis der Aufbewahrungszeitraum für gelöschte Elemente abgelaufen ist.
 
-- **Gelöschte Nachrichten aus dem Postfach** : diese Aktivität entspricht der **HardDelete** -Post Fach Überwachungsaktion. Diese wird protokolliert, wenn ein Benutzer ein Element aus dem Ordner "Wiederherstellbare Elemente" löscht. Administratoren können das Inhaltssuche-Tool im Office 365 Security & Compliance Center verwenden, um gelöschte Elemente zu suchen und wiederherzustellen, bis der Aufbewahrungszeitraum des gelöschten Elements abgelaufen ist oder länger ist, wenn das Postfach des Benutzers in der Warteschleife steht.
+- **Gelöschte Nachrichten aus dem Postfach** : diese Aktivität entspricht der **HardDelete** -Post Fach Überwachungsaktion. Diese wird protokolliert, wenn ein Benutzer ein Element aus dem Ordner "Wiederherstellbare Elemente" löscht. Administratoren können das Inhaltssuche-Tool im Security and Compliance Center verwenden, um gelöschte Elemente zu suchen und wiederherzustellen, bis der Aufbewahrungszeitraum des gelöschten Elements abgelaufen ist oder länger ist, wenn das Postfach des Benutzers in der Warteschleife steht.
 
 **Start** -und **Enddatum** – wählen Sie einen Datumsbereich aus, der für Ihre Untersuchung gilt.
 
@@ -187,10 +189,10 @@ Nachdem Sie die Suche ausgeführt haben, werden alle Überwachungsdatensätze f�
 
 ![Überwachungsdatensatz für neue Posteingangsregel](media/NewInboxRuleRecord.png)
 
-a. im Feld **objectID** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (beispielsweise Sarad) und den Namen der Posteingangsregel (beispielsweise "Nachrichten vom Administrator verschieben").
+a. Im Feld **objectID** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (beispielsweise Sarad) und den Namen der Posteingangsregel (beispielsweise "Nachrichten vom Administrator verschieben").
 
-b. im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den *from* -Parameter definierte Wert gibt an, dass die Posteingangsregel auf e-Mails reagiert, die von admin@alpinehouse.onmicrosoft.com gesendet werden. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den *from* -Parameter definierte Wert gibt an, dass die Posteingangsregel auf e-Mails reagiert, die von admin@alpinehouse.onmicrosoft.com gesendet werden. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. in diesem Beispiel werden Nachrichten aus admin@alpinehouse.onmicrosoft.com in den Ordner mit dem Namen *AdminSearch*verschoben. Im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) finden Sie eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können.
+c. Der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. in diesem Beispiel werden Nachrichten aus admin@alpinehouse.onmicrosoft.com in den Ordner mit dem Namen *AdminSearch*verschoben. Im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) finden Sie eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können.
 
-d. das Feld **UserID** gibt den Benutzer an, der die im **objectID** -Feld angegebene Posteingangsregel erstellt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt.
+d. Das Feld **UserID** gibt den Benutzer an, der die im **objectID** -Feld angegebene Posteingangsregel erstellt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt.

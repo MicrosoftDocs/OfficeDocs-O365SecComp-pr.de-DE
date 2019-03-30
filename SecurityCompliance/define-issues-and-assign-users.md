@@ -3,7 +3,6 @@ title: Definieren von Problemen und Zuweisen von Benutzern in Office 365 Advance
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Hier erfahren Sie, wie Sie ein Problem hinzufügen oder bearbeiten, indem Sie ihm Benutzer zuweisen oder ein Problem für einen eDiscovery-Fall in Office 365 Advanced eDiscovery löschen.
-ms.openlocfilehash: b8ed024983c527246236b355c81ef226c98f404b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218235"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000638"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definieren von Problemen und Zuweisen von Benutzern in Office 365 Advanced eDiscovery
 
@@ -31,11 +30,11 @@ In Advanced eDiscovery können ein oder mehrere Probleme in einem Fall definiert
 
 1. Wählen Sie auf der Registerkarte \> ** \> Relevanz Relevanz** die Option **Probleme**aus.
     
-    ![Relevanzeinrichtungsprobleme](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![Probleme beim Einrichten der Relevanz](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
 2. Um ein Problem hinzuzufügen, klicken Sie auf das Symbol * * + * *. Das Dialogfeld **Problem hinzufügen** wird angezeigt. 
     
-    ![Relevanzeinrichtung – Problem beim Hinzufügen](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![Relevanz-Setup-Problem](media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
     Klicken Sie auf das **Bearbeitungs** Symbol, um ein Problem zu bearbeiten. 
     
@@ -68,7 +67,7 @@ Probleme können gelöscht werden (d.h. aus der Datenbank entfernt) werden, nur 
     
 2. Wählen Sie das zu löschende Problem aus der Datenbank aus, und klicken Sie dann auf **Löschen**.
     
-3. Eine Bestätigungsmeldung wird angezeigt. Klicken Sie auf **Ja** , um zu bestätigen. 
+3. Eine Bestätigungsmeldung wird angezeigt. Klicken Sie zur Bestätigung auf **Ja**. 
     
 4. Klicken Sie auf **OK**.
     

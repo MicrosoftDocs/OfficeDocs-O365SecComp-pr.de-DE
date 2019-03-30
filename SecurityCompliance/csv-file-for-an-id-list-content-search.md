@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Verwenden Sie die Datei results. CSV oder unindexed Items. CSV aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die bestimmte e-Mail-Nachrichten zurückgibt. ID-Listen suchen werden normalerweise verwendet, um teilweise indizierte Postfachelemente zurückzugeben.
-ms.openlocfilehash: 558a8512ed133995b2cc1d0d8b78fd7f08d11168
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296738"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999678"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Vorbereiten einer CSV-Datei für eine Inhaltssuche in der ID-Liste in Office 365
 
@@ -25,11 +25,11 @@ Sie können mithilfe einer Liste von Exchange-IDs nach bestimmten e-Mail-Nachric
   
 Im folgenden finden Sie eine kurze Übersicht über das Verfahren zum Erstellen einer ID-Listensuche.
   
-1. Erstellen Sie eine neue oder geführte Inhaltssuche im Security &amp; Compliance Center, und führen Sie Sie aus.
+1. Erstellen Sie eine neue oder geführte Inhaltssuche im Security & Compliance Center, und führen Sie Sie aus.
     
 2. Exportieren der Inhalts Suchergebnisse oder Exportieren des Inhalts Suchberichts. Weitere Informationen finden Sie unter:
     
-    - [Exportieren von Inhalts Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md)
+    - [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
     
     - [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
     
@@ -76,7 +76,7 @@ Im nächsten Schritt erstellen Sie eine neue ID-Listeninhalts Suche und übermit
 > [!IMPORTANT]
 > Sie sollten eine ID-Listensuche nicht mehr als 2 Tage nach dem Export der Ergebnisse oder Berichte aus einer Inhaltssuche erstellen. Wenn die Suchergebnisse oder der Bericht vor mehr als zwei Tagen exportiert wurden, sollten Sie die Suchergebnisse oder den Bericht erneut exportieren, um aktualisierte CSV-Dateien zu generieren. Anschließend können Sie eine der aktualisierten CSV-Dateien vorbereiten und diese verwenden, um eine ID-Listensuche zu erstellen. 
   
-1. Navigieren Sie im &amp; Security Compliance Center zu Such **Suche &amp; ** \> - **Inhaltssuche**.
+1. Navigieren Sie im Security & Compliance Center zur **Such** \> **Inhaltssuche**.
     
 2. Klicken Sie auf der Seite **Suchen** auf den Pfeil neben ![Symbol](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **neue Suche**hinzufügen, und klicken Sie dann auf **nach ID-Liste suchen**.
     

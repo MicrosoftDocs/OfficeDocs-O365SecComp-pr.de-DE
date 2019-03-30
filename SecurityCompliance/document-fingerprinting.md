@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte für Dokument-Fingerabdrücke und die Erstellung eines mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866351"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999138"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -66,7 +66,7 @@ In den folgenden Fällen werden vertrauliche Informationen in Dokument-Fingerabd
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Verwenden von PowerShell zum Erstellen eines Klassifizierungsregel Pakets basierend auf Dokument-Fingerabdruck
 
-Beachten Sie, dass Sie einen Fingerabdruck nur mithilfe von PowerShell im Security &amp; Compliance Center erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Beachten Sie, dass Sie einen Fingerabdruck nur mithilfe von PowerShell im Security &amp; Compliance Center erstellen können. Informationen zum Herstellen einer Verbindung finden Sie unter [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP verwendet Klassifizierungsregel Pakete, um vertrauliche Inhalte zu identifizieren. Verwenden Sie die Cmdlets **New-DlpFingerprint** und **New-DlpSensitiveInformationType** , um ein Klassifizierungsregel Paket basierend auf einem Dokument Fingerabdruck zu erstellen. Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Daten Klassifizierungsregel gespeichert werden, führen Sie immer **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **Set-DlpSensitiveInformationType** in der gleichen PowerShell-Sitzung. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können. 
   

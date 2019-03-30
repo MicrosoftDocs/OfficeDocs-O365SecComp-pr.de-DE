@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center, um zielgerichtete Auflistungen auszuführen. Eine zielgerichtete Sammlung stellt sicher, dass Elemente, die auf eine Groß-/Kleinschreibung oder privilegierte Elemente reagieren, sich in einem bestimmten Postfach oder Websiteordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für die bestimmten Postfach-oder Websiteordner abzurufen, die Sie durchsuchen möchten.
-ms.openlocfilehash: 4cfdb95ef65f94bc46b79265f986ed8d9ada04da
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Verwenden Sie die Inhaltssuche im Security & Compliance Center, um zielgerichtete Auflistungen auszuführen. Eine zielgerichtete Sammlung stellt sicher, dass Elemente, die auf eine Groß-/Kleinschreibung oder privilegierte Elemente reagieren, sich in einem bestimmten Postfach oder Websiteordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für die bestimmten Postfach-oder Websiteordner abzurufen, die Sie durchsuchen möchten.
+ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30899995"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001238"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden der Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
@@ -56,7 +56,7 @@ Das Skript, das Sie in diesem ersten Schritt ausführen, gibt eine Liste der Pos
     
   - **OneDrive for Business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen zum Herstellen einer Verbindung mit Exchange Online &amp; und dem Security Compliance Center mit Remote-PowerShell. Wie bereits erläutert, müssen Sie die entsprechenden Berechtigungen für die erfolgreiche Ausführung dieses Skripts zugewiesen haben.
+- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen zum Herstellen einer Verbindung mit Exchange Online und dem Security _AMP_ Compliance Center mit Remote-PowerShell. Wie bereits erläutert, müssen Sie die entsprechenden Berechtigungen für die erfolgreiche Ausführung dieses Skripts zugewiesen haben.
     
 So zeigen Sie eine Liste von Postfachordnern oder Website documentlink (Pfad) an
   
@@ -66,7 +66,7 @@ So zeigen Sie eine Liste von Postfachordnern oder Website documentlink (Pfad) an
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -83,7 +83,7 @@ So zeigen Sie eine Liste von Postfachordnern oder Website documentlink (Pfad) an
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security &amp; Compliance Center (Exchange Online Protection - EOP)
+  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
   if (!$credentials)
   {
       $credentials = Get-Credential
@@ -125,7 +125,7 @@ So zeigen Sie eine Liste von Postfachordnern oder Website documentlink (Pfad) an
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security &amp; Compliance Center
+      # Authenticate with the Security & Compliance Center
       if (!$SccSession)
       {
           $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection

@@ -3,7 +3,6 @@ title: Exportieren von Ergebnissen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Erfahren Sie, wie Sie Optionen zum Exportieren von Ergebnissen aus Office 365 Advanced eDiscovery definieren, einschließlich des Verfahrens zum Angeben von Parametern für einen Export Batch. '
-ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218095"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000908"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportieren von Ergebnissen in Office 365 Advanced eDiscovery
 
@@ -163,7 +162,7 @@ Das eDiscovery-Export Tool wird verwendet, um Suchergebnisse aus Advanced eDisco
     
     Das eDiscovery-Export Tool wurde gestartet.
     
-    ![eDiscovery-Exporttool](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
+    ![eDiscovery-Export Tool](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
 11. Im **eDiscovery-Export Tool**:
     
@@ -186,7 +185,7 @@ In der folgenden Tabelle sind die Ausgabedateien aufgeführt, die beim Ausführe
 |Ablaufverfolgung  <br/> |txt  <br/> |Eine vom eDiscovery-Export Tool generierte Protokolldatei.  <br/> |
 |Extrahierte Textdateien  <br/> |Datei Ordner  <br/> |Ordner, der die extrahierten Textdateien der exportierten Dateien enthält.  <br/> |
 |Eingabe-oder systemeigene Dateien  <br/> |Datei Ordner  <br/> |Ordner, der die systemeigenen und Eingabedateien der exportierten Dateien enthält.  <br/> |
-|Liste exportieren  <br/> |xlsx  <br/> |Exportierte Metadaten im XLSX-Format. Die Felder in den Dateien entsprechen der Auswahl des Vorlagen Benutzers für den Export. Bei Bedarf werden mehrere Dateien erstellt, die jeweils 100 150K Zeilen enthalten. Wenn ein bestimmter Wert mehr Zeichen enthält, als eine Excel-Zelle enthalten kann (derzeit ist der Grenzwert 32.767 Zeichen), wird der Wert auf die zulässige maximale Länge gekürzt. Wenn ein Wert gekürzt wird, ist die Hintergrundfarbe der Zelle rot, um dies dem Benutzer anzuzeigen. " E-Mail-Teilnehmer "ist ein Beispiel für ein Feld, das den Längen Grenzwert überschreiten kann, wenn die e-Mail an eine umfangreiche Verteilung gesendet wurde. Details zu den Ausgabefeldern finden Sie unter [Export Report Fields](export-report-fields-in-advanced-ediscovery.md) .<br/> |
+|Liste exportieren  <br/> |xlsx  <br/> |Exportierte Metadaten im XLSX-Format. Die Felder in den Dateien entsprechen der Auswahl des Vorlagen Benutzers für den Export. Bei Bedarf werden mehrere Dateien erstellt, die jeweils 100 150K Zeilen enthalten. Wenn ein bestimmter Wert mehr Zeichen enthält, als eine Excel-Zelle enthalten kann (derzeit ist der Grenzwert 32.767 Zeichen), wird der Wert auf die zulässige maximale Länge gekürzt. Wenn ein Wert gekürzt wird, ist die Hintergrundfarbe der Zelle rot, um dies dem Benutzer anzuzeigen. " E-Mail-Teilnehmer "ist ein Beispiel für ein Feld, das den Längen Grenzwert überschreiten kann, wenn die e-Mail an eine umfangreiche Verteilung gesendet wurde. Details zu den Ausgabefeldern finden Sie unter [Export Report Fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
 |Datei laden  <br/> |CSV  <br/> |Exportierte Metadaten im CSV-Format zum Laden in eine andere Anwendung. Die Felder in den Dateien entsprechen der Auswahl des Vorlagen Benutzers für den Export.  <br/> |
 |Erfolgsindikator  <br/> |txt  <br/> |Wird nur beim Exportieren in ein Azure-BLOB von einem Drittanbieter erstellt. Wenn der Export vollständig erfolgreich verläuft, wird die Datei erstellt. Bei einem Fehler oder teilweiser Erfolg wird die Datei nicht erstellt. Die Datei wird im Stammordner erstellt und ermöglicht die automatische Nachverfolgung in verschiedenen Export Batches/-Sitzungsstatus. Dies ist eine leere Datei. Der Name lautet: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    

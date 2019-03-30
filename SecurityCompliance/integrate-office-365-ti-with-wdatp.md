@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrieren Sie Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection, um detailliertere Informationen zur Bedrohungs Verwaltung zu erhalten.
-ms.openlocfilehash: bbbb42c9d0f37ab33323b2fa1dd071bd5ee16829
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30523979"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998958"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrieren von Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection
 
@@ -42,7 +42,7 @@ In diesem Beispiel können Sie sehen, dass die Empfänger der e-Mail-Nachricht v
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>So integrieren Sie Office 365 Advanced Threat Protection in Windows Defender ATP
 
-Die Integration von Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection wird mithilfe des Office 365 Security & Compliance Center und des Windows Defender Advanced Threat Protection-Portals eingerichtet.
+Die Integration von Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection wird mithilfe des Security & Compliance Centers und des Windows Defender Advanced Threat Protection-Portals eingerichtet.
   
 1. Wechseln Sie als globaler Office 365-Administrator oder als Sicherheitsadministrator zu [https://protection.office.com](https://protection.office.com) Ihrem Geschäfts-oder Schulkonto für Office 365, und melden Sie sich an. 
     

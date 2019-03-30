@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Office 365 aufbewahrt werden, können Sie eine Disposition-Überprüfungen am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, die Inhalte in Microsoft 365 speichert, können Sie eine Disposition-Überprüfungen am Ende des Aufbewahrungszeitraums auslösen.
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512660"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997261"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über die Disposition Reviews
 
@@ -33,7 +33,7 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht hat, gibt es meh
     
 - Den Inhalt an Clients zurückgeben oder an eine andere Organisation übertragen.
     
-Wenn Sie eine Aufbewahrungs Bezeichnung in Office 365 erstellen, können Sie eine Disposition-Überprüfungen am Ende des Aufbewahrungszeitraums auslösen. Bei einer Disposition:
+Wenn Sie im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security & Compliance Center eine Aufbewahrungs Bezeichnung erstellen, können Sie eine Disposition Überprüfung am Ende des Aufbewahrungszeitraums auslösen. Bei einer Disposition:
   
 - Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überarbeitung haben. Diese Prüfer können einzelne Benutzer, Verteiler-oder Sicherheitsgruppen oder Office 365-Gruppen sein. Beachten Sie, dass Benachrichtigungen wöchentlich gesendet werden.
     

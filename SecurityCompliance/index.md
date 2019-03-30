@@ -90,8 +90,8 @@ Wenn Ihre Organisation Ihre Daten schützen oder mit gesetzlichen oder behördli
                     <div class="cardText">
                         <h3>Sicher bleiben</h3>
                         <p><a href="security-roadmap.md">Office 365-Sicherheits-Roadmap</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft Secure Score</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Office 365 Security & Compliance Center</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft-Sicherheitsbewertung</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Security & Compliance Center</a></p>
                     </div>
                 </div>
             </div>

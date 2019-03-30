@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Administratoren erfahren mehr über die langsamen Nachrichtenfluss Regeln im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center.
-ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Administratoren können sich über die Einblicke in die langsamen Nachrichtenfluss Regeln im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
+ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720255"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999778"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Einblick für langsame Nachrichtenflussregeln
 
@@ -29,7 +29,7 @@ Ineffiziente Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) könn
 
 Die Einblicke helfen Ihnen bei der Identifizierung und Optimierung von Nachrichtenfluss Regeln, um die Verzögerungen bei der Nachrichtenübermittlung zu verringern.
 
-![Eine langsame Nachrichtenfluss Regel Einblicke in das Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Eine langsame Nachrichtenfluss Regel Einblicke in das Nachrichtenfluss-Dashboard im Security & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Wenn Sie auf **Details anzeigen**klicken, wird ein Flyout-Bereich angezeigt, in dem Sie die Regel überprüfen können. Klicken Sie im Flyoutbereich auch auf **Beispiel Nachrichten anzeigen** , um zu sehen, welche Art von Nachrichten von der Regel betroffen sind.
 

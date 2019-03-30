@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Sie können die Standardgröße von PST-Dateien ändern, die beim Exportieren von eDiscovery-Suchergebnissen auf Ihren Computer heruntergeladen werden.
-ms.openlocfilehash: 8a956091f29ec1b564d3194c7e3ca2680fdeb564
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 98b543b6e34cb9cb075a765671def91742aee6c1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214625"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999718"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 
 Wenn Sie das Office 365 eDiscovery-Export Tool verwenden, um die e-Mail-Ergebnisse einer eDiscovery-Suche aus den verschiedenen Microsoft eDiscovery-Tools zu exportieren, beträgt die Standardgröße einer PST-Datei, die exportiert werden kann, 10 GB. Wenn Sie diese Standardgröße ändern möchten, können Sie die Windows-Registrierung auf dem Computer bearbeiten, den Sie zum Exportieren der Suchergebnisse verwenden. Ein Grund hierfür ist, dass eine PST-Datei auf Wechseldatenträger, eine DVD, eine CD oder ein USB-Laufwerk angepasst werden kann. 
   
 > [!NOTE]
->  Das Office 365 eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie die Inhaltssuche &amp; im Office 365 Security Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden. 
+>  Das Office 365 eDiscovery-Export Tool wird verwendet, um die Suchergebnisse zu exportieren, wenn Sie das Tool für die Inhaltssuche im Security and Compliance Center, in-Place eDiscovery in Exchange Online und im eDiscovery Center in SharePoint Online verwenden.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Erstellen einer Registrierungseinstellung zum Ändern der Größe von PST-Dateien beim Exportieren von eDiscovery-Suchergebnissen
 

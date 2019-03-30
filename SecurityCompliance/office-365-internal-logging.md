@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Erläuterung der Funktionsweise der internen Protokollierung für Office 365-Entwicklungsteams.
-ms.openlocfilehash: 68f8763b9a647de462f402e40a4c78749343dfd9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216495"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004216"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Interne Protokollierung für Office 365 Engineering
 Zusätzlich zu den für Kunden verfügbaren Ereignissen und Protokolldaten gibt es auch ein internes Protokoll Datenerfassungssystem, das Office 365-Ingenieuren zur Verfügung steht. Viele verschiedene Typen von Protokolldaten werden von Office 365-Servern auf einen internen, großen Datenverarbeitungsdienst namens Cosmos hochgeladen. Jedes Dienst Team lädt Überwachungsprotokolle von ihren jeweiligen Servern in die Cosmos-Datenbank für Aggregation und Analyse hoch. Diese Datenübertragung erfolgt über eine FIPS 140-2-validierte TLS-Verbindung auf speziell genehmigten Ports und Protokollen mithilfe eines proprietären Automatisierungstools namens Office Data Loader (ODL). Die Tools, die in Office 365 zum Erfassen und Verarbeiten von Überwachungsdatensätzen verwendet werden, lassen keine dauerhaften oder irreversiblen Änderungen am ursprünglichen Inhalt oder der Zeitreihen Folge des Überwachungsdatensatzes zu.

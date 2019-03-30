@@ -1,9 +1,8 @@
 ---
-title: Definieren von Fall- und Mandanteneinstellungen in Office 365 Advanced eDiscovery
+title: Definieren von Groß-/Kleinschreibung und Mandanten Einstellungen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Erfahren Sie mehr über die Einstellungen für Bezeichnungen, Cross-Module und Mandanten, die Sie auf der Fallebene in Office 365 Advanced eDiscovery definieren können.  '
-ms.openlocfilehash: e27f33f15d133d502e01a780d6f05ca85cce41a5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2e95984651bf4da86bd64cfc3730fae75391410d
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219365"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000838"
 ---
-# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definieren von Fall- und Mandanteneinstellungen in Office 365 Advanced eDiscovery
+# <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definieren von Groß-/Kleinschreibung und Mandanten Einstellungen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
-ms.openlocfilehash: 6a552e7ce8982f3b7d943136907764385fa33115
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216605"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000187"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -161,7 +161,7 @@ In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfig
   
 Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsite.
   
-1. Melden Sie sich beim Office 365-Portal mit einem Konto an, das auch zum Verwalten der SharePoint Online-Teamwebsite verwendet wird (SharePoint Online-Administrator). Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich beim Admin Center mit einem Konto an, das auch zur Verwaltung der SharePoint Online-Teamwebsite verwendet wird (ein SharePoint Online-Administrator). Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -179,7 +179,7 @@ Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsi
     
 Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die gewünschten Berechtigungen.
   
-1. Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen" und anschließend auf **Websiteberechtigungen**.
+1. Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen“ und anschließend auf **Websiteberechtigungen**.
     
 2. Klicken Sie im Bereich **Websiteberechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
     

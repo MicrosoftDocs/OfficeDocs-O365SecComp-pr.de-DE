@@ -12,16 +12,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die in Postfächer in Office 365 aus einer Drittanbieter-Datenquelle importiert wurden. Sie können eine Abfrage erstellen, um nach allen importierten Elementen zu suchen, oder eine Abfrage erstellen, um nach bestimmten Drittanbieter Datentypen zu suchen. In diesem Artikel werden die Werte aufgelistet, die Sie in einer Stichwortabfrage verwenden können, um die Drittanbieter-Datentypen zu durchsuchen, die in Office 365 importiert werden können.
-ms.openlocfilehash: f1ab3cfc8dd866aa0d70014b22a301de2a65f3c5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296038"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999708"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden
 
-Sie können das eDiscovery-Tool für die [Inhaltssuche](content-search.md) im Office 365 &amp; Security Compliance Center verwenden, um nach Elementen zu suchen, die in Postfächern in Office 365 aus einer Drittanbieter-Datenquelle importiert wurden. Sie können eine Abfrage zum Durchsuchen aller importierten drittanbieterdaten Elemente erstellen, oder Sie können eine Abfrage erstellen, um nur bestimmte Drittanbieter-Datenelemente zu durchsuchen. Darüber hinaus können Sie auch eine abfragebasierte AufbewahrungsRichtlinie oder einen abfragebasierten eDiscovery-Speicher erstellen, um drittanbieterdaten in Office 365 zu erhalten. 
+Sie können das eDiscovery-Tool für die [Inhaltssuche](content-search.md) im Security _AMP_ Compliance Center verwenden, um nach Elementen zu suchen, die in Postfächern in Office 365 aus einer Drittanbieter-Datenquelle importiert wurden. Sie können eine Abfrage zum Durchsuchen aller importierten drittanbieterdaten Elemente erstellen, oder Sie können eine Abfrage erstellen, um nur bestimmte Drittanbieter-Datenelemente zu durchsuchen. Darüber hinaus können Sie auch eine abfragebasierte AufbewahrungsRichtlinie oder einen abfragebasierten eDiscovery-Speicher erstellen, um drittanbieterdaten in Office 365 zu erhalten. 
   
 Weitere Informationen zum Importieren von drittanbieterdaten und eine Liste der Drittanbieter Datentypen, die in Office 365 importiert werden können, finden Sie unter [Archivierung von drittanbieterdaten in office 365](archiving-third-party-data.md). 
   
@@ -55,7 +55,7 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
   
 |**Drittanbieter-Datentyp**|**Wert für `itemclass:` Eigenschaft**|
 |:-----|:-----|
-|AIM  <br/> | `ipm.externaldata.AIM*` <br/> |
+|VERSUCHEN  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL mit Pivot-Client
   <br/> | `ipm.externaldata.Pivot.IM` <br/> |
@@ -75,8 +75,7 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |BlackBerry-PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry-SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg Mail
-  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg-Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco- &amp; Sofortnachrichten-Anwesenheits Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -86,11 +85,9 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |Facebook  <br/> | `ipm.externaldata.Facebook*` <br/> |
 |FastTrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
 |FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
-|Flickr
-  <br/> | `ipm.externaldata.Flickr*` <br/> |
+|Flickr  <br/> | `ipm.externaldata.Flickr*` <br/> |
 |Gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |
-|Google+
-  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
+|Google +  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
 |Google Talk  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
 |GoToMyPC  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
 |HipChat  <br/> | `ipm.externaldata.HipChat*` <br/> |
@@ -99,16 +96,12 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |IBM-Verbindungen  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
 |ICE-Chat  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
-|Indii Messenger
-  <br/> | `ipm.externaldata.Indii*` <br/> |
-|Instagram
-  <br/> | `ipm.externaldata.Instagram*` <br/> |
-|Instant Bloomberg
-  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
+|Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
+|Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
+|Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
 |InvestEdge  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
 |IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
-|Jive
-  <br/> | `ipm.externaldata.Jive*` <br/> |
+|Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
@@ -128,19 +121,14 @@ In der folgenden Tabelle sind die Drittanbieter-Datentypen aufgeführt, die Sie 
 |Skype for Business  <br/> | `ipm.externaldata.Skype*` <br/> |
 |Slack Enterprise Grid  <br/> | `ipm.externaldata.Slack.IM` <br/> |
 |SoftEther  <br/> | `ipm.externaldata.SoftEther*` <br/> |
-|
-Squawker
-  <br/> | `ipm.externaldata.Squawker*` <br/> |
-|Symphony
-  <br/> | `ipm.externaldata.Symphony*` <br/> |
+|Squawker  <br/> | `ipm.externaldata.Squawker*` <br/> |
+|Symphonie  <br/> | `ipm.externaldata.Symphony*` <br/> |
 |Thomson Reuters  <br/> | `ipm.externaldata.Reuters*` <br/> |
-| Thomson Reuters Eikon Messenger
-  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
+| Thomson Reuters Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
 |Tor  <br/> | `ipm.externaldata.Tor*` <br/> |
 |TTT  <br/> | `ipm.externaldata.TTT*` <br/> |
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
-|UBS Chat
-  <br/> | `ipm.externaldata.UBS*` <br/> |
+|UBS Chat  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |
 |WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
 |Winny  <br/> | `ipm.externaldata.Winny*` <br/> |

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Mit Office 365 Cloud App Security können Sie ein Benutzerkonto anhalten oder aufheben. '
-ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862447"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998868"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Sperren oder Wiederherstellen eines Benutzerkontos in Office 365 Cloud App Security
 
@@ -29,7 +29,7 @@ ms.locfileid: "30862447"
 Angenommen, Sie erhalten eine Warnung, dass eines der Benutzerkonten Ihrer Organisation für Office 365 kompromittiert wurde. Oder nehmen wir an, Sie haben eine Warnung erhalten, die angibt, dass mit einem Benutzerkonto ein Fehler aufgetreten ist. Mit Office 365 Cloud App Security können Sie ein Benutzerkonto anhalten und später wiederherstellen, nachdem Sie die empfangenen Warnungen untersucht haben.
   
 > [!NOTE]
-> Office 365 Cloud App Security ist in Office 365 Enterprise E5 verfügbar. Wenn Ihre Organisation ein anderes Office 365 Enterprise-Abonnement verwendet, kann Office 365 Cloud App Security als Add-on erworben werden. (klicken sie als globaler administrator im Office 365 admin center auf **abrechnungs** \> **abonnements hinzufügen**.) Weitere Informationen finden Sie unter [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [kaufen oder Bearbeiten eines add-ons für Office 365 for Business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365 Cloud App Security ist in Office 365 Enterprise E5 verfügbar. Wenn Ihre Organisation ein anderes Office 365 Enterprise-Abonnement verwendet, kann Office 365 Cloud App Security als Add-on erworben werden. (klicken sie als globaler administrator im Microsoft 365 admin center auf **abrechnungs** \> **abonnements hinzufügen**.) Weitere Informationen finden Sie unter [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) und [kaufen oder Bearbeiten eines add-ons für Office 365 for Business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 ## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>So unterbrechen Sie ein Benutzerkonto in Office 365 Cloud App Security
 

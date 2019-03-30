@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das neue Microsoft 365 Compliance Center, einschließlich der enthaltenen Informationen, seiner Vorgehensweisen und der nächsten Schritte.
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950442"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001038"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Willkommen beim neuen Microsoft 365 Compliance Center.
 
@@ -83,7 +83,7 @@ Zusätzlich zu den Links auf den Karten auf der Homepage finden Sie einen Naviga
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Warum werde ich zum Office 365 Security & Compliance Center gebracht, um einige Aufgaben auszuführen, wie beispielsweise das Definieren bestimmter Richtlinien?
 
-Wir entwickeln weiterhin das Microsoft 365 Compliance Center und werden in den nächsten Monaten weitere Funktionen und Lösungen hinzufügen. In der Zwischenzeit müssen einige Aufgaben im Office 365 Security & Compliance Center durchgeführt werden. In diesen Fällen werden Sie automatisch an den Speicherort weitergeleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
+Wir entwickeln weiterhin das Microsoft 365 Compliance Center und werden in den nächsten Monaten weitere Funktionen und Lösungen hinzufügen. In der Zwischenzeit müssen einige Aufgaben im Security & Compliance Center durchgeführt werden. In diesen Fällen werden Sie automatisch an den Speicherort weitergeleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Warum wird das neue Microsoft 365 Compliance Center noch nicht angezeigt?
 

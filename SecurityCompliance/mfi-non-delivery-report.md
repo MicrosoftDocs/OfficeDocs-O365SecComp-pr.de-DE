@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Unzustellbarkeitsbericht im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center informieren.
+description: Administratoren können sich über den Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7786e2667f268566d189d4f09acd937eacb2c225
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722881"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000058"
 ---
 # <a name="non-delivery-report"></a>Unzustellbarkeitsbericht
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722881"
 
 Der **Unzustellbarkeitsbericht** enthält die am häufigsten auftretenden Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte bezeichnet) für Benutzer in Ihrer Organisation. Dieser Bericht soll die Details von Unzustellbarkeitsberichten anzeigen, damit Sie Probleme beheben können.
 
-![Der Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard im Office 365 Security & Compliance Center](media/non-delivery-report-selected.png)
+![Der Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/non-delivery-report-selected.png)
 
 Sie können Informationen zu allen NDR-Codes oder einem bestimmten Code anzeigen, indem Sie auf **Daten für anzeigen**klicken. Sie können auch auf **Details anzeigen** klicken, um eine detailliertere Ansicht anzuzeigen, wie im folgenden Diagramm dargestellt:
 

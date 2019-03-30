@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Nachdem Sie Office 365 Cloud App Security eingerichtet und bereitgestellt haben, sollten Sie bestimmte Aufgaben ausführen, um sicherzustellen, dass Ihre Konfiguration korrekt ist und dass Sie für regelmäßige Besprechungen vorbereitet sind.
-ms.openlocfilehash: 3afcfc307ea4a587287f3b71080bba89c715c908
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215945"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999948"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security
   
@@ -27,7 +27,7 @@ ms.locfileid: "30215945"
 |[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |[Starten der Bereitstellung](turn-on-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Office 365 Cloud App Security ist in Office 365 Enterprise E5 verfügbar. Wenn Ihre Organisation ein anderes Office 365 Enterprise-Abonnement verwendet, kann Office 365 Cloud App Security als Add-on erworben werden. (klicken sie als globaler administrator im Office 365 admin center auf **abrechnungs** \> **abonnements hinzufügen**.) Weitere Informationen finden Sie unter [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [kaufen oder Bearbeiten eines add-ons für Office 365 for Business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365 Cloud App Security ist in Office 365 Enterprise E5 verfügbar. Wenn Ihre Organisation ein anderes Office 365 Enterprise-Abonnement verwendet, kann Office 365 Cloud App Security als Add-on erworben werden. (klicken sie als globaler administrator im Microsoft 365 admin center auf **abrechnungs** \> **abonnements hinzufügen**.) Weitere Informationen finden Sie unter [office 365 Platform Service Description: office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [kaufen oder Bearbeiten eines add-ons für Office 365 for Business](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 Nachdem Sie Office 365 Cloud App Security eingerichtet und konfiguriert haben, sollten Sie bestimmte Nutzungs Aufgaben als globaler Office 365-Administrator oder Sicherheitsadministrator für Ihre Organisation ausführen. 
 

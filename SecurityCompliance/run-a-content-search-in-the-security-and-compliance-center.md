@@ -1,5 +1,5 @@
 ---
-title: 'Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center '
+title: Ausführen einer Inhaltssuche im Security & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: 'Verwenden Sie die Inhaltssuche im Office 365 &amp; Security Compliance Center zum Durchsuchen von Postfächern, SharePoint Online-Websites und OneDrive für Geschäftsstandorte. '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Verwenden Sie die Inhaltssuche im Security & Compliance Center, um Postfächer, SharePoint Online-Websites und OneDrive für Geschäftsstandorte zu durchsuchen. '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935320"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000278"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center 
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>Ausführen einer Inhaltssuche im Security & Compliance Center
 
-Sie können das eDiscovery-Tool für die Inhaltssuche im Office 365 &amp; Security Compliance Center verwenden, um in ihrer Office 365-Organisation nach Elementen wie e-Mails, Dokumenten und Chatnachrichten zu suchen. Verwenden Sie dieses Tool, um nach Elementen in diesen Office 365-Diensten zu suchen:
+Sie können das eDiscovery-Tool für die Inhaltssuche im Security & Compliance Center verwenden, um nach Elementen wie e-Mails, Dokumenten und Chatnachrichten in Ihrer Office 365-Organisation zu suchen. Verwenden Sie dieses Tool, um nach Elementen in diesen Office 365-Diensten zu suchen:
   
 - Exchange Online-Postfächer und öffentliche Ordner
     
@@ -55,9 +55,9 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
 
 - Informationen und Anleitungen zum Erstellen von Suchabfragen und Verwenden von booleschen Suchoperatoren finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md). Dieser Artikel enthält auch Informationen zum Suchen nach vertraulichen Informationstypen und zum Suchen nach Inhalten, die für Personen innerhalb und außerhalb Ihrer Organisation freigegeben sind.
     
-- Damit Sie Zugriff auf die Seite " **Inhaltssuche** " haben, um Suchergebnisse und eine Vorschau zu durchsuchen und zu exportieren, muss ein Administrator, ein Compliance Officer oder ein eDiscovery-Manager Mitglied der eDiscovery &amp; -Manager-Rollengruppe im Security Compliance Center. Sie müssen in Exchange Online, SharePoint Online oder für OneDrive für Unternehmen-Websites keine zusätzlichen Suchberechtigungen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
+- Damit Sie Zugriff auf die Seite " **Inhaltssuche** " haben, um Suchergebnisse und eine Vorschau zu durchsuchen und zu exportieren, muss ein Administrator, Compliance Officer oder eDiscovery-Manager Mitglied der rollenGruppe "eDiscovery Manager" im Security _AMP_ Compliance Center sein. Sie müssen in Exchange Online, SharePoint Online oder für OneDrive für Unternehmen-Websites keine zusätzlichen Suchberechtigungen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security _AMP_ Compliance Center](assign-ediscovery-permissions.md).
     
-- Für die Inhaltssuche gelten Grenzwerte, um die Integrität und Qualität der Dienste für Office 365-Organisationen zu gewährleisten. In den meisten Fällen können diese Grenzwerte nicht geändert werden, Sie sollten die Werte jedoch beachten, damit Sie die Grenzen bei der Planung, beim Ausführen und bei der Problembehandlung von Suchvorgängen berücksichtigen können. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md).
+- Für die Inhaltssuche gelten Grenzwerte, um die Integrität und Qualität der Dienste für Office 365-Organisationen zu gewährleisten. In den meisten Fällen können diese Grenzwerte nicht geändert werden, Sie sollten die Werte jedoch beachten, damit Sie die Grenzen bei der Planung, beim Ausführen und bei der Problembehandlung von Suchvorgängen berücksichtigen können. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Weitere Informationen finden Sie im Abschnitt Geschätzte Suchzeiten basierend auf der Anzahl der Postfächer, die in einer einzelnen Inhaltssuche durchsucht werden. 
     
@@ -74,11 +74,11 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** \> **Inhaltssuche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suche** \> **Inhaltssuche**.
     
 4. Klicken Sie auf **Neu**![Hinzufügen (Symbol)](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
@@ -102,7 +102,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
   - Sie können inaktive Postfächer und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Für Verteilergruppen werden die Postfächer der Gruppenmitglieder durchsucht. Beachten Sie, dass dynamische Verteilergruppen nicht unterstützt werden.
     
-  - Führen Sie den Befehl `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell aus, um eine Liste der inaktiven Postfächer in Ihrer Organisation zu erhalten. Alternativ können Sie im](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> Security &amp; Compliance Center zu **Data Governance** \> **Retention** wechseln und dann auf **Weitere**![Navigationsleisten Ellipsen inaktive **Postfächer**klicken.
+  - Führen Sie den Befehl `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell aus, um eine Liste der inaktiven Postfächer in Ihrer Organisation zu erhalten. Alternativ können Sie im Security & Compliance Center zu **Data Governance** \> **Retention** wechseln und dann auf **Weitere**![Navigationsleisten Ellipsen](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **inaktive Postfächer**klicken.
     
   - Sie können auch das Postfach hinzufügen, das einer Office 365-Gruppe oder einem Microsoft-Team zugeordnet ist. In diesem Fall wird nur das Postfach der Gruppe oder des Teams durchsucht; die Postfächer der Gruppe oder Teammitglieder wurden nicht durchsucht. Um Sie durchsuchen zu können, müssen Sie Sie der Suche ausdrücklich hinzufügen.
     
@@ -167,12 +167,12 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
 ## <a name="export-search-results"></a>Exportieren der Suchergebnisse
 <a name="export"> </a>
 
-Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business-Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Es gibt auch zusätzliche Dokumente und Berichte, die in den exportierten Suchergebnissen enthalten sind. Weitere Informationen finden Sie unter [Exportieren von Suchergebnissen aus dem Office 365 &amp; Security Compliance Center](export-search-results.md).
+Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business-Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten exportiert. Es gibt auch zusätzliche Dokumente und Berichte, die in den exportierten Suchergebnissen enthalten sind. Weitere Informationen finden Sie unter [Exportieren von Suchergebnissen aus dem Security _AMP_ Compliance Center](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Suchergebnisse in der Vorschau anzeigen
 <a name="preview"> </a>
 
-Nachdem die Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der Suchergebnisse anzeigen. Im Zusammenhang mit dem Anzeigen von Inhaltssuchergebnissen in der Vorschau gibt es einige Einschränkungen. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Office 365 &amp; Security Compliance Center](limits-for-content-search.md). Beachten Sie, dass nicht indizierte Elemente für die Vorschau nicht verfügbar sind.
+Nachdem die Suche erfolgreich abgeschlossen wurde, können Sie eine Vorschau der Suchergebnisse anzeigen. Im Zusammenhang mit dem Anzeigen von Inhaltssuchergebnissen in der Vorschau gibt es einige Einschränkungen. Weitere Informationen finden Sie unter [Grenzwerte für die Suche im Security _AMP_ Compliance Center](limits-for-content-search.md). Beachten Sie, dass nicht indizierte Elemente für die Vorschau nicht verfügbar sind.
   
 1. Wählen Sie auf der Seite **Inhaltssuche** eine Suche aus. 
     
@@ -277,7 +277,7 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
   
 ### <a name="limits-and-performance"></a>Grenzen und Leistung
   
-- Eine Beschreibung der Grenzwerte für die Inhaltssuche finden Sie unter [Grenzwerte für die Suche im Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
+- Eine Beschreibung der Grenzwerte für die Inhaltssuche finden Sie unter [Grenzwerte für die Suche im Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Microsoft sammelt Leistungsinformationen für Inhaltssuche, die von allen Office 365-Organisationen ausgeführt werden. Während sich die Komplexität der Suchabfrage auf die Suchzeiten auswirken kann, ist der größte Faktor für die Dauer der Suche die Anzahl der durchsuchten Postfächer. Obwohl Microsoft keine Vereinbarung zum Service Level für Suchzeiten bereitstellt, werden in der folgenden Tabelle die durchschnittlichen Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der Postfächer aufgeführt, die in der Suche enthalten sind.
     
@@ -319,7 +319,7 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
   
   - Wenn das Postfach eines Benutzers durchsucht wird, wird jede Microsoft-Team-oder Office 365-Gruppe, der der Benutzer angehört, nicht durchsucht. Auf ähnliche Weise wird beim Durchsuchen eines Microsoft-Teams oder einer Office 365-Gruppe nur das Gruppenpostfach und die von Ihnen angegebene Gruppen Website durchsucht; die Postfächer und OneDrive für Geschäftskonten von Gruppenmitgliedern werden nicht durchsucht, es sei denn, Sie fügen Sie der Suche explizit hinzu.
     
-  - Wenn Sie eine Liste der Mitglieder eines Microsoft-Teams oder einer Office 365-Gruppe abrufen möchten, können Sie die Eigenschaften auf der Seite **Start \> gruppen** im Office 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
+  - Wenn Sie eine Liste der Mitglieder eines Microsoft-Teams oder einer Office 365-Gruppe abrufen möchten, können Sie die Eigenschaften auf der Seite **Start \> gruppen** im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
     
     ![Beispiel für die Abfrage, die erstellt wird, wenn die Stichwortliste und eine Bedingung verwendet wird](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - Wenn Sie über eine Suchabfrage mit Schlüsselwörtern für nicht englische Zeichen (beispielsweise chinesische Zeichen) verfügen, müssen Sie möglicherweise das Cmdlet **Set-ComplianceSearch** verwenden, um die Language-Eigenschaft für die Inhaltssuche zu konfigurieren. Wenn Sie eine Inhaltssuche mithilfe der GUI im Security &amp; Compliance Center erstellen, ist die Standardsprache neutral. 
+  - Wenn Sie über eine Suchabfrage mit Schlüsselwörtern für nicht englische Zeichen (beispielsweise chinesische Zeichen) verfügen, müssen Sie möglicherweise das Cmdlet **Set-ComplianceSearch** verwenden, um die Language-Eigenschaft für die Inhaltssuche zu konfigurieren. Wenn Sie eine Inhaltssuche mithilfe der GUI im Security & Compliance Center erstellen, ist die Standardsprache neutral. 
     
     Wie können Sie feststellen, ob die Spracheinstellung für eine Inhaltssuche geändert werden muss? Wenn Sie bestimmte inhaltsspeicherorte die nicht-englischen Zeichen enthalten, die Sie suchen, aber die Suche keine Ergebnisse zurückgibt, kann die Spracheinstellung die Ursache sein.
     
-    Führen Sie den folgenden Befehl in Security &amp; Compliance Center PowerShell aus, um die Spracheinstellung für eine vorhandene Inhaltssuche zu ändern:
+    Führen Sie den folgenden Befehl in Security & Compliance Center PowerShell aus, um die Spracheinstellung für eine vorhandene Inhaltssuche zu ändern:
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ Wie bereits erwähnt, können Sie in einer Inhaltssuche inaktive Postfächer dur
     
 ### <a name="miscellaneous"></a>Sonstiges
   
-- Inhalts Suchvorgänge, die auf der Seite " **Inhaltssuche** " im Security &amp; Compliance Center erstellt wurden, werden nicht auf der Seite **in-situ-eDiscovery &amp; ** in der Exchange-Verwaltungskonsole angezeigt. Der Grund ist, dass die Architektur der Inhaltssuche und die im Security &amp; Compliance Center erstellten Suchobjekte vollständig von der in-Place-eDiscovery-Funktion in Exchange Online abweichen. 
+- Inhalts Suchvorgänge, die auf der Seite " **Inhaltssuche** " im Security _AMP_ Compliance Center erstellt wurden, werden nicht auf der Seite **in-situ &amp; -eDiscovery** in der Exchange-Verwaltungskonsole angezeigt. Der Grund ist, dass die Architektur der Inhaltssuche und die im Security & Compliance Center erstellten Suchobjekte vollständig von der in-Place-eDiscovery-Funktion in Exchange Online unterschiedlich sind. 
     
-    Aus demselben Grund werden Suchvorgänge, die auf der Seite für die **Inhaltssuche** erstellt wurden, nicht auf der Seite **Suchen** eines EDiscovery &amp; -Falls im Security Compliance Center angezeigt. 
+    Aus demselben Grund werden Suchvorgänge, die auf der Seite für die **Inhaltssuche** erstellt wurden, nicht auf der Seite **Suchen** eines EDiscovery-Falls im Security & Compliance Center angezeigt. 
     
 - Was ist der Unterschied zwischen dem Neustarten einer Suche und dem Wiederholen einer Suche? Wenn Sie eine Suche neu starten, werden alle in der Suche angegebenen inhaltsspeicherorte in einer neuen Vorschau Suche erneut durchsucht. Wenn Sie jedoch eine Suche wiederholen, werden nur die inhaltsspeicherorte durchsucht, die beim letzten Ausführen der Suche fehlgeschlagen sind.
    

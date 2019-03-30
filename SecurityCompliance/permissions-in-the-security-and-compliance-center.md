@@ -3,7 +3,7 @@ title: Berechtigungen im Office 365 Security &amp; Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Office 365 &amp; Security Compliance Center können Sie Personen, die Compliance-Aufgaben wie Geräteverwaltung, Verhinderung von Datenverlust, eDiscovery, Aufbewahrung usw. ausführen, Berechtigungen erteilen. Diese Personen können nur die Aufgaben ausführen, denen Sie explizit Zugriff gewähren. Für den Zugriff auf &amp; das Security Compliance Center müssen Benutzer ein globaler Office 365-Administrator oder ein Mitglied einer oder mehrerer Rollengruppen &amp; des Security Compliance Centers sein.
-ms.openlocfilehash: 9b2692d2afd70be911581caff237e61d405cf10f
-ms.sourcegitcommit: 6a7cec7d1f0d3b8d71f313bfa22f44c827de2336
+ms.openlocfilehash: eba77fd6edcf41bac5eeebae3637707c2c5a7246
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30798131"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997081"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Berechtigungen im Office 365 Security &amp; Compliance Center
 
