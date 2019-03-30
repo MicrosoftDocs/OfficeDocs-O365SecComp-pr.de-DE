@@ -3,7 +3,7 @@ title: Übersicht über den Dateiplan-Manager
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 9/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,107 +14,107 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen und Richtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.
-ms.openlocfilehash: d972a7ea6507e51c4efaaef30c98d55a87912417
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454827"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997271"
 ---
-# <a name="overview-of-file-plan-manager"></a><span data-ttu-id="3b618-103">Übersicht über den Dateiplan-Manager</span><span class="sxs-lookup"><span data-stu-id="3b618-103">Overview of file plan manager</span></span>
+# <a name="overview-of-file-plan-manager"></a><span data-ttu-id="75582-103">Übersicht über den Dateiplan-Manager</span><span class="sxs-lookup"><span data-stu-id="75582-103">Overview of file plan manager</span></span>
 
-<span data-ttu-id="3b618-104">Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen und Richtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.</span><span class="sxs-lookup"><span data-stu-id="3b618-104">File plan manager provides advanced management capabilities for retention labels and policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition.</span></span>
+<span data-ttu-id="75582-104">Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen und Richtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.</span><span class="sxs-lookup"><span data-stu-id="75582-104">File plan manager provides advanced management capabilities for retention labels and policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition.</span></span>
 
 ![Dateiplanseite](media/file-plan-page.png)
 
-## <a name="accessing-file-plan-manager"></a><span data-ttu-id="3b618-106">Zugriff auf den Dateiplan-Manager</span><span class="sxs-lookup"><span data-stu-id="3b618-106">Accessing file plan manager</span></span>
+## <a name="accessing-file-plan-manager"></a><span data-ttu-id="75582-106">Zugriff auf den Dateiplan-Manager</span><span class="sxs-lookup"><span data-stu-id="75582-106">Accessing file plan manager</span></span>
 
-<span data-ttu-id="3b618-107">Es gibt die folgenden beiden Anforderungen für den Zugriff auf den Dateiplan-Manager:</span><span class="sxs-lookup"><span data-stu-id="3b618-107">There are two requirements to access file plan manager, they are:</span></span>
-- <span data-ttu-id="3b618-108">Ein Office 365 Enterprise E5-Abonnement.</span><span class="sxs-lookup"><span data-stu-id="3b618-108">An Office 365 Enterprise E5 subscription.</span></span>
-- <span data-ttu-id="3b618-109">Der Benutzer wurde einer der folgenden Rollen des Security &amp; Compliance Centers zugewiesen:</span><span class="sxs-lookup"><span data-stu-id="3b618-109">The user has been in assigned one of the following roles of the Security &amp; Compliance Center:</span></span> 
-    - <span data-ttu-id="3b618-110">Aufbewahrungs-Manager</span><span class="sxs-lookup"><span data-stu-id="3b618-110">Retention Manager</span></span>
-    - <span data-ttu-id="3b618-111">Aufbewahrungs-Manager (schreibgeschützt)</span><span class="sxs-lookup"><span data-stu-id="3b618-111">View-only Retention Manager</span></span>
+<span data-ttu-id="75582-107">Es gibt die folgenden beiden Anforderungen für den Zugriff auf den Dateiplan-Manager:</span><span class="sxs-lookup"><span data-stu-id="75582-107">There are two requirements to access file plan manager, they are:</span></span>
+- <span data-ttu-id="75582-108">Ein Office 365 Enterprise E5-Abonnement.</span><span class="sxs-lookup"><span data-stu-id="75582-108">An Office 365 Enterprise E5 subscription.</span></span>
+- <span data-ttu-id="75582-109">Der Benutzer wurde einer der folgenden Rollen des Security &amp; Compliance Centers zugewiesen:</span><span class="sxs-lookup"><span data-stu-id="75582-109">The user has been in assigned one of the following roles of the Security &amp; Compliance Center:</span></span> 
+    - <span data-ttu-id="75582-110">Aufbewahrungs-Manager</span><span class="sxs-lookup"><span data-stu-id="75582-110">Retention Manager</span></span>
+    - <span data-ttu-id="75582-111">Aufbewahrungs-Manager (schreibgeschützt)</span><span class="sxs-lookup"><span data-stu-id="75582-111">View-only Retention Manager</span></span>
 
-## <a name="navigating-your-file-plan"></a><span data-ttu-id="3b618-112">Navigieren in Ihrem Dateiplan</span><span class="sxs-lookup"><span data-stu-id="3b618-112">Navigating your file plan</span></span>
+## <a name="navigating-your-file-plan"></a><span data-ttu-id="75582-112">Navigieren in Ihrem Dateiplan</span><span class="sxs-lookup"><span data-stu-id="75582-112">Navigating your file plan</span></span>
 
-<span data-ttu-id="3b618-113">Mit dem Dateiplan-Manager können Sie leichter die Einstellungen aller Aufbewahrungsbezeichnungen und Richtlinien aus einer Ansicht anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3b618-113">File plan manager makes it easier see into and across the settings of all your retention labels and policies from one view.</span></span>
+<span data-ttu-id="75582-113">Mit dem Dateiplan-Manager können Sie leichter die Einstellungen aller Aufbewahrungsbezeichnungen und Richtlinien aus einer Ansicht anzeigen.</span><span class="sxs-lookup"><span data-stu-id="75582-113">File plan manager makes it easier see into and across the settings of all your retention labels and policies from one view.</span></span>
 
-<span data-ttu-id="3b618-114">Beachten Sie, dass Aufbewahrungsbezeichnungen, die außerhalb des Dateiplans erstellt wurden, im Dateiplan verfügbar sind und umgekehrt.</span><span class="sxs-lookup"><span data-stu-id="3b618-114">Note that retention labels created outside of the file plan will be available in the file plan and vice versa.</span></span>
+<span data-ttu-id="75582-114">Beachten Sie, dass Aufbewahrungsbezeichnungen, die außerhalb des Dateiplans erstellt wurden, im Dateiplan verfügbar sind und umgekehrt.</span><span class="sxs-lookup"><span data-stu-id="75582-114">Note that retention labels created outside of the file plan will be available in the file plan and vice versa.</span></span>
 
-<span data-ttu-id="3b618-115">Auf den Registerkarten für die **Dateiplanbezeichnungen** sind die folgenden zusätzlichen Informationen und Funktionen verfügbar:</span><span class="sxs-lookup"><span data-stu-id="3b618-115">On the **file plan labels** tab, the following additional information and capabilities are available:</span></span>
+<span data-ttu-id="75582-115">Auf den Registerkarten für die **Dateiplanbezeichnungen** sind die folgenden zusätzlichen Informationen und Funktionen verfügbar:</span><span class="sxs-lookup"><span data-stu-id="75582-115">On the **file plan labels** tab, the following additional information and capabilities are available:</span></span>
 
-### <a name="label-settings-columns"></a><span data-ttu-id="3b618-116">Spalten mit Bezeichnungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="3b618-116">Label settings columns</span></span>
+### <a name="label-settings-columns"></a><span data-ttu-id="75582-116">Spalten mit Bezeichnungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="75582-116">Label settings columns</span></span>
  
-- <span data-ttu-id="3b618-p101">**Basierend auf** gibt den Typ des Auslösers an, der den Aufbewahrungszeitraum starten kann. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="3b618-p101">**Based on** identifies the type of trigger that will start the retention period. Valid values are:</span></span> 
-    - <span data-ttu-id="3b618-119">Ereignis</span><span class="sxs-lookup"><span data-stu-id="3b618-119">Event</span></span>
-    - <span data-ttu-id="3b618-120">Zeitpunkt der Erstellung</span><span class="sxs-lookup"><span data-stu-id="3b618-120">When created</span></span>
-    - <span data-ttu-id="3b618-121">Zeitpunkt der letzten Änderung</span><span class="sxs-lookup"><span data-stu-id="3b618-121">When last modified</span></span>
-    - <span data-ttu-id="3b618-122">Zeitpunkt der Bezeichnung</span><span class="sxs-lookup"><span data-stu-id="3b618-122">When labeled</span></span>
-- <span data-ttu-id="3b618-p102">**Datensatz** gibt an, ob das Element ein deklarierter Datensatz werden kann, wenn die Bezeichnung angewendet wurde. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="3b618-p102">**Record** identifies if the item will become a declared record when the label is applied. Valid values are:</span></span>
-    - <span data-ttu-id="3b618-125">Nein</span><span class="sxs-lookup"><span data-stu-id="3b618-125">No</span></span>
-    - <span data-ttu-id="3b618-126">Ja</span><span class="sxs-lookup"><span data-stu-id="3b618-126">Yes</span></span>
-    - <span data-ttu-id="3b618-127">Yes (Vorgeschrieben)</span><span class="sxs-lookup"><span data-stu-id="3b618-127">Yes(Regulatory)</span></span>
-- <span data-ttu-id="3b618-p103">**Aufbewahrung** gibt den Aufbewahrungstyp an. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="3b618-p103">**Retention** identifies the retention type. Valid values are:</span></span>
-    - <span data-ttu-id="3b618-130">Beibehalten</span><span class="sxs-lookup"><span data-stu-id="3b618-130">Keep</span></span>
-    - <span data-ttu-id="3b618-131">Beibehalten und löschen</span><span class="sxs-lookup"><span data-stu-id="3b618-131">Keep and delete</span></span>
-    - <span data-ttu-id="3b618-132">Löschen</span><span class="sxs-lookup"><span data-stu-id="3b618-132">Delete</span></span>
-- <span data-ttu-id="3b618-p104">**Disposition** gibt an, was mit dem Inhalt am Ende des Aufbewahrungszeitraums geschieht. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="3b618-p104">**Disposition** identifies what will happen to the content at the end of the retention period. Valid values are:</span></span> 
-    - <span data-ttu-id="3b618-135">Null</span><span class="sxs-lookup"><span data-stu-id="3b618-135">null</span></span>
-    - <span data-ttu-id="3b618-136">Keine Aktion</span><span class="sxs-lookup"><span data-stu-id="3b618-136">No action</span></span>
-    - <span data-ttu-id="3b618-137">Automatisch löschen</span><span class="sxs-lookup"><span data-stu-id="3b618-137">Auto-delete</span></span>
-    - <span data-ttu-id="3b618-138">Überprüfung erforderlich (auch bezeichnet als Dispositionsprüfung)</span><span class="sxs-lookup"><span data-stu-id="3b618-138">Review required (aka Disposition review)</span></span>
+- <span data-ttu-id="75582-p101">**Basierend auf** gibt den Typ des Auslösers an, der den Aufbewahrungszeitraum starten kann. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="75582-p101">**Based on** identifies the type of trigger that will start the retention period. Valid values are:</span></span> 
+    - <span data-ttu-id="75582-119">Ereignis</span><span class="sxs-lookup"><span data-stu-id="75582-119">Event</span></span>
+    - <span data-ttu-id="75582-120">Zeitpunkt der Erstellung</span><span class="sxs-lookup"><span data-stu-id="75582-120">When created</span></span>
+    - <span data-ttu-id="75582-121">Zeitpunkt der letzten Änderung</span><span class="sxs-lookup"><span data-stu-id="75582-121">When last modified</span></span>
+    - <span data-ttu-id="75582-122">Zeitpunkt der Bezeichnung</span><span class="sxs-lookup"><span data-stu-id="75582-122">When labeled</span></span>
+- <span data-ttu-id="75582-p102">**Datensatz** gibt an, ob das Element ein deklarierter Datensatz werden kann, wenn die Bezeichnung angewendet wurde. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="75582-p102">**Record** identifies if the item will become a declared record when the label is applied. Valid values are:</span></span>
+    - <span data-ttu-id="75582-125">Nein</span><span class="sxs-lookup"><span data-stu-id="75582-125">No</span></span>
+    - <span data-ttu-id="75582-126">Ja</span><span class="sxs-lookup"><span data-stu-id="75582-126">Yes</span></span>
+    - <span data-ttu-id="75582-127">Yes (Vorgeschrieben)</span><span class="sxs-lookup"><span data-stu-id="75582-127">Yes(Regulatory)</span></span>
+- <span data-ttu-id="75582-p103">**Aufbewahrung** gibt den Aufbewahrungstyp an. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="75582-p103">**Retention** identifies the retention type. Valid values are:</span></span>
+    - <span data-ttu-id="75582-130">Beibehalten</span><span class="sxs-lookup"><span data-stu-id="75582-130">Keep</span></span>
+    - <span data-ttu-id="75582-131">Beibehalten und löschen</span><span class="sxs-lookup"><span data-stu-id="75582-131">Keep and delete</span></span>
+    - <span data-ttu-id="75582-132">Löschen</span><span class="sxs-lookup"><span data-stu-id="75582-132">Delete</span></span>
+- <span data-ttu-id="75582-p104">**Disposition** gibt an, was mit dem Inhalt am Ende des Aufbewahrungszeitraums geschieht. Gültige Werte sind:</span><span class="sxs-lookup"><span data-stu-id="75582-p104">**Disposition** identifies what will happen to the content at the end of the retention period. Valid values are:</span></span> 
+    - <span data-ttu-id="75582-135">Null</span><span class="sxs-lookup"><span data-stu-id="75582-135">null</span></span>
+    - <span data-ttu-id="75582-136">Keine Aktion</span><span class="sxs-lookup"><span data-stu-id="75582-136">No action</span></span>
+    - <span data-ttu-id="75582-137">Automatisch löschen</span><span class="sxs-lookup"><span data-stu-id="75582-137">Auto-delete</span></span>
+    - <span data-ttu-id="75582-138">Überprüfung erforderlich (auch bezeichnet als Dispositionsprüfung)</span><span class="sxs-lookup"><span data-stu-id="75582-138">Review required (aka Disposition review)</span></span>
 
 ![Bezeichnungseinstellungen im Dateiplan](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a><span data-ttu-id="3b618-140">Spalten mit Dateiplanbeschreibungen</span><span class="sxs-lookup"><span data-stu-id="3b618-140">Label file plan descriptors columns</span></span>
+### <a name="label-file-plan-descriptors-columns"></a><span data-ttu-id="75582-140">Spalten mit Dateiplanbeschreibungen</span><span class="sxs-lookup"><span data-stu-id="75582-140">Label file plan descriptors columns</span></span>
 
-<span data-ttu-id="3b618-p105">Sie können nun mehr Informationen in die Konfiguration Ihrer Aufbewahrungsbezeichnungen einschließen. Durch Einfügen von Dateiplanbeschreibungen in Bezeichnungen können Sie die Verwaltbarkeit und Organisation Ihres Dateiplans verbessern.</span><span class="sxs-lookup"><span data-stu-id="3b618-p105">You can now include more information in the configuration of your retention labels. Inserting file plan descriptors into labels will improve the manageability and organization of your file plan.</span></span>
+<span data-ttu-id="75582-p105">Sie können nun mehr Informationen in die Konfiguration Ihrer Aufbewahrungsbezeichnungen einschließen. Durch Einfügen von Dateiplanbeschreibungen in Bezeichnungen können Sie die Verwaltbarkeit und Organisation Ihres Dateiplans verbessern.</span><span class="sxs-lookup"><span data-stu-id="75582-p105">You can now include more information in the configuration of your retention labels. Inserting file plan descriptors into labels will improve the manageability and organization of your file plan.</span></span>
 
-<span data-ttu-id="3b618-p106">Für den Einstieg stellt Dateiplan-Manager einige einsatzbereite Werte für Folgendes bereit: Funktion/Abteilung, Kategorie, Autoritätstyp und Bereitstellung. Sie können neue Werte für die Dateiplanbeschreibung hinzufügen, wenn Sie eine Aufbewahrungsbezeichnung erstellen oder bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="3b618-p106">To get you started, file plan manager provides some out-of-box values for: Function/department, Category, Authority type and Provision/citation. You can add new file plan descriptor values when creating or editing a retention label.</span></span>
+<span data-ttu-id="75582-p106">Für den Einstieg stellt Dateiplan-Manager einige einsatzbereite Werte für Folgendes bereit: Funktion/Abteilung, Kategorie, Autoritätstyp und Bereitstellung. Sie können neue Werte für die Dateiplanbeschreibung hinzufügen, wenn Sie eine Aufbewahrungsbezeichnung erstellen oder bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="75582-p106">To get you started, file plan manager provides some out-of-box values for: Function/department, Category, Authority type and Provision/citation. You can add new file plan descriptor values when creating or editing a retention label.</span></span>
 
-<span data-ttu-id="3b618-145">Nachfolgend finden Sie eine Übersicht der Dateiplanbeschreibungen beim Erstellen oder Bearbeiten einer Aufbewahrungsbezeichnung.</span><span class="sxs-lookup"><span data-stu-id="3b618-145">Here's a view of the file plan descriptors step when creating or editing a retention label.</span></span>
+<span data-ttu-id="75582-145">Nachfolgend finden Sie eine Übersicht der Dateiplanbeschreibungen beim Erstellen oder Bearbeiten einer Aufbewahrungsbezeichnung.</span><span class="sxs-lookup"><span data-stu-id="75582-145">Here's a view of the file plan descriptors step when creating or editing a retention label.</span></span>
 
 ![Dateiplanbeschreibungen](media/file-plan-descriptors.png)
 
-<span data-ttu-id="3b618-147">Nachfolgend finden Sie eine Übersicht über die Spalten mit Dateiplanbeschreibungen auf der Registerkarte „Bezeichnungen“ des Dateiplan-Managers.</span><span class="sxs-lookup"><span data-stu-id="3b618-147">Here's a view of the file plan descriptors columns on the labels tab of file plan manager.</span></span>
+<span data-ttu-id="75582-147">Nachfolgend finden Sie eine Übersicht über die Spalten mit Dateiplanbeschreibungen auf der Registerkarte „Bezeichnungen“ des Dateiplan-Managers.</span><span class="sxs-lookup"><span data-stu-id="75582-147">Here's a view of the file plan descriptors columns on the labels tab of file plan manager.</span></span>
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a><span data-ttu-id="3b618-149">Exportieren von Bezeichnungen Ihres Dateiplans</span><span class="sxs-lookup"><span data-stu-id="3b618-149">Export labels out of your file plan</span></span>
+## <a name="export-labels-out-of-your-file-plan"></a><span data-ttu-id="75582-149">Exportieren von Bezeichnungen Ihres Dateiplans</span><span class="sxs-lookup"><span data-stu-id="75582-149">Export labels out of your file plan</span></span>
 
-<span data-ttu-id="3b618-150">Aus dem Dateiplan-Manager können Sie die Details aller Aufbewahrungsbezeichnungen in eine CSV-Datei exportieren, mit deren Hilfe Sie regelmäßige Complianceüberprüfungen mit den Beteiligten an der Datengovernance in Ihrer Organisation durchführen können.</span><span class="sxs-lookup"><span data-stu-id="3b618-150">From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.</span></span>
+<span data-ttu-id="75582-150">Aus dem Dateiplan-Manager können Sie die Details aller Aufbewahrungsbezeichnungen in eine CSV-Datei exportieren, mit deren Hilfe Sie regelmäßige Complianceüberprüfungen mit den Beteiligten an der Datengovernance in Ihrer Organisation durchführen können.</span><span class="sxs-lookup"><span data-stu-id="75582-150">From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.</span></span>
 
-<span data-ttu-id="3b618-151">Um alle Aufbewahrungsbezeichnungen zu exportieren, gehen Sie zu **Dateiplan-Manager** \> **Dateiplanaktionen** \> **Bezeichnungen exportieren**.</span><span class="sxs-lookup"><span data-stu-id="3b618-151">To export all retention labels, go to **file plan manager** \> **file plan actions** \> **export labels**.</span></span>
+<span data-ttu-id="75582-151">Um alle Aufbewahrungsbezeichnungen zu exportieren, gehen Sie zu **Dateiplan-Manager** \> **Dateiplanaktionen** \> **Bezeichnungen exportieren**.</span><span class="sxs-lookup"><span data-stu-id="75582-151">To export all retention labels, go to **file plan manager** \> **file plan actions** \> **export labels**.</span></span>
 
 ![Option zum Exportieren des Dateiplans](media/file-plan-export-labels-option.png)
 
-<span data-ttu-id="3b618-153">Es wird eine CSV-Datei mit allen vorhandenen Aufbewahrungsbeschriftungen geöffnet.</span><span class="sxs-lookup"><span data-stu-id="3b618-153">A \*.csv file containing all existing retention labels will open.</span></span>
+<span data-ttu-id="75582-153">Es wird eine CSV-Datei mit allen vorhandenen Aufbewahrungsbeschriftungen geöffnet.</span><span class="sxs-lookup"><span data-stu-id="75582-153">A \*.csv file containing all existing retention labels will open.</span></span>
 
 ![CSV-Datei, in der alle Aufbewahrungsbeschriftungen angezeigt werden](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a><span data-ttu-id="3b618-155">Importieren von Bezeichnungen in Ihren Dateiplan</span><span class="sxs-lookup"><span data-stu-id="3b618-155">Import labels into your file plan</span></span>
+## <a name="import-labels-into-your-file-plan"></a><span data-ttu-id="75582-155">Importieren von Bezeichnungen in Ihren Dateiplan</span><span class="sxs-lookup"><span data-stu-id="75582-155">Import labels into your file plan</span></span>
 
-<span data-ttu-id="3b618-156">Aus dem Dateiplan-Manager können Sie neue Bezeichnungen massenimportieren und vorhandenen Aufbewahrungsbezeichnungen ändern.</span><span class="sxs-lookup"><span data-stu-id="3b618-156">From file plan manager, you can bulk import new labels as well as modify existing retention labels.</span></span>
+<span data-ttu-id="75582-156">Aus dem Dateiplan-Manager können Sie neue Bezeichnungen massenimportieren und vorhandenen Aufbewahrungsbezeichnungen ändern.</span><span class="sxs-lookup"><span data-stu-id="75582-156">From file plan manager, you can bulk import new labels as well as modify existing retention labels.</span></span>
 
-<span data-ttu-id="3b618-157">Zum Importieren von neuen Aufbewahrungsbeschriftungen und zum Aktualisieren von vorhandenen Aufbewahrungsbezeichnungen vornehmen, gehen Sie zu **Dateiplan-Manager** \> **Dateiplanaktionen** \> **Bezeichnungen importieren**.</span><span class="sxs-lookup"><span data-stu-id="3b618-157">To import new retention labels and make updates existing retention labels, go to **file plan manager** \> **file plan actions** \> **import labels**.</span></span>
+<span data-ttu-id="75582-157">Zum Importieren von neuen Aufbewahrungsbeschriftungen und zum Aktualisieren von vorhandenen Aufbewahrungsbezeichnungen vornehmen, gehen Sie zu **Dateiplan-Manager** \> **Dateiplanaktionen** \> **Bezeichnungen importieren**.</span><span class="sxs-lookup"><span data-stu-id="75582-157">To import new retention labels and make updates existing retention labels, go to **file plan manager** \> **file plan actions** \> **import labels**.</span></span>
 
 ![Option zum Importieren des Dateiplans](media/file-plan-import-labels-option.png)
 
 ![Option zum Herunterladen einer leeren Vorlage für den Dateiplan](media/file-plan-blank-template-option.png)
 
-<span data-ttu-id="3b618-160">Laden Sie eine leere Vorlage herunter (oder beginnen Sie mit einem Export Ihres aktuellen Dateiplans).</span><span class="sxs-lookup"><span data-stu-id="3b618-160">Download a blank template (or start from an export of your current file plan).</span></span>
+<span data-ttu-id="75582-160">Laden Sie eine leere Vorlage herunter (oder beginnen Sie mit einem Export Ihres aktuellen Dateiplans).</span><span class="sxs-lookup"><span data-stu-id="75582-160">Download a blank template (or start from an export of your current file plan).</span></span>
 
 ![Leere Vorlage eines Dateiplans, geöffnet in Excel](media/file-plan-blank-template.png)
 
-<span data-ttu-id="3b618-162">Füllen Sie die Vorlage aus (Referenzinformationen zu gültigen Werte für Einträge sind in Kürze verfügbar).</span><span class="sxs-lookup"><span data-stu-id="3b618-162">Fill-out the template (coming soon is reference information about valid values for entries).</span></span>
+<span data-ttu-id="75582-162">Füllen Sie die Vorlage aus (Referenzinformationen zu gültigen Werte für Einträge sind in Kürze verfügbar).</span><span class="sxs-lookup"><span data-stu-id="75582-162">Fill-out the template (coming soon is reference information about valid values for entries).</span></span>
 
 ![Dateiplanvorlage mit ausgefüllten Informationen](media/file-plan-filled-out-template.png)
 
-<span data-ttu-id="3b618-164">Laden Sie die ausgefüllte Vorlage hoch; die Einträge werden dann vom Dateiplan-Manager überprüft, und es werden Importstatistiken angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3b618-164">Upload the filled-out template, and file plan manager will validate the entries and display import statistics.</span></span>
+<span data-ttu-id="75582-164">Laden Sie die ausgefüllte Vorlage hoch; die Einträge werden dann vom Dateiplan-Manager überprüft, und es werden Importstatistiken angezeigt.</span><span class="sxs-lookup"><span data-stu-id="75582-164">Upload the filled-out template, and file plan manager will validate the entries and display import statistics.</span></span>
 
 ![Dateiplan-Importstatistiken](media/file-plan-import-statistics.png)
 
-<span data-ttu-id="3b618-166">Wenn der Importvorgang abgeschlossen ist, kehren Sie zum Dateiplan-Manager zurück, um neuen oder vorhandenen Richtlinien neue Bezeichnungen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="3b618-166">When the import is complete, return to file plan manager to assign new labels to new or existing policies.</span></span>
+<span data-ttu-id="75582-166">Wenn der Importvorgang abgeschlossen ist, kehren Sie zum Dateiplan-Manager zurück, um neuen oder vorhandenen Richtlinien neue Bezeichnungen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="75582-166">When the import is complete, return to file plan manager to assign new labels to new or existing policies.</span></span>
 
 ![Option zum Veröffentlichen von Bezeichnungen](media/file-plan-publish-labels-option.png)
 
