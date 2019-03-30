@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Bezeichnungsaktivitäten-Explorer im Office 365 Security &amp; Compliance Center können Sie Bezeichnungsaktivitäten für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage schnell durchsuchen und anzeigen. Dies sind Echtzeitdaten, die Ihnen eine verständliche Ansicht der Vorgänge in Ihrem Mandanten bietet.
-ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410470"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997111"
 ---
 # <a name="view-label-activity-for-documents"></a>Anzeigen der Bezeichnungsaktivität für Dokumente
 
@@ -36,7 +36,7 @@ Mit dem Bezeichnungsaktivitäten-Explorer können Sie beispielsweise folgende Au
     
 - Anzeigen der Bezeichnungsaktivitäten für Ordner sowie einzelne Dokumente. In Kürze wird die Möglichkeit verfügbar sein, anzuzeigen, wie viele Dateien in diesem Ordner durch das Anwenden einer Bezeichnung auf den Ordner eine Bezeichnung erhalten haben.
     
-Den Bezeichnungsaktivitäten-Explorer finden Sie im Security &amp; Compliance Center\> unter **Data Governance** \> **Bezeichnungsaktivitäten-Explorer**.
+Den Bezeichnungsaktivitäten-Explorer finden Sie im &amp; Security Compliance Center > **Datenkontrolle** > ** Bezeichnungsaktivitäten-Explorer**.
   
 Beachten Sie, dass für den Bezeichnungsaktivitäten-Explorer ein Office 365 Enterprise E5-Abonnement erforderlich ist.
   

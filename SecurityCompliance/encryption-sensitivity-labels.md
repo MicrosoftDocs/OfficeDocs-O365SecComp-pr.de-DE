@@ -3,7 +3,7 @@ title: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in V
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737695"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997041"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -36,7 +36,7 @@ Wenn ein Dokument oder eine E-Mail verschlüsselt ist, wird Zugriff auf den Inha
 - Er immer verschlüsselt bleibt, unabhängig davon, wo er sich befindet (innerhalb oder außerhalb der Organisation), auch dann, wenn die Datei umbenannt wird.
 - Er sowohl im Ruhezustand (z. B. in einem OneDrive-Konto) als auch während der Übertragung (z. B. eine gesendete E-Mail) verschlüsselt ist.
 
-Die Verschlüsselungseinstellungen stehen in Office 365 Security & Compliance Center > Seite **Bezeichnungen** > Registerkarte **Vertraulichkeit** > **Bezeichnung erstellen** zur Verfügung.
+Die Verschlüsselungseinstellungen sind verfügbar, wenn Sie eine Vertraulichkeitzbezeichnung im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security & Compliance Center erstellen.
 
 ## <a name="how-encryption-works"></a>Funktionsweise der Verschlüsselung
 
