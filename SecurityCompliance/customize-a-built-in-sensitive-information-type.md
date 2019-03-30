@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten Regel enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird.
-ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639072"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999608"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -74,7 +74,7 @@ Nachdem Sie die Regeldefinition für die Kreditkartennummer in der XML-Datei erm
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Ändern der XML-Datei und Erstellen eines neuen vertraulichen Informationstyps
 
-Zuerst müssen Sie einen neuen vertraulichen Informationstyp erstellen, da Sie die Standardregeln nicht direkt ändern können. Sie können eine Vielzahl von Maßnahmen im Zusammenhang mit benutzerdefinierten vertraulichen Informationstypen ergreifen. Diese werden unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps in Office 365 Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) beschrieben. In diesem Beispiel machen wir es nicht kompliziert, sondern entfernen nur den bestätigenden Nachweis und fügen der Regel für die Kreditkartennummer Schlüsselwörter hinzu.
+Zuerst müssen Sie einen neuen vertraulichen Informationstyp erstellen, da Sie die Standardregeln nicht direkt ändern können. Sie können eine Vielzahl von Maßnahmen im Zusammenhang mit benutzerdefinierten vertraulichen Informationstypen ergreifen. Diese werden unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) beschrieben. In diesem Beispiel machen wir es nicht kompliziert, sondern entfernen nur den bestätigenden Nachweis und fügen der Regel für die Kreditkartennummer Schlüsselwörter hinzu.
   
 Alle XML-Regeldefinitionen werden anhand der folgenden allgemeinen Vorlage erstellt. Sie müssen die XML-Definition der Kreditkartennummer in der Vorlage kopieren und einfügen, einige Werte ändern (beachten Sie die Platzhalter ". . ." im folgenden Beispiel) und anschließend die geänderte XML-Datei als neue Regel hochladen, die in Richtlinien verwendet werden kann.
   
