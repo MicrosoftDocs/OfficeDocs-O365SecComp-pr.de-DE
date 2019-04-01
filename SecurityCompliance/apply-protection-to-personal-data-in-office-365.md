@@ -16,16 +16,16 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Verwenden von DLP-Richtlinien zum Schutz personenbezogener Daten in Office 365.
-ms.openlocfilehash: af4af4fd8a80b1f1ad34919ed1380f4fed7d9461
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: 97a8c584cd010ae10a0416e47d8184c84f1e1ab9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955248"
+ms.locfileid: "31000998"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Anwenden des Schutzes auf personenbezogene Daten in Office 365
 
-Schutz von personenbezogenen Informationen in Office 365 umfasst Funktionen, um Datenverlust zu vermeiden. Mithilfe von Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
+Der Schutz von personenbezogenen Informationen in Office 365 umfasst Funktionen, um Datenverlust zu vermeiden. Mithilfe von Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
 
 In diesem Thema wird die Verwendung von DLP zum Schutz personenbezogener Daten erläutert. Dieses Thema beinhaltet auch andere Schutzfunktionen, die verwendet werden können, um die Einhaltung der DSGVO zu gewährleisten, u. a. Festlegen von Berechtigungen in SharePoint-Bibliotheken und Verwenden von Gerätezugriffsrichtlinien.
 

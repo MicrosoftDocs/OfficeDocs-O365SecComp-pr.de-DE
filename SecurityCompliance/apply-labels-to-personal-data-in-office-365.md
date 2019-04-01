@@ -3,7 +3,7 @@ title: Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,38 +16,43 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373896"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955198"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
 
- Lesen Sie diese Thema, wenn Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden. Bezeichnungen können derzeit im Office 365 Security & Compliance Center und in Azure Information Protection erstellt werden. Mit der Zeit werden diese Technologien in einer einheitlichen Bezeichnungs- und Klassifikationserfahrung zusammengeführt, damit Sie noch mehr erreichen können.
+ Verwenden Sie dieses Thema, wenn Sie im Rahmen Ihres DSGVO-Schutzplans Klassifizierungsbezeichnungen verwenden. 
 
-Wenn Sie Bezeichnungen zum Schutz personenbezogener Daten in Office 365 verwenden, wird empfohlen, mit Office-Bezeichnungen zu beginnen. Sie können erweiterte Datenkontrolle verwenden, um Bezeichnungen auf Grundlage von vertraulichen Informationstypen und anderen Kriterien automatisch anzuwenden. Office-Bezeichnungen können mit Verhinderung von Datenverlust (DLP) verwendet werden, um Schutz anzuwenden. Sie können in Kürze sowohl Bezeichnungen als auch vertrauliche Informationstypen mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
+Wenn Sie Bezeichnungen zum Schutz persönlicher Daten in Office 365 verwenden, empfiehlt Microsoft, mit [Aufbewahrungsbezeichnungen](labels.md) zu beginnen. Mit Aufbewahrungsbezeichnungen können Sie Folgendes tun:
+- Verwenden Sie die Erweiterte Datenkontrolle, um Bezeichnungen automatisch auf vertrauliche Informationstypen oder andere Kriterien anzuwenden.
+- Verwenden Sie Aufbewahrungsbezeichnungen mit der Verhinderung von Datenverlust, um einen Schutz anzuwenden. 
+- Verwenden Sie Bezeichnungen mit eDiscovery und der Inhaltssuche. 
 
-Azure Information Protection-Bezeichnungen werden derzeit für das Anwenden von Bezeichnungen auf lokale Dateien und Dateien in anderen Clouddiensten und Anbietern empfohlen. Diese werden auch für Dateien in Office 365 empfohlen, für die die Azure RMS-Verschlüsselung (Azure Rights Management) für Schutz von Daten wie z. B. Dateien mit Betriebsgeheimnissen erforderlich ist.
+Cloud App Security unterstützt derzeit keine Aufbewahrungsbezeichnungen, aber Sie können Office 365-Typen für vertrauliche Informationen mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
 
-Zu diesem Zeitpunkt wird die Verwendung von Azure Information Protection zum Anwenden der Azure RMS-Verschlüsselung nicht für Dateien mit Daten in Office 365 empfohlen, die der DSGVO unterliegen. Office 365-Dienste können derzeit RMS-verschlüsselte Dateien nicht lesen. Aus diesem Grund kann der Dienst die vertraulichen Daten in diesen Dateien nicht finden.
+[Vertraulichkeitsbezeichnungen](sensitivity-labels.md) werden derzeit empfohlen, um Bezeichnungen auf lokale Dateien und Dateien in anderen Cloud-Diensten und bei anderen Anbietern anzuwenden. Sie werden ebenfalls empfohlen für Dateien in Office 365, die für den Datenschutz eine Azure Informationen Protection (AIP)-Verschlüsselung benötigen, wie z. B. Dateien mit Betriebsgeheimnissen.
 
-Azure Information Protection-Bezeichnungen können auf E-Mails in Exchange Online angewendet werden und können mit DLP von Office 365 verwendet werden. Mit den in Kürze verfügbaren einheitlichen Klassifikations- und Bezeichnungsmodul können Sie die gleichen Bezeichnungen für E-Mails und Dateien verwenden, darunter automatisches Anwenden von Bezeichnungen auf E-Mails und Schutz von E-Mails während der Übertragung.
+Zu diesem Zeitpunkt wird die Verwendung der Azure Information Protection-Verschlüsselung nicht für Dateien in Office 365 empfohlen, die der DSGVO unterliegen. Office 365-Dienste können derzeit keine AIP-verschlüsselten Dateien lesen. Aus diesem Grund findet der Dienst keine vertraulichen Daten in diesen Dateien.
+
+Aufbewahrungsbezeichnungen können in Exchange Online auf E-Mail-Nachrichten angewendet werden, und diese Bezeichnungen verwenden den Schutz vor Datenverlust von Office 365. 
 
 ![Bezeichnungen in Office 365 und Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
-In der Abbildung sehen Sie Folgendes:
 
--   Verwenden von Office 365-Bezeichnungen für personenbezogene Daten und streng geregelte Dateien sowie Dateien mit Betriebsgeheimnissen in SharePoint Online und OneDrive for Business
+In der Darstellung sehen Sie Folgendes:
 
--   Verwenden von Azure Information Protection (AIP)-Bezeichnungen für streng geregelte Dateien sowie Dateien mit Betriebsgeheimnissen, Exchange Online-E-Mails, Dateien in anderen SaaS-Diensten, Dateien in lokalen Rechenzentren und Dateien in anderen Cloudanbietern
+-   Verwenden von Aufbewahrungsbezeichnungen für personenbezogene Daten und streng geregelte Dateien sowie Dateien mit Betriebsgeheimnissen in SharePoint Online und OneDrive for Business.
+-   Sie können Office 365-Typen für vertrauliche Informationen in Office 365 und mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
+-   Verwenden von Vertraulichkeitsbezeichnungen für streng geregelte Dateien sowie Dateien mit Betriebsgeheimnissen, Exchange Online-E-Mails, Dateien in anderen SaaS-Diensten, Dateien in lokalen Rechenzentren und Dateien in anderen Cloudanbietern.
 
--   In Kürze verfügbar: beide Arten von Bezeichnungen werden in einer einheitlichen Klassifikations- und Bezeichnungserfahrung zusammengeführt.
 
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Verwenden von Office-Bezeichnungen und vertraulichen Informationstypen in Microsoft 365 zum Schutz von Informationen
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Verwenden von Aufbewahrungsbezeichnungen und vertraulichen Informationstypen in Microsoft 365 zum Schutz von Informationen
 
-Die folgende Abbildung zeigt, wie Office-Bezeichnungen und vertrauliche Informationstypen in Bezeichnungsrichtlinien, DLP-Richtlinien und mit Cloud App Security-Richtlinien verwendet werden können.
+Die folgende Abbildung zeigt, wie Aufbewahrungsbezeichnungen und vertrauliche Informationstypen in Bezeichnungsrichtlinien, DLP-Richtlinien und mit Cloud App Security-Richtlinien verwendet werden können.
 
 ![Office-Bezeichnungen und vertrauliche Informationstypen](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -64,7 +69,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Office-Bezeichnungen. Beispiele: „Privat“, „Öffentlich“, „Kundendaten“, „Personaldaten“, „Vertraulich“, „Streng vertraulich“</td>
+<td align="left">Aufbewahrungsbezeichnungen Beispiele: „Privat“, „Öffentlich“, „Kundendaten“, „Personaldaten“, „Vertraulich“, „Streng vertraulich“</td>
 <td align="left"><p>Diese Bezeichnung automatisch anwenden...</p>
 <p>Kundendaten</p>
 <p>... auf Dokumente, die folgenden vertraulichen Informationstypen entsprechen...</p>
@@ -74,8 +79,8 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 <p>... auf Dokumente mit dieser Bezeichnung...</p>
 <p>Kundendaten</p></td>
 <td align="left"><p>Warnung, wenn Dateien mit diesen Attributen...</p>
-<p>&lt;vordefiniertes PII-Attribut – oder – benutzerdefinierter Ausdruck&gt;</p>
-<p>... in einer beliebigen genehmigten SaaS-App außerhalb der Organisation freigegeben werden</p></td>
+<p>Wählen Sie ein oder mehrere Attribute aus: vordefiniertes PII-Attribut, Office 365-Typ für vertrauliche Informationen, Vertraulichkeitsbezeichnung (AIP), benutzerdefinierter Ausdruck</p>
+<p>. . . in einer beliebigen genehmigten SaaS-App außerhalb der Organisation freigegeben werden</p><p>Hinweis: Aufbewahrungsbezeichnungen werden derzeit in Cloud App Security nicht unterstützt.</td>
 </tr>
 <tr class="even">
 <td align="left">Vertrauliche Informationstypen. Beispiele: Nationale belgische Nummer, Kreditkartennummer, Kroatische ID-Kartennummer, nationale finnische ID-Nummer</td>
@@ -86,7 +91,7 @@ Für Zwecke der Barrierefreiheit enthält die folgende Tabelle die gleichen Beis
 <td align="left"><p>Diesen Schutz anwenden...</p>
 <p>&lt;Schutz definieren&gt;</p>
 <p>... auf Dokumente, die folgenden vertraulichen Informationstypen entsprechen&gt;</p></td>
-<td align="left">Hinweis: In Kürze in Cloud App Security verfügbare Attribute beinhalten vertrauliche Informationstypen in Office 365 und einheitliche Bezeichnungen für Office 365 und Azure Information Protection.</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -162,7 +167,7 @@ Achten Sie darauf, dass Ihr Plan für die Implementierung von Bezeichnungen Folg
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Erstellen von Bezeichnungen und automatisch angewendeten Bezeichnungsrichtlinien
 
-Erstellen Sie Bezeichnungen und Richtlinien im Office 365 Security & Compliance Center.
+Erstellen Sie Bezeichnungen und Richtlinien im Security Center or Compliance Center.
 
 <table>
 <thead>
@@ -174,16 +179,16 @@ Erstellen Sie Bezeichnungen und Richtlinien im Office 365 Security & Compliance 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Gewähren von Berechtigungen für Mitglieder Ihres Complianceteams</p></td>
-<td align="left"><p>Mitglieder Ihres Complianceteams, die Bezeichnungen erstellen möchten, benötigen Berechtigungen für die Verwendung des Security &amp; Compliance Centers. Wechseln Sie im Security & Compliance Center zu „Berechtigungen“. und ändern Sie die Mitglieder der Gruppe „Complianceadministrator“.</p>
-<p>Weitere Informationen finden Sie unter <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Freigeben des Benutzerzugriffs auf das Office 365 Security &amp; Compliance Center</a></p></td>
+<td align="left"><p>Die Mitglieder Ihres Complianceteams, die Bezeichnungen erstellen sollen, benötigen Berechtigungen für das Security Center und/oder das Compliance Center. Gehen Sie im Security Center oder im Compliance Center zu „Berechtigungen“ und ändern Sie die Mitglieder der Gruppe „Complianceadministrator“.</p>
+<p>Einzelheiten hierzu finden Sie unter <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Gewähren des Zugriffs auf das Security Center und/oder Compliance Center</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Erstellen von Office-Bezeichnungen</p></td>
-<td align="left">Wechseln Sie im Security & Compliance Center zu „Klassifizierungen“, wählen Sie „Bezeichnungen“, und erstellen Sie die Bezeichnungen für Ihre Umgebung.</td>
+<td align="left"><p>Erstellen Sie Aufbewahrungsbezeichnungen.</p></td>
+<td align="left">Wechseln Sie im Security Center oder Compliance Center zu „Klassifizierungen“, wählen Sie „Aufbewahrungsbezeichnungen“, und erstellen Sie die Bezeichnungen für Ihre Umgebung.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Erstellen automatisch angewendeter Richtlinien für Bezeichnungen</p></td>
-<td align="left">Wechseln Sie im Security & Compliance Center zu „Klassifizierung“, wählen Sie „Bezeichnungsrichtlinien“, und erstellen Sie Richtlinien für automatisch angewendete Bezeichnungen. Vergewissern Sie sich, dass Sie diese Richtlinien in der entsprechenden Reihenfolge erstellen.</td>
+<td align="left">Wechseln Sie im Security Center oder Compliance Center zu „Klassifizierungen“, wählen Sie „Bezeichnungsrichtlinien“, und erstellen Sie die Richtlinien für das automatische Anwenden von Bezeichnungen. Achten Sie darauf, diese Richtlinien in der priorisierten Reihenfolge zu erstellen.</td>
 </tr>
 </tbody>
 </table>

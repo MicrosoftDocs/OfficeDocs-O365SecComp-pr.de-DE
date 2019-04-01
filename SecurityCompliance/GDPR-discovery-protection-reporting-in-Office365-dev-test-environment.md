@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Veranschaulichung von DSGVO-Funktionen in Office 365
-ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955278"
+ms.locfileid: "31001258"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Suche, Schutz und Berichterstellung für die DSGVO in der Office 365-Entwicklungs-/Testumgebung
 
@@ -98,7 +98,7 @@ In dieser Phase erstellen Sie einen benutzerdefinierten vertraulichen Informatio
 
 Contoso verwendet immer eine CCN beim Verweisen auf Kunden in der internen Korrespondenz, externen Korrespondenz, in Dokumenten und andere Formularen. Contoso benötigt einen benutzerdefinierten vertraulichen Informationstyp, um die Verwendung von CCNs in Office 365-Inhalt zu ermitteln, um einen möglichen Schutz für die Verwendung dieser personenbezogenen Informationen anzuwenden.
 
-1. Folgen Sie den Anweisungen in [Verbinden mit PowerShell für Office 365 Security & Compliance Center über Multi-Factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps), und stellen Sie mit dem UPN Ihres globalen Administratorkontos eine Verbindung mit Security & Compliance Center her.
+1. Folgen Sie den Anweisungen in [Verbinden mit Security & Compliance Center PowerShell über Multi-Factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) und stellen Sie mit dem UPN Ihres globalen Administratorkontos eine Verbindung mit Security & Compliance Center her.
 2. Führen Sie die folgenden PowerShell-Befehle aus:
 
      ```

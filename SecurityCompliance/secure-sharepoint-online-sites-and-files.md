@@ -3,7 +3,7 @@ title: Sichern von SharePoint Online-Websites und -Dateien
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: 227ece5710fd757af5e7e148a6d7135598bdbc71
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373916"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955228"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -47,11 +47,9 @@ Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfo
     
 ## <a name="capability-overview"></a>Funktionsübersicht
 
-Empfehlungen für SharePoint Online-Teamwebsites greifen auf eine Vielzahl von Office 365-Funktionen zurück. Für streng vertrauliche Websites wird Azure Information Protection empfohlen. Dieser Dienst ist in Enterprise Mobility + Security (EMS) enthalten. 
-  
-Die folgende Abbildung zeigt die empfohlenen Konfigurationen für vier SharePoint Online-Teamwebsites.
+Empfehlungen für SharePoint Online-Teamwebsites greifen auf eine Vielzahl von Microsoft 365-Funktionen zurück. Die folgende Abbildung zeigt die empfohlenen Konfigurationen für vier SharePoint Online-Teamwebsites.
 
-![Empfohlene Konfiguration für die SharePoint-Websites](Media/SharePoint-site-configuration-v2.png)
+![Empfohlene Konfiguration für die SharePoint-Websites](media/SharePoint-site-configurations.png)
 
 Erläuterung der Abbildung:
   
@@ -59,11 +57,11 @@ Erläuterung der Abbildung:
     
 - Websites mit der Schutzebene „Sensibel“ und „Streng vertraulich“ sind private Websites, bei denen der Zugriff auf Mitglieder bestimmter Gruppen beschränkt ist.
     
-- Office 365-Bezeichnungen dienen zum Klassifizieren von Daten mit der benötigten Schutzebene. Jede der SharePoint Online-Teamwebsites ist so konfiguriert, dass Dateien in Dokumentbibliotheken automatisch mit einer Standardbezeichnung für die Website bezeichnet werden. Entsprechend den vier Websitekonfigurationen sind die Bezeichnungen in diesem Beispiel „Intern öffentlich“, „Privat“, „Sensibel“ und „Streng vertraulich“. Benutzer können die Bezeichnungen ändern, aber diese Konfiguration stellt sicher, dass alle Dateien eine Standardbezeichnung erhalten.
+- [Aufbewahrungsbezeichnungen](labels.md) bieten eine Möglichkeit, Dateien innerhalb von Websites zu klassifizieren. Jede der SharePoint Online-Teamwebsites wird so konfiguriert, dass die Dateien in Dokumentbibliotheken automatisch mit einer standardmäßigen Aufbewahrungsbezeichnung für die Website versehen werden. Entsprechend den vier Websitekonfigurationen, sind die Bezeichnungen in diesem Beispiel „Intern Öffentlich“, „Privat Vertraulich“ und „Streng Vertraulich“. Benutzer können die Bezeichnungen ändern, aber diese Konfiguration sorgt dafür, dass alle Dateien eine Standardbezeichnung erhalten.
     
-- Richtlinien zur Verhinderung von Datenverlust sind für die Office 365-Bezeichnungen „Sensibel“ und „Streng vertraulich“ konfiguriert, um zu warnen oder Benutzer daran zu hindern, diese Dateitypen außerhalb der Organisation zu senden.
+- [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) sind für die Aufbewahrungsbezeichnungen „Sensibel“ und „Streng vertraulich“ konfiguriert, um Benutzer zu warnen oder daran zu hindern, diese Dateitypen außerhalb der Organisation zu senden.
     
-- Falls dies für Ihr Szenario erforderlich sein sollte, können Sie Azure Information Protection verwenden, um Dateien zu verschlüsseln und Berechtigungen für Dateien zu gewähren, die hochgradig vertraulich sind. Dies wird nicht für alle Kunden empfohlen.
+- Falls dies für Ihr Szenario nötig sein sollte, können Sie [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) verwenden, um streng vertrauliche Dateien mit Verschlüsselung und Berechtigungen zu schützen. Azure Information Protection-Kunden können Ihre Azure Information Protection-Bezeichnungen im Microsoft 365 Compliance Center verwenden, damit Ihre Bezeichnungen mit dem Azure-Portal synchronisiert werden, falls Sie eine zusätzliche oder erweiterte Konfiguration ausgewählt haben. Azure Information Protection-Bezeichnungen und Office 365-Vertraulichkeitsbezeichnungen sind miteinander vollständig kompatibel. Dies bedeutet z. B., wenn Sie Inhalte mit Azure Information Protection gekennzeichnet haben, müssen Sie Ihre Inhalte nicht klassifizieren oder neu bezeichnen. Nicht alle Kunden benötigen diese Schutzstufe. 
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Mandantenweite Einstellungen für SharePoint Online und OneDrive for Business
 
@@ -103,9 +101,9 @@ Wenn Sie die externe Freigabe nicht zulassen, stehen Benutzern mit einer Geschä
   
 ### <a name="device-access-settings"></a>Gerätezugriffseinstellungen
 
-Mithilfe von Gerätezugriffseinstellungen für SharePoint Online und OneDrive for Business können Sie bestimmen, ob der Zugriff auf den Browser beschränkt ist (die Dateien können nicht heruntergeladen werden) oder ob der Zugriff ganz blockiert ist. Diese Einstellungen stehen derzeit in der First Release zur Verfügung und gelten mandantenweit. In Kürze wird die Möglichkeit verfügbar sein, Gerätezugriffsrichtlinien auf Websiteebene zu konfigurieren. Für diese Lösung wird empfohlen, keine mandantenweit geltenden Gerätezugriffseinstellungen zu verwenden.
-  
-Informationen zum Verwenden von Gerätezugriffseinstellungen in der First Release finden Sie hier: [Einrichten der Standard- oder First Release-Optionen in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47).
+In den Gerätezugriffseinstellungen für SharePoint Online und OneDrive for Business können Sie bestimmen, ob der Zugriff auf den Browser beschränkt ist (es können keine Dateien heruntergeladen werden) oder ob der Zugriff vollständig blockiert ist. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](https://docs.microsoft.com/de-DE/sharepoint/control-access-from-unmanaged-devices). 
+
+Wenn Sie Gerätezugriffseinstellungen mit empfohlenen bedingten Zugriffsrichtlinien in Azure Active Directory verwenden möchten, finden Sie unter [Richtlinienempfehlungen zum Schutz von SharePoint-Websites und -Dateien](https://docs.microsoft.com/de-DE/microsoft-365/enterprise/sharepoint-file-access-policies) weitere Informationen.
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -120,30 +118,30 @@ In der folgenden Tabelle wird die Konfiguration für jede der zuvor in diesem Ar
 ||**Basisschutz 1** <br/> |**Grundlegender Schutz #2** <br/> |**Schutz sensibler Daten** <br/> |**Streng vertraulich** <br/> |
 |Beschreibung  <br/> |Offene Ermittlung und Zusammenarbeit innerhalb der Organisation.  <br/> |Private Website und Gruppe, Freigabe außerhalb der Gruppe zulässig.  <br/> |Isolierte Website, für die Zugriffsebenen durch Mitgliedschaft in bestimmten Gruppen definiert sind. Die Freigabe ist nur für Mitglieder dieser Website zulässig. Die DLP warnt Benutzer bei dem Versuch, Dateien außerhalb der Organisation zu senden.  <br/> |Isolierte Website + Dateiverschlüsselung und Berechtigungen mit Azure Information Protection. Die DLP verhindert, dass Benutzer Dateien außerhalb der Organisation senden.  <br/> |
 |Private oder öffentliche Teamwebsite  <br/> |Public (Öffentlich)  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
-|Wer hat Zugriff?  <br/> |Alle Benutzer in der Organisation, einschließlich B2B-Benutzer und Gäste.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder. Andere Personen können keinen Zugriff anfordern.  <br/> |
-|Freigabekontrollen auf Websiteebene  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website anfordern, aber diese Anforderungen müssen von einem Websiteadministrator bearbeitet werden.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website oder die Inhalte nicht anfordern.  <br/> |
-|Gerätezugriffssteuerungen auf Websiteebene  <br/> |Keine zusätzlichen Steuerelemente.  <br/> |Keine zusätzlichen Steuerungen.  <br/> |In Kürze sind Steuerungen auf Websiteebene verfügbar, die verhindern, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen. Von allen anderen Geräten aus ist nur Browserzugriff zulässig.  <br/> |In Kürze sind Steuerelemente auf Websiteebene verfügbar, die blockieren, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen.  <br/> |
-|Office 365-Bezeichnungen  <br/> |Intern Öffentlich  <br/> |Private  <br/> |Vertraulich  <br/> |Streng vertraulich  <br/> |
+|Wer hat Zugriff?  <br/> |Alle Benutzer in der Organisation, einschließlich der B2B-Benutzer und Gastbenutzer.  <br/> |Nur Mitglieder der Website. Andere Personen können den Zugriff anfordern.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder. Andere Personen können keinen Zugriff anfordern.  <br/> |
+|Freigabekontrollen auf Websiteebene  <br/> |Freigabe mit jeder beliebigen Person zulässig. Standardeinstellungen.  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website anfordern, aber diese Anforderungen müssen von einem Websiteadministrator bearbeitet werden.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website oder die Inhalte nicht anfordern.  <br/> |
+|Gerätezugriffssteuerungen auf Websiteebene  <br/> |Keine zusätzlichen Steuerelemente.  <br/> |Keine zusätzlichen Steuerelemente.  <br/> |Verhindert, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen. Alle anderen Geräte erhalten nur Browserzugriff.  <br/> |Blockieren des Downloads von Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte.  <br/> |
+|Aufbewahrungsbezeichnungen  <br/> |Intern öffentlich  <br/> |Private  <br/> |Vertraulich  <br/> |Streng vertraulich  <br/> |
 |DLP-Richtlinien  <br/> |||Warnen Benutzer beim Senden von Dateien mit der Bezeichnung „Vertraulich“ außerhalb der Organisation.  <br/> Um die externe Freigabe von sensiblen Datentypen wie z. B. Kreditkartennummern oder anderen persönlichen Daten zu blockieren, können Sie zusätzliche DLP-Richtlinien für diese Datentypen konfigurieren (einschließlich benutzerdefinierter Datentypen, die Sie selbst konfigurieren).  <br/> |Benutzer werden daran gehindert, Dateien mit der Bezeichnung „Streng vertraulich“ an Empfänger außerhalb der Organisation zu senden. Sie können es Benutzern ermöglichen, dies durch Angabe einer Rechtfertigung zu überschreiben, einschließlich der Person, für die sie die Datei freigeben.  <br/> |
-|Azure Information Protection  <br/> ||||Azure Information Protection wird zum automatischen Verschlüsseln von Dateien und zum Erteilen von Berechtigungen für diese verwendet. Dieser Schutz ist mit den Dateien verbunden und bleibt auch dann erhalten, falls sie verloren gehen.  <br/> Office 365 kann keine Dateien lesen, die mit Azure Information Protection verschlüsselt wurden. Darüber hinaus können DLP-Richtlinien nur auf die Metadaten (einschließlich Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien).  <br/> |
+|Vertraulichkeitsbezeichnungen  <br/> ||||Verwenden Sie Vertraulichkeitsbezeichnungen, um Dateien automatisch zu verschlüsseln und Berechtigungen für Dateien zu erteilen. Vertraulichkeitsbezeichnungen verwenden Azure Information Protection zur Verschlüsselung von Dateien. Dieser Schutz ist mit den Dateien verbunden, für den Fall, dass sie kompromittiert werden.  <br/> Office 365 kann keine Dateien lesen, die mit Azure Information Protection verschlüsselt wurden. Darüber hinaus können DLP-Richtlinien nur auf die Metadaten (einschließlich Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien).  <br/> |
    
 Die Schritte zum Bereitstellen der vier verschiedenen Typen von SharePoint Online-Teamwebsites in dieser Lösung finden Sie unter [Bereitstellen von Websites für den Schutz auf drei Ebenen](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). Die Schritte zur Erstellung einer Entwicklungs-/Testumgebung finden Sie unter [Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung](secure-sharepoint-online-sites-in-a-dev-test-environment.md). 
   
-## <a name="office-365-classification-and-labels"></a>Office 365-Klassifizierung und -Bezeichnungen
+## <a name="office-365-retention-labels"></a>Office 365-Aufbewahrungsbezeichnungen
 
-Die Verwendung von Office 365-Bezeichnungen wird für Umgebungen mit sensiblen Daten empfohlen. Nachdem Sie Office 365-Bezeichnungen konfiguriert und bereitgestellt haben, haben Sie folgende Möglichkeiten:
+Das Verwenden von Aufbewahrungsbezeichnungen wird für Umgebungen mit vertraulichen Daten empfohlen. Nachdem Sie Aufbewahrungsbezeichnungen konfiguriert und bereitgestellt haben, haben Sie folgende Möglichkeiten:
   
 - Sie können eine Standardbezeichnung auf eine Dokumentbibliothek in einer SharePoint Online-Teamwebsite anwenden, sodass alle Dokumente in dieser Bibliothek mit der Standardbezeichnung versehen werden. 
     
 - Sie können Bezeichnungen automatisch auf Inhalt anwenden, wenn er bestimmten Bedingungen entspricht.
     
-- Sie können DLP-Richtlinien anwenden, die auf Office 365-Bezeichnungen basieren.
+- Sie können DLP-Richtlinien anwenden, die auf Aufbewahrungsbezeichnungen basieren.
     
 - Personen in Ihrer Organisation können eine Bezeichnung manuell auf Inhalte in Outlook im Web, Outlook 2010 und höher, OneDrive for Business, SharePoint Online und Office 365-Gruppen anwenden. Benutzer wissen häufig am besten, mit welcher Art von Inhalten sie arbeiten, sodass sie sie klassifizieren und die entsprechende DLP-Richtlinie anwenden lassen können.
     
 ![Empfohlene Konfiguration für die SharePoint-Websites](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
-Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Bezeichnungen:
+Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Aufbewahrungsbezeichnungen:
   
 - Streng vertraulich
     
@@ -155,21 +153,16 @@ Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Bezeichnunge
     
 Die Bezeichnungen sind den empfohlenen Websites in den Abbildungen und Diagrammen weiter oben in diesem Artikel zugeordnet. Diese Lösung empfiehlt die Konfiguration von DLP-Richtlinien, um Informationslecks bei Dateien zu verhindern, die als sensibel oder streng vertraulich klassifiziert sind.
   
-Die Schritte zum Konfigurieren von Office 365-Bezeichnungen und DLP-Richtlinien in dieser Lösung finden Sie unter [Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md).
+Die Schritte zum Konfigurieren von Aufbewahrungsbezeichnungen und DLP-Richtlinien in dieser Lösung finden Sie unter [Schützen von SharePoint Online-Dateien mit Aufbewahrungsbezeichnungen und DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md).
   
-## <a name="azure-information-protection"></a>Azure Information Protection
+## <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen 
 
-Falls dies für Ihr Sicherheitsszenario erforderlich sein sollte, können Sie Azure Information Protection verwenden, um Bezeichnungen und Schutzfunktionen anzuwenden, die die Dateien unabhängig von ihrem Standort begleiten. Die Bezeichnungen in Azure Information Protection sind anders als in Office 365. Für diese Lösung empfehlen wir, eine bereichsbezogene Azure Information Protection-Richtlinie und die Bezeichnung „Streng vertraulich“ zu verwenden, um Dateien, die Schutz der höchsten Ebene benötigen, zu verschlüsseln und Berechtigungen für sie zu erteilen. 
+Falls dies für Ihr Sicherheitsszenario notwendig sein sollte, können Sie Vertraulichkeitsbezeichnungen verwenden, um Schutzfunktionen anzuwenden, die die Dateien immer und überall begleiten. Vertraulichkeitsbezeichnungen im Microsoft 365 Compliance Center und Azure Information Protection-Bezeichnungen sind identisch. Für diese Lösung empfehlen wir, dass Sie eine bereichsbezogene Azure Information Protection-Richtlinie und eine Unterbezeichnung der Bezeichnung „Streng Vertraulich“ verwenden, um Dateien, die der höchsten Schutzebene bedürfen, zu verschlüsseln und Berechtigungen für diese zu erteilen. 
   
-Beachten Sie Folgendes: Wenn Azure Information Protection-Verschlüsselung auf Dateien in Office 365 angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur mit den Metadaten (einschließlich Office 365-Bezeichnungen) funktionieren, aber nicht mit den Inhalten dieser Dateien (wie Kreditkartennummern in Dateien).
-  
-![Azure Information Protection ist in Azure konfiguriert, und es werden Beschriftungen in der Client-Symbolleiste angezeigt](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
-  
-Erläuterung der Abbildung:
-  
-- Azure Information Protection-Richtlinien und -Bezeichnungen werden im Microsoft Azure-Portal konfiguriert. Es wird empfohlen, eine untergeordnete Bezeichnung einer bereichsbezogenen Azure Information Protection-Richtlinie zu konfigurieren.
-    
-- Azure Information Protection-Bezeichnungen werden als Symbolleiste **Information Protection** in Office-Anwendungen angezeigt.
+Bedenken Sie Folgendes: Wenn Azure Information Protection-Verschlüsselung auf in Office 365 gespeicherte Dateien angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur mit den Metadaten (einschließlich Aufbewahrungsbezeichnungen) funktionieren, aber nicht mit den Inhalten dieser Dateien (wie Kreditkartennummern in Dateien).
+
+Weitere Informationen finden Sie unter [Übersicht über Vertraulichkeitsbezeichnungen](sensitivity-labels.md).
+
     
 ### <a name="adding-permissions-for-external-users"></a>Hinzufügen von Berechtigungen für externe Benutzer
 
