@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Ermitteln Sie, ob Ihre Organisation als Teil des DSGVO-Plans Bezeichnungen implementiert.
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789440"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800297"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Entwerfen eines Klassifikationsschemas für personenbezogene Daten
 
@@ -41,9 +41,9 @@ Wählen Sie eine der folgenden Optionen.
 
 -   Diese sind einfacher zu verwenden, wenn Ihre Organisation nicht bereits einen umfassenden Plan für die Datenkontrolle mithilfe von Bezeichnungen hat bzw. plant.
 
--   Sie können mit DLP-Regeln verwendet werden (genauso wie Office-Bezeichnungen).
+-   Sie können mit DLP-Regeln verwendet werden (genauso wie Aufbewahrungsbezeichnungen).
 
--   In Zukunft können sie auch mit Cloud App Security verwendet werden, sodass Sie vertraulichen Informationen in anderen SaaS-Apps erkennen können.
+-   Typen vertraulicher Informationen können auch mit Cloud App Security verwendet werden, sodass Sie vertrauliche Informationen in anderen SaaS-Apps erkennen können.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Option 2: Verwenden von vertraulichen Informationstypen und Aufbewahrungsbezeichnungen
 

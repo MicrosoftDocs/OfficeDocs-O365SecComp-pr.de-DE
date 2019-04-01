@@ -3,7 +3,7 @@ title: Übersicht über Aufbewahrungsbezeichnungen
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aufbewahrungsbezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Aufbewahrungsbezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: c7a1ea3221de193db30a821e0449194ea761ebcf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455307"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000818"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -60,10 +60,9 @@ Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
     
 - **Implementieren Sie die Datensatzverwaltung im gesamten Office 365**, darunter E-Mails und Dokumente. Sie können eine Aufbewahrungsbezeichnung verwenden, um Inhalt als Datensatz zu klassifizieren. In diesem Fall kann die Bezeichnung nicht geändert oder entfernt werden, und der Inhalt kann nicht bearbeitet oder gelöscht werden. 
     
-Sie erstellen und verwalten Aufbewahrungsbezeichnungen auf der Registerkarte **Aufbewahrung** auf der Seite **Bezeichnungen **im Office 365 Security &amp; Compliance Center. 
+Sie erstellen und verwalten Aufbewahrungsbezeichnungen auf der Seite **Bezeichungen** > Registerkarte **Aufbewahrung** im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security &amp; Compliance Center.  
   
-![Registerkarte „Aufbewahrung“ auf der Seite „Bezeichnungen“](media/Retention_tab_on_Labels_page.png)
- 
+
 ## <a name="how-retention-labels-work-with-label-policies"></a>Funktionsweise von Aufbewahrungsbezeichnungen bei Bezeichnungsrichtlinien
 
 Das Bereitstellen von Aufbewahrungsbezeichnungen für Personen in Ihrer Organisation, damit sie Inhalte klassifizieren können, ist ein zweistufiger Vorgang: Zuerst erstellen Sie die Bezeichnungen, und dann veröffentlichen Sie die Bezeichnungen an den von Ihnen ausgewählten Speicherorten. Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, wird eine Bezeichnungsrichtlinie erstellt.
@@ -90,7 +89,7 @@ Es ist wichtig zu wissen, dass ein Inhalt wie eine E-Mail-Nachricht oder ein Dok
     
 - Wenn es mehrere Regeln gibt, durch die eine Bezeichnung automatisch zugewiesen wird, und ein Inhalt die Bedingungen verschiedener Regeln erfüllt, wird die Aufbewahrungsbezeichnung für die älteste Regel angewendet.
     
-Manuelle Bezeichnungen werden explizit zugewiesen, automatische Bezeichnungen hingegen implizit. Eine explizite Aufbewahrungsbezeichnung hat Vorrang vor einer impliziten Bezeichnung. Weitere Informationen finden Sie weiter unten im Abschnitt [Die Grundsätze der Aufbewahrung, oder was hat Vorrang?](labels.md#principles).
+Manuelle Bezeichnungen werden explizit zugewiesen, automatische Bezeichnungen hingegen implizit. Eine explizite Aufbewahrungsbezeichnung hat Vorrang vor einer impliziten Bezeichnung. Weitere Informationen finden Sie weiter unten im Abschnitt [Die Grundsätze der Aufbewahrung, oder was hat Vorrang?](#the-principles-of-retention-or-what-takes-precedence).
 
 Alle Informationen in diesem Abschnitt gelten nur für Aufbewahrungsbezeichnungen. Beachten Sie, dass zusätzlich zu einer Aufbewahrungsbezeichnung auf ein Inhaltselement auch eine Vertraulichkeitsbezeichnung angewendet werden kann.
   
@@ -98,7 +97,7 @@ Alle Informationen in diesem Abschnitt gelten nur für Aufbewahrungsbezeichnunge
 
 Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen oder automatisch anwenden, werden sie nicht sofort wirksam:
   
-1. Zuerst einmal muss die Bezeichnungsrichtlinie über das Security &amp; Compliance Center mit den Speicherorten der Richtlinie synchronisiert werden.
+1. Zuerst muss die Bezeichnungsrichtlinie aus dem Admin Center mit den Standorten der Richtlinie synchronisiert werden.
     
 2. Anschließend benötigt der Speicherort möglicherweise etwas Zeit, um den Endbenutzern die manuellen Bezeichnungen bereitzustellen oder die Bezeichnungen automatisch auf den Inhalt anzuwenden. Wie lange dies dauert, hängt vom Speicherort der Art der Bezeichnung ab.
     
@@ -110,7 +109,7 @@ Wenn Sie Aufbewahrungsbezeichnungen auf SharePoint oder OneDrive veröffentliche
   
 ### <a name="auto-apply-retention-labels"></a>Automatisch angewendete Aufbewahrungsbezeichnungen
 
-Wenn Sie Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, die bestimmte Bedingungen erfüllen, kann es bis zu sieben Tage dauern, bevor die Aufbewahrungsbezeichnungen auf alle Inhalte angewendet werden, die diesen Kriterien entsprechen.
+Wenn Sie Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, die bestimmte Bedingungen erfüllen, kann es bis zu sieben Tage dauern, bevor die Aufbewahrungsbezeichnungen auf alle vorhandenen Inhalte angewendet werden, die diesen Kriterien entsprechen. Beachten Sie jedoch, dass Ihre Aufbewahrungsbezeichnungen nach der Bereitstellung schnell auf neue Inhalte angewendet werden, in der Regel innerhalb von 15 Minuten oder weniger.
   
 ![Diagramm, wann automatisch angewendete Bezeichnungen wirksam werden](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -384,11 +383,13 @@ Eine Aufbewahrungsbezeichnung kann Aufbewahrungsaktionen für Inhalte erzwingen.
   
 Weitere Informationen finden Sie unter [Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)
   
-## <a name="using-the-label-activity-explorer-and-the-data-governance-reports"></a>Verwenden des Bezeichnungsaktivitäten-Explorers und von Data Governance-Berichten
+## <a name="monitor-retention-labels"></a>Aufbewahrungsbezeichnungen überwachen
 
 Wenn Sie Aufbewahrungsbezeichnungen veröffentlicht oder automatisch angewendet haben, sollten Sie überprüfen, ob sie wie gewünscht auf Inhalte angewendet werden. Zum Überwachen der Aufbewahrungsbezeichnungen können Sie den
   
 - **Bezeichnungsaktivitäten-Explorer** verwenden. Mit dem Explorer (siehe unten) können Sie schnell die Aufbewahrungsbezeichnungsaktivität für alle Inhalte in SharePoint und OneDrive for Business während der letzten 30 Tage durchsuchen und sie anzeigen. Weitere Informationen finden Sie unter [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md).
+
+- Seite **Analyse der Bezeichnungen**. Im Microsoft 365 Compliance Center und Microsoft 365 Security Center können Sie schnell sehen, welche Bezeichnungen am häufigsten verwendet werden und wo sie angewendet werden. Außerdem können Sie alle Inhalte mit einer bestimmten Bezeichnung anzeigen. Weitere Informationen finden Sie unter [Anhzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md).
     
 - **Berichte zur Data Governance**. Mit diesen Berichten können Sie schnell die Trends bei Aufbewahrungsbezeichnungen und die Aktivitäten für alle Inhalte in Exchange, SharePoint und OneDrive for Business während der letzten 90 Tage anzeigen. Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Data Governance](view-the-data-governance-reports.md).
     
@@ -396,9 +397,7 @@ Wenn Sie Aufbewahrungsbezeichnungen veröffentlicht oder automatisch angewendet 
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Verwenden der Inhaltssuche zum Suchen des gesamten Inhalts, auf den eine bestimmte Aufbewahrungsbezeichnung angewendet wurde
 
-Nachdem Aufbewahrungsbezeichnungen entweder von Benutzern Inhalten zugewiesen oder automatisch auf Inhalte angewendet wurden, können Sie die Inhaltssuche im Security &amp; Compliance Center verwenden, um alle Inhalte zu suchen, die durch eine bestimmte Aufbewahrungsbezeichnung klassifiziert wurden.
-  
-![Seite „Inhaltssuche“](media/564d5dfe-285a-4a7e-800e-907b12a1b273.png)
+Nachdem die Aufbewahrungsbezeichnungen den Inhalten entweder von Benutzern oder automatisch zugewiesen wurden, können Sie mit der Inhaltssuche alle Inhalte finden, die mit einer bestimmten Aufbewahrungsbezeichnung klassifiziert sind.
   
 Wenn Sie eine Inhaltssuche erstellen, wählen Sie die **Compliancetag**-Bedingung, und geben Sie dann den gesamten Bezeichnungsnamen oder einen Teil davon ein, und verwenden Sie ein Platzhalterzeichen. Weitere Informationen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
   
@@ -432,7 +431,7 @@ Schließlich kann keine Aufbewahrungsrichtlinie oder Kennzeichnung einen Inhalt 
 
 Aufbewahrungsbezeichnungen können ganz einfach der gesamten Organisation und deren Inhalten in Office 365 bereitgestellt werden, einschließlich Exchange, SharePoint, OneDrive und Office 365-Gruppen. Wenn Sie Inhalte klassifizieren oder Datensätze in Office 365 verwalten müssen, empfehlen wir, dass Sie Aufbewahrungsbezeichnungen verwenden.
   
-Es gibt mehrere andere Features, die zuvor zum Klassifizieren von Inhalten oder Verwalten von Einträgen in Office 365 verwendet wurden. Diese sind nachfolgend aufgeführt. Diese Features funktionieren weiterhin gleichberechtigt mit Aufbewahrungsbezeichnungen im Security &amp; Compliance Center. Beachten Sie, dass es vorkommen kann, dass sich die Implementierung von Aufbewahrungsbezeichnungen von früheren Features unterscheidet, und die Weiterentwicklung von Aufbewahrungsbezeichnungen treibt die Entwicklung der künftigen Datensatzverwaltung in Office 365 voran. Daher empfehlen wir Ihnen, künftig für die Data Governance Bezeichnungen anstelle dieser Features zu verwenden.
+Es gibt mehrere andere Features, die zuvor zum Klassifizieren von Inhalten oder Verwalten von Datensätzen in Office 365 verwendet wurden. Diese sind nachfolgend aufgeführt. Diese Features arbeiten weiterhin Seite an Seite mit Aufbewahrungsbezeichnungen. Beachten Sie, dass es zwar Fälle gibt, in denen sich die Implementierung von Bezeichnungen von früheren Features unterscheidet, die Entwicklung von Aufbewahrungsbezeichnungen jedoch die Zukunft der Datensatzverwaltung in Office 365 bestimmen wird. Daher wird im Hinblick auf Datengovernance auf lange Sicht empfohlen, Aufbewahrungsbezeichnungen anstelle dieser Features zu verwenden.
   
 ### <a name="exchange-online"></a>Exchange Online
 

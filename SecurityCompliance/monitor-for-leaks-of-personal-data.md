@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373886"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955208"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
 
@@ -57,7 +57,7 @@ Sie können die DLP-Berichte für Folgendes verwenden:
 
 Darüber hinaus können Sie anhand der DLP-Berichte Ihre DLP-Richtlinien bei der Ausführung im Testmodus genauer anpassen.
 
-DLP-Berichte befinden sich im Security and Compliance Center. Navigieren Sie zu „Berichte“ \> „Berichte anzeigen“. Wechseln Sie unter „Verhinderung von Datenverlust (Data Loss Prevention, DLP)“ entweder zu „DLP-Richtlinien- und -Regelübereinstimmungen“ oder zu „Falsch positive Meldungen der DLP-Richtlinie und Außerkraftsetzungen“.
+DLP-Berichte finden sich im Security Center und Compliance Center. Navigieren Sie zu Berichte \> Berichte anzeigen. Wechseln Sie unter „Verhinderung von Datenverlust (Data Loss Prevention, DLP)“ entweder zu „DLP-Richtlinien- und -Regelübereinstimmungen“ oder zu „Falsch positive Meldungen der DLP-Richtlinie und Außerkraftsetzungen“.
 
 Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung von Datenverlust](https://support.office.com/de-DE/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
@@ -67,9 +67,9 @@ Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung v
 
 Das Office 365-Überwachungsprotokoll enthält Ereignisse von Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway und anderen Office 365-Diensten.
 
-Das Office 365 Security and Compliance Center bietet zwei Möglichkeiten zum Überwachen und Berichten anhand des Office 365-Überwachungsprotokolls:
+Security Center und Compliance Center bieten zwei Möglichkeiten zum Überwachen und Berichten anhand des Office 365-Überwachungsprotokolls:
 
--   Einrichten von Warnungsrichtlinien, Anzeigen von Warnungen und überwachen von Trends – Verwenden Sie die neuen Warnungsrichtlinien- und Warnungsdashboardtools im Office 365 Security and Compliance Center.
+-   Einrichten von Warnungsrichtlinien, Anzeigen von Warnungen und überwachen von Trends – Verwenden Sie die Warnungsrichtlinien- und Warnungsdashboardtools im Security oder Compliance Center.
 
 -   Direktes Durchsuchen des Überwachungsprotokolls – Suchen Sie nach allen Ereignissen in einem bestimmten Datumsbereich. Oder filtern Sie die Ergebnisse nach bestimmten Kriterien, z. B. nach dem Benutzer, der die Aktion ausgeführt hat, der Aktion oder dem Zielobjekt.
 
@@ -81,14 +81,14 @@ Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API
 
 Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachungsprotokolls finden Sie unter:
 
--   [Warnungsrichtlinien im Office 365 Security & Compliance Center](https://support.office.com/de-DE/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Warnungsrichtlinien im Microsoft 365 Security oder Compliance Center](https://support.office.com/de-DE/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365](https://support.office.com/de-DE/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (Einführung)
 
 -   [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://support.office.com/de-DE/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [Durchsuchen des Überwachungsprotokolls](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 

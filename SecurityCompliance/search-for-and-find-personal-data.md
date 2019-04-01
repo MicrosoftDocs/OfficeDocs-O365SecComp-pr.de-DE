@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Suchen und Finden personenbezogener Daten in Office 365.
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373876"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955178"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 
@@ -72,13 +72,12 @@ Fügen Sie der Abfrage ggf. Parameter hinzu, um die falsch positiven Ergebnisse 
 </tbody>
 </table>
 
-In Kürze können Sie Typen vertraulicher Informationen auf einer neuen Benutzeroberfläche im Security & Compliance Center erstellen und ändern. Sie können dynamisch die übereinstimmenden Ergebnisse sehen und die Typen vertraulicher Informationen nach Ihren Bedürfnissen optimieren.
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>Suchen nach Typen vertraulicher Informationen mit der Inhaltssuche
 
-Beginnen Sie die Suche nach personenbezogenen Daten mit den Typen vertraulicher Informationen, die in Office 365 enthalten sind. Diese sind im Security & Compliance Center unter „Klassifizierung“ aufgeführt.
+Beginnen Sie mit der Suche nach personenbezogenen Daten, indem Sie vertrauliche Informationstypen verwenden, die in Office 365 enthalten sind. Diese sind unter „Klassifizierung“ im Security Center und Compliance Center aufgeführt.
 
-Dieses Thema enthält eine Liste der aktuellen Typen vertraulicher Informationen, die für Bürger in der Europäischen Union gelten. Verwenden Sie diese als Ausgangspunkt. Überprüfen Sie das Security & Compliance Center häufig auf neue Ergänzungen, die im Zusammenhang mit der DSGVO hilfreich sind.
+Dieses Thema enthält eine Liste einiger vertraulicher Informationstypen, die für Bürger in der Europäischen Union gelten. Gehen Sie zum Security Center oder Compliance Center, um sich über neue Ergänzungen zu informieren, die bei der DSGVO-Compliance hilfreich sind.
 
 Weitere Informationen finden Sie im Artikel: [Liste der Typen vertraulicher Informationen und wonach sie suchen](https://support.office.com/de-DE/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 

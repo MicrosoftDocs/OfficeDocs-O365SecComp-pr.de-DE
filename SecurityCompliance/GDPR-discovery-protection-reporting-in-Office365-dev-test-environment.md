@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Veranschaulichung von DSGVO-Funktionen in Office 365
-ms.openlocfilehash: c0d46eb8839fe594e00ae40fae3b2eb69dc2adcc
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373906"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955278"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Suche, Schutz und Berichterstellung für die DSGVO in der Office 365-Entwicklungs-/Testumgebung
 
@@ -175,7 +175,7 @@ Contoso verwendet immer eine CCN beim Verweisen auf Kunden in der internen Korre
 
 ## <a name="phase-5-demonstrate-data-protection"></a>Phase 5: Veranschaulichen des Datenschutzes
 
-Der Schutz personenbezogener Daten in Office 365 umfasst Funktionen zur Verhinderung von Datenverlust (Data Loss Prevention, DLP). Mit DLP-Richtlinien im Office 365 Security & Compliance Center können Sie vertrauliche Informationen in Office 365 automatisch schützen.
+Schutz von personenbezogenen Informationen in Office 365 umfasst Funktionen, um Datenverlust zu vermeiden.  Mit DLP-Richtlinien können Sie automatisch in Office 365 vertrauliche Informationen schützen.
 
 Es gibt mehrere Methoden zum Anwenden des Schutzes. Die Aufklärung und Bewusstseinsbildung in Bezug auf Daten von EU-Bürgern, die in Ihrer Umgebung gespeichert werden, sowie den Umgang von Mitarbeitern mit diesen stellen eine Ebene des Informationsschutzes unter Verwendung von DLP von Office 365 dar.
 
