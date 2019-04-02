@@ -3,7 +3,7 @@ title: Übersicht über Aufbewahrungsrichtlinien
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935300"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997141"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -31,7 +31,7 @@ In den meisten Organisationen nimmt die Menge und Komplexität der Daten täglic
     
 - **Ihrer Organisation dabei helfen müssen, effektiven Wissensaustausch zu betreiben und agiler zu werden**, indem Sie sicherstellen, dass die Benutzer nur mit Inhalten arbeiten, die aktuell und für sie relevant sind. 
     
-Eine Aufbewahrungsrichtlinie in Office 365 kann Ihnen dabei helfen, alle diese Ziele zu erreichen. Das Verwalten von Inhalten macht häufig zwei Aktionen erforderlich:
+Eine Aufbewahrungsrichtlinie kann Ihnen dabei helfen, alle diese Ziele zu erreichen. Das Verwalten von Inhalten macht häufig zwei Aktionen erforderlich:
   
 - **Aufbewahrung** von Inhalten, sodass sie nicht vor dem Ende des Aufbewahrungszeitraums dauerhaft gelöscht werden 
     
@@ -49,10 +49,10 @@ Wenn Inhalte einer permanenten Richtlinie unterliegen, können Benutzer den Inha
   
 Schließlich müssen einige Organisationen ggf. Vorschriften einhalten, wie zum Beispiel die Rule 17a-4 der Securities and Exchange Commission (SEC), nach der eine Aufbewahrungsrichtlinie nach dem Aktivieren nicht deaktiviert oder weniger restriktiv eingestellt werden darf. Um diese Anforderung zu erfüllen, können Sie die Erhaltungssperre verwenden. Nachdem eine Richtlinie gesperrt wurde, kann niemand – auch nicht der Administrator – die Richtlinie deaktivieren oder weniger restriktiv einstellen.
   
-Sie erstellen und verwalten Aufbewahrungsrichtlinien auf der Seite **Aufbewahrung** im Office 365 Security &amp; Compliance Center. 
-  
-![Seite "Aufbewahrung" im Security and Compliance Center](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
-  
+Sie erstellen und verwalten Aufbewahrungsrichtlinien auf der:
+
+- Seite **Richtlinien** im Microsoft 365 Compliance Center.
+- Seite **Aufbewahrung** unter **Datengovernance** im Office 365 Security &amp; Compliance Center.
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten
 
@@ -322,7 +322,7 @@ Schließlich kann keine Aufbewahrungsrichtlinie oder Kennzeichnung einen Inhalt 
 
 Eine einzelne Aufbewahrungsrichtlinie kann 365-Gruppen ganz einfach auf eine gesamte Organisation und Speicherorte in Office 365 anwenden, einschließlich Exchange Online, SharePoint Online, OneDrive for Business und Office. Wenn Sie an einer beliebigen Stelle in Office 365 Inhalte aufbewahren oder löschen müssen, empfehlen wir, dass Sie eine Aufbewahrungsrichtlinie verwenden. (Sie können auch Kennzeichnungen mit Aufbewahrungseinstellungen nutzen – Weitere Informationen finden Sie unter [Übersicht über Kennzeichnungen](labels.md).)
   
-Es gibt mehrere andere Features, die früher zum Aufbewahren oder Löschen von Inhalten in Office 365 verwendet wurden. Diese sind nachfolgend aufgeführt. Diese Features können weiterhin parallel zu Aufbewahrungsrichtlinien und Kennzeichnungen genutzt werden, die im Security &amp; Compliance Center erstellt wurden. Doch im Rahmen der Daten-Governance empfehlen wir Ihnen, dass Sie eine Aufbewahrungsrichtlinie oder Kennzeichnungen anstelle dieser Features verwenden. Eine Aufbewahrungsrichtlinie ist das einzige Feature, das sowohl für die Aufbewahrung als auch das Löschen von Inhalten in Office 365 genutzt werden kann.
+Es gibt mehrere andere Features, die zuvor zum Aufbewahren oder Löschen von Inhalten in Office 365 verwendet wurden. Diese sind nachfolgend aufgeführt. Diese Features funktionieren weiterhin Seite an Seite mit Aufbewahrungsrichtlinien und -bezeichnungen. Auf lange Sicht wird im Hinblick auf Datengovernance jedoch empfohlen, eine Aufbewahrungsrichtlinie oder Kennzeichnungen anstelle dieser Features zu verwenden. Eine Aufbewahrungsrichtlinie ist das einzige Feature, mit dem Inhalte in Office 365 übergreifend aufbewahrt und gelöscht werden können.
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -346,15 +346,15 @@ Es gibt mehrere andere Features, die früher zum Aufbewahren oder Löschen von I
     
 - [Informationsverwaltungsrichtlinien](intro-to-info-mgmt-policies.md) (Nur Löschen) 
     
-Beachten Sie, dass wenn Sie für die Daten-Governance zuvor eine der eDiscovery-Sperren verwendet haben, Sie stattdessen eine Aufbewahrungsrichtlinie für proaktive Compliance nutzen sollten. Im Security &amp; Compliance Center erstellte Sperren sollten Sie nur für eDiscovery nutzen.
+Wenn Sie bisher einen der eDiscovery-Haltbereiche zum Zwecke der Datengovernance verwendet haben, sollten Sie stattdessen eine Aufbewahrungsrichtlinie für proaktive Compliance verwenden. Verwenden Sie einen Haltebereich nur für eDiscovery.
   
 ### <a name="retention-policies-override-information-management-policies"></a>Aufbewahrungsrichtlinien setzen Informationsverwaltungsrichtlinien außer Kraft
 
-In SharePoint-Websites verwenden Sie möglicherweise [Informationsverwaltungsrichtlinien](intro-to-info-mgmt-policies.md) zum Aufbewahren von Inhalten. Wenn Sie eine im Security and Compliance Center erstellte Aufbewahrungsrichtlinie auf eine Website anwenden, die bereits Inhaltstyprichtlinien oder Informationsverwaltungsrichtlinien für eine Liste oder eine Bibliothek nutzt, werden diese Richtlinien ignoriert, solange die Aufbewahrungsrichtlinie gilt. 
+In SharePoint-Websites verwenden Sie für die Aufbewahrung von Inhalten möglicherweise [Informationsverwaltungsrichtlinien](intro-to-info-mgmt-policies.md). Wenn Sie eine Aufbewahrungsrichtlinie auf eine Website anwenden, die für eine Liste oder Bibliothek bereits Inhaltstyp- oder Informationsverwaltungsrichtlinien verwendet, werden diese Richtlinien ignoriert, während die Aufbewahrungsrichtlinie angewendet wird. 
   
 ## <a name="what-happened-to-preservation-policies"></a>Was ist aus den Erhaltungsrichtlinien geworden?
 
-Wenn Sie eine Erhaltungsrichtlinie verwendet haben, wurde diese Richtlinie automatisch in eine Aufbewahrungsrichtlinie umgewandelt, die nur die Aufbewahrungsaktion verwendet – die Richtlinie wird keine Inhalte löschen. Die Erhaltungsrichtlinie funktioniert weiterhin und erhält Ihre Inhalte, ohne dass Sie dazu Änderungen vornehmen müssen. Sie finden diese Richtlinien auf der Seite **Aufbewahrung** im Security &amp; Compliance Center. Sie können eine Erhaltungsrichtlinie zum Ändern des Aufbewahrungszeitraums bearbeiten, aber Sie können keine anderen Änderungen vornehmen, etwa ein Hinzufügen oder Entfernen von Speicherorten. 
+Wenn Sie bisher eine Erhaltungsrichtlinie verwendet haben, wurde diese Richtlinie automatisch in eine Aufbewahrungsrichtlinie umgewandelt, bei der nur die Aufbewahrungsaktion verwendet wird – mit der Richtlinie werden keine Inhalte gelöscht. Die Erhaltungsrichtlinie funktioniert weiterhin und erhält Ihre Inhalte, ohne dass Sie Änderungen vornehmen müssen. Sie finden diese Richtlinien auf der Seite **Richtlinien** im Microsoft 365 Compliance Center oder auf der Seite **Aufbewahrung** unter **Datengovernance** im Security &amp;Compliance Center. Sie können eine Erhaltungsrichtlinie bearbeiten, um den Aufbewahrungszeitraum zu ändern, jedoch keine anderen Änderungen vornehmen, z. B. keine Speicherorte hinzufügen oder entfernen. 
   
 ## <a name="permissions"></a>Berechtigungen
 
