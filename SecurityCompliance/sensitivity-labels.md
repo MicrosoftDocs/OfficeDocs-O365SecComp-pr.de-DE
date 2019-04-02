@@ -3,7 +3,7 @@ title: Übersicht über Vertraulichkeitsbezeichnungen
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,19 +12,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Mit Vertraulichkeitsbezeichnungen in Office 365 können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
+ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737685"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999738"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
 Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Personen innerhalb und außerhalb der Organisation zusammenarbeiten. Dies bedeutet, dass Inhalte nicht mehr durch eine Firewall geschützt sind – sie werden zwischen verschiedenen Geräten, Apps und Diensten hin und her bewegt. Dies soll auf sichere und geschützte Weise geschehen, die den geschäftlichen Anforderungen und Compliancerichtlinien Ihrer Organisation entspricht.
 
-Mit Vertraulichkeitsbezeichnungen in Office 365 können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird.
+Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird.
 
 ![Vertraulichkeitsbezeichnung auf dem Excel-Menüband und in der Statusleiste](media/Sensitivity_label_in_Excel.png)
 
@@ -44,11 +44,9 @@ Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
     
 In all diesen Fällen können Vertraulichkeitsbezeichnungen in Office 365 Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Vertraulichkeitsbezeichnungen können Sie Daten organisationsweit klassifizieren und Schutzeinstellungen basierend auf dieser Klassifizierung durchsetzen.
   
-Sie erstellen Vertraulichkeitsbezeichnungen im Office 365 Security &amp; Compliance Center. Das Security & Compliance Center ist jetzt der zentrale Ort, um Vertraulichkeitsbezeichnungen und Richtlinien für Azure Information Protection und Office 365 zu konfigurieren. Diese Vertraulichkeitsbezeichnungen können von Azure Information Protection, Office-Apps und Office 365-Diensten verwendet werden.
+Vertraulichkeitsbezeichnungen werden im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security & Compliance Center erstellt. Diese Vertraulichkeitsbezeichnungen können von Azure Information Protection, Office-Apps und Office 365-Diensten verwendet werden.
 
-Für Azure Information Protection-Kunden können Sie Ihre Azure Information Protection-Bezeichnungen im Security & Compliance Center verwenden. Ihre Bezeichnungen werden dann mit dem Azure-Portal synchronisiert, falls Sie eine zusätzliche oder erweiterte Konfiguration ausführen möchten. **Azure Information Protection-Bezeichnungen und Office 365-Vertraulichkeitsbezeichnungen sind miteinander kompatibel.** Dies bedeutet, dass Sie ggf. Inhalte mit Bezeichnungen von Azure Information Protection nicht erneut klassifizieren oder mit Bezeichnungen versehen müssen.
-
-![Registerkarte „Vertraulichkeit“ auf der Seite „Bezeichnungen“ im Security and Compliance Center](media/Sensitivity_label_tab_on_Labels_page.png)
+Azure Information Protection-Kunden können Ihre Azure Information Protection-Bezeichnungen in den anderen Admin Centern verwenden, damit Ihre Bezeichnungen mit dem Azure-Portal synchronisiert werden, falls Sie eine zusätzliche oder erweiterte Konfiguration ausgewählt haben. **Azure Information Protection-Bezeichnungen und Office 365-Vertraulichkeitsbezeichnungen sind miteinander vollständig kompatibel.** Dies bedeutet z. B., wenn Sie Inhalte mit Azure Information Protection gekennzeichnet haben, müssen Sie Ihre Inhalte nicht klassifizieren oder neu bezeichnen.
 
 ## <a name="what-a-sensitivity-label-is"></a>Bedeutung von Vertraulichkeitsbezeichnungen
 
@@ -84,13 +82,13 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
     ![Auffordern zum Zuweisen einer erforderlichen Bezeichnung](media/Sensitivity_label_Prompt_for_required_label.png)
 
 
-Alle diese Optionen sind verfügbar, wenn Sie eine Bezeichnung im Security & Compliance Center erstellen.
+Alle diese Optionen sind verfügbar, wenn Sie eine Vertraulichkeitsbezeichnung erstellen.
 
 ![Optionen beim Erstellen einer Vertraulichkeitsbezeichnung](media/Sensitivity_label_create_options.png)
 
 ### <a name="label-priority-order-matters"></a>Priorität der Bezeichnungen (Reihenfolge wesentlich)
 
-Wenn Sie die Vertraulichkeitsbezeichnungen im Security & Compliance Center erstellen, werden sie in einer Liste auf der Registerkarte **Vertraulichkeit** auf der Seite **Bezeichnungen** angezeigt. In dieser Liste ist die Reihenfolge der Bezeichnungen wichtig, da sie ihrer Priorität entspricht. Ihre restriktivste Vertraulichkeitsbezeichnung, z. B. Streng vertraulich, soll **am Ende** der Liste und Ihre am wenigsten restriktive Vertraulichkeitsbezeichnung, z. B. Öffentlich, **am Anfang** stehen.
+Wenn Sie Ihre Vertraulichkeitsbezeichnungen erstellen, werden sie in einer Liste auf der Registerkarte **Vertraulichkeit** auf der Seite **Bezeichnungen** angezeigt. In dieser Liste ist die Reihenfolge der Beschriftungen wichtig, da diese ihre Priorität widerspiegelt. Die restriktivste Vertraulichkeitsbezeichnung, z. B. Streng vertraulich, soll **am Ende** der Liste angezeigt werden, die am wenigsten restriktivste Vertraulichkeitsbezeichnung, z. B. Öffentlich, soll **am Anfang** der Liste angezeigt werden.
 
 Einem Dokument oder einer E-Mail kann nur eine einzelne Vertraulichkeitsbezeichnung zugewiesen werden. Wenn Ihre Benutzer eine Begründung für eine Änderung der Bezeichnung in eine niedrigere Klassifizierung angeben müssen, bestimmt die Reihenfolge dieser Liste, was eine niedrigere Klassifizierung ist.
 
@@ -108,9 +106,9 @@ Unterbezeichnungen sind einfach eine Möglichkeit, Benutzern Bezeichnungen in lo
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Bearbeiten oder Löschen einer Vertraulichkeitsbezeichnung
 
-Beachten Sie, dass beim Löschen einer Vertraulichkeitsbezeichnung im Security & Compliance Center die Bezeichnung nicht vom Inhalt entfernt wird und alle Schutzeinstellungen weiterhin für den Inhalt erzwungen werden.
+Beachten Sie, dass beim Löschen einer Vertraulichkeitsbezeichnung die Bezeichnung nicht vom Inhalt entfernt wird und alle Schutzeinstellungen weiterhin für den Inhalt erzwungen werden.
 
-Wenn Sie eine Vertraulichkeitsbezeichnung im Security & Compliance Center bearbeiten, wird die Version der Bezeichnung, die auf Inhalte angewendet wurde, für diese Inhalte erzwungen.
+Wenn Sie eine Vertraulichkeitsbezeichnung bearbeiten, wird die Version der Bezeichnung, die auf Inhalte angewendet wurde, für diese Inhalte erzwungen.
 
 ## <a name="what-label-policies-can-do"></a>Wirkung von Bezeichnungsrichtlinien
 
@@ -120,7 +118,7 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
 - **Auswählen, welchen Benutzern und Gruppen die Bezeichnungen angezeigt werden.** Bezeichnungen können für E-Mail-aktivierte Sicherheitsgruppen, Verteilergruppen, Office 365-Gruppen oder dynamische Verteilergruppen veröffentlicht werden.
 
-- **Wenden Sie eine Standardbezeichnung** auf alle neuen Dokumente und E-Mails an, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt wurden. Dieses Standardbezeichnung kann ein Basisniveau von Schutzeinstellungen festlegen, die auf alle Ihre Inhalte angewendet werden sollen. (Beachten Sie, dass ein)
+- **Anwenden einer Standardbezeichnung** auf alle neuen Dokumente und E-Mails, die von den in der Bezeichnungsrichtlinie enthaltenen Benutzern und Gruppen erstellt werden. Durch diese Standardbezeichnung kann eine Basisstufe an Schutzeinstellungen festgelegt werden, die auf alle Ihre Inhalte angewendet werden soll.
 
 - **Anfordern einer Begründung für die Änderung einer Bezeichnung.** Wenn Inhalt als vertraulich markiert ist und ein Benutzer diese Bezeichnung entfernen oder durch eine niedrigere Klassifizierung, z. B. „Öffentlich“, ersetzen möchte, können Sie anfordern, dass der Benutzer eine Begründung für die Aktion angibt. Diese Begründungen sind dann für den Administrator zur Überprüfung verfügbar. Ein Bericht, in dem Administratoren die Begründungen der Benutzer anzeigen können, befindet sich in Entwicklung.
 
@@ -197,7 +195,7 @@ Azure Information Protection-Benutzer können Inhalte unter Windows derzeit mit 
 - Ihre vorhandenen Azure Information Protection-Bezeichnungen für Dokumente und E-Mails beibehalten.
 - Ihre vorhandene Azure Information Protection-Bezeichnungskonfiguration beibehalten.
 
-Wenn Sie Azure Information Protection-Bezeichnungen verwenden, sollten Sie vorerst keine neuen Kategorien im Security & Compliance Center erstellen, bis Sie die Migration abgeschlossen haben. Das [Thema zum Migrieren von Azure Information Protection](https://docs.microsoft.com/de-DE/azure/information-protection/configure-policy-migrate-labels) enthält wichtige Informationen und einige besondere Vorsichtsmaßnahmen. Wenn Sie noch nicht zum Migrieren Ihrer Produktionsmandanten zu Vertraulichkeitsbezeichnungen bereit sind, besteht kein Grund zur Sorge: Ihre Benutzer können vorläufig den Azure Information Protection-Client weiter verwenden, und Administratoren können weiterhin das Azure-Portal für die Verwaltung verwenden.
+Wenn Sie Azure Information Protection-Bezeichnungen verwenden, wird empfohlen, dass Sie vorerst keine neuen Bezeichnungen in anderen Admin Centern erstellen, bis Sie die Migration abgeschlossen haben. Das [Azure Information Protection-Migrationsthema](https://docs.microsoft.com/de-DE/azure/information-protection/configure-policy-migrate-labels) enthält wichtige Informationen und einige bestimmte Vorsichtsmaßnahmen. Wenn Sie noch nicht bereit zum Migrieren Ihrer Produktionsmandanten zu Vertraulichkeitbezeichnungen sind, gibt es keinen Grund zur Beunruhigung: Derzeit können Ihre Kunden den Azure Information Protection-Client weiterhin verwenden, und Administratoren können weiterhin das Azure-Portal zur Verwaltung verwenden.
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Schützen von Inhalten auf Windows-Geräten mithilfe von Microsoft Intune Endpoint Protection
 
@@ -252,6 +250,6 @@ Weitere Informationen zum Microsoft Information Protection SDK finden Sie in der
 
 Mitglieder Ihres Compliance-Teams, die Vertraulichkeitsbezeichnungen erstellen sollen, benötigen Berechtigungen für das Security & Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Speicherort und kann anderen Personen den Zugriff auf das Security & Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, dass Sie zur Seite **Berechtigungen** des Security & Compliance Center gehen, die Rollengruppe **Compliance-Administrator** bearbeiten und dieser Rollengruppe Mitglieder hinzufügen.
 
-Weitere Informationen finden Sie unter „Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center“.
+Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur erforderlich, um Bezeichnungen und eine Bezeichnungsrichtlinie zu erstellen und anzuwenden. Für die Durchsetzung von Richtlinien ist kein Zugriff auf Inhalte erforderlich.

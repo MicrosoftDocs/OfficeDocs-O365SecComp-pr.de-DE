@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Informationen zum Zugriff auf Office 365 Advanced eDiscovery im Office 365 Security &amp; Compliance Center und Erläuterung des üblichen Workflows für die Verwendung von Advanced eDiscovery.  '
-ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218745"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999768"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Schnelleinrichtung für Office 365 Advanced eDiscovery
 
-In diesem Setup-Abschnitt werden einem Office 365 Security &amp; Compliance Center eDiscovery-Manager die ersten Schritte mit Advanced eDiscovery gezeigt. Es wird davon ausgegangen, dass in beiden Bereichen Grundkenntnisse vorhanden sind.
+In diesem Setup-Abschnitt werden einem Microsoft 365 Security &amp; Compliance Center eDiscovery-Manager die ersten Schritte mit Advanced eDiscovery gezeigt. Es wird davon ausgegangen, dass in beiden Bereichen Grundkenntnisse vorhanden sind.
   
 > [!NOTE]
 > Advanced eDiscovery erfordert Office 365 E3 mit dem Advanced Compliance-Add-on oder ein E5-Abonnement für Ihr Unternehmen. Wenn Sie nicht über diesen Tarif verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 registrieren](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
