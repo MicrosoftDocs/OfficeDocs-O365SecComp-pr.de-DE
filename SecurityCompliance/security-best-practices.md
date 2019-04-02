@@ -16,16 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 ms.collection:
-- Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_IP
 description: Minimieren Sie das Potenzial einer Datenverletzung oder eines kompromittierten Kontos, indem Sie diese empfohlenen bewährten Methoden befolgen.
-ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
+ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357526"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026336"
 ---
 # <a name="security-best-practices-for-office-365"></a>Bewährte Methoden für die Sicherheit in Office 365
 
@@ -57,7 +56,7 @@ Einrichten von Richtlinien basierend auf Ihren geschäftlichen Anforderungen, um
   
 - [Übersicht über die O365-Cloud-App-Sicherheit](office-365-cas-overview.md)
 
-- [Aktivieren von Office 365 Cloud App Security](turn-on-office-365-cas.md)
+- [Aktivieren der Office 365 Cloud-App-Sicherheit](turn-on-office-365-cas.md)
 
 ## <a name="secure-mail-flow"></a>Sicherer Nachrichtenfluss
 
@@ -89,7 +88,7 @@ Informationen zu anderen Aktionen, die Sie mit dem Überwachungsprotokoll ausfü
   
 ## <a name="configure-data-loss-prevention-dlp"></a>Konfigurieren von Data Loss Prevention (DLP)
 
-Mit DLP können Sie vertrauliche Daten identifizieren und Richtlinien erstellen, die verhindern, dass Ihre Benutzer versehentlich oder absichtlich die Daten freigeben. DLP funktioniert in Office 365, einschließlich Exchange Online, SharePoint Online und OneDrive, sodass Ihre Benutzer kompatibel bleiben können, ohne Ihren Workflow zu unterbrechen. Weitere Informationen finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md).
+Mit DLP können Sie vertrauliche Daten identifizieren und Richtlinien erstellen, die verhindern, dass Ihre Benutzer versehentlich oder absichtlich die Daten freigeben. DLP funktioniert in Office 365, einschließlich Exchange Online, SharePoint Online und OneDrive, sodass Ihre Benutzer kompatibel bleiben können, ohne Ihren Workflow zu unterbrechen. Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md).
   
 ## <a name="use-customer-lockbox"></a>Kunden-Lockbox verwenden
 

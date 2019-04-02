@@ -13,16 +13,15 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
-- Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_IP
 description: Mit Office 365 werden Ihre Inhalte auf Rest-und Transit Ebene verschlüsselt, wobei die stärkste Verschlüsselung, Protokolle und Technologien zur Verfügung stehen. VerSchaffen Sie sich einen Überblick über die Verschlüsselung in Office 365.
-ms.openlocfilehash: 7099609ca142f6ed094ccafc95aab48059a1aa36
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 7a73d3d3b24e28f8795ec93ac05dbc383b525906
+ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357506"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026326"
 ---
 # <a name="encryption-in-office-365"></a>Verschlüsselung in Office 365
 
@@ -66,7 +65,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
-## <a name="how-do-i"></a>VorGehensWeise
+## <a name="how-do-i"></a>Gewusst wie...
 
 |**So führen Sie diese Aufgabe aus**|**Siehe diese Ressourcen**|
 |:-----|:-----|
