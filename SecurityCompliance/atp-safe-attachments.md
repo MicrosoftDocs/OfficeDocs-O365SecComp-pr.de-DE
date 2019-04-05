@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/08/2019
+ms.date: 04/04/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: Mit der Funktion "sichere Anlagen" können Sie e-Mail-Anhänge per Mausklick überprüfen. Verwenden Sie sichere Anlagen, um Ihre Organisation vor schädlichen Dateien zu schützen, die Personen in e-Mails senden oder empfangen.
-ms.openlocfilehash: 25fbfba104694f7f7418fadb88d60b17ea3d1ae6
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
+ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357486"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "31476823"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP Safe Attachments
 
@@ -40,9 +40,11 @@ Hier sind zwei Beispiele für sichere ATP-Anlagen am Arbeitsplatz.
 
 - **Beispiel 2: Datei in SharePoint Online** Angenommen, Jean hat eine Datei erhalten und Sie in eine Bibliothek in SharePoint Online hochgeladen. Jean teilt den Link zur Datei mit dem Rest des Teams, ohne zu wissen, dass die Datei tatsächlich bösartig ist. Glücklicherweise erkennt [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) die bösartige Datei und blockiert Sie. Ein paar Tage später geht Chris zum Öffnen des Dokuments. Chris kann zwar sehen, dass die Datei vorhanden ist, aber Chris kann Sie nicht öffnen oder freigeben, wodurch Chriss Computer und andere Personen aus der Schadsoftware verhindert werden.
 
-Die Überprüfung von ATP Safe Attachments erfolgt in derselben Region, in der sich Ihre Office 365-Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All) 
-
 ATP-Richtlinien für sichere Anlagen können auf bestimmte Personen oder Gruppen in Ihrer Organisation oder auf Ihre gesamte Domäne angewendet werden. Darüber hinaus können ATP-Richtlinien für sichere Anlagen für die Verwendung von Platzhalter Anlagen konfiguriert werden, während tatsächliche Anlagen gescannt werden. Weitere Informationen finden Sie unter **[Einrichten von Richtlinien für sichere ATP-Anlagen in Office 365](set-up-atp-safe-attachments-policies.md)**.
+
+> [!NOTE]
+> Die Überprüfung von ATP Safe Attachments erfolgt in derselben Region, in der sich Ihre Office 365-Daten befinden. Weitere Informationen zur Geografie des Rechenzentrums finden Sie unter [wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located?geo=All) 
+
   
 ## <a name="how-to-get-atp-safe-attachments"></a>So erhalten Sie ATP Safe Attachments
 
@@ -74,7 +76,7 @@ In der folgenden Tabelle werden einige Beispielszenarien beschrieben. In allen d
 |Lee ist ein Mitarbeiter in der Vertriebsabteilung bei Contoso. Lees Organisation verfügt über eine Richtlinie für sichere ATP-Anlagen, die nur für Mitarbeiter von Finance gilt.  <br/> |Nein. In diesem Fall würden Finanzmitarbeiter über ATP Safe Attachments Protection verfügen, aber andere Mitarbeiter, einschließlich der Vertriebsabteilung, würden erst dann eine Richtlinie definieren, die diese Gruppen enthält.  <br/> |
 |Gestern richtete ein Office 365-Administrator bei der Organisation von Jean eine ATP-Richtlinie für sichere Anlagen ein, die für alle Mitarbeiter gilt. Heute hat Jean eine e-Mail-Nachricht erhalten, die eine Anlage enthält.  <br/> |Ja. In diesem Beispiel verfügt Jean über eine Lizenz für Advanced Threat Protection, und eine Richtlinie zu sicheren ATP-Anlagen, die Jean enthält, wurde definiert. In der Regel dauert es ungefähr 30 Minuten, bis eine neue Richtlinie über Rechenzentren hinweg wirksam wird. Da in diesem Fall ein Tag vergangen ist, sollte die Richtlinie wirksam sein.  <br/> |
 |Chris es Organisation verfügt über Office 365 Enterprise E5 mit den Richtlinien für sichere ATP-Anlagen für alle Benutzer in der Organisation. Chris erhält eine e-Mail mit einer Anlage und leitet die Nachricht an andere Personen weiter, die sich außerhalb der Organisation befinden.  <br/> |ATP Safe Attachments Protection ist für Nachrichten vorhanden, die Chris empfängt. Wenn in den Organisationen des Empfängers auch ATP-Richtlinien für sichere Anlagen vorhanden sind, wird die Nachricht, dass Chris Forwards für diese Richtlinien gilt, wenn die weitergeleitete Nachricht eingeht.  <br/> |
-|In Jamies Organisation sind ATP-Richtlinien für sichere Anlagen vorhanden, und [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) wurde aktiviert. Jamie geht davon aus, dass jede Datei in SharePoint Online gescannt wurde und sicher geöffnet oder heruntergeladen werden kann.<br/> |Der sichere ATP-Anlagenschutz ist gemäß den definierten Richtlinien vorhanden. Dies bedeutet jedoch nicht, dass jede einzelne Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams gescannt wird. (Weitere Informationen finden Sie unter [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md).)<br/> |
+|In Jamies Organisation sind ATP-Richtlinien für sichere Anlagen vorhanden, und [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md) wurde aktiviert. Jamie geht davon aus, dass jede Datei in SharePoint Online gescannt wurde und sicher geöffnet oder heruntergeladen werden kann.  <br/> |Der sichere ATP-Anlagenschutz ist gemäß den definierten Richtlinien vorhanden. Dies bedeutet jedoch nicht, dass jede einzelne Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams gescannt wird. (Weitere Informationen finden Sie unter [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md).)  <br/> |
 
 ## <a name="submitting-files-for-malware-analysis"></a>Übermitteln von Dateien für die Malware Analyse
 
