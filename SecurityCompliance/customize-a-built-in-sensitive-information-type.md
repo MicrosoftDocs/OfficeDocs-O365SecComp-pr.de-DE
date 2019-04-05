@@ -3,7 +3,7 @@ title: Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/25/2018
+ms.date: 04/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten Regel enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird.
-ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a4e9a6e981889bd2be19451127fc96b351b4b00f
+ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999608"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31389683"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -29,7 +29,7 @@ Dieses Beispiel können Sie auf weitere integrierte vertrauliche Informationstyp
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exportieren der XML-Datei der aktuellen Regeln
 
-Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and Compliance Center über Remote-PowerShell herstellen](https://go.microsoft.com/fwlink/?linkid=799771).
+Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and Compliance Center über Remote-PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
   
 1. Geben Sie in PowerShell Folgendes ein, um die Regeln Ihrer Organisation anzuzeigen. Falls Sie keine eigenen Regeln erstellt haben, werden nur die integrierten Standardregeln mit der Bezeichnung „Microsoft-Regelpaket“ angezeigt.
     
@@ -191,7 +191,7 @@ Zum Hochladen der Regel müssen Sie wie folgt vorgehen.
   
 1. Speichern Sie sie als XML-Datei mit Unicode-Codierung. Dies ist wichtig, da die Regel nicht funktioniert, wenn die Datei mit einer anderen Codierung gespeichert wird.
     
-2. [Herstellen einer Verbindung zum Security and Compliance Center mithilfe von Remote-PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+2. [Stellen Sie eine Verbindung zum Security and Compliance Center mithilfe von Remote-PowerShell her.](https://go.microsoft.com/fwlink/?linkid=799771)
     
 3. Geben Sie PowerShell Folgendes ein.
     
@@ -225,8 +225,8 @@ Nachfolgend finden Sie Definitionen der Begriffe, die in diesem Verfahren vorkom
 
 - [Wonach die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md)
     
-- [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
+- [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md)
     
-- [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
+- [Übersicht über Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
     
 
