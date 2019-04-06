@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Neue Office 365-Nachrichten Verschlüsselungsfunktionen, die auf Azure Information Protection basieren, kann Ihre Organisation geschützte e-Mail-Kommunikation mit Personen innerhalb und außerhalb Ihrer Organisation verwenden. Die neuen OM-Funktionen funktionieren mit anderen Office 365-Organisationen, Outlook.com, Gmail und anderen e-Mail-Diensten.
-ms.openlocfilehash: 90247a7e3cd7e5978eb144a2b6f66a9de21a8f96
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fd237e537aa1ff961d2d975b3b30f4a51744ba7c
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296188"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479651"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
 
@@ -26,14 +26,14 @@ Mit den neuen Funktionen von Office 365 Message Encryption (OM) können Organisa
 >[!NOTE]
 >Dieser Artikel richtet sich an Administratoren und IT-Experten. Wenn Sie ein Endbenutzer sind, lesen Sie die Artikelliste in [Office 365 Message Encryption (OM)](ome.md) für entsprechende Lösungen.
 
-Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die neuen OM-Funktionen in Ihrem Office 365-Mandanten verfügbar sind. 
+Führen Sie die folgenden Schritte aus, um sicherzustellen, dass die neuen OM-Funktionen in Ihrem Office 365-Mandanten verfügbar sind.
 
 ## <a name="verify-azure-rights-management-arm-is-active"></a>Überprüfen der Azure-Rechteverwaltung (ARM) ist aktiv
 
 >[!NOTE]
 >Die neuen OM-Funktionen nutzen die Schutzfunktionen von [Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection), die von [Azure Rights Management (Arm)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms)verwendet werden.
 
-Die einzige Voraussetzung für die Verwendung der neuen OM-Funktionen ist, dass [Azure Rights Management (Arm)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) in ihrem Office 365-Mandanten aktiviert werden muss. Wenn dies der Fall ist, aktiviert Office 365 die neuen OM-Funktionen automatisch, und Sie müssen nichts tun. 
+Die einzige Voraussetzung für die Verwendung der neuen OM-Funktionen ist, dass [Azure Rights Management (Arm)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) in ihrem Office 365-Mandanten aktiviert werden muss. Wenn dies der Fall ist, aktiviert Office 365 die neuen OM-Funktionen automatisch, und Sie müssen nichts tun.
 
 Der ARM wird auch automatisch für die meisten berechtigten Pläne aktiviert, daher müssen Sie in dieser Hinsicht möglicherweise nichts Unternehmen. Weitere Informationen finden Sie unter [Aktivieren der Azure-Rechteverwaltung](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service) .
 
@@ -42,23 +42,21 @@ Der ARM wird auch automatisch für die meisten berechtigten Pläne aktiviert, da
 
 Weitere Informationen finden Sie unter:
 
-- [Welche Abonnements benötige ich, um die neuen OM-Funktionen verwenden zu können?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) um zu überprüfen, ob Ihr Abonnementplan Azure Information Protection (einschließlich ARM) enthält.   
--  [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) für Informationen zum Erwerb eines berechtigten Abonnements.  
+- [Welche Abonnements benötige ich, um die neuen OM-Funktionen verwenden zu können?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) um zu überprüfen, ob Ihr Abonnementplan Azure Information Protection (einschließlich ARM) enthält.
+- [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) für Informationen zum Erwerb eines berechtigten Abonnements.  
 
 ### <a name="manually-activating-arm"></a>Manuelles Aktivieren des Arms
 
 Wenn Sie den ARM deaktiviert haben oder er aus irgendeinem Grund nicht automatisch aktiviert wurde, können Sie ihn manuell im folgenden aktivieren:
 
-- **Office 365 Admin Center**: Weitere Informationen finden Sie unter [How to Activate Azure Rights Management from the Office 365 Admin Center](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) for instructions
-- **Azure-Portal**: Informationen zum [Aktivieren der Azure-Rechteverwaltung aus dem Azure-Portal](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) . 
-
+- **Office 365 Admin Center**: Informationen zum [Aktivieren der Azure-Rechteverwaltung im Office 365 Admin Center](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) .
+- **Azure-Portal**: Informationen zum [Aktivieren der Azure-Rechteverwaltung aus dem Azure-Portal](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) .
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Konfigurieren der Verwaltung Ihres Azure Information Protection-Mandanten Schlüssels
 
-Dies ist ein optionaler Schritt. Microsoft die Verwaltung des Stammschlüssels für Azure Information Protection ist die Standardeinstellung und empfohlene bewährte Methode für die meisten Office 365-Mandanten. Wenn dies der Fall ist, müssen Sie nichts tun. 
+Der folgende Schritt ist optional. Microsoft die Verwaltung des Stammschlüssels für Azure Information Protection ist die Standardeinstellung und empfohlene bewährte Methode für die meisten Office 365-Mandanten. Wenn dies der Fall ist, müssen Sie nichts tun.
 
-Es gibt viele Gründe, beispielsweise Compliance-Anforderungen, die dazu führen können, dass Sie Ihren eigenen Stammschlüssel generieren und verwalten (auch bekannt als bringen Sie Ihren eigenen Schlüssel (BYOK)). Wenn dies der Fall ist, empfehlen wir, dass Sie die erforderlichen Schritte ausführen, bevor Sie die neuen OM-Funktionen einrichten. Weitere Informationen finden Sie unter [Planen und Implementieren des Azure Information Protection-Mandanten Schlüssels](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) . 
-
+Es gibt viele Gründe, beispielsweise Compliance-Anforderungen, die dazu führen können, dass Sie Ihren eigenen Stammschlüssel generieren und verwalten (auch bekannt als bringen Sie Ihren eigenen Schlüssel (BYOK)). Wenn dies der Fall ist, empfehlen wir, dass Sie die erforderlichen Schritte ausführen, bevor Sie die neuen OM-Funktionen einrichten. Weitere Informationen finden Sie unter [Planen und Implementieren des Azure Information Protection-Mandanten Schlüssels](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) .
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Überprüfen der neuen OM-Konfiguration in Exchange Online PowerShell
 
@@ -72,15 +70,15 @@ Sie können überprüfen, ob Ihr Office 365-Mandant ordnungsgemäß für die Ver
      Test-IRMConfiguration [-Sender <email address >]
      ```  
 
-   **Beispiel**: 
-   
+   **Beispiel**:
+
      ```powershell
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
-     
+
      - Das Bereitstelleneiner Absender-e-Mail ist optional, zwingt das System jedoch, zusätzliche Prüfungen durchzuführen. Verwenden Sie die e-Mail-Adresse eines beliebigen Benutzers in Ihrem Office 365-Mandanten. 
-     
-    Ihre Ergebnisse sollten wie folgt aussehen:
+
+     Ihre Ergebnisse sollten wie folgt aussehen:
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -101,7 +99,7 @@ Sie können überprüfen, ob Ihr Office 365-Mandant ordnungsgemäß für die Ver
    - Die Standardvorlagen Namen können sich von den oben dargestellten unterscheiden. Weitere Informationen finden Sie unter [Konfigurieren und Verwalten von Vorlagen für Azure Information Protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-templates) .
 
 3. Führen Sie das Cmdlet Remove-PSSession aus, um die Verbindung mit dem Rechteverwaltungsdienst zu trennen.
-    
+
      ```powershell
      Remove-PSSession $session
      ```
@@ -121,8 +119,8 @@ So aktualisieren Sie vorhandene Regeln, um die neuen OM-Funktionen zu verwenden:
 3. **Führen Sie**für jede Regel Folgendes aus:
     - Wählen Sie **Nachrichtensicherheit ändern**aus.
     - Wählen Sie **Office 365-Nachrichtenverschlüsselung und-Rechte Schutz anwenden**aus.
-    - Auswählen einer RMS-Vorlage aus der Liste
-    - Wählen Sie **Speichern** aus.
+    - Wählen Sie in der Liste eine RMS-Vorlage aus.
+    - Klicken Sie auf **Speichern**.
     - Wählen Sie **OK** aus.
   
 >[!IMPORTANT]

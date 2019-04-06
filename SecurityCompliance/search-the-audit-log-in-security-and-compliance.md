@@ -1,5 +1,5 @@
 ---
-title: Durchsuchen des Überwachungsprotokolls im Office 365 Security &amp; Compliance Center
+title: Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Verwenden Sie das Office 365 Security & Compliance Center, um das einheitliche Überwachungsprotokoll durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
-ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
+ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935350"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479681"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Office 365 Security & Compliance Center
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
 ## <a name="introduction"></a>Einführung
 
@@ -43,7 +43,7 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder
     
 - Benutzer-und Administrator Aktivität in Sway
     
-- eDiscovery-Aktivitäten im Office 365 Security & Compliance Center
+- eDiscovery-Aktivitäten im Security and Compliance Center
     
 - Benutzer-und Administrator Aktivität in Power BI
     
@@ -66,15 +66,15 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder
 
 Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen.
   
-- Sie (oder ein anderer Administrator) müssen zunächst die Überwachungsprotokollierung aktivieren, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen können. Klicken Sie zum Aktivieren auf der Seite **Überwachungsprotokoll Suche** im Security &amp; Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung für Ihre Organisation aktiviert.) Nachdem Sie es aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird, und dass Sie eine Suche in ein paar Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen dies nur einmal tun. 
+- Sie (oder ein anderer Administrator) müssen zunächst die Überwachungsprotokollierung aktivieren, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen können. Klicken Sie zum Aktivieren auf der Seite **Überwachungsprotokoll Suche** im Security _AMP_ Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung für Ihre Organisation aktiviert.) Nachdem Sie es aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird, und dass Sie eine Suche in ein paar Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen dies nur einmal tun. 
     
     > [!NOTE]
     > Wir sind dabei, die Überwachung standardmäßig zu aktivieren. Bis zu diesem Zeitpunkt können Sie ihn wie zuvor beschrieben aktivieren. 
   
-- Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" verfügen, um das Office 365-Überwachungsprotokoll durchsuchen zu können. Diese Rollen werden standardmäßig den Rollengruppen "Compliance-Verwaltung" und "Organisationsverwaltung" auf der Seite " **Berechtigungen** " im Exchange Admin Center zugewiesen. Um einem Benutzer die Möglichkeit zu geben, das Office 365-Überwachungsprotokoll mit den Mindestberechtigungen zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Überwachungsprotokolle oder Überwachungsprotokoll Rollen der Ansicht hinzufügen und dann den Benutzer als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" verfügen, um das Office 365-Überwachungsprotokoll durchsuchen zu können. Diese Rollen werden standardmäßig den Rollengruppen "Compliance-Verwaltung" und "Organisationsverwaltung" auf der Seite " **Berechtigungen** " im Exchange Admin Center zugewiesen. Beachten Sie, dass globale Administratoren in Office 365 und Microsoft 365 automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt werden. Um einem Benutzer die Möglichkeit zu geben, das Office 365-Überwachungsprotokoll mit den Mindestberechtigungen zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die Überwachungsprotokolle oder Überwachungsprotokoll Rollen der Ansicht hinzufügen und dann den Benutzer als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Wenn Sie einem Benutzer die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite " **Berechtigungen** " im &amp; Security Compliance Center zuweisen, können Sie das Office 365-Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Dies liegt daran, dass das zugrunde liegende Cmdlet zum Durchsuchen des Überwachungsprotokolls ein Exchange Online-Cmdlet ist. 
+    > Wenn Sie einem Benutzer die Rolle "Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite " **Berechtigungen** " im Security _AMP_ Compliance Center zuweisen, können Sie das Office 365-Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Dies liegt daran, dass das zugrunde liegende Cmdlet zum Durchsuchen des Überwachungsprotokolls ein Exchange Online-Cmdlet ist. 
   
 - Wenn eine überwachte Aktivität von einem Benutzer oder Administrator ausgeführt wird, wird ein Überwachungsdatensatz generiert und im Office 365-Überwachungsprotokoll für Ihre Organisation gespeichert. Die Dauer, die ein Überwachungsdatensatz aufbewahrt wird (und im Überwachungsprotokoll durchsuchbar ist), hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist.
 
@@ -99,13 +99,13 @@ Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des O
 
     Weitere Informationen finden Sie unter [Deaktivieren der Suche in einem Überwachungsprotokoll in Office 365](turn-audit-log-search-on-or-off.md).
     
-- Wie bereits erwähnt, ist das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet, das **Search-UnifiedAuditLog**ist. Daher können Sie dieses Cmdlet verwenden, um das Office 365-Überwachungsprotokoll zu durchsuchen, statt die Seite **Überwachungsprotokoll Suche** im &amp; Security Compliance Center zu verwenden. Sie müssen dieses Cmdlet in einer Remote-PowerShell ausführen, die mit Ihrer Exchange Online-Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Wie bereits erwähnt, ist das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet, das **Search-UnifiedAuditLog**ist. Daher können Sie dieses Cmdlet verwenden, um das Office 365-Überwachungsprotokoll zu durchsuchen, statt die Seite **Überwachungsprotokoll Suche** im Security _AMP_ Compliance Center zu verwenden. Sie müssen dieses Cmdlet in einer Remote-PowerShell ausführen, die mit Ihrer Exchange Online-Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Wenn Sie Daten programmgesteuert aus dem Office 365-Überwachungsprotokoll herunterladen möchten, wird empfohlen, die Office 365-Verwaltungs Aktivitäts-API anstelle eines PowerShell-Skripts zu verwenden. Die Office 365-Verwaltungs Aktivitäts-API ist ein REST-Webdienst, den Sie zum Entwickeln von Betriebs-, Sicherheits-und Compliance-Überwachungslösungen für Ihre Organisation verwenden können. Weitere Informationen finden Sie unter [Office 365 Management Activity API Reference](https://go.microsoft.com/fwlink/?linkid=852309).
     
 - Es kann bis zu 30 Minuten oder bis zu 24 Stunden dauern, bis ein Ereignis eintritt, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. Die folgende Tabelle zeigt die Zeit, die für die verschiedenen Dienste in Office 365 benötigt wird.
     
-    |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
+    |**Office 365-Dienst**|**30 Minuten**|**24 Stunden**|
     |:-----|:-----|:-----|
     |Advanced Threat Protection und Threat Intelligence  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
     |Azure Active Directory (Benutzeranmelde Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
@@ -120,13 +120,13 @@ Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des O
     |Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Security &amp; Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Security & Compliance Center  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online und OneDrive for Business  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |Workplace Analytics<br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- Azure Active Directory (Azure AD) ist der Verzeichnisdienst für Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen-und Verzeichnis Aktivitäten, die im Office 365 Admin Center oder im Azure-Verwaltungsportal durchgeführt werden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsbericht Ereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
+- Azure Active Directory (Azure AD) ist der Verzeichnisdienst für Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen-und Verzeichnis Aktivitäten, die im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal ausgeführt werden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsbericht Ereignisse](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
 - Exchange Online-Überwachungsprotokolle bestehen aus zwei Arten von Ereignissen: Exchange-Verwaltungsereignisse (von Administratoren ausgeführte Aktionen) und Post Fach Ereignisse (Aktionen, die von Benutzern in Postfächern ausgeführt werden). Beachten Sie, dass die postfachüberwachung nicht standardmäßig aktiviert ist. Sie muss für jedes Benutzerpostfach aktiviert werden, bevor nach Post Fach Ereignissen im Office 365-Überwachungsprotokoll gesucht werden kann. Weitere Informationen zur postfachüberwachung und zu den protokollierten Post Fach Überwachungsaktionen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](enable-mailbox-auditing.md).
     
@@ -147,14 +147,14 @@ Hier finden Sie den Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
   
 ### <a name="step-1-run-an-audit-log-search"></a>Schritt 1: Ausführen einer Überwachungsprotokoll Suche
 
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
     > [!TIP]
-    > Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Office &amp; 365 Security Compliance Center, da dadurch die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, nicht verwendet werden. Drücken Sie STRG + UMSCHALT + P, um eine inPrivate-Browsing-Sitzung in Internet Explorer oder Microsoft Edge zu öffnen. Drücken Sie STRG + UMSCHALT + N, um eine private Browsersitzung in Google Chrome (als inkognito-Fenster bezeichnet) zu öffnen. 
+    > Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Security & Compliance Center, da dadurch die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, nicht verwendet werden. Drücken Sie STRG + UMSCHALT + P, um eine inPrivate-Browsing-Sitzung in Internet Explorer oder Microsoft Edge zu öffnen. Drücken Sie STRG + UMSCHALT + N, um eine private Browsersitzung in Google Chrome (als inkognito-Fenster bezeichnet) zu öffnen. 
   
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Such &amp; Prüfung**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suchen**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
     
     Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
     
@@ -288,7 +288,7 @@ Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei 
 
 ## <a name="audited-activities"></a>ÜberWachte Aktivitäten
 
-In den Tabellen in diesem Abschnitt werden die in Office 365 überwachten Aktivitäten beschrieben. Sie können nach diesen Ereignissen suchen, indem Sie das Überwachungsprotokoll im Security & Compliance Center durchsuchen.
+In den Tabellen in diesem Abschnitt werden die in Office 365 überwachten Aktivitäten beschrieben. Sie können nach diesen Ereignissen suchen, indem Sie das Überwachungsprotokoll im Security and Compliance Center durchsuchen.
   
 Diese Tabellen Gruppieren verwandte Aktivitäten oder Aktivitäten von einem bestimmten Office 365-Dienst. Die Tabellen enthalten den Anzeigenamen, der in der Dropdownliste **Aktivitäten** angezeigt wird, sowie den Namen des entsprechenden Vorgangs, der in den detaillierten Informationen eines Überwachungsdatensatzes und in der CSV-Datei angezeigt wird, wenn Sie die Suchergebnisse exportieren. Beschreibungen der detaillierten Informationen finden Sie unter [detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -415,7 +415,7 @@ In der folgenden Tabelle sind die Ereignisse aufgeführt, die sich aus Websiteve
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Freigestellter Benutzer-Agent HinzugeFügt  <br/> |ExemptUserAgentSet  <br/> |Ein SharePoint-oder globaler Administrator fügt einen Benutzer-Agent zur Liste der ausgenommenen Benutzer-Agents im SharePoint Admin Center hinzu.  <br/> |
-|Websitesammlungsadministrator HinzugeFügt  <br/> |SiteCollectionAdminAdded  <br/> |Der Websitesammlungsadministrator oder-Besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (indem er das Benutzerprofil im SharePoint Admin Center oder [mithilfe des Office 365 admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)bearbeitet). <br/> |
+|Websitesammlungsadministrator HinzugeFügt  <br/> |SiteCollectionAdminAdded  <br/> |Der Websitesammlungsadministrator oder-Besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (indem er das Benutzerprofil im SharePoint Admin Center oder [mithilfe von Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)bearbeitet). <br/> |
 |keine  <br/> |SiteCollectionAdminRemoved <br/> |Der Websitesammlungsadministrator oder-Besitzer entfernt eine Person als Websitesammlungsadministrator für eine Website. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst aus der Liste der Websitesammlungsadministratoren für das OneDrive-Konto eines Benutzers entfernt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center).  Beachten Sie, dass Sie nach allen Aktivitäten suchen müssen, um diese Aktivität in den Suchergebnissen des Überwachungsprotokolls zurückzugeben. <br/> |
 |Benutzer oder Gruppe zu SharePoint-Gruppe HinzugeFügt  <br/> |AddedToGroup  <br/> |Der Benutzer hat ein Mitglied oder einen Gast zu einer SharePoint-Gruppe hinzugefügt. Dies ist möglicherweise eine absichtliche Aktion oder das Ergebnis einer anderen Aktivität, wie etwa ein Freigabe Ereignis.  <br/> |
 |Berechtigte Benutzer zum Erstellen von Gruppen  <br/> |AllowGroupCreationSet  <br/> |Der Websiteadministrator oder-Besitzer fügt eine Berechtigungsstufe zu einer Website hinzu, die es einem Benutzer ermöglicht, die Berechtigung zum Erstellen einer Gruppe für diese Website zuzuweisen.  <br/> |
@@ -454,11 +454,11 @@ In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfach
 |:-----|:-----|:-----|
 |Stellvertretungs-Postfachberechtigungen HinzugeFügt  <br/> |Add-MailboxPermission  <br/> |Ein Administrator hat dem Postfach einer anderen Person die Berechtigung FullAccess-Postfach für einen Benutzer (als Stellvertretung bezeichnet) zugewiesen. Die FullAccess-Berechtigung ermöglicht es der Stellvertretung, das Postfach der anderen Person zu öffnen und den Inhalt des Postfachs zu lesen und zu verwalten.  <br/> |
 |Klassifizierte Nachricht als Datensatz  <br/> |ApplyRecordLabel<br/> |Eine Nachricht wurde als Datensatz klassifiziert. Dies tritt auf, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
-|Nachrichten in einen anderen Ordner kopiert  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
+|Nachrichten in einen anderen Ordner kopiert  <br/> |Copy  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
 |Erstelltes Postfachelement  <br/> |Erstellen  <br/> |Ein Element wird im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
 |Neue Posteingangsregel in Outlook Web App erstellt  <br/> |NewInboxRule<br/> |<br/> |
 |Gelöschte Nachrichten aus Ordner "Gelöschte Elemente"  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Diese Elemente werden in den Ordner "Wiederherstellbare Elemente" verschoben. Nachrichten werden auch in den Ordner "Wiederherstellbare Elemente" verschoben, wenn ein Benutzer Sie auswählt und **UMSCHALT + ENTF**drückt.  <br/> |
-|Nachrichten in einen anderen Ordner verschoben  <br/> |Verschieben  <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |
+|Nachrichten in einen anderen Ordner verschoben  <br/> |Move  <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |
 |Nachrichten in Ordner "Gelöschte Elemente" verschoben  <br/> |MoveToDeletedItems  <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
 |Berechtigung für geänderte Ordner  <br/> |UpdateFolderPermissions  <br/> |Eine Ordnerberechtigung wurde geändert. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Postfachordner und die Nachrichten im Ordner zugreifen können.  <br/> |
 |Gelöschte Nachrichten aus dem Postfach  <br/> |HardDelete  <br/> |Eine Nachricht wurde aus dem Ordner "Wiederherstellbare Elemente" entfernt (dauerhaft aus dem Postfach gelöscht).  <br/> |
@@ -486,17 +486,17 @@ In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Sway
 |Aktivierte Sway-Duplizierung  <br/> |EnableDuplication  <br/> |Der Benutzer ermöglicht die Duplizierung einer Sway; die Möglichkeit für einen Benutzer, die Duplizierung einer Sway zu aktivieren, ist standardmäßig aktiviert.  <br/> |
 |Widerrufen der Sway-Freigabe  <br/> |SwayRevokeShare  <br/> |Der Benutzer beendet die Freigabe eines Sway durch widerrufen des Zugriffs. Wenn der Zugriff widerrufen wird, ändern sich die dem Sway zugeordneten Verknüpfungen.  <br/> |
 |Gemeinsame Sway  <br/> |SwayShare  <br/> |Der Benutzer beabsichtigt, eine Sway zu teilen. Dieses Ereignis erfasst die Benutzeraktion des Klickens auf ein bestimmtes freigabeziel im Sway-Freigabe Menü. Das Ereignis gibt nicht an, ob der Benutzer die Freigabe Aktion abgeschlossen hat.  <br/> |
-|Externe Freigabe von Sway deaktiviert  <br/> |SwayExternalSharingOff  <br/> |Der Administrator deaktiviert die externe Sway-Freigabe für die gesamte Organisation mithilfe des Office 365 Admin Center.  <br/> |
-|Aktivierte externe Freigabe von Sway  <br/> |SwayExternalSharingOn  <br/> |Der Administrator aktiviert die externe Sway-Freigabe für die gesamte Organisation mithilfe des Office 365 Admin Center.  <br/> |
-|Turned off Sway Service  <br/> |SwayServiceOff  <br/> |Der Administrator deaktiviert Sway für die gesamte Organisation mithilfe des Office 365 Admin Center.  <br/> |
-|Turned on Sway Service  <br/> |SwayServiceOn  <br/> |Der Administrator aktiviert die Sway für die gesamte Organisation mithilfe des Office 365 Admin Center (der Sway-Dienst ist standardmäßig aktiviert).  <br/> |
+|Externe Freigabe von Sway deaktiviert  <br/> |SwayExternalSharingOff  <br/> |Der Administrator deaktiviert die externe Sway-Freigabe für die gesamte Organisation mithilfe des Microsoft 365 Admin Center.  <br/> |
+|Aktivierte externe Freigabe von Sway  <br/> |SwayExternalSharingOn  <br/> |Der Administrator aktiviert die externe Sway-Freigabe für die gesamte Organisation mithilfe des Microsoft 365 Admin Center.  <br/> |
+|Turned off Sway Service  <br/> |SwayServiceOff  <br/> |Der Administrator deaktiviert Sway für die gesamte Organisation mithilfe des Microsoft 365 Admin Center.  <br/> |
+|Turned on Sway Service  <br/> |SwayServiceOn  <br/> |Der Administrator aktiviert die Sway für die gesamte Organisation mithilfe des Microsoft 365 Admin Center (der Sway-Dienst ist standardmäßig aktiviert).  <br/> |
 |Sway  <br/> |SwayView  <br/> |Benutzeransicht ein Sway.  <br/> |
 ||||
 
   
 ### <a name="user-administration-activities"></a>Benutzer Verwaltungsaktivitäten
   
-In der folgenden Tabelle werden die Aktivitäten der Benutzerverwaltung aufgelistet, die protokolliert werden, wenn ein Benutzerkonto mithilfe des Office 365 admin Centers oder des Azure-Verwaltungsportals hinzugefügt oder geändert wird.
+In der folgenden Tabelle werden die Benutzer Verwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator ein Benutzerkonto mithilfe des Microsoft 365 admin Centers oder des Azure-Verwaltungsportals hinzufügt oder ändert.
   
 |**Aktivität**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -512,7 +512,7 @@ In der folgenden Tabelle werden die Aktivitäten der Benutzerverwaltung aufgelis
   
 ### <a name="azure-ad-group-administration-activities"></a>Verwaltungsaktivitäten der Azure AD-Gruppe
   
-In der folgenden Tabelle sind die Aktivitäten der Gruppenverwaltung aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Office 365-Gruppe erstellt oder ändert oder wenn ein Administrator eine Sicherheitsgruppe mithilfe des Office 365 admin Centers oder des Azure-Verwaltungsportals erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [anzeigen, erstellen und Löschen von Gruppen im office 365 Admin Center](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+In der folgenden Tabelle werden die Aktivitäten der Gruppenverwaltung aufgelistet, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Office 365-Gruppe erstellt oder ändert oder wenn ein Administrator eine Sicherheitsgruppe mithilfe des Microsoft 365 admin Centers oder des Azure-Verwaltungsportals erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [anzeigen, erstellen und Löschen von Gruppen im Microsoft 365 Admin Center](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -540,7 +540,7 @@ In der folgenden Tabelle sind die Anwendungsadministrator Aktivitäten aufgefüh
 
 ### <a name="role-administration-activities"></a>Rollen Verwaltungsaktivitäten
   
-Die folgende Tabelle enthält eine Liste der Azure AD Role Administration-Aktivitäten, die protokolliert werden, wenn ein Administrator Administratorrollen im Office 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
+Die folgende Tabelle enthält eine Liste der Azure AD Role Administration-Aktivitäten, die protokolliert werden, wenn ein Administrator Administratorrollen im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
   
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -551,7 +551,7 @@ Die folgende Tabelle enthält eine Liste der Azure AD Role Administration-Aktivi
    
 ### <a name="directory-administration-activities"></a>Aktivitäten der Verzeichnisverwaltung
   
-In der folgenden Tabelle werden die Azure AD-Verzeichnis-und domänenbezogenen Aktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator die Office 365-Organisation im Office 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
+In der folgenden Tabelle werden die Azure AD-Verzeichnis-und domänenbezogenen Aktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator die Office 365-Organisation im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
   
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -571,7 +571,7 @@ In der folgenden Tabelle werden die Azure AD-Verzeichnis-und domänenbezogenen A
    
 ### <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
   
-Inhaltssuche und eDiscovery-bezogene Aktivitäten, die im Office 365 Security & Compliance Center oder durch Ausführen der entsprechenden Windows PowerShell-Cmdlets ausgeführt werden, werden im Office 365-Überwachungsprotokoll protokolliert. Hierzu gehören die folgenden Aktivitäten:
+Inhaltssuche und eDiscovery-bezogene Aktivitäten, die im Security and Compliance Center oder durch Ausführen der entsprechenden PowerShell-Cmdlets ausgeführt werden, werden im Überwachungsprotokoll protokolliert. Hierzu gehören die folgenden Aktivitäten:
   
 - Erstellen und Verwalten von eDiscovery-Fällen
     
@@ -628,7 +628,7 @@ In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in Micr
 |Mitglieder zu Team HinzugeFügt  <br/> |MemberAdded  <br/> |Ein Teambesitzer fügt einem Teammitglieder hinzu.  <br/> |
 |Registerkarte HinzugeFügt  <br/> |TabAdded  <br/> |Ein Benutzer fügt einem Kanal eine Registerkarte hinzu.  <br/> |
 |Geänderte Kanaleinstellung  <br/> |ChannelSettingChanged  <br/> | Der ChannelSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem Teammitglied ausgeführt werden. Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.  <br/> <br/>-Ändert den Namen eines Team Kanals ( **Kanalname**).  <br/>  <br/>-Ändert die Beschreibung eines Team Kanals ( **Kanalbeschreibung**).  <br/> |
-|Geänderte Organisations Einstellung  <br/> |TeamsTenantSettingChanged  <br/> | Der TeamsTenantSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem globalen Administrator (mit dem Office 365 Admin Center) ausgeführt werden. Beachten Sie, dass sich diese Aktivitäten auf organisationsweite Microsoft Teams-Einstellungen auswirken. Weitere Informationen finden Sie unter [Administrator Einstellungen für Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.  <br/><br/>– Aktiviert oder deaktiviert Microsoft Teams für die Organisation ( **Microsoft Teams**).  <br/><br/>– Aktiviert oder deaktiviert die Interoperabilität zwischen Microsoft Teams und Skype for Business für die Organisation ( **Skype for Business-Interoperabilität**).<br/><br/>– Aktiviert oder deaktiviert die Ansicht Organisationsdiagramm in Microsoft Teams-Clients (Organigramm- **Ansicht**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, private Besprechungen (private Termin **Planung**) zu planen.  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Kanal Besprechungen ( **Kanal Besprechungsplanung**) einzuplanen.  <br/><br/>-Aktiviert oder deaktiviert Videoanrufe in Teams-Besprechungen ( **Video für Skype**-Besprechungen).  <br/><br/>-Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft Teams-Meetups für die Organisation ( **Bildschirmfreigabe für Skype**-Besprechungen).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit, animierte Bilder (als Giphys bezeichnet) zu Teams-Unterhaltungen ( **animierte Bilder**) hinzuzufügen.  <br/><br/>-Ändert die Einstellung der Inhaltsbewertung für die Organisation ( **Inhaltsbewertung**). Die Inhaltsbewertung schränkt den Typ des animierten Bilds ein, das in Unterhaltungen angezeigt werden kann.  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, anpassbare Bilder (als benutzerdefinierte Meme bezeichnet) aus dem Internet zu Team Unterhaltungen hinzuzufügen ( **anpassbare Bilder aus dem Internet**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, bearbeitbare Bilder (als Aufkleber bezeichnet) zu Team Unterhaltungen hinzuzufügen ( **bearbeitbare Bilder**).<br/><br/>-Aktiviert oder deaktiviert diese Fähigkeit für Teammitglieder, Bots in Microsoft Teams-Chats und-Kanälen ( **org-weite Bots**) zu verwenden.<br/><br/>-Aktiviert bestimmte Bots für Microsoft Teams; Dies beinhaltet nicht den T-bot, der Teams-Hilfe-bot, der verfügbar ist, wenn Bots für die Organisation aktiviert sind ( **einzelne Bots**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Erweiterungen oder Registerkarten ( **Erweiterungen oder Registerkarten**) hinzuzufügen.  <br/><br/>-Aktiviert oder deaktiviert das Side-Loading von proprietären Bots für Microsoft Teams ( **Side loading of Bots**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Benutzer, e-Mail-Nachrichten an einen Microsoft Teams-Kanal ( **Kanal-e-Mail**) zu senden.  <br/> |
+|Geänderte Organisations Einstellung  <br/> |TeamsTenantSettingChanged  <br/> | Der TeamsTenantSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem globalen Administrator ausgeführt werden (mit dem Microsoft 365 Admin Center); Beachten Sie, dass sich diese Aktivitäten auf organisationsweite Microsoft Teams-Einstellungen auswirken. Weitere Informationen finden Sie unter [Administrator Einstellungen für Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.  <br/><br/>– Aktiviert oder deaktiviert Microsoft Teams für die Organisation ( **Microsoft Teams**).  <br/><br/>– Aktiviert oder deaktiviert die Interoperabilität zwischen Microsoft Teams und Skype for Business für die Organisation ( **Skype for Business-Interoperabilität**).<br/><br/>– Aktiviert oder deaktiviert die Ansicht Organisationsdiagramm in Microsoft Teams-Clients (Organigramm- **Ansicht**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, private Besprechungen (private Termin **Planung**) zu planen.  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Kanal Besprechungen ( **Kanal Besprechungsplanung**) einzuplanen.  <br/><br/>-Aktiviert oder deaktiviert Videoanrufe in Teams-Besprechungen ( **Video für Skype**-Besprechungen).  <br/><br/>-Aktiviert oder deaktiviert die Bildschirmfreigabe in Microsoft Teams-Meetups für die Organisation ( **Bildschirmfreigabe für Skype**-Besprechungen).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit, animierte Bilder (als Giphys bezeichnet) zu Teams-Unterhaltungen ( **animierte Bilder**) hinzuzufügen.  <br/><br/>-Ändert die Einstellung der Inhaltsbewertung für die Organisation ( **Inhaltsbewertung**). Die Inhaltsbewertung schränkt den Typ des animierten Bilds ein, das in Unterhaltungen angezeigt werden kann.  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, anpassbare Bilder (als benutzerdefinierte Meme bezeichnet) aus dem Internet zu Team Unterhaltungen hinzuzufügen ( **anpassbare Bilder aus dem Internet**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, bearbeitbare Bilder (als Aufkleber bezeichnet) zu Team Unterhaltungen hinzuzufügen ( **bearbeitbare Bilder**).<br/><br/>-Aktiviert oder deaktiviert diese Fähigkeit für Teammitglieder, Bots in Microsoft Teams-Chats und-Kanälen ( **org-weite Bots**) zu verwenden.<br/><br/>-Aktiviert bestimmte Bots für Microsoft Teams; Dies beinhaltet nicht den T-bot, der Teams-Hilfe-bot, der verfügbar ist, wenn Bots für die Organisation aktiviert sind ( **einzelne Bots**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Teammitglieder, Erweiterungen oder Registerkarten ( **Erweiterungen oder Registerkarten**) hinzuzufügen.  <br/><br/>-Aktiviert oder deaktiviert das Side-Loading von proprietären Bots für Microsoft Teams ( **Side loading of Bots**).  <br/><br/>-Aktiviert oder deaktiviert die Möglichkeit für Benutzer, e-Mail-Nachrichten an einen Microsoft Teams-Kanal ( **Kanal-e-Mail**) zu senden.  <br/> |
 |Geänderte Rolle der Mitglieder im Team  <br/> |MemberRoleChanged  <br/> |Ein Teambesitzer ändert die Rolle von Mitgliedern in einem Team. Die folgenden Werte geben den dem Benutzer zugewiesenen Rollentyp an.  <br/><br/><br/> **1** – gibt die Rolle des Besitzers an.<br/>**2** – gibt die Rolle des Mitglieds an. <br/>**3** -gibt die Gastrolle an. <br/>Die Members-Eigenschaft enthält auch den Namen Ihrer Organisation und die e-Mail-Adresse des Mitglieds.  <br/> |
 |Einstellung für das geänderte Team  <br/> |TeamSettingChanged  <br/> | Der TeamSettingChanged-Vorgang wird protokolliert, wenn die folgenden Aktivitäten von einem Teambesitzer ausgeführt werden. Für jede dieser Aktivitäten wird eine Beschreibung der geänderten Einstellung (in Klammern unten) in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.  <br/><br/>-Ändert den Zugriffstyp für ein Team. Teams können als privat oder öffentlich festgelegt werden ( **Team Zugriffstyp**). Wenn ein Team privat ist (Standardeinstellung), können Benutzer nur auf Einladung auf das Team zugreifen. Wenn ein Team öffentlich ist, kann es von allen Benutzern ermittelt werden.  <br/><br/>-Ändert die Klassifikation der Informationen eines Teams ( **Team Klassifizierung**).  <br/>  Team Daten können beispielsweise als hohe geschäftliche Auswirkungen, mittlere geschäftliche Auswirkungen oder geringe geschäftliche Auswirkungen klassifiziert werden.<br/><br/>-Ändert den Namen eines Teams ( **Teamname**).  <br/><br/>-Ändert die Team Beschreibung ( **Team Description**). <br/><br/>-Änderungen an den Team Einstellungen. Ein Teambesitzer kann auf diese Einstellungen in einem Teams-Client zugreifen, indem er mit der rechten Maustaste auf ein Team klickt, auf **Team verwalten**klickt und dann auf die Registerkarte **Einstellungen** klickt. Für diese Aktivitäten wird der Name der geänderten Einstellung in der Spalte **Element** in den Suchergebnissen des Überwachungsprotokolls angezeigt.  <br/> |
 |Erstelltes Team  <br/> |TeamCreated  <br/> |Ein Benutzer erstellt ein neues Team.  <br/> |
@@ -670,7 +670,7 @@ In der folgenden Tabelle sind die Benutzer-und Administratoraktivitäten in jamm
    
 ### <a name="microsoft-flow-activities"></a>Microsoft Flow-Aktivitäten
 
-Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Informationen zur Überwachung von Flow-Aktivitäten finden Sie in den Blog- [Microsoft Flow-Überwachungsereignissen, die jetzt im Office 365 Security _AMP_ Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Zu diesen Aktivitäten gehört das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Flow-Berechtigungen. Weitere Informationen zum Überwachen von Fluss Aktivitäten finden Sie in den Blog- [Microsoft Flow-Überwachungsereignissen, die jetzt im Security _AMP_ Compliance Center verfügbar sind](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
@@ -731,7 +731,7 @@ Beachten Sie, dass die Dauer des Aufbewahrungszeitraums für Überwachungsdatens
 
 Ja. Die Office 365-Verwaltungs Aktivitäts-API wird zum programmgesteuerten Abrufen der Überwachungsprotokolle verwendet.  Informationen zu den ersten Schritten finden Sie unter [Erste Schritte mit Office 365-Verwaltungs-APIs](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Gibt es andere Möglichkeiten zum Abrufen von Überwachungsprotokollen außer der Verwendung des Office 365 Security & Compliance Centers oder der Office 365-Verwaltungs Aktivitäts-API?**
+**Gibt es andere Möglichkeiten zum Abrufen von Überwachungsprotokollen außer der Verwendung des Security and Compliance Centers oder der Office 365 Management Activity API?**
 
 Nein. Dies sind die einzigen beiden Möglichkeiten zum Abrufen von Daten aus dem Office 365-Überwachungsdienst. 
 
