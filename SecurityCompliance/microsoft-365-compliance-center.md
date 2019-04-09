@@ -1,22 +1,22 @@
 ---
-title: Willkommen bei Ihrem ganz neuen neuen Microsoft 365 Compliance Center
+title: Übersicht über das neue Microsoft 365 Compliance Center
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das neue Microsoft 365 Compliance Center, einschließlich der enthaltenen Informationen, seiner Vorgehensweisen und der nächsten Schritte.
-ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026316"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518385"
 ---
-# <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Willkommen beim neuen Microsoft 365 Compliance Center.
+# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Übersicht über das vollständig neue Microsoft 365 Compliance Center
 
 ## <a name="overview"></a>Übersicht
 
@@ -83,11 +83,15 @@ Zusätzlich zu den Links auf den Karten auf der Homepage finden Sie einen Naviga
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Warum werde ich zum Office 365 Security & Compliance Center gebracht, um einige Aufgaben auszuführen, wie beispielsweise das Definieren bestimmter Richtlinien?
 
-Wir entwickeln weiterhin das Microsoft 365 Compliance Center und werden in den nächsten Monaten weitere Funktionen und Lösungen hinzufügen. In der Zwischenzeit müssen einige Aufgaben im Security & Compliance Center durchgeführt werden. In diesen Fällen werden Sie automatisch an den Speicherort weitergeleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
+Wir entwickeln weiterhin das Microsoft 365 Compliance Center und werden in den nächsten Monaten weitere Funktionen und Lösungen hinzufügen. In der Zwischenzeit müssen einige Aufgaben im Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) ausgeführt werden. In diesen Fällen werden Sie automatisch an den Speicherort weitergeleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Warum wird das neue Microsoft 365 Compliance Center noch nicht angezeigt?
 
-Stellen Sie zunächst sicher, dass Sie über die entsprechenden [Lizenzen und Berechtigungen](microsoft-security-and-compliance.md#required-licenses-and-permissions)verfügen. Melden Sie sich dann bei [https://compliance.microsoft.com](https://compliance.microsoft.com)an an. Wenn das neue Compliance Center noch nicht angezeigt wird, haben Sie es sehr bald.
+Stellen Sie zunächst sicher, dass Sie über die entsprechenden [Lizenzen und Berechtigungen](microsoft-security-and-compliance.md#required-licenses-and-permissions)verfügen. Melden Sie sich dann bei [https://compliance.microsoft.com](https://compliance.microsoft.com)an an. Wenn das neue Compliance Center noch nicht angezeigt wird, haben Sie es in Kürze.
+
+### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>Ich kann einige meiner Compliance-Einstellungen nicht finden. What do I do?
+
+Wir fügen weiterhin die Funktionalität zum Microsoft 365 Compliance Center hinzu. Wenn Sie etwas wie die Überwachungsprotokoll Suche nicht finden können, navigieren Sie zum Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Ihre Konfigurationen werden sowohl im vorhandenen Office 365 Security & Compliance Center als auch im neuen Compliance Center von Microsoft 365 automatisch gespeichert.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

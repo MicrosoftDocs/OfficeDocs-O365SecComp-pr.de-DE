@@ -3,7 +3,7 @@ title: Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance C
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/27/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Machen Sie sich bereit für das neue Microsoft 365 Security Center und das Compliance Center.
-ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000688"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518375"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center sind jetzt allgemein verfügbar
 
@@ -26,7 +26,7 @@ ms.locfileid: "31000688"
 
 Ihr neues [Microsoft 365 Security Center](overview-security-center.md) enthält ein Dashboard, das Sie bei der Verwaltung und Überwachung der Sicherheit für Ihre Identitäten, Daten, Geräte, Apps und Infrastruktur unterstützt. Sie haben auch einfachen Zugriff auf ihre vollständig neuen [Microsoft Secure Score](microsoft-secure-score.md)-, neuen Device Threat-Berichte, neue Berichte zur Identitäts Bedrohung und ihre Sicherheitsberichte zur Cloud-app. 
 
-[![Neues Microsoft 365-Sicherheitscenter](media/m365-security-center.png)](overview-security-center.md)
+[![NEW Microsoft 365 Security Center](media/m365-security-center.png)](overview-security-center.md)
 
 Wenn Sie das Microsoft 365-Sicherheitscenter zum ersten Mal verwenden, werden Informationen am oberen Rand des Bildschirms angezeigt, um Ihnen den Einstieg zu erleichtern. Außerdem erfahren Sie, wie Sie leicht zu den Sicherheitsfunktionen navigieren, die Sie am meisten untersuchen möchten. Weitere Informationen finden Sie unter [Overview of the Microsoft 365 Security Center](overview-security-center.md).
 
@@ -52,25 +52,24 @@ Sie haben Zugriff auf das Microsoft 365 Compliance Center unter [https://complia
 
 ## <a name="what-to-expect"></a>Was Sie erwarten können
 
-### <a name="general-availability"></a>Allgemeine Verfügbarkeit!
+### <a name="available-now"></a>Jetzt verfügbar!
 
-Das neue Microsoft 365 Security Center und das neue Microsoft 365 Compliance Center sind jetzt in der Regel Ende März 2019 verfügbar. Wenn Sie dies nicht bereits getan haben, sollten Sie sehr bald Zugriff auf das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center haben.
+Das neue Microsoft 365 Security Center und das neue Microsoft 365 Compliance Center sind jetzt im Allgemeinen für Microsoft 365-Kunden ab Ende März 2019 verfügbar. 
+
+Wenn Sie ein anderes Abonnement haben, beispielsweise einen eigenständigen Plan, der das Office 365 Security & Compliance Center umfasst, haben Sie bald Zugriff auf das neue Microsoft 365 Security Center und Microsoft 365 Compliance Center. Weitere Informationen finden Sie im [Microsoft 365-Fahrplan](https://www.microsoft.com/microsoft-365/roadmap).
 
 ### <a name="easy-access"></a>Einfacher Zugriff!
 
-Durch verbesserte Navigation, integrierte Lösungen und eine optimierte Umgebung können Sie die Informationen anzeigen und darauf zugreifen, die Sie am meisten interessieren, und die leistungsstarken Sicherheits-und Compliance-Lösungen in Microsoft 365 nutzen.
+Durch verbesserte Navigation, integrierte Lösungen und eine optimierte Umgebung können Sie die Informationen anzeigen und darauf zugreifen, die Sie am meisten interessieren, und die leistungsstarken Sicherheits-und Compliance-Lösungen in Microsoft 365 nutzen. Und obwohl in den nächsten Monaten mehr Funktionalität und Lösungen hinzugefügt werden, ist das Office 365 Security & Compliance Center[https://protection.microsoft.com](https://protection.microsoft.com)() weiterhin verfügbar.
 
 ### <a name="smooth-transition"></a>ReibungsLoser Übergang!
 
-Sie können einen reibungslosen Übergang zu den neuen Centern erwarten. Nach der vollständigen Einführung dieser Änderung planen wir, das frühere Microsoft 365 Security & Compliance Center ([https://protection.microsoft.com](https://protection.microsoft.com)) zurückzuziehen. Die Administrator Erfahrung wird sich ändern, dies wirkt sich jedoch nicht auf Ihre aktuellen Sicherheits-und Konformitäts Konfigurationen aus.
-
-Wenn in Ihrer Organisation Microsoft 365 Enterprise E3 oder E5 zur Verfügung steht, können Ihre Sicherheits-und Compliance-Administratoren nach der Einführung dieses Updates folgende Möglichkeiten erfüllen:
+Sie können einen reibungslosen Übergang zu den neuen Centern erwarten. Schließlich wird das frühere Microsoft 365 Security & Compliance Center ([https://protection.microsoft.com](https://protection.microsoft.com)) zurückgezogen. Auch wenn sich die Administrator Erfahrung ändert, wirkt sich dies nicht auf die aktuellen Sicherheits-und Konformitäts Konfigurationen aus. Wenn Ihre Organisation Microsoft 365 Enterprise E3 oder E5 hat, können Ihre Sicherheits-und Compliance-Administratoren:
 
 - Navigieren Sie direkt [https://security.microsoft.com](https://security.microsoft.com) zu [https://compliance.microsoft.com](https://compliance.microsoft.com)und; <br>oder  
-- Wechseln Sie zum Microsoft 365 Admin Center, und navigieren Sie dann zum neuen Microsoft 365 Security Center und Microsoft 365 Compliance Center (Links befinden sich unter Admin Center im linken Navigationsbereich).
+- Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und navigieren Sie von dort (Klicken Sie im Navigationsbereich auf **Alle anzeigen**, und wählen Sie dann **Sicherheit** oder **Kompatibilität**) aus.
 
-> [!TIP]
-> Wenn Sie das Office 365 Security & Compliance Center ([https://protection.office.com](http://protection.office.com)) verwenden, können Sie weiterhin ihre Office 365-Einstellungen in Ihrem vorhandenen Security _AMP_ Compliance Center konfigurieren und verwalten. Konfigurationen werden im vorhandenen Security & Compliance Center sowie im neuen Microsoft 365 Security Center und im Microsoft 365 Compliance Center verwaltet.  
+Darüber hinaus können Sie weiterhin Einstellungen im vorhandenen Office 365 Security & Compliance Center ([https://protection.office.com](http://protection.office.com)) konfigurieren und verwalten. Ihre Konfigurationen werden sowohl im vorhandenen Office 365 Security & Compliance Center als auch im neuen Microsoft 365 Security Center und im Microsoft 365 Compliance Center verwaltet.  
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
@@ -109,5 +108,10 @@ In der folgenden Tabelle wird zusammengefasst, wer über Azure, Office 365 und W
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
+[Microsoft 365 Security Center](overview-security-center.md)
+
+[Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
+
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
+[Office 365 Security & Compliance Center – Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
