@@ -1,8 +1,8 @@
 ---
-title: Verwalten der postfachüberwachung
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+title: Verwalten der Postfächern
+ms.author: chrisda
+author: chrisda
+manager: serdars
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist standardmäßig in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) aktiviert. Dies führt dazu, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretungen und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten suchen können, die für das Postfach ausgeführt werden.
-ms.openlocfilehash: 604b7fc26c2e97a5efce28fe844fbd066196c4ce
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670630"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745317"
 ---
-# <a name="manage-mailbox-auditing"></a>Verwalten der postfachüberwachung
+# <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
   
 Ab Januar 2019 aktiviert Microsoft die postfachüberwachungsprotokollierung standardmäßig für alle Microsoft 365-Organisationen. Dies führt dazu, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch protokolliert werden, und die entsprechenden Post Fach Überwachungseinträge stehen zur Verfügung, wenn Sie im postfachüberwachungsprotokoll nach diesen suchen. Bevor die postfachüberwachung standardmäßig aktiviert wurde, muss Sie für jedes Benutzerpostfach in Ihrer Organisation manuell aktiviert werden. 
 
@@ -106,13 +106,13 @@ Hier finden Sie Beschreibungen dieser Postfachaktionen.
 
 |Postfach-Aktion|Beschreibung|
 |:---------|:---------|
-|**Create** <br/> |Ein Element wurde im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
+|**Erstellen** <br/> |Ein Element wurde im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
 |**HardDelete** <br/> |Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.  <br/> |
 |**MoveToDeletedItems** <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
 |**SendAs** <br/> |Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.  <br/> |
 |**SendOnBehalf** <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |
 |**SoftDelete** <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.  <br/> |
-|**Update** <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |
+|**Aktualisieren** <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |
 |**UpdateCalendarDelegation** <br/> |Einem Postfach wurde eine Kalender Delegierung zugewiesen. Die Kalender Delegierung erteilt anderen Benutzern in derselben Organisation Berechtigungen zum Verwalten des Kalenders des Postfachbesitzers.  <br/> |
 |**UpdateFolderPermissions** <br/> |Eine Ordnerberechtigung wurde geändert. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Ordner in einem Postfach und die Nachrichten zugreifen können, die sich in diesen Ordnern befinden.  <br/> |
 |**UpdateInboxRules** <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. PostEingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen auszuführen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen bestimmten Ordner oder das Löschen einer Nachricht.  <br/> |
@@ -271,7 +271,7 @@ In der folgenden Tabelle werden die für die einzelnen Benutzeranmelde Typen üb
 |**Aktion**|**Beschreibung**|**Administrator**|**Stellvertretung**|**Besitzer**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Kopieren** <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |Ja  <br/> |Nein  <br/> |Nein  <br/> |
-|**Create** <br/> |Ein Element wird im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
+|**Erstellen** <br/> |Ein Element wird im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja  <br/> |
 |**FolderBind**\** <br/> |Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.  <br/> |Ja  <br/> |Ja  <br/> |Nein  <br/> |
 |**HardDelete** <br/> |Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |
 |**Mailbox Login:** <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |Nein  <br/> |Nein  <br/> |Ja  <br/> |
@@ -281,7 +281,7 @@ In der folgenden Tabelle werden die für die einzelnen Benutzeranmelde Typen üb
 |**SendAs** <br/> |Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Nein  <br/> |
 |**SendOnBehalf** <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Nein  <br/> |
 |**SoftDelete** <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |
-|**Update** <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |
+|**Aktualisieren** <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |
 |**UpdateCalendarDelegation** <br/> |Einem Postfach wurde eine Kalender Delegierung zugewiesen. Die Kalender Delegierung erteilt anderen Benutzern in der Organisation die Berechtigung zum Verwalten des Kalenders des Postfachbesitzers.  <br/> |Ja\*  <br/> |Nein  <br/> |Ja\*  <br/> |
 |**UpdateFolderPermissions** <br/> |Eine Ordnerberechtigung wurde geändert. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Ordner in einem Postfach und die Nachrichten zugreifen können, die sich in diesen Ordnern befinden.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |
 |**UpdateInboxRules** <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. PostEingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen auszuführen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen bestimmten Ordner oder das Löschen einer Nachricht.  <br/> |Ja\*  <br/> |Ja\*  <br/> |Ja\*  <br/> |

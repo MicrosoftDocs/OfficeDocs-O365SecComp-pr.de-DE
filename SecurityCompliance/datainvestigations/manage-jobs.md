@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6779b9eaf5cd07dbc88f400542b6016e91ec9f4c
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: 28577d45c44eabcffcff2d98bc89a664f3fba6f5
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030155"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745297"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Verwalten von Aufträgen in Daten Untersuchungen (Vorschau)
 
@@ -34,7 +34,7 @@ Nachfolgend finden Sie eine Liste der Aufträge (in der Regel lang andauernde Pr
 |Vergleichen von Auslastungs Sätzen | Ein Benutzer betrachtet die Unterschiede zwischen verschiedenen Auslastungs Sätzen in einem Evidence-Satz. Ein Auslastungs Satz ist eine Instanz des Hinzufügens von Daten zu einem Evidence-Satz. Wenn Sie beispielsweise die Ergebnisse von zwei unterschiedlichen Suchvorgängen zum gleichen Beweissatz hinzufügen, würde jeder einen Lasten Satz darstellen. Weitere Informationen finden Sie unter [Manage Auslastung Sets](manage-load-sets.md). |
 |Konvertieren von gehandelten Dokumenten in PDF|Nachdem ein Benutzer ein Dokument mit Anmerkungen versehen und einen Teil davon bearbeitet hat, können Sie das Dokument in eine PDF-Datei konvertieren. Dadurch wird sichergestellt, dass der behandelte Teil nicht sichtbar ist, whenf das Dokument für die Präsentation exportiert wird. Weitere Informationen finden Sie unter [Überprüfen von Daten in Evidence](review-data-in-evidence.md). |
 |Schätzen von Suchergebnissen | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), durchsucht das Such Tool den Index nach Elementen, die mit der Suchabfrage übereinstimmen, und bereitet eine Schätzung vor, die die Anzahl und Gesamtgröße aller Elemente durch die Suche und die Anzahl der Datenquellen Sea rched.  Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md). | 
-|Vorbereiten von Daten für den Export | Ein Benutzer exportiert Dokumente aus einem Evidence-Satz aus einem. Nach Abschluss des Exportvorgangs können die exportierten Daten auf einen lokalen Computer heruntergeladen werden. Weitere Informationen finden Sie unter [Exportieren von Daten aus einer Untersuchung](export-data.md). | 
+|Vorbereiten von Daten für den Export | Ein Benutzer exportiert Dokumente aus einem Evidence-Satz. Nach Abschluss des Exportvorgangs können die exportierten Daten auf einen lokalen Computer heruntergeladen werden. Weitere Informationen finden Sie unter [Exportieren von Daten aus einer Untersuchung](export-data.md). | 
 |Vorbereiten auf die Fehlerbehebung |Wenn ein Benutzer eine Datei auswählt und eine neue Fehlerkorrektur in der Fehleransicht auf der Registerkarte **Verarbeitung** einer Untersuchung erstellt, besteht der erste Schritt in diesem Prozess darin, die Datei mit dem Verarbeitungsfehler an einen Azure-Speicherort in der Microsoft-Cloud hochzuladen. Dieser Auftrag verfolgt den Fortschritt des Uploads. Weitere Informationen zum Fehlerkorrektur-Workflow finden Sie unter [Fehlerbehebung bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md).| 
 |Vorbereiten der Suchvorschau | Nachdem ein Benutzer eine neue Suche erstellt und ausgeführt hat (oder eine vorhandene Suche erneut ausführt), bereitet das Such Tool eine Beispiel Teilmenge der Elemente (die mit der Suchabfrage übereinstimmen) vor, die in der Vorschau angezeigt werden können. Die Vorschau der Suchergebnisse hilft Ihnen bei der Bestimmung der Effektivität der Suche.  Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md). | 
 |Erneutes Indizieren von personenbezogenen Daten | Wenn Sie eine Person von Interesse zu einer Untersuchung hinzufügen, werden alle teilweise indizierten Elemente in den ausgewählten Datenquellen der Person von Interest durch einen Prozess mit dem Namen *Advanced Indexing*neu indiziert. Dieser Auftrag wird auch ausgelöst, wenn Sie auf der Registerkarte **Verarbeitung** einer Untersuchung auf **Index aktualisieren** in der Indexansicht klicken. Weitere Informationen finden Sie unter [Erweiterte Indizierung von Daten für eine Untersuchung](index-data-people-of-interest.md).
