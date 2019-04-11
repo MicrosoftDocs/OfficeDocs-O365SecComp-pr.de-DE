@@ -3,7 +3,7 @@ title: Übersicht über Richtlinien zur Verhinderung von Datenverlust
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000018"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784106"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -56,13 +56,13 @@ Sie erstellen und verwalten DLP-Richtlinien auf der Seite zur Verhinderung von D
 
 Eine DLP-Richtlinie enthält einige grundlegende Punkte:
   
-- Wo die Inhalts **Speicherorte** wie Exchange Online, SharePoint Online und OneDrive for Business-Websites sowie Microsoft Teams-Chats und-Kanäle geschützt werden sollen. 
+- Schutz der Inhalte: **Standorte** wie Exchange Online, SharePoint Online und OneDrive for Business-Websites sowie Microsoft Teams-Chats und-Kanäle. 
     
 - Wann und wie die Inhalte durch Durchsetzen von **Regeln** geschützt werden sollen, die Folgendes umfassen: 
     
-  - **Bedingungen** , die der Inhalt erfüllen muss, bevor die Regel erzwungen wird-beispielsweise suchen Sie nur nach Inhalten, die Sozialversicherungsnummern enthalten, die für Personen außerhalb Ihrer Organisation freigegeben wurden. 
+  - **Bedingungen** , die der Inhalt erfüllen muss, bevor die Regel erzwungen wird. Eine Regel kann beispielsweise so konfiguriert werden, dass Sie nur nach Inhalten sucht, die sozialVersicherungsnummern enthalten, die für Personen außerhalb Ihrer Organisation freigegeben wurden. 
     
-  - **Aktionen**, die von der Regel automatisch durchgeführt werden sollen, wenn diesen Bedingungen entsprechender Inhalt gefunden wird. Es kann dann zum Beispiel der Zugriff auf das Dokument gesperrt und sowohl an den Benutzer als auch den Compliance Officer eine entsprechende E-Mail-Benachrichtigung gesendet werden. 
+  - **Aktionen** , die die Regel automatisch ausführen soll, wenn Inhalte gefunden werden, die den Bedingungen entsprechen. Eine Regel kann beispielsweise so konfiguriert werden, dass der Zugriff auf ein Dokument blockiert wird und der Benutzer und der Compliance-Beauftragte eine e-Mail-Benachrichtigung senden. 
     
 Sie können eine Regel verwenden, um eine bestimmte Schutzanforderung zu erfüllen, und dann mithilfe einer DLP-Richtlinie gemeinsame Schutzanforderungen gruppieren, beispielsweise alle Regeln, die erforderlich sind, um eine bestimmte Verordnung einzuhalten.
   
@@ -70,7 +70,7 @@ Sie haben beispielsweise eine DLP-Richtlinie, die Ihnen hilft, das vorhanden sei
   
 ![Diagramm zeigt DLP-Richtlinie enthält Standorte und Regeln](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Speicherorte
+### <a name="locations"></a>Standorte
 
 Eine DLP-Richtlinie kann vertrauliche Informationen in Office 365 finden und schützen, unabhängig davon, ob sich diese Informationen in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können Inhalte in Exchange-e-Mails, Microsoft Teams-Chats und-Kanälen sowie alle SharePoint-oder OneDrive-Bibliotheken schützen oder bestimmte Speicherorte für eine Richtlinie auswählen.
   
@@ -204,7 +204,7 @@ Beispielsweise verfügt die integrierte **U.S. HIPAA** -Richtlinie über eine Re
   
 - aus der Gruppe **PII-IDs** (mindestens eine SSN-Nummer **oder** eine DEA-Nummer) 
     
-    **AND**
+    **UND**
     
 - aus der Gruppe **medizinische Ausdrücke** (mindestens ein ICD-9-cm-Schlüsselwort **oder** ein ICD-10-cm-Schlüsselwort) 
     
@@ -212,10 +212,14 @@ Beispielsweise verfügt die integrierte **U.S. HIPAA** -Richtlinie über eine Re
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Die Priorität, nach der Regeln verarbeitet werden.
 
-Wenn Sie Regeln in einer Richtlinie erstellen, erhält jede Regel eine Priorität in der Reihenfolge, in der Sie erstellt wurde – Bedeutung, die Regel, die zuerst erstellt wurde, hat die erste Priorität, die Regel, die erstellt wird, zweite Priorität usw. Nachdem Sie eine Regel erstellt haben, kann die Priorität nicht geändert werden, es sei denn, Sie wird gelöscht und neu erstellt.
+Wenn Sie Regeln in einer Richtlinie erstellen, erhält jede Regel eine Priorität in der Reihenfolge, in der Sie erstellt wurde – Bedeutung, die Regel, die zuerst erstellt wurde, hat die erste Priorität, die Regel, die erstellt wird, zweite Priorität usw. 
   
 ![Regeln in der Prioritätsreihenfolge](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+Nachdem Sie mehr als eine DLP-Richtlinie eingerichtet haben, können Sie die Priorität einer oder mehrerer Richtlinien ändern. Wählen Sie dazu eine Richtlinie aus, wählen Sie **Richtlinie bearbeiten**aus, und verwenden Sie die Liste **Priorität** , um die Priorität anzugeben.
+
+![Festlegen der Priorität für eine Richtlinie](media/dlp-set-policy-priority.png)
+
 Wenn Inhalte anhand von Regeln ausgewertet werden, werden die Regeln in der Reihenfolge der Priorität verarbeitet. Wenn Inhalte mit mehreren Regeln übereinstimmen, werden die Regeln in der Reihenfolge der Priorität verarbeitet, und die restriktivste Aktion wird erzwungen. Wenn der Inhalt beispielsweise mit allen der folgenden Regeln übereinstimmt, wird Regel 3 erzwungen, da es sich um die höchste Priorität, die restriktivste Regel, handelt:
   
 - Regel 1: nur benachrichtigt Benutzer
@@ -244,7 +248,7 @@ Nachdem Benutzer ihre DLP-Richtlinien erstellt und aktiviert haben, werden diese
   
 - Zu viele Inhalte, bei denen **es sich nicht um** vertrauliche Informationen handelt, entsprechen den Regeln – mit anderen Worten zu viel falsch positiver Ergebnisse. 
     
-- Zu wenig Inhalte, die vertrauliche Informationen **sind** , entsprechen den Regeln – anders ausgedrückt, werden die Schutzaktionen nicht für die vertraulichen Informationen erzwungen. 
+- Zu wenig Inhalte, die vertrauliche Informationen **sind** , entsprechen den Regeln. Anders ausgedrückt, werden die Schutzaktionen nicht für die vertraulichen Informationen erzwungen. 
     
 Um diese Probleme zu beheben, können Sie Ihre Regeln optimieren, indem Sie die Anzahl der Instanzen anpassen und die Genauigkeit anpassen, um die Übereinstimmung mit den Regeln für Inhalte zu erschweren. Jeder vertrauliche Informationstyp, der in einer Regel verwendet wird, weist sowohl eine instanzenanzahl als auch eine Übereinstimmungs Genauigkeit auf.
   
@@ -403,6 +407,10 @@ Wenn Sie DLP-Richtlinien mit einer hohen potenziellen Auswirkung erstellen, empf
 Sie können eine DLP-Richtlinie jederzeit deaktivieren, was alle Regeln in der Richtlinie betrifft. Jede Regel kann jedoch auch einzeln deaktiviert werden, indem Sie Ihren Status im Regel-Editor umschalten.
   
 ![Optionen zum Deaktivieren einer Regel in einer Richtlinie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+Sie können auch die Priorität mehrerer Regeln in einer Richtlinie ändern. Öffnen Sie dazu eine Richtlinie zur Bearbeitung. Wählen Sie in einer Zeile für eine Regel die Auslassungszeichen (**.**..) aus, und wählen Sie dann eine Option wie "nach unten" oder " **nach** **unten verschieben** " aus.
+
+![Regelpriorität festlegen](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP-Berichte
 
@@ -500,7 +508,7 @@ Um die meisten Cmdlets für das Security &amp; Compliance Center zu verwenden, m
     
 DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich Exchange Online. Aus diesem Grund stehen **die Cmdlets für die DLP-Berichte in Exchange Online PowerShell zur Verfügung – nicht im &amp; Security Compliance Center PowerShell**. Um die Cmdlets für die DLP-Berichte zu verwenden, müssen Sie daher Folgendes tun:
   
-1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
@@ -522,6 +530,6 @@ DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich 
     
 - [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
     
-- [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
+- [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md)
     
 
