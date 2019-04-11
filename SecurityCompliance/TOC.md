@@ -472,6 +472,7 @@
 ### [Bereitstellen von SharePoint Online-Websites für drei Schutzebenen](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
 ### [Schützen von SharePoint Online-Dateien mit Aufbewahrungsbezeichnungen und Verhindern von Datenverlust](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Schützen von SharePoint Online-Dateien mit Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
+### [Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
 ## [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
 ### [Entwerfen einer isolierten SharePoint Online-Teamwebsite](design-an-isolated-sharepoint-online-team-site.md)
 ### [Bereitstellen einer isolierten SharePoint Online-Teamwebsite](deploy-an-isolated-sharepoint-online-team-site.md)
