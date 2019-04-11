@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999158"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745257"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien Aufbewahrungsbezeichnungen und Verhindern von Datenverlust
 
@@ -45,9 +45,9 @@ Es gibt drei Phasen beim Erstellen und anschließenden Zuweisen von Aufbewahrung
 
 In dieser Phase bestimmen Sie die Namen Ihrer Aufbewahrungsbezeichnungen für die vier Ebenen des Informationsschutzes, der auf SharePoint Online-Teamwebsites angewendet wird. Die folgende Tabelle listet die empfohlenen Namen für jede Ebene auf.
   
-|**Schutzebene der SharePoint Online-Teamwebsite**|**Bezeichnungsname**|
+|**Schutzebene für SharePoint Online-Teamwebsites**|**Bezeichnungsname**|
 |:-----|:-----|
-|Grundlegend-Öffentlich  <br/> |Intern Öffentlich  <br/> |
+|Basisschutz-Öffentlich  <br/> |Intern Öffentlich  <br/> |
 |Grundlegend-Privat  <br/> |Private  <br/> |
 |Vertraulich  <br/> |Vertraulich  <br/> |
 |Streng vertraulich  <br/> |Streng vertraulich  <br/> |
@@ -56,9 +56,9 @@ In dieser Phase bestimmen Sie die Namen Ihrer Aufbewahrungsbezeichnungen für di
 
 In dieser Phase erstellen und veröffentlichen Sie Ihre bestimmten Bezeichnungen für die unterschiedlichen Ebenen des Informationsschutzes.
   
-1. Melden Sie sich mit einem Konto beim [Microsoft 365-Security-Portal](https://security.microsoft.com) an, das über die Rolle „Sicherheitsadministrator“ oder „Unternehmensadministrator“ verfügt.
+1. Melden Sie sich mit einem Konto beim [Microsoft 365 Compliance-Portal](https://compliance.microsoft.com) an, das über die Rolle „Sicherheitsadministrator“ oder „Unternehmensadministrator“ verfügt.
     
-2. Klicken Sie auf der Registerkarte **Start – Microsoft 365 Security ** im Browser auf **Klassifizierungen > Bezeichnungen**.
+2. Klicken Sie auf der Registerkarte **Start – Microsoft 365 Compliance ** im Browser auf **Klassifizierungen > Bezeichnungen**.
     
 3. Klicken Sie auf **Aufbewahrungsbezeichnung > Erstellen einer Bezeichnung**.
     
@@ -70,7 +70,7 @@ In dieser Phase erstellen und veröffentlichen Sie Ihre bestimmten Bezeichnungen
     
 7. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Beschriftung erstellen**.
     
-8. Für die zusätzlichen Beschriftungen klicken Sie auf **Beschriftung erstellen**, und wiederholen Sie dann die Schritte 4 bis 7.
+8. Für die zusätzlichen Beschriftungen klicken Sie auf **Beschriftung erstellen**, und wiederholen Sie dann bei Bedarf die Schritte 3 bis 7.
     
 
 ### <a name="publish-your-new-labels"></a>Veröffentlichen neuer Bezeichnungen
@@ -223,7 +223,7 @@ Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche SharePo
 
 [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
