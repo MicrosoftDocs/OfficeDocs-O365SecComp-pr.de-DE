@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Verwenden Sie das Security & Compliance Center in Office 365, um Archivpostfächer zu aktivieren, um die Nachrichten Aufbewahrungs-, eDiscovery-und halte Anforderungen Ihrer Organisation zu unterstützen.
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000258"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813966"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von archivpostfächern im Security & Compliance Center
   
@@ -31,13 +31,13 @@ Die Archivierung in Office 365 (auch als in-Place-Archivierung bezeichnet) biete
 > [!TIP]
 > Office 365 bietet eine unbegrenzte Menge an Archivspeicher mit der automatisch expandierenden Archivierungsfunktion. Wenn die automatische Erweiterung der Archivierung aktiviert ist und dann das anfängliche Speicherkontingent im Archivpostfach eines Benutzers erreicht wird, fügt Office 365 automatisch zusätzlichen Speicherplatz hinzu. Dies führt dazu, dass für die Benutzer kein Speicherplatz mehr zur Verfügung steht und Sie nach der anfänglichen Aktivierung des Archivpostfachs und der automatischen Erweiterung der Archivierung für Ihre Organisation nichts verwalten müssen. Weitere Informationen finden Sie unter [Übersicht zur unbeschränkten Archivierung in Office 365](unlimited-archiving.md). 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Sie müssen der Rolle e-Mail-Empfänger in Exchange Online zugewiesen werden, um Archivpostfächer zu aktivieren oder zu deaktivieren. Diese Rolle wird standardmäßig den Rollengruppen "Empfängerverwaltung" und "Organisationsverwaltung" auf der Seite " **Berechtigungen** " im Exchange Admin Center zugewiesen. Wenn die Seite **Archiv** im Security _AMP_ Compliance Center nicht angezeigt wird, bitten Sie Ihren Administrator, Ihnen die erforderlichen Berechtigungen zuzuweisen. 
   
 ## <a name="enable-an-archive-mailbox"></a>Aktivieren eines Archivpostfachs
   
-1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
@@ -68,7 +68,7 @@ Beachten Sie, dass die standardmäßigen archivrichtlinien, die den Postfächern
   
 So deaktivieren Sie ein Archivpostfach
   
-1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
@@ -141,6 +141,6 @@ Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer i
     
   - [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Standardmäßige AufbewahrungsRichtlinie in Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Standardmäßige AufbewahrungsRichtlinie in Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

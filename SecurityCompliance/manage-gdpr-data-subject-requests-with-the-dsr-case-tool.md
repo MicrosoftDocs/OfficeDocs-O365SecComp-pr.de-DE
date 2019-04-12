@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Der DSGVO gibt EU-Bürgern (als betroffene Personen bezeichnet) spezifische Rechte für Ihre persönlichen Daten; zu diesen Rechten gehört das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen in einem elektronischen Format. Eine formelle Anforderung durch eine betroffene Person, eine Aktion zu Ihren personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000108"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814026"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Security & Compliance Center
 
@@ -56,7 +56,7 @@ Mit dem DSR Case Tool können Sie Folgendes tun:
     
 Hier ist der allgemeine Prozess für die Verwendung des DSR-Fall Tools zur Verwaltung von DSR-Untersuchungen:
   
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Schritt 2: Erstellen eines DSR-Falls und Hinzufügen von Mitgliedern](#step-2-create-a-dsr-case-and-add-members)
 
@@ -84,7 +84,7 @@ Schrittweise Anleitungen finden Sie unter [Zuweisen von eDiscovery-Berechtigunge
 
 Der nächste Schritt besteht darin, einen DSR-Fall zu erstellen. Wenn Sie einen Fall erstellen, können Sie die integrierte Suche starten, oder Sie können den Fall erstellen, ohne die Suche zu starten. Im folgenden Verfahren werden Sie aufgefordert, den Fall zu erstellen, ohne die Suche zu starten, und dann zu zeigen, wie Sie der Groß-/Kleinschreibung Mitglieder hinzufügen.
   
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto an. 
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich bei Office 365 mit Ihrem Geschäfts-oder Schulkonto an. 
     
 2. Klicken Sie im Security & Compliance Center auf **Datenschutz** \> **Antragsteller Anforderungen**, und klicken ![Sie dann](media/ITPro-EAC-AddIcon.gif) auf Symbol hinzufügen **neuer DSR-Fall**.
     
@@ -297,7 +297,7 @@ Sie können eine separate Inhaltssuche erstellen (und Sie einem DSR-Fall zuordne
   
 Wenn Sie Daten aus myAnalytics und dem Office Server-Roaming-Dienst exportieren, werden die Daten in einem separaten Ordner für jede Anwendung gespeichert, die sich im Ordner **ApplicationDataRoot** befindet, der sich unter einem Ordner befindet, der mit der e-Mail-Adresse des Datensubjekts benannt ist. Diese Daten werden als JSON-Dateien exportiert, bei denen es sich um lesbare Textdateien handelt, die den XML-oder TXT-Dateien ähneln, die an e-Mail-Nachrichten angefügt sind. Derzeit werden diese Ordner mit einem Globally Unique Identifier (GUID) benannt, der myAnalytics und dem Office-Roamingdienst zugewiesen ist, die in der folgenden Tabelle aufgeführt sind. In zukünftigen Versionen des DSR Case-Tools wird die GUID durch den Namen der tatsächlichen Anwendung ersetzt. 
   
-|**Anwendung**|**GUID/Ordnername**|
+|**Application**|**GUID/Ordnername**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
 |Office-Roamingdienst  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |

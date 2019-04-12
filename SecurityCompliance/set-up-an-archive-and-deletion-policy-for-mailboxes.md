@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935270"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814016"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 
@@ -44,7 +44,7 @@ Mit den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsric
     
 Sie können einige oder alle Schritte in diesem Artikel ausführen, um eine Archiv-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess für einige Postfächer zu testen, bevor Sie ihn für alle Postfächer in Ihrer Organisation implementieren.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365-Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
@@ -64,7 +64,7 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. Wechseln Sie im &amp; Security Compliance Center zu **Data Governance** \> **Archive**.
+3. Wechseln Sie im Security & Compliance Center zu **Data Governance** \> **Archive**.
     
     Eine Liste der Postfächer in Ihrer Organisation wird angezeigt und ob das entsprechende Archivpostfach aktiviert oder deaktiviert ist. 
     
@@ -85,7 +85,7 @@ Der erste Schritt besteht darin, das Archivpostfach für jeden Benutzer in Ihrer
     
     ![Die Liste der Postfächer, für die das Archivpostfach aktiviert ist](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Lassen Sie das &amp; Security Compliance Center geöffnet. Sie werden es im nächsten Schritt verwenden.
+8. Lassen Sie das Security & Compliance Center geöffnet. Sie werden es im nächsten Schritt verwenden.
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien
 
@@ -99,11 +99,11 @@ In diesem Schritt erstellen Sie die drei zuvor beschriebenen benutzerdefinierten
     
 Zum Erstellen neuer Aufbewahrungstags verwenden Sie die Exchange-Verwaltungskonsole in Ihrer Exchange Online-Organisation.
   
-1. Klicken Sie im &amp; Security Compliance Center in der oberen linken Ecke auf das App-Startfeld, und klicken Sie dann auf die Kachel **Admin** . 
+1. Klicken Sie im Security & Compliance Center auf das App-Startfeld in der oberen linken Ecke, und klicken Sie dann auf die Kachel **Admin** . 
     
-2. Klicken Sie im linken Navigationsbereich des Office 365 Admin Center auf **Admin**Center, und klicken Sie dann auf **Exchange**.
+2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Admin Center auf **Admin**Center, und klicken Sie dann auf **Exchange**.
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot zeigt das Microsoft 365 Admin Center, wobei die Option admin Centers erweitert und Exchange ausgewählt ist.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Navigieren Sie in der Exchange- **Verwaltungs** \> Konsole zu **Aufbewahrungstags** für die Compliance-Verwaltung.
     
@@ -307,7 +307,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
     
 - Die folgende Tabelle enthält weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die mit den Schritten in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Type**|
+    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Typ**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Jahre in Archiv verschieben  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |

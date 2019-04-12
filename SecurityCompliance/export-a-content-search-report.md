@@ -1,5 +1,5 @@
 ---
-title: Exportieren eines Inhaltssuchberichts
+title: Exportieren eines Berichts für die Inhaltssuche
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,29 +18,27 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Office 365 Security &amp; Compliance Center zu exportieren, können Sie einfach einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert würde.
-ms.openlocfilehash: d98f70d4f38f524de8751aecb197d0f85ee7f088
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 zu exportieren, können Sie einfach einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert würde.
+ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295978"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813926"
 ---
-# <a name="export-a-content-search-report"></a>Exportieren eines Inhaltssuchberichts
+# <a name="export-a-content-search-report"></a>Exportieren eines Berichts für die Inhaltssuche
 
-Anstatt den vollständigen Satz von Suchergebnissen aus einer Inhaltssuche im Office 365 Security &amp; Compliance Center (und aus einer Inhaltssuche, die mit einem eDiscovery-Fall verknüpft ist) zu exportieren, können Sie die gleichen Berichte exportieren, die generiert werden, wenn Sie Exportieren von Suchergebnissen
+Anstatt den vollständigen Satz von Suchergebnissen aus einer Inhaltssuche im Security & Compliance Center (und aus einer Inhaltssuche, die mit einem eDiscovery-Fall verknüpft ist) zu exportieren, können Sie die gleichen Berichte exportieren, die beim Exportieren der Suche generiert werden. Ergebnisse.
   
 Wenn Sie einen Bericht exportieren, wird er in einen Ordner heruntergeladen, der den gleichen Namen wie die Inhaltssuche hat, aber mit *_ReportsOnly* angefügt wird. Wenn die Inhaltssuche beispielsweise " *ContosoCase0815* " heißt, wird der Bericht in einen Ordner mit dem Namen *ContosoCase0815_ReportsOnly* heruntergeladen. Eine Liste der Dokumente, die im Bericht enthalten sind, finden Sie unter [What es included in the Report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-- Um einen Bericht über Inhaltssuche zu exportieren, muss Ihnen die Rolle Compliance Search Management im Office 365 Security &amp; Compliance Center zugewiesen werden. Diese Rolle wird den integrierten eDiscovery-Manager-und Organisations Verwaltungsrollengruppen zugewiesen. Sie wird der Rollengruppe Organisationsverwaltung nicht standardmäßig zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 &amp; Security Compliance Center](assign-ediscovery-permissions.md).
+- Um einen Bericht über Inhaltssuche zu exportieren, muss Ihnen die Rolle Compliance Search Management im Security & Compliance Center zugewiesen werden. Diese Rolle wird den integrierten eDiscovery-Manager-und Organisations Verwaltungsrollengruppen zugewiesen. Sie wird der Rollengruppe Organisationsverwaltung nicht standardmäßig zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
 - Beim Exportieren eines Berichts werden die Daten vorübergehend in einem eindeutigen Windows Azure-Speicherbereich in der Microsoft-Cloud gespeichert, bevor Sie auf Ihren lokalen Computer heruntergeladen werden. stellen sie sicher, dass ihre organisation eine verbindung mit dem endpunkt in Azure herstellen kann, nämlich ** \*. blob.core.windows.net** (der platzhalter stellt einen eindeutigen bezeichner für den export dar). Die Suchergebnis Daten werden zwei Wochen nach der Erstellung aus dem Azure-Speicherbereich gelöscht. 
     
 - Der Computer, den Sie zum Exportieren der Suchergebnisse verwenden, muss die folgenden Voraussetzungen erfüllen:
-
-
     
   - 32- oder 64-Bit-Versionen von Windows 7 und höher
     
@@ -58,7 +56,7 @@ Wenn Sie einen Bericht exportieren, wird er in einen Ordner heruntergeladen, der
 
 - Wenn die geschätzte Gesamtgröße der von einer Inhaltssuche zurückgegebenen Ergebnisse 20&nbsp;TB überschreitet, tritt beim Exportieren des Berichts ein Fehler auf. Um den Bericht erfolgreich zu exportieren, versuchen Sie, den Bereich einzugrenzen und die Suche erneut auszuführen, damit die geschätzte Größe der Ergebnisse weniger&nbsp;als 20 TB beträgt.
 
-- Das Exportieren von Inhalts Suchberichten gilt für die maximale Anzahl von Exporten, die gleichzeitig ausgeführt werden, und die maximale Anzahl von Exporten, die ein einzelner Benutzer ausführen kann. Weitere Informationen zu Export Grenzwerten finden Sie unter [Exportieren von Inhalts Suchergebnissen aus dem Office 365 Security _AMP_ Compliance Center](export-search-results.md#export-limits).
+- Das Exportieren von Inhalts Suchberichten gilt für die maximale Anzahl von Exporten, die gleichzeitig ausgeführt werden, und die maximale Anzahl von Exporten, die ein einzelner Benutzer ausführen kann. Weitere Informationen zu Export Grenzwerten finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generieren und Herunterladen eines Inhalts Suchberichts
 
@@ -72,14 +70,14 @@ Der erste Schritt besteht darin, den Bericht für das Herunterladen auf Ihren Co
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** \> **Inhaltssuche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Suche** \> **Inhaltssuche**.
     
 4. Wählen Sie auf der Seite **Inhaltssuche** eine Suche aus. 
     
 5. Klicken Sie im Detailbereich unter **Bericht auf einem Computer exportieren**auf **Bericht generieren**.
     
     > [!NOTE]
-    > Wenn die Suchergebnisse älter als 7 Tage sind, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Wenn dies der Fall ist, brechen Sie den Export ab, klicken Sie im Detailbereich für die ausgewählte Suche auf **Suchergebnisse aktualisieren** , und starten Sie dann den Berichtsexport erneut, nachdem die Ergebnisse aktualisiert wurden. 
+    > Wenn die Suchergebnisse älter als 7 Tage sind, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Wenn dies der Fall ist, brechen Sie den Export ab, klicken Sie im Detailbereich für die ausgewählte Suche auf **Suchergebnisse aktualisieren** , und starten Sie dann den Berichtsexport erneut, nachdem die Ergebnisse aktualisiert wurden. 
   
 6. Wählen Sie auf der Seite **Bericht exportieren** unter **diese Elemente aus der Suche einbeziehen**eine der folgenden Optionen aus:
     
@@ -98,7 +96,7 @@ Der erste Schritt besteht darin, den Bericht für das Herunterladen auf Ihren Co
     Der Suchergebnisbericht wird zum Herunterladen vorbereitet, was bedeutet, dass die Berichtsdokumente in den Azure-Speicherbereich in der Microsoft-Cloud hochgeladen werden. Wenn der Bericht zum Herunterladen bereit ist, wird der Link zum **herunterladen** des Berichts unter **Bericht auf einem Computer exportieren** im Detailbereich angezeigt. 
     
 > [!NOTE]
-> Sie können einen Bericht auch für eine Inhaltssuche exportieren, die mit einem eDiscovery-Fall verknüpft ist. Gehen Sie dazu zur **Such &amp; Untersuchung** ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) \> **eDiscovery**, wählen Sie einen Fall aus, und klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![. Wählen Sie auf der Seite Such **Vorgänge** eine Suche aus, und **** ![klicken Sie dann auf Export](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> Suchergebnis Symbol exportieren, um **einen Bericht zu exportieren**. 
+> Sie können einen Bericht auch für eine Inhaltssuche exportieren, die mit einem eDiscovery-Fall verknüpft ist. Wechseln Sie dazu zu **eDiscovery** \> **eDiscovery**, wählen Sie einen Fall aus, und klicken Sie auf Bearbeitungs](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Symbol **Bearbeiten** ![. Wählen Sie auf der Seite Such **Vorgänge** eine Suche aus, und **** ![klicken Sie dann auf Export](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> Suchergebnis Symbol exportieren, um **einen Bericht zu exportieren**. 
   
 ## <a name="step-2-download-the-report"></a>Schritt 2: Herunterladen des Berichts
 
@@ -118,7 +116,7 @@ Im nächsten Schritt wird der Bericht aus dem Azure-Speicherbereich auf Ihren lo
     
     - Der Status des Berichtsexport Vorgangs. Sie können den Download des Berichts auch dann starten, wenn die Vorbereitung des Berichts nicht abgeschlossen ist.
     
-2. Klicken Sie unter **Schlüssel exportieren**auf **in Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 5, um den Bericht herunterzuladen.
+2. Klicken Sie unter **Schlüssel exportieren** auf **In Zwischenablage kopieren**. Sie verwenden diesen Schlüssel in Schritt 5, um den Bericht herunterzuladen.
     
     > [!IMPORTANT]
     > Da jeder das eDiscovery-Export Tool installieren und starten und dann diesen Schlüssel zum Herunterladen des Suchberichts verwenden kann, müssen Sie Vorkehrungen treffen, um diesen Schlüssel genau so zu schützen, als würden Sie Kennwörter oder andere sicherheitsrelevante Informationen schützen. 
@@ -136,7 +134,7 @@ Im nächsten Schritt wird der Bericht aus dem Azure-Speicherbereich auf Ihren lo
     Das **eDiscovery-Export Tool** zeigt Statusinformationen zum Exportvorgang an, einschließlich einer Schätzung der Anzahl (und der Größe) der verbleibenden zu ladenden Elemente. Nach Abschluss des Exportvorgangs können Sie auf die Dateien am Speicherort zugreifen, an dem Sie heruntergeladen wurden. 
     
 > [!NOTE]
-> Sie können den Bericht für eine Inhaltssuche herunterladen, die einem eDiscovery-Fall zugeordnet ist. Gehen Sie dazu zur **Such &amp; Untersuchung** ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) \> **eDiscovery**, wählen Sie einen Fall aus, und klicken Sie auf Bearbeitungssymbol **Bearbeiten** ![. Wählen Sie **** auf der Seite Exports einen Berichtsexport aus, und klicken Sie dann im Detailbereich auf **Bericht herunterladen** . 
+> Sie können den Bericht für eine Inhaltssuche herunterladen, die einem eDiscovery-Fall zugeordnet ist. Wechseln Sie dazu zu **eDiscovery** \> **eDiscovery**, wählen Sie einen Fall aus, und klicken Sie auf Bearbeitungs](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)Symbol **Bearbeiten** ![. Wählen Sie **** auf der Seite Exports einen Berichtsexport aus, und klicken Sie dann im Detailbereich auf **Bericht herunterladen** . 
   
 ## <a name="whats-included-in-the-report"></a>Inhalt des Berichts
 

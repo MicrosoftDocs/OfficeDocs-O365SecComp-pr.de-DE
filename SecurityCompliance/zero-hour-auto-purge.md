@@ -3,7 +3,7 @@ title: Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoft
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (ZAP) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie ZAP Dies bewirkt, hängt vom Typ der erkannten bösartigen Inhalte ab.
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479631"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818602"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
@@ -48,7 +48,7 @@ Office 365 aktualisiert Anti-Spam-Modul und Schadsoftware-Signaturen in Echtzeit
 
 - Bei neu erkannter Schadsoftware entfernt ZAP Anhänge von e-Mail-Nachrichten, unabhängig davon, ob die e-Mail gelesen wurde.
   
-Die ZAP-Aktion ist für den Postfachbenutzer nahtlos. Sie werden nicht benachrichtigt, wenn eine e-Mail-Nachricht verschoben wird.
+Die ZAP-Aktion ist für den Postfachbenutzer nahtlos. Sie werden nicht benachrichtigt, wenn eine e-Mail-Nachricht verschoben wird. Die Nachricht darf nicht älter als 2 Tage sein.
   
 Zulassungslisten, [Nachrichtenfluss Regeln](https://go.microsoft.com/fwlink/p/?LinkId=722755)und Endbenutzer Regeln oder zusätzliche Filter haben Vorrang vor zap.
   
@@ -89,7 +89,10 @@ ZAP verschiebt Nachrichten zu diesem Zeitpunkt nicht aus dem Posteingang in die 
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>Was geschieht, wenn ich über eine benutzerdefinierte e-Mail-Fluss Regel (Block/Allow Rule) verfüge?
   
 Von Administratoren erstellte Regeln (Nachrichtenfluss Regeln) oder Sperr-und Zulassungsregeln haben Vorrang. Solche Nachrichten werden von den Feature-Kriterien ausgeschlossen, sodass der Nachrichtenfluss der Regelaktion (Block/Allow Rule) folgt.
-  
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>Was geschieht, wenn eine Nachricht in einen anderen Ordner verschoben wird (z. b. postEingangsregel)?
+ZAP funktioniert in diesem Fall weiterhin, es sei denn, die Nachricht wurde gelöscht oder befindet sich in Junk-e-Mail.
+
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)

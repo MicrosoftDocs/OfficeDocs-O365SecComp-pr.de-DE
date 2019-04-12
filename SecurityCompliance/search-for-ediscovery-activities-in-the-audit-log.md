@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Erfahren Sie, wie Sie im Office 365-Überwachungsprotokoll nach Ereignissen suchen, die protokolliert werden, wenn Kompatibilitäts Administratoren Inhaltssuche und eDiscovery Case-Aufgaben im Security & Compliance Center ausführen.
-ms.openlocfilehash: 4d16fd162cb8d00d940df90dcab3c5856e9e59ee
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000708"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814096"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll
 
@@ -42,7 +42,7 @@ Weitere Informationen zum Durchsuchen des Office 365-Überwachungsprotokolls, zu
 
 Derzeit müssen Sie einige spezifische Schritte ausführen, um eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll anzuzeigen. Die gehen so:
   
-1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     

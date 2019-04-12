@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Verwenden Sie den Massen Such Editor im Security and Compliance Center in Office 365 oder Microsoft 365, um die Abfrage-und inhaltsspeicherorte für eine oder mehrere Inhalts suchVorgänge schnell zu ändern.
-ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001098"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813936"
 ---
 # <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhalts suchen
 
@@ -26,7 +26,7 @@ Weitere Informationen zur Verwendung des Suchstatistik Tools finden Sie unter [V
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Verwenden des Massen Such-Editors zum Ändern von Abfragen
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com)zu, und klicken Sie dann auf **Inhaltssuche** **Durchsuchen** \> .
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com)zu, und klicken Sie dann auf **Inhaltssuche** **Durchsuchen** \> .
     
 2. Wählen Sie in der Liste der Suchvorgänge eine oder mehrere Suchvorgänge aus, **** ![und klicken Sie dann auf Massen Such](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)Editor-Schaltfläche für Massensuche.
     

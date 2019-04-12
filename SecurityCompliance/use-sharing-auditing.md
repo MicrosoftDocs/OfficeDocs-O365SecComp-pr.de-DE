@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive for Business. Administratoren können jetzt die Freigabe Überwachung im Office 365-Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. '
-ms.openlocfilehash: 919592bff43379b552b83258c7b22b7eddb14e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219885"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813946"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 
@@ -69,17 +69,17 @@ Wenn der Zielbenutzer die Freigabeeinladung akzeptiert, die Ihnen gesendet wird 
   
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Identifizieren von Ressourcen, die für externe Benutzer freigegeben sind
 
-Eine allgemeine Anforderung für Administratoren ist das Erstellen einer Liste aller Ressourcen, die für Benutzer außerhalb der Organisation freigegeben wurden. Mithilfe der Freigabe Überwachung in Office 365 können Administratoren diese Liste generieren. So wird es gemacht.
+Eine allgemeine Anforderung für Administratoren ist das Erstellen einer Liste aller Ressourcen, die für Benutzer außerhalb der Organisation freigegeben wurden. Mithilfe der Freigabe Überwachung in Office 365 können Administratoren diese Liste generieren. Die gehen so:
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Schritt 1: Suchen nach Freigabe Ereignissen und Exportieren der Ergebnisse in eine CSV-Datei
 
-Der erste Schritt besteht darin, im Office 365-Überwachungsprotokoll nach Freigabe Ereignissen zu suchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365 &amp; Security Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Der erste Schritt besteht darin, im Office 365-Überwachungsprotokoll nach Freigabe Ereignissen zu suchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Such &amp; Prüfung**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
+3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Such**  > **Überwachungsprotokoll Suche**.
     
     Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
     
@@ -105,7 +105,7 @@ Der nächste Schritt besteht darin, die CSV-Datei **** für die freigabeset-und 
   
 1. Öffnen Sie in Excel 2016 eine leere Arbeitsmappe.
     
-2. Klicken Sie auf die Registerkarte **Daten**. 
+2. Klicken Sie auf die Registerkarte **Daten** . 
     
 3. Klicken Sie auf **neue Abfrage** \> **aus Datei** \> **aus CSV**.
     

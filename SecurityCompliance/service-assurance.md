@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Laden Sie Drittanbieter-Audits herunter, erfahren Sie, wie Microsoft Kundendaten sicher hält und wissen, wie Sie ISO, HIPAA, FINRA und FedRAMP bei der Verwendung von Office 365 einhalten können.
-ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999448"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813956"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Dienstsicherheit im Security & Compliance Center
 
@@ -53,7 +53,7 @@ Sie können auch herausfinden, wie Office 365 Kunden bei der Einhaltung von Stan
   
 Auf die Dienstsicherheit kann über das Security & Compliance Center zugegriffen werden. Hier erfahren Sie, wie Sie dorthin gelangen.
   
-1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
     

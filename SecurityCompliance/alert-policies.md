@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Erstellen Sie im Security and Compliance Center in Office 365 und Microsoft 365 Warnungsrichtlinien, um potenzielle Bedrohungen, Datenverlust und Berechtigungen zu überwachen. Dann können Sie die Warnungen anzeigen und verwalten, die generiert werden, wenn Benutzeraktivitäten ausführen, die den Bedingungen einer Warnungs Richtlinie entsprechen.
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000718"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814126"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security and Compliance Center
 
@@ -47,7 +47,7 @@ Hier finden Sie eine kurze Übersicht über die Funktionsweise von Warnungsricht
 
 Eine Warnungs Richtlinie besteht aus einer Reihe von Regeln und Bedingungen, die die Benutzer-oder Administrator Aktivität definieren, die eine Warnung generiert, eine Liste der Benutzer, die die Warnung auslösen, wenn Sie die Aktivität ausführen, und der Schwellenwert, der definiert, wie oft die Aktivität ausgeführt werden muss, bevor ein n Warnung wird ausgelöst. Außerdem kategorisieren Sie die Richtlinie und weisen ihr einen Schweregrad zu. Diese beiden Einstellungen unterstützen Sie bei der Verwaltung von Warnungsrichtlinien (und den Warnungen, die ausgelöst werden, wenn die Richtlinienbedingungen abgeglichen werden), da Sie diese Einstellungen beim Verwalten von Richtlinien und Anzeigen von Warnungen im Security and Compliance Center filtern können. Sie können beispielsweise Warnungen anzeigen, die den Bedingungen derselben Kategorie entsprechen, oder Warnungen mit demselben Schweregrad anzeigen.
   
-Zum Anzeigen und Erstellen von Warnungsrichtlinien wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie dann auf **Warnungsrichtlinien**für **Warnungen** \> . 
+Zum Anzeigen und Erstellen von Warnungsrichtlinien wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und klicken Sie dann auf **Warnungsrichtlinien**für **Warnungen** \> . 
   
 ![Klicken Sie im Security and Compliance Center auf Warnungen, und klicken Sie dann auf Warnungsrichtlinien, um Warnungsrichtlinien anzuzeigen und zu erstellen.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -100,7 +100,7 @@ In der folgenden Tabelle werden die verfügbaren Standard Warnungsrichtlinien un
 
 Die Tabelle gibt außerdem an, welche Office 365 Enterprise-und Office 365 US Government-Pläne für jeden erforderlich sind. Beachten Sie, dass einige standardmäßige Warnungsrichtlinien verfügbar sind, wenn Ihre Organisation zusätzlich zu einem E1/G1-oder E3/G3-Abonnement über das entsprechende Add-on-Abonnement verfügt. 
   
-|**Standard Warnungs Richtlinie**|**Beschreibung**|**Category**|**Office 365 Enterprise-Abonnement**|
+|**Standard Warnungs Richtlinie**|**Beschreibung**|**Kategorie**|**Office 365 Enterprise-Abonnement**|
 |:-----|:-----|:-----|:-----|
 |**Es wurde ein potenziell böswilliger URL-Klick erkannt** <br/> |Generiert eine Warnung, wenn ein Benutzer, der von [Office 365 ATP-sicheren Links](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) in Ihrer Organisation geschützt ist, auf einen böswilligen Link klickt. Dieses Ereignis wird ausgelöst, wenn die URL-Urteils Änderungen von Office 365 ATP identifiziert werden oder wenn Benutzer die Office 365 ATP Safe Links-Seiten außer Kraft setzen (basierend auf der Office 365 ATP-Richtlinie für sichere Links in Ihrer Organisation). Diese Warnungs Richtlinie weist eine Einstellung mit **hohem** Schweregrad auf. Für Office 365 ATP P2, E5, G5-Kunden löst diese Warnung automatisch [office 365-automatisierte Untersuchungen und-Antworten](https://go.microsoft.com/fwlink/?linkid=2084737)aus.  Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Einrichten von Office 365 ATP-Richtlinien für sichere Links](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies).  <br/> |Bedrohungsverwaltung <br/> |E5/G5 oder Office 365 ATP P2-Add-on-Abonnement  <br/> |
 |**Erstellung der Weiterleitungs-/Umleitungsregel** <br/> |Generiert eine Warnung, wenn in Ihrer Organisation eine Posteingangsregel für Ihr Postfach erstellt wird, die Nachrichten an ein anderes e-Mail-Konto weiterleitet oder umleitet. Diese Richtlinie verfolgt nur Posteingangsregeln, die mit Outlook im Web (früher als Outlook Web App bezeichnet) oder mit Exchange Online PowerShell erstellt werden. Diese Richtlinie hat eine **niedrige** Dringlichkeits Einstellung. Weitere Informationen mithilfe von Posteingangsregeln zum Weiterleiten und Umleiten von e-Mails in Outlook im Web finden Sie unter [Verwenden von Regeln in Outlook im Web zum automatischen Weiterleiten von Nachrichten an ein anderes Konto](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).  <br/> |Bedrohungsverwaltung <br/> |E1/G1, E3/G3 oder E5/G5  <br/> |
@@ -126,7 +126,7 @@ Beachten Sie, dass die ungewöhnliche Aktivität, die von einigen der integriert
 
 Wenn eine Aktivität, die von Benutzern in Ihrer Organisation ausgeführt wird, mit den Einstellungen einer Warnungs Richtlinie übereinstimmt, wird eine Warnung generiert und auf der Seite **Warnungen anzeigen** im Security and Compliance Center angezeigt, je nach den Einstellungen einer Warnungs Richtlinie, einer e-Mail die Benachrichtigung wird auch an eine Liste der angegebenen Benutzer gesendet, wenn eine Warnung ausgelöst wird. Für jede Warnung werden im Dashboard auf der Seite **Warnungen anzeigen** der Name der entsprechenden Warnungs Richtlinie, der Schweregrad und die Kategorie für die Warnung (in der Warnungs Richtlinie definiert) und die Häufigkeit, mit der eine Aktivität aufgetreten ist, angezeigt, die dazu führte, dass die Warnung generiert Dieser Wert basiert auf der Einstellung der Schwellenwerte für die Warnungs Richtlinie. Im Dashboard wird auch der Status für jede Warnung angezeigt. Weitere Informationen zur Verwendung der Status-Eigenschaft zum Verwalten von Warnungen finden Sie im Abschnitt [Managing Alerts](#managing-alerts) . 
   
-Zum Anzeigen von Warnungen wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie dann auf **Benachrichtigungen** \> **anzeigen**. 
+Zum Anzeigen von Warnungen wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und klicken Sie dann auf **Benachrichtigungen** \> **anzeigen**. 
   
 ![Klicken Sie unter Sicherheit und Compliance auf Warnungen, und klicken Sie dann auf Warnungen anzeigen, um Warnungen anzuzeigen.](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   

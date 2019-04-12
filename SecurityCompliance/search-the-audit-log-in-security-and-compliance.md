@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479681"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814176"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -62,7 +62,7 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder
 - Benutzer-und Administratoraktivitäten in Microsoft PowerApps
     
    
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen.
   
@@ -147,7 +147,7 @@ Hier finden Sie den Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
   
 ### <a name="step-1-run-an-audit-log-search"></a>Schritt 1: Ausführen einer Überwachungsprotokoll Suche
 
-1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung) für den Zugriff auf das Security & Compliance Center, da dadurch die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, nicht verwendet werden. Drücken Sie STRG + UMSCHALT + P, um eine inPrivate-Browsing-Sitzung in Internet Explorer oder Microsoft Edge zu öffnen. Drücken Sie STRG + UMSCHALT + N, um eine private Browsersitzung in Google Chrome (als inkognito-Fenster bezeichnet) zu öffnen. 
@@ -454,7 +454,7 @@ In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfach
 |:-----|:-----|:-----|
 |Stellvertretungs-Postfachberechtigungen HinzugeFügt  <br/> |Add-MailboxPermission  <br/> |Ein Administrator hat dem Postfach einer anderen Person die Berechtigung FullAccess-Postfach für einen Benutzer (als Stellvertretung bezeichnet) zugewiesen. Die FullAccess-Berechtigung ermöglicht es der Stellvertretung, das Postfach der anderen Person zu öffnen und den Inhalt des Postfachs zu lesen und zu verwalten.  <br/> |
 |Klassifizierte Nachricht als Datensatz  <br/> |ApplyRecordLabel<br/> |Eine Nachricht wurde als Datensatz klassifiziert. Dies tritt auf, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
-|Nachrichten in einen anderen Ordner kopiert  <br/> |Copy  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
+|Nachrichten in einen anderen Ordner kopiert  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
 |Erstelltes Postfachelement  <br/> |Erstellen  <br/> |Ein Element wird im Ordner Kalender, Kontakte, Notizen oder Aufgaben im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
 |Neue Posteingangsregel in Outlook Web App erstellt  <br/> |NewInboxRule<br/> |<br/> |
 |Gelöschte Nachrichten aus Ordner "Gelöschte Elemente"  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Diese Elemente werden in den Ordner "Wiederherstellbare Elemente" verschoben. Nachrichten werden auch in den Ordner "Wiederherstellbare Elemente" verschoben, wenn ein Benutzer Sie auswählt und **UMSCHALT + ENTF**drückt.  <br/> |
