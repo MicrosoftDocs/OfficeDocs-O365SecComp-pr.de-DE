@@ -310,11 +310,12 @@
 #### [Hinzufügen von Suchergebnissen zu einem Arbeitssatz](compliance20/add-data-to-working-set.md)
 
 ### [Überprüfen von Falldaten](compliance20/reviewing-data-in-working-set.md)
+#### [Anzeigen von Dokumenten in einem Arbeitssatz](compliance20/view-documents-in-working-set.md)
+#### [Abfragen der Daten in einem Arbeitssatz](compliance20/working-set-search.md)
 #### [Verwalten von Arbeitssätzen](compliance20/managing-working-sets.md)
+#### [Hinzufügen von Daten zu einem anderen Arbeitssatz](compliance20/add-data-to-working-set-from-another-working-set.md)
 #### [Verwalten von Ladesätzen](compliance20/manage-load-sets.md)
 #### [Laden von Nicht-Office 365-Daten in einen Arbeitssatz](compliance20/load-non-office365-data.md)
-#### [Abfragen der Daten in einem Arbeitssatz](compliance20/working-set-search.md)
-#### [Anzeigen von Dokumenten in einem Arbeitssatz](compliance20/view-documents-in-working-set.md)
 #### [Markieren von Dokumenten in einem Arbeitssatz](compliance20/tagging-documents.md)
 
 ### [Analysieren von Falldaten](compliance20/analyzing-data-in-working-set.md)
