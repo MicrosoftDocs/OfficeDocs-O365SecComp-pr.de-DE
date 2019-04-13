@@ -1,5 +1,5 @@
 ---
-title: Office 365-Versionsvergleich für Nachrichtenverschlüsselung
+title: Versionsvergleich für Office 365 Message Encryption (OM)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,17 +9,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Erläutert die Unterschiede in den Features, die mit verschiedenen Versionen der Office 365-Nachrichtenverschlüsselung geliefert werden, sowie der Zusammenarbeit der beiden.
-ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Erläutert die Unterschiede zwischen den Features, die mit verschiedenen Versionen der Office 365-Nachrichtenverschlüsselung geliefert werden und wie die beiden weiterhin zusammenarbeiten.
+ms.openlocfilehash: bb13208e2b630c8a6217b78b48a4cd3bb4b0de79
+ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341436"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31836839"
 ---
 # <a name="compare-versions-of-ome"></a>Vergleichen von OME-Versionen
 
-In diesem Artikel wird die ältere Office 365-Nachrichtenverschlüsselung mit den neuen OM-Funktionen verglichen. Die neuen Funktionen sind eine Fusion und eine neuere Version von OM und Information Rights Management (IRM). Außerdem wird erläutert, wie die beiden in Ihrer Office 365-Organisation koexistieren können.
+In diesem Artikel wird die ältere Office 365-Nachrichtenverschlüsselung (OM) mit den neuen OM-Funktionen verglichen. Die neuen Funktionen sind eine Fusion und neuere Version von OM und Information Rights Management (IRM). Auch die eindeutigen Merkmale der Bereitstellung in GCC High werden erläutert. Außerdem wird erläutert, wie die beiden in Ihrer Office 365-Organisation koexistieren können.
 
 ||
 |:-----|
@@ -40,11 +40,11 @@ In diesem Artikel wird die ältere Office 365-Nachrichtenverschlüsselung mit de
 |*Unterstützung für Ihren eigenen Schlüssel (BYOK)*|Keine                |Keine               |BYOK unterstützt          |
 ||
 
-## <a name="advantages-of-using-the-new-ome-capabilities-over-legacy-ome"></a>Vorteile der Verwendung der neuen OM-Funktionen über Legacy OM
+## <a name="advantages-of-the-new-ome-capabilities-over-legacy-ome"></a>Vorteile der neuen OM-Funktionen gegenüber Legacy OM
 
 Die neuen Funktionen bieten die folgenden Vorteile:
 
-- Die Möglichkeit zur Verwendung von nur-Verschlüsselung (was eine sichere Zusammenarbeit ermöglicht), nicht weiterleiten und benutzerdefinierte Einschränkungen.
+- Möglichkeit zur Verwendung von nur-Verschlüsselungs-(was eine sichere Zusammenarbeit ermöglicht), nicht weiterleiten und benutzerdefinierte Einschränkungen.
 - Absender können e-Mails, die mit den neuen Funktionen verschlüsselt wurden, manuell über Outlook Desktop, Outlook für Mac und Outlook auf den Webclients senden.
 - Office 365-Empfänger erhalten eine Inline-Erfahrung in unterstützten Outlook-Clients. Alternativ dazu können Administratoren Office 365-Empfängern eine Branded Experience anzeigen.
 - Konten außerhalb von Office 365, wie Gmail-, Yahoo-und Microsoft-Konten, sind mit dem OM-Portal verbunden, was eine bessere Benutzerfreundlichkeit für diese Empfänger bietet. Alle anderen Identitäten verwenden einen einmaligen Code, um auf verschlüsselte Nachrichten zuzugreifen.
@@ -52,23 +52,39 @@ Die neuen Funktionen bieten die folgenden Vorteile:
 - Administratoren können e-Mails, die mit den neuen Funktionen verschlüsselt wurden, widerrufen.
 - Die neuen Funktionen bieten detaillierte Nutzungsberichte über das Security &amp; Compliance Center.
 
+## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>Eindeutige Merkmale der Office 365-Nachrichtenverschlüsselung in einer GCC-hohen Bereitstellung
+
+Wenn Sie planen, die Office 365-Nachrichtenverschlüsselung in einer GCC-Umgebung zu verwenden, gibt es einige eindeutige Merkmale der Empfänger Oberfläche.
+
+### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>VerSchlüsselte e-Mail vom GCC hoch zu GCC High Recipients
+
+Absender können e-Mails in Outlook für PC und Mac und Outlook im Web manuell verschlüsseln, oder Organisationen können eine Richtlinie einrichten, um e-Mails mithilfe von Exchange-Nachrichtenfluss Regeln zu verschlüsseln.
+
+Empfänger in GCC High erhalten dieselbe Inline Leseerfahrung in Outlook für PC und Mac und Outlook im Web wie alle anderen Office 365-Benutzer.
+
+### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>VerSchlüsselte e-Mail vom GCC hoch an nicht-GCC-hohe Empfänger
+
+Absender in GCC High können verschlüsselte e-Mails außerhalb der GCC-Obergrenze senden.
+
+Alle Empfänger außerhalb des GCC-hoch, einschließlich kommerzieller Office 365-Benutzer, Outlook.com-Benutzer und anderer Benutzer anderer e-Mail-Anbieter wie Gmail und Yahoo, erhalten eine Wrapper-e-Mail, die den Empfänger an das OM-Portal weiterleitet, in dem der Empfänger lesen und auf Nachricht antworten.
+
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Koexistenz von Legacy OM und der neuen Funktionen im selben Mandanten
 
 Sie können sowohl Legacy-OM als auch die neuen Funktionen im selben Mandanten verwenden. Als Administrator können Sie dies tun, indem Sie die Version von OM auswählen, die Sie beim Erstellen der Nachrichtenfluss Regeln verwenden möchten.
 
-- Verwenden Sie die Exchange-Nachrichtenfluss Regelaktion "die vorherige Version von OM anwenden", um die Legacy Version von OM anzugeben.
-- Um die neuen Funktionen anzugeben, verwenden Sie die Exchange-Nachrichtenfluss Regelaktion "Office 365-Nachrichtenverschlüsselung und-Rechte Schutz anwenden".
+- Verwenden Sie die Exchange-Nachrichtenfluss Regelaktion, um die **frühere**Version von OM anzugeben.
+- Um die neuen Funktionen anzugeben, verwenden Sie die Exchange-Nachrichtenfluss Regelaktion **wenden Sie Office 365 Nachrichtenverschlüsselung und Rechte Schutz**an.
 
-Benutzer können auch e-Mails, die mit den neuen Funktionen verschlüsselt wurden, manuell über Outlook Desktop, Outlook für Mac und Outlook auf den Webclients senden.
+Benutzer können e-Mails, die mit den neuen Funktionen von Outlook Desktop, Outlook für Mac und Outlook im Web verschlüsselt wurden, manuell senden.
 
-## <a name="migrating-from-legacy-ome-to-the-new-capabilities"></a>Migrieren von Legacy-OM zu den neuen Funktionen
+## <a name="migrate-from-legacy-ome-to-the-new-capabilities"></a>Migrieren von Legacy-OM zu den neuen Funktionen
 
-Auch wenn beide Versionen von OM koexistieren können, wird dringend empfohlen, dass Sie Ihre alten Nachrichtenfluss Regeln bearbeiten, die die Regelaktion "Anwenden der vorherigen Version von OM" verwenden, um die neuen Funktionen zu verwenden, indem Sie die e-Mail-Fluss Regelaktion "Office 365-Nachrichtenverschlüsselung anwenden und Rechte Schutz ". Anweisungen hierzu finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Auch wenn beide Versionen von OM koexistieren können, wird dringend empfohlen, dass Sie Ihre alten Nachrichtenfluss Regeln bearbeiten, die mit der Regelaktion **die frühere Version von OM anwenden** , um die neuen Funktionen zu verwenden. Diese Regeln aktualisieren um die e-Mail-Fluss Regelaktion zu verwenden, **wenden Sie Office 365 Nachrichtenverschlüsselung und Rechte Schutz**an. Anweisungen hierzu finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-## <a name="getting-started-with-ome"></a>Erste Schritte mit OM
+## <a name="get-started-with-ome"></a>Erste Schritte mit OM
 
-In der Regel werden die neuen OM-Funktionen automatisch für Ihre Office 365-Organisation aktiviert. Wenn Sie mit den neuen OM-Funktionen in Ihrer Organisation beginnen möchten, finden Sie weitere Informationen unter [Einrichten der neuen Office 365-Nachrichten Verschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md).
+In der Regel werden die neuen OM-Funktionen automatisch für Ihre Office 365-Organisation aktiviert. Weitere Informationen zu den neuen OM-Funktionen in Ihrer Organisation finden Sie unter [Einrichten der neuen Office 365-Nachrichten Verschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md).
 
-Die Legacy Version von OM wird für Ihre Office 365-Organisation automatisch aktiviert, wenn Sie Azure Information Protection aktiviert haben. In der Vergangenheit hat Legacy-OM auch dann funktioniert, wenn Azure Information Protection nicht aktiviert wurde. Dies ist nicht mehr der Fall.
+Die Legacy Version von OM wird für Ihre Office 365-Organisation automatisch aktiviert, wenn Sie Azure Information Protection aktiviert haben. In der Vergangenheit hat Legacy-OM auch dann funktioniert, wenn Azure Information Protection nicht aktiviert wurde. Dies ist nun nicht mehr der Fall.
 
-Um die Verwendung von Legacy OM zu starten, wenn Sie Azure Information Protection aktiviert haben, müssen Sie nur Nachrichtenfluss Regeln konfigurieren, die die Regelaktion "Anwenden der vorherigen Version von OM" verwenden. Anweisungen hierzu finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Um Legacy OM zu verwenden, wenn Sie Azure Information Protection aktiviert haben, müssen Sie einfach Nachrichtenfluss Regeln konfigurieren, die die Regelaktion verwenden **die vorherige Version von OM anwenden**. Anweisungen hierzu finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).

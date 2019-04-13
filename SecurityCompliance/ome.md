@@ -1,5 +1,5 @@
 ---
-title: Office 365-Nachrichtenverschlüsselung
+title: Office 365-Nachrichtenverschlüsselung
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die Verschlüsselung von e-Mail-Nachrichten trägt dazu bei, dass nur vorgesehene Empfänger Nachrichteninhalte anzeigen können.
-ms.openlocfilehash: eae2b6ca4756fc90837c2bfac4b5eae20001d37a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 06c43bcb3364b83114e2d7b1a2ef0273858cffb0
+ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220285"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31836809"
 ---
-# <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
+# <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
 
 Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die Office 365-Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen e-Mail-Diensten. Die Verschlüsselung von e-Mail-Nachrichten trägt dazu bei, dass nur vorgesehene Empfänger Nachrichteninhalte anzeigen können.
   
@@ -29,7 +29,7 @@ Dieser Artikel ist Teil einer größeren Artikelreihe zur Nachrichtenverschlüss
 |:-----|:-----|
 |Lesen Sie diesen Artikel...  <br/> |Wenn Sie...  <br/> |
 |[Informationen zu geschützten Nachrichten in Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |Endbenutzer, die mehr darüber erfahren möchten, wie verschlüsselte Nachrichten funktionieren und welche Optionen Ihnen zur Verfügung stehen.  <br/> |
-|[Wie öffne ich eine geschützte Nachricht?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |Ein Endbenutzer, der eine geschützte Nachricht lesen möchte, die an Sie gesendet wurde. Dieser Artikel enthält Informationen zum Lesen von Nachrichten in mehreren Versionen von Outlook und von unterschiedlichen e-Mail-Konten, einschließlich derer außerhalb von Office 365 wie Gmail und Yahoo!-Konten.  <br/> |
+|[Wie öffne ich eine geschützte Nachricht?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |Ein Endbenutzer, der eine geschützte Nachricht lesen möchte, die an Sie gesendet wurde. Dieser Artikel enthält Informationen zum Lesen von Nachrichten in mehreren Versionen von Outlook und von unterschiedlichen e-Mail-Konten, einschließlich derer außerhalb von Office 365 wie Gmail und Yahoo!. Konten.  <br/> |
 |[Senden, anzeigen und beantworten von verschlüsselten Nachrichten in Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |Endbenutzer, die eine verschlüsselte Nachricht aus Outlook senden, anzeigen oder auf diese Antworten möchten. Auch wenn Sie kein Mitglied einer Office 365-Organisation sind, erhalten Sie weiterhin eine Benachrichtigung über verschlüsselte Nachrichten, die Ihnen in Outlook gesendet werden. In diesem Artikel erhalten Sie Anweisungen zum Anzeigen und beantworten von verschlüsselten Nachrichten, die von Office 365 gesendet werden.  <br/> |
 |[Senden einer digital signierten oder verschlüsselten Nachricht](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |Endbenutzer, die verschlüsselte Nachrichten mithilfe von Outlook für Mac senden, anzeigen oder beantworten möchten. In diesem Artikel wird auch die Verwendung von anderen Verschlüsselungsmethoden als OM, wie S/MIME, behandelt.  <br/> |
 |[Anzeigen von verschlüsselten Nachrichten auf Ihrem Android-Gerät](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |Einen Endbenutzer, der eine Nachricht mit der Office 365-Nachrichtenverschlüsselung auf Ihrem Android-Gerät verschlüsselt hat, können Sie die ﻿kostenlose OM Viewer-App verwenden, um die Nachricht anzuzeigen und eine verschlüsselte Antwort zu senden. In diesem Artikel wird erläutert, wie.  <br/> |
@@ -43,28 +43,38 @@ Dieser Artikel ist Teil einer größeren Artikelreihe zur Nachrichtenverschlüss
 |[Hinzufügen der Marke Ihres Unternehmens zu Ihren verschlüsselten Nachrichten](add-your-organization-brand-to-encrypted-messages.md) <br/> |Einen Office 365-oder Exchange Online Protection-Administrator, der ihr Unternehmensbranding anwenden möchte, um das Aussehen der Office 365-e-Mail-Nachrichten in Ihrer Organisation und die Inhalte des OM-Portals anzupassen.  <br/> |
 |[E-Mail-Sperrung für Office 365-Nachrichtenverschlüsselung](revoke-ome-encrypted-mail.md) <br/> |Ein Office 365-oder Exchange Online Protection-Administrator, der eine e-Mail widerrufen möchte, die mit der Office 365-Nachrichtenverschlüsselung verschlüsselt wurde.  <br/> |
 |Office 365-Nachrichtenverschlüsselung in der [Nachrichtenrichtlinien-und Compliance-Dienstbeschreibung](https://technet.microsoft.com/en-us/library/5c43c8eb-f8f7-4b5a-a743-b1dab7dc2fc8#bkmk_O365_MessageEncryption) <br/> |Suchen Sie nach einer detaillierten Beschreibung der Office 365-Nachrichten Verschlüsselungsfunktion, einschließlich der unterstützten SKUs, die in Office 365 verfügbar ist.  <br/> |
-|[Legacyinformationen für die Office 365-Nachrichtenverschlüsselung](legacy-information-for-message-encryption.md) <br/> |Einen Office 365-oder Exchange Online Protection-Administrator, der die Office 365-Nachrichtenverschlüsselung bereits eingerichtet hat und Informationen dazu erhalten soll, wie OM vor der Freigabe der neuen Funktionen funktioniert hat. Auch wenn Sie keine neue Bereitstellung ohne die neuen Funktionen mit OM einrichten können, unterstützt Microsoft weiterhin vorhandene Bereitstellungen.  <br/> |
+|[Legacyinformationen für die Office 365-Nachrichtenverschlüsselung](legacy-information-for-message-encryption.md) <br/> |Einen Office 365-oder Exchange Online Protection-Administrator, der die Office 365-Nachrichtenverschlüsselung bereits eingerichtet hat und Informationen dazu erhalten soll, wie OM vor der Freigabe der neuen Funktionen funktioniert hat. Auch wenn Sie keine neue Bereitstellung ohne die neuen Funktionen mit OM einrichten können, unterstützt Microsoft weiterhin vorhandene Bereitstellungen. <br/> |
 ||
 
 Der Rest dieses Artikels bezieht sich auf die neuen OM-Funktionen.
   
 ## <a name="how-office-365-message-encryption-works"></a>FunktionsWeise der Office 365-Nachrichtenverschlüsselung
 
-Office 365 Nachrichtenverschlüsselung ist ein Onlinedienst, der auf der Microsoft Azure Rights Management (Azure RMS) basiert, die Teil von Azure Information Protection ist. Office 365-Administratoren können Nachrichtenfluss Regeln definieren, um die Bedingungen für die Verschlüsselung zu bestimmen. Eine Regel kann beispielsweise die Verschlüsselung aller Nachrichten erfordern, die an einen bestimmten Empfänger adressiert sind.
+Office 365 Nachrichtenverschlüsselung ist ein Onlinedienst, der auf der Microsoft Azure Rights Management (Azure RMS) basiert, die Teil von Azure Information Protection ist. Hierzu gehören Verschlüsselungs-, Identitäts-und Autorisierungsrichtlinien, um Ihre e-Mails zu schützen. Sie können Nachrichten verschlüsseln, indem Sie Vorlagen für die Rechteverwaltung, die [Option nicht weiterleiten](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)und die [Option nur](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)verschlüsseln verwenden.
+
+Mithilfe dieser Optionen können Benutzer e-Mail-Nachrichten und eine Vielzahl von Office 365-Anlagen verschlüsseln. Eine vollständige Liste der unterstützten Anlagentypen finden Sie unter ["Dateitypen, die von IRM-Richtlinien abgedeckt werden, wenn Sie an Nachrichten angefügt werden" in Einführung in IRM für e-Mail-Nachrichten](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
+
+Als Administrator können Sie auch Nachrichtenfluss Regeln definieren, um diesen Schutz anzuwenden. Sie können beispielsweise eine Regel erstellen, die die Verschlüsselung aller Nachrichten erfordert, die an einen bestimmten Empfänger adressiert sind, oder die bestimmte Wörter in der Betreffzeile enthalten, und außerdem angeben, dass Empfänger den Inhalt der Nachricht nicht kopieren oder ausdrucken können.
+
+Anders als bei der früheren Version von OM bieten die neuen Funktionen eine einheitliche Absender Erfahrung, unabhängig davon, ob Sie e-Mails innerhalb Ihrer Organisation oder an Empfänger außerhalb von Office 365 senden. Darüber hinaus müssen Empfänger, die eine geschützte e-Mail-Nachricht erhalten, die an ein Office 365-Konto in Outlook 2016 oder Outlook im Web gesendet wird, keine zusätzlichen Aktionen ausführen, um die Nachricht anzuzeigen. Es funktioniert nahtlos. Empfänger, die andere e-Mail-Clients und e-Mail-Dienstanbieter verwenden, haben ebenfalls eine verbesserte Erfahrung. Weitere Informationen finden Sie unter [erfahren Sie mehr über geschützte Nachrichten in Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) und [wie öffne ich eine geschützte Nachricht](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
+
+Eine detaillierte Liste der Unterschiede zwischen der vorherigen Version von OM und den neuen OM-Funktionen finden Sie unter [Compare Versionen of OM](ome-version-comparison.md).
+
+Wenn ein Benutzer eine e-Mail-Nachricht sendet, die einer Verschlüsselungs Nachrichtenfluss Regel entspricht, wird die Nachricht vor dem Senden verschlüsselt. Alle Office 365-Endbenutzer, die Outlook-Clients zum Lesen von e-Mails verwenden, erhalten systemeigene, erstklassige leseerlebnisse für verschlüsselte und durch Rechte geschützte e-Mails, auch wenn Sie sich nicht in derselben Organisation wie der Absender befinden. Zu den unterstützten Outlook-Clients gehört Outlook-Desktop, Outlook-Mac, Outlook Mobile unter iOS und Android und Outlook im Web (früher als Outlook Web App bezeichnet).
   
-Wenn jemand eine e-Mail-Nachricht in Exchange Online sendet, die mit einer Verschlüsselungs-e-Mail-Fluss Regel übereinstimmt, wird die Nachricht vor dem Senden verschlüsselt. Alle Office 365-Endbenutzer, die Outlook-Clients zum Lesen von e-Mails verwenden, erhalten systemeigene, erstklassige leseerlebnisse für verschlüsselte und durch Rechte geschützte e-Mails, auch wenn Sie sich nicht in derselben Organisation wie der Absender befinden. Zu den unterstützten Outlook-Clients gehört Outlook-Desktop, Outlook-Mac, Outlook Mobile unter iOS und Android und Outlook im Web (früher als Outlook Web App bezeichnet).
-  
-Empfänger von verschlüsselten Nachrichten, die verschlüsselte oder Rechte geschützte e-Mails erhalten, die an Ihre Outlook.com-, Gmail-und Yahoo-Konten gesendet werden, können sich mit Ihrem Microsoft-Konto oder Gmail-oder Yahoo-Anmeldeinformationen einfach beim OM-Portal authentifizieren.
+Empfänger von verschlüsselten Nachrichten, die verschlüsselte oder Rechte geschützte e-Mails erhalten, die an Ihre Outlook.com-, Gmail-und Yahoo-Konten gesendet werden, erhalten eine Wrapper-e-Mail, die Sie an das OM-Portal weiterleitet, wo Sie sich leicht mit einem Microsoft-Konto, Gmail oder Yahoo-Anmeldeinformationen.
   
 Endbenutzer, die verschlüsselte oder durch Rechte geschützte e-Mails auf anderen Clients als Outlook gelesen haben, verwenden auch das OM-Portal, um verschlüsselte und durch Rechte geschützte Nachrichten anzuzeigen, die Sie erhalten.
+
+Wenn der Absender der geschützten e-Mail im GCC High ist und der Empfänger sich außerhalb von GCC High befindet, einschließlich kommerzieller Office 365-Benutzer, Outlook.com-Benutzer und Benutzer anderer e-Mail-Anbieter wie Gmail, erhält der Empfänger eine Wrapper-e-Mail, die an das OM-Portal, in dem der Empfänger die Nachricht lesen und beantworten kann. Wenn der Absender und der Empfänger sich in der GCC-Umgebung befinden, erhalten Empfänger, die Outlook-Clients zum Lesen von e-Mails verwenden, systemeigene, erstklassige leseerlebnisse für verschlüsselte und durch Rechte geschützte e-Mails, auch wenn Sie sich nicht in derselben Organisation befinden. als Absender.
   
-Wir haben die Größenbeschränkungen für Nachrichten und Anlagen erhöht, die Sie mit der Office 365-Nachrichtenverschlüsselung verschlüsseln können. Weitere Informationen zu Grenzwerten finden Sie unter [Exchange Online-Grenzwerte.](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx)
+Wir haben die Größenbeschränkungen für Nachrichten und Anlagen erhöht, die Sie mit OM verschlüsseln können. Weitere Informationen zu Grenzwerten finden Sie unter [Exchange Online-Grenzwerte](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx).
   
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Definieren von Regeln für die Office 365-Nachrichtenverschlüsselung
 
 Eine Möglichkeit, die neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 zu aktivieren, ist für Exchange Online-und Exchange Online Protection-Administratoren zum Definieren von Nachrichtenfluss Regeln. Diese Regeln bestimmen, unter welchen Bedingungen e-Mail-Nachrichten verschlüsselt werden sollen. Wenn für eine Regel eine Verschlüsselungsaktion festgelegt ist, werden alle Nachrichten, die den Regelbedingungen entsprechen, verschlüsselt, bevor Sie gesendet werden.
   
-Nachrichtenfluss Regeln sind flexibel, sodass Sie Bedingungen zusammenfassen können, damit Sie bestimmte Sicherheitsanforderungen in einer einzigen Regel erfüllen. Sie können beispielsweise eine Regel erstellen, mit der alle Nachrichten mit den angegebenen Schlüsselwörtern verschlüsselt und an externe Empfänger adressiert werden. Die neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 verschlüsseln auch Antworten von Empfängern verschlüsselter e-Mails.
+Nachrichtenfluss Regeln sind flexibel, sodass Sie Bedingungen zusammenfassen können, damit Sie bestimmte Sicherheitsanforderungen in einer einzigen Regel erfüllen. Sie können beispielsweise eine Regel zum Verschlüsseln aller Nachrichten definieren, die bestimmte Schlüsselwörter enthalten und an externe Empfänger adressiert sind. Die neuen Funktionen für die Nachrichtenverschlüsselung von Office 365 verschlüsseln auch Antworten von Empfängern verschlüsselter e-Mails.
   
 Weitere Informationen zum Erstellen von Nachrichtenfluss Regeln zum Nutzen der neuen OM-Funktionen finden Sie unter [define Rules for Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md).
   
