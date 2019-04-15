@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen und Richtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.
-ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
+ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997271"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824434"
 ---
 # <a name="overview-of-file-plan-manager"></a>Übersicht über den Dateiplan-Manager
 
@@ -31,9 +31,26 @@ Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungs
 
 Es gibt die folgenden beiden Anforderungen für den Zugriff auf den Dateiplan-Manager:
 - Ein Office 365 Enterprise E5-Abonnement.
-- Der Benutzer wurde einer der folgenden Rollen des Security &amp; Compliance Centers zugewiesen: 
+- Der Benutzer wurde einer der folgenden Rollen des Security &amp; Compliance Centers zugewiesen:
     - Aufbewahrungs-Manager
     - Aufbewahrungs-Manager (schreibgeschützt)
+
+## <a name="default-retention-labels-and-label-policy"></a>Standardmäßige Aufbewahrungsbezeichnung und Bezeichnungsrichtlinie
+
+Wenn keine Aufbewahrungsbezeichnungen im Security & Compliance Center vorhanden sind, wird, wenn Sie im linken Navigationsbereich **Dateiplan** auswählen, eine Bezeichnungsrichtlinie mit dem Namen **Standardmäßige Veröffentlichungsrichtlinie für Datengovernance** erstellt. 
+
+Diese Bezeichnungsrichtlinie enthält drei Aufbewahrungsbezeichnungen:
+
+- **Operative Prozesse**
+- **Allgemeines Geschäft**
+- **Vertragliche Vereinbarung**
+
+Diese Aufbewahrungsbezeichnungen sind so konfiguriert, dass Inhalte nur aufbewahrt, aber nicht gelöscht werden. Diese Bezeichnungsrichtlinie wird in der gesamten Organisation veröffentlicht und kann deaktiviert oder entfernt werden. 
+
+Sie können feststellen, wer den Dateiplan-Manager geöffnet und den Eindruck beim ersten Ausführen gestartet hat, indem Sie das Überwachungsprotokoll für die Aktivitäten **Erstellte Aufbewahrungsrichtlinie** und **Erstellte Konfiguration für eine Aufbewahrungsrichtlinie** überprüfen.
+
+> [!NOTE]
+> Aufgrund von Kundenfeedback haben wir dieses Feature entfernt, durch das die standardmäßigen Aufbewahrungsbezeichnungen und die oben genannte Bezeichnungsrichtlinie erstellt wurden. Diese Richtlinie und diese Bezeichnungen werden nur angezeigt, wenn Sie den Dateiplan-Manager vor dem 11. April 2019 verwendet haben.
 
 ## <a name="navigating-your-file-plan"></a>Navigieren in Ihrem Dateiplan
 
@@ -44,8 +61,8 @@ Beachten Sie, dass Aufbewahrungsbezeichnungen, die außerhalb des Dateiplans ers
 Auf den Registerkarten für die **Dateiplanbezeichnungen** sind die folgenden zusätzlichen Informationen und Funktionen verfügbar:
 
 ### <a name="label-settings-columns"></a>Spalten mit Bezeichnungseinstellungen
- 
-- **Basierend auf** gibt den Typ des Auslösers an, der den Aufbewahrungszeitraum starten kann. Gültige Werte sind: 
+
+- **Basierend auf** gibt den Typ des Auslösers an, der den Aufbewahrungszeitraum starten kann. Gültige Werte sind:
     - Ereignis
     - Zeitpunkt der Erstellung
     - Zeitpunkt der letzten Änderung
@@ -58,7 +75,7 @@ Auf den Registerkarten für die **Dateiplanbezeichnungen** sind die folgenden zu
     - Beibehalten
     - Beibehalten und löschen
     - Löschen
-- **Disposition** gibt an, was mit dem Inhalt am Ende des Aufbewahrungszeitraums geschieht. Gültige Werte sind: 
+- **Disposition** gibt an, was mit dem Inhalt am Ende des Aufbewahrungszeitraums geschieht. Gültige Werte sind:
     - Null
     - Keine Aktion
     - Automatisch löschen
