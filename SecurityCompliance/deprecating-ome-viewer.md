@@ -14,23 +14,23 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: Am 15. August 2018 werden wir die Office 365 Message Encryption (OM) Viewer Mobile App aus Android und Apple Stores entfernen. Die Mobile App für den Office 365-Nachrichten Verschlüsselungs Betrachter war zum Lesen von e-Mail-Nachrichten und Anlagen erforderlich, die mit der vorherigen Version von OM auf Apple-und Android-Telefonen verschlüsselt wurden. Abgesehen vom Entfernen der OM Viewer-App führen wir keine weiteren Änderungen an der vorherigen Version von OM aus.
-ms.openlocfilehash: 0aa8ef0f2610284c1e897290c3f337804d78185b
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 82f28249e6b9911faea866f5a3574b635e45156c
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936675"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901933"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>VerAltete Office 365 Message Encryption Viewer-App
 
-Am 15. August 2018 werden wir die Office 365 Message Encryption (OM) Viewer Mobile App aus Android und Apple Stores entfernen. Die Mobile App für den Office 365-Nachrichten Verschlüsselungs Betrachter war zum Lesen von e-Mail-Nachrichten und Anlagen erforderlich, die mit der vorherigen Version von OM auf Apple-und Android-Telefonen verschlüsselt wurden. Abgesehen vom Entfernen der OM Viewer-App führen wir keine weiteren Änderungen an der vorherigen Version von OM aus.
+Am 15. August 2018 entfernten wir die Office 365 Message Encryption (OM) Viewer Mobile App aus Android und Apple Stores. Die Mobile App für den Office 365-Nachrichten Verschlüsselungs Betrachter war zum Lesen von e-Mail-Nachrichten und Anlagen erforderlich, die mit der vorherigen Version von OM auf Apple-und Android-Telefonen verschlüsselt wurden. Abgesehen vom Entfernen der OM Viewer-App führen wir keine weiteren Änderungen an der vorherigen Version von OM aus.
   
-## <a name="changes-beginning-august-2018"></a>Änderungen ab August 2018
+## <a name="changes-from-august-2018"></a>Änderungen vom August 2018
 
-Wie im September angekündigt, haben wir eine neue Version der [Office 365-Nachrichtenverschlüsselung](https://aka.ms/ome2017) veröffentlicht, damit Benutzer verschlüsselte und geschützte Nachrichten innerhalb oder außerhalb der Organisation senden können, ohne dass die Mobile App erforderlich ist. Seither wurden zusätzliche Funktionen hinzugefügt: 
+Wie im September 2017 angekündigt, haben wir eine neue Version der [Office 365-Nachrichtenverschlüsselung](https://aka.ms/ome2017) veröffentlicht, damit Benutzer verschlüsselte und geschützte Nachrichten innerhalb oder außerhalb der Organisation senden können, ohne dass die Mobile App erforderlich ist. Seither wurden zusätzliche Funktionen hinzugefügt:
   
 - [Nur verSchlüsselte Vorlage](https://aka.ms/encryptonly)
-    
+
 - [Steuerelement zum Entschlüsseln von Anlagen](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
 Mit dieser Änderung können Benutzer ab dem 1. August die Mobile App für den Office 365-Nachrichten Verschlüsselungs Betrachter nicht mehr herunterladen. Daher können e-Mail-Empfänger Nachrichten, die mit der vorherigen Version von OM verschlüsselt wurden, auf einigen Android-und Apple Mobile-Geräten möglicherweise nicht lesen. Sie können diese Nachrichten jedoch weiterhin auf PCs lesen (über Desktop Browser). Benutzer, die die APP bereits heruntergeladen haben, können Sie weiterhin verwenden.
