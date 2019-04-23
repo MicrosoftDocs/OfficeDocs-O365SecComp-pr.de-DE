@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Security & Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte aus SharePoint und OneDrive for Business-Websites werden als systemeigene Office-Dokumente exportiert. '
 ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958646"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -33,7 +33,7 @@ Darüber hinaus werden alle RMS-verschlüsselten e-Mail-Nachrichten, die in den 
   
 Das Exportieren der Ergebnisse einer Inhaltssuche umfasst das Vorbereiten der Ergebnisse und das anschließende herunterladen auf einen lokalen Computer.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um Suchergebnisse zu exportieren, muss Ihnen die Rolle "Export Management" im Security & Compliance Center zugewiesen sein. Diese Rolle wird der integrierten eDiscovery-Manager-Rollengruppe zugewiesen. Sie wird der Rollengruppe Organisationsverwaltung nicht standardmäßig zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     

@@ -16,11 +16,11 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Der DSGVO gibt EU-Bürgern (als betroffene Personen bezeichnet) spezifische Rechte für Ihre persönlichen Daten; zu diesen Rechten gehört das Abrufen von Kopien davon, das Anfordern von Änderungen, das Einschränken der Verarbeitung, das Löschen oder das empfangen in einem elektronischen Format. Eine formelle Anforderung durch eine betroffene Person, eine Aktion zu Ihren personenbezogenen Daten durchführen zu können, wird als Datensubjekt Anforderung oder DSR bezeichnet. Sie können DSR-Fälle im Compliance Center in Office 365 und Microsoft 365 verwenden, um die DSR-Untersuchungen Ihrer Organisation zu verwalten.
 ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958706"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Verwalten von DSGVO-Datensubjekt Anforderungen mit dem DSR Case Tool im Security & Compliance Center
 
@@ -56,7 +56,7 @@ Mit dem DSR Case Tool können Sie Folgendes tun:
     
 Hier ist der allgemeine Prozess für die Verwendung des DSR-Fall Tools zur Verwaltung von DSR-Untersuchungen:
   
-[Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Schritt 2: Erstellen eines DSR-Falls und Hinzufügen von Mitgliedern](#step-2-create-a-dsr-case-and-add-members)
 
@@ -297,7 +297,7 @@ Sie können eine separate Inhaltssuche erstellen (und Sie einem DSR-Fall zuordne
   
 Wenn Sie Daten aus myAnalytics und dem Office Server-Roaming-Dienst exportieren, werden die Daten in einem separaten Ordner für jede Anwendung gespeichert, die sich im Ordner **ApplicationDataRoot** befindet, der sich unter einem Ordner befindet, der mit der e-Mail-Adresse des Datensubjekts benannt ist. Diese Daten werden als JSON-Dateien exportiert, bei denen es sich um lesbare Textdateien handelt, die den XML-oder TXT-Dateien ähneln, die an e-Mail-Nachrichten angefügt sind. Derzeit werden diese Ordner mit einem Globally Unique Identifier (GUID) benannt, der myAnalytics und dem Office-Roamingdienst zugewiesen ist, die in der folgenden Tabelle aufgeführt sind. In zukünftigen Versionen des DSR Case-Tools wird die GUID durch den Namen der tatsächlichen Anwendung ersetzt. 
   
-|**Application**|**GUID/Ordnername**|
+|**Anwendung**|**GUID/Ordnername**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
 |Office-Roamingdienst  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
 ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958637"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -62,7 +62,7 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder
 - Benutzer-und Administratoraktivitäten in Microsoft PowerApps
     
    
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des Office 365-Überwachungsprotokolls beginnen.
   
@@ -105,7 +105,7 @@ Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Durchsuchung des O
     
 - Es kann bis zu 30 Minuten oder bis zu 24 Stunden dauern, bis ein Ereignis eintritt, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. Die folgende Tabelle zeigt die Zeit, die für die verschiedenen Dienste in Office 365 benötigt wird.
     
-    |**Office 365-Dienst**|**30 Minuten**|**24 Stunden**|
+    |**Office 365-Dienste**|**30 Minuten**|**24 Stunden**|
     |:-----|:-----|:-----|
     |Advanced Threat Protection und Threat Intelligence  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
     |Azure Active Directory (Benutzeranmelde Ereignisse)  <br/> ||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |

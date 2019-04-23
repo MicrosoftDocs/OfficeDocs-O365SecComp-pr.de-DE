@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Verwenden Sie die neue intelligente Importfunktion im Office 365-Import Dienst, um die Elemente zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Mit dem intelligenten Import können Sie proaktiv entscheiden, welche Daten importiert und welche hinterlassen werden sollen. Der intelligente Import bietet außerdem Einblicke in die Daten, die Sie in Office 365 importieren. '
-ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958586"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtern von Daten beim Importieren von PST-Dateien in Office 365
 
@@ -59,7 +59,7 @@ Die folgende Grafik zeigt den intelligenten Import Prozess und hebt die Aufgaben
 
 Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Schritte aus, um die Daten zu filtern, bevor Sie Sie in Office 365 importieren.
   
-1. Wechseln Sie [https://compliance.microsoft.com/](https://compliance.microsoft.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
+1. Wechseln Sie [https://protection.office.com/](https://protection.office.com/) zu, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in ihrer Office 365-Organisation an. 
     
 2. Klicken Sie auf **Data Governance** \> - **Import**.
     

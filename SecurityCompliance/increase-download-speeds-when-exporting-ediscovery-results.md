@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Erfahren Sie, wie Sie die Windows-Registrierung konfigurieren, um den Datendurchsatz beim Herunterladen von Suchergebnissen und Such Daten aus dem Security & Compliance Center und Advanced eDiscovery in Office 365 zu erhöhen.
-ms.openlocfilehash: 36a4f1766f3ac0108d1829c93cfca63bc5cf09f5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000918"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958623"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Höhere Downloadgeschwindigkeit beim Exportieren von eDiscovery-Suchergebnissen aus Office 365
 
 Wenn Sie das Office 365 eDiscovery-Export Tool zum Herunterladen der Ergebnisse einer Inhaltssuche im Security & Compliance Center oder zum Herunterladen von Daten aus Office 365 Advanced eDiscovery verwenden, startet das Tool eine bestimmte Anzahl gleichzeitiger Exportvorgänge zum herunterladen die Daten auf dem lokalen Computer. Standardmäßig ist die Anzahl der gleichzeitigen Vorgänge auf die Anzahl der Kerne auf dem Computer festgelegt, den Sie zum Herunterladen der Daten verwenden. Wenn Sie beispielsweise einen Dual-Core-Computer (also zwei zentrale Verarbeitungseinheiten auf einem Chip) haben, ist die Standardanzahl gleichzeitiger Exportvorgänge 16. Um den Durchsatz bei der Datenübertragung zu erhöhen und den Downloadprozess zu beschleunigen, können Sie die Anzahl gleichzeitiger Vorgänge erhöhen, indem Sie auf dem Computer, auf dem Sie die Suchergebnisse herunterladen, eine Windows-Registrierungseinstellung konfigurieren. Um den Downloadprozess zu beschleunigen, empfehlen wir, dass Sie mit einer Einstellung von 24 gleichzeitigen Vorgängen beginnen.
   
-Wenn Sie Suchergebnisse über ein Netzwerk mit niedriger Bandbreite herunterladen, kann sich die Erhöhung dieser Einstellung negativ auswirken. Alternativ können Sie die Einstellung möglicherweise auf mehr als 24 gleichzeitige Vorgänge in einem Netzwerk mit hoher Bandbreite (die maximale Anzahl gleichzeitiger Vorgänge beträgt 512). Nachdem Sie diese Registrierungseinstellung konfiguriert haben, müssen Sie Sie möglicherweise ändern, um die optimale Anzahl gleichzeitiger Vorgänge für Ihre Umgebung zu ermitteln.
+Wenn Sie Suchergebnisse über ein Netzwerk mit niedriger Bandbreite herunterladen, kann sich die Erhöhung dieser Einstellung negativ auswirken. Alternativ können Sie die Einstellung möglicherweise auf mehr als 24 gleichzeitige Vorgänge in einem Netzwerk mit hoher Bandbreite (die maximale Anzahl gleichzeitiger Vorgänge beträgt 48). Nachdem Sie diese Registrierungseinstellung konfiguriert haben, müssen Sie Sie möglicherweise ändern, um die optimale Anzahl gleichzeitiger Vorgänge für Ihre Umgebung zu ermitteln.
   
 ## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>Erstellen einer Registrierungseinstellung zum Ändern der Anzahl gleichzeitiger Vorgänge beim Exportieren von Daten
 

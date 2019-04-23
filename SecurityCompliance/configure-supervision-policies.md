@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
-description: Einrichten einer Aufsichts Übersichts Richtlinie zur Erfassung der Mitarbeiterkommunikation zur Überprüfungen.
-ms.openlocfilehash: 1e381f5f435c7edb9f59afb07c22905f12d35513
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+description: Einrichten von Aufsichts Übersichts Richtlinien zur Erfassung der Mitarbeiterkommunikation zur Überprüfungen.
+ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958617"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -36,51 +36,51 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365-
   
 - **Schritt 1 (optional)** - [Einrichten von Gruppen für die Überwachung (optional)](#step-1---set-up-groups-for-supervision-optional)
 
-    Bevor Sie mit der Überwachung beginnen, bestimmen Sie, wer Ihre Kommunikation überprüft hat und wer diese Bewertungen durchführen wird. Wenn Sie mit wenigen Benutzern beginnen möchten, um zu sehen, wie die Überwachung funktioniert, können Sie die Einrichtung von Gruppen für jetzt überspringen.
+    Bevor Sie mit der Überwachung beginnen, bestimmen Sie, welche Kommunikationsanforderungen überprüft werden sollen und wer Prüfungen durchführen wird. Wenn Sie mit wenigen Benutzern beginnen möchten, um zu sehen, wie die Überwachung funktioniert, können Sie die Einrichtung von Gruppen für jetzt überspringen.
 
 - **Schritt 2 (erforderlich)** - [Beaufsichtigung in Ihrer Organisation (erforderlich)](#step-2---make-supervision-available-in-your-organization-required)
 
-    Fügen Sie sich selbst zur Rollengruppe Supervisory Review hinzu, damit Sie Richtlinien einrichten können. Jeder, dem diese Rolle zugewiesen wurde, kann auf die Seite " **Überwachung** " im Compliance Center zugreifen. Wenn die zu überprüfende e-Mail in Exchange Online gehostet wird, muss jeder Prüfer auch über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
+    Fügen Sie sich selbst zur Rollengruppe Supervisory Review hinzu, damit Sie Richtlinien einrichten können. Jeder, dem diese Rolle zugewiesen wurde, kann auf die Seite " **Überwachung** " im Compliance Center zugreifen. Wenn die reviewable e-Mail in Exchange Online gehostet wird, muss jeder Prüfer über [Remote-PowerShell-Zugriff auf Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)verfügen.
 
 - **Schritt 3 (optional)** - [Erstellen benutzerdefinierter vertraulicher Informationstypen und benutzerdefinierter Stichwort Wörterbücher](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
-    Wenn Sie einen benutzerdefinierten vertraulichen Infotyp oder ein benutzerdefiniertes Stichwort Wörterbuch für Ihre Aufsichtsrichtlinie verwenden müssen, müssen Sie es erstellen, bevor Sie den Überwachungs-Assistenten starten.
+    Wenn Sie einen benutzerdefinierten vertraulichen Infotyp oder ein benutzerdefiniertes Stichwort Wörterbuch für Ihre Aufsichtsrichtlinie benötigen, müssen Sie es erstellen, bevor Sie den Überwachungs-Assistenten starten.
 
 - **Schritt 4 (erforderlich)** - [Einrichten einer Aufsichtsrichtlinie](#step-4---set-up-a-supervision-policy-required)
 
-    Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien legen fest, welche Kommunikation in Ihrer Organisation überprüft werden soll, und gibt an, wer Bewertungen durchführen soll. Zu den Kommunikationen Gehören e-Mails und Microsoft Teams-Kommunikation sowie Platt Form Kommunikation von Drittanbietern (wie Facebook, Twitter usw.).
+    Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien legen fest, welche Kommunikation in Ihrer Organisation überprüft werden soll, und gibt an, wer Prüfungen durchführt. Zu den Kommunikationen Gehören e-Mails und Microsoft Teams-Kommunikation sowie Platt Form Kommunikation von Drittanbietern (wie Facebook, Twitter usw.).
 
 - **Schritt 5-(optional)** [Testen der Aufsichtsrichtlinie](#step-5---test-your-supervision-policy-optional)
 
-    Das Testen Ihrer Aufsichtsrichtlinie, um sicherzustellen, dass Sie wie gewünscht funktioniert, ist ein wichtiger Teil, um sicherzustellen, dass Ihre Compliance-Strategie Ihren Standards entspricht.
+    Testen Sie Ihre Aufsichtsrichtlinie, um sicherzustellen, dass Sie wie gewünscht funktioniert. Es ist wichtig sicherzustellen, dass Ihre Konformitäts Strategie Ihren Standards entspricht.
 
 - **Schritt 6 – (optional)** [Konfigurieren von Outlook für Prüfer, die das Office 365-überwachungsdashboard oder Outlook im Web (früher als Outlook Web App bezeichnet) nicht verwenden möchten, um die überwachte Kommunikation zu überarbeiten](#step-6---configure-outlook-for-reviewers-optional)
 
-    Outlook kann so konfiguriert werden, dass Bearbeiter Zugriff auf die Überwachungsfunktionen innerhalb des Outlook-Clients erhalten, damit Sie jedes Element bewerten und kategorisieren können.
+    Konfigurieren Sie Outlook, um Überprüferzugriff auf die Überwachungsfunktionen innerhalb des Outlook-Clients zu gewähren, damit Sie die einzelnen Elemente bewerten und kategorisieren können.
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Schritt 1: Einrichten von Gruppen für die Überwachung (optional)
 
- Wenn Sie eine Aufsichtsrichtlinie erstellen, legen Sie fest, wer Ihre Kommunikation überprüft hat und wer diese Bewertungen durchführen wird. In der Richtlinie verwenden Sie e-Mail-Adressen, um Personen oder Personengruppen zu identifizieren. Um das Setup zu vereinfachen, können Sie Gruppen für Personen erstellen, die Ihre Kommunikation überprüft haben, und Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere-beispielsweise, wenn Sie die Kommunikation zwischen zwei verschiedenen Personengruppen überwachen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht werden soll.
+ Wenn Sie eine Aufsichtsrichtlinie erstellen, legen Sie fest, wer Ihre Kommunikationen überprüft hat und wer Prüfungen durchführt. In der Richtlinie verwenden Sie e-Mail-Adressen, um Personen oder Personengruppen zu identifizieren. Um das Setup zu vereinfachen, können Sie Gruppen für Personen erstellen, die Ihre Kommunikation überprüft haben, und Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Sie möchten beispielsweise die Kommunikation zwischen zwei verschiedenen Personengruppen überwachen oder eine Gruppe angeben, die nicht überwacht werden soll.
 
 Anhand des folgenden Diagramms können Sie Gruppen in Ihrer Organisation für Aufsichtsrichtlinien konfigurieren:
 
 | **Richtlinienelement** | **Unterstützte Gruppen** | **Nicht unterstützte Gruppen** |
 |:-----|:-----|:-----|
 |ÜberWachte Benutzer | Verteilergruppen <br> Office 365-Gruppen | Dynamische Verteilergruppen |
-| Reviewers | E-Mail-aktivierte Sicherheitsgruppen  | Verteilergruppen <br> Dynamische Verteilergruppen |
+| Prüfer | E-Mail-aktivierte Sicherheitsgruppen  | Verteilergruppen <br> Dynamische Verteilergruppen |
   
-Um überwachte Benutzer in großen Unternehmen zu verwalten, müssen Sie möglicherweise alle Benutzer über eine sehr große Gruppe hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Dies kann Ihnen helfen, Tausende von Benutzern mit einer einzigen Richtlinie zu überwachen und die Aufsichtsrichtlinie zu aktualisieren, wenn neue Mitarbeiter Ihrer Organisation beitreten.
+Um überwachte Benutzer in Großunternehmen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Aufsichtsrichtlinie aktualisieren, wenn neue Mitarbeiter Ihrer Organisation beitreten.
 
-1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften. Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder für andere Office 365-Dienste verwendet wird.
+1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder für andere Office 365-Dienste verwendet wird.
 
-    - **MemberDepartRestriction = geschlossen**. Dadurch wird sichergestellt, dass Benutzer sich nicht aus der Verteilergruppe entfernen können.
-    - **MemberJoinRestriction = geschlossen**. Dadurch wird sichergestellt, dass Benutzer sich nicht der Verteilergruppe hinzufügen können.
-    - **ModerationEnabled = true**. Dadurch wird sichergestellt, dass alle an diese Gruppe gesendeten Nachrichten genehmigt werden müssen und dass die Gruppe nicht für die Kommunikation außerhalb der Aufsichtsrichtlinien Konfiguration verwendet wird.
+    - **MemberDepartRestriction = geschlossen**. Stellt sicher, dass sich Benutzer nicht aus der Verteilergruppe entfernen können.
+    - **MemberJoinRestriction = geschlossen**. Stellt sicher, dass Benutzer sich nicht der Verteilergruppe hinzufügen können.
+    - **ModerationEnabled = true**. Stellt sicher, dass alle an diese Gruppe gesendeten Nachrichten genehmigungspflichtig sind und dass die Gruppe nicht zur Kommunikation außerhalb der Aufsichtsrichtlinien Konfiguration verwendet wird.
 
     ```
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
-2. Wählen Sie ein nicht verwendetes [benutzerdefiniertEs Exchange-Attribut](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) aus, das zum Nachverfolgen der Benutzer hinzugefügt wurde, die der Aufsichtsrichtlinie in Ihrer Organisation zugeordnet wurden.
+2. Wählen Sie ein nicht verwendetes [benutzerdefiniertEs Exchange-Attribut](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) aus, um Benutzer nachzuverfolgen, die der Aufsichtsrichtlinie in Ihrer Organisation hinzugefügt wurden.
 
 3. Führen Sie das folgende PowerShell-Skript nach einem wiederkehrenden Zeitplan aus, um der Aufsichtsrichtlinie Benutzer hinzuzufügen:
 
@@ -106,7 +106,7 @@ Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
 
 Um die **Überwachung** als Menüoption im Compliance Center zur Verfügung zu stellen, muss Ihnen die Rolle "Supervisory Review Administrator" zugewiesen sein.
   
-Zu diesem Zweck können Sie sich selbst als Mitglied der Rollengruppe "Supervisory Review" hinzufügen oder eine neue Rollengruppe erstellen.
+Zu diesem Zweck können Sie sich selbst als Mitglied der Rollengruppe "Supervisory Review" hinzufügen oder eine Rollengruppe erstellen.
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>Hinzufügen von Mitgliedern zur Rollengruppe "Supervisory Review"
 
@@ -140,7 +140,7 @@ Um aus vorhandenen benutzerdefinierten vertraulichen Informationstypen oder benu
 
 ### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Erstellen benutzerdefinierter Stichwort Wörterbuch/Lexikon (optional)
 
-Erstellen Sie mithilfe eines Text-Editors (wie Notepad) eine neue Datei mit den Stichwortbegriffen, die Sie in einer Aufsichtsrichtlinie überwachen möchten. Stellen Sie sicher, dass sich jeder Ausdruck in einer separaten Leitung befindet, und speichern Sie die Datei im **Unicode/UTF-16 (Little Endian)-** Format.
+Verwenden Sie einen Text-Editor (wie Notepad), um eine neue Datei zu erstellen, die die Stichwort Ausdrücke enthält, die Sie in einer Aufsichtsrichtlinie überwachen möchten. Stellen Sie sicher, dass sich jeder Ausdruck in einer separaten Leitung befindet, und speichern Sie die Datei im **Unicode/UTF-16 (Little Endian)-** Format.
 
 ### <a name="create-custom-sensitive-information-types"></a>Erstellen von benutzerdefinierten Typen für vertrauliche Informationen
 
@@ -153,7 +153,7 @@ Erstellen Sie mithilfe eines Text-Editors (wie Notepad) eine neue Datei mit den 
 
     Ausführlichere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md) und [Erstellen eines Stichwort Wörterbuchs](create-a-keyword-dictionary.md) .
 
-    Nachdem das Benutzerwörterbuch/Lexikon erstellt wurde, können Sie die konfigurierten Schlüsselwörter mithilfe des Cmdlets [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) oder durch Hinzufügen und Entfernen von Ausdrücken mithilfe des Cmdlets [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) anzeigen.
+    Nachdem das Benutzerwörterbuch/Lexikon erstellt wurde, können Sie die konfigurierten Schlüsselwörter mit dem Cmdlet [Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) anzeigen oder Ausdrücke mithilfe des Cmdlets [Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) hinzufügen und entfernen.
 
 ## <a name="step-4---set-up-a-supervision-policy-required"></a>Schritt 4: Einrichten einer Aufsichtsrichtlinie (erforderlich)
   
@@ -168,7 +168,7 @@ Erstellen Sie mithilfe eines Text-Editors (wie Notepad) eine neue Datei mit den 
     - Definieren Sie die Aufsichtsrichtlinien Bedingungen.
     - Wählen Sie aus, ob Sie vertrauliche Informationstypen einbeziehen möchten. Hier können Sie Standard-und benutzerdefinierte vertrauliche Infotypen auswählen.
     - Definieren Sie den Prozentsatz der zu überprüfenden Kommunikation.
-    - Wählen Sie die Bearbeiter für die Richtlinie aus. Prüfer können einzelne Benutzer oder [e-Mail-aktivierte Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)sein.
+    - Wählen Sie die Bearbeiter für die Richtlinie aus. Prüfer können einzelne Benutzer oder [e-Mail-aktivierte Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group)sein. Alle Prüfer müssen über Postfächer verfügen, die in Exchange Online gehostet werden.
     - Überdenken Sie Ihre Richtlinienauswahl und erstellen Sie die Richtlinie.
 
 ## <a name="step-5---test-your-supervision-policy-optional"></a>Schritt 5 – Testen der Aufsichtsrichtlinie (optional)
@@ -185,11 +185,11 @@ Nachdem Sie eine Aufsichtsrichtlinie erstellt haben, empfiehlt es sich zu testen
 
 ## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Schritt 6: Konfigurieren von Outlook für Prüfer (optional)
 
-Prüfer, die Outlook verwenden möchten, anstatt das Aufsichts Dashboard in Office 365 zur Überprüfung der Kommunikation zu überwachen, müssen Ihren Outlook-Client konfigurieren.
+Prüfer, die Outlook anstelle des Überwachungs Dashboards in Office 365 verwenden möchten, müssen Ihren Outlook-Client konfigurieren.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Schritt 1: Kopieren der Adresse für das überwachungspostfach
 
-Zum Konfigurieren der Überprüfung für Outlook-Desktop oder Outlook für das Web benötigen Sie die Adresse für das Aufsichts Postfach, das als Teil der Aufsichtsrichtlinien Einrichtung erstellt wurde.
+Zum Konfigurieren der Überprüfung für Outlook-Desktop oder Outlook für das Web benötigen Sie die Adresse für das überwachungspostfach, das als Teil der Aufsichtsrichtlinien Einrichtung erstellt wurde.
   
 > [!NOTE]
 > Wenn eine andere Person die Richtlinie erstellt hat, müssen Sie diese Adresse abrufen, um das Add-in zu installieren.
@@ -200,7 +200,7 @@ Zum Konfigurieren der Überprüfung für Outlook-Desktop oder Outlook für das W
 
 2. Gehen Sie zur **Überwachung**.
 
-3. Klicken Sie auf die Aufsichtsrichtlinie, die die zu überprüfende Kommunikation erfasst.
+3. Wählen Sie eine Aufsichtsrichtlinie für die Kommunikation aus, die Sie überarbeiten möchten.
 
 4. Kopieren Sie im Flyout Richtliniendetails unter **überwachungspostfach**die Adresse.<br/>![Der Abschnitt "Überwachungspostfach" im Detail Flyout der Aufsichtsrichtlinie mit der hervorgehobenen Überwachungs-Postfachadresse](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
@@ -210,7 +210,7 @@ Als nächstes müssen die Bearbeiter einige Exchange Online PowerShell-Befehle a
   
 1. Stellen Sie eine Verbindung mit Exchange Online PowerShell her. [Wie muss ich vorgehen?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
-2. Führen Sie die folgenden Befehle aus, wobei *SupervisoryReview {GUID} @domain. onmicrosoft.com* die Adresse ist, die Sie in Schritt 1 oben kopiert haben, und *Benutzer* ist der Name des Rezensenten, der eine Verbindung mit dem überwachungspostfach in Schritt 3 herstellt.
+2. Führen Sie die folgenden Befehle aus, wobei *SupervisoryReview {GUID} @domain. onmicrosoft.com* die Adresse ist, die Sie in Schritt 1 oben kopiert haben, und *Benutzer* ist der Name des Rezensenten, der in Schritt 3 eine Verbindung mit dem überwachungspostfach herstellen wird.
 
     ```Add-MailboxPermission "SupervisoryReview{GUID}@domain.onmicrosoft.com" -User <alias or email address of the account that has reviewer permissions to the supervision mailbox> -AccessRights FullAccess```
 
@@ -225,7 +225,7 @@ Für den letzten Schritt müssen die Bearbeiter ein Outlook-Profil erstellen, um
 > [!NOTE]
 > Zum Erstellen eines neuen Outlook-Profils verwenden Sie die e-Mail-Einstellungen in der Windows-Systemsteuerung. Der Pfad, den Sie zum Abrufen dieser Einstellungen ergreifen, hängt möglicherweise davon ab, welches Windows-Betriebssystem (Windows 7, Windows 8 oder Windows 10) Sie verwenden und welche Version von Outlook installiert ist.
   
-1. Öffnen Sie die Systemsteuerung, und geben Sie im **Suchfeld** oben im Fenster **e-Mail**ein.<br/>(Sind Sie nicht sicher, wie Sie zur Systemsteuerung gelangen? Weitere Informationen finden Sie unter [wo ist die Systemsteuerung?](https://support.microsoft.com/help/13764/windows-where-is-control-panel))
+1. Öffnen Sie die Systemsteuerung. Geben Sie im **Suchfeld** oben im Fenster **e-Mail**ein.<br/>(Sind Sie nicht sicher, wie Sie zur Systemsteuerung gelangen? Weitere Informationen finden Sie unter [wo ist die Systemsteuerung?](https://support.microsoft.com/help/13764/windows-where-is-control-panel))
   
 2. Öffnen Sie die **Mail-** app.
 
@@ -241,11 +241,11 @@ Für den letzten Schritt müssen die Bearbeiter ein Outlook-Profil erstellen, um
   
 8. Geben Sie Ihre Office 365-Anmeldeinformationen ein, wenn Sie dazu aufgefordert werden.
 
-9. Wenn die Einstellung erfolgreich ist, wird der Ordner " ** \<Aufsicht\> -Richtlinienname** " in der Ansicht "Ordnerliste" in Outlook angezeigt.
+9. Wenn die Richtlinie erfolgreich verläuft, wird der Ordner " **Überwachung" (Richtlinienname \<\> )** in der Ansicht "Ordnerliste" in Outlook angezeigt.
 
 ## <a name="powershell-reference"></a>PowerShell-Referenz
 
-Bei Bedarf können Sie Aufsichtsrichtlinien mithilfe der folgenden PowerShell-Cmdlets erstellen und verwalten:
+Bei Bedarf können Sie Aufsichtsrichtlinien mit den folgenden PowerShell-Cmdlets erstellen und verwalten:
 
 - [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
 - [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)

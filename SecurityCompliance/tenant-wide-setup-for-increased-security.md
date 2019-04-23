@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958536"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -65,7 +65,7 @@ Viele der Steuerelemente für Sicherheit und Schutz in der Exchange-Verwaltungsk
   
 |Bereich * * * *|Enthält eine Standardrichtlinie * * * *|Empfehlung * * * *|
 |:-----|:-----|:-----|
-|**Nachrichtenfluss** (Nachrichtenfluss Regeln, auch als Transportregeln bezeichnet)|Nein|Hinzufügen einer e-Mail-Fluss Regel zum Schutz vor Ransomware. Weitere Informationen finden Sie unter "Verwenden von Exchange-Transport Regeln zum Nachverfolgen oder Blockieren von e-Mails mit Dateierweiterungen, die von Ransomware verwendet werden" in diesem Blog Artikel: [How to Deal with Ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).  <br><br/> Erstellen Sie eine Nachrichtenfluss Regel, um die automatische Weiterleitung von e-Mails an externe Domänen zu verhindern. Weitere Informationen finden Sie unter [mildernde Client External forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> Weitere Informationen: [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Nachrichtenfluss** (Nachrichtenfluss Regeln, auch als Transportregeln bezeichnet)|Nein|Hinzufügen einer e-Mail-Fluss Regel zum Schutz vor Ransomware. Weitere Informationen finden Sie unter "Verwenden von Exchange-Transport Regeln zum Nachverfolgen oder Blockieren von e-Mails mit Dateierweiterungen, die von Ransomware verwendet werden" in diesem Blog Artikel: [How to Deal with Ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/). <br><br/> Lesen Sie die folgenden Themen: <br/>•[Schutz vor Ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Schutz vor Schadsoftware und Ransomware in Office 365](office-365-malware-and-ransomware-protection.md)<br/><br/>  Erstellen Sie eine Nachrichtenfluss Regel, um die automatische Weiterleitung von e-Mails an externe Domänen zu verhindern. Weitere Informationen finden Sie unter [mildernde Client External forwardIng Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> Weitere Informationen: [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
 |**Aktivieren der modernen Authentifizierung**|Nein|Die moderne Authentifizierung in Office 365 ist eine Voraussetzung für die Verwendung der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA). MFA wird empfohlen, um den Zugriff auf Cloud-Ressourcen, einschließlich e-Mails, zu sichern. <br/><br/> Lesen Sie die folgenden Themen:  <br/>• [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype for Business Online: Aktivieren des Mandanten für die moderne Authentifizierung](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Die moderne Authentifizierung ist standardmäßig für Office 2016-Clients, SharePoint Online und OneDrive for Business aktiviert. <br/><br/> Weitere Informationen: [Verwenden der modernen Authentifizierung von office 365 mit Office-Clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Konfigurieren von Mandanten weiten Freigaberichtlinien im SharePoint Admin Center

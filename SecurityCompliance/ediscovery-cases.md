@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Verwenden Sie das Security & Compliance Center, um eDiscovery-Fälle in Ihrer Organisation zu erstellen und zu verwalten. Sie können dem Fall Mitglieder zuweisen, inhaltsspeicherorte in der Warteschleife platzieren, mit dem Fall verknüpfte Inhalts suchVorgänge ausführen und die Suchergebnisse exportieren. Sie können Falldaten auch für die weitere Analyse in Advanced eDiscovery vorbereiten.
-ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958526"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>eDiscovery-Fälle im Security & Compliance Center
 
@@ -30,7 +30,7 @@ Ein eDiscovery-Fall ermöglicht Ihnen das Hinzufügen von Mitgliedern zu einem F
   
 Verwenden Sie den folgenden Workflow, um eDiscovery-Fälle im Security & Compliance Center und Advanced eDiscovery einzurichten und zu verwenden.
 
-[Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Schritt 2: Erstellen eines neuen Falls](#step-2-create-a-new-case)
 
@@ -95,7 +95,7 @@ Weitere Informationen zu eDiscovery-Berechtigungen finden Sie unter [assign eDis
 
 ## <a name="step-2-create-a-new-case"></a>Schritt 2: Erstellen eines neuen Falls
 
-Im nächsten Schritt erstellen Sie einen neuen eDiscovery-Fall. Sie müssen Mitglied der Rollengruppe „eDiscovery-Manager“ sein, um eDiscovery-Fälle zu erstellen. Wie bereits erläutert, können Sie, nachdem Sie im Security & Compliance Center einen neuen Fall erstellt haben, auf diesen Fall in Advanced eDiscovery zugreifen, wenn Sie ein Office 365 E5-Abonnement haben.
+Im nächsten Schritt erstellen Sie einen neuen eDiscovery-Fall. Sie müssen Mitglied der Rollengruppe „eDiscovery-Manager“ sein, um eDiscovery-Fälle zu erstellen. Wie bereits erläutert, können Sie, nachdem Sie im Security & Compliance Center einen neuen Fall erstellt haben, auf diesen Fall in Advanced eDiscovery zugreifen, wenn Ihre Organisation über ein Office 365 E5-Abonnement verfügt.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
@@ -519,7 +519,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle haltebereiche, die vorhanden war
 
 - **Gelten für eDiscovery-Fälle oder für einen eDiscovery-Fall zugeordnete Aufbewahrungs Grenzen?** In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Case Holds aufgeführt.
     
-  |**Beschreibung der Beschränkung**|**Grenze**|
+  |**Beschreibung der Beschränkung**|**Grenzwert**|
   |:-----|:-----|
   |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
   |Maximale Anzahl von Fall Haltebereichen für eine Organisation  <br/> |10,000  <br/> |

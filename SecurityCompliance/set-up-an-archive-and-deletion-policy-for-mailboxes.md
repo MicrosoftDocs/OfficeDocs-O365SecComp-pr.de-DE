@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Erstellen Sie eine Archivierungs-und Löschrichtlinie in Office 365, die Elemente automatisch in das Archivpostfach eines Benutzers verschiebt.
 ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958686"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation
 
@@ -44,7 +44,7 @@ Mit den Schritten in diesem Artikel wird eine Archivierungs-und Aufbewahrungsric
     
 Sie können einige oder alle Schritte in diesem Artikel ausführen, um eine Archiv-und Löschrichtlinie für Postfächer in ihrer eigenen Organisation einzurichten. Es wird empfohlen, diesen Prozess für einige Postfächer zu testen, bevor Sie ihn für alle Postfächer in Ihrer Organisation implementieren.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein globaler Administrator in Ihrer Office 365-Organisation sein, um die Schritte in diesem Thema ausführen zu können. 
     
@@ -307,7 +307,7 @@ In Schritt 4 müssen Sie die neue Aufbewahrungsrichtlinie vorhandenen Postfäche
     
 - Die folgende Tabelle enthält weitere Informationen zu den einzelnen Aufbewahrungstags, die der benutzerdefinierten Aufbewahrungsrichtlinie hinzugefügt werden, die mit den Schritten in diesem Thema erstellt wurde.
     
-    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Typ**|
+    |**Aufbewahrungs**|**Was dieses Tag bewirkt**|**Integriert oder Benutzerdefiniert?**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 Jahre in Archiv verschieben  <br/> |Verschiebt Elemente, die 1095 Tage (3 Jahre) alt sind, in das Archivpostfach.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Archiv); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |
     |Alpine House 7 Jahr endgültig löschen  <br/> |Löscht Elemente im primären Postfach oder im Archivpostfach endgültig, wenn Sie 7 Jahre alt sind.  <br/> |Benutzerdefiniert (siehe [Schritt 2: Erstellen neuer Aufbewahrungstags für die Archivierungs-und Löschrichtlinien](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardrichtlinientag (Löschen); Dieses Tag wird automatisch auf das gesamte Postfach angewendet.  <br/> |

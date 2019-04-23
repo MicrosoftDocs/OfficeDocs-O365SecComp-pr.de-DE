@@ -3,7 +3,7 @@ title: Dynamische bereit-und Vorschau mit Office 365 ATP Safe Attachments
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Bei der Einrichtung Ihrer Richtlinien für sichere ATP-Anlagen wählen Sie dynamische Übermittlung aus, um Verzögerungen bei Nachrichten zu vermeiden und Personen eine Vorschau der zu überprüfenden Anhänge zu ermöglichen.
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958566"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische bereit-und Vorschau mit Office 365 ATP Safe Attachments
 
@@ -81,4 +81,4 @@ Es gibt bestimmte Szenarien, in denen die dynamische Bereitstellungen nicht unte
 
 - Mit [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)verSchlüsselte Nachrichten
 
-In Fällen, in denen die dynamische bereit Position nicht unterstützt wird, werden e-Mail-Nachrichten von ATP Safe-Anlagen nicht überprüft. Abhängig davon, wie Ihre ATP- [Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) konfiguriert werden, werden jedoch URLs in e-Mail-Nachrichten (und Office-Dateien) überprüft.
+- In Fällen, in denen die dynamische bereit Position nicht unterstützt wird, werden e-Mail-Nachrichten von ATP Safe-Anlagen nicht überprüft. Die Übermittlung von e-Mail-Nachrichten mit Anlagen, die URLs enthalten, wird jedoch überprüft, je nachdem, wie Ihre [ATP-Richtlinien für sichere Links](set-up-atp-safe-links-policies.md) konfiguriert werden. In diesen Fällen werden URLs in e-Mail-Nachrichten und Office-Dateien überprüft.

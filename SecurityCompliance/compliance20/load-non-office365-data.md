@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958696"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Laden von Nicht-Office 365-Daten in einen Arbeitssatz
 
@@ -47,19 +47,21 @@ Für die Verwendung der in diesem Verfahren beschriebenen Funktion zum Hochladen
 
    Dabei sind abraham.mcmahon@contoso.com, jewell.gordon@contoso.com und staci.gonzalez@contoso.com die SMTP-Adressen der Verwalter in diesem Fall.
 
+![Nicht-Office 365 Datenupload-Ordnerstruktur](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+
 - Ein Konto, das entweder ein eDiscovery-Manager oder ein eDiscovery-Administrator ist, Microsoft Azure-Speicher Tools, die auf einem Computer installiert sind, der Zugriff auf die nicht-Office 365-Inhaltsordner Struktur hat.
 
 - Installieren Sie AzCopy, was Sie hier tun können:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Hochladen von nicht-Office 365-Inhalten in Advanced eDiscovery
 
-1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator Advanced eDiscovery, und führen Sie dann den Fall aus, dass die nicht-Office 365-Daten in hochgeladen werden.  Klicken Sie auf die Registerkarte **Working Sets** , und wählen Sie dann den Arbeitssatz aus, in den Sie die nicht-Office 365-Daten laden möchten.  Wenn Sie noch keine Arbeitsmappe erstellt haben, können Sie dies jetzt tun.  Klicken Sie abschließend auf Workings- **Set verwalten** und dann auf **Uploads** im nicht-Office 365-Datenabschnitt
+1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator Advanced eDiscovery, und führen Sie dann den Fall aus, dass die nicht-Office 365-Daten in hochgeladen werden.  Klicken Sie auf die Registerkarte **Working Sets** , und wählen Sie dann den Arbeitssatz aus, in den Sie die nicht-Office 365-Daten laden möchten.  Wenn Sie noch keine Arbeitsmappe erstellt haben, können Sie dies jetzt tun.  Klicken Sie abschließend auf " **Arbeitsbereiche verwalten** " und dann auf " **Uploads** " im Abschnitt "nicht-Office 365-Daten".
 
 2. Klicken Sie auf die Schaltfläche **Dateien hochladen** , um den nicht-Office 365-Datenimport-Assistenten zu starten.
 
 ![Hochladen von Dateien](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. Im ersten Schritt des Assistenten wird ein sicheres Azure-BLOB für die hochzuladenden Dateien vorbereitet.  Wenn die Vorbereitung compelted ist, klicken Sie auf die Schaltfläche **Weiter: Dateien hochladen** .
+3. Im ersten Schritt des Assistenten wird ein sicheres Azure-BLOB für die hochzuladenden Dateien vorbereitet.  Klicken Sie nach Abschluss der Vorbereitung auf die Schaltfläche **Weiter: Dateien hochladen** .
 
 ![Nicht-Office 365-Import-Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  

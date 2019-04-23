@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Verwenden Sie das Security & Compliance Center, um eDiscovery-Speicher zu erstellen und um eDiscovery-Fälle in Ihrer Organisation zu verwalten.
 ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958546"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Verwalten von eDiscovery-Fällen im Security & Compliance Center
 
@@ -25,7 +25,7 @@ Ein eDiscovery-Fall ermöglicht Ihnen das Hinzufügen von Mitgliedern zu einem F
   
 Verwenden Sie den folgenden Workflow, um eDiscovery-Fälle im Security & Compliance Center und Advanced eDiscovery einzurichten und zu verwenden.
   
-[Schritt 1: Zuweisen von eDiscovery-Berechtigungen zu potenziellen Fallmitgliedern](manage-ediscovery-cases.md#step1_1)
+[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
   
 [Schritt 2: Erstellen eines neuen Falls](manage-ediscovery-cases.md#step2_1)
   
@@ -496,7 +496,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle haltebereiche, die vorhanden war
 
 - **Gelten für eDiscovery-Fälle oder für einen eDiscovery-Fall zugeordnete Aufbewahrungs Grenzen?** In der folgenden Tabelle sind die Grenzwerte für eDiscovery-Fälle und Case Holds aufgeführt.
     
-|**Beschreibung der Beschränkung**|**Grenze**|
+|**Beschreibung der Beschränkung**|**Grenzwert**|
 |:-----|:-----|
 |Maximale Anzahl von Fällen für eine Organisation  <br/> |Keine Begrenzung  <br/> |
 |Maximale Anzahl von Fall Haltebereichen für eine Organisation  <br/> |10,000  <br/> |

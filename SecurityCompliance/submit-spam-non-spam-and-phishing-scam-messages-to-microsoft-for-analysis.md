@@ -3,7 +3,7 @@ title: Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als be
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsch negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958676"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 
@@ -33,11 +33,11 @@ Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-e-Mails (Spa
 
 Wenn Sie eine Nachricht erhalten, die die Spamfilter, die als Junk-e-Mail klassifiziert werden sollen, oder einen Phishing-Betrug übergeben haben, können Sie die Meldung "falsch negativ" an Microsoft-Spam Analyse-und Microsoft-Phishing-Analyseteams senden. Die Analysten überarbeiten die Nachricht und fügen Sie den Dienst weiten Filtern hinzu, wenn Sie die Klassifizierungskriterien erfüllt. 
   
-Informationen zu weiteren Spameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](https://go.microsoft.com/fwlink/p/?LinkId=534225). Dieser Artikel enthält Tipps zum Verhindern von falsch negativen.
+Informationen zu weiteren Spameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](reduce-spam-email.md). Dieser Artikel enthält Tipps zum Verhindern von falsch negativen.
   
 Sie können Junk-E-Mails wie folgt weiterleiten:
   
-- Verwenden Sie für Outlook-und Outlook im Web-Benutzer das Add-in Berichtnachricht für Microsoft Outlook. Weitere Informationen zum Installieren und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). 
+- Verwenden Sie für Outlook-und Outlook im Web-Benutzer das Add-in Berichtnachricht für Microsoft Outlook. Weitere Informationen zum Installieren und verwenden dieses Tools finden Sie unter [enable the Report Message Add-in](enable-the-report-message-add-in.md). 
         
 - Sie können auch e-Mails verwenden, um Nachrichten an Microsoft zu übermitteln, die als Junk-oder Phishing-Scams klassifiziert werden sollen, wie im folgenden Verfahren beschrieben.
     
@@ -66,7 +66,7 @@ So leiten Sie Junk-E-Mails oder Nachrichten, die als betrügerischer Phishingver
 
 Wenn eine Nachricht fälschlicherweise als Junk identifiziert wurde, können Sie die Meldung "falsch positiv" an das Microsoft-Spam Analyse Team übermitteln. Die Analysten bewerten und analysieren die Nachricht. Abhängig vom Ergebnis der Analyse werden die Filterregeln für Spaminhalte des Diensts angepasst, damit die Nachricht zugestellt werden kann.
   
-Administratoren können weitere Spam Einstellungsinformationen anzeigen, die für eine ganze Organisation gelten. Erfahren Sie [, wie Sie sicherstellen, dass eine Nachricht nicht als Spam markiert wird](https://go.microsoft.com/fwlink/p/?LinkId=534224). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
+Administratoren können weitere Spam Einstellungsinformationen anzeigen, die für eine ganze Organisation gelten. Erfahren Sie [, wie Sie sicherstellen, dass eine Nachricht nicht als Spam markiert wird](prevent-email-from-being-marked-as-spam.md). Diese Informationen sind nützlich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse vermeiden möchten.
   
 Leiten Sie Nichtspamnachrichten wie folgt weiter:
   
@@ -82,7 +82,7 @@ Leiten Sie Nichtspamnachrichten wie folgt weiter:
     
   - Benutzer können Ihre eigenen Nachrichten in Spamquarantäne freigeben und diese als falsch positive Ergebnisse über die folgenden Kanäle melden: 
     
-  - Auf der Benutzeroberfläche von Exchange Admin Center (EAC). Weitere Informationen finden Sie unter [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+  - Auf der Benutzeroberfläche von Exchange Admin Center (EAC). Weitere Informationen finden Sie unter [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
     
   - Über Nachrichten zur Spambenachrichtigung für Endbenutzer (falls vom Administrator aktiviert). 
     
@@ -118,10 +118,10 @@ Die Spambewertung ist ein kontinuierlicher Prozess, der unabhängig von der ursp
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="sectionSection4"> </a>
 
-[Antispam- und Antischadsoftwareschutz](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[Antispam- und Antischadsoftwareschutz](anti-spam-and-anti-malware-protection.md)
   
-[So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[So können Sie dazu beitragen, dass eine Nachricht nicht als Spam gekennzeichnet wird](prevent-email-from-being-marked-as-spam.md)
   
-[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
   
 

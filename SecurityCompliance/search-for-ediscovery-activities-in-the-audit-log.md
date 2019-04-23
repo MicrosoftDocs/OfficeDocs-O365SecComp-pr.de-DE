@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Erfahren Sie, wie Sie im Office 365-Überwachungsprotokoll nach Ereignissen suchen, die protokolliert werden, wenn Kompatibilitäts Administratoren Inhaltssuche und eDiscovery Case-Aufgaben im Security & Compliance Center ausführen.
 ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958716"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Office 365-Überwachungsprotokoll
 
@@ -82,9 +82,9 @@ In der folgenden Tabelle werden die Inhaltssuche und eDiscovery-bezogenen Aktivi
 |Geänderte eDiscovery-Fall Mitgliedschaft  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |Die Mitgliedschaftsliste eines eDiscovery-Falls wurde geändert. Diese Aktivität wird protokolliert, wenn alle Mitglieder durch eine Gruppe neuer Benutzer ersetzt werden. Wenn ein einzelnes Element hinzugefügt oder entfernt wird, wird CaseMemberAdded-oder CaseMemberRemoved-Vorgang protokolliert.  <br/> |
 |Filter für geänderte Suchberechtigungen  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Ein Filter für Suchberechtigungen wurde geändert.  <br/> |
 |Geänderte Suchabfrage für eDiscovery Case Hold  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Eine abfragebasierte Aufbewahrung, die einem eDiscovery-Fall zugeordnet ist, wurde geändert. Zu den möglichen Änderungen gehört das Bearbeiten der Abfrage oder des Datumsbereichs für eine abfragebasierte Aufbewahrung.  <br/> |
-|Inhaltssuche-Vorschau Element heruntergeladen  <br/> |PreviewItemDownloaded  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat ein Element auf seinen lokalen Computer heruntergeladen (durch Klicken auf den Link zum **herunterladen des ursprünglichen Elements** ), wenn die Vorschau der Suchergebnisse angezeigt wird.  <br/> |
-|Element der Inhaltssuche (Vorschau)  <br/> |PreviewItemListed  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat auf **Vorschau der Such** Ergebnisse geklickt, um die Seite Vorschau der Suchergebnisse anzuzeigen, in der bis zu 1000 Elemente aus den Ergebnissen einer Inhaltssuche aufgelistet werden.  <br/> |
-|Vorschau Element der Inhaltssuche angezeigt  <br/> |PreviewItemRendered  <br/> |Nicht zutreffend  <br/> |Ein eDiscovery-Manager hat ein Element durch Klicken bei der Vorschau der Suchergebnisse angezeigt.  <br/> |
+|Inhaltssuche-Vorschau Element heruntergeladen  <br/> |PreviewItemDownloaded  <br/> |–  <br/> |Ein Benutzer hat ein Element auf seinen lokalen Computer heruntergeladen (durch Klicken auf den Link zum **herunterladen des ursprünglichen Elements** ), wenn die Vorschau der Suchergebnisse angezeigt wird.  <br/> |
+|Element der Inhaltssuche (Vorschau)  <br/> |PreviewItemListed  <br/> |–  <br/> |Ein Benutzer hat auf **Vorschau der Such** Ergebnisse geklickt, um die Seite Vorschau der Suchergebnisse anzuzeigen, in der bis zu 1000 Elemente aus den Ergebnissen einer Inhaltssuche aufgelistet werden.  <br/> |
+|Vorschau Element der Inhaltssuche angezeigt  <br/> |PreviewItemRendered  <br/> |–  <br/> |Ein eDiscovery-Manager hat ein Element durch Klicken bei der Vorschau der Suchergebnisse angezeigt.  <br/> |
 |Erstellte Inhaltssuche  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Es wurde eine neue Inhaltssuche erstellt.  <br/> |
 |Erstellter eDiscovery-Administrator  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Ein Benutzer wurde als eDiscovery-Administrator in der Organisation hinzugefügt.  <br/> |
 |Erstellter eDiscovery-Fall  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Ein eDiscovery-Fall wurde erstellt. Wenn ein Fall erstellt wird, müssen Sie ihm nur einen Namen geben. Weitere fallbezogene Aufgaben wie das Hinzufügen von Elementen, das Erstellen von Haltebereichen und das Erstellen von Inhalts suchen, die mit dem Fall verbunden sind, führen dazu, dass zusätzliche Ereignisse protokolliert werden.  <br/> |
@@ -95,8 +95,8 @@ In der folgenden Tabelle werden die Inhaltssuche und eDiscovery-bezogenen Aktivi
 |Gelöschter eDiscovery-Fall  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Ein eDiscovery-Fall wurde gelöscht. Beachten Sie, dass jeder mit der Anfrage verknüpfte Aufbewahrungsbereich entfernt werden muss, bevor der Fall gelöscht werden kann.  <br/> |
 |Filter für gelöschte Suchberechtigungen  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Ein Filter für Suchberechtigungen wurde gelöscht.  <br/> |
 |Gelöschte Suchabfrage für eDiscovery Case Hold  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Ein abfragebasierter Speicher, der einem eDiscovery-Fall zugeordnet ist, wurde gelöscht. Das Entfernen der Abfrage aus dem Haltebereich ist häufig das Ergebnis des Löschens eines haltebereichs. Wenn ein Hold-oder eine Hold-Abfrage gelöscht wird, werden die in der Warteschleife befindlichen inhaltsspeicherorte freigegeben.  <br/> |
-|HeruntergeLadener Export der Inhaltssuche  <br/> |SearchExportDownloaded  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche auf den lokalen Computer heruntergeladen. Beachten Sie, dass ein **gestarteter Export der Inhaltssuche** initiiert werden muss, bevor Suchergebnisse heruntergeladen werden können.  <br/> |
-|Vorschau der Ergebnisse der Inhaltssuche  <br/> |SearchPreviewed  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat eine Vorschau der Ergebnisse einer Inhaltssuche angezeigt.  <br/> |
+|HeruntergeLadener Export der Inhaltssuche  <br/> |SearchExportDownloaded  <br/> |–  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche auf den lokalen Computer heruntergeladen. Beachten Sie, dass ein **gestarteter Export der Inhaltssuche** initiiert werden muss, bevor Suchergebnisse heruntergeladen werden können.  <br/> |
+|Vorschau der Ergebnisse der Inhaltssuche  <br/> |SearchPreviewed  <br/> |–  <br/> |Ein Benutzer hat eine Vorschau der Ergebnisse einer Inhaltssuche angezeigt.  <br/> |
 |Bereinigte Ergebnisse der Inhaltssuche  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche gelöscht, indem er den Befehl **New-ComplianceSearchAction-Purge** ausführt.  <br/> |
 |Analyse der Inhaltssuche entfernt  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche Prepare-Aktion (zur Vorbereitung der Suchergebnisse für Office 365 Advanced eDiscovery) wurde gelöscht. Wenn die Vorbereitungs Aktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die für Advanced eDiscovery vorbereitet wurden, aus dem Microsoft Azure-Speicherbereich gelöscht. Wenn die Vorbereitungs Aktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Vorbereitungs Aktion gelöscht wurde.  <br/> |
 |Export der Inhaltssuche entfernt  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Exportaktion für Inhaltssuche wurde gelöscht. Wenn die Exportaktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die in den Microsoft Azure-Speicherbereich hochgeladen wurden, gelöscht. Wenn die Exportaktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Exportaktion gelöscht wurde.  <br/> |

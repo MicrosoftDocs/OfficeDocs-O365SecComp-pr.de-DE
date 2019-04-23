@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d053d236faed0ff35504207d6dd1beb33928acd3
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7830b483190a69e6055fae369580064c5df42f49
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958286"
 ---
 # <a name="add-search-results-to-a-working-set"></a>Hinzufügen von Suchergebnissen zu einem Arbeitssatz
 
@@ -34,3 +34,15 @@ Sie können dann einen vorhandenen Arbeitssatz oder einen *neuen Arbeitssatz*hin
 ![Auswählen eines Arbeitssatzes](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 Das Hinzufügen von Daten zu einem Workingset ist ein langwieriger Prozess, den Sie entweder auf der Registerkarte Aufträge oder in der Spalte *Arbeitssatz Status* auf der Registerkarte *Suchen* nachverfolgen können.  Das Verfahren umfasst das Sammeln von Elementen aus Office 365 und schließlich die &-Indizierung.  Sobald die Verarbeitung der Arbeitsmappe abgeschlossen ist, können Sie zum Arbeitssatz navigieren, indem Sie auf die Registerkarte *Working Sets* klicken und dann auf den Arbeitssatz klicken.  Sie können dann mit dem suchen, überprüfen, taggen und Exportieren relevanter Daten fortfahren.
+
+## <a name="adding-a-sample-to-a-working-set"></a>Hinzufügen eines Beispiels zu einem Workingset
+
+Wenn Sie Ihre Suchergebnisse vor dem Sammeln aller Dokumente, die von Ihrer Suche abgerufen wurden, überprüfen möchten, können Sie ein Zufalls Beispiel der Suchergebnisse zu einem Arbeitssatz hinzufügen, statt alles hinzuzufügen.
+
+Wenn Sie einer Arbeitsmappe ein Beispiel hinzufügen möchten, wählen Sie zunächst eine Suche aus, und klicken Sie dann im Suchergebnis-Flyout auf *Sample* -Schaltfläche.
+
+Sie können dann den Parameter für Ihr Sampling auswählen. Es gibt zwei Möglichkeiten:
+- Konfidenzniveau und Intervall: die Stichprobengröße wird ausgewählt, um die angegebenen statistischen Parameter zu erfüllen.
+- Prozentsatz: die Stichprobengröße wird anhand der Anzahl der von der Suche zurückgegebenen Elemente und des ausgewählten Parameters bestimmt.
+
+Wählen Sie schließlich den Arbeitssatz aus, dem das Beispiel hinzugefügt werden soll. Von dort aus können Sie den Status des Prozesses genau wie beim Hinzufügen einer vollständigen Suche in eine Arbeitsmappe überprüfen. 

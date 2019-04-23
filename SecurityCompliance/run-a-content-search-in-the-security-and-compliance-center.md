@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Verwenden Sie die Inhaltssuche im Security & Compliance Center, um Postfächer, SharePoint Online-Websites und OneDrive für Geschäftsstandorte zu durchsuchen. '
 ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958276"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Ausführen einer Inhaltssuche im Security & Compliance Center
 
@@ -45,13 +45,13 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
   
 [Update search results](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Bearbeiten einer Suche](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Erneutes Ausführen einer Suche](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Informationen und Anleitungen zum Erstellen von Suchabfragen und Verwenden von booleschen Suchoperatoren finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md). Dieser Artikel enthält auch Informationen zum Suchen nach vertraulichen Informationstypen und zum Suchen nach Inhalten, die für Personen innerhalb und außerhalb Ihrer Organisation freigegeben sind.
     
@@ -69,7 +69,7 @@ Die Inhaltssuche ist ein neues eDiscovery-Such Tool mit neuen und verbesserten S
     
     Im Abschnitt finden Sie Tipps zur Suche nach Inhalten in Office 365-Gruppen und Microsoft Teams. 
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
@@ -209,7 +209,7 @@ Darüber hinaus werden die folgenden Dateicontainer Typen unterstützt. Sie kön
     
 - . gzip
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Aktualisieren von Suchergebnissen
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Wenn Sie die Ergebnisse einer vorhandenen Inhaltssuche aktualisieren, wird die S
     
     Es wird eine Statusmeldung angezeigt, dass die Ergebnisse abgerufen werden. Wenn die Suche abgeschlossen ist, werden die aktualisierten Informationen unter **Ergebnisse** im Detailbereich angezeigt. Beachten Sie, dass das Datum im Feld **Durchsucht am** im Detailbereich auf das aktuelle Datum und die Uhrzeit aktualisiert wird. Klicken Sie ****![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif)aktualisieren, um die Informationen in der Liste der Inhalts Suchvorgänge zu aktualisieren.
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Bearbeiten einer Suche
 <a name="edit"> </a>
@@ -252,7 +252,7 @@ Wenn bei einer Suche Fehler zurückgegeben werden, müssen Sie nicht alle inhalt
     
     Es wird eine Statusmeldung angezeigt, dass die Ergebnisse abgerufen werden. Wenn die Suche abgeschlossen ist, werden im Detailbereich unter **Ergebnisse** die aktualisierten Informationen angezeigt. Beachten Sie, dass das Datum im Feld **Durchsucht am** im Detailbereich auf das aktuelle Datum und die Uhrzeit aktualisiert wird. Um die Informationen in der Liste der Suchvorgänge zu aktualisieren ****![, klicken Sie](media/O365-MDM-Policy-RefreshIcon.gif)auf Aktualisierungssymbol aktualisieren.
     
-[Zurück zum Seitenanfang](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Nach oben](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>Weitere Informationen
 <a name="moreinfo"> </a>
@@ -265,7 +265,8 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
  
 [Microsoft Teams und Office 365-Gruppen](#microsoft-teams-and-office-365-groups)
   
-[OneDrive for Business](#onedrive-for-business)
+
+  [OneDrive for Business](#onedrive-for-business)
   
 [Suchabfragen](#search-queries)
   
@@ -273,7 +274,7 @@ Hier finden Sie weitere Informationen zur Inhaltssuche.
   
 [Sonstiges](#miscellaneous)
   
-[Zurück zum Seitenanfang](#before-you-begin)
+[Return to top](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>Grenzen und Leistung
   

@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Anstatt die tatsächlichen Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 zu exportieren, können Sie einfach einen Suchergebnisbericht exportieren. Der Bericht enthält eine Zusammenfassung der Suchergebnisse und ein Dokument mit detaillierten Informationen zu jedem Element, das exportiert würde.
 ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958726"
 ---
 # <a name="export-a-content-search-report"></a>Exportieren eines Berichts für die Inhaltssuche
 
@@ -32,7 +32,7 @@ Anstatt den vollständigen Satz von Suchergebnissen aus einer Inhaltssuche im Se
   
 Wenn Sie einen Bericht exportieren, wird er in einen Ordner heruntergeladen, der den gleichen Namen wie die Inhaltssuche hat, aber mit *_ReportsOnly* angefügt wird. Wenn die Inhaltssuche beispielsweise " *ContosoCase0815* " heißt, wird der Bericht in einen Ordner mit dem Namen *ContosoCase0815_ReportsOnly* heruntergeladen. Eine Liste der Dokumente, die im Bericht enthalten sind, finden Sie unter [What es included in the Report](#whats-included-in-the-report).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Um einen Bericht über Inhaltssuche zu exportieren, muss Ihnen die Rolle Compliance Search Management im Security & Compliance Center zugewiesen werden. Diese Rolle wird den integrierten eDiscovery-Manager-und Organisations Verwaltungsrollengruppen zugewiesen. Sie wird der Rollengruppe Organisationsverwaltung nicht standardmäßig zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
