@@ -1,5 +1,5 @@
 ---
-title: Festlegen erweiterter Analyseeinstellungen in Office 365 Advanced eDiscovery
+title: Set analyze Advanced Settings in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'In diesem Artikel erfahren Sie, wie Sie erweiterte Einstellungen wie near-Duplicates, e-Mail-Threads und Designs für den Analyseprozess in Office 365 Advanced eDiscovery konfigurieren. '
 ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260858"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Festlegen erweiterter Analyseeinstellungen in Office 365 Advanced eDiscovery
+# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Set analyze Advanced Settings in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -29,7 +29,7 @@ Advanced eDiscovery bietet erweiterte Standardparameter für die Analyse von Mod
   
 1. Klicken Sie auf der Registerkarte **Setup Analyse \> \> vorbereiten** auf **Erweiterte Einstellungen** (am unteren Rand der Seite). Der folgende Bereich wird angezeigt. 
     
-    ![Analysieren erweiterter Einstellungen festlegen](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![Erweiterte Einstellungen für ANALYZE festlegen](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. Wählen Sie in den **Parametern near-Duplicates und Email Threads**die folgenden Werte aus:
     

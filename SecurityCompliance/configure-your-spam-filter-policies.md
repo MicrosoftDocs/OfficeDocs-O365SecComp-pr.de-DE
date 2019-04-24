@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Zu den grundlegenden spamfiltereinstellungen gehört das Auswählen der Aktion für Nachrichten, die als Spam identifiziert werden, und die Auswahl, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen geschrieben oder aus bestimmten Ländern oder Regionen gesendet werden.
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258813"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
   
-Zu den grundlegenden spamfiltereinstellungen gehört das Auswählen der Aktion für Nachrichten, die als Spam identifiziert werden. Einstellungen für Spam Filterrichtlinien werden nur auf eingehende Nachrichten angewendet. Sie können die standardmäßige Spamfilter Richtlinie bearbeiten, um Ihre unternehmensweiten spamfiltereinstellungen zu konfigurieren und benutzerdefinierte Spamfilter Richtlinien zu erstellen und diese dann auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anzuwenden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Reihenfolge ändern, in der die benutzerdefinierten Richtlinien ausgeführt werden, indem Sie die Priorität der einzelnen benutzerdefinierten Richtlinien ändern. Es gilt jedoch nur die Richtlinie mit der höchsten Priorität, wenn mehrere Richtlinien den festgelegten Kriterien entsprechen. 
+Zu den grundlegenden spamfiltereinstellungen gehört das Auswählen der Aktion für Nachrichten, die als Spam identifiziert werden. Einstellungen für Spam Filterrichtlinien werden nur auf eingehende Nachrichten angewendet. Sie können die standardmäßige Spamfilter Richtlinie bearbeiten, um Ihre unternehmensweiten spamfiltereinstellungen zu konfigurieren und benutzerdefinierte Spamfilter Richtlinien zu erstellen und diese dann auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anzuwenden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Reihenfolge ändern, in der die benutzerdefinierten Richtlinien ausgeführt werden, indem Sie die Priorität der einzelnen benutzerdefinierten Richtlinien ändern. Es gilt jedoch nur die Richtlinie mit der höchsten Priorität, wenn mehrere Richtlinien den festgelegten Kriterien entsprechen.
   
 > [!IMPORTANT]
 > Für Kunden der eigenständigen Exchange Online Protection (EOP)-Lösung: Standardmäßig leiten die EOP-Spamfilter als Spam erkannte Nachrichten an den Junk-E-Mail-Ordner der einzelnen Empfänger weiter. Um jedoch sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** für lokale Postfächer funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um Spam Kopfzeilen zu finden, die von EoP. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 

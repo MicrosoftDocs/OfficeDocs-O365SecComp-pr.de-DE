@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: Die frühere Version der Office 365-Nachrichtenverschlüsselung hängt von der Microsoft Azure Rights Management (früher als Windows Azure Active Directory Rights Management bezeichnet) ab.
 ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266887"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung
 
@@ -36,7 +36,7 @@ Office 365 Nachrichtenverschlüsselung (OM), einschließlich IRM, hängt von Azu
 
 - Wenn Sie nicht über ein Azure RMS-Abonnement für Exchange Online oder Exchange Online Protection verfügen, müssen Sie ein Abonnement erwerben und es zuerst aktivieren.
 
-    Informationen zum Erwerb eines Abonnements für die Azure-Rechteverwaltung finden Sie unter [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). Im nächsten Abschnitt erhalten Sie Informationen zum Aktivieren der Azure-Rechteverwaltung.
+    Informationen zum Erwerb eines Abonnements für die Azure-Rechteverwaltung finden Sie unter [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). Der folgende Abschnitt enthält Informationen zur Aktivierung von Azure Rights Management.
 
 - Wenn Sie über Azure Rights Management verfügen, es aber nicht für Exchange Online oder Exchange Online Protection eingerichtet ist, wird in diesem Artikel erläutert, wie Sie die Azure-Rechteverwaltung aktivieren und dann die beste Möglichkeit zum Einrichten von OM für die Verwendung der Azure-Rechteverwaltung.
 
@@ -59,7 +59,7 @@ Ein TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rech
 
 2. Wählen Sie die URL für die Schlüssel Freigabe aus, die dem geografischen Standort Ihrer Office 365-Organisation entspricht:
 
-|**Standort**|**URL für die Schlüssel Freigabeadresse**|
+|**Location**|**URL für die Schlüssel Freigabeadresse**|
 |:-----|:-----|
 |Nordamerika  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Europäische Union  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
@@ -107,7 +107,7 @@ Ein TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rech
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
-8. Verwenden Sie das Cmdlet Test-IRMConfiguration, um zu überprüfen, ob Sie die TPD und die Azure-Rechteverwaltung aktiviert haben, um die Azure-Rechte Verwaltungsfunktion zu testen. Weitere Informationen finden Sie unter "Beispiel 1" in [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
+8. Verwenden Sie das Cmdlet Test-IRMConfiguration, um zu überprüfen, ob Sie die TPD und die Azure-Rechteverwaltung aktiviert haben, um die Azure-Rechte Verwaltungsfunktion zu testen. Details finden Sie in "Beispiel 1" unter [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
     
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Ich habe die frühere Version von OM mit der Active Directory-Rechteverwaltung eingerichtet, nicht mit Azure Information Protection, was kann ich tun?
 <a name="importTPDs"> </a>

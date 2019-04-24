@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 2611205a41b9113c0ca30f787c119806d75f35c8
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243796"
 ---
 # <a name="limits-in-advanced-ediscovery-preview"></a>Grenzwerte in Advanced eDiscovery (Vorschau)
 
@@ -25,25 +25,33 @@ In diesem Artikel werden die Grenzwerte für Advanced eDiscovery (Preview) besch
 
 ## <a name="case-limits"></a>Fall Grenzwerte
 
+In der folgenden Tabelle sind die Grenzwerte für Fälle in Advanced eDiscovery (Preview) aufgeführt.
+
+|**Beschreibung der Beschränkung**|**Grenzwert**|
+  |:-----|:-----|
+  |Maximale Anzahl von Fällen.  <br/> |50  <br/> |
+  |Gesamtanzahl der Dokumente, die einem Fall hinzugefügt werden können (für alle Arbeitsmappen im Fall).  <br/> |1 Million  <br/> |
+  |Gesamtgröße der Datei pro Ladevorgang.  <br/> |100 GB  <br/> |
+  |Maximale Größe einer einzelnen Datei.   <br/> |100 MB <sup>1</sup> <br/> |
+  |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen <sup>1</sup> <br/> |
+  |Tiefe der eingebetteten Elemente in einem Dokument.  <br/> |25 <sup>1</sup> <br/> |
+|||
+ > [!NOTE]
+> <sup>1</sup> alle Elemente, die einen einzelnen Datei Grenzwert überschreiten, werden als Verarbeitungsfehler angezeigt. 
+
 ## <a name="indexing-limits"></a>Indizierungsgrenzwerte
+
+Inhalt bald verfügbar.
 
 ## <a name="search-limits"></a>Suchgrenzen
 
-## <a name="working-set-limits"></a>Grenzwerte für Arbeitssätze
-
-In der folgenden Tabelle sind die Grenzwerte für Working Sets in Advanced eDiscovery (Preview) aufgeführt.  Alle Elemente, die die maximale Anzahl der einzelnen Dateien überschreiten, werden als Verarbeitungsfehler angezeigt.
-    
-  |**Beschreibung der Beschränkung**|**Grenzwert**|
-  |:-----|:-----|
-  |Maximale Anzahl von Arbeitsmappen  <br/> |50  <br/> |
-  |Gesamtanzahl der Dokumente, die in einen Fall aufgenommen werden können (für alle Arbeitsmappen im Fall)  <br/> |1 Mio.  <br/> |
-  |Gesamtgröße der Datei pro Ladevorgang  <br/> |100 GB  <br/> |
-  |Maximale Größe einer einzelnen Datei   <br/> |100 MB  <br/> |
-  |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen  <br/> |
-  |Tiefe der eingebetteten Elemente in einem Dokument  <br/> |25  <br/> |
-  
+Inhalt bald verfügbar.
 
 ## <a name="export-limits"></a>Exportgrenzwerte
 
+Inhalt bald verfügbar.
+
 ## <a name="download-limits"></a>Grenzwerte für Downloads
+
+Inhalt bald verfügbar.
 

@@ -1,5 +1,5 @@
 ---
-title: FunktionsWeise von DLP zwischen Security & Compliance Center und Exchange Admin Center
+title: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Erfahren Sie, wie DLP im Security & Compliance Center mit DLP-und Nachrichtenfluss Regeln (Transportregeln) in der Exchange-Verwaltungskonsole arbeitet.
 ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254928"
 ---
-# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>FunktionsWeise von DLP zwischen Security & Compliance Center und Exchange Admin Center
+# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
 
 In Office 365 können Sie eine DLP-Richtlinie (Data Loss Prevention, Datenverlust-Verhinderung) in zwei verschiedenen Verwaltungs Centern erstellen:
   

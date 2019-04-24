@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252138"
 ---
 # <a name="non-accepted-domain-report"></a>Bericht über nicht akzeptierte Domänen
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel wird das neue Tool für Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257718"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen in Microsoft 365
 
@@ -43,9 +43,9 @@ Verwenden Sie die Registerkarte **Evidence** , um die Daten zu untersuchen, die 
 
 Sie können auch erweiterte Analysen zu den gesammelten beweisen ausführen. Auf diese Weise können Sie allgemeine Designs bereitstellen und Nachweise durch e-Mail-Threads, exakte Duplikate und beinahe-Duplikate organisieren, um die Untersuchung zu erleichtern. Sie können Dokumente in der extrahierten Textansicht oder im systemeigenen Dateiformat überprüfen und Sie mit Untersuchungsergebnissen versehen. Weitere Informationen finden Sie unter:
 
-  - [Über Prüfdaten in Evidence](review-data-in-evidence.md)
+  - [Überprüfen von Nachweisdaten](review-data-in-evidence.md)
 
-  - [Führen Sie Analysen aus, um schneller zu untersuchen](run-analytics-to-investigate-faster.md)
+  - [Durchführen von Analysen zur schnelleren Untersuchung](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>Verwalten von Personen mit Interesse

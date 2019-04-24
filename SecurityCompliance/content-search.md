@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Inhaltssuche-Tool im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Keyword-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzuschränken. Dann können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist auch ein effektives Tool, um nach Inhalten zu suchen, die möglicherweise mit einer DSGVO-Anforderung verbunden sind.
 ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264077"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
@@ -159,9 +159,9 @@ So exportieren Sie Suchergebnisse:
     
 Ausführlichere Anweisungen und Tipps zur Problembehandlung finden Sie unter:
   
-- [Exportieren von Inhaltssuchergebnissen](export-search-results.md)
+- [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
     
-- [Exportieren eines Berichts für die Inhaltssuche](export-a-content-search-report.md)
+- [Exportieren eines Inhaltssuchberichts](export-a-content-search-report.md)
     
   
 ## <a name="more-information-about-content-search"></a>Weitere Informationen zur Inhaltssuche

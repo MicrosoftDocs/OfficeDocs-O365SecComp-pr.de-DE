@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: Als Office 365-Administrator können Sie bestimmte e-Mails, die mit der Office 365-Nachrichtenverschlüsselung verschlüsselt wurden, widerrufen.
 ms.openlocfilehash: 75b5e46e25f447ddac0de5a7911d0df8385da6b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264822"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>E-Mail-Sperrung für Office 365-Nachrichtenverschlüsselung
 
@@ -39,7 +39,7 @@ Sobald eine e-Mail gesperrt wurde, erhält der Empfänger beim Versuch, über da
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>So widerrufen Sie eine verschlüsselte e-Mail
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>Schritt 1. Abrufen der Nachrichten-ID der e-Mail
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>Schritt 1: Abrufen der Nachrichten-ID der e-Mail
 
 Bevor Sie eine verschlüsselte e-Mail widerrufen können, müssen Sie die Nachrichten-ID der e-Mail sammeln. Die MessageId hat normalerweise das folgende Format:
 
@@ -58,7 +58,7 @@ Es gibt mehrere Möglichkeiten, die Nachrichten-ID der e-Mail zu finden, die Sie
 2. Wählen Sie die Tabelle **Details anzeigen** aus, und identifizieren Sie die Nachricht, die Sie widerrufen möchten.
 3. Doppelklicken Sie auf die Nachricht, um Details anzuzeigen, die die nachRichten-ID aufweisen.
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>Schritt 2. Überprüfen, ob die e-Mail widerruflich ist
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Schritt 2: Überprüfen, ob die e-Mail widerruflich ist
 
 Führen Sie die folgenden Schritte aus, um zu überprüfen, ob eine bestimmte e-Mail-Nachricht widerrufen werden kann.
 
@@ -69,7 +69,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob eine bestimmte e-
      Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
      ```
 
-   Dieser gibt den Betreff der Nachricht zurück und gibt an, ob die Nachricht widerruflich ist. Zum Beispiel
+   Dieser gibt den Betreff der Nachricht zurück und gibt an, ob die Nachricht widerruflich ist. For example,
 
      ```text
      Subject IsRevocable
@@ -77,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob eine bestimmte e-
      “Test message”  True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Schritt 3. Widerrufen der e-Mail  
+### <a name="step-3-revoke-the-mail"></a>Schritt 3: Widerrufen der e-Mail  
 
 Nachdem Sie die nachRichten-ID der e-Mail, die Sie widerrufen möchten, kennen und sichergestellt haben, dass die Nachricht widerruflich ist, können Sie die e-Mail mithilfe des Cmdlets Set-OMEMessageRevocation widerrufen.
 

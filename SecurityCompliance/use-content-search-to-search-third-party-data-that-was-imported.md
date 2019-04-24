@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche, um nach Elementen zu suchen, die in Postfächer in Office 365 aus einer Drittanbieter-Datenquelle importiert wurden. Sie können eine Abfrage erstellen, um nach allen importierten Elementen zu suchen, oder eine Abfrage erstellen, um nach bestimmten Drittanbieter Datentypen zu suchen. In diesem Artikel werden die Werte aufgelistet, die Sie in einer Stichwortabfrage verwenden können, um die Drittanbieter-Datentypen zu durchsuchen, die in Office 365 importiert werden können.
 ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263777"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden
 

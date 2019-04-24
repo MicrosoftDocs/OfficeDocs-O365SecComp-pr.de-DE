@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243768"
 ---
 # <a name="close-or-delete-a-case"></a>Schließen oder Löschen eines Falls
 
@@ -27,7 +27,7 @@ Wenn der von einem eDiscovery-Fall unterstützte Rechtsfall oder die Untersuchun
 
 - Wenn die Groß-/Kleinschreibung inhaltsspeicherorte enthält, wird diese Sperre deaktiviert. Dies kann dazu führen, dass Inhalte dauerhaft gelöscht oder entfernt werden, entweder durch den Benutzer oder durch einen automatisierten Prozess wie eine Löschrichtlinie.
 
-- Durch das Schließen einer Groß-/Kleinschreibung werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere aufbewahrungsbereiche an einem Inhaltsspeicherort platziert werden (beispielsweise in einem Rechtsstreit. eine erHaltungs Richtlinie oder ein Einhalt aus einem anderen eDiscovery-Fall), werden diese Haltestatus weiterhin beibehalten.
+- Durch das Schließen einer Groß-/Kleinschreibung werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere Haltebereiche an einem Inhaltsspeicherort platziert werden (beispielsweise in einem Rechtsstreit. eine erHaltungs Richtlinie oder eine Aufbewahrungspflicht aus einem anderen eDiscovery-Fall) Diese gilt weiterhin.
 
 - Der Fall wird weiterhin auf der eDiscovery-Seite im Security & Compliance Center aufgeführt. Die Details, Haltestatus, suchen und Elemente einer geschlossenen Groß-/Kleinschreibung werden beibehalten.
 

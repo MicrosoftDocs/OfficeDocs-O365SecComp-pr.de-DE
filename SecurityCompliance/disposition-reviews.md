@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, die Inhalte in Microsoft 365 speichert, können Sie eine Disposition-Überprüfungen am Ende des Aufbewahrungszeitraums auslösen.
 ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257328"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über die Disposition Reviews
 

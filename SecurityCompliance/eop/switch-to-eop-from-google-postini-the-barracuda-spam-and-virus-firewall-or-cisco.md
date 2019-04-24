@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: In diesem Thema wird erläutert, wie Sie das Verfahren für das Wechseln zu Exchange Online Protection (EOP) von einer lokalen e-Mail-Hygiene-Appliance oder einem cloudbasierten Schutzdienst verstehen und Ihnen dann Hilferessourcen für die ersten Schritte zur Verfügung stellen können.
 ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30899954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256203"
 ---
-# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
+# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Wechseln zu EOP von Google Postini, Barracuda Spam & Virus Firewall oder Cisco IronPort
 
  In diesem Thema wird der Wechsel von einer lokalen E-Mail-Schutzvorrichtung oder einem cloudbasierten Schutzdienst zu Exchange Online Protection (EOP) näher erläutert. Zur Erleichterung des Einstiegs werden hier außerdem einige Hilferessourcen genannt. Es gibt zahlreiche Lösungen zum Filtern von Spam, doch läuft der Wechsel zu EOP in den meisten Fällen ähnlich ab.
   

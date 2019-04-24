@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zur Beurteilung in Office 365 Advanced eDiscovery
+title: Verstehen von Relevanz in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Hier erhalten Sie einen Überblick über die Bewertungsstufe und ihre Rolle bei der Ermittlung der reichhaltigen Probleme beim Relevanz-Training in Office 365 Advanced eDiscovery.
 ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250202"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Grundlegendes zur Beurteilung in Office 365 Advanced eDiscovery
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Verstehen von Relevanz in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

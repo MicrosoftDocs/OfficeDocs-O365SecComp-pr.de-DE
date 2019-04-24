@@ -1,9 +1,8 @@
 ---
-title: Exportieren von Berichtsfeldern in Office 365 Advanced eDiscovery
+title: Exportieren von Berichtfeldern in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Beschreibt alle Felder, die in den Export Berichten für Advanced eDiscovery enthalten sind.
-ms.openlocfilehash: a910fa94a1361e48099ef5792ce93d5934fdccc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255463"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportieren von Berichtsfeldern in Office 365 Advanced eDiscovery
+# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportieren von Berichtfeldern in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -31,7 +30,7 @@ In diesem Thema werden die erweiterten eDiscovery-Export Bericht Felder für die
 
 In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
   
-|**Name des Export Felds**|**Gruppe**|**Beschreibung**|**Verfügbar in Standard Vorlage**|**Verfügbar in allen Vorlagen**|
+|**Name des Export Felds**|**Group**|**Beschreibung**|**Verfügbar in Standard Vorlage**|**Verfügbar in allen Vorlagen**|
 |:-----|:-----|:-----|:-----|:-----|
 |ROW_NUMBER  <br/> |Allgemein  <br/> |Zeilennummer.  <br/> |Ja  <br/> |Ja  <br/> |
 |File_ID  <br/> |Allgemein  <br/> |Datei-ID.  <br/> |Ja  <br/> |Ja  <br/> |
@@ -104,14 +103,14 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
 |Export_status_ID  <br/> |Verarbeitung  <br/> |ID des Exportstatus.  <br/> |Ja  <br/> |Ja  <br/> |
 |Export_status_description  <br/> |Verarbeitung  <br/> |Beschreibung des Exportstatus; erfolgreiche oder Fehlerbeschreibung.  <br/> |Ja  <br/> |Ja  <br/> |
 |Read_percent  <br/> |Relevanz  <br/> |Lesen Sie% (0-100). Pro Problem.  <br/> |Ja  <br/> |Ja  <br/> |
-|Doc_author  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Author.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_comments  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Kommentare.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_keywords  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Schlüsselwörter.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_last_saved_by  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: zuletzt gespeichert von.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_revision  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Revisionsnummer.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_subject  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Betreff.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_template  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Vorlage.  <br/> |Nein  <br/> |Ja  <br/> |
-|Doc_title  <br/> |Dokumenteigenschaften  <br/> |Dokumenteigenschaften: Title.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_author  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Author.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_comments  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Kommentare.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_keywords  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Schlüsselwörter.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_last_saved_by  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: zuletzt gespeichert von.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_revision  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Revisionsnummer.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_subject  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Betreff.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_template  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Vorlage.  <br/> |Nein  <br/> |Ja  <br/> |
+|Doc_title  <br/> |Document-Eigenschaften  <br/> |Dokumenteigenschaften: Title.  <br/> |Nein  <br/> |Ja  <br/> |
 |Email_has_attachment  <br/> |E-Mail  <br/> |Gibt an, ob die e-Mail eine oder mehrere Anlagen enthält.  <br/> |Nein  <br/> |Ja  <br/> |
 |Email_importance  <br/> |E-Mail  <br/> |Eigenschaft für e-Mail-Wichtigkeit.  <br/> |Nein  <br/> |Ja  <br/> |
 |Email_level  <br/> |E-Mail  <br/> |Gibt die e-Mail-Ebene im e-Mail-Thread an. Für Anlagen der Wert der angefügten e-Mail.  <br/> |Nein  <br/> |Ja  <br/> |
@@ -125,8 +124,8 @@ In der folgenden Tabelle sind die Felder für jede Exportvorlage aufgeführt.
 |Has_Text  <br/> |Verarbeitung  <br/> |Gibt an, ob ein Text in der Datei vorhanden ist: 0-Nein; 1-ja.  <br/> |Nein  <br/> |Ja  <br/> |
 |Input_file_ID  <br/> |Verarbeitung  <br/> |ID der Eingabedatei, aus der die Datei extrahiert wurde.  <br/> |Nein  <br/> |Ja  <br/> |
 |Native_SHA_256  <br/> |Verarbeitung  <br/> |SHA-256-Hashwert der systemeigenen Datei.  <br/> |Nein  <br/> |Ja  <br/> |
-|O365_authors  <br/> |Dokumenteigenschaften  <br/> |Benutzer, die systemeigene Dateien aus SharePoint-oder Exchange-Feldern geändert haben.  <br/> |Nein  <br/> |Ja  <br/> |
-|O365_created_by  <br/> |Dokumenteigenschaften  <br/> |Benutzer, der systemeigene Dateien erstellt hat, die aus SharePoint-oder Exchange-Feldern entnommen wurden.  <br/> |Nein  <br/> |Ja  <br/> |
+|O365_authors  <br/> |Document-Eigenschaften  <br/> |Benutzer, die systemeigene Dateien aus SharePoint-oder Exchange-Feldern geändert haben.  <br/> |Nein  <br/> |Ja  <br/> |
+|O365_created_by  <br/> |Document-Eigenschaften  <br/> |Benutzer, der systemeigene Dateien erstellt hat, die aus SharePoint-oder Exchange-Feldern entnommen wurden.  <br/> |Nein  <br/> |Ja  <br/> |
 |Parent_node  <br/> |E-Mail  <br/> |Verknüpft einen Knoten in einem e-Mail-Thread mit dem nächstgelegenen übergeordneten Knoten, der kein fehlender Link ist.  <br/> |Nein  <br/> |Ja  <br/> |
 |Set_order_inclusives_first  <br/> |E-Mail  <br/> |E-Mails und Anhänge: Zähler chronologische Reihenfolge (einschließlich zuerst). Documents: pivotiert zuerst und der Rest nach Ähnlichkeits Bewertung absteigend.  <br/> |Nein  <br/> |Ja  <br/> |
 |Tagged_By  <br/> |Relevanz  <br/> |Der Benutzer, der die Datei für das jeweilige Problem relevant markiert hat.  <br/> |Nein  <br/> |Ja  <br/> |

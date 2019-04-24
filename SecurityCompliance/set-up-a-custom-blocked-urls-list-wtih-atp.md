@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Office 365 Advanced Threat Protection eine Liste blockierter URLs für Ihre Organisation einrichten. Die blockierten URLs gelten für e-Mail-Nachrichten und Office-Dokumente gemäß ihren Richtlinien für ATP Safe Links.
 ms.openlocfilehash: c5444e644a35688ea626004fbc6865df4ae645f9
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264517"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-sicheren Links
 
@@ -76,7 +76,7 @@ Beachten Sie beim Hinzufügen von URLs zu Ihrer Liste die folgenden Punkte:
     
 |**Beispieleintrag**|**Funktionsweise**|
 |:-----|:-----|
-|`contoso.com`oder`*contoso.com*`  <br/> |Blockiert die Domäne, Unterdomänen und Pfade, wie `https://www.contoso.com` `http://sub.contoso.com`, und`http://contoso.com/abc`  <br/> |
+|`contoso.com` oder `*contoso.com*`  <br/> |Blockiert die Domäne, Unterdomänen und Pfade, wie `https://www.contoso.com` `http://sub.contoso.com`, und`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Blockiert eine Website `http://contoso.com/a` , jedoch keine zusätzlichen Unterpfade wie`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Blockiert eine Website `http://contoso.com/a` und weitere Unterpfade wie`http://contoso.com/a/b`  <br/> |
 |`http://toys.contoso.com*`  <br/> |Blockiert eine Unterdomäne (in diesem Fall "Toys"), ermöglicht jedoch das Klicken auf andere Domänen- `http://contoso.com` URLs `http://home.contoso.com`(wie oder).  <br/> |

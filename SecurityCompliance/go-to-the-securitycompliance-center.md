@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
 description: Bevor Sie das Security &amp; Compliance Center verwenden können, benötigen Sie die entsprechenden Berechtigungen. Ihrem Geschäfts-oder Schulkonto muss entweder die Rolle "Office 365-globaler Administrator" zugewiesen sein oder einem oder mehreren Rollen &amp; Gruppen im Security Compliance Center von einem globalen Administrator zugewiesen worden sein.
 ms.openlocfilehash: a4d6c1a62047728517316199b5ad555d1996a497
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256488"
 ---
 # <a name="go-to-the-office-365-security-amp-compliance-center"></a>Wechseln Sie zum Office 365 Security &amp; Compliance Center.
 

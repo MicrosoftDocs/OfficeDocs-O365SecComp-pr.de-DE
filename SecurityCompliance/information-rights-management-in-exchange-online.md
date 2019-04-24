@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: Häufig werden vertrauliche Informationen wie Finanzdaten, Verträge, vertrauliche Produktinformationen, Verkaufsberichte und -prognosen oder Patienten-, Kunden- und Mitarbeiterdaten per E-Mail ausgetauscht. Postfächer können daher zu Repositories großer Mengen potenziell vertraulicher Informationen werden, und Informationsverluste können eine ernstzunehmende Bedrohung für die Organisation darstellen.
 ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253983"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Verwaltung von Informationsrechten in Exchange Online
 

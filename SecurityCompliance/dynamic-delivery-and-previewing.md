@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Bei der Einrichtung Ihrer Richtlinien für sichere ATP-Anlagen wählen Sie dynamische Übermittlung aus, um Verzögerungen bei Nachrichten zu vermeiden und Personen eine Vorschau der zu überprüfenden Anhänge zu ermöglichen.
 ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257223"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische bereit-und Vorschau mit Office 365 ATP Safe Attachments
 

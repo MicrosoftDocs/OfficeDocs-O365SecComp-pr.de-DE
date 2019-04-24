@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240977"
 ---
 # <a name="themes"></a>Designs
 Wie schreibt ein Benutzer ein Dokument? Sie beginnen im Allgemeinen mit einem oder mehreren Ideen, die Sie im Dokument vermitteln möchten, und verfassen mit Wörtern, die sich an den Ideen ausrichten. Je verbreiteter eine Idee ist, desto häufiger sind die Wörter, die mit dieser Idee in Verbindung stehen, in der Regel. Dies informiert darüber, wie Benutzer Dokumente auch nutzen; wichtig beim Lesen eines Dokuments ist die Idee, die das Dokument zu vermitteln versucht, und welche Ideen dort angezeigt werden und welche Beziehungen zwischen den Ideen bestehen.

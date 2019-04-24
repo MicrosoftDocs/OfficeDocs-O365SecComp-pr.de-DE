@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität (DMARC) konfigurieren, um Nachrichten zu überprüfen, die von Ihrer Office 365-Organisation gesendet werden.
 ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263727"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Überprüfen von E-Mails in Office 365
 

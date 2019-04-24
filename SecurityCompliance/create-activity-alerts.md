@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Hinzufügen und Verwalten von Aktivitäts Benachrichtigungen im Security and Compliance Center, damit Office 365 Ihnen e-Mail-Benachrichtigungen sendet, wenn Benutzer bestimmte Aktivitäten in Office 365 ausführen.
 ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258673"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Erstellen von Aktivitäts Warnungen in Office 365
 
@@ -31,7 +31,7 @@ Sie können eine Aktivitäts Warnung erstellen, die Ihnen eine e-Mail-Benachrich
 > [!NOTE]
 > Es wird empfohlen, Warnungsrichtlinien im Security and Compliance Center zu verwenden, anstatt neue Aktivitäts Warnungen zu erstellen. Warnungsrichtlinien bieten zusätzliche Funktionen wie die Möglichkeit, eine Warnungs Richtlinie zu erstellen, die eine Warnung auslöst, wenn ein beliebiger Benutzer eine bestimmte Aktivität ausführt, und Warnungen auf der Seite **Warnungen anzeigen** im Security and Compliance Center anzuzeigen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](alert-policies.md).
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen die Organisations Konfigurationsdatei im Security & Compliance Center besitzen, um Aktivitäts Warnungen zu verwalten. Diese Rolle wird standardmäßig den Rollengruppen "Compliance-Administrator" und "Organisationsverwaltung" zugewiesen. Weitere Informationen zum Hinzufügen von Mitgliedern zu Rollengruppen finden Sie unter [Gewähren von Benutzern Zugriff auf das Security _AMP_ Compliance Center](grant-access-to-the-security-and-compliance-center.md).
     

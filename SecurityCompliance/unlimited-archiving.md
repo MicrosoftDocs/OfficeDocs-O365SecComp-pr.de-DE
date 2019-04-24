@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über die automatische Erweiterung der Archivierung in Office 365, die unbegrenzten Archivspeicher für Exchange Online-Postfächer bereitstellt.
 ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265932"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die unbegrenzte Archivierung in Office 365
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Beschreibungen zusätzlicher Eigenschaften, die in einem Office 365-Überwachungsprotokolldaten Satz enthalten sind.
 ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257648"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll
 
@@ -71,7 +71,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die in Abhängigk
 |ResultStatus|Gibt an, ob die Aktion (in der Eigenschaft " **Operation** " angegeben) erfolgreich war oder nicht.  <br/> Bei Exchange-Verwaltungsaktivitäten ist der Wert entweder **true** (erfolgreich) oder **false** (Fehler).|Alle  <br/>|
 |SecurityComplianceCenterEventType|Gibt an, dass die Aktivität ein Security & Compliance Center-Ereignis war. Alle Security & Compliance Center-Aktivitäten haben den Wert **0** für diese Eigenschaft.|Security & Compliance Center|
 |SharingType|Der Typ der Freigabeberechtigungen, die dem Benutzer zugewiesen wurden, für den die Ressource freigegeben wurde. Dieser Benutzer wird in der **UserSharedWith** -Eigenschaft identifiziert.|SharePoint|
-|Website|Die GUID der Website, auf der sich die Datei oder der Ordner, auf die bzw. den der Benutzer zugegriffen hat, befindet.|SharePoint|
+|Site|Die GUID der Website, auf der sich die Datei oder der Ordner, auf die bzw. den der Benutzer zugegriffen hat, befindet.|SharePoint|
 |SiteUrl|Die URL der Website, auf der sich die Datei oder der Ordner, auf die bzw. den der Benutzer zugegriffen hat, befindet.|SharePoint|
 |SourceFileExtension|Die Erweiterung der Datei, auf die der Benutzer zugegriffen hat. Diese Eigenschaft ist leer, wenn das Objekt, auf das zugegriffen wurde, ein Ordner ist.|SharePoint|
 |SourceFileName|Der Name der Datei oder des Ordners, auf die der Benutzer zugegriffen hat.|SharePoint|

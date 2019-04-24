@@ -1,5 +1,5 @@
 ---
-title: Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen
+title: Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: In diesem Artikel erfahren Sie, wie Sie Inhalts Suchaufgaben wie das Erstellen von Suchvorgängen und das Ausführen von &amp; Berichten über PowerShell-Skripts im Office 365 Security Compliance Center automatisieren.
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: In diesem Artikel erfahren Sie, wie Sie Inhalts Suchaufgaben wie das Erstellen von Suchvorgängen und das Ausführen von Berichten über PowerShell-Skripts im Security & Compliance Center in Office 365 automatisieren.
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258438"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Berichten über und Löschen mehrerer Inhaltssuchen
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>Erstellen, Ausführen von Berichten und Löschen mehrerer Inhaltssuchen
 
- Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie versuchen, Informationen zu den zugrunde liegenden Daten sowie zur Reichhaltigkeit und Qualität Ihrer Suchvorgänge zu erhalten. Um Ihnen dabei zu helfen, bietet das &amp; Security Compliance Center eine Reihe von Windows PowerShell-Cmdlets, mit denen zeitAufwändige Inhalts Suchaufgaben automatisiert werden. Diese Skripts bieten eine schnelle und einfache Möglichkeit, eine Reihe von Suchvorgängen zu erstellen, und führen dann Berichte der geschätzten Suchergebnisse aus, die Sie bei der Bestimmung der fraglichen Datenmenge unterstützen können. Sie können die Skripts auch verwenden, um unterschiedliche Versionen der Suchvorgänge zu erstellen, um die jeweils produzierten Ergebnisse zu vergleichen. Diese Skripts helfen Ihnen dabei, Ihre Daten schnell und effizient zu identifizieren und zu ermitteln. 
+ Das schnelle Erstellen und melden von Ermittlungs suchen ist häufig ein wichtiger Schritt in eDiscovery und Untersuchungen, wenn Sie versuchen, Informationen zu den zugrunde liegenden Daten sowie zur Reichhaltigkeit und Qualität Ihrer Suchvorgänge zu erhalten. Um Ihnen dabei zu helfen, bietet die Security & Compliance Center PowerShell eine Reihe von Cmdlets, mit denen zeitaufwändige Inhalts Suchaufgaben automatisiert werden. Diese Skripts bieten eine schnelle und einfache Möglichkeit, eine Reihe von Suchvorgängen zu erstellen, und führen dann Berichte der geschätzten Suchergebnisse aus, die Sie bei der Bestimmung der fraglichen Datenmenge unterstützen können. Sie können die Skripts auch verwenden, um unterschiedliche Versionen der Suchvorgänge zu erstellen, um die jeweils produzierten Ergebnisse zu vergleichen. Diese Skripts helfen Ihnen dabei, Ihre Daten schnell und effizient zu identifizieren und zu ermitteln. 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security &amp; Compliance Center sein, um die in diesem Thema beschriebenen Skripts ausführen zu können. 
+- Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security & Compliance Center sein, um die in diesem Thema beschriebenen Skripts ausführen zu können. 
     
 - Informationen zum Erfassen einer Liste der URLs für die OneDrive für Business-Websites in Ihrer Organisation, die Sie der CSV-Datei in Schritt 1 hinzufügen können, finden Sie unter [Erstellen einer Liste aller OneDrive-Standorte in Ihrer Organisation](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
     
@@ -68,7 +68,7 @@ Die CSV-Datei (Comma Separated Value), die Sie in diesem Schritt erstellen, enth
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Schritt 2: Herstellen einer Verbindung mit Security & Compliance Center PowerShell
 
-Der nächste Schritt besteht darin, Windows PowerShell mit dem Security &amp; Compliance Center für Ihre Organisation zu verbinden.
+Der nächste Schritt besteht darin, eine Verbindung zur Security & Compliance Center-PowerShell für Ihre Organisation herzustellen.
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `ConnectSCC.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die CSV-Datei gespeichert haben, in Schritt 1.
     
@@ -77,7 +77,7 @@ Der nächste Schritt besteht darin, Windows PowerShell mit dem Security &amp; Co
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. Öffnen Sie auf dem lokalen Computer Windows PowerShell, wechseln Sie zu dem Ordner, in dem sich das Skript befindet, das Sie im vorherigen Schritt erstellt haben, und führen Sie das Skript aus. Zum Beispiel:

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243635"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Bestätigen einer Aufbewahrungsbenachrichtigung 
 Wenn Sie auf eine behördliche Anfrage oder Untersuchung reagieren, müssen Sie möglicherweise die Depotbank über ihre Verpflichtung zur Aufbewahrung elektronisch gespeicherter Informationen (ESI) sowie alle Materialien informieren, die für eine aktive oder drohende Rechtsmaterie relevant sein können. Nach der Übermittlung müssen die rechtlichen Teams wissen, dass jeder Verwalter die angegebenen Anweisungen erhalten, gelesen und verstanden hat.

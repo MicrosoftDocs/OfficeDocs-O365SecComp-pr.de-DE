@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Enthält Sicherheitstipps für e-Mail-Nachrichten, die vom EOP-und Office 365-Spamfilter gefiltert werden.
 ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261443"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sicherheitstipps in e-Mail-Nachrichten in Office 365
 
@@ -58,7 +58,7 @@ Der Sicherheitstipp, eine farblich kodierte Nachricht, warnt Sie vor potenziell 
 
 Sicherheitstipps sind immer für Outlook im Web aktiviert, obwohl nicht jede Nachricht einen erhält. Office 365-Administratoren können Sicherheitstipps für andere e-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md).
   
-Wenn Sie nicht einverstanden sind, wie Office 365 und EOP eine Nachricht kategorisiert haben (das heißt, es handelt sich nicht um Spam, oder es ist nicht legitim), können Sie die Nachrichten zur Analyse übermitteln, um Ihre Erfahrung besser zu machen. Weitere Informationen finden Sie unter [melden von Junk-e-Mails und Phishing-Scams in Outlook im Web](https://technet.microsoft.com/library/dn594557.aspx). Sie können auch auf den Feedback-Link im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden, um uns zu verbessern.
+Wenn Sie nicht einverstanden sind, wie Office 365 und EOP eine Nachricht kategorisiert haben (das heißt, es handelt sich nicht um Spam, oder es ist nicht legitim), können Sie die Nachrichten zur Analyse übermitteln, um Ihre Erfahrung besser zu machen. Weitere Informationen finden Sie unter [Report junk email and phishing scams in Outlook on the web](https://technet.microsoft.com/library/dn594557.aspx). Sie können auch auf den Feedback-Link im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu senden, um uns zu verbessern.
   
 ## <a name="see-also"></a>Siehe auch
 

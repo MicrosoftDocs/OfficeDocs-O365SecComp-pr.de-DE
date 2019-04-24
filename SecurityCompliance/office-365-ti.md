@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sie bei der Suche nach Bedrohungen für Ihre Organisation unterstützen, auf Schadsoftware, Phishing und andere Angriffe reagieren, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen Indikatoren.
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265397"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 Bedrohungs Ermittlung und-Antwort
 
@@ -65,7 +65,7 @@ Verwenden Sie die folgenden Ressourcen, um mehr über die Möglichkeiten der Bed
 
 - [Verwenden des Bedrohungs-Explorers &amp; im Security Compliance Center](use-explorer-in-security-and-compliance.md)
     
-- [Suchen und untersuchen von übermittelten Schad-e-Mails](investigate-malicious-email-that-was-delivered.md)
+- [Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden](investigate-malicious-email-that-was-delivered.md)
     
 - [Verwenden des anGriffs Simulators](attack-simulator.md)
     
@@ -73,7 +73,7 @@ Verwenden Sie die folgenden Ressourcen, um mehr über die Möglichkeiten der Bed
     
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Ansichten des Bedrohungs-Explorers](threat-explorer-views.md)
+[Ansichten des Sicherheitsrisiken-Explorers](threat-explorer-views.md)
 
 [Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
   

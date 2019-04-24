@@ -10,11 +10,11 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das neue Microsoft 365 Compliance Center, einschließlich der enthaltenen Informationen, seiner Vorgehensweisen und der nächsten Schritte.
 ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265557"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Übersicht über das vollständig neue Microsoft 365 Compliance Center
 

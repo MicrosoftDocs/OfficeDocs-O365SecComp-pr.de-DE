@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Stop Verstöße und Lecks in Echtzeit mit Office 365 Cloud App Security Conditional Access app Control.
 ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262987"
 ---
 # <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Schützen von Apps mit der App-Steuerung für bedingten Zugriff in Office 365 Cloud App Security
 

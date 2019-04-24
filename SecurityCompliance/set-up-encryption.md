@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Bei Office 365 sind einige Verschlüsselungsfunktionen standardmäßig aktiviert. andere Funktionen können so konfiguriert werden, dass bestimmte Compliance-oder gesetzliche Anforderungen erfüllt werden.
 ms.openlocfilehash: 1bc4ceb7762c96f55c03f89e7c448f9e4073063e
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260793"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Einrichten von Verschlüsselung in Office 365 Enterprise
 

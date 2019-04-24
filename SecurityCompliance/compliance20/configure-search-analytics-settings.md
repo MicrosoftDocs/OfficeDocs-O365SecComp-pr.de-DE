@@ -15,14 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243191"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
-
 
 ## <a name="near-duplicates-and-email-threading"></a>Near-Duplikate und e-Mail-Threading
 
@@ -34,7 +33,8 @@ In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, fast dopp
 
 - Duplikate standardmäßig ausblenden: Wenn diese Einstellung aktiviert ist, wird standardmäßig ein Filter zum Ausblenden doppelter Dokumente angewendet. Der Filter kann bei Bedarf manuell im Arbeitssatz entfernt werden.
 
-- Minimale/maximale Anzahl von Wörtern: in der Nähe von Duplikaten und e-Mail-Threading wird nur für Dokumente ausgeführt, die mindestens die Mindestanzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen. Weitere Informationen finden Sie unter [near Duplicate Detection](near-duplicates.md) and [Email Threading](email-threading.md).
+- Minimale/maximale Anzahl von Wörtern: in der Nähe von Duplikaten und e-Mail-Threading wird nur für Dokumente ausgeführt, die mindestens die Mindestanzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen.
+Weitere Informationen finden Sie unter [near Duplicate Detection](near-duplicates.md) and [Email Threading](email-threading.md).
 
 ## <a name="themes"></a>Designs
 

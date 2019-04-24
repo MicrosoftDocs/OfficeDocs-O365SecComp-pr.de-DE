@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Mit Office 365 Cloud App Security können Sie sehen, was in Ihrer Office 365-Umgebung geschieht, indem Sie nach Aktivitäten und Konten suchen. '
 ms.openlocfilehash: 0cc3860d953b40b0b0c247af6fb2b157d1abb235
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254833"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Untersuchen einer Aktivität in Office 365 Cloud App Security
   

@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: Weitere Informationen zu Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
 ms.openlocfilehash: f68345f4041d4fae9d35f38ea2b80af5dee7c762
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243336"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO Workshop-Modul 5: Informationsschutz
 

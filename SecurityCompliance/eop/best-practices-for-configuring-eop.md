@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten.
 ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256643"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Bewährte Methoden für das Konfigurieren von EOP
   

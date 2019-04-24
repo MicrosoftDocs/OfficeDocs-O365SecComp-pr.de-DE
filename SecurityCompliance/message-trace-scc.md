@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265627"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -109,7 +109,7 @@ Dieser Wert ist für die Lebensdauer der Nachricht konstant. Bei Nachrichten, di
 
 Wenn Sie die nach **richten-ID** zum Filtern der Ergebnisse verwenden, achten Sie darauf, dass Sie die vollständige Zeichenfolge einschließlich aller eckigen Klammern einschließen.
 
-#### <a name="direction"></a>Direction
+#### <a name="direction"></a>Richtung
 
 Sie können den Standardwert **alle** ausgewählt lassen, oder Sie können **eingehende** (an Empfänger in Ihrer Organisation gesendete Nachrichten) oder **ausgehende** (Nachrichten, die von Benutzern in Ihrer Organisation gesendet werden) zum Filtern der Ergebnisse auswählen.
 

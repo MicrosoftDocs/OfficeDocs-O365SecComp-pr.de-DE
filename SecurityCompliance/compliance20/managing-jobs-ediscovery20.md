@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e5f7c6d0f0932041ef92591afcb59ad836cae0e4
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 9898e3c4861da8dbd90168622395981f34aaa510
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240900"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Verwalten von Aufträgen in Advanced eDiscovery (Preview)
 
@@ -41,3 +41,17 @@ Hier finden Sie eine Liste der Aufträge (bei denen es sich in der Regel um lang
 |Running Analytics | Ein Benutzer analysiert Daten in einem Arbeitssatz, indem er erweiterte eDiscovery Analytics-Tools wie near Duplicate Detection, e-Mail-Threading-Analyse und Design Analyse ausführt. Weitere Informationen finden Sie unter [Analysieren von Daten in einem Arbeitssatz](analyzing-data-in-working-set.md). | 
 |Markieren von Dokumenten | Dieser Auftrag wird ausgelöst, wenn ein Benutzer beim Überprüfen von Dokumenten in **** einem Arbeitssatz auf **Tagging-Auftrag starten** klickt. Ein Benutzer kann diesen Auftrag nach dem Markieren von Dokumenten in einem Arbeitssatz und anschließendem Massen auswählen im Dokumentbereich starten. Weitere Informationen finden Sie unter [Tag Documents in a Working Set](tagging-documents.md). | 
 |||
+
+
+## <a name="job-status"></a>Auftragsstatus
+
+In der folgenden Tabelle werden die verschiedenen Statuszustände für Aufträge beschrieben.
+
+| Status           | Beschreibung     |
+| :----------------- | :----------     |
+| Übermittelt | Ein neuer Auftrag wurde erstellt.  Das Datum und die Uhrzeit, zu der der Auftrag übermittelt wurde, werden in der Spalte **erstellt** auf der Registerkarte **Aufträge** angezeigt. |
+| Fehler bei Übermittlung | Fehler bei der Auftragsübermittlung.  Sie sollten versuchen, die Aktion, die den Auftrag ausgelöst hat, erneut auszuführen. |
+| In Arbeit | Der Auftrag ausgeführt wird, können Sie den Fortschritt des Auftrags auf der Registerkarte **Aufträge** überwachen. |
+| Erfolgreiche | Der Auftrag wurde erfolgreich abgeschlossen. Das Datum und die Uhrzeit, zu der der Auftrag abgeschlossen ist, wird in der Spalte **abgeschlossen** auf der Registerkarte **Aufträge** angezeigt. |
+| Teilweise erfolgreich | Der Auftrag war teilweise erfolgreich. |
+| Failed | Fehler beim Auftrag.  Sie sollten versuchen, die Aktion, die den Auftrag ausgelöst hat, erneut auszuführen. Wenn der Auftrag ein zweites Mal fehlschlägt, empfehlen wir, dass Sie sich an den Microsoft-Support wenden und die Supportinformationen aus dem Auftrag bereitstellen. |

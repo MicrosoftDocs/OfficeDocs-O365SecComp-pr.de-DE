@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258734"
 ---
-# <a name="data-investigations-limits"></a>Grenzwerte für Daten Ermittlungen
+# <a name="data-investigations-preview-limits"></a>Grenzwerte für Daten Untersuchungen (Vorschau)
 
-In diesem Artikel werden die Grenzwerte für Daten Untersuchungen beschrieben.
+In diesem Artikel werden die Grenzwerte für Daten Untersuchungen (Preview) beschrieben.
 
-## <a name="investigatino-limits"></a>Investigatino-Grenzwerte
+## <a name="investigation-limits"></a>Untersuchungs Grenzwerte
 
-## <a name="indexing-limits"></a>Indizierungsgrenzwerte
-
-## <a name="search-limits"></a>Suchgrenzen
-
-## <a name="incident-limits"></a>Grenzwerte für vorFälle
-
-In der folgenden Tabelle sind die Grenzwerte für Vorfälle bei Daten Untersuchungen aufgeführt.  Alle Elemente, die die maximale Anzahl der einzelnen Dateien überschreiten, werden als Verarbeitungsfehler angezeigt.
+In der folgenden Tabelle sind die Grenzwerte für Untersuchungen bei Daten Untersuchungen (Preview) aufgeführt. 
     
   |**Beschreibung der Beschränkung**|**Grenzwert**|
   |:-----|:-----|
-  |Maximale Anzahl von Vorfällen  <br/> |50  <br/> |
-  |Gesamtanzahl der Dokumente, die in einen Vorfall aufgenommen werden können (für alle Vorfälle in der Untersuchung)  <br/> |1 Million  <br/> |
-  |Gesamtgröße der Datei pro Ladevorgang  <br/> |100 GB  <br/> |
-  |Maximale Größe einer einzelnen Datei   <br/> |100 MB  <br/> |
-  |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen  <br/> |
-  |Tiefe der eingebetteten Elemente in einem Dokument  <br/> |25  <br/> |
-  
+  |Maximale Anzahl von Untersuchungen.  <br/> |50  <br/> |
+  |Gesamtanzahl der Dokumente, die einer Untersuchung hinzugefügt werden können (für alle Evidence Sets in der Untersuchung).  <br/> |1 Million  <br/> |
+  |Gesamtgröße der Datei pro Ladevorgang.  <br/> |100 GB  <br/> |
+  |Maximale Größe einer einzelnen Datei.   <br/> |100 MB <sup>1</sup> <br/> |
+  |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen <sup>1</sup> <br/> |
+  |Tiefe der eingebetteten Elemente in einer einzelnen Datei.  <br/> |25 <sup>1</sup> <br/> |
+|||
+> [!NOTE]
+><sup>1</sup> alle Elemente, die einen einzelnen Datei Grenzwert überschreiten, werden als Verarbeitungsfehler angezeigt.
+
+## <a name="indexing-limits"></a>Indizierungsgrenzwerte
+
+Inhalt bald verfügbar.
+
+## <a name="search-limits"></a>Suchgrenzen
+
+Inhalt bald verfügbar.
 
 ## <a name="export-limits"></a>Exportgrenzwerte
 
+Inhalt bald verfügbar.
+
 ## <a name="download-limits"></a>Grenzwerte für Downloads
+
+Inhalt bald verfügbar.
 

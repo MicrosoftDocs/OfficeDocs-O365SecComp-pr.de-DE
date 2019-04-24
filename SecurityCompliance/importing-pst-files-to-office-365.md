@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Für Administratoren: Informationen zur Verwendung des Import Diensts im Security & Compliance Center für den Massenimport von e-Mail-Daten (PST-Dateien) in Benutzerpostfächern in Exchange Online. Dieses Thema enthält häufig gestellte Fragen und erläutert, wie der PST-Importprozess funktioniert.'
-ms.openlocfilehash: 3a7dba3db608eb45347609acef396faf73da483f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254898"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -95,6 +95,8 @@ Hier sehen Sie eine Abbildung und eine Beschreibung des vollständigen PST-Impor
   - Verwenden von [eDiscovery-Fällen](ediscovery-cases.md) zum Verwalten von rechtlichen Untersuchungen in Ihrer Organisation 
     
   - Verwenden Sie [Aufbewahrungsrichtlinien](retention-policies.md) im Security _AMP_ Compliance Center, um zu steuern, wie lange Postfachinhalte aufbewahrt werden, und dann nach Ablauf des Aufbewahrungszeitraums Inhalte zu löschen. 
+
+  - Verwenden Sie [Aufsichtsrichtlinien](supervision-policies.md) , um Nachrichten zu untersuchen, um sicherzustellen, dass Sie mit Nachrichtenstandards kompatibel sind und einen Klassifizierungs hinzufügen.
     
 - Das Importieren von Daten in Office 365 schützt vor Datenverlust. E-Mail-Daten, die in Office 365 importiert werden, erben die Hochverfügbarkeitsfeatures von Exchange Online.
     

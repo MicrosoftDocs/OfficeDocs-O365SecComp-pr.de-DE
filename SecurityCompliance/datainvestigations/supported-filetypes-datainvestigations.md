@@ -1,5 +1,5 @@
 ---
-title: Unterstützte Dateitypen in Daten Untersuchungen
+title: Unterstützte Dateitypen in Daten Untersuchungen (Vorschau)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bec8c01b75d68249a335c4de48909ce50ab3bf97
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257633"
 ---
-# <a name="supported-file-types-in-data-investigations"></a>Unterstützte Dateitypen in Daten Untersuchungen
+# <a name="supported-file-types-in-data-investigations-preview"></a>Unterstützte Dateitypen in Daten Untersuchungen (Vorschau)
 
+Daten Untersuchungen (Preview) unterstützt viele Dateitypen auf verschiedene Arten, die in der folgenden Tabelle beschrieben werden. Diese Liste ist nicht abgeschlossen, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. Die Tabelle gibt außerdem an, ob ein Dateityp in den verfügbaren Viewern angezeigt werden kann, wenn Sie nachweisen überprüfen.
 
-| MIME-Typ | Datei Klasse (z. b. Bild, Archiv, E-Mail, Office-Dokument usw.) | Native Viewer | Text | Betrachter mit Anmerkungen versehen | Container Extraktion | Mögliche Erweiterungen |
+| MIME-Typ | File-Klasse | Native Viewer | Text Anzeige | Betrachter mit Anmerkungen versehen | Container Extraktion | Erweiterungen |
 | :- | :- | :- | :- | :- | :- | :- |
 | application/msword | Dokument | Ja | Ja | Ja | Nein | . doc;. dat |
 | application/pdf | Dokument | Ja | Ja | Ja | Nein | PDF |
@@ -54,11 +55,11 @@ ms.locfileid: "31030129"
 | Application/x-mspublisher | Dokument | Ja | Ja | Ja | Nein | . pub |
 | Anwendung/x-rar-komprimiert | Archiv/Container | Nein | Nein | Nein | Ja | . rar |
 | Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | . zip |
-| Bild/BMP | Image | Ja | Ja | Ja | Nein | . bmp |
+| Bild/BMP | Image | Ja | Ja | Ja | Nein | BMP |
 | Image/EMF | Image | Ja | Ja | Ja | Nein | . EMF |
-| image/gif | Dokument | Ja | Ja | Ja | Nein | . gif |
+| image/gif | Dokument | Ja | Ja | Ja | Nein | .gif |
 | image/jpeg | Image | Ja | Ja | Ja | Nein | . jpg;. JPEG;. dat;. jpgT |
-| image/png | Image | Ja | Ja | Ja | Nein | . png |
+| image/png | Image | Ja | Ja | Ja | Nein | .png |
 | Bild/TIFF | Image | Ja | Ja | Ja | Nein | . TIF |
 | Image/vnd. DWG | Dokument | Ja | Ja | Ja | Nein | . dwg;. DXF |
 | Image/WMF | Dokument | Ja | Ja | Ja | Nein | . WMF |
@@ -67,3 +68,4 @@ ms.locfileid: "31030129"
 | Text/HTML | Dokument | Ja | Ja | Ja | Nein | . html;. shtml;. htm |
 | text/plain | Dokument | Ja | Ja | Ja | Nein | . txt;. CSS;. con;. pl;. CSV;. dat |
 | Text/vCard-Kontakt | Dokument | Ja | Ja | Ja | Nein | . vcf |
+||||||||

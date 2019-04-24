@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: In diesem Artikel erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Office &amp; 365 Security Compliance Center zur weiteren Analyse mit dem erweiterten eDiscovery-Tool vorbereiten.
-ms.openlocfilehash: de96e06dcbb5ae9a3cbf80b66f976e6ffdfd5b0e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Erfahren Sie, wie Sie die Ergebnisse einer Inhaltssuche im Security & Compliance Center in Office 365 für eine weitere Analyse mit dem erweiterten eDiscovery-Tool vorbereiten.
+ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261977"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Vorbereiten der Suchergebnisse für Erweiterte eDiscovery in Office 365
 
-Nachdem eine Suche, die einem eDiscovery-Fall im Office 365 Security &amp; Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse für eine weitere Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie umfangreiche, unstrukturierte Datensätze und geringere Datenmenge, die für einen Rechtsstreit relevant ist. Zu den erweiterten eDiscovery-Features gehören:
+Nachdem eine Suche, die einem eDiscovery-Fall im Security & Compliance Center zugeordnet ist, erfolgreich ausgeführt wurde, können Sie die Suchergebnisse für eine weitere Analyse mit Office 365 Advanced eDiscovery vorbereiten, mit der Sie umfangreiche, unstrukturierte Datensätze analysieren können. und verringern Sie die Datenmenge, die für einen Rechtsstreit relevant ist. Zu den erweiterten eDiscovery-Features gehören:
   
 - **Optische Zeichenerkennung** : Wenn Sie Suchergebnisse für erweiterte eDiscovery vorbereiten, extrahiert die OCR-Funktionalität (Optical Character Recognition) automatisch Text aus Bildern und enthält die Suchergebnisse, die in Erweiterte eDiscovery für Analyse. OCR wird für lose Dateien, e-Mail-Anlagen und eingebettete Bilder unterstützt. Auf diese Weise können Sie die Textanalyse Funktionen von Advanced eDiscovery (Near-Duplikate, e-Mail-Threading, Designs und Vorhersage Codierung) auf den Textinhalt in Bilddateien anwenden. Advanced eDiscovery OCR unterstützt die folgenden Formate für Bilddateien:
 
@@ -36,9 +36,9 @@ Nachdem eine Suche, die einem eDiscovery-Fall im Office 365 Security &amp; Compl
     
 - **Near-Duplicate Detection** – ermöglicht Ihnen eine effizientere Strukturierung der Datenüberprüfung, sodass eine Gruppe ähnlicher Dokumente von einer Person überprüft wird. Dadurch wird verhindert, dass mehrere Prüfer unterschiedliche Versionen desselben Dokuments anzeigen müssen. 
     
-- **E-Mail** -Threading – hilft Ihnen bei der Identifizierung der eindeutigen Nachrichten in einem e-Mail-Thread, sodass Sie sich nur auf die neuen Informationen in jeder Nachricht konzentrieren können. In einem e-Mail-Thread enthält die zweite Nachricht die erste Nachricht. Entsprechend enthalten spätere Nachrichten alle vorherigen Nachrichten. E-Mail-Threading entfernt die Notwendigkeit, alle Nachrichten vollständig in einem e-Mail-Thread zu überarbeiten. 
+- **E-Mail** -Threading – hilft Ihnen bei der Identifizierung der eindeutigen Nachrichten in einem e-Mail-Thread, sodass Sie sich nur auf die neuen Informationen in jeder Nachricht konzentrieren können. In einem E-Mail-Thread enthält die zweite Nachricht die erste Nachricht. Analog dazu enthalten spätere Nachrichten alle vorherigen Nachrichten. E-Mail-Threading entfernt die Notwendigkeit, alle Nachrichten vollständig in einem e-Mail-Thread zu überarbeiten. 
     
-- **Designs** – Sie erhalten wertvolle Einblicke über Ihre Daten über die Statistiken zur Stichwortsuche hinaus. Designs helfen bei der Untersuchung, indem Sie verwandte Dokumente gruppieren, sodass Sie die Dokumente im Kontext betrachten können. Bei der Verwendung von Designs können Sie die zugehörigen Designs für eine Gruppe von Dokumenten anzeigen, Überlappungen festlegen und dann die Querschnitte der zugehörigen Daten identifizieren. 
+- **Designs** – Sie erhalten wertvolle Einblicke über Ihre Daten über die Statistiken zur Stichwortsuche hinaus. Designs unterstützen Untersuchungen, indem Sie verwandte Dokumente gruppieren, damit Sie die Dokumente im Kontext anzeigen können. Bei der Verwendung von Designs können Sie die zugehörigen Designs für eine Gruppe von Dokumenten anzeigen, Überlappungen festlegen und dann die Querschnitte der zugehörigen Daten identifizieren. 
     
 - **Predictive Coding** -ermöglicht es Ihnen, das System für das zu trainieren, wonach Sie suchen, indem Sie Entscheidungen treffen (darüber, ob etwas relevant ist oder nicht) in einer kleinen Gruppe von Dokumenten. Advanced eDiscovery wendet dann dieses Lernen (basierend auf Ihren Anweisungen) an, wenn alle Dokumente im Dataset analysiert werden. Basierend auf diesem Lernprozess bietet Advanced eDiscovery eine Relevanz-Rangfolge, sodass Sie entscheiden können, welche Dokumente auf der Grundlage des Dokuments, das am ehesten für den Fall relevant ist, überprüft werden sollen. 
     
@@ -48,13 +48,13 @@ Nachdem eine Suche, die einem eDiscovery-Fall im Office 365 Security &amp; Compl
 
 - Um die Daten eines Benutzers mithilfe von Advanced eDiscovery zu analysieren, muss dem Benutzer (der Depotbank der Daten) eine Office 365 E5-Lizenz zugewiesen werden. Alternativ können Benutzern mit einer Office 365 E1-oder E3-Lizenz eine erweiterte eDiscovery-Standalone-Lizenz zugewiesen werden. Administratoren und Compliance Officer, denen Fälle zugeordnet sind und die erweiterte eDiscovery zur Analyse von Daten verwenden, benötigen keine E5-Lizenz. 
     
-- Sie müssen eDiscovery-Manager oder eDiscovery-Administrator im Office 365 Security &amp; Compliance Center sein, um die Suchergebnisse für erweiterte eDiscovery vorzubereiten. Ein eDiscovery-Manager ist Mitglied der Rollengruppe "eDiscovery-Manager". Ein eDiscovery-Administrator ist auch Mitglied der eDiscovery-Manager-Rollengruppe, ihm wurden jedoch zusätzliche eDiscovery-Berechtigungen zugewiesen. Anweisungen zum Zuweisen von eDiscovery-Administrator Berechtigungen finden Sie unter Schritt 1 in [eDiscovery-Fällen im Office 365 Security _AMP_ Compliance Center](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Sie müssen eDiscovery-Manager oder eDiscovery-Administrator im Security & Compliance Center sein, um die Suchergebnisse für erweiterte eDiscovery vorzubereiten. Ein eDiscovery-Manager ist ein Mitglied der Rollengruppe "eDiscovery-Manager". Ein eDiscovery-Administrator ist ebenfalls Mitglied der Rollengruppe "eDiscovery-Manager", ihm wurden jedoch zusätzliche Berechtigungen zugewiesen. Anweisungen zum Zuweisen von eDiscovery-Administrator Berechtigungen finden Sie unter Schritt 1 in [eDiscovery-Fällen](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Schritt 1: Vorbereiten der Suchergebnisse für erweiterte eDiscovery
 
 Sie können die Ergebnisse einer Suche vorbereiten, die einem eDiscovery-Fall zugeordnet ist. Wenn Sie Suchergebnisse für erweiterte eDiscovery vorbereiten, werden die Daten hochgeladen und vorübergehend in einem eindeutigen Windows Azure-Speicherbereich in der Microsoft-Cloud gespeichert. An dieser Stelle extrahiert die OCR-Funktionalität Text aus Bildern in den Suchergebnissen. In [Schritt 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery)werden dieser Text und die anderen Suchergebnis Daten in den Fall in Advanced eDiscovery geladen.
   
-1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, dass Sie Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten möchten, auf **Öffnen** . 
     
@@ -69,7 +69,7 @@ Sie können die Ergebnisse einer Suche vorbereiten, die einem eDiscovery-Fall zu
     
     - Wählen Sie die Vorbereitung von indizierten Elementen, indizierten und nicht indizierten Elementen oder nur nicht indizierten Elementen für die Analyse in Advanced eDiscovery aus.
     
-    - Legen Sie fest, ob alle Versionen von Dokumenten in SharePoint eingeschlossen werden sollen, die den Suchkriterien entsprechen. Diese Option wird nur angezeigt, wenn die Inhaltsquellen für die Suche Websites enthalten.
+    - Legen Sie fest, ob alle Versionen von Dokumenten in SharePoint eingeschlossen werden sollen, die den Suchkriterien entsprechen. Diese Option wird nur dann angezeigt, wenn die Inhaltsquellen für die Suche Websites umfassen.
     
     - Geben Sie an, ob eine Benachrichtigung an eine Person gesendet oder kopiert werden soll, wenn der Vorbereitungsvorgang abgeschlossen ist und die Daten in Advanced eDiscovery verarbeitet werden können.
     
@@ -82,12 +82,12 @@ Sie können die Ergebnisse einer Suche vorbereiten, die einem eDiscovery-Fall zu
 ## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Schritt 2: Hinzufügen der Suchergebnis Daten zum Fall in Advanced eDiscovery
 <a name="step2"> </a>
 
-Wenn die Vorbereitung abgeschlossen ist, gehen Sie als nächster Schritt zu Advanced eDiscovery und laden die Suchergebnis Daten (die in einen Azure-Speicherbereich in der Microsoft-Cloud hochgeladen wurden) in den Fall in Advanced eDiscovery. Wie bereits erläutert, müssen Sie für den Zugriff auf Advanced eDiscovery ein eDiscovery-Administrator im Security &amp; Compliance Center oder ein Administrator in Advanced eDiscovery sein.
+Wenn die Vorbereitung abgeschlossen ist, gehen Sie als nächster Schritt zu Advanced eDiscovery und laden die Suchergebnis Daten (die in einen Azure-Speicherbereich in der Microsoft-Cloud hochgeladen wurden) in den Fall in Advanced eDiscovery. Wie bereits erläutert, müssen Sie für den Zugriff auf Advanced eDiscovery ein eDiscovery-Administrator im Security & Compliance Center oder ein Administrator in Advanced eDiscovery sein.
   
 > [!NOTE]
-> Die Zeit, die die Daten aus dem Security &amp; Compliance Center zum Hinzufügen zu einem Fall in Advanced eDiscovery benötigt werden, variiert je nach der Größe der Ergebnisse der eDiscovery-Suche. 
+> Die Zeit, die die Daten aus dem Security & Compliance Center zum Hinzufügen zu einem Fall in Advanced eDiscovery benötigt werden, variiert je nach der Größe der Ergebnisse der eDiscovery-Suche. 
   
-1. Klicken Sie im Security &amp; Compliance Center auf **Suche &amp; Untersuchung** \> **eDiscovery**, um die Liste der Fälle in Ihrem Unternehmen anzuzeigen. 
+1. Klicken Sie im Security & Compliance Center auf **eDiscovery** \> **eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen. 
     
 2. Klicken Sie neben dem Fall, in den Sie Daten laden möchten, in Advanced eDiscovery auf **Öffnen** . 
     
@@ -99,7 +99,7 @@ Wenn die Vorbereitung abgeschlossen ist, gehen Sie als nächster Schritt zu Adva
     
     ![Die Groß-/Kleinschreibung wird in Advanced eDiscovery angezeigt.](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 1 für die Analyse in Advanced eDiscovery vorbereitet haben. Beachten Sie, dass der Name des Containers den gleichen Namen wie die Suche im Fall im Security &amp; Compliance Center hat. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen. 
+     Diese Container stellen die Suchergebnisse dar, die Sie in Schritt 1 für die Analyse in Advanced eDiscovery vorbereitet haben. Beachten Sie, dass der Name des Containers den gleichen Namen wie die Suche in dem Fall im Security & Compliance Center hat. Die Container in der Liste sind diejenigen, die Sie vorbereitet haben. Wenn ein anderer Benutzer Suchergebnisse für Advanced eDiscovery vorbereitet hat, werden die entsprechenden Container nicht in die Liste aufgenommen. 
     
 4. Wenn Sie die Suchergebnis Daten aus einem Container in den Fall in Advanced eDiscovery laden möchten, wählen Sie einen Container aus, und klicken Sie dann auf **verarbeiten**.
     

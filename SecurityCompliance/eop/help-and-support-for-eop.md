@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfe zu EOP an verschiedenen Orten und Methoden, einschließlich Self-Support und Assisted-Support.
 ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256243"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -80,7 +80,7 @@ Microsoft bietet lokale oder gebührenfreie Telefonnummern für den Produktsuppo
    
 ## <a name="for-more-information-about-eop-documentation"></a>Weitere Informationen zur EOP-Dokumentation
 
-[Copyright Hinweise für Drittanbieter](third-party-copyright-notices.md)
+[Copyrighthinweise für Drittanbieterprodukte](third-party-copyright-notices.md)
   
 [Barrierefreiheit für Personen mit Einschränkungen](accessibility-for-people-with-disabilities.md)
   

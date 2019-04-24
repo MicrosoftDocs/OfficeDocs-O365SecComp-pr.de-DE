@@ -3,7 +3,7 @@ title: Archivieren von Drittanbieter-Daten in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Administratoren können drittanbieterdaten aus sozialen Medienplattformen, Instant Messaging-Plattformen und Dokument Zusammenarbeits Plattformen in Postfächer in Ihrer Office 365-Organisation importieren. Auf diese Weise können Sie Daten aus Facebook, Twitter und Datenquellen in Office 365 archivieren. Anschließend können Sie die Office 365-Kompatibilitätsfeatures (wie rechtliche Aufbewahrung, Inhaltssuche und Aufbewahrungsrichtlinien) auf drittanbieterdaten anwenden.
-ms.openlocfilehash: 06ac436b1583187e89cb7f1beb26411ba02becec
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.openlocfilehash: 6e5f40328c54a6f2c97cb6cfe14a1bc5727ae087
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249605"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivieren von Drittanbieter-Daten in Office 365
 
@@ -507,7 +507,7 @@ Hier finden Sie die Schritte zum Erstellen und Konfigurieren eines Drittanbieter
     
     - Aktivieren Sie für das Drittanbieterdaten-Postfach das Beweissicherungsverfahren. Sie können auch eine Office 365-Aufbewahrungsrichtlinie im Security and Compliance Center anwenden. Wenn Sie dieses Postfach anhalten, werden Datenelemente von Drittanbietern (auf unbestimmte Zeit oder für eine bestimmte Dauer) aufbewahrt und verhindert, dass Sie aus dem Postfach gelöscht werden. Lesen Sie eines der folgenden Themen:
     
-      - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Erstellen eines Beweissicherungsverfahrens](create-a-litigation-hold.md)
     
       - [Übersicht über Aufbewahrungsrichtlinien in Office 365](retention-policies.md)
     
@@ -523,7 +523,7 @@ Als Nächstes müssen Sie die Benutzerpostfächer für die Unterstützung von Dr
     
 2. Platzieren von Benutzerpostfächern für die Aufbewahrung von Rechtsstreitigkeiten oder Anwenden einer Office 365-Archivierungsrichtlinie Lesen Sie eines der folgenden Themen: 
     
-    - [Aktivieren des Beweissicherungsverfahrens für ein Postfach](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Erstellen eines Beweissicherungsverfahrens](create-a-litigation-hold.md)
     
     - [Übersicht über Aufbewahrungsrichtlinien in Office 365](retention-policies.md)
     
@@ -572,10 +572,10 @@ Um die Einwilligung für einen Drittanbieter-Datenkonnektor zu widerrufen, könn
     |**FROM** <br/> |Ja  <br/> |Der Benutzer, der das Element in der Drittanbieter-Datenquelle ursprünglich erstellt oder gesendet hat. Der Partner-Konnektor versucht, die Benutzer-ID aus dem Quellelement (beispielsweise einem Twitter-handle) einem Office 365-Benutzerkonto für alle Teilnehmer (Benutzer in den Feldern von und bis) zuzuordnen. Eine Kopie der Nachricht wird in das Postfach jedes Teilnehmers importiert. Wenn keiner der Teilnehmer des Elements einem Office 365-Benutzerkonto zugeordnet werden kann, wird das Element in das Archivierungs Postfach eines Drittanbieters in Office 365 importiert.  <br/> <br/> Der Teilnehmer, der als Absender des Elements identifiziert wird, muss über ein aktives Postfach in der Office 365-Organisation verfügen, in das das Element importiert wird. Wenn der Absender nicht über ein aktives Postfach verfügt, wird der folgende Fehler zurückgegeben:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Ja  <br/> |Der Benutzer, der ein Element erhalten hat (wenn für ein Element in der Datenquelle zutreffend).  <br/> | `bob@contoso.com` <br/> |
     |**Betreff** <br/> |Nein  <br/> |Der Betreff des Quellelements.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**DATE** <br/> |Ja  <br/> |Das Datum, an dem das Element ursprünglich erstellt oder in der Kundendatenquelle veröffentlicht wurde. Beispiel: Das Datum, an dem eine Twitter-Nachricht getweetet wurde.  <br/> | `01 NOV 2015` <br/> |
+    |**Datum** <br/> |Ja  <br/> |Das Datum, an dem das Element ursprünglich erstellt oder in der Kundendatenquelle veröffentlicht wurde. Beispiel: Das Datum, an dem eine Twitter-Nachricht getweetet wurde.  <br/> | `01 NOV 2015` <br/> |
     |**Text** <br/> |Nein  <br/> |Der Inhalt der Nachricht oder des Beitrags. Bei einigen Datenquellen kann der Inhalt dieser Eigenschaft mit dem Inhalt der Eigenschaft **SUBJECT** identisch sein. Während des Importvorgangs versucht der Partnerconnector, die Inhaltsquelle so originalgetreu wie möglich beizubehalten. Soweit möglich, werden Dateien, Grafiken oder andere Inhalte aus dem Textkörper des Quellelements in diese Eigenschaft einbezogen. Andernfalls wird der Inhalt aus dem Quellelement in die Eigenschaft **ATTACHMENT** einbezogen. Der Inhalt dieser Eigenschaft hängt vom Partner-Konnektor und von der Funktion der QuellPlattform ab.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**Anlage** <br/> |Nein  <br/> |Wenn ein Element in der Datenquelle (beispielsweise ein tweet in Twitter oder eine Sofortnachrichtenunterhaltung) über eine angefügte Datei verfügt oder Bilder enthält, versucht der Partner Connect zunächst, Anlagen in die **Body** -Eigenschaft einzuschließen. Wenn dies nicht möglich ist, wird Sie der * * ATTACHMENT * *-Eigenschaft hinzugefügt. Weitere Beispiele für Anlagen sind „Gefällt mir“-Angaben in Facebook, Metadaten aus der Inhaltsquelle und Antworten auf eine Nachricht oder einen Beitrag.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Ja  <br/> | Dies ist eine Eigenschaft mit mehreren Werten, die vom Partnerconnector erstellt und mit Werten gefüllt wird. Das Format dieser Eigenschaft ist `IPM.NOTE.Source.Event`. (Diese Eigenschaft muss mit `IPM.NOTE`beginnen; dieses Format ähnelt der für die `IPM.NOTE.X` Nachrichtenklasse.) Diese Eigenschaft enthält die folgenden Informationen:  <br/><br/>`Source` -Gibt die Datenquelle eines Drittanbieters an. beispielsweise Twitter, Facebook oder BlackBerry.  <br/> <br/>  `Event` -Gibt die Art der Aktivität an, die in der Drittanbieter-Datenquelle ausgeführt wurde, die die Elemente erstellt hat; zum Beispiel ein tweet in Twitter oder ein Beitrag in Facebook. Ereignisse sind für die jeweilige Datenquelle spezifisch.  <br/> <br/>  Ein Zweck dieser Eigenschaft ist es zum Beispiel, bestimmte Elemente basierend auf der Datenquelle zu filtern, aus der ein Element stammt, oder basierend auf dem Typ des Ereignisses. So könnten Sie in einer eDiscovery-Suche zum Beispiel eine Suchabfrage erstellen, um alle Tweets zu finden, die von einem bestimmten Benutzer gepostet wurden.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |Ja  <br/> | Dies ist eine Eigenschaft mit mehreren Werten, die vom Partnerconnector erstellt und mit Werten gefüllt wird. Das Format dieser Eigenschaft ist `IPM.NOTE.Source.Event`. (Diese Eigenschaft muss mit `IPM.NOTE`beginnen; dieses Format ähnelt der für die `IPM.NOTE.X` Nachrichtenklasse.) Diese Eigenschaft enthält die folgenden Informationen:  <br/><br/>`Source`-Gibt die Datenquelle eines Drittanbieters an. beispielsweise Twitter, Facebook oder BlackBerry.  <br/> <br/>  `Event`-Gibt die Art der Aktivität an, die in der Drittanbieter-Datenquelle ausgeführt wurde, die die Elemente erstellt hat; zum Beispiel ein tweet in Twitter oder ein Beitrag in Facebook. Ereignisse sind für die jeweilige Datenquelle spezifisch.  <br/> <br/>  Ein Zweck dieser Eigenschaft ist es zum Beispiel, bestimmte Elemente basierend auf der Datenquelle zu filtern, aus der ein Element stammt, oder basierend auf dem Typ des Ereignisses. So könnten Sie in einer eDiscovery-Suche zum Beispiel eine Suchabfrage erstellen, um alle Tweets zu finden, die von einem bestimmten Benutzer gepostet wurden.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - Wenn Elemente erfolgreich in Postfächer in Office 365 importiert werden, wird ein eindeutiger Bezeichner als Teil der HTTP-Antwort an den Aufrufer zurückgegeben. Dieser Bezeichner – genannt `x-IngestionCorrelationID`– kann für nachfolgende Problembehandlungszwecke von Partnern für die End-to-End-Nachverfolgung von Elementen verwendet werden. Es wird empfohlen, dass Partner diese Informationen entsprechend erfassen und sammeln. Im Folgenden ist ein Beispiel einer HTTP-Antwort mit diesem Bezeichner aufgeführt:
 

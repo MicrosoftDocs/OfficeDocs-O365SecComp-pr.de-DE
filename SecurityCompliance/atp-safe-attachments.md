@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Mit der Funktion "sichere Anlagen" können Sie e-Mail-Anhänge per Mausklick überprüfen. Verwenden Sie sichere Anlagen, um Ihre Organisation vor schädlichen Dateien zu schützen, die Personen in e-Mails senden oder empfangen.
 ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "31476823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250965"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP Safe Attachments
 

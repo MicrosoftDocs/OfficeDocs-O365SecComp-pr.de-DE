@@ -1,5 +1,5 @@
 ---
-title: Ausführen des Prozessmoduls und Laden von Daten in Office 365 Advanced eDiscovery
+title: Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Informationen zur Verwendung des Office 365 Security &amp; Compliance Center für den Zugriff auf Office 365 Advanced eDiscovery und zum Ausführen des Prozess Moduls für einen Fall.  '
 ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261403"
 ---
-# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ausführen des Prozessmoduls und Laden von Daten in Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ausführen des Prozess Moduls und Laden von Daten in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

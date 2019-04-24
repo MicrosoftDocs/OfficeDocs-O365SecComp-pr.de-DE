@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Laden Sie Drittanbieter-Audits herunter, erfahren Sie, wie Microsoft Kundendaten sicher hält und wissen, wie Sie ISO, HIPAA, FINRA und FedRAMP bei der Verwendung von Office 365 einhalten können.
 ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261158"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Dienstsicherheit im Security & Compliance Center
 

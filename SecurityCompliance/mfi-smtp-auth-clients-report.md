@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Administratoren erfahren mehr über den Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252553"
 ---
 # <a name="smtp-auth-clients-report"></a>Bericht über SMTP-AUTH-Clients
 

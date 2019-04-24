@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre ATP-Richtlinien für sichere Links einrichten, können Sie eine do-not-Rewrite-Liste mit URLs hinzufügen, um einigen Personen in Ihrer Organisation das Besuchen von Websites zu ermöglichen, die Sie in Ihre Liste aufnehmen.
 ms.openlocfilehash: 006dab44054f9cb707bb13d158588ab6606fab5c
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264452"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Einrichten einer benutzerdefinierten do-not-Rewrite-URLs-Liste mit Office 365 ATP-sicheren Links
 

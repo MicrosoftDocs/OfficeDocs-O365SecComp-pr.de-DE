@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Die folgende Tabelle enthält eine Liste der Funktionen, die im gehosteten E-Mail-Filterdienst Exchange Online Protection (EOP) verfügbar sind.
 ms.openlocfilehash: 8eb6eafb7214938af302852e2726af3fcdbd44d3
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256693"
 ---
 # <a name="eop-features"></a>EOP-Funktionen
 

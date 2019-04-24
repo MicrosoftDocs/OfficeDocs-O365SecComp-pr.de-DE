@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Eine Übersicht über die Verschlüsselung in der Microsoft-Cloud.
 ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262777"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Verschlüsselung in der Microsoft-Cloud
 
@@ -43,13 +43,13 @@ Microsoft bescheinigt die zugrunde liegenden kryptografischen Module, die in uns
 - Dynamics 365 und Dynamics 365 U.S. Government
 - Office 365, Office 365 U.S. Government und Office 365 U.S. Government Defense
 
-Die Verschlüsselung von Office 365-Kundendaten im Ruhezustand wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage Service-Verschlüsselung und Dienst Verschlüsselung in Exchange Online, Skype for Business, OneDrive for Business und SharePoint Online. Die Office 365-Dienst Verschlüsselung enthält eine Option zum Verwenden von Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese Customer-Managed Key-Option, die als [Office 365-Kundenschlüssel](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)bezeichnet wird, ist für Exchange Online, SharePoint Online, Skype for Business und OneDrive for Business verfügbar.
+Verschlüsselung von Office 365-Kundendaten im Ruhezustand wird von mehreren dienstseitigen Technologien bereitgestellt, einschließlich BitLocker, DKM, Azure Storage-Dienstverschlüsselung und Dienstverschlüsselung in Exchange Online, Skype for Business, OneDrive for Business und SharePoint Online. Die Office 365-Dienst Verschlüsselung enthält eine Option zum Verwenden von Kunden verwalteten Verschlüsselungsschlüsseln, die in Azure Key Vault gespeichert sind. Diese Customer-Managed Key-Option, die als [Office 365-Kundenschlüssel](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)bezeichnet wird, ist für Exchange Online, SharePoint Online, Skype for Business und OneDrive for Business verfügbar.
 
 Für Kundendaten während der Übertragung verhandeln alle Office 365-Server sichere Sitzungen standardmäßig mit TLS mit Clientcomputern, um Kundendaten zu schützen.  Dies gilt für Protokolle auf allen Geräten, die von Clients verwendet werden, wie Skype for Business, Outlook und Outlook im Web, mobilen Clients und Webbrowsern.
 
 (Alle kundenorientierten Server verhandeln standardmäßig mit TLS 1,2, aber wir unterstützen auch die Aushandlung zu einem niedrigeren Standard, falls erforderlich.)
 
-## <a name="related-links"></a>Verwandte Links
+## <a name="related-links"></a>Links zu verwandten Themen
 
 - [Verschlüsselung in Azure](office-365-azure-encryption.md)
 - [BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)

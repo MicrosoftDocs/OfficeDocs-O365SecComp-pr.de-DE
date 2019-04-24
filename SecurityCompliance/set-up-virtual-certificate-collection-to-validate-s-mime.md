@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: Administratoren erfahren, wie Sie eine virtuelle Zertifikat Sammlung erstellen, die zum Überprüfen von S/MIME-Zertifikaten in Exchange Online verwendet wird.
 ms.openlocfilehash: 15998bce1971952286d8dd4401a92f1e9e47c25d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260723"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>Einrichten einer virtuellen Zertifikat Sammlung in Exchange Online zum Überprüfen von S/MIME
 
@@ -27,7 +27,7 @@ Als Administrator müssen Sie eine virtuelle Zertifikat Sammlung in Exchange Onl
 
 Sie können diese SST-Zertifikatspeicher Datei erstellen, indem Sie die Zertifikate von einem vertrauenswürdigen Computer mithilfe des Cmdlets **Export-Certificate** in __ Windows PowerShell exportieren und den Typwert als sst angeben. Weitere Informationen finden Sie unter [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).
 
-Nachdem Sie die SST-Zertifikatspeicher Datei verwendet haben, verwenden Sie die folgende Syntax in Exchange Online PowerShell, um den Inhalt der SST-Datei im virtuellen Exchange Online-Zertifikatspeicher zu speichern. Informationen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+Nachdem Sie die SST-Zertifikatspeicher Datei verwendet haben, verwenden Sie die folgende Syntax in Exchange Online PowerShell, um den Inhalt der SST-Datei im virtuellen Exchange Online-Zertifikatspeicher zu speichern. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ```
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)

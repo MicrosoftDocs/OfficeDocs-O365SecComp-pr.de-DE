@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241116"
 ---
 # <a name="tag-documents-in-a-working-set"></a>Markieren von Dokumenten in einem Arbeitssatz
 
 Das Organisieren von Inhalten in einem Arbeitssatz ist wichtig, um verschiedene Workflows im eDiscovery-Prozess abzuschließen. Dies umfasst Folgendes:
 
--  AusMerzen unnötiger Inhalte.
+-  AusMerzen unnötiger Inhalte
 
 - Identifizieren relevanter Inhalte
  
--  Identifizieren von Inhalten, die von einem Fachmann oder Rechtsanwalt überprüft werden müssen.
+-  Identifizieren von Inhalten, die von einem Experten oder Rechtsanwalt überprüft werden müssen
 
 Wenn Experten, Anwälte oder andere Benutzer Inhalte in einem Workingset überarbeiten, können Ihre Meinungen im Zusammenhang mit dem Inhalt mithilfe von Tags erfasst werden. Wenn beispielsweise unnötige Inhalte abgeschlachtet werden sollen, kann ein Benutzer Dokumente mit einem Tag wie "nicht reagieren" markieren. Nachdem der Inhalt überprüft und markiert wurde, kann eine Working Set-Suche erstellt werden, um Inhalte zu ausschließen, die als "nicht reaktionsfähig" gekennzeichnet sind, wodurch dieser Inhalt nicht aus den nächsten Schritten im eDiscovery-Workflow entfernt wird. Das Tag-Panel kann für jeden Fall angepasst werden, sodass die Tags den beabsichtigten Übersichts Workflow unterstützen können.
 

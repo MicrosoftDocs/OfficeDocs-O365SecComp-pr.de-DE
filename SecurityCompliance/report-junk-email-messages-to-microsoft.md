@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Das Microsoft-Add-In "Junk-E-Mail-Berichtsprogramm für Microsoft Office Outlook" bietet mehrere Möglichkeiten zum Melden von Junk-E-Mails:'
 ms.openlocfilehash: 7e50143acd6efeb3d47ad0fa04d6d9b57a5ca161
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265012"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Melden von Junk-E-Mails an Microsoft
 

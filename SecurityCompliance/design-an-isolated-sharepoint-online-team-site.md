@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Zusammenfassung: Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.'
 ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257169"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
@@ -44,14 +44,14 @@ Der Satz von spezifischen Berechtigungen, der bestimmt, welche Aktionen ein Mitg
 |**SharePoint-Gruppe**|**Berechtigungsstufe**|
 |:-----|:-----|
 |\<Website-name>-Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Website name> Besucher  <br/> |Überwachungsdaten  <br/> |
+|\<Website name> Besucher  <br/> |Lesen  <br/> |
 |\<Website name>-Besitzer  <br/> |Vollzugriff  <br/> |
    
  **Bewährte Methode:** Sie können weitere SharePoint-Gruppen und Berechtigungsstufen erstellen. Allerdings wird empfohlen, die SharePoint-Standardgruppen und die Berechtigungsstufen für die isolierte SharePoint Online-Website zu verwenden.
   
 Hier sind die standardmäßigen SharePoint-Gruppen und Berechtigungsstufen.
   
-![Die standardmäßigen SharePoint-Gruppen und -Berechtigungsstufen für eine SharePoint Online-Website.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Die standardmäßigen SharePoint-Gruppen und-Berechtigungsstufen für eine SharePoint Online-Website.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2: Zuweisen von Berechtigungen zu Benutzern mit Zugriffsgruppen
 
@@ -84,14 +84,14 @@ Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstrukt
 |**SharePoint-Gruppe**|**Azure AD-basierte Zugriffsgruppe**|**Berechtigungsstufe**|
 |:-----|:-----|:-----|
 |\<Website-name>-Mitglieder  <br/> |\<Website-name>-Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Website name> Besucher  <br/> |\<Website name> Viewer  <br/> |Überwachungsdaten  <br/> |
+|\<Website name> Besucher  <br/> |\<Website name> Viewer  <br/> |Lesen  <br/> |
 |\<Website name>-Besitzer  <br/> |\<Website-name>-Administratoren  <br/> |Vollzugriff  <br/> |
    
  **Bewährte Methode:** Sie können zwar sowohl Office 365- als auch Azure AD-Gruppen als Mitglieder von SharePoint-Gruppen verwenden, wir empfehlen jedoch die Verwendung von Azure AD-Gruppen. Azure AD-Gruppen, die über Windows Server AD oder Office 365 verwaltet werden, bieten Ihnen größere Flexibilität bei der Verwendung geschachtelter Gruppen zum Zuweisen von Berechtigungen.
   
 Hier sind die standardmäßigen SharePoint-Gruppen, die für die Verwendung von Azure AD-basierten Zugriffsgruppen konfiguriert sind.
   
-![Verwenden von Access Gruppen als Mitglieder von Standardgruppen SharePoint Online-Website.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Verwenden von Zugriffsgruppen als Mitglieder von standardmäßigen SharePoint Online-Websitegruppen.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Beachten Sie beim Entwerfen der drei Zugriffsgruppen die folgenden Punkte:
   
@@ -101,7 +101,7 @@ Beachten Sie beim Entwerfen der drei Zugriffsgruppen die folgenden Punkte:
     
 Nachfolgend finden Sie ein Beispiel für die SharePoint-Gruppen und Zugriffsgruppen für eine isolierte Website mit dem Namen ProjectX.
   
-![Ein Beispiel für die Verwendung von Zugriffsgruppen für eine SharePoint Online-Website mit dem Namen „ProjectX“.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Ein Beispiel für die Verwendung von Zugriffsgruppen für eine SharePoint Online-Website mit dem Namen ProjectX.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Phase 3: Verwenden von geschachtelten Azure AD-Gruppen
 
@@ -124,7 +124,7 @@ So verwenden Sie geschachtelte Azure AD-Gruppen:
   
 Nachfolgend finden Sie ein Beispiel für geschachtelte Azure AD-Gruppen für die ProjectX-Mitglieds Zugriffsgruppe.
   
-![Ein Beispiel für geschachtelte Zugriffsgruppen für die Mitglieder der Zugriffsgruppe auf der ProjektX-Website.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Ein Beispiel für die Verwendung von geschachtelten Zugriffsgruppen für die Mitglieder-Zugriffsgruppe für die ProjectX-Website.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Da alle Benutzerkonten in den Teams für Forschung, Engineering und Projektleiter als Websitemitglieder dienen sollen, ist es einfacher, ihre Azure AD-Gruppen der Zugriffsgruppe ProjectX-Mitglieder hinzuzufügen.
   

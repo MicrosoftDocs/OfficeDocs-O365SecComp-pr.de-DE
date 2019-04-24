@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Office 365 Advanced eDiscovery-Dienstprogrammen
+title: Verwenden von Office 365 Advanced eDiscovery Utilities
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: 'Erfahren Sie mehr über die Dienstprogramme in Office 365 Advanced eDiscovery, einschließlich Case Log, Clear Data, Process Errors, Modify Relevance und Transparency Analysis.  '
 ms.openlocfilehash: bd100883804b300e77abcc8a2224cf1a59b53475
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265357"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Verwenden von Office 365 Advanced eDiscovery-Dienstprogrammen
+# <a name="use-office-365-advanced-ediscovery-utilities"></a>Verwenden von Office 365 Advanced eDiscovery Utilities
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

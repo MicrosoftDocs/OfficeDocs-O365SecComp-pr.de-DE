@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Integrieren Sie Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection, um detailliertere Informationen zur Bedrohungs Verwaltung zu erhalten.
 ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254428"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrieren von Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Die Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine korrekte Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Stichwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
 ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266917"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Wonach die DLP-Funktionen suchen
 

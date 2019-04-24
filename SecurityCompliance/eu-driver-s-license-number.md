@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Treiber Lizenznummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
 ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255773"
 ---
 # <a name="eu-drivers-license-number"></a>EU-Führerscheinnummer
 
@@ -54,7 +54,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_austria_eu_driver's_license_number**|
@@ -94,7 +94,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
@@ -134,7 +134,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
@@ -174,7 +174,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
@@ -213,7 +213,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
@@ -259,7 +259,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
@@ -299,7 +299,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
@@ -342,7 +342,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
@@ -387,7 +387,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_finland_eu_driver's_license_number**|
@@ -434,7 +434,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_greece_eu_driver's_license_number**|
@@ -477,7 +477,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
@@ -520,7 +520,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
@@ -567,7 +567,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
@@ -606,7 +606,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
@@ -645,7 +645,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
@@ -694,7 +694,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_malta_eu_driver's_license_number**|
@@ -733,7 +733,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
@@ -782,7 +782,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_poland_eu_driver's_license_number**|
@@ -831,7 +831,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
@@ -874,7 +874,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_romania_eu_driver's_license_number**|
@@ -917,7 +917,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
@@ -956,7 +956,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
@@ -999,7 +999,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_spain_eu_driver's_license_number**|
@@ -1044,7 +1044,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity> 
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 | |
 |**Keywords_sweden_eu_driver's_license_number**|

@@ -1,5 +1,5 @@
 ---
-title: Testen der Relevanzanalyse in Office 365 Advanced eDiscovery
+title: Test Relevanz-Analyse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Erfahren Sie, wie Sie die Registerkarte Test nach der Batch Berechnung in Office 365 Advanced eDiscovery verwenden, um die allgemeine Verarbeitungsqualität zu testen, zu vergleichen und zu validieren.  '
 ms.openlocfilehash: 735a6d8088b4696e2ebc348db435a11914bd0b10
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259973"
 ---
-# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Testen der Relevanzanalyse in Office 365 Advanced eDiscovery
+# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Test Relevanz-Analyse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -43,7 +43,7 @@ Dieser Test bietet Statistiken und einen Vergleich zwischen dem überPrüfungs S
     
 2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld **Test erstellen** wird angezeigt, wie im folgenden Beispiel gezeigt. 
     
-    ![Relevanztest der REST-Ergebnisse](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
+    ![Relevanz Testen der Rest-Ergebnisse](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
 3. Geben **** Sie unter Testname und **Beschreibung**den Namen und die Beschreibung ein.
     
@@ -63,7 +63,7 @@ Dieser Test bietet Statistiken und einen Vergleich zwischen dem überPrüfungs S
     
 11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. Ein Beispiel ist in der folgenden Abbildung dargestellt. 
     
-    ![REST-Ergebnisse testen](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
+    ![Testen der Rest-Ergebnisse](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
 In der obigen Abbildung enthält der Abschnitt **Beispiel Parameter** der Tabelle Details zur Anzahl der Dateien im Beispiel, die vom Experten gekennzeichnet wurden, und die Anzahl der relevanten Dateien, die in diesem Beispiel gefunden wurden. 
   

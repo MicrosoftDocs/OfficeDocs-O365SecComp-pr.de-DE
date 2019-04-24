@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Wenn ein ehemaliger Mitarbeiter zu Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt wird, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
 ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261543"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Wiederherstellen eines inaktiven Postfachs in Office 365
 
@@ -69,7 +69,7 @@ Verwenden Sie das Cmdlet **New-Mailbox** mit dem Parameter *InactiveMailbox* , u
 
     Die primäre SMTP-Adresse für das wiederhergestellte inaktive Postfach hat den gleichen Wert wie der durch den *MICROSOFTONLINESERVICESID* -Parameter. 
     
-Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 365-Benutzerkonto erstellt. Sie müssen dieses Benutzerkonto aktivieren, indem Sie eine Lizenz zuweisen. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter Zuweisen oder Aufheben der [Zuweisung von Lizenzen für Office 365 for Business](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 365-Benutzerkonto erstellt. Sie müssen dieses Benutzerkonto aktivieren, indem Sie eine Lizenz zuweisen. Weitere Informationen zum Zuweisen von Lizenzen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Lizenzen und Aufheben der Zuweisung von Lizenzen für Office 365 für Unternehmen](https://go.microsoft.com/fwlink/p/?LinkId=276798).
   
 ## <a name="more-information"></a>Weitere Informationen
 

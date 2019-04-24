@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: eine Erläuterung der Verschlüsselung in Azure.'
 ms.openlocfilehash: b8980b3979ada9ac02232065a27a7891936aa945
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265877"
 ---
 # <a name="office-365-encryption-in-azure"></a>Office 365-Verschlüsselung in Azure
 
@@ -49,4 +49,4 @@ Einige Office 365-Dienste verwenden Azure zum Speichern von Daten. Beispiel: Sha
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 
-Die sichere Schlüsselverwaltung ist nicht nur für die bewährten Methoden der Verschlüsselung von zentraler Bedeutung; Außerdem ist es wichtig, Daten in der Cloud zu schützen. Mit [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) können Sie Schlüssel und kleine Geheimnisse wie Kennwörterverschlüsseln, die Schlüssel in Hardwaresicherheitsmodulen (HSMs) verwenden. Azure Key Vault ist die empfohlene Lösung von Microsoft für die Verwaltung und Steuerung des Zugriffs auf Verschlüsselungsschlüssel, die von Cloud-Diensten verwendet werden. Berechtigungen für den Zugriff auf Schlüssel können Diensten oder Benutzern mit Azure Active Directory-Konten zugewiesen werden. Azure Key Vault erleichtert Organisationen die Notwendigkeit, HSMs und Schlüssel Verwaltungssoftware zu konfigurieren, zu patchen und zu verwalten. Mit Azure Key Vault sieht Microsoft Ihre Schlüssel nicht, und Anwendungen haben keinen direkten Zugriff darauf; Sie behalten die Kontrolle. Sie können auch Schlüssel in HSMs importieren oder generieren. Organisationen, die über ein Abonnement mit Azure Information Protection verfügen, können Ihren Azure Information Protection-Mandanten für die Verwendung eines [vom](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) Kunden verwalteten Schlüssels konfigurieren (BYOK)) und [protokollieren. die Verwendung](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).
+Die sichere Schlüsselverwaltung ist nicht nur für die bewährten Methoden der Verschlüsselung von zentraler Bedeutung; Außerdem ist es wichtig, Daten in der Cloud zu schützen. Mit [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) können Sie Schlüssel und kleine Geheimnisse wie Kennwörterverschlüsseln, die Schlüssel in Hardwaresicherheitsmodulen (HSMs) verwenden. Azure Key Vault ist die empfohlene Lösung von Microsoft für die Verwaltung und Steuerung des Zugriffs auf Verschlüsselungsschlüssel, die von Cloud-Diensten verwendet werden. Berechtigungen für den Zugriff auf Schlüssel können Diensten oder Benutzern mit Azure Active Directory-Konten zugewiesen werden. Azure Key Vault erleichtert Organisationen die Notwendigkeit, HSMs und Schlüssel Verwaltungssoftware zu konfigurieren, zu patchen und zu verwalten. Mit Azure Key Vault sieht Microsoft Ihre Schlüssel nicht, und Anwendungen haben keinen direkten Zugriff darauf; Sie behalten die Kontrolle. Sie können auch Schlüssel in HSMs importieren oder generieren. Organisationen, die über ein Abonnement mit Azure Information Protection verfügen, können Ihren Azure Information Protection-Mandanten so konfigurieren, dass er einen vom Kunden verwalteten Schlüssel mit [Ihrem eigenen Schlüssel](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) verwendet und [die Verwendung protokolliert](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).

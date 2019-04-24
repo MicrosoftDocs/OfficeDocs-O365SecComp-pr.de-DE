@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257008"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -83,7 +83,7 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
 6. Wiederholen Sie die Schritte 3 bis 5 für weitere Gruppen.
     
 > [!NOTE]
-> Sie müssen das Azure-Portal verwenden, um die Gruppen zu erstellen, damit die Office-Features für diese aktiviert sind. Wenn eine isolierte SharePoint Online-Website später als hochgradig vertrauliche Website mit einer Azure Information Protection (AIP)-Bezeichnung für die Verschlüsselung von Dateien und Zuweisung von Berechtigungen für bestimmte Gruppen konfiguriert wird, müssen die zulässigen Gruppen mit aktivierten Office-Features erstellt worden sein. Sie können die Einstellung für Office-Features einer Azure Active Directory-Gruppe nicht mehr ändern, nachdem sie erstellt wurde. 
+> Sie müssen das Azure-Portal verwenden, um die Gruppen zu erstellen, damit die Office-Features für diese aktiviert sind. Wenn eine isolierte SharePoint Online-Website später als streng vertrauliche Website mit einer Azure Information Protection-Bezeichnung konfiguriert wird, um Dateien zu verschlüsseln und bestimmten Gruppen Berechtigungen zuzuweisen, müssen die zulässigen Gruppen mit aktivierten Office-Features erstellt worden sein. Sie können die Einstellung für Office-Features einer Azure Active Directory-Gruppe nicht mehr ändern, nachdem sie erstellt wurde. 
   
 Hier ist die resultierende Konfiguration mit den drei Websitezugriffsgruppen.
   
@@ -105,7 +105,7 @@ Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das 
   
 Bei Verwendung des Office Admin Centers melden Sie sich mit einem Benutzerkonto an, dem die Rolle „Benutzerkontoadministrator“ oder „Unternehmensadministrator“ zugewiesen wurde, und verwenden Sie Gruppen, um die entsprechenden Benutzerkonten und -gruppen zu den entsprechenden Zugriffsgruppen hinzuzufügen.
   
-Bei Verwendung von PowerShell müssen Sie zunächst [eine Verbindung mit dem Azure Active Directory V2 PowerShell-Modul herstellen](https://go.microsoft.com/fwlink/?linkid=842218).
+Stellen Sie für PowerShell zunächst [eine Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Verwenden Sie dann den folgenden Befehlsblock, um ein einzelnes Benutzerkonto zu einer Zugriffsgruppe hinzuzufügen:
   
@@ -161,7 +161,7 @@ In dieser Phase erstellen Sie die isolierte SharePoint Online-Website und konfig
   
 Erstellen Sie zuerst mit den folgenden Schritten die SharePoint Online-Teamwebsite.
   
-1. Melden Sie sich beim Admin Center mit einem Konto an, das auch zur Verwaltung der SharePoint Online-Teamwebsite verwendet wird (ein SharePoint Online-Administrator). Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich beim Admin Center mit einem Konto an, das auch zum Verwalten der SharePoint Online-Teamwebsite verwendet wird (SharePoint Online-Administrator). Hilfe finden Sie unter [Where to sign in to Office 365 (Wo kann ich mich bei Office 365 anmelden?)](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -183,7 +183,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
     
 2. Klicken Sie im Bereich **Websiteberechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
     
-3. Klicken Sie auf der neuen Registerkarte **Berechtigungen** in Ihrem Browser auf **Einstellungen für Zugriffsrechteanforderungen**.
+3. Klicken Sie auf der neuen Registerkarte **Berechtigungen** in Ihrem Browser auf **Zugriffseinstellungen anfordern**.
     
 4. Deaktivieren Sie im Dialogfeld **Einstellungen für Zugriffsrechteanforderungen** die Optionen **Mitgliedern das Freigeben der Website sowie einzelner Dateien und Ordner erlauben** und **Zugriffsanforderungen zulassen** (sodass alle drei Kontrollkästchen deaktiviert sind), und klicken Sie dann auf **OK**.
     

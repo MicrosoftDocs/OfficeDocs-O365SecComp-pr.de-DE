@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Kunden askwhat manchmal der Unterschied zwischen Junk-e-Mail und Massen-e-Mail-Nachrichten? In diesem Thema wird der Unterschied erläutert und Informationen zu den verschiedenen Optionen bereitgestellt, die für Exchange Online und Exchange Online Protection (EOP) verfügbar sind.
 ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266927"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Worin besteht der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?
 

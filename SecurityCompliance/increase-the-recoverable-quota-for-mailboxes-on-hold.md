@@ -1,5 +1,5 @@
 ---
-title: Erhöhen des Kontingents für wiederherstellbare Elemente für aufzubewahrende Postfächer
+title: Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Aktivieren Sie das Archivpostfach, und aktivieren Sie die automatische Erweiterung der Archivierung, um die Größe des Ordners "Wiederherstellbare Elemente" für ein Postfach in Office 365 zu erhöhen. '
 ms.openlocfilehash: f419da5b1b42d52433e9fc288aa5b401a2123c1c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254393"
 ---
-# <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für aufzubewahrende Postfächer
+# <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Erhöhen des Kontingents für wiederherstellbare Elemente für im In-Situ-Speicher befindliche Postfächer
 
 Die standardmäßige Aufbewahrungsrichtlinie "Default MRM Policy", die automatisch auf neue Postfächer in Exchange Online angewendet wird, enthält ein Aufbewahrungs mit dem Namen "Wiederherstellbare Elemente 14 Tage in Archiv verschieben". Mit diesem Aufbewahrungs werden Elemente aus dem Ordner "Wiederherstellbare Elemente" im primären Postfach des Benutzers in den Ordner "Wiederherstellbare Elemente" im Archivpostfach des Benutzers verschoben, nachdem die Aufbewahrungsdauer für ein Element von 14 Tagen abgelaufen ist. Damit dies geschieht, muss das Archivpostfach des Benutzers aktiviert sein. Wenn das Archivpostfach nicht aktiviert ist, wird keine Aktion ausgeführt, was bedeutet, dass Elemente im Ordner "Wiederherstellbare Elemente" für ein gespeichertes Postfach nicht nach Ablauf des Aufbewahrungszeitraums von 14 Tagen in das Archivpostfach verschoben werden. Da nichts aus einem Postfach gelöscht wird, ist es möglich, dass das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" überschritten wird, insbesondere, wenn das Archivpostfach des Benutzers nicht aktiviert ist. 
   

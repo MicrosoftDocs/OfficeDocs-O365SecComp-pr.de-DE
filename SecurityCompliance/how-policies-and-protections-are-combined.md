@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256313"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungs Scans in Ihrer e-Mail ausgeführt werden
 
@@ -27,28 +27,28 @@ Im Allgemeinen wird eine auf eine Nachricht angewendete Richtlinie im Header **X
 
 Die folgenden Richtlinien gelten für _alle Organisationen_.
 
-|Priority |Richtlinie  |Kategorie  |Wo verwaltet |
+|Priorität |Richtlinie  |Kategorie  |Wo verwaltet |
 |---------|---------|---------|---------|
 |1     | Schadsoftware      | MALW      | Schadsoftware-Richtlinie   |
 |2     | Phishing-E-Mail     | PHSH     | Konfigurieren von Spamfilterrichtlinien     |
 |3     | Spam mit hoher Vertrauenswürdigkeit      | HSPM        | Konfigurieren von Spamfilterrichtlinien        |
-|4     | Spoofing        | SPOOFING        | Anti-Phishing-Richtlinie, spoof Intelligence        |
+|4     | Spoofing        | SPOOF        | Anti-Phishing-Richtlinie, spoof Intelligence        |
 |5     | Spam         | SPM         | Konfigurieren von Spamfilterrichtlinien         |
 |6     | Massen         | Massen        | Konfigurieren von Spamfilterrichtlinien         |
 
 Darüber hinaus gelten diese Richtlinien für _Organisationen mit ATP_.
 
-|Priority |Richtlinie  |Kategorie  |Wo verwaltet |
+|Priorität |Richtlinie  |Kategorie  |Wo verwaltet |
 |---------|---------|---------|---------|
 |7     | Domänen Identitätswechsel         | DIMP         | Einrichten von Office 365 ATP-Antiphishing-und-Phishing-Richtlinien        |
 |8     | Benutzeridentitätswechsel        | UIMP         | Einrichten von Office 365 ATP-Antiphishing-und-Phishing-Richtlinien         |
 
 Wenn Sie beispielsweise zwei Richtlinien mit ihren jeweiligen Prioritäten haben:
 
-|Richtlinie  |Priority  |Identitätswechsel für Benutzer/Domänen  |Antispoofing  |
+|Richtlinie  |Priorität  |Identitätswechsel für Benutzer/Domänen  |Antispoofing  |
 |---------|---------|---------|---------|
-|A     | 1        | On        |Off         |
-|B     | 2        | Off        | On        |
+|A     | 1        | Ein        |Off         |
+|B     | 2        | Off        | Ein        |
 
 Wenn eine Nachricht sowohl als _Benutzeridentitätswechsel_ als auch als Spoofing __ identifiziert wird (siehe Anti-Spoofing in der obigen Tabelle), und dieselbe Gruppe von Benutzern, die auf Richtlinie a ausgelegt ist, auf Richtlinie B ausgelegt ist, wird die Nachricht als _Spoof_gekennzeichnet und behandelt. Es wird jedoch keine Aktion angewendet, da Spoofing mit höherer Priorität (4) als der Benutzeridentitätswechsel (8) ausgeführt wird.
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie das Berichtnachrichten-Add-in für Outlook und Outlook im Web für einzelne Benutzer oder Ihre gesamte Organisation aktivieren können.
 ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257463"
 ---
 # <a name="enable-the-report-message-add-in"></a>Aktivieren des Berichtsnachrichts-Add-Ins
 

@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: Mit Office 365-Nachrichtenverschlüsselung können E-Mail-Benutzer verschlüsselte Nachrichten an alle innerhalb und außerhalb Ihrer Organisation senden. Als Administrator können Sie die Office 365-Nachrichtenverschlüsselung aktivieren, indem Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) erstellen, die die Bedingungen für die Verschlüsselung festlegen.
 ms.openlocfilehash: e15a433f7f9dacdec870faff11a43e4699bef822
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256683"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>Aktivieren der Nachrichtenverschlüsselung und-Entschlüsselung in Office 365
 

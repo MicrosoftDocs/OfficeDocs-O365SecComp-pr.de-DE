@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Mit der Office 365-Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die Verschlüsselung von e-Mail-Nachrichten trägt dazu bei, dass nur vorgesehene Empfänger Nachrichteninhalte anzeigen können.
 ms.openlocfilehash: 06c43bcb3364b83114e2d7b1a2ef0273858cffb0
-ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261313"
 ---
 # <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
 

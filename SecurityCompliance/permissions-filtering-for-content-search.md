@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Verwenden Sie Filter für die Inhaltssuche, damit ein eDiscovery-Manager nur eine Teilmenge von Postfächern und Websites in Ihrer Office 365-Organisation durchsuchen kann.
 ms.openlocfilehash: 1e12a125390deae60cc8762318b3b6bcf0e6533f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261253"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Konfigurieren der Berechtigungsfilterung für die Compliancesuche
 

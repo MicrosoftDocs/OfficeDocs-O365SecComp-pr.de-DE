@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Um Gruppen von IP-Adressen, die Sie in Office 365 Cloud App Security verwenden, wie etwa ihre physischen Office-IP-Adressen, leicht zu identifizieren, können Sie IP-Adressbereiche einrichten.
 ms.openlocfilehash: b8f5c1dd46b2e3990d53a65881d12ca8f3961b16
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254858"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Gruppieren Ihrer IP-Adressen zur Vereinfachung der Verwaltung in Office 365 Cloud App Security
   
@@ -49,9 +49,9 @@ Jede Gruppe von IP-Bereichen kann mit Tagnamen gekennzeichnet werden, die Sie au
 |**IP-Adressbereiche** <br/> |Geben Sie einen Range mit der Netzwerkpräfix Notation (auch bekannt als CIDR-Notation) an. Beispielsweise enthält 192.168.1.0/27 den Werte 192.168.1.0 bis 192.168.1.31 (einschließlich).  <br/> |
 |**Speicherort** und **registrierter ISP** <br/> |Angeben des Standorts und des InternetdienstAnbieters für den IP-Adressbereich. Dadurch werden die für die Adressen definierten öffentlichen Felder außer Kraft gesetzt, was für Fälle hilfreich ist, beispielsweise für eine IP-Adresse, die als öffentlich in Irland angesehen wird, aber tatsächlich in den USA ist.  <br/> |
 |**Tags** <br/> |Verwenden Sie Tags, um Ihre Gruppen von IP-Adressen zu benennen. (Im Gegensatz zum Feld Name werden Tags in Aktivitätsprotokollen angezeigt.) Geben Sie ein Wort oder einen Ausdruck ein, der für ein Tag verwendet werden soll. Sie können für jeden IP-Adress Kreis beliebig viele Tags hinzufügen. Wenn Sie bereits ein Tag eingerichtet haben und diesen IP-Adress Kreis hinzufügen möchten, wählen Sie ihn aus der Liste der aktuellen Tags aus, die angezeigt werden, wenn Sie mit der Eingabe beginnen.  <br/> |
-|**Kategorie** <br/> | Zuweisen von Kategorien zu ihren Tags, um die Erkennung von Aktivitäten, die aus bestimmten IP-Adressen stammen, zu erleichtern. Wählen Sie aus den folgenden Optionen aus:<br/> **Administrative** Alle IP-Adressen Ihrer Administratoren.  <br/> **Cloud-Anbieter** Die IP-Adresse des Proxys in der Cloud.  <br/> Unter **nehmen** Alle IP-Adressen in Ihrem internen Netzwerk, ihren Zweigstellen und Ihre WLAN-Roaming-Adressen.  <br/> **Riskant** Alle IP-Adressen, die Sie als riskant betrachten, wie etwa verdächtige IP-Adressen, die Sie in der Vergangenheit gesehen haben, IP-Adressen in den Netzwerken Ihrer Mitbewerber usw. Standardmäßig enthält die Risikokategorien zwei IP-Tags: **Anonymer Proxy** und **Tor** <br/> **VPN** Alle IP-Adressen, die von den Remote Arbeitskräften verwendet werden.  <br/> |
+|**Kategorie** <br/> | Zuweisen von Kategorien zu ihren Tags, um die Erkennung von Aktivitäten, die aus bestimmten IP-Adressen stammen, zu erleichtern. Wählen Sie aus den folgenden Optionen aus:  <br/> **Administrative** Alle IP-Adressen Ihrer Administratoren.  <br/> **Cloud-Anbieter** Die IP-Adresse des Proxys in der Cloud.  <br/> Unter **nehmen** Alle IP-Adressen in Ihrem internen Netzwerk, ihren Zweigstellen und Ihre WLAN-Roaming-Adressen.  <br/> **Riskant** Alle IP-Adressen, die Sie als riskant betrachten, wie etwa verdächtige IP-Adressen, die Sie in der Vergangenheit gesehen haben, IP-Adressen in den Netzwerken Ihrer Mitbewerber usw. Standardmäßig enthält die Risikokategorien zwei IP-Tags: **Anonymer Proxy** und **Tor** <br/> **VPN** Alle IP-Adressen, die von den Remote Arbeitskräften verwendet werden.  <br/> |
    
-7. Klicken Sie auf **Save**.
+7. Wählen Sie **Speichern** aus.
     
 Beachten Sie nach der Einrichtung Ihrer IP-Adressbereiche, dass nur zukünftige Ereignisse von diesen Änderungen betroffen sind.
   

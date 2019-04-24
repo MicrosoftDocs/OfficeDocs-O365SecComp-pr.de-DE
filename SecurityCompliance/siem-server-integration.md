@@ -15,11 +15,11 @@ ms.custom:
 - SIEM
 description: 'Zusammenfassung: Lesen Sie diesen Artikel, um einen Überblick über die SIEM-Server Integration mit Microsoft 365 zu erhalten.'
 ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260663"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM-Server Integration mit Microsoft 365-Diensten und-Anwendungen
 

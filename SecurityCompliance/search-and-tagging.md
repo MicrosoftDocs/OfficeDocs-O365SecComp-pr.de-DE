@@ -12,11 +12,11 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: In Advanced eDiscovery können Sie mithilfe des Such-und Markierungs Moduls die Dokumente in Ihrem Fall suchen, in der Vorschau anzeigen und organisieren. Dieses Modul befindet sich derzeit in der Beta Version.
 ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261368"
 ---
 # <a name="search-and-tagging"></a>Suche und Tagging
 
@@ -35,22 +35,22 @@ In der folgenden Tabelle sind die Eigenschaften aufgeführt, die Sie mithilfe ei
 |:-----|:-----|
 |**caselabel** <br/> | Der Name des Tags, das erstellt/angewendet wird, wenn ein Dokument markiert wird. <br/> |
 |**Custodian** <br/> | Die einem Dokument zugeordnete Depotbank; Einschränkungen vorbehalten. <br/> |
-|**Datum** <br/> | Sendedatum für e-Mail; das geänderte Datum für Website Dokumente. <br/> |
+|**date** <br/> | Sendedatum für e-Mail; das geänderte Datum für Website Dokumente. <br/> |
 |**FileID** <br/> | Die Datei-ID innerhalb der Anfrage. <br/> |
 |**filetype** <br/> | Die systemeigene Dateierweiterung. <br/> |
 |**fileclass** <br/> | E-Mail, Dokument oder Anlage. <br/> |
 |**senderauthor** <br/> | Der Absender für e-Mail; der Autor für Website Dokumente. <br/> |
-|**Größe** <br/> | Die Größe der Datei in KB. <br/> |
+|**size** <br/> | Die Größe der Datei in KB. <br/> |
 |**Betreff erstellt** <br/> | Betreff für e-Mail; der Titel für Website Dokumente. <br/> |
 |**bcc** <br/> | Das Feld Bcc einer e-Mail. <br/> |
 |**cc** <br/> | Das Feld Cc einer e-Mail. <br/> |
 |**Teilnehmer** <br/> | Die e-Mail-Adresse aller Teilnehmer in einem e-Mail-Thread, einschließlich fehlender Links. <br/> |
-|**empfangen** <br/> | Das Datum, an dem eine e-Mail empfangen wurde. <br/> |
-|**Empfänger** <br/> | Empfänger einer e-Mail, die in den Feldern "an", "CC" oder "Bcc" enthalten sind. <br/> |
+|**Empfangen** <br/> | Das Datum, an dem eine e-Mail empfangen wurde. <br/> |
+|**recipients** <br/> | Empfänger einer e-Mail, die in den Feldern "an", "CC" oder "Bcc" enthalten sind. <br/> |
 |**sender** <br/> | Der Absender einer e-Mail. <br/> |
 |**LastModifiedDate** <br/> | Das Datum der letzten Änderung eines Website Dokuments. <br/> |
-|**gesendet** <br/> | Das gesendete Datum einer e-Mail. <br/> |
-|**An** <br/> | Der Empfänger, der im Feld "an" einer e-Mail aufgeführt wird. <br/> |
+|**Gesendet** <br/> | Das gesendete Datum einer e-Mail. <br/> |
+|**to** <br/> | Der Empfänger, der im Feld "an" einer e-Mail aufgeführt wird. <br/> |
 |**Autor** <br/> | Der Autor eines Website Dokuments. <br/> |
 |**title** <br/> | Der Titel eines Website Dokuments. <br/> |
 |**dominanttheme**\* <br/> | Das vorherrschende Design eines Elements. <br/> |

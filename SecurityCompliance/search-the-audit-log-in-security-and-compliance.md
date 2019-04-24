@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um die Benutzer-und Administratoraktivitäten in Ihrer Office 365-Organisation anzuzeigen. '
 ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264867"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 

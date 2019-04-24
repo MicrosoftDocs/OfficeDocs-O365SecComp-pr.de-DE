@@ -3,7 +3,6 @@ title: Office 365 Daten Unveränderlichkeit
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Definiert und erläutert Daten Unveränderlichkeit oder Daten, die auffindbar und nicht zerstört oder geändert werden müssen.
-ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.openlocfilehash: b23a62dd95ec2ca554997fc667d89e6979e5b747
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262867"
 ---
 # <a name="immutability-in-office-365"></a>Unveränderbarkeit in Office 365
 Für einige Organisationen ist die Aufbewahrung von e-Mails und zugehörigen Daten in einer auffindbaren Form für die Einhaltung von Vorschriften, internen Steuerungsanforderungen oder Rechtsstreitigkeiten erforderlich. Alle Daten im System müssen auffindbar sein, und keines davon kann zerstört oder geändert werden. Die branchenübliche Bezeichnung dafür ist "Unveränderlichkeit". 

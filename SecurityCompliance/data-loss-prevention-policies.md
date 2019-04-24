@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262157"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -204,7 +204,7 @@ Beispielsweise verfügt die integrierte **U.S. HIPAA** -Richtlinie über eine Re
   
 - aus der Gruppe **PII-IDs** (mindestens eine SSN-Nummer **oder** eine DEA-Nummer) 
     
-    **UND**
+    **AND**
     
 - aus der Gruppe **medizinische Ausdrücke** (mindestens ein ICD-9-cm-Schlüsselwort **oder** ein ICD-10-cm-Schlüsselwort) 
     
@@ -508,7 +508,7 @@ Um die meisten Cmdlets für das Security &amp; Compliance Center zu verwenden, m
     
 DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich Exchange Online. Aus diesem Grund stehen **die Cmdlets für die DLP-Berichte in Exchange Online PowerShell zur Verfügung – nicht im &amp; Security Compliance Center PowerShell**. Um die Cmdlets für die DLP-Berichte zu verwenden, müssen Sie daher Folgendes tun:
   
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Verwenden Sie eines dieser Cmdlets für die DLP-Berichte:
     
@@ -530,6 +530,6 @@ DLP-Berichte benötigen jedoch Pull-Daten von über Office 365, einschließlich 
     
 - [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
     
-- [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type.md)
+- [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
     
 

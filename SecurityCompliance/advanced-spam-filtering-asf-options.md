@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Erweiterte Spam Filterungsoptionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242483"
 ---
 # <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
 

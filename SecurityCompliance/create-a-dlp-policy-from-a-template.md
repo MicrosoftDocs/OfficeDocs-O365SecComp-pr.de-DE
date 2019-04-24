@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 'Die einfachste und gängigste Methode für den Einstieg in DLP-Richtlinien ist die Verwendung der in Office 365 enthaltenen Vorlagen. '
 ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258533"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Erstellen einer DLP-Richtlinie aus einer Vorlage
 

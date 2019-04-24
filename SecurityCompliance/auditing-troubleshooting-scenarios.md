@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 description: Sie können das Office 365-Überwachungsprotokoll-Such Tool verwenden, um häufige Probleme wie die Untersuchung eines kompromittierten Kontos zu beheben oder herauszufinden, wer die e-Mail-Weiterleitung für ein Postfach eingerichtet hat.
 ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250257"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Durchsuchen des Office 365-Überwachungsprotokolls zur Behandlung allgemeiner Szenarien
 
@@ -111,9 +111,9 @@ An dieser Stelle müssen Sie sich die Details der einzelnen Überwachungsdatens�
 
 a. Im Feld **objectID** wird der Alias des Postfachs, für das die e-Mail-Weiterleitung aktiviert wurde, angezeigt. Dieses Postfach wird auch in der Spalte **Element** auf der Suchergebnisseite angezeigt.
 
-b. Im Feld **Parameter** gibt der Wert *ForwardingSmtpAddress* an, dass für das Postfach eine e-Mail-Weiterleitung festgelegt wurde. In diesem Beispiel wird die e-Mail an die e-Mail- mike@contoso.comAdresse weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com-Organisation befindet.
+b. Im Feld **Parameter** gibt der Wert *ForwardingSmtpAddress* an, dass für das Postfach eine e-Mail-Weiterleitung festgelegt wurde. In diesem Beispiel wird die e-Mail an die e-Mail-Adresse mike@contoso.com weitergeleitet, die sich außerhalb der alpinehouse.onmicrosoft.com-Organisation befindet.
 
-c. Der *true* -Wert für den *DeliverToMailboxAndForward* -Parameter gibt an, dass eine Kopie sarad@alpinehouse.onmicrosoft.com ** der Nachricht an die e-Mail-Adresse gesendet wird, die durch den *ForwardingSmtpAddress* -Parameter angegeben wird, was in diesem Beispiel ist mike@contoso.com. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false*festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das Postfach zugestellt, das im **objectID** -Feld angegeben ist.
+c. Der *true* -Wert für den *DeliverToMailboxAndForward* -Parameter gibt an, dass eine kopie der Nachricht an Sarad@alpinehouse.onmicrosoft.com übermittelt *und* an die e-Mail-Adresse weitergeleitet wird, die von der *ForwardingSmtpAddress *der Parameter, der in diesem Beispiel Mike@contoso.com ist. Wenn der Wert für den *DeliverToMailboxAndForward* -Parameter auf *false*festgelegt ist, wird e-Mail nur an die durch den *ForwardingSmtpAddress* -Parameter angegebene Adresse weitergeleitet. Sie wird nicht an das Postfach zugestellt, das im **objectID** -Feld angegeben ist.
 
 d. Das Feld **UserID** gibt den Benutzer an, der die e-Mail-Weiterleitung für das im Feld **objectID** -Feld angegebene Postfach festgelegt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt. In diesem Fall scheint es, dass der Besitzer des Postfachs e-Mail-Weiterleitung für Ihr Postfach festgelegt hat.
 
@@ -187,8 +187,8 @@ Nachdem Sie die Suche ausgeführt haben, werden alle Überwachungsdatensätze f�
 
 a. Im Feld **objectID** wird der vollständige Name der Posteingangsregel angezeigt. Dieser Name enthält den Alias des Postfachs des Benutzers (beispielsweise Sarad) und den Namen der Posteingangsregel (beispielsweise "Nachrichten vom Administrator verschieben").
 
-b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den *from* -Parameter definierte Wert gibt an, dass die Posteingangsregel admin@alpinehouse.onmicrosoft.comauf e-Mails zugreift, die von gesendet werden. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Im Feld **Parameter** wird die Bedingung der Posteingangsregel angezeigt. In diesem Beispiel wird die Bedingung durch den *from* -Parameter angegeben. Der für den *from* -Parameter definierte Wert gibt an, dass die Posteingangsregel auf e-Mails reagiert, die von admin@alpinehouse.onmicrosoft.com gesendet werden. Eine vollständige Liste der Parameter, die zum Definieren von Bedingungen für Posteingangsregeln verwendet werden können, finden Sie im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. Der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. in diesem Beispiel werden die von admin@alpinehouse.onmicrosoft.com empfangenen Nachrichten in den Ordner mit dem Namen *AdminSearch*verschoben. Im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) finden Sie eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können.
+c. Der Parameter *MoveToFolder* gibt die Aktion für die Posteingangsregel an. in diesem Beispiel werden Nachrichten aus admin@alpinehouse.onmicrosoft.com in den Ordner mit dem Namen *AdminSearch*verschoben. Im Artikel [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) finden Sie eine vollständige Liste der Parameter, die zum Definieren der Aktion einer Posteingangsregel verwendet werden können.
 
 d. Das Feld **UserID** gibt den Benutzer an, der die im **objectID** -Feld angegebene Posteingangsregel erstellt hat. Dieser Benutzer wird auch in der Spalte **Benutzer** auf der Suchergebnisseite angezeigt.

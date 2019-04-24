@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn ein Benutzer mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Aufmerksamkeit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können den Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie über eine gültige geschäftliche Anforderung verfügen oder wenn die Richtlinie ein falsch positives Ergebnis ermittelt. '
 ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263892"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von e-Mail-Benachrichtigungen und Anzeigen von Richtlinien Tipps für DLP-Richtlinien
 

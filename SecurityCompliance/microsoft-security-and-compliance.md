@@ -3,7 +3,7 @@ title: Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance C
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 04/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Machen Sie sich bereit für das neue Microsoft 365 Security Center und das Compliance Center.
-ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265487"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center sind jetzt allgemein verfügbar
 
@@ -26,7 +26,7 @@ ms.locfileid: "31518375"
 
 Ihr neues [Microsoft 365 Security Center](overview-security-center.md) enthält ein Dashboard, das Sie bei der Verwaltung und Überwachung der Sicherheit für Ihre Identitäten, Daten, Geräte, Apps und Infrastruktur unterstützt. Sie haben auch einfachen Zugriff auf ihre vollständig neuen [Microsoft Secure Score](microsoft-secure-score.md)-, neuen Device Threat-Berichte, neue Berichte zur Identitäts Bedrohung und ihre Sicherheitsberichte zur Cloud-app. 
 
-[![NEW Microsoft 365 Security Center](media/m365-security-center.png)](overview-security-center.md)
+[![Neues Microsoft 365-Sicherheitscenter](media/m365-security-center.png)](overview-security-center.md)
 
 Wenn Sie das Microsoft 365-Sicherheitscenter zum ersten Mal verwenden, werden Informationen am oberen Rand des Bildschirms angezeigt, um Ihnen den Einstieg zu erleichtern. Außerdem erfahren Sie, wie Sie leicht zu den Sicherheitsfunktionen navigieren, die Sie am meisten untersuchen möchten. Weitere Informationen finden Sie unter [Overview of the Microsoft 365 Security Center](overview-security-center.md).
 
@@ -87,6 +87,8 @@ Benutzern muss der globale Administrator, der Compliance-Administrator, der Comp
 
 - Sicherheitsadministratoren, Sicherheits Operatoren und Sicherheits Leser können auf das Sicherheitscenter zugreifen
 
+ Weitere Informationen zu diesen Rollen finden Sie unter [Permissions in the Office 365 Security _AMP_ Compliance Center](permissions-in-the-security-and-compliance-center.md).
+ 
 In der folgenden Tabelle wird zusammengefasst, wer über Azure, Office 365 und Windows auf verschiedene Portale zugreifen kann:
 
 |Portal |Globaler Administrator |Sicherheits Administrator, Sicherheits Operator oder Sicherheits Leser|Compliance-Administrator oder Compliance-Datenadministrator |
@@ -115,3 +117,5 @@ In der folgenden Tabelle wird zusammengefasst, wer über Azure, Office 365 und W
 [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 Security & Compliance Center – Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+
+Wenn Sie Feedback zu Microsoft 365 Security Center und Microsoft 365 Compliance Center geben möchten, beispielsweise Ideen für neue Features, besuchen Sie das [Kundenfeedback für Microsoft Office 365](https://office365.uservoice.com)

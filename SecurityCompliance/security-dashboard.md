@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Verwenden Sie das neue Sicherheits Dashboard, um den Status der BedrohungsSchutz in Office 365 zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
 ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261078"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 

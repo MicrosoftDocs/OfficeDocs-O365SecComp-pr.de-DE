@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Anomalie-Erkennungsrichtlinien in Office 365 Cloud App Security verwenden Sie integrierte Algorithmen, um mögliche Probleme aufzudecken. Sie sollten über mindestens eine Anomalie-Erkennungsrichtlinie verfügen, die Sie (bei der Erstellung) mithilfe von Filtern optimieren können. '
 ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242858"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Anomalieerkennungsrichtlinien in Office 365 Cloud App Security
 

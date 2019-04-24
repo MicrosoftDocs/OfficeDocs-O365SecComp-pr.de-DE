@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Als globaler Office 365-Administrator können Sie anGriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
 ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249704"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 

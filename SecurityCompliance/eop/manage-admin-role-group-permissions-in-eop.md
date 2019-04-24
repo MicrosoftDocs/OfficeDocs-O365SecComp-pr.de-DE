@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: In Microsoft Exchange Online Protection (EOP) können Sie die Exchange-Verwaltungskonsole verwenden, um einen Benutzer als Mitglied zu einer oder mehreren Rollengruppen hinzuzufügen, sodass er die Berechtigungen für bestimmte Verwaltungsaufgaben erhält. Darüber hinaus können Sie einen Benutzer über die Exchange-Verwaltungskonsole aus Rollengruppen entfernen.
 ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256143"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Verwalten der Berechtigungen der Administratorrollen-Gruppenberechtigungen in EOP
   

@@ -3,23 +3,22 @@ title: Technologiesteuerungen in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Übersicht über die Technologie Steuerungsmethoden von Microsoft für Office 365.'
-ms.openlocfilehash: 77dee44ec648ea2aa1dab61776089bf7d9e2580a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a8dcb65880fc729fc067b2f2bcf25c7db76dbca9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262337"
 ---
 # <a name="office-365-technology-controls"></a>Technologiesteuerungen in Office 365 
 
@@ -34,7 +33,7 @@ Die Lockbox verarbeitet Anforderungen für Berechtigungen, mit denen Ingenieure 
 
 Kunden-Lockbox für Office 365 kann Ihnen helfen, Compliance-Verpflichtungen zu erfüllen, wie Sie in FedRAMP und HIPAA gefunden werden, wenn Sie Verfahren für die explizite Datenzugriffs Autorisierung benötigen. In den seltenen Fällen, in denen ein Microsoft-Dienst Techniker Zugriff auf Ihre Daten benötigt, gewähren Sie diesen Zugriff nur auf Daten, die zur Lösung des Problems und für einen begrenzten Zeitraum erforderlich sind. Vom Supporttechniker ausgeführte Aktionen werden zu Überwachungszwecken protokolliert und können über die [Office 365 Management Activity API](https://msdn.microsoft.com/library/office/dn707383.aspx) und das [Security and Compliance Center](http://protection.office.com/)aufgerufen werden. Kunden-Lockbox fügt den Kunden in den Lockbox-Genehmigungsprozess ein und bietet Ihnen die Möglichkeit, die Autorisierung von Microsoft Access zu Ihren Exchange Online-oder SharePoint Online-Inhalten für Dienstvorgänge zu steuern.
 
->**Hinweis**: Kunden-Lockbox ist in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) und als Add-on-Kauf verfügbar, aber manuelle maßnahmen müssen im Office 365 Admin Center (unter Diensteinstellungen | Kunden-Lockbox), um Sie zu aktivieren. Weitere Informationen finden Sie unter [Office 365-Kunden](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)-lockBox-Anfragen.
+>**Hinweis**: Kunden-Lockbox ist in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) und als Add-on-Kauf verfügbar, aber manuelle maßnahmen müssen im Microsoft 365 Admin Center (unter Diensteinstellungen | Kunden-Lockbox), um Sie zu aktivieren. Weitere Informationen finden Sie unter [Office 365-Kunden](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)-lockBox-Anfragen.
 
 Alle Dienstanforderungen für Exchange Online und SharePoint Online werden vom Lockbox-System verarbeitet. Und mit der Kunden-Lockbox wird jeder Dienstvorgang, der den Zugriff auf diese Dienste erfordert, mit der Exposition gegenüber Kundendaten durch den Lockbox-Genehmigungsprozess durchlaufen und dann dem Kunden ermöglicht, die Anforderung anschließend zu genehmigen oder abzulehnen.
  

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Erfahren Sie, wie Sie die verschiedenen Aufbewahrungsarten identifizieren können, die in einem Office 365-Postfach gespeichert werden dürfen. Zu diesen Aufbewahrungsarten gehört das Litigation Hold, eDiscovery Holds und Office 365 Retention Policies. Sie können auch feststellen, ob ein Benutzer von einer organisationsweiten Aufbewahrungsrichtlinie ausgeschlossen wurde.
 ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253884"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifizieren des Haltebereichs für ein Exchange Online-Postfach
 

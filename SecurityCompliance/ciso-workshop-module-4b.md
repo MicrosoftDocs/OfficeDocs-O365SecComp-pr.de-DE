@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: Weitere Informationen zu Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
 ms.openlocfilehash: bbe28d89280826202c9d338827ac2b1469c8a632
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243366"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO-Workshop-Modul 4B: BedrohungsSchutz Strategie 
 

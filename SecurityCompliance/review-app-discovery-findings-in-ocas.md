@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Überprüfen der APP-Ermittlungsberichte in Office 365 Cloud-App-Sicherheit kann Ihnen helfen, mehr darüber zu erfahren, wie Personen in Ihrer Organisation Cloud-Apps verwenden. Nachdem Sie die APP-Ermittlungsberichte mithilfe von Protokolldateien aus Ihren Firewalls und Proxys erstellt haben, überarbeiten Sie die Ergebnisse im Dashboard App Discovery.
 ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264967"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security
   
@@ -81,7 +81,7 @@ Sie können bestimmte Systembenutzer oder IP-Adressen ausschließen, um sich auf
     
 4. Geben Sie die Benutzer oder IP-Adressen an, und geben Sie im Feld **Kommentare** Informationen dazu ein, warum Sie diese Benutzer oder IP-Adressen ausschließen. 
     
-5. Wählen Sie **Add** aus.
+5. Wählen Sie **Hinzufügen** aus.
     
 ## <a name="next-steps"></a>Nächste Schritte
 

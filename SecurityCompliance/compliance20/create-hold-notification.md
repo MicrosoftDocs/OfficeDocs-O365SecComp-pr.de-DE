@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242793"
 ---
 # <a name="create-a-legal-hold-notice"></a>Erstellen einer gesetzlichen Aufbewahrungspflicht
 
@@ -45,7 +45,7 @@ Der erste Schritt besteht darin, die entsprechenden Details für rechtliche Aufb
     
     - AusStell ender **Offizier**: in der Dropdownliste wird eine Liste mit den Fall Mitgliedern angezeigt. Jeder Hinweis, der an Verwalter gesendet wird, wird im Auftrag des angegebenen ausstellenden beauftragten gesendet.
 
-4. Klicken Sie zum Senden von Kopien der Migrationsberichte an andere Benutzer unten auf der Seite auf **Durchsuchen**.
+4. Klicken Sie auf **Weiter**.
 
 ## <a name="step-2-define-the-portal-content"></a>Schritt 2: Definieren des Portalinhalts
 
@@ -59,7 +59,7 @@ So erstellen Sie den Portalinhalt:
 
 2. Fügen Sie Merge-Variablen in Ihre Nachricht ein, um den Hinweis anzupassen und das Depotschutz-Portal zu teilen.
 
-3. Klicken Sie zum Senden von Kopien der Migrationsberichte an andere Benutzer unten auf der Seite auf **Durchsuchen**.
+3. Klicken Sie auf **Weiter**.
 
   >[!Tip]
   >Weitere Informationen dazu, wie Sie den Inhalt und das Format des Portalinhalts anpassen können, finden Sie unter [use the Communications Editor](using-communications-editor.md).
@@ -127,7 +127,7 @@ Optional können Sie den Workflow für die Weiterleitung mit nicht reagierenden 
 
 ![Seite zur Erinnerung/Eskalation](../media/ReminderEscalations.PNG)
 
-### <a name="reminders"></a>Reminders
+### <a name="reminders"></a>Erinnerungen
 
 Nachdem Sie eine Aufbewahrungs Benachrichtigung gesendet haben, können Sie nicht reagierende Verwalter durch Definieren eines Erinnerungs Workflows nachverfolgen. 
 

@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 Cloud App Security-Sitzungs Richtlinien ermöglichen die Überwachung auf Sitzungsebene in Echtzeit und bieten eine detaillierte Sichtbarkeit auf Office 365-apps und die Möglichkeit, verschiedene Aktionen abhängig von der für eine Benutzersitzung festgelegten Richtlinie durchführen zu können. Anstatt den Zugriff vollständig zuzulassen oder zu blockieren, können Sie mit der Sitzungssteuerung Zugriff gewähren, während Sie die Sitzung überwachen und/oder bestimmte Sitzungsaktivitäten mithilfe der Reverse-Proxy-Funktionen der APP-Steuerung für den bedingten Zugriff einschränken.
 ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263027"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Sitzungsrichtlinien in Office 365 Cloud App Security
 

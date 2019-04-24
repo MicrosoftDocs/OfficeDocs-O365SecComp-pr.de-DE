@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Zusätzlich zu der Basisrichtlinie, die durch BitLocker und Distributed Key Manager (DKM) aktiviert ist, bietet Office 365 eine zusätzliche Verschlüsselungsschicht auf Anwendungsebene für Kunden Inhalte in Office 365, einschließlich Daten aus Exchange Online, Skype for Business, SharePoint Online und OneDrive for Business. Dies wird als Dienst Verschlüsselung bezeichnet.
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266942"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365
 
@@ -46,7 +46,7 @@ BYOK mit Azure Information Protection für Exchange Online finden Sie in den Nac
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Ist Office 365-Nachrichtenverschlüsselung und bringen Sie Ihren eigenen Schlüssel mit Azure Information Protection Ändern des Ansatzes von Microsoft an Drittanbieter-Datenanforderungen wie Vorladungen?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Nein. Office 365 Nachrichtenverschlüsselung und die Option zum Bereitstellen und Steuern ihrer eigenen Verschlüsselungsschlüssel mit bringen Sie Ihren eigenen Schlüssel (BYOK) für Azure Information Protection (AIP) wurde nicht entwickelt, um auf Strafverfolgungsbehörden Vorladungen zu reagieren. Die Nachrichtenverschlüsselung von Office 365 mit BYOK für AIP wurde für Kunden mit Compliance-Orientierung entwickelt, die ihre internen oder externen Compliance-Verpflichtungen erfüllen müssen. Microsoft übernimmt Drittanbieter Anforderungen für Kundendaten sehr ernst. Als Cloud-Dienstanbieter befürworten wir stets den Schutz von Kundendaten. Für den Fall, dass eine Vorladung vorliegt, versuchen wir immer, den dritten an den Kunden zu leiten, um die Informationen zu erhalten. (Lesen Sie den Blog zu Brad Smith: [Schützen von Kundendaten vor der Regierung Snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen in regelmäßigen Abständen detaillierte Informationen zu der Anforderung, die wir [hier](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)erhalten.
+Nein. Office 365 Nachrichtenverschlüsselung und die Option zum Bereitstellen und Steuern ihrer eigenen Verschlüsselungsschlüssel mit bringen Sie Ihren eigenen Schlüssel (BYOK) für Azure Information Protection wurde nicht entwickelt, um auf Strafverfolgungsbehörden Vorladungen zu reagieren. Die Nachrichtenverschlüsselung von Office 365 mit BYOK für AIP wurde für Kunden mit Compliance-Orientierung entwickelt, die ihre internen oder externen Compliance-Verpflichtungen erfüllen müssen. Microsoft übernimmt Drittanbieter Anforderungen für Kundendaten sehr ernst. Als Cloud-Dienstanbieter befürworten wir stets den Schutz von Kundendaten. Für den Fall, dass eine Vorladung vorliegt, versuchen wir immer, den dritten an den Kunden zu leiten, um die Informationen zu erhalten. (Lesen Sie den Blog zu Brad Smith: [Schützen von Kundendaten vor der Regierung Snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Wir veröffentlichen in regelmäßigen Abständen detaillierte Informationen zu der Anforderung, die wir [hier](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)erhalten.
   
 Weitere Informationen finden Sie im [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/default.aspx) in Bezug auf Datenanforderungen von Drittanbietern und "Offenlegung von Kundendaten" in den [Online-Dienstbedingungen (Ost) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   

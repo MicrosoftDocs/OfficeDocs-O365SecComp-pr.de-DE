@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Definieren Sie Richtlinien für sichere Anlagen zum Schutz Ihrer Organisation vor schädlichen Dateien in e-Mails.
 ms.openlocfilehash: 47587d9e189a6fcda2cac964130d0b257b4f4166
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266860"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Einrichten von Office 365 ATP-Richtlinien für sichere Anlagen
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für jeden möglichst einfach zu gestalten.
 ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257043"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Barrierefreiheit für Personen mit Einschränkungen
 

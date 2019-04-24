@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Einrichten von Richtlinien für sichere Links zum Schutz Ihrer Organisation vor böswilligen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten.
 ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267054"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Office 365 ATP-Richtlinien für sichere Links
 

@@ -1,5 +1,5 @@
 ---
-title: Weitere Informationen zu Spoofing Intelligence
+title: Wissenswertes zur Spoofintelligenz
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: Verwenden Sie Spoof Intelligence im Security &amp; Compliance Center auf der Seite Anti-Spam-Einstellungen, um alle Absender zu Überprüfung, die entweder Domänen, die Teil Ihrer Organisation sind, Spoofing oder externe Domänen Spoofing. Spoof Intelligence ist als Teil von Office 365 Enterprise E5 oder separat im Rahmen von Advanced Threat Protection und Exchange Online Protection verfügbar.
 ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252258"
 ---
-# <a name="learn-more-about-spoof-intelligence"></a>Weitere Informationen zu Spoofing Intelligence
+# <a name="learn-more-about-spoof-intelligence"></a>Wissenswertes zur Spoofintelligenz
 
 Verwenden Sie Spoof Intelligence im Security &amp; Compliance Center auf der **Seite Anti-Spam-Einstellungen** , um alle Absender zu Überprüfung, die entweder Domänen, die Teil Ihrer Organisation sind, Spoofing oder externe Domänen Spoofing. Spoof Intelligence ist als Teil von Office 365 Enterprise E5 oder separat im Rahmen von Advanced Threat Protection (ATP) und ab Oktober 2018 Exchange Online Protection (EOP) verfügbar. 
   

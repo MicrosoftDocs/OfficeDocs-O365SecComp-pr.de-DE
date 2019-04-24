@@ -15,18 +15,19 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: a2234d0a0e94e3fbb15f8fac8f6e49cc7b26cfb2
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240967"
 ---
 # <a name="search-statistics"></a>Suchstatistiken
 
 Sie können Ihre Suchergebnisse auf eine Weise überprüfen, indem Sie sich die Statistiken rund um Ihre Ergebnisse ansehen, um sicherzustellen, dass Sie Ihren Erwartungen entsprechen. Wenn eine Suche abgeschlossen ist, werden allgemeine Statistiken im Such Detail Flyout angezeigt:
 - Anzahl und Umfang der von der Suche abgerufenen Elemente
 - Anzahl und Volumen von teilweise indizierten/nicht indizierten Elementen, die in den Suchspeicherorten gefunden wurden
-- Anzahl der durchsuchten Postfächer und Speicherorte. Um detailliertere Statistiken anzuzeigen, klicken Sie im Such Detail Flyout auf "Statistiken".
+- Anzahl der durchsuchten Postfächer und Speicherorte.
+Um detailliertere Statistiken anzuzeigen, klicken Sie im Such Detail Flyout auf "Statistiken".
 
 ## <a name="summary"></a>Zusammenfassung
 
@@ -39,7 +40,7 @@ In der Zusammenfassungsansicht können die Suchergebnisse nach Standorttyp aufge
 
 In der Ansicht der oberen Speicherorte werden die einzelnen Standorte mit den meisten Treffern angezeigt. Für jeden Standort wird Folgendes angezeigt:
 - Speicherort Name (z. b. SharePoint-URL)
-- Typ des Speicherorts
+- Speicherorttyp
 - Anzahl der Elemente, die den Suchbedingungen entsprechen
 - Gesamtvolumen der Elemente, die den Suchbedingungen entsprechen.
 

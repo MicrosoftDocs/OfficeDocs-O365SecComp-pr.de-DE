@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel enthält Informationen zum Aktualisieren des DNS-Eintrags (Domain Name Service) für die Verwendung von SPF (Sender Policy Framework) mit Ihrer benutzerdefinierten Domäne in Office 365. SPF hilft bei der Überprüfung ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
 ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260713"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Einrichten von SPF in Office 365 zum Verhindern von Spoofing
 

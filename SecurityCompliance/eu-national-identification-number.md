@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp EU National Identification Number erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
 ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255643"
 ---
 # <a name="eu-national-identification-number"></a>Nationale IdentifikationsNummer der EU
 
@@ -57,7 +57,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
@@ -121,7 +121,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
@@ -195,7 +195,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
@@ -264,7 +264,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
@@ -348,7 +348,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
 
@@ -415,7 +415,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
 
@@ -489,7 +489,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
 
@@ -565,7 +565,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
 
@@ -630,7 +630,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
 
@@ -695,7 +695,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
 
@@ -776,7 +776,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
 
@@ -837,7 +837,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
 
@@ -910,7 +910,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
 
@@ -991,7 +991,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
 
@@ -1068,7 +1068,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
 
@@ -1128,7 +1128,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 </Entity>
 ```
 
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 #### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
 

@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Administratoren können sich über die Verwendung von S/MIME in Exchange Online informieren.
 ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261383"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME für die Nachrichtensignierung und-Verschlüsselung in Exchange Online
 

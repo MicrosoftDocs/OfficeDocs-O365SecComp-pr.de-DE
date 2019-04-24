@@ -16,11 +16,11 @@ ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Daten, die von cloudbasierten apps in Office 365 erstellt werden, werden in der Microsoft-Cloud in das Exchange Online-Postfach eines Benutzers gespeichert.
 ms.openlocfilehash: 6f7a81842df5972a03648a2f93d4bd6fbd738fec
-ms.sourcegitcommit: 7a6c742a81bc8ebd55b5a437e835bcb85485cf99
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31520248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266897"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>In Exchange Online-Postfächern gespeicherte Inhalte
 

@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Wenn ein Benutzer ununterbrochen e-Mails von Office 365 sendet, die als Spam klassifiziert werden, werden Sie nicht mehr Nachrichten senden.
 ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264937"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränktem Zugriff nach dem Senden von Spam-E-Mails
 

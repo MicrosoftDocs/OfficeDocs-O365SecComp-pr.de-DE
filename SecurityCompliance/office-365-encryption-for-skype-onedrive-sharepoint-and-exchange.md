@@ -15,15 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: eine Beschreibung der Verschlüsselung für Skype, OneDrive, SharePoint und Exchange Online.'
 ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262787"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Office 365-Verschlüsselung für Skype for Business, OneDrive for Business, SharePoint Online und Exchange Online
 
-Office 365 ist eine hochsichere Umgebung, die umfassenden Schutz in mehreren Schichten bietet: physische rechenzentrumssicherheit, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit.
+Office 365 ist eine äußerst sichere Umgebung, die umfassenden Schutz auf mehreren Ebenen bietet: physische Sicherheit von Rechenzentren, Netzwerksicherheit, Zugriffssicherheit, Anwendungssicherheit und Datensicherheit.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -44,12 +44,12 @@ Mehrere Arbeitsauslastungen in Office 365 speichern Daten in SharePoint Online, 
     - Die Inhaltsdatenbank wird durch Datenbankzugriffs Steuerelemente und Verschlüsselung geschützt. Die Verschlüsselung wird mithilfe der [transparentEn Datenverschlüsselung](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde) (DSA) in der [Azure SQL-Datenbank](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)ausgeführt. (Azure SQL Database ist ein universeller relationaler Datenbankdienst in Microsoft Azure, der Strukturen wie relationale Daten, JSON, Spatial und XML unterstützt.) Diese Geheimnisse befinden sich auf Dienstebene für SharePoint Online, nicht auf Mandantenebene. Diese Geheimnisse (auch als Hauptschlüssel bezeichnet) werden in einem separaten sicheren Repository gespeichert, das als Schlüsselspeicher bezeichnet wird. DSA bietet Sicherheit in Ruhe sowohl für die aktive Datenbank als auch für die Datenbanksicherungen und Transaktionsprotokolle.
     - Wenn Kunden den optionalen Schlüssel angeben, wird der Kundenschlüssel in Azure Key Vault gespeichert, und der Dienst verwendet den Schlüssel, um einen Mandanten Schlüssel zu verschlüsseln, der verwendet wird, um einen Website Schlüssel zu verschlüsseln, der dann zum Verschlüsseln der Tasten auf Dateiebene verwendet wird. Im Wesentlichen wird eine neue Schlüsselhierarchie eingeführt, wenn der Kunde einen Schlüssel bereitstellt.
 - Die Karte, die zum erneuten zusammensetzen der Datei verwendet wird, wird zusammen mit den verschlüsselten Schlüsseln in der Inhaltsdatenbank gespeichert, getrennt vom Hauptschlüssel, der zum Entschlüsseln erforderlich ist.
-- Jedes Azure-Speicherkonto verfügt über eigene eindeutige Anmeldeinformationen pro Zugriffstyp (lesen, schreiben, auflisten und löschen). Jeder Satz von Anmeldeinformationen wird im Secure Key Store aufbewahrt und regelmäßig aktualisiert. Wie oben beschrieben, gibt es drei verschiedene Arten von speichern, die jeweils eine eigene Funktion aufweisen:
+- Jedes Azure-Speicherkonto verfügt über eigene eindeutige Anmeldeinformationen pro Zugriffstyp (lesen, schreiben, auflisten und löschen). Jeder Satz von Anmeldeinformationen wird im sicheren Schlüsselspeicher aufbewahrt und regelmäßig aktualisiert. Wie oben beschrieben, gibt es drei verschiedene Arten von speichern, die jeweils eine eigene Funktion aufweisen:
     - Kundendaten werden als verschlüsselte BLOBs im Azure-Speicher gespeichert. Der Schlüssel für jeden Kundendaten Block wird in der Inhaltsdatenbank verschlüsselt und separat gespeichert. Die Kundendaten selbst haben keine Ahnung, wie Sie entschlüsselt werden können.
     - Die Inhaltsdatenbank ist eine SQL Server-Datenbank. Die Zuordnung ist erforderlich, um die im Azure-Speicher gespeicherten Kundendaten-BLOBs sowie die Schlüssel zum Verschlüsseln dieser BLOBs zu finden und wieder zusammenzusetzen. Die Schlüssel Gruppe ist jedoch selbst verschlüsselt (wie oben beschrieben) und in einem separaten Schlüsselspeicher gespeichert.
     - Der Schlüsselspeicher ist physisch von der Inhaltsdatenbank und dem Azure-Speicher getrennt. Sie enthält die Anmeldeinformationen für jeden Azure-Speichercontainer und den Hauptschlüssel für die in der Inhaltsdatenbank enthaltenen verschlüsselten Schlüssel.
 
-Jede dieser drei Speicherkomponenten – der Azure-BLOB-Speicher, die Inhaltsdatenbank und der Schlüsselspeicher – ist physisch getrennt. Die Informationen, die in einer der Komponenten aufbewahrt werden, sind nicht verwendbar. Ohne Zugriff auf alle drei ist es unmöglich, die Schlüssel zu den Chunks abzurufen, die Schlüssel zu entschlüsseln, um Sie nutzbar zu machen, die Schlüssel mit ihren entsprechenden Chunks zu verbinden, die einzelnen Abschnitte zu entschlüsseln oder ein Dokument aus den zugehörigen Chunks zu erstellen.
+Jede dieser drei Speicherkomponenten – der Azure-BLOB-Speicher, die Inhaltsdatenbank und der Schlüsselspeicher – ist physisch getrennt. Die Informationen in einer der Komponenten sind allein unbrauchbar. Ohne Zugriff auf alle drei ist es unmöglich, die Schlüssel zu den Chunks abzurufen, die Schlüssel zu entschlüsseln, um Sie nutzbar zu machen, die Schlüssel mit ihren entsprechenden Chunks zu verbinden, die einzelnen Abschnitte zu entschlüsseln oder ein Dokument aus den zugehörigen Chunks zu erstellen.
 
 BitLocker-Zertifikate, die die physischen Datenträger auf Computern im Datencenter schützen, werden in einem sicheren Repository (dem SharePoint Online Secret Store) gespeichert, das durch den Farm Schlüssel geschützt ist.
 
@@ -74,7 +74,7 @@ Listenelemente sind kleinere Kundendaten Segmente, die Ad-hoc erstellt werden od
 In OneDrive for Business und SharePoint Online gibt es zwei Szenarien, in denen Daten in Rechenzentren ein- und ausgehen.
 
 - **Die Client Kommunikation mit der Server** -Kommunikation zu OneDrive for Business über das Internet verwendet SSL/TLS-Verbindungen. Alle SSL-Verbindungen werden mit 2048-Bit-Schlüsseln hergestellt.
-- **Datenverlagerung zwischen Rechenzentren** – der Hauptgrund für das Verschieben von Daten zwischen Rechenzentren ist die Geo-Replikation zur Aktivierung der Notfallwiederherstellung. Beispielsweise Reisen SQL Server-Transaktionsprotokolle und BLOB-Speicher-Deltas entlang dieser Pipe. Während diese Daten bereits über ein privates Netzwerk übertragen werden, wird Sie durch die erstklassige Verschlüsselung weiter geschützt.
+- **Datenverlagerung zwischen Rechenzentren** – der Hauptgrund für das Verschieben von Daten zwischen Rechenzentren ist die Geo-Replikation zur Aktivierung der Notfallwiederherstellung. Beispielsweise werden SQL Server-Transaktionsprotokolle und BLOB-Speicher-Deltas entlang dieser Pipe übertragen. Während diese Daten bereits über ein privates Netzwerk übertragen werden, werden sie zusätzlich durch branchenbeste Verschlüsselung geschützt.
 
 ## <a name="exchange-online"></a>Exchange Online
 

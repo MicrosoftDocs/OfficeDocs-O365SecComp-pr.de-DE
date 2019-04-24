@@ -3,23 +3,22 @@ title: Personalsteuerungen in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Übersicht über die Vorgehensweisen von Microsoft für Office 365.'
-ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b69c219ef6b405734035d74ce10195ea8cddf401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262417"
 ---
 # <a name="office-365-personnel-controls"></a>Personalsteuerungen in Office 365 
 
@@ -70,7 +69,8 @@ In den Bereichen, in denen das lokale Recht dies zulässt, führt die globale Si
 - Bestätigung der Identität aus einer vom Staat herausgegebenen Identifizierung
 - Gegebenenfalls Bonitätsprüfung
 
-Für bestimmte Verwaltungs-, Sicherheits-oder andere Rollen, einschließlich, aber nicht beschränkt auf in der USA ansässigen Mitarbeitern in Rollen, die Zugriff auf Kundendaten benötigen, sind möglicherweise regelmäßige rescreenings und/oder zusätzliche Hintergrundprüfungen erforderlich. Für Kontingent Mitarbeiter gibt der Vertrag mit dem Drittanbieter die Anforderungen von Microsoft für die Überprüfung an, die von dem Drittanbieter durchgeführt werden müssen. Bei Hintergrundprüfungen ist das drittanbieterunternehmen dafür verantwortlich, Microsoft zu überprüfen, ob eine Hintergrundüberprüfung durchgeführt wurde. Die Ergebnisse der Hintergrundüberprüfung werden in der Regel per e-Mail von der Personalabteilung des Drittanbieters empfangen. Internationale Mitarbeiter von Vertragsbedienstete können aufgrund von Gesetzen in Ländern, die Hintergrundprüfungen verbieten, vom Hintergrund Screening ausgeschlossen werden.
+Für bestimmte Verwaltungs-, Sicherheits-oder andere Rollen, einschließlich, aber nicht beschränkt auf in der USA ansässigen Mitarbeitern in Rollen, die Zugriff auf Kundendaten benötigen, sind möglicherweise regelmäßige rescreenings und/oder zusätzliche Hintergrundprüfungen erforderlich.
+Für Kontingent Mitarbeiter gibt der Vertrag mit dem Drittanbieter die Anforderungen von Microsoft für die Überprüfung an, die von dem Drittanbieter durchgeführt werden müssen. Bei Hintergrundprüfungen ist das drittanbieterunternehmen dafür verantwortlich, Microsoft zu überprüfen, ob eine Hintergrundüberprüfung durchgeführt wurde. Die Ergebnisse der Hintergrundüberprüfung werden in der Regel per e-Mail von der Personalabteilung des Drittanbieters empfangen. Internationale Mitarbeiter von Vertragsbedienstete können aufgrund von Gesetzen in Ländern, die Hintergrundprüfungen verbieten, vom Hintergrund Screening ausgeschlossen werden.
 
 ## <a name="microsoft-employment-screening"></a>Microsoft Employment Screening
 Seit 2004 hat Microsoft Personen aufgefordert, einen siebenjährigen Strafregister Bildschirm für Kapitalverbrechen und Vergehen zu verabschieden, und ihre Bildungs-und Beschäftigungshistorie im Rahmen der vorarbeits Überprüfung in den USA für Mitarbeiter und Praktikanten zu überprüfen.
@@ -84,7 +84,7 @@ Eine Microsoft-Cloud-Hintergrundüberprüfung ist erforderlich, damit Kandidaten
 
 In der folgenden Tabelle sind die Prüfungen aufgeführt, die im Rahmen der Microsoft-Cloud-Hintergrundüberprüfung durchgeführt werden.
 
-| Prüfung | Description |
+| Prüfung | Beschreibung |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Suche nach sozialVersicherungsNummern | Überprüft, ob die angegebene sozialVersicherungsnummer gültig ist. |
 | Überprüfen des Vorstrafenregisters | Die siebenjährigen kriminellen Datensätze überprüfen auf Schwerverbrechen und Vergehen Vergehen auf Bundes-, Landes-und Ortsebene sowie gegebenenfalls auf föderaler Ebene. |

@@ -12,11 +12,11 @@ ms.collection:
 - M365-security-compliance
 description: Als Office 365-Administrator können Sie die Möglichkeit für Personen, e-Mails als Junk-e-Mails zu melden, deaktivieren.
 ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264167"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Deaktivieren von Junk-e-Mail-Berichten in Outlook im Web
 
@@ -29,7 +29,7 @@ Sie können Junk-, Phishing-und nicht-Junk-e-Mail-Nachrichten mithilfe der Optio
     
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Outlook im Web-Postfachrichtlinien" im Thema [Outlook im Web Permissions](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
 
-- Informationen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 ## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Deaktivieren von Junk-, Phishing-und nicht Junk-Berichterstellung an Microsoft
 <a name="sectionSection1"> </a>

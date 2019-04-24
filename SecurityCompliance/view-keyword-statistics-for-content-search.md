@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse
+title: Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Verwenden Sie die Suchstatistik Funktion, um Statistiken für mehrere Inhalts suchVorgänge im Security & Compliance Center anzuzeigen und zu vergleichen. Sie können die Stichwortliste auch beim Erstellen oder Bearbeiten einer Suchabfrage konfigurieren, um Erweiterte Statistiken zu erhalten, die zeigen, wie viele Elemente mit den einzelnen Schlüsselwörtern oder Schlüsselwörtern übereinstimmen.
 ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267400"
 ---
-# <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen von Schlüsselwortstatistiken für Inhaltssuchergebnisse
+# <a name="view-keyword-statistics-for-content-search-results"></a>Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse
 
 Nach dem Erstellen und Ausführen einer Inhaltssuche können Sie Statistiken zu den geschätzten Suchergebnissen anzeigen. Dies enthält eine Zusammenfassung der Suchergebnisse (ähnlich der Zusammenfassung der geschätzten Suchergebnisse, die im Detailbereich angezeigt werden), die Abfragestatistiken wie die Anzahl der inhaltsspeicherorte mit Elementen, die mit der Suchabfrage übereinstimmen, und der Name der inhaltsspeicherorte , die die meisten übereinstimmenden Elemente aufweisen. Sie können Statistiken für eine oder mehrere Inhalts Suchvorgänge anzeigen. Auf diese Weise können Sie die Ergebnisse für mehrere Suchvorgänge schnell vergleichen und Entscheidungen zur Effektivität ihrer Suchabfragen treffen.
   
@@ -41,7 +41,7 @@ So zeigen Sie Statistiken für Inhalts suchVorgänge an
   
 3. Klicken Sie auf der Seite **Suchstatistiken** auf einen der folgenden Links, um Statistiken zu den ausgewählten Suchvorgängen anzuzeigen. 
     
-    **Summary**
+    **Zusammenfassung**
     
     Auf dieser Seite werden Statistiken angezeigt, die denen ähneln, die im Detailbereich auf der Seite für die **Inhaltssuche** angezeigt werden. Die Statistik für alle ausgewählten suchen wird angezeigt. Beachten Sie, dass Sie die ausgewählten Suchvorgänge auf dieser Seite erneut ausführen können, um die Statistiken zu aktualisieren. 
     

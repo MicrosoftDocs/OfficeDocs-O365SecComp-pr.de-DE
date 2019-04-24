@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Relevanz-Moduls in Office 365 Advanced eDiscovery
+title: Verwenden des Relevance-Moduls in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Erfahren Sie mehr über das Relevanz-Modul in Office 365 Advanced eDiscovery, einschließlich eines Workflows und Richtlinien und Schritte für Schulung und Dateiüberprüfung.  '
 ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263787"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Verwenden des Relevanz-Moduls in Office 365 Advanced eDiscovery
+# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Verwenden des Relevance-Moduls in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 In Advanced eDiscovery umfasst das Relevance-Modul die Relevanz von Schulungen und Überprüfungen von Dateien im Zusammenhang mit einem Fall. Der Relevanz-Workflow wird angezeigt und wie folgt beschrieben:
   
-![Relevanzworkflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Relevanz-Workflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Zyklen der Bewertung und Nachverfolgung**:
     

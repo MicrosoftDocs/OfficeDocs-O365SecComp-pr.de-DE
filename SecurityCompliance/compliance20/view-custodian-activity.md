@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241032"
 ---
 # <a name="view-custodian-audit-activity"></a>Anzeigen der Depotbank-Überwachungsaktivität
 
@@ -50,7 +50,7 @@ Sie müssen in Exchange Online über die Rolle "Überwachungsprotokolle" oder "�
       
       c. **Verwalter** – klicken Sie in dieses Feld, und wählen Sie dann einen bestimmten Verwalter aus, für den Suchergebnisse angezeigt werden sollen. Überwachungsdatensätze für die ausgewählte Aktivität, die von den Benutzern, die Sie in diesem Feld ausgewählt haben, ausgeführt werden, werden in der Ergebnisliste angezeigt.
       
-   5. Klicken Sie auf   ![Schaltfläche "suchen"](../media/SearchButton.PNG)  , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach ein paar Augenblicken werden Sie unter Ergebnisse auf der Such Seite der Depotbank-Aktivitäten angezeigt. 
+   5. Click   ![Schaltfläche "suchen"](../media/SearchButton.PNG)  , um die Suche mit Ihren Suchkriterien auszuführen. Die Suchergebnisse werden geladen, und nach ein paar Augenblicken werden Sie unter Ergebnisse auf der Such Seite der Depotbank-Aktivitäten angezeigt. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Schritt 2: Anzeigen der Suchergebnisse des Überwachungsprotokolls
 

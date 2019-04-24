@@ -1,5 +1,5 @@
 ---
-title: Nachverfolgen der Relevanzanalyse in Office 365 Advanced eDiscovery
+title: Nachverfolgen der Relevanz-Analyse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'In diesem Artikel erfahren Sie, wie Sie den Status und die Ergebnisse der Relevanz für Anfragen in Office 365 Advanced eDiscovery anzeigen und interpretieren.  '
 ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264407"
 ---
-# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Nachverfolgen der Relevanzanalyse in Office 365 Advanced eDiscovery
+# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Nachverfolgen der Relevanz-Analyse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -41,7 +41,7 @@ In Advanced eDiscovery wird auf der Registerkarte Relevanz verfolgen die berechn
     
     In dem Beispiel wird eine erfolgreich abgeschlossene Bewertung für ein Problem angezeigt, die durch die Anzeige des abgeschlossenen Farb Fortschritts und des Häkchens angezeigt wird. Tagging ist im Gange, aber der Fall gilt weiterhin als instabil (Stabilitäts Status wird auch in einem ToolTip angezeigt). Die nächste Schritt Empfehlung ist "Training". 
     
-    ![Schulung für Relevanznachverfolgung: Schritt 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
+    ![Relevanz Track Training Schritt 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
     In der erweiterten Ansicht werden zusätzliche Informationen und Optionen angezeigt. Der angezeigte aktuelle Fehler Rand ist der Fehler Rand des Rückrufs im aktuellen Status der Bewertung, wenn die vorhandenen (bereits gekennzeichneten) Bewertungsdateien vorhanden sind.
     
@@ -52,7 +52,7 @@ In Advanced eDiscovery wird auf der Registerkarte Relevanz verfolgen die berechn
     
     In **Relevanz** \> **Track**geben die Fortschrittsanzeige und die QuickInfo des Trainings die geschätzte Anzahl zusätzlicher Beispiele an, die zum Erreichen der Stabilität benötigt werden. Diese Schätzung stellt eine Richtlinie für die erforderliche zusätzliche Schulung dar.
     
-    ![Schulung für Relevanznachverfolgung](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Relevanz Track-Schulung](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
 2. Wenn Sie mit dem Tagging fertig sind und das Training fortsetzen müssen, klicken Sie auf **Training**. Ein weiterer Beispielsatz von Dateien wird aus dem geladenen Datei Satz für zusätzliche Schulungen generiert. Sie kehren dann zur Registerkarte Tag zurück, um weitere Dateien zu markieren und zu trainieren.
     
@@ -97,15 +97,15 @@ Wenn es Inkonsistenzen bei der Dateikennzeichnung gibt, kann dies Auswirkungen a
 
 Erweitern Sie auf der Registerkarte **Relevanz \> verfolgen** die Zeile eines Problems, und klicken Sie neben **detaillierte Ergebnisse**auf **Ansicht**. Die detaillierten Ergebnisbereiche werden angezeigt (siehe unten).
   
-![Detaillierte Ergebnisse der Relevanzschulung](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Relevanz-Schulung detaillierte Ergebnisse](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Tagging-Zusammenfassung
 
  In dem unten gezeigten Beispiel **** werden die Gesamtwerte für alle Bewertungs-, Schulungs-und Catch-up-Datei Kennzeichnungs Prozesse angezeigt. 
   
-![Taggingzusammenfassung der Relevanznachverfolgung](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Übersicht über Relevanz-Titel-Tagging](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Schlüsselwörter
+### <a name="keywords"></a>Schlüsselwörter
 
 Bei einem Schlüsselwort handelt es sich um eine eindeutige Zeichenfolge, ein Wort, einen Ausdruck oder eine Folge von Wörtern in einer Datei, die von Advanced eDiscovery identifiziert wurde, als einen wichtigen Indikator dafür, ob eine Datei relevant ist. Das Schlüsselwort und die Gewichtung der Spalten "include" in Dateien, die als relevant markiert sind, und die Spalten "Exclude" listet Schlüsselwörter und Gewichte in Dateien auf, die als nicht relevant markiert sind.
   
@@ -117,7 +117,7 @@ Die erweiterte eDiscovery-Liste mit Schlüsselwörtern kann verwendet werden, um
 
 Der **Fortschritts Fortschritt** -Bereich enthält eine Trainingsfortschritts Grafik und eine Anzeige des Qualitäts Indikators, wie im folgenden Beispiel gezeigt. 
   
-![Schulungsstatus für Relevanznachverfolgung](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Relevanz nachVerfolgen des Schulungs Fortschritts](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
  **Ausbildungs Qualitätsindikator**: zeigt die Bewertung der Tagging-Konsistenz wie folgt an:
   
@@ -153,7 +153,7 @@ Der Bereich **Batch Berechnungsergebnisse** enthält die Anzahl der Dateien, die
 
 Im Bereich **Trainingsstatistik** werden Statistiken und Diagramme basierend auf Ergebnissen aus Advanced eDiscovery Relevance Training angezeigt. 
   
-![Schulungsstatistiken für Relevanznachverfolgung](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
+![Relevanz Track Training Statistics](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Diese Ansicht zeigt Folgendes:
   

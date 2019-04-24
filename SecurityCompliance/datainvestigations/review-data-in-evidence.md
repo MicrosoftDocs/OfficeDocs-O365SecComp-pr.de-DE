@@ -1,5 +1,5 @@
 ---
-title: Über Prüfdaten in Evidence
+title: Überprüfen von Nachweisdaten
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,104 +14,92 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 279d2117a69e889f9e605e0ab211c03c5842a59d
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258043"
 ---
-# <a name="review-data-in-evidence"></a>Über Prüfdaten in Evidence
+# <a name="review-the-data-in-evidence"></a>Überprüfen von Nachweisdaten
 
-**Evidence** ist eine Momentaufnahme der Suchergebnisse, die Sie gesammelt haben. Wenn Sie Suchergebnisse zu beweisen hinzufügen, wird ein Prozess ausgelöst, um Dateien, Metadaten und Text zu extrahieren. Anschließend erstellt das System einen neuen Index aller Daten und fügt den Nachweise hinzu ****. 
+Bei den Daten in einem Evidence-Satz in einer Daten Untersuchung handelt es sich um eine Momentaufnahme der Suchergebnisse, die Sie gesammelt und dem Evidence-Satz hinzugefügt haben. Wenn Sie Suchergebnisse zu beweisen hinzufügen, wird ein Prozess ausgelöst, um Dateien, Metadaten und Text aus den von der Suche zurückgegebenen Elementen zu extrahieren. Dann erstellt das Tool für Daten Untersuchungen (Vorschau) einen neuen Index (durch einen Prozess namens *Advanced Indexing*) aller Daten und fügt einen auf der Registerkarte **Evidence** festgelegten Nachweis hinzu. 
 
-Bei zeitabhängigen Vorfällen können Sie dadurch schnell die Umgebung eindämmen, indem Sie Daten an ursprünglichen Speicherorten löschen und erneut erstellte Nachweise in einer isolierten Umgebung untersuchen. Nach dem Sammeln von beweisen können Sie einzelne Dokumente im nativen Format, im Text Format oder in einem nahezu systemeigenen Format überarbeiten. Darüber hinaus können Sie Abfragen ausführen, um die Daten nach Zeitspanne, Dateitypen, Datenbesitzern und vielen anderen Bedingungs Karten einzugrenzen. Mit Autor/Absender/Empfänger-Bedingungs Karten können Sie schnell untersuchen, wer am Spill beteiligt ist und ob externe Freigaben vorhanden sind. Weitere Informationen finden Sie unter:
+Bei zeitabhängigen Untersuchungen können Sie dadurch schnell die Umgebung eindämmen, indem Sie die tatsächlich verschütteten oder bösartigen Daten, die sich in der ursprünglichen Datenquelle befinden, löschen und gleichzeitig den erneut erstellten Beweis in einem isolierte Umgebung, in diesem Fall werden die Daten in den Evidence-Satz kopiert. Nachdem der Beweis gesammelt und dem Evidence-Satz hinzugefügt wurde, können Sie einzelne Dokumente im nativen Format, im Text Format oder in einem nahezu systemeigenen Format überarbeiten, mit dem Sie Dokumente mit Anmerkungen versehen und redact können. Darüber hinaus können Sie Abfragen ausführen, um die Datensätze nach Zeitspanne, Dateitypen, Datenbesitzern und vielen anderen Eigenschaften und Suchbedingungen einzugrenzen. Beispielsweise können Sie mithilfe der Bedingungen Autor, Absender oder Empfänger schnell erkennen, welche Personen an dem Vorfall beteiligt sind und ob Daten aus Ihrer Organisation für externe Benutzer freigegeben wurden. Weitere Informationen zum Durchsuchen von Daten in einem Evidence-Satz finden Sie unter [Query the data in Evidence](evidence-query.md).
 
-  - [Abfragen der Daten nach belegen](evidence-query.md)
-
-Klicken Sie auf **Beweise verwalten**, um Dokumente zu gruppieren und weitere Unterstützung für Ihre Überprüfungen zu erhalten. Klicken Sie in der **Analytics** -Kachel auf **analysieren**. Dadurch werden erweiterte Analysen wie doppelte Erkennung, e-Mail-Threading und Design Analyse ausgeführt. Anschließend können Sie die allgemeinen Themen der Daten sehen und auch Dokumente per e-Mail-Threads, exakte Duplikate und beinahe-Duplikate organisieren, um Ihre Untersuchung zu erleichtern. Weitere Informationen finden Sie unter:
-
-  - [Führen Sie Analysen aus, um schneller zu untersuchen](run-analytics-to-investigate-faster.md)
+Um Dokumente zu gruppieren und weitere Unterstützung für Ihre Überprüfungen zu erhalten, wählen Sie auf der Registerkarte **Evidence** einen Evidence-Satz aus, und klicken Sie dann auf **Evidence verwalten**. Klicken Sie in der **Analytics** -Kachel auf **Analyse für den gesamten Satz neu erstellen**. Dadurch werden erweiterte Analysen wie doppelte Erkennung, e-Mail-Threading und Design Analyse ausgeführt. Anschließend können Sie die allgemeinen Themen der Daten sehen und auch Dokumente per e-Mail-Threads, in der Nähe von Duplikaten und exakte Duplikate organisieren, um Ihre Untersuchung zu unterstützen. Weitere Informationen finden Sie unter [Run Analytics to untersuchen schneller](run-analytics-to-investigate-faster.md).
 
 ## <a name="view-documents-in-evidence"></a>Dokumente als Beweis anzeigen
 
-Data Investigation (Preview) zeigt Inhalte über mehrere Betrachter an, die jeweils unterschiedlichen Zwecken dienen. Die verschiedenen Betrachter können verwendet werden, indem Sie auf ein beliebiges Dokument in **Evidence**klicken. Die derzeit bereitgestellten Viewer sind:
+Daten Untersuchungen (Preview) ermöglicht die Anzeige von Inhalten in mehreren verschiedenen Viewern, wobei jeder Betrachter einen anderen Zweck hat. Diese Zuschauer sind:
 
 - Datei Metadaten
 - Systemeigene Ansicht
 - Text Ansicht
 - Ansicht mit Anmerkungen
-- Konvertierte Ansicht
+
+Wenn Sie auf einen dieser Viewer zugreifen möchten, wählen Sie ein Dokument in einem Evidence-Set aus.
 
 ## <a name="file-metadata"></a>Datei Metadaten
 
-Dieses Panel kann ein-oder ausgeschaltet werden, um verschiedene Metadaten anzuzeigen, die mit dem Dokument verknüpft sind. Auch wenn das Suchergebnis Raster angepasst werden kann, um bestimmte Metadaten anzuzeigen, gibt es Fälle, in denen horizontaler Bildlauf beim Überprüfen von Daten schwierig sein kann. Der Datei-Metadatenbereich ermöglicht es einem Benutzer, eine Ansicht innerhalb des Viewers einzuschalten.
+In dieser Ansicht werden verschiedene Metadaten-Eigenschaften angezeigt, die dem ausgewählten Dokument zugeordnet sind. Sie können diese Ansicht ein-und ausschalten, indem Sie auf **Datei Metadaten**klicken. Beim Überprüfen eines Dokuments können Sie die Datei Metadaten anzeigen und trotzdem zwischen den verschiedenen Viewern wechseln.
 
-![Datei-Metadatenbereich
-](../media/Reviewimage2.png)
+Im folgenden finden Sie ein Beispiel für die Datei Metadaten für ein Dokument. Weitere Informationen zu den Metadatenfeldern finden Sie unter [Document Metadata fields in Data Investigations (Preview)](document-metadata-fields.md).
+
+![Datei-Metadatenbereich](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Systemeigene Ansicht
 
-Der systemeigene Viewer zeigt die umfangreichste Ansicht eines Dokuments an. Es unterstützt Hunderte von Dateitypen und soll eine möglichst Native Erfahrung darstellen. Für Microsoft Office-Dateien nutzt der Viewer beispielsweise Office Online, um Inhalte wie Dokument Kommentare, Excel-Formeln, ausgeblendete Zeilen/Spalten, PowerPoint-Notizen usw. anzuzeigen. Weitere Informationen zu den Office Online-Viewern finden Sie \[hier need Link\]
+Der systemeigene Viewer zeigt die genaueste Ansicht eines Dokuments im systemeigenen Format an. Die systemeigene Ansicht wird für Hunderte von Dateitypen unterstützt und soll Dokumente in der größtmöglichen nativen Umgebung anzeigen. Für Microsoft Office-Dateien verwendet der systemeigene Viewer Office Online. Auf diese Weise können Sie Inhalte wie Kommentare in verschiedenen Office-Dokumenten, Formeln und ausgeblendeten Zeilen/Spalten in Excel und die Notizenansicht in PowerPoint anzeigen.
 
 ![Systemeigene Ansicht
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Text Ansicht
 
-Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eingebettete Bilder und Formatierungen werden ignoriert, aber eine sehr leistungsfähigere Ansicht, wenn ein Benutzer versucht, den Inhalt schnell zu verstehen. Die Text Ansicht umfasst auch andere Features:
+Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eingebettete Bilder und Formatierungen werden ignoriert, aber diese Ansicht ist sehr nützlich, wenn Sie versuchen, die Inhalte in einem Dokument schnell zu überprüfen und zu verstehen. Die Text Ansicht umfasst auch die folgenden Features:
 
-  - Linien Zähler erleichtert das verweisen auf bestimmte Teile eines Dokuments
+  - Ein Linien Zähler, der das referenzieren bestimmter Teile eines Dokuments erleichtert.
 
-  - Hervorhebung von Suchtreffern, die Ausdrücke innerhalb des Dokuments sowie die Bildlaufleiste hervorheben
+  - Hervorheben von Suchtreffern, die Ausdrücke im Dokument sowie auf der Bildlaufleiste hervorheben
 
-  - Die Ansicht diff bietet eine Vergleichsansicht, in der Textunterschiede beim Anzeigen von nahezu doppelt vorhandenen Dokumenten hervorgehoben werden.
+  - Eine diff-Ansicht bietet eine Vergleichsansicht, in der die Textunterschiede beim Anzeigen von Dokumenten mit dem Panel **near Duplicates** hervorgehoben werden.
+
+**Beispiel für Linien Zähler und Suchtreffer Hervorhebung in Text und ScrollBar**
 
 ![Text Ansicht
 ](../media/Reviewimage4.png)
+
+**Beispiel für die diff-Ansicht**
 
 ![Ansicht "diff"
 ](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Ansicht mit Anmerkungen
 
-In der Ansicht mit Anmerkungen werden Features bereitgestellt, mit denen Benutzer während der Untersuchung Markups für ein Dokument anwenden können, einschließlich:
+In der Ansicht mit Anmerkungen werden Features bereitgestellt, mit denen Sie während des überarbeits Vorgangs Markups für ein Dokument anwenden können. Hierzu gehören die folgenden Tools:
 
-  - Flächen-Aktionen – Benutzer können ein Feld in das Dokument ziehen, um vertrauliche Inhalte zu verstecken.
+  - **Flächen-Aktionen** – Sie können ein deckendes Feld im Dokument zeichnen, das vertrauliche Inhalte ausgeblendet.
 
-  - Bleistift – Benutzer können ein Dokument Freihandzeichnen, um die Aufmerksamkeit auf bestimmte Teile eines Dokuments zu lenken.
+  - **Bleistift** – Sie können ein Dokument Freihandzeichnen, um auf bestimmte Teile des Inhalts zu achten.
 
-  - Anmerkungen auswählen – Benutzer können Anmerkungen in einem Dokument auswählen, um Sie zu löschen
+  - **Anmerkungen auswählen** – Sie können Anmerkungen in einem Dokument auswählen und löschen.
 
-  - UmSchalten der Anmerkungs Transparenz – macht Anmerkungen halbtransparent, um den Inhalt hinter der Anmerkung anzuzeigen
+  - **Anmerkungs Transparenz umschalten** – Sie können die Transparenz von Anmerkungen (zwischen deckend und halbtransparent) so umschalten, dass der Inhalt hinter der Anmerkung angezeigt wird. Dazu gehört das Umschalten der Transparenz von Bleistift Anmerkungen und-Aktionen.
 
-  - Vorherige Seite – navigiert zur vorherigen Seite
+Die Ansicht mit Anmerkungen stellt auch die folgenden Navigationsfunktionen bereit:
 
-  - Nächste Seite – navigiert zur nächsten Seite
+  - **Vorherige Seite**, **Nächste Seite**, und **Navigieren Sie zu** Steuerelementen für die Seiten Navigation für mehrseitige Dokumente.
 
-  - Gehe zu Seite – der Benutzer kann eine bestimmte Seitenzahl eingeben, zu der navigiert werden soll.
+  - **Zoom** – erhöht oder verkleinert die Größe von Dokumenten in der Ansicht mit Anmerkungen.
 
-  - Zoom – Zoomebene für Ansicht mit Anmerkungen festlegen
+  - **Rotate** – Dokumente im Uhrzeigersinn drehen.
 
-  - Rotate – Benutzer kann Dokument im Uhrzeigersinn drehen
+  - **Suche** – suchen Sie nach Schlüsselwörtern in einem Dokument, und verwenden Sie dann die vorherigen und nächsten Steuerelemente, um die Treffer (die hervorgehoben werden) innerhalb des Dokuments anzuzeigen.
 
-  - Suche – der Benutzer kann in einem Dokument suchen und zu den verschiedenen Treffern innerhalb des Dokuments navigieren.
-    
-    ![Ansicht mit Anmerkungen
-    ](../media/Reviewimage1.png)
+**Beispiel für eine Ansicht mit Anmerkungen**
 
-Beachten Sie, dass diese Anmerkungen auf Daten, die als Beweise gesammelt werden, nicht an seinem ursprünglichen Speicherort in Live System gespeichert werden. 
+![Ansicht mit Anmerkungen](../media/Reviewimage1.png)
 
-## <a name="more-information"></a>Weitere Informationen
-
-In der folgenden Tabelle sind die Grenzwerte für Beweise in Daten Untersuchungen (Preview) aufgeführt.  Alle Elemente, die die maximale Anzahl der einzelnen Dateien überschreiten, werden als Verarbeitungsfehler angezeigt.
-    
-  |**Beschreibung der Beschränkung**|**Grenzwert**|
-  |:-----|:-----|
-  |Maximale Anzahl von Evidence-Auflistungen  <br/> |50  <br/> |
-  |Gesamtanzahl der Dokumente, die in einen Fall aufgenommen werden können (für alle Evidence-Auflistungen in der Untersuchung)  <br/> |1 Million  <br/> |
-  |Gesamtgröße der Datei pro Ladevorgang  <br/> |100 GB  <br/> |
-  |Maximale Größe einer einzelnen Datei   <br/> |100 MB  <br/> |
-  |Maximale Anzahl von Zeichen, die aus einer einzelnen Datei extrahiert wurden.  <br/> |10 Millionen  <br/> |
-  |Tiefe der eingebetteten Elemente in einem Dokument  <br/> |25  <br/> |
-  
+> [!NOTE]
+> Anmerkungen werden auf eine Kopie des Dokuments angewendet, das dem Evidence-Satz hinzugefügt wurde. Die Originaldokumente im Live-Dienst werden nicht mit Anmerkungen versehen.

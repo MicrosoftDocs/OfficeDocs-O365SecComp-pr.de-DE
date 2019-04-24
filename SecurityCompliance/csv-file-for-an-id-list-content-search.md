@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Verwenden Sie die Datei results. CSV oder unindexed Items. CSV aus einer vorhandenen Inhaltssuche, um eine ID-Listensuche zu erstellen, die bestimmte e-Mail-Nachrichten zurückgibt. ID-Listen suchen werden normalerweise verwendet, um teilweise indizierte Postfachelemente zurückzugeben.
 ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265452"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Vorbereiten einer CSV-Datei für eine Inhaltssuche in der ID-Liste in Office 365
 

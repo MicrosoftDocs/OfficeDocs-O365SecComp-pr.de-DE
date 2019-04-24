@@ -1,5 +1,5 @@
 ---
-title: Festlegen der Option zum Ignorieren von Text für die Analyse in Office 365 Advanced eDiscovery
+title: Option Text ignorieren für Analyse in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Erfahren Sie, wie Sie die Regel definieren, um bestimmten Text zu ignorieren, wenn Sie die Module analyze und Process in Office 365 Advanced eDiscovery verwenden.  '
 ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260823"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Festlegen der Option zum Ignorieren von Text für die Analyse in Office 365 Advanced eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Option Text ignorieren für Analyse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -104,7 +104,7 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Text ignorie
     
 2. Geben Sie im Dialogfeld **ignorieren-Text hinzufügen** unter **Name** einen Namen für die Regel zum Ignorieren von Text ein. 
     
-    ![Ignorierten Text hinzufügen](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
+    ![Hinzufügen von ignoriertem Text](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
 3. Geben Sie **** in das Textfeld den zu ignorierenden Text ein. Das Textfeld erlaubt eine unbegrenzte Anzahl von Zeichen. 
     
@@ -119,7 +119,7 @@ Reguläre Ausdrücke werden für die Verwendung beim Definieren von Text ignorie
     
 7. Klicken Sie auf **OK** , um die ignoriertext-Regel zu speichern. Die definierte Ignore-Textregel wird angezeigt. 
     
-    ![Set hat Textname ignoriert](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
+    ![Ignorierten Textnamen festlegen](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
 ## <a name="see-also"></a>Siehe auch
 

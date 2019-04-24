@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Wenn ein Absender vom Dienst blockiert wird, weil er ausgehenden Spam sendet, erhält der angegebene Domänenadministrator, wenn Sie Konfigurieren der Richtlinie für ausgehende Spamnachrichten, eine E-Mail-Benachrichtigung ähnlich der folgenden:'
 ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260973"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Beispielbenachrichtigung, wenn ein Absender aufgrund des Versendens von ausgehendem Spam blockiert wird
 

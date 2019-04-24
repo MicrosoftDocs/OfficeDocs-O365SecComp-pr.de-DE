@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Erfahren Sie, wie Sie Zeitpläne für Berichte im Security &amp; Compliance Center anzeigen, bearbeiten und verwalten.
 ms.openlocfilehash: 045f539345613774fa38fe921e668e1dce7f2e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256328"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Verwalten von Zeitplänen für mehrere Berichte im &amp; Security Compliance Center
 
@@ -35,7 +35,7 @@ Im Security &amp; Compliance Center stehen mehrere [Berichte und](reports-and-in
 
 2. Wechseln Sie im &amp; Security Compliance Center zu **Berichte** \> **Verwalten von Zeitplänen**.
     
-3. Wählen Sie ein Element in der Liste aus.
+3. W?hlen Sie ein Element in der Liste aus.
     
 4. Lesen Sie die Informationen für den Zeitplan des Berichts.
     

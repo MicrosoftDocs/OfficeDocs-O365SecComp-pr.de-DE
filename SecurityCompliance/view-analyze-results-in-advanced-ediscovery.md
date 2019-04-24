@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Hier erfahren Sie, wo die Ergebnisse des Analyseprozesses in Office 365 Advanced eDiscovery angezeigt werden, einschließlich Definitionen der angezeigten Aufgabenoptionen.  '
 ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267105"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Anzeigen von Analyseergebnissen in Office 365 Advanced eDiscovery
 
@@ -70,7 +70,7 @@ In **** den e-Mail-Ergebnissen wird die Anzahl der inklusiv-inklusive-minus-, Un
     
 Die Ergebnisse der **Anlagen** zeigen die Anzahl der Anlagen gemäß diesem Typ als Unique und Duplikate an. 
   
-![Nahe Duplikate und E-Mail-Threads](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Near-Duplikate und e-Mail-Threads](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Siehe auch
 

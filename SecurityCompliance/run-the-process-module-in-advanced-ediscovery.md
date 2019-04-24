@@ -1,5 +1,5 @@
 ---
-title: Ausführen des Prozessmoduls in Office 365 Advanced eDiscovery
+title: Ausführen des Prozess Moduls in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Informationen zu den Richtlinien für die Vorbereitung von Fall Dateien von Office 365-Daten für die Analyse mit Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261033"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ausführen des Prozessmoduls in Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ausführen des Prozess Moduls in Office 365 Advanced eDiscovery
 
 Fall Dateien werden während des **Prepare** \> - **Vorgangs**in die erweiterte eDiscovery geladen. 
   
@@ -39,7 +39,7 @@ Fall Dateien werden während des **Prepare** \> - **Vorgangs**in die erweiterte 
     
 - **Dateityp und Name**:
     
-  - Advanced eDiscovery kann Dateien mit verschiedenen Formaten verarbeiten und geladene systemeigene Dateien in ein Standardformat wie \*. TXT, HTML oder. XML. processing von Textdateien ist schneller als systemeigene Dateien. Extrahierte Textdateien werden im Case-Ordner gespeichert.
+  - Advanced eDiscovery kann Dateien mit verschiedenen Formaten verarbeiten und geladene systemeigene Dateien in ein Standardformat wie \*. TXT, HTML oder. XML. Die Verarbeitung von Textdateien ist schneller als systemeigene Dateien. Extrahierte Textdateien werden im Case-Ordner gespeichert.
     
   - Laden Sie keine Dateien, die nicht extrahiert werden können, wie Systemdateien oder Grafik Bilder nicht. Diese Dateien können die Verarbeitung verzögern.
     

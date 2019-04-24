@@ -1,5 +1,5 @@
 ---
-title: Aktivieren von Office 365 Cloud App Security
+title: Aktivieren der Office 365 Cloud-App-Sicherheit
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: In diesem Artikel erfahren Sie, wie Sie die Sicherheit von Office 365 Cloud-Apps aktivieren, die von Cloud App Security in Microsoft Azure unterstützt wird.
 ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264127"
 ---
-# <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren von Office 365 Cloud App Security
+# <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren der Office 365 Cloud-App-Sicherheit
   
 |Auswertung * *\>**|Planung * *\>**|Bereitstellung * *\>**|Auslastung * * * *|
 |:-----|:-----|:-----|:-----|
 |[Evaluierung starten](office-365-cas-overview.md) <br/> |[Planung starten](get-ready-for-office-365-cas.md) <br/> |Sie sind hier!  <br/> [Nächster Schritt](activity-policies-and-alerts.md) <br/> |[Verwendung beginnen](utilization-activities-for-ocas.md) <br/> |
   
-## <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren von Office 365 Cloud App Security
+## <a name="turn-on-office-365-cloud-app-security"></a>Aktivieren der Office 365 Cloud-App-Sicherheit
 
 > [!IMPORTANT]
 > Sie müssen ein globaler Administrator oder Sicherheitsadministrator sein, um die folgende Aufgabe ausführen zu können. Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Damit Office 365 Cloud App Security korrekt funktioniert, **muss die Überwachungsprotokollierung** für ihre Office 365-Umgebung aktiviert sein. Weitere Informationen finden Sie unter [Turn Office 365 Audit Log Search on or off](turn-audit-log-search-on-or-off.md). 

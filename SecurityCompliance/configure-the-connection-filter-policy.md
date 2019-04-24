@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Wenn Sie sicherstellen möchten, dass e-Mails von vertrauenswürdigen Personen nicht blockiert werden, können Sie mithilfe der Verbindungsfilter Richtlinie eine Zulassungsliste mit vertrauenswürdigen IP-Adressen erstellen. Sie können auch eine Liste blockierter Absender erstellen.
 ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259008"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
  

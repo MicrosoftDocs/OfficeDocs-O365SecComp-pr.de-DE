@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Als Exchange-Administrator können Sie das Branding Ihrer Organisation auf verschlüsselte e-Mail-Nachrichten Ihrer Organisation und auf die Inhalte des Verschlüsselungs Portals anwenden.
 ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242651"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Hinzufügen der Marke Ihres Unternehmens zu Ihren verschlüsselten Nachrichten
 
@@ -59,7 +59,7 @@ Sie erstellen Branding-Vorlagen für Ihre Organisation in Windows PowerShell mit
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
-   Beispiel:
+   For example,
 
    ```powershell
    New-OMEConfiguration -Identity <Branding template 1>
@@ -107,7 +107,7 @@ Informationen zum Erstellen einer Exchange-Nachrichtenfluss Regel, die die Versc
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Office 365 Admin Center die Optionen **Admin** \> **Exchange**.
+3. klicken sie im Office 365 admin center auf **admin** \> centers **Exchange**.
 
 4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und wählen Sie **Neues** ![neues Symbol](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Erstellen**aus. Weitere Informationen zur Verwendung der EAC finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

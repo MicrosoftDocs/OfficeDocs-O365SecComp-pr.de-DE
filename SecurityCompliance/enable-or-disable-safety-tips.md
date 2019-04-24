@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Informiert Office 365-und EOP-Administratoren über die Aktivierung und Deaktivierung von Sicherheitstipps in e-Mail-Nachrichten.
 ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256948"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365
 
@@ -40,7 +40,7 @@ Inhalt dieses Themas:
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an.
     
 3. Wählen Sie **Richtlinie**für die **Bedrohungs Verwaltung** \> aus. 
     

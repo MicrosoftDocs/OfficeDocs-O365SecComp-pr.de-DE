@@ -1,5 +1,5 @@
 ---
-title: Schulung zur Markierung und Relevanz in Office 365 Advanced eDiscovery
+title: Tagging-und Relevanz-Schulung in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Hier finden Sie Informationen zu den Schritten zur Kennzeichnung und zum Arbeiten mit einem Schulungs Beispiel von 40-Dateien während der Relevanz-Schulungsstufe von Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260408"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Schulung zur Markierung und Relevanz in Office 365 Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Tagging-und Relevanz-Schulung in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -33,7 +33,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen ist und Sie die Relev
 
 1. Auf der Registerkarte ** \> relevanztag** wird der Bereich Tagging standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden nacheinander für Tagging angezeigt. 
     
-    ![Relevanztagbereich](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Bereich "Relevanztag"](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
     Auf der Registerkarte **Tag** wird der Anzeigename der Datei angezeigt. Dabei kann es sich um den Pfad, den e-Mail-Betreff, den Titel oder den benutzerdefinierten Namen handeln. Die ID, der Dateipfad oder der Textpfad können kopiert werden, indem Sie mit der rechten Maustaste auf den Pfad der Datei klicken. 
     
@@ -56,7 +56,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen ist und Sie die Relev
     
     Klicken Sie optional auf der Registerkarte **Tag** auf **Tag-Einstellungen** , um die folgenden Optionen festzulegen: 
     
-    ![Relevanztageinstellungen](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+    ![Relevanz-Tag-Einstellungen](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
   - **Massentag**: Verwenden Sie diese Option, um mehrere Probleme für eine Datei zuzuweisen, indem Sie **alle** auswählen, um das Tag für die ausgewählte Datei für alle Probleme festzulegen (Überschreibt bereits markierte Probleme) oder indem Sie **den Rest** auswählen, um das Tag auf die verbleibenden nicht markierten Probleme anzuwenden. Die ausgewählte Option bleibt für alle Fälle dieses Benutzers gültig, bis Sie von diesem Benutzer geändert wurde (Einstellung ist pro Benutzer für alle Fälle des Benutzers). 
     
@@ -66,7 +66,7 @@ Nachdem die Bewertung in Advanced eDiscovery abgeschlossen ist und Sie die Relev
     
     ÜberSprungene Dateien werden nicht für Relevanz Schulungen und Relevanz Scoring Zwecke berücksichtigt.
     
-3. Freitextkommentare, die einer Datei zugeordnet sind, können über die **Kommentar** Option in der Dropdownliste im linken Bereich angezeigt und bearbeitet werden. optional 
+3. Freitextkommentare, die einer Datei zugeordnet sind, können über die **Kommentar** Option in der Dropdownliste im linken Bereich angezeigt und bearbeitet werden. (optional) 
     
 4. Die Richtlinien für das Tagging können angezeigt werden, indem Sie die Option **Tagging Guidelines** in der linken Dropdownliste auswählen. 
     
@@ -78,7 +78,7 @@ In der Liste Beispieldateien können Sie eine Liste der Dateien in einem Schulun
   
 1. Wählen Sie **auf \> ** der Registerkarte relevanztag die Beispieldateien in der Dropdownliste im linken Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet. 
     
-    ![Relevanztag: Liste mit Beispieldateien](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Liste der Beispieldateien für das Relevance-Tag](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
 2. Wählen Sie eine bestimmte Beispiel-oder Dateinummer aus, indem Sie die Nummer in den Feldern **Sample** oder **File** eingeben oder auswählen. 
     

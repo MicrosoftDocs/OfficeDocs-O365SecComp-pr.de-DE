@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Definieren Sie Aktivitätsrichtlinien mit Office 365 Cloud App Security, um Warnungen einzurichten, die ausgelöst werden, wenn bestimmte Aktivitäten zu häufig stattfinden. Durch das Einrichten von Richtlinien zum Auslösen von Warnungen können Sie über bestimmte Aktivitäten benachrichtigt werden und diese überwachen.
 ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242716"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Aktivitätsrichtlinien und Warnungen in Office 365 Cloud App Security
 

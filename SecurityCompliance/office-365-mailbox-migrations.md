@@ -3,23 +3,22 @@ title: Office 365-Postfachmigrationen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine kurze Zusammenfassung der Cmdlets für die Migration von Office 365-Postfächern.
-ms.openlocfilehash: 8e0f23a3efbbcf6f84364c09e667678972120e18
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f21462b1f4a1838ee617e0d429ba73f01ca2db90
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262577"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365-Postfachmigrationen
 Bei einer Exchange-basierten hybridbereitstellung können Kunden wahlweise lokale Exchange-Postfächer in eine [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) -Organisation verschieben oder Exchange Online-Postfächer in eine [lokale Exchange](https://docs.microsoft.com/Exchange/exchange-server) -Organisation verschieben. Migrationsbatches werden beim Verschieben von Postfächern zwischen lokalen und Exchange Online-Organisationen verwendet. Kunden können Statistiken und weitere Informationen zu Postfachmigrationen mithilfe der folgenden Cmdlets überarbeiten:

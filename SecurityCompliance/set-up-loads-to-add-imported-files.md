@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Lesen Sie die Schritte zum Hinzufügen von importierten Dateien zur zuletzt definierten Last oder zum letzten Batch von Dateien, bevor Sie die Relevanz-Schulung in Office 365 Advanced eDiscovery ausführen.  '
 ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260738"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Einrichten von Lasten zum Hinzufügen von importierten Dateien in Office 365 Advanced eDiscovery
 
@@ -27,7 +27,7 @@ ms.locfileid: "30215985"
   
 In Advanced eDiscovery ist eine Auslastung ein neuer Batch von Dateien, die zu einem Fall hinzugefügt werden. Standardmäßig wird eine Auslastung definiert, und alle importierten Dateien werden ihr hinzugefügt. Vor der Durchführung der Relevanz-Schulung müssen importierte Dateien der Belastung hinzugefügt werden. 
   
-Berücksichtigen Sie die folgenden Szenarien:
+Betrachten Sie dazu die folgenden Szenarien:
   
 - Neue Dateien sind bekanntermaßen vergleichbar mit den vorherigen Dateien, die in die Case-Datenbank geladen wurden, oder die frühere Datei Last war ein Zufalls Satz aus der file-Auflistung. Fügen Sie in dieser Instanz die importierten Dateien der aktuellen Datei Auslastung hinzu.
     
@@ -39,7 +39,7 @@ Alle importierten Dateien müssen zu einer zu verarbeitenden Ladung in Advanced 
   
 1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz Setup** die Option **Lasten**aus.
     
-    ![Relevanzeinrichtungslasten (Registerkarte)](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![Registerkarte "Relevanz einrichten"](media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **Include Files**: Wählen Sie eine Option für die einzuschließenden Dateien aus. Das Hinzufügen von Dateien zur aktuellen Auslastung basiert standardmäßig auf der Auffüllung "alle Dateien".
     
@@ -96,7 +96,7 @@ Die Roll laden und die Catch-up-Funktionalität unterscheiden sich wie folgt:
     
 2. Klicken Sie unter **Lasten Verwaltung**auf **+** das Symbol, um eine Last hinzuzufügen. Eine Bestätigungsmeldung wird angezeigt. 
     
-3. Klicken Sie auf **Ja** , um fortzufahren. Das Dialogfeld **neuen Ladevorgang hinzufügen** wird angezeigt. 
+3. Klicken Sie auf **Ja**, um den Vorgang fortzusetzen. Das Dialogfeld **neuen Ladevorgang hinzufügen** wird angezeigt. 
     
     > [!NOTE]
     > Sie können nur dann eine neue Ladung hinzufügen, wenn Aktionen zur vorherigen Belastung ausgeführt wurden. 

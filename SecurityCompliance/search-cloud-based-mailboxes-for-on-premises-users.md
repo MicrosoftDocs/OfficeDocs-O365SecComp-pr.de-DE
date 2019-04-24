@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um verläuft-Chat-Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung zu suchen und zu exportieren.
 ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261003"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von cloudbasierten Postfächern für lokale Benutzer in Office 365
 

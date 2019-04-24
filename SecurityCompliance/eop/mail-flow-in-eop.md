@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: Als ein Exchange Online Protection (EOP) Kunde werden alle Nachrichten, die an Ihre Organisation gesendet werden, durch EOP geleitet, bevor die Mitarbeiter sie sehen. Ob Sie alle Ihre Postfächer in der Cloud mit Exchange Online hosten oder ob Sie Ihre Postfächer vor Ort hosten (genannt eigenständiges Szenario), haben Sie Optionen für die Art der Weiterleitung von Nachrichten, die zur Bearbeitung EOP durchlaufen, bevor sie an die Postfächer Ihrer Mitarbeiter weitergeleitet werden, um weiterhin die Vorteile Ihrer bestehenden Infrastruktur nutzen zu können.
 ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255893"
 ---
 # <a name="mail-flow-in-eop"></a>Nachrichtenfluss in EOP
 

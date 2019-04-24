@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365-Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
 ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260273"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 

@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Fluss Einblicke im Security & Compliance Center
+title: Nachrichtenübermittlung und Einblicke im Security & Compliance Center
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Administratoren können sich über das Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
 ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252388"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>E-Mail-Fluss Einblicke im Security & Compliance Center
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Nachrichtenübermittlung und Einblicke im Security & Compliance Center
 
 Administratoren können das Nachrichtenfluss-Dashboard im Security & Compliance Center verwenden, um Trends, Einblicke und Maßnahmen zur Behebung von Problemen im Zusammenhang mit dem Nachrichtenfluss in Ihrer Office 365-Organisation zu ermitteln.
 

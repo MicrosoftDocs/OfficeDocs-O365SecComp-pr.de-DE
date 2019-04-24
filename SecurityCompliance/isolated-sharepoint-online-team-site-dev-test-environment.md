@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
 ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254363"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -50,9 +50,9 @@ Das Einrichten einer isolierten SharePoint Online-Teamwebsite in Ihrer Office 36
 3. Erstellen einer neuen SharePoint Online-Teamwebsite für ProjectX und Isolieren der Website.
     
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
 Wenn Sie lediglich auf einfache Weise eine isolierte SharePoint Online-Teamwebsite mit den Mindestanforderungen erstellen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 unter [Office 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
   
@@ -151,7 +151,7 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
   
 1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [https://admin.microsoft.com](https://admin.microsoft.com) unter Verwendung des globalen Administratorkontos an.
     
-2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
+2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
     
 3. Klicken Sie auf der neuen SharePoint-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
     
@@ -219,7 +219,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 3. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Lead Designers an.
     
-4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
+4. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
     
 5. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
     
@@ -249,7 +249,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
   
 1. Melden Sie sich beim Office 365-Portal ([https://admin.microsoft.com](https://admin.microsoft.com)) mit dem Kontonamen und Kennwort des Development VP an.
     
-2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
+2. Klicken Sie in der Liste der Kacheln auf **SharePoint**.
     
 3. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
     

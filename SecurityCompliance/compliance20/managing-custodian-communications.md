@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 916691e1f2470ef9e9e54d9dfe06c5277a92ba53
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241252"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Arbeiten mit Kommunikation in Advanced eDiscovery (Preview)
 
@@ -57,7 +57,7 @@ Zum Erstellen und Verwalten von Benachrichtigungen für zugelassene Aufbewahrung
 
   - **eDiscovery Manager** – kann die eDiscovery-Fälle anzeigen und verwalten, die Sie erstellen oder Mitglied sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzufügt, kann der zweite eDiscovery-Manager den Fall auf der eDiscovery-Seite im Security & Compliance Center nicht anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery (Preview) zugreifen, um Analyseaufgaben auszuführen.
 
-  - **eDiscovery-Administrator** – kann alle Fall Verwaltungsaufgaben durchführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus kann ein eDiscovery-Administrator:
+  - **eDiscovery-Administrator** – kann alle Fall Verwaltungsaufgaben durchführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
     
     - Anzeigen aller Fälle, die auf der Seite eDiscovery-Fälle aufgeführt sind.
     - Verwalten Sie alle Fälle in der Organisation, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.

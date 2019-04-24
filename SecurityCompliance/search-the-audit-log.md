@@ -1,5 +1,5 @@
 ---
-title: Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365
+title: Durchsuchen des Überwachungsprotokolls nach Benutzer-und Administratoraktivitäten in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse aus den meisten Office 365-Diensten, die Sie in der Organisation abonnieren, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das führt dazu, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können:'
 ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265857"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Durchsuchen des Überwachungsprotokolls nach Benutzer-und Administratoraktivitäten in Office 365
 
 Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse aus den meisten Office 365-Diensten, die Sie in der Organisation abonnieren, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das führt dazu, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können: 
   
@@ -27,7 +27,7 @@ Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotoko
 - OneDrive
 - Exchange
 - Azure Active Directory
-- Microsoft Teams
+- Microsoft Teams
 - eDiscovery
 - Power BI
 - Yammer

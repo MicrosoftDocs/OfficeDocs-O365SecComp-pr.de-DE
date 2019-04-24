@@ -12,11 +12,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte für Dokument-Fingerabdrücke und die Erstellung eines mithilfe von PowerShell beschrieben.
 ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256898"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 

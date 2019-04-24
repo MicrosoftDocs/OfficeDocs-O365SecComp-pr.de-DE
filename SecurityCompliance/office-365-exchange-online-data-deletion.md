@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Wie weiche und harte Datenlöschungen in Exchange Online verarbeitet werden.
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262687"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Löschen von Exchange Online-Daten in Office 365
 In Exchange Online gibt es zwei Arten von Löschungen: weiche Löschvorgänge und harte Löschvorgänge. Dies gilt für Postfächer und Elemente innerhalb eines Postfachs.

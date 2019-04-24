@@ -23,11 +23,11 @@ search.appverid:
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Mit der Funktion "sichere Links" können Sie Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten per Mausklick überprüfen. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing-und anderen Angriffen zu schützen.
 ms.openlocfilehash: 7dacb4184ff0b99887b2aa5f3fe2e65cd58c5b6b
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249555"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP-sichere Links
 

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Administratoren können erfahren, warum und wie Phishing-Nachrichten durchgemacht wurden und was Sie tun müssen, um künftig weitere Phishing-Nachrichten zu verhindern.
-ms.openlocfilehash: efda9e16c23e4533b6951e43ac085b7640e84576
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30937822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264317"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Optimieren des Schutzes gegen Phishing in Office 365
 

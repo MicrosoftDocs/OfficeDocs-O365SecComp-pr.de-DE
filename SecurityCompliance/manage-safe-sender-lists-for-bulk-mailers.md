@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Wenn Sie Listen sicherer Absender verwenden möchten, sollten Sie wissen, dass die Verarbeitung in Exchange Online Protection (EOP) und Outlook auf verschiedene Weise erfolgt. Der Dienst berücksichtigt sichere Absender und Domänen, indem er die RFC 5321.MailFrom-Adresse und die RFC 5322.From-Adresse prüft, während Outlook die RFC 5322.From-Adresse zur Liste sicherer Absender eines Benutzers hinzufügt. (Anmerkung: Der Dienst prüft sowohl die 5321.MailFrom-Adresse als auch die 5322.From-Adresse auf blockierte Absender und Domänen.)'
 ms.openlocfilehash: 006c2b9520f1e1f71f5ec745baaf84f906f31eb4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259653"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Verwalten sicherer Absenderlisten für Absender von Massen-E-Mails
 

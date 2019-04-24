@@ -3,23 +3,22 @@ title: Office 365-Überwachung und Selbstheilung
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informationen zu den Überwachungs-und Self-Healing-Funktionen von Office 365.
-ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6a7753fbd1e20c690c45b670240afa36baf9ffdb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262497"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Office 365-Überwachung und Selbstheilung
 Angesichts des Umfangs von Office 365 wäre es nicht möglich, Kundendaten widerstandsfähig zu halten und vor Schadsoftware zu schützen, ohne dass eine integrierte Überwachung umfassend, intelligent und schnell und zuverlässig ist. Das überWachen einer Reihe von Diensten auf der Ebene von Office 365 ist sehr schwierig. Es muss eine neue Denkweise und Methodologie eingeführt werden, und es müssen vollständig neue Technologien erstellt werden, um den Dienst in einer verbundenen globalen Umgebung zu betreiben und zu verwalten. Wir haben uns vom herkömmlichen Überwachungsansatz der Datenerfassung und-Filterung entfernt, um Warnungen zu einem Ansatz zu erstellen, der auf der Datenanalyse basiert. Signale zu erstellen und das Vertrauen in diese Daten und dann mithilfe der Automatisierung zu erholen oder das Problem zu beheben. Diese Vorgehensweise hilft den Menschen bei der Wiederherstellungs Gleichung, wodurch Vorgänge kostengünstiger, schneller und weniger fehleranfällig sind. 
@@ -35,12 +34,12 @@ Basierend auf der Kombination aus Fehlermeldung und roten Warnungen gibt diese W
 Neben Self-Healing-Funktionen wie der Wiederherstellung einzelner Seiten umfasst Exchange Online mehrere Features, die einen Ansatz für die Überwachung und die Selbstheilung verfolgen, wobei die Endbenutzerfreundlichkeit im Vordergrund steht. Zu diesen Features gehören die *verwaltete Verfügbarkeit*, die integrierte Überwachungs-und Wiederherstellungsaktionen bereitstellt und AutoReseed, wodurch die Datenbankredundanz nach einem Datenträgerausfall automatisch wiederhergestellt wird. 
 
 ## <a name="managed-availability"></a>Verwaltete Verfügbarkeit 
-Die verwaltete Verfügbarkeit bietet eine systemeigene Integritätsprüfung und Wiederherstellungslösung, mit der die Benutzererfahrung durch Wiederherstellungs orientierte Aktionen überwacht und geschützt wird. Bei der verwalteten Verfügbarkeit handelt es sich um die Integration integrierter Überwachungs-und Wiederherstellungsaktionen mit der hoch Verfügbarkeits Plattform von Exchange. Sie wurde entwickelt, um Probleme zu erkennen und wiederherzustellen, sobald sie auftreten und vom System erkannt werden. Anders als bei früheren externen Überwachungslösungen und-Techniken für Exchange versucht die verwaltete Verfügbarkeit nicht, die Ursache eines Problems zu identifizieren oder zu kommunizieren. Stattdessen konzentriert er sich auf Wiederherstellungs Aspekte, die drei Hauptbereiche der Endbenutzeroberfläche berücksichtigen: 
+Die verwaltete Verfügbarkeit bietet eine systemeigene Integritätsprüfung und Wiederherstellungslösung, mit der die Benutzererfahrung durch Wiederherstellungs orientierte Aktionen überwacht und geschützt wird. Bei der verwalteten Verfügbarkeit handelt es sich um die Integration integrierter Überwachungs-und Wiederherstellungsaktionen mit der hoch Verfügbarkeits Plattform von Exchange. Sie ist dafür vorgesehen, vom System erkannte Probleme sofort zu ermitteln und zu beheben. Im Gegensatz zu früheren externen Überwachungslösungen und -techniken für Exchange versucht die verwaltete Verfügbarkeit nicht, die eigentliche Ursache eines Problems zu ermitteln oder zu kommunizieren. Stattdessen konzentriert er sich auf Wiederherstellungs Aspekte, die drei Hauptbereiche der Endbenutzeroberfläche berücksichtigen: 
 - **Verfügbarkeit** – können Benutzer auf den Dienst zugreifen? 
 - **Latenz** -wie ist die Benutzererfahrung? 
 - **Fehler** – können Benutzer Ihre Wünsche erfüllen? 
 
-Die verwaltete Verfügbarkeit ist ein internes Feature, das auf jedem Office 365-Server mit Exchange Online ausgeführt wird. Jede Sekunde werden hunderte von Integritäts Metriken abgefragt und analysiert. Wenn sich etwas als falsch herausstellt, wird die meiste Zeit automatisch behoben. Es gibt jedoch immer Probleme, die von der verwalteten Verfügbarkeit nicht selbst behoben werden können. In diesen Fällen wird das Problem durch die verwaltete Verfügbarkeit an ein Office 365-Support Team mithilfe der Ereignisprotokollierung eskaliert. 
+Die verwaltete Verfügbarkeit ist ein internes Feature, das auf jedem Office 365-Server mit Exchange Online ausgeführt wird. Dabei werden in jeder Sekunde Hunderte von Integritätsmetriken abgerufen. Wenn sich etwas als falsch herausstellt, wird die meiste Zeit automatisch behoben. Es gibt jedoch immer Probleme, die von der verwalteten Verfügbarkeit nicht selbst behoben werden können. In diesen Fällen wird das Problem durch die verwaltete Verfügbarkeit an ein Office 365-Support Team mithilfe der Ereignisprotokollierung eskaliert. 
 
 ## <a name="autoreseed"></a>AutoReseed 
 Exchange Online-Server werden in einer Konfiguration bereitgestellt, in der mehrere Datenbanken und deren Protokolldatenströme auf demselben nicht-RAID-Datenträger gespeichert werden. Diese Konfiguration wird häufig als *nur eine Gruppe von* Datenträgern (JBOD) bezeichnet, da keine Speicherredundanz Mechanismen wie RAID verwendet werden, um die Daten auf dem Datenträger zu duplizieren. Wenn ein Datenträger in einer JBOD-Umgebung ausfällt, gehen die Daten auf diesem Datenträger verloren. 

@@ -1,5 +1,5 @@
 ---
-title: Bewährte Methoden für die Sicherheit in Office 365
+title: Bewährte Methoden für die Sicherheit von Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -20,13 +20,13 @@ ms.collection:
 - Strat_O365_IP
 description: Minimieren Sie das Potenzial einer Datenverletzung oder eines kompromittierten Kontos, indem Sie diese empfohlenen bewährten Methoden befolgen.
 ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264637"
 ---
-# <a name="security-best-practices-for-office-365"></a>Bewährte Methoden für die Sicherheit in Office 365
+# <a name="security-best-practices-for-office-365"></a>Bewährte Methoden für die Sicherheit von Office 365
 
 Minimieren Sie das Potenzial einer Datenverletzung oder eines kompromittierten Kontos, indem Sie diese empfohlenen bewährten Methoden befolgen.
   

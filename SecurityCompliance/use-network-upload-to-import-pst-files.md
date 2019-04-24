@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: erfahren Sie, wie Sie mithilfe des Netzwerk-Uploads mehrere PST-Dateien in Benutzerpostfächern in Office 365 Massenimportieren.'
 ms.openlocfilehash: 73123d5f36a01b31cfc38e6404bd400bb722fb36
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264222"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Verwenden des Netzwerk Uploads zum Importieren Ihrer Organisations-PST-Dateien in Office 365
 

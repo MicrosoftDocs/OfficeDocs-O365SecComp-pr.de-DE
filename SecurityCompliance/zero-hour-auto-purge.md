@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (ZAP) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie ZAP Dies bewirkt, hängt vom Typ der erkannten bösartigen Inhalte ab.
 ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266907"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
@@ -97,4 +97,4 @@ ZAP funktioniert in diesem Fall weiterhin, es sei denn, die Nachricht wurde gel�
 
 [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
   
-[Blockieren von Spam-E-Mail mit dem Office 365-Spamfilter zur Vermeidung von Problemen mit falsch negativen Nachrichten](reduce-spam-email.md)
+[Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)

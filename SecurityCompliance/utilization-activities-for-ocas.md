@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Nachdem Sie Office 365 Cloud App Security eingerichtet und bereitgestellt haben, sollten Sie bestimmte Aufgaben ausführen, um sicherzustellen, dass Ihre Konfiguration korrekt ist und dass Sie für regelmäßige Besprechungen vorbereitet sind.
 ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242543"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security
   

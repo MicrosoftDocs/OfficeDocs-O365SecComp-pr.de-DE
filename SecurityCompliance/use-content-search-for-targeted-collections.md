@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Verwenden Sie die Inhaltssuche im Security & Compliance Center, um zielgerichtete Auflistungen auszuführen. Eine zielgerichtete Sammlung stellt sicher, dass Elemente, die auf eine Groß-/Kleinschreibung oder privilegierte Elemente reagieren, sich in einem bestimmten Postfach oder Websiteordner befinden. Verwenden Sie das Skript in diesem Artikel, um die Ordner-ID oder den Pfad für die bestimmten Postfach-oder Websiteordner abzurufen, die Sie durchsuchen möchten.
 ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264012"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Verwenden der Inhaltssuche in Office 365 für zielgerichtete Auflistungen
 
@@ -26,7 +26,7 @@ Die Inhaltssuche im Office 365 Security &amp; Compliance Center bietet keine dir
 > [!NOTE]
 > Zum Zurückgeben von Inhalten in einem Ordner in einer SharePoint-oder OneDrive for Business-Website verwendet das Skript in diesem Thema die verwaltete DocumentLink-Eigenschaft anstelle der Path-Eigenschaft. Die DocumentLink-Eigenschaft ist robuster als die Path-Eigenschaft, da Sie den gesamten Inhalt in einem Ordner zurückgibt, während die Path-Eigenschaft keine Mediendateien zurückgibt.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security &amp; Compliance Center sein, um das Skript in Schritt 1 ausführen zu können. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
     
