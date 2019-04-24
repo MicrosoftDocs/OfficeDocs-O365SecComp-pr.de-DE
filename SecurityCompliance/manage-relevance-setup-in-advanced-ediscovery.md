@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lesen Sie die Empfehlungen zum Einrichten des Relevanztrainings in Office 365 Advanced eDiscovery, um Dateien nach ihrer Relevanz zu beurteilen und Analyseergebnisse zu generieren.
 ms.openlocfilehash: 7e06be032cc653681c19ee2d17547ca22421e0ae
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259663"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Verwalten der Einrichtung von Relevanz in Office 365 Advanced eDiscovery
 

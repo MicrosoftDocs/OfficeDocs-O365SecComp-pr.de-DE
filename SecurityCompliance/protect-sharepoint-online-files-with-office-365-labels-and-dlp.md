@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Aufbewahrungsbezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
 ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261658"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien Aufbewahrungsbezeichnungen und Verhindern von Datenverlust
 
@@ -45,9 +45,9 @@ Es gibt drei Phasen beim Erstellen und anschließenden Zuweisen von Aufbewahrung
 
 In dieser Phase bestimmen Sie die Namen Ihrer Aufbewahrungsbezeichnungen für die vier Ebenen des Informationsschutzes, der auf SharePoint Online-Teamwebsites angewendet wird. Die folgende Tabelle listet die empfohlenen Namen für jede Ebene auf.
   
-|**Schutzebene für SharePoint Online-Teamwebsites**|**Bezeichnungsname**|
+|**Schutzebene der SharePoint Online-Teamwebsite**|**Bezeichnungsname**|
 |:-----|:-----|
-|Basisschutz-Öffentlich  <br/> |Intern Öffentlich  <br/> |
+|Grundlegend-Öffentlich  <br/> |Intern Öffentlich  <br/> |
 |Grundlegend-Privat  <br/> |Private  <br/> |
 |Vertraulich  <br/> |Vertraulich  <br/> |
 |Streng vertraulich  <br/> |Streng vertraulich  <br/> |
@@ -223,7 +223,7 @@ Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche SharePo
 
 [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md)
   
-[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 

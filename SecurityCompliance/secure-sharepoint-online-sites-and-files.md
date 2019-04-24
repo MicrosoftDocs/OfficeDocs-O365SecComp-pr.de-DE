@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
 ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265417"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -115,7 +115,7 @@ In der folgenden Tabelle wird die Konfiguration für jede der zuvor in diesem Ar
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Basisschutz 1** <br/> |**Basisschutz 2** <br/> |**Schutz sensibler Daten** <br/> |**Streng vertraulich** <br/> |
+||**Basisschutz 1** <br/> |**Grundlegender Schutz #2** <br/> |**Schutz sensibler Daten** <br/> |**Streng vertraulich** <br/> |
 |Beschreibung  <br/> |Offene Ermittlung und Zusammenarbeit innerhalb der Organisation.  <br/> |Private Website und Gruppe, Freigabe außerhalb der Gruppe zulässig.  <br/> |Isolierte Website, für die Zugriffsebenen durch Mitgliedschaft in bestimmten Gruppen definiert sind. Die Freigabe ist nur für Mitglieder dieser Website zulässig. Die DLP warnt Benutzer bei dem Versuch, Dateien außerhalb der Organisation zu senden.  <br/> |Isolierte Website + Dateiverschlüsselung und Berechtigungen mit Azure Information Protection. Die DLP verhindert, dass Benutzer Dateien außerhalb der Organisation senden.  <br/> |
 |Private oder öffentliche Teamwebsite  <br/> |Public (Öffentlich)  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Wer hat Zugriff?  <br/> |Alle Benutzer in der Organisation, einschließlich B2B-Benutzer und Gäste.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder. Andere Personen können keinen Zugriff anfordern.  <br/> |
@@ -187,7 +187,7 @@ Bauen Sie dies durch [Sichern von SharePoint Online-Websites in einer Entwicklun
 
 ## <a name="see-also"></a>Siehe auch
 
-[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Cloudakzeptanz und Hybridlösungen](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   

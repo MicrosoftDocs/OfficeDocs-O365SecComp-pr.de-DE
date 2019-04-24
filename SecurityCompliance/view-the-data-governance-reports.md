@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Mit den Data Governance-Berichten im Office 365 Security &amp; Compliance Center können Sie schnell anzeigen, ob Ihre Bezeichnungen wie gewünscht auf Inhalte angewendet werden.
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266984"
 ---
 # <a name="view-the-data-governance-reports"></a>Anzeigen der Data Governance-Berichte
 
