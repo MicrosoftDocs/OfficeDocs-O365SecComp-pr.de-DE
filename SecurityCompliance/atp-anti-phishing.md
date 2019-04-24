@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: ATP-AntiPhishing ist Teil von Office 365 Advanced Threat Protection. ATP-AntiPhishing wendet eine Reihe von Computer Lernmodellen zusammen mit Identitätswechsel Erkennungsalgorithmen auf eingehende Nachrichten an, um den Schutz von Commodity-und Spear-Phishing-Angriffen zu gewährleisten. Alle Nachrichten unterliegeneiner umfassenden Reihe von Computer Lernmodellen, die für die Ermittlung von Phishing-Nachrichten ausgebildet wurden, sowie eine Reihe fortschrittlicher Algorithmen, die zum Schutz vor verschiedenen Angriffen auf Benutzer-und Domänenidentitäten verwendet werden.
 ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249565"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>ATP-Antiphishingfunktionen in Office 365
 

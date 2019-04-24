@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Auch wenn Sie planen, einige oder alle Postfächer lokal zu hosten, können Sie die Postfächer weiterhin mit Exchange Online Protection (EOP) schützen. Wenn Sie Connectors konfigurieren möchten, muss Ihr Konto ein globales Administratorkonto für Office 365 oder ein Exchange-Unternehmensadministratorkonto (Rollengruppe "Organisationsverwaltung") sein. Informationen zur Beziehung zwischen Office 365-Berechtigungen und Exchange-Berechtigungen finden Sie unter Zuweisen von Administratorrollen in Office 365, betrieben von 21Vianet. Wenn alle Ihre Exchange-Postfächer lokal sind, führen Sie die folgenden Schritte aus, um den EOP-Dienst einzurichten.
 ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261553"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Schützen von lokalen Postfächern mit Exchange Online Protection
 

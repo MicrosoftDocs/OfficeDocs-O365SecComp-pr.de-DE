@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Anti-Phishing-Tools, Reporting-Tools und Threat Intelligence-Funktionen.
 ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262947"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -55,7 +55,7 @@ Die für Ihre Organisation definierten Richtlinien bestimmen das Verhalten und d
 
 - [ATP-Schutz vor Phishing](atp-anti-phishing.md): erkennt Versuche, die Identität der Benutzer und benutzerdefinierter Domänen zu imitieren. Es wendet Computer Lernmodelle und erweiterte Identitätswechsel Erkennungsalgorithmen an, um Phishing-Angriffe zu verhindern. Weitere Informationen finden Sie unter [Einrichten von Office 365-ATP-Antiphishing-und-Phishing-Richtlinien](set-up-anti-phishing-policies.md).
 
-## <a name="view-atp-reports"></a>ATP-Berichte anzeigen
+## <a name="view-atp-reports"></a>Anzeigen der ATP-Berichte
 
 Office 365 ATP enthält ein erweitertes [Reporting-Dashboard](view-reports-for-atp.md) , um Ihre ATP-Leistung zu überwachen. Sie können auf diese unter **Berichte _GT_ Dashboard** im Security _AMP_ Compliance Center zugreifen. 
 

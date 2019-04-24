@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Verwenden Sie eDiscovery-Fälle im Security & Compliance Center in Office 365, um die rechtlichen Untersuchungen Ihrer Organisation zu verwalten. Wenn Sie über ein E5-Abonnement verfügen, können Sie die Falldaten mithilfe der Funktionen Textanalyse, Maschinelles Lernen und Vorhersage Codierung von Advanced eDiscovery weiter analysieren.
 ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252093"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Verwalten von rechtlichen Untersuchungen in Office 365
 
@@ -87,7 +87,7 @@ Nachdem die Such Daten in Advanced eDiscovery in den Fall geladen wurden, verwen
     
 - [Konfigurieren erweiterter Einstellungen](set-analyze-advanced-settings-in-advanced-ediscovery.md) für den Analyseprozess 
     
-### <a name="set-up-relevance-training"></a>Einrichten des Relevanztrainings
+### <a name="set-up-relevance-training"></a>Einrichten der Relevanzschulung
 
 PreDictive Coding (called Relevance) in Advanced eDiscovery ermöglicht Ihnen, das System auf das zu trainieren, wonach Sie suchen, indem Sie Entscheidungen treffen (um zu entscheiden, ob etwas relevant ist).
   

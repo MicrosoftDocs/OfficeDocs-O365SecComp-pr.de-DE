@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 bietet eine Reihe von unterschiedlichen eDiscovery-Tools, mit denen Sie Inhalte an verschiedenen Standorten wie Exchange-Postfächer, SharePoint und OneDrive for Business-Websites, Office 365-Gruppen und Skype for Business-Unterhaltungen suchen und speichern können.
 ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256803"
 ---
 # <a name="ediscovery-in-office-365"></a>eDiscovery in Office 365
 

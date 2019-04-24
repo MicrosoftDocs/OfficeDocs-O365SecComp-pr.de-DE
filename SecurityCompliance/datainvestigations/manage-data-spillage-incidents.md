@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit dem Tool "neue Daten Untersuchungen (Vorschau)" im Security & Compliance Center einen Vorfall mit Datenausfällen verwalten können.
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258823"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Daten verschüttenden Vorfalls in Microsoft 365
 
@@ -111,7 +111,7 @@ Wechseln Sie in der Untersuchung zu **Evidence** , und klicken Sie auf den im vo
 
 Klicken Sie auf **Beweise verwalten**, um Dokumente zu gruppieren und weitere Unterstützung für Ihre Überprüfungen zu erhalten. Klicken Sie in der **Analytics** -Kachel auf **analysieren**. Dadurch werden erweiterte Analysen wie doppelte Erkennung, e-Mail-Threading und Design Analyse ausgeführt. Weitere Informationen finden Sie unter:
 
-- [Führen Sie Analysen aus, um schneller zu untersuchen](run-analytics-to-investigate-faster.md)
+- [Durchführen von Analysen zur schnelleren Untersuchung](run-analytics-to-investigate-faster.md)
 - [Erkennen von Quasiduplikaten](near-duplicates.md)
 - [E-Mail-Threading](email-threading.md)
 - [Designs](themes.md)

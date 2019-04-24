@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook im Web-Benutzer können Junk (Spam) und Phishing-Scams mithilfe integrierter e-Mail-Berichtsoptionen melden. Sie können Microsoft auch mitteilen, ob eine e-Mail fälschlicherweise als Junk (Spam) identifiziert wurde.
 ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261578"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-e-Mails und Phishing-Scams in Outlook im Web 
 

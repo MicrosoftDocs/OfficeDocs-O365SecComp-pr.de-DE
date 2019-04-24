@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Zuletzt aktualisiert: 2017'
 ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265267"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Datenschutzerklärung für sicheres e-Mail-Portal für Office 365
 
@@ -51,6 +51,6 @@ Redmond, Washington 98052 USA
   
 ## <a name="changes"></a>Änderungen
 
-Wenn wir Änderungen an dieser Anweisung veröffentlichen, überprüfen wir die Daten "Zuletzt aktualisiert" am Anfang der Anweisung. Konsultieren Sie die Organisation, die Ihnen Zugriff auf ihre Dienste bietet, um mehr über Änderungen an den Datenschutzmethoden zu erfahren.
+Wenn wir Änderungen an dieser Anweisung veröffentlichen, überprüfen wir die Daten "Zuletzt aktualisiert" am Anfang der Anweisung. Wenden Sie sich an die Organisation, die Ihnen Zugriff auf ihre Dienste gewährt, um mehr zu Änderungen an den Datenschutzbestimmungen zu erfahren.
   
 

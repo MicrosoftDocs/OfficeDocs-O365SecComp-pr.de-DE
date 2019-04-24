@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: In diesem Artikel wird die neue Version von Advanced eDiscovery (Preview) in Microsoft 365 beschrieben.
 ms.openlocfilehash: 2296f4ee1867cacc90eada9e5f12888a8ea0d242
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252473"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Übersicht über Advanced eDiscovery (Preview) in Microsoft 365
 

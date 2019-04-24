@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einem detaillierten Bericht zu einem Einblick mit empfohlenen Aktionen im Security &amp; Compliance Center wechseln können.
 ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255308"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick
 
@@ -32,7 +32,7 @@ Dies ist eine von mehreren exemplarischen Vorgehens &amp; weisen für das Securi
 
 Lassen Sie uns den Fluss von einem detaillierten Bericht zu einem Einblick und Aktionen durchlaufen. (Dies ist ein kurzes Beispiel für [Antispam-und](anti-spam-and-anti-malware-protection.md) Antischadsoftware.) 
   
-1. Wir beginnen mit [Security &amp; Compliance Center](https://protection.office.com) -Berichten. (Wechseln Sie zum **Dashboard** **Berichte** \> .)<br/>![Wechseln Sie im &amp; Security Compliance Center zum Dashboard für \> Berichte.](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Wir beginnen mit [Security &amp; Compliance Center](https://protection.office.com) -Berichten. (Wechseln Sie zum **Dashboard** **Berichte** \> .) <br/>![Wechseln Sie im &amp; Security Compliance Center zum Dashboard für \> Berichte.](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Wir wählen einen Bericht aus, um eine detailliertere Ansicht zu erhalten. (Wählen Sie einen Bericht aus, beispielsweise den Status Bericht über den **Bedrohungsschutz** .)<br/>![BedrohungsSchutz-Status Bericht mit Einblicken](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

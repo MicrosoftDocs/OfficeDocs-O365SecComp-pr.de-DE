@@ -1,5 +1,5 @@
 ---
-title: Office 365 Secure Score
+title: Office 365-Sicherheitsbewertung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Fragen Sie sich, wie sicher Ihre Organisation wirklich in Office 365 ist? Secure Score steht Ihnen zur Verfügung. Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen in Office 365 und weist eine Bewertung zu.
 ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262457"
 ---
-# <a name="office-365-secure-score"></a>Office 365 Secure Score
+# <a name="office-365-secure-score"></a>Office 365-Sicherheitsbewertung
 
 **Zusammenfassung** Fragen Sie sich, wie sicher Ihre Organisation wirklich in Office 365 ist? Secure Score steht Ihnen zur Verfügung. Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen in Office 365 und weist eine Bewertung zu. Lesen Sie diesen Artikel, um einen Überblick über die sichere Bewertung und ihre Verwendung zu erhalten.
   

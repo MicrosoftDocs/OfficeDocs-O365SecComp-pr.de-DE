@@ -6,6 +6,7 @@ manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/11/2019
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -13,47 +14,58 @@ search.appverid:
 - MOE150
 - MET150
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 5561f8b11cf7bab8c726da332caca1484d455b35
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
-ms.translationtype: HT
+ms.openlocfilehash: 142f471d80c7278cabd4c437f0ae0ee9af3ff219
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258163"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
-Durch die Verhinderung von Datenverlusten (Data Loss Prevention, DLP) in Office 365 können vertrauliche Informationen identifiziert, überwacht und geschützt werden. Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
+Data Loss Prevention (DLP) in Office 365 kann Ihre vertraulichen Informationen identifizieren, überwachen und schützen. Für die Identifizierung vertraulicher Informationen ist es manchmal erforderlich, nach Stichwörtern zu suchen, insbesondere bei der Identifizierung generischer Inhalte (beispielsweise Kommunikation im Zusammenhang mit dem Gesundheitswesen) oder anstößigen oder expliziten Sprachen Obwohl Sie Stichwortlisten in vertraulichen Informationstypen erstellen können, sind Keyword-Listen in der Größe begrenzt und erfordern das Ändern von XML, um Sie zu erstellen oder zu bearbeiten. Stichwort Wörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und in einem wesentlich größeren Umfang und unterstützen bis zu 100.000 Ausdrücke pro Wörterbuch.
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Grundlegende Schritte zum Erstellen eines Schlüsselwörterbuchs
 
 Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer in den Dienst importierten Datei (etwa einer CSV- oder TXT-Liste), oder durch ein einem PowerShell-Cmdlet, aus einer Liste, die Sie direkt in das PowerShell-Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch.Beim Erstellen eines Schlüsselwörterbuchs befolgen Sie die gleichen einfachen Schritte:
   
-1. Verwenden Sie das **Security & Compliance Center**, oder stellen Sie die Verbindung zu **Security &amp; Compliance Center PowerShell** her.
+1. verwenden sie das **security & compliance center** ([https://protection.office.com](https://protection.office.com)), oder stellen sie eine verbindung mit **Office 365 security &amp; compliance center PowerShell**her.
     
-2. **Definieren oder Laden der Schlüsselwörter aus der gewünschten Quelle**: Der Assistent und das Cmdlet akzeptieren eine durch Trennzeichen getrennte Liste von Schlüsselwörtern zum Erstellen eines benutzerdefinierten Schlüsselwörterbuchs, dieser Schritt kann also in Abhängigkeit davon, woher Ihre Schlüsselwörter stammen, geringfügig anders sein. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
+2. **Definieren oder laden Sie Ihre Schlüsselwörter aus der beabsichtigten Quelle**. Sowohl der Assistent als auch das Cmdlet akzeptieren eine durch trennzeichengetrennte Liste von Schlüsselwörtern, um ein benutzerdefiniertes Stichwort Wörterbuch zu erstellen, sodass dieser Schritt je nachdem, woher Ihre Schlüsselwörter stammen, etwas variieren kann. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
     
-3. **Erstellen des Wörterbuchs**: Wählen Sie einen Namen und eine Beschreibung aus, und erstellen Sie das Wörterbuch.
+3. **Erstellen Sie Ihr Wörterbuch**. Wählen Sie einen Namen und eine Beschreibung aus, und erstellen Sie Ihr Wörterbuch.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Erstellen eines Schlüsselwörterbuchs mit dem Security & Compliance Center
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Erstellen eines Stichwort Wörterbuchs mithilfe des Security & Compliance Center
 
 Verwenden Sie die folgenden Schritte zum Erstellen und Importieren von Schlüsselwörtern für ein Benutzerwörterbuch:
 
-1. Stellen Sie die Verbindung zum [Security & Compliance Center](https://protection.office.com) her.
+1. Stellen Sie eine Verbindung mit dem Security &[https://protection.office.com](https://protection.office.com)Compliance Center her ().
+
 2. Navigieren Sie zu **Klassifizierungen > Typen vertraulicher Informationen**.
+
 3. Wählen Sie **Erstellen** aus, geben Sie einen **Namen** und eine **Beschreibung** für Ihren vertraulichen Infotyp ein, und wählen Sie dann **Weiter** aus.
+
 4. Wählen Sie **Element hinzufügen** und dann **Wörterbuch (große Schlüsselwörter)** in der Dropdownliste **Inhalt erkennen, der Folgendes enthält** aus.
+
 5. Wählen Sie **Wörterbuch hinzufügen** aus.
+
 6. Wählen Sie unter dem Steuerelement "Suche" die Option **Hier können Sie neue Schlüsselwörterbücher erstellen** aus.
+
 7. Geben Sie einen **Namen** für Ihr Benutzerwörterbuch ein.
+
 8. Klicken Sie auf **Importieren**, und wählen Sie dann entweder **Aus Text** oder **Aus CSV** aus, je nach Typ der Schlüsselwortdatei.
+
 9. Wählen Sie im Dialogfeld "Datei" die Schlüsselwortdatei auf Ihrem lokalen PC oder aus der Netzwerkfreigabe aus, und klicken Sie dann auf **Öffnen**.
+
 10. Klicken Sie auf **Speichern**, und wählen Sie dann Ihr Benutzerwörterbuch aus der Liste **Schlüsselwörterbücher** aus.
+
 11. Wählen Sie **Hinzufügen** aus, und klicken Sie dann auf **Weiter**.
+
 12. Überprüfen und vervollständigen Sie den ausgewählten Typ vertraulicher Informationen, und wählen Sie dann **Fertig stellen** aus.
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Erstellen eines Schlüsselwörterbuchs aus einer Datei mit PowerShell
 
-Wenn Sie ein großes Wörterbuch erstellen müssen, werden dafür häufig Schlüsselwörter aus einer Datei oder aus einer Liste verwendet, die aus einer anderen Quelle exportiert wurde. In diesem Fall erstellen Sie ein Schlüsselwörterbuch mit einer Liste unangemessener Begriffe, nach denen in externen E-Mails gesucht werden soll. Zunächst müssen Sie [eine Verbindung zu Office 365 Security &amp; Compliance Center PowerShell herstellen](https://docs.microsoft.com/de-DE/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Häufig müssen Sie ein umfangreiches Wörterbuch erstellen, indem Sie Stichwörter aus einer Datei oder aus einer Liste verwenden, die aus einer anderen Quelle exportiert wurde. In diesem Fall erstellen Sie ein Stichwort Wörterbuch, das eine Liste der anstößigen Sprache enthält, die in externen e-Mails angezeigt werden soll. Sie müssen zuerst [eine Verbindung mit Office 365 &amp; Security Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Kopieren Sie die Schlüsselwörter in eine Textdatei, und stellen Sie sicher, dass sich jedes Schlüsselwort in einer separaten Zeile befindet.
     
@@ -61,27 +73,31 @@ Wenn Sie ein großes Wörterbuch erstellen müssen, werden dafür häufig Schlü
     
 3. Lesen Sie die Datei in eine Variable, indem Sie das folgende Cmdlet ausführen:
     
-  ```
-  $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
-  ```
+    ```
+    $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
+    ```
 
 4. Erstellen Sie das Wörterbuch, indem Sie das folgende Cmdlet ausführen:
     
-  ```
-  New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
-  ```
+    ```
+    New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
+    ```
 
 ## <a name="modifying-an-existing-keyword-dictionary"></a>Ändern eines vorhandenen Schlüsselwörterbuchs
 
 Möglicherweise müssen Sie einmal Schlüsselwörter in einem Ihrer Schlüsselwörterbücher oder in einem der integrierten Wörterbücher ändern. Derzeit können Sie mit PowerShell nur ein benutzerdefiniertes Schlüsselwörterbuch aktualisieren. 
 
-In diesem Beispiel ändern wir einige Ausdrücke in PowerShell, speichern die Ausdrücke lokal, wo Sie sie in einem Editor bearbeiten können, und aktualisieren anschließend die vorherigen Ausdrücke an Ort und Stelle. Rufen Sie zuerst das Wörterbuchobjekt ab:
+Beispielsweise ändern wir einige Ausdrücke in PowerShell, speichern die Ausdrücke lokal, wo Sie Sie in einem Editor ändern können, und aktualisieren dann die vorherigen Ausdrücke direkt. 
+
+Rufen Sie zuerst das Wörterbuchobjekt ab:
   
 ```
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-Durch Drucken von `$dict` werden die verschiedenen Variablen angezeigt. Die eigentlichen Schlüsselwörter werden in einem Objekt am Back-End gespeichert, `$dict.KeywordDictionary` enthält aber eine Zeichenfolgendarstellung von diesen, die Sie zum Ändern des Wörterbuchs verwenden. Bevor Sie das Wörterbuch ändern, müssen Sie die Begriffe mit der `.split(',')`-Methode wieder in ein Array konvertieren. Danach entfernen Sie die ungewünschten Leerzeichen zwischen den Schlüsselwörtern mithilfe der `.trim()`-Methode, sodass nur die Schlüsselwörter übrig bleiben, mit denen Sie arbeiten möchten. 
+Beim `$dict` Drucken werden die verschiedenen Variablen angezeigt. Die Schlüsselwörter selbst werden in einem Objekt im Back-End gespeichert `$dict.KeywordDictionary` , Sie enthalten jedoch eine Zeichenfolgendarstellung, die Sie zum Ändern des Wörterbuchs verwenden. 
+
+Bevor Sie das Wörterbuch ändern, müssen Sie die Zeichenfolge mithilfe der `.split(',')` -Methode wieder in ein Array umwandeln. Dann bereinigen Sie die unerwünschten Leerzeichen zwischen den Schlüsselwörtern `.trim()` mit der Methode, sodass nur die Schlüsselwörter für die Arbeit verwendet werden. 
   
 ```
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -89,7 +105,7 @@ $terms = $dict.KeywordDictionary.split(',').trim()
 
 Jetzt entfernen Sie einige Ausdrücke aus dem Wörterbuch. Da das Beispielwörterbuch nur einige Schlüsselwörter enthält, können Sie diesen Schritt auch überspringen und mit dem Exportieren des Wörterbuchs und dem Bearbeiten im Editor fortfahren. Wörterbücher enthalten aber in der Regel eine große Textmenge, daher erfahren Sie zunächst, wie diese in PowerShell ganz einfach bearbeiten werden.
   
-Im letzten Schritt haben Sie die Schlüsselwörter in einem Array gespeichert. Es gibt mehrere Möglichkeiten, um [Elemente aus einem Array zu entfernen](https://go.microsoft.com/fwlink/p/?linkid=852620). Der Einfachheit halber erstellen Sie aber ein Array der Ausdrücke, die Sie aus dem Wörterbuch entfernen möchten, und kopieren dann nur die Wörterbuchbegriffe dort hinein, die sich nicht in der Liste der zu entfernenden Ausdrücke befinden.
+Im letzten Schritt haben Sie die Schlüsselwörter in einem Array gespeichert. Es gibt mehrere Möglichkeiten, um [Elemente aus einem Array zu entfernen](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)). Der Einfachheit halber erstellen Sie aber ein Array der Ausdrücke, die Sie aus dem Wörterbuch entfernen möchten, und kopieren dann nur die Wörterbuchbegriffe dort hinein, die sich nicht in der Liste der zu entfernenden Ausdrücke befinden.
   
 Führen Sie den Befehl  `$terms` aus, um die aktuelle Liste von Ausdrücken anzuzeigen. Die Ausgabe des Befehls sieht wie folgt aus: 
   
@@ -165,7 +181,7 @@ Das vorhandene Wörterbuch wurde nun aktualisiert. Beachten Sie, dass das Feld `
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Verwenden von Schlüsselwörterbüchern in benutzerdefinierten vertraulichen Informationstypen und DLP-Richtlinien
 
-Schlüsselwörterbücher können als Bestandteil der Übereinstimmungsanforderungen für einen benutzerdefinierten vertraulichen Informationstyp verwendet werden oder direkt als vertraulicher Informationstyp. Für beides muss [ein benutzerdefinierter vertraulicher Informationstyp in Office 365 Security & Compliance Center PowerShell erstellt werden](create-a-custom-sensitive-information-type-in-scc-powershell.md). Folgen Sie den Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Wenn Sie die XML haben, benötigen Sie die GUID-ID für das Wörterbuch, um dieses zu verwenden.
+Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen für einen benutzerdefinierten vertraulichen Informationstyp oder als vertraulicher Informationstyp verwendet werden. Beide müssen Sie einen [benutzerdefinierten vertraulichen Informationstyp](create-a-custom-sensitive-information-type-in-scc-powershell.md)erstellen. BeFolgen Sie die Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Sobald Sie die XML-Datei haben, benötigen Sie die GUID-ID für das Wörterbuch, um Sie zu verwenden.
   
 ```
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

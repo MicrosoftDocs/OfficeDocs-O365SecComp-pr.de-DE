@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit der standardmäßigen DLP-Richtlinie
+title: Erste Schritte mit der DLP-Standardrichtlinie
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: Bevor Sie Ihre erste DLP-Richtlinie (Data Loss Prevention, Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (siehe unten) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie benachrichtigt werden, wenn e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine andere Person außerhalb Ihrer Organisation freigegeben wurden.
 ms.openlocfilehash: fa48025a7b979ad69c600b21a10fbb62567234c3
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256718"
 ---
-# <a name="get-started-with-the-default-dlp-policy"></a>Erste Schritte mit der standardmäßigen DLP-Richtlinie
+# <a name="get-started-with-the-default-dlp-policy"></a>Erste Schritte mit der DLP-Standardrichtlinie
 
 Bevor Sie Ihre erste DLP-Richtlinie (Data Loss Prevention, Datenverlust) erstellen, hilft DLP, Ihre vertraulichen Informationen mit einer Standardrichtlinie zu schützen. Diese Standardrichtlinie und ihre Empfehlung (siehe unten) helfen Ihnen, Ihre vertraulichen Inhalte zu schützen, indem Sie benachrichtigt werden, wenn e-Mails oder Dokumente, die eine Kreditkartennummer enthalten, für eine andere Person außerhalb Ihrer Organisation freigegeben wurden. Diese Empfehlung wird auf der **Start** Seite des Security &amp; Compliance Centers angezeigt. 
   

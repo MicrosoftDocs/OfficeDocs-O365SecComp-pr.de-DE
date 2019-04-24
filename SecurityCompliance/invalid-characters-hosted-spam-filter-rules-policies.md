@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Stellt Hilfe für Administratoren bereit, die in ihrer Antispamsoftware ungültige Zeichen enthalten und beim Versuch, das Security &amp; Compliance Center zu verwenden, Probleme auftreten.
 ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253953"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Vermeiden ungültiger Zeichen in den spamfilterregeln und der Spamfilter Richtlinie 
 

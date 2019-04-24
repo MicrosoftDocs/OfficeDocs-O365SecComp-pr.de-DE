@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'Erfahren Sie, wie Sie einen Bericht ausführen und dann die CSV-Datei in Office 365 Advanced eDiscovery herunterladen.  '
 ms.openlocfilehash: c6b70700d785c2616f984f3902fbc543d1ae26b3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261208"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Ausführen von Berichten in Office 365 Advanced eDiscovery
 
@@ -33,7 +33,7 @@ Sie können eine CSV-Datei mit einem Bericht für den ausgewählten Prozess heru
   
 1. Wählen Sie auf der Registerkarte **Berichte** eine Option aus der Liste **Berichtname** aus. Wählen Sie aus drei **Berichtsnamen** Optionen aus: **Relevanz entscheiden**, **Designs-Liste** oder markierte **Dateien**.
     
-    ![eDiscovery-Analyseberichte](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
+    ![eDiscovery Analytics-Berichte](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
 2. Verfügbare Parameter und Sortier-und Filteroptionen können je nach ausgewähltem Bericht festgelegt werden. 
     

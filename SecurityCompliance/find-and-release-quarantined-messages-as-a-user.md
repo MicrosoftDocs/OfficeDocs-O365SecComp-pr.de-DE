@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Als Office 365-Benutzer können Sie Ihre eigenen Nachrichten in Spamquarantäne auf zweierlei Weise verwalten: durch Antworten auf Spambenachrichtigungen, die Sie direkt an Sie gesendet haben (wenn Ihr Administrator diese Funktion eingerichtet hat) oder mithilfe der Spamquarantäne Funktion im Security &amp; Compliance Center.'
 ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255203"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer in Office 365
 
@@ -61,7 +61,7 @@ Wenn Sie viele isolierte Elemente haben, können Sie die Anzahl auf einen verwal
     
   - Nach **richten-ID** Verwenden Sie diese Option, um eine bestimmte Nachricht auszuwählen, wenn Sie die Nachrichten-ID kennen. 
     
-    Wenn beispielsweise eine bestimmte Nachricht von einem Benutzer in Ihrer Organisation gesendet oder für diesen vorgesehen ist, aber nie sein Ziel erreicht hat, können Sie mithilfe einer Nachrichtenablaufverfolgung nach der Nachricht suchen (siehe [Ausführen einer Nachrichtenablaufverfolgung und Anzeigen der Ergebnisse](https://go.microsoft.com/fwlink/?LinkId=799737)). Wenn Sie feststellen, dass die Nachricht an die Quarantäne gesendet wurde, da Sie möglicherweise mit einer Nachrichtenfluss Regel übereinstimmt oder als Spam identifiziert wurde, können Sie diese Nachricht in Quarantäne finden, indem Sie Ihre Nachrichten-ID angeben. Stellen Sie sicher, dass Sie die vollständige Nachricht-ID-Zeichenfolge angeben. Dies kann beispielsweise eine eckige Klammer (\<\>) einschließen:
+    Wenn beispielsweise eine bestimmte Nachricht von einem Benutzer in Ihrer Organisation gesendet oder für diesen vorgesehen ist, aber nie sein Ziel erreicht hat, können Sie mithilfe einer Nachrichtenablaufverfolgung nach der Nachricht suchen (siehe [Ausführen einer Nachrichtenablaufverfolgung und Anzeigen der Ergebnisse](https://go.microsoft.com/fwlink/?LinkId=799737)). Wenn Sie feststellen, dass die Nachricht an die Quarantäne gesendet wurde, da Sie möglicherweise mit einer Nachrichtenfluss Regel übereinstimmt oder als Spam identifiziert wurde, können Sie diese Nachricht in Quarantäne finden, indem Sie Ihre Nachrichten-ID angeben. Stellen Sie sicher, dass die vollständige Zeichenfolge der Nachrichten-ID enthalten ist. Dies kann beispielsweise eine eckige Klammer (\<\>) einschließen:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
@@ -108,7 +108,7 @@ Sie können weitere Details zu der Nachricht abrufen, indem Sie eine der folgend
 
 Nachdem Sie eine Nachricht oder eine Gruppe von Nachrichten ausgewählt haben, haben Sie mehrere Optionen für die Verwaltung von Nachrichten in Quarantäne.
   
-- Nichts tun. Wenn Sie nichts tun, wird die Nachricht nach Ablauf automatisch von Office 365 gelöscht. Denken Sie daran, wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück erhalten.
+- Keine Aktion ausführen. Wenn Sie nichts tun, wird die Nachricht nach Ablauf automatisch von Office 365 gelöscht. Denken Sie daran, wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück erhalten.
     
 - **Release-Meldung** Gibt eine isolierte Nachricht (oder einen Satz von Nachrichten) frei, damit die Nachricht an Ihr Postfach gesendet wird. Wenn Sie eine Nachricht freigeben, haben Sie die Möglichkeit, die Nachricht zur Analyse an Microsoft zu melden. 
     

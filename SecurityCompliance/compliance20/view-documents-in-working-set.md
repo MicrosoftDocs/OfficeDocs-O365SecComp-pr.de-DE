@@ -13,25 +13,23 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241573"
 ---
 # <a name="view-documents-in-a-working-set"></a>Anzeigen von Dokumenten in einem Arbeitssatz
 
 Advanced eDiscovery (Preview) zeigt Inhalte über mehrere Betrachter an, die jeweils unterschiedlichen Zwecken dienen. Die verschiedenen Betrachter können durch Klicken auf ein beliebiges Dokument innerhalb eines Arbeitssatzes verwendet werden. Die derzeit bereitgestellten Viewer sind:
 
-- Dateimetadaten  
-
+- Datei Metadaten
 - Systemeigene Ansicht
 - Text Ansicht
 - Ansicht mit Anmerkungen
 - Konvertierte Ansicht
 
-## <a name="file-metadata"></a>Dateimetadaten  
-
+## <a name="file-metadata"></a>Datei Metadaten
 
 Dieses Panel kann ein-oder ausgeschaltet werden, um verschiedene Metadaten anzuzeigen, die mit dem Dokument verknüpft sind. Auch wenn das Suchergebnis Raster angepasst werden kann, um bestimmte Metadaten anzuzeigen, gibt es Fälle, in denen horizontaler Bildlauf beim Überprüfen von Daten schwierig sein kann. Der Datei-Metadatenbereich ermöglicht es einem Benutzer, eine Ansicht innerhalb des Viewers einzuschalten.
 

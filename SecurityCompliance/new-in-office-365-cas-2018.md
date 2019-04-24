@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Sehen Sie, was während 2018 für Office 365 Cloud App Security veröffentlicht wurde.
 ms.openlocfilehash: 986fb64eedf8184e7835d1fec41845fde13b294b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263157"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2018"></a>Office 365 Cloud App-Sicherheitsupdates während 2018
 

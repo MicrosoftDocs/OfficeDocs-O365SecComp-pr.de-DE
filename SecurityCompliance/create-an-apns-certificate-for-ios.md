@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
 description: Um iOS-Geräte wie iPad und iPhones in der Verwaltung mobiler Geräte für Office 365 zu verwalten, führen Sie die folgenden Schritte aus, um zuerst ein APNs-Zertifikat zu erstellen.
 ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258623"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Erstellen eines APNs-Zertifikats für iOS-Geräte
 
@@ -33,41 +33,41 @@ Führen Sie dazu die Schritte aus dem Link **Einrichten** auf der Portalseite au
   
 ![Einrichten der erforderlichen und empfohlenen Schritte für die Verwaltung mobiler Geräte](media/d71e3c76-b6b9-4549-ade6-cbfab846d908.png)
   
-1. Wählen Sie neben **Konfigurieren eines APNs-Zertifikats für IOS-Geräte**die Option **Einrichten**aus.
+1. Next to **Configure a APNs Certificate for iOS devices**, select **Set up**.
     
-2. Wählen Sie **CSR-Datei herunterladen** aus, und speichern Sie die Zertifikatsignaturanforderung auf einem Speicherort auf Ihrem Computer, den Sie sich merken werden. 
+2. Select **Download your CSR file** and save the Certificate signing request to a somewhere on your computer that you'll remember. 
     
     ![Installieren des APN-Zertifikats (Dialogfeld)](media/03aa8a24-e95c-4077-9b6b-ef76a86bafd7.png)
   
-3. Wählen Sie **Weiter** aus.
+3.  Select **Next**. 
     
-4. Erstellen Sie ein APN-Zertifikat.
+4.  Create an APN certificate.
     
-  - Wählen Sie **Apple APNS-Portal** aus, um das Apple Push Certificates-Portal zu öffnen. 
+  - Select **Apple APNS Portal** to open the Apple Push Certificates Portal.  
     
     ![Installieren des APN-Benachrichtigungs-CERT-Dialogs mit ausgewähltem Apple APNS-Portal](media/ce19f53c-f44a-470b-baf3-9278dfda2ba5.png)
   
-  - Melden Sie sich mit einer Apple-ID an.
+  - Sign in with an Apple ID.
     
     > [!IMPORTANT]
-    > Verwenden Sie eine Unternehmens Apple-ID, die einem e-Mail-Konto zugeordnet ist, das in Ihrer Organisation verbleiben soll, auch wenn der Benutzer, der das Konto verwaltet, verlässt. Speichern Sie diese ID, da Sie beim Erneuern des Zertifikats dieselbe ID verwenden müssen. 
+    > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate. 
   
-  - Wählen Sie **Zertifikat erstellen** und die **Nutzungsbedingungen**akzeptieren aus.
+  - Select **Create a Certificate** and accept the **Terms of Use**.
     
-  - **Wechseln** Sie zur zertifikatsignieranforderung, die Sie von Office 365 auf Ihren Computer heruntergeladen haben, und wählen Sie **hochladen**aus.
+  - **Browse** to the Certificate signing request you downloaded to your computer from Office 365 and select **Upload**.
     
-  - **Laden** Sie das vom Apple Push Certificate Portal erstellte APN-Zertifikat auf Ihren Computer herunter. 
+  - **Download** the APN certificate created by the Apple Push Certificate Portal to your computer. 
     
     > [!TIP]
-    > Wenn Sie Probleme beim Herunterladen des Zertifikats haben, aktualisieren Sie Ihren Browser. 
+    > If you're having trouble downloading the certificate, refresh your browser. 
   
-5. Wechseln Sie zurück zu Office 365, und wählen Sie **weiter** , um zur Seite **APNS-Zertifikat hochladen** zu gelangen. 
+5. Go back to Office 365 and select **Next** to get to the **Upload APNS certificate** page. 
     
-6. Navigieren Sie zum APN-Zertifikat, das Sie aus dem Apple Push Certificates-Portal heruntergeladen haben.
+6.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
     
     ![Klicken Sie auf die Schaltfläche Durchsuchen, um APNS CERT auszuwählen, das Sie von Apple heruntergeladen haben](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Wählen Sie **Fertig stellen**aus.
+7. Select **Finish**.
     
 Gehen Sie zurück zu Security ** &amp; Compliance Center** \> **Security Policies** \> **Device Management** \> **Manage Settings** , um das Setup abzuschließen. 
   

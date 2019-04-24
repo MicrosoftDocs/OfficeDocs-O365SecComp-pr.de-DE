@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Für Administratoren: Löschen Sie Elemente im Ordner "Wiederherstellbare Elemente" eines Benutzers für ein Exchange Online-Postfach, auch wenn das Postfach in der gesetzlichen Aufbewahrungspflicht steht. Dies ist eine effektive Möglichkeit zum Löschen von Daten, die versehentlich in Office 365 verschüttet wurden.'
 ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256873"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von Cloud-basierten Postfächern in Hold-Admin-Hilfe
 
@@ -212,7 +212,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 
 nachdem sie die organisationsweiten Office 365-aufbewahrungsrichtlinien identifiziert haben, wechseln sie zur seite aufbewahrungs **zeit der datenverwaltung** \> **** im Security & Compliance Center, bearbeiten sie jede organisationsweite aufbewahrungsrichtlinie, die sie im vorherigen Schritt, und fügen Sie das Postfach zur Liste der ausgeschlossenen Empfänger hinzu. Dadurch wird das Postfach des Benutzers aus der Aufbewahrungsrichtlinie entfernt. 
 
-### <a name="office-365-retention-labels"></a>Office 365-Aufbewahrungs Bezeichnungen
+### <a name="office-365-retention-labels"></a>Office 365-Aufbewahrungsbezeichnungen
 
 Wenn ein Benutzer eine Bezeichnung anwendet, die so konfiguriert ist, dass Inhalte aufbewahrt oder aufbewahrt und dann Inhalte in einem beliebigen Ordner oder Element in Ihrem Postfach gelöscht werden, wird die *ComplianceTagHoldApplied* -Postfacheigenschaft auf **true**festgelegt. Wenn dies der Fall ist, wird das Postfach als in der Warteschleife gehalten, so als ob es in einem Rechtsstreit gehalten oder einer Office 365-Aufbewahrungsrichtlinie zugewiesen wurde.
 

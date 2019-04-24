@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c73f403bd13956904219c8db41afaa7f5e5fc088
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 538fd7e67456bc669b9f5cf140c995a716239fc2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30294768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240987"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Arbeiten mit Verwaltern in Advanced eDiscovery (Preview)
 
-Wenn eine Organisation auf eine rechtliche Untersuchung reagiert, basiert der Workflow bei der Identifizierung, Aufbewahrung und Sammlung von potenziell relevanten Inhalten oft auf Personen oder Datenverwalter innerhalb Ihrer Organisation. In eDiscovery werden diese Personen als Datenverwalter bezeichnet und als "Personen mit administrativer Kontrolle über ein Dokument oder eine elektronische Datei" definiert. Der Datenverwalter einer e-Mail kann beispielsweise der Besitzer des Postfachs sein, das die entsprechende Nachricht enthält.  
+Wenn eine Organisation auf eine rechtliche Untersuchung reagiert, basiert der Workflow bei der Identifizierung, Aufbewahrung und Sammlung potenziell relevanter Inhalte auf Personen oder Datenverwalter innerhalb Ihrer Organisation. In eDiscovery werden diese Personen als *Datenverwalter* (oder nur als *Verwalter*) bezeichnet und als "Personen mit administrativer Kontrolle über ein Dokument oder eine elektronische Datei" definiert. Der Verwalter einer e-Mail-Nachricht kann beispielsweise der Besitzer des Postfachs sein, das die entsprechende Nachricht enthält.  
 
-Wenn eine Untersuchung beginnt, muss das eDiscovery-Team schnell alle relevanten Depotstellen und Datenquellen identifizieren, die sich auf den Fall beziehen. Im Laufe der Zeit können die Listen der Verwalter und Ihre Datenquellen erweitert oder Vertrag. Daher müssen Organisationen einen kontrollierten Prozess für die Identifizierung, Aufbewahrung und Sammlung von Freiheitsentzug-Inhalten während des gesamten Lebenszyklus eines Falls verwalten.
+Wenn eine Untersuchung beginnt, muss das eDiscovery-Team schnell alle relevanten Depotstellen und Datenquellen identifizieren, die sich auf den Fall beziehen. Im Laufe der Zeit kann die Liste der Verwalter und ihrer Datenquellen zunehmen oder decreasse. Daher müssen Organisationen einen kontrollierten Prozess für die Identifizierung, Aufbewahrung und Sammlung von Freiheitsentzug-Inhalten während des gesamten Lebenszyklus eines Falls verwalten.
 
-Innerhalb eines Advanced eDiscovery (Preview)-Falles können juristische Teams Personen in Ihrer Organisation als Datenverwalter hinzufügen und die Aufbewahrungs Ressourcen wie Exchange-, OneDrive-, SharePoint-und Teams-Websites automatisch identifizieren und beibehalten. Durch die Verwendung des integrierten und in-situ-Verwaltungstools können Organisationen elektronisch gespeicherte Informationen (ESI) vor versehentlichem Löschen schützen und verabschieden von manuellen, zeitaufwändigen und fehleranfälligen gesetzlichen Aufbewahrungs Prozessen. 
+In einem Advanced eDiscovery (Preview)-Fall können juristische Teams Personen in Ihrer Organisation als Verwalter hinzufügen und automatisch Datenquellen wie Exchange-Postfächer, OneDrive-Konten und SharePoint-und Teams-Websites identifizieren und beibehalten. Mit dem integrierten Depot Verwaltungstool in Advanced eDiscovery (Preview) können Organisationen elektronisch gespeicherte Informationen vor versehentlicher (oder vorsätzlicher) Löschung schützen und sich mit manueller, zeitaufwändiger und fehleranfälliger rechtlicher Aufbewahrung verabschieden. Prozesse. 
 
 Weitere Informationen zum Arbeiten mit Verwaltern finden Sie in den folgenden Artikeln: 
 

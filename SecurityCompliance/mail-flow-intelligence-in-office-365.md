@@ -12,13 +12,13 @@ search.appverid:
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Administratoren erhalten Informationen zu den Fehlercodes, die der Nachrichtenübermittlung mithilfe von Connectors in Office 365 (auch bekannt als Nachrichtenfluss-Intelligence) zugeordnet sind.
 ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252498"
 ---
-# <a name="mail-flow-intelligence-in-office-365"></a>Mail Flow Intelligence in Office 365
+# <a name="mail-flow-intelligence-in-office-365"></a>Intelligente Nachrichtenübermittlung in Office 365
 
 In der Regel verwenden Sie einen Connector zum Weiterleiten von e-Mail-Nachrichten von Ihrer Office 365-Organisation an Ihre lokale e-Mail-Umgebung. Sie können auch einen Konnektor verwenden, um Nachrichten von Office 365 zu einer Partnerorganisation weiterzuleiten. Wenn Office 365 diese Nachrichten nicht über den Konnektor senden kann, werden sie in die Office 365-Warteschlange gestellt. Office 365 versucht 48 Stunden, die Nachrichten zu senden. Nach 48 Stunden läuft die Nachricht in der Warteschlange ab, und die Nachricht wird an den ursprünglichen Absender in einem Unzustellbarkeitsbericht zurückgegeben (auch bekannt als NDR oder Unzustellbarkeitsnachricht).
 

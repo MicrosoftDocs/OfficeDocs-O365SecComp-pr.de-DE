@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Sehen Sie sich an, wie der neue Spoof Intelligence Insight funktioniert.
 ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267251"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Exemplarische vorGehensWeise: Spoof Intelligence Insight
 
@@ -59,7 +59,7 @@ In beiden Fällen werden die in der Insight angezeigten Spoof-Domänen in zwei K
   
 Ein *Domänenpaar* ist eine Kombination aus der "from:"-Adresse und der sendenden Infrastruktur. 
   
-- Die "von"-Adresse ist die Adresse, die von Ihrer e-Mail-Anwendung als Absenderadresse angezeigt wird. Diese Adresse identifiziert den Autor der e-Mail. Das heißt, das Postfach der Person oder des Systems, das für das Schreiben der Nachricht zuständig ist. Dies wird manchmal auch als 5322. from-Adresse bezeichnet.
+- Die "von"-Adresse ist die Adresse, die von Ihrer e-Mail-Anwendung als Absenderadresse angezeigt wird. Diese Adresse identifiziert den Autor der E-Mail. Das heißt, das Postfach der Person oder des Systems, das sich für das Schreiben der Nachricht verantwortlich zeichnet. Dies wird manchmal auch als 5322.From-Adresse bezeichnet.
     
 - Die sendende Infrastruktur oder der Absender ist die Organisationsdomäne des PTR-Eintrags der sendenden IP-Adresse. Wenn die sendende IP-Adresse keinen PTR-Eintrag enthält, wird der Absender von der sendenden IP mit der Subnetzmaske 255.255.255.0 in CIDR-Notation (/24) identifiziert. Wenn die IP-Adresse beispielsweise 192.168.100.100 lautet, lautet die vollständige IP-Adresse des Absenders 192.168.100.100/24.
     

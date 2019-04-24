@@ -1,5 +1,5 @@
 ---
-title: Ansichten des Bedrohungs-Explorers
+title: Ansichten des Sicherheitsrisiken-Explorers
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die verschiedenen Arten von Ansichten im Explorer (auch als Bedrohungs-Explorer bezeichnet) als Teil von Office 365 Advanced Threat Protection Plan 2.
 ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260553"
 ---
-# <a name="threat-explorer-views"></a>Ansichten des Bedrohungs-Explorers
+# <a name="threat-explorer-views"></a>Ansichten des Sicherheitsrisiken-Explorers
 
 [Threat Explorer](use-explorer-in-security-and-compliance.md) ist ein leistungsstarkes, nahezu Echtzeit-Tool, mit dessen Hilfe Sicherheitsteams untersuchen und auf Bedrohungen im Security &amp; Compliance Center reagieren können. Der Explorer zeigt Informationen zu mutmaßlicher Schadsoftware und Phishing in e-Mails und Dateien in Office 365 sowie andere Sicherheitsbedrohungen und-Risiken für Ihre Organisation an. 
 
 Wenn Sie Explorer zuerst öffnen, werden in der Standardansicht e-Mail-Malware-Entdeckungen für die letzten 7 Tage angezeigt. 
 
-![Bedrohungs-Explorer](media/ThreatExplorerFirstOpened.png)
+![Sicherheitsrisiken-Explorer](media/ThreatExplorerFirstOpened.png)
 
 Der Explorer kann auch Sicherheitsschutz Features in Office 365, einschließlich [sicherer Links](atp-safe-links.md) und [sicherer Anlagen](atp-safe-attachments.md) , anzeigen und so geändert werden, dass Daten für die letzten 30 Tage angezeigt werden. 
 

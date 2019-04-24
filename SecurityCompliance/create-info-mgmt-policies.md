@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Informationsverwaltungsrichtlinien ermöglichen es Ihrer Organisation, zu steuern, wie lange Inhalte aufbewahrt werden, wie Sie die Inhalte der Benutzer überwachen und ob Sie Dokumenten Barcodes oder Beschriftungen hinzufügen können. Eine Richtlinie kann dazu beitragen, die Einhaltung rechtlicher und behördlicher Vorschriften oder interner Geschäftsprozesse zu erzwingen. Als Administrator können Sie eine Richtlinie einrichten, mit der gesteuert wird, wie Dokumente verfolgt werden und wie lange Dokumente aufbewahrt werden sollen.
 ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258843"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Erstellen und Anwenden von Informationsverwaltungsrichtlinien
 

@@ -1,5 +1,5 @@
 ---
-title: Führen Sie Analysen aus, um schneller zu untersuchen
+title: Durchführen von Analysen zur schnelleren Untersuchung
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257613"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>Führen Sie Analysen aus, um schneller zu untersuchen
+# <a name="run-analytics-to-investigate-faster"></a>Durchführen von Analysen zur schnelleren Untersuchung
 
 Wenn eine Beweissammlung groß ist, kann es schwierig sein, Sie alle zu überarbeiten. Ein Satz von nachweisen umfasst häufig mehrere Kopien derselben oder ähnlicher e-Mail-Nachrichten oder Dokumente. Data Investigations (Preview) bietet eine Reihe von Analysetools, mit denen Sie den Umfang der zu überprüfenden Dokumente ohne Verlust an Informationen reduzieren können. Weitere Informationen zu diesen Funktionen finden Sie unter:
 

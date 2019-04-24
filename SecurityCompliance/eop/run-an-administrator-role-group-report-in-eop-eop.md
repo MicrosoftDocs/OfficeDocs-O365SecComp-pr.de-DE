@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Wenn ein Administrator Mitglieder zu Administratorrollengruppen hinzufügt oder daraus entfernt, protokolliert Microsoft Exchange Online Protection (EOP) jedes Vorkommen.
 ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256183"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Ausführen eines Administrator-Rollengruppenberichts in EOP 
 

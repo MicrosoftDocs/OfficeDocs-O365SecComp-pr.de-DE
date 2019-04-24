@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240950"
 ---
 # <a name="manage-holds-in-advanced-ediscovery-preview"></a>Verwalten von Haltebereichen in Advanced eDiscovery (Preview)
 
@@ -64,7 +64,7 @@ So erstellen Sie einen Speicher für einen erweiterten eDiscovery (Preview)-Fall
   
 8. Wählen Sie die inhaltsspeicherorte aus, die Sie für den Aufbewahrungsort aktivieren möchten. Sie können Postfächer, Websites und öffentliche Ordner in der Warteschleife platzieren.
 
-   a. **Exchange e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** , um die Aufbewahrungszeit für Postfächer anzugeben. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder einzuhalten). Sie können auch das zugeordnete Postfach für eine Office 365-Gruppe oder ein Microsoft-Team einhalten. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+   a. **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** , um die Aufbewahrungszeit für Postfächer anzugeben. Verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen (um die Postfächer der Gruppenmitglieder einzuhalten). Sie können auch das zugeordnete Postfach für eine Office 365-Gruppe oder ein Microsoft-Team einhalten. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
  
     > [!NOTE]
     > Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um die Postfächer anzugeben, die in der Warteschleife platziert werden sollen, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Wenn Sie Personen zu dieser Liste hinzufügen möchten, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein.
@@ -76,7 +76,7 @@ So erstellen Sie einen Speicher für einen erweiterten eDiscovery (Preview)-Fall
     > [!NOTE]
     > In den seltenen Fällen, in denen sich der Benutzerprinzipalname (UPN) einer Person geändert hat, wird auch die URL für Ihr OneDrive-Konto geändert, um den neuen UPN zu integrieren. In diesem Fall müssen Sie den Haltestatus ändern, indem Sie die neue OneDrive-URL des Benutzers hinzufügen und den alten entfernen.
 
-     c. **Öffentliche Ordner in Exchange** : Verschieben Sie den UMSCHALT Schalter in die alle-Position, um alle öffentlichen Ordner in Ihrer Exchange Online-Organisation aufzubewahren. Beachten Sie, dass Sie bestimmte öffentliche Ordner nicht für die Aufbewahrung auswählen können. Lassen Sie den UMSCHALT Schalter auf **None** festgelegt, wenn Sie keine öffentlichen Ordner einhalten möchten.
+     c. **Öffentliche Exchange-Ordner** -verschieben Sie den UMSCHALT Schalter in die alle-Position, um alle öffentlichen Ordner in Ihrer Exchange Online-Organisation aufzubewahren. Beachten Sie, dass Sie bestimmte öffentliche Ordner nicht für die Aufbewahrung auswählen können. Lassen Sie den UMSCHALT Schalter auf **None** festgelegt, wenn Sie keine öffentlichen Ordner einhalten möchten.
 
 9. Wenn Sie mit dem Hinzufügen von Inhaltsspeicherorten zum Haltebereich fertig sind, klicken Sie auf **weiter**.
   
@@ -84,7 +84,7 @@ So erstellen Sie einen Speicher für einen erweiterten eDiscovery (Preview)-Fall
     
     - Geben Sie im Feld unter **Schlüsselwörter**eine Suchabfrage in das Feld ein, sodass nur der Inhalt, der den Suchkriterien entspricht, in der Warteschleife gespeichert wird. Sie können Schlüsselwörter, Nachrichteneigenschaften oder Dokumenteigenschaften wie Dateinamen angeben. Sie können auch komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise AND, OR oder NOT. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte an den angegebenen Inhaltsspeicherorten in der Warteschleife platziert.
 
-    - Klicken Sie auf Bedingungen **Hinzufügen** , um eine oder mehrere Bedingungen hinzuzufügen, um die Suchabfrage für den Haltebereich einzuschränken. Jede Bedingung fügt der KQL-Suchabfrage, die beim Erstellen des haltebereichs erstellt und ausgeführt wird, eine Klausel hinzu. Sie können beispielsweise einen Datumsbereich angeben, sodass e-Mails oder Website Dokumente, die innerhalb des Datumsbereichs erstellt wurden, gehalten werden. Eine Bedingung ist logisch mit der Schlüsselwortabfrage (angegeben im Stichwortfeld) durch den AND-Operator verbunden. Das hat zur Folge, dass Elemente sowohl die Stichwortabfrage als auch die Bedingung erfüllen müssen, die in den Haltestatus versetzt werden soll.
+    - Klicken Sie auf Bedingungen **Hinzufügen** , um eine oder mehrere Bedingungen hinzuzufügen, um die Suchabfrage für den Haltebereich einzuschränken. Jede Bedingung fügt der KQL-Suchabfrage, die beim Erstellen des haltebereichs erstellt und ausgeführt wird, eine Klausel hinzu. Sie können beispielsweise einen Datumsbereich angeben, sodass e-Mails oder Website Dokumente, die innerhalb des Datumsbereichs erstellt wurden, gehalten werden. Eine Bedingung ist durch AND-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Das hat zur Folge, dass Elemente sowohl die Stichwortabfrage als auch die Bedingung erfüllen müssen, die in den Haltestatus versetzt werden soll.
 
      Weitere Informationen zum Erstellen einer Suchabfrage und zum Verwenden von Bedingungen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Um Phishing zu verhindern, benötigen Office 365 und Outlook.com jetzt die RFC-Konformität für von: addresses.'
 ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253933"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Wie Office 365 die Absenderadresse überprüft, um Phishing zu verhindern
 
@@ -35,7 +35,7 @@ Microsoft startet die Durchsetzung der in diesem Artikel beschriebenen Richtlini
   
 ## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>Wie Office 365 die Verwendung einer gültigen from:-Adresse erzwingt, um Phishing-Angriffe zu verhindern
 
-In Office 365 werden Änderungen an der Art und Weise vorgenommen, wie die Verwendung der from:-Adresse in Nachrichten erzwungen wird, die Sie erhält, um Sie besser vor Phishing-Angriffen zu schützen. In diesem Artikel:
+In Office 365 werden Änderungen an der Art und Weise vorgenommen, wie die Verwendung der from:-Adresse in Nachrichten erzwungen wird, die Sie erhält, um Sie besser vor Phishing-Angriffen zu schützen. Inhalt dieses Artikels:
   
 - [Alle Nachrichten müssen eine gültige from:-Adresse aufweisen.](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
@@ -121,7 +121,7 @@ From: "Office 365" <sender@contoso.com> (Sent by a process)
 
 Für from:-Adressen, die einen Wert für den Anzeigenamen aufweisen, gelten die folgenden Regeln:
   
-- Wenn die Absenderadresse einen Anzeigenamen enthält und der Anzeigename ein Komma enthält, muss der Anzeigename in Anführungszeichen eingeschlossen werden. Zum Beispiel:
+- Wenn die Absenderadresse einen Anzeigenamen enthält und der Anzeigename ein Komma enthält, muss der Anzeigename in Anführungszeichen eingeschlossen werden. Beispiel:
     
     Das folgende Beispiel ist gültig:
     
@@ -152,7 +152,7 @@ Für from:-Adressen, die einen Wert für den Anzeigenamen aufweisen, gelten die 
   From: "Office 365" <sender@contoso.com>
   ```
 
-- Ungültig. Die e-Mail-Adresse ist nicht in eckige Klammern eingeschlossen:
+- Ungültig Die e-Mail-Adresse ist nicht in eckige Klammern eingeschlossen:
     
   ```
   From: Office 365 sender@contoso.com
@@ -164,25 +164,25 @@ Für from:-Adressen, die einen Wert für den Anzeigenamen aufweisen, gelten die 
   From: Office 365 <sender@contoso.com>
   ```
 
-- Ungültig. Alles wird in Anführungszeichen eingeschlossen, nicht nur auf den Anzeigenamen:
+- Ungültig Alles wird in Anführungszeichen eingeschlossen, nicht nur auf den Anzeigenamen:
     
   ```
   From: "Office 365 <sender@contoso.com>"
   ```
 
-- Ungültig. Die e-Mail-Adresse weist keine eckigen Klammern auf:
+- Ungültig Die e-Mail-Adresse weist keine eckigen Klammern auf:
     
   ```
   From: "Office 365 <sender@contoso.com>" sender@contoso.com
   ```
 
-- Ungültig. Zwischen dem Anzeigenamen und der linken Winkelklammer ist kein Leerzeichen:
+- Ungültig Zwischen dem Anzeigenamen und der linken Winkelklammer ist kein Leerzeichen:
     
   ```
   From: Office 365<sender@contoso.com>
   ```
 
-- Ungültig. Zwischen dem schließenden Anführungszeichen um den Anzeigenamen und der linken Spitze Klammer ist kein Leerzeichen.
+- Ungültig Zwischen dem schließenden Anführungszeichen um den Anzeigenamen und der linken Spitze Klammer ist kein Leerzeichen.
     
   ```
   From: "Office 365"<sender@contoso.com>

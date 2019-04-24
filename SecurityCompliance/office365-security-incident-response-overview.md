@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: In dieser Lösung erfahren Sie, wie die gängigsten Cyber-Sicherheitsangriffe in Office 365 Aussehen und wie Sie darauf reagieren können.
 ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262357"
 ---
 # <a name="office-365-security-incident-response"></a>Reaktion auf Sicherheitsvorfälle in Office 365
 
@@ -47,11 +47,11 @@ Prüfen Sie hier monatlich, wie weitere Artikel im Laufe der Zeit hinzugefügt w
 
 - [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Secure Office 365 wie ein Cyber pro
-Ihr Office 365-Abonnement verfügt über eine Reihe leistungsstarker Sicherheitsfunktionen, die Sie zum Schutz Ihrer Daten und ihrer Benutzer verwenden können.  Verwenden Sie die [office 365 Security Roadmap: die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) , um die empfohlenen bewährten Methoden von Microsoft für die Sicherung ihres Office 365-Mandanten zu implementieren.
-- Aufgaben, die in den ersten 30 Tagen erledigt werden müssen.  Diese haben sofortige Auswirkungen und sind für Ihre Benutzer gering.
-- Aufgaben in 90 Tagen. Diese müssen etwas mehr Zeit in Anspruch nehmen, um ihre Sicherheitslage zu planen und zu implementieren.
-- Über 90 Tage. Diese Verbesserungen werden in den ersten 90-Tagen ausgeführt.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sichern von Office 365 wie ein Profi für Internetsicherheit
+Ihr Office 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die [Office 365-Sicherheits-Roadmap: Top-Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) zum Implementieren von empfohlenen Microsoft-Best-Practices für den Schutz Ihres Office 365-Mandanten.
+- Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten.  Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
+- Aufgaben, die innerhalb von 90 Tagen ausgeführt werden sollten. Diese müssen etwas mehr Zeit in Anspruch nehmen, um ihre Sicherheitslage zu planen und zu implementieren.
+- Über 90 Tage hinaus. Diese Verbesserungen werden in den ersten 90 Tagen Ihrer Arbeit umgesetzt.
 
 
 

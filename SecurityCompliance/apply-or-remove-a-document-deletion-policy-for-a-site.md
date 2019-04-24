@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Unternehmen unterliegen häufig compliancebezogenen, rechtlichen oder anderen Vorschriften, nach denen sie Dokumente eine bestimmte Zeit lang aufbewahren müssen. Werden Dokumente jedoch länger als erforderlich aufbewahrt, kann dies für das Unternehmen ein rechtliches Risiko darstellen. Daher hat Ihr Unternehmen für Ihre Website möglicherweise eine Dokumentlöschrichtlinie erstellt, nach der z. B. allgemeine Geschäftsdokumente fünf Jahre nach Erstellung gelöscht werden müssen.
 ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243281"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Anwenden oder Entfernen einer Dokumentlöschrichtlinie für eine Website
 
@@ -62,7 +62,7 @@ Ihr Unternehmen kann unterschiedlichen Websitesammlungen unterschiedliche Richtl
     
 Diese Liste ist schreibgeschützt und dient dem Websitesiteeigentümer dazu, alle verfügbaren Richtlinien und Regeln anzuzeigen. Informationen zum Anwenden einer Richtlinie finden Sie im nächsten Abschnitt.
   
-![Anzeigen von einer Websitesammlung zugewiesenen Dokumentlöschrichtlinien](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
+![Ansicht der einer Websitesammlung zugewiesenen Dokument Löschrichtlinien](media/f2c0433b-2bb5-407d-a364-ae07c9627176.png)
   
 ## <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Anwenden oder Entfernen einer Dokumentlöschrichtlinie für eine Website
 
@@ -75,7 +75,7 @@ Für Sie als Besitzer einer Website oder Websitesammlung gibt es in Ihrem Untern
     > [!NOTE]
     > Der Link **Dokument Löschrichtlinien** wird nur angezeigt, wenn der Websitesammlung Richtlinien zugewiesen wurden. Außerdem wird der Link nicht sofort angezeigt, nachdem der Website Richtlinien zugewiesen wurden – es kann bis zu 24 Stunden dauern, bis die Richtlinien zugewiesen sind, wenn der Link zum **Löschen von Dokument** Richtlinien angezeigt wird. 
   
-3. Führen Sie eine der folgenden Aktionen aus:
+3. Führen Sie einen der folgenden Schritte aus:
     
   - **So wenden Sie eine Richtlinie an** Wählen Sie eine \> Richtlinie aus wählen Sie eine \> Regel in dieser Richtlinie **Speichern**aus.
     
@@ -97,7 +97,7 @@ Eine Website verwendet möglicherweise andere Richtlinie für die Aufbewahrung u
     
 - Informationsverwaltungsrichtlinien für eine Liste oder Bibliothek.
     
-Wenn Sie eine Dokument Löschrichtlinie auf eine Website anwenden, die bereits Inhaltstypen Richtlinien oder Informationsverwaltungsrichtlinien für eine Liste oder Bibliothek verwendet, werden diese Richtlinien ignoriert, während die Dokument Löschrichtlinie wirksam ist. Wenn andere Richtlinien ignoriert werden, wird die Meldung "Inhalt auf dieser Website verwendet Dokument Löschrichtlinien" angezeigt.
+Wenn Sie eine Dokumentlöschrichtlinie auf eine Website anwenden, die für eine Liste oder Bibliothek bereits Inhaltstyp- oder Informationsverwaltungsrichtlinien verwendet, werden diese Richtlinien ignoriert, während die Dokumentlöschrichtlinie angewendet wird. Wenn andere Richtlinien ignoriert werden, wird die Meldung "Inhalt auf dieser Website verwendet Dokument Löschrichtlinien" angezeigt.
   
 Das bedeutet, dass Sie für eine Website nur Richtlinien verwenden sollten, die für strukturierte Inhalte (Informationsverwaltungs- und Inhaltstyprichtlinien) oder unstrukturierte Inhalte (Dokumentlöschungsrichtlinien) gedacht sind, und nicht beide Arten von Richtlinien. Wenn Sie eine Dokumentlöschrichtlinie abwählen, wird die Warnung nicht angezeigt, und andere Richtlinientypen werden weiterhin angewendet.
   
@@ -105,7 +105,7 @@ Websiterichtlinien sind von Dokumentlöschungsrichtlinien nicht betroffen.
   
 ### <a name="determine-if-content-type-policies-are-being-ignored"></a>Prüfen, ob Inhaltstyprichtlinien ignoriert werden
 
-Wenn Ihre Websiteinhaltstyp Richtlinien verwendet hat und diese Meldung angezeigt wird, sind diese Richtlinien nicht mehr wirksam. Zum Wiederherstellen der Inhaltstyp Richtlinien können Sie die Dokument Löschrichtlinie aus Ihrer Website entfernen, wie weiter oben beschrieben, wenn eine Opt-out-Option verfügbar ist. Wenn es keine Option zum Deaktivieren gibt, ist die Dokument Löschrichtlinie obligatorisch und Sie müssen den Compliance Officer in Ihrer Organisation kontaktieren.
+Wenn Ihre Website Inhaltstyprichtlinien verwendet hat und nun diese Meldung angezeigt wird, werden diese Richtlinien nicht mehr angewendet. Zum Wiederherstellen der Inhaltstyp Richtlinien können Sie die Dokument Löschrichtlinie aus Ihrer Website entfernen, wie weiter oben beschrieben, wenn eine Opt-out-Option verfügbar ist. Wenn es keine Option zum Deaktivieren gibt, ist die Dokument Löschrichtlinie obligatorisch und Sie müssen den Compliance Officer in Ihrer Organisation kontaktieren.
   
 1. Wählen Sie in der oberen rechten Ecke **Einstellungen** [Gear Icon] \> **Site Settings**aus.
     
@@ -115,7 +115,7 @@ Wenn Ihre Websiteinhaltstyp Richtlinien verwendet hat und diese Meldung angezeig
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Prüfen, ob Informationsverwaltungsrichtlinien ignoriert werden
 
-Wenn Ihre Website Informationsverwaltungsrichtlinien verwendet hat und diese Nachricht jetzt angezeigt wird, sind diese Richtlinien nicht mehr wirksam. Zum Wiederherstellen der Informationsverwaltungsrichtlinien können Sie die Dokument Löschrichtlinie aus Ihrer Website entfernen, wie weiter oben beschrieben, wenn eine Opt-out-Option verfügbar ist. Wenn es keine Option zum Deaktivieren gibt, ist die Dokument Löschrichtlinie obligatorisch und Sie müssen den Compliance Officer in Ihrer Organisation kontaktieren.
+Wenn Ihre Website Informationsverwaltungsrichtlinien verwendet hat und nun diese Meldung angezeigt wird, werden diese Richtlinien nicht mehr angewendet. Zum Wiederherstellen der Informationsverwaltungsrichtlinien können Sie die Dokument Löschrichtlinie aus Ihrer Website entfernen, wie weiter oben beschrieben, wenn eine Opt-out-Option verfügbar ist. Wenn es keine Option zum Deaktivieren gibt, ist die Dokument Löschrichtlinie obligatorisch und Sie müssen den Compliance Officer in Ihrer Organisation kontaktieren.
   
 - Eine Liste oder Bibliothek finden Sie auf der Register \> **** Karte \> **Bibliothekseinstellungen** \> für die Menü Bandbibliothek unter **Berechtigungen und Verwaltungs** \> **Informationsverwaltungsrichtlinien Einstellungen**.
     
@@ -123,7 +123,8 @@ Wenn Ihre Website Informationsverwaltungsrichtlinien verwendet hat und diese Nac
   
 ## <a name="see-also"></a>Siehe auch
 
-[Übersicht über Dokumentlöschrichtlinien](document-deletion-policies.md)
+
+  [Übersicht über Dokumentlöschrichtlinien](document-deletion-policies.md)
   
 [Erstellen einer Dokumentlöschrichtlinie](create-a-document-deletion-policy.md)
 

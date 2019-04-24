@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Informationen zu Office 365-, Azure-und Dynamics 365 Online-Konformitätsberichten, um Drittanbieter-Audits zu sehen, erfahren Sie, wie Microsoft Kundendaten sicher hält und wie Sie mit ISO, HIPAA, NIST, FINRA, DSGVO und FedRAMP kompatibel sind, wenn Sie diese Onlinedienste verwenden.
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254303"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Erste Schritte mit dem Microsoft Service Trust Portal
 
@@ -33,7 +33,7 @@ Das Dienst Vertrauensstellungs Portal enthält Details zur Implementierung von S
 
 - Dynamics 365
 
-- Azur
+- Azure
     
  > [!NOTE]
  > Azure Active Directory-Konten, die Organisationen zugeordnet sind, haben Zugriff auf die gesamte Bandbreite von Dokumenten und Features wie Compliance-Manager. Microsoft-Konten, die für den persönlichen Gebrauch erstellt wurden, haben begrenzten Zugriff auf Inhalte des Service Trust-Portals. 

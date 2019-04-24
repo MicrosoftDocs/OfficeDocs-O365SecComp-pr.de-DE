@@ -1,5 +1,5 @@
 ---
-title: Markieren und Beurteilung in Office 365 Advanced eDiscovery
+title: Tagging und Bewertung in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Überprüfen Sie die Schritte zur Durchführung von Assessment-Schulungen, einschließlich Taggingdateien, und überprüfen Sie die Ergebnisse der Bewertung in Office 365 Advanced eDiscovery. '
 ms.openlocfilehash: 02dae23b6489b40243272beea1d79e871ca6a911
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260358"
 ---
-# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Markieren und Beurteilung in Office 365 Advanced eDiscovery
+# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Tagging und Bewertung in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -33,7 +33,7 @@ In diesem Abschnitt wird das Verfahren für das Modul Advanced eDiscovery Releva
     
     In diesem Verfahren wird beispielsweise ein Beispiel für eine Bewertung von 500-Dateien erstellt, und die Registerkarte **Tag** wird angezeigt, die das Markierungsfeld enthält, die Dateiinhalte und andere Tagging-Optionen angezeigt. 
     
-    ![Registerkarte „Relevanztag“ für Bewertung](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
+    ![Registerkarte "Relevanz" für die Bewertung](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
 2. Überprüfen Sie jede Datei im Beispiel, bestimmen Sie die Relevanz der Datei für jeden Fall Problem, und markieren Sie die Datei mithilfe der Tasten Relevanz (R), nicht relevant (NR) und **** überspringen im Bereich des taggingbereichs. 
     
@@ -44,14 +44,14 @@ In diesem Abschnitt wird das Verfahren für das Modul Advanced eDiscovery Releva
     
     Die aktuelle Fehlergrenze und der Umfang der Bewertung werden auf der Registerkarte **Relevanz verfolgen** mit erweiterten Details pro Problem berechnet und angezeigt (siehe unten). Weitere Informationen zu diesem Dialog werden im späteren Abschnitt "überPrüfen der Ergebnisse der Bewertung" beschrieben. 
     
-    ![Relevanznachverfolgung – Bewertung](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
+    ![Relevanz Track-Bewertung](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
     > Standardmäßig wird empfohlen, mit dem standardmäßigen nächsten Schritt fortzufahren, wenn die Anzeige des Bewertungs Fortschritts für das Problem abgeschlossen wurde, was darauf hinweist, dass das Bewertungs Beispiel überprüft wurde und ausreichende relevante Dateien markiert wurden. > andernfalls können Sie, wenn Sie die Ergebnisse der Registerkarte " **Spur** " anzeigen und die Fehlergrenze und den nächsten Schritt steuern möchten, auf neben dem **nächsten Schritt** **ändern** klicken, die Option **Bewertung fortsetzen**und dann auf **OK**klicken. 
   
 1. Klicken Sie rechts neben dem Kontrollkästchen **Bewertung** auf **ändern** , um Bewertungsparameter pro Problem anzuzeigen und anzugeben. Ein Dialogfeld zur **Beurteilungs Stufe** für jedes Problem wird angezeigt, wie im folgenden Beispiel dargestellt: 
     
-    ![Fallproblem mit Bewertungsebene](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
+    ![Fall Problem bei Beurteilungs Ebene](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     Die folgenden Parameter für das Problem werden im Dialogfeld Beurteilungs **Stufe** berechnet und angezeigt: 
     
@@ -69,7 +69,7 @@ In diesem Abschnitt wird das Verfahren für das Modul Advanced eDiscovery Releva
     
 3. Klicken Sie im Dialogfeld **Bewertung** auf **erweitert** , um die folgenden zusätzlichen Parameter und Details anzuzeigen: 
     
-    ![Bewertungsebene: erweiterte Ansicht für Fallproblem](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
+    ![Beurteilungs Ebene Case Issue Advanced View](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
     **Geschätzte Reichhaltigkeit**: geschätzte Reichhaltigkeit gemäß den aktuellen Bewertungsergebnissen
     
@@ -89,7 +89,7 @@ In diesem Abschnitt wird das Verfahren für das Modul Advanced eDiscovery Releva
     
     Wenn es mehrere Probleme gibt, wird, nachdem alle Probleme überprüft oder angepasst wurden, **** ein Zusammenfassungs Dialogfeld angezeigt, wie im folgenden Beispiel gezeigt. 
     
-    ![Zusammenfassung der Bewertungsebene](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
+    ![Zusammenfassung der Beurteilungs Ebene](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
     Gehen Sie nach erfolgreichem Abschluss der Bewertung zur nächsten Stufe in Relevanz Training.
     

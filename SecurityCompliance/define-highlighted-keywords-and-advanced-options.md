@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Erfahren Sie, wie Sie benutzerdefinierte Schlüsselwörter zu Relevanz hinzufügen, um relevante Dateien beim Tagging in Office 365 Advanced eDiscovery und zum Angeben von Kostenparametern zu identifizieren.  '
 ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257078"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definieren hervorgehobener Schlüsselwörter und erweiterter Optionen in Office 365 Advanced eDiscovery
 

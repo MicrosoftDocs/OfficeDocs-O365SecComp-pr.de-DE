@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240890"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>Unterstützte Dateitypen in Advanced eDiscovery (Preview)
 
@@ -55,11 +55,11 @@ Advance eDiscovery (Preview) unterstützt viele Dateitypen auf viele verschieden
 | Application/x-mspublisher | Dokument | Ja | Ja | Ja | Nein | . pub |
 | Anwendung/x-rar-komprimiert | Archiv/Container | Nein | Nein | Nein | Ja | . rar |
 | Anwendung/zip | Archiv/Container | Nein | Nein | Nein | Ja | . zip |
-| Bild/BMP | Image | Ja | Ja | Ja | Nein | . bmp |
+| Bild/BMP | Image | Ja | Ja | Ja | Nein | BMP |
 | Image/EMF | Image | Ja | Ja | Ja | Nein | . EMF |
-| image/gif | Dokument | Ja | Ja | Ja | Nein | . gif |
+| image/gif | Dokument | Ja | Ja | Ja | Nein | .gif |
 | image/jpeg | Image | Ja | Ja | Ja | Nein | . jpg;. JPEG;. dat;. jpgT |
-| image/png | Image | Ja | Ja | Ja | Nein | . png |
+| image/png | Image | Ja | Ja | Ja | Nein | .png |
 | Bild/TIFF | Image | Ja | Ja | Ja | Nein | . TIF |
 | Image/vnd. DWG | Dokument | Ja | Ja | Ja | Nein | . dwg;. DXF |
 | Image/WMF | Dokument | Ja | Ja | Ja | Nein | . WMF |

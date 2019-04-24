@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Nachdem Sie die Einrichtung von Office 365-Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Arten anpassen. Sie können beispielsweise konfigurieren, ob einmalige Code-Codes aktiviert werden sollen, die Schaltfläche schützen in Outlook im Web und vieles mehr angezeigt werden soll. In den Aufgaben in diesem Artikel wird beschrieben, wie.
 ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259813"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
@@ -109,7 +109,7 @@ Standardmäßig ist die Schaltfläche **schützen** in Outlook im Web nicht akti
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Aktivieren der dienstseitigen Entschlüsselung von e-Mail-Nachrichten für iOS-Mail-App-Benutzer
 
-Die iOS-Mail-App kann nicht mit der Office 365-Nachrichtenverschlüsselung geschützte Nachrichten entschlüsseln. Als Office 365-Administrator können Sie die dienstseitige Entschlüsselung für Nachrichten anwenden, die an die iOS-Mail-App übermittelt werden. Wenn Sie dies tun, sendet der Dienst eine entschlüsselte Kopie der Nachricht an das iOS-Gerät. Die Nachricht wird auf dem Clientgerät entschlüsselt gespeichert. Die Nachricht behält auch Informationen zu Nutzungsrechten, obwohl die iOS-Mail-App keine clientseitigen Nutzungsrechte für den Benutzer anwendet. Dies führt dazu, dass der Benutzer die Nachricht kopieren oder drucken kann, auch wenn Sie nicht ursprünglich über die Rechte dazu verfügt hat. Wenn der Benutzer jedoch versucht, eine Aktion abzuschließen, die den Office 365-e-Mail-Server erfordert, wie beispielsweise die Weiterleitung der Nachricht, lässt der Server die Aktion nicht zu, wenn der Benutzer ursprünglich nicht über das Nutzungsrecht für diesen Vorgang verfügt. Endbenutzer können jedoch keine Nutzungseinschränkung weiterleiten, indem Sie die Nachricht von einem anderen Konto in ihrer iOS-Mail-App weiterleiten. unabhängig davon, ob Sie die dienstseitige Entschlüsselung von e-Mails, Anhänge zu verschlüsselten und geschützten e-Mails kann nicht in der iOS-Mail-App angezeigt werden.
+Die iOS-Mail-App kann nicht mit der Office 365-Nachrichtenverschlüsselung geschützte Nachrichten entschlüsseln. Als Office 365-Administrator können Sie die dienstseitige Entschlüsselung für Nachrichten anwenden, die an die iOS-Mail-App übermittelt werden. Wenn Sie dies tun, sendet der Dienst eine entschlüsselte Kopie der Nachricht an das iOS-Gerät. Die Nachricht wird auf dem Clientgerät entschlüsselt gespeichert. Die Nachricht behält auch Informationen zu Nutzungsrechten, obwohl die iOS-Mail-App keine clientseitigen Nutzungsrechte für den Benutzer anwendet. Dies führt dazu, dass der Benutzer die Nachricht kopieren oder drucken kann, auch wenn Sie nicht ursprünglich über die Rechte dazu verfügt hat. Wenn der Benutzer jedoch versucht, eine Aktion abzuschließen, die den Office 365-e-Mail-Server erfordert, wie beispielsweise die Weiterleitung der Nachricht, lässt der Server die Aktion nicht zu, wenn der Benutzer ursprünglich nicht über das Nutzungsrecht für diesen Vorgang verfügt. Endbenutzer können jedoch keine Nutzungseinschränkung weiterleiten, indem Sie die Nachricht von einem anderen Konto in ihrer iOS-Mail-App weiterleiten. Unabhängig davon, ob Sie die dienstseitige Entschlüsselung von e-Mails einrichten, können Anhänge zu verschlüsselten und geschützten e-Mails nicht in der iOS-Mail-App angezeigt werden.
   
 Wenn Sie nicht zulassen, dass entschlüsselte Nachrichten an iOS-Mail-App-Benutzer gesendet werden, erhalten Benutzer eine Meldung, die besagt, dass Sie nicht über die Berechtigung zum Anzeigen der Nachricht verfügen. Die dienstseitige Entschlüsselung von e-Mail-Nachrichten ist standardmäßig nicht aktiviert.
   
