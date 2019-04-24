@@ -1,6 +1,6 @@
 ---
-title: Office 365 Sicherheit und Compliance
-description: 'Wenn Ihre Organisation Ihre Daten schützen oder mit gesetzlichen oder behördlichen Vorschriften einhalten muss, sind Sie an der richtigen Stelle. Hier erfahren Sie mehr über Sicherheit und Compliance in Office 365'
+title: Office 365-Sicherheit und -Compliance
+description: Wenn Ihre Organisation Ihre Daten schützen oder mit gesetzlichen oder behördlichen Vorschriften einhalten muss, sind Sie an der richtigen Stelle. Hier erfahren Sie mehr über Sicherheit und Compliance in Office 365
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -11,8 +11,14 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
+ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256503"
 ---
-# <a name="office-365-security-and-compliance"></a>Office 365 Sicherheit und Compliance
+# <a name="office-365-security-and-compliance"></a>Office 365-Sicherheit und -Compliance
 
 Wenn Ihre Organisation Ihre Daten schützen oder mit gesetzlichen oder behördlichen Vorschriften einhalten muss, sind Sie an der richtigen Stelle. Die folgenden Bereiche sind Ihre erste Anlaufstelle für Informationen zu Sicherheit und Compliance in Office 365.
 
