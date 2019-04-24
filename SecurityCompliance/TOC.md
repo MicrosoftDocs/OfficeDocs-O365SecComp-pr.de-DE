@@ -12,7 +12,13 @@
 ## [Übersicht über das Sicherheits-Dashboard](security-dashboard.md)
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planen von Sicherheit und Compliance in Office 365](plan-for-security-and-compliance.md)
-## [Chief Informationen Security Officer (CISO) – Workshop-Schulung ](ciso-workshop.md)
+## [Chief Informationen Security Officer (CISO) – Workshop-Schulung](ciso-workshop.md)
+### [Modul 1: Microsoft Internetsicherheit-Briefing](ciso-workshop-module-1.md)
+### [Modul 2: Sicherheitsverwaltung](ciso-workshop-module-2.md)
+### [Modul 3: Identitäts- und Zugriffsverwaltung](ciso-workshop-module-3.md)
+### [Modul 4a: Bedrohungsschutz Strategie, Teil I](ciso-workshop-module-4a.md)
+### [Modul 4 b: Bedrohungsschutz Strategie, Teil II](ciso-workshop-module-4b.md)
+### [Modul 5: Information Protection](ciso-workshop-module-5.md)
 
 # Zugriffsschutz für Daten und Dienste
 ## [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
@@ -248,7 +254,7 @@
 ### [Verwenden der Inhaltssuche zum Suchen von Drittanbieterdaten](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [Verwenden der Inhaltssuche im eDiscovery-Workflow](use-content-search-in-ediscovery.md)
 ### [Überprüfen Ihrer Inhaltssuche auf Fehler](check-your-content-search-query-for-errors.md)
-### [Beibehalten von Bcc-Empfängern für die Inhaltssuche](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [Beibehalten von Bcc-Empfängern für die Inhaltssuche](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## Informationen zur Inhaltssuche
 ### [Grenzwerte für die Inhaltssuche](limits-for-content-search.md)
 ### [Teilweise indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md)
@@ -280,6 +286,7 @@
 ### [Löschen von Elementen im Ordner „Wiederherstellbare Elemente“ für cloudbasierte aufzubewahrende Postfächer](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Erhöhen des Kontingents für wiederherstellbare Elemente für aufzubewahrende Postfächer](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [Advanced eDiscovery (Vorschau) in Microsoft 365](compliance20/overview-ediscovery-20.md)
 ### [Anmerkungen zu dieser Version](compliance20/release-notes-ediscovery20.md)
@@ -308,13 +315,14 @@
 #### [Suchstatistiken](compliance20/search-statistics.md)
 #### [Hinzufügen von Suchergebnissen zu einem Arbeitssatz](compliance20/add-data-to-working-set.md)
 
+### [Verwalten von Arbeitssätzen](compliance20/managing-working-sets.md)
+#### [Laden von Nicht-Office 365-Daten in einen Arbeitssatz](compliance20/load-non-office365-data.md)
+#### [Hinzufügen von Daten zu einem anderen Arbeitssatz ](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [Verwalten von Ladesätzen](compliance20/manage-load-sets.md)
+
 ### [Überprüfen von Falldaten](compliance20/reviewing-data-in-working-set.md)
 #### [Anzeigen von Dokumenten in einem Arbeitssatz](compliance20/view-documents-in-working-set.md)
 #### [Abfragen der Daten in einem Arbeitssatz](compliance20/working-set-search.md)
-#### [Verwalten von Arbeitssätzen](compliance20/managing-working-sets.md)
-#### [Hinzufügen von Daten zu einem anderen Arbeitssatz ](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [Verwalten von Ladesätzen](compliance20/manage-load-sets.md)
-#### [Laden von Nicht-Office 365-Daten in einen Arbeitssatz](compliance20/load-non-office365-data.md)
 #### [Markieren von Dokumenten in einem Arbeitssatz](compliance20/tagging-documents.md)
 
 ### [Analysieren von Falldaten](compliance20/analyzing-data-in-working-set.md)
@@ -573,7 +581,6 @@
 ### [Intelligente Nachrichtenübermittlung in Office 365](mail-flow-intelligence-in-office-365.md)
 ## Postfachaufbewahrung
 ### [Erstellen eines Beweissicherungsverfahrens](create-a-litigation-hold.md)
-### [Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen für eDiscovery](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [Einfügen eines In-Situ-Speichers für ein vorläufig gelöschtes Postfach](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [Quarantäne](quarantine.md)
 ### [Finden und Freigeben von Nachrichten in Quarantäne als Administrator](find-and-release-quarantined-messages-as-an-administrator.md)
