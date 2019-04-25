@@ -3,7 +3,7 @@ title: Suchen nach Inhalten in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/4/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche im Security & Compliance Center, um schnell e-Mails in Exchange-Postfächern, Dokumenten in SharePoint-Websites und OneDrive-Standorten sowie Sofortnachrichtenunterhaltungen in Skype for Business zu finden.
-ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
+ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261353"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33248300"
 ---
 # <a name="search-for-content-in-office-365"></a>Suchen nach Inhalten in Office 365
 
@@ -42,7 +42,10 @@ Der erste Schritt besteht darin, mit dem Inhaltssuche-Tool zu beginnen, inhaltss
     
 - [Massenbearbeitung](bulk-edit-content-searches.md) der Abfrage-und inhaltsspeicherorte für mehrere Suchvorgänge 
     
+- Wieder [holen einer Inhaltssuche](retry-failed-content-search.md) zum Beheben eines Inhaltsspeicherort Fehlers
+
 - [Bcc-Empfänger beibehalten](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) , damit Sie nach diesen suchen können 
+
 
 ## <a name="perform-actions-on-content-you-find"></a>Ausführen von Aktionen für Inhalte, die Sie finden
 
