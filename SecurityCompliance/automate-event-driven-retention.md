@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Thema wird erläutert, wie Sie Geschäftsprozessabläufe über Ereignisse mithilfe der Microsoft 365-REST-API einrichten können, um die Aufbewahrung zu automatisieren.
-ms.openlocfilehash: 55bfdccea07b6aaa9227974b43b1b20adcf97ff5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 99ece368cbda5318556d1f3863fa07ee11a1d003
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251071"
 ---
 # <a name="automate-event-based-retention"></a>Automatisieren der ereignisbasierten Aufbewahrung
 
@@ -52,14 +52,14 @@ Identifizieren Sie die verschiedenen Rollen in einem Unternehmen, die Aufgaben f
 
   | **Persona**| **Rolle**|
   | - | - |
-  | Administrators des Security & Compliance Center | Erstellt Ereignistypen für die Aufbewahrung, Aufbewahrungsbezeichnungen und Repositorys für die Aufbewahrung in SharePoint. |
+  | Admin | Erstellt Ereignistypen für die Aufbewahrung, Aufbewahrungsbezeichnungen und Repositorys für die Aufbewahrung in SharePoint. |
   | Datensatzverwalter                                  | Stellt Details zur Einhaltung von Aufbewahrungsrichtlinien und Aufbewahrungszeitplänen bereit.   |
   | Systemadministrator (Unternehmen)                          | Richtet externe Systeme für die Verwendung mit Microsoft 365 ein, und verwaltet diese.                       |
   | Information-Worker                               | Verwaltet den Lebenszyklus der Geschäftsabläufe (HR, Finanzen, IT usw.).                 |
 
 ### <a name="set-up-the-security--compliance-center"></a>Einrichten des Security & Compliance Center
   
-1. Der Compliance-Administrator erstellt einen Ereignistyp, zum Beispiel Ende der Beschäftigung, Vertragsablauf oder Ende der Produktherstellung (eine schrittweise Anleitung finden Sie im [Artikel zur ereignisgesteuerten Aufbewahrung](https://docs.microsoft.com/de-DE/office365/securitycompliance/event-driven-retention)).
+1. Der Compliance-Administrator erstellt einen Ereignistyp, zum Beispiel Ende der Beschäftigung, Vertragsablauf oder Ende der Produktherstellung (eine schrittweise Anleitung finden Sie unter [Ereignisgesteuerte Aufbewahrung](https://docs.microsoft.com/de-DE/office365/securitycompliance/event-driven-retention)).
     
 1. Der Compliance-Administrator erstellt eine Aufbewahrungsbezeichnung auf der Grundlage eines Ereignisses und weist die Bezeichnung einem Ereignistyp zu.
     
@@ -73,7 +73,7 @@ Identifizieren Sie die verschiedenen Rollen in einem Unternehmen, die Aufgaben f
                 
     1. Ereignis-basiert
     
-1. Der Compliance-Administrator veröffentlicht die Bezeichnung.
+1. Der Compliance-Administrator veröffentlicht die Aufbewahrungsbezeichnung.
 
 ### <a name="set-up-sharepoint"></a>Einrichten von SharePoint
    
@@ -93,7 +93,7 @@ Der Compliance-Administrator geht wie folgt vor, um ein Repository für Datensä
 
 Es gibt zwei Möglichkeiten zum Auslösen der ereignisbasierten Aufbewahrung:
 
-- **Über die Benutzeroberfläche des Security & Compliance Center** Dies ist ein Prozess, der verwendet werden kann, um weniger Inhalte aufzubewahren oder wenn die Aufbewahrung nicht so häufig ausgelöst wird, zum Beispiel monatlich oder jährlich ist. Weitere Informationen zu dieser Methode finden Sie unter [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md). Diese Art der Aufbewahrungsauslösung kann zeitaufwändig und fehleranfällig sein und die Skalierbarkeit beeinträchtigen. Aus diesem Grund kann eine automatisierte, nahtlose Lösung für die Auslösung der Aufbewahrung die Sicherheit und Compliance von Daten verbessern.
+- **Über die Benutzeroberfläche des Admin Center** Dies ist ein Prozess, der verwendet werden kann, um weniger Inhalte aufzubewahren oder wenn die Aufbewahrung nicht so häufig ausgelöst wird, zum Beispiel monatlich oder jährlich ist. Weitere Informationen zu dieser Methode finden Sie unter [Übersicht über die ereignisgesteuerte Aufbewahrung](event-driven-retention.md). Diese Art der Aufbewahrungsauslösung kann zeitaufwändig und fehleranfällig sein und die Skalierbarkeit beeinträchtigen. Aus diesem Grund kann eine automatisierte, nahtlose Lösung für die Auslösung der Aufbewahrung die Sicherheit und Compliance von Daten verbessern.
 
 - **Mithilfe einer Microsoft 365-REST-API**Dieser Prozess kann verwendet werden, wenn sehr viele Inhalte aufbewahrt werden und/oder die Aufbewahrung häufig ausgelöst wird, zum Beispiel täglich oder wöchentlich. Der Ablauf erkennt, wenn ein Ereignis in Ihrem Branchensystem eintritt, und erstellt automatisch ein zugehöriges Ereignis im Security & Compliance Center. Sie müssen keine Ereignisse in der Benutzeroberfläche manuell erstellen, wenn diese eintreten.
 
@@ -135,11 +135,11 @@ Ein automatisierter Prozess zum Auslösen dieser unterschiedlicher Aufbewahrungs
 
   - Der SCC-Administrator
 
-  - meldet sich beim Security & Compliance Center an.
+  - Meldet sich beim Security & Compliance Center an.
 
-  - SCC-Administrator erstellt mitarbeiterbezogene Ereignistypen wie „Beschäftigungsende“, „Einstellung des Mitarbeiters“ im Security & Compliance Center.
+  - SCC-Administrator erstellt mitarbeiterbezogene Ereignistypen wie „Beschäftigungsende“, „Einstellung des Mitarbeiters“.
 
-  - Der SCC-Administrator erstellt die Bezeichnung „Mitarbeiteraufbewahrung“ im Security & Compliance Center.
+  - SCC-Administrator erstellt Bezeichnung „Mitarbeiterbindung“.
 
   - Diese Bezeichnung wird veröffentlicht und manuell oder automatisch auf die Dateien des Mitarbeiters in SharePoint angewendet.
 
@@ -433,9 +433,9 @@ Ein CRM-System kann mit Microsoft 365 verwendet werden und die Aufbewahrung für
 
   - Der SCC-Administrator meldet sich beim Security & Compliance Center an.
 
-  - Der SCC-Administrator erstellt im Security & Compliance Center vertragsbezogene Ereignisse wie „Erstellung des Vertrags“, „Ablauf des Vertrags“.
+  - Der SCC-Administrator erstellt vertragsbezogene Ereignisse wie „Erstellung des Vertrags“, „Ablauf des Vertrags“.
 
-  - Der SCC-Administrator erstellt die Bezeichnung „Ablauf des Vertrags“ im Security & Compliance Center.
+  - Der SCC-Administrator erstellt die Bezeichnung „Vertragsende“.
 
   - Diese Bezeichnung wird veröffentlicht und manuell oder automatisch auf die Vertragsdateien in SharePoint angewendet.
 
@@ -461,9 +461,9 @@ Ein ERP-System kann mit Microsoft 365 und Microsoft Flow verwendet werden, um di
 
   - Der SCC-Administrator meldet sich beim Security & Compliance Center an.
 
-  - Der SCC-Administrator erstellt im Security & Compliance Center produktbezogene Ereignistypen, zum Beispiel „Beginn der Produktherstellung“, "Ende der Produktherstellung“.
+  - Der SCC-Administrator erstellt produktbezogene Ereignistypen, zum Beispiel „Beginn der Produktherstellung“, „Ende der Produktherstellung“.
 
-  - Der SCC-Administrator erstellt die Bezeichnung „Ende der Produktherstellung“ im Security & Compliance Center.
+  - Der SCC-Administrator erstellt die Bezeichnung „Ende der Produktherstellung“.
 
   - Diese Bezeichnung wird veröffentlicht und manuell oder automatisch auf die Produktdateien in SharePoint angewendet.
 

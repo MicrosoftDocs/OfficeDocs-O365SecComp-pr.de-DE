@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244161"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
 
@@ -34,7 +34,7 @@ Wenn Sie Bezeichnungen zum Schutz persönlicher Daten in Office 365 verwenden, e
 
 Cloud App Security unterstützt derzeit keine Aufbewahrungsbezeichnungen, aber Sie können Office 365-Typen für vertrauliche Informationen mit Cloud App Security verwenden, um personenbezogene Daten zu überwachen, die in anderen SaaS-Apps gespeichert sind.
 
-[Vertraulichkeitsbezeichnungen](sensitivity-labels.md) werden derzeit empfohlen, um Bezeichnungen auf lokale Dateien und Dateien in anderen Cloud-Diensten und bei anderen Anbietern anzuwenden. Sie werden ebenfalls empfohlen für Dateien in Office 365, die für den Datenschutz eine Azure Informationen Protection (AIP)-Verschlüsselung benötigen, wie z. B. Dateien mit Betriebsgeheimnissen.
+[Vertraulichkeitsbezeichnungen](sensitivity-labels.md) werden derzeit empfohlen, um Bezeichnungen auf lokale Dateien und Dateien in anderen Cloud-Diensten und bei anderen Anbietern anzuwenden. Sie werden ebenfalls empfohlen für Dateien in Office 365, die für den Datenschutz eine Azure Informationen Protection-Verschlüsselung benötigen, wie z. B. Dateien mit Betriebsgeheimnissen.
 
 Zu diesem Zeitpunkt wird die Verwendung der Azure Information Protection-Verschlüsselung nicht für Dateien in Office 365 empfohlen, die der DSGVO unterliegen. Office 365-Dienste können derzeit keine AIP-verschlüsselten Dateien lesen. Aus diesem Grund findet der Dienst keine vertraulichen Daten in diesen Dateien.
 

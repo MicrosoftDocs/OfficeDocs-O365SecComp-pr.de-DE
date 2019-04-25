@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Zusammenfassung: Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260948"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung
 
@@ -208,9 +208,7 @@ In dieser Phase erstellen Sie die Aufbewahrungsbezeichnungen für die verschiede
     
 7. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Beschriftung erstellen**.
     
-8. Für die zusätzlichen Beschriftungen klicken Sie auf **Beschriftung erstellen**, und wiederholen Sie dann die Schritte 3 bis 7.
-
-9. Wiederholen Sie die Schritte 3 bis 8 für die zusätzlichen Bezeichnungen mit diesen Namen:
+8. Wiederholen Sie die Schritte 3 bis 7 für die zusätzlichen Bezeichnungen mit diesen Namen:
     
   - Private
     
@@ -218,21 +216,21 @@ In dieser Phase erstellen Sie die Aufbewahrungsbezeichnungen für die verschiede
     
   - Streng vertraulich
   
-10. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
+9. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
     
-11. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
+10. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
     
-12. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
+11. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
     
-13. Klicken Sie auf **Fertig**.
+12. Klicken Sie auf **Fertig**.
     
-14. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
+13. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
     
-15. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
+14. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
     
-16. Geben Sie im Bereich **Richtlinie benennen** **Beispielorganisation** unter **Name** ein, und klicken Sie dann auf **Weiter**.
+15. Geben Sie im Bereich **Richtlinie benennen** **Beispielorganisation** unter **Name** ein, und klicken Sie dann auf **Weiter**.
     
-17. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
+16. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Phase 4: Erstellen von SharePoint Online-Teamwebsites
 
