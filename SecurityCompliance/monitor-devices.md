@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
+ms.sourcegitcommit: 468a7c72df3206333d7d633dd7ce1f210dc1ef3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263552"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33302739"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>Überwachen von Geräten in Microsoft 365 Security
 
@@ -25,7 +25,7 @@ Halten Sie Ihre Geräte sicher, auf dem neuesten Stand und stellen Sie potenziel
 
 ## <a name="view-device-alerts"></a>Anzeigen von Geräte Warnungen
 
-Informieren Sie sich über aktuelle Warnungen zu Verstößen und anderen Bedrohungen auf Ihren Geräten von Windows Defender ATP (verfügbar mit einer E5-Lizenz). Microsoft 365 Security Center verfügt über mehrere Karten, mit denen Sie diese Warnungen in Abhängigkeit von Ihrem bevorzugten Workflow effektiv überwachen können.
+Informieren Sie sich über aktuelle Warnungen zu Verstößen und anderen Bedrohungen auf Ihren Geräten von Windows Defender ATP (verfügbar mit einer E5-Lizenz). Microsoft 365 Security Center überwacht diese Warnungen effektiv über Ihren bevorzugten Workflow auf hoher Ebene.
 
 ### <a name="monitor-high-impact-alerts"></a>Überwachen von Warnungen mit hoher Auswirkung
 
@@ -183,19 +183,44 @@ Microsoft InTune bietet Verwaltungsfunktionen für Ihre ASR-Regeln. Wenn Sie Ihr
 
 ### <a name="exclude-files-from-asr-rules"></a>Ausschließen von Dateien aus ASR-Regeln
 
-Durch das Ausschließen von Dateien von Entdeckungen können Sie unerwünschte falsch positive Entdeckungen verhindern und die Regeln zur Angriffsflächen Reduzierung im Blockmodus sicherer bereitstellen.
+Microsoft 365 Security Center sammelt die Namen der [Dateien, die Sie möglicherweise](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive) nach Angriffs Oberflächen Reduzierungs Regeln ausschließen möchten. Durch das Ausschließen von Dateien können Sie falsch positive Erkennungsergebnisse verringern und die Regeln zur Angriffsflächen Reduzierung im Blockmodus sicherer bereitstellen.
 
-Während Datei Ausschlüsse für Angriffsflächen Reduzierungs Regeln auf Microsoft InTune verwaltet werden, stellt das Microsoft 365 Security Center ein Analyse Tool bereit, mit dem Sie die Dateien verstehen können, die Entdeckungen auslösen. Außerdem werden die Namen der Dateien, die Sie möglicherweise ausschließen möchten, erfasst.
+Die Ausschlüsse werden auf Microsoft InTune verwaltet, aber Microsoft 365 Security Center stellt ein Analyse Tool bereit, mit dem Sie die Dateien besser verstehen können. Um Dateien für den Ausschluss zu sammeln, wechseln Sie zur Registerkarte **Ausschlüsse hinzufügen** auf der Seite Bericht zur Angriffs **Flächen Reduzierung** .
 
-Wechseln Sie zur Registerkarte **Ausschlüsse hinzufügen** auf der Seite Bericht zur Angriffs **Flächen Reduzierung** , um die Analyse von Entdeckungen und das Sammeln von Dateien zu starten.
+>[!NOTE]  
+>Das Tool analysiert Entdeckungen nach allen Regeln zur Angriffs Oberflächen Einschränkung, aber [nur einige Regeln unterstützen Ausschlüsse](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules).
 
 ![Registerkarte "Ausschlüsse hinzufügen"](./media/security-docs/add-exclusions-tab.png)
 
-In der Tabelle sind alle Dateinamen aufgeführt, die von den Regeln zur Angriffs Oberflächenreduzierung erkannt wurden. Nachdem Sie eine oder mehrere Dateien ausgewählt haben, können Sie die Auswirkungen des Hinzufügens dieser Dateien zu ihren Ausnahmen überarbeiten:
+In der Tabelle sind alle Dateinamen aufgeführt, die von den Regeln zur Angriffs Oberflächenreduzierung erkannt wurden. Sie können Dateien auswählen, um die Auswirkungen der Ausklammerung zu über sehen:
 
-* Die Verringerung der Gesamtanzahl von Entdeckungen
-* Die Verringerung der Gesamtzahl der von den Entdeckungen betroffenen Geräte
+* Wie viele wenige Entdeckungen
+* Wie viele weniger Geräte die Entdeckungen melden
 
 Wenn Sie eine Liste der ausgewählten Dateien mit den vollständigen Pfaden für den Ausschluss abrufen möchten, wählen Sie **Ausschluss Pfade abrufen**aus.
 
-Weitere Informationen zu Ausschlüssen und ausführlichen Anweisungen zum Hinzufügen finden Sie unter [Problembehandlung bei Angriffs Oberflächenreduzierung](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr).
+Protokolle für die ASR-Regel **Block Anmeldeinformationen, die vom Windows Local Security Authority Subsystem (Lsass. exe) gestohlen** werden, erfassen die Quell-app " **LSASS. exe**", eine normale System Datei, als erkannte Datei. Daher enthält die generierte Liste der Ausschluss Pfade diese Datei. Um die Datei auszuschließen, die diese Regel anstelle von " **LSASS. exe**" ausgelöst hat, verwenden Sie den Pfad zur Quell-APP anstelle der erkannten Datei.
+
+Um die Quell-APP zu finden, führen Sie die folgende [erweiterte Suchabfrage](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) für diese bestimmte Regel aus (identifiziert durch Regel-ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2): 
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
+| project InitiatingProcessFolderPath, InitiatingProcessFileName
+```
+
+#### <a name="check-files-for-exclusion"></a>Dateien auf Ausschluss überprüfen
+Bevor Sie eine Datei aus der automatischen sprachERKENNUNG ausschließen, sollten Sie die Datei überprüfen, um zu ermitteln, ob Sie tatsächlich nicht bösartig ist.
+
+Verwenden Sie die [Seite Dateiinformationen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection) im Windows Defender-Sicherheits Center, um eine Datei zu überarbeiten. Die Seite enthält Informationen zur Prävalenz sowie das virusTotal Antivirus-Erkennungs Verhältnis. Sie können die Seite auch zum übermitteln der Datei zur tiefen Analyse verwenden.
+
+Um eine erkannte Datei im Windows Defender-Sicherheits Center zu suchen, suchen Sie mithilfe der folgenden Advanced Hunting-Abfrage nach allen ASR-Erkennungen:
+
+```MiscEvents
+| where EventTime > ago(7d)
+| where ActionType startswith "Asr"
+| project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
+```
+
+Verwenden Sie den **SHA1** -oder **InitiatingProcessSHA1** in den Ergebnissen, um die Datei mithilfe der universellen Suchleiste im Windows Defender-Sicherheits Center zu suchen.
