@@ -13,17 +13,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In Office 365 können Sie mit Bezeichnungen einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Bezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: In Office 365 können Sie mit Aufbewahrungsbezeichnungen einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256393"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
-Wenn Sie Inhalte aufbewahren, basiert der Aufbewahrungszeitraum häufig auf dem Alter des Inhalts. Sie bewahren Dokumente beispielsweise für sieben Jahre nach der Erstellung auf, und anschließend werden sie gelöscht. Mit Bezeichnungen in Office 365 können Sie jedoch auch einen Aufbewahrungszeitraum festlegen, der auf das Auftreten eines bestimmten Ereignistyps basiert. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Bezeichnung für diesen Ereignistyp zugewiesen wurde, werden die Aufbewahrungsaktionen angewendet.
+Wenn Sie Inhalte aufbewahren, basiert der Aufbewahrungszeitraum häufig auf dem Alter des Inhalts. Sie bewahren Dokumente beispielsweise für sieben Jahre nach der Erstellung auf, und anschließend werden sie gelöscht. Mit Aufbewahrungsbezeichnungen in Office 365 können Sie jedoch auch einen Aufbewahrungszeitraum festlegen, der auf dem Auftreten eines bestimmten Ereignistyps basiert. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diesen Ereignistyp zugewiesen wurde, werden die Aufbewahrungsaktionen angewendet.
   
 Sie können Bezeichnungen mit ereignisgesteuerter Aufbewahrung zum Beispiel in den folgenden Szenarien verwenden:
   
@@ -77,7 +77,7 @@ Nachfolgend ist der allgemeine Arbeitsablauf für eine ereignisgesteuerte Aufbew
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Schritt 1: Eine Bezeichnung erstellen, deren Aufbewahrungszeitraum auf einem Ereignis basiert
 
-Wählen Sie im Security &amp; Compliance Center im linken Navigationsbereich unter **Klassifizierungen** die Option **Bezeichnungen** \> **Bezeichnung erstellen**.
+Wählen Sie im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security &amp; Compliance Center in der linken Navigation **Klassifikationen** > **Bezeichnungen** > **Aufbewahrungsbezeichnungen** (Registerkarte) > **Bezeichnung erstellen**.
   
 Wenn Sie die Bezeichnung erstellen, aktivieren Sie die Aufbewahrung und wählen Sie die unten aufgeführte Option zum Beibehalten oder Löschen von Inhalt basierend auf einem Ereignis. Dies bedeutet, dass die Aufbewahrungseinstellungen erst in Schritt 5 wirksam werden, wenn Sie auf der Seite **Ereignisse** ein Ereignis erstellen. 
   
@@ -103,7 +103,7 @@ Beachten Sie, dass der Ereignistyp nicht mehr geändert werden kann, sobald Sie 
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Schritt 3: Bezeichnung veröffentlichen oder automatisch anwenden
 
-Genau wie jede andere Bezeichnung müssen Sie auch eine ereignisbasierte Bezeichnung veröffentlichen oder automatisch anwenden, damit sie manuell oder automatisch auf Inhalte angewendet werden kann. Dies nehmen Sie auf der Seite **Bezeichnungen** vor. Beachten Sie, dass Bezeichnungen, die Inhalte als Datensatz klassifizieren, nur veröffentlicht und manuell auf Inhalte angewendet werden können. Sie können nicht automatisch auf Inhalte angewendet werden. 
+Genau wie jede andere Bezeichnung müssen Sie auch eine ereignisbasierte Bezeichnung veröffentlichen oder automatisch anwenden, damit sie manuell oder automatisch auf Inhalte angewendet werden kann. Dies tun Sie auf der Seite **Bezeichnungen** oder **Bezeichnungsrichtlinien**. Beachten Sie, dass Bezeichnungen, die Inhalte als Datensatz klassifizieren, nur veröffentlicht und manuell auf Inhalte angewendet werden können. 
   
 ![Optionen zum Veröffentlichen oder automatisch Anwenden einer Bezeichnung](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ Zum Schluss wählen Sie das Datum aus, an dem das Ereignis aufgetreten ist. Dies
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Verwenden der Inhaltssuche zum Suchen des gesamten Inhalts, dem eine bestimmte Bezeichnung oder Asset-ID zugewiesen ist
 
-Nachdem Bezeichnungen Inhalten zugewiesen wurden, können Sie die Inhaltssuche im Security &amp; Compliance Center verwenden, um alle Inhalte zu suchen, die durch eine bestimmte Bezeichnung klassifiziert wurden oder eine bestimmte Asset-ID enthalten.
+Nachdem Bezeichnungen Inhalten zugewiesen wurden, können Sie die Inhaltssuche verwenden, um alle Inhalte zu suchen, die durch eine bestimmte Bezeichnung klassifiziert wurden oder eine bestimmte Asset-ID enthalten.
   
 Beachten Sie beim Erstellen einer Inhaltssuche Folgendes:
   
@@ -167,11 +167,9 @@ Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das O
   
 ## <a name="automate-events-by-using-powershell"></a>Automatisieren von Ereignissen mit PowerShell
 
-Im Office 365 Security &amp; Compliance Center können Sie Ereignisse nur manuell erstellen. Es ist nicht möglich, ein Ereignis bei seinem Auftreten automatisch auszulösen. Sie können jedoch ein PowerShell-Skript verwenden, um die ereignisbasierte Aufbewahrung über Ihre Geschäftsanwendungen zu automatisieren.
-  
-Wir arbeiten derzeit an APIs, damit Sie Ihre Geschäftsanwendungen (z. B. die der Personalabteilung, CRM oder Finanzanwendungen) mit der ereignisgesteuerten Aufbewahrung verknüpfen können. Sie werden beispielsweise in der Lage sein, Ihr HR-System mit der ereignisgesteuerten Aufbewahrung zu verbinden, damit automatisch ein entsprechendes Ereignis ausgelöst wird, wenn ein Mitarbeiter das Unternehmen verlässt.
-  
-Bis dahin können Sie die nachfolgend aufgeführten PowerShell-Cmdlets für die ereignisgesteuerte Aufbewahrung nutzen:
+Im Admin Center können Sie Ereignisse nur manuell erstellen. Es ist nicht möglich, ein Ereignis bei seinem Auftreten automatisch auszulösen. Sie können jedoch eine Rest-API verwenden, um automatisch Ereignisse auszulösen; weitere Informationen finden Sie unter [Automatisieren ereignisbasierter Aufbewahrung](automate-event-driven-retention.md).
+
+Sie können auch ereignisbasierte Aufbewahrung aus Ihren Geschäftsanwendungen heraus mithilfe eines PowerShell-Skripts automatisieren. Dies sind die PowerShell-Cmdlets für die ereignisgesteuerte Aufbewahrung:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
