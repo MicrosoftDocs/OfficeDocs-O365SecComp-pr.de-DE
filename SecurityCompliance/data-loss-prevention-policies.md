@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mit einer DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhinderung) im Office 365 Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262157"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362053"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Übersicht über Richtlinien zur Verhinderung von Datenverlust
 
@@ -70,7 +70,7 @@ Sie haben beispielsweise eine DLP-Richtlinie, die Ihnen hilft, das vorhanden sei
   
 ![Diagramm zeigt DLP-Richtlinie enthält Standorte und Regeln](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>Standorte
+### <a name="locations"></a>Speicherorte
 
 Eine DLP-Richtlinie kann vertrauliche Informationen in Office 365 finden und schützen, unabhängig davon, ob sich diese Informationen in Exchange Online, SharePoint Online, OneDrive for Business oder Microsoft Teams befinden. Sie können Inhalte in Exchange-e-Mails, Microsoft Teams-Chats und-Kanälen sowie alle SharePoint-oder OneDrive-Bibliotheken schützen oder bestimmte Speicherorte für eine Richtlinie auswählen.
   
@@ -478,11 +478,7 @@ Die DLP-Richtlinienevaluierung in Office hat keine Auswirkungen auf die Leistung
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Richtlinienauswertung in Microsoft Teams
  
-Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Standort enthält, wird die Richtlinie vom Office 365 Security &amp; Compliance Center auf Benutzerkonten und Microsoft Teams-Kanäle und-Chats synchronisiert. Je nachdem, wie DLP-Richtlinien konfiguriert werden, kann die Nachricht blockiert oder gesperrt werden, wenn jemand versucht, vertrauliche Informationen in einem Microsoft Teams-Chat oder-Kanal freizugeben. Und Dokumente mit vertraulichen Informationen, die für Gäste (externe Benutzer) freigegeben werden, werden für diese Benutzer nicht geöffnet.
-
-Nehmen wir beispielsweise an, dass jemand versucht, vertrauliche Informationen in einem Teams-Chat oder-Kanal mit externen Benutzern zu teilen. Angenommen, es ist eine DLP-Richtlinie definiert, um dies zu verhindern. Mit geschütztem Schutz werden Nachrichten mit vertraulichen Informationen, die an externe Benutzer gesendet werden, gelöscht. Dies geschieht innerhalb von Sekunden, und es geschieht automatisch, je nachdem, wie die DLP-Richtlinie konfiguriert ist.
-
-Richtlinien Tipps Benachrichtigen Absender darüber, warum Ihre Nachrichten blockiert oder gesperrt wurden. Beispielsweise kann einem Absender mitgeteilt werden, dass seine Nachricht personenbezogene Informationen enthält, die nicht für andere Personen freigegeben werden dürfen, oder dass ein Dokument, das PII enthält, nicht für Benutzer außerhalb Ihrer Organisation freigegeben werden kann. Der Absender kann dann seine Nachricht so bearbeiten, dass Sie mit DLP-Richtlinien kompatibel ist.
+Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Standort enthält, wird die Richtlinie vom Office 365 Security &amp; Compliance Center auf Benutzerkonten und Microsoft Teams-Kanäle und-Chats synchronisiert. Je nachdem, wie DLP-Richtlinien konfiguriert werden, kann die Nachricht blockiert oder gesperrt werden, wenn jemand versucht, vertrauliche Informationen in einem Microsoft Teams-Chat oder-Kanal freizugeben. Und Dokumente mit vertraulichen Informationen, die für Gäste (externe Benutzer) freigegeben werden, werden für diese Benutzer nicht geöffnet. Weitere Informationen finden Sie unter [Data Loss Prevention und Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Berechtigungen
 

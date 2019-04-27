@@ -3,7 +3,7 @@ title: Funktionsweise von DLP zwischen dem Security & Compliance Center und Exch
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Erfahren Sie, wie DLP im Security & Compliance Center mit DLP-und Nachrichtenfluss Regeln (Transportregeln) in der Exchange-Verwaltungskonsole arbeitet.
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254928"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362033"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center
 
 In Office 365 können Sie eine DLP-Richtlinie (Data Loss Prevention, Datenverlust-Verhinderung) in zwei verschiedenen Verwaltungs Centern erstellen:
   
-- Im **Security _AMP_ Compliance Center**können Sie eine einzelne DLP-Richtlinie zum Schutz von Inhalten in SharePoint, OneDrive und Exchange erstellen. Wenn möglich, empfehlen wir, dass Sie hier eine DLP-Richtlinie erstellen. Weitere Informationen finden Sie unter [DLP im Security _AMP_ Compliance Center](data-loss-prevention-policies.md).
+- Im **Security _AMP_ Compliance Center**können Sie eine einzelne DLP-Richtlinie zum Schutz von Inhalten in SharePoint, OneDrive, Exchange und jetzt Microsoft Teams erstellen. Wenn möglich, empfehlen wir, dass Sie hier eine DLP-Richtlinie erstellen. Weitere Informationen finden Sie unter [DLP im Security _AMP_ Compliance Center](data-loss-prevention-policies.md).
     
 - In der **Exchange-Verwaltungskonsole**können Sie eine DLP-Richtlinie zum Schutz von Inhalten nur in Exchange erstellen. Diese Richtlinie kann Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) verwenden, sodass Sie mehr Optionen für die e-Mail-Verarbeitung hat. Weitere Informationen finden Sie unter [DLP im Exchange Admin Center](https://go.microsoft.com/fwlink/?linkid=852311).
     
