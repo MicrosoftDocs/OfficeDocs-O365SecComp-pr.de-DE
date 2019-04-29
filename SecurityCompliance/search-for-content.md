@@ -12,11 +12,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Verwenden Sie das eDiscovery-Tool für die Inhaltssuche im Security & Compliance Center, um schnell e-Mails in Exchange-Postfächern, Dokumenten in SharePoint-Websites und OneDrive-Standorten sowie Sofortnachrichtenunterhaltungen in Skype for Business zu finden.
 ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
-ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33248300"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403013"
 ---
 # <a name="search-for-content-in-office-365"></a>Suchen nach Inhalten in Office 365
 

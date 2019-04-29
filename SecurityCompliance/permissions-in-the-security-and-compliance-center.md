@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Administratoren können sich über die im Office 365 Security & Compliance Center verfügbaren Berechtigungen informieren.
 ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: 81e86658c9c890a2fd0c36f73f1c94941cc74775
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32439339"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402973"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Berechtigungen im Office 365 Security & Compliance Center
 

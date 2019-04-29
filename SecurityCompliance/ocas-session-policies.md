@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 Cloud App Security-Sitzungs Richtlinien ermöglichen die Überwachung auf Sitzungsebene in Echtzeit und bieten eine detaillierte Sichtbarkeit auf Office 365-apps und die Möglichkeit, verschiedene Aktionen abhängig von der für eine Benutzersitzung festgelegten Richtlinie durchführen zu können. Anstatt den Zugriff vollständig zuzulassen oder zu blockieren, können Sie mit der Sitzungssteuerung Zugriff gewähren, während Sie die Sitzung überwachen und/oder bestimmte Sitzungsaktivitäten mithilfe der Reverse-Proxy-Funktionen der APP-Steuerung für den bedingten Zugriff einschränken.
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263027"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403033"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Sitzungsrichtlinien in Office 365 Cloud App Security
 
@@ -117,7 +117,7 @@ App-Steuerelement für die bedingte Zugriffssteuerung zeichnet die Datenverkehrs
 
 1. Wechseln Sie zum COG Einstellungen, und klicken Sie auf **App-Steuerelement für bedingte Zugriffsrechte**.
 
-2. Klicken Sie auf der rechten Seite der Tabelle auf die Schaltfläche Exportieren.<br>![Schaltfläche "Exportieren"](media/image3.png)<br>
+2. Klicken Sie auf der rechten Seite der Tabelle auf die Schaltfläche Exportieren.<br>![Schaltfläche "Exportieren"](media/OCASimage3.png)<br>
 
 3. Wählen Sie den Bereich des Berichts aus, und klicken Sie auf **exportieren**. Dieser Vorgang kann einige Zeit in Anspruch nehmen.
 
@@ -125,7 +125,7 @@ App-Steuerelement für die bedingte Zugriffssteuerung zeichnet die Datenverkehrs
 
 1. Nachdem der Bericht fertig ist, wechseln Sie zu **Einstellungen** , und exportieren Sie dann **Berichte**.
 
-2. Wählen Sie in der Tabelle den relevanten Bericht aus der Liste der **Datenverkehrs Protokolle** für die bedingte Zugriffssteuerung aus, und klicken Sie auf herunterladen.<br>![Schaltfläche "herunterladen"](media/image4.png)<br>
+2. Wählen Sie in der Tabelle den relevanten Bericht aus der Liste der **Datenverkehrs Protokolle** für die bedingte Zugriffssteuerung aus, und klicken Sie auf herunterladen.<br>![Schaltfläche "herunterladen"](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>Alle Downloads blockieren
 

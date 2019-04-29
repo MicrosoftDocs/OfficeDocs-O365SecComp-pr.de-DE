@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Führen Sie die folgenden Schritte aus, um Azure AD Office 365-apps so zu konfigurieren, dass Sie von der Office 365 Cloud App Security Conditional Access-App-Steuerung gesteuert werden.
-ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 74cc415220282491694bf417a6761fd43a6d3521
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263107"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402943"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Bereitstellen der App-Steuerung für bedingten Zugriff für Office 365-Apps
 
@@ -50,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um Azure AD Office 365-apps so zu konfig
 
 6. Fügen Sie alle **** anwendbaren Bedingungs Zuweisungen oder **Grant-Steuerelemente** hinzu (optional).
 
-> ![Bedingter Zugriff durch Azure AD](media/image1.png)
+> ![Bedingter Zugriff durch Azure AD](media/OCASimage1.png)
 
 ## <a name="step-2-sign-in-with-a-user-scoped-to-the-policy-in-the-apps"></a>Schritt 2: Melden Sie sich mit einem Benutzer an, der auf die Richtlinie in den apps beschränkt ist. 
 
@@ -72,7 +72,7 @@ erstellen sie eine [zugriffsrichtlinie](ocas-access-policies.md) oder eine [s
 
 3. Nachdem das Zertifikat hochgeladen wurde, können Sie Zugriffsrichtlinien und Sitzungs Richtlinien basierend auf **Device-Tag** und **gültigem Clientzertifikat**erstellen.
 
-![App-Steuerelement-ID für bedingten Zugriff](media/image2.png)
+![App-Steuerelement-ID für bedingten Zugriff](media/OCASimage2.png)
 
 > [!NOTE]
 > Ein Zertifikat wird nur von einem Benutzer angefordert, wenn die Sitzung einer Richtlinie entspricht, die den gültigen Clientzertifikat Filter verwendet.

@@ -8,7 +8,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Verwenden Sie das Security & Compliance Center in Office 365, um Archivpostfächer zu aktivieren, um die Nachrichten Aufbewahrungs-, eDiscovery-und halte Anforderungen Ihrer Organisation zu unterstützen.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958306"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402923"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von archivpostfächern im Security & Compliance Center
   
@@ -127,9 +127,11 @@ Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer i
 
 ## <a name="more-information"></a>Weitere Informationen
   
+- Wenn ein Archivpostfach aktiviert ist, können Benutzer Nachrichten in Ihrem Archivpostfach speichern. Benutzer können mithilfe von Microsoft Outlook und Outlook im Web auf Ihre Archivpostfächer zugreifen. Durch Verwendung einer dieser Clientanwendungen können die Benutzer Nachrichten in ihrem Archivpostfach anzeigen und zwischen ihrem primären Postfach und dem Archivpostfach kopieren oder verschieben. Mit der Wiederherstellung gelöschter Elemente können die Benutzer darüber hinaus gelöschte Elemente aus dem Ordner „Gelöschte Elemente“ in ihrem Archivpostfach wiederherstellen.
+
+   Eine Liste der Outlook-Lizenzen, die die in-Place-Archivierung unterstützen, finden Sie unter [Outlook License Requirements for Exchange Features](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+
 - Archivpostfächer helfen Ihnen und ihren Benutzern, die Aufbewahrungs-, eDiscovery-und halte Anforderungen Ihrer Organisation zu erfüllen. Sie können beispielsweise die Exchange-Aufbewahrungsrichtlinie Ihrer Organisation verwenden, um Postfachinhalte in das Archivpostfach der Benutzer zu verschieben. Wenn Sie das Inhaltssuche-Tool im Security & Compliance Center verwenden, um das Postfach eines Benutzers nach bestimmten Inhalten zu durchsuchen, wird auch das Archivpostfach des Benutzers durchsucht. Außerdem werden Elemente im Archivpostfach beibehalten, wenn Sie eine Aufbewahrungsrichtlinie für Office 365 auf das Postfach eines Benutzers anwenden.
-  
-- Wenn ein Archivpostfach aktiviert ist, können Benutzer Nachrichten in Ihrem Archivpostfach speichern. Benutzer können mithilfe von Microsoft Outlook und Outlook im Web auf Ihre Archivpostfächer zugreifen. Durch Verwendung einer dieser Clientanwendungen können die Benutzer Nachrichten in ihrem Archivpostfach anzeigen und zwischen ihrem primären Postfach und dem Archivpostfach kopieren oder verschieben. Mit der Wiederherstellung gelöschter Elemente können die Benutzer darüber hinaus gelöschte Elemente aus dem Ordner „Gelöschte Elemente“ in ihrem Archivpostfach wiederherstellen. 
   
 - Nachdem Archivpostfächer aktiviert wurden, kann Ihre Organisation die standardmäßige Exchange-Aufbewahrungsrichtlinie nutzen (auch als Messaging Records Management oder MRM Policy bezeichnet), die jedem Postfach automatisch zugewiesen wird. Wenn ein Archivpostfach aktiviert ist, führt die Exchange-Standardaufbewahrungsrichtlinie automatisch folgende Aktionen aus: 
   

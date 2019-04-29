@@ -1,5 +1,5 @@
 ---
-title: Schützen des Benutzer-und Gerätezugriffs
+title: Schutz von Benutzer- und Gerätezugriff
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Zielseite zum Schutz des Zugriffs auf O365-Daten und-Dienste
 ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265227"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403003"
 ---
-# <a name="protect-user-and-device-access"></a>Schützen des Benutzer-und Gerätezugriffs
+# <a name="protect-user-and-device-access"></a>Schutz von Benutzer- und Gerätezugriff
 
 Der Schutz des Zugriffs auf Ihre Office 365-Daten und-Dienste ist entscheidend für die Abwehr von Cyber-Angriffen und Schutz vor Datenverlust. Der gleiche Schutz kann auf andere SaaS-Anwendungen in Ihrer Umgebung und sogar auf lokale Anwendungen angewendet werden, die mit Azure Active Directory-Anwendungs Proxy veröffentlicht werden.
   

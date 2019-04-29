@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: Machen Sie sich bereit für das neue Microsoft 365 Security Center und das Compliance Center.
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265487"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402993"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center sind jetzt allgemein verfügbar
 
@@ -102,7 +102,7 @@ In der folgenden Tabelle wird zusammengefasst, wer über Azure, Office 365 und W
 |[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Ja |Ja |Nein |
 |[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Ja |Ja |Nein |
 |[Identitätsschutz](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Ja |Ja |Nein |
-|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Ja |Ja |Nein |
+|[Privilegierte Identitätsverwaltung](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Ja |Ja |Nein |
 |[Intune](https://docs.microsoft.com/intune)     |Ja |Ja |Ja |
 |[Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/)     |Ja |Ja |Ja |
 |[Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Ja |Ja |Nein |
