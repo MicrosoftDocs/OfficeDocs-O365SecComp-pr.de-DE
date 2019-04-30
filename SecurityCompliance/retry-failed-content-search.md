@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die Schaltfläche wiederHolen zum Auflösen von Inhalts suchVorgängen, die Inhaltsspeicherort Fehler aufweisen.
-ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0963bccfe88a74b82ec3155469ca6d892bf2f7d8
+ms.sourcegitcommit: 72e8a74b55fe7f56b50e30ff10a635734b5a3220
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261498"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33472380"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicherort Fehlers
 
-Wenn Sie die Inhaltssuche im Security and Compliance Center verwenden, um eine sehr große Anzahl von Postfächern zu durchsuchen (beispielsweisedurch suchen von 100.000 Postfächern oder mehr in einer einzelnen Inhaltssuche), werden möglicherweise Suchfehler angezeigt, die den folgenden ähneln:
+Wenn Sie die Inhaltssuche im Security and Compliance Center verwenden, um eine Vielzahl von Postfächern zu durchsuchen, werden möglicherweise Suchfehler angezeigt, die den folgenden ähneln:
 
 ```
 Error
