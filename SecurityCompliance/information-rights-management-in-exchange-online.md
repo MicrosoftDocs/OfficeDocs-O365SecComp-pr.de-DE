@@ -1,5 +1,5 @@
 ---
-title: Verwaltung von Informationsrechten in Exchange Online
+title: Exchange Online-e-Mail-Verschlüsselung mit AD RMS
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: Häufig werden vertrauliche Informationen wie Finanzdaten, Verträge, vertrauliche Produktinformationen, Verkaufsberichte und -prognosen oder Patienten-, Kunden- und Mitarbeiterdaten per E-Mail ausgetauscht. Postfächer können daher zu Repositories großer Mengen potenziell vertraulicher Informationen werden, und Informationsverluste können eine ernstzunehmende Bedrohung für die Organisation darstellen.
-ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Sie können Exchange Online IRM für die Verwendung des lokalen Active Directory-Rechte verwaltungsDiensts (AD RMS) konfigurieren, um die Anforderungen Ihrer Organisation zu erfüllen. Dies ist jedoch nicht die Regel. Wenn Sie keine Anforderung zur Verwendung von AD RMS haben, verwenden Sie stattdessen die Office-Nachrichtenverschlüsselung.
+ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253983"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470385"
 ---
-# <a name="information-rights-management-in-exchange-online"></a>Verwaltung von Informationsrechten in Exchange Online
+# <a name="exchange-online-mail-encryption-with-ad-rms"></a>Exchange Online-e-Mail-Verschlüsselung mit AD RMS
 
-Häufig werden vertrauliche Informationen wie Finanzdaten, Verträge, vertrauliche Produktinformationen, Verkaufsberichte und -prognosen oder Patienten-, Kunden- und Mitarbeiterdaten per E-Mail ausgetauscht. Postfächer können daher zu Repositories großer Mengen potenziell vertraulicher Informationen werden, und Informationsverluste können eine ernstzunehmende Bedrohung für die Organisation darstellen.
-  
-Um Informationsverluste zu verhindern, enthält Exchange Online eine IRM-Funktion (Verwaltung von Informationsrechten), die Online- und Offlineschutz für E-Mails und Anlagen bereitstellt. IRM-Schutz kann von Benutzern in Microsoft Outlook oder Outlook im Web und zudem von Administratoren mithilfe von Transportschutzregeln oder Outlook-Schutzregeln angewendet werden. Mithilfe von IRM können Sie und Ihre Benutzer steuern, wer auf vertrauliche Daten in einer E-Mail zugreifen und E-Mails weiterleiten, drucken oder kopieren kann.
+Um Informationsverluste zu verhindern, enthält Exchange Online eine IRM-Funktion (Verwaltung von Informationsrechten), die Online- und Offlineschutz für E-Mails und Anlagen bereitstellt. Sie können Exchange Online IRM für die Verwendung des lokalen Active Directory-Rechte verwaltungsDiensts (AD RMS) konfigurieren, um die Anforderungen Ihrer Organisation zu erfüllen. Dies ist jedoch nicht die Regel. Wenn Sie keine Anforderung zur Verwendung von AD RMS haben, verwenden Sie stattdessen die [Office-Nachrichtenverschlüsselung](ome.md) . 
+
+IRM-Schutz kann von Benutzern in Microsoft Outlook oder Outlook im Web und zudem von Administratoren mithilfe von Transportschutzregeln oder Outlook-Schutzregeln angewendet werden. Mithilfe von IRM können Sie und Ihre Benutzer steuern, wer auf vertrauliche Daten in einer E-Mail zugreifen und E-Mails weiterleiten, drucken oder kopieren kann.
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Änderungen an der Funktionsweise von IRM mit Office 365-Nachrichtenverschlüsselung (OME) und Azure Active Directory
 

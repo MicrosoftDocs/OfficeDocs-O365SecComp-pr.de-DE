@@ -15,20 +15,27 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Grundlegendes zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4399ea298d467a9ab7f395a51d23b2f9f783231b
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403043"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470425"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
-Mit Aufsichtsrichtlinien in Office 365 können Sie Mitarbeiterkommunikation zur Prüfung durch bestimmte Prüfer erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder 3rd-Party-Kommunikationen in Ihrer Organisation erfassen. Die Bearbeiter können die Nachrichten dann überprüfen, um sicherzustellen, dass Sie den Nachrichtenstandards Ihrer Organisation entsprechen und diese mit dem Klassifizierungs auflösen. Mit diesen Richtlinien können Sie auch viele moderne Compliance-Herausforderungen bewältigen, einschließlich der Überwachung zunehmender Arten von Kommunikationskanälen, erhöhen des Volumens von Nachrichtendaten und der behördlichen Durchsetzung & das Risiko von Geldbußen.
+Mit Aufsichtsrichtlinien in Office 365 können Sie Mitarbeiterkommunikation zur Prüfung durch bestimmte Prüfer erfassen. Sie können bestimmte Richtlinien definieren, die interne und externe e-Mails, Microsoft Teams oder 3rd-Party-Kommunikationen in Ihrer Organisation erfassen. Die Bearbeiter können die Nachrichten dann überprüfen, um sicherzustellen, dass Sie den Nachrichtenstandards Ihrer Organisation entsprechen und diese mit dem Klassifizierungs auflösen. 
 
-In einigen Organisationen gibt es möglicherweise eine Trennung der Aufgaben zwischen dem IT-Support und der Compliance-Verwaltungsgruppe. Office 365 unterstützt die Trennung zwischen der Konfiguration des Mandanten mit den Aufsichtsrichtlinien-Supportfunktionen und der Konfiguration von Richtlinien und der Reaktion auf aufgezeichnete Kommunikation. Die IT-Gruppe für eine Organisation kann beispielsweise für das Einrichten von Rollen Berechtigungen und Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
+Mit diesen Richtlinien können Sie auch viele moderne Compliance-Herausforderungen bewältigen, einschließlich:
+
+- Überwachen von wachsenden Arten von Kommunikationskanälen
+- Die zunehmende Anzahl von Nachrichtendaten
+- Regulatorische Durchsetzungsmaßnahmen & das Risiko von Geldbußen.
+
+In einigen Organisationen gibt es möglicherweise eine Trennung der Aufgaben zwischen dem IT-Support und der Compliance-Verwaltungsgruppe. Office 365 unterstützt die Trennung zwischen der Konfiguration der Aufsichtsrichtlinien Funktion und der Konfiguration von Richtlinien für aufgezeichnete Kommunikation. Die IT-Gruppe für eine Organisation kann beispielsweise für das Einrichten von Rollen Berechtigungen und Gruppen zuständig sein, um Aufsichtsrichtlinien zu unterstützen, die vom Compliance-Team der Organisation konfiguriert und verwaltet werden.
+
+Weitere Informationen zu den Verbesserungen und Verfügbarkeit der Aufsichtsfunktionen finden Sie in der [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 ## <a name="scenarios-for-supervision-policies"></a>Szenarien für Aufsichtsrichtlinien
 
@@ -86,9 +93,9 @@ Mit Aufsichtsrichtlinien können Sie Nachrichten auf einer oder mehreren der fol
 
 Standardmäßig wird die **Richtung** Bedingung angezeigt und kann nicht entfernt werden. Die Kommunikations Richtungseinstellungen in einer Richtlinie werden einzeln oder zusammen ausgewählt:
 
-- **Eingehend**– Sie können " **eingehend** " auswählen, um die Kommunikation zu überwachen **, die an** die Personen gesendet werden, die Sie **von** Personen, die nicht in der Richtlinie enthalten sind, über
-- **** Ausgehend: Sie können **ausgehende** Nachrichten überwachen, die von den Personen gesendet werden, **** die Sie für die Überwachung **von** Personen ausgewählt haben, die nicht in der Richtlinie enthalten sind.
-- **Intern** -Sie können die Kommunikation **zwischen** den Personen, die Sie in der Richtlinie identifiziert haben, **intern** auswählen.
+- **Eingehend**: Sie können " **eingehend** " auswählen, um die Kommunikation zu überwachen **, die an** die Personen gesendet werden, die Sie **von** Personen, die nicht in der Richtlinie enthalten sind, über
+- **** Ausgehend: wählen **** Sie ausgehend aus, wenn Sie die Kommunikation überwachen möchten, die **von** den Personen gesendet wurde, die Sie zu beaufsichtigen haben **,** die nicht in der Richtlinie enthalten sind.
+- **Intern**: Sie können die Kommunikation **zwischen** den Personen, die Sie in der Richtlinie identifiziert haben, **intern** auswählen.
 
 #### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
@@ -103,7 +110,28 @@ Weitere Informationen zu vertraulichen Informationen und den in den Standardtype
 
 #### <a name="custom-keyword-dictionaries"></a>Benutzerdefinierte Keyword-Wörterbücher
 
-Das Konfigurieren von benutzerdefinierten Keyword-Wörterbüchern (oder Lexika) ermöglicht die einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Branche und kann bis zu 100.000 Ausdrücke pro Wörterbuch unterstützen. Bei Bedarf können Sie mehrere benutzerdefinierte Keyword-Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Stichwort Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie eine CSV-oder txt-Liste) oder aus einer Liste, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können, bezogen werden.
+Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um eine einfache Verwaltung von Schlüsselwörtern für Ihre Organisation oder Branche zu ermöglichen. Stichwort Wörterbücher unterstützen bis zu 100.000 Ausdrücke pro Wörterbuch. Bei Bedarf können Sie mehrere benutzerdefinierte Keyword-Wörterbücher auf eine einzelne Richtlinie anwenden oder über ein einzelnes Stichwort Wörterbuch pro Richtlinie verfügen. Diese Wörterbücher werden in einer Aufsichtsrichtlinie zugewiesen und können aus einer Datei (wie eine CSV-oder txt-Liste) oder aus einer Liste, [die Sie im Compliance Center importieren](create-a-keyword-dictionary.md)können, bezogen werden.
+
+#### <a name="offensive-language"></a>Anstößige Sprache
+
+Überwachen von gesendeten oder empfangenen e-Mail-Nachrichten in Ihrer Organisation für anstößige Sprachen Das Modell verwendet eine Kombination aus maschinellem lernen, künstlicher Intelligenz und Schlüsselwörtern, um anstößige e-Mail-Nachrichten als Teil der Überwachungsanforderungen für die Antimobbing-und Cyber-Mobbing zu identifizieren. Erstellen Sie eine [Richtlinie](create-test-tune-dlp-policy.md) zur Verhinderung von Datenverlust, die ein [benutzerdefiniertes Stichwort Wörterbuch](create-a-keyword-dictionary.md) mit anstößigEn Ausdrücken verwendet, um eine anstößige Sprache für Ihre Organisation zu verhindern oder zu blockieren.
+
+Das anstößige Sprachmodell unterstützt derzeit englische Schlüsselwörter und überwacht den Text der e-Mail-Nachrichten. Das anstößige Sprachmodell überwacht e-Mails auf Sentiments, die mit den folgenden Sprachtypen verknüpft sind:
+
+|**Typ**|**Beschreibung**|
+|:-----|:-----|
+| **Weltlichkeiten** | Ausdrücke, die unangemessen sind und die meisten Menschen in Verlegenheit bringen. |
+| **Bögen** | Ausdrücke, die Kulturen und Ethnien angreifen. |
+| **Sticheleien** | Ausdrücke, die verspotten, verdammen und lächerlich machen. |
+| **Verweise auf Handicaps** | Ausdrücke, die auf physische oder psychische Nachteile abzielen. |
+| **Erbärmliche Sprache** | Ausdrücke, die auf sexuelle Interessen und den physikalischen Zustand der Reinheit abzielen. |
+| **Phobie** | Ausdrücke, die auf sexuelle Präferenzen abzielen. |
+| **Rassismus** | Ausdrücke, die für Rasse und Ethnizität stehen. |
+| **Extremismus** | Ausdrücke, die auf Religion und politische Ideologien abzielen. |
+| **Verkleidung** | Ausdrücke, deren Bedeutung oder Aussprache mit einem anderen anstößigen Ausdruck identisch ist. |
+| **Provokative Sprache** | Ausdrücke, die möglicherweise Wut oder Gewalt verursachen. |
+| **Tabu** | Ausdrücke, die in der höflichen gesellschaftlichen Kommunikation im Allgemeinen nicht geeignet sind. |
+| **Nicht verfeinerte Sprache** | Ausdrücke, die keine höflichen Manieren aufweisen und die potenziell hart und unhöflich sind. |
 
 #### <a name="conditional-settings"></a>Bedingte Einstellungen
 
@@ -113,14 +141,14 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
   
 |**Bedingung**|**Verwendung**|
 |:-----|:-----|
-| Die Nachricht wird von einer dieser Domänen empfangen.  <br><br> Nachricht wird von keiner dieser Domänen empfangen | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine empfangene Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
-| Die Nachricht wird an eine dieser Domänen gesendet.  <br><br> Nachricht wird an keine dieser Domänen gesendet | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine gesendete Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
-| Die Nachricht wird mit einer dieser Bezeichnungen klassifiziert.  <br><br> Die Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert | Anwenden der Richtlinie, wenn bestimmte Aufbewahrungs Bezeichnungen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und konfigurierte Bezeichnungen werden als Teil dieser Bedingung ausgewählt. Jede ausgewählte Bezeichnung wird separat angewendet (nur eine dieser Bezeichnungen muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Übersicht über Aufbewahrungs Beschriftungen](https://docs.microsoft.com/office365/securitycompliance/labels).|
-| Nachricht enthält eines dieser Wörter  <br><br> Nachricht enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene Zeile wird separat angewendet (nur eine dieser Zeilen muss angewendet werden, damit die Richtlinie auf die Nachricht angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
-| Anlage enthält eines dieser Wörter  <br><br> Anlage enthält keines dieser Wörter | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachrichtenanlage eingeschlossen oder ausgeschlossen werden (beispielsweise ein Word-Dokument), geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinie gelten, die auf die Anlage angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
-| Attachment ist einer dieser Dateitypen  <br><br> Attachment ist keiner dieser Dateitypen | Um die Kommunikation zu überwachen, in der bestimmte Typen von Anlagen eingeschlossen oder ausgeschlossen werden, geben Sie die Dateierweiterungen ein (wie. exe oder. pdf). Wenn Sie mehrere Dateierweiterungen einschließen oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Damit die Richtlinie angewendet wird, muss nur eine Anlagenerweiterung übereinstimmen.|
-| Nachricht ist größer als  <br><br> Die Nachrichtengröße ist nicht größer als | Um Nachrichten anhand einer bestimmten Größe zu überarbeiten, verwenden Sie diese Bedingungen, um die maximale oder minimale Größe einer Nachricht anzugeben, bevor Sie überprüft werden kann. wenn sie beispielsweise die **nachrichtengröße größer als** \> **1,0 mb**angeben, werden alle nachrichten, die 1,01 mb groß sind, überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
-| Die Anlage ist größer als  <br><br> Die Anlage ist nicht größer als | Um Nachrichten anhand der Größe Ihrer Anlagen zu überarbeiten, geben Sie die maximale oder minimale Größe an, die eine Anlage aufweisen kann, bevor die Nachricht und ihre Anlagen überprüft werden können. wenn sie beispielsweise attachment angeben, **ist größer als** \> **2,0 mb**, können alle nachrichten mit anlagen 2,01 mb und mehr überprüft werden. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
+| **Die Nachricht wird von einer dieser Domänen empfangen.**  <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine empfangene Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
+| **Die Nachricht wird an eine dieser Domänen gesendet.**  <br><br> **Nachricht wird an keine dieser Domänen gesendet** | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Domänen in eine gesendete Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jede Domäne ein, und trennen Sie mehrere Domänen durch ein Komma. Jede von Ihnen eingegebene Domäne wird separat angewendet (nur eine dieser Domänen muss gelten, damit die Richtlinie auf die Nachricht angewendet wird). |
+| **Die Nachricht wird mit einer dieser Bezeichnungen klassifiziert.**  <br><br> **Die Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert** | Anwenden der Richtlinie, wenn bestimmte Aufbewahrungs Bezeichnungen in eine Nachricht eingeschlossen oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und konfigurierte Bezeichnungen werden als Teil dieser Bedingung ausgewählt. Jede ausgewählte Bezeichnung wird separat angewendet (nur eine dieser Bezeichnungen muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Übersicht über Aufbewahrungs Beschriftungen](https://docs.microsoft.com/office365/securitycompliance/labels).|
+| **Nachricht enthält eines dieser Wörter**  <br><br> **Nachricht enthält keines dieser Wörter** | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachricht eingeschlossen oder ausgeschlossen werden, geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene Zeile wird separat angewendet (nur eine dieser Zeilen muss angewendet werden, damit die Richtlinie auf die Nachricht angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
+| **Anlage enthält eines dieser Wörter**  <br><br> **Anlage enthält keines dieser Wörter** | Wenn Sie die Richtlinie anwenden möchten, wenn bestimmte Wörter oder Ausdrücke in eine Nachrichtenanlage eingeschlossen oder ausgeschlossen werden (beispielsweise ein Word-Dokument), geben Sie jedes Wort oder jeden Ausdruck in einer separaten Linie ein. Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinie gelten, die auf die Anlage angewendet werden soll). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
+| **Attachment ist einer dieser Dateitypen**  <br><br> **Attachment ist keiner dieser Dateitypen** | Um die Kommunikation zu überwachen, in der bestimmte Typen von Anlagen eingeschlossen oder ausgeschlossen werden, geben Sie die Dateierweiterungen ein (wie. exe oder. pdf). Wenn Sie mehrere Dateierweiterungen einschließen oder ausschließen möchten, geben Sie diese in separaten Zeilen ein. Damit die Richtlinie angewendet wird, muss nur eine Anlagenerweiterung übereinstimmen.|
+| **Nachricht ist größer als**  <br><br> **Die Nachrichtengröße ist nicht größer als** | Um Nachrichten anhand einer bestimmten Größe zu überarbeiten, verwenden Sie diese Bedingungen, um die maximale oder minimale Größe einer Nachricht anzugeben, bevor Sie überprüft werden kann. wenn sie beispielsweise die **nachrichtengröße größer als** \> **1,0 mb**angeben, werden alle nachrichten, die 1,01 mb groß sind, überprüft. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
+| **Die Anlage ist größer als**  <br><br> **Die Anlage ist nicht größer als** | Um Nachrichten anhand der Größe Ihrer Anlagen zu überarbeiten, geben Sie die maximale oder minimale Größe an, die eine Anlage aufweisen kann, bevor die Nachricht und ihre Anlagen überprüft werden können. wenn sie beispielsweise attachment angeben, **ist größer als** \> **2,0 mb**, können alle nachrichten mit anlagen 2,01 mb und mehr überprüft werden. Sie können Byte, Kilobyte, Megabyte oder Gigabyte für diese Bedingung auswählen.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"></a> Jede eingegebene wortlinie wird separat angewendet (nur eine einzige Linie muss für die Richtlinienbedingung gelten, die auf die e-Mail oder Anlage angewendet werden soll). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**mit den Stichwörtern "Banker" und "Insider Trading" in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder "Insider Trading" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit Ihren Angaben übereinstimmen.
@@ -231,14 +259,14 @@ Nachfolgend finden Sie eine Aufstellung der Werte, die in der **** Spalte Transp
   
 |**Tagtyp**|**Bedeutung**|
 |:-----|:-----|
-| Nicht überprüft | Die Anzahl von e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Office 365-überwachungsdashboard oder im Ordner "Aufsicht" des Rezensenten in Outlook oder Outlook im Web.
-| Kompatible | Die Anzahl der überprüften und als kompatibel markierten e-Mails. Diese Nachrichten benötigen noch eine Lösung. |
-| Fragwürdig | Die Anzahl der überprüften und markierten e-Mails. Dies dient als Kennzeichnung für andere Prüfer, um zu überprüfen, ob eine e-Mail-Konformitätsprüfung erforderlich ist. Diese Nachrichten benötigen noch eine Lösung. |
-| Nicht konform (aktiv) | Die Anzahl der nicht kompatiblen e-Mails, die von den Prüfern derzeit untersucht werden. |
-| Nicht kompatibel (aufgelöst) | Die Anzahl der nicht kompatiblen e-Mails, die von den Bearbeitern untersucht und aufgelöst wurden. |
-| Treffer Richtlinie | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die mit einem oder mehreren Bedingungen übereinstimmten, die in einer Aufsichtsrichtlinie definiert sind. |
-| Im Zuständigkeitsbereich | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die von einer Aufsichtsrichtlinie überprüft wurden. |
-| Gelöst | Die Gesamtanzahl von Nachrichten von Exchange, Teams und Drittanbieter-Datenquellen, die als **aufgelöst** klassifiziert wurden.|
+| **Nicht überprüft** | Die Anzahl von e-Mails, die noch nicht überprüft wurden. Diese e-Mails warten auf die Überprüfung im Office 365-überwachungsdashboard oder im Ordner "Aufsicht" des Rezensenten in Outlook oder Outlook im Web.
+| **Compliant** | Die Anzahl der überprüften und als kompatibel markierten e-Mails. Diese Nachrichten benötigen noch eine Lösung. |
+| **Fragwürdig** | Die Anzahl der überprüften und markierten e-Mails. Dies dient als Kennzeichnung für andere Prüfer, um zu überprüfen, ob eine e-Mail-Konformitätsprüfung erforderlich ist. Diese Nachrichten benötigen noch eine Lösung. |
+| **Nicht konform (aktiv)** | Die Anzahl der nicht kompatiblen e-Mails, die von den Prüfern derzeit untersucht werden. |
+| **Nicht kompatibel (aufgelöst)** | Die Anzahl der nicht kompatiblen e-Mails, die von den Bearbeitern untersucht und aufgelöst wurden. |
+| **Treffer Richtlinie** | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die mit einem oder mehreren Bedingungen übereinstimmten, die in einer Aufsichtsrichtlinie definiert sind. |
+| **Im Zuständigkeitsbereich** | Die Gesamtzahl (täglich) von Nachrichten von Exchange-, Teams-und Drittanbieter-Datenquellen, die von einer Aufsichtsrichtlinie überprüft wurden. |
+| **Resolved** | Die Gesamtanzahl von Nachrichten von Exchange, Teams und Drittanbieter-Datenquellen, die als **aufgelöst** klassifiziert wurden.|
 
 > [!NOTE]
 > Aufsichtsrichtlinien müssen zuerst eingerichtet werden, bevor Sie in diesem Bericht angezeigt werden. Wenn Richtlinien gelöscht werden, werden außerdem Verlaufsdaten angezeigt. Sie werden jedoch als "nicht vorhandene Richtlinie" angezeigt, und die **Export** Funktion ist nicht verfügbar.
@@ -251,10 +279,10 @@ Die folgenden Aufsichtsrichtlinien Aktivitäten werden in den Unified Office 365
 
 |**Aktivität**|**Zugeordnete Befehle**|
 |:-----|:-----|
-| Erstellen einer Richtlinie | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| Bearbeiten einer Richtlinie | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| Löschen einer Richtlinie| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| Anzeigen einer Richtlinie | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
+| **Erstellen einer Richtlinie** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| **Bearbeiten einer Richtlinie** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| **Löschen einer Richtlinie** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **Anzeigen einer Richtlinie** | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Anzeigen von Überwachungsaktivitäten im vereinheitlichten Überwachungsprotokoll oder mit dem PowerShell-Cmdlet " [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) ".
 
