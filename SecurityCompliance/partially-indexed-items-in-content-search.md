@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Informationen zu nicht indizierten Elementen in Exchange und SharePoint, die Sie in eine Inhaltssuche einbeziehen können, die über das Security & Compliance Center ausgeführt wird. '
-ms.openlocfilehash: da51788b3f017811756c3c07294bf6e2712e2e2c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 22eca4e56c21783db348f6569b73257a9cc53dab
+ms.sourcegitcommit: 0baa79a6e6fb72be488556607bc8c441642981a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262317"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33527653"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Teilweise indizierte Elemente in der Inhaltssuche in Office 365
 
@@ -71,18 +71,13 @@ Auf ähnliche Weise werden Nachrichten mit teilweise indizierten Dateianlagen un
   
 Eine Liste der e-Mail-und Dokumenteigenschaften, nach denen Sie mithilfe der Suchfunktion im Security & Compliance Center suchen können, finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
   
-
-  
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Teilweise indizierte Elemente in den Suchergebnissen
-<a name="unindexeditemsresults"> </a>
 
-Möglicherweise muss Ihre Organisation zusätzliche Analysen für teilweise indizierte Elemente identifizieren und ausführen, um zu bestimmen, was Sie sind, was Sie enthalten, und ob Sie für eine bestimmte Untersuchung relevant sind. Wie bereits erläutert, werden die teilweise indizierten Elemente in den durchsuchten Inhaltsspeicherorten automatisch in die geschätzten Suchergebnisse eingeschlossen. Sie haben die Möglichkeit, diese teilweise indizierten Elemente einzuschließen, wenn Sie Suchergebnisse exportieren oder die Suchergebnisse für erweiterte eDiscovery vorbereiten. Um teilweise indizierte Elemente einzuschließen, wenn Sie Suchergebnisse exportieren oder Sie auf Erweiterte eDiscovery vorbereiten, wählen Sie eine der Optionen aus, um Elemente einzuschließen, die ein unbekanntes Format aufweisen, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden.
+Möglicherweise muss Ihre Organisation zusätzliche Analysen für teilweise indizierte Elemente identifizieren und ausführen, um zu bestimmen, was Sie sind, was Sie enthalten, und ob Sie für eine bestimmte Untersuchung relevant sind. Wie bereits erläutert, werden die teilweise indizierten Elemente in den durchsuchten Inhaltsspeicherorten automatisch in die geschätzten Suchergebnisse eingeschlossen. Sie haben die Möglichkeit, diese teilweise indizierten Elemente einzuschließen, wenn Sie Suchergebnisse exportieren oder die Suchergebnisse für erweiterte eDiscovery vorbereiten.
   
 Beachten Sie bei Teil indizierten Elementen Folgendes:
   
-- Wenn Sie eine Inhaltssuche ausführen, werden die Gesamtanzahl und Größe der teilweise indizierten Elemente (von der Suchabfrage zurückgegeben) in Suchstatistiken im Detailbereich angezeigt, die als "nicht indizierte Elemente" bezeichnet werden.
-    
-- Wenn Sie Suchergebnisse exportieren und teilweise indizierte Elemente einbeziehen, werden teilweise indizierte Exchange-Elemente in eine separate PST-Datei für jedes Postfach exportiert, in dem Sie gespeichert sind, oder als einzelne Nachrichten, wenn Sie die Option zum Herunterladen von Exchange-Elementen als Nachrichten. teilweise indizierte SharePoint-Elemente werden in einen Ordner **** mit dem Namen "uncrawlable" exportiert.
+- Wenn Sie eine Inhaltssuche ausführen, werden die Gesamtanzahl und Größe von teilweise indizierten Exchange-Elementen (von der Suchabfrage zurückgegeben) in Suchstatistiken im Detailbereich angezeigt und als **indizierte Elemente**bezeichnet. Beachten Sie, dass Statistiken zu teilweise indizierten Elementen, die im Detailbereich angezeigt werden, nicht teilweise indizierte Elemente in SharePoint oder OneDrive sind.
     
 - Wenn die Suche, aus der Sie Ergebnisse exportieren, eine Suche nach bestimmten Inhaltsspeicherorten oder allen Inhaltsspeicherorten in Ihrer Organisation war, werden nur die nicht indizierten Elemente aus Inhaltsspeicherorten exportiert, die Elemente enthalten, die den Suchkriterien entsprechen. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Der Grund dafür ist, dass das Exportieren teilweise indizierter Elemente aus vielen Standorten in der Organisation möglicherweise die Wahrscheinlichkeit von Exportfehlern erhöht und die Zeitdauer erhöht, die zum Exportieren und Herunterladen der Suchergebnisse benötigt wird.
     
@@ -91,6 +86,17 @@ Beachten Sie bei Teil indizierten Elementen Folgendes:
 - Wenn Sie alle Postfachelemente in die Suchergebnisse aufnehmen möchten oder wenn eine Suchabfrage keine Stichwörter oder nur einen Datumsbereichs angibt, werden teilweise indizierte Elemente möglicherweise nicht in die PST-Datei kopiert, die die teilweise indizierten Elemente enthält. Der Grund dafür ist, dass alle Elemente, einschließlich aller teilweise indizierten Elemente, automatisch in die regulären Suchergebnisse eingeschlossen werden.
     
 - Teilweise indizierte Elemente können nicht in der Vorschau angezeigt werden. Sie müssen die Suchergebnisse exportieren, um teilweise indizierte Elemente anzuzeigen, die von der Suche zurückgegeben werden.
+
+Wenn Sie außerdem Suchergebnisse exportieren und teilweise indizierte Elemente in den Export einbeziehen, werden teilweise indizierte Elemente aus SharePoint-Elementen in einen Ordner mit **** dem Namen "uncrawlable" exportiert. Wenn Sie teilweise indizierte Exchange-Elemente exportieren, werden Sie unterschiedlich exportiert, je nachdem, ob die teilweise indizierten Elemente mit der Suchabfrage übereinstimmen, und die Konfiguration der Exporteinstellungen. 
+
+In der folgenden Tabelle wird das Export Verhalten von indizierten und teilweise indizierten Elementen und die Angabe angegeben, ob jeder für die verschiedenen Export Konfigurationseinstellungen enthalten ist.
+
+|**Export Konfiguration**|**Indizierte Elemente, die einer Suchabfrage entsprechen**|**Teilweise indizierte Elemente, die einer Suchabfrage entsprechen**|**Teilweise indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen**|
+|:-----|:-----|:-----|:-----|
+|Nur indizierte Elemente exportieren  <br/> |Exportiert<br/> |Exportiert (enthalten in den indizierten Elementen, die exportiert werden)<br/>  |Nicht exportiert <br/>|
+|Nur teilweise indizierte Elemente exportieren  <br/> |Nicht exportiert  <br/> |Exportiert (als teilweise indizierte Elemente)<br/> |Exportiert (als teilweise indizierte Elemente)|
+|Exportieren von indizierten und teilweise indizierten Elementen  <br/> |Exportiert<br/> |Exportiert (enthalten in den indizierten Elementen, die exportiert werden)<br/>  |Exportiert (als teilweise indizierte Elemente)<br/>|
+||||
 
 ## <a name="partially-indexed-items-excluded-from-the-search-results"></a>Teilweise indizierte Elemente, die aus den Suchergebnissen ausgeschlossen sind
 
@@ -122,7 +128,6 @@ Eine Liste der Indizierungs Grenzwerte für SharePoint-Dokumente finden Sie unte
 
   
 ## <a name="more-information-about-partially-indexed-items"></a>Weitere Informationen zu teilweise indizierten Elementen
-<a name="moreinfo"> </a>
 
 - Wie bereits erwähnt, werden durch eine Stichwortsuche möglicherweise Ergebnisse zurückgegeben, wenn das Schlüsselwort in den indizierten Metadaten angezeigt wird, da Nachrichten-und Dokumenteigenschaften und deren Metadaten indiziert werden. Dieselbe Keyword-Suche gibt jedoch nicht dasselbe Element zurück, wenn das Schlüsselwort nur im Inhalt eines Elements mit einem nicht unterstützten Dateityp angezeigt wird. In diesem Fall würde das Element als teilweise indiziertes Element zurückgegeben.
     
