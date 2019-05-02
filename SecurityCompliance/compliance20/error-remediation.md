@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d54f5ffa5a2dd253a478a758ac0616025a79f118
+ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252633"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33516493"
 ---
 # <a name="error-remediation-when-processing-data"></a>Beheben von Fehlern beim Verarbeiten von Daten
 
-Fehlerkorrektur ermöglicht eDiscovery-Administratoren das Beheben von Datenproblemen, die verhindern, dass Advanced eDiscovery (Preview) die Inhalte ordnungsgemäß verarbeitet. Dateien, die kennwortgeschützt sind, können beispielsweise nicht verarbeitet werden, da die Dateien gesperrt oder verschlüsselt sind. Mithilfe von Fehlerkorrekturen können eDiscovery-Administratoren Dateien mit solchen Fehlern herunterladen, den Kennwortschutz entfernen und die korrigierten Dateien hochladen.
+Fehlerkorrektur ermöglicht eDiscovery-Administratoren die Möglichkeit, Daten Probleme zu beheben, die verhindern, dass erweiterte eDiscovery die Inhalte ordnungsgemäß verarbeitet. Dateien, die kennwortgeschützt sind, können beispielsweise nicht verarbeitet werden, da die Dateien gesperrt oder verschlüsselt sind. Mithilfe von Fehlerkorrekturen können eDiscovery-Administratoren Dateien mit solchen Fehlern herunterladen, den Kennwortschutz entfernen und die korrigierten Dateien hochladen.
 
-Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Advanced eDiscovery (Preview)-Fällen zu korrigieren.
+Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDiscovery-Fällen zu beheben.
 
 ## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Erstellen einer Fehlerbehebungssitzung zum Beheben von Dateien mit Verarbeitungsfehlern
 
 >[!NOTE]
 >Wenn der Fehlerkorrektur-Assistent während des folgenden Verfahrens jederzeit geschlossen ist, können Sie auf der Registerkarte **Verarbeitung** zur Fehlerbehebungssitzung zurückkehren, indem Sie im Dropdownmenü **Ansicht** die Option **Fehler** Korrekturen auswählen.
 
-1. Wählen Sie auf der Registerkarte **Verarbeitung** in einem Advanced EDiscovery (Preview)-Fall im Dropdownmenü **Ansicht** die Option **Fehler** aus.
+1. Wählen Sie auf der Registerkarte **Verarbeitung** in einem erweiterten eDiscovery-Fall im Dropdownmenü **Ansicht** die Option **Fehler** aus.
 
 2. Wählen Sie die Fehler aus, die Sie korrigieren möchten, indem Sie auf das Optionsfeld neben dem Fehlertyp oder-Dateityp klicken.  Im folgenden Beispiel besprechen wir eine kennwortgeschützte Datei.
 
@@ -63,25 +63,25 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Advanced eDiscov
     ![Vorbereiten der Fehlerkorrektur](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Problembehandlung bei AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md)
+    > Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Problembehandlung bei AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
 
 7. Nachdem Sie die Dateien heruntergeladen haben, können Sie Sie mit einem geeigneten Tool beheben. Für kennwortgeschützte Dateien gibt es eine Reihe von Kenn Wort Knack Werkzeugen, die Sie verwenden können. Wenn Sie die Kennwörter für die Dateien kennen, können Sie Sie öffnen und den Kennwortschutz entfernen.
     > [!NOTE]
     > Es ist wichtig, dass Sie die Verzeichnisstruktur und die Dateinamen der bereinigten Dateien im Takt behalten.  Alle in den heruntergeladenen Dateien und Ordnern verwendeten Benennungskonventionen ermöglichen es, die remdiated-Dateien dem Original zuzuordnen.
 
-8. Kehren Sie nun zu Advanced eDiscovery (Preview) zurück, und klicken Sie auf **Weiter: Dateien hochladen**.  Dadurch gelangen Sie zum nächsten Schritt, in dem Sie jetzt die Dateien hochladen können.
+8. Kehren Sie nun zu Advanced eDiscovery zurück, und klicken Sie auf **Weiter: Dateien hochladen**.  Dadurch gelangen Sie zum nächsten Schritt, in dem Sie jetzt die Dateien hochladen können.
 
     ![Hochladen von Dateien](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
 9. Spezifizieren Sie den Speicherort der wiederherzustellenden Dateien im Textfeld **Pfad zum Speicherort der Dateien** , und klicken Sie dann auf **in clibpboard kopieren**.
 
-10. Fügen Sie den Befehl in eine Windows-EingabeaufForderungen ein, und drücken **Sie die Eingabe** Taste, um die Dateien hochzuladen.
+10. Fügen Sie den Befehl in eine Windows-Eingabeaufforderungen ein, und drücken **Sie die Eingabe** Taste, um die Dateien hochzuladen.
 
     ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Kehren Sie schließlich zu Advanced eDiscovery (Preview) zurück, und klicken Sie auf **Weiter: Process files**.
+11. Kehren Sie schließlich zu Advanced eDiscovery zurück, und klicken Sie auf **Weiter: Process files**.
 
-12. Nach Abschluss der Verarbeitung.  Sie können zum Arbeitssatz zurückkehren und die korrigierte Datei anzeigen.
+12. Nach Abschluss der Verarbeitung.  Sie können zum Übersichts Satz zurückkehren und die korrigierte Datei anzeigen.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Was geschieht, wenn Dateien korrigiert werden
 
@@ -100,4 +100,4 @@ Bei hochgeladenen Dateien werden die ursprünglichen Metadaten mit Ausnahme der 
 - WordCount
 - WorkingsetId
 
-Eine Definition aller Dokument Metadatenfelder in Advanced eDiscovery (Preview) finden Sie unter [Document Metadata fields](document-metadata-fields.md).
+Eine Definition aller Dokument Metadatenfelder in Advanced eDiscovery finden Sie unter [Document Metadata fields](document-metadata-fields.md).
