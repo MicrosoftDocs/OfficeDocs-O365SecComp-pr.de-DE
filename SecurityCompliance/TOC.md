@@ -5,7 +5,6 @@
 ### [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
 ### [Microsoft 365 Security Center](overview-security-center.md)
 ### [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md)
-### [Office 365 Secure Score](office-365-secure-score.md)
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ### [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ### [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
@@ -71,68 +70,13 @@
 #### [Legacyinformationen für die Office 365-Nachrichtenverschlüsselung](legacy-information-for-message-encryption.md)
 #### [Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# Datensatzverwaltung
-## [Dateiplan-Manager](file-plan-manager.md)
-## [Aufbewahrungsbezeichnungen](labels.md)
-### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
-### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
-## [Dispositionsüberprüfungen](disposition-reviews.md)
-## Überwachen der Datensatzverwaltung
-### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
-### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
-## Weitere Informationen zur Datensatzverwaltung
-### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# Verwalten der Datengovernance
-## [Importieren von Daten](importing-pst-files-to-office-365.md)
-### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
-### [Verwenden des Laufwerkversands zum Importieren von PST-Dateien](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [Verwenden des PST-Sammlungstools zum Suchen, Kopieren und Löschen von PST-Dateien](find-copy-and-delete-pst-files-in-your-organization.md)
-### [Filtern von Daten beim Importieren von PST-Dateien](filter-data-when-importing-pst-files.md)
-### [Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [Häufig gestellte Fragen zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md)
-### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
-#### [Verwendung von Beispiel-Connectors zum Archivieren von Drittanbieterdaten](archive-third-party-data-with-sample-connector.md)
-#### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
-## Speichern von Daten
-### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
-### [Übersicht über die unbeschränkte Archivierung](unlimited-archiving.md)
-### [Aktivieren der unbeschränkten Archivierung](enable-unlimited-archiving.md)
-### [Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Aufbewahren von Daten
-### [Aufbewahrungsrichtlinien](retention-policies.md)
-### [Dateiplan-Manager](file-plan-manager.md)
-### [Aufbewahrungsbezeichnungen](labels.md)
-### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
-### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
-## [Freigeben von Daten](disposition-reviews.md)
-## [Aufsichtskommunikation](supervision-policies.md)
-### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
-## [Verwalten inaktiver Postfächer](inactive-mailboxes-in-office-365.md)
-### [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)
-### [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Wiederherstellen eines inaktiven Postfachs](recover-an-inactive-mailbox.md)
-### [Rückspeichern eines inaktiven Postfachs](restore-an-inactive-mailbox.md)
-### [Löschen eines inaktiven Postfachs](delete-an-inactive-mailbox.md)
-## Überwachen der Datengovernance
-### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
-### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
-### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-## Weitere Informationen zur Datengovernance
-### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Schutz vor Bedrohungen](protect-against-threats.md)
 
 ## [Ursachenermittlung in Microsoft 365](hunting.md)
 
 ## [Verstehen der neuesten Angriffskampagnen mithilfe von Bedrohungsanalyse](latest-attack-campaigns.md)
 
-## [Advanced Threat Protection ](office-365-atp.md)
+## [Office 365 Advanced Threat Protection ](office-365-atp.md)
 ### [ATP-sichere Links](atp-safe-links.md)
 #### [Einrichten von Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md)
 #### [Einrichten einer benutzerdefinierten Liste für URLs, die nicht neu geschrieben werden sollen](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -226,6 +170,66 @@
 ### [Häufig gestellte Fragen zur Quarantäne für Office 365](quarantine-faq.md)
 ### [Verwenden von Spambenachrichtigungen für Benutzer zum Freigeben und Melden von isolierten Nachrichten in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
+# Verwalten von Sicherheitsvorfällen
+## [Reaktion auf Sicherheitsvorfälle in Office 365](office365-security-incident-response-overview.md)
+## [Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
+
+# Datensatzverwaltung
+## [Dateiplan-Manager](file-plan-manager.md)
+## [Aufbewahrungsbezeichnungen](labels.md)
+### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
+### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
+## [Dispositionsüberprüfungen](disposition-reviews.md)
+## Überwachen der Datensatzverwaltung
+### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
+### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
+### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
+## Weitere Informationen zur Datensatzverwaltung
+### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# Verwalten der Datengovernance
+## [Importieren von Daten](importing-pst-files-to-office-365.md)
+### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
+### [Verwenden des Laufwerkversands zum Importieren von PST-Dateien](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [Verwenden des PST-Sammlungstools zum Suchen, Kopieren und Löschen von PST-Dateien](find-copy-and-delete-pst-files-in-your-organization.md)
+### [Filtern von Daten beim Importieren von PST-Dateien](filter-data-when-importing-pst-files.md)
+### [Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [Häufig gestellte Fragen zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md)
+### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
+#### [Verwendung von Beispiel-Connectors zum Archivieren von Drittanbieterdaten](archive-third-party-data-with-sample-connector.md)
+#### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
+## Speichern von Daten
+### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
+### [Übersicht über die unbeschränkte Archivierung](unlimited-archiving.md)
+### [Aktivieren der unbeschränkten Archivierung](enable-unlimited-archiving.md)
+### [Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## Aufbewahren von Daten
+### [Aufbewahrungsrichtlinien](retention-policies.md)
+### [Dateiplan-Manager](file-plan-manager.md)
+### [Aufbewahrungsbezeichnungen](labels.md)
+### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
+### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
+## [Freigeben von Daten](disposition-reviews.md)
+## [Aufsichtskommunikation](supervision-policies.md)
+### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
+## [Verwalten inaktiver Postfächer](inactive-mailboxes-in-office-365.md)
+### [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)
+### [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [Wiederherstellen eines inaktiven Postfachs](recover-an-inactive-mailbox.md)
+### [Rückspeichern eines inaktiven Postfachs](restore-an-inactive-mailbox.md)
+### [Löschen eines inaktiven Postfachs](delete-an-inactive-mailbox.md)
+## Überwachen der Datengovernance
+### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
+### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
+### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
+## Weitere Informationen zur Datengovernance
+### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Suchen nach Inhalten](search-for-content.md)
 ## [Verwenden der Inhaltssuche](content-search.md)
@@ -479,7 +483,7 @@
 ### [Isolierte SharePoint Online-Teamwebsite in einer Entwicklungs-/Testumgebung](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [SIEM-Serverintegration](siem-server-integration.md)
 
-# Compliance-Lösungen
+# Lösungen für die Einhaltung von Vorschriften
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [Compliance-Manager (Klassisch)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Compliance-Manager (Vorschau)](compliance-manager-overview.md)
@@ -506,12 +510,6 @@
 ### [DSGVO für Project Server](gdpr-for-project-server.md)
 ### [DSGVO für Office Web Apps Server und Office Online Server](gdpr-for-office-online-server.md)
 ### [DSGVO für lokale Windows Server-Dateifreigaben](gdpr-for-on-premises-file-shares.md)
-
-# Verwalten von Sicherheitsvorfällen
-## [Reaktion auf Sicherheitsvorfälle in Office 365](office365-security-incident-response-overview.md)
-## [Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365](detect-and-remediate-illicit-consent-grants.md)
-## [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-## [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
 # Dienstüberprüfung
 ## [Dienstüberprüfung im Office 365 Security & Compliance Center](service-assurance.md)
