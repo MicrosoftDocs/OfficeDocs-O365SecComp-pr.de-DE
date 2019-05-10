@@ -9,18 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Administratoren erfahren mehr über den Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center.
-ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a7556dd98e1381fe59a2a911dbfa27132f1aa44d
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252343"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868613"
 ---
 # <a name="auto-forwarded-messages-report"></a>Bericht über automatisch weitergeleitete Nachrichten
 
-Der Bericht über **automatisch weitergeleitete Nachrichten** im Nachrichtenfluss-Dashboard zeigt Informationen zu Nachrichten an, die von ihrer Office 365-Organisation automatisch an Empfänger in externen domänenweiter geleitet werden.
+Der Bericht über **automatisch weitergeleitete Nachrichten** im Nachrichtenfluss-Dashboard zeigt Informationen zu Nachrichten an, die von Ihrer Office 365-Organisation automatisch an Empfänger in externen domänenweiter geleitet werden.
 
-![x](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Die automatisch weitergeleiteten Nachrichten Einblicke in das Office 365 Security & Compliance Center](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
 ![Der Bericht über automatisch weitergeleitete Nachrichten im Nachrichtenfluss-Dashboard im Office 365 Security & Compliance Center](media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
 
@@ -36,4 +36,4 @@ Zwei Einblicke werden basierend auf den Berichtsdaten generiert: **neue Weiterle
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights.md).
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights.md).

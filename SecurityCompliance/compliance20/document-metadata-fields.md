@@ -1,5 +1,5 @@
 ---
-title: Dokument-Metadatenfelder in Advanced eDiscovery (Preview)
+title: Dokument-Metadatenfelder in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b9caf390e3ee0c10a35fa12cc68fcb0638987dcb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75550d48a474fc6429a780d0a03d28745e20e1f7
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251853"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33835055"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery-preview"></a>Dokument-Metadatenfelder in Advanced eDiscovery (Preview)
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokument-Metadatenfelder in Advanced eDiscovery
 
-In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Arbeitssatz in einem Fall in Advanced eDiscovery (Preview) aufgeführt. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Arbeitssatz ausgeführt wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Arbeitssatz angezeigt werden und ob das Feld eingeschlossen wird, wenn Dokumente werden exportiert. 
-
-In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Arbeitssatz in einem Fall in Advanced eDiscovery (Preview) aufgeführt. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Arbeitssatz ausgeführt wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Arbeitssatz angezeigt werden und ob das Feld eingeschlossen wird, wenn Dokumente werden exportiert. 
+Die Tabelle in diesem Artikel listet die Metadatenfelder für Dokumente in einem Übersichts Satz in einem Fall in Advanced eDiscovery auf. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Übersichts Satz läuft, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Übersichts Satz angezeigt werden, und ob das Feld bei Dokumenten ein erneut exportiert. 
 
 > [!NOTE]
-> Die Werte in Klammern in der Spalte **Searchable in Working Set** sind der Name der Eigenschaft, nach der Sie suchen können. Die Werte in Klammern in der Spalte **sichtbar in Datei Metadaten** sind der Name der Eigenschaft, die angezeigt wird, wenn Sie die Datei Metadaten anzeigen.
+> Die Werte in Klammern in der Spalte **Searchable in Review Set** sind der Name der Eigenschaft, nach der Sie suchen können. Die Werte in Klammern in der Spalte **sichtbar in Datei Metadaten** sind der Name der Eigenschaft, die angezeigt wird, wenn Sie die Datei Metadaten anzeigen.
 
-|**Feldname** </br>|**Durchsuchbar im Arbeitssatz** |**Sichtbar in Datei Metadaten** |**Exportiert** |
+|**Feldname** </br>|**Durchsuchbar im Übersichts Satz** |**Sichtbar in Datei Metadaten** |**Exportiert** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Case-Tags                  | Ja (Tags)                                      |                         | Ja         |
 |Konformitäts Bezeichnungen          |                                                 |                         | Ja         |
@@ -86,7 +84,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Arbeit
 |Extrahierter Textpfad        |                                                 |                         | Ja         |
 |Familien-ID                  | Ja (Family-ID)                                  |   Ja (Family-ID)        | Ja         |
 |Größe der Familie                |                                                 |                         | Ja         |
-|File-Klasse                 | Ja (fileClass)                                 |   Ja (File-Klasse)      | Ja         |
+|File-Klasse                 | Ja (fileclass)                                 |   Ja (File-Klasse)      | Ja         |
 |Datei-ID                    | Ja (Datei-Nr.)                                    |   Ja (ID)              | Ja         |
 |Hat Text                   |                                                 |                         | Ja         |
 |Inklusivtyp             | Ja (inklusivtype)                             |   Ja (inklusive Typ)  | Ja         |
@@ -105,9 +103,9 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Arbeit
 |Natives MD5                 |                                                 |                         | Ja         |
 |Native SHA 256             |                                                 |                         | Ja         |
 |Systemeigene Größe                | Ja (Größe)                                      |   Ja (NativeSize)     | Ja         |
-|Systemeigener Typ                | Ja (fileType)                                  |   Ja (Dateityp)       | Ja         |
-|ND ET Sort exkl. Attach     |                                                 |                         | Ja         |
-|ND ET Sort incl. Attach     |                                                 |                         | Ja         |
+|Systemeigener Typ                | Ja (filetype)                                  |   Ja (Dateityp)       | Ja         |
+|ND et Sort exkl. Attach     |                                                 |                         | Ja         |
+|ND et Sort incl. Attach     |                                                 |                         | Ja         |
 |ND-Satz                     |                                                 |                         | Ja         |
 |O365 Autoren               | Ja (Autor) *                                   |   Ja (Absender/Autor)   | Ja         |
 |O365 erstellt von            |                                                 |                         | Ja         |
@@ -115,14 +113,14 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Arbeit
 |O365 Datum geändert         | Ja (lastModifiedDate) *                         |   Ja (Datum der letzten Änderung) | Ja      |
 |O365 geändert von           |                                                 |                         | Ja         |
 |Übergeordneter Knoten                |                                                 |                         | Ja         |
-|Pivot-ID                   | Ja (pivotable)                                   |  Ja (Pivotable)          | Ja         |
+|Pivot-ID                   | Ja (pivotable)                                   |  Ja (pivotable)          | Ja         |
 |Empfängeranzahl            |                                                 |                         | Ja         |
 |Zeilennummer                 |                                                 |                         | Ja         |
 |ID festlegen                     |                                                 |                         | Ja         |
 |Zuerst Order inclusive festlegen |                                                 |                         | Ja         |
 |Ähnlichkeit prozentual         |                                                 |                         | Ja         |
 |Design Liste                | Ja (designlist)                                | Ja (Design Liste)       | Ja         |
-|Word count                 | Ja (wordCount)                                 |                         | Ja         |
+|Word count                 | Ja (WordCount)                                 |                         | Ja         |
 |Relevanz (Problem)    | Ja (relevanceScore_issueNum)                   |                         | Ja           |
 |Quantil lesen (Problem)    | Ja (readPercentile_issueNum)                   |                         | Ja          |
 |Relevance-Tag (Problem)      | Ja (relevanceTag_issueNum)                     |                         | Ja           |

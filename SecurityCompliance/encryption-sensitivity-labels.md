@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257253"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628330"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -113,6 +113,26 @@ Der Rights Management-Aussteller erhält immer Vollzugriff für das Dokument ode
 - Der Rights Management-Aussteller kann ein Dokument weiterhin öffnen, nachdem es gesperrt wurde.
 
 Weitere Informationen finden Sie unter [Rights Management-Aussteller und Rights Management-Besitzer](https://docs.microsoft.com/de-DE/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Bezeichnung angewendet wird
+
+Bevor eine Vertraulichkeitsbezeichnung auf Inhalte angewendet wird, ist es möglich, dass ein Benutzer die Inhalte durch Anwenden einer anderen Schutzeinstellung bereits verschlüsselt hat. Ein Benutzer kann beispielsweise Folgendes angewendet haben:
+
+- Die Option **Nicht weiterleiten**.
+- Benutzerdefinierten Schutz mithilfe des Azure Information Protection-Clients mit einheitlichen Bezeichnungen.
+- Eine RMS-Vorlage (Rights Management Service), die die Inhalte verschlüsselt, aber keiner Bezeichnung zugewiesen ist.
+
+In dieser Tabelle wird beschrieben, was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Vertraulichkeitsbezeichnung auf diese Inhalte angewendet wird.
+<br/>
+<br/>
+
+| |**Benutzer wendet eine Vertraulichkeitsbezeichnung bei deaktivierter Verschlüsselung an**|**Benutzer wendet eine Vertraulichkeitsbezeichnung bei aktivierter Verschlüsselung an**|**Benutzer wendet eine Bezeichnung mit „Schutz entfernen“ an**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**Nicht weiterleiten**|E-Mail – Schutz wird entfernt.<br/>Dokument – Schutz wird beibehalten.|Bezeichnungsschutz wird angewendet.|**Nicht weiterleiten** wird entfernt.|
+|**Benutzerdefinierter Schutz**<sup>1</sup>|Schutz wird beibehalten.|Bezeichnungsschutz wird angewendet.|Benutzerdefinierter Schutz wird entfernt.|
+|**Azure RMS-Vorlage**|Schutz wird beibehalten.|Bezeichnungsschutz wird angewendet.|Benutzerdefinierter Schutz wird entfernt.|
+
+<sup>1</sup>Dies wird nur im Azure Information Protection-Bezeichnungsclient unterstützt.
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Speichern von verschlüsselten Inhalten in OneDrive und SharePoint
 

@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren erfahren mehr über die Fehlerbehebung der Absenderdomäne im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252178"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868563"
 ---
 # <a name="fix-sender-domain-insight"></a>Beheben von Absenderdomänen Einblicken
-
-> [!NOTE]
-> Die in diesem Thema beschriebenen Features wurden nicht für alle Office 365-Organisationen bereitgestellt und können geändert werden.
 
 Office 365 erfordert Nachrichten, die von internen lokalen e-Mail-Umgebungen an Office 365 gesendet werden, um bestimmte Sicherheitskriterien zu erfüllen:
 
@@ -38,16 +34,16 @@ Nachrichten, die die Kriterien nicht erfüllen, werden der Organisation nicht zu
 
 Die Einblicke in die **Absenderdomäne von Fix** zeigen Ihnen e-Mails von Ihrer lokalen Umgebung, die nicht den Kriterien entsprechen, hilft Ihnen bei der Identifizierung potenziell gefährdeter Computer und Benutzerkonten in Ihrer lokalen e-Mail-Umgebung und unterstützt Sie bei der Durchführung Korrekturaktionen.
 
-![Die FehlerbeHebung der Absenderdomäne im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/sender-domain-insight-selected.png)
+![Die Fehlerbehebung der Absenderdomäne im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/sender-domain-insight-selected.png)
 
 Wenn Sie auf **Details anzeigen**klicken, werden Sie zu einem anderen Widget mit weiteren Details geführt, wie im folgenden Diagramm dargestellt:
 
-![Das Widget "Details" in der FehlerbeHebung der Absenderdomäne](media/sender-domain-view-details.png)
+![Das Widget "Details" in der Fehlerbehebung der Absenderdomäne](media/sender-domain-view-details.png)
 
 Der eingehende Connector, der zum übermitteln der Nachrichten an Office 365 verwendet wurde, wird angezeigt. Sie können auch auf **Beispiel Nachrichten-IDs anzeigen** klicken, um Details zu den Nachrichten anzuzeigen, die von Ihrer lokalen e-Mail-Umgebung gesendet wurden. Da diese Nachrichten von Office 365 abgelehnt wurden, können Sie die Nachrichtenablaufverfolgung nicht verwenden, aber die Beispiel Nachrichten-IDs verwenden, um die Nachrichten in Ihrer lokalen e-Mail-Umgebung nachzuverfolgen.
 
-![Anzeigen von Beispiel Nachrichten-IDs in der FehlerbeHebung der Absenderdomäne](media/sender-domain-view-sample-message-ids.png)
+![Anzeigen von Beispiel Nachrichten-IDs in der Fehlerbehebung der Absenderdomäne](media/sender-domain-view-sample-message-ids.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).

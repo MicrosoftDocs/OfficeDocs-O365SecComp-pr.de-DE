@@ -9,20 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren können sich über den Bericht über nicht akzeptierte Domänen im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252138"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868573"
 ---
 # <a name="non-accepted-domain-report"></a>Bericht über nicht akzeptierte Domänen
 
-> [!NOTE]
-> Die in diesem Thema beschriebenen Features wurden nicht für alle Office 365-Organisationen bereitgestellt und können geändert werden.
-
-Ähnlich wie bei der **Absenderdomänen** -Einsicht identifiziert die **nicht akzeptierte Domänen** Einsicht Nachrichten von Ihrer lokalen e-Mail-Organisation, aber die Domäne des Absenders ist nicht als akzeptierte domäne in Ihrer Office 365-Organisation konfiguriert.
+Ähnlich wie bei der **Absenderdomänen** -Einsicht identifiziert die **nicht akzeptierte Domänen** Einsicht Nachrichten von Ihrer lokalen e-Mail-Organisation, aber die Domäne des Absenders ist nicht als akzeptierte Domäne in Ihrer Office 365-Organisation konfiguriert.
 
 Office 365 kann diese Nachrichten Drosseln, wenn wir über Daten nachweisen können, dass die Absicht dieser Nachrichten bösartig ist. Daher ist es wichtig, dass Sie verstehen, was geschieht, und um das Problem zu beheben.
 
@@ -38,4 +34,4 @@ Wenn Sie eine Zeile in der Tabelle auswählen, werden weitere Details angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).

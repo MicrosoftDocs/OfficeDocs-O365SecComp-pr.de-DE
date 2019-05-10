@@ -1,51 +1,42 @@
 ---
-title: Office 365-Nachrichten Verschlüsselungsrichtlinie für vertrauliche Informationen
+title: Erstellen von Richtlinien für sensible Datentypen für Ihr Unternehmen mithilfe von Office 365-Nachrichtenverschlüsselung
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/31/2019
-ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Zusammenfassung: Office 365-Nachrichten Verschlüsselungsrichtlinie für vertrauliche Informationstypen, die jetzt verfügbar sind.'
-ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_Enterprise
+description: 'Zusammenfassung: Office 365-Nachrichten Verschlüsselungsrichtlinie für vertrauliche Informationstypen.'
+ms.openlocfilehash: 44966303ec7c58fdd82f733e1922073de848cf73
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261263"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834834"
 ---
-# <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Office 365-Nachrichten Verschlüsselungsrichtlinie für vertrauliche Informationen
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-office-365-message-encryption"></a>Erstellen von Richtlinien für sensible Datentypen für Ihr Unternehmen mithilfe von Office 365-Nachrichtenverschlüsselung
 
-Update (1/30/19): im Oktober 2018 haben wir mit einer kleinen Auswahl an Kunden zusammengearbeitet, um zu verstehen, ob wir den Schutz vereinfachen können, indem Sie vertrauliche e-Mails auf der Grundlage bestimmter vertraulicher Informationstypen automatisch verschlüsseln. Basierend auf positiven Feedback aus diesem Beispiel haben wir uns entschieden, im Dezember 2018 zu einem vielfältigeren Profil von Mandanten zu expandieren. Nachdem wir die nächste Einführung zur Auswahl von Mandanten kommuniziert haben, haben wir uns Ihr Feedback angehört und festgestellt, dass Kunden mit komplexeren Umgebungen die Regeln vorsichtiger implementieren wollten, und wir passen unsere Pläne daher an.
+Sie können entweder Exchange-Nachrichtenfluss Regeln oder Office 365 Data Loss Prevention (DLP) verwenden, um eine Richtlinie für vertrauliche Informationen mit der Office 365-Nachrichtenverschlüsselung zu erstellen. Zum Erstellen einer Exchange-Nachrichtenfluss Regel können Sie entweder die Exchange-Verwaltungskonsole (EAC) oder PowerShell verwenden.
 
-Wenn Ihre Organisation für die Einführung ab dem 15. Januar 2019 ausgewählt wurde, wird die automatische Richtlinie nicht eingeführt. Stattdessen geben wir in diesem Artikel Anweisungen dazu, wie Sie die Einführung selbst abschließen können. Lesen Sie weiter, um herauszufinden, wie.
+### <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>So erstellen Sie die Richtlinie mithilfe von Nachrichtenfluss Regeln in der Exchange-Verwaltungskonsole
 
-||
-|:-----|
-|Dieser Artikel ist Teil einer größeren Artikelreihe zur Nachrichtenverschlüsselung von Office 365. Dieser Artikel richtet sich an Administratoren und ITPros. Wenn Sie nur nach Informationen zum Senden oder Empfangen einer verschlüsselten Nachricht suchen, lesen Sie die Artikelliste in [Office 365 Message Encryption (OM)](ome.md) , und suchen Sie nach dem Artikel, der Ihren Anforderungen am besten entspricht. |
-||
-
-## <a name="how-to-create-the-sensitive-information-type-policy-for-your-tenant"></a>Erstellen der Richtlinie für vertrauliche Informationstypen für Ihren Mandanten
-
-Sie können entweder Exchange-Nachrichtenfluss Regeln oder Office 365 Data Loss Prevention (DLP) verwenden, um die Richtlinie für vertrauliche Informationstypen zu erstellen. Zum Erstellen einer Exchange-Nachrichtenfluss Regel können Sie entweder die Exchange-Verwaltungskonsole (EAC) oder PowerShell verwenden.
-
-### <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>So erstellen Sie die Richtlinie mithilfe von Nachrichtenfluss Regeln in der Exchange-verwaltungsKONSOLE
-
-Melden Sie sich bei der Exchange-Verwaltungskonsole an, und wechseln Sie zu **Nachrichtenfluss** > **Regeln**. Erstellen Sie dort eine Regel, die die Office 365-Nachrichtenverschlüsselung auf Grundlage von Bedingungen wie dem vorhanden sein bestimmter Schlüsselwörter oder vertraulicher Informationstypen in der Nachricht oder Anlage anwendet.
+Melden Sie sich beim Exchange Admin Center (EAC) an, und wechseln Sie zu **Nachrichtenfluss** > **Regeln**. Erstellen Sie auf der Seite Regeln eine Regel, die die Office 365-Nachrichtenverschlüsselung anwendet. Sie können eine Regel erstellen, die auf Bedingungen wie dem vorhanden sein bestimmter Schlüsselwörter oder vertraulicher Informationstypen in der Nachricht oder Anlage basiert.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>So erstellen Sie die Richtlinie mithilfe von Nachrichtenfluss Regeln in PowerShell
 
-Starten Sie eine Windows PowerShell-Sitzung, und stellen Sie eine Verbindung mit Exchange Online her, wenn Sie ein Arbeits-oder Schulkonto mit globalen Administratorberechtigungen in Ihrer Office 365-Organisation verwenden. Weitere Informationen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Verwenden Sie die Cmdlets Set-IRMConfiguration und New-TransporRule, um die Richtlinie zu erstellen.
+Verwenden Sie ein Arbeits-oder Schulkonto mit globalen Administratorberechtigungen in Ihrer Office 365-Organisation, starten Sie eine Windows PowerShell-Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Weitere Informationen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell). Verwenden Sie die Cmdlets Set-IRMConfiguration und New-TransportRule, um die Richtlinie zu erstellen.
 
 ### <a name="example-mail-flow-rule-created-with-powershell"></a>Mit PowerShell erstellte Beispiel-e-Mail-Fluss Regel
 
-Durch Ausführen der folgenden Befehle in PowerShell wird eine Exchange-Nachrichtenfluss Regel erstellt, mit der e-Mails, die sich außerhalb ** Ihrer Organisation befinden, automatisch mit der Verschlüsselungsrichtlinie verschlüsselt werden, wenn die e-Mails oder Ihre Anlagen die folgenden vertraulichen Informationstypen:
+Führen Sie die folgenden Befehle in PowerShell aus, um eine Exchange-Nachrichtenfluss Regel zu erstellen, mit der e-Mails, die ** außerhalb Ihrer Organisation gesendet werden, automatisch mit der Verschlüsselungsrichtlinie verschlüsselt werden, wenn die e-Mails oder Ihre Anlagen die folgenden vertraulichen Informationen enthalten. Typen
 
 - ABA-Routingnummer
 - Kreditkartennummer
@@ -62,7 +53,7 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="how-recipients-access-attachments"></a>Wie Empfänger auf Anlagen zugreifen
 
-Nachdem eine Nachricht verschlüsselt wurde, haben die Empfänger uneingeschränkten Zugriff auf Anlagen, nachdem Sie auf Ihre verschlüsselte e-Mail zugegriffen haben.
+Nachdem Office 365 eine Nachricht verschlüsselt hat, haben Empfänger uneingeschränkten Zugriff auf Anlagen, wenn Sie auf Ihre verschlüsselte e-Mail zugreifen und diese öffnen.
 
 ## <a name="to-prepare-for-this-change"></a>So bereiten Sie diese Änderung vor
 
@@ -73,12 +64,11 @@ Möglicherweise möchten Sie die entsprechenden Endbenutzer Dokumentationen und 
 
 ## <a name="view-these-changes-in-the-audit-log"></a>Diese Änderungen im Überwachungsprotokoll anzeigen
 
-Diese Aktivität wird überwacht und steht Office 365-Administratoren zur Verfügung. Der Vorgang ist "New-transportRule" und ein Auszug aus einem Beispiel Überwachungseintrag aus der Überwachungsprotokoll Suche im Security & Compliance Center befindet sich unten:
+Office 365 überwacht diese Aktivität und stellt Sie Office 365-Administratoren zur Verfügung. Der Vorgang ist "New-TransportRule" und ein Auszug aus einem Beispiel Überwachungseintrag aus der Überwachungsprotokoll Suche im Security & Compliance Center befindet sich unten:
 
-|     |
-| --- |
-| *{"Creation-Zeit": "2018-11-28T23:35:01", "ID": "A1b2C3d4-daa0-4c4f-A019-03a1234a1b0c", "Operation": "New-transportRule", "Organizational-ID": "123456-221d-12345", "RecordType": 1, "ResultStatus": "true", "UserKey": "Microsoft-Operator", " Usertype ": 3," Version ": 1," Workload ":" Exchange "," ClientIP ":" 123.456.147.68:17584 "," ObjectId ":" "," UserId ":" Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso. onmicrosoft. com "," OriginatingServer ":" CY4PR13MBXXXX ( 15.20.1382.008) "," Parameters ": {" Name ":" Organization "," Value ":" 123456-221d-12346 "{" Name ":" ApplyRightsProtectionTemplate "," Value ":" Encrypt "}, {" Name ":" Name "," Value ":" verSchlüsseln von ausgehenden vertraulichen e-Mails (Out of Box Rule) "}, {" Name " MessageContainsDataClassifications "... usw.* |
-| |
+```text
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications”…etc.*
+```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>So deaktivieren oder ändern Sie die Richtlinie für vertrauliche Informationstypen
 

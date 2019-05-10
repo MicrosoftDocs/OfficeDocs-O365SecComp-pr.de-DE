@@ -494,6 +494,7 @@
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
 ### [Häufig gestellte Fragen zur Dienstverschlüsselung mit Kundenschlüssel für Office 365](service-encryption-with-customer-key-faq.md)
 ## [DSGVO: Anfragen von Datensubjekten (DSRs)](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Customer Lockbox](customer-lockbox-requests.md)
 ## [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
 ### [Übersicht: Office 365-Schutz für die DSGVO](office-365-info-protection-for-gdpr-overview.md)
 ### [Suchen und Finden personenbezogener Daten](search-for-and-find-personal-data.md)

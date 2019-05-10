@@ -1,5 +1,5 @@
 ---
-title: Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web
+title: Nicht überprüfter Absender
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Um zu verhindern, dass Phishing-Nachrichten zu Ihrem Postfach gelangen, überprüfen Outlook.com und Outlook im Web, ob der Absender der Empfänger ist und verdächtige Nachrichten als Junk-e-Mail kennzeichnet.
-ms.openlocfilehash: edba30bb2ac0f9dc6ebc12db957a518de0c1b543
-ms.sourcegitcommit: 9907bebc5f225032f681c4952de0b0be2df278ac
+ms.openlocfilehash: 5d4315afb33964e7c466384366b7315287cf6298
+ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345900"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867843"
 ---
-# <a name="identify-suspicious-messages-in-outlookcom-and-outlook-on-the-web"></a>Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web
+# <a name="unverified-sender"></a>Nicht überprüfter Absender
 
 Um zu verhindern, dass Phishing-Nachrichten zu Ihrem Postfach gelangen, überprüfen Outlook.com und Outlook im Web, ob der Absender der Empfänger ist und verdächtige Nachrichten als Junk-e-Mail kennzeichnet.
 
@@ -31,9 +31,25 @@ Um zu verhindern, dass Phishing-Nachrichten zu Ihrem Postfach gelangen, überpr�
 
 Outlook.com und Outlook im Web zeigen Indikatoren an, wenn der Absender einer Nachricht nicht identifiziert werden kann, oder Ihre Identität unterscheidet sich von dem, was in der von-Adresse angezeigt wird.
 
+## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Verwalten der Nachrichten, die die nicht verifizierte Absender Behandlung erhalten 
+
+Wenn Sie ein Office 365-Kunde sind, können Sie diese Funktion über das Security & Compliance Center verwalten. 
+
+- Im Office 365 Security & Compliance Center können mandantenadministratoren die Funktion durch den Schutz vor Spoofing unter der Anti-Phishing-Richtlinie ein-oder ausschalten. Darüber hinaus kann es über das Cmdlet Set-AntiPhishPolicy verwaltet werden. Weitere Informationen finden Sie unter Schutz vor Phishing in Office 365 und Set-AntiPhishPolicy.
+
+    ![Bearbeiten nicht authentifizierter Absender in der grafischen Benutzeroberfläche.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+
+- Wenn ein Administrator ein falsch positives Ergebnis ermittelt hat und ein Absender nicht die nicht verifizierte Absender Behandlung erhalten soll, können Sie eine der folgenden Aktionen ausführen, um den Absender der Spoof Intelligence-Zulassungsliste für Vortäuschungen hinzuzufügen:
+        
+    - Fügen Sie das Domänenpaar über Spoof Intelligence Insight hinzu. Weitere Informationen finden Sie unter Exemplarische Vorgehensweise: Spoof Intelligence Insight
+                
+    - Fügen Sie das Domänenpaar über das PhishFilterPolicy-Cmdlet hinzu. Weitere Informationen finden Sie unter Set-PhishFilterPolicy und Schutz vor Spoofing in Office 365
+
+Darüber hinaus wenden wir die nicht verifizierte Absender Behandlung nicht an, wenn Sie über eine Zulassungsliste für Administratoren an den Posteingang übermittelt wurde, einschließlich e-Mail-Transport Regeln (ETRs), sichere Domänenliste (Anti-Spam-Richtlinie), Liste sicherer Absender oder Benutzer hat diesen Benutzer als "sicheren Absender" in seinem Inbox.
+
 ### <a name="you-see-a--in-the-sender-image"></a>Sie sehen ein '? ' im Absender Bild
 
-Wenn Outlook.com und Outlook im Web die Identität des Absenders nicht mithilfe von e-Mail-Authentifizierungstechniken überprüfen können, wird im Absender Foto ein "?" angezeigt.
+Wenn Outlook.com und Outlook im Web die Identität des Absenders nicht mithilfe von e-Mail-Authentifizierungstechniken überprüfen können, wird im Absender Foto ein "?" angezeigt. 
 
 ![Nachricht wurde nicht erfolgreich überprüft](media/message-did-not-pass-verification.jpg)
 
@@ -63,9 +79,9 @@ Woher wissen Sie, ob Sie das neue Outlook im Web verwenden? Sehen Sie sich die f
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Welche Kriterien werden von Outlook.com und Outlook im Web verwendet, um die Eigenschaften "?" und "Via" hinzuzufügen?
 
-Für die "?" im Absender Bild: Outlook.com erfordert, dass die Nachricht entweder SPF-oder DKIM-Authentifizierung übergibt. Weitere Informationen finden Sie unter [Einrichten von SPF in office 365 zur](set-up-spf-in-office-365-to-help-prevent-spoofing.md) Verhinderung von Spoofing und [Verwenden von DKIM zum Überprüfen ausgehender e-Mails, die von Ihrer benutzerdefinierten domäne in Office 365 gesendet](use-dkim-to-validate-outbound-email.md)werden.
+Für die "?" im Absender Bild: Outlook.com erfordert, dass die Nachricht entweder SPF-oder DKIM-Authentifizierung übergibt. Weitere Informationen finden Sie unter [Einrichten von SPF in Office 365 zur](set-up-spf-in-office-365-to-help-prevent-spoofing.md) Verhinderung von Spoofing und [Verwenden von DKIM zum Überprüfen ausgehender e-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet](use-dkim-to-validate-outbound-email.md)werden.
 
-Für das via-Tag: Wenn sich die Domäne in der von-Adresse von der Domäne in der DKIM-Signatur oder von der SMTP-e-MAIL von unterscheidet, zeigt Outlook.com die Domäne in einem dieser beiden Felder an (bevorzugt die DKIM-Signatur).
+Für das via-Tag: Wenn sich die Domäne in der von-Adresse von der Domäne in der DKIM-Signatur oder von der SMTP-e-Mail von unterscheidet, zeigt Outlook.com die Domäne in einem dieser beiden Felder an (bevorzugt die DKIM-Signatur).
 
 ### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>Können diese Eigenschaften mit IP-Zulässigkeit, Exchange-Transport Regel oder sicheren Absendern außer Kraft gesetzt werden?
 
@@ -75,7 +91,7 @@ Sie können diese Eigenschaften nicht außer Kraft setzen.
 
 Für das "?" im Absender Bild: als Absender sollten Sie Ihre Nachricht entweder mit SPF oder DKIM authentifizieren.
 
-Für das via-Tag: als Absender sollten Sie sicherstellen, dass entweder die Domäne in der DKIM-Signatur oder die SMTP-e-MAIL-Nachricht mit der Domäne in der von-Adresse identisch oder eine Unterdomäne ist.
+Für das via-Tag: als Absender sollten Sie sicherstellen, dass entweder die Domäne in der DKIM-Signatur oder die SMTP-e-Mail-Nachricht mit der Domäne in der von-Adresse identisch oder eine Unterdomäne ist.
 
 ### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>Zeigt Outlook.com und Outlook im Web dies für jede Nachricht an, die die Authentifizierung nicht übergibt?
 

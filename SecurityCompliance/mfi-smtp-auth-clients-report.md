@@ -9,20 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren erfahren mehr über den Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252553"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868553"
 ---
 # <a name="smtp-auth-clients-report"></a>Bericht über SMTP-AUTH-Clients
 
-> [!NOTE]
-> Die in diesem Thema beschriebenen Features wurden nicht für alle Office 365-Organisationen bereitgestellt und können geändert werden.
-
-Im Bericht **SMTP AUTH Clients** wird die Verwendung des SMTP-AUTH-Client Übermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation hervorgehoben. Dieses Legacy Protokoll (das den Endpunkt smtp.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig dafür, von kompromittierten Konten zum Senden von e-Mails verwendet zu werden.  Mit diesem Bericht können Sie nach ungewöhnlichen Aktivitäten suchen. Außerdem werden die TLS-Verwendungsdaten für Clients oder Geräte mit SMTP-Authentifizierung angezeigt.
+Im Bericht **SMTP AUTH Clients** wird die Verwendung des SMTP-AUTH-Client Übermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation hervorgehoben. Dieses Legacy Protokoll (das den Endpunkt SMTP.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig dafür, von kompromittierten Konten zum Senden von e-Mails verwendet zu werden.  Mit diesem Bericht können Sie nach ungewöhnlichen Aktivitäten suchen. Außerdem werden die TLS-Verwendungsdaten für Clients oder Geräte mit SMTP-Authentifizierung angezeigt.
 
 Das im e-Mail-Fluss-Dashboard angezeigte Widget gibt die Anzahl der Benutzer oder Dienstkonten an, die das SMTP-Authentifizierungsprotokoll in den letzten 7 Tagen verwendet haben.
 
@@ -34,7 +30,7 @@ Wenn Sie auf das Widget klicken, wird ein Flyout geöffnet, das eine aggregierte
 
 Wenn Sie auf den Link **SMTP-AUTH-Clients melden** klicken, werden zwei Hauptdaten Pivots und zwei Datenansichten angezeigt. Die Daten Pivots sind die **sendelautstärke** und die **TLS-Verwendung**. Die Datenansichten sind das Diagramm und die Detailtabelle.
 
-Die **sendenDe Volumen** Ansicht zeigt die Anzahl der Nachrichten an, die über SMTP-Authentifizierung für den angegebenen Zeitraum gesendet wurden. Sie können den Range anpassen, indem Sie auf **Filter**klicken. Das Diagramm wird nach der Absenderdomäne organisiert. Sie können für jede Domäne separate Daten anzeigen, indem Sie die Domäne in der Dropdownliste **Daten anzeigen für** auswählen.
+Die **sendende Volumen** Ansicht zeigt die Anzahl der Nachrichten an, die über SMTP-Authentifizierung für den angegebenen Zeitraum gesendet wurden. Sie können den Range anpassen, indem Sie auf **Filter**klicken. Das Diagramm wird nach der Absenderdomäne organisiert. Sie können für jede Domäne separate Daten anzeigen, indem Sie die Domäne in der Dropdownliste **Daten anzeigen für** auswählen.
 
 ![Senden von Volumes im SMTP-AUTH-Clientbericht](media/smtp-auth-clients-report-sending-volume.png)
 
@@ -54,4 +50,4 @@ Sie können auch eine detailliertere Version des Berichts herunterladen, indem S
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).

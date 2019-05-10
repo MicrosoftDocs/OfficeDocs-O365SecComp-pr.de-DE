@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren können sich über den Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267140"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868603"
 ---
 # <a name="non-delivery-report"></a>Unzustellbarkeitsbericht
-
-> [!NOTE]
-> Die in diesem Thema beschriebenen Features wurden nicht für alle Office 365-Organisationen bereitgestellt und können geändert werden.
 
 Der **Unzustellbarkeitsbericht** enthält die am häufigsten auftretenden Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte bezeichnet) für Benutzer in Ihrer Organisation. Dieser Bericht soll die Details von Unzustellbarkeitsberichten anzeigen, damit Sie Probleme beheben können.
 
@@ -36,4 +32,4 @@ Wenn Sie eine Zeile in der Tabelle auswählen, um die Details des jeweiligen NDR
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).

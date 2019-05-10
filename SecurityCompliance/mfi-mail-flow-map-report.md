@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Administratoren können sich über den Bericht "Nachrichtenfluss Karte" im e-Mail-Fluss-Dashboard im Security & Compliance Center informieren.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f80bb71434f4091d64318a096b1f55238a1409cc
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252428"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868585"
 ---
 # <a name="mail-flow-map-report"></a>Bericht über Nachrichtenfluss Karte
-
-> [!NOTE]
-> Die in diesem Thema beschriebenen Features wurden nicht für alle Office 365-Organisationen bereitgestellt und können geändert werden.
 
 Dieser Bericht bietet Einblicke in die Art und Weise, wie e-Mails über Ihre Office 365-Organisation weitergeleitet werden. Sie können diese Informationen verwenden, um Muster zu erlernen, Anomalien zu identifizieren und Probleme beim Auftreten zu beheben.
 
@@ -54,4 +50,4 @@ Zugehörige Einblicke werden unter der Nachrichtenfluss Zuordnung angezeigt, wen
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).
