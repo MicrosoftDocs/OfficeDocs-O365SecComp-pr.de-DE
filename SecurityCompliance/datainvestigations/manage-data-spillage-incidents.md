@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird beschrieben, wie Sie mit dem Tool "neue Daten Untersuchungen (Vorschau)" im Security & Compliance Center einen Vorfall mit Datenausfällen verwalten können.
-ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
+ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258823"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33884763"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Verwalten eines Daten verschüttenden Vorfalls in Microsoft 365
 
@@ -34,7 +34,10 @@ Dieser Artikel enthält eine Liste mit Anweisungen zum endgültigen Löschen von
 
 ## <a name="scenario"></a>Szenario
 
-Sie werden über einen Vorfall bei Datenübertragung informiert, bei dem ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail geteilt hat. Sie möchten schnell bewerten, wer dieses Dokument sowohl innerhalb als auch außerhalb Ihrer Organisation erhalten hat. Nachdem Sie den Vorfall untersucht haben, planen Sie, ihre Ergebnisse für andere Prüfer zu überprüfen und die verschütteten Daten dann endgültig aus Office 365 zu entfernen. Nach Abschluss der Untersuchung möchten Sie alle Nachweise entfernen. 
+Sie werden über einen Vorfall bei Datenübertragung informiert, bei dem ein Mitarbeiter unwissentlich ein streng vertrauliches Dokument mit mehreren Personen per e-Mail geteilt hat. Sie möchten schnell bewerten, wer dieses Dokument sowohl innerhalb als auch außerhalb Ihrer Organisation erhalten hat. Nachdem Sie den Vorfall untersucht haben, planen Sie, ihre Ergebnisse für andere Prüfer zu überprüfen und dann die verschütteten Daten aus Ihrer Office 365-Organisation dauerhaft zu entfernen. Nach Abschluss der Untersuchung möchten Sie alle Nachweise entfernen. 
+
+> [!IMPORTANT]
+> Während Sie die verschütteten Daten in ihrer eigenen Organisation dauerhaft entfernen können, können Daten, die außerhalb Ihrer Organisation verschüttet wurden, mit diesen Funktionen nicht entfernt werden.
 
 ## <a name="workflow"></a>Workflow
 
@@ -57,7 +60,7 @@ Im folgenden finden Sie den Workflow für die Verwendung von Daten Untersuchunge
 
 - Zum Erstellen einer Untersuchung müssen Sie Mitglied der Rollengruppe "Compliance-Administrator" im Security & Compliance Center sein.
 
-- Zum Löschen von Nachrichten müssen Sie Mitglied einer Rollengruppe im Security & Compliance Center sein, dem die Rolle "suchen und löschen" zugewiesen ist. Diese Rolle wird standardmäßig der Rollengruppe "Organisationsverwaltung" zugewiesen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Permissions in the Security _AMP_ Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
+- Zum Löschen von Nachrichten müssen Sie Mitglied einer Rollengruppe im Security & Compliance Center sein, dem die Rolle "suchen und löschen" zugewiesen ist. Diese Rolle wird standardmäßig der Rollengruppe "Organisationsverwaltung" zugewiesen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Permissions in the Security & Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
 
 - Um zu steuern, welche Benutzerpostfächer und OneDrive-Konten ein Prüfer durchsuchen kann, kann Ihre Organisation Konformitäts Grenzen einrichten. Um weitere Informationen zu erhalten, [richten Sie Compliance-Grenzen für eDiscovery](../set-up-compliance-boundaries.md)-Untersuchungen ein. 
 
@@ -122,7 +125,7 @@ Um zu ermitteln, welche Benutzer am Datenüberlauf beteiligt sind, können Sie e
 
 ### <a name="deleting-mailbox-items"></a>Löschen von Postfachelementen
 
-Nachdem Sie überprüft und überprüft haben, dass die Suchergebnisse nur die e-Mail-Nachrichten enthalten, die gelöscht werden müssen, können Sie sie dauerhaft löschen, indem Sie den Befehl **New-ComplianceSearchAction-Purge-purgeType HardDelete** in Security & Compliance ausführen. Center PowerShell. Anweisungen finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten](../search-for-and-delete-messages-in-your-organization.md). 
+Nachdem Sie überprüft und überprüft haben, dass die Suchergebnisse nur die e-Mail-Nachrichten enthalten, die gelöscht werden müssen, können Sie sie dauerhaft löschen, indem Sie den Befehl **New-ComplianceSearchAction-Purge-purgetype HardDelete** in Security & Compliance ausführen. Center PowerShell. Anweisungen finden Sie unter [Suchen nach und Löschen von e-Mail-Nachrichten](../search-for-and-delete-messages-in-your-organization.md). 
 
 Wenn die Wiederherstellung einzelner Elemente für Postfächer in Ihrer Organisation aktiviert ist, werden dauerhaft gelöschte Elemente im Ordner "Wiederherstellbare Elemente" des Benutzers gespeichert (und für Administratoren zugänglich), bis der Aufbewahrungszeitraum für gelöschte Elemente endet (der Standardwert beträgt 14 Tage). Wenn jedoch ein Postfach, das verschüttete Daten enthält, über eine gesetzliche Aufbewahrungspflicht verfügt oder einer Beibehaltungsrichtlinie zugewiesen ist, werden bereinigte Nachrichten im Ordner "Wiederherstellbare Elemente" aufbewahrt, bis die Haltedauer für das Element abläuft. Wenn Sie Nachrichten sofort löschen möchten, müssen Sie zusätzliche Aufgaben ausführen. Anweisungen hierzu finden Sie unter [Löschen von Elementen im Ordner "Wiederherstellbare Elemente" von cloudbasierten Postfächern in der Warteschleife](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
 
@@ -143,6 +146,6 @@ So löschen Sie eine Untersuchung:
 
 1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
 
-2. Klicken Sie auf **untersuchUng löschen**. 
+2. Klicken Sie auf **Untersuchung löschen**. 
 
 Wenn Sie die Untersuchung nicht löschen müssen oder wenn Sie die während der Untersuchung gesammelten Informationen speichern möchten, klicken Sie auf **Fall abschließen**. Dann können Sie zu einem späteren Zeitpunkt geschlossene Untersuchungen erneut öffnen.
