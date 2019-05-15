@@ -14,24 +14,24 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Outlook-Regeln und benutzerdefinierte Formulare Injections-Angriffe in Office 365 erkennen und beheben können.
-ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256863"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979491"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365
 
 **Zusammenfassung** Erfahren Sie, wie Sie die Outlook-Regeln und benutzerdefinierte Formulare Injections-Angriffe in Office 365 erkennen und beheben können.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Was ist die Outlook-Regeln und benutzerdefinierte Formulare Injection-Angriff?
-Nachdem ein Angreifer ein Konto in Ihrem Mandanten verletzt hat und einsetzt, werden Sie versuchen, eine Möglichkeit einzurichten, um sich wieder einzulassen, nachdem Sie erkannt und entfernt wurden. Dies wird als Einrichten eines Persistenz-Mechanismus bezeichnet. Dies können Sie auf zweiErlei Weise tun, indem Sie Outlook-Regeln ausnutzen oder benutzerdefinierte Formulare in Outlook einfügen.
+Nachdem ein Angreifer ein Konto in Ihrem Mandanten verletzt hat und einsetzt, werden Sie versuchen, eine Möglichkeit einzurichten, um sich wieder einzulassen, nachdem Sie erkannt und entfernt wurden. Dies wird als Einrichten eines Persistenz-Mechanismus bezeichnet. Dies können Sie auf zweierlei Weise tun, indem Sie Outlook-Regeln ausnutzen oder benutzerdefinierte Formulare in Outlook einfügen.
 In beiden Fällen wird die Regel oder das Formular vom Cloud-Dienst bis zum Desktop Client synchronisiert, sodass ein vollständiges Format und eine erneute Installation der Client Software den Injektions Mechanismus nicht eliminiert. Der Grund ist, dass beim erneuten Verbinden der Outlook-Client Software mit dem Postfach in der Cloud die Regeln und Formulare erneut aus der Cloud heruntergeladen werden. Sobald die Regeln und Formulare vorhanden sind, verwendet der Angreifer Sie zum Ausführen von Remote-oder benutzerdefinierten Code, in der Regel zur Installation von Schadsoftware auf dem lokalen Computer. Die Schadsoftware stiehlt dann Anmeldeinformationen erneut oder führt andere illegale Aktivitäten aus. Die gute Nachricht ist, dass Sie bei der Aktualisierung Ihrer Clients auf die neueste Version nicht anfällig für die Bedrohung sind, da die aktuellen Outlook-Client Standardwerte beide Mechanismen blockieren. 
 
 Die Angriffe folgen in der Regel folgenden Mustern:
 
-Die Regel ausNutzung
+Die Regel Ausnutzung
 1. Der Angreifer stiehlt den Benutzernamen und das Kennwort eines Benutzers.
 2. Der Angreifer meldet sich dann bei diesem Benutzer-Exchange-Postfach an. Das Postfach kann entweder in Exchange Online oder lokal in Exchange vorhanden sein.
 3. Der Angreifer erstellt dann eine Weiterleitungsregel im Postfach, die ausgelöst wird, wenn das Postfach eine e-Mail erhält, die den Kriterien der Regel entspricht. Die Kriterien von Rule und der Inhalt der Trigger-e-Mails sind für jeden anderen maßgeschneidert.
@@ -40,7 +40,7 @@ Die Regel ausNutzung
 6. Die Anwendung installiert normalerweise Schadsoftware wie [PowerShell Empire](https://www.powershellempire.com/)lokal auf dem Computer des Benutzers.
 7. Mit der Schadsoftware kann der Angreifer den Benutzernamen und das Kennwort des Benutzers oder andere Anmeldeinformationen vom lokalen Computer erneut stehlen und andere böswillige Aktivitäten ausführen.
 
-Die Formular ausNutzung
+Die Formular Ausnutzung
 1. Der Angreifer stiehlt den Benutzernamen und das Kennwort eines Benutzers.
 2. Der Angreifer meldet sich dann bei diesem Benutzer-Exchange-Postfach an. Das Postfach kann entweder in Exchange Online oder lokal in Exchange vorhanden sein.
 3. Der Angreifer erstellt dann eine benutzerdefinierte e-Mail-Formularvorlage und fügt Sie in das Postfach des Benutzers ein.  Das benutzerdefinierte Formular wird ausgelöst, wenn das Postfach eine e-Mail empfängt, für die das Postfach das benutzerdefinierte Formular laden muss. Das benutzerdefinierte Formular und das e-Mail-Format sind für jeden anderen maßgeschneidert.
@@ -56,7 +56,7 @@ Diese Dauerhaftigkeitsmechanismen werden von Ihren Benutzern wahrscheinlich nich
 
 - Indikatoren für die Kompromiss Regeln
     - Regelaktion ist das Starten einer Anwendung.
-    - Regel verweist auf eine EXE, ZIP oder URL.
+    - Regel verweist auf eine exe, ZIP oder URL.
     - Suchen Sie auf dem lokalen Computer nach neuen Prozessstarts, die aus der Outlook-PID stammen.
 - Indikatoren für die Kompromisse bei benutzerdefinierten Formularen 
     - Benutzerdefiniertes Formular wird als eigene Nachrichtenklasse gespeichert.
@@ -70,7 +70,7 @@ Sie können eine der beiden folgenden Methoden verwenden, um den Angriff zu best
 - Verwenden Sie das PowerShell-Skript [Get-AllTenantRulesAndForms. ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) , um alle e-Mail-Weiterleitungsregeln und benutzerdefinierten Formulare für alle Benutzer in Ihrem Mandanten automatisch zu dumpen. Dies ist die schnellste und sicherste Methode mit dem geringsten Aufwand.
 
 
-### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Bestätigen des anGriffs auf Regeln mithilfe des Outlook-Clients
+### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Bestätigen des Angriffs auf Regeln mithilfe des Outlook-Clients
 1. Öffnen Sie den Benutzer Outlook-Client als Benutzer.  Der Benutzer benötigt möglicherweise Ihre Hilfe bei der Untersuchung der Regeln für sein Postfach.
 2. Weitere Informationen finden Sie unter [Verwalten von e-Mail-Nachrichten](https://support.office.com/article/manage-email-messages-by-using-rules-c24f5dea-9465-4df4-ad17-a50704d66c59#ID0EAABAAA=2010) mithilfe von Regel Artikeln für die Verfahren zum Öffnen der Regel Schnittstelle in den Versionen 2007, 2010 oder 2013 von Outlook.
 3. Suchen Sie nach Regeln, die der Benutzer nicht erstellt hat, oder unerwarteten Regeln oder Regeln mit verdächtigen Namen.
@@ -100,7 +100,7 @@ Sie müssen über ein globales Administratorrecht zum Ausführen des Skripts ver
 
 MailboxRulesExport-*yyyy-mm-dd*. CSV – überprüfen Sie die Regeln (eine pro Zeile) auf Aktionsbedingungen, die Anwendungen oder ausführbare Dateien einbeziehen.
 - Action Type (Spalte A) – Wenn der Wert "ID_ACTION_CUSTOM" angezeigt wird, ist die Regel wahrscheinlich bösartig.
-- IsPotentiallyMalicious (Spalte D) – Wenn dieser Wert "TRUE" ist, ist die Regel wahrscheinlich bösartig.
+- IsPotentiallyMalicious (Spalte D) – Wenn dieser Wert "true" ist, ist die Regel wahrscheinlich bösartig.
 - ActionCommand "(Spalte G) – Wenn diese eine Anwendung oder eine Datei mit der exe-, ZIP-Erweiterung oder einem Eintrag auflistet, der auf eine URL verweist, die nicht vorhanden sein soll, ist die Regel wahrscheinlich bösartig.
 
 MailboxFormsExport-*yyyy-mm-dd*. csv – im Allgemeinen ist die Verwendung von benutzerdefinierten Formularen sehr selten.  Wenn Sie in dieser Arbeitsmappe finden, öffnen Sie das Postfach des Benutzers, und überprüfen Sie das Formular selbst.  Wenn Ihre Organisation Sie nicht absichtlich dort abgelegt hat, ist Sie wahrscheinlich bösartig.
@@ -141,7 +141,7 @@ Die Regeln und Formular Angriffe werden nur von Angreifern verwendet, nachdem Si
 
 Die beste Möglichkeit zum Schützen Ihrer Benutzerkonten und insbesondere der Administratorkonten besteht darin, die [mehrstufige Authentifizierung für Office 365-Benutzer](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)einzurichten.  Außerdem sollten Sie Folgendes tun:
 <ol>
-    <li>Überwachen Sie, wie ihre Benutzerkonten <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">zugegriffen und verwendet</a>werden. Sie können die anfängliche Verletzung nicht verhindern, aber Sie werden die Dauer und die Auswirkungen der Verletzung verringern, indem Sie Sie früher erfassen. Sie können diese verwenden: <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">Office 365 Cloud App-Sicherheitsrichtlinien</a> zum Überwachen von Konten und Benachrichtigungen über ungewöhnliche Aktivitäten. 
+    <li>Überwachen Sie, wie ihre Benutzerkonten <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">zugegriffen und verwendet</a>werden. Sie können die anfängliche Verletzung nicht verhindern, aber Sie werden die Dauer und die Auswirkungen der Verletzung verringern, indem Sie Sie früher erfassen. Sie können diese verwenden: <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">Office 365 Cloud App-Sicherheitsrichtlinien</a> zum Überwachen von Konten und Benachrichtigungen über ungewöhnliche Aktivitäten. 
         <ol type="a">
             <li><b>Mehrere fehlgeschlagene Anmeldeversuche</b> Diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Benutzer mehrere fehlgeschlagene Anmeldeaktivitäten in einer einzelnen Sitzung im Hinblick auf die erlernte Baseline ausführen, was auf eine versuchte Verletzung hindeuten könnte.</li>
             <li><b>Unmöglich Reisen</b> - Diese Richtlinie profiliert Ihre Umgebung und löst Warnungen aus, wenn Aktivitäten von demselben Benutzer an verschiedenen Orten innerhalb eines Zeitraums erkannt werden, der kürzer ist als die erwartete Reisezeit zwischen den beiden Speicherorten. Dies kann darauf hindeuten, dass ein anderer Benutzer die gleichen Anmeldeinformationen verwendet. Das erkennen dieses anormalen Verhaltens erfordert einen anfänglichen Lernzeitraum von sieben Tagen, in dem er das Aktivitätsmuster eines neuen Benutzers erlernt.</li>

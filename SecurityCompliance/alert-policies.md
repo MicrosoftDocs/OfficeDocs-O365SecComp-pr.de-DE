@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Erstellen Sie im Security and Compliance Center in Office 365 und Microsoft 365 Warnungsrichtlinien, um potenzielle Bedrohungen, Datenverlust und Berechtigungen zu überwachen. Dann können Sie die Warnungen anzeigen und verwalten, die generiert werden, wenn Benutzeraktivitäten ausführen, die den Bedingungen einer Warnungs Richtlinie entsprechen.
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516503"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979501"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Warnungsrichtlinien im Security and Compliance Center
 
@@ -230,7 +230,8 @@ Nachdem Warnungen generiert und auf der Seite **Warnungen anzeigen** im Security
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Anzeigen von Sicherheitswarnungen in der Cloud-App
   
-Warnungen, die von Office 365 Cloud App-Sicherheitsrichtlinien ausgelöst werden, werden jetzt im Security and Compliance Center auf der Seite **Warnungen anzeigen** angezeigt. Hierzu gehören Warnungen, die durch Aktivitätsrichtlinien und Warnungen ausgelöst werden, die durch Anomalie-Erkennungsrichtlinien in Office 365 Cloud App Security ausgelöst werden. Dies führt dazu, dass Sie alle Warnungen im Security and Compliance Center anzeigen können. Beachten Sie, dass Office 365 Cloud App Security nur für Organisationen mit einem Office 365 Enterprise E5-oder Office 365 US Government G5-Abonnement verfügbar ist. Weitere Informationen finden Sie unter [Overview of Office 365 Cloud App Security](office-365-cas-overview.md).
+Warnungen, die von Office 365 Cloud App-Sicherheitsrichtlinien ausgelöst werden, werden jetzt im Security and Compliance Center auf der Seite **Warnungen anzeigen** angezeigt. Hierzu gehören Warnungen, die durch Aktivitätsrichtlinien und Warnungen ausgelöst werden, die durch Anomalie-Erkennungsrichtlinien in Office 365 Cloud App Security ausgelöst werden. Dies führt dazu, dass Sie alle Warnungen im Security and Compliance Center anzeigen können. Beachten Sie, dass Office 365 Cloud App Security nur für Organisationen mit einem Office 365 Enterprise E5-oder Office 365 US Government G5-Abonnement verfügbar ist. Weitere Informationen finden Sie unter [Overview of Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+).
 
 Darüber hinaus können Organisationen mit Microsoft Cloud App Security im Rahmen eines Enterprise Mobility + Security E5-Abonnements oder als eigenständiger Dienst auch Cloud-App-Sicherheitswarnungen im Zusammenhang mit Office 365-apps und-Diensten im Sicherheits & anzeigen. Compliance Center.
 
@@ -238,7 +239,7 @@ Um nur Sicherheitswarnungen zur Cloud-App im Security and Compliance Center anzu
 
 ![Verwenden des Quell Filters zum Anzeigen von Sicherheitswarnungen in der Cloud-App](media/FilterCASAlerts.png)
 
-Ähnlich wie bei einer Warnung, die durch eine Sicherheits-und Compliance Center-Warn Richtlinie ausgelöst wird, können Sie auf eine Sicherheitswarnung der Cloud-App klicken, um eine Flyout-Seite mit Details zur Warnung anzuzeigen. Die Warnung enthält einen Link zum Anzeigen der Details und zum Verwalten der Warnung im Sicherheitsportal der Cloud-App sowie einen Link zur entsprechenden Sicherheitsrichtlinie für Cloud-apps, die die Warnung ausgelöst hat. Weitere Informationen finden Sie unter [Review and Take Action on Alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md).
+Ähnlich wie bei einer Warnung, die durch eine Sicherheits-und Compliance Center-Warn Richtlinie ausgelöst wird, können Sie auf eine Sicherheitswarnung der Cloud-App klicken, um eine Flyout-Seite mit Details zur Warnung anzuzeigen. Die Warnung enthält einen Link zum Anzeigen der Details und zum Verwalten der Warnung im Sicherheitsportal der Cloud-App sowie einen Link zur entsprechenden Sicherheitsrichtlinie für Cloud-apps, die die Warnung ausgelöst hat. Weitere Informationen finden Sie unter [Monitor Alerts in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
 ![Warnungsdetails enthalten Links zum Cloud-App-Sicherheitsportal](media/CASAlertDetail.png)
 
