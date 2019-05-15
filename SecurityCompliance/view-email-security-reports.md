@@ -3,7 +3,7 @@ title: Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Ce
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 05/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation mit Office 365 Enterprise suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
+ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267899"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970256"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -30,8 +30,8 @@ Im [ &amp; Security Compliance Center](https://protection.office.com) stehen ver
   
 Zu Ihren e-Mail-Sicherheitsberichten gehört Folgendes:
 - [Verschlüsselungs Bericht](#encryption-report) (Neu!)
-- [Status Bericht zum BedrohungsSchutz](#threat-protection-status-report) 
-- [Bericht über Schadsoftware](#malware-detections-report)    
+- [Status Bericht zum Bedrohungsschutz](#threat-protection-status-report) 
+- [Bericht über Schadsoftware](#malware-detections-report) 
 - [Häufigster Schadsoftware-Bericht](#top-malware-report)
 - [Bericht "häufigste Absender und Empfänger"](#top-senders-and-recipients-report)
 - [Bericht über Spoof-Entdeckungen](#spoof-detections-report)
@@ -41,46 +41,46 @@ Zu Ihren e-Mail-Sicherheitsberichten gehört Folgendes:
     
 ## <a name="encryption-report"></a>Verschlüsselungs Bericht
 
-(**Neu!**) Der **Verschlüsselungs Bericht** enthält Informationen zu e-Mail-Nachrichten, die über Richtlinien oder durch Endbenutzer Steuerelemente verschlüsselt wurden. Das Sicherheitsteam Ihrer Organisation kann anhand dieser Informationen Muster erkennen und proaktive Richtlinien für vertrauliche e-Mail-Nachrichten anwenden oder anpassen.
+(**Neu!**) Der **Verschlüsselungs Bericht** enthält Informationen zu e-Mail-Nachrichten, die verschlüsselt wurden, entweder über die Richtlinien Ihrer Organisation oder über Endbenutzer Steuerelemente. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und proaktiv Richtlinien für vertrauliche e-Mail-Nachrichten anzuwenden oder anzupassen.
 
 Um diesen Bericht anzuzeigen, wechseln Sie im Security & Compliance Center zu **Berichte** \> - **Dashboard** \> -Verschlüsselungs **Bericht**.
 
 ![Verschlüsselungs Bericht](media/encryptionreport-defaultview.png) 
 
-Beim ersten Öffnen des Berichts werden Daten zu Verschlüsselungsmethoden für e-Mail-Nachrichten für die letzten sieben (7) Tage angezeigt. Sie können den Datumsbereich und die Details im Bericht ändern, indem Sie in der oberen rechten Ecke des Bildschirms auf Filter klicken.
+Beim ersten Öffnen des Berichts werden Daten zu Verschlüsselungsmethoden für e-Mail-Nachrichten für die letzten sieben (7) Tage angezeigt. Sie können den Datumsbereich und die Details ändern, die im Bericht angezeigt werden, indem Sie in der oberen rechten Ecke des Bildschirms auf **Filter** klicken.
 
 ![Filter für Verschlüsselungs Berichte](media/encryptionreport-filters.png)   
 
-Sie können auch das Menü "nach unten nach" verwenden, um Daten nach Verschlüsselungs Vorlage (oder-Methode) anzuzeigen.
+Sie können auch das Menü "nach **unten** nach" verwenden, um Daten nach Verschlüsselungs Vorlage (oder-Methode) anzuzeigen.
 
 ![Verschlüsselungsmethode oder-Vorlage](media/encryptionreport-breakdownby.png)
 
-Sie können auch das Menü Daten anzeigen nach verwenden, um die Ansicht zu ändern, um die Anzahl der verschlüsselten Nachrichten in den fünf größten Empfängerdomänen anzuzeigen.
+Sie können auch das Menü **Daten anzeigen nach** verwenden, um die Ansicht zu ändern, um die Anzahl der verschlüsselten Nachrichten in den fünf größten Empfängerdomänen anzuzeigen.
 
 ![Verschlüsselungs Bericht-Ansicht von Daten nach Menü](media/encryptionreport-viewdataby.png)
 
 Mit der Flexibilität des neuen Verschlüsselungs Berichts können Sie Trends anzeigen und entsprechende Aktionen ausführen. Wenn beispielsweise eine hohe Anzahl von e-Mail-Nachrichten angezeigt wird, die von Benutzern verschlüsselt wurden, können Sie eine Verschlüsselungsrichtlinie hinzufügen, um die Verschlüsselung für bestimmte Anwendungsfälle zu automatisieren. (Weitere Informationen hierzu finden Sie unter [Definieren von Nachrichtenfluss Regeln zum Verschlüsseln von e-Mail-Nachrichten in Office 365](define-mail-flow-rules-to-encrypt-email.md).) Wenn Sie eine Reihe von Verschlüsselungs Vorlagen zur Verfügung haben, die Sie jedoch nicht verwenden, können Sie untersuchen, ob die Benutzerschulungen für diese Funktion benötigen. 
 
-Mithilfe dieses Berichts kann das Sicherheits-und Compliance-Team Ihrer Organisation überwachen, wie die Nachrichtenverschlüsselung verwendet wird und ob weitere Aktionen erforderlich sind.
+Mithilfe dieses Berichts kann das Sicherheits-und Compliance-Team Ihrer Organisation überwachen, wie die Nachrichtenverschlüsselung verwendet wird und ob weitere Aktionen erforderlich sind. Weitere Informationen zur Verschlüsselung finden Sie unter [e-Mail-Verschlüsselung in Office 365](email-encryption.md).
 
-## <a name="threat-protection-status-report"></a>Status Bericht zum BedrohungsSchutz
+## <a name="threat-protection-status-report"></a>Status Bericht zum Bedrohungsschutz
 
-Der **bedrohungSschutz Status** Bericht ist ein intelligenter Bericht, der bösartige e-Mails anzeigt, die von Exchange Online Protection erkannt und blockiert wurden. Dieser Bericht enthält Informationen zu e-Mails, die als Schadsoftware oder als Phishing-Versuch identifiziert wurden. 
+Der **Bedrohungsschutz Status** Bericht ist ein intelligenter Bericht, der bösartige e-Mails anzeigt, die von Exchange Online Protection erkannt und blockiert wurden. Dieser Bericht enthält Informationen zu e-Mails, die als Schadsoftware oder als Phishing-Versuch identifiziert wurden. 
 
 > [!NOTE]
-> Ein Bericht über den BedrohungsSchutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Status Bericht zur Gefahrenabwehr für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten als die EOP-Kunden. EOP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, jedoch keine Informationen zu böswilligen Dateien, die [in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden, eine ATP-spezifische Funktion. ([Erfahren Sie mehr über ATP-Berichte](view-reports-for-atp.md).)
+> Ein Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Status Bericht zur Gefahrenabwehr für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten als die EoP-Kunden. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, jedoch keine Informationen zu böswilligen Dateien, die [in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden, eine ATP-spezifische Funktion. ([Erfahren Sie mehr über ATP-Berichte](view-reports-for-atp.md).)
   
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zum Status des \> **Threat Protection**-Dashboards für **Berichte** \> **** .
   
-![Status Bericht zum BedrohungsSchutz](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![Status Bericht zum Bedrohungsschutz](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Wenn Sie den Status Bericht zum ersten Mal öffnen, zeigt der Bericht standardmäßig Daten für die letzten sieben Tage an; Sie können jedoch auf **Filter** klicken und den Datums Umfang für bis zu 90 Tage ändern. Dieser Bericht ist nützlich, um die Effektivität und die Auswirkungen der Exchange Online Protection-Features in Ihrer Organisation sowie für längerfristige Trends anzuzeigen. 
+Wenn Sie den Status Bericht zum ersten Mal öffnen, zeigt der Bericht standardmäßig Daten für die letzten sieben Tage an; Sie können jedoch auf **Filter** klicken und den Datums Umfang für bis zu 90 Tage ändern. Dieser Bericht ist nützlich, um die Effektivität und die Auswirkungen der [Exchange Online Protection-Features](eop/eop-features.md)in Ihrer Organisation sowie für längerfristige Trends anzuzeigen. 
   
-![Status Berichtsfilter für den BedrohungsSchutz](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
+![Status Berichtsfilter für den Bedrohungsschutz](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
 Sie können auch auswählen, ob Daten für als böswillig identifizierte e-Mails, als Phishing-Versuche identifizierte e-Mails oder als Schadsoftware identifizierte e-Mails angezeigt werden sollen.
   
-![Status Berichts Ansichtsoptionen für den BedrohungsSchutz](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
+![Status Berichts Ansichtsoptionen für den Bedrohungsschutz](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
   
 ## <a name="malware-detections-report"></a>Bericht über Schadsoftware
 
@@ -90,15 +90,15 @@ Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center]
   
 ![Beispiel für Schadsoftware-Erkennungsberichte](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-Ähnlich wie bei anderen Berichten zeigt der Bericht standardmäßig Daten für die letzten sieben Tage an. Sie können jedoch auch **Filter** auswählen, um den Datums Umfang zu ändern. 
+Ähnlich wie bei anderen Berichten zeigt der [](#threat-protection-status-report)Bericht standardmäßig Daten für die letzten sieben Tage an. Sie können jedoch auch **Filter** auswählen, um den Datums Umfang zu ändern. 
   
 ## <a name="top-malware-report"></a>Häufigster Schadsoftware-Bericht
 
-Der **häufigste Malware** Bericht zeigt die verschiedenen Arten von Schadsoftware, die von Exchange Online erkannt wurden. 
+Der **häufigste Malware** Bericht zeigt die verschiedenen Arten von Schadsoftware, die von [Exchange Online](eop/eop-features.md)erkannt wurden. 
   
 Um **** \> diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu den **Top**-Schadsoftware- **Dashboards** \> .
   
-![SCC-EOP – häufigste Schadsoftware](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![SCC-EoP – häufigste Schadsoftware](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
 Wenn Sie im Kreisdiagramm auf einen Keil zeigen, sehen Sie den Namen einer Art von Schadsoftware und die Anzahl der Nachrichten, die als Schadsoftware erkannt wurden.
   
@@ -120,7 +120,7 @@ Wenn Sie den Mauszeiger über einen Keil im Kreisdiagramm bewegen, wird die Anza
   
 Klicken Sie auf den Bericht (oder tippen Sie darauf), um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten.
   
-Verwenden Sie die Liste **Daten für anzeigen** , um auszuwählen, ob Daten für die wichtigsten Absender, Empfänger, Spamempfänger und Schadsoftware-Empfänger angezeigt werden sollen. Sie können auch sehen, wer Malware erhalten hat, die von Advanced Threat Protection erkannt wurde. 
+Verwenden Sie die Liste **Daten für anzeigen** , um auszuwählen, ob Daten für die wichtigsten Absender, Empfänger, Spamempfänger und Schadsoftware-Empfänger angezeigt werden sollen. Sie können auch sehen, wer Malware erhalten hat, die von [Exchange Online Protection](eop/exchange-online-protection-overview.md)erkannt wurde. 
   
 ![Verwenden der Liste "Daten für anzeigen" zum Anzeigen bestimmter Informationen](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -136,7 +136,7 @@ Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center]
   
 Wenn Sie den Mauszeiger über einen Tag im Diagramm bewegen, sehen Sie, wie viele Spoof-e-Mail-Nachrichten durchlaufen haben.
   
-Klicken Sie auf den Bericht (oder tippen Sie darauf), um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten.
+Klicken Sie auf den Bericht (oder tippen Sie darauf), um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten. Weitere Informationen zum Schutz vor Spoofing finden Sie unter [Schutz vor Spoofing in Office 365](anti-spoofing-protection.md).
   
 ## <a name="spam-detections-report"></a>Bericht über Spam-Entdeckungen
 
@@ -152,7 +152,7 @@ Klicken Sie auf den Bericht (oder tippen Sie darauf), um ihn in einem neuen Brow
   
 ![Der Bericht über Spam Entdeckungen gibt an, wie viele Spamnachrichten blockiert oder herausgefiltert wurden.](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-Unterhalb des Diagramms wird eine Liste der gefundenen Spam Elemente angezeigt. Wählen Sie ein Element aus, um zusätzliche Informationen anzuzeigen, beispielsweise ob es sich bei dem Spam Element um ein-oder ausgehend, um die Nachrichten-ID und den Empfänger handelt.
+Unterhalb des Diagramms wird eine Liste der gefundenen Spam Elemente angezeigt. Wählen Sie ein Element aus, um zusätzliche Informationen anzuzeigen, beispielsweise ob es sich bei dem Spam Element um ein-oder ausgehend, um die Nachrichten-ID und den Empfänger handelt. Weitere Informationen zum Antispamschutz finden Sie unter [Office 365 Email Anti-Spam Protection](anti-spam-protection.md).
   
 ## <a name="sent-and-received-email-report"></a>Gesendete und empfangene e-Mail-Berichte
 
@@ -168,11 +168,13 @@ Klicken Sie auf den Bericht (oder tippen Sie darauf), um ihn in einem neuen Brow
   
 Mithilfe der Liste nach **unten** nach können Sie Informationen nach Typ oder nach Richtung (ein-und ausgehend) anzeigen. 
   
-![Verwenden der aufSchlüsselung nach Liste zum Anzeigen von Informationen nach Typ oder Richtung](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
+![Verwenden der Aufschlüsselung nach Liste zum Anzeigen von Informationen nach Typ oder Richtung](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
   
 Unterhalb des Diagramms sehen Sie eine Liste der e-Mail-Kategorien, wie **GoodMail**, **SpamContentFiltered**usw. Wählen Sie eine Kategorie aus, um zusätzliche Informationen anzuzeigen, beispielsweise Aktionen, die für Schadsoftware ergriffen wurden, und ob e-Mails ein-oder ausgehen.
   
 ![Dieser Bericht informiert Sie über Antischadsoftware, Antispam und andere Nachrichten Entdeckungen.](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+
+Weitere Informationen zu e-Mail-Nachrichtendiensten finden Sie unter Nachrichten [Fluss Nachrichten in Office 365](mail-flow-intelligence-in-office-365.md).
   
 ## <a name="user-reported-messages-report"></a>Bericht über vom Benutzer gemeldete Nachrichten
 
@@ -191,7 +193,7 @@ Führen Sie im [ &amp; Security Compliance Center](https://protection.office.com
 ![Wählen Sie im &amp; Security Compliance Center die Option \> Bedrohungs \> Verwaltung Überprüfung der gemeldeten Nachrichten aus.](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Damit der Bericht vom Benutzer gemeldete Nachrichten ordnungsgemäß funktioniert, **muss die Überwachungsprotokollierung** für ihre Office 365-Umgebung aktiviert sein. Dies erfolgt in der Regel durch einen Benutzer, dem die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen wurde. Weitere Informationen finden Sie unter [Turn Office 365 Audit Log Search on or off](turn-audit-log-search-on-or-off.md). 
+> Damit der Bericht vom Benutzer gemeldete Nachrichten ordnungsgemäß funktioniert, **muss die Überwachungsprotokollierung** für Ihre Office 365-Umgebung aktiviert sein. Dies erfolgt in der Regel durch einen Benutzer, dem die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen wurde. Weitere Informationen finden Sie unter [Turn Office 365 Audit Log Search on or off](turn-audit-log-search-on-or-off.md). 
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind erforderlich, um diese Berichte anzuzeigen?
 
@@ -217,7 +219,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was geschieht, wenn die Berichte keine Daten anzeigen?
 
-Wenn in ihren Berichten keine Daten angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. Weitere Informationen finden Sie unter [Antispam-und Antischadsoftware-Schutz in Office 365](anti-spam-and-anti-malware-protection.md).
+Wenn in ihren Berichten keine Daten angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. Weitere Informationen finden Sie unter [schützen vor Bedrohungen in Office 365](protect-against-threats.md).
   
 ## <a name="related-topics"></a>Verwandte Themen
 
