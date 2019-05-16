@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,25 +15,25 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Reaktionsfunktionen bösartige e-Mails suchen und untersuchen können.
-ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6eec99f5b2872a63efab619e9814ab0fa625ca49
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077271"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Suchen und untersuchen von gelieferten Schad-e-Mails (Office 365 Advanced Threat Protection Plan 2)
 
 Mit [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) können Sie Aktivitäten untersuchen, die Ihre Benutzer gefährden und Maßnahmen zum Schutz Ihrer Organisation ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, finden und untersuchen Sie verdächtige e-Mail-Nachrichten, die an Ihre Benutzer übermittelt wurden. Verwenden Sie dazu den [Threat Explorer](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> Office 365 Threat Intelligence ist jetzt Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ist jetzt Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen...
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
   
-- Ihre Organisation verfügt über [office 365 Advanced Threat Protection-Plan 2](office-365-ti.md) und [weist benutzern in Office 365 für Unternehmen Lizenzen zu](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Ihre Organisation verfügt über [Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md) und [weist Benutzern in Office 365 für Unternehmen Lizenzen zu](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
 - [Office 365 die Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
     
@@ -54,7 +54,7 @@ Böswillige Angreifer können e-Mails an Ihre Benutzer senden, um Ihre Anmeldein
     
 2. Klicken Sie im linken Navigationsbereich auf **Threat Management** \> **Explorer**.
     
-3. Wählen Sie im Menü Ansicht die Option **alle e-Mails**aus.<br/>![Verwenden des Menüs "Ansicht" zur Auswahl zwischen E-Mails und Inhalts Berichten](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. Wählen Sie im Menü Ansicht die Option **alle e-Mails**aus.<br/>![Verwenden des Menüs "Ansicht" zur Auswahl zwischen e-Mails und Inhalts Berichten](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Beachten Sie die Beschriftungen, die im Bericht angezeigt werden, **** beispielsweise "Delivered", " **Unknown**" oder " **an Junk geliefert**".<br/>![Bedrohungs-Explorer mit Daten für alle e-Mails](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Abhängig von den Aktionen, die für e-Mail-Nachrichten für Ihre Organisation durchgeführt wurden, werden möglicherweise zusätzliche Bezeichnungen angezeigt, wie **blockiert** oder **ersetzt**.)
     

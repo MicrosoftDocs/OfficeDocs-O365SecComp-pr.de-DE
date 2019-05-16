@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/13/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Office 365 Bedrohungs Ermittlungs-und-Reaktionsfunktionen Ihre Organisation Eindringlinge und Bedrohungen erkennen und schnell die Bedrohungen verringern und wiederherstellen können.
-ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254053"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077261"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Sicherstellen der Sicherheit Ihrer Office 365-Benutzer mit Office 365 Threat Investigation and Response Capabilities
 
@@ -28,10 +28,10 @@ ms.locfileid: "32254053"
 
 Wissen Sie, welche Ihrer Office 365-Benutzer angegriffen oder verschlechtert werden? Wissen Sie, wie Sie Angriffe, die für Ihre Benutzer geeignet sind, verringern und wiederherstellen können? Wussten Sie, dass Sie genau dies mit Sicherheitsfunktionen tun können, die Ihnen in Office 365 bereits zur Verfügung stehen? 
   
-[Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Reihe von Funktionen, die in ihrem Office 365 E5-Abonnement enthalten sind (als Teil von Office 365 Advanced Threat Protection Plan 2). Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben dazu beigetragen, dass Microsoft IT die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen gesenkt hat. 
+[Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Reihe von Funktionen, die in Ihrem Office 365 E5-Abonnement enthalten sind (als Teil von Office 365 Advanced Threat Protection Plan 2). Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben dazu beigetragen, dass Microsoft IT die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen gesenkt hat. 
 
 > [!IMPORTANT]
-> Threat Investigation and Response Capabilities (früher bekannt als Office 365 Threat Intelligence) sind jetzt ein Teil von Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Threat Investigation and Response Capabilities (früher bekannt als Office 365 Threat Intelligence) sind jetzt ein Teil von Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Wir haben vor kurzem neue Funktionen hinzugefügt, um zu verbessern, wie Sie Bedrohungen aufspüren und wiederherstellen können. Hier finden Sie einen kurzen Überblick darüber, wie Sie mit den aktualisierten Funktionen zur Bedrohungsanalyse und-Antwort noch effizienter arbeiten können.
   
@@ -66,8 +66,8 @@ Gartner schätzt, dass in 2017 allein mehr als $90B für Cyber verwendet wurde. 
   
 ## <a name="whats-next"></a>Was kommt als nächstes
 
-- Weitere Informationen zu Office 365 Threat Investigation and Response Capabilities in this recorded session: [stay Ahead of the Cyberattacken with office 365](https://myignite.microsoft.com/videos/53723)
+- Weitere Informationen zu Office 365 Threat Investigation and Response Capabilities in this recorded session: [stay Ahead of the Cyberattacken with Office 365](https://myignite.microsoft.com/videos/53723)
     
-- [Testen Sie die Funktionen der Bedrohungsanalyse und-Antwort von office 365 jetzt](https://aka.ms/tryo365threatintel3) , oder starten Sie Ihren Office E5-Test noch heute! 
+- [Testen Sie die Funktionen der Bedrohungsanalyse und-Antwort von Office 365 jetzt](https://aka.ms/tryo365threatintel3) , oder starten Sie Ihren Office E5-Test noch heute! 
     
 

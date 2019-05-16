@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: Als globaler Office 365-Administrator können Sie anGriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
-ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Als globaler Office 365-Administrator können Sie Angriffs Simulator verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Auf diese Weise können Sie anfällige Benutzer identifizieren und finden, bevor ein echter Angriff Ihr Unternehmen trifft.
+ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249704"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077621"
 ---
 # <a name="attack-simulator-in-office-365"></a>Angriffssimulator in Office 365
 
-**Zusammenfassung** Wenn Sie ein globaler Office 365-Administrator sind und Ihre Organisation über [Untersuchungen und Reaktionsmöglichkeiten in office 365](office-365-ti.md)verfügt, können Sie mit Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Ihnen dabei helfen, anfällige Benutzer zu identifizieren und zu suchen, bevor sich ein echter Angriff auf Ihr Endergebnis auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
+**Zusammenfassung** Wenn Sie ein globaler Office 365-Administrator sind und Ihre Organisation über [Untersuchungen und Reaktionsmöglichkeiten in Office 365](office-365-ti.md)verfügt, können Sie mit Angriffs Simulator realistische Angriffsszenarien in Ihrer Organisation ausführen. Dies kann Ihnen dabei helfen, anfällige Benutzer zu identifizieren und zu suchen, bevor sich ein echter Angriff auf Ihr Endergebnis auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection und Threat Investigation and Response (ehemals Threat Intelligence) sind nun Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Advanced Threat Protection und Threat Investigation and Response (ehemals Threat Intelligence) sind nun Teil von Advanced Threat Protection Plan 2 von Office 365 mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Die Angriffe
 
@@ -46,15 +46,15 @@ Für den Zugriff auf Angriffs Simulator &amp; wählen Sie im Security Compliance
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen...
 
-Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen für anGriffs Simulator erfüllen:
+Stellen Sie sicher, dass Sie und Ihre Organisation die folgenden Anforderungen für Angriffs Simulator erfüllen:
       
-- **Die E-Mails Ihrer Organisation werden in Exchange Online gehostet**. (AnGriffs Simulator ist für lokale e-Mail-Server nicht verfügbar.)
+- **Die e-Mails Ihrer Organisation werden in Exchange Online gehostet**. (Angriffs Simulator ist für lokale e-Mail-Server nicht verfügbar.)
     
 - **Sie sind ein Office 365-globaler Administrator**
     
 - **Die mehrstufige [Authentifizierung (Multi-Factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) , MFA) ist mindestens für das globale Administratorkonto von Office 365 aktiviert**. (Im Idealfall ist MFA für alle Benutzer in Ihrer Organisation aktiviert.)
  
-- **ihre organisation verfügt [über Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)**, mit angriffs simulator im &amp; Security Compliance Center (zum **Threat management** \> -angriffs **simulator**)<br/>![Threat Management-anGriffs Simulator](media/ThreatMgmt-AttackSimulator.png)
+- **Ihre Organisation verfügt [über Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)**, mit Angriffs Simulator im &amp; Security Compliance Center (zum **Threat Management** \> -Angriffs **Simulator**)<br/>![Threat Management-Angriffs Simulator](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Anzeigename Spear-Phishing-Angriff
@@ -65,7 +65,7 @@ Dieser Angriff hat den Schwerpunkt darauf, dass Sie ändern, von wem die Nachric
   
 ### <a name="to-simulate-a-spear-phishing-attack"></a>So simulieren Sie einen Speer-Phishing-Angriff
 
-![E-Mail-Textkörper verFassen](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+![E-Mail-Textkörper verfassen](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
 Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst oder mit HTML-Quelle arbeiten.
   
@@ -85,9 +85,9 @@ Sie können den Rich-HTML-Editor direkt im Feld **e-Mail-Textkörper** selbst od
     
 8. Geben Sie eine benutzerdefinierte Zielseiten-URL an. Bei Verwendung dieser Methode werden Benutzer zu einer URL umgeleitet, die Sie am Ende eines erfolgreichen Angriffs angeben. Wenn Sie beispielsweise über interne Schulungen verfügen, können Sie dies hier angeben.
     
-9. Geben Sie Text für das Feld **Betreff** an. Dies ist das Feld, das als **antragSteller Name** im empfangenden e-Mail-Client angezeigt wird. 
+9. Geben Sie Text für das Feld **Betreff** an. Dies ist das Feld, das als **Antragsteller Name** im empfangenden e-Mail-Client angezeigt wird. 
     
-10. VerFassen Sie den **e-Mail-Text** , der vom Ziel empfangen wird. <br/>`${username}`Fügt den Namen der Ziele in den e-Mail-Text ein. <br/>`${loginserverurl}`Fügt die URL ein, auf die Zielbenutzer klicken sollen. 
+10. Verfassen Sie den **e-Mail-Text** , der vom Ziel empfangen wird. <br/>`${username}`Fügt den Namen der Ziele in den e-Mail-Text ein. <br/>`${loginserverurl}`Fügt die URL ein, auf die Zielbenutzer klicken sollen. 
     
 11. Klicken Sie auf **weiter und** dann auf **Fertig stellen** , um den Angriff zu starten. Die Spear-Phishing-e-Mail wird an die Postfächer ihrer Zielempfänger gesendet. 
     
@@ -125,9 +125,9 @@ Ein Brute-Force-Kennwortangriff gegen eine Organisation wird in der Regel verwen
     
 5. Wählen Sie **Fertig stellen** , um den Angriff zu starten. 
     
-## <a name="new-features-in-attack-simulator"></a>Neue Features im anGriffs Simulator
+## <a name="new-features-in-attack-simulator"></a>Neue Features im Angriffs Simulator
 
-Dem anGriffs Simulator werden neue Features hinzugefügt. Zu diesen zählen:
+Dem Angriffs Simulator werden neue Features hinzugefügt. Zu diesen zählen:
 
 - **Erweiterte Berichterstellungsfunktionen**. Sie können beispielsweise die schnellste (oder langsamste) Zeit zum Öffnen einer e-Mail-Angriffssimulation sehen, die schnellste (oder langsamste) Zeit, um auf einen Link in der Nachricht zu klicken, und vieles mehr.
 

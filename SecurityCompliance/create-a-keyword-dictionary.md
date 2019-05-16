@@ -3,7 +3,7 @@ title: Erstellen eines Schlüsselwörterbuchs
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 04/11/2019
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 142f471d80c7278cabd4c437f0ae0ee9af3ff219
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077571"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
@@ -29,7 +29,7 @@ Data Loss Prevention (DLP) in Office 365 kann Ihre vertraulichen Informationen i
 
 Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer in den Dienst importierten Datei (etwa einer CSV- oder TXT-Liste), oder durch ein einem PowerShell-Cmdlet, aus einer Liste, die Sie direkt in das PowerShell-Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch.Beim Erstellen eines Schlüsselwörterbuchs befolgen Sie die gleichen einfachen Schritte:
   
-1. verwenden sie das **security & compliance center** ([https://protection.office.com](https://protection.office.com)), oder stellen sie eine verbindung mit **Office 365 security &amp; compliance center PowerShell**her.
+1. Verwenden Sie das **Security & Compliance Center** ([https://protection.office.com](https://protection.office.com)), oder stellen Sie eine Verbindung mit **Office 365 Security &amp; Compliance Center PowerShell**her.
     
 2. **Definieren oder laden Sie Ihre Schlüsselwörter aus der beabsichtigten Quelle**. Sowohl der Assistent als auch das Cmdlet akzeptieren eine durch trennzeichengetrennte Liste von Schlüsselwörtern, um ein benutzerdefiniertes Stichwort Wörterbuch zu erstellen, sodass dieser Schritt je nachdem, woher Ihre Schlüsselwörter stammen, etwas variieren kann. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
     
@@ -181,7 +181,7 @@ Das vorhandene Wörterbuch wurde nun aktualisiert. Beachten Sie, dass das Feld `
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Verwenden von Schlüsselwörterbüchern in benutzerdefinierten vertraulichen Informationstypen und DLP-Richtlinien
 
-Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen für einen benutzerdefinierten vertraulichen Informationstyp oder als vertraulicher Informationstyp verwendet werden. Beide müssen Sie einen [benutzerdefinierten vertraulichen Informationstyp](create-a-custom-sensitive-information-type-in-scc-powershell.md)erstellen. BeFolgen Sie die Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Sobald Sie die XML-Datei haben, benötigen Sie die GUID-ID für das Wörterbuch, um Sie zu verwenden.
+Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen für einen benutzerdefinierten vertraulichen Informationstyp oder als vertraulicher Informationstyp verwendet werden. Beide müssen Sie einen [benutzerdefinierten vertraulichen Informationstyp](create-a-custom-sensitive-information-type-in-scc-powershell.md)erstellen. Befolgen Sie die Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Sobald Sie die XML-Datei haben, benötigen Sie die GUID-ID für das Wörterbuch, um Sie zu verwenden.
   
 ```
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

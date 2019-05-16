@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit den DLP-Berichten in Office 365 können Sie schnell die Anzahl der Übereinstimmungen, Überschreibungen oder falsch positiver DLP-Richtlinien anzeigen. sehen Sie nach, ob Sie im Laufe der Zeit nach oben oder unten tendieren; Filtern Sie den Bericht auf unterschiedliche Weise. , und zeigen Sie zusätzliche Details an, indem Sie einen Punkt auf einer Position im Diagramm auswählen.
-ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267293"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077301"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Anzeigen der Berichtr zur Verhinderung von Datenverlust
 
@@ -77,7 +77,7 @@ Zum Anzeigen von DLP-Berichten im Security & Compliance Center müssen Sie folge
 
 - Rolle " **Sicherheits Leser** " im Exchange Admin Center. Diese Rolle wird standardmäßig den Rollengruppen "Organisationsverwaltung" und "Sicherheits Leser" im Exchange Admin Center zugewiesen.
 
-- **Verwaltungsrolle "DLP-Compliance-Verwaltung** " im Security _AMP_ Compliance Center. Diese Rolle wird standardmäßig den Rollengruppen "Compliance-Administrator", "Organisationsverwaltung", "Sicherheitsadministrator" und "Sicherheits Leser" im Security & Compliance Center zugewiesen.
+- **Verwaltungsrolle "DLP-Compliance-Verwaltung** " im Security & Compliance Center. Diese Rolle wird standardmäßig den Rollengruppen "Compliance-Administrator", "Organisationsverwaltung", "Sicherheitsadministrator" und "Sicherheits Leser" im Security & Compliance Center zugewiesen.
 
 - Rolle "Empfänger" in der Exchange **-** Verwaltungskonsole. Diese Rolle wird standardmäßig den Rollengruppen "Compliance Management", "Organization Management" und "View-Only Organization Management" im Exchange Admin Center zugewiesen.
 

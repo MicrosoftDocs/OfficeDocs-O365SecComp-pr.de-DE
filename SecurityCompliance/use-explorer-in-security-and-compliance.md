@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Informationen zu Explorer (auch als Bedrohungs-Explorer bezeichnet) &amp; im Security Compliance Center.
-ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30f3759b6eb35508a9de8c03abb72562417aa04f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077331"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Verwenden des Bedrohungs-Explorers &amp; im Security Compliance Center
 
@@ -36,7 +36,7 @@ Explorer ist ein leistungsstarkes, nahezu Echtzeit-Tool, mit dessen Hilfe Sicher
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Schadsoftware nach Technologie
 
-Angenommen, Sie möchten Schadsoftware erkennen, die in e-Mails erkannt wurde, und die Technologie in Office 365. Zu diesem Zweck verwenden Sie die [e-Mail-_GT_ Malware-](threat-explorer-views.md#email--malware) Ansicht des Explorers.
+Angenommen, Sie möchten Schadsoftware erkennen, die in e-Mails erkannt wurde, und die Technologie in Office 365. Zu diesem Zweck verwenden Sie die [e-Mail-> Malware-](threat-explorer-views.md#email--malware) Ansicht des Explorers.
 
 1. Klicken Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() auf **Threat Management** > **Explorer**.
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Schadsoftware**aus.<br/>![Menü ' Ansicht ' für Explorer](media/ExplorerViewEmailMalwareMenu.png)<br/>
@@ -47,7 +47,7 @@ Der Bericht wird aktualisiert, um die in e-Mails festgestellten Ergebnisse mithi
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Anzeigen von Daten zu Phishing-URLs und klicken auf "Urteil"
 
-Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails anzeigen, einschließlich einer Liste von URLs, die zugelassen, blockiert und überschrieben wurden.  Die Identifizierung von URLs, auf die geklickt wurde, erfordert [ATP-sichere Links](atp-safe-links.md). (Stellen Sie sicher, dass Sie für Ihre Benutzer die [Richtlinien "ATP Safe Links](set-up-atp-safe-links-policies.md) " eingerichtet und angewendet haben, um den Click-Time-Schutz und die Protokollierung von Click-urteilen durch ATP-sichere Links zu ermöglichen.) Zum Überprüfen von Phishing-URLs in Nachrichten und klicken auf URLs in Phishing-Nachrichten verwenden Sie die [e-Mail-_GT_-Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers.
+Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails anzeigen, einschließlich einer Liste von URLs, die zugelassen, blockiert und überschrieben wurden.  Die Identifizierung von URLs, auf die geklickt wurde, erfordert [ATP-sichere Links](atp-safe-links.md). (Stellen Sie sicher, dass Sie für Ihre Benutzer die [Richtlinien "ATP Safe Links](set-up-atp-safe-links-policies.md) " eingerichtet und angewendet haben, um den Click-Time-Schutz und die Protokollierung von Click-urteilen durch ATP-sichere Links zu ermöglichen.) Zum Überprüfen von Phishing-URLs in Nachrichten und klicken auf URLs in Phishing-Nachrichten verwenden Sie die [e-Mail->-Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers.
 
 1. Klicken Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() auf **Threat Management** > **Explorer**.
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Phishing**aus.<br/>![Menü ' Ansicht ' für Explorer](media/ExplorerViewEmailPhishMenu.png)<br/>

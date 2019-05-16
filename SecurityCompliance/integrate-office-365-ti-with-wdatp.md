@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 01/22/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrieren Sie Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection, um detailliertere Informationen zur Bedrohungs Verwaltung zu erhalten.
-ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f6ea4309d3eb7a4ccd4987d221398d0f15994388
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077251"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integrieren von Office 365 Advanced Threat Protection mit Windows Defender Advanced Threat Protection
 
@@ -32,7 +32,7 @@ Die folgende Abbildung zeigt die Registerkarte **Geräte** , die angezeigt werde
   
 In diesem Beispiel können Sie sehen, dass die Empfänger der e-Mail-Nachricht vier Geräte haben und einer eine Warnung. Wenn Sie auf den Link für ein Gerät klicken, wird die zugehörige Seite im Windows Defender Advanced Threat Protection-Portal geöffnet.
   
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Voraussetzungen
 
 - Ihre Organisation muss über Office 365 Advanced Threat Protection Plan 2 (oder Office 365 E5) und Windows Defender ATP verfügen.
     

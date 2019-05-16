@@ -3,7 +3,7 @@ title: Anzeigen von Informationen zu schädlichen Dateien, die in SharePoint, On
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wo Sie Informationen zu böswilligen Dateien anzeigen können, die in SharePoint, OneDrive oder Teams erkannt werden, und wie Sie Maßnahmen für diese Dateien ergreifen.
-ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 070640d9aa1d28cc1a49a9d8b88e5bf5780d3622
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259833"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077581"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Anzeigen von Informationen zu schädlichen Dateien, die in SharePoint, OneDrive oder Microsoft Teams erkannt wurden
 
@@ -29,9 +29,9 @@ Zum Ausführen der in diesem Artikel beschriebenen Aufgaben benötigen Sie die e
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Anzeigen von Berichten mit Informationen zu erkannten Dateien
 
-Zum Anzeigen des Status und detaillierter Informationen zu Dateien, die von Office 365 ATP erkannt wurden, können Sie den Statusbericht über den BedrohungsSchutz verwenden.
+Zum Anzeigen des Status und detaillierter Informationen zu Dateien, die von Office 365 ATP erkannt wurden, können Sie den Statusbericht über den Bedrohungsschutz verwenden.
   
-1. wählen sie im [Office 365 &amp; Security Compliance Center](https://protection.office.com)die option **berichte** \> - **Dashboard** \> **Threat Protection Status**aus.
+1. Wählen Sie im [Office 365 &amp; Security Compliance Center](https://protection.office.com)die Option **Berichte** \> - **Dashboard** \> **Threat Protection Status**aus.
     
 2. Klicken Sie in der oberen rechten Ecke des Berichts auf **Details anzeigen**.
     
@@ -43,7 +43,7 @@ Zum Anzeigen des Status und detaillierter Informationen zu Dateien, die von Offi
   
 ## <a name="view-and-take-action-on-files-in-quarantine"></a>Anzeigen und Ausführen von Aktionen für Dateien in Quarantäne
 
-1. wählen sie im Office 365 &amp; Security Compliance Center die option **Threat management** \> **Review** \> **quarantine**aus.
+1. Wählen Sie im Office 365 &amp; Security Compliance Center die Option **Threat Management** \> **Review** \> **Quarantine**aus.
     
 2. Ändern Sie in der oberen linken Ecke den Filter von **e-Mail** in **Inhalt**.
     

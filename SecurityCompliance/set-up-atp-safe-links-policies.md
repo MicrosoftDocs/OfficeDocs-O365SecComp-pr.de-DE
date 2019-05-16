@@ -3,7 +3,7 @@ title: Einrichten von Office 365 ATP-Richtlinien für sichere Links
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/26/2019
 ms.service: O365-seccomp
@@ -15,17 +15,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Einrichten von Richtlinien für sichere Links zum Schutz Ihrer Organisation vor böswilligen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten.
-ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fd67562955e14bf5d94280ad6bc8afcd72bcbeb5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077231"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten von Office 365 ATP-Richtlinien für sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Office 365 Enterprise-Kunden. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und weitere Informationen zu sicheren Links in Outlook benötigen, lesen Sie den Thema [erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Office 365 Enterprise-Kunden. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und weitere Informationen zu sicheren Links in Outlook benötigen, lesen Sie den Thema [Erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP-sichere Links](atp-safe-links.md), eine Funktion von [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), können Ihre Organisation vor böswilligen linksschützen, die bei Phishing-und anderen Angriffen verwendet werden. Wenn Sie über die erforderlichen [Berechtigungen für das Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie ATP-Richtlinien für sichere Links einrichten, um sicherzustellen, dass beim Klicken auf Webadressen (URLs) Ihre Organisation geschützt ist. Ihre ATP-Richtlinien für sichere Links können so konfiguriert werden, dass URLs in e-Mails und URLs in Office-Dokumenten gescannt werden.
   
@@ -35,7 +35,7 @@ ms.locfileid: "32267054"
   
 1. Überarbeiten Sie die Voraussetzungen.
     
-2. Überarbeiten Sie die Standardrichtlinie für sichere ATP-Links, die für alle gilt. Sie können beispielsweise [Ihre benutzerdefinierte Liste blockiertEr URLs für sichere ATP-Links einrichten](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Überarbeiten Sie die Standardrichtlinie für sichere ATP-Links, die für alle gilt. Sie können beispielsweise [Ihre benutzerdefinierte Liste blockierter URLs für sichere ATP-Links einrichten](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
 3. Hinzufügen oder Bearbeiten von Richtlinien für bestimmte e-Mail-Empfänger, einschließlich [der Einrichtung Ihrer benutzerdefinierten Liste "nicht umschreiben" für ATP-sichere Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
@@ -63,7 +63,7 @@ ms.locfileid: "32267054"
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Schritt 2: definieren (oder überarbeiten) der ATP-Richtlinie für sichere Links, die für jeden gilt
 
-Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, haben Sie eine standardRICHTLINIE für ATP-sichere Links, die für alle Benutzer in Ihrer Organisation gilt. Stellen Sie sicher, dass Sie die Standardrichtlinie überprüfen und gegebenenfalls bearbeiten.
+Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, haben Sie eine Standardrichtlinie für ATP-sichere Links, die für alle Benutzer in Ihrer Organisation gilt. Stellen Sie sicher, dass Sie die Standardrichtlinie überprüfen und gegebenenfalls bearbeiten.
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Geschäfts-oder Schulkonto an. 
     
@@ -71,7 +71,7 @@ Wenn Sie [Office 365 Advanced Threat Protection](office-365-atp.md)haben, haben 
     
 3. Wählen Sie in den **Richtlinien für den Abschnitt gesamte Organisation** die Option **Standard**aus, und klicken Sie dann auf **Bearbeiten** (die Schaltfläche Bearbeiten ähnelt einem Bleistift).<br/>![Klicken Sie auf Bearbeiten, um die Standardrichtlinie für den Schutz sicherer Links zu bearbeiten.](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
-4. Geben Sie im Abschnitt **folgende URLs blockieren** eine oder mehrere URLs an, die verhindern sollen, dass Personen in Ihrer Organisation einen Besuch abhalten. (Siehe [Einrichten einer benutzerdefinierten Liste blockiertEr URLs mithilfe von ATP-sicheren Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
+4. Geben Sie im Abschnitt **folgende URLs blockieren** eine oder mehrere URLs an, die verhindern sollen, dass Personen in Ihrer Organisation einen Besuch abhalten. (Siehe [Einrichten einer benutzerdefinierten Liste blockierter URLs mithilfe von ATP-sicheren Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).)
     
 5. Wählen Sie im Abschnitt **Einstellungen für Inhalt außer e-Mail** die gewünschten Optionen aus (oder löschen). (Es wird empfohlen, alle Optionen auszuwählen.) 
     
@@ -93,7 +93,7 @@ Nachdem Sie die standardmäßige ATP-Richtlinie für sichere Links für alle Ben
     
   - Geben Sie im Feld **Name** keinen direkten Mausklick ein.
     
-  - Geben Sie in das Feld **Beschreibung** eine Beschreibung wie ein, um zu verhindern, dass Personen in bestimmten Gruppen durch Klicken zu einer Website ohne überPRÜFUNG der ATP-sichere Links zu einer Webseite navigieren.
+  - Geben Sie in das Feld **Beschreibung** eine Beschreibung wie ein, um zu verhindern, dass Personen in bestimmten Gruppen durch Klicken zu einer Website ohne Überprüfung der ATP-sichere Links zu einer Webseite navigieren.
     
   - Klicken Sie im Abschnitt **Aktion auswählen** **auf ein**.
     
@@ -121,8 +121,8 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 
 |Diese Option  |Funktion  |
 |---------|---------|
-| **Blockieren der folgenden URLs** <br/>    | Ermöglicht Ihrer Organisation eine benutzerdefinierte Liste von URLs, die automatisch blockiert werden. Wenn Benutzer auf eine URL in dieser Liste klicken, werden Sie zu einer [Warnungsseite](atp-safe-links-warning-pages.md) geleitet, die erklärt, warum die URL blockiert ist. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste blockiertEr URLs mit Office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 proPlus, Office für iOS und Android** <br/>    | Wenn diese Option ausgewählt ist, wird der sichere ATP-Links Schutz auf URLs in Word-, Excel-und PowerPoint-Dateien unter Windows oder Mac OS, Office-Dokumenten auf iOS-oder Android-Geräten, Visio 2016 unter Windows und Office Online (Word Online, PowerPoint Online, Excel Online, und OneNote Online), sofern der Benutzer sich bei Office 365 angemeldet hat. |
+| **Blockieren der folgenden URLs** <br/>    | Ermöglicht Ihrer Organisation eine benutzerdefinierte Liste von URLs, die automatisch blockiert werden. Wenn Benutzer auf eine URL in dieser Liste klicken, werden Sie zu einer [Warnungsseite](atp-safe-links-warning-pages.md) geleitet, die erklärt, warum die URL blockiert ist. Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Office 365 ProPlus, Office für IOS und Android** <br/>    | Wenn diese Option ausgewählt ist, wird der sichere ATP-Links Schutz auf URLs in Word-, Excel-und PowerPoint-Dateien unter Windows oder Mac OS, Office-Dokumenten auf IOS-oder Android-Geräten, Visio 2016 unter Windows und Office Online (Word Online, PowerPoint Online, Excel Online, und OneNote Online), sofern der Benutzer sich bei Office 365 angemeldet hat. |
 | **Nicht nachverfolgen, wenn Benutzer auf ATP-sichere Links klicken** <br/>  | Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in Word, Excel, PowerPoint und Visio-Dokumente wird nicht gespeichert.  <br/> |
 |**Nicht zulassen, dass Benutzer auf ATP-sichere Links mit ursprünglicher URL klicken** <br/> |Wenn diese Option aktiviert ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weitergeleitet werden, die als bösartig festgelegt wurde.  <br/> |
 

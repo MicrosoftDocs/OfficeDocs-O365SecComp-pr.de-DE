@@ -1,10 +1,10 @@
 ---
-title: Senden von e-Mail-Benachrichtigungen und Anzeigen von Richtlinien Tipps für DLP-Richtlinien
+title: Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ein richtlinientipp ist eine Benachrichtigung oder Warnung, die angezeigt wird, wenn ein Benutzer mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen. Sie können e-Mail-Benachrichtigungen und Richtlinien Tipps verwenden, um die Aufmerksamkeit zu verbessern und Personen über die Richtlinien Ihrer Organisation zu informieren. Sie können den Benutzern auch die Möglichkeit geben, die Richtlinie außer Kraft zu setzen, damit Sie nicht blockiert werden, wenn Sie über eine gültige geschäftliche Anforderung verfügen oder wenn die Richtlinie ein falsch positives Ergebnis ermittelt. '
-ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077361"
 ---
-# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von e-Mail-Benachrichtigungen und Anzeigen von Richtlinien Tipps für DLP-Richtlinien
+# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien
 
 Sie können eine DLP-Richtlinie (Data Loss Prevention, Datenverlust Verhütung) verwenden, um vertrauliche Informationen in Office 365 zu identifizieren, zu überwachen und zu schützen. Sie möchten, dass Personen in Ihrer Organisation, die mit diesen vertraulichen Informationen arbeiten, mit ihren DLP-Richtlinien kompatibel bleiben, Sie möchten Sie jedoch nicht unnötigerweise daran hindern, ihre Arbeit zu erledigen. Hier können e-Mail-Benachrichtigungen und Richtlinien Tipps helfen.
   
@@ -65,7 +65,7 @@ Wenn Sie eine DLP-Richtlinie erstellen, sind sowohl e-Mail-Benachrichtigungen al
     
 6. Führen Sie einen der folgenden Schritte aus, um die Speicherorte auszuwählen, die von der DLP-Richtlinie geschützt werden sollen:
     
-  - wählen sie **alle standorte in Office 365** \> **Next**aus.
+  - Wählen Sie **alle Standorte in Office 365** \> **Next**aus.
     
   - Wählen Sie die Option **Ich möchte bestimmte Standorte** \> **** auswählen.
     
@@ -118,7 +118,7 @@ Sie können auch die folgenden Token verwenden, um die e-Mail-Benachrichtigung a
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |Die Aktionen, die auf den Inhalt angewendet werden.  <br/> |
 |%% ContentURL%%  <br/> |Die URL des Dokuments auf der SharePoint Online-Website oder OneDrive for Business-Website.  <br/> |
-|%% MatchedConditions%%  <br/> |Die Bedingungen, die mit dem Inhalt verglichen wurden. Verwenden Sie dieses Token, um Personen über mögliche Probleme mit dem Inhalt zu informieren.  <br/> |
+|%%MatchedConditions%%  <br/> |Die Bedingungen, die mit dem Inhalt verglichen wurden. Verwenden Sie dieses Token, um Personen über mögliche Probleme mit dem Inhalt zu informieren.  <br/> |
    
 ![Benachrichtigungsmeldung mit angezeigtem Token](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
@@ -164,7 +164,7 @@ Wenn ein Dokument auf einer OneDrive for Business-Website oder einer SharePoint 
   
 Wenn Sie eine Aktion für ein Dokument ausführen möchten, können Sie \> ](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in ****![der rechten oberen Ecke der Seite ein Element auswählen, um den Detailbereich \> **Ansichts Richtlinien**Info zu öffnen.
   
-Der richtlinientipp listet die Probleme mit dem Inhalt auf, und wenn die Richtlinien Tipps mit diesen Optionen konfiguriert sind, können Sie **Auflösen**auswählen und dann den Richtlinientipp **außer Kraft setzen** oder ein falsch positives Ergebnis **melden** . 
+Der richtlinientipp listet die Probleme mit dem Inhalt auf, und wenn die Richtlinien Tipps mit diesen Optionen konfiguriert sind, können Sie **Auflösen**auswählen und dann den richtlinientipp **außer Kraft setzen** oder ein falsch positives Ergebnis **melden** . 
   
 ![Informationsbereich mit richtlinientipp](media/0a191e70-80f0-4702-90f4-7a5b7aabcaab.png)
   
@@ -261,7 +261,7 @@ Und Richtlinien Tipps werden auch in der backstaging-Ansicht (auf der Registerka
   
 ![Backstaging zeigt richtlinientipp in Excel 2016](media/44c561f6-8f3f-4878-b1b0-b7543f8a4120.png)
   
-Wenn Richtlinien Tipps in der DLP-Richtlinie mit diesen Optionen konfiguriert sind, können Sie **Resolve** wählen, um einen Richtlinientipp **außer Kraft zu setzen** oder ein falsch positives Ergebnis zu **melden** . 
+Wenn Richtlinien Tipps in der DLP-Richtlinie mit diesen Optionen konfiguriert sind, können Sie **Resolve** wählen, um einen richtlinientipp **außer Kraft zu setzen** oder ein falsch positives Ergebnis zu **melden** . 
   
 ![Optionen für richtlinientipp in backstaging in Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   

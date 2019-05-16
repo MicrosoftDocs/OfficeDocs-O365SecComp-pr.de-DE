@@ -3,7 +3,7 @@ title: Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Tea
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie ATP für SharePoint, OneDrive und Teams aktivieren, einschließlich der Festlegung von Warnungen für erkannte Dateien.
-ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077241"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -40,7 +40,7 @@ Um ATP-Richtlinien zu definieren (oder zu bearbeiten), muss Ihnen eine entsprech
   
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com)zu, und melden Sie sich mit Ihrem Geschäfts-oder Schulkonto an.
     
-2. wählen sie im Office 365 &amp; Security Compliance Center im linken navigationsbereich unter bedrohungs **verwaltung**die option **richtlinie** \> für **sichere anlagen**aus. <br/>![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management Policy aus.](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. Wählen Sie im Office 365 &amp; Security Compliance Center im linken Navigationsbereich unter Bedrohungs **Verwaltung**die Option **Richtlinie** \> für **sichere Anlagen**aus. <br/>![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management Policy aus.](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
 3. Wählen Sie **ATP für SharePoint, OneDrive und Microsoft Teams aktivieren**aus.<br/>![Aktivieren von Advanced Threat Protection für SharePoint Online, OneDrive for Business und Microsoft Teams](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
@@ -56,7 +56,7 @@ Um ATP-Richtlinien zu definieren (oder zu bearbeiten), muss Ihnen eine entsprech
     
 8. Empfohlen Gehen Sie vor, um Warnungen für erkannte Dateien einzurichten.
     
-Weitere Informationen zur Verwendung von PowerShell mit Office 365 finden Sie unter [Manage office 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). 
+Weitere Informationen zur Verwendung von PowerShell mit Office 365 finden Sie unter [Manage Office 365 with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). 
 
 Weitere Informationen zur Benutzererfahrung, wenn eine Datei als bösartig erkannt wurde, finden Sie unter [Vorgehensweise, wenn eine bösartige Datei in SharePoint Online, OneDrive oder Microsoft Teams gefunden wird](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
   
@@ -64,7 +64,7 @@ Weitere Informationen zur Benutzererfahrung, wenn eine Datei als bösartig erkan
 
 Um eine Benachrichtigung zu erhalten, wenn eine Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams als bösartig identifiziert wurde, können Sie eine Warnung einrichten.
   
-1. wählen sie im [Office 365 &amp; Security Compliance Center](https://protection.office.com) **alerts** \> **Manage alerts**aus.
+1. Wählen Sie im [Office 365 &amp; Security Compliance Center](https://protection.office.com) **Alerts** \> **Manage Alerts**aus.
     
 2. Wählen Sie **neue Warnungs Richtlinie**aus.
     

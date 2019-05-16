@@ -3,7 +3,7 @@ title: Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.date: 03/19/2019
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Erweitern Sie Office 365 Advanced Threat Protection auf Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams, um eine sicherere Zusammenarbeit für Ihr Unternehmen zu ermöglichen.
-ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249640"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077611"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP für SharePoint, OneDrive und Microsoft Teams
 
@@ -50,7 +50,7 @@ Weitere Informationen finden Sie unter [Turn on Office 365 ATP for SharePoint, O
 
 - Stellen Sie sicher, dass Ihre SharePoint-Websites so konfiguriert sind, dass Sie die [moderne Umgebung](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)verwenden. Wenn eine Datei als bösartig und blockiert identifiziert wird, können die Benutzer erkennen, dass dies in der modernen Benutzeroberfläche stattgefunden hat, aber nicht in der klassischen Ansicht. ATP Protection gilt unabhängig davon, ob die moderne Erfahrung oder die klassische Ansicht verwendet wird; visuelle Indikatoren, die eine Datei blockiert, sind jedoch nur in der modernen Umgebung vorhanden.
     
-- Dateien, die in SharePoint Online, OneDrive for Business oder Microsoft Teams als schädlich identifiziert werden, werden in [Berichten für office 365 Advanced Threat Protection](view-reports-for-atp.md) und im Threat Explorer (Teil von [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) ) angezeigt. ).
+- Dateien, die in SharePoint Online, OneDrive for Business oder Microsoft Teams als schädlich identifiziert werden, werden in [Berichten für Office 365 Advanced Threat Protection](view-reports-for-atp.md) und im Threat Explorer (Teil von [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) ) angezeigt. ).
     
 - ATP ist Teil der allgemeinen Bedrohungsschutz Strategie Ihrer Organisation, die Schutz vor Spam und Schadsoftware sowie sichere Links und sichere Anlagen umfasst. Weitere Informationen finden Sie unter [schützen vor Bedrohungen in Office 365](protect-against-threats.md).
     
@@ -62,7 +62,7 @@ Weitere Informationen finden Sie unter [Turn on Office 365 ATP for SharePoint, O
   
 Wenn eine Datei in SharePoint Online, OneDrive for Business oder Microsoft Teams als bösartig identifiziert wird, wird die Datei zusätzlich zu den ATP-Blockierungen, die geöffnet oder freigegeben werden sollen, in eine Liste von isolierten Elementen aufgenommen. (Wechseln Sie im &amp; Security Compliance Center zu **Threat Management** \> **Review** \> **Quarantine** , und Filtern Sie nach **Inhalten**.) 
   
-Wenn Sie Teil des Office 365-Sicherheitsteams Ihrer Organisation sind und über die erforderlichen [Berechtigungen im office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Dateien herunterladen, freigeben, melden und löschen, die von ATP als bösartig erkannt werden. aus der Quarantäne.
+Wenn Sie Teil des Office 365-Sicherheitsteams Ihrer Organisation sind und über die erforderlichen [Berechtigungen im Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md)verfügen, können Sie Dateien herunterladen, freigeben, melden und löschen, die von ATP als bösartig erkannt werden. aus der Quarantäne.
   
 - Durch das **Freigeben und melden** einer Datei wird der ATP-Block für die Datei in der entsprechenden Teamwebsite oder Dokumentbibliothek für SharePoint, OneDrive oder Microsoft Teams entfernt. Benutzer können die Datei dann öffnen, freigeben und herunterladen. Und wenn die Option **Bericht an Microsoft senden** ausgewählt ist, wird die Datei als falsch positives Ergebnis an Microsoft gemeldet. 
     

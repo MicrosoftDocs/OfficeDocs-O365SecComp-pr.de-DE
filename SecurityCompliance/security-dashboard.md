@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,27 +14,27 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
-description: Verwenden Sie das neue Sicherheits Dashboard, um den Status der BedrohungsSchutz in Office 365 zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
-ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Verwenden Sie das neue Sicherheits Dashboard, um den Status der Bedrohungsschutz in Office 365 zu überprüfen und Sicherheitswarnungen anzuzeigen und zu bearbeiten.
+ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077221"
 ---
 # <a name="security-dashboard"></a>Sicherheits Dashboard
 
 ## <a name="overview"></a>Übersicht
 
-Mit [dem &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) kann Ihre Organisation Datenschutz und-Compliance verwalten. Unter der Voraussetzung, dass Sie über die erforderlichen Berechtigungen verfügen, können Sie mithilfe des Sicherheits Dashboards den Status des BedrohungsSchutzes überprüfen und Sicherheitswarnungen anzeigen und bearbeiten. 
+Mit [dem &amp; Security Compliance Center](go-to-the-securitycompliance-center.md) kann Ihre Organisation Datenschutz und-Compliance verwalten. Unter der Voraussetzung, dass Sie über die erforderlichen Berechtigungen verfügen, können Sie mithilfe des Sicherheits Dashboards den Status des Bedrohungsschutzes überprüfen und Sicherheitswarnungen anzeigen und bearbeiten. 
   
 Sehen Sie sich das Video an, um einen Überblick zu erhalten, und lesen Sie diesen Artikel, um mehr zu erfahren.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
   
-Je nach dem, was das Office 365-Abonnement Ihrer Organisation enthält, enthält das Sicherheits Dashboard mehrere Widgets, wie etwa die Zusammenfassung der Bedrohungs Verwaltung, den Status des BedrohungsSchutzes, globale wöchentliche Bedrohungs Erkennungsmethoden, Schadsoftware und vieles mehr, wie im Abschnitte.
+Je nach dem, was das Office 365-Abonnement Ihrer Organisation enthält, enthält das Sicherheits Dashboard mehrere Widgets, wie etwa die Zusammenfassung der Bedrohungs Verwaltung, den Status des Bedrohungsschutzes, globale wöchentliche Bedrohungs Erkennungsmethoden, Schadsoftware und vieles mehr, wie im Abschnitte.
   
-wechseln sie zum anzeigen des sicherheits dashboards im [Office 365 &amp; security Compliance Center](go-to-the-securitycompliance-center.md)zu **Threat management** \> **dashboard**.
+Wechseln Sie zum Anzeigen des Sicherheits Dashboards im [Office 365 &amp; Security Compliance Center](go-to-the-securitycompliance-center.md)zu **Threat Management** \> **Dashboard**.
   
 > [!NOTE]
 > Sie müssen ein globaler Office 365-Administrator, ein Sicherheitsadministrator oder ein Sicherheits-Lesegerät sein, um das Sicherheits Dashboard anzuzeigen. Einige Widgets erfordern zusätzliche Berechtigungen zum anzeigen. Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
@@ -54,7 +54,7 @@ Die Informationen, die Sie in der Zusammenfassung der Bedrohungs Verwaltung sehe
 
 Zum Anzeigen oder zugreifen auf das zusammenfassende Widget für die Bedrohungs Verwaltung benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-## <a name="threat-protection-status"></a>Status des BedrohungsSchutzes
+## <a name="threat-protection-status"></a>Status des Bedrohungsschutzes
 
 Das Widget Threat Protection Status zeigt die Effektivität des Schutz vor Bedrohungen mit einer Trend-und Detailansicht von Phishing und Schadsoftware. 
 
@@ -65,14 +65,14 @@ Die Details hängen davon ab, ob Ihr Office 365 [-Abonnement Exchange Online Pro
 
 |Wenn Ihr Abonnement enthält... |Diese Details werden angezeigt. |
 |---------|---------|
-|EOP, jedoch nicht Office 365 ATP     |Bösartige e-Mails, die von EOP erkannt und blockiert wurden<br> Siehe [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).| |
-|Office 365 ATP |Bösartige Inhalte und bösartige e-Mails, die von EOP und Office 365 ATP erkannt und blockiert wurden<br>Aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten, die vom Antischadsoftware-Modul blockiert wurden, [Zero-Hour-automatische Bereinigung](zero-hour-auto-purge.md)und ATP-Funktionen (einschließlich [sicherer Links](atp-safe-links.md), [sicherer Anlagen](atp-safe-attachments.md)und [ATP-Phishing](atp-anti-phishing.md)).<br>Siehe [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
+|EoP, jedoch nicht Office 365 ATP     |Bösartige e-Mails, die von EoP erkannt und blockiert wurden<br> Siehe [Threat Protection Status Report (EoP)](view-email-security-reports.md#threat-protection-status-report).| |
+|Office 365 ATP |Bösartige Inhalte und bösartige e-Mails, die von EoP und Office 365 ATP erkannt und blockiert wurden<br>Aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten, die vom Antischadsoftware-Modul blockiert wurden, [Zero-Hour-automatische Bereinigung](zero-hour-auto-purge.md)und ATP-Funktionen (einschließlich [sicherer Links](atp-safe-links.md), [sicherer Anlagen](atp-safe-attachments.md)und [ATP-Phishing](atp-anti-phishing.md)).<br>Siehe [Threat Protection Status Report (ATP)](view-reports-for-atp.md#threat-protection-status-report). | 
 
 Zum Anzeigen oder zugreifen auf das Widget Threat Protection Status benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
-## <a name="global-weekly-threat-detections"></a>Globale wöchentliche BedrohungsEntdeckungen
+## <a name="global-weekly-threat-detections"></a>Globale wöchentliche Bedrohungsentdeckungen
  
-Das Widget "globale wöchentliche BedrohungsErkennungen" zeigt, wie viele Bedrohungen in e-Mail-Nachrichten in den letzten sieben (7) Tagen erkannt wurden.
+Das Widget "globale wöchentliche Bedrohungserkennungen" zeigt, wie viele Bedrohungen in e-Mail-Nachrichten in den letzten sieben (7) Tagen erkannt wurden.
 
 ![Widget "globale wöchentliche Bedrohungs Ermittlungen"](media/globalweeklythreatdetections.png)
 
@@ -93,7 +93,7 @@ Malware-Widgets zeigen in den letzten sieben (7) Tagen Details zu Malware Trends
  
 ## <a name="insights"></a>Insights
 
-EinBlicke nicht nur die wichtigsten Probleme, die Sie überprüfen sollten, Sie auch Empfehlungen und Maßnahmen zu berücksichtigen. 
+Einblicke nicht nur die wichtigsten Probleme, die Sie überprüfen sollten, Sie auch Empfehlungen und Maßnahmen zu berücksichtigen. 
 
 ![Intelligente Einblicke](media/smartinsights.png)
 
@@ -112,7 +112,7 @@ Am unteren Rand des Sicherheits Dashboards befindet sich ein Abschnitt **Trends*
   
 ![Im Abschnitt Trends werden die Trends für den e-Mail-Fluss für die Organisation zusammengefasst.](media/trends.png)
   
-Und wenn das Office 365-Abonnement Ihrer Organisation [office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, haben Sie auch einen aktuellen Bericht über **Warnmeldungen zur Gefahren Verwaltung** in diesem Abschnitt, mit dem Ihr Sicherheitsteam Sicherheitswarnungen mit hoher Priorität. 
+Und wenn das Office 365-Abonnement Ihrer Organisation [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthält, haben Sie auch einen aktuellen Bericht über **Warnmeldungen zur Gefahren Verwaltung** in diesem Abschnitt, mit dem Ihr Sicherheitsteam Sicherheitswarnungen mit hoher Priorität. 
 
 Zum Anzeigen oder zugreifen auf das gesendete und empfangene e-Mail-widget benötigen Sie Berechtigungen zum Anzeigen von Advanced Threat Protection-Berichten. Weitere Informationen finden Sie unter [welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 

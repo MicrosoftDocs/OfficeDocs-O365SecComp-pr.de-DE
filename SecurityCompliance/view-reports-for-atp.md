@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Informationen zum Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: ff80191ae75a37994d1ad08f587fa07f72b88f24
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3525c71f8a627d930afbf94f5f0d12e55f19a0b6
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077321"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
@@ -30,28 +30,28 @@ Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md
   
 Zu den ATP-Berichten gehören der Bericht über den [Status von Bedrohungsschutz](#threat-protection-status-report), der [Bericht ATP-Dateitypen](#atp-file-types-report)und der Bericht zur Verteilung der ATP-nach [richten](#atp-message-disposition-report). Dieser Artikel beschreibt die ATP-Berichte und enthält Links zu [weiteren Berichten, die Sie anzeigen können](#additional-reports-to-view).
   
-## <a name="threat-protection-status-report"></a>Status Bericht zum BedrohungsSchutz
+## <a name="threat-protection-status-report"></a>Status Bericht zum Bedrohungsschutz
 
-Der **Status** Bericht zu Bedrohungen ist eine einzelne Ansicht, in der Informationen zu böswilligen Inhalten und bösartigen e-Mails zusammengeführt werden, die von [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EOP) und [Office 365 ATP](office-365-atp.md)erkannt und blockiert wurden. Der Bericht bietet eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten (Dateien oder Websiteadressen (URLs)), die vom Antischadsoftware-Modul blockiert wurden, [Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md)und ATP-Funktionen wie ATP- [sichere Links](atp-safe-links.md), [ATP-Safe ](atp-safe-attachments.md)Und [ATP-Phishing-Funktionen](atp-anti-phishing.md).
+Der **Status** Bericht zu Bedrohungen ist eine einzelne Ansicht, in der Informationen zu böswilligen Inhalten und bösartigen e-Mails zusammengeführt werden, die von [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EoP) und [Office 365 ATP](office-365-atp.md)erkannt und blockiert wurden. Der Bericht bietet eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten (Dateien oder Websiteadressen (URLs)), die vom Antischadsoftware-Modul blockiert wurden, [Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md)und ATP-Funktionen wie ATP- [sichere Links](atp-safe-links.md), [ATP-Safe ](atp-safe-attachments.md)Und [ATP-Phishing-Funktionen](atp-anti-phishing.md).
 
 > [!NOTE]
-> Ein Bericht über den BedrohungsSchutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Status Bericht zur Gefahrenabwehr für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten als die EOP-Kunden. Beispielsweise enthält der Status Bericht über Bedrohungen für ATP-Kundeninformationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden. Diese Informationen sind spezifisch für ATP, sodass Kunden, die über EOP, jedoch nicht über ATP verfügen, diese Details nicht in Ihrem Status Bericht über den BedrohungsSchutz sehen.
+> Ein Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Status Bericht zur Gefahrenabwehr für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten als die EoP-Kunden. Beispielsweise enthält der Status Bericht über Bedrohungen für ATP-Kundeninformationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden. Diese Informationen sind spezifisch für ATP, sodass Kunden, die über EoP, jedoch nicht über ATP verfügen, diese Details nicht in Ihrem Status Bericht über den Bedrohungsschutz sehen.
   
 Zum Anzeigen des Statusberichts zum Bedrohungsschutz wechseln Sie im [Security &amp; Compliance Center](https://protection.office.com)zu **Status des Threat Protection**- **Dashboards** \> für **Berichte** \> .
   
-![Status Bericht zum ATP-BedrohungsSchutz](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+![Status Bericht zum ATP-Bedrohungsschutz](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
 Wenn Sie einen detaillierten Status für einen Tag erhalten möchten, bewegen Sie den Mauszeiger über das Diagramm.
   
-![Status Daten für den ATP-BedrohungsSchutz für einen Tag](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+![Status Daten für den ATP-Bedrohungsschutz für einen Tag](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Standardmäßig werden im Bericht über den Status des BedrohungsSchutzes Daten für die letzten sieben Tage angezeigt. Sie können jedoch **Filter** auswählen und den Datums Umfang ändern, um Daten für bis zu 90 Tage anzuzeigen. 
+Standardmäßig werden im Bericht über den Status des Bedrohungsschutzes Daten für die letzten sieben Tage angezeigt. Sie können jedoch **Filter** auswählen und den Datums Umfang ändern, um Daten für bis zu 90 Tage anzuzeigen. 
   
-![Status Filter für ATP-BedrohungsSchutz](media/4f703369-642b-402b-9758-b9c828283410.png)
+![Status Filter für ATP-Bedrohungsschutz](media/4f703369-642b-402b-9758-b9c828283410.png)
   
 Sie können auch das Menü **Daten anzeigen** , um zu ändern, welche Informationen im Bericht angezeigt werden. 
   
-![Anzeigeoptionen für den Status Bericht zum ATP-BedrohungsSchutz](media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+![Anzeigeoptionen für den Status Bericht zum ATP-Bedrohungsschutz](media/4959bf8c-d192-4542-b00b-184e101e7513.png)
   
 ## <a name="atp-file-types-report"></a>Bericht "ATP-Dateitypen"
 
