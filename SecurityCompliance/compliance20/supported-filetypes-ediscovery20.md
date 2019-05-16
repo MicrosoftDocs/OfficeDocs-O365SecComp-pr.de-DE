@@ -14,60 +14,176 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 378bd9ae88269d6a6d15a672473550e50179f772
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: d8e9689cb04929137787225579dcda17005c8bfe
+ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834934"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34088808"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Unterstützte Dateitypen in Advanced eDiscovery
 
-Advanced eDiscovery unterstützt viele Dateitypen und unterstützt Sie auf verschiedenen Ebenen, die in der folgenden Tabelle beschrieben werden. Diese Liste ist noch nicht finalisiert, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. Die Tabelle gibt außerdem an, ob ein Dateityp in den verfügbaren Viewern in Advanced eDiscovery angezeigt werden kann.
+Advanced eDiscovery unterstützt viele Dateitypen für viele verschiedene Ebenen, die in der folgenden Tabelle beschrieben werden. Diese Liste ist nicht abgeschlossen, und wir werden neue Dateitypen hinzufügen, während wir unsere Validierungstests fortsetzen. Die Tabellen geben an, ob ein Dateityp für die Textextraktion (OCR für Bilder) unterstützt wird, der in der systemeigenen Anzeige angezeigt werden kann, und unterstützt auch den Kommentar Betrachter in Advanced eDiscovery.
 
-| MIME-Typ | Beschreibung | Native Viewer | Text Anzeige | Betrachter mit Anmerkungen versehen | Container Extraktion | Erweiterungen |
-| :- | :- | :- | :- | :- | :- | :- |
-| Application/mbox | Archiv/Container |  |  |  | Ja | . mbox |
-| application/msword | Produktivität | Ja | Ja | Ja |  | . doc;. dat |
-| application/pdf | Produktivität | Ja | Ja | Ja |  | .pdf |
-| Anwendung/RTF | Dokument | Ja | Ja | Ja |  | RTF;. doc |
-| application/vnd. MS-Excel | Produktivität | Ja | Ja | Ja |  | . xls;. dat |
-| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Produktivität | Ja | Ja | Nein |  | . xlsb |
-| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Produktivität | Ja | Ja | Ja |  | . xlsm |
-| application/vnd. MS-Excel. Template. macroenabled. 12 | Produktivität | Nein | Ja | Nein |  | . xltm |
-| application/vnd. MS-Outlook | Zusammenarbeit | Ja | Ja | Ja |  | . msg |
-| application/vnd. MS-Outlook-PST | Archiv/Container |  |  |  | Ja | PST |
-| application/vnd. MS-PowerPoint | Produktivität | Ja | Ja | Ja |  | . ppt;. PPS;. Topf |
-| application/vnd. MS-Word. Document. macroenabled. 12 | Produktivität | Ja | Ja | Ja |  | DOCM |
-| application/vnd. MS-Word. Template. macroenabled. 12 | Produktivität | Ja | Ja | Ja |  | . dotm |
-| application/vnd. Oasis. OpenDocument. Text | Produktivität | Ja | Ja | Ja |  | ODT  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | Produktivität | Ja | Ja | Ja |  | PPTX |
-| application/vnd. openxmlformats-officeDocument. PresentationML. Slideshow | Produktivität | Ja | Ja | Ja |  | . ppsx |
-| application/vnd. openxmlformats-officeDocument. PresentationML. Template | Produktivität | Ja | Ja | Ja |  | . POTX |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Produktivität | Ja | Ja | Ja |  | . xlsx |
-| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Produktivität | Ja | Ja | Ja |  | . xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Produktivität | Ja | Ja | Ja |  | DOCX |
-| application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Produktivität | Ja | Ja | Ja |  | . dotx |
-| application/vnd. Visio | Produktivität | Ja | Ja | Ja |  | . vsd |
-| Application/x-7z-Compressed | Archiv/Container |  |  |  | Ja | .7z |
-| Application/XHTML + XML | Dokument | Ja | Ja | Ja |  | . XHTML |
-| Anwendung/XML | Dokument | Ja | Ja | Ja |  | . XML |
-| Application/x-Msaccess | Produktivität | Ja | Ja | Ja |  | . mdb |
-| Application/x-mspublisher | Produktivität | Ja | Ja | Ja |  | . pub |
-| Anwendung/x-rar-komprimiert | Archiv/Container |  |  |  | Ja | . rar |
-| Anwendung/x-tar | Archiv/Container |  |  |  | Ja | . tar |
-| Anwendung/zip | Archiv/Container |  |  |  | Ja | . zip |
-| Bild/BMP | Image | Ja | Ja | Ja |  | BMP |
-| Image/EMF | Image | Ja | Ja | Ja |  | . EMF |
-| image/gif | Image | Ja | Ja | Ja |  | .gif |
-| image/jpeg | Image | Ja | Ja | Ja |  | . jpg;. JPEG;. dat;. jpgt |
-| image/png | Image | Ja | Ja | Ja |  | .png |
-| Bild/TIFF | Image | Ja | Ja | Ja |  | . TIF |
-| Image/vnd. DWG | Zeichnungen | Ja | Ja | Ja |  | . dwg;. DXF |
-| Image/WMF | Dokument | Ja | Ja | Ja |  | . WMF |
-| Nachricht/RFC822 | Zusammenarbeit | Ja | Ja | Ja |  | . eml |
-| Text/CSV | Dokument | Ja | Ja | Ja |  | . CSV |
-| Text/HTML | Dokument | Ja | Ja | Ja |  | . html;. shtml;. htm |
-| text/plain | Dokument | Ja | Ja | Ja |  | . txt;. CSS;. con;. pl;. CSV;. dat |
-| Text/vCard-Kontakt | Zusammenarbeit | Ja | Ja | Ja |  | . vcf |
+## <a name="archive--container"></a>Archiv/Container
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Container Extraktion | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |
+| Application/x-7z-Compressed | Ja | Ja | Ja | .7z |
+| Anwendung/x-rar-komprimiert | Ja | Ja | Ja | . rar |
+| Anwendung/x-tar | Ja | Ja | Ja | . tar |
+| Anwendung/zip | Ja | Ja | Ja | . zip |
+||||||||
+
+## <a name="database"></a>Datenbank
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Application/x-Msaccess | Ja | Ja | Ja | Nein | Nein | . mdb |
+||||||||
+
+## <a name="email"></a>E-Mail
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Outlook | Ja | Ja | Ja | Ja | Ja | . msg |
+| Nachricht/RFC822 | Ja | Ja | Ja | Ja | Ja | . eml |
+| Text/vCard-Kontakt | Ja | Ja | Ja | Ja | Ja | . vcf |
+||||||||
+
+## <a name="email-container"></a>E-Mail-Container
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Container Extraktion | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |
+| Application/mbox | Ja | Ja | Ja | . mbox |
+| application/vnd. MS-Outlook-PST | Ja | Ja | Ja | PST |
+||||||||
+
+## <a name="html"></a>HTML
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Application/XHTML + XML | Ja | Ja | Ja | Ja | Ja | . XHTML |
+| Anwendung/XML | Ja | Ja | Ja | Ja | Ja | . XML |
+| Text/HTML | Ja | Ja | Ja | Ja | Ja | . htm;. html;. shtml |
+||||||||
+
+## <a name="image"></a>Image
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | OCR-Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Bild/BMP | Ja | Ja | Ja | Ja | Ja | BMP |
+| Image/EMF | Ja | Ja | Ja | Ja | Ja | . EMF |
+| image/gif | Ja | Ja | Ja | Ja | Ja | .gif |
+| image/jpeg | Ja | Ja | Ja | Ja | Ja | . JPEG;. jpg |
+| image/png | Ja | Ja | Ja | Ja | Ja | .png |
+| Image/SVG + XML | Ja | Ja | Ja | Ja | Nein | . svg |
+| Bild/TIFF | Ja | Ja | Ja | Ja | Ja | . TIF |
+| Image/vnd. DWG | Ja | Ja | Ja | Ja | Ja | . dwg;. DXF |
+| Image/WMF | Ja | Ja | Ja | Ja | Ja | . WMF |
+||||||||
+
+## <a name="microsoft-excel"></a>Microsoft Excel
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Excel | Ja | Ja | Ja | Ja | Ja | . dat;. xls |
+| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Ja | Ja | Ja | Ja | Nein | . xlsb |
+| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Ja | Ja | Ja | Ja | Ja | . xlsm |
+| application/vnd. MS-Excel. Template. macroenabled. 12 | Ja | Ja | Ja | Nein | Nein | . xltm |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Ja | Ja | Ja | Ja | Ja | . xlsx |
+| application/vnd. openxmlformats-officeDocument. SpreadsheetML. Template | Ja | Ja | Ja | Ja | Ja | . xltx |
+||||||||
+
+## <a name="microsoft-powerpoint"></a>Microsoft Powerpoint
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-PowerPoint | Ja | Ja | Ja | Ja | Ja | . Pot;. PPS;. ppt |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Ja | Ja | Ja | Ja | Ja | PPTX |
+| application/vnd. openxmlformats-officeDocument. PresentationML. Slideshow | Ja | Ja | Ja | Ja | Ja | . ppsx |
+| application/vnd. openxmlformats-officeDocument. PresentationML. Template | Ja | Ja | Ja | Ja | Ja | . POTX |
+||||||||
+
+## <a name="microsoft-publisher"></a>Microsoft Publisher
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Application/x-mspublisher | Ja | Ja | Ja | Ja | Ja | . pub |
+||||||||
+
+## <a name="microsoft-visio"></a>Microsoft Visio
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Visio. Drawing | Ja | Ja | Ja | Ja | Nein |  |
+| application/vnd. Visio | Ja | Ja | Ja | Ja | Ja | . vsd |
+||||||||
+
+## <a name="microsoft-word"></a>Microsoft Word
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/msword | Ja | Ja | Ja | Ja | Ja | . dat;. doc |
+| Anwendung/RTF | Ja | Ja | Ja | Ja | Ja | . doc;. RTF |
+| application/vnd. MS-Word. Document. macroenabled. 12 | Ja | Ja | Ja | Ja | Ja | DOCM |
+| application/vnd. MS-Word. Template. macroenabled. 12 | Ja | Ja | Ja | Ja | Ja | . dotm |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Ja | Ja | Ja | Ja | Ja | DOCX |
+| application/vnd. openxmlformats-officeDocument. WordprocessingML. Template | Ja | Ja | Ja | Ja | Ja | . dotx |
+||||||||
+
+## <a name="microsoft-works"></a>Microsoft Works
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Works-SS | Ja | Ja | Nein | Nein | Nein | . WPS |
+| application/vnd. MS-Works-WP | Ja | Ja | Nein | Nein | Nein | . WPS |
+||||||||
+
+## <a name="open-document-format"></a>Dokument Format öffnen
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. Oasis. OpenDocument. Text | Ja | Ja | Ja | Ja | Ja | . ODT |
+||||||||
+
+## <a name="other"></a>Andere
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/json | Ja | Ja | Ja | Ja | Ja | n/v |
+| application/vnd. MS-Graph | Ja | Ja | Nein | Nein | Nein |  |
+| Anwendung/winhlp | Ja | Ja | Nein | Nein | Nein | . hlp |
+| Application/x-TNEF | Ja | Ja | Nein | Nein | Nein |  |
+||||||||
+
+## <a name="plain-text"></a>Nur-Text
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| Text/CSV | Ja | Ja | Ja | Ja | Ja | . CSV |
+| text/plain | Ja | Ja | Ja | Ja | Ja | . con;. CSS;. CSV;. dat;. pl;. txt |
+||||||||
+
+## <a name="portable-document-format"></a>Portable Document Format
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/pdf | Ja | Ja | Ja | Ja | Ja | .pdf |
+||||||||
+
+## <a name="word-perfect"></a>Word Perfect
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. WordPerfect; Version = 5.0 | Ja | Ja | Ja | Nein | Nein | . WPD |
+| application/vnd. WordPerfect; Version = 5.1 | Ja | Ja | Ja | Nein | Nein | . WPD |
+| application/vnd. WordPerfect; Version = 6. x | Ja | Ja | Ja | Nein | Nein | . WPD |
+||||||||
+
+## <a name="word-pro"></a>Word pro
+
+| MIME-Typ | Datei Identifizierung | Extrahieren von Metadaten | Text Extraktion | Native Viewer | Betrachter mit Anmerkungen versehen | Mögliche Erweiterungen |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. Lotus-WordPro | Ja | Ja | Nein | Nein | Nein | . LWP |
 ||||||||
