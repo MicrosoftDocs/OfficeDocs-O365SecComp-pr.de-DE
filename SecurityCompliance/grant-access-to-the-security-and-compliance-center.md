@@ -1,10 +1,10 @@
 ---
-title: Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center
+title: Erteilen von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
@@ -15,41 +15,41 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Benutzern müssen Berechtigungen im Office 365 Security &amp; Compliance Center zugewiesen werden, bevor Sie Ihre Sicherheits-oder Compliance-Funktionen verwalten können.
-ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Benutzer müssen Berechtigungen im Office 365 Security &amp; Compliance Center erhalten, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können.
+ms.openlocfilehash: aa0d1e9af6eb547bbb145d06cabfc431028ec4f0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253968"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154297"
 ---
-# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Gewähren von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center
+# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Erteilen von Benutzern Zugriff auf das Office 365 &amp; Security Compliance Center
 
-Benutzern müssen Berechtigungen im Office 365 Security &amp; Compliance Center zugewiesen werden, bevor Sie Ihre Sicherheits-oder Compliance-Funktionen verwalten können. Als globaler Office 365-Administrator oder Mitglied der Rollengruppe Rolle OrganizationManagement anzuzeigen im Security &amp; Compliance Center können Sie diese Berechtigungen Benutzern erteilen. Benutzer können nur die Sicherheits-oder Compliance-Funktionen verwalten, auf die Sie Zugriff haben. 
+Benutzer müssen Berechtigungen im Office 365 Security &amp; Compliance Center erhalten, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können. Als Office 365 globaler Administrator oder Mitglied der Mitglied-Rollengruppe im Security &amp; Compliance Center können Sie diese Berechtigungen Benutzern erteilen. Benutzer können nur die Sicherheits-oder Kompatibilitätsfeatures verwalten, auf die Sie Zugriff haben. 
   
-Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im Security &amp; Compliance Center erteilen können, finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im Security &amp; Compliance Center erteilen können, finden Sie unter [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Um die Schritte in diesem Artikel ausführen zu können, müssen Sie ein Office 365-globaler Administrator oder ein Mitglied &amp; der Rollengruppe Rolle OrganizationManagement anzuzeigen im Security Compliance Center sein.
+- Sie müssen ein Office 365 globaler Administrator oder ein Mitglied der Rollengruppe Mitglied im Security &amp; Compliance Center sein, um die Schritte in diesem Artikel ausführen zu können.
     
 - Rollengruppen für das Security &amp; Compliance Center haben möglicherweise ähnliche Namen wie die Rollengruppen in Exchange Online, sind aber nicht identisch. 
     
-- Rollengruppenmitgliedschaften werden zwischen Exchange Online und dem Security &amp; Compliance Center nicht freigegeben.
+- Rollengruppenmitgliedschaften werden nicht zwischen Exchange Online und dem Security &amp; Compliance Center freigegeben.
     
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Verwenden des Office 365 Admin Center, um einem anderen Benutzer Zugriff auf das &amp; Security Compliance Center zu gewähren
+## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Verwenden des Office 365 admin Centers, um einem anderen Benutzer Zugriff auf &amp; das Security Compliance Center zu gewähren
 
 1. [Melden Sie sich bei Office 365 an, und wechseln Sie zum Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-2. Öffnen Sie im Office 365 Admin Center **Admin** Center, und klicken Sie dann auf **Sicherheits &amp; Konformität**. 
+2. Öffnen Sie im Office 365 Admin Center **Admin** Center, und klicken Sie dann auf **Sicherheits &amp; Kompatibilität**. 
     
 3. Wechseln Sie im &amp; Security Compliance Center zu **Berechtigungen**.
     
 4. Wählen Sie in der Liste die Rollengruppe aus, der Sie den Benutzer hinzufügen möchten, **** ![und klicken Sie](media/O365_MDM_CreatePolicy_EditIcon.gif)auf Bearbeitungssymbol bearbeiten.
     
-5. Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder**auf ****![Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, und wählen Sie den Namen des Benutzers aus, den Sie hinzufügen möchten. 
+5. Klicken Sie auf der Eigenschaftenseite der Rollengruppe unter **Mitglieder**auf Add-](media/ITPro-EAC-AddIcon.gif) Symbol **Hinzufügen**![, und wählen Sie den Namen des Benutzers (oder der Benutzer) aus, den Sie hinzufügen möchten. 
     
-6. Wenn Sie alle Benutzer ausgewählt haben, die Sie der Rollengruppe hinzufügen möchten, klicken Sie auf **hinzu\> fügen-** und dann auf **OK**.
+6. Wenn Sie alle Benutzer ausgewählt haben, die Sie der Rollengruppe hinzufügen möchten, klicken Sie auf **hinzu\> fügen** und dann auf **OK**.
     
 7. Klicken Sie auf **Speichern**, um die Änderungen an der Rollengruppe zu speichern. 
     
@@ -63,9 +63,9 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Verwenden von PowerShell, um einem anderen Benutzer Zugriff auf &amp; das Security Compliance Center zu gewähren
 
-1. Stellen [Sie eine Verbindung mit Office 365 Security _AMP_ Compliance Center PowerShell her](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. Stellen [Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
-2. Verwenden Sie den **Add-RoleGroupMember-** Befehl, um einen Benutzer zur Organisations Verwaltungsrolle hinzuzufügen, wie im folgenden Beispiel gezeigt. 
+2. Verwenden Sie den Befehl **Add-RoleGroupMember** , um einen Benutzer zur Rolle "Organisationsverwaltung" hinzuzufügen, wie im folgenden Beispiel dargestellt. 
     
   ```
   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
@@ -74,15 +74,15 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
  **Parameter**
   
-- _-Identity_ ist die Rollengruppe, der ein Mitglied hinzugefügt werden soll. 
+- _-Identity_ ist die Rollengruppe, der Sie ein Mitglied hinzufügen möchten. 
     
-- _Member_ ist das Postfach, die universelle Sicherheitsgruppe (USG) oder der Computer, der der Rollengruppe hinzugefügt werden soll. Sie können jeweils nur ein Element angeben. 
+- _Mitglied_ ist das Postfach, die universelle Sicherheitsgruppe (Universal Security Group, USG) oder der Computer, der der Rollengruppe hinzugefügt werden soll. Sie können immer nur ein Element angeben. 
     
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
-Um zu überprüfen, ob Sie Benutzern Zugriff auf das &amp; Security Compliance Center gewährt haben, verwenden Sie das Cmdlet **Get-RoleGroupMember** , um die Mitglieder in der Rollengruppe Organisationsverwaltung anzuzeigen, wie im folgenden Beispiel gezeigt. 
+Um zu überprüfen, ob Sie Benutzern Zugriff auf das &amp; Security Compliance Center gegeben haben, verwenden Sie das Cmdlet **Get-RoleGroupMember** , um die Mitglieder in der Rollengruppe Organisationsverwaltung anzuzeigen, wie im folgenden Beispiel dargestellt. 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"

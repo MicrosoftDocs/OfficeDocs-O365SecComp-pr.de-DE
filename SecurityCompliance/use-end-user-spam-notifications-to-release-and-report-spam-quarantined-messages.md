@@ -4,20 +4,20 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
-description: 'Benutzer, die eine spambenachrichtigung über Endbenutzer von Ihrem Administrator über isolierte e-Mails erhalten, können diese Aktionen für die Nachrichten ergreifen. '
-ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Benutzer, die eine spambenachrichtigung für Endbenutzer von Ihrem Administrator über eine Quarantäne-e-Mail erhalten, können diese Aktionen für die Nachrichten durchführen. '
+ms.openlocfilehash: 666640e15da8bc980ebcf4cc0733c1947eae26b9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264332"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156237"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Verwenden von Spambenachrichtigungen für Endbenutzer zum Freigeben und Melden von Nachrichten in Spam-Quarantäne
 
@@ -40,6 +40,6 @@ Sie können folgende Aktionen für jede Nachricht ausführen:
 - **Als Nicht-Junk-E-Mail melden** Mit einem Klick auf diesen Link wird eine Kopie der Nachricht zur Analyse an Microsoft geschickt. Das Spamteam bewertet und analysiert die Nachricht und passt, je nach Analyseergebnis, die Antispamfilterregeln so an, dass die Nachricht übergeben wird. 
     
 > [!NOTE]
->  Nachrichten, die aufgrund einer e-Mail-Fluss Regel (auch als Übereinstimmung bezeichnet) isoliert wurden, werden in Quarantäne Nachrichten für Endbenutzer nicht eingeschlossen. Es werden nur Spamquarantäne-Nachrichten aufgeführt. >  Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden. 
+>  Nachrichten, die aufgrund einer e-Mail-Fluss Regel (auch bekannt als a) unter Quarantäne gestellt werden, sind nicht in in Quarantäne gestellten Spamnachrichten für Endbenutzer enthalten. Es werden nur Spamquarantäne-Nachrichten aufgeführt. >  Sie können eine Nachricht nur einmal freigeben und als falsch positiv markiert (keine Junk-E-Mail) melden. 
   
 

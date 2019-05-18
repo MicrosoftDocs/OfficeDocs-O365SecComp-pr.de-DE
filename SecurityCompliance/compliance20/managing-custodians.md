@@ -1,10 +1,10 @@
 ---
-title: Arbeiten mit Verwaltern in Advanced eDiscovery (Preview)
+title: Arbeiten mit Verwaltern in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,30 +13,30 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 538fd7e67456bc669b9f5cf140c995a716239fc2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Mit dem Verwalter Verwaltungstool in Advanced eDiscovery können Sie den Workflow verwalten, um Daten zu identifizieren, zu erhalten und zu sammeln, die den Interessen Personen in einem Rechtsfall zugeordnet sind.
+ms.openlocfilehash: 6e365f0b7f80a0a5caa050b2e0b08c94dbed4746
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240987"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151597"
 ---
-# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Arbeiten mit Verwaltern in Advanced eDiscovery (Preview)
+# <a name="work-with-custodians-in-advanced-ediscovery"></a>Arbeiten mit Verwaltern in Advanced eDiscovery
 
-Wenn eine Organisation auf eine rechtliche Untersuchung reagiert, basiert der Workflow bei der Identifizierung, Aufbewahrung und Sammlung potenziell relevanter Inhalte auf Personen oder Datenverwalter innerhalb Ihrer Organisation. In eDiscovery werden diese Personen als *Datenverwalter* (oder nur als *Verwalter*) bezeichnet und als "Personen mit administrativer Kontrolle über ein Dokument oder eine elektronische Datei" definiert. Der Verwalter einer e-Mail-Nachricht kann beispielsweise der Besitzer des Postfachs sein, das die entsprechende Nachricht enthält.  
+Wenn eine Organisation auf eine rechtliche Untersuchung reagiert, basiert der Workflow rund um das identifizieren, beibehalten und erfassen potenziell relevanter Inhalte auf den Personen in der Organisation, die die Verwalter relevanter Daten sind. In eDiscovery werden diese Personen als *Datenverwalter* (oder nur *Verwalter*) bezeichnet und als "Personen mit administrativer Kontrolle über ein Dokument oder eine elektronische Datei" definiert. Beispielsweise kann der Verwalter einer e-Mail-Nachricht der Besitzer des Postfachs sein, das die entsprechende Nachricht enthält.  
 
-Wenn eine Untersuchung beginnt, muss das eDiscovery-Team schnell alle relevanten Depotstellen und Datenquellen identifizieren, die sich auf den Fall beziehen. Im Laufe der Zeit kann die Liste der Verwalter und ihrer Datenquellen zunehmen oder decreasse. Daher müssen Organisationen einen kontrollierten Prozess für die Identifizierung, Aufbewahrung und Sammlung von Freiheitsentzug-Inhalten während des gesamten Lebenszyklus eines Falls verwalten.
+Wenn eine Untersuchung beginnt, muss das eDiscovery-Team schnell alle relevanten Verwalter und Datenquellen identifizieren, die sich auf den Fall beziehen. Im Laufe der Zeit kann die Liste der Verwalter und ihrer Datenquellen zunehmen oder decreasse. Daher müssen Organisationen einen kontrollierten Prozess aufrecht erhalten, um den Aufbewahrungs Inhalt während des gesamten Lebenszyklus eines Falles zu identifizieren, zu erhalten und zu sammeln.
 
-In einem Advanced eDiscovery (Preview)-Fall können juristische Teams Personen in Ihrer Organisation als Verwalter hinzufügen und automatisch Datenquellen wie Exchange-Postfächer, OneDrive-Konten und SharePoint-und Teams-Websites identifizieren und beibehalten. Mit dem integrierten Depot Verwaltungstool in Advanced eDiscovery (Preview) können Organisationen elektronisch gespeicherte Informationen vor versehentlicher (oder vorsätzlicher) Löschung schützen und sich mit manueller, zeitaufwändiger und fehleranfälliger rechtlicher Aufbewahrung verabschieden. Prozesse. 
+In einem erweiterten eDiscovery-Fall können Legal Teams Personen in Ihrer Organisation als Verwalter hinzufügen und automatisch Datenquellen wie Exchange-Postfächer, OneDrive-Konten und SharePoint-und Microsoft Teams-Websites identifizieren und beibehalten. Mithilfe des integrierten Verwaltungstools in der erweiterten eDiscovery können Organisationen elektronisch gespeicherte Informationen vor versehentlicher (oder vorsätzlicher) Löschung schützen. Auf diese Weise können Sie den zeitaufwändigen und fehleranfälligen Prozess der manuellen Ausführung der legalen Aufbewahrungs Prozesse vermeiden. 
 
-Weitere Informationen zum Arbeiten mit Verwaltern finden Sie in den folgenden Artikeln: 
+Weitere Informationen zum Arbeiten mit Depotbanken finden Sie in den folgenden Themen: 
 
 - [Hinzufügen von Verwaltungsberechtigten zu einem Fall](add-custodians-to-case.md)
 
-- [Verwalten von Verwaltern in einem Fall](manage-new-custodians.md)
+- [Verwalten von Depotbanken in einem Fall](manage-new-custodians.md)
 
 - [Anzeigen der Aktivitäten von Verwaltungsberechtigten](view-custodian-activity.md)
 
-## <a name="roles-and-permissions"></a>Rollen und Berechtigungen
+## <a name="advanced-ediscovery-permissions"></a>Erweiterte eDiscovery-Berechtigungen
 
-In Advanced eDiscovery (Preview) können Sie die integrierte eDiscovery-Manager-Rollengruppe verwenden, um Benutzern die erforderlichen Berechtigungen zuzuweisen, damit Sie den End-to-End-Workflow in Advanced eDiscovery (Preview) verwalten können.
+In Advanced eDiscovery können Sie die integrierte eDiscovery-Manager-Rollengruppe verwenden, um juristischen Ermittlern die erforderlichen Berechtigungen zu erteilen, damit Sie den End-to-End-Workflow in Advanced eDiscovery verwalten können. Alternativ können Sie benutzerdefinierte Rollengruppen mit einer Teilmenge der Rollen erstellen, die zum Ausführen bestimmter Aktionen in einem Fall in Advanced eDiscovery erforderlich sind. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](../assign-ediscovery-permissions.md).

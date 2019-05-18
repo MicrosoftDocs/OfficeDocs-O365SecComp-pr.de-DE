@@ -1,10 +1,10 @@
 ---
-title: Beenden oder Löschen einer Datenermittlung
+title: Schließen oder Löschen einer Datenuntersuchung
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,32 +14,32 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3f47fa706220973942d6a11731f77f421bc4fbd3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4d74685aec0de4d26a7bd52c3cb53f475ca8490b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258973"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150977"
 ---
 # <a name="close-or-delete-an-investigation"></a>Schließen oder Löschen einer Untersuchung
 
-## <a name="close-an-investigation"></a>Untersuchung abschließen
+## <a name="close-an-investigation"></a>Schließen einer Untersuchung
 
- Nachdem Sie die Untersuchung abgeschlossen und entsprechende Korrekturmaßnahmen ergriffen haben, möchten Sie möglicherweise den gesammelten Nachweis aufbewahren, aber den Fall abschließen, damit Sie den Verweis auf einfache Weise wieder nachverfolgen können. Nachdem Sie die Untersuchung beendet haben, wird Sie immer noch auf der Seite Daten Untersuchungen im Security & Compliance Center aufgeführt. Die Details, Haltestatus, suchen und Elemente einer geschlossenen Groß-/Kleinschreibung werden beibehalten. Zu einem späteren Zeitpunkt können geschlossene Untersuchungen erneut geöffnet werden.
+ Nachdem Sie die Untersuchung abgeschlossen und entsprechende Abhilfemaßnahmen ergriffen haben, möchten Sie möglicherweise die gesammelten Beweise aufbewahren, aber die Anfrage schließen, damit Sie in Zukunft problemlos nachverfolgen können. Nachdem Sie die Untersuchung beendet haben, wird Sie weiterhin auf der Seite Daten Untersuchungen im Security & Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten. Zu einem späteren Zeitpunkt können Sie abgeschlossene Untersuchungen erneut öffnen.
 
-So beenden Sie eine Untersuchung:
+So schließen Sie eine Untersuchung:
 
 1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
 
-2. Klicken Sie auf **untersuchUng beenden**. 
+2. Klicken Sie auf **Untersuchung schließen**. 
 
 
 ## <a name="delete-an-investigation"></a>Löschen einer Untersuchung
 
-Manchmal möchten Sie möglicherweise den Nachweis zerstören, da er vertrauliche oder vertrauliche Daten enthält, die Sie nicht beibehalten möchten. Um weitere Daten zu vermeiden, sollten Sie die Untersuchung löschen.
+Manchmal möchten Sie die Beweise möglicherweise löschen, da Sie vertrauliche oder vertrauliche Daten enthalten, die Sie nicht behalten möchten. Um weitere Datenüberlauf zu vermeiden, sollten Sie das Löschen der Untersuchung in Betracht ziehen.
 
 So löschen Sie eine Untersuchung:
 
 1. Klicken Sie auf der Registerkarte **Einstellungen** auf **Ermittlungsinformationen**.
 
-2. Klicken Sie auf **untersuchUng löschen**. 
+2. Klicken Sie auf **Untersuchung löschen**. 

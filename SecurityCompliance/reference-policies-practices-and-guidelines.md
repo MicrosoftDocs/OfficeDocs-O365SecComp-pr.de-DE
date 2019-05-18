@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Branche eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
-ms.openlocfilehash: a074bb1fbe6fedb9054b98d3723511607fed7304
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Microsoft hat verschiedene Richtlinien und Verfahren entwickelt und mehrere bewährte Methoden für die Industrie eingeführt, um unsere Benutzer vor missbräuchlichen, unerwünschten oder böswilligen e-Mails zu schützen.
+ms.openlocfilehash: 78b78f58ea2d96775361fe1761221e6c6e993688
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261533"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156847"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referenz: Richtlinien, Methoden und Anleitungen
   
@@ -94,7 +94,7 @@ Microsoft arbeitet aktiv mit Branchenvertretern und Dienstanbietern zusammen, um
 ## <a name="abuse-and-spam-reporting"></a>Missbrauchs- und Spamberichte
 <a name="AbuseSpamReports"> </a>
 
-Melden Sie [Junk-e-Mails und Phishing-Scams in Outlook im Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), um unzulässige, missbräuchliche, unerwünschte oder böswillige e-Mails zu melden. Das Senden dieser Kommunikationstypen ist eine Verletzung der Microsoft-Richtlinie, und entsprechende Maßnahmen werden bei bestätigten Berichten ergriffen.
+Melden Sie [Junk-e-Mails und Phishing-Scams in Outlook im Internet ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), um unrechtmäßige, missbräuchliche, unerwünschte oder böswillige e-Mails zu melden. Das Senden dieser Kommunikationstypen ist eine Verletzung der Microsoft-Richtlinie, und entsprechende Maßnahmen werden bei bestätigten Berichten ergriffen.
   
 ## <a name="law-enforcement"></a>Strafverfolgung
 <a name="sectionSection7"> </a>

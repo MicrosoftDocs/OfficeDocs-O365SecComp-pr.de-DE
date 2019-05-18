@@ -1,9 +1,9 @@
 ---
-title: Microsoft Compliance Manager – Versionshinweise
+title: Anmerkungen zur Microsoft Compliance-Manager-Version
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,56 +11,61 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft Service Trust-Portal. Mit Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 5e18445e3f9ad2848f18174788ec6dd40bc4a178
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
+ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473090"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152067"
 ---
-# <a name="release-notes-for-compliance-manager-preview"></a>Versionshinweise für Compliance-Manager (Preview)
+# <a name="release-notes-for-compliance-manager-preview"></a>Anmerkungen zur Version für Compliance-Manager (Vorschau)
 
-Mit der öffentlichen Vorschau des Compliance-Managers erhalten Sie frühzeitigen Zugriff auf bevorstehende Funktionen und Updates.
+Die Public Preview of Compliance Manager bietet Ihnen frühzeitigen Zugriff auf bevorstehende Funktionen und Updates.
 
-Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microsoft.com/ComplianceManager) Tool im [Service Trust Portal](https://servicetrust.microsoft.com) verwenden, um behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachzuverfolgen, zuzuweisen und zu überprüfen.
+Sie können das aktualisierte [Compliance-Manager-](https://servicetrust.microsoft.com/ComplianceManager) Tool im [Dienst Vertrauensstellungs Portal](https://servicetrust.microsoft.com) zum Nachverfolgen, zuweisen und Überprüfen von behördlichen Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services verwenden.
 
-## <a name="whats-new-in-compliance-manager-preview"></a>Neuigkeiten im Compliance-Manager (Preview)
+## <a name="whats-new-in-compliance-manager-preview"></a>Neuerungen im Compliance-Manager (Vorschau)
 
-- **Integration in Microsoft Secure Score:** Compliance-Manager unterstützt die Integration in [Microsoft Secure Score](microsoft-secure-score.md) , indem Kunden verwaltete Aktionen auf mehr als 50 Secure Score-Aktionen zugeordnet werden. Wenn Sie eine zugeordnete Aktion in Secure Score ausführen, wird die entsprechende Compliance-Manager-Aktion automatisch aktualisiert.
+- **Integration in Microsoft Secure Score:** Compliance-Manager unterstützt die Integration mit [Microsoft Secure Score](microsoft-secure-score.md) , indem Kunden verwaltete Aktionen mit mehr als 50 Secure Score-Aktionen zugeordnet werden. Wenn Sie eine zugeordnete Aktion in "Secure Score" abschließen, wird die entsprechende Compliance-Manager-Aktion automatisch aktualisiert.
 
-- **Importieren von benutzerdefinierten Bewertungen:** Zusätzlich zu den integrierten Bewertungen unterstützt Compliance Manager jetzt das Importieren von benutzerdefinierten Vorlagen, sodass Sie benutzerdefinierte Bewertungen für ein beliebiges Produkt oder einen Dienst sowie alle Standard-oder Regulierungen erstellen können.
+- **Importieren benutzerdefinierter Bewertungen:** Zusätzlich zu den integrierten Bewertungen unterstützt Compliance Manager jetzt das Importieren von benutzerdefinierten Vorlagen. Sie können benutzerdefinierte Bewertungen für ein Produkt oder eine Dienstleistung sowie für alle Standards oder Verordnungen erstellen.
 
-- **Aktionselemente:** Aktionselemente sind jetzt einzelne Elemente, und viele enthalten Telemetrie-Sammlung von der Microsoft Secure Score Graph-API. Soweit möglich, haben die Empfehlungen für Technische Aktionen jetzt Links zur entsprechenden Konfigurationsseite im Office 365-Dienst.
+- **Actions-Elemente:** Aktionselemente sind jetzt einzelne Elemente, und viele umfassen die Telemetrie-Sammlung aus der Microsoft Secure Score Graph-API. Wenn möglich, werden Empfehlungen zur technischen Aktion nun Links zur entsprechenden Konfigurationsseite im Office 365-Dienst angezeigt.
 
 - **Mandantenverwaltung:** Neue Schnittstelle zum Verwalten neuer Datenelemente im Compliance-Manager (Preview):
     - **Dimensionen:** Anzeigen, hinzufügen und Anpassen von Metadaten für Vorlagen, BEWERTUNGEN und Aktionselemente, mit denen Sie benutzerdefinierte Pivots für Filter erstellen können.
     - **Besitzer:** Geben Sie einen Besitzer für jedes Aktionselement an.
-    - **Kundenaktionen:** Verwalten der vollständigen Liste der im Compliance-Manager (Preview) enthaltenen Aktionen und aktivieren/deaktivieren der Überwachung der sicheren Bewertung für Aktionselemente, die mit Secure Score integriert sind.
+    - **Aktionen für Kunden:** Verwalten Sie die vollständige Liste der Aktionen, die in Compliance-Manager (Preview) enthalten sind, und aktivieren/deaktivieren Sie die Überwachung sicherer Bewertungen für Aktionselemente, die mit Secure Score integriert sind.
 
-- **Aktualisierte Kompatibilitätsbewertung**: die Methodik wurde geändert, um die Synchronisierung mit Microsoft Secure Score zu unterstützen. Das scoringsystem entfernt die von Microsoft verwalteten Steuerelemente und konzentriert sich ausschließlich auf den Abschluss von vom Kunden verwalteten Steuerelementen.
+- **Aktualisierte Kompatibilitätsbewertung**: die Methodik wurde geändert, um die Synchronisierung mit Microsoft Secure Score zu unterstützen. Das scoringsystem entfernt die von Microsoft verwalteten Steuergutschriften und konzentriert sich ausschließlich auf die Fertigstellung von von Kunden verwalteten Steuerelementen.
 
-## <a name="known-issues-in-compliance-manager-preview"></a>Bekannte Probleme im Compliance-Manager (Preview)
+## <a name="known-issues-in-compliance-manager-preview"></a>Bekannte Probleme im Compliance-Manager (Vorschau)
 
-In den folgenden Abschnitten werden bekannte Probleme behandelt, die in kommenden Versionen von Compliance-Manager behoben werden müssen.
+In den folgenden Abschnitten werden bekannte Probleme behandelt, die in bevorstehenden Versionen von Compliance-Manager behoben werden sollten.
 
-### <a name="compliance-score"></a>KonformitätsBewertung
+### <a name="compliance-score"></a>Kompatibilitätsbewertung
 
-- Wenn Aktionselemente als **nicht im Bereich**gekennzeichnet sind, wird die dem Aktionselement zugewiesene Bewertung nicht aus der Berechnung der Kompatibilitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** markiert sind, sollten ihre Konformitätsbewertung nicht verlängern.
+- Bei Aktionselementen, die als " **nicht im Bereich**" gekennzeichnet sind, wird die dem Aktionselement zugewiesene Bewertung nicht aus der Berechnung der Konformitätsbewertung ausgeschlossen. Aktionselemente, die **nicht im Bereich** gekennzeichnet sind, verbessern nicht die Konformitätsbewertung.
+
+### <a name="secure-score"></a>Sicherheitsbewertung
+
+- Sichere Ergebnis Ergebnisse sind für einige Aktionselemente in bestimmten Microsoft 365-und Office 365-Abonnements nicht verfügbar. Das sichere Ergebnis Ergebnis lautet in diesen Fällen "konnte nicht erkannt werden".
+- Manchmal werden sichere Ergebnis Ergebnisse für die entsprechenden Richtlinien und Aktionselemente nicht abgeschlossen zurückgegeben.
 
 ### <a name="microsoft-managed-controls"></a>Von Microsoft verwaltete Steuerelemente
 
-- Das Test Datum für von Microsoft verwaltete Steuerelemente wird nicht auf der Benutzeroberfläche angezeigt, selbst wenn diese in die Bewertung einbezogen werden. Zum Anzeigen von Informationen zum Test Datum müssen Sie die Bewertung exportieren.
+- Das Testdatum für von Microsoft verwaltete Steuerelemente wird nicht in der Benutzeroberfläche angezeigt, auch wenn diese in die Bewertung einbezogen werden. Wenn Sie Informationen zum Test Datum anzeigen möchten, müssen Sie die Bewertung exportieren.
 
 ### <a name="customization"></a>Anpassung
 
-- Durch das Hinzufügen von benutzerdefinierten Steuerelementen kann ein neues Steuerelement zu einer vorhandenen Steuerelement Familie hinzugefügt werden, es ist jedoch nicht möglich, eine neue Steuerelement Familie hinzuzufügen.
-- Diese Release unterstützt keine Verknüpfung von Aktionselementen oder Hinzufügen von Aktionen Elemente oder Steuerelemente zu einer Bewertung.
+- Durch das Hinzufügen von benutzerdefinierten Steuerelementen kann ein neues Steuerelement einer vorhandenen Steuerelement Familie hinzugefügt werden, es ist jedoch nicht möglich, eine neue Steuerelement Familie hinzuzufügen.
+- In dieser Version wird das Verknüpfen von Aktionselementen oder das Hinzufügen von Aktionen Elementen oder Steuerelementen zu einer Bewertung nicht unterstützt.
 - Wenn Sie eine benutzerdefinierte Aktion erstellen, können Sie Sie nicht bearbeiten oder löschen.
 
-### <a name="control-families-not-shown-in-assessments"></a>Steuern von Familien, die nicht in Bewertungen angezeigt werden
+### <a name="control-families-not-shown-in-assessments"></a>Steuern von Familien, die in Bewertungen nicht angezeigt werden
 
-- Wenn Sie eine Vorlage importieren, reflektieren alle auf dieser Vorlage basierenden Bewertungen alle Steuerelementfamilien, die Teil der Vorlage sind. Wenn Sie jedoch der Vorlage neue Steuerelementfamilien hinzufügen, werden die Änderungen durch vorhandene Bewertungen nicht widergespiegelt. Nur neue Bewertungen, die aus der aktualisierten Vorlage erstellt wurden, spiegeln die Änderungen wider.
+- Wenn Sie eine Vorlage importieren, spiegeln alle auf dieser Vorlage basierenden Bewertungen alle Steuerelementfamilien wider, die Teil der Vorlage sind. Wenn Sie der Vorlage jedoch neue Steuerelementfamilien hinzufügen, werden die Änderungen in vorhandenen Bewertungen nicht berücksichtigt. Nur neue Bewertungen, die aus der aktualisierten Vorlage erstellt wurden, spiegeln die Änderungen wider.
 
 ### <a name="filters"></a>Filter
 
@@ -68,20 +73,24 @@ In den folgenden Abschnitten werden bekannte Probleme behandelt, die in kommende
 
 ### <a name="templates"></a>Vorlagen
 
-- Archivierte Vorlagen können nicht bearbeitet werden.
-- Gesperrte Vorlagen ermöglichen die Erstellung von Bewertungen, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
+- Archivierte Vorlagen können bearbeitet werden, und Sie sollten nicht bearbeitbar sein.
+- Gesperrte Vorlagen ermöglichen eine Beurteilungs Erstellung, wenn Sie dies nicht tun sollten. Das Sperren einer Vorlage soll verhindern, dass Sie zum Erstellen von Bewertungen verwendet wird.
 
 ### <a name="export"></a>Exportieren
 
-- Der Vorlagenexport in JSON schlägt fehl, wenn der Vorlagenstatus auf " **importiert** " oder "Ausstehend" festgelegt ist. ****
+- Der Vorlagenexport in JSON schlägt fehl, wenn der Vorlagenstatus auf " **importiert** " oder "ausstehende **Genehmigung**" festgelegt ist.
 
 ### <a name="supported-browsers"></a>Unterstützte Browser
 
 - Die neuesten Versionen von Microsoft Edge, Chrome und Safari werden unterstützt.
-- Es kann vorkommen, dass aktualisierte Daten erst angezeigt werden, wenn Ihr Browser aktualisiert wird.
-- Die Vorschauversion von Microsoft Edge wird nicht unterstützt, hat aber keine bekannten Probleme.
+- Es gibt möglicherweise Fälle, in denen aktualisierte Daten erst angezeigt werden, wenn Ihr Browser aktualisiert wurde.
+- Die Preview-Version von Microsoft Edge wird nicht unterstützt, aber es sind keine bekannten Probleme aufgetreten.
 - Internet Explorer wird nicht unterstützt.
 
 ### <a name="session-timeout"></a>Sitzungstimeout
 
-- Wenn eine Sitzung ausläuft, wird möglicherweise ein Fehler "etwas schief gelaufen" angezeigt. Wechseln Sie zur Lösung des [Kompatibilitäts-Managers](https://servicetrust.microsoft.com/ComplianceManager) , und melden Sie sich erneut an.
+- Wenn ein Timeout für eine Sitzung auftritt, wird möglicherweise der Fehler "etwas ging falsch" angezeigt. Um zu beheben, gehen Sie zu [Compliance-Manager](https://servicetrust.microsoft.com/ComplianceManager) , und melden Sie sich erneut an.
+ 
+### <a name="language-support"></a>Sprachunterstützung
+
+- Alle Sprachen werden für alle Webseiten nicht unterstützt. Wenn Ihre lokale Sprache nicht unterstützt wird, zeigen Sie in US-Englisch an.

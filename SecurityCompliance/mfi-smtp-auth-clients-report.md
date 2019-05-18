@@ -1,53 +1,53 @@
 ---
-title: Bericht über SMTP-AUTH-Clients
+title: SMTP-Authentifizierungsclients (Bericht)
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren erfahren mehr über den Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center.
-ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+description: Administratoren können sich über den Bericht über SMTP-Authentifizierungsclients im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
+ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868553"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158597"
 ---
-# <a name="smtp-auth-clients-report"></a>Bericht über SMTP-AUTH-Clients
+# <a name="smtp-auth-clients-report"></a>SMTP-Authentifizierungsclients (Bericht)
 
-Im Bericht **SMTP AUTH Clients** wird die Verwendung des SMTP-AUTH-Client Übermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation hervorgehoben. Dieses Legacy Protokoll (das den Endpunkt SMTP.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig dafür, von kompromittierten Konten zum Senden von e-Mails verwendet zu werden.  Mit diesem Bericht können Sie nach ungewöhnlichen Aktivitäten suchen. Außerdem werden die TLS-Verwendungsdaten für Clients oder Geräte mit SMTP-Authentifizierung angezeigt.
+Der Bericht über **SMTP-Authentifizierungsclients** zeigt die Verwendung des SMTP-Authentifizierungs Client-Übermittlungsprotokolls durch Benutzer oder Systemkonten in Ihrer Organisation an. Dieses Legacy Protokoll (das den Endpunkt SMTP.office365.com verwendet) bietet nur die Standardauthentifizierung und ist anfällig für die Verwendung durch kompromittierte Konten zum Senden von e-Mails.  In diesem Bericht können Sie nach ungewöhnlichen Aktivitäten suchen. Außerdem werden die TLS-Nutzungsdaten für Clients oder Geräte mithilfe der SMTP-Authentifizierung angezeigt.
 
-Das im e-Mail-Fluss-Dashboard angezeigte Widget gibt die Anzahl der Benutzer oder Dienstkonten an, die das SMTP-Authentifizierungsprotokoll in den letzten 7 Tagen verwendet haben.
+Das Widget, das im Nachrichtenfluss-Dashboard angezeigt wird, gibt die Anzahl der Benutzer oder Dienstkonten an, die in den letzten 7 Tagen das SMTP-Authentifizierungsprotokoll verwendet haben.
 
-![Der Bericht über SMTP-AUTH-Clients im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/smtp-auth-clients-report-selected.png)
+![Der Bericht über SMTP-Authentifizierungsclients im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/smtp-auth-clients-report-selected.png)
 
-Wenn Sie auf das Widget klicken, wird ein Flyout geöffnet, das eine aggregierte Ansicht der TLS-Nutzung und-Volumes für die letzte Woche bereitstellt.
+Durch Klicken auf das Widget wird ein Flyout geöffnet, das eine aggregierte Ansicht der TLS-Nutzung und-Volumes für die letzte Woche enthält.
 
-![Das Flyout im Bericht über SMTP-AUTH-Clients](media/smtp-auth-clients-flyout.png)
+![Das Flyout im Bericht "SMTP AUTH Clients"](media/smtp-auth-clients-flyout.png)
 
-Wenn Sie auf den Link **SMTP-AUTH-Clients melden** klicken, werden zwei Hauptdaten Pivots und zwei Datenansichten angezeigt. Die Daten Pivots sind die **sendelautstärke** und die **TLS-Verwendung**. Die Datenansichten sind das Diagramm und die Detailtabelle.
+Wenn Sie auf den Link **SMTP AUTH Clients Report** klicken, werden zwei Hauptdaten Pivots und zwei Datenansichten angezeigt. Die Daten Pivots sind das **sendende Volume** und die **TLS-Verwendung**. Die Datenansichten sind das Diagramm und die Detailtabelle.
 
-Die **sendende Volumen** Ansicht zeigt die Anzahl der Nachrichten an, die über SMTP-Authentifizierung für den angegebenen Zeitraum gesendet wurden. Sie können den Range anpassen, indem Sie auf **Filter**klicken. Das Diagramm wird nach der Absenderdomäne organisiert. Sie können für jede Domäne separate Daten anzeigen, indem Sie die Domäne in der Dropdownliste **Daten anzeigen für** auswählen.
+Die Ansicht **sendende Volumes** zeigt die Anzahl der Nachrichten an, die mit SMTP-Authentifizierung für den angegebenen Zeitraum gesendet wurden. Sie können den Bereich anpassen, indem Sie auf **Filter**klicken. Das Diagramm ist nach Absenderdomäne organisiert. Sie können separate Daten für jede Domäne anzeigen, indem Sie die Domäne in der Dropdownliste **Daten anzeigen für** auswählen.
 
-![Senden von Volumes im SMTP-AUTH-Clientbericht](media/smtp-auth-clients-report-sending-volume.png)
+![Senden des Volumes im Bericht "SMTP AUTH Clients"](media/smtp-auth-clients-report-sending-volume.png)
 
-Sie können detaillierte Informationen zu den Absendern und deren Anzahl von Nachrichten anzeigen, indem Sie auf **Details-Tabelle anzeigen**klicken. Klicken Sie auf **Bericht anzeigen**, um zum Diagramm zurückzukehren.
+Sie können detaillierte Informationen zu den Absendern und ihren Nachrichten Zählern anzeigen, indem Sie auf **Tabelle Details anzeigen**klicken. Klicken Sie auf **Bericht anzeigen**, um zum Diagramm zurückzukehren.
 
-![Details-Tabelle zum Senden von Volumes im SMTP-AUTH-Clientbericht](media/smtp-auth-clients-report-details-sending-volume.png)
+![Tabelle "Details" für das Senden des Volumes im Bericht "SMTP AUTH Clients"](media/smtp-auth-clients-report-details-sending-volume.png)
 
-Die **TLS-Verwendungs** Pivot ist wichtig aufgrund der bevorstehenden veraltet von TLS 1.0 und TLS 1.1 in Office 365. Viele ältere Geräte und Anwendungen können keine e-Mails senden, wenn Sie nur TLS 1.0 mit SMTP-Authentifizierung verwenden können. Mit diesem Pivot können Sie Benutzer und Systemkonten, die noch ältere Versionen von TLS verwenden, identifizieren und Maßnahmen ergreifen.
+Der **TLS-Verwendungs** Pivot ist aufgrund der bevorstehenden veralteten Version von TLS 1.0 und TLS 1.1 in Office 365 wichtig. Viele ältere Geräte und Anwendungen können keine e-Mails senden, wenn Sie nur TLS 1.0 mit SMTP-Authentifizierung verwenden können. Mit diesem Pivot können Sie Benutzer und Systemkonten identifizieren und ausführen, die noch ältere Versionen von TLS verwenden.
 
-![TLS-Verwendung im Bericht über SMTP-AUTH-Clients](media/smtp-auth-clients-report-tls-usage.png)
+![TLS-Verwendung im Bericht "SMTP AUTH Clients"](media/smtp-auth-clients-report-tls-usage.png)
 
-Sie können detaillierte Informationen über die Absender, die Versionen von TLS, die Sie mit SMTP-Authentifizierung verwenden, und ihre Nachrichtenanzahl anzeigen, indem Sie auf **Details anzeigen-Tabelle**klicken. Klicken Sie auf **Bericht anzeigen**, um zum Diagramm zurückzukehren.
+Sie können detaillierte Informationen über die Absender, die Versionen von TLS, die Sie mit SMTP-Authentifizierung verwenden, und deren Nachrichtenanzahl anzeigen, indem Sie auf **Detailtabelle anzeigen**klicken. Klicken Sie auf **Bericht anzeigen**, um zum Diagramm zurückzukehren.
 
-Sie können auch eine detailliertere Version des Berichts herunterladen, indem Sie auf Bericht anfordern klicken.
+Sie können auch eine detailliertere Version des Berichts herunterladen, indem Sie auf Anforderungsbericht klicken.
 
-![Details-Tabelle für TLS-Verwendung im Bericht "SMTP-AUTH-Clients"](media/smtp-auth-clients-report-details-tls-usage.png)
+![Tabelle "Details" für die TLS-Verwendung im Bericht "SMTP AUTH Clients"](media/smtp-auth-clients-report-details-tls-usage.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -4,73 +4,73 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
-description: Verwenden Sie die Inhaltssuche und das Skript in diesem Artikel zum Durchsuchen der Postfächer und OneDrive für eine Gruppe von Benutzern.
-ms.openlocfilehash: 2f0954bf7822ca6c82165ad20b2c732ab0594257
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Verwenden Sie die Inhaltssuche und das Skript in diesem Artikel, um die Postfächer und OneDrive für Unternehmen Websites für eine Gruppe von Benutzern zu durchsuchen.
+ms.openlocfilehash: 7be1494f7a69c5865974a6c4ee0be65a6acb49d4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260933"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158767"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Verwenden Sie die Inhaltssuche, um das Postfach und die OneDrive for Business-Website nach einer Liste mit Benutzern zu durchsuchen.
 
-Das Security & Compliance Center bietet eine Reihe von Windows PowerShell-Cmdlets, mit denen Sie zeitaufwändige eDiscovery-bezogene Aufgaben automatisieren können. Derzeit wird das Erstellen einer Inhaltssuche im Security & Compliance Center zum Durchsuchen einer Vielzahl von Speicherorten für Depot Inhalte Zeit und Vorbereitung benötigt. Bevor Sie eine Suche erstellen, müssen Sie die URL für jede OneDrive for Business-Website sammeln und dann jedes Postfach und jede neDrive for Business-Website zur Suche hinzufügen. In zukünftigen Versionen ist dies im Security & Compliance Center einfacher. Bis dahin können Sie dieses Verfahren mithilfe des Skripts in diesem Artikel automatisieren. Mit diesem Skript werden Sie aufgefordert, den Namen der mysite-Domäne Ihrer Organisation einzugeben (beispielsweise **contoso** in https://contoso-my.sharepoint.com)der URL, eine Liste der Benutzer-e-Mail-Adressen, den Namen der neuen Inhaltssuche und die zu verwendende Suchabfrage. Das Skript ruft die OneDrive for Business-URL für jeden Benutzer in der Liste ab und erstellt dann eine Inhaltssuche, die das Postfach und die OneDrive for Business-Website für jeden Benutzer in der Liste unter Verwendung der von Ihnen bereitgestellten Suchabfrage durchsucht. 
+Das Security & Compliance Center bietet eine Reihe von Windows PowerShell-Cmdlets, mit denen Sie zeitaufwändige eDiscovery-bezogene Aufgaben automatisieren können. Derzeit dauert die Erstellung einer Inhaltssuche im Security & Compliance Center, um eine große Anzahl von Speicherorten für Depot Inhalte zu durchsuchen, Zeit und Vorbereitung. Bevor Sie eine Suche erstellen, müssen Sie die URL für jede OneDrive für Unternehmen Website erfassen und dann jedes Postfach und jede O neDrive for Business-Website der Suche hinzufügen. In zukünftigen Versionen ist dies im Security & Compliance Center einfacher. Bis dahin können Sie das Skript in diesem Artikel verwenden, um diesen Prozess zu automatisieren. In diesem Skript werden Sie zur Angabe des Namens der mysite-Domäne Ihrer Organisation aufgefordert ( **** beispielsweise "Contoso https://contoso-my.sharepoint.com)" in der URL, eine Liste der e-Mail-Adressen der Benutzer, der Name der neuen Inhaltssuche und die zu verwendende Suchabfrage. Das Skript ruft die OneDrive für Unternehmen-URL für jeden Benutzer in der Liste ab und erstellt und startet dann eine Inhaltssuche, die das Postfach und die OneDrive für Unternehmen Website für jeden Benutzer in der Liste durchsucht, wobei die von Ihnen bereitgestellte Suchabfrage verwendet wird. 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen Mitglied der eDiscovery-Manager-Rollengruppe im Security & Compliance Center und ein globaler SharePoint Online-Administrator sein, um das Skript in Schritt 3 ausführen zu können.
+- Sie müssen Mitglied der Rollengruppe "eDiscovery-Manager" im Security & Compliance Center und ein SharePoint Online globaler Administrator sein, um das Skript in Schritt 3 auszuführen.
     
-- Stellen Sie sicher, dass Sie die Liste der Benutzer, die Sie in Schritt 2 erstellen, und das Skript in Schritt 3 in demselben Ordner speichern. Dadurch wird das Ausführen des Skripts vereinfacht.
+- Achten Sie darauf, dass Sie die Liste der Benutzer, die Sie in Schritt 2 und das Skript in Schritt 3 erstellen, in demselben Ordner speichern. Dadurch wird das Ausführen des Skripts vereinfacht.
     
-- Das Skript enthält eine minimale Fehlerbehandlung. Der Hauptzweck besteht darin, die Mailbox und die OneDrive for Business-Website der einzelnen Benutzer schnell und einfach zu durchsuchen.
+- Das Skript enthält eine minimale Fehlerbehandlung. Der primäre Zweck besteht darin, das Postfach und die OneDrive für Unternehmen Website jedes Benutzers schnell und einfach zu durchsuchen.
     
-- Die in diesem Thema bereitgestellten Beispielskripts werden unter keinem Microsoft Standard-Support Programm oder-Dienst unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft lehnt alle i[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)mplied Garantien einschließlich, ohne Einschränkung, implizite Garantien der Marktgängigkeit oder der Eignung für einen bestimmten Zweck ab. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
+- Die in diesem Thema bereitgestellten Beispielskripts werden unter keinem Microsoft Standard Support Programm oder-Dienst unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft lehnt weiter alle i[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)mplied Garantien, einschließlich, ohne Einschränkung, alle implizierten Garantien für die Marktgängigkeit oder Eignung für einen bestimmten Zweck. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Schritt 1: Installieren der SharePoint Online-Verwaltungsshell
 <a name="step1"> </a>
 
-Der erste Schritt besteht darin, die SharePoint Online-Verwaltungsshell zu installieren. Sie müssen die Shell nicht in diesem Verfahren verwenden, aber Sie müssen Sie installieren, da Sie die erforderlichen Voraussetzungen für das Skript enthält, das Sie in Schritt 3 ausführen. Diese Voraussetzungen ermöglichen es dem Skript, mit SharePoint Online zu kommunizieren, um die URLs für die OneDrive für Business-Websites abzurufen.
+Der erste Schritt besteht darin, die SharePoint Online Management-Shell zu installieren. Sie müssen die Shell in diesem Verfahren nicht verwenden, aber Sie müssen Sie installieren, da Sie Voraussetzungen enthält, die für das in Schritt 3 ausgeführte Skript erforderlich sind. Diese Voraussetzungen ermöglichen es dem Skript, mit SharePoint Online zu kommunizieren, um die URLs für die OneDrive für Unternehmen Websites abzurufen.
   
-Wechseln Sie zu [Einrichten der Windows PowerShell-Umgebung für die SharePoint Online-Verwaltungsshell](https://go.microsoft.com/fwlink/p/?LinkID=286318) , und führen Sie Schritt 1 und Schritt 2 aus, um die SharePoint Online-Verwaltungsshell zu installieren.
+Wechseln Sie zum [Einrichten der SharePoint Online Verwaltungsshell Windows PowerShell Umgebung](https://go.microsoft.com/fwlink/p/?LinkID=286318) , und führen Sie Schritt 1 und Schritt 2 aus, um die SharePoint Online Verwaltungsshell zu installieren.
   
 ## <a name="step-2-generate-a-list-of-users"></a>Schritt 2: Generieren einer Liste von Benutzern
 <a name="step2"> </a>
 
-Das Skript in Schritt 3 erstellt eine Inhaltssuche, um die Postfächer und OneDrive-Konten nach einer Liste von Benutzern zu durchsuchen. Sie können die e-Mail-Adressen einfach in eine Textdatei eingeben, oder Sie können einen Befehl in Windows PowerShell ausführen, um eine Liste der e-Mail-Adressen abzurufen und Sie in einer Datei zu speichern (im gleichen Ordner, in dem Sie das Skript in Schritt 3 speichern).
+Mit dem Skript in Schritt 3 wird eine Inhaltssuche erstellt, um die Postfächer und OneDrive-Konten nach einer Liste von Benutzern zu durchsuchen. Sie können die e-Mail-Adressen einfach in eine Textdatei eingeben oder einen Befehl in Windows PowerShell ausführen, um eine Liste mit e-Mail-Adressen zu erhalten und diese in einer Datei zu speichern (in demselben Ordner, in dem Sie das Skript in Schritt 3 speichern werden).
   
-Hier ist ein [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) -Befehl, den Sie untersuchen können, um eine Liste der e-Mail-Adressen für alle Benutzer in Ihrer Organisation zu erhalten `Users.txt`und diese in einer Textdatei mit dem Namen zu speichern. 
+Hier ist ein [Exchange Onlineer PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) -Befehl, mit dem Sie eine Liste von e-Mail-Adressen für alle Benutzer in Ihrer Organisation erhalten und in einer Textdatei namens `Users.txt`speichern können. 
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-Nachdem Sie diesen Befehl ausgeführt haben, müssen Sie die Datei öffnen und den Header entfernen, der den Eigenschaftennamen enthält `PrimarySmtpAddress`. Die Textdatei sollte nur eine Liste von e-Mail-Adressen enthalten, und nichts anderes. Stellen Sie sicher, dass vor oder nach der Liste der e-Mail-Adressen keine leeren Zeilen vorhanden sind.
+Nachdem Sie diesen Befehl ausgeführt haben, müssen Sie die Datei öffnen und die Kopfzeile mit dem Eigenschaftennamen entfernen `PrimarySmtpAddress`. Die Textdatei sollte nur eine Liste von e-Mail-Adressen enthalten, und nichts anderes. Stellen Sie sicher, dass keine leeren Zeilen vor oder nach der Liste der e-Mail-Adressen vorhanden sind.
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>Schritt 3: Ausführen des Skripts zum Erstellen und Starten der Suche
 
-Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die folgenden Informationen einzugeben. Stellen Sie sicher, dass diese Informationen bereit sind, bevor Sie das Skript ausführen.
+Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die folgenden Informationen einzugeben. Stellen Sie sicher, dass diese Informationen vor dem Ausführen des Skripts verfügbar sind.
   
-- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen für den Zugriff auf SharePoint Online, um die OneDrive for Business-URLs abzurufen und eine Verbindung mit dem Security _AMP_ Compliance Center mit Remote-PowerShell herzustellen. 
+- **Ihre Benutzeranmeldeinformationen** – das Skript verwendet Ihre Anmeldeinformationen, um auf SharePoint Online zuzugreifen, um die OneDrive für Unternehmen-URLs abzurufen und eine Verbindung mit dem Security & Compliance Center mit Remote-PowerShell herzustellen. 
     
-- **Name der mysite-Domäne** -die Domäne mysite ist die Domäne, die alle OneDrive für Business-Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre Domäne "mysite" **https://contoso-my.sharepoint.com**lautet, geben Sie ein `contoso` , wenn Sie vom Skript aufgefordert werden, den Namen Ihrer Domäne "mysite" einzugeben. 
+- **Name Ihrer mysite-Domäne** : die mysite-Domäne ist die Domäne, die alle OneDrive für Unternehmen Websites in Ihrer Organisation enthält. Wenn beispielsweise die URL für Ihre mysite-Domäne lautet **https://contoso-my.sharepoint.com**, geben `contoso` Sie ein, wenn Sie vom Skript nach dem Namen Ihrer mysite-Domäne gefragt werden. 
     
-- **Pfadname der Textdatei aus Schritt 2** : der Pfadname der Textdatei, die Sie in Schritt 2 erstellt haben. Wenn sich die Textdatei und das Skript im gleichen Ordner befinden, geben Sie den Namen der Textdatei ein. Geben Sie andernfalls den vollständigen Pfadnamen für die Textdatei ein. 
+- **Pfadname der Textdatei aus Schritt 2** -der Pfadname der Textdatei, die Sie in Schritt 2 erstellt haben. Wenn sich die Textdatei und das Skript im gleichen Ordner befinden, geben Sie den Namen der Textdatei ein. Geben Sie andernfalls den vollständigen Pfadnamen für die Textdatei ein. 
     
-- **Name der Inhaltssuche** – der Name der Inhaltssuche, die vom Skript erstellt wird. 
+- **Name der Inhaltssuche** -der Name der Inhaltssuche, die vom Skript erstellt wird. 
     
-- **Suchabfrage** : die Suchabfrage, die mit der Inhaltssuche verwendet wird, wird erstellt und ausgeführt. Weitere Informationen zu Suchabfragen finden Sie unter [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
+- **Suchabfrage** – die Suchabfrage, die bei der Inhaltssuche verwendet wird, wird erstellt und ausgeführt. Weitere Informationen zu Suchabfragen finden Sie unter [Keyword-Abfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md).
 
 
 **So führen Sie das Skript aus:**
     
-1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamen Suffixes ". ps1". Beispiel: `SearchEXOOD4B.ps1`. Speichern Sie die Datei in dem Ordner, in dem Sie die Liste der Benutzer in Schritt 2 gespeichert haben.
+1. Speichern Sie den folgenden Text in einer Windows PowerShell Skriptdatei unter Verwendung eines filename-Suffixes von. ps1; Beispiel: `SearchEXOOD4B.ps1`. Speichern Sie die Datei im gleichen Ordner, in dem Sie die Liste der Benutzer in Schritt 2 gespeichert haben.
     
   ```
   # This PowerShell script will prompt you for the following information:
@@ -162,9 +162,9 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
   
   ```
 
-2. Öffnen Sie Windows PowerShell, und wechseln Sie zu dem Ordner, in dem Sie das Skript gespeichert haben, und in der Liste der Benutzer aus Schritt 2.
+2. Öffnen Sie Windows PowerShell, und wechseln Sie zu dem Ordner, in dem Sie das Skript gespeichert haben, und der Liste der Benutzer aus Schritt 2.
     
-3. Starten Sie das Skript; Zum Beispiel:
+3. Starten des Skripts; Zum Beispiel:
     
     ```
     .\SearchEXOOD4B.ps1
@@ -172,14 +172,14 @@ Wenn Sie das Skript in diesem Schritt ausführen, werden Sie aufgefordert, die f
 
 4. Wenn Sie zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden, geben Sie Ihre e-Mail-Adresse und Ihr Kennwort ein, und klicken Sie auf **OK**. 
     
-5. Geben Sie die folgenden Informationen ein, wenn Sie vom Skript dazu aufgefordert werden. Geben Sie jede Information ein, und drücken **Sie die Eingabe**Taste.
+5. Geben Sie die folgenden Informationen ein, wenn Sie vom Skript dazu aufgefordert werden. Geben Sie jede Information ein, und drücken **Sie**dann die EINGABETASTE.
     
-    - Der Name der mysite-Domäne. 
+    - Der Name Ihrer mysite-Domäne. 
     
     - Der Pfadname der Textdatei, die die Liste der Benutzer enthält.
     
     - Ein Name für die Inhaltssuche.
     
-    - Die Suchabfrage (lassen Sie dieses Feld leer, um alle Elemente in den Inhaltsspeicherorten zurückzugeben).
+    - Die Suchabfrage (lassen Sie das Feld leer, um alle Elemente an den Inhaltsspeicherorten zurückzugeben).
     
-    Das Skript ruft die URLs für jede OneDrive for Business-Website ab und erstellt und startet dann die Suche. Sie können entweder das Cmdlet **Get-ComplianceSearch** in Security _AMP_ Compliance Center PowerShell ausführen, um die Suchstatistiken und-Ergebnisse anzuzeigen, oder Sie können zur Seite " **Inhaltssuche** " im Security & Compliance Center wechseln, um Informationen anzuzeigen. über die Suche. 
+    Das Skript ruft die URLs für jede OneDrive für Unternehmen Website ab und erstellt dann die Suche und startet diese. Sie können entweder das Cmdlet **Get-ComplianceSearch** in Security & Compliance Center PowerShell ausführen, um die Suchstatistiken und Ergebnisse anzuzeigen, oder Sie können zur Seite **Inhaltssuche** im Security & Compliance Center wechseln, um Informationen anzuzeigen. über die Suche. 

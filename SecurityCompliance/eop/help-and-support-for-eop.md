@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
-description: Microsoft bietet Hilfe zu EOP an verschiedenen Orten und Methoden, einschließlich Self-Support und Assisted-Support.
-ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
+ms.openlocfilehash: 4343643d7c1c69d21b45d3a46ac8ac6dba42c3d1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256243"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150327"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -37,7 +37,7 @@ Bei der Anmeldung stellt das Office 365-Portal Informationen zum Status der Dien
   
 ## <a name="assisted-support-from-microsoft"></a>Persönlicher Support von Microsoft
 
-Sie können Hilfe von Microsoft erhalten, indem Sie eine neue Serviceanfrage im Microsoft 365 Admin Center starten oder indem Sie das Telefon anrufen. Abonnenten von Premier Support erhalten besondere Support-Optionen.
+Sie können Hilfe von Microsoft erhalten, indem Sie eine neue Dienstanforderung im Microsoft 365 Admin Center oder per Telefon anrufen. Abonnenten von Premier Support erhalten besondere Support-Optionen.
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Support für Abonnenten von Microsoft Premier Support
 

@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: Es folgen einige Punkte, die Sie beachten sollten, bevor Sie mit der Arbeit mit EOP beginnen.
-ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Hier sind einige Dinge, die Sie beachten sollten, bevor Sie mit der Arbeit mit EoP beginnen.
+ms.openlocfilehash: 3bf4874e3ab445813ee03de4def23ed12f66f537
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256463"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154667"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -47,13 +47,13 @@ Der Hilfeinhalt für EOP-Administratoren umfasst die folgenden übergeordneten K
     
 - [Bewährte Methoden für das Konfigurieren von EOP](best-practices-for-configuring-eop.md) Beschreibung empfohlener Konfigurationseinstellungen und Überlegungen nach der Einrichtung und Bereitstellung des Diensts. 
     
-- [Messaging Richtlinie und-Kompatibilität in EoP](messaging-policy-and-compliance-in-eop.md) Beschreibt, wie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) zum Erzwingen bestimmter Unternehmensrichtlinien und-Richtlinien verwendet werden und wie Überwachungsberichte zum Nachverfolgen von Konfigurationsänderungen am Dienst verwendet werden. 
+- [Messaging Richtlinie und-Kompatibilität in EoP](messaging-policy-and-compliance-in-eop.md) Beschreibt, wie Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) verwendet werden, um bestimmte Unternehmens Verordnungen und-Richtlinien zu erzwingen und wie Überwachungsberichte zum Nachverfolgen von Konfigurationsänderungen an dem Dienst verwendet werden. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Erläuterung von Spam- und Malwarefilterung, einschließlich einer Anleitung zu deren Anpassung an die Anforderungen Ihrer Organisation, sowie Beschreibung der Aufgaben, die Administratoren und Endbenutzer für isolierte Nachrichten ausführen können. 
     
 - [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Beschreibung der verfügbaren Berichte und Problembehandlungstools. 
     
-- [Exchange Admin Center in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) In diesem Artikel wird beschrieben, wie Sie die Verwaltungsschnittstelle des Exchange Admin Centers (EAC) zugreifen und diese navigieren, um den EOP-Dienst zu verwalten. 
+- [Exchange Admin Center in Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Beschreibt, wie Sie auf die Verwaltungsschnittstelle der Exchange-Verwaltungskonsole zugreifen und durch diese navigieren, um den EoP-Dienst zu verwalten. 
     
 - [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Provides information about remote PowerShell, which lets you manage your EOP service from the command line. 
     
@@ -66,11 +66,11 @@ Der Hilfeinhalt zur Unterstützung der EOP-Endbenutzer beim Umgang mit Spam umfa
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) Erläuterungen, wie Endbenutzer ihre eigenen Nachrichten in Spamquarantäne über die Spamquarantäne-Benutzeroberfläche finden und freigeben und diese optional als Nicht-Junk-E-Mail an Microsoft melden können. 
         
-- Über [Mitteln von Spam-, nicht-Spam-und Phishing-Betrugs Nachrichten an Microsoft zur Analyse](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Beschreibt die unterschiedlichen Möglichkeiten, wie Endbenutzer Spam-und nicht-Spam-Nachrichten (nicht Junk-e-Mails) an Microsoft senden können. Dieses Thema enthält Links zu den Berichterstattungstools, die in Microsoft Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) verfügbar sind. 
+- [Senden von Spam-, nicht-Spam-und Phishing-Nachrichten an Microsoft zur Analyse](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Beschreibt die unterschiedlichen Möglichkeiten, wie Endbenutzer Spam (Junk)-und nicht-Spam-Nachrichten (keine Junk-e-Mails) an Microsoft übermitteln können. Dieses Thema enthält Links zu den in Microsoft Outlook und Outlook im Internet verfügbaren Berichterstattungstools (früher bekannt als Outlook Web App). 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Erläuterungen, wie Endbenutzer Schadsoftware übermitteln können, die die Filter passiert hat, oder wie sie eine Datei übermitteln können, die fälschlicherweise als Schadsoftware identifiziert wurde. 
     
-- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder einer Liste blockierter Absender hinzufügen, indem Sie Ihre Junk-e-Mail-Einstellungen in Outlook oder Outlook im Web konfigurieren. Beachten Sie, dass Nachrichten, die von blockierten Absendern gesendet werden, als Spam gekennzeichnet sind, nicht abgelehnt, was bedeutet, dass Sie aus dem Junk-e-Mail-Ordner oder aus der Quarantäne abgerufen werden können (je nachdem, wo Ihr Administrator den Dienst zum Senden von Spam konfiguriert hat.) Weitere Informationen finden Sie unter [Verwenden des Berichtnachrichten-Add-ins](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Endbenutzer können bestimmte Benutzer oder Domänen zu einer Liste sicherer Absender oder einer Liste blockierter Absender hinzufügen, indem Sie Ihre Junk-e-Mail-Einstellungen in Outlook oder Outlook im Internet konfigurieren. Beachten Sie, dass Nachrichten, die von blockierten Absendern gesendet werden, als Spam gekennzeichnet und nicht abgelehnt werden, was bedeutet, dass Sie aus dem Junk-e-Mail-Ordner oder aus der Quarantäne abgerufen werden können (je nachdem, wo der Administrator den Dienst zum Senden von Spam konfiguriert hat). Weitere Informationen finden Sie unter [Verwenden des Berichtsnachrichten-Add-ins](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Hilfe und Support für EOP](help-and-support-for-eop.md) Informationen zum Anfordern von Hilfe und technischem Support. 
     

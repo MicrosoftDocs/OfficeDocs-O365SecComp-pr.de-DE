@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 496a249f1dc269151dad4b93d2b5cf30fa6ec91b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 93c6cbe41177103778bf96ca652d9d2889849372
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256593"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153057"
 ---
 # <a name="set-up-your-eop-service"></a>Einrichten Ihres EOP-Diensts
 
@@ -41,7 +41,7 @@ In diesem Thema wird erläutert, wie Sie Microsoft Exchange Online Protection (E
 
 ### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Center zum Hinzufügen und Überprüfen Ihrer Domäne
 
-1. Navigieren Sie im Microsoft 365 Admin Center zu **Setup** , um dem Dienst Ihre Domäne hinzuzufügen. 
+1. Navigieren Sie im Microsoft 365 Admin Center zu **Setup** , um Ihre Domäne dem Dienst hinzuzufügen. 
     
     Sie wissen nicht, wo Sie das Microsoft 365 Admin Center finden? Weitere Informationen finden Sie unter [Informationen zum Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=521888).
     
@@ -71,11 +71,11 @@ Nachdem Sie Connectors konfiguriert haben, sollten Sie 72 Stunden warten, bis Ih
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Schritt 5: Prüfen Sie in der Shell, dass Spamnachrichten in die jeweiligen Junk-E-Mail-Ordner der Benutzer umgeleitet werden.
 
-Sie müssen eine Reihe von Konfigurationsschritten ausführen, um wirklich sicherzustellen, dass Junk-E-Mail (Spam) in die Junk-E-Mail-Ordner der Benutzer umgeleitet werden. Mit den Schritten [wird sichergestellt, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+Sie müssen eine Reihe von Konfigurationsschritten ausführen, um wirklich sicherzustellen, dass Junk-E-Mail (Spam) in die Junk-E-Mail-Ordner der Benutzer umgeleitet werden. Die Schritte werden bereitgestellt [, um sicherzustellen, dass Spam an die Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
 Wenn die Nachrichten nicht in die Junk-E-Mail-Ordner der Benutzer verschoben werden sollen, können Sie eine andere Aktion auswählen, indem Sie die standardmäßige Inhaltsfilterrichtlinie im Exchange Admin Center bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](../configure-your-spam-filter-policies.md).
   
-### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden Sie das Microsoft 365 Admin Center, um Ihren MX-Eintrag auf EOP zu verweisen.
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden des Microsoft 365 Admin Center zum Verweisen Ihres MX-Eintrags auf EoP
 
 Befolgen Sie die Konfigurationsschritte für Office 365-Domänen, um den MX-Eintrag für die Domäne zu aktualisieren, damit Ihre eingehenden E-Mails über EOP weitergeleitet werden. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
   

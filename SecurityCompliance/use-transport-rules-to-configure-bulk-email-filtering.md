@@ -1,9 +1,9 @@
 ---
-title: Verwenden von Nachrichtenfluss Regeln zum Konfigurieren der Massen-e-Mail-Filterung in Exchange Online Protection
+title: Konfigurieren der Massen-e-Mail-Filterung in Exchange Online Protection mithilfe von Nachrichtenfluss Regeln
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,28 +12,28 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie e-Mail-Flussregeln in Exchange Online Protection für die Massen-e-Mail-Filterung verwenden.
-ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Administratoren können erfahren, wie Sie Nachrichtenfluss Regeln in Exchange Online Schutz für Massen-e-Mail-Filterung verwenden.
+ms.openlocfilehash: 8ec0f8385393cfd573191b75dd56944f3a6123df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267009"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157877"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Verwenden von Nachrichtenfluss Regeln zum Konfigurieren der Massen-e-Mail-Filterung in Exchange Online Protection
+# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Konfigurieren der Massen-e-Mail-Filterung in Exchange Online Protection mithilfe von Nachrichtenfluss Regeln
 
 Sie können den unternehmensweiten Inhaltsfilter für Spam und Massen-E-Mails über die Standardrichtlinien für die Spam-Inhaltsfilterung festlegen. Informationen zum Festlegen der Richtlinien für die Inhaltsfilterung finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) und [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps). 
   
-Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können Sie Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden. Alle Nachrichten, die diese Merkmale enthalten, werden als Spam markiert. Mithilfe dieser Regeln können Sie die Menge an unterwünschten Massen-E-Mails verringern, die Ihre Organisation empfängt.
+Wenn Sie mehr Optionen zum Filtern von Massennachrichten wünschen, können Sie Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massen-e-Mails gefunden werden. Alle Nachrichten, die diese Merkmale enthalten, werden als Spam markiert. Mithilfe dieser Regeln können Sie die Menge an unterwünschten Massen-E-Mails verringern, die Ihre Organisation empfängt.
 
 > [!IMPORTANT]
-> Bevor Sie die in diesem Thema dokumentierten Nachrichtenfluss Regeln erstellen, sollten Sie zuerst lesen, [was der Unterschied zwischen Junk-e-Mail und Massen-e-Mails ist?](what-s-the-difference-between-junk-email-and-bulk-email.md) und [Werte für Massen Beschwerden](bulk-complaint-level-values.md).<br>Durch die folgenden Verfahren wird eine Nachricht für Ihre gesamte Organisation als Spam markiert. Sie können jedoch eine andere Bedingung hinzufügen, damit diese Regeln nur für bestimmte Empfänger in Ihrer Organisation gelten. Auf diese Weise können die aggressiven Filtereinstellungen für Massen-E-Mails nur für einige wenige Benutzer gelten, die verstärkt anvisiert werden, während der Rest Ihrer Benutzer (die zumeist die Massen-E-Mails erhalten, für die sie sich registriert haben) nicht betroffen sind. 
+> Bevor Sie die Nachrichtenfluss Regeln erstellen, die dieses Thema dokumentiert haben, sollten Sie zuerst den [Unterschied zwischen Junk-e-Mail und Massen-e-](what-s-the-difference-between-junk-email-and-bulk-email.md) Mails lesen und [Werte für Massen Reklamations Stufen](bulk-complaint-level-values.md)lesen.<br>Durch die folgenden Verfahren wird eine Nachricht für Ihre gesamte Organisation als Spam markiert. Sie können jedoch eine andere Bedingung hinzufügen, damit diese Regeln nur für bestimmte Empfänger in Ihrer Organisation gelten. Auf diese Weise können die aggressiven Filtereinstellungen für Massen-E-Mails nur für einige wenige Benutzer gelten, die verstärkt anvisiert werden, während der Rest Ihrer Benutzer (die zumeist die Massen-E-Mails erhalten, für die sie sich registriert haben) nicht betroffen sind. 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Erstellen einer e-Mail-Fluss Regel zum Filtern von Massen-e-Mails basierend auf Textmustern
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
     
-2. Klicken Sie auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, und wählen Sie dann **neue Regel erstellen**aus. **** ![
+2. Klicken Sie auf Add](media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
     
 3. Geben Sie einen Namen für die Regel ein.
     
@@ -65,7 +65,7 @@ Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können 
     
    - `click (here to|the) unsubscribe`
     
-   Die obige Liste ist kein umfassender Satz regulärer Ausdrücke, die in Massen-e-Mails gefunden werden. Weitere können bei Bedarf hinzugefügt oder entfernt werden. Dies ist jedoch ein guter Ausgangspunkt.<br>Die Suche nach Wörtern oder Textmustern im Betreff oder anderen Kopfzeilenfeldern in der Nachricht tritt auf, *nachdem* die Nachricht aus der MIME-Inhalts Übertragungscodierungsmethode dekodiert wurde, die zum Übertragen der binären Nachricht zwischen SMTP-Servern im ASCII-Text verwendet wurde. Sie können keine Bedingungen oder Ausnahmen für die Suche nach Rohwerten (in der Regel Base64-codiert) im Betreff oder in anderen Kopfzeilenfeldern in Nachrichten verwenden. 
+   Die obige Liste ist keine vollständige Sammlung regulärer Ausdrücke, die in Massen-e-Mails gefunden werden. mehr kann bei Bedarf hinzugefügt oder entfernt werden. Dies ist jedoch ein guter Ausgangspunkt.<br>Die Suche nach Wörtern oder Textmustern im Betreff oder in anderen Kopfzeilenfeldern in der Nachricht erfolgt, *nachdem* die Nachricht aus der MIME-Inhalts Übertragungscodierungsmethode, die verwendet wurde, um die binäre Nachricht zwischen SMTP-Servern im ASCII-Text zu übertragen, decodiert wurde. Sie können keine Bedingungen oder Ausnahmen für die Suche nach Rohwerten (in der Regel Base64-codiert) im Betreff oder in anderen Kopfzeilenfeldern in Nachrichten verwenden. 
     
 6. Wählen Sie unter **Gehen Sie folgendermaßen vor...** die Option **Nachrichteneigenschaften ändern** \> **SCL-Bewertung (Spam Confidence Level) festlegen** aus.
     
@@ -73,17 +73,17 @@ Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können 
     
    Wenn der SCL auf 5 oder 6 festgelegt wird, wird die **Spam**-Aktion ausgeführt, und wenn der SCL auf 9 festgelegt wird, wird die Aktion **Nachricht mit hoher Spamwahrscheinlichkeit** ausgeführt, wie in der Inhaltsfilterrichtlinie konfiguriert. Der Dienst führt die in der Inhaltsfilterrichtlinie festgelegte Aktion aus. Die Standardaktion ist, die Nachricht an den Junk-E-Mail-Ordner der Empfänger zuzustellen. Es können allerdings, wie in [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) beschrieben, andere Aktionen konfiguriert werden.
     
-   Wenn die Nachricht von der konfigurierten Aktion isoliert wird, anstatt Sie an den Junk-e-Mail-Ordner der Empfänger zu senden, wird die Nachricht an die Administrator Quarantäne als eine Übereinstimmung mit der Nachrichtenfluss Regel gesendet und ist nicht in der Spamquarantäne für Endbenutzer oder über Endbenutzer verfügbar. Spambenachrichtigungen. 
+   Wenn Ihre konfigurierte Aktion darin besteht, die Nachricht zu isolieren, anstatt Sie an den Junk-e-Mail-Ordner des Empfängers zu senden, wird die Nachricht an die Administrator Quarantäne als e-Mail-Fluss-Regelübereinstimmung gesendet, und Sie ist in der Endbenutzer-Spamquarantäne oder über Endbenutzer nicht verfügbar. Spambenachrichtigungen. 
   
    Weitere Informationen zu SCL-Werten im Dienst finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).
     
 8. Speichern Sie die Regel.
     
-## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>Erstellen einer e-Mail-Fluss Regel zum Filtern von Massen-e-Mails basierend auf Ausdrücken
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>Erstellen einer e-Mail-Fluss Regel zum Filtern von Massen-e-Mails basierend auf Phrasen
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln**.
     
-2. Klicken Sie auf Symbol](media/ITPro-EAC-AddIcon.gif) hinzufügen, und wählen Sie dann **neue Regel erstellen**aus. **** ![
+2. Klicken Sie auf Add](media/ITPro-EAC-AddIcon.gif) -Symbol **Hinzufügen** ![, und wählen Sie dann **neue Regel erstellen**aus.
     
 3. Geben Sie einen Namen für die Regel ein.
     
@@ -117,7 +117,7 @@ Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können 
     
    - `You are receiving this email because you are subscribed`
     
-   Diese Liste ist kein vollständiger Satz von Ausdrücken, die in Massen-e-Mails enthalten sind. Weitere können bei Bedarf hinzugefügt oder entfernt werden. Dies ist jedoch ein guter Ausgangspunkt.
+   Diese Liste ist kein umfassender Satz von Ausdrücken, die in Massen-e-Mails gefunden werden. mehr kann bei Bedarf hinzugefügt oder entfernt werden. Dies ist jedoch ein guter Ausgangspunkt.
     
 6. Wählen Sie unter **Gehen Sie folgendermaßen vor...** die Option **Nachrichteneigenschaften ändern** \> **SCL-Bewertung (Spam Confidence Level) festlegen** aus.
     
@@ -125,7 +125,7 @@ Wenn Sie weitere Optionen zum Filtern von Massennachrichten benötigen, können 
     
    Wenn der SCL auf 5 oder 6 festgelegt wird, wird die **Spam**-Aktion ausgeführt, und wenn der SCL auf 9 festgelegt wird, wird die Aktion **Nachricht mit hoher Spamwahrscheinlichkeit** ausgeführt, wie in der Inhaltsfilterrichtlinie konfiguriert. Der Dienst führt die in der Inhaltsfilterrichtlinie festgelegte Aktion aus. Die Standardaktion ist, die Nachricht an den Junk-E-Mail-Ordner der Empfänger zuzustellen. Es können allerdings, wie in [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) beschrieben, andere Aktionen konfiguriert werden.
     
-   Wenn die Nachricht von der konfigurierten Aktion isoliert wird, anstatt Sie an den Junk-e-Mail-Ordner der Empfänger zu senden, wird die Nachricht an die Administrator Quarantäne als eine Übereinstimmung mit der Nachrichtenfluss Regel gesendet und ist nicht in der Spamquarantäne für Endbenutzer oder über Endbenutzer verfügbar. Spambenachrichtigungen. 
+   Wenn Ihre konfigurierte Aktion darin besteht, die Nachricht zu isolieren, anstatt Sie an den Junk-e-Mail-Ordner des Empfängers zu senden, wird die Nachricht an die Administrator Quarantäne als e-Mail-Fluss-Regelübereinstimmung gesendet, und Sie ist in der Endbenutzer-Spamquarantäne oder über Endbenutzer nicht verfügbar. Spambenachrichtigungen. 
   
    Weitere Informationen zu SCL-Werten im Dienst finden Sie unter [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md).
 

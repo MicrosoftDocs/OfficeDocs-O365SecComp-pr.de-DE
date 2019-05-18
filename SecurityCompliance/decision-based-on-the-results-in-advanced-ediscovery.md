@@ -1,9 +1,9 @@
 ---
-title: Entscheidung aufgrund der Ergebnisse in Office 365 Advanced eDiscovery
+title: Entscheidung basierend auf den Ergebnissen in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,20 +11,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: 'Erfahren Sie, wie die Registerkarte "entscheiden" in Office 365 Advanced eDiscovery Daten enthält, die Sie bei der Bestimmung der richtigen Größe der Fall Dateien unterstützen können. '
-ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Erfahren Sie, wie die Registerkarte entscheiden in Office 365 Advanced eDiscovery Daten bereitstellt, mit denen Sie die richtige Größe des Überprüfungs Satzes von Fall Dateien ermitteln können. '
+ms.openlocfilehash: 3f8ce0343b5a09cf3ab4c4bd94a53d8d0cbe0cce
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257818"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153517"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Entscheidung aufgrund der Ergebnisse in Office 365 Advanced eDiscovery
+# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Entscheidung basierend auf den Ergebnissen in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- In Advanced eDiscovery bietet die Registerkarte entscheiden zusätzliche Informationen zum Anzeigen und Verwenden von Entscheidungs Unterstützungs Statistiken, um die Größe der Fall Dateien zu überprüfen. 
+ In Advanced eDiscovery bietet die Registerkarte entscheiden zusätzliche Informationen zum Anzeigen und Verwenden von Statistiken zur Entscheidungsunterstützung zur Bestimmung der Größe des Überprüfungs Satzes von Fall Dateien. 
   
 ## <a name="using-the-decide-tab"></a>Verwenden der Registerkarte "entscheiden"
 
@@ -32,35 +32,35 @@ ms.locfileid: "32257818"
   
 Diese Registerkarte umfasst Folgendes:
   
-- **Problem**: von hier aus können Sie das gewünschte Problem aus der Liste auswählen. 
+- **Problem**: von hier aus können Sie das Interesse aus der Liste auswählen. 
     
-- **Review-Recall Ratio**: Vergleich der erweiterten eDiscovery-Überprüfungen gemäß Relevanz-Bewertungen. Der Grenzpunkt im Diagramm gibt den Prozentsatz der zu überprüfenden Dateien an, die einem Relevanzwert zugeordnet sind. Dies wird in der Relevanz-Testphase und als Export Schwellenwert für das Culling verwendet. Der Standardgrenzwert für die Anzahl der zu überprüfenden Dateien ist der Punkt, an dem das Gleichgewichtzwischen Rückruf und Genauigkeit optimal ist. Der tatsächliche Grenzwert sollte vom Benutzer abhängig von den Zielsetzungen und dem Kostennachteil (% Review) und Risiko (% Recall) bestimmt werden. Mithilfe des Schiebereglers können Sie den Cutoff-Punkt anpassen und die Auswirkungen auf das Diagramm und die Parameter anzeigen, wenn Sie den Prozentsatz der relevanten Dateien, die abgerufen werden sollen, anpassen und bevor Sie eine Entscheidung überprüfen.
+- **Review-Rückruf Verhältnis**: Vergleich der erweiterten eDiscovery-Überprüfung entsprechend den Relevanz-Bewertungen. Der Cutoff-Punkt im Diagramm stellt den Prozentsatz der zu überprüfenden Dateien dar, der einem Relevanz-Ergebnis zugeordnet ist. Dies wird in der Phase für die Relevanzprüfung und als Export Schwellenwert für das Culling verwendet. Der Standardgrenzwert für die Anzahl der zu überprüfenden Dateien liegt an dem Ort, an dem die Balance Zwischenrückruf und Genauigkeit optimal ist. Der tatsächliche Sperrpunkt sollte vom Benutzer abhängig von den Zielen und dem Kosten Kompromiss (% Review) und dem Risiko (% Rückruf) festgelegt werden. Mithilfe des Schiebereglers können Sie den abgrenzpunkt anpassen und die Auswirkung auf das Diagramm und die Parameter anzeigen, wenn Sie den Prozentsatz relevanter Dateien anpassen, die abgerufen werden sollen, und vor dem Validieren einer Entscheidung.
     
-- **Parameter**: Review, Recall, Next relevant and Total Cost Parameters sind kumulative berechnete Statistiken, die sich auf den Übersichts Satz beziehen, der im Zusammenhang mit der Sammlung für den gesamten Fall gilt. Definitionen für diese Parameter:
+- **Parameter**: Review, Recall, Next relevant and Total Cost Parameters sind kumulierte berechnete Statistiken im Zusammenhang mit der Überprüfungsgruppe im Verhältnis zur Sammlung für den gesamten Fall. Definitionen für diese Parameter lauten wie folgt:
     
     **Review**: Prozentsatz der zu überprüfenden Dateien basierend auf diesem Cutoff. 
     
-    **Recall**: Prozentsatz der relevanten Dateien im Übersichts Satz. 
+    **Rückruf**: Prozentsatz relevanter Dateien im Überprüfungs Satz. 
     
-    **Als nächstes relevant**: Kosten zum Überprüfen und Identifizieren einer zusätzlichen relevanten Datei, die sich derzeit nicht im Übersichts Satz befindet. 
+    **Next relevant**: Kosten für die Überprüfung und Identifizierung einer zusätzlichen relevanten Datei, die derzeit nicht im Überprüfungs ist. 
     
-    **Gesamtkosten**: Kosten für die Überprüfung dieses Prozentsatzes der Fall Dateien. Einstellungen für Kosten Parameter können vom Fall-Manager festgelegt werden.
+    **Gesamtkosten**: Kosten für die Überprüfung dieses Prozentsatzes der Fall Dateien. Kosten Parametereinstellungen können vom Case Manager festgelegt werden.
     
-- **Verteilung nach Relevanz Bewertung**: Dateien in der dunkelgrauen Anzeige Links befinden sich unterhalb der Cutoff-Bewertung. Ein QuickInfo zeigt den Relevanzwert und den zugehörigen Prozentsatz der Dateien in der Übersichtsdatei im Verhältnis zu den Gesamtdateien an.
+- **Verteilung nach Relevanz-Ergebnis**: Dateien in der dunkelgrauen Anzeige links liegen unterhalb der Cutoff-Punktzahl. Ein QuickInfo zeigt das Relevanz-Ergebnis und den zugehörigen Prozentsatz der Dateien im Überprüfungs Dateisatz im Verhältnis zu den Gesamtdateien an.
     
-Im erweiterten Detailbereich werden zusätzliche Details angezeigt. Dateien in Sammlungs Abbildungen enthalten keine leeren oder nebligen Dateien. Bei Familiendateien handelt es sich um Dateien, die nicht in Relevanz geladen, aber noch als Teil der Familie gezählt werden.
+Im erweiterten Detailbereich werden zusätzliche Details angezeigt. Dateien in Sammlungs Abbildungen enthalten keine leeren oder nebligen Dateien. Familiendateien Abbildungen stellen Dateien dar, die nicht relevant geladen werden, aber dennoch als Teil der Familie gezählt werden.
   
 ## <a name="see-also"></a>Siehe auch
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Bedeutung der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
+[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging und Bewertung](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
 [Durchführen von Relevanz-Schulungen](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Nachverfolgen der Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
+[Analyse der nach Verfolgungs Relevanz](track-relevance-analysis-in-advanced-ediscovery.md)
   
 [Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
 

@@ -1,9 +1,9 @@
 ---
-title: Microsoft Compliance-Manager und die DSGVO
+title: Microsoft Compliance Manager und die dsgvo
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
@@ -12,21 +12,21 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft Service Trust-Portal. Mit Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 10579edea5a36686b8b19cafd9d3d6e148cfdcd3
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
+ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473092"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152094"
 ---
-# <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance-Manager und die DSGVO
+# <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager und die dsgvo
 
-Die allgemeine Datenschutzverordnung (DSGVO), die von der Europäischen Union verabschiedet wurde, kann sich auf Ihre Compliance-Strategie auswirken und die erforderlichen Aktionen zur Verwaltung von Benutzer-und Kundeninformationen im Compliance-Manager ausführen.
+Die allgemeine Datenschutzverordnung (dsgvo), die von der Europäischen Union erlassen wird, kann sich auf Ihre Compliance-Strategie auswirken und die erforderlichen Aktionen zum Verwalten von Benutzer-und Kundeninformationen im Compliance-Manager betreffen.
 
 ## <a name="user-privacy-settings"></a>Datenschutzeinstellungen
 
-Bestimmte Bestimmungen erfordern, dass eine Organisation Benutzer Verlaufsdaten löschen kann. Compliance-Manager bietet Funktionen für die **Datenschutzeinstellungen des Benutzers** , mit denen Administratoren folgende Aufgaben erfüllen können:
+Für bestimmte Richtlinien ist es erforderlich, dass eine Organisation Benutzer Verlaufsdaten löschen kann. Compliance-Manager bietet Funktionen für **Benutzerdaten Schutzeinstellungen** , die Administratoren Folgendes ermöglichen:
   
 - [Suchen eines Benutzers](#search-for-a-user)
 - [Exportieren eines Berichts mit Kontoverlaufsdaten](#export-a-report-of-account-data-history)
@@ -36,39 +36,39 @@ Bestimmte Bestimmungen erfordern, dass eine Organisation Benutzer Verlaufsdaten 
 
 So suchen Sie nach einem Benutzerkonto
   
-1. Geben Sie den Benutzer-e-Mail-Alias (die Informationen links vom @-Symbol) ein, und wählen Sie den Domänennamen aus der Liste Domänensuffix auf der rechten Seite aus. Für Organisationen mit mehreren registrierten Domänen müssen Sie das Domänennamensuffix überprüfen, um sicherzustellen, dass es korrekt ist.
+1. Geben Sie den Benutzer-e-Mail-Alias (die Informationen links neben dem @-Symbol) ein, und wählen Sie den Domänennamen aus der Liste Domänensuffix auf der rechten Seite aus. Für Organisationen mit mehreren registrierten Domänen überprüfen Sie das Domänennamensuffix doppelt, um sicherzustellen, dass es richtig ist.
 
 2. Wenn Sie den Benutzernamen richtig eingegeben haben, wählen Sie **Suchen**aus.
 
-3. Für Benutzerkonten, die nicht zurückgegeben werden, wird "Benutzer nicht gefunden" auf der Seite angezeigt. Überprüfen Sie die e-Mail-Adressinformationen des Benutzers, und nehmen Sie Korrekturen vor. Zum Wiederholen wählen Sie **Suchen**aus.
+3. Für Benutzerkonten, die nicht zurückgegeben werden, wird auf der Seite "Benutzer nicht gefunden" angezeigt. Überprüfen Sie die e-Mail-Adressinformationen des Benutzers, und nehmen Sie bei Bedarf Korrekturen vor. Zum Wiederholen wählen Sie **Suchen**aus.
 
-4. Für Benutzerkonten wird der Text der Schaltfläche von der **Suche** in **Clear**geändert. Dies gibt an, dass das zurückgegebene Benutzerkonto der Betriebs Kontext für die zusätzlichen Funktionen ist und diese Funktionen für dieses Benutzerkonto gelten.
+4. Für Benutzerkonten, die zurückgegeben werden, ändert sich der Text der Schaltfläche von **Suche** zu **Löschen**. Dies deutet darauf hin, dass das zurückgegebene Benutzerkonto der Betriebs Kontext für die zusätzlichen Funktionen ist und dass diese Funktionen für dieses Benutzerkonto gelten.
 
-5. Wählen Sie **Löschen**aus, um die Suchergebnisse zu löschen und nach einem anderen Benutzer zu suchen.
+5. Um Suchergebnisse zu löschen und nach einem anderen Benutzer zu suchen, wählen Sie **Löschen**aus.
 
 ## <a name="export-a-report-of-account-data-history"></a>Exportieren eines Berichts mit Kontoverlaufsdaten
 
-Für jedes identifizierte Benutzerkonto können Sie einen Bericht über Abhängigkeiten generieren, die mit diesem Konto verknüpft sind. Mit diesen Informationen können Sie geöffnete Aktionselemente erneut zuweisen oder den Zugriff auf zuvor hochgeladene Nachweise sicherstellen.
+Sie können für jedes identifizierte Benutzerkonto einen Bericht über Abhängigkeiten generieren, die mit diesem Konto verknüpft sind. Mit diesen Informationen können Sie offene Aktionselemente neu zuweisen oder den Zugriff auf zuvor hochgeladene Beweise sicherstellen.
   
  So generieren und exportieren Sie einen Bericht
   
-1. Wählen Sie **exportieren** aus, um einen Bericht über die aktuell dem zurückgegebenen Benutzerkonto zugewiesenen Compliance Manager-Steuerelement Aktionen und die Liste der von diesem Benutzer hochgeladenen Dokumente zu generieren und herunterzuladen. Wenn keine zugeordneten Aktionen oder hochgeladenen Dokumente vorhanden sind, gibt eine Fehlermeldung "keine Daten für diesen Benutzer" an.
+1. Wählen Sie **exportieren** aus, um einen Bericht der Compliance-Manager-Steuerelement Aktionselemente zu generieren und herunterzuladen, die dem zurückgegebenen Benutzerkonto derzeit zugewiesen sind, und die Liste der Dokumente, die von diesem Benutzer hochgeladen wurden. Wenn keine Aktionen oder hochgeladenen Dokumente zugeordnet sind, wird in einer Fehlermeldung "keine Daten für diesen Benutzer" angezeigt.
 
-2. Der Bericht wird im Hintergrund des aktiven Browserfensters heruntergeladen, wenn ein Download-Popup nicht angezeigt wird, das Sie in Ihrem Browser-Downloadverlauf überprüfen möchten.
+2. Der Bericht lädt im Hintergrund des aktiven Browserfensters herunter – wenn kein Popup zum Herunterladen angezeigt wird, in dem Sie den Downloadverlauf Ihres Browsers überprüfen möchten.
 
 3. Öffnen Sie das Dokument, um die Daten des Berichts zu überprüfen.
 
 > [!IMPORTANT]
-> Hierbei handelt es sich nicht um einen Verlaufsbericht, der Statusänderungen am Zuordnungs Verlauf für die Aktionselemente beibehält und anzeigt. Der generierte Bericht ist eine Momentaufnahme der Steuerelement-Aktionselemente, die zum Zeitpunkt der Ausführung des Berichts zugewiesen wurden (Datums-und Zeitstempel in den Bericht). Eine spätere erneute Zuweisung von Aktionselementen führt beispielsweise zu unterschiedlichen Snapshotbericht-Daten, wenn dieser Bericht erneut für denselben Benutzer generiert wird.
+> Hierbei handelt es sich nicht um einen Verlaufsbericht, der Statusänderungen an Aktionselement-Zuordnungs Verlauf aufrecht erhalten und anzeigt. Der generierte Bericht ist eine Momentaufnahme der Steuerungs Aktionselemente, die zum Zeitpunkt der Ausführung des Berichts zugewiesen wurden (Datum und Zeitstempel in den Bericht). Beispielsweise ergeben alle nachfolgenden Neuzuweisungen von Aktionselementen unterschiedliche Momentaufnahme Berichtsdaten, wenn dieser Bericht für denselben Benutzer erneut generiert wird.
   
 ## <a name="delete-user-data-history"></a>Löschen der Verlaufsdaten von Benutzern
 
-Legt alle Steuerelement-Aktionselemente fest, die dem zurückgegebenen Benutzer zugewiesen sind. Legt den **hoch** geladenen Wert für alle Dokumente fest, die der zurückgegebene Benutzer an ' Benutzer entfernt ' hochgeladen hat.
+Legt alle dem zurückgegebenen Benutzer zugewiesenen Steuerungs Aktionselemente auf "nicht zugewiesen" fest. Legt den Wert für **hoch** geladene nach Werte für alle Dokumente fest, die vom zurückgegebenen Benutzer auf "Benutzer entfernt" hochgeladen wurden.
   
-So löschen Sie das Aktionselement und den Dokumentupload-Verlauf des Benutzerkontos:
+So löschen Sie das Benutzerkonto-Aktionselement und den Dokumentupload-Verlauf:
   
 1. Wählen Sie **Löschen**aus.
 
-    Ein Bestätigungsdialogfeld wird angezeigt, "*dadurch werden alle Aufgaben des Steuerelement-Aktionselements und der Dokumentupload-Verlauf für den ausgewählten Benutzer entfernt. Diese Aktion ist dauerhaft. Sind Sie sicher, dass Sie den Vorgang fortsetzen möchten?*"
+    Es wird ein Bestätigungsdialogfeld angezeigt, "*dadurch werden alle Aktionselement Zuweisungen des Steuerelements und der Verlauf des dokumentuploads für den ausgewählten Benutzer entfernt. Diese Aktion ist dauerhaft. Möchten Sie wirklich fortfahren?*"
 
-2. Um fortzufahren, wählen Sie **OK**aus, andernfalls wählen Sie **Abbrechen**aus.
+2. Um fortzufahren, wählen Sie **OK**, andernfalls **Abbrechen**aus.

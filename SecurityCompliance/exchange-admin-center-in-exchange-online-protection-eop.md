@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: Die Exchange-Verwaltungskonsole (EAC) ist die webbasierte Verwaltungskonsole für Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 983f6fe6b9f1592115e524315c9e52e08fed5101
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 01158ae75d96cf86b1f02aaabbd00eedec0e3722
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255968"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153007"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Admin Center in Exchange Online Protection 
 
@@ -31,7 +31,7 @@ Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen find
   
 ## <a name="accessing-the-eac"></a>Zugreifen auf die Exchange-Verwaltungskonsole
 
-In den meisten Fällen greifen EOP-Kunden über das Microsoft 365 Admin Center auf die Exchange-Verwaltungskonsole zu. Einen Link zu EOP finden Sie im Dropdownmenü der **Admin**-Kachel, die sich neben der **Ich**-Kachel befindet. Klicken Sie auf die **Admin**-Kachel, und wählen Sie im Dropdownmenü **Exchange Online Protection**, um die Exchange-Verwaltungskonsole aufzurufen. 
+In den meisten Fällen greifen EoP-Kunden über das Microsoft 365 Admin Center auf die Exchange-Verwaltungskonsole zu. Einen Link zu EOP finden Sie im Dropdownmenü der **Admin**-Kachel, die sich neben der **Ich**-Kachel befindet. Klicken Sie auf die **Admin**-Kachel, und wählen Sie im Dropdownmenü **Exchange Online Protection**, um die Exchange-Verwaltungskonsole aufzurufen. 
   
 Sie können auch über den folgenden URL direkt auf das EAC-Zeichen auf der Seite zugreifen: https://admin.protection.outlook.com/ecp/\<companydomain\>. Beispiel: https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Nachdem Sie Ihre Benutzeranmeldeinformationen eingegeben haben, gelangen Sie direkt zur Exchange-Verwaltungskonsole.
   
@@ -39,7 +39,7 @@ Sie können auch über den folgenden URL direkt auf das EAC-Zeichen auf der Seit
 
 In diesem Abschnitt werden die Elemente der Benutzeroberfläche der Exchange-Verwaltungskonsole beschrieben.
   
-![EOP-AdminCenter](media/EOP-AdminCenter.png)
+![EoP-Admincenter](media/EOP-AdminCenter.png)
   
 ### <a name="feature-pane"></a>Featurebereich
 

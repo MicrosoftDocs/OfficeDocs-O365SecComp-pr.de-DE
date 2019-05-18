@@ -1,9 +1,9 @@
 ---
-title: Exportieren von Falldaten in Office 365 Advanced eDiscovery
+title: Exportieren von Case-Daten in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,28 +11,28 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Informationen zu den Richtlinien zum Exportieren von eDiscovery-Falldaten und-Ergebnissen mithilfe des Export Prozesses in Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 8c9f4c31d5c48ab0d9884e14321471d45c927ecd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Hier finden Sie Informationen zu den Richtlinien zum Exportieren von eDiscovery-Falldaten und Ergebnissen zur Überprüfung mithilfe des Export Prozesses in Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: 936a9e15c2a8ad4ad6698c1145d969ec76810010
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255473"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152907"
 ---
-# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Exportieren von Falldaten in Office 365 Advanced eDiscovery
+# <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Exportieren von Case-Daten in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Der Exportprozess in Advanced eDiscovery ermöglicht den Export von FortgeSchrittenen eDiscovery-Inhalten und Ergebnissen für die externe Überprüfungen. 
+Der Exportprozess in Advanced eDiscovery ermöglicht das Exportieren von erweiterten eDiscovery-Inhalten und Ergebnissen für die externe Überprüfung. 
   
 ## <a name="guidelines-for-exporting-data"></a>Richtlinien für den Export von Daten
 
-- Sie können die aus Advanced eDiscovery generierten Exportdaten überarbeiten, um beispielsweise relevante Elemente an das Dokument Übersichts Team zu verteilen oder zu einem externen Dokument Übersichts Tool zu exportieren.
+- Sie können die von Advanced eDiscovery generierten Exportdaten überprüfen, um beispielsweise relevante Elemente an das Dokument Überprüfungsteam zu verteilen oder in ein externes Dokument Überprüfungstool zu exportieren.
     
-- Sie können die Exportausgabe jederzeit während und nach der erweiterten eDiscovery-Verarbeitung generieren und bearbeiten. In einem Standardszenario werden bedeutende Ergebnisse erzielt, nachdem die Relevanz und die Batch Berechnung erfolgreich abgeschlossen wurden. Sie können beispielsweise ein Beispiel der 1.000 relevantesten Dateien generieren und die erweiterte eDiscovery-Leistung bewerten, bevor Sie fortfahren.
+- Sie können die Exportausgabe jederzeit während und nach der erweiterten eDiscovery-Verarbeitung generieren und bearbeiten. In einem Standardszenario werden signifikante Ergebnisse erzielt, nachdem die Relevanz-Schulung und die Batch Berechnung erfolgreich abgeschlossen wurden. Sie können beispielsweise ein Beispiel für die 1.000 relevantesten Dateien generieren und die erweiterte eDiscovery-Leistung auswerten, bevor Sie fortfahren.
     
-- Das Exportieren einer großen Datenmenge in eine Datenbank hat möglicherweise erhebliche Auswirkungen auf die erforderliche Datenbankgröße und die erforderliche Konfiguration der erweiterten eDiscovery-Datenbank.
+- Das Exportieren einer großen Datenmenge in eine Datenbank kann erhebliche Auswirkungen auf die erforderliche Datenbankgröße und die erforderliche Konfiguration der erweiterten eDiscovery-Datenbank haben.
     
 ## <a name="see-also"></a>Siehe auch
 

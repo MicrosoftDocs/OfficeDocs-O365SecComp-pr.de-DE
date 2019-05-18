@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,41 +14,41 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b17492b11603ff27b91da8def4db6cba519801ee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0456ee21087c7fe05c3ef96d517feb468c7cfe5e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258753"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150997"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Konfigurieren der Such- und Analyseeinstellungen
 
-## <a name="near-duplicates-and-email-threading"></a>Near-Duplikate und e-Mail-Threading
+## <a name="near-duplicates-and-email-threading"></a>Nahe Duplikate und e-Mail-Threading
 
-In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, fast doppelt Erkennung und e-Mail-Threading festlegen.
+In diesem Abschnitt können Sie Parameter für die doppelte Erkennung, in der Nähe der doppelten Erkennung und beim e-Mail-Threading festlegen.
 
-- Aktivieren/deaktivieren: doppelte Erkennung, Erkennung in der Nähe von Duplikaten und e-Mail-Threading als Teil des Analyse Flusses, falls aktiviert, einbeziehen. Da Sie sich übereinander aufbauen, müssen Sie alle aktivieren oder alle deaktivieren.
+- Aktivieren/deaktivieren: doppelte Erkennung, nahezu doppelte Erkennung und e-Mail-Threading als Teil des Analyse Flusses einschließen, falls aktiviert. Da Sie sich übereinander aufbauen, müssen Sie alle aktivieren oder deaktivieren.
 
-- Schwellenwert: Wenn die Ähnlichkeits Stufe zweier Dokumente über dem Schwellenwert liegt, werden Sie in derselben fast doppelt vorhandenen Gruppe platziert.
+- Schwellenwert: Wenn sich die Ähnlichkeits Ebene zweier Dokumente über dem Schwellenwert befindet, werden Sie in derselben nahe doppelten Gruppe platziert.
 
-- Duplikate standardmäßig ausblenden: Wenn diese Einstellung aktiviert ist, wird standardmäßig ein Filter zum Ausblenden doppelter Dokumente angewendet. Der Filter kann bei Bedarf manuell im Arbeitssatz entfernt werden.
+- Duplikate standardmäßig ausblenden: Wenn diese Einstellung aktiviert ist, wird standardmäßig ein Filter zum Ausblenden von doppelten Dokumenten im Arbeitsmappen-Objekt angewendet. Der Filter kann bei Bedarf manuell im Arbeitsmappe entfernt werden.
 
-- Minimale/maximale Anzahl von Wörtern: in der Nähe von Duplikaten und e-Mail-Threading wird nur für Dokumente ausgeführt, die mindestens die Mindestanzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen.
-Weitere Informationen finden Sie unter [near Duplicate Detection](near-duplicates.md) and [Email Threading](email-threading.md).
+- Minimale/maximale Anzahl von Wörtern: nahe Duplikate und e-Mail-Threading werden nur für Dokumente ausgeführt, die mindestens die minimale Anzahl von Wörtern und höchstens die maximale Anzahl von Wörtern aufweisen.
+Weitere Informationen finden Sie [in der Nähe der doppelten Erkennung](near-duplicates.md) und des [e-Mail-Threadings](email-threading.md).
 
 ## <a name="themes"></a>Designs
 
 In diesem Abschnitt können Sie Parameter für Designs festlegen.
 
-- Aktivieren/deaktivieren: Thema-Clustering als Teil des Analyse Flusses einbeziehen, falls aktiviert.
-- Stellen Sie die maximale Anzahl von Designs dynamisch dynamisch ein: in bestimmten Fällen gibt es nicht genügend Dokumente, um die gewünschte Anzahl von Designs zu erzeugen. Wenn diese Einstellung aktiviert ist, wird anstelle der gewünschten maximalen Anzahl von Designs das System die maximale Anzahl von Designs dynamisch angepasst.
+- Aktivieren/deaktivieren: einbeziehen von Designs beim Clustering als Teil des Analyse Flusses, falls aktiviert.
+- Anpassen der maximalen Anzahl von Designs dynamisch dynamisch: in bestimmten Fällen gibt es nicht genügend Dokumente, um die gewünschte Anzahl von Designs zu erstellen. Wenn diese Einstellung aktiviert ist, wird nicht versucht, die gewünschte maximale Anzahl von Designs zu erzwingen, sondern das System passt die maximale Anzahl von Designs dynamisch an.
 - Maximale Anzahl von Designs: gewünschte Anzahl von Designs
-- Zahlen in Designs einbeziehen: Wenn diese Option aktiviert ist, werden beim Generieren von Designs Zahlen eingeschlossen.  
+- Zahlen in Designs einbeziehen: Wenn diese Option aktiviert ist, werden beim Generieren von Designs Zahlen in enthalten.  
 
 ## <a name="optical-character-recognition-ocr"></a>Optische Zeichenerkennung (OCR)
 
-Wenn diese Einstellung aktiviert ist, wird die OCR auf Bildern ausgeführt, die in Arbeitsmappen aufgenommen werden, damit Sie durchsuchbar werden können.
+Wenn diese Einstellung aktiviert ist, wird die OCR für Bilder ausgeführt, die in Arbeitsmappen aufgenommen werden, sodass Sie durchsuchbar sein können.
 
 ## <a name="ignore-text"></a>Text ignorieren
 
-Es gibt Fälle, in denen bestimmte Texte die Qualität der Analysen verringern, wie lange Haftungsausschlüsse, die zu bestimmten e-Mails hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie solche Fälle wissen, können Sie diesen Text aus der Analyse ausschließen, indem Sie den Text angeben (RegEx wird unterstützt) und für welche Module Dieser Text ausgeschlossen werden soll.
+Es gibt Fälle, in denen bestimmte Texte die Qualität von Analysen vermindern, wie lange Haftungsausschlüsse, die zu bestimmten e-Mails hinzugefügt werden, unabhängig vom Inhalt der e-Mail. Wenn Sie solche Fälle kennen, können Sie diesen Text aus Analysen ausschließen, indem Sie den Text angeben (Regex wird unterstützt) und welche Module für den Text ausgeschlossen werden sollen.

@@ -4,24 +4,24 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: 'Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse aus den meisten Office 365-Diensten, die Sie in der Organisation abonnieren, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das führt dazu, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können:'
-ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Das Office 365 Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse von den meisten Office 365 Diensten, die Sie als Organisation abonniert haben, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das bedeutet, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können:'
+ms.openlocfilehash: 1d3f45d24a8d1a83c20f5d36b12ced761e00f936
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265857"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158777"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Durchsuchen des Überwachungsprotokolls nach Benutzer-und Administratoraktivitäten in Office 365
 
-Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse aus den meisten Office 365-Diensten, die Sie in der Organisation abonnieren, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das führt dazu, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können: 
+Das Office 365 Überwachungsprotokoll ist ein einheitliches Überwachungsprotokoll. Warum ein einheitliches Überwachungsprotokoll? Da Ereignisse von den meisten Office 365 Diensten, die Sie als Organisation abonniert haben, in einem einzigen Überwachungsprotokoll aufgezeichnet werden, das Sie durchsuchen können. Das bedeutet, dass Sie in diesen Diensten nach Benutzer-und Administratoraktivitäten suchen können: 
   
 - SharePoint
 - OneDrive
@@ -36,18 +36,18 @@ Das Office 365-Überwachungsprotokoll ist ein einheitliches Überwachungsprotoko
    
  ## <a name="set-up-auditing"></a>Einrichten der Überwachung
   
-Es gibt einige Schritte, die Sie ausführen müssen, bevor Sie das Office 365-Überwachungsprotokoll durchsuchen können.
+Es gibt wenige Schritte, die Sie ausführen müssen, bevor Sie das Office 365 Überwachungsprotokoll durchsuchen können.
   
-- [Aktivieren Sie die Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md) , um mit der Aufzeichnung von Ereignissen zu beginnen, nach denen Sie suchen können. 
+- [Aktivieren Sie die Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md) , um die Aufzeichnung von Ereignissen zu starten, nach denen Sie suchen können. 
     
-- [Aktivieren Sie die postfachüberwachung](enable-mailbox-auditing.md) , um nach Post fachbezogenen Ereignissen zu suchen. beispielsweise wenn sich ein Benutzer bei seinem Postfach anmeldet oder Elemente aus seinem Ordner "Wiederherstellbare Elemente" löscht 
+- [Aktivieren der postfachüberwachung](enable-mailbox-auditing.md) , damit Sie nach Post fachbezogenen Ereignissen suchen können; beispielsweise wenn sich ein Benutzer bei seinem Postfach anmeldet oder Elemente aus dem Ordner "refundable Items" löscht. 
     
  ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
   
-Nachdem Sie die Überwachung aktiviert haben, suchen Sie in mehreren Office 365-Diensten nach Hunderten von einzelnen Ereignistypen.
+Nachdem Sie die Überwachung aktiviert haben, suchen Sie in mehreren Office 365 Diensten nach Hunderten von einzelnen Ereignistypen.
   
 - [Durchsuchen des Überwachungsprotokolls](search-the-audit-log-in-security-and-compliance.md) nach Benutzer-und Administratoraktivitäten 
     
-- GrundLegendes zu [den detaillierten Eigenschaften](detailed-properties-in-the-office-365-audit-log.md) in jedem in den Suchergebnissen enthaltenen Überwachungsdatensatz 
+- Grundlegendes zu [den detaillierten Eigenschaften](detailed-properties-in-the-office-365-audit-log.md) in jedem Überwachungsdatensatz, der in den Suchergebnissen enthalten ist 
     
-- [Suche nach eDiscovery-bezogenen Aktivitäten](search-for-ediscovery-activities-in-the-audit-log.md) , die von Administratoren und Compliance-Managern ausgeführt wurden 
+- [Suchen nach eDiscovery-bezogenen Aktivitäten](search-for-ediscovery-activities-in-the-audit-log.md) , die von Administratoren und Compliance-Managern ausgeführt werden 

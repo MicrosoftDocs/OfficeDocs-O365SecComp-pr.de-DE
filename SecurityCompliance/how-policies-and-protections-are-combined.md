@@ -1,29 +1,29 @@
 ---
-title: Kombination von Richtlinien und Schutzmechanismen bei der roten Markierung von e-Mails
-description: Welche Richtlinien gelten, und welche Maßnahmen zu ergreifen sind, wenn e-Mails als Schadsoftware, Spam, hoch vertrauenswürdige Spam, Phishing und massenweise EOP und/oder ATP gekennzeichnet sind.
+title: Kombinieren von Richtlinien und Schutzmechanismen bei der roten Kennzeichnung von e-Mails
+description: Welche Richtlinien gelten und welche Aktionen ausgeführt werden sollen, wenn e-Mail-Nachrichten als Schadsoftware, Spam, vertrauenswürdiger Spam, Phishing und Massen von EoP und/oder ATP gekennzeichnet sind.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, ATP, Windows Defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 03/26/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256313"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152707"
 ---
-# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungs Scans in Ihrer e-Mail ausgeführt werden
+# <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Welche Richtlinie gilt, wenn mehrere Schutzmethoden und Erkennungs Scans in Ihren e-Mails ausgeführt werden
 
-Möglicherweise werden Ihre eingehenden e-Mails durch mehrere Schutzarten gekennzeichnet (beispielsweise sowohl für EOP ** als auch für ATP) und mehrere Erkennungs Scans (wie Spam *und* Phishing). Dies ist möglich, da es für ATP-Kunden Anti-Phishing-Richtlinien und EOP-Richtlinien für EOP-Kunden gibt. Dies kann auch bedeuten, dass die Nachricht beispielsweise mehrere Erkennungs Scans auf Schadsoftware, Phishing und Benutzeridentitätswechsel steuert. Bei all dieser Aktivität kann es zu Verwirrung darüber geben, welche Richtlinie gilt.
+Möglicherweise werden Ihre eingehenden e-Mails durch mehrere Schutzformen (beispielsweise EoP *und* ATP) und mehrere Erkennungs Scans (beispielsweise Spam *und* Phishing) gekennzeichnet. Dies ist möglich, da es sich um ATP-AntiPhishing-Richtlinien für ATP-Kunden und EOP-Anti-Phishing-Richtlinien für EoP-Kunden handelt. Dies bedeutet auch, dass die Nachricht möglicherweise mehrere Erkennungs Scans für Malware, Phishing und Benutzeridentitätswechsel durchsucht. Angesichts all dieser Aktivitäten kann es einige Verwirrung darüber geben, welche Richtlinie angewendet wird.
 
-Im Allgemeinen wird eine auf eine Nachricht angewendete Richtlinie im Header **X-Forefront-Antispam-Report** in der **Cat (Category)** -Eigenschaft identifiziert. Wenn Sie über mehrere Anti-Phishing-Richtlinien verfügen, gilt diejenige mit der höchsten Priorität.
+Im Allgemeinen wird eine Richtlinie, die auf eine Nachricht angewendet wird, im **X-Forefront-Antispam-Report-** Header in der Cat-Eigenschaft **(Category)** identifiziert. Wenn Sie über mehrere Anti-Phishing-Richtlinien verfügen, wird diejenige mit der höchsten Priorität angewendet.
 
 Die folgenden Richtlinien gelten für _alle Organisationen_.
 
@@ -40,23 +40,23 @@ Darüber hinaus gelten diese Richtlinien für _Organisationen mit ATP_.
 
 |Priorität |Richtlinie  |Kategorie  |Wo verwaltet |
 |---------|---------|---------|---------|
-|7     | Domänen Identitätswechsel         | DIMP         | Einrichten von Office 365 ATP-Antiphishing-und-Phishing-Richtlinien        |
-|8     | Benutzeridentitätswechsel        | UIMP         | Einrichten von Office 365 ATP-Antiphishing-und-Phishing-Richtlinien         |
+|7     | Domänen Identitätswechsel         | DIMP         | Einrichten von Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing        |
+|8     | Benutzeridentitätswechsel        | Uimp         | Einrichten von Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing         |
 
-Wenn Sie beispielsweise zwei Richtlinien mit ihren jeweiligen Prioritäten haben:
+Wenn Sie beispielsweise über zwei Richtlinien mit ihren jeweiligen Prioritäten verfügen:
 
-|Richtlinie  |Priorität  |Identitätswechsel für Benutzer/Domänen  |Antispoofing  |
+|Richtlinie  |Priorität  |Benutzer/Domänen-Identitätswechsel  |Anti-Spoofing  |
 |---------|---------|---------|---------|
 |A     | 1        | Ein        |Off         |
 |B     | 2        | Off        | Ein        |
 
-Wenn eine Nachricht sowohl als _Benutzeridentitätswechsel_ als auch als Spoofing __ identifiziert wird (siehe Anti-Spoofing in der obigen Tabelle), und dieselbe Gruppe von Benutzern, die auf Richtlinie a ausgelegt ist, auf Richtlinie B ausgelegt ist, wird die Nachricht als _Spoof_gekennzeichnet und behandelt. Es wird jedoch keine Aktion angewendet, da Spoofing mit höherer Priorität (4) als der Benutzeridentitätswechsel (8) ausgeführt wird.
+Wenn eine Nachricht sowohl als _Benutzeridentitätswechsel_ als auch als Spoofing __ identifiziert wird (siehe Anti-Spoofing in der obigen Tabelle), und die gleiche Gruppe von Benutzern, die auf Richtlinie a Bericht ist, auf Richtlinie B festgelegt ist, wird die Nachricht als _Spoof_gekennzeichnet und behandelt. Es wird jedoch keine Aktion angewendet, da Spoofing zwar mit einer höheren Priorität (4) als mit dem Benutzeridentitätswechsel (8) ausgeführt wird, aber das Spoofing deaktiviert ist.
 
-Beachten Sie, dass Administratoren eine priorisierte Liste mit Richtlinien erstellen können (siehe das Feld Priorität oben), aber nur eine Richtlinie wird ausgeführt und ihre Aktionen angewendet. Das bedeutet, dass ein Benutzer in der Richtlinie A und B die Richtlinie mit höherer Priorität (A ist #1) ausführen muss, und die Nachricht wird nicht durch weitere Richtlinien gefiltert. Wenn die spoofiing deaktiviert ist, werden keine Aktionen ausgeführt.
+Beachten Sie, dass Administratoren eine priorisierte Liste von Richtlinien erstellen können (siehe das Feld Priorität oben), aber nur eine Richtlinie ausgeführt wird und ihre Aktionen anwenden. Das bedeutet, dass für einen Benutzer in den Richtlinien a und B die Richtlinie mit höherer Priorität (a ist #1) ausgeführt wird und die Nachricht nicht durch weitere Richtlinien gefiltert wird. Wenn das Anti-spoofiing deaktiviert ist, werden keine Aktionen ausgeführt.
 
-Da es in vielen Richtlinien ein Potenzial für viele Benutzergruppen gibt, kann es behoove Administratoren ermöglichen, weniger Richtlinien mit mehr Funktionen zu verwenden. Es ist auch wichtig sicherzustellen, dass alle Benutzer von einer umfassenden Richtlinie abgedeckt werden.
+Da es in vielen Richtlinien ein Potenzial gibt, viele Benutzergruppen zu verwenden, kann es sein, dass Administratoren weniger Richtlinien mit mehr Funktionen als behoove. Es ist auch wichtig sicherzustellen, dass alle Benutzer durch eine umfassende Richtlinie abgedeckt sind.
 
-Damit andere Arten von Phishing-Richtlinien angewendet werden, müssen Sie die Einstellungen anpassen, für die die verschiedenen Richtlinien gelten.
+Damit andere Arten von Phishing-Richtlinien angewendet werden können, müssen Sie die Einstellungen anpassen, auf die die verschiedenen Richtlinien zutreffen.
 
 
 

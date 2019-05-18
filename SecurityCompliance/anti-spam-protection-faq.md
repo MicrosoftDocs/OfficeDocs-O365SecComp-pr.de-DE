@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispamschutz. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242493"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152377"
 ---
 # <a name="anti-spam-protection-faq"></a>Häufig gestellte Fragen zum Antispamschutz
 
@@ -33,7 +33,7 @@ Dieses Thema enthält häufig gestellte Fragen und Antworten zum Thema Antispams
 A. **Für eingehende Nachrichten:** Der Großteil der Spamnachrichten wird mithilfe der Verbindungsfilterung gelöscht, die auf der IP-Adresse des Absenders basiert. Der Dienst untersucht anschließend den Inhalt der Nachricht. Standardmäßig wird durch die Inhaltsfilterung abgefangener Spam an den Junk E-Mail-Ordner des Empfängers gesendet. Sie können diese Aktion ändern. Beispielsweise können Sie durch Konfigurieren der Inhaltsfilterrichtlinie auswählen, dass Spamnachrichten stattdessen in die Quarantäne gesendet werden. 
   
 > [!IMPORTANT]
-> Für eigenständige Kunden von EOP: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern ausgeführt wird, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) auf Ihren lokalen Servern konfigurieren, um von EOP hinzugefügte Spam Header. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Für EoP-eigenständige Kunden: um sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um zu erkennen von EoP hinzugefügte Spam Kopfzeilen. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Für ausgehende Nachrichten:** Die Nachricht wird entweder durch den Pool für besonders riskante Zustellungen geleitet oder ist unzustellbar und wird nicht zugestellt. In diesem Fall sollte der Absender eine Benachrichtigung über den Übermittlungsstatus (Delivery Status Notification, DSN) erhalten, in der ihm mitgeteilt wird, dass die Nachricht nicht zugestellt werden konnte. 
   
@@ -71,11 +71,11 @@ A. Es gibt verschiedene Möglichkeiten, Spamnachrichten und Nachrichten, die kei
   
  **F. Kann ich Spamberichte abrufen?**
   
-A. Ja, Sie können beispielsweise einen Spam Erkennungs Bericht im Microsoft 365 Admin Center abrufen. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
+A. Ja, beispielsweise können Sie einen Spam Erkennungs Bericht im Microsoft 365 Admin Center erhalten. Dieser Bericht weist das Spamvolumen als Anzahl eindeutiger Nachrichten aus. Weitere Informationen zur Berichterstellung finden Sie unter den folgenden Themen:
   
-Exchange Online-Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online Kunden: [Überwachung, Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Exchange Online Protection-Kunden: [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Kunden von Exchange Online Protection: [Berichterstellung und Nachrichtenablaufverfolgung in Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **F. Jemand hat mir eine Nachricht gesendet, aber ich finde sie nicht. Ich vermute, dass sie als Spam erkannt wurde. Gibt es ein Tool, mit dem ich das herausfinden kann?**
   
@@ -109,7 +109,7 @@ A. Die unten aufgeführten Richtlinien beschreiben bewährte Methoden für das S
   
 1. **Die Domain des E-Mail-Absenders sollte im DNS aufgelöst werden können.**
     
-    Wenn der Absender beispielsweise "user@example.com" ist, wir die Domäne "example.com" zu der IP-Adresse 192.0.43.10 aufgelöst. Wenn eine sendende Domäne nicht über einen A-Eintrag und nicht über einen MX-Eintrag in DNS verfügt, leitet der Dienst die Nachricht stets durch den Pool für besonders riskante Zustellungen, unabhängig davon, ob es sich bei ihrem Inhalt um Spam handelt. Weitere Informationen zum Pool mit höheren Risiken finden Sie unter [High-Risk-Übermittlungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md). 
+    Wenn der Absender beispielsweise "user@example.com" ist, wir die Domäne "example.com" zu der IP-Adresse 192.0.43.10 aufgelöst. Wenn eine sendende Domäne nicht über einen A-Eintrag und nicht über einen MX-Eintrag in DNS verfügt, leitet der Dienst die Nachricht stets durch den Pool für besonders riskante Zustellungen, unabhängig davon, ob es sich bei ihrem Inhalt um Spam handelt. Weitere Informationen zum Pool mit höherem Risiko für Zustellungen finden Sie unter risikoreichen Zustellungs [Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **Die Absender-IP-Adresse des ausgehenden E-Mail-Servers sollte über einen Reverse-DNS-Eintrag (PTR-Eintrag) verfügen.**
     

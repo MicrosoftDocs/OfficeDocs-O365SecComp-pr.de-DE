@@ -1,10 +1,10 @@
 ---
-title: Exportieren von Falldaten in Advanced eDiscovery (Preview)
+title: Exportieren von Case-Daten in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,23 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0bd071912ca1a39779e71beed193b3f59fc93d21
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256173"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155027"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-preview"></a>Exportieren von Falldaten in Advanced eDiscovery (Preview)
+# <a name="export-case-data-in-advanced-ediscovery"></a>Exportieren von Case-Daten in Advanced eDiscovery
 
-Es gibt drei Möglichkeiten, Daten aus einem Arbeitssatz zu exportieren:
+Es gibt drei Möglichkeiten zum Exportieren von Daten aus einer Überprüfungsgruppe:
 
-**Download** – verwenden Sie zum herunterladen (mithilfe eines Browsers) eine kleine Gruppe von systemeigenen Dateien. Am schnellsten wurde eine kleine Gruppe von Daten exportiert.
+**Download** – verwenden Sie, um (mithilfe eines Browsers) eine kleine Gruppe von systemeigenen Dateien herunterzuladen. Dies ist der schnellste Bestandteil des Exports einer kleinen Gruppe von Daten.
 
-**Export** – dient zum Anpassen der exportierten Daten, einschließlich des Exports von Metadaten, systemeigenen Dateien, Textdateien und redigierten Dokumenten, die in einer PDF-Datei gespeichert wurden. Nachdem die exportierten Daten Azure-Speicherort hochgeladen wurden, müssen Sie Sie auf einen lokalen Computer herunterladen. Weitere Informationen finden Sie unter: 
+**Export** – verwenden Sie, um die exportierten Daten anzupassen, einschließlich des Exports von Metadatendateien, systemeigenen Dateien, Textdateien und in einer PDF-Datei gespeicherten Texten. Nachdem exportierte Daten als Azure-Speicherplatz hochgeladen wurden, müssen Sie Sie auf einen lokalen Computer herunterladen. Weitere Informationen finden Sie unter: 
 
-   - [Exportieren von Dokumenten aus einem Arbeitssatz](export-documents-from-working-set.md)
+   - [Exportieren von Dokumenten aus einem Prüfdateisatz](export-documents-from-review-set.md)
 
    - [Herunterladen von Exportaufträgen](download-export-jobs.md)
 
-**Zu einem anderen workingSet hinzufügen** – verwenden Sie diese, um Daten aus einem Arbeitssatz in einen anderen Arbeitssatz zu kopieren. Weitere Informationen finden Sie unter [Hinzufügen von Daten von einem Arbeitssatz zu einem anderen Workingset](add-data-to-working-set-from-another-working-set.md). 
+**Zu einem anderen Überprüfungs Satzes hinzufügen** – verwenden Sie, um Daten aus einem Überprüfungs Satzes in einen anderen Überprüfungs zu kopieren. Weitere Informationen finden Sie unter [Hinzufügen von Daten aus einer Überprüfungsgruppe zu einem anderen Überprüfungs Satzes](add-data-to-review-set-from-another-review-set.md). 

@@ -1,10 +1,10 @@
 ---
-title: Exportieren von Dokumenten aus einem Übersichts Satz
+title: Exportieren von Dokumenten aus einem Prüfdateisatz
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,69 +14,69 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ea9db6d95b003b5a741ae8a235fc5f06087f87d6
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527180"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155067"
 ---
-# <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Übersichts Satz
+# <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Prüfdateisatz
 
-Das Exportieren von Inhalten aus einem Übersichts Satz kann über drei verschiedene Methoden erfolgen:
+Das Exportieren von Inhalten aus einem Überprüfungs Satzes kann über drei verschiedene Methoden erfolgen:
 
 ## <a name="download"></a>Download
 
-Download bietet eine einfache Möglichkeit zum Herunterladen von Inhalten aus einem Übersichts Satz im systemeigenen Format. Es nutzt die Datentransfer Funktionen des Browsers, sodass eine Browser Ansage angezeigt wird, sobald ein Download bereit ist. Dateien, die mit dieser Methode heruntergeladen werden, werden in eine Containerdatei gepackt und sind Dateien auf Elementebene. Wenn Sie eine Anlage auswählen, erhalten Sie daher automatisch eine e-Mail mit der enthaltenen Anlage. Wenn Sie eine Excel-Kalkulationstabelle auswählen, die in ein Word-Dokument eingebettet wurde, erhalten Sie auch das Word-Dokument mit der eingebetteten Excel-Kalkulationstabelle. Heruntergeladene Elemente behalten das Datum der letzten Änderung bei, das als Dateieigenschaft angezeigt werden kann.
+Download bietet eine einfache Möglichkeit zum Herunterladen von Inhalten aus einer Überprüfungsgruppe im systemeigenen Format. Es nutzt die Datentransfer Funktionen des Browsers, sodass nach dem Download eine Browser Ansage angezeigt wird. Mit dieser Methode heruntergeladene Dateien werden in eine Containerdatei gezippt und werden Dateien auf Elementebene sein. Wenn Sie also eine Anlage auswählen, erhalten Sie automatisch die e-Mail-Adresse, die mit der Anlage eingeschlossen ist. Wenn Sie eine Excel-Kalkulationstabelle auswählen, die in ein Word-Dokument eingebettet wurde, erhalten Sie das Word-Dokument mit eingebettetem Excel-Arbeitsblatt. Durch heruntergeladene Elemente wird das Datum der letzten Änderung beibehalten, das als Dateieigenschaft angezeigt werden kann.
 
-Um Inhalte aus einem Übersichts Satz herunterzuladen, wählen Sie zunächst die Dateien aus, die Sie herunterladen möchten, und klicken Sie dann im Menü Aktionen auf "herunterladen".
+Um Inhalte aus einem Überprüfungs herunterzuladen, wählen Sie zunächst die Dateien aus, die Sie herunterladen möchten, und klicken Sie dann im Menü Aktionen auf "herunterladen".
 
-![Screenshot einer Computerbeschreibung, die automatisch generiert wird](../media/eDiscoDownload.png)
+![Screenshot einer automatisch generierten Computerbeschreibung](../media/eDiscoDownload.png)
 
 ## <a name="export"></a>Exportieren
 
-Der Export ermöglicht Benutzern das Anpassen der Inhalte, die im Downloadpaket enthalten sind. Es bietet eine Konfigurationsseite mit den folgenden Einstellungen:
+Mit dem Export können Benutzer die Inhalte anpassen, die im Downloadpaket enthalten sind. Es stellt eine Konfigurationsseite mit den folgenden Einstellungen bereit:
 
-### <a name="metadata-file"></a>Metadatendatei
+### <a name="metadata-file"></a>Metadaten-Datei
 
-> Dies kann als ihre "Datei laden" angesehen werden, die Metadaten enthält, die mit den exportierten Dateien verknüpft sind. Eine Liste der Felder, die in der Metadatendatei zur \[Verfügung stehen, finden Sie unter Link\]. Diese Datei kann i. d. r. von 3<sup>RD</sup> -Anbieter Tools nachgeschaltet werden.
+> Dies kann als ihre "Laden Datei" betrachtet werden, die Metadaten enthält, die den exportierten Dateien zugeordnet sind. Eine Liste der in der Metadatendatei verfügbaren Felder \[finden\]Sie unter Link. Diese Datei kann normalerweise von drei<sup>Remote</sup> Tools von Drittanbietern aufgenommen werden.
 
 ### <a name="tag-data"></a>Tag-Daten
 
-> Dieser Inhalt würde als Felder in der Metadatendatei hinzugefügt werden. Sie enthält alle Tag-Informationen, die in Übersichts Sätzen angewendet wurden.
+> Dieser Inhalt würde als Felder in der Metadatendatei hinzugefügt werden. Sie enthält alle in Überprüfungs Sätzen angewendeten Tag-Informationen.
 
 ### <a name="text-files"></a>Textdateien
 
-> Für jede aus einem Übersichts Satz exportierte Datei können Text Dateien generiert werden. Häufig werden diese Dateien von den Dienst Partnern im Rahmen der Einnahme von Daten in 3 Dritt<sup></sup> Anbieter Tools (Downstream) benötigt.
+> Text Dateien können für jede Datei generiert werden, die aus einem Überprüfungs Satz exportiert wurde. Häufig sind diese Dateien für Service Partner erforderlich, wenn Sie Daten in Drittanbieter-Tools<sup></sup> nach Downstream aufnehmen.
 
-### <a name="redacted-files"></a>Gehandelte Dateien
+### <a name="redacted-files"></a>Behandelte Dateien
 
-> Wenn während der Überprüfungen redigierte PDFs generiert werden, sind diese Dateien während des Exports verfügbar. Benutzer können entscheiden, ob Sie nur systemeigene Dateien exportieren oder natives ersetzen möchten, die mit den gebrannten PDFs in der PDF-Datei ausgeführt wurden.
+> Wenn während der Überprüfung redigierte PDFs generiert werden, stehen diese Dateien während des Exports zur Verfügung. Benutzer können entscheiden, ob Sie systemeigene Dateien exportieren oder natives ersetzen möchten, bei denen die in PDFs gebrannt wurden.
 
 ### <a name="export-location"></a>Exportspeicherort
 
-> Exportierte Inhalte werden entweder an ein von Microsoft bereitgestelltes Azure-BLOB oder an ein Kunden-BLOB übermittelt, wenn die Details beim Export bereitgestellt werden.
+> Exportierte Inhalte werden entweder an ein von Microsoft bereitgestelltes Azure-BLOB zugestellt, oder das BLOB eines Kunden kann verwendet werden, wenn die Details beim Export angegeben werden.
 
 ## <a name="export-structure"></a>Export Struktur
 
-Wenn Inhalte aus einem Übersichts Satz exportiert werden, wird der Inhalt in der folgenden Struktur organisiert.
+Wenn Inhalte aus einem Überprüfungs Satzes exportiert werden, ist der Inhalt in der folgenden Struktur organisiert.
 
   - Stammordner – Download-ID
     
-      - Export\_laden\_Datei. CSV = Metadatendatei
+      - Exportieren\_der\_Datei "file. CSV = Metadata"
     
       - Summary. txt = eine Zusammenfassungsdatei mit Export Statistiken
     
-      - Eingabe\_-oder\_systemeigene Dateien = enthält alle systemeigenen Dateien
+      - Input\_oder Native\_files = enthält alle systemeigenen Dateien
     
-      - Error\_files = enthält alle Fehler Dateien, die im Export enthalten sind
+      - Error\_files = enthält alle Fehler Dateien, die im Export enthalten sind.
         
           - ExtractionError – eine CSV-Datei, die alle verfügbaren Metadaten von Dateien enthält, die nicht ordnungsgemäß aus übergeordneten Dateien extrahiert wurden
         
-          - ProcessingError – Inhalte mit Verarbeitungsfehlern. Dieser Inhalt ist auf Elementebene Bedeutung wenn bei einer Anlage ein Verarbeitungsfehler auftritt, wird die e-Mail mit der Anlage in diesen Ordner aufgenommen.
+          - ProcessingError – Inhalte mit Verarbeitungsfehlern. Dieser Inhalt ist eine Elementebene, was bedeutet, dass bei einer Anlage ein Verarbeitungsfehler auftritt, wird die e-Mail-Nachricht, die die Anlage enthält, in diesen Ordner aufgenommen.
     
       - Extrahierte\_Text\_Dateien = enthält alle extrahierten Textdateien, die bei der Verarbeitung generiert wurden.
 
-## <a name="review-set"></a>Übersichts Satz
+## <a name="review-set"></a>Überprüfungsgruppe
 
-Inhalte können zu einem anderen Übersichts Satz hinzugefügt werden.
+Inhalte können zu anderen Überprüfungs Sätzen hinzugefügt werden.

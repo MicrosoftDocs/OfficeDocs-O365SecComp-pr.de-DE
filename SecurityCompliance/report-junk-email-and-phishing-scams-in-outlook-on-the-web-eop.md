@@ -1,10 +1,10 @@
 ---
-title: 'Melden von Junk-e-Mails und Phishing-Scams in Outlook im Web '
+title: 'Melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet '
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,15 +13,15 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Microsoft Outlook im Web-Benutzer können Junk (Spam) und Phishing-Scams mithilfe integrierter e-Mail-Berichtsoptionen melden. Sie können Microsoft auch mitteilen, ob eine e-Mail fälschlicherweise als Junk (Spam) identifiziert wurde.
-ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Microsoft Outlook im Internetbenutzer können Junk-und Phishing-Scams mithilfe integrierter e-Mail-Berichterstellungsoptionen melden. Sie können Microsoft auch informieren, ob eine e-Mail fälschlicherweise als Junk (Spam) identifiziert wurde.
+ms.openlocfilehash: c8ee481271d77d0b131af44944b9e94a934d45ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261578"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156887"
 ---
-# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-e-Mails und Phishing-Scams in Outlook im Web 
+# <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Melden von Junk-e-Mails und Phishing-Scams in Outlook im Internet 
 
 Für die Benutzer in Ihrer Organisation kann es frustrierend sein, wenn sie in ihrem Posteingang eine Junk-E-Mail empfangen oder aber eine wichtige E-Mail verpassen, weil diese fälschlicherweise als Spam identifiziert wurde. Wir versuchen stets, unsere Exchange Online Protection (EOP)-Spamfilter zu optimieren, um genauere Ergebnisse zu erzielen, und Sie und Ihre Endbenutzer können uns dabei unterstützen. Benutzer von Microsoft Outlook im Web können Junknachrichten (Spam) und betrügerische Phishingversuche mithilfe der integrierten Junk-E-Mail-Meldeoptionen zur Analyse an Microsoft übermitteln. Falls Sie eine Nachricht fälschlicherweise als Junk (Spam) eingestuft wurde, können Sie diese Nachricht auch an Microsoft übermitteln.
   
@@ -47,7 +47,7 @@ Sie können eine Junk-E-Mail aus dem Ordner **Posteingang**, **Clutter** oder **
 
 So übermitteln Sie eine Nachricht, die als betrügerischer Phishingversuch gilt, an Microsoft
   
-1. Klicken Sie auf die Nachricht Phishing Scam, klicken Sie auf den Pfeil nach unten neben **Junk**, und klicken Sie dann auf der symbolLeiste auf **Phishing** . Der Absender wird von Office 365 nicht blockiert, da Absender von betrügerischen Phishing-Nachrichten in der Regel legitime Absender imitieren. Wenn Sie es bevorzugen, fügen Sie den Absender Ihrer Liste blockierter Absender hinzu, indem Sie die Anweisungen im Thema [blockieren oder zulassen (Junk-e-Mail-Einstellungen)](https://go.microsoft.com/fwlink/?LinkId=627572)befolgen. 
+1. Klicken Sie auf die Nachricht Phishing Scam, klicken Sie auf den Pfeil nach unten neben **Junk**, und klicken Sie dann auf der Symbolleiste auf **Phishing** . Der Absender wird von Office 365 nicht blockiert, da Absender von Phishing-Scam-Nachrichten normalerweise die Identität legitimer Absender annehmen. Wenn Sie es vorziehen, fügen Sie den Absender zu Ihrer Liste blockierter Absender hinzu, indem Sie die Anweisungen im Thema [blockieren oder zulassen (Einstellungen für Junk-e-Mail)](https://go.microsoft.com/fwlink/?LinkId=627572)befolgen. 
     ![Zeigt an, dass eine E-Mail-Nachricht ist Phishingbetrug in Outlook im Web ist.](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>Alternativ können Sie zum Anzeigen eines Menüs mit der rechten Maustaste auf eine Nachricht und dann auf **Als betrügerischen Phishing-Versuch markieren** klicken.<br/>Sie können eine Nachricht, die als betrügerischer Phishingversuch gilt, aus den Ordnern **Posteingang**, **Clutter** oder **Gelöschte Elemente** melden. 
   
 2. Bei einigen Organisationen wird ein Dialogfeld geöffnet, in dem Sie gefragt werden, ob Sie eine Kopie der als betrügerischer Phishingversuch einzustufenden Nachricht zur Analyse an Microsoft senden möchten. Klicken Sie auf **Melden**, um die Nachricht an das Microsoft-Spamanalyseteam zu senden. Diese Meldungsoption steht derzeit für eine begrenzte Anzahl von Organisationen zur Verfügung. Möglicherweise werden Sie nicht aufgefordert, einen betrügerischen Phishingversuch Microsoft zu melden. 

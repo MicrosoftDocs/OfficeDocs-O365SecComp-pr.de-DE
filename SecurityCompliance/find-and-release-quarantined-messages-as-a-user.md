@@ -1,10 +1,10 @@
 ---
-title: Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer in Office 365
+title: Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/19/2018
-ms.audience: Consumer/IW
+audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,108 +14,108 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 'Als Office 365-Benutzer können Sie Ihre eigenen Nachrichten in Spamquarantäne auf zweierlei Weise verwalten: durch Antworten auf Spambenachrichtigungen, die Sie direkt an Sie gesendet haben (wenn Ihr Administrator diese Funktion eingerichtet hat) oder mithilfe der Spamquarantäne Funktion im Security &amp; Compliance Center.'
-ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Als Office 365 Benutzer können Sie Ihre eigenen Nachrichten mit Spamquarantäne auf zwei Arten verwalten: indem Sie auf Spambenachrichtigungen reagieren, die Sie direkt an Sie gesendet haben (wenn Ihr Administrator diese Funktion eingerichtet hat), oder indem Sie das Feature "Spamquarantäne" in der &amp; Security Compliance verwenden. Center.'
+ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255203"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152817"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Suchen und Freigeben von Nachrichten in Quarantäne als Benutzer in Office 365
+# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365
 
-Als Office 365-Benutzer können Sie Nachrichten, die an die Quarantäne gesendet wurden, nicht auf eine der folgenden Weisen an Sie gesendet, sondern auf eine von zwei Arten verwalten: durch [Antworten auf Spambenachrichtigungen, die Sie direkt an Sie gesendet](use-spam-notifications-to-release-and-report-quarantined-messages.md) haben (wenn Ihr &amp; Administrator dies eingerichtet hat) oder mithilfe des Security Compliance Centers. 
+Als Office 365 Benutzer können Sie Nachrichten, die an die Quarantäne gesendet wurden, nicht auf zwei Arten an Sie gesendet, sondern auf eine der folgenden beiden Methoden verwalten: indem Sie [auf Spambenachrichtigungen reagieren, die Sie direkt an Sie gesendet](use-spam-notifications-to-release-and-report-quarantined-messages.md) haben (sofern Ihr Administrator &amp; dies eingerichtet hat), oder indem Sie das Security Compliance Center verwenden. 
   
 > [!NOTE]
 > Wenn Sie ein Administrator sind, können Sie [isolierte Nachrichten](manage-quarantined-messages-and-files.md) für andere Personen in Ihrer Organisation verwalten. 
   
-## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a>Anzeigen von Nachrichten, die an Quarantäne gesendet wurden, statt an Sie
+## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a>Anzeigen von Nachrichten, die an die Quarantäne statt an Sie gesendet wurden
 
-1. Melden Sie sich bei Office 365 an, und wechseln Sie über Ihr Geschäfts-oder Schulkonto [zum Security and Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. Melden Sie sich bei Office 365 an, und wechseln Sie mithilfe Ihres geschäftlichen oder Schul Kontos [zum Security and Compliance Center](go-to-the-securitycompliance-center.md) . 
     
-2. Erweitern Sie im linken Bereich **Bedrohungs Verwaltung**, klicken Sie auf **Überarbeiten**, und wählen Sie dann **Quarantäne**aus.
+2. Erweitern Sie auf der linken Seite **Bedrohungs Verwaltung**, wählen Sie **überprüfen**und dann **Quarantäne**aus.
     
     > [!TIP]
-    > Um direkt zur **Quarantäne** Seite im Security &amp; Compliance Center zu wechseln, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
-Standardmäßig zeigt das Security &amp; Compliance Center alle e-Mail-Nachrichten an, die als Spam isoliert wurden. Die Nachrichten werden basierend auf dem **Datum** , an dem die Nachricht eingegangen ist, vom neuesten zum ältesten sortiert. **Absender**, **Betreff**und Ablaufdatum (unter Expires **** ) werden auch für jede Nachricht angezeigt. Sie können ein Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift klicken. Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren. 
+Standardmäßig zeigt das Security &amp; Compliance Center alle e-Mail-Nachrichten an, die als Spam isoliert wurden. Die Nachrichten werden basierend auf dem **Datum** , an dem die Nachricht empfangen wurde, von der neuesten bis zur ältesten sortiert. **Absender**, **Betreff**und das Ablaufdatum (unter **Expires** ) werden ebenfalls für jede Nachricht angezeigt. Sie können nach einem Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift klicken; Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren. 
   
-Sie können eine Liste aller isolierten Nachrichten anzeigen, oder Sie können nach bestimmten Nachrichten suchen, indem Sie filtern. Sie können nur Massenvorgänge mit bis zu 100 Elementen ausführen, sodass die Filterung auch dazu beitragen kann, Ihr Resultset zu reduzieren, wenn Sie mehr als das haben. Sie können Nachrichten für einen einzelnen Quarantäne Grund schnell filtern, indem Sie eine Option aus der Dropdownliste auswählen. Folgende Optionen sind verfügbar:
+Sie können eine Liste aller in Quarantäne befindlichen Nachrichten anzeigen, oder Sie können nach bestimmten Nachrichten durch Filtern suchen. Sie können nur Massenvorgänge für bis zu 100 Elemente ausführen, sodass das Filtern auch dazu beitragen kann, Ihr Resultset zu reduzieren, wenn Sie mehr als das haben. Sie können Nachrichten schnell nach einem einzelnen Quarantäne Grund filtern, indem Sie eine Option aus der Dropdownliste auswählen. Zu den Optionen gehören:
   
-- Als Spam identifizierte E-Mail. Diese isolierten Nachrichten werden standardmäßig angezeigt.
+- Als Spam identifizierte e-Mails. Diese unter Quarantäne gestellten Nachrichten werden standardmäßig angezeigt.
     
-- Als Massenmail identifizierte E-Mail.
+- Als Massen-e-Mail bezeichnete e-Mail.
     
-Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, klicken Sie auf die Nachricht, um Details dazu anzuzeigen, und führen Sie Aktionen aus. Sie können die Nachricht in Ihrem Postfach freigeben, eine Vorschau der Nachricht anzeigen, die Nachricht herunterladen oder die Nachricht aus der Quarantäne sofort löschen.
+Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, klicken Sie auf die Nachricht, um Details dazu anzuzeigen, und führen Sie Aktionen aus. Sie können die Nachricht in Ihrem Postfach freigeben, die Nachricht in einer Vorschau anzeigen, die Nachricht herunterladen oder die Nachricht sofort aus der Quarantäne löschen.
   
 > [!NOTE]
-> Sie benötigen Administratorberechtigungen in Office 365, um mit isolierten Nachrichten zu arbeiten, die an andere Benutzer gesendet wurden. 
+> Sie müssen über Administratorberechtigungen in Office 365 verfügen, damit Sie mit Nachrichten in Quarantäne arbeiten können, die an andere Benutzer gesendet wurden. 
   
-## <a name="to-filter-and-find-quarantined-messages"></a>So filtern und finden Sie isolierte Nachrichten
+## <a name="to-filter-and-find-quarantined-messages"></a>So filtern und suchen Sie Nachrichten in Quarantäne
 
-Wenn Sie viele isolierte Elemente haben, können Sie die Anzahl auf einen verwaltbaren Satz reduzieren, indem Sie Sie filtern.
+Wenn Sie viele isolierte Elemente haben, können Sie die Zahl auf eine verwaltbare Menge reduzieren, indem Sie Sie filtern.
   
-1. Wählen Sie auf der Seite **Quarantäne** aus, ob **Spam** -oder **Massen** Quarantäne Nachrichten angezeigt werden sollen. 
+1. Wählen Sie auf der Seite **Quarantäne** aus, ob Sie **Spam** -oder **Massen** Quarantäne Nachrichten anzeigen möchten. 
     
-2. Wählen Sie unter **Ergebnisse sortieren nach**eine beliebige Kombination von Bedingungen aus, indem Sie den entsprechenden Filter oder Filter (Sie können derzeit keine Platzhalter verwenden) festlegen. Es gibt verschiedene Bedingungen, die Sie auswählen können, einschließlich der folgenden:
+2. Wählen Sie unter **Ergebnisse sortieren nach**eine beliebige Kombination von Bedingungen aus, indem Sie den entsprechenden Filter oder Filter festlegen (Sie können zu diesem Zeitpunkt keine Platzhalter verwenden). Es gibt mehrere Bedingungen, die Sie auswählen können, einschließlich der folgenden:
     
-  - Nach **richten-ID** Verwenden Sie diese Option, um eine bestimmte Nachricht auszuwählen, wenn Sie die Nachrichten-ID kennen. 
+  - **Nachrichten-ID** Verwenden Sie diese Option, um eine bestimmte Nachricht auszuwählen, wenn Sie die Nachrichten-ID kennen. 
     
-    Wenn beispielsweise eine bestimmte Nachricht von einem Benutzer in Ihrer Organisation gesendet oder für diesen vorgesehen ist, aber nie sein Ziel erreicht hat, können Sie mithilfe einer Nachrichtenablaufverfolgung nach der Nachricht suchen (siehe [Ausführen einer Nachrichtenablaufverfolgung und Anzeigen der Ergebnisse](https://go.microsoft.com/fwlink/?LinkId=799737)). Wenn Sie feststellen, dass die Nachricht an die Quarantäne gesendet wurde, da Sie möglicherweise mit einer Nachrichtenfluss Regel übereinstimmt oder als Spam identifiziert wurde, können Sie diese Nachricht in Quarantäne finden, indem Sie Ihre Nachrichten-ID angeben. Stellen Sie sicher, dass die vollständige Zeichenfolge der Nachrichten-ID enthalten ist. Dies kann beispielsweise eine eckige Klammer (\<\>) einschließen:
+    Wenn beispielsweise eine bestimmte Nachricht von einem Benutzer in Ihrer Organisation gesendet oder dafür bestimmt wird, aber nie sein Ziel erreicht hat, können Sie mithilfe einer Nachrichtenablaufverfolgung nach der Nachricht suchen (siehe [Ausführen einer Nachrichtenablaufverfolgung und Anzeigen von Ergebnissen](https://go.microsoft.com/fwlink/?LinkId=799737)). Wenn Sie feststellen, dass die Nachricht an die Quarantäne gesendet wurde, weil Sie möglicherweise mit einer Nachrichtenfluss Regel übereinstimmt oder als Spam identifiziert wurde, können Sie diese Nachricht dann leicht in der Quarantäne finden, indem Sie die zugehörige Nachrichten-ID angeben. Stellen Sie sicher, dass die vollständige Zeichenfolge der Nachrichten-ID enthalten ist. Dies kann beispielsweise zu Spitzen\<\>Klammern () gehören:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
   - **Absender-e-Mail-Adresse** Wählen Sie aus, um nach einer einzelnen Absender-e-Mail-Adresse zu filtern. 
     
-  - **Empfänger-e-Mail-Adresse** Wählen Sie aus, um nach einer einzelnen Empfänger-e-Mail-Adresse zu filtern. 
+  - **E-Mail-Adresse** des Empfängers Wählen Sie aus, um nach einer einzelnen Empfänger-e-Mail-Adresse zu filtern. 
     
   - **Betreff** Geben Sie den Betreff einer e-Mail-Adresse ein, die Sie suchen möchten. 
     
-  - **Datumsintervall** Sie können nach dem Datum filtern, an dem die Nachricht an die Quarantäne gesendet wurde. Sie können das Datum oder einen Datumszeitraum angeben, einschließlich der Uhrzeit. 
+  - **Datumsbereich** Sie können festlegen, dass nach dem Datum gefiltert wird, an dem die Nachricht an die Quarantäne gesendet wurde. Sie können das Datum oder einen Datumsbereich angeben, einschließlich der Uhrzeit. 
     
-  - **Ablaufdatum** Um nach Ablaufdatum zu filtern, wählen Sie **Erweiterte Filter**aus. Sie können Nachrichten auswählen, die innerhalb der nächsten 24 Stunden ( **heute**) innerhalb der nächsten 48 Stunden ( **Nächste 2 Tage**), innerhalb der nächsten Woche ( **nächsten 7 Tage**) aus der Quarantäne gelöscht werden sollen, oder Sie können ein benutzerdefiniertes Zeitintervall auswählen.
+  - **Ablaufdatum** Um nach Ablaufdatum zu filtern, wählen Sie **Erweiterter Filter**aus. Sie können Nachrichten auswählen, die innerhalb der nächsten 24 Stunden ( **heute**) aus der Quarantäne gelöscht werden, innerhalb der nächsten 48 Stunden ( **nächsten 2 Tage**), innerhalb der nächsten Woche ( **Nächste 7 Tage**), oder Sie können ein benutzerdefiniertes Zeitintervall auswählen.
     
     > [!IMPORTANT]
-    > Standardmäßig werden Spam-und Massennachrichten für 30 Tage in Quarantäne aufbewahrt. Dieser Zeitraum ist jedoch konfigurierbar, und Ihr Administrator hat möglicherweise einen anderen Aufbewahrungszeitraum für Quarantäne festgelegt. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht mehr zurück erhalten. 
+    > Standardmäßig werden Spam-und Massennachrichten 30 Tage lang in Quarantäne aufbewahrt. Dieser Zeitraum ist jedoch konfigurierbar, und der Administrator hat möglicherweise einen anderen Aufbewahrungszeitraum für die Quarantäne festgelegt. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück bekommen. 
   
-## <a name="view-details-for-a-specific-message"></a>Anzeigen von Details zu einer bestimmten Nachricht
+## <a name="view-details-for-a-specific-message"></a>Anzeigen von Details für eine bestimmte Nachricht
 
 Nachdem Sie eine Nachricht ausgewählt haben, wird eine Zusammenfassung der Nachrichteneigenschaften in einem Bereich auf der rechten Seite angezeigt.
   
 - Nach **richten-ID:** Der eindeutige Bezeichner für die Nachricht. 
     
-- **Absenderadresse:** Absender der Nachricht. 
+- **Absenderadresse:** Die Person, die die Nachricht gesendet hat. 
     
-- **Empfangen:** Das Datum, an dem die Nachricht empfangen wurde. 
+- **Erhalten:** Das Datum, an dem die Nachricht empfangen wurde. 
     
 - **Betreff:** Der Text der Betreffzeile in der Nachricht. 
     
-- **Quarantäne Grund:** Zeigt an, ob eine Nachricht als **Spam** oder als **Bulk**identifiziert wurde.
+- **Quarantäne Grund:** Zeigt an, ob eine Nachricht als **Spam** oder **Massen**erkannt wurde.
     
-- **Expires:** Das Datum, an dem die Nachricht aus der Quarantäne gelöscht wird. 
+- **Ablaufdatum:** Das Datum, an dem die Nachricht aus der Quarantäne gelöscht wird. 
     
-- **Veröffentlicht für:** Alle e-Mail-Adressen (sofern vorhanden), für die die Nachricht freigegeben wurde. 
+- **Veröffentlicht an:** Alle e-Mail-Adressen (falls vorhanden), für die die Nachricht freigegeben wurde. 
     
-- **Noch nicht freigegeben für:** Alle e-Mail-Adressen (sofern vorhanden), für die die Nachricht nicht freigegeben wurde. Sie können **Release** auswählen, wenn Sie die Nachricht in Ihrem Postfach freigeben möchten (Weitere Informationen zum Freigeben von Nachrichten im nächsten Abschnitt). 
+- **Noch nicht freigegeben an:** Alle e-Mail-Adressen (falls vorhanden), für die die Nachricht nicht freigegeben wurde. Sie können die Option **Release** wählen, wenn Sie die Nachricht für Ihr Postfach freigeben möchten (Weitere Informationen zum Freigeben von Nachrichten im nächsten Abschnitt). 
     
-Sie können weitere Details zu der Nachricht abrufen, indem Sie eine der folgenden Optionen auswählen:
+Sie können noch mehr Details zur Nachricht erhalten, indem Sie eine der folgenden Optionen auswählen:
   
-- **Nachrichtenkopfzeile anzeigen** Wählen Sie diese Option aus, um den Nachrichten Kopftext anzuzeigen. Wenn Sie die Kopfzeile eingehend analysieren möchten, kopieren Sie den Text der Nachrichtenkopfzeile in die Zwischenablage, und wählen Sie dann **Microsoft Message Header Analyzer** aus, um zur Remote Verbindungs Untersuchung zu wechseln (Klicken Sie mit der rechten Maustaste, und wählen Sie in einer neuen Registerkarte öffnen aus, wenn Sie nicht möchten, dass Office 365 Führen Sie diese Aufgabe aus). Fügen Sie den Nachrichtenkopf im Abschnitt Nachrichtenkopf Analyse auf der Seite ein, und wählen Sie Kopfzeilen analysieren aus. 
+- **Nachrichtenkopfzeile anzeigen** Wählen Sie diese Option aus, um den Text der Nachrichtenkopfzeile anzuzeigen. Um die Kopfzeile eingehend zu analysieren, kopieren Sie den Text der Nachrichtenkopfzeile in die Zwischenablage, und wählen Sie dann **Microsoft Message Header Analyzer** aus, um zur Remote Verbindungs Untersuchung zu wechseln (Klicken Sie mit der rechten Maustaste, und wählen Sie in einer neuen Registerkarte öffnen aus, wenn Sie Office 365 nicht verlassen möchten Führen Sie diese Aufgabe aus). Fügen Sie die Kopfzeile der Nachricht auf der Seite im Abschnitt Nachrichtenkopf Analyse ein, und wählen Sie Kopfzeilen analysieren aus. 
     
-- **Vorschau Nachricht** Ermöglicht das Anzeigen von RAW-oder HTML-Versionen des Nachrichtentext Texts. In der HTML-Ansicht sind Links deaktiviert. 
+- **Vorschau Nachricht** Ermöglicht das Anzeigen von Rohdaten-oder HTML-Versionen des Nachrichtentext Texts. In der HTML-Ansicht sind Links deaktiviert. 
     
-## <a name="manage-your-quarantined-messages"></a>Verwalten der isolierten Nachrichten
+## <a name="manage-your-quarantined-messages"></a>Verwalten von Nachrichten in Quarantäne
 
-Nachdem Sie eine Nachricht oder eine Gruppe von Nachrichten ausgewählt haben, haben Sie mehrere Optionen für die Verwaltung von Nachrichten in Quarantäne.
+Nachdem Sie eine Nachricht oder eine Gruppe von Nachrichten ausgewählt haben, haben Sie mehrere Optionen zum Verwalten von Nachrichten in der Quarantäne.
   
-- Keine Aktion ausführen. Wenn Sie nichts tun, wird die Nachricht nach Ablauf automatisch von Office 365 gelöscht. Denken Sie daran, wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück erhalten.
+- Keine Aktion ausführen. Wenn Sie nichts tun, wird die Nachricht nach Ablauf von Office 365 automatisch gelöscht. Denken Sie daran, wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück bekommen.
     
-- **Release-Meldung** Gibt eine isolierte Nachricht (oder einen Satz von Nachrichten) frei, damit die Nachricht an Ihr Postfach gesendet wird. Wenn Sie eine Nachricht freigeben, haben Sie die Möglichkeit, die Nachricht zur Analyse an Microsoft zu melden. 
+- **Nachricht freigeben** Freigeben einer isolierten Nachricht (oder eines Satzes von Nachrichten), damit die Nachricht an Ihr Postfach gesendet wird. Wenn Sie eine Nachricht freigeben, haben Sie die Möglichkeit, die Nachricht an Microsoft zur Analyse zu melden. 
     
-    Wenn Sie eine Nachricht melden, die auch als Meldung als falsch positives Ergebnis bezeichnet wird, wird die Nachricht an das Microsoft-Spam Analyse Team gemeldet. Das Team wertet und analysiert falsch positive Nachrichten, und je nach Ergebnis der Analyse können die Filterregeln des Dienst weiten Spam Inhalts angepasst werden, um diese Nachrichten zu ermöglichen.
+    Wenn Sie sich entscheiden, eine Nachricht zu melden, die auch als melden einer Nachricht als falsch positives Ergebnis bezeichnet wird, wird die Nachricht an das Microsoft-Spam Analyse Team gemeldet. Das Team bewertet und analysiert falsch positive Nachrichten, und je nach Analyseergebnis können die Filterregeln für den Dienst weiten Spam Inhalt so angepasst werden, dass diese Nachrichten durchlassen.
     
-- **Nachricht herunterladen** Ermöglicht das Herunterladen der Nachricht als EML-Datei. Nachdem Sie eine Nachricht heruntergeladen haben, können Sie die EML-Datei mit Ihrem e-Mail-Client überarbeiten, bevor Sie die Nachricht freigeben. 
+- **Nachricht herunterladen** Hiermit können Sie die Nachricht als EML-Datei herunterladen. Nachdem Sie eine Nachricht heruntergeladen haben, können Sie die EML-Datei überprüfen, indem Sie Ihren e-Mail-Client verwenden, bevor Sie die Nachricht freigeben. 
     
-- **Aus Quarantäne entfernen** Löscht die Nachricht sofort aus der Quarantäne, ohne die Nachricht für Ihr Postfach freizugeben. 
+- **Aus Quarantäne entfernen** Löscht die Nachricht sofort aus der Quarantäne, ohne die Nachricht in Ihrem Postfach freizugeben. 
     
 

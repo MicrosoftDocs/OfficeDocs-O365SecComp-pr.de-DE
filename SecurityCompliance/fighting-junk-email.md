@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. Exchange Online Protection (EOP)-Anti-Spam- und Anti-Phishing-Filtertechnologie wird plattformübergreifend über die E-Mail-Plattformen von Microsoft angewendet, um Benutzern die neuesten Anti-Spam- und Anti-Phishing-Tools und Innovationen im gesamten Netzwerk zur Verfügung zu stellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
-ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ef8433279137a91a52f6a149844eff9c567150c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255443"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154517"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Bekämpfung von Junk-E-Mails, die an Office 365 gesendet werden
 
@@ -60,7 +60,7 @@ Microsoft konzentriert seine Anti-Phishing-Technologie auf zwei Punkte: Erstens 
 > [!TIP]
 > Internet Explorer ab Version 7 blockiert oder warnt Benutzer, wenn sie bekannte potenzielle Phishing-Websites besuchen, damit sie keine persönlichen Informationen bereitstellen.[Stellen Sie sicher, dass Sie die neueste Version von Internet Explorer haben](https://www.microsoft.com/windows/ie/default.mspx). 
   
-#### <a name="authentication"></a>Authentifizierung
+#### <a name="authentication"></a>Authentication
 
 Domänen-Spoofing ist eine Möglichkeit, eine seriöse E-Mail-Adresse zu imitieren, damit betrügerische E-Mails seriös erscheinen. Spoofing wird von böswilligen Personen oder Organisationen in Phishing-Betrugsversuchen verwendet, um Personen zum Preiszugeben vertraulicher persönlicher Informationen zu verleiten. Die Offenlegung dieser Informationen kann zu Identitätsdiebstahl und anderen Arten von Betrug führen.
   

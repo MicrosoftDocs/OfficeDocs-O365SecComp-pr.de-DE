@@ -1,35 +1,35 @@
 ---
-title: Übersicht über die Nachrichtenflussstatus der oberen Domäne
+title: Überblick über den Nachrichtenflussstatus der oberen Domäne
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Status des Nachrichtenflusses im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 851ef1438f111a36f69563670bbd0835a9956edc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+description: Administratoren können sich im Nachrichtenfluss-Dashboard im Security & Compliance Center über den Nachrichtenflussstatus "Top Domain" informieren.
+ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868591"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158647"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>Übersicht über die Nachrichtenflussstatus der oberen Domäne
+# <a name="top-domain-mail-flow-status-insight"></a>Überblick über den Nachrichtenflussstatus der oberen Domäne
 
-Die **Nachrichtenflussstatus-** Einblicke der oberen Domänen bieten Ihnen den aktuellen Status der Domänen Ihrer Organisation im Hinblick auf den Nachrichtenfluss. Diese Einblicke helfen Ihnen bei der Identifizierung und Problembehandlung von Domänen, die Auswirkungen auf die ***Nachrichtenübermittlung*** haben (beispielsweise können keine externen e-Mails empfangen werden), insbesondere Domänen Ablauf oder Domänen mit falschen MX-Einträgen.
+In der **oberen Domäne der Nachrichtenflussstatus** Insight erhalten Sie den aktuellen Status für die Domänen Ihrer Organisation im Hinblick auf den Nachrichtenfluss. Diese Einblicke helfen Ihnen bei der Identifizierung und Problembehandlung von Domänen, die sich auf Probleme mit dem ***e-Mail-Fluss auswirken*** (beispielsweise kann keine externe e-Mail empfangen werden), vor allem Domänen Ablauf oder Domänen mit falschen MX-Einträgen.
 
-![Die obere Domänen-Fluss Status Einblicke im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/domain-mail-flow-status-selected.png)
+![Der obere Domänen Fluss Status – Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/domain-mail-flow-status-selected.png)
 
-Wenn Sie im Insight auf **Details anzeigen** klicken, wird ein Flyout angezeigt, in dem Sie weitere Details zum Status jeder Domäne sehen.
+Wenn Sie in der Insight auf **Details anzeigen** klicken, wird ein Flyout angezeigt, in dem Sie weitere Informationen zum Status der einzelnen Domänen erhalten.
 
-Ein grünes Häkchen für eine Domäne gibt den aktuellen MX-Eintrag an (wenn Sie zum Dashboard für Nachrichtenfluss Einblicke navigieren) entspricht dem Wert, den wir im Datensatz haben, und dass die Domäne während der letzten zwei Stunden e-Mails empfangen hat.
+Ein grünes Häkchen für eine Domäne gibt an, dass der aktuelle MX-Eintrag (beim Browsen in das Nachrichtenfluss-Einblicke-Dashboard) dem Wert entspricht, den wir im Datensatz haben, und dass die Domäne in den letzten zwei Stunden e-Mails empfangen hat.
 
-Ein rotes x für eine Domäne gibt an, dass der MX-Eintrag geändert wurde und dass die Domäne während der letzten 6 Stunden keine e-Mails erhalten hat. Dies weist darauf hin, dass Ihre Domäne abgelaufen ist oder dass der MX-Eintrag falsch aktualisiert wurde. Erkundigen Sie sich bei Ihrer Domänenregistrierungsstelle oder Ihrem DNS-Hostingdienst, ob die Domäne abgelaufen ist oder ob der MX-Eintrag der Domäne falsch ist.
+Ein rotes x für eine Domäne gibt an, dass der MX-Eintrag geändert wurde und dass in den letzten 6 Stunden keine e-Mails für die Domäne empfangen wurden. Dies deutet wahrscheinlich darauf hin, dass Ihre Domäne abgelaufen ist oder dass der MX-Eintrag falsch aktualisiert wurde. Erkundigen Sie sich bei Ihrer Domänenregistrierungsstelle oder Ihrem DNS-Hostingdienst, ob die Domäne abgelaufen ist oder ob der MX-Eintrag der Domäne falsch ist.
 
-![Das Detail Flyout im oberen Domänen-Fluss Status Einblicke](media/domain-mail-flow-status-flyout.png)
+![Das Detail-Flyout im oberen Bereich der Domänen-Flow-Status Einblicke](media/domain-mail-flow-status-flyout.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: Mithilfe von Nachrichtenfluss Regeln (Transportregeln) können Sie Nachrichten identifizieren und Aktionen ausführen, die in Ihrer Office 365-Organisation durchlaufen werden.
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Sie können Nachrichtenfluss Regeln (Transportregeln) verwenden, um Nachrichten zu identifizieren und zu ergreifen, die in Ihrer Office 365 Organisation fließen.
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256629"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153147"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Nachrichtenflussregeln (Transportregeln) in Exchange Online Protection
 
@@ -43,7 +43,7 @@ Informationen zur Implementierung bestimmter Nachrichtenrichtlinien mithilfe von
     
 - [Definieren von Regeln zum Verschlüsseln oder Entschlüsseln von E-Mail-Nachrichten](https://go.microsoft.com/fwlink/p/?Linkid=402846)
     
-Das folgende Video bietet eine Demonstration der Einrichtung von Nachrichtenfluss Regeln in Exchange Online Protection.
+Das folgende Video bietet eine Demonstration zum Einrichten von Nachrichtenfluss Regeln in Exchange Online Schutz.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
@@ -59,7 +59,7 @@ Eine Nachrichtenflussregel besteht aus Bedingungen, Ausnahmen, Aktionen und Eige
     
 - **Aktionen** geben an, was mit Nachrichten geschehen soll, die den Bedingungen in der Regel und keiner der Ausnahmen entsprechen. Es stehen zahlreiche Aktionen zur Verfügung, wie Ablehnen, Löschen oder Umleiten von Nachrichten, Hinzufügen weiterer Empfänger, Hinzufügen von Präfixen zum Nachrichtenbetreff oder Einfügen von Haftungsausschlüssen in den Nachrichtentext. 
     
-    Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in Exchange Online Protection verfügbar sind, finden Sie unter [Mail Flow rule actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+    Weitere Informationen zu Aktionen für Nachrichtenfluss Regeln, die in Exchange Online Protection verfügbar sind, finden Sie unter [Aktionen für Nachrichtenfluss Regeln in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
     
 - **Eigenschaften** geben weitere Regeleinstellungen an, die keine Bedingungen, Ausnahmen oder Aktionen sind. Zum Beispiel, wann die Regel angewendet werden soll, ob die Regel erzwungen oder getestet werden soll und in welchem Zeitraum die Regel aktiv ist. 
     
@@ -117,13 +117,13 @@ Es gibt verschiedene Nachrichtentypen, die eine Organisation durchlaufen. Die fo
    
 ## <a name="what-else-should-i-know"></a>Was muss ich sonst noch wissen?
 
-- Der **Version** -oder **RuleVersion** -Eigenschaftswert für eine Regel ist in Exchange Online Protection nicht wichtig. 
+- Der Wert der **Version** oder der **RuleVersion** -Eigenschaft für eine Regel ist in Exchange Online Schutz nicht wichtig. 
     
 - Nach dem Erstellen oder Ändern einer E-Mail-Flussregel kann es bis zu 30 Minuten dauern, bis die neue oder aktualisierte Regel auf Nachrichten angewendet wird.
     
 ## <a name="for-more-information"></a>Weitere Informationen
   
-[Überprüfen von Nachrichtenanlagen in Exchange Online mithilfe von Nachrichtenfluss Regeln](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
+[Verwenden von Nachrichtenfluss Regeln zum Überprüfen von Nachrichtenanlagen in Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [E-Mail-Verschlüsselung in Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   

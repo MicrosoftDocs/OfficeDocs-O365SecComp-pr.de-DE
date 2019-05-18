@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,36 +14,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243768"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155167"
 ---
 # <a name="close-or-delete-a-case"></a>Schließen oder Löschen eines Falls
 
-Wenn der von einem eDiscovery-Fall unterstützte Rechtsfall oder die Untersuchung abgeschlossen ist, können Sie den Fall abschließen. Hier sehen Sie, was passiert, wenn Sie einen Fall abschließen:
+Wenn der von einem eDiscovery-Fall unterstützte rechtliche Fall oder die Untersuchung abgeschlossen ist, können Sie den Fall schließen. Hier erfahren Sie, was passiert, wenn Sie einen Fall schließen:
 
-- Wenn die Groß-/Kleinschreibung inhaltsspeicherorte enthält, wird diese Sperre deaktiviert. Dies kann dazu führen, dass Inhalte dauerhaft gelöscht oder entfernt werden, entweder durch den Benutzer oder durch einen automatisierten Prozess wie eine Löschrichtlinie.
+- Wenn der Fall alle inhaltsspeicherorte enthält, sind diese Haltestatus deaktiviert. Dies kann dazu führen, dass Inhalte dauerhaft gelöscht oder gelöscht werden, entweder durch den Benutzer oder durch einen automatisierten Prozess, beispielsweise eine Löschrichtlinie.
 
-- Durch das Schließen einer Groß-/Kleinschreibung werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere Haltebereiche an einem Inhaltsspeicherort platziert werden (beispielsweise in einem Rechtsstreit. eine erHaltungs Richtlinie oder eine Aufbewahrungspflicht aus einem anderen eDiscovery-Fall) Diese gilt weiterhin.
+- Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere haltebereiche an einem Inhaltsspeicherort platziert werden (beispielsweise ein Beweissicherungsverfahren. eine Erhaltungs Richtlinie oder ein Haltestatus aus einem anderen eDiscovery-Fall) diese Aufbewahrungen werden weiterhin beibehalten.
 
-- Der Fall wird weiterhin auf der eDiscovery-Seite im Security & Compliance Center aufgeführt. Die Details, Haltestatus, suchen und Elemente einer geschlossenen Groß-/Kleinschreibung werden beibehalten.
+- Der Fall wird weiterhin auf der Seite "eDiscovery" im Security & Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
 
-- Sie können einen Fall nach dem Schließen bearbeiten. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen, Suchergebnisse exportieren und das Suchergebnis für die Analyse in Advanced eDiscovery vorbereiten. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass haltebereiche deaktiviert sind, wenn ein Fall geschlossen wird.
+- Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen, Suchergebnisse exportieren und das Suchergebnis für die Analyse in Advanced eDiscovery vorbereiten. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass die haltebereiche deaktiviert sind, wenn ein Fall geschlossen wird.
 
-So können Sie eine Groß-/Kleinschreibung abschließen:
+So schließen Sie einen Fall:
 
-1. Wechseln Sie auf der Seite **Advanced eDiscovery (Preview)** zu Ihrem Fall.
+1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu Ihrem Fall.
 
 2. Wechseln Sie zu **Einstellungen** , und wählen Sie **Fall Informationen**aus. 
 
-3. Klicken Sie auf **Fall abschließen**. 
+3. Klicken Sie auf **Fall schließen**. 
 
 So löschen Sie einen Fall:
 
-1. Wechseln Sie auf der Seite **Advanced eDiscovery (Preview)** zu Ihrem Fall.
+1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu Ihrem Fall.
 
 2. Wechseln Sie zu **Einstellungen** , und wählen Sie **Fall Informationen**aus. 
 

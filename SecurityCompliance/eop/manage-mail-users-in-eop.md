@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: 2e266d4dd31c3bd614c1b4f8afa17ca747890385
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 769ab13f99d7faae42bbdbed5b2b95bd37cfd55e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256453"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150237"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
@@ -44,10 +44,10 @@ Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Ex
 In diesem Abschnitt finden Sie weitere Informationen zum Verwalten von E-Mail-Benutzern mithilfe von Verzeichnissynchronisierung.
   
 > [!IMPORTANT]
-> Wenn Sie die Verzeichnissynchronisierung verwenden, um Ihre Empfänger zu verwalten, können Sie Benutzer weiterhin im Microsoft 365 Admin Center hinzufügen und verwalten, Sie werden jedoch nicht mit Ihrem lokalen Active Directory synchronisiert. Der Grund ist, dass die Verzeichnissynchronisierung Empfänger nur von Ihrem lokalen Active Directory mit der Cloud synchronisiert. 
+> Wenn Sie die Verzeichnissynchronisierung zum Verwalten Ihrer Empfänger verwenden, können Sie dennoch Benutzer im Microsoft 365 Admin Center hinzufügen und verwalten, Sie werden jedoch nicht mit Ihrer lokalen Active Directory synchronisiert. Dies liegt daran, dass die Verzeichnissynchronisierung nur Empfänger von Ihrem lokalen Active Directory zur Cloud synchronisiert. 
   
 > [!TIP]
->  Für die folgenden Funktionen wird empfohlen, Verzeichnissynchronisierung zu verwenden: > **Outlook-Listen sicherer und blockierter Absender**: Wenn diese Listen mit dem Dienst synchronisiert werden, haben sie im Dienst Vorrang vor Spamfilterung. Dadurch können Benutzer ihre eigenen Liste sicherer und blockierter Absender auf Benutzer- oder Domänenbasis verwalten. > **Verzeichnisbasierte Edge-Blockierung**: Weitere Informationen zu verzeichnisbasierter Edge-Blockierung finden Sie unter [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). > **Spam-Quarantäne von Endbenutzern**: Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein. > **Nachrichtenfluss Regeln** : Wenn Sie die Verzeichnissynchronisierung verwenden, werden Ihre vorhandenen Active Directory-Benutzer und-Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) erstellen, die bestimmte Benutzer und/oder Gruppen, ohne Sie manuell über das EAC oder die Exchange Online Protection PowerShell hinzufügen zu müssen. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://go.microsoft.com/fwlink/?LinkId=507569) nicht über die Verzeichnissynchronisierung synchronisiert werden können. 
+>  Für die folgenden Funktionen wird empfohlen, Verzeichnissynchronisierung zu verwenden: > **Outlook-Listen sicherer und blockierter Absender**: Wenn diese Listen mit dem Dienst synchronisiert werden, haben sie im Dienst Vorrang vor Spamfilterung. Dadurch können Benutzer ihre eigenen Liste sicherer und blockierter Absender auf Benutzer- oder Domänenbasis verwalten. > **Verzeichnisbasierte Edge-Blockierung**: Weitere Informationen zu verzeichnisbasierter Edge-Blockierung finden Sie unter [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). > **Spam-Quarantäne von Endbenutzern**: Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige E-Mail-Benutzer sein. > **Nachrichtenfluss Regeln** : Wenn Sie die Verzeichnissynchronisierung verwenden, werden die vorhandenen Active Directory Benutzer und Gruppen automatisch in die Cloud hochgeladen, und Sie können dann Nachrichtenfluss Regeln (auch bekannt als Transportregeln) erstellen, die auf bestimmte Benutzer und/oder Gruppen ohne manuelles Hinzufügen über die Exchange-Verwaltungskonsole oder Exchange Online Protection PowerShell. Bitte beachten Sie, dass [dynamische Verteilungsgruppen](https://go.microsoft.com/fwlink/?LinkId=507569) nicht über die Verzeichnissynchronisierung synchronisiert werden können. 
   
  **Bevor Sie beginnen**
   

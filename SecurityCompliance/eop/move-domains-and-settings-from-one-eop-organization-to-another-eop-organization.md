@@ -4,25 +4,25 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden.
-ms.openlocfilehash: 976594a3f28f2d120270dfabbf708ecb5815ad5c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af773b1ecd3006f8751e353bb5233522f0dbad42
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256298"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150117"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Verschieben von Domänen und Einstellungen zwischen EOP-Organisationen
 
 Änderungen in den Geschäftsanforderungen können manchmal erfordern, dass eine Microsoft Exchange Online Protection (EOP)-Organisation (ein Mandant) in zwei separate Organisationen unterteilt wird, zwei Organisationen in einer zusammengefasst oder Ihre Domänen und EOP-Einstellungen von einer Organisation zu einer anderen verschoben werden. Das Verschieben einer EOP-Organisaton zu einer zweiten EOP-Organisation kann ein Problem darstellen, doch mit ein paar einfachen Remote Windows PowerShell-Skripts und etwas Vorbereitung kann dies in einem relativ kleinen Wartungszeitfenster erreicht werden. 
   
 > [!NOTE]
->  Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EOP-Standardorganisationen nicht unterstützt werden, sind die Verschiebungen von einer EOP Premium-Organisation zu einer EOP-Standardorganisation möglicherweise nicht erfolgreich. >  Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt. 
+>  Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premium-Features in EoP-Standardorganisationen nicht unterstützt werden, ist die Verschiebung von einer EoP Premium-Organisation in eine EoP-Standardorganisation möglicherweise nicht erfolgreich. >  Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt. 
   
 Im folgenden Beispiel wurde Contoso, Ltd. mit Contoso Suites zusammengeführt. Auf dem folgenden Bild ist der Prozess für das Verschieben von Domänen, E-Mail-Benutzern und Gruppen sowie Einstellungen aus der EOP-Quellorganisation (contoso.onmicrosoft.com) zur EOP-Zielorganisation (contososuites.onmicrosoft.com) dargestellt:
   
@@ -49,7 +49,7 @@ Um die Quellorganisation in der Zielorganisation erneut zu erstellen, müssen Si
 - Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet)
     
     > [!NOTE]
-    > Die Unterstützung von Cmdlets für den Export und Import der Nachrichtenfluss Regelsammlung wird derzeit nur für EOP Premium-Abonnement Pläne unterstützt. 
+    > Die Unterstützung von Cmdlets für den Export und Import der Nachrichtenfluss Regelsammlung wird derzeit nur für EoP Premium-Abonnement Pläne unterstützt. 
   
 Am einfachsten können Sie all Ihre Einstellungen mithilfe der Remote Windows PowerShell sammeln. Weitere Informationen über die Verbindungsherstellung zu EOP über die Remote Windows PowerShell finden Sie unter [Herstellen einer Verbindung mit Exchange Online Protection mithilfe der Remote-PowerShell](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
@@ -65,7 +65,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Das folgende Skript kann verwendet werden, um alle e-Mail-Benutzer, Gruppen, Antispam-Einstellungen, Antischadsoftware-Einstellungen, Connectors und Nachrichtenfluss Regeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei als Source_EOP_Settings.ps1 im eben erstellten Verzeichnis "Export", und führen Sie den folgenden Befehl aus:
+Das folgende Skript kann verwendet werden, um alle e-Mail-Benutzer, Gruppen, Anti-Spam-Einstellungen, Antischadsoftware-Einstellungen, Connectors und Nachrichtenfluss Regeln in der Quellorganisation zu erfassen. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei als Source_EOP_Settings.ps1 im eben erstellten Verzeichnis "Export", und führen Sie den folgenden Befehl aus:
   
 ```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -171,9 +171,9 @@ Foreach ($domain in $Domains) {
 
 ```
 
-Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center ihrer Zielorganisation überprüfen und sammeln, damit Sie Ihre Domänen schnell überprüfen können, wenn der Zeitpunkt gekommen ist:
+Jetzt können Sie die Informationen aus dem Microsoft 365 Admin Center ihrer Zielorganisation überprüfen und sammeln, damit Sie Ihre Domänen schnell überprüfen können, wenn die Zeit gekommen ist:
   
-1. Melden Sie sich im Microsoft 365 Admin Center unter [https://portal.office.com](https://portal.office.com)an.
+1. Melden Sie sich beim Microsoft 365 Admin Center unter [https://portal.office.com](https://portal.office.com)an.
     
 2. Klicken Sie auf **Domänen**.
     
@@ -242,7 +242,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Schritt 5: Überprüfen von Domänen für die Zielorganisation
 
-1. Melden Sie sich im Admin Center unter [https://portal.office.com](https://portal.office.com)an.
+1. Melden Sie sich beim Admin Center an [https://portal.office.com](https://portal.office.com).
     
 2. Klicken Sie auf **Domänen**.
     
@@ -925,6 +925,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Schritt 8: Wiederherstellen Ihrer DNS-Einstellungen zum Beenden der E-Mail-Warteschlange
 
-Wenn Sie Ihre MX-Einträge auf eine ungültige Adresse festlegen, damit die Absender e-Mails während des Übergangs in die Warteschlange eingereiht werden, müssen Sie Sie auf den richtigen Wert festlegen, wie im [Admin Center](https://admin.microsoft.com)angegeben. Weitere Informationen über das Konfigurieren des DNS finden Sie unter [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Wenn Sie Ihre MX-Einträge auf eine ungültige Adresse festlegen, damit die Absender während des Übergangs e-Mails in die Warteschlange eingereiht haben, müssen Sie Sie auf den korrekten Wert zurücksetzen, der im [Admin Center](https://admin.microsoft.com)angegeben ist. Weitere Informationen über das Konfigurieren des DNS finden Sie unter [Erstellen von DNS-Einträgen für Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
 

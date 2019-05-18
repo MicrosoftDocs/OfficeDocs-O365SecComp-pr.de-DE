@@ -1,10 +1,10 @@
 ---
-title: Dokument-Metadatenfelder in Daten Untersuchungen (Vorschau)
+title: Dokumentmetadaten-Felder in Daten Untersuchungen (Vorschau)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c4a7c479d730d5256efabe9120960b1590094779
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e551850b47bec88f6dd8353c6db02048255e74
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258123"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150907"
 ---
-# <a name="document-metadata-fields-in-data-investigations-preview"></a>Dokument-Metadatenfelder in Daten Untersuchungen (Vorschau)
+# <a name="document-metadata-fields-in-data-investigations-preview"></a>Dokumentmetadaten-Felder in Daten Untersuchungen (Vorschau)
 
-Die folgende Tabelle enthält die Metadatenfelder für Dokumente in einem Evidence-Satz in einer Untersuchung in Daten Untersuchungen (Preview). Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Evidence-Satz durchlaufen wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Evidence Set angezeigt werden, und ob das Feld enthalten ist, wenn Dokumente werden exportiert. 
+In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem in einer Untersuchung in Data Investigations (Preview) festgelegten Evidence-Feld aufgeführt. Die Tabelle gibt den Namen des Metadatenfelds an, ob das Feld durchsucht werden kann, wenn eine Abfrage in einem Beweissatz ausführt wird, ob das Feld vorhanden ist, wenn die Datei Metadaten eines ausgewählten Dokuments in einem Beweissatz angezeigt werden, und ob das Feld enthalten ist, wenn Dokumente werden exportiert. 
 
 > [!NOTE]
-> Die Werte in Klammern in der Spalte **Searchable in Evidence Set** sind der Name der Eigenschaft, nach der Sie suchen können. Die Werte in Klammern in der Spalte **sichtbar in Datei Metadaten** sind der Name der Eigenschaft, die angezeigt wird, wenn Sie die Datei Metadaten anzeigen.
+> Die Werte in Klammern in der Spalte **durchsuchbar in Beweis Sätzen** sind der Name der Eigenschaft, nach der Sie suchen können. Die Werte in Klammern in der Spalte **sichtbar in Datei Metadaten** sind der Name der Eigenschaft, die angezeigt wird, wenn Sie die Datei Metadaten anzeigen.
 
-|**Feldname** </br>|**Durchsuchbar in Evidence Set** |**Sichtbar in Datei Metadaten** |**Exportiert** |
+|**Feldname** </br>|**Durchsuchbar in Beweis Sätzen** |**Sichtbar in Datei Metadaten** |**Exportiert** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Case-Tags                  | Ja (Tags)                                      |                         | Ja         |
 |Konformitäts Bezeichnungen          |                                                 |                         | Ja         |
@@ -36,32 +36,32 @@ Die folgende Tabelle enthält die Metadatenfelder für Dokumente in einem Eviden
 |Container-ID               |                                                 |                         | Ja         |
 |Unterhaltungsindex         |                                                 |                         | Ja         |
 |Custodian                  | Ja (Depotbank)                                 |   Ja (Depotbank)       | Ja         |
-|Datenquelle                | Ja (Quelle)                                    |   Ja (Arbeitslast)          | Ja         |
+|Datenquelle                | Ja (Quelle)                                    |   Ja (Arbeitsauslastung)          | Ja         |
 |Datum                       | Ja (Datum)                                      |   Ja (Datum UTC)        | Ja         |
-|Deduplizierte zusammengesetzter Pfad      |                                                 |                         | Ja         |
-|Deduped Verwalter         |                                                 |                         | Ja         |
+|Deduplizierten zusammengesetzten Pfad      |                                                 |                         | Ja         |
+|Deduped depotverwalter         |                                                 |                         | Ja         |
 |Deduplizierte Datei-IDs           |                                                 |                         | Ja         |
-|Dokumentautoren                | Ja (Autor) *                                   |    Ja (Autor)         | Ja         |
+|Doc-Autoren                | Ja (Autor) *                                   |    Ja (Autor)         | Ja         |
 |Doc-Kommentare               | Ja (Kommentare)                                  |                         | Ja         |
-|Doc-Firma                |                                                 |                         | Ja         |
-|Dokument Erstellungsdatum           | Ja (erstellt) *                              |    Ja (erstellte Zeit)   | Ja         |
-|Dokumentdatum geändert          | Ja (lastModifiedDate) *                         |                         | Ja         |
+|Doc-Unternehmen                |                                                 |                         | Ja         |
+|Erstelltes doc-Datum           | Ja (erstellt) *                              |    Ja (Erstellungszeit)   | Ja         |
+|Doc-Datum geändert          | Ja (lastModifiedDate) *                         |                         | Ja         |
 |Doc-Schlüsselwörter               |                                                 |                         | Ja         |
-|Dokument zuletzt gespeichert von          |                                                 |                         | Ja         |
-|Dokument geändert von            |                                                 |                         | Ja         |
-|Dokument Betreff                |                                                 |  Ja (Betreff/Titel)    | Ja         |
-|Dokumentvorlage               |                                                 |                         | Ja         |
-|Dokumenttitel                  | Ja (Title)                                     |  Ja (Title)            | Ja         |
-|Dokumentversion                |                                                 |                         | Ja         |
+|Doc zuletzt gespeichert von          |                                                 |                         | Ja         |
+|Doc geändert von            |                                                 |                         | Ja         |
+|Betreff des Dokuments                |                                                 |  Ja (Betreff/Titel)    | Ja         |
+|Doc-Vorlage               |                                                 |                         | Ja         |
+|Doc-Titel                  | Ja (Titel)                                     |  Ja (Titel)            | Ja         |
+|Doc-Version                |                                                 |                         | Ja         |
 |Dominantes Design             | Ja (dominantTheme)                             |  Ja (dominantes Design)   | Ja         |
 |Doppelte Teilmenge           |                                                 |                         | Ja         |
 |E-Mail-Aktion               |                                                 |                         | Ja         |
-|E-Mail-BCC                  | Ja (BCC)                                       |                         | Ja         |
-|E-Mail-CC                   | Ja (CC)                                        |                         | Ja         |
+|BCC-e-Mail                  | Ja (BCC)                                       |                         | Ja         |
+|E-Mail CC                   | Ja (CC)                                        |                         | Ja         |
 |E-Mail-Unterhaltungs-ID      |                                                 |                         | Ja         |
-|E-Mail-Empfangsdatum        | Ja (empfangen)                                  |   Ja (empfangen)        | Ja         |
+|E-Mail-Datum empfangen        | Ja (empfangen)                                  |   Ja (empfangen)        | Ja         |
 |Gesendetes e-Mail-Datum            | Ja (gesendet)                                      |   Ja (gesendet)            | Ja         |
-|E-Mail hat Anlage       |                                                 |                         | Ja         |
+|E-Mail weist eine Anlage auf       |                                                 |                         | Ja         |
 |E-Mail-Wichtigkeit           |                                                 |                         | Ja         |
 |E-Mail-Internetkopfzeilen     |                                                 |                         | Ja         |
 |E-Mail-Ebene                |                                                 |                         | Ja         |
@@ -73,57 +73,57 @@ Die folgende Tabelle enthält die Metadatenfelder für Dokumente in einem Eviden
 |E-Mail-Sicherheit             |                                                 |                         | Ja         |
 |E-Mail-Absender               | Ja (Absender)                                    |   Ja (Absender)          | Ja         |
 |E-Mail-Absenderdomäne        | Ja (senderDomain)                              |                         | Ja         |
-|E-Mail-Vertraulichkeit          |                                                 |                         | Ja         |
-|E-Mail-Satz                  | Ja (emailSetId)                                |   Ja (EmailSetID)      | Ja         |
+|E-Mail-Empfindlichkeit          |                                                 |                         | Ja         |
+|E-Mail-Gruppe                  | Ja (emailSetId)                                |   Ja (EmailSetID)      | Ja         |
 |E-Mail-Betreff              | Ja (Betreff)                                   |   Ja (Betreff/Titel)   | Ja         |
 |E-Mail-Thread               |                                                 |                         | Ja         |
 |E-Mail an                   | Ja (an)                                        |                         | Ja         |
 |Fehlercode                 | Ja (processingStatus)                          |                         | Ja         |
-|Systemeigenen Pfad exportieren         |                                                 |                         | Ja         |
+|Nativen Pfad exportieren         |                                                 |                         | Ja         |
 |Extrahierte Text Länge      |                                                 |                         | Ja         |
-|Extrahierter Textpfad        |                                                 |                         | Ja         |
-|Familien-ID                  | Ja (Family-ID)                                  |   Ja (Family-ID)        | Ja         |
-|Größe der Familie                |                                                 |                         | Ja         |
-|File-Klasse                 | Ja (fileClass)                                 |   Ja (File-Klasse)      | Ja         |
-|Datei-ID                    | Ja (Datei-Nr.)                                    |   Ja (ID)              | Ja         |
-|Hat Text                   |                                                 |                         | Ja         |
-|Inklusivtyp             | Ja (inklusivtype)                             |   Ja (inklusive Typ)  | Ja         |
+|Extrahierter Text Pfad        |                                                 |                         | Ja         |
+|Familien-ID                  | Ja (Familien-ID)                                  |   Ja (Familien-ID)        | Ja         |
+|Familiengröße                |                                                 |                         | Ja         |
+|File-Klasse                 | Ja (fileclass)                                 |   Yes (File-Klasse)      | Ja         |
+|Datei-ID                    | Ja (Datei-Nr)                                    |   Ja (ID)              | Ja         |
+|Verfügt über Text                   |                                                 |                         | Ja         |
+|Inklusiv-Typ             | Ja (inklusivetype)                             |   Ja (einschließlich Typ)  | Ja         |
 |Eingabedatum geändert        |                                                 |                         | Ja         |
 |Eingabedatei-ID              |                                                 |                         | Ja         |
 |Eingabepfad                 |                                                 |                         | Ja         |
 |Internetnachrichten-ID        |                                                 |                         | Ja         |
 |Ist repräsentativ          | Ja (markAsRepresentative)                      |                         | Ja         |
 |Elementklasse                 |                                                 |                         | Ja         |
-|Lade-ID                    | Ja (Lade-Nr.)                                    |                         | Ja         |
-|Standortname              |                                                 |                         | Ja         |
-|Markiert als Pivot            | Ja (markAsPivot)                               |   Ja (als Pivot gekennzeichnet) | Ja         |
-|Nachrichtentyp               | Ja (messageKind)                               |                         | Ja         |
+|Laden-ID                    | Ja (Lade-Nr)                                    |                         | Ja         |
+|Speicherort Name              |                                                 |                         | Ja         |
+|Als Pivot markiert            | Ja (markAsPivot)                               |   Ja (als Pivot gekennzeichnet) | Ja         |
+|Nachrichten Art               | Ja (messageKind)                               |                         | Ja         |
 |Systemeigene Erweiterung           |                                                 |                         | Ja         |
-|Systemeigener Dateiname           |                                                 |    Ja (Dateiname)      | Ja         |
+|Name der systemeigenen Datei           |                                                 |    Ja (filename)      | Ja         |
 |Natives MD5                 |                                                 |                         | Ja         |
 |Native SHA 256             |                                                 |                         | Ja         |
 |Systemeigene Größe                | Ja (Größe)                                      |   Ja (NativeSize)     | Ja         |
-|Systemeigener Typ                | Ja (fileType)                                  |   Ja (Dateityp)       | Ja         |
-|ND ET Sort exkl. Attach     |                                                 |                         | Ja         |
-|ND ET Sort incl. Attach     |                                                 |                         | Ja         |
-|ND-Satz                     |                                                 |                         | Ja         |
-|O365 Autoren               | Ja (Autor) *                                   |   Ja (Absender/Autor)   | Ja         |
+|Systemeigener Typ                | Ja (filetype)                                  |   Yes (Dateityp)       | Ja         |
+|ND et Sort exkl Attach     |                                                 |                         | Ja         |
+|ND et Sort incl anfügen     |                                                 |                         | Ja         |
+|ND-Gruppe                     |                                                 |                         | Ja         |
+|O365-Autoren               | Ja (Autor) *                                   |   Ja (Absender/Autor)   | Ja         |
 |O365 erstellt von            |                                                 |                         | Ja         |
 |O365-Erstellungsdatum          | Ja (erstellt) *                              |                         | Ja         |
-|O365 Datum geändert         | Ja (lastModifiedDate) *                         |   Ja (Datum der letzten Änderung) | Ja      |
+|O365-Datum geändert         | Ja (lastModifiedDate) *                         |   Ja (Datum der letzten Änderung) | Ja      |
 |O365 geändert von           |                                                 |                         | Ja         |
 |Übergeordneter Knoten                |                                                 |                         | Ja         |
-|Pivot-ID                   | Ja (pivotable)                                   |  Ja (Pivotable)          | Ja         |
+|Pivot-ID                   | Ja (Pivot-Nr)                                   |  Ja (Pivot-Nr)          | Ja         |
 |Empfängeranzahl            |                                                 |                         | Ja         |
 |Zeilennummer                 |                                                 |                         | Ja         |
 |ID festlegen                     |                                                 |                         | Ja         |
-|Zuerst Order inclusive festlegen |                                                 |                         | Ja         |
-|Ähnlichkeit prozentual         |                                                 |                         | Ja         |
-|Design Liste                | Ja (designlist)                                | Ja (Design Liste)       | Ja         |
-|Word count                 | Ja (wordCount)                                 |                         | Ja         |
-|Relevanz (Problem)    | Ja (relevanceScore_issueNum)                   |                         |             |
+|Erste Bestellung inklusive festlegen |                                                 |                         | Ja         |
+|Ähnlichkeits Prozent         |                                                 |                         | Ja         |
+|Themenliste                | Ja (themeslist)                                | Ja (Liste Designs)       | Ja         |
+|Word count                 | Ja (WordCount)                                 |                         | Ja         |
+|Relevanz Score (Issue)    | Ja (relevanceScore_issueNum)                   |                         |             |
 |Quantil lesen (Problem)    | Ja (readPercentile_issueNum)                   |                         |             |
-|Relevance-Tag (Problem)      | Ja (relevanceTag_issueNum)                     |                         |             |
+|Relevanz-Tag (Problem)      | Ja (relevanceTag_issueNum)                     |                         |             |
 |||||
 
-  \*Wenn in einem Dokument eingebettete Werte vorhanden sind, priorisiert die Suche diese Werte für diese Felder. Andernfalls wird versucht, den Wert aus Office 365 anzuzeigen.
+  \*Wenn in einem Dokument eingebettete Werte vorhanden sind, priorisiert die Suche für diese Felder diese Werte; Andernfalls wird versucht, den Wert aus Office 365 anzuzeigen.

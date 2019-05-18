@@ -1,10 +1,10 @@
 ---
-title: Einrichten der Rechtsanwalt-Client-Berechtigungs Erkennung in Advanced eDiscovery
+title: Einrichten der Erkennung von Anwalts Mandanten-Berechtigungen in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,68 +15,68 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835065"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155187"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>Einrichten der Anwalts-Client-Berechtigungs Erkennung (Preview) in Advanced eDiscovery
 
-Ein wichtiger und kostspieliger Aspekt bei der Überprüfung eines beliebigen Ermittlungsprozesses ist die Überprüfung für privilegierte Inhalte. Advanced eDiscovery bietet eine AI-basierte Erkennung von privilegierten Inhalten in Ihrem Fall, damit Sie diesen Prozess effizienter gestalten können. Da sich diese Funktion derzeit in der Betaphase befindet, muss ein eDiscovery-Administrator sich für die Funktion für die Verwendung entscheiden.
+Ein wichtiger und kostspieliger Aspekt des Überprüfungs Bereichs eines beliebigen Ermittlungsprozesses ist die Überprüfung auf privilegierte Inhalte. Advanced eDiscovery bietet eine AI-basierte Erkennung von privilegierten Inhalten in Ihrem Fall, sodass Sie diesen Prozess effizienter gestalten können. Da sich dieses Feature derzeit in der Betaphase befindet, muss ein eDiscovery-Administrator das Feature für die Verwendung auswählen.
 
 ## <a name="how-does-it-work"></a>Wie funktioniert dies?
 
-Wenn die Funktion aktiviert ist und Sie einen Überprüfungs Satz in einem Fall analysieren, werden alle Dokumente über das Anwalts-Client-Berechtigungs Erkennungs Modell ausgeführt. Das Modell sieht zwei Dinge:
+Wenn das Feature aktiviert ist und Sie einen Überprüfungs Sätze in einem Fall analysieren, werden alle Dokumente über das Erkennungs Modell für das Anwalts Client-Recht ausgeführt. Das Modell sieht zwei Dinge:
 
-- Inhalt: das ml-Modell bestimmt die Wahrscheinlichkeit, dass der Inhalt des Dokuments legal ist.
+- Inhalt: das ml-Modell bestimmt die Wahrscheinlichkeit, dass der Inhalt des Dokuments legal in der Natur ist.
 
-- Teilnehmer: Wenn eine Liste mit vom Benutzer hochgeladenen Anwälten für den Mandanten vorhanden ist, vergleicht das Modell die Teilnehmer des Dokuments mit der Liste, um zu bestimmen, ob das Dokument mindestens einen Anwalts Teilnehmer hat.
-Das Modell gibt drei Werte für jedes Dokument aus, die alle in einem Übersichts Satz durchsuchbar sind:
+- Teilnehmer: Wenn es eine vom Benutzer hochgeladene anwaltsliste für den Mandanten gibt, vergleicht das Modell die Teilnehmer des Dokuments mit der Liste, um zu bestimmen, ob das Dokument mindestens einen Anwalts Teilnehmer hat.
+Das Modell gibt drei Werte für jedes Dokument aus, die alle innerhalb eines Überprüfungs Satzes durchsuchbar sind:
 
-- Inhaltsbewertung: die Wahrscheinlichkeit, dass das Dokument rechtsverbindlich ist (Ergebnis zwischen 0 und 1)
+- Inhaltsbewertung: die Wahrscheinlichkeit, dass das Dokument rechtsverbindlich ist (Bewertung zwischen 0 und 1)
 
 - Hat Anwalt: true, wenn einer der Teilnehmer in der hochgeladenen anwaltsliste gefunden wird, andernfalls false, oder wenn es keine anwaltsliste gibt.
 
--  Potenziell privileged: true, wenn die Inhaltsbewertung über dem Schwellenwert liegt oder ein Rechtsanwalts Teilnehmer ist, andernfalls false.
+-  Potenziell privilegiert: true, wenn das Inhalts Ergebnis über dem Schwellenwert liegt oder ein Rechtsanwalts Teilnehmer ist, andernfalls false.
 
-## <a name="opting-into-attorney-client-privilege-detection"></a>Opting-in-Client-Berechtigungs Erkennung
+## <a name="opting-into-attorney-client-privilege-detection"></a>Entscheidung für die Erkennung von Anwalts-Client-Berechtigungen
 
-### <a name="step-1-opt-into-attorney-client-privilege-detection-ediscovery-admin"></a>Schritt 1: Opt-in-Client-Berechtigungs Erkennung (eDiscovery-Administrator)
+### <a name="step-1-opt-into-attorney-client-privilege-detection-ediscovery-admin"></a>Schritt 1: Opt in Attorney-Client Privilege Detection (eDiscovery admin)
 
-Da die Erkennung von Anwalts-und Client Rechten eine Vorschaufunktion ist, muss der eDiscovery-Administrator sich anmelden, um die Funktion in ihren Fällen zur Verfügung zu stellen.
+Da die Erkennung von Anwalts Mandanten-Berechtigungen eine Vorschaufunktion ist, muss Ihr eDiscovery-Administrator sich dafür entscheiden, das Feature in ihren Fällen verfügbar zu machen.
 
-- Wechseln Sie zu "Konfigurieren von experimentellen Features" auf der Seite Advanced eDiscovery.
+- Wechseln Sie zu "Konfigurieren von experimentellen Features" von der erweiterten eDiscovery-Seite
 
-- Klicken Sie auf "Attorney-Client-Berechtigungs Erkennung verwalten".
+- Klicken Sie auf "Verwalten der Anwalts-Client-Berechtigungs Erkennung".
 
 - Klicken Sie auf die Umschaltfläche, um das Feature zu aktivieren.
 
 ### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Schritt 2: Hochladen einer Liste von Anwälten (optional)
 
-Zur vollständigen Nutzung der Rechtsanwalts-Client-Berechtigungs Erkennung empfehlen wir die Bereitstellung einer Liste von e-Mail-Adressen Juristen oder juristische Personen, die für das Unternehmen tätig sind. Bei der Liste muss es sich um eine Kopfzeilen lose CSV-Datei mit einer e-Mail-Adresse pro Zeile handeln.
+Um die Erkennung von Anwalts-Client-Berechtigungen in vollem Umfang nutzen zu können, wird empfohlen, eine Liste von e-Mail-Adressen für Anwälte oder juristische Personen, die für das Unternehmen arbeiten, bereitzustellen. Die Liste sollte eine Kopfzeilen lose CSV-Datei mit einer e-Mail-Adresse pro Zeile sein.
 
-## <a name="leveraging-attorney-client-privilege-detection"></a>Nutzen der Anwalts-Client-Berechtigungs Erkennung 
+## <a name="leveraging-attorney-client-privilege-detection"></a>Nutzung der Erkennung von Anwalts-Client-Berechtigungen 
 
-### <a name="step-1-analyze-a-review-set"></a>Schritt 1: Analysieren eines Übersichts Satzes
+### <a name="step-1-analyze-a-review-set"></a>Schritt 1: Analysieren eines Überprüfungs Satzes
 
-Wenn Sie Ihren Überprüfungs Satz analysieren, wird auch die Erkennung von Anwalts-und Client Rechten ausgeführt. Weitere Informationen zum Analysieren von Daten im Übersichts Satz finden Sie unter [analyze Data in a Review Set in Advanced eDiscovery](analyzing-data-in-review-set.md).
+Wenn Sie den Überprüfungs analysieren, wird auch die Erkennung von Anwalts-und Client Rechten ausgeführt. Weitere Informationen zum Analysieren von Daten in der Überprüfungsgruppe finden Sie unter [Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery](analyzing-data-in-review-set.md).
 
-### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Schritt 2: Erstellen einer smarttaggruppe mit Attorney-Client-Berechtigungs Erkennungs Modell
+### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Schritt 2: Erstellen einer smarttaggruppe mit dem Anwalt-Client-Berechtigungs Erkennungs Modell
 
-Eine der Hauptmethoden zum Nutzen der Ergebnisse der Erkennung von Anwalts-Client-Berechtigungen in Ihrem Überprüfungsprozess ist die Verwendung einer smarttaggruppe. Smarttaggruppen nehmen die Ergebnisse eines ml-Modells und zeigen die Ergebnisse des Modells Inline neben den Tags an, sodass Sie die Ergebnisse des Modells gegebenenfalls problemlos nutzen können, und verwenden Sie die Tags im Übersichts Prozess wie alle anderen Tags in Ihrem Tag-Panel.
+Eine der wichtigsten Methoden, um die Ergebnisse der Anwalts-Client-Berechtigungs Erkennung in Ihrem Überprüfungsprozess zu nutzen, ist die Verwendung einer smarttaggruppe. Smarttaggruppen nehmen die Ergebnisse eines ml-Modells an und zeigen die Ergebnisse des Modells Inline neben den Tags an, sodass Sie die Ergebnisse des Modells auf einfache Weise nutzen können, und verwenden Sie die Tags in Ihrem Überprüfungsprozess wie andere Tags in Ihrem taggingbereich. Weitere Informationen finden Sie unter [Einrichten von Smarttags für ml-Assisted Review in Advanced eDiscovery](smart-tags.md) .
 
-- Klicken Sie unter "Tags verwalten" auf "Smarttagbereich hinzufügen".
+- Klicken Sie in "Tags verwalten" auf "Smarttag-Abschnitt hinzufügen".
 
-- Wählen Sie "Attorney-Client-Berechtigungs Erkennung" aus. Sie werden feststellen, dass eine Transpondergruppe und zwei Tags, die den möglichen Ergebnissen des Modells entsprechen, erstellt wurden.
+- Wählen Sie "Anwalts Kunde-Berechtigungs Erkennung" aus. Sie werden sehen, dass eine Tag-Gruppe und zwei Tags entsprechend den möglichen Ergebnissen des Modells erstellt wurden.
 
-- Benennen Sie die Transpondergruppe und die Tags so um, wie Sie für Ihre Überprüfungen geeignet sind.
+- Benennen Sie die Tag-Gruppe und die-Tags so um, dass Sie für Ihre Überprüfung geeignet sind.
 
-### <a name="step-3-use-the-smart-tag-group-for-privilege-review"></a>Schritt 3: Verwenden der smarttaggruppe für die Überprüfungen von Berechtigungen
+### <a name="step-3-use-the-smart-tag-group-for-privilege-review"></a>Schritt 3: Verwenden Sie die Smarttag-Gruppe für die Überprüfung von Berechtigungen
 
-Wenn Sie ein Dokument überprüfen, wenn das Modell bestimmt hat, dass das Dokument potenziell privilegiert ist, wird das entsprechende Smarttag das ergebnisoffen legen:
+Wenn Sie ein Dokument überprüfen, wenn das Modell festgestellt hat, dass das Dokument möglicherweise privilegiert ist, wird das entsprechende Smarttag das Ergebnis verfügbar machen:
 
-- Wenn das Dokumentinhalte enthält, die möglicherweise rechtlich zulässig sind, wird neben dem entsprechenden Smarttag eine Bezeichnung für rechtliche Inhalte angezeigt.
+- Wenn das Dokumentinhalte enthält, die möglicherweise legal sind, wird neben dem entsprechenden Smarttag eine Bezeichnung "legaler Inhalt" angezeigt.
 
-- Wenn das Dokument einen Teilnehmer hat, der in der Liste der hochgeladenen Anwälte gefunden wird, wird neben dem entsprechenden Smarttag eine "Anwalts Bezeichnung" angezeigt.
+- Wenn das Dokument über einen Teilnehmer verfügt, der in der Liste der hochgeladenen Rechtsanwälte gefunden wird, wird neben dem entsprechenden Smarttag eine "Anwalts Bezeichnung" angezeigt.

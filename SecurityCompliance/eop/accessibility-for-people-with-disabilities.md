@@ -4,19 +4,19 @@ ms.author: scotv
 author: scotvidican
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für jeden möglichst einfach zu gestalten.
-ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8cf86f2ce4aa176baa0a151edea93a247a2113c7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257043"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154707"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Barrierefreiheit für Personen mit Einschränkungen
 
@@ -28,7 +28,7 @@ Die folgenden Funktionen erleichtern Personen mit Behinderungen den Zugriff auf 
     
 - [Tastenkombinationen in Outlook im Web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-Auch einige der Barrierefreiheitsfunktionen und -dienstprogramme von Windows können für Exchange-Benutzer mit Behinderungen hilfreich sein. Für mehr Barrierefreiheit bei der Arbeit mit der Exchange-Verwaltungsshell stehen Ihnen außerdem Optionen zur Größen- und Farbanpassung in Windows PowerShell zur Verfügung. Weitere Informationen zu den verfügbaren Windows PowerShell-Optionen finden Sie unter [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+Auch einige der Barrierefreiheitsfunktionen und -dienstprogramme von Windows können für Exchange-Benutzer mit Behinderungen hilfreich sein. Für mehr Barrierefreiheit bei der Arbeit mit der Exchange-Verwaltungsshell stehen Ihnen außerdem Optionen zur Größen- und Farbanpassung in Windows PowerShell zur Verfügung. Weitere Informationen zu Windows PowerShell Optionen für Barrierefreiheit finden Sie unter [Barrierefreiheit in Windows PowerShell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Barrierefreiheitsfunktionen von Exchange Help
 

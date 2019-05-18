@@ -3,7 +3,7 @@ title: Definieren von Groß-/Kleinschreibung und Mandanten Einstellungen in Offi
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,13 +11,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: 'Erfahren Sie mehr über die Einstellungen für Bezeichnungen, Cross-Module und Mandanten, die Sie auf der Fallebene in Office 365 Advanced eDiscovery definieren können.  '
-ms.openlocfilehash: 2e95984651bf4da86bd64cfc3730fae75391410d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Erfahren Sie mehr über die Einstellungen für Bezeichnungen, modulübergreifend und Mandanten, die Sie auf der Fallebene in Office 365 Advanced eDiscovery definieren können.  '
+ms.openlocfilehash: 69e6e824a7c6a5698e9dc25095d4fab49e369490
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256913"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150597"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Definieren von Groß-/Kleinschreibung und Mandanten Einstellungen in Office 365 Advanced eDiscovery
 
@@ -26,28 +26,28 @@ ms.locfileid: "32256913"
   
 Die erweiterten eDiscovery-Fall-und Mandanten Einstellungen werden in diesem Thema beschrieben.
   
-## <a name="case-settings"></a>Fall Einstellungen
+## <a name="case-settings"></a>Case-Einstellungen
 
-In diesem Abschnitt werden die Einstellungen beschrieben, die auf der Fallebene definiert werden können.
+In diesem Abschnitt werden die Einstellungen beschrieben, die auf der Ebene der Fallebene definiert werden können.
   
 > [!NOTE]
 > Wenn in Advanced eDiscovery derzeit kein Fall ausgewählt ist, ist die Registerkarte **Fall Einstellungen** inaktiv. 
   
-### <a name="cross-module"></a>Kreuz Modul
+### <a name="cross-module"></a>Modulübergreifend
 
-Die folgenden Cross-Module-Einstellungen sind Fall Optionen, die für erweiterte eDiscovery-Module gelten.
+Die folgenden modulübergreifenden Einstellungen sind Fall Optionen, die für erweiterte eDiscovery-Module gelten.
   
-- Standardseite nach Anmeldung: legt die Standardseite fest, die beim Starten von Advanced eDiscovery angezeigt werden soll.
+- Standardseite nach Anmeldung: legt die Standardseite fest, die beim Starten von Advanced eDiscovery angezeigt wird.
     
-- Dateianzeige Name: Dateibezeichner, der in der erweiterten eDiscovery angezeigt wird, um die Datei zu identifizieren, als Alternative zum erweiterten eDiscovery-Anzeigenamen für Datei Titel/Pfad oder e-Mail-Betreff.
+- Dateianzeige Name: Datei-ID, die in Advanced eDiscovery angezeigt wird, um die Datei als Alternative zum erweiterten eDiscovery-Anzeigenamen des Datei Titels/Pfads oder des e-Mail-betreffs zu identifizieren.
     
-1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. Öffnen Sie die Registerkarte \> **Cross-Modul** **Einstellungen und \> Utilities Case-Einstellungen** . 
+1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. Registerkarte " **Einstellungen \> und Hilfsprogramme für Fall Einstellungen** " \> **modulübergreifend**öffnen. 
     
-2. Wählen Sie nach Anmeldeoptionen von der **Standardseite** aus: 
+2. Wählen Sie auf der **Standardseite nach Anmelde** Optionen aus: 
     
   - **Letzte Seite der vorherigen Anmeldung**
     
-  - **Seite "Anfragen"**
+  - **Seite "cases"**
     
 3. Klicken Sie auf **Speichern**.
     
@@ -57,37 +57,37 @@ Die erweiterten eDiscovery-Mandanten Einstellungen werden in diesem Abschnitt be
   
 ### <a name="user-administration"></a>Benutzerverwaltung
 
-Die Optionen für die Benutzerverwaltung werden unter [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md)beschrieben.
+Die Benutzer Verwaltungsoptionen werden unter [Einrichten von Benutzern und Fällen](set-up-users-and-cases-in-advanced-ediscovery.md)beschrieben.
   
 ### <a name="event-log"></a>Ereignisprotokoll
 
-Im Ereignisprotokoll werden Metadaten zur erweiterten eDiscovery-Verarbeitung jederzeit während des erweiterten eDiscovery-Vorgangs bereitgestellt. Sie enthält beispielsweise die Startzeit der wichtigsten erweiterten eDiscovery-Prozesse (Import, Analyse, Relevanz und Export) sowie Endzeit und Status. Dieses Protokoll kann zum Nachverfolgen und zur Problembehandlung von Datenverarbeitungsaktivitäten sowie zum Beheben von Fehlern und Warnungen verwendet werden.
+Das Ereignisprotokoll enthält Metadaten zur erweiterten eDiscovery-Verarbeitung jederzeit während des erweiterten eDiscovery-Vorgangs. Sie enthält beispielsweise die Startzeit der wichtigsten erweiterten eDiscovery-Prozesse (importieren, analysieren, Relevanz und Export) sowie die Endzeit und den Status. Dieses Protokoll kann zur Nachverfolgung und Problembehandlung von Datenverarbeitungsaktivitäten sowie zum Beheben von Fehlern und Warnungen verwendet werden.
   
 1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramm \> Mandanten Einstellungen** die Option **Ereignisprotokoll**aus. Die Ereignisprotokolldaten werden angezeigt.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> für Mandanten Einstellungen** die Option **Ereignisprotokoll**aus. Die Ereignisprotokolldaten werden angezeigt.
     
-  - Wenn Sie die Protokollausgabe durch einen Fall filtern möchten, wählen Sie in **** der Liste Cases den Fall aus. 
+  - Wenn Sie die Protokollausgabe nach einem Fall filtern möchten, wählen Sie in der Liste **Fälle** den Fall aus. 
     
-  - Klicken Sie auf eine Spaltenüberschrift, um das Protokoll nach Spalten zu sortieren. 
+  - Wenn Sie das Protokoll nach Spalten sortieren möchten, klicken Sie auf eine Spaltenüberschrift. 
     
-  - Um die Spaltenreihenfolge zu ändern, klicken Sie auf, und ziehen Sie die Spaltenüberschrift.
+  - Klicken Sie zum Ändern der Spaltenreihenfolge auf die Spaltenüberschrift, und ziehen Sie Sie.
     
-  - Klicken Sie **\>** auf und **\<** , um zwischen den Protokollseiten zu wechseln. 
+  - Klicken Sie zum Navigieren zwischen Protokollseiten **\>** auf **\<** und Symbole. 
     
 ### <a name="system-information"></a>System Informationen
 
-Erweiterte eDiscovery-Version-Systeminformationen und aktive Aufgaben werden auf der Registerkarte Mandanten Einstellungen angezeigt.
+Erweiterte eDiscovery-Versions Systeminformationen und aktive Aufgaben werden auf der Registerkarte Mandanten Einstellungen angezeigt.
   
 1. Öffnen Sie **Einstellungen und Dienstprogramme** , indem Sie auf das **Zahnrad** Symbol klicken. 
     
-2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramm \> Mandanten Einstellungen** **System Informationen**aus. Die Versionsinformationen werden angezeigt.
+2. Wählen Sie auf der Registerkarte **Einstellungen und Dienstprogramme \> für Mandanten Einstellungen** die Option **System Informationen**aus. Die Versionsinformationen werden angezeigt.
     
-Die Anzeige kann durch Klicken auf das Symbol **Aktualisieren** unter den Mandanteninformationen aktualisiert werden. 
+Die Anzeige kann aktualisiert werden, indem Sie auf das **Aktualisierungs** Symbol unter den Mandanteninformationen klicken. 
   
 ## <a name="see-also"></a>Siehe auch
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Verwenden von Hilfsprogrammen](use-advanced-ediscovery-utilities.md)
+[Verwenden von Dienstprogrammen](use-advanced-ediscovery-utilities.md)
 

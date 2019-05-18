@@ -3,7 +3,7 @@ title: Definieren von Problemen und Zuweisen von Benutzern in Office 365 Advance
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,58 +12,58 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Hier erfahren Sie, wie Sie ein Problem hinzufügen oder bearbeiten, indem Sie ihm Benutzer zuweisen oder ein Problem für einen eDiscovery-Fall in Office 365 Advanced eDiscovery löschen.
-ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a7dad3cce54a3162cedf3c14e521f5e8fe966acf
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257743"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150687"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definieren von Problemen und Zuweisen von Benutzern in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In Advanced eDiscovery können ein oder mehrere Probleme in einem Fall definiert werden. Das Definieren von Problemen ermöglicht die weitere Kategorisierung von Themen. Beim Herstellen einer Verbindung mit einem neuen Fall wird ein einzelnes Standardproblem bereitgestellt. Sie können den Standardproblem Namen bearbeiten und dem Problem Benutzer zuweisen. 
+In Advanced eDiscovery können ein oder mehrere Probleme in einem Fall definiert werden. Das Definieren von Problemen ermöglicht eine weitere Kategorisierung von Themen. Beim Herstellen einer Verbindung mit einem neuen Fall wird ein einzelnes Standardproblem angegeben. Sie können den Standardnamen des Problems bearbeiten und dem Problem Benutzer zuweisen. 
   
 ## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Hinzufügen oder Bearbeiten eines Problems und Zuweisen von Benutzern
 
-1. Wählen Sie auf der Registerkarte \> ** \> Relevanz Relevanz** die Option **Probleme**aus.
+1. Wählen Sie auf der Registerkarte \> **Relevanz \> Relevanz-Setup** die Option **Probleme**aus.
     
-    ![Probleme beim Einrichten der Relevanz](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
+    ![Probleme beim Einrichten von Relevanz](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
-2. Um ein Problem hinzuzufügen, klicken Sie auf das Symbol * * + * *. Das Dialogfeld **Problem hinzufügen** wird angezeigt. 
+2. Wenn Sie ein Problem hinzufügen möchten, klicken Sie auf das Symbol * * + * *. Das Dialogfeld **Problem hinzufügen** wird angezeigt. 
     
-    ![Relevanz-Setup-Problem](media/c8e94982-139a-472a-b85d-282f2d742046.png)
+    ![Problem beim Hinzufügen des Relevanz-Setups](media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
-    Klicken Sie auf das **Bearbeitungs** Symbol, um ein Problem zu bearbeiten. 
+    Um ein Problem zu bearbeiten, klicken Sie auf das Symbol **Bearbeiten** . 
     
-3. Geben Sie unter **Problem Name**einen beschreibenden und aussagekräftigen Namen ein. 
+3. Geben Sie unter **Problem Name**einen Namen ein, der für den Fall aussagekräftig und bedeutsam ist. 
     
-4. Geben Sie im Feld **Beschreibung**Informationen zu dem Problem ein.
+4. Geben Sie unter **Beschreibung**Informationen zum Problem ein.
     
-5. Aktivieren Sie das Kontrollkästchen **gleichzeitiges Training aktivieren** , um die Option zu verwenden. Mit dieser Einstellung können mehrere Prüfer gleichzeitig an demselben Problem arbeiten (in getrennten Beispielen). 
+5. Aktivieren Sie das Kontrollkästchen **gleichzeitiges Training aktivieren** , um die Option zu aktivieren. Diese Einstellung ermöglicht es mehreren Prüfern, gleichzeitig an dem gleichen Problem zu arbeiten (in separaten Beispielen). 
     
-6. Wählen Sie unter **Benutzer zu Problem zuweisen**in der Liste **alle Benutzer** einen Benutzer aus, der dem Problem zugewiesen werden soll, und klicken Sie dann auf den Pfeil nach rechts, um den Benutzer der Liste **ausgewählte Benutzer** hinzuzufügen. Wiederholen Sie die Schritte. Im oben gezeigten Fenster wird "admin" als ausgewählter Benutzer angezeigt. 
+6. Wählen Sie unter **Zuweisen von Benutzern zu Problem**in der Liste **alle Benutzer** einen Benutzer aus, der dem Problem zugewiesen werden soll, und klicken Sie dann auf den Pfeil nach rechts, um den Benutzer der Liste **ausgewählte Benutzer** hinzuzufügen. Wiederholen Sie nach Bedarf. Im oben gezeigten Fenster wird "admin" als ausgewählter Benutzer angezeigt. 
     
     > [!NOTE]
-    > Die Benutzerzuweisung zu Problemen kann vor oder nach einem Relevanz-Schulungszyklus geändert werden. 
+    > Die Benutzerzuweisung zu Problemen kann vor oder nach einem Schulungszyklus für die Relevanz geändert werden. 
   
-7. Wählen Sie unter **ausgewählte Benutzer**in der Dropdownliste neben dem Namen des ausgewählten Benutzers einen der folgenden Sampling-Modi aus: 
+7. Wählen Sie in **ausgewählte Benutzer**in der Dropdownliste neben dem Namen des ausgewählten Benutzers einen der folgenden Stichproben Modi aus: 
     
-  - **Ein**: die Dateien können angezeigt und markiert werden. Dies ist die Standardeinstellung.
+  - **On**: die Dateien können angezeigt und markiert werden. Dies ist die Standardeinstellung.
     
-  - **Leerlauf**: die Dateien können angezeigt werden; Tagged ist optional.
+  - **Idle**: die Dateien können angezeigt werden; Tagged ist optional.
     
-  - **Aus**: die Dateien können nicht angezeigt oder markiert werden.
+  - **Off**: die Dateien können nicht angezeigt oder markiert werden.
     
-8. Nachdem Sie Probleme hinzugefügt haben, klicken Sie auf **OK**.
+8. Wenn Sie das Hinzufügen von Problemen getan haben, klicken Sie auf **OK**.
     
 ## <a name="deleting-issues"></a>Löschen von Problemen
 
-Probleme können gelöscht werden (d.h. aus der Datenbank entfernt) werden, nur unmittelbar nachdem Sie definiert wurden und keine tatsächliche Arbeit für dieses Problem durchgeführt wurde. 
+Probleme werden möglicherweise nur unmittelbar nach ihrer Definition gelöscht (das heißt aus der Datenbank entfernt), und für dieses Problem wurden keine tatsächlichen Arbeiten ausgeführt. 
   
-1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz Setup** die Option **Probleme**aus.
+1. Wählen Sie auf der Registerkarte **Relevanz \> Relevanz-Setup** die Option **Probleme**aus.
     
 2. Wählen Sie das zu löschende Problem aus der Datenbank aus, und klicken Sie dann auf **Löschen**.
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,33 +14,33 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c2957c88217bce4c9a34f8d3f9a9e291f1223cc9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78865efc5c10ebcff9742f922f675b637bb9b2b0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241242"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151487"
 ---
 # <a name="use-the-communications-editor"></a>Verwenden des Kommunikations-Editors
 
-Wenn Sie den Inhalt Ihres Portalinhalts, rechtliche Aufbewahrungs Benachrichtigungen und zugehörige Erinnerungen/Eskalationen definieren, können Sie den Kommunikations-Editor nutzen, um Ihre Inhalte zu formatieren und dynamisch anzupassen.
+Wenn Sie den Inhalt Ihrer Portalinhalte, Benachrichtigungen über rechtliche Aufbewahrungszeit und zugehörige Erinnerungen/Eskalationen definieren, können Sie den Kommunikations-Editor nutzen, um Ihre Inhalte zu formatieren und dynamisch anzupassen.
 
 ## <a name="rich-text-editor"></a>Rich-Text-Editor 
 
-Der Kommunikations-Editor ermöglicht es dem Benutzer, den Text mithilfe der Editor-Optionen anzupassen. Benutzer können beispielsweise Schriftarten ändern, Aufzählungslisten erstellen, Inhalte hervorheben und vieles mehr. 
+Mit dem Kommunikations-Editor können Benutzer den Text mithilfe der Editor-Optionen anpassen. Beispielsweise können Benutzer Schriftarttypen ändern, Aufzählungslisten erstellen, Inhalte hervorheben und vieles mehr. 
 
-## <a name="merge-field-variables"></a>Feld Variablen zusammenführen
+## <a name="merge-field-variables"></a>Zusammenführen von Feld Variablen
 
-Sie können die e-Mail-Zusammenführungs Variablen aus dem Kommunikations-Editor nutzen, um angepasste Depot Attribute in den Textkörper einer Kommunikation einzubetten. Bei der Übermittlung an die Depotbank wird das Seriendruckfeld mit dem entsprechenden Feld aufgefüllt. Wenn Sie beispielsweise an Depotbank John Smith gesendet haben, würde das Seriendruckfeld [Depot Name] mit dem entsprechenden Namen übersetzt. 
+Sie können e-Mail-Zusammenführungs Variablen aus dem Kommunikations-Editor nutzen, um angepasste Depot Attribute in den Textkörper einer Kommunikation einzubetten. Beim Senden an die Depotbank wird das Seriendruckfeld mit dem entsprechenden Feld aufgefüllt. Wenn beispielsweise an den Depotbank John Smith gesendet wird, würde das Seriendruckfeld [Depot Name] mit dem entsprechenden Namen übersetzt werden. 
 
-Sie können e-Mail-Seriendruckfelder verwenden, indem Sie die Symbole für das **Seriendruckfeld** oben im Rich-Text-Editor-Steuerelement auswählen. Der Platzhalter wird basierend auf dem Speicherort des Cursors der Benutzer hinzugefügt. 
+Sie können Seriendruckfelder verwenden, indem Sie die **Seriendruckfeld** Symbole oben im Rich-Text-Editor-Steuerelement auswählen. Der Platzhalter wird basierend auf dem Speicherort des Cursors der Benutzer hinzugefügt. 
 
 ### <a name="list-of-merge-field-variables"></a>Liste der Seriendruckfeld Variablen
 
 | Feldname                  | Feld Details | 
 | :------------------- | :------------------- |
-| Anzeigename  | Der vor-und Nachname der Depotbank. | 
-| Bestätigungs Link | Ein benutzerdefinierter Link zum Aufzeichnen der Bestätigung der einzelnen depotverwalter.|                 |
-| Portal Link     | Ein angepasster Link für das Compliance-Portal des Depotbank.|                |
-| AusStellende Offizier                   | Die e-Mail-Adresse des angegebenen ausstellenden Offiziers.|                   |
-| AusStellendes Datum                   | Das Datum, an dem der Hinweis ausgegeben wurde (UTC).              |
+| Anzeigename  | Der vor-und Nachname des Depotbank. | 
+| Bestätigungs Link | Ein benutzerdefinierter Link zum Aufzeichnen der Bestätigung jedes Verwalters.|                 |
+| Portal Link     | Ein benutzerdefinierter Link für das Compliance-Portal des Depotbank.|                |
+| Ausstellenden Offizier                   | Die e-Mail-Adresse des angegebenen ausstellenden Offiziers.|                   |
+| Ausstellendes Datum                   | Das Datum, an dem der Hinweis ausgegeben wurde (UTC).              |

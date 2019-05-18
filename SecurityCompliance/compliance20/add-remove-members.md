@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,27 +14,27 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aaec95ec4bb8e55d1ed1c7d9552ee7215ba5ec14
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: db473aa4cf6e48a52693ebec85c5dde5a28ac482
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242888"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151917"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Hinzufügen oder Entfernen von Mitgliedern aus einem Fall
 
-Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf den Fall zugreifen kann. Beachten Sie, dass Benutzer, die den Rollengruppen Prüfer oder eDiscovery-Manager hinzugefügt werden, als Mitglieder des Falls hinzugefügt werden können. Beachten Sie, dass der eDiscovery-Manager, der den Fall erstellt hat, automatisch als Mitglied hinzugefügt wird.
+Sie können Mitglieder hinzufügen oder entfernen, um zu verwalten, wer auf die Anfrage zugreifen kann. Beachten Sie, dass Benutzer, die den Rollengruppen Prüfer oder eDiscovery-Manager hinzugefügt werden, als Mitglieder der Anfrage hinzugefügt werden können. Beachten Sie, dass der eDiscovery-Manager, der den Fall erstellt hat, automatisch als Mitglied hinzugefügt wird.
 
-1. Wechseln Sie auf der Seite **Advanced eDiscovery (Preview)** zu Ihrem Fall.
+1. Wechseln Sie auf der Seite **Erweiterte eDiscovery** zu Ihrem Fall.
 
-2. Wechseln Sie zu **Einstellungen** , und wählen Sie "Zugriff & Berechtigungen" aus.
+2. Wechseln Sie zu **Einstellungen** , und wählen Sie "Zugriffsberechtigungen für &" aus.
  
 3. Klicken Sie auf **Aktualisieren**.
  
-4. Klicken Sie unter **Mitglieder verwalten**auf Symbol hinzufügen, um der Anfrage Mitglieder hinzuzufügen. Sie können der Groß-/Kleinschreibung auch eine Rollengruppe hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf Symbol hinzufügen. 
-    Beachten Sie, dass Rollengruppen die Berechtigung für den Zugriff auf die Groß-/Kleinschreibung steuern. Sie können also nur Prüfer, eDiscovery-Manager oder benutzerdefinierte Rollengruppen mit Fall Verwaltungsrolle zuweisen.
+4. Klicken Sie unter **Mitglieder verwalten**auf Symbol hinzufügen, um der Anfrage Mitglieder hinzuzufügen. Sie können auch eine Rollengruppe zur Anfrage hinzufügen. Klicken Sie unter **Rollengruppen verwalten**auf Symbol hinzufügen. 
+    Beachten Sie, dass Rollengruppen die Berechtigung für den Zugriff auf die Anfrage steuern. Das bedeutet, dass Sie nur Prüfer, eDiscovery-Manager oder benutzerdefinierte Rollengruppen mit Fall Verwaltungsrolle zuweisen können.
  
-5. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder des Falls hinzugefügt werden können, auf das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
+5. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder der Anfrage hinzugefügt werden können, auf das Kontrollkästchen neben den Namen der Personen oder Rollengruppen, die Sie hinzufügen möchten.
 
 6. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder der Gruppe hinzugefügt werden sollen, klicken Sie auf **Hinzufügen**.
 

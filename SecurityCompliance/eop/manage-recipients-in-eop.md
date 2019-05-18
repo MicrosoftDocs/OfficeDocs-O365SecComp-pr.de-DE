@@ -4,26 +4,26 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben in der Exchange-Verwaltungskonsole (EAC) oder mithilfe der Remote-Windows PowerShell ausführen und andere Verwaltungsaufgaben im Microsoft 365 Admin Center überprüfen.
-ms.openlocfilehash: 1d9436cf02538ab5c69e0e68d20eda1af5b0a5cd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben im Exchange Admin Center (EAC) oder mithilfe von Remote Windows PowerShell durchführen und andere Verwaltungsaufgaben im Microsoft 365 Admin Center überprüfen.
+ms.openlocfilehash: a08dc15588d75399d0f042e70eb205de6ab54350
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256613"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150087"
 ---
 # <a name="manage-recipients-in-eop"></a>Verwalten von Empfängern in EOP
 
-Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben in der Exchange-Verwaltungskonsole (EAC) oder mithilfe der Remote-Windows PowerShell ausführen und andere Verwaltungsaufgaben im Microsoft 365 Admin Center überprüfen.
+Microsoft Exchange Online Protection (EOP) bietet mehrere Möglichkeiten zur Verwaltung Ihrer E-Mail-Empfänger. Als Administrator können Sie bestimmte Verwaltungsaufgaben im Exchange Admin Center (EAC) oder mithilfe von Remote Windows PowerShell durchführen und andere Verwaltungsaufgaben im Microsoft 365 Admin Center überprüfen.
   
 EOP unterstützt die folgenden Typen von Empfängern:
   
-- **E-Mail-Benutzer** E-Mail-Benutzer sind Empfänger in ihren EOP verwalteten Domänen. Diese Empfänger haben Anmeldeinformationen in Ihrer Office 365-Organisation, haben aber externe e-Mail-Adressen, d. h., ihre Empfängerpostfächer befinden sich außerhalb ihrer Cloud-Organisation. Sie können e-Mail-Benutzer hinzufügen, damit Sie e-Mails empfangen können, und Sie können auch Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) für bestimmte Benutzer erstellen. Sie können e-Mail-Benutzern in Ihrer Organisation auch Rollen zuweisen. Benutzer mit Berechtigungen der Verwaltungsrollengruppe können auf das Exchange Admin Center (EAC) zugreifen und bestimmte Verwaltungsaufgaben ausführen. Weitere Informationen zu Benutzerrollen und zum Zuweisen von Benutzerrollen in EOP finden Sie unter [Manage Administrator Role Group Permissions in EoP](manage-admin-role-group-permissions-in-eop.md).
+- **E-Mail-Benutzer** E-Mail-Benutzer sind Empfänger in ihren verwalteten EoP-Domänen. Diese Empfänger verfügen über Anmeldeinformationen in Ihrer Office 365 Organisation, haben jedoch externe e-Mail-Adressen, was bedeutet, dass sich Ihre Empfängerpostfächer außerhalb ihrer Cloud-Organisation befinden. Sie können e-Mail-Benutzer hinzufügen, damit Sie e-Mails empfangen können, und Sie können auch Nachrichtenfluss Regeln (auch bekannt als Transportregeln) für bestimmte Benutzer erstellen. Sie können auch e-Mail-Benutzern in Ihrer Organisation Rollen zuweisen; Benutzer mit Berechtigungen der Verwaltungsrollengruppe können auf das Exchange Admin Center (EAC) zugreifen und bestimmte Verwaltungsaufgaben ausführen. Weitere Informationen zu Benutzerrollen und zum Zuweisen von Benutzerrollen in EoP finden Sie unter [Manage Administrator Role Group Permissions in EoP](manage-admin-role-group-permissions-in-eop.md).
     
     Weitere Informationen zum Verwalten von E-Mail-Benutzer in EOP finden Sie unter [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).
     

@@ -1,10 +1,10 @@
 ---
-title: Übersicht über Daten Untersuchungen in Microsoft 365
+title: Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,57 +13,57 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In diesem Artikel wird das neue Tool für Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
-ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: In diesem Artikel wird das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
+ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257718"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150677"
 ---
-# <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen in Microsoft 365
+# <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
 
-Ein Datenüberlauf tritt auf, wenn ein Dokument mit vertraulichen, vertraulichen oder böswilligen Inhalten in einer nicht vertrauenswürdigen Umgebung veröffentlicht wird. Wenn ein Datenüberlauf erkannt wird, ist es wichtig, schnell die Umgebung zu enthalten, die Größe und die Speicherorte des Ausfalls zu ermitteln, die Benutzeraktivitäten zu untersuchen und dann die verschütteten Daten aus dem Dienst zu löschen. Mit dem neuen Tool für Daten Untersuchungen (Preview) können Sie nach vertraulichen, böswilligen oder verlegten Daten in Office 365 suchen, untersuchen, was passiert ist, und die entsprechenden Maßnahmen ergreifen, um das Verschütten zu beheben.  
+Ein Datenüberlauf tritt auf, wenn ein Dokument mit vertraulichen, vertraulichen oder böswilligen Inhalten in einer nicht vertrauenswürdigen Umgebung freigegeben wird. Wenn ein Datenüberlauf erkannt wird, ist es wichtig, die Umgebung schnell einzudämmen, die Größe und die Speicherorte des Verfalls zu bewerten, Benutzeraktivitäten um Sie herum zu untersuchen und dann die verschütteten Daten aus dem Dienst zu löschen. Mit dem Tool neue Daten Untersuchungen (Vorschau) können Sie nach vertraulichen, böswilligen oder verfallenen Daten in Office 365 suchen, die Ereignisse untersuchen und die entsprechenden Aktionen zum Beheben des Verfalls durchführen.  
 
-In diesem Artikel wird beschrieben, wie Sie mithilfe der Funktionen im Tool neue Daten Untersuchungen (Vorschau) ein Szenario für Daten verschütten behandeln.
+In diesem Artikel wird die Verwendung der Funktionen im Tool für die neue Daten Untersuchung (Preview) beschrieben, mit denen ein Szenario mit Datenüberlauf behandelt wird.
 
-## <a name="data-investigations-preview-workflow"></a>Daten unterSuchungen (Vorschau)-Workflow 
+## <a name="data-investigations-preview-workflow"></a>Workflow für Daten Untersuchungen (Vorschau) 
 
-In den folgenden Abschnitten werden die einzelnen Schritte im integrierten Workflow in Daten Untersuchungen (Preview) beschrieben. Der folgende Screenshot zeigt die Registerkarte " **Start** " einer Untersuchung mit dem Namen " *High Risk: Finance Documents Leak*". 
+In den folgenden Abschnitten werden die einzelnen Schritte des integrierten Workflows in Data Investigations (Preview) beschrieben. Der folgende Screenshot zeigt die Registerkarte **Startseite** einer Untersuchung mit dem Namen " *High Risk: Finance Documents Leak*". 
 
-![Workflow im Daten Ermittlungs Tool](../media/DataInvestigationsWorkflow.png)
+![Workflow im Data Investigations-Tool](../media/DataInvestigationsWorkflow.png)
 
-## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Suchen nach vertraulichen, böswilligen oder verlegten Daten
+## <a name="search-for-sensitive-malicious-or-misplaced-data"></a>Suchen nach vertraulichen, böswilligen oder verlegenen Daten
 
-Verwenden Sie die Registerkarte **Durchsuchen** , um Suchvorgänge zu erstellen, um die Office 365 für Daten zu suchen, die Sie korrigieren möchten. Sie können abfragebasierte suchen erstellen und ausführen, um eine festgelegte e-Mail-Nachricht und Dokumente zu identifizieren, die verschüttete Daten enthalten können, und diese dann als zu überprüfende und zu analysierende Beweise sammeln. Darüber hinaus können Sie das Such Tool verwenden, um eine Vorschau der Beispiel Dokumente und Suchstatistiken anzuzeigen, die Ihnen helfen, die Suchergebnisse zu verfeinern und zu verbessern. Wenn Sie festgestellt haben, dass die Suchergebnisse alle für die Untersuchung relevanten Daten enthalten, fügen Sie die Suchergebnisse dem nachweissatz hinzu, der zur weiteren Überprüfung, zur Folgenabschätzung und ggf. zur Durchführung von Korrekturmaßnahmen erforderlich ist. Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md).
+Verwenden Sie die Registerkarte **Suchen** , um Suchvorgänge zu erstellen, um nach der Office 365 für Daten zu suchen, die Sie korrigieren möchten. Sie können abfragebasierte Suchvorgänge erstellen und ausführen, um festgelegte e-Mail-Nachrichten und Dokumente zu identifizieren, die möglicherweise verschüttete Daten enthalten, und diese dann als Beweise zum Überprüfen und analysieren sammeln. Darüber hinaus können Sie das Such Tool verwenden, um eine Vorschau von Beispiel Dokumenten anzuzeigen und Suchstatistiken anzuzeigen, mit denen Sie die Suchergebnisse verfeinern und verbessern können. Nachdem Sie sichergestellt haben, dass die Suchergebnisse alle für die Untersuchung relevanten Daten enthalten, fügen Sie die Suchergebnisse dem festgelegten Beweis zur weiteren Überprüfung, zur Folgenabschätzung und gegebenenfalls zur Beachtung von Korrekturaktionen hinzu. Weitere Informationen finden Sie unter [Suchen nach Daten in einer Untersuchung](search-for-data.md).
 
 ## <a name="review-and-investigate-evidence"></a>Überprüfen und untersuchen von beweisen
 
-Verwenden Sie die Registerkarte **Evidence** , um die Daten zu untersuchen, die Sie im Live-Dienst gesammelt haben, in diesem fall Office 365. Die Daten im Evidence Set sind eine Momentaufnahme der Suchergebnisse, die Sie gesammelt haben. Wenn Sie Suchergebnisse als Nachweis hinzufügen, wird ein Prozess ausgelöst, um Dateien, Metadaten und Text zu extrahieren. Wenn dieser Prozess abgeschlossen ist, erstellt das Daten Ermittlungs Tool einen neuen Index aller Daten und fügt ihn einem Evidence-Satz hinzu. Für zeitkritische Untersuchungen können Sie dadurch schnell die Umgebung enthalten, indem Sie Daten löschen, die sich in den ursprünglichen Inhaltsspeicherorten (im Live-Dienst) befinden, während Sie den Nachweis untersuchen, den Sie in einer isolierten Umgebung gesammelt haben. Nachdem Sie Beweise gesammelt haben, können Sie zusätzliche Abfragen ausführen, um die Daten nach Zeitspanne, Dateitypen, Datenbesitzern und anderen Arten von Bedingungen einzugrenzen. Beispielsweise können Sie mithilfe der Bedingungen für den Autor, den Absender und den Empfänger schnell erkennen, welche Personen am datenspill beteiligt waren, und ob eine der verschütteten Daten für Benutzer außerhalb Ihrer Organisation freigegeben wurde.
+Verwenden Sie die Registerkarte **Beweise** , um die Daten zu untersuchen, die Sie im Live-Dienst gesammelt haben, was in diesem Fall Office 365 ist. Die Daten im Beweissatzes sind eine Momentaufnahme der Suchergebnisse, die Sie gesammelt haben. Wenn Sie Suchergebnisse als Beweise hinzufügen, wird ein Prozess ausgelöst, um Dateien, Metadaten und Text zu extrahieren. Wenn dieser Vorgang abgeschlossen ist, erstellt das Tool Daten Untersuchungen einen neuen Index aller Daten und fügt ihn einem Beweissatz hinzu. Bei zeitkritischen Untersuchungen können Sie dadurch die Umgebung schnell eindämmen, indem Sie Daten löschen, die sich an den ursprünglichen Inhaltsspeicherorten (im Live-Dienst) befinden, während Sie die in einer isolierten Umgebung gesammelten Beweise untersuchen. Nachdem Sie Beweise gesammelt haben, können Sie zusätzliche Abfragen ausführen, um die Daten nach Zeitbereich, Dateitypen, Datenbesitzern und anderen Arten von Bedingungen einzugrenzen. Beispielsweise können Sie mithilfe der Bedingungen des Autors, des Absenders und des Empfängers schnell erkennen, wer am Datenüberlauf beteiligt war und ob eine der verschütteten Daten für Personen außerhalb Ihrer Organisation freigegeben wurde.
 
-Sie können auch erweiterte Analysen zu den gesammelten beweisen ausführen. Auf diese Weise können Sie allgemeine Designs bereitstellen und Nachweise durch e-Mail-Threads, exakte Duplikate und beinahe-Duplikate organisieren, um die Untersuchung zu erleichtern. Sie können Dokumente in der extrahierten Textansicht oder im systemeigenen Dateiformat überprüfen und Sie mit Untersuchungsergebnissen versehen. Weitere Informationen finden Sie unter:
+Sie können auch erweiterte Analysen für die gesammelten Beweise ausführen. Dadurch können Sie allgemeine Designs bereitstellen und Beweise per e-Mail-Threads, exakte Duplikate und nahe Duplikate organisieren, um Ihre Untersuchung zu erleichtern. Sie können Dokumente in extrahierter Textansicht oder im systemeigenen Dateiformat überprüfen und mit Ermittlungsergebnissen versehen. Weitere Informationen finden Sie unter:
 
   - [Überprüfen von Nachweisdaten](review-data-in-evidence.md)
 
   - [Durchführen von Analysen zur schnelleren Untersuchung](run-analytics-to-investigate-faster.md)
 
 
-## <a name="managing-people-of-interest"></a>Verwalten von Personen mit Interesse
+## <a name="managing-people-of-interest"></a>Verwalten von Personen von Interesse
 
-Verwenden Sie die Registerkarte **Personen von Interesse** , um die Personen hinzuzufügen und zu verwalten, die Sie während der Untersuchung des nach Weisens als Interessen Personen identifiziert haben. Wenn Sie Personen mit Interesse hinzufügen, werden Ihre Datenquellen, wie das Postfach und das OneDrive-Konto, identifiziert und zugeordnet. Dann können Sie zusätzliche Suchvorgänge durchsuchen, indem Sie nur die inhaltsspeicherorte dieser Personen. Wenn der Bereich von Personen von Interesse ist, sind die Suchvorgänge effizienter und präziser, da das Tool alle nicht indizierten Daten wie Bilder oder nicht unterstützte Dateitypen erneut verarbeitet. Auf der Registerkarte **People of Interest** können Sie auch die Überwachungsprotokoll Aktivität dieser Personen anzeigen und Durchsuchen, um die Untersuchung weiter zu unterstützen. Sie können während der Untersuchung weitere Personen hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Personen von Interesse eine Untersuchung](manage-people-of-interest.md).
+Verwenden Sie die Registerkarte **Personen von Interesse** , um die Personen hinzuzufügen und zu verwalten, die Sie während der Untersuchung der Beweise als interessante Personen identifiziert haben. Wenn Sie interessante Personen hinzufügen, werden Ihre Datenquellen, wie Ihr Postfach und Ihr OneDrive-Konto, identifiziert und zugeordnet. Anschließend können Sie zusätzliche Suchvorgänge durchsuchen, indem Sie nur die inhaltsspeicherorte dieser Personen durchsuchen. Wenn der Bereich von Personen von Interesse ist, sind Suchvorgänge effizienter und genauer, da das Tool alle nicht indizierten Daten wie Bilder oder nicht unterstützte Dateitypen neu verarbeitet. Auf der Registerkarte **Personen von Interesse** können Sie auch die Überwachungsprotokoll Aktivität dieser Personen anzeigen und Durchsuchen, um die Untersuchung weiter zu unterstützen. Sie können während der Untersuchung weitere interessante Personen hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Personen mit Interesse einer Untersuchung](manage-people-of-interest.md).
 
-## <a name="indexing-the-data-of-people-of-interest"></a>Indizieren der Daten von interessierten Personen
+## <a name="indexing-the-data-of-people-of-interest"></a>Indizieren der Daten von Personen von Interesse
 
-Durch das Hinzufügen einer Person, die für eine Untersuchung von Interesse ist, werden alle teilweise indizierten Elemente aus den Datenquellen der Person neu indiziert. Dieser Vorgang wird als *Erweiterte Indizierung*bezeichnet. Die erweiterte Indizierung verarbeitet Daten wie Bilder und nicht unterstützte Dateitypen erneut, damit diese Daten vollständig auffindbar sind, wenn Sie Suchvorgänge ausführen, um Daten für eine Untersuchung zu erfassen. Verwenden Sie die Registerkarte **Verarbeitung** , um den Status der erweiterten Indizierung zu überwachen und alle Verarbeitungsfehler zu beheben, die mit einem Prozess namens *Fehlerbehebung*auftreten können. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md).
+Durch das Hinzufügen einer Person, die für eine Untersuchung interessant ist, werden alle teilweise indizierten Elemente aus den Datenquellen der Person neu indiziert. Dieser Vorgang wird als *Erweiterte Indizierung*bezeichnet. Durch die erweiterte Indizierung werden Daten wie Bilder und nicht unterstützte Dateitypen neu verarbeitet, sodass diese Daten vollständig auffindbar sind, wenn Sie Suchvorgänge ausführen, um Daten für eine Untersuchung zu erfassen. Verwenden Sie die Registerkarte **Verarbeitung** , um den Status der erweiterten Indizierung zu überwachen und etwaige Verarbeitungsfehler zu beheben, die bei einem Prozess mit dem Namen *Fehlerbehebung*auftreten können. Weitere Informationen finden Sie unter [Fehlerkorrektur bei der Verarbeitung von Daten für eine Untersuchung](error-remediation.md).
 
 ## <a name="exporting-data"></a>Exportieren von Daten
 
-Wenn Sie Daten exportieren möchten, verwenden Sie die **** Registerkarte Exporte, um einen Exportauftrag zu verwalten und Daten aus dem nachweissatz herunterzuladen. Wenn Sie Nachweise exportieren, werden die Daten an einen Azure-Speicherort hochgeladen und können dann auf einen lokalen Computer heruntergeladen werden. Auf der **** Registerkarte Exports können Sie die Azure-speicherORTS-URL und den Speicher Bewertungsschlüssel abrufen, die beide zum Herunterladen der exportierten Daten erforderlich sind. Weitere Informationen finden Sie unter [Exportieren von Daten aus einer Untersuchung](export-data.md).
+Wenn Sie Daten exportieren möchten, verwenden Sie die **** Registerkarte Exports, um einen Exportauftrag zu verwalten und Daten aus dem Evidence-Datensatz herunterzuladen. Wenn Sie Beweise exportieren, werden die Daten in einen Azure-Speicherort hochgeladen und stehen dann auf einem lokalen Computer heruntergeladen. Auf der **** Registerkarte Exports können Sie die Azure-Speicherorts-URL und den Speicher Bewertungsschlüssel abrufen, die beide zum Herunterladen der exportierten Daten erforderlich sind. Weitere Informationen finden Sie unter [Exportieren von Daten aus einer Untersuchung](export-data.md).
 
 ## <a name="managing-jobs"></a>Verwalten der Aufträge
 
-Auf der Registerkarte **Aufträge** können Sie die lang andauernden Prozesse für Aufgaben im Zusammenhang mit der Untersuchung überwachen. Hierzu gehören Aufträge zum Ausführen von Suchvorgängen, zum Hinzufügen von Daten zu einem Evidence-Set, zum erneuten Indizieren von Daten und zum Exportieren von nachweisen. Sie können beispielsweise eine neue Suche auf der Registerkarte **Suchvorgänge** erstellen, die eine Vielzahl von Datenquellen enthält. Der Status dieses Suchvorgangs wird auf der Registerkarte **Aufträge** angezeigt. Weitere Informationen finden Sie unter [Verwalten von Aufträgen in einer Datenermittlung](manage-jobs.md).
+Verwenden Sie die Registerkarte **Aufträge** , um die langwierigen Prozesse für Aufgaben im Zusammenhang mit der Untersuchung zu überwachen. Dies umfasst Aufträge für das Ausführen von suchen, das Hinzufügen von Daten zu einem Beweissatz, das erneute Indizieren von Daten und das Exportieren von nachweisen. Beispielsweise können Sie eine neue Suche auf der Registerkarte **Suchen** erstellen, die eine große Anzahl von Datenquellen enthält. Der Status dieses Suchvorgangs wird auf der Registerkarte **Aufträge** angezeigt. Weitere Informationen finden Sie unter [Manage Jobs in a Data Investigation](manage-jobs.md).
 
 ## <a name="configuring-investigation-settings"></a>Konfigurieren von Untersuchungseinstellungen
 
-Auf der Registerkarte **Einstellungen** können Sie die Einstellungen für die Untersuchung konfigurieren. Dazu gehört das Hinzufügen von Mitgliedern zu einer Untersuchung, schließen oder Löschen einer Untersuchung und Konfigurieren des Such-und Analyse Verhaltens. Weitere Informationen finden Sie unter [Configure Settings in Data Investigations (Preview)](configure-settings-datainvestigations.md).
+Verwenden Sie die Registerkarte **Einstellungen** , um Untersuchungs weite Einstellungen zu konfigurieren. Dies umfasst das Hinzufügen von Mitgliedern zu einer Untersuchung, das Schließen oder Löschen einer Untersuchung und das Konfigurieren des Such-und Analyse Verhaltens. Weitere Informationen finden Sie unter [Configure Settings in Data Investigations (Preview)](configure-settings-datainvestigations.md).

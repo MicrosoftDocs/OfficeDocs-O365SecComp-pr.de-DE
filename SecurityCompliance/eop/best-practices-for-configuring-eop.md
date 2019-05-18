@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Beachten Sie die folgenden Empfehlungen für Exchange Online Protection (EOP), um allgemeine Konfigurationsfehler zu vermeiden und eine erfolgreiche Funktion zu gewährleisten.
-ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256643"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150287"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Bewährte Methoden für das Konfigurieren von EOP
   
@@ -31,28 +31,28 @@ Wenn Ihre Organisation über vorhandene Benutzerkonten in einer lokalen Active D
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>SPF-Eintrags-Anpassung zur Verhinderung von Spoofing
 
-Bei der Einrichtung von EOP haben Sie zu Ihren DNS-Datensätzen einen SPF-Datensatz (Sender Policy Framework) für EOP hinzugefügt. Der SPF-Datensatz erleichtert die Vermeidung von Spoofing. Weitere Informationen dazu, wie ein SPF-Eintrag Spoofing verhindert und wie Sie Ihre lokalen IP-Adressen dem SPF-Eintrag hinzufügen können, finden Sie unter [Einrichten von SPF in Office 365, um Spoofing zu verhindern](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+Bei der Einrichtung von EOP haben Sie zu Ihren DNS-Datensätzen einen SPF-Datensatz (Sender Policy Framework) für EOP hinzugefügt. Der SPF-Datensatz erleichtert die Vermeidung von Spoofing. Weitere Informationen darüber, wie ein SPF-Eintrag Spoofing verhindert und wie Sie Ihre lokalen IP-Adressen zum SPF-Eintrag hinzufügen können, finden Sie unter [Einrichten von SPF in Office 365, um Spoofing zu verhindern](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
   
 ## <a name="set-anti-spam-options"></a>Festlegen von Antispamoptionen
 
-Verwalten Sie die Filter der Verbindungseinstellungen durch das Hinzufügen von IP-Adressen zur IP-Zulassungs- und IP-Sperrliste, indem Sie die Option **Liste sicherer Adressen** aktivieren, wodurch die Anzahl der falsch positiven Nachrichten (Nachrichten, die fälschlicherweise als Spam eingestuft werden) reduziert werden sollte. Weitere Informationen finden Sie unter [configure the Connection Filter Policy](../configure-the-connection-filter-policy.md). Weitere Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](https://go.microsoft.com/fwlink/p/?LinkId=534225). Diese sind hilfreich, wenn Sie Administratorebenen-Kontrolle haben und falsch positive oder falsch negative Ergebnisse vermeiden möchten.
+Verwalten Sie die Filter der Verbindungseinstellungen durch das Hinzufügen von IP-Adressen zur IP-Zulassungs- und IP-Sperrliste, indem Sie die Option **Liste sicherer Adressen** aktivieren, wodurch die Anzahl der falsch positiven Nachrichten (Nachrichten, die fälschlicherweise als Spam eingestuft werden) reduziert werden sollte. Weitere Informationen finden Sie unter [Konfigurieren der Verbindungsfilter Richtlinie](../configure-the-connection-filter-policy.md). Weitere Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](https://go.microsoft.com/fwlink/p/?LinkId=534225). Diese sind hilfreich, wenn Sie Administratorebenen-Kontrolle haben und falsch positive oder falsch negative Ergebnisse vermeiden möchten.
   
-Verwalten Sie Ihre Inhaltsfilter, indem Sie die Standardeinstellungen überprüfen und optional ändern. Sie können beispielsweise die Aktion für das geschehen mit Spam erkannten Nachrichten ändern. Wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten, können Sie Erweiterte Spam Filterungsoptionen konfigurieren. Es wird empfohlen, diese Optionen zuerst zu testen, bevor Sie Sie in Ihrer Produktionsumgebung implementieren (indem Sie Sie aktivieren), es wird empfohlen, dass Organisationen, die sich um Phishing kümmern, die Option **SPF-Eintrag: harter Fehler** aktivieren. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](../configure-your-spam-filter-policies.md) and [Advanced Spam Filtering Options](../advanced-spam-filtering-asf-options.md).
+Verwalten Sie Ihre Inhaltsfilter, indem Sie die Standardeinstellungen überprüfen und optional ändern. Sie können beispielsweise die Aktion für das geschehen mit Spam erkannten Nachrichten ändern. Wenn Sie einen aggressiven Ansatz für die Spamfilterung verfolgen möchten, können Sie erweiterte Spamfilter Optionen konfigurieren. Es wird empfohlen, dass Sie diese Optionen zuerst testen, bevor Sie Sie in Ihrer Produktionsumgebung implementieren (indem Sie Sie aktivieren) Es wird empfohlen, dass Organisationen, die sich für Phishing befassen, die Option **SPF Record: Hard Fail** aktivieren. Weitere Informationen finden Sie unter [configure your Spamfilter Policies](../configure-your-spam-filter-policies.md) and [Advanced Spam Filtering Options](../advanced-spam-filtering-asf-options.md).
   
 > [!IMPORTANT]
-> Wenn Sie die standardmäßige Inhaltsfilteraktion, **Nachricht in Junk-e-Mail-Ordner verschieben**, um sicherzustellen, dass diese Aktion mit lokalen Postfächern funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Konfiguration konfigurieren. Server zum Aufspüren von Spam Kopfzeilen, die von EOP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Wenn Sie die Standardaktion für den Inhaltsfilter verwenden, verschieben Sie die Nachricht in den **Junk-e-Mail-Ordner**, um sicherzustellen, dass diese Aktion mit lokalen Postfächern funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihrem lokalen Server konfigurieren. Server zum Erkennen von Spam Kopfzeilen, die von EoP hinzugefügt wurden. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
-Wir empfehlen, die Antispamschutz [-FAQ](../anti-spam-protection-faq.md)zu lesen, einschließlich des Abschnitts "Best Practices für ausgehende Nachrichten", um sicherzustellen, dass Ihre ausgehenden e-Mails zugestellt werden.
+Es wird empfohlen, die häufig gestellten [Fragen zum Anti-Spam-Schutz](../anti-spam-protection-faq.md)zu lesen, einschließlich des Abschnitts bewährte Methoden für ausgehende Nachrichten, mit denen sichergestellt wird, dass Ihre ausgehenden e-Mails zugestellt werden.
   
-Sie können falsche negative Meldungen (Spam) und falsche positive Meldungen (kein Spam) auf verschiedene Weise an Microsoft zur Analyse schicken. Weitere Informationen finden Sie unter [Submit Spam, Non-Spam, and Phishing Scam messages to Microsoft for Analysis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Sie können falsche negative Meldungen (Spam) und falsche positive Meldungen (kein Spam) auf verschiedene Weise an Microsoft zur Analyse schicken. Ausführliche Informationen finden Sie unter [Submit Spam, Non-Spam, and Phishing Scam messages to Microsoft for Analysis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
   
 ## <a name="set-anti-malware-options"></a>Festlegen von Antimalwareoptionen
 
-Sie können Ihre Malwarefiltereinstellungen in der Exchange-Verwaltungskonsole (EAC) überprüfen und anpassen. Weitere Informationen finden Sie unter [configure Anti-Malware Policies](../configure-anti-malware-policies.md). Wir empfehlen auch, sich über andere häufig gestellte Fragen und Antworten im Zusammenhang mit dem Schutz vor Schadsoftware zu verständigen. [ ](../anti-malware-protection-faq-eop.md)
+Sie können Ihre Malwarefiltereinstellungen in der Exchange-Verwaltungskonsole (EAC) überprüfen und anpassen. Weitere Informationen finden Sie unter [configure Anti-Malware Policies](../configure-anti-malware-policies.md). Außerdem empfehlen wir Ihnen, sich in unseren häufig gestellten Fragen und Antworten zum Schutz vor Schadsoftware in unseren [FAQ zu Anti-Malware Protection ](../anti-malware-protection-faq-eop.md)zu lesen.
   
-Wenn Sie befürchten, dass ausführbare Dateien Schadsoftware enthalten könnten, können Sie eine Exchange-Nachrichtenflussregel erstellen, durch die alle E-Mail-Anhänge mit ausführbaren Inhalten blockiert werden. Führen Sie die Schritte in [How to Reduce Malware Threats through File Attachment Blocking in Exchange Online Protection](https://support.microsoft.com/kb/2959596) aus, um die in [use Mail Flow Rules aufgeführten Dateitypen zum Überprüfen von Nachrichtenanlagen in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)zu blockieren.
+Wenn Sie befürchten, dass ausführbare Dateien Schadsoftware enthalten könnten, können Sie eine Exchange-Nachrichtenflussregel erstellen, durch die alle E-Mail-Anhänge mit ausführbaren Inhalten blockiert werden. Befolgen Sie die Schritte unter [How to Reduce Malware Threats through File Attachment Blocking in Exchange Online Protection](https://support.microsoft.com/kb/2959596) , um die in [use Mail Flow Rules aufgeführten Dateitypen zu blockieren, um Nachrichtenanlagen in Exchange Online zu überprüfen](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
   
-Sie können den Filter für gängige Anlagetypen in der Exchange-Verwaltungskonsole verwenden. Wählen Sie **Schutz** \> **Schadsoftwarefilter**. Sie können eine e-Mail-Fluss Regel erstellen, die alle e-Mail-Anlagen blockiert, die ausführbare Inhalte aufweisen. 
+Sie können den Filter für gängige Anlagetypen in der Exchange-Verwaltungskonsole verwenden. Wählen Sie **Schutz** \> **Schadsoftwarefilter**. Sie können eine e-Mail-Fluss Regel erstellen, die alle e-Mail-Anlagen mit ausführbaren Inhalten blockiert. 
   
 Für einen höheren Schutz empfehlen wir, auch einige oder alle der folgenden Erweiterungen mithilfe von Nachrichtenflussregeln zu blockieren: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. Dies kann mithilfe der Bedingung **Mindestens eine Anlage... eine Dateierweiterung hat, die diese Wörter enthält** erfolgen. 
   
@@ -89,7 +89,7 @@ Spam und Phishing können ebenfalls durch Blockieren eingehender bösartiger E-M
   
 ### <a name="extension-blocking"></a>Erweiterungsblockierung
 
-Wenn Sie befürchten, dass ausführbare Dateien Schadsoftware enthalten könnten, können Sie Antischadsoftwarerichtlinien erstellen, durch die alle E-Mail-Anhänge mit ausführbaren Inhalten blockiert werden. Führen Sie die Schritte unter [configure Anti-Malware Policies](../configure-anti-malware-policies.md)aus.
+Wenn Sie befürchten, dass ausführbare Dateien Schadsoftware enthalten könnten, können Sie Antischadsoftwarerichtlinien erstellen, durch die alle E-Mail-Anhänge mit ausführbaren Inhalten blockiert werden. Befolgen Sie die Schritte unter [configure Anti-Malware Policies](../configure-anti-malware-policies.md).
   
 Für einen höheren Schutz empfehlen wir, auch einige oder alle der folgenden Erweiterungen zu blockieren: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh.
   

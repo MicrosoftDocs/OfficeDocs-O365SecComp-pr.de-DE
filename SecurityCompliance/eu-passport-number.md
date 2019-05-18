@@ -4,28 +4,28 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Passport-Nummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp EU-Passport-Nummern erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
+ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256823"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152967"
 ---
 # <a name="eu-passport-number"></a>EU-Passport-Nummer
 
-In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp der EU-Passport-Nummer erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp EU-Passport-Nummern erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
   
 ## <a name="austria"></a>Österreich
 
 ### <a name="format"></a>Format
 
-Ein Buchstabe gefolgt von einem optionalen Leerzeichen und sieben Ziffern
+Ein Buchstabe, gefolgt von einem optionalen Leerzeichen und sieben Ziffern
   
 ### <a name="pattern"></a>Muster
 
@@ -64,17 +64,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|passport number  <br/> Österreichische Passnummer  <br/> Passport-Nr.  <br/> Reisepass  <br/> österreichisch Reisepass  <br/> |
+|passport number  <br/> Österreichische Passnummer  <br/> Passport-Nummer  <br/> Reisepass  <br/> österreichisch Reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgien
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben, gefolgt von sechs Ziffern, ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben, gefolgt von sechs Ziffern
+Zwei Buchstaben und gefolgt von sechs Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -103,13 +103,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|passport number  <br/> belgische Passnummer  <br/> Passport-Nr.  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
+|passport number  <br/> belgische Passnummer  <br/> Passport-Nummer  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarien
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Abgrenzungen
+Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -142,13 +142,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|passport number  <br/> Bulgarische Passnummer  <br/> Passport-Nr.  <br/> номер на паспорта  <br/> |
+|passport number  <br/> Bulgarische Passnummer  <br/> Passport-Nummer  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Kroatien
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Abgrenzungen
+Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -181,17 +181,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|passport number  <br/> Kroatische Passnummer  <br/> Passport-Nr.  <br/> Broj putovnice  <br/> |
+|passport number  <br/> Kroatische Passnummer  <br/> Passport-Nummer  <br/> Broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Zypern
 
 ### <a name="format"></a>Format
 
-Ein Buchstabe, gefolgt von 6-8 Ziffern ohne Leerzeichen oder Abgrenzungen
+Ein Buchstabe, gefolgt von 6-8 Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe gefolgt von sechs bis acht Ziffern
+Ein Buchstabe, gefolgt von sechs bis acht Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -220,17 +220,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|passport number  <br/> Zypern-Passnummer  <br/> Passport-Nr.  <br/> αριθμό διαβατηρίου  <br/> |
+|passport number  <br/> Zypern-Passnummer  <br/> Passport-Nummer  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>Tschechien
 
 ### <a name="format"></a>Format
 
-Acht Ziffern ohne Leerzeichen oder Abgrenzungen
+Acht Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Acht Ziffern ohne Leerzeichen oder Abgrenzungen
+Acht Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -259,13 +259,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|passport number  <br/> Tschechische Passnummer  <br/> Passport-Nr.  <br/> Cestovní Pas  <br/> Pas  <br/> |
+|passport number  <br/> Tschechische Passnummer  <br/> Passport-Nummer  <br/> Cestovní Pas  <br/> Pas  <br/> |
    
 ## <a name="denmark"></a>Dänemark
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen und Abgrenzungen
+Neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -298,17 +298,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|passport number  <br/> dänische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> pasnummer  <br/> |
+|passport number  <br/> dänische Passnummer  <br/> Passport-Nummer  <br/> Pas  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estland
 
 ### <a name="format"></a>Format
 
-Ein Buchstaben, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Ein Buchstabe, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe gefolgt von sieben Ziffern
+Ein Buchstabe, gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -337,25 +337,25 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|passport number  <br/> Estnische Passnummer  <br/> Passport-Nr.  <br/> Eesti kodaniku-Durchlauf  <br/> |
+|passport number  <br/> Estnische Passnummer  <br/> Passport-Nummer  <br/> Eesti kodaniku Pass  <br/> |
    
 ## <a name="finland"></a>Finnland
 
-Weitere Informationen finden Sie im Abschnitt "Finland Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Finnland-Passport-Nummer" unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>Frankreich
 
-Weitere Informationen finden Sie im Abschnitt "Frankreich Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "französische Passport-Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Deutschland
 
-Weitere Informationen finden Sie im Abschnitt "Deutschland Passport Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Deutschland Passport-Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Griechenland
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -388,7 +388,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|passport number  <br/> griechische Passnummer  <br/> Passport-Nr.  <br/> διαβατηριο  <br/> |
+|passport number  <br/> griechische Passnummer  <br/> Passport-Nummer  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Ungarn
 
@@ -427,17 +427,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|passport number  <br/> ungarische Passnummer  <br/> Passport-Nr.  <br/> útlevél száma  <br/> |
+|passport number  <br/> ungarische Passnummer  <br/> Passport-Nummer  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irland
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -470,17 +470,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|passport number  <br/> irische Passnummer  <br/> Passport-Nr.  <br/> Pas  <br/> Pass  <br/> Passeport  <br/> Passeport numero  <br/> |
+|passport number  <br/> irische Passnummer  <br/> Passport-Nummer  <br/> Pas  <br/> Pass  <br/> Passeport  <br/> Passeport numero  <br/> |
    
 ## <a name="italy"></a>Italien
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -519,11 +519,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zwei Buchstaben oder Ziffern gefolgt von sieben Ziffern:
+Zwei Buchstaben oder Ziffern, gefolgt von sieben Ziffern:
   
 - Zwei Ziffern oder Buchstaben (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -556,13 +556,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|passport number  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Pase numurs  <br/> |
+|passport number  <br/> Lettische Passnummer  <br/> Passport-Nummer  <br/> Pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Litauen
 
 ### <a name="format"></a>Format
 
-Acht Ziffern oder Buchstaben ohne Leerzeichen und Trennzeichen
+Acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -595,13 +595,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|passport number  <br/> lithunian-Passport-Nummer  <br/> Passport-Nr.  <br/> Paso Numeris  <br/> |
+|passport number  <br/> lithunian Passport-Nummer  <br/> Passport-Nummer  <br/> Paso Numeris  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Format
 
-Acht Ziffern oder Buchstaben ohne Leerzeichen und Trennzeichen
+Acht Ziffern oder Buchstaben ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -634,13 +634,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|passport number  <br/> Lettische Passnummer  <br/> Passport-Nr.  <br/> Passnummer  <br/> |
+|passport number  <br/> Lettische Passnummer  <br/> Passport-Nummer  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>Malta
 
 ### <a name="format"></a>Format
 
-Sieben Ziffern ohne Leerzeichen oder Abgrenzungen
+Sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -673,13 +673,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|passport number  <br/> Maltesische Passnummer  <br/> Passport-Nr.  <br/> numru Tal-Passaport  <br/> |
+|passport number  <br/> Maltesische Passnummer  <br/> Passport-Nummer  <br/> numru Tal-Passaport  <br/> |
    
 ## <a name="netherlands"></a>Niederlande
 
 ### <a name="format"></a>Format
 
-Neun Buchstaben oder Ziffern ohne Leerzeichen oder Abgrenzungen
+Neun Buchstaben oder Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -716,17 +716,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
    
 ## <a name="poland"></a>Polen
 
-Weitere Informationen finden Sie im Abschnitt "polnische Passnummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Polen-Passport-Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Format
 
-Ein Buchstaben, gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
+Ein Buchstabe, gefolgt von sechs Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Ein Buchstabe gefolgt von sechs Ziffern:
+Ein Buchstabe, gefolgt von sechs Ziffern:
   
 - Ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung)
     
@@ -759,13 +759,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|passport number  <br/> portugiesische Passnummer  <br/> Passport-Nr.  <br/> número do passaporte  <br/> |
+|passport number  <br/> portugiesische Passport-Nummer  <br/> Passport-Nummer  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>Rumänien
 
 ### <a name="format"></a>Format
 
-Acht oder neun Ziffern ohne Leerzeichen und Abgrenzungen
+Acht oder neun Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -798,17 +798,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|passport number  <br/> rumänische Passnummer  <br/> Passport-Nr.  <br/> numărul pașaportului  <br/> |
+|passport number  <br/> rumänische Passnummer  <br/> Passport-Nummer  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>Slowakei
 
 ### <a name="format"></a>Format
 
-Eine Ziffer oder ein Buchstaben, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
+Eine Ziffer oder ein Buchstabe, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine Ziffer oder ein Buchstabe (ohne Beachtung der Groß-/Kleinschreibung), gefolgt von sieben Ziffern
+Eine Ziffer oder ein Buchstabe (ohne Groß-/Kleinschreibung), gefolgt von sieben Ziffern
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -837,13 +837,13 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|passport number  <br/> Slowakische Passnummer  <br/> Passport-Nr.  <br/> číslo Pasu  <br/> |
+|passport number  <br/> Slowakische Passport-Nummer  <br/> Passport-Nummer  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Slowenien
 
 ### <a name="format"></a>Format
 
-Zwei Buchstaben, gefolgt von sieben Ziffern, ohne Leerzeichen oder Trennzeichen
+Zwei Buchstaben, gefolgt von sieben Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -882,17 +882,17 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|passport number  <br/> slowenische Passnummer  <br/> Passport-Nr.  <br/> številka potnega lista  <br/> |
+|passport number  <br/> slowenische Passnummer  <br/> Passport-Nummer  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>Spanien
 
 ### <a name="format"></a>Format
 
-Eine acht-oder neunstellige Kombination aus Buchstaben und Ziffern ohne Leerzeichen oder Trennzeichen
+Eine Kombination aus Buchstaben und Zahlen mit acht oder neun Zeichen ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Eine Kombination aus Buchstaben und Zahlen mit acht oder neun Zeichen:
+Eine Kombination aus Buchstaben und Zahlen aus acht oder neun Zeichen:
   
 -  Zwei Ziffern oder Buchstaben 
     
@@ -927,15 +927,15 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|Pass  <br/> Spanien Passport  <br/> Passport-Buch  <br/> passport number  <br/> Passport-Nr.  <br/> Libreta Pasaporte  <br/> número Pasaporte  <br/> ESPAÑA PASAPORTE  <br/> Pasaporte  <br/> |
+|Pass  <br/> Spanien-Passport  <br/> Passport-Buch  <br/> passport number  <br/> Passport-Nummer  <br/> Libreta Pasaporte  <br/> número Pasaporte  <br/> ESPAÑA PASAPORTE  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Schweden
 
-Weitere Informationen finden Sie im Abschnitt "schwedische Passport-Nummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "schwedische Passport-Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="uk"></a>UK
 
-Weitere Informationen finden Sie im Abschnitt "U.S./U.K. Passport-Nummer "in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "U.S./U.K. Passport-Nummer "in [dem, wonach die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Siehe auch
 

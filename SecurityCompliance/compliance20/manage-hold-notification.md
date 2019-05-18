@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,64 +14,64 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241262"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151737"
 ---
 # <a name="manage-hold-notifications"></a>Verwalten von Aufbewahrungsbenachrichtigungen
 
-Nachdem Sie den Benachrichtigungs Workflow für zugelassene Aufbewahrungszeit eingeleitet haben, können Sie die erweiterte eDiscovery (Preview) nutzen, um den Status Ihrer Kommunikation nachzuverfolgen. Auf der Registerkarte "Kommunikation" werden alle Warteschleife-Benachrichtigungen in Ihrem Advanced eDiscovery-Fall (Preview) angezeigt. Hier werden Details angezeigt, beispielsweise die Anzahl der Verwalter, denen die Benachrichtigung zugewiesen wurde oder die Sie bestätigt haben.
+Nachdem Sie den Benachrichtigungs Workflow für juristische Aufbewahrung initiiert haben, können Sie die erweiterte eDiscovery nutzen, um den Status Ihrer Kommunikation nachzuverfolgen. Auf der Registerkarte Kommunikationen werden alle Aufbewahrungs Benachrichtigungen in Ihrem erweiterten eDiscovery-Fall präsentiert. Hier werden Details angezeigt, beispielsweise die Anzahl der Verwalter, denen die Benachrichtigung zugewiesen wurde oder die den Hinweis bestätigt haben.
 
 ## <a name="view-communication-details"></a>Anzeigen von Kommunikationsdetails
 
-### <a name="track-acknowledgements"></a>NachVerfolgen von Bestätigungen
+### <a name="track-acknowledgements"></a>Nachverfolgen von Bestätigungen
 
-Nachdem Sie eine Kommunikation über die Register **** Karte Kommunikationen ausgewählt haben, können Sie eine Liste der Verwalter anzeigen, die einen Haltestatus bestätigt haben. 
+Nachdem Sie eine Kommunikation über die Register **** Karte Kommunikationen ausgewählt haben, können Sie eine Liste der Verwalter anzeigen, die einen halte Hinweis bestätigt haben. 
 
-### <a name="preview-acknowledgements"></a>Vorschau der Bestätigungen
+### <a name="preview-acknowledgements"></a>Vorschau Bestätigungen
 
-Im Flyout Kommunikationsdetails können Sie eine Vorschau der Details zu ihrer rechtlichen Aufbewahrungszeit anzeigen. Im **Vorschaufenster** können Sie eine kurze Momentaufnahme ihrer gesetzlichen Aufbewahrungsfrist sowie die Einstellungen und Inhalte für Ihre Workflow Benachrichtigungen sehen. Im Vorschaufenster werden auch Details angezeigt, um die die Verwalter die Nachricht bereits anerkannt haben.
+Im Flyout Kommunikationsdetails können Sie die Details zur rechtlichen Aufbewahrungs Kommunikation in einer Vorschau anzeigen. Im **Vorschaufenster** können Sie eine kurze Momentaufnahme ihres rechtlichen Aufbewahrungs Vermerks sowie die Einstellungen und Inhalte für Ihre Workflow Benachrichtigungen sehen. Im Vorschaufenster werden außerdem Details angezeigt, um die die Verwalter den Hinweis bereits bestätigt haben.
 
-## <a name="taking-action-on-existing-communications"></a>Ergreifen von Aktionen für vorhandene Kommunikation
+## <a name="taking-action-on-existing-communications"></a>Ausführen von Aktionen für die vorhandene Kommunikation
 
-### <a name="re-send-a-hold-notice"></a>Erneutes Senden einer Aufbewahrungs Benachrichtigung
+### <a name="re-send-a-hold-notice"></a>Erneutes Senden eines halte Vermerks
 
-Gelegentlich verlieren Verwalter Ihre e-Mails in ihrer täglichen Arbeit. Oder bei einem lang andauernden Rechtsstreit kann ein Verwalter sich aussprechen und Sie bitten, eine Benachrichtigung erneut zu senden. Wenn Sie Ihren Workflow über rechtliche Aufbewahrungs Hinweise verwalten, müssen Sie möglicherweise einen Hinweis erneut senden, um ihn wieder an den "Anfang des Postfachs eines Benutzers" zu versetzen.
+Gelegentlich verlieren depotverwalter Ihre e-Mails in Ihrer alltäglichen Arbeit. Bei einem langwierigen Rechtsstreit kann ein depotverwalter möglicherweise einen Antrag stellen und Sie bitten, eine Nachricht erneut zu senden. Wenn Sie Ihren Workflow um rechtliche Aufbewahrungs Vermerke verwalten, müssen Sie möglicherweise erneut einen Hinweis senden, um ihn wieder an die "Oberseite des Postfachs eines Benutzers" zurückzusenden.
 
-Sie können eine Hold-Benachrichtigung erneut an Ihren Depotbank senden, indem Sie:
-1. Navigieren Sie zu einem Fall in **Security and Compliance _GT_ Advanced eDiscovery (Preview)**.
-2. Wenn Sie einen Fall ausgewählt haben, navigieren Sie zur Registerkarte **Kommunikation** .
-3. Wenn Sie eine gesetzliche Aufbewahrungs Mitteilung an eine Depotbank erneut senden möchten, wählen Sie die Kommunikation aus, und klicken Sie auf die Option zum **erneutEn senden** .
-4. Wenn die Aufbewahrungs Benachrichtigung noch nicht von einem Verwalter quittiert wurde, wird der Erinnerungs-und Eskalations Ablauf neu gestartet. Wenn ein depotverwalter den Haltestatus bereits anerkannt hat, erhält der Depotbank eine Kopie der anfänglichen Warteschleife.
+Sie können einen Aufbewahrungs Bescheid erneut an Ihre Depotbank senden, indem Sie:
+1. Navigieren Sie zu einem Fall in der **Sicherheits-und Compliance-> Advanced eDiscovery**.
+2. Nachdem Sie einen Fall ausgewählt haben, navigieren Sie zur **** Registerkarte Kommunikationen.
+3. Um eine rechtliche Aufbewahrungsfrist an eine Depotbank erneut zu senden, wählen Sie die Kommunikation aus, und klicken Sie auf die Option **erneut senden** .
+4. Wenn ein depotverwalter seine Aufbewahrungs Benachrichtigung noch nicht bestätigt hat, wird der Erinnerungs-und Eskalations Fluss neu gestartet. Wenn ein depotverwalter den Aufbewahrungs Bescheid bereits bestätigt hat, erhält der Verwalter lediglich eine Kopie des ursprünglichen Aufbewahrungs Bescheids.
 
 > [!NOTE]
-> Sie können eine legale Aufbewahrungs Benachrichtigung nur an Verwalter zurücksenden, die der Kommunikation zugeordnet sind. 
+> Sie können eine rechtliche Aufbewahrungs Benachrichtigung nur an Verwalter senden, die der Kommunikation zugeordnet sind. 
 
 ### <a name="edit-a-communication"></a>Bearbeiten einer Kommunikation
 
-#### <a name="update-preservation-requirements"></a>Aktualisieren der Aufbewahrungsanforderungen
+#### <a name="update-preservation-requirements"></a>Aktualisieren von Aufbewahrungsanforderungen
   
-Bei Fortschreiten des Falls sind möglicherweise depotbanks erforderlich, um zusätzliche oder geringere Daten beizubehalten, als Sie zuvor angewiesen wurden. In eDiscovery-Begriffen müssen Sie den Aufbewahrungs Hinweis mit aktualisierten Inhalten erneut ausgeben.
+Im Fall von Fortschritten müssen Verwalter möglicherweise zusätzliche oder weniger Daten aufbewahren, als zuvor angewiesen wurde. In eDiscovery-Ausdrücken müssen Sie den halte Hinweis mit aktualisierten Inhalten erneut ausgeben.
 
-So aktualisieren Sie den Inhalt der anfänglichen Warteschleife:
+So aktualisieren Sie den Inhalt des ersten halte Vermerks:
 
-1. Navigieren Sie zu einem Fall in **Security and Compliance _GT_ Advanced eDiscovery (Preview)**.
-2. Wenn Sie einen Fall ausgewählt haben, navigieren Sie zur Registerkarte **Kommunikation** .
-3. Wählen Sie den Haltestatus aus, den Sie aktualisieren möchten, und klicken Sie auf **Bearbeiten**.
-4. Wählen Sie im Workflow bearbeiten die Option **Portal Inhalt definieren** aus, und aktualisieren Sie die Inhalte Ihrer Nachricht. 
-5. Klicken Sie auf **Speichern**. Sobald er gespeichert wurde, wird die erneute Veröffentlichungs Benachrichtigung an alle Verwalter gesendet, die der rechtlichen Aufbewahrungs Meldung zugewiesen sind. Wenn die Benachrichtigungen zur Erinnerung/Eskalation aktiviert sind, werden diese Workflows ebenfalls neu gestartet. 
+1. Navigieren Sie zu einem Fall in der **Sicherheits-und Compliance-> Advanced eDiscovery**.
+2. Nachdem Sie einen Fall ausgewählt haben, navigieren Sie zur **** Registerkarte Kommunikationen.
+3. Wählen Sie den Aufbewahrungs Hinweis aus, den Sie aktualisieren möchten, und klicken Sie auf **Bearbeiten**.
+4. Wählen Sie im Workflow bearbeiten die Option **Portal Inhalt definieren** aus, und aktualisieren Sie den Inhalt des Benachrichtigungs Inhalts. 
+5. Klicken Sie auf **Speichern**. Nach dem Speichern wird die erneute Veröffentlichungs Benachrichtigung an alle Verwalter gesendet, die der rechtlichen Aufbewahrungs Benachrichtigung derzeit zugewiesen sind. Wenn die Mahnungen/Eskalations Benachrichtigungen aktiviert sind, werden diese Workflows ebenfalls neu gestartet. 
 
 
-#### <a name="update-legal-hold-notifications-and-settings"></a>Aktualisieren von Benachrichtigungen und Einstellungen für zugelassene Aufbewahrungszeit
+#### <a name="update-legal-hold-notifications-and-settings"></a>Benachrichtigungen und Einstellungen für Legal Hold-Speicher aktualisieren
 
-Wenn Sie den Inhalt oder die Einstellungen des Veröffentlichungs-, Freigabe-, neuausstellungs-, Erinnerungs-oder Eskalations Hinweises aktualisieren, gelten diese Änderungen für alle zukünftigen Kommunikationen, die vom Workflow generiert werden.
+Wenn Sie den Inhalt oder die Einstellungen der Veröffentlichungs-, Freigabe-, Erinnerungs-oder Eskalations Benachrichtigung aktualisieren, gelten diese Änderungen für alle zukünftigen vom Workflow generierten Kommunikationen.
 
 ## <a name="related-information"></a>Weitere Informationen 
 
-- [Erstellen einer gesetzlichen Aufbewahrungspflicht](create-hold-notification.md)
+- [Erstellen eines rechtlichen Aufbewahrungs Vermerks](create-hold-notification.md)
     
 - [Bestätigen einer Aufbewahrungsbenachrichtigung](acknowledge-hold-notification.md)
     

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 7/16/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,20 +13,20 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie Spam an Benutzer-Junk-e-Mail-Ordner in Exchange Online Protection weiterleiten können.
-ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Administratoren können erfahren, wie Sie Spam an Benutzer-Junk-e-Mail-Ordner in Exchange Online Schutz weiterleiten.
+ms.openlocfilehash: 390ba26167521ccea7b69e7fac21924c0b9ec7de
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256663"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153212"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird
 
 > [!IMPORTANT]
 > Dieses Thema bezieht sich nur auf Exchange Online Protection (EOP)-Kunden, die Postfächer lokal in einer Hybridbereitstellung hosten. Exchange Online-Kunden, deren Postfächer vollständig in Office 365 gehostet werden, müssen diese Befehle nicht ausführen. 
   
-Die standardmäßige Antispamaktion für EOP-Kunden ist das Verschieben von Spamnachrichten in den Junk-E-Mail-Ordner der Empfänger. Damit diese Aktion mit lokalen Postfächern funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Edge-oder Hub-Servern konfigurieren, um von EOP hinzugefügte Spam Kopfzeilen zu identifizieren. Diese Nachrichtenfluss Regeln legen die SCL-Bewertung (Spam Confidence Level) fest, die von der SclJunkThreshold-Eigenschaft des Set-OrganizationConfig-Cmdlets verwendet wird, um Spam in den Junk-e-Mail-Ordner jedes Postfachs zu verschieben. 
+Die standardmäßige Antispamaktion für EOP-Kunden ist das Verschieben von Spamnachrichten in den Junk-E-Mail-Ordner der Empfänger. Damit diese Aktion mit lokalen Postfächern funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Edge-oder Hub-Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu erkennen. Mit diesen Nachrichtenfluss Regeln wird die SCL-Bewertung (Spam Confidence Level) festgelegt, die von der SclJunkThreshold-Eigenschaft des Cmdlets-OrganizationConfig verwendet wird, um Spam in den Junk-e-Mail-Ordner jedes Postfachs zu übertragen. 
   
 ### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>So fügen Sie Nachrichtenfluss Regeln hinzu, um sicherzustellen, dass Spam mithilfe von Windows PowerShell in den Junk-e-Mail-Ordner verschoben wird
 
@@ -60,7 +60,7 @@ Wenn die Aktion **Nachricht in Junk-E-Mail-Ordner verschieben** nicht verwendet 
   
 
 > [!TIP]
-> Wenn Sie die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** nicht verwenden möchten, können Sie in den Inhaltsfilter Richtlinien in der Exchange-Verwaltungskonsole eine andere Aktion auswählen. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Weitere Informationen zu diesen Feldern in der Nachrichtenkopfzeile finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
+> Wenn Sie die Aktion **Nachricht in Junk-e-Mail-Ordner bewegen** nicht verwenden möchten, können Sie eine andere Aktion in den Inhaltsfilter Richtlinien im Exchange Admin Center auswählen. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Weitere Informationen zu diesen Feldern in der Nachrichtenkopfzeile finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 > 
 ## <a name="see-also"></a>Siehe auch
 

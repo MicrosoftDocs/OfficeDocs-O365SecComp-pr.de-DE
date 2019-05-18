@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: In Microsoft Exchange Online Protection (EOP) können Sie die Exchange-Verwaltungskonsole verwenden, um einen Benutzer als Mitglied zu einer oder mehreren Rollengruppen hinzuzufügen, sodass er die Berechtigungen für bestimmte Verwaltungsaufgaben erhält. Darüber hinaus können Sie einen Benutzer über die Exchange-Verwaltungskonsole aus Rollengruppen entfernen.
-ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f248bce26d28c8ab7465ff983629eb01db407b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256143"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150157"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Verwalten der Berechtigungen der Administratorrollen-Gruppenberechtigungen in EOP
   
@@ -53,7 +53,7 @@ In Microsoft Exchange Online Protection (EOP) können Sie die Exchange-Verwaltun
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>Entfernen von Mitgliedern aus Administratorrollengruppen mithilfe der Exchange-Verwaltungskonsole
 
-1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **-Administratorrollen**, klicken Sie auf die Rollengruppe, aus der Sie einen Benutzer oder Benutzer entfernen möchten,](../media/ITPro-EAC-EditIcon.gif)und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![.
+1. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Berechtigungen** \> **Administratorrollen**, klicken Sie auf die Rollengruppe, aus der Sie einen Benutzer oder Benutzer entfernen möchten, und](../media/ITPro-EAC-EditIcon.gif)klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![.
     
 2. Wählen Sie unterhalb von **Mitglieder** die Benutzer aus, die entfernt werden sollen, und klicken Sie auf Entfernen ![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.gif).
     

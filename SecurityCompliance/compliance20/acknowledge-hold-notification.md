@@ -1,10 +1,10 @@
 ---
-title: Bestätigen einer Aufbewahrungs Benachrichtigung
+title: Quittieren einer Warteschleife-Benachrichtigungen
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,37 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb29ff34d663cf43af4a9a4b1e966a282d16eaf2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243635"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151947"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Bestätigen einer Aufbewahrungsbenachrichtigung 
-Wenn Sie auf eine behördliche Anfrage oder Untersuchung reagieren, müssen Sie möglicherweise die Depotbank über ihre Verpflichtung zur Aufbewahrung elektronisch gespeicherter Informationen (ESI) sowie alle Materialien informieren, die für eine aktive oder drohende Rechtsmaterie relevant sein können. Nach der Übermittlung müssen die rechtlichen Teams wissen, dass jeder Verwalter die angegebenen Anweisungen erhalten, gelesen und verstanden hat.
+Wenn Sie auf eine behördliche Aufforderung oder Untersuchung reagieren, müssen Sie möglicherweise die Verwalter über ihre Verpflichtung zur Aufbewahrung von elektronisch gespeicherten Informationen (ESI) sowie alle Materialien informieren, die für eine aktive oder unmittelbar bevorstehende Rechtsfrage relevant sein können. Sobald die Rechtsabteilung gesendet wurde, müssen Sie wissen, dass jede Depotbank die angegebenen Anweisungen erhalten, gelesen und verstanden hat und zugestimmt hat.
 
-Um die Zeit, Kosten und Anstrengungen beim Follow-up mit ihren Verwaltern zu reduzieren, ermöglicht Ihnen Advanced eDiscovery (Preview) das Senden und Nachverfolgen von Benachrichtigungen über zugelassene Aufbewahrung per e-Mail. Zusätzlich zu den e-Mail-Benachrichtigungen hat jeder Verwalter Zugriff auf ein individualisiertes Compliance-Portal, sodass Verwalter über Änderungen Ihres Verpflichtungs Status informiert werden können.
+Zur Verminderung von Zeit, Kosten und Aufwand bei der Verfolgung ihrer depotverwalter ermöglicht Advanced eDiscovery Ihnen das Senden und Nachverfolgen von Benachrichtigungen über rechtliche aufbewahrungsinformationen per e-Mail. Neben e-Mail-Benachrichtigungen hat jede Depotbank auch Zugriff auf ein individualisiertes Compliance-Portal, sodass Verwalter über Änderungen am Verpflichtungs Status informiert werden können.
 
 ## <a name="email-notifications"></a>E-Mail-Benachrichtigungen
-Sobald eine Benachrichtigung über eine gesetzliche Aufbewahrungspflicht erteilt wurde, erhält jeder Depotbank eine eindeutige und personalisierte e-Mail mit dem definierten gesetzlichen Aufbewahrungs Vermerk und zusätzlichen Anweisungen. 
+Sobald eine rechtliche Aufbewahrungs Benachrichtigung erteilt wurde, erhält jede Depotbank eine eindeutige und personalisierte e-Mail mit Ihrem definierten rechtlichen Aufbewahrungs Vermerk und Anweisungen hinzugefügt. 
 
 > [!Tip] 
-> Sehen Sie sich an, wie Sie den integrierten [Kommunikations-Editor](using-communications-editor.md) verwenden können, damit Ihre Depotbank ihre Benachrichtigung anerkennen oder auf Ihr Compliance-Portal direkt über Ihre e-Mails zugreifen kann.
+> Erfahren Sie, wie Sie den integrierten [Kommunikations Editor](using-communications-editor.md) verwenden können, damit Ihre Verwalter Ihren Hinweis bestätigen oder direkt über Ihre e-Mails auf Ihr Compliance-Portal zugreifen können.
 
-Basierend auf der Konfiguration Ihrer Legal Hold-Benachrichtigung erhalten Ihre depotbanks möglicherweise die folgenden Hinweise: 
+Basierend auf der Konfiguration ihrer rechtlichen Aufbewahrungs Benachrichtigung erhalten Ihre depotverwalter möglicherweise die folgenden Hinweise: 
 
-- **Veröffentlichungshinweis** -Dies ist der erste Hinweis, der an Ihren Depotbank gesendet wurde. Dies enthält Ihre Ausstellungs Anweisungen sowie den Haltestatus, der am Ende der Nachricht angehängt ist.
+- **Veröffentlichungshinweis** : Dies ist der erste Hinweis, der an Ihre Depotbank gesendet wird. Dieser enthält Ihre Ausstellungs Anweisungen sowie den Aufbewahrungs Hinweis, der am Ende der Nachricht angehängt wurde.
 
-- **Erinnerungshinweis** -wenn diese Option aktiviert ist, wird eine Erinnerungsnachricht an Ihre Verwalter gesendet, die auf der angegebenen Häufigkeit und dem Intervall basiert. Die Erinnerungen werden weiterhin gesendet, bis die Depotbank ihre Benachrichtigung bestätigt hat oder die Anzahl der Erinnerungen erschöpft ist.
+- **Hinweis zur Erinnerung** – wenn diese Option aktiviert ist, wird eine Erinnerung an Ihre Verwalter gesendet, die auf der angegebenen Häufigkeit und dem angegebenen Intervall basiert. Die Erinnerungen werden auch weiterhin gesendet, bis die Depotbank Ihren Hinweis bestätigt hat oder bis die Anzahl der Erinnerungen erschöpft ist.
 
-- **Eskalations Hinweis** – wenn diese Option aktiviert ist, wird ein Eskalations Hinweis an Ihren Verwalter und dessen Vorgesetzten gesendet, nachdem die Mahnungs Hinweise erschöpft sind. Das System sendet automatisch Eskalations Hinweise, bis die zuzuteilenden Eskalationen abgeschlossen sind oder bis der Verwalter seine Hold-Benachrichtigung bestätigt hat.
+- **Eskalations Benachrichtigung** – wenn diese Option aktiviert ist, wird eine Eskalations Benachrichtigung an Ihre Depotbank und deren Vorgesetzten gesendet, nachdem die Mahnungsbenachrichtigungen erschöpft sind. Das System sendet automatisch Eskalations Benachrichtigungen, bis die geteilten Eskalationen abgeschlossen sind oder bis die Depotbank ihre Aufbewahrungs Benachrichtigung bestätigt.
 
-- **Hinweis erneut ausstellen** – wenn der Inhalt der Hold-Benachrichtigung aktualisiert wird, wird die aktualisierte Nachricht automatisch an die Depotbank gesendet.
+- **Hinweis zur erneuten Veröffentlichung** – im Laufe einer Untersuchung, wenn der Inhalt des halte Vermerks aktualisiert wird, wird die aktualisierte Benachrichtigung automatisch an die Depotbank gesendet.
 
-- **Release Notice** -wenn eine Depotbank aus dem Fall entlassen wird, erhalten Sie den Veröffentlichungshinweis. 
+- **Veröffentlichungshinweis** : Wenn eine Depotbank aus dem Fall entlassen wird, wird Ihnen die Veröffentlichungs Benachrichtigung gesendet. 
 
 ## <a name="compliance-portal"></a>Compliance-Portal
-Zusätzlich zu den e-Mail-Benachrichtigungen hat jeder Verwalter Zugriff auf ein eindeutiges Compliance-Portal. Über das Portal kann jeder Verwalter seine Active Hold-Benachrichtigungen anzeigen, darauf zugreifen und diese quittieren.
+Zusätzlich zu den e-Mail-Benachrichtigungen hat jede Depotbank auch Zugriff auf ein einzigartiges Compliance-Portal. Über das Portal kann jede Depotbank Ihre aktiven Aufbewahrungs Benachrichtigungen anzeigen, darauf zugreifen und diese bestätigen.
 
-![Compliance-Portal für eine Depotbank](../media/CustodianPortal.jpg)
+![Compliance-Portal für eine Depotstelle](../media/CustodianPortal.jpg)

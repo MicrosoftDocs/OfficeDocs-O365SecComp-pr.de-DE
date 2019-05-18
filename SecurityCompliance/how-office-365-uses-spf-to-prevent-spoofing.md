@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9c52f5d0f83ce90b4c46e0d377afcd02eadf224b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256548"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152787"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 
@@ -33,7 +33,7 @@ Ein SPF TXT-Eintrag ist ein DNS-Eintrag, der Ihnen hilft, Spoofing und Phishing 
 Domänenadministratoren veröffentlichen SPF-Informationen in TXT-Einträgen in DNS. Durch die SPF-Informationen werden autorisierte Server für ausgehende E-Mails identifiziert. Von Ziel-E-Mail-Systemen wird überprüft, ob die Nachrichten von autorisierten Servern für ausgehende E-Mails stammen. Wenn Sie bereits mit SPF vertraut sind oder über eine einfache Bereitstellung verfügen und nur wissen möchten, was Sie in Ihren SPF TXT-Eintrag in DNS für Office 365 einschließen müssen, können Sie zu [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) wechseln. Wenn Ihre Bereitstellung nicht vollständig in Office 365 gehostet wird, oder wenn Sie weitere Informationen zur Funktionsweise von SPF oder zur Problembehandlung von SPF für Office 365 benötigen, lesen Sie hier weiter.
   
 > [!NOTE]
-> Zuvor mussten Sie der benutzerdefinierten Domäne einen anderen SPF TXT-Eintrag hinzufügen, wenn Sie auch SharePoint Online verwendet haben. Dies ist nicht mehr erforderlich. Diese Änderung sollte das Risiko reduzieren, dass SharePoint Online-Benachrichtigungsnachrichten im Junk-E-Mail-Ordner landen. Sie müssen keine Änderungen sofort vornehmen, aber wenn Sie die Fehlermeldung "zu viele Suchvorgänge" erhalten, ändern Sie Ihren SPF TXT-Eintrag wie unter [Set up SPF in Office 365 beschrieben, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+> Zuvor mussten Sie einen anderen SPF TXT-Eintrag zu Ihrer benutzerdefinierten Domäne hinzufügen, wenn Sie auch SharePoint Online verwendet haben. Dies ist nicht mehr erforderlich. Diese Änderung sollte das Risiko reduzieren, dass SharePoint Online-Benachrichtigungsnachrichten im Junk-E-Mail-Ordner landen. Sie müssen keine Änderungen sofort vornehmen, aber wenn Sie den Fehler "zu viele Nachschlagevorgänge" erhalten, ändern Sie Ihren SPF TXT-Eintrag wie unter Einrichten von [SPF in Office 365 beschrieben, um Spoofing zu verhindern](set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
      
 ## <a name="how-spf-works-to-prevent-spoofing-and-phishing-in-office-365"></a>Funktionsweise von SPF zur Verhinderung von Spoofing und Phishing in Office 365
 <a name="HowSPFWorks"> </a>

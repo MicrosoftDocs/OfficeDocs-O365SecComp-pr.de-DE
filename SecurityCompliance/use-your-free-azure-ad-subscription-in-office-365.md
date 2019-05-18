@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/8/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority\
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informationen zum Zugriff auf Azure Active Directory, das in dem kostenpflichtigen Abonnement für Office 365 Ihrer Organisation enthalten ist.
-ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a816e4e3d945ba361cc027658a977765190d0df2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242598"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157837"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Verwenden Ihres kostenlosen Azure Active Directory-Abonnements in Office 365
 
@@ -41,6 +41,6 @@ Verwenden Sie eine private Browsersitzung (keine gewöhnliche Sitzung), um auf d
     
 ## <a name="more-information"></a>Weitere Informationen
 
-- Sie können auch über das Microsoft 365 Admin Center auf das **Azure Active Directory** Admin Center zugreifen. klicken sie im linken navigationsbereich des Microsoft 365 admin center auf **admin center** \> **Azure Active Directory**.
+- Sie können auch über das Microsoft 365 Admin Center auf das **Azure Active Directory** Admin Center zugreifen. Klicken Sie im linken Navigationsbereich des Microsoft 365 Admin Center auf **Admin** \> Centers **Azure Active Directory**.
     
 - Informationen zum Verwalten von Benutzern und Gruppen und Ausführen anderer Verzeichnisverwaltungsaufgaben finden Sie unter [Verwalten Ihres Azure AD-Verzeichnisses](https://docs.microsoft.com/azure/active-directory/active-directory-administer).

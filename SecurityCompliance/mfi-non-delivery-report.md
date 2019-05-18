@@ -3,33 +3,33 @@ title: Unzustellbarkeitsbericht
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+description: Administratoren können sich im Security & Compliance Center über den Unzustellbarkeitsbericht im Nachrichtenfluss-Dashboard informieren.
+ms.openlocfilehash: 9f9cc2865174344a2d411add4032ddf6ced8c740
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868603"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158627"
 ---
 # <a name="non-delivery-report"></a>Unzustellbarkeitsbericht
 
-Der **Unzustellbarkeitsbericht** enthält die am häufigsten auftretenden Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte bezeichnet) für Benutzer in Ihrer Organisation. Dieser Bericht soll die Details von Unzustellbarkeitsberichten anzeigen, damit Sie Probleme beheben können.
+Im **Unzustellbarkeitsbericht** werden die am häufigsten auftretenden Fehlercodes in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Unzustellbarkeitsnachrichten bezeichnet) für Benutzer in Ihrer Organisation angezeigt. Dieser Bericht dient zum Anzeigen der Details von Unzustellbarkeitsberichten, damit Sie Probleme beheben können.
 
-![Der Unzustellbarkeitsbericht im Nachrichtenübermittlungs-Dashboard im Security & Compliance Center](media/non-delivery-report-selected.png)
+![Der Unzustellbarkeitsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/non-delivery-report-selected.png)
 
-Sie können Informationen zu allen NDR-Codes oder einem bestimmten Code anzeigen, indem Sie auf **Daten für anzeigen**klicken. Sie können auch auf **Details anzeigen** klicken, um eine detailliertere Ansicht anzuzeigen, wie im folgenden Diagramm dargestellt:
+Sie können Informationen zu allen NDR-Codes oder einem bestimmten Code anzeigen, indem Sie auf **Daten für anzeigen**klicken. Sie können auch auf **Tabelle Details anzeigen** klicken, um eine detailliertere Ansicht anzuzeigen, wie im folgenden Diagramm dargestellt:
 
-![Details-Tabelle im Unzustellbarkeitsbericht anzeigen](media/non-delivery-report-view-details-table.png)
+![Tabelle "Details anzeigen" im Unzustellbarkeitsbericht](media/non-delivery-report-view-details-table.png)
 
-Wenn Sie eine Zeile in der Tabelle auswählen, um die Details des jeweiligen NDR anzuzeigen, können Sie die detaillierten Informationen verwenden, um eine Problembehandlung vorzunehmen und die erforderlichen Aktionen auszuführen.
+Wenn Sie eine Zeile in der Tabelle auswählen, um die Details des jeweiligen Unzustellbarkeitsberichts anzuzeigen, können Sie die ausführlichen Informationen zur Problembehandlung und zum Ausführen der erforderlichen Aktionen verwenden.
 
-![Auswählen einer Zeile in der Detailtabelle im Unzustellbarkeitsbericht](media/non-delivery-report-details-table-select-row.png)
+![Auswählen einer Zeile in der Tabelle "Details" im Unzustellbarkeitsbericht](media/non-delivery-report-details-table-select-row.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

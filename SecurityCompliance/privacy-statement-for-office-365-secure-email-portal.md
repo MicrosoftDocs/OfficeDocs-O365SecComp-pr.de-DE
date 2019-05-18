@@ -1,10 +1,10 @@
 ---
-title: Datenschutzerklärung für sicheres e-Mail-Portal für Office 365
+title: Datenschutzerklärung für Office 365 sicheres e-Mail-Portal
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: End User
+audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,35 +13,35 @@ search.appverid:
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
-description: 'Zuletzt aktualisiert: 2017'
-ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Letzte Aktualisierung: Mai 2017'
+ms.openlocfilehash: 869d4a7bbc809d72e048b6e1d0af24fa603b0a9d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265267"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157427"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Datenschutzerklärung für sicheres e-Mail-Portal für Office 365
+# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Datenschutzerklärung für Office 365 sicheres e-Mail-Portal
 
-Zuletzt aktualisiert: 2017
+Letzte Aktualisierung: Mai 2017
   
-Diese Datenschutzbestimmungen Regeln das Office 365, das neue OM-Funktions Portal (das neue OM-Funktions Portal). Frühere Versionen wurden als Office 365-Nachrichtenverschlüsselung (OM) und das "OM-Portal" bezeichnet. Diese Datenschutzbestimmungen gelten nicht für andere Online-oder offline-Websites,-Produkte oder-Dienste von Microsoft. Andere Datenschutzbestimmungen können auch auf die Daten angewendet werden, die Sie über das neue OM-Funktions Portal verarbeiten, beispielsweise die Datenschutzerklärung für Microsoft-Konto (falls für die Authentifizierung verwendet) oder die Datenschutzbestimmungen, die mit Ihrem Gerät verbunden sind.
+Diese Datenschutzerklärung regelt die Office 365 dem neuen OM-Funktionen-Portal (das "neue OM-Funktionen-Portal"). Frühere Versionen wurden als Office 365 Nachrichtenverschlüsselung (OM) und als "OM-Portal" bezeichnet. Diese Datenschutzerklärung gilt nicht für andere Online-oder offline-Websites, Produkte oder Dienste von Microsoft. Andere Datenschutzbestimmungen gelten möglicherweise auch für die Daten, die Sie über das neue OM-Funktionen-Portal verarbeiten, beispielsweise die Datenschutzbestimmungen für Microsoft-Konto (sofern es für die Authentifizierung verwendet wird) oder die Datenschutzbestimmungen, die mit Ihrem Gerät verbunden sind.
   
-## <a name="collection-processing-and-use-of-your-information"></a>Erfassung, Verarbeitung und Verwendung Ihrer Informationen
+## <a name="collection-processing-and-use-of-your-information"></a>Sammlung, Verarbeitung und Nutzung Ihrer Informationen
 
-Mit dem neuen OM-Funktions Portal können Sie mit Office 365 verschlüsselte e-Mails aus einer Vielzahl von Endpunkten wie Desktopcomputern oder mobilen Geräten anzeigen. Die verschlüsselte e-Mail kommt in Ihrem Postfach als HTML-Anlage zu einer regulären e-Mail an. Wenn die e-Mail an Ihr Microsoft-Konto, ein Geschäfts-oder Schulkonto oder ein Gmail-Konto gesendet wird, werden Sie aufgefordert, sich mit einem solchen Konto beim Web-basierten neuen OM-Funktions Portal anzumelden. Wenn die verschlüsselte e-Mail an ein anderes Konto als das Microsoft-Konto, das Geschäfts-oder Schulkonto oder ein Gmail-Konto gesendet wird, werden Sie aufgefordert, ein Microsoft-Konto zu erstellen und es dem Konto zuzuordnen, an das die verschlüsselte Nachricht gesendet wurde. Alternativ können Sie einen einmaligen Passcode für die Authentifizierung anfordern, der an dieselbe e-Mail-Adresse gesendet wird, an die die verschlüsselte Nachricht gesendet wurde. Nach erfolgreicher Authentifizierung wird die Nachricht entschlüsselt und über das neue OM-Funktions Portal angezeigt.
+Das neue OM-Funktionen-Portal ermöglicht das Anzeigen von mit Office 365 verschlüsselten e-Mails aus einer Vielzahl von Endpunkten wie Desktopcomputern oder mobilen Geräten. Die verschlüsselte e-Mail kommt in Ihrem Postfach als HTML-Anlage an eine reguläre e-Mail. Wenn die e-Mails an Ihr Microsoft-Konto, Ihr geschäftliches oder Schulkonto oder Ihr Gmail-Konto gesendet werden, werden Sie aufgefordert, sich mit einem solchen Konto beim webbasierten Portal für neue OM-Funktionen anzumelden. Wenn die verschlüsselte e-Mail an ein anderes Konto als das Microsoft-Konto, das Geschäfts-oder Schulkonto oder ein Gmail-Konto gesendet wird, werden Sie aufgefordert, ein Microsoft-Konto zu erstellen und es dem Konto zuzuordnen, an das die verschlüsselte Nachricht gesendet wurde. Alternativ können Sie auch einen einmaligen Zugangscode für die Authentifizierung anfordern, der an dieselbe e-Mail-Adresse gesendet wird, an die die verschlüsselte Nachricht gesendet wurde. Nach erfolgreicher Authentifizierung wird die Nachricht entschlüsselt und über das neue OM-Funktionen-Portal angezeigt.
   
-Ihre Anmeldeinformationen für das Microsoft-Konto, das Geschäfts-oder Schulkonto oder das Gmail-Konto sowie die einmalige Kennung werden ausschließlich zum Zweck der Authentifizierung verwendet. Sie wird nicht im neuen OM-Funktions Portal gespeichert oder von den neuen OM-Funktionen zu anderen Zwecken verwendet.
+Ihre Anmeldeinformationen für das Microsoft-Konto, das geschäftliche oder Schulkonto oder das Gmail-Konto sowie der einmalige Zugangscode werden ausschließlich zum Zweck der Authentifizierung verwendet. Sie wird nicht im neuen OM-Funktionen-Portal gespeichert oder von den neuen OM-Funktionen für andere Zwecke verwendet.
   
-Während des Entschlüsselungsvorgangs werden die verschlüsselten e-Mails, die Sie erhalten, nicht vom neuen OM-Funktions Portal gespeichert. Sie wird nicht über das neue OM-Funktions Portal hinaus übertragen.
+Während des Entschlüsselungsprozesses werden die verschlüsselten e-Mails, die Sie erhalten, nicht vom neuen OM-Leistungs Portal gespeichert. Sie wird nicht über das neue OM-Funktionen-Portal zu jeder Zeit übertragen.
   
-Das neue OM-Funktions Portal kann in einigen Fällen Datenpunkte über die Verwendung und Leistung der neuen OM-Funktionen erfassen (beispielsweise, wie oft verschlüsselte Nachrichten angezeigt werden, ob der Browser oder die APP verwendet werden, und alle aufgetretenen Fehler), die analysiert werden können aggregieren Sie, um die Qualität, Sicherheit und Integrität dieser und anderer Microsoft-apps,-Produkte oder-Dienste zu verbessern. Diese Informationen werden nicht verwendet, um Sie zu identifizieren, zu kontaktieren oder eine Werbung an Sie zu richten.
+Das neue OM-Funktionen-Portal kann in einigen Fällen Datenpunkte zur Verwendung und Leistung der neuen OM-Funktionen sammeln (beispielsweise, wie oft verschlüsselte Nachrichten angezeigt werden, der verwendete Browser oder die APP und eventuell auftretende Fehler), die in analysiert werden können. Aggregat zum Zwecke der Verbesserung der Qualität, Sicherheit und Integrität dieser und anderer Microsoft-apps,-Produkte oder-Dienste. Diese Informationen werden nicht zum identifizieren, kontaktieren oder Ausrichten von Werbung für Sie verwendet.
   
 ## <a name="for-more-information"></a>Weitere Informationen
 
-Bitte richten Sie datenschutzbezogene Anfragen an Microsoft über [omepriv@microsoft.com](mailto:omepriv@microsoft.com)oder per e-Mail unter der folgenden Adresse:
+Wenden Sie sich an Microsoft über [omepriv@Microsoft.com](mailto:omepriv@microsoft.com)oder per e-Mail an die folgende Adresse, um datenschutzbezogene Anfragen zu leiten:
   
-Microsoft Privacy-Informationsschutz
+Microsoft Privacy – Informationsschutz
   
 Microsoft Corporation
   
@@ -51,6 +51,6 @@ Redmond, Washington 98052 USA
   
 ## <a name="changes"></a>Änderungen
 
-Wenn wir Änderungen an dieser Anweisung veröffentlichen, überprüfen wir die Daten "Zuletzt aktualisiert" am Anfang der Anweisung. Wenden Sie sich an die Organisation, die Ihnen Zugriff auf ihre Dienste gewährt, um mehr zu Änderungen an den Datenschutzbestimmungen zu erfahren.
+Wenn wir Änderungen an dieser Anweisung Posten, werden wir die "zuletzt aktualisierten" Daten oben in der Anweisung überarbeiten. Wenden Sie sich an die Organisation, die Ihnen Zugriff auf ihre Dienste gewährt, um mehr zu Änderungen an den Datenschutzbestimmungen zu erfahren.
   
 

@@ -1,10 +1,10 @@
 ---
-title: Erstellen einer neuen Untersuchung in Daten Untersuchungen (Vorschau)
+title: Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,37 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6d639df4f7afaa3a55e31bd75cd3e35104593ddd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7534b7a79ae97ec0513b496ebbb801e3818ab3aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258388"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150957"
 ---
-# <a name="create-a-new-investigation-in-data-investigations-preview"></a>Erstellen einer neuen Untersuchung in Daten Untersuchungen (Vorschau)
+# <a name="create-a-new-investigation-in-data-investigations-preview"></a>Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 
 1. Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
-2. Melden Sie sich mit Ihrem Arbeits-oder Schulkonto an.
+2. Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.
     
-3. Klicken Sie im Compliance Center auf **Daten Untersuchungen**.
+3. Klicken Sie im Compliance Center auf **Daten**Untersuchungen.
  
-4. Klicken Sie auf der Seite **Daten Untersuchungen (Vorschau)** auf **neue Untersuchung erstellen**.
+4. Klicken Sie auf der Seite **Daten Ermittlungen (Vorschau)** auf **neue Untersuchung erstellen**.
     
-5. Geben Sie auf der Seite **Neues Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich) ein, und geben Sie dann eine optionale Untersuchungs Nummer und eine Beschreibung ein. Beachten Sie, dass der Name der Untersuchung in Ihrer Organisation eindeutig sein muss.
+5. Geben Sie auf der Seite **neue Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich), und geben Sie dann eine optionale unter Suchnummer und eine Beschreibung ein. Beachten Sie, dass der unter Such Name in Ihrer Organisation eindeutig sein muss.
 
-6. Führen **Sie unter möchten Sie nach dem Erstellen dieser Untersuchung zusätzliche Einstellungen konfigurieren?** eine der folgenden Aktionen aus:
+6. Führen **Sie unter möchten Sie zusätzliche Einstellungen nach dem Erstellen dieser Untersuchung konfigurieren?** eine der folgenden Aktionen aus:
 
-    - Klicken Sie auf **Ja** , um die Untersuchung zu erstellen, und zeigen Sie die Seite **Einstellungen** in der neuen Untersuchung an. Dies ermöglicht Ihnen das Hinzufügen von Mitgliedern zur Untersuchung.
+    - Klicken Sie auf **Ja** , um die Untersuchung zu erstellen, und zeigen Sie die Seite **Einstellungen** in der neuen Untersuchung an. Auf diese Weise können Sie der Untersuchung Mitglieder hinzufügen.
     
-    - Klicken Sie auf **Nein** , um die Untersuchung zu erstellen und Sie in der Liste mit Untersuchungen auf der Seite **Daten Untersuchungen (Vorschau)** anzuzeigen. Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet. Sie können jederzeit nach der Erstellung der Untersuchung Mitglieder hinzufügen oder Einstellungen ändern.
+    - Klicken Sie auf **Nein** , um die Untersuchung nur zu erstellen und Sie in der Liste der Untersuchungen auf der Seite **Daten Ermittlungen (Vorschau)** anzuzeigen. Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet. Sie können nach Erstellung der Untersuchung jederzeit Mitglieder hinzufügen oder Einstellungen ändern.
 
 7. Klicken Sie auf **Speichern** , um die Untersuchung zu erstellen.
 
-    Die neue Untersuchung wird in der Liste der Ermittlungen auf der Seite **Daten Untersuchungen (Preview)** angezeigt. 
+    Die neue Untersuchung wird in der Liste der Untersuchungen auf der Seite **Daten Ermittlungen (Vorschau)** angezeigt. 
 
-8. Klicken Sie auf den Namen der Untersuchung, um eine Untersuchung zu öffnen. 
+8. Klicken Sie zum Öffnen einer Untersuchung auf den Namen der Untersuchung. 
 
-    Die Registerkarte **Start** für die Untersuchung wird angezeigt. Hier eine neue Untersuchung mit dem Namen *Critical: Tax Document and Finance Data Leak*.
+    Die Registerkarte **Start** für die Untersuchung wird angezeigt. Hier ist beispielsweise eine neue Untersuchung mit dem Namen *Critical: Tax Document und Finance Data Leak*.
 
-    ![Registerkarte "Start" für eine neue Untersuchung in Daten Untersuchungen](../media/NewDataInvestigations.png)
+    ![Die Registerkarte "Start" für eine neue Untersuchung in Daten Untersuchungen](../media/NewDataInvestigations.png)
