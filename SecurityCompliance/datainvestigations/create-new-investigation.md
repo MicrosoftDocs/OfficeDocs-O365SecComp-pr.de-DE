@@ -1,10 +1,10 @@
 ---
-title: Erstellen einer neuen Untersuchung in Daten Untersuchungen (Vorschau)
+title: Erstellen einer neuen Untersuchung in Data Investigations (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,37 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6d639df4f7afaa3a55e31bd75cd3e35104593ddd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7534b7a79ae97ec0513b496ebbb801e3818ab3aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258388"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150957"
 ---
-# <a name="create-a-new-investigation-in-data-investigations-preview"></a><span data-ttu-id="0ea87-102">Erstellen einer neuen Untersuchung in Daten Untersuchungen (Vorschau)</span><span class="sxs-lookup"><span data-stu-id="0ea87-102">Create a new investigation in Data Investigations (Preview)</span></span>
+# <a name="create-a-new-investigation-in-data-investigations-preview"></a><span data-ttu-id="61a31-102">Erstellen einer neuen Untersuchung in Data Investigations (Preview)</span><span class="sxs-lookup"><span data-stu-id="61a31-102">Create a new investigation in Data Investigations (Preview)</span></span>
 
-1. <span data-ttu-id="0ea87-103">Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="0ea87-103">Go to [https://compliance.microsoft.com](https://compliance.microsoft.com).</span></span>
+1. <span data-ttu-id="61a31-103">Wechseln Sie zu [https://compliance.microsoft.com](https://compliance.microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="61a31-103">Go to [https://compliance.microsoft.com](https://compliance.microsoft.com).</span></span>
     
-2. <span data-ttu-id="0ea87-104">Melden Sie sich mit Ihrem Arbeits-oder Schulkonto an.</span><span class="sxs-lookup"><span data-stu-id="0ea87-104">Sign in using your work or school account.</span></span>
+2. <span data-ttu-id="61a31-104">Melden Sie sich mit ihrem geschäftlichen oder Schulkonto an.</span><span class="sxs-lookup"><span data-stu-id="61a31-104">Sign in using your work or school account.</span></span>
     
-3. <span data-ttu-id="0ea87-105">Klicken Sie im Compliance Center auf **Daten Untersuchungen**.</span><span class="sxs-lookup"><span data-stu-id="0ea87-105">In the compliance center, click **Data Investigations**.</span></span>
+3. <span data-ttu-id="61a31-105">Klicken Sie im Compliance Center auf **Daten**Untersuchungen.</span><span class="sxs-lookup"><span data-stu-id="61a31-105">In the compliance center, click **Data Investigations**.</span></span>
  
-4. <span data-ttu-id="0ea87-106">Klicken Sie auf der Seite **Daten Untersuchungen (Vorschau)** auf **neue Untersuchung erstellen**.</span><span class="sxs-lookup"><span data-stu-id="0ea87-106">On the **Data Investigations (Preview)** page, click **Create new investigation**.</span></span>
+4. <span data-ttu-id="61a31-106">Klicken Sie auf der Seite **Daten Ermittlungen (Vorschau)** auf **neue Untersuchung erstellen**.</span><span class="sxs-lookup"><span data-stu-id="61a31-106">On the **Data Investigations (Preview)** page, click **Create new investigation**.</span></span>
     
-5. <span data-ttu-id="0ea87-107">Geben Sie auf der Seite **Neues Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich) ein, und geben Sie dann eine optionale Untersuchungs Nummer und eine Beschreibung ein.</span><span class="sxs-lookup"><span data-stu-id="0ea87-107">On the **New data investigation** flyout page, give the investigation a name (required), and then type an optional investigation number and description.</span></span> <span data-ttu-id="0ea87-108">Beachten Sie, dass der Name der Untersuchung in Ihrer Organisation eindeutig sein muss.</span><span class="sxs-lookup"><span data-stu-id="0ea87-108">Note that the investigation name must be unique in your organization.</span></span>
+5. <span data-ttu-id="61a31-107">Geben Sie auf der Seite **neue Daten Ermittlungs** Flyout der Untersuchung einen Namen (erforderlich), und geben Sie dann eine optionale unter Suchnummer und eine Beschreibung ein.</span><span class="sxs-lookup"><span data-stu-id="61a31-107">On the **New data investigation** flyout page, give the investigation a name (required), and then type an optional investigation number and description.</span></span> <span data-ttu-id="61a31-108">Beachten Sie, dass der unter Such Name in Ihrer Organisation eindeutig sein muss.</span><span class="sxs-lookup"><span data-stu-id="61a31-108">Note that the investigation name must be unique in your organization.</span></span>
 
-6. <span data-ttu-id="0ea87-109">Führen **Sie unter möchten Sie nach dem Erstellen dieser Untersuchung zusätzliche Einstellungen konfigurieren?** eine der folgenden Aktionen aus:</span><span class="sxs-lookup"><span data-stu-id="0ea87-109">Under **Do you want to configure additional settings after creating this investigation?**, do one of the following:</span></span>
+6. <span data-ttu-id="61a31-109">Führen **Sie unter möchten Sie zusätzliche Einstellungen nach dem Erstellen dieser Untersuchung konfigurieren?** eine der folgenden Aktionen aus:</span><span class="sxs-lookup"><span data-stu-id="61a31-109">Under **Do you want to configure additional settings after creating this investigation?**, do one of the following:</span></span>
 
-    - <span data-ttu-id="0ea87-110">Klicken Sie auf **Ja** , um die Untersuchung zu erstellen, und zeigen Sie die Seite **Einstellungen** in der neuen Untersuchung an.</span><span class="sxs-lookup"><span data-stu-id="0ea87-110">Click **Yes** to create the investigation, and display the **Settings** page in the new investigation.</span></span> <span data-ttu-id="0ea87-111">Dies ermöglicht Ihnen das Hinzufügen von Mitgliedern zur Untersuchung.</span><span class="sxs-lookup"><span data-stu-id="0ea87-111">This allows you to add members to the investigation.</span></span>
+    - <span data-ttu-id="61a31-110">Klicken Sie auf **Ja** , um die Untersuchung zu erstellen, und zeigen Sie die Seite **Einstellungen** in der neuen Untersuchung an.</span><span class="sxs-lookup"><span data-stu-id="61a31-110">Click **Yes** to create the investigation, and display the **Settings** page in the new investigation.</span></span> <span data-ttu-id="61a31-111">Auf diese Weise können Sie der Untersuchung Mitglieder hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="61a31-111">This allows you to add members to the investigation.</span></span>
     
-    - <span data-ttu-id="0ea87-112">Klicken Sie auf **Nein** , um die Untersuchung zu erstellen und Sie in der Liste mit Untersuchungen auf der Seite **Daten Untersuchungen (Vorschau)** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="0ea87-112">Click **No** to just create the investigation and display it in the list of investigations on the **Data Investigations (Preview)** page.</span></span> <span data-ttu-id="0ea87-113">Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet.</span><span class="sxs-lookup"><span data-stu-id="0ea87-113">If you choose this option, you will be added as the only member of the investigation and the default search and analytics settings will be used.</span></span> <span data-ttu-id="0ea87-114">Sie können jederzeit nach der Erstellung der Untersuchung Mitglieder hinzufügen oder Einstellungen ändern.</span><span class="sxs-lookup"><span data-stu-id="0ea87-114">You can add members or change settings any time after the investigation is created.</span></span>
+    - <span data-ttu-id="61a31-112">Klicken Sie auf **Nein** , um die Untersuchung nur zu erstellen und Sie in der Liste der Untersuchungen auf der Seite **Daten Ermittlungen (Vorschau)** anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="61a31-112">Click **No** to just create the investigation and display it in the list of investigations on the **Data Investigations (Preview)** page.</span></span> <span data-ttu-id="61a31-113">Wenn Sie diese Option auswählen, werden Sie als einziges Mitglied der Untersuchung hinzugefügt, und die Standardeinstellungen für Suche und Analyse werden verwendet.</span><span class="sxs-lookup"><span data-stu-id="61a31-113">If you choose this option, you will be added as the only member of the investigation and the default search and analytics settings will be used.</span></span> <span data-ttu-id="61a31-114">Sie können nach Erstellung der Untersuchung jederzeit Mitglieder hinzufügen oder Einstellungen ändern.</span><span class="sxs-lookup"><span data-stu-id="61a31-114">You can add members or change settings any time after the investigation is created.</span></span>
 
-7. <span data-ttu-id="0ea87-115">Klicken Sie auf **Speichern** , um die Untersuchung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="0ea87-115">Click **Save** to create the investigation.</span></span>
+7. <span data-ttu-id="61a31-115">Klicken Sie auf **Speichern** , um die Untersuchung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="61a31-115">Click **Save** to create the investigation.</span></span>
 
-    <span data-ttu-id="0ea87-116">Die neue Untersuchung wird in der Liste der Ermittlungen auf der Seite **Daten Untersuchungen (Preview)** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="0ea87-116">The new investigation is displayed in the list of investigations on the **Data Investigations (Preview)** page.</span></span> 
+    <span data-ttu-id="61a31-116">Die neue Untersuchung wird in der Liste der Untersuchungen auf der Seite **Daten Ermittlungen (Vorschau)** angezeigt.</span><span class="sxs-lookup"><span data-stu-id="61a31-116">The new investigation is displayed in the list of investigations on the **Data Investigations (Preview)** page.</span></span> 
 
-8. <span data-ttu-id="0ea87-117">Klicken Sie auf den Namen der Untersuchung, um eine Untersuchung zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="0ea87-117">To open a investigation, click the name of the investigation.</span></span> 
+8. <span data-ttu-id="61a31-117">Klicken Sie zum Öffnen einer Untersuchung auf den Namen der Untersuchung.</span><span class="sxs-lookup"><span data-stu-id="61a31-117">To open a investigation, click the name of the investigation.</span></span> 
 
-    <span data-ttu-id="0ea87-118">Die Registerkarte **Start** für die Untersuchung wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="0ea87-118">The **Home** tab for the investigation is displayed.</span></span> <span data-ttu-id="0ea87-119">Hier eine neue Untersuchung mit dem Namen *Critical: Tax Document and Finance Data Leak*.</span><span class="sxs-lookup"><span data-stu-id="0ea87-119">For example, here's a new investigation named *Critical: Tax document and finance data leakage*.</span></span>
+    <span data-ttu-id="61a31-118">Die Registerkarte **Start** für die Untersuchung wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="61a31-118">The **Home** tab for the investigation is displayed.</span></span> <span data-ttu-id="61a31-119">Hier ist beispielsweise eine neue Untersuchung mit dem Namen *Critical: Tax Document und Finance Data Leak*.</span><span class="sxs-lookup"><span data-stu-id="61a31-119">For example, here's a new investigation named *Critical: Tax document and finance data leakage*.</span></span>
 
-    ![Registerkarte "Start" für eine neue Untersuchung in Daten Untersuchungen](../media/NewDataInvestigations.png)
+    ![Die Registerkarte "Start" für eine neue Untersuchung in Daten Untersuchungen](../media/NewDataInvestigations.png)
