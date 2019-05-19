@@ -1,10 +1,10 @@
 ---
-title: Verwalten von Übersichts Sätzen in Advanced eDiscovery
+title: Verwalten von Überprüfungs Sätzen in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
-ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
+ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33641586"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154037"
 ---
-# <a name="manage-review-sets-in-advanced-ediscovery"></a>Verwalten von Übersichts Sätzen in Advanced eDiscovery
+# <a name="manage-review-sets-in-advanced-ediscovery"></a>Verwalten von Überprüfungs Sätzen in Advanced eDiscovery
 
-Übersichts Sätze sind eine statische Gruppe von Dokumenten, in denen Sie Daten in einem Fall analysieren, Abfragen, anzeigen, taggen und exportieren können. Weitere Informationen zum Ausführen dieser Aufgaben finden Sie unter:
+Überprüfungs Sätze sind ein statischer Satz von Dokumenten, in dem Sie Daten in einem Fall analysieren, Abfragen, anzeigen, markieren und exportieren können. Weitere Informationen zum Ausführen dieser Aufgaben finden Sie unter:
 
-- [Analysieren von Daten in einem Übersichts Satz](analyzing-data-in-review-set.md)
+- [Analysieren von Daten in einem Überprüfungs Satzes](analyzing-data-in-review-set.md)
 
 - [Abfragen der Daten in einem Prüfdateisatz](review-set-search.md)
 
@@ -35,22 +35,22 @@ ms.locfileid: "33641586"
 
 - [Exportieren von Falldaten](exporting-data-ediscover20.md)
 
-## <a name="create-a-review-set"></a>Erstellen eines Übersichts Satzes
+## <a name="create-a-review-set"></a>Erstellen eines Überprüfungs Satzes
 
-Übersichts Sätze können auf der Registerkarte Übersichts **Sätze** erstellt werden, indem **Sie auf über Prüfsatz hinzufügen**klicken.
+Überprüfungs Sätze können auf der Registerkarte Überprüfungs **Sätze** erstellt werden, indem **Sie auf + Überprüfungs Satz hinzufügen**klicken.
 
-![Übersichts Satz hinzufügen](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+![Hinzufügen eines Überprüfungs Satzes](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Geben Sie auf der Seite Übersichts Satz-Flyout **Hinzufügen** einen Namen für den Übersichts Satz ein, und klicken Sie dann auf **Speichern**.  Der neue überprüfungssatz wird in der Liste auf der Registerkarte Übersichts **Sätze** angezeigt.
+Geben Sie auf der Seite Flyout-Überprüfungs **Satz hinzufügen** einen Namen für den Überprüfungs Satz ein, und klicken Sie dann auf **Speichern**.  Der neue Überprüfungs Satz wird in der Liste auf der Registerkarte Überprüfungs **Sätze** angezeigt.
 
-![Neuer Übersichts Satz auf der Registerkarte "überarbeiten"](../media/AeDnewreviewset.png)
+![Neuer Überprüfungs Sätze auf der Registerkarte "Überarbeitungs Gruppe" aufgeführt](../media/AeDnewreviewset.png)
 
-Es gibt drei verschiedene Möglichkeiten zum Hinzufügen von Daten zu einem Übersichts Satz in einem erweiterten eDiscovery-Fall.
+Es gibt drei verschiedene Möglichkeiten zum Hinzufügen von Daten zu einer Überprüfungsgruppe in einem erweiterten eDiscovery-Fall.
 
-![Drei Möglichkeiten zum Hinzufügen zu einem Übersichts-Sets](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+![Drei Methoden zum Hinzufügen zu einem Überprüfungs Satz](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](add-data-to-review-set.md)
 
 2. [Laden von Nicht-Office 365-Daten in einen Prüfdateisatz](load-non-office365-data.md)
 
-3. [Hinzufügen von Daten zu einem Übersichts Satz aus einem anderen überprüfungssatz](add-data-to-review-set-from-another-review-set.md)
+3. [Hinzufügen von Daten zu einem Überprüfungs Satzes aus einer anderen Überprüfungsgruppe](add-data-to-review-set-from-another-review-set.md)

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: 'Erfahren Sie, wie Sie einen Bericht ausführen und dann die CSV-Datei in Office 365 Advanced eDiscovery herunterladen.  '
-ms.openlocfilehash: c6b70700d785c2616f984f3902fbc543d1ae26b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Hier erfahren Sie, wie Sie einen Bericht ausführen und seine. CSV-Datei dann in Office 365 Advanced eDiscovery herunterladen.  '
+ms.openlocfilehash: 2eee2c423210c9d65152c7299eed5c73c5b455b0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261208"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156747"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Ausführen von Berichten in Office 365 Advanced eDiscovery
 
@@ -27,15 +27,15 @@ ms.locfileid: "32261208"
   
 In diesem Thema wird beschrieben, wie Sie Berichte in Advanced eDiscovery ausführen.
   
-## <a name="running-reports"></a>Berichte werden durchLaufen
+## <a name="running-reports"></a>Ausführung von Berichten
 
 Sie können eine CSV-Datei mit einem Bericht für den ausgewählten Prozess herunterladen.
   
-1. Wählen Sie auf der Registerkarte **Berichte** eine Option aus der Liste **Berichtname** aus. Wählen Sie aus drei **Berichtsnamen** Optionen aus: **Relevanz entscheiden**, **Designs-Liste** oder markierte **Dateien**.
+1. Wählen Sie auf der Registerkarte **Berichte** eine Option aus der Liste **Berichtsname** aus. Wählen Sie aus drei **Berichtsnamens** Optionen: **Relevanz entscheiden**, **Themenliste** oder **markierte Dateien**aus.
     
     ![eDiscovery Analytics-Berichte](media/f16aee7a-508f-4acc-99bc-a2c8dec01312.png)
   
-2. Verfügbare Parameter und Sortier-und Filteroptionen können je nach ausgewähltem Bericht festgelegt werden. 
+2. Verfügbare Parameter und Sortier-und Filteroptionen können abhängig vom ausgewählten Bericht festgelegt werden. 
     
 3. Klicken Sie auf **CSV herunterladen**. Der angeforderte Bericht wird generiert und heruntergeladen.
     

@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In Office 365 können Sie mit Aufbewahrungsbezeichnungen einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256393"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154627"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 

@@ -1,10 +1,10 @@
 ---
-title: Analysieren von Daten in einem Übersichts Satz in Advanced eDiscovery
+title: Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c765234e1aa0738415f66f90b66ebce0fcab2505
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527171"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155207"
 ---
-# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einem Übersichts Satz in Advanced eDiscovery
+# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 
-Wenn die Anzahl der gesammelten Dokumente groß ist, kann es schwierig sein, Sie alle zu überarbeiten. Advanced eDiscovery bietet eine Reihe von Tools, mit denen Sie die Dokumente analysieren können, um den Umfang der zu überprüfenden Dokumente ohne Verlust von Informationen zu reduzieren und Sie bei der Organisation der Dokumente auf kohärente Weise zu unterstützen. Weitere Informationen zu diesen Funktionen finden Sie unter:
+Wenn die Anzahl der gesammelten Dokumente groß ist, kann es sehr schwierig sein, Sie alle zu überprüfen. Advanced eDiscovery stellt eine Reihe von Tools zum Analysieren der Dokumente zur Verfügung, um das Volumen von Dokumenten zu reduzieren, die ohne Verlust von Informationen überprüft werden sollen, und um Ihnen dabei zu helfen, die Dokumente auf kohärente Weise zu organisieren. Weitere Informationen zu diesen Funktionen finden Sie unter:
 
 - [Erkennen von Quasiduplikaten](near-duplicates.md)
 
@@ -31,36 +31,36 @@ Wenn die Anzahl der gesammelten Dokumente groß ist, kann es schwierig sein, Sie
 
 - [Designs](themes.md)
 
-So analysieren Sie Daten in einem Übersichts Satz:
+So analysieren Sie Daten in einem Überprüfungs Satzes:
 
-1. Konfigurieren Sie Analyse Einstellungen für Ihren Fall. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-analytics-settings.md).
+1. Konfigurieren Sie die Analyse Einstellungen für Ihren Fall. Weitere Informationen finden Sie unter [Configure Search and Analytics Settings](configure-search-analytics-settings.md).
 
-2. Öffnen Sie den Übersichts Satz, den Sie analysieren möchten.
+2. Öffnen Sie den Überprüfungs Satzes, den Sie analysieren möchten.
 
-3. Klicken Sie auf Übersichts **Satz verwalten**.
+3. Klicken Sie auf Überprüfungs **Sätze verwalten**.
 
 4. Klicken Sie auf **analysieren**.
 
-Sie können den Fortschritt der Analyse auf der Registerkarte **Aufträge** des Falls überprüfen.
+Sie können den Fortschritt der Analyse auf der Registerkarte **Aufträge** der Anfrage überprüfen.
 
- Nach Abschluss der Analyse können Sie Analyseberichte anzeigen, Abfragen in Ihrem Überprüfungs Satz für die Ergebnisse der Analyse ausführen (siehe [Abfrage innerhalb](review-set-search.md)des Überprüfungs Satzes) und verwandte Dokumente eines bestimmten Dokuments anzeigen (siehe Überprüfen von [Daten im](reviewing-data-in-review-set.md)Überprüfungs Satz).
+ Nachdem die Analyse abgeschlossen ist, können Sie den Analysebericht anzeigen, Abfragen in ihrer Überprüfung ausführen, die auf Ausgaben der Analyse festgelegt sind (siehe [Abfrage innerhalb](review-set-search.md)des Überprüfungs Satzes) und verwandte Dokumente eines bestimmten Dokuments anzeigen (siehe Überprüfen von [Daten im](reviewing-data-in-review-set.md)Überprüfungs).
 
 ## <a name="analytics-report"></a>Analysebericht
 
-So zeigen Sie einen Analysebericht für einen Übersichts Satz an:
+So zeigen Sie einen Analysebericht für eine Überprüfungsgruppe an:
 
-1. Öffnen Sie den Übersichts Satz.
+1. Öffnen Sie den Überprüfungs-Datensatz.
 
-2. Klicken Sie auf Übersichts **Satz verwalten**.
+2. Klicken Sie auf Überprüfungs **Sätze verwalten**.
 
 3. Klicken Sie auf **Bericht**.
 
 Der Bericht enthält vier Komponenten aus der Analyse:
 
-- **Aufteilung** -wie viele e-Mail-Nachrichten, Anlagen und lose Dokumente wurden im Übersichts Satz gefunden.
+- **** Aufschlüsselung – wie viele e-Mail-Nachrichten, Anlagen und lose Dokumente wurden im Überprüfungs Satz gefunden.
 
-- **Dokumente (ausgenommen Anlagen)** -wie viele Lose Dokumente waren Pivots, eindeutige nahe Duplikate eines Pivots oder ein genaues Duplikat eines anderen Dokuments.
+- **Dokumente (ohne Anlagen)** – wie viele Lose Dokumente waren Pivots, eindeutig in der Nähe von Duplikaten eines Pivots oder ein exaktes Duplikat eines anderen Dokuments.
 
-- **E-Mails** -wie viele e-Mail-Nachrichten inklusive, einschließlich Kopien, inklusive minus, oder keines der obigen.
+- **E-Mails** -wie viele e-Mail-Nachrichten inklusive, einschließlich Kopien, einschließlich minus oder keines der oben genannten waren.
 
-- **Attachments** -wie viele e-Mail-Anlagen waren eindeutig oder Duplikate einer anderen e-Mail-Anlage im Übersichts Satz.
+- **Attachments** -wie viele e-Mail-Anlagen wurden eindeutig oder Duplikate einer anderen e-Mail-Anlage in der Überprüfungsgruppe.

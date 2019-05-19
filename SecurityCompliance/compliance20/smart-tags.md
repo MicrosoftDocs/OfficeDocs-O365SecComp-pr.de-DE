@@ -1,10 +1,10 @@
 ---
-title: Einrichten von Smarttags für die Rechtsanwalt-Erkennung von Client Rechten in Advanced eDiscovery
+title: Einrichten von Smarttags für die Erkennung von Anwalts-Client-Berechtigungen in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,27 +15,27 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 721426f23aec862bcefbd13b8e61415dac3aeb27
-ms.sourcegitcommit: aa8ea45d5854f8906714e0a407937585ec7993ad
+ms.openlocfilehash: 5310acad1aa1bc2e01cbabee69dd7bb38084bd9a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33951699"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153967"
 ---
-# <a name="set-up-smart-tags-for-ml-assisted-review-in-advanced-ediscovery"></a>Einrichten von Smarttags für die ml-gestützte Überprüfungen in Advanced eDiscovery
+# <a name="set-up-smart-tags-for-ml-assisted-review-in-advanced-ediscovery"></a>Einrichten von Smarttags für die ml-unterstützte Überprüfung in Advanced eDiscovery
 
-Maschinelle Lernfunktionen in Advanced eDiscovery sollen dazu beitragen, den Entscheidungsprozess für Dokumente effizienter zu gestalten. Smarttags sind eine Möglichkeit, um die Computer Lernfunktionen in den Bereichen zu integrieren, in denen die Entscheidungen aufgezeichnet werden: Tags und Tag-Gruppen. Wenn Sie eine smarttaggruppe erstellen, werden die Entscheidungen des ml-Modells, das der Gruppe zugeordnet ist, Inline mit den Tags in der Gruppe angezeigt, damit Sie die Informationen Inline sehen können, wo Sie im Kontext am sinnvollsten sind.
+Maschinelle Lernfunktionen in Advanced eDiscovery sollen helfen, den Entscheidungsprozess in Dokumenten effizienter zu gestalten. Smarttags sind eine Möglichkeit, die Lernfunktionen des Computers in die Position zu versetzen, an der die Entscheidungen erfasst werden: Tags und Tag-Gruppen. Wenn Sie eine smarttaggruppe erstellen, werden die Entscheidungen des ml-Modells, das der Gruppe zugeordnet ist, Inline mit den Tags in der Gruppe angezeigt, damit Sie die Informationen Inline anzeigen können, wo Sie am ehesten Sinn ergeben.
 
-## <a name="how-to-set-up-a-smart-tag-group"></a>Einrichten einer smarttaggruppe
+## <a name="how-to-set-up-a-smart-tag-group"></a>Vorgehensweise Einrichten einer smarttaggruppe
 
-1. Gehen Sie in einem Übersichts Satz zu **Manage Review Set** -> **Manage Tags**.
+1. Wechseln Sie in einem Überprüfungs Satzes zu **Manage Review-Gruppe** -> **Manage Tags**.
 
-2. Klicken Sie auf die Dropdownliste neben **Tag hinzufügen** , und wählen Sie **smarttaggruppe hinzufügen**aus.
+2. Klicken Sie auf die Dropdownliste neben **Transpondergruppe hinzufügen** , und wählen Sie **smarttaggruppe hinzufügen**aus.
 
-3. Wählen Sie das Modell aus, das Sie dieser Gruppe zuordnen möchten. Dadurch werden ein Tag-Abschnitt und n untergeordnete Tags erstellt, wobei n die Anzahl der möglichen Ausgaben des Modells ist. Beispielsweise hat das "Attorney-Client-Berechtigungs Erkennungs Modell" zwei mögliche Ausgänge-privileged und nicht privilegierte; Bei Auswahl dieses Modells werden zwei untergeordnete Tags im Übersichts Satz erstellt, die jeweils einer der möglichen Ausgaben entsprechen.
+3. Wählen Sie das Modell aus, das Sie dieser Gruppe zuordnen möchten. Dadurch werden ein Tag-Abschnitt und n untergeordnete Tags erstellt, wobei n für die Anzahl der möglichen Ausgaben des Modells steht. Beispielsweise weist das Client-Berechtigungs Erkennungs Modell zwei mögliche Ausgaben auf – privilegierte und nicht privilegierte; durch die Auswahl dieses Modells werden zwei untergeordnete Tags in der Überprüfungsgruppe erstellt, die jeweils einer der möglichen Ausgaben entsprechen.
 
-4. Benennen Sie die beschriftungsgruppe und die Markierungen entsprechend um.
+4. Benennen Sie die Transpondergruppe und die Tags entsprechend ihrer Größe um.
 
-## <a name="how-to-use-a-smart-tag-group"></a>Verwenden einer smarttaggruppe
+## <a name="how-to-use-a-smart-tag-group"></a>Vorgehensweise verwenden einer smarttaggruppe
 
-Beim Überprüfen eines Dokuments werden die Ergebnisse des Modells neben dem entsprechenden Tag-Wert angezeigt. Wenn Sie beispielsweise über eine smarttaggruppe für die Erkennung von Anwalts-und Clientberechtigungen verfügen und Sie ein Dokument überprüfen, das das Modell als potenziell privilegiert festgelegt hat, sehen Sie den Grund dafür neben dem entsprechenden Tag. Beachten Sie, dass das-Tag nicht automatisch angewendet wird. in allen Absichten und Zwecken fungieren Tags innerhalb einer smarttaggruppe genau wie normale Tags, mit dem Unterschied, dass Sie bei Bedarf die Modellergebnisse offen legen.
+Wenn Sie ein Dokument überprüfen, werden die Ergebnisse des Modells neben dem entsprechenden Transponderwert verfügbar gemacht. Wenn Sie beispielsweise über eine smarttaggruppe für die Erkennung von Anwalts-und Client Rechten verfügen und ein Dokument überprüfen, das das Modell als potenziell privilegiert hat, wird der Grund dafür neben dem entsprechenden Tag angezeigt. Es ist wichtig zu beachten, dass das Tag nicht automatisch angewendet wird; für alle Absichten und Zwecke fungieren Tags innerhalb einer smarttaggruppe genauso wie normale Tags, mit dem Unterschied, dass Sie die Modellergebnisse neben Ihnen verfügbar machen, wenn dies angemessen ist.
