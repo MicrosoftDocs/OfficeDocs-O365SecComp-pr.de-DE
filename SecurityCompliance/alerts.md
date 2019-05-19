@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,47 +14,47 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: Informieren Sie sich über Warnungen, die Sie für die Sicherheit in Office 365 festlegen können.
-ms.openlocfilehash: 51a53961a5a6e575986c6a5192a6980052d015a4
-ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
+description: Informieren Sie sich über Warnungen, die Sie bei der Sicherheit in Office 365 unterstützen können.
+ms.openlocfilehash: 907d98daf32445f8cdc197d1d8e204449d6a3391
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33979481"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154162"
 ---
-# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a><span data-ttu-id="b7691-103">Benachrichtigungen im Office 365 Security &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="b7691-103">Alerts in the Office 365 Security &amp; Compliance Center</span></span>
+# <a name="alerts-in-the-office-365-security-amp-compliance-center"></a><span data-ttu-id="b9c0f-103">Benachrichtigungen im Office 365 Security &amp; Compliance Center</span><span class="sxs-lookup"><span data-stu-id="b9c0f-103">Alerts in the Office 365 Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="b7691-104">Verwenden Sie die Alerts-Funktionen im Office &amp; 365 Security Compliance Center, um Warnungen für Ihre Office 365-Organisation anzuzeigen und zu verwalten, einschließlich der Verwaltung erweiterter Warnungen im Rahmen von [Sicherheitswarnungen in Office 365 Cloud App](office-365-cas-overview.md).</span><span class="sxs-lookup"><span data-stu-id="b7691-104">Use the alerts features in the Office 365 Security &amp; Compliance Center to view and manage alerts for your Office 365 organization, including managing advanced alerts as part of [Office 365 Cloud App Security alerts](office-365-cas-overview.md).</span></span>
+<span data-ttu-id="b9c0f-104">Verwenden Sie die Warnungsfunktionen im Office 365 Security &amp; Compliance Center, um Warnungen für Ihre Office 365 Organisation anzuzeigen und zu verwalten, einschließlich der Verwaltung von erweiterten Warnungen im Rahmen von [Sicherheitswarnungen in Office 365 Cloud-App](office-365-cas-overview.md).</span><span class="sxs-lookup"><span data-stu-id="b9c0f-104">Use the alerts features in the Office 365 Security &amp; Compliance Center to view and manage alerts for your Office 365 organization, including managing advanced alerts as part of [Office 365 Cloud App Security alerts](office-365-cas-overview.md).</span></span>
   
-## <a name="how-to-get-to-the-office-365-alerts-features"></a><span data-ttu-id="b7691-105">So gelangen Sie zu den Office 365 Alerts-Features</span><span class="sxs-lookup"><span data-stu-id="b7691-105">How to get to the Office 365 alerts features</span></span>
+## <a name="how-to-get-to-the-office-365-alerts-features"></a><span data-ttu-id="b9c0f-105">So gelangen Sie zu den Features für Office 365 Benachrichtigungen</span><span class="sxs-lookup"><span data-stu-id="b9c0f-105">How to get to the Office 365 alerts features</span></span>
 
-<span data-ttu-id="b7691-106">Warnungen in Office 365 befinden sich im Security &amp; Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="b7691-106">Alerts in Office 365 are in the Security &amp; Compliance Center.</span></span> <span data-ttu-id="b7691-107">Hier erfahren Sie, wie Sie zur Seite gelangen.</span><span class="sxs-lookup"><span data-stu-id="b7691-107">Here's how to get to the page.</span></span>
+<span data-ttu-id="b9c0f-106">Warnungen in Office 365 befinden sich im Security &amp; Compliance Center.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-106">Alerts in Office 365 are in the Security &amp; Compliance Center.</span></span> <span data-ttu-id="b9c0f-107">Hier erfahren Sie, wie Sie zur Seite gelangen.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-107">Here's how to get to the page.</span></span>
   
- <span data-ttu-id="b7691-108">**So wechseln Sie direkt zum Security &amp; Compliance Center:**</span><span class="sxs-lookup"><span data-stu-id="b7691-108">**To go directly to the Security &amp; Compliance Center:**</span></span>
+ <span data-ttu-id="b9c0f-108">**So wechseln Sie direkt zum Security &amp; Compliance Center:**</span><span class="sxs-lookup"><span data-stu-id="b9c0f-108">**To go directly to the Security &amp; Compliance Center:**</span></span>
   
-1. <span data-ttu-id="b7691-109">Wechseln Sie zu [https://protection.office.com](https://protection.office.com).</span><span class="sxs-lookup"><span data-stu-id="b7691-109">Go to [https://protection.office.com](https://protection.office.com).</span></span>
+1. <span data-ttu-id="b9c0f-109">Wechseln Sie zu [https://protection.office.com](https://protection.office.com).</span><span class="sxs-lookup"><span data-stu-id="b9c0f-109">Go to [https://protection.office.com](https://protection.office.com).</span></span>
     
-2. <span data-ttu-id="b7691-110">Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="b7691-110">Sign in to Office 365 using your work or school account.</span></span> 
+2. <span data-ttu-id="b9c0f-110">Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-110">Sign in to Office 365 using your work or school account.</span></span> 
     
-3. <span data-ttu-id="b7691-111">Klicken Sie im linken Bereich auf **Benachrichtigungen** , um die Warnungs Features anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="b7691-111">In the left pane, click **Alerts** to see the alerts features.</span></span> 
+3. <span data-ttu-id="b9c0f-111">Klicken Sie im linken Bereich auf **Warnungen** , um die Benachrichtigungsfunktionen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-111">In the left pane, click **Alerts** to see the alerts features.</span></span> 
     
- <span data-ttu-id="b7691-112">**So wechseln Sie über das &amp; Office 365-App-Startfeld zum Security Compliance Center:**</span><span class="sxs-lookup"><span data-stu-id="b7691-112">**To go to the Security &amp; Compliance Center using the Office 365 app launcher:**</span></span>
+ <span data-ttu-id="b9c0f-112">**So wechseln Sie mithilfe des &amp; Office 365-App-Startprogramms zum Security Compliance Center:**</span><span class="sxs-lookup"><span data-stu-id="b9c0f-112">**To go to the Security &amp; Compliance Center using the Office 365 app launcher:**</span></span>
   
-1. <span data-ttu-id="b7691-113">Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="b7691-113">Sign in to Office 365 using your work or school account.</span></span> 
+1. <span data-ttu-id="b9c0f-113">Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-113">Sign in to Office 365 using your work or school account.</span></span> 
     
-2. <span data-ttu-id="b7691-114">Klicken Sie in der oberen linken Ecke auf das App-Startfeld, und klicken Sie dann auf **Sicherheits &amp; Konformität**.</span><span class="sxs-lookup"><span data-stu-id="b7691-114">Click the app launcher  in the upper left corner, and then click **Security &amp; Compliance**.</span></span>
+2. <span data-ttu-id="b9c0f-114">Klicken Sie in der oberen linken Ecke auf das App-Startfeld, und klicken Sie dann auf **Sicherheits &amp; Kompatibilität**.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-114">Click the app launcher  in the upper left corner, and then click **Security &amp; Compliance**.</span></span>
     
-    <span data-ttu-id="b7691-p102">Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen.</span><span class="sxs-lookup"><span data-stu-id="b7691-p102">Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app.</span></span> 
+    <span data-ttu-id="b9c0f-p102">Sie können die gesuchte App nicht finden? Wählen Sie im Startprogramm auf **Alle Apps** aus, um eine alphabetische Liste der verfügbaren Office 365-Apps anzuzeigen. Hier können Sie nach einer bestimmten App suchen.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-p102">Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app.</span></span> 
     
-3. <span data-ttu-id="b7691-118">Klicken Sie im linken Bereich auf **Benachrichtigungen** , um die Warnungs Features anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="b7691-118">In the left pane, click **Alerts** to see the alerts features.</span></span> 
+3. <span data-ttu-id="b9c0f-118">Klicken Sie im linken Bereich auf **Warnungen** , um die Benachrichtigungsfunktionen anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-118">In the left pane, click **Alerts** to see the alerts features.</span></span> 
     
-## <a name="alerts-features"></a><span data-ttu-id="b7691-119">Benachrichtigungsfeatures</span><span class="sxs-lookup"><span data-stu-id="b7691-119">Alerts features</span></span>
+## <a name="alerts-features"></a><span data-ttu-id="b9c0f-119">Benachrichtigungsfunktionen</span><span class="sxs-lookup"><span data-stu-id="b9c0f-119">Alerts features</span></span>
 
-<span data-ttu-id="b7691-120">In der folgenden Tabelle werden die Tools beschrieben, die unter **Warnungen** im Security &amp; Compliance Center verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="b7691-120">The following table describes the tools that are available under **Alerts** in the Security &amp; Compliance Center.</span></span> 
+<span data-ttu-id="b9c0f-120">In der folgenden Tabelle werden die Tools beschrieben, die unter **Warnungen** im Security &amp; Compliance Center zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-120">The following table describes the tools that are available under **Alerts** in the Security &amp; Compliance Center.</span></span> 
   
-|<span data-ttu-id="b7691-121">**Tool**</span><span class="sxs-lookup"><span data-stu-id="b7691-121">**Tool**</span></span>|<span data-ttu-id="b7691-122">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b7691-122">**Description**</span></span>|
+|<span data-ttu-id="b9c0f-121">**Tool**</span><span class="sxs-lookup"><span data-stu-id="b9c0f-121">**Tool**</span></span>|<span data-ttu-id="b9c0f-122">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b9c0f-122">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="b7691-123">Benachrichtigungen verwalten</span><span class="sxs-lookup"><span data-stu-id="b7691-123">Manage alerts</span></span>](create-activity-alerts.md) <br/> |<span data-ttu-id="b7691-124">Verwenden Sie Aktivitäts Warnungen, um e-Mail-Benachrichtigungen an sich selbst oder andere Administratoren zu senden, wenn Benutzer bestimmte Aktivitäten in Office 365 ausführen.</span><span class="sxs-lookup"><span data-stu-id="b7691-124">Use activity alerts to send email notifications to yourself or other administrators when users perform specific activities in Office 365.</span></span> <span data-ttu-id="b7691-125">Aktivitäts Warnungen ähneln dem Durchsuchen des Office 365-Überwachungsprotokolls für Ereignisse, mit der Ausnahme, dass Sie eine e-Mail-Nachricht erhalten, wenn ein Ereignis, für das Sie eine Warnung erstellt haben, auftritt.</span><span class="sxs-lookup"><span data-stu-id="b7691-125">Activity alerts are similar to searching the Office 365 audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.</span></span>  <br/> |
-|[<span data-ttu-id="b7691-126">Verwalten erweiterter Warnungen</span><span class="sxs-lookup"><span data-stu-id="b7691-126">Manage advanced alerts </span></span>](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |<span data-ttu-id="b7691-127">Verwenden Sie das Feature **Erweiterte Benachrichtigungen verwalten** von Office 365 Cloud App Security, um Richtlinien einzurichten, die Sie auf verdächtige und anomale Aktivitäten in Office 365 hinweisen können.</span><span class="sxs-lookup"><span data-stu-id="b7691-127">Use the **Manage advanced alerts** feature of Office 365 Cloud App Security to set up policies that can alert you to suspicious and anomalous activity in Office 365.</span></span> <span data-ttu-id="b7691-128">Nachdem Sie benachrichtigt wurden, können Sie Situationen untersuchen, die potenziell problematisch sind, und gegebenenfalls Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.</span><span class="sxs-lookup"><span data-stu-id="b7691-128">After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.</span></span>  <br/> |
+|[<span data-ttu-id="b9c0f-123">Benachrichtigungen verwalten</span><span class="sxs-lookup"><span data-stu-id="b9c0f-123">Manage alerts</span></span>](create-activity-alerts.md) <br/> |<span data-ttu-id="b9c0f-124">Verwenden Sie Aktivitäts Warnungen zum Senden von e-Mail-Benachrichtigungen an sich selbst oder andere Administratoren, wenn Benutzer bestimmte Aktivitäten in Office 365 durchführen.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-124">Use activity alerts to send email notifications to yourself or other administrators when users perform specific activities in Office 365.</span></span> <span data-ttu-id="b9c0f-125">Aktivitäts Warnungen ähneln dem Durchsuchen des Office 365 Überwachungsprotokolls für Ereignisse, es sei denn, es wird eine e-Mail-Nachricht gesendet, wenn ein Ereignis, für das Sie eine Warnung erstellt haben, Eintritt.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-125">Activity alerts are similar to searching the Office 365 audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.</span></span>  <br/> |
+|[<span data-ttu-id="b9c0f-126">Erweiterte Benachrichtigungen verwalten</span><span class="sxs-lookup"><span data-stu-id="b9c0f-126">Manage advanced alerts </span></span>](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |<span data-ttu-id="b9c0f-127">Verwenden Sie das Feature " **Erweiterte Benachrichtigungen verwalten** " von Office 365 Cloud-App-Sicherheit, um Richtlinien einzurichten, die Sie auf verdächtige und anomale Aktivitäten in Office 365 aufmerksam machen können.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-127">Use the **Manage advanced alerts** feature of Office 365 Cloud App Security to set up policies that can alert you to suspicious and anomalous activity in Office 365.</span></span> <span data-ttu-id="b9c0f-128">Nachdem Sie benachrichtigt wurden, können Sie Situationen untersuchen, die möglicherweise problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.</span><span class="sxs-lookup"><span data-stu-id="b9c0f-128">After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.</span></span>  <br/> |
    
 
