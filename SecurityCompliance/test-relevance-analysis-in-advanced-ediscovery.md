@@ -1,10 +1,10 @@
 ---
-title: Test Relevanz-Analyse in Office 365 Advanced eDiscovery
+title: Test Relevanz Analysis in Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,98 +12,98 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: 'Erfahren Sie, wie Sie die Registerkarte Test nach der Batch Berechnung in Office 365 Advanced eDiscovery verwenden, um die allgemeine Verarbeitungsqualität zu testen, zu vergleichen und zu validieren.  '
-ms.openlocfilehash: 735a6d8088b4696e2ebc348db435a11914bd0b10
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Erfahren Sie, wie Sie die Registerkarte "Test" nach der Batch Berechnung in Office 365 Advanced eDiscovery verwenden, um die Gesamtqualität der Verarbeitung zu testen, zu vergleichen und zu validieren.  '
+ms.openlocfilehash: 984a7b3f8088604aca235a1caf60bb67b5471499
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259973"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158307"
 ---
-# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Test Relevanz-Analyse in Office 365 Advanced eDiscovery
+# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Test Relevanz Analysis in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Auf der Registerkarte Test in Advanced eDiscovery können Sie die allgemeine Verarbeitungsqualität testen, vergleichen und überprüfen. Diese Tests werden nach der Batch Berechnung durchgeführt. Durch das Taggen der Dateien in der Auflistung trifft ein Experte das abschließende Urteil darüber, ob jede markierte Datei tatsächlich für den Fall relevant ist. 
+Auf der Registerkarte Test in Advanced eDiscovery können Sie die Gesamtqualität der Verarbeitung testen, vergleichen und validieren. Diese Tests werden nach der Batch Berechnung ausgeführt. Durch das Markieren der Dateien in der Sammlung entscheidet ein Experte darüber, ob jede markierte Datei tatsächlich für den Fall relevant ist. 
   
-In Szenarios mit mehreren Problemen werden in der Regel Tests pro Problem durchgeführt. Ergebnisse können nach jedem Test angezeigt werden, und Testergebnisse können mit angegebenen Beispiel Testdateien überarbeitet werden.
+Bei Szenarien mit einem oder mehreren Problemen werden normalerweise Tests pro Problem durchgeführt. Ergebnisse können nach jedem Test angezeigt werden, und die Testergebnisse können mit den angegebenen Beispiel Testdateien überarbeitet werden.
   
 ## <a name="testing-the-rest"></a>Testen des Rests
 
-Der Test "Test the Rest" dient zum Überprüfen von Entscheidungen zum Abschneiden, beispielsweise zur Überprüfung von Dateien, die auf den letzten erweiterten eDiscovery-Ergebnissen basieren. Der Experte prüft ein Beispiel von Dateien unter einer ausgewählten Cutoff-Bewertung, um die Anzahl der relevanten Dateien innerhalb dieser Gruppe zu bewerten.
+Der Test "Rest testen" wird zum Validieren von Culling-Entscheidungen verwendet, zum Beispiel, um nur Dateien über einem bestimmten Relevanz-Cutoff-Ergebnis basierend auf den endgültigen erweiterten eDiscovery-Ergebnissen zu überprüfen. Der Experte überprüft ein Beispiel von Dateien unter einem ausgewählten Cutoff-Ergebnis, um die Anzahl der relevanten Dateien innerhalb dieses Satzes auszuwerten.
   
-Dieser Test bietet Statistiken und einen Vergleich zwischen dem überPrüfungs Satz und dem Test der Rest-Auffüllung. Die Ergebnisse des Übersichts Satzes werden anhand der Relevanz während des Trainings berechnet. Die Ergebnisse sind Berechnungen, basierend auf Einstellungen und Eingabeparametern, wie zum Beispiel:
+Dieser Test enthält Statistiken und einen Vergleich zwischen dem Überprüfungs Sätze und dem Test der Rest-Auffüllung. Die Ergebnisse des Überprüfungs Satzes werden von Relevanz während der Schulung berechnet. Die Ergebnisse umfassen Berechnungen basierend auf Einstellungen und Eingabeparametern, beispielsweise:
   
-- Testen Sie die Beispiel Statistiken zur Anzahl der Dateien in einem Beispiel, und ermitteln Sie die relevanten Dateien. 
+- Testen Sie die Beispiel Statistiken über die Anzahl der Dateien in einem Beispiel und die identifizierten relevanten Dateien. 
     
-- Tabellarischer Vergleich der Populations Parameter des Übersichts Satzes und des Rests, beispielsweise der Anzahl von Dateien, der geschätzten Anzahl der relevanten Dateien, des geschätzten Umfangs und der durchschnittlichen Kosten für die Suche nach einer zusätzlichen relevanten Datei. Einstellungen für Kosten Parameter können vom Administrator festgelegt werden.
+- Tabellarischer Vergleich der Populations Parameter des Überprüfungs Satzes und des Rests, beispielsweise die Anzahl der Dateien, die geschätzte Anzahl relevanter Dateien, die geschätzte Reichhaltigkeit und die durchschnittlichen Kosten für die Suche nach einer zusätzlichen relevanten Datei. Kosten Parametereinstellungen können vom Administrator festgelegt werden.
     
-1. Öffnen Sie die Registerkarte **Relevanz \> testen** . 
+1. Öffnen Sie die Registerkarte **Relevanz \> -Test** . 
     
-2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld **Test erstellen** wird angezeigt, wie im folgenden Beispiel gezeigt. 
+2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld zum **Erstellen eines Tests** wird angezeigt, wie im folgenden Beispiel dargestellt. 
     
     ![Relevanz Testen der Rest-Ergebnisse](media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. Geben **** Sie unter Testname und **Beschreibung**den Namen und die Beschreibung ein.
+3. Geben Sie unter **Test Name**und **Beschreibung**den Namen und die Beschreibung ein.
     
 4. Wählen Sie **** in der Liste Testtyp **die Option Rest testen** aus.
     
-5. Wählen Sie in der Liste **Problem/Kategorie** den Problem Namen aus. 
+5. Wählen Sie in der Liste **Problem/Kategorie** den Namen des Problems aus. 
     
 6. Wählen Sie in der Liste **Laden** die Option Laden aus. 
     
-7. Übernehmen Sie in **% Lesen**den Standardwert, oder wählen Sie einen Wert für das Cutoff-Relevanz-Ergebnis aus. 
+7. Übernehmen Sie in **Read%** den Standardwert, oder wählen Sie einen Wert für das Ergebnis der Cutoff-Relevanz aus. 
     
-8. , **** Oder übernehmen Sie den Standardwert. Beachten Sie, dass die Wiederherstellungs Symbole die Standardwerte wiederherstellen.
+8. Legen Sie die **Größe fest**, oder übernehmen Sie den Standardwert. Beachten Sie, dass die Wiederherstellungs Symbole die Standardwerte wiederherstellen werden.
     
 9. Klicken Sie auf **Tagging starten**. Ein Test Beispiel wird generiert.
     
-10. Überarbeiten und markieren Sie die einzelnen Dateien auf der Registerkarte ** \> relevanztag** , und klicken Sie anschließend auf **berechnen**.
+10. Überprüfen und markieren Sie die Dateien auf der Registerkarte ** \> Relevanz-Tag** , und klicken Sie dann auf **berechnen**.
     
-11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. Ein Beispiel ist in der folgenden Abbildung dargestellt. 
+11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. In der folgenden Abbildung ist ein Beispiel dargestellt. 
     
     ![Testen der Rest-Ergebnisse](media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
-In der obigen Abbildung enthält der Abschnitt **Beispiel Parameter** der Tabelle Details zur Anzahl der Dateien im Beispiel, die vom Experten gekennzeichnet wurden, und die Anzahl der relevanten Dateien, die in diesem Beispiel gefunden wurden. 
+In der obigen Abbildung enthält der Abschnitt " **Sample Parameters** " der Tabelle Details zur Anzahl der Dateien im Beispiel, die vom Experten markiert wurden, sowie die Anzahl relevanter Dateien, die in diesem Beispiel gefunden wurden. 
   
-Der Abschnitt " **Population Parameters** " der Tabelle enthält die Testergebnisse, einschließlich der Überprüfung festgelegten Anzahl von Dateien mit einer Punktzahl unter dem ausgewählten Grenzwert und der "Rest"-Auffüllung von Dateien mit einer Bewertung über dem ausgewählten Grenzwert. Für jede Auffüllung werden die folgenden Ergebnisse angezeigt: 
+Der Abschnitt " **Population Parameters** " der Tabelle enthält die Testergebnisse, einschließlich der Überprüfungsgruppen Auffüllung von Dateien mit einer Partitur unter dem ausgewählten Cutoff und der "Rest"-Auffüllung von Dateien mit einer Bewertung über dem ausgewählten Cutoff. Für jede Auffüllung werden die folgenden Ergebnisse angezeigt: 
   
-- Enthält Dateien mit dem Read%-Grenzwert
+- Enthält Dateien mit dem Read%-angegebenen Cutoff
     
 - Die Gesamtzahl der Dateien 
     
-- Die geschätzte Anzahl der relevanten Dateien 
+- Die geschätzte Anzahl relevanter Dateien 
     
 - Die geschätzte Reichhaltigkeit 
     
-- Die durchschnittlichen Überprüfungen der Suche nach einer anderen relevanten Datei
+- Durchschnittliche Überprüfungskosten für die Suche nach einer anderen relevanten Datei
     
-## <a name="testing-the-slice"></a>Testen des Segments
+## <a name="testing-the-slice"></a>Testen des Slices
 
-Der Test "Slice testen" führt Tests ähnlich dem Test "Test the Rest" durch, jedoch auf ein Segment der Dateigruppe gemäß der Relevanz Read%.
+Der Test "Test the Slice" führt Tests aus, die dem Test "Test the Rest" ähneln, jedoch auf ein Segment des Dateisatzes, wie von Relevanz Read% angegeben.
   
-1. Öffnen Sie die Registerkarte **Relevanz \> testen** . 
+1. Öffnen Sie die Registerkarte **Relevanz \> -Test** . 
     
 2. Klicken Sie auf der Registerkarte **Test** auf **neuer Test**. Das Dialogfeld **Test erstellen** wird angezeigt. 
     
-3. Geben **** Sie im Feld Testname und- **Beschreibung**die Informationen ein.
+3. Geben Sie unter Name und **Beschreibung** **Testen** die Informationen ein.
     
-4. Wählen Sie **** in der Liste Testtyp **die Option Slice testen**aus.
+4. Wählen Sie **** in der Liste Testtyp **die Option Segment testen**aus.
     
-5. Wählen Sie in der Liste **Problem** den Problem Namen aus. 
+5. Wählen Sie in der Liste **Problem** den Namen des Problems aus. 
     
 6. Wählen Sie in der Liste **Laden** die Option Laden aus. 
     
-7. Übernehmen **Sie in% zwischen gelesen**die Standardwerte niedrig und hoch, oder wählen Sie Werte für die Ergebnisse der Cutoff-Relevanz aus. 
+7. Akzeptieren Sie in **Read% zwischen**die Standardwerte Low und High Range, oder wählen Sie Werte für die Punkte für die Grenz Wert Relevanz aus. 
     
-8. Wählen Sie unter **festGelegte Größe**einen Wert aus, oder übernehmen Sie den Standardwert.
+8. Wählen Sie unter **festgelegte Größe**einen Wert aus, oder übernehmen Sie den Standardwert.
     
-    Die Wiederherstellungs Symbole stellen den Standardwert wieder her.
+    Mit den Wiederherstellungs Symbolen wird der Standardwert wiederhergestellt.
     
 9. Klicken Sie auf **Tagging starten**. Ein Test Beispiel wird generiert.
     
-10. Überarbeiten und markieren Sie die einzelnen Dateien auf der Registerkarte ** \> relevanztag** , und klicken Sie anschließend auf **berechnen**. 
+10. Überprüfen und markieren Sie die Dateien auf der Registerkarte ** \> Relevanz-Tag** , und klicken Sie dann auf **berechnen**. 
     
 11. Auf der Registerkarte Test können Sie auf **Ergebnisse anzeigen** klicken, um die Testergebnisse anzuzeigen. 
     
@@ -111,13 +111,13 @@ Der Test "Slice testen" führt Tests ähnlich dem Test "Test the Rest" durch, je
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Bedeutung der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
+[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Tagging und Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Tagging-und Relevanz-Schulung](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Tagging und Relevanz Training](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Nachverfolgen der Relevanz-Analyse](track-relevance-analysis-in-advanced-ediscovery.md)
+[Analyse der nach Verfolgungs Relevanz](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Entscheiden basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Entscheidung basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
 

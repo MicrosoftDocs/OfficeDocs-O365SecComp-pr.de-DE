@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: 'Wenn ein ehemaliger Mitarbeiter zu Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt wird, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
-ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Wenn ein ehemaliger Mitarbeiter in Ihrer Organisation zurückkehrt oder ein neuer Mitarbeiter für die Übernahme der Aufgaben eines abgemeldeten Mitarbeiters eingestellt ist, können Sie den Inhalt des inaktiven Postfachs in Office 365 wiederherstellen. Wenn Sie ein inaktives Postfach wiederherstellen, wird es in ein neues Postfach konvertiert, das den Inhalt des inaktiven Postfachs enthält. '
+ms.openlocfilehash: be7935472363e406a978c09f926776e69c3024fe
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261543"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156917"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Wiederherstellen eines inaktiven Postfachs in Office 365
 
@@ -32,11 +32,11 @@ Ein inaktives Postfach (eine Art vorläufig gelöschtes Postfach) wird verwendet
 Im Abschnitt [Weitere Informationen](#more-information) finden Sie weitere Details zu den Unterschieden zwischen dem Rückspeichern und Wiederherstellen eines inaktiven Postfachs und eine Beschreibung, was passiert, wenn ein inaktives Postfach wiederhergestellt wird.
   
 > [!NOTE]
-> Wir haben den Stichtag für das Erstellen eines neuen in-situ-Speichers verschoben, um ein Postfach inaktiv zu machen. Aber zu einem späteren Zeitpunkt können Sie keine neuen in-situ-Speicher in Exchange Online erstellen. Zu diesem Zeitpunkt können nur Rechtsstreitigkeiten und Office 365-Aufbewahrungsrichtlinien zum Erstellen eines inaktiven Postfachs verwendet werden. Vorhandene inaktive Postfächer im in-situ-Speicher werden jedoch weiterhin unterstützt, und Sie können weiterhin die in-situ-Speicher für inaktive Postfächer verwalten. Dazu gehört das Ändern der Dauer eines in-situ-Speichers und das permanente Löschen eines inaktiven Postfachs durch Entfernen des in-situ-Speichers. 
+> Wir haben die Frist für die Erstellung neuer in-Place-Speicher verschoben, damit ein Postfach inaktiv wird. Aber irgendwann in der Zukunft werden Sie nicht in der Lage sein, neue in-Place-Aufbewahrungen in Exchange Online zu erstellen. Zu diesem Zeitpunkt können nur Beweissicherungsverfahren und Office 365 Aufbewahrungsrichtlinien verwendet werden, um ein inaktives Postfach zu erstellen. Vorhandene inaktive Postfächer, die sich in-situ-Speicher befinden, werden jedoch weiterhin unterstützt, und Sie können die in-situ-Speicher für inaktive Postfächer weiterhin verwalten. Dies umfasst das Ändern der Dauer eines in-situ-Speichers und das dauerhafte Löschen eines inaktiven Postfachs durch Entfernen des in-situ-Speichers. 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Zum Rückspeichern eines inaktiven Postfachs müssen Sie Exchange Online PowerShell verwenden. Das Exchange Admin Center (EAC) kann hierfür nicht verwendet werden. Schrittweise Anleitungen finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+- Zum Rückspeichern eines inaktiven Postfachs müssen Sie Exchange Online PowerShell verwenden. Das Exchange Admin Center (EAC) kann hierfür nicht verwendet werden. Eine Schritt-für-Schritt-Anleitung finden Sie unter [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
 - Führen Sie den folgenden Befehl aus, um die Identitätsinformationen für die inaktiven Postfächer in Ihrer Organisation abzurufen. 
 
@@ -46,7 +46,7 @@ Im Abschnitt [Weitere Informationen](#more-information) finden Sie weitere Detai
 
     Verwenden Sie die von diesem Befehl zurückgegebenen Informationen, um ein bestimmtes inaktives Postfach wiederherzustellen.
     
-- Weitere Informationen zu inaktiven Postfächern finden Sie unter inAktive [Postfächer in Office 365](inactive-mailboxes-in-office-365.md).
+- Weitere Informationen zu inaktiven Postfächern finden Sie unter [inactive Mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
     
 ## <a name="recover-an-inactive-mailbox"></a>Wiederherstellen eines inaktiven Postfachs
 
@@ -61,13 +61,13 @@ Verwenden Sie das Cmdlet **New-Mailbox** mit dem Parameter *InactiveMailbox* , u
     > [!IMPORTANT]
     > Verwenden Sie im vorherigen Befehl den Wert der Eigenschaft **DistinguishedName** oder **ExchangeGUID** zum Identifizieren des inaktiven Postfachs. Diese Eigenschaften sind für jedes Postfach in Ihrer Organisation eindeutig, wobei ein aktives und ein inaktives Postfach die gleiche primäre SMTP-Adresse haben können. 
   
-2. In diesem Beispiel werden die mit dem vorherigen Befehl abgerufenen Eigenschaften verwendet, und das inaktive Postfach wird in ein aktives Postfach für die Benutzerin Ann Beebe wiederhergestellt. Stellen Sie sicher, dass die für die Parameter *Name* und *MicrosoftOnlineServicesID* angegebenen Werte innerhalb Ihrer Organisation eindeutig sind. 
+2. In diesem Beispiel werden die mit dem vorherigen Befehl abgerufenen Eigenschaften verwendet, und das inaktive Postfach wird in ein aktives Postfach für die Benutzerin Ann Beebe wiederhergestellt. Stellen Sie sicher, dass die für den Parameter " *Name* " und " *MicrosoftOnlineServicesID* " angegebenen Werte innerhalb Ihrer Organisation eindeutig sind. 
 
     ```
     New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name annbeebe -FirstName Ann -LastName Beebe -DisplayName "Ann Beebe" -MicrosoftOnlineServicesID Ann.Beebe@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
     ```
 
-    Die primäre SMTP-Adresse für das wiederhergestellte inaktive Postfach hat den gleichen Wert wie der durch den *MICROSOFTONLINESERVICESID* -Parameter. 
+    Die primäre SMTP-Adresse für das wiederhergestellte inaktive Postfach hat denselben Wert wie der, der durch den *MicrosoftOnlineServicesID* -Parameter angegeben wird. 
     
 Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 365-Benutzerkonto erstellt. Sie müssen dieses Benutzerkonto aktivieren, indem Sie eine Lizenz zuweisen. Weitere Informationen zum Zuweisen von Lizenzen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Lizenzen und Aufheben der Zuweisung von Lizenzen für Office 365 für Unternehmen](https://go.microsoft.com/fwlink/p/?LinkId=276798).
   
@@ -89,7 +89,7 @@ Nach dem Wiederherstellen eines inaktiven Postfachs wird auch ein neues Office 3
     
 - **Aktivieren Sie das Beweissicherungsverfahren für das wiederhergestellte Postfach, wenn Sie den ursprünglichen Zustand des inaktiven Postfachs bewahren müssen.** Um zu verhindern, dass der neue Besitzer des Postfachs oder die Aufbewahrungsrichtlinie Nachrichten aus dem wiederhergestellten inaktiven Postfach endgültig löscht, können Sie für das Postfach das Beweissicherungsverfahren aktivieren. Weitere Informationen finden Sie unter [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286).
     
-- **Welche Benutzer-ID kann für das Wiederherstellen eines inaktiven Postfachs verwendet werden?** Wenn Sie ein inaktives Postfach wiederherstellen, kann sich der Wert, den Sie für den *MicrosoftOnlineServicesID* -Parameter angeben, von der ursprünglichen, die dem inaktiven Postfach zugeordnet war, unterscheiden. Sie können auch die ursprüngliche Benutzer-ID verwenden. Wie bereits erwähnt, stellen Sie jedoch sicher, dass die für *Name* und *MicrosoftOnlineServicesID* verwendeten Werte innerhalb Ihrer Organisation eindeutig sind, wenn Sie das inaktive Postfach wiederherstellen. 
+- **Welche Benutzer-ID kann für das Wiederherstellen eines inaktiven Postfachs verwendet werden?** Wenn Sie ein inaktives Postfach wiederherstellen, kann sich der Wert, den Sie für den *MicrosoftOnlineServicesID* -Parameter angeben, von dem Original, das dem inaktiven Postfach zugeordnet wurde, unterscheiden. Sie können auch die ursprüngliche Benutzer-ID verwenden. Aber wie bereits erwähnt, stellen Sie sicher, dass die für *Name* und *MicrosoftOnlineServicesID* verwendeten Werte innerhalb Ihrer Organisation eindeutig sind, wenn Sie das inaktive Postfach wiederherstellen. 
     
 - **Was geschieht, wenn die Aufbewahrungszeit für das inaktive Postfach nicht abgelaufen ist?** Wenn ein inaktives Postfach vor weniger als 30 Tagen vorläufig gelöscht wurde, kann es nicht mit dem Befehl **New-Mailbox -InactiveMailbox** wiederhergestellt werden. Sie müssen es wiederherstellen, indem Sie das entsprechende Office 365-Benutzerkonto wiederherstellen. Weitere Informationen finden Sie unter [Löschen oder Wiederherstellen von Benutzern](https://go.microsoft.com/fwlink/p/?LinkId=279162).
     

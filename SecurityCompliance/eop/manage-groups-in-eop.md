@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Sie können Exchange Online Protection (EOP) zur Erstellung E-Mail-aktivierter Gruppen für eine Exchange-Organisation verwenden. Sie können EOP auch verwenden, um Gruppeneigenschaften zu definieren oder zu aktualisieren, über die Mitgliedschaften, E-Mail-Adressen und andere Aspekte von Gruppen festgelegt werden.
-ms.openlocfilehash: db649e4fd955d13e50e96007e8e38fe2c1de5b4d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 090f76d034dcdcbc774666830fd0cbc54815f8c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255913"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153137"
 ---
 # <a name="manage-groups-in-eop"></a>Verwalten von Gruppen in EOP
 
@@ -78,7 +78,7 @@ Sie können für Ihre Exchange-Organisation zwei Arten von Gruppen erstellen:
     
 2. Führen Sie einen der folgenden Schritte aus:
     
-  - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Verteiler-oder Sicherheitsgruppe, die Sie anzeigen oder ändern möchten, **** ![und klicken Sie](../media/ITPro-EAC-EditIcon.gif)dann auf Bearbeitungssymbol bearbeiten. Sie können je nach Bedarf allgemeine Einstellungen aktualisieren sowie Gruppenbesitzer oder Gruppenmitglieder hinzufügen oder entfernen.
+  - So bearbeiten Sie eine Gruppe: Klicken Sie in der Liste der Gruppen auf die Verteilungs-oder Sicherheitsgruppe, die Sie anzeigen oder ändern möchten **** ![, und klicken](../media/ITPro-EAC-EditIcon.gif)Sie dann auf Bearbeitungssymbol bearbeiten. Sie können je nach Bedarf allgemeine Einstellungen aktualisieren sowie Gruppenbesitzer oder Gruppenmitglieder hinzufügen oder entfernen.
     
   - So entfernen Sie eine Gruppe Markieren Sie die Gruppe, und klicken Sie auf **Entfernen**![Entfernen (Symbol)](../media/ITPro-EAC-RemoveIcon.gif).
     

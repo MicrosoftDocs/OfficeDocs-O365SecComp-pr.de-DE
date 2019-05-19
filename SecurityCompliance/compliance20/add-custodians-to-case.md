@@ -1,10 +1,10 @@
 ---
-title: Hinzufügen von Bewahrern zu einem Advanced eDiscovery (Preview)-Fall
+title: Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,89 +14,101 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8cc3d7db959c31c4657bb8c0d270f014e598e143
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243563"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155337"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Hinzufügen von Bewahrern zu einem Advanced eDiscovery (Preview)-Fall
+# <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Hinzufügen von Verwaltern zu einem erweiterten eDiscovery-Fall
 
-Mit Advanced eDiscovery (Preview) können Sie das integrierte Depot Verwaltungstool nutzen, um Ihre Workflows rund um die Verwaltung von Verwaltern und die Identifizierung relevanter, Freiheits enthaltener Datenquellen in einem Fall zu koordinieren. Wenn Sie eine Depotbank hinzufügen, kann das System die primären Exchange-Postfächer und die OneDrive for Business-Website automatisch identifizieren. Wenn Sie Ihre Ermittlung durchführen, können Sie auch zusätzliche Postfächer oder Websites aufdecken und zuordnen, auf die ein Verwalter in der Vergangenheit oder Teams zugegriffen hat, von denen ein Verwalter heute Mitglied ist.
+Verwenden Sie das integrierte Depot Verwaltungstool in Advanced eDiscovery, um Ihre Workflows rund um das Verwalten von Depotbanken zu koordinieren und relevante, Freiheits geschützte Datenquellen zu identifizieren, die einem Fall zugeordnet sind. Wenn Sie eine Depotbank hinzufügen, kann das System das Exchange-Postfach und das OneDrive für Unternehmen Konto automatisch identifizieren und aufbewahren. Während des Ermittlungsprozesses ihrer Untersuchung können Sie auch zusätzliche Datenquellen (wie Postfächer, Websites oder Teams) identifizieren, auf die eine Depotbank zugegriffen oder dazu beigetragen hat. In diesem Fall können Sie das Depot Verwaltungstool verwenden, um diese Datenquellen einer bestimmten Depotbank zuzuordnen. Nachdem Sie einem Fall Verwalter hinzugefügt und ihm eine andere Datenquelle zugeordnet haben, können Sie schnell Daten aufbewahren und die Freiheits Schutz-Daten durchsuchen.
 
-Verwenden Sie den folgenden Workflow, um Verwalter in Advanced eDiscovery (Preview)-Fällen im Security & Compliance Center hinzuzufügen und zu verwalten. 
+Verwenden Sie den folgenden Workflow, um Verwalter in erweiterten eDiscovery-Fällen hinzuzufügen und zu verwalten. 
 
-![Registerkarte Depotverwaltung](../media/CustodianMgtPage.png)
+![Registerkarte "Depotverwaltung"](../media/CustodianMgtPage.png)
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
+
+Um einem Fall Verwalter hinzuzufügen, müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" sein. Auf diese Weise erhalten Sie die erforderlichen Berechtigungen zum Hinzufügen von Bewahrern zu einem Fall und zum Aufbewahren der Datenquellen für den Freiheitsentzug.
 
 
-## <a name="step-1-identify-potential-custodians"></a>Schritt 1: Identifizieren potenzieller Verwalter
+## <a name="step-1-add-potential-custodians"></a>Schritt 1: Hinzufügen potenzieller depotverwalter
 
-Der erste Schritt besteht darin, die geeigneten Verwalter für Ihre Angelegenheit zu identifizieren. Um einem Fall Verwalter hinzuzufügen, müssen Sie Mitglied der Rollengruppe "eDiscovery-Manager" oder "eDiscovery-Admins" sein.   
+Der erste Schritt besteht darin, die Verwalter für den Fall zu identifizieren und hinzuzufügen.
 
-![Identifizieren potenzieller Verwalter](../media/AddCustodianStep1.png)
-
-So fügen Sie einem vorhandenen Advanced eDiscovery (Preview)-Fall Verwalter hinzu:
-
-1. Wechseln Sie auf der Seite **Advanced eDiscovery (Preview)** zu Ihrem Fall.
+1. Klicken Sie auf der Seite für die **Erweiterte eDiscovery** -Homepage auf den Fall, dem Sie Verwalter hinzufügen möchten. 
  
-2. Nachdem Sie einen Fall ausgewählt haben, wechseln Sie zur **** Registerkarte depotbanks, und klicken Sie auf **+ Depotbank hinzufügen**. 
+2. Klicken Sie auf die Registerkarte **depotverwalter** , und klicken Sie dann auf **depotverwalter hinzufügen**.
+
+3. Hier finden Sie die Verwalter, die dem Fall hinzugefügt werden sollen. Geben Sie den ersten Teil des Namens einer Person ein, um Benutzer aus der Azure-Active Directory Ihrer Organisation anzuzeigen. Wenn Sie die richtige Person gefunden haben, klicken Sie auf Ihren Namen, um Sie der Liste hinzuzufügen.
+
+   ![Ermitteln potenzieller depotverwalter](../media/AddCustodianStep1.png)
  
-3. Wählen Sie die Verwalter aus, die Sie der Anfrage hinzufügen möchten. Sie können zunächst eingeben, um die Benutzer aus Azure Active Directory Ihrer Organisation zu suchen und auszuwählen.
- 
-4. Nachdem Sie die Liste der Verwalter abgeschlossen haben, klicken Sie auf **weiter** , um mit der Identifizierung potenzieller Datenquellen zu beginnen. 
+4. Nachdem Sie alle relevanten Verwalter hinzugefügt haben, klicken Sie auf **weiter** , um die primären Datenquellen der Depotbank auszuwählen.
   
-## <a name="optional-step-2-select-custodian-data-sources"></a>Optional Schritt 2: Auswählen von Depotbank-Datenquellen
+## <a name="step-2-select-custodian-data-sources"></a>Schritt 2: Auswählen von Depotdaten Quellen
 
-Nachdem Sie einem Fall Verwalter hinzugefügt haben, können Sie Office 365 für die Identifizierung und Aufbewahrung der primären Depotbank-Datenquellen nutzen. Im nächsten Schritt dieses Workflows werden die Datenquellen ausgewählt, die den in Schritt 1 angegebenen depotbanks gehören. 
-
-![Wählen Sie Datenquellen für FreiheitsEntzug aus](../media/AddCustodianStep2.png)
+Nach dem Hinzufügen von Depotbanken hilft Ihnen das depotverwalter-Tool, die primären Datenquellen zu identifizieren, die im Besitz jeder Depotbank sind. Diese Datenspeicherorte sind insbesondere das Exchange-Postfach des Depotbank und das OneDrive-Konto. 
 
 So identifizieren Sie Depotbank-Datenquellen: 
 
-1. Wählen Sie für jede Depotbank **Exchange** aus, wenn das primäre Exchange-Postfach des Depot Systems automatisch ermittelt und hinzugefügt werden soll. 
+1. Wenn Sie das Exchange-Postfach für alle Verwalter auswählen möchten, klicken Sie oben in der Spalte auf das Kontrollkästchen **Exchange** . Beachten Sie, dass Sie das Kontrollkästchen für eine bestimmte Depotbank deaktivieren können, um ein Postfach als Speicherort für die Freiheitsentzug zu entfernen. Alternativ können Sie das Kontrollkästchen **Exchange** oben in der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
  
-2. Wählen Sie für jede Depotbank **OneDrive** aus, wenn Sie möchten, dass das System die primäre ONEDRIVE-URL der Depotbank automatisch identifiziert und hinzufügt. 
-
-    Nachdem Sie Ihre Auswahl getroffen haben, versucht das System automatisch, die Datenquellen zu identifizieren und zu Ihrem Fall hinzuzufügen.
+   ![Auswählen von Datenquellen für sorgeberechtigte](../media/AddCustodianStep2.png)
  
-4. Klicken Sie auf **weiter** , um mit dem Zuordnen zusätzlicher Datenquellen zur Depotbank zu beginnen.
+2. Wiederholen Sie die gleiche Sache für die OneDrive-Konten der Verwalter. 
 
-## <a name="optional-step-3-map-additional-data-sources"></a>Optional Schritt 3: Zuordnen zusätzlicher Datenquellen
+    Nachdem Sie die Depotbank-Datenquellen ausgewählt haben, versucht das System automatisch, diese Datenquellen zu identifizieren und zu überprüfen, und fügt Sie dann dem Fall als Datenquellen hinzu, die den Depotbanken zugeordnet sind.
+ 
+4. Klicken Sie auf **weiter** , um mit dem Zuordnen zusätzlicher Datenquellen zu den Depotstellen in dem Fall zu beginnen.
 
-Je nach Fall möchten Sie möglicherweise auch Postfächer hinzufügen, die ein bestimmter Depotbank in der Vergangenheit verwendet haben kann, Gruppen, in denen ein Depotbank derzeit Mitglied ist, oder Websites, auf die ein Verwalter in der Vergangenheit Zugriff hatte. Zusätzlich zu den primären Depotbank-Datenquellen können Sie zusätzliche Office 365-Datenquellen einem depotverwalter hinzufügen oder Office 365 nutzen, um potenziell relevante Datenquellen zu identifizieren. 
+## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>Schritt 3: Zuordnen zusätzlicher Datenquellen zu einer Depotstelle
 
-![Zuordnen zusätzlicher Datenquellen](../media/AddCustodianStep3.PNG)
+Je nachdem, welchen Fall Sie untersuchen, müssen Sie möglicherweise auch Postfächer suchen (und beibehalten), auf die eine bestimmte Depotbank zugegriffen haben kann, Office 365 Gruppen, auf die eine Depotbank derzeit gehört, oder auf Websites, auf die auch eine Depotbank zugegriffen hat. Zusätzlich zu den primären Depotdaten Quellen, die Sie im vorherigen Schritt angegeben haben, können Sie auch zusätzliche Office 365 Datenquellen mit einer Depotbank in dem Fall verknüpfen. 
 
-Zuordnen von Postfächern, Websites oder Teams zu einem bestimmten Depot:
-1. Wählen Sie **Hinzufügen** aus, um einem bestimmten Verwalter inhaltsspeicherorte wie Postfächer, Websites und Teams zuzuweisen. 
+So ordnen Sie Postfächern, Websites oder Teams einer bestimmten Depotbank zu:
 
-2. Geben Sie im Flyout Folgendes an: ![Zuordnen von Datenquellen](../media/AddCustodianStep4.PNG)
-  -  **Exchange-Postfächer** – klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Zum Angeben von Postfächern, die dem ausgewählten depotverwalter zugewiesen werden sollen, verwenden Sie das Suchfeld, um nach Benutzerpostfächern und Verteilergruppen zu suchen. Sie können auch das zugeordnete Postfach für eine Office 365-Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+1. Klicken Sie auf der Seite **Weitere Datenquellen auswählen** in der Zeile für die jeweilige Depotbank auf **Hinzufügen** . 
+  
+   ![Zuordnen zusätzlicher Datenquellen](../media/AddCustodianStep3.PNG)
+
+2. Auf der Flyout-Seite können Sie eine Datenquelle aus den folgenden Office 365 Diensten angeben:
+  
+   -  **Exchange-e-Mail** -klicken Sie auf **Benutzer, Gruppen oder Teams auswählen** , und klicken Sie dann erneut auf **Benutzer, Gruppen oder Teams auswählen** . Verwenden Sie das Suchfeld, um nach Postfächern zu suchen, die der Depotbank zugeordnet werden sollen. Zum Angeben von Postfächern, die der ausgewählten Depotbank zugewiesen werden sollen, suchen Sie im Suchfeld nach Benutzerpostfächern und Verteilergruppen. Sie können auch das zugeordnete Postfach für eine Office 365 Gruppe oder ein Microsoft-Team zuweisen. Aktivieren Sie das Kontrollkästchen Benutzer, Gruppe, Team, klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
 
         > [!NOTE]
-        > Wenn Sie auf Benutzer, Gruppen oder Teams zum Angeben von Postfächern klicken, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Wenn Sie Personen zu dieser Liste hinzufügen möchten, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein.
+        > Wenn Sie auf Benutzer, Gruppen oder Teams auswählen, um Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Geben Sie einen Namen oder Alias (mindestens 3 Zeichen) in das Suchfeld ein, um dieser Liste ein Postfach hinzuzufügen.
      
-     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um zusätzliche SharePoint-und OneDrive für Business-Websites anzugeben, die Sie dem ausgewählten depotverwalter zuweisen möchten. Sie können auch die URL für die SharePoint-Website für eine Office 365-Gruppe oder ein Microsoft-Team hinzufügen. Geben Sie die URL für jede Website ein, die Sie zuweisen möchten. Klicken Sie auf **auswählen**und dann auf **Fertig**.
-     - **Microsoft Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft-Team Gruppen anzuzeigen, von denen die Depotbank heute Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrem depotverwalter hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach aus, die diesem Microsoft-Team zugeordnet sind. Klicken Sie auf **auswählen**und dann auf **Fertig**.
+     - **SharePoint-Websites** – klicken Sie auf **Websites auswählen** , und klicken Sie dann erneut auf **Websites auswählen** , um eine Liste der SharePoint-Websites in Ihrer Organisation anzuzeigen. Zum Zuordnen einer Website zur Depotbank können Sie eine Website in der Liste auswählen oder die URL einer anderen Website oder Website eingeben, die einer Office 365 Gruppe, einem Microsoft Team oder einem OneDrive-Konto zugeordnet ist.
+     
+     - **Teams** – klicken Sie auf **Teams auswählen** , und klicken Sie dann erneut auf **Teams auswählen** , um eine Liste der Microsoft Teams anzuzeigen, in denen die Depotbank derzeit Mitglied ist. Wählen Sie die Teams aus, die Sie Ihrer Depotbank hinzufügen möchten. Nach der Auswahl identifiziert das System automatisch & wählen Sie die zugeordnete SharePoint-Website und das Gruppenpostfach aus, das diesem Microsoft-Team zugeordnet ist. Klicken Sie auf **auswählen**, und klicken Sie dann auf **Fertig**.
+
+       ![Zuordnen von Datenquellen](../media/AddCustodianStep4.PNG)
         
       > [!NOTE]
-      > Um zusätzliche Microsoft Teams hinzuzufügen, müssen Sie das Postfach und die SharePoint-Website, wie oben dargestellt, separat hinzufügen.
+      > Wenn Sie ein zusätzliches Team einer Depotbank zuordnen möchten, müssen Sie das Postfach und den Standort, der dem Team zugeordnet ist, separat mithilfe der Speicherorte von **Exchange-e-Mail** und **SharePoint-Websites** hinzufügen.
 
-Nachdem Sie die Zuordnung Ihrer Quellen abgeschlossen haben, können Sie die Gesamtanzahl der Postfächer, Websites und Teams für die Verwalter anzeigen, die Sie soeben hinzugefügt haben. Wenn Sie die für einen bestimmten Verwalter relevanten Datenquellen finalisiert haben, wird diese Zuordnung verwaltet und auf die eDiscovery-Sammlung, Verarbeitung und Überprüfung von Workflows ausgedehnt. 
+Nachdem Sie die Zuordnung zusätzlicher Datenquellen zu den Depotstellen abgeschlossen haben, können Sie auf der **Seite Weitere Datenquellen auswählen**die Gesamtzahl der Postfächer, Websites und Teams anzeigen, die mit den einzelnen Depotbanken verknüpft sind. Wenn Sie die relevanten Datenquellen für eine bestimmte Depotbank abgeschlossen haben, wird diese Zuordnung während der Sammlungs-, Verarbeitungs-und Überprüfungsphase im eDiscovery-Workflow beibehalten und verwendet.
 
-## <a name="optional-step-4-place-custodians-on-hold"></a>Optional Schritt 4: Platzieren Sie Verwalter in der Warteschleife
+## <a name="step-4-place-custodians-on-hold"></a>Schritt 4: Platzieren von Depot Haltern
 
-![Platz](../media/AddCustodianStep5.PNG)
+Nachdem Sie die Verwalter und Datenquellen abgeschlossen haben, die dem Fall hinzugefügt werden sollen, können Sie optional einige oder alle depotverwalter in der Warteschleife platzieren. Wenn Sie eine Depotstelle aufbewahren, werden alle Inhalte in allen Inhaltsspeicherorten, die der Depotbank zugeordnet sind, beibehalten, bis Sie den Haltebereich entfernen oder die Depotbank aus dem freigeben. In einigen Fällen möchten Sie möglicherweise Verwalter einem Fall hinzufügen, ohne diese in den Wartebereich zu versetzen.
 
-Nachdem Sie die Verwalter und Datenquellen, die Sie zu Ihrem Fall hinzufügen möchten, abgeschlossen haben, können Sie optional einige oder alle Ihre Verwalter aufbewahren. Wenn Sie eine Aufbewahrungsstelle aufbewahren, werden die diesem Benutzer zugeordneten Inhalte aufbewahrt, bis Sie die Depotbank aus dem Fall freigeben oder den Haltestatus löschen. In einigen Fällen möchten Sie möglicherweise Verwalter zu einem Fall hinzufügen, ohne Sie zu halten. 
+So platzieren Sie die Depotstellen und Datenquellen in der Warteschleife:
 
-So platzieren Sie die ausgewählten Verwalter und Datenquellen in der Warteschleife:
+1. Klicken Sie auf der Seite Aufbewahrungszeit **auf der ausgewählten Depotstelle platzieren** auf das Kontrollkästchen **halten** am oberen Rand der Spalte, um alle depotverwalter zu speichern. Beachten Sie, dass Sie das Kontrollkästchen für eine bestimmte Depotbank deaktivieren können, die aus dem Haltestatus entfernt werden soll. Alternativ können Sie das Kontrollkästchen **halten** am oberen Rand der Spalte deaktiviert lassen und dann das Kontrollkästchen für einzelne depotverwalter aktivieren. 
+ 
+   ![Platz hält](../media/AddCustodianStep5.PNG)
 
-1. Überprüfen Sie Ihre Depot Auswahl, und aktivieren Sie das Kontrollkästchen, um die Aufbewahrungszeit für jede Depotbank zu platzieren. Nachdem eine Depotbank in der Warteschleife gehalten wurde, wird automatisch eine Depotbank-Aufbewahrungsrichtlinie erstellt, die alle Depot Quellen enthält. Wenn die Option nicht aktiviert ist, werden die Depotbank und die ausgewählten Datenquellen dem Fall hinzugefügt, aber der Inhalt wird nicht beibehalten.
+2. Überprüfen Sie die Aufbewahrungsoptionen, und klicken Sie dann auf **Fertig**stellen.
 
-2. Wechseln Sie zur Registerkarte halte **Status** , und wählen Sie die **Aufbewahrungsrichtlinie**aus. 
+Wenn Sie keinen Aufbewahrungsplatz als depotverwalter festlegen, wird der Verwalter und die ihm zugeordneten Datenquellen dem Fall hinzugefügt, der Inhalt dieser Datenquellen wird jedoch nicht gespeichert.
 
-3. Klicken Sie auf **Bearbeiten** , um alle ausgewählten Depotbank-Datenquellen anzuzeigen.
+Nachdem eine Depotbank in den Wartebereich versetzt wurde, wird automatisch eine Depotbank-Aufbewahrungsrichtlinie erstellt, die alle Freiheitsentzug-Quellen enthält. So zeigen Sie diese Richtlinie an:
 
-   
+1. Klicken Sie auf der **Start** Seite der Anfrage auf die Registerkarte halte **Status** , und klicken Sie dann auf **CustodianHold-GUID**,  
+
+2. Klicken Sie auf der Flyout-Seite auf **Speichern Bearbeiten** , um alle Depotdaten Quellen anzuzeigen, die in der Warteschleife gespeichert werden.
+

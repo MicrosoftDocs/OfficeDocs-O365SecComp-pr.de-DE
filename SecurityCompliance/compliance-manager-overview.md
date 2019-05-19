@@ -3,7 +3,7 @@ title: Übersicht über den Microsoft Compliance-Manager
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,151 +11,151 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft Service Trust-Portal. Mit Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: a2f59eac63f8bbef98da09c2149e49ec32e56b77
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
+ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473102"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155287"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
 > [!IMPORTANT]
 > Der Compliance-Manager ist nicht in Office 365, betrieben von 21Vianet, Office 365 Deutschland, Office 365 US Government Community High (GCC) High oder Office 365 Department of Defense verfügbar.
 
-[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) ist ein kostenloses Workflow basiertes Risiko Bewertungstool, mit dem Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services verfolgen, zuweisen und überprüfen können. Als Teil Ihres Microsoft 365-, Office 365-oder Azure Active Directory-Abonnements unterstützt Compliance Manager Sie bei der Verwaltung der Compliance im Rahmen des gemeinsamen Verantwortungs Modells für Microsoft Cloud Services. Compliance-Manager bietet ein zentrales Dashboard zum Anzeigen von Standards, Vorschriften und zur Steuerung der Implementierungsdetails und Testergebnisse für Microsoft-Dienst Bewertungen. Sie enthält außerdem Tools, mit denen Sie benutzerdefinierte Steuerelement Implementierungen und Compliance-Tracking für Ihre Organisation verwalten können.
+[Microsoft Compliance Manager (Preview)](https://servicetrust.microsoft.com/ComplianceManager) ist ein kostenloses Workflow basiertes Risiko Bewertungstool, mit dem Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services verfolgen, zuweisen und überprüfen können. Als Teil Ihres Microsoft 365-, Office 365-oder Azure Active Directory-Abonnements unterstützt Compliance Manager das Verwalten von behördlichen Vorschriften im Rahmen des Modells für die gemeinsame Verantwortung für Microsoft Cloud Services. Compliance-Manager bietet ein zentralisiertes Dashboard zum Anzeigen von Standards, Regeln und Steuerungs Implementierungsdetails sowie Testergebnisse für Microsoft-Dienst Bewertungen. Es enthält auch Tools, mit denen Sie benutzerdefinierte Steuerelement Implementierungen und die für Ihre Organisation spezifische Konformitäts Verfolgung verwalten können.
 
-Mit Compliance-Manager kann Ihre Organisation:
+Mit dem Compliance-Manager kann Ihre Organisation:
   
-- Kombinieren Sie detaillierte Compliance-Informationen, die von Microsoft für Auditoren und Aufsichtsbehörden zu ihren Cloud-Diensten bereitgestellt werden, mit Ihrer Compliance-Self-Assessment für die für Ihre Organisation geltenden Standards und Vorschriften. Hierzu gehört auch die von der internationalen Organisation für Normung (ISO), dem National Institute of Standards and Technology (NIST), dem Krankenversicherungs-und Verantwortlichkeits Gesetz (HIPAA), den allgemeinen Daten Schutzverordnung (DSGVO) und viele andere.
-- Sie können Compliance-und bewertungsbezogene Aktivitäten zuweisen, nachverfolgen und aufzeichnen, die Ihrer Organisation helfen, über Team Barrieren zu verfügen, um Ihre Compliance-Ziele zu erreichen.
-- Stellen Sie einen Kompatibilitäts Faktor zur verFügung, mit dem Sie Ihren Fortschritt nachverfolgen und Überwachungssteuerelemente priorisieren können, die die Risikoanfälligkeit Ihrer Organisation verringern.
-- Bereitstellen eines sicheren Repositorys zum Hochladen und Verwalten von nachweisen und anderen Artefakten im Zusammenhang mit ihren Compliance-Aktivitäten.
-- Erstellen Sie detaillierte Microsoft Excel-Berichte, die Compliance-Aktivitäten von Microsoft und Ihrer Organisation für Auditoren, Regulierer und andere Compliance-Prüfer dokumentieren.
+- Kombinieren detaillierter Compliance-Informationen von Microsoft für Auditoren und Regulatoren zu seinen Cloud-Diensten mit Ihrer Compliance-Selbsteinschätzung für Standards und Vorschriften, die für Ihre Organisation gelten. Dazu gehören Normen und Verordnungen, die von der internationalen Organisation für Normung (ISO), dem National Institute of Standards and Technology (NIST), der Krankenversicherung Portabilität und dem Rechenschaftspflicht Gesetz (HIPAA), den allgemeinen Daten beschrieben werden. Protection Regulation (dsgvo) und viele andere.
+- Ermöglicht Ihnen, Compliance-und bewertungsbezogene Aktivitäten zuzuweisen, nachzuverfolgen und zu erfassen, mit deren Hilfe Ihre Organisation Team Barrieren überwinden kann, um Ihre Compliance-Ziele zu erreichen.
+- Stellen Sie eine Konformitätsbewertung zur Verfügung, damit Sie Ihren Fortschritt nachverfolgen und Überwachungssteuerelemente priorisieren können, mit denen die Gefährdung Ihrer Organisation reduziert wird.
+- Stellen Sie ein sicheres Repository bereit, mit dem Sie Beweise und andere Artefakte im Zusammenhang mit ihren Compliance-Aktivitäten hochladen und verwalten können.
+- Erstellen Sie ausführliche Microsoft Excel Berichte, in denen Compliance-Aktivitäten dokumentiert werden, die von Microsoft und Ihrer Organisation für Auditoren, Regulatoren und andere Konformitäts Prüfer ausgeführt wurden.
 
 > [!NOTE]
-> Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen; Es ist Ihre Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Empfehlungen im Compliance-Manager sollten nicht als Garantie für die Compliance interpretiert werden.
+> Die im Compliance-Manager bereitgestellten Kundenaktionen sind Empfehlungen; Es liegt in Ihrer Organisation, die Wirksamkeit dieser Empfehlungen in ihrem jeweiligen regulatorischen Umfeld vor der Implementierung zu bewerten. Im Compliance-Manager gefundene Empfehlungen sollten nicht als Garantie für die Compliance interpretiert werden.
 
 ## <a name="compliance-manager-relationships"></a>Compliance-Manager-Beziehungen
 
-Der Compliance-Manager verwendet mehrere Komponenten, die Ihnen bei Ihrer Compliance-Verwaltung helfen. Diese Komponenten arbeiten zusammen, um einen vollständigen Verwaltungsablauf und problemlose Compliance-Berichte für Auditoren bereitzustellen.
+Compliance-Manager verwendet mehrere Komponenten, die Sie bei ihren Compliance-Verwaltungsaktivitäten unterstützen. Diese Komponenten arbeiten zusammen, um einen vollständigen Verwaltungs Workflow und problemlose Kompatibilitätsberichte für Auditoren bereitzustellen.
 
 Das Diagramm zeigt die Beziehungen zwischen den primären Komponenten von Compliance-Manager:
 
-![Beziehungen im Compliance-Manager Version 3](media/compliance-manager-relationships.png)
+![Beziehungen in Compliance-Manager, Version 3](media/compliance-manager-relationships.png)
 
 ## <a name="groups"></a>Gruppen
 
-[Gruppen](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#groups) sind Container, mit denen Sie Bewertungen organisieren und allgemeine Informationen und Workflowaufgaben Zwischenbewertungen mit den gleichen oder verwandten vom Kunden verwalteten Steuerelementen freigeben können. Wenn zwei verschiedene Bewertungen in derselben Gruppe ein vom Kunden verwaltetes Steuerelement verwenden, wird der Abschluss der Implementierungsdetails, Tests und Status für das Steuerelement automatisch mit demselben Steuerelement in jeder anderen Bewertung in der Gruppe synchronisiert. Dadurch werden die zugewiesenen Aktionselemente für jedes Steuerelement in der gesamten Gruppe zusammengeführt und die Duplizierungs Arbeit reduziert. Sie können auch Gruppen zum Organisieren verwenden. Bewertungen nach Jahr, Bereich, Kompatibilitätsstandard oder anderen Gruppierungen zur Unterstützung der Organisation Ihrer Compliance-Arbeit.
+[Gruppen](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#groups) sind Container, die es Ihnen ermöglichen, Bewertungen zu organisieren und allgemeine Informations-und Workflowaufgaben Zwischenbewertungen mit denselben oder Verwandten, vom Kunden verwalteten Steuerelementen freizugeben. Wenn zwei unterschiedliche Bewertungen in derselben Gruppe das vom Kunden verwaltete Steuerelement gemeinsam nutzen, wird der Abschluss der Implementierungsdetails, des Tests und des Status für das Steuerelement in allen anderen Bewertungen in der Gruppe automatisch mit dem gleichen Steuerelement synchronisiert. Dadurch werden die zugewiesenen Aktionselemente für jedes Steuerelement in der gesamten Gruppe vereinheitlicht und Arbeits Duplikate reduziert. Sie können auch festlegen, dass Gruppen zum Organisieren verwendet werden. Assessments nach Jahr, Bereich, Konformitäts Standard oder anderen Gruppierungen, die Ihnen bei der Organisation Ihrer Compliance-arbeiten helfen.
 
 ## <a name="assessments"></a>Bewertungen
 
-[Bewertungen](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#assessments) sind Container, mit denen Sie Steuerelemente basierend auf Zuständigkeiten von Microsoft und Ihrer Organisation für die Bewertung von Cloud Service-Sicherheits-und Compliance-Risiken organisieren können. Bewertungen unterstützen Sie bei der Implementierung von Datenschutzgarantien, die durch einen Compliance-Standard und entsprechende Datenschutzstandards,-Vorschriften oder-Gesetze festgelegt sind. Sie unterstützen Sie dabei, Ihre Datenschutz-und Compliance-Haltung gegenüber dem ausgewählten Branchenstandard für den ausgewählten Microsoft-clouddienst zu erkennen. Bewertungen werden durch die Implementierung von Steuerelementen in der Bewertung abgeschlossen, die einem Zertifizierungsstandard zugeordnet ist.
+[](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#assessments) Bei Assessments handelt es sich um Container, mit denen Sie Steuerelemente basierend auf Zuständigkeiten zwischen Microsoft und Ihrer Organisation für die Bewertung der Sicherheits-und Konformitätsrisiken von Cloud-Diensten organisieren können. Mithilfe von Assessments können Sie Datenschutzgarantien implementieren, die durch einen Compliance-Standard und entsprechende Datenschutzstandards, Verordnungen oder Gesetze festgelegt sind. Sie unterstützen Sie beim Erkennen Ihrer Datenschutz-und Compliance-Haltung gegenüber dem ausgewählten Industriestandard für den ausgewählten Microsoft Cloud-Dienst. Die Bewertungen werden durch die Implementierung von Steuerelementen vervollständigt, die in der Bewertung enthalten sind, die einem Zertifizierungsstandard zugeordnet ist.
 
 Standardmäßig erstellt Compliance-Manager die folgenden Bewertungen für Ihre Organisation:
 
 - Office 365 ISO 27001
 - Office 365 NIST 800-53
-- Office 365 DSGVO
+- Office 365 dsgvo
 
-Bewertungen sind mehrere Komponenten:
+Die Bewertungen umfassen mehrere Komponenten:
   
-- **In-Scope Services**: jede Bewertung gilt für eine bestimmte Gruppe von Microsoft-Diensten.
-- Von **Microsoft verwaltete Steuerelemente**: für jeden clouddienst implementiert und verwaltet Microsoft eine Reihe von Konformitätskontrollen für entsprechende Standards und Vorschriften.
-- Vom **Kunden verwaltete Steuerelemente**: Dies ist die Sammlung von Steuerelementen, die von Ihrer Organisation implementiert werden, wenn Sie Aktionen für jedes Steuerelement ausführen.
-- **Bewertungsergebnis**: der Prozentsatz der Gesamtpunktzahl für vom Kunden verwaltete Steuerelemente in der Bewertung. Auf diese Weise können Sie die Implementierung der jedem Steuerelement zugewiesenen Aktionen nachverfolgen.
+- **In-Scope-Dienste**: jede Bewertung gilt für eine bestimmte Gruppe von Microsoft-Diensten.
+- Von **Microsoft verwaltete Steuerelemente**: Microsoft implementiert und verwaltet für jeden clouddienst eine Reihe von Konformitätskontrollen für zutreffende Standards und Vorschriften.
+- Von **Kunden verwaltete Steuerelemente**: Dies ist die Auflistung von Steuerelementen, die von Ihrer Organisation implementiert werden, wenn Sie Aktionen für jedes Steuerelement ausführen.
+- **Bewertungsfaktor**: der Prozentsatz der Gesamtpunktzahl für vom Kunden verwaltete Steuerelemente in der Bewertung. Auf diese Weise können Sie die Implementierung der jedem Steuerelement zugewiesenen Aktionen nachverfolgen.
 
 ## <a name="controls"></a>Steuerelemente
 
-[Steuerelemente](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#controls-and-actions) sind Compliance-Prozesscontainer im Compliance-Manager, die definieren, wie Sie Compliance-Aktivitäten verwalten. Diese Steuerelemente sind in Steuerelementfamilien gegliedert, die mit der Bewertungsstruktur für entsprechende Zertifizierungen oder Vorschriften übereinstimmen.
+[Steuerelemente](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#controls-and-actions) sind Compliance-Prozesscontainer im Compliance-Manager, die definieren, wie Compliance-Aktivitäten verwaltet werden. Diese Steuerelemente sind in Steuerelementfamilien organisiert, die mit der Bewertungsstruktur für entsprechende Zertifizierungen oder Verordnungen übereinstimmen.
 
 - **Steuerelement-ID**: der Name des ausgewählten Steuerelements aus der entsprechenden Zertifizierung oder Verordnung.
 - **Steuerelement Titel**: der Titel für die Steuerelement-ID aus der entsprechenden Zertifizierung oder Verordnung.
 - **Artikel-ID**: Dieses Feld ist nur für dsgvo-Bewertungen und gibt die entsprechende dsgvo-Artikelnummer an.
-- **Beschreibung**: Text der Kontrolle aus der entsprechenden Zertifizierung oder Verordnung. Aufgrund von Copyright-Einschränkungen ist ein Link zu relevanten Informationen für ISO-Standards aufgeführt.
+- **Description**: Text of Control aus der entsprechenden Zertifizierung oder Verordnung. Aufgrund von Copyright-Einschränkungen wird ein Link zu relevanten Informationen für ISO-Standards aufgeführt.
 
 ![Steuerelemente in Compliance-Manager Version 3](media/compliance-manager-controls.png)
 
-Es gibt drei Arten von Steuerelementen in Compliance-Manager, von **Microsoft verwaltete Steuer**Elemente, vom **Kunden verwaltete**steuerElemente und **freigegebene Verwaltungs Steuer** Elemente.
+Es gibt drei Arten von Steuerelementen im Compliance-Manager, von **Microsoft verwaltete Steuer**Elemente, von **Kunden verwalteten**Steuerelementen und von Steuerelementen für **gemeinsame Verwaltung** .
 
 ### <a name="microsoft-managed-controls"></a>Von Microsoft verwaltete Steuerelemente
 
-Für jeden Cloud-Dienst implementiert und verwaltet Microsoft eine Reihe von Steuerelementen im Rahmen der Einhaltung verschiedener Standards und Vorschriften durch Microsoft. Jedes Steuerelement enthält Details dazu, wie Microsoft das Steuerelement implementiert hat und wie und wann diese Implementierung von Microsoft und/oder von einem unabhängigen Drittanbieter-Prüfer getestet und validiert wurde.
+Für jeden clouddienst implementiert und verwaltet Microsoft eine Reihe von Steuerelementen im Rahmen der Einhaltung verschiedener Standards und Bestimmungen von Microsoft. Jedes Steuerelement enthält Details darüber, wie Microsoft das Steuerelement implementiert hat und wie und wann diese Implementierung von Microsoft und/oder von einem unabhängigen Drittanbieter Prüfer getestet und validiert wurde.
 
 ### <a name="customer-managed-controls"></a>Vom Kunden verwaltete Steuerelemente
 
-Dies ist die Sammlung von Steuerelementen, die von Ihrer Organisation verwaltet werden. Ihre Organisation ist für die Implementierung von Kunden verwalteten Steuerelementen im Rahmen ihres Compliance-Prozesses für einen bestimmten Standard oder eine bestimmte Regelung verantwortlich. Vom Kunden verwaltete Steuerelemente werden in Steuerelementfamilien für die entsprechende Zertifizierung oder Regulierung organisiert. Verwenden Sie die vom Kunden verwalteten Steuerelemente, um die empfohlenen Aktionen zu implementieren, die von Microsoft im Rahmen ihrer Compliance-Aktivitäten vorgeschlagen wurden. Ihre Organisation kann in jedem vom Kunden verwalteten Steuerelement die Anleitungen und empfohlenen Kundenaktionen verwenden, um den Implementierungs-und Bewertungsprozess für dieses Steuerelement zu verwalten.
+Dies ist die Sammlung von Steuerelementen, die von Ihrer Organisation verwaltet werden. Ihre Organisation ist für die Implementierung durch das Kunden verwaltete Steuerelement im Rahmen Ihres Konformitäts Prozesses für einen bestimmten Standard oder eine bestimmte Richtlinie verantwortlich. Von Kunden verwaltete Steuerelemente werden in Kontroll Familien für die entsprechende Zertifizierung oder Regulierung organisiert. Verwenden Sie die von Kunden verwalteten Steuerelemente, um die empfohlenen Aktionen zu implementieren, die von Microsoft als Teil Ihrer Compliance-Aktivitäten vorgeschlagen werden. Ihre Organisation kann die normativen Anleitungen und empfohlenen Kundenaktionen in jeder vom Kunden verwalteten Steuerung verwenden, um den Implementierungs-und Bewertungsprozess für dieses Steuerelement zu verwalten.
 
-Von Kunden verwaltete Steuerelemente in Bewertungen verfügen außerdem über integrierte Workflow Verwaltungsfunktionen, mit denen Sie Ihre Fortschritte bei der Bewertung abschließen können. Mit dieser Workflow-Funktionalität können Sie Folgendes tun:
+Kunden verwaltete Steuerelemente in Assessments verfügen außerdem über integrierte Workflow Verwaltungsfunktionen, mit deren Hilfe Sie den Fortschritt der Abschlussprüfung verwalten und nachverfolgen können. Mit dieser Workflow Funktionalität haben Sie folgende Möglichkeiten:
 
 - Zuweisen von Aktionselementen für jedes Steuerelement
-- NachVerfolgen von zugewiesenen Aktionselementen
-- Hochladen von nachweisen der Implementierung des Steuerelements
-- Dokumentieren des Tests und der Validierung des Steuerelements
-- Kennzeichnen der Aktionselemente als implementiert und getestet
+- Nachverfolgen von zugewiesenen Aktionselementen
+- Hochladen von Beweisen für die Implementierung des Steuerelements
+- Dokumentieren des Tests und der Überprüfung des Steuerelements
+- Die Aktionselemente als implementiert und getestet markieren
 
-Beispielsweise weist ein Compliance Officer in Ihrer Organisation einem IT-Administrator ein Aktionselement mit der Verantwortung und den erforderlichen Berechtigungen zum Ausführen der empfohlenen Aktion zu. Der IT-Administrator lädt den Nachweis der Implementierungsaufgaben hoch (Screenshots der Konfigurations-oder Richtlinieneinstellungen) und weist das Aktionselement nach Abschluss des Compliance-Verantwortlichen zurück. Der Compliance Officer wertet den gesammelten Nachweis aus, testet die Implementierung des Steuerelements und zeichnet das Implementierungsdatum und die Testergebnisse im Compliance-Manager auf.
+Beispielsweise weist ein Compliance Officer in Ihrer Organisation einem IT-Administrator ein Aktionselement zu, in dem die erforderlichen Berechtigungen zum Ausführen der empfohlenen Aktion erforderlich sind. Der IT-Administrator lädt den Nachweis der Implementierungsaufgaben (Screenshots von Konfigurations-oder Richtlinieneinstellungen) und weist das Aktionselement dem Compliance Officer zurück, wenn es abgeschlossen ist. Der Compliance Officer wertet den gesammelten Beweis aus, testet die Implementierung des Steuerelements und zeichnet das Implementierungsdatum und die Testergebnisse im Compliance-Manager auf.
 
-### <a name="shared-management-controls"></a>FreigeGebene Verwaltungssteuerelemente
+### <a name="shared-management-controls"></a>Gemeinsame Verwaltungssteuerelemente
 
-Ein freigegebenes Steuerelement bezieht sich auf alle Steuerelemente, bei denen sowohl Microsoft als auch Kunden Verantwortlichkeiten zur Implementierung teilen. Beispielsweise erfordern Steuerelemente im Zusammenhang mit Personal Screening, Konto-und Kennwortverwaltung und Verschlüsselung Aktionen sowohl von Microsoft als auch von Kunden.
+Ein freigegebenes Steuerelement bezieht sich auf ein beliebiges Steuerelement, bei dem Microsoft und Kunden beide Aufgaben für die Implementierung teilen Beispielsweise erfordern Steuerelemente im Zusammenhang mit der Personal Prüfung, der Konto-und Kennwortverwaltung sowie der Verschlüsselung Aktionen sowohl von Microsoft als auch von Kunden.
 
 ## <a name="action-items"></a>Aktionselemente
 
-[Aktionselemente](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#controls-and-actions) sind in vom Kunden verwaltete Steuerelemente als Teil der integrierten Workflow Verwaltungsfunktionalität enthalten, mit deren Hilfe Sie Ihre Fortschritte bei der Bewertung abschließen können.
+[Aktionen Elemente](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#controls-and-actions) sind in vom Kunden verwalteten Steuerelementen als Teil der integrierten Workflow Verwaltungsfunktionen enthalten, die Sie zum Verwalten und Nachverfolgen des Fortschritts für den Abschluss der Bewertung verwenden können.
 
-Personen in Ihrer Organisation können Compliance-Manager verwenden, um die vom Kunden verwalteten Steuerelemente aus allen Bewertungen zu überarbeiten, denen Sie zugeordnet sind. Wenn sich ein Benutzer beim Compliance-Manager anmeldet und das Dashboard " **Aktionselemente** " öffnet, wird eine Liste der Ihnen zugewiesenen Aktionselemente angezeigt. Je nach der dem Benutzer zugewiesenen Compliance-Manager-Rolle können Sie Implementierungs-oder Testdetails bereitstellen, den Status aktualisieren oder Aktionselemente zuweisen.
+Personen in Ihrer Organisation können den Compliance-Manager verwenden, um die vom Kunden verwalteten Steuerelemente aus allen Bewertungen zu überprüfen, denen Sie zugewiesen sind. Wenn ein Benutzer sich beim Compliance-Manager anmeldet und das **Aktionselemente** -Dashboard öffnet, wird eine Liste der Ihnen zugewiesenen Aktionselemente angezeigt. Je nach der dem Benutzer zugewiesenen Compliance-Manager-Rolle können Sie Implementierungs-oder Testdetails bereitstellen, den Status aktualisieren oder Aktionselemente zuweisen.
 
-Zertifizierungs Kontrollen werden in der Regel von einer Person implementiert und von einem anderen getestet. Wenn beispielsweise Aktionselemente, die einer Person zunächst für die Implementierung zugewiesen wurden, abgeschlossen sind, werden der nächsten Person Aktionselemente zum Testen und Hochladen von beweisen zugewiesen. Jeder Benutzer mit ausreichenden Berechtigungen für Steuer Zuweisungen kann Aktionselemente zuweisen und erneut zuweisen. Dies ermöglicht die zentrale Verwaltung von Steuerungs Zuweisungen und das dezentrale Routing von Aktionselementen zwischen Implementierern und Testern.
+Zertifizierungs Steuerelemente werden in der Regel von einer Person implementiert und von einer anderen getestet. Wenn beispielsweise Aktionselemente, die anfänglich einer Person zugewiesen wurden, für die Implementierung abgeschlossen sind, werden der nächsten Person Aktionselemente zum Testen und Hochladen von beweisen zugewiesen. Jeder Benutzer mit ausreichenden Berechtigungen für Steuerelement Zuweisungen kann Aktionselemente zuweisen und neu zuweisen. Dies ermöglicht eine zentrale Verwaltung von Steuerungs Zuweisungen und das dezentrale Routing von Aktionselementen zwischen Implementierern und Testern.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Der Compliance-Manager verwendet ein [Berechtigungsmodell](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#permissions)für die rollenbasierte Zugriffssteuerung. Standardmäßig verfügt jeder in Ihrer Organisation mit Azure Active Directory (Azure AD) über Vollzugriff und kann beliebige Aktionen im Compliance-Manager ausführen. Sobald die rollenbasierte Zugriffssteuerung von Ihrer Organisation implementiert wurde, wird jedem Benutzer, der keiner definierten Compliance-Manager-Rolle zugewiesen ist, der Gastzugriff zugewiesen. Microsoft-Dienstmitarbeiter haben keinen ständigen Zugriff auf Daten, die Sie eingeben oder hochladen.
+Compliance-Manager verwendet ein [Berechtigungsmodell](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#permissions)für die rollenbasierte Zugriffssteuerung. Standardmäßig verfügt jeder Benutzer in Ihrer Organisation mit Azure Active Directory (Azure AD) über Vollzugriff und kann beliebige Aktionen im Compliance-Manager ausführen. Nachdem die rollenbasierte Zugriffssteuerung von Ihrer Organisation implementiert wurde, wird jedem Benutzer, der keiner definierten Compliance-Manager-Rolle zugewiesen ist, Gastzugriff zugewiesen. Microsoft-Dienstmitarbeiter haben keinen ständigen Zugriff auf Daten, die Sie eingeben oder hochladen.
 
-Um die Standardberechtigungen zu ändern und ein vollständig rollenbasiertes Zugriffssteuerungsmodell zu implementieren, muss jeder Compliance-Manager-Rolle mindestens ein Benutzer hinzugefügt werden. Nachdem ein Benutzer einer Rolle hinzugefügt wurde, werden die Berechtigungen zum Ausführen der dieser Rolle zugewiesenen Aktionen aus dem Standardsatz von Berechtigungen entfernt, die allen Benutzern zur Verfügung stehen. Nur Benutzer, die mit der Rolle bereitgestellt werden, können auf den Compliance-Manager zugreifen und die von dieser Rolle zugelassenen Aktionen ausführen.
+Um von Standardberechtigungen zu wechseln und ein vollständig rollenbasiertes Zugriffssteuerungsmodell zu implementieren, muss jeder Compliance-Manager-Rolle mindestens ein Benutzer hinzugefügt werden. Nachdem ein Benutzer einer Rolle hinzugefügt wurde, werden die Berechtigungen zum Ausführen der dieser Rolle zugewiesenen Aktionen aus den standardmäßigen Berechtigungssätzen entfernt, die allen Benutzern zur Verfügung stehen. Nur Benutzer, die mit der Rolle bereitgestellt werden, können auf den Compliance-Manager zugreifen und die von dieser Rolle zulässigen Aktionen ausführen.
 
-Wenn Sie beispielsweise der Rolle einen Benutzer hinzufügen, um Bewertungen zu verwalten, können nur Mitglieder dieser Rolle Bewertungen verwalten. Wenn Sie der Rolle keinen Benutzer hinzufügen, der Benutzern das Lesen der Daten in Bewertungen ermöglicht, können alle Benutzer in Ihrer Organisation auf Compliance-Manager zugreifen und bei jeder Bewertung Daten lesen.
+Wenn Sie beispielsweise einen Benutzer zur Rolle hinzufügen, um Bewertungen zu verwalten, können nur Mitglieder dieser Rolle Bewertungen verwalten. Wenn Sie der Rolle keinen Benutzer hinzufügen, der Benutzern das Lesen der Daten in Assessments ermöglicht, können alle Benutzer in Ihrer Organisation auf den Compliance-Manager zugreifen und Daten in einer beliebigen Bewertung lesen.
   
-## <a name="manage-evidence"></a>Beweise verwalten
+## <a name="manage-evidence"></a>Verwalten von beweisen
 
-Compliance-Manager kann Beweise für Ihre Implementierungsaufgaben zum Durchführen von Tests und Validierungen von vom Kunden verwalteten Steuerelementen speichern. Der Nachweis umfasst Dokumente, Tabellenkalkulationen, Screenshots, Bilder, Skripts, Skriptausgabe Dateien und andere Dateien. Compliance-Manager erhält auch automatisch Telemetrie und erstellt einen Evidence Record für Aktionselemente, die mit Secure Score integriert sind. Alle Daten, die als Beweismittel in Compliance Manager hochgeladen werden, werden in den Vereinigten Staaten auf Microsoft Cloud-Speicher Standorten gespeichert. Diese Daten werden über Azure-Regionen in Südostasien und Westeuropa repliziert.
+Compliance-Manager kann Beweise für Ihre Implementierungsaufgaben zum Ausführen von Tests und zur Validierung von von Kunden verwalteten Steuerelementen speichern. Evidence enthält Dokumente, Tabellenkalkulationen, Screenshots, Bilder, Skripts, Skriptausgabe Dateien und andere Dateien. Compliance-Manager erhält auch automatisch Telemetrie und erstellt einen Evidence Record für Aktionselemente, die mit Secure Score integriert sind. Alle Daten, die als Beweismaterial in den Compliance-Manager hochgeladen wurden, werden in den USA auf Microsoft-Cloud-Speicher Standorten gespeichert. Diese Daten werden in Azure-Regionen in Südostasien und Westeuropa repliziert.
 
 ## <a name="templates"></a>Vorlagen
 
-Compliance-Manager stellt vorkonfigurierte [Vorlagen](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#templates) für Bewertungen bereit und ermöglicht Ihnen das Erstellen benutzerdefinierter Vorlagen für vom Kunden verwaltete Steuerelemente für Ihre Compliance-Anforderungen. Neue Vorlagen werden erstellt, indem Steuerelementinformationen aus einer Excel-Datei importiert werden, oder Sie können eine Vorlage aus einer Kopie einer vorhandenen Vorlage erstellen.
+Compliance-Manager stellt vorkonfigurierte [Vorlagen](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#templates) für Bewertungen bereit und ermöglicht es Ihnen, angepasste Vorlagen für von Kunden verwaltete Steuerelemente für Ihre Compliance-Anforderungen zu erstellen. Neue Vorlagen werden erstellt, indem Steuerelementinformationen aus einer Excel-Datei importiert werden, oder Sie können eine Vorlage aus einer Kopie einer vorhandenen Vorlage erstellen.
 
-Die im Compliance-Manager enthaltenen vorkonfigurierten Vorlagen sind:
+Die im Compliance-Manager enthaltenen vorkonfigurierten Vorlagen lauten wie folgt:
  
 - [ISO 27001:2013](https://www.iso.org/obp/ui/#iso:std:iso-iec:27001:ed-2:v1:en)
 - [ISO 27018:2019](https://www.iso.org/obp/ui/#iso:std:iso-iec:27018:ed-2:v1:en)
 - [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
 - [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
-- [NIST Cyber Framework (CSF)](https://www.nist.gov/cyberframework)
+- [NIST-Cyber-Framework (CSF)](https://www.nist.gov/cyberframework)
 - [Cloud Security Alliance (CSA) Cloud Control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
-- [Informations Sicherheitsbroschüre des Federal Financial Institutions Examination Council (FFIEC)](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
+- [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
 - [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / -[HITECH](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [FedRAMP moderate](https://www.fedramp.gov/documents/)
-- [Europäische Union DSGVO](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
+- [FedRAMP moderat](https://www.fedramp.gov/documents/)
+- [Dsgvo der Europäischen Union](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
 
-## <a name="compliance-score"></a>KonformitätsBewertung
+## <a name="compliance-score"></a>Kompatibilitätsbewertung
 
-Die [Konformitätsbewertung](compliance-score-methodology.md) ist eine Kernkomponente des Compliance-Managers, die Ihrem Unternehmen hilft, die Compliance zu verstehen und zu verwalten. Wie bei [Microsoft Secure Score](microsoft-secure-score.md)ist die Konformitätsbewertung ein verhaltensbasiertes Bewertungssystem für Aktivitäten im Zusammenhang mit Datenschutz, Privatsphäre und Sicherheit in Ihrer Organisation. Die Konformitätsbewertung für eine Beurteilung ist Ausdruck der Einhaltung einer bestimmten Norm oder Regelung. Je höher der numerische Wert ist, desto besser ist die Konformitäts Position für die Bewertung. Grundlegendes zur Konformitäts Bewertungsmethodik ist entscheidend für die Priorisierung erforderlicher von Kunden verwalteter Steuerungsaktionen.
+Das [Kompatibilitäts Ergebnis](compliance-score-methodology.md) ist eine zentrale Komponente von Compliance-Manager, die Ihrem Unternehmen hilft, die Compliance zu verstehen und zu verwalten. Wie bei der [Microsoft Secure Score](microsoft-secure-score.md)ist das Kompatibilitäts Ergebnis ein verhaltensbasiertes Bewertungssystem für Aktivitäten im Zusammenhang mit dem Datenschutz, der Datenschutz und der Sicherheit in Ihrer Organisation. Die Konformitätsbewertung für eine Bewertung ist ein Ausdruck der Übereinstimmung mit einer bestimmten Norm oder Verordnung. Je höher die numerische Punktzahl ist, desto besser ist die Konformitäts Haltung für die Bewertung. Das Verständnis der Methodik für die Konformitätsbewertung ist entscheidend für die Priorisierung erforderlicher Aktionen durch vom Kunden verwaltete Steuerelemente.
   
 > [!IMPORTANT]
 > Die Compliance-Bewertung drückt kein absolutes Maß für die Einhaltung eines bestimmten Standards oder einer bestimmten Vorschrift in der Organisation aus. Sie drückt vielmehr den Umfang aus, in dem Sie Steuerelemente einsetzen, durch die die Risiken für persönliche Daten und den Datenschutz reduziert werden können. Kein Dienst kann garantieren, dass Sie einen Standard oder eine Vorschrift einhalten. Die Compliance-Bewertung sollte in keinster Weise als eine Garantie verstanden werden.
 
-## <a name="secure-score-integration"></a>Secure Score-Integration
+## <a name="secure-score-integration"></a>Integration von Secure Score
 
-Compliance-Manager ist in [Microsoft Secure Score](microsoft-secure-score.md) integriert, um die Konformitätsbewertung für synchronisierte Aktionselemente automatisch mit einem Secure Score-Guthaben zu versehen. Dies ist für einzelne Aktionselemente konfigurierbar und bietet eine kontinuierliche Aktualisierung zwischen den Elementen.
+Compliance-Manager ist in [Microsoft Secure Score](microsoft-secure-score.md) integriert, um den Kompatibilitäts Bewertungs Wert für synchronisierte Aktionselemente automatisch mit einem sicheren Bewertungs Guthaben zu versehen. Dies ist für einzelne Aktionselemente konfigurierbar und stellt eine kontinuierliche Aktualisierung zwischen den Elementen bereit.
 
-Sie haben beispielsweise eine sicherheitsbezogene Anforderung zum Aktivieren der Azure-Rechteverwaltung in Ihrer Organisation, die auch für ein Compliance-relevantes Aktionselement gilt. Wenn die Azure-Rechteverwaltung von Secure Score aktiviert und verarbeitet wird, erhält der Compliance-Manager eine Benachrichtigung über das Update, und die Punktzahl für das Aktionselement wird automatisch mit dem Fertigstellungs Guthaben aktualisiert.
+Sie haben beispielsweise eine sicherheitsbezogene Anforderung zum Aktivieren der Azure-Rechteverwaltung in Ihrer Organisation, die auch für ein Compliance-bezogenes Aktionselement gilt. Wenn Azure Rights Management aktiviert und von Secure Score verarbeitet wird, erhält Compliance-Manager eine Benachrichtigung über das Update, und die Bewertung für das Aktionselement wird automatisch mit Abschluss Kredit aktualisiert.
 
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
-Beginnen Sie [mit der Zusammenarbeit mit Compliance-Manager](working-with-compliance-manager.md) , um die Compliance-Aktivitäten Ihrer Organisation zu verwalten.
+Beginnen Sie [mit der Zusammenarbeit mit Compliance-Manager](working-with-compliance-manager.md) , um behördliche Compliance-Aktivitäten für Ihre Organisation zu verwalten.
 
 ## <a name="resources"></a>Ressourcen
 
-- [InterAktiver Leitfaden: bewerten und erweitern ihrer Datenschutz-Steuerelemente mit Compliance-Manager](https://content.cloudguides.com/guides/Compliance%20Manager)
-- [Technische Community für Microsoft-Sicherheit, Datenschutz und Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)
+- [Interaktiver Leitfaden: bewerten und verbessern der Datenschutz Steuerung mit Compliance-Manager](https://content.cloudguides.com/guides/Compliance%20Manager)
+- [Microsoft-Sicherheits-, Datenschutz-und Compliance-Tech-Community](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)

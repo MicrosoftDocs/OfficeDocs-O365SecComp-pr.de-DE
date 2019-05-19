@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,45 +12,45 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Organisationen müssen häufig Dokumente aufgrund von Konformitäts-, rechtlicher und anderer Bestimmungen für einen bestimmten Zeitraum aufbewahren. Wenn Dokumente aber länger als nötig aufbewahrt werden, kann dies für die Organisation rechtliche Folgen haben.
-ms.openlocfilehash: 7fb0c546fb65bf2cc2e67fe7e047593892cea58d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e8f85f4cc9ae541d8a962dfb270e5216c912ac7d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259738"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153917"
 ---
 # <a name="create-a-document-deletion-policy"></a>Erstellen einer Dokumentlöschrichtlinie
 
 > [!IMPORTANT]
-> Es wird empfohlen, eine Aufbewahrungsrichtlinie oder Aufbewahrungs Bezeichnungen zu verwenden, die im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Office 365 Security &amp; Compliance Center anstelle einer Dokument Löschrichtlinie erstellt wurden. Dokument Löschrichtlinien arbeiten weiterhin nebeneinander mit Aufbewahrungsrichtlinien, aber wenn Sie Inhalte in Office 365 beibehalten oder löschen müssen, empfiehlt es sich, eine Aufbewahrungsrichtlinie zu verwenden. Weitere Informationen finden Sie unter [Verwenden einer Aufbewahrungsrichtlinie anstelle dieser Features](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Wir empfehlen die Verwendung einer Aufbewahrungsrichtlinie oder von Aufbewahrungs Bezeichnungen, die im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security &amp; Compliance Center anstelle einer Dokument Löschungs Richtlinie erstellt wurden. Dokument Löschungsrichtlinien funktionieren weiterhin nebeneinander mit Aufbewahrungsrichtlinien, wenn Sie jedoch Inhalte an einer beliebigen Stelle in Office 365 beibehalten oder löschen müssen, wird empfohlen, eine Aufbewahrungsrichtlinie zu verwenden. Weitere Informationen finden Sie unter [Verwenden einer Aufbewahrungsrichtlinie anstelle dieser Features](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
   
 Organisationen müssen häufig Dokumente aufgrund von Konformitäts-, rechtlicher und anderer Bestimmungen für einen bestimmten Zeitraum aufbewahren. Wenn Dokumente aber länger als nötig aufbewahrt werden, kann dies für die Organisation rechtliche Folgen haben.
   
-Mit einer Dokument Löschrichtlinie können Sie das Risiko proaktiv verringern, indem Sie Dokumente auf einer Website nach einem bestimmten Zeitraum löschen, beispielsweise fünf Jahre nach dem Erstellen der Dokumente in den OneDrive-Websites von Benutzern. 
+Mit einer Richtlinie zum Löschen von Dokumenten können Sie das Risiko proaktiv verringern, indem Sie Dokumente in einer Website nach einem bestimmten Zeitraum löschen (beispielsweise können Sie fünf Jahre nach dem Erstellen der Dokumente die OneDrive für Unternehmen Websites von Benutzern löschen. 
   
 Nach dem Erstellen einer Dokumentlöschrichtlinie können Sie sie einer Vorlage für Websitesammlung zuweisen, damit die Richtlinie für alle Websitesammlungen, die aus dieser Vorlage erstellt werden, verfügbar ist. Sie können außerdem einer bestimmten Websitesammlung eine Richtlinie zuweisen, die alle Richtlinien, die der Vorlage für diese Websitesammlung möglicherweise schon zugewiesen wurden, außer Kraft setzt.
   
-![Homepage des Dokument Löschungs-Richtlinien Centers](media/IP-Document-Deletion-Policy-Center-home-page.png)
+![Startseite des Dokument Löschrichtlinien Centers](media/IP-Document-Deletion-Policy-Center-home-page.png)
   
 ## <a name="policy-templates"></a>Richtlinienvorlagen
 
 Sie können eine Dokumentlöschrichtlinie von Grund auf neu erstellen oder eine unserer Beispielrichtlinien verwenden. Im Compliance Policy Center finden Sie Beispielrichtlinien, die Sie entweder sofort verwenden oder als Ausgangsbasis verwenden und umbenennen oder ändern können.
   
-![Beispiel für Dokument Löschrichtlinien](media/IP-Sample-deletion-policies.png)
+![Beispiele für Dokument Löschungsrichtlinien](media/IP-Sample-deletion-policies.png)
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Beispiele
 
-Einer Websitesammlung oder einer websitesammlungsvorlage kann eine weitere Richtlinie zugewiesen werden, und jede dieser Richtlinien kann eine oder mehrere Regeln aufweisen. Es kann jedoch nur eine Richtlinie pro Website aktiv sein, und es kann nur eine Löschregel geben, die jederzeit für die Bibliotheken innerhalb der Website aktiv ist.
+Einer Websitesammlung oder einer websitesammlungsvorlage kann eine weitere Richtlinie zugewiesen sein, und jede dieser Richtlinien kann eine oder mehrere Regeln haben. Es kann jedoch nur eine Richtlinie pro Standort aktiv sein, und es kann immer nur eine Löschregel für die Bibliotheken innerhalb der Website aktiv sein.
   
 ![Diagramm mit Beziehung zwischen Richtlinien](media/IP-Two-policies-four-rules.png)
   
 Außerdem können Sie eine Richtlinie als obligatorisch oder Standard und eine Löschregel als Standardregel auswählen: 
   
-- **Obligatorische Richtlinie** Wenn eine Richtlinie als obligatorisch gekennzeichnet ist, kann der Websitesammlung oder-Vorlage nur eine Richtlinie zugewiesen werden. Die Richtlinie muss als Standard gekennzeichnet sein und wird auf alle Websites angewendet. Websitebesitzer können die Richtlinie nicht abwählen.
+- **Verbindliche Richtlinie** Wenn eine Richtlinie als obligatorisch gekennzeichnet ist, kann der Websitesammlung oder Vorlage nur eine Richtlinie zugewiesen werden. Die Richtlinie muss als Standard gekennzeichnet sein und wird auf alle Websites angewendet. Websitebesitzer können die Richtlinie nicht abwählen.
     
-- **Standardrichtlinie** Wenn eine Richtlinie als Standard festgelegt ist, wird die Richtlinie automatisch auf allen Websites aktiviert, denen Sie zugewiesen wurde, ohne dass eine Aktion für den Websitebesitzer erforderlich ist.
+- **Standardrichtlinie** Wenn eine Richtlinie als Standard festgelegt ist, ist die Richtlinie automatisch in allen Websites aktiv, denen Sie zugewiesen ist, ohne dass der Websitebesitzer eine Aktion benötigt.
     
-- **Standardregel** Wenn eine Löschregel als Standard festgelegt wird, wird Sie automatisch auf alle Bibliotheken in den Websites angewendet, die die Richtlinie verwenden.
+- **Standardregel** Wenn eine Löschregel als Standard festgelegt ist, wird Sie automatisch auf alle Bibliotheken in den Websites angewendet, in denen die Richtlinie verwendet wird.
     
 Die folgenden Beispiele erläutern, wann Sie möglicherweise eine obligatorische Richtlinie oder Standardrichtlinien und -regeln verwenden sollten.
   
@@ -66,7 +66,7 @@ Angenommen, Sie möchten eine Dokumentlöschrichtlinie für eine vielfältige Re
     
 In diesem Beispiel wird die Standardlöschregel auf alle Bibliotheken in allen Websitesammlungen angewendet, die aufgrund der Vorlage erstellt wurden, und die Websitebesitzer können die Richtlinie nicht abwählen. Dies ist die einfachste Möglichkeit, um eine Dokumentlöschrichtlinie umfassend und strikt zu erzwingen.
   
-![Diagramm mit einer einzigen obligatorischen Richtlinie](media/IP-Example-1-doc-deletion-policies.png)
+![Diagramm mit einer einzelnen verbindlichen Richtlinie](media/IP-Example-1-doc-deletion-policies.png)
   
 ### <a name="example-2-apply-a-single-policy-with-several-rules-to-a-site-collection-template"></a>Beispiel 2: Anwenden einer einzelnen Richtlinie mit mehreren Regeln auf eine websitesammlungsvorlage
 
@@ -82,7 +82,7 @@ Auch dann können Sie die Richtlinien noch zentral erstellen und verwalten. Sie 
     
 Websitebesitzer können eine der alternativen Löschregeln auswählen, die Richtlinie abwählen oder nichts unternehmen und die Standardrichtlinie und -regel übernehmen.
   
-![Diagramm mit einer Richtlinie mit vielen Regeln](media/IP-Example-2-doc-deletion-policies.png)
+![Diagramm, das eine Richtlinie mit vielen Regeln zeigt](media/IP-Example-2-doc-deletion-policies.png)
   
 ### <a name="example-3-apply-several-policies-with-one-or-more-rules-to-a-site-collection"></a>Beispiel 3: Anwenden mehrerer Richtlinien mit mindestens einer Regel auf eine Websitesammlung
 
@@ -106,13 +106,13 @@ Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung 
   
 ## <a name="create-a-document-deletion-policy"></a>Erstellen einer Dokumentlöschrichtlinie
 
-1. Navigieren Sie im Office &amp; 365Security Compliance Center zur **Aufbewahrung**von **Datenverwaltung** \> . Klicken Sie unter **Löschen**auf **Dokument Löschrichtlinien für SharePoint Online und OneDrive for Business verwalten**. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
+1. Navigieren Sie im Office &amp; 365Security Compliance Center zur **Aufbewahrung**der **Datenverwaltung** \> . Klicken Sie unter **Löschen**auf **Dokument Löschrichtlinien für SharePoint Online und OneDrive für Unternehmen verwalten**. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
     
-    Wenn Sie zum ersten Mal vom Security &amp; Compliance Center zum Dokument Löschrichtlinien Center navigieren, wird das Richtlinien Center automatisch für Sie erstellt. Alternativ können Sie das Richtlinien Center manuell erstellen, indem Sie [die Websitesammlung erstellen](http://go.microsoft.com/fwlink/p/?LinkID=404342) und auf der Registerkarte **Enterprise** die Option **Compliance Policy Center** auswählen. 
+    Wenn Sie zum ersten Mal vom Security &amp; Compliance Center zum Dokument Löschrichtlinien Center navigieren, wird das Richtlinien Center automatisch erstellt. Alternativ können Sie das Richtlinien Center manuell erstellen, indem Sie [die Websitesammlung erstellen](http://go.microsoft.com/fwlink/p/?LinkID=404342) und auf der Registerkarte **Enterprise** die Option **Compliance Policy Center** auswählen. 
     
 2. Wählen Sie **Löschrichtlinien**aus.
     
-    ![Löschrichtlinien Option](media/IP-Deletion-Policies-option.png)
+    ![Löschrichtlinien (Option)](media/IP-Deletion-Policies-option.png)
   
 3. Wählen Sie **Neues Element** aus.
     
@@ -122,7 +122,7 @@ Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung 
     
 6. Geben Sie einen Namen ein, und wählen Sie die folgenden Optionen aus:
     
-  - Wählen Sie aus, ob die Regel Dokumente dauerhaft oder in den Papierkorb löschen soll. Der Papierkorb bietet ein Sicherheitsnetz der zweiten Stufe, bevor ein Element permanent von einer Website gelöscht wird. Weitere Informationen zum Papierkorb finden Sie unter [leeren des Papierkorbs oder Wiederherstellen der Dateien](http://go.microsoft.com/fwlink/p/?LinkID=404348).
+  - Wählen Sie aus, ob die Regel Dokumente dauerhaft oder in den Papierkorb löschen soll. Der Papierkorb bietet ein Sicherheitsnetz der zweiten Stufe, bevor ein Element permanent von einer Website gelöscht wird. Weitere Informationen zum Papierkorb finden Sie unter [leeren des Papierkorbs oder Wiederherstellen Ihrer Dateien](http://go.microsoft.com/fwlink/p/?LinkID=404348).
     
   - Wählen Sie aus, ob das Löschdatum ab dem Datum der Dokumenterstellung oder der letzten Dokumentänderung berechnet werden soll.
     
@@ -136,20 +136,20 @@ Außerdem werden die Richtlinien und Regeln für eine bestimmte Websitesammlung 
     
 8. Erstellen Sie zusätzliche Regeln, wenn Sie zulassen möchten, dass Websitebesitzer andere Regeln auswählen und auf ihre Website anwenden können. Falls vorhanden wird die Standardregel angewendet, wenn der Websitebesitzer keine Aktion durchführt.
     
-9. Wenn Sie eine Regel aus einer Richtlinie entfernen möchten, wählen Sie die Regel aus, klicken Sie auf **Löschen**, und klicken Sie dann auf **OK**.
+9. Um eine Regel aus einer Richtlinie zu entfernen, wählen Sie die Regel aus, klicken Sie auf **Löschen**, und klicken Sie dann auf **OK**.
     
     > [!NOTE]
     > Wenn Sie eine Regel löschen und die Richtlinie keine Standardregel enthält, wird für diese Richtlinie keine Regel angewendet, d. h., es werden keine Dokumente gelöscht. 
   
-![Entfernen der Regel aus der Richtlinien Nachricht](media/IP-Remove-rule-from-policy-message.png)
+![Bestätigen, dass die Regel aus der Richtlinien Meldung entfernt wird](media/IP-Remove-rule-from-policy-message.png)
   
 ## <a name="assign-the-document-deletion-policy-to-a-site-collection-template"></a>Zuweisen der Dokumentlöschrichtlinie zu einer Vorlage für Websitesammlung
 
 Durch das Zuweisen einer Richtlinie zu einer Vorlage für Websitesammlung machen Sie die Richtlinie für alle Websitesammlungen verfügbar, die aufgrund dieser Vorlage erstellt werden, einschließlich bereits vorhandener und künftiger Websitesammlungen.
   
-Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlinie angegebenen Zeitraum um die Zeit seit dem Erstellen oder Ändern des Dokuments handelt, nicht um den Zeitpunkt, zu dem die Richtlinie zugewiesen wurde. Wenn Sie die Richtlinie zum ersten Mal zuweisen, werden alle Dokumente auf der Website ausgewertet und, falls sie die Kriterien erfüllen, gelöscht. Dies trifft auf alle vorhandenen Dokumente zu, nicht nur auf neue Dokumente, die seit der Zuweisung der Richtlinie erstellt wurden.
+Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegebenen Zeitraum um die Zeit seit dem Erstellen oder Ändern des Dokuments und nicht um die Zeit seit der Zuweisung der Richtlinie handelt. Wenn Sie die Richtlinie zum ersten Mal zuweisen, werden alle Dokumente auf der Website ausgewertet und, falls sie die Kriterien erfüllen, gelöscht. Dies trifft auf alle vorhandenen Dokumente zu, nicht nur auf neue Dokumente, die seit der Zuweisung der Richtlinie erstellt wurden.
   
-1. Navigieren Sie im &amp; Security Compliance Center zur **Aufbewahrung**von **Datenverwaltung** \> . Klicken Sie unter **Löschen**auf **Dokument Löschrichtlinien für SharePoint Online und OneDrive for Business verwalten**. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
+1. Navigieren Sie im &amp; Security Compliance Center zur **Aufbewahrung**der **Datenverwaltung** \> . Klicken Sie unter **Löschen**auf **Dokument Löschrichtlinien für SharePoint Online und OneDrive für Unternehmen verwalten**. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
     
 2. Wählen Sie **Richtlinienzuweisungen für Vorlagen**.
     
@@ -161,7 +161,7 @@ Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlin
     
   - Um die Richtlinie einer Vorlage für Websitesammlung wie die Teamwebsitevorlage zuzuweisen, wählen Sie **Vorlage für Websitesammlung zuweisen** aus, und wählen Sie die Vorlage für Websitesammlung.
     
-  - Wenn Sie die Richtlinie dem einen Laufwerk für Unternehmen der Benutzer zuweisen möchten, wählen Sie **OneDrive für Business-Vorlage zuweisen**aus.
+  - Wenn Sie die Richtlinie Benutzern ein Laufwerk für Unternehmen zuweisen möchten, wählen Sie **OneDrive für Unternehmen Vorlage zuweisen**aus, die unten hervorgehoben ist.
     
     > [!NOTE]
     > Wenn Sie eine Richtlinie zu einer Vorlage für Websitesammlung zuweisen, wird die Richtlinie für bereits vorhandene Websitesammlungen, die aufgrund dieser Vorlage erstellt wurden, und für künftige Websitesammlungen verfügbar gemacht. 
@@ -171,7 +171,7 @@ Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlin
 5. Klicken Sie auf **Speichern**.
     
     > [!NOTE]
-    > Jeder Vorlage kann immer nur ein Satz von Richtlinien zugewiesen werden. Wenn eine Fehlermeldung angezeigt wird, dass dieser Vorlage bereits Richtlinien zugewiesen wurden, wählen **** \> Sie im linken Navigations \> Bereich " **Websitesammlung zuweisen** " aus wählen Sie eine Websitesammlung aus, um die Gruppe von Richtlinien anzuzeigen und zu verwalten, die bereits vorhanden sind. zugewiesen. 
+    > Jeder Vorlage kann immer nur ein Satz von Richtlinien zugewiesen werden. Wenn ein Fehler angezeigt wird, der besagt, dass dieser Vorlage bereits Richtlinien zugewiesen wurden **** \> , wählen Sie in der linken Navigations \> Leiste **zuweisen zur Websitesammlung** auswählen aus wählen Sie eine Websitesammlung aus, um die Gruppe von Richtlinien anzuzeigen und zu verwalten, die bereits zugewiesen. 
   
 6. Wählen Sie **Zugewiesene Richtlinien verwalten** und die zuzuweisenden Richtlinien aus, und legen Sie dann fest, ob eine Richtlinie die Standardrichtlinie sein soll. Wenn Sie eine Standardrichtlinie festlegen, wird die Richtlinie für alle Websites, die der Richtlinie zugewiesen wurden, automatisch aktiv, ohne dass der Websitebesitzer eine Aktion durchführen muss.
     
@@ -189,20 +189,20 @@ Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlin
 
 Durch das Zuweisen einer Richtlinie zu einer bestimmten Websitesammlung machen Sie die Richtlinie nur für diese Websitesammlung verfügbar. Sie können also Richtlinien näher an den Inhalt in der Websitesammlung anpassen. Außerdem setzen Richtlinien, die einer bestimmten Websitesammlung zugewiesen werden, alle Richtlinien, die der Vorlage für diese Websitesammlung zugewiesen sind, außer Kraft. Zum Beispiel setzt eine Richtlinie, die der (aus der Teamwebsitevorlage erstellten) Websitesammlung Vertriebsabteilung zugewiesen ist, alle Richtlinien außer Kraft, die der Teamwebsitevorlage zugewiesen sind.
   
-Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlinie angegebenen Zeitraum um die Zeit seit dem Erstellen oder Ändern des Dokuments handelt, nicht um den Zeitpunkt, zu dem die Richtlinie zugewiesen wurde. Wenn Sie die Richtlinie zum ersten Mal zuweisen, werden alle Dokumente auf der Website ausgewertet und, falls sie die Kriterien erfüllen, gelöscht. Dies trifft auf alle vorhandenen Dokumente zu, nicht nur auf neue Dokumente, die seit der Zuweisung der Richtlinie erstellt wurden.
+Beachten Sie, dass es sich bei dem für eine Dokument Löschrichtlinie angegebenen Zeitraum um die Zeit seit dem Erstellen oder Ändern des Dokuments und nicht um die Zeit seit der Zuweisung der Richtlinie handelt. Wenn Sie die Richtlinie zum ersten Mal zuweisen, werden alle Dokumente auf der Website ausgewertet und, falls sie die Kriterien erfüllen, gelöscht. Dies trifft auf alle vorhandenen Dokumente zu, nicht nur auf neue Dokumente, die seit der Zuweisung der Richtlinie erstellt wurden.
   
-1. Navigieren Sie im &amp; Security Compliance Center zur **Aufbewahrung**von **Datenverwaltung** \> . Wählen Sie unter **Löschen**die Option **Dokument Löschrichtlinien für SharePoint Online und OneDrive for Business verwalten**aus. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
+1. Navigieren Sie im &amp; Security Compliance Center zur **Aufbewahrung**der **Datenverwaltung** \> . Wählen Sie unter **Löschen**die Option **Dokument Löschrichtlinien für SharePoint Online und OneDrive für Unternehmen verwalten**aus. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
     
 2. Wählen Sie **Richtlinienzuweisungen für Websitesammlungen**.
     
-    ![Option für Richtlinienzuweisungen für Websitesammlungen](media/IP-Policy-Assignments-for-Site-Collections-option.png)
+    ![Richtlinienzuweisungen für Websitesammlungen (Option)](media/IP-Policy-Assignments-for-Site-Collections-option.png)
   
 3. Wählen Sie **Neues Element** aus.
     
-4. Wählen Sie **Websitesammlung auswählen**aus. Suchen Sie nach der Websitesammlung nach Name oder URL, wählen Sie die Websitesammlung aus, und klicken Sie auf **Speichern**.
+4. Wählen Sie **Websitesammlung auswählen**aus. Suchen Sie nach der Websitesammlung anhand des Namens oder der URL, wählen Sie die Websitesammlung aus, und klicken Sie auf **Speichern**.
     
     > [!NOTE]
-    > Jeder Websitesammlung kann immer nur ein Satz von Richtlinien zugewiesen werden. Wenn eine Fehlermeldung angezeigt wird, dass dieser Websitesammlung bereits Richtlinien zugewiesen wurden, wählen Sie **"** \> der **Websitesammlung zuweisen** " aus, und wählen Sie eine Websitesammlung aus, um die bereits zugewiesenen Richtlinien anzuzeigen und zu verwalten. 
+    > Jeder Websitesammlung kann immer nur ein Satz von Richtlinien zugewiesen werden. Wenn ein Fehler angezeigt wird, der besagt, dass dieser Websitesammlung bereits Richtlinien zugewiesen wurden, wählen Sie **"** \> der **Websitesammlung zuweisen** " aus, und wählen Sie eine Websitesammlung aus, um den bereits zugewiesenen Satz von Richtlinien anzuzeigen und zu verwalten. 
   
 ![Auswählen einer Website Sammlungsseite](media/IP-Choose-a-site-collection-page.png)
   
@@ -222,7 +222,7 @@ Es ist wichtig zu wissen, dass es sich bei dem für eine Dokument Löschrichtlin
 
 Wenn Sie eine Zuweisung löschen, werden die zugewiesenen Richtlinien nicht mehr auf die Websites in der Websitesammlung oder Vorlage für Websitesammlung angewendet.
   
-1. Navigieren Sie im &amp; Security Compliance Center zur **Aufbewahrung**von **Datenverwaltung** \> . Wählen Sie unter **Löschen**die Option **Dokument Löschrichtlinien für SharePoint Online und OneDrive for Business verwalten**aus. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
+1. Navigieren Sie im &amp; Security Compliance Center zur **Aufbewahrung**der **Datenverwaltung** \> . Wählen Sie unter **Löschen**die Option **Dokument Löschrichtlinien für SharePoint Online und OneDrive für Unternehmen verwalten**aus. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
     
 2. Wählen Sie entweder **Richtlinienzuweisungen für Vorlagen ** oder **Richtlinienzuweisungen für Websitesammlungen**.
     
@@ -232,23 +232,23 @@ Wenn Sie eine Zuweisung löschen, werden die zugewiesenen Richtlinien nicht mehr
   
 ## <a name="delete-a-policy"></a>Löschen einer Richtlinie
 
-Sie können keine Richtlinie löschen, die verwendet wird. Bevor Sie eine Richtlinie löschen können, müssen Sie zuerst alle Zuordnungen zu Websitesammlungen und Websitesammlungsvorlagen löschen, die diese Richtlinie enthalten – siehe den vorherigen Abschnitt.
+Eine verwendete Richtlinie kann nicht gelöscht werden. Bevor Sie eine Richtlinie löschen können, müssen Sie zunächst alle Zuordnungen zu Websitesammlungen und Websitesammlungsvorlagen löschen, die diese Richtlinie enthalten – siehe den vorherigen Abschnitt.
   
-1. Wählen Sie im &amp; Security Compliance \> Center in der linken Navigations \> Leiste unter **Delete** \> Manage Document Deletion Policies \> for SharePoint Online und OneDrive die **Aufbewahrung** von **Datenverwaltung** aus. ** für Unternehmen**. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
+1. Wählen Sie im &amp; Security Compliance \> Center in der linken Navigation \> unter Manage Document **Delete** \> Policies for SharePoint Online and OneDrive die Option **Data Management** \> **Retention** aus. ** für Unternehmen**. Das Document Deletion Policy Center wird auf einer neuen Registerkarte im Browser geöffnet.
     
 2. Wählen Sie * * Löschrichtlinien * * aus.
     
-    ![Löschrichtlinien Option](media/IP-Deletion-Policies-option.png)
+    ![Löschrichtlinien (Option)](media/IP-Deletion-Policies-option.png)
   
 3. Wählen Sie die Richtlinie aus.
     
-4. Klicken Sie auf \> der Register \> Karte Menü Band **Elemente** auf **Richtlinie entfernen**.
+4. Entfernen Sie auf \> der Register \> Karte Menü Band **Elemente** die **Richtlinie**.
     
-    ![Schaltfläche "Richtlinie entfernen" auf dem Menüband](media/IP-Remove-Policy-button-on-Ribbon.png)
+    ![Schaltfläche ' Richtlinie entfernen ' auf dem Menüband](media/IP-Remove-Policy-button-on-Ribbon.png)
   
-5. Wenn die Richtlinie verwendet wird, werden Sie gefragt, ob Sie die Richtlinie aus allen Websitesammlungen entfernen möchten, in denen Sie verwendet wird. Wenn Sie sicher sind, wählen Sie **OK**aus.
+5. Wenn die Richtlinie verwendet wird, werden Sie gefragt, ob Sie die Richtlinie aus allen Websitesammlungen entfernen möchten, in denen Sie verwendet wird. Wenn Sie sich sicher sind, wählen Sie **OK**.
     
-    ![Richtlinien Bestätigung löschen](media/IP-Delete-policy-confirmation.png)
+    ![Bestätigungsnachricht für die Richtlinie löschen](media/IP-Delete-policy-confirmation.png)
   
 ## <a name="see-also"></a>Siehe auch
 

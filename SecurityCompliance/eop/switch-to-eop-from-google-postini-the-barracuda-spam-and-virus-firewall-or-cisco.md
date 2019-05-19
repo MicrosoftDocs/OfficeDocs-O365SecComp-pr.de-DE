@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-description: In diesem Thema wird erläutert, wie Sie das Verfahren für das Wechseln zu Exchange Online Protection (EOP) von einer lokalen e-Mail-Hygiene-Appliance oder einem cloudbasierten Schutzdienst verstehen und Ihnen dann Hilferessourcen für die ersten Schritte zur Verfügung stellen können.
-ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Dieser Artikel soll Ihnen helfen, den Prozess für die Umstellung auf Exchange Online Schutz (EoP) von einer lokalen e-Mail-Hygiene-Appliance oder einem Cloud-basierten Schutzdienst zu verstehen und Ihnen dann Hilferessourcen für den Einstieg bereitzustellen.
+ms.openlocfilehash: 7e91c8b4d93d6d7aee55283e52bef92748fc49e1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256203"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154577"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Wechseln zu EOP von Google Postini, Barracuda Spam & Virus Firewall oder Cisco IronPort
 
@@ -56,7 +56,7 @@ Wenn Sie sich für einen Wechsel zu EOP entscheiden, sollten Sie unbedingt folge
   
 - **Benutzerdefinierte Filterregeln**: Wenn Sie zum Abfangen bestimmter Junk-E-Mails benutzerdefinierte Filter oder geschäftspolitische Regeln verwenden, wird empfohlen, EOP eine Zeitlang mit den Standardeinstellungen auszuprobieren, bevor Sie zu Ihren eigenen Regeln migrieren. Die Standardeinstellungen von EOP bieten unternehmensgerechten Spamschutz, sodass einige Ihrer eigenen Regeln möglicherweise nicht zu EOP migriert werden müssen. Sollten bei Ihnen Regeln zur Umsetzung bestimmter benutzerdefinierter Unternehmensrichtlinien gelten, können Sie diese natürlich erstellen. [Nachrichtenfluss Regeln (Transportregeln) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) enthält detaillierte Anweisungen zum Erstellen von Nachrichtenfluss Regeln in EoP. 
     
-- **Listen zugelassener und blockierter IP-Adressen**: Wenn Sie benutzerbasierte Listen zugelassener und blockierter IP-Adressen unterhalten, nehmen Sie sich im Rahmen des Einrichtungsvorgangs ein wenig Zeit, um die Listen in EOP zu kopieren. Weitere Informationen zu IP-Zulassungslisten und IP-Sperrlisten finden Sie unter [configure the Connection Filter Policy](../configure-the-connection-filter-policy.md).
+- **Listen zugelassener und blockierter IP-Adressen**: Wenn Sie benutzerbasierte Listen zugelassener und blockierter IP-Adressen unterhalten, nehmen Sie sich im Rahmen des Einrichtungsvorgangs ein wenig Zeit, um die Listen in EOP zu kopieren. Weitere Informationen zu IP-Zulassungslisten und IP-Sperrlisten finden Sie unter [Konfigurieren der Verbindungsfilter Richtlinie](../configure-the-connection-filter-policy.md).
     
 - **Sichere Kommunikation**: Wenn Sie Partner haben, die verschlüsseltes Messaging erforderlich machen, sollten Sie dies über die Exchange-Verwaltungskonsole einrichten. Informationen zum Konfigurieren dieses Szenarios finden Sie unter [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     

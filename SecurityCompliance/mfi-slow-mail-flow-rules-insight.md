@@ -4,37 +4,37 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Administratoren können sich über die Einblicke in die langsamen Nachrichtenfluss Regeln im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Administratoren können Informationen zu den langsamen Nachrichtenfluss Regeln Einblicke im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
+ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267221"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158587"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Einblick für langsame Nachrichtenflussregeln
 
-Ineffiziente Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) können zu Verzögerungen bei der Nachrichtenübermittlung für Ihre Organisation führen. Dieser Einblick meldet Nachrichtenfluss Regeln, die sich auf den Nachrichtenfluss Ihrer Organisation auswirken. Beispiele für diese Regeln sind:
+Ineffiziente Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) können zu Verzögerungen bei der Nachrichtenübermittlung für Ihre Organisation führen. Diese Einblicke meldet Nachrichtenfluss Regeln, die sich auf den e-Mail-Fluss Ihrer Organisation auswirken. Beispiele für diese Regeltypen sind:
 
-- Bedingungen, die für umfangreiche Gruppen **Mitglied sind** .
+- Die Bedingungen, die verwendet **werden, sind Mitglied von** für große Gruppen.
 
-- Bedingungen, die einen komplexen regulären Ausdruck (Regex)-Mustervergleich verwenden.
+- Bedingungen, die einen komplexen Regular Expression (Regex)-Mustervergleich verwenden.
 
 - Bedingungen, die die Inhaltsüberprüfung in Anlagen verwenden.
 
-Die Einblicke helfen Ihnen bei der Identifizierung und Optimierung von Nachrichtenfluss Regeln, um die Verzögerungen bei der Nachrichtenübermittlung zu verringern.
+Die Einblicke helfen Ihnen bei der Ermittlung und Optimierung von Nachrichtenfluss Regeln, um Verzögerungen bei der Nachrichtenübermittlung zu verringern.
 
-![Eine langsame Nachrichtenfluss Regel Einblicke in das Nachrichtenfluss-Dashboard im Security & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Einblicke in langsame Nachrichtenfluss Regeln im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-Wenn Sie auf **Details anzeigen**klicken, wird ein Flyout-Bereich angezeigt, in dem Sie die Regel überprüfen können. Klicken Sie im Flyoutbereich auch auf **Beispiel Nachrichten anzeigen** , um zu sehen, welche Art von Nachrichten von der Regel betroffen sind.
+Wenn Sie auf **Details anzeigen**klicken, wird ein Flyout-Bereich angezeigt, in dem Sie die Regel überprüfen können. Im Flyoutbereich können Sie auch auf **Beispiel Meldungen anzeigen** klicken, um zu sehen, welche Art von Nachrichten von der Regel betroffen sind.
 
-![Flyout-Bereich nach dem Klicken auf Details anzeigen in einem langsamen Nachrichtenfluss Regeln Einblicke in das Nachrichtenfluss-Dashboard](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Flyout-Bereich nach dem Klicken auf Details anzeigen in langsamen Nachrichtenfluss Regeln Einblicke in das Nachrichtenfluss-Dashboard](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen Nachrichtenfluss Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Nachrichtenfluss Einblicke im Security _AMP_ Compliance Center](mail-flow-insights.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).

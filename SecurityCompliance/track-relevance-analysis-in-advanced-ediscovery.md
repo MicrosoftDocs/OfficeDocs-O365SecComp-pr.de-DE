@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,172 +12,172 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'In diesem Artikel erfahren Sie, wie Sie den Status und die Ergebnisse der Relevanz für Anfragen in Office 365 Advanced eDiscovery anzeigen und interpretieren.  '
-ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'In diesem Artikel erfahren Sie, wie Sie den Status und die Ergebnisse von Relevanz-Schulungen für Fall Probleme in Office 365 Advanced eDiscovery anzeigen und interpretieren.  '
+ms.openlocfilehash: 1018b414d0192491feebfbec25d865d4463fa26a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264407"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158327"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Nachverfolgen der Relevanz-Analyse in Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Für Advanced eDiscovery ist ein Office 365 E3-Abonnement mit dem Add-On für erweiterte Compliance oder ein E5-Abonnement für Ihre Organisation erforderlich. Wenn Sie nicht über diesen Plan verfügen und Advanced eDiscovery ausprobieren möchten, können Sie sich [für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-In Advanced eDiscovery wird auf der Registerkarte Relevanz verfolgen die berechnete Gültigkeit der Relevanz-Schulung angezeigt, die auf der Registerkarte Tag ausgeführt wird, und gibt den nächsten Schritt an, der für den iterativen Schulungsprozess relevant ist. 
+In Advanced eDiscovery wird auf der Registerkarte Relevanz Track die berechnete Gültigkeit der Relevanz-Schulung angezeigt, die auf der Registerkarte "Tag" ausgeführt wird, und es wird der nächste Schritt angegeben, der in Relevanz für den iterativen Schulungsprozess erfolgen soll. 
   
-## <a name="tracking-relevance-training-status"></a>Status der Tracking Relevanz-Schulung
+## <a name="tracking-relevance-training-status"></a>Schulungsstatus für Tracking Relevanz
 
-1. Sehen Sie sich die folgenden Details in Relevanz Track für die Fall Probleme an, wie im folgenden Beispiel des Dialogfelds **Problem Name** unten gezeigt. 
+1. Zeigen Sie die folgenden Details in Relevanz Track für die Fall Probleme an, wie im folgenden Beispiel des Dialogfelds **Problem Name** gezeigt. 
     
-  - **Bewertung**: Diese Fortschrittsanzeige zeigt, in welchem Maße die Relevanz-Schulung zu diesem Zeitpunkt das Bewertungs Ziel im Hinblick auf die Fehlertoleranz erreicht hat. Die Reichhaltigkeit der Ergebnisse der Relevanz-Schulung wird ebenfalls angezeigt. 
+  - **Bewertung**: dieser Fortschrittsindikator zeigt an, in welchem Ausmaß die an diesem Punkt durchgeführte Relevanz-Schulung Das Bewertungs Ziel im Hinblick auf die Fehlergrenze erreicht hat. Die Reichhaltigkeit der Relevanz-Schulungsergebnisse wird ebenfalls angezeigt. 
     
-  - **Schulung**: Diese farbcodierte Fortschrittsanzeige und QuickInfo-Anzeige gibt die Stabilität des Trainings Ergebnisses und eine numerische Skala an, in der die Anzahl der Relevanz-Schulungsbeispiele für jedes Problem angezeigt wird. Der Experte überwacht den Fortschritt des iterativen Relevanz-Schulungsprozesses. 
+  - **Schulung**: Diese farbcodierte Statusanzeige und QuickInfo-Anzeige gibt die Stabilität der Relevanz-Trainingsergebnisse und eine numerische Skalierung an, die die Anzahl der für jedes Problem geschilderten Relevanz-Schulungsbeispiele anzeigt. Der Experte überwacht den Fortschritt des iterativen Relevanz-Schulungsprozesses. 
     
-  - **Batch Berechnung**: Diese Fortschrittsanzeige enthält Informationen zum Abschließen der Batch Berechnung.
+  - **Stapel Berechnung**: Diese Statusanzeige enthält Informationen zum Abschluss der Batch Berechnung.
     
   - **Nächster Schritt**: zeigt die Empfehlung für den nächsten Schritt an, der ausgeführt werden soll. 
     
-    In dem Beispiel wird eine erfolgreich abgeschlossene Bewertung für ein Problem angezeigt, die durch die Anzeige des abgeschlossenen Farb Fortschritts und des Häkchens angezeigt wird. Tagging ist im Gange, aber der Fall gilt weiterhin als instabil (Stabilitäts Status wird auch in einem ToolTip angezeigt). Die nächste Schritt Empfehlung ist "Training". 
+    In dem Beispiel wird eine erfolgreich abgeschlossene Bewertung für ein Problem angezeigt, die durch den abgeschlossenen Farbverlaufs Indikator und das Häkchen gekennzeichnet ist. Tagging ist im Gange, aber der Fall wird weiterhin als instabil betrachtet (Stabilitäts Status wird auch in einem QuickInfo-Tool angezeigt). Die Empfehlung für den nächsten Schritt lautet "Training". 
     
     ![Relevanz Track Training Schritt 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    In der erweiterten Ansicht werden zusätzliche Informationen und Optionen angezeigt. Der angezeigte aktuelle Fehler Rand ist der Fehler Rand des Rückrufs im aktuellen Status der Bewertung, wenn die vorhandenen (bereits gekennzeichneten) Bewertungsdateien vorhanden sind.
+    In der erweiterten Ansicht werden zusätzliche Informationen und Optionen angezeigt. Der angezeigte aktuelle Fehler Rand ist der Fehler Rand des Rückrufs im aktuellen Bewertungsstatus, da die vorhandenen (bereits markierten) Bewertungsdateien vorhanden sind.
     
     > [!NOTE]
-    >  Die Bewertungsstufe kann umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für "alle Probleme" deaktiviert wird. Daher gibt es für dieses Problem keine Statistiken. > das Kontrollkästchen **Bewertung** kann nur ausgeführt werden, bevor die Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist. 
+    >  Die Bewertungsphase kann umgangen werden, indem das Kontrollkästchen **Bewertung** pro Problem und dann für "alle Probleme" deaktiviert wird. Daraus ergibt sich jedoch keine Statistik für dieses Problem. > das Deaktivieren des Kontrollkästchens **Bewertung** kann nur ausgeführt werden, bevor eine Bewertung durchgeführt wird. Wenn in einem Fall mehrere Probleme vorhanden sind, wird die Bewertung nur umgangen, wenn das Kontrollkästchen für jedes Problem deaktiviert ist. 
   
-    Wenn die Bewertung mit dem ersten Beispielsatz von Dateien nicht abgeschlossen ist, kann die Bewertung als nächster Schritt zum Taggen weiterer Dateien erfolgen. 
+    Wenn die Bewertung nicht mit dem ersten Beispiel Dateisatz abgeschlossen ist, kann die Bewertung der nächste Schritt sein, um weitere Dateien zu markieren. 
     
-    In **Relevanz** \> **Track**geben die Fortschrittsanzeige und die QuickInfo des Trainings die geschätzte Anzahl zusätzlicher Beispiele an, die zum Erreichen der Stabilität benötigt werden. Diese Schätzung stellt eine Richtlinie für die erforderliche zusätzliche Schulung dar.
+    In **Relevanz** \> **Track**zeigen die trainingsfortschrittsanzeige und die QuickInfo die geschätzte Anzahl zusätzlicher Beispiele an, die für die Stabilität erforderlich sind. Diese Schätzung enthält eine Richtlinie für die erforderliche zusätzliche Schulung.
     
-    ![Relevanz Track-Schulung](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
+    ![Relevanz Track Training](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
-2. Wenn Sie mit dem Tagging fertig sind und das Training fortsetzen müssen, klicken Sie auf **Training**. Ein weiterer Beispielsatz von Dateien wird aus dem geladenen Datei Satz für zusätzliche Schulungen generiert. Sie kehren dann zur Registerkarte Tag zurück, um weitere Dateien zu markieren und zu trainieren.
+2. Wenn Sie die Markierung abgeschlossen haben und die Schulung fortsetzen möchten, klicken Sie auf **Training**. Ein weiterer Beispielsatz von Dateien wird aus dem geladenen Datei Satz für zusätzliche Schulungen generiert. Anschließend kehren Sie zur Registerkarte Tag zurück, um weitere Dateien zu markieren und zu Schulen.
     
 ### <a name="reaching-stable-training-levels"></a>Erreichen stabiler Schulungsstufen
 
-Nachdem die Bewertungsdateien ein stabiles Ausbildungsniveau erreicht haben, ist Advanced eDiscovery für die Batch Berechnung bereit.
+Nachdem die Bewertungsdateien ein stabiles Schulungsniveau erreicht haben, ist Advanced eDiscovery für die Batch Berechnung verfügbar.
   
 > [!NOTE]
-> Der nächste Schritt ist NormalerWeise nach drei stabilen Übungsbeispielen "Batch Berechnung". Es kann beispielsweise Ausnahmen geben, wenn Änderungen am Tagging von Dateien aus früheren Beispielen oder beim Hinzufügen von Seed-Dateien vorgenommen wurden. 
+> Normalerweise ist nach drei stabilen Schulungs Beispielen der nächste Schritt "Batch Berechnung". Es kann Ausnahmen geben, beispielsweise, wenn Änderungen am Tagging von Dateien aus früheren Beispielen oder beim Hinzufügen von Seed-Dateien vorgenommen wurden. 
   
-### <a name="performing-batch-calculation"></a>Ausführen der Batch Berechnung
+### <a name="performing-batch-calculation"></a>Durchführen der Batch Berechnung
 
-Die Batch Berechnung wird als nächster Schritt ausgeführt, nachdem das Training erfolgreich abgeschlossen wurde (wenn ein stabiler Trainingsstatus durch die Fortschrittsanzeige angezeigt wird, ein Häkchen und ein stabiler Status in der QuickInfo.) Die Batch Berechnung wendet das während der Relevanz-Schulung erworbene Wissen auf die gesamte Datei Auffüllung an, um die Relevanz der Dateien zu bewerten und Relevanzwerte zuzuweisen.
+Die Batch Berechnung wird als nächster Schritt nach erfolgreichem Abschluss des Trainings ausgeführt (wenn ein stabiler Trainingsstatus durch die Statusanzeige angezeigt wird, ein Häkchen und ein stabiler Status in der QuickInfo). Bei der Batch Berechnung wird das während der Relevanz-Schulung erworbene Wissen auf die gesamte Datei Auffüllung angewendet, um die Relevanz der Dateien zu bewerten und um die Relevanz der Ergebnisse zuzuweisen.
   
-Wenn es mehr als ein Problem gibt, erfolgt die Batch Berechnung pro Problem. Während der Batch Berechnung wird der Fortschritt während der Verarbeitung aller Dateien überwacht. 
+Wenn mehr als ein Problem vorliegt, wird die Batch Berechnung pro Problem durchgeführt. Während der Batch Berechnung wird der Fortschritt bei der Verarbeitung aller Dateien überwacht. 
   
-Hier ist der Empfohlene nächste Schritt "None", was bedeutet, dass an dieser Stelle keine zusätzliche iterative Relevanz-Schulung erforderlich ist. Die nächste Phase ist die Registerkarte **Relevanz \> entscheiden** . 
+Hier lautet der Empfohlene nächste Schritt "None", was darauf hinweist, dass an dieser Stelle kein zusätzliches iteratives Relevanz-Training erforderlich ist. Die nächste Phase ist die Registerkarte **Relevanz \> entscheiden** . 
   
-Wenn Sie nach der Batch Berechnung neue Dateien importieren möchten, kann der Administrator die importierten Dateien einer neuen Belastung hinzufügen.
+Wenn Sie neue Dateien nach der Batch Berechnung importieren möchten, kann der Administrator die importierten Dateien einer neuen Last hinzufügen.
   
 > [!NOTE]
-> Wenn Sie während der Batch Berechnung auf **Abbrechen** klicken, speichert der Prozess, was bereits ausgeführt wurde. Wenn Sie die Batch Berechnung erneut ausführen, wird der Prozess vom zuletzt ausgeführten Punkt fortgesetzt. 
+> Wenn Sie während der Batch Berechnung auf **Abbrechen** klicken, wird der Vorgang gespeichert, der bereits ausgeführt wurde. Wenn Sie die Batch Berechnung erneut ausführen, wird der Prozess vom letzten ausgeführten Endpunkt fortgesetzt. 
   
-### <a name="assessing-tagging-consistency"></a>Bewerten der Tagging-Konsistenz
+### <a name="assessing-tagging-consistency"></a>Bewerten der Konsistenz von Markierungen
 
-Wenn es Inkonsistenzen bei der Dateikennzeichnung gibt, kann dies Auswirkungen auf die Analyse haben. Der erweiterte eDiscovery-Tagging-Konsistenz Prozess kann verwendet werden, wenn die Ergebnisse nicht optimal sind oder Konsistenz zweifelhaft ist. Eine Liste der möglichen inkonsistenten getaggten Dateien wird zurückgegeben, und Sie können bei Bedarf überprüft und neu markiert werden.
+Wenn es Inkonsistenzen bei der Dateikennzeichnung gibt, kann dies Auswirkungen auf die Analyse haben. Der erweiterte eDiscovery-Tagging-Konsistenz Prozess kann verwendet werden, wenn die Ergebnisse nicht optimal sind oder Konsistenz Zweifel aufkommen. Eine Liste der möglichen inkonsistente getaggten Dateien wird zurückgegeben, und Sie können nach Bedarf überprüft und neu markiert werden.
   
 > [!NOTE]
-> Nach sieben oder mehr Trainingsrunden nach der Bewertung kann die Tagging-Konsistenz in **Relevanz** \> **Track** \> **Issue** \> **detailed results** \> **Training Progress**angezeigt werden. Diese Überprüfungen werden jeweils einzeln durchgeführt. 
+> Nach sieben oder mehr Schulungs Runden nach der Bewertung kann die Markierungs Konsistenz in **Relevanz** \> **Track** \> **Problem** \> **detaillierte Ergebnisse** \> **Schulungs Fortschritt**angezeigt werden. Diese Überprüfung erfolgt gleichzeitig für ein Problem. 
   
-1. Erweitern Sie in **Relevanz \> Track**die Zeile eines Problems.
+1. Erweitern Sie in **Relevanz \> nachverfolgen**die Zeile eines Problems.
     
 2. Klicken Sie rechts **neben nächster Schritt**auf **ändern**.
     
-3. Wählen **** Sie Inkonsistenzen als **Nächster Schritt** aus, nachdem Sie sieben Übungsbeispiele ausgewählt haben, und klicken Sie auf **OK**.
+3. Wählen Sie nach sieben Schulungs Beispielen **Tag** Inkonsistenzen als **nächste Schritt** Option aus, und klicken Sie auf **OK**.
     
-4. Wählen **** Sie Inkonsistenzen aus. Die Registerkarte **Tag** wird geöffnet, und es wird eine Liste der Inkonsistenzen angezeigt, die bei Bedarf neu gekennzeichnet werden sollen. 
+4. Wählen Sie Inkonsistenzen für **Tags**aus. Die Registerkarte **Tag** wird geöffnet und zeigt eine Liste der Inkonsistenzen an, die bei Bedarf neu markiert werden sollen. 
     
-5. Klicken Sie auf **berechnen** , um die Änderungen zu übermitteln. Der nächste Schritt nach dem Tagging von Inkonsistenzen ist "Training". 
+5. Klicken Sie auf **berechnen** , um die Änderungen zu übermitteln. Der nächste Schritt nach der Kennzeichnung von Inkonsistenzen ist "Training". 
     
 ## <a name="viewing-and-using-relevance-results"></a>Anzeigen und Verwenden von Relevanz-Ergebnissen
 
-Erweitern Sie auf der Registerkarte **Relevanz \> verfolgen** die Zeile eines Problems, und klicken Sie neben **detaillierte Ergebnisse**auf **Ansicht**. Die detaillierten Ergebnisbereiche werden angezeigt (siehe unten).
+Erweitern Sie auf der Registerkarte **Relevanz \> Track** die Zeile eines Problems, und klicken Sie neben **detaillierte Ergebnisse**auf **Ansicht**. Die detaillierten Ergebnisbereiche werden angezeigt, wie im folgenden dargestellt und beschrieben.
   
-![Relevanz-Schulung detaillierte Ergebnisse](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
+![Relevanz Training detaillierte Ergebnisse](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
 ### <a name="tagging-summary"></a>Tagging-Zusammenfassung
 
- In dem unten gezeigten Beispiel **** werden die Gesamtwerte für alle Bewertungs-, Schulungs-und Catch-up-Datei Kennzeichnungs Prozesse angezeigt. 
+ Im unten gezeigten Beispiel werden in der **Sammel Markierungs Zusammenfassung** die Gesamtwerte für die einzelnen Bewertungs-, Schulungs-und Catch-up-Datei Markierungs Prozesse angezeigt. 
   
-![Übersicht über Relevanz-Titel-Tagging](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
+![Übersicht über die Relevanz von Track-Tags](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
 ### <a name="keywords"></a>Schlüsselwörter
 
-Bei einem Schlüsselwort handelt es sich um eine eindeutige Zeichenfolge, ein Wort, einen Ausdruck oder eine Folge von Wörtern in einer Datei, die von Advanced eDiscovery identifiziert wurde, als einen wichtigen Indikator dafür, ob eine Datei relevant ist. Das Schlüsselwort und die Gewichtung der Spalten "include" in Dateien, die als relevant markiert sind, und die Spalten "Exclude" listet Schlüsselwörter und Gewichte in Dateien auf, die als nicht relevant markiert sind.
+Ein Schlüsselwort ist eine eindeutige Zeichenfolge, ein Wort, eine Phrase oder eine Sequenz von Wörtern in einer Datei, die von Advanced eDiscovery als signifikanter Indikator dafür identifiziert wird, ob eine Datei relevant ist. Die Spalten "include" Listen Schlüsselwort und Gewichtungen in Dateien, die als relevant markiert sind, und in den Spalten "ausschließen" werden Stichwörter und Gewichtungen in Dateien aufgelistet, die als nicht relevant gekennzeichnet sind.
   
-Erweiterte eDiscovery weist negative oder positive Schlüsselwort Gewichtungswerte zu. Je höher die Gewichtung ist, desto höher ist die Wahrscheinlichkeit, dass eine Datei, in der das Stichwort angezeigt wird, bei der Batch Berechnung eine höhere Relevanz erzielt. 
+Advanced eDiscovery weist negative oder positive Keyword-Gewichtungswerte zu. Je höher die Gewichtung, desto höher ist die Wahrscheinlichkeit, dass eine Datei, in der das Stichwort angezeigt wird, bei der Batch Berechnung ein höheres Relevanz-Ergebnis erhält. 
   
-Die erweiterte eDiscovery-Liste mit Schlüsselwörtern kann verwendet werden, um eine von einem Experten erstellte Liste oder eine indirekte Plausibilitätsprüfung zu einem beliebigen Zeitpunkt im Datei Prüfungsprozess zu ergänzen.
+Die erweiterte eDiscovery-Liste mit Stichwörtern kann verwendet werden, um eine Liste, die von einem Experten erstellt wurde, oder als indirekte Plausibilitätsprüfung zu einem beliebigen Zeitpunkt im Datei Überprüfungsprozess zu ergänzen.
   
 ### <a name="training-progress"></a>Schulungs Fortschritt
 
-Der **Fortschritts Fortschritt** -Bereich enthält eine Trainingsfortschritts Grafik und eine Anzeige des Qualitäts Indikators, wie im folgenden Beispiel gezeigt. 
+Der Bereich **Trainingsfortschritt** enthält einen Fortschrittsdiagramm für den Trainingsfortschritt und eine Qualitätsanzeige, wie im folgenden Beispiel dargestellt. 
   
-![Relevanz nachVerfolgen des Schulungs Fortschritts](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
+![Relevanz Nachverfolgen des Schulungs Fortschritts](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
- **Ausbildungs Qualitätsindikator**: zeigt die Bewertung der Tagging-Konsistenz wie folgt an:
+ **Trainings Qualitätsindikator**: zeigt die Bewertung der Markierungs Konsistenz wie folgt an:
   
-- **Gut**: Dateien werden konsistent gekennzeichnet. (Grünes Licht wird angezeigt)
+- **Gut**: Dateien werden konsistent markiert. (Grünes Licht wird angezeigt)
     
-- **Mittel**: einige Dateien werden möglicherweise inkonsistent gekennzeichnet. (Gelbes Licht wird angezeigt)
+- **Medium**: einige Dateien werden möglicherweise inkonsistent gekennzeichnet. (Gelbe Anzeige)
     
 - **Warnung**: viele Dateien werden möglicherweise inkonsistent gekennzeichnet. (Rotes Licht wird angezeigt)
     
- **Trainingsfortschritts Diagramm**: zeigt den Grad der Relevanz Training Stabilität nach einer Reihe von Relevanz trainingszyklen im Vergleich zu den F-Measure-Wert. Bei der Verschiebung von links nach rechts über den Graphen verengt sich das Konfidenzintervall und wird zusammen mit dem F-Measure durch erweiterte eDiscovery-Relevanz verwendet, um die Stabilität zu bestimmen, wenn die Relevanz-Schulungsergebnisse optimiert werden.
+ **Trainingsfortschritt Graph**: zeigt den Grad der Relevanz der Trainings Stabilität nach einer Reihe von Relevanz-trainingszyklen im Vergleich zum F-Measure-Wert an. Wenn wir von links nach rechts über das Diagramm navigieren, verengt sich das Konfidenzintervall und wird zusammen mit der F-Maßnahme mit der erweiterten eDiscovery-Relevanz verwendet, um die Stabilität zu bestimmen, wenn die Relevanz-Trainingsergebnisse optimiert werden.
   
 > [!NOTE]
-> Relevanz verwendet F2, eine F-Measure-Metrik, bei der Rückruf doppelt so viel Gewicht erhält wie Precision. Für Fälle mit hoher reichgröße (mehr als 25%) verwendet Relevanz F1 (1:1-Verhältnis). Das F-Measure-Verhältnis kann in den **erweiterten Einstellungen**für **Relevanz Setup** \> konfiguriert werden. 
+> Relevanz verwendet F2, eine F-Measure-Metrik, bei der der Rückruf doppelt so viel Gewicht erhält wie die Genauigkeit. Für Fälle mit hohem Reichtum (über 25%) verwendet Relevanz F1 (1:1 Verhältnis). Das Verhältnis F-Measure kann unter **Relevanz Setup** \> **Erweiterte Einstellungen**konfiguriert werden. 
   
 ### <a name="batch-calculation-results"></a>Ergebnisse der Batch Berechnung
 
-Der Bereich **Batch Berechnungsergebnisse** enthält die Anzahl der Dateien, die für Relevanz bewertet wurden, wie folgt: 
+Der Bereich **Batch Berechnungsergebnisse** enthält die Anzahl der Dateien, die für die Relevanz bewertet wurden, wie folgt: 
   
 - **Success**
     
 - **Empty**: enthält keinen Text, beispielsweise nur Leerzeichen/Tabstopps
     
-- **Fehler**: aufgrund einer übermäßigen Größe oder nicht lesbar
+- **Fehler**: aufgrund übermäßiger Größe oder konnte nicht gelesen werden
     
-- **Ignoriert**: aufgrund von übermäßiger Größe
+- **Ignoriert**: aufgrund übermäßiger Größe
     
-- **Nebel**: enthält keinen bedeutungslosen Text oder keine für das Problem relevanten Features
+- **Neblig**: enthält sinnlosen Text oder keine Features, die für das Problem relevant sind.
     
 > [!NOTE]
-> Leer, failed, ignored oder neblig erhalten eine Relevanz-Bewertung von-1. 
+> Leer, Fehler, ignoriert oder Nebel erhalten ein Relevanz-Ergebnis von-1. 
   
 ### <a name="training-statistics"></a>Schulungs Statistiken
 
-Im Bereich **Trainingsstatistik** werden Statistiken und Diagramme basierend auf Ergebnissen aus Advanced eDiscovery Relevance Training angezeigt. 
+Im Bereich " **Trainingsstatistik** " werden Statistiken und Grafiken basierend auf Ergebnissen aus dem Advanced eDiscovery Relevanz Training angezeigt. 
   
 ![Relevanz Track Training Statistics](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
-Diese Ansicht zeigt Folgendes:
+In dieser Ansicht wird Folgendes angezeigt:
   
-- **Review-Recall Ratio**: Vergleich der Ergebnisse nach Relevanz-Bewertungen in einer hypothetisch linearen Übersetzung. ReCall wird aufgrund des Übersichts Satzes festgelegt.
+- **Review-Recall Ratio**: Vergleich der Ergebnisse nach Relevanz Partituren in einer hypothetisch linearen Überprüfung. Recall wird anhand der Größe der Überprüfungs Sätze geschätzt.
     
-- **Parameter**: kumulative berechnete Statistiken im Zusammenhang mit dem Übersichts Satz im Verhältnis zur Datei Auffüllung für den gesamten Fall.
+- **Parameter**: kumulierte berechnete Statistiken im Zusammenhang mit der Überprüfungsgruppe im Verhältnis zur Datei Auffüllung für den gesamten Fall.
     
 - **Review**: Prozentsatz der zu überprüfenden Dateien basierend auf diesem Cutoff.
     
-- **Recall**: Prozentsatz der relevanten Dateien im Übersichts Satz. 
+- **Rückruf**: Prozentsatz relevanter Dateien im Überprüfungs Satz. 
     
-- **Verteilung nach Relevanz Bewertung**: Dateien in der dunkelgrauen Anzeige Links befinden sich unterhalb der Cutoff-Bewertung. Ein QuickInfo zeigt den Relevanzwert und den zugehörigen Prozentsatz der Dateien in der Übersichtsdatei im Verhältnis zu den Gesamtdateien an.
+- **Verteilung nach Relevanz-Ergebnis**: Dateien in der dunkelgrauen Anzeige links liegen unterhalb der Cutoff-Punktzahl. Ein QuickInfo zeigt das Relevanz-Ergebnis und den zugehörigen Prozentsatz der Dateien im Überprüfungs Dateisatz im Verhältnis zu den Gesamtdateien an.
     
 ## <a name="see-also"></a>Siehe auch
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Bedeutung der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
+[Grundlegendes zur Relevanz der Bewertung](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [Durchführen und Überprüfen der Bewertung](tagging-and-assessment-in-advanced-ediscovery.md)
   
 [Durchführen von Relevanz-Schulungen](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[EntscheidungsFindung anhand der Ergebnisse](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Treffen von Entscheidungen basierend auf den Ergebnissen](decision-based-on-the-results-in-advanced-ediscovery.md)
   
 [Testen der Relevanz-Analyse](test-relevance-analysis-in-advanced-ediscovery.md)
 

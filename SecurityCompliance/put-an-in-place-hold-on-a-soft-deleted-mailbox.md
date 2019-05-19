@@ -3,28 +3,28 @@ title: Einfügen eines In-situ für ein vorläufig gelöschtes Postfach in Excha
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Erfahren Sie, wie Sie einen In-Situ-Speicher für ein vorläufig gelöschtes Postfach erstellen können, damit es inaktiv wird und der Inhalt bewahrt wird. Anschließend können Sie zum Durchsuchen des inaktiven Postfachs die Microsoft eDiscovery-Tools verwenden.
-ms.openlocfilehash: f5ac31b4bfd993bf384aa17ba5f71de937cec720
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ce4121e6187a765b5a9e23d6e6e11d8cc2640161
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261603"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157277"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Einfügen eines In-situ für ein vorläufig gelöschtes Postfach in Exchange Online
 
 Erfahren Sie, wie Sie einen In-Situ-Speicher für ein vorläufig gelöschtes Postfach erstellen können, damit es inaktiv wird und der Inhalt bewahrt wird. Anschließend können Sie zum Durchsuchen des inaktiven Postfachs die Microsoft eDiscovery-Tools verwenden.
   
 > [!NOTE]
-> Wir haben den Stichtag für die Erstellung neuer in-situ-Speicher in Exchange Online (in Office 365-und Exchange Online-eigenständigen Plänen) verschoben. Sie können jedoch noch in diesem oder Anfang des nächsten Jahres neue in-situ-Speicher in Exchange Online erstellen. Als Alternative zur Verwendung von in-situ-Speicher können Sie [eDiscovery-Fälle](https://go.microsoft.com/fwlink/?linkid=780738) oder [Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?linkid=827811) im Security & Compliance Center verwenden. Nach der Außerkraftsetzung neuer in-situ-Speicher können Sie weiterhin vorhandene in-situ-Aufbewahrungen ändern, und das Erstellen neuer in-situ-Speicher in Exchange Server 2013 und Exchange-hybridbereitstellungen wird weiterhin unterstützt. Und Sie können weiterhin Postfächer in einem Rechtsstreit halten. 
+> Wir haben den Stichtag für die Erstellung neuer in-Place-Speicher in Exchange Online (in Office 365 und Exchange Online eigenständigen Plänen) verschoben. Aber später in diesem Jahr oder Anfang nächsten Jahres können Sie keine neuen in-Place-Speicher in Exchange Online erstellen. Als Alternative zur Verwendung von in-Place-Speicher können Sie [eDiscovery-Fälle](https://go.microsoft.com/fwlink/?linkid=780738) oder [Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?linkid=827811) im Security & Compliance Center verwenden. Nachdem wir neue in-Place-Speicher außer Betrieb genommen haben, können Sie weiterhin vorhandene in-Place-Speicher ändern, und das Erstellen neuer in-Place-Speicher in Exchange Server 2013 und Exchange-hybridbereitstellungen wird weiterhin unterstützt. Und Sie können weiterhin Postfächer für das Beweissicherungsverfahren platzieren. 
   
-You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? If the deleted mailbox retention period hasn't expired, you can put an In-Place Hold on the deleted mailbox (called a  soft-deleted mailbox ) and make it an inactive mailbox. An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. Nachdem das Postfach deaktiviert wurde, können Sie das Postfach durchsuchen, indem Sie in-Place eDiscovery in Exchange Online, Inhaltssuche im Security & Compliance Center oder im eDiscovery Center in SharePoint Online verwenden. 
+You might have a situation where a person has left your organization, and their corresponding user account and mailbox were deleted. Afterwards, you realize there's information in the mailbox that needs to be preserved. What can you do? If the deleted mailbox retention period hasn't expired, you can put an In-Place Hold on the deleted mailbox (called a  soft-deleted mailbox ) and make it an inactive mailbox. An  *inactive mailbox*  is used to preserve a former employee's email after he or she leaves your organization. The contents of an inactive mailbox are preserved for the duration of the In-Place Hold that was is placed on the soft-deleted mailbox when it was made inactive. Nachdem das Postfach deaktiviert wurde, können Sie das Postfach mithilfe der in-Place-eDiscovery in Exchange Online, der Inhaltssuche im Security & Compliance Center oder des eDiscovery Center in SharePoint Online durchsuchen. 
   
 > [!NOTE]
 > In Exchange Online ist ein vorläufig gelöschtes Postfach ein Postfach, das zwar gelöscht wurde, aber innerhalb eines bestimmten Aufbewahrungszeitraums wiederhergestellt werden kann. Dieser Aufbewahrungszeitraum für vorläufig gelöschte Postfächer beträgt in Exchange Online 30 Tage. Das bedeutet, dass das Postfach innerhalb von 30 Tagen nach dem vorläufigen Löschen wiederhergestellt werden kann. Nach 30 Tagen wird ein vorläufig gelöschtes Postfach für das dauerhafte Löschen markiert und kann dann nicht mehr wiederhergestellt oder inaktiviert werden. 
@@ -41,7 +41,7 @@ You might have a situation where a person has left your organization, and their 
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- Weitere Informationen zu inaktiven Postfächern finden Sie unter Übersicht über inaktive [Postfächer in Office 365](inactive-mailboxes-in-office-365.md).
+- Weitere Informationen zu inaktiven Postfächern finden Sie unter [Overview of inactive Mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
     
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>Erstellen eines In-Situ-Speichers für ein vorläufig gelöschtes Postfach, um daraus ein inaktives Postfach zu machen
 

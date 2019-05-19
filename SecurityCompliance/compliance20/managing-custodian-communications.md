@@ -1,10 +1,10 @@
 ---
-title: Arbeiten mit Kommunikation in Advanced eDiscovery (Preview)
+title: Arbeiten mit Kommunikationen in Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,54 +13,54 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 916691e1f2470ef9e9e54d9dfe06c5277a92ba53
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Mit Advanced eDiscovery können Sie den Workflow für rechtliche Aufbewahrungs Benachrichtigungen einfach verwalten, um Benachrichtigungsverwalter in rechtlichen Ermittlungen zu benachrichtigen.
+ms.openlocfilehash: cf5c8f5e932993255bda2cb959657c2c6ded3163
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241252"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154907"
 ---
-# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Arbeiten mit Kommunikation in Advanced eDiscovery (Preview)
+# <a name="work-with-communications-in-advanced-ediscovery"></a>Arbeiten mit Kommunikationen in Advanced eDiscovery
 
-Advanced eDiscovery (Preview) ermöglicht Rechtsabteilungen, Ihre Prozesse bei der Nachverfolgung und Verteilung von Benachrichtigungen über zugelassene Aufbewahrungen zu vereinfachen. Die Depotbank-Kommunikationsfunktion ermöglicht es den Rechtsabteilungen, Ihre gesamten legalen Aufbewahrungs Prozesse – von Benachrichtigungen, Erinnerungen und Eskalationen – an einem Ort zu verwalten und zu automatisieren.
+Advanced eDiscovery ermöglicht juristischen Abteilungen, Ihre Prozesse bei der Verfolgung und Verteilung von Benachrichtigungen über rechtliche Aufbewahrungsfristen zu vereinfachen. Das Tool "Depotbank-Kommunikation" ermöglicht es juristischen Abteilungen, den gesamten rechtlichen Aufbewahrungs Prozess, von erst Benachrichtigungen über Erinnerungen bis hin zu Eskalationen, an einem einzigen Ort zu verwalten und zu automatisieren.
 
 ## <a name="what-is-a-legal-hold-notification"></a>Was ist eine rechtliche Aufbewahrungs Benachrichtigung?
 
-Eine rechtliche Aufbewahrungspflicht (auch als *Gerichtsverfahren*bezeichnet) ist eine Benachrichtigung, die von der Rechtsabteilung einer Organisation an Mitarbeiter, Kontingent Mitarbeiter oder andere Datenverwalter gesendet wird. Diese Benachrichtigungen beauftragen Verwalter zur Aufbewahrung elektronisch gespeicherter Informationen (ESI) sowie Material, das für eine aktive oder bevorstehende Rechtsmaterie relevant sein kann. Juristische Teams müssen wissen, dass jeder Verwalter die angegebenen Anweisungen erhalten, gelesen und verstanden hat.
+Eine rechtliche Aufbewahrungspflicht (auch als *Beweissicherungsverfahren*bezeichnet) ist eine Benachrichtigung, die von der Rechtsabteilung einer Organisation an Mitarbeiter, Kontingente Mitarbeiter oder Verwalter von Daten gesendet wird, die möglicherweise für eine rechtliche Untersuchung relevant sind. Diese Benachrichtigungen weisen Verwalter an, elektronisch gespeicherte Informationen sowie alle Inhalte beizubehalten, die für eine aktive oder bevorstehende Rechtsfrage relevant sein können. Juristische Teams müssen wissen, dass jede Depotbank die angegebenen Anweisungen erhalten, gelesen, verstanden und vereinbart hat.
 
-## <a name="the-legal-hold-notification-process"></a>Benachrichtigungsprozess für zugelassene Aufbewahrung
+## <a name="the-legal-hold-notification-process"></a>Benachrichtigungsprozess für Legal Hold
 
-Eine Organisation hat die Pflicht, relevante Informationen zu erhalten, wenn Sie sich über eine drohende gerichtliche oder behördliche Untersuchung erfährt. Um die Aufbewahrungsanforderungen einzuhalten, sollte die Organisation unverzüglich potenzielle Verwalter über ihre Pflicht zur Aufbewahrung relevanter Informationen informieren. 
+Eine Organisation hat die Pflicht, relevante Informationen beizubehalten, wenn Sie von einer bevorstehenden Rechtsstreitigkeiten oder behördlichen Untersuchung erfahren. Um die Aufbewahrungsanforderungen einer Untersuchung einzuhalten, sollte die Organisation potenzielle Verwalter unverzüglich über ihre Pflicht zur Wahrung relevanter Informationen informieren.
 
-Mit Advanced eDiscovery (Preview) können juristische Teams ihren gesetzlichen Aufbewahrungs Status für Benachrichtigungen erstellen und anpassen. Die Funktion für die Depot Kommunikation ermöglicht es juristischen Teams, die folgenden Hinweise und Workflows zu konfigurieren:
+Mit Advanced eDiscovery können Legal Teams ihren rechtlichen Aufbewahrungs Benachrichtigungs Workflow erstellen und anpassen. Das Tool "Depotbank-Kommunikation" ermöglicht es juristischen Teams, die folgenden Hinweise und Workflows zu konfigurieren:
 
-1. **Veröffentlichungshinweis**: eine gesetzliche Aufbewahrungspflicht wird durch eine Benachrichtigung der Rechtsabteilung an Verwalter ausgestellt (oder eingeleitet), die über relevante Informationen zu diesem Fall verfügen könnten. Dieser Hinweis weist diese Verwalter an, alle Informationen beizubehalten, die möglicherweise für die Ermittlung benötigt werden. 
+1. **Veröffentlichungshinweis**: eine rechtliche Aufbewahrungsfrist wird durch eine Mitteilung der Rechtsabteilung an Verwalter ausgestellt (oder eingeleitet), die möglicherweise relevante Informationen zum Fall haben. In diesem Hinweis werden die Verwalter angehalten, alle Informationen beizubehalten, die für die Ermittlung möglicherweise erforderlich sind.
    
-2.  **ErneutEr Veröffentlichungshinweis**: in einem Fall können Verwalter zusätzliche oder weniger Informationen erhalten, als Sie zuvor angewiesen wurden. In diesem Szenario können Sie den vorhandenen Haltestatus aktualisieren und ihn erneut an Ihre Verwalter ausgeben.
+2.  **Hinweis zur erneuten Veröffentlichung**: in einem Fall müssen Verwalter möglicherweise zusätzliche Inhalte (oder weniger Inhalte) aufbewahren, als zuvor angefordert wurden. In diesem Szenario können Sie den vorhandenen Aufbewahrungs Hinweis aktualisieren und ihn erneut an Verwalter ausgeben.
 
-3.  **Veröffentlichungshinweis**: Sobald eine Angelegenheit gelöst ist und die Depotbank keine Aufbewahrungspflicht mehr unterliegt, kann die Depotbank freigegeben werden, damit Informationen nicht mehr aufbewahrt werden, wenn Sie nicht benötigt werden. Darüber hinaus wird Ihr Depotbank benachrichtigt, dass Sie nicht mehr zu den Erhaltungs Pflichten und den ausstehenden Anweisungen für die Wiederaufnahme ihrer Aktivität berechtigt sind.
+3.  **Veröffentlichungshinweis**: Sobald ein Problem gelöst ist und die Depotbank nicht mehr einer Aufbewahrungspflicht unterliegt, kann die Depotbank aus dem Fall entlassen werden. Darüber hinaus können Sie die Depotbank darüber informieren, dass Sie nicht mehr für die Aufbewahrung von Inhalten benötigt werden, und Anweisungen zum Fortsetzen ihrer normalen Arbeitsaktivität im Hinblick auf Ihre Daten geben.
 
-4. **Erinnerungen und Eskalationen**: in einigen Fällen genügt es nicht, nur eine Nachricht zu veröffentlichen, um die gesetzlichen Anforderungen zu erfüllen. Mit jeder Benachrichtigung können juristische Teams eine Reihe von Mahn-und Eskalations Workflows planen, um automatisch Nachverfolgung mit nicht reagierenden Verwalter zu führen.
+4. **Erinnerungen und Eskalationen**: in einigen Fällen genügt ein Hinweis nur, um gesetzliche Ermittlungsanforderungen zu erfüllen. Mit jeder Benachrichtigung können Legal Teams einen Mahn-und Eskalations Workflow für die automatische Nachverfolgung mit nicht reagierenden Depotstellen planen.
 
-    - **Erinnerungen**: Nachdem eine gesetzliche Aufbewahrungsfrist für eine Reihe von Verwalter ausgestellt oder erneut ausgestellt wurde, kann eine Organisation Erinnerungen für die Warnung nicht reagierender Verwalter einrichten. 
+    - **Erinnerungen**: Nachdem ein rechtlicher Aufbewahrungs Vermerk für eine Gruppe von Verwaltern ausgestellt oder erneut ausgestellt wurde, kann eine Organisation Erinnerungen einrichten, um nicht reagierende depotverwalter zu warnen.
 
-    - **Eskalationen**: Wenn eine Depotbank auch nach einer Reihe von Erinnerungen nicht mehr reagiert, kann das juristische Team einen Eskalations Workflow einrichten, um die Depotbank und ihren Vorgesetzten zu benachrichtigen.
+    - **Eskalationen**: Wenn eine Depotbank auch nach einer Reihe von Erinnerungen über einen bestimmten Zeitraum nicht mehr reagiert, kann das juristische Team einen Eskalations Workflow einrichten, um nicht reagierende Verwalter und deren Vorgesetzten zu benachrichtigen.
 
 ## <a name="role-groups-and-permissions"></a>Rollengruppen und Berechtigungen 
 
-Juristische Teams können Ihre Fall Aktivitäten mithilfe von eDiscovery-bezogenen Rollengruppen und Berechtigungen im Security & Compliance Center Steuern und segmentieren. 
+Zugelassene Teams können Ihre Fall Aktivitäten mithilfe von eDiscovery-bezogenen Rollengruppen und Berechtigungen im Security & Compliance Center Steuern und trennen. 
 
-Zum Erstellen und Verwalten von Benachrichtigungen für zugelassene Aufbewahrung muss ein Benutzer Teil der folgenden Rollengruppen sein:
+Zum Erstellen und Verwalten von Benachrichtigungen über rechtliche Aufbewahrungsfristen muss ein Benutzer Teil der folgenden Rollengruppen sein:
 
-- **eDiscovery-Manager** : Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, Aufbewahrungs-und inhaltsspeicherorte aufbewahren, Benachrichtigungen über zugelassene Aufbewahrungen verwalten, Inhalts suchen erstellen und bearbeiten, die mit einem Fall verknüpft sind, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced vorbereiten. eDiscovery (Vorschau). Diese Rollengruppe enthält zwei Untergruppen. Die Differenz zwischen diesen Untergruppen basiert auf dem Bereich.
+- **eDiscovery Manager** – Mitglieder dieser Rollengruppe können eDiscovery-Fälle erstellen und verwalten. Sie können Mitglieder hinzufügen und entfernen, Aufbewahrungen und inhaltsspeicherorte in der Warteschleife platzieren, Benachrichtigungen für legale Aufbewahrungen verwalten, Inhalts Suchvorgänge erstellen und bearbeiten, die einem Fall zugeordnet sind, die Ergebnisse einer Inhaltssuche exportieren und Suchergebnisse für die Analyse in Advanced vorbereiten. eDiscovery. In dieser Rollengruppe gibt es zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
 
-  - **eDiscovery Manager** – kann die eDiscovery-Fälle anzeigen und verwalten, die Sie erstellen oder Mitglied sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzufügt, kann der zweite eDiscovery-Manager den Fall auf der eDiscovery-Seite im Security & Compliance Center nicht anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery (Preview) zugreifen, um Analyseaufgaben auszuführen.
+  - **eDiscovery-Manager** -kann die eDiscovery-Fälle anzeigen und verwalten, in denen Sie erstellt werden oder Mitglied von sind. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzufügt, kann der zweite eDiscovery-Manager den Fall nicht auf der eDiscovery-Seite im Security & Compliance Center anzeigen oder öffnen. eDiscovery-Manager können auch auf ihre Fälle in Advanced eDiscovery zugreifen, um Analyseaufgaben durchzuführen.
 
-  - **eDiscovery-Administrator** – kann alle Fall Verwaltungsaufgaben durchführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
+  - **eDiscovery-Administrator** -kann alle Fall Verwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Darüber hinaus können eDiscovery-Administratoren folgende Aktionen durchführen:
     
     - Anzeigen aller Fälle, die auf der Seite eDiscovery-Fälle aufgeführt sind.
     - Verwalten Sie alle Fälle in der Organisation, nachdem Sie sich selbst als Mitglied der Anfrage hinzugefügt haben.
-    - Access Case Data in Advanced eDiscovery (Preview) für jeden Fall in der Organisation.
+    - Zugriffs Fall Daten in Advanced eDiscovery für jeden Fall in der Organisation.
 
-Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Office 365 Security _AMP_ Compliance Center](../assign-ediscovery-permissions.md).
+Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](../assign-ediscovery-permissions.md).

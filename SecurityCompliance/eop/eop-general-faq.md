@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'Hier werden die häufigsten allgemeinen Fragen zum cloudgehosteten E-Mail-Filterdienst Microsoft Exchange Online Protection (EOP) beantwortet. Themen mit weiteren häufig gestellten Fragen (FAQs) finden Sie unter den folgenden Links:'
-ms.openlocfilehash: 00618618d251e1478cb0dc0a0fbb116db2565fad
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9960f21e13be7eee059f68a40282ed73ff934d02
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256603"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153157"
 ---
 # <a name="eop-general-faq"></a>EOP – Allgemeine häufig gestellte Fragen
 
@@ -25,13 +25,13 @@ Hier werden die häufigsten allgemeinen Fragen zum cloudgehosteten E-Mail-Filter
     
 - [Häufig gestellte Fragen zur delegierten Verwaltung](delegated-administration-faq.md)
     
-- [HÄUFIG gestellte Fragen zum Antispamschutz](../anti-spam-protection-faq.md)
+- [Häufig gestellte Fragen zum Anti-Spam-Schutz](../anti-spam-protection-faq.md)
     
 - [Listen sicherer und blockierter Absender in Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
 - [Häufig gestellte Fragen (FAQ) zur Quarantäne](../quarantine-faq.md)
     
-- [HÄUFIG gestellte Fragen zum Schutz vor Schadsoftware](../anti-malware-protection-faq-eop.md)
+- [FAQ zu Anti-Malware Protection](../anti-malware-protection-faq-eop.md)
     
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
@@ -63,7 +63,7 @@ A. Office 365 ist der Name einer Kollektion von Produkten und Dienstleistungen, 
   
  **F. Verfügt EOP über ein Kommunikationsportal, auf dem ich Informationen über bekannte Probleme und die zu erwartenden Lösungen abrufen kann? Wie verhält es sich mit neuen Funktionen?**
   
-A. Das Microsoft 365 Admin Center hat einige dieser Informationen. Wenn Sie von einem Service Level-Ereignis betroffen sind, sollte eine Kommunikations Warnung angezeigt werden (in der Regel mit einem Bell-Symbol verbunden), nachdem Sie sich im Microsoft 365 Admin Center angemeldet haben. Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen.
+A. Das Microsoft 365 Admin Center enthält einige dieser Informationen. Wenn Sie von einem Ereignis auf Dienstebene betroffen sind, sollte eine Kommunikations Warnung (in der Regel von einem Glockensymbol begleitet) angezeigt werden, nachdem Sie sich beim Microsoft 365 Admin Center angemeldet haben. Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen.
   
 Was neue EOP-Funktionen angeht, ist die [Office 365-Roadmap](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) eine gute Ressource für Informationen zu bevorstehenden neuen Funktionen. Außerdem stellen wir auf der Website [Office-Blogs](https://go.microsoft.com/fwlink/p/?LinkId=392724) Blogbeiträge zu den neuen Features bereit. 
   

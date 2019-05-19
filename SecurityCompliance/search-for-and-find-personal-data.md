@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Informationen zum Suchen und Finden personenbezogener Daten in Office 365.
-ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265337"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158517"
 ---
 # <a name="search-for-and-find-personal-data"></a>Suchen und Finden personenbezogener Daten
 
@@ -97,7 +97,7 @@ Zu diesem Zeitpunkt können Typen vertraulicher Informationen nicht zur Suche na
 <tbody>
 <tr class="odd"><td align="left"><p>Wechseln zur Inhaltssuche im Security & Compliance Center</p></td>
 <td align="left"><p>Klicken Sie im linken Bereich des Security &amp; Compliance Centers auf **Suche &amp; Untersuchung** &gt; **Inhaltssuche**.</p>
-<p>Siehe <a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center</a>.</p></td>
+<p>Siehe <a href="https://support.office.com/de-DE/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Ausführen einer Inhaltssuche im Office 365 Security &amp; Compliance Center</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Erstellen eines neuen Suchelements für jeden Typ vertraulicher Informationen</p></td>
@@ -117,7 +117,7 @@ Zu diesem Zeitpunkt können Typen vertraulicher Informationen nicht zur Suche na
 <td align="left"><p>Suchen Sie nach dieser Art von Problemen, um zu ermitteln, ob die Abfragegenauigkeit eingehalten wird:</p>
 <p><li>Viele falsch positive Ergebnisse</li></p>
 <p><li>Fehlende bekannte Instanzen von Daten</li></p>
-<p>Siehe <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportieren der Inhaltssuchergebnisse aus dem Office 365 Security &amp; Compliance Center</a>.</p>
+<p>Siehe <a href="https://support.office.com/de-DE/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportieren der Inhaltssuchergebnisse aus dem Office 365 Security &amp; Compliance Center</a>.</p>
 <p>Hinweis: Wenn Sie Mozilla Firefox oder Chrome verwenden, müssen Sie möglicherweise zuerst Berichte mithilfe von Internet Explorer oder Edge herunterladen, um das erforderliche Add-In installieren zu können.</p></td>
 </tr>
 </tbody>

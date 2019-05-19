@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie falsch positive Ergebnisse verhindern und echte E-Mail-Nachrichten davor schützen, im Junk-E-Mail-Ordner von Office 365 zu landen.
-ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261233"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157477"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden
 
@@ -45,7 +45,8 @@ Suchen Sie in der Kopfzeile nach den folgenden Überschriften und Werten.
     
 - **SFV:SKB** Gibt an, dass die Nachricht als Spam markiert, da sie einer Sperrliste in der Richtlinie für den Spamfilter entsprach. 
     
-- **SFV:BULK** Gibt an, dass der BCL-Wert (Bulk Complaint Level) in der Kopfzeile x-microsoft-antispam über dem Schwellenwert für Massen-E-Mails liegt, der für den Inhaltsfilter festgelegt wurde. Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, wie [Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen.
+- 
+  **SFV:BULK** Gibt an, dass der BCL-Wert (Bulk Complaint Level) in der Kopfzeile x-microsoft-antispam über dem Schwellenwert für Massen-E-Mails liegt, der für den Inhaltsfilter festgelegt wurde. Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, wie [Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen.
     
 - **CAT:SPOOF** oder **CAT:PHISH** Gibt an, dass die Nachricht gefälscht zu sein scheint, was bedeutet , dass die Nachrichtenquelle nicht überprüft werden kann und verdächtig sein könnte. Wenn die Nachricht gültig ist, muss der Absender sicherstellen, dass sie über eine korrekte SPF- und DKIM-Konfiguration verfügt. Überprüfen Sie die Kopfzeile „Authentication-Results“, um weitere Informationen zu erhalten. Es ist zwar schwierig, alle Absender dazu zu veranlassen, gültige E-Mail-Authentifizierungsmethoden zu verwenden, werden diese Überprüfungen jedoch übergangen, kann dies eine große Gefahr darstellen. 
     
@@ -63,7 +64,8 @@ Um effektiv zu arbeiten, müssen Administratoren in Exchange Online Protection (
     
 - **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
 
-- **Stellen Sie sicher, dass sich die Benutzer innerhalb der zulässigen Grenzwerte** zum Senden und Empfangen von E-Mails befinden, wie [hier](https://docs.microsoft.com/de-DE/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) gezeigt.
+- 
+  **Stellen Sie sicher, dass sich die Benutzer innerhalb der zulässigen Grenzwerte** zum Senden und Empfangen von E-Mails befinden, wie [hier](https://docs.microsoft.com/de-DE/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) gezeigt.
 
  - **Überprüfen Sie die Massenebenen, **wie [hier](bulk-complaint-level-values.md) angegeben.
     
@@ -82,7 +84,7 @@ Von EOP werden die sicheren Absender und Empfänger Ihrer Benutzer berücksichti
 
 Wenn die Benutzer in Outlook die Option "Nur sichere Absender und Empfänger: Es werden nur Nachrichten von Personen und Domänen auf den Listen 'Sichere Absender' und 'Sichere Empfänger' in den Posteingang übermittelt" aktiviert haben, werden alle E-Mails von einem Absender in den Junk-E-Mail-Ordner verschoben, es sei denn, dieser Absender ist auf der Liste sicherer Absender des Empfängers verzeichnet. Dies erfolgt unabhängig davon, ob EOP eine Nachricht als Nicht-Spam-Nachricht kennzeichnet oder Sie in EOP eine Regel eingerichtet haben, um eine Nachricht als Nicht-Spam-Nachricht zu kennzeichnen.
   
-Sie können die Option "Nur sichere Absender und Empfänger" für Outlook-Benutzer deaktivieren. Folgen Sie dazu den Anweisungen unter [Outlook: Richtlinieneinstellung zum Deaktivieren der Benutzeroberfläche für den Junk-E-Mail-Filtermechanismus](https://support.microsoft.com/de-DE/kb/2180568).
+Sie können die Option "Nur sichere Absender und Empfänger" für Outlook-Benutzer deaktivieren. Folgen Sie dazu den Anweisungen unter [Outlook: Richtlinieneinstellung zum Deaktivieren der Benutzeroberfläche für den Junk-E-Mail-Filtermechanismus](https://support.microsoft.com/en-us/kb/2180568).
   
 Wenn Sie eine Nachricht in Outlook im Web anzeigen, wird ein gelber Sicherheitshinweis eingeblendet, der darauf hinweist, dass sich die Nachricht im Ordner "Junk" befindet, da der Absender nicht auf der Liste sicherer Absender des Empfängers verzeichnet ist.
   

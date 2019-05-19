@@ -1,9 +1,9 @@
 ---
-title: Aktivieren von archivpostfächern im Security & Compliance Center
+title: Aktivieren von Archivpostfächern im Security & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
@@ -16,63 +16,63 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: Verwenden Sie das Security & Compliance Center in Office 365, um Archivpostfächer zu aktivieren, um die Nachrichten Aufbewahrungs-, eDiscovery-und halte Anforderungen Ihrer Organisation zu unterstützen.
-ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
-ms.translationtype: MT
+description: Im Security & Compliance Center in Office 365 können Sie Archivpostfächer aktivieren, um den Anforderungen Ihrer Organisation hinsichtlich Nachrichtenarchivierung, eDiscovery und Aufbewahrung gerecht zu werden.
+ms.openlocfilehash: 5cf399b311b6c342aff2d84477edaa945f8e0cd4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402923"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153287"
 ---
-# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von archivpostfächern im Security & Compliance Center
+# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Aktivieren von Archivpostfächern im Security & Compliance Center
   
-Die Archivierung in Office 365 (auch als in-Place-Archivierung bezeichnet) bietet Benutzern zusätzlichen Speicherplatz für Postfächer. Nachdem Sie Archivpostfächer aktiviert haben, können Benutzer mithilfe von Microsoft Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) auf Nachrichten in ihren archivpostfächern zugreifen und diese speichern. Benutzer können auch Nachrichten zwischen Ihrem primären Postfach und Ihrem Archivpostfach verschieben oder kopieren. Sie können auch gelöschte Elemente aus dem Ordner "Wiederherstellbare Elemente" im Archivpostfach wiederherstellen, indem Sie das Tool "Gelöschte Elemente" verwenden. 
+Durch die Archivierung in Office 365 (auch In-Situ-Archivierung genannt) erhalten Benutzer zusätzlichen Speicherplatz im Postfach. Nach Aktivierung der Archivpostfächer können Benutzer über Microsoft Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) auf Nachrichten in ihren Archivpostfächern zugreifen und sie dort speichern. Benutzer können auch Nachrichten zwischen dem primären Postfach und dem Archivpostfach kopieren oder verschieben. Mit der Wiederherstellung gelöschter Elemente können die Benutzer darüber hinaus gelöschte Elemente aus dem Ordner „Gelöschte Elemente“ in ihrem Archivpostfach wiederherstellen. 
   
 > [!TIP]
-> Office 365 bietet eine unbegrenzte Menge an Archivspeicher mit der automatisch expandierenden Archivierungsfunktion. Wenn die automatische Erweiterung der Archivierung aktiviert ist und dann das anfängliche Speicherkontingent im Archivpostfach eines Benutzers erreicht wird, fügt Office 365 automatisch zusätzlichen Speicherplatz hinzu. Dies führt dazu, dass für die Benutzer kein Speicherplatz mehr zur Verfügung steht und Sie nach der anfänglichen Aktivierung des Archivpostfachs und der automatischen Erweiterung der Archivierung für Ihre Organisation nichts verwalten müssen. Weitere Informationen finden Sie unter [Übersicht zur unbeschränkten Archivierung in Office 365](unlimited-archiving.md). 
+> Office 365 bietet mit dem Archivierungsfeature "AutoErweiterung" eine unbegrenzte Menge an Archivspeicher. Wenn das Feature "AutoErweiterung des Archivs" aktiviert ist und das anfängliche Speicherkontingent im Archivpostfach eines Benutzers erreicht wird, fügt Office 365 automatisch weiteren Speicherplatz hinzu. Dies bedeutet, dass den Benutzern niemals der Postfachspeicherplatz ausgeht und Sie nichts verwalten müssen, nachdem Sie das Archivpostfach zum ersten Mal aktiviert und das Feature "AutoErweiterung des Archivs" für Ihre Organisation aktiviert haben. Weitere Informationen finden Sie unter [Übersicht zur unbeschränkten Archivierung in Office 365](unlimited-archiving.md). 
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen der Rolle e-Mail-Empfänger in Exchange Online zugewiesen werden, um Archivpostfächer zu aktivieren oder zu deaktivieren. Diese Rolle wird standardmäßig den Rollengruppen "Empfängerverwaltung" und "Organisationsverwaltung" auf der Seite " **Berechtigungen** " im Exchange Admin Center zugewiesen. Wenn die Seite **Archiv** im Security _AMP_ Compliance Center nicht angezeigt wird, bitten Sie Ihren Administrator, Ihnen die erforderlichen Berechtigungen zuzuweisen. 
+Sie müssen der Rolle "E-Mail-Empfänger" in Exchange Online zugewiesen sein, um Archivpostfächer zu aktivieren oder zu deaktivieren. Standardmäßig ist diese Rolle den Rollengruppen "Empfängerverwaltung" und "Organisationsverwaltung" auf der Seite **Berechtigungen** im Exchange Admin Center zugewiesen. Wenn die Seite **Archiv** im Security & Compliance Center nicht angezeigt wird, bitten Sie Ihren Administrator, Ihnen die notwendigen Berechtigungen zuzuweisen. 
   
 ## <a name="enable-an-archive-mailbox"></a>Aktivieren eines Archivpostfachs
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts- oder Schul-/Unikonto bei Office 365 an.
     
-3. Klicken Sie im linken Bereich des Security & Compliance Center auf **Data Governance** \> **Archive**.
+3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Datenkontrolle** \> **Archiv**.
     
-    Die Seite **Archiv** wird angezeigt. Die Spalte **Archivpostfach** gibt für jeden Benutzer an, ob das Archivpostfach aktiviert oder deaktiviert ist. 
+    Die Seite **Archiv** wird angezeigt. In der Spalte **Archivpostfach** ist angegeben, ob für den jeweiligen Benutzer ein Archivpostfach aktiviert bzw. deaktiviert ist. 
     
 4. Wählen Sie in der Liste der Postfächer den Benutzer aus, dessen Archivpostfach Sie aktivieren möchten.
     
-    ![Klicken Sie im Detailbereich des ausgewählten Benutzers auf aktivieren, um das Archivpostfach zu aktivieren.](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
+    ![Klicken Sie im Detailbereich des ausgewählten Benutzers auf "Aktivieren", um das Archivpostfach zu aktivieren](media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
   
-5. Klicken Sie im Detailbereich für den ausgewählten Benutzer auf **aktivieren**. 
+5. Klicken Sie im Detailbereich des ausgewählten Benutzers auf **Aktivieren**. 
     
-    Es wird eine Warnung angezeigt, dass beim Aktivieren des Archivpostfachs Elemente im Postfach des Benutzers, die älter als die dem Postfach zugewiesene Archivierungsrichtlinie sind, in das neue Archivpostfach verschoben werden. Die Standardarchiv Richtlinie, die Teil der Aufbewahrungsrichtlinie ist, die Exchange Online-Postfächern zugewiesen ist, verschiebt Elemente zwei Jahre nach dem Datum, an dem das Element an das Postfach zugestellt oder vom Benutzer erstellt wurde, in das Archivpostfach. Weitere Informationen finden Sie im Abschnitt **Weitere Informationen** in diesem Artikel. 
+    Es wird eine Warnung angezeigt, dass bei einer Aktivierung des Archivpostfachs Elemente im Postfach des Benutzers, die älter sind, als es in der dem Postfach zugewiesenen Archivierungsrichtlinie festgelegt ist, in das neue Archivpostfach verschoben werden. Durch die Standardarchivierungsrichtlinie, die Teil der den Exchange Online-Postfächern zugewiesenen Aufbewahrungsrichtlinie ist, werden Elemente zwei Jahre nach dem Datum, an dem sie an das Postfach übermittelt oder vom Benutzer erstellt wurden, in das Archivpostfach verschoben werden. Weitere Informationen finden Sie im Abschnitt **Weitere Informationen** dieses Artikels. 
     
 6. Klicken Sie auf **Ja**, um das Archivpostfach zu aktivieren. 
     
-    Die Erstellung des Archivpostfachs kann ein paar Minuten dauern. Wenn es erstellt wird, wird **Archivpostfach: aktiviert** im Detailbereich für den ausgewählten Benutzer angezeigt. Möglicherweise müssen Sie **** ![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Informationen im Detailbereich zu aktualisieren. 
+    Das Erstellen des Archivpostfachs kann eine kurze Zeit dauern. Bei der Erstellung wird im Detailbereich für den ausgewählten Benutzer **Archivpostfach: Aktiviert** angezeigt. Sie müssen möglicherweise auf **Aktualisieren** ![Aktualisieren-Symbol](media/O365-MDM-Policy-RefreshIcon.gif) klicken, um die Informationen im Detailbereich zu aktualisieren. 
     
 > [!TIP]
 > Sie können auch mehrere Archivpostfächer gleichzeitig aktivieren, indem Sie mehrere Benutzer mit deaktivierten Postfächern auswählen. (Verwenden Sie dazu die UMSCHALT- oder die STRG-Taste.) Klicken Sie nach der Auswahl mehrerer Postfächer im Detailbereich auf **Aktivieren**. 
   
 ## <a name="disable-an-archive-mailbox"></a>Deaktivieren eines Archivpostfachs
   
-Sie können auch die Seite **Archiv** im Security _AMP_ Compliance Center verwenden, um das Archivpostfach eines Benutzers zu deaktivieren. Nachdem Sie ein Archivpostfach deaktiviert haben, können Sie es innerhalb von 30 Tagen nach der Deaktivierung wieder mit dem primären Postfach des Benutzers verbinden. In diesem Fall werden die ursprünglichen Inhalte des Archivpostfachs wiederhergestellt. Nach 30 Tagen werden die Inhalte des ursprünglichen Archivpostfachs dauerhaft gelöscht und können nicht wiederhergestellt werden. Wenn Sie das Archiv also erst nach über 30 Tagen erneut aktivieren, nachdem Sie es deaktiviert haben, wird ein neues Archivpostfach erstellt. 
+Sie können auch die Seite **Archiv** im Security & Compliance Center verwenden, um das Archivpostfach eines Benutzers zu deaktivieren. Nachdem Sie ein Archivpostfach deaktiviert haben, können Sie es innerhalb von 30 Tagen nach der Deaktivierung wieder mit dem primären Postfach des Benutzers verbinden. In diesem Fall wird der ursprüngliche Inhalt des Archivpostfachs wiederhergestellt. Nach Ablauf von 30 Tagen wird der Inhalt des ursprünglichen Archivpostfachs endgültig gelöscht und kann nicht wiederhergestellt werden. Wenn Sie das Archiv also erst nach über 30 Tagen erneut aktivieren, nachdem Sie es deaktiviert haben, wird ein neues Archivpostfach erstellt. 
   
-Beachten Sie, dass die standardmäßigen archivrichtlinien, die den Postfächern von Benutzern zugewiesen sind, zwei Jahre nach dem Datum, an dem das Element zugestellt wurde, Elemente in das Archivpostfach verschieben Wenn Sie das Archivpostfach eines Benutzers deaktivieren, werden keine Aktionen für Postfachelemente durchgeführt, und Sie verbleiben im primären Postfach des Benutzers.
+Beachten Sie, dass Elemente aufgrund der Standard-Archivierungsrichtlinie für Benutzerpostfächer zwei Jahre nach ihrem Empfang in das Archivpostfach verschoben werden. Wenn Sie das Archivpostfach eines Benutzers deaktivieren, wird keine Aktion mit den Postfachelementen durchgeführt, und diese verbleiben im primären Postfach des Benutzers.
   
-So deaktivieren Sie ein Archivpostfach
+So deaktivieren Sie ein Archivpostfach:
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
-2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Melden Sie sich mit Ihrem Geschäfts- oder Schul-/Unikonto bei Office 365 an.
     
-3. Klicken Sie im linken Bereich des Security & Compliance Center auf **Data Governance** \> **Archive**.
+3. Klicken Sie im Security & Compliance Center im linken Bereich auf **Datenkontrolle** \> **Archiv**.
     
     Die Seite **Archiv** wird angezeigt. Die Spalte **Archivpostfach** gibt für jeden Benutzer an, ob das Archivpostfach aktiviert oder deaktiviert ist. 
     
@@ -80,22 +80,22 @@ So deaktivieren Sie ein Archivpostfach
     
 5. Klicken Sie im Detailbereich auf **Deaktivieren**. 
     
-    Eine Warnmeldung wird angezeigt, die besagt, dass Sie 30 Tage Zeit haben, um das Archivpostfach wieder zu aktivieren, und dass nach 30 Tagen alle Informationen im Archiv dauerhaft gelöscht werden. 
+    Es wird eine Warnung angezeigt, die darauf hinweist, dass für die erneute Aktivierung des Archivpostfachs 30 Tage verbleiben und nach 30 Tagen sämtliche Informationen im Archiv dauerhaft gelöscht werden. 
     
 6. Klicken Sie auf **Ja**, um das Archivpostfach zu deaktivieren. 
     
-    Die Deaktivierung des Archivpostfachs kann ein paar Minuten dauern. Wenn es deaktiviert ist, wird **Archivpostfach: deaktiviert** im Detailbereich für den ausgewählten Benutzer angezeigt. Möglicherweise müssen Sie **** ![auf Aktualisierungssymbol](media/O365-MDM-Policy-RefreshIcon.gif) aktualisieren klicken, um die Informationen im Detailbereich zu aktualisieren. 
+    Das Deaktivieren des Archivpostfachs kann eine kurze Zeit dauern. Bei der Deaktivierung wird im Detailbereich für den ausgewählten Benutzer **Archivpostfach: Deaktiviert** angezeigt. Sie müssen möglicherweise auf **Aktualisieren** ![Aktualisieren-Symbol](media/O365-MDM-Policy-RefreshIcon.gif) klicken, um die Informationen im Detailbereich zu aktualisieren. 
     
 > [!TIP]
 > Sie können auch mehrere Archivpostfächer gleichzeitig deaktivieren, indem Sie mehrere Benutzer mit aktivierten Postfächern auswählen. (Verwenden Sie dazu die UMSCHALT- oder die STRG-Taste.) Klicken Sie nach der Auswahl mehrerer Postfächer im Detailbereich auf **Deaktivieren**. 
   
-## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Verwenden von Exchange Online PowerShell zum Aktivieren oder Deaktivieren von archivpostfächern
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Verwenden von Exchange Online PowerShell zum Aktivieren oder Deaktivieren von Archivpostfächern
 
-Sie können auch Exchange Online PowerShell verwenden, um Archivpostfächer zu aktivieren. Der Hauptgrund für die Verwendung von PowerShell besteht darin, dass Sie das Archivpostfach für alle Benutzer in Ihrer Organisation schnell aktivieren können.
+Alternativ können Sie Archivpostfächer auch mithilfe von Exchange Online PowerShell aktivieren. Der Hauptgrund für die Verwendung von PowerShell besteht darin, dass Sie schnell das Archivpostfach für alle Benutzer in Ihrer Organisation aktivieren können.
 
-Der erste Schritt besteht darin, eine Verbindung mit Exchange Online PowerShell herzustellen. Weitere Informationen finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+Im ersten Schritt müssen Sie eine Verbindung mit Exchange Online PowerShell herstellen. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-Nachdem Sie eine Verbindung mit Exchange Online hergestellt haben, können Sie die Befehle in den folgenden Abschnitten ausführen, um Archivpostfächer zu aktivieren oder zu deaktivieren.
+Nachdem Sie eine Verbindung mit Exchange Online hergestellt haben, können Sie die Befehle in den folgenden Abschnitten ausführen, um Archivpostfächer zu aktivieren bzw. zu deaktivieren.
 
 ### <a name="enable-archive-mailboxes"></a>Aktivieren von Archivpostfächern
 
@@ -105,13 +105,13 @@ Führen Sie den folgenden Befehl aus, um das Archivpostfach für einen einzelnen
   Enable-Mailbox -Identity <username> -Archive
   ```
 
-Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer in Ihrer Organisation zu aktivieren (deren Archivpostfach derzeit nicht aktiviert ist).
+Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer in Ihrer Organisation zu aktivieren, deren Archivpostfach aktuell nicht aktiviert ist.
     
   ```
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
   
-### <a name="disable-archive-mailboxes"></a>Deaktivieren von archivpostfächern
+### <a name="disable-archive-mailboxes"></a>Deaktivieren von Archivpostfächern
 
 Führen Sie den folgenden Befehl aus, um das Archivpostfach für einen einzelnen Benutzer zu deaktivieren.
     
@@ -119,7 +119,7 @@ Führen Sie den folgenden Befehl aus, um das Archivpostfach für einen einzelnen
   Disable-Mailbox -Identity <username> -Archive
   ```
 
-Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer in Ihrer Organisation zu deaktivieren (deren Archivpostfach derzeit aktiviert ist).
+Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer in Ihrer Organisation zu deaktivieren, deren Archivpostfach aktuell aktiviert ist.
     
   ```
   Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
@@ -127,22 +127,22 @@ Führen Sie den folgenden Befehl aus, um das Archivpostfach für alle Benutzer i
 
 ## <a name="more-information"></a>Weitere Informationen
   
-- Wenn ein Archivpostfach aktiviert ist, können Benutzer Nachrichten in Ihrem Archivpostfach speichern. Benutzer können mithilfe von Microsoft Outlook und Outlook im Web auf Ihre Archivpostfächer zugreifen. Durch Verwendung einer dieser Clientanwendungen können die Benutzer Nachrichten in ihrem Archivpostfach anzeigen und zwischen ihrem primären Postfach und dem Archivpostfach kopieren oder verschieben. Mit der Wiederherstellung gelöschter Elemente können die Benutzer darüber hinaus gelöschte Elemente aus dem Ordner „Gelöschte Elemente“ in ihrem Archivpostfach wiederherstellen.
+- Mit aktiviertem Archivpostfach können Benutzer Nachrichten in ihrem Archivpostfach speichern. Die Benutzer können mit Microsoft Outlook und Outlook im Web auf ihre Archivpostfächer zugreifen. Durch Verwendung einer dieser Clientanwendungen können die Benutzer Nachrichten in ihrem Archivpostfach anzeigen und zwischen ihrem primären Postfach und dem Archivpostfach kopieren oder verschieben. Mit der Wiederherstellung gelöschter Elemente können die Benutzer darüber hinaus gelöschte Elemente aus dem Ordner „Gelöschte Elemente“ in ihrem Archivpostfach wiederherstellen.
 
-   Eine Liste der Outlook-Lizenzen, die die in-Place-Archivierung unterstützen, finden Sie unter [Outlook License Requirements for Exchange Features](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+   Eine Liste der Outlook-Lizenzen, die In-Situ-Archivierung unterstützen, finden Sie unter [Outlook-Lizenzanforderungen für Exchange-Features](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
-- Archivpostfächer helfen Ihnen und ihren Benutzern, die Aufbewahrungs-, eDiscovery-und halte Anforderungen Ihrer Organisation zu erfüllen. Sie können beispielsweise die Exchange-Aufbewahrungsrichtlinie Ihrer Organisation verwenden, um Postfachinhalte in das Archivpostfach der Benutzer zu verschieben. Wenn Sie das Inhaltssuche-Tool im Security & Compliance Center verwenden, um das Postfach eines Benutzers nach bestimmten Inhalten zu durchsuchen, wird auch das Archivpostfach des Benutzers durchsucht. Außerdem werden Elemente im Archivpostfach beibehalten, wenn Sie eine Aufbewahrungsrichtlinie für Office 365 auf das Postfach eines Benutzers anwenden.
+- Archivpostfächer unterstützen Sie und Ihre Benutzer auch bei der Erfüllung der Anforderungen Ihrer Organisation hinsichtlich Aufbewahrung, eDiscovery und Archivierung. Sie können beispielsweise die Exchange-Aufbewahrungsrichtlinie Ihrer Organisation dazu verwenden, Postfachinhalte in das Archivpostfach eines Benutzers zu verschieben. Wenn Sie das Tool für die Inhaltssuche im Security & Compliance Center verwenden, um das Postfach eines Benutzers nach bestimmten Inhalten zu durchsuchen, wird auch das Archivpostfach des Benutzers durchsucht. Wenn Sie die Aufbewahrung für eventuelle Rechtsstreitigkeiten aktivieren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach eines Benutzers anwenden, werden die Elemente im Archivpostfach ebenfalls aufbewahrt.
   
-- Nachdem Archivpostfächer aktiviert wurden, kann Ihre Organisation die standardmäßige Exchange-Aufbewahrungsrichtlinie nutzen (auch als Messaging Records Management oder MRM Policy bezeichnet), die jedem Postfach automatisch zugewiesen wird. Wenn ein Archivpostfach aktiviert ist, führt die Exchange-Standardaufbewahrungsrichtlinie automatisch folgende Aktionen aus: 
+- Sind die Archivpostfächer aktiviert, kann Ihre Organisation die standardmäßige Exchange-Aufbewahrungsrichtlinie (auch als Richtlinie zur Verwaltung von Nachrichtendatensätzen bezeichnet) nutzen, die jedem Postfach automatisch zugewiesen wird. Wenn ein Archivpostfach aktiviert ist, führt die standardmäßige Exchange-Aufbewahrungsrichtlinie automatisch Folgendes aus: 
   
     - Verschieben von Elementen, die 2 Jahre alt oder älter sind, aus dem primären Postfach eines Benutzers in dessen Archivpostfach 
     
-    - Verschieben von Elementen, die 14 Tage alt oder älter sind, aus dem Ordner „Wiederherstellbare Elemente" im primären Postfach des Benutzers zum Ordner „Wiederherstellbare Elemente" im Archivpostfach .
+    - Verschieben von Elementen, die 14 Tage alt oder älter sind, aus dem Ordner „Wiederherstellbare Elemente“ im primären Postfach des Benutzers zum Ordner „Wiederherstellbare Elemente“ im Archivpostfach .
     
-- Weitere Informationen zu archivpostfächern und Exchange-Aufbewahrungsrichtlinien finden Sie unter:
+- Weitere Informationen zu Archivpostfächern und Exchange-Aufbewahrungsrichtlinien finden Sie hier:
     
   - [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Standardmäßige AufbewahrungsRichtlinie in Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Standardaufbewahrungsrichtlinie in Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
     
-  - [Einrichten einer Archivierungs-und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+  - [Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Office 365-Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

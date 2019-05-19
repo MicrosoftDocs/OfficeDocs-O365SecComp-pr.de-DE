@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Hier erfahren Sie, wo die Ergebnisse des Analyseprozesses in Office 365 Advanced eDiscovery angezeigt werden, einschließlich Definitionen der angezeigten Aufgabenoptionen.  '
-ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Hier erfahren Sie, wo Sie die Ergebnisse des Analyseprozesses in Office 365 Advanced eDiscovery anzeigen können, einschließlich der Definitionen der angezeigten Aufgabenoptionen.  '
+ms.openlocfilehash: 092daa506316b5eb1ef1f5c466055b29e350dc18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267105"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157857"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Anzeigen von Analyseergebnissen in Office 365 Advanced eDiscovery
 
@@ -27,50 +27,50 @@ ms.locfileid: "32267105"
   
 In Advanced eDiscovery können Fortschritte und Ergebnisse für den Analyseprozess in einer Vielzahl von Displays angezeigt werden, wie unten beschrieben.
   
-## <a name="view-analyze-task-status"></a>Anzeigen des Vorgangsstatus
+## <a name="view-analyze-task-status"></a>Anzeigen des Vorgangsstatus analysieren
 
-In **Prepare \> analyze \> results \> Task Status**wird der Status während und nach der Analyse der Prozessausführung angezeigt. 
+In **Prepare \> Analyse \> results \> Task Status**wird der Status während und nach dem Analysieren der Prozessausführung angezeigt. 
   
-![Aufgabenstatus analysieren](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
+![Analysieren des Aufgabenstatus](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
-Welche Aufgaben angezeigt werden, hängt von den ausgewählten Optionen ab. 
+Die angezeigten Aufgaben können je nach den ausgewählten Optionen variieren. 
   
-- **ND/et: Setup**: Prepares for the Run, beispielsweise legt die Parameter Run und Case fest.
+- **ND/et: Setup**: bereitet die Ausführung vor, beispielsweise legt Run-und Case-Parameter fest.
     
 - **ND/et: ND-Berechnung**: verarbeitet die nahezu duplizierte Analyse von Dateien.
     
-- **ND/et: et-Berechnung**: führt eine e-Mail-Thread Analyse für den gesamten e-Mail-Satz durch.
+- **ND/et: et calculation**: führt eine e-Mail-Thread Analyse für die gesamte e-Mail-Gruppe aus.
     
-- **ND/et: Pivots und Ähnlichkeiten**: führt Pivot-und Datei Ähnlichkeits Verarbeitung aus.
+- **ND/et: Pivots und Ähnlichkeiten**: führt die Verarbeitung von Pivot-und Datei Ähnlichkeit aus.
     
-- **ND/et: Metadata Update**: finalisiert die neuen Daten, die für die Dateien in der Datenbank gesammelt werden.
+- **ND/et: Metadata Update**: schließt die neuen Daten ein, die für die Dateien in der Datenbank gesammelt wurden.
     
-- **Designs: Design Berechnung**: führt die Design Analyse aus. (Nur angezeigt, wenn ausgewählt.)
+- **Designs: Design Berechnung**: führt die Design Analyse aus. (Wird nur angezeigt, wenn aktiviert.)
     
-- **Vorgangsstatus**: diese Leitung wird nach Abschluss der Aufgabe angezeigt. Während Vorgänge ausgeführt werden, wird die Ausführungsdauer angezeigt.
+- **Vorgangsstatus**: diese Verbindung wird nach Abschluss des Vorgangs angezeigt. Während Vorgänge ausgeführt werden, wird die Ausführungsdauer angezeigt.
     
 > [!NOTE]
-> Die Analyseergebnisse von Near-Duplikaten und e-Mail-Threads (ND und ED) beziehen sich auf die Anzahl der zu verarbeitenden Dokumente. Es enthält nicht exakte Duplikatdateien. 
+> Die Analyseergebnisse von nahe Duplikaten und e-Mail-Threads (ND und ED) gelten für die Anzahl der zu verarbeitenden Dokumente. Es enthält keine exakten doppelten Dateien. 
   
-## <a name="view-near-duplicates-and-email-threads-status"></a>Anzeigen von Near-Duplikaten und e-Mail-Threads Status
+## <a name="view-near-duplicates-and-email-threads-status"></a>Status von nahe Duplikaten und e-Mail-Threads anzeigen
 
-Die Ergebnisse der **Ziel** Auffüllung zeigen die Anzahl von Dokumenten, e-Mails, Anlagen und Fehlern in der Zielauffüllung an. 
+Die Ergebnisse der **Ziel** Population zeigen die Anzahl von Dokumenten, e-Mails, Anlagen und Fehlern in der Zielpopulation an. 
   
-Die Ergebnisse der **Dokumente** zeigen die Anzahl der Pivots, die eindeutigen Duplikate und die exakten doppelten Dateien an. 
+In den **Dokumenten** Ergebnissen werden die Anzahl von Pivots, eindeutige nahe Duplikate und exakte doppelte Dateien angezeigt. 
   
-In **** den e-Mail-Ergebnissen wird die Anzahl der inklusiv-inklusive-minus-, Unique-inklusive-Kopien und die restlichen e-Mails angezeigt. Die verschiedenen Typen von e-Mail-Ergebnissen sind: 
+In **** den e-Mail-Ergebnissen werden die Anzahl der inklusiv-, einschließlich-, eindeutigen einschließlich-Kopien und der restlichen e-Mail-Nachrichten angezeigt. Die verschiedenen Arten von e-Mail-Ergebnissen sind: 
   
-- **Inclusive**: eine inklusive e-Mail ist der abschließende Knoten in einem e-Mail-Thread und enthält alle vorherigen Verlauf dieses Threads. Daher kann der Prüfer sich sicher auf die inklusive e-Mail konzentrieren, ohne die vorherigen Nachrichten im Thread lesen zu müssen. 
+- **Inclusive**: eine inklusive e-Mail ist der abschließende Knoten in einem e-Mail-Thread und enthält alle vorherigen Verlaufsdaten dieses Threads. Folglich kann der Prüfer sich sicher auf die inklusive e-Mail konzentrieren, ohne die vorherigen Nachrichten im Thread lesen zu müssen. 
     
-- **Inklusive minus**: eine inklusiv-e-Mail wird als inklusive minus festgelegt, wenn es eine oder mehrere verschiedene Anlagen gibt, die den Eltern der Inclusive-Nachricht zugeordnet sind. In diesem Kontext wird der Begriff Parent für Nachrichten verwendet, die sich nach oben im e-Mail-Thread oder Unterhaltungen befinden, die in dieser spezifischen inclusive-e-Mail enthalten sind. Ein Prüfer kann die inklusive minus-Anzeige als Signal verwenden, dass es zwar nicht notwendig ist, den Inhalt der inklusiven e-Mail-Eltern zu überprüfen, es jedoch hilfreich sein kann, die Anlagen zu überprüfen, die mit den übergeordneten Pfad-Eltern verknüpft sind. 
+- **Inclusive minus**: eine inklusive e-Mail wird als inclusive minus festgelegt, wenn es eine oder mehrere verschiedene Anlagen gibt, die mit den übergeordneten Elemente der Inclusive-Nachricht verknüpft sind. In diesem Kontext wird der Begriff Parent für Nachrichten verwendet, die sich im e-Mail-Thread oder Unterhaltungen in dieser spezifischen e-Mail-Nachricht nach oben befinden. Ein Prüfer kann die inklusiv-minus Angabe als Signal verwenden, dass es möglicherweise nicht erforderlich ist, den Inhalt der inklusiven e-Mail-übergeordneten Elemente zu überprüfen, es kann jedoch hilfreich sein, die Anlagen zu überprüfen, die mit Eltern im inklusiven Pfad verknüpft sind. 
     
-- **Inklusive Kopie**: eine inklusiv-e-Mail wird als inklusive Kopie festgelegt, wenn es sich um die Kopie einer anderen Nachricht handelt, die als inklusive oder inklusive minus gekennzeichnet ist. Anders ausgedrückt: Diese Nachricht hat denselben Betreff und Text wie eine andere inklusive Nachricht und befindet sich als solche im gleichen Knoten. Da inclusive Copy-Nachrichten denselben Inhalt enthalten, können Sie in der Regel beim Überprüfungsprozess übersprungen werden. 
+- **Inclusive-Kopie**: eine inklusive e-Mail wird als inklusiv-Kopie festgelegt, wenn es sich um die Kopie einer anderen Nachricht handelt, die als inklusiv oder inklusive minus gekennzeichnet ist. Mit anderen Worten: Diese Nachricht hat denselben Betreff und denselben Text wie eine andere einschließliche Nachricht, die sich als solche in demselben Knoten befindet. Da inklusive Copy-Nachrichten denselben Inhalt enthalten, können Sie in der Regel beim Überprüfungsprozess übersprungen werden. 
     
-- **Der Rest**: Dies gibt e-Mails an, die keinen eindeutigen Inhalt enthalten und daher nicht in eine der vorherigen drei Kategorien fallen. Diese e-Mail-Nachrichten müssen nicht überprüft werden. Wenn eine Nachricht eine Anlage enthält, die nicht in einer späteren inclusive-e-Mail enthalten ist, muss die Anlage möglicherweise überprüft werden. Dies wird durch das vorhanden sein einer inklusiven minus-e-Mail innerhalb des Threads angezeigt.
+- **Der Rest**: Dies deutet darauf hin, dass e-Mails keine eindeutigen Inhalte enthalten und daher nicht in die vorherigen drei Kategorien fallen. Diese e-Mail-Nachrichten müssen nicht überprüft werden. Wenn eine Nachricht eine Anlage enthält, die sich nicht in einer späteren inclusive-e-Mail befindet, muss die Anlage möglicherweise überprüft werden. Dies wird durch das vorhanden sein einer inklusiven minus-e-Mail im Thread angezeigt.
     
-Die Ergebnisse der **Anlagen** zeigen die Anzahl der Anlagen gemäß diesem Typ als Unique und Duplikate an. 
+In den **Anlagen** Ergebnissen wird die Anzahl der Anlagen angezeigt, die dem Typ "eindeutig" und "Duplikate" entsprechen. 
   
-![Near-Duplikate und e-Mail-Threads](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
+![Nahe Duplikate und e-Mail-Threads](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,7 +80,7 @@ Die Ergebnisse der **Anlagen** zeigen die Anzahl der Anlagen gemäß diesem Typ 
   
 [Festlegen von Analyseoptionen](set-analyze-options-in-advanced-ediscovery.md)
   
-[Festlegen des Texts ignorieren](set-ignore-text-in-advanced-ediscovery.md)
+[Festlegen von Text ignorieren](set-ignore-text-in-advanced-ediscovery.md)
   
-[Einstellung "Erweiterte Einstellungen analysieren"](view-analyze-results-in-advanced-ediscovery.md)
+[Einstellungen für die erweiterte Analyse Einstellung](view-analyze-results-in-advanced-ediscovery.md)
 

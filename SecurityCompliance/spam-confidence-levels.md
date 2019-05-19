@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/2/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Wenn eine E-Mail die Spamfilterung passiert, wird ihr eine Spambewertung zugewiesen. Diese Bewertung ist einer individuellen SCL-Bewertung (Spam Confidence Level) zugeordnet und wird als Stempel im X-Header angezeigt. Der Dienst verfährt mit den Nachrichten entsprechend der Spam Confidence-Interpretation der SCL-Bewertung. In der folgenden Tabelle ist aufgeführt, wie die unterschiedlichen SCL-Bewertungen von den Filtern interpretiert werden, und welche Aktionen standardmäßig für eingehende Nachrichten als Reaktion auf die einzelnen Bewertung erfolgen.
-ms.openlocfilehash: 48ca02bf3f6549c5acc1147ea477b9d22f1c76e1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4eba1dc6fa1bbadcfd135a7bf43e7353755df6c4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260673"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158267"
 ---
 # <a name="spam-confidence-levels"></a>SCL-Bewertungen (Spam Confidence Level)
 
@@ -27,13 +27,13 @@ Wenn eine E-Mail die Spamfilterung passiert, wird ihr eine Spambewertung zugewie
   
 |**SCL-Bewertung**|**Spam Confidence-Interpretation**|**Standardaktion**|
 |:-----|:-----|:-----|
-|-1|Nicht-Spam, der von einem sicheren Absender, einem sicheren Empfänger oder einer sicheren aufgeführten IP-Adresse stammt (vertrauenswürdiger Partner).|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
-|0, 1|Nicht-Spam, da die Nachricht gescannt und als sauber festgelegt wurde.|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
+|-1|Nicht-Spam, der von einem sicheren Absender, einem sicheren Empfänger oder einer sicheren aufgeführten IP-Adresse (vertrauenswürdiger Partner) stammt.|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
+|0, 1|Nicht-Spam, da die Nachricht überprüft und als bereinigt festgelegt wurde.|Die Nachricht wird in das Postfach des Empfängers zugestellt.|
 |5, 6|Spam|Die Nachricht wird in den Ordner "Junk-E-Mail" des Empfängers zugestellt.|
 |7, 8, 9|Spam mit hoher Vertrauenswürdigkeit|Die Nachricht wird in den Ordner "Junk-E-Mail" des Empfängers zugestellt.|
    
 > [!TIP]
-> SCL-Bewertungen von 2, 3, 4, 7 und 8 werden vom Dienst nicht festgelegt. Eine SCL-Bewertung von 5 oder 6 wird als mutmaßlicher Spam betrachtet, der weniger sicher ist als Spam als eine SCL-Bewertung von 9, die als bestimmter Spam angesehen wird. Unterschiedliche Aktionen für Spam und Spam mit hoher Vertrauenswürdigkeit können über Ihre Inhaltsfilter Richtlinien in der Exchange-Verwaltungskonsole konfiguriert werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Sie können die SCL-Bewertung für Nachrichten, die bestimmte Bedingungen erfüllen, auch mithilfe von Nachrichtenfluss Regeln (auch als Transportregeln bezeichnet) festlegen, wie in [Verwenden von Nachrichtenfluss Regeln beschrieben, um SCL (Spam Confidence Level) in Nachrichten festzulegen](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). Wenn Sie eine e-Mail-Fluss Regel zum Festlegen der SCL-Bewertung von 7, 8 oder 9 verwenden, wird die Nachricht als Spam mit hoher Vertrauenswürdigkeit behandelt. 
+> SCL-Bewertungen von 2, 3, 4, 7 und 8 werden vom Dienst nicht festgelegt. Eine SCL-Bewertung von 5 oder 6 wird als mutmaßlicher Spam betrachtet, der weniger sicher als Spam ist als eine SCL-Bewertung von 9, die als bestimmter Spam betrachtet wird. Unterschiedliche Aktionen für Spam und Spam mit hoher Vertrauenswürdigkeit können über Ihre Inhaltsfilter Richtlinien in der Exchange-Verwaltungskonsole konfiguriert werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md). Sie können auch die SCL-Bewertung für Nachrichten festlegen, die bestimmten Bedingungen unter Verwendung von Nachrichtenfluss Regeln (auch bekannt als Transportregeln) entsprechen, wie in [Verwenden von Nachrichtenfluss Regeln beschrieben, um den SCL-Wert (Spam Confidence Level) in Nachrichten festzulegen](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). Wenn Sie eine e-Mail-Fluss Regel zum Festlegen der SCL-Bewertung von 7, 8 oder 9 verwenden, wird die Nachricht als Spam mit hoher Vertrauenswürdigkeit behandelt. 
   
 ||
 |:-----|

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie den SCL-Wert von Nachrichten in Exchange Online Protection festlegen.
-ms.openlocfilehash: e07b90ab1ab004c39ef36b2aa744ca87120c11fe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Administratoren können erfahren, wie Sie die SCL-Bewertung von Nachrichten in Exchange Online Schutz festlegen.
+ms.openlocfilehash: c997f321ed14cddfa430c43e6de42f36934c642b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263452"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157967"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
 
-Sie können eine Nachrichtenfluss Regel (auch als Transportregel bezeichnet) erstellen, die die SCL-Bewertung (Spam Confidence Level) einer e-Mail-Nachricht festlegt. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Sie können beispielsweise die Filterung von Spam Inhalten für Nachrichten umgehen, die von Personen innerhalb Ihrer Organisation gesendet werden, da Sie darauf vertrauen, dass eine Nachricht, die intern von einem Kollegen gesendet wird, kein Spam ist. Wenn Sie den SCL-Wert einer Nachricht mithilfe von Nachrichtenfluss Regeln festlegen, können Sie die Kontrolle bei der Behandlung von Spam erhöhen. 
+Sie können eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstellen, mit der die SCL-Bewertung (Spam Confidence Level) einer e-Mail-Nachricht festgelegt wird. Die SCL-Bewertung ist ein Maßstab dafür, wie wahrscheinlich es ist, dass es sich bei einer Nachricht um Spam handelt. Spam sind unverlangt zugesandte (und normalerweise unerwünschte) E-Mail-Nachrichten. Dieser Dienst kann verschiedene Aktionen für eine Nachricht ausführen, die von ihrer SCL-Bewertung abhängen. Beispielsweise können Sie die Spam Inhaltsfilterung für Nachrichten umgehen, die von Personen innerhalb Ihrer Organisation gesendet werden, da Sie darauf vertrauen, dass eine intern von einem Kollegen gesendete Nachricht kein Spam ist. Durch die Verwendung von Nachrichtenfluss Regeln zum Festlegen des SCL-Werts einer Nachricht erhalten Sie eine erhöhte Kontrolle bei der Verarbeitung von Spam. 
   
  **Was sollten Sie wissen, bevor Sie beginnen?**
   
@@ -31,9 +31,9 @@ Sie können eine Nachrichtenfluss Regel (auch als Transportregel bezeichnet) ers
     
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) oder [Feature Permissions in EoP](eop/feature-permissions-in-eop.md). 
     
-- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen in der Exchange-Verwaltungskonsole**.
+- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen im Exchange Admin Center**.
     
-### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>So erstellen Sie eine Nachrichtenfluss Regel, mit der der SCL-Wert einer Nachricht festgelegt wird
+### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>So erstellen Sie eine Nachrichtenfluss Regel, die den SCL-Wert einer Nachricht festlegt
 
 1. Navigieren Sie in der Exchange-Verwaltungskonsole (EAC) zu **Nachrichtenfluss** \> **Regeln**.
     

@@ -1,39 +1,39 @@
 ---
-title: Nationale IdentifikationsNummer der EU
+title: EU-nationale Identifikationsnummer
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp EU National Identification Number erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
-ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-nationale Identifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
+ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255643"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154458"
 ---
-# <a name="eu-national-identification-number"></a>Nationale IdentifikationsNummer der EU
+# <a name="eu-national-identification-number"></a>EU-nationale Identifikationsnummer
 
-In diesem Thema wird gezeigt, was eine Data Loss Prevention (DLP)-Richtlinie sucht, wenn Sie den vertraulichen Informationstyp EU National Identification Number erkennt. Dieser vertrauliche Informationstyp definiert verschiedene Muster, Schlüsselwörter und andere Nachweise für jedes Land.
+In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-nationale Identifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
   
 ## <a name="austria"></a>Österreich
 
 ### <a name="format"></a>Format
 
-Eine 24-Zeichen-Kombination aus Buchstaben, Ziffern und Sonderzeichen
+Eine Kombination aus Buchstaben, Ziffern und Sonderzeichen mit einer 24 Zeichen Länge
   
 ### <a name="pattern"></a>Muster
 
 24 Zeichen:
   
--  22 Buchstaben (Groß-/Kleinschreibung nicht beachtet), Ziffern, Schrägstriche, Schrägstriche oder Pluszeichen 
+-  22 Buchstaben (Unterscheidung nach Groß-/Kleinschreibung), Ziffern, umgekehrte Schrägstriche oder Pluszeichen 
     
-- Zwei Buchstaben (ohne Unterscheidung nach Groß-/Kleinschreibung), Ziffern, Schrägstriche, Schrägstriche, Pluszeichen oder Gleichheitszeichen
+- Zwei Buchstaben (Groß-/Kleinschreibung nicht beachtet), Ziffern, Backslashes, Schrägstriche, Pluszeichen oder gleich Zeichen
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -73,23 +73,23 @@ Personalausweis Republik Österreich
   
 ## <a name="belgium"></a>Belgien
 
-Weitere Informationen finden Sie im Abschnitt "belgische nationale Rufnummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "belgische nationale Nummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="bulgaria"></a>Bulgarien
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern ohne Leerzeichen und Abgrenzungen
+Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-Zehn Ziffern ohne Leerzeichen und Abgrenzungen
+Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 -  Sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT) 
     
 - Zwei Ziffern, die der Geburts Reihenfolge entsprechen
     
-- Eine Ziffer, die dem Geschlecht entspricht: eine gerade Ziffer für männliche und eine ungerade Ziffer für weiblich
+- Eine Ziffer, die dem Geschlecht entspricht: eine gerade Ziffer für "männlich" und eine ungerade Ziffer für "weiblich".
     
 - Eine Prüfziffer
     
@@ -101,13 +101,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_bulgaria_national_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_bulgaria_national_number` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_bulgaria_national_number` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_bulgaria_national_number` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_bulgaria_national_number` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -135,7 +135,7 @@ nationale Nummer
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -149,25 +149,25 @@ BNN
   
 persönliche ID-Nummer
   
-personalidnumber #
+personalidnumber#
   
 единен граждански номер
   
-edinn grazhdanski Nomer
+edinen grazhdanski Nomen
   
 егн
   
-егн #
+егн#
   
 ## <a name="croatia"></a>Kroatien
 
-Weitere Informationen finden Sie im Abschnitt "Croatia Identity Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "kroatische Identitätsnummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="cyprus"></a>Zypern
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern ohne Leerzeichen und Abgrenzungen
+Zehn Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -211,27 +211,27 @@ Personalausweisnummer
   
 ## <a name="czech-republic"></a>Tschechien
 
-Weitere Informationen finden Sie im Abschnitt "Czech National Identity Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Tschechische Nationale Identitätsnummer" unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="denmark"></a>Dänemark
 
-Weitere Informationen finden Sie im Abschnitt "Denmark Personal Identification Number" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "dänische persönliche Identifikationsnummer" unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="estonia"></a>Estland
 
 ### <a name="format"></a>Format
 
-11 Ziffern ohne Leerzeichen und Abgrenzungen
+11 Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
 11 Ziffern:
   
-- Eine Ziffer, die dem Geschlecht und dem Jahrhundert der Geburt entspricht (ungerade Zahl, gerade Zahl weiblich; 1-2:19. Jahrhundert; 3-4:20. Jahrhundert; 5-6:21st Century)
+- Eine Ziffer, die Geschlecht und Jahrhundert der Geburt entspricht (ungerade Zahl männlich, gerade Zahl weiblich; 1-2:19. Jahrhundert; 3-4:20th Century; 5-6:21st Century)
     
 - Sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT)
     
-- Drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am selben Datum geboren wurden
+- Drei Ziffern, die einer Seriennummer entsprechen, die Personen trennt, die am gleichen Datum geboren wurden
     
 - Eine Prüfziffer
     
@@ -243,13 +243,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_estonia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_estonia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_estonia_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_estonia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_estonia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  
@@ -268,7 +268,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
-persönlicher Identifizierungscode
+persönlicher Identifikationscode
   
 persönliche Identifikationsnummer
   
@@ -278,29 +278,29 @@ nationale Nummer
   
 persönliche ID-Nummer
   
-personalidnumber #
+personalidnumber#
   
 IK
   
-Isikukood
+isikukood
   
 ID-Kaart
   
 ## <a name="finland"></a>Finnland
 
-Weitere Informationen finden Sie im Abschnitt "Finland National ID" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "finnische nationale ID" unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>Frankreich
 
-Weitere Informationen finden Sie im Abschnitt "France National ID Card (CNI)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "France National ID Card (CNI)" in [What the sensitive Information Types Look for](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Deutschland
 
-Weitere Informationen finden Sie im Abschnitt "Deutschland PersonalausweisNummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Deutsche Identitätskartennummer" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Griechenland
 
-Weitere Informationen finden Sie im Abschnitt "GriechenLand National ID Card" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Griechenland-National Ausweis" unter [was die Typen für vertrauliche Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Ungarn
 
@@ -312,7 +312,7 @@ Weitere Informationen finden Sie im Abschnitt "GriechenLand National ID Card" in
 
 11 Ziffern:
   
--  Eine Ziffer, die dem Geschlecht entspricht (1-männlich, 2-weiblich, andere Zahlen sind auch für Bürger möglich, die vor 1900 oder Bürger mit doppelter Staatsbürgerschaft geboren wurden) 
+-  Eine Ziffer, die dem Geschlecht entspricht (1-männlich, 2-weiblich, andere Zahlen sind auch für Bürger möglich, die vor 1900 oder Bürgern mit doppelter Staatsbürgerschaft geboren wurden) 
     
 - Sechs Ziffern, die dem Geburtsdatum entsprechen (JJMMTT)
     
@@ -328,13 +328,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_hungary_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_hungary_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_hungary_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_hungary_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_hungary_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -370,7 +370,7 @@ Eine neunstellige Kombination aus Buchstaben, Ziffern und einem Leerzeichen im a
 
 Eine neunstellige Kombination aus Buchstaben, Ziffern und einem Leerzeichen im angegebenen Muster
   
-Vom 01. Januar 2013 bis jetzt:
+Vom 01 Januar 2013 bis jetzt:
   
 -  Sieben Ziffern  
     
@@ -378,13 +378,13 @@ Vom 01. Januar 2013 bis jetzt:
     
 - Ein Leerzeichen oder der Großbuchstabe "W" (Groß-/Kleinschreibung)
     
-Vor 01. Januar 2013:
+Vor dem 01. Januar 2013:
   
 -  Sieben Ziffern  
     
 - Eine Prüfziffer
     
-- Ein Leerzeichen oder ein Großbuchstabe (Groß-/Kleinschreibung beachtet)
+- Ein Leerzeichen oder ein Großbuchstabe (Groß-/Kleinschreibung beachten)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -394,13 +394,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Die-Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen.
     
 - Ein Schlüsselwort aus wurde gefunden.
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen.
+- Die-Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen.
     
 ```
  
@@ -425,7 +425,7 @@ PPS Nein
   
 Umsatz-und Sozialversicherungsnummer
   
-RSI-No
+RSI-Nr.
   
 persönliche Identifikationsnummer
   
@@ -441,21 +441,21 @@ uimh. PSP
 
 ### <a name="format"></a>Format
 
-Eine 16-stellige Kombination aus Buchstaben und Ziffern im angegebenen Muster
+Eine Kombination aus Buchstaben und Ziffern aus 16 Zeichen im angegebenen Muster
   
 ### <a name="pattern"></a>Muster
 
-Eine 16-stellige Kombination aus Buchstaben und Ziffern:
+Eine Kombination aus Buchstaben und Ziffern aus 16 Zeichen:
   
 - Drei Buchstaben, die den ersten drei Konsonanten im Familiennamen entsprechen
     
-- Drei Buchstaben, die dem ersten, dritten und vierten Konsonanten im Vornamen entsprechen
+- Drei Buchstaben, die den ersten, dritten und vierten Konsonanten im Vornamen entsprechen
     
-- Zwei Ziffern, die den letzten Ziffern des Geburtsjahrs entsprechen
+- Zwei Ziffern, die den letzten Ziffern des Geburtsjahres entsprechen
     
-- Ein Buchstabe, der dem Buchstaben für den Geburtsmonat entspricht – Buchstaben werden in alphabetischer Reihenfolge verwendet, aber nur die Buchstaben A bis E, H, L, M, P, R bis T werden verwendet (also Januar ist A und Oktober ist R)
+- Ein Buchstabe, der dem Brief für den Monat der Geburt entspricht – Buchstaben werden in alphabetischer Reihenfolge verwendet, aber nur die Buchstaben a bis E, H, L, M, P, R bis T werden verwendet (der Januar ist also a und Oktober ist r).
     
-- Zwei Ziffern, die dem Tag des Geburtsmonats entsprechen – zur Unterscheidung zwischen den Geschlechtern wird 40 zum Geburtstag für Frauen hinzugefügt.
+- Zwei Ziffern, die dem Tag des Geburtsmonats entsprechen – um zwischen den Geschlechtern zu unterscheiden, wird 40 am Tag der Geburt für Frauen hinzugefügt.
     
 - Vier Ziffern, die der Ortskennzahl für die Gemeinde entsprechen, in der die Person geboren wurde (landesweite Codes werden für fremde Länder verwendet)
     
@@ -469,13 +469,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_italy_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_italy_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_italy_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_italy_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_italy_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -497,17 +497,17 @@ persönlicher Code
   
 persönliche Codenummer
   
-persönliche Zertifikatsnummer
+persönliche Zertifikat Nummer
   
-Fiskal Code
+Geschäftscode
   
-personalcodeno #
+personalcodeno#
   
 persönliche ID-Nummer
   
 persönlicher ID-Code
   
-codedice personale
+Dice personale
   
 Numero Bescheinigung personale
   
@@ -515,7 +515,7 @@ Numero personale
   
 Numero-ID personale
   
-codedice-ID personale
+Dice ID personale
   
 Geschäftsjahr
   
@@ -527,7 +527,7 @@ Geschäftsjahr
   
 ### <a name="pattern"></a>Muster
 
-11 Ziffern und ein Bindestrich:
+11 Ziffern und Bindestrich:
   
 -  Sechs Ziffern, die dem Geburtsdatum entsprechen (TTMMJJ) 
     
@@ -545,13 +545,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_latvia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_latvia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_latvia_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_latvia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_latvia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -573,9 +573,9 @@ persönlicher Code
   
 persönliche Codenummer
   
-persönliche Zertifikatsnummer
+persönliche Zertifikat Nummer
   
-personalcodeno #
+personalcodeno#
   
 persönliche ID-Nummer
   
@@ -587,11 +587,11 @@ Personas KODS
 
 ### <a name="format"></a>Format
 
-11 Ziffern ohne Leerzeichen und Abgrenzungen
+11 Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
-11 Ziffern ohne Leerzeichen und Abgrenzungen:
+11 Ziffern ohne Leerzeichen und Trennzeichen:
   
 - Eine Ziffer, die dem Geschlecht der Person und dem Jahrhundert der Geburt entspricht
     
@@ -609,13 +609,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_lithuania_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_lithuania_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_lithuania_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_lithuania_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_lithuania_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  
@@ -638,29 +638,29 @@ persönlicher numerischer Code
   
 eindeutige Identifikationsnummer
   
-Citizen-Dienstnummer
+Bürgerdienst Nummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno #
+uniqueidentityno#
   
 persönlicher Code.
   
-asmeninis skaitmeninis koda
+asmeninis skaitmeninis KODAS
   
 unikalus identifikavimo Numeris
   
 piliečio paslaugos Numeris
   
-unikalus identifikavimo koda
+unikalus identifikavimo KODAS
   
-Mens koda.
+Mens KODAS.
   
 ## <a name="luxemburg"></a>Luxemburg
 
 ### <a name="format"></a>Format
 
-11 Ziffern ohne Leerzeichen und Abgrenzungen
+11 Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -703,21 +703,21 @@ persönliche ID
   
 persönliche ID-Nummer
   
-personalidno #
+personalidno#
   
 eindeutige ID-Nummer
   
-personalidnumber #
+personalidnumber#
   
 eindeutiger ID-Schlüssel
   
 persönlicher ID-Code
   
-uniqueidkey #
+uniqueidkey#
   
-individueller Code
+einzelner Code
   
-einzelne ID
+individuelle ID
   
 eindeutige-ID-Nummer
   
@@ -725,27 +725,27 @@ eindeutige-ID
   
 ID personnelle
   
-Numéro d'identification Personal
+Numéro-d'identification-Mitarbeiter
   
-idpersonnelle #
+idpersonnelle#
   
-persönliche Identifikationsnummer
+persönliche identifikationsnummer
   
-EINDEUTIGEID #
+eindeutigeid#
   
 ## <a name="malta"></a>Malta
 
 ### <a name="format"></a>Format
 
-Sieben Ziffern gefolgt von einem Buchstaben
+Sieben Ziffern, gefolgt von einem Buchstaben
   
 ### <a name="pattern"></a>Muster
 
-Sieben Ziffern gefolgt von einem Buchstaben:
+Sieben Ziffern, gefolgt von einem Buchstaben:
   
 -  Sieben Ziffern  
     
-- Ein Großbuchstabe (Groß-/Kleinschreibung beachtet)
+- Ein Großbuchstabe (Groß-/Kleinschreibung)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -784,13 +784,13 @@ persönlicher numerischer Code
   
 eindeutige Identifikationsnummer
   
-Citizen-Dienstnummer
+Bürgerdienst Nummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno #
+uniqueidentityno#
   
-Kodiċi personali
+Kodiċi Numeri personali
   
 numru ta ' identifikazzjoni uniku
   
@@ -802,7 +802,7 @@ numru ta ' identità uniku
 
 ### <a name="format"></a>Format
 
-Neun Ziffern ohne Leerzeichen oder Abgrenzungen
+Neun Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -816,13 +816,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_netherlands_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_netherlands_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort aus wurde gefunden.
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_netherlands_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_netherlands_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  
@@ -845,11 +845,11 @@ persönlicher numerischer Code
   
 eindeutige Identifikationsnummer
   
-Citizen-Dienstnummer
+Bürgerdienst Nummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno #
+uniqueidentityno#
   
 BSN
   
@@ -865,17 +865,17 @@ uniek identiteitsnummer
   
 ## <a name="poland"></a>Polen
 
-Weitere Informationen finden Sie im Abschnitt "polnische National ID (PESEL)" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Poland National ID (PESEL)" in [What the sensitive Information Types Look for](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
-Weitere Informationen finden Sie im Abschnitt "portugiesische Bürgerkarten Nummer" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Portugal-Bürgerkarten Nummer" unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="romania"></a>Rumänien
 
 ### <a name="format"></a>Format
 
-13 Ziffern ohne Leerzeichen und Abgrenzungen
+13 Ziffern ohne Leerzeichen und Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
@@ -889,13 +889,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_romania_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_romania_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_romania_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_romania_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_romania_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  
@@ -928,13 +928,13 @@ PIN
   
 Versicherungsnummer
   
-insurancenumber #
+insurancenumber#
   
 eindeutige Identitätsnummer
   
-uniqueidentityno #
+uniqueidentityno#
   
-COD numerische Personal
+COD numerisch persönlich
   
 COD identificare Personal
   
@@ -946,21 +946,21 @@ număr identitate
   
 număr identificare Personal
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>Slowakei
 
 ### <a name="format"></a>Format
 
-Zehn Ziffern mit einem umgekehrten Schrägstrich
+Zehn Ziffern mit einem Backslash
   
 ### <a name="pattern"></a>Muster
 
-Zehn Ziffern mit einem umgekehrten Schrägstrich:
+Zehn Ziffern mit einem Backslash:
   
 ### <a name="checksum"></a>Prüfsumme
 
@@ -970,13 +970,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_slovakia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_slovakia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_slovakia_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_slovakia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_slovakia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  
@@ -1003,7 +1003,7 @@ persönliche Identifikationsnummer
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -1013,7 +1013,7 @@ nationale Nummer
   
 persönliche ID-Nummer
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -1025,17 +1025,17 @@ rodne cislo
 
 ### <a name="format"></a>Format
 
-13 Ziffern ohne Leerzeichen oder Abgrenzungen
+13 Ziffern ohne Leerzeichen oder Trennzeichen
   
 ### <a name="pattern"></a>Muster
 
 13 Ziffern im angegebenen Muster:
   
--  Sieben Ziffern, die dem Geburtsdatum (DDMMLLL) entsprechen, wobei "LLL" den letzten drei Ziffern des Geburtsjahrs entspricht. 
+-  Sieben Ziffern, die dem Geburtsdatum (DDMMLLL) entsprechen, wobei "LLL" den letzten drei Ziffern des Geburtsjahres entspricht. 
     
-- Zwei Ziffern, die dem Bereich der Geburt entsprechen
+- Zwei Ziffern, die dem Geburts Bereich entsprechen
     
-- Drei Ziffern, die einer Kombination aus Geschlecht und Seriennummer für Personen entsprechen, die am selben Tag geboren wurden (000-499 für männlich und 500-999 für weiblich)
+- Drei Ziffern, die einer Kombination aus Geschlecht und Seriennummer für Personen entsprechen, die am selben Tag geboren wurden (000-499 für männliche und 500-999 für weiblich)
     
 - Eine Prüfziffer
     
@@ -1047,13 +1047,13 @@ Ja
 
 Eine DLP-Richtlinie ist zu 85 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_slovenia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_slovenia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 - Ein Schlüsselwort `Keywords_slovenia_eu_national_id_card` aus wurde gefunden. 
     
 Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Informationen erkannt wurde, wenn Folgendes innerhalb von 300 Zeichen zutrifft:
   
-- Die Funktion `Func_slovenia_eu_national_id_card` sucht nach Inhalten, die mit dem Muster übereinstimmen. 
+- Die- `Func_slovenia_eu_national_id_card` Funktion sucht nach Inhalten, die mit dem Muster übereinstimmen. 
     
 ```
  
@@ -1080,9 +1080,9 @@ eindeutige Registrierungsnummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno #
+uniqueidentityno#
   
-eindeutige Master Bürger-Nummer
+eindeutige Master Bürgerzahl
   
 edinstvena identifikacijska številka
   
@@ -1096,15 +1096,15 @@ EMŠO
 
 ### <a name="format"></a>Format
 
-Sieben Ziffern gefolgt von einem Zeichen
+Sieben Ziffern, gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
-Sieben Ziffern gefolgt von einem Zeichen
+Sieben Ziffern, gefolgt von einem Zeichen
   
 - Sieben Ziffern 
     
-- Eine Ziffer oder ein Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- Eine Ziffer oder ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
     
 ### <a name="checksum"></a>Prüfsumme
 
@@ -1148,7 +1148,7 @@ persönliche Identität Nein
   
 eindeutige Identitätsnummer
   
-nationalidno #
+nationalidno#
   
 UniqueId
   
@@ -1160,7 +1160,7 @@ nie
   
 nie
   
-nienúmero #
+nienúmero#
   
 nie número
   
@@ -1172,13 +1172,13 @@ número Nacional Identidad
   
 DNI número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>Schweden
 
-Weitere Informationen finden Sie im Abschnitt "schwedische National ID" in [was die Typen von vertraulichen Informationen suchen](what-the-sensitive-information-types-look-for.md).
+Ausführliche Informationen finden Sie im Abschnitt "Sweden National ID" unter [What the sensitive Information Types Look](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Siehe auch
 

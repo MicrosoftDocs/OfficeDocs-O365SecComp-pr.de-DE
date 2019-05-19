@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,31 +14,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7bfae202886d4c1af5914f4b49d0e4d528b8975d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243806"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155047"
 ---
 # <a name="email-threading"></a>E-Mail-Threading
 
-Betrachten Sie eine e-Mail-Unterhaltung, die schon eine Weile geht. In den meisten Fällen enthält die letzte e-Mail des Threads den Inhalt aller vorhergehenden e-Mails. durch das Überprüfen der letzten e-Mail erhalten Sie einen vollständigen Kontext der Unterhaltung im Thread. E-Mail-Threading identifiziert solche e-Mails, sodass Prüfer einen Bruchteil der gesammelten Dokumente überarbeiten können, ohne dass ein Kontext verloren geht.
+Ziehen Sie eine e-Mail-Unterhaltung in Frage, die schon eine Weile vorgeht. In den meisten Fällen enthält die letzte e-Mail im Thread die Inhalte aller vorherigen e-Mails. Wenn Sie die letzte e-Mail überprüfen, erhalten Sie einen vollständigen Kontext der Unterhaltung, die im Thread aufgetreten ist. E-Mail-Threading identifiziert solche e-Mails, sodass Bearbeiter einen Bruchteil der gesammelten Dokumente überprüfen können, ohne dass ein Kontext verloren geht.
 
-## <a name="what-does-email-threading-do"></a>Was bewirkt die e-Mail-Threading?
+## <a name="what-does-email-threading-do"></a>Was bewirkt das e-Mail-Threading?
 
-E-Mail-Threading analysiert jede e-Mail und desconstructs Sie an einzelne Nachrichten. jede e-Mail ist eine Kette von einzelnen Nachrichten. Dann analysiert sie alle e-Mails im Arbeitssatz, um zu bestimmen, ob eine e-Mail eindeutige Inhalte enthält oder ob die Kette vollständig in einer anderen e-Mail enthalten ist. Am Ende werden e-Mails in vier Kategorien unterteilt:
+E-Mail-Threading analysiert jede e-Mail und desconstructs Sie an einzelne Nachrichten; jede e-Mail ist eine Kette einzelner Nachrichten. Anschließend werden alle e-Mails in der Überprüfungsgruppe analysiert, um festzustellen, ob eine e-Mail über eindeutige Inhalte verfügt oder ob die Kette vollständig in einer anderen e-Mail enthalten ist. Am Ende werden e-Mails in vier Kategorien unterteilt:
 
-- **Inclusive**: die letzte Nachricht in der e-Mail hat eindeutige Inhalte, und die e-Mail verfügt über alle Anhänge, die in anderen e-Mails enthalten waren, von denen der Inhalt vollständig in dieser e-Mail enthalten ist.
+- **Inclusive**: die letzte Nachricht in der e-Mail weist eindeutige Inhalte auf, und die e-Mail enthält alle Anlagen, die in anderen e-Mails enthalten waren, in denen der Inhalt vollständig in dieser e-Mail enthalten ist.
 
 
-- **Inklusive minus**: die letzte Nachricht in der e-Mail hat eindeutige Inhalte, aber die e-Mail enthält nicht einige der Anhänge, die in anderen e-Mails enthalten waren, von denen der Inhalt vollständig in dieser e-Mail enthalten ist.
+- **Inclusive minus**: die letzte Nachricht in der e-Mail hat eindeutige Inhalte, aber die e-Mail enthält nicht einige der Anlagen, die in anderen e-Mails enthalten waren, in denen der Inhalt vollständig in dieser e-Mail enthalten ist.
 
-- **Inklusive Kopie**: eine exakte Kopie einer inklusive/inklusive minus-e-Mail
+- **Inklusive Kopie**: eine exakte Kopie einer inclusive/inklusive minus-e-Mail
 
-- **None**: der Inhalt dieser e-Mail ist vollständig in mindestens einer e-Mail enthalten, die als inclusive/inklusive minus gekennzeichnet ist.
+- **None**: der Inhalt dieser e-Mail-Nachricht ist vollständig in mindestens einer e-Mail enthalten, die als inclusive/inclusive minus gekennzeichnet ist.
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a>Wie unterscheidet sich das von Outlook?
-Auf einen Blick klingt dies sehr ähnlich wie Konversations Gruppierungen in Outlook. Es gibt jedoch einige wichtige Unterschiede. Betrachten Sie eine e-Mail-Unterhaltung, die in zwei Unterhaltungen verzweigt wurde; Beispielsweise hat jemand auf eine e-Mail geantwortet, die nicht die neueste in der Unterhaltung ist, sodass die letzten beiden e-Mails in der Unterhaltung einen eindeutigen Inhalt aufweisen.
+## <a name="how-is-it-different-from-conversations-in-outlook"></a>Wie unterscheidet er sich von den Unterhaltungen in Outlook?
+Dies klingt auf einen Blick ähnlich wie Konversations Gruppierungen in Outlook. Es gibt jedoch einige wichtige Unterschiede. Halten Sie sich an eine e-Mail-Unterhaltung, die in zwei Unterhaltungen verzweigt wurde. Beispielsweise hat jemand auf eine e-Mail geantwortet, die nicht die neueste in der Unterhaltung ist, sodass die letzten beiden e-Mails in der Unterhaltung über eindeutige Inhalte verfügen.
 
-Outlook würde die e-Mails weiterhin in einer einzigen Unterhaltung gruppieren; das Lesen der letzten e-Mail würde bedeuten, dass der Kontext der letzten e-Mail, die auch eindeutigen Inhalt enthält, fehlt. Da e-Mail-Threading jede e-Mail in einzelne Komponenten auswertet und vergleicht, würde das e-Mail-Threading beide der letzten beiden e-Mails als inclusive markieren, um sicherzustellen, dass Sie keinen Kontext verpassen, solange Sie alle als inclusive markierten e-Mails lesen.
+Outlook würde die e-Mails weiterhin in einer einzigen Unterhaltung gruppieren. Wenn Sie nur die letzte e-Mail lesen, würde das Fehlen des Kontexts der vorletzte e-Mail bedeuten, die auch eindeutige Inhalte enthält. Da das e-Mail-Threading jede e-Mail in einzelne Komponenten analysiert und diese vergleicht, würde das e-Mail-Threading beide letzten e-Mails als inklusivzeichen markieren, um sicherzustellen, dass Sie keinen Kontext verpassen, solange Sie alle als inklusiv markierten e-Mails lesen.

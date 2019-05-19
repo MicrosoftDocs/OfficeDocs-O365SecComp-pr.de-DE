@@ -1,34 +1,34 @@
 ---
-title: 'Chief Information Security Officer (CISO) Workshop, Module 3: Identity und Access Management'
+title: 'CISO-Workshop (Chief Information Security Officer), Modul 3: Identitäts-und Zugriffsverwaltung'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Weitere Informationen zu Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 51d9a9e44c08a7a41fc1a0a1e9d062bef02d9ef5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
+ms.openlocfilehash: a12ab000e3a8d9d36bcb114e7ad6822b4e085940
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244046"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152117"
 ---
 # <a name="ciso-workshop-module-3-identity-and-access-management"></a>CISO Workshop-Modul 3: Identitäts-und Zugriffsverwaltung 
 
-Da die meisten modernen Angriffe kompromittierende Benutzeridentitäten betreffen, erfahren Sie, wie Sie einen neuen Identitäts Sicherheitsperimeter erstellen, um Objekte außerhalb Ihres Unternehmensnetzwerks zu schützen.
+Da die meisten modernen Angriffe die Kompromittierung von Benutzeridentitäten beinhalten, erfahren Sie, wie Sie einen neuen Identitäts Sicherheitsperimeter zum Schutz von Objekten außerhalb Ihres Unternehmensnetzwerks erstellen.
 
-- Download PDF Summary: [Module 3: Identity and Access Management](media/ciso-workshop-3-identity-protection.pdf)
-- PowerPoint-Zusammenfassung: [Modul 3: Identitäts-und Zugriffsverwaltung](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
+- PDF-Zusammenfassung herunterladen: [Modul 3: Identitäts-und Zugriffsverwaltung](media/ciso-workshop-3-identity-protection.pdf)
+- Download von PowerPoint-Zusammenfassung: [Modul 3: Identitäts-und Zugriffsverwaltung](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
 
 ## <a name="introduction-identity-and-access-management-232"></a>Einführung: Identitäts-und Zugriffsverwaltung (2:32)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm3]
 
-## <a name="part-1-history-and-trends-of-identity-security-745"></a>Teil 1: Verlauf und Trends der Identitäts Sicherheit (7:45)
+## <a name="part-1-history-and-trends-of-identity-security-745"></a>Teil 1: Geschichte und Trends der Identitäts Sicherheit (7:45)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL7]
 
@@ -36,7 +36,7 @@ Da die meisten modernen Angriffe kompromittierende Benutzeridentitäten betreffe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
 
-## <a name="part-3-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a>Teil 3: Kontosicherheit: Messen von anGriffs-Kennwortauthentifizierung (13:11)
+## <a name="part-3-account-security-measuring-cost-of-attack-password-less-authentication-1311"></a>Teil 3: Kontosicherheit: Messung der Kosten für die Kenn Wort geminderte Authentifizierung von Angriffen (13:11)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
 
@@ -44,6 +44,6 @@ Da die meisten modernen Angriffe kompromittierende Benutzeridentitäten betreffe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 
-## <a name="part-5-lowering-risk-using-business-to-business-and-business-to-customer-447"></a>Abschnitt 5: Risikoreduzierung mit Business-to-Business und Business-to-Customer (4:47)
+## <a name="part-5-lowering-risk-using-business-to-business-and-business-to-customer-447"></a>Abschnitt 5: senken des Risikos mithilfe von Business-to-Business und Business-to-Customer (4:47)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]

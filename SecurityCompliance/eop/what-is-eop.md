@@ -1,11 +1,11 @@
 ---
-title: Was ist EOP
+title: Was ist EoP
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
 manager: laurawi
 ms.date: 2/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
@@ -13,41 +13,41 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: Dieses Einführungsdokument unterstützt Sie beim Verständnis von Exchange Online Protection (EOP) und einigen wichtigen Terminologien. Dies gilt für Office 365-Kunden, die Exchange Online in der Cloud gehostete Postfächer und EOP-eigenständige Kunden schützen, die lokale Postfächer wie Exchange Server 2016 schützen.
-ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Dieses Einführungsdokument hilft Ihnen, Exchange Online Schutz (EoP) und einige wichtige Terminologie zu verstehen. Dies gilt für Office 365 Kunden, die Exchange Online in der Cloud gehosteten Postfächern und EOP-eigenständigen Kunden schützen, die lokale Postfächer wie Exchange Server 2016 schützen.
+ms.openlocfilehash: cbd286321301cecc8084040dc7538fce12d84466
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256473"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154473"
 ---
-## <a name="what-is-exchange-online-protection-eop"></a>Was ist Exchange Online Protection (EOP)
+## <a name="what-is-exchange-online-protection-eop"></a>Was ist Exchange Online Schutz (EoP)
 
-Exchange Online Protection (EOP) ist ein Cloud-basierter e-Mail-Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützt. Wenn Sie Postfächer in Office 365 haben, werden Sie automatisch von EOP geschützt, da Sie Teil des Diensts sind. Hierzu gehören Organisationen mit Postfächern sowohl in Office 365 als auch lokal, das gemeinhin als Hybrid Szenario bezeichnet wird. EOP Standalone steht auch für Kunden zur Verfügung, die über keine Postfächer in der Cloud verfügen, aber ihre lokalen Postfächer schützen möchten. 
+Exchange Online Protection (EoP) ist ein Cloud-basierter e-Mail-Filterdienst, der Ihre Organisation vor Spam und Schadsoftware schützen kann. Wenn Sie über Postfächer in Office 365 verfügen, werden diese automatisch von EoP geschützt, da Sie Teil des Diensts sind. Dies umfasst Organisationen mit Postfächern sowohl in Office 365 als auch lokal, was gemeinhin als Hybrid Szenario bezeichnet wird. EoP Standalone steht auch Kunden zur Verfügung, die keine Postfächer in der Cloud haben, aber ihre lokalen Postfächer schützen möchten. 
 
-EOP versucht Junk-e-Mails zu filtern, sodass der Posteingang nicht über Inhalte verfügt, die von Benutzern nicht angezeigt werden sollen. NormalerWeise werden Junk-e-Mails an den Junk-Mail-Ordner übermittelt. Einige Benutzer möchten sicherstellen, dass die Filterung das tut, was Sie möchten, damit der Junk-e-Mail-Ordner eine einfache Möglichkeit für Benutzer ist, ihre eigenen zu überprüfen.  
+EoP versucht, Junk zu filtern, sodass Ihr Posteingang die Inhalte frei hält, die Benutzer nicht sehen möchten. Normalerweise werden Junk-e-Mails an den Junk-e-Mail-Ordner zugestellt. Einige Benutzer möchten sicherstellen, dass die Filterung das tut, was Sie möchten, damit der Junk-e-Mail-Ordner eine einfache Möglichkeit für Benutzer ist, sich selbst zu überprüfen.  
 
 > [!TIP]
-> Es ist gut, wenn Junk-oder anderweitig ungültige e-Mails automatisch in den Junk-e-Mail-Ordner eingehen. Der Dienst tut, was erforderlich ist, je nachdem, wie der Standard-oder der benutzerdefinierte Administrator Einstellungsstatus ausgeführt wird. Anders ausgedrückt: Benutzer sollten sich keine Sorgen machen, dass viele Spam-e-Mails im Junk-e-Mail-Ordner angezeigt werden. Wenn Administratoren alle Junk-e-Mails lieber aus den Augen verschieben möchten, muss die Quarantäne konfiguriert werden. Weitere Informationen finden Sie im Artikel [Quarantäne-e-Mail-Nachrichten in Office 365](../quarantine-email-messages.md) .
+> Es ist eine gute Sache, wenn Junk-oder anderweitig ungültige e-Mails automatisch in den Junk-e-Mail-Ordner eingeht. Der Dienst tut, was erforderlich ist, basierend auf dem Status des Standard-oder benutzerdefinierten Administratoreinstellungen. In anderen Worten: Benutzer sollten sich keine Gedanken darüber machen, wie viele Spamnachrichten im Junk-e-Mail-Ordner angezeigt werden. Wenn Administratoren alle Junk-e-Mails aus dem Blickfeld ziehen möchten, sollte die Quarantäne konfiguriert werden. Weitere Informationen finden Sie unter [Quarantäne-e-Mail-Nachrichten in Office 365](../quarantine-email-messages.md) Artikel.
 
 ## <a name="important-terms"></a>Wichtige Begriffe
 
 **Eingehend:** Nachrichten, die in Office 365 kommen.
 
-Ausgehend **:** Nachrichten, die aus Office 365.
+**Outbound:** Nachrichten, die Office 365 ausgehen.
 
-**Intern:** Nachrichten, die von einer Person innerhalb der Organisation an eine Person innerhalb der Organisation gesendet werden. Dies umfasst Kunden, die sich in Hybrid Szenarien befinden, und ein Postfach kann lokal sein, und das andere Postfach befindet sich in der Cloud.
+**Intern:** Nachrichten, die von einer Person innerhalb der Organisation an eine Person innerhalb der Organisation gesendet werden. Dies umfasst Kunden, die sich in Hybrid Szenarien befinden, und ein Postfach könnte lokal sein, und das andere Postfach befindet sich in der Cloud.
 
-**Falsch negative (FN):** Spam und andere Junk-e-Mails, die fälschlicherweise in den Posteingang gesendet werden.
+**Falsch negativ (FN):** Spam und andere Junk-e-Mails, die fälschlicherweise in den Posteingang gesendet werden.
 
-**Falsch positives Ergebnis (FP):** Legitime Nachrichten, die fälschlicherweise als Spam gekennzeichnet und in den Junk-e-Mail-Ordner oder in die Quarantäne verschoben werden.
+**Falsch positiv (FP):** Legitime Nachrichten, die fälschlicherweise als Spam gekennzeichnet und in den Junk-e-Mail-Ordner oder in die Quarantäne verschoben werden.
 
-**Spam, auch bekannt als unangeforderte e-Mail:** Dies geschieht in Form von Werbe-, Ketten-, politischen Mailings usw. Dies ist eine e-Mail-Nachricht, die Benutzer nicht für und von Spammern anmelden, die versuchen, Produkte anzufordern oder zu betrügen.
+**Spam, auch als unerwünschte e-Mail bezeichnet:** Dies erfolgt in Form von kommerzieller Werbung, Kettenbriefen, politischen Mailings usw. Hierbei handelt es sich um e-Mails, die Benutzer nicht für und von Spammern registrieren, die versuchen, Produkte anzufordern oder Betrugsversuche zu begehen.
 
-**Phishing:** Phishing ist eine spezielle Art von Spam, die Sie dazu verleiten soll, persönliche Informationen zum Zweck der Begehung von Identitätsdiebstahl oder-Betrug aufzugeben. Diese Art von Nachricht enthält in der Regel einen böswilligen Link oder eine Anlage, aber nicht immer.
+**Phishing:** Bei Phishing handelt es sich um eine spezielle Art von Spam, die Sie dazu verleiten soll, persönliche Informationen zum Zwecke des Identitätsdiebstahls oder-Betrugs zu geben. Dieser Nachrichtentyp enthält normalerweise einen böswilligen Link oder eine Anlage, jedoch nicht immer.
 
-**Spoof:** Spoofing ist der Fall, wenn Spammer den FROM-Header fälschen, sodass Nachrichten scheinbar von einer anderen Person als der tatsächlichen Quelle stammen. Dies kann Spam sein, aber am häufigsten für Phishing-Benutzer verwendet werden.
+**Spoof:** Spoofing ist, wenn Spammer die From-Kopfzeile fälschen, sodass Nachrichten von einer Person oder einem anderen als der tatsächlichen Quelle stammen. Dies kann Spam sein, wird aber am häufigsten für Phishing-Benutzer verwendet.
 
-**Identitätswechsel:** Diese Art von Spam ist auch eine Möglichkeit, die Absenderadresse zu fälschen, aber es geschieht, indem ein Teil des Namens oder der Domäne geändert wird, sodass Sie wie die reale Quelle aussieht. Beispielsweise wurde Bi11@micr0s0ft.com, wobei das "l" in Bill tatsächlich die Nummer 11 und das "o" in Microsoft durch die Zahl Null ersetzt wurde.
+**Identitätswechsel:** Diese Art von Spam ist auch eine Möglichkeit, die Absenderadresse zu fälschen, aber Sie erfolgt durch Ändern eines Teils des Namens oder der Domäne, sodass Sie wie die reale Quelle aussieht. Beispiel: Bi11@micr0s0ft.com, wobei das "l" in Bill tatsächlich die Zahl "11" und das "o" in Microsoft wurde durch die Zahl Null ersetzt.
 
-**Bulk:** Massensendungen werden normalerweise von Benutzern angefordert, wenngleich manchmal indirekt, wenn Unternehmen Informationen an andere Unternehmen verkaufen. Es ist üblich, dass sich Benutzer absichtlich für Massensendungen (d. h. neubriefs) registrieren, aber später vergessen und denken, dass es sich um Spam handelt. Massen-e-Mails werden zu Spam, wenn Massenversender mehr als Benutzer anmelden und die Beschwerde Stufen zu hoch werden.
+**Bulk:** Massen-e-Mails werden normalerweise von Benutzern angefordert, wenn auch indirekt, wenn Unternehmen Informationen an andere Unternehmen verkaufen. Es ist üblich, dass sich Benutzer absichtlich für Massen-e-Mails (d. h. Briefsendungen) registrieren, aber später vergessen und denken, dass es sich um Spam handelt. Massen-e-Mails werden zu Spam, wenn Massen-e-Mail-Nachrichten mehr senden als Benutzer registrieren und die Reklamations Stufe zu hoch wird.

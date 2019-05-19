@@ -3,7 +3,7 @@ title: Verwenden von DMARC zum Überprüfen von E-Mails in Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,26 +12,26 @@ search.appverid:
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität (DMARC) konfigurieren, um Nachrichten zu überprüfen, die von Ihrer Office 365-Organisation gesendet werden.
-ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: In diesem Artikel erfahren Sie, wie Sie die domänenbasierte Nachrichtenauthentifizierung, Berichterstellung und Konformität (DMARC) so konfigurieren, dass von Ihrer Office 365 Organisation gesendete Nachrichten überprüft werden.
+ms.openlocfilehash: 9e3c2cd21e411d775f621c8b353bee9e6b0e235e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263727"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156187"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Verwenden von DMARC zum Überprüfen von E-Mails in Office 365
 
-Domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität ([DMARC](https://dmarc.org)) funktioniert mit Sender Policy Framework (SPF) und DomainKeys Identified Mail (DKIM) zur Authentifizierung von e-Mail-Absendern und sicherstellen, dass Ziel-e-Mail-Systeme Nachrichten Vertrauen, die von Ihre Domäne. Die Implementierung von DMARC zusammen mit SPF und DKIM bietet zusätzlichen Schutz vor Spoofing- und Phishing-E-Mails. DMARC unterstützt die E-Mail-Systeme der Empfänger bei der Behandlung von Nachrichten, die von Ihrer Domäne gesendet wurden, jedoch die SPF- oder DKIM-Prüfungen nicht bestanden haben.
+Domänenbasierte Nachrichtenauthentifizierung,-Berichterstellung und-Konformität ([DMARC](https://dmarc.org)) funktioniert mit SPF (Sender Policy Framework) und DomainKeys Identified Mail (DKIM) zur Authentifizierung von e-Mail-Absendern und sicherstellen, dass Ziel-e-Mail-Systeme Nachrichten Vertrauen, die von gesendet werden. Ihre Domäne. Die Implementierung von DMARC zusammen mit SPF und DKIM bietet zusätzlichen Schutz vor Spoofing- und Phishing-E-Mails. DMARC unterstützt die E-Mail-Systeme der Empfänger bei der Behandlung von Nachrichten, die von Ihrer Domäne gesendet wurden, jedoch die SPF- oder DKIM-Prüfungen nicht bestanden haben.
   
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>Wie arbeiten SPF und DMARC zusammen, um E-Mails in Office 365 zu schützen?
 <a name="SPFandDMARC"> </a>
 
  Eine E-Mail-Nachricht kann mehrere Ersteller- oder Absenderadressen enthalten. Diese Adressen können für verschiedene Zwecke verwendet werden. Sehen Sie sich beispielsweise die folgenden Adressen an: 
   
-- **"Mail from"-Adresse**: gibt den Absender an und gibt an, wo zurückgegebene Benachrichtigungen gesendet werden sollen, wenn Probleme mit der Übermittlung der Nachricht auftreten, beispielsweise Unzustellbarkeitsbenachrichtigungen. Diese wird im Umschlag Bereich einer e-Mail-Nachricht angezeigt und wird in der Regel nicht von Ihrer e-Mail-Anwendung angezeigt. Dies wird manchmal auch als 5321. mailFrom-Adresse oder die Reverse-Path-Adresse bezeichnet.
+- **"Mail from"-Adresse**: gibt den Absender an und gibt an, wo Rück Meldungsbenachrichtigungen gesendet werden sollen, wenn bei der Zustellung der Nachricht Probleme auftreten, beispielsweise Nichtzustellungsbenachrichtigungen. Dieser wird im Umschlag Teil einer e-Mail-Nachricht angezeigt und wird in der Regel nicht von Ihrer e-Mail-Anwendung angezeigt. Dies wird manchmal als 5321. MailFrom-Adresse oder als Reverse-Path-Adresse bezeichnet.
     
-- **"Von"**-Adresse: die Adresse, die von Ihrer e-Mail-Anwendung als Absenderadresse angezeigt wird. Diese Adresse identifiziert den Autor der E-Mail. Das heißt, das Postfach der Person oder des Systems, das sich für das Schreiben der Nachricht verantwortlich zeichnet. Dies wird manchmal auch als 5322.From-Adresse bezeichnet.
+- **"Von"**-Adresse: die Adresse, die von der e-Mail-Anwendung als Absenderadresse angezeigt wird. Diese Adresse identifiziert den Autor der E-Mail. Das heißt, das Postfach der Person oder des Systems, das sich für das Schreiben der Nachricht verantwortlich zeichnet. Dies wird manchmal auch als 5322.From-Adresse bezeichnet.
     
 SPF verwendet einen DNS-TXT-Eintrag, um eine Liste der autorisierten sendenden IP-Adressen für eine bestimmte Domäne bereitzustellen. In der Regel werden SPF-Prüfungen nur für die „5321.MailFrom"-Adresse durchgeführt. Dies bedeutet, dass die „5322.From"-Adresse nicht authentifiziert wird, wenn Sie nur SPF verwenden. Aufgrund dessen kann es dazu kommen, dass ein Benutzer eine Nachricht erhält, die die SPF-Prüfung besteht, jedoch eine Spoof-5322.From-Absenderadresse aufweist. Betrachten Sie beispielsweise das folgende SMTP-Transkript:
   
@@ -141,11 +141,11 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 
 Dabei gilt:
   
-- *domain* ist die Domäne, die Sie schützen möchten. Standardmäßig schützt der Eintrag E-Mail-Nachrichten von dieser Domäne und allen Unterdomänen. Wenn Sie beispielsweise dmarc.contoso.com angeben \_, schützt dmarc e-Mails aus der Domäne und allen Unterdomänen wie housewares.contoso.com oder Plumbing.contoso.com. 
+- *domain* ist die Domäne, die Sie schützen möchten. Standardmäßig schützt der Eintrag E-Mail-Nachrichten von dieser Domäne und allen Unterdomänen. Wenn Sie beispielsweise dmarc.contoso.com angeben \_, schützt dmarc e-Mails von der Domäne und allen Unterdomänen, wie Housewares.contoso.com oder Plumbing.contoso.com. 
     
 - *TTL* (Gültigkeitsdauer) muss immer einer Stunde entsprechen. Die für „TTL“ verwendete Einheit, entweder Stunden (1 Stunde), Minuten (60 Minuten) oder Sekunden (3600 Sekunden), unterscheidet sich je nach Registrierungsstelle Ihrer Domäne. 
     
-- *PCT = 100* gibt an, dass diese Regel für 100% der e-Mails verwendet werden soll.
+- *PCT = 100* gibt an, dass diese Regel für 100% der e-Mail verwendet werden soll.
     
 - *policy* gibt an, welche Richtlinien der empfangende Server befolgen soll, wenn die DMARC-Prüfung nicht bestanden wird. Sie können für die Richtlinie „none“ (keine), „quarantine“ (Quarantäne) oder „reject“ (ablehnen) festlegen. 
     
@@ -195,7 +195,7 @@ Sie können DMARC allmählich implementieren, ohne den übrigen E-Mail-Nachricht
 ## <a name="how-office-365-handles-outbound-email-that-fails-dmarc"></a>So behandelt Office 365 ausgehende E-Mail-Nachrichten, die DMARC-Prüfungen nicht bestehen
 <a name="outbounddmarcfail"> </a>
 
-Wenn eine Nachricht aus Office 365 ausgeht und DMARC fehlschlägt und Sie die Richtlinie auf p = Quarantine oder p = Reject festgelegt haben, wird die Nachricht über den [Pool mit hohem Risiko für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md)weitergeleitet. Für ausgehende E-Mail-Nachrichten erfolgt keine Außerkraftsetzung.
+Wenn eine Nachricht aus Office 365 ausgeht und DMARC fehlschlägt und Sie die Richtlinie auf p = Quarantine oder p = Reject festgelegt haben, wird die Nachricht über den [hochriskanten Zustellungs Pool für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md)weitergeleitet. Für ausgehende E-Mail-Nachrichten erfolgt keine Außerkraftsetzung.
   
 Wenn Sie eine DMARC-Ablehnungsrichtlinie veröffentlichen (p=reject), kann kein anderer Kunde in Office 365 Ihre Domäne an Ihrer Stelle verwenden, da Nachrichten die SPF- und DKIM-Prüfungen für Ihre Domäne nicht bestehen, wenn eine ausgehende Nachricht über den Dienst weitergeleitet wird. Wenn Sie jedoch eine DMARC-Ablehnungsrichtlinie veröffentlichen und nicht die gesamte E-Mail-Authentifizierung über Office 365 abgewickelt wird, wird ein Teil der eingehenden Nachrichten (wie zuvor beschrieben) als Spam gekennzeichnet, oder Nachrichten werden abgelehnt, wenn Sie SPF nicht veröffentlichen und versuchen, sie über den Dienst als ausgehend weiterzuleiten. Diese geschieht zum Beispiel dann, wenn Sie beim Erstellen des DMARC-TXT-Eintrags vergessen, einige IP-Adressen für Server und Apps einzubeziehen, die E-Mail-Nachrichten im Auftrag Ihrer Domäne senden.
   
@@ -208,7 +208,7 @@ Office 365 ist so konfiguriert, da einige autorisierte E-Mail-Nachrichten die DM
   
 - Benutzer fügen mithilfe des E-Mail-Clients sichere Absender einzeln hinzu
     
-- Administratoren erstellen eine Exchange-Nachrichtenfluss Regel (auch als Transportregel bezeichnet) für alle Benutzer, die Nachrichten für diese bestimmten Absender zulassen. 
+- Administratoren erstellen eine Exchange-e-Mail-Fluss Regel (auch als Transportregel bezeichnet) für alle Benutzer, die Nachrichten für diese bestimmten Absender zulassen. 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Problembehandlung bei der DMARC-Implementierung
 <a name="dmarctroubleshoot"> </a>
@@ -222,7 +222,7 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-Alle oder die meisten e-Mail-Nachrichten werden zuerst an mail.contoso.com weitergeleitet, da es sich um den primären MX handelt, und e-Mails werden dann an EOP weitergeleitet. In einigen Fällen können Sie EOP nicht einmal als MX-Eintrag auflisten und einfach Connectors zum Weiterleiten Ihrer e-Mails einbinden. EOP muss nicht der erste Eintrag für die DMARC-Validierung sein. Es stellt nur die Überprüfung sicher, da wir nicht sicher sein können, dass alle lokalen/nicht-O365-Server DMARC Überprüfungen durchführen.  DMARC kann beim Einrichten des DMARC TXT-Eintrags für die Domäne eines Kunden erzwungen werden (nicht für Server), aber der Empfänger Server muss tatsächlich die Erzwingung durchführen.  Wenn Sie EOP als empfangenden Server einrichten, führt EOP die DMARC-Erzwingung aus.
+Alle oder die meisten e-Mails werden zuerst an Mail.contoso.com weitergeleitet, da es sich um den primären MX handelt, und dann werden e-Mails an EoP weitergeleitet. In einigen Fällen können Sie EoP nicht einmal als MX-Eintrag auflisten und einfach Connectors einbinden, um Ihre e-Mails weiterzuleiten. EoP muss nicht der erste Eintrag sein, für den die DMARC-Validierung ausgeführt werden soll. Dadurch wird nur die Überprüfung sichergestellt, da wir nicht sicher sein können, dass alle lokalen/nicht-O365-Server DMARC-Prüfungen durchführen.  DMARC kann bei der Einrichtung des DMARC txt-Eintrags für die Domäne eines Kunden (nicht für den Server) erzwungen werden, es ist jedoch an dem empfangenden Server, die Erzwingung tatsächlich durchzusetzen.  Wenn Sie EoP als den empfangenden Server einrichten, übernimmt EoP die DMARC-Erzwingung.
   
 ## <a name="for-more-information"></a>Weitere Informationen
 <a name="sectionSection8"> </a>

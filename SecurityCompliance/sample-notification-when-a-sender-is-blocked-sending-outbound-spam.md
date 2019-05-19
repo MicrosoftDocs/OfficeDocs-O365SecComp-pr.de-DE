@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/2/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 ms.collection:
 - M365-security-compliance
 description: 'Wenn ein Absender vom Dienst blockiert wird, weil er ausgehenden Spam sendet, erhält der angegebene Domänenadministrator, wenn Sie Konfigurieren der Richtlinie für ausgehende Spamnachrichten, eine E-Mail-Benachrichtigung ähnlich der folgenden:'
-ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e30717332358693df3c4e56e58d0679ce3acf2d7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260973"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158507"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Beispielbenachrichtigung, wenn ein Absender aufgrund des Versendens von ausgehendem Spam blockiert wird
 
@@ -62,6 +62,6 @@ Exchange Online Protection.
 \*\*HINWEIS: Antworten Sie nicht auf diese E-Mail, da sie von einer nicht überwachten Adresse gesendet wurde.\*\*
   
 > [!TIP]
-> Sie können sich auch über die unter [Help and Support for EoP](eop/help-and-support-for-eop.md)dokumentierten Optionen an den Support wenden. 
+> Sie können sich auch über die unter [Hilfe und Support für EoP](eop/help-and-support-for-eop.md)dokumentierten Optionen an den Support wenden. 
   
 

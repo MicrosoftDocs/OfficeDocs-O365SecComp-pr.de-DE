@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,20 +14,20 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt.
-ms.openlocfilehash: 9a9673b3360a9a8b6bf837e09b49aca7a38e2172
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a8e4c8ba67e94c5c61da6c88f8086d780081d1a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265037"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157217"
 ---
 # <a name="quarantine-faq"></a>Häufig gestellte Fragen (FAQ) zur Quarantäne
 
 Unter diesem Thema werden häufig gestellte Fragen und Antworten zur gehosteten Quarantäne bereitgestellt. Die Antworten richten sich an Kunden von Microsoft Exchange Online und Exchange Online Protection.
   
- **F: Wie kann ich Nachrichten mit Schadsoftware in Quarantäne verwalten?**
+ **F. Wie verwalte ich Nachrichten mit Schadsoftware in Quarantäne?**
   
-Sie müssen das Security &amp; Compliance Center verwenden, um Nachrichten anzuzeigen und zu arbeiten, die in Quarantäne gesendet wurden, da Sie Schadsoftware enthalten. Weitere Informationen finden Sie unter [Isolieren von e-Mail-Nachrichten in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Sie müssen das Security &amp; Compliance Center verwenden, um Nachrichten anzuzeigen und zu bearbeiten, die an die Quarantäne gesendet wurden, da Sie Schadsoftware enthalten. Weitere Informationen finden Sie unter [Quarantäne für e-Mail-Nachrichten in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
  **F. Wie wird der Dienst konfiguriert, damit Spamnachrichten in Quarantäne gesendet werden?**
   
@@ -43,7 +43,7 @@ Als Endbenutzer können Sie Ihre eigenen Nachrichten in der Spamquarantäne verw
         
  **Wie gewähre ich meinen Endbenutzern Zugriff auf die Spamquarantäne?**
   
-A. Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EOP-Kunden, die lokale Postfächer schützen, müssen gültige e-Mail-Benutzer sein, die über die Verzeichnissynchronisierung oder die EAC erstellt werden. Weitere Informationen zum Verwalten von Benutzern finden Sie unter EOP-Administratoren unter [Verwalten von e-Mail-Benutzern in EoP](eop/manage-mail-users-in-eop.md). Für eigenständige EOP-Kunden empfehlen wir die Verwendung der Verzeichnissynchronisierung und die Aktivierung der verzeichnisbasierten Edge-Blockierung; Weitere Informationen finden Sie unter [Use Directory based Edge Blocking to Reject Messages Sent to invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
+A. Für den Zugriff auf die Spam-Quarantäne von Endbenutzern benötigen Endbenutzer eine gültige Office 365-Benutzer-ID samt Kennwort. EoP Kunden, die lokale Postfächer schützen, müssen gültige e-Mail-Benutzer sein, die über die Verzeichnissynchronisierung oder die Exchange-Verwaltungskonsole erstellt werden. Weitere Informationen zum Verwalten von Benutzern finden Sie in den EoP-Administratoren unter [Verwalten von e-Mail-Benutzern in EoP](eop/manage-mail-users-in-eop.md). Für EoP-eigenständige Kunden empfehlen wir die Verwendung der Verzeichnissynchronisierung und die Aktivierung der verzeichnisbasierten Edge-Blockierung; Weitere Informationen finden Sie unter [Verwenden der verzeichnisbasierten Edge-Blockierung zum ablehnen von Nachrichten, die an ungültige Empfänger gesendet](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)werden.
   
  **Q. Können auch andere Nachrichten als Spam in Quarantäne gesendet werden?**
   
@@ -51,7 +51,7 @@ A. Nachrichten, die einer e-Mail-Fluss Regel (auch als Transportregel bezeichnet
   
  **F. Wie lange bleiben Nachrichten in der Quarantäne?**
   
-A. Standardmäßig werden Nachrichten in Spamquarantäne in der Quarantäne für 30 Tage aufbewahrt, während isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, 7 Tage lang in der Quarantäne aufbewahrt werden. Nach diesem Zeitraum werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer Nachrichtenfluss Regel übereinstimmen, ist nicht konfigurierbar. Die Aufbewahrungsdauer für Nachrichten in Spam-Quarantäne kann jedoch über die Einstellung **Spam für (Tage)** in ihren Inhaltsfilter Richtlinien gesenkt werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
+A. Standardmäßig werden Spam isolierte Nachrichten 30 Tage lang in der Quarantäne aufbewahrt, während in Quarantäne befindliche Nachrichten, die einer e-Mail-Fluss Regel entsprechen, für 7 Tage in der Quarantäne aufbewahrt werden. Nach dieser Zeitspanne werden die Nachrichten gelöscht und können nicht abgerufen werden. Der Aufbewahrungszeitraum für isolierte Nachrichten, die mit einer e-Mail-Fluss Regel übereinstimmen, kann nicht konfiguriert werden. Der Aufbewahrungszeitraum für Nachrichten mit Spamquarantäne kann jedoch über die Einstellung **Spam für (Tage)** in den Inhaltsfilter Richtlinien beibehalten werden. Weitere Informationen finden Sie unter [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md).
   
  **F. Kann ich mehr als eine Quarantänenachricht gleichzeitig freigeben oder melden?**
   

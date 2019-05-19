@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261523"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157347"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
@@ -45,13 +45,15 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
 
 - **Ihre DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bietet, müssen Ihre MX-Einträge (Mail Exchange) ausschließlich auf Office 365 verweisen. Lesen Sie die Informationen unter [Erstellen von DNS-Einträgen für Office 365 beim Verwalten von DNS-Einträgen.](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)
     
-- **Die Junk-E-Mail-Regel für alle Postfächer aktivieren** Standardmäßig ist die Aktion des Spamfilters auf **Nachricht in den Junk-E-Mail-Ordner verschieben** festgelegt. Wenn dies die bevorzugte und aktuelle Spamrichtlinienaktion ist, so muss für jedes Postfach [auch die Junk-E-Mail-Regel aktiviert sein](https://support.office.com/de-DE/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Um dies zu überprüfen, können Sie das Cmdlet „Get-MailboxJunkEmailConfiguration“ für ein oder mehrere Postfächer ausführen. Sie können z. B. alle Postfächer überprüfen, indem Sie Folgendes ausführen: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
+- 
+  **Die Junk-E-Mail-Regel für alle Postfächer aktivieren** Standardmäßig ist die Aktion des Spamfilters auf **Nachricht in den Junk-E-Mail-Ordner verschieben** festgelegt. Wenn dies die bevorzugte und aktuelle Spamrichtlinienaktion ist, so muss für jedes Postfach [auch die Junk-E-Mail-Regel aktiviert sein](https://support.office.com/de-DE/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Um dies zu überprüfen, können Sie das Cmdlet „Get-MailboxJunkEmailConfiguration“ für ein oder mehrere Postfächer ausführen. Sie können z. B. alle Postfächer überprüfen, indem Sie Folgendes ausführen: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
     Wenn Sie die Ausgabe anzeigen, sollte die Enable-Eigenschaft auf „True“ festgelegt sein. Wenn sie auf „False“ festgelegt ist, können Sie „Set-MailboxJunkEmailConfiguration“ ausführen, um dies in „True“ zu ändern.
     
 - **Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen** Wenn Sie Exchange Online Protection verwenden, Ihre Postfächer sich aber auf dem lokalen Exchange Server befinden, müssen Sie ein paar Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen. Lesen Sie [Anweisungen für EOP](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
-- **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, [wie Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
+- 
+  **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, [wie Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
     
 - **Sofortiges Blockieren eines Absenders** Falls Sie einen Absender sofort blockieren müssen, können Sie ihn nach E-Mail-Adresse, Domäne oder IP-Adresse blockieren. Lesen Sie die Informationen unter [Verwenden des EAC zum Erstellen einer E-Mail-Flussregel, die Nachrichten einer bestimmten Domäne oder eines bestimmten Benutzers blockiert](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Ein Eintrag in einer Endbenutzer-Zulassungsliste kann eine vom Administrator festgelegten Blockung außer Kraft setzen.
     

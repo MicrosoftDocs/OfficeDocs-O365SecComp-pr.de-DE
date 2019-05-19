@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 01/14/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,32 +15,32 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Office 365 kann Ihre Umgebung vor Schadsoftware schützen, indem Viren in Dateien ermittelt werden, die Benutzer in SharePoint Online hochladen. Dateien werden nach dem Hochladen auf Viren überprüft. Wenn eine Datei als infiziert festgestellt wird, wird eine Eigenschaft festgelegt, sodass Benutzer die Datei weder herunterladen noch synchronisieren können.
-ms.openlocfilehash: d4f18c84935d9c6e1d3f135bbda6c40737956ae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 können zum Schutz Ihrer Umgebung vor Schadsoftware beitragen, indem Sie Viren in Dateien erkennen, die von Benutzern in SharePoint Online hochgeladen werden. Dateien werden nach dem Hochladen auf Viren überprüft. Wenn eine Datei als infiziert erkannt wird, wird eine Eigenschaft festgelegt, damit Benutzer die Datei nicht herunterladen oder synchronisieren können.
+ms.openlocfilehash: 463c2d21c92e5b71602cfe5158dbf6c82e8e7385
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266823"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157787"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Virenerkennung in SharePoint Online
 
-Office 365 kann Ihre Umgebung vor Schadsoftware schützen, indem Viren in Dateien ermittelt werden, die Benutzer in SharePoint Online hochladen. Dateien werden nach dem Hochladen auf Viren überprüft. Wenn eine Datei als infiziert festgestellt wird, wird eine Eigenschaft festgelegt, sodass Benutzer die Datei weder herunterladen noch synchronisieren können.
+Office 365 können zum Schutz Ihrer Umgebung vor Schadsoftware beitragen, indem Sie Viren in Dateien erkennen, die von Benutzern in SharePoint Online hochgeladen werden. Dateien werden nach dem Hochladen auf Viren überprüft. Wenn eine Datei als infiziert erkannt wird, wird eine Eigenschaft festgelegt, damit Benutzer die Datei nicht herunterladen oder synchronisieren können.
   
 > [!IMPORTANT]
-> Diese Antivirus-Funktionen in SharePoint Online sind eine Möglichkeit, Viren zu enthalten. Sie sind nicht als zentraler Schutz gegen Schadsoftware für Ihre Umgebung vorgesehen. Wir ermutigen alle Kunden, den Schutz vor Schadsoftware auf verschiedenen Ebenen zu bewerten und zu implementieren und bewährte Methoden zum Sichern Ihrer Unternehmensinfrastruktur anzuwenden. Weitere Informationen zu Strategien und bewährten Methoden finden Sie unter [bewährte Methoden für die Sicherheit von Office 365](security-best-practices.md). 
+> Diese Antivirus-Funktionen in SharePoint Online sind eine Möglichkeit, Viren einzudämmen. Sie sind nicht als einzelne Verteidigungspunkte gegen Schadsoftware für Ihre Umgebung gedacht. Wir ermutigen alle Kunden, den Schutz vor Schadsoftware auf verschiedenen Ebenen zu bewerten und zu implementieren und bewährte Methoden für die Sicherung Ihrer Unternehmensinfrastruktur anzuwenden. Weitere Informationen zu Strategien und bewährten Methoden finden Sie unter [bewährte Methoden für die Sicherheit für Office 365](security-best-practices.md). 
   
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>Was geschieht, wenn eine infizierte Datei in SharePoint Online hochgeladen wird?
 
-Office 365 verwendet ein allgemeines Viruserkennungsmodul. Das Modul wird asynchron in SharePoint Online ausgeführt und scannt Dateien nach dem Hochladen. Wenn eine Datei einen Virus enthält, wird Sie so gekennzeichnet, dass Sie nicht erneut heruntergeladen werden kann. Im April 2018 haben wir den Grenzwert von 25 MB für gescannte Dateien entfernt.
+Office 365 verwendet ein allgemeines Viruserkennungsmodul. Das Modul wird in SharePoint Online asynchron ausgeführt und scannt Dateien nach dem Hochladen. Wenn eine Datei gefunden wird, die einen Virus enthält, wird Sie gekennzeichnet, damit Sie nicht erneut heruntergeladen werden kann. Im April 2018 haben wir den Grenzwert von 25 MB für gescannte Dateien entfernt.
   
 Folgendes geschieht:
   
 1. Ein Benutzer lädt eine Datei in SharePoint Online hoch.
     
-2. Das Viruserkennungsmodul überprüft die Datei.
+2. Das Viruserkennungsmodul scannt die Datei.
     
-3. Wenn ein Virus gefunden wird, wird vom Viren Modul eine Eigenschaft für die Datei festgelegt, die darauf hinweist, dass Sie infiziert ist.
+3. Wenn ein Virus gefunden wird, legt das Virusmodul eine Eigenschaft für die Datei fest, die angibt, dass es infiziert ist.
     
 ## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>Was geschieht, wenn ein Benutzer versucht, eine infizierte Datei mithilfe des Browsers herunterzuladen?
 
@@ -50,13 +50,13 @@ Folgendes geschieht:
   
 1. Ein Benutzer öffnet einen Webbrowser und versucht, eine infizierte Datei aus SharePoint Online herunterzuladen.
     
-2. Der Benutzer erhält eine Warnung, dass ein Virus erkannt wurde. Der Benutzer erhält die Option, die Datei herunterzuladen und zu versuchen, Sie mit ihrer eigenen Viren Software zu säubern.
+2. Der Benutzer erhält eine Warnung, dass ein Virus erkannt wurde. Der Benutzer erhält die Möglichkeit, die Datei herunterzuladen und zu versuchen, Sie mit ihrer eigenen Viren Software zu säubern.
 
 > [!NOTE]
-> Sie können das Cmdlet Set-SPOTenant mit dem Parameter **DisallowInfectedFileDownload** verwenden, um Benutzern das Herunterladen einer erkannten Datei auch im Fenster mit der Virenschutz Warnung zu gestatten. Siehe [DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
+> Sie können das Cmdlet "SPOTenant" mit dem Parameter " **DisallowInfectedFileDownload** " verwenden, um Benutzern das Herunterladen einer erkannten Datei zu ermöglichen, selbst im Fenster "Antivirus-Warnung". Siehe [DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Was geschieht, wenn der OneDrive-synchronisierungsclient versucht, eine infizierte Datei zu synchronisieren?
 
-Ob Benutzer Dateien mit dem neuen OneDrive-synchronisierungsclient (OneDrive. exe) oder dem vorherigen OneDrive for Business-synchronisierungsclient (Groove. exe) synchronisieren, wenn eine Datei einen Virus enthält, wird Sie vom synchronisierungsclient nicht heruntergeladen. Der synchronisierungsclient zeigt eine Benachrichtigung an, dass die Datei nicht synchronisiert werden kann.
+Unabhängig davon, ob Benutzer Dateien mit dem neuen OneDrive-synchronisierungsclient (OneDrive. exe) oder dem vorherigen OneDrive für Unternehmen synchronisierungsclient (Groove. exe) synchronisieren, wenn eine Datei einen Virus enthält, wird Sie vom synchronisierungsclient nicht heruntergeladen. Auf dem synchronisierungsclient wird eine Benachrichtigung angezeigt, dass die Datei nicht synchronisiert werden kann.
   
 
