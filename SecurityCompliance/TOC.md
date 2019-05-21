@@ -1,3 +1,5 @@
+# [Sicherheit & Compliance](index.md)
+
 # Erste Schritte
 ## [Inhaltsübersicht für die Sicherheit von Office 365](security-roadmap.md)
 ## [Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit](tenant-wide-setup-for-increased-security.md)
@@ -49,10 +51,14 @@
 ### [Wonach die DLP-Funktionen suchen](what-the-dlp-functions-look-for.md)
 ### [Sehen Sie einen erweiterten Überblick über das Anpassen von DLP an](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
-### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
-### [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Office 365 Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+### [Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md)
+### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit genauer Datenübereinstimmung (Vorschau)](create-custom-sensitive-info-type-edm.md)
+### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center](create-a-custom-sensitive-information-type.md)
+### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
 ### [Dokumentfingerabdrücke](document-fingerprinting.md)
+### [DLP-Funktionen für vertrauliche Informationen](what-the-dlp-functions-look-for.md)
+### [Einen erweiterten Überblick über das Anpassen von DLP ansehen](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [E-Mail-Verschlüsselung in Office 365](email-encryption.md)
 ### [Office 365-Nachrichtenverschlüsselung (OME)](ome.md)
@@ -107,6 +113,7 @@
 ### [Was ist EOP?](eop/what-is-eop.md)
 ### [Antispamschutz für Office 365-E-Mails](anti-spam-protection.md)
 ### [Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden](prevent-email-from-being-marked-as-spam.md)
+### [Kombination von Richtlinien und Schutzmaßnahmen](how-policies-and-protections-are-combined.md)
 ### [Reduzieren von Spam-E-Mails in Office 365](reduce-spam-email.md)
 ### [Steuern ausgehender Spamnachrichten in Office 365](outbound-spam-controls.md)
 ### [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zur Vermeidung von falsch negativen Einträgen](reduce-spam-email.md)
@@ -142,28 +149,8 @@
 #### [Weitere Informationen zu Spoofing Intelligence](learn-about-spoof-intelligence.md)
 #### [Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web](unverified-sender-feature.md)
 
-## [Überwachen und Verwalten des Datenzugriffs mit Office 365 Cloud App Security](office-365-cas-overview.md)
-### [Neuigkeiten in Cloud App Security](new-in-office-365-cas.md)
-#### [Updates von 2018](new-in-office-365-cas-2018.md)
-#### [Updates von 2017](new-in-office-365-cas-2017.md)
-### [Einstieg in Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
-### [Einrichten von Office 365 Cloud App Security](turn-on-office-365-cas.md)
-#### [Aktivitätsrichtlinien und Warnungen in Office 365 Cloud App Security](activity-policies-and-alerts.md)
-#### [Anomalieerkennungsrichtlinien in Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md)
-#### [Schützen von Apps mit der App-Steuerung für bedingten Zugriff in Office 365 Cloud App Security](ocas-conditional-access-app-control.md)
-##### [Bereitstellen der App-Steuerung für bedingten Zugriff für Office 365-Apps](ocas-deploy-conditional-access-app-control.md)
-##### [Sitzungsrichtlinien in Office 365 Cloud App Security](ocas-session-policies.md)
-##### [Zugriffsrichtlinien in Office 365 Cloud App Security](ocas-access-policies.md)
-#### [Gruppieren Ihrer IP-Adressen zur Vereinfachung der Verwaltung in Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md)
-#### [Integrieren Ihres SIEM-Servers in Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md)
-### [Nutzungsaktivitäten nach der Einführung von Office 365 Cloud App Security](utilization-activities-for-ocas.md)
-#### [Überprüfen und Ergreifen entsprechender Maßnahmen bei Warnungen in Office 365 Cloud App Security](review-office-365-cas-alerts.md)
-#### [Untersuchen einer Aktivität in Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md)
-#### [Verwalten von OAuth-Apps mit Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
-#### [Protokolle für Webdatenverkehr und Datenquellen für Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md)
-#### [Sperren oder Wiederherstellen eines Benutzerkontos in Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md)
-### [Erstellen von App-Ermittlungsberichten mit Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
-### [Erstellen von App-Ermittlungsergebnissen mit Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
+## [Überwachen und Verwalten des Datenzugriffs mit Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+
 ## [Unter Quarantäne stellen von E-Mail-Nachrichten in Office 365](quarantine-email-messages.md)
 ### [Verwalten von isolierten Nachrichten und Dateien als Administrator](manage-quarantined-messages-and-files.md)
 ### [Suchen und Freigeben von isolierten Nachrichten als Benutzer](find-and-release-quarantined-messages-as-a-user.md)
@@ -177,19 +164,20 @@
 ## [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
 # Datensatzverwaltung
-## [Dateiplan-Manager](file-plan-manager.md)
-## [Aufbewahrungsbezeichnungen](labels.md)
-### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
-### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
-## [Dispositionsüberprüfungen](disposition-reviews.md)
-## Überwachen der Datensatzverwaltung
-### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
+## Dateiplan
+### [Dateiplan-Manager](file-plan-manager.md)
+### [Aufbewahrungsbezeichnungen](labels.md)
+### 
+  [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
+### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
+### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
+## Veranstaltungen
+### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
+### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
+## [Disposition](disposition-reviews.md)
 ## Weitere Informationen zur Datensatzverwaltung
-### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
+### [Videos zur Datensatzverwaltung ansehen](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Verwalten der Datengovernance
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
@@ -200,7 +188,8 @@
 ### [Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Häufig gestellte Fragen zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md)
 ### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
-#### [Verwendung von Beispiel-Connectors zum Archivieren von Drittanbieterdaten](archive-third-party-data-with-sample-connector.md)
+#### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
+#### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
 ## Speichern von Daten
 ### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
@@ -212,11 +201,13 @@
 ### [Dateiplan-Manager](file-plan-manager.md)
 ### [Aufbewahrungsbezeichnungen](labels.md)
 ### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
 ### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
 ## [Freigeben von Daten](disposition-reviews.md)
-## [Aufsichtskommunikation](supervision-policies.md)
+## Aufsichtskommunikation
+### [Aufsichtsrichtlinien](supervision-policies.md)
 ### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
 ## [Verwalten inaktiver Postfächer](inactive-mailboxes-in-office-365.md)
 ### [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)
@@ -460,11 +451,17 @@
 # Nachrichtenübermittlung
 ## [Aktivieren des Berichtsnachrichts-Add-Ins](enable-the-report-message-add-in.md)
 ## [Nachrichtenablaufverfolgung im Security & Compliance Center](message-trace-scc.md)
-## [Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights.md)
-### [Bericht über automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)
-### [Einblick für E-Mail-Schleife](mfi-mail-loop-insight.md)
+## [Nachrichtenübermittlung und Einblicke im Security & Compliance Center](mail-flow-insights-v2.md)
+### [Nachrichtenfluss-Bericht](mfi-mail-flow-map-report.md)
+### [Übersicht über den Top-Domain-e-Mail-Datenstrom](mfi-domain-mail-flow-status-insight.md)
+### [SMTP-Auth-Clientbericht](mfi-smtp-auth-clients-report.md)
+### [Einblick in Absenderdomäne](mfi-sender-domain-insight.md)
+### [Unzustellbarkeitsbericht](mfi-non-delivery-report.md)
+### [Bericht "nicht akzeptierte Domäne"](mfi-non-accepted-domain-report.md)
 ### [Fluss eingehenden und ausgehender E-Mails](mfi-outbound-and-inbound-mail-flow.md)
 ### [Warteschlangenwarnungen und Warteschlangen](mfi-queue-alerts-and-queues.md)
+### [Bericht über automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)
+### [Einblick für E-Mail-Schleife](mfi-mail-loop-insight.md)
 ### [Einblick für langsame Nachrichtenflussregeln](mfi-slow-mail-flow-rules-insight.md)
 
 # Sicherheitslösungen
