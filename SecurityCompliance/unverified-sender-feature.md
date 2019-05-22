@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157987"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341623"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
 
@@ -55,26 +55,6 @@ Wenn Outlook.com und Outlook im Internet die Identität des Absenders nicht mith
 
 Nicht jede Nachricht, die nicht authentifiziert werden kann, ist bösartig. Sie sollten jedoch mit der Interaktion mit Nachrichten vorsichtig sein, die nicht authentifiziert werden, wenn Sie den Absender nicht erkennen. Oder wenn Sie einen Absender erkennen, der normalerweise nicht über ein "?" im Absender Bild verfügt, aber Sie ihn plötzlich sehen, könnte dies ein Zeichen sein, bei dem der Absender gefälscht wird.
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>Die Adresse des Absenders unterscheidet sich von dem, was in der Absenderadresse angezeigt wird.
-
-Die e-Mail-Adresse, die in einer Nachricht angezeigt wird, unterscheidet sich häufig von dem, was Sie in der Absenderadresse sehen. Manchmal versuchen Phisher, zu denken, dass der Absender jemand anderes ist als der, den Sie wirklich sind.
-
-Wenn Outlook.com und Outlook im Internet einen Unterschied zwischen der tatsächlichen Adresse des Absenders und der Adresse in der Absenderadresse erkennen, wird der tatsächliche Absender mit dem Via-Tag angezeigt, das unterstrichen wird.
-
-![nicht überprüfter Absender-Alternativtext](media/unverified-sender-feature1.png)
-
-In diesem Beispiel wird die sendende `suspicious.com` Domäne authentifiziert, der Absender wird jedoch `unknown@contoso.com` in die von-Adresse eingefügt.
-
-Nicht jede Nachricht mit einem Via-Tag ist verdächtig. Wenn Sie jedoch keine Nachricht mit einem Via-Tag erkennen, sollten Sie bei der Interaktion mit ihr vorsichtig sein.
-
-In Outlook.com und dem neuen Outlook im Internet können Sie den Mauszeiger über den Namen oder die Adresse eines Absenders in der Nachrichtenliste bewegen, um die e-Mail-Adresse anzuzeigen, ohne die Nachricht öffnen zu müssen.
-
-![Erste Schritte mit OneDrive](media/get-started-with-onedrive-message.png)
-
-Woher wissen Sie, ob Sie das neue Outlook im Internet verwenden? Sehen Sie sich die folgenden Beispiele an:
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Welche Kriterien werden von Outlook.com und Outlook im Internet verwendet, um die Eigenschaften "?" und "Via" hinzuzufügen?
@@ -83,11 +63,7 @@ Für das "?" im Absender Bild: Outlook.com erfordert, dass die Nachricht entwede
 
 Für das via-Tag: Wenn sich die Domäne in der von-Adresse von der Domäne in der DKIM-Signatur oder von der SMTP-e-Mail-Nachricht unterscheidet, zeigt Outlook.com die Domäne in einem dieser beiden Felder an (es wird die DKIM-Signatur bevorzugt).
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>Kann ich diese Eigenschaften mit IP-zulässt, Exchange-Transport Regel zulässt oder sichere Absender außer Kraft setzen?
-
-Sie können diese Eigenschaften nicht außer Kraft setzen.
-
-### <a name="how-do-i-remove-these-properties"></a>Wie entferne ich diese Eigenschaften?
+### <a name="how-do-i-remove-the-"></a>Wie entferne ich das "?"
 
 Für das "?" im Absender Bild: als Absender sollten Sie die Nachricht entweder mit SPF oder DKIM authentifizieren.
 
