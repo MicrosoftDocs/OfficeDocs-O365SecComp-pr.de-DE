@@ -1,7 +1,7 @@
 ---
 title: Microsoft-Sicherheitsbewertung
-description: Beschreibt Microsoft 365 Secure Score, wie Details berechnet werden und welche Sicherheitsadministratoren davon ausgehen können.
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Secure Score, Security Center, Improvement Actions
+description: Beschreibt das sichere Ergebnis von Microsoft 365, wie Details berechnet werden und welche Sicherheitsadministratoren davon erwarten können.
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, sicheres Ergebnis, Sicherheitscenter, Verbesserungs Aktionen
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -9,81 +9,88 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 ms.topic: article
-search.appverid: met150
-ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+search.appverid:
+- MOE150
+- MET150
+ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
+ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252308"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34334543"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
-Mit Microsoft Secure Score im Microsoft 365 Security Center können Sie die Sicherheit Ihrer Organisation erhöhen. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre Microsoft 365-Identitäten, Daten, apps, Geräte und Infrastruktur überwachen und verbessern.
+Mit Microsoft-Sicherheitsbewertung im Microsoft 365 Security Center können Sie einen besseren Überblick und mehr Kontrolle über den Sicherheitsstatus Ihres Unternehmens erhalten. Von einem zentralen Dashboard aus können Sie die Sicherheit Ihrer Microsoft 365 Identitäten, Daten, Anwendungen, Geräte und Infrastrukturen überwachen und verbessern.
 
-Microsoft Secure Score bietet Ihnen stabile Visualisierungen, Integration mit anderen Microsoft-Produkten, Vergleich ihrer Gäste mit anderen Unternehmen, Filterung nach Kategorie und vieles mehr. Mit dem Tool können Sie Sicherheits Verbesserungs Aktionen innerhalb Ihrer Organisation ausführen und den Verlauf ihrer Bewertung nachverfolgen. Die Bewertung kann auch widerspiegeln, wenn von Drittanbieterlösungen Empfohlene Verbesserungs Aktionen behoben wurden.  
+Microsoft-Sicherheitsbewertung bietet Ihnen robuste Visualisierungen, die Integration mit anderen Microsoft-Produkten, den Vergleich Ihrer Ergebnisse mit anderen Unternehmen, die Filterung nach Kategorien und vieles mehr. Mit dem Tool können Sie Maßnahmen zur Verbesserung der Sicherheit in Ihrer Organisation durchführen und die Entwicklung Ihrer Bewertung verfolgen. Die Bewertung zeigt auch, wenn Lösungen von Drittanbietern empfohlene Verbesserungsmaßnahmen behandelt haben.  
 
 ## <a name="how-it-works"></a>Funktionsweise
 
-Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfunktionen, zum Ausführen von sicherheitsbezogenen Aufgaben (beispielsweise zum Anzeigen von Berichten) oder zur Behandlung der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters. Einige Aktionen werden für die partielle Vervollständigung wie die Aktivierung der mehrstufigen Authentifizierung (Multi-Factor Authentication, MFA) für Ihre Benutzer erzielt. Sicherheit sollte immer mit der Benutzerfreundlichkeit ausgeglichen werden, und nicht jede Empfehlung funktioniert für Ihre Umgebung.
+Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (beispielsweise zum Anzeigen von Berichten) oder zur Adressierung der Verbesserungs Aktion mit einer Anwendung oder Software eines Drittanbieters. Einige Aktionen werden für einer teilweisen Vervollständigung bewertet, wie z.B. die Aktivierung der Mehrstufige Authentifizierung (MFA) für Ihre Benutzer. Sicherheit sollte immer mit Benutzerfreundlichkeit in Einklang gebracht werden, und nicht jede Empfehlung wird für Ihre Umgebung funktionieren.
 
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 
-Zum Anzeigen von Microsoft Secure Score müssen Sie derzeit eine der folgenden Rollen in Azure Active Directory besitzen:
+Um Microsoft Secure Score anzeigen zu können, müssen Sie in Azure Active Directory eine der folgenden Rollen zugewiesen sein:
 
 * Globaler Administrator
 * Sicherheitsadministrator
 * Sicherheits Leser
 
-## <a name="rich-experiences--additional-security-recommendations"></a>Umfassende Erfahrungen & zusätzliche Sicherheitsempfehlungen
+## <a name="rich-experiences--additional-security-recommendations"></a>Umfangreiche Erfahrungen & zusätzliche Sicherheitsempfehlungen
 
-In Microsoft Secure Score haben wir Empfehlungen aus Azure AD, InTune und Cloud App Security hinzugefügt, mit Empfehlungen von Azure Security Center und Windows Defender ATP in Kürze. Außerdem haben wir noch mehr Office 365-Sicherheitsempfehlungen hinzugefügt. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Microsoft-Produkten und-Diensten können Sie sich sicher sein, dass Sie bis zum Management über die Sicherheitsintegrität Ihrer Organisation berichten. Sie können Ihre Punktzahl auch mithilfe der [Microsoft Graph-API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)abrufen.
+In Microsoft Secure Score wurden Empfehlungen aus Azure AD, InTune und Cloud App Security mit Empfehlungen von Azure Security Center und Windows Defender ATP in Kürze hinzugefügt. Außerdem haben wir noch weitere Office 365 Sicherheitsempfehlungen hinzugefügt. Dank zusätzlicher Einblicke und größerer Transparenz in einer breiteren Palette von Microsoft-Produkten und-Diensten können Sie sich sicher fühlen, dass Sie die Verwaltung über die Sicherheitsintegrität Ihrer Organisation berichten. Sie können Ihre Partitur auch mithilfe der [Microsoft Graph-API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)abrufen.
 
-Um Ihnen die benötigten Informationen schneller zur Verfügung zu stellen, werden Microsoft-Empfehlungen in Gruppen organisiert:
+Um Ihnen die Informationen zu erleichtern, die Sie schneller benötigen, sind Microsoft-Empfehlungen in Gruppen gegliedert:
 
-* Identity (Schutzstatus ihrer Azure AD-Konten und-Rollen)
-* Daten (Schutzstatus Ihrer Office 365-Dokumente)
-* Gerät (Schutzstatus Ihrer Geräte; Windows Defender ATP Improvement-Aktionen in Kürze verfügbar
-* App (Schutzstatus Ihrer e-Mails und Cloud-Apps)
-* Infrastruktur (Schutzstatus ihrer Azure-Ressourcen; demnächst verfügbar)
+* Identität (Schutzstatus ihrer Azure Ad Konten und Rollen)
+* Daten (Schutzstatus Ihrer Office 365 Dokumente)
+* Gerät (Schutzstatus Ihrer Geräte; Windows Defender-ATP-Verbesserungs Aktionen in Kürze verfügbar
+* App (Schutzstatus Ihrer e-Mail-und Cloud-Apps)
+* Infrastruktur (Schutzzustand ihrer Azure-Ressourcen; demnächst verfügbar)
 
-Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite finden Sie auch eine umfassende Übersicht über die Gesamtpunktzahl, den historischen Trend ihres sicheren Ergebnisses mit Benchmark-Vergleichen und priorisierte Verbesserungsmaßnahmen, die ergriffen werden können, um Ihre Punktzahl zu verbessern. Mithilfe dieser Daten können Sie große Unterschiede in der Sicherheitsposition eingehen.  
+Auf der Microsoft Secure Score-Übersichtsseite können Sie sehen, wie Punkte zwischen diesen Gruppen aufgeteilt werden und welche Punkte verfügbar sind. Auf der Übersichtsseite erhalten Sie außerdem eine Übersicht über die Gesamtpunktzahl, die Verlaufs Entwicklung ihrer sicheren Partitur mit Benchmark-Vergleichen sowie priorisierte Verbesserungs Aktionen, die zur Verbesserung der Bewertung durchgeführt werden können. Sie können diese Daten verwenden, um zu agieren und große Unterschiede in ihrer Sicherheitsposition zu treffen.  
 
 ![M365-](./media/secure-score/homepage-original.png)
-Homepage*Abbildung 1: Microsoft Secure Score Overview Page*
+Start*Seite Abbildung 1: Microsoft Secure Score –* Übersichtsseite
 
-## <a name="take-action-to-improve-your-score"></a>Maßnahmen ergreifen, um Ihre Punktzahl zu verbessern
+## <a name="take-action-to-improve-your-score"></a>Durchführen von Aktionen zur Verbesserung der Punktzahl
 
-Auf der Registerkarte Verbesserungs Aktionen werden alle Sicherheitsempfehlungen für Ihren Mandanten zusammen mit dem Status (abgeschlossen, nicht abgeschlossen, durch Drittanbieter aufgelöst und ignoriert) aufgelistet. Sie können alle Steuerelemente suchen, Filtern und gruppieren.  Die Rangfolge basiert auf der Bewertung von Sicherheitswert und dem zu vervollständigenden Aufwand von Microsoft.
+Auf der Registerkarte Verbesserungs Aktionen werden alle Sicherheitsempfehlungen für Ihren Mandanten zusammen mit dem Status (abgeschlossen, nicht abgeschlossen, durch Drittanbieter aufgelöst und ignoriert) aufgelistet. Sie können alle Steuerelemente durchsuchen, Filtern und gruppieren.  Die Rangfolge basiert auf der Bewertung von Microsoft sowohl des Sicherheits Werts als auch der Bemühen um Vollständigkeit.
 
-Aktionen, die als [nicht erzielt] gekennzeichnet sind, werden nicht von Microsoft Secure Score nachverfolgt. Sie können weiterhin Maßnahmen ergreifen, Sie werden jedoch nicht Ihre Bewertung beeinträchtigen. Wenn eine Aktion in der Zukunft von Microsoft Secure Score nachverfolgt wird und Sie Sie bereits abgeschlossen haben, spiegelt Ihre Secure Score automatisch die Änderung wider.
+Aktionen mit der Bezeichnung [nicht erzielt] werden von Microsoft Secure Score nicht nachverfolgt. Sie können dennoch Aktionen durchführen, aber Sie haben keinen Einfluss auf Ihre Punktzahl. Wenn eine Aktion in Zukunft von Microsoft Secure Score verfolgt wird und Sie Sie bereits abgeschlossen haben, wird die Änderung automatisch von ihrer sicheren Punktzahl reflektiert.
 
-Wenn Sie auf eine Verbesserungs Aktion klicken, wird ein ausfliegen angezeigt. Um die Aktion abzuschließen, haben Sie einige Möglichkeiten:
+Wenn Sie auf eine Verbesserungs Aktion klicken, wird ein verfliegt angezeigt. Um die Aktion abzuschließen, haben Sie einige Optionen:
 
-1. Wählen Sie **Ansichtseinstellungen** , um den Konfigurationsbildschirm zu wechseln, und nehmen Sie die Änderung vor. Sie erhalten dann die Punkte, die die Aktion Wert ist, sichtbar am oberen Rand des Fly-Out. Es kann bis zu 24 Stunden dauern, bis Punkte aktualisiert werden.
+1. Wählen Sie **Ansichtseinstellungen** aus, um den Konfigurationsbildschirm zu wechseln und die Änderung vorzunehmen. Sie erhalten dann die Punkte, die die Aktion Wert ist, am oberen Rand des ausfliegens sichtbar. Es kann bis zu 24 Stunden dauern, bis Punkte aktualisiert werden.
 
-2. Wählen Sie **über Drittanbieter auflösen** aus, da die Verbesserungs Aktion bereits durch eine Drittanbieteranwendung oder-Software adressiert wurde. Sie erhalten die Punkte, die die Aktion Wert ist, damit Ihr sicheres Ergebnis Ihre allgemeine Sicherheitsposition besser widerspiegelt. Wenn ein Drittanbieter das Steuerelement nicht mehr abdeckt, können Sie die Verbesserungs Aktion als nicht abgeschlossen kennzeichnen. Beachten Sie, dass Microsoft keine Sichtbarkeit darüber hat, ob die Punkte Anforderungen erfüllt sind, wenn die Verbesserungs Aktion als aufgelöst über Drittanbieter gekennzeichnet ist.
+2. Wählen Sie **durch Drittanbieter auflösen** aus, da die Verbesserungs Aktion bereits von einer Drittanbieteranwendung oder-Software behoben wurde. Sie erhalten die Punkte, die die Aktion Wert ist, sodass Ihre sichere Punktzahl Ihre gesamte Sicherheitsposition besser widerspiegelt. Wenn ein Drittanbieter das Steuerelement nicht mehr abdeckt, können Sie die Verbesserungs Aktion als nicht abgeschlossen markieren. Bitte beachten Sie, dass Microsoft keine Sichtbarkeit hat, ob die Bewertungsanforderungen erfüllt sind, wenn die Verbesserungs Aktion als durch Drittanbieter aufgelöst gekennzeichnet ist.
 
-3. Wählen Sie **ignorieren** aus, da Sie sich entschieden haben, das Risiko zu übernehmen und die Verbesserungs Aktion nicht zu verabschieden. Nachdem Sie eine Verbesserungs Aktion ignoriert haben, wird die Gesamtanzahl der sicheren Punkte verringert. Sie können diese Aktion im Verlauf anzeigen oder jederzeit rückgängig machen.
+3. Wählen Sie **ignorieren** aus, da Sie sich entschieden haben, das Risiko zu akzeptieren und die Verbesserungs Aktion nicht zu verabschieden. Nachdem Sie eine Verbesserungs Aktion ignoriert haben, wird die Gesamtzahl der sicheren Punkte reduziert, die Sie erzielen können. Sie können diese Aktion im Verlauf anzeigen oder jederzeit wieder rückgängig machen.
 
-4. Wählen Sie **Überarbeiten** aus, da für die Verbesserungs Aktion ein Teil Ihrer Umgebung regelmäßig überprüft werden muss, um Punkte zu erhalten und beizubehalten. Beispielsweise sollten die Regeln für die Post Fach Weiterleitung wöchentlich überprüft werden, um sicherzustellen, dass die Daten nicht in Ihrem Netzwerk extrahiert werden. Sie müssen keine Änderungen vornehmen, aber es muss eine Aktion ausgeführt werden. Wenn Sie die Regeln regelmäßig überarbeiten, erhalten Sie die Punkte. Wenn dies nicht der Fall ist, wird die Punktzahl reduziert.
+4. Wählen Sie **überprüfen** aus, da für die Verbesserungs Aktion regelmäßig ein Teil Ihrer Umgebung überprüft werden muss, um Punkte zu erhalten und zu erhalten. Beispielsweise sollten Post Fach Weiterleitungsregeln wöchentlich überprüft werden, um sicherzustellen, dass die Daten nicht von Ihrem Netzwerk extrahiert werden. Sie müssen keine Änderungen vornehmen, es muss jedoch eine Aktion ausgeführt werden. Wenn Sie die Regeln regelmäßig überprüfen, werden Sie die Punkte erhalten. Wenn dies nicht der Fall ist, wird das Ergebnis reduziert.
 
 ![M365-Homepage](./media/secure-score/secure-score1x450.png) ![M365-Homepage](./media/secure-score/secure-score2x450.png)
 
 *Abbildungen 2 & 3: Verbesserungs Aktions Flyouts*
 
-## <a name="monitor-improvements-over-time"></a>Verbesserungen überwachen
+## <a name="monitor-improvements-over-time"></a>Überwachen von Verbesserungen
 
-Auf der Registerkarte **Verlauf** können Sie einen Graphen des Ergebnisses Ihrer Organisation anzeigen. Diese Ansicht enthält den globalen Durchschnitt, Branchendurchschnitt und ähnliche Anzahl von Arbeitsplätzen sowie alle Aktionen, die im ausgewählten Zeitbereich vorgenommen wurden. Sie können auch einen Datumsbereich anpassen und nach Kategorie filtern.
+Auf der Registerkarte **Verlauf** können Sie ein Diagramm der Bewertung Ihrer Organisation im Laufe der Zeit anzeigen. Diese Ansicht umfasst den globalen Durchschnitt, den Branchendurchschnitt und eine ähnliche Anzahl von Arbeitsplätzen sowie alle Aktionen, die im ausgewählten Zeitbereich durchgeführt wurden. Sie können auch einen Datumsbereich anpassen und nach Kategorie filtern.
 
-Die Bewertung wird einmal pro Tag berechnet (um 1:00 Uhr PST). Wenn Sie eine Änderung an einer gemessenen Aktion vornehmen, wird die Partitur automatisch am nächsten Tag aktualisiert. Beachten Sie, dass in einigen anderen Portalen Teile des Microsoft Secure Score (wie Windows Defender Security Center) angezeigt werden. Wenn Sie eine Verbesserungs Aktion ausführen und die Punktzahl in diesen Portalen erhöht wird, kann es bis zu 24 Stunden dauern, bis die aktualisierte Bewertung im Microsoft 365 Security Center angezeigt wird.  
+Das Ergebnis wird einmal pro Tag berechnet (um 1:00 Uhr PST). Wenn Sie eine Änderung an einer gemessenen Aktion vornehmen, wird das Ergebnis automatisch am nächsten Tag aktualisiert. Es ist auch wichtig zu beachten, dass einige andere Portale Teile der Microsoft Secure Score (wie Windows Defender Security Center) anzeigen. Wenn Sie eine Verbesserungs Aktion durchführen und die Bewertung in diesen Portalen erhöht wird, kann es bis zu 24 Stunden dauern, bis das aktualisierte Ergebnis im Microsoft 365 Security Center angezeigt wird.  
+
+## <a name="how-controls-are-scored"></a>Wie Steuerelemente bewertet werden
+
+Steuerelemente können auf zweierlei Weise bewertet werden. Einige werden in binärer Weise bewertet – Sie erhalten 100% der Bewertung, wenn Sie das Feature oder die Einstellung basierend auf unserer Empfehlung konfiguriert haben. Andere Ergebnisse werden als Prozentsatz der Gesamtkonfiguration berechnet. Wenn die Verbesserungs Empfehlung beispielsweise besagt, dass Sie 30 Punkte erhalten, wenn Sie alle Ihre Benutzer mit MFA schützen und nur 5 von 100 gesamt Benutzern geschützt sind, erhalten Sie eine partielle Punktzahl um 2 Punkte (5 Protected/100 Total * 30 MAX pts = 2 Pkt Partial Score). . 
 
 ## <a name="risk-awareness"></a>Risikobewusstsein
 
-Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitslage basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist kein absolutes Maß dafür, wie wahrscheinlich Ihr System oder Ihre Daten verletzt werden. Vielmehr stellt Sie dar, in welchem Umfang Sie Sicherheitskontrollen in Ihrer Microsoft-Umgebung eingeführt haben, die das Risiko von Verstößen kompensieren können. Kein Onlinedienst ist vollständig gegen Sicherheitsverstöße geschützt, und Secure Score sollte nicht als Garantie gegen Sicherheitsverletzungen interpretiert werden.
+Microsoft Secure Score ist eine numerische Zusammenfassung Ihrer Sicherheitsposition basierend auf Systemkonfigurationen, Benutzerverhalten und anderen sicherheitsbezogenen Messungen. Es ist keine absolute Maßeinheit dafür, wie wahrscheinlich ein System oder Daten verletzt werden. Sie stellt vielmehr das Ausmaß dar, in dem Sie Sicherheitssteuerelemente in Ihrer Microsoft-Umgebung übernommen haben, wodurch das Risiko eines Sicherheits übertretungs ausgeglichen werden kann. Kein Onlinedienst ist vollständig gegen Sicherheitsverletzungen geschützt, und die sichere Bewertung sollte nicht als Garantie gegen Sicherheitsverletzungen in irgendeiner Weise interpretiert werden.
 
 ## <a name="we-want-to-hear-from-you"></a>Wir möchten von Ihnen hören
 
-Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Security, Privacy _AMP_ Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Community veröffentlichen. Wir überwachen die Community und helfen Ihnen.
+Wenn Sie Probleme haben, lassen Sie es uns bitte wissen, indem Sie in der [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Community veröffentlichen. Wir überwachen die Community und helfen Ihnen dabei.
