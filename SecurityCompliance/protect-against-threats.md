@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 05/09/2019
 search.appverid:
 - MOE150
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie diesen Artikel als Leitfaden zum Konfigurieren der Features für den Bedrohungsschutz jetzt.
-ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a9a2baccb4709b3e8d77f620281458d51ed0583a
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157297"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408390"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
@@ -38,9 +38,9 @@ Die Features für den Bedrohungsschutz sind in allen Office 365 Abonnements enth
 |Protection-Typ  |Abonnementanforderung  |
 |---------|---------|
 |Schutz vor Schadsoftware    | [Exchange Online Schutz](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EoP        |
-|Schutz vor bösartigen URLs und Dateien in e-Mail-und Office-Dokumenten    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|Schutz vor bösartigen URLs und Dateien in e-Mail-und Office-Dokumenten    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) ATP       |
 |Antiphishingschutz    | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
-|Erweiterter Schutz gegen Phishing    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|Erweiterter Schutz gegen Phishing    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Antispamschutz     | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
 |Automatische Bereinigung ohne Stunden (für e-Mail)    | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EoP        |
 |Überwachungsprotokollierung (wird für Berichtszwecke verwendet)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
@@ -59,7 +59,7 @@ Weitere Informationen finden Sie unter [Permissions in the Office 365 &amp; Secu
 
 ## <a name="part-1---anti-malware-protection"></a>Part 1 – Schutz vor Schadsoftware
 
-Der [Schutz](anti-malware-protection.md) vor Schadsoftware steht in Abonnements zur Verfügung, die [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EoP) enthalten. 
+Der [Schutz](anti-malware-protection.md) vor Schadsoftware ist in Abonnements, die [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)enthalten, verfügbar. 
 
 1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option **Threat Management** > **Policy** > **Anti-Malware**aus.
 

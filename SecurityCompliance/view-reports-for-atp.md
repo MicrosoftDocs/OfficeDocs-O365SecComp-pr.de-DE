@@ -3,7 +3,7 @@ title: Anzeigen von Berichten für Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 05/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,92 +14,101 @@ search.appverid:
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
-description: Informationen zum Suchen und Verwenden von Berichten für Office 365 Advanced Threat Protection im Security &amp; Compliance Center.
-ms.openlocfilehash: 3525c71f8a627d930afbf94f5f0d12e55f19a0b6
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+description: Hier erfahren Sie, wie Sie Berichte für Office 365 Advanced Threat Protection im Security &amp; Compliance Center finden und verwenden können.
+ms.openlocfilehash: 6bf8c3222b0ce4cecd1b14f407f7e9ee42783a75
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077321"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408400"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Anzeigen von Berichten für Office 365 Advanced Threat Protection
 
-Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) besitzt und Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-the-atp-reports)verfügen, können Sie im Security &amp; Compliance Center mehrere ATP-Berichte verwenden. (Wechseln Sie zum **Dashboard** **Berichte** \> .)
+Wenn Ihre Organisation über [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#what-permissions-are-needed-to-view-the-atp-reports)verfügen, können Sie mehrere ATP-Berichte im &amp; Security Compliance Center verwenden. (Wechseln Sie zum **Dashboard** **Berichte** \> .)
   
-![Mit dem &amp; Security Compliance Center-Dashboard können Sie erkennen, wo Advanced Threat Protection funktioniert.](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Das Security &amp; Compliance Center-Dashboard hilft Ihnen, zu sehen, wo Advanced Threat Protection funktioniert.](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Zu den ATP-Berichten gehören der Bericht über den [Status von Bedrohungsschutz](#threat-protection-status-report), der [Bericht ATP-Dateitypen](#atp-file-types-report)und der Bericht zur Verteilung der ATP-nach [richten](#atp-message-disposition-report). Dieser Artikel beschreibt die ATP-Berichte und enthält Links zu [weiteren Berichten, die Sie anzeigen können](#additional-reports-to-view).
-  
-## <a name="threat-protection-status-report"></a>Status Bericht zum Bedrohungsschutz
+Zu den ATP-Berichten zählen folgende:
+- [Status Bericht über den Bedrohungsschutz](#threat-protection-status-report)
+- [Bericht "ATP-Dateitypen"](#atp-file-types-report)
+- [Bericht zur ATP-Nachrichten Disposition](#atp-message-disposition-report)
+- entweder [Echtzeiterkennung oder Explorer](threat-explorer.md) (je nachdem, ob Sie Office 365 ATP-Plan 1 oder 2 haben)
+- ... [und vieles mehr](#additional-reports-to-view). 
 
-Der **Status** Bericht zu Bedrohungen ist eine einzelne Ansicht, in der Informationen zu böswilligen Inhalten und bösartigen e-Mails zusammengeführt werden, die von [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EoP) und [Office 365 ATP](office-365-atp.md)erkannt und blockiert wurden. Der Bericht bietet eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten (Dateien oder Websiteadressen (URLs)), die vom Antischadsoftware-Modul blockiert wurden, [Zero-Hour Auto Purge (zap)](zero-hour-auto-purge.md)und ATP-Funktionen wie ATP- [sichere Links](atp-safe-links.md), [ATP-Safe ](atp-safe-attachments.md)Und [ATP-Phishing-Funktionen](atp-anti-phishing.md).
+Lesen Sie diesen Artikel, um eine Übersicht über ATP-Berichte und deren Verwendung zu erhalten.
+  
+## <a name="threat-protection-status-report"></a>Status Bericht über den Bedrohungsschutz
+
+Der **Status Bericht "Threat Protection** " ist eine einzelne Ansicht, in der Informationen zu böswilligen Inhalten und böswilligen e-Mails zusammengefasst werden, die durch [Exchange Online Schutz](eop/exchange-online-protection-overview.md) (EoP) und [Office 365 ATP](office-365-atp.md)erkannt und blockiert wurden. Dieser Bericht eignet sich zum Anzeigen von Erkennungen im Laufe der Zeit (bis zu 90 Tage) und ermöglicht es Sicherheitsadministratoren, Trends zu identifizieren oder zu bestimmen, ob Richtlinien angepasst werden müssen. 
+
+Der Status Bericht zum Bedrohungsschutz enthält eine aggregierte Anzahl von eindeutigen e-Mail-Nachrichten mit bösartigen Inhalten wie Dateien oder Websiteadressen (URLs), die von der Antischadsoftware-Engine, der [automatischen Säuberungs-Funktion (zap)](zero-hour-auto-purge.md)und den ATP-Funktionen wie [ATP-sichere Links](atp-safe-links.md), [ATP-sichere Anhänge](atp-safe-attachments.md)und [ATP-Anti-Phishing-Funktionen](atp-anti-phishing.md). 
 
 > [!NOTE]
-> Ein Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Status Bericht zur Gefahrenabwehr für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten als die EoP-Kunden. Beispielsweise enthält der Status Bericht über Bedrohungen für ATP-Kundeninformationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden. Diese Informationen sind spezifisch für ATP, sodass Kunden, die über EoP, jedoch nicht über ATP verfügen, diese Details nicht in Ihrem Status Bericht über den Bedrohungsschutz sehen.
+> Ein Status Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Threat Protection-Status Bericht für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten, als EoP-Kunden möglicherweise sehen. Der Threat Protection-Status Bericht für ATP-Kunden enthält beispielsweise Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden. Solche Informationen gelten nur für ATP, sodass Kunden, die über EoP, aber nicht ATP verfügen, diese Details nicht in Ihrem Threat Protection-Status Bericht sehen.
   
-Zum Anzeigen des Statusberichts zum Bedrohungsschutz wechseln Sie im [Security &amp; Compliance Center](https://protection.office.com)zu **Status des Threat Protection**- **Dashboards** \> für **Berichte** \> .
+Wechseln Sie zum Anzeigen des Statusberichts für den Bedrohungsschutz im [ &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **Threat Protection Status**.
   
-![Status Bericht zum ATP-Bedrohungsschutz](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+![Status Bericht über den ATP-Bedrohungsschutz](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
-Wenn Sie einen detaillierten Status für einen Tag erhalten möchten, bewegen Sie den Mauszeiger über das Diagramm.
+Wenn Sie einen detaillierten Status für einen Tag erhalten möchten, zeigen Sie mit der Maus auf das Diagramm.
   
 ![Status Daten für den ATP-Bedrohungsschutz für einen Tag](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Standardmäßig werden im Bericht über den Status des Bedrohungsschutzes Daten für die letzten sieben Tage angezeigt. Sie können jedoch **Filter** auswählen und den Datums Umfang ändern, um Daten für bis zu 90 Tage anzuzeigen. 
+Standardmäßig zeigt der Status Bericht zum Bedrohungsschutz Daten für die letzten sieben Tage an. Sie können jedoch **Filter** auswählen und den Datumsbereich ändern, um Daten für bis zu 90 Tage anzuzeigen. (Wenn Sie ein Testabonnement verwenden, sind die Daten möglicherweise auf 30 Tage eingeschränkt.)
   
-![Status Filter für ATP-Bedrohungsschutz](media/4f703369-642b-402b-9758-b9c828283410.png)
+![Status Filter für den ATP-Bedrohungsschutz](media/4f703369-642b-402b-9758-b9c828283410.png)
   
-Sie können auch das Menü **Daten anzeigen** , um zu ändern, welche Informationen im Bericht angezeigt werden. 
+Sie können auch das Menü " **Daten anzeigen nach** " verwenden, um zu ändern, welche Informationen im Bericht angezeigt werden. 
   
-![Anzeigeoptionen für den Status Bericht zum ATP-Bedrohungsschutz](media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+![Anzeigen von Optionen für den Status Bericht für den ATP-Bedrohungsschutz](media/4959bf8c-d192-4542-b00b-184e101e7513.png)
   
 ## <a name="atp-file-types-report"></a>Bericht "ATP-Dateitypen"
 
-Der Bericht **ATP-Dateitypen** zeigt Ihnen den Typ der Dateien an, die von [ATP Safe Attachments](atp-safe-attachments.md)als bösartig erkannt wurden.
+Der Bericht " **ATP-Dateitypen** " zeigt Ihnen den Typ der Dateien, die von [ATP-Safe-Anlagen](atp-safe-attachments.md)als bösartig erkannt wurden.
   
-Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> **-Dashboard** \> - **ATP-Dateitypen**.
+Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **ATP-Dateitypen**.
   
 ![Bericht "ATP-Dateitypen"](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Arten von bösartigen Dateien, die durch [ATP Safe Attachments](atp-safe-attachments.md) und [Anti-Spam &amp; Anti-Malware Protection in Office 365](anti-spam-and-anti-malware-protection.md)erkannt wurden.
+Wenn Sie den Mauszeiger über einen bestimmten Tag bewegen, sehen Sie die Aufschlüsselung der Typen von bösartigen Dateien, die durch [ATP-sichere Anlagen](atp-safe-attachments.md) und [Anti &amp; -Spam-Schutz vor Schadsoftware in Office 365](anti-spam-and-anti-malware-protection.md)erkannt wurden.
   
-![ATP-Dateitypen Berichtsdaten für einen Tag](media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+![ATP-Dateitypen-Berichtsdaten für einen Tag](media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
   
 ## <a name="atp-message-disposition-report"></a>Bericht zur ATP-Nachrichten Disposition
 
-Der Bericht zur Bereitstellung von ATP-Nachrichten zeigt Ihnen die Aktionen an, die für e-Mail- **Nachricht** ausgeführt wurden, die als bösartige Inhalte erkannt wurden. 
+Der Bericht " **ATP-Nachrichten Disposition** " zeigt die Aktionen an, die für e-Mail-Nachrichten durchgeführt wurden, die als schädliche Inhalte erkannt wurden. 
   
-Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> **-Dashboard** \> **ATP Message Disposition**.
+Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> **-Dashboard** \> **ATP-Nachrichten Disposition**.
   
 ![Bericht zur ATP-Nachrichten Disposition](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
-Wenn Sie auf einen Balken im Diagramm zeigen, können Sie sehen, welche Aktionen für erkannte e-Mails für diesen Tag ausgeführt wurden.
+Wenn Sie mit dem Mauszeiger auf einen Balken im Diagramm zeigen, können Sie sehen, welche Aktionen für erkannte e-Mails an diesem Tag ausgeführt wurden.
   
-![ATP-Nachrichten Disposition-Berichtsdaten für einen Tag](media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![ATP-Nachrichten Dispositions-Berichtsdaten für einen Tag](media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
   
-## <a name="additional-reports-to-view"></a>Zusätzliche Berichte zum Anzeigen
+## <a name="additional-reports-to-view"></a>Zusätzliche Berichte zur Anzeige
 
-Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen mehrere weitere Berichte zur Verfügung, wie in der folgenden Tabelle beschrieben:
+Zusätzlich zu den in diesem Artikel beschriebenen ATP-Berichten stehen verschiedene andere Berichte zur Verfügung, wie in der folgenden Tabelle beschrieben:
 
 |Bericht (e)  |Details  |
 |---------|---------|
-|**URL-Ablaufverfolgung für ATP-sichere Links** (Dies ist ein Bericht, den Sie mithilfe von PowerShell generieren.) Dieser Bericht zeigt die Ergebnisse der ATP-Aktionen für sichere Links in den letzten sieben (7) Tagen. |[Get-UrlTrace-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
-|**E-Mail-Sicherheitsberichte**, wie beispielsweise ein Bericht über Top-Absender und-Empfänger, ein spoof-e-Mail-Bericht und ein Spam Erkennungs Bericht. | [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md)        |
-|**Explorer** (auch als Bedrohungs-Explorer bezeichnet, ist dies in [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)enthalten)     | [Verwenden des Explorers im Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)        |
-|**EoP und ATP-Ergebnisse** (Hierbei handelt es sich um einen benutzerdefinierten Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Informationen wie Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.  | [Get-MailTrafficATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
-|**EoP und ATP-Ermittlungen** (Hierbei handelt es sich um einen benutzerdefinierten Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Details zu schädlichen Dateien oder URLs, Phishing-versuchen, Identitätswechsel und anderen potenziellen Bedrohungen in e-Mails oder Dateien.   | [Get-MailDetailATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+|**Explorer** oder **Echtzeiterkennung** (Office 365 ATP-Plan 2-Kunden haben Explorer; Office 365 ATP-Plan 1 haben Kunden Echt Zeit Erkennungen.)| [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md)       |
+|**E-Mail-Sicherheitsberichte**wie ein Bericht über die wichtigsten Absender und Empfänger, ein spoof-e-Mail-Bericht und ein Spam Erkennungs Bericht. | [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](view-email-security-reports.md)        |
+|**URL-Ablaufverfolgung für ATP-sichere Links** (Dies ist ein Bericht, den Sie mithilfe von PowerShell generieren.) In diesem Bericht werden die Ergebnisse der Aktionen für ATP-sichere Links in den letzten sieben (7) Tagen dargestellt. |[Get-UrlTrace-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
+|**EoP und ATP-Ergebnisse** (Dies ist ein benutzerdefinierter Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Informationen wie Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.  | [Get-MailTrafficATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
+|**EoP und ATP-Erkennungen** (Dies ist ein benutzerdefinierter Bericht, den Sie mithilfe von PowerShell generieren). Dieser Bericht enthält Details zu bösartigen Dateien oder URLs, Phishing-versuchen, Identitätswechsel und anderen potenziellen Bedrohungen in e-Mails oder Dateien.   | [Get-MailDetailATPReport-Cmdlet-Referenz](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
 
   
-## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Welche Berechtigungen sind erforderlich, um die ATP-Berichte anzuzeigen?
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Welche Berechtigungen sind zum Anzeigen der ATP-Berichte erforderlich?
 
-Um die in diesem Artikel beschriebenen Berichte anzuzeigen und zu verwenden, **müssen Sie eine entsprechende Rolle sowohl für das Security &amp; Compliance Center als auch für das Exchange Admin Center zugewiesen haben**.
+Damit Sie die in diesem Artikel beschriebenen Berichte anzeigen und verwenden können, **muss Ihnen eine entsprechende Rolle sowohl für das Security &amp; Compliance Center als auch für das Exchange Admin Center zugewiesen sein**.
 
-- Für das Security &amp; Compliance Center muss eine der folgenden Rollen zugewiesen sein:
+- Für das Security &amp; Compliance Center müssen Sie eine der folgenden Rollen zugewiesen haben:
     - Organisationsverwaltung
-    - Sicherheits Administrator (kann im Azure Active Directory Admin Center[https://aad.portal.azure.com](https://aad.portal.azure.com)zugewiesen werden)
+    - Sicherheits Administrator (Dies kann im Azure Active Directory Admin Center zugewiesen werden ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
     - Sicherheits Leser
 
-- Für Exchange Online müssen Sie über eine der folgenden Rollen verfügen, die entweder in der Exchange-Verwaltungskonsole[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)() oder mit PowerShell-Cmdlets zugewiesen sind (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- Für Exchange Online müssen Sie eine der folgenden Rollen entweder in der Exchange-Verwaltungskonsole ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) oder mit PowerShell-Cmdlets zugewiesen haben (siehe [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Organisationsverwaltung
     - Organisationsverwaltung mit Leserechten
     - Rolle „Empfänger mit Leserechten“
@@ -113,7 +122,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was geschieht, wenn die Berichte keine Daten anzeigen?
 
-Wenn in ihren ATP-Berichten keine Daten angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. Ihre Organisation muss über [ATP Safe Links Policies](set-up-atp-safe-links-policies.md) und [ATP Safe Attachments-Richtlinien](set-up-atp-safe-attachments-policies.md) verfügen, die für den ATP-Schutz definiert sind. Weitere Informationen finden Sie unter [Anti-Spam and Anti-Malware Protection in Office 365](anti-spam-and-anti-malware-protection.md).
+Wenn Sie keine Daten in ihren ATP-Berichten sehen, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. In Ihrer Organisation müssen Richtlinien für [ATP-sichere Links](set-up-atp-safe-links-policies.md) und [ATP-Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md) definiert sein, damit ATP-Schutz vorhanden ist. Weitere Informationen finden Sie unter [Anti-Spam and Anti-Malware Protection in Office 365](anti-spam-and-anti-malware-protection.md).
   
 ## <a name="related-topics"></a>Verwandte Themen
 

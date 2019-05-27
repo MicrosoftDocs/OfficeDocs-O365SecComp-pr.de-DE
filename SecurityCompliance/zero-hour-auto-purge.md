@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: Zero-Hour Auto Purge (zap) ist eine e-Mail-Schutzfunktion, die Nachrichten mit Spam oder Schadsoftware erkennt, die bereits an die Posteingänge Ihrer Benutzer übermittelt wurden, und dann den schädlichen Inhalt harmlos macht. Wie zap Dies bewirkt, hängt vom Typ der erkannten schädlichen Inhalte ab.
-ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155957"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408350"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware
 
@@ -64,7 +64,7 @@ Zulassungslisten, [Nachrichtenfluss Regeln](https://go.microsoft.com/fwlink/p/?L
 
 ## <a name="to-see-if-zap-moved-your-message"></a>So prüfen Sie, ob zap Ihre Nachricht verschoben hat
 
-Wenn Sie sehen möchten, ob zap Ihre Nachricht verschoben hat, können Sie entweder den [Threat Protection-Status Bericht](view-email-security-reports.md#threat-protection-status-report) (oder den [Threat Explorer](use-explorer-in-security-and-compliance.md)) verwenden.
+Wenn Sie sehen möchten, ob zap Ihre Nachricht verschoben hat, können Sie entweder den [Threat Protection-Status Bericht](view-email-security-reports.md#threat-protection-status-report) oder den [Threat-Explorer (und Echt Zeit Erkennungen)](threat-explorer.md)verwenden.
 
 ## <a name="to-disable-zap"></a>So deaktivieren Sie zap
   

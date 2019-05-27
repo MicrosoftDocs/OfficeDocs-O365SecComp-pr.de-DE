@@ -1,5 +1,5 @@
 ---
-title: Sicherstellen der Sicherheit Ihrer Office 365-Benutzer mit Office 365 Threat Investigation and Response Capabilities
+title: Schützen der Office 365 Benutzer mit Office 365 Untersuchung und Reaktionsfähigkeit von Bedrohungen
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,60 +14,60 @@ search.appverid:
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
-description: In diesem Artikel erfahren Sie, wie Sie mithilfe von Office 365 Bedrohungs Ermittlungs-und-Reaktionsfunktionen Ihre Organisation Eindringlinge und Bedrohungen erkennen und schnell die Bedrohungen verringern und wiederherstellen können.
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+description: Erfahren Sie, wie Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen Ihrer Organisation dabei helfen können, Eindringlinge und Bedrohungen zu erkennen und Bedrohungen schnell zu verringern und wiederherzustellen.
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077261"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408280"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Sicherstellen der Sicherheit Ihrer Office 365-Benutzer mit Office 365 Threat Investigation and Response Capabilities
+# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Schützen der Office 365 Benutzer mit Office 365 Untersuchung und Reaktionsfähigkeit von Bedrohungen
 
 ## <a name="overview"></a>Übersicht
 
-Wissen Sie, welche Ihrer Office 365-Benutzer angegriffen oder verschlechtert werden? Wissen Sie, wie Sie Angriffe, die für Ihre Benutzer geeignet sind, verringern und wiederherstellen können? Wussten Sie, dass Sie genau dies mit Sicherheitsfunktionen tun können, die Ihnen in Office 365 bereits zur Verfügung stehen? 
+Wissen Sie, welche Ihrer Office 365 Benutzer angegriffen oder schlechter gefährdet sind? Wissen Sie, wie Sie Angriffe, die Ihre Benutzer abzielen, abschwächen und wiederherstellen können? Wussten Sie, dass Sie mit den Sicherheitsfunktionen, die Ihnen bereits in Office 365 zur Verfügung stehen, genau dies tun können? 
   
-[Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Reihe von Funktionen, die in Ihrem Office 365 E5-Abonnement enthalten sind (als Teil von Office 365 Advanced Threat Protection Plan 2). Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben dazu beigetragen, dass Microsoft IT die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen gesenkt hat. 
+[Office 365 Threat Investigation and Response](office-365-ti.md) ist eine Sammlung von Funktionen, die in Ihrem Office 365 E5-Abonnement enthalten sind (im Rahmen von Office 365 Advanced Threat Protection Plan 2). Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen haben Microsoft dabei geholfen, die durchschnittliche Zeit bis zur Lösung von Social Engineering-Vorfällen um 80% zu reduzieren und den Fall Durchsatz um 37% pro Monat im Vergleich zu den vorherigen 2 Quartalen zu erhöhen! 
 
 > [!IMPORTANT]
-> Threat Investigation and Response Capabilities (früher bekannt als Office 365 Threat Intelligence) sind jetzt ein Teil von Office 365 Advanced Threat Protection Plan 2, zusammen mit zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und Preise](https://products.office.com/exchange/advance-threat-protection) und die [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Die Funktionen für die Ermittlung und Reaktion auf Bedrohungen (früher als Office 365 Threat Intelligence bezeichnet) sind nun Bestandteil von Office 365 Advanced Threat Protection Plan 2 und zusätzlichen Funktionen zum Schutz vor Bedrohungen. Weitere Informationen finden Sie unter [Office 365 Advanced Threat Protection-Pläne und-Preise](https://products.office.com/exchange/advance-threat-protection) und der [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
-Wir haben vor kurzem neue Funktionen hinzugefügt, um zu verbessern, wie Sie Bedrohungen aufspüren und wiederherstellen können. Hier finden Sie einen kurzen Überblick darüber, wie Sie mit den aktualisierten Funktionen zur Bedrohungsanalyse und-Antwort noch effizienter arbeiten können.
+Wir haben vor kurzem neue Funktionen hinzugefügt, um zu verbessern, wie Sie Bedrohungen erkennen und wiederherstellen können! Hier finden Sie einen kurzen Überblick darüber, wie Sie mit den aktualisierten Funktionen für die Untersuchung und Reaktion auf Bedrohungen eine noch effizientere Leistung ermöglichen.
   
-## <a name="detect-intrusions-and-threats"></a>Erkennung von Intrusionen und Bedrohungen
+## <a name="detect-intrusions-and-threats"></a>Erkennen von Eindringversuchen und Bedrohungen
 
-[Explorer](use-explorer-in-security-and-compliance.md) (auch als Bedrohungs-Explorer bezeichnet) unterstützt Sicherheitsadministratoren und Analysten bei der Identifizierung und dem Verständnis von Bedrohungen, die in Ihrem Unternehmen aktiv sind, da selbst die komplexesten Sicherheitseinstellungen durch scheinbar harmlose Benutzerkonfigurationen wie Safe umgangen werden können. Absender-Whitelists. Explorer hilft Office 365 globale oder Sicherheitsadministratoren schnell festzustellen, ob Benutzer durch Bedrohungen wie Schadsoftware oder Phishing kompromittiert wurden. Dies hilft bei der Priorisierung der Benutzer, die am stärksten gefährdet sind, und der erforderlichen Antwort. 
+[Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md) (auch als Threat Explorer bezeichnet) unterstützt Sicherheitsadministratoren und Analysten beim identifizieren und verstehen von Bedrohungen, die in Ihrem Unternehmen aktiv sind, da selbst die komplexesten Sicherheitseinstellungen durch scheinbar harmlose Benutzerkonfigurationen wie Safe umgangen werden können. Absender-Whitelists. Der Explorer hilft Office 365 globalen oder Sicherheitsadministratoren, schnell festzustellen, ob Benutzer durch Bedrohungen wie Schadsoftware oder Phishing kompromittiert wurden. Dies hilft bei der Priorisierung der am meisten gefährdeten Benutzer für eine Bedrohung und der erforderlichen Antwort. 
   
-Der Explorer unterstützt auch Administratoren beim Navigieren in den Beziehungen zwischen Benutzern und e-Mails. Kennen Sie eine bestimmte e-Mail, die schlecht war? Suchen Sie nach der Nachricht, um zu sehen, welche Benutzer die e-Mail erhalten haben, und folgen Sie dann den Ereignisserien, und sehen Sie, was diese Benutzer wiederum getan haben.
+Der Explorer hilft auch Administratoren beim Navigieren in den Beziehungen zwischen Benutzern und e-Mails. Kennen Sie eine bestimmte e-Mail-Nachricht, die schlecht war? Suchen Sie danach, um zu sehen, welche Benutzer die e-Mail erhalten haben, und verfolgen Sie dann die Reihe von Ereignissen, und sehen Sie, was diese Benutzer wiederum getan haben.
 
-Wenn Sie diese capabilties nicht bereits haben, [probieren Sie es](https://aka.ms/tryo365threatintel3)aus! Und [erfahren Sie mehr über die Untersuchung und Reaktion von Bedrohungen durch Office 365](https://aka.ms/readmoreabouto365threatintel).
+Wenn Sie noch nicht über diese capabilties verfügen, [versuchen Sie es jetzt](https://aka.ms/tryo365threatintel3)! Und [erfahren Sie mehr über Office 365 Bedrohungs Ermittlung und-Antwort](https://aka.ms/readmoreabouto365threatintel).
   
-![Screenshot von Threat Explorer in Office 365, farbig codiert nach Schadsoftware-Familie](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
+![Screenshot des Threat-Explorers in Office 365, farblich codiert von der Malware-Familie](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
   
 ## <a name="quickly-mitigate-and-recover-from-threats"></a>Schnelles verringern und Wiederherstellen von Bedrohungen
 
-Sobald Sicherheitsadministratoren etwas verdächtiges oder böswilliges in Ihrem Mandanten erkannt haben, können Sie diese Bedrohung schnell mit dem **Vorfall Framework**enthalten und darauf reagieren. Gruppieren Sie unerwünschte Nachrichten mit einem Mausklick, und entfernen Sie die e-Mail-Nachrichten schnell aus den Postfächern Ihrer Benutzer. 
+Sobald Sicherheitsadministratoren verdächtige oder böswillige Ereignisse in Ihrem Mandanten identifiziert haben, können Sie diese Bedrohung schnell mit dem **Vorfall Framework**eindämmen und darauf reagieren. Gruppieren Sie unerwünschte Nachrichten mit einem Mausklick, und entfernen Sie schnell die e-Mail-Nachrichten aus den Postfächern Ihres Benutzers. 
   
- **Update:** Wir haben die Möglichkeit hinzugefügt, e-Mail-Nachrichten direkt aus dem Vorfall Framework zu löschen. Zuvor konnten Administratoren nur e-Mails in den Junk-Ordner eines Benutzers verschieben, in dem die Benutzer das Element wiederherstellen konnten. Mit den neu veröffentlichten Löschfunktionen können Sie nun sicher sein, dass eine böswillige oder unerwünschte e-Mail dauerhaft entfernt wird. 
+ **Update:** Wir haben die Möglichkeit hinzugefügt, e-Mails direkt aus dem Vorfall Framework zu löschen (Soft-oder Hard Delete). Zuvor konnten Administratoren nur e-Mails in den Junk-Ordner eines Benutzers migrieren, in dem Benutzer das Element wiederherstellen konnten. Mit den neu veröffentlichten Löschfunktionen können Sie nun sicherstellen, dass eine böswillige oder unerwünschte e-Mail-Nachricht dauerhaft entfernt wird. 
   
-Wenn Sie diese Funktionen noch nicht haben, [probieren Sie es](https://aka.ms/tryo365threatintel3)aus! Und [erfahren Sie mehr über die Funktionen zur Bedrohungsanalyse und-Reaktion in Office 365](https://aka.ms/readmoreabouto365threatintel).
+Wenn Sie noch nicht über diese Funktionen verfügen, [versuchen Sie es jetzt](https://aka.ms/tryo365threatintel3)! Und [erfahren Sie mehr über Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen](https://aka.ms/readmoreabouto365threatintel).
   
-![Screenshot der e-Mail-Liste der Vorfall Sanierung](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
+![Screenshot der e-Mail-Liste der Vorfall Korrektur](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Nutzen der Bedrohungs-Telemetrie von Microsoft
 
-Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen werden mit Daten aus dem Microsoft Intelligent Security-Diagramm versorgt. Der Graph erhält das neueste Bedrohungs Signal von über 1 Milliarde Windows-Geräten, 450 Milliarden monatlichen Azure-Anmeldungen und 400 Milliarden monatlichen e-Mail-Nachrichten in Office 365. Dieses unübertroffene Bedrohungs Signal gibt der umfassenden Sichtbarkeit eines Kundenmandanten, der für Administratoren und Sicherheitsanalysten entscheidend ist, eine umfassende Übersicht über die Bedrohungen, die sich auf Ihre Organisation auswirken. 
+Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen werden mit Daten aus dem Microsoft Intelligent Security Graph versorgt. Das Diagramm erhält das neueste Bedrohungs Signal von über 1 Milliarde Windows-Geräten, 450 Milliarden monatlichen Azure-Anmeldungen und 400 Milliarden monatlichen e-Mail-Nachrichten in Office 365. Dieses unübertroffene Bedrohungs Signal bietet einen umfassenden Einblick in einen Kundenmandanten, der für Administratoren und Sicherheitsanalysten entscheidend ist, um eine umfassende Übersicht über die Bedrohungen zu erhalten, die sich auf Ihre Organisation auswirken. 
   
    
-## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Gründe für die Verwendung von Bedrohungs Ermittlungs-und-Reaktionsfunktionen in Office 365
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Gründe für die Verwendung Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen
 
-Gartner schätzt, dass in 2017 allein mehr als $90B für Cyber verwendet wurde. Sid Deshpande, Principal Research Analyst bei Gartner, wird mit den Worten zitiert, dass "die Branche den Wechsel zu Erkennung und Antwort... sendet eine klare Meldung, dass die Prävention vergeblich ist, es sei denn, Sie ist an eine Erkennungs-und Reaktionsfunktion gebunden. " Die Bedrohungs investigtion und-Antwort ist ein wichtiger Bestandteil des Portfolios der Dienste jedes Unternehmens und kann als eigenständiger Dienst oder als Teil von Office 365 E5 genutzt werden.
+Gartner schätzt, dass in 2017 allein über $90B für Cyber ausgegeben wurde. Sid Deshpande, Principal Research Analyst bei Gartner, wird mit den Worten zitiert, dass "die Branchen Verlagerung zu Erkennung und Antwort... sendet eine klare Meldung, dass eine Verhinderung vergeblich ist, es sei denn, Sie ist an eine Erkennungs-und Antwortfunktion gebunden. " Threat investigtion und Response sind ein wichtiger Bestandteil des Dienstleistungsportfolios jedes Unternehmens und können als eigenständiger Dienst oder als Teil von Office 365 E5 verwendet werden.
   
 ## <a name="whats-next"></a>Was kommt als nächstes
 
-- Weitere Informationen zu Office 365 Threat Investigation and Response Capabilities in this recorded session: [stay Ahead of the Cyberattacken with Office 365](https://myignite.microsoft.com/videos/53723)
+- In dieser aufgezeichneten Sitzung erfahren Sie mehr über Office 365 Threat-Ermittlungs-und-Antwortfunktionen: [bleiben Sie vor dem Cyberangriffe mit Office 365](https://myignite.microsoft.com/videos/53723)
     
-- [Testen Sie die Funktionen der Bedrohungsanalyse und-Antwort von Office 365 jetzt](https://aka.ms/tryo365threatintel3) , oder starten Sie Ihren Office E5-Test noch heute! 
+- [Testen Sie jetzt Office 365 Threat-Ermittlungs-und-Antwortfunktionen](https://aka.ms/tryo365threatintel3) , oder beginnen Sie Ihre Office E5-Testversion noch heute! 
     
 

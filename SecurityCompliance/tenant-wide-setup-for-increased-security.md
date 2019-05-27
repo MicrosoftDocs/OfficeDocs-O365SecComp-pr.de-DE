@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Führt Sie durch die empfohlene Konfiguration für Mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Office 365 Umgebung auswirken. Ihre Sicherheitsanforderungen erfordern möglicherweise mehr oder weniger Sicherheit. Verwenden Sie diese Empfehlungen als Ausgangspunkt.
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158257"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408250"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit
 
@@ -53,9 +53,9 @@ Besuchen Sie diese Berichte und Dashboards, um mehr über die Integrität Ihrer 
   
 |Dashboard * * * *|****Beschreibung****|
 |:-----|:-----|
-|Threat Management-Dashboard  <br/> |Verwenden Sie im Abschnitt "Threat Management" des Sicherheitscenters dieses Dashboard, um Bedrohungen zu sehen, die bereits behandelt wurden, und als ein handliches Tool für die Berichterstellung an Entscheidungsträger in Unternehmen, welche Funktionen zur Untersuchung und Reaktion auf Bedrohungen bereits ausgeführt wurden. Sichern Sie Ihr Unternehmen.  <br/> |
-|Bedrohungs-Explorer  <br/> |Dies befindet sich auch im Abschnitt "Threat Management" des Sicherheitscenters. Wenn Sie einen Angriff auf Ihren Office 365 Mandanten untersuchen oder auftreten, können Sie Bedrohungen mithilfe des Threat-Explorers analysieren. Threat Explorer zeigt Ihnen die Anzahl der Angriffe im Laufe der Zeit an, und Sie können diese Daten nach Bedrohungs Familien, Angreifer-Infrastruktur und vielem mehr analysieren. Sie können auch verdächtige e-Mails für die Liste der Vorfälle markieren.  <br/> |
-|Berichte – Dashboard  <br/> |Zeigen Sie im Sicherheitscenter im Abschnitt Berichte die Überwachungsberichte für Ihre SharePoint Online und Exchange Online Organisationen an. Sie können auf der Seite Berichte anzeigen auch auf Azure Active Directory (Azure AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD Überwachungsprotokoll zugreifen.  <br/> |
+|[Threat Management-Dashboard](security-dashboard.md)  <br/> |Verwenden Sie im Abschnitt " **Threat Management** " des Sicherheitscenters dieses Dashboard, um Bedrohungen zu sehen, die bereits behandelt wurden, und als ein handliches Tool für die Berichterstellung an Entscheidungsträger in Unternehmen darüber, welche Gefahren Ermittlungs-und Antwortfunktionen bereits vorhanden sind. durchgeführt, um Ihr Unternehmen zu sichern.  <br/> |
+|[Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md)  <br/> |Dies befindet sich auch im Abschnitt " **Threat Management** " des Sicherheitscenters. Wenn Sie einen Angriff auf Ihren Office 365 Mandanten untersuchen oder auftreten, verwenden Sie Explorer (oder Echtzeiterkennung), um Bedrohungen zu analysieren. Explorer (und der Bericht über Echt Zeit Erkennungen) zeigt die Anzahl der Angriffe im Laufe der Zeit an, und Sie können diese Daten nach Bedrohungs Familien, Angreifer-Infrastruktur und vielem mehr analysieren. Sie können auch verdächtige e-Mails für die Liste der Vorfälle markieren.  <br/> |
+|Berichte – Dashboard  <br/> |Zeigen Sie im Sicherheitscenter im Abschnitt **Berichte** die Überwachungsberichte für Ihre SharePoint Online und Exchange Online Organisationen an. Sie können auf der Seite **Berichte anzeigen** auch auf Azure Active Directory (Azure AD)-Benutzeranmelde Berichte, Benutzer Aktivitätsberichte und das Azure AD Überwachungsprotokoll zugreifen.  <br/> |
    
 ![Sicherheitscenter-Dashboard](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   
