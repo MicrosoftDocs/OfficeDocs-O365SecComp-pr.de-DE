@@ -100,7 +100,7 @@
 #### [Schützen Sie Benutzer durch die Untersuchung von und Antwort auf Bedrohungen](keep-users-safe-with-office-365-ti.md)
 #### [Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden](investigate-malicious-email-that-was-delivered.md)
 ### [Automatische Untersuchung und Reaktion](automated-investigation-response-office.md)
-### [Sicherheitsrisiken-Explorer](use-explorer-in-security-and-compliance.md)
+### [Sicherheitsrisiken-Explorer und Echtzeit-Erkennung](threat-explorer.md)
 #### [Ansichten des Sicherheitsrisiken-Explorers](threat-explorer-views.md)
 ### [Nachverfolgungslisten für Bedrohungen](threat-trackers.md)
 ### [Angriffssimulator in Office 365](attack-simulator.md)
@@ -164,6 +164,7 @@
 ## [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
 # Datensatzverwaltung
+## [Datensatzverwaltung](records-management.md)
 ## Dateiplan
 ### [Dateiplan-Manager](file-plan-manager.md)
 ### [Aufbewahrungsbezeichnungen](labels.md)
