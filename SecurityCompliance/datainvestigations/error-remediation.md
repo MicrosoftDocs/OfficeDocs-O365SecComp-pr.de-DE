@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150857"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547950"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Fehlerkorrektur beim Verarbeiten von Daten für eine Untersuchung
 
@@ -40,7 +40,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
     ![Fehlerbehebung](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    Die Fehlerbehebungssitzung beginnt mit einer Vorbereitungsphase, in der die fehlerhafte Datei an einen sicheren Azure-Speicherort verschoben wird, um heruntergeladen zu werden.
+    Die Fehlerbehebungssitzung beginnt mit einer Vorbereitungsphase, in der die Dateien mit Fehlern an einen sicheren Azure-Speicherort kopiert werden, damit Sie heruntergeladen werden können.
 
     ![Vorbereiten der Fehlerbehebung](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,17 +63,18 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
     ![Vorbereiten der Fehlerbehebung](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Wenn Sie Probleme mit dem Ausführen dieses Befehls haben https://go.microsoft.com/fwlink/?linkid=2038117 , finden Sie weitere Informationen unter Tipps zur Problembehandlung.
+     > Wenn beim Ausführen dieses Befehls Probleme auftreten, lesen Sie [Troubleshooting AzCopy in Advanced eDiscovery](../compliance20/troubleshooting-azcopy.md).
 
 7. Nachdem Sie die Dateien heruntergeladen haben, können Sie Sie mit einem geeigneten Tool korrigieren. Für kennwortgeschützte Dateien gibt es eine Reihe von Kenn Wort Knack Tools, die Sie verwenden können. Wenn Sie die Kennwörter für die Dateien kennen, können Sie Sie öffnen und den Kennwortschutz entfernen.
-    > [!NOTE]
+    
+   > [!NOTE]
     > Es ist wichtig, dass Sie die Verzeichnisstruktur und die Dateinamen der korrigierten Dateien in Takt halten.  Alle in den heruntergeladenen Dateien und Ordnern verwendeten Benennungskonventionen ermöglichen es, die remdiated-Dateien wieder dem Original zuzuordnen.
 
 8. Kehren Sie nun zu Daten Untersuchungen (Vorschau) zurück, und klicken Sie auf **Weiter: Dateien hochladen**.  Dadurch gelangen Sie zum nächsten Schritt, in dem Sie die Dateien jetzt hochladen können.
 
     ![Hochladen von Dateien](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Gibt den Speicherort der Dateien im Textfeld **Pfad zum Speicherort der Dateien** an, und klicken Sie dann auf **in clibpboard kopieren**.
+9. Geben Sie den Speicherort der korrigierten Dateien in das Textfeld **Pfad zum Speicherort der Dateien** ein, und klicken Sie dann auf **in Zwischenablage kopieren**.
 
 10. Fügen Sie den Befehl in eine Windows-Eingabeaufforderung ein, und drücken **Sie die EINGABETASTE** , um die Dateien hochzuladen.
 
@@ -87,12 +88,9 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in Daten Ermittlung
 
 Bei hochzuladenden Dateien werden die ursprünglichen Metadaten mit Ausnahme der folgenden Felder beibehalten: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - Lade-Nr
 - ProcessingErrorMessage
 - ProcessingStatus

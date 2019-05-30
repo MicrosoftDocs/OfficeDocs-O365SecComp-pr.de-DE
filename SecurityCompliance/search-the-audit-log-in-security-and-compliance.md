@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
-ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158787"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490491"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -115,7 +115,6 @@ Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Suche im Office 36
     |eDiscovery  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Forms  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -405,7 +404,7 @@ In der folgenden Tabelle werden die Datei Synchronisierungsaktivitäten in Share
 |Heruntergeladene Dateien auf Computer  <br/> |FileSyncDownloadedFull  <br/> |Benutzer richtet eine Synchronisierungsbeziehung ein und downloadet erfolgreich Dateien erstmalig auf Ihren Computer aus einer Dokumentbibliothek.  <br/> |
 |Heruntergeladene Dateiänderungen auf Computer  <br/> |FileSyncDownloadedPartial  <br/> |Benutzer lädt erfolgreich alle Änderungen an Dateien aus einer Dokumentbibliothek herunter. Diese Aktivität gibt an, dass alle Änderungen, die an Dateien in der Dokumentbibliothek vorgenommen wurden, auf den Computer des Benutzers heruntergeladen wurden. Nur Änderungen wurden heruntergeladen, da die Dokumentbibliothek zuvor vom Benutzer heruntergeladen wurde (wie von den **heruntergeladenen Dateien in die Computer** Aktivität angezeigt).  <br/> |
 |Hochgeladene Dateien in die Dokumentbibliothek  <br/> |FileSyncUploadedFull  <br/> |Der Benutzer richtet eine Synchronisierungsbeziehung ein und lädt die Dateien zum ersten Mal erfolgreich von Ihrem Computer in eine Dokumentbibliothek hoch.  <br/> |
-|Hochgeladene Dateiänderungen an Dokumentbibliothek  <br/> |FileSyncUploadedPartial  <br/> |Der Benutzer lädt erfolgreich Änderungen an Dateien in einer Dokumentbibliothek hoch. Dieses Ereignis gibt an, dass alle Änderungen, die an der lokalen Version einer Datei aus einer Dokumentbibliothek vorgenommen wurden, erfolgreich in die Dokumentbibliothek geladen werden. Nur Änderungen werden entladen, da diese Dateien zuvor vom Benutzer hochgeladen wurden (wie von den * * hochgeladenen Dateien in die Dokumentbibliothek * *-Aktivität angezeigt).  <br/> |
+|Hochgeladene Dateiänderungen an Dokumentbibliothek  <br/> |FileSyncUploadedPartial  <br/> |Der Benutzer lädt erfolgreich Änderungen an Dateien in einer Dokumentbibliothek hoch. Dieses Ereignis gibt an, dass alle Änderungen, die an der lokalen Version einer Datei aus einer Dokumentbibliothek vorgenommen wurden, erfolgreich in die Dokumentbibliothek geladen werden. Nur Änderungen werden hochgeladen, da diese Dateien zuvor vom Benutzer hochgeladen wurden (wie von den **hochgeladenen Dateien in die Dokument Bibliotheks** Aktivität angezeigt).  <br/> |
 ||||
   
 ### <a name="site-administration-activities"></a>Website Verwaltungsaktivitäten

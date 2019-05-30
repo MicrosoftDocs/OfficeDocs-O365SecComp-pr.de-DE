@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector einrichten, um Twitter-Daten in Office 365 zu importieren. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155617"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490501"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Twitter-Daten in Office 365 (Vorschau)
 
@@ -101,10 +101,10 @@ Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 5: Erstellen der T
 
 Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Die Werte für diese werden verwendet, um die Twitter Connector-app in Schritt 6 zu konfigurieren.
 
-- Twitter-Anwendungs-ID
-- Twitter Application Secret (API-geheimer Schlüssel)
-- Twitter-Clienttoken
-- Geheimer Twitter-Client-Token
+- Twitter-API-Schlüssel
+- Geheimer Twitter-API-Schlüssel
+- Twitter-Zugriffs Token
+- Twitter-Zugriffs Token Secret
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>Schritt 6: Konfigurieren der Twitter Connector-App
 
@@ -114,10 +114,10 @@ Eine Schritt-für-Schritt-Anleitung finden Sie unter [Schritt 6: Konfigurieren d
 
 Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anweisungen befolgen) geben Sie die folgenden Informationen an (die Sie nach Abschluss der vorherigen Schritte in eine Textdatei kopiert haben):
 
-- Twitter Application ID (abgerufen in Schritt 5)
-- Geheimer Twitter-Anwendungsschlüssel (in Schritt 5 abgerufen)
-- Twitter-Clienttoken (in Schritt 5 abgerufen)
-- Geheimer Twitter-Client-Tokenschlüssel (in Schritt 5 abgerufen)
+- Twitter-API-Schlüssel (in Schritt 5 abgerufen)
+- Geheimer Twitter-API-Schlüssel (in Schritt 5 erhalten)
+- Twitter-Zugriffs Token (in Schritt 5 abgerufen)
+- Twitter-Zugriffs Token Secret (in Schritt 5 erhalten)
 - Azure Active Directory Application ID (die Aad-Anwendungs-ID, die in Schritt 2 abgerufen wurde)
 - Azure Active Directory Application Secret (der in Schritt 2 abgerufene Aad-Anwendungsschlüssel)
 - Azure Active Directory Application URI (der in Schritt 2 abgerufene Aad-Anwendungs-URI, beispielsweisehttps://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)

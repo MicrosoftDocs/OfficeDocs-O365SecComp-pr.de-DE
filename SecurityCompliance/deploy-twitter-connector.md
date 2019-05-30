@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Twitter-Daten in Office 365 einrichten. Nachdem diese Daten in Office 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Twitter-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150537"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490545"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Bereitstellen eines Connectors zum Archivieren von Twitter-Daten in Office 365
 
@@ -193,10 +193,10 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 4. Geben Sie unter **Konfigurations Details**die folgenden Konfigurationseinstellungen ein: 
 
-   - **Twitter Application ID** – die APP-ID für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
-   - **Twitter Application Secret** -der geheime API-Schlüssel für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
-   - **Twitter-Clienttoken** : das Zugriffstoken, das Sie in Schritt 5 erstellt haben.
-   - **Geheimer Twitter-Client-Token** -der geheime Zugriffstoken-Schlüssel, den Sie in Schritt 5 erstellt haben.
+   - **Twitter API Key** – die APP-ID für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
+   - **Twitter-API** -geheimer Schlüssel-der geheime API-Schlüssel für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
+   - **Twitter-Zugriffstoken** : das Zugriffstoken, das Sie in Schritt 5 erstellt haben.
+   - **Twitter-Zugriffstoken Secret** – der geheime Zugriffstoken-Schlüssel, den Sie in Schritt 5 erstellt haben.
    - **Aad-Anwendungs-ID** – die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 2 erstellt haben
    - **Aad-Anwendungs Geheimnis** – der Wert für den geheimen Schlüssel "APISecretKey", den Sie in Schritt 4 erstellt haben.
    - **Aad-Anwendungs-URI** – der in Schritt 2 abgerufene Aad-Anwendungs-URI; Beispiel: https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.

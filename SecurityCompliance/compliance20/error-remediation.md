@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5a6c545b15ee07fc0200104b8408e7adb7301c79
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151787"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547940"
 ---
 # <a name="error-remediation-when-processing-data"></a>Beheben von Fehlern beim Verarbeiten von Daten
 
@@ -40,7 +40,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
     ![Fehlerbehebung](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    Die Fehlerbehebungssitzung beginnt mit einer Vorbereitungsphase, in der die fehlerhafte Datei an einen sicheren Azure-Speicherort verschoben wird, um heruntergeladen zu werden.
+    Die Fehlerbehebungssitzung beginnt mit einer Vorbereitungsphase, in der die Dateien mit Fehlern an einen sicheren Azure-Speicherort kopiert werden, damit Sie heruntergeladen werden können.
 
     ![Vorbereiten der Fehlerbehebung](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,7 +63,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
     ![Vorbereiten der Fehlerbehebung](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter zur [Problembehandlung bei AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
+    > Wenn der angegebene AzCopy-Befehl fehlschlägt, finden Sie weitere Informationen unter [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
 7. Nachdem Sie die Dateien heruntergeladen haben, können Sie Sie mit einem geeigneten Tool korrigieren. Für kennwortgeschützte Dateien gibt es eine Reihe von Kenn Wort Knack Tools, die Sie verwenden können. Wenn Sie die Kennwörter für die Dateien kennen, können Sie Sie öffnen und den Kennwortschutz entfernen.
     > [!NOTE]
@@ -73,7 +73,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
     ![Hochladen von Dateien](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Gibt den Speicherort der Dateien im Textfeld **Pfad zum Speicherort der Dateien** an, und klicken Sie dann auf **in clibpboard kopieren**.
+9. Geben Sie den Speicherort der korrigierten Dateien in das Textfeld **Pfad zum Speicherort der Dateien** ein, und klicken Sie dann auf **in Zwischenablage kopieren**.
 
 10. Fügen Sie den Befehl in eine Windows-Eingabeaufforderung ein, und drücken **Sie die EINGABETASTE** , um die Dateien hochzuladen.
 
@@ -87,12 +87,9 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
 Bei hochzuladenden Dateien werden die ursprünglichen Metadaten mit Ausnahme der folgenden Felder beibehalten: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - Lade-Nr
 - ProcessingErrorMessage
 - ProcessingStatus

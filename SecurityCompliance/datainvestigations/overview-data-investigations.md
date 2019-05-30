@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird das Tool für neue Daten Untersuchungen (Preview) in Microsoft 365 beschrieben.
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547910"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Übersicht über Daten Untersuchungen (Vorschau) in Microsoft 365
 
 Ein Datenüberlauf tritt auf, wenn ein Dokument mit vertraulichen, vertraulichen oder böswilligen Inhalten in einer nicht vertrauenswürdigen Umgebung freigegeben wird. Wenn ein Datenüberlauf erkannt wird, ist es wichtig, die Umgebung schnell einzudämmen, die Größe und die Speicherorte des Verfalls zu bewerten, Benutzeraktivitäten um Sie herum zu untersuchen und dann die verschütteten Daten aus dem Dienst zu löschen. Mit dem Tool neue Daten Untersuchungen (Vorschau) können Sie nach vertraulichen, böswilligen oder verfallenen Daten in Office 365 suchen, die Ereignisse untersuchen und die entsprechenden Aktionen zum Beheben des Verfalls durchführen.  
 
 In diesem Artikel wird die Verwendung der Funktionen im Tool für die neue Daten Untersuchung (Preview) beschrieben, mit denen ein Szenario mit Datenüberlauf behandelt wird.
+
+## <a name="permissions"></a>Berechtigungen
+
+Sie müssen Mitglied der Rollengruppe "Data Investigator" sein, um auf eine Daten Untersuchung zugreifen und diese durchführen zu können. Weitere Informationen finden Sie unter [assign Permissions for Data Investigations](permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Workflow für Daten Untersuchungen (Vorschau) 
 
