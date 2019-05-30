@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
-ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490491"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547990"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
 
@@ -179,8 +179,13 @@ Hier ist der Vorgang zum Durchsuchen des Überwachungsprotokolls in Office 365.
     
     Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben.
     
-    > [!TIP]
-    > Wenn Sie alle Aktivitäten im Zusammenhang mit einer **Website**suchen, fügen Sie das Platzhalter\*Symbol () nach der URL hinzu, um alle Einträge für diese Website zurückzugeben. Beispiel: **https://contoso-my.sharepoint.com/personal/"*"**.
+   **Tipps**
+
+   - Wenn Sie alle Aktivitäten im Zusammenhang mit einer **Website**suchen, fügen Sie das Platzhalter\*Symbol () nach der URL hinzu, um alle Einträge für diese Website zurückzugeben. Beispiel: **https://contoso-my.sharepoint.com/personal/"*"**.
+
+   - Wenn Sie alle Aktivitäten im Zusammenhang mit einer **Datei**suchen, fügen Sie das Platzhalter\*Symbol () vor dem Dateinamen hinzu, um alle Einträge für diese Datei zurückzugeben. Beispiel: **"* Customer_Profitability_Sample. csv"**.
+    
+
     
 5. Klicken Sie auf **Suchen** , um die Suche mit Ihren Suchkriterien auszuführen. 
     
@@ -295,15 +300,15 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu wec
   
 ||||
 |:-----|:-----|:-----|
-|[Datei-und Seiten Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |
-|[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Website Verwaltungsaktivitäten](#site-administration-activities)<br/> |[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |
-|[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |[Azure Ad Gruppen Verwaltungsaktivitäten](#azure-ad-group-administration-activities) <br/> 
-|[Anwendungs Verwaltungsaktivitäten](#application-administration-activities) <br/> |[Aktivitäten für die Rollenverwaltung](#role-administration-activities) <br/> |[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/>| 
-|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
-|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Jammern von Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow-Aktivitäten](#microsoft-flow-activities) <br/>|
-|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)<br/>|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities) <br/>|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)<br/>|
+|[Datei-und Seiten Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[SharePoint-Listen Aktivitäten](#sharepoint-list-activities)<br/>|
+|[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Website Verwaltungsaktivitäten](#site-administration-activities)<br/> |
+|[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |
+|[Azure Ad Gruppen Verwaltungsaktivitäten](#azure-ad-group-administration-activities) <br/> |[Anwendungs Verwaltungsaktivitäten](#application-administration-activities) <br/> |[Aktivitäten für die Rollenverwaltung](#role-administration-activities) <br/> |
+|[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/>|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Erweiterte eDiscovery-Aktivitäten](#advanced-ediscovery-activities)<br/> |
+|[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |
+|[Jammern von Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow-Aktivitäten](#microsoft-flow-activities) <br/>|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)<br/>|
+|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities) <br/>|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)<br/>|
 ||||
-   
   
 ### <a name="file-and-page-activities"></a>Datei-und Seiten Aktivitäten
   
@@ -319,6 +324,7 @@ In der folgenden Tabelle werden die Datei-und Seiten Aktivitäten in SharePoint 
 |Gelöschte Datei  <br/> |FileDeleted  <br/> |Ein Benutzer löscht ein Dokument von einer Website.  <br/> |
 |Gelöschte Datei aus dem Papierkorb  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.  <br/> |
 |Gelöschte Datei aus dem endgültigen Papierkorb  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.  <br/> |
+|Konflikt bei erkannter Dokument Sensitivität <br/>|DocumentSensitivityMismatchDetected<br/>|Der Benutzer lädt ein Dokument hoch, das mit einer Vertraulichkeits Bezeichnung klassifiziert wurde, die eine höhere Priorität aufweist als die Vertraulichkeits Bezeichnung, die auf die Website angewendet wird, in die das Dokument hochgeladen wird. Hinweis Dieses Ereignis wird nicht ausgelöst, wenn die auf eine Website angewendete Vertraulichkeits Bezeichnung eine höhere Priorität aufweist als die Vertraulichkeits Bezeichnung, die auf ein Dokument angewendet wird, das auf die Website hochgeladen wird. Weitere Informationen zur Priorität "Sensitivitäts Bezeichnung" finden Sie im Abschnitt "Bezeichnungs Priorität" in [Übersicht über Sensitivitäts Bezeichnungen](sensitivity-labels.md#label-priority-order-matters).<br/>|
 |Erkannte Schadsoftware in Datei  <br/> |FileMalwareDetected  <br/> |SharePoint-Antivirus-Engine erkennt Schadsoftware in einer Datei.  <br/> |
 |Auschecken der Datei verworfen  <br/> |FileCheckOutDiscarded  <br/> |Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.  <br/> |
 |Heruntergeladene Datei  <br/> |FileDownloaded  <br/> |Ein Benutzer lädt ein Dokument von einer Website herunter.  <br/> |
@@ -333,6 +339,8 @@ In der folgenden Tabelle werden die Datei-und Seiten Aktivitäten in SharePoint 
 |Hochgeladene Datei  <br/> |FileUploaded  <br/> |Ein Benutzer lädt ein Dokument in einen Ordner auf einer Website hoch.  <br/> |
 |Angezeigte Seite  <br/> |PageViewed  <br/> |Der Benutzer zeigt eine Seite auf einer Website an. Dies umfasst nicht die Verwendung eines Webbrowsers zum Anzeigen von Dateien, die sich in einer Dokumentbibliothek befinden.  <br/> |
 |keine  <br/> |PageViewedExtended  <br/> |Dies bezieht sich auf die Aktivität "betrachtete Seite" (mit Zugriff). Ein PageViewedExtended-Ereignis wird protokolliert, wenn dieselbe Person eine Webseite kontinuierlich für einen längeren Zeitraum (bis zu 3 Stunden) anzeigt. Der Zweck der Protokollierung von PageViewedExtended-Ereignissen besteht darin, die Anzahl von Ereignis Anteilen zu reduzieren, die protokolliert werden, wenn eine Seite kontinuierlich angezeigt wird. Auf diese Weise wird das Rauschen mehrerer Datensätze mit Seitenzugriff für die im Wesentlichen dieselbe Benutzeraktivität reduziert, und Sie können sich auf das anfängliche (und wichtigere) Zugriff-Ereignis konzentrieren.  <br/> |
+|Vom Client signalisiert anzeigen <br/>|ClientViewSignaled<br/>|Der Client eines Benutzers (beispielsweise Website oder Mobile App) hat signalisiert, dass die angegebene Seite vom Benutzer angezeigt wurde. Diese Aktivität wird häufig nach einem PagePrefetched-Ereignis für eine Seite protokolliert. <br/><br/>**Hinweis**: da ClientViewSignaled-Ereignisse vom Client anstelle des Servers signalisiert werden, kann es sein, dass das Ereignis möglicherweise nicht vom Server protokolliert wird und daher möglicherweise nicht im Überwachungsprotokoll angezeigt wird. Es ist auch möglich, dass die Informationen im Überwachungseintrag möglicherweise nicht vertrauenswürdig sind. Da die Identität des Benutzers jedoch durch das Token überprüft wird, das zum Erstellen des Signals verwendet wird, ist die Identität des Benutzers, der im entsprechenden Überwachungseintrag aufgeführt ist, korrekt. |
+|keine <br/>|PagePrefetched<br/>|Der Client eines Benutzers (beispielsweise Website oder Mobile App) hat die angegebene Seite angefordert, um die Leistung zu verbessern, wenn der Benutzer zu ihm navigiert. Dieses Ereignis wird protokolliert, um anzugeben, dass der Seiteninhalt dem Client des Benutzers zugestellt wurde; Dieses Ereignis ist kein definitiver Hinweis darauf, dass der Benutzer tatsächlich zu der Seite navigiert ist. Wenn der Seiteninhalt vom Client gerendert wird (gemäß der Anforderung des Benutzers), sollte ein ClientViewSignaled-Ereignis generiert werden. Beachten Sie, dass nicht alle Clients die Angabe eines Pre-Fetch unterstützen, weshalb einige vorab abgerufene Aktivitäten stattdessen möglicherweise als geteilte Ereignisse protokolliert werden.<br/>|
 ||||
   
 ### <a name="folder-activities"></a>Ordner Aktivitäten
@@ -352,6 +360,35 @@ In der folgenden Tabelle werden die Ordner Aktivitäten in SharePoint Online und
 |Wiederhergestellter Ordner  <br/> |FolderRestored  <br/> |Der Benutzer stellt einen gelöschten Ordner aus dem Papierkorb einer Website wieder her.  <br/> |
 ||||
   
+### <a name="sharepoint-list-activities"></a>SharePoint-Listen Aktivitäten
+  
+In der folgenden Tabelle werden Aktivitäten im Zusammenhang mit der Interaktion von Benutzern mit Listen und Listenelementen in SharePoint Online beschrieben.
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+| Erstellte Liste              | ListCreated              | Ein Benutzer hat eine neue SharePoint-Liste erstellt.|
+| Erstellte Listenspalte       | ListColumnCreated        | Ein Benutzer hat eine neue SharePoint-Listenspalte erstellt. Eine Listenspalte ist eine Spalte, die an eine oder mehrere SharePoint-Listen angefügt ist. |
+| Erstellter Listeninhaltstyp | ListContentTypeCreated   | Ein Benutzer hat einen neuen Listeninhaltstyp erstellt. Ein Listeninhaltstyp ist ein Inhaltstyp, der an eine oder mehrere SharePoint-Listen angefügt ist.|
+| Erstelltes Listenelement         | ListItemCreated          | Ein Benutzer hat ein neues Element in einer vorhandenen SharePoint-Liste erstellt.|
+| Erstellte Websitespalte       | SiteColumnCreated        | Ein Benutzer hat eine neue SharePoint-Websitespalte erstellt. Eine Websitespalte ist eine Spalte, die nicht an eine Liste angefügt ist. Eine Websitespalte ist auch eine Metadatenstruktur, die von einer beliebigen Liste in einem bestimmten Web verwendet werden kann.|
+| Erstellter Websiteinhaltstyp | Erstellter Website-ContentType | Ein Benutzer hat einen neuen Websiteinhaltstyp erstellt. Bei einem Websiteinhaltstyp handelt es sich um einen Inhaltstyp, der an die übergeordnete Website angefügt ist.|
+| Gelöschte Liste              | ListDeleted              | Ein Benutzer hat eine SharePoint-Liste gelöscht.|
+| Gelöschte Listenspalte       | Listenspalte gelöscht      | Ein Benutzer hat eine SharePoint-Listenspalte gelöscht.|
+| Gelöschter Listeninhaltstyp | ListContentTypeDeleted   | Ein Benutzer hat einen Listeninhaltstyp gelöscht. |
+| Gelöschtes Listenelement         | Listenelement gelöscht        | Ein Benutzer hat ein SharePoint-Listenelement gelöscht.|
+| Spalte "Gelöschte Websites"       | SiteColumnDeleted        | Ein Benutzer hat eine SharePoint-Websitespalte gelöscht. |
+| Gelöschter Websiteinhaltstyp | SiteContentTypeDeleted   | Ein Benutzer hat einen Websiteinhaltstyp gelöscht.|
+| Aufbereitetes Listenelement        | ListItemRecycled         | Ein Benutzer hat ein SharePoint-Listenelement in den Papierkorb verschoben.|
+| Wiederhergestellte Liste             | ListRestored             | Ein Benutzer hat eine SharePoint-Liste aus dem Papierkorb wiederhergestellt.|
+| Wieder hergestelltes Listenelement        | ListItemRestored         | Ein Benutzer hat ein SharePoint-Listenelement aus dem Papierkorb wiederhergestellt.|
+| Aktualisierte Liste              | ListUpdated              | Ein Benutzer hat eine SharePoint-Liste aktualisiert, indem er eine oder mehrere Eigenschaften ändert.|
+| Aktualisierte Listenspalte       | ListColumnUpdated        | Ein Benutzer hat eine SharePoint-Listenspalte durch Ändern einer oder mehrerer Eigenschaften aktualisiert.|
+| Aktualisierter Listeninhaltstyp | ListContentTypeUpdated   | Ein Benutzer hat einen Listeninhaltstyp durch Ändern einer oder mehrerer Eigenschaften aktualisiert.|
+| Aktualisiertes Listenelement         | ListItemUpdated          | Ein Benutzer hat ein SharePoint-Listenelement aktualisiert, indem eine oder mehrere Eigenschaften geändert wurden.|  
+| Aktualisierte Websitespalte       | SiteColumnUpdated        | Ein Benutzer hat eine SharePoint-Websitespalte durch Ändern einer oder mehrerer Eigenschaften aktualisiert.|
+| Aktualisierter Websiteinhaltstyp | SiteContentTypeUpdated   | Ein Benutzer hat einen Websiteinhaltstyp durch Ändern einer oder mehrerer Eigenschaften aktualisiert.|
+||||
+
 ### <a name="sharing-and-access-request-activities"></a>Freigabe-und Zugriffs Anforderungs Aktivitäten
   
 In der folgenden Tabelle werden die Benutzer Freigabe-und Zugriffs Anforderungs Aktivitäten in SharePoint Online und OneDrive für Unternehmen beschrieben. Bei Freigabe Ereignissen identifiziert die **Detail** Spalte unter **Ergebnisse** den Namen des Benutzers oder der Gruppe, für die das Element freigegeben wurde, und ob dieser Benutzer oder diese Gruppe ein Mitglied oder Gast in Ihrer Organisation ist. Weitere Informationen finden Sie unter [Use Sharing Auditing in the Office 365 Audit Log](use-sharing-auditing.md).
@@ -364,10 +401,7 @@ In der folgenden Tabelle werden die Benutzer Freigabe-und Zugriffs Anforderungs 
 |Akzeptierte Zugriffsanforderung  <br/> |AccessRequestAccepted  <br/> |Eine Zugriffsanforderung für eine Website, einen Ordner oder ein Dokument wurde akzeptiert, und dem anfordernden Benutzer wurde Zugriff erteilt.  <br/> |
 |Einladung zur Freigabe angenommen  <br/> |SharingInvitationAccepted  <br/> |Benutzer (Mitglied oder Gast) akzeptierten eine Freigabeeinladung und erhielten Zugriff auf eine Ressource. Dieses Ereignis enthält Informationen über den Benutzer, der eingeladen wurde, und die e-Mail-Adresse, die zum Annehmen der Einladung verwendet wurde (Sie können unterschiedlich sein). Diese Aktivität wird häufig von einem zweiten Ereignis begleitet, in dem beschrieben wird, wie dem Benutzer der Zugriff auf die Ressource gewährt wurde, beispielsweise das Hinzufügen des Benutzers zu einer Gruppe, die Zugriff auf die Ressource hat.  <br/> |
 |Berechtigungsstufe zur Websitesammlung hinzugefügt  <br/> |PermissionLevelAdded  <br/> |Eine Berechtigungsstufe wurde einer Websitesammlung hinzugefügt.  <br/> |
-|Zu sicherer Link hinzugefügter Benutzer  <br/> |AddedToSecureLink  <br/> |Ein Benutzer wurde der Liste der Entitäten hinzugefügt, die diesen Link für sichere Freigaben verwenden können.  <br/> |
 |Blockierte Freigabeeinladung  <br/> |SharingInvitationBlocked  <br/> | Eine von einem Benutzer in Ihrer Organisation gesendete Freigabeeinladung wird aufgrund einer Richtlinie für externe Freigaben blockiert, die die externe Freigabe basierend auf der Domäne des Zielbenutzers zulässt oder ablehnt. In diesem Fall wurde die Freigabeeinladung blockiert, weil:  <br/>  Die Domäne des Zielbenutzers ist nicht in der Liste der zulässigen Domänen enthalten.  <br/>  Oder  <br/>  Die Domäne des Zielbenutzers ist in der Liste der blockierten Domänen enthalten.  <br/>  Weitere Informationen zum Zulassen oder Blockieren der externen Freigabe basierend auf Domänen finden Sie unter [restricted Domains Sharing in SharePoint Online and OneDrive für Unternehmen](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Vererbung von Berechtigungsebenen abgebrochen  <br/> |PermissionLevelsInheritanceBroken  <br/> |Ein Element wurde so geändert, dass es nicht mehr Berechtigungsstufen von seinem übergeordneten Element erbt.  <br/> |
-|Freigabe Vererbung abgebrochen  <br/> |SharingInheritanceBroken  <br/> |Ein Element wurde so geändert, dass es keine Freigabeberechtigungen mehr von seinem übergeordneten Element erbt.  <br/> |
 |Erstellen eines Unternehmens-freigegebenen Links  <br/> |CompanyLinkCreated  <br/> |Der Benutzer hat einen unternehmensweiten Link zu einer Ressource erstellt. unternehmensweite Links können nur von Mitgliedern in Ihrer Organisation verwendet werden. Sie können nicht von Gästen verwendet werden.  <br/> |
 |Erstellte Zugriffsanforderung  <br/> |AccessRequestCreated  <br/> |Benutzer fordert Zugriff auf eine Website, einen Ordner oder ein Dokument an, für die Sie keine Zugriffsberechtigungen haben.  <br/> |
 |Anonyme Verknüpfung erstellt  <br/> |AnonymousLinkCreated  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource erstellt. Jeder, der über diesen Link verfügt, kann auf die Ressource zugreifen, ohne authentifiziert werden zu müssen.  <br/> |
@@ -375,11 +409,8 @@ In der folgenden Tabelle werden die Benutzer Freigabe-und Zugriffs Anforderungs 
 |Erstellte Freigabeeinladung  <br/> |SharingInvitationCreated  <br/> |Der Benutzer hat eine Ressource in SharePoint Online oder OneDrive für Unternehmen mit einem Benutzer freigegeben, der sich nicht im Verzeichnis Ihrer Organisation befindet.  <br/> |
 |Gelöschte sichere Verbindung  <br/> |SecureLinkDeleted  <br/> |Eine sichere Freigabe Verbindung wurde gelöscht.  <br/> |
 |Verweigerte Zugriffsanforderung  <br/> |AccessRequestDenied  <br/> |Eine Zugriffsanforderung für eine Website, einen Ordner oder ein Dokument wurde abgelehnt.  <br/> |
-|Geänderte Berechtigungsstufe für Websitesammlung  <br/> |PermissionLevelModified  <br/> |Eine Berechtigungsstufe wurde in einer Websitesammlung geändert.  <br/> |
 |Ein Unternehmen mit freigegebener Verbindung entfernt  <br/> |CompanyLinkRemoved  <br/> |Ein Benutzer hat einen unternehmensweiten Link zu einer Ressource entfernt. Der Link kann nicht mehr für den Zugriff auf die Ressource verwendet werden.  <br/> |
 |Entfernen eines anonymen Links  <br/> |AnonymousLinkRemoved  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource entfernt. Der Link kann nicht mehr für den Zugriff auf die Ressource verwendet werden.  <br/> |
-|Entfernte Berechtigungsstufe aus Websitesammlung  <br/> |PermissionLevelRemoved  <br/> |Eine Berechtigungsstufe wurde aus einer Websitesammlung entfernt.  <br/> |
-|Wiederhergestellte Freigabe Vererbung  <br/> |SharingInheritanceReset  <br/> |Es wurde eine Änderung vorgenommen, sodass ein Element Freigabeberechtigungen von seinem übergeordneten Element erbt.  <br/> |
 |Freigegebene Datei, Ordner oder Website  <br/> |SharingSet  <br/> |Benutzer (Mitglied oder Gast) haben eine Datei, einen Ordner oder eine Website in SharePoint freigegeben oder OneDrive für Unternehmen mit einem Benutzer im Verzeichnis Ihrer Organisation. Der Wert in der Spalte **Detail** für diese Aktivität gibt den Namen des Benutzers an, für den die Ressource freigegeben wurde, und gibt an, ob dieser Benutzer ein Mitglied oder ein Gast ist. Diese Aktivität wird häufig von einem zweiten Ereignis begleitet, in dem beschrieben wird, wie dem Benutzer der Zugriff auf die Ressource gewährt wurde. beispielsweise das Hinzufügen des Benutzers zu einer Gruppe, die Zugriff auf die Ressource hat.  <br/> |
 |Aktualisierte Zugriffsanforderung  <br/> |AccessRequestUpdated  <br/> |Eine Zugriffsanforderung für ein Element wurde aktualisiert.  <br/> |
 |Anonymer Link aktualisiert  <br/> |AnonymousLinkUpdated  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource aktualisiert. Das aktualisierte Feld ist in der EventData-Eigenschaft enthalten, wenn Sie die Suchergebnisse exportieren.  <br/> |
@@ -406,17 +437,41 @@ In der folgenden Tabelle werden die Datei Synchronisierungsaktivitäten in Share
 |Hochgeladene Dateien in die Dokumentbibliothek  <br/> |FileSyncUploadedFull  <br/> |Der Benutzer richtet eine Synchronisierungsbeziehung ein und lädt die Dateien zum ersten Mal erfolgreich von Ihrem Computer in eine Dokumentbibliothek hoch.  <br/> |
 |Hochgeladene Dateiänderungen an Dokumentbibliothek  <br/> |FileSyncUploadedPartial  <br/> |Der Benutzer lädt erfolgreich Änderungen an Dateien in einer Dokumentbibliothek hoch. Dieses Ereignis gibt an, dass alle Änderungen, die an der lokalen Version einer Datei aus einer Dokumentbibliothek vorgenommen wurden, erfolgreich in die Dokumentbibliothek geladen werden. Nur Änderungen werden hochgeladen, da diese Dateien zuvor vom Benutzer hochgeladen wurden (wie von den **hochgeladenen Dateien in die Dokument Bibliotheks** Aktivität angezeigt).  <br/> |
 ||||
+
+### <a name="site-permissions-activities"></a>Aktivitäten für Websiteberechtigungen
+
+Die folgende Tabelle enthält Ereignisse im Zusammenhang mit dem Zuweisen von Berechtigungen in SharePoint und der Verwendung von Gruppen zum erteilen (und widerrufen) des Zugriffs auf Websites.
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Websitesammlungsadministrator hinzugefügt  <br/> |SiteCollectionAdminAdded  <br/> |Websitesammlungsadministrator oder-Besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center oder [mithilfe des Microsoft 365 admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
+|Benutzer oder Gruppe zur SharePoint-Gruppe hinzugefügt  <br/> |AddedToGroup  <br/> |Der Benutzer hat einer SharePoint-Gruppe ein Mitglied oder einen Gast hinzugefügt. Dies ist möglicherweise eine absichtliche Aktion oder das Ergebnis einer anderen Aktivität, beispielsweiseeines Freigabe Ereignisses.  <br/> |
+|Vererbung von Berechtigungsebenen abgebrochen  <br/> |PermissionLevelsInheritanceBroken  <br/> |Ein Element wurde so geändert, dass es nicht mehr Berechtigungsstufen von seinem übergeordneten Element erbt.  <br/> |
+|Freigabe Vererbung abgebrochen  <br/> |SharingInheritanceBroken  <br/> |Ein Element wurde so geändert, dass es keine Freigabeberechtigungen mehr von seinem übergeordneten Element erbt.  <br/> |
+|Erstellte Gruppe  <br/> |GroupAdded  <br/> |Websiteadministrator oder Besitzer erstellen eine Gruppe für eine Website oder führen eine Aufgabe aus, die dazu führt, dass eine Gruppe erstellt wird. Wenn ein Benutzer beispielsweise zum ersten Mal einen Link zum Freigeben einer Datei erstellt, wird eine Systemgruppe zur OneDrive for Business-Website hinzugefügt. Dieses Ereignis kann auch dadurch entstehen, dass ein Benutzer einen Link mit Bearbeitungsberechtigungen für eine freigegebene Datei erstellt.  <br/> |
+|Gelöschte Gruppe  <br/> |GroupRemoved  <br/> |Benutzer löscht eine Gruppe von einer Website.  <br/> |
+|Geänderte Zugriffs Anforderungs Einstellung  <br/> |WebRequestAccessModified  <br/> |Die Einstellungen für die Zugriffsanforderung wurden auf einer Website geändert.  <br/> |
+|Geänderte Einstellung "Mitglieder können freigeben"  <br/> |WebMembersCanShareModified  <br/> |Die Einstellung " **Mitglieder können freigeben** " wurde auf einer Website geändert.  <br/> |
+|Geänderte Berechtigungsstufe für Websitesammlung  <br/> |PermissionLevelModified  <br/> |Eine Berechtigungsstufe wurde in einer Websitesammlung geändert.  <br/> |
+|Geänderte Websiteberechtigungen  <br/> |SitePermissionsModified  <br/> |Der Websiteadministrator oder Besitzer (oder Systemkonto) ändert die Berechtigungsstufe, die einer Gruppe auf einer Website zugewiesen ist. Diese Aktivität wird auch protokolliert, wenn alle Berechtigungen aus einer Gruppe entfernt werden.  <br/><br/> **Hinweis**: dieser Vorgang ist in SharePoint Online veraltet. Um verwandte Ereignisse zu finden, können Sie nach anderen Berechtigungs bezogenen Aktivitäten wie dem **hinzugefügten Websitesammlungsadministrator**, dem **hinzugefügten Benutzer oder der Gruppe zur SharePoint-Gruppe**, dem zulässigen **Benutzer zum Erstellen von Gruppen, der** **erstellten Gruppe**und dem Löschen suchen. ** Gruppe aus.**|
+|Entfernte Berechtigungsstufe aus Websitesammlung  <br/> |PermissionLevelRemoved  <br/> |Eine Berechtigungsstufe wurde aus einer Websitesammlung entfernt.  <br/> |
+|Websitesammlungsadministrator entfernt  <br/> |SiteCollectionAdminRemoved <br/> |Websitesammlungsadministrator oder-Besitzer entfernt eine Person als Websitesammlungsadministrator für eine Website. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst aus der Liste der Websitesammlungsadministratoren für das OneDrive-Konto eines Benutzers entfernt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center).  Beachten Sie, dass Sie nach allen Aktivitäten suchen müssen, um diese Aktivität in den Überwachungsprotokoll-Suchergebnissen zurückzugeben. <br/> |
+|Entfernter Benutzer oder eine Gruppe aus der SharePoint-Gruppe  <br/> |RemovedFromGroup  <br/> |Ein Benutzer hat ein Mitglied oder einen Gast aus einer SharePoint-Gruppe entfernt. Möglicherweise handelt es sich um eine vorsätzliche Aktion oder das Ergebnis einer anderen Aktivität, beispielsweise ein Freigabe Ereignis.  <br/> |
+|Angeforderte Websiteadministrator Berechtigungen  <br/> |SiteAdminChangeRequest  <br/> |Benutzeranforderungen, die als Websitesammlungsadministrator für eine Websitesammlung hinzugefügt werden sollen. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites.  <br/> |
+|Wiederhergestellte Freigabe Vererbung  <br/> |SharingInheritanceReset  <br/> |Es wurde eine Änderung vorgenommen, sodass ein Element Freigabeberechtigungen von seinem übergeordneten Element erbt.  <br/> |
+|Aktualisierte Gruppe  <br/> |GroupUpdated  <br/> |Der Websiteadministrator oder Besitzer ändert die Einstellungen einer Gruppe für eine Website. Dazu kann das Ändern des Gruppennamens, das Anzeigen oder Bearbeiten der Gruppenmitgliedschaft und die Art der Verarbeitung von Mitgliedsanträgen gehören.  <br/> |
+||||
+
   
 ### <a name="site-administration-activities"></a>Website Verwaltungsaktivitäten
   
-In der folgenden Tabelle sind die Ereignisse aufgeführt, die sich aus der Website Verwaltungsaufgabe in SharePoint Online ergeben.
+In der folgenden Tabelle sind die Ereignisse aufgeführt, die aus Websiteverwaltungsaufgaben in SharePoint Online resultieren.
   
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Ausnahme Benutzer-Agent hinzugefügt  <br/> |ExemptUserAgentSet  <br/> |Ein SharePoint-oder globaler Administrator fügt einen Benutzer-Agent zur Liste der freigestellten Benutzer-Agents im SharePoint Admin Center hinzu.  <br/> |
-|Websitesammlungsadministrator hinzugefügt  <br/> |SiteCollectionAdminAdded  <br/> |Websitesammlungsadministrator oder-Besitzer fügt eine Person als Websitesammlungsadministrator für eine Website hinzu. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites. Diese Aktivität wird auch protokolliert, wenn ein Administrator selbst Zugriff auf das OneDrive-Konto eines Benutzers gewährt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center oder [mithilfe des Microsoft 365 admin Centers](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
-|keine  <br/> |SiteCollectionAdminRemoved <br/> |Websitesammlungsadministrator oder-Besitzer entfernt eine Person als Websitesammlungsadministrator für eine Website. Diese Aktivität wird auch protokolliert, wenn ein Administrator sich selbst aus der Liste der Websitesammlungsadministratoren für das OneDrive-Konto eines Benutzers entfernt (durch Bearbeiten des Benutzerprofils im SharePoint Admin Center).  Beachten Sie, dass Sie nach allen Aktivitäten suchen müssen, um diese Aktivität in den Überwachungsprotokoll-Suchergebnissen zurückzugeben. <br/> |
-|Benutzer oder Gruppe zur SharePoint-Gruppe hinzugefügt  <br/> |AddedToGroup  <br/> |Der Benutzer hat einer SharePoint-Gruppe ein Mitglied oder einen Gast hinzugefügt. Dies ist möglicherweise eine absichtliche Aktion oder das Ergebnis einer anderen Aktivität, beispielsweiseeines Freigabe Ereignisses.  <br/> |
+|Zugelassener Datenspeicherort hinzugefügt<br/>|AllowedDataLocationAdded|Ein SharePoint-oder globaler Administrator hat einen zulässigen Datenspeicherort in einer Multi-Geo-Umgebung hinzugefügt. <br/>|
+|Ausnahme Benutzer-Agent hinzugefügt  <br/> |ExemptUserAgentSet  <br/> |Ein SharePoint-oder globaler Administrator hat einen Benutzer-Agent zur Liste der freigestellten Benutzer-Agents im SharePoint Admin Center hinzugefügt.  <br/> |
+|Geo-Standort-Administrator hinzugefügt<br/>|GeoAdminAdded<br/>|Ein SharePoint-oder globaler Administrator hat einen Benutzer als Geo-Administrator eines Standorts hinzugefügt. <br/>|
 |Zulässiger Benutzer zum Erstellen von Gruppen  <br/> |AllowGroupCreationSet  <br/> |Websiteadministrator oder Besitzer fügt eine Berechtigungsstufe zu einer Website hinzu, die es einem Benutzer, dem diese Berechtigung zugewiesen wurde, ermöglicht, eine Gruppe für diese Website zu erstellen.  <br/> |
 |Abgebrochener Standort-Geo-Wechsel  <br/> |SiteGeoMoveCancelled  <br/> |Ein SharePoint-oder globaler Administrator hat eine SharePoint-oder OneDrive-Website-geografische Verlagerung erfolgreich abgebrochen. Die Multi-Geo-Funktion ermöglicht eine Office 365 Organisation, die sich über mehrere Office 365 Rechenzentrums-Regionen erstreckt, die als GEOS bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Änderung einer Freigaberichtlinie  <br/> |SharingPolicyChanged  <br/> |Ein SharePoint-oder globaler Administrator hat eine SharePoint-Freigaberichtlinie mithilfe des Office 365 Administrator Portals, des SharePoint-Verwaltungsportals oder der SharePoint Online Verwaltungsshell geändert. Änderungen an den Einstellungen in der Freigaberichtlinie in Ihrer Organisation werden protokolliert. Die geänderte Richtlinie wird im Feld **ModifiedProperties** in den detaillierten Eigenschaften des Ereignisdatensatzes identifiziert.  <br/> |
@@ -424,25 +479,26 @@ In der folgenden Tabelle sind die Ereignisse aufgeführt, die sich aus der Websi
 |Geänderte freigestellte Benutzer-Agents  <br/> |CustomizeExemptUsers  <br/> |Ein SharePoint-oder globaler Administrator hat die Liste der freigestellten Benutzer-Agents im SharePoint Admin Center angepasst. Sie können angeben, welche Benutzer-Agents vom Anzeigen einer vollständigen zu indizierenden Webseite ausgenommen werden sollen. Wenn ein von Ihnen als "freigegebener" bezeichneter Benutzer-Agent auf ein InfoPath-Formular stößt, wird das Formular anstelle einer ganzen Webseite als XML-Datei zurückgegeben. Dadurch wird die Indizierung von InfoPath-Formularen beschleunigt.  <br/> |
 |Geänderte Netzwerkzugriffsrichtlinie  <br/> |NetworkAccessPolicyChanged  <br/> |Ein SharePoint-oder globaler Administrator hat die standortbasierte Zugriffsrichtlinie (auch als vertrauenswürdige Netzwerkgrenze bezeichnet) im SharePoint Admin Center oder mithilfe von SharePoint Online PowerShell geändert. Diese Art von Richtlinie steuert, wer auf SharePoint-und OneDrive-Ressourcen in Ihrer Organisation basierend auf autorisierten IP-Adressbereichen zugreifen kann, die Sie angeben. Weitere Informationen finden Sie unter [Steuern des Zugriffs auf SharePoint Online-und OneDrive-Daten basierend auf dem Netzwerkspeicherort](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).  <br/> |
 |Abgeschlossener Standort-geografischer Wechsel  <br/> |SiteGeoMoveCompleted  <br/> |Ein geografischer Standortwechsel, der von einem globalen Administrator in Ihrer Organisation geplant wurde, wurde erfolgreich abgeschlossen. Die Multi-Geo-Funktion ermöglicht eine Office 365 Organisation, die sich über mehrere Office 365 Rechenzentrums-Regionen erstreckt, die als GEOS bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
-|Erstellte Gruppe  <br/> |GroupAdded  <br/> |Websiteadministrator oder Besitzer erstellen eine Gruppe für eine Website oder führen eine Aufgabe aus, die dazu führt, dass eine Gruppe erstellt wird. Wenn ein Benutzer beispielsweise zum ersten Mal einen Link zum Freigeben einer Datei erstellt, wird eine Systemgruppe zur OneDrive for Business-Website hinzugefügt. Dieses Ereignis kann auch dadurch entstehen, dass ein Benutzer einen Link mit Bearbeitungsberechtigungen für eine freigegebene Datei erstellt.  <br/> |
 |Erstellt an-Verbindung gesendet  <br/> |SendToConnectionAdded  <br/> |Ein SharePoint-oder globaler Administrator erstellt auf der Seite Datensatzverwaltung im SharePoint Admin Center eine neue Verbindung senden an. Mit einer Senden-an-Verbindung werden die Einstellungen für ein Dokumentrepository oder ein Datenarchiv festgelegt. Wenn Sie eine Senden-an-Verbindung erstellen, kann die Inhaltsorganisation Dokumente an den angegebenen Speicherort übermitteln.  <br/> |
 |Erstellte Websitesammlung  <br/> |SiteCollectionCreated  <br/> |Ein SharePoint-oder globaler Administrator erstellt eine neue Websitesammlung in Ihrer SharePoint Online Organisation, oder ein Benutzer stellt seine OneDrive für Unternehmen Website bereit.  <br/> |
-|Gelöschte Gruppe  <br/> |GroupRemoved  <br/> |Benutzer löscht eine Gruppe von einer Website.  <br/> |
+|Gelöschter verwaister Hub-Standort<br/>|HubSiteOrphanHubDeleted<br/>|Ein SharePoint-oder globaler Administrator hat einen verwaisten Hub-Standort gelöscht, bei dem es sich um einen Hub-Standort handelt, dem keine Websites zugeordnet sind. Ein verwaister Hub wird wahrscheinlich durch das Löschen des ursprünglichen Hub-Standorts verursacht. <br/>|
 |Gelöscht an Verbindung gesendet  <br/> |SendToConnectionRemoved  <br/> |Ein SharePoint-oder globaler Administrator löscht eine senden-an-Verbindung auf der Seite "Datensatzverwaltung" im SharePoint Admin Center.  <br/> |
 |Gelöschte Website  <br/> |SiteDeleted  <br/> |Websiteadministrator löscht eine Website.  <br/> |
 |Aktivierte Dokumentvorschau  <br/> |PreviewModeEnabledSet  <br/> |Websiteadministrator aktiviert die Dokumentvorschau für eine Website.  <br/> |
 |Aktivierter älterer Workflow  <br/> |LegacyWorkflowEnabledSet  <br/> |Websiteadministrator oder Besitzer fügt der Website den Inhaltstyp für SharePoint 2013-Workflowtask hinzu. Globale Administratoren können auch im SharePoint Admin Center Workflows für die gesamte Organisation aktivieren.  <br/> |
 |Office on Demand aktiviert  <br/> |OfficeOnDemandSet  <br/> |Der Websiteadministrator aktiviert Office on Demand, wodurch Benutzer auf die neueste Version von Office-Desktopanwendungen zugreifen können. Office on Demand wird im SharePoint Admin Center aktiviert und erfordert ein Office 365-Abonnement, bei dem alle Office-Anwendungen installiert werden.  <br/> |
+|Aktivierte ergebnisquelle für Personen Suchvorgänge<br/>|PeopleResultsScopeSet<br/>|Der Websiteadministrator erstellt die ergebnisquelle für Personen Suchvorgänge für eine Website.<br/>|
 |Aktivierte RSS-Feeds  <br/> |NewsFeedEnabledSet  <br/> |Der Websiteadministrator oder Besitzer aktiviert RSS-Feeds für eine Website. Globale Administratoren können RSS-Feeds für die gesamte Organisation im SharePoint Admin Center aktivieren.  <br/> |
-|Geänderte Zugriffs Anforderungs Einstellung  <br/> |WebRequestAccessModified  <br/> |Die Einstellungen für die Zugriffsanforderung wurden auf einer Website geändert.  <br/> |
-|Geänderte Mitglieder können Einstellungen freigeben  <br/> |WebMembersCanShareModified  <br/> |Die Einstellung " **Mitglieder können freigeben** " wurde auf einer Website geändert.  <br/> |
-|Geänderte Websiteberechtigungen  <br/> |SitePermissionsModified  <br/> |Der Websiteadministrator oder Besitzer (oder Systemkonto) ändert die Berechtigungsstufe, die einer Gruppe auf einer Website zugewiesen ist. Diese Aktivität wird auch protokolliert, wenn alle Berechtigungen aus einer Gruppe entfernt werden.  <br/> > [!NOTE]> dieser Vorgang ist in SharePoint Online veraltet. Um verwandte Ereignisse zu finden, können Sie nach anderen Berechtigungs bezogenen Aktivitäten wie dem **hinzugefügten Websitesammlungsadministrator**, dem **hinzugefügten Benutzer oder der Gruppe zur SharePoint-Gruppe**, dem zulässigen **Benutzer zum Erstellen von Gruppen, der** **erstellten Gruppe**und dem Löschen suchen. ** Gruppe aus.**         |
-|Entfernter Benutzer oder eine Gruppe aus der SharePoint-Gruppe  <br/> |RemovedFromGroup  <br/> |Ein Benutzer hat ein Mitglied oder einen Gast aus einer SharePoint-Gruppe entfernt. Möglicherweise handelt es sich um eine vorsätzliche Aktion oder das Ergebnis einer anderen Aktivität, beispielsweise ein Freigabe Ereignis.  <br/> |
+|Verbundener Standort mit Hub-Standort<br/>|HubSiteJoined<br/>|Ein Websitebesitzer ordnet seine Website einem Hub-Standort zu.<br/>|
+|Registrierter Hub-Standort<br/>|HubSiteRegistered<br/>|Ein SharePoint-oder globaler Administrator erstellt einen Hub-Standort. Das Ergebnis ist, dass die Website als Hub-Standort registriert ist. <br/>|
+|Speicherort für zulässige Daten entfernt<br/>|AllowedDataLocationDeleted<br/>|Ein SharePoint-oder globaler Administrator hat einen zulässigen Datenspeicherort in einer Multi-Geo-Umgebung entfernt.<br/>|
+|Geo-Standort-Administrator entfernt<br/>|GeoAdminDeleted<br/>|Ein SharePoint-oder globaler Administrator hat einen Benutzer als Geo-Administrator eines Standorts entfernt.<br/>|
 |Umbenannter Standort  <br/> |SiteRenamed  <br/> |Websiteadministrator oder Besitzer benennt eine Website um  <br/> |
-|Angeforderte Websiteadministrator Berechtigungen  <br/> |SiteAdminChangeRequest  <br/> |Benutzeranforderungen, die als Websitesammlungsadministrator für eine Websitesammlung hinzugefügt werden sollen. Websitesammlungsadministratoren verfügen über Vollzugriff für die Websitesammlung und alle Unterwebsites.  <br/> |
 |Geplanter geografischer Standortwechsel  <br/> |SiteGeoMoveScheduled  <br/> |Ein SharePoint-oder globaler Administrator plant eine SharePoint-oder OneDrive-Website-geografische Verlagerung erfolgreich. Die Multi-Geo-Funktion ermöglicht eine Office 365 Organisation, die sich über mehrere Office 365 Rechenzentrums-Regionen erstreckt, die als GEOS bezeichnet werden. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Hostwebsite festlegen  <br/> |HostSiteSet  <br/> |Ein SharePoint-oder globaler Administrator ändert die festgelegte Website, um persönliche oder OneDrive für Unternehmen Websites zu hosten.  <br/> |
-|Aktualisierte Gruppe  <br/> |GroupUpdated  <br/> |Der Websiteadministrator oder Besitzer ändert die Einstellungen einer Gruppe für eine Website. Dazu kann das Ändern des Gruppennamens, das Anzeigen oder Bearbeiten der Gruppenmitgliedschaft und die Art der Verarbeitung von Mitgliedsanträgen gehören.  <br/> |
+|Festlegen des Speicherkontingents für den geografischen Standort  <br/> |GeoQuotaAllocated<br/> |Ein SharePoint-oder globaler Administrator hat das Speicherkontingent für einen geografischen Standort in einer Multi-Geo-Umgebung konfiguriert.<br/> |
+|Nicht verbundener Standort von Hub-Standort<br/>|HubSiteUnjoined<br/>|Ein Websitebesitzer trennt seine Website von einem Hub-Standort.<br/>|
+|Nicht registrierter Hub-Standort<br/>|HubSiteUnregistered<br/>|Ein SharePoint-oder globaler Administrator hebt die Registrierung eines Standorts als Hub-Standort auf. Wenn ein Hub-Standort nicht registriert ist, funktioniert er nicht mehr als Hub-Standort. <br/>|
 ||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange-Postfachaktivitäten
@@ -455,7 +511,7 @@ In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfach
 |Klassifizierte Nachricht als Datensatz  <br/> |ApplyRecordLabel<br/> |Eine Nachricht wurde als Datensatz klassifiziert. Dies tritt auf, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
 |Nachrichten in einen anderen Ordner kopiert  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
 |Erstelltes Postfachelement  <br/> |Erstellen  <br/> |Ein Element wird im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
-|Neue Posteingangsregel in Outlook-Webanwendung erstellt  <br/> |NewInboxRule<br/> |<br/> |
+|Neue Posteingangsregel in Outlook-Webanwendung erstellt  <br/> |NewInboxRule<br/> |Ein Benutzer hat eine neue Posteingangsregel in Outlook-webapp (OWA) erstellt.<br/> |
 |Gelöschte Nachrichten aus dem Ordner "Gelöschte Elemente"  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Diese Elemente werden in den Ordner "refundable Items" verschoben. Nachrichten werden auch in den Ordner "Wiederherstellbare Elemente" verschoben, wenn ein Benutzer Sie auswählt und **UMSCHALT + ENTF**drückt.  <br/> |
 |Nachrichten in einen anderen Ordner verschoben  <br/> |Move  <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |
 |Verschobene Nachrichten in den Ordner "Gelöschte Elemente"  <br/> |MoveToDeletedItems  <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
@@ -587,6 +643,37 @@ Eine Liste und eine ausführliche Beschreibung der protokollierten eDiscovery-Ak
 > [!NOTE]
 > Es dauert bis zu 30 Minuten für Ereignisse, die sich aus den unter **eDiscovery-Aktivitäten** aufgeführten Aktivitäten in der Dropdownliste **Aktivitäten** ergeben, die in den Suchergebnissen angezeigt werden sollen. Umgekehrt kann es bis zu 24 Stunden dauern, bis die entsprechenden Ereignisse aus eDiscovery-Cmdlet-Aktivitäten in den Suchergebnissen angezeigt werden. 
   
+### <a name="advanced-ediscovery-activities"></a>Erweiterte eDiscovery-Aktivitäten
+
+In der folgenden Tabelle sind Aktivitäten aufgeführt, die von IT-Experten und Juristen durchgeführt werden, die Aufgaben in Advanced eDiscovery in Microsoft 365 ausführen. Weitere Informationen finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](compliance20/overview-ediscovery-20.md).
+
+|**Anzeigename**|**Vorgang**|**Beschreibung**|
+|:-----|:-----|:-----|
+| Hinzufügen von Daten zu einem anderen Überprüfungs Satzes<br/>         | AddWorkingSetQueryToWorkingSet<br/>  |  Benutzer haben Dokumente aus einer Überprüfungsgruppe zu einem anderen Überprüfungs Sätze hinzugefügt.<br/>|
+| Hinzugefügte Daten zu Überprüfungs Sätzen <br/>                | AddQueryToWorkingSet<br/>            |  Der Benutzer hat die Suchergebnisse aus einer Inhaltssuche, die einem erweiterten eDiscovery-Fall zugeordnet ist, einem Überprüfungs Satzes hinzugefügt.<br/>|
+| Nicht Office 365E Daten zu Überprüfungs Sätzen hinzugefügt.<br/>  | AddNonOffice365DataToWorkingSet<br/> |  Benutzer hat einem Überprüfungs Satzes nicht Office 365 Daten hinzugefügt.<br/>|
+| Korrigierte Dokumente zu Überprüfungs Sätzen hinzugefügt<br/> | AddRemediatedData<br/>               |  Benutzer lädt Dokumente mit Indizierungs Fehlern hoch, die an einem Überprüfungs Satz fixiert wurden.<br/>|
+| Analysierte Daten in der Überprüfungsgruppe <br/>             | RunAlgo<br/>                         |  Der Benutzer hat Analysen für die Dokumente in einem Überprüfungs Satzes ausgeführt. <br/>|
+| Dokument mit Anmerkungen in der Überprüfungsgruppe <br/>        | AnnotateDocument<br/>                |  Ein Benutzer hat ein Dokument in einem Überprüfungs Satzes kommentiert. Annotation enthält einen Text, der in einem Dokument agiert. <br/>|
+| Vergleich von Lastsätzen <br/>                      | LoadComparisonJob<br/>               |Der Benutzer hat zwei verschiedene lastgruppen in einem Überprüfungs Satz verglichen. Ein Lastsatz ist, wenn Daten aus einer Inhaltssuche, die dem Fall zugeordnet sind, einem Überprüfungs Satzes hinzugefügt werden.  <br/>|
+| Konvertierte behandelte Dokumente in PDF<br/>      | BurnJob<br/>                         |Der Benutzer hat alle in einem Überprüfungs Dokument festgelegten Dokumente in PDF-Dateien konvertiert.<br/>|
+| Überprüfungsgruppe erstellt<br/>                       | Createworkingset<br/>                |Der Benutzer hat einen Überprüfungs Sätze erstellt.<br/>|
+| Erstellte Überprüfungs Sätze suchen<br/>                | CreateWorkingSetSearch<br/>          |Der Benutzer hat eine Suchabfrage erstellt, die die Dokumente in einem Überprüfungs Sätze durchsucht. <br/>|
+| Erstelltes Tag<br/>                              | CreateTag<br/>                       |Benutzer hat eine Tag-Gruppe in einem Überprüfungs Satzes erstellt. Eine Transpondergruppe kann ein oder mehrere untergeordnete Tags enthalten. Diese Tags werden dann zum Markieren von Dokumenten in der Überprüfungsgruppe verwendet.<br/>|
+| Suche nach gelöschten Überprüfungs Sätzen <br/>               | DeleteWorkingSetSearch<br/>          |Benutzer hat eine Suchabfrage in einem Überprüfungs Satzes gelöscht.<br/>|
+| Gelöschtes Tag<br/>                              | DeleteTag<br/>                       |Ein Benutzer hat ein Tag oder eine Tag-Gruppe in einem Überprüfungs Satzes gelöscht.<br/>|
+| Heruntergeladenes Dokument<br/>                      | DownloadDocument<br/>                |Ein Benutzer hat ein Dokument aus einer Überprüfungsgruppe heruntergeladen.<br/>|
+| Bearbeitetes Tag <br/>                              | DownloadDocument<br/>                |Der Benutzer hat ein Tag in einem Überprüfungs Satzes geändert.<br/>|
+| Exportierte Dokumente aus der Überprüfungsgruppe <br/>      | ExportJob<br/>                       |Benutzer hat Dokumente aus einem Überprüfungs Satzes exportiert.<br/>|
+| Geänderte Fall Einstellung <br/>                   | UpdateCaseSettings<br/>              | Der Benutzer hat die Einstellungen für einen Fall geändert. Zu den Fall Einstellungen gehören Fall Informationen, Zugriffsberechtigungen und Einstellungen, mit denen Such-und Analyseverhalten gesteuert werden.<br/>|
+| Suche für geänderte Überprüfungs Sätze<br/>               | UpdateWorkingSetSearch<br/>          |  Der Benutzer hat eine Suchabfrage in einem Überprüfungs Satzes bearbeitet.<br/>|
+| Vorschau der Überprüfungs Sätze suchen <br/>             | PreviewWorkingSetSearch<br/>         |  Der Benutzer hat eine Vorschau der Ergebnisse einer Suchabfrage in einem Überprüfungs Satzes angezeigt.<br/>|
+| Behobene Fehlerdokumente <br/>              | ErrorRemediationJob<br/>             |  Benutzer behebt Dateien, die Indizierungsfehler enthielten. <br/>|
+| Markiertes Dokument<br/>                          | TagFiles<br/>                        |  Ein Benutzer Kenn schreibt ein Dokument in einem Überprüfungs Satzes.<br/>|
+| Getaggte Ergebnisse einer Abfrage<br/>                | TagJob<br/>                          |  Benutzer Tags alle Dokumente, die den Kriterien der Suchabfrage in einem Überprüfungs Satzes entsprechen.<br/>|
+| Angezeigtes Dokument in Überprüfungsgruppe<br/>            | ViewDocument<br/>                    |  Ein Benutzer hat ein Dokument in einem Überprüfungs Satzes angezeigt.<br/>|
+|||
+
 ### <a name="power-bi-activities"></a>Power BI-Aktivitäten
   
 Sie können das Überwachungsprotokoll nach Aktivitäten in Power BI durchsuchen. Informationen zu Power BI-Aktivitäten finden Sie im Abschnitt "von Power Power BI geprüfte Aktivitäten" unter [Verwenden der Überwachung in Ihrer Organisation](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
