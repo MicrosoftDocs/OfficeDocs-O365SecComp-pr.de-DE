@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Verwenden Sie diesen Artikel als Leitfaden zum Konfigurieren der Features für den Bedrohungsschutz jetzt.
-ms.openlocfilehash: a9a2baccb4709b3e8d77f620281458d51ed0583a
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
+ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408390"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590578"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Schutz vor Bedrohungen in Office 365
 
@@ -42,7 +42,7 @@ Die Features für den Bedrohungsschutz sind in allen Office 365 Abonnements enth
 |Antiphishingschutz    | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
 |Erweiterter Schutz gegen Phishing    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Antispamschutz     | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
-|Automatische Bereinigung ohne Stunden (für e-Mail)    | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EoP        |
+|Automatische Bereinigung ohne Stunden (für e-Mail)    | [EoP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)        |
 |Überwachungsprotokollierung (wird für Berichtszwecke verwendet)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
 
 ### <a name="roles-and-permissions"></a>Rollen und Berechtigungen
