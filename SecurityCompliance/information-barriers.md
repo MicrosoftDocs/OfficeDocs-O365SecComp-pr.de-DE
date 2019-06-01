@@ -1,0 +1,76 @@
+---
+title: Übersicht über Informationsbarrieren
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.date: 05/31/2019
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.collection:
+- M365-security-compliance
+localization_priority: None
+description: Verwenden Sie Informationsbarrieren, um die Kommunikation mit Microsoft Teams in Ihrer Organisation sicherzustellen.
+ms.openlocfilehash: e52a62ca0b80aed577be1978b81c8a01ac2371b9
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34668300"
+---
+# <a name="information-barriers-preview"></a><span data-ttu-id="8bc9e-103">Informationsbarrieren (Vorschau)</span><span class="sxs-lookup"><span data-stu-id="8bc9e-103">Information barriers (Preview)</span></span>
+
+<span data-ttu-id="8bc9e-104">Microsoft Cloud Services umfassen leistungsstarke Funktionen für Kommunikation und Zusammenarbeit.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-104">Microsoft cloud services include powerful communication and collaboration capabilities.</span></span> <span data-ttu-id="8bc9e-105">Angenommen, Sie möchten die Kommunikation zwischen zwei Gruppen einschränken, um zu verhindern, dass in Ihrer Organisation ein Interessenkonflikt auftritt.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-105">But suppose that you want to restrict communications between two groups to avoid a conflict of interest from occurring in your organization.</span></span> <span data-ttu-id="8bc9e-106">Oder Sie möchten möglicherweise die Kommunikation zwischen bestimmten Personen innerhalb Ihrer Organisation einschränken, um interne Informationen zu schützen.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-106">Or, perhaps you want to restrict communications between certain people inside your organization in order to safeguard internal information.</span></span> <span data-ttu-id="8bc9e-107">Microsoft 365 ermöglicht die Kommunikation und Zusammenarbeit zwischen Gruppen und Organisationen, gibt es also eine Möglichkeit, die Kommunikation zwischen bestimmten Benutzergruppen einzuschränken, wenn dies erforderlich ist?</span><span class="sxs-lookup"><span data-stu-id="8bc9e-107">Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communications among specific groups of users when necessary?</span></span> <span data-ttu-id="8bc9e-108">Mit Informationsbarrieren, können Sie!</span><span class="sxs-lookup"><span data-stu-id="8bc9e-108">With information barriers, you can!</span></span> 
+
+<span data-ttu-id="8bc9e-109">Informationsbarrieren befinden sich jetzt in der Vorschau, beginnend mit Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-109">Information barriers are in preview now, beginning with Microsoft Teams.</span></span> <span data-ttu-id="8bc9e-110">Wenn diese Features für Ihre Organisation verfügbar sind, kann ein Administrator für Compliance-oder Informationsbarrieren Richtlinien definieren, um die Kommunikation zwischen Benutzergruppen in Microsoft Teams zuzulassen oder zu verhindern.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-110">When these features are available for your organization, a compliance administrator or information barriers administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams.</span></span> <span data-ttu-id="8bc9e-111">Richtlinien für Informationsbarrieren können für Situationen wie diese verwendet werden:</span><span class="sxs-lookup"><span data-stu-id="8bc9e-111">Information barrier policies can be used for situations like these:</span></span>
+
+- <span data-ttu-id="8bc9e-112">Ein Day Trader kann keine Person im Marketing Team anrufen</span><span class="sxs-lookup"><span data-stu-id="8bc9e-112">A day trader cannot call someone on the marketing team</span></span>
+- <span data-ttu-id="8bc9e-113">Finanz Personal, das an vertraulichen Unternehmensinformationen arbeitet, kann keine Anrufe von bestimmten Gruppen innerhalb Ihrer Organisation empfangen.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-113">Finance personnel working on confidential company information cannot receive calls from certain groups within their organization</span></span>
+- <span data-ttu-id="8bc9e-114">Ein internes Team mit Geschäfts geheimem Material kann nicht online mit Personen in bestimmten Gruppen innerhalb Ihrer Organisation anrufen oder chatten.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-114">An internal team with trade secret material cannot call or chat online with people in certain groups within their organization</span></span>
+- <span data-ttu-id="8bc9e-115">Ein Forschungsteam kann nur online mit einem Produktentwicklungsteam anrufen oder chatten</span><span class="sxs-lookup"><span data-stu-id="8bc9e-115">A research team can only call or chat online with a product development team</span></span>
+
+<span data-ttu-id="8bc9e-116">Für alle diese Beispielszenarien (und mehr) können Richtlinien für Informationsbarrieren definiert werden, um die Kommunikation in Microsoft Teams zu verhindern oder zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-116">For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications in Microsoft Teams.</span></span> <span data-ttu-id="8bc9e-117">Mithilfe solcher Richtlinien kann verhindert werden, dass Personen Anrufe oder Chats mit Personen durchlaufen, die Sie nicht haben sollten, oder dass Personen nur mit bestimmten Gruppen in Microsoft Teams kommunizieren können.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-117">Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams.</span></span> <span data-ttu-id="8bc9e-118">Wenn die Richtlinien für Informationsbarrieren wirksam sind und Benutzer, die von diesen Richtlinien abgedeckt werden, versuchen, mit anderen Personen in Microsoft Teams zu kommunizieren, werden Überprüfungen durchgeführt, um die Kommunikation zu verhindern (oder zulassen) (gemäß den Richtlinien für Informationsbarrieren).</span><span class="sxs-lookup"><span data-stu-id="8bc9e-118">With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate with others in Microsoft Teams, checks are done to prevent (or allow) communication (as defined by information barrier policies).</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="8bc9e-119">Informationsbarrieren gelten nicht für e-Mail-Kommunikationen oder für die Dateifreigabe über SharePoint Online oder OneDrive.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-119">Information barriers will not apply to email communications or to file sharing through SharePoint Online or OneDrive.</span></span>
+
+<span data-ttu-id="8bc9e-120">Richtlinien für Informationsbarrieren gelten für die folgenden Arten von Kommunikationsaktivitäten:</span><span class="sxs-lookup"><span data-stu-id="8bc9e-120">Information barrier policies apply to the following kinds of communication activities:</span></span>
+
+- <span data-ttu-id="8bc9e-121">Suchen nach Benutzer</span><span class="sxs-lookup"><span data-stu-id="8bc9e-121">Searching for user</span></span>
+- <span data-ttu-id="8bc9e-122">Hinzufügen eines Mitglieds zu einem Team</span><span class="sxs-lookup"><span data-stu-id="8bc9e-122">Adding a member to a team</span></span>
+- <span data-ttu-id="8bc9e-123">Starten einer Chatsitzung mit einer Person</span><span class="sxs-lookup"><span data-stu-id="8bc9e-123">Starting a chat session with someone</span></span>
+- <span data-ttu-id="8bc9e-124">Starten eines Gruppenchats</span><span class="sxs-lookup"><span data-stu-id="8bc9e-124">Starting a group chat</span></span> 
+- <span data-ttu-id="8bc9e-125">Einladen von Personen zum teilnehmen an einer Besprechung</span><span class="sxs-lookup"><span data-stu-id="8bc9e-125">Inviting someone to join a meeting</span></span>
+- <span data-ttu-id="8bc9e-126">Freigeben eines Bildschirms</span><span class="sxs-lookup"><span data-stu-id="8bc9e-126">Sharing a screen</span></span> 
+- <span data-ttu-id="8bc9e-127">Platzieren eines Anrufs</span><span class="sxs-lookup"><span data-stu-id="8bc9e-127">Placing a call</span></span>
+
+<span data-ttu-id="8bc9e-128">Wenn die beteiligten Personen in einer Informations Sperrrichtlinie enthalten sind, die die Aktivität verhindert, können Sie nicht fortfahren.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-128">If the people involved are included in an information barrier policy that prevents the activity, they will not be able to proceed.</span></span> <span data-ttu-id="8bc9e-129">Weitere Informationen zur Benutzererfahrung mit Informationsbarrieren finden Sie unter [Information Barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).</span><span class="sxs-lookup"><span data-stu-id="8bc9e-129">To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).</span></span>
+
+<span data-ttu-id="8bc9e-130">Derzeit werden Richtlinien für Informationsbarrieren mithilfe von PowerShell-Cmdlets definiert und in Office 365 verwaltet.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-130">Currently, information barrier policies are defined and managed in Office 365 by using PowerShell cmdlets.</span></span> <span data-ttu-id="8bc9e-131">Dies erfolgt in der Regel durch einen Kompatibilitäts Administrator oder einen globalen Administrator und erfordert Vertrautheit mit PowerShell-Cmdlets (und Parametern).</span><span class="sxs-lookup"><span data-stu-id="8bc9e-131">This is typically done by a compliance administrator or a global administrator, and requires familiarity with PowerShell cmdlets (and parameters).</span></span> <span data-ttu-id="8bc9e-132">Weitere Informationen finden Sie unter [PowerShell (zur Definition von Informationsbarrieren)](information-barriers-policies.md#powershell).</span><span class="sxs-lookup"><span data-stu-id="8bc9e-132">To learn more, see [PowerShell (for defining information barriers)](information-barriers-policies.md#powershell).</span></span>
+
+## <a name="required-licenses-and-permissions"></a><span data-ttu-id="8bc9e-133">Erforderliche Lizenzen und Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8bc9e-133">Required licenses and permissions</span></span>
+
+<span data-ttu-id="8bc9e-134">**Derzeit befindet sich das Feature "Informations Barriere" in privater Vorschau**.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-134">**Currently, the information barrier feature is in private preview**.</span></span> <span data-ttu-id="8bc9e-135">Wenn diese Features allgemein verfügbar sind, werden Sie in Abonnements eingeschlossen, beispielsweise:</span><span class="sxs-lookup"><span data-stu-id="8bc9e-135">When these features are generally available, they'll be included in subscriptions, such as:</span></span>
+
+- <span data-ttu-id="8bc9e-136">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="8bc9e-136">Microsoft 365 E5</span></span>
+- <span data-ttu-id="8bc9e-137">Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="8bc9e-137">Office 365 E5</span></span>
+- <span data-ttu-id="8bc9e-138">Office 365 Erweiterte Compliance</span><span class="sxs-lookup"><span data-stu-id="8bc9e-138">Office 365 Advanced Compliance</span></span>
+- <span data-ttu-id="8bc9e-139">Microsoft 365 E5 – Informationsschutz und Compliance</span><span class="sxs-lookup"><span data-stu-id="8bc9e-139">Microsoft 365 E5 Information Protection and Compliance</span></span>
+
+<span data-ttu-id="8bc9e-140">Weitere Informationen finden Sie unter [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).</span><span class="sxs-lookup"><span data-stu-id="8bc9e-140">For more details, see [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).</span></span>
+
+<span data-ttu-id="8bc9e-141">Um [Richtlinien für Informationsbarrieren zu definieren oder zu bearbeiten](information-barriers-policies.md), muss Ihnen eine der folgenden Rollen zugewiesen sein:</span><span class="sxs-lookup"><span data-stu-id="8bc9e-141">To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:</span></span>
+
+- <span data-ttu-id="8bc9e-142">Microsoft 365 globaler Administrator</span><span class="sxs-lookup"><span data-stu-id="8bc9e-142">Microsoft 365 global administrator</span></span>
+- <span data-ttu-id="8bc9e-143">Globaler Office 365-Administrator\ </span><span class="sxs-lookup"><span data-stu-id="8bc9e-143">Office 365 global administrator</span></span>
+- <span data-ttu-id="8bc9e-144">Compliance-Administrator</span><span class="sxs-lookup"><span data-stu-id="8bc9e-144">Compliance administrator</span></span>
+- <span data-ttu-id="8bc9e-145">Administrator für Informationsbarrieren</span><span class="sxs-lookup"><span data-stu-id="8bc9e-145">Information barriers administrator</span></span>
+
+<span data-ttu-id="8bc9e-146">Sie müssen mit PowerShell-Cmdlets vertraut sein, um Richtlinien für Informationsbarrieren zu definieren, zu validieren oder zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-146">You must be familiar with PowerShell cmdlets in order to define, validate, or edit information barrier policies.</span></span> <span data-ttu-id="8bc9e-147">Obwohl in den [Gewusst-wie-Informationen](information-barriers-policies.md)mehrere Beispiele für PowerShell-Cmdlets bereitgestellt werden, müssen Sie zusätzliche Details wie Parameter für Ihre Organisation kennen.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-147">Although we provide several examples of PowerShell cmdlets in the [how-to information](information-barriers-policies.md), you'll need to know additional details, such as parameters, for your organization.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="8bc9e-148">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="8bc9e-148">Next steps</span></span>
+
+- [<span data-ttu-id="8bc9e-149">Weitere Informationen zu Informationsbarrieren in Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="8bc9e-149">Learn more about information barriers in Microsoft Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [<span data-ttu-id="8bc9e-150">Siehe die Attribute, die für Richtlinien für Informationsbarrieren verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="8bc9e-150">See the attributes that can be used for information barrier policies</span></span>](information-barriers-attributes.md)
+- [<span data-ttu-id="8bc9e-151">Definieren von Richtlinien für Informationsbarrieren</span><span class="sxs-lookup"><span data-stu-id="8bc9e-151">Define policies for information barriers</span></span>](information-barriers-policies.md) 
+
