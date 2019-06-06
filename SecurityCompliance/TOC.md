@@ -77,19 +77,20 @@
 #### [Einrichten von Azure Rights Management für die vorherige Version der Office 365-Nachrichtenverschlüsselung](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 # Datensatzverwaltung
-## [Dateiplan-Manager](file-plan-manager.md)
-## [Aufbewahrungsbezeichnungen](labels.md)
-### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Datensatzverwaltung](records-management.md)
+## Dateiplan
+### [Dateiplan-Manager](file-plan-manager.md)
+### [Aufbewahrungsbezeichnungen](labels.md)
 ### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
-### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
-## [Dispositionsüberprüfungen](disposition-reviews.md)
-## Überwachen der Datensatzverwaltung
-### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
+### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
+### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
+## Veranstaltungen
+### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
+### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
+## [Disposition](disposition-reviews.md)
 ## Weitere Informationen zur Datensatzverwaltung
-### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
+### [Videos zur Datensatzverwaltung ansehen](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Verwalten der Datengovernance
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
@@ -223,21 +224,6 @@
 ## [Erkennen und Korrigieren von unerlaubter Zustimmung in Office 365](detect-and-remediate-illicit-consent-grants.md)
 ## [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
-# Datensatzverwaltung
-## [Datensatzverwaltung](records-management.md)
-## Dateiplan
-### [Dateiplan-Manager](file-plan-manager.md)
-### [Aufbewahrungsbezeichnungen](labels.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
-### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
-### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-## Veranstaltungen
-### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
-### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
-## [Disposition](disposition-reviews.md)
-## Weitere Informationen zur Datensatzverwaltung
-### [Videos zur Datensatzverwaltung ansehen](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Verwalten der Datengovernance
 ## [Importieren von Daten](importing-pst-files-to-office-365.md)
