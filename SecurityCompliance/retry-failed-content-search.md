@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Verwenden Sie die Schaltfläche Wiederholen zum Auflösen von Inhalts suchen mit fehlerhaften Inhaltsverzeichnissen.
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157067"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748568"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicher Fehlers
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Diese Fehler (mit Fehlercodes von CS008-009 und CS012-002) deuten darauf hin, dass die Inhaltssuche keine bestimmten inhaltsspeicherorte durchsucht. in diesem Beispiel wurden zwei Postfächer nicht durchsucht. Diese Fehler werden auf der Dropdown Seite Statusdetails der Inhaltssuche angezeigt.
+Diese Fehler (mit Fehlercodes von CS001-002, CS003-002, CS008-009, CS012-002 und anderen Fehlern im Format CS0XX-0xx) deuten darauf hin, dass die Inhaltssuche keine bestimmten inhaltsspeicherorte durchsucht; in diesem Beispiel wurden zwei Postfächer nicht durchsucht. Diese Fehler werden auf der Dropdown Seite Statusdetails der Inhaltssuche angezeigt.
 
 ## <a name="cause-of-content-location-errors"></a>Ursache für Fehler bei Inhaltsverzeichnissen
 

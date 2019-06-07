@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In Office 365 können Sie mit Aufbewahrungsbezeichnungen einen Aufbewahrungszeitraum darauf basieren, wann ein bestimmter Ereignistyp auftritt. Das Ereignis löst den Beginn des Aufbewahrungszeitraums aus, und auf alle Inhalte, denen eine Aufbewahrungsbezeichnung für diese Art von Ereignis zugewiesen wurde, werden die Aufbewahrungsaktionen dieser Bezeichnung angewendet. Die ereignisgesteuerte Aufbewahrung wird in der Regel als Teil eines Prozesses für die Datensatzverwaltung verwendet.
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154627"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728622"
 ---
 # <a name="overview-of-event-driven-retention"></a>Übersicht über die ereignisgesteuerte Aufbewahrung
 
@@ -103,7 +103,7 @@ Beachten Sie, dass der Ereignistyp nicht mehr geändert werden kann, sobald Sie 
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Schritt 3: Bezeichnung veröffentlichen oder automatisch anwenden
 
-Genau wie jede andere Bezeichnung müssen Sie auch eine ereignisbasierte Bezeichnung veröffentlichen oder automatisch anwenden, damit sie manuell oder automatisch auf Inhalte angewendet werden kann. Dies tun Sie auf der Seite **Bezeichnungen** oder **Bezeichnungsrichtlinien**. Beachten Sie, dass Bezeichnungen, die Inhalte als Datensatz klassifizieren, nur veröffentlicht und manuell auf Inhalte angewendet werden können. 
+Wie jede Bezeichnung müssen Sie auch ereignisbasierte Bezeichnungen veröffentlichen oder automatisch zuweisen, damit sie Inhalten manuell oder automatisch zugewiesen werden können. Sie können dies unter **Bezeichnungen** oder **Bezeichnungsrichtlinien** erledigen. 
   
 ![Optionen zum Veröffentlichen oder automatisch Anwenden einer Bezeichnung](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
