@@ -3,7 +3,7 @@ title: Erstellen und Verwalten inaktiver Postfächer in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfach in Office 365 erstellen, indem Sie eine Aufbewahrungsrichtlinie für halten oder Office 365 auf das Postfach anwenden und dann das entsprechende Office 365 Benutzerkonto löschen. Elemente in einem inaktiven Postfach werden für die Dauer des Haltestatus oder der Aufbewahrungsrichtlinie aufbewahrt, die auf Sie angewendet wurde, bevor Sie inaktiv gemacht wurde. Um ein inaktives Postfach endgültig zu löschen, entfernen Sie einfach die Aufbewahrungsrichtlinie.
-ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
+ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151227"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34768950"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Erstellen und Verwalten inaktiver Postfächer in Office 365
 
@@ -36,7 +36,7 @@ Office 365 ermöglicht es Ihnen, den Inhalt gelöschter Postfächer beizubehalte
     
 - Die mit dem gelöschten Exchange Online-Postfach verbundene Lizenz ist nach dem Löschen des entsprechenden Office 365-Benutzerkontos verfügbar. Anschließend können Sie [Benutzern in Office 365 für Unternehmen Lizenzen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) für einen anderen Benutzer zuweisen. 
     
-- Wenn vor dem Löschen des Postfachs für dieses kein Beweissicherungsverfahren aktiviert bzw. keine Office 365-Aufbewahrungsrichtlinie auf dieses angewendet wird, werden die Inhalte des Postfachs nicht beibehalten bzw. können diese nicht gefunden werden. Das gelöschte Postfach kann innerhalb von 30 Tagen nach dem Löschen wiederhergestellt werden; wird es nicht innerhalb von 30 Tagen wiederhergestellt, wird das Postfach samt Inhalten unwiderruflich gelöscht.
+- Wenn ein Beweissicherungsverfahren oder eine Office 365 Aufbewahrungsrichtlinie (die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden) nicht auf ein Postfach angewendet wird, bevor es gelöscht wird, wird der Inhalt des Postfachs nicht beibehalten oder kann nicht erkannt werden. Das gelöschte Postfach kann jedoch innerhalb von 30 Tagen nach dem Löschen wiederhergestellt werden, aber das Postfach und dessen Inhalte werden nach 30 Tagen endgültig gelöscht, wenn es nicht wiederhergestellt wird.
     
 - Weitere Informationen zum Beweissicherungsverfahren finden Sie unter [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Weitere Informationen zu Office 365-Aufbewahrungsrichtlinien finden Sie unter [Übersicht über Aufbewahrungsrichtlinien in Office 365](retention-policies.md).
   
@@ -46,7 +46,7 @@ Die Deaktivierung eines Postfachs umfasst zwei Schritte: 1) Platzieren des Postf
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>Schritt 1: Aktivieren des Beweissicherungsverfahrens für das Postfach oder Anwenden einer Office 365-Aufbewahrungsrichtlinie auf das Postfach
 
-Durch Aktivieren des Beweissicherungsverfahrens für ein Postfach oder Anwenden einer Office 365-Aufbewahrungsrichtlinie auf das Postfach werden alle Inhalte des Postfachs beibehalten, bevor es gelöscht wird. Bei beiden Verfahren bleiben sämtliche Postfachinhalte einschließlich gelöschter Elemente und Originalversionen geänderter Elemente erhalten. Gelöschte und geänderte Elemente verbleiben für einen bestimmten Zeitraum im inaktiven Postfach oder solange, bis das inaktive Postfach endgültig gelöscht wird, indem die Archivierung deaktiviert wird oder die auf das inaktive Postfach angewendete Aufbewahrungsrichtlinie entfernt wird.
+Wenn Sie ein Postfach auf ein Beweissicherungsverfahren setzen oder eine Office 365 Aufbewahrungsrichtlinie anwenden (die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und anschließend gelöscht werden), werden die Inhalte im Postfach beibehalten, bevor Sie gelöscht werden. Bei beiden Verfahren bleiben sämtliche Postfachinhalte einschließlich gelöschter Elemente und Originalversionen geänderter Elemente erhalten. Gelöschte und geänderte Elemente verbleiben für einen bestimmten Zeitraum im inaktiven Postfach oder solange, bis das inaktive Postfach endgültig gelöscht wird, indem die Archivierung deaktiviert wird oder die auf das inaktive Postfach angewendete Aufbewahrungsrichtlinie entfernt wird.
   
 Wenn bereits eine Archivierung für ein Postfach aktiviert ist oder wenn bereits eine Office 365-Aufbewahrungsrichtlinie darauf angewendet wurde, müssen Sie lediglich das entsprechende Office 365-Benutzerkonto löschen, wie in Schritt 2 erläutert.
   
@@ -102,7 +102,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Durchsuchen und Exportieren der Inhalte eines inaktiven Postfachs
 
-Sie können auf die Inhalte des inaktiven Postfachs mithilfe des Tools zur Inhaltssuche im Security & Compliance Center zugreifen. Wenn Sie ein inaktives Postfach durchsuchen, können Sie eine Schlüsselwort-Suchabfrage erstellen, um nach bestimmten Elementen zu suchen, oder Sie können den gesamten Inhalt des inaktiven Postfachs zurückgeben. Sie können die Suchergebnisse in einer Vorschau anzeigen oder die Suchergebnisse in eine Outlook-Datendatei (.pst) oder als einzelne E-Mail-Nachrichten exportieren. Eine Schritt-für-Schritt-Anleitung zum Durchsuchen von Postfächern und Exportieren der Suchergebnisse finden Sie in den folgenden Themen:
+Sie können auf die Inhalte des inaktiven Postfachs mithilfe des Tools zur Inhaltssuche im Security #a0 Compliance Center zugreifen. Wenn Sie ein inaktives Postfach durchsuchen, können Sie eine Schlüsselwort-Suchabfrage erstellen, um nach bestimmten Elementen zu suchen, oder Sie können den gesamten Inhalt des inaktiven Postfachs zurückgeben. Sie können die Suchergebnisse in einer Vorschau anzeigen oder die Suchergebnisse in eine Outlook-Datendatei (.pst) oder als einzelne E-Mail-Nachrichten exportieren. Eine Schritt-für-Schritt-Anleitung zum Durchsuchen von Postfächern und Exportieren der Suchergebnisse finden Sie in den folgenden Themen:
   
 - [Inhaltssuche in Office 365](content-search.md)
     
