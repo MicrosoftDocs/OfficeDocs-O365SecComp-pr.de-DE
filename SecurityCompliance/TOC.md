@@ -10,7 +10,6 @@
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ### [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 ### [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md)
-## [Übersicht über das Sicherheits-Dashboard](security-dashboard.md)
 ## [Verwenden Ihres kostenlosen Azure Active Directory-Abonnements](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planen von Sicherheit und Compliance in Office 365](plan-for-security-and-compliance.md)
 ## [Chief Informationen Security Officer (CISO) – Workshop-Schulung](ciso-workshop.md)
@@ -180,12 +179,19 @@
 ### [Verwenden von DKIM zum Überprüfen ausgehender E-Mails](use-dkim-to-validate-outbound-email.md)
 ### [Unterstützung für die Validierung von mit DKIM signierten Nachrichten](support-for-validation-of-dkim-signed-messages.md)
 ### [Verwenden von DMARC zum Überprüfen von E-Mails](use-dmarc-to-validate-email.md)
-## [Intelligente Berichte und Einblicke im Security & Compliance Center](reports-and-insights-in-security-and-compliance.md) 
+## [Intelligente Berichte und Einblicke im Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+### [Übersicht über das Sicherheits-Dashboard](security-dashboard.md) 
+#### [Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick](from-a-detailed-report-to-an-insight.md)
+#### [Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht](from-an-insight-to-a-detailed-report.md)
+#### [Exemplarische Vorgehensweise – Vom Dashboard zum Einblick](from-a-dashboard-to-an-insight.md)
+#### [Erstellen eines Zeitplans für einen Bericht](create-a-schedule-for-a-report.md)
+#### [Verwalten von Zeitplänen für mehrere Berichte](manage-schedules-for-multiple-reports.md)
+#### [Einrichten und Herunterladen eines benutzerdefinierten Berichts](set-up-and-download-a-custom-report.md)
+#### [Herunterladen von vorhandenen Berichten](download-existing-reports.md)
+### [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md)
 ### [Anzeigen von Informationen über schädlichen Dateien](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)
-### [Exemplarische Vorgehensweise – Vom detaillierten Bericht zum Einblick](from-a-detailed-report-to-an-insight.md)
-### [Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht](from-an-insight-to-a-detailed-report.md)
-### [Exemplarische Vorgehensweise – Vom Dashboard zum Einblick](from-a-dashboard-to-an-insight.md)
+
 # [Advanced Threat Protection ](office-365-atp.md)
 ## Die wichtigsten ATP-Einrichtungsaufgaben für Administratoren
 ### Globale Einrichtungsaufgaben für Administratoren
@@ -212,10 +218,10 @@
 ### [SIEM Integration in Office 365 ATP](siem-integration-with-office-365-ti.md)
 ## Funktionsweise von ATP
 ### [Funktionsweise des ATP-Features für sichere Links](how-atp-safe-links-works.md)
-### [Details zu dynamischer Bereitstellung und Vorschau](dynamic-delivery-and-previewing.md)
-## [Funktionsweise von sicheren Anlagen in ATP](how-atp-safe-attachments-works.md)
-### [Zur Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md)
+### [Funktionsweise von sicheren Anlagen in ATP](how-atp-safe-attachments-works.md)
+#### [Details zu dynamischer Bereitstellung und Vorschau](dynamic-delivery-and-previewing.md)
 ### [Wie die Untersuchung von und Antwort auf Bedrohungen funktioniert](get-started-with-ti.md)
+#### [Zur Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md)
 ### [Wie die automatische Untersuchung und Reaktion funktioniert](automated-investigation-response-office.md)
 ### [Identifizieren verdächtiger Nachrichten in Outlook.com und Outlook im Web](unverified-sender-feature.md)
 
@@ -484,11 +490,6 @@
 ### [Überwachen von Geräten in Microsoft 365 Security](monitor-devices.md)
 ### [Überwachen von Apps in Microsoft 365 Security](monitor-apps.md)
 ## [Warnungsrichtlinien](alert-policies.md)
-### [Erstellen eines Zeitplans für einen Bericht](create-a-schedule-for-a-report.md)
-### [Verwalten von Zeitplänen für mehrere Berichte](manage-schedules-for-multiple-reports.md)
-### [Einrichten und Herunterladen eines benutzerdefinierten Berichts](set-up-and-download-a-custom-report.md)
-### [Herunterladen von vorhandenen Berichten](download-existing-reports.md)
-## [Aktivieren oder Deaktivieren von Sicherheitstipps in Office 365](enable-or-disable-safety-tips.md)
 
 # Nachrichtenübermittlung
 ## [Aktivieren des Berichtsnachrichts-Add-Ins](enable-the-report-message-add-in.md)
