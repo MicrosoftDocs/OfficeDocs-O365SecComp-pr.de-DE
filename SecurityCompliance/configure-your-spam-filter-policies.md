@@ -13,48 +13,51 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Zu den grundlegenden spamfiltereinstellungen gehören das Auswählen der Aktion für Nachrichten, die als Spam identifiziert werden, und das auswählen, ob Nachrichten gefiltert werden sollen, die in bestimmten Sprachen verfasst oder aus bestimmten Ländern oder Regionen gesendet werden.
-ms.openlocfilehash: c52c82c32c32383e4fb2df173aa98518ac52b115
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+description: Zu den grundlegenden spamfiltereinstellungen gehören das Auswählen der Aktion, die für Nachrichten ausgeführt werden soll, die als Spam identifiziert werden.
+ms.openlocfilehash: be99c017a5038fbfb431edbcf2d65c877d92388c
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490521"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857655"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Konfigurieren von Spamfilterrichtlinien
-  
-Zu den grundlegenden spamfiltereinstellungen gehören das Auswählen der Aktion, die für Nachrichten ausgeführt werden soll, die als Spam identifiziert werden. Einstellungen für Spam Filterrichtlinien werden nur eingehenden Nachrichten angewendet. Sie können die standardmäßige Spamfilter Richtlinie bearbeiten, um Ihre unternehmensweiten spamfiltereinstellungen zu konfigurieren und benutzerdefinierte Spamfilter Richtlinien zu erstellen und diese dann auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anzuwenden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Reihenfolge ändern, in der Ihre benutzerdefinierten Richtlinien ausgeführt werden, indem Sie die Priorität der einzelnen benutzerdefinierten Richtlinien ändern. Es gilt jedoch nur die Richtlinie mit der höchsten Priorität, wenn mehrere Richtlinien den festgelegten Kriterien entsprechen.
-  
-> [!IMPORTANT]
-> Für Kunden der eigenständigen Exchange Online Protection (EOP)-Lösung: Standardmäßig leiten die EOP-Spamfilter als Spam erkannte Nachrichten an den Junk-E-Mail-Ordner der einzelnen Empfänger weiter. Um jedoch sicherzustellen, dass die Aktion **Nachricht in Junk-e-Mail-Ordner verschieben** für lokale Postfächer funktioniert, müssen Sie Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um Spam Kopfzeilen zu erkennen, die von hinzugefügt werden. EoP. Weitere Informationen finden Sie unter [Sicherstellen, dass Spam an die Junk-E-Mail-Ordner der einzelnen Benutzer geleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
-  
+Zu den spamfiltereinstellungen gehört das Auswählen der Aktion, die für Nachrichten ausgeführt werden soll, die als Spam identifiziert werden. Einstellungen für Spam Filterrichtlinien werden nur für eingehende Nachrichten angewendet, und es gibt zwei Typen:
+
+  - Standard: die standardmäßige Spamfilter Richtlinie wird zum Konfigurieren von unternehmensweiten spamfiltereinstellungen verwendet. Diese Richtlinie kann nicht umbenannt werden und ist immer eingeschaltet.
+
+  - Benutzerdefiniert: benutzerdefinierte Spamfilter Richtlinien können Granular sein und auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation angewendet werden. Benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Sie können die Reihenfolge ändern, in der Ihre benutzerdefinierten Richtlinien ausgeführt werden, indem Sie die Priorität der einzelnen benutzerdefinierten Richtlinien ändern. Wenn mehrere Richtlinien den festgelegten Kriterien entsprechen, gilt jedoch nur die höchste Priorität (d. h. die am nächsten an 0) liegende Richtlinie.
+
 ## <a name="what-you-must-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
 
 Geschätzte Zeit bis zum Abschließen des Vorgangs: 30 Minuten
   
-Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter Anti-Spam-Eintrag im [Feature Berechtigungen in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) Thema. 
-  
-Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen im Exchange Admin Center**.
-  
-## <a name="use-the-security--compliance-center-scc-to-configure-spam-filter-policies"></a>Verwenden des Security & Compliance Center (SCC) zum Konfigurieren von Spamfilter Richtlinien
+Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter Anti-Spam-Eintrag im [Feature Berechtigungen in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) Thema.
 
-1. Navigieren Sie im Security & Compliance Center (SCC) zu **Threat Management** \> **Policy** \> **Anti-Spam**.
-    
-2. Führen Sie auf der Seite **Anti-Spam-Einstellungen** einen der folgenden Schritte aus: 
-    
-      - Überprüfen Sie die standardmäßige unternehmensweite Richtlinie unter den Standardeinstellungen.
-    
-      - Klicken Sie auf die Registerkarte **Benutzerdefiniert** , ändern Sie die **** Auswahl für **benutzerdefinierte Einstellungen** in ![ein,](media/ITPro-EAC-AddIcon.gif) und klicken Sie auf die Schaltfläche Add-Symbol **Erstellen einer Richtlinie** , um eine neue benutzerdefinierte Spamfilter Richtlinie zu erstellen, die auf Benutzer, Gruppen und Benutzer angewendet werden kann. Domänen in Ihrer Organisation. Die können auch vorhandene benutzerdefinierte Richtlinien bearbeiten, in dem Sie darauf doppelklicken. 
-    
-3. Geben Sie für benutzerdefinierte Richtlinien nur einen Namen für die Richtlinie ein. Optional können Sie auch eine ausführlichere Beschreibung angeben. Die Standardrichtlinie kann nicht umbenannt werden.<br/><br/>Hinweis: Wenn Sie eine Richtlinie erstellen, werden alle Konfigurationseinstellungen auf einem einzelnen Bildschirm angezeigt. Wenn Sie dagegen eine Richtlinie bearbeiten, müssen Sie durch mehrere Bildschirme navigieren. Die Einstellungen sind in beiden Fällen gleich, aber im Rest dieses Verfahrens wird beschrieben, wie Sie beim Bearbeiten einer Richtlinie auf diese Einstellungen zugreifen. 
-  
-4. Wählen Sie im Abschnitt **Spam-und Massenaktionen** unter **Spam**, Spam mit **hoher Vertrauens**Würdigkeit, **Phishing-e-** Mails und **Massen-e-Mails**die Aktion aus, die für eingehende Junkies ausgeführt werden soll. Die verfügbaren Werte sind: 
+Die Einstellungen für die Spamfilter Richtlinie befinden sich alle im Security #a0 Compliance Center (SCC). Weitere Informationen finden [Sie unter Wechseln zum Office 365 Security #a0 Compliance Center](go-to-the-securitycompliance-center.md). Die Seite Anti-Spam-Einstellungen befindet sich im \> Abschnitt **Anti-Spam** im SCC **Threat Management** \> - **Richtlinie** \> .
 
-      - **Nachricht in Junk-e-Mail-Ordner umlegen:** Sendet die Nachricht an den Junk-e-Mail-Ordner der angegebenen Empfänger. Dies ist die Standardaktion für Spam, Spam mit hoher Zuverlässigkeit und Massen.
+## <a name="access-and-create-spam-filter-policies"></a>Zugreifen auf und Erstellen von Spamfilter Richtlinien
 
- **Wichtig**: für Kunden mit Exchange Online Protection (EoP): damit diese Aktion mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln auf Ihren lokalen Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu erkennen. Ausführliche Informationen finden Sie unter so [Stellen Sie sicher, dass Spam an den Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
- 
-      - **X-Header hinzufügen:** Sendet die Nachricht an die angegebenen Empfänger, fügt jedoch dem Nachrichtenkopf X-HeaderText hinzu, um die Nachricht als Spam zu identifizieren. Wenn Sie diesen Text als Bezeichner verwenden, können Sie optional Posteingangsregeln erstellen oder ein Downstream-Gerät verwenden, um die Nachricht zu bearbeiten. Der standardmäßige X-Headertext lautet in etwa **Diese Nachricht ist offenbar Spam**.<br/>Sie können den Text der x-Kopfzeile mithilfe des Texteingabefelds **diese x-Kopfzeile hinzufügen** anpassen. Wenn Sie den Text der X-Kopfzeile anpassen, beachten Sie die folgenden Bedingungen: 
+Auf der Seite Anti-Spam-Einstellungen können die Standardeinstellungen auf der Registerkarte Standard angezeigt werden. Um diese Einstellungen zu ändern, wechseln Sie zur Registerkarte **Benutzerdefiniert** . Sie können einige der Standardeinstellungen in der standardmäßigen Spamfilter Richtlinie anzeigen und konfigurieren.
+
+Um weitere benutzerdefinierte Einstellungen zu ermöglichen oder benutzerdefinierte Richtlinien hinzuzufügen, ändern Sie die Auswahl für **benutzerdefinierte Einstellungen** in **ein** , um benutzerdefinierte Spamfilter Richtlinien zu aktivieren. Sie können vorhandene benutzerdefinierte Richtlinien anzeigen, indem Sie Sie von hier aus erweitern.
+
+## <a name="configure-custom-spam-filter-policy-settings"></a>Konfigurieren von benutzerdefinierten Einstellungen für Spamfilter Richtlinien
+
+1. Wählen Sie und klicken Sie auf **Richtlinie bearbeiten** , wenn Sie eine Richtlinie bearbeiten; Klicken Sie andernfalls auf **Richtlinie erstellen** .
+
+2. Sie können einen eindeutigen Namen für benutzerdefinierte Richtlinien angeben, aber die Standardrichtlinie kann nicht umbenannt werden. Optional können Sie auch eine ausführlichere Beschreibung für jede Richtlinie angeben.
+
+3. Im Abschnitt **Spam-und Massenaktionen** :
+
+  - Wählen Sie eine Aktion für die **Spam**-, **High Confidence Spam**-, **Phishing-e-Mail**-und **Massen-e-Mail-** Typen aus. Die verfügbaren Werte sind: 
+
+    - **Nachricht in Junk-e-Mail-Ordner umlegen:** Sendet die Nachricht an den Junk-e-Mail-Ordner der angegebenen Empfänger. Dies ist die Standardaktion für Spam, Spam mit hoher Zuverlässigkeit und Massen.<br/><br/>
+
+    > [!NOTE]
+    > Damit diese Aktion mit lokalen Postfächern funktioniert, müssen Sie zwei Exchange-Nachrichtenfluss Regeln (auch bekannt als Transportregeln) auf Ihren lokalen Servern konfigurieren, um von EoP hinzugefügte Spam Kopfzeilen zu erkennen. Ausführliche Informationen finden Sie unter so [Stellen Sie sicher, dass Spam an den Junk-e-Mail-Ordner der einzelnen Benutzer weitergeleitet wird](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Dieser Schritt ist für eigenständige Kunden mit Exchange Online Protection (EoP) von entscheidender Bedeutung.
+
+    - **X-Header hinzufügen:** Sendet die Nachricht an die angegebenen Empfänger, fügt jedoch dem Nachrichtenkopf X-HeaderText hinzu, um die Nachricht als Spam zu identifizieren. Wenn Sie diesen Text als Bezeichner verwenden, können Sie optional Posteingangsregeln erstellen oder ein Downstream-Gerät verwenden, um die Nachricht zu bearbeiten. Der standardmäßige X-Headertext lautet in etwa **Diese Nachricht ist offenbar Spam**.<br/>Sie können den Text der x-Kopfzeile mithilfe des Texteingabefelds **diese x-Kopfzeile hinzufügen** anpassen. Wenn Sie den Text der X-Kopfzeile anpassen, beachten Sie die folgenden Bedingungen: 
     
       - Wenn \< Sie nur die Kopfzeile im Format- *Header*\>angeben, in der keine Leerzeichen in der \< *Kopfzeile*\>vorhanden sind, wird ein Doppelpunkt an den benutzerdefinierten Text angehängt, gefolgt von dem Standardtext.       Wenn Sie beispielsweise "This-is-My-Custom-Header" angeben, wird der Text der X-Kopfzeile als "This-is-My-Custom-Header: Diese Nachricht scheint Spam" angezeigt. 
         
@@ -64,17 +67,17 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
       
       - Beachten Sie, dass e-Mail-Nachrichten mit dieser X-Kopfzeile aufgrund der Post Fach Junk-Konfiguration möglicherweise weiterhin in den Postfachordner Junk-e-Mail verschoben werden Sie können dies ändern, indem Sie dieses Feature mit der Option "MailboxJunkEmailConfiguration" deaktivieren.
 
-      - **Betreff-Zeile wird mit Text voran gestellt:** Sendet die Nachricht an die beabsichtigten Empfänger, stellt jedoch der Betreffzeile den Text voran, den Sie in der **Zeile Präfix Betreff mit diesem Text** Eingabefeld angeben. Wenn Sie diesen Text als Bezeichner verwenden, können Sie optional Regeln erstellen, um die Nachrichten nach Bedarf zu filtern oder weiterzuleiten. 
+    - **Betreff-Zeile wird mit Text voran gestellt:** Sendet die Nachricht an die beabsichtigten Empfänger, stellt jedoch der Betreffzeile den Text voran, den Sie in der **Zeile Präfix Betreff mit diesem Text** Eingabefeld angeben. Wenn Sie diesen Text als Bezeichner verwenden, können Sie optional Regeln erstellen, um die Nachrichten nach Bedarf zu filtern oder weiterzuleiten. 
+
+    - **Nachricht an e-Mail-Adresse umleiten:** Sendet die Nachricht an eine festgelegte e-Mail-Adresse statt an die vorgesehenen Empfänger. Geben Sie im Eingabefeld **Nachricht an E-Mail-Adresse umleiten** die Adresse ein, an die die Umleitung erfolgen soll.
+
+    - **Nachricht löschen:** Löscht die gesamte Nachricht, einschließlich aller Anlagen. 
         
-      - **Nachricht an e-Mail-Adresse umleiten:** Sendet die Nachricht an eine festgelegte e-Mail-Adresse statt an die vorgesehenen Empfänger. Geben Sie im Eingabefeld **Nachricht an E-Mail-Adresse umleiten** die Adresse ein, an die die Umleitung erfolgen soll.
+    - **Quarantäne Nachricht:** Sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Dies ist die Standardaktion für Phishing. Geben Sie bei Auswahl dieser Option im Eingabefeld **Spamnachrichten aufbewahren für (Tage)** die Anzahl der Tage an, für die die Nachricht in Quarantäne bleiben soll. (Nach Ablauf des angegebenen Zeitraums wird die Nachricht automatisch gelöscht. Der Standardwert ist 30 Tage, was der Maximalwert ist. Der Mindestwert ist 1 Tag.)<br/><br/>Tipp: Informationen dazu, wie Administratoren e-Mail-Nachrichten verwalten können, die sich in der Exchange-Verwaltungskonsole in der Quarantäne befinden, finden Sie unter [Quarantine](quarantine.md) and [Find and Release Quarantined Messages as a Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > Informationen zum Konfigurieren von Spambenachrichtigungen, die an Benutzer gesendet werden sollen, finden Sie unter [configure End-User Spam Notifications in EoP](configure-end-user-spam-notifications-in-eop.md) oder [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
 
-      - **Nachricht löschen:** Löscht die gesamte Nachricht, einschließlich aller Anlagen. 
-        
-      - **Quarantäne Nachricht:** Sendet die Nachricht an die Quarantäne statt an die vorgesehenen Empfänger. Dies ist die Standardaktion für Phishing. Geben Sie bei Auswahl dieser Option im Eingabefeld **Spamnachrichten aufbewahren für (Tage)** die Anzahl der Tage an, für die die Nachricht in Quarantäne bleiben soll. (Nach Ablauf des angegebenen Zeitraums wird die Nachricht automatisch gelöscht. Der Standardwert ist 30 Tage, was der Maximalwert ist. Der Mindestwert ist 1 Tag.)<br/><br/>Tipp: Informationen dazu, wie Administratoren e-Mail-Nachrichten verwalten können, die sich in der Exchange-Verwaltungskonsole in der Quarantäne befinden, finden Sie unter [Quarantine](quarantine.md) and [Find and Release Quarantined Messages as a Administrator](find-and-release-quarantined-messages-as-an-administrator.md). > Informationen zum Konfigurieren von Spambenachrichtigungen, die an Benutzer gesendet werden sollen, finden Sie unter [configure End-User Spam Notifications in EoP](configure-end-user-spam-notifications-in-eop.md) oder [configure End-User Spam Notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+  - Konfigurieren **Wählen Sie den Schwellenwert** aus, um festzulegen, wie Massen-e-Mails als Spam behandelt werden sollen, basierend auf der Massen Reklamations Ebene (BCL) der Nachricht. Sie können eine Schwellenwerteinstellung zwischen 1–9 auswählen, wobei 1 die meisten Massensendungen als Spam markiert und 9 die meisten Massensendungen als übermittelbar zulässt. Der Dienst führt dann die konfigurierte Aktion aus, beispielsweise das Senden der Nachricht an den Junk-e-Mail-Ordner des Empfängers. Weitere Informationen finden Sie unter [Bulk Complaint Level values](bulk-complaint-level-values.md) und [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md). 
 
-5. Unter **Bulk E-Mail** können Sie einen Schwellenwert auswählen, ab dem Massen-E-Mails wie Spam behandelt werden sollen. Dieser Schwellenwert basiert auf der Massen Reklamations Ebene (BCL) der Nachricht. Sie können eine Schwellenwerteinstellung zwischen 1–9 auswählen, wobei 1 die meisten Massensendungen als Spam markiert und 9 die meisten Massensendungen als übermittelbar zulässt. Der Dienst führt dann die konfigurierte Aktion aus, beispielsweise das Senden der Nachricht an den Junk-e-Mail-Ordner des Empfängers. Weitere Informationen finden Sie unter [Bulk Complaint Level values](bulk-complaint-level-values.md) und [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md). 
-
-6. Auf der Seite **Spam Eigenschaften** können Sie die Optionen für den Test Modus für die Richtlinie festlegen, indem Sie Folgendes konfigurieren: 
+4. Auf der Seite **Spam Eigenschaften** können Sie die Optionen für den Test Modus für die Richtlinie festlegen, indem Sie Folgendes konfigurieren: 
     
       - **Keine** Es werden keine Testmodusaktionen bezüglich der Nachricht ausgeführt. Hierbei handelt es sich um die Standardeinstellung. 
         
@@ -82,7 +85,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
         
       - **Bcc-Nachricht an diese Adresse senden** Wenn Sie diese Option auswählen, wird eine Blindkopie der Nachricht an die e-Mail-Adresse gesendet, die Sie im Eingabefeld angeben. <br/><br/>Weitere Informationen zu den erweiterten Spamfilter Optionen, einschließlich Beschreibungen zu jeder Option und dem jedem einzelnen zugeordneten X-Header-Text, finden Sie unter [Advanced Spam Filtering Options](advanced-spam-filtering-asf-options.md).
 
-7. Klicken Sie für benutzerdefinierte Richtlinien nur auf das Menüelement **anwenden auf** , und erstellen Sie dann eine bedingungsbasierte Regel, um die Benutzer, Gruppen und Domänen anzugeben, auf die diese Richtlinie angewendet werden soll. Sie können mehrere Bedingungen angeben, wenn diese eindeutig sind. 
+5. Klicken Sie für benutzerdefinierte Richtlinien nur auf das Menüelement **anwenden auf** , und erstellen Sie dann eine bedingungsbasierte Regel, um die Benutzer, Gruppen und Domänen anzugeben, auf die diese Richtlinie angewendet werden soll. Sie können mehrere Bedingungen angeben, wenn diese eindeutig sind. 
     
       - Um Benutzer auszuwählen, wählen Sie **Der Empfänger ist** aus. Wählen Sie im folgenden Dialogfeld in der Benutzerauswahlliste den bzw. die Absender in Ihrem Unternehmen aus, und klicken Sie dann auf **Hinzufügen**. Wenn Sie Absender hinzufügen möchten, die nicht in der Liste enthalten sind, geben Sie deren E-Mail-Adressen ein, und klicken Sie auf **Namen überprüfen**. In diesem Feld können Sie auch Platzhalterzeichen für mehrere E-Mail-Adressen verwenden (z. B.: \*@ _domainname_). Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf **OK**, um zum Hauptbildschirm zurückzukehren. 
         
@@ -90,7 +93,7 @@ Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden S
         
       - Um Domänen auszuwählen, wählen Sie **Empfängerdomäne ist** aus, und fügen Sie dann im folgenden Dialogfeld die Domänen hinzu. Klicken Sie auf **OK**, um zum Hauptbildschirm zurückzukehren.<br/><br/>Sie können Ausnahmen innerhalb der Regel erstellen. So können Sie beispielsweise Nachrichten aus allen Domänen mit Ausnahme einer bestimmten Domäne filtern. Klicken Sie auf **Ausnahme hinzufügen**, und erstellen Sie dann Ihre Ausnahmebedingungen ähnlich wie die anderen Bedingungen.<br/><br/>Das Anwenden einer Spamrichtlinie auf eine Gruppe wird nur für **E-Mail-aktivierte Sicherheitsgruppen** unterstützt. 
   
-8. Klicken Sie auf **Speichern**. Im Bereich auf der rechten Seite wird eine Zusammenfassung der Richtlinieneinstellungen angezeigt.
+6. Klicken Sie auf **Speichern**. Im Bereich auf der rechten Seite wird eine Zusammenfassung der Richtlinieneinstellungen angezeigt.
 
 Die Standardrichtlinie kann nicht deaktiviert oder gelöscht werden, und benutzerdefinierte Richtlinien haben immer Vorrang vor der Standardrichtlinie. Für benutzerdefinierte Richtlinien können Sie die Kontrollkästchen in der Spalte **aktiviert** aktivieren oder deaktivieren. Standardmäßig sind alle Richtlinien aktiviert. Um eine benutzerdefinierte Richtlinie zu löschen, wählen Sie die ![Richtlinie](media/ITPro-EAC-DeleteIcon.gif) **** aus, klicken Sie auf das Symbol Löschen, und bestätigen Sie, dass Sie die Richtlinie löschen möchten.
 

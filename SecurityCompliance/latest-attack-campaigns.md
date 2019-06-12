@@ -1,7 +1,7 @@
 ---
-title: Verstehen der neuesten Angriffs Kampagnen und-Techniken mit Bedrohungsanalyse
-description: Beschreibung der interaktiven Berichte zur Bedrohungsanalyse
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Bedrohungsanalyse, Windows Defender ATP, Cyber, Sicherheitshaltung, neue Bedrohungen
+title: Grundlegendes zu den neuesten Angriffs Kampagnen und-Techniken mit Bedrohungsanalysen
+description: Beschreibung interaktiver Berichte zu Threat Analytics
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Bedrohungsanalyse, Microsoft Defender ATP, Cyber, Sicherheitsposition, neue Bedrohungen
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -12,17 +12,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e3644f5ace35a574613447ae30b6fa3c665662fe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 24d4e5c227ddcb3366e5573b8b04b04a52437873
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251953"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852549"
 ---
-# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Informationen zu den neuesten Angriffs Kampagnen und-Techniken mit Bedrohungsanalyse
+# <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>Grundlegendes zu den neuesten Angriffs Kampagnen und-Techniken mit Threat Analytics
 
-Cyber-Bedrohungen werden häufiger und anspruchsvoller. Es ist wichtig, dass Organisationen ihre Sicherheitsposition und Ausfallsicherheit für bestimmte neue Bedrohungen schnell bewerten.
+Cyber-Bedrohungen werden immer häufiger und anspruchsvoller. Es ist wichtig, dass Organisationen ihre Sicherheitslage und die Ausfallsicherheit vor bestimmten neuen Bedrohungen schnell bewerten.
 
-Bei der **Bedrohungsanalyse** handelt es sich um eine Reihe von interaktiven Berichten, die veröffentlicht werden, sobald sich neue Bedrohungen-Techniken, Angriffs Kampagnen und Schadsoftware-Ausbrüche herausstellen-identifiziert werden. Die Berichte unterstützen Sie bei der Bewertung der Auswirkungen von Bedrohungen für Ihre Umgebung und bieten Empfohlene Maßnahmen, um die Ausfallsicherheit der Organisation zu verhindern und bestimmte Bedrohungen zu vermeiden.
+**Threat Analytics** ist eine Gruppe von interaktiven Berichten, die veröffentlicht werden, sobald neue Bedrohungen – neue Techniken, Angriffs Kampagnen und Malware ausbruche – identifiziert werden. Die Berichte unterstützen Sie bei der Bewertung der Auswirkungen von Bedrohungen für Ihre Umgebung und bieten Empfohlene Maßnahmen zur Eindämmung, Verbesserung der Ausfallsicherheit der Organisation und zum Verhindern bestimmter Bedrohungen.
 
-[Weitere Informationen zur Bedrohungsanalyse finden Sie unter Windows Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/threat-analytics).  
+[Erfahren Sie mehr über Threat Analytics in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics).  

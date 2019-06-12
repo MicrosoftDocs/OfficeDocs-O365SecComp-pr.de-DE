@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Erhalten Sie eine Fehlermeldung, wenn Sie versuchen, eine E-Mail an einen Empfänger zu senden, dessen E-Mail-Adresse sich in Office 365 befindet? Wenn Sie glauben, dass Sie die Fehlermeldung nicht erhalten sollten, können Sie das Listenentfernungsportal verwenden, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen.
-ms.openlocfilehash: 7ad7ac050829f2014d2c16dd39ad67fb2e91a1ec
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d63d8ffcd72789d8b8a7b7b825248ee8d0cc64a7
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157847"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857635"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender von Office 365 zu entfernen
 
@@ -54,4 +54,6 @@ wobei  _IP address_ die IP-Adresse des Computers ist, auf dem der E-Mail-Server 
     Nachdem Sie die IP-Adresse aus der Liste der blockierten Absender entfernt haben, werden E-Mails von dieser IP-Adresse Empfängern mit Office 365 wieder zugestellt. Stellen Sie daher sicher, dass die E-Mails von dieser IP-Adresse keine beleidigenden oder böswilligen Inhalte aufweisen, da die IP-Adresse anderenfalls erneut blockiert werden kann.
     
     > [!NOTE]
-    > Es kann bis zu einer Stunde dauern, bis Einschränkungen entfernt werden.
+    > Es kann bis zu 24 Stunden dauern, oder die Ergebnisse können stark variieren, bevor Einschränkungen entfernt werden.
+    
+In diesem Artikel erfahren Sie [, wie Sie verhindern können, dass echte e-Mails in Office 365 als Spam markiert](prevent-email-from-being-marked-as-spam.md ) und [ausgehende Spam in Office 365 gesteuert](outbound-spam-controls.md) werden, um zu verhindern, dass IP auf die schwarze Liste gesetzt wird.

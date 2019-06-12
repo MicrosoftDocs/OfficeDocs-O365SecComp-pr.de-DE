@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
-ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
+ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250318"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852619"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Automatische Untersuchung und Reaktion (Air) mit Office 365
 
@@ -37,11 +37,11 @@ In der ersten Version von Air im April 2019 werden Warnungen, die von folgenden 
 3. E-Mail-Nachrichten mit Schadsoftware nach der Zustellung entfernt *
 4. E-Mail-Nachrichten mit gelöschten Phishing-URLs nach der Zustellung *
 
-***Hinweis**: diesen Warnungen wurde in den jeweiligen Warnungsrichtlinien innerhalb des Security & Compliance Centers mit e-Mail-Benachrichtigungen die Option "Informationsgrad" zugewiesen. Diese können über die Warnungsrichtlinien Konfiguration aktiviert werden.
+***Hinweis**: diesen Warnungen wurde in den jeweiligen Warnungsrichtlinien innerhalb des Security #a0 Compliance Centers mit e-Mail-Benachrichtigungen die Option "Informationsgrad" zugewiesen. Diese können über die Warnungsrichtlinien Konfiguration aktiviert werden.
 
-Um Warnungen anzuzeigen, wählen Sie **** > im Security & Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um diese anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Informationswarnungen hinzugefügt werden.
+Um Warnungen anzuzeigen, wählen Sie **** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um diese anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Informationswarnungen hinzugefügt werden.
 
-Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignissen verwaltet, können Sie Office 365 Benachrichtigungen entweder per e-Mail-Benachrichtigung oder über den [ Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security & Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
+Wenn Ihre Organisation ihre Sicherheitswarnungen über ein Warnungsverwaltungssystem, ein Dienst Verwaltungssystem oder ein System für die Verwaltung von Sicherheitsinformationen und Ereignissen verwaltet, können Sie Office 365 Benachrichtigungen entweder per e-Mail-Benachrichtigung oder über den [ Office 365-Verwaltungs Aktivitäts-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Die Untersuchung von Benachrichtigungs Benachrichtigungen per e-Mail oder API enthält Links für den Zugriff auf die Warnungen im Security #a0 Compliance Center, sodass der zugewiesene Sicherheitsadministrator schnell zu der Untersuchung navigieren kann.
 
 ![Warnungen, die mit Untersuchungen verknüpft sind](media/air-alerts-page-details.png) 
 
@@ -96,7 +96,7 @@ Nachdem die Stamm Untersuchung abgeschlossen ist, enthält das Textbuch eine Lis
 Im nächsten Schritt werden mehrere Schritte zur Ermittlung und Jagd von Bedrohungen ausgeführt:
 
 - Ähnliche e-Mail-Nachrichten in anderen e-Mail-Cluster werden durchsucht.
-- Das Signal wird für andere Plattformen wie [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)freigegeben.
+- Das Signal wird für andere Plattformen wie [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)freigegeben.
 - Es wird festgestellt, ob Benutzer in verdächtigen e-Mail-Nachrichten auf böswillige Links geklickt haben.
 - Eine Überprüfung erfolgt über Office 365 Exchange Online Protection ([EoP](eop/exchange-online-protection-eop.md)) und Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)), um zu sehen, ob andere ähnliche Nachrichten von Benutzern gemeldet werden.
 - Eine Überprüfung wird durchgeführt, um festzustellen, ob ein Benutzer kompromittiert wurde. Bei dieser Überprüfung werden Signale in der [Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security) und in der [Azure-Active Directory](https://docs.microsoft.com/azure/active-directory)verwendet, sodass alle zugehörigen Anomalien der Benutzeraktivität korreliert werden. 
@@ -121,7 +121,7 @@ Nehmen Sie als weiteres Beispiel an, dass Sie Daten zu e-Mail-Nachrichten anzeig
 
 ## <a name="get-started"></a>Erste Schritte
 
-Um auf ihre Untersuchungen zuzugreifen, gehen Sie als Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser zum Security & Compliance Center[https://protection.office.com](https://protection.office.com)() und melden Sie sich an. Führen Sie dann einen der folgenden Schritte aus:
+Um auf ihre Untersuchungen zuzugreifen, wechseln Sie als globaler Office 365 globaler Administrator, Sicherheitsadministrator oder Sicherheits Leser zum Security #a0 Compliance[https://protection.office.com](https://protection.office.com)Center (), und melden Sie sich an. Führen Sie dann einen der folgenden Schritte aus:
 
 - Navigieren Sie in der linken Navigationsleiste zu **Benachrichtigungen** > Warnungen**anzeigen**, öffnen Sie eine der untersuchten Warnungen, und klicken Sie dann unten im Warnungs Flyout auf den Link **Untersuchung anzeigen** . 
 
@@ -131,7 +131,7 @@ Um auf ihre Untersuchungen zuzugreifen, gehen Sie als Office 365 globaler Admini
 
     oder
 
-- Besuchen Sie das Threat Management-Dashboard (im Security & Compliance Center finden Sie unter **Threat Management** > **Dashboard**).
+- Besuchen Sie das Threat Management-Dashboard (im Security #a0 Compliance Center finden Sie unter **Threat Management** > **Dashboard**).
 
 ![Air-Widgets](media/air-widgets.png)
 
@@ -242,11 +242,12 @@ Auf der Registerkarte " **Computer** " werden alle Computer angezeigt, die als T
 
 ![Seite "Air Investigation Machine"](media/air-investigationmachinepage.png)
 
-Im Rahmen der Untersuchung korreliert Air e-Mail-Bedrohungen mit Geräten. Beispielsweise übergibt eine Untersuchung einen bösartigen Datei Hash an [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) , um zu untersuchen. Dies ermöglicht eine automatisierte Untersuchung relevanter Computer für Ihre Benutzer, um sicherzustellen, dass Bedrohungen sowohl in der Cloud als auch in ihren Endpunkten behandelt werden. 
+Im Rahmen der Untersuchung korreliert Air e-Mail-Bedrohungen mit Geräten. Beispielsweise übergibt eine Untersuchung einen bösartigen Datei Hash an [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) , um zu untersuchen. Dies ermöglicht eine automatisierte Untersuchung relevanter Computer für Ihre Benutzer, um sicherzustellen, dass Bedrohungen sowohl in der Cloud als auch in ihren Endpunkten behandelt werden. 
 
 Sie können:
 - Erhalten Sie eine visuelle Übersicht über die gefundenen aktuellen Computer und Bedrohungen.
-- Wählen Sie einen Computer aus, um eine Ansicht zu öffnen, die in den entsprechenden [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) -Untersuchungen im Windows Defender ATP Security Center angezeigt wird.
+- Wählen Sie einen Computer aus, um eine Ansicht zu öffnen, die in den entsprechenden [Microsoft Defender-ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) -Untersuchungen im Sicherheits Center von Microsoft Defender angezeigt wird.
 
 ### <a name="entity-investigation"></a>Untersuchung von Entitäten
 

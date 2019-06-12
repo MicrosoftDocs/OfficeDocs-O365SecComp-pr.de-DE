@@ -100,7 +100,7 @@
 ### [Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Häufig gestellte Fragen zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md)
 ### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
-#### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten in Office 365 (Vorschau)](archive-facebook-data-with-sample-connector.md)
+#### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
 ## Speichern von Daten
@@ -153,6 +153,7 @@
 ### [Konfigurieren der Richtlinie für ausgehende Spamnachrichten](configure-the-outbound-spam-policy.md)
 ### [Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränktem Zugriff nach dem Senden von Spam-E-Mails](removing-user-from-restricted-users-portal-after-spam.md)
 ### [SCL-Bewertungen (Spam Confidence Level)](spam-confidence-levels.md)
+### [Beheben des Fehlercodes 5.7.7 XX in Exchange Online](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten ](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [Schadsoftware und Nicht-Schadsoftware zur Analyse an Microsoft einreichen](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)
 ## Verwalten Ihrer Sicherheit – Schritte nach der Einrichtung von ATP
 ## [Verstehen der neuesten Angriffskampagnen mithilfe von Bedrohungsanalyse](latest-attack-campaigns.md)
-## [Suche in Microsoft 365 ATP](hunting.md)
+## [Suche in Microsoft 365](hunting.md)
 ## [Anzeigen und Lesen Ihrer ATP-Berichte](view-reports-for-atp.md)
 ## [Bedeutung von Warnungsseiten für ATP-sichere Links](atp-safe-links-warning-pages.md)
 ## [Verwendung von Nachverfolgungslisten für Bedrohungen](threat-trackers.md)
@@ -214,7 +215,7 @@
 ## [Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)
 ### [Ansichten des Sicherheitsrisiken-Explorers](threat-explorer-views.md)
 ## Mehr Sicherheit durch Integration
-### [Integrieren von Office 365 ATP in Windows Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
+### [Integration von Office 365 ATP mit Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [SIEM Integration in Office 365 ATP](siem-integration-with-office-365-ti.md)
 ## Funktionsweise von ATP
 ### [Funktionsweise des ATP-Features für sichere Links](how-atp-safe-links-works.md)
@@ -484,11 +485,12 @@
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Überwachen von Sicherheit und Compliance
-## [Microsoft 365 Security Center – überwachen und melden](monitoring-and-reporting.md)
-### [Überwachen und Berichten von Identitäten in Microsoft 365 Security](monitor-and-report-identities.md)
-### [Überwachen von Daten in Microsoft 365 Security](monitor-data.md)
-### [Überwachen von Geräten in Microsoft 365 Security](monitor-devices.md)
-### [Überwachen von Apps in Microsoft 365 Security](monitor-apps.md)
+## Microsoft 365 Security Center
+### [Überwachen und Anzeigen von Berichten](monitoring-and-reporting.md)
+### [Identitätsüberwachung und Berichterstellung](monitor-and-report-identities.md)
+### [Datenüberwachung und Berichterstellung](monitor-data.md)
+### [Geräteüberwachung und Berichterstellung](monitor-devices.md)
+### [App-Überwachung und Berichterstellung](monitor-apps.md)
 ## [Warnungsrichtlinien](alert-policies.md)
 
 # Nachrichtenübermittlung

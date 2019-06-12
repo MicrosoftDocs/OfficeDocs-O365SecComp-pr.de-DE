@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Office 365 Bedrohungs Ermittlung und-Antwort und wie Sie beginnen können.
-ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 9be8e33be6445dc960c12c308c56bf9afc7fdd12
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408340"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852579"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Erste Schritte mit der Untersuchung und Reaktion auf Bedrohungen (Office 365 Advanced Threat Protection-Plan 2)
 
@@ -37,7 +37,7 @@ Untersuchung und Antwortfunktionen für Bedrohungen helfen, Einblicke in Bedrohu
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Kennenlernen des Bedrohungs Dashboards, des Explorers und der Vorfälle
 
-Diese Funktionen für die Untersuchung und Reaktion auf &amp; Bedrohungen werden im Security Compliance Center als eine Reihe von Tools und Antwort Workflows, einschließlich des [Threat](#threat-dashboard)-Dashboards, des [Threat-Explorers](#threat-explorer), Vorfälle, Angriffs, Oberfläche. [](get-started-with-ti.md#incidents) [ Simulator](attack-simulator.md)und automatisierte Untersuchungen & Response.
+Diese Funktionen für die Untersuchung und Reaktion auf &amp; Bedrohungen werden im Security Compliance Center als eine Reihe von Tools und Antwort Workflows, einschließlich des [Threat](#threat-dashboard)-Dashboards, des [Threat-Explorers](#threat-explorer), Vorfälle, Angriffs, Oberfläche. [](get-started-with-ti.md#incidents) [ Simulator](attack-simulator.md)und automatisierte Untersuchungen #a0 Antwort.
   
 ### <a name="threat-dashboard"></a>Threat-Dashboard
 
@@ -96,7 +96,7 @@ Office 365 Threat-Invesigation und-Antwortfunktionen sind in Office 365 Advanced
   |Verwenden von [Threat Explorer (und Echtzeiterkennung)](threat-explorer.md) zum Analysieren von Bedrohungen  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Sicherheits Leser (im Security &amp; Compliance Center zugewiesen)  <br/> |
   |Anzeigen von Vorfällen (auch Untersuchungen genannt) <br/> Hinzufügen von e-Mail-Nachrichten zu einem Vorfall  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Sicherheits Leser (im Security &amp; Compliance Center zugewiesen)  <br/> |
   |Auslösen von e-Mail-Aktionen in einem Vorfall  <br/> Suchen und Löschen von verdächtigen e-Mail-Nachrichten  <br/> |Office 365 globaler Administrator oder Sicherheitsadministrator  <br/> Eine der obigen Rollen und suchen und löschen (zugewiesen im Security &amp; Compliance Center)  <br/> |
-  |Integration von Office 365 Advanced Threat Protection Plan 2 mit erweitertem Bedrohungsschutz von Windows Defender  <br/> Integrieren von Office 365 Advanced Threat Protection Plan 2 mit einem Siem-Server  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise Windows Defender Advanced Threat Protection-Portal oder ein Siem-Server)  <br/> |
+  |Integrieren von Office 365 Advanced Threat Protection Plan 2 mit Microsoft Defender ATP  <br/> Integrieren von Office 365 Advanced Threat Protection Plan 2 mit einem Siem-Server  <br/> |Office 365 globaler Administrator  <br/> Sicherheits Administrator (im Security &amp; Compliance Center zugewiesen)  <br/> Entsprechende Rolle, die in weiteren Anwendungen zugewiesen ist (beispielsweise Microsoft Defender Security Center oder ein Siem-Server)  <br/> |
    
 Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
     
@@ -106,7 +106,7 @@ Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie unter [Perm
     
 - [Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Untersuchung und Reaktion auf Bedrohungen)](investigate-malicious-email-that-was-delivered.md)
     
-- [Integrieren von Office 365 Bedrohungs Ermittlung und-Antwort mit erweitertem Bedrohungsschutz von Windows Defender](integrate-office-365-ti-with-wdatp.md)
+- [Integrieren von Office 365 Bedrohungs Ermittlung und-Reaktion mit Microsoft Defender Advanced Threat Protection](integrate-office-365-ti-with-wdatp.md)
     
 - [Informationen zum Angriffs Simulator](attack-simulator.md)
   

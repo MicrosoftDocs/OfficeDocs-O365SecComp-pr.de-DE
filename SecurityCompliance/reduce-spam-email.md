@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6603b5a3efdfb6ffde0743d3b674ca69ca39eaa0
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157347"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857595"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
@@ -48,14 +48,14 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
 - 
   **Die Junk-E-Mail-Regel für alle Postfächer aktivieren** Standardmäßig ist die Aktion des Spamfilters auf **Nachricht in den Junk-E-Mail-Ordner verschieben** festgelegt. Wenn dies die bevorzugte und aktuelle Spamrichtlinienaktion ist, so muss für jedes Postfach [auch die Junk-E-Mail-Regel aktiviert sein](https://support.office.com/de-DE/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Um dies zu überprüfen, können Sie das Cmdlet „Get-MailboxJunkEmailConfiguration“ für ein oder mehrere Postfächer ausführen. Sie können z. B. alle Postfächer überprüfen, indem Sie Folgendes ausführen: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
-    Wenn Sie die Ausgabe anzeigen, sollte die Enable-Eigenschaft auf „True“ festgelegt sein. Wenn sie auf „False“ festgelegt ist, können Sie „Set-MailboxJunkEmailConfiguration“ ausführen, um dies in „True“ zu ändern.
+    Wenn Sie die Ausgabe anzeigen, sollte die Enable-Eigenschaft auf "True" festgelegt sein. Wenn sie auf "False" festgelegt ist, können Sie "Set-MailboxJunkEmailConfiguration" wie folgt ausführen, um dies in "True" zu ändern: Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true.
     
 - **Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen** Wenn Sie Exchange Online Protection verwenden, Ihre Postfächer sich aber auf dem lokalen Exchange Server befinden, müssen Sie ein paar Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen. Lesen Sie [Anweisungen für EOP](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
 - 
   **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, [wie Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
     
-- **Sofortiges Blockieren eines Absenders** Falls Sie einen Absender sofort blockieren müssen, können Sie ihn nach E-Mail-Adresse, Domäne oder IP-Adresse blockieren. Lesen Sie die Informationen unter [Verwenden des EAC zum Erstellen einer E-Mail-Flussregel, die Nachrichten einer bestimmten Domäne oder eines bestimmten Benutzers blockiert](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Ein Eintrag in einer Endbenutzer-Zulassungsliste kann eine vom Administrator festgelegten Blockung außer Kraft setzen.
+- **Sofortiges Blockieren eines Absenders** Falls Sie einen Absender sofort blockieren müssen, können Sie ihn nach E-Mail-Adresse, Domäne oder IP-Adresse blockieren. Siehe [Erstellen von Listen blockierter Absender in Office 365](create-block-sender-lists-in-office-365.md). Ein Eintrag in einer Endbenutzer-Zulassungsliste kann eine vom Administrator festgelegten Blockung außer Kraft setzen.
     
 - **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
 - **Aktivieren der [DKIM](use-dkim-to-validate-outbound-email.md)**, um alle ausgehenden Nachrichten zu signieren, damit die Sicherheit in Ihrer Domäne und in Ihrem Mandanten gesteigert wird.

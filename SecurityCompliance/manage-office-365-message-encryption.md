@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche Protect in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
-ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155747"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852529"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
-Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche **Protect** in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
+Nachdem Sie die Einrichtung Office 365 Nachrichtenverschlüsselung (OM) abgeschlossen haben, können Sie die Konfiguration Ihrer Bereitstellung auf verschiedene Weise anpassen. Beispielsweise können Sie konfigurieren, ob Sie einmalige Pass Codes aktivieren möchten, die Schaltfläche **** verschlüsseln in Outlook im Internet anzeigen und vieles mehr. In den Aufgaben in diesem Artikel wird beschrieben, wie.
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Verwalten, ob sich Google-, Yahoo-und Microsoft-Konto Empfänger mit diesen Konten beim Office 365 Nachrichten Verschlüsselungs Portal anmelden können
 
@@ -78,11 +78,11 @@ Wenn der Empfänger einer Nachricht, die von OM verschlüsselt wurde, Outlook ni
    Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
    ```
 
-## <a name="manage-the-display-of-the-protect-button-in-outlook-on-the-web"></a>Verwalten der Anzeige der Schaltfläche "schützen" in Outlook im Internet
+## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>Verwalten der Anzeige der Schaltfläche "verschlüsseln" in Outlook im Internet
 
-Die Schaltfläche **Protect** in Outlook im Internet ist deaktiviert, wenn Sie OM einrichten. Als Administrator können Sie steuern, ob diese Schaltfläche Endbenutzern angezeigt werden soll.
+Als Administrator können Sie steuern, ob diese Schaltfläche Endbenutzern angezeigt werden soll.
   
-### <a name="to-manage-whether-the-protect-button-appears-in-outlook-on-the-web"></a>So verwalten Sie, ob die Schaltfläche schützen in Outlook im Internet angezeigt wird
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>So verwalten Sie, ob die Schaltfläche Verschlüsseln in Outlook im Internet angezeigt wird
   
 1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, und starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anweisungen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
@@ -92,13 +92,13 @@ Die Schaltfläche **Protect** in Outlook im Internet ist deaktiviert, wenn Sie O
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
 
-   Um beispielsweise die Schaltfläche **schützen** zu deaktivieren:
+   Um beispielsweise die Schaltfläche **** verschlüsseln zu deaktivieren:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-   So aktivieren Sie die Schaltfläche **schützen** :
+   So aktivieren Sie **** die Schaltfläche Verschlüsseln:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
@@ -226,7 +226,7 @@ Wir hoffen, dass es nicht dazu kommt, aber wenn Sie dies benötigen, ist die Dea
   
 1. Verwenden Sie ein Arbeits-oder Schulkonto, das über globale Administratorberechtigungen in Ihrer Office 365 Organisation verfügt, starten Sie eine Windows PowerShell Sitzung, und stellen Sie eine Verbindung mit Exchange Online her. Anweisungen finden Sie unter [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Wenn Sie die Schaltfläche **schützen** in Outlook im Internet aktiviert haben, deaktivieren Sie Sie, indem Sie das Cmdlet setIRMConfiguration mit dem Parameter SimplifiedClientAccessEnabled ausführen. Andernfalls können Sie diesen Schritt überspringen.
+2. Wenn Sie die Schalt **** Fläche verschlüsseln in Outlook im Internet aktiviert haben, deaktivieren Sie Sie, indem Sie das CmdletSet-IRMConfiguration mit dem Parameter SimplifiedClientAccessEnabled ausführen. Andernfalls können Sie diesen Schritt überspringen.
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
