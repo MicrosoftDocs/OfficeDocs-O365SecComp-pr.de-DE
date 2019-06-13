@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Sie können ein inaktives Postfach in Office 365 erstellen, indem Sie eine Aufbewahrungsrichtlinie für halten oder Office 365 auf das Postfach anwenden und dann das entsprechende Office 365 Benutzerkonto löschen. Elemente in einem inaktiven Postfach werden für die Dauer des Haltestatus oder der Aufbewahrungsrichtlinie aufbewahrt, die auf Sie angewendet wurde, bevor Sie inaktiv gemacht wurde. Um ein inaktives Postfach endgültig zu löschen, entfernen Sie einfach die Aufbewahrungsrichtlinie.
-ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
+ms.sourcegitcommit: eed9fb363c939168e4bc49698bb34038a54433db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768950"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913076"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Erstellen und Verwalten inaktiver Postfächer in Office 365
 
@@ -32,9 +32,9 @@ Office 365 ermöglicht es Ihnen, den Inhalt gelöschter Postfächer beizubehalte
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Um ein Postfach inaktiv zu machen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen sein, damit ein Beweissicherungsverfahren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht wird. Exchange Online Plan 2-Lizenzen sind Teil eines Office 365 Enterprise E3-und E5-Abonnements. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz (die Teil eines Office 365 Enterprise E1-Abonnements ist) zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierungslizenz zuweisen, damit ein Haltestatus auf das Postfach angewendet werden kann, bevor es gelöscht wird. Weitere Informationen finden Sie unter [Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Um ein Postfach inaktiv zu machen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen sein, damit ein Beweissicherungsverfahren oder eine Office 365-Aufbewahrungsrichtlinie auf das Postfach angewendet werden kann, bevor es gelöscht wird. Exchange Online Plan 2-Lizenzen sind Teil eines Office 365 Enterprise E3-und E5-Abonnements. Wenn einem Postfach eine Exchange Online Plan 1 oder Exchange Online Kiosk Lizenz (die Teil eines Office 365 E1-und F1-Abonnements sind) zugewiesen ist, müssen Sie ihm eine separate Exchange Online Archivierungslizenz zuweisen, damit ein Haltebereich auf das Postfach b angewendet werden kann. evor es wird gelöscht. Weitere Informationen finden Sie unter [Exchange Online-Archivierung](https://go.microsoft.com/fwlink/p/?LinkId=286153).
     
-- Die mit dem gelöschten Exchange Online-Postfach verbundene Lizenz ist nach dem Löschen des entsprechenden Office 365-Benutzerkontos verfügbar. Anschließend können Sie [Benutzern in Office 365 für Unternehmen Lizenzen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) für einen anderen Benutzer zuweisen. 
+- Die dem gelöschten Exchange Online Postfach zugeordneten Lizenzen sind verfügbar, nachdem Sie das entsprechende Office 365 Benutzerkonto gelöscht haben. Sie können [Diese Lizenzen dann einem anderen Benutzer zuweisen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc). 
     
 - Wenn ein Beweissicherungsverfahren oder eine Office 365 Aufbewahrungsrichtlinie (die so konfiguriert ist, dass Inhalte beibehalten oder beibehalten und dann gelöscht werden) nicht auf ein Postfach angewendet wird, bevor es gelöscht wird, wird der Inhalt des Postfachs nicht beibehalten oder kann nicht erkannt werden. Das gelöschte Postfach kann jedoch innerhalb von 30 Tagen nach dem Löschen wiederhergestellt werden, aber das Postfach und dessen Inhalte werden nach 30 Tagen endgültig gelöscht, wenn es nicht wiederhergestellt wird.
     
