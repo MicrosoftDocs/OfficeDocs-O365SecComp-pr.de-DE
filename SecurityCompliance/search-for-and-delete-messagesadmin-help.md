@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Mithilfe des Cmdlets Search-Mailbox können Administratoren Benutzerpostfächer durchsuchen und anschließend Nachrichten aus Postfächern löschen.
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158487"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957417"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Suchen nach und Löschen von Nachrichten – Administratorhilfe
   
@@ -48,7 +48,7 @@ Als zusätzliche Schutzmaßnahme können Sie die Nachrichten zuerst in ein ander
     
 - Wenn Sie eine Suchabfrage (durch Verwendung des Parameters  *SearchQuery*  ) einschließen, gibt das Cmdlet **Search-Mailbox** maximal 10.000 Elemente in den Suchergebnissen zurück. Wenn Sie also eine Suchabfrage einschließen, müssen Sie den Befehl **Search-Mailbox** möglicherweise mehrere Male ausführen, um mehr als 10.000 Elemente zu löschen. 
     
-- Wenn Sie das Cmdlet **Search-Mailbox** ausführen, wird auch das Archivpostfach des Benutzers durchsucht. In ähnlicher Weise werden Elemente im primären Archivpostfach gelöscht, wenn Sie das Cmdlet **Search-Mailbox** mit der Option  _DeleteContent_ verwenden. Um dies zu verhindern, können Sie die Option  *DoNotIncludeArchive*  einschließen. Außerdem wird empfohlen, dass Sie nicht die _Option deletecontent_ -Option verwenden, um Nachrichten in Exchange Online Postfächern zu löschen, für die die automatisch erweiterte Archivierung aktiviert ist, da ein unerwarteter Datenverlust möglicherweise auftritt. 
+- Wenn Sie das Cmdlet **Search-Mailbox** ausführen, wird auch das Archivpostfach des Benutzers durchsucht. In ähnlicher Weise werden Elemente im primären Archivpostfach gelöscht, wenn Sie das Cmdlet **Search-Mailbox** mit der Option  _DeleteContent_ verwenden. Um dies zu verhindern, können Sie die Option  *DoNotIncludeArchive*  einschließen.
     
 ## <a name="search-messages-and-log-the-search-results"></a>Suchen von Nachrichten und Protokollieren der Suchergebnisse
 
