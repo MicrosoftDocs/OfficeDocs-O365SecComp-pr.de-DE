@@ -3,20 +3,20 @@ title: Definieren von Richtlinien für Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935947"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059533"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definieren von Richtlinien für Informationsbarrieren (Vorschau)
 
@@ -48,7 +48,7 @@ Es ist hilfreich, die zugrunde liegenden Konzepte der Richtlinien für Informati
 |Phase    |Was ist involviert  |
 |---------|---------|
 |[Stellen Sie sicher, dass die Voraussetzungen erfüllt sind](#prerequisites)     |-Stellen Sie sicher, dass Sie über die [erforderlichen Lizenzen und Berechtigungen](information-barriers.md#required-licenses-and-permissions) verfügen<br/>-Stellen Sie sicher, dass das Verzeichnis Ihrer Organisation Daten enthält, die die Struktur Ihrer Organisation widerspiegeln.<br/>-Aktivieren der bereichsbezogenen Verzeichnissuche für Microsoft Teams<br/>-Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist.<br/>-Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>-Bereitstellen der Zustimmung des Administrators für Microsoft Teams (Schritte sind enthalten)          |
-|[Teil 1: segmentieren aller Benutzer in Ihrer Organisation](#part-1-segment-users)     |-Bestimmen der erforderlichen Richtlinien<br/>-Eine Liste der zu definierenden Segmente erstellen<br/>-Bestimmen der zu verwendenden Attribute<br/>-Definieren von Segmenten in Bezug auf Richtlinienfilter        |
+|[Teil 1: Segmentieren von Benutzern in Ihrer Organisation](#part-1-segment-users)     |-Bestimmen der erforderlichen Richtlinien<br/>-Eine Liste der zu definierenden Segmente erstellen<br/>-Bestimmen der zu verwendenden Attribute<br/>-Definieren von Segmenten in Bezug auf Richtlinienfilter        |
 |[Abschnitt 2: Definieren von Richtlinien für Informationsbarrieren](#part-2-define-information-barrier-policies)     |-Definieren Ihrer Richtlinien (noch nicht gültig)<br/>-Auswählen aus zwei Arten (blockieren oder zulassen) |
 |[Abschnitt 3: Anwenden von Richtlinien für Informationsbarrieren](#part-3-apply-information-barrier-policies)     |-Festlegen von Richtlinien auf aktiven Status<br/>-Ausführen der Richtlinienanwendung<br/>-Anzeigen des Richtlinienstatus         |
 |(Nach Bedarf) [Bearbeiten eines Segments oder einer Richtlinie](#edit-a-segment-or-a-policy)     |-Bearbeiten eines Segments<br/>-Bearbeiten oder Entfernen einer Richtlinie<br/>-Ausführen der Richtlinienanwendung<br/>-Anzeigen des Richtlinienstatus         |
@@ -104,12 +104,12 @@ Wenn Sie über eine anfängliche Liste von Gruppen und Richtlinien verfügen, fa
 
 ### <a name="identify-segments"></a>Identifizieren von Segmenten
 
-Erstellen Sie zusätzlich zu Ihrer anfänglichen Richtlinienliste eine Liste der Segmente für Ihre Organisation. Jeder Benutzer in Ihrer Organisation sollte zu einem Segment gehören, und kein Benutzer sollte zu zwei oder mehr Segmenten gehören. Für jedes Segment kann nur eine Informations Sperrrichtlinie angewendet werden. 
+Erstellen Sie zusätzlich zu Ihrer anfänglichen Richtlinienliste eine Liste der Segmente für Ihre Organisation. Benutzer, die in Richtlinien für Informationsbarrieren eingeschlossen werden sollen, sollten zu einem Segment gehören, und kein Benutzer sollte zu zwei oder mehr Segmenten gehören. Für jedes Segment kann nur eine Informations Sperrrichtlinie angewendet werden. 
 
-Bestimmen Sie, welche Attribute in den Verzeichnisdaten Ihrer Organisation verwendet werden, um Segmente zu definieren. Sie können *Department*, Mitglied ** oder eines der unterstützten Attribute verwenden. Stellen Sie sicher, dass Sie Werte in dem Attribut haben, das Sie für alle Benutzer auswählen. [Siehe Liste der unterstützten Attribute für Informationsbarrieren (Preview)](information-barriers-attributes.md).
+Bestimmen Sie, welche Attribute in den Verzeichnisdaten Ihrer Organisation verwendet werden, um Segmente zu definieren. Sie können *Department*, Mitglied ** oder eines der unterstützten Attribute verwenden. Stellen Sie sicher, dass Sie Werte in dem Attribut haben, das Sie für Benutzer auswählen. [Siehe Liste der unterstützten Attribute für Informationsbarrieren (Preview)](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Bevor Sie mit dem nächsten Abschnitt fortfahren, stellen Sie sicher, dass Ihre Verzeichnisdaten Werte für Attribute aufweisen, die Sie zum Definieren von Segmenten verwenden können**. Wenn Ihre Verzeichnisdaten keine Werte für die Attribute enthalten, die Sie verwenden möchten, müssen alle Benutzerkonten aktualisiert werden, um diese Informationen einzubeziehen, bevor Sie mit Informationsbarrieren fortfahren. Wenn Sie Hilfe dazu erhalten möchten, lesen Sie die folgenden Ressourcen:<br/>- [Konfigurieren von Eigenschaften von Benutzerkonten mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Bevor Sie mit dem nächsten Abschnitt fortfahren, stellen Sie sicher, dass Ihre Verzeichnisdaten Werte für Attribute aufweisen, die Sie zum Definieren von Segmenten verwenden können**. Wenn Ihre Verzeichnisdaten keine Werte für die Attribute enthalten, die Sie verwenden möchten, müssen die Benutzerkonten aktualisiert werden, um diese Informationen einzubeziehen, bevor Sie mit Informationsbarrieren fortfahren. Wenn Sie Hilfe dazu erhalten möchten, lesen Sie die folgenden Ressourcen:<br/>- [Konfigurieren von Eigenschaften von Benutzerkonten mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definieren von Segmenten mithilfe von PowerShell
 
@@ -128,7 +128,7 @@ Das Definieren von Segmenten wirkt sich nicht auf Benutzer aus. Es wird lediglic
     Nach dem Ausführen jedes Cmdlets sollte eine Liste mit Details zum neuen Segment angezeigt werden. Details umfassen den Typ des Segments, wer es erstellt oder zuletzt geändert hat usw. 
 
 > [!IMPORTANT]
-> **Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden**. Jeder Benutzer in Ihrer Organisation sollte zu einem (und nur einem) Segment gehören. Kein Benutzer sollte zu zwei oder mehr Segmenten gehören. Segmente sollten für alle Benutzer in Ihrer Organisation definiert werden. (Siehe [Beispiel: Contosos definierte Segmente](#contosos-defined-segments) in diesem Artikel.)
+> **Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden**. Jeder Benutzer, der von Informationsbarrieren betroffen ist, sollte einem (und nur einem) Segment angehören. Kein Benutzer sollte zu zwei oder mehr Segmenten gehören. (Siehe [Beispiel: Contosos definierte Segmente](#contosos-defined-segments) in diesem Artikel.)
 
 Nachdem Sie Ihre Segmente definiert haben, fahren Sie mit define Information Barrier Policies fort.
 
