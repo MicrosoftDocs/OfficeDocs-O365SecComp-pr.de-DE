@@ -102,6 +102,7 @@
 ### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
+#### [Einrichten eines Connectors zum Archivieren von LinkedIn-Daten](archive-linkedin-data.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
 ## Speichern von Daten
 ### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
@@ -243,6 +244,7 @@
 ### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
+#### [Einrichten eines Connectors zum Archivieren von LinkedIn-Daten](archive-linkedin-data.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
 ## Speichern von Daten
 ### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
