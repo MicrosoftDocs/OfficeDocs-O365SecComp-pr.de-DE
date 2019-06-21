@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) standardmäßig aktiviert. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 8e5901586b6ee8e34d3e71b0b256f9aa7c86c7de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f100fa1eb8244aeaea463440025ee489ec019406
+ms.sourcegitcommit: ef2657e4221296be7032191f2d91e8ff727523c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154777"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35117690"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -109,7 +109,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der pos
 |**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis**: Überwachungseinträge für von Delegaten ausgeführte Ordner Bindungs Aktionen werden konsolidiert. Für den Zugriff auf einzelne Ordner innerhalb von 24 Stunden wird ein Überwachungseintrag generiert.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Mailbox Login:**|Der Benutzer hat sich bei seinem Postfach angemeldet. |||![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|**Hinweis**: Diese Aktion wurde in Exchange Online veraltet und ist nicht mehr zur Liste der Administrator Postfachaktionen hinzufügen verfügbar.<br/><br/> Eine Nachricht wurde im Vorschaufenster angezeigt oder geöffnet.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|Eine Nachricht wurde im Vorschaufenster angezeigt oder geöffnet.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Post Fach Aktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions** -Aktion enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
 |**Verschieben**|Eine Nachricht wurde in einen anderen Ordner verschoben.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Häkchen](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|

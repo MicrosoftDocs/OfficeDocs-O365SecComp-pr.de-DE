@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083863"
+ms.locfileid: "35113249"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definieren von Richtlinien für Informationsbarrieren (Vorschau)
 
@@ -134,7 +134,7 @@ Nachdem Sie Ihre Segmente definiert haben, fahren Sie mit define Information Bar
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Verwenden von "gleich" und "nicht gleich" in Segment Definitionen
 
-Im ersten oben gezeigten Beispiel haben wir ein Segment definiert, das die Logik enthält, *Abteilung gleich HR*. Sie können Segmente auch mithilfe eines Parameters "Not Equals" definieren, wie im folgenden Beispiel gezeigt:
+Im ersten oben gezeigten Beispiel haben wir ein Segment so definiert, dass "Department gleich HR" ist. Dieses Segment enthielt einen "Equals"-Parameter. Sie können Segmente auch mithilfe eines Parameters "Not Equals" definieren, wie im folgenden Beispiel gezeigt:
 
 Syntax`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
