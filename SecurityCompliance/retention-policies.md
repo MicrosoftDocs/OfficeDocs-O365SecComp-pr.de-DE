@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156967"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131394"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -78,11 +78,14 @@ Das gilt auch für Inhalte, die bei Anwendung der Aufbewahrungsrichtlinien vorha
   
 Beachten Sie, dass einem Benutzer eine Fehlermeldung angezeigt wird, wenn er versucht, eine Bibliothek, eine Liste, einen Ordner oder eine Website zu löschen, die/der einer Aufbewahrungsrichtlinie unterliegt. Ein Benutzer kann einen Ordner löschen, wenn er zunächst alle Dateien im Ordner, die der Richtlinie unterliegen, verschiebt oder löscht. Beachten Sie auch, dass das Dokumentarchiv nur erstellt wird, wen das erste Element in die Bibliothek kopiert werden muss und nicht, wenn Sie die Aufbewahrungsrichtlinie erstellen. Zum Testen der Richtlinie müssen Sie daher ein Dokument in einer Website, die der Richtlinie unterliegt, bearbeiten oder löschen und dann zum Dokumentarchiv navigieren, um die aufbewahrte Kopie anzuzeigen.
   
-![Diagramm des Aufbewahrungsflusses in SharePoint und OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![Diagramm des Inhaltslebenszyklus in SharePoint und OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
   
 Nachdem einem OneDrive-Konto oder einer SharePoint-Website eine Aufbewahrungsrichtlinie zugewiesen wurde, können Inhalte einem von zwei Pfaden folgen:
   
-1. **Wenn Inhalte während des Aufbewahrungszeitraums geändert oder gelöscht werden**, wird im permanenten Dokumentarchiv eine Kopie des ursprünglichen Inhalts in seinem Zustand bei Zuweisung der Aufbewahrungsrichtlinie erstellt. Dort wird ein Zeitgeberauftrag in regelmäßigen Abständen ausgeführt, und dieser identifiziert Elemente, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden dann innerhalb von sieben Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. 
+1. **Wenn der Inhalt während des Aufbewahrungszeitraums geändert oder gelöscht wird**, wird eine Kopie des ursprünglichen Inhalts in der beim Zuweisen der Richtlinie vorhandenen Form im permanenten Dokumentarchiv erstellt. Dort wird in regelmäßigen Abständen ein Zeitgeberauftrag ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist. Diese Elemente werden in den endgültigen Papierkorb verschoben, von wo sie nach Ablauf von 93 Tagen dauerhaft gelöscht werden. Hinweis: Der endgültige Papierkorb wird den Endbenutzern nicht angezeigt (sie sehen nur den Standardpapierkorb), Websitesammlungsadministratoren können hingegen dessen Inhalte anzeigen und wiederherstellen.
+
+    > [!NOTE]
+    > Wir haben kürzlich die Art und Weise, wie Inhalte aus dem permanenten Dokumentarchiv gelöscht werden, geändert. Um versehentlichem Datenverlust vorzubeugen, werden Inhalte nicht mehr dauerhaft aus dem permanenten Dokumentarchiv gelöscht. Stattdessen werden Inhalte nur aus dem Papierkorb dauerhaft gelöscht, sodass nun sämtliche Inhalte aus dem permanenten Dokumentarchiv den endgültigen Papierkorb durchlaufen werden.
     
 2. **Wenn der Inhalt während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird**, wird er am Ende des Aufbewahrungszeitraums in den Standardpapierkorb verschoben. Wenn ein Benutzer den Inhalt dort löscht oder diesen Papierkorb (auch als Aufräumen bekannt) leert, wird das Dokument in den endgültigen Papierkorb verschoben. Ein Aufbewahrungszeitraum von 93 Tagen erstreckt sich über den Standardpapierkorb und den endgültigen Papierkorb. Am Ende der 93 Tage wird das Dokument dauerhaft aus dem Standardpapierkorb oder dem endgültigen Papierkorb gelöscht, je nachdem, wo er sich zu diesem Zeitpunkt befindet. Beachten Sie, dass der Papierkorb nicht indiziert ist und daher bei einer Suche dort keine Inhalte gefunden werden. Das bedeutet, dass ein eDiscovery-Archiv keine Inhalte im Papierkorb finden kann, um diese zu archivieren. 
     
@@ -102,7 +105,7 @@ Wenn ein Benutzer das Unternehmen verlässt und sein Postfach von einer Aufbewah
   
 Nachdem einem Postfach odereinem öffentlichen Ordner eine Aufbewahrungsrichtlinie zugewiesen wurde, können Inhalte einem von zwei Pfaden folgen:
   
-1. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer geändert oder dauerhaft gelöscht wird** (entweder per UMSCHALT + ENTF oder aus gelöschte Elemente gelöscht), wird das Element in den Ordner "Wiederherstellbare Elemente" verschoben (oder, im Fall der Bearbeitung, kopiert). Dort wird in regelmäßigen Abständen ein Vorgang ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist, und diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass die Standardeinstellung 14 Tage beträgt, aber es können auch 30 Tage eingestellt werden. 
+1. **Wenn das Element während des Aufbewahrungszeitraums vom Benutzer geändert oder dauerhaft gelöscht wird** (entweder per UMSCHALT + ENTF oder aus gelöschte Elemente gelöscht), wird das Element in den Ordner "Wiederherstellbare Elemente" verschoben (oder, im Fall der Bearbeitung, kopiert). Dort wird in regelmäßigen Abständen ein Vorgang ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist, und diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass die Standardeinstellung 14 Tage beträgt, aber es können auch 30 Tage eingestellt werden.
     
 2. **Wenn das Element während des Aufbewahrungszeitraums nicht geändert oder gelöscht wird**, wird in allen Ordnern des Postfachs in regelmäßigen Abständen derselbe Vorgang ausgeführt, der Elemente identifiziert, deren Aufbewahrungszeitraum abgelaufen ist, und diese Elemente werden innerhalb von 14 Tagen nach Ende des Aufbewahrungszeitraums dauerhaft gelöscht. Beachten Sie, dass die Standardeinstellung 14 Tage beträgt, aber es können auch 30 Tage eingestellt werden. 
     
@@ -260,7 +263,8 @@ Eine Aufbewahrungsrichtlinie, die für Teams gilt, kann die [Erhaltungssperre](#
 Indem Sie PowerShell verwenden, können Sie bestimmte Typen von Exchange-Elementen aus einer Aufbewahrungsrichtlinie ausschließen. Sie können z. B. Sprachnachrichten, Chatnachrichten und andere Skype for Business Online-Inhalte in Postfächern ausschließen. Sie können auch Kalender-, Notiz- und Aufgabenelemente ausschließen. Diese Funktion ist nur mit PowerShell verfügbar. Es ist nicht auf der Benutzeroberfläche verfügbar, wenn Sie eine Aufbewahrungsrichtlinie erstellen.
   
 Zu diesem Zweck verwenden Sie den `ExcludedItemClasses` Parameter von der `New-RetentionComplianceRule` und `Set-RetentionComplianceRule` Cmdlets. Weitere Informationen zu PowerShell finden Sie weiter unten im Abschnitt [Die PowerShell-Cmdlets für Aufbewahrungsrichtlinien finden](#find-the-powershell-cmdlets-for-retention-policies).
-  
+
+
 ## <a name="locking-a-retention-policy"></a>Sperren einer Aufbewahrungsrichtlinie
 Einige Organisationen müssen Regeln einhalten, die von Behörden definiert werden, wie zum Beispiel die Rule 17a-4 der Securities And Exchange Commission (SEC), die erfordert, dass eine Aufbewahrungsrichtlinie nach dem Aktivieren nicht deaktiviert oder weniger restriktiv eingestellt werden kann. Mit der Aufbewahrungssperre können Sie die Richtlinie sperren, sodass niemand – auch nicht der Administrator – die Richtlinie deaktivieren oder weniger restriktiv einstellen kann.
   
@@ -294,6 +298,24 @@ Eine Aufbewahrungssperre wurde nun der Aufbewahrungsrichtlinie hinzugefügt. Wen
 
 ![Gesperrte Richtlinie mit allen Parameter in PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>Aufheben einer Aufbewahrungsrichtlinie
+
+Sie können eine Aufbewahrungsrichtlinie jederzeit deaktivieren oder löschen. In diesem Fall werden bis dahin aufbewahrte SharePoint- oder OneDrive-Inhalte nicht sofort und dauerhaft gelöscht. Um versehentlichem Datenverlust vorzubeugen, gibt es nun eine Nachfrist von 30 Tagen, während der der Inhaltsablauf für diese Richtlinie im permanenten Dokumentarchiv nicht eintritt, sodass Sie Inhalte ggf. wiederherstellen können. Sie können die Aufbewahrungsrichtlinie auch während der Nachfrist erneut aktivieren. In diesem Fall werden keine in Zusammenhang mit dieser Richtlinie stehenden Inhalte gelöscht. Diese Nachfrist kann mithilfe von PowerShell konfiguriert werden.
+
+Stellen Sie zunächst eine [Verbindung mit Office 365 Security & Compliance Center PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771) her.
+
+Führen Sie anschließend dieses PowerShell-Skript aus. Sie können die `ip_tenantGracePeriodInDays`-Eigenschaft in den Mandanten-Abonnementeinstellungen auf einen beliebigen Wert zwischen 0 und 100 Tagen festlegen. Wenn Sie diesen Wert auf "0" setzen, gibt es keine Nachfrist, und jegliche Aufbewahrungsrichtlinie wird sofort aufgehoben. 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+Diese 30-tägige Nachfrist in SharePoint und OneDrive entspricht dem 30-tägigen Anhalten der Aufbewahrungszeit in Exchange. Weitere Informationen finden Sie unter [Verwalten von Postfächern mit angehaltener Aufbewahrungszeit](https://docs.microsoft.com/de-DE/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Die Grundsätze der Aufbewahrung, oder was hat Vorrang?
 
 Es ist möglich oder sogar wahrscheinlich, dass auf Inhalte mehrere Aufbewahrungsrichtlinien angewendet werden, die jeweils mit einer anderen Aktion (aufbewahren, löschen oder beides) und einem anderen Aufbewahrungszeitraum verbunden sind. Was hat Vorrang? Ganz allgemein sei gesagt, dass Sie sich sicher sein können, dass Inhalte, die aufgrund einer Richtlinie aufbewahrt werden müssen, nicht von einer anderen Richtlinie dauerhaft gelöscht werden können.

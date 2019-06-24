@@ -3,26 +3,27 @@ title: Problembehandlung bei Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
-ms.audience: ITPro
+ms.date: 06/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
-ms.openlocfilehash: b37585469ec8bb299b7976f8a330f4c6b29e3f95
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: b88f97cd872d4ea3b95bfac049f47cd71dfb2cb2
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668301"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131349"
 ---
 # <a name="troubleshooting-information-barriers-preview"></a>Problembehandlung bei Informationsbarrieren (Vorschau)
 
-Informationsbarrieren können dazu beitragen, dass Ihre Organisation weiterhin den gesetzlichen Bestimmungen und Branchenvorschriften entspricht. Beispielsweise können Sie mit Informationsbarrieren die Kommunikation zwischen bestimmten Benutzergruppen einschränken, um einen Interessenkonflikt oder andere Probleme zu vermeiden. Weitere Informationen finden Sie unter [Information Barriers (Preview)](information-barriers.md).
+[Informationsbarrieren (Preview)](information-barriers.md) können dazu beitragen, dass Ihre Organisation weiterhin den gesetzlichen Anforderungen und Branchenvorschriften entspricht. Beispielsweise können Sie mit Informationsbarrieren die Kommunikation zwischen bestimmten Benutzergruppen einschränken, um einen Interessenkonflikt oder andere Probleme zu vermeiden. (Weitere Informationen zum Einrichten von Informationsbarrieren finden Sie unter [define Policies for Information Barriers (Preview)](information-barriers-policies.md).)
 
-Dieser Artikel enthält Anleitungen, die Sie verwenden können, um Antworten auf Fragen zu erhalten oder Probleme zu beheben, die mit Informationsbarrieren auftreten können.  
+Für den Fall, dass Personen aufgrund von Informationsbarrieren unerwartete Probleme haben, können Sie einige Schritte zur Lösung dieser Probleme durchführen. Verwenden Sie diesen Artikel als Leitfaden.
+
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen...
 
@@ -32,18 +33,42 @@ Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihne
 - Complianceadministrator
 - IB-Konformitätsverwaltung (Dies ist eine neue Rolle!)
 
-Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](permissions-in-the-security-and-compliance-center.md).
-
 Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter Prerequisites [(for Information Barrier Policies)](information-barriers-policies.md#prerequisites).
 
-Stellen Sie außerdem sicher, dass Sie [eine Verbindung mit Office 365 Security #a0 Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security #a0 Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+## <a name="issue-communications-are-still-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problem: die Kommunikation zwischen Benutzern, die in Microsoft Teams blockiert werden sollten, ist weiterhin zulässig.
+
+In diesem Fall sind zwar Informationsbarrieren definiert, aktiv und angewendet, aber Personen, die nicht miteinander kommunizieren sollten, können in Microsoft Teams weiterhin verwendet werden.
+
+### <a name="what-to-do"></a>Nächste Schritte
+
+Stellen Sie sicher, dass die fraglichen Benutzer in einer Informations Sperrrichtlinie enthalten sind. Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit Identitäts Parametern.
+
+Syntax`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
+
+Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. 
+
+Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
+
+In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*. 
+
+(Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>`) dieses Cmdlet gibt Informationen zu Benutzern zurück, beispielsweise Attributwerte und angewendete Richtlinien für Informationsbarrieren.
+
+
+|Ergebnisse  |Nächste Schritte  |
+|---------|---------|
+|Für die ausgewählten Benutzer werden keine Segmente aufgeführt.     |Führen Sie einen der folgenden Schritte aus:<br/>-Zuweisen von Benutzern zu einem vorhandenen Segment durch Bearbeiten der Benutzerprofile in Azure Active Directory<br/>-Definieren eines Segments mithilfe eines [unterstützten Attributs für Informationsbarrieren](information-barriers-attributes.md)         |
+|Segmente werden aufgelistet, aber diesen Segmenten werden keine Richtlinien für Informationsbarrieren zugewiesen.     |Führen Sie einen der folgenden Schritte aus:<br/>- [Definieren einer Informations Sperrrichtlinie](information-barriers-policies.md#part-2-define-information-barrier-policies) für jedes betreffende Segment<br/>- [Bearbeiten einer Richtlinie für Informationsbarrieren](information-barriers-policies.md#edit-a-policy) und Zuweisen des entsprechenden Segments         |
+|Segmente werden aufgelistet, und jede Richtlinie enthält eine Informations Barriere.     |-Führen Sie `Get-InformationBarrierPolicy` das Cmdlet aus, um sicherzustellen, dass Richtlinien für Informationsbarrieren aktiv sind.<br/>-Führen Sie `Get-InformationBarrierPoliciesApplicationStatus` das Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet werden<br/>-Ausführen des `Start-InformationBarrierPoliciesApplication` Cmdlets zum Anwenden aller Active Information Barrier-Richtlinien          |
+
 
 ## <a name="issue-people-are-unexpectedly-blocked-from-communicating-in-microsoft-teams"></a>Problem: Personen werden unerwartet für die Kommunikation in Microsoft Teams blockiert 
 
 In diesem Fall melden Personen unerwartete Probleme, die in Microsoft Teams miteinander kommunizieren. Beispiele:
 - Ein Benutzer kann keinen anderen Benutzer in Microsoft Teams finden oder mit ihm kommunizieren.
 - Ein Benutzer kann einen anderen Benutzer in Microsoft Teams nicht anzeigen oder auswählen.
-- Ein Benutzer kann Nachrichten an einen anderen Benutzer in Microsoft Teams anzeigen, aber nicht senden.
+- Ein Benutzer kann einen anderen Benutzer sehen, aber er kann keine Nachrichten an diesen anderen Benutzer in Microsoft Teams auswählen oder senden.
 
 ### <a name="what-to-do"></a>Nächste Schritte
 
@@ -94,23 +119,24 @@ Nach dem Ausführen des Cmdlets **Start-InformationBarrierPoliciesApplication** 
 
 ### <a name="what-to-do"></a>Nächste Schritte
 
-1. Beachten Sie, dass beim Ausführen des Cmdlets für die Richtlinienanwendung für alle Konten in Ihrer Organisation Richtlinien für Informationsbarrieren angewendet (oder entfernt) werden, Benutzer nach Benutzer. Wenn Sie viele Benutzer haben, dauert es eine Weile, bis Sie verarbeitet werden. (Als allgemeine Richtlinie dauert es etwa eine Stunde, 5.000-Benutzerkonten zu verarbeiten.) 
+Beachten Sie, dass beim Ausführen des Cmdlets für die Richtlinienanwendung für alle Konten in Ihrer Organisation Richtlinien für Informationsbarrieren angewendet (oder entfernt) werden, Benutzer nach Benutzer. Wenn Sie viele Benutzer haben, dauert es eine Weile, bis Sie verarbeitet werden. (Als allgemeine Richtlinie dauert es etwa eine Stunde, 5.000-Benutzerkonten zu verarbeiten.)
 
-2. Verwenden Sie das Cmdlet **Get-InformationBarrierPoliciesApplicationStatus** , um den Status zu überprüfen.
+1. Verwenden Sie das Cmdlet **Get-InformationBarrierPoliciesApplicationStatus** , um den Status der neuesten Richtlinienanwendung zu überprüfen.
 
     Syntax`Get-InformationBarrierPoliciesApplicationStatus`
 
-    Verwenden Sie zum Anzeigen des Status für alle Richtlinien Anwendungen für Informationsbarrieren`Get-InformationBarrierPoliciesApplicationStatus -All $true`
+    (Zum Anzeigen des Status für *alle* Richtlinien Anwendungen für Informationsbarrieren verwenden Sie dieses Cmdlet:<br/>
+    `Get-InformationBarrierPoliciesApplicationStatus -All $true`)
 
     Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird..
 
-3. Führen Sie je nach den Ergebnissen von Schritt 2 einen der folgenden Schritte aus:
-
-    - Wenn die Anwendung nicht gestartet wurde und seit der Ausführung des **Start-InformationBarrierPoliciesApplication-** Cmdlets mehr als 45 Minuten dauern, überprüfen Sie Ihr Überwachungsprotokoll, um zu ermitteln, ob Fehler in Richtlinien Definitionen vorliegen, oder aus einem anderen Grund, warum die die Anwendung wurde nicht gestartet.
-
-    - Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Ihre Segmente und Richtlinien. Bearbeiten Sie gegebenenfalls [Segmente](information-barriers-policies.md#edit-a-segment) und/oder [Bearbeiten Sie Richtlinien](information-barriers-policies.md#edit-a-policy), und führen Sie dann das Cmdlet **Start-InformationBarrierPoliciesApplication** erneut aus.
-
-    - Wenn die Anwendung noch ausgeführt wird, lassen Sie mehr Zeit für ihre Ausführung zu. Wenn es sich um mehrere Tage handelt, wenden Sie sich an den Support.
+2. Führen Sie je nach den Ergebnissen des vorherigen Schritts einen der folgenden Schritte aus:
+  
+    |Status  |Nächster Schritt  |
+    |---------|---------|
+    |**Nicht gestartet**     |Wenn es mehr als 45 Minuten seit dem **Start-InformationBarrierPoliciesApplication-** Cmdlet ausgeführt wurde, überprüfen Sie Ihr Überwachungsprotokoll, um zu sehen, ob es Fehler in Richtlinien Definitionen gibt, oder aus einem anderen Grund, warum die Anwendung noch nicht gestartet wurde. |
+    |**Fehlgeschlagen**     |Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Ihr Überwachungsprotokoll. Überprüfen Sie auch ihre Segmente und Richtlinien. Sind alle Benutzer mehr als einem Segment zugeordnet? Sind Segmente mit mehr als einem poliicy zugeordnet? Bearbeiten Sie gegebenenfalls [Segmente](information-barriers-policies.md#edit-a-segment) und/oder [Bearbeiten Sie Richtlinien](information-barriers-policies.md#edit-a-policy), und führen Sie dann das Cmdlet **Start-InformationBarrierPoliciesApplication** erneut aus.  |
+    |**In Bearbeitung**     |Wenn die Anwendung noch ausgeführt wird, lassen Sie mehr Zeit für ihre Ausführung zu. Wenn es sich um mehrere Tage handelt, erfassen Sie die Überwachungsprotokolle, und wenden Sie sich an den Support. |
 
 ## <a name="related-topics"></a>Verwandte Themen
 
