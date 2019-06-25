@@ -27,7 +27,7 @@
 # [Schützen von Informationen](protect-information.md)
 ## [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 ### [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md)
-### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply_sensitivity_label_automatically.md)
+### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 
 ## [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
@@ -538,6 +538,8 @@
 ### [Definieren von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-policies.md)
 ### [Attribute für Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-attributes.md)
 ### [Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)
+### [Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-edit-segments-policies.md.md)
+
 
 ## Kundenschlüssel
 ### [Kontrolle über Daten in Office 365 mithilfe von Kundenschlüsseln](controlling-your-data-using-customer-key.md)
