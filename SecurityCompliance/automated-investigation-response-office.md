@@ -3,7 +3,7 @@ title: Automatische Untersuchung und Reaktion (Air) mit Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/25/2019
+ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erfahren Sie mehr über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852619"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233332"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Automatische Untersuchung und Reaktion (Air) mit Office 365
 
@@ -37,7 +37,8 @@ In der ersten Version von Air im April 2019 werden Warnungen, die von folgenden 
 3. E-Mail-Nachrichten mit Schadsoftware nach der Zustellung entfernt *
 4. E-Mail-Nachrichten mit gelöschten Phishing-URLs nach der Zustellung *
 
-***Hinweis**: diesen Warnungen wurde in den jeweiligen Warnungsrichtlinien innerhalb des Security #a0 Compliance Centers mit e-Mail-Benachrichtigungen die Option "Informationsgrad" zugewiesen. Diese können über die Warnungsrichtlinien Konfiguration aktiviert werden.
+> [!NOTE]
+> Diesen Warnungen wurde in den jeweiligen Warnungsrichtlinien innerhalb des Security #a0 Compliance Centers mit e-Mail-Benachrichtigungen ein "Informations"-Schweregrad zugewiesen. Diese können über die Warnungsrichtlinien Konfiguration aktiviert werden.
 
 Um Warnungen anzuzeigen, wählen Sie **** > im Security #a0 Compliance Center Benachrichtigungen**anzeigen Warnungen**aus. Wählen Sie eine Warnung aus, um die Details anzuzeigen, und verwenden Sie dann den Link **Untersuchung anzeigen** , um zur entsprechenden [Untersuchung](#investigation-graph)zu gelangen. Beachten Sie, dass Informationswarnungen standardmäßig in der Warnungsansicht ausgeblendet werden. Um diese anzuzeigen, müssen Sie die Warnungsfilterung so ändern, dass Informationswarnungen hinzugefügt werden.
 
@@ -56,18 +57,14 @@ Die Sicherheits-Textbuch-Dokumente, die Sie mit Air erhalten, wurden entwickelt,
 
 Im Rahmen von Air werden Sicherheits-Textbuch in Phasen ausgerollt.
 
-- **Phase 1 (April 2019)**: Textbuch enthält Empfehlungen für Aktionen, die Sicherheitsadministratoren überprüfen und genehmigen. 
+- **Phase 1 (April 2019)**: Textbuch enthält Empfehlungen für Aktionen, die Sicherheitsadministratoren überprüfen und genehmigen. In Phase 1 werden die folgenden Textbuch-Texttypen enthalten:
+    - Vom Benutzer gemeldete Phishing-Nachricht
+    - Änderung des URL-Klick Urteils 
+    - Erkannte Schadsoftware nach der Zustellung (Malware zap)
+    - Phishing-Erkennung nach der Zustellung zap (Phishing zap)
+    - Manuelle e-Mail-Untersuchungen (mit Threat Explorer)
 
-- **Phase 2 (Post-June 2019)**: Verbesserungen des Textbuch sowie Sicherheitsadministratoren haben die Möglichkeit, Sicherheits-Textbuch zu konfigurieren, um einige Aktionen automatisch ohne administrative Interaktion durchführen zu können.
-
-In Phase 1 werden die folgenden Textbuch-Texttypen enthalten:
-- Vom Benutzer gemeldete Phishing-Nachricht
-- Änderung des URL-Klick Urteils 
-- Erkannte Schadsoftware nach der Zustellung (Malware zap)
-- Phishing-Erkennung nach der Zustellung zap (Phishing zap)
-- Manuelle e-Mail-Untersuchungen (mit Threat Explorer)
-
-Einige andere Textbuch sind für Phase 2 geplant.
+- **Phase 2 (zweite Hälfte von 2019)**: mehrere neue Textbuch-und Textbuch-Verbesserungen sowie die Option für Sicherheitsadministratoren zum Konfigurieren von Sicherheits-Textbuch zum automatischen Ausführen bestimmter Aktionen ohne administrative Interaktion. 
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Manuskripte umfassen Untersuchungen und Empfehlungen
 
