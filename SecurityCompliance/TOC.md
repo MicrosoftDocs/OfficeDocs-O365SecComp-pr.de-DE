@@ -331,7 +331,7 @@
 #### [Beheben von Fehlern beim Verarbeiten von Daten](compliance20/error-remediation.md)
 
 ### [Sammeln von Daten für einen Fall](compliance20/collecting-data-for-ediscovery.md)
-#### [Erstellen einer Suche zum Sammeln von Daten](compliance20/create-search-to-collect-data.md)
+#### [Erstellen einer Suche](compliance20/create-search-to-collect-data.md)
 #### [Erstellen von Suchabfragen](compliance20/building-search-queries.md)
 #### [Suchstatistiken](compliance20/search-statistics.md)
 #### [Hinzufügen von Suchergebnissen zu einem Prüfdateisatz](compliance20/add-data-to-review-set.md)
@@ -538,7 +538,7 @@
 ### [Definieren von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-policies.md)
 ### [Attribute für Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-attributes.md)
 ### [Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)
-### [Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-edit-segments-policies.md.md)
+### [Bearbeiten von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-edit-segments-policies.md.md)
 
 
 ## Kundenschlüssel
