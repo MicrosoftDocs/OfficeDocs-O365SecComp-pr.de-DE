@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Anti-Phishing-Schutz mit umfassendem Schutz als Bestandteil von Office 365 Advanced Threat Protection und grundlegenden Schutz in Office 365 Exchange Online Schutz helfen, Ihre Organisation vor böswilligen Identitätswechsel basierten Phishing-Angriffen zu schützen. und andere Phishing-Angriffe.
-ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: f73c4404c2ff2f347bc770176e5b6b25e03af88c
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408370"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279453"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Einrichten von Office 365 ATP-Richtlinien für Anti-Phishing und Anti-Phishing
 
@@ -37,6 +37,9 @@ Was ist zu tun:
 2. Erfahren Sie mehr über Ihre Anti-Phishing-und ATP-AntiPhishing-Richtlinienoptionen.
 
 3. Richten Sie eine Anti-Phishing-Richtlinie oder eine ATP-Anti-Phishing-Richtlinie ein.
+
+>[!IMPORTANT]
+> Informationen dazu, wie mehrere Technologien angewendet werden, finden Sie unter [How Policies and protections are Combined](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
 
 ## <a name="review-the-prerequisites"></a>Überprüfen der Voraussetzungen
 
