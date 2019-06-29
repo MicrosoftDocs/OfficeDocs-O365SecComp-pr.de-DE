@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/26/2019
+ms.date: 06/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 505508771ae1e630d7d34fde9ee1525d19bd5039
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113259"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394340"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -132,7 +132,8 @@ Standardrichtlinien Optionen gelten für alle Benutzer in Ihrer Organisation.
 |---------|---------|
 |**Off** <br/> |Überprüft URLs in e-Mail-Nachrichten nicht.  <br/> Ermöglicht das Definieren einer Ausnahmeregel, beispielsweise eine Regel, die URLs in e-Mail-Nachrichten für eine bestimmte Empfängergruppe nicht überprüft.  <br/> |
 |**On** <br/> |Umschreibt URLs, um Benutzer über ATP-Safe-Links-Schutz zu leiten, wenn die Benutzer auf URLs in e-Mail-Nachrichten klicken.  <br/> Überprüft eine URL, wenn auf eine Liste blockierter oder böswilliger URLs geklickt wird.  <br/> |
-|**Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte** <br/> |Wenn diese Option ausgewählt ist, werden URLs überprüft, die auf herunterladbare Inhalte deuten.  <br/> |
+|**Übernehmen der Echt Zeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen** <br/> |Wenn diese Option ausgewählt ist, werden verdächtige URLs und Links, die auf herunterladbaren Inhalt verweisen, überprüft.  <br/> |
+|**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht liefern** <br/> |Wenn diese Option ausgewählt ist, werden Nachrichten, die zu scannende URLs enthalten, bis zum Abschluss der Überprüfung der URLs aufbewahrt und bestätigt, dass Sie sicher sind, bevor die Nachrichten zugestellt werden.  <br/> |
 |**Anwenden von sicheren Links auf Nachrichten, die innerhalb der Organisation gesendet werden** <br/> | Wenn diese Option verfügbar und ausgewählt ist, wird der Schutz für ATP-sichere Links auf e-Mail-Nachrichten angewendet, die zwischen Personen in Ihrer Organisation gesendet werden, vorausgesetzt, die e-Mail-Konten werden in Office 365 gehostet.  <br/> |
 |**Benutzerklicks nicht nachverfolgen** <br/> |Wenn diese Option ausgewählt ist, klicken Sie auf Daten für URLs in e-Mail von externen Absendern wird nicht gespeichert. Die URL-klickverfolgung für Links in e-Mail-Nachrichten, die innerhalb der Organisation gesendet werden, wird derzeit nicht unterstützt.  <br/> |
 |**Benutzer dürfen nicht auf die ursprüngliche URL klicken.** <br/> |Wenn diese Option ausgewählt ist, können Benutzer nicht über eine [Warnungsseite](atp-safe-links-warning-pages.md) an eine URL weiterleiten, die als bösartig eingestuft wird.  <br/> |
@@ -146,4 +147,4 @@ Sobald Ihre ATP-Richtlinien für sichere Links vorhanden sind, können Sie sehen
 
 - [Verwenden des Explorers im Security &amp; Compliance Center](use-explorer-in-security-and-compliance.md)
 
-Bleiben Sie auf dem neuesten Stand neuer Features, die zu ATP kommen. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) , und erfahren Sie mehr über die [neuen Features, die ATP hinzugefügt werden](office-365-atp.md#new-features-in-office-365-atp).
+Bleiben Sie auf dem neuesten Stand neuer Features, die zu ATP kommen. Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).

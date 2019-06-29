@@ -3,7 +3,7 @@ title: Problembehandlung bei Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
-ms.openlocfilehash: e8750358aaa7788c85f0ab656b30f5b5149d898c
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 20937fa4ee050dfa1e3bb4fcfcd582b1c78ccead
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199512"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394300"
 ---
 # <a name="troubleshooting-information-barriers-preview"></a>Problembehandlung bei Informationsbarrieren (Vorschau)
 
@@ -27,9 +27,57 @@ Für den Fall, dass Personen aufgrund von Informationsbarrieren unerwartete Prob
 > [!IMPORTANT]
 > Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter Prerequisites [(for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security #a0 Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
+## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problem: Benutzer werden unerwartet für die Kommunikation mit anderen Personen in Microsoft Teams blockiert. 
+
+In diesem Fall melden Personen unerwartete Probleme, die mit anderen in Microsoft Teams kommunizieren. Beispiele:
+- Ein Benutzer sucht nach, kann ihn jedoch nicht finden, sondern einen anderen Benutzer in Microsoft Teams.
+- Ein Benutzer kann einen anderen Benutzer in Microsoft Teams finden, aber nicht auswählen.
+- Ein Benutzer kann einen anderen Benutzer sehen, aber keine Nachrichten an diesen anderen Benutzer in Microsoft Teams senden.
+
+### <a name="what-to-do"></a>Nächste Schritte
+
+Bestimmen Sie, ob die Benutzer von einer Informations Sperrrichtlinie betroffen sind. Je nachdem, wie Richtlinien konfiguriert sind, funktionieren Informationsbarrieren möglicherweise wie erwartet. Oder Sie müssen die Richtlinien Ihrer Organisation möglicherweise verfeinern.
+
+1. Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit dem Parameter Identity. 
+
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    | `Get-InformationBarrierRecipientStatus -Identity` <p>Sie können jeden Identitätswert verwenden, der jeden Empfänger eindeutig identifiziert, beispielsweise Name, Alias, DN (Distinguished Name), kanonischer DN, e-Mail-Adresse oder GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb` <p>In diesem Beispiel wird ein Alias (*meganb*) für den Parameter Identity verwendet. Dieses Cmdlet gibt Informationen zurück, die angeben, ob der Benutzer von einer Richtlinie für Informationsbarrieren betroffen ist. (Suchen Sie nach * ExoPolicyId \<: GUID>.)         |
+
+    **Wenn die Benutzer nicht in Richtlinien für Informationsbarrieren enthalten sind, wenden Sie sich an den Support**. Führen Sie andernfalls die nächste Aktion aus.
+
+2. Finden Sie heraus, welche Segmente in einer Informations Sperrrichtlinie enthalten sind. Verwenden Sie dazu das `Get-InformationBarrierPolicy` Cmdlet mit dem Parameter Identity. 
+
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Get-InformationBarrierPolicy` <p>Verwenden Sie Details wie die Richtlinien-GUID (ExoPolicyId), die Sie während des vorherigen Schritts erhalten haben, als Identitätswert.     | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p>In diesem Beispiel werden detaillierte Informationen zur Richtlinie mit Informationsbarrieren abgerufen, die ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*enthält.         |
+
+    Suchen Sie nach dem Ausführen des Cmdlets in den Ergebnissen nach **AssignedSegment**-, **SegmentsAllowed**-und **SegmentsBlocked** -Werten.
+
+    Beispielsweise haben wir nach dem `Get-InformationBarrierPolicy` Ausführen des Cmdlets in der Ergebnisliste Folgendes gesehen:
+
+    ```powershell
+        AssignedSegment      : Sales
+        SegmentsAllowed      : {}
+        SegmentsBlocked      : {Research}
+    ```
+    In diesem Fall können wir sehen, dass eine Informations Barriere-Richtlinie Personen betrifft, die sich in den Segmenten Vertrieb und Forschung befinden. In diesem Fall werden Personen im Vertrieb daran gehindert, mit Personen in der Forschung zu kommunizieren. 
+    
+    Wenn dies richtig erscheint, funktionieren Informationsbarrieren wie erwartet. Wenn dies nicht der Fall ist, fahren Sie mit dem nächsten Schritt fort.
+
+4. Stellen Sie sicher, dass ihre Segmente ordnungsgemäß definiert sind. Verwenden Sie dazu das `Get-OrganizationSegment` Cmdlet, und überprüfen Sie die Ergebnisliste. 
+
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Get-OrganizationSegment`<p>Verwenden Sie dieses Cmdlet mit einem Identity-Parameter.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>In diesem Beispiel werden Informationen zu dem Segment abgerufen, das über GUID- *c96e0837-C232-4a8a-841e-ef45787d8fcd*verfügt.         |
+
+    Überprüfen Sie die Details für das Segment. Bearbeiten Sie bei Bedarf [ein Segment](information-barriers-edit-segments-policies.md.md#edit-a-segment), und verwenden Sie dann das `Start-InformationBarrierPoliciesApplication` Cmdlet erneut.
+
+    **Wenn Sie weiterhin Probleme mit ihrer Richtlinie zu Informationsbarrieren haben, wenden Sie sich an den Support**.
+
 ## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problem: Kommunikationen zwischen Benutzern, die in Microsoft Teams blockiert werden sollten, sind zulässig.
 
-In diesem Fall sind zwar Informationsbarrieren definiert, aktiv und angewendet, aber Personen, die nicht miteinander kommunizieren sollten, können sich irgendwie in Microsoft Teams befinden.
+In diesem Fall sind zwar Informationsbarrieren definiert, aktiv und angewendet, aber Personen, die nicht miteinander kommunizieren sollten, können mit Microsoft Teams chatten und sich gegenseitig anrufen.
 
 ### <a name="what-to-do"></a>Nächste Schritte
 
@@ -37,13 +85,10 @@ Stellen Sie sicher, dass die fraglichen Benutzer in einer Informations Sperrrich
 
 1. Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit Identitäts Parametern.
 
-    Syntax`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*.          |
 
-    Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. 
-
-    Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
-
-    In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*. 
     
     > [!TIP]
     > Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden:`Get-InformationBarrierRecipientStatus -Identity <value>`
@@ -59,59 +104,27 @@ Stellen Sie sicher, dass die fraglichen Benutzer in einer Informations Sperrrich
     |Segmente werden aufgelistet, und jede Richtlinie enthält eine Informations Barriere.     |-Führen Sie `Get-InformationBarrierPolicy` das Cmdlet aus, um sicherzustellen, dass Richtlinien für Informationsbarrieren aktiv sind.<br/>-Führen Sie `Get-InformationBarrierPoliciesApplicationStatus` das Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet werden<br/>-Ausführen des `Start-InformationBarrierPoliciesApplication` Cmdlets zum Anwenden aller Active Information Barrier-Richtlinien          |
     
 
-## <a name="issue-people-are-unexpectedly-blocked-from-communicating-in-microsoft-teams"></a>Problem: Personen werden unerwartet für die Kommunikation in Microsoft Teams blockiert 
+## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problem: Ich muss einen einzelnen Benutzer aus einer Informations Sperrrichtlinie entfernen.
 
-In diesem Fall melden Personen unerwartete Probleme, die mit anderen in Microsoft Teams kommunizieren. Beispiele:
-- Ein Benutzer kann keinen anderen Benutzer in Microsoft Teams finden.
-- Ein Benutzer kann keinen anderen Benutzer in Microsoft Teams auswählen.
-- Ein Benutzer kann einen anderen Benutzer sehen, aber er kann keine Nachrichten an diesen anderen Benutzer in Microsoft Teams auswählen oder senden.
-- Ein Benutzer kann einen anderen Benutzer anzeigen und auswählen, jedoch nicht mit diesem Benutzer in Microsoft Teams kommunizieren.
+In diesem Fall sind Richtlinien für Informationsbarrieren wirksam, und ein oder mehrere Benutzer werden unerwartet für die Kommunikation mit anderen Personen in Microsoft Teams blockiert. Anstatt Richtlinien für Informationsbarrieren gänzlich zu entfernen, können Sie einen oder mehrere einzelne Benutzer aus Informations Sperrrichtlinien entfernen. 
 
 ### <a name="what-to-do"></a>Nächste Schritte
 
-Bestimmen Sie, ob die Benutzer von einer Informations Sperrrichtlinie betroffen sind.
+Richtlinien für Informationsbarrieren werden Segmenten von Benutzern zugewiesen. Segmente werden mithilfe bestimmter [Attribute in Benutzerkonto Profilen](information-barriers-attributes.md)definiert. Wenn Sie eine Richtlinie von einem einzelnen Benutzer entfernen müssen, sollten Sie das Profil des Benutzers in Azure bearbeiten Active Directory so, dass der Benutzer nicht mehr in einem Segment enthalten ist, das von Informationsbarrieren betroffen ist.
 
-1. Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit dem Parameter Identity. 
+1. Verwenden Sie das Cmdlet **Get-InformationBarrierRecipientStatus** mit Identitäts Parametern. Dieses Cmdlet gibt Informationen zu Benutzern zurück, beispielsweise Attributwerte und alle angewendeten Richtlinien für Informationsbarrieren.
 
-    Die Syntax lautet`Get-InformationBarrierRecipientStatus -Identity`
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>`<p>Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID.     |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*.          |
+    |`Get-InformationBarrierRecipientStatus -Identity <value>` <p>Sie können einen beliebigen Wert verwenden, der den Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p>In diesem Beispiel wird auf ein einzelnes Konto in Office 365 verwiesen: *jeanp*. |
 
-    Sie können jeden Identitätswert verwenden, der jeden Empfänger eindeutig identifiziert, beispielsweise Name, Alias, DN (Distinguished Name), kanonischer DN, e-Mail-Adresse oder GUID.
+2. Überprüfen Sie die Ergebnisse, um festzustellen, ob Richtlinien für Informationsbarrieren zugewiesen sind und zu welchem Segment (n) die Benutzer gehören. 
 
-    Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb`
+3. Wenn Sie einen Benutzer aus einem Segment entfernen möchten, das von Informationsbarrieren betroffen ist, [Aktualisieren Sie die Profilinformationen des Benutzers in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    In diesem Beispiel wird ein Alias (*meganb*) für den Parameter Identity verwendet. Dieses Cmdlet gibt Informationen zurück, die angeben, ob der Benutzer von einer Richtlinie für Informationsbarrieren betroffen ist. (Suchen Sie nach * ExoPolicyId \<: GUID>.)
+4. Warten Sie etwa 30 Minuten, bis FwdSync ausgeführt wird. Oder führen Sie das `Start-InformationBarrierPoliciesApplication` Cmdlet aus, um alle Active Information Barrier-Richtlinien anzuwenden.
 
-    Wenn die Benutzer nicht in Richtlinien für Informationsbarrieren enthalten sind, wenden Sie sich an den Support. Führen Sie andernfalls die nächste Aktion aus.
-
-2. Finden Sie heraus, welche Segmente in einer Informations Sperrrichtlinie enthalten sind. Verwenden Sie dazu das `Get-InformationBarrierPolicy` Cmdlet mit dem Parameter Identity. Verwenden Sie Details wie die Richtlinien-GUID (ExoPolicyId), die Sie während des vorherigen Schritts erhalten haben, als Identitätswert.
-
-    Beispiel: `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f`
-
-    In diesem Beispiel werden detaillierte Informationen zur Richtlinie mit Informationsbarrieren abgerufen, die ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f*enthält.
-    
-    Suchen Sie nach dem Ausführen des Cmdlets in den Ergebnissen nach **AssignedSegment**-, **SegmentsAllowed**-und **SegmentsBlocked** -Werten.
-
-    Beispiel: nach dem Ausführen `Get-InformationBarrierPolicy` des Cmdlets haben wir in der Ergebnisliste Folgendes gesehen:
-
-    ```powershell
-        AssignedSegment      : Sales
-        SegmentsAllowed      : {}
-        SegmentsBlocked      : {Research}
-    ```
-    In diesem Fall können wir sehen, dass eine Informations Barriere-Richtlinie Personen betrifft, die sich in den Segmenten Vertrieb und Forschung befinden. In diesem Fall werden Personen im Vertrieb daran gehindert, mit Personen in der Forschung zu kommunizieren. Wenn dies richtig erscheint, funktionieren Informationsbarrieren wie erwartet. Wenn dies nicht der Fall ist, fahren Sie mit dem nächsten Schritt fort.
-
-4. Stellen Sie sicher, dass ihre Segmente ordnungsgemäß definiert sind. Verwenden Sie dazu das `Get-OrganizationSegment` Cmdlet, und überprüfen Sie die Ergebnisliste. 
-
-    Um Details für ein bestimmtes Segment anzuzeigen, verwenden Sie `Get-OrganizationSegment` das-Cmdlet mit einem Identity-Parameter. 
-
-    Beispiel: `Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd`
-
-    In diesem Beispiel werden Informationen zu dem Segment abgerufen, das über GUID- *c96e0837-C232-4a8a-841e-ef45787d8fcd*verfügt.
-
-    Überprüfen Sie die Details für das Segment. Bearbeiten Sie bei Bedarf [ein Segment](information-barriers-edit-segments-policies.md.md#edit-a-segment), und verwenden Sie dann das `Start-InformationBarrierPoliciesApplication` Cmdlet erneut.
-
-    Wenn Sie weiterhin Probleme mit ihrer Richtlinie zu Informationsbarrieren haben, wenden Sie sich an den Support.
-    
 ## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>Problem: der Anwendungsprozess für Informationsbarrieren dauert zu lange.
 
 Nach dem Ausführen des Cmdlets **Start-InformationBarrierPoliciesApplication** dauert es sehr lange, bis der Vorgang abgeschlossen ist.
@@ -122,12 +135,12 @@ Beachten Sie, dass beim Ausführen des Cmdlets für die Richtlinienanwendung fü
 
 1. Verwenden Sie das Cmdlet **Get-InformationBarrierPoliciesApplicationStatus** , um den Status der neuesten Richtlinienanwendung zu überprüfen.
 
-    Syntax`Get-InformationBarrierPoliciesApplicationStatus`
+    |So zeigen Sie die neueste Richtlinienanwendung an  |So zeigen Sie den Status für alle Richtlinien Anwendungen an  |
+    |---------|---------|
+    |`Get-InformationBarrierPoliciesApplicationStatus`     |`Get-InformationBarrierPoliciesApplicationStatus -All $true`         |
 
-    (Zum Anzeigen des Status für *alle* Richtlinien Anwendungen für Informationsbarrieren verwenden Sie dieses Cmdlet:<br/>
-    `Get-InformationBarrierPoliciesApplicationStatus -All $true`)
 
-    Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird..
+    Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.
 
 2. Führen Sie je nach den Ergebnissen des vorherigen Schritts einen der folgenden Schritte aus:
   
@@ -136,6 +149,25 @@ Beachten Sie, dass beim Ausführen des Cmdlets für die Richtlinienanwendung fü
     |**Nicht gestartet**     |Wenn es mehr als 45 Minuten seit dem **Start-InformationBarrierPoliciesApplication-** Cmdlet ausgeführt wurde, überprüfen Sie Ihr Überwachungsprotokoll, um zu sehen, ob es Fehler in Richtlinien Definitionen gibt, oder aus einem anderen Grund, warum die Anwendung noch nicht gestartet wurde. |
     |**Fehlgeschlagen**     |Wenn die Anwendung fehlgeschlagen ist, überprüfen Sie Ihr Überwachungsprotokoll. Überprüfen Sie auch ihre Segmente und Richtlinien. Sind alle Benutzer mehr als einem Segment zugeordnet? Sind Segmente mit mehr als einem poliicy zugeordnet? Bearbeiten Sie gegebenenfalls [Segmente](information-barriers-edit-segments-policies.md.md#edit-a-segment) und/oder [Bearbeiten Sie Richtlinien](information-barriers-edit-segments-policies.md.md#edit-a-policy), und führen Sie dann das Cmdlet **Start-InformationBarrierPoliciesApplication** erneut aus.  |
     |**In Bearbeitung**     |Wenn die Anwendung noch ausgeführt wird, lassen Sie mehr Zeit für ihre Ausführung zu. Wenn es sich um mehrere Tage handelt, erfassen Sie die Überwachungsprotokolle, und wenden Sie sich an den Support. |
+
+## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problem: Richtlinien für Informationsbarrieren werden nicht angewendet.
+
+In diesem Fall haben Sie Segmente definiert, Richtlinien für Informationsbarrieren definiert und versucht, diese Richtlinien anzuwenden. Wenn Sie das `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet ausführen, können Sie jedoch sehen, dass die Richtlinienanwendung fehlgeschlagen ist.
+
+### <a name="what-to-do"></a>Nächste Schritte
+
+Stellen Sie sicher, dass in Ihrer Organisation keine [Exchange-adressbuchrichtlinien](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) vorhanden sind. Solche Richtlinien verhindern, dass Richtlinien für Informationsbarrieren angewendet werden.
+
+1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) her. 
+
+2. Führen Sie das Cmdlet [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) aus, und überprüfen Sie die Ergebnisse.
+
+    |Ergebnisse  |Nächster Schritt  |
+    |---------|---------|
+    |Exchange-adressbuchrichtlinien werden aufgelistet     |[Adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
+    |Es sind keine adressbuchrichtlinien vorhanden. |Überprüfen der Überwachungsprotokolle, um herauszufinden, warum die Richtlinienanwendung fehlschlägt |
+
+3. [Anzeigen des Status von Benutzerkonten, Segmenten, Richtlinien oder Richtlinienanwendung](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

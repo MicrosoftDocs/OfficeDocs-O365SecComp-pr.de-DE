@@ -3,7 +3,7 @@ title: Definieren von Richtlinien für Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: 0603b5339672be3b4ac6ad4a18c6032f563acf27
-ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
+ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279463"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394320"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definieren von Richtlinien für Informationsbarrieren (Vorschau)
 
@@ -29,11 +29,25 @@ In diesem Artikel wird beschrieben, wie Sie Richtlinien für Informationsbarrier
 > [!TIP]
 > Dieser Artikel enthält ein [Beispielszenario](#example-contosos-departments-segments-and-policies) und eine [herunterladbare Excel-Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) , die Sie bei der Planung und Definition Ihrer Richtlinien für Informationsbarrieren unterstützt.
 
+## <a name="concepts-of-information-barrier-policies"></a>Konzepte von Richtlinien für Informationsbarrieren
+
+Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Benutzerkonto Attributen, Segmenten, "blockieren" und/oder "zulassen"-Richtlinien und Richtlinienanwendung.
+
+- **Benutzerkontoattribute** werden in Azure Active Directory (oder Exchange Online) definiert. Diese Attribute können Abteilung, Position, Ort, Teamname und andere Auftragsprofil Details umfassen. 
+
+- **Segmente** sind Benutzergruppen, die im Office 365 Security #a0 Compliance Center mithilfe eines ausgewählten **Benutzerkontoattributs**definiert sind. (Siehe [Liste der unterstützten Attribute](information-barriers-attributes.md).) 
+
+- **Richtlinien für Informationsbarrieren** bestimmen Kommunikations Grenzwerte oder-Einschränkungen. Wenn Sie Richtlinien für Informationsbarrieren definieren, wählen Sie aus zwei Arten von Richtlinien:
+    - "Blockieren"-Richtlinien verhindern, dass ein Segment mit einem anderen Segment kommuniziert.
+    - Mit den Richtlinien "zulassen" kann ein Segment nur mit bestimmten anderen Segmenten kommunizieren.
+
+- Die **Richtlinienanwendung** wird ausgeführt, nachdem alle Richtlinien für Informationsbarrieren definiert wurden und Sie Sie in Ihrer Organisation anwenden können.
+
 ## <a name="the-work-flow-at-a-glance"></a>Der Workflow auf einen Blick
 
 |Phase    |Was ist involviert  |
 |---------|---------|
-|[Stellen Sie sicher, dass die Voraussetzungen erfüllt sind](#prerequisites)     |-Stellen Sie sicher, dass Sie über die [erforderlichen Lizenzen und Berechtigungen](information-barriers.md#required-licenses-and-permissions) verfügen<br/>-Sicherstellen, dass Ihr Verzeichnisdaten für die Segmentierung von Benutzern enthält<br/>-Aktivieren der bereichsbezogenen Verzeichnissuche für Microsoft Teams<br/>-Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist.<br/>-Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>-Bereitstellen der Zustimmung des Administrators für Microsoft Teams (Schritte sind enthalten)          |
+|[Stellen Sie sicher, dass die Voraussetzungen erfüllt sind](#prerequisites)     |-Stellen Sie sicher, dass Sie über die [erforderlichen Lizenzen und Berechtigungen](information-barriers.md#required-licenses-and-permissions) verfügen<br/>-Sicherstellen, dass Ihr Verzeichnisdaten für die Segmentierung von Benutzern enthält<br/>-Aktivieren der bereichsbezogenen Verzeichnissuche für Microsoft Teams<br/>-Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist.<br/>-Sicherstellen, dass keine Exchange-adressbuchrichtlinien vorhanden sind<br/>-Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>-Bereitstellen der Zustimmung des Administrators für Microsoft Teams (Schritte sind enthalten)          |
 |[Teil 1: Segmentieren von Benutzern in Ihrer Organisation](#part-1-segment-users)     |-Bestimmen der erforderlichen Richtlinien<br/>-Eine Liste der zu definierenden Segmente erstellen<br/>-Bestimmen der zu verwendenden Attribute<br/>-Definieren von Segmenten in Bezug auf Richtlinienfilter        |
 |[Abschnitt 2: Definieren von Richtlinien für Informationsbarrieren](#part-2-define-information-barrier-policies)     |-Definieren Ihrer Richtlinien (noch nicht gültig)<br/>-Auswählen aus zwei Arten (blockieren oder zulassen) |
 |[Abschnitt 3: Anwenden von Richtlinien für Informationsbarrieren](#part-3-apply-information-barrier-policies)     |-Festlegen von Richtlinien auf aktiven Status<br/>-Ausführen der Richtlinienanwendung<br/>-Anzeigen des Richtlinienstatus         |
@@ -52,6 +66,8 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 - **Bereichsbezogene Verzeichnissuche**. Bevor Sie die erste Richtlinie für Informationsbarrieren Ihrer Organisation definieren, müssen Sie die [bereichsbezogene Verzeichnissuche in Microsoft Teams aktivieren](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Warten Sie mindestens 24 Stunden nach dem Aktivieren der bereichsbezogenen Verzeichnissuche, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
 
 - **Überwachungsprotokollierung**. Um den Status einer Richtlinienanwendung nachzuschlagen, muss die Überwachungsprotokollierung aktiviert sein. Dies wird empfohlen, bevor Sie mit dem Definieren von Segmenten oder Richtlinien beginnen. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md).
+
+- **Keine adressbuchrichtlinien**. Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, müssen Sie sicherstellen, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) .
 
 - **PowerShell**. Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security #a0 Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das AzureRM-Modul.
     - [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -101,22 +117,21 @@ Bestimmen Sie, welche Attribute in den Verzeichnisdaten Ihrer Organisation verwe
 
 ### <a name="define-segments-using-powershell"></a>Definieren von Segmenten mithilfe von PowerShell
 
-> [!IMPORTANT]
-> **Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden**. Jeder Benutzer, der von Informationsbarrieren betroffen ist, sollte einem (und nur einem) Segment angehören. Kein Benutzer sollte zu zwei oder mehr Segmenten gehören. (Siehe [Beispiel: Contosos definierte Segmente](#contosos-defined-segments) in diesem Artikel.)
-
 Das Definieren von Segmenten wirkt sich nicht auf Benutzer aus. Es wird lediglich die Stufe für die Definition von Informationsschranken Richtlinien festgelegt und dann angewendet.
 
 1. Verwenden Sie das **New-OrganizationSegment-** Cmdlet mit dem **UserGroupFilter** -Parameter, der dem [Attribut](information-barriers-attributes.md) entspricht, das Sie verwenden möchten.
-    
-    Syntax`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-    
-    Beispiel: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-    
-    In diesem Beispiel wird ein Segment namens *HR* mithilfe von *HR*definiert, einem Wert im *Department* -Attribut. Der **-EQ-** Teil des Cmdlets bezieht sich auf "Equals". (Alternativ können Sie **-ne** verwenden, um "nicht gleich" zu bedeuten. Siehe [Verwenden von "gleich" und "ungleich" in Segment Definitionen](#using-equals-and-not-equals-in-segment-definitions).)
+
+    |Syntax   |Beispiel  |
+    |---------|---------|
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>In diesem Beispiel wird ein Segment namens *HR* mithilfe von *HR*definiert, einem Wert im *Department* -Attribut. Der **-EQ-** Teil des Cmdlets bezieht sich auf "Equals". (Alternativ können Sie **-ne** verwenden, um "nicht gleich" zu bedeuten. Siehe [Verwenden von "gleich" und "ungleich" in Segment Definitionen](#using-equals-and-not-equals-in-segment-definitions).)        |
 
     Nach dem Ausführen jedes Cmdlets sollte eine Liste mit Details zum neuen Segment angezeigt werden. Details umfassen den Typ des Segments, wer es erstellt oder zuletzt geändert hat usw. 
 
 2. Wiederholen Sie diesen Vorgang für jedes Segment, das Sie definieren möchten.
+
+    > [!IMPORTANT]
+    > **Stellen Sie sicher, dass sich Ihre Segmente nicht überschneiden**. Jeder Benutzer, der von Informationsbarrieren betroffen ist, sollte einem (und nur einem) Segment angehören. Kein Benutzer sollte zu zwei oder mehr Segmenten gehören. (Siehe [Beispiel: Contosos definierte Segmente](#contosos-defined-segments) in diesem Artikel.)
+
 
 Nachdem Sie Ihre Segmente definiert haben, fahren Sie mit [define Information Barrier Policies](#part-2-define-information-barrier-policies)fort.
 
@@ -124,23 +139,25 @@ Nachdem Sie Ihre Segmente definiert haben, fahren Sie mit [define Information Ba
 
 Im folgenden Beispiel definieren wir ein Segment so, dass "Department gleich HR" ist. 
 
-**Beispiel**: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+|Beispiel  |
+|---------|
+|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Beachten Sie, dass in diesem Beispiel die Segmentdefinition den Parameter "Equals" enthält, der als **-EQ**bezeichnet wird. 
+  |
 
-Beachten Sie, dass die Segmentdefinition den Parameter "Equals" enthält, der als **-EQ**bezeichnet wird. 
+Sie können Segmente auch mithilfe eines Parameters "ungleich" definieren, **** wie in der folgenden Tabelle dargestellt:
 
-Sie können Segmente auch mithilfe eines Parameters "unequals" definieren, der wie im folgenden Beispiel gezeigt als **-ne**bezeichnet wird:
-
-**Syntax**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
-
-**Beispiel**: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
-
-In diesem Beispiel haben wir ein Segment namens *NotSales* definiert, das alle Personen enthält, die nicht im *Vertrieb*sind. Der **-ne-** Teil des Cmdlets bezieht sich auf "ungleich".
+|Syntax  |Beispiel  |
+|---------|---------|
+|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>In diesem Beispiel haben wir ein Segment namens *NotSales* definiert, das alle Personen enthält, die nicht im *Vertrieb*sind. Der **-ne-** Teil des Cmdlets bezieht sich auf "ungleich".  |
 
 Zusätzlich zum Definieren von Segmenten mit "gleich" oder "ungleich" können Sie ein Segment mit den Parametern "gleich" und "ungleich" definieren.
 
-**Beispiel**: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+|Beispiel  |
+|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>In diesem Beispiel haben wir ein Segment namens *LocalFTE* definiert, das Personen enthält, die sich lokal befinden und deren Positionen nicht als *temporär*aufgeführt werden.    |
 
-In diesem Beispiel haben wir ein Segment namens *LocalFTE* definiert, das Personen enthält, die sich lokal befinden und deren Positionen nicht als *temporär*aufgeführt werden.
+> [!TIP]
+> Verwenden Sie nach Möglichkeit Segment Definitionen, die "-EQ" oder "-ne" enthalten. Versuchen Sie nicht, komplexe Segment Definitionen zu definieren. 
 
 ## <a name="part-2-define-information-barrier-policies"></a>Abschnitt 2: Definieren von Richtlinien für Informationsbarrieren
 
@@ -164,18 +181,16 @@ Nehmen Sie beispielsweise an, dass Sie die Kommunikation zwischen Segment a und 
 
 1. Verwenden Sie zum Definieren Ihrer ersten Sperrrichtlinie das Cmdlet **New-InformationBarrierPolicy** mit dem Parameter **SegmentsBlocked** . 
 
-    Syntax`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`
-
-    Beispiel: `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive`
-
-    In diesem Beispiel haben wir eine Richtlinie mit dem Namen " *Sales-Research* " für ein Segment namens " *Sales*" definiert. Wenn diese Richtlinie aktiv und angewendet wird, wird verhindert, dass Personen im *Vertrieb* mit Personen in einem Segment mit dem Namen *Research*kommunizieren.
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    In diesem Beispiel haben wir eine Richtlinie mit dem Namen " *Sales-Research* " für ein Segment namens " *Sales*" definiert. Wenn diese Richtlinie aktiv und angewendet wird, wird verhindert, dass Personen im *Vertrieb* mit Personen in einem Segment mit dem Namen *Research*kommunizieren.         |
 
 2. Verwenden Sie zum Definieren des zweiten Sperr Segments das Cmdlet **New-InformationBarrierPolicy** mit dem Parameter **SegmentsBlocked** erneut, diesmal mit umgekehrten Segmenten.
 
-    Beispiel: `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive`
+    |Beispiel  |
+    |---------|
+    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    In diesem Beispiel wurde eine Richtlinie mit dem Namen *Research-Sales* definiert, um zu verhindern, dass die *Forschung* mit dem *Vertrieb*kommuniziert.     |
 
-    In diesem Beispiel wurde eine Richtlinie mit dem Namen *Research-Sales* definiert, um zu verhindern, dass die *Forschung* mit dem *Vertrieb*kommuniziert.
- 
 2. Führen Sie einen der folgenden Schritte aus:
 
    - (Falls erforderlich) [Definieren einer Richtlinie, mit der ein Segment nur mit einem anderen Segment kommunizieren kann](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
@@ -185,21 +200,15 @@ Nehmen Sie beispielsweise an, dass Sie die Kommunikation zwischen Segment a und 
 
 1. Damit ein Segment nur mit einem anderen Segment kommunizieren kann, verwenden Sie das Cmdlet **New-InformationBarrierPolicy** mit dem Parameter **SegmentsAllowed** . 
 
-    Syntax`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`
-
-    Beispiel: `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive`
-
-    In diesem Beispiel haben wir eine Richtlinie mit dem Namen *Manufacturing-HR* für ein Segment namens *Manufacturing*definiert. Wenn diese Richtlinie aktiv und angewendet wird, können Sie in der *Fertigung* nur Personen in einem Segment namens *HR*kommunizieren. (In diesem Fall kann die *Fertigung* nicht mit Benutzern kommunizieren, die nicht Teil von *HR*sind.)
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    In diesem Beispiel haben wir eine Richtlinie mit dem Namen *Manufacturing-HR* für ein Segment namens *Manufacturing*definiert. Wenn diese Richtlinie aktiv und angewendet wird, können Sie in der *Fertigung* nur Personen in einem Segment namens *HR*kommunizieren. (In diesem Fall kann die *Fertigung* nicht mit Benutzern kommunizieren, die nicht Teil von *HR*sind.)         |
 
     **Bei Bedarf können Sie mit diesem Cmdlet mehrere Segmente angeben, wie im folgenden Beispiel gezeigt.**
 
-    Syntax`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`
-
-    **Beispiel 2: Definieren einer Richtlinie, damit ein Segment nur mit zwei anderen Segmenten kommunizieren kann**    
-
-    `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive`
-
-    In diesem Beispiel haben wir eine Richtlinie definiert, mit der das *Forschungs* Segment nur mit *HR* und *Manufacturing*kommunizieren kann.
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>In diesem Beispiel haben wir eine Richtlinie definiert, mit der das *Forschungs* Segment nur mit *HR* und *Manufacturing*kommunizieren kann.        |
 
     Wiederholen Sie diesen Schritt für jede Richtlinie, die Sie definieren möchten, damit bestimmte Segmente nur mit bestimmten anderen Segmenten kommunizieren können.
 
@@ -218,11 +227,9 @@ Richtlinien für Informationsbarrieren werden erst wirksam, wenn Sie Sie auf akt
 
 2. Um eine Richtlinie auf den aktiven Status festzulegen, verwenden Sie das Cmdlet "InformationBarrierPolicy" mit einem **Identity** -Parameter und den **State** **-** Parameter auf " **aktiv**" festgelegt. 
 
-    Syntax`Set-InformationBarrierPolicy -Identity GUID -State Active`
-
-    Beispiel: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active`
-    
-    In diesem Beispiel wird eine Richtlinie für Informationsbarrieren festgelegt, bei der die GUID *43c37853-EA10-4b90-a23d-ab8c93772471* den Status aktiv besitzt.
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Active`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p>    In diesem Beispiel wird eine Richtlinie für Informationsbarrieren festgelegt, bei der die GUID *43c37853-EA10-4b90-a23d-ab8c93772471* den Status aktiv besitzt.   |
 
     Wiederholen Sie diesen Schritt für jede Richtlinie entsprechend.
 
@@ -244,6 +251,17 @@ Mit PowerShell können Sie den Status von Benutzerkonten, Segmenten, Richtlinien
 |Die neueste Informations Barriere-Richtlinienanwendung     | Verwenden Sie das Cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntax`Get-InformationBarrierPoliciesApplicationStatus`<p>    Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.       |
 |Alle Informations Barrier Policy-Anwendungen|Verwenden`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Dadurch werden Informationen darüber angezeigt, ob die Richtlinienanwendung abgeschlossen, ein Fehler aufgetreten ist oder ausgeführt wird.|
 
+## <a name="what-if-i-need-to-remove-or-change-policies"></a>Was kann ich tun, wenn ich Richtlinien entfernen oder ändern muss?
+
+Ressourcen stehen zur Verfügung, um Sie bei der Verwaltung ihrer Informations Barriere-Richtlinien zu unterstützen.
+
+- Wenn Probleme mit Informationsbarrieren auftreten, finden Sie weitere Informationen unter [Troubleshooting Information Barriers (Preview)](information-barriers-troubleshooting.md).
+
+- Informationen zum Beenden der Anwendung von Richtlinien finden Sie unter [Beenden einer Richtlinienanwendung](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+
+- Informationen zum Entfernen einer Richtlinie zu Informationsbarrieren finden Sie unter [Remove a Policy](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+
+- Informationen zum vornehmen von Änderungen an Segmenten oder Richtlinien finden Sie unter [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren (Preview)](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Beispiel: Abteilungen, Segmente und Richtlinien von Contoso
 
@@ -298,12 +316,6 @@ Wenn dieser Vorgang abgeschlossen ist, entspricht Contoso den rechtlichen und br
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-edit-segments-policies.md.md)
+- [Hier erhalten Sie einen Überblick über Informationsbarrieren (Vorschau)](information-barriers.md)
 
-[Hier erhalten Sie einen Überblick über Informationsbarrieren](information-barriers.md)
-
-[Weitere Informationen zu Informationsbarrieren in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
-
-[Attribute für Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-attributes.md)
-
-[Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)
+- [Informationsbarrieren in der Microsoft Teams-Vorschau](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

@@ -3,7 +3,7 @@ title: Threat Explorer (und Echtzeiterkennung)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer (und Echtzeiterkennung) im Security &amp; Compliance Center.
-ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490531"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394350"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer (und Echtzeiterkennung)
 
-Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echtzeiterkennung** (früher *Echtzeitberichte* ), [Siehe ](#new-features-in-real-time-detections)Neuigkeiten!). Wechseln Sie im Security & Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
+Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echtzeiterkennung** (früher *Echtzeitberichte* ), [Siehe ](#new-features-in-real-time-detections)Neuigkeiten!). Wechseln Sie im Security #a0 Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
 
 |Mit ATP-Plan 2 sehen Sie Folgendes:  |Mit ATP-Plan 1 sehen Sie Folgendes:  |
 |---------|---------|
@@ -42,26 +42,41 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
 ## <a name="new-features-in-real-time-detections"></a>Neue Features in Echt Zeit Erkennungen
 
-Für Office 365 ATP-Plan 1-Kunden wurde der Bericht über *Echt Zeit Erkennungen* zuvor als *Echtzeitberichte*bezeichnet. Zusätzlich zur Namensänderung werden mehrere neue Features und Verbesserungen bereitstellen:
+Mit Explorer/Echt Zeit Erkennungen werden neue Felder hinzugefügt, die Ihnen ein vollständigeres Bild davon geben, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
 
-- In der Phishing-Ansicht finden Sie weitere Details zu erkannten URLs über [ATP-sichere Links](atp-safe-links.md). Zu den neuen Details und Funktionen gehören:
-  - URLs in e-Mail-Nachrichten
-  - Filtern basierend auf URL-Informationen
-  - In datendiagrammen angezeigte URL-Informationen
-  - Time-of-Click-Daten zu Klicks in Nachrichten
+Wie wird das gemacht? Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
 
-- Wenn es eine Änderung in einer URL auf Urteilsspruch gibt, wird eine Warnung angezeigt. URL-Klick-Urteile können sich ändern, wenn sich die Reputation einer URL nach der Detonation ändert oder wenn ein Benutzer, der durch ATP-sichere Links geschützt ist, eine [Warnung über ATP-sichere Links](atp-safe-links-warning-pages.md)überschreibt.  
- 
-Diese Verbesserungen ermöglichen es den Sicherheitsadministratoren Ihrer Organisation, mehr Details anzuzeigen als zuvor. Sicherheitsadministratoren können Informationen zu URL-Domänen, verpassten URLs, Klick Urteilen und mehr anzeigen und dann Office 365 ATP-Richtlinien entsprechend anpassen.
+- Zustellungs Aktion – wie lautet der Status dieser e-Mail?
+- Zustellungs Speicherort – wohin wurde diese e-Mail weitergeleitet?
 
-> [!NOTE]
-> Während sich diese Features in der Vorschau befinden, stehen URL-Daten für eine beschränkte Anzahl von Tagen zur Verfügung. 
+Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
+
+|Geliefert  |Ausrangierten  |Gesperrt  |Ersetzt  |
+|---------|---------|---------|---------|
+|E-Mail wurde im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.    | E-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mails in diesen Ordnern.       | Alle e-Mails, die unter Quarantäne gestellt wurden, die nicht erfolgreich waren oder gelöscht wurden. Auf diesen Zugriff kann der Benutzer vollständig zugreifen!     | Jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, die den Status der Anlage aufweisen, war bösartig.     |
+
+Und hier ist, was der Benutzer sehen kann und was er nicht kann:
+
+|Für Endbenutzer zugänglich  |Für Endbenutzer unzugänglich  |
+|---------|---------|
+|Geliefert     | Gesperrt        |
+|Ausrangierten     | Ersetzt        |
+
+Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden finden Sie die scannbar-Werte des Zustellungsortes:
+
+1. Posteingang oder Ordner – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
+2. On-Prem oder External – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
+3. Junk-Ordner – die e-Mail im Ordner Junk eines Benutzers.
+4. Ordner "Gelöschte Elemente" – die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
+5. Quarantine – die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
+6. Fehler – die e-Mail konnte das Postfach nicht erreichen.
+7. Fallen gelassen – die e-Mail wird irgendwo in der Nachrichtenübermittlung verloren.
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Malware nach Technologie
 
-Angenommen, Sie möchten die in e-Mail-nach Office 365-Technologie erkannte Malware sehen. Verwenden Sie dazu die [e-Mail->-Malware](threat-explorer-views.md#email--malware) Ansicht des Explorers (oder Echtzeiterkennung).
+Angenommen, Sie möchten die in e-Mail-nach Office 365-Technologie erkannte Malware sehen. Verwenden Sie dazu die [e-Mail-#a0](threat-explorer-views.md#email--malware) Ansicht "Malware" des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > **Schadsoftware**aus.<br/>![Menü "Ansicht" für Explorer](media/ExplorerViewEmailMalwareMenu.png)<br/>
 
@@ -75,9 +90,9 @@ Der Bericht wird aktualisiert, um die in e-Mail-Nachweise erkannten Ergebnisse m
 
 Angenommen, Sie möchten Phishing-Versuche über URLs in e-Mails sehen, einschließlich einer Liste von URLs, die zugelassen, blockiert und außer Kraft gesetzt wurden. Zum Identifizieren von URLs, auf die geklickt wurde, müssen [ATP-sichere Links](atp-safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Richtlinien für ATP-sichere Links](set-up-atp-safe-links-policies.md) zum Zeitpunkt des Klick Schutzes und zur Protokollierung von Klick urteilen durch ATP-sichere Links eingerichtet haben. 
 
-Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-> Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
+Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu überprüfen, verwenden Sie die [e-Mail-#a0 Phishing-](threat-explorer-views.md#email--phish) Ansicht des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
 2. Wählen Sie im Menü **Ansicht** die Option**Phishing** **per e-Mail** > aus.<br/>![Menü "Ansicht" für Explorer](media/ExplorerViewEmailPhishMenu.png)<br/>
 
@@ -99,9 +114,9 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 
-Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die [benutzerbezogene](threat-explorer-views.md#email--user-reported) Ansicht "e-Mail->" des Explorers (oder Echt Zeit Erkennungen).
+Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die e- [Mail-#a0 Benutzer Berichte-](threat-explorer-views.md#email--user-reported) Ansicht des Explorers (oder Echtzeiterkennung).
 
-1. Wählen Sie im Security & Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
+1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
 2. Wählen Sie im Menü **Ansicht** die Option **e-Mail** > **-Benutzerbericht**aus.<br/>![Menü "Ansicht" für Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
@@ -132,6 +147,7 @@ Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen viele 
 Sie benötigen [Office 365 ATP](office-365-atp.md) , um den Explorer oder Echt Zeit Erkennungen zu erhalten.
 - Der Explorer ist in Office 365 ATP-Plan 2 enthalten. 
 - Der Bericht über Echt Zeit Erkennungen ist in Office 365 ATP-Plan 1 enthalten.
+- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die durch ATP geschützt werden sollen. (Bei Explorer-oder Echt Zeit Erkennungen werden Erkennungsdaten für lizenzierte Benutzer angezeigt.)
 
 Zum Anzeigen und Verwenden von Explorer-oder Echt Zeit Erkennungen müssen Sie über die entsprechenden Berechtigungen verfügen, beispielsweise solche, die einem Sicherheitsadministrator oder Sicherheits Leser erteilt werden. 
 

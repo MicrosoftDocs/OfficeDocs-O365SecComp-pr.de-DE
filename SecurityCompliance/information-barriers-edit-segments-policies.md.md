@@ -1,9 +1,9 @@
 ---
-title: Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren
+title: Bearbeiten von Richtlinien für Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,29 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren bearbeiten oder entfernen.
-ms.openlocfilehash: e6bed4df2329d426f86bd4cde07bdc7d1a2792cd
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35215648"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394330"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Bearbeiten oder Entfernen von Richtlinien für Informationsbarrieren (Vorschau)
-
-## <a name="overview"></a>Übersicht
+# <a name="edit-or-remove-information-barrier-policies-preview"></a>Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren (Vorschau)
 
 Nachdem Sie [Richtlinien für Informationsbarrieren definiert](information-barriers-policies.md)haben, müssen Sie möglicherweise im Rahmen der [Problembehandlung](information-barriers-troubleshooting.md) oder als regelmäßige Wartung Änderungen an diesen Richtlinien oder an Ihren Benutzersegmenten vornehmen. Verwenden Sie diesen Artikel als Leitfaden.
+
+## <a name="what-do-you-want-to-do"></a>Was möchten Sie machen?
+
+|Aktion  |Beschreibung |
+|---------|---------|
+|[Bearbeiten von Benutzerkonto Attributen](#edit-user-account-attributes)     |Geben Sie Attribute in Azure Active Directory ein, die zum Definieren von Segmenten verwendet werden können.<br/>Bearbeiten Sie benutzerkontoattribute, wenn Benutzer nicht in den Segmenten enthalten sind, die Sie sein sollten, um zu ändern, in welchen Segmenten Benutzer sich befinden, oder um Segmente mit unterschiedlichen Attributen zu definieren.         |
+|[Bearbeiten eines Segments](#edit-a-segment)     |Bearbeiten Sie Segmente, wenn Sie ändern möchten, wie ein Segment definiert wird. <br/>Sie haben beispielsweise ursprünglich Segmente mithilfe von *Department* definiert und möchten nun ein anderes Attribut verwenden, wie beispielsweise **"" ".         |
+|[Bearbeiten einer Richtlinie](#edit-a-policy)     |Bearbeiten Sie eine Richtlinie für Informationsbarrieren, wenn Sie die Funktionsweise einer Richtlinie ändern möchten.<br/>Anstatt die Kommunikation zwischen zwei Segmenten zu blockieren, können Sie beispielsweise festlegen, dass die Kommunikation nur zwischen bestimmten Segmenten erfolgen soll.         |
+|[Festlegen einer Richtlinie auf inaktiver Status](#set-a-policy-to-inactive-status)     |Legen Sie eine Richtlinie auf inaktiven Status fest, wenn Sie Änderungen an einer Richtlinie vornehmen möchten oder wenn Sie nicht möchten, dass eine Richtlinie wirksam ist.         |
+|[Entfernen einer Richtlinie](#remove-a-policy)     |Entfernen einer Richtlinie für Informationsbarrieren, wenn Sie eine bestimmte Richtlinie nicht mehr an Ort und Stelle benötigen.         |
+|[Beenden einer Richtlinienanwendung](#stop-a-policy-application)     |Tun Sie dies, wenn Sie den Prozess der Anwendung von Richtlinien für Informationsbarrieren beenden möchten.<br/>Beachten Sie, dass das Beenden einer Richtlinienanwendung nicht sofort erfolgt und keine Richtlinien rückgängig gemacht wird, die bereits auf Benutzer angewendet wurden.         |
+|[Definieren von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-policies.md)     |Definieren Sie eine Richtlinie für Informationsbarrieren, wenn noch keine solchen Richtlinien vorhanden sind, und Sie müssen die Kommunikation zwischen bestimmten Benutzergruppen einschränken oder einschränken.         |
+|[Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)     |Lesen Sie diesen Artikel, wenn Sie unerwartete Probleme mit Informationsbarrieren ausführen.         |
 
 > [!IMPORTANT]
 > Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter Prerequisites [(for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security #a0 Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -37,16 +48,10 @@ Benutzerkontoattribute werden für die Definition von Segmenten verwendet, sodas
 
 1. Verwenden Sie zum Anzeigen von Details für ein bestimmtes Benutzerkonto, wie Attributwerte und zugewiesene Segmente, das Cmdlet **Get-InformationBarrierRecipientStatus** mit Identitäts Parametern. 
 
-   Syntax`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
-    
-   Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. 
-    
-   Beispiel: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
-    
-   In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*. 
-    
-   (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>`) 
-    
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. <p>   (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*.         |
+
 2. Bestimmen Sie, welches Attribut Sie für Ihr Benutzerkontoprofil (en) bearbeiten möchten. Weitere Informationen finden Sie unter [Attribute for Information Barrier Policies (Preview)](information-barriers-attributes.md) . 
 
 3. Bearbeiten Sie ein oder mehrere Benutzerkonten, um Werte für das Attribut einzuschließen, das Sie im vorherigen Schritt ausgewählt haben. Verwenden Sie dazu eines der folgenden Verfahren:
@@ -70,11 +75,9 @@ Verwenden Sie dieses Verfahren bearbeiten der Definition eines Benutzersegments.
 
 2. Verwenden Sie zum Bearbeiten eines Segments das Cmdlet " **OrganizationSegment** " mit dem Parameter " **Identity** " und den relevanten Details. 
 
-    Syntax`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Beispiel: `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    In diesem Beispiel haben wir für das Segment mit dem GUID- *c96e0837-C232-4a8a-841e-ef45787d8fcd*den Namen der Abteilung in "HRDept" geändert.
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`     |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p>In diesem Beispiel haben wir für das Segment mit dem GUID- *c96e0837-C232-4a8a-841e-ef45787d8fcd*den Namen der Abteilung in "HRDept" geändert.         |
 
 Wenn Sie die Bearbeitung von Segmenten für Ihre Organisation abgeschlossen haben, können Sie die Richtlinien für Informationsbarrieren entweder [definieren](information-barriers-policies.md#part-2-define-information-barrier-policies) oder [Bearbeiten](#edit-a-policy) .
 
@@ -106,11 +109,9 @@ Wenn Sie die Bearbeitung von Segmenten für Ihre Organisation abgeschlossen habe
 
 2. Um den Status der Richtlinie auf inaktiv festzulegen, verwenden Sie das Cmdlet "InformationBarrierPolicy" mit einem Identity-Parameter und dem State **-** Parameter auf "inaktiv" festgelegt.
 
-    Syntax`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    In diesem Beispiel wird eine Richtlinie für Informationsbarrieren festgelegt, die GUID *43c37853-EA10-4b90-a23d-ab8c9377247* in einen inaktiven Status hat.
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Inactive`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p>In diesem Beispiel wird eine Richtlinie für Informationsbarrieren festgelegt, die GUID *43c37853-EA10-4b90-a23d-ab8c9377247* in einen inaktiven Status hat.         |
 
 3. Verwenden Sie das Cmdlet **Start-InformationBarrierPoliciesApplication** , um die Änderungen zu übernehmen.
 
@@ -133,11 +134,9 @@ Zu diesem Zeitpunkt werden mindestens eine Richtlinie für Informationsbarrieren
 
 2. Verwenden Sie das Cmdlet **Remove-InformationBarrierPolicy** mit einem Identity-Parameter.
 
-    Syntax`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Beispiel: nehmen wir an, dass eine Richtlinie mit GUID- *43c37853-EA10-4b90-a23d-ab8c93772471*entfernt werden soll. Zu diesem Zweck verwenden wir dieses Cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Remove-InformationBarrierPolicy -Identity GUID`     |`Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <p>In diesem Beispiel wird die Richtlinie mit GUID- *43c37853-EA10-4b90-a23d-ab8c93772471*entfernt.          |
 
     Bestätigen Sie die Änderung, wenn Sie dazu aufgefordert werden.
 
@@ -161,11 +160,9 @@ Wenn Sie die Anwendung von Richtlinien für Informationsbarrieren gestartet habe
 
 2. Verwenden Sie das Cmdlet **Stop-InformationBarrierPoliciesApplication** mit einem Identity-Parameter.
 
-    Syntax`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Beispiel: `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    In diesem Beispiel wird das Anwenden von Richtlinien für Informationsbarrieren angehalten.
+    |Syntax  |Beispiel  |
+    |---------|---------|
+    |`Stop-InformationBarrierPoliciesApplication -Identity GUID`     |`Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p>In diesem Beispiel wird das Anwenden von Richtlinien für Informationsbarrieren angehalten.         |
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
