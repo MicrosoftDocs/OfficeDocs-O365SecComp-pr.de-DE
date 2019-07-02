@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 4/29/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Wenn Sie sicherstellen möchten, dass Sie e-Mails von einem bestimmten Absender empfangen, da Sie diesen und ihren Nachrichten Vertrauen, können Sie Ihre Zulassungsliste in einer Spamfilter Richtlinie im Exchange Admin Center anpassen.
-ms.openlocfilehash: b97767a3ee4882b1a9b052bc845e8758a6402534
-ms.sourcegitcommit: e834d4168f584f2efb22479aec108497eea267f6
+ms.openlocfilehash: 4526441c68d187e644a06228c5b1be820968524a
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34709113"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199570"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Erstellen sicherer Absenderlisten in Office 365
 
@@ -61,12 +61,12 @@ Die Aktion für die Regel muss diesem Muster entsprechen:
 
 2. Fügen Sie einen X-Header hinzu, um zu sagen, was die Regel bewirkt. Im folgenden Beispiel können Sie einen einfachen Header "X-ETR: Bypass Spam Filtering for authenticated Sender `contoso.com`" hinzufügen. Wenn Sie mehr als eine Domäne in dieser Regel haben, können Sie den Kopfzeilentext entsprechend ändern. **Wenn eine Nachricht die Filterung aufgrund eines ETR überspringt, stempelt Sie SFV: SKN im X-Forefront-Antispam-Report-Header** (**Wenn es sich um eine IP-Zulassungsliste handelt, stempelt es auch IPV: Cal**). Dies hilft bei der Problembehandlung.
 
-![GUI zur Umgehung der Spamfilterung.](media/1_AllowList_SkipFilteringFromContoso.png)
+![GUI zur Umgehung der Spamfilterung.](media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > Konfigurieren Sie Nachrichtenfluss Regeln nur mit *der Absenderdomäne* als Bedingung zum Überspringen der Spamfilterung. Diese Methode erhöht erheblich das Risiko, dass Spammer die sendende Domäne spoofen können (oder die vollständige e-Mail-Adresse annehmen), alle Spamfilterung überspringen, Absender Authentifizierungsprüfungen und die Nachricht wird im Posteingang einer Person eingehen.
 
-![Vorgehensweise zum Festlegen des SCL auf minus eins.](media/2_AllowList_SetsSCLMinus1.png)
+![Vorgehensweise zum Festlegen des SCL auf minus eins.](media/2-AllowList-SetsSCLMinus1.png)
 
 Fügen Sie keine Domänen, die Sie besitzen, oder beliebte Domänen ( `microsoft.com`beispielsweise) zur Nachrichtenfluss Regel als Bedingung hinzu. Dies wird als hohes Risiko betrachtet, da es Gelegenheiten für fehlerhafte Akteure schafft, Ihnen e-Mails zu senden, die andernfalls herausgefiltert würden.
 

@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: 5f8c615bed07b75cd3c06ec48f5ba73586f0f6d5
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
+ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394290"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35414805"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Advanced Threat Protection-Plan 2)
 
@@ -78,10 +78,9 @@ So zeigen Sie die Änderungen am früheren Feld "Zustellungs Status" an (jetzt Z
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security &amp; Compliance Center. 
     
 2. Klicken Sie im linken Navigationsbereich auf **Threat Management** \> **Explorer**.
-
-![Screenshot des Bedrohungs-Explorers.](media/Threat Explorer Delivery Action and Delivery Location.PNG)
-
 <!--Comment>
+![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
+
     
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   

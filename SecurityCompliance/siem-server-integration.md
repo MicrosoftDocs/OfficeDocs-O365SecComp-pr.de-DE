@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Zusammenfassung: Lesen Sie diesen Artikel, um einen Überblick über die Integration von Siem Server mit Microsoft 365 zu erhalten.'
-ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9138cbc395b90f50fa60bf545066c17cf26d7edf
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852689"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014764"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integration von Siem-Servern in Microsoft 365-Dienste und-Anwendungen
 
@@ -33,13 +33,13 @@ Ein Siem-Server kann Daten aus einer Vielzahl von Microsoft 365-Diensten und-Anw
 
 | Microsoft 365-Dienst oder-Anwendung | Siem-Server Eingaben | Ressourcen für weitere Informationen |
 | --- | --- | --- |
-| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>   oder   <br/>[Informationen zu Bedrohungen in Office 365](office-365-ti.md) | Überwachungsprotokolle | [Siem-Integration mit Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
+| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>oder<br/>[Informationen zu Bedrohungen in Office 365](office-365-ti.md) | Überwachungsprotokolle | [Siem-Integration mit Office 365 Advanced Threat Protection](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Protokoll Integration | [Siem-Integration in Microsoft Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Protokoll Integration | [Integrieren Sie Ihren Siem-Server in Cloud-App-Sicherheit](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Microsoft Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Protokoll Integration | [Abrufen von Benachrichtigungen an Ihre Siem-Tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Azure-Sicherheits Center](https://docs.microsoft.com/azure/security-center/security-center-intro) (Bedrohungsschutz und Bedrohungserkennung) | Warnungen | [Azure Security Data Export to Siem-Pipeline Configuration – Vorschau](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Überwachungsprotokolle | [Integrieren von Azure Active Directory-Überwachungsprotokollen](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
-| [Azure Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | Protokoll Integration | [ATA Siem-Protokoll Referenz](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
+|[Azure Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure-Monitor | [Blog Verwenden von Azure Monitor zur Integration in Siem-Tools](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |Protokoll Integration |[Integrieren von Sicherheits-API-Warnungen in Microsoft Graph in SIEM (Security Information &amp; Event Management)](https://docs.microsoft.com/graph/security-siemintegration) |
+
 
 ## <a name="audit-logging-must-be-turned-on"></a>Die Überwachungsprotokollierung muss aktiviert sein.
 

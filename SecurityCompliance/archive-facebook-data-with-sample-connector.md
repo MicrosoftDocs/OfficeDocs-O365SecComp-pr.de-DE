@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Facebook-Geschäfts Seiten, Twitter, LinkedIn Unternehmensseiten und Instant Bloomberg einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 33972d6d3124841a4cd2636c3d7756ec55f5cfa9
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852609"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014704"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Verwenden eines Beispiel-Konnektors zum Archivieren von Facebook-Daten in Office 365 (Vorschau)
 
 Das Sample Connector-Feature zum Archivieren von Facebook-Daten in Office 365 befindet sich in der Vorschau.
 
-Verwenden Sie einen Beispiel-Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus einer Drittanbieter-Datenquelle wie Facebook Business Pages, LinkedIn, Twitter und Instant Bloomberg zu importieren und zu archivieren. Nachdem Sie einen Beispiel-Konnektor eingerichtet und konfiguriert haben, stellt er eine Verbindung zur Datenquelle eines Drittanbieters her (geplant), konvertiert den Inhalt eines Elements in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
+Verwenden Sie einen Beispiel-Konnektor im Security #a0 Compliance Center in Office 365, um Daten aus Facebook-Geschäfts Seiten in Office 365 zu importieren und zu archivieren. Nachdem Sie einen Sample Connector eingerichtet und konfiguriert haben, stellt er eine Verbindung mit der Facebook-Geschäftsseite her (auf einer geplanten Basis), konvertiert den Inhalt von Facebook-Elementen in ein e-Mail-Nachrichtenformat und importiert diese Elemente dann in ein Postfach in Office 365.
 
-Nach dem Importieren von drittanbieterdaten können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Überwachung und Office 365 Aufbewahrungsrichtlinien auf die drittanbieterdaten anwenden. Wenn ein Postfach beispielsweise in einem Beweissicherungsverfahren gespeichert oder einer Aufbewahrungsrichtlinie zugewiesen wird, werden die drittanbieterdaten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder Sie einer Depotbank in einem erweiterten eDiscovery-Fall zuordnen. Das Verwenden von Beispiel-Konnektoren zum Importieren und Archivieren von drittanbieterdaten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
+Nachdem die Facebook-Daten importiert wurden, können Sie Office 365 Compliance-Features wie Beweissicherungsverfahren, Inhaltssuche, in-situ-Archivierung, Überwachung, Überwachung und Office 365 Aufbewahrungsrichtlinien auf Facebook-Daten anwenden. Wenn beispielsweise ein Postfach in ein Beweissicherungsverfahren gestellt oder einer Aufbewahrungsrichtlinie zugewiesen wurde, werden die Facebook-Daten beibehalten. Sie können drittanbieterdaten mithilfe der Inhaltssuche durchsuchen oder das Postfach zuordnen, in dem die Facebook-Daten mit einer Depotbank in einem erweiterten eDiscovery-Fall gespeichert werden. Das Verwenden eines Connectors zum Importieren und Archivieren von Facebook-Daten in Office 365 kann dazu beitragen, dass Ihre Organisation mit behördlichen und behördlichen Richtlinien konform bleibt.
 
 > [!NOTE]
-> Derzeit stehen nur die Beispiel-Konnektoren für Facebook-Geschäfts Seiten und [Twitter](archive-twitter-data-with-sample-connector.md) für die Vorschau zur Verfügung. Weitere Beispiel-Konnektoren werden in Kürze verfügbar sein.
+> Zu diesem Zeitpunkt stehen nur die Beispiel-Konnektoren für Facebook-Geschäfts Seiten und [Twitter](archive-twitter-data-with-sample-connector.md) für die Vorschau zur Verfügung. Weitere Beispiel-Konnektoren werden in Kürze verfügbar sein.
 
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Voraussetzungen für das Einrichten eines Connectors für Facebook-Geschäfts Seiten
@@ -37,16 +37,16 @@ Sie müssen die folgenden Voraussetzungen erfüllen, bevor Sie einen Beispiel-Ko
 
 - Ihre Organisation muss über ein gültiges Azure-Abonnement verfügen. Wenn Sie über kein vorhandenes Azure-Abonnement verfügen, können Sie sich für eine der folgenden Optionen registrieren:
 
-    – [Registrieren Sie sich für ein kostenloses 1-Jahres-Azure-Abonnement](https://azure.microsoft.com/free) 
+    - [Registrieren Sie sich für ein kostenloses Azure-Abonnement für ein Jahr.](https://azure.microsoft.com/free) 
 
-    – [Registrieren Sie sich für ein Pay-as-you-go Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) .
+    - [Registrieren für ein Pay-as-you-go Azure-Abonnement](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > Das [﻿Kostenlose Azure Active Directory-Abonnement](use-your-free-azure-ad-subscription-in-office-365.md) , das in Ihrem Office 365-Abonnement enthalten ist, unterstützt die Beispiel-Konnektoren im Security #a0 Compliance Center nicht.
 
 - Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
-- Der Benutzer, der den benutzerdefinierten Connector in der Security #a0 Compliance (in Schritt 7) einrichtet, muss die Rolle "Post Fach Import Export" in Exchange Online zugewiesen haben. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Der Benutzer, der den benutzerdefinierten Connector in der Security #a0 Compliance (in Schritt 7) einrichtet, muss die Rolle "Post Fach Import Export" in Exchange Online zugewiesen haben. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 ## <a name="step-1-download-the-pre-built-connector-app-package-from-github"></a>Schritt 1: Herunterladen des vorab erstellten Connector-App-Pakets von GitHub
 
@@ -62,7 +62,7 @@ Der nächste Schritt besteht darin, eine neue app in Azure Active Directory (AAD
 
 Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen einer APP in Azure Active Directory](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory).
 
-Bei Abschluss dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden in späteren Schritten im Bereitstellungsprozess verwendet.
+Während des Abschlusses dieses Schritts (mit den vorherigen schrittweisen Anweisungen) speichern Sie die folgenden Informationen in einer Textdatei. Diese Werte werden in späteren Schritten im Bereitstellungsprozess verwendet.
 
 - Aad-Anwendungs-ID
 - Aad-Anwendungs Geheimnis
@@ -75,7 +75,7 @@ Der Facebook-Connector, den Sie für Ihre Organisation bereitstellen, lädt die 
 
 Eine Schritt-für-Schritt-Anleitung finden Sie unter [Erstellen eines Azure-speicherkontos](deploy-facebook-connector.md#step-3-create-an-azure-storage-account).
 
-Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie den generierten Verbindungszeichenfolgen-URI. Sie verwenden diese Zeichenfolge beim Erstellen einer webapp-Ressource in Azure in Schritt 4.
+Während des Abschlusses dieses Schritts (indem Sie die schrittweisen Anleitungen ausführen) speichern Sie den generierten Verbindungszeichenfolgen-URI. Verwenden Sie diese Zeichenfolge beim Erstellen einer webapp-Ressource in Azure in Schritt 4.
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>Schritt 4: Erstellen einer webapp-Ressource in Azure
 

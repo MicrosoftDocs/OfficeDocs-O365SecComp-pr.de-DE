@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151887"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703838"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Sammeln von Daten für einen Fall in Advanced eDiscovery
 
@@ -34,6 +34,7 @@ Wenn Sie auf der Registerkarte **Suchen** auf **neue Suche** klicken, wird ein A
 Nachdem eine Suche erstellt wurde, wird eine Flyout-Seite mit Details angezeigt. Beachten Sie, dass die Schaltflächen **Statistik** und **Vorschau** anfänglich abgeblendet sind, da die Suche noch nicht abgeschlossen wurde. Sie können den Fortschritt der Suche auf der Registerkarte **Suchen** verfolgen.
 
 ## <a name="view-search-results-and-statistics"></a>Anzeigen von Suchergebnissen und Statistiken
+
 Es gibt zwei Komponenten einer Inhaltssuche: Statistik (Schätzungen) und Vorschau. Nachdem jede dieser Komponenten abgeschlossen ist, wird der Status angezeigt, der in den entsprechenden Spalten auf der Registerkarte **Suchen** in geändert von von über **mittelte** zu **in** ausgeführt in **abgeschlossen**angezeigt wird.
 
 Wenn die Such Schätzung abgeschlossen ist, klicken Sie auf die Suche, um die Flyout-Seite anzuzeigen, in der einige allgemeine Statistiken zu den Ergebnissen der Suche angezeigt werden. Zu diesem Zeitpunkt ist die Schaltfläche **Statistik** aktiv. Sie können darauf klicken, um Suchstatistiken anzuzeigen, beispielsweise:

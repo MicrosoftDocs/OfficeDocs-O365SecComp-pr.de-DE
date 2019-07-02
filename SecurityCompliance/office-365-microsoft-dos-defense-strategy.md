@@ -1,9 +1,8 @@
 ---
-title: Office 365 Microsoft-DoS-VerteidigungsStrategie
+title: Office 365 DOS-Verteidigungsstrategie
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,22 +12,22 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Eine Übersicht über die Verteidigungsstrategie von Microsoft für den Umgang mit DoS-Angriffen (Denial-of-Service).
-ms.openlocfilehash: acc0c74ae9ed434d4718d7b8b3bd9429b3245d46
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Eine Übersicht über die Microsoft-Verteidigungsstrategie für DOS-Angriffe (Denial of Service).
+ms.openlocfilehash: 0c046657ddd11412730c64bef475ba62e391c0bb
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262547"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622365"
 ---
-# <a name="microsofts-denial-of-service-defense-strategy"></a>Denial-of-Service-VerteidigungsStrategie von Microsoft
+# <a name="office-365-denial-of-service-defense-strategy"></a>Office 365 Verteidigungsstrategie für Denial-of-Service
 
-Die Strategie von Microsoft zum Schutz vor netzwerkbasierten Denial-of-Service-Angriffen (DoS) ist aufgrund unseres Umfangs und der globalen Präsenz etwas einzigartig. Mit dieser Skalierung kann Microsoft Strategien und Techniken nutzen, die nur wenige Organisationen (Anbieter oder Kundenorganisationen) abgleichen können. Der Eckpfeiler unserer DoS-Strategie besteht darin, unsere globale Präsenz zu nutzen. Microsoft engagiert sich mit Internetanbietern, Peering-Anbietern (öffentlich und privat) und privaten Unternehmen auf der ganzen Welt und gibt uns eine beträchtliche Internetpräsenz (die ab diesem schreiben alle 18 Monate verdoppelt). Eine solche große Präsenz ermöglicht es Microsoft, Angriffe über eine sehr große Oberfläche zu absorbieren.
+Die Strategie von Microsoft zur Abwehr von netzwerkbasierten DOS-Angriffen (Denial of Service) ist aufgrund unserer Skalierung und Ihres globalen Fußabdrucks eindeutig. Diese Skalierung ermöglicht Microsoft, Strategien und Techniken zu nutzen, die nur wenige Organisationen, Anbieter oder Kundenorganisationen verwenden können. Der Eckpfeiler der DOS-Strategie ist unsere globale Präsenz. Microsoft engagiert sich mit Internet Anbietern, Peering-Anbietern (öffentlich und privat) und privaten Unternehmen in aller Welt. Dadurch erhält Microsoft eine erhebliche Internet Präsenz und ermöglicht es Microsoft, Angriffe über eine große Oberfläche hinweg zu absorbieren.
 
-Aufgrund unserer Einzigartigkeit verwendet Microsoft Erkennungs-und Minderungs Prozesse, die sich von den von Großunternehmen verwendeten unterscheiden. Unsere Strategie basiert auf einer Trennung von Erkennung und Minderung sowie globaler, verteilter Schadensbegrenzende Maßnahmen durch unsere vielen Edges. Viele Unternehmen verwenden Lösungen von Drittanbietern, mit denen Angriffe am Rande ermittelt und abgefedert werden. Als unsere Edge-Kapazität anwuchs, wurde deutlich, dass die Bedeutung eines Angriffs auf einzelne oder bestimmte Kanten sehr gering war. Aufgrund unserer einzigartigen Konfiguration haben wir die Komponenten zur Erkennung und Schadensminimierung getrennt. Wir haben mehrstufige Erkennung bereitgestellt, die es uns ermöglicht, Angriffen näher an Ihre Sättigungs Punkte zu erkennen und gleichzeitig globale Abschwächung am Rande beizubehalten. Diese Strategie stellt sicher, dass mehrere Angriffe gleichzeitig ausgeführt werden können.
+Aufgrund dieser einzigartigen Natur verwendet Microsoft Erkennungs-und Minderungs Prozesse, die sich von denen unterscheiden, die von großen Unternehmen verwendet werden. Die Strategie basiert auf einer Trennung von Erkennung und globaler verteilter Abschwächung über viele Netzwerkränder. Viele Unternehmen verwenden Lösungen von Drittanbietern, um Angriffe am Rande zu erkennen und zu mindern. Als die Edge-Kapazität für Microsoft wuchs, wurde deutlich, dass die Bedeutung eines Angriffs auf einzelne oder bestimmte Ränder gering war. Aufgrund dieser eindeutigen Konfiguration trennte Microsoft die Komponenten für Erkennung und Minderung. Microsoft stellt mehrstufige Erkennungssysteme bereit, um Angriffe näher an Ihren Sättigungs Punkten zu erkennen und gleichzeitig die globale Abschwächung am Rand beizubehalten. Diese Strategie gewährleistet, dass mehrere gleichzeitige Angriffe verarbeitet werden können.
 
-Eine der effektivsten und kostengünstigsten Abwehrmaßnahmen von Microsoft gegen DoS-Angriffe besteht darin, unsere Angriffsfläche zu reduzieren. Auf diese Weise können wir unerwünschten Datenverkehr am Rand ablegen, statt die Daten Inline zu analysieren, zu verarbeiten und zu schrubben.
+Einer der effektivsten und kostengünstigsten Schutzmaßnahmen, die von Microsoft gegen DoS-Angriffe eingesetzt werden, ist das Reduzieren von Dienst Angriffs Oberflächen. Unerwünschter Datenverkehr wird am Netzwerkrand verworfen, anstatt die Daten Inline zu analysieren, zu verarbeiten und zu schrubben.
 
-An der Schnittstelle mit dem öffentlichen Netzwerk verwendet Microsoft spezielle Sicherheitsgeräte für Firewall-, Netzwerkadressübersetzung-und IP-Filterfunktionen. Außerdem wird das globale equal-cost Multi-Path (ECMP)-Routing verwendet. Das globale ECMP-Routing ist ein Netzwerk Framework, das sicherstellt, dass mehrere globale Pfade vorhanden sind, um einen Dienst zu erreichen. Dank dieser mehreren Pfade sollte ein Angriff auf den Dienst auf die Region beschränkt werden, von der aus der Angriff stammt – andere Regionen sollten von diesem Angriff nicht betroffen sein, da Endbenutzer andere Pfade verwenden würden, um den Dienst in diesen Regionen zu erreichen. Außerdem haben wir ein eigenes internes DoS-Korrelations-und-Erkennungssystem entwickelt, das Fluss Daten, Leistungs Metriken und andere Informationen verwendet. Hierbei handelt es sich um einen hoch skalierten clouddienst, der in Microsoft Azure läuft und Daten aus verschiedenen Punkten in Microsoft-Netzwerken und-Diensten analysiert. Ein Aufgabenbereichs übergreifendes DoS-Reaktionsteam identifiziert die Rollen und Verantwortlichkeiten von Teams, die Kriterien für Eskalationen und die Protokolle für die Einbindung verschiedener Teams und für die Vorfallbehandlung. Diese Lösungen bieten netzwerkbasierten Schutz gegen DoS-Angriffe.
+An der Schnittstelle mit dem öffentlichen Netzwerk verwendet Microsoft spezielle Sicherheitsgeräte für die Firewall, die Netzwerkadressübersetzung und IP-Filterfunktionen. Microsoft verwendet außerdem ein globales ECMP-Routing (Multi-Path, gleich Kosten). Das globale ECMP-Routing ist ein Netzwerk Framework, um sicherzustellen, dass mehrere globale Pfade vorhanden sind, um einen Dienst zu erreichen. Bei diesen mehreren Pfaden sind Angriffe auf Dienste auf die Region, aus der der Angriff stammt, limitiert. Andere Regionen sollten von diesem Angriff nicht betroffen sein, da Endbenutzer andere Pfade verwenden würden, um den Dienst in diesen Regionen zu erreichen. Microsoft hat auch interne DOS-Korrelations-und-Erkennungssysteme entwickelt, die Fluss Daten, Leistungs Metriken und andere Informationen verwenden. Dies ist ein hochwertiger clouddienst in Microsoft Azure, der Daten analysiert, die von verschiedenen Punkten in Microsoft-Netzwerken und-Diensten gesammelt wurden. Ein Aufgaben übergreifendes DOS-Vorfall Antwort Team identifiziert die Rollen und Verantwortlichkeiten in Teams, die Kriterien für Eskalationen und die Protokolle für die Einbindung verschiedener Teams und für die Vorfallbehandlung. Diese Lösungen bieten netzwerkbasierten Schutz vor DoS-Angriffen.
 
-Schließlich werden Cloud-basierte Arbeitsauslastungen basierend auf dem Protokoll und der Bandbreitennutzung mit optimierten Schwellenwerten konfiguriert, um diese Arbeitslast eindeutig zu schützen.
+Schließlich werden Cloud-basierte Arbeitslasten mit optimierten Schwellenwerten basierend auf Ihren Protokoll-und Bandbreiten Nutzungsanforderungen konfiguriert, um diese Arbeitsauslastung eindeutig zu schützen.

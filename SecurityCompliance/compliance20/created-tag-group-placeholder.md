@@ -6,11 +6,11 @@ So erstellen Sie eine Transpondergruppe:
 
 1.  Wählen Sie im Arbeitsbereich Arbeitsmappe verwalten aus.
 
-> ![](../media/ED_managews.png)
+> ![](../media/ED-managews.png)
 
 2.  Klicken Sie dann auf den Link Tags verwalten.
 
-> ![](../media/ED_managetags.png)
+> ![](../media/ED-managetags.png)
 
 Innerhalb der Tag-Verwaltung können Tags erstellt werden, um die Anforderungen Ihres Falls zu erfüllen.
 
@@ -18,23 +18,23 @@ Innerhalb der Tag-Verwaltung können Tags erstellt werden, um die Anforderungen 
 
 1.  Klicken Sie auf die Schaltfläche "Abschnitt hinzufügen".
 
-> ![Ein Bild mit einer automatisch generierten Screenshot-Beschreibung](../media/ED_addtagsection.png)
+> ![Ein Bild mit einer automatisch generierten Screenshot-Beschreibung](../media/ED-addtagsection.png)
 
 |                                                                                                                             |                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](../media/ED_tipicon.png)Tipp | Der Vorschau-Bildschirm wird aktualisiert, wenn Sie speichern, sodass Sie eine Vorschau des Tag-Panels anzeigen können, ohne den Tag-Verwaltungsbildschirm schließen und zurück zum Arbeitsmappen wechseln zu müssen. |
+| ![](../media/ED-tipicon.png)Tipp | Der Vorschau-Bildschirm wird aktualisiert, wenn Sie speichern, sodass Sie eine Vorschau des Tag-Panels anzeigen können, ohne den Tag-Verwaltungsbildschirm schließen und zurück zum Arbeitsmappen wechseln zu müssen. |
 
 2.  Geben Sie einen Titel und eine optionale Beschreibung ein. Um innerhalb dieses Abschnitts ein Tag zu erstellen, klicken Sie auf die Ellipsen im Abschnitt neuer Tag, um Tags in diesem neuen Abschnitt zu erstellen.
     
-    ![Ein Screenshot einer Handy Beschreibung, die automatisch generiert wird](../media/ED_createtag.png)
+    ![Ein Screenshot einer Handy Beschreibung, die automatisch generiert wird](../media/ED-createtag.png)
 
 |                                                                                                                             |                                                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](../media/ED_tipicon.png)Tipp | Mit Options Tags wird erzwungen, dass Benutzer ein Tag aus einer Gruppe von Tags auswählen. Kontrollkästchentags ermöglichen Benutzern das Auswählen einer beliebigen Kombination von Tags. |
+| ![](../media/ED-tipicon.png)Tipp | Mit Options Tags wird erzwungen, dass Benutzer ein Tag aus einer Gruppe von Tags auswählen. Kontrollkästchentags ermöglichen Benutzern das Auswählen einer beliebigen Kombination von Tags. |
 
 ## <a name="nested-tags"></a>Geschachtelte Tags
 
 1.  Zum Schachteln von Tags klicken Sie auf die Ellipsen eines Tags, und wählen Sie ein neues Tag aus, das hinzugefügt werden soll. ****
     
-    ![](../media/ED_tagnesting.png)
+    ![](../media/ED-tagnesting.png)
 

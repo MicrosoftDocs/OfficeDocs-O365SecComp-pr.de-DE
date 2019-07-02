@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Als Administrator können Sie in Office 365 falsch positive unter Quarantäne gestellte Nachrichten anzeigen, freigeben und melden. Sie können Richtlinien so einrichten, dass Nachrichten von Office 365 gefiltert und aus verschiedenen Gründen an die Quarantäne gesendet werden: weil Sie als Spam, Massen, Phishing, Schadsoftware oder als Übereinstimmung mit einer Nachrichtenfluss Regel identifiziert wurden. '
-ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
+ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155697"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35115926"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 
@@ -29,7 +29,7 @@ Als Administrator können Sie in Office 365 unter Quarantäne gestellte Nachrich
   
 Standardmäßig sendet Office 365 Phishingnachrichten und Nachrichten mit Schadsoftware direkt in Quarantäne. Andere gefilterte Nachrichten werden an den Junk-e-Mail-Ordner der Benutzer gesendet, es sei denn, Sie richten eine Richtlinie zum Senden an den Quarantänebereich ein.
   
-Sie müssen über globale Administratorberechtigungen (GA) in Office 365 verfügen, damit Sie mit in Quarantäne gestellten Nachrichten arbeiten können, die an andere Benutzer gesendet wurden, und um mit isolierten Dateien zu arbeiten.
+Sie müssen über globale Administratorberechtigungen (GA) in Office 365 oder Sicherheitsadministrator im Security and Compliance Center verfügen, damit Sie mit in Quarantäne gestellten Nachrichten arbeiten können, die an andere Benutzer gesendet wurden, und um mit isolierten Dateien zu arbeiten.
   
 > [!IMPORTANT]
 >Standardmäßig werden Spam, Massen-und Phishing-Nachrichten 30 Tage lang in Quarantäne aufbewahrt. Nachrichten, die unter Quarantäne gestellt werden, weil Sie einer Nachrichtenfluss Regel entsprechen, werden für 7 Tage in Quarantäne aufbewahrt. Schadsoftware-Nachrichten werden 15 Tage lang in Quarantäne aufbewahrt. Sie können die Spamquarantäne Zeit in den Antispam-Einstellungen im Security &amp; Compliance Center anpassen. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück bekommen. Wenn Sie möchten, können Sie den Aufbewahrungszeitraum für isolierte Nachrichten in ihren Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen des Aufbewahrungszeitraums für die Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
@@ -41,7 +41,7 @@ Sie müssen über globale Administratorberechtigungen (GA) in Office 365 verfüg
 2. Erweitern Sie in der Liste auf der linken Seite die Option **Threat Management**, wählen Sie **überprüfen**, und wählen Sie dann **Quarantäne**aus.
     
     > [!TIP]
-    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: #a0[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
     Standardmäßig zeigt das Security &amp; Compliance Center alle e-Mail-Nachrichten an, die als Spam isoliert wurden. Die Nachrichten werden basierend auf dem **Datum** , an dem die Nachricht empfangen wurde, von der neuesten bis zur ältesten sortiert. **Absender**, **Betreff**und das Ablaufdatum (unter **Expires** ) werden ebenfalls für jede Nachricht angezeigt. Sie können nach einem Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift klicken; Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren. 
     
@@ -69,7 +69,7 @@ Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, klicken Sie auf d
     
 2. Erweitern Sie auf der linken Seite **Bedrohungs Verwaltung**, wählen Sie **überprüfen**und dann **Quarantäne**aus. <br/>
     > [!TIP]
-    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: #a0[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
 3. Standardmäßig werden in der Seite isolierte e-Mail-Nachrichten angezeigt. Zum Anzeigen von isolierten Dateien legen Sie die Filter oben auf der Seite so fest, dass **Dateien**angezeigt werden, die aufgrund **Schadsoftware**isoliert wurden. Sie benötigen Administratorberechtigungen in Office 365, um mit isolierten Dateien zu arbeiten. 
     
@@ -193,7 +193,7 @@ Sie können konfigurieren, wie lange Nachrichten und Dateien in der Quarantäne 
     
 2. Erweitern Sie auf der linken Seite den Knoten **Bedrohungs Verwaltung**, wählen Sie **Richtlinie**aus, und wählen Sie dann **Anti-Spam**aus. <br/>
     > [!TIP]
-    > Wenn Sie direkt zur **Antispam-** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > Wenn Sie direkt zur **Antispam-** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: #a0[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
 3. Wählen Sie **Benutzerdefiniert** aus, um die Registerkarte **benutzerdefinierte Einstellungen** anzuzeigen. 
     

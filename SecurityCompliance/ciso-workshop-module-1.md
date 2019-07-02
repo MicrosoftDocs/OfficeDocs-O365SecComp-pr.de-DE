@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 90844018e12a165e57b41153cb2042967ffee641
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152157"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767316"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO Workshop-Modul 1: Microsoft Cyber-Briefing
 
@@ -40,17 +40,17 @@ Dieses Modul umfasst Übersichten zur kritischen Sicherheits Hygiene, zur Micros
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXF]
 
-## <a name="part-5-microsoft-cybersecurity-reference-architecture-2430"></a>Part 5: Microsoft Cyber Reference Architecture (24:30)
+## <a name="part-5-microsoft-cybersecurity-reference-architecture-2114"></a>Part 5: Microsoft Cyber Reference Architecture (21:14)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36ldf]
 
 ## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>Part 6: Referenzarchitektur für Identity and Access (7:25)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
 
-## <a name="part-7-reference-architecture-for-security-operations-center-739"></a>Abschnitt 7: Referenzarchitektur für Security Operations Center (7:39)
+## <a name="part-7-reference-architecture-for-security-operations-center-937"></a>Abschnitt 7: Referenzarchitektur für Security Operations Center (9:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM6]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36dlc]
 
 ## <a name="part-8-reference-architecture-for-pc-and-mobile-devices-452"></a>Teil 8: Referenzarchitektur für PC und mobile Geräte (4:52)
 

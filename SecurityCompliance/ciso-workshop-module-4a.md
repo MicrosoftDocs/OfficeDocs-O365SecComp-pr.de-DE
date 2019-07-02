@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: c9d418254db4a11716b4d1e58ecd683b92fdfd18
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 75cdd5ff4d65c7d7cbe90e8516f9027a496c4e36
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155487"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767306"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO Workshop-Modul 4a: Bedrohungsschutz Strategie
 
@@ -48,7 +48,7 @@ Erkunden Sie wichtige Informationen zu Bedrohungsschutz, Sicherheitsentwicklung,
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMm]
 
-## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Abschnitt 6: Roadmap für die Anwendungsentwicklung & Platform as a Service (6:07)
+## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Abschnitt 6: Roadmap für die Anwendungsentwicklung #a0 Plattform as a Service (6:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
 
@@ -68,9 +68,9 @@ Erkunden Sie wichtige Informationen zu Bedrohungsschutz, Sicherheitsentwicklung,
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLS]
 
-## <a name="part-11-roadmap-for-securing-privileged-access-1229"></a>Abschnitt 11: Roadmap zur Sicherung des privilegierten Zugriffs (12:29)
+## <a name="part-11-roadmap-for-securing-privileged-access-2226"></a>Abschnitt 11: Roadmap zur Sicherung des privilegierten Zugriffs (22:26)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLpa]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36aLB]
 
 ## <a name="part-12-roadmap-for-not-petya-and-critical-security-hygiene-1028"></a>Abschnitt 12: Roadmap für (nicht) Petja und Critical Security Hygiene (10:28)
 

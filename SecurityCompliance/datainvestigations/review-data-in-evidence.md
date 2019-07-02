@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150667"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767336"
 ---
 # <a name="review-the-data-in-evidence"></a>Überprüfen von Nachweisdaten
 
@@ -50,7 +50,7 @@ Im folgenden finden Sie ein Beispiel für die Datei Metadaten für ein Dokument.
 
 ## <a name="native-view"></a>Systemeigene Ansicht
 
-Der systemeigene Viewer zeigt die genaueste Ansicht eines Dokuments im systemeigenen Format an. Native View wird für Hunderte von Dateitypen unterstützt und ist für die Anzeige von Dokumenten in der wahrsten nativen Umgebung möglich. Für Microsoft Office Dateien verwendet der systemeigene Viewer Office Online. Auf diese Weise können Sie Inhalte wie Kommentare in verschiedenen Office-Dokumenten, Formeln und ausgeblendeten Zeilen/Spalten in Excel und die Notizenansicht in PowerPoint anzeigen.
+Der systemeigene Viewer zeigt die genaueste Ansicht eines Dokuments im systemeigenen Format an. Native View wird für Hunderte von Dateitypen unterstützt und ist für die Anzeige von Dokumenten in der wahrsten nativen Umgebung möglich. Für Microsoft Office Dateien verwendet der systemeigene Viewer die Webversion von Office-Apps. Auf diese Weise können Sie Inhalte wie Kommentare in verschiedenen Office-Dokumenten, Formeln und ausgeblendeten Zeilen/Spalten in Excel und die Notizenansicht in PowerPoint anzeigen.
 
 ![Systemeigene Ansicht
 ](../media/Reviewimage3.png)

@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Suche zum Sammeln von Daten
+title: Create a search
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 360ba6a67d43a0b78b1104ae64885697009bb222
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155107"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222249"
 ---
-# <a name="create-a-search-to-collect-data"></a>Erstellen einer Suche zum Sammeln von Daten
+# <a name="create-a-search"></a>Create a search
 
 Auf der Registerkarte **Suchen** in Ihrem Fall können Sie eine neue Suche erstellen, indem Sie auf **neue Suche** klicken und dem Assistenten folgen.
 
-## <a name="name-your-search-and-give-description"></a>Benennen Sie Ihre Suche und geben Sie eine Beschreibung
+## <a name="name-your-search-and-give-it-a-description"></a>Benennen Sie Ihre Suche und geben Sie Ihr eine Beschreibung.
 
 Jede Suche mit einem Fall sollte einen eindeutigen Namen haben. Optional können Sie eine Beschreibung für Ihre Suche angeben. 
 
-## <a name="define-your-conditions"></a>Definieren der Bedingungen
+## <a name="define-your-search-query-and-conditions"></a>Definieren der Suchabfrage und Bedingungen
 
-Sie können die Bedingungen für Ihre Suche mithilfe der vordefinierten Bedingungs Karten oder der Verwendung von Keyword Query Language (KQL) definieren. Weitere Informationen finden Sie unter [Erstellen von Suchabfragen](building-search-queries.md).
+Sie können die Stichwörter-Abfrage und alle Bedingungen für die Suche definieren, indem Sie die vordefinierten Bedingungs Karten verwenden oder KQL (Keyword Query Language) verwenden. Weitere Informationen finden Sie unter [Erstellen von Suchabfragen](building-search-queries.md).
 
 ## <a name="choose-the-custodians-to-search-from"></a>Wählen Sie die zu suchenden Verwalter aus.
 

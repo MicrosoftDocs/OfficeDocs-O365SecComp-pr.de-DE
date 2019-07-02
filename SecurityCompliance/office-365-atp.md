@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Anti-Phishing-Tools, Reporting-Tools und Funktionen für die Threat Intelligence.
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408380"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652658"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Office 365 Enterprise-und Microsoft 365 Enterprise-Kunden. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)haben. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Übersicht
 
@@ -47,7 +47,7 @@ ATP ist in Office 365 E5 enthalten; ATP-Plan und ATP-Plan 2 sind jedoch jeweils 
 
 Office 365 ATP bietet zahlreiche Tools, um ein angemessenes Maß an Schutz für Ihre Organisation festzulegen. 
 
-Das Sicherheitsteam Ihrer Organisation muss Richtlinien für jedes ATP-Tool im Office 365 Security & Compliance Center definieren. Wechseln Sie zur **Bedrohungs Verwaltungs** > **Richtlinie** , um auf Richtlinienoptionen zuzugreifen. (Weitere Informationen dazu finden Sie unter [schnell Start Handbuch: Einrichten Office 365 Advanced Threat Protection](checklist-atp-setup.md).)
+Das Sicherheitsteam Ihrer Organisation muss Richtlinien für jedes ATP-Tool im Office 365 Security #a0 Compliance Center definieren. Wechseln Sie zur **Bedrohungs Verwaltungs** > **Richtlinie** , um auf Richtlinienoptionen zuzugreifen. (Weitere Informationen dazu finden Sie unter [schnell Start Handbuch: Einrichten Office 365 Advanced Threat Protection](checklist-atp-setup.md).)
 
 Die für Ihre Organisation definierten Richtlinien bestimmen das Verhalten und die Schutzebene für vordefinierte Bedrohungen. Richtlinienoptionen sind äußerst flexibel. Beispielsweise kann das Sicherheitsteam Ihrer Organisation einen abgestimmten Bedrohungsschutz auf Benutzer-, Organisations-, Empfänger-und Domänenebene festlegen. Es ist wichtig, Ihre Richtlinien regelmäßig zu überprüfen, da täglich neue Bedrohungen und Herausforderungen auftreten.  
 
@@ -61,7 +61,7 @@ Die für Ihre Organisation definierten Richtlinien bestimmen das Verhalten und d
 
 ## <a name="view-atp-reports"></a>Anzeigen der ATP-Berichte
 
-Office 365 ATP enthält ein erweitertes [Berichts Dashboard](view-reports-for-atp.md) zum Überwachen Ihrer ATP-Leistung. Sie können auf das **Dashboard unter Reports >** im Security & Compliance Center zugreifen. 
+Office 365 ATP enthält ein erweitertes [Berichts Dashboard](view-reports-for-atp.md) zum Überwachen Ihrer ATP-Leistung. Sie können auf den **Bericht unter Reports #a0 Dashboard** im Security #a1 Compliance Center zugreifen. 
 
 Berichte werden in Echtzeit aktualisiert und bieten Ihnen die neuesten Einblicke. Diese Berichte enthalten auch Empfehlungen und warnen vor drohenden Bedrohungen. Zu den vordefinierten Berichten zählen folgende: 
 
@@ -93,7 +93,7 @@ Air enthält eine Reihe von Sicherheits-Textbuch, die automatisch gestartet werd
 
 ## <a name="permissions-required-to-use-atp-features"></a>Erforderliche Berechtigungen für die Verwendung von ATP-Features
 
-Für den Zugriff auf ATP-Funktionen im Security & Compliance Center müssen Sie eine entsprechende Rolle zugewiesen haben. Die folgende Tabelle enthält einige Beispiele:
+Für den Zugriff auf ATP-Funktionen im Security #a0 Compliance Center müssen Sie eine entsprechende Rolle zugewiesen haben. Die folgende Tabelle enthält einige Beispiele:
 
 |Rolle oder Rollengruppe  |Ressourcen für weitere Informationen  |
 |---------|---------|

@@ -1,5 +1,5 @@
 ---
-title: Office 365 jammern Enterprise-Zugriffssteuerungen
+title: Office 365 jammern von Unternehmens Zugriffs Steuerelementen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,18 +12,18 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Zusammenfassung: eine kurze Zusammenfassung zu jammern von Enterprise-Zugriffssteuerungen in der Produktionsumgebung.'
-ms.openlocfilehash: 61598235a010aaa1c578c449cb054073212a41f9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Zusammenfassung: eine kurze Zusammenfassung über das Jammern von Enterprise-Zugriffs Steuerelementen in der Produktionsumgebung.'
+ms.openlocfilehash: ec1a5767495b6b183ceda2af558cbec0c479e956
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262347"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622315"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Yammer Enterprise-Zugriffssteuerungen 
 
-Sowohl der physische als auch der logische Zugriff auf die Produktionsumgebung jammern ist auf eine sehr kleine Gruppe von Personen (Infrastruktur und Betrieb) beschränkt. Wie bei anderen Office 365-Ingenieuren haben Jammer Ingenieure keinen Zugriff auf Kundendaten. Der Zugriff muss über ein Genehmigungs basiertes Just-in-Time-Zugriffs Steuerungssystem wie Lockbox angefordert werden, und es gibt eine begrenzte Anzahl von genehmigenden Personen. Genehmigende Personen überprüfen die Anforderung (beispielsweise überprüfen Sie, ob die Anforderung aufgrund der Anforderungen, des Geschäftsfalls, der Zeit usw. legitim ist) und genehmigen oder verweigern die Anforderung. Wenn die Anforderung genehmigt wurde, wird der JIT-Zugriff für einen definierten und begrenzten Zeitraum gewährt, nach dem er automatisch abläuft. 
+Der physische und logische Zugriff auf die Produktionsumgebung jammern ist auf eine kleine Gruppe von Personen (Infrastruktur und Betrieb) beschränkt. Wie bei anderen Office 365-Ingenieuren haben Jammer Techniker keinen ständigen Zugriff auf Kundendaten. Der Zugriff muss mithilfe eines Genehmigungs basierten Just-in-Time-Zugriffs Steuerungssystems angefordert werden, ähnlich wie Lockbox mit einer begrenzten Anzahl von genehmigenden Personen. Genehmigende Personen überprüfen die Anforderung (beispielsweise überprüfen, ob die Anforderung aufgrund von Bedarf, Geschäftsfall, Zeit usw. legitim ist), und genehmigen oder verweigern die Anforderung. Wenn die Anforderung genehmigt wird, wird der JIT-Zugriff für eine definierte und beschränkte Zeit gewährt. Nach Überschreiten der Zugriffszeit läuft der Zugriff automatisch ab.
 
-Wie bei anderen Office 365-Diensten nutzt der gesamte Zugriff auf die Produktionsumgebung jammern die mehrstufige Authentifizierung. Der gesamte Zugriff und der Befehlsverlauf werden einem Benutzer zugeordnet und vom Jammer Sicherheitsteam regelmäßig protokolliert und überprüft.
+Wie bei anderen Office 365 Diensten verwendet jeder Zugriff auf die Produktionsumgebung für jammern die mehrstufige Authentifizierung. Der gesamte Zugriffs-und Befehlsverlauf wird einem Benutzer zugeschrieben und regelmäßig vom Sicherheitsteam "jammern" protokolliert und überprüft.
 
-Weitere Informationen zur Verwaltung und Verwaltung von jammern finden Sie unter [Hilfe](https://support.office.com/article/yammer-–-admin-help-e1464355-1f97-49ac-b2aa-dd320b179dbe?ui=en-US&rs=en-US&ad=US)zu jammern.
+Weitere Informationen zur Verwaltung und Verwaltung von jammern finden Sie unter jammern der [Administratorhilfe](https://support.office.com/article/yammer-–-admin-help-e1464355-1f97-49ac-b2aa-dd320b179dbe?ui=en-US&rs=en-US&ad=US).

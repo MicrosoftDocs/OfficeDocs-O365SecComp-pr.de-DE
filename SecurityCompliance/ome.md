@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Mit Office 365 Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselte e-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. Die e-Mail-Nachrichtenverschlüsselung hilft sicherzustellen, dass nur vorgesehene Empfänger Nachrichteninhalte anzeigen können.
-ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6f6f59225d267d08ba20e1fdea219dc5d890ed5
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157587"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852859"
 ---
 # <a name="office-365-message-encryption"></a>Office 365-Nachrichtenverschlüsselung
 
@@ -58,7 +58,7 @@ Office 365 erweiterte Nachrichtenverschlüsselung können Sie mehrere Branding-V
 
 Die erweiterte Nachrichtenverschlüsselung in Office 365 hilft Ihnen, Compliance-Verpflichtungen zu erfüllen, die eine flexiblere Kontrolle über den Zugriff durch externe Empfänger auf verschlüsselte e-Mails erfordern. Mit erweiterter Nachrichtenverschlüsselung in Office 365 können Sie als Administrator vertrauliche und außerhalb der Organisation freigegebene e-Mails mit automatischen Richtlinien steuern, mit denen vertrauliche Informationstypen (z. b. PII, Finanz-oder Integritäts-IDs) oder Schlüsselwörter für eine Verbesserung ermittelt werden. Schutz durch Ablauf des Zugriffs über ein sicheres Webportal auf verschlüsselte e-Mails. Darüber hinaus können Sie als Administrator verschlüsselte e-Mails, auf die extern über ein Office 365 Webportal zugegriffen wird, weiter steuern, indem Sie jederzeit den Zugriff auf eine e-Mail widerrufen.
 
-Die Sperrung und der Ablauf von Nachrichten funktionieren nur für e-Mails, die Ihre Benutzer an Empfänger außerhalb Ihrer Office 365 Organisation senden. Darüber hinaus müssen die Empfänger über das Webportal auf die e-Mail zugreifen. Um sicherzustellen, dass der Empfänger das Portal zum Empfangen von e-Mails verwendet, richten Sie eine benutzerdefinierte Branding-Vorlage ein, die den Wrapper anwendet. Anschließend wenden Sie die Branding-Vorlage in einer e-Mail-Fluss Regel an. Weitere Informationen zur erweiterten Nachrichtenverschlüsselung finden Sie unter [Office 365 Advanced Message Encryption](https://ome-advanced-message-encryption.md).
+Die Sperrung und der Ablauf von Nachrichten funktionieren nur für e-Mails, die Ihre Benutzer an Empfänger außerhalb Ihrer Office 365 Organisation senden. Darüber hinaus müssen die Empfänger über das Webportal auf die e-Mail zugreifen. Um sicherzustellen, dass der Empfänger das Portal zum Empfangen von e-Mails verwendet, richten Sie eine benutzerdefinierte Branding-Vorlage ein, die den Wrapper anwendet. Anschließend wenden Sie die Branding-Vorlage in einer e-Mail-Fluss Regel an. Weitere Informationen zur erweiterten Nachrichtenverschlüsselung finden Sie unter [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Definieren von Regeln für die Office 365-Nachrichtenverschlüsselung
 

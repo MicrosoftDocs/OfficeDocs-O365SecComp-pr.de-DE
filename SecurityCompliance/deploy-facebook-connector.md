@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Facebook-Geschäfts Seiten in Office 365 einrichten. Nachdem diese Daten in Office 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Facebook-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1f5b0f241616cc95e79e80d054a8782f97c5887b
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150557"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694737"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Bereitstellen eines Connectors zum Archivieren von Facebook-Daten in Office 365
 
@@ -24,7 +24,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 ## <a name="step-1-download-the-package"></a>Schritt 1: Herunterladen des Pakets
 
-Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository unter at <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>herunter. Laden Sie die ZIP-Datei mit dem Namen **SampleConnector. zip**unter der neuesten Version herunter. Sie werden diese ZIP-Datei in Schritt 4 in Azure hochladen.
+Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository unter <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>herunter. Laden Sie die ZIP-Datei mit dem Namen **SampleConnector. zip**unter der neuesten Version herunter. Sie laden diese ZIP-Datei in Schritt 4 in Azure hoch.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Schritt 2: Erstellen einer APP in Azure Active Directory
 
@@ -48,7 +48,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/FBCimage5.png)
 
-6. Wechseln Sie zu **Certificates & Secrets for the New app.**
+6. Wechseln Sie zu **Zertifikaten #a0 Geheimnisse für die neue APP.**
 
    ![](media/FBCimage6.png)
 
@@ -60,7 +60,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
     ![](media/FBCimage8.png)
 
-9. Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn in einer Textdatei oder an einem anderen Speicherort. Dies ist der geheime Aad-Anwendungsschlüssel, den Sie in späteren Schritten verwenden werden.
+9. Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn in einer Textdatei oder an einem anderen Speicherort. Dies ist der geheime Aad-Anwendungsschlüssel, den Sie in späteren Schritten verwenden.
 
    ![](media/FBCimage9.png)
 
@@ -112,17 +112,17 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/FBCimage20.png)
 
-2. Geben Sie die Details ein (wie unten dargestellt), und erstellen Sie dann die Webanwendung. Beachten Sie, dass der Name, den Sie in das Feld **App-Name** eingeben, zum Erstellen der Azure-App-Dienst-URL verwendet wird. Beispiel FBconnector.azurewebsites.net.
+2. Geben Sie die Details ein (wie unten dargestellt), und erstellen Sie dann die Webanwendung. Beachten Sie, dass der Name, den Sie im Feld **App-Name** eingeben, zum Erstellen der Azure-App-Dienst-URL verwendet wird. Beispiel: FBconnector.azurewebsites.net.
 
    ![](media/FBCimage21.png)
 
-3. Wechseln Sie zur neu erstellten Webanwendungs-Ressource, und klicken Sie im linken Navigationsbereich auf **Anwendungseinstellungen** . Klicken Sie unter Anwendungseinstellungen auf neue Einstellung hinzufügen, und fügen Sie die folgenden drei Einstellungen hinzu. Verwenden Sie die Werte (die Sie in die Textdatei aus den vorherigen Schritten kopiert haben): 
+3. Wechseln Sie zur neu erstellten Webanwendungs-Ressource, und klicken Sie im linken Navigationsbereich auf **Anwendungseinstellungen** . Klicken Sie unter Anwendungseinstellungen auf neue Einstellung hinzufügen, und fügen Sie die folgenden drei Einstellungen hinzu: Verwenden Sie die Werte (die Sie in die Textdatei aus den vorherigen Schritten kopiert haben): 
 
-    - **APISecretKey** – Sie können einen beliebigen Wert als geheimen Schlüssel eingeben. Dieser wird für den Zugriff auf die Connector-Webanwendung in Schritt 7 verwendet.
+    – **APISecretKey** – Sie können einen beliebigen Wert als geheimen Schlüssel eingeben. Dieser wird für den Zugriff auf die Connector-Webanwendung in Schritt 7 verwendet.
 
-    - **StorageAccountConnectionString** – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
+    – * * StorageAccountConnectionString – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
 
-    - **Mandanten** Kennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
+    – **Mandanten** Kennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Facebook-Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
 
     ![](media/FBCimage22.png)
 
@@ -132,13 +132,13 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
 5. Der letzte Schritt besteht darin, den Quellcode der Connector-app in Azure hochzuladen, den Sie in Schritt 1 heruntergeladen haben. Wechseln Sie in einem Webbrowser zu https://<AzureAppResourceName>. SCM.azurewebsites.net/ZipDeployUi. Wenn beispielsweise der Name Ihrer Azure-App-Ressource (die Sie in Schritt 2 in diesem Abschnitt genannt haben) **FBconnector**lautet, gehen Sie zu https://fbconnector.scm.azurewebsites.net/ZipDeployUi. 
 
-6. Ziehen Sie das SampleConnector. zip-Menü (das Sie in Schritt 1 heruntergeladen haben) auf diese Seite. Nachdem die Dateien hochgeladen wurden und die Bereitstellung erfolgreich war, sieht die Seite wie im folgenden Screenshot aus.
+6. Ziehen Sie das SampleConnector. zip-Menü (das Sie in Schritt 1 heruntergeladen haben) auf diese Seite. Nachdem die Dateien hochgeladen wurden und die Bereitstellung erfolgreich war, sieht die Seite wie im folgenden Screenshot aus:
 
    ![](media/FBCimage24.png)
 
 ## <a name="step-5-register-the-facebook-app"></a>Schritt 5: Registrieren der Facebook-App
 
-1. Wechseln Sie <https://developers.facebook.com> zu, melden Sie sich mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an, und klicken Sie dann auf **neue APP hinzufügen**.
+1. Wechseln Sie <https://developers.facebook.com>zu, melden Sie sich mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an, und klicken Sie dann auf **neue APP hinzufügen**.
 
    ![](media/FBCimage25.png)
 
@@ -162,7 +162,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/FBCimage30.png)
 
-7. Klicken Sie im linken Navigationsbereich unter **Facebook-Anmeldung**auf **Einstellungen**, und fügen Sie den OAuth-Umleitungs-URI in das Feld **gültige OAuth** -Umleitungs-URIs ein; Verwenden Sie das Format ** \<connectorserviceuri>/views/FacebookOAuth**, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist. zum Beispiel https://fbconnector.azurewebsites.net.
+7. Klicken Sie im linken Navigationsbereich unter **Facebook-Anmeldung**auf **Einstellungen**, und fügen Sie den OAuth-Umleitungs-URI im Feld **gültige OAuth** -Umleitungs-URIs hinzu. Verwenden Sie das Format ** \<connectorserviceuri>/views/facebookoauth**, wobei der Wert für connectorserviceuri die Azure-App-Dienst-URL für Ihre Organisation ist. Beispiel: https://fbconnector.azurewebsites.net.
 
    ![](media/FBCimage31.png)
 
@@ -206,7 +206,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
 ## <a name="step-6-configure-the-connector-web-app"></a>Schritt 6: Konfigurieren der Connector-Webanwendung
 
-1. Wechseln Sie zu\<https://AzureAppResourceName>. azurewebsites. net (wobei AzureAppResourceName der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben) Wenn beispielsweise der Name **FBconnector**lautet https://fbconnector.azurewebsites.net, wechseln Sie zu. Die Startseite der APP wird wie im folgenden Screenshot dargestellt.
+1. Wechseln Sie zu\<https://AzureAppResourceName>. azurewebsites.net (wobei AzureAppResourceName der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben) Wenn beispielsweise der Name **FBconnector**lautet https://fbconnector.azurewebsites.net, wechseln Sie zu. Die Startseite der APP sieht wie im folgenden Screenshot aus:
 
 
    ![](media/FBCimage41.png)
@@ -222,17 +222,17 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
 4. Geben Sie unter **Konfigurations Details**die folgenden Konfigurationseinstellungen ein: 
 
-   - **Facebook-Anwendungs-ID** – die APP-ID für die Facebook-Anwendung, die Sie in Schritt 5 erhalten haben.
-   - **Facebook-Anwendungs Geheimnis** – der APP-Schlüssel für die Facebook-Anwendung, die Sie in Schritt 5 erhalten haben.
-   - **Facebook webhooks überprüfen** des Tokens – das Überprüfen-Token, das Sie in Schritt 5 erstellt haben.
-   - **Aad-Anwendungs-ID** – die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 2 erstellt haben.
-   - **Aad-Anwendungs Geheimnis** – der Wert für den geheimen Schlüssel "APISecretKey", den Sie in Schritt 4 erstellt haben.
-   - **Aad-Anwendungs-URI** – der in Schritt 2 abgerufene Aad-Anwendungs-URI; Beispiel: https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   - **App Insights Instrumentation Key** – lassen Sie dieses Feld leer.
+   – **Facebook-Anwendungs-ID** – die APP-ID für die Facebook-Anwendung, die Sie in Schritt 5 erhalten haben.
+   – **Facebook-Anwendungs Geheimnis** – der APP-Schlüssel für die Facebook-Anwendung, die Sie in Schritt 5 erhalten haben.
+   – **Facebook webhooks überprüfen** des Tokens – das Überprüfen-Token, das Sie in Schritt 5 erstellt haben.
+   – **Aad-Anwendungs-ID** – die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 2 erstellt haben.
+   – **Aad-Anwendungs Geheimnis** – der Wert für den geheimen Schlüssel "APISecretKey", den Sie in Schritt 4 erstellt haben.
+   – **Aad Application URI** – der in Schritt 2 abgerufene Aad-Anwendungs-URI; Beispiel: https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
+   – **App Insights Instrumentation Key** – lassen Sie dieses Feld leer.
 
 5. Klicken Sie auf **Speichern** , um die Verbindungseinstellungen zu speichern.
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security & Compliance Center
+## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Schritt 7: Einrichten eines benutzerdefinierten Connectors im Security #a0 Compliance Center
 
 1. Wechseln Sie <https://protection.office.com> zu, und klicken Sie dann auf **Data Governance \> Import \> Archivieren von drittanbieterdaten**.
 
@@ -244,9 +244,9 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
 3.  Geben Sie auf der Seite " **Connector-app hinzufügen** " die folgenden Informationen ein, und klicken Sie dann auf **Connector überprüfen**.
 
-    - Geben Sie im ersten Feld einen Namen für den Connector ein, beispielsweise **Facebook**.
-    - Geben Sie im zweiten Feld den Wert des APISecretKey ein, den Sie in Schritt 4 hinzugefügt haben, oder fügen Sie ihn ein.
-    - Geben Sie im dritten Feld die Azure-App-Dienst-URL ein, oder fügen Sie Sie ein. zum Beispiel **https://fbconnector.azurewebsites.net**.
+    – Geben Sie im ersten Feld einen Namen für den Connector ein, beispielsweise **Facebook**.
+    – Geben Sie im zweiten Feld den Wert des APISecretKey ein, den Sie in Schritt 4 hinzugefügt haben, oder fügen Sie ihn ein.
+    – Geben Sie im dritten Feld die Azure-App-Dienst-URL ein, oder fügen Sie Sie ein. zum Beispiel **https://fbconnector.azurewebsites.net**.
  
     Nachdem der Connector erfolgreich überprüft wurde, klicken Sie auf **weiter**.
     
@@ -265,7 +265,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/FBCimage49.png)
 
-7. Melden Sie sich auf der Seite **Anmelden bei Facebook** mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an. Stellen Sie sicher, dass das Facebook-Konto, an dem Sie angemeldet sind, der Administratorrolle für die Facebook-Geschäfts Seiten Ihrer Organisation zugewiesen ist.
+7. Melden Sie sich auf der Seite **Anmelden bei Facebook** mit den Anmeldeinformationen für das Konto für die Facebook-Geschäfts Seiten Ihrer Organisation an. Stellen Sie sicher, dass das Facebook-Konto, an dem Sie sich angemeldet haben, der Administratorrolle für die Facebook-Geschäfts Seiten Ihrer Organisation zugewiesen ist.
 
    ![](media/FBCimage50.png)
 
@@ -277,7 +277,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
     ![](media/FBCimage52.png)
 
-10. Klicken Sie auf **Fertig stellen** , um das Setup der Connector-Dienst-APP zu beenden.
+10. Klicken Sie auf **vorbereiten** , um das Setup der Connector-Dienst-APP zu beenden.
 
     ![](media/FBCimage53.png)
 
@@ -289,7 +289,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
     ![](media/FBCimage55.png)
 
-13. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup im Security & Compliance Center abzuschließen.
+13. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup im Security #a0 Compliance Center abzuschließen.
 
     ![](media/FBCimage56.png)
 

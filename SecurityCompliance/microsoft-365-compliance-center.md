@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das neue Microsoft 365 Compliance Center, einschließlich dessen, was es enthält, wie Sie es erhalten, und Ihre nächsten Schritte.
-ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547924"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852789"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Übersicht über das neue Microsoft 365 Compliance Center
 
@@ -68,7 +68,7 @@ Zusätzlich zu den Links in Karten auf der Startseite finden Sie einen Navigatio
 
 |  |  |
 |---------|---------|
-|![Navigation im Microsoft 365 Compliance Center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Wechseln Sie zu **Warnungen** , um [Warnungen](alerts.md) anzuzeigen und zu beheben.<br/><br/>Besuchen Sie **Monitoring & Reports** , um Daten über die [Verwendung und Aufbewahrung von Bezeichnungen](sensitivity-labels.md), [DLP-Richtlinien Übereinstimmungen und außer Kraft](view-the-dlp-reports.md)setzungen, [freigegebene Dateien](https://docs.microsoft.com/cloud-app-security/file-filters), [verwendete apps von Drittanbietern](https://docs.microsoft.com/cloud-app-security/discovered-apps)und vieles mehr anzuzeigen.<br/><br/>Erweitern Sie den Abschnitt **Klassifizierung** , um auf Ihre [Bezeichnungen](labels.md), Bezeichnungs [Richtlinien](sensitivity-labels.md#what-label-policies-can-do), [vertrauliche Informationstypen](what-the-sensitive-information-types-look-for.md)und [Etiketten Analyse](view-label-activity-for-documents.md)zuzugreifen.<br/><br/>Wechseln Sie zu **Richtlinien** , um [Warnungen](alerts.md) anzuzeigen und auf Ihre [DLP](data-loss-prevention-policies.md) -und [Aufbewahrungs](retention-policies.md) Richtlinien zuzugreifen.<br/><br/> Verwenden Sie die Links im Abschnitt **Lösungen** , um auf die Compliance-Lösungen Ihrer Organisation zuzugreifen. Zu diesen zählen: <br/>[Data Governance >-Dispositionen](disposition-reviews.md)<br/>[eDiscovery (Vorschau)](compliance20/overview-ediscovery-20.md)<br/>[Aufsicht](supervision-policies.md)<br/>[Daten Untersuchungen](datainvestigations/overview-data-investigations.md)<br/>[Datenbetreffsanforderungen](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navigation im Microsoft 365 Compliance Center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Wechseln Sie zu **Warnungen** , um [Warnungen](alerts.md) anzuzeigen und zu beheben.<br/><br/>Besuchen Sie **Berichte** , um Daten über die [Verwendung und Aufbewahrung von Bezeichnungen](sensitivity-labels.md)anzuzeigen, die DLP- [Richtlinie entspricht und außer Kraft](view-the-dlp-reports.md)setzungen, [freigegebene Dateien](https://docs.microsoft.com/cloud-app-security/file-filters), [von Drittanbieter-Apps verwendet](https://docs.microsoft.com/cloud-app-security/discovered-apps)und vieles mehr.<br/><br/>Erweitern Sie den Abschnitt **Klassifizierung** , um auf Ihre [Bezeichnungen](labels.md), Bezeichnungs [Richtlinien](sensitivity-labels.md#what-label-policies-can-do), [vertrauliche Informationstypen](what-the-sensitive-information-types-look-for.md)und [Etiketten Analyse](view-label-activity-for-documents.md)zuzugreifen.<br/><br/>Wechseln Sie zu **Richtlinien** , um [Warnungen](alerts.md) anzuzeigen und auf Ihre [DLP](data-loss-prevention-policies.md) -und [Aufbewahrungs](retention-policies.md) Richtlinien zuzugreifen.<br/><br/> Verwenden Sie die Links im Abschnitt **Lösungen** , um auf die Compliance-Lösungen Ihrer Organisation zuzugreifen. Zu diesen zählen: <br/>[Datensteuerung #a0-Dispositionen](disposition-reviews.md)<br/>[eDiscovery (Vorschau)](compliance20/overview-ediscovery-20.md)<br/>[Aufsicht](supervision-policies.md)<br/>[Daten Untersuchungen](datainvestigations/overview-data-investigations.md)<br/>[Datenbetreffsanforderungen](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>Wie erhalte ich diese?
@@ -81,9 +81,9 @@ Zusätzlich zu den Links in Karten auf der Startseite finden Sie einen Navigatio
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Warum wird das Compliance Center für Office 365 Security & zum Ausführen einiger Aufgaben, beispielsweise zum Definieren bestimmter Richtlinien, verwendet?
+### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Warum werde ich zum Office 365 Security #a0 Compliance Center gebracht, um einige Aufgaben durchzuführen, beispielsweise die Definition bestimmter Richtlinien?
 
-Wir entwickeln weiterhin das Microsoft 365 Compliance Center, und wir werden in den kommenden Monaten weitere Funktionen und Lösungen hinzufügen. In der Zwischenzeit müssen einige Aufgaben im Office 365 Security & Compliance Center ausgeführt werden ([https://protection.office.com](https://protection.office.com)). In diesen Fällen werden Sie automatisch an den Standort geleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
+Wir entwickeln weiterhin das Microsoft 365 Compliance Center, und wir werden in den kommenden Monaten weitere Funktionen und Lösungen hinzufügen. In der Zwischenzeit müssen einige Aufgaben im Office 365 Security #a0 Compliance Center ausgeführt werden ([https://protection.office.com](https://protection.office.com)). In diesen Fällen werden Sie automatisch an den Standort geleitet, an dem Sie die Aufgabe ausführen können, beispielsweise das Erstellen oder Bearbeiten einer Aufsichtsrichtlinie.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Warum wird das neue Microsoft 365 Compliance Center noch nicht angezeigt?
 
@@ -91,9 +91,9 @@ Stellen Sie zunächst sicher, dass Sie über die entsprechenden [Lizenzen und Be
 
 ### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>Einige meiner Kompatibilitätsfunktionen stehen im Microsoft 365 Compliance Center nicht zur Verfügung. What do I do?
 
-Wir fügen dem Microsoft 365 Compliance Center weiterhin Funktionalität hinzu. Wenn Sie nicht fündig werden, wie beispielsweise die Überwachungsprotokoll Suche, verwenden Sie das Office 365 Security &[https://protection.office.com](https://protection.office.com)Compliance Center (). Ihre Konfigurationen werden im vorhandenen Office 365 Security & Compliance Center und im neuen Microsoft 365 Compliance Center automatisch gespeichert.
+Wir fügen dem Microsoft 365 Compliance Center weiterhin Funktionalität hinzu. Wenn Sie nicht fündig werden, wie beispielsweise die Überwachungsprotokoll Suche, verwenden Sie das Office 365 Security #a0[https://protection.office.com](https://protection.office.com)Compliance Center (). Ihre Konfigurationen werden im vorhandenen Office 365 Security #a0 Compliance Center und im neuen Microsoft 365 Compliance Center automatisch gespeichert.
 
-Um dorthin zu gelangen, wählen Sie im Microsoft 365 Compliance Center im Navigationsbereich auf der linken Seite des Bildschirms **Weitere Ressourcen**aus, und wählen Sie dann unter **Office 365 Security & Compliance Center**die Option **Öffnen**aus.
+Um dorthin zu gelangen, wählen Sie im Microsoft 365 Compliance Center im Navigationsbereich auf der linken Seite des Bildschirms **Weitere Ressourcen**aus, und wählen Sie dann unter **Office 365 Security #a0 Compliance Center**die Option **Öffnen**aus.
 
 ![Weitere Ressourcen](media/MoreResourcesShowAll.png)
 

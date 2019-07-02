@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Aufbewahrungs Bezeichnung erstellen, in der Inhalte in Microsoft 365 aufbewahrt werden, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen.
-ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b85d1ac4c8ed0527a8018129e146fee074d942
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153427"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199688"
 ---
 # <a name="overview-of-disposition-reviews"></a>Übersicht über Dispositions Überprüfungen
 
@@ -33,7 +33,7 @@ Wenn der Inhalt das Ende seines Aufbewahrungszeitraums erreicht, gibt es mehrere
     
 - Zurückgeben der Inhalte an Clients oder übertragen an eine andere Organisation.
     
-Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security & Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
+Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im Microsoft 365 Security Center oder im Office 365 Security #a0 Compliance Center erstellen, können Sie eine Dispositions Überprüfung am Ende des Aufbewahrungszeitraums auslösen. In einer Dispositions Überprüfung:
   
 - Die Personen, die Sie auswählen, erhalten eine e-Mail-Benachrichtigung, dass Sie Inhalte zur Überprüfung haben. Bei diesen Prüfern kann es sich um einzelne Benutzer, Verteilungs-oder Sicherheitsgruppen oder Office 365 Gruppen handeln. Beachten Sie, dass Benachrichtigungen auf wöchentlicher Basis gesendet werden.
     
@@ -54,7 +54,7 @@ Wenn Sie eine Aufbewahrungs Bezeichnung im Microsoft 365 Compliance Center, im M
   
 Eine Dispositions Überprüfung kann Inhalte in Exchange-Postfächern, SharePoint-Websites, OneDrive-Konten und Office 365 Gruppen enthalten. Inhalte, die auf eine Dispositions Überprüfung an diesen Speicherorten warten, werden erst gelöscht, nachdem ein Prüfer die Inhalte endgültig gelöscht hat.
   
-![Seite "Dispositions" im Security and Compliance Center](media/Retention_Dispositions_v2_page.png)
+![Seite "Dispositions" im Security and Compliance Center](media/Retention-Dispositions-v2-page.png)
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Einrichten der Dispositions Überprüfung durch Erstellen einer Aufbewahrungs Bezeichnung
 
@@ -74,7 +74,7 @@ Wenn ein Prüfer per e-Mail benachrichtigt wird, dass der Inhalt überprüft wer
 
 Nachdem Sie eine Aufbewahrungs Bezeichnung ausgewählt haben, werden auf der nächsten Seite alle ausstehenden Dispositionen für diese Bezeichnung angezeigt.
 
-![Dispositions Optionen](media/Retention_Disposition_options_v2.png)
+![Dispositions Optionen](media/Retention-Disposition-options-v2.png)
 
 Der Prüfer kann dann: 
   
@@ -118,13 +118,13 @@ Auf der Seite Ausstehende **Disposition** können Sie ausstehende und abgeschlos
     
 - Auf der Registerkarte " **verworfene Elemente** " werden Dispositionen angezeigt, die während einer Dispositions Überprüfung zum Löschen genehmigt wurden und jetzt endgültig gelöscht werden. Elemente, für die eine andere Aufbewahrungs Bezeichnung verwendet wurde oder deren Beibehaltungsdauer im Rahmen einer Überprüfung erweitert wurde, werden hier nicht angezeigt.
 
-![Dispositions Registerkarten](media/Retention_Disposition_tabs.png)
+![Dispositions Registerkarten](media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtern der Dispositions Ansichten
 
 Sie können diese Ansichten nach Aufbewahrungs Bezeichnung oder Zeitbereich filtern. Für ausstehende Dispositionen basiert der Zeitbereich auf dem Ablaufdatum. Bei freigestellten Elementen basiert der Zeitbereich auf dem Löschdatum.
   
-![Optionen für den Dispositions Filter](media/Retention_filter_options.png)
+![Optionen für den Dispositions Filter](media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Exportieren der Dispositionselemente
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9e8e85d92543c4d49ad7841f8b2592a539a13977
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154037"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703750"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Verwalten von Überprüfungs Sätzen in Advanced eDiscovery
 
@@ -41,7 +41,7 @@ ms.locfileid: "34154037"
 
 ![Hinzufügen eines Überprüfungs Satzes](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Geben Sie auf der Seite Flyout-Überprüfungs **Satz hinzufügen** einen Namen für den Überprüfungs Satz ein, und klicken Sie dann auf **Speichern**.  Der neue Überprüfungs Satz wird in der Liste auf der Registerkarte Überprüfungs **Sätze** angezeigt.
+Geben Sie auf der Seite Flyout-Überprüfungs **Satz hinzufügen** einen Namen für den Überprüfungs Satz ein, und klicken Sie dann auf **Speichern**. Der neue Überprüfungs Satz wird in der Liste auf der Registerkarte Überprüfungs **Sätze** angezeigt.
 
 ![Neuer Überprüfungs Sätze auf der Registerkarte "Überarbeitungs Gruppe" aufgeführt](../media/AeDnewreviewset.png)
 

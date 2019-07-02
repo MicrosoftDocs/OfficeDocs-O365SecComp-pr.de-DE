@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratoren können einen systemeigenen Connector zum Importieren und Archivieren von Twitter-Daten in Office 365 einrichten. Nachdem diese Daten in Office 365 importiert wurden, können Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden, um die Steuerung der Twitter-Daten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: c3c5af0fc42057d9fc2e8b8e67423398d6ed0ddf
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490545"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014774"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Bereitstellen eines Connectors zum Archivieren von Twitter-Daten in Office 365
 
@@ -24,7 +24,7 @@ Dieser Artikel enthält den schrittweisen Prozess zur Bereitstellungeines Connec
 
 ## <a name="step-1-download-the-package"></a>Schritt 1: Herunterladen des Pakets
 
-Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository unter [https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases)herunter. Laden Sie die ZIP-Datei mit dem Namen **SampleConnector. zip**unter der neuesten Version herunter. Sie werden diese ZIP-Datei in Schritt 4 in Azure hochladen.
+Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository unter [https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet/releases)herunter. Laden Sie die ZIP-Datei mit dem Namen **SampleConnector. zip**unter der neuesten Version herunter. Sie laden diese ZIP-Datei in Schritt 4 in Azure hoch.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Schritt 2: Erstellen einer APP in Azure Active Directory
 
@@ -48,7 +48,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
     ![](media/TCimage05.png)
 
-6. Wechseln Sie zu **Certificates & Secrets for the New App** und unter **Client Secrets** auf **New Client Secret**.
+6. Wechseln Sie zu **Zertifikaten #a0 Geheimnisse für die neue APP** und unter **Client Secrets** auf **neuen geheimen Client Schlüssel**.
 
    ![](media/TCimage06.png)
 
@@ -56,7 +56,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/TCimage08.png)
 
-8. Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn in einer Textdatei oder an einem anderen Speicherort. Dies ist der geheime Aad-Anwendungsschlüssel, den Sie in späteren Schritten verwenden werden.
+8. Kopieren Sie den Wert des geheimen Schlüssels, und speichern Sie ihn in einer Textdatei oder an einem anderen Speicherort. Dies ist der geheime Aad-Anwendungsschlüssel, den Sie in späteren Schritten verwenden.
 
    ![](media/TCimage09.png)
 
@@ -112,17 +112,17 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/TCimage21.png)
 
-2. Geben Sie die Details ein (wie unten dargestellt), und erstellen Sie dann die Webanwendung. Beachten Sie, dass der Name, den Sie in das Feld **App-Name** eingeben, zum Erstellen der Azure-App-Dienst-URL verwendet wird. Beispiel twitterconnector.azurewebsites.net.
+2. Geben Sie die Details ein (wie unten dargestellt), und erstellen Sie dann die Webanwendung. Der Name, den Sie im Feld **App-Name** eingeben, wird verwendet, um die Azure-App-Dienst-URL zu erstellen. Beispiel: twitterconnector.azurewebsites.net.
 
    ![](media/TCimage22.png)
 
-3. Wechseln Sie zur neu erstellten Webanwendungs-Ressource, und klicken Sie im linken Navigationsbereich auf **Anwendungseinstellungen** . Klicken Sie unter **Anwendungseinstellungen**auf **neue Einstellung hinzufügen** , und fügen Sie die folgenden drei Einstellungen hinzu. Verwenden Sie die Werte (die Sie in die Textdatei aus den vorherigen Schritten kopiert haben): 
+3. Wechseln Sie zur neu erstellten Ressource für Webanwendungen, und klicken Sie im linken Navigationsbereich auf **Anwendungseinstellungen** . Klicken Sie unter **Anwendungseinstellungen**auf **neue Einstellung hinzufügen** , und fügen Sie die folgenden drei Einstellungen hinzu. Verwenden Sie die Werte (die Sie in die Textdatei aus den vorherigen Schritten kopiert haben): 
 
-    - **APISecretKey** – Sie können einen beliebigen Wert als geheimen Schlüssel eingeben. Dieser wird für den Zugriff auf die Connector-Webanwendung in Schritt 7 verwendet.
+    – * * APISecretKey – Sie können einen beliebigen Wert als geheimen Schlüssel eingeben. Dieser wird für den Zugriff auf die Connector-Webanwendung in Schritt 7 verwendet.
 
-    - **StorageAccountConnectionString** – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
+    – **StorageAccountConnectionString** – der Verbindungszeichenfolgen-URI, den Sie nach dem Erstellen des Azure-speicherkontos in Schritt 3 kopiert haben.
 
-    - **Mandanten** Kennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Twitter Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
+    – **Mandanten** Kennung – die Mandanten-ID Ihrer Office 365 Organisation, die Sie nach dem Erstellen der Twitter Connector-app in Azure Active Directory in Schritt 2 kopiert haben.
 
     ![](media/TCimage23.png)
 
@@ -132,7 +132,7 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
 5. Der letzte Schritt besteht darin, den Quellcode der Connector-app in Azure hochzuladen, den Sie in Schritt 1 heruntergeladen haben. Wechseln Sie in einem Webbrowser zu https://<AzureAppResourceName>. SCM.azurewebsites.net/ZipDeployUi. Wenn beispielsweise der Name Ihrer Azure-App-Ressource (die Sie in Schritt 2 in diesem Abschnitt genannt haben) **twitterconnector**lautet, gehen Sie zu https://twitterconnector.scm.azurewebsites.net/ZipDeployUi.
 
-6. Ziehen Sie das SampleConnector. zip-Menü (das Sie in Schritt 1 heruntergeladen haben) auf diese Seite. Nachdem die Dateien hochgeladen wurden und die Bereitstellung erfolgreich war, sieht die Seite wie im folgenden Screenshot aus.
+6. Ziehen Sie das SampleConnector. zip-Menü (das Sie in Schritt 1 heruntergeladen haben) auf diese Seite. Nachdem die Dateien hochgeladen wurden und die Bereitstellung erfolgreich war, sieht die Seite wie im folgenden Screenshot aus:
 
    ![](media/TCimage25.png)
 
@@ -163,15 +163,15 @@ Laden Sie das vorgefertigte Paket aus dem Abschnitt Release im GitHub-Repository
 
    ![](media/TCimage30.png)
 
-7. Nachdem Sie die Berechtigungseinstellungen gespeichert haben, klicken Sie auf die Registerkarte **App-Details** , und klicken Sie dann auf **> Bearbeiten Details bearbeiten**.
+7. Nachdem Sie die Berechtigungseinstellungen gespeichert haben, klicken Sie auf die Registerkarte **App-Details** , und klicken Sie dann auf **Bearbeiten #a0 bearbeiten von Details**.
 
    ![](media/TCimage31.png)
 
 8. Führen Sie die folgenden Aufgaben aus:
 
-   - Aktivieren Sie das Kontrollkästchen, damit sich die Connector-App bei Twitter anmelden kann.
+   – Aktivieren Sie das Kontrollkästchen, damit sich die Connector-App bei Twitter anmelden kann.
    
-   - Fügen Sie den OAuth-Umleitungs-URI mit dem folgenden Format hinzu: ** \<connectorserviceuri>/views/TwitterOAuth**, wobei der Wert von *connectorserviceuri* die Azure-App-Dienst-URL für Ihre Organisation ist. zum Beispiel https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
+   – Fügen Sie den OAuth-Umleitungs-URI mit dem folgenden Format hinzu: ** \<connectorserviceuri>/views/twitteroauth**, wobei der Wert von *connectorserviceuri* die Azure-App-Dienst-URL für Ihre Organisation ist. Beispiel: https://twitterconnector.azurewebsites.net/Views/TwitterOAuth.
 
    ![](media/TCimage32.png)
 
@@ -179,7 +179,7 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 ## <a name="step-6-configure-the-connector-web-app"></a>Schritt 6: Konfigurieren der Connector-Webanwendung 
 
-1. Wechseln Sie zu\<https://AzureAppResourceName>. azurewebsites. net (wobei **AzureAppResourceName** der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben) Wenn beispielsweise der Name **twitterconnector**lautet https://twitterconnector.azurewebsites.net, wechseln Sie zu. Die Startseite der APP wird wie im folgenden Screenshot dargestellt.
+1. Wechseln Sie zu\<https://AzureAppResourceName>. azurewebsites.net (wobei **AzureAppResourceName** der Name Ihrer Azure-App-Ressource ist, die Sie in Schritt 4 benannt haben). Wenn der Name beispielsweise **twitterconnector**lautet, wechseln Sie zu https://twitterconnector.azurewebsites.net. Die Startseite der APP sieht wie im folgenden Screenshot aus:
 
    ![](media/FBCimage41.png)
 
@@ -193,14 +193,13 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 4. Geben Sie unter **Konfigurations Details**die folgenden Konfigurationseinstellungen ein: 
 
-   - **Twitter API Key** – die APP-ID für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
-   - **Twitter-API** -geheimer Schlüssel-der geheime API-Schlüssel für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
-   - **Twitter-Zugriffstoken** : das Zugriffstoken, das Sie in Schritt 5 erstellt haben.
-   - **Twitter-Zugriffstoken Secret** – der geheime Zugriffstoken-Schlüssel, den Sie in Schritt 5 erstellt haben.
-   - **Aad-Anwendungs-ID** – die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 2 erstellt haben
-   - **Aad-Anwendungs Geheimnis** – der Wert für den geheimen Schlüssel "APISecretKey", den Sie in Schritt 4 erstellt haben.
-   - **Aad-Anwendungs-URI** – der in Schritt 2 abgerufene Aad-Anwendungs-URI; Beispiel: https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   - **App Insights Instrumentation Key** – lassen Sie dieses Feld leer.
+   – **Twitter-API-Schlüssel** – die APP-ID für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
+   – **Twitter-API** -geheimer Schlüssel – der geheime API-Schlüssel für die Twitter-Anwendung, die Sie in Schritt 5 erstellt haben.
+   – **Twitter-Zugriffstoken** – das Zugriffstoken, das Sie in Schritt 5 erstellt haben.
+   – **Twitter-Zugriffstoken Secret** – der geheime Zugriffstoken-Schlüssel, den Sie in Schritt 5 erstellt haben.
+   – **Aad-Anwendungs-ID** – die Anwendungs-ID für die Azure Active Directory-APP, die Sie in Schritt 2 – **Aad-Anwendungs Geheimnis** erstellt haben – der Wert für den geheimen APISecretKey-Schlüssel, den Sie in Schritt 4 erstellt haben.
+   – **Aad Application URI** – der in Schritt 2 abgerufene Aad-Anwendungs-URI; Beispiel: https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
+   – **App Insights Instrumentation Key** – lassen Sie dieses Feld leer.
 
 5. Klicken Sie auf **Speichern** , um die Verbindungseinstellungen zu speichern.
 
@@ -216,9 +215,9 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
 3. Geben Sie auf der Seite " **Connector-app hinzufügen** " die folgenden Informationen ein, und klicken Sie dann auf **Connector überprüfen**.
 
-    - Geben Sie im ersten Feld einen Namen für den Connector ein, beispielsweise **Twitter**.
-    - Geben Sie im zweiten Feld den Wert des APISecretKey ein, den Sie in Schritt 4 hinzugefügt haben, oder fügen Sie ihn ein.
-    - Geben Sie im dritten Feld die Azure-App-Dienst-URL ein, oder fügen Sie Sie ein. zum Beispiel **https://twitterconnector.azurewebsites.net**.
+    – Geben Sie im ersten Feld einen Namen für den Connector ein, beispielsweise **Twitter**.
+    – Geben Sie im zweiten Feld den Wert des APISecretKey ein, den Sie in Schritt 4 hinzugefügt haben, oder fügen Sie ihn ein.
+    – Geben Sie im dritten Feld die Azure-App-Dienst-URL ein, oder fügen Sie Sie ein. Beispiel: **https://twitterconnector.azurewebsites.net**.
 
    Nachdem der Connector erfolgreich überprüft wurde, klicken Sie auf **weiter**.
 
@@ -247,11 +246,11 @@ Die Twitter-Entwickler-App ist jetzt einsatzfähig.
 
    ![](media/TCimage44.png)
 
-10. Wählen Sie auf der Seite **Speicherkonto festlegen** das Office 365 Postfach aus, in das die Twitter-Elemente importiert werden sollen.
+10. Geben Sie auf der Seite **Speicherkonto festlegen** die e-Mail-Adresse eines Office 365 Postfachs ein, in das die Twitter-Elemente importiert werden.
 
     ![](media/TCimage45.png)
 
-11. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup im Security & Compliance Center abzuschließen.
+11. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **Fertig stellen** , um das Connector-Setup im Security #a0 Compliance Center abzuschließen.
 
     ![](media/TCimage46.png)
 

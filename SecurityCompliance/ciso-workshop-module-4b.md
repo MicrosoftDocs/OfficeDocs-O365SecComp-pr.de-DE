@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152137"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767296"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop-Modul 4B: Bedrohungsschutz Strategie 
 
@@ -36,9 +36,9 @@ In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security O
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-806"></a>Teil 3: Erkenntnisse aus Microsofts Corporate IT SoC (8:06)
+## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>Teil 3: Erkenntnisse aus Microsofts Corporate IT SoC (22:07)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtNO5]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 
 ## <a name="part-4-intelligence-604"></a>Abschnitt 4: Intelligence (6:04)
 
@@ -56,14 +56,18 @@ In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security O
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMz]
 
-## <a name="part-8-dark-markets-and-criminal-forums-919"></a>Abschnitt 8: dunkle Märkte und kriminelle Foren (9:19)
+## <a name="part-8-behavior-analytics"></a>Abschnitt 8: Verhaltensanalysen
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36iuc]
+
+## <a name="part-9-dark-markets-and-criminal-forums-919"></a>Abschnitt 9: dunkle Märkte und kriminelle Foren (9:19)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMn]
 
-## <a name="part-9-graph-security-api-350"></a>Abschnitt 9: Graph Security API (3:50)
+## <a name="part-10-siem-integration-1422"></a>Part 10: Siem Integration (14:22)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMj]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3685k]
 
-## <a name="part-10-summary-of-integrated-technology-and-automation-933"></a>Teil 10: Zusammenfassung der integrierten Technologie und Automatisierung (9:33)
+## <a name="part-11-summary-of-integrated-technology-and-automation-933"></a>Teil 11: Zusammenfassung der integrierten Technologie und Automatisierung (9:33)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoU]

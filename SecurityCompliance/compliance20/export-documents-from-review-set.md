@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7c1daccab799b3967c6b8c1d577060d062c05a70
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155067"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703788"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Prüfdateisatz
 
-Das Exportieren von Inhalten aus einem Überprüfungs Satzes kann über drei verschiedene Methoden erfolgen:
+Sie können Inhalte für die Präsentation oder externe Überprüfung aus einem Überprüfungs Sätze mit einer der folgenden Methoden exportieren:
 
-## <a name="download"></a>Download
+- [Dokumente herunterladen](#download-documents-from-a-review-set)
+ 
+- [Exportieren von Dokumenten](#export-documents-from-a-review-set)
+
+## <a name="download-documents-from-a-review-set"></a>Herunterladen von Dokumenten aus einem Überprüfungspaket
 
 Download bietet eine einfache Möglichkeit zum Herunterladen von Inhalten aus einer Überprüfungsgruppe im systemeigenen Format. Es nutzt die Datentransfer Funktionen des Browsers, sodass nach dem Download eine Browser Ansage angezeigt wird. Mit dieser Methode heruntergeladene Dateien werden in eine Containerdatei gezippt und werden Dateien auf Elementebene sein. Wenn Sie also eine Anlage auswählen, erhalten Sie automatisch die e-Mail-Adresse, die mit der Anlage eingeschlossen ist. Wenn Sie eine Excel-Kalkulationstabelle auswählen, die in ein Word-Dokument eingebettet wurde, erhalten Sie das Word-Dokument mit eingebettetem Excel-Arbeitsblatt. Durch heruntergeladene Elemente wird das Datum der letzten Änderung beibehalten, das als Dateieigenschaft angezeigt werden kann.
 
@@ -33,31 +37,31 @@ Um Inhalte aus einem Überprüfungs herunterzuladen, wählen Sie zunächst die D
 
 ![Screenshot einer automatisch generierten Computerbeschreibung](../media/eDiscoDownload.png)
 
-## <a name="export"></a>Exportieren
+## <a name="export-documents-from-a-review-set"></a>Exportieren von Dokumenten aus einem Prüfdateisatz
 
 Mit dem Export können Benutzer die Inhalte anpassen, die im Downloadpaket enthalten sind. Es stellt eine Konfigurationsseite mit den folgenden Einstellungen bereit:
 
 ### <a name="metadata-file"></a>Metadaten-Datei
 
-> Dies kann als ihre "Laden Datei" betrachtet werden, die Metadaten enthält, die den exportierten Dateien zugeordnet sind. Eine Liste der in der Metadatendatei verfügbaren Felder \[finden\]Sie unter Link. Diese Datei kann normalerweise von drei<sup>Remote</sup> Tools von Drittanbietern aufgenommen werden.
+Dies kann als ihre "Laden Datei" betrachtet werden, die Metadaten enthält, die den exportierten Dateien zugeordnet sind. Eine Liste der in der Metadatendatei verfügbaren Felder \[finden\]Sie unter Link. Diese Datei kann normalerweise von drei<sup>Remote</sup> Tools von Drittanbietern aufgenommen werden.
 
 ### <a name="tag-data"></a>Tag-Daten
 
-> Dieser Inhalt würde als Felder in der Metadatendatei hinzugefügt werden. Sie enthält alle in Überprüfungs Sätzen angewendeten Tag-Informationen.
+Dieser Inhalt würde als Felder in der Metadatendatei hinzugefügt werden. Sie enthält alle in Überprüfungs Sätzen angewendeten Tag-Informationen.
 
 ### <a name="text-files"></a>Textdateien
 
-> Text Dateien können für jede Datei generiert werden, die aus einem Überprüfungs Satz exportiert wurde. Häufig sind diese Dateien für Service Partner erforderlich, wenn Sie Daten in Drittanbieter-Tools<sup></sup> nach Downstream aufnehmen.
+Text Dateien können für jede Datei generiert werden, die aus einem Überprüfungs Satz exportiert wurde. Häufig sind diese Dateien für Service Partner erforderlich, wenn Sie Daten in Drittanbieter-Tools<sup></sup> nach Downstream aufnehmen.
 
 ### <a name="redacted-files"></a>Behandelte Dateien
 
-> Wenn während der Überprüfung redigierte PDFs generiert werden, stehen diese Dateien während des Exports zur Verfügung. Benutzer können entscheiden, ob Sie systemeigene Dateien exportieren oder natives ersetzen möchten, bei denen die in PDFs gebrannt wurden.
+Wenn während der Überprüfung redigierte PDFs generiert werden, stehen diese Dateien während des Exports zur Verfügung. Benutzer können entscheiden, ob Sie systemeigene Dateien exportieren oder natives ersetzen möchten, bei denen die in PDFs gebrannt wurden.
 
 ### <a name="export-location"></a>Exportspeicherort
 
-> Exportierte Inhalte werden entweder an ein von Microsoft bereitgestelltes Azure-BLOB zugestellt, oder das BLOB eines Kunden kann verwendet werden, wenn die Details beim Export angegeben werden.
+Exportierte Inhalte werden entweder an ein von Microsoft bereitgestelltes Azure-BLOB zugestellt, oder das BLOB eines Kunden kann verwendet werden, wenn die Details beim Export angegeben werden.
 
-## <a name="export-structure"></a>Export Struktur
+### <a name="export-structure"></a>Export Struktur
 
 Wenn Inhalte aus einem Überprüfungs Satzes exportiert werden, ist der Inhalt in der folgenden Struktur organisiert.
 
@@ -76,7 +80,3 @@ Wenn Inhalte aus einem Überprüfungs Satzes exportiert werden, ist der Inhalt i
           - ProcessingError – Inhalte mit Verarbeitungsfehlern. Dieser Inhalt ist eine Elementebene, was bedeutet, dass bei einer Anlage ein Verarbeitungsfehler auftritt, wird die e-Mail-Nachricht, die die Anlage enthält, in diesen Ordner aufgenommen.
     
       - Extrahierte\_Text\_Dateien = enthält alle extrahierten Textdateien, die bei der Verarbeitung generiert wurden.
-
-## <a name="review-set"></a>Überprüfungsgruppe
-
-Inhalte können zu anderen Überprüfungs Sätzen hinzugefügt werden.

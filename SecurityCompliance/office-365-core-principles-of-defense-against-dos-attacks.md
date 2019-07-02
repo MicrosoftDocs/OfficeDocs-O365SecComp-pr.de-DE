@@ -1,5 +1,5 @@
 ---
-title: Office 365-Grundprinzipien der Verteidigung gegen Denial-of-Service-Angriffe
+title: Office 365 Kernprinzipien der Abwehr von Denial-of-Service-Angriffen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,33 +12,33 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Wie Microsoft die Kernprinzipien der Absorption, der Erkennung und der Schadensminimierung bei der Abwehr von DoS-Angriffen (Denial-of-Service) nutzt.
-ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Wie Microsoft die Kernprinzipien der Absorption, Erkennung und Minderung bei der Abwehr von DOS-Angriffen (Denial of Service) verwendet.
+ms.openlocfilehash: 48ed52b496a3288d62b0f0c434fe18df8e1ff44b
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262927"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622295"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Wichtige Grundsätze zum Schutz vor Denial-of-Service-Angriffen
 
-Die drei Hauptprinzipien bei der Verteidigung gegen netzwerkbasierte DoS-Angriffe sind Absorption, Erkennung und Minderung.
-Die Absorption geschieht vor der Erkennung, und die Erkennung geschieht vor der Minderung. Absorption ist die beste Verteidigung gegen DoS-Angriffe. Wenn der Angriff nicht erkannt werden kann, kann er nicht abgemildert werden. Aber wenn auch der kleinste DoS-Angriff nicht absorbiert werden kann, werden die Dienste nicht lange genug überleben, damit der Angriff erkannt wird.
+Die drei Hauptprinzipien bei der Verteidigung gegen netzwerkbasierte DOS-Angriffe sind Absorption, Erkennung und Minderung. Die Absorption erfolgt vor der Erkennung, und die Erkennung erfolgt vor der Minderung. Absorption ist die beste Verteidigung gegen einen DOS-Angriff. Wenn der Angriff nicht erkannt werden kann, kann er nicht gemindert werden. Wenn aber selbst der kleinste DOS-Angriff nicht absorbiert werden kann, werden Dienste nicht lange genug überleben, damit der Angriff erkannt wird.
 
-Natürlich ist es für die meisten Organisationen in der Regel nicht praktikabel, die Überkapazitäten zu erwerben, die zur Aufnahme von DoS-Angriffen erforderlich sind, da dies beträchtliche Investitionen in Technologie und technische Fähigkeiten erfordert. Dies weist auf einen der Sicherheitsvorteile der Verwendung von Microsoft Cloud Services hin. die schiere Skala unserer Dienste ermöglicht es uns, unseren Cloud-Kunden einen hohen Netzwerkschutz auf kosteneffektive Weise zu bieten. Doch selbst in unserem Umfang muss es dennoch ein Gleichgewichtzwischen Absorption, Erkennung und Minderung geben. Um diese Balance zu finden, untersuchen wir die Wachstumsrate eines Angriffs, um zu ermitteln, wie viel wir absorbieren müssen.
+Für die meisten Organisationen ist es nicht wirtschaftlich möglich, überschüssige Kapazitäten für die Aufnahme von DOS-Angriffen zu erwerben, da dies erhebliche Investitionen in Technologie und technische Fertigkeiten erfordert. Dies zeigt einen der Sicherheitsvorteile der Verwendung von Microsoft Cloud Services. Die schiere Skalierung von Microsoft-Diensten bietet Cloud-Kunden einen starken Netzwerkschutz auf kosteneffektive Weise. Aber selbst im großen Maßstab muss es ein Gleichgewichtzwischen Absorption, Erkennung und Minderung geben. Um dieses Gleichgewicht zu finden, untersucht Microsoft die Angriffs Raten, um abzuschätzen, wie viel Microsoft absorbieren muss.
 
-Erkennung ist ein Katz-und-Maus-Spiel. Sie müssen ständig nach den neuen Methoden suchen, über die Benutzer sie angreifen, oder um Ihre Systeme zu besiegen. Die >-abSchwächung – >->-Minderung usw. ist ein dauerhafter, beständiger Zustand, der unbegrenzt fortgesetzt wird.
+Die Erkennung ist ein Katz-und-Maus-Spiel. Sie müssen ständig nach neuen Wegen suchen, die Menschen angreifen und versuchen, ihre Systeme zu besiegen. "Detect-#a0 mindern-#a1 Detect-#a2 mindern usw. ist ein dauerhafter, persistenter Status, der unbegrenzt fortgesetzt wird.
 
-## <a name="defending-against-dos-attacks"></a>Abwehr von DoS-anGriffen
+## <a name="defending-against-dos-attacks"></a>Abwehr von DOS-Angriffen
 
-Um einen DoS-Angriff erfolgreich zu verteidigen, ist eine frühzeitige Erkennung unerlässlich. Durch das Aufspüren eines Angriffs, bevor das System überlastet ist, können Defenders einen Reaktionsplan ausführen.
+Um eine erfolgreiche Abwehr von DOS-Angriffen zu erhalten, ist eine frühzeitige Erkennung unerlässlich. Wenn ein Angriff erkannt wird, bevor das System überlastet ist, können Verteidiger einen Antwort Plan ausführen.
 
-Die folgende Formel hilft bei der Annäherung der Zeit bis zur Auswirkung eines DoS-Angriffs:
+Die folgende Formel hilft, die Zeit bis zur Auswirkung eines DoS-Angriffs näher zu befolgen:
 
-   **Maximale Kapazität (in Bytes/Sek.)/Wachstums Rate (in Byte/Sek.) = Zeit bis zum Aufprall (in Byte/Sek.)**
+   **Maximale Kapazität (in Bytes/Sek.)/Zuwachs Rate (in Bytes/s) = Zeit bis zur Auswirkung (in Bytes/s)**
 
-Wenn die Zeit-bis-Erkennung nach der Zeit-zu-Auswirkung auftritt, ist es wahrscheinlich, dass der DoS-Angriff erfolgreich ist. Wenn die Zeit-bis-Erkennung vor der Zeit-zu-Auswirkung auftritt, sollten die angegriffenen Dienste online bleiben und zugänglich sein, wenn Minderungsstrategien verwendet werden. Daher gibt es nur zwei Dinge, die zur Abwehr von DoS-Angriffen ausgeführt werden können:
-- Erhöhen Sie die Kapazität, um die Obergrenze für die maximale Kapazität zu erhöhen (was wiederum mehr Zeit für die Ermittlung eines Angriffs bietet). oder
-- Verringern Sie die Erkennungszeit.
+Wenn die Zeit-zu-Erkennung nach einer Zeit-zu-Wirkung auftritt, ist es wahrscheinlich, dass der DOS-Angriff erfolgreich sein wird. Wenn die Zeit-zu-Erkennung vor Zeit-zu-Wirkung auftritt, sollten die angegriffenen Dienste Online und zugänglich bleiben, wenn Minderungsstrategien verwendet werden. Daher gibt es nur zwei Dinge, die zur Abwehr von DOS-Angriffen ausgeführt werden können:
 
-Die Erhöhung der Kapazität hat direkte fiskalische Auswirkungen. Microsoft empfiehlt, dass Kunden mindestens eine grundlegende Absorptionskapazität entwickeln, um sicherzustellen, dass Sie ein gewisses Maß an DoS-Angriffen überstehen können. Die tatsächliche Absorptionskapazität ist von Kunden zu Kunden unterschiedlich, da jeder Kunde eigene Schwellenwerte für Exposition, Risiko und finanziellen Aufwand hat. Aus wirtschaftlichen Gründen sind Investitionen in Forschung und Zeit in der Regel die kostengünstigste Verteidigungsmethode.
+- Erhöhen der Kapazität zur Anhebung der Obergrenze der maximalen Kapazität (was wiederum mehr Zeit zum Erkennen eines Angriffs bietet); oder
+- Verringern Sie die zu erkennende Zeit.
+
+Die zunehmende Kapazität hat eine direkte steuerliche Auswirkung. Microsoft empfiehlt, dass Kunden mindestens die grundlegende Absorptionskapazität entwickeln, um sicherzustellen, dass Sie einen gewissen Grad an DOS-Angriffen überleben können. Die tatsächliche Absorptionskapazität variiert von Kunde zu Kunde, da jeder Kunde über eigene Schwellenwerte für Belichtung, Risiko und finanziellen Aufwand verfügt. Aus wirtschaftlichen Gründen sind Investitionen in Forschung und Zeit für Methoden zur Verringerung der Zeit-zu-Erkennung in der Regel die kostengünstigste Verteidigung.

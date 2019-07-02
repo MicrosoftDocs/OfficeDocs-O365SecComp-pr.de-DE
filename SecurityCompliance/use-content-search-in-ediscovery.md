@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: 'Verwenden Sie ein PowerShell-Skript, um eine Compliance-eDiscovery-Suche in Exchange Online basierend auf einer im Security & Compliance Center erstellten Suche zu erstellen. '
-ms.openlocfilehash: d021836a735d5c5dd12124e16e348729d88e6022
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Verwenden Sie ein PowerShell-Skript, um eine Compliance-eDiscovery-Suche in Exchange Online basierend auf einer im Security #a0 Compliance Center erstellten Suche zu erstellen. '
+ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157977"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199822"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Verwenden der Inhaltssuche im eDiscovery-Workflow
 
-Mit der Funktion für die Inhaltssuche im Security & Compliance Center können Sie alle Postfächer in Ihrer Organisation durchsuchen. Im Gegensatz zur Compliance-eDiscovery in Exchange Online (in der Sie bis zu 10.000 Postfächer durchsuchen können) gibt es keine Beschränkungen für die Anzahl der Zielpostfächer in einer einzigen Suche. Für Szenarien, in denen organisationsweite Suchen erforderlich sind, können Sie die Inhaltssuche zum Durchsuchen aller Postfächer verwenden. Anschließend können Sie die Workflowfunktionen von in-situ-eDiscovery verwenden, um andere eDiscovery-bezogene Aufgaben auszuführen, beispielsweise das Platzieren von Postfächern in der Warteschleife und das Exportieren von Suchergebnissen. Angenommen, Sie müssen alle Postfächer durchsuchen, um bestimmte Verwalter zu identifizieren, die auf einen Rechtsfall reagieren. Sie können die Inhaltssuche im Security & Compliance Center verwenden, um alle Postfächer in Ihrer Organisation zu durchsuchen, um diejenigen zu identifizieren, die auf den Fall reagieren. Anschließend können Sie diese Liste von Depot Postfächern als Quellpostfächer für eine in-Place-eDiscovery-Suche in Exchange Online verwenden. Mithilfe von in-situ-eDiscovery können Sie auch diese Quellpostfächer speichern, Suchergebnisse in ein Discovery-Postfach kopieren und die Suchergebnisse exportieren.
+Mit der Funktion für die Inhaltssuche im Security #a0 Compliance Center können Sie alle Postfächer in Ihrer Organisation durchsuchen. Im Gegensatz zur Compliance-eDiscovery in Exchange Online (in der Sie bis zu 10.000 Postfächer durchsuchen können) gibt es keine Beschränkungen für die Anzahl der Zielpostfächer in einer einzigen Suche. Für Szenarien, in denen organisationsweite Suchen erforderlich sind, können Sie die Inhaltssuche zum Durchsuchen aller Postfächer verwenden. Anschließend können Sie die Workflowfunktionen von in-situ-eDiscovery verwenden, um andere eDiscovery-bezogene Aufgaben auszuführen, beispielsweise das Platzieren von Postfächern in der Warteschleife und das Exportieren von Suchergebnissen. Angenommen, Sie müssen alle Postfächer durchsuchen, um bestimmte Verwalter zu identifizieren, die auf einen Rechtsfall reagieren. Sie können die Inhaltssuche im Security #a0 Compliance Center verwenden, um alle Postfächer in Ihrer Organisation zu durchsuchen, um diejenigen zu identifizieren, die auf den Fall reagieren. Anschließend können Sie diese Liste von Depot Postfächern als Quellpostfächer für eine in-Place-eDiscovery-Suche in Exchange Online verwenden. Mithilfe von in-situ-eDiscovery können Sie auch diese Quellpostfächer speichern, Suchergebnisse in ein Discovery-Postfach kopieren und die Suchergebnisse exportieren.
   
-Dieses Thema enthält ein Skript, das Sie ausführen können, um eine Compliance-eDiscovery-Suche in Exchange Online zu erstellen, indem Sie die Liste der Quellpostfächer und die Suchabfrage aus einer im Security & Compliance Center erstellten Suche verwenden. Im Folgenden finden Sie eine Übersicht über den Vorgang:
+Dieses Thema enthält ein Skript, das Sie ausführen können, um eine Compliance-eDiscovery-Suche in Exchange Online zu erstellen, indem Sie die Liste der Quellpostfächer und die Suchabfrage aus einer im Security #a0 Compliance Center erstellten Suche verwenden. Im Folgenden finden Sie eine Übersicht über den Vorgang:
   
 [Schritt 1: Erstellen einer Inhaltssuche zum Durchsuchen aller Postfach in Ihrer Organisation](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,14 +33,14 @@ Dieses Thema enthält ein Skript, das Sie ausführen können, um eine Compliance
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Schritt 1: Erstellen einer Inhaltssuche zum Durchsuchen aller Postfächer in Ihrer Organisation
 
-Der erste Schritt besteht in der Verwendung des Security & Compliance Center (oder der Security & Compliance Center PowerShell), um eine Inhaltssuche zu erstellen, die alle Postfächer in Ihrer Organisation durchsucht. Es gibt keine Begrenzung für die Anzahl der Postfächer für eine einzelne Inhaltssuche. Geben Sie eine geeignete Stichwortabfrage (oder eine Abfrage für vertrauliche Informationstypen) an, damit die Suche nur die Quellpostfächer zurückgibt, die für Ihre Untersuchung relevant sind. Verfeinern Sie bei Bedarf die Suchabfrage, um den Umfang der zurückgegebenen Suchergebnisse und Quellpostfächer einzuschränken.
+Der erste Schritt besteht in der Verwendung des Security #a0 Compliance Center (oder der Security #a1 Compliance Center PowerShell), um eine Inhaltssuche zu erstellen, die alle Postfächer in Ihrer Organisation durchsucht. Es gibt keine Begrenzung für die Anzahl der Postfächer für eine einzelne Inhaltssuche. Geben Sie eine geeignete Stichwortabfrage (oder eine Abfrage für vertrauliche Informationstypen) an, damit die Suche nur die Quellpostfächer zurückgibt, die für Ihre Untersuchung relevant sind. Verfeinern Sie bei Bedarf die Suchabfrage, um den Umfang der zurückgegebenen Suchergebnisse und Quellpostfächer einzuschränken.
   
 > [!NOTE]
 > Wenn die Quellinhaltssuche keine Ergebnisse liefert, wird In-Situ-eDiscovery nicht erstellt, wenn Sie das Skript in Schritt 3 ausführen. Sie müssen die Suchabfrage möglicherweise überarbeiten und die Inhaltssuche erneut ausführen, damit Suchergebnisse zurückgegeben werden. 
   
 ### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>Verwenden des Security & Compliance Center zum Durchsuchen aller Postfächer
 
-1. [Wechseln Sie zum Compliance Center Security &](go-to-the-securitycompliance-center.md). 
+1. [Wechseln Sie zum Security #a0 Compliance Center](go-to-the-securitycompliance-center.md). 
     
 2. Klicken Sie auf **Such** > **Inhaltssuche**, und klicken Sie dann auf](media/O365-MDM-CreatePolicy-AddIcon.gif)neues Symbol für die **Suche** ![hinzufügen.
     
@@ -56,9 +56,9 @@ Der erste Schritt besteht in der Verwendung des Security & Compliance Center (od
     
 7.  Verfeinern Sie ggf. die Suchabfrage, um die Suchergebnisse einzugrenzen, und starten Sie die Suche neu. 
     
-### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Verwenden von Security & Compliance Center PowerShell zum Durchsuchen aller Postfächer
+### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Verwenden von Security #a0 Compliance Center PowerShell zum Durchsuchen aller Postfächer
 
-Sie können auch das **New-ComplianceSearch**-Cmdlet zum Durchsuchen aller Postfächer in Ihrer Organisation verwenden. Der erste Schritt besteht darin, [eine Verbindung mit dem Security & Compliance Center PowerShell herzustellen](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+Sie können auch das **New-ComplianceSearch**-Cmdlet zum Durchsuchen aller Postfächer in Ihrer Organisation verwenden. Der erste Schritt besteht darin, [eine Verbindung mit Security #a0 Compliance Center PowerShell herzustellen](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
 Im folgenden finden Sie ein Beispiel für die Verwendung von PowerShell zum Durchsuchen aller Postfächer in Ihrer Organisation. Die Suchabfrage gibt alle zwischen dem 1. Januar 2015 und dem 30. Juni 2015 gesendeten Nachrichten zurück, die den Ausdruck "Finanzbericht" in der Betreffzeile enthalten. Der erste Befehl erstellt die Suche, und der zweite Befehl führt die Suche aus. 
   
@@ -110,7 +110,7 @@ Wenn Sie eine Inhaltssuche mit nicht mehr als 1.000 Quellpostfächern unterstüt
   "Number of mailboxes that have search hits: " + $mailboxes.Count
   ```
 
-2. Wechseln Sie in Security & Compliance Center PowerShell zu dem Ordner, in dem sich das im vorherigen Schritt erstellte Skript befindet, und führen Sie dann das Skript aus. Zum Beispiel:
+2. Wechseln Sie in Security #a0 Compliance Center PowerShell zu dem Ordner, in dem sich das im vorherigen Schritt erstellte Skript befindet, und führen Sie dann das Skript aus. Zum Beispiel:
     
     ```
     .\SourceMailboxes.ps1
@@ -124,7 +124,7 @@ Wenn mehr als 1.000 Quellpostfächer vorhanden sind, versuchen Sie, zwei (oder m
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Schritt 2: Herstellen einer Verbindung mit \& dem Security Compliance Center und Exchange Online in einer einzelnen Remote-PowerShell-Sitzung
 
-Der nächste Schritt besteht darin, eine Verbindung zwischen Windows PowerShell sowohl mit dem Security & Compliance Center als auch mit Ihrer Exchange Online Organisation herzustellen. Dies ist erforderlich, da das in Schritt 3 ausgeführte Skript Zugriff auf die Cmdlets für die Inhaltssuche im Security & Compliance Center und in den in-Place-eDiscovery-Cmdlets in Exchange Online benötigt.
+Der nächste Schritt besteht darin, eine Verbindung zwischen Windows PowerShell sowohl mit dem Security #a0 Compliance Center als auch mit Ihrer Exchange Online Organisation herzustellen. Dies ist erforderlich, da das in Schritt 3 ausgeführte Skript Zugriff auf die Cmdlets für die Inhaltssuche im Security #a0 Compliance Center und in den in-Place-eDiscovery-Cmdlets in Exchange Online erfordert.
   
 1. Speichern Sie den folgenden Text in einer Windows PowerShell-Skriptdatei mithilfe des Dateinamensuffixes „.ps1". Sie können es beispielsweise in einer Datei mit dem Namen `ConnectEXO-CC.ps1`speichern.
     
@@ -143,7 +143,7 @@ Der nächste Schritt besteht darin, eine Verbindung zwischen Windows PowerShell 
     .\ConnectEXO-CC.ps1
     ```
 
-Woher wissen Sie, dass dieses Verfahren erfolgreich war? Nachdem Sie das Skript ausgeführt haben, werden Cmdlets aus dem Security & Compliance Center und Exchange Online in Ihre lokale PowerShell-Sitzung importiert. Wenn Sie keine Fehlermeldungen erhalten, wurde die Verbindung erfolgreich hergestellt. Ein Schnelltest besteht darin, ein Security &-Compliance Center-Cmdlet (beispielsweise **install-UnifiedCompliancePrerequisite** ) und ein Exchange Online-Cmdlet wie **Get-Mailbox**auszuführen. 
+Woher wissen Sie, dass dieses Verfahren erfolgreich war? Nachdem Sie das Skript ausgeführt haben, werden Cmdlets aus dem Security #a0 Compliance Center und Exchange Online in Ihre lokale PowerShell-Sitzung importiert. Wenn Sie keine Fehlermeldungen erhalten, wurde die Verbindung erfolgreich hergestellt. Ein Schnelltest besteht darin, ein Security #a0 Compliance Center-Cmdlet (beispielsweise **install-UnifiedCompliancePrerequisite** ) und ein Exchange Online-Cmdlet wie **Get-Mailbox**auszuführen. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Schritt 3: Ausführen des Skripts zum Erstellen einer In-Situ-eDiscovery-Suche aus der Inhaltssuche
 
@@ -266,7 +266,7 @@ Nach dem Erstellen und Starten der In-Situ-eDiscovery-Suche, die mit dem Skript 
 
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-2. Wählen Sie in der Listenansicht die in-Place-eDiscovery-Suche aus, die Sie in Schritt 3 erstellt **** ![haben, und](media/O365_MDM_CreatePolicy_EditIcon.gif)klicken Sie dann auf Bearbeitungssymbol bearbeiten.
+2. Wählen Sie in der Listenansicht die in-Place-eDiscovery-Suche aus, die Sie in Schritt 3 erstellt **** ![haben, und](media/O365-MDM-CreatePolicy-EditIcon.gif)klicken Sie dann auf Bearbeitungssymbol bearbeiten.
     
 3. Aktivieren Sie auf der Seite **Compliance-Archive** das Kontrollkästchen **Inhalt, der in ausgewählten Postfächern mit der Suchabfrage übereinstimmt, aufbewahren**, und wählen Sie eine der folgenden Optionen: 
     

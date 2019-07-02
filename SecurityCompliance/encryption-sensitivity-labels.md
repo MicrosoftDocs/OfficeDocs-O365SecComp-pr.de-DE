@@ -3,7 +3,6 @@ title: Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in V
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie den Zugriff auf Inhalte beschränken, auf die die Bezeichnung angewendet wird. Vertraulichkeitsbezeichnungen können Verschlüsselung zum Schutz von Inhalten verwenden.
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153267"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199772"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen
 
@@ -50,7 +49,7 @@ Um zu beginnen, schalten Sie einfach die Option **Verschlüsselung** auf **Ein**
 2. **Zulassen, dass Zugriff auf gekennzeichnete Inhalte abläuft**, entweder an einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Nach dieser Zeit können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt dieses ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Cachingmechanismen den Ablauf nicht durchsetzen können und E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
 3. **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
 
-![Verschlüsselungseinstellungen für Vertraulichkeitsbezeichnungen](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![Verschlüsselungseinstellungen für Vertraulichkeitsbezeichnungen](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Rights Management-Verwendungslizenz für den Offlinezugriff
 
@@ -71,7 +70,7 @@ Dies ist ein schneller und einfacher Prozess in zwei Schritten:
 1. Zuerst fügen Sie Benutzer oder Gruppen hinzu, denen Berechtigungen für gekennzeichnete Inhalte erteilt werden.
 2. Dann wählen Sie die Berechtigungen aus, die diese Benutzer für die gekennzeichneten Inhalte haben.
 
-![Optionen zum Zuweisen von Berechtigungen zu Benutzern](media/Sensitivity_Assign_permissions_settings.png)
+![Optionen zum Zuweisen von Berechtigungen zu Benutzern](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>Hinzufügen von Benutzern und Gruppen
 
@@ -94,13 +93,13 @@ Wenn Sie die Berechtigungen für diese Benutzer oder Gruppen auswählen, können
 
 Weitere Informationen zu den einzelnen Berechtigungen finden Sie unter [Nutzungsrechte und Beschreibungen](https://docs.microsoft.com/de-DE/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](media/Sensitivity_Choose_permissions_settings.png)
+![Optionen zum Auswählen bereits festgelegter oder benutzerdefinierter Berechtigungen](media/Sensitivity-Choose-permissions-settings.png)
 
 Beachten Sie, dass dieselbe Bezeichnung unterschiedlichen Benutzern unterschiedliche Berechtigungen erteilen kann. Eine einzelne Bezeichnung kann beispielsweise einige Benutzer als „Überprüfer“ und einen anderen Benutzer als „Mitverfasser“ zuweisen, wie nachfolgend dargestellt.
 
 Weisen Sie hierfür Benutzern und Gruppen Berechtigungen zu, und speichern Sie die Einstellungen. Wiederholen Sie dann diese Schritte, und fügen Sie jedes Mal Benutzer hinzu, weisen diesen Berechtigungen zu, und speichern die Einstellungen. Sie können dies so oft wie erforderlich wiederholen, um unterschiedliche Berechtigungen für unterschiedliche Benutzer zu definieren.
 
-![Unterschiedliche Benutzer mit unterschiedlichen Berechtigungen](media/Sensitivity_Multiple_users_permissions.png)
+![Unterschiedliche Benutzer mit unterschiedlichen Berechtigungen](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management-Aussteller (Benutzer, der die Vertraulichkeitsbezeichnung anwendet) hat immer Vollzugriff
 

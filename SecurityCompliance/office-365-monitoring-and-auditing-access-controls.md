@@ -1,5 +1,5 @@
 ---
-title: Office 365-Überwachungs-und-Überwachungs Zugriffssteuerungen
+title: Office 365 Überwachung und Überwachung von Zugriffssteuerungen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,23 +12,24 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Zusammenfassung: eine Zusammenfassung der verschiedenen Überwachungs-und Überwachungs Zugriffssteuerelemente in Office 365.'
-ms.openlocfilehash: 753acd1a0bd0d3b4a834263071d431b63836f399
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Zusammenfassung: eine Zusammenfassung der verschiedenen Überwachungs-und Überwachungs Zugriffssteuerungen, die in Office 365 verfügbar sind.'
+ms.openlocfilehash: 39ee2b535c89419e161558cba2122e325228ffb1
+ms.sourcegitcommit: 7b5e4a7a51f3cdd741deb77a2d60a18e2316618d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262537"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33520715"
 ---
-# <a name="monitoring-and-auditing-access-controls-in-office-365"></a>ÜberWachen und Überwachen von Zugriffssteuerungen in Office 365
+# <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Überwachen und Überwachen von Zugriffssteuerungen in Office 365
 
-Microsoft führt eine umfassende Überwachung und Überwachung aller Delegierung, aller Verwendung von Berechtigungen und aller Vorgänge in Office 365 aus. Die Office 365-Zugriffssteuerung ist ein automatisierter Prozess, der auf dem Prinzip der geringsten Rechte basiert und Datenzugriffs Steuerungen und-Prüfungen einbindet:
-- Der gesamte zulässige Zugriff ist für einen eindeutigen Benutzer rückverfolgbar, sodass Administratoren für die Behandlung von Kundeninhalten verantwortlich sind.
-- Zugriffssteuerungsanforderungen, Genehmigungen und administrative Betriebsprotokolle werden zur Analyse von Sicherheits Einblicken und bösartigen Ereignissen erfasst.
-- Zugriffsebenen werden basierend auf der Mitgliedschaft in der Sicherheitsgruppe in nahezu Echtzeit überprüft, um sicherzustellen, dass nur Benutzer, die über autorisierte geschäftliche Gründe verfügen und die Berechtigungsanforderungen erfüllen, Zugriff auf die Systeme haben.
-- Office 365, die Zugriffssteuerung und die unterstützenden Dienste, einschließlich Azure Active Directory und unserer physikalischen Datencenter, werden regelmäßig von unabhängigen Drittparteien für die Einhaltung von [ISO/iec 27001](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27001), [iso/IEC 27018](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018), [SOC](https://www.microsoft.com/en-us/TrustCenter/Compliance/SOC)überwacht. [FedRAMP](https://www.microsoft.com/en-us/TrustCenter/Compliance/FedRAMP)und andere [Standards](https://www.microsoft.com/en-us/TrustCenter/Compliance?service=Office#Icons).
-- Office 365-Ingenieure sind verpflichtet, jährliche Sicherheitsschulungen über die bewährten Methoden und Risiken für den erweiterten Zugriff zu Unternehmen und die Sicherheits-und Datenschutzrichtlinien von Microsoft anzuerkennen, um Ihre Ansprüche an den Dienst beizubehalten.
+Microsoft führt eine umfassende Überwachung und Überwachung aller Delegierungen, Berechtigungen und Vorgänge durch, die in Office 365 auftreten. Office 365 Zugriffssteuerung ist ein automatisierter Prozess, der auf dem Prinzip der geringsten Rechte basiert und Datenzugriffs Steuerelemente und-Überprüfungen einbindet:
 
-Automatisierte Warnungen werden ausgelöst, wenn verdächtige Aktivitäten erkannt werden, wie etwa mehrere fehlgeschlagene Anmeldungen innerhalb kurzer Zeit. Das Office 365 Security Response-Team verwendet Maschinelles Lernen und große Datenanalysen, um Aktivitäten für unregelmäßige Zugriffsmuster zu überprüfen und zu analysieren und proaktiv auf anomale und illegale Aktivitäten zu reagieren. Microsoft verwendet außerdem ein dediziertes Team von Penetrations Testern und engagiert sich in regelmäßigen Übungen mit roten Teams und blauen Teams, um Sicherheits-und Zugriffssteuerungsprobleme im Dienst zu finden. Kunden können die Effektivität der Zugriffs Steuerungssysteme auch überprüfen, indem Sie Überwachungsberichte und die von Office 365 bereitgestellte Verwaltungs Aktivitäts-API verwenden. 
+- Alle zulässigen Zugriffe können auf einen eindeutigen Benutzer zurückgeführt werden. Administratoren sind für die Verarbeitung von Kundeninhalten verantwortlich.
+- Zugriffssteuerungsanforderungen, Genehmigungen und Administrative Operations Protokolle werden zur Analyse von Sicherheit und böswilligen Ereignissen erfasst.
+- Zugriffsebenen werden basierend auf der Sicherheitsgruppenmitgliedschaft nahezu in Echtzeit überprüft, um sicherzustellen, dass nur Benutzer mit autorisierten geschäftlichen Begründungen und den Berechtigungsanforderungen Zugriff auf die Systeme haben.
+- Office 365, die Zugriffssteuerung und die unterstützenden Dienste, einschließlich Azure Active Directory und physische Rechenzentren, werden regelmäßig von unabhängigen Drittanbietern für die Einhaltung von [ISO/IEC 27001](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27001), [ISO/IEC 27018](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018), [SOC](https://www.microsoft.com/en-us/TrustCenter/Compliance/SOC), [überprüft. FedRAMP](https://www.microsoft.com/en-us/TrustCenter/Compliance/FedRAMP)und andere [Standards](https://www.microsoft.com/en-us/TrustCenter/Compliance?service=Office#Icons).
+- Office 365 Ingenieure müssen jährlich Sicherheitsschulungen durchführen, die bewährten Methoden für den erhöhten Zugriff überprüfen und die Sicherheits-und Datenschutzrichtlinien von Microsoft anerkennen, um die Berechtigungen für den Dienst beizubehalten.
 
-Weitere Informationen finden Sie unter [office 365 Management Activity API Reference](https://msdn.microsoft.com/en-us/library/office/mt227394.aspx) and [Auditing and Reporting in Office 365](office-365-auditing-and-reporting-overview.md).
+Automatische Warnungen werden ausgelöst, wenn verdächtige Aktivitäten erkannt werden, beispielsweise mehrere fehlgeschlagene Anmeldungen innerhalb eines kurzen Zeitraums. Das Office 365-Sicherheitsantwort Team verwendet Maschinelles Lernen und eine große Datenanalyse, um Aktivitäten zu überprüfen und zu analysieren, nach unregelmäßigen Zugriffsmustern zu suchen und proaktiv auf anomale und unerlaubte Aktivitäten zu reagieren. Microsoft beschäftigt außerdem ein dediziertes Team von Penetrations Testern und engagiert sich in regelmäßigen roten Team-und blauen Teamübungen, um Sicherheits-und Zugriffssteuerungsprobleme im Dienst zu finden. Kunden können die Effektivität von Zugriffs Steuerungssystemen mithilfe von Überwachungsberichten und der von Office 365 bereitgestellten Verwaltungs Aktivitäts-API überprüfen.
+
+Weitere Informationen finden Sie unter [Office 365 Management Activity API Reference](https://msdn.microsoft.com/en-us/library/office/mt227394.aspx) and [Auditing and Reporting in Office 365](office-365-auditing-and-reporting-overview.md).

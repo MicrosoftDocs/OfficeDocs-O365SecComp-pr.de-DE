@@ -12,89 +12,94 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Zusammenfassung: eine Übersicht über die Vorgehensweisen von Microsoft für Office 365.'
-ms.openlocfilehash: b69c219ef6b405734035d74ce10195ea8cddf401
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Zusammenfassung: eine Übersicht über die Microsoft-Personal Prüfungsverfahren für Office 365.'
+ms.openlocfilehash: 4eb36b8f9f560abea97cc077d16f48a6b9abc6d4
+ms.sourcegitcommit: 7b5e4a7a51f3cdd741deb77a2d60a18e2316618d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262417"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33520705"
 ---
 # <a name="office-365-personnel-controls"></a>Personalsteuerungen in Office 365 
 
-Das Personal Screening, das den Prozess der Überprüfung und Validierung des Verhaltens und Status einer Person in der Vergangenheit darstellt, ist eine wichtige Minderungs Kontrolle, um die Office 365-Dienst Kompromittierung zu verhindern. Während das Verhalten der Vergangenheit nicht die perfekte Voraussage für das zukünftige Verhalten einer Person ist, hilft Sie bei der Identifizierung potenzieller schlechter Darsteller. Der Personal Screening-Standard von Microsoft gilt für alle Microsoft-Mitarbeiter, Praktikanten und Kontingent Mitarbeiter, die an der Entwicklung, dem Betrieb oder der Bereitstellung von Onlinediensten für Regierungs-oder kommerzielle Cloud-Kunden beteiligt sind. Screening-Standards für nationale Cloud-Umgebungen, die nicht von Microsoft betrieben werden, werden von den Mitarbeitern des Betriebs Partners für jede spezifische Umgebung definiert.
+Das Personal Screening, der Prozess der Überprüfung und Validierung des bisherigen Verhaltens und Status eines Bewerbers, ist eine wichtige Minderungs Kontrolle, um Office 365 Dienst Kompromiss zu verhindern. Während das vergangene Verhalten keine perfekte Voraussage für zukünftiges Verhalten ist, hilft es, mögliche fehlerhafte Akteure zu identifizieren. Der Microsoft-Personal Prüfungs Standard gilt für alle Microsoft-Mitarbeiter, Praktikanten und Kontingent Mitarbeiter, die an der Entwicklung, dem Betrieb oder der Bereitstellung von Onlinediensten für Behörden oder kommerzielle Cloud-Kunden beteiligt sind. Screening-Standards für nationale Cloud-Umgebungen, die nicht von Microsoft betrieben werden, werden von den Mitarbeitern des Betriebs Partners für die jeweilige Umgebung definiert.
 
-## <a name="microsofts-personnel-screening-standard"></a>Microsoft-Personal Screening-Standard
+## <a name="the-microsoft-personnel-screening-standard"></a>Der Microsoft-Personal Prüfungs Standard
 
-Die Personal Screening-Methoden von Microsoft für Office 365 werden an die Unternehmensstandards von Microsoft und an die National Institute of Standards and Technology (NIST)-Steuerelemente für das Personal Screening angepasst. Microsoft-Mitarbeiter, die Zugriff auf Folgendes benötigen, unterliegen dem Microsoft-Screening-Standard:
-- Physischer Zugriff auf Datencenter, Standorte, gesicherte Räume, Käfige, Server Racks oder Edge-Websites, die die Infrastruktur bereitstellen, die Onlinedienste für Kunden von Regierungs-oder kommerziellen Clouds unterstützt.
-- Logischer Zugriff auf Kundendaten der Regierung oder der kommerziellen Cloud, die über bestimmte verwaltete Umgebungen bereitgestellt werden.
-    - Netzwerkverwaltung der Zugriff auf Geräte und Dienste, die öffentliche oder geschäftliche Cloud-Kundendaten transportieren oder speichern.
+Die Vorgehensweisen für das Personal Screening für Office 365 stimmen mit den Microsoft-Richtlinien für Unternehmensstandards und nationale Institute of Standards and Technology (NIST) für das Personal Screening überein. Microsoft-Mitarbeiter, die folgenden Zugriff benötigen, unterliegen dem Microsoft-Personal Prüfungs Standard:
 
-Zu den spezifischen personellen Ereignissen, die Screening-Anforderungen auslösen, gehört Folgendes:
-- Neue Microsoft-Mitarbeiter in Rollen, bei denen die Überprüfung eine definierte Anforderung ist.
-- Interne Microsoft-Mitarbeiter übertragen oder wechseln zu einer vorhandenen Rolle, die derzeit eine Überprüfung als definierte Anforderung umfasst.
+- Physischer Zugriff auf Rechenzentren, Nebenstellenanlagen, gesicherte Räume, Käfige, Server Racks oder Edge-Websites, die die Infrastruktur zur Unterstützung von Onlinediensten für öffentliche oder kommerzielle Cloud-Kunden bereitstellen.
+- Logischer Zugriff auf Kundendaten von Government oder Commercial Cloud, die über bestimmte verwaltete Umgebungen bereitgestellt werden.
+- Netzwerkverwaltung Zugriff auf Geräte und Dienste, die die Kundendaten von Government oder Commercial Cloud transportieren oder speichern.
+
+Zu den spezifischen personalbezogenen Ereignissen, die Screening-Anforderungen auslösen, gehören:
+
+- Neue Microsoft-Mitarbeiter in Rollen, bei denen das Screening eine definierte Anforderung ist.
+- Interne Microsoft-Mitarbeiter, die übertragen oder auf eine vorhandene Rolle verschoben wurden, die derzeit das Screening als definierte Anforderung umfasst.
 - Vorhandene Rollen, die den Bereich ändern, um das Screening als definierte Anforderung einzubeziehen.
 
 ## <a name="screening-enforcement-criteria"></a>Screening-Durchsetzungs Kriterien
 
-Um sicherzustellen, dass nur autorisierte Mitarbeiter Zugriff auf Kundendaten oder Umgebungen haben, die eine Überprüfung erfordern, gelten die folgenden Durchsetzungs Kriterien:
+Um sicherzustellen, dass nur genehmigte Mitarbeiter Zugriff auf Kundendaten oder Umgebungen haben, für die eine Überprüfung erforderlich ist, gelten die folgenden Durchsetzungs Kriterien.
 
-**Nur in den USA Cloud-Umgebungen**:
-- Der Zugriff auf Kundendaten oder-Umgebungen, die eine Überprüfung erfordern, muss nur zulässig sein, nachdem das Urteil abgeschlossen ist und die Screening-Anforderungen erfüllt sind.
-- Microsoft-Mitarbeiter, die keinen Zugriff mehr auf Kundendaten oder Verwandte Umgebungen benötigen, müssen beim Verlassen von Microsoft oder wechseln zu einer neuen Rolle entfernt werden.
-- Microsoft-Mitarbeiter müssen geschirmte Umgebungs Smartcards mit der Verwaltung verlassen, bevor Sie die USA verlassen.
+**Nur in den Vereinigten Staaten nur Cloud-Umgebungen**:
+
+- Der Zugriff auf Kundendaten oder-Umgebungen, für die eine Überprüfung erforderlich ist, ist erst nach Abschluss der Entscheidung und Screening-Anforderungen zulässig.
+- Microsoft-Mitarbeiter, die keinen Zugriff mehr auf Kundendaten oder Verwandte Umgebungen benötigen, haben beim Verlassen von Microsoft oder beim Wechsel zu einer neuen Rolle Zugriff auf die Datenbank.
+- Microsoft-Mitarbeiter verlassen die Smart Cards mit geschirmten Umgebungen vor dem Verlassen der USA mit der Verwaltung.
 
 **Nationale Cloud-Umgebungen**:
-- Mitarbeiter des Drittanbieters oder des Datenempfängers sind für die Verwaltung und Durchsetzung des Zugriffs für nationale Cloud-Umgebungen verantwortlich.
 
-In den Cloud-Dienstumgebungen von Microsoft ist der Zugriff auf die Rolle einer Person und die Art der betroffenen Daten beschränkt, wie in der folgenden Tabelle beschrieben. Qualifizierte oder nicht qualifizierte Mitarbeiter, die sich physisch außerhalb der USA befinden, dürfen keinen Zugriff auf Kundendaten in einer United States Cloud haben. Der Zugriff auf die nationalen Cloud-Umgebungen ist eingeschränkt, sodass Microsoft-Mitarbeiter keinen technischen Zugriff auf Kundendaten oder Systeme mit Kundendaten ohne Genehmigung durch den Drittanbieter-oder Datenverwalter haben.
+- Mitarbeiter von Drittanbieter-oder Daten Treuhändern sind für die Verwaltung und Erzwingung des Zugriffs für nationale Cloud-Umgebungen verantwortlich.
+
+In den Microsoft Cloud Services-Umgebungen wird der Zugriff aufgrund der Rolle eines Benutzers und des betreffenden Daten Typs eingeschränkt, wie in der folgenden Tabelle beschrieben. Qualifiziertes oder nicht qualifiziertes Personal, das sich physisch außerhalb der USA befindet, darf keinen Zugriff auf Kundendaten innerhalb einer US-amerikanischen Cloud haben. Der Zugriff auf nationale Cloud-Umgebungen ist so eingeschränkt, dass Microsoft-Mitarbeiter ohne Genehmigung durch den Drittanbieter oder den Daten Treuhänder keinen technischen Zugriff auf Kundendaten oder Systeme haben, die Kundendaten enthalten.
 
 | Rolle | Zugriff auf Kundendaten | Zugriff auf System Daten |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|---------------------------------|
-| Qualifiziertes Personal, das sich physisch in den USA befindet | Erlaubt | Erlaubt |
-| Qualifiziertes Personal außerhalb der USA | Nicht zulässig | Erlaubt |
-| Internationaler Ausnahme Zugriff für Microsoft-Mitarbeiter – ermöglicht den logischen Zugriff für Microsoft-Mitarbeiter, die sich nicht in dem Land befinden, in dem die Behörden-oder Geschäftskunden Daten ruhen. | Nicht zulässig | Erlaubt |
-| Nicht qualifiziertes Personal (ungeschirmtes Personal, das eine Eskorte durch qualifiziertes Personal erfordert) | Mit Autorisierung zulässig | Zulässig mit Escort-Aufsicht |
+|---------------------------------------------------------------------------|------------------------------|---------------------------------|
+| Qualifiziertes Personal, das sich physisch in den Vereinigten Staaten befindet | Erlaubt | Erlaubt |
+| Qualifiziertes Personal, das sich physisch außerhalb der USA befindet | Nicht zulässig | Erlaubt |
+| Internationaler Ausnahme Zugriff für Microsoft-Mitarbeiter: ermöglicht den logischen Zugriff für Microsoft-Mitarbeiter, die sich nicht in dem Land befinden, in dem sich die Daten der Regierung oder des Geschäftskunden in Ruhe befinden. | Nicht zulässig | Erlaubt |
+| Nicht qualifiziertes Personal (nicht geschirmte Mitarbeiter, die eine Eskorte von qualifiziertem Personal benötigen) | Zulässig mit Autorisierung | Zulässig mit Begleit Aufsicht |
 
+## <a name="microsoft-pre-employment-screening"></a>Microsoft Pre-Employment Screening
 
-## <a name="microsoft-pre-employment-screening"></a>Microsoft Pre-Employment-Screening
+Wenn es das lokale Recht zulässt, führt die globale Sicherheitsabteilung von Microsoft eine vorarbeits Prüfung durch. Dies ist eine formelle Hintergrund Untersuchung, die die folgenden Kriterien umfasst:
 
-In den Bereichen, in denen das lokale Recht dies zulässt, führt die globale Sicherheitsabteilung von Microsoft eine Vorprüfung durch. Dies ist eine formale Hintergrund Untersuchung, die die folgenden Kriterien umfasst:
-- Eine Prüfung (z. b. für Vollständigkeit und Richtigkeit) des Lebenslaufs des Bewerbers
+- Überprüfung des Lebenslaufs des Antragstellers auf Vollständigkeit und Genauigkeit
 - Bestätigung von akademischen und beruflichen Qualifikationen
 - Untersuchung eines Verlusts an beruflichen Anmeldeinformationen
 - Überprüfung der letzten drei Arbeitgeber
-- Eine Überprüfung der polizeilichen Aufzeichnungen wegen Kapitalverbrechen
-- Bestätigung der Identität aus einer vom Staat herausgegebenen Identifizierung
-- Gegebenenfalls Bonitätsprüfung
+- Ein Check of Police Records für Verbrechen Verurteilungen
+- Bestätigung der Identität von einer von einem Staat ausgestellten Identifikation
+- Bonitätsprüfungen, falls zutreffend
 
-Für bestimmte Verwaltungs-, Sicherheits-oder andere Rollen, einschließlich, aber nicht beschränkt auf in der USA ansässigen Mitarbeitern in Rollen, die Zugriff auf Kundendaten benötigen, sind möglicherweise regelmäßige rescreenings und/oder zusätzliche Hintergrundprüfungen erforderlich.
-Für Kontingent Mitarbeiter gibt der Vertrag mit dem Drittanbieter die Anforderungen von Microsoft für die Überprüfung an, die von dem Drittanbieter durchgeführt werden müssen. Bei Hintergrundprüfungen ist das drittanbieterunternehmen dafür verantwortlich, Microsoft zu überprüfen, ob eine Hintergrundüberprüfung durchgeführt wurde. Die Ergebnisse der Hintergrundüberprüfung werden in der Regel per e-Mail von der Personalabteilung des Drittanbieters empfangen. Internationale Mitarbeiter von Vertragsbedienstete können aufgrund von Gesetzen in Ländern, die Hintergrundprüfungen verbieten, vom Hintergrund Screening ausgeschlossen werden.
+Eine regelmäßige erneute Überprüfung und/oder zusätzliche Hintergrundprüfungen sind möglicherweise für bestimmte Verwaltungs-, Sicherheits-oder andere Rollen erforderlich, einschließlich, aber nicht ausschließlich für US-basierte Mitarbeiter in Rollen, die Zugriff auf Kundendaten benötigen.
+Für Kontingent Mitarbeiter gibt der Vertrag mit dem Drittanbieter die Anforderungen von Microsoft für die Überprüfung an, die vom Drittanbieter ausgeführt werden müssen. Bei Hintergrundüberprüfungen ist das drittanbieterunternehmen dafür verantwortlich, dass Microsoft überprüft, ob eine Hintergrundüberprüfung durchgeführt wurde. Die Ergebnisse der Hintergrundüberprüfung werden in der Regel per e-Mail von der Personalabteilung des Drittanbieters empfangen. Internationale Mitarbeiter von Vertrags Mitarbeitern können aufgrund von Gesetzen in Ländern, die Hintergrundprüfungen verbieten, vom Hintergrund Prüfungsprozess ausgenommen werden.
 
 ## <a name="microsoft-employment-screening"></a>Microsoft Employment Screening
-Seit 2004 hat Microsoft Personen aufgefordert, einen siebenjährigen Strafregister Bildschirm für Kapitalverbrechen und Vergehen zu verabschieden, und ihre Bildungs-und Beschäftigungshistorie im Rahmen der vorarbeits Überprüfung in den USA für Mitarbeiter und Praktikanten zu überprüfen.
 
-Vor dem Zuweisen von Microsoft-Mitarbeitern oder einem von Microsoft zugewiesenen Subunternehmer zur Bereitstellung von Office 365-bezogenen Diensten in den Vereinigten Staaten führt Microsoft die unter Auftragnehmerin durch, um eine Hintergrundprüfung durchzuführen, die aus einem sozialVersicherungs- Nummern Ablaufverfolgung und Überprüfung der Vorstrafen. Die Daten aus dieser Hintergrundüberprüfung werden als Faktor bei der Einstellungsentscheidung verwendet. Die Strafregister Überprüfung umfasst eine siebenjährige Straftat und Vergehen kriminelle Aufzeichnungen Überprüfung der Bundes-, Bundes-und County Records (soweit zutreffend).
+Seit 2004 in den USA erfordert Microsoft Mitarbeitern und Praktikanten, einen siebenjährigen Strafregister Bildschirm als Teil der vorarbeits Überprüfung zu übergeben. Das Screening auf Verbrechen, Vergehen und die Überprüfung der Bildungs-und Beschäftigungs Geschichte ist enthalten.
 
-Als Beschäftigungsbedingung müssen alle Microsoft-Mitarbeiter zum Zeitpunkt der Vermietung Vertraulichkeits-und Geheimhaltungsvereinbarungen unterzeichnen und sich vergewissern, dass Sie das Microsoft-Mitarbeiterhandbuch überprüft haben.
+Vor dem Zuweisen von Microsoft-Mitarbeitern oder einem von uns von Microsoft zugewiesenen Subunternehmer zur Bereitstellung von Office 365 bezogenen Diensten führt Microsoft die Unterauftragnehmer für die Durchführung einer Hintergrundüberprüfung aus, die aus einer Ablaufverfolgung für Sozialversicherungsnummern besteht und Überprüfung des Strafregisters. Die Daten aus dieser Hintergrundüberprüfung sind ein Faktor in der Einstellungsentscheidung. Die Strafregister Prüfung umfasst ein siebenjähriges Verbrechen und Vergehens Delikte zur Überprüfung von Bundes-, Bundesland-und Landkreis Einträgen (sofern zutreffend).
+
+Als Bedingung für die Beschäftigung und zum Zeitpunkt der Einstellung müssen alle Microsoft-Mitarbeiter Vertraulichkeits-und Geheimhaltungsvereinbarungen unterzeichnen und überprüfen, ob Sie das Microsoft-Mitarbeiterhandbuch überprüft haben.
 
 ## <a name="microsoft-cloud-background-check"></a>Microsoft-Cloud-Hintergrundüberprüfung
-Eine Microsoft-Cloud-Hintergrundüberprüfung ist erforderlich, damit Kandidaten als Mitarbeiter mit Office 365-bezogenen Diensten in den USA gemietet werden können. Microsoft-Mitarbeiter in den USA mit Zugriff auf Kundendaten müssen dem Microsoft Cloud Background Check-Prozess folgen, der von allen Office 365-Diensten benötigt wird. Außerhalb der USA variiert der Prozess. Beispielsweise verwendet die Microsoft-Cloud für Deutschland ein Daten Vertrauensnehmer-Genehmigungsmodell, mit dem sichergestellt werden soll, dass der Datenverwalter (ein deutsches Unternehmen) und nicht Microsoft die Kontrolle über den Zugriff auf Kundendaten hat. Die Microsoft-Cloud in Deutschland wird aus Rechenzentren in Deutschland geliefert, und die Operations Center (OC), die die technischen Mitarbeiter des Data Trustee enthalten, befinden sich ebenfalls in Deutschland. Sowohl das Rechenzentrum als auch die OC-Einrichtungen werden vom Datenverwalter betrieben, gewartet und gesteuert.
+
+Eine Microsoft-Cloud-Hintergrundüberprüfung ist für Bewerber erforderlich, die als Mitarbeiter für Office 365 bezogene Dienste in den Vereinigten Staaten eingestellt sind. Microsoft-Mitarbeiter in den Vereinigten Staaten mit Zugriff auf Kundendaten müssen dem von allen Office 365 Diensten benötigten Microsoft Cloud Background Check Prozess entsprechen. Außerhalb der Vereinigten Staaten variiert der Prozess. Beispielsweise verwendet die Microsoft-Cloud für Deutschland ein Daten Vertrauensnehmer-Genehmigungsmodell, mit dem sichergestellt werden soll, dass der Daten Treuhänder (ein deutsches Unternehmen) und nicht Microsoft die Kontrolle über den Zugriff auf Kundendaten hat. Die Microsoft-Cloud in Deutschland wird von Rechenzentren in Deutschland zugestellt, und die Operations Center (OC), die das technische Personal des Daten Treuhänders enthalten, sind ebenfalls in Deutschland. Sowohl das Rechenzentrum als auch die OC-Einrichtungen werden vom Daten Treuhänder betrieben, verwaltet und gesteuert.
 
 In der folgenden Tabelle sind die Prüfungen aufgeführt, die im Rahmen der Microsoft-Cloud-Hintergrundüberprüfung durchgeführt werden.
 
 | Prüfung | Beschreibung |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Suche nach sozialVersicherungsNummern | Überprüft, ob die angegebene sozialVersicherungsnummer gültig ist. |
-| Überprüfen des Vorstrafenregisters | Die siebenjährigen kriminellen Datensätze überprüfen auf Schwerverbrechen und Vergehen Vergehen auf Bundes-, Landes-und Ortsebene sowie gegebenenfalls auf föderaler Ebene. |
-| Office of Foreign Assets-Steuerelementliste | Department of Treasury Liste der Einzelpersonen und Organisationen, mit denen US-Bürger und dauerhafte Bewohner sind nicht berechtigt, Geschäfte zu tätigen. |
-| Liste "Bureau of Industry and Security" | Department of Commerce Liste der Personen und Entitäten, die von der Teilnahme an Exportaktivitäten ausgeschlossen sind. |
-| Office of Defense Trade Controls Liste der gesperrten Personen (*hinzugefügt am 2010*) | Department of State Liste der Einzelpersonen und Entitäten, die von der Teilnahme an Exportaktivitäten im Zusammenhang mit der Rüstungsindustrie ausgeschlossen sind. |
+| Suche nach Sozialversicherungsnummern | Überprüft, ob die vorgesehene Sozialversicherungsnummer gültig ist. |
+| Überprüfen des Vorstrafenregisters | Siebenjährige Strafregister überprüfen auf Verbrechen und Vergehens Delikte auf bundesstaatlicher, Landkreis-und lokaler Ebene und je nach Bedarf auf Bundesebene. |
+| Steuerungsliste "Office of Foreign Assets" | Department of Treasury Liste von Personen und Organisationen, mit denen US-Bürger und dauerhafte Residenten keine Geschäfte tätigen dürfen. |
+| Bureau of Industry and Security List | Department of Commerce Liste der Personen und Entitäten, die von der Beteiligung an Exportaktivitäten ausgeschlossen sind. |
+| Office of Defense Trade Controls Debarred Persons List (*hinzugefügt am 1. Juli 2010*) | Abteilung für Statusliste von Personen und Entitäten, die von der Beteiligung an Exportaktivitäten im Zusammenhang mit der Rüstungsindustrie ausgeschlossen sind. |
 
+Die Ergebnisse der Microsoft-Cloud-Hintergrundüberprüfung werden in unserer Mitarbeiterdatenbank gespeichert und mit unseren Datencenter-Zugriffs Steuerungssystemen verbunden. Wenn die Microsoft-Cloud-Hintergrundüberprüfung abläuft und der Mitarbeiter Sie nicht erneuert, wird der Zugriff auf Office 365 Dienste widerrufen und ist nicht mehr verfügbar, bis die Microsoft-Cloud-Hintergrundüberprüfung abgeschlossen ist. Wenn das Arbeitsverhältnis mit Microsoft endet, wird der Zugriff auf alle Datencenter sofort aufgehoben.
 
-Die Ergebnisse aus der Microsoft-Cloud-Hintergrundüberprüfung werden in unserer Mitarbeiterdatenbank gespeichert, die mit unseren Datencenter-Zugriffs Steuerungssystemen verbunden ist. Wenn die Microsoft-Cloud-Hintergrundüberprüfung abläuft und der Mitarbeiter Sie nicht erneuert, wird der Zugriff auf Office 365-Dienste widerrufen und ist erst dann verfügbar, wenn die Microsoft-Cloud-Hintergrundüberprüfung erneut abgeschlossen ist. Wenn das Arbeitsverhältnis zu Microsoft beendet wird, wird ein vorhandener Datencenter Zugriff sofort widerrufen.
+Die Staatsbürgerschaft der Vereinigten Staaten wird für alle Mitarbeiter mit physischem oder logischem Zugriff auf die Office 365 US-Regierungsdienste überprüft. Um die Staatsbürgerschaft zu überprüfen, treffen sich Mitarbeiter und/oder neue Kandidaten mit einem US-Staats Bürgerschafts Delegierten, der zur Überprüfung der US-Staatsbürgerschaft für die Dokumentation ausgebildet wurde. Mitarbeiter oder neue Bewerber müssen die erforderlichen Unterlagen mitbringen und bei einer Besprechung mit dem Delegierten der Staatsbürgerschaft für Ihre Region ein Bestätigungsformular unterzeichnen. Die Besprechung muss persönlich erfolgen. Sobald die Person mit dem Delegierten für die Staatsbürgerschaft zusammengetroffen und die erforderlichen Dokumentationen und Signaturen bereitgestellt hat, leitet die Staatsbürgerschaft eine Kopie der Dokumente an Microsoft-Mitarbeiter Vorgänge weiter, die die Kopie an die Datensatzaufbewahrung übermitteln.
 
-Die US-Staatsbürgerschaft wird für alle Mitarbeiter mit physischem oder logischem Zugriff auf die Office 365 United States Government Services verifiziert. Um die Staatsbürgerschaft zu überprüfen, treffen sich Mitarbeiter und/oder neue Kandidaten mit einem US-Staats Bürgerschafts Delegierten, der zur Überprüfung der US-amerikanischen Staatsbürgerschaft geschult ist. Mitarbeiter oder neue Bewerber müssen die erforderliche Dokumentation mitbringen und ein Bescheinigungsformular bei einer Besprechung mit der Citizenship-Stellvertretung für Ihre Region signieren. Die Besprechung muss persönlich durchgeführt werden. Sobald die Person mit der Citizenship-Stellvertretung zusammen gekommen ist und die erforderlichen Unterlagen und Signaturen bereitgestellt hat, leitet der Citizenship-Delegat eine Kopie der Dokumente an Microsoft-Mitarbeiter weiter, die die Kopie zur Aufzeichnung einreichen.
-
-Mitarbeiter mit logischem Zugriff auf die US-amerikanische Behörden-Community-Cloud oder logischen oder physischen Zugriff auf die Azure-Angebote der US-Regierung sind erforderlich, um die Anforderungen der Bundesregierung an die [Informationen zum Strafrecht des FBI zu erfüllen. Dienste](https://www.fbi.gov/services/cjis) (CJIS), einschließlich Personal Screening. CJIS-Screening zur Unterstützung des Office 365 US Government Service umfasst eine Fingerabdruck basierte kriminelle Hintergrundprüfung, die von der CJIS-System Agentur als Juror in Staaten, die sich in Microsoft Online [registriert haben,](https://blogs.office.com/2013/10/23/california-and-microsoft-sign-cjis-security-policy-agreement/) entschieden wird. Support Programm für Dienste CJIS.
+Mitarbeiter mit logischem Zugriff auf die Office 365 u.s. Government Community Cloud oder logischer oder physischer Zugriff auf die Azure u.s. Government-Angebote sind erforderlich, um die Anforderungen des FBI an die Strafjustiz einzuhalten. [ Services](https://www.fbi.gov/services/cjis) (CJIS), einschließlich Personal Screening. Das CJIS-Screening zur Unterstützung des Office 365 U.S. Government Services umfasst eine Fingerabdruck basierte Überprüfung des strafrechtlichen Hintergrunds, die von der CJIS-System Agentur für Juror in Staaten, die sich im Microsoft Online Services-CJIS [registriert haben, fest](https://blogs.office.com/2013/10/23/california-and-microsoft-sign-cjis-security-policy-agreement/) gelegt wurde. Support Programm.

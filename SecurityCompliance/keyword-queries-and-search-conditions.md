@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security & Compliance Center durchsuchen können.  '
-ms.openlocfilehash: 01cc40f983ddae6db090f531bc33fc5cc7a638ed
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
+ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152497"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017647"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
-In diesem Thema werden die e-Mail-und Dokumenteigenschaften beschrieben, nach denen Sie in e-Mail-Elementen in Exchange Online suchen können, sowie Dokumente, die in SharePoint und OneDrive für Unternehmen Websites gespeichert sind, indem Sie die Inhaltssuche im Security & Compliance Center verwenden. Sie können auch die ** \*-ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Im Thema wird außerdem Folgendes beschrieben:   
+In diesem Thema werden die e-Mail-und Dokumenteigenschaften beschrieben, nach denen Sie in e-Mail-Elementen in Exchange Online suchen können, sowie Dokumente, die in SharePoint und OneDrive für Unternehmen Websites gespeichert sind, indem Sie die Inhaltssuche im Security #a0 Compliance Center verwenden. Sie können auch die ** \*-ComplianceSearch-** Cmdlets in Security #a0 Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Im Thema wird außerdem Folgendes beschrieben:   
   
 - Verwenden Sie boolesche Suchoperatoren, Suchbedingungen und andere Suchabfrage Techniken, um Ihre Suchergebnisse zu verfeinern.
     
@@ -38,11 +38,14 @@ Eine Schritt-für-Schritt-Anleitung zum Erstellen einer Inhaltssuche finden Sie 
 
   
 > [!NOTE]
-> Die Inhaltssuche im Security & Compliance Center und die entsprechenden ** \*-ComplianceSearch-** Cmdlets in Security & Compliance Center PowerShell verwenden die Schlüsselwortabfrage Sprache (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> Die Inhaltssuche im Security #a0 Compliance Center und die entsprechenden ** \*-ComplianceSearch-** Cmdlets in Security #a1 Compliance Center PowerShell verwenden die Schlüsselwortabfrage Sprache (KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language Syntax Reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
   
 ## <a name="searchable-email-properties"></a>Durchsuchbare E-Mail-Eigenschaften
 
-In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgeführt, die mithilfe der Inhaltssuche im Security & Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder Cmdlet " **ComplianceSearch** " durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese `property:value` Paare in das Feld Schlüsselwörter für eine Inhaltssuche eingeben. 
+In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgeführt, die mithilfe der Inhalts Suchfunktion im Security #a0 Compliance Center oder mithilfe des Cmdlets **New-ComplianceSearch** oder **ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese `property:value` Paare in das Feld Schlüsselwörter für eine Inhaltssuche eingeben. 
+
+> [!NOTE]
+> Beim Durchsuchen von e-Mail-Eigenschaften ist es nicht möglich, nach Elementen zu suchen, in denen die angegebene Eigenschaft leer oder leer ist. Wenn Sie beispielsweise die *Eigenschaft: Wert-* paar von **Subject: ""** verwenden, um nach e-Mail-Nachrichten mit einer leeren Betreffzeile zu suchen, werden keine Ergebnisse zurückgegeben. Dies gilt auch beim Durchsuchen von Website-und Kontakteigenschaften.
   
 |**Eigenschaft**|**Beschreibung der Eigenschaft**|**Beispiele**|**Von den Beispielen zurückgegebene Suchergebnisse**|
 |:-----|:-----|:-----|:-----|
@@ -62,15 +65,16 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
 |Empfänger|Alle Felder mit Empfängern in einer E-Mail-Nachricht. Diese Felder sind „An", „CC" und „BCC".<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Nachrichten, die an garthf@contoso.com gesendet wurden. Im zweiten Beispiel werden Nachrichten zurückgegeben, die an einen Empfänger in der Domäne contoso.com gesendet wurden.|
 |Gesendet|Das Datum, an dem eine E-Mail vom Absender gesendet wurde.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Nachrichten, die am angegebenen Tag oder im angegebenen Datumsbereich gesendet wurden.|
 |Größe|Die Größe eines Elements in Byte.|`size>26214400`  <br/> `size:1..1048567`|Nachrichten größer als 25?? MB. Im zweiten Beispiel werden Nachrichten von 1 bis 1.048.567 Byte (1 MB) in Größe zurückgegeben.|
-|Betreff|Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden, gibt die ???the-Suche alle Nachrichten zurück, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten: die Abfrage gibt nicht nur die Nachrichten zurück, die eine exakte Übereinstimmung aufweisen. Wenn Sie beispielsweise nach suchen `subject:"Quarterly Financials"`, enthalten Ihre Ergebnisse Nachrichten mit dem Betreff "Quarterly Financials 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Nachrichten, die den Ausdruck "vierteljährliche Finanzdaten" an beliebiger Stelle im Text der Betreffzeile enthalten. Im zweiten Beispiel werden alle Nachrichten mit dem Wort "northwind" in der Betreffzeile zurückgegeben.|
+|Betreff|Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden,??? bei der Suche werden alle Nachrichten zurückgegeben, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten: die Abfrage gibt nicht nur die Nachrichten zurück, die eine exakte Übereinstimmung aufweisen. Wenn Sie beispielsweise nach suchen `subject:"Quarterly Financials"`, enthalten Ihre Ergebnisse Nachrichten mit dem Betreff "Quarterly Financials 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Nachrichten, die den Ausdruck "vierteljährliche Finanzdaten" an beliebiger Stelle im Text der Betreffzeile enthalten. Im zweiten Beispiel werden alle Nachrichten mit dem Wort "northwind" in der Betreffzeile zurückgegeben.|
 |An|Das Feld „An" einer E-Mail-Nachricht.<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|In allen Beispielen wegen Nachrichten zurückgegeben, in deren Zeile "An" der Name "Ann Beebe" angegeben ist.|
+|||||
    
 > [!NOTE]
 > <sup>1</sup> für den Wert einer Recipient-Eigenschaft können Sie e-Mail-Adresse (auch als *Benutzerprinzipalname* oder UPN bezeichnet), Anzeigename oder Alias verwenden, um einen Benutzer anzugeben. Sie können z. B. annb@contoso.com, Annb oder „Ann Beebe“ verwenden, um den Benutzer Ann Beebe anzugeben.<br/><br/>Beim Durchsuchen einer der Empfänger Eigenschaften (von, an, CC, BCC, Teilnehmern und Empfängern) versucht Office 365, die Identität jedes Benutzers zu erweitern, indem er Sie in Azure Active Directory nach oben sucht.  Wenn der Benutzer in Azure Active Directory gefunden wird, wird die Abfrage erweitert, um die e-Mail-Adresse des Benutzers (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN einzuschließen.<br/><br/>Beispielsweise wird eine Abfrage wie `participants:ronnie@contoso.com` erweitert zu. `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`
 
 ## <a name="searchable-site-properties"></a>Durchsuchbare Websiteeigenschaften
 
-In der folgenden Tabelle sind einige der SharePoint-und OneDrive für Unternehmen-Eigenschaften aufgeführt, die mithilfe der Inhalts Suchfunktion im Security & Compliance Center oder mithilfe des **New-ComplianceSearch** oder der **Gruppe "-ComplianceSearch" durchsucht werden können. **-Cmdlet. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
+In der folgenden Tabelle sind einige der SharePoint-und OneDrive für Unternehmen-Eigenschaften aufgeführt, die mithilfe der Inhalts Suchfunktion im Security #a0 Compliance Center oder mithilfe des **New-ComplianceSearch** oder der Gruppe "ComplianceSearch" durchsucht werden können. ** **-Cmdlet. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
   
 Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden können, finden Sie unter [Übersicht über durchforstete und verwaltete Eigenschaften in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Eigenschaften, die mit einem **Ja** in der **Queryable** -Spalte markiert sind, können durchsucht werden. 
   
@@ -91,6 +95,7 @@ Eine vollständige Liste der SharePoint-Eigenschaften, die durchsucht werden kö
 |Website|Die URL einer Website oder Gruppen von Websites in Ihrer Organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Im ersten Beispiel werden Elemente aus den OneDrive für Unternehmen Websites für alle Benutzer in der Organisation zurückgegeben. Im zweiten Beispiel werden Elemente von allen Teamwebsites zurückgegeben.|
 |Größe|Die Größe eines Elements in Byte.|`size>=1`  <br/> `size:1..10000`|Das erste Beispiel gibt Elemente zurück, die größer als 1 Byte sind. Das zweite Beispiel gibt Elemente von 1 bis 10.000 Bytes an Größe zurück.|
 |Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Microsoft Office Dokumenten angegeben sind. Er unterscheidet sich vom Dateinamen des Dokuments.|`title:"communication plan"`|Jedes Dokument, das den Ausdruck "Kommunikationsplan" in der Title Metadata-Eigenschaft eines Office-Dokuments enthält.|
+|||||
    
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
 
@@ -119,13 +124,13 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgelistet, die indizier
 |OtherAddress|Der Wert für die **andere** Address-Eigenschaft.|
 |Nachname|Der Name in der **Last** Name-Eigenschaft.|
 |Titel|Der Titel in der **Position Title** -Eigenschaft.|
-   
+|||||
 
 ## <a name="searchable-sensitive-data-types"></a>Durchsuchbare vertrauliche Datentypen
 
-Sie können das Feature für die Inhaltssuche im Security and Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten auf SharePoint und OneDrive für Unternehmen Websites gespeichert sind. Sie können dies tun, indem Sie `SensitiveType` die-Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage `SensitiveType:"Credit Card Number"` gibt beispielsweise Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine Sozialversicherungsnummer der USA enthalten. Wenn Sie eine Liste der vertraulichen Datentypen anzeigen möchten, nach denen Sie suchen können, gehen Sie zu **Klassifizierungs** \> **Typen für vertrauliche Informationen** im Security & Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** im Security & Compliance Center PowerShell verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen. 
+Sie können das Feature für die Inhaltssuche im Security and Compliance Center verwenden, um nach vertraulichen Daten wie Kreditkartennummern oder Sozialversicherungsnummern zu suchen, die in Dokumenten auf SharePoint und OneDrive für Unternehmen Websites gespeichert sind. Sie können dies tun, indem Sie `SensitiveType` die-Eigenschaft und den Namen eines vertraulichen Informationstyps in einer Stichwortabfrage verwenden. Die Abfrage `SensitiveType:"Credit Card Number"` gibt beispielsweise Dokumente zurück, die eine Kreditkartennummer enthalten. Die Abfrage `SensitiveType:"U.S. Social Security Number (SSN)"` gibt Dokumente zurück, die eine Sozialversicherungsnummer der USA enthalten. Wenn Sie eine Liste der vertraulichen Datentypen anzeigen möchten, nach denen Sie suchen können, gehen Sie zu **Klassifizierungs** \> **Typen für vertrauliche Informationen** im Security #a0 Compliance Center. Sie können auch das Cmdlet **Get-DlpSensitiveInformationType** in der PowerShell Security #a0 Compliance Center verwenden, um eine Liste vertraulicher Informationstypen anzuzeigen. 
   
-Sie können die `SensitiveType` -Eigenschaft auch verwenden, um nach dem Namen eines benutzerdefinierten vertraulichen Informationstyps zu suchen, den Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Beachten Sie, dass Sie die Spalte **Publisher** auf der Seite **vertrauliche Informationstypen** im Security & Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell) verwenden können, um zwischen integrierten und benutzerdefinierten vertraulichen Informationen zu unterscheiden. Typen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md).
+Sie können die `SensitiveType` -Eigenschaft auch verwenden, um nach dem Namen eines benutzerdefinierten vertraulichen Informationstyps zu suchen, den Sie (oder ein anderer Administrator) für Ihre Organisation erstellt haben. Beachten Sie, dass Sie die Spalte **Publisher** auf der Seite **vertrauliche Informationstypen** im Security #a0 Compliance Center (oder in der **Publisher** -Eigenschaft in PowerShell) verwenden können, um zwischen integrierten und benutzerdefinierten vertraulichen Informationen zu unterscheiden. Typen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md).
   
 Weitere Informationen zum Erstellen von Abfragen mithilfe der `SensitiveType` -Eigenschaft finden Sie unter [Formular Abfragen zum Auffinden vertraulicher Daten, die auf Websites gespeichert](form-a-query-to-find-sensitive-data-stored-on-sites.md)sind.
 
@@ -144,7 +149,7 @@ Boolesche Suchoperatoren wie **and**, **or**und **Not**helfen Ihnen bei der Defi
 |NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> Nicht freundlich: Chat|Schließt Elemente an, die durch ein Schlüsselwort `property:value` oder einen Ausdruck angegeben werden. Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Das dritte Beispiel schließt alle Chat Unterhaltungen aus, beispielsweise Skype for Business Unterhaltungen, die im Postfachordner für den Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
 |-|Wort1 - Wort2|Identisch mit dem Operator **NOT**. Diese Abfrage gibt also Elemente zurück, `keyword1` die Elemente enthalten, die enthalten `keyword2`und diese ausschließen.|
 |NEAR|Wort1 NEAR(n) Wort2|Gibt Elemente mit Wörtern zurück, die sich nah sind, wobei "n" der Anzahl der Wörter entspricht, die den Abstand zwischen den gesuchten Wörtern darstellen. Gibt beispielsweise `best NEAR(5) worst` ein beliebiges Element zurück, bei dem das Wort "Worst" innerhalb von fünf Wörtern von "Best" ist. Wenn keine Anzahl angegeben wird, wird der Standardabstand von 8 Wörtern verwendet. <sup>2</sup>|
-|ONEAR|Wort1 NEAR(n) Wort2|Ähnelt **near**, gibt jedoch Elemente mit Wörtern zurück, die sich in der angegebenen Reihenfolge nahe beieinander befinden. `best ONEAR(5) worst` Gibt beispielsweise ein beliebiges Element zurück, bei dem das Wort "am besten" vor dem Wort "Worst" auftritt und sich die beiden Wörter innerhalb von fünf Wörtern voneinander befinden. Wenn keine Anzahl angegeben wird, wird der Standardabstand von 8 Wörtern verwendet. <sup>2</sup> <br/> > [!NOTE]> der **ONEAR** -Operator wird beim Durchsuchen von Postfächern nicht unterstützt. Dies funktioniert nur beim Durchsuchen von SharePoint-und OneDrive für Unternehmen-Websites. Wenn Sie Postfächer und Websites in derselben Suche durchsuchen und die Abfrage den **ONEAR** -Operator enthält, gibt die Suche Postfachelemente zurück, als würden Sie den **near** -Operator verwenden. Mit anderen Worten: die Suche gibt Elemente zurück, in denen sich die angegebenen Wörter unabhängig von der Reihenfolge, in der die Wörter auftreten, nahe beieinander befinden.|
+|ONEAR|Wort1 NEAR(n) Wort2|Ähnelt **near**, gibt jedoch Elemente mit Wörtern zurück, die sich in der angegebenen Reihenfolge nahe beieinander befinden. `best ONEAR(5) worst` Gibt beispielsweise ein beliebiges Element zurück, bei dem das Wort "am besten" vor dem Wort "Worst" auftritt und sich die beiden Wörter innerhalb von fünf Wörtern voneinander befinden. Wenn keine Anzahl angegeben wird, wird der Standardabstand von 8 Wörtern verwendet. <sup>2</sup> <br/> > [!NOTE]> der **ONEAR** -Operator wird beim Durchsuchen von Postfächern nicht unterstützt; Dies funktioniert nur beim Durchsuchen von SharePoint-und OneDrive für Unternehmen-Websites. Wenn Sie Postfächer und Websites in derselben Suche durchsuchen und die Abfrage den **ONEAR** -Operator enthält, gibt die Suche Postfachelemente zurück, als würden Sie den **near** -Operator verwenden. Mit anderen Worten: die Suche gibt Elemente zurück, in denen sich die angegebenen Wörter unabhängig von der Reihenfolge, in der die Wörter auftreten, nahe beieinander befinden.|
 |:|Eigenschaftswert|Der Doppelpunkt (:) in der `property:value` Syntax gibt an, dass der Wert der Eigenschaft, nach der gesucht wird, den angegebenen Wert enthält. `recipients:garthf@contoso.com` Gibt beispielsweise alle an garthf@contoso.com gesendeten Nachrichten zurück.|
 |=|Eigenschaft = Wert|Identisch mit dem **:** -Operator.|
 |\<|Eigenschaft\<Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, kleiner ist als der angegebene Wert.<sup>1</sup>|
@@ -155,6 +160,7 @@ Boolesche Suchoperatoren wie **and**, **or**und **Not**helfen Ihnen bei der Defi
 |"  "|"fair Value"  <br/> Betreff:"Vierteljährliche Finanzdaten"|Verwenden Sie doppelte Anführungszeichen (""), um nach einem genauen Ausdruck oder Begriff `property:value` in Schlüsselwort-und Suchabfragen zu suchen.|
 |\*|cat\*  <br/> Betreff:set\*|Präfix-Platzhaltersuchen (wobei das Sternchen am Ende eines Wortes eingefügt wird) entsprechen NULL oder mehr Zeichen in Schlüsselwörtern oder `property:value` Abfragen. Beispielsweise werden `title:set*` Dokumente zurückgegeben, die das Wort Set, das Setup und die Einstellung (und andere Wörter, die mit "Set" beginnen) im Dokumenttitel enthalten.  <br/><br/> **Hinweis:** Sie können nur Präfix-Platzhaltersuchen verwenden; beispielsweise **Cat\* ** oder **Sets\***. Suffix-suchen ( ** \*Cat** ), Infix-suchen ( **\*c t** ) und Teil Zeichenfolgensuchen ( ** \*Cat\* ** ) werden nicht unterstützt.|
 |(  )| (fair OR frei) AND (Von:contoso.com)  <br/> (IPO OR Initiale) AND (Aktien OR Anteile)  <br/> (Vierteljährliche Finanzdaten)|Mit Klammern werden Boolesche Ausdrücke,  `property:value`-Elemente und Schlüsselwörter gruppiert.  `(quarterly financials)` gibt z. B. Elemente zurück, die die Wörter "Vierteljährliche" und "Finanzdaten" enthalten.  |
+|||||
    
 > [!NOTE]
 > <sup>1</sup> verwenden Sie diesen Operator für Eigenschaften, die Datums-oder numerische Werte aufweisen.<br/> <sup>2</sup> boolesche Suchoperatoren müssen groß geschrieben sein; Beispiel: **und**. Wenn Sie einen Kleinbuchstaben-Operator wie **und**verwenden, wird er als Schlüsselwort in der Suchabfrage behandelt. 
@@ -186,6 +192,7 @@ Erstellen Sie eine Bedingung mithilfe allgemeiner Eigenschaften beim Durchsuchen
 |Größe (in Byte)|Für e-Mail und Dokumente die Größe des Elements (in Byte).|
 |Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Für Dokumente der Titel des Dokuments. Wie bereits erläutert, ist die Title-Eigenschaft in Microsoft Office Dokumenten angegebene Metadaten. Sie können den Namen von mehr als einem Betreff/Titel eingeben, getrennt durch Kommas. Mindestens zwei Werte sind durch den **or** -Operator logisch miteinander verbunden.|
 |Compliancetag|Für e-Mails und Dokumente werden Bezeichnungen, die Nachrichten und Dokumenten automatisch durch Bezeichnungsrichtlinien oder Bezeichnungen zugewiesen wurden, die manuell von Benutzern zugewiesen wurden. Bezeichnungen werden verwendet, um e-Mails und Dokumente für die Datensteuerung zu klassifizieren und Aufbewahrungsregeln basierend auf der Klassifizierung durchzusetzen, die von der Bezeichnung definiert wird. Sie können einen Teil des Bezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Beschriftungsnamen eingeben. Weitere Informationen finden Sie unter [Overview of Labels in Office 365](labels.md).|
+|||
   
 ### <a name="conditions-for-mail-properties"></a>Bedingungen für E-Mail-Eigenschaften
 
@@ -202,6 +209,7 @@ Erstellen Sie beim Durchsuchen von Postfächern oder öffentlichen Ordnern eine 
 |Gesendet|Das Datum, an dem eine E-Mail vom Absender gesendet wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Gesendet“.|
 |Betreff|Der Text in der Betreffzeile einer E-Mail.|
 |An|Der Empfänger einer e-Mail-Nachricht.|
+|||
   
 ### <a name="conditions-for-document-properties"></a>Bedingungen für Dokumenteigenschaften
 
@@ -214,6 +222,7 @@ Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; beispielsweise docx, 1, PPTX oder xlsx. Dies ist die gleiche Eigenschaft wie die FileExtension-Website Eigenschaft.|
+|||
   
 ### <a name="operators-used-with-conditions"></a>Mit Bedingungen verwendete Operatoren
 
@@ -234,6 +243,7 @@ Beim Hinzufügen einer Bedingung können Sie einen Operator auswählen, der für
 |Weniger|`size<value`|Gibt Elemente zurück, die größer oder gleich dem angegebenen Wert sind. <sup>1</sup>|
 |Less or equal|`size<=value`|Gibt Elemente zurück, die größer oder gleich dem angegebenen Wert sind. <sup>1</sup>|
 |Not equal|`size<>value`|Gibt Elemente zurück, die nicht der angegebenen Größe entsprechen. <sup>1</sup>|
+|||
    
 > [!NOTE]
 > <sup>1</sup> dieser Operator steht nur für Bedingungen zur Verfügung, die die Size-Eigenschaft verwenden. 
@@ -320,7 +330,7 @@ In diesem Beispiel werden e-Mail-Nachrichten oder Kalender Besprechungen zurück
   
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Suchen nach Websiteinhalten, die für externe Benutzer freigegeben sind
 
-Sie können auch das Feature für die Inhaltssuche im Security & Compliance Center verwenden, um nach Dokumenten zu suchen, die in SharePoint gespeichert sind, und OneDrive für Unternehmen Websites, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dies kann Ihnen helfen, vertrauliche oder proprietäre Informationen zu identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Sie können dies tun, indem Sie `ViewableByExternalUsers` die-Eigenschaft in einer Stichwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die für externe Benutzer freigegeben wurden, indem Sie eine der folgenden Freigabemethoden verwenden: 
+Sie können auch das Feature für die Inhaltssuche im Security #a0 Compliance Center verwenden, um nach Dokumenten zu suchen, die in SharePoint gespeichert sind, und OneDrive für Unternehmen Websites, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dies kann Ihnen helfen, vertrauliche oder proprietäre Informationen zu identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Sie können dies tun, indem Sie `ViewableByExternalUsers` die-Eigenschaft in einer Stichwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die für externe Benutzer freigegeben wurden, indem Sie eine der folgenden Freigabemethoden verwenden: 
   
 - Eine Freigabeeinladung, bei der sich Benutzer als authentifizierter Benutzer bei Ihrer Organisation anmelden müssen.
     

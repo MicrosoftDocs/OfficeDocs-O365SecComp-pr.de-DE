@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155207"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703808"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analysieren von Daten in einer Überprüfungsgruppe in Advanced eDiscovery
 
@@ -39,7 +39,7 @@ So analysieren Sie Daten in einem Überprüfungs Satzes:
 
 3. Klicken Sie auf Überprüfungs **Sätze verwalten**.
 
-4. Klicken Sie auf **analysieren**.
+4. Klicken Sie auf **Analyse für die Überprüfungsgruppe ausführen**.
 
 Sie können den Fortschritt der Analyse auf der Registerkarte **Aufträge** der Anfrage überprüfen.
 
@@ -53,7 +53,7 @@ So zeigen Sie einen Analysebericht für eine Überprüfungsgruppe an:
 
 2. Klicken Sie auf Überprüfungs **Sätze verwalten**.
 
-3. Klicken Sie auf **Bericht**.
+3. Klicken Sie auf **Bericht anzeigen**.
 
 Der Bericht enthält vier Komponenten aus der Analyse:
 

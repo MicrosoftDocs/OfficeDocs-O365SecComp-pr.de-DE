@@ -1,9 +1,9 @@
 ---
-title: Office 365 ATP-Sicherheits Links-Warn Seiten
+title: Office 365 Warn Seiten für ATP-sichere Links
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: IT Pro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,102 +13,102 @@ search.appverid:
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
-description: Hier erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
-ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Erhalten Sie eine Übersicht über Warn Seiten, die möglicherweise angezeigt werden, wenn Office 365 Advanced Threat Protection funktioniert.
+ms.openlocfilehash: 70bd93aead82a867936031f754d172fdeb22f421
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251275"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017627"
 ---
-# <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP-Sicherheits Links-Warn Seiten
+# <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 Warn Seiten für ATP-sichere Links
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Office 365 Enterprise-Kunden. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und weitere Informationen zu sicheren Links in Outlook benötigen, lesen Sie den Thema [erweiterte Outlook.com-Sicherheit](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die [Office 365 Advanced Threat Protection](office-365-atp.md)haben. Wenn Sie Outlook.com, Office 365 Home oder Office 365 Personal verwenden und nach Informationen zu sicheren Links in Outlook suchen, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Funktionen wie ATP- [sichere Links](atp-safe-links.md), [ATP-Anhänge](atp-safe-attachments.md)und Schutz vor [Phishing](anti-phishing-protection.md). Wenn der Schutz vorhanden ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder bösartig identifiziert wird, wird möglicherweise verhindert, dass Sie die URL öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird stattdessen möglicherweise eine Warnungsseite angezeigt. 
+[Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) schützt Ihre Organisation vor Phishing-versuchen und Schadsoftware durch Features wie ATP- [sichere Links](atp-safe-links.md), [ATP-sichere Anhänge](atp-safe-attachments.md)und [Schutz vor Phishing](anti-phishing-protection.md). Wenn der Schutz aktiviert ist, werden Links (URLs) in e-Mail-Nachrichten und Office-Dokumenten überprüft. Wenn eine URL als verdächtig oder böswillig erkannt wird, können Sie möglicherweise daran gehindert werden, die URL zu öffnen, wenn Sie darauf klicken. Anstatt direkt zur Website zu wechseln, wird möglicherweise stattdessen eine Warn Seite angezeigt. 
   
-In diesem Artikel finden Sie Beispiele für Warn Seiten, die möglicherweise angezeigt werden, sowie aktuelle Updates für Warn Seiten.
+Lesen Sie diesen Artikel, um Beispiele für Warn Seiten anzuzeigen, die möglicherweise zusammen mit den neuesten Updates für Warn Seiten angezeigt werden.
   
-## <a name="examples-of-warning-pages"></a>Beispiele für Warnungs Seiten
+## <a name="examples-of-warning-pages"></a>Beispiele für Warn Seiten
 
-### <a name="atp-is-scanning-the-link"></a>ATP überprüft den Link
+### <a name="atp-is-scanning-the-link"></a>ATP scannt den Link
 
-Eine URL wird von ATP Safe Links gescannt. Möglicherweise müssen Sie einen Moment warten, um den Link erneut zu testen.
+Eine URL wird von ATP-Sicherheits Links überprüft. Möglicherweise müssen Sie ein paar Minuten warten, um den Link erneut zu versuchen.
 
-![ATP überprüft den Link](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+![ATP scannt den Link](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
-### <a name="a-url-is-in-a-suspicious-email-message"></a>Eine URL befindet sich in einer verdächtigen e-Mail-Nachricht
+### <a name="a-url-is-in-a-suspicious-email-message"></a>Eine URL ist in einer verdächtigen e-Mail-Nachricht
 
-Die URL befindet sich in einer e-Mail-Nachricht, die anderen e-Mail-Nachrichten ähnlich scheint, die als verdächtig gelten. Es wird empfohlen, die e-Mail-Nachricht zu überprüfen, bevor Sie mit der Website fortfahren.
+Die URL befindet sich in einer e-Mail-Nachricht, die anderen e-Mail-Nachrichten ähnlich scheint, die als verdächtig eingestuft werden. Es wird empfohlen, die e-Mail-Nachricht zu überprüfen, bevor Sie mit der Website fortfahren.
 
-![Diese URL befindet sich in einer verdächtigen e-Mail-Nachricht](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+![Diese URL ist in einer verdächtigen e-Mail-Nachricht](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>Eine URL befindet sich in einer Nachricht, die als Phishing-Versuch identifiziert wurde.
 
-Die URL befindet sich in einer e-Mail-Nachricht, die als Phishing-Angriff identifiziert wurde. Daher werden alle URLs in der e-Mail-Nachricht blockiert. Es wird empfohlen, dass Sie nicht zur Website wechseln.
+Die URL befindet sich in einer e-Mail-Nachricht, die als Phishing-Angriff identifiziert wurde. Daher werden alle URLs in der e-Mail-Nachricht blockiert. Es wird empfohlen, dass Sie nicht mit der Website fortfahren.
 
 ![Diese URL befindet sich in einer Nachricht, die als Phishing-Versuch identifiziert wurde.](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
 ### <a name="a-site-has-been-identified-as-malicious"></a>Eine Website wurde als bösartig identifiziert
 
-Die URL verweist auf eine Website, die als bösartig identifiziert wurde.  <br/> Es wird empfohlen, dass Sie nicht zur Website wechseln.
+Die URL verweist auf eine Website, die als bösartig identifiziert wurde.  <br/> Es wird empfohlen, dass Sie nicht mit der Website fortfahren.
 
 ![Diese Website wurde als bösartig identifiziert](media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
 ### <a name="a-site-is-blocked"></a>Eine Website ist blockiert
 
-Die URL ist für Ihre Organisation blockiert. Es gibt mehrere Gründe, warum eine URL blockiert werden kann. Es wird empfohlen, dass Sie sich an den Office 365-Administrator Ihrer Organisation wenden.
+Die URL wird für Ihre Organisation blockiert. Es gibt mehrere Gründe, warum eine URL blockiert werden kann. Es wird empfohlen, dass Sie sich an den Office 365 Administrator Ihrer Organisation wenden.
 
 ![Diese Website ist blockiert](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
 ### <a name="an-error-has-occurred"></a>An error has occurred
 
-Eine Art von Fehler ist aufgetreten, und die URL kann nicht geöffnet werden.
+Es ist eine Art von Fehler aufgetreten, und die URL kann nicht geöffnet werden.
 
 ![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
 
-## <a name="recent-updates-to-warning-pages"></a>Aktuelle Updates zu Warnungs Seiten
+## <a name="recent-updates-to-warning-pages"></a>Zuletzt verwendete Updates für Warn Seiten
 
-Mehrere Warn Seiten wurden kürzlich für Office 365 ATP aktualisiert. Wenn die aktualisierten Seiten noch nicht angezeigt werden, werden Sie in Kürze angezeigt. Die Updates bieten ein neues Farbschema, weitere Details und die Möglichkeit, trotz der angegebenen Warnung und Empfehlungen zu einer Website zu wechseln.
+Einige Warn Seiten wurden kürzlich für Office 365 ATP aktualisiert. Wenn die aktualisierten Seiten noch nicht angezeigt werden, werden Sie in Kürze darauf warten. Die Updates umfassen ein neues Farbschema, weitere Details und die Möglichkeit, trotz der vorgegebenen Warnungen und Empfehlungen zu einer Website zu gelangen.
 
-### <a name="url-scan-in-progress"></a>URL-Überprüfung wird ausgeführt
-
-Ursprüngliche Warnungsseite:
-
-![Ursprüngliche Warnungsseite zu einer URL-Überprüfung wird ausgeführt](media/04368763-763f-43d6-94a4-a48291d36893.png)
-
-Aktualisierte Warnungsseite:
-
-![ATP überprüft den Link](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
-
-### <a name="malicious-site-warning"></a>Warnung vor böswilligen Websites
+### <a name="url-scan-in-progress"></a>URL-Scan wird ausgeführt
 
 Ursprüngliche Warnungsseite:
 
-![Ursprüngliche Warnungsseite zu einer böswilligen Website](media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+![Ursprüngliche Warnungsseite zu einer ausgeführten URL-Überprüfung](media/04368763-763f-43d6-94a4-a48291d36893.png)
 
-Aktualisierte Warnungsseite:
+Aktualisierte Warn Seite:
+
+![ATP scannt den Link](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+
+### <a name="malicious-site-warning"></a>Warnung vor Schadsoftware
+
+Ursprüngliche Warnungsseite:
+
+![Ursprüngliche Warnungsseite zu einer bösartigen Website](media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+
+Aktualisierte Warn Seite:
 
 ![Diese Website wurde als bösartig identifiziert](media/058883c8-23f0-4672-9c1c-66b084796177.png)
 
-### <a name="blocked-url-warning"></a>Warnung für blockierte URL
+### <a name="blocked-url-warning"></a>Warnung zu blockierten URLs
 
 Ursprüngliche Warnungsseite:
 
-![Ursprüngliche Warnungsseite zu einer blockierten URL](media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![Ursprüngliche Warnungsseite zu einer gesperrten URL](media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
-Aktualisierte Warnungsseite:
+Aktualisierte Warn Seite:
 
 ![Diese Website ist blockiert](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
-### <a name="error-occurred-warning-page"></a>Warnungsseite "Fehler"
+### <a name="error-occurred-warning-page"></a>Warnungsseite "Fehler aufgetreten"
 
 Ursprüngliche Warnungsseite:
 
-![Warnungsseite "Fehler aufgetreten"](media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+![Ursprüngliche "Fehler aufgetreten"-Warnungsseite](media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
 
-Aktualisierte Warnungsseite:
+Aktualisierte Warn Seite:
 
 ![An error has occurred](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    

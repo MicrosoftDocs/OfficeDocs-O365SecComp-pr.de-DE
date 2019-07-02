@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratoren können einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn Unternehmensseite in Office 365 einrichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Kompatibilität der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017946"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079379"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Einrichten eines Connectors zum Archivieren von LinkedIn Daten in Office 365 (Vorschau)
 
@@ -27,9 +27,11 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
 
 ## <a name="before-you--begin"></a>Bevor Sie beginnen
 
-- Sie müssen über die Anmeldeinformationen (e-Mail-Adresse oder Telefonnummer und das Kennwort) eines LinkedIn-Benutzerkontos verfügen, das ein Administratorkonto für die Seite LinkedIn Company ist, die Sie archivieren möchten. Sie verwenden diese Anmeldeinformationen, um sich beim Einrichten des Connectors bei LinkedIn anzumelden.
+- Ihre Organisation muss einwilligen, dass der Office 365 Import Dienst auf Postfachdaten in Ihrer Organisation zugreifen kann. Um dieser Anforderung zuzustimmen, gehen Sie zu [dieser Seite](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), melden Sie sich mit den Anmeldeinformationen eines Office 365 globalen Administrators an, und nehmen Sie dann die Anforderung an.
 
 - Dem Benutzer, der einen Unternehmensseiten-Konnektor für LinkedIn erstellt, muss in Exchange Online die Rolle "Post Fach Import/-Export" zugewiesen sein. Dies ist erforderlich, um im Security #a0 Compliance Center auf die Seite Archivieren von **drittanbieterdaten** zuzugreifen. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. Sie können die Rolle "Post Fach Import exportieren" der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle "Post Fach Import Export" zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie im Abschnitt [Erstellen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern von Rollengruppen](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) im Artikel "Verwalten von Rollengruppen in Exchange Online".
+
+- Sie müssen über die Anmeldeinformationen (e-Mail-Adresse oder Telefonnummer und das Kennwort) eines LinkedIn-Benutzerkontos verfügen, das ein Administratorkonto für die Seite LinkedIn Company ist, die Sie archivieren möchten. Sie verwenden diese Anmeldeinformationen, um sich beim Einrichten des Connectors bei LinkedIn anzumelden.
 
 ## <a name="create-a-linkedin-connector"></a>Erstellen eines LinkedIn Connectors
 
@@ -50,7 +52,6 @@ Nachdem die Daten der LinkedIn Unternehmensseite in einem Postfach gespeichert w
    Eine Assistentenseite wird mit einer Liste aller LinkedIn Unternehmensseiten angezeigt, die dem Konto zugeordnet sind, mit dem Sie sich angemeldet haben. Ein Connector kann nur für eine Unternehmensseite konfiguriert werden. Wenn Ihre Organisation über mehrere LinkedIn Unternehmensseiten verfügt, müssen Sie für jeden eine Verbindung erstellen.
 
    ![Eine Seite mit einer Liste von LinkedIn Unternehmensseiten wird angezeigt](media/LinkedInSelectCompanyPage.png)
-
 
 6. Wählen Sie die Unternehmensseite aus, von der Sie Elemente archivieren möchten, und klicken Sie dann auf **weiter**.
 
@@ -80,4 +81,4 @@ Wenn Sie weitere Details anzeigen möchten, klicken Sie auf den Konnektor in der
    subject:"Contoso Company Page"
    ```
 
-- Damit Sie das Auffinden oder Verwalten von in Office 365 importierten LinkedIn-Elementen vereinfachen können, kann der Besitzer des Speicher Postfachs (oder jeder, dem die Berechtigung "FullAccess" zugewiesen ist) eine Posteingangsregel einrichten, um die Elemente von einer bestimmten LinkedIn Unternehmensseite in einen bestimmten Ordner zu verschieben. Dies ist hilfreich, wenn das Speicher Postfach zum Archivieren von Elementen verwendet wird, die aus unterschiedlichen Drittanbieter-Datenquellen importiert werden. Sie können beispielsweise eine Posteingangsregel erstellen, mit der alle Elemente, die den Namen einer bestimmten LinkedIn Unternehmensseite enthalten, im Feld Betreff in einen bestimmten Ordner verschoben werden.
+- Damit Sie das Auffinden oder Verwalten von in Office 365 importierten LinkedIn-Elementen vereinfachen können, kann der Besitzer des Speicher Postfachs (oder jeder, dem die Berechtigung "FullAccess" zugewiesen ist) eine Posteingangsregel einrichten, um die Elemente von einer LinkedIn Unternehmensseite in einen bestimmten Ordner zu verschieben. Dies ist hilfreich, wenn das Speicher Postfach zum Archivieren von Elementen verwendet wird, die aus anderen Datenquellen von Drittanbietern importiert wurden. Sie können beispielsweise eine Posteingangsregel erstellen, mit der alle Elemente, die den Namen einer bestimmten LinkedIn Unternehmensseite enthalten, im Feld Betreff in einen bestimmten Ordner verschoben werden.

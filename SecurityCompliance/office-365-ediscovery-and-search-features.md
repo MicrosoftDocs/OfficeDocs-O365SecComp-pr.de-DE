@@ -1,5 +1,5 @@
 ---
-title: Office 365 eDiscovery und Such Features (Übersicht)
+title: Office 365-eDiscovery-und Such Features (Übersicht)
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,54 +12,58 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Eine Übersicht über die eDiscovery-Funktion und andere Suchfeatures in Office 365 für die Überwachung und Transparenz.
-ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Eine Übersicht über das eDiscovery-Feature und andere Suchfeatures in Office 365 für die Verwendung und Transparenz der Überwachung.
+ms.openlocfilehash: 985a7fad9d321005439ea592b6fef8744a88220f
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262807"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622455"
 ---
 # <a name="ediscovery-and-search-features"></a>eDiscovery und Suchfunktionen 
 
 ## <a name="ediscovery"></a>eDiscovery
-Mit der eDiscovery-Funktion können Administratoren, Compliance Officer und andere autorisierte Benutzer eine umfassende Untersuchung der Benutzeraktivität von Office 365 durchführen. Sicherheitsbeauftragte mit den entsprechenden Berechtigungen können Suchvorgänge durchführen und Inhalte speichern. Die Suchergebnisse sind die gleichen Ergebnisse, die Sie von einer Inhaltssuche erhalten, mit der Ausnahme, dass ein eDiscovery-Fall für alle zugewiesenen Haltebereiche erstellt wird. Die Ergebnisse aus eDiscovery-suchen werden aus Sicherheitsgründen verschlüsselt, und die exportierten Daten können mit [Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4)analysiert werden.
+
+Die eDiscovery-Funktion stellt Administratoren, Compliance-Verantwortlichen und anderen autorisierten Benutzern eine zentrale Stelle zur Verfügung, um eine umfassende Untersuchung Office 365 Benutzeraktivitäten durchzuführen. Sicherheitsbeauftragte mit den entsprechenden Berechtigungen führen Suchvorgänge durch und platzieren Inhalte in der Aufbewahrungsstelle. Bei den Suchergebnissen handelt es sich um dieselben Ergebnisse wie bei einer Inhaltssuche, es werden jedoch keine eDiscovery-Fälle für alle angewendeten Haltestatus erstellt. Die Ergebnisse von eDiscovery-suchen werden aus Sicherheitsgründen verschlüsselt, und Sie können exportierte Daten mit [Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4)analysieren.
 
 ## <a name="content-search"></a>Inhaltssuche
-Die [Inhaltssuche](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) ist ein neues eDiscovery-Such Tool, das verbesserte Skalierungs-und Leistungsfunktionen für frühere eDiscovery-Such Tools bereitstellt. Sie können die Inhaltssuche zum Durchsuchen von Postfächern, öffentlichen Ordnern, SharePoint Online-Websites und OneDrive für Geschäftsstandorte verwenden. Die Inhaltssuche wurde speziell für sehr große Suchvorgänge entwickelt. Die Anzahl von Postfächern und Websites, die Sie durchsuchen können, ist unbegrenzt. Außerdem gibt es keine Begrenzung für die Anzahl der Suchvorgänge, die gleichzeitig ausgeführt werden können. Nachdem Sie eine Suche ausgeführt haben, wird die Anzahl der Inhaltsquellen und eine geschätzte Anzahl von Suchergebnissen im Detailbereich auf der Suchseite angezeigt, auf der Sie eine Vorschau der Ergebnisse anzeigen oder Sie auf einen lokalen Computer exportieren können. Wenn Ihre Organisation über ein Office 365 Enterprise E5-Abonnement verfügt, können Sie [die Ergebnisse](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) auch mithilfe der leistungsstarken Analysefunktionen von [Office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116)vorbereiten.
+
+Bei der [Inhaltssuche](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) handelt es sich um ein eDiscovery-Such Tool, das verbesserte Skalierungs-und Leistungsfunktionen gegenüber früheren eDiscovery-Such Tools bereitstellt. Sie verwenden die Inhaltssuche zum Durchsuchen von Postfächern, öffentlichen Ordnern, SharePoint Online Websites und OneDrive für Unternehmen Speicherorten. Die Inhaltssuche unterstützt große Suchvorgänge. Es gibt keine Beschränkungen für die Anzahl der Postfächer und Websites, die Sie durchsuchen können. Außerdem gibt es keine Beschränkungen für die Anzahl der gleichzeitig ausgeführten Suchvorgänge. Nachdem Sie eine Suche ausgeführt haben, wird die Anzahl der Inhaltsquellen und eine geschätzte Anzahl von Suchergebnissen im Detailbereich auf der Suchseite angezeigt. Sie können eine Vorschau der Ergebnisse anzeigen oder Sie auf einen lokalen Computer exportieren. Wenn Ihre Organisation über ein Office 365 Enterprise E5-Abonnement verfügt, können Sie [die Ergebnisse](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) zur Analyse mithilfe der leistungsstarken Analysefunktionen von [Office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116)vorbereiten.
 
 ## <a name="audit-log-search"></a>Überwachungsprotokollsuche
-Zusätzlich zum Nachverfolgen von Änderungen in Ihrer Office 365-Organisation können Kunden auch Überwachungsberichte anzeigen und Überwachungsprotokolle exportieren. Sobald die Überwachung für einen Office 365-Mandanten aktiviert ist, werden Benutzer-und Verwaltungsaktivitäten für diesen Mandanten in Ereignisprotokollen aufgezeichnet und durchsuchbar gemacht. Sie können beispielsweise die postfachüberwachungsprotokollierung verwenden, um die Aktionen nachzuverfolgen, die für ein Postfach durch andere Benutzer als den Postfachbesitzer durchgeführt wurden. Außerdem können Compliance Officer die Such-und Filterfunktionen verwenden, um zu sehen, ob ein Benutzer ein bestimmtes Dokument angezeigt oder heruntergeladen hat, oder ob ein Administrator Benutzer Verwaltungsaktivitäten durchgeführt oder Änderungen an der Mandanten Konfiguration in den letzten 90 Tagen vorgenommen hat. Suchergebnisse können wertvolle forensische Informationen zu bestimmten Aktivitäten enthalten, die von einem Benutzer oder Administrator durchgeführt wurden. Eine Beschreibung der Benutzer-und Verwaltungsaktivitäten, die in Office 365 protokolliert werden, finden Sie unter über [wachte Aktivitäten in office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#auditlogevents) .
 
-Ereignisse aus SharePoint Online und OneDrive for Business werden innerhalb von 30 Minuten nach ihrem Auftreten im Protokoll angezeigt. Ereignisse von Exchange Online werden innerhalb von 24 Stunden nach dem Auftreten in den Überwachungsprotokollen angezeigt. Anmeldeereignisse von Azure AD stehen innerhalb von Minuten zur Verfügung, und andere Verzeichnis Ereignisse von Azure AD stehen innerhalb von 24 Stunden zur Verfügung. Ereignisse in den Überwachungsprotokoll-Suchergebnissen können auch zur weiteren Analyse exportiert werden. (Maximal 50.000 Einträge können aus einer einzelnen Überwachungsprotokoll Suche exportiert werden. Um mehr Einträge zu exportieren, die diesen Grenzwert aufweisen, verringern Sie den Datumsbereich, oder führen Sie mehrere Überwachungsprotokoll suchen aus.)
+Neben dem Nachverfolgen von Änderungen in Ihrer Office 365 Organisation können Sie Überwachungsberichte anzeigen und Überwachungsprotokolle exportieren. Nachdem die Überwachung für einen Office 365 Mandanten aktiviert wurde, werden Benutzer-und Verwaltungsaktivitäten in Ereignisprotokollen aufgezeichnet und durchsuchbar gemacht. Beispielsweise können Sie die postfachüberwachungsprotokollierung zum Nachverfolgen von Aktionen verwenden, die für ein Postfach von anderen Benutzern als dem Postfachbesitzer ausgeführt werden. Compliance Officer können die Such-und Filterfunktionen für bestimmte Benutzeraktivitäten verwenden. Beispielsweise zum Identifizieren von Benutzern, die ein bestimmtes Dokument angezeigt oder heruntergeladen haben, wenn Administratoren Benutzer Verwaltungsaktivitäten ausgeführt haben, oder um Änderungen in der Mandanten Konfiguration in den letzten 90 Tagen anzuzeigen. Suchergebnisse enthalten wertvolle forensische Informationen zu bestimmten Aktivitäten, die von einem Benutzer oder Administrator durchgeführt werden. Eine Beschreibung der in Office 365 angemeldeten Benutzer-und Verwaltungsaktivitäten finden Sie unter über [wachte Aktivitäten in Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#auditlogevents) .
 
-In der folgenden Tabelle sind einige der Informationen aufgeführt, die in Aktivitätsberichten angezeigt werden. Weitere Informationen dazu, welche Eigenschaften von jeder Office 365-Arbeitsauslastung gesammelt werden, finden Sie [in den detaillierten Eigenschaften im office 365-Überwachungsprotokoll](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3
-) .
+Ereignisse aus SharePoint Online und OneDrive für Unternehmen werden innerhalb von 30 Minuten nach dem Auftreten im Protokoll angezeigt. Ereignisse aus Exchange Online werden innerhalb von 24 Stunden nach dem Auftreten in den Überwachungsprotokollen angezeigt. Anmeldeereignisse aus Azure AD sind innerhalb von Minuten nach dem Auftreten verfügbar, und andere Verzeichnis Ereignisse aus Azure AD sind innerhalb von 24 Stunden nach dem Auftreten verfügbar. Sie können Abzüge in Überwachungsprotokoll-Suchergebnissen zur weiteren Analyse exportieren. Es werden maximal 50.000 Einträge aus der einzelnen Überwachungsprotokoll Suche exportiert. Um weitere Einträge zu exportieren, die diesen Grenzwert haben, reduzieren Sie den Datumsbereich, oder führen Sie mehrere Überwachungsprotokoll Suchvorgänge aus.
+
+In der folgenden Tabelle werden einige der Informationen aufgeführt, die in Aktivitätsberichten angezeigt werden. Weitere Informationen zu den Eigenschaften, die von den einzelnen Office 365 Arbeitslasten erfasst werden, finden Sie [in den detaillierten Eigenschaften im Office 365 Überwachungsprotokoll](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3) .
 
 | Eigenschaft | Beschreibung |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Datum | Datum und Uhrzeit des Ereignisses |
 | Benutzer | Benutzer, der die Aktion ausgeführt hat |
 | ClientIP | IPv4-oder IPv6-Adresse des Geräts, das verwendet wurde, als die Aktivität protokolliert wurde. |
-| CreationTime | Datum und Uhrzeit in koordinierter weltZeit (UTC), als der Benutzer die Aktivität ausgeführt hat. |
-| EventSource | Gibt an, dass ein Ereignis aufgetreten ist. Mögliche Werte sind SharePoint und objectModel. |
-| ID | ID des Berichts Eintrags. Die ID identifiziert den Bericht Eintrag eindeutig. |
-| Vorgang | Der Name des Benutzers oder der Aktivität, der dem in der Anzeigeergebnisse für diese Benutzeraktivität ausgewählten Wert entspricht. |
-| OrganizationId | GUID für den Office 365-Dienst der Organisation, in dem das Ereignis aufgetreten ist. |
-| UserAgent | Informationen zum Browser des Benutzers, die vom Browser bereitgestellt werden. |
-| UserId | Der Benutzer, der die Aktion (in der Eigenschaft "Operation" angegeben) ausgeführt hat, die dazu geführt hat, dass der Datensatz protokolliert wird. |
-| UserType | Der Benutzertyp, der den Vorgang ausgeführt hat. Die folgenden Werte geben den Benutzertyp an. |
+| CreationTime | Datum und Uhrzeit in koordinierter Weltzeit (Coordinated Universal Time, UTC), wenn der Benutzer die Aktivität ausgeführt hat. |
+| EventSource | Gibt an, dass ein Ereignis aufgetreten ist. Mögliche Werte sind SharePoint und ObjectModel. |
+| ID | ID des Berichts Eintrags. Die ID identifiziert den Berichtseintrag eindeutig. |
+| Vorgang | Name des Benutzers oder der Aktivität, der dem in der Anzeigeergebnisse für diese Benutzeraktivität ausgewählten Wert entspricht. |
+| OrganizationId | GUID für den Office 365 Dienst des Unternehmens, in dem das Ereignis aufgetreten ist. |
+| UserAgent | Informationen über den Browser des Benutzers, der vom Browser bereitgestellt wird. |
+| UserId | Benutzer, der die Aktion (in der Eigenschaft "Operation" angegeben) ausgeführt hat, die dazu geführt hat, dass der Datensatz protokolliert wurde. |
+| UserType | Der Typ des Benutzers, der den Vorgang ausgeführt hat. Die folgenden Werte geben den Benutzertyp an. |
 |  | 0 gibt einen regulären Benutzer an. |
-|  | 2 gibt einen Administrator in Ihrer Office 365-Organisation an. |
-|  | 3 gibt einen Microsoft-Datencenter-Administrator oder ein Rechenzentrum-Systemkonto an. |
-| Arbeitslast | Office 365-Dienst, in dem die Aktivität aufgetreten ist. Mögliche Werte für diese Eigenschaft sind: |
+|  | 2 gibt einen Administrator in Ihrer Office 365 Organisation an. |
+|  | 3 gibt ein Microsoft Datacenter-Administrator-oder Datacenter-Systemkonto an. |
+| Arbeitslast | Office 365 Dienst, auf dem die Aktivität aufgetreten ist. Mögliche Werte für diese Eigenschaft sind: |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |
 |  | Azure Active Directory-Berichte |
 
+Ausführliche Anweisungen zum Durchsuchen Office 365 Überwachungsprotokolle finden Sie unter [Suchen von Überwachungsprotokollen im Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
-Ausführliche Schritte zum Durchsuchen von Office 365-Überwachungsprotokollen finden Sie unter durch [Suchen von Überwachungsprotokollen in office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+## <a name="search-unified-audit-log"></a>Durchsuchen des einheitlichen Überwachungsprotokolls
 
-## <a name="search-unified-audit-log"></a>Einheitliches Überwachungsprotokoll durchsuchen
-Die Suchfunktion des Überwachungsprotokolls kann zum Durchsuchen des einheitlichen Überwachungsprotokolls verwendet werden. Office 365 bietet außerdem die Möglichkeit, dieses Protokoll mithilfe der Remote-PowerShell zu durchsuchen. Insbesondere kann das [Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) in Exchange Online PowerShell zum Durchsuchen des vereinheitlichten Überwachungsprotokolls von Ereignissen im Zusammenhang mit Benutzervorgängen aus Exchange Online, SharePoint Online, OneDrive for Business und Azure AD verwendet werden. Sie können nach allen Ereignissen in einem angegebenen Zeitraum suchen, oder Sie können die Ergebnisse basierend auf bestimmten Kriterien filtern, beispielsweise eine bestimmte Aktion, der Benutzer, der die Aktion ausgeführt hat, oder das Zielobjekt. Administratoren können bis zu drei gleichzeitig ausgeführte Exchange Online PowerShell-Sitzungen verwenden, um große Datumsbereiche zu unterteilen.
+Verwenden Sie die Überwachungsprotokoll-Suchfunktion, um das einheitliche Überwachungsprotokoll zu durchsuchen. Office 365 bietet auch die Möglichkeit zum Durchsuchen dieses Protokolls mithilfe von Remote-PowerShell. Das [Cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) in Exchange Online PowerShell wird verwendet, um das vereinheitlichte Überwachungsprotokoll von Ereignissen in Bezug auf Benutzervorgänge aus Exchange Online, SharePoint Online, OneDrive für Unternehmen und Azure AD zu durchsuchen. 
+
+Sie können nach allen Ereignissen in einem bestimmten Datumsbereich suchen oder die Ergebnisse auf der Grundlage bestimmter Kriterien filtern, beispielsweise einer bestimmten Aktion, des Benutzers, der die Aktion ausgeführt hat, oder des Zielobjekts. Administratoren können bis zu drei gleichzeitig ausgeführte Exchange Online PowerShell-Sitzungen verwenden, um große Datumsbereichs suchen aufzuteilen.

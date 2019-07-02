@@ -1,5 +1,5 @@
 ---
-title: Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
+title: 'Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center'
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Verwenden Sie das Security & Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
-ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+description: 'Verwenden Sie das Security #a0 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
+ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547990"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113289"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security & Compliance Center
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center
 
 ## <a name="introduction"></a>Einführung
 
@@ -31,9 +31,6 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument gesehen oder e
 - Benutzeraktivität in SharePoint Online und OneDrive für Unternehmen
     
 - Benutzeraktivität in Exchange Online (Exchange-postfachüberwachungsprotokollierung)
-    
-    > [!IMPORTANT]
-    > Die postfachüberwachungsprotokollierung muss für jedes Benutzerpostfach aktiviert sein, bevor Benutzeraktivitäten in Exchange Online protokolliert werden. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](enable-mailbox-auditing.md).
   
 - Administrator Aktivität in SharePoint Online
     
@@ -66,7 +63,7 @@ Sie müssen herausfinden, ob ein Benutzer ein bestimmtes Dokument gesehen oder e
 
 Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Suche im Office 365 Überwachungsprotokoll beginnen.
   
-- Sie (oder ein anderer Administrator) müssen zuerst die Überwachungsprotokollierung aktivieren, bevor Sie mit der Suche im Office 365 Überwachungsprotokoll beginnen können. Klicken Sie zum Aktivieren auf der Seite **Überwachungsprotokoll Suche** im Security & Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung für Ihre Organisation bereits aktiviert.) Nachdem Sie es aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen dies nur einmal tun. 
+- Sie (oder ein anderer Administrator) müssen zuerst die Überwachungsprotokollierung aktivieren, bevor Sie mit der Suche im Office 365 Überwachungsprotokoll beginnen können. Klicken Sie zum Aktivieren auf der Seite **Überwachungsprotokoll Suche** im Security #a0 Compliance Center auf **Aufzeichnung von Benutzer-und Administratoraktivitäten starten** . (Wenn dieser Link nicht angezeigt wird, wurde die Überwachung für Ihre Organisation bereits aktiviert.) Nachdem Sie es aktiviert haben, wird eine Meldung angezeigt, die besagt, dass das Überwachungsprotokoll vorbereitet wird und dass Sie eine Suche in einigen Stunden nach Abschluss der Vorbereitung ausführen können. Sie müssen dies nur einmal tun. 
     
     > [!NOTE]
     > Wir sind gerade dabei, die Überwachung standardmäßig zu aktivieren. Bis dahin können Sie Sie wie oben beschrieben aktivieren. 
@@ -74,7 +71,7 @@ Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Suche im Office 36
 - Sie müssen in Exchange Online die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" zugewiesen sein, um das Office 365 Überwachungsprotokoll durchsuchen zu können. Diese Rollen werden standardmäßig den Rollengruppen Compliance Management und Organisationsverwaltung auf der Seite **Berechtigungen** im Exchange Admin Center zugewiesen. Beachten Sie, dass globale Administratoren in Office 365 und Microsoft 365 automatisch als Mitglieder der Rollengruppe "Organisationsverwaltung" in Exchange Online hinzugefügt werden. Um einem Benutzer die Möglichkeit zu geben, das Office 365 Überwachungsprotokoll mit der minimalen Berechtigungsstufe zu durchsuchen, können Sie eine benutzerdefinierte Rollengruppe in Exchange Online erstellen, die nur-Ansicht-Überwachungsprotokolle oder die Rolle "Überwachungsprotokolle" hinzufügen und dann den Benutzer als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Wenn Sie einem Benutzer die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite **Berechtigungen** im Security & Compliance Center zuweisen, kann er das Office 365 Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Dies liegt daran, dass das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet ist. 
+    > Wenn Sie einem Benutzer die Rolle "nur Ansichts Überwachungsprotokolle" oder "Überwachungsprotokolle" auf der Seite **Berechtigungen** im Security #a0 Compliance Center zuweisen, kann er das Office 365 Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Dies liegt daran, dass das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet ist. 
   
 - Wenn eine überwachte Aktivität von einem Benutzer oder Administrator ausgeführt wird, wird ein Überwachungseintrag generiert und im Office 365 Überwachungsprotokoll für Ihre Organisation gespeichert. Die Zeitdauer, für die ein Überwachungsdatensatz aufbewahrt wird (und im Überwachungsprotokoll durchsuchbar), hängt von Ihrem Office 365-Abonnement und insbesondere vom Typ der Lizenz ab, die einem bestimmten Benutzer zugewiesen ist.
 
@@ -99,9 +96,9 @@ Lesen Sie unbedingt die folgenden Elemente, bevor Sie mit der Suche im Office 36
 
     Weitere Informationen finden Sie unter [Deaktivieren der Überwachungsprotokoll Suche in Office 365](turn-audit-log-search-on-or-off.md).
     
-- Wie bereits erwähnt, ist das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet, das **Such UnifiedAuditLog**ist. Das bedeutet, dass Sie dieses Cmdlet verwenden können, um das Office 365 Überwachungsprotokoll zu durchsuchen, anstatt die Seite **Überwachungsprotokoll Suche** im Security & Compliance Center zu verwenden. Sie müssen dieses Cmdlet in der Remote-PowerShell ausführen, die mit Ihrer Exchange Online Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Wie bereits erwähnt, ist das zugrunde liegende Cmdlet, das zum Durchsuchen des Überwachungsprotokolls verwendet wird, ein Exchange Online-Cmdlet, das **Such UnifiedAuditLog**ist. Das bedeutet, dass Sie dieses Cmdlet verwenden können, um das Office 365 Überwachungsprotokoll zu durchsuchen, anstatt die Seite **Überwachungsprotokoll Suche** im Security #a0 Compliance Center zu verwenden. Sie müssen dieses Cmdlet in der Remote-PowerShell ausführen, die mit Ihrer Exchange Online Organisation verbunden ist. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
-- Wenn Sie Daten programmgesteuert aus dem Office 365 Überwachungsprotokoll herunterladen möchten, sollten Sie die API für die Office 365 Verwaltungsaktivität anstelle eines PowerShell-Skripts verwenden. Die Office 365-Verwaltungs Aktivitäts-API ist ein Rest-Webdienst, mit dem Sie Betriebs-, Sicherheits-und Compliance-Überwachungslösungen für Ihre Organisation entwickeln können. Weitere Informationen finden Sie unter [API-Referenz zur Office 365-Verwaltungsaktivität](https://go.microsoft.com/fwlink/?linkid=852309).
+- Wenn Sie Daten programmgesteuert aus dem Office 365 Überwachungsprotokoll herunterladen möchten, sollten Sie die API für die Office 365 Verwaltungsaktivität anstelle eines PowerShell-Skripts verwenden. Die Office 365-Verwaltungs Aktivitäts-API ist ein Rest-Webdienst, mit dem Sie Betriebs-, Sicherheits-und Compliance-Überwachungslösungen für Ihre Organisation entwickeln können. Weitere Informationen finden Sie unter [API-Referenz zur Office 365-Verwaltungsaktivität](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
     
 - Es kann bis zu 30 Minuten oder bis zu 24 Stunden dauern, bis ein Ereignis eintritt, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen angezeigt wird. In der folgenden Tabelle ist die für die verschiedenen Dienste in Office 365 benötigte Zeit dargestellt.
     
@@ -149,11 +146,11 @@ Hier ist der Vorgang zum Durchsuchen des Überwachungsprotokolls in Office 365.
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
-    > Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung), um auf das Security & Compliance Center zuzugreifen, da dadurch verhindert wird, dass die Anmeldeinformationen, mit denen Sie gerade angemeldet sind, verwendet werden. Drücken Sie zum Öffnen einer InPrivate-Browsersitzung in Internet Explorer oder Microsoft Edge einfach STRG + UMSCHALT + P. Drücken Sie STRG + UMSCHALT + N, um eine private Browsersitzung in Google Chrome (als inkognito-Fenster bezeichnet) zu öffnen. 
+    > Verwenden Sie eine private Browsersitzung (keine reguläre Sitzung), um auf das Security #a0 Compliance Center zuzugreifen, da dadurch verhindert wird, dass die Anmeldeinformationen, mit denen Sie derzeit angemeldet sind, verwendet werden. Drücken Sie zum Öffnen einer InPrivate-Browsersitzung in Internet Explorer oder Microsoft Edge einfach STRG + UMSCHALT + P. Drücken Sie STRG + UMSCHALT + N, um eine private Browsersitzung in Google Chrome (als inkognito-Fenster bezeichnet) zu öffnen. 
   
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security & Compliance Center auf **Suchen**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
+3. Klicken Sie im linken Bereich des Security #a0 Compliance Center auf **Suchen**, und klicken Sie dann auf **Überwachungsprotokoll Suche**.
     
     Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
     
@@ -266,12 +263,12 @@ Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei 
     
 2. Klicken Sie auf **Ergebnisse exportieren** , und wählen Sie eine der folgenden Optionen aus: 
     
-  - **Geladene Ergebnisse speichern** Wählen Sie diese Option aus, um nur die Einträge zu exportieren, die unter **Ergebnisse** auf der Seite * * Audit Log Search * * angezeigt werden. Die heruntergeladene CSV-Datei enthält dieselben Spalten (und Daten), die auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). Eine zusätzliche Spalte (mit dem Namen **more**) ist in der CSV-Datei enthalten, die weitere Informationen aus dem Überwachungsprotokolleintrag enthält. Da Sie dieselben Ergebnisse exportieren, die auf der Seite **Überwachungsprotokoll Suche** geladen (und sichtbar) werden, werden maximal 5.000 Einträge exportiert. 
+     - **Geladene Ergebnisse speichern** – wählen Sie diese Option aus, um nur die Einträge zu exportieren, die unter **Ergebnisse** auf der Seite **Überwachungsprotokoll Suche** angezeigt werden. Die heruntergeladene CSV-Datei enthält dieselben Spalten (und Daten), die auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). Eine zusätzliche Spalte (mit dem Namen **more**) ist in der CSV-Datei enthalten, die weitere Informationen aus dem Überwachungsprotokolleintrag enthält. Da Sie dieselben Ergebnisse exportieren, die auf der Seite **Überwachungsprotokoll Suche** geladen (und sichtbar) werden, werden maximal 5.000 Einträge exportiert. 
     
-  - **Alle Ergebnisse herunterladen** Wählen Sie diese Option aus, um alle Einträge aus dem Office 365 Überwachungsprotokoll zu exportieren, die die Suchkriterien erfüllen. Für eine große Gruppe von Suchergebnissen wählen Sie diese Option aus, um alle Einträge aus dem Überwachungsprotokoll zusätzlich zu den 5.000-Ergebnissen herunterzuladen, die auf der Seite **Überwachungsprotokoll Suche** angezeigt werden können. Mit dieser Option werden die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen, und es werden zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte namens **Auditdata**. Das Herunterladen der Datei kann länger dauern, wenn Sie diese Exportoption auswählen, da die Datei viel größer sein kann als diejenige, die heruntergeladen wurde, wenn Sie die Option andere auswählen.
+     - **Alle Ergebnisse herunterladen** – wählen Sie diese Option aus, um alle Einträge aus dem Office 365 Überwachungsprotokoll zu exportieren, die die Suchkriterien erfüllen. Für eine große Gruppe von Suchergebnissen wählen Sie diese Option aus, um alle Einträge aus dem Überwachungsprotokoll zusätzlich zu den 5.000-Ergebnissen herunterzuladen, die auf der Seite **Überwachungsprotokoll Suche** angezeigt werden können. Mit dieser Option werden die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen, und es werden zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte namens **Auditdata**. Das Herunterladen der Datei kann länger dauern, wenn Sie diese Exportoption auswählen, da die Datei viel größer sein kann als diejenige, die heruntergeladen wurde, wenn Sie die Option andere auswählen.
     
-    > [!IMPORTANT]
-    > Sie können maximal 50.000 Einträge aus einer einzigen Überwachungsprotokoll Suche in eine CSV-Datei herunterladen. Wenn 50.000-Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es mehr als 50.000 Ereignisse gibt, die die Suchkriterien erfüllt haben. Um mehr als diesen Grenzwert zu exportieren, verwenden Sie einen Datumsbereich, um die Anzahl der Überwachungsprotokolleinträge zu verringern. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereichen ausführen, um mehr als 50.000 Einträge zu exportieren. 
+       > [!IMPORTANT]
+       > Sie können maximal 50.000 Einträge aus einer einzigen Überwachungsprotokoll Suche in eine CSV-Datei herunterladen. Wenn 50.000-Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es mehr als 50.000 Ereignisse gibt, die die Suchkriterien erfüllt haben. Um mehr als diesen Grenzwert zu exportieren, verwenden Sie einen Datumsbereich, um die Anzahl der Überwachungsprotokolleinträge zu verringern. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereichen ausführen, um mehr als 50.000 Einträge zu exportieren. 
   
 3. Nachdem Sie eine Exportoption ausgewählt haben, wird am unteren Rand des Fensters eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen, Sie im Ordner "Downloads" zu speichern oder in einem bestimmten Ordner zu speichern.
 
@@ -301,13 +298,13 @@ Klicken Sie auf einen der folgenden Links, um zu einer bestimmten Tabelle zu wec
 ||||
 |:-----|:-----|:-----|
 |[Datei-und Seiten Aktivitäten](#file-and-page-activities)<br/> |[Ordner Aktivitäten](#folder-activities)<br/> |[SharePoint-Listen Aktivitäten](#sharepoint-list-activities)<br/>|
-|[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Website Verwaltungsaktivitäten](#site-administration-activities)<br/> |
-|[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |[Sway-Aktivitäten](#sway-activities) <br/> |[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |
-|[Azure Ad Gruppen Verwaltungsaktivitäten](#azure-ad-group-administration-activities) <br/> |[Anwendungs Verwaltungsaktivitäten](#application-administration-activities) <br/> |[Aktivitäten für die Rollenverwaltung](#role-administration-activities) <br/> |
-|[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/>|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |[Erweiterte eDiscovery-Aktivitäten](#advanced-ediscovery-activities)<br/> |
-|[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |
-|[Jammern von Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow-Aktivitäten](#microsoft-flow-activities) <br/>|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)<br/>|
-|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities) <br/>|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)<br/>|
+|[Freigabe-und Zugriffs Anforderungs Aktivitäten](#sharing-and-access-request-activities)<br/> |[Synchronisierungsaktivitäten](#synchronization-activities)<br/> |[Aktivitäten für Websiteberechtigungen](#site-permissions-activities)<br/> |
+|[Website Verwaltungsaktivitäten](#site-administration-activities)<br/> |[Exchange-Postfachaktivitäten](#exchange-mailbox-activities)<br/> |[Sway-Aktivitäten](#sway-activities) <br/> |
+|[Benutzer Verwaltungsaktivitäten](#user-administration-activities) <br/> |[Azure Ad Gruppen Verwaltungsaktivitäten](#azure-ad-group-administration-activities) <br/> |[Anwendungs Verwaltungsaktivitäten](#application-administration-activities) <br/> |
+|[Aktivitäten für die Rollenverwaltung](#role-administration-activities) <br/> |[Aktivitäten der Verzeichnisverwaltung](#directory-administration-activities) <br/>|[eDiscovery-Aktivitäten](#ediscovery-activities) <br/> |
+|[Erweiterte eDiscovery-Aktivitäten](#advanced-ediscovery-activities)<br/> |[Power BI-Aktivitäten](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+|[Microsoft Teams-Aktivitäten](#microsoft-teams-activities) <br/> |[Jammern von Aktivitäten](#yammer-activities) <br/> |[Microsoft Flow-Aktivitäten](#microsoft-flow-activities) <br/>|
+|[Microsoft PowerApps-Aktivitäten](#microsoft-powerapps)<br/>|[Microsoft Stream-Aktivitäten](#microsoft-stream-activities) <br/>|[Exchange-Administratoraktivitäten](#exchange-admin-audit-log)<br/>|
 ||||
   
 ### <a name="file-and-page-activities"></a>Datei-und Seiten Aktivitäten
@@ -318,12 +315,16 @@ In der folgenden Tabelle werden die Datei-und Seiten Aktivitäten in SharePoint 
 |:-----|:-----|:-----|
 |Datei wird aufgerufen  <br/> |FileAccessed  <br/> |Ein Benutzer- oder Systemkonto greift auf eine Datei zu.  <br/> |
 |keine  <br/> |FileAccessedExtended  <br/> |Dies bezieht sich auf die "accessed file"-Aktivität (fileaccessed). Ein FileAccessedExtended-Ereignis wird protokolliert, wenn dieselbe Person während eines längeren Zeitraums (bis zu 3 Stunden) ständig auf eine Datei zugreift. Der Zweck der Protokollierung von FileAccessedExtended-Ereignissen besteht darin, die Anzahl der fileaccessed-Ereignisse zu verringern, die protokolliert werden, wenn ständig auf eine Datei zugegriffen wird. Dadurch wird das Rauschen mehrerer fileaccessed-Datensätze für die im Wesentlichen dieselbe Benutzeraktivität reduziert, und Sie können sich auf das anfängliche (und wichtigere) fileaccessed-Ereignis konzentrieren.  <br/> |
+|Geänderte Konformitätsrichtlinien Bezeichnung<br/> |ComplianceSettingChanged<br/> |Eine Aufbewahrungs Bezeichnung wurde auf ein Dokument angewendet oder daraus entfernt. Dieses Ereignis wird ausgelöst, wenn eine Aufbewahrungs Bezeichnung manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
+|Datensatzstatus in gesperrt geändert<br/> |LockRecord<br/> |Der Datensatzstatus einer Aufbewahrungs Bezeichnung, die ein Dokument als Datensatz klassifiziert, wurde gesperrt. Dies bedeutet, dass das Dokument nicht geändert oder gelöscht werden kann. Nur Benutzer, denen mindestens die Berechtigung Teilnehmer für eine Website zugewiesen ist, können den Datensatzstatus eines Dokuments ändern.<br/> |
+|Geänderter Datensatzstatus in entsperrt<br/> |UnlockRecord<br/> |Der Datensatzstatus einer Aufbewahrungs Bezeichnung, die ein Dokument als Datensatz klassifiziert, wurde entsperrt. Dies bedeutet, dass das Dokument geändert oder gelöscht werden kann. Nur Benutzer, denen mindestens die Berechtigung Teilnehmer für eine Website zugewiesen ist, können den Datensatzstatus eines Dokuments ändern.<br/><br/> |
 |Datei eingecheckt  <br/> |Filecheckedin  <br/> |Benutzer checkt ein Dokument ein, das aus einer Dokumentbibliothek ausgecheckt wurde.  <br/> |
 |Ausgecheckte Datei  <br/> |FileCheck out  <br/> |Ein Benutzer checkt ein Dokument aus, das sich in einer Dokumentbibliothek befindet. Benutzer können alle Dokumente, die für sie freigegeben wurden, auschecken oder ändern.  <br/> |
 |Kopierte Datei  <br/> |FileCopied  <br/> |Ein Benutzer kopiert ein Dokument von einer Website. Die kopierte Datei kann in einem anderen Ordner auf der Website gespeichert werden.  <br/> |
 |Gelöschte Datei  <br/> |FileDeleted  <br/> |Ein Benutzer löscht ein Dokument von einer Website.  <br/> |
 |Gelöschte Datei aus dem Papierkorb  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.  <br/> |
 |Gelöschte Datei aus dem endgültigen Papierkorb  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Der Benutzer löscht eine Datei aus dem endgültigen Papierkorb einer Website.  <br/> |
+|Konformitätsrichtlinien Bezeichnung für den gelöschten Datensatz<br/> |ComplianceRecordDelete<br/> |Ein Dokument, das als Datensatz klassifiziert wurde, wurde gelöscht. Ein Dokument wird als Datensatz betrachtet, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, auf das Dokument angewendet wird. <br/> |
 |Konflikt bei erkannter Dokument Sensitivität <br/>|DocumentSensitivityMismatchDetected<br/>|Der Benutzer lädt ein Dokument hoch, das mit einer Vertraulichkeits Bezeichnung klassifiziert wurde, die eine höhere Priorität aufweist als die Vertraulichkeits Bezeichnung, die auf die Website angewendet wird, in die das Dokument hochgeladen wird. Hinweis Dieses Ereignis wird nicht ausgelöst, wenn die auf eine Website angewendete Vertraulichkeits Bezeichnung eine höhere Priorität aufweist als die Vertraulichkeits Bezeichnung, die auf ein Dokument angewendet wird, das auf die Website hochgeladen wird. Weitere Informationen zur Priorität "Sensitivitäts Bezeichnung" finden Sie im Abschnitt "Bezeichnungs Priorität" in [Übersicht über Sensitivitäts Bezeichnungen](sensitivity-labels.md#label-priority-order-matters).<br/>|
 |Erkannte Schadsoftware in Datei  <br/> |FileMalwareDetected  <br/> |SharePoint-Antivirus-Engine erkennt Schadsoftware in einer Datei.  <br/> |
 |Auschecken der Datei verworfen  <br/> |FileCheckOutDiscarded  <br/> |Der Benutzer verwirft eine ausgecheckte Datei. Das bedeutet, dass alle Änderungen, die an der Datei vorgenommen wurden, während sie ausgecheckt war, verworfen und nicht in der Version des Dokuments in der Dokumentbibliothek gespeichert werden.  <br/> |
@@ -398,12 +399,12 @@ In der folgenden Tabelle werden die Benutzer Freigabe-und Zugriffs Anforderungs 
   
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
+|Berechtigungsstufe zur Websitesammlung hinzugefügt  <br/> |PermissionLevelAdded  <br/> |Eine Berechtigungsstufe wurde einer Websitesammlung hinzugefügt.  <br/> |
 |Akzeptierte Zugriffsanforderung  <br/> |AccessRequestAccepted  <br/> |Eine Zugriffsanforderung für eine Website, einen Ordner oder ein Dokument wurde akzeptiert, und dem anfordernden Benutzer wurde Zugriff erteilt.  <br/> |
 |Einladung zur Freigabe angenommen  <br/> |SharingInvitationAccepted  <br/> |Benutzer (Mitglied oder Gast) akzeptierten eine Freigabeeinladung und erhielten Zugriff auf eine Ressource. Dieses Ereignis enthält Informationen über den Benutzer, der eingeladen wurde, und die e-Mail-Adresse, die zum Annehmen der Einladung verwendet wurde (Sie können unterschiedlich sein). Diese Aktivität wird häufig von einem zweiten Ereignis begleitet, in dem beschrieben wird, wie dem Benutzer der Zugriff auf die Ressource gewährt wurde, beispielsweise das Hinzufügen des Benutzers zu einer Gruppe, die Zugriff auf die Ressource hat.  <br/> |
-|Berechtigungsstufe zur Websitesammlung hinzugefügt  <br/> |PermissionLevelAdded  <br/> |Eine Berechtigungsstufe wurde einer Websitesammlung hinzugefügt.  <br/> |
 |Blockierte Freigabeeinladung  <br/> |SharingInvitationBlocked  <br/> | Eine von einem Benutzer in Ihrer Organisation gesendete Freigabeeinladung wird aufgrund einer Richtlinie für externe Freigaben blockiert, die die externe Freigabe basierend auf der Domäne des Zielbenutzers zulässt oder ablehnt. In diesem Fall wurde die Freigabeeinladung blockiert, weil:  <br/>  Die Domäne des Zielbenutzers ist nicht in der Liste der zulässigen Domänen enthalten.  <br/>  Oder  <br/>  Die Domäne des Zielbenutzers ist in der Liste der blockierten Domänen enthalten.  <br/>  Weitere Informationen zum Zulassen oder Blockieren der externen Freigabe basierend auf Domänen finden Sie unter [restricted Domains Sharing in SharePoint Online and OneDrive für Unternehmen](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Erstellen eines Unternehmens-freigegebenen Links  <br/> |CompanyLinkCreated  <br/> |Der Benutzer hat einen unternehmensweiten Link zu einer Ressource erstellt. unternehmensweite Links können nur von Mitgliedern in Ihrer Organisation verwendet werden. Sie können nicht von Gästen verwendet werden.  <br/> |
 |Erstellte Zugriffsanforderung  <br/> |AccessRequestCreated  <br/> |Benutzer fordert Zugriff auf eine Website, einen Ordner oder ein Dokument an, für die Sie keine Zugriffsberechtigungen haben.  <br/> |
+|Erstellen eines Unternehmens-freigegebenen Links  <br/> |CompanyLinkCreated  <br/> |Der Benutzer hat einen unternehmensweiten Link zu einer Ressource erstellt. unternehmensweite Links können nur von Mitgliedern in Ihrer Organisation verwendet werden. Sie können nicht von Gästen verwendet werden.  <br/> |
 |Anonyme Verknüpfung erstellt  <br/> |AnonymousLinkCreated  <br/> |Der Benutzer hat einen anonymen Link zu einer Ressource erstellt. Jeder, der über diesen Link verfügt, kann auf die Ressource zugreifen, ohne authentifiziert werden zu müssen.  <br/> |
 |Erstellter sicherer Link  <br/> |SecureLinkCreated  <br/> |Für dieses Element wurde ein sicherer Freigabe Link erstellt.  <br/> |
 |Erstellte Freigabeeinladung  <br/> |SharingInvitationCreated  <br/> |Der Benutzer hat eine Ressource in SharePoint Online oder OneDrive für Unternehmen mit einem Benutzer freigegeben, der sich nicht im Verzeichnis Ihrer Organisation befindet.  <br/> |
@@ -503,27 +504,32 @@ In der folgenden Tabelle sind die Ereignisse aufgeführt, die aus Websiteverwalt
   
 ### <a name="exchange-mailbox-activities"></a>Exchange-Postfachaktivitäten
   
-In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfachüberwachungsprotokollierung protokolliert werden können. Postfachaktivitäten, die vom Postfachbesitzer, einem Delegierten Benutzer oder einem Administrator ausgeführt werden, werden protokolliert. Standardmäßig ist die postfachüberwachung in Office 365 nicht aktiviert. Die postfachüberwachungsprotokollierung muss für jedes Postfach aktiviert sein, bevor die Post Fach Aktivität protokolliert wird. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
+In der folgenden Tabelle sind die Aktivitäten aufgeführt, die von der postfachüberwachungsprotokollierung protokolliert werden können. Postfachaktivitäten, die vom Postfachbesitzer, einem Delegierten Benutzer oder einem Administrator ausgeführt werden, werden im Office 365 Überwachungsprotokoll für bis zu 90 Tage automatisch angemeldet. Beachten Sie, dass es für einen Administrator möglich ist, die postfachüberwachungsprotokollierung für alle Benutzer in Ihrem organizatin zu deaktivieren. In diesem Fall werden keine Postfachaktionen für einen Benutzer protokolliert. Weitere Informationen finden Sie unter [Verwalten der postfachüberwachung](enable-mailbox-auditing.md).
+
+ Sie können auch mithilfe des Cmdlets [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell nach Postfachaktivitäten suchen. 
   
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Berechtigungen für Stellvertretungs Postfächer hinzugefügt  <br/> |Add-MailboxPermission  <br/> |Ein Administrator hat dem Postfach einer anderen Person die Berechtigung FullAccess Postfach für einen Benutzer (als Stellvertreter bezeichnet) zugewiesen. Die FullAccess-Berechtigung ermöglicht es der Stellvertretung, das Postfach der anderen Person zu öffnen und den Inhalt des Postfachs zu lesen und zu verwalten.  <br/> |
-|Klassifizierte Nachricht als Datensatz  <br/> |ApplyRecordLabel<br/> |Eine Nachricht wurde als Datensatz klassifiziert. Dies tritt auf, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
+|Berechtigungen für Stellvertretungs Postfächer hinzugefügt  <br/> |AddMailboxPermissions  <br/> |Ein Administrator hat dem Postfach einer anderen Person die Berechtigung FullAccess Postfach für einen Benutzer (als Stellvertreter bezeichnet) zugewiesen. Die FullAccess-Berechtigung ermöglicht es der Stellvertretung, das Postfach der anderen Person zu öffnen und den Inhalt des Postfachs zu lesen und zu verwalten.  <br/> |
+|Benutzer mit Stellvertreter Zugriff auf Kalenderordner hinzugefügt oder entfernt<br/> |UpdateCalendarDelegation<br/> |Ein Benutzer wurde dem Kalender des Postfachs eines anderen Benutzers als Stellvertreter hinzugefügt oder daraus entfernt. Mit der Kalender Delegierung kann ein anderer Benutzer in derselben Organisation Berechtigungen zum Verwalten des Kalenders des Postfachbesitzers erhalten. <br/> |
+|Berechtigungen zum Ordner hinzugefügt<br/> |AddFolderPermissions<br/> |Eine Ordnerberechtigung wurde hinzugefügt. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Ordner in einem Postfach und die in diesen Ordnern befindlichen Nachrichten zugreifen können.<br/> |
 |Nachrichten in einen anderen Ordner kopiert  <br/> |Kopieren  <br/> |Eine Nachricht wurde in einen anderen Ordner kopiert.  <br/> |
 |Erstelltes Postfachelement  <br/> |Erstellen  <br/> |Ein Element wird im Ordner "Kalender", "Kontakte", "Notizen" oder "Aufgaben" im Postfach erstellt. Beispielsweise wird eine neue Besprechungsanfrage erstellt. Beachten Sie, dass das Erstellen, senden oder Empfangen einer Nachricht nicht überwacht wird. Außerdem wird das Erstellen eines Postfachordners nicht überwacht.  <br/> |
-|Neue Posteingangsregel in Outlook-Webanwendung erstellt  <br/> |NewInboxRule<br/> |Ein Benutzer hat eine neue Posteingangsregel in Outlook-webapp (OWA) erstellt.<br/> |
+|Neue Posteingangsregel in Outlook-Webanwendung erstellt  <br/> |NewInboxRule<br/> |Ein Postfachbesitzer oder ein anderer Benutzer mit Zugriff auf das Postfach hat eine neue Posteingangsregel in der Outlook-Webanwendung erstellt.<br/> |
 |Gelöschte Nachrichten aus dem Ordner "Gelöschte Elemente"  <br/> |SoftDelete  <br/> |Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Diese Elemente werden in den Ordner "refundable Items" verschoben. Nachrichten werden auch in den Ordner "Wiederherstellbare Elemente" verschoben, wenn ein Benutzer Sie auswählt und **UMSCHALT + ENTF**drückt.  <br/> |
+|Nachricht als Datensatz bezeichnet  <br/> |ApplyRecordLabel<br/> |Eine Nachricht wurde als Datensatz klassifiziert. Dies tritt auf, wenn eine Aufbewahrungs Bezeichnung, die Inhalte als Datensatz klassifiziert, manuell oder automatisch auf eine Nachricht angewendet wird.<br/> |
 |Nachrichten in einen anderen Ordner verschoben  <br/> |Move  <br/> |Eine Nachricht wurde in einen anderen Ordner verschoben.  <br/> |
 |Verschobene Nachrichten in den Ordner "Gelöschte Elemente"  <br/> |MoveToDeletedItems  <br/> |Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.  <br/> |
 |Berechtigung "Geänderter Ordner"  <br/> |UpdateFolderPermissions  <br/> |Eine Ordnerberechtigung wurde geändert. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Postfachordner und die Nachrichten im Ordner zugreifen können.  <br/> |
+|Geänderte Posteingangsregel aus Outlook-Webanwendung<br/> |SetInboxRule<br/> |Ein Postfachbesitzer oder ein anderer Benutzer mit Zugriff auf das Postfach hat eine Posteingangsregel mithilfe der Outlook-Webanwendung geändert.<br/> |
 |Bereinigte Nachrichten aus dem Postfach  <br/> |HardDelete  <br/> |Eine Nachricht wurde aus dem Ordner "refundable Items" gelöscht (endgültig aus dem Postfach gelöscht).  <br/> |
 |Berechtigungen für Stellvertretungs Postfächer entfernt  <br/> |Remove-MailboxPermission  <br/> |Ein Administrator hat die FullAccess-Berechtigung (die einer Stellvertretung zugewiesen wurde) aus dem Postfach einer Person entfernt. Nachdem die FullAccess-Berechtigung entfernt wurde, kann die Stellvertretung das Postfach der anderen Person nicht öffnen oder auf Inhalte darauf zugreifen.  <br/> |
+|Berechtigungen aus Ordner entfernt<br/> |RemoveFolderPermissions<br/> |Eine Ordnerberechtigung wurde entfernt. Ordnerberechtigungen steuern, welche Benutzer in Ihrer Organisation auf Ordner in einem Postfach und die in diesen Ordnern befindlichen Nachrichten zugreifen können.<br/> |
 |Gesendete Nachricht mit "Senden als"-Berechtigungen  <br/> |SendAs  <br/> |Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.  <br/> |
 |Gesendete Nachricht mit Berechtigungen "Senden im Auftrag von"  <br/> |SendOnBehalf  <br/> |Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.  <br/> |
-|Aktualisierter Stellvertretungszugriff auf Kalenderordner  <br/> |UpdateCalendarDelegation  <br/> |Eine Kalender Delegierung wurde einem Postfach zugewiesen. Mit der Kalender Delegierung kann ein anderer Benutzer in derselben Organisation Berechtigungen zum Verwalten des Kalenders des Postfachbesitzers erhalten.  <br/> |
+|Aktualisierte Posteingangsregeln aus dem Outlook-Client<br/> |UpdateInboxRules<br/> |Ein Postfachbesitzer oder ein anderer Benutzer mit Zugriff auf das Postfach hat eine Posteingangsregel im Outlook-Client geändert.<br/> |
 |Aktualisierte Nachricht  <br/> |Aktualisieren  <br/> |Eine Nachricht oder deren Eigenschaften wurden geändert.  <br/> |
 |Benutzer, der bei einem Postfach angemeldet ist  <br/> |Mailbox Login:  <br/> |Der Benutzer hat sich bei seinem Postfach angemeldet.  <br/> |
-|keine  <br/> |UpdateInboxRules  <br/> |Eine Posteingangsregel wurde hinzugefügt, entfernt oder geändert. Posteingangsregeln werden verwendet, um Nachrichten im Posteingang des Benutzers basierend auf den angegebenen Bedingungen zu verarbeiten und Aktionen zu ergreifen, wenn die Bedingungen einer Regel erfüllt sind, beispielsweise das Verschieben einer Nachricht in einen angegebenen Ordner oder das Löschen einer Nachricht.  <br/> Wenn Sie Einträge für Posteingangsregel Aktivitäten zurückgeben möchten, müssen Sie **Ergebnisse für alle Aktivitäten** in der Liste **Aktivitäten** anzeigen auswählen. Verwenden Sie die Datumsbereichsfelder und die **Benutzer** Liste, um die Suchergebnisse einzuschränken.  <br/> |
 ||||
 
 ### <a name="sway-activities"></a>Sway-Aktivitäten
@@ -756,7 +762,7 @@ In der folgenden Tabelle werden die Benutzer-und Administratoraktivitäten in "j
    
 ### <a name="microsoft-flow-activities"></a>Microsoft Flow-Aktivitäten
 
-Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Diese Aktivitäten umfassen das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Fluss Berechtigungen. Informationen zur Überwachung von Fluss Aktivitäten finden Sie im Blog [Microsoft Flow Audit-Ereignisse jetzt verfügbar im Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
+Sie können das Überwachungsprotokoll nach Aktivitäten in Microsoft Flow durchsuchen. Diese Aktivitäten umfassen das Erstellen, bearbeiten und Löschen von Flows sowie das Ändern von Fluss Berechtigungen. Informationen zur Überwachung von Fluss Aktivitäten finden Sie im Blog [Microsoft Flow Audit-Ereignisse jetzt verfügbar in Security #a0 Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 

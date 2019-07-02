@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151547"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767366"
 ---
 # <a name="view-documents-in-a-review-set"></a>Anzeigen von Dokumenten in einem Prüfdateisatz
 
@@ -38,14 +38,14 @@ Dieser Bereich kann ein-/Ausschalten aktiviert/deaktiviert werden, um verschiede
 
 ## <a name="native-view"></a>Systemeigene Ansicht
 
-Der systemeigene Viewer zeigt die reichste Ansicht eines Dokuments an. Es unterstützt Hunderte von Dateitypen und soll die größtmögliche systemeigene Benutzeroberfläche anzeigen. Beispielsweise nutzt der Viewer für Microsoft Office Dateien Office Online aus, um Inhalte wie Dokument Kommentare, Excel-Formeln, ausgeblendete Zeilen/Spalten, PowerPoint-Notizen usw. anzuzeigen. Weitere Informationen zu den Office Online Viewern finden Sie hier \[: Need Link\]
+Der systemeigene Viewer zeigt die reichste Ansicht eines Dokuments an. Es unterstützt Hunderte von Dateitypen und soll die größtmögliche systemeigene Benutzeroberfläche anzeigen. Für Microsoft Office Dateien verwendet der Viewer die Webversion von Office-Apps, um Inhalte wie Dokument Kommentare, Excel-Formeln, ausgeblendete Zeilen/Spalten und PowerPoint-Notizen anzuzeigen.
 
 ![Systemeigene Ansicht
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Text Ansicht
 
-Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Eingebettete Bilder und Formatierungen werden ignoriert, aber eine sehr leistungsfähige Ansicht, wenn ein Benutzer versucht, die Inhalte schnell zu verstehen. Die Text Ansicht enthält auch weitere Features:
+Der Text Betrachter bietet eine Ansicht des extrahierten Texts einer Datei. Sie ignoriert alle eingebetteten Bilder und Formatierungen, ist aber sehr effektiv, wenn Sie versuchen, den Inhalt schnell zu verstehen. Die Text Ansicht umfasst auch die folgenden Features:
 
   - Der Positionszähler erleichtert das verweisen auf bestimmte Teile eines Dokuments.
 
