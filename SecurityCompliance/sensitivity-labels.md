@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
-ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
+ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34166925"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199910"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -26,7 +26,7 @@ Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Person
 
 Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird.
 
-![Vertraulichkeitsbezeichnung auf dem Excel-Menüband und in der Statusleiste](media/Sensitivity_label_in_Excel.png)
+![Vertraulichkeitsbezeichnung auf dem Excel-Menüband und in der Statusleiste](media/Sensitivity-label-in-Excel.png)
 
 Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
   
@@ -62,7 +62,7 @@ In den Office-Apps wird eine Vertraulichkeitsbezeichnung einfach als Tag für ei
 
 Jedem Inhaltselement kann eine Vertraulichkeitsbezeichnung zugewiesen werden. Beachten Sie jedoch, dass auf ein Element sowohl eine einzelne Vertraulichkeitsbezeichnung als auch eine einzelne [Aufbewahrungsbezeichnung](labels.md) angewendet werden kann.
 
-![Auf eine E-Mail angewendete Vertraulichkeitsbezeichnung](media/Sensitivity_label_on_email.png)
+![Auf eine E-Mail angewendete Vertraulichkeitsbezeichnung](media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>Wirkung von Vertraulichkeitsbezeichnungen
 
@@ -72,19 +72,18 @@ Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angew
 
 - **Markieren Sie den Inhalt** durch Hinzufügen von benutzerdefinierten Wasserzeichen, Kopf- oder Fußzeilen für E-Mails oder Dokumente, die die Bezeichnung angewendet haben. Beachten Sie, dass Wasserzeichen nur auf Dokumente, und nicht auf E-Mails angewendet werden können, und auf 255 Zeichen beschränkt sind. Außerdem sind Kopf- und Fußzeilen auf 1024 Zeichen beschränkt (außer in Excel, wo sie auf 255 Zeichen oder weniger beschränkt sind. Dies ist davon abhängig, ob das Dokument andere Kopf- oder Fußzeilen enthält, bzw. von anderen Faktoren abhängig.)
 
-    ![Auf Dokument angewendetes Wasserzeichen und Kopfzeile](media/Sensitivity_label_watermark_header.png)
+    ![Auf Dokument angewendetes Wasserzeichen und Kopfzeile](media/Sensitivity-label-watermark-header.png)
 
-- 
-  **Verhindern von Datenverlust** durch Aktivieren von Endpoint Protection in Intune. Wenn vertrauliche Inhalte heruntergeladen werden, können Sie dazu beitragen, den Verlust von Daten von Windows-Geräten zu vermeiden. Sie können bezeichnete Inhalte z. B. nicht in Dropbox, Gmail oder auf ein USB-Laufwerk kopieren. Damit die Vertraulichkeitsbezeichnungen Windows Information Protection (WIP) verwenden können, müssen Sie zuerst eine App-Schutzrichtlinie im Azure-Portal erstellen. Weitere Informationen finden Sie unter [Wie Windows Information Protection Dateien mit einer Vertraulichkeitsbezeichnung schützt](https://docs.microsoft.com/de-DE/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+- **Verhindern von Datenverlust** durch Aktivieren von Endpoint Protection in Intune. Wenn vertrauliche Inhalte heruntergeladen werden, können Sie dazu beitragen, den Verlust von Daten von Windows-Geräten zu vermeiden. Sie können bezeichnete Inhalte z. B. nicht in Dropbox, Gmail oder auf ein USB-Laufwerk kopieren. Damit die Vertraulichkeitsbezeichnungen Windows Information Protection (WIP) verwenden können, müssen Sie zuerst eine App-Schutzrichtlinie im Azure-Portal erstellen. Weitere Informationen finden Sie unter [Wie Windows Information Protection Dateien mit einer Vertraulichkeitsbezeichnung schützt](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
-- **Automatisches Anwenden der Bezeichnung auf Inhalte anwenden, die vertrauliche Informationen enthalten. ** Sie können festlegen, für welchen Typ vertraulicher Informationen die Bezeichnung angewendet werden soll. Die Bezeichnung kann entweder automatisch angewendet werden oder Benutzer werden aufgefordert, die empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, wird in der Aufforderung der entsprechende Text angezeigt. Weitere Informationen finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply_sensitivity_label_automatically.md).
+- **Automatisches Anwenden der Bezeichnung auf Inhalte anwenden, die vertrauliche Informationen enthalten. ** Sie können festlegen, für welchen Typ vertraulicher Informationen die Bezeichnung angewendet werden soll. Die Bezeichnung kann entweder automatisch angewendet werden oder Benutzer werden aufgefordert, die empfohlene Bezeichnung anzuwenden. Wenn Sie eine Bezeichnung empfehlen, wird in der Aufforderung der entsprechende Text angezeigt. Weitere Informationen finden Sie unter [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md).
 
-    ![Auffordern zum Zuweisen einer erforderlichen Bezeichnung](media/Sensitivity_label_Prompt_for_required_label.png)
+    ![Auffordern zum Zuweisen einer erforderlichen Bezeichnung](media/Sensitivity-label-Prompt-for-required-label.png)
 
 
 Alle diese Optionen sind verfügbar, wenn Sie eine Vertraulichkeitsbezeichnung erstellen.
 
-![Optionen beim Erstellen einer Vertraulichkeitsbezeichnung](media/Sensitivity_label_create_options.png)
+![Optionen beim Erstellen einer Vertraulichkeitsbezeichnung](media/Sensitivity-label-create-options.png)
 
 ### <a name="label-priority-order-matters"></a>Priorität der Bezeichnungen (Reihenfolge wesentlich)
 
@@ -92,9 +91,9 @@ Wenn Sie Ihre Vertraulichkeitsbezeichnungen erstellen, werden sie in einer Liste
 
 Einem Dokument oder einer E-Mail kann nur eine einzelne Vertraulichkeitsbezeichnung zugewiesen werden. Wenn Ihre Benutzer eine Begründung für eine Änderung der Bezeichnung in eine niedrigere Klassifizierung angeben müssen, bestimmt die Reihenfolge dieser Liste, was eine niedrigere Klassifizierung ist.
 
-![Option zum Erstellen einer Unterbezeichnung](media/Sensitivity_label_sublabel_options.png)
+![Option zum Erstellen einer Unterbezeichnung](media/Sensitivity-label-sublabel-options.png)
 
-Beachten Sie, dass zusätzlich zur Beschriftungspriorität auch die Reihenfolge der Kennzeichnungsrichtlinien zählt – siehe [dieser Abschnitt weiter unten](#sensitivity-label-priority-order-matters).
+Beachten Sie, dass zusätzlich zur Beschriftungspriorität auch die Reihenfolge der Kennzeichnungsrichtlinien zählt – siehe [Beschriftungspriorität-Richtlinie](#label-policy-priority-order-matters).
 
 ### <a name="sublabels-grouping-labels"></a>Unterbezeichnungen (Gruppierungsbezeichnungen)
 
@@ -104,7 +103,7 @@ Unterbezeichnungen sind einfach eine Möglichkeit, Benutzern Bezeichnungen in lo
 
 (Zudem sollten Sie eine übergeordnete Bezeichnung nicht als Standardbezeichnung auswählen (siehe nächster Abschnitt) oder so konfigurieren, dass sie automatisch angewendet oder empfohlen wird, da die übergeordnete Bezeichnung nicht auf Inhalt in Office-Apps angewendet wird, die den Azure Information Protection-Client mit einheitlichen Bezeichnungen verwenden.)
 
-![Gruppierte Unterbezeichnungen im Menüband](media/Sensitivity_label_grouped_labels.png)
+![Gruppierte Unterbezeichnungen im Menüband](media/Sensitivity-label-grouped-labels.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Bearbeiten oder Löschen einer Vertraulichkeitsbezeichnung
 
@@ -124,24 +123,24 @@ Mit einer Bezeichnungsrichtlinie können Sie Folgendes bewirken:
 
 - **Anfordern einer Begründung für die Änderung einer Bezeichnung.** Wenn Inhalt als vertraulich markiert ist und ein Benutzer diese Bezeichnung entfernen oder durch eine niedrigere Klassifizierung, z. B. „Öffentlich“, ersetzen möchte, können Sie anfordern, dass der Benutzer eine Begründung für die Aktion angibt. Diese Begründungen sind dann für den Administrator zur Überprüfung verfügbar. Ein Bericht, in dem Administratoren die Begründungen der Benutzer anzeigen können, befindet sich in Entwicklung.
 
-    ![Eingabeaufforderung, in der Benutzer eine Begründung eingeben](media/Sensitivity_label_justification_required.png)
+    ![Eingabeaufforderung, in der Benutzer eine Begründung eingeben](media/Sensitivity-label-justification-required.png)
 
 - **Anfordern, dass Benutzer eine Bezeichnung auf E-Mails und Dokumente anwenden. ** Wenn Sie möchten, dass alle Inhalte des Benutzers mit Bezeichnungen versehen werden, können Sie festlegen, dass eine Bezeichnung auf alle gespeicherten Dokumente und gesendeten E-Mails angewendet werden muss. Die Bezeichnung kann durch den Benutzer manuell, automatisch als Ergebnis einer Bedingung oder standardmäßig zugewiesen werden (die beschriebene standardmäßige Bezeichnungsoption). Im Folgenden wird eine Eingabeaufforderung in Outlook angezeigt, wenn ein Benutzer eine Bezeichnung zuweisen muss.
 
     > [!NOTE]
-    > Für obligatorische Bezeichnungen ist ein Azure Information Protection-Abonnement erforderlich. Um diese Funktion zu verwenden, müssen Sie entweder [den Azure Information Protection-Client](https://www.microsoft.com/en-us/download/details.aspx?id=53018) oder den höheren [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/install-unifiedlabelingclient-app) herunterladen und installieren. Wir arbeiten an einer systemeigenen Unterstützung für diese Funktion in Office-Apps, damit der Azure Information Protection-Client nicht länger erforderlich ist. Darüber hinaus wird der Client nur unter Windows ausgeführt, sodass die Funktion derzeit nicht unter Mac, iOS und Android unterstützt wird.
+    > Für obligatorische Bezeichnungen ist ein Azure Information Protection-Abonnement erforderlich. Um diese Funktion zu verwenden, müssen Sie entweder [den Azure Information Protection-Client](https://www.microsoft.com/download/details.aspx?id=53018) oder den höheren [Azure Information Protection-Client für einheitliche Bezeichnungen](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) herunterladen und installieren. Wir arbeiten an einer systemeigenen Unterstützung für diese Funktion in Office-Apps, damit der Azure Information Protection-Client nicht länger erforderlich ist. Darüber hinaus wird der Client nur unter Windows ausgeführt, sodass die Funktion derzeit nicht unter Mac, iOS und Android unterstützt wird.
 
-    ![Eingabeaufforderung in Outlook, in der der Benutzer zum Anwenden der erforderlichen Bezeichnung aufgefordert wird](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
+    ![Eingabeaufforderung in Outlook, in der der Benutzer zum Anwenden der erforderlichen Bezeichnung aufgefordert wird](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
 
 - **Bereitstellen eines Links zu einer benutzerdefinierten Hilfeseite.** Wenn Ihre Benutzer nicht genau wissen, was Vertraulichkeitsbezeichnungen bedeuten oder wie sie verwendet werden sollten, können Sie eine URL zu weiteren Informationen angeben, die unten im Menü der Vertraulichkeitsbezeichnungen in den Office-Apps angezeigt wird.
 
-    ![Links zu weiteren Informationen auf der Schaltfläche „Vertraulichkeit“ im Menüband](media/Sensitivity_label_learn_more.png)
+    ![Links zu weiteren Informationen auf der Schaltfläche „Vertraulichkeit“ im Menüband](media/Sensitivity-label-learn-more.png)
 
 Nachdem Sie eine Bezeichnungsrichtlinie erstellt und Benutzern und Gruppen Vertraulichkeitsbezeichnungen zugewiesen haben, werden die Bezeichnungen diesen Personen innerhalb einer Stunde oder weniger in den Office-Apps angezeigt.
 
 ### <a name="label-policy-priority-order-matters"></a>Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)
 
-Sie können Benutzern die Vertraulichkeitsbezeichnungen zur Verfügung stellen, indem Sie sie in einer Richtlinie zur Vertraulichkeitsbezeichnung veröffentlichen, die in einer Liste auf der Registerkarte **Vertraulichkeitsrichtlinien** auf der Seite **Bezeichnungsrichtlinien** angezeigt wird. Wie bei den Vertraulichkeitsbezeichnungen (siehe [vorstehendes Kapitel](#sensitivity-label-priority-order-matters)) ist auch die Reihenfolge der Richtlinien zur Vertraulichkeitskennzeichnung wichtig, da Sie deren Priorität widerspiegelt. Die Bezeichnungsrichtlinie mit der niedrigsten Priorität wird am **oberen Rand** angezeigt, und die Bezeichnungsrichtlinie mit der höchsten Prioritätwird am **unteren Rand** angezeigt.
+Sie können Benutzern die Vertraulichkeitsbezeichnungen zur Verfügung stellen, indem Sie sie in einer Richtlinie zur Vertraulichkeitsbezeichnung veröffentlichen, die in einer Liste auf der Registerkarte **Vertraulichkeitsrichtlinien** auf der Seite **Bezeichnungsrichtlinien** angezeigt wird. Wie bei den Vertraulichkeitsbezeichnungen (siehe das vorstehende Kapitel [Beschriftungspriorität](#label-priority-order-matters)) ist auch die Reihenfolge der Richtlinien zur Vertraulichkeitskennzeichnung wichtig, da Sie deren Priorität widerspiegelt. Die Bezeichnungsrichtlinie mit der niedrigsten Priorität wird am **oberen Rand** angezeigt, und die Bezeichnungsrichtlinie mit der höchsten Prioritätwird am **unteren Rand** angezeigt.
 
 Eine Bezeichnungsrichtlinie besteht aus:
 
@@ -169,7 +168,7 @@ Die ersten Schritte mit Vertraulichkeitsbezeichnungen sind einfach:
 
 Im Folgenden werden die grundlegenden Schritte des Administrators, des Benutzers und der Office-App bei der Erstellung von Vertraulichkeitsbezeichnungen beschrieben.
 
-![Diagramm mit Workflow für Vertraulichkeitsbezeichnungen](media/Sensitivity_label_flow.png)
+![Diagramm mit Workflow für Vertraulichkeitsbezeichnungen](media/Sensitivity-label-flow.png)
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Anzeige von Vertraulichkeitsbezeichnungen
 
@@ -181,34 +180,32 @@ In Office-Apps auf Geräten unter Windows werden Vertraulichkeitsbezeichnungen a
 
 Native Unterstützung für Vertraulichkeitsbezeichnungen in Office-Apps unter Windows ist in Kürze verfügbar.
 
-Wenn Sie bereits Azure Information Protection-Kunde sind, können Sie den Azure Information Protection-Client für einheitliche Bezeichnungen bereitstellen, der Vertraulichkeitsbezeichnungen unterstützt. Weitere Informationen zum Herunterladen des Clients finden Sie unter [Azure Information Protection-Client für einheitliche Bezeichnungen: Versionshinweise](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Native Unterstützung für Vertraulichkeitsbezeichnungen in Office-Apps unter Windows wird derzeit entwickelt, sodass der Azure Information Protection-Client für einheitliche Bezeichnungen nicht mehr erforderlich sein wird.
+Wenn Sie bereits Azure Information Protection-Kunde sind, können Sie den Azure Information Protection-Client für einheitliche Bezeichnungen bereitstellen, der Vertraulichkeitsbezeichnungen unterstützt. Weitere Informationen zum Herunterladen des Clients finden Sie unter [Azure Information Protection-Client für einheitliche Bezeichnungen: Versionshinweise](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Native Unterstützung für Vertraulichkeitsbezeichnungen in Office-Apps unter Windows wird derzeit entwickelt, sodass der Azure Information Protection-Client für einheitliche Bezeichnungen nicht mehr erforderlich sein wird.
 
-![Schaltfläche „Vertraulichkeit“ im Menüband von Excel unter Windows](media/Sensitivity_label_Sensitivity_button.png)
+![Schaltfläche „Vertraulichkeit“ im Menüband von Excel unter Windows](media/Sensitivity-label-Sensitivity-button.png)
 
 ### <a name="office-apps-on-mac"></a>Office-Apps unter Mac
 
 In Office-Apps auf Mac-Geräten werden Vertraulichkeitsbezeichnungen auf der Schaltfläche **Vertraulichkeit** auf der Registerkarte **Start** im Menüband angezeigt. Die angewendete Bezeichnung wird auch in der Statusleiste am unteren Rand des Fensters angezeigt.
 
-![Schaltfläche „Vertraulichkeit“ im Menüband von Office für Mac](media/Sensitivity_label_on_Mac.png)
+![Schaltfläche „Vertraulichkeit“ im Menüband von Office für Mac](media/Sensitivity-label-on-Mac.png)
 
 ### <a name="office-apps-on-ios"></a>Office-Apps unter iOS
 
 In Office-Apps auf iOS-Geräten werden Vertraulichkeitsbezeichnungen auf der Schaltfläche **Vertraulichkeit** auf der Registerkarte **Start** im Menüband angezeigt. Die angewendete Bezeichnung wird auch in der Statusleiste am unteren Rand des Fensters angezeigt.
 
-![Schaltfläche „Vertraulichkeit“ im Menüband von Office für iOS](media/Sensitivity_label_on_iOS.png)
+![Schaltfläche „Vertraulichkeit“ im Menüband von Office für iOS](media/Sensitivity-label-on-iOS.png)
 
 ### <a name="office-apps-on-android"></a>Office-Apps unter Android
 
 In Office-Apps auf Android-Geräten werden Vertraulichkeitsbezeichnungen auf der Schaltfläche **Vertraulichkeit** auf der Registerkarte **Start** im Menüband angezeigt. Die angewendete Bezeichnung wird auch in der Statusleiste am unteren Rand des Fensters angezeigt.
 
-![Schaltfläche „Vertraulichkeit“ im Menüband von Office für Android](media/Sensitivity_label_on_Android.png)
+![Schaltfläche „Vertraulichkeit“ im Menüband von Office für Android](media/Sensitivity-label-on-Android.png)
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Weitere Informationen zu Vertraulichkeitsbezeichnungen in Office-Apps
 
-- 
-  [Anwenden von Vertraulichkeits-Beschriftungen auf Ihre Dokumente und E-Mails in Office](https://support.office.com/de-DE/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- 
-  [Bekannte Probleme beim Anwenden von Vertraulichkeits-Beschriftungen auf Ihren Office-Dateien](https://support.office.com/de-DE/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Anwenden von Vertraulichkeits-Beschriftungen auf Ihre Dokumente und E-Mails in Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Bekannte Probleme beim Anwenden von Vertraulichkeits-Beschriftungen auf Ihren Office-Dateien](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>Funktionsweise von Vertraulichkeitsbezeichnungen zusammen mit vorhandenen Azure Information Protection-Bezeichnungen
 
@@ -217,7 +214,7 @@ Azure Information Protection-Benutzer können Inhalte unter Windows derzeit mit 
 - Ihre vorhandenen Azure Information Protection-Bezeichnungen für Dokumente und E-Mails beibehalten.
 - Ihre vorhandene Azure Information Protection-Bezeichnungskonfiguration beibehalten.
 
-Wenn Sie Azure Information Protection-Bezeichnungen verwenden, wird empfohlen, dass Sie vorerst keine neuen Bezeichnungen in anderen Admin Centern erstellen, bis Sie die Migration abgeschlossen haben. Das [Azure Information Protection-Migrationsthema](https://docs.microsoft.com/de-DE/azure/information-protection/configure-policy-migrate-labels) enthält wichtige Informationen und einige bestimmte Vorsichtsmaßnahmen. Wenn Sie noch nicht bereit zum Migrieren Ihrer Produktionsmandanten zu Vertraulichkeitbezeichnungen sind, gibt es keinen Grund zur Beunruhigung: Derzeit können Ihre Kunden den Azure Information Protection-Client weiterhin verwenden, und Administratoren können weiterhin das Azure-Portal zur Verwaltung verwenden.
+Wenn Sie Azure Information Protection-Bezeichnungen verwenden, wird empfohlen, dass Sie vorerst keine neuen Bezeichnungen in anderen Admin Centern erstellen, bis Sie die Migration abgeschlossen haben. Das [Azure Information Protection-Migrationsthema](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) enthält wichtige Informationen und einige bestimmte Vorsichtsmaßnahmen. Wenn Sie noch nicht bereit zum Migrieren Ihrer Produktionsmandanten zu Vertraulichkeitbezeichnungen sind, gibt es keinen Grund zur Beunruhigung: Derzeit können Ihre Kunden den Azure Information Protection-Client weiterhin verwenden, und Administratoren können weiterhin das Azure-Portal zur Verwaltung verwenden.
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Schützen von Inhalten auf Windows-Geräten mithilfe von Microsoft Intune Endpoint Protection
 
@@ -229,45 +226,40 @@ Windows kann z. B. erkennen, dass einem Word-Dokument auf dem Computer eines Ben
 
 Wenn ein Benutzer versucht, mit Bezeichnungen versehene Inhalte in ein persönliches Gmail-Konto hochzuladen, wird die folgende Meldung angezeigt.
 
-![Nachricht, dass mit Bezeichnungen versehener Inhalt nicht in Gmail kopiert werden kann](media/Sensitivity_label_WIP_Gmail.png)
+![Nachricht, dass mit Bezeichnungen versehener Inhalt nicht in Gmail kopiert werden kann](media/Sensitivity-label-WIP-Gmail.png)
 
 Und wenn ein Benutzer versucht, mit Bezeichnungen versehene Inhalte auf einem USB-Laufwerk zu speichern, wird die folgende Meldung angezeigt.
 
-![Nachricht, dass mit Bezeichnungen versehener Inhalt nicht auf ein USB-Laufwerk kopiert werden kann](media/Sensitivity_label_WIP_USB_drive.png)
+![Nachricht, dass mit Bezeichnungen versehener Inhalt nicht auf ein USB-Laufwerk kopiert werden kann](media/Sensitivity-label-WIP-USB-drive.png)
 
 ### <a name="important-prerequisites"></a>Wichtige Voraussetzungen
 
-Bevor die Vertraulichkeitsbezeichnungen WIP verwenden können, müssen Sie zuerst die hier beschriebenen Voraussetzungen erfüllen: [Wie Windows Information Protection Dateien mit einer Vertraulichkeitsbezeichnung schützt](https://docs.microsoft.com/de-DE/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). In diesem Thema werden die folgenden Voraussetzungen beschrieben:
+Bevor die Vertraulichkeitsbezeichnungen WIP verwenden können, müssen Sie zuerst die hier beschriebenen Voraussetzungen erfüllen: [Wie Windows Information Protection Dateien mit einer Vertraulichkeitsbezeichnung schützt](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). In diesem Thema werden die folgenden Voraussetzungen beschrieben:
 
 - Stellen Sie sicher, dass Windows 10, Version 1809 oder höher, ausgeführt wird.
-- 
-  [Richten Sie Windows Defender Advanced Threat Protection (WDATP) ein](https://docs.microsoft.com/de-DE/windows/security/threat-protection/windows-defender-atp/get-started), wodurch Inhalte auf eine Bezeichnung überprüft werden und der entsprechenden WIP-Schutz angewendet wird. ATP führt einige Aktionen, wie das Berichten von Anomalien, unabhängig von WIP aus.
+- [Einrichten von Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started), das Inhalte für einer Bezeichnung scannt und den entsprechenden WIP-Schutz anwendet. ATP führt einige Aktionen unabhängig von WIP aus, wie beispielsweise die Meldung von Anomalien.
 - Erstellen Sie eine WIP-Richtlinie (Windows Informationen Protection), die auf Endpunktgeräte angewendet wird:
-    - 
-  [Erstellen einer WIP-Richtlinie (Windows Information Protection) mit MDM mithilfe des Azure-Portals für Microsoft Intune](https://docs.microsoft.com/de-DE/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - 
-  [Erstellen und Bereitstellen einer WIP-Richtlinie (Windows Information Protection) mit System Center Configuration Manager](https://docs.microsoft.com/de-DE/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - [Erstellen einer WIP-Richtlinie (Windows Information Protection) mit MDM mithilfe des Azure-Portals für Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - [Erstellen und Bereitstellen einer WIP-Richtlinie (Windows Information Protection) mit System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Schützen von Inhalten in Drittanbieter-Apps und -Diensten mithilfe von Microsoft Cloud App Security
 
 Schützen von Inhalten in Drittanbieter-Apps und -Diensten mithilfe von Cloud App Security (CAS) Mit CAS können Sie Inhalte in Drittanbieter-Diensten und -Apps wie z. B. SalesForce, Box oder Dropbox erkennen, klassifizieren, mit Bezeichnungen versehen und schützen. Z. B. wird eine Vertraulichkeitsbezeichnung möglicherweise von Dropbox nicht verstanden, aber CAS kann mit Bezeichnungen versehene Inhalte auch an diesem Speicherort schützen.
 
-Weitere Informationen finden Sie unter [Automatisches Anwenden von Azure Information Protection-Klassifizierungsbezeichnungen](https://docs.microsoft.com/de-DE/cloud-app-security/use-case-information-protection).
+Weitere Informationen finden Sie unter [Automatisches Anwenden von Azure Information Protection-Klassifizierungsbezeichnungen](https://docs.microsoft.com/cloud-app-security/use-case-information-protection).
 
 ### <a name="important-prerequisites"></a>Wichtige Voraussetzungen
 
-Damit Ihre Vertraulichkeitsbezeichnungen CAS verwenden können, müssen Sie zuerst die hier beschriebenen Voraussetzungen erfüllen: [Automatisches Anwenden von Azure Information Protection-Klassifizierungsbezeichnungen](https://docs.microsoft.com/de-DE/cloud-app-security/use-case-information-protection). In diesem Thema werden die folgenden Voraussetzungen beschrieben:
+Damit Ihre Vertraulichkeitsbezeichnungen CAS verwenden können, müssen Sie zuerst die hier beschriebenen Voraussetzungen erfüllen: [Automatisches Anwenden von Azure Information Protection-Klassifizierungsbezeichnungen](https://docs.microsoft.com/cloud-app-security/use-case-information-protection). In diesem Thema werden die folgenden Voraussetzungen beschrieben:
 
-- 
-  [Aktivieren Sie Cloud App Security und Azure Information Protection](https://docs.microsoft.com/de-DE/cloud-app-security/azip-integration) für Ihren Mandanten.
-- 
-  [Verbinden Sie die App](https://docs.microsoft.com/de-DE/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) mit Cloud App Security.
+- [Aktivieren Sie Cloud App Security und Azure Information Protection](https://docs.microsoft.com/cloud-app-security/azip-integration) für Ihren Mandanten.
+- [Verbinden Sie die App](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) mit Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Erweitern von Vertraulichkeitsbezeichnungen auf Drittanbieter-Apps und -Dienste mithilfe des Microsoft Information Protection SDK
 
 Da eine Vertraulichkeitsbezeichnung als Klartext in den Metadaten des Dokuments gespeichert wird, können Drittanbieter-Apps und -Dienste die Identifizierung und den Schutz von Inhalten mit einer solchen Bezeichnung unterstützen. Die Unterstützung in anderen Apps und Diensten wird ständig erweitert.
 
-Mit dem [Microsoft Information Protection SDK](https://docs.microsoft.com/de-DE/information-protection/develop/) können Drittanbieter-Apps und -Dienste Vertraulichkeitsbezeichnungen lesen und Schutz auf Dokumente anwenden. Das SDK unterstützt Apps unter Windows, Mac und Linux. Unterstützung für Apps unter IOS und Android ist in Kürze verfügbar.
+Mit dem [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/) können Drittanbieter-Apps und -Dienste Vertraulichkeitsbezeichnungen lesen und Schutz auf Dokumente anwenden. Das SDK unterstützt Apps unter Windows, Mac und Linux. Unterstützung für Apps unter IOS und Android ist in Kürze verfügbar.
 
 Mithilfe des SDK können Sie Inhalte in einer Weise klassifizieren und schützen, die mit anderen Microsoft Information Protection-Apps und -Diensten wie Office-Apps, Office 365-Diensten, dem Azure Information Protection-Scanner, Microsoft Cloud App Security und anderen Partnerlösungen funktioniert. Hier finden Sie z. B. Informationen über die [Unterstützung für Vertraulichkeitsbezeichnungen in Adobe Acrobat](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738).
 

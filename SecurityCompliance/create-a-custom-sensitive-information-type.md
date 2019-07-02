@@ -1,11 +1,12 @@
 ---
-title: Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen
+title: Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/17/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,54 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierten Typen für vertrauliche Informationen für DLP in der grafischen Benutzeroberfläche im Security & Compliance Center erstellen, ändern, entfernen und testen können.
-ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258283"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077741"
 ---
-# <a name="create-a-custom-sensitive-information-type"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center
 
-Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) in Office 365 umfasst zahlreiche integrierte [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md), die Sie in DLP-Richtlinien verwenden können. Diese integrierten Typen unterstützen Sie beim Erkennen und Schützen von Kreditkartennummern, Bankkontonummern, Reisepassnummern und mehr. 
+## <a name="summary"></a>Zusammenfassung
 
-Wenn Sie jedoch verschiedene Typen vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel Mitarbeiter-IDs oder Projektnummern, die ein für Ihre Organisation spezifisches Format verwenden, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen.
+Lesen Sie diesen Artikel, zum[Erstellen eines benutzerdefinierten vertraulichen Informationstyps](custom-sensitive-info-types.md) im Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Die benutzerdefinierte Typen vertraulicher Informationen, die Sie mit dieser Methode erstellen, werden zum Regelpaket namens `Microsoft.SCCManaged.CustomRulePack`hinzugefügt.
 
-Die grundlegenden Bestandteile eines benutzerdefinierten Typs für vertrauliche Informationen sind wie folgt:
+Sie können auch benutzerdefinierte vertrauliche Informationstypen mithilfe von PowerShell und genauer Datenübereinstimmung erstellen. Weitere Informationen zu diesen Methoden finden Sie unter:
+- [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Erstellen eines benutzerdefinierten vertraulichen Informationstyps für DLP mit genauer Datenübereinstimmung (EDM)](create-custom-sensitive-info-type-edm.md)
 
-- **Primäres Muster**: Mitarbeiter-ID-Nummer, Projektnummern usw. Dieses wird in der Regel durch einen regulären Ausdruck (RegEx) gekennzeichnet, kann aber auch eine Liste von Schlüsselwörtern sein.
+## <a name="before-you-begin"></a>Bevor Sie beginnen...
 
-- **Zusätzliche Nachweise**: Angenommen, Sie suchen nach einer neunstelligen Mitarbeiter-ID-Nummer. Nicht alle neunstelligen ID-Nummern sind Mitarbeiter-ID-Nummern, Sie können daher nach zusätzlichem Text suchen: Schlüsselwörter wie „Mitarbeiter“, „Ausweis“, „ID“ oder andere Textmuster basierend auf zusätzlichen regulären Ausdrücken. Diese Nachweise (auch bezeichnet als _unterstützende_ oder _bestätigende_ Nachweise) erhöhen die Wahrscheinlichkeit, dass die neunstellige Nummer, die in Inhalten gefunden wird, auch wirklich eine Mitarbeiter-ID-Nummer ist.
-
-- **Zeichenabstand**: Je näher sich das primäre Muster an den unterstützenden Nachweisen befindet, desto größer ist die Wahrscheinlichkeit, dass die gefundenen Inhalte den von Ihnen gesuchten Inhalten entsprechen. Sie können den Zeichenabstand zwischen dem primären Muster und den unterstützenden Nachweisen angeben (auch als _Näherungsfenster_ bezeichnet), wie in der folgenden Abbildung dargestellt:
-
-    ![Diagramm von bestätigenden Nachweisen und Näherungsfenster](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-
-- **Zuverlässigkeitsgrad**: Je mehr unterstützende Nachweise Sie haben, desto höher die Wahrscheinlichkeit, dass eine Übereinstimmung die vertraulichen Informationen enthält, die Sie suchen. Sie können höhere Zuverlässigkeitsstufen für Übereinstimmungen zuweisen, die gefunden werden, indem Sie mehr Nachweise verwenden.
-
-  Wenn eine Übereinstimmung gefunden wurde, gibt ein Muster eine Anzahl und einen Zuverlässigkeitsgrad zurück, die bzw. den Sie in den Bedingungen Ihrer DLP-Richtlinien verwenden können. Wenn Sie eine Bedingung zum Erkennen eines Typs vertraulicher Informationen zu einer DLP-Richtlinie hinzufügen, können Sie die Anzahl und den Zuverlässigkeitsgrad wie in der folgenden Abbildung dargestellt bearbeiten:
-
-    ![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-
-Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im Office 365 Security & Compliance Center stehen Ihnen die folgenden Optionen zur Verfügung:
-
-- **Verwenden der Benutzeroberfläche**: Diese Methode ist schneller und einfacher, aber Sie haben weniger Konfigurationsoptionen als bei PowerShell. Im restlichen Thema werden diese Verfahren beschrieben.
-
-- **Verwenden von PowerShell**: Diese Methode setzt voraus, dass Sie zuerst eine XML-Datei erstellen (bezeichnet als _Regelpaket_), die einen oder mehrere Typen von vertraulichen Informationen enthält. Sie verwenden dann PowerShell, um das Regelpaket zu importieren (das Importieren des Regelpakets ist einfach im Vergleich zum Erstellen des Regelpakets). Diese Methode ist wesentlich komplexer als die Benutzeroberfläche, aber Sie haben mehr Konfigurationsoptionen. Anweisungen finden Sie unter [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen im Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
-
-Die wichtigsten Unterschiede werden in der folgenden Tabelle näher erläutert:
-
-|**Benutzerdefinierte Typen für vertrauliche Informationen in der Benutzeroberfläche**|**Benutzerdefinierte Typen für vertrauliche Informationen in PowerShell**|
-|:-----|:-----|
-|Name und Beschreibung sind in einer Sprache.|Unterstützt mehrere Sprachen für Name und Beschreibung.|
-|Unterstützt ein Muster.|Unterstützt mehrere Muster.|
-|Unterstützende Nachweise können Folgendes sein: <br/>• Reguläre Ausdrücke <br/>• Schlüsselwörter <br/>• Schlüsselwörterbücher|Unterstützende Nachweise können Folgendes sein: <br/>• Reguläre Ausdrücke <br/>• Schlüsselwörter <br/>• Schlüsselwörterbücher <br/>• [Integrierte DLP-Funktionen](what-the-dlp-functions-look-for.md)|
-|Benutzerdefinierte Typen vertraulicher Informationen werden zum Regelpaket namens Microsoft.SCCManaged.CustomRulePack hinzugefügt.|Sie können bis zu 10 Regelpakete erstellen, die benutzerdefinierten Typen vertraulicher Informationen enthalten.|
-|Die Musterübereinstimmung erfordert die Erkennung des primären Musters und aller unterstützenden Nachweise (der implizite UND-Operator wird verwendet).|Die Musterübereinstimmung erfordert die Erkennung des primären Musters und einer konfigurierbaren Menge unterstützender Nachweise (implizite UND- und ODER-Operatoren können verwendet werden).|
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
-
-- Informationen zum Öffnen des Security & Compliance Center finden Sie unter [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md).
+- Ihre Organisation muss über ein Abonnement verfügen, z. B. Office 365 Enterprise, das Verhinderung von Datenverlust (DLP) beinhaltet. Siehe [Nachrichtenrichtlinie und Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 - Benutzerdefinierte Typen für vertrauliche Informationen erfordern Kenntnisse über reguläre Ausdrücke (RegEx). Weitere Informationen über das Modul Boost.RegEx (vormals als RegEx++ bezeichnet), das für die Textverarbeitung verwendet wird, finden Sie unter [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
