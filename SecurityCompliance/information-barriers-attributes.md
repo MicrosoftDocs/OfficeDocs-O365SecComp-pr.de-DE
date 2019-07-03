@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Referenz für verschiedene Attribute, die Sie in Richtlinien für Informationsbarrieren verwenden können.
-ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
+ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394310"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "35462406"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>Attribute für Richtlinien für Informationsbarrieren (Vorschau)
 
@@ -35,9 +35,9 @@ Die in diesem Artikel aufgeführten Attribute können verwendet werden, um Segme
 
 2. Stellen Sie sicher, dass die Benutzerkonten Werte für die in Schritt 1 ausgewählten Attribute eingegeben haben. Zeigen Sie die Benutzerkontodetails an, und bearbeiten Sie Benutzerkonten bei Bedarf, um Attributwerte einzubeziehen. 
 
-    Informationen hierzu mithilfe von PowerShell finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
 
-    Informationen dazu finden Sie unter [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure-Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)Active Directory.
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Definieren Sie Segmente mithilfe von PowerShell](information-barriers-policies.md#define-segments-using-powershell), ähnlich wie in den folgenden Beispielen:
 
@@ -54,7 +54,7 @@ Die in diesem Artikel aufgeführten Attribute können verwendet werden, um Segme
 
 In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Informationsbarrieren verwenden können.
 
-|Azure Active Directory Eigenschaften Name (LDAP-Anzeigename)  |Exchange-Eigenschaftsname  |
+|Name der Azure Active Directory-Eigenschaft<br/>(LDAP-Anzeigename)  |Exchange-Eigenschaftsname  |
 |---------|---------|
 |Gemeinsame Dokument       | Gemeinsame Dokument        |
 |Company     |Company         |
