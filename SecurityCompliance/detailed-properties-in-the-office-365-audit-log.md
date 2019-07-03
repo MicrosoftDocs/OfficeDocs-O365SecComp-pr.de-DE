@@ -15,21 +15,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Beschreibungen weiterer Eigenschaften, die in einem Office 365 Überwachungsprotokolleintrag enthalten sind.
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+description: Beschreibungen der zusätzlichen Eigenschaften, die in einem Office 365 Überwachungsprotokolleintrag enthalten sind.
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253934"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435155"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll
 
 Wenn Sie die Ergebnisse einer Überwachungsprotokoll Suche aus dem Security #a0 Compliance Center exportieren, haben Sie die Möglichkeit, alle Ergebnisse herunterzuladen, die Ihren Suchkriterien entsprechen. Wählen Sie dazu **Export Ergebnisse** \> **alle Ergebnisse herunterladen** auf der Seite **Überwachungsprotokoll Suche** aus. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Office 365](search-the-audit-log-in-security-and-compliance.md).
   
- Wenn Sie alle Ergebnisse für eine Überwachungsprotokoll Suche exportieren, werden die Rohdaten aus dem Office 365 einheitlichen Überwachungsprotokoll in eine CSV-Datei (Comma Separated Value) kopiert, die auf den lokalen Computer heruntergeladen wird. Diese Datei enthält zusätzliche Informationen aus jedem Überwachungseintrag in einer Spalte mit dem Namen **Auditdata**. Diese Spalte enthält eine mehrwertige Eigenschaft für mehrere Eigenschaften aus dem Überwachungsprotokolleintrag. Jedes der **Eigenschaft: Wert** -Paare in dieser mehrwertigen Eigenschaft werden durch ein Komma getrennt. 
+ Wenn Sie alle Ergebnisse für eine Überwachungsprotokoll Suche exportieren, werden die Rohdaten aus dem Office 365 einheitlichen Überwachungsprotokoll in eine CSV-Datei (Comma-Separated Value) kopiert, die auf den lokalen Computer heruntergeladen wird. Diese Datei enthält zusätzliche Informationen aus jedem Überwachungseintrag in einer Spalte mit dem Namen **Auditdata**. Diese Spalte enthält eine mehrwertige Eigenschaft für mehrere Eigenschaften aus dem Überwachungsprotokolleintrag. Jedes der **Eigenschaft: Wert** -Paare in dieser mehrwertigen Eigenschaft werden durch ein Komma getrennt. 
   
-In der folgenden Tabelle werden die Eigenschaften beschrieben, die-je nach Office 365 Dienst, in dem ein Ereignis auftritt-in der **Auditdata** -Spalte mit mehreren Eigenschaften enthalten sind. Der **Office 365 Dienst mit dieser Eigenschafts** Spalte gibt den Dienst und den Aktivitätstyp (Benutzer oder Administrator) an, der die Eigenschaft enthält. Ausführlichere Informationen zu diesen Eigenschaften oder zu Eigenschaften, die in diesem Thema möglicherweise nicht aufgeführt sind, finden Sie unter [Office 365 Management Activity API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+In der folgenden Tabelle werden die Eigenschaften beschrieben, die (je nach Office 365 Dienst, in dem ein Ereignis auftritt) in der **Auditdata** -Spalte mit mehreren Eigenschaften enthalten sind. Der **Office 365 Dienst mit dieser Eigenschafts** Spalte gibt den Dienst und den Aktivitätstyp (Benutzer oder Administrator) an, der die Eigenschaft enthält. Ausführlichere Informationen zu diesen Eigenschaften oder zu Eigenschaften, die in diesem Thema möglicherweise nicht aufgeführt sind, finden Sie unter [Office 365 Management Activity API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
 > [!TIP]
 > Sie können die Power-Abfrage in Excel verwenden, um diese Spalte in mehrere Spalten aufzuteilen, damit jede Eigenschaft eine eigene Spalte aufweist. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und filtern. Weitere Informationen dazu finden Sie im Abschnitt "Spalten nach Trennzeichen teilen" in [Spalte mit Textteilen (Power-Abfrage)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
@@ -37,7 +37,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die-je nach Offic
 |**Eigenschaft**|**Beschreibung**|**Office 365 Dienst mit dieser Eigenschaft**|
 |:-----|:-----|:-----|
 |Akteur|Das Benutzer-oder Dienstkonto, das die Aktion ausgeführt hat.|Azure Active Directory|
-|AddOnName|Der Name eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Der Typ der Add-ons in Microsoft Teams ist ein bot, ein Konnektor oder ein Tab.|Microsoft Teams|
+|AddOnName|Der Name eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Der Typ von Add-ons in Microsoft Teams ist ein bot, ein Konnektor oder ein Tab.|Microsoft Teams|
 |AddOnType|Der Typ eines Add-ons, das in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Die folgenden Werte geben den Typ des Add-ons an.  <br/> **1** – gibt einen bot an.<br/> **2** – gibt einen Konnektor an.<br/> **3** -gibt eine Registerkarte an.|Microsoft Teams|
 |AzureActiveDirectoryEventType|Der Typ des Azure Active Directory-Ereignisses. Die folgenden Werte geben den Typ des Ereignisses an.  <br/> **0** -gibt ein Konto Anmeldeereignis an.<br/> **1** – gibt ein Azure-Anwendungs Sicherheitsereignis an.|Azure Active Directory|
 |ChannelGuid|Die ID eines Microsoft Teams-Kanals. Das Team, in dem sich der Kanal befindet, wird durch **** die Eigenschaften Teamname und **TeamGuid** identifiziert.|Microsoft Teams|
@@ -49,10 +49,10 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die-je nach Offic
 |CreationTime|Das Datum und die Uhrzeit in koordinierter Weltzeit (UTC), wann der Benutzer die Aktivität ausgeführt hat.|Alle|
 |DestinationFileExtension|Der Erweiterung der Datei, die kopiert oder verschoben wurde. Diese Eigenschaft wird nur für die Aktivitäten filecopied und filemigrationed User angezeigt.|SharePoint|
 |DestinationFileName|Der Name der Datei wird kopiert oder verschoben. Diese Eigenschaft wird nur für die filecopied-und fileactions-Aktionen angezeigt.|SharePoint|
-|DestinationRelativeUrl|Die URL des Zielordners, in den eine Datei kopiert oder verschoben wurde. Die Kombination der Werte für die **SiteUrl**, die **DestinationRelativeURL**und die **destinationFileName** -Eigenschaften ist identisch mit dem Wert für die **objectID** -Eigenschaft, bei der es sich um den vollständigen Pfadnamen für die kopierte Datei handelt. Diese Eigenschaft wird nur für die Aktivitäten filecopied und filemigrationed User angezeigt.|SharePoint|
+|DestinationRelativeUrl|Die URL des Zielordners, in den eine Datei kopiert oder verschoben wurde. Die Kombination der Werte für die **SiteUrl**, die **DestinationRelativeURL**und die **destinationFileName** -Eigenschaft ist identisch mit dem Wert für die **objectID** -Eigenschaft, bei der es sich um den vollständigen Pfadnamen für die kopierte Datei handelt. Diese Eigenschaft wird nur für die Aktivitäten filecopied und filemigrationed User angezeigt.|SharePoint|
 |EventSource|Gibt an, dass ein Ereignis in SharePoint eingetreten ist. Mögliche Werte sind **SharePoint** und ObjectModel. ****|SharePoint|
 |ExternalAccess|Gibt für Exchange-Administratoraktivitäten an, ob das Cmdlet von einem Benutzer in Ihrer Organisation, von Mitarbeitern des Microsoft-Rechenzentrums oder von einem Rechenzentrum-Dienstkonto oder von einem Delegierten Administrator ausgeführt wurde. Der Wert **False** gibt an, dass das Cmdlet von einer Person in Ihrer Organisation ausgeführt wurde. Der Wert **True** gibt an, dass das Cmdlet von Mitarbeiter des Rechenzentrums, einem Rechenzentrum-Dienstkonto oder einem delegierten Administrator ausgeführt wurde.  <br/> Gibt für Exchange-Post Fach Aktivität an, ob ein Benutzer außerhalb Ihrer Organisation auf ein Postfach zugegriffen hat.|Exchange|
-|ExtendedProperties|Die erweiterten Eigenschaften für das Azure Active Directory-Ereignis.|Azure Active Directory|
+|ExtendedProperties|Die erweiterten Eigenschaften für ein Azure Active Directory-Ereignis.|Azure Active Directory|
 |ID|Die ID des Berichts Eintrags. Die ID identifiziert den Berichtseintrag eindeutig.|Alle|
 |InternalLogonType|Für die interne Verwendung reserviert.|Exchange (Post Fach Aktivität)|
 |ItemType|Der Typ des Objekts, auf das zugegriffen bzw. das geändert wurde. Mögliche Werte sind **File**-, **Folder**-, **Web**-, **Site**-, **Mandanten**-und **DocumentLibrary**.|SharePoint|
@@ -75,9 +75,9 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die-je nach Offic
 |SiteUrl|Die URL der Website, auf der sich die Datei oder der Ordner, auf die bzw. den der Benutzer zugegriffen hat, befindet.|SharePoint|
 |SourceFileExtension|Die Erweiterung der Datei, auf die der Benutzer zugegriffen hat. Diese Eigenschaft ist leer, wenn das Objekt, auf das zugegriffen wurde, ein Ordner ist.|SharePoint|
 |SourceFileName|Der Name der Datei oder des Ordners, auf die der Benutzer zugegriffen hat.|SharePoint|
-|SourceRelativeUrl|Die URL des Ordners, der die Datei enthält, auf die der Benutzer zugegriffen hat. Die Kombination der Werte für die **SiteUrl**, die **SourceRelativeURL**und die **sourceFileName** -Eigenschaften ist identisch mit dem Wert für die **objectID** -Eigenschaft, bei der es sich um den vollständigen Pfadnamen für die Datei handelt, auf die der Benutzer zugegriffen hat.|SharePoint|
+|SourceRelativeUrl|Die URL des Ordners, der die Datei enthält, auf die der Benutzer zugegriffen hat. Die Kombination der Werte für die **SiteUrl**, die **SourceRelativeURL**und die **sourceFileName** -Eigenschaft ist identisch mit dem Wert für die **objectID** -Eigenschaft, bei der es sich um den vollständigen Pfadnamen für die Datei handelt, auf die der Benutzer zugegriffen hat.|SharePoint|
 |Betreff|Die Betreffzeile der Nachricht, auf die zugegriffen wurde.|Exchange (Post Fach Aktivität)|
-|TabType| Der Typ der Registerkarte, die in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Gültige Werte für diese Eigenschaft sind:  <br/><br/> **Excelpin** – eine Excel-Registerkarte.  <br/> **Erweiterung** – alle apps für Erstanbieter und Drittanbieter; wie Planer, VSTS und Formulare.  <br/> **Notizen** – OneNote-Registerkarte.  <br/> **Pdfpin** – eine PDF-Registerkarte.  <br/> **Powerbi** – eine Powerbi-Registerkarte.  <br/> **Powerpointpin** -eine PowerPoint-Registerkarte.  <br/> **Sharepointfiles** – eine SharePoint-Registerkarte.  <br/> **Webseite** – eine angeheftete Website-Registerkarte.  <br/> **Wiki-Tab** – eine wiki-Registerkarte.  <br/> **Wordpin** -eine Word-Registerkarte.|Microsoft Teams|
+|TabType| Der Typ der Registerkarte, die in einem Team hinzugefügt, entfernt oder aktualisiert wurde. Gültige Werte für diese Eigenschaft sind:  <br/><br/> **Excel-Pin** – eine Excel-Registerkarte.  <br/> **Erweiterung** – alle apps für Erstanbieter und Drittanbieter; wie Klassen Zeitplan, VSTS und Formulare.  <br/> **Notizen** – OneNote-Registerkarte.  <br/> **Pdfpin** – eine PDF-Registerkarte.  <br/> **Powerbi** – eine Powerbi-Registerkarte.  <br/> **Powerpointpin** -eine PowerPoint-Registerkarte.  <br/> **Sharepointfiles** – eine SharePoint-Registerkarte.  <br/> **Webseite** – eine angeheftete Website-Registerkarte.  <br/> **Wiki-Tab** – eine wiki-Registerkarte.  <br/> **Wordpin** -eine Word-Registerkarte.|Microsoft Teams|
 |Ziel|Der Benutzer, für den die Aktion (in der Eigenschaft " **Operation** " bezeichnet) ausgeführt wurde. Wenn beispielsweise ein Gastbenutzer SharePoint oder einem Microsoft-Team hinzugefügt wird, wird dieser Benutzer in dieser Eigenschaft aufgeführt.|Azure Active Directory|
 |TeamGuid|Die ID eines Teams in Microsoft Teams.|Microsoft Teams|
 |TeamName|Der Name eines Teams in Microsoft Teams.|Microsoft Teams|

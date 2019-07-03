@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Verwenden Sie den Massen Such-Editor im Security and Compliance Center in Office 365 oder Microsoft 365, um die Abfrage-und inhaltsspeicherorte für eine oder mehrere Inhalts suchen schnell zu ändern.
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152217"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435115"
 ---
 # <a name="bulk-edit-content-searches"></a>Massenbearbeitung von Inhalts suchen
 
@@ -92,7 +92,7 @@ Hier finden Sie einige Tipps zum Bearbeiten von Inhaltsspeicherorten mit dem Mas
 - Sie können mehrere inhaltsspeicherorte zu einer oder mehreren Suchvorgängen hinzufügen, indem Sie mehrere Zeilen aus einer Textdatei oder einer Excel-Datei kopieren und anschließend in einen Abschnitt auf der Seite **Speicherorte** einfügen. Nachdem Sie neue Speicherorte hinzugefügt haben, müssen Sie das Kontrollkästchen für jede Suche aktivieren, der Sie den Speicherort hinzufügen möchten. 
     
     > [!TIP]
-    > Um eine Liste der e-Mail-Adressen für alle Benutzer in Ihrer Organisation zu erstellen, führen Sie den PowerShell-Befehl in Schritt 2 in [Verwenden der Inhaltssuche aus, um das Postfach und die OneDrive für Unternehmen Website nach einer Liste von Benutzern zu durchsuchen](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). Oder verwenden Sie das Skript unter [Erstellen einer Liste aller OneDrive-Standorte in Ihrer Organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) , um eine Liste aller OneDrive für Unternehmen Websites in Ihrer Organisation zu generieren. Beachten Sie, dass Sie die URL Ihrer organization's mysite-Domäne anfügen müssen (beispielsweise https://contoso-my.sharepoint.com) an die OneDrive für Unternehmen Websites, die durch das Skript erstellt wurden. Nachdem Sie eine Liste mit e-Mail-Adressen oder OneDrive für Unternehmen Websites erhalten haben, können Sie diese kopieren und auf der Seite **Speicherorte** im Massen Such-Editor einfügen. 
+    > Um eine Liste der e-Mail-Adressen für alle Benutzer in Ihrer Organisation zu erstellen, führen Sie den PowerShell-Befehl in Schritt 2 in [Schritt 2: Generieren einer Liste von Benutzern](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)aus. Oder führen Sie die Schritte unter [Get a list of all User OneDrive URLs in Ihrer Organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls) aus, um eine Liste aller OneDrive für Unternehmen Websites in Ihrer Organisation zu generieren. Beachten Sie, dass Sie die URL für die mysite-Domäne Ihrer Organisation Anfügen müssen (beispielsweise https://contoso-my.sharepoint.com) an die OneDrive für Unternehmen Websites, die durch das Skript erstellt wurden. Nachdem Sie eine Liste mit e-Mail-Adressen oder OneDrive für Unternehmen Websites erhalten haben, können Sie diese kopieren und auf der Seite **Speicherorte** im Massen Such-Editor einfügen. 
   
 - Nachdem Sie auf **Speichern** klicken, um die Änderungen im Massen Such-Editor zu speichern, wird die e-Mail-Adresse für Postfächer überprüft, die Sie einer Suche hinzugefügt haben. Wenn die e-Mail-Adresse nicht vorhanden ist, wird eine Fehlermeldung angezeigt, die besagt, dass das Postfach nicht gefunden werden kann. Beachten Sie, dass URLs für Websites nicht überprüft werden. 
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security #a0 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
-ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 656bb3a82c11308e8596c0eb71972ead5dfed620
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113289"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435225"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center
 
@@ -257,7 +257,7 @@ So filtern Sie die Ergebnisse:
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Schritt 4: Exportieren der Suchergebnisse in eine Datei
 
-Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei (Comma Separated Value) auf Ihrem lokalen Computer exportieren. Sie können diese Datei in Microsoft Excel öffnen und Features wie das suchen, sortieren, Filtern und Teilen einer einzelnen Spalte (die mehrwertige Zellen enthält) in mehrere Spalten verwenden.
+Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei (Comma Separated Value) auf Ihrem lokalen Computer exportieren. Sie können diese Datei in Microsoft Excel öffnen und Features wie das suchen, sortieren, Filtern und Teilen einer einzelnen Spalte (die mehrere Eigenschaften enthält) in mehrere Spalten verwenden.
   
 1. Führen Sie eine Überwachungsprotokoll Suche aus, und überprüfen Sie dann die Suchkriterien, bis Sie die gewünschten Ergebnisse erhalten haben.
     
@@ -265,27 +265,24 @@ Sie können die Ergebnisse einer Überwachungsprotokoll Suche in eine CSV-Datei 
     
      - **Geladene Ergebnisse speichern** – wählen Sie diese Option aus, um nur die Einträge zu exportieren, die unter **Ergebnisse** auf der Seite **Überwachungsprotokoll Suche** angezeigt werden. Die heruntergeladene CSV-Datei enthält dieselben Spalten (und Daten), die auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). Eine zusätzliche Spalte (mit dem Namen **more**) ist in der CSV-Datei enthalten, die weitere Informationen aus dem Überwachungsprotokolleintrag enthält. Da Sie dieselben Ergebnisse exportieren, die auf der Seite **Überwachungsprotokoll Suche** geladen (und sichtbar) werden, werden maximal 5.000 Einträge exportiert. 
     
-     - **Alle Ergebnisse herunterladen** – wählen Sie diese Option aus, um alle Einträge aus dem Office 365 Überwachungsprotokoll zu exportieren, die die Suchkriterien erfüllen. Für eine große Gruppe von Suchergebnissen wählen Sie diese Option aus, um alle Einträge aus dem Überwachungsprotokoll zusätzlich zu den 5.000-Ergebnissen herunterzuladen, die auf der Seite **Überwachungsprotokoll Suche** angezeigt werden können. Mit dieser Option werden die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen, und es werden zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte namens **Auditdata**. Das Herunterladen der Datei kann länger dauern, wenn Sie diese Exportoption auswählen, da die Datei viel größer sein kann als diejenige, die heruntergeladen wurde, wenn Sie die Option andere auswählen.
+     - **Alle Ergebnisse herunterladen** – wählen Sie diese Option aus, um alle Einträge aus dem Office 365 Überwachungsprotokoll zu exportieren, die die Suchkriterien erfüllen. Für eine große Gruppe von Suchergebnissen wählen Sie diese Option aus, um alle Einträge zusätzlich zu den 5.000-Überwachungseinträgen aus dem Überwachungsprotokoll herunterzuladen, die auf der Seite **Überwachungsprotokoll Suche** angezeigt werden können. Mit dieser Option werden die Rohdaten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen, und es werden zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte namens **Auditdata**. Das Herunterladen der Datei kann länger dauern, wenn Sie diese Exportoption auswählen, da die Datei viel größer sein kann als diejenige, die heruntergeladen wurde, wenn Sie die Option andere auswählen.
     
        > [!IMPORTANT]
        > Sie können maximal 50.000 Einträge aus einer einzigen Überwachungsprotokoll Suche in eine CSV-Datei herunterladen. Wenn 50.000-Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass es mehr als 50.000 Ereignisse gibt, die die Suchkriterien erfüllt haben. Um mehr als diesen Grenzwert zu exportieren, verwenden Sie einen Datumsbereich, um die Anzahl der Überwachungsprotokolleinträge zu verringern. Möglicherweise müssen Sie mehrere Suchvorgänge mit kleineren Datumsbereichen ausführen, um mehr als 50.000 Einträge zu exportieren. 
   
 3. Nachdem Sie eine Exportoption ausgewählt haben, wird am unteren Rand des Fensters eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen, Sie im Ordner "Downloads" zu speichern oder in einem bestimmten Ordner zu speichern.
+ 
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Weitere Informationen zum Exportieren und Anzeigen von Suchergebnissen für Überwachungsprotokolle
 
-  
-#### <a name="more-information-about-exporting-audit-log-search-results"></a>Weitere Informationen zum Exportieren von Überwachungsprotokoll-Suchergebnissen
-
-- Die Option **alle Ergebnisse herunterladen** lädt die Rohdaten aus dem Office 365 Überwachungsprotokoll in eine CSV-Datei herunter. Diese Datei enthält unterschiedliche Spaltennamen (CreationDate, userids, Operation, Auditdata) als die Datei, die heruntergeladen wurde, wenn Sie die Option geladene **Ergebnisse speichern** auswählen. Die Werte in den zwei unterschiedlichen CSV-Dateien für dieselbe Aktivität können ebenfalls unterschiedlich sein. Beispielsweise kann die Aktivität in der Spalte **Aktion** in der CSV-Datei einen anderen Wert als die "benutzerfreundliche" Version haben, die in der Spalte " **Aktivität** " auf der Seite " **Überwachungsprotokoll Suche** " angezeigt wird. Beispiel: Mailbox Login: vs. User angemeldet bei Mailbox.
-    
-- Wenn Sie alle Ergebnisse herunterladen, enthält die CSV-Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Wie bereits erwähnt, enthält diese Spalte eine mehrwertige Eigenschaft für mehrere Eigenschaften aus dem Überwachungsprotokolleintrag. Jedes der **Eigenschaft: Wert** -Paare in dieser mehrwertigen Eigenschaft werden durch ein Komma getrennt. Sie können die Power-Abfrage in Excel verwenden, um diese Spalte in mehrere Spalten aufzuteilen, damit jede Eigenschaft eine eigene Spalte aufweist. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und filtern. Weitere Informationen dazu finden Sie im Abschnitt "Spalten nach Trennzeichen teilen" in [Spalte mit Textteilen (Power-Abfrage)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
+- Wenn Sie alle Suchergebnisse herunterladen, enthält die CSV-Datei eine Spalte mit dem Namen **Auditdata**, die zusätzliche Informationen zu den einzelnen Ereignissen enthält. Die Daten in dieser Spalte bestehen aus einem JSON-Objekt, das mehrere Eigenschaften aus dem Überwachungsprotokolleintrag enthält. Jedes *Property: Value-* Paar im JSON-Objekt wird durch ein Komma getrennt. Sie können das JSON-Transformations Tool im Power Query-Editor in Excel verwenden, um die **Auditdata** -Spalte in mehrere Spalten aufzuteilen, sodass jede Eigenschaft im JSON-Objekt über eine eigene Spalte verfügt. Auf diese Weise können Sie eine oder mehrere dieser Eigenschaften sortieren und filtern. Eine Schritt-für-Schritt-Anleitung zum Transformieren des JSON-Objekts mithilfe des Power Query-Editors finden Sie unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md).
     
     Nachdem Sie die Spalte **Auditdata** geteilt haben, können Sie in der Spalte **Vorgänge** filtern, um die detaillierten Eigenschaften für einen bestimmten Aktivitätstyp anzuzeigen. 
     
-- Für die Daten, die im Feld **Auditdata** für einen Überwachungseintrag angezeigt werden, gibt es eine Grenze von 3.060 Zeichen. Wenn die 3.060-Zeichen Grenze überschritten wird, werden die Daten in diesem Feld abgeschnitten. 
-    
+- Die Option **alle Ergebnisse herunterladen** lädt die Rohdaten aus dem Office 365 Überwachungsprotokoll in eine CSV-Datei herunter. Diese Datei enthält unterschiedliche Spaltennamen (CreationDate, userids, Operation, Auditdata) als die Datei, die heruntergeladen wurde, wenn Sie die Option geladene **Ergebnisse speichern** auswählen. Die Werte in den zwei unterschiedlichen CSV-Dateien für dieselbe Aktivität können ebenfalls unterschiedlich sein. Beispielsweise kann die Aktivität in der Spalte **Aktion** in der CSV-Datei einen anderen Wert als den "benutzerfreundlichen" Namen haben, der in der Spalte " **Aktivität** " auf der Seite " **Überwachungsprotokoll Suche** " angezeigt wird. Beispiel: Mailbox Login: vs. User angemeldet bei Mailbox.
+
 - Wenn Sie alle Ergebnisse aus einer Suchabfrage herunterladen, die Ereignisse aus unterschiedlichen Office 365 Diensten enthält, enthält die **Auditdata** -Spalte in der CSV-Datei je nach Dienst, in dem die Aktion ausgeführt wurde, unterschiedliche Eigenschaften. Beispielsweise enthalten Einträge aus Exchange-und Azure AD-Überwachungsprotokollen eine Eigenschaft mit dem Namen **ResultStatus** , die angibt, ob die Aktion erfolgreich war oder nicht. Diese Eigenschaft ist für Ereignisse in SharePoint nicht enthalten. In ähnlicher Weise verfügen SharePoint-Ereignisse über eine Eigenschaft, die die Website-URL für Aktivitäten im Zusammenhang mit Dateien und Ordnern identifiziert. Um dieses Verhalten zu verringern, sollten Sie verschiedene Suchvorgänge verwenden, um die Ergebnisse für Aktivitäten aus einem einzelnen Dienst zu exportieren. 
     
-    Eine Beschreibung der Eigenschaften, die in der **Auditdata** -Spalte in der CSV-Datei aufgelistet werden, wenn Sie alle Ergebnisse herunterladen, und der Dienst, auf den sich jeder bezieht, finden Sie unter [detaillierte Eigenschaften im Office 365 Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
+    Eine Beschreibung vieler Eigenschaften, die in der **Auditdata** -Spalte in der CSV-Datei aufgelistet werden, wenn Sie alle Ergebnisse herunterladen, und der Dienst, auf den sich jeder bezieht, finden Sie unter [detaillierte Eigenschaften im Office 365 Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Überwachte Aktivitäten
 

@@ -3,7 +3,7 @@ title: Überwachen der Freigabe für die Suche nach Ressourcen, die für externe
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/13/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. '
-ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157897"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435239"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 
@@ -42,7 +42,7 @@ Es gibt eine andere Schemaeigenschaft, die für den Freigabe Text wichtig ist. D
 
 ## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>Das SharePoint-Freigabemodell und Freigabe Ereignisse
 
-Die Freigabe wird tatsächlich durch drei separate Ereignisse definiert ****: sharingset, **SharingInvitationCreated**und **SharingInvitaitonAccepted**. Hier ist der Workflow für die Protokollierung von Freigabe Ereignissen im Office 365 Überwachungsprotokoll. 
+Die Freigabe wird durch drei separate Ereignisse definiert ****: "sharingset", " **SharingInvitationCreated**" und " **SharingInvitaitonAccepted**". Hier ist der Workflow für die Protokollierung von Freigabe Ereignissen im Office 365 Überwachungsprotokoll. 
   
 ![Flussdiagramm zur Funktionsweise der Freigabe Überwachung](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
@@ -73,19 +73,19 @@ Eine häufige Anforderung an Administratoren ist das Erstellen einer Liste aller
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Schritt 1: Suchen nach Freigabe Ereignissen und Exportieren der Ergebnisse in eine CSV-Datei
 
-Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Freigabe Ereignissen zu durchsuchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Freigabe Ereignissen zu durchsuchen. Weitere Informationen (einschließlich der erforderlichen Berechtigungen) zum Durchsuchen des Überwachungsprotokolls finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
     
 2. Melden Sie sich bei Office 365 mit Ihrem Geschäfts-, Schul- oder Unikonto an.
     
-3. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Such**  > **Überwachungsprotokoll Suche**.
+3. Klicken Sie im linken Bereich des Security #a0 Compliance Centers auf **Such**  > **Überwachungsprotokoll Suche**.
     
     Die Seite **Überwachungsprotokoll Suche** wird angezeigt. 
     
-4. Klicken Sie unter **Aktivitäten**auf **freigabeaktivitäten** , um nur nach Freigabe Ereignissen zu suchen. 
+4. Klicken Sie unter **Aktivitäten**auf **Freigabe-und Zugriffs Anforderungs Aktivitäten** , um nach Freigabe bezogenen Ereignissen zu suchen. 
     
-    ![Wählen Sie unter Aktivitäten die Option freigabeaktivitäten aus.](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Wählen Sie unter Aktivitäten die Option Freigabe-und Zugriffs Anforderungs Aktivitäten aus.](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Wählen Sie einen Datums-und Zeitbereich aus, um die Freigabe Ereignisse zu finden, die innerhalb dieses Zeitraums aufgetreten sind. 
     
@@ -96,54 +96,24 @@ Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Frei
     Nachdem Sie die Option Exportieren ausgewählt haben, wird am unteren Rand des Fensters eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen oder zu speichern.
     
 8. Klicken Sie auf Save **As** **Speichern** \> und speichern Sie die CSV-Datei in einem Ordner auf Ihrem lokalen Computer. 
-    
 
-  
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>Schritt 2: Filtern der CSV-Datei nach Ressourcen, die für externe Benutzer freigegeben sind
 
-Der nächste Schritt besteht darin, die CSV-Datei **** für das sharingset-und das **SharingInvitationCreated** -Ereignis zu filtern und die Ereignisse anzuzeigen, bei denen die **TargetUserOrGroupType** -Eigenschaft **Gast**ist. Dazu verwenden Sie das Power Query-Feature in Excel. Das folgende Verfahren wird in Excel 2016 ausgeführt. 
-  
-1. Öffnen Sie in Excel 2016 eine leere Arbeitsmappe.
+Der nächste Schritt besteht darin, die CSV-Datei **** für das sharingset-und das **SharingInvitationCreated** -Ereignis zu filtern und die Ereignisse anzuzeigen, bei denen die **TargetUserOrGroupType** -Eigenschaft **Gast**ist. Verwenden Sie dazu das Tool Power Query Editor in Excel. Eine Schritt-für-Schritt-Anleitung finden Sie unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md). 
+
+Nachdem Sie die Anweisungen im vorherigen Thema zum Vorbereiten der CSV-Datei befolgt haben, gehen Sie wie folgt vor:
     
-2. Klicken Sie auf die Registerkarte **Daten** . 
+1. Öffnen Sie die CSV-Datei, die Sie mit dem Power Query-Editor vorbereitet haben. 
+
+2. Klicken Sie auf der Registerkarte **Start** auf **#a0 Filter sortieren**, und klicken Sie dann auf **Filter**.
     
-3. Klicken Sie auf **neue Abfrage** \> **aus Datei** \> **aus CSV**.
-    
-    ![Wählen Sie auf der Registerkarte Daten die Option Neue Abfrage aus, wählen Sie aus Datei aus, und wählen Sie dann aus CSV aus.](media/5170ab34-b449-40ea-bd3f-f1432c1c5973.png)
-  
-4. Öffnen Sie die CSV-Datei, die Sie in Schritt 1 heruntergeladen haben.
-    
-    Die CSV-Datei wird im Abfrage-Editor geöffnet. Beachten Sie, dass es vier Spalten gibt: **Zeit**, **Benutzer**, **Aktion**und **Details**. Die **Detail** Spalte ist ein Feld mit mehreren Eigenschaften. Im nächsten Schritt erstellen Sie eine neue Spalte für jede der Eigenschaften in der **Detail** Spalte. 
-    
-5. Wählen Sie die Spalte **Detail** aus, und klicken Sie dann auf der Registerkarte **Start** auf **Spalte** \> **nach Trennzeichen**aufteilen.
-    
-    ![Klicken Sie auf der Registerkarte Start auf Spalte teilen, und klicken Sie dann auf nach Trennzeichen](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
-  
-6. Führen Sie im Fenster **Spalte nach Trennzeichen teilen** folgende Schritte aus: 
-    
-      - Wählen Sie unter Trenn **Zeichen auswählen oder eingeben**die Option **Komma**aus.
-    
-      - Wählen **** Sie unter Split **bei jedem Vorkommen des Trennzeichens**.
-    
-7. Klicken Sie auf **OK**.
-    
-    Die **Detail** Spalte ist in mehrere Spalten unterteilt. Jede neue Spalte hat den Namen **Detail. 1**, **Detail. 2**, **Detail. 3**usw. Sie werden feststellen, dass die Werte in jeder Zelle in den Spalten **Details. n** dem Namen der Eigenschaft vorangestellt werden. beispielsweise **Operation: sharingset**, **Operation: SharingInvitationAccepted**und **Operation: SharingInvitationCreated**.
-    
-    ![Die Detail Spalte ist in mehrere Spalten aufgeteilt, eine für jede Eigenschaft](media/4b104ead-0313-4bd4-b2a9-f143ccb378ac.png)
-  
-8. Klicken Sie auf der Registerkarte **Datei** auf **Laden schließen &amp; ** , um den Abfrage-Editor zu schließen und die Datei in einer Excel-Arbeitsmappe zu öffnen. 
-    
-    Der nächste Schritt besteht darin, die Datei so zu filtern, **** dass nur die Ereignisse "sharingset" und " **SharingInvitationCreated** " angezeigt werden. 
-    
-9. Wechseln Sie zur Registerkarte **Start** , und wählen Sie dann die Spalte **Aktion** aus. 
-    
-10. Deaktivieren Sie in der Dropdownliste **Sortier &amp; Filter** alle Optionen, und wählen Sie dann **freigabeset** und **SharingInvitationCreated**aus, und klicken Sie dann auf **OK**.
+3. Deaktivieren Sie in der Dropdownliste **Sortier #a0 Filter** in der Spalte **Vorgänge** alle Optionen, und wählen **** Sie dann freigabeset und **SharingInvitationCreated**aus, und klicken Sie dann auf **OK**.
     
     Excel zeigt die Zeilen für das **sharingset** -und das **SharingInvitationCreated** -Ereignis an. 
     
-11. Wechseln Sie zu der Spalte mit dem Namen **Detail. 17** (oder je nachdem, welche Spalte die **TargetUserOrGroupType** -Eigenschaft enthält), und wählen Sie Sie aus. 
+4. Wechseln Sie zur Spalte mit dem Namen **TargetUserOrGroupType** , und wählen Sie Sie aus. 
     
-12. Deaktivieren Sie in der Dropdownliste **Sortier &amp; Filter** alle Optionen, und wählen Sie **TargetUserOrGroupType: Gast**aus, und klicken Sie dann auf **OK**.
+5. Deaktivieren Sie in der Dropdownliste **Sortier #a0 Filter** die Option alle Auswahlen, wählen Sie **TargetUserOrGroupType: Gast**aus, und klicken Sie dann auf **OK**.
     
     In Excel werden nun die Zeilen für **SharingInvitationCreated** -und **sharingset** -Ereignisse sowie die Position des Zielbenutzers außerhalb Ihrer Organisation angezeigt, da externe Benutzer durch den Wert **TargetUserOrGroupType: Guest**identifiziert werden. 
     
@@ -151,7 +121,7 @@ In der folgenden Tabelle sind alle Benutzer in der Organisation aufgeführt, die
   
 ![Freigeben von Ereignissen in Office 365 Überwachungsprotokoll](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
   
-Obwohl es nicht in der vorherigen Tabelle enthalten ist, gibt die Spalte **Detail. 10** (oder welche Spalte die **objectID** -Eigenschaft enthält) die Ressource an, die für den Zielbenutzer freigegeben wurde; zum Beispiel `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+Obwohl es nicht in der vorherigen Tabelle enthalten ist, gibt die **objectID** -Eigenschaft die Ressource an, die für den Zielbenutzer freigegeben wurde; zum Beispiel `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
   
 > [!TIP]
-> Wenn Sie ermitteln möchten, wann ein Gastbenutzer tatsächlich Berechtigungen für den Zugriff auf eine Ressource erhalten hat (im Gegensatz zu den Ressourcen, die für Sie freigegeben wurden), wiederholen Sie die Schritte 10, 11 und 12, und Filtern Sie nach dem **SharingInvitationAccepted** und dem freigabeset. ** **Ereignisse in Schritt 10. 
+> Wenn Sie ermitteln möchten, ob einem Gastbenutzer tatsächlich Berechtigungen für den Zugriff auf eine Ressource zugewiesen wurden (im Gegensatz zu den Ressourcen, die für Sie freigegeben wurden), wiederholen Sie die Schritte 2, 3 und 4, und Filtern Sie nach dem **SharingInvitationAccepted** und dem **freigabeset** . Ereignisse in Schritt 5. 
