@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131394"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435255"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -99,7 +99,7 @@ Ein Prozess bewertet die Elemente im Ordner "Wiederherstellbare Elemente" in reg
   
 Wenn ein Benutzer versucht, bestimmte Eigenschaften eines Postfachelements zu ändern – zum Beispiel Betreff, Text, Anhänge, Sender und Empfänger oder Sende- bzw. Empfangsdatum einer Nachricht – wird eine Kopie des ursprünglichen Elements im Ordner "Wiederherstellbare Elemente" gespeichert, bevor die Änderung übernommen wird. Dies geschieht für alle nachfolgenden Änderungen. Am Ende des Aufbewahrungszeitraums werden die Kopien im Ordner "Wiederherstellbare Elemente" dauerhaft gelöscht.
   
-Wenn ein Benutzer das Unternehmen verlässt und sein Postfach von einer Aufbewahrungsrichtlinie abgedeckt ist, wird das Postfach ein inaktives Postfach, sobald das Office 365-Konto des Benutzers gelöscht wird. Die Inhalte eines inaktiven Postfachs unterliegen weiterhin der Aufbewahrungsrichtlinie, die dem Postfach zugewiesen wurde, bevor es inaktiv wurde, und die Inhalte sind über eine eDiscovery-Suche verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](https://go.microsoft.com/fwlink/?linkid=846909).
+Wenn ein Benutzer das Unternehmen verlässt und sein Postfach von einer Aufbewahrungsrichtlinie abgedeckt ist, wird das Postfach ein inaktives Postfach, sobald das Office 365-Konto des Benutzers gelöscht wird. Die Inhalte eines inaktiven Postfachs unterliegen weiterhin der Aufbewahrungsrichtlinie, die dem Postfach zugewiesen wurde, bevor es inaktiv wurde, und die Inhalte sind über eine eDiscovery-Suche verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md).
   
 ![Diagramm des Aufbewahrungsflusses in E-Mail- und öffentlichen Ordnern](media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
   
