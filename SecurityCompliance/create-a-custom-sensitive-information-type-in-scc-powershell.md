@@ -3,7 +3,7 @@ title: Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für DLP im Security & Compliance Center erstellen und importieren.
-ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b036d308a55dbd557c6b3dd5e0d5315d0d26bc83
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259098"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417407"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen in Security & Compliance Center PowerShell
 
 Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) in Office 365 umfasst zahlreiche integrierte [Typen vertraulicher Informationen](what-the-sensitive-information-types-look-for.md), die Sie in DLP-Richtlinien verwenden können. Diese integrierten Typen unterstützen Sie beim Erkennen und Schützen von Kreditkartennummern, Bankkontonummern, Reisepassnummern und mehr. 
   
-Wenn Sie jedoch verschiedene Typen vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel eine Mitarbeiter-ID, die ein für Ihre Organisation spezifisches Format verwendet, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen. Der vertrauliche Informationstyp wird in einer XML-Datei definiert, die als _Regelpaket_ bezeichnet wird.
+Wenn Sie jedoch verschiedene Typen vertraulicher Informationen identifizieren und schützen müssen, zum Beispiel eine Mitarbeiter-ID, die ein für Ihre Organisation spezifisches Format verwendet, können Sie einen benutzerdefinierten Typ für vertrauliche Informationen erstellen. Dieser wird in einer XML-Datei definiert, die als *Regelpaket* bezeichnet wird.
   
 In diesem Thema wird gezeigt, wie Sie eine XML-Datei erstellen, die Ihren eigenen benutzerdefinierten vertraulichen Informationstyp definiert. Sie müssen wissen, wie Sie einen regulären Ausdruck erstellen. In diesem Thema wird beispielsweise ein benutzerdefinierter vertraulicher Informationstyp erstellt, der eine Mitarbeiter-ID identifiziert. Sie können dieses XML-Beispiel als Ausgangspunkt für Ihre eigene XML-Datei verwenden.
   
@@ -228,14 +228,26 @@ Das Any-Element hat optionale minMatches- und maxMatches-Attribute, die Sie verw
 ### <a name="match-at-least-one-child-match-element"></a>Übereinstimmung mit mindestens einem untergeordneten "Match"-Element
 
 Wenn Sie möchten, dass nur eine Mindestanzahl von Match-Elementen erfüllt sein muss, können Sie das minMatches-Attribut verwenden. Diese Match-Elemente werden eigentlich durch einen impliziten OR-Operator verknüpft. Dieses Any-Element wird erfüllt, wenn ein US-formatiertes Datum oder ein Stichwort aus einer Liste gefunden wird.
-  
-![XML-Markup mit Any-Element und minMatches-Attribut](media/385db1b1-571b-4a05-81b3-db28f5099c17.png)
-  
+
+```
+<Any minMatches="1" >
+     <Match idRef="Func_us_date" />
+     <Match idRef="Keyword_employee" />
+     <Match idRef="Keyword_badge" />
+</Any>
+```
+    
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>Übereinstimmung mit einer genauen Untermenge beliebiger untergeordneter Match-Elemente
 
 Wenn Sie möchten, dass eine genaue Anzahl von Match-Elementen gefunden werden soll, können Sie für „minMatches“ und „maxMatches“ den gleichen Wert festlegen. Dieses Any-Element ist nur dann erfüllt, wenn genau ein Datum oder Stichwort gefunden wird. Wenn mehr gefunden werden, gilt das Muster als nicht übereinstimmend.
-  
-![XML-Markup mit Any-Element und minMatches- sowie maxMatches-Attribut](media/97b10002-7781-42e8-ac5a-20ad8c5a887e.png)
+
+```
+<Any minMatches="1" maxMatches="1" >
+     <Match idRef="Func_us_date" />
+     <Match idRef="Keyword_employee" />
+     <Match idRef="Keyword_badge" />
+</Any>
+```
   
 ### <a name="match-none-of-children-match-elements"></a>Übereinstimmung für keine untergeordneten Match-Elemente
 
@@ -243,7 +255,25 @@ Wenn Sie festlegen möchten, dass ein bestimmter Nachweis nicht vorhanden sein d
   
 Die Entität „Employee ID“ such zum Beispiel nach dem Stichwort „Card“, da es sich auf eine „ID Card“ beziehen kann. Wenn „card“ jedoch nur im Ausdruck „credit card“ vorkommt, bedeutet „card“ in diesem Inhalt wahrscheinlich nicht „ID card“. Sie können also „credit card“ als Stichwort zu einer Liste mit Begriffen hinzufügen, die Sie von der Übereinstimmung mit dem Muster ausschließen möchten.
   
-![XML-Markup mit maxMatches-Attributwert von 0 (null)](media/f81d44e5-3db8-48a8-8919-f483a386afdf.png)
+```
+<Any minMatches="0" maxMatches="0" >
+    <Match idRef="Keyword_false_positives_local" />
+    <Match idRef="Keyword_false_positives_intl" />
+</Any>
+```
+
+### <a name="match-a-number-of-unique-terms"></a>Übereinstimmung mit einer Reihe eindeutiger Begriffe
+
+Wenn Entsprechungen für eine Reihe eindeutiger Begriffe gefunden werden sollen, verwenden Sie den *uniqueResults*-Parameter und legen Sie ihn wie im folgenden Beispiel auf *true* fest:
+
+```
+<Pattern confidenceLevel="75">
+    <IdMatch idRef="Salary_Revision_terms" />
+    <Match idRef=" Salary_Revision_ID " minCount="3" uniqueResults="true" />
+</Pattern>
+```
+
+In diesem Beispiel ist ein Muster für die Gehaltsrevision mit mindestens drei eindeutigen Übereinstimmungen definiert. 
   
 ## <a name="how-close-to-the-entity-must-the-other-evidence-be-patternsproximity-attribute"></a>Wie nah an der Entität muss der andere Nachweis sein? [patternsProximity-Attribut]
 
@@ -321,7 +351,7 @@ Wenn es fertig ist, sollte das RulePack-Element wie folgt aussehen.
 
 Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen für vertrauliche Informationen für DLP zu importieren. Nun können Ihre benutzerdefinierten vertraulichen Informationstypen sowohl im Exchange Admin Center als auch im Security &amp; Compliance Center verwendet werden. Als Teil dieser Verbesserung sollten Sie die Security &amp; Compliance Center-PowerShell verwenden, um Ihre benutzerdefinierten vertraulichen Informationstypen zu importieren. Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten vertraulichen Informationstypen funktionieren weiterhin wie zuvor, es kann jedoch bis zu einer Stunde dauern, bis Änderungen, die Sie im Security &amp; Compliance Center an benutzerdefinierten vertraulichen Informationstypen vorgenommen haben, im Exchange Admin Center angezeigt werden.
   
-Beachten Sie, dass Sie im Security &amp; Compliance Center das Cmdlet `DlpSensitiveInformationTypeRulePackage` verwenden müssen, um ein Regelpaket hochzuladen. Im Exchange Admin Center wurde früher das Cmdlet `ClassificationRuleCollection` verwendet. 
+Beachten Sie, dass Sie im Security &amp;Compliance Center das  Cmdlet **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** verwenden müssen, um ein Regelpaket hochzuladen. Im Exchange Admin Center wurde früher das Cmdlet **ClassificationRuleCollection** verwendet. 
   
 ## <a name="upload-your-rule-package"></a>Hochladen des Regelpakets
 
@@ -347,13 +377,13 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
 
 5. Um sicherzustellen, dass Sie einen neuen Typ für vertrauliche Informationen erstellt haben, führen Sie einen der folgenden Schritte aus:
 
-  - Führen Sie den folgenden Befehl aus, um zu überprüfen, ob das neue Regelpaket aufgeführt ist:
+  - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) aus, um zu überprüfen, ob das neue Regelpaket aufgeführt wird:
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
     ``` 
 
-  - Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Typ für vertrauliche Informationen aufgeführt ist:
+  - Führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) aus, um zu überprüfen, ob der Typ für vertrauliche Informationen aufgeführt wird:
 
     ```
     Get-DlpSensitiveInformationType
@@ -361,7 +391,7 @@ Gehen Sie zum Hochladen des Regelpakets wie folgt vor:
 
     Bei benutzerdefinierten Typen für vertrauliche Informationen ist der Publisher-Eigenschaftswert ein anderer als „Microsoft Corporation“.
 
-  - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie den folgenden Befehl aus:
+  - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) aus:
 
     ```
     Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -407,11 +437,12 @@ Wenn ein benutzerdefinierter Typ für vertrauliche Informationen ein Problem ent
 
 DLP verwendet den Suchcrawler zum Identifizieren und Klassifizieren von vertraulichen Informationen in Websiteinhalten. Inhalte in SharePoint Online- und OneDrive for Business-Websites werden bei jeder Aktualisierung automatisch erneut durchforstet. Damit der neue benutzerdefinierte Typ für vertrauliche Informationen im gesamten vorhandenen Inhalt identifiziert werden kann, muss der Inhalt erneut durchforstet werden.
   
-In Office 365 können Sie das erneute Durchforsten des gesamten Mandanten nicht manuell anfordern, für eine Websitesammlung, Liste oder Bibliothek ist dies jedoch möglich. Weitere Informationen finden Sie unter [Manuelles Durchforsten und erneutes Indizieren einer Website, einer Bibliothek oder Liste](https://support.office.com/article/9afa977d-39de-4321-b4ca-8c7c7e6d264e).
+In Office 365 können Sie das erneute Durchforsten des gesamten Mandanten nicht manuell anfordern, für eine Websitesammlung, Liste oder Bibliothek ist dies jedoch möglich. Weitere Informationen finden Sie unter [Manuelles Durchforsten und erneutes Indizieren einer Website, einer Bibliothek oder Liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>Entfernen eines benutzerdefinierten Typs für vertrauliche Informationen
 
-**Hinweis**: Bevor Sie einen benutzerdefinierten Typ für vertrauliche Informationen entfernen, überprüfen Sie, dass keine DLP-Richtlinien oder Exchange-Nachrichtenflussregeln (auch bezeichnet als „Transportregeln“) auf den Typ vertraulicher Informationen verweisen.
+> [!NOTE]
+> Bevor Sie einen benutzerdefinierten Typ für vertrauliche Informationen entfernen, überprüfen Sie, dass keine DLP-Richtlinien oder Exchange-Nachrichtenflussregeln (auch bezeichnet als Transportregeln) mehr auf den Typ vertraulicher Informationen verweisen.
 
 In Security & Compliance Center PowerShell gibt es zwei Methoden zum Entfernen eines benutzerdefinierten Typs für vertrauliche Informationen:
 
@@ -421,7 +452,7 @@ In Security & Compliance Center PowerShell gibt es zwei Methoden zum Entfernen e
 
 1. [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
-2. Verwenden Sie zum Entfernen eines benutzerdefinierten Regelpakets die folgende Syntax:
+2. Wenn Sie ein benutzerdefiniertes Regelpaket entfernen möchten, verwenden Sie das Cmdlet [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps):
 
     ```
     Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -439,13 +470,13 @@ In Security & Compliance Center PowerShell gibt es zwei Methoden zum Entfernen e
 
 3. Um sicherzustellen, dass Sie einen benutzerdefinierten Typen für vertrauliche Informationen erfolgreich entfernt haben, führen Sie einen der folgenden Schritte aus:
 
-  - Führen Sie den folgenden Befehl aus, um sicherzustellen, dass das neue Regelpaket nicht mehr aufgeführt ist:
+  - Führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) aus und vergewissern Sie sich, dass das Regelpaket nicht mehr aufgeführt wird:
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
     ``` 
 
-  - Führen Sie den folgenden Befehl aus, und stellen Sie sicher, dass die Typen für vertrauliche Informationen im entfernten Regelpaket nicht mehr aufgeführt werden:
+  - Führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) aus und stellen Sie sicher, dass die Typen für vertrauliche Informationen im entfernten Regelpaket nicht mehr aufgeführt werden:
 
     ```
     Get-DlpSensitiveInformationType
@@ -453,7 +484,7 @@ In Security & Compliance Center PowerShell gibt es zwei Methoden zum Entfernen e
 
     Bei benutzerdefinierten Typen für vertrauliche Informationen ist der Publisher-Eigenschaftswert ein anderer als „Microsoft Corporation“.
 
-  - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie den folgenden Befehl aus, um sicherzustellen, dass der Typ für vertrauliche Informationen nicht mehr aufgeführt ist:
+  - Ersetzen Sie \<Name\> durch den Namenswert des Typs für vertrauliche Informationen (z. B. die Mitarbeiter-ID), und führen Sie das Cmdlet [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) aus, um sicherzustellen, dass der Typ für vertrauliche Informationen nicht mehr aufgeführt wird:
 
     ```
     Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -473,9 +504,10 @@ Informationen zum Herstellen der Verbindung zu Security & Compliance Center Powe
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>Schritt 1: Exportieren des vorhandenen Regelpakets in eine XML-Datei
 
-**Hinweis**: Wenn Sie eine Kopie der XML-Datei haben (z. B. eine soeben erstellte und importiert Datei), können Sie mit dem nächsten Schritt fortfahren, in dem Sie die XML-Datei ändern.
+> [!NOTE]
+> Wenn Sie eine Kopie der XML-Datei haben (z. B. eine soeben erstellte und importierte Datei), können Sie mit dem nächsten Schritt fortfahren, in dem Sie die XML-Datei ändern.
 
-1. Führen Sie den folgenden Befehl aus, um den Namen des benutzerdefinierten Regelpakets zu ermitteln, falls Sie ihn noch nicht kennen:
+1. Sollten Sie ihn noch nicht kennen, führen Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) aus, um den Namen des benutzerdefinierten Regelpakets zu ermitteln:
 
     ```
     Get-DlpSensitiveInformationTypeRulePackage
@@ -483,19 +515,19 @@ Informationen zum Herstellen der Verbindung zu Security & Compliance Center Powe
 
     **Hinweis**: Das integrierte Regelpaket, das die integrierten Typen für vertrauliche Informationen enthält, heißt „Microsoft Regelpaket“. Das Regelpaket, das die benutzerdefinierten Typen für vertrauliche Informationen enthält, die Sie in der Security & Compliance Center-Benutzeroberfläche erstellt haben, heißt „Microsoft.SCCManaged.CustomRulePack“.
 
-2. Verwenden Sie zum Speichern des benutzerdefinierten Regelpakets in einer Variablen die folgende Syntax:
+2. Verwenden Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps), um das benutzerdefinierte Regelpaket in einer Variablen zu speichern:
 
     ```
     $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
     ```
 
-   Wenn der Name für das Regelpaket beispielsweise „Employee ID Custom Rule Pack“ lautet, führen Sie den folgenden Befehl aus:
+   Wenn der Name für das Regelpaket beispielsweise „Employee ID Custom Rule Pack“ lautet, führen Sie das folgende Cmdlet aus:
 
     ```
     $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
     ```
 
-3. Verwenden Sie zum Exportieren des benutzerdefinierten Regelpakets in eine XML-Datei die folgende Syntax:
+3. Verwenden Sie das Cmdlet [Set-Content](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/set-content?view=powershell-6) zum Exportieren des benutzerdefinierten Regelpakets in eine XML-Datei:
 
     ```
     Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
@@ -513,18 +545,10 @@ Typen für vertrauliche Informationen in der XML-Datei und andere Elemente in de
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>Schritt 3: Importieren Sie die aktualisierte XML-Datei wieder in das vorhandene Regelpaket.
 
-Verwenden Sie zum Importieren der aktualisierten XML-Datei in das vorhandene Regelpaket die folgende Syntax:
+Verwenden Sie das Cmdlet [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps), um die aktualisierte XML-Datei wieder in das vorhandene Regelpaket zu importieren:
 
 ```
-Set-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity" -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
-```
-
-Sie können den Wert „Name“ oder den Wert `RulePack id` (GUID) verwenden, um das Regelpaket zu identifizieren.
-
-In diesem Beispiel wird die aktualisierte Unicode-XML-Datei mit dem Namen „MyUpdatedRulePack.xml“ aus „C:\Dokumente“ in das vorhandene Regelpaket mit dem Namen „Employee ID Custom Rule Pack“ hochgeladen.
-
-```
-Set-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack" -FileData (Get-Content -Path "C:\My Documents\MyUpdatedRulePack.xml" -Encoding Byte)
+Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
 Ausführliche Informationen zur Syntax und zu den Parametern finden Sie unter [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage).
