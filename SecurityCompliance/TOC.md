@@ -30,7 +30,7 @@
 ### [Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)
 ### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
 
-## [Verhindern von Datenverlust (DLP)](data-loss-prevention-policies.md)
+## [Verhinderung von Datenverlust (DLP)](data-loss-prevention-policies.md)
 ### [DLP und Microsoft Teams](dlp-microsoft-teams.md)
 ### [Sehen Sie einen erweiterten Überblick über DLP an](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### Einrichten von DLP
@@ -103,6 +103,7 @@
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
 #### [Einrichten eines Connectors zum Archivieren von LinkedIn-Daten](archive-linkedin-data.md)
+#### [Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten](archive-instant-bloomberg-data.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
 ## Speichern von Daten
 ### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
@@ -245,6 +246,7 @@
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
 #### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
 #### [Einrichten eines Connectors zum Archivieren von LinkedIn-Daten](archive-linkedin-data.md)
+#### [Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten](archive-instant-bloomberg-data.md)
 #### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
 ## Speichern von Daten
 ### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md)
 ## [Verwalten der Postfächern](enable-mailbox-auditing.md)
 ## [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md)
+## [Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md)
 ## [Verwenden des Überwachungsprotokoll zum Beheben häufiger Szenarien](auditing-troubleshooting-scenarios.md)
 ## [Verwenden der Freigabeüberwachung im Überwachungsprotokoll](use-sharing-auditing.md)
 ## [Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll](search-for-ediscovery-activities-in-the-audit-log.md)
