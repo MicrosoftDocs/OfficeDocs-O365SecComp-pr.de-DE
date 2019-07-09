@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435255"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587114"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -58,7 +58,7 @@ Sie erstellen und verwalten Aufbewahrungsrichtlinien auf der:
 
 Wenn Sie einen Speicherort, z. B. eine Website oder ein Postfach in eine Aufbewahrungsrichtlinie einschließen, verbleibt der Inhalt an seinem ursprünglichen Speicherort. Benutzer können weiter mit ihren Dokumenten oder E-Mails arbeiten, als ob sich nichts geändert hätte. Wenn sie jedoch Inhalte bearbeiten oder löschen, die von der Richtlinie abgedeckt sind, wird eine Kopie des Inhalts in seinem Zustand zum Zeitpunkt der Anwendung der Richtlinie beibehalten.
   
-Für SharePoint-Websitesammlungen wird eine Kopie des ursprünglichen Inhalts im permanenten Dokumentarchiv beibehalten, wenn Benutzer diesen bearbeiten oder löschen; bei E-Mails und öffentlichen Ordnern wird die Kopie im Ordner "Wiederherstellbare Elemente" aufbewahrt. Diese sicheren Speicherorte und die aufbewahrten Inhalte sind für die meisten Benutzer nicht sichtbar. Mit einer Aufbewahrungsrichtlinie müssen Benutzer nicht einmal wissen, dass ihre Inhalte der Richtlinie unterliegen.
+Für SharePoint-Websitesammlungen wird eine Kopie des ursprünglichen Inhalts im permanenten Dokumentarchiv beibehalten, wenn Benutzer diesen bearbeiten oder löschen; bei E-Mails und öffentlichen Ordnern wird die Kopie im Ordner "Wiederherstellbare Elemente" aufbewahrt. Diese sicheren Speicherorte und die aufbewahrten Inhalte sind für die meisten Benutzer nicht sichtbar. Beim Arbeiten mit einer Aufbewahrungsrichtlinie müssen die Benutzer gar nicht wissen, dass ihre Inhalte der Richtlinie unterliegen.
   
 Hinweise:
   
