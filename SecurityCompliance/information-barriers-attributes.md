@@ -3,7 +3,7 @@ title: Attribute für Richtlinien für Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Referenz für verschiedene Attribute, die Sie in Richtlinien für Informationsbarrieren verwenden können.
-ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
-ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
+ms.openlocfilehash: 1e2e183da350308a57fa5d627b4867b9b3d30cee
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "35462406"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587064"
 ---
-# <a name="attributes-for-information-barrier-policies-preview"></a>Attribute für Richtlinien für Informationsbarrieren (Vorschau)
+# <a name="attributes-for-information-barrier-policies"></a>Attribute für Richtlinien für Informationsbarrieren
 
 Bestimmte Attribute in Azure Active Directory können verwendet werden, um Benutzer zu segmentieren. Nachdem Segmente definiert wurden, können diese Segmente als Filter für Richtlinien für Informationsbarrieren verwendet werden. Beispielsweise können Sie mithilfe von **Department** Segmente von Benutzern nach Abteilung in Ihrer Organisation definieren (sofern kein einzelner Mitarbeiter gleichzeitig für zwei Abteilungen arbeitet). 
 
 In diesem Artikel wird beschrieben, wie Sie Attribute mit Informationsbarrieren verwenden, und es wird eine Liste der Attribute bereitgestellt, die verwendet werden können. Wenn Sie mehr über Informationsbarrieren erfahren möchten, lesen Sie die folgenden Ressourcen:
-- [Informationsbarrieren (Vorschau)](information-barriers.md)
-- [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams (Vorschau)](information-barriers-policies.md)
-- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-edit-segments-policies.md.md)
+- [Informationsbarrieren](information-barriers.md)
+- [Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
+- [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Verwenden von Attributen in Richtlinien für Informationsbarrieren
 
@@ -93,11 +93,11 @@ In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Information
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams (Vorschau)](information-barriers-policies.md)
+[Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
 
-[Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)
+[Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)
 
-[Informationsbarrieren (Vorschau)](information-barriers.md)
+[Informationsbarrieren](information-barriers.md)
 
 
 

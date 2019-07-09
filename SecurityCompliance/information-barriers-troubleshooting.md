@@ -3,7 +3,7 @@ title: Problembehandlung bei Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Verwenden Sie diesen Artikel als Leitfaden für die Problembehandlung von Informationsbarrieren.
-ms.openlocfilehash: 20937fa4ee050dfa1e3bb4fcfcd582b1c78ccead
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 251fc1775318e2ed7cbda9a56e2c82db527082f6
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394300"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587054"
 ---
-# <a name="troubleshooting-information-barriers-preview"></a>Problembehandlung bei Informationsbarrieren (Vorschau)
+# <a name="troubleshooting-information-barriers"></a>Problembehandlung bei Informationsbarrieren
 
-[Informationsbarrieren (Preview)](information-barriers.md) können dazu beitragen, dass Ihre Organisation weiterhin den gesetzlichen Anforderungen und Branchenvorschriften entspricht. Beispielsweise können Sie mit Informationsbarrieren die Kommunikation zwischen bestimmten Benutzergruppen einschränken, um einen Interessenkonflikt oder andere Probleme zu vermeiden. (Weitere Informationen zum Einrichten von Informationsbarrieren finden Sie unter [define Policies for Information Barriers (Preview)](information-barriers-policies.md).)
+[Informationsbarrieren](information-barriers.md) können dazu beitragen, dass Ihre Organisation weiterhin den gesetzlichen Bestimmungen und Branchenvorschriften entspricht. Beispielsweise können Sie mit Informationsbarrieren die Kommunikation zwischen bestimmten Benutzergruppen einschränken, um einen Interessenkonflikt oder andere Probleme zu vermeiden. (Weitere Informationen zum Einrichten von Informationsbarrieren finden Sie unter [define Policies for Information Barriers](information-barriers-policies.md).)
 
 Für den Fall, dass Personen aufgrund von Informationsbarrieren unerwartete Probleme haben, können Sie einige Schritte zur Lösung dieser Probleme durchführen. Verwenden Sie diesen Artikel als Leitfaden.
 
@@ -171,9 +171,9 @@ Stellen Sie sicher, dass in Ihrer Organisation keine [Exchange-adressbuchrichtli
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams (Vorschau)](information-barriers-policies.md)
+[Definieren von Richtlinien für Informationsbarrieren in Microsoft Teams](information-barriers-policies.md)
 
-[Informationsbarrieren (Vorschau)](information-barriers.md)
+[Informationsbarrieren](information-barriers.md)
 
 
 

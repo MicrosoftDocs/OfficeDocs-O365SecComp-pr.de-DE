@@ -3,7 +3,7 @@ title: Definieren von Richtlinien für Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,18 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
-ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 527f059eb0bccb97429c649d055496c06710c2a9
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394320"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587084"
 ---
-# <a name="define-policies-for-information-barriers-preview"></a>Definieren von Richtlinien für Informationsbarrieren (Vorschau)
+# <a name="define-policies-for-information-barriers"></a>Definieren von Richtlinien für Informationsbarrieren
 
 ## <a name="overview"></a>Übersicht
 
-Mit Informationsbarrieren können Sie Richtlinien definieren, mit denen verhindert werden soll, dass bestimmte Segmente von Benutzern miteinander kommunizieren, oder dass bestimmte Segmente nur mit bestimmten anderen Segmenten kommunizieren dürfen. Richtlinien für Informationsbarrieren können Ihrem Unternehmen dabei helfen, die Einhaltung relevanter Branchenstandards und-Vorschriften beizubehalten und potenzielle Interessenkonflikte zu vermeiden. Weitere Informationen finden Sie unter [Information Barriers (Preview)](information-barriers.md). 
+Mit Informationsbarrieren können Sie Richtlinien definieren, mit denen verhindert werden soll, dass bestimmte Segmente von Benutzern miteinander kommunizieren, oder dass bestimmte Segmente nur mit bestimmten anderen Segmenten kommunizieren dürfen. Richtlinien für Informationsbarrieren können Ihrem Unternehmen dabei helfen, die Einhaltung relevanter Branchenstandards und-Vorschriften beizubehalten und potenzielle Interessenkonflikte zu vermeiden. Weitere Informationen finden Sie unter [Information Barriers](information-barriers.md). 
 
 In diesem Artikel wird beschrieben, wie Sie Richtlinien für Informationsbarrieren planen, definieren, implementieren und verwalten. Es sind mehrere Schritte beteiligt, und der Arbeitsfluss ist in mehrere Teile unterteilt. Stellen Sie sicher, dass Sie die [voraus](#prerequisites) setzungen und den gesamten Prozess gelesen haben, bevor Sie mit dem definieren (oder bearbeiten) von Informations Sperrrichtlinien beginnen.
 
@@ -59,7 +59,7 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](information-barriers.md#required-licenses-and-permissions)sicher, dass die folgenden Anforderungen erfüllt sind: 
      
 - **Verzeichnisdaten**. Stellen Sie sicher, dass die Struktur Ihrer Organisation in Verzeichnisdaten widergespiegelt wird. Stellen Sie dazu sicher, dass die Attribute des Benutzerkontos wie Gruppenmitgliedschaft, Abteilungsname usw. ordnungsgemäß in Azure Active Directory (oder Exchange Online) aufgefüllt werden. Weitere Informationen finden Sie in den folgenden Ressourcen:
-  - [Attribute für Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-attributes.md)
+  - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
   - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -67,7 +67,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 
 - **Überwachungsprotokollierung**. Um den Status einer Richtlinienanwendung nachzuschlagen, muss die Überwachungsprotokollierung aktiviert sein. Dies wird empfohlen, bevor Sie mit dem Definieren von Segmenten oder Richtlinien beginnen. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren von Office 365 Überwachungsprotokoll Suche](turn-audit-log-search-on-or-off.md).
 
-- **Keine adressbuchrichtlinien**. Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, müssen Sie sicherstellen, dass keine Exchange-adressbuchrichtlinien vorhanden sind. Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) .
+- **Keine adressbuchrichtlinien**. Bevor Sie Richtlinien für Informationsbarrieren definieren und anwenden, müssen Sie sicherstellen, dass keine Exchange-adressbuchrichtlinien vorhanden sind. (Informationsbarrieren basieren auf adressbuchrichtlinien, die zwei Arten von Richtlinien sind jedoch nicht austauschbar.) Wenn Sie solche Richtlinien verwenden, müssen Sie zuerst [Ihre adressbuchrichtlinien entfernen](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) .
 
 - **PowerShell**. Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security #a0 Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. In diesem Artikel werden zwar einige Beispiele bereitgestellt, aber Sie müssen mit PowerShell-Cmdlets und-Parametern vertraut sein. Außerdem benötigen Sie das AzureRM-Modul.
     - [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -110,7 +110,7 @@ Wenn Sie über eine anfängliche Liste von Gruppen und Richtlinien verfügen, fa
 
 Erstellen Sie zusätzlich zu Ihrer anfänglichen Richtlinienliste eine Liste der Segmente für Ihre Organisation. Benutzer, die in Richtlinien für Informationsbarrieren eingeschlossen werden sollen, sollten zu einem Segment gehören, und kein Benutzer sollte zu zwei oder mehr Segmenten gehören. Für jedes Segment kann nur eine Informations Sperrrichtlinie angewendet werden. 
 
-Bestimmen Sie, welche Attribute in den Verzeichnisdaten Ihrer Organisation verwendet werden, um Segmente zu definieren. Sie können *Department*, Mitglied ** oder eines der unterstützten Attribute verwenden. Stellen Sie sicher, dass Sie Werte in dem Attribut haben, das Sie für Benutzer auswählen. [Siehe Liste der unterstützten Attribute für Informationsbarrieren (Preview)](information-barriers-attributes.md).
+Bestimmen Sie, welche Attribute in den Verzeichnisdaten Ihrer Organisation verwendet werden, um Segmente zu definieren. Sie können *Department*, Mitglied ** oder eines der unterstützten Attribute verwenden. Stellen Sie sicher, dass Sie Werte in dem Attribut haben, das Sie für Benutzer auswählen. [Siehe Liste der unterstützten Attribute für Informationsbarrieren](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Bevor Sie mit dem nächsten Abschnitt fortfahren, stellen Sie sicher, dass Ihre Verzeichnisdaten Werte für Attribute aufweisen, die Sie zum Definieren von Segmenten verwenden können**. Wenn Ihre Verzeichnisdaten keine Werte für die Attribute enthalten, die Sie verwenden möchten, müssen die Benutzerkonten aktualisiert werden, um diese Informationen einzubeziehen, bevor Sie mit Informationsbarrieren fortfahren. Wenn Sie Hilfe dazu erhalten möchten, lesen Sie die folgenden Ressourcen:<br/>- [Konfigurieren von Eigenschaften von Benutzerkonten mit Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -255,13 +255,13 @@ Mit PowerShell können Sie den Status von Benutzerkonten, Segmenten, Richtlinien
 
 Ressourcen stehen zur Verfügung, um Sie bei der Verwaltung ihrer Informations Barriere-Richtlinien zu unterstützen.
 
-- Wenn Probleme mit Informationsbarrieren auftreten, finden Sie weitere Informationen unter [Troubleshooting Information Barriers (Preview)](information-barriers-troubleshooting.md).
+- Wenn mit Informationsbarrieren etwas schief geht, finden Sie weitere Informationen unter [Troubleshooting Information Barriers](information-barriers-troubleshooting.md).
 
 - Informationen zum Beenden der Anwendung von Richtlinien finden Sie unter [Beenden einer Richtlinienanwendung](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
 
 - Informationen zum Entfernen einer Richtlinie zu Informationsbarrieren finden Sie unter [Remove a Policy](information-barriers-edit-segments-policies.md.md#remove-a-policy).
 
-- Informationen zum vornehmen von Änderungen an Segmenten oder Richtlinien finden Sie unter [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren (Preview)](information-barriers-edit-segments-policies.md.md).
+- Informationen zum vornehmen von Änderungen an Segmenten oder Richtlinien finden Sie unter [Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Beispiel: Abteilungen, Segmente und Richtlinien von Contoso
 
@@ -316,6 +316,6 @@ Wenn dieser Vorgang abgeschlossen ist, entspricht Contoso den rechtlichen und br
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Hier erhalten Sie einen Überblick über Informationsbarrieren (Vorschau)](information-barriers.md)
+- [Hier erhalten Sie einen Überblick über Informationsbarrieren](information-barriers.md)
 
-- [Informationsbarrieren in der Microsoft Teams-Vorschau](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Informationsbarrieren in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

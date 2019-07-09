@@ -3,7 +3,7 @@ title: Bearbeiten von Richtlinien für Informationsbarrieren
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Hier erfahren Sie, wie Sie Richtlinien für Informationsbarrieren bearbeiten oder entfernen.
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394330"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587074"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren (Vorschau)
+# <a name="edit-or-remove-information-barrier-policies"></a>Bearbeiten (oder entfernen) von Richtlinien für Informationsbarrieren
 
 Nachdem Sie [Richtlinien für Informationsbarrieren definiert](information-barriers-policies.md)haben, müssen Sie möglicherweise im Rahmen der [Problembehandlung](information-barriers-troubleshooting.md) oder als regelmäßige Wartung Änderungen an diesen Richtlinien oder an Ihren Benutzersegmenten vornehmen. Verwenden Sie diesen Artikel als Leitfaden.
 
@@ -32,8 +32,8 @@ Nachdem Sie [Richtlinien für Informationsbarrieren definiert](information-barri
 |[Festlegen einer Richtlinie auf inaktiver Status](#set-a-policy-to-inactive-status)     |Legen Sie eine Richtlinie auf inaktiven Status fest, wenn Sie Änderungen an einer Richtlinie vornehmen möchten oder wenn Sie nicht möchten, dass eine Richtlinie wirksam ist.         |
 |[Entfernen einer Richtlinie](#remove-a-policy)     |Entfernen einer Richtlinie für Informationsbarrieren, wenn Sie eine bestimmte Richtlinie nicht mehr an Ort und Stelle benötigen.         |
 |[Beenden einer Richtlinienanwendung](#stop-a-policy-application)     |Tun Sie dies, wenn Sie den Prozess der Anwendung von Richtlinien für Informationsbarrieren beenden möchten.<br/>Beachten Sie, dass das Beenden einer Richtlinienanwendung nicht sofort erfolgt und keine Richtlinien rückgängig gemacht wird, die bereits auf Benutzer angewendet wurden.         |
-|[Definieren von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-policies.md)     |Definieren Sie eine Richtlinie für Informationsbarrieren, wenn noch keine solchen Richtlinien vorhanden sind, und Sie müssen die Kommunikation zwischen bestimmten Benutzergruppen einschränken oder einschränken.         |
-|[Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)     |Lesen Sie diesen Artikel, wenn Sie unerwartete Probleme mit Informationsbarrieren ausführen.         |
+|[Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)     |Definieren Sie eine Richtlinie für Informationsbarrieren, wenn noch keine solchen Richtlinien vorhanden sind, und Sie müssen die Kommunikation zwischen bestimmten Benutzergruppen einschränken oder einschränken.         |
+|[Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)     |Lesen Sie diesen Artikel, wenn Sie unerwartete Probleme mit Informationsbarrieren ausführen.         |
 
 > [!IMPORTANT]
 > Um die in diesem Artikel beschriebenen Aufgaben ausführen zu können, muss Ihnen eine entsprechende Rolle zugewiesen sein, beispielsweise eine der folgenden:<br/>-Microsoft 365 Enterprise-Global-Administrator<br/>-Office 365 globaler Administrator<br/>-Compliance-Administrator<br/>-IB-Compliance-Management (Dies ist eine neue Rolle!)<p>Weitere Informationen zu den Voraussetzungen für Informationsbarrieren finden Sie unter Prerequisites [(for Information Barrier Policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie [eine Verbindung mit Office 365 Security #a0 Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -52,7 +52,7 @@ Benutzerkontoattribute werden für die Definition von Segmenten verwendet, sodas
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, beispielsweise Name, Alias, Distinguished Name, kanonischer Domänenname, e-Mail-Adresse oder GUID. <p>   (Sie können dieses Cmdlet auch für einen einzelnen Benutzer verwenden: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   In diesem Beispiel wird auf zwei Benutzerkonten in Office 365 verwiesen: *meganb* für *Megan*und *alexw* für *Alex*.         |
 
-2. Bestimmen Sie, welches Attribut Sie für Ihr Benutzerkontoprofil (en) bearbeiten möchten. Weitere Informationen finden Sie unter [Attribute for Information Barrier Policies (Preview)](information-barriers-attributes.md) . 
+2. Bestimmen Sie, welches Attribut Sie für Ihr Benutzerkontoprofil (en) bearbeiten möchten. Weitere Informationen finden Sie unter [Attribute for Information Barrier Policies](information-barriers-attributes.md) . 
 
 3. Bearbeiten Sie ein oder mehrere Benutzerkonten, um Werte für das Attribut einzuschließen, das Sie im vorherigen Schritt ausgewählt haben. Verwenden Sie dazu eines der folgenden Verfahren:
 
@@ -168,10 +168,10 @@ Wenn Sie die Anwendung von Richtlinien für Informationsbarrieren gestartet habe
 
 [Hier erhalten Sie einen Überblick über Informationsbarrieren](information-barriers.md)
 
-[Definieren von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-policies.md)
+[Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
 
 [Weitere Informationen zu Informationsbarrieren in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[Attribute für Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-attributes.md)
+[Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
 
-[Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)
+[Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)
