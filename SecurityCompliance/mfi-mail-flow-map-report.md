@@ -2,25 +2,25 @@
 title: Nachrichtenfluss-Zuordnungsbericht
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können Informationen zum Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center erhalten.
-ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Administratoren können Informationen zum Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center erhalten.'
+ms.openlocfilehash: 04ffbdc339a084f3ae2bf9947469966f1a868d02
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158687"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601022"
 ---
 # <a name="mail-flow-map-report"></a>Nachrichtenfluss-Zuordnungsbericht
 
 Dieser Bericht gibt Einblicke in die Art und Weise, wie e-Mails durch Ihre Office 365 Organisation fließen. Sie können diese Informationen verwenden, um Muster zu erfahren, Anomalien zu identifizieren und Probleme zu beheben, wenn diese auftreten.
 
-![Der Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/mail-flow-map-selected.png)
+![Der Nachrichtenfluss-Zuordnungsbericht im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Nachrichtenfluss-Map-widget
 
@@ -50,4 +50,4 @@ Zugehörige Einblicke werden unterhalb der Nachrichtenfluss Zuordnung angezeigt,
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security #a0 Compliance Center](mail-flow-insights-v2.md).

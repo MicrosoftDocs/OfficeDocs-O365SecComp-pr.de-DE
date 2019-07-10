@@ -2,8 +2,8 @@
 title: Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/19/2018
+manager: dansimp
+ms.date: 05/19/2018
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 'Als Office 365 Benutzer können Sie Ihre eigenen Nachrichten mit Spamquarantäne auf zwei Arten verwalten: indem Sie auf Spambenachrichtigungen reagieren, die Sie direkt an Sie gesendet haben (wenn Ihr Administrator diese Funktion eingerichtet hat), oder indem Sie das Feature "Spamquarantäne" in der &amp; Security Compliance verwenden. Center.'
-ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 47c17e59f6f54d973eeaf761ecee6a1ac5a3dbba
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152817"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599351"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in Office 365
 
@@ -36,7 +36,7 @@ Als Office 365 Benutzer können Sie Nachrichten, die an die Quarantäne gesendet
 2. Erweitern Sie auf der linken Seite **Bedrohungs Verwaltung**, wählen Sie **überprüfen**und dann **Quarantäne**aus.
     
     > [!TIP]
-    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Wenn Sie direkt zur **Quarantäne** Seite im Security &amp; Compliance Center wechseln möchten, verwenden Sie die folgende URL: #a0[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
 Standardmäßig zeigt das Security &amp; Compliance Center alle e-Mail-Nachrichten an, die als Spam isoliert wurden. Die Nachrichten werden basierend auf dem **Datum** , an dem die Nachricht empfangen wurde, von der neuesten bis zur ältesten sortiert. **Absender**, **Betreff**und das Ablaufdatum (unter **Expires** ) werden ebenfalls für jede Nachricht angezeigt. Sie können nach einem Feld sortieren, indem Sie auf die entsprechende Spaltenüberschrift klicken; Klicken Sie ein zweites Mal auf eine Spaltenüberschrift, um die Sortierreihenfolge umzukehren. 
   

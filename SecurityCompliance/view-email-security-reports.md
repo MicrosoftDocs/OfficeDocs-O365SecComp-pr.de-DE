@@ -2,7 +2,7 @@
 title: Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 05/21/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 17a8114ec1d4af9a665c235e38461f281f4fe83f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408410"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598551"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -43,7 +43,7 @@ Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
 
 (**Neu!**) Im **Verschlüsselungs Bericht** werden Informationen über e-Mail-Nachrichten angezeigt, die entweder über die Richtlinien Ihrer Organisation oder durch Endbenutzer Steuerelemente verschlüsselt wurden. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen.
 
-Um diesen Bericht anzuzeigen, wechseln Sie im Security & Compliance Center zu **Berichte** \> - **Dashboard** \> -Verschlüsselungs **Bericht**.
+Um diesen Bericht anzuzeigen, wechseln Sie im Security #a0 Compliance Center zu **Berichte** \> - **Dashboard** \> -Verschlüsselungs **Bericht**.
 
 ![Verschlüsselungs Bericht](media/encryptionreport-defaultview.png) 
 

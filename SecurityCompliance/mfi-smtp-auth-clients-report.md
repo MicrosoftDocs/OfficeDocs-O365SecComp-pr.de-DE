@@ -2,19 +2,19 @@
 title: SMTP-Authentifizierungsclients (Bericht)
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über den Bericht über SMTP-Authentifizierungsclients im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Administratoren können sich im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center über den Bericht über SMTP-Authentifizierungsclients informieren.'
+ms.openlocfilehash: 21d2446bd7441f17c2371186d098118c6403de0c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158597"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598131"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP-Authentifizierungsclients (Bericht)
 
@@ -22,7 +22,7 @@ Der Bericht über **SMTP-Authentifizierungsclients** zeigt die Verwendung des SM
 
 Das Widget, das im Nachrichtenfluss-Dashboard angezeigt wird, gibt die Anzahl der Benutzer oder Dienstkonten an, die in den letzten 7 Tagen das SMTP-Authentifizierungsprotokoll verwendet haben.
 
-![Der Bericht über SMTP-Authentifizierungsclients im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/smtp-auth-clients-report-selected.png)
+![Der Bericht über SMTP-Authentifizierungsclients im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](media/smtp-auth-clients-report-selected.png)
 
 Durch Klicken auf das Widget wird ein Flyout geöffnet, das eine aggregierte Ansicht der TLS-Nutzung und-Volumes für die letzte Woche enthält.
 
@@ -50,4 +50,4 @@ Sie können auch eine detailliertere Version des Berichts herunterladen, indem S
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security #a0 Compliance Center](mail-flow-insights-v2.md).

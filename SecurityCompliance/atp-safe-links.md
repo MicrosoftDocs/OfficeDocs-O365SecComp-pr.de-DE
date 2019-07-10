@@ -2,7 +2,7 @@
 title: ATP-sichere Links in Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 05/17/2019
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Das Feature "sichere Links" bietet eine Zeit-für-Mausklick-Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Verwenden Sie sichere Links, um Ihre Organisation vor Phishing und anderen Angriffen zu schützen.
-ms.openlocfilehash: 4f1449fb97ad8d8f263073c917eed2c399bf4f22
-ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
+ms.openlocfilehash: 34d1ebbc5e0434de55f9e5f74a000bc8978e603e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "34748578"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598541"
 ---
 # <a name="office-365-atp-safe-links"></a>ATP-sichere Links in Office 365
 

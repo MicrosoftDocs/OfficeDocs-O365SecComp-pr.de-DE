@@ -2,8 +2,8 @@
 title: Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/4/2018
+manager: dansimp
+ms.date: 06/04/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie von einer einblickung zu einem detaillierten Bericht im &amp; Security Compliance Center durch ein Beispiel zur Verhinderung von Datenverlust navigieren können.
-ms.openlocfilehash: f87902551aa75e761cb297e127a14aab047d748e
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 88ffd110ec115308ac1b03e70e980cc0b2ae7bf4
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408290"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599261"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Exemplarische Vorgehensweise – Vom Einblick zum detaillierten Bericht
 

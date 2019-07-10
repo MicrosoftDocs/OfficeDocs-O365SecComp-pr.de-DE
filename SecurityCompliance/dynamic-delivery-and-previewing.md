@@ -2,7 +2,7 @@
 title: Dynamische Zustellung und Vorschau mit Office 365 sicheren ATP-Anlagen
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre Richtlinien für ATP-sichere Anlagen einrichten, wählen Sie dynamische Zustellung aus, um Verzögerungen bei der Nachrichtenübermittlung zu vermeiden und Benutzern das Anzeigen einer Vorschau von Anlagen zu ermöglichen, die gescannt werden.
-ms.openlocfilehash: 5d04593dd0884b21deefc202485aee27f60d1a5f
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f965c119e9c4fca15e43d281dfc2d00d2c79c23
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077831"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599901"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Dynamische Zustellung und Vorschau mit Office 365 sicheren ATP-Anlagen
 

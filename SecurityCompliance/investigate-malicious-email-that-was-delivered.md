@@ -2,7 +2,7 @@
 title: Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Untersuchung und Reaktion auf Bedrohungen
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414805"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605450"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Advanced Threat Protection-Plan 2)
 
@@ -78,10 +78,21 @@ So zeigen Sie die Änderungen am früheren Feld "Zustellungs Status" an (jetzt Z
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security &amp; Compliance Center. 
     
 2. Klicken Sie im linken Navigationsbereich auf **Threat Management** \> **Explorer**.
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![Threat Explorer mit Feldern Zustellungs Aktion und Zustellungs Speicherort.](media/ThreatExFields.PNG)
+
+In dieser Grafik wird möglicherweise die neue Spalte spezielle Aktionen feststellen. Dieses Feature zielt darauf ab, den Administratoren das Ergebnis der Verarbeitung einer e-Mail mitzuteilen. Spezielle Aktionen können am Ende der *e-Mail-Zeitachse*des Threat Explorers aktualisiert werden, ein neues Feature, mit dem die Jagd Erfahrung für Administratoren besser gemacht werden soll.
+
+E-Mail-Zeitachse schneidet nach dem Zufallsprinzip aus, da es bei der Überprüfung verschiedener Standorte kürzer ist, um zu versuchen, Ereignisse zu verstehen, die seit dem Eintreffen der e-Mail geschehen sind. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. Einige Ereignisse, die nach der Zustellung an Ihre e-Mails geschehen, werden in der Spalte "spezielle Aktionen" erfasst. Durch die Kombination der Informationen aus der *e-* Mail-Zeitachse dieser e-Mail mit den *speziellen Aktionen* , die bei der e-Mail-Zustellung vorgenommen werden, erhalten Administratoren einen Einblick in die Funktionsweise Ihrer Richtlinien, wo die e-Mail schließlich weitergeleitet wurde und in einigen Fällen, was die endgültige Bewertung war. Auf die Spalte spezielle Aktionen kann an derselben Stelle wie Zustellungs Aktion und Zustellungs Speicherort zugegriffen werden, aber um eine e-Mail-Zeitachse anzuzeigen:
+
+1. Klicken Sie auf den Betreff der e-Mail.
+2. Klicken Sie im angezeigten Bereich auf *e-Mail-Zeitachse*. (Sie wird unter anderen Überschriften wie "Zusammenfassung" oder "Details", usw. angezeigt.)
+
+Nachdem Sie die e-Mail-Zeitachse geöffnet haben, sollten Sie eine Tabelle sehen, in der Ihnen die Ereignisse nach der Zustellung für diese e-Mail mitgeteilt werden, oder im Fall von keine weiteren Ereignisse für die e-Mail ein einzelnes Ereignis für die ursprüngliche Zustellung angezeigt wird, das ein Ergebnis wie " *Blockierte* " angibt. mit einem Urteil wie *Phishing*. Die Registerkarte hat auch die Möglichkeit, die gesamte e-Mail-Zeitachse zu exportieren, und dadurch werden alle Details auf der Registerkarte und Details in der e-Mail exportiert (Dinge wie Betreff, Absender, Empfänger, Netzwerk und Nachrichten-ID).
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

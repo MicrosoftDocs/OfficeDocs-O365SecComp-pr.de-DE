@@ -2,25 +2,25 @@
 title: Einblick für E-Mail-Schleife
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-description: Administratoren können sich über den e-Mail-Schleifen Einblick im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Administratoren können sich über die e-Mail-Loop-Einblicke im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
+ms.openlocfilehash: 00dfdcb87bce8ced58195ead88954c90c32c54a2
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158667"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598121"
 ---
 # <a name="mail-loop-insight"></a>Einblick für E-Mail-Schleife
 
 Eine e-Mail-Schleife ist schlecht, da Sie Systemressourcen verschwendet, das Kontingent für das e-Mail-Volumen Ihres Unternehmens verwendet und verwirrende Unzustellbarkeitsberichte (auch bekannt als NDR oder Unzustellbarkeitsnachrichten) an die ursprünglichen Absender sendet. In dieser Insight wird angezeigt, wann in Ihrer Organisation eine e-Mail-Schleife gefunden wird, welche e-Mail-Domänen an der Schleife beteiligt sind und wie viele Nachrichten sich am Vortag in der Schleife befanden.
 
-![Einblicke in die Mail-Schleife im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+![Einblicke in die e-Mail-Schleife im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
 
 Sie können auf **Details anzeigen** klicken, um die Details in einem Flyout-Bereich anzuzeigen. Wir identifizieren auch die gängigsten Schleifen Szenarien und stellen die empfohlenen Aktionen bereit (sofern verfügbar), um die Schleife zu fixieren.
 
@@ -28,4 +28,4 @@ Sie können auf **Details anzeigen** klicken, um die Details in einem Flyout-Ber
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security #a0 Compliance Center](mail-flow-insights.md).

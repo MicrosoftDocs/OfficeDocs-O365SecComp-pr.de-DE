@@ -2,27 +2,27 @@
 title: Nachrichtenablaufverfolgung im Security & Compliance Center
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-description: Administratoren können die Nachrichtenablaufverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
-ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
+ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158677"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601012"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
 ## <a name="overview"></a>Übersicht
 
-Die Nachrichtenablaufverfolgung im Security & Compliance Center folgt e-Mail-Nachrichten, wenn Sie über Ihre Exchange Online Organisation Reisen. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center folgt e-Mail-Nachrichten, wenn Sie über Ihre Exchange Online Organisation Reisen. Sie können ermitteln, ob eine Nachricht empfangen, abgelehnt, zurückgestellt oder vom Dienst gesendet wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
 
-Die Nachrichtenablaufverfolgung im Security & Compliance Center verbessert sich bei der Nachrichtenablaufverfolgung, die in der Exchange-Verwaltungskonsole (EAC) verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen über das geschehen mit ihren Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
+Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert die Nachrichtenablaufverfolgung, die im Exchange Admin Center (EAC) zur Verfügung stand. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen über das geschehen mit ihren Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
@@ -30,9 +30,9 @@ Die Nachrichtenablaufverfolgung im Security & Compliance Center verbessert sich 
 
 2. Wählen Sie das Symbol für das App-Startfeld ![Symbol für Office 365-App-Startfeld](media/0aaa6945-f9a4-4b13-bf5f-d5c5dbe978fb.png) in der oberen linken Ecke und dann **Administrator** aus.
 
-3. Erweitern Sie in der linken oberen Navigationsleiste **Admin Center** , und wählen Sie **Security & Compliance**aus.
+3. Erweitern Sie in der linken oberen Navigationsleiste **Admin Center** , und wählen Sie **Sicherheits #a0 Kompatibilität**aus.
 
-4. Erweitern Sie auf der Seite **Sicherheit & Compliance** , die geöffnet wird, den Eintrag Nachrichten **Fluss**, und wählen Sie **Nachrichtenablaufverfolgung**aus.
+4. Erweitern Sie auf der Seite **Sicherheit #a0 Kompatibilität** , die geöffnet wird, den Eintrag Nachrichten **Fluss**, und wählen Sie **Nachrichtenablaufverfolgung**aus.
 
 ## <a name="message-trace-page"></a>Seite "Nachrichtenablaufverfolgung"
 
@@ -65,11 +65,11 @@ Der Standardwert ist **2 Tage**, aber Sie können Datum/Uhrzeit Bereiche von bis
 
 - Standardmäßig wählen Sie den Zeitbereich in der **Slider** -Ansicht mithilfe eines Zeitlineals aus. Sie können nur die angezeigten Tages-oder Zeiteinstellungen auswählen. Wenn Sie versuchen, einen dazwischen liegenden Wert auszuwählen, wird die Start-und endblase an die nächstgelegene angezeigte Einstellung andocken.
 
-   ![Einen Slider-Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security & Compliance Center](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+   ![Einen Slider-Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
    Sie können aber auch zur **benutzerdefinierten** Ansicht wechseln, in der Sie die Werte **Start Datum** und Enddatum (einschließlich Uhrzeiten) angeben können, und Sie können **** auch die Zeitzone für den Bereich Datum/Uhrzeit auswählen. **** Beachten Sie, dass die **Zeit Zonen** Einstellung sowohl für Ihre Abfrage Eingaben als auch für Ihre Abfrageergebnisse gilt.
 
-   ![Ein benutzerdefinierter Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security & Compliance Center](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+   ![Ein benutzerdefinierter Zeitbereich in einer neuen Nachrichtenablaufverfolgung im Security #a0 Compliance Center](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
    Für mindestens 10 Tage sind die Ergebnisse sofort als Zusammenfassungsbericht verfügbar **** . Wenn Sie einen Zeitbereich angeben, der sogar etwas größer als 10 Tage ist, werden die Ergebnisse verzögert, da Sie nur als herunterladbare CSV-Datei ( **Erweiterte Zusammenfassung** oder **Erweiterte** Berichte) verfügbar sind.
 
@@ -145,7 +145,7 @@ Die verschiedenen Berichtstypen geben unterschiedliche Informationsebenen zurüc
 
 Nach dem Ausführen der Nachrichtenablaufverfolgung werden die Ergebnisse aufgelistet, sortiert nach absteigender Datums-und Zeitangabe (zuletzt zuerst).
 
-![Ergebnisse des Zusammenfassungsberichts für Nachrichtenablaufverfolgung im Security & Compliance Center](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Ergebnisse des Zusammenfassungsberichts für Nachrichtenablaufverfolgung im Security #a0 Compliance Center](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 Der Zusammenfassungsbericht enthält die folgenden Informationen:
 
@@ -183,7 +183,7 @@ In der Ausgabe des Zusammenfassungsberichts können Sie mit einer der folgenden 
 
 - Aktivieren Sie das Kontrollkästchen Zeile, und klicken Sie auf **Weitere Optionen** ![mehr](media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Details zur Nachrichtenanzeige anzeigen**.
 
-   ![Details nach dem Doppelklicken auf eine Zeile in der Zusammenfassungsbericht-Nachrichtenablauf Verfolgungsergebnisse im Security & Compliance Center](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Details nach dem Doppelklicken auf eine Zeile in der Zusammenfassungsbericht-Nachrichtenablauf Verfolgungsergebnisse im Security #a0 Compliance Center](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 Die Nachrichtenablauf Verfolgungs Details enthalten die folgenden zusätzlichen Informationen, die im Zusammenfassungsbericht nicht vorhanden sind:
 

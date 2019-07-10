@@ -2,19 +2,19 @@
 title: Korrigieren der Absenderdomänen Einblicke
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Administratoren können sich über das Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center informieren.
-ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Administratoren können sich über das Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center informieren.'
+ms.openlocfilehash: 89c94616d612fa02c067e0bc2a89f5a3be704ed5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158707"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598061"
 ---
 # <a name="fix-sender-domain-insight"></a>Korrigieren der Absenderdomänen Einblicke
 
@@ -34,7 +34,7 @@ Nachrichten, die die Kriterien nicht erfüllen, werden nicht der Organisation zu
 
 Das **Fix Sender Domain** Insight zeigt Ihnen e-Mails von Ihrer lokalen Umgebung, die die Kriterien nicht erfüllen, unterstützt Sie bei der Ermittlung potenziell gefährdeter Computer und Benutzerkonten in Ihrer lokalen e-Mail-Umgebung und unterstützt Sie bei der Durchführung Korrekturaktionen.
 
-![Der Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security & Compliance Center](media/sender-domain-insight-selected.png)
+![Der Fix Sender Domain Insight im Nachrichtenfluss-Dashboard im Security #a0 Compliance Center](media/sender-domain-insight-selected.png)
 
 Wenn Sie auf **Details anzeigen**klicken, werden Sie zu einem anderen Widget mit weiteren Details weitergeleitet, wie im folgenden Diagramm dargestellt:
 
@@ -46,4 +46,4 @@ Sie sehen den eingehenden Connector, der für die Zustellung der Nachrichten an 
 
 ## <a name="see-also"></a>Siehe auch
 
-Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Weitere Informationen zu anderen e-Mail-Fluss-Einblicken im Nachrichtenfluss-Dashboard finden Sie unter [Mail Flow Insights in the Security #a0 Compliance Center](mail-flow-insights-v2.md).

@@ -1,7 +1,7 @@
 ---
-title: Office 365 BitLocker für Verschlüsselung
-ms.author: tracyp
-author: MSFTTracyP
+title: Office 365 von BitLocker für die Verschlüsselung
+ms.author: krowley
+author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,35 +14,35 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 description: 'Zusammenfassung: Informationen zu BitLocker für die Verschlüsselung in der Cloud.'
-ms.openlocfilehash: 293c7a3cef3ae2c55a0b12df139baf5302dd3b04
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: bbe32f642f214d27c7f9f82c39b11237556d51bf
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262937"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600942"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker und Distributed Key Manager (DKM) für die Verschlüsselung
 
 Office 365-Server verwenden BitLocker für die Verschlüsselung von Laufwerken mit Kundendaten auf Volume-Ebene. BitLocker-Verschlüsselung ist eine Datenverschlüsselungsfunktion, die in Windows integriert ist. BitLocker ist eine der Technologien, die zum Schutz vor Bedrohungen verwendet werden, falls andere Prozesse oder Steuerelemente hinfällig werden (z. B. Zugriffssteuerung oder Access Control oder Recycling von Hardware), sodass andere Personen möglicherweise physischen Zugriff auf Laufwerke mit Kundendaten erlangen könnten. In diesem Fall eliminiert BitLocker das potenzielle Risiko für Datendiebstahl oder Offenlegung aufgrund von verloren gegangener, gestohlener oder nicht ordnungsgemäß außer Betrieb gesetzter Computer und Datenträger.
 
-BitLocker wird mit einer AES-256-Bit-Verschlüsselung auf Datenträgern mit Kundendaten in Exchange Online, SharePoint Online und Skype for Business bereitgestellt. Datenträgersektoren werden mit einem vollständigen Volumen VerschlüsselungsSchlüssel (FVEK) verschlüsselt, der mit dem Volume-Hauptschlüssel (VMK) verschlüsselt ist, der wiederum an das TPM (Trusted Platform Module) auf dem Server gebunden ist. Der VMK schützt die FVEK direkt, und der Schutz der VMK wird daher kritisch. Die folgende Abbildung zeigt ein Beispiel für die BitLocker-Schlüsselschutz Kette für einen bestimmten Server (in diesem Fall die Verwendung eines Exchange Online-Servers).
+BitLocker wird mit AES 256-Bit-Verschlüsselung (Advanced Encryption Standard) auf Datenträgern mit Kundendaten in Exchange Online, SharePoint Online und Skype for Business bereitgestellt. Datenträgersektoren werden mit einem vollständigen Volume Encryption Key (FVEK) verschlüsselt, der mit dem Volume Master Key (VMK) verschlüsselt wird, der wiederum an das TPM (Trusted Platform Module) auf dem Server gebunden ist. Das VMK schützt das FVEK direkt und daher wird der Schutz der VMK kritisch. Die folgende Abbildung zeigt ein Beispiel für die BitLocker-Schlüsselschutz Kette für einen bestimmten Server (in diesem Fall mit einem Exchange Online Server).
 
-In der folgenden Tabelle wird die BitLocker-Schlüsselschutz Kette für einen bestimmten Server (in diesem Fall ein Exchange Online-Server) beschrieben.
+In der folgenden Tabelle wird die BitLocker-Schlüsselschutz Kette für einen bestimmten Server (in diesem Fall ein Exchange Online Server) beschrieben.
 
-| SCHLÜSSELSCHUTZ | GRANULARITÄT | WIE GENERIERT? | WO WIRD ES GESPEICHERT? | Schutz |
+| Tasten Schutz | Granularität | wie generiert? | wo wird es gespeichert? | Schutz |
 |--------------------------------------------------------------------------------|-------------------------------------------------|----------------|-------------------------|--------------------------------------------------------------------------------------------------|
-| AES 256-Bit-externer Schlüssel | Pro Server | BitLocker-APIs | TPM oder Secret Safe | Lockbox/Zugriffssteuerung |
-|  |  |  | Post Fach Server Registrierung | TPM verschlüsselt |
-| 48 stelliges numerisches Kennwort | Pro Datenträger | BitLocker-APIs | Active Directory | Lockbox/Zugriffssteuerung |
-| X. 509-Zertifikat als Daten wiederHerstellungs-Agent (DRA) auch als Public Key Protector bezeichnet | Umgebung (beispielsweise Exchange Online Multitenant) | Microsoft-ZERTIFIZIERUNGsSTELLE | Buildsystem | Kein Benutzer hat das vollständige Kennwort für den privaten Schlüssel. Das Kennwort ist unter physischer Schutz. |
+| Externer AES-Schlüssel 256-Bit | Pro Server | BitLocker-APIs | TPM oder geheimer Tresor | Lockbox/Zugriffssteuerung |
+|  |  |  | Post Fach Server-Registrierung | TPM verschlüsselt |
+| 48-stelliges numerisches Kennwort | Pro Datenträger | BitLocker-APIs | Active Directory | Lockbox/Zugriffssteuerung |
+| X. 509-Zertifikat als Daten Wiederherstellungs-Agent (DRA), auch Public Key Protector genannt | Umgebung (z. b. Exchange Online Multimandanten) | Microsoft-Zertifizierungsstelle | Erstellungs System | Ein Benutzer hat nicht das vollständige Kennwort für den privaten Schlüssel. Das Kennwort ist unter physischem Schutz. |
 
 
-Die BitLocker-Schlüsselverwaltung umfasst die Verwaltung von Wiederherstellungsschlüsseln, die zum Entsperren/Wiederherstellen verschlüsselter Datenträger in einem Office 365-Rechenzentrum verwendet werden. Office 365 speichert die Hauptschlüssel in einer gesicherten Freigabe, auf die nur Personen zugreifen können, die überprüft und genehmigt wurden. Die Anmeldeinformationen für die Schlüssel werden in einem gesicherten Repository für Zugriffssteuerungsdaten (was wir als "Secret Store" bezeichnet) gespeichert, was eine hohe Ebene der elevations-und Verwaltungs Genehmigungen für den Zugriff auf die Verwendung eines Just-in-Time-Zugriffs erweiterungstools erfordert.
+Die BitLocker-Schlüsselverwaltung umfasst die Verwaltung von Wiederherstellungsschlüsseln, die zum Entsperren/Wiederherstellen verschlüsselter Datenträger in einem Office 365-Rechenzentrum verwendet werden. In Office 365 werden die Hauptschlüssel in einer gesicherten Freigabe gespeichert, nur für Personen zugänglich, die geprüft und genehmigt wurden. Die Anmeldeinformationen für die Schlüssel werden in einem gesicherten Repository für Zugriffssteuerungsdaten gespeichert (was wir als geheimer Speicher bezeichnen), was eine hohe Höhe der Höhen-und Verwaltungs Genehmigungen erfordert, um mithilfe eines Just-in-Time-Zugriffs Ansichts Tools auf den Zugriff zuzugreifen.
 
 BitLocker unterstützt Schlüssel, die in zwei Verwaltungskategorien fallen:
 
-- Mit BitLocker verwaltete Schlüssel, die in der Regel kurzlebig sind und an die Lebensdauer einer Betriebssysteminstanz gebunden sind, die auf einem Server oder auf einem bestimmten Datenträger installiert ist. Diese Schlüssel werden gelöscht und während der Server Neuinstallation oder Datenträgerformatierung zurückgesetzt.
+- Von BitLocker verwaltete Schlüssel, die in der Regel kurzlebig sind und an die Lebensdauer einer auf einem Server oder einem bestimmten Datenträger installierten Betriebssysteminstanz gebunden sind. Diese Schlüssel werden gelöscht und während der Server Neuinstallation oder der Datenträgerformatierung zurückgesetzt.
 
-- BitLocker-Wiederherstellungsschlüssel, die außerhalb von BitLocker verwaltet werden, jedoch zur Datenträger Entschlüsselung verwendet werden. BitLocker verwendet Wiederherstellungsschlüssel für das Szenario, in dem ein Betriebssystem neu installiert wird, und es sind bereits verschlüsselte Datenträger vorhanden. WiederHerstellungsschlüssel werden auch von Überwachungstests für die verwaltete Verfügbarkeit in Exchange Online verwendet, bei denen ein Responder möglicherweise einen Datenträger entsperren muss.
+- BitLocker-Wiederherstellungsschlüssel, die außerhalb von BitLocker verwaltet werden, aber für die Datenträger Entschlüsselung verwendet werden. BitLocker verwendet Wiederherstellungsschlüssel für das Szenario, in dem ein Betriebssystem neu installiert wird, und es sind bereits verschlüsselte Datenträger vorhanden. Wiederherstellungsschlüssel werden auch von Überwachungstests für verwaltete Verfügbarkeit in Exchange Online verwendet, in denen ein Responder möglicherweise einen Datenträger entsperren muss.
 
-BitLocker-geschützte Volumes werden mit einem vollständigen Volumen Verschlüsselungsschlüssel verschlüsselt, der wiederum mit einem Volume-Hauptschlüssel verschlüsselt wird. BitLocker verwendet FIPS-konforme Algorithmen, um sicherzustellen, dass Verschlüsselungsschlüssel nie im Klartext gespeichert oder über den Draht gesendet werden. Die Office 365-Implementierung des Customer Data-at-Rest-Schutzes weicht nicht von der standardmäßigen BitLocker-Implementierung ab.
+Mit BitLocker geschützte Volumes werden mit einem vollständigen Verschlüsselungsschlüssel verschlüsselt, der wiederum mit einem Volumen Hauptschlüssel verschlüsselt wird. BitLocker verwendet FIPS-konforme Algorithmen, um sicherzustellen, dass Verschlüsselungsschlüssel nie im Klartext gespeichert oder über den Draht gesendet werden. Die Office 365 Implementierung von Kundendaten-at-Rest-Protection weicht nicht von der BitLocker-Standardimplementierung ab.

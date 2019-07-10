@@ -2,8 +2,8 @@
 title: Erweiterte Spamfilterungsoptionen
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/26/2015
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Erweiterte Spamfilter Optionen bieten Administratoren die Möglichkeit, verschiedene Inhaltsattribute einer Nachricht zu überprüfen. Wenn diese Attribute in einer Nachricht vorhanden sind, wird die Spambewertung der Nachricht erhöht (und somit ihr Potenzial, als Spam identifiziert zu werden), oder die Nachricht wird als Spam gekennzeichnet. Die erweiterten Spamfilterungsoptionen beziehen sich auf bestimmte Nachrichteneigenschaften, wie HTML-Tags und URL-Umleitung, die häufig in Spamnachrichten vorhanden sind.
-ms.openlocfilehash: 84807b102967dc5d4a3812e97681a1c8fc7fa318
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152447"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598671"
 ---
 # <a name="advanced-spam-filtering-options"></a>Erweiterte Spamfilterungsoptionen
 
@@ -54,5 +54,5 @@ In der folgenden Tabelle werden die einzelnen erweiterten Spamfilterungsoptionen
 |SPF-Eintrag: Schwerer Fehler|Wenn diese Einstellung aktiviert ist, werden Nachrichten, die eine SPF-Prüfung nicht bestehen (d. h. sie wurden von einer nicht im SPF-Eintrag angegebenen IP-Adresse gesendet) als Spam gekennzeichnet. Das Aktivieren dieser Einstellung wird für Organisationen empfohlen, die befürchten, Phishingnachrichten zu erhalten.  <br/> <br/> Der Testmodus ist für diese Option nicht verfügbar.  <br/> |X-CustomSpam: SPF-Eintragsfehler  <br/> |
 |Bedingte Absender-ID-Filterung: Schwerer Fehler  <br/> |Wenn diese Einstellung aktiviert ist, wird jede Nachricht, für die ein schwerer Fehler bei der bedingten Absender-ID-Filterung auftritt, als Spam gekennzeichnet. Bei dieser Option wird eine SPF-Überprüfung mit einer Überprüfung der Absender-ID kombiniert, um einen Schutz gegen Nachrichtenkopfzeilen zu erreichen, die gefälschte Absender enthalten.  <br/> <br/> Der Testmodus ist für diese Option nicht verfügbar.  <br/> |X-CustomSpam: Von-SPF-Eintragsfehler  <br/> |
 |NDR-Rückläufer  <br/> |Wenn Sie EOP für den Schutz lokaler Postfächer verwenden, werden bei Aktivierung dieser Einstellung alle legitimen NDR-Nachrichten an den ursprünglichen Absender gesendet, und alle Rückläufernachrichten (nicht legitime NDR-Nachrichten) werden als Spam gekennzeichnet. Wenn Sie diese Einstellung nicht aktivieren, durchlaufen alle NDRs trotzdem die Spamfilterung. In diesem Fall werden die legitimsten Nachrichten an den ursprünglichen Absender gesendet, während einige, aber nicht alle, Rückläufernachrichten als Spam gekennzeichnet werden. Rückläufernachrichten, die nicht als Spam gekennzeichnet sind, werden jedoch nicht an den ursprünglichen Absender gesendet, weil sie an den gefälschten Absender gehen.  <br/> <br/> Wenn Sie den Dienst zum Schutz von cloudgehosteten Exchange Online-Postfächern verwenden, ist es nicht notwendig, diese Einstellung zu konfigurieren.  <br/><br/> Für beide Szenarien (lokale und in der Cloud gehostete Postfächer) ist es auch nicht erforderlich, diese Einstellung für ausgehende Nachrichten zu aktivieren, die über den Dienst gesendet werden, da Unzustellbarkeitsberichte, die legitime Unzustellbarkeitsnachrichten sind, automatisch erkannt und an den ursprünglichen Absender übermittelt werden. . >  Der Testmodus ist für diese Option nicht verfügbar.           <br/><br/>Tipp: Weitere Informationen zu Rückläufer Meldungen und EOP finden Sie unter [Backscatter Messages and EoP](backscatter-messages-and-eop.md).           |X-CustomSpam: Rückläufer-NDR  <br/> |
-|Massen-E-Mail|Die erweiterte Spamfilterung von Massen-E-Mails wurde eingestellt und durch die Schwellenwerteinstellungen für Massen-E-Mails ersetzt. Unter [Worin besteht der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md) und [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) finden Sie weitere Informationen und erfahren, wie Sie die Einstellungen konfigurieren.  ||
+|Massen-E-Mail|Die erweiterte Spamfilterung von Massen-E-Mails wurde eingestellt und durch die Schwellenwerteinstellungen für Massen-E-Mails ersetzt. Unter [Worin besteht der Unterschied zwischen Junk-E-Mail und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md) und [Konfigurieren von Spamfilterrichtlinien](configure-your-spam-filter-policies.md) finden Sie weitere Informationen und erfahren, wie Sie die Einstellungen konfigurieren.  |X-CustomSpam: Massen-e-Mail | Massen-e-Mail  <br/> |
 |
