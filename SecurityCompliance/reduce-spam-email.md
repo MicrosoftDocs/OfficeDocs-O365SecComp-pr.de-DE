@@ -2,8 +2,8 @@
 title: Reduzieren von Spam-E-Mails in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/7/2018
+manager: dansimp
+ms.date: 06/07/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: 6603b5a3efdfb6ffde0743d3b674ca69ca39eaa0
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857595"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601232"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
@@ -48,7 +48,7 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
 - 
   **Die Junk-E-Mail-Regel für alle Postfächer aktivieren** Standardmäßig ist die Aktion des Spamfilters auf **Nachricht in den Junk-E-Mail-Ordner verschieben** festgelegt. Wenn dies die bevorzugte und aktuelle Spamrichtlinienaktion ist, so muss für jedes Postfach [auch die Junk-E-Mail-Regel aktiviert sein](https://support.office.com/de-DE/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Um dies zu überprüfen, können Sie das Cmdlet „Get-MailboxJunkEmailConfiguration“ für ein oder mehrere Postfächer ausführen. Sie können z. B. alle Postfächer überprüfen, indem Sie Folgendes ausführen: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
-    Wenn Sie die Ausgabe anzeigen, sollte die Enable-Eigenschaft auf "True" festgelegt sein. Wenn sie auf "False" festgelegt ist, können Sie "Set-MailboxJunkEmailConfiguration" wie folgt ausführen, um dies in "True" zu ändern: Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true.
+    Wenn Sie die Ausgabe anzeigen, sollte die Enable-Eigenschaft auf "True" festgelegt sein. Wenn sie auf "False" festgelegt ist, können Sie "Set-MailboxJunkEmailConfiguration" ausführen, um dies wie folgt in "True" zu ändern: Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true.
     
 - **Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen** Wenn Sie Exchange Online Protection verwenden, Ihre Postfächer sich aber auf dem lokalen Exchange Server befinden, müssen Sie ein paar Nachrichtenflussregeln auf dem lokalen Exchange Server erstellen. Lesen Sie [Anweisungen für EOP](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     

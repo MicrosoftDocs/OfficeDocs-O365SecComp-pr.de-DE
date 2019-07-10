@@ -3,7 +3,7 @@ title: Blockieren von Spam-E-Mails in EOP als eigenständige Lösung
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Dokument für Administratoren von EOP als eigenständige Lösung zum Verhindern falsch negativer Ergebnisse
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152197"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598491"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Anpassen des Office 365-Spamfilters mit diesen Einstellungen
 
@@ -35,7 +35,7 @@ Passen Sie Ihren Office 365-Spamfilter an, indem Sie die Absender-IP-Adresse zur
     
 2. Suchen Sie in der [Nachrichtenkopfanalyse](https://testconnectivity.microsoft.com/?tabid=mha) oder manuell nach der IP-Adresse, die auf das CIP-Tag in der Kopfzeile X-Forefront-Antispam-Report folgt. 
     
-3. Fügen Sie die IP-Adresse der IP-Sperrliste hinzu, indem Sie die Schritte unter „Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole“ in [Konfigurieren der Verbindungsfilterrichtlinie](https://technet.microsoft.com/de-DE/library/jj200718%28v=exchg.150%29.aspx) ausführen.
+3. Fügen Sie die IP-Adresse der IP-Sperrliste hinzu, indem Sie die Schritte unter „Bearbeiten der Standardrichtlinie für Verbindungsfilter mithilfe der Exchange-Verwaltungskonsole“ in [Konfigurieren der Verbindungsfilterrichtlinie](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx) ausführen.
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Blockieren von Massensendungen mit E-Mail-Flussregeln (auch als Transportregeln bezeichnet) oder dem Spamfilter
 
@@ -45,8 +45,7 @@ Handelt es sich bei dem Spam in erster Linie um Massensendungen oder um Newslett
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Blockieren von Spam-E-Mails mithilfe von Spamfilter-Sperrlisten
 
-
-  [Konfigurieren Sie Ihre Spamfilterrichtlinien](https://technet.microsoft.com/de-DE/library/jj200684%28v=exchg.150%29.aspx) so, dass Sie im Spamfilter die Adresse des Absenders der Absender-Sperrliste bzw. die Domäne der Liste der gesperrten Domänen hinzufügen. E-Mails von einem Absender oder einer Domäne auf einer Spamfilter-Sperrliste werden als Spam gekennzeichnet. 
+[Konfigurieren Sie Ihre Spamfilterrichtlinien](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) so, dass Sie im Spamfilter die Adresse des Absenders der Absender-Sperrliste bzw. die Domäne der Liste der gesperrten Domänen hinzufügen. E-Mails von einem Absender oder einer Domäne auf einer Spamfilter-Sperrliste werden als Spam gekennzeichnet. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>E-Mail-Benutzer können ebenfalls dazu beitragen, dass falsch negative E-Mails und Spam-E-Mails vom Office 365-Spamfilter blockiert werden
 
@@ -55,7 +54,7 @@ Sie unterstützen Ihre Office 365-Antispammaßnahmen zur Vermeidung falsch negat
 ![Blockieren eines Absenders in der Outlook im Web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Ausführlichere Informationen zu Listen mit sicheren Absendern finden Sie unter [Häufig gestellte Fragen zu Listen sicherer und blockierter Absender](https://technet.microsoft.com/de-DE/library/dn133608%28v=exchg.150%29.aspx). 
+> Ausführlichere Informationen zu Listen mit sicheren Absendern finden Sie unter [Häufig gestellte Fragen zu Listen sicherer und blockierter Absender](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>Kunden, die nur EOP nutzen: Verzeichnissynchronisierung einrichten
 
