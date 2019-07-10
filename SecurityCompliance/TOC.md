@@ -537,11 +537,11 @@
 ### [Neuerungen beim Compliance-Manager (Vorschau)](compliance-manager-release-notes.md)
 ### [Arbeiten mit Compliance-Manager (Vorschau)](working-with-compliance-manager.md)
 ### [Methodik der Compliance-Bewertung (Vorschau)](compliance-score-methodology.md)
-## [Informationsbarrieren (Vorschau)](information-barriers.md)
-### [Definieren von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-policies.md)
-### [Attribute für Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-attributes.md)
-### [Problembehandlung bei Informationsbarrieren (Vorschau)](information-barriers-troubleshooting.md)
-### [Bearbeiten von Richtlinien für Informationsbarrieren (Vorschau)](information-barriers-edit-segments-policies.md.md)
+## [Informationsbarrieren](information-barriers.md)
+### [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
+### [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
+### [Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)
+### [Bearbeiten von Richtlinien für Informationsbarrieren](information-barriers-edit-segments-policies.md.md)
 
 
 ## Kundenschlüssel
