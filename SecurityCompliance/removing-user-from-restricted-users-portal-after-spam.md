@@ -3,7 +3,7 @@ title: Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränkt
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 03/12/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Wenn ein Benutzer kontinuierlich e-Mails von Office 365 sendet, die als Spam klassifiziert werden, wird er vom Senden weiterer Nachrichten eingeschränkt.
-ms.openlocfilehash: 80eb03ccb96f2178f168139234de8700b9b97e29
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 40d63bb452392041401fd1af6d0d6d4af67e5d2b
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601152"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613653"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Entfernen eines Benutzers aus dem Portal für Benutzer mit eingeschränktem Zugriff nach dem Senden von Spam-E-Mails
 
@@ -71,6 +71,11 @@ Sie können die Benachrichtigung für Folgendes bearbeiten:
 - Aktivieren/Deaktivieren von e-Mail-Benachrichtigungen
 - E-Mail an die erforderlichen Empfänger senden
 - Einschränken der Benachrichtigungen, die Sie pro Tag erhalten
+
+## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Überprüfen und Entfernen von Einschränkungen mithilfe von PowerShell
+Die PowerShell-Befehle für eingeschränkte Benutzer sind:
+- `Get-BlockedSenderAddress`: Ausführen, um die Liste der Benutzer abzurufen, die vom Senden von e-Mails eingeschränkt sind
+- `Remove-BlockedSenderAddress`: Ausführen, um die eingeschränkten Benutzer zu entfernen
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

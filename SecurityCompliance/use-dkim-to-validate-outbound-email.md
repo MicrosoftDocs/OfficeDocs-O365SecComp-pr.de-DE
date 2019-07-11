@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Sie DomainKeys Identified Mail (DKIM) mit Office 365 verwenden, um sicherzustellen, dass Ziel-E-Mail-Systeme Nachrichten vertrauen, die von Ihrer benutzerdefinierten Domäne gesendet werden.'
-ms.openlocfilehash: e29a6e5d92c169c29e7562d9fb563e9ddc6c5d03
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 25427060140caee242944d56b24eaab362c2f36a
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600421"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613683"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Verwenden von DKIM zum Überprüfen ausgehender E-Mails, die von Ihrer benutzerdefinierten Domäne in Office 365 gesendet werden
 
@@ -234,7 +234,7 @@ Durch das Deaktivieren der Signierungsrichtlinie wird DKIM nicht vollständig de
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Standardverhalten für DKIM und Office 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Wenn Sie DKIM nicht aktivieren, erstellt Office 365 automatisch einen öffentlichen 1024-Bit-DKIM-Schlüssel für Ihre benutzerdefinierte Domäne und den zugehörigen privaten Schlüssel, der intern in unserem Rechenzentrum gespeichert wird. Standardmäßig verwendet Office 365 eine standardmäßige Signierkonfiguration für Domänen, die keine Richtlinie eingerichtet haben. Dies bedeutet, dass, wenn Sie DKIM nicht selbst einrichten, Office 365 seine Standardrichtlinie und Standardschlüssel verwendet, die erstellt wurden, um DKIM für Ihre Domäne zu aktivieren.
+Wenn Sie DKIM nicht aktivieren, erstellt Office 365 automatisch einen 1024-Bit-DKIM-öffentlichen Schlüssel für Ihre Standarddomäne und den dazugehörigen privaten Schlüssel, den wir intern in unserem Datencenter speichern. Standardmäßig verwendet Office 365 eine standardmäßige Signierkonfiguration für Domänen, die keine Richtlinie eingerichtet haben. Dies bedeutet, dass, wenn Sie DKIM nicht selbst einrichten, Office 365 seine Standardrichtlinie und Standardschlüssel verwendet, die erstellt wurden, um DKIM für Ihre Domäne zu aktivieren.
   
 Wenn Sie die DKIM-Signatur nach der Aktivierung nach einer bestimmten Zeit wieder deaktivieren, wendet Office 365 automatisch die Office 365-Standardrichtlinie für Ihre Domäne an.
   
