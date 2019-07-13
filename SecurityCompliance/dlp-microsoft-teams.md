@@ -3,7 +3,7 @@ title: Verhinderung von Datenverlust und Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/01/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,28 +13,28 @@ ms.collection:
 search.appverid:
 - MET150
 description: Sie können jetzt DLP-Richtlinien auf Chats und Kanäle von Microsoft Teams anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
-ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
+ms.openlocfilehash: 96ba26a4e155a976c2123cc44c3a8632092740ac
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417397"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672914"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust und Microsoft Teams
 
 > [!NOTE]
-> Die Funktionen zur Verhinderung von Datenverlust wurden kürzlich Microsoft Teams in Office 365 E5 und Office 365 Advanced Compliance hinzugefügt. Weitere Informationen zur Verfügbarkeit von Features finden Sie unter [Office 365 Service descriptions: Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Funktionen zur Verhinderung von Datenverlust wurden vor kurzem Microsoft Teams Chat-und Kanal Nachrichten für Benutzer mit Lizenz für Office 365 Advanced Compliance hinzugefügt, die als eigenständige Option zur Verfügung stehen und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten sind. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)für die Lizenzierung auf Mandantenebene.
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Übersicht über DLP für Microsoft Teams
 
-Vor kurzem wurden die Funktionen zur Verhinderung von [Datenverlust (Data Loss Prevention](data-loss-prevention-policies.md) , DLP) erweitert und umfassen Microsoft Teams. Wenn Ihre Organisation über DLP verfügt, können Sie jetzt Richtlinien definieren, die verhindern, dass Personen vertrauliche Informationen in einem Microsoft Teams-Kanal oder in einer Chatsitzung freigeben. Im folgenden finden Sie einige Beispiele für die Funktionsweise dieses Schutzes:
+Vor kurzem wurden die Funktionen zur Verhinderung von [Datenverlust (Data Loss Prevention](data-loss-prevention-policies.md) , DLP) auf Microsoft Teams-Chat und Kanal Nachrichten erweitert. Wenn Ihre Organisation über DLP verfügt, können Sie jetzt Richtlinien definieren, die verhindern, dass Personen vertrauliche Informationen in einem Microsoft Teams-Kanal oder in einer Chatsitzung freigeben. Im folgenden finden Sie einige Beispiele für die Funktionsweise dieses Schutzes:
 
 - **Beispiel 1: Schützen vertraulicher Informationen in Nachrichten**. Angenommen, jemand versucht, vertrauliche Informationen in einem Microsoft Teams-Chat oder-Kanal mit Gästen (externe Benutzer) freizugeben. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, werden Nachrichten mit vertraulichen Informationen, die an externe Benutzer gesendet werden, gelöscht. Dies geschieht automatisch und innerhalb von Sekunden, je nachdem, wie ihre DLP-Richtlinie konfiguriert ist.
 
     > [!NOTE]
-    > DLP für Microsoft Teams blockiert vertrauliche Inhalte, wenn Sie für Benutzer freigegeben werden, die über [Gastzugriff](https://docs.microsoft.com/MicrosoftTeams/guest-access) in Teams und Kanälen verfügen, sowie mit Benutzern mit [externem Zugriff](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) in Besprechungen und Chatsitzungen. Wenn Sie [Microsoft Teams zusammen mit Skype for Business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)verwenden, denken Sie daran, dass DLP for Teams Nachrichten in Interop-oder Federated-Chatsitzungen nicht blockiert.
+    > DLP für Microsoft Teams blockiert vertrauliche Inhalte, wenn Sie für Microsoft Teams-Benutzer freigegeben werden, die über Folgendes verfügen:<br/>- [Gastzugriff](https://docs.microsoft.com/MicrosoftTeams/guest-access) in Teams und Kanälen; oder<br/>- [externer Zugriff](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) in Besprechungen und Chatsitzungen. <p>DLP für externe Chatsitzungen funktioniert nur, wenn sich sowohl der Absender als auch der Empfänger im Modus "nur Teams" und unter Verwendung von [Microsoft Teams Native Federation](https://docs.microsoft.com/microsoftteams/manage-external-access)befinden. DLP für Teams blockiert keine Nachrichten in [Interop](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) mit Skype for Business-oder nicht-systemeigenen Sitzungen für den Verbund Chat.
 
-- **Beispiel 2: Schützen vertraulicher Informationen in Dokumenten**. Angenommen, jemand versucht, ein Dokument für Gäste in einem Microsoft Teams-Kanal oder Chat freizugeben, und das Dokument enthält vertrauliche Informationen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, wird das Dokument nicht für diese Benutzer geöffnet. Beachten Sie, dass in diesem Fall SharePoint und OneDrive in ihrer DLP-Richtlinie enthalten sein müssen, damit der Schutz vorhanden ist. (Dies ist ein Beispiel für DLP für SharePoint, das in Microsoft Teams angezeigt wird.)
+- **Beispiel 2: Schützen vertraulicher Informationen in Dokumenten**. Angenommen, jemand versucht, ein Dokument für Gäste in einem Microsoft Teams-Kanal oder Chat freizugeben, und das Dokument enthält vertrauliche Informationen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, wird das Dokument nicht für diese Benutzer geöffnet. Beachten Sie, dass in diesem Fall SharePoint und OneDrive in ihrer DLP-Richtlinie enthalten sein müssen, damit der Schutz vorhanden ist. (Dies ist ein Beispiel für DLP für SharePoint, das in Microsoft Teams angezeigt wird, und erfordert daher, dass Benutzer für Office 365 DLP lizenziert sind (in Office 365 E3 enthalten), erfordert aber keine Lizenzierung von Benutzern für Office 365 Advanced Compliance.)
 
 ## <a name="policy-tips-help-educate-users"></a>Richtlinien Tipps helfen Benutzern bei der Schulung
 

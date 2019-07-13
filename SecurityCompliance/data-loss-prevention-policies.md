@@ -3,7 +3,7 @@ title: Übersicht über die Verhinderung von Datenverlust
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mit einer Richtlinie zur Verhinderung von Datenverlust ( &amp; Data Loss Prevention, DLP) im Security Compliance Center können Sie vertrauliche Informationen über Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077851"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672924"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Übersicht über die Verhinderung von Datenverlust
 
 > [!NOTE]
-> Die Funktionen zur Verhinderung von Datenverlust wurden kürzlich Microsoft Teams in Office 365 E5 und Office 365 Advanced Compliance hinzugefügt. Weitere Informationen zur Verfügbarkeit von Features finden Sie unter [Office 365 Service descriptions: Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Funktionen zur Verhinderung von Datenverlust wurden vor kurzem Microsoft Teams Chat-und Kanal Nachrichten für Benutzer mit Lizenz für Office 365 Advanced Compliance hinzugefügt, die als eigenständige Option zur Verfügung stehen und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten sind. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)für die Lizenzierung auf Mandantenebene.
 
 Zur Einhaltung von Geschäftsstandards und Branchenvorschriften müssen Organisationen vertrauliche Informationen schützen und ihre unbeabsichtigte Offenlegung verhindern. Vertrauliche Informationen können Finanzdaten oder personenbezogene Informationen (PII) wie Kreditkartennummern, Sozialversicherungsnummern oder Integritätsdaten Sätze enthalten. Mit einer Richtlinie zur Verhinderung von Datenverlust (Data &amp; Loss Prevention, DLP) im Office 365 Security Compliance Center können Sie vertrauliche Informationen über Office 365 identifizieren, überwachen und automatisch schützen.
   
@@ -59,7 +59,7 @@ Sie erstellen und verwalten DLP-Richtlinien auf der Seite zur Verhinderung von &
 
 Eine DLP-Richtlinie enthält einige grundlegende Punkte:
   
-- Wo der Inhalt geschützt werden soll: **Speicherorte** wie Exchange Online, SharePoint Online und OneDrive für Unternehmen Websites sowie Microsoft Teams-Chats und-Kanäle. 
+- Wo der Inhalt geschützt werden soll: **Speicherorte** wie Exchange Online, SharePoint Online und OneDrive für Unternehmen Websites sowie Chat-und Kanal Nachrichten von Microsoft Teams. 
     
 - Wann und wie die Inhalte durch Durchsetzen von **Regeln** geschützt werden sollen, die Folgendes umfassen: 
     
@@ -75,7 +75,7 @@ Möglicherweise verfügen Sie über eine DLP-Richtlinie, mit der Sie das vorhand
   
 ### <a name="locations"></a>Standorte
 
-Eine DLP-Richtlinie kann vertrauliche Informationen in Office 365 suchen und schützen, unabhängig davon, ob sich diese Informationen in Exchange Online, SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams befinden. Sie können Inhalte in Exchange-e-Mails, Microsoft Teams-Chats und-Kanälen sowie in allen SharePoint-oder OneDrive-Bibliotheken schützen oder bestimmte Speicherorte für eine Richtlinie auswählen.
+Eine DLP-Richtlinie kann vertrauliche Informationen in Office 365 suchen und schützen, unabhängig davon, ob sich diese Informationen in Exchange Online, SharePoint Online, OneDrive für Unternehmen oder Microsoft Teams befinden. Sie können auswählen, ob Sie Inhalte in Exchange-e-Mails, Microsoft Teams-Chats und Kanal Nachrichten sowie alle SharePoint-oder OneDrive-Bibliotheken schützen möchten, oder bestimmte Speicherorte für eine Richtlinie auswählen.
   
 ![Optionen für Standorte, an denen eine DLP-Richtlinie angewendet werden kann](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ Nachdem Sie eine DLP-Richtlinie im Security &amp; Compliance Center erstellt hab
     
 - Office-Desktop Programme (Excel, PowerPoint und Word)
 
-- Microsoft Teams-Kanäle und -Chats.
+- Microsoft Teams-Kanäle und Chatnachrichten
     
 Nachdem die Richtlinie mit den richtigen Speicherorten synchronisiert wurde, wird der Inhalt ausgewertet und Aktionen durchgesetzt.
   
@@ -481,7 +481,7 @@ Die Evaluierung der DLP-Richtlinie in Office zielt darauf ab, die Leistung der P
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Richtlinienauswertung in Microsoft Teams
  
-Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Standort umfasst, wird die Richtlinie vom Office 365 Security &amp; Compliance Center mit Benutzerkonten und Microsoft Teams-Kanälen und-Chats synchronisiert. Je nachdem, wie DLP-Richtlinien konfiguriert sind, kann die Nachricht blockiert oder widerrufen werden, wenn jemand versucht, vertrauliche Informationen in einem Microsoft Teams-Chat oder-Kanal freizugeben. Außerdem werden Dokumente, die vertrauliche Informationen enthalten und für Gäste (externe Benutzer) freigegeben werden, nicht für diese Benutzer geöffnet. Weitere Informationen finden Sie unter Verhinderung von [Datenverlust und Microsoft Teams](dlp-microsoft-teams.md).
+Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Standort umfasst, wird die Richtlinie vom Office 365 Security &amp; Compliance Center mit Benutzerkonten und Microsoft Teams-Kanälen und Chatnachrichten synchronisiert. Je nachdem, wie DLP-Richtlinien konfiguriert sind, wenn jemand versucht, vertrauliche Informationen in einem Microsoft Teams-Chat oder einer Kanal Nachricht freizugeben, kann die Nachricht blockiert oder gesperrt werden. Außerdem werden Dokumente, die vertrauliche Informationen enthalten und für Gäste (externe Benutzer) freigegeben werden, nicht für diese Benutzer geöffnet. Weitere Informationen finden Sie unter Verhinderung von [Datenverlust und Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Berechtigungen
 
