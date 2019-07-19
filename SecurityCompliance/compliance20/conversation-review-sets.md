@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62f0dc9e32e89954b2838b70757d3a7c17d79cc4
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: f88bdcfc4ac7ed31ec44a7d18bd74cc2a1842bc5
+ms.sourcegitcommit: 2560a3ecc6a5e3b8b79bbf56a157b66c7553682e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672968"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795579"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Überprüfen von Unterhaltungen in Advanced eDiscovery 
 
@@ -85,7 +85,7 @@ So aktivieren Sie den Unterhaltungs Abruf:
   
 2. Auswählen eines vorhandenen Überprüfungs Satzes oder Erstellen eines Überprüfungs Satzes. Sie können Abrufoptionen beim Hinzufügen von Suchergebnissen zu einer Standard-oder Unterhaltungs Überprüfungsgruppe konfigurieren.
   
-3. Konfigurieren Sie die Optionen für den Unterhaltungs Abruf für die Inhaltsquellen, die Sie in Ihrer Suche erweitern möchten, und klicken Sie dann auf **Hinzufügen** , um den Prozess zu starten.  
+3. Konfigurieren Sie unter **Sammlungsoptionen**die Optionen für den Unterhaltungs Abruf für die Inhaltsquellen, die Sie in Ihrer Suche erweitern möchten, und klicken Sie dann auf **Hinzufügen** , um den Prozess zu starten.  
   
 4. Nachdem der Auftrag **zum Überprüfen hinzufügen** auf der Registerkarte **Aufträge** abgeschlossen ist, können Sie mit der Überprüfung der Unterhaltungen beginnen.
 
@@ -97,9 +97,15 @@ Nachdem der Inhalt verarbeitet und dem Überprüfungs hinzugefügt wurde, könne
 
 In einer Standard Überprüfungsgruppe werden Nachrichten verarbeitet und als einzelne Elemente angezeigt, ähnlich wie Sie in einem Postfachordner gespeichert werden. In diesem Workflow wird jede Nachricht als separates Element verarbeitet. Daher sind die Optionen für den threaded Summary and Export in einer Standard Überprüfungsgruppe nicht verfügbar. 
 
+  ![Standard Überprüfungsgruppe](../media/standardrs.PNG)
+
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Überprüfen von Unterhaltungen in einer Konversations Überprüfungsgruppe
 
-In einer Konversations Überprüfungsgruppe werden einzelne Nachrichten mit einem Thread zusammengefasst und als Unterhaltungen dargestellt. Auf diese Weise können Sie kontextbezogene Unterhaltungen überprüfen und exportieren. In den folgenden Abschnitten wird das überprüfen und Exportieren von Unterhaltungen in einer Konversations Überprüfungsgruppe beschrieben.
+In einer Konversations Überprüfungsgruppe werden einzelne Nachrichten mit einem Thread zusammengefasst und als Unterhaltungen dargestellt. Auf diese Weise können Sie kontextbezogene Unterhaltungen überprüfen und exportieren. 
+
+  ![Konversations Überprüfungsgruppe](../media/ConversationRSOptions.PNG)
+
+In den folgenden Abschnitten wird das überprüfen und Exportieren von Unterhaltungen in einer Konversations Überprüfungsgruppe beschrieben.
 
 #### <a name="reviewing-conversations"></a>Überprüfen von Unterhaltungen
 
@@ -117,9 +123,9 @@ In einer Konversations Überprüfungsgruppe können Sie die folgenden Optionen v
 
 - **Ansicht mit Anmerkungen versehen:** Hiermit können Sie eine Threadansicht der Unterhaltung markieren. Alle Nachrichten in der Unterhaltung verwenden dasselbe Dokument mit Anmerkungen.
 
-- - **Tag:** Wenn Sie Unterhaltungen in einem Überprüfungs Satzes anzeigen, können Sie Tags anzeigen und anwenden, indem Sie auf den **Codierungs Bereich**klicken.
+- **Tagging:** Wenn Sie Unterhaltungen in einem Überprüfungs Satzes anzeigen, können Sie Tags anzeigen und anwenden, indem Sie im Coding Panel auf Markierungs **Bereich** klicken.
 
-- Unter **Haltungs Konvertierung erneut ausführen:** Wenn Nachrichten zu einer Konversations Überprüfungsgruppe hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Zusammenfassung mit Threads zu erstellen und Ansichten zu kommentieren. Wenn der Auftrag zum Wiederherstellen der Unterhaltung fehlschlägt, können Sie den Konvertierungsauftrag erneut ausführen, indem Sie auf **Aktion klicken #a0 unter Haltungs PDFs** in der Überprüfungsgruppe erstellen
+- Unter **Haltungs Konvertierung erneut ausführen:** Wenn Nachrichten zu einer Konversations Überprüfungsgruppe hinzugefügt werden, wird automatisch ein Konvertierungsauftrag ausgeführt, um die Zusammenfassung mit Threads zu erstellen und Ansichten zu kommentieren. Wenn der Auftrag für die Wiederherstellung der Unterhaltung fehlschlägt, können Sie diesen Auftrag erneut ausführen, indem Sie auf **Aktion #a0 Erstellen von Unterhaltungs PDFs** in der Überprüfungsgruppe klicken.
 
 
 #### <a name="exporting-conversations"></a>Exportieren von Unterhaltungen
