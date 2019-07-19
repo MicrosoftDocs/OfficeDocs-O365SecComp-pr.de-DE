@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aufbewahrungsbezeichnungen in Office 365 können Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Aufbewahrungsbezeichnungen können Sie Daten organisationsweit für Governance klassifizieren und Aufbewahrungsregeln basierend auf dieser Klassifizierung durchsetzen. Sie können Aufbewahrungsbezeichnungen auch verwenden, um die Datensatzverwaltung in Office 365 zu implementieren.
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547980"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772162"
 ---
 # <a name="overview-of-retention-labels"></a>Übersicht über Aufbewahrungsbezeichnungen
 
@@ -72,9 +72,10 @@ Aufbewahrungsbezeichnungen sind unabhängige, wiederverwendbare Bausteine, die i
   
 ![Diagramm der Bezeichnungen, Bezeichnungsrichtlinien und Speicherorte](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, werden sie in eine Aufbewahrungsbezeichnungsrichtlinie einbezogen. 
+1. Wenn Sie Aufbewahrungsbezeichnungen veröffentlichen, werden sie in eine Aufbewahrungsbezeichnungsrichtlinie mit eingeschlossen. Bitte beachten Sie, dass Namen für Aufbewahrungsbezeichnungen unveränderlich sind und nachdem sie erstellt wurden nicht mehr bearbeitet werden können.
 
-2. Eine einzelne Aufbewahrungsbezeichnung kann in viele Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.
+
+2. Eine einzelne Aufbewahrungsbezeichnung kann in viele Aufbewahrungsbezeichnungsrichtlinien eingeschlossen werden.
 
 3. Ein einzelner Ort kann auch in viele Aufbewahrungsbezeichnungsrichtlinien einbezogen werden.    
     
