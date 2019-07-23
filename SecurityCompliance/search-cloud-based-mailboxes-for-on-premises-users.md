@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 'Verwenden Sie das Tool für die Inhaltssuche im Security #a0 Compliance Center zum Suchen und Exportieren von verläuft-Chat Daten (als 1xN-Chats bezeichnet) für lokale Benutzer in einer Exchange-hybridbereitstellung.'
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756857"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820488"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Durchsuchen von Cloud-basierten Postfächern für lokale Benutzer in Office 365
 
@@ -163,6 +163,6 @@ Nein.
   
 Microsoft hat am 31. Januar 2018 begonnen, die Chatdaten der Teams für lokale Benutzer zu speichern. Wenn also die Identität eines lokalen Teams-Benutzers zwischen Active Directory und Azure Active Directory seit diesem Datum synchronisiert wurde, werden Ihre Teams-Chat Daten in einem cloudbasierten Postfach gespeichert und können mithilfe der Inhaltssuche durchsucht werden. Microsoft arbeitet außerdem an der Speicherung von teamchatdaten vor dem 31. Januar 2018 in den Cloud-basierten Postfächern für lokale Benutzer. Weitere Informationen dazu sind in Kürze verfügbar.
 
- * * Benötigen lokale Benutzer eine Lizenz zum Speichern von Microsoft Teams-Chat Daten in einem cloudbasierten Postfach? 
+ **Benötigen lokale Benutzer eine Lizenz zum Speichern von Microsoft Teams-Chat Daten in einem cloudbasierten Postfach?**
   
 Ja. Zum Speichern von teamchatdaten für einen lokalen Benutzer in einem cloudbasierten Postfach muss dem Benutzer eine Microsoft Teams-Lizenz und eine Exchange Online Plan Lizenz in Office 365 (oder Microsoft 365) zugewiesen sein.

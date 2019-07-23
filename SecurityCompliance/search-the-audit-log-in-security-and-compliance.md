@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security #a0 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756877"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820498"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center
 
@@ -329,6 +329,7 @@ In der folgenden Tabelle werden die Datei-und Seiten Aktivitäten in SharePoint 
 |Geänderte Datei  <br/> |FileModified  <br/> |Das Benutzer-oder Systemkonto ändert den Inhalt oder die Eigenschaften eines Dokuments auf einer Website.  <br/> |
 |keine  <br/> |FileModifiedExtended  <br/> |Dies bezieht sich auf die "geänderte Datei" (File modified)-Aktivität. Ein FileModifiedExtended-Ereignis wird protokolliert, wenn dieselbe Person eine Datei kontinuierlich für einen längeren Zeitraum (bis zu 3 Stunden) ändert. Der Zweck der Protokollierung von FileModifiedExtended-Ereignissen besteht darin, die Anzahl von filemodified-Ereignissen zu verringern, die protokolliert werden, wenn eine Datei ständig geändert wird. Dadurch wird das Rauschen mehrerer filemodified-Datensätze für die im Wesentlichen dieselbe Benutzeraktivität reduziert, und Sie können sich auf das anfängliche (und wichtigere) filemodified-Ereignis konzentrieren.  <br/> |
 |Verschobene Datei  <br/> |FileMoved  <br/> |Der Benutzer verschiebt ein Dokument von seinem aktuellen Speicherort auf einer Website an einen neuen Speicherort.  <br/> |
+|keine  <br/> |FilePreviewed  <br/> |Benutzer zeigt eine Vorschau von Dateien auf einer SharePoint-oder OneDrive für Unternehmen-Website an. Diese Ereignisse treten normalerweise in hohen Volumes auf, die auf einer einzelnen Aktivität basieren, wie etwa dem Anzeigen einer Bildergalerie.  <br/> |
 |Alle Nebenversionen der Datei wieder verwendet  <br/> |FileVersionsAllMinorsRecycled  <br/> |Der Benutzer löscht alle Nebenversionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.  <br/> |
 |Alle Versionen der Datei wieder verwendet  <br/> |FileVersionsAllRecycled  <br/> |Der Benutzer löscht alle Versionen aus dem Versionsverlauf einer Datei. Die gelöschten Versionen werden in den Papierkorb der Website verschoben.  <br/> |
 |Recycelte Version der Datei  <br/> |FileVersionRecycled  <br/> |Der Benutzer löscht eine Version aus dem Versionsverlauf einer Datei. Die gelöschte Version wird in den Papierkorb der Website verschoben.  <br/> |
