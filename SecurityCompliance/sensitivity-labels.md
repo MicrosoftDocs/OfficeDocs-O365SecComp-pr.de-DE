@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199910"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840887"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -267,8 +267,8 @@ Weitere Informationen zum Microsoft Information Protection SDK finden Sie in der
 
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder Ihres Compliance-Teams, die Vertraulichkeitsbezeichnungen erstellen sollen, benötigen Berechtigungen für das Security & Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Speicherort und kann anderen Personen den Zugriff auf das Security & Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, dass Sie zur Seite **Berechtigungen** des Security & Compliance Center gehen, die Rollengruppe **Compliance-Administrator** bearbeiten und dieser Rollengruppe Mitglieder hinzufügen.
+Mitglieder Ihres Complianceteams, die Vertraulichkeitsbezeichnungen erstellen, benötigen Berechtigungen für das Microsoft 365 Compliance Center, das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diese Admin Center und kann den Compliance Officers und anderen Personen den Zugriff gewähren, ohne ihnen die Berechtigungen eines Mandantenadministrators zuzuweisen. Zu diesem Zweck wird empfohlen, zur Seite **Berechtigungen** der jeweiligen Admin Center zu wechseln und dann der Rollengruppe **Complianceadministrator** oder **Sicherheitsadministrator** Mitglieder hinzuzufügen.
 
-Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur erforderlich, um Bezeichnungen und eine Bezeichnungsrichtlinie zu erstellen und anzuwenden. Für die Durchsetzung von Richtlinien ist kein Zugriff auf Inhalte erforderlich.
