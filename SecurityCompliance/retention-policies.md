@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772172"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840902"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -78,7 +78,7 @@ Das gilt auch für Inhalte, die bei Anwendung der Aufbewahrungsrichtlinien vorha
   
 Beachten Sie, dass einem Benutzer eine Fehlermeldung angezeigt wird, wenn er versucht, eine Bibliothek, eine Liste, einen Ordner oder eine Website zu löschen, die/der einer Aufbewahrungsrichtlinie unterliegt. Ein Benutzer kann einen Ordner löschen, wenn er zunächst alle Dateien im Ordner, die der Richtlinie unterliegen, verschiebt oder löscht. Beachten Sie auch, dass das Dokumentarchiv nur erstellt wird, wen das erste Element in die Bibliothek kopiert werden muss und nicht, wenn Sie die Aufbewahrungsrichtlinie erstellen. Zum Testen der Richtlinie müssen Sie daher ein Dokument in einer Website, die der Richtlinie unterliegt, bearbeiten oder löschen und dann zum Dokumentarchiv navigieren, um die aufbewahrte Kopie anzuzeigen.
   
-![Diagramm des Inhaltslebenszyklus in SharePoint und OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagramm des Inhaltslebenszyklus in SharePoint und OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 Nachdem einem OneDrive-Konto oder einer SharePoint-Website eine Aufbewahrungsrichtlinie zugewiesen wurde, können Inhalte einem von zwei Pfaden folgen:
   
