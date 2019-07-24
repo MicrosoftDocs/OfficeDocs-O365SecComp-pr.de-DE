@@ -13,36 +13,36 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 86d858994f95176ea4d415405c4043f7e7c5308e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Importieren Sie nicht Office 365 Daten in einen Überprüfungs in einem erweiterten eDiscovery-Fall.
+ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155007"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840852"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Laden von Nicht-Office 365-Daten in einen Prüfdateisatz
 
-Nicht alle Dokumente, die Sie möglicherweise mit Office 365 Advanced eDiscovery analysieren müssen, werden in Office 365 Live verwendet. Mit der nicht Office 365en Inhalts Importfunktion in Advanced eDiscovery können Sie Dokumente, die nicht in Office 365 Leben, in einen Überprüfungs hochladen, damit diese mit Advanced eDiscovery analysiert werden. In diesem Verfahren erfahren Sie, wie Sie Ihre nicht-Office 365-Dokumente zur Analyse in Advanced eDiscovery integrieren.
+Nicht alle Dokumente, die Sie in Advanced eDiscovery analysieren müssen, befinden sich in Office 365. Mit der nicht Office 365 datenimportfunktion in Advanced eDiscovery können Sie Dokumente, die sich nicht in Office 365 befinden, in einen Überprüfungs-Datensatz hochladen. In diesem Artikel erfahren Sie, wie Sie Ihre nicht-Office 365-Dokumente zur Analyse in Advanced eDiscovery integrieren.
 
 >[!Note]
->Advanced eDiscovery erfordert eine Office 365 E3 mit dem Advanced Compliance-Add-on oder ein E5-Abonnement für Ihre Organisation. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
+>Advanced eDiscovery erfordert ein Microsoft 365-oder Office 365 E5-Abonnement für Ihre Organisation oder ein E3-Abonnement mit dem Add-on-Abonnement für erweiterte Kompatibilität. Wenn Sie diesen Plan nicht haben und Advanced eDiscovery testen möchten, können Sie sich für eine Testversion von Office 365 Enterprise E5 anmelden.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Wenn Sie das Feature "nicht Office 365 hochladen" wie in diesem Artikel beschrieben verwenden, müssen Sie über Folgendes verfügen:
+Bei Verwendung der in diesem Artikel beschriebenen Funktion "nicht Office 365 hochladen" müssen Sie über Folgendes verfügen:
 
-- Ein Office 365-oder Microsoft 365 E5-Abonnement oder ein E3-Abonnement mit dem Add-on-Abonnement für erweiterte Kompatibilität.
-
-- Alle Verwalter, deren nicht Office 365 Inhalt hochgeladen wird, müssen über eine E3-Lizenz mit einer Add-on-Lizenz für Advanced Compliance verfügen oder über eine E5-Lizenz verfügen.
+- Allen Betreuern, denen nicht Office 365 Inhalte zugeordnet werden sollen, muss eine E5-Lizenz oder eine E3-Lizenz mit einer Advanced Compliance-Add-on-Lizenz zugewiesen sein.
 
 - Ein vorhandener erweiterter eDiscovery-Fall.
 
-- Verwalter müssen dem Fall hinzugefügt werden, bevor Sie die nicht Office 365 Daten hochladen, die Ihnen zugeordnet sind.
+- Verwalter müssen dem Fall hinzugefügt werden, bevor Sie Sie hochladen und den nicht Office 365-Daten zuordnen können.
 
-- Alle hochzuladenden Dateien müssen sich in Ordnern befinden, in denen jeder Ordner einer bestimmten Depotbank zugeordnet ist. Für die Namen dieser Ordner muss das folgende Benennungsformat verwendet werden: *Alias @ Domain*Name. Der *Alias @ Domain Name* muss der Office 365 Alias und die Domäne des Benutzers sein. Sie können alle Alias- *@ Domain Name* -Ordner in einem Stammordner sammeln. Der Stammordner kann nur die Ordner *Alias @ Domain Name* enthalten; Loose-Dateien sind im Stammordner nicht zulässig.
+- Nicht Office 365 Daten müssen einen Dateityp aufweisen, der von Advanced eDiscovery unterstützt wird. Weitere Informationen finden Sie unter [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-   Beispielsweise ähnelt die Ordnerstruktur für die nicht Office 365 Daten, die Sie hochladen möchten, etwa wie folgt:
+- Alle Dateien, die in einen Überprüfungs Sätze hochgeladen werden, müssen sich in Ordnern befinden, in denen jeder Ordner einer bestimmten Depotbank zugeordnet ist. Für die Namen dieser Ordner muss das folgende Benennungsformat verwendet werden: *Alias @ Domain*Name. Der *Alias @ Domain Name* muss der Office 365 Alias und die Domäne des Benutzers sein. Sie können alle Alias- *@ Domain Name* -Ordner in einem Stammordner sammeln. Der Stammordner kann nur die Ordner *Alias @ Domain Name* enthalten. Lose Dateien im Stammordner werden nicht unterstützt.
+
+   Die Ordnerstruktur für die nicht Office 365 Daten, die Sie hochladen möchten, würde dem folgenden Beispiel ähneln:
 
    - c:\nonO365\abraham.McMahon@contoso.com
    - c:\nonO365\jewell.Gordon@contoso.com
@@ -52,39 +52,48 @@ Wenn Sie das Feature "nicht Office 365 hochladen" wie in diesem Artikel beschrie
 
    ![Ordnerstruktur für nicht Office 365E Datenuploads](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
-- Ein Konto, das entweder eDiscovery-Manager oder eDiscovery-Administrator ist
+- Ein Konto, das der Rollengruppe "eDiscovery-Manager" zugewiesen ist (und als eDiscovery-Administrator hinzugefügt wurde).
 
-- Microsoft Azure Speicher Tools, die auf einem Computer installiert sind, der Zugriff auf die Struktur nicht Office 365 Inhaltsordner hat.
+- Microsoft Azure Speicher Tools, die auf einem Computer installiert sind, der Zugriff auf die Struktur nicht Office 365 Inhaltsordner hat. Informationen zum Installieren von AzCopy finden Sie unter [Erste Schritte mit AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). Stellen Sie sicher, dass Sie AzCopy im Standardspeicherort installieren, also **% Programme (x86)% \ Microsoft SDKs\Azure\AzCopy**.
 
-- Installieren Sie AzCopy, was Sie von hier aus tun können:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Hochladen nicht Office 365er Inhalte in die erweiterte eDiscovery
 
-1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator Advanced eDiscovery, dann werden die nicht Office 365-Daten hochgeladen.  Klicken Sie auf die Registerkarte Überprüfungs **Sätze** , und wählen Sie dann den Überprüfungs Satz aus, in den Sie die nicht Office 365 Daten laden möchten.  Wenn Sie noch keinen Überprüfungs Sätze erstellt haben, können Sie dies jetzt tun.  Klicken Sie schließlich auf **Überarbeitungs Gruppe verwalten** , und klicken Sie dann auf **Uploads anzeigen** in der * * nicht Office 365 Daten Kachel.
+1. Öffnen Sie als eDiscovery-Manager oder eDiscovery-Administrator Advanced eDiscovery, dann werden die nicht Office 365-Daten hochgeladen.  
 
-2. Klicken Sie auf die Schaltfläche **Dateien hochladen** , um den nicht Office 365 Datenimport-Assistenten zu starten.
+2. Klicken Sie auf Überprüfungs **Sätze**, und wählen Sie dann den Überprüfungs Satz aus, an den die nicht Office 365 Daten hochgeladen werden sollen.  Wenn Sie keinen Überprüfungs Sätze haben, können Sie einen erstellen. 
+ 
+3. Klicken Sie in der Überprüfungsgruppe auf **Überarbeitungs Gruppe verwalten**, und klicken Sie dann auf der **Daten Kachel nicht Office 365** auf **Uploads anzeigen** .
+
+4. Klicken Sie auf **Dateien hochladen** , um den nicht Office 365 Datenimport-Assistenten zu starten.
 
    ![Hochladen von Dateien](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. Im ersten Schritt des Assistenten wird einfach ein sicheres Azure-BLOB für die zu hochzuladenden Dateien vorbereitet.  Nachdem die Vorbereitung abgeschlossen ist, klicken Sie auf die Schaltfläche **Weiter: Dateien hochladen** .
+   Im ersten Schritt des Assistenten wird ein sicherer von Microsoft bereitgestellter Azure-Speicherort für den Upload der Dateien vorbereitet.  Wenn die Vorbereitung abgeschlossen ist, wird die Schaltfläche **Weiter: Dateien hochladen** aktiviert.
 
-   ![Nicht Office 365 Import – Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Nicht Office 365 Import: Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
-4. Geben Sie im Schritt **Upload Files** den **Pfad zum Speicherort der Dateien**an, hier befinden sich die nicht Office 365 Daten, die Sie beim Import planen.  Durch Festlegen des richtigen Speicherorts wird sichergestellt, dass der AzCopy-Befehl ordnungsgemäß aktualisiert wird.
+5. Klicken Sie auf **Weiter: Dateien hochladen**.
 
-   > [!NOTE]
-   > Wenn Sie AzCopy nicht bereits installiert haben, können Sie dies hier tun:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+6. Führen Sie auf der Seite **Dateien hochladen** folgende Schritte aus:
 
-5. Kopieren Sie den vordefinierten Befehl, indem Sie auf den Link **in Zwischenablage kopieren** klicken. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie die EINGABETASTE.  Die Dateien werden in den sicheren Azure-BLOB-Speicher für den nächsten Schritt hochgeladen.
+   ![Nicht Office 365 Import: Hochladen von Dateien](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   ![Nicht Office 365 Import-Upload-Dateien](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   a. Überprüfen Sie im Feld **Pfad zum Speicherort der Dateien** den Speicherort des Stammordners, in dem Sie die nicht Office 365 Daten, die Sie hochladen möchten, gespeichert haben, oder geben Sie ihn ein. Wenn Sie beispielsweise den Speicherort der Beispieldateien im **Abschnitt bevor Sie beginnen**sehen möchten, geben Sie **%USERPROFILE\Downloads\nonO365**ein. Durch Bereitstellen des richtigen Speicherorts wird sichergestellt, dass der im Feld unter dem Pfad angezeigte AzCopy-Befehl ordnungsgemäß aktualisiert wird.
 
-   ![Nicht Office 365 Import – AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   b. Klicken Sie auf in **Zwischenablage kopieren** , um den Befehl zu kopieren, der in dem Feld angezeigt wird. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie die EINGABETASTE.  Die Dateien werden in den sicheren Azure-BLOB-Speicher für den nächsten Schritt hochgeladen.
+
+7. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, den Sie im vorherigen Schritt kopiert haben, und drücken Sie dann die **EINGABETASTE** , um den AzCopy-Befehl zu starten.  Nachdem Sie den Befehl gestartet haben, werden die nicht Office 365 Dateien in den Azure-Speicherort hochgeladen, der in Schritt 4 vorbereitet wurde.
+
+   ![Nicht Office 365 Import: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > Wenn der angegebene AzCopy-Befehl fehlschlägt, lesen Sie [Troubleshooting AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
 
-6. Kehren Sie schließlich zur Sicherheit & Compliance zurück, und klicken Sie auf die Schaltfläche **Weiter: Prozessdateien** .  Dadurch wird die Verarbeitung, die Textextraktion und die Indizierung der hochgeladenen Dateien initiiert.  Sie können den Fortschritt der Verarbeitung hier oder auf der Registerkarte **Aufträge** nachverfolgen.  Sobald die neuen Dateien abgeschlossen sind, sind Sie im Überprüfungs verfügbar.  Nachdem die Verarbeitung abgeschlossen ist, können Sie den Assistenten schließen.
+8. Wechseln Sie zurück zum Security #a0 Compliance Center, und klicken Sie auf **Weiter: Dateien** im Assistenten verarbeiten.  Dadurch werden Verarbeitung, Textextraktion und Indizierung der nicht Office 365 Dateien initiiert, die in den Azure-Speicherort hochgeladen wurden.  
 
-   ![Nicht Office 365 Import Prozess-Dateien](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+9. Verfolgen Sie den Fortschritt der Verarbeitung nicht Office 365er Dateien auf der Seite **Prozessdateien** oder auf der Registerkarte **Aufträge** , indem Sie einen Auftrag mit dem Namen **Hinzufügen von nicht Office 365 Daten zu einem Überprüfungs Satzes**anzeigen.  Nachdem der Auftrag abgeschlossen ist, sind die neuen Dateien in der Überprüfungsgruppe verfügbar.
 
+   ![Nicht Office 365 Import: Verarbeiten von Dateien](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+
+10. Nachdem die Verarbeitung abgeschlossen ist, können Sie den Assistenten schließen.
