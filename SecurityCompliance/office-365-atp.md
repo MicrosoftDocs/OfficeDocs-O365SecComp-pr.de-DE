@@ -7,7 +7,7 @@ ms.date: 03/28/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 - MOE150
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Anti-Phishing-Tools, Reporting-Tools und Funktionen für die Threat Intelligence.
-ms.openlocfilehash: 0793036f10444064f5f049a6a6ea7254de179967
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600962"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854779"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -53,7 +53,7 @@ Die für Ihre Organisation definierten Richtlinien bestimmen das Verhalten und d
 
 - [ATP-sichere Anlagen](atp-safe-attachments.md): bietet einen Zero-Day-Schutz zum Schutz Ihres Messagingsystems durch Überprüfen von e-Mail-Anlagen auf böswillige Inhalte. Alle Nachrichten und Anlagen, die nicht über eine Virus/Malware-Signatur verfügen, werden an eine spezielle Umgebung weitergeleitet, und anschließend werden maschinelle Lern-und Analysetechniken zum erkennen böswilliger Absichtserklärungen verwendet. Wenn keine verdächtigen Aktivitäten gefunden werden, wird die Nachricht an das Postfach weitergeleitet. Weitere Informationen finden Sie unter [Einrichten Office 365 ATP-Richtlinien für sichere Anlagen](set-up-atp-safe-attachments-policies.md).
 
-- [ATP-sichere Links](atp-safe-links.md): ermöglicht die Überprüfung von URLs in e-Mail-Nachrichten und Office-Dateien über die Dauer des Klickens. Der Schutz wird fortgesetzt und gilt für Ihre Messaging-und Office-Umgebung. Für jeden Klick werden Links gescannt: sichere Links bleiben verfügbar und böswillige Links werden dynamisch blockiert. Weitere Informationen finden Sie unter [Einrichten Office 365 Richtlinien für ATP-sichere Links](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies). 
+- [ATP-sichere Links](atp-safe-links.md): bietet eine Zeit-zu-Klick-Überprüfung von URLs, beispielsweise in e-Mails und Office-Dateien. Der Schutz wird fortgesetzt und gilt für Ihre Messaging-und Office-Umgebung. Für jeden Klick werden Links gescannt: sichere Links bleiben verfügbar und böswillige Links werden dynamisch blockiert. Weitere Informationen finden Sie unter [Einrichten Office 365 Richtlinien für ATP-sichere Links](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies). 
 
 - [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md): schützt Ihre Organisation, wenn Benutzer zusammenarbeiten und Dateien freigeben, indem Sie bösartige Dateien in Teamwebsites und Dokumentbibliotheken erkennen und blockieren. Weitere Informationen finden Sie unter [Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md). 
 

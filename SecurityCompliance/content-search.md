@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um nach Inhalten in Postfächern, SharePoint Online Websites, OneDrive-Konten, Microsoft Teams, Office 365 Gruppen und Skype for Business-Unterhaltungen zu suchen. Sie können Keyword-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzuschränken. Anschließend können Sie die Suchergebnisse anzeigen und exportieren. Die Inhaltssuche ist auch ein effektives Tool zum Suchen nach Inhalten im Zusammenhang mit einer dsgvo-Datensubjekt Anforderung.
-ms.openlocfilehash: 76c3ddbbd6cd7432a06506be62c63fbfa0291b46
-ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
+ms.openlocfilehash: 12065a744b287bea5e2b9fc07e7fe8023d40bb5f
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587817"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854729"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 

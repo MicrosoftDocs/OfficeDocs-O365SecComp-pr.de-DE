@@ -7,7 +7,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Neue Office 365 Nachrichten Verschlüsselungsfunktionen, die auf dem Schutz von Azure Information basieren, kann Ihre Organisation geschützte e-Mail-Kommunikation mit Personen innerhalb und außerhalb Ihrer Organisation verwenden. Die neuen OM-Funktionen funktionieren mit anderen Office 365 Organisationen, Outlook.com, Gmail und anderen e-Mail-Diensten.
-ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 835b1d6f40868684536dbea8f75dab0665950210
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156507"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854799"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen
 
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie unter:
 
 Wenn Sie Azure RMS deaktiviert haben oder es aus irgendeinem Grund nicht automatisch aktiviert wurde, können Sie es manuell im folgenden aktivieren:
 
-- **Office 365 Admin Center**: Weitere Informationen finden Sie unter Vorgehens [Weise Aktivieren von Azure Rights Management aus dem Office 365 Admin Center](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) .
+- **Microsoft 365 Admin Center**: Informationen zum [Aktivieren von Azure Rights Management aus dem Admin Center](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) finden Sie unter Anweisungen.
 - **Azure-Portal**: Weitere Informationen finden Sie unter [Aktivieren von Azure Rights Management aus dem Azure-Portal](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) .
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Konfigurieren der Verwaltung Ihres Azure Information Protection-Mandanten Schlüssels
@@ -125,8 +125,8 @@ Schritte zum Erstellen von Nachrichtenfluss Regeln für OM finden Sie unter [Def
 
 So aktualisieren Sie vorhandene Regeln für die Verwendung der neuen OM-Funktionen:
 
-1. Wechseln Sie im Office 365 Admin Center zu **Admin Centers > Exchange**.
-2. Wechseln Sie im Exchange Admin Center zu **Nachrichtenfluss-> Regeln**.
+1. Wechseln Sie im Microsoft 365 Admin Center zu **Admin Centers #a0 Exchange**.
+2. Wechseln Sie im Exchange Admin Center zu **Nachrichtenfluss #a0 Regeln**.
 3. **Geben Sie**für jede Regel Folgendes ein:
     - Wählen Sie **die Option Nachrichtensicherheit ändern**aus.
     - Wählen Sie **Office 365 Nachrichtenverschlüsselung und Rechte Schutz anwenden**aus.
