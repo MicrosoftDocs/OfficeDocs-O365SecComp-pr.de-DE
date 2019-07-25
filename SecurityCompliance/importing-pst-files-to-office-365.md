@@ -1,5 +1,5 @@
 ---
-title: Overview of importing your organization PST files to Office 365
+title: Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -9,299 +9,299 @@ ms.topic: overview
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
-description: 'Für Administratoren: Informationen zum Verwenden des Import Diensts im Security & Compliance Center zum Massenimport von e-Mail-Daten (PST-Dateien) in Benutzerpostfächer in Exchange Online. Dieses Thema enthält FAQs und erläutert die Funktionsweise des PST-Importvorgangs.'
-ms.openlocfilehash: ab623c531f5e322a99aef5c8c33f110fc140a6f7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
-ms.translationtype: MT
+description: 'Für Administratoren: Im Folgenden wird erläutert, wie der Importdienst im Security & Compliance Center verwendet werden kann, um E-Mail-Daten (PST-Dateien) in einem Massenimport in Benutzerpostfächer in Exchange Online zu importieren. In diesem Thema wird auf häufig gestellte Fragen eingegangen und erläutert, wie der PST-Importprozess funktioniert.'
+ms.openlocfilehash: 4682114ad150f818dfe39fe662bc3440d655e4ea
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154221"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854669"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
+# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Übersicht über das Importieren von PST-Dateien Ihrer Organisation in Office 365
 
 > [!NOTE]
-> Dieser Artikel richtet sich an Administratoren. Möchten Sie PST-Dateien in Ihr eigenes Postfach importieren? Siehe [Importieren von e-Mails, Kontakten und Kalendern aus einer Outlook. PST-Datei](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> Dieser Artikel richtet sich an Administratoren. Möchten Sie PST-Dateien in Ihr eigenes Postfach importieren? Siehe [Importieren von E-Mails, Kontakten und Kalendern aus einer Outlook-PST-Datei](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
-Sie können den Import-Dienst im Security & Compliance Center verwenden, um schnell Massen Import-PST-Dateien in Exchange Online Postfächer in Ihrer Office 365 Organisation zu importieren. Sie können PST-Dateien in Office 365 auf zwei Arten importieren:
+Sie können den Importdienst im Security & Compliance Center verwenden, um PST-Dateien in einem Massenimportvorgang schnell in Exchange Online-Postfächer in Ihrer Office 365-Organisation zu importieren. Es gibt zwei Methoden zum Importieren von PST-Dateien in Office 365:
    
-- **Netzwerk Upload** ![Cloud-](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) Upload: Laden Sie die PST-Dateien über das Netzwerk in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Anschließend verwenden Sie den Office 365 Import-Dienst, um die PST-Daten in Postfächer in Ihrer Office 365 Organisation zu importieren. 
+- **Netzwerk-Upload** ![Cloud-Upload](media/54ab16ee-3822-4551-abef-3d926f4e1c01.png): Laden Sie die PST-Dateien über das Netzwerk in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Verwenden Sie anschließend den Office 365-Importdienst, um die PST-Daten in Postfächer in Ihrer Office 365-Organisation zu importieren. 
 
-- **Laufwerk Versand** ![Festplatte](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) – kopieren Sie die PST-Dateien auf eine mit BitLocker verschlüsselte Festplatte, und transportieren Sie das Laufwerk dann physisch an Microsoft. Wenn Microsoft die Festplatte empfängt, werden die Daten von Rechenzentrumsmitarbeitern in einen temporären Azure-Speicherort in der Microsoft-Cloud hochgeladen. Anschließend verwenden Sie den Office 365 Import-Dienst, um die Daten in Postfächer in Ihrer Office 365 Organisation zu importieren.
+- **Laufwerkversand** ![Festplatte](media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png): Sie kopieren die PST-Dateien auf eine mit BitLocker verschlüsselte Festplatte und senden das Laufwerk dann physisch an Microsoft. Nachdem Microsoft die Festplatte erhalten hat, laden Mitarbeiter im Rechenzentrum die Daten in einen temporären Azure-Speicherort in der Microsoft-Cloud hoch. Anschließend verwenden Sie den Office 365-Importdienst, um die Daten in Postfächer in Ihrer Office 365-Organisation zu importieren. 
 
-## <a name="step-by-step-instructions"></a>Schritt-für-Schritt-Anleitungen
+## <a name="step-by-step-instructions"></a>Schrittweise Anweisungen
   
-Ausführliche Schritt-für-Schritt-Anleitungen für das Massenimportieren der PST-Dateien Ihrer Organisation in Office 365 finden Sie in einem der folgenden Themen. 
+Ausführliche schrittweise Anweisungen zum Massenimport von PST-Dateien Ihrer Organisation in Office 365 finden Sie in den folgenden Artikeln. 
    
-- [Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien in Office 365](use-network-upload-to-import-pst-files.md)
+- [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien in Office 365](use-network-upload-to-import-pst-files.md)
 - [Verwenden des Laufwerkversands zum Importieren von PST-Dateien in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
 
-## <a name="how-importing-pst-files-works"></a>Funktionsweise des Importierens von PST-Dateien
+## <a name="how-importing-pst-files-works"></a>Wie das Importieren von PST-Dateien abläuft
 
-Im folgenden finden Sie eine Abbildung und eine Beschreibung des gesamten PST-Importvorgangs. Die Abbildung zeigt den primären Workflow und hebt die Unterschiede zwischen den Netzwerk-Upload-und Laufwerks Versandmethoden hervor.
+Es folgen eine Darstellung und Beschreibung des vollständigen PST-Importprozesses. In der Darstellung ist der wesentliche Workflow abgebildet und sind die Unterschiede zwischen den Methoden Netzwerkupload und Laufwerkversand hervorgehoben.
   
-![Workflow des PST-Importprozesses](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![Workflow eines PST-Importprozesses](media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
   
-1. **Laden Sie die PST-Importtools und Key to private Azure Storage Location herunter** – der erste Schritt besteht darin, das Tool und die Zugriffstaste herunterzuladen, die zum Hochladen der PST-Dateien verwendet werden, oder Sie auf eine Festplatte zu kopieren. Sie erhalten diese auf der Seite **importieren** im Security & Compliance Center. Der Schlüssel stellt Ihnen (oder Microsoft-Mitarbeiter für Rechenzentren im Fall des Laufwerk Versands) die erforderlichen Berechtigungen zum Hochladen von PST-Dateien an einen privaten und sicheren Azure-Speicherort zur Verfügung. Dieser Zugriffsschlüssel ist für Ihre Organisation eindeutig und verhindert, dass nicht autorisierter Zugriff auf Ihre PST-Dateien nach dem Hochladen in die Microsoft-Cloud erfolgt. Beachten Sie, dass das Importieren von PST-Dateien in Office 365 nicht erforderlich ist, dass Ihre Organisation über ein separates Azure-Abonnement verfügt. 
+1. **PST-Importtool und Schlüssel für den privaten Azure-Speicherort herunterladen**: Der erste Schritt besteht darin, das Tool und den Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien hochzuladen oder auf eine Festplatte zu kopieren. Sie erhalten das Tool und den Schlüssel über die Seite **Import** im Security & Compliance Center. Der Schlüssel stellt Ihnen (oder Mitarbeitern im Microsoft-Rechenzentrum) die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien in Office 365 ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
     
-2. **Uploaden oder kopieren Sie die PST-Dateien** -der nächste Schritt hängt davon ab, ob Sie Netzwerk Uploads oder Laufwerks Versand zum Importieren von PST-Dateien verwenden. In beiden Fällen verwenden Sie das Tool und den sicheren Speicherschlüssel, den Sie im vorherigen Schritt erhalten haben.
+2. **PST-Dateien hochladen oder kopieren**: Der nächste Schritt hängt davon ab, ob Sie die PST-Dateien über Netzwerkupload oder Laufwerkversand importieren. In beiden Fällen verwenden Sie das Tool und den sicheren Speicherschlüssel, die Sie im vorherigen Schritt erhalten haben.
     
-    - **Netzwerk Upload** Das Tool AzCopy. exe (in Schritt 1 heruntergeladen) wird zum Hochladen und Speichern Ihrer PST-Dateien an einem Azure-Speicherort in der Microsoft-Cloud verwendet. Beachten Sie, dass der Azure-Speicherort, an den Sie Ihre PST-Dateien hochgeladen haben, sich im selben regionalen Microsoft-Rechenzentrum befindet, in dem sich Ihre Office 365 Organisation befindet. 
+    - **Netzwerkupload**: Ihre PST-Dateien werden mithilfe des Tools "AzCopy.exe" (heruntergeladen in Schritt 1) in einen Azure-Speicherort in der Microsoft-Cloud hochgeladen. Der Azure-Speicherort, in den Sie Ihre PST-Dateien hochladen, befindet sich im selben regionalen Microsoft-Rechenzentrum wie Ihre Office 365-Organisation. 
     
-      Zum Hochladen der PST-Dateien, die Sie in Office 365 importieren möchten, müssen Sie sich in einer Dateifreigabe oder einem Dateiserver in Ihrer Organisation befinden.
+      Damit Sie die PST-Dateien, die Sie in Office 365 importieren möchten, hochladen können, müssen sich diese in einer Dateifreigabe oder auf einem Dateiserver in Ihrer Organisation befinden.
     
-    - **Laufwerk Versand** Das Tool "waimportexport. exe (in Schritt 1 heruntergeladen) wird verwendet, um Ihre PST-Dateien auf die Festplatte zu kopieren. Dieses Tool verschlüsselt die Festplatte mit BitLocker und kopiert dann die PST auf die Festplatte. Wie beim Hochladen von Netzwerken müssen sich die PST-Dateien, die Sie auf die Festplatte kopieren möchten, in einer Dateifreigabe oder einem Dateiserver in Ihrer Organisation befinden.
+    - **Laufwerkversand**: Ihre PST-Dateien werden mithilfe des Tools "WAImportExport.exe" (heruntergeladen in Schritt 1) auf die Festplatte kopiert. Dieses Tool verschlüsselt die Festplatte mit BitLocker und kopiert die PST-Dateien dann auf die Festplatte. Wie bei einem Netzwerkupload müssen sich die PST-Dateien, die Sie auf die Festplatte kopieren möchten, in einer Dateifreigabe oder auf einem Dateiserver in Ihrer Organisation befinden.
     
-3. **Erstellen einer PST-Import Zuordnungsdatei** – nachdem die PST-Dateien in den Azure-Speicherort hochgeladen oder auf eine Festplatte kopiert wurden, besteht der nächste Schritt darin, eine CSV-Datei (Comma Separated Value) zu erstellen, die angibt, in welche Benutzerpostfächer die PST-Dateien importiert werden sollen (a ND eine PST-Datei kann in das primäre Postfach oder das Archivpostfach eines Benutzers importiert werden. Der Office 365 Import Dienst verwendet die Informationen, um die PST-Dateien zu importieren. 
+3. **Erstellung einer PST-Importzuordnungsdatei**: Nachdem die PST-Dateien in den Azure-Speicherort hochgeladen oder auf eine Festplatte kopiert wurden, besteht der nächste Schritt darin, eine Datei mit kommagetrennten Werten (CSV-Datei) zu erstellen, die angibt, in welche Benutzerpostfächer die PST-Dateien importiert werden (wobei eine PST-Datei in das primäre Postfach eines Benutzers oder in dessen Archivpostfach importiert werden kann). Der Office 365-Importdienst verwendet die Informationen, um die PST-Dateien importieren. 
     
-4. **Create a PST Import Job** -der nächste Schritt besteht darin, einen PST-Importauftrag auf der Seite " **importieren** " im Security & Compliance Center zu erstellen und die PST-Import Zuordnungsdatei zu übermitteln, die im vorherigen Schritt erstellt wurde. Für Netzwerk Uploads (da die PST-Dateien in Azure hochgeladen wurden) analysiert Office 365 die Daten in den PST-Dateien und gibt Ihnen dann die Möglichkeit, Filter festzulegen, mit denen gesteuert wird, welche Daten tatsächlich in die in der PST-Import Zuordnungsdatei angegebenen Postfächer importiert werden. 
+4. **Erstellung eines PST-Importauftrag**: Im nächsten Schritt wird auf der Seite **Import** im Security & Compliance Center ein PST-Importauftrag erstellt und die im vorherigen Schritt erstellte PST-Importzuordnungsdatei gesendet. Bei einem Netzwerkupload (die PST-Dateien wurden in Azure hochgeladen) analysiert Office 365 die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, Filter festzulegen, mit denen gesteuert wird, welche Daten tatsächlich in die Postfächer importiert werden, die in der PST-Importzuordnungsdatei angegeben sind. 
     
-    Für den Laufwerk Versand erfolgen an dieser Stelle des Prozesses einige zusätzliche Dinge.
+    Bei einem Laufwerkversand werden an diesem Punkt des Prozesses einige weitere Schritte ausgeführt.
     
-    - Sie transportieren die Festplatte physisch an ein Microsoft-Rechenzentrum (die Versandadresse für das Microsoft-Rechenzentrum wird angezeigt, wenn der Importauftrag erstellt wird).
+    - Sie senden die Festplatte physisch an ein Microsoft-Rechenzentrum (die Versandadresse für das Microsoft-Rechenzentrum wird angezeigt, wenn der Importauftrag erstellt wird).
     
-    - Wenn Microsoft die Festplatte empfängt, laden Rechenzentrumsmitarbeiter die PST-Dateien auf der Festplatte an den Azure-Speicherort für Ihre Organisation hoch. Wie bereits erläutert, werden Ihre PST-Dateien in einen Azure-Speicherort hochgeladen, der sich im gleichen regionalen Microsoft-Datencenter befindet, in dem sich Ihre Office 365 Organisation befindet.
+    - Nachdem die Festplatte bei Microsoft eingetroffen ist, laden Mitarbeiter des Rechenzentrums die PST-Dateien auf der Festplatte in den Azure-Speicherort für Ihre Organisation hoch. Wie bereits zuvor erläutert, werden Ihre PST-Dateien in einen Azure-Speicherbereich hochgeladen, der sich im selben regionalen Microsoft-Rechenzentrum wie Ihre Office 365-Organisation befindet.
     
       > [!NOTE]
-      > Die PST-Dateien auf der Festplatte werden innerhalb von 7 bis 10 Werktagen nach Erhalt der Festplatte von Microsoft in Azure hochgeladen. 
+      > Die PST-Dateien auf der Festplatte werden innerhalb von 7 bis 10 Werktagen nach dem Eintreffen der Festplatte in Azure hochgeladen. 
   
-      Wie beim Hochladen von Netzwerken analysiert Office 365 dann die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, Filter festzulegen, mit denen gesteuert wird, welche Daten tatsächlich in die in der PST-Import Zuordnungsdatei angegebenen Postfächer importiert werden.
+      Wie beim Netzwerkuploadprozess analysiert Office 365 dann die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, Filter festzulegen, mit denen gesteuert wird, welche Daten tatsächlich in die Postfächer importiert werden, die in der PST-Importzuordnungsdatei angegeben sind.
     
-    - Microsoft sendet die Festplatte zurück an Sie. 
+    - Microsoft liefert die Festplatte an Sie zurück. 
     
-5. **Filtern der PST-Daten, die in Postfächer importiert** werden – nach dem Erstellen des importauftrags (und nachdem die PST-Dateien von einem Laufwerks Versandauftrag in den Azure-Speicherort hochgeladen wurden) Office 365 die Daten in den PST-Dateien (sicher und sicher) durch analysieren Identifizieren des Alters der Elemente und der unterschiedlichen Nachrichtentypen, die in den PST-Dateien enthalten sind. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, haben Sie die Möglichkeit, alle in den PST-Dateien enthaltenen Daten zu importieren oder die importierten Daten zu trimmen, indem Sie Filter festlegen, mit denen gesteuert wird, welche Daten importiert werden. 
+5. **Filterung der PST-Daten, die in Postfächer importiert werden sollen**: Nachdem der Importauftrag erstellt wurde (und nachdem die PST-Dateien aus einem Laufwerkversandauftrag in den Azure-Speicherbereich hochgeladen wurden), analysiert Office 365 die Daten in den PST-Dateien (gefahrlos und sicher), indem das Alter der Elemente und die verschiedenen Nachrichtentypen bestimmt werden, die in den PST-Dateien enthalten sind. Wenn die Analyse abgeschlossen ist und die Daten für den Import bereit sind, haben Sie die Möglichkeit, alle in den PST-Dateien enthaltenen Daten zu importieren oder die zu importierenden Daten einzuschränken, indem Sie Filter festlegen, mit denen gesteuert wird, welche Daten importiert werden. 
     
-6. **Starten des PST-importauftrags** – nachdem der Importauftrag gestartet wurde, verwendet Office 365 die Informationen in der PST-Import Zuordnungsdatei, um die PST-Dateien vom he Azure-Speicherort in Benutzerpostfächer zu importieren. Status Informationen zum Importauftrag (einschließlich Informationen zu den einzelnen importierten PST-Dateien) werden auf der Seite " **importieren** " im Security & Compliance Center angezeigt. Wenn der Importauftrag abgeschlossen ist, wird der Status für den Auftrag auf " **abgeschlossen**" festgelegt.
+6. **Starten des PST-Importauftrags**: Nachdem der Importauftrag gestartet wurde, verwendet Office 365 die Informationen in der PST-Importzuordnungsdatei, um die PST-Dateien aus dem Azure-Speicherort in Benutzerpostfächer zu importieren. Statusinformationen zu dem Importauftrag (einschließlich Informationen zu jeder PST-Datei, die importiert wird) werden auf der Seite **Import** im Security & Compliance Center angezeigt. Wenn der Importauftrag abgeschlossen ist, wird sein Status auf **Abgeschlossen** festgelegt.
   
-## <a name="why-import-email-data-to-office-365"></a>Gründe für das Importieren von e-Mail-Daten in Office 365?
+## <a name="why-import-email-data-to-office-365"></a>Warum sollten E-Mail-Daten in Office 365 importiert werden?
 
-- Das Importieren von PST-Dateien in Benutzerpostfächer ist eine Möglichkeit, die e-Mails Ihrer Organisation in Office 365 zu migrieren.
+- Das Importieren von PST-Dateien in Benutzerpostfächer ist eine Methode, die E-Mails Ihrer Organisation in Office 365 zu migrieren.
     
-- Sie können die [intelligente Import](filter-data-when-importing-pst-files.md) Funktion verwenden, um die Elemente in PST-Dateien zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Auf diese Weise können Sie die importierten Daten trimmen, indem Sie Filter festlegen, mit denen gesteuert wird, welche Daten importiert werden. 
+- Sie können das Feature [Intelligenter Import](filter-data-when-importing-pst-files.md) zum Filtern der Elemente in PST-Dateien verwenden, die tatsächlich in die Zielpostfächer importiert werden sollen. Auf diese Weise können Sie den Datenimport einschränken, indem Sie Filter festlegen, die steuern, welche Daten importiert werden. 
     
-- Durch das Importieren von e-Mail-Daten an Office 365 können Sie die Anforderungen Ihrer Organisation an die Compliance anpassen, indem Sie Folgendes zulassen:
+- Das Importieren von E-Mail-Daten in Office 365 hilft Ihnen beim Erfüllen der Complianceanforderungen Ihrer Organisation, indem es Ihnen folgende Möglichkeiten gibt:
     
-  - Aktivieren Sie [Archivpostfächer](enable-archive-mailboxes.md) und [unbegrenzte Archivierung](unlimited-archiving.md) , um Benutzern zusätzlichen Postfachspeicher Platz zu geben. 
+  - Aktivieren von [Archivpostfächern](enable-archive-mailboxes.md) und [unbegrenzter Archivierung](unlimited-archiving.md), um Benutzern zusätzlichen Postfachspeicherplatz zur Verfügung zu stellen. 
     
-  - Aufbewahrung von Postfächern im [Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=841243) zum Beibehalten von Inhalten. 
+  - Kennzeichnen von Postfächern mit [Aufbewahrung für juristische Zwecke](https://go.microsoft.com/fwlink/?linkid=841243), um Inhalte aufzubewahren. 
     
-  - Verwenden Sie das [Inhalts Such Tool](content-search.md) , um nach Postfachinhalten zu suchen. 
+  - Verwenden des [Tools für die Inhaltssuche](content-search.md) zum Durchsuchen von Postfachinhalten. 
     
-  - Verwenden von [eDiscovery-Fällen](ediscovery-cases.md) zum Verwalten der rechtlichen Untersuchungen in Ihrer Organisation 
+  - Verwenden von [eDiscovery-Fällen](ediscovery-cases.md) zur Verwaltung juristischer Prüfungen in Ihrer Organisation. 
     
-  - Verwenden Sie [Aufbewahrungsrichtlinien](retention-policies.md) im Security & Compliance Center, um zu steuern, wie lange Postfachinhalte aufbewahrt werden sollen, und löschen Sie anschließend Inhalte nach Ablauf des Aufbewahrungszeitraums. 
+  - Verwenden von [Aufbewahrungsrichtlinien](retention-policies.md) im Security & Compliance Center, um zu steuern, wie lange Postfachinhalte aufbewahrt werden, und Löschen von Inhalten, nachdem der Aufbewahrungszeitraum abgelaufen ist. 
 
-  - Verwenden Sie [Aufsichtsrichtlinien](supervision-policies.md) , um Nachrichten zu überprüfen, um sicherzustellen, dass Sie den Nachrichtenstandards entsprechen, und fügen Sie einen Klassifikations Typen hinzu.
+  - Verwenden von [Aufsichtsrichtlinien](supervision-policies.md) zur Überprüfung von Nachrichten, um sicherzustellen, dass sie den Nachrichtenstandards entsprechen, und einen Klassifizierungstyp hinzuzufügen.
     
-- Das Importieren von Daten in Office 365 schützt vor Datenverlust. E-Mail-Daten, die in Office 365 importiert werden, erben die Hochverfügbarkeitsfeatures von Exchange Online.
+- Das Importieren von Daten in Office 365 schützt vor Datenverlust. E-Mail-Daten, die in Office 365 importiert werden, erben die Features für hohe Verfügbarkeit von Exchange Online.
     
-- E-Mail-Daten in Office 365 sind für Benutzer von allen Geräten verfügbar, da Sie in der Cloud gespeichert sind.
+- E-Mail-Daten in Office 365 stehen den Benutzern von allen Geräten aus zur Verfügung, da sie in der Cloud gespeichert sind.
     
-## <a name="importing-sharepoint-data-to-office-365"></a>Importieren von SharePoint-Daten nach Office 365
+## <a name="importing-sharepoint-data-to-office-365"></a>Importieren von SharePoint-Daten in Office 365
 
-Sie können auch Dateien und Dokumente in SharePoint-Websites und OneDrive-Konten in Ihrer Office 365 Organisation importieren. Weitere Informationen finden Sie in den folgenden Artikeln:
+Sie können Dateien und Dokumente auch in SharePoint-Websites und OneDrive-Konten in Ihrer Office 365-Organisation importieren. Weitere Informationen finden Sie in den folgenden Artikeln:
 
-- [Migration zu SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
+- [Migrieren zu SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 
 - [Einführung in das SharePoint-Migrationstool](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
 
 - [Migrieren zu SharePoint Online mithilfe von PowerShell](https://docs.microsoft.com/sharepointmigration/overview-spmt-ps-cmdlets)
 
-- [Migrieren der Dateifreigabe Inhalte zu SharePoint Online mithilfe des Azure-Datenfelds](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
+- [Migrieren von Dateifreigabe-Inhalten zu SharePoint Online mithilfe von Azure Data Box](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
 
 ## <a name="frequently-asked-questions-about-importing-pst-files-to-office-365"></a>Häufig gestellte Fragen zum Importieren von PST-Dateien in Office 365
   
-Hier finden Sie einige häufig gestellte Fragen zur Verwendung des Office 365 Import Diensts zum Massenimport von PST-Dateien in Office 365 Postfächer. 
+Hier folgen einige häufig gestellte Fragen zum Massenimportvorgang von PST-Dateien in Office 365-Postfächer mithilfe des Office 365-Importdienstes. 
   
-- [Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien](#using-network-upload-to-import-pst-files)
+- [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](#using-network-upload-to-import-pst-files)
   
-- [Verwenden des Laufwerk Versands zum Importieren von PST-Dateien](#using-drive-shipping-to-import-pst-files)
+- [Verwenden des Laufwerkversands zum Importieren von PST-Dateien](#using-drive-shipping-to-import-pst-files)
   
-### <a name="using-network-upload-to-import-pst-files"></a>Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien
+### <a name="using-network-upload-to-import-pst-files"></a>Verwenden des Netzwerkuploads zum Importieren von PST-Dateien
 
- **Welche Berechtigungen sind erforderlich, um Importaufträge im Office 365 Import Dienst zu erstellen?**
+ **Welche Berechtigungen sind für das Erstellen von Importaufträgen im Office 365-Importdienst erforderlich?**
   
-Sie müssen in Exchange Online über die Rolle "Postfachimport export" verfügen, um PST-Dateien in Office 365 Postfächer zu importieren. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder unter "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+Ihnen muss die Rolle für den Postfachimport/-export in Exchange Online zugewiesen werden, damit Sie PST-Dateien in Office 365-Postfächer importieren können. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle „Postfachimport/-export“ zur Rollengruppe „Organisationsverwaltung“ hinzufügen. Alternativ können Sie eine neue Rollengruppe erstellen, dieser die Rolle für den Postfachimport/-export zuweisen und sich selbst oder andere Benutzer dann als Mitglied hinzufügen. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppe in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
   
-Um außerdem Importaufträge im Security & Compliance Center zu erstellen, muss eine der folgenden Anforderungen erfüllt sein:
+Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importaufträge im Security & Compliance Center erstellen zu können:
   
-- Sie müssen in Exchange Online die Rolle "e-Mail-Empfänger" zugewiesen haben. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
+- Ihnen muss in Exchange Online die Rolle „E-Mail-Empfänger“ zugewiesen sein. Standardmäßig wird diese Rolle den Rollengruppen "Organisationsverwaltung" und "Empfängerverwaltung" zugewiesen.
     
     Oder
     
-- Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation sein.
+- Sie müssen ein globaler Administrator innerhalb Ihrer Office 365-Organisation sein.
     
 > [!TIP]
-> Sie sollten in Exchange Online eine neue Rollengruppe erstellen, die speziell für den Import von PST-Dateien in Office 365 vorgesehen ist. Weisen Sie die Rollen "Postfachimport" und "e-Mail-Empfänger" für die für den Import von PST-Dateien erforderliche Mindeststufe von Berechtigungen der neuen Rollengruppe zu, und fügen Sie dann Mitglieder hinzu. 
+> Erwägen Sie, in Exchange Online eine neue Rollengruppe speziell zum Importieren von PST-Dateien nach Office 365 zu erstellen. Legen Sie für die neue Rollengruppe als mindestens erforderliche Berechtigungen zum Importieren von PST-Dateien die Rollen "Postfachimport/-export" und "E-Mail-Empfänger" fest, und fügen Sie anschließend Mitglieder hinzu. 
   
- **Wo ist Netzwerk Upload verfügbar?**
+ **Wo ist der Netzwerkupload verfügbar?**
   
-Network upload is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Network upload will be available in more regions soon.
+Der Netzwerkupload ist derzeit in den USA, Kanada, Brasilien, Großbritannien, Europa, Indien, Ostasien, Südostasien, Japan, der Republik Korea und Australien verfügbar. Der Netzwerkupload wird in Kürze in weiteren Regionen zur Verfügung gestellt.
   
- **What is the pricing for importing PST files by using network upload?**
+ **Welche Preise ergeben sich für den Import von PST-Dateien über den Netzwerkupload?**
   
 Using network upload to import PST files is free.
   
-Dies bedeutet auch, dass nach dem Löschen von PST-Dateien aus dem Azure-Speicherbereich diese nicht mehr in der Liste der Dateien für einen abgeschlossenen Importauftrag im Microsoft 365 Admin Center angezeigt werden. Obwohl ein Importauftrag möglicherweise weiterhin auf der Seite **Daten in Office 365 importieren** aufgeführt wird, ist die Liste der PST-Dateien möglicherweise leer, wenn Sie die Details älterer Importaufträge anzeigen. 
+Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im Microsoft 365 Admin Center nicht mehr in der Dateiliste für einen abgeschlossenen Importauftrag angezeigt werden. Es kann zwar vorkommen, dass ältere Importaufträge noch auf der Seite **Importieren von Daten in Office 365** aufgelistet sind, die Liste der PST-Dateien könnte jedoch leer sein, wenn Sie die Details anzeigen. 
   
- **What version of the PST file format is supported for importing to Office 365?**
+ **Welche Version des PST-Dateiformats wird für den Import in Office 365 unterstützt?**
   
-There are two versions of the PST file format: ANSI and Unicode. We recommend importing files that use the Unicode PST file format. Dateien, die das ANSI-PST-Dateiformat verwenden, wie die für Sprachen, die einen Doppelbyte-Zeichensatz (DBCS) verwenden, können auch in Office 365 importiert werden. Weitere Informationen zum Importieren von ANSI-PST-Dateien finden Sie unter Schritt 4 in [Verwenden des Netzwerk Uploads zum Importieren von PST-Dateien in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=823074).
+Es gibt zwei Versionen des PST-Dateiformats: ANSI und Unicode. Wir empfehlen den Import von PST-Dateien im Unicode-Format. Allerdings können auch PST-Dateien im ANSI-Format (z. B. bei Sprachen mit Doppelbyte-Zeichensatz) in Office 365 importiert werden. Weitere Informationen zum Importieren von PST-Dateien im ANSI-Format finden Sie in Schritt 4 unter [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=823074).
   
-Additionally, PST files from Outlook 2007 and later versions can be imported to Office 365.
+Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Office 365 importiert werden.
   
- **Wie lange werden Sie in Azure aufbewahrt, bevor Sie gelöscht werden, nachdem ich meine PST-Dateien in den Azure-Speicherbereich hochgeladen habe?**
+ **Wie lange verbleiben meine PST-Dateien, nachdem ich sie in den Azure-Speicherbereich hochgeladen habe, in Azure, bevor sie gelöscht werden?**
   
-Wenn Sie die Netzwerk-Upload-Methode zum Importieren von PST-Dateien verwenden, laden Sie Sie in einen Azure-BLOB-Container mit dem Namen **ingestiondata**. Wenn auf der Seite " **importieren** " im Security & Compliance Center keine Importaufträge ausgeführt werden), werden alle PST-Dateien im **ingestiondata** -Container in Azure 30 Tage nach dem Erstellen des letzten importauftrags im Sicherheits & gelöscht. Compliance Center. Das bedeutet auch, dass Sie innerhalb von 30 Tagen nach dem Hochladen von PST-Dateien in Azure einen neuen Importauftrag im Security & Compliance Center (in Schritt 5 in den Anweisungen zum Hochladen von Netzwerken beschrieben) erstellen müssen. 
+Wenn Sie PST-Dateien mit der Netzwerkupload-Methode importieren, werden die Dateien in einen Azure-BLOB-Container namens **ingestiondata** hochgeladen. Wenn auf der Seite **Importieren** im Security & Compliance Center keine Importaufträge in Bearbeitung sind, werden alle PST-Dateien im Container **ingestiondata** in Azure 30 Tage nach Erstellung des letzten Importauftrags im Security & Compliance Center gelöscht. Daraus folgt, dass Sie innerhalb von 30 Tagen nach dem Hochladen von PST-Dateien nach Azure einen neuen Importauftrag im Security & Compliance Center erstellen müssen (wie in Schritt 5 in den Netzwerkupload-Anweisungen beschrieben). 
   
-Dies bedeutet auch, dass nach dem Löschen von PST-Dateien aus dem Azure-Speicherbereich diese nicht mehr in der Liste der Dateien für einen abgeschlossenen Importauftrag im Security & Compliance Center angezeigt werden. Obwohl ein Importauftrag möglicherweise weiterhin auf der Seite " **importieren** " im Security & Compliance Center aufgeführt wird, ist die Liste der PST-Dateien möglicherweise leer, wenn Sie die Details zu älteren Import Aufträgen anzeigen. 
+Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im Security & Compliance Center nicht mehr in der Dateiliste für einen abgeschlossenen Importauftrag angezeigt werden. Es kann zwar sein, dass auf der Seite **Importieren** im Security & Compliance Center ältere Importaufträge noch aufgeführt sind, die Liste der PST-Dateien könnte jedoch leer sein, wenn Sie die Details anzeigen. 
   
- **Wie lange dauert es, bis eine PST-Datei in ein Postfach importiert wird?**
+ **Wie lange dauert das Importieren einer PST-Datei in ein Postfach?**
   
-It depends on the capacity of your network, but it typically takes several hours for each terabyte (TB) of data to be uploaded to the Azure storage area for your organization. Nachdem die PST-Dateien in den Azure-Speicherbereich kopiert wurden, wird eine PST-Datei mit einer Rate von mindestens 24 GB pro Tag in ein Office 365 Postfach importiert. Wenn diese Rate nicht Ihren Anforderungen entspricht, können Sie andere Methoden für die Migration von e-Mail-Daten zu Office 365 in Frage stellen. Weitere Informationen finden Sie unter [Methoden zum Migrieren von mehreren E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Das hängt von der Kapazität des Netzwerks ab, aber normalerweise dauert es mehrere Stunden für jedes Terabyte (TB) an Daten, bis es in den Azure-Speicherbereich für Ihr Unternehmen hochgeladen wurde. Nachdem die PST-Dateien in den Azure-Speicherbereich kopiert wurden, wird eine PST-Datei mit einer Übertragungsrate von mindestens 24 GB pro Tag in ein Office 365-Postfach importiert. Wenn diese Rate nicht Ihren Anforderungen entspricht, sollten Sie ggf. andere Methoden zum Migrieren von E-Mail-Daten zu Office 365 in Betracht ziehen. Weitere Informationen finden Sie unter [Methoden zum Migrieren von mehreren E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
   
-If different PST files are imported to different target mailboxes, the import process occurs in parallel; in other words, each PST/mailbox pair is imported simultaneously. Wenn mehrere PST-Dateien in dasselbe Postfach importiert werden, werden Sie ebenfalls gleichzeitig importiert.
+Wenn verschiedene PST-Dateien in unterschiedliche Zielpostfächer importiert werden, erfolgt der Importvorgang parallel, d. h. jedes PST-Postfach-Paar wird gleichzeitig importiert. Wenn mehrere PST-Dateien in dasselbe Postfach importiert werden, werden sie ebenfalls gleichzeitig importiert.
   
- **Is there a message size limit when importing PST files?**
+ **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
-Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element während des Importvorgangs übersprungen.
+Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
   
- **Werden Nachrichteneigenschaften, beispielsweise beim Senden oder empfangen der Nachricht, der Liste der Empfänger und anderer Eigenschaften, beibehalten, wenn PST-Dateien in ein Office 365 Postfach importiert werden?**
+ **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Office 365-Postfach importiert werden?**
   
-Ja. Die ursprünglichen Nachrichten Metadaten werden während des Importvorgangs nicht geändert.
+Ja. Beim Importvorgang werden die Metadaten der ursprünglichen Nachricht nicht geändert.
   
- **Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?**
+ **Gibt es eine Beschränkung der Anzahl der Ebenen in einer Ordnerhierarchie für eine PST-Datei, die ich in ein Postfach importieren möchten?**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+Ja. Sie können keine PST-Dateien mit 300 oder mehr Ebenen von geschachtelten Ordnern importieren.
   
- **Can I use network upload to import PST files to an inactive mailbox in Office 365?**
+ **Kann ich PST-Dateien über den Netzwerkupload in ein inaktives Postfach in Office 365 importieren?**
   
-Yes, this capability is now available. 
+Ja, diese Funktion ist jetzt verfügbar.
   
- **Can I use network upload to import PST files to an online archive mailbox in an Exchange hybrid deployment?**
+ **Kann ich PST-Dateien über den Netzwerkupload in ein Onlinearchivpostfach in einer Exchange-Hybridbereitstellung importieren?**
   
-Yes, this capability is now available. 
+Ja, diese Funktion ist jetzt verfügbar. 
   
- **Kann ich den Netzwerk Upload zum Importieren von PST-Dateien in öffentliche Ordner in Exchange Online verwenden?**
+ **Kann ich den Netzwerkupload zum Importieren von PST-Dateien in öffentliche Ordner in Exchange Online verwenden?**
   
 Nein, Sie können keine PST-Dateien in öffentliche Ordner importieren.
   
-### <a name="using-drive-shipping-to-import-pst-files"></a>Verwenden des Laufwerk Versands zum Importieren von PST-Dateien
+### <a name="using-drive-shipping-to-import-pst-files"></a>Verwenden des Laufwerkversands zum Importieren von PST-Dateien
 
- **Welche Berechtigungen sind erforderlich, um Importaufträge im Office 365 Import Dienst zu erstellen?**
+ **Welche Berechtigungen sind für das Erstellen von Importaufträgen im Office 365-Importdienst erforderlich?**
   
-Sie müssen die Rolle "Postfachimport export" besitzen, um PST-Dateien in Office 365 Postfächer zu importieren. Diese Rolle ist in Exchange Online standardmäßig keiner Rollengruppe zugewiesen. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder unter "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppen in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+Zum Importieren von PST-Dateien in Office 365-Postfächer muss Ihnen die Rolle „Postfachimport/-export“ zugewiesen sein. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle „Postfachimport/-export“ zur Rollengruppe „Organisationsverwaltung“ hinzufügen. Alternativ können Sie eine neue Rollengruppe erstellen, dieser die Rolle für den Postfachimport/-export zuweisen und sich selbst oder andere Benutzer dann als Mitglied hinzufügen. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppe in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=730688).
   
-Um außerdem Importaufträge im Security & Compliance Center zu erstellen, muss eine der folgenden Anforderungen erfüllt sein:
+Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importaufträge im Security & Compliance Center erstellen zu können:
   
-- Sie müssen in Exchange Online die Rolle "e-Mail-Empfänger" zugewiesen haben. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
+- Ihnen muss in Exchange Online die Rolle „E-Mail-Empfänger“ zugewiesen sein. Standardmäßig wird diese Rolle den Rollengruppen "Organisationsverwaltung" und "Empfängerverwaltung" zugewiesen.
     
     Oder
     
-- Sie müssen ein globaler Administrator in Ihrer Office 365 Organisation sein.
+- Sie müssen ein globaler Administrator innerhalb Ihrer Office 365-Organisation sein.
     
 > [!TIP]
-> Sie sollten in Exchange Online eine neue Rollengruppe erstellen, die speziell für den Import von PST-Dateien in Office 365 vorgesehen ist. Weisen Sie die Rollen "Postfachimport" und "e-Mail-Empfänger" für die für den Import von PST-Dateien erforderliche Mindeststufe von Berechtigungen der neuen Rollengruppe zu, und fügen Sie dann Mitglieder hinzu. 
+> Erwägen Sie, in Exchange Online eine neue Rollengruppe speziell zum Importieren von PST-Dateien nach Office 365 zu erstellen. Legen Sie für die neue Rollengruppe als mindestens erforderliche Berechtigungen zum Importieren von PST-Dateien die Rollen "Postfachimport/-export" und "E-Mail-Empfänger" fest, und fügen Sie anschließend Mitglieder hinzu. 
   
- **Wo ist der Laufwerk Versand verfügbar?**
+ **Wo ist der Laufwerkversand verfügbar?**
   
-Der Laufwerk Versand ist derzeit in den Vereinigten Staaten, Kanada, Brasilien, Großbritannien, Europa, Indien, Ostasien, Südostasien, Japan, Südkorea und Australien verfügbar. Drive shipping will be available in more regions soon.
+Der Laufwerkversand ist derzeit in den USA, Kanada, Brasilien, Vereinigtem Königreich, Europa, Indien, Ostasien, Südostasien, Japan, Republik Korea und Australien verfügbar. Der Laufwerkversand wird in Kürze in weiteren Regionen zur Verfügung gestellt.
   
- **What commercial licensing agreements support drive shipping?**
+ **Welche kommerziellen Lizenzvereinbarungen unterstützen den Laufwerksversand?**
   
-Laufwerk Versand zum Importieren von PST-Dateien in Office 365 steht über einen Microsoft Enterprise-Vertrag (EA) zur Verfügung. Der Laufwerk Versand ist über einen Microsoft-Produkt-und Dienstleistungsvertrag (MPSA) nicht verfügbar.
+Der Laufwerkversand zum Importieren von PST-Dateien in Office 365 steht über ein Microsoft Enterprise Agreement (EA) zur Verfügung. Der Laufwerkversand steht nicht im Rahmen von Microsoft Products und Services Agreement (MPSA) zur Verfügung.
   
- **Wie hoch sind die Preise für die Verwendung des Laufwerk Versands zum Importieren von PST-Dateien in Office 365?**
+ **Was kostet die Verwendung des Laufwerkversands zum Importieren von PST-Dateien in Office 365?**
   
-The cost to use drive shipping to import PST files to Office 365 mailboxes is $2 USD per GB of data. For example, if you ship a hard drive that contains 1,000 GB (1 TB) of PST files, the cost is $2,000 USD. You can work with a partner to pay the import fee. Informationen zum Suchen eines Partners finden Sie unter [Suchen nach Ihrem Office 365 Partner oder Wiederverkäufer](https://go.microsoft.com/fwlink/p/?LinkId=785197).
+Die Kosten für den Laufwerksversand zum Importieren von PST-Dateien in Office 365-Postfächer betragen ca. 2 Euro pro GB an Daten. Wenn Sie z. B. eine Festplatte versenden, die 1.000 GB (1 TB) an PST-Dateien enthält, betragen die Kosten beispielsweise 2.000 Euro. Um die Importgebühren zu zahlen, können Sie mit einem Partner zusammenarbeiten. Informationen zum Suchen von Partnern finden Sie unter [Suchen nach Ihrem Office 365-Partner oder -Händler](https://go.microsoft.com/fwlink/p/?LinkId=785197).
   
- **What kind of hard drives are supported for drive shipping?**
+ **Welche Festplattentypen werden für den Laufwerkversand unterstützt?**
   
-Für die Verwendung mit dem Office 365-Import Dienst werden nur 2,5 Zoll-Solid-State-Laufwerke (SSDs) oder 2,5 oder 3,5 Zoll-SATA II/III-Festplattenlaufwerke unterstützt. You can use hard drives up to 10 TB. Bei Import Aufträgen wird nur das erste Datenvolume auf der Festplatte verarbeitet. The data volume must be formatted with NTFS. Wenn Sie Daten auf eine Festplatte kopieren, können Sie Sie direkt über einen 2,5-Zoll-SSD oder 2,5 oder 3,5 Zoll-SATA II/III-Stecker Anhängen oder extern mit einem externen 2,5 inch SSD oder 2,5 oder 3,5 Inch SATA II/III USB-Adapter anhängen.
+Nur 2,5-Zoll-Festkörperlaufwerke (SSDs) oder interne 2,5-/3,5-Zoll-Festplatten (SATA II/III) werden für die Verwendung mit dem Office 365-Importdienst unterstützt. Sie können Festplatten bis zu 10 TB verwenden. Bei Importaufträgen wird nur das erste Datenvolume auf der Festplatte verarbeitet. Das Datenvolume muss mit NTFS formatiert sein. Beim Kopieren von Daten auf ein Festplattenlaufwerk kann der Anschluss direkt mithilfe eines 2,5-Zoll-SSD- oder eines 2,5- oder 3,5-Zoll-SATA II/III-Verbinders oder extern über einen externen 2,5-Zoll-SSD- oder einen 2,5- oder 3,5-Zoll-SATA II/III-USB-Adapter erfolgen.
   
 > [!IMPORTANT]
-> Externe Festplatten, die mit einem integrierten USB-Adapter ausgeliefert werden, werden vom Office 365-Import Dienst nicht unterstützt. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives. 
+> Externe Festplatten mit einem integrierten USB-Adapter werden vom Office 365-Importdienst nicht unterstützt. Darüber hinaus kann der Datenträger innerhalb des Gehäuses einer externen Festplatte nicht verwendet werden. Versenden Sie keine externen Festplatten. 
   
- **How many hard drives can I ship for a single import job?**
+ **Wie viele Festplatten kann ich für einen einzelnen Importauftrag versenden?**
   
-You can ship a maximum of 10 hard drives for a single import job.
+Sie können maximal 10 Festplatten für einen einzelnen Importauftrag versenden.
   
- **After I ship my hard drive, how long does it take to get to the Microsoft data center?**
+ **Wie lange dauert es nach dem Versand meiner Festplatten, bis sie im Microsoft-Rechenzentrum ankommen?**
   
-That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
+Dies hängt von ein paar Dingen ab, z. B. von der Entfernung zum Microsoft-Rechenzentrum und der Art der Zustellung, die Sie zum Versenden Ihrer Festplatte verwendet haben (z. B. Lieferung am nächsten Tag, Lieferung in zwei Tagen oder Zustellung auf dem Landweg). Bei den meisten Zustelldiensten können Sie Sendungsverfolgungsnummern verwenden, um den Status der Lieferung nachzuverfolgen.
   
- **Wie lange dauert es, bis meine PST-Dateien in Azure hochgeladen werden, nachdem meine Festplatte im Microsoft-Rechenzentrum ankommt?**
+ **Wie lange dauert das Hochladen meiner PST-Dateien nach Azure, nachdem meine Festplatte im Microsoft Data Center eingetroffen ist?**
   
-Nachdem Ihre Festplatte im Microsoft-Rechenzentrum empfangen wurde, dauert es zwischen 7 und 10 Werktage, bis Sie die PST-Dateien in den Microsoft Azure Speicherbereich Ihrer Organisation hochgeladen haben. Die PST-Dateien werden in einen Azure-BLOB-Container `ingestiondata`mit dem Namen hochgeladen. 
+Nachdem Ihre Festplatte im Microsoft-Rechenzentrum eingetroffen ist, werden die PST-Dateien innerhalb von 7 bis 10 Werktagen in den Microsoft Azure-Speicherbereich für Ihre Organisation hochgeladen. Die PST-Dateien werden in einen Azure-BLOB-Container mit dem Namen `ingestiondata` hochgeladen. 
   
- **Wie lange dauert es, bis eine PST-Datei in ein Postfach importiert wird?**
+ **Wie lange dauert das Importieren einer PST-Datei in ein Postfach?**
   
-Nachdem die PST-Dateien in den Azure-Speicherbereich hochgeladen wurden, analysiert Office 365 die Daten in den PST-Dateien (auf sichere und sichere Weise), um das Alter der Elemente und die unterschiedlichen Nachrichtentypen zu identifizieren, die in den PST-Dateien enthalten sind. Wenn diese Analyse abgeschlossen ist, haben Sie die Möglichkeit, alle Daten in den PST-Dateien zu importieren oder Filter festzulegen, mit denen gesteuert wird, welche Daten importiert werden. Nachdem Sie den Importauftrag gestartet haben, wird eine PST-Datei mit einer Rate von mindestens 24 GB pro Tag in ein Office 365 Postfach importiert. Wenn diese Rate nicht Ihren Anforderungen entspricht, können Sie andere Methoden zum Importieren von e-Mail-Daten in Office 365 in Frage stellen. Weitere Informationen finden Sie unter [Methoden zum Migrieren von mehreren E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+Nachdem die PST-Dateien in den Azure-Speicherbereich hochgeladen wurden, werden die Daten in den PST-Dateien (auf gefahrlose und sichere Weise) von Office 365 analysiert, um das Alter der Elemente und die unterschiedlichen Nachrichtentypen zu bestimmen, die in den PST-Dateien enthalten sind. Nach Abschluss der Analyse können Sie alle in den PST-Dateien enthaltenen Daten importieren oder Filter festlegen, die steuern, welche Daten importiert werden sollen. Nachdem Sie den Importvorgang gestartet haben, wird eine PST-Datei mit einer Übertragungsrate von mindestens 24 GB pro Tag in ein Office 365-Postfach importiert. Wenn diese Rate nicht Ihren Anforderungen entspricht, sollten Sie ggf. andere Methoden zum Importieren von E-Mail-Daten in Office 365 in Betracht ziehen. Weitere Informationen finden Sie unter [Methoden zum Migrieren von mehreren E-Mail-Konten zu Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
   
-If different PST files are imported to different target mailboxes, the import process occurs in parallel; in other words, each PST/mailbox pair is imported simultaneously. Wenn mehrere PST-Dateien in dasselbe Postfach importiert werden, werden Sie ebenfalls gleichzeitig importiert.
+Wenn verschiedene PST-Dateien in unterschiedliche Zielpostfächer importiert werden, erfolgt der Importvorgang parallel, d. h. jedes PST-Postfach-Paar wird gleichzeitig importiert. Wenn mehrere PST-Dateien in dasselbe Postfach importiert werden, werden sie ebenfalls gleichzeitig importiert.
   
- **Nachdem Microsoft meine PST-Dateien in Azure hoch lädt, wie lange werden Sie in Azure aufbewahrt, bevor Sie gelöscht werden?**
+ **Wie lange verbleiben meine PST-Dateien, nachdem Microsoft sie in Azure hochgeladen hat, in Azure, bevor sie gelöscht werden?**
   
-Alle PST-Dateien am Azure-Speicherort für Ihre Organisation (im BLOB-Container `ingestiondata`mit dem Namen) werden 30 Tage nach dem Erstellen des letzten importauftrags auf der Seite " **importieren** " im Security & Compliance Center gelöscht. 
+Alle PST-Dateien am Azure-Speicherort für Ihre Organisation (im BLOB-Container mit dem Namen `ingestiondata`) werden 30 Tage nach Erstellung des letzten Importauftrags auf der Seite **Importieren** im Security & Compliance Center gelöscht. 
   
-Dies bedeutet auch, dass nach dem Löschen von PST-Dateien aus dem Azure-Speicherbereich diese nicht mehr in der Liste der Dateien für einen abgeschlossenen Importauftrag im Security & Compliance Center angezeigt werden. Obwohl ein Importauftrag möglicherweise weiterhin auf der Seite " **importieren** " im Security & Compliance Center aufgeführt wird, ist die Liste der PST-Dateien möglicherweise leer, wenn Sie die Details zu älteren Import Aufträgen anzeigen. 
+Dies bedeutet auch, dass aus dem Azure-Speicherbereich gelöschte PST-Dateien im Security & Compliance Center nicht mehr in der Dateiliste für einen abgeschlossenen Importauftrag angezeigt werden. Es kann zwar sein, dass auf der Seite **Importieren** im Security & Compliance Center ältere Importaufträge noch aufgeführt sind, die Liste der PST-Dateien könnte jedoch leer sein, wenn Sie die Details anzeigen. 
   
- **What version of the PST file format is supported for importing to Office 365?**
+ **Welche Version des PST-Dateiformats wird für den Import in Office 365 unterstützt?**
   
-There are two versions of the PST file format: ANSI and Unicode. We recommend importing files that use the Unicode PST file format. Dateien, die das ANSI-PST-Dateiformat verwenden, wie die für Sprachen, die einen Doppelbyte-Zeichensatz (DBCS) verwenden, können auch in Office 365 importiert werden. Weitere Informationen zum Importieren von ANSI-PST-Dateien finden Sie unter Schritt 3: [Verwenden des Laufwerk Versands zum Importieren Ihrer Organisations-PST-Dateien in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
+Es gibt zwei Versionen des PST-Dateiformats: ANSI und Unicode. Wir empfehlen den Import von PST-Dateien im Unicode-Format. Allerdings können auch PST-Dateien im ANSI-Format (z. B. bei Sprachen mit Doppelbyte-Zeichensatz) in Office 365 importiert werden. Weitere Informationen zum Importieren von PST-Dateien im ANSI-Format finden Sie in Schritt 3 unter [Verwenden des Laufwerkversands zum Importieren von PST-Dateien Ihrer Organisation in Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file).
   
-Additionally, PST files from Outlook 2007 and later versions can be imported to Office 365.
+Darüber hinaus können PST-Dateien aus Outlook 2007 und neueren Versionen in Office 365 importiert werden.
   
- **Is there a message size limit when importing PST files?**
+ **Gibt es eine Beschränkung der Nachrichtengröße beim Importieren von PST-Dateien?**
   
-Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element während des Importvorgangs übersprungen.
+Ja. Wenn eine PST-Datei ein Postfachelement enthält, das größer als 150 MB ist, wird das Element beim Importvorgang übersprungen.
   
- **Werden Nachrichteneigenschaften, beispielsweise beim Senden oder empfangen der Nachricht, der Liste der Empfänger und anderer Eigenschaften, beibehalten, wenn PST-Dateien in ein Office 365 Postfach importiert werden?**
+ **Bleiben die Eigenschaften der Nachrichten (z. B. Sende- oder Empfangsdatum, Empfängerliste und andere Eigenschaften) erhalten, wenn PST-Dateien in ein Office 365-Postfach importiert werden?**
   
-Ja. Die ursprünglichen Nachrichten Metadaten werden während des Importvorgangs nicht geändert.
+Ja. Beim Importvorgang werden die Metadaten der ursprünglichen Nachricht nicht geändert.
   
- **Is there a limit to the number of levels in a folder hierarchy for a PST file that I want to import to a mailbox?**
+ **Gibt es eine Beschränkung der Anzahl der Ebenen in einer Ordnerhierarchie für eine PST-Datei, die ich in ein Postfach importieren möchten?**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+Ja. Sie können keine PST-Dateien mit 300 oder mehr Ebenen von geschachtelten Ordnern importieren.
   
- **Can I use drive shipping to import PST files to an inactive mailbox in Office 365?**
+ **Kann ich PST-Dateien über den Laufwerksversand in ein inaktives Postfach in Office 365 importieren?**
   
-Yes, this capability is now available.
+Ja, diese Funktion ist jetzt verfügbar.
   
- **Can I use drive shipping to import PST files to an online archive mailbox in an Exchange hybrid deployment?**
+ **Kann ich PST-Dateien über den Laufwerksversand in ein Onlinearchivpostfach in einer Exchange-Hybridbereitstellung importieren?**
   
-Yes, this capability is now available. 
+Ja, diese Funktion ist jetzt verfügbar. 
   
- **Kann ich den Laufwerk Versand zum Importieren von PST-Dateien in öffentliche Ordner in Exchange Online verwenden?**
+ **Kann ich den Laufwerkversand zum Importieren von PST-Dateien in öffentliche Ordner in Exchange Online verwenden?**
   
 Nein, Sie können keine PST-Dateien in öffentliche Ordner importieren.
   
- **Can Microsoft wipe my hard drive before they ship it back to me?**
+ **Kann Microsoft meine Festplatte zurücksetzen, bevor sie wieder an mich zurückgesendet wird?**
   
-No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+Nein, Microsoft kann Festplatten vor der Rücksendung an den Kunden nicht zurücksetzen. Festplatten werden in demselben Zustand zurückgesendet, in dem sie bei Microsoft eingegangen sind.
   
- **Kann Microsoft meine Festplatte Schreddern, anstatt Sie zurückzuliefern?**
+ **Kann Microsoft meine Festplatte vernichten, anstatt sie zurückzusenden?**
   
-No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+Nein, Microsoft kann Ihre Festplatte nicht vernichten. Festplatten werden in demselben Zustand zurückgesendet, in dem sie bei Microsoft eingegangen sind.
   
- **Welche Kurierdienste werden für den Rückversand unterstützt?**
+ **Welche Kurierdienste werden für die Rücksendung unterstützt?**
   
-If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
+Wenn Sie Kunde in den Vereinigten Staaten oder in Europa sind, verwendet Microsoft FedEx für die Rücksendung Ihrer Festplatte. Für alle Regionen verwendet Microsoft DHL.
   
- **Welche Versandkosten werden zurückgegeben?**
+ **Wie hoch sind die Kosten für die Rücksendung?**
   
-Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
+Die Kosten für die Rücksendung variieren je nach Entfernung zum Microsoft-Rechenzentrum, an das Sie Ihre Festplatte gesendet haben. Microsoft belastet Ihr FedEx- oder DHL-Konto für die Rücksendung Ihrer Festplatte. Sie tragen die Kosten für die Rücksendung.
   
- **Kann ich einen benutzerdefinierten Kurierversand Dienst wie FedEx Custom Shipping verwenden, um meine Festplatte an Microsoft zu senden?**
+ **Kann ich einen benutzerdefinierten Kurierdienst verwenden, z. B. FedEx Custom Shipping, um meine Festplatte an Microsoft zu senden?**
   
 Ja.
   
- **If I have to ship my hard drive to another country, is there anything I need to do?**
+ **Was muss ich beachten, wenn ich meine Festplatte in ein anderes Land versenden muss?**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+Die an Microsoft versendete Festplatte muss möglicherweise internationale Grenzen überqueren. In diesem Falls sind Sie dafür verantwortlich, dass die Festplatte und die darin enthaltenen Daten in Übereinstimmung mit den geltenden Gesetzen importiert und/oder exportiert wurden. Stellen Sie vor dem Versenden einer Festplatten mit Ihren Beratern sicher, dass Ihre Festplatte und die Daten gesetzmäßig an das angegebene Microsoft-Rechenzentrum gesendet werden können. Dies hilft sicherzustellen, dass die Festplatte Microsoft zeitgerecht erreicht.
