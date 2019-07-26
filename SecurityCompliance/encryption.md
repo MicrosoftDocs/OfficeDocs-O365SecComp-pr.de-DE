@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Mit Office 365 werden Ihre Inhalte im Ruhezustand und in der Übertragung verschlüsselt, wobei die stärkste Verschlüsselung, die verfügbaren Protokolle und Technologien verwendet werden. Erhalten Sie eine Übersicht über die Verschlüsselung in Office 365.
-ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 66b428abd67d86ba257e4f4336c6b12ee1c3d97b
+ms.sourcegitcommit: a550519ca8f2a54712bf0a43be7f954e55675dac
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613643"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35902477"
 ---
 # <a name="encryption-in-office-365"></a>Verschlüsselung in Office 365
 
-Die Verschlüsselung ist ein wichtiger Bestandteil ihrer Strategien für Dateischutz und Informationsschutz. Lesen Sie diesen Artikel, um eine Übersicht über die Verschlüsselung zu erhalten, die für alle Versionen von Office 365 verwendet wird, und erhalten Sie Hilfe bei Verschlüsselungsaufgaben, von der Einrichtung der Verschlüsselung für Ihre Organisation bis zum Kennwortschutz für Office-Dokumente.
+Die Verschlüsselung ist ein wichtiger Bestandteil ihrer Dateischutz-und Informationsschutz Strategie. Lesen Sie diesen Artikel, um eine Übersicht über die Verschlüsselung zu erhalten, die für alle Versionen von Office 365 verwendet wird, und erhalten Sie Hilfe bei Verschlüsselungsaufgaben, von der Einrichtung der Verschlüsselung für Ihre Organisation bis zum Kennwortschutz für Office-Dokumente.
   
 - Wenn Sie nach Informationen zu Zertifikaten und Technologien wie TLS suchen, lesen Sie [technische Referenzdetails zur Verschlüsselung in Office 365](technical-reference-details-about-encryption.md).
 
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
   
 - [Was ist Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Aktivieren der Rechteverwaltung im Office 365 Admin Center](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Aktivieren der Rechteverwaltung im Admin Center](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -72,7 +72,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 |Einrichten der Verschlüsselung für meine Organisation  <br/> |[Einrichten der Verschlüsselung in Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Anzeigen von Details zu Zertifikaten, Technologien und TLS-Verschlüsselungs Paketen in Office 365  <br/> |[Technische Details zur Verschlüsselung in Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Arbeiten mit verschlüsselten Nachrichten auf einem mobilen Gerät  <br/> |[Anzeigen von verschlüsselten Nachrichten auf Ihrem Android-Gerät](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Verschlüsselte Nachrichten auf Ihrem iPhone oder iPad anzeigen](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Verschlüsseln eines Dokuments mithilfe des Kennwortschutzes  <br/><br/>  Derzeit wird der Kennwortschutz in Office Online nicht unterstützt. Verwenden Sie Desktop Versionen von Word, Excel und PowerPoint für den Kennwortschutz.           |[Hinzufügen oder Entfernen von Schutz in Ihrem Dokument, in einer Arbeitsmappe oder in einer Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Wählen Sie einen Abschnitt **Schutz hinzufügen** aus, und sehen Sie dann verschlüsseln **mit Kennwort** )  <br/> |
+|Verschlüsseln eines Dokuments mithilfe des Kennwortschutzes  <br/><br/>  Derzeit wird der Kennwortschutz in Office in einem Browser nicht unterstützt. Verwenden Sie Desktop Versionen von Word, Excel und PowerPoint für den Kennwortschutz.           |[Hinzufügen oder Entfernen von Schutz in Ihrem Dokument, in einer Arbeitsmappe oder in einer Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Wählen Sie einen Abschnitt **Schutz hinzufügen** aus, und sehen Sie dann verschlüsseln **mit Kennwort** )  <br/> |
 |Entfernen der Verschlüsselung aus einem Dokument  <br/> |[Hinzufügen oder Entfernen von Schutz in Ihrem Dokument, in einer Arbeitsmappe oder in einer Präsentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Wählen Sie einen Abschnitt zum **Entfernen des Schutzes** aus, und entfernen Sie dann die **Kennwortverschlüsselung** )  <br/> |
 
 ## <a name="related-topics"></a>Verwandte Themen
