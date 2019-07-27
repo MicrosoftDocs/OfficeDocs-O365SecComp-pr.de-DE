@@ -14,62 +14,77 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. '
-ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
+ms.openlocfilehash: 8996d404e2dbeaba01952c33a8699ca2f151ad5d
+ms.sourcegitcommit: a8049055a48375bee7e6ed81fafcb27a7b2fcdff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435239"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35911775"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 
-Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen und wird in Office 365 Organisationen häufig verwendet. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. 
+Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen und wird in Office 365 Organisationen häufig verwendet. Administratoren können die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um zu bestimmen, wie die Freigabe in Ihrer Organisation verwendet wird. 
   
 ## <a name="the-sharepoint-sharing-schema"></a>Das SharePoint-Freigabe Schema
 
-Freigabe Ereignisse (ohne Freigaberichtlinie und Freigabe Link Ereignisse) unterscheiden sich in erster Linie von Datei-und ordnerbezogenen Ereignissen: ein Benutzer führt eine Aktion aus, die sich auf einen anderen Benutzer auswirkt. Benutzer a gibt beispielsweise Benutzer B Zugriff auf eine Datei. In diesem Beispiel ist Benutzer A der *stellvertretende Benutzer* , und Benutzer B ist der *Zielbenutzer*. Im SharePoint-Datei Schema wirkt sich die Aktion des handelnden Benutzers nur auf die Datei selbst aus. Wenn Benutzer a eine Datei öffnet, sind die einzigen Informationen, die **** im fileaccessed-Ereignis erforderlich sind, der Benutzer, der fungiert. Um diesen Unterschied zu beheben, gibt es ein separates Schema, das als *SharePoint-Freigabe Schema*bezeichnet wird und in dem weitere Informationen zur Freigabe von Ereignissen erfasst werden. Dadurch wird sichergestellt, dass Administratoren mehr Einblick in die Person haben, die eine Ressource gemeinsam genutzt hat, und den Benutzer, für den die Ressource freigegeben wurde. 
+Freigabe Ereignisse (nicht einschließlich der Ereignisse im Zusammenhang mit Freigaberichtlinien und Freigabelinks) unterscheiden sich in erster Linie von Datei-und ordnerbezogenen Ereignissen: ein Benutzer führt eine Aktion aus, die sich auf einen anderen Benutzer auswirkt. Wenn beispielsweise ein Ressourcen Benutzer a dem Benutzer B Zugriff auf eine Datei gewährt. In diesem Beispiel ist Benutzer A der *stellvertretende Benutzer* , und Benutzer B ist der *Zielbenutzer*. Im SharePoint-Datei Schema wirkt sich die Aktion des handelnden Benutzers nur auf die Datei selbst aus. Wenn Benutzer a eine Datei öffnet, sind die einzigen Informationen, die **** im fileaccessed-Ereignis erforderlich sind, der Benutzer, der fungiert. Um diesen Unterschied zu beheben, gibt es ein separates Schema, das als *SharePoint-Freigabe Schema*bezeichnet wird und in dem weitere Informationen zur Freigabe von Ereignissen erfasst werden. Dadurch wird sichergestellt, dass Administratoren Einblick in die Person haben, die eine Ressource freigegeben hat, und den Benutzer, für den die Ressource freigegeben wurde. 
   
-Das Freigabe Schema stellt zwei zusätzliche Felder im Überwachungsprotokoll im Zusammenhang mit Freigabe Ereignissen bereit: 
+Das Freigabe Schema stellt zwei zusätzliche Felder in einem Überwachungseintrag im Zusammenhang mit Freigabe Ereignissen bereit: 
   
-- **TargetUserOrGroupName** – speichert den UPN oder den Namen des Zielbenutzers oder der Zielgruppe, für die eine Ressource freigegeben wurde (Benutzer B im vorherigen Beispiel). 
-    
-- **TargetUserOrGroupType** – gibt an, ob der Zielbenutzer oder die Zielgruppe ein Mitglied, Gast, eine Gruppe oder ein Partner ist. 
-    
+- **TargetUserOrGroupType:** Gibt an, ob der Zielbenutzer oder die Zielgruppe Mitglied, Gast, share pointgroup, SecurityGroup oder Partner ist.
+
+- **TargetUserOrGroupName:** Speichert den UPN oder Namen des Zielbenutzers oder der Zielgruppe, für die eine Ressource freigegeben wurde (Benutzer B im vorherigen Beispiel). 
+
 Diese beiden Felder können zusätzlich zu anderen Eigenschaften aus dem Office 365 Überwachungsprotokoll Schema wie "Benutzer", "Vorgang" und "Datum" die vollständige Übersicht darüber geben, *welcher* Benutzer *welche* Ressource mit *wem* und *wann*freigegeben hat. 
   
-Es gibt eine andere Schemaeigenschaft, die für den Freigabe Text wichtig ist. Die **EventData** -Eigenschaft speichert zusätzliche Informationen zu Freigabe Ereignissen. Wenn ein Benutzer beispielsweise eine Website für einen anderen Benutzer freigibt, wird dies erreicht, indem der Zielbenutzer einer SharePoint-Gruppe hinzugefügt wird. Die **EventData** -Eigenschaft erfasst diese zusätzlichen Informationen, um Administratoren Kontext bereitzustellen. 
+Es gibt eine andere Schemaeigenschaft, die für den Freigabe Text wichtig ist. Wenn Sie Überwachungsprotokoll-Suchergebnisse exportieren, werden in der **Auditdata** -Spalte in der exportierten CSV-Dateiinformationen zu Freigabe Ereignissen gespeichert. Wenn ein Benutzer beispielsweise eine Website für einen anderen Benutzer freigibt, wird dies erreicht, indem der Zielbenutzer einer SharePoint-Gruppe hinzugefügt wird. Die **Auditdata** -Spalte erfasst diese Informationen, um Administratoren Kontext bereitzustellen. In [Schritt 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) finden Sie Anweisungen zum Analysieren der Informationen in der Spalte **Auditdata** .
 
-## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>Das SharePoint-Freigabemodell und Freigabe Ereignisse
+## <a name="sharepoint-sharing-events"></a>SharePoint-Freigabe Ereignisse
 
-Die Freigabe wird durch drei separate Ereignisse definiert ****: "sharingset", " **SharingInvitationCreated**" und " **SharingInvitaitonAccepted**". Hier ist der Workflow für die Protokollierung von Freigabe Ereignissen im Office 365 Überwachungsprotokoll. 
+Die Freigabe wird definiert, wenn ein Benutzer (der *Stell* Ende Benutzer) eine Ressource für einen anderen Benutzer freigeben möchte (den *Ziel* Benutzer). Überwachungsdatensätze im Zusammenhang mit der Freigabe einer Ressource für einen externen Benutzer (ein Benutzer, der sich außerhalb Ihrer Organisation befindet und kein Gastkonto in der Azure-Active Directory Ihrer Organisation hat) werden durch die folgenden Ereignisse identifiziert, die im Office 365 protokolliert werden. Überwachungsprotokoll:
+
+- **SharingInvitationCreated:** Ein Benutzer in Ihrer Organisation hat versucht, eine Ressource (wahrscheinlich eine Website) mit einem externen Benutzer freizugeben. Dies führt dazu, dass eine externe Freigabeeinladung an den Zielbenutzer gesendet wird. Zu diesem Zeitpunkt wird kein Zugriff auf die Ressource gewährt.
+
+- **SharingInvitationAccepted:** Der externe Benutzer hat die von dem handelnden Benutzer gesendete Freigabeeinladung akzeptiert und hat nun Zugriff auf die Ressource.
+
+- **AnonymousLinkCreated:** Für eine Ressource wird ein anonymer Link (auch als "jeder"-Link bezeichnet) erstellt. Da ein anonymer Link erstellt und dann kopiert werden kann, ist es sinnvoll anzunehmen, dass jedes Dokument mit einem anonymen Link für einen Zielbenutzer freigegeben wurde.
+
+- **AnonymousLinkUsed:** Wie der Name schon sagt, wird dieses Ereignis protokolliert, wenn ein anonymer Link für den Zugriff auf eine Ressource verwendet wird. 
+
+- **SecureLinkCreated:** Ein Benutzer hat einen "bestimmten Personen Link" erstellt, um eine Ressource für eine bestimmte Person freizugeben. Dieser Zielbenutzer kann jemand sein, der sich außerhalb Ihrer Organisation befindet.
+
+- **AddedToSecureLink:** Ein Benutzer wurde einem bestimmten Personen Link hinzugefügt. Dieser Zielbenutzer kann jemand sein, der sich außerhalb Ihrer Organisation befindet.
+
+## <a name="sharing-auditing-work-flow"></a>Freigabe Überwachungs Workflow
   
-![Flussdiagramm zur Funktionsweise der Freigabe Überwachung](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
+Wenn ein Benutzer (der stellvertretender Benutzer) eine Ressource für einen anderen Benutzer (den Zielbenutzer) freigeben möchte, überprüft SharePoint (oder OneDrive für Unternehmen) zunächst, ob die e-Mail-Adresse des Zielbenutzers bereits einem Benutzerkonto im Verzeichnis der Organisation zugeordnet ist. Wenn sich der Zielbenutzer im Verzeichnis befindet (und über ein entsprechendes Gastbenutzerkonto verfügt), führt SharePoint folgende Schritte aus:
   
-Wenn ein Benutzer (der stellvertretender Benutzer) eine Ressource für einen anderen Benutzer (den Zielbenutzer) freigeben möchte, überprüft SharePoint (oder OneDrive für Unternehmen) zunächst, ob die e-Mail-Adresse des Zielbenutzers bereits einem Benutzerkonto im Verzeichnis der Organisation zugeordnet ist. Wenn sich der Zielbenutzer im Verzeichnis der Organisation befindet, führt SharePoint Folgendes aus:
-  
--  Weist sofort die Zielbenutzer Berechtigungen für den Zugriff auf die Ressource zu. 
+-  Weist sofort die Zielbenutzer Berechtigungen für den Zugriff auf die Ressource zu, indem der Zielbenutzer der entsprechenden SharePoint-Gruppe hinzugefügt wird, und protokolliert ein **AddedToGroup** -Ereignis. 
     
 - Sendet eine Freigabe Benachrichtigung an die e-Mail-Adresse des Zielbenutzers.
     
-- Protokolliert ein **sharingset** -Ereignis. 
+- Protokolliert ein **sharingset** -Ereignis. Dieses Ereignis weist den Anzeigenamen "freigegebene Datei, Ordner oder Website" unter **Freigabe-und Zugriffs Anforderungs Aktivitäten** in der Aktivitäts Auswahl des Überwachungsprotokoll-Such Tools auf. Siehe Screenshot in [Schritt 1](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file). 
     
- Wenn sich ein Benutzerkonto für den Zielbenutzer nicht im Verzeichnis der Organisation befindet, führt SharePoint Folgendes aus: 
-  
-- Erstellt eine Freigabeeinladung und sendet Sie an die e-Mail-Adresse des Zielbenutzers.
+Wenn sich ein Benutzerkonto für den Zielbenutzer nicht im Verzeichnis befindet, führt SharePoint Folgendes aus: 
     
-- Protokolliert ein **SharingInvitationCreated** -Ereignis. 
-    
-    > [!NOTE]
-    > Das **SharingInvitationCreated** -Ereignis ist meistens immer mit externer oder Gast Freigabe verbunden, wenn der Zielbenutzer keinen Zugriff auf die freigegebene Ressource hat. 
-  
-Wenn der Zielbenutzer die an Sie gesendete Freigabeeinladung annimmt (durch Klicken auf den Link in der Einladung), protokolliert SharePoint ein **SharingInvitationAccepted** -Ereignis und weist den Zielbenutzer Berechtigungen für den Zugriff auf die Ressource zu. Weitere Informationen zum Zielbenutzer werden ebenfalls protokolliert, beispielsweise die Identität des Benutzers, an den die Einladung gesendet wurde, und der Benutzer, der die Einladung tatsächlich angenommen hat. In einigen Fällen können diese Benutzer (oder e-Mail-Adressen) unterschiedlich sein. 
-  
+   - Protokolliert eines der folgenden Ereignisse, je nachdem, wie die Ressource freigegeben wird:
+   
+      - **AnonymousLinkCreated**
+   
+      - **SecureLinkCreated**
+   
+      - **AddedToSecureLink** 
 
-  
+      - **SharingInvitationCreated** (dieses Ereignis wird nur protokolliert, wenn es sich bei der freigegebenen Ressource um eine Website handelt)
+    
+   - Wenn der Zielbenutzer die an Sie gesendete Freigabeeinladung annimmt (durch Klicken auf den Link in der Einladung), protokolliert SharePoint ein **SharingInvitationAccepted** -Ereignis und weist den Zielbenutzer Berechtigungen für den Zugriff auf die Ressource zu. Wenn dem Zielbenutzer ein anonymer Link gesendet wird, wird das **AnonymousLinkUsed** -Ereignis protokolliert, nachdem der Zielbenutzer den Link für den Zugriff auf die Ressource verwendet hat. Für sichere Links wird ein **** fileaccessed-Ereignis protokolliert, wenn ein externer Benutzer den Link für den Zugriff auf die Ressource verwendet.
+
+Weitere Informationen zum Zielbenutzer werden ebenfalls protokolliert, beispielsweise die Identität des Benutzers, an den die Einladung gerichtet ist, und der Benutzer, der die Einladung tatsächlich annimmt. In einigen Fällen können diese Benutzer (oder e-Mail-Adressen) unterschiedlich sein. 
+
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Vorgehensweise identifizieren von Ressourcen, die für externe Benutzer freigegeben sind
 
-Eine häufige Anforderung an Administratoren ist das Erstellen einer Liste aller Ressourcen, die für Benutzer außerhalb der Organisation freigegeben wurden. Wenn Sie die Freigabe Überwachung in Office 365 verwenden, können Administratoren diese Liste jetzt generieren. Die gehen so:
+Eine häufige Anforderung an Administratoren ist das Erstellen einer Liste aller Ressourcen, die für Benutzer außerhalb der Organisation freigegeben wurden. Mithilfe der Freigabe Überwachung in Office 365 können Administratoren diese Liste generieren. Die gehen so:
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Schritt 1: Suchen nach Freigabe Ereignissen und Exportieren der Ergebnisse in eine CSV-Datei
 
@@ -97,31 +112,39 @@ Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Frei
     
 8. Klicken Sie auf Save **As** **Speichern** \> und speichern Sie die CSV-Datei in einem Ordner auf Ihrem lokalen Computer. 
 
-### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>Schritt 2: Filtern der CSV-Datei nach Ressourcen, die für externe Benutzer freigegeben sind
+### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Schritt 2: Formatieren des exportierten Überwachungsprotokolls mithilfe des PowerQuery-Editors
 
-Der nächste Schritt besteht darin, die CSV-Datei **** für das sharingset-und das **SharingInvitationCreated** -Ereignis zu filtern und die Ereignisse anzuzeigen, bei denen die **TargetUserOrGroupType** -Eigenschaft **Gast**ist. Verwenden Sie dazu das Tool Power Query Editor in Excel. Eine Schritt-für-Schritt-Anleitung finden Sie unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md). 
+Im nächsten Schritt wird das JSON-Transformations Feature im Power Query-Editor in Excel verwendet, um die einzelnen Eigenschaften in der **Auditdata** -Spalte (die aus einem JSON-Objekt mit mehreren Eigenschaften besteht) in eine eigene Spalte aufzuteilen. Auf diese Weise können Sie Spalten filtern, um Datensätze im Zusammenhang mit Freigabe anzuzeigen.
 
-Nachdem Sie die Anweisungen im vorherigen Thema zum Vorbereiten der CSV-Datei befolgt haben, gehen Sie wie folgt vor:
+Eine Schritt-für-Schritt-Anleitung finden Sie unter "Schritt 2: Formatieren des exportierten Überwachungsprotokolls mit dem Power Query Editor" unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+
+### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>Schritt 3: Filtern der CSV-Datei nach Ressourcen, die für externe Benutzer freigegeben sind
+
+Der nächste Schritt besteht darin, die CSV-Datei für die verschiedenen Freigabe bezogenen Ereignisse zu filtern, die zuvor im Abschnitt [SharePoint-Freigabe Ereignisse](#sharepoint-sharing-events) beschrieben wurden. Alternativ können Sie die **TargetUserOrGroupType** -Spalte filtern, um alle Datensätze anzuzeigen, bei denen der Wert dieser Eigenschaft **Gast**ist. 
+
+Nachdem Sie die Anweisungen im vorherigen Schritt zum Vorbereiten der CSV-Datei mithilfe des PowerQuery-Editors befolgt haben, gehen Sie wie folgt vor:
     
-1. Öffnen Sie die CSV-Datei, die Sie mit dem Power Query-Editor vorbereitet haben. 
+1. Öffnen Sie die Excel-Datei, die Sie in Schritt 2 erstellt haben. 
 
 2. Klicken Sie auf der Registerkarte **Start** auf **#a0 Filter sortieren**, und klicken Sie dann auf **Filter**.
     
-3. Deaktivieren Sie in der Dropdownliste **Sortier #a0 Filter** in der Spalte **Vorgänge** alle Optionen, und wählen **** Sie dann freigabeset und **SharingInvitationCreated**aus, und klicken Sie dann auf **OK**.
+3. Deaktivieren Sie in der Dropdownliste **Sort #a0 Filter** in der Spalte **Vorgänge** die Option Alle Optionen, und wählen Sie dann mindestens einen der folgenden Freigabe bezogenen Ereignisse aus, und klicken Sie dann auf **OK**.
+ 
+   - **SharingInvitationCreated**
+   
+   - **AnonymousLinkCreated**
+   
+   - **SecureLinkCreated**
+   
+   - **AddedToSecureLink** 
     
-    Excel zeigt die Zeilen für das **sharingset** -und das **SharingInvitationCreated** -Ereignis an. 
+    Excel zeigt die Zeilen für die Ereignisse an, die Sie ausgewählt haben.
     
 4. Wechseln Sie zur Spalte mit dem Namen **TargetUserOrGroupType** , und wählen Sie Sie aus. 
     
 5. Deaktivieren Sie in der Dropdownliste **Sortier #a0 Filter** die Option alle Auswahlen, wählen Sie **TargetUserOrGroupType: Gast**aus, und klicken Sie dann auf **OK**.
     
-    In Excel werden nun die Zeilen für **SharingInvitationCreated** -und **sharingset** -Ereignisse sowie die Position des Zielbenutzers außerhalb Ihrer Organisation angezeigt, da externe Benutzer durch den Wert **TargetUserOrGroupType: Guest**identifiziert werden. 
-    
-In der folgenden Tabelle sind alle Benutzer in der Organisation aufgeführt, die Ressourcen mit einem Gastbenutzer innerhalb eines angegebenen Datumsbereichs freigegeben haben.
-  
-![Freigeben von Ereignissen in Office 365 Überwachungsprotokoll](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
-  
-Obwohl es nicht in der vorherigen Tabelle enthalten ist, gibt die **objectID** -Eigenschaft die Ressource an, die für den Zielbenutzer freigegeben wurde; zum Beispiel `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+    In Excel werden nun die Zeilen für Freigabe Ereignisse und die Position des Zielbenutzers außerhalb Ihrer Organisation angezeigt, da externe Benutzer durch den Wert **TargetUserOrGroupType: Guest**identifiziert werden. 
   
 > [!TIP]
-> Wenn Sie ermitteln möchten, ob einem Gastbenutzer tatsächlich Berechtigungen für den Zugriff auf eine Ressource zugewiesen wurden (im Gegensatz zu den Ressourcen, die für Sie freigegeben wurden), wiederholen Sie die Schritte 2, 3 und 4, und Filtern Sie nach dem **SharingInvitationAccepted** und dem **freigabeset** . Ereignisse in Schritt 5. 
+> Für die angezeigten Überwachungsdatensätze identifiziert die **objectID** -Spalte die Ressource, die für den Zielbenutzer freigegeben wurde. zum Beispiel `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
