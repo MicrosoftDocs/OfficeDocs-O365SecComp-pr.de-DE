@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Erfahren Sie mehr über das neue Microsoft 365 Compliance Center, einschließlich dessen, was es enthält, wie Sie es erhalten, und Ihre nächsten Schritte.
-ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: ec7dff8d230bc3b9e7ab1fd4a9348a1b8eb0ca9b
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852789"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048227"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Übersicht über das neue Microsoft 365 Compliance Center
 
@@ -68,7 +68,7 @@ Zusätzlich zu den Links in Karten auf der Startseite finden Sie einen Navigatio
 
 |  |  |
 |---------|---------|
-|![Navigation im Microsoft 365 Compliance Center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Wechseln Sie zu **Warnungen** , um [Warnungen](alerts.md) anzuzeigen und zu beheben.<br/><br/>Besuchen Sie **Berichte** , um Daten über die [Verwendung und Aufbewahrung von Bezeichnungen](sensitivity-labels.md)anzuzeigen, die DLP- [Richtlinie entspricht und außer Kraft](view-the-dlp-reports.md)setzungen, [freigegebene Dateien](https://docs.microsoft.com/cloud-app-security/file-filters), [von Drittanbieter-Apps verwendet](https://docs.microsoft.com/cloud-app-security/discovered-apps)und vieles mehr.<br/><br/>Erweitern Sie den Abschnitt **Klassifizierung** , um auf Ihre [Bezeichnungen](labels.md), Bezeichnungs [Richtlinien](sensitivity-labels.md#what-label-policies-can-do), [vertrauliche Informationstypen](what-the-sensitive-information-types-look-for.md)und [Etiketten Analyse](view-label-activity-for-documents.md)zuzugreifen.<br/><br/>Wechseln Sie zu **Richtlinien** , um [Warnungen](alerts.md) anzuzeigen und auf Ihre [DLP](data-loss-prevention-policies.md) -und [Aufbewahrungs](retention-policies.md) Richtlinien zuzugreifen.<br/><br/> Verwenden Sie die Links im Abschnitt **Lösungen** , um auf die Compliance-Lösungen Ihrer Organisation zuzugreifen. Zu diesen zählen: <br/>[Datensteuerung #a0-Dispositionen](disposition-reviews.md)<br/>[eDiscovery (Vorschau)](compliance20/overview-ediscovery-20.md)<br/>[Aufsicht](supervision-policies.md)<br/>[Daten Untersuchungen](datainvestigations/overview-data-investigations.md)<br/>[Datenbetreffsanforderungen](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navigation im Microsoft 365 Compliance Center](media/m365-compliance-center-leftnav.png)  |<br/><br/> Wechseln Sie zu **Warnungen** , um [Warnungen](alerts.md) anzuzeigen und zu beheben.<br/><br/>Besuchen Sie **Berichte** , um Daten über die [Verwendung und Aufbewahrung von Bezeichnungen](sensitivity-labels.md)anzuzeigen, die DLP- [Richtlinie entspricht und außer Kraft](view-the-dlp-reports.md)setzungen, [freigegebene Dateien](https://docs.microsoft.com/cloud-app-security/file-filters), [von Drittanbieter-Apps verwendet](https://docs.microsoft.com/cloud-app-security/discovered-apps)und vieles mehr.<br/><br/>Erweitern Sie den Abschnitt **Klassifizierung** , um auf Ihre [Bezeichnungen](labels.md), Bezeichnungs [Richtlinien](sensitivity-labels.md#what-label-policies-can-do), [vertrauliche Informationstypen](what-the-sensitive-information-types-look-for.md)und [Etiketten Analyse](view-label-activity-for-documents.md)zuzugreifen.<br/><br/>Wechseln Sie zu **Richtlinien** , um [Warnungen](alerts.md) anzuzeigen und auf Ihre [DLP](data-loss-prevention-policies.md) -und [Aufbewahrungs](retention-policies.md) Richtlinien zuzugreifen.<br/><br/> Verwenden Sie die Links im Abschnitt **Lösungen** , um auf die Compliance-Lösungen Ihrer Organisation zuzugreifen. Zu diesen zählen: <br/>[Datensteuerung #a0-Dispositionen](disposition-reviews.md)<br/>[eDiscovery](compliance20/overview-ediscovery-20.md)<br/>[Aufsicht](supervision-policies.md)<br/>[Daten Untersuchungen](datainvestigations/overview-data-investigations.md)<br/>[Datenbetreffsanforderungen](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>Wie erhalte ich diese?

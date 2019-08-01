@@ -2,7 +2,7 @@
 title: Einrichten Office 365 Richtlinien für ATP-sichere Links
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 06/26/2019
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394340"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048077"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -97,9 +97,9 @@ Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bear
     
   - Wählen Sie im Abschnitt **Aktion auswählen die** Option **ein**aus.
     
-  - Wählen Sie **sichere Anlagen zum Überprüfen herunterladbarer Inhalte verwenden**aus.
+  - Wählen Sie **Echt Zeit-URL-Überprüfung für verdächtige Links und Links anwenden, die auf Dateien verweisen,** Wenn Sie die URL-Detonation für verdächtige und Datei verweisende URLs aktivieren möchten (empfohlen). Und wählen Sie **warten, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht** übermitteln, wenn Sie möchten, dass nur Benutzer Nachrichten empfangen, nachdem die URLs vollständig überprüft wurden.
     
-  - Wenn diese Option verfügbar ist, wählen Sie **sichere Links auf Nachrichten anwenden, die innerhalb der Organisation gesendet**werden.
+  - Wählen Sie **sichere Links auf Nachrichten anwenden, die innerhalb der Organisation gesendet** werden, wenn Sie sichere Links für Nachrichten aktivieren möchten, die zwischen Benutzern innerhalb Ihrer Organisation gesendet werden (empfohlen).
     
   - Wählen Sie **nicht zulassen, dass Benutzer auf die ursprüngliche URL klicken**.
     
