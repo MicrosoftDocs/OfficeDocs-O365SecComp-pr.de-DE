@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer (und Echtzeiterkennung) im Security &amp; Compliance Center.
-ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605474"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054757"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer (und Echtzeiterkennung)
 
@@ -170,3 +170,8 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 - [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
+## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Einige Unterschiede zwischen der Echtzeiterkennung und dem Bedrohungs Exporteur.
+
+ - Der **Echt Zeit Erkennungs Bericht** wird mit dem ATP P1-Abonnement ausgeliefert, während **Threat Explorer** mit ATP P2 geliefert wird.
+ - Der Bericht über **Echt Zeit Erkennungen** ermöglicht Ihnen, die Erkennungen in Echtzeit anzuzeigen, während Threat Explorer-Berichte es Ihnen ermöglichen, weitere Details in einem bestimmten Angriff anzuzeigen.
+ - **Threat Explorer** -Berichte bieten unterschiedliche Sätze von Berichten, die ihre Erfahrung hinsichtlich **Echt Zeit Detektor-** Berichte verbessern.

@@ -3,7 +3,7 @@ title: Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 01/04/2018
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Wenn Sie Ihre Office 365 Organisation noch nicht in die neuen OM-Funktionen verschoben haben, Sie jedoch bereits OM bereitgestellt haben, gelten die Informationen in diesem Artikel für Ihre Organisation. Microsoft empfiehlt, einen Plan für die Umstellung auf die neuen OM-Funktionen zu erstellen, sobald dies für Ihre Organisation sinnvoll ist. Anweisungen finden Sie unter Einrichten von neuen Office 365 Nachrichten Verschlüsselungsfunktionen, die auf Azure Information Protection basieren. Wenn Sie mehr darüber erfahren möchten, wie die neuen Funktionen als erstes funktionieren, lesen Sie Office 365 Nachrichtenverschlüsselung. Der Rest dieses Artikels bezieht sich auf das OM-Verhalten vor der Veröffentlichung der neuen OM-Funktionen.
-ms.openlocfilehash: 89d3adfa2672e86dd6f247ad408ccc95ebaf2b7f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 421a690ee9934368f1611f352bf8c6a75da1d09c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598921"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054747"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Legacyinformationen für die Office 365-Nachrichtenverschlüsselung
 
@@ -30,15 +30,15 @@ Mit Office 365 Nachrichtenverschlüsselung kann Ihre Organisation verschlüsselt
 Im Folgenden finden Sie einige Beispiele:
   
 - Ein Bankmitarbeiter sendet Kreditkartenabrechnungen an Kunden
-    
+
 - Ein Versicherungsvertreter stellt Kunden Richtliniendetails zur Verfügung.
-    
+
 - Ein Hypothekenmakler fordert Finanzinformationen von einem Kunden für eine Darlehens Anwendung an.
-    
+
 - Ein Gesundheitsdienstleister sendet Patienteninformationen zum Gesundheitswesen.
-    
+
 - Ein Anwalt sendet vertrauliche Informationen an einen Kunden oder einen anderen Anwalt.
-    
+
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Funktionsweise der Office 365 Nachrichtenverschlüsselung ohne die neuen Funktionen
 
 Office 365 Nachrichtenverschlüsselung ist ein Onlinedienst, der auf Microsoft Azure Rights Management (Azure RMS) basiert. Mit Azure RMS können Administratoren e-Mail-Flussregeln definieren, um die Bedingungen für die Verschlüsselung zu bestimmen. Beispielsweise kann eine Regel die Verschlüsselung aller Nachrichten erfordern, die an einen bestimmten Empfänger adressiert sind.
@@ -74,13 +74,13 @@ Empfänger folgen den Anweisungen in der Nachricht, um die Anlage zu öffnen und
 Als Exchange Online-und Exchange Online Schutz Administrator können Sie Ihre verschlüsselten Nachrichten anpassen. Sie können beispielsweise die Marke und das Logo Ihres Unternehmens hinzufügen, eine Einführung angeben und Haftungsausschluss-Text in verschlüsselte Nachrichten und im Portal hinzufügen, in dem Empfänger Ihre verschlüsselten Nachrichten anzeigen. Mit Windows PowerShell-Cmdlets passen Sie die folgenden Aspekte im Erscheinungsbild für Epfänger von verschlüsselten E-Mails an:
   
 - Einleitender Text der E-Mail, die die verschlüsselte Nachricht enthält
-    
+
 - Text des Haftungsausschlusses der E-Mail, die die verschlüsselte Nachricht enthält
-    
+
 - Portaltext, der im Meldungsanzeigeportal angezeigt wird
-    
+
 - Logo, das in der E-Mail-Nachricht und im Anzeigeportal erscheint
-    
+
 Sie können auch jederzeit zum Standardaussehen und -verhalten zurückkehren.
   
 Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-Anhang gezeigt:
@@ -90,9 +90,9 @@ Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-
  **So passen Sie Verschlüsselungs-e-Mails und das Verschlüsselungs Portal mit der Marke Ihrer Organisation an**
   
 1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her, wie unter [Verbinden mit Exchange Online mithilfe von Remote-PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated)beschrieben.
-    
-2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: [festlegen-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) oder verwenden Sie die folgende Tabelle, um Anleitungen zu erhalten. 
-    
+
+2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: [festlegen-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) oder verwenden Sie die folgende Tabelle, um Anleitungen zu erhalten.
+
    **Anpassungsoptionen für Verschlüsselung**
 
 |**So passen Sie dieses Verschlüsselungsfeature an**|**Verwenden Sie diese Befehle von Windows PowerShell**|
@@ -101,13 +101,13 @@ Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-
 |Haftungsausschluss in der E-Mail, die die verschlüsselte Nachricht enthält  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Beispiel:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |Der Text wird oben im Anzeigeportal für verschlüsselte E-Mails angezeigt  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Beispiel:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Beispiel:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Unterstützte Dateiformate: .png, .jpg, .bmp oder .tiff  <br/> Optimale Größe der Logodatei: kleiner als 40 KB  <br/> Optimale Abmessungen des Logobilds: 170 x 70 Pixel  <br/> |
-   
+
  **So entfernen Sie Marken Anpassungen aus e-Mail-Verschlüsselungs Nachrichten und dem Verschlüsselungs Portal**
   
 1. Stellen Sie mithilfe von Remote-PowerShell eine Verbindung mit Exchange Online her, wie unter [Verbinden mit Exchange Online mithilfe von Remote-PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx)beschrieben.
-    
+
 2. Verwenden Sie das Cmdlet "OMEConfiguration" wie hier beschrieben: " [festlegen-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)". Wenn Sie die Marken Anpassungen ihrer Organisation aus den DisclaimerText-, EmailText-und Portal Text-Werten entfernen möchten, legen Sie den Wert auf eine `""`leere Zeichenfolge fest. Legen Sie für alle Bild Werte wie Logo den Wert auf `"$null"`fest.
-    
+
    **Anpassungsoptionen für Verschlüsselung**
 
 |**Dieses Feature der Verschlüsselungserfahrung zu Standardtext und -bild zurücksetzen**|**Verwenden Sie diese Befehle von Windows PowerShell**|
@@ -116,7 +116,7 @@ Im folgenden Beispiel wird ein benutzerdefiniertes ContosoPharma-Logo im E-Mail-
 |Haftungsausschluss in der E-Mail, die die verschlüsselte Nachricht enthält  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Beispiel:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
 |Der Text wird oben im Anzeigeportal für verschlüsselte E-Mails angezeigt  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Beispiel Zurücksetzen auf Standard:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Beispiel Zurücksetzen auf Standard:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
-   
+
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Dienstinformationen für die Verschlüsselung veralteter Office 365 Nachrichten vor der Veröffentlichung der neuen OM-Funktionen
 <a name="LegacyServiceInfo"> </a>
 
@@ -131,7 +131,7 @@ Die folgende Tabelle enthält technische Details für den Office 365 Nachrichten
 |Exchange Online von e-Mail-Aufbewahrungsrichtlinien  <br/> |In Exchange Online werden die verschlüsselten Nachrichten nicht gespeichert.  <br/> |
 |Die Sprachunterstützung für Office 365 Nachrichtenverschlüsselung  <br/> | Office 365 Nachrichtenverschlüsselung unterstützt Office 365-Sprachen wie folgt:  <br/>  Eingehende e-Mail-Nachrichten und angefügte HTML-Dateien werden basierend auf den Spracheinstellungen des Absenders lokalisiert.  <br/>  Das Anzeigeportal wird basierend auf den Browsereinstellungen des Empfängers lokalisiert.  <br/>  Der Nachrichtentext (Inhalt) der verschlüsselten Nachricht ist nicht lokalisiert.  <br/> |
 |Datenschutzinformationen für OME-Portal und OME-Viewer-App  <br/> |Die [Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) enthalten ausführliche Informationen darüber, wofür Microsoft Ihre vertraulichen Informationen verwendet.  <br/> |
-   
+
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Häufig gestellte Fragen zu Legacy-OM
 <a name="LegacyServiceInfo"> </a>
 
@@ -142,9 +142,9 @@ Haben Sie Fragen zu Office 365 Nachrichtenverschlüsselung? Hier finden Sie eini
 Empfänger außerhalb Ihrer Organisation, die verschlüsselte Office 365-Nachrichten erhalten, können diese auf eine von zwei Weisen anzeigen:
   
 - Indem Sie sich mit einem Microsoft-Konto oder einem mit Office 365 verknüpften Arbeits-oder Schulkonto anmelden.
-    
+
 - Mithilfe eines einmaligen Pass Codes.
-    
+
  **F. Werden mit Office 365 verschlüsselte Nachrichten in der Cloud oder auf Microsoft-Servern gespeichert?**
   
 Nein, die verschlüsselten Nachrichten werden auf dem e-Mail-System des Empfängers aufbewahrt, und wenn der Empfänger die Nachricht öffnet, wird Sie vorübergehend zur Anzeige auf Office 365-Servern bereitgestellt. Die Nachrichten werden dort nicht gespeichert.
@@ -159,7 +159,7 @@ Jeder Benutzer in der Organisation benötigt eine Lizenz, der verschlüsselte E-
   
  **Q. Benötigen externe Empfänger Abonnements?**
   
-Nein, externe Empfänger benötigen kein Abonnement zum Lesen oder Beantworten verschlüsselter Nachrichten. 
+Nein, externe Empfänger benötigen kein Abonnement zum Lesen oder Beantworten verschlüsselter Nachrichten.
   
  **F. Inwiefern unterscheidet sich Office 365 Nachrichtenverschlüsselung von RMS (Rights Management Services, Rechteverwaltungsdienst)?**
   
@@ -186,12 +186,12 @@ Eingehende E-Mails und HTML-Inhalte werden basierend auf den E-Maileinstellungen
 Office 365 Nachrichtenverschlüsselung verwendet RMS (Rights Management Services) als Verschlüsselungsinfrastruktur. Die verwendete Verschlüsselungsmethode hängt davon ab, woher Sie die RMS-Schlüssel zum Verschlüsseln und Entschlüsseln von Nachrichten erhalten.
   
 - Wenn Sie Microsoft Azure RMS verwenden, um die Schlüssel zu erhalten, wird kryptografischer Modus 2 verwendet. Kryptografiemodus 2 ist eine aktualisierte und weiterentwickelte Kryptografieimplementierung für AD RMS. Er bietet Unterstützung für RSA 2048 für Signatur und Verschlüsselung sowie Unterstützung für SHA-256 für die Signatur.
-    
+
 - Wenn Sie Active Directory (AD) RMS verwenden, um die Schlüssel abzurufen, wird entweder Kryptografiemodus 1 oder 2 verwendet. Die verwendete Methode hängt von Ihrer lokalen AD RMS-Bereitstellung ab. Kryptografiemodus 1 ist die ursprüngliche Kryptografieimplementierung für AD RMS. Er bietet Unterstützung für RSA 1024 für Signatur und Verschlüsselung sowie Unterstützung für SHA-1 für die Signatur. Dieser Modus wird durch alle aktuellen Versionen von RMS weiter unterstützt.
-    
+
 Weitere Informationen finden Sie unter [AD RMS Cryptographic Modes](http://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **F: Warum wird bei einigen verschlüsselten Nachrichten angegeben, dass diese von Office365@messaging.microsoft.com stammen?**
+ **F. Warum sagen einige verschlüsselte Nachrichten, dass Sie aus Office365@Messaging.Microsoft.com stammen** ?
   
 Wenn eine verschlüsselte Antwort aus dem Verschlüsselungsportal oder über die OME Viewer-App gesendet wird, wird die Absender-E-Mail-Adresse auf Office365@messaging.microsoft.com festgelegt, da die verschlüsselte Nachricht über einen Microsoft-Endpunkt gesendet wird. Dadurch wird verhindert, dass verschlüsselte Nachrichten als Spam markiert werden. Der angezeigte Name in der E-Mail und die Adresse im Verschlüsselungsportal werden durch diese Bezeichnung nicht geändert. Außerdem gilt diese Bezeichnung nur für über das Portal gesendete Nachrichten und nicht für Nachrichten, die über einen anderen E-Mail-Client gesendet werden.
   
@@ -205,7 +205,7 @@ Ja. Sie müssen URLs für Exchange Online zur Liste "Zulassen" für Ihre Organis
   
  **F: Wie vielen Empfängern kann ich eine verschlüsselte Office 365-Nachricht senden?**
   
-Der Empfängergrenzwert für eine verschlüsselte Nachricht basiert auf der Anzahl der Zeichen im Feld " **an** " der Nachricht. Nach dem Erweitern der Verteilerliste dürfen alle Empfängeradressen zusammen im Feld **An** 11.980 Zeichen nicht überschreiten. Da e-Mail-Adressen in der Zeichen Länge variieren können, gibt es keinen standardmäßigen Empfängergrenzwert für eine einzelne verschlüsselte Nachricht. 
+Die Empfänger Grenze beträgt 500 Empfänger pro Nachricht oder, wenn Sie nach der Erweiterung der Verteilerliste kombiniert werden, 11.980 Zeichen im Feld " **an** " der Nachricht, je nachdem, was zuerst angezeigt wird.
   
  **F: Ist es möglich, eine Nachricht an einen bestimmten Empfänger zu sperren?**
   
@@ -217,6 +217,5 @@ Es gibt keinen Bericht, der anzeigt, ob eine verschlüsselte Nachricht angezeigt
   
  **F. Wofür verwendet Microsoft die von mir über das OME-Portal und die OME-Viewer-App eingegebenen Informationen?**
   
-Die [Datenschutzerklärung für das Office 365 Messaging-Verschlüsselungs Portal](protected-message-viewer-portal-privacy-statement.md) enthält detaillierte Informationen dazu, was Microsoft mit ihren privaten Informationen macht und was nicht. 
-  
-
+Die [Datenschutzerklärung für das Office 365 Messaging-Verschlüsselungs Portal](protected-message-viewer-portal-privacy-statement.md) enthält detaillierte Informationen dazu, was Microsoft mit ihren privaten Informationen macht und was nicht.
+ 

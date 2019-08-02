@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Als Administrator können Sie in Office 365 falsch positive unter Quarantäne gestellte Nachrichten anzeigen, freigeben und melden. Sie können Richtlinien so einrichten, dass Nachrichten von Office 365 gefiltert und aus verschiedenen Gründen an die Quarantäne gesendet werden: weil Sie als Spam, Massen, Phishing, Schadsoftware oder als Übereinstimmung mit einer Nachrichtenfluss Regel identifiziert wurden. '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598801"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054717"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in Office 365
 
@@ -29,14 +29,14 @@ Als Administrator können Sie in Office 365 unter Quarantäne gestellte Nachrich
   
 Standardmäßig sendet Office 365 Phishingnachrichten und Nachrichten mit Schadsoftware direkt in Quarantäne. Andere gefilterte Nachrichten werden an den Junk-e-Mail-Ordner der Benutzer gesendet, es sei denn, Sie richten eine Richtlinie zum Senden an den Quarantänebereich ein.
   
-Sie müssen über globale Administratorberechtigungen (GA) in Office 365 oder Sicherheitsadministrator im Security and Compliance Center verfügen, damit Sie mit in Quarantäne gestellten Nachrichten arbeiten können, die an andere Benutzer gesendet wurden, und um mit isolierten Dateien zu arbeiten.
+Sie müssen über globale Administratorberechtigungen (GA) in Office 365 verfügen oder Mitglied einer oder mehrerer Rollengruppen für Sicherheits #a0 Compliance Center sein, um mit isolierten Nachrichten oder isolierten Dateien zu arbeiten. Weitere Informationen finden Sie unter [Berechtigungen im Office 365 Security #a0 Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) .
   
 > [!IMPORTANT]
 >Standardmäßig werden Spam, Massen-und Phishing-Nachrichten 30 Tage lang in Quarantäne aufbewahrt. Nachrichten, die unter Quarantäne gestellt werden, weil Sie einer Nachrichtenfluss Regel entsprechen, werden für 7 Tage in Quarantäne aufbewahrt. Schadsoftware-Nachrichten werden 15 Tage lang in Quarantäne aufbewahrt. Sie können die Spamquarantäne Zeit in den Antispam-Einstellungen im Security &amp; Compliance Center anpassen. Wenn Office 365 eine Nachricht aus der Quarantäne löscht, können Sie Sie nicht zurück bekommen. Wenn Sie möchten, können Sie den Aufbewahrungszeitraum für isolierte Nachrichten in ihren Anti-Spam-Filterrichtlinien ändern. Weitere Informationen finden Sie unter [Festlegen des Aufbewahrungszeitraums für die Quarantäne](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) in diesem Artikel. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Anzeigen der isolierten Nachrichten Ihrer Organisation
 
-1. Melden Sie sich mit einem Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Office 365 Organisation bei Office 365 [an, und wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
+1. Melden Sie sich mit einem Arbeits-oder Schulkonto mit globalen Administratorrechten (oder geeigneten Sicherheits #a0 Compliance Center-Rollen) in Ihrer Office 365 Organisation bei Office 365 an, und [wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
     
 2. Erweitern Sie in der Liste auf der linken Seite die Option **Threat Management**, wählen Sie **überprüfen**, und wählen Sie dann **Quarantäne**aus.
     
@@ -189,7 +189,7 @@ Sie können konfigurieren, wie lange Nachrichten und Dateien in der Quarantäne 
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>So ändern Sie den Aufbewahrungszeitraum für Quarantäne für die standardmäßige Spamfilter Richtlinie im Security and Compliance Center
 
-1. Melden Sie sich bei Office 365 mit einem Arbeits-oder Schulkonto mit globalen Administratorrechten in Ihrer Office 365 Organisation an, und [wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
+1. Melden Sie sich bei Office 365 mit einem Arbeits-oder Schulkonto mit globalen Administratorrechten (oder geeigneten Sicherheits #a0 Compliance Center-Rollen) in Ihrer Office 365 Organisation an, und [wechseln Sie zum Security and Compliance Center](go-to-the-securitycompliance-center.md).
     
 2. Erweitern Sie auf der linken Seite den Knoten **Bedrohungs Verwaltung**, wählen Sie **Richtlinie**aus, und wählen Sie dann **Anti-Spam**aus. <br/>
     > [!TIP]

@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Die Filterung ausgehender Spamnachrichten ist immer aktiviert, wenn Sie den Dienst für das Senden ausgehender E-Mails verwenden und dadurch Organisationen, die den Dienst nutzen, und ihre jeweiligen Empfänger schützen.
-ms.openlocfilehash: c3eb663d569e717597ff926896ed3daefb48186e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2bf2f8c7292bee4d1e89249bcec5c74a4b5d38c9
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600061"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054653"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Konfigurieren der Richtlinie für ausgehende Spamnachrichten
 
@@ -29,6 +29,9 @@ Das folgende Video zeigt, wie die Richtlinie für ausgehende Spamnachrichten kon
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
+> [!NOTE]
+> Für die besten Filterergebnisse sollte der Inhalt im Video oben mit einer ordnungsgemäßen Einrichtung und Vertrautheit mit [ausgehenden Spam Steuerelementen in Office 365](https://docs.microsoft.com/office365/securitycompliance/outbound-spam-controls)verwendet werden.
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 <a name="sectionSection0"> </a>
 
