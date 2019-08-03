@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Aufsichts Überprüfungsrichtlinien zum Erfassen der Mitarbeiterkommunikation zur Überprüfung.
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151537"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168173"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 
 
     Testen Sie Ihre Aufsichtsrichtlinie, um sicherzustellen, dass Sie wie gewünscht funktioniert. Es ist wichtig sicherzustellen, dass Ihre Konformitäts Strategie ihre Standards erfüllt.
 
-- **Schritt 6 (optional)**: [Konfigurieren von Outlook für Bearbeiter, die nicht Office 365 Aufsichts Dashboard oder Outlook im Internet (früher als Outlook Web App bezeichnet) verwenden möchten, um die beaufsichtigte Kommunikation zu überprüfen](#step-6-configure-outlook-for-reviewers-optional)
+- **Schritt 6 (optional)**: [Konfigurieren von Outlook für Bearbeiter, die Office 365 Aufsichts Konsole nicht zum Überprüfen der beaufsichtigten Kommunikation verwenden möchten](#step-6-configure-outlook-for-reviewers-optional)
 
     Konfigurieren Sie Outlook so, dass Sie den Prüfern Zugriff auf die Überwachungsfunktionen innerhalb des Outlook-Clients gewähren, damit Sie jedes Element bewerten und kategorisieren können.
 
@@ -68,6 +68,8 @@ Anhand des folgenden Diagramms können Sie Gruppen in Ihrer Organisation für Au
 |Beaufsichtigte Benutzer <br> Nicht überwachte Benutzer | Verteilergruppen <br> Office 365-Gruppen | Dynamische Verteilergruppen |
 | Prüfer | E-Mail-aktivierte Sicherheitsgruppen  | Verteilergruppen <br> Dynamische Verteilergruppen |
   
+Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Office 365 Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
+
 Um beaufsichtigte Benutzer in großen Unternehmensorganisationen zu verwalten, müssen Sie möglicherweise alle Benutzer über große Gruppen hinweg überwachen. Sie können PowerShell verwenden, um eine Verteilergruppe für eine globale Aufsichtsrichtlinie für die zugewiesene Gruppe zu konfigurieren. Auf diese Weise können Sie Tausende von Benutzern mit einer einzigen Richtlinie überwachen und die Aufsichtsrichtlinie so aktualisieren, dass neue Mitarbeiter Ihrer Organisation beitreten.
 
 1. Erstellen Sie eine dedizierte [Verteilergruppe](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) für Ihre globale Aufsichtsrichtlinie mit den folgenden Eigenschaften: Stellen Sie sicher, dass diese Verteilergruppe nicht für andere Zwecke oder andere Office 365 Dienste verwendet wird.
@@ -143,7 +145,7 @@ Verwenden Sie einen Text-Editor (wie Notepad), um eine Datei zu erstellen, die d
 
 ### <a name="create-custom-sensitive-information-types"></a>Erstellen benutzerdefinierter vertraulicher Informationstypen
 
-1. Erstellen Sie einen neuen Typ für vertrauliche Informationen, und fügen Sie Ihr Benutzerwörterbuch im Office 365 Security & Compliance Center hinzu. Navigieren Sie zu **Klassifikationen** \> **vertrauliche Informationstypen** , und führen Sie die Schritte im **Assistenten für neue vertrauliche Informationen**aus. Hier finden Sie:
+1. Erstellen Sie einen neuen Typ für vertrauliche Informationen, und fügen Sie Ihr Benutzerwörterbuch im Office 365 Security #a0 Compliance Center hinzu. Navigieren Sie zu **Klassifikationen** \> **vertrauliche Informationstypen** , und führen Sie die Schritte im **Assistenten für neue vertrauliche Informationen**aus. Hier finden Sie:
 
     - Definieren eines Namens und einer Beschreibung für den Typ vertraulicher Informationen
     - Definieren der Nähe, Konfidenz Stufe und primärer Musterelemente
@@ -189,7 +191,7 @@ Bearbeiter, die Outlook anstelle des Aufsichts Dashboards in Office 365 verwende
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Schritt 1: Kopieren der Adresse für das Aufsichts Postfach
 
-Zum Konfigurieren der Überprüfung für Outlook Desktop oder Outlook für das Internet benötigen Sie die Adresse des Aufsichts Postfachs, das als Teil des Setups für die Aufsichtsrichtlinie erstellt wurde.
+Zum Konfigurieren der Überprüfung für Outlook Desktop benötigen Sie die Adresse des Aufsichts Postfachs, das als Teil des Setups für die Aufsichtsrichtlinie erstellt wurde.
   
 > [!NOTE]
 > Wenn die Richtlinie von einer anderen Person erstellt wurde, müssen Sie diese Adresse abrufen, um das Add-in zu installieren.

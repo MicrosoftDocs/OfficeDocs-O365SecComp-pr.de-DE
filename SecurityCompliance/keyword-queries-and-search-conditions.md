@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Erfahren Sie mehr über e-Mail-und Dateieigenschaften, die Sie in Exchange Online Postfächern und in SharePoint-oder OneDrive für Unternehmen-Websites mithilfe des Inhalts Such Tools im Security #a0 Compliance Center durchsuchen können.  '
-ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017647"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168183"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Stichwortabfragen und Suchbedingungen für die Inhaltssuche
 
@@ -70,7 +70,7 @@ In der folgenden Tabelle sind die Eigenschaften von e-Mail-Nachrichten aufgefüh
 |||||
    
 > [!NOTE]
-> <sup>1</sup> für den Wert einer Recipient-Eigenschaft können Sie e-Mail-Adresse (auch als *Benutzerprinzipalname* oder UPN bezeichnet), Anzeigename oder Alias verwenden, um einen Benutzer anzugeben. Sie können z. B. annb@contoso.com, Annb oder „Ann Beebe“ verwenden, um den Benutzer Ann Beebe anzugeben.<br/><br/>Beim Durchsuchen einer der Empfänger Eigenschaften (von, an, CC, BCC, Teilnehmern und Empfängern) versucht Office 365, die Identität jedes Benutzers zu erweitern, indem er Sie in Azure Active Directory nach oben sucht.  Wenn der Benutzer in Azure Active Directory gefunden wird, wird die Abfrage erweitert, um die e-Mail-Adresse des Benutzers (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN einzuschließen.<br/><br/>Beispielsweise wird eine Abfrage wie `participants:ronnie@contoso.com` erweitert zu. `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`
+> <sup>1</sup> für den Wert einer Recipient-Eigenschaft können Sie e-Mail-Adresse (auch als *Benutzerprinzipalname* oder UPN bezeichnet), Anzeigename oder Alias verwenden, um einen Benutzer anzugeben. Sie können z. B. annb@contoso.com, Annb oder „Ann Beebe“ verwenden, um den Benutzer Ann Beebe anzugeben.<br/><br/>Beim Durchsuchen einer der Empfänger Eigenschaften (von, an, CC, BCC, Teilnehmern und Empfängern) versucht Office 365, die Identität jedes Benutzers zu erweitern, indem er Sie in Azure Active Directory nach oben sucht.  Wenn der Benutzer in Azure Active Directory gefunden wird, wird die Abfrage erweitert, um die e-Mail-Adresse des Benutzers (oder UPN), den Alias, den Anzeigenamen und legacyExchangeDN einzuschließen.<br/><br/>Beispielsweise wird eine Abfrage wie `participants:ronnie@contoso.com` erweitert zu. `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`<br/><br/>Um die Empfänger Erweiterung zu verhindern, können Sie ein Platzhalterzeichen (Sternchen) am Ende der e-Mail-Adresse in der Suchabfrage hinzufügen. Beispiel: `participants:ronnie@contoso.com*`.
 
 ## <a name="searchable-site-properties"></a>Durchsuchbare Websiteeigenschaften
 
