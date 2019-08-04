@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Als Office 365 globaler Administrator können Sie das Branding Ihrer Organisation auf die verschlüsselten e-Mail-Nachrichten Ihrer Organisation und auf den Inhalt des Verschlüsselungs Portals anwenden.
-ms.openlocfilehash: 19f227971c522f9d92aec343f1865ab7f23c13aa
-ms.sourcegitcommit: b0ea2d66bc4c7f2fc0a8abab28d2ae652b1c4b73
+ms.openlocfilehash: dd08ffad4a50cafd90f2306645e93e623b8076cd
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34721372"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792061"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Hinzufügen der Marke Ihres Unternehmens zu Ihren verschlüsselten Nachrichten
 
@@ -122,7 +122,7 @@ Informationen zum Erstellen einer Exchange-Nachrichtenfluss Regel, die Verschlü
 
 2. Wählen Sie die Kachel **Admin** aus.
 
-3. Wählen Sie im Office 365 Admin Center die Option **Admin** \> Center **Exchange**aus.
+3. Wählen Sie im Microsoft 365 Admin Center **Admin** \> Center **Exchange**aus.
 
 4. Wechseln Sie in der Exchange-Verwaltungskonsole zu **Nachrichtenfluss** \> **Regeln** , und](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> wählen Sie **Neues** ![neues Symbol neue **Regel erstellen**aus. Weitere Informationen zur Verwendung der Exchange-Verwaltungskonsole finden Sie unter [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

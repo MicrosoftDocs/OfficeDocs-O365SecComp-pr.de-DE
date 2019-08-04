@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Sicherheitsprinzipien und Empfehlungen für die Modernisierung der Sicherheit in Ihrer Organisation.
-ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
-ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
+ms.openlocfilehash: f4f2eb8c98575a03635ec69274396cdf8769e498
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767296"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786590"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop-Modul 4B: Bedrohungsschutz Strategie 
 
-In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security Operations Center (SoC), die von den Billionen von Signalen im Microsoft Intelligent Security Graph angetrieben werden, überprüft.
+In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security Operations Center (SoC), die von Billionen von Signalen im Microsoft Intelligent Security Graph betrieben werden, überprüft.
 
 - PDF-Zusammenfassung herunterladen: [Modul 4B: Bedrohungsschutz Strategie](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - Herunterladen der PowerPoint-Zusammenfassung: [Modul 4B: Bedrohungsschutz Strategie](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
@@ -36,7 +36,7 @@ In diesem Modul werden die Entwicklung und die Flugbahn von Microsoft Security O
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>Teil 3: Erkenntnisse aus Microsofts Corporate IT SoC (22:07)
+## <a name="part-3-learnings-from-microsoft-corporate-it-soc-2207"></a>Teil 3: Lernprogramm von Microsoft Corporate IT SoC (22:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2539a2bb7a5929330410db1f611ff9b8b1a7173
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155287"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786630"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft Compliance-Manager (Vorschau)
 
@@ -107,7 +107,7 @@ Ein freigegebenes Steuerelement bezieht sich auf ein beliebiges Steuerelement, b
 
 Personen in Ihrer Organisation können den Compliance-Manager verwenden, um die vom Kunden verwalteten Steuerelemente aus allen Bewertungen zu überprüfen, denen Sie zugewiesen sind. Wenn ein Benutzer sich beim Compliance-Manager anmeldet und das **Aktionselemente** -Dashboard öffnet, wird eine Liste der Ihnen zugewiesenen Aktionselemente angezeigt. Je nach der dem Benutzer zugewiesenen Compliance-Manager-Rolle können Sie Implementierungs-oder Testdetails bereitstellen, den Status aktualisieren oder Aktionselemente zuweisen.
 
-Zertifizierungs Steuerelemente werden in der Regel von einer Person implementiert und von einer anderen getestet. Wenn beispielsweise Aktionselemente, die anfänglich einer Person zugewiesen wurden, für die Implementierung abgeschlossen sind, werden der nächsten Person Aktionselemente zum Testen und Hochladen von beweisen zugewiesen. Jeder Benutzer mit ausreichenden Berechtigungen für Steuerelement Zuweisungen kann Aktionselemente zuweisen und neu zuweisen. Dies ermöglicht eine zentrale Verwaltung von Steuerungs Zuweisungen und das dezentrale Routing von Aktionselementen zwischen Implementierern und Testern.
+Zertifizierungs Steuerelemente werden in der Regel von einer Person implementiert und von einer anderen getestet. Wenn beispielsweise Aktionselemente, die anfänglich einer Person zugewiesen wurden, für die Implementierung abgeschlossen sind, werden der nächsten Person Aktionselemente zugewiesen, um Beweise zu testen und hochzuladen. Jeder Benutzer mit ausreichenden Berechtigungen für Steuerelement Zuweisungen kann Aktionselemente zuweisen und neu zuweisen. Dies ermöglicht eine zentrale Verwaltung von Steuerungs Zuweisungen und das dezentrale Routing von Aktionselementen zwischen Implementierern und Testern.
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -115,7 +115,7 @@ Compliance-Manager verwendet ein [Berechtigungsmodell](https://docs.microsoft.co
 
 Um von Standardberechtigungen zu wechseln und ein vollständig rollenbasiertes Zugriffssteuerungsmodell zu implementieren, muss jeder Compliance-Manager-Rolle mindestens ein Benutzer hinzugefügt werden. Nachdem ein Benutzer einer Rolle hinzugefügt wurde, werden die Berechtigungen zum Ausführen der dieser Rolle zugewiesenen Aktionen aus den standardmäßigen Berechtigungssätzen entfernt, die allen Benutzern zur Verfügung stehen. Nur Benutzer, die mit der Rolle bereitgestellt werden, können auf den Compliance-Manager zugreifen und die von dieser Rolle zulässigen Aktionen ausführen.
 
-Wenn Sie beispielsweise einen Benutzer zur Rolle hinzufügen, um Bewertungen zu verwalten, können nur Mitglieder dieser Rolle Bewertungen verwalten. Wenn Sie der Rolle keinen Benutzer hinzufügen, der Benutzern das Lesen der Daten in Assessments ermöglicht, können alle Benutzer in Ihrer Organisation auf den Compliance-Manager zugreifen und Daten in einer beliebigen Bewertung lesen.
+Wenn Sie der Rolle einen Benutzer hinzufügen, um Bewertungen zu verwalten, können nur Mitglieder dieser Rolle Bewertungen verwalten. Wenn Sie der Rolle keinen Benutzer hinzufügen, der Benutzern das Lesen der Daten in Assessments ermöglicht, können alle Benutzer in Ihrer Organisation auf den Compliance-Manager zugreifen und Daten in einer beliebigen Bewertung lesen.
   
 ## <a name="manage-evidence"></a>Verwalten von beweisen
 

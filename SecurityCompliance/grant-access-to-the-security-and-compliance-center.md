@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 'Benutzer müssen Berechtigungen im Office 365 Security #a0 Compliance Center zugewiesen werden, bevor Sie alle Sicherheits-und Kompatibilitätsfeatures verwalten können.'
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645120"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792011"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Erteilen von Benutzern den Zugriff auf das Compliance Center für Office 365 Security #a0
 
@@ -39,11 +39,11 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
 - Partner mit Delegierten Zugriffsberechtigungen (DAP) mit verwalten im Namen von (AOBO) Berechtigungen können nicht auf das Sicherheits #a0 Compliance Center zugreifen.
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Verwenden Sie das Office 365 Admin Center, um einem anderen Benutzer Zugriff auf das Security #a0 Compliance Center zu gewähren.
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Verwenden des Admin Centers, um einem anderen Benutzer Zugriff auf das Security #a0 Compliance Center zu gewähren
 
 1. [Melden Sie sich bei Office 365 an, und wechseln Sie zum Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=525275).
 
-2. Öffnen Sie im Office 365 Admin Center **Administrator** Center, und klicken Sie dann auf **Sicherheit #a0 Kompatibilität**.
+2. Öffnen Sie im Microsoft 365 Admin Center **Admin** Center, und klicken Sie dann auf **Sicherheit #a0 Kompatibilität**.
 
 3. Wechseln Sie im Security #a0 Compliance Center zu **Berechtigungen**.
 

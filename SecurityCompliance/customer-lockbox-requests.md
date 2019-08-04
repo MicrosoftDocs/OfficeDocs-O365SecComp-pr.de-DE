@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Kunden Lockbox-Anforderungen, mit denen Sie steuern können, wie ein Microsoft-Supporttechniker auf Ihre Daten zugreifen kann, wenn Sie auf ein Problem stoßen.
-ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927578"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786620"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Kunden-Lockbox in Office 365
 

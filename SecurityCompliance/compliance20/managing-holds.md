@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154897"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791991"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Manage Holds in Advanced eDiscovery
 
@@ -31,7 +31,7 @@ In einigen Fällen verfügen Sie möglicherweise über eine Reihe von Datenverwa
 
 So zeigen Sie die Richtlinie für Depot Aufbewahrung an:
 
-1. Klicken Sie im **Security & Compliance Center**auf **eDiscovery > Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im **Security #a0 Compliance Center**auf **eDiscovery #a1 Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
    
 2. Wechseln Sie zur Registerkarte **depotverwalter** , um Verwalter in Ihrem Fall hinzuzufügen. Weitere Informationen zum Hinzufügen und Platzieren von Depot Haltern in einem erweiterten eDiscovery-Fall finden Sie unter Hinzufügen von Depot Betreuern [zu einem erweiterten eDiscovery-Fall](add-custodians-to-case.md). Wenn Sie bereits Verwalter hinzugefügt und in die Warteschleife gesetzt haben, fahren Sie mit Schritt 3 fort.
    
@@ -48,7 +48,7 @@ Wenn Sie einen Haltebereich erstellen, haben Sie die folgenden Optionen, um den 
 
 So erstellen Sie einen Aufbewahrungsplatz für einen erweiterten eDiscovery-Fall:
 
-1. Klicken Sie im **Security & Compliance Center**auf **eDiscovery > Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie im **Security #a0 Compliance Center**auf **eDiscovery #a1 Advanced eDiscovery** , um die Liste der Fälle in Ihrer Organisation anzuzeigen.
   
 2. Klicken Sie neben dem Fall, in dem Sie die Aufbewahrungspflicht erstellen möchten, auf **Öffnen** .
   
@@ -132,7 +132,7 @@ Beachten Sie die folgenden Aspekte bei Aufbewahrungs Statistiken:
 
  - Wenn das Postfach eines Benutzers durchsucht wird, werden alle Office 365 Gruppen oder Microsoft Teams, bei denen der Benutzer Mitglied ist, nicht durchsucht. Wenn Sie eine Office 365 Gruppe oder ein Microsoft-Team halten, wird auf ähnliche Weise nur das Gruppenpostfach und die Gruppen Website in den Wartebereich verschoben. die Postfächer und OneDrive für Unternehmen Websites von Gruppenmitgliedern werden nur gespeichert, wenn Sie Sie explizit als Verwalter hinzufügen oder Ihre Datenquellen halten. Wenn Sie daher eine Office 365 Gruppe oder ein Microsoft-Team für eine bestimmte Depotbank in die Warteschleife stellen müssen, sollten Sie die Gruppen Website und das Gruppenpostfach der Depotbank zuordnen (siehe Managing custodys in Advanced eDiscovery). Wenn die Office 365 Gruppe oder das Microsoft-Team nicht auf eine einzelne Depotbank zurückzuführen ist, sollten Sie die Quelle einem nicht-Freiheitsentzug-Aufbewahrungsplatz hinzufügen. 
  
- - Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite "Start-> Gruppen" im Office 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
+ - Wenn Sie eine Liste der Mitglieder einer Office 365 Gruppe oder eines Microsoft-Teams erhalten möchten, können Sie die Eigenschaften auf der Seite Start #a0 Gruppen im Microsoft 365 Admin Center anzeigen. Alternativ können Sie den folgenden Befehl in Exchange Online PowerShell ausführen:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

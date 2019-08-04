@@ -3,7 +3,7 @@ title: Nicht überprüfter Absender
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600261"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628508"
 ---
 # <a name="unverified-sender"></a>Nicht überprüfter Absender
+
+> [!NOTE] 
+> Diese Updates werden jetzt ausgerollt und sind möglicherweise noch nicht für alle Benutzer verfügbar.
 
 Um zu verhindern, dass Phishing-Nachrichten Ihr Postfach erreichen, überprüfen Outlook.com und Outlook im Internet, ob der Absender der Benutzer ist, der Sie sagen, und verdächtige Nachrichten als Junk-e-Mail markieren.
 
@@ -35,7 +38,7 @@ Outlook.com und Outlook im Internet zeigen Indikatoren an, wenn der Absender ein
 
 Wenn Sie ein Office 365er Kunde sind, können Sie diese Funktion über das Security #a0 Compliance Center verwalten. 
 
-- Im Office 365 Security #a0 Compliance Center können mandantenadministratoren das Feature über den Schutz vor Spoofing unter der Anti-Phishing-Richtlinie aktivieren oder deaktivieren. Darüber hinaus kann es über das Cmdlet "AntiPhishPolicy" verwaltet werden. Weitere Informationen finden Sie unter Anti-Phishing Protection in Office 365 und AntiPhishPolicy.
+- Im Office 365 Security #a0 Compliance Center können globale oder Sicherheitsadministratoren das Feature über den Schutz vor Spoofing unter der Anti-Phishing-Richtlinie aktivieren oder deaktivieren. Darüber hinaus kann es über das Cmdlet "AntiPhishPolicy" verwaltet werden. Weitere Informationen finden Sie unter [Anti-Phishing Protection in Office 365](anti-phishing-protection.md) und [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
 
     ![Bearbeiten von nicht authentifizierten Absendern in der grafischen Benutzeroberfläche.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

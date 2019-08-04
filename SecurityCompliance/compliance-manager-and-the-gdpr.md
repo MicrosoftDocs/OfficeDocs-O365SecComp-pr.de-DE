@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152094"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786650"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager und die dsgvo
 
-Die allgemeine Datenschutzverordnung (dsgvo), die von der Europäischen Union erlassen wird, kann sich auf Ihre Compliance-Strategie auswirken und die erforderlichen Aktionen zum Verwalten von Benutzer-und Kundeninformationen im Compliance-Manager betreffen.
+Die allgemeine Datenschutzverordnung (dsgvo), die von der Europäischen Union erlassen wird, kann sich auf Ihre Compliance-Strategie auswirken und spezifische Aktionen zum Verwalten von Benutzer-und Kundeninformationen im Compliance-Manager durchführen.
 
 ## <a name="user-privacy-settings"></a>Datenschutzeinstellungen
 
@@ -59,7 +59,7 @@ Sie können für jedes identifizierte Benutzerkonto einen Bericht über Abhängi
 3. Öffnen Sie das Dokument, um die Daten des Berichts zu überprüfen.
 
 > [!IMPORTANT]
-> Hierbei handelt es sich nicht um einen Verlaufsbericht, der Statusänderungen an Aktionselement-Zuordnungs Verlauf aufrecht erhalten und anzeigt. Der generierte Bericht ist eine Momentaufnahme der Steuerungs Aktionselemente, die zum Zeitpunkt der Ausführung des Berichts zugewiesen wurden (Datum und Zeitstempel in den Bericht). Beispielsweise ergeben alle nachfolgenden Neuzuweisungen von Aktionselementen unterschiedliche Momentaufnahme Berichtsdaten, wenn dieser Bericht für denselben Benutzer erneut generiert wird.
+> Bei den Berichtsdaten handelt es sich nicht um eine Verlaufsliste, in der Statusänderungen an Aktionselement-Zuordnungs Verlauf gespeichert und angezeigt werden. Der generierte Bericht ist eine Momentaufnahme der Steuerungs Aktionselemente, die zum Zeitpunkt der Ausführung des Berichts zugewiesen wurden (Datum und Zeitstempel in den Bericht). Beispielsweise ergeben alle nachfolgenden Neuzuweisungen von Aktionselementen unterschiedliche Snapshot-Berichtsdaten, wenn der Bericht für denselben Benutzer erneut generiert wird.
   
 ## <a name="delete-user-data-history"></a>Löschen der Verlaufsdaten von Benutzern
 

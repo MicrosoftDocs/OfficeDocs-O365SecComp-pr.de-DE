@@ -2,7 +2,7 @@
 title: In Quarantäne stellen von E-Mail-Nachrichten in Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
@@ -16,12 +16,12 @@ ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
 - M365-security-compliance
 description: Sie können eine Quarantäne für eingehende e-Mail-Nachrichten in Office 365 einrichten, in der eingehende e-Mail-Nachrichten, die als Spam gefiltert wurden, Massen, Phishing-e-Mails und Schadsoftware, für eine spätere Überprüfung aufbewahrt werden können.
-ms.openlocfilehash: 90a8c9f36468fdc8c5d5825776e9678cd8f8e109
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 512f6caa937b2abd083350015e5a366d11502964
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156827"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601292"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>In Quarantäne stellen von E-Mail-Nachrichten in Office 365
 

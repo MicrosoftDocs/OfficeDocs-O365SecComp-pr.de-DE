@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: In diesem Artikel erfahren Sie, wie Sie SharePoint Online IRM über Microsoft Azure Active Directory Rights Management Services (RMS) zum Schutz von SharePoint-Listen und-Dokumentbibliotheken verwenden.
-ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 6fc51eaaf7f5d5d22167d10ab70d45dbf03cc6d2
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756847"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792071"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -34,7 +34,7 @@ Melden Sie sich nach dem Aktivieren des Rights Management-Diensts beim SharePoin
   
 1. Melden Sie sich bei Office 365 als globaler Administrator oder SharePoint-Administrator an.
     
-2. Klicken Sie auf das App ![-Start Symbol im Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) oben links auf das App-Start Symbol, und wählen Sie **Admin** aus, um das Office 365 Admin Center zu öffnen. (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. Wählen Sie das Symbol für das App-Startfeld ![The app launcher icon in Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in der oberen linken Ecke und dann **Administrator** aus, um das Microsoft 365 Admin Center zu öffnen. (Wenn die Kachel „Administrator“ nicht angezeigt wird, verfügen Sie in Ihrem Unternehmen nicht über Office 365-Administratorberechtigungen.) 
     
 3. Wählen Sie im linken Bereich **Admin Center** \> **SharePoint**aus.
     
@@ -51,7 +51,7 @@ Wenn Websitebesitzer IRM für eine Liste oder Bibliothek aktivieren, können Sie
   
 Wenn Personen Dateien in einer IRM-fähigen Liste oder Bibliothek herunterladen, werden die Dateien verschlüsselt, sodass nur autorisierte Personen Sie anzeigen können. Jede Datei mit verwalteten Rechten enthält auch eine Veröffentlichungslizenz, die den Personen, die die Datei anzeigen, Einschränkungen auferlegt. Zu den typischen Einschränkungen gehören das schreibgeschützte Erstellen einer Datei, das Deaktivieren des Kopierens von Text, das verhindern, dass Benutzer eine lokale Kopie speichern, und das verhindern, dass Benutzer die Datei drucken. Client Programme, die IRM-Unterstützte Dateitypen lesen können, verwenden die Veröffentlichungslizenz in der Datei mit verwalteten Rechten, um diese Einschränkungen zu erzwingen. Auf diese Weise behält eine Datei mit verwalteten Rechten ihren Schutz auch nach dem Herunterladen bei. Informationen zum Aktivieren von IRM für eine Liste oder Bibliothek finden Sie unter [Anwenden der Verwaltung von Informationsrechten auf eine Liste oder Bibliothek](apply-irm-to-a-list-or-library.md).
   
-Sie können keine Dokumente in einer IRM-fähigen Bibliothek mit Office Online erstellen oder bearbeiten. Stattdessen kann eine Person gleichzeitig IRM-verschlüsselte Dateien herunterladen und bearbeiten. Verwenden Sie das Einchecken und Auschecken, um die *gemeinsame Dokumenterstellung* oder die Erstellung für mehrere Benutzer zu verwalten. 
+Sie können Dokumente in einer IRM-fähigen Bibliothek nicht mithilfe von Office in einem Browser erstellen oder bearbeiten. Stattdessen kann eine Person gleichzeitig IRM-verschlüsselte Dateien herunterladen und bearbeiten. Verwenden Sie das Einchecken und Auschecken, um die *gemeinsame Dokumenterstellung* oder die Erstellung für mehrere Benutzer zu verwalten. 
   
 Wenn Sie eine PDF-Datei aus einer IRM-geschützten Bibliothek herunterladen, erstellt Office 365 eine geschützte PDF-Datei. Die Dateierweiterung ändert sich nicht, die Datei ist jedoch geschützt. Zum Anzeigen dieser Datei benötigen Sie den Azure Information Protection-Viewer, den vollständigen Azure Information Protection-Client oder eine andere Anwendung, die das Anzeigen geschützter PDF-Dateien unterstützt. 
   

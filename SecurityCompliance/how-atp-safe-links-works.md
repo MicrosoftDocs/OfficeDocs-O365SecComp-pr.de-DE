@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Das Feature "sichere Links" bietet eine Zeit-für-Mausklick-Überprüfung von Hyperlinks in Office-Dokumenten und e-Mail-Nachrichten. Lesen Sie diesen Artikel, um zu erfahren, wie ATP-sichere Links funktionieren.
-ms.openlocfilehash: 7570fd65a9831a6436eec8c402a2bc0c2ae09b40
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599181"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792041"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Funktionsweise von Office 365 ATP-Sicherheits Links
          
@@ -49,9 +49,9 @@ Auf einer hohen Ebene funktioniert der Schutz für [ATP-sichere Links](atp-safe-
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>So funktioniert ATP-sichere Links mit URLs in Office-Dokumenten
 
-Auf hohem Niveau funktioniert der Schutz für [ATP-sichere Links](atp-safe-links.md) für URLs in Office 365 ProPlus-Anwendungen (aktuelle Versionen von Word, Excel und PowerPoint unter Windows oder Mac, Office-Apps auf IOS-oder Android-Geräten, Visio unter Windows, OneNote Online und Office Online):
+Auf hohem Niveau funktioniert der Schutz von [ATP-Links](atp-safe-links.md) für URLs in Office 365 ProPlus-Anwendungen (aktuelle Versionen von Word, Excel und PowerPoint unter Windows oder Mac, Office-Apps auf IOS-oder Android-Geräten, Visio unter Windows, OneNote in einem Browser und Office in einem Browser):
   
-1. Benutzer haben Office 365 ProPlus auf Ihrem Computer, Smartphone oder Tablet installiert. (Oder verwenden Sie Office Online im Browser.)
+1. Benutzer haben Office 365 ProPlus auf Ihrem Computer, Smartphone oder Tablet installiert. (Oder Sie verwenden Office in Ihrem Browser.)
     
 2. Ein Benutzer öffnet ein Word-, Excel-, PowerPoint-oder Visio-Konto und meldet sich bei Office 365 Enterprise mithilfe seines Arbeits-oder Schul Kontos an. Das Dokument enthält URLs.
     

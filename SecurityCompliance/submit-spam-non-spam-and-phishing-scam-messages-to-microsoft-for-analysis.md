@@ -2,7 +2,7 @@
 title: Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Sie und Ihre Benutzer können falsche Negative und falsch positive Spamnachrichten zur Analyse an Microsoft übermitteln. '
-ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4ca0cf08a2c24ce077756a4c481afd7af59b20a7
+ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156457"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638474"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Übermitteln von Spam-, Nicht-Spamnachrichten und Nachrichten, die als betrügerische Phishing-Angriffe angesehen werden, an Microsoft zur Analyse
 
@@ -27,6 +27,8 @@ Es kann frustrierend sein, wenn Benutzer in Ihrer Organisation Junk-Nachrichten 
   
 > [!NOTE]
 > Aufgrund der hohen Anzahl von Übermittlungen, die wir erhalten, können wir möglicherweise nicht alle Anfragen zur Analyse beantworten. 
+
+Administratoren können e-Mails, URLs und Anlagen zur Überarbeitung an Microsoft senden. Siehe [Admin Übermittlungen in Office 365 ATP](admin-submission.md).
   
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Weiterleiten von Junk-E-Mails und Phishingnachrichten, die den Spamfilter passiert haben
 <a name="sectionSection0"> </a>

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 55f90996997a60fd95347941bdcad7707c890166
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155257"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786640"
 ---
 # <a name="compliance-score-methodology-preview"></a>Methodik der Konformitätsbewertung (Vorschau)
 
@@ -39,21 +39,21 @@ Aktionselemente werden Steuerelementen zugeordnet, und wenn ein Steuerelement me
   
 ### <a name="mandatory-or-discretionary-controls"></a>Obligatorische oder diskretionäre Steuerelemente
   
- **Zwingende Steuerelemente** sind Steuerelemente, die weder absichtlich noch versehentlich umgangen werden können. Ein Beispiel für ein allgemeines obligatorisches Steuerelement ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für die Länge, Komplexität und den Ablauf von Kennwörtern festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
+ **Zwingende Steuerelemente** sind Aktionen, die weder absichtlich noch versehentlich umgangen werden können. Ein Beispiel für ein allgemeines obligatorisches Steuerelement ist eine zentral verwaltete Kennwortrichtlinie, die Anforderungen für die Länge, Komplexität und den Ablauf von Kennwörtern festlegt. Benutzer müssen diese Anforderungen erfüllen, um auf das System zugreifen zu können.
   
  **Diskretionäre Steuerelemente** basieren darauf, dass Benutzer Richtlinien verstehen und entsprechend handeln. Beispielsweise ist eine Richtlinie, bei der Benutzer Ihren Computer beim Verlassen des Computers Sperren müssen, ein diskretionäres Steuerelement, da es vom Benutzer abhängig ist.
   
 ### <a name="preventative-detective-or-corrective-controls"></a>Vorbeugende, Detektive oder korrigierende Steuerelemente
   
- **Vorbeugende Steuerelemente** sind Steuerelemente, die bestimmte Risiken verhindern. Beispielsweise ist das Schützen von Informationen im Ruhezustand mithilfe von Verschlüsselung eine vorbeugende Kontrolle gegen Angriffe und Verstöße. Die Trennung von Zöllen ist eine präventive Kontrolle zur Verwaltung von Interessenkonflikten und zum Schutz vor Betrug.
+ **Vorbeugende Steuerelemente** sind Aktionen, die bestimmte Risiken verhindern. Beispielsweise ist das Schützen von Informationen im Ruhezustand mithilfe von Verschlüsselung eine vorbeugende Kontrolle gegen Angriffe und Verstöße. Die Trennung von Zöllen ist eine präventive Kontrolle zur Verwaltung von Interessenkonflikten und zum Schutz vor Betrug.
   
- **Detektiv Steuerelemente** sind Steuerelemente, die Systeme aktiv überwachen, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die Risiken darstellen oder die verwendet werden können, um Eindringversuche zu erkennen oder um festzustellen, ob ein Verstoß aufgetreten ist. Die System Zugriffsüberwachung und die Überwachung privilegierter administrativer Aktionen sind Typen von Detektiv Überwachungs Steuerelementen. Compliance-Überwachungen sind eine Art von Detektiv Steuerung, die zum Auffinden von Prozessproblemen verwendet wird.
+ **Detektiv Steuerelemente** sind Aktionen, die Systeme aktiv überwachen, um unregelmäßige Bedingungen oder Verhaltensweisen zu identifizieren, die Risiken darstellen oder die verwendet werden können, um Eindringversuche zu erkennen oder um festzustellen, ob ein Verstoß aufgetreten ist. Die System Zugriffsüberwachung und die Überwachung privilegierter administrativer Aktionen sind Typen von Detektiv Überwachungs Steuerelementen. Compliance-Überwachungen sind eine Art von Detektiv Steuerung, die zum Auffinden von Prozessproblemen verwendet wird.
   
 **Korrektur Steuerelemente** sind Steuerelemente, die versuchen, die negativen Auswirkungen eines Sicherheitsvorfalls auf ein Minimum zu beschränken, Korrekturmaßnahmen zur Verringerung des unmittelbaren Effekts zu ergreifen und den Schaden nach Möglichkeit umzukehren. Die Antwort auf Datenschutz Vorfälle ist eine Korrekturhilfe, um nach einem Verstoß Schäden zu begrenzen und Systeme auf einen Betriebszustand zurückzusetzen.
   
 Jedes Steuerelement besitzt einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das es darstellt:
 
-|**Typ**|**Zugewiesene Punktzahl**|
+|**Type**|**Zugewiesene Punktzahl**|
 |:-----|:-----|
 | Vorbeugende Pflicht | 27 |
 | Vorbeugender Ermessensspielraum | 9 |
