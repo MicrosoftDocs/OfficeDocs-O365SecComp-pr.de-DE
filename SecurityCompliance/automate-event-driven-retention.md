@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Thema wird erläutert, wie Sie Geschäftsprozessabläufe über Ereignisse mithilfe der Microsoft 365-REST-API einrichten können, um die Aufbewahrung zu automatisieren.
-ms.openlocfilehash: c89abc373a6c0a1de6b6528c638dbd34e586b6d7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 180c98c57986ef7523548978bd1709cc79205e86
+ms.sourcegitcommit: 28484eb103bc7f3694f10e010228472049adbe9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152277"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35594353"
 ---
 # <a name="automate-event-based-retention"></a>Automatisieren der ereignisbasierten Aufbewahrung
 
@@ -170,7 +170,7 @@ Beispielcode zum Aufrufen der REST-API
 <tbody>
 <tr class="odd">
 <td>URL</td>
-<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent)</td>
+<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</td>
 <td></td>
 </tr>
 <tr class="even">
