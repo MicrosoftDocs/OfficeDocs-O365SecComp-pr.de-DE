@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Erfahren Sie mehr über die am häufigsten verwendeten Verfahren zur Reduzierung von Spam und Junk-E-Mails in Office 365.
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601232"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054707"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reduzieren von Spam-E-Mails in Office 365
 
  **Erhalten Sie zu viel Spam in Office 365? Hier ist die Lösung.**
   
-Es wird dringend empfohlen, uns über falsch negative Nachrichten [mit dem Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) zu informieren, damit wir unsere Filter verbessern können. Darüber hinaus können Sie die Nachricht *als Anlage* an "junk@office365.microsoft.com" oder "phish@office365.microsoft.com" (im Falle einer Phishing-Mail) weiterleiten.
+Es wird dringend empfohlen, uns über falsch negative Nachrichten [mit dem Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) zu informieren, damit wir unsere Filter verbessern können. Zusätzlich können Sie die Nachricht über den [Übermittlungen-Explorer](admin-submission.md) übermitteln.
 
 > [!TIP]
 > Wenn Sie davon ausgehen, dass es sich bei der Nachricht um eine Junk-E-Mail handelt, und diese sich im Junk-E-Mail-Ordner befindet, sollte dies kein Problem darstellen. Soll die Nachricht in gar keinem Postfach angezeigt werden, müssen Sie die Antispamrichtlinie so ändern, dass die Nachricht unter Quarantäne gestellt wird. Weitere Informationen zur Quarantäne für eine Nachricht finden Sie im Artikel [Unter Quarantäne stellen von E-Mail-Nachrichten in Office 365](quarantine-email-messages.md).
@@ -55,9 +55,12 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
 - 
   **Massen-E-Mails als Spam kennzeichnen** Bei Massen-E-Mails handelt es sich um E-Mails, für die sich Benutzer vielleicht registriert haben, die aber dennoch unerwünscht sind. Suchen Sie im Nachrichtenkopf die BCL-Eigenschaft (Bulk Complaint Level) in der Kopfzeile „X-Microsoft-Antispam“. Wenn der BCL-Wert niedriger als der im Spamfilter festgelegte Wert ist, können Sie den Schwellenwert so anpassen, dass stattdessen diese Typen von Massen-E-Mails als Spam markiert werden. Unterschiedliche Benutzer haben unterschiedliche Toleranzen und Vorlieben dafür, [wie Massen-E-Mails behandelt werden](https://docs.microsoft.com/de-DE/office365/SecurityCompliance/bulk-complaint-level-values). Sie können unterschiedliche Richtlinien oder Regel für die unterschiedlichen Wünsche der Benutzer erstellen. 
     
-- **Sofortiges Blockieren eines Absenders** Falls Sie einen Absender sofort blockieren müssen, können Sie ihn nach E-Mail-Adresse, Domäne oder IP-Adresse blockieren. Siehe [Erstellen von Listen blockierter Absender in Office 365](create-block-sender-lists-in-office-365.md). Ein Eintrag in einer Endbenutzer-Zulassungsliste kann eine vom Administrator festgelegten Blockung außer Kraft setzen.
+- **Einen Absender sofort blockieren** Wenn Sie einen Absender sofort blockieren müssen, können Sie anhand der E-Mail-Adresse, der Domäne oder der IP-Adresse blockieren. Lesen Sie die Informationen unter [Erstellen von Listen der blockierten Absender in Office 365](create-block-sender-lists-in-office-365.md). Ein Eintrag in einer Liste zulässiger Absender eines Benutzers kann eine vom Administrator festgelegte Sperre überschreiben.
     
-- **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
+- **Aktivieren des Add-Ins "Nachricht melden" für Benutzer** Es wird dringend empfohlen, dass Sie das [Add-In "Nachricht melden" für Ihre Benutzer aktivieren](enable-the-report-message-add-in.md).
+
+- **Verwenden Sie [Übermittlungen-Explorer](admin-submission.md)** -Administratoren können jetzt E-Mails mithilfe von Datei-oder Netzwerknachrichten-ID,-URLs und-Dateien zum Scannen durch Microsoft in Office 365 senden. Als Administrator können Sie ggf. auch das Feedback anzeigen, das Ihre Benutzer senden, und beliebige Muster verwenden, um alle Einstellungen anzupassen, die möglicherweise Probleme verursachen.
+
 - **Aktivieren der [DKIM](use-dkim-to-validate-outbound-email.md)**, um alle ausgehenden Nachrichten zu signieren, damit die Sicherheit in Ihrer Domäne und in Ihrem Mandanten gesteigert wird.
  > [!TIP]
 > Nachdem Sie DKIM aktiviert haben, müssen Sie [DMARC](use-dkim-to-validate-outbound-email.md) aktivieren, da dieser Eintrag überprüft, ob DKIM und SPF korrekt arbeiten. Spoofing-E-Mails weisen die Signatur im Allgemeinen nicht auf, da O365 Ihren privaten und öffentlichen symmetrischen Schlüssel verwaltet.
@@ -66,8 +69,6 @@ Um Sie vor zu viel Spam zu schützen, müssen Administratoren in Exchange Online
 
 - **Die Junk-E-Mail-Regel aktivieren und die Zulassungsliste überprüfen** Überprüfen Sie, ob die Regel für die Junk-E-Mail-Aktion aktiviert wurde und dass der Absender oder die Domäne des Absenders in Ihrer persönlichen Liste zulässiger Adressen nicht übergangen wird. Die beste Möglichkeit, um auf diese Einstellungen zuzugreifen, ist über [Blockieren oder Zulassen (Junk-E-Mail-Einstellungen)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). An dieser Stelle können Sie auch festlegen, dass die E-Mail-Adresse oder Domäne des Absenders blockiert werden soll.
     
-- **Spam an Microsoft melden** Melden Sie Spamnachrichten an Microsoft, indem Sie das [Add-In zum Melden von Nachrichten verwenden](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Darüber hinaus können Sie eine Nachricht an junk@office365.microsoft.com senden und eine oder mehrere Nachrichten anfügen, die Sie melden möchten.
-    
-    **Wichtig** Wenn Sie die Nachrichten nicht als Anlagen weiterleiten, so fehlen uns die Kopfzeilen und wir können den Junk-E-Mail in Office 365 nicht verbessern. 
-    
+- **Melden von Spam an Microsoft** Melden Sie Spamnachrichten [mit dem Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) an Microsoft.
+       
 - **Abonnement von Massen-E-Mails kündigen** Wenn Sie sich für die Nachricht registriert haben (Newsletter, Produktankündigungen usw.) und diese einen Link zum Kündigen des Abonnements von einer vertrauenswürdigen Quelle enthält, können Sie das Abonnement einfach kündigen. In Office 365 werden diese Nachrichten in der Regel nicht als Spam behandelt. Sie können auch den Absender blockieren oder Ihren Administrator bitten, eine Änderung vorzunehmen, die bewirkt, dass alle Massen-E-Mails als Spam behandelt werden.

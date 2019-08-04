@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie falsch positive Ergebnisse verhindern und echte E-Mail-Nachrichten davor schützen, im Junk-E-Mail-Ordner von Office 365 zu landen.
-ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: baf3fa52f34107ad82c392b52295d35a7e0002c4
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157477"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054673"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Verhindern, dass echte E-Mails in Office 365 als Spam gekennzeichnet werden
 
  **Werden echte E-Mails in Office 365 als Spam gekennzeichnet? Hier kommt die Lösung.**
   
-Wenn Sie ein falsch positives Ergebnis erhalten, sollten Sie die Nachricht an Microsoft melden. [Verwenden Sie dazu das Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Zusätzlich können Sie die Nachricht * als Anhang* an "not_junk@office365.microsoft.com" weiterleiten.
-
-**Wichtig** Wenn Sie die Nachrichten als Anlage nicht weiterleiten, fehlen uns die Kopfzeilen und wir können die Junk-E-Mail-Filterung in Office 365 nicht verbessern.
+Wenn Sie ein falsch positives Ergebnis erhalten, sollten Sie die Nachricht an Microsoft melden. [Verwenden Sie dazu das Add-In "Nachricht melden"](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Zusätzlich können Sie die Nachricht mittels[ Übermittlungen-Explorer](admin-submission.md) übermitteln.
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Ermitteln der Ursache, warum die Nachricht als Spam gekennzeichnet wurde
 
@@ -62,7 +60,9 @@ Um effektiv zu arbeiten, müssen Administratoren in Exchange Online Protection (
 
 - **DNS-Einträge auf Office 365 zeigen lassen** Damit EOP Schutz bieten kann, müssen die MX-DNS-Einträge (Mail Exchanger) für alle Domänen ausschließlich auf Office 365 zeigen. Wenn die MX-Einträge nicht auf Office 365 zeigen, bietet EOP keinen Spamfilter für Ihre Benutzer. Wenn Sie einen anderen Dienst oder eine andere Anwendung für den Spamfilter für Ihre Domäne verwenden möchten, sollten Sie den Spamschutz in EOP deaktivieren. Erstellen Sie hierfür eine E-Mail-Flussregel, durch die der SCL-Wert auf -1 festgelegt wird. Wenn Sie sich später entschließen, doch EOP zu verwenden, entfernen Sie diese E-Mail-Flussregel. 
     
-- **Aktivieren des Add-Ins zum Melden von Nachrichten für Benutzer** Wir raten Ihnen dringend, dass Sie [das Add-In zum Melden von Nachrichten für Benutzer aktivieren](enable-the-report-message-add-in.md). Als Administrator können Sie vielleicht auch das Feedback anzeigen, das Ihre Benutzer abgeben, und beliebige Muster verwenden, um Einstellungen anzupassen, die möglicherweise zu Problemen führen.
+- **Aktivieren des Add-Ins "Nachricht melden" für Benutzer** Es wird dringend empfohlen, dass Sie das [Add-In "Nachricht melden" für Ihre Benutzer aktivieren](enable-the-report-message-add-in.md).
+
+- **Verwenden Sie [Übermittlungen-Explorer](admin-submission.md)** -Administratoren können jetzt E-Mails mithilfe von Datei-oder Netzwerknachrichten-ID,-URLs und-Dateien zum Scannen durch Microsoft in Office 365 senden. Als Administrator können Sie ggf. auch das Feedback anzeigen, das Ihre Benutzer senden, und beliebige Muster verwenden, um alle Einstellungen anzupassen, die möglicherweise Probleme verursachen.
 
 - 
   **Stellen Sie sicher, dass sich die Benutzer innerhalb der zulässigen Grenzwerte** zum Senden und Empfangen von E-Mails befinden, wie [hier](https://docs.microsoft.com/de-DE/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) gezeigt.
@@ -80,7 +80,6 @@ Von EOP werden die sicheren Absender und Empfänger Ihrer Benutzer berücksichti
 - **Deaktivieren des SmartScreen-Filters in Outlook** Wenn Ihre Benutzer den Outlook-Desktopclient verwenden, sollten sie den SmartScreen-Filter deaktivieren, da dieser nicht mehr unterstützt wird. Wenn dieses Feature aktiviert ist, kann es zu falsch positiven Ergebnissen führen. führen. Dies sollte nicht erforderlich sein, wenn ein aktualisierter Desktopclient für Outlook ausgeführt wird.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Problembehandlung: Eine Nachricht befindet sich im Ordner "Junk", obwohl EOP die Nachricht als Nicht-Spam-Nachricht gekennzeichnet hat
-
 
 Wenn die Benutzer in Outlook die Option "Nur sichere Absender und Empfänger: Es werden nur Nachrichten von Personen und Domänen auf den Listen 'Sichere Absender' und 'Sichere Empfänger' in den Posteingang übermittelt" aktiviert haben, werden alle E-Mails von einem Absender in den Junk-E-Mail-Ordner verschoben, es sei denn, dieser Absender ist auf der Liste sicherer Absender des Empfängers verzeichnet. Dies erfolgt unabhängig davon, ob EOP eine Nachricht als Nicht-Spam-Nachricht kennzeichnet oder Sie in EOP eine Regel eingerichtet haben, um eine Nachricht als Nicht-Spam-Nachricht zu kennzeichnen.
   
