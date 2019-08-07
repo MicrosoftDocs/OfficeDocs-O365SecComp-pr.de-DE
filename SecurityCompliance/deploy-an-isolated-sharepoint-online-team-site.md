@@ -3,7 +3,7 @@ title: Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/14/2018
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
-ms.openlocfilehash: 488f834f568e65d35a7186b85cc393f5a66b2900
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b7fdbc0e387ee2181a850e950537f3fed5ae50
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153397"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053102"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -68,9 +68,9 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
     
 3. Klicken Sie auf dem Blatt **Gruppen - Alle Gruppen** auf **+ Neue Gruppe**.
     
-4. Auf dem Blatt **Gruppe**:
+4. Auf dem **neuen Gruppen** Blatt:
     
-  - Wählen Sie **Office 365** unter **Gruppentyp** aus.
+  - Wählen Sie **Sicherheit** in **Gruppentyp**aus.
     
   - Geben Sie den Gruppennamen unter **Name** ein.
     
@@ -99,11 +99,11 @@ Führen Sie in diesem Schritt die folgenden Aufgaben aus:
     
 3. Fügen Sie die Liste der Benutzer aus Schritt 3 zur Zugriffsgruppe der Websitebetrachter hinzu.
     
-Wenn Sie Benutzerkonten und Gruppen über Windows Server AD verwalten, fügen Sie die Benutzer mit Ihren gewohnten Verfahren zur Verwaltung von Windows Server AD-Benutzern und -Gruppen zu den entsprechenden Zugriffsgruppen hinzu, und warten Sie, bis die Synchronisierung mit Ihrem Office 365-Abonnement erfolgt ist.
+Wenn Sie Benutzerkonten und Gruppen über Active Directory-Domänendienste (AD DS) verwalten, fügen Sie Benutzer den entsprechenden Zugriffsgruppen mithilfe der normalen AD DS Benutzer-und Gruppen Verwaltungsverfahren hinzu, und warten Sie mit dem Office 365 Abonnement auf die Synchronisierung.
   
-Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das Office Admin Center oder PowerShell verwenden. Wenn für eine der Zugriffsgruppen doppelte Gruppennamen vorliegen, sollten Sie das Office Admin Center verwenden.
+Wenn Sie Benutzerkonten und Gruppen über Office 365 verwalten, können Sie das Microsoft 365 Admin Center oder PowerShell verwenden. Wenn Sie doppelte Gruppennamen für eine der Zugriffsgruppen haben, sollten Sie das Microsoft 365 Admin Center verwenden.
   
-Bei Verwendung des Office Admin Centers melden Sie sich mit einem Benutzerkonto an, dem die Rolle „Benutzerkontoadministrator“ oder „Unternehmensadministrator“ zugewiesen wurde, und verwenden Sie Gruppen, um die entsprechenden Benutzerkonten und -gruppen zu den entsprechenden Zugriffsgruppen hinzuzufügen.
+Melden Sie sich für das Microsoft 365 Admin Center mit einem Benutzerkonto an, dem die Rolle "Benutzerkonto Administrator" oder "Unternehmensadministrator" zugewiesen wurde, und verwenden Sie Gruppen zum Hinzufügen der entsprechenden Benutzerkonten und Gruppen zu den entsprechenden Zugriffsgruppen.
   
 Stellen Sie für PowerShell zunächst [eine Verbindung mit dem Azure Active Directory PowerShell for Graph-Modul her](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
@@ -144,7 +144,7 @@ Die Ergebnisse sollten folgendermaßen aussehen:
     
 - Die Azure AD-Gruppe der Websitebetrachter enthält die Benutzerkonten oder -gruppen, die den Websiteinhalt lediglich anzeigen können.
     
-Überprüfen Sie die Liste der Gruppenmitglieder für die einzelnen Zugriffsgruppen mit dem Office Admin Center oder mit dem folgenden PowerShell-Befehlsblock:
+Überprüfen Sie die Liste der Gruppenmitglieder für jede Zugriffsgruppe mit dem Microsoft 365 Admin Center oder mit dem folgenden PowerShell-Befehlsblock:
   
 ```
 $grpName="<display name of the access group>"

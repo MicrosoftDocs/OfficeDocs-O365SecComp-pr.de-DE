@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5168196dcac8a2cb3809f43fabb470c0f64cd0f7
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048146"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168131"
 ---
 # <a name="error-remediation-when-processing-data"></a>Beheben von Fehlern beim Verarbeiten von Daten
 
@@ -48,7 +48,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
     ![Herunterladen von Dateien](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Geben Sie zum Herunterladen von Dateien den **Ziel Pfad für den Download**an. Dies ist ein Pfad auf dem lokalen Computer, auf dem die Datei heruntergeladen wird.  Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers. Sie können diesen Pfad bei Bedarf ändern. Wenn Sie dies ändern, wird empfohlen, einen lokalen Dateipfad anstelle eines Remotenetzwerk Pfads zu verwenden, um eine optimale Leistung zu erzielen.
+5. Geben Sie zum Herunterladen von Dateien den **Ziel Pfad für den Download**an. Dies ist ein Pfad auf dem lokalen Computer, auf dem die Datei heruntergeladen wird.  Der Standardpfad,%USERPROFILE%\Downloads\errors, verweist auf den Ordner "Downloads" des angemeldeten Benutzers. Sie können diesen Pfad bei Bedarf ändern. Wenn Sie es ändern, wird empfohlen, einen lokalen Dateipfad für die beste Leistung zu verwenden. Verwenden Sie keinen Remotenetzwerk Pfad.
 
 6. Kopieren Sie den vordefinierten Befehl **, indem Sie auf in Zwischenablage kopieren**klicken. Starten Sie eine Windows-Eingabeaufforderung, fügen Sie den Befehl ein, und drücken Sie dann die **Eingabe**Taste.  
 
@@ -75,7 +75,7 @@ Verwenden Sie den folgenden Workflow, um Dateien mit Fehlern in erweiterten eDis
 
 11. Kehren Sie zu Advanced eDiscovery zurück, und klicken Sie auf **Weiter: Process files**.
 
-12. Nach Abschluss der Verarbeitung.  Sie können zur Überprüfungsgruppe zurückkehren und die korrigierte Datei anzeigen.
+12. Nach Abschluss der Verarbeitung. Sie können zur Überprüfungsgruppe zurückkehren und die korrigierte Datei anzeigen.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Was geschieht, wenn Dateien behoben werden
 
@@ -91,4 +91,4 @@ Bei hochzuladenden Dateien werden die ursprünglichen Metadaten mit Ausnahme der
 - WordCount
 - WorkingsetId
 
-Eine Definition aller Dokumentmetadaten-Felder in Advanced eDiscovery finden Sie unter [Document Metadata fields](document-metadata-fields.md).
+Eine Definition aller Metadatenfelder in Advanced eDiscovery finden Sie unter [Document Metadata fields](document-metadata-fields.md).

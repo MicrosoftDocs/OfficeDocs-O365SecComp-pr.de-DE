@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können.
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152487"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165661"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Übersicht über Office 365 Information Protection für die DSGVO
 
@@ -35,7 +35,7 @@ Artikel 4: Definitionen
 
 Diese Lösung soll Organisationen beim Erkennen und Schützen der personenbezogenen Daten in Office 365 helfen, die möglicherweise der DSGVO unterliegen. Sie wird nicht als Nachweis für DSGVO-Compliance angeboten. Organisationen sind für die Einhaltung ihrer DSGVO selbst verantwortlich und werden angewiesen, ihre Rechts- und Compliance-Teams heranzuziehen oder Rat und Hilfe bei auf Compliance spezialisierten Drittanbietern zu suchen.
 
-[DSGVO-Bewertung](https://assessment.microsoft.com/gdpr-compliance) ist ein kostenloses, schnelles Online-Selbstauswertungstool, mit dem Ihre Organisation ihre allgemeine Stufe der Bereitschaft zur Einhaltung der DSGVO überprüfen kann (<http://aka.ms/gdprassessment>).
+[DSGVO-Bewertung](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D) ist ein kostenloses, schnelles Online-Selbstauswertungstool, mit dem Ihre Organisation ihre allgemeine Stufe der Bereitschaft zur Einhaltung der DSGVO überprüfen kann.
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>Bewerten und Verwalten Ihres Compliance-Risikos
 
@@ -47,7 +47,7 @@ Der Compliance-Manager bietet Tools zum Nachverfolgen, Implementieren und Verwal
 
 ![Verwenden des Compliance-Managers zum Anzeigen von Anforderungen und zum Nachverfolgen des Fortschritts](Media/Overview-image1.png)
 
-Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers im Service Trust Portal](https://support.office.com/de-DE/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942). 
+Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers im Service Trust Portal](https://servicetrust.microsoft.com/ComplianceManager). 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Schritt 2 – Verwenden der Inhaltssuche und vertraulicher Informationstypen für die Suche nach personenbezogenen Daten 
 

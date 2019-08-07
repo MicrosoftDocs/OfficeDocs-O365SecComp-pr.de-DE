@@ -6,6 +6,7 @@
 ## [Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center](microsoft-security-and-compliance.md)
 ### [Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
 ### [Microsoft 365 Security Center](overview-security-center.md)
+### [Berechtigungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center](permissions-microsoft-365-compliance-security.md)
 ### [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md)
 ## [Wechseln zum Security & Compliance Center](go-to-the-securitycompliance-center.md)
 ### [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)

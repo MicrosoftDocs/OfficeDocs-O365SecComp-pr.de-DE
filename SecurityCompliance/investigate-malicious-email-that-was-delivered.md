@@ -3,7 +3,7 @@ title: Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Offic
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/19/2019
+ms.date: 08/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605450"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165671"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Advanced Threat Protection-Plan 2)
 
@@ -30,7 +30,7 @@ ms.locfileid: "35605450"
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
   
-- Ihre Organisation verfügt über [Office 365 Advanced Threat Protection](office-365-atp.md) (Plan 1 oder Plan 2) und [Lizenzen werden Benutzern zugewiesen](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Ihre Organisation verfügt über [Office 365 Advanced Threat Protection](office-365-atp.md) (Plan 2) und [Lizenzen werden Benutzern zugewiesen](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - [Office 365 Überwachungsprotokollierung](turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert. 
     
@@ -53,20 +53,20 @@ Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
 
 Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
 
-1. **Zugestellt** – e-Mails wurden im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.
-2. **Junked** – e-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mails in seinem Junk-oder Deleted-Ordner.
-3. **Blockiert** – alle e-Mails, die unter Quarantäne gestellt werden, die fehlgeschlagen sind oder gelöscht wurden. Auf diesen Zugriff kann der Benutzer vollständig zugreifen!
-4. **Ersetzt** – jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, in denen der Anhang als böswillig bezeichnet wird.
+- **Zugestellt** – e-Mails wurden im Posteingang oder Ordner eines Benutzers zugestellt, und der Benutzer kann direkt darauf zugreifen.
+- **Junked** – e-Mails wurden entweder an den Junk-Ordner des Benutzers oder den Ordner "gelöscht" gesendet, und der Benutzer hat Zugriff auf e-Mails in seinem Junk-oder Deleted-Ordner.
+- **Blockiert** – alle e-Mails, die unter Quarantäne gestellt werden, die fehlgeschlagen sind oder gelöscht wurden. Auf diesen Zugriff kann der Benutzer vollständig zugreifen!
+- **Ersetzt** – jede e-Mail-Nachricht, bei der böswillige Anlagen durch txt-Dateien ersetzt werden, in denen der Anhang als böswillig bezeichnet wird.
  
 Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden sind die möglichen Werte für den Zustellungs Speicherort zu finden:
 
-1. **Posteingang oder Ordner** – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
-2. **On-Prem oder External** – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
-3. **Junk-Ordner** – die e-Mail im Ordner Junk eines Benutzers.
-4. **Ordner "Gelöschte Elemente"** – die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
-5. **Quarantine** – die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
-6. **Fehler** – die e-Mail konnte das Postfach nicht erreichen.
-7. **Fallen gelassen** – die e-Mail wird irgendwo in der Nachrichtenübermittlung verloren.
+- **Posteingang oder Ordner** – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
+- **On-Prem oder External** – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
+- **Junk-Ordner** – die e-Mail im Ordner Junk eines Benutzers.
+- **Ordner "Gelöschte Elemente"** – die e-Mail im Ordner "Gelöschte Elemente" eines Benutzers.
+- **Quarantine** – die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
+- **Fehler** – die e-Mail konnte das Postfach nicht erreichen.
+- **Fallen gelassen** – die e-Mail wird irgendwo in der Nachrichtenübermittlung verloren.
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Suchen und löschen verdächtiger e-Mails, die zugestellt wurden
 
@@ -91,23 +91,20 @@ E-Mail-Zeitachse schneidet nach dem Zufallsprinzip aus, da es bei der Überprüf
 
 Nachdem Sie die e-Mail-Zeitachse geöffnet haben, sollten Sie eine Tabelle sehen, in der Ihnen die Ereignisse nach der Zustellung für diese e-Mail mitgeteilt werden, oder im Fall von keine weiteren Ereignisse für die e-Mail ein einzelnes Ereignis für die ursprüngliche Zustellung angezeigt wird, das ein Ergebnis wie " *Blockierte* " angibt. mit einem Urteil wie *Phishing*. Die Registerkarte hat auch die Möglichkeit, die gesamte e-Mail-Zeitachse zu exportieren, und dadurch werden alle Details auf der Registerkarte und Details in der e-Mail exportiert (Dinge wie Betreff, Absender, Empfänger, Netzwerk und Nachrichten-ID).
 
-
-<!--Comment>    
-3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. Wählen Sie im Menü Ansicht die Option **alle e-Mails**aus.<br/>![Verwenden des Menüs "Ansicht" zum Auswählen zwischen e-Mail-und Inhalts Berichten](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)
+4. Beachten Sie die Bezeichnungen, die im Bericht angezeigt werden, **** beispielsweise zugestellt, **unbekannt**oder **an Junk gesendet**.<br/>![Threat Explorer mit Daten für alle e-Mails](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Abhängig von den Aktionen, die für e-Mail-Nachrichten für Ihre Organisation durchgeführt wurden, werden möglicherweise zusätzliche Bezeichnungen wie " **blockiert** " oder " **ersetzt**" angezeigt.)
     
-5. In the report, choose **Delivered** to view only emails that ended up in users' inboxes.<br/>![Clicking "Delivered to junk" removes that data from view](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. Wählen Sie im Bericht **zugestellt** aus, um nur e-Mails anzuzeigen, die in den Posteingängen von Benutzern landeten.<br/>![Durch Klicken auf "an Junk zugestellt" werden die Daten aus der Ansicht entfernt.](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. Below the chart, review the **Email** list below the chart.<br/>![Below the chart, view a list of email messages that were detected](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Überprüfen Sie unter dem Diagramm die **e-Mail-** Liste unter dem Diagramm.<br/>![Zeigen Sie unter dem Diagramm eine Liste der gefundenen e-Mail-Nachrichten an.](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.<br/>![You can view additional information about an item, including details and any attachments](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. Wählen Sie in der Liste ein Element aus, um weitere Details zu dieser e-Mail-Nachricht anzuzeigen. Beispielsweise können Sie auf die Betreffzeile klicken, um Informationen über den Absender, Empfänger, Anlagen und ähnliche e-Mail-Nachrichten anzuzeigen.<br/>![Sie können zusätzliche Informationen zu einem Element anzeigen, einschließlich Details und Anlagen](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
+8. Nachdem Sie Informationen zu e-Mail-Nachrichten angezeigt haben, wählen Sie ein oder mehrere Elemente in der Liste aus, um **+-Aktionen**zu aktivieren.
     
-9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This will delete the selected messages from the recipients' mailboxes.<br/>![When you select one or more email messages, you can choose from several available actions](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Verwenden Sie die Liste **+ Aktionen** , um eine Aktion anzuwenden, beispielsweise " **zu gelöschten Elementen navigieren** ". Dadurch werden die ausgewählten Nachrichten aus den Postfächern der Empfänger gelöscht.<br/>![Wenn Sie eine oder mehrere e-Mail-Nachrichten auswählen, können Sie aus mehreren verfügbaren Aktionen auswählen.](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
--->
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Office 365 Advanced Threat Protection-Plan 2](office-365-ti.md)

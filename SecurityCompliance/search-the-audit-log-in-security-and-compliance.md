@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Verwenden Sie das Security #a0 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen, um Benutzer-und Administratoraktivitäten in Ihrer Office 365 Organisation anzuzeigen. '
-ms.openlocfilehash: d2e099343581c8842551491eb885534cbcbc961b
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 79309a2145db53f38d5d3c3c29777571d56910ae
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054777"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165691"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center
 
@@ -789,18 +789,12 @@ Hier finden Sie einige Tipps für die Suche nach Exchange-Administratoraktivitä
     ![Geben Sie im feldaktivitäten einen Bindestrich ein, um Exchange-Administrator Ereignisse zu filtern.](media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
   
 - Wenn Sie Informationen dazu erhalten möchten, welches Cmdlet ausgeführt wurde, welche Parameter und Parameterwerte verwendet wurden und welche Objekte betroffen sind, können Sie die Suchergebnisse exportieren, indem Sie die Option **alle Ergebnisse herunterladen** auswählen. Weitere Informationen finden Sie unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md). 
-    
-
-- Sie können auch Ereignisse im Exchange Admin-Überwachungsprotokoll anzeigen, indem Sie das Exchange Admin Center verwenden. Anweisungen finden Sie unter [View the Administrator Audit Log](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
-
-> [!IMPORTANT]
->  Zum Durchsuchen und Nachverfolgen der Verwendung von Exchange Online-Administrator privilegies verwenden Sie das Cmdlet *Search-AdminAuditLog* über die *Such-UnifiedAuditLog*.
-
 
 - Sie können auch den `Search-UnifiedAuditLog -RecordType ExchangeAdmin` Befehl in Exchange Online PowerShell verwenden, um nur Überwachungsdatensätze aus dem Exchange-administratorüberwachungsprotokoll zurückzugeben. Es kann bis zu 30 Minuten dauern, bis ein Exchange-Cmdlet ausgeführt wird, damit der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen zurückgegeben wird. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog). Informationen zum Exportieren der vom Cmdlet **Search-UnifiedAuditLog** zurückgegebenen Suchergebnisse in eine CSV-Datei finden Sie im Abschnitt "Tipps zum Exportieren und Anzeigen des Überwachungsprotokolls" unter [exportieren, konfigurieren und Anzeigen von Überwachungsprotokolldaten Sätzen](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Sie können auch Ereignisse im Exchange Admin-Überwachungsprotokoll anzeigen, indem Sie das Exchange Admin Center verwenden oder das **Search-AdminAuditLog** in Exchange Online PowerShell durchführen. Entsprechende Anweisungen finden Sie unter:
-   - [Zeigen Sie das Administrator-Überwachungsprotokoll](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)an. 
+- Sie können auch Ereignisse im Exchange Admin-Überwachungsprotokoll anzeigen, indem Sie das Exchange Admin Center verwenden oder das **Search-AdminAuditLog** in Exchange Online PowerShell durchführen. Dies ist eine gute Möglichkeit, um gezielt nach Aktivitäten zu suchen, die von Exchange Online Administratoren ausgeführt werden. Entsprechende Anweisungen finden Sie unter:
+   
+   - [Anzeigen des Administratorüberwachungsprotokolls](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx) 
    
    -  [Suche-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
    
