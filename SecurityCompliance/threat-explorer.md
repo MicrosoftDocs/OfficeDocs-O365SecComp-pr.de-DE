@@ -1,9 +1,9 @@
 ---
-title: Threat Explorer (und Echtzeiterkennung)
+title: Threat Explorer und Echtzeiterkennung
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über Explorer (und Echtzeiterkennung) im Security &amp; Compliance Center.
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054757"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230409"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer (und Echtzeiterkennung)
+# <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
 Wenn Ihre Organisation [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) verfügt und Sie über die [erforderlichen Berechtigungen](#required-licenses-and-permissions)verfügen, haben Sie entweder **Explorer** -oder **Echtzeiterkennung** (früher *Echtzeitberichte* ), [Siehe ](#new-features-in-real-time-detections)Neuigkeiten!). Wechseln Sie im Security #a0 Compliance Center zu **Threat Management**, und wählen Sie dann **Explorer** oder **Real-Time Detections**aus. 
 
@@ -42,7 +42,7 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
 ## <a name="new-features-in-real-time-detections"></a>Neue Features in Echt Zeit Erkennungen
 
-Mit Explorer/Echt Zeit Erkennungen werden neue Felder hinzugefügt, die Ihnen ein vollständigeres Bild davon geben, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
+Mit Explorer (und Echtzeiterkennung) werden neue Felder hinzugefügt, die Ihnen ein vollständigeres Bild davon geben, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
 
 Wie wird das gemacht? Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
 
@@ -105,9 +105,9 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
     Der Bericht wird aktualisiert, um zwei unterschiedliche URL-Tabellen auf der Registerkarte URL unter dem Bericht anzuzeigen:
 
-   1. **Top-URLs** sind die URLs, die in den Nachrichten enthalten sind, nach denen Sie nach unten gefiltert haben, und die e-Mail-Zustellungs Aktion zählt für jede URL. In der Phishing-e-Mail-Ansicht enthält diese Liste normalerweise legitime URLs. Angreifer enthalten eine Mischung aus guten und ungültigen URLs in ihren Nachrichten, um Sie zu übermitteln, aber Sie machen die bösartigen Links für den Benutzer interessanter, auf Sie zuwerden. Die Tabelle der URLs wird nach der Gesamtzahl der e-Mails sortiert (Hinweis: Diese Spalte wird nicht angezeigt, um die Ansicht zu vereinfachen).
+   - **Top-URLs** sind die URLs, die in den Nachrichten enthalten sind, nach denen Sie nach unten gefiltert haben, und die e-Mail-Zustellungs Aktion zählt für jede URL. In der Phishing-e-Mail-Ansicht enthält diese Liste normalerweise legitime URLs. Angreifer enthalten eine Mischung aus guten und ungültigen URLs in ihren Nachrichten, um Sie zu übermitteln, aber Sie machen die bösartigen Links für den Benutzer interessanter, auf Sie zuwerden. Die Tabelle der URLs wird nach der Gesamtzahl der e-Mails sortiert (Hinweis: Diese Spalte wird nicht angezeigt, um die Ansicht zu vereinfachen).
 
-   2. Zu den **wichtigsten Klicks** gehören die eingebundenen URLs, auf die geklickt wurde, sortiert nach der Gesamtanzahl der Klick Zähler (diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen). Gesamtanzahl Zählungen nach Spalte geben Sie die sichere Links klicken Sie auf Urteils Zählung für jede URL, auf die geklickt wurde. In der Phishing-e-Mail-Ansicht sind dies häufiger verdächtige oder böswillige URLs, aber Sie können auch saubere URLs in Phishing-Nachrichten enthalten. URL Klicks auf unverpackte Links werden hier nicht angezeigt.
+   - Zu den **wichtigsten Klicks** gehören die eingebundenen URLs, auf die geklickt wurde, sortiert nach der Gesamtanzahl der Klick Zähler (diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen). Gesamtanzahl Zählungen nach Spalte geben Sie die sichere Links klicken Sie auf Urteils Zählung für jede URL, auf die geklickt wurde. In der Phishing-e-Mail-Ansicht sind dies häufiger verdächtige oder böswillige URLs, aber Sie können auch saubere URLs in Phishing-Nachrichten enthalten. URL Klicks auf unverpackte Links werden hier nicht angezeigt.
    
    Die beiden URLs Tabellen zeigen Top-URLs in Phishing-e-Mails nach Zustellung Aktion und Ort, und Sie zeigen URL Klicks, die blockiert wurden (oder besucht, obwohl eine Warnung), damit Sie verstehen, welche potenziellen schlechten Links wurden von Benutzern empfangen und mit den Benutzern interagieren. Von hier aus können Sie weitere Analysen durchführen. Beispielsweise können Sie unter dem Diagramm die häufigsten URLs in e-Mails sehen, die in der Umgebung Ihrer Organisation blockiert wurden.
    
@@ -117,11 +117,11 @@ Um Phishing-URLs in Nachrichten und Klicks auf URLs in Phishing-Nachrichten zu �
 
 ## <a name="review-email-messages-reported-by-users"></a>Überprüfen von von Benutzern gemeldeten e-Mail-Nachrichten
 
-Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die e- [Mail-#a0 Benutzer Berichte-](threat-explorer-views.md#email--user-reported) Ansicht des Explorers (oder Echtzeiterkennung).
+Angenommen, Sie möchten e-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Organisation als Junk-, kein Junk-oder als Phishing gemeldet haben, indem Sie das [Berichtsnachrichten-Add-in für Outlook und Outlook im Internet](enable-the-report-message-add-in.md)verwenden. Verwenden Sie dazu die Ansicht [e-Mail #a0 Übermittlungen](threat-explorer-views.md#email--submissions) des Explorers (oder Echtzeiterkennung).
 
 1. Wählen Sie im Security #a0 Compliance Center[https://protection.office.com](https://protection.office.com)() **Threat Management** > **Explorer** (oder **Echtzeiterkennung**) aus. (In diesem Beispiel wird der Explorer verwendet.)
 
-2. Wählen Sie im Menü **Ansicht** die Option **e-Mail** > **-Benutzerbericht**aus.<br/>![Menü "Ansicht" für Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Wählen Sie im Menü **Ansicht** die Option **e-Mail-** > über**mittlungen**aus.<br/>![Menü "Ansicht" für Explorer](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Klicken Sie auf **Absender**, und wählen Sie **Standard** > **Berichtstyp**aus.
 
@@ -170,8 +170,7 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 - [Berechtigungen im Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Featureberechtigungen in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Einige Unterschiede zwischen der Echtzeiterkennung und dem Bedrohungs Exporteur.
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Einige Unterschiede zwischen dem Bedrohungs Exporteur und Echt Zeit Erkennungen
 
- - Der **Echt Zeit Erkennungs Bericht** wird mit dem ATP P1-Abonnement ausgeliefert, während **Threat Explorer** mit ATP P2 geliefert wird.
- - Der Bericht über **Echt Zeit Erkennungen** ermöglicht Ihnen, die Erkennungen in Echtzeit anzuzeigen, während Threat Explorer-Berichte es Ihnen ermöglichen, weitere Details in einem bestimmten Angriff anzuzeigen.
- - **Threat Explorer** -Berichte bieten unterschiedliche Sätze von Berichten, die ihre Erfahrung hinsichtlich **Echt Zeit Detektor-** Berichte verbessern.
+ - Der Bericht über **Echt Zeit Erkennungen** steht in Office 365 ATP-Plan 1 zur Verfügung, während **Threat Explorer** in Office 365 ATP-Plan 2 zur Verfügung steht.
+ - Der Bericht über **Echt Zeit Erkennungen** ermöglicht das Anzeigen von Erkennungen in Echtzeit. Dieser Vorgang wird auch von **Threat Explorer** durchgesetzt, aber Sie können auch zusätzliche Details für einen bestimmten Angriff anzeigen.

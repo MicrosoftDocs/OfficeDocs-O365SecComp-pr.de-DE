@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über die automatische Erweiterung der Archivierung in Office 365, die unbegrenzten Archivspeicher für Exchange Online Postfächer bereitstellt.
-ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158067"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231079"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die unbegrenzte Archivierung in Office 365
 
-In Office 365 bieten Archivpostfächer Benutzern zusätzlichen Postfachspeicher Platz. Nachdem das Archivpostfach eines Benutzers aktiviert wurde, ist ein zusätzlicher Speicher von bis zu 100 GB verfügbar. Wenn das Speicherkontingent von 100 GB erreicht wurde, mussten sich Organisationen an Microsoft wenden, um zusätzlichen Speicherplatz für ein Archivpostfach anzufordern. Das ist nicht mehr der Fall. Das neue Feature für unbegrenzte Archivierung in Office 365 (als *automatisch expandierende Archivierung*bezeichnet) bietet eine unbegrenzte Menge an Speicherplatz in archivpostfächern. Wenn nun das Speicherkontingent im Archivpostfach erreicht wird, vergrößert Office 365 automatisch die Größe des Archivs, was bedeutet, dass Benutzern kein Postfachspeicher Platz mehr zur Verweilen ist und Administratoren keinen zusätzlichen Speicher für Archivpostfächer anfordern müssen. .
+In Office 365 bieten Archivpostfächer Benutzern zusätzlichen Postfachspeicher Platz. Nachdem das Archivpostfach eines Benutzers aktiviert wurde, ist ein zusätzlicher Speicher von bis zu 100 GB verfügbar. In der Vergangenheit, wenn das Speicherkontingent von 100 GB erreicht wurde, mussten sich Organisationen an Microsoft wenden, um zusätzlichen Speicherplatz für ein Archivpostfach anzufordern. Das ist nicht mehr der Fall.
+
+Das Feature für unbegrenzte Archivierung in Office 365 (als *automatisch expandierende Archivierung*bezeichnet) bietet eine unbegrenzte Menge an Speicherplatz in archivpostfächern. Wenn nun das Speicherkontingent im Archivpostfach erreicht wird, vergrößert Office 365 automatisch die Größe des Archivs, was bedeutet, dass Benutzern kein Postfachspeicher Platz mehr zur Verweilen ist und Administratoren keinen zusätzlichen Speicher für Archivpostfächer anfordern müssen. .
   
 Eine Schritt-für-Schritt-Anleitung zum Aktivieren der automatischen Erweiterung der Archivierung finden Sie unter [enable Unlimited Archiving in Office 365](enable-unlimited-archiving.md).
   

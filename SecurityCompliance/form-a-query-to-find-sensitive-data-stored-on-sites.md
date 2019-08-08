@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrfox
+author: chrfox
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit der Verhinderung von Datenverlust (Data Loss Prevention, DLP) in SharePoint Online können Sie Dokumente ermitteln, die vertrauliche Daten in Ihrem Mandanten enthalten. Nach der Ermittlung der Dokumente können Sie mit deren Besitzern zusammenarbeiten, um die Daten zu schützen. In diesem Thema wird das Erstellen einer Abfrage zur Suche nach vertraulichen Daten behandelt.
-ms.openlocfilehash: a200cbd802922a694510e82bb8d394fed6bb2a32
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: c9013e8334a4ef891885c7bc53b746b2db42b156
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599321"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230549"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten
 

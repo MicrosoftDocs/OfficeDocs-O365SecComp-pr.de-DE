@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines Schlüsselwörterbuchs
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,32 +14,32 @@ search.appverid:
 - MOE150
 - MET150
 description: Um vertrauliche Informationen identifizieren zu können, muss manchmal nach Schlüsselwörtern gesucht werden, insbesondere, wenn allgemeine Inhalte (z. B. Kommunikation im Bereich Gesundheitswesen) oder unangemessene bzw. obszöne Sprache identifiziert werden. Sie können zwar Schlüsselwortlisten in vertraulichen Informationstypen erstellen, diese sind aber im Hinblick auf ihre Größe eingeschränkt und erfordern zum Erstellen oder Ändern eine Bearbeitung der XML-Daten. Schlüsselwörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und sind für viel größere Inhalte geeignet; es werden bis zu 100.000 Begriffe pro Wörterbuch unterstützt.
-ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077571"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230789"
 ---
 # <a name="create-a-keyword-dictionary"></a>Erstellen eines Schlüsselwörterbuchs
 
-Data Loss Prevention (DLP) in Office 365 kann Ihre vertraulichen Informationen identifizieren, überwachen und schützen. Für die Identifizierung vertraulicher Informationen ist es manchmal erforderlich, nach Stichwörtern zu suchen, insbesondere bei der Identifizierung generischer Inhalte (beispielsweise Kommunikation im Zusammenhang mit dem Gesundheitswesen) oder anstößigen oder expliziten Sprachen Obwohl Sie Stichwortlisten in vertraulichen Informationstypen erstellen können, sind Keyword-Listen in der Größe begrenzt und erfordern das Ändern von XML, um Sie zu erstellen oder zu bearbeiten. Stichwort Wörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und in einem wesentlich größeren Umfang und unterstützen bis zu 100.000 Ausdrücke pro Wörterbuch.
+Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) in Office 365 kann Ihre vertraulichen Informationen identifizieren, überwachen und schützen. Das Identifizieren von vertraulichen Informationen erfordert manchmal das Suchen nach Stichwörtern, insbesondere wenn generische Inhalte (wie etwa gesundheitsbezogene Kommunikation) oder ungeeignete oder explizite Sprache identifiziert werden. Zwar können Sie Stichwortlisten in Typen mit vertraulichen Informationen erstellen, Keyword-Listen sind jedoch in ihrer Größe limitiert und müssen zum Erstellen oder Bearbeiten von XML geändert werden. Stichwort Wörterbücher bieten eine einfachere Verwaltung von Schlüsselwörtern und in einem weitaus größeren Umfang, sodass bis zu 100.000 Begriffe pro Wörterbuch unterstützt werden.
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Grundlegende Schritte zum Erstellen eines Schlüsselwörterbuchs
 
 Die Schlüsselwörter für Ihr Wörterbuch können aus einer Vielzahl von Quellen stammen, meistens aber aus einer in den Dienst importierten Datei (etwa einer CSV- oder TXT-Liste), oder durch ein einem PowerShell-Cmdlet, aus einer Liste, die Sie direkt in das PowerShell-Cmdlet eingeben, oder aus einem vorhandenen Wörterbuch.Beim Erstellen eines Schlüsselwörterbuchs befolgen Sie die gleichen einfachen Schritte:
   
-1. Verwenden Sie das **Security & Compliance Center** ([https://protection.office.com](https://protection.office.com)), oder stellen Sie eine Verbindung mit **Office 365 Security &amp; Compliance Center PowerShell**her.
+1. Verwenden Sie das **Security #a0 Compliance Center** ([https://protection.office.com](https://protection.office.com)), oder stellen Sie eine Verbindung mit **Office 365 Security &amp; Compliance Center PowerShell**her.
     
-2. **Definieren oder laden Sie Ihre Schlüsselwörter aus der beabsichtigten Quelle**. Sowohl der Assistent als auch das Cmdlet akzeptieren eine durch trennzeichengetrennte Liste von Schlüsselwörtern, um ein benutzerdefiniertes Stichwort Wörterbuch zu erstellen, sodass dieser Schritt je nachdem, woher Ihre Schlüsselwörter stammen, etwas variieren kann. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
+2. **Definieren oder laden Sie Ihre Schlüsselwörter aus ihrer beabsichtigten Quelle**. Der Assistent und das Cmdlet akzeptieren beide eine durch trennzeichengetrennte Liste von Schlüsselwörtern, um ein benutzerdefiniertes Stichwort Wörterbuch zu erstellen, sodass dieser Schritt geringfügig variiert, je nachdem, woher Ihre Schlüsselwörter stammen. Nach dem Laden werden diese codiert und in ein Bytearray konvertiert, bevor sie importiert werden.
     
 3. **Erstellen Sie Ihr Wörterbuch**. Wählen Sie einen Namen und eine Beschreibung aus, und erstellen Sie Ihr Wörterbuch.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Erstellen eines Stichwort Wörterbuchs mithilfe des Security & Compliance Center
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Erstellen eines Stichwort Wörterbuchs mithilfe des Security #a0 Compliance Centers
 
 Verwenden Sie die folgenden Schritte zum Erstellen und Importieren von Schlüsselwörtern für ein Benutzerwörterbuch:
 
-1. Stellen Sie eine Verbindung mit dem Security &[https://protection.office.com](https://protection.office.com)Compliance Center her ().
+1. Stellen Sie eine Verbindung mit dem Security #a0[https://protection.office.com](https://protection.office.com)Compliance Center her ().
 
 2. Navigieren Sie zu **Klassifizierungen > Typen vertraulicher Informationen**.
 
@@ -65,7 +65,7 @@ Verwenden Sie die folgenden Schritte zum Erstellen und Importieren von Schlüsse
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Erstellen eines Schlüsselwörterbuchs aus einer Datei mit PowerShell
 
-Häufig müssen Sie ein umfangreiches Wörterbuch erstellen, indem Sie Stichwörter aus einer Datei oder aus einer Liste verwenden, die aus einer anderen Quelle exportiert wurde. In diesem Fall erstellen Sie ein Stichwort Wörterbuch, das eine Liste der anstößigen Sprache enthält, die in externen e-Mails angezeigt werden soll. Sie müssen zuerst [eine Verbindung mit Office 365 &amp; Security Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Häufig, wenn Sie ein großes Wörterbuch erstellen müssen, können Sie Stichwörter aus einer Datei oder aus einer aus einer anderen Quelle exportierten Liste verwenden. In diesem Fall erstellen Sie ein Stichwort Wörterbuch mit einer Liste ungeeigneter Sprache, die in externen e-Mails angezeigt wird. Sie müssen zunächst [eine Verbindung mit Office 365 &amp; Security Compliance Center PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Kopieren Sie die Schlüsselwörter in eine Textdatei, und stellen Sie sicher, dass sich jedes Schlüsselwort in einer separaten Zeile befindet.
     
@@ -87,7 +87,7 @@ Häufig müssen Sie ein umfangreiches Wörterbuch erstellen, indem Sie Stichwör
 
 Möglicherweise müssen Sie einmal Schlüsselwörter in einem Ihrer Schlüsselwörterbücher oder in einem der integrierten Wörterbücher ändern. Derzeit können Sie mit PowerShell nur ein benutzerdefiniertes Schlüsselwörterbuch aktualisieren. 
 
-Beispielsweise ändern wir einige Ausdrücke in PowerShell, speichern die Ausdrücke lokal, wo Sie Sie in einem Editor ändern können, und aktualisieren dann die vorherigen Ausdrücke direkt. 
+Beispielsweise ändern wir einige Ausdrücke in PowerShell, speichern die Begriffe Lokal, wo Sie Sie in einem Editor ändern können, und aktualisieren dann die vorherigen Ausdrücke. 
 
 Rufen Sie zuerst das Wörterbuchobjekt ab:
   
@@ -95,9 +95,9 @@ Rufen Sie zuerst das Wörterbuchobjekt ab:
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-Beim `$dict` Drucken werden die verschiedenen Variablen angezeigt. Die Schlüsselwörter selbst werden in einem Objekt im Back-End gespeichert `$dict.KeywordDictionary` , Sie enthalten jedoch eine Zeichenfolgendarstellung, die Sie zum Ändern des Wörterbuchs verwenden. 
+Beim `$dict` Drucken werden die verschiedenen Variablen angezeigt. Die Schlüsselwörter selbst werden in einem Objekt im Back-End gespeichert `$dict.KeywordDictionary` , enthalten jedoch eine Zeichenfolgendarstellung, die Sie zum Ändern des Wörterbuchs verwenden. 
 
-Bevor Sie das Wörterbuch ändern, müssen Sie die Zeichenfolge mithilfe der `.split(',')` -Methode wieder in ein Array umwandeln. Dann bereinigen Sie die unerwünschten Leerzeichen zwischen den Schlüsselwörtern `.trim()` mit der Methode, sodass nur die Schlüsselwörter für die Arbeit verwendet werden. 
+Bevor Sie das Wörterbuch ändern, müssen Sie die Zeichenfolge von Ausdrücken mithilfe der `.split(',')` -Methode wieder in ein Array umwandeln. Anschließend bereinigen Sie die unerwünschten Leerzeichen zwischen den Stichwörtern `.trim()` mit der-Methode, sodass nur die Schlüsselwörter für die Arbeit übrig bleiben. 
   
 ```
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -181,7 +181,7 @@ Das vorhandene Wörterbuch wurde nun aktualisiert. Beachten Sie, dass das Feld `
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Verwenden von Schlüsselwörterbüchern in benutzerdefinierten vertraulichen Informationstypen und DLP-Richtlinien
 
-Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen für einen benutzerdefinierten vertraulichen Informationstyp oder als vertraulicher Informationstyp verwendet werden. Beide müssen Sie einen [benutzerdefinierten vertraulichen Informationstyp](create-a-custom-sensitive-information-type-in-scc-powershell.md)erstellen. Befolgen Sie die Anweisungen im verknüpften Artikel, um einen vertraulichen Informationstyp zu erstellen. Sobald Sie die XML-Datei haben, benötigen Sie die GUID-ID für das Wörterbuch, um Sie zu verwenden.
+Stichwort Wörterbücher können als Teil der Übereinstimmungs Anforderungen für einen benutzerdefinierten Typ vertraulicher Informationen oder als vertraulicher Informationstyp selbst verwendet werden. Beide erfordern die Erstellung eines [benutzerdefinierten Typs für vertrauliche Informationen](create-a-custom-sensitive-information-type-in-scc-powershell.md). Befolgen Sie die Anweisungen im verknüpften Artikel, um einen Typ für vertrauliche Informationen zu erstellen. Sobald Sie über den XML-Code verfügen, benötigen Sie den GUID-Bezeichner für das Wörterbuch, um ihn zu verwenden.
   
 ```
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

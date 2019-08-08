@@ -3,7 +3,7 @@ title: Ansichten im Threat Explorer und Echt Zeit Erkennungen
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die verschiedenen Arten von Ansichten, die in Threat Explorer und in Echtzeit erkannt werden können.
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600818"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230389"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Ansichten im Threat Explorer und Echt Zeit Erkennungen
 
@@ -72,9 +72,9 @@ Wenn Sie ein Element in der Liste auswählen, beispielsweise eine erkannte URL, 
 
 ![Details zu einer erkannten URL](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>E-Mail-#a0 vom Benutzer gemeldet
+## <a name="email--submissions"></a>E-Mail #a0 Übermittlungen
 
-Wenn Sie diesen Bericht anzeigen möchten, wählen Sie im Explorer (oder Echtzeiterkennung) die Option**e-Mail** > **-Benutzer Berichte** **anzeigen** > aus. In dieser Ansicht werden e-Mails angezeigt, die Benutzer als Junk-e-Mail, nicht als Junk oder als Phishing-e-Mails gemeldet haben. 
+Um diesen Bericht anzuzeigen, wählen Sie im Explorer (oder Echtzeiterkennung) die Option **** > **e-Mail-** > **Übermittlungen**anzeigen aus. In dieser Ansicht werden e-Mails angezeigt, die Benutzer als Junk-e-Mail, nicht als Junk oder als Phishing-e-Mails gemeldet haben. 
 
 ![Von Benutzern gemeldete e-Mail-Nachrichten](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ Die Möglichkeit, mit einem Klick zu filtern und zu bestimmten Details zu navigi
 
 ## <a name="queries-and-filters"></a>Abfragen und Filter
 
-Explorer (und der Bericht über Echt Zeit Erkennungen) verfügt über mehrere leistungsstarke Filter und Abfragefunktionen, mit denen Sie Details eingehen können, beispielsweise Top-Zielbenutzer, Top-Malware Familien, Erkennungstechnologien und vieles mehr. Jede Art von Bericht bietet eine Vielzahl von Möglichkeiten zum Anzeigen und Durchsuchen von Daten.
+Explorer (sowie der Bericht über Echt Zeit Erkennungen) verfügt über mehrere leistungsstarke Filter und Abfragefunktionen, mit denen Sie Details eingehen können, beispielsweise Top-Zielbenutzer, Top-Malware Familien, Erkennungstechnologien und vieles mehr. Jede Art von Bericht bietet eine Vielzahl von Möglichkeiten zum Anzeigen und Durchsuchen von Daten.
 
 > [!IMPORTANT]
-> Verwenden Sie in der Abfrage Leiste für Explorer (oder Echtzeiterkennung) keine Platzhalterzeichen, beispielsweise ein Sternchen (*) oder ein Fragezeichen (?). Wenn Sie im Feld Betreff nach e-Mail-Nachrichten suchen, führt der Explorer (oder Echt Zeit Erkennungsvorgang) partielle Übereinstimmungen und Ergebnis Ergebnisse aus, die einer Platzhaltersuche ähneln.
+> Verwenden Sie in der Abfrage Leiste für Explorer (oder Echtzeiterkennung) keine Platzhalterzeichen, beispielsweise ein Sternchen oder ein Fragezeichen. Wenn Sie im **Feld Betreff** nach e-Mail-Nachrichten suchen, führt der Explorer (oder Echt Zeit Erkennungsvorgang) partielle Übereinstimmungen und Ergebnis Ergebnisse aus, die einer Platzhaltersuche ähneln.

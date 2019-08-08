@@ -1,7 +1,7 @@
 ---
 title: Wonach die DLP-Funktionen suchen
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/18/2016
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die Typen vertraulicher Informationen suchen nach einem bestimmten Muster und bestätigen es, indem Sie eine ordnungsgemäße Formatierung sicherstellen, Prüfsummen erzwingen und nach relevanten Schlüsselwörtern oder anderen Informationen suchen. Einige dieser Funktionen werden von internen Funktionen ausgeführt. In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren.
-ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34078001"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230319"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Wonach die DLP-Funktionen suchen
 
@@ -27,7 +27,7 @@ Die Verhinderung von Datenverlust (DLP) umfasst vertrauliche Informationstypen w
   
 In diesem Thema wird erläutert, wonach diese Funktionen suchen, damit Sie besser verstehen, wie die vordefinierten Typen vertraulicher Informationen funktionieren. Weitere Informationen finden Sie unter [was die Typen vertraulicher Informationen suchen](what-the-sensitive-information-types-look-for.md).
   
-## <a name="funcusdate"></a>Func_us_date
+## <a name="func_us_date"></a>Func_us_date
 
 Diese Funktion sucht nach einem Datum in dem Format, das in den USA häufig verwendet wird. Dies umfasst die Formate "Monat/Tag/Jahr", "Monat-Tag-Jahr" und "Monat Tag Jahr". Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet. 
   
@@ -55,7 +55,7 @@ Akzeptierte Monatsnamen:
     
   - Jan. Feb. Mär. Apr. Mai Juni Juli Aug. Sept. Okt. Nov. Dez.
     
-## <a name="funceudate"></a>Func_eu_date
+## <a name="func_eu_date"></a>Func_eu_date
 
 Diese Funktion sucht nach einem Datum in dem Format, das in der EU häufig verwendet wird. (und die meisten Orte außerhalb der USA). Dies umfasst die Formate "Tag/Monat/Jahr", "Tag-Monat-Jahr" und "Tag Monat Jahr". Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet.
   
@@ -119,7 +119,7 @@ Akzeptierte Monatsnamen:
     
   - enero Feb. Marzo-ABR. Mayo Jun. Juli. Agosto Sept./Set. OAT. Nov. DIC.
     
-## <a name="funceudate1-deprecated"></a>Func_eu_date1 (veraltet)
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (veraltet)
 
 > [!NOTE]
 > Diese Funktion ist veraltet, da Sie nur portugiesische Monatsnamen unterstützt, die nun in der `Func_eu_date` obigen Funktion enthalten sind. 
@@ -150,7 +150,7 @@ Akzeptierte Monatsnamen:
     
   - Jan FEV Mär ABR Mai Jun Jul ago festgelegt Nov Dez
     
-## <a name="funceudate2-deprecated"></a>Func_eu_date2 (veraltet)
+## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (veraltet)
 
 > [!NOTE]
 > Diese Funktion ist veraltet, da nur niederländische Monatsnamen unterstützt werden, die jetzt in der `Func_eu_date` obigen Funktion enthalten sind. 
@@ -181,7 +181,7 @@ Akzeptierte Monatsnamen:
     
   - Jan Feb maart Apr Mei Jun Jul Aug Sep Sept Oct Okt Nov Dez
     
-## <a name="funcexpirationdate"></a>Func_expiration_date
+## <a name="func_expiration_date"></a>Func_expiration_date
 
 Diese Funktion sucht nach einem Datum in den Formaten, die häufig von Kredit-und Debitkarten verwendet werden, wodurch Tage zugunsten von Monaten ausgeschlossen werden. Mit dieser Funktion werden Datumsangaben im Format "month/year", "month-year", "[Month Name] Year" und "[month Kürzel] Year" abgeglichen. Bei den Namen oder Abkürzungen von Monaten wird die Groß-/Kleinschreibung nicht beachtet.
   
@@ -213,7 +213,7 @@ Akzeptierte Monatsnamen:
     
   - Jan Feb Mär Apr Mai Juni Juli Aug Sept Okt Nov Dez
     
-## <a name="funcusaddress"></a>Func_us_address
+## <a name="func_us_address"></a>Func_us_address
 
 Diese Funktion sucht nach einem US-Bundesland Namen oder einer postalischen Abkürzung, gefolgt von einer gültigen Postleitzahl, genauso wie Sie in Postadressen verwendet werden. Die Postleitzahl muss einer der korrekten Postleitzahlen sein, die dem US-Bundesland Namen oder der Abkürzung zugeordnet sind. Der US-Bundesland Name und die Postleitzahl können nicht durch Interpunktion oder Buchstaben getrennt werden.
   
