@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Zusammenfassung: Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: 148db19c8902735829a5849901723b5f2f200b74
-ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
+ms.openlocfilehash: bc17f5a4009b7a967a395084e8a058c45bbad82e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "35059543"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053132"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung
 
@@ -183,7 +183,7 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die gruppenbasierte Lize
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office Home** in Ihrem Browser auf die Kachel **Admin**.
     
-2. Klicken Sie auf der neuen Registerkarte **Office Admin Center** des Browsers auf **Benutzer**.
+2. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** des Browsers auf **Benutzer**.
     
 3. Klicken Sie in der Liste der Benutzer auf **CEO**.
     
