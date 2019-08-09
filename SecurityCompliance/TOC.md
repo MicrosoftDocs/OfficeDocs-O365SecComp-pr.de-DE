@@ -345,7 +345,7 @@
 #### [Hinzufügen von Daten zu einem anderen Prüfdateisatz ](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [Verwalten von Ladesätzen](compliance20/manage-load-sets.md)
 
-### [Überprüfen von Falldaten](compliance20/reviewing-data-in-review-set.md)
+### Überprüfen von Falldaten
 #### [Anzeigen von Dokumenten in einem Prüfdateisatz](compliance20/view-documents-in-review-set.md)
 #### [Abfragen der Daten in einem Prüfdateisatz](compliance20/review-set-search.md)
 #### [Markieren von Dokumenten in einem Prüfdateisatz](compliance20/tagging-documents.md)
@@ -363,7 +363,7 @@
 
 ### [Verwalten von Aufträgen](compliance20/managing-jobs-ediscovery20.md)
 
-### [Konfigurieren von Falleinstellungen](compliance20/configuring-case-settings-ediscovery20.md)
+### Konfigurieren von Falleinstellungen
 #### [Schließen oder Löschen eines Falls](compliance20/close-or-delete-case.md)
 #### [Hinzufügen oder Entfernen von Mitgliedern aus einem Fall](compliance20/add-remove-members.md)
 #### [Konfigurieren der Such- und Analyseeinstellungen](compliance20/configure-search-analytics-settings.md)
