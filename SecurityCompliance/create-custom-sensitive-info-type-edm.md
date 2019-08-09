@@ -1,7 +1,7 @@
 ---
 title: Erstellen benutzerdefinierter vertraulicher Informationstypen mit genauer Datenübereinstimmung
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung.
-ms.openlocfilehash: 3b15bf0197918d6bbc3897f9fa578c40b70d3f4e
-ms.sourcegitcommit: 4eb4ca899adcf4d86501530f875eb49af8cdaeb7
+ms.openlocfilehash: be86f22ec20d36aaf12ae253028d0896f885267e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083188"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230839"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification-preview"></a>Erstellen benutzerdefinierter vertraulicher Informationstypen mit genauer Datenübereinstimmungsklassifizierung (Vorschau)
 
 ## <a name="overview"></a>Übersicht
 
-[Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md) werden verwendet, um zu verhindern, dass vertrauliche Informationen versehentlich oder unangemessen weitergegeben werden. Als Administrator können Sie das Security & Compliance Center oder PowerShell verwenden, um einen benutzerdefinierten vertraulichen Informationstyp basierend auf Mustern, Nachweisen (Stichwörtern wie Mitarbeiter*, *Abzeichen, ID usw.), Zeichenabstand (wie nahe Nachweise sich an Zeichen in einem bestimmten Muster befinden) und Vertrauensstufen zu definieren. Solche benutzerdefinierten vertraulichen Informationstypen erfüllen die geschäftlichen Anforderungen vieler Organisationen.
+[Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md) werden verwendet, um zu verhindern, dass vertrauliche Informationen versehentlich oder unangemessen weitergegeben werden. Als Administrator können Sie das [Security & Compliance Center](create-a-custom-sensitive-information-type.md) oder [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) verwenden, um einen benutzerdefinierten vertraulichen Informationstyp basierend auf Mustern, Nachweisen (Stichwörtern wie *Mitarbeiter*, *Abzeichen*, *ID* usw.), Zeichenabstand (wie nahe Nachweise sich an Zeichen in einem bestimmten Muster befinden) und Vertrauensstufen zu definieren. Solche benutzerdefinierten vertraulichen Informationstypen erfüllen die geschäftlichen Anforderungen vieler Organisationen.
 
 Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp verwenden möchten, der genaue Datenwerte anstelle von Mustern und Näherungswerten verwendet? Mit einer EDM-basierten Klassifizierung (genaue Datenübereinstimmung) können Sie einen benutzerdefinierten Informationstyp mit den folgenden Merkmalen erstellen:
 - dynamisch und aktualisierbar;
@@ -37,7 +37,7 @@ Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp verwe
 
 ![EDM-basierte Klassifikation](media/EDMClassification.png)
 
-Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrauliche Informationstypen zu erstellen, die sich auf genaue Werte in einer Datenbank mit vertraulichen Informationen beziehen. Die Datenbank kann täglich oder wöchentlich aktualisiert werden und bis zu 10 Millionen Datenzeilen enthalten. Mitarbeiter, Patienten oder Kunden kommen und gehen und Datensätze ändern sich, aber Ihre benutzerdefinierten vertraulichen Informationstypen bleiben aktuell und anwendbar. Darüber hinaus können Sie EDM-basierte Klassifikation mit Richtlinien verwenden, z. B. [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) (Data Loss Prevention, DLP) oder Microsoft Cloud App Security-Dateirichtlinien](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrauliche Informationstypen zu erstellen, die sich auf genaue Werte in einer Datenbank mit vertraulichen Informationen beziehen. Die Datenbank kann täglich oder wöchentlich aktualisiert werden und bis zu 10 Millionen Datenzeilen enthalten. Mitarbeiter, Patienten oder Kunden kommen und gehen und Datensätze ändern sich, aber Ihre benutzerdefinierten vertraulichen Informationstypen bleiben aktuell und anwendbar. Darüber hinaus können Sie EDM-basierte Klassifikation mit Richtlinien verwenden, z. B. [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) (Data Loss Prevention, DLP) oder [Microsoft Cloud App Security-Dateirichtlinien](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
@@ -83,9 +83,11 @@ Beim Einrichten und Konfigurieren der EDM-basierten Klassifizierung werden vertr
     
     (Sie können das Beispiel kopieren, ändern und verwenden.)
     
-    ```<?xml version="1.0" encoding="utf-8"?> <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-        <DataStore name="PatientRecords" description="Schema für Patientendatensätze" version="1">
-            <Field name="PatientID" unique="false" searchable="true" /> <Field name="MRN" unique="false" searchable="true" />
+    ```<?xml version="1.0" encoding="utf-8"?>
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+        <DataStore name="PatientRecords" description="Schema for patient records" version="1">
+            <Field name="PatientID" unique="false" searchable="true" />
+            <Field name="MRN" unique="false" searchable="true" />
             <Field name="FirstName" unique="false" searchable="false" />
             <Field name="LastName" unique="false" searchable="false" />
             <Field name="SSN" unique="false" searchable="true" />
@@ -97,15 +99,15 @@ Beim Einrichten und Konfigurieren der EDM-basierten Klassifizierung werden vertr
     </EdmSchema>
     ```
 
-4. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-5. To upload the database schema, run the following cmdlets, one at a time:
+5. Führen Sie die folgenden Cmdlets nacheinander aus, um das Datenbankschema hochzuladen:
 
     `$edmSchemaXml=Get-Content .\edm.xml -Encoding Byte -ReadCount 0`
 
     `New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
-    You will be prompted to confirm, as follows:
+    Sie werden zu folgenden Bestätigungen aufgefordert:
 
        Confirm
        Are you sure you want to perform this action?
@@ -113,25 +115,25 @@ Beim Einrichten und Konfigurieren der EDM-basierten Klassifizierung werden vertr
        [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"):
 
     > [!TIP]
-    > If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: `New-DlpEdmSchema -FileData $edmSchemaXml`
+    > Wenn Sie möchten, dass Ihre Änderungen ohne Bestätigung durchgeführt werden, verwenden Sie in Schritt 5 stattdessen das folgende Cmdlet: `New-DlpEdmSchema -FileData $edmSchemaXml`
     
-Now that the schema for your database of sensitive information is defined, the next step is to set up a rule package. Proceed to the section [Set up a rule package](#set-up-a-rule-package).
+Nachdem das Schema für Ihre Datenbank mit vertraulichen Informationen definiert wurde, besteht der nächste Schritt darin, ein Regelpaket einzurichten. Fahren Sie mit dem Abschnitt [Einrichten eines Regelpakets](#set-up-a-rule-package) fort.
 
-#### Editing the schema for EDM-based classification 
+#### <a name="editing-the-schema-for-edm-based-classification"></a>Bearbeiten des Schemas für die EDM-basierte Klassifikation 
 
-(As needed) If you want to make changes to your edm.xml file, such as changing which fields are used for EDM-based classification, follow these steps:
+(Nach Bedarf) Wenn Sie Änderungen an ihrer edm.xml-Datei vornehmen möchten, wenn Sie z. B. ändern möchten, welche Felder für die EDM-basierte Klassifikation verwendet werden, führen Sie die folgenden Schritte aus:
 
-1. Edit your edm.mxl file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
+1. Bearbeiten Sie Ihre edm.mxl-Datei. (Dies ist die Datei, die im Abschnitt [Definieren des Schemas](#define-the-schema-for-your-database-of-sensitive-information) in diesem Artikel behandelt wird).
 
-2. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-3. To update your database schema, run the following cmdlets, one at a time:
+3. Führen Sie die folgenden Cmdlets nacheinander aus, um Ihr Datenbankschema zu aktualisieren:
 
     `$edmSchemaXml=Get-Content .\edm.xml -Encoding Byte -ReadCount 0`
 
     `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
-    You will be prompted to confirm, as follows:
+    Sie werden zu folgenden Bestätigungen aufgefordert:
 
        Confirm
        Are you sure you want to perform this action?
@@ -139,19 +141,19 @@ Now that the schema for your database of sensitive information is defined, the n
        [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"):
 
     > [!TIP]
-    > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: `Set-DlpEdmSchema -FileData $edmSchemaXml`
+    > Wenn Sie möchten, dass Ihre Änderungen ohne Bestätigung durchgeführt werden, verwenden Sie in Schritt 3 stattdessen das folgende Cmdlet: `Set-DlpEdmSchema -FileData $edmSchemaXml`
 
-#### Removing the schema for EDM-based classification
+#### <a name="removing-the-schema-for-edm-based-classification"></a>Entfernen des Schemas für die EDM-basierte Klassifikation
 
-(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
+(Nach Bedarf) Wenn Sie das Schema entfernen möchten, das Sie für die EDM-basierte Klassifizierung verwenden, gehen Sie folgendermaßen vor:
 
-1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. Run the following PowerShell cmdlet, substituting the data store name of "patientrecords" with the one you want to remove:
+2. Führen Sie das folgende PowerShell-Cmdlet aus, und ersetzen Sie dabei den Datenspeicherortnamen "patientrecords" durch den Namen, den Sie entfernen möchten:
 
     `Remove-DlpEdmSchema -Identity patientrecords`
 
-     You will be prompted to confirm, as follows:
+     Sie werden zu folgenden Bestätigungen aufgefordert:
     
        Confirm
        Are you sure you want to perform this action?
@@ -159,25 +161,29 @@ Now that the schema for your database of sensitive information is defined, the n
        [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"):
     
     > [!TIP]
-    > If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: `Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false`
+    > Wenn Sie möchten, dass Ihre Änderungen ohne Bestätigung durchgeführt werden, verwenden Sie in Schritt 2 stattdessen das folgende Cmdlet: `Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false`
 
-### Set up a rule package
+### <a name="set-up-a-rule-package"></a>Einrichten eines Regelpakets
 
-1. Create a rule package in .xml format (with Unicode encoding), similar to the following example. (You can copy, modify, and use our example.) 
+1. Erstellen Sie ein Regelpaket im XML-Format (mit Unicode-Codierung), ähnlich wie im folgenden Beispiel. (Sie können das Beispiel kopieren, ändern und verwenden.) 
 
-   Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (edm.xml), with one *ExactMatch* items per searchable field. Consider the following ExactMatch item:
+   Wie Sie im vorherigen Verfahren erfahren haben, wurden im PatientRecords-Schema fünf Felder als durchsuchbar definiert: *PatientID*, *MRN*, *SSN*, *Phone* und *DOB*. In unserem Beispiel für ein Regelpaket sind diese Felder enthalten, und es wird auf die Datenbankschemadatei (edm.xml) verwiesen, wobei ein *ExactMatch*-Element pro durchsuchbarem Feld vorhanden ist. Sehen Sie sich das folgende ExactMatch-Element an:
 
    ```
-    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" > <Pattern confidenceLevel="65"> <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" /> </Pattern> </ExactMatch>
+    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
+      <Pattern confidenceLevel="65">
+        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+      </Pattern>
+    </ExactMatch>
    ```
 
-    In this example, note the following:
+    Notieren Sie in diesem Beispiel Folgendes:
 
-    - The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.
-    - The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.
-    - The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
+    - Der dataStore-Name verweist auf die zuvor erstellte CSV-Datei: **dataStore = "PatientRecords"**.
+    - Der idMatch-Wert verweist auf ein durchsuchbares Feld, das in der Datenbankschema-Datei aufgelistet ist: **idMatch matches = "SSN"**.
+    - Der classification-Wert verweist auf einen vorhandenen oder benutzerdefinierten vertraulichen Informationstyp: **classification = "US-Sozialversicherungsnummer (SSN)"**. (In diesem Fall wird der vorhandene vertrauliche Informationstyp "US-Sozialversicherungsnummer (SSN)" verwendet.)
 
-    When you set up your rule package, make sure to correctly reference your .csv file and edm.xml file. (You can copy, modify, and use our example.) 
+    Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei und die Datei "edm.xml" korrekt referenzieren. (Sie können das Beispiel kopieren, ändern und verwenden.) 
 
     ```<?xml version="1.0" encoding="utf-8"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -295,7 +301,7 @@ Sie können Ihre Datenbank für vertrauliche Informationen täglich oder wöchen
     
     |Methode  |Vorgehensweise  |
     |---------|---------|
-    |Windows PowerShell     |Siehe Dokumentation [Aufgabenplanung und Beispiel PowerShell-Skript in diesem Artikel|
+    |Windows PowerShell     |Siehe Dokumentation [Aufgabenplanung](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) und [Beispiel PowerShell-Skript](#example-powershell-script-for-task-scheduler) in diesem Artikel|
     |Aufgabenplaner-API |Siehe Dokumentation [Aufgabenplaner](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) |
     |Windows-Benutzeroberfläche     |Klicken Sie in Windows auf **Start** und geben Sie `Task Scheduler` ein. Klicken Sie dann in der Ergebnisliste mit der rechten Maustaste auf **Aufgabenplaner** und wählen Sie **Als Administrator ausführen**.          |
 
@@ -354,7 +360,7 @@ Sie können die EDM-basierte Klassifikation mit Informationsschutzfunktionen ver
 
 6. Wählen Sie in der Spalte **Status** **Nur Exchange-E-Mail** und wählen Sie dann **Weiter**. <br/>![EDM-Richtlinie nur mit Exchange](media/EDM-DLPpolicy-ExchangeOnly.png)<br/>
 
-7. Wählen Sie auf der Registerkarte Richtlinieneinstellungen **Erweiterte Einstellungen verwenden** und dann **Weiter**.<br/>![Erweiterte Einstellungen verwenden](media/edm-dlp-policy-advancedsettings.png)<br/>
+7. Wählen Sie auf der Registerkarte **Richtlinieneinstellungen** **Erweiterte Einstellungen verwenden** und dann **Weiter**.<br/>![Erweiterte Einstellungen verwenden](media/edm-dlp-policy-advancedsettings.png)<br/>
 
 8. Wählen Sie **+ Neue Regel** aus.<br/>![Erstellen einer Regel](media/edm-dlp-newrule.png)<br/>
 
@@ -364,7 +370,7 @@ Sie können die EDM-basierte Klassifikation mit Informationsschutzfunktionen ver
 
 11. Suchen Sie den vertraulichen Informationstyp, den Sie beim Einrichten Ihres Regelpakets erstellt haben, und wählen Sie dann **+ Hinzufügen**.<br/>![Vertraulichen Informationstyp finden](media/edm-dlp-newrulefindsensitiverulepack.png)<br/>Wählen Sie dann **Fertig**.
 
-12. Wählen Sie Optionen für die Regel aus, wie z. B. Benutzerbenachrichtigungen**, **Benutzeraußerkraftsetzungen**, **Schadensberichte** usw., und wählen Sie dann **Speichern**.
+12. Wählen Sie Optionen für die Regel aus, wie z. B. **Benutzerbenachrichtigungen**, **Benutzeraußerkraftsetzungen**, **Schadensberichte** usw., und wählen Sie dann **Speichern**.
 
 13. Überprüfen Sie auf der Registerkarte die **Richtlinieneinstellungen**, überprüfen Sie Ihre Regeln und wählen Sie dann **Weiter**.
 
