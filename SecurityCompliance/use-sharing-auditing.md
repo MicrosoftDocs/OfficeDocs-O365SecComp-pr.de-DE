@@ -13,14 +13,15 @@ search.appverid:
 - MOE150
 - BCS160
 - MET150
+ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
-ms.openlocfilehash: 8996d404e2dbeaba01952c33a8699ca2f151ad5d
-ms.sourcegitcommit: a8049055a48375bee7e6ed81fafcb27a7b2fcdff
+ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35911775"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258568"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 

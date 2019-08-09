@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel wird die neue Version von Advanced eDiscovery in Microsoft 365 beschrieben.
-ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d3abd49d3ba336f5896887732ea0c37b59265bc9
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598731"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258558"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365
 
@@ -94,4 +94,4 @@ Verwenden Sie die Registerkarte **Aufträge** , um langwierige Prozesse für ber
 
 ## <a name="configuring-case-settings"></a>Konfigurieren von Falleinstellungen
 
-Verwenden Sie die Registerkarte **Einstellungen** , um Einstellungen für Groß-/Kleinschreibung zu konfigurieren. Dies umfasst das Hinzufügen von Mitgliedern zu einem Fall, das Schließen oder Löschen eines Falls und das Konfigurieren von Such-und Analyse Einstellungen. Weitere Informationen finden Sie unter [Konfigurieren von Fall Einstellungen in Advanced eDiscovery](configuring-case-settings-ediscovery20.md).
+Verwenden Sie die Registerkarte **Einstellungen** , um Einstellungen für Groß-/Kleinschreibung zu konfigurieren. Dies umfasst das Hinzufügen von Mitgliedern zu einem Fall, das Schließen oder Löschen eines Falls und das Konfigurieren von Such-und Analyse Einstellungen.
