@@ -52,7 +52,7 @@
 ### [Sehen Sie einen erweiterten Überblick über das Anpassen von DLP an](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](customize-a-built-in-sensitive-information-type.md)
 ### [Benutzerdefinierte vertrauliche Informationstypen](custom-sensitive-info-types.md)
-### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit genauer Datenübereinstimmung (Vorschau)](create-custom-sensitive-info-type-edm.md)
+### [Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung.](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security & Compliance Center](create-a-custom-sensitive-information-type.md)
 ### [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Erstellen eines Schlüsselwörterbuchs](create-a-keyword-dictionary.md)
