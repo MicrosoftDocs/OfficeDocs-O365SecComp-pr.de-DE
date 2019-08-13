@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>Week of July 01, 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 7/1/2019 | [Suchen und untersuchen schädlicher e-Mails, die zugestellt wurden (Office 365 Untersuchung und Reaktion auf Bedrohungen](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | Geändert |
-| 7/1/2019 | [Berechtigungen im Office 365 Security #a0 Compliance Center](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | Geändert |
-| 7/1/2019 | [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen im Security #a0 Compliance Center PowerShell](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | Geändert |
-| 7/1/2019 | [Verhinderung von Datenverlust und Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | Geändert |
-| 7/2/2019 | [Archivieren von Drittanbieterdaten in Office 365](/Office365/SecurityCompliance/archiving-third-party-data) | Geändert |
-| 7/2/2019 | [Schützen von vertraulichen Inhalten in E-Mails mit Exchange Online](/Office365/SecurityCompliance/exchange-online-secures-email-secrets) | Geändert |
-| 7/2/2019 | [Verwenden der Inhaltssuche zum Durchsuchen von drittanbieterdaten, die in Office 365 importiert wurden](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | Geändert |
-| 7/2/2019 | [Verhinderung von Datenverlust und Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | Geändert |
-| 7/2/2019 | [Massenbearbeitung von Inhalts suchen](/Office365/SecurityCompliance/bulk-edit-content-searches) | Geändert |
-| 7/2/2019 | [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | Geändert |
-| 7/2/2019 | [eDiscovery in Office 365](/Office365/SecurityCompliance/ediscovery) | Geändert |
-| 7/2/2019 | [Übersicht über Aufbewahrungsrichtlinien](/Office365/SecurityCompliance/retention-policies) | Geändert |
-| 7/2/2019 | [Durchsuchen des Überwachungsprotokolls im Security #a0 Compliance Center](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | Geändert |
-| 7/2/2019 | [Verwenden der Inhaltssuche zum Durchsuchen des Postfachs und der OneDrive for Business-Website nach einer Liste von Benutzern](/Office365/SecurityCompliance/search-the-mailbox-and-onedrive-for-business-for-a-list-of-users) | Geändert |
-| 7/2/2019 | [Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden](/Office365/SecurityCompliance/use-sharing-auditing) | Geändert |
-| 7/2/2019 | [Attribute für Richtlinien für Informationsbarrieren](/Office365/SecurityCompliance/information-barriers-attributes) | Geändert |
-| 7/3/2019 | [Warnungsrichtlinien im Security and Compliance Center](/Office365/SecurityCompliance/alert-policies) | Geändert |
-
-
 ## <a name="week-of-july-08-2019"></a>Woche vom Juli 08, 2019
 
 
@@ -361,3 +337,70 @@
 | 8/2/2019 | [Beheben von Fehlern beim Verarbeiten von Daten](/Office365/SecurityCompliance/compliance20/error-remediation) | Geändert |
 | 8/2/2019 | [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | Geändert |
 | 8/2/2019 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | Geändert |
+
+
+## <a name="week-of-august-05-2019"></a>Week of August 05, 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 8/6/2019 | [Berechtigungen im Microsoft 365 Compliance Center und im Microsoft 365 Security Center](/Office365/SecurityCompliance/permissions-microsoft-365-compliance-security) | Geändert |
+| 8/6/2019 | [Verwenden von DKIM für e-Mails in Ihrer benutzerdefinierten Domäne in Office 365](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | Geändert |
+| 8/6/2019 | [Übermittlungen von Administratoren in Office 365, O365-Übermittlungen, Office 365 Spam Problem, O365 falsch negativ, Phishing in Office 365, Senden von e-Mails zum Scannen, verdächtige e-Mails in Office 365, e-Mails scannen, Microsoft-Scan für Phishing, Microsoft-Scan für Spam, Submit e-Mail, e-Mail senden](/Office365/SecurityCompliance/admin-submission) | Geändert |
+| 8/7/2019 | [Threat Explorer und Echtzeiterkennung](/Office365/SecurityCompliance/threat-explorer) | Geändert |
+| 8/7/2019 | [Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | Geändert |
+| 8/7/2019 | [Office 365 sichere ATP-Anhänge](/Office365/SecurityCompliance/atp-safe-attachments) | Geändert |
+| 8/7/2019 | [Office 365 Warn Seiten für ATP-sichere Links](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | Geändert |
+| 8/7/2019 | [ATP-sichere Links in Office 365](/Office365/SecurityCompliance/atp-safe-links) | Geändert |
+| 8/7/2019 | [Erstellen eines benutzerdefinierten Typs für vertrauliche Informationen im Security #a0 Compliance Center PowerShell](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | Geändert |
+| 8/7/2019 | [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security #a0 Compliance Center](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | Geändert |
+| 8/7/2019 | [Erstellen einer DLP-Richtlinie aus einer Vorlage](/Office365/SecurityCompliance/create-a-dlp-policy-from-a-template) | Geändert |
+| 8/7/2019 | [Erstellen eines Schlüsselwörterbuchs](/Office365/SecurityCompliance/create-a-keyword-dictionary) | Geändert |
+| 8/7/2019 | [Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Datenübereinstimmung](/Office365/SecurityCompliance/create-custom-sensitive-info-type-edm) | Geändert |
+| 8/7/2019 | [Erstellen, Testen und Optimieren einer DLP-Richtlinie](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | Geändert |
+| 8/7/2019 | [Benutzerdefinierte Typen vertraulicher Informationen für DLP](/Office365/SecurityCompliance/custom-sensitive-info-types) | Geändert |
+| 8/7/2019 | [Anpassen eines benutzerdefinierten vertraulichen Informationstyps](/Office365/SecurityCompliance/customize-a-built-in-sensitive-information-type) | Geändert |
+| 8/7/2019 | [Übersicht über die Verhinderung von Datenverlust](/Office365/SecurityCompliance/data-loss-prevention-policies) | Geändert |
+| 8/7/2019 | [Verhinderung von Datenverlust und Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | Geändert |
+| 8/7/2019 | [Dokumentfingerabdrücke](/Office365/SecurityCompliance/document-fingerprinting) | Geändert |
+| 8/7/2019 | [Dynamische Zustellung und Vorschau mit Office 365 sicheren ATP-Anlagen](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | Geändert |
+| 8/7/2019 | [Aktivieren des Berichtsnachrichts-Add-Ins](/Office365/SecurityCompliance/enable-the-report-message-add-in) | Geändert |
+| 8/7/2019 | [Erstellen einer Abfrage zum Auffinden auf Websites gespeicherter vertraulicher Daten](/Office365/SecurityCompliance/form-a-query-to-find-sensitive-data-stored-on-sites) | Geändert |
+| 8/7/2019 | [Erste Schritte mit DLP-Richtlinienempfehlungen](/Office365/SecurityCompliance/get-started-with-dlp-policy-recommendations) | Geändert |
+| 8/7/2019 | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](/Office365/SecurityCompliance/get-started-with-the-default-dlp-policy) | Geändert |
+| 8/7/2019 | [Funktionsweise Office 365 sicherer ATP-Anlagen](/Office365/SecurityCompliance/how-atp-safe-attachments-works) | Geändert |
+| 8/7/2019 | [Funktionsweise von Office 365 ATP-Sicherheits Links](/Office365/SecurityCompliance/how-atp-safe-links-works) | Geändert |
+| 8/7/2019 | [Funktionsweise von DLP zwischen dem Security & Compliance Center und Exchange Admin Center](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | Geändert |
+| 8/7/2019 | [Attribute für Richtlinien für Informationsbarrieren](/Office365/SecurityCompliance/information-barriers-attributes) | Geändert |
+| 8/7/2019 | [Bearbeiten von Richtlinien für Informationsbarrieren](/Office365/SecurityCompliance/information-barriers-edit-segments-policies.md) | Geändert |
+| 8/7/2019 | [Definieren von Richtlinien für Informationsbarrieren](/Office365/SecurityCompliance/information-barriers-policies) | Geändert |
+| 8/7/2019 | [Problembehandlung bei Informationsbarrieren](/Office365/SecurityCompliance/information-barriers-troubleshooting) | Geändert |
+| 8/7/2019 | [Übersicht über Informationsbarrieren](/Office365/SecurityCompliance/information-barriers) | Geändert |
+| 8/7/2019 | [Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | Geändert |
+| 8/7/2019 | [Übersicht über das neue Microsoft 365 Compliance Center](/Office365/SecurityCompliance/microsoft-365-compliance-center) | Geändert |
+| 8/7/2019 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | Geändert |
+| 8/7/2019 | [Erstellen einer DLP-Richtlinie zum Schützen von Dokumenten mit FCI oder anderen Eigenschaften](/Office365/SecurityCompliance/protect-documents-that-have-fci-or-other-properties) | Geändert |
+| 8/7/2019 | [Einrichten einer benutzerdefinierten Liste blockierter URLs mit Office 365 ATP-Sicherheits Links](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | Geändert |
+| 8/7/2019 | [Einrichten einer benutzerdefinierten Liste "do-not-Rewrite-URLs" mithilfe Office 365 sicherer ATP-Links](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | Geändert |
+| 8/7/2019 | [Einrichten Office 365 Richtlinien für ATP-sichere Anlagen](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | Geändert |
+| 8/7/2019 | [Einrichten Office 365 Richtlinien für ATP-sichere Links](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | Geändert |
+| 8/7/2019 | [Ansichten im Threat Explorer und Echt Zeit Erkennungen](/Office365/SecurityCompliance/threat-explorer-views) | Geändert |
+| 8/7/2019 | [Aktivieren von Office 365 ATP für SharePoint, OneDrive und Microsoft Teams](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | Geändert |
+| 8/7/2019 | [Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | Geändert |
+| 8/7/2019 | [Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center](/Office365/SecurityCompliance/view-email-security-reports) | Geändert |
+| 8/7/2019 | [Anzeigen der Berichte zur Verhinderung von Datenverlust](/Office365/SecurityCompliance/view-the-dlp-reports) | Geändert |
+| 8/7/2019 | [Wonach die DLP-Funktionen suchen](/Office365/SecurityCompliance/what-the-dlp-functions-look-for) | Geändert |
+| 8/7/2019 | [Inhalt der DLP-Richtlinienvorlagen](/Office365/SecurityCompliance/what-the-dlp-policy-templates-include) | Geändert |
+| 8/7/2019 | [Wonach die Typen von vertraulichen Informationen suchen](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | Geändert |
+| 8/7/2019 | [Herunterladen von Exportaufträgen](/Office365/SecurityCompliance/compliance20/download-export-jobs) | Geändert |
+| 8/7/2019 | [Übersicht über die unbegrenzte Archivierung in Office 365](/Office365/SecurityCompliance/unlimited-archiving) | Geändert |
+| 8/8/2019 | [Erstellen von Suchabfragen](/Office365/SecurityCompliance/compliance20/building-search-queries) | Geändert |
+| 8/8/2019 | Konfigurieren von Fall Einstellungen in Advanced eDiscovery | entfernt |
+| 8/8/2019 | [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](/Office365/SecurityCompliance/compliance20/overview-ediscovery-20) | Geändert |
+| 8/8/2019 | [Überprüfen von Case-Daten in Advanced eDiscovery](/Office365/SecurityCompliance/compliance20/reviewing-data-in-review-set) | Geändert |
+| 8/8/2019 | [Berechtigungen im Office 365 Security #a0 Compliance Center](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | Geändert |
+| 8/8/2019 | [Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365](/Office365/SecurityCompliance/set-up-compliance-boundaries) | Geändert |
+| 8/8/2019 | [Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden](/Office365/SecurityCompliance/use-sharing-auditing) | Geändert |
+| 8/9/2019 | [Erstellen eines benutzerdefinierten vertraulichen Informationstyps im Security #a0 Compliance Center](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | Geändert |
+| 8/9/2019 | Erstellen benutzerdefinierter vertraulicher Informationstypen mit exakter Datenübereinstimmung | entfernt |
+| 8/9/2019 | [Benutzerdefinierte Typen vertraulicher Informationen für DLP](/Office365/SecurityCompliance/custom-sensitive-info-types) | Geändert |
