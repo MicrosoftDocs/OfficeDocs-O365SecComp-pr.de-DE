@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Office 365 Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
+ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258598"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302424"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -107,7 +107,7 @@ Nachdem Sie für jede Agentur Rollengruppen erstellt haben, besteht der nächste
 Hier ist die Syntax, die verwendet wird, um einen Such Berechtigungsfilter zu erstellen, der für Kompatibilitäts Grenzen verwendet wird.
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
   
 Im folgenden finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
@@ -116,19 +116,22 @@ Im folgenden finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
     
 -  `Users`: Gibt die Benutzer oder Gruppen an, die diesen Filter auf die durchgeführten Inhalts Suchaktionen anwenden. Für Kompatibilitäts Grenzen gibt dieser Parameter die Rollengruppen (die Sie in Schritt 3 erstellt haben) in der Agentur an, für die Sie den Filter erstellen. Hinweis Hierbei handelt es sich um einen mehrwertigen Parameter, mit dem Sie eine oder mehrere Rollengruppen, getrennt durch Kommas, einbinden können. 
     
--  `Filters`: Gibt die Suchkriterien für den Filter an. Für die Kompatibilitäts Grenzen definieren Sie die folgenden Filter: jede gilt für einen Inhaltsspeicherort. 
+-  `Filters`: Gibt die Suchkriterien für den Filter an. Für die Konformitäts Grenzen definieren Sie die folgenden Filter. Jeder wird auf einen Inhaltsspeicherort angewendet. 
     
-  -  `Mailbox`: Gibt die Postfächer an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Für Kompatibilitäts Grenzen ist *complianceattribute* das gleiche Attribut, das Sie in Schritt 1 identifiziert haben, und *Attribut* Wert gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer in einer bestimmten Agentur durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"`. 
+    -  `Mailbox`: Gibt die Postfächer an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Für Kompatibilitäts Grenzen ist *complianceattribute* das gleiche Attribut, das Sie in Schritt 1 identifiziert haben, und *Attribut* Wert gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer in einer bestimmten Agentur durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"`. 
     
-  -  `Site`: Gibt die OneDrive-Konten an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Verwenden Sie für den OneDrive-Filter die tatsächliche `ComplianceAttribute`Zeichenfolge. Dies entspricht dem Attribut, das Sie in Schritt 1 identifiziert haben und das mit OneDrive-Konten als Ergebnis der in Schritt 2 übermittelten Supportanforderung synchronisiert wird.  *Attributvalue* gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die OneDrive-Konten in einer bestimmten Agentur durchsuchen. Beispiel: `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Gibt die OneDrive-Konten an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Verwenden Sie für den OneDrive-Filter die tatsächliche `ComplianceAttribute`Zeichenfolge. Dies entspricht dem Attribut, das Sie in Schritt 1 identifiziert haben und das mit OneDrive-Konten als Ergebnis der in Schritt 2 übermittelten Supportanforderung synchronisiert wird.  *Attributvalue* gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die OneDrive-Konten in einer bestimmten Agentur durchsuchen. Beispiel: `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`: Gibt die SharePoint-Websites an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Das *SharePointURL* gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Zum Beispiel`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+    -  `Site_Path`: Gibt die SharePoint-Websites an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Das *SharePointURL* gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Beachten Sie Beispiels `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"` Weise, `Site` dass `Site_Path` die und-Filter durch einen **-oder-** Operator verbunden sind.
     
+     > [!NOTE]
+     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste*. Eine Filterliste ist ein Filter, der einen Post Fach Filter und einen Website Filter enthält, der durch ein Komma getrennt ist. Beachten Sie im vorherigen Beispiel, dass durch ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute**getrennt werden `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`:. Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden zwei Such Berechtigungsfilter aus der Liste Filter erstellt: ein Post Fach Filter und ein Website Filter. Eine Alternative zur Verwendung einer Filterliste besteht darin, zwei separate Such Berechtigungsfilter für jede Agentur zu erstellen: einen Such Berechtigungsfilter für das Postfachattribut und einen Filter für die Website Attribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Such Berechtigungsfilter ist eine Frage der Präferenz.
+
 -  `Action`: Gibt die Art der Konformitäts Suchaktion an, auf die der Filter angewendet wird. Beispielsweise würde `-Action Search` der Filter nur angewendet, wenn Mitglieder der Rollengruppe, die im `Users` Parameter definiert sind, eine Inhaltssuche ausführen. In diesem Fall würde der Filter beim Exportieren von Suchergebnissen nicht angewendet. Verwenden Sie `-Action All` für Kompatibilitäts Grenzen den Filter, damit dieser auf alle Suchaktionen angewendet wird. 
     
     Eine Liste der Inhalts Suchaktionen finden Sie im Abschnitt "New-ComplianceSecurityFilter" unter Konfigurieren der [Berechtigungs Filterung für die Inhaltssuche](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
-    
-Im folgenden sind Beispiele für die beiden Such Berechtigungsfilter aufgeführt, die zur Unterstützung des Szenarios "Contoso-Konformitäts Grenzen" erstellt würden.
+
+Im folgenden sind Beispiele für die beiden Such Berechtigungsfilter aufgeführt, die zur Unterstützung des Szenarios "Contoso-Konformitäts Grenzen" erstellt würden. Beide Beispiele enthalten eine Liste mit Trennzeichen getrennten filtern, in der die Post Fach-und Website Filter im gleichen Such Berechtigungsfilter enthalten sind und durch ein Komma getrennt werden.
   
  **Vierter Kaffee**
 
