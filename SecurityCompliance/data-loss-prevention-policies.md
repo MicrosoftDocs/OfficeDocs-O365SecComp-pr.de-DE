@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 1f82af2c61138fd33f849a5cb13fcee1259cafd7
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
+ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230769"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393915"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
 
