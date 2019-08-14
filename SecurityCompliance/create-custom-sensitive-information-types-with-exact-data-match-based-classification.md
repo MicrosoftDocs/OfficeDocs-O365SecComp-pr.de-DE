@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung.
-ms.openlocfilehash: 2e353eb078df335d80f669a8cef64a19bd7d9584
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279231"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297763"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
@@ -123,13 +123,13 @@ Sie werden zu folgenden Bestätigungen aufgefordert:
 > [!NOTE]
 > Es kann zwischen 10–60 Minuten dauern, bis das EDMSchema durch Ergänzungen aktualisiert wird. Das Update muss abgeschlossen sein, bevor Sie Schritte ausführen, die die Zusätze verwenden.
 
-Nachdem das Schema für Ihre Datenbank mit vertraulichen Informationen definiert wurde, besteht der nächste Schritt darin, ein Regelpaket einzurichten. Fahren Sie mit dem Abschnitt [Einrichten eines Regelpakets](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#set-up-a-rule-package) fort.
+Nachdem das Schema für Ihre Datenbank mit vertraulichen Informationen definiert wurde, besteht der nächste Schritt darin, ein Regelpaket einzurichten. Fahren Sie mit dem Abschnitt [Einrichten eines Regelpakets](#set-up-a-rule-package) fort.
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Bearbeiten des Schemas für die EDM-basierte Klassifikation
 
 Wenn Sie Änderungen an Ihrer edm.xml-Datei vornehmen und z. B. ändern möchten, welche Felder für die EDM-basierte Klassifikation verwendet werden, führen Sie die folgenden Schritte aus:
 
-1. Bearbeiten Sie Ihre edm.mxl-Datei (die Datei, die im Abschnitt [Definieren des Schemas](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#define-the-schema-for-your-database-of-sensitive-information) in diesem Artikel behandelt wird).
+1. Bearbeiten Sie Ihre edm.mxl-Datei (die Datei, die im Abschnitt [Definieren des Schemas](#define-the-schema-for-your-database-of-sensitive-information) in diesem Artikel behandelt wird).
 
 2. [Stellen Sie eine Verbindung mit Office 365 Security & Compliance Center PowerShell her](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
@@ -300,7 +300,7 @@ In dieser Phase richten Sie eine benutzerdefinierte Sicherheitsgruppe, ein Benut
 >[!NOTE]
 > Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass Sie Mitglied der Sicherheitsgruppe *EDM\_DataUploaders* und lokaler Administrator auf Ihrem Computer sind.
 
-1. Laden Sie den EDM-Upload-Agenten unter [https://go.microsoft.com/fwlink/?linkid=2088639](https://go.microsoft.com/fwlink/?linkid=2088639) herunter und installieren Sie ihn. Standardmäßig sollte der Installationsspeicherort C:\\Program Files\\Microsoft\\EdmUploadAgent sein.
+1. Laden Sie den [EDM-Upload-Agenten](https://go.microsoft.com/fwlink/?linkid=2088639) herunter und installieren Sie ihn. Standardmäßig sollte der Installationsspeicherort C:\\Programme\\Microsoft\\EdmUploadAgent sein.
 
 2. Wenn Sie den EDM-Upload-Agenten autorisieren möchten, öffnen Sie die Windows-Eingabeaufforderung (als Administrator), und führen Sie dann den folgenden Befehl aus:
 
@@ -340,9 +340,9 @@ Um zu überprüfen, ob Ihre vertraulichen Daten hochgeladen wurden, führen Sie 
 
 Sie sehen eine Liste der Datenspeicher mit dem Zeitpunkt der letzten Aktualisierung, die der folgenden Liste ähnelt:
 
-Fahren Sie mit dem Einrichten des Prozesses und des Zeitplans für das [Aktualisieren der Datenbank für vertrauliche Informationen](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#refreshing-your-sensitive-information-database) fort.
+Fahren Sie mit dem Einrichten des Prozesses und des Zeitplans für das [Aktualisieren der Datenbank für vertrauliche Informationen](#refreshing-your-sensitive-information-database) fort.
 
-Sie können nun die EDM-basierte Klassifikation mit Ihren Microsoft Cloud Services verwenden. Sie können beispielsweise [eine DLP-Richtlinie mithilfe der EDM-basierten Klassifizierung einrichten](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#to-create-a-dlp-policy-with-edm).
+Sie können nun die EDM-basierte Klassifikation mit Ihren Microsoft Cloud Services verwenden. Sie können beispielsweise [eine DLP-Richtlinie mithilfe der EDM-basierten Klassifizierung einrichten](#to-create-a-dlp-policy-with-edm).
 
 #### <a name="refreshing-your-sensitive-information-database"></a>Aktualisieren der Datenbank für vertrauliche Informationen
 
@@ -350,16 +350,16 @@ Sie können Ihre Datenbank für vertrauliche Informationen täglich oder wöchen
 
 1. Ermitteln Sie den Vorgang und die Häufigkeit (täglich oder wöchentlich) zum Aktualisieren der Datenbank mit vertraulichen Informationen.
 
-2. Exportieren Sie die vertraulichen Daten erneut in eine App, wie z. B. Microsoft Excel, und speichern Sie die Datei im CSV-Format. Behalten Sie den Dateinamen und den Speicherort bei, den Sie beim Ausführen der unter [Indizieren und Hochladen vertraulicher Daten](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data) beschriebenen Schritte verwendet haben.
+2. Exportieren Sie die vertraulichen Daten erneut in eine App, wie z. B. Microsoft Excel, und speichern Sie die Datei im CSV-Format. Behalten Sie den Dateinamen und den Speicherort bei, den Sie beim Ausführen der unter [Indizieren und Hochladen vertraulicher Daten](#index-and-upload-the-sensitive-data) beschriebenen Schritte verwendet haben.
 
 > [!NOTE]
 > Wenn es keine Änderungen an der Struktur (Feldnamen) der CSV-Datei gibt, müssen Sie auch keine an der Datenbankschemadatei vornehmen, wenn Sie die Daten aktualisieren. Wenn Sie jedoch Änderungen vornehmen müssen, stellen Sie sicher, dass Sie das Datenbankschema und Ihr Regelpaket entsprechend bearbeiten.
 
-3. Verwenden Sie die [Aufgabenplanung](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page), um die Schritte 2 und 3 im Verfahren [Indizieren und Hochladen vertraulicher Daten](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data) zu automatisieren. Sie können Aufgaben mithilfe verschiedener Methoden planen:
+3. Verwenden Sie die [Aufgabenplanung](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page), um die Schritte 2 und 3 im Verfahren [Indizieren und Hochladen vertraulicher Daten](#index-and-upload-the-sensitive-data) zu automatisieren. Sie können Aufgaben mithilfe verschiedener Methoden planen:
 
 | **Methode**             | **Nächste Schritte**                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     | Siehe die Dokumentation [Aufgabenplanung](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) und das [PowerShell-Beispielskript](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#example-powershell-script-for-task-scheduler) in diesem Artikel |
+| Windows PowerShell     | Siehe die Dokumentation [Aufgabenplanung](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) und das [PowerShell-Beispielskript](#example-powershell-script-for-task-scheduler) in diesem Artikel |
 | Aufgabenplaner-API     | Lesen Sie die Dokumentation [Aufgabenplanung](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                |
 | Windows-Benutzeroberfläche | Klicken Sie in Windows auf **Start**, und geben Sie „Aufgabenplanung“ ein. Klicken Sie dann in der Ergebnisliste mit der rechten Maustaste auf **Aufgabenplanung** und wählen Sie **Als Administrator ausführen** aus.                                                                                                                                                                                                                                                                           |
 
@@ -494,7 +494,7 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 
-  [New-DlpEdmSchema](https://docs.microsoft.com/de-DE/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmsschema?view=exchange-ps)
+  [New-DlpEdmSchema](https://docs.microsoft.com/de-DE/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 GitHub-Feedback ist aktiviert, aber das Hinzufügen von Problemen ist nur auf der öffentlichen Website verfügbar.
