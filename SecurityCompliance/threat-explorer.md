@@ -1,5 +1,5 @@
 ---
-title: Threat Explorer und Echtzeiterkennung
+title: Threat Explorer und Echt Zeit Erkennungen, neu in Threat Explorer, Änderungen am Threat Explorer, neu in Office 365, Sicherheit, Cloud Security, New to Security in ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über Explorer und Echt Zeit Erkennungen im Security &amp; Compliance Center.
-ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230409"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407954"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer und Echtzeiterkennung
 
@@ -42,12 +42,16 @@ Mit diesem Bericht haben Sie folgende Möglichkeiten:
 
 ## <a name="new-features-in-real-time-detections"></a>Neue Features in Echt Zeit Erkennungen
 
-Mit Explorer (und Echtzeiterkennung) werden neue Felder hinzugefügt, die Ihnen ein vollständigeres Bild davon geben, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
+Im folgenden werden drei neue Features in Threat Explorer erläutert.
+
+Zunächst sind **die e-Mail-Kopfzeilen Vorschau und der Download des e-Mail-Texts** neue Features, die in Threat Explorer zur Verfügung stehen. Administratoren können heruntergeladene Kopfzeilen/e-Mails nach Bedrohungen analysieren. Da das Herunterladen von e-Mails die Gefährdung von Informationen gefährden kann, wird dieser Prozess durch rollenbasierte Zugriffssteuerung (Roles-Based Access Control, RBAC) gesteuert. Eine neue Rolle mit dem Namen "Vorschau" muss in einer anderen Office 365 Rollengruppe (beispielsweise in sec-Vorgänge oder in der SEC-Verwaltung) hinzugefügt werden, um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "all-Email" zu gewähren.
+
+Aber Explorer (und Echtzeit-Erkennungen) fügt auch neue neue Felder entwickelt, um Ihnen ein vollständiges Bild, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
 
 Wie wird das gemacht? Der Zustellungs Status wird nun in zwei Spalten aufgeteilt:
 
-- Zustellungs Aktion – wie lautet der Status dieser e-Mail?
-- Zustellungs Speicherort – wohin wurde diese e-Mail weitergeleitet?
+- **Zustellungs Aktion** – wie lautet der Status dieser e-Mail?
+- **Zustellungs Speicherort** – wohin wurde diese e-Mail weitergeleitet?
 
 Zustellungs Aktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen auf eine e-Mail angewendet wird. Hier sind die möglichen Aktionen, die eine e-Mail ausführen kann:
 
@@ -62,7 +66,7 @@ Und hier ist, was der Benutzer sehen kann und was er nicht kann:
 |Geliefert     | Gesperrt        |
 |Ausrangierten     | Ersetzt        |
 
-Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden finden Sie die scannbar-Werte des Zustellungsortes:
+Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Sie ist mit einer Zustellungs Aktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn ein Problem mit e-Mails gefunden wird. Im folgenden sind die möglichen Werte für den Zustellungs Speicherort zu finden:
 
 1. Posteingang oder Ordner – die e-Mail befindet sich im Posteingang oder in einem Ordner (entsprechend Ihren e-Mail-Regeln).
 2. On-Prem oder External – das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
@@ -72,8 +76,9 @@ Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, d
 6. Fehler – die e-Mail konnte das Postfach nicht erreichen.
 7. Fallen gelassen – die e-Mail wird irgendwo in der Nachrichtenübermittlung verloren.
 
-Die e-Mail-Zeitachse ist eine weitere neue Explorer-Funktion, mit der die Jagd Erfahrung für Administratoren verbessert werden soll. Es reduziert die Zufallsgenerierung, da die Überprüfung verschiedener Standorte kürzer ist, um zu versuchen, das Ereignis zu verstehen. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. In der Tat werden einige Ereignisse, die nach der Zustellung an Ihre e-Mails geschehen, in der Spalte "spezielle Aktion" erfasst. Durch die Kombination der Informationen aus der Zeitachse dieser e-Mail mit der speziellen Aktion, die Sie für die e-Mail-Zustellung durchführen, erhalten Administratoren einen Einblick in die Funktionsweise Ihrer Richtlinien, wo die e-Mails schließlich weitergeleitet wurden, und in einigen Fällen was die abschließende Bewertung war.
+Die **e-Mail-Zeitachse** ist eine weitere neue Explorer-Funktion, mit der die Jagd Erfahrung für Administratoren verbessert werden soll. Es reduziert die Zufallsgenerierung, da die Überprüfung verschiedener Standorte kürzer ist, um zu versuchen, das Ereignis zu verstehen. Wenn mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. In der Tat werden einige Ereignisse, die nach der Zustellung an Ihre e-Mails geschehen, in der Spalte "spezielle Aktion" erfasst. Durch die Kombination der Informationen aus der Zeitachse dieser e-Mail mit der speziellen Aktion, die Sie für die e-Mail-Zustellung durchführen, erhalten Administratoren einen Einblick in die Funktionsweise Ihrer Richtlinien, wo die e-Mails schließlich weitergeleitet wurden, und in einigen Fällen was die abschließende Bewertung war.
 
+Weitere Informationen zur Untersuchung böswilliger e-Mails finden Sie unter [Suchen und untersuchen von in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered)zugestellten böswilligen e-Mails.
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe in e-Mail erkannte Malware nach Technologie
 
