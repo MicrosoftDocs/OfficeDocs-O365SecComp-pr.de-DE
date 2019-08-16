@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung.
-ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
-ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
+ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297763"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407907"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
 ## <a name="overview"></a>Übersicht
 
 
-  [Benutzerdefinierte vertrauliche Informationstypen](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types) werden verwendet, um zu verhindern, dass vertrauliche Informationen versehentlich oder in unangemessener Weise freigegeben werden. Als Administrator können Sie das [Security & Compliance Center](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type) oder [PowerShell](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) verwenden, um einen benutzerdefinierten vertraulichen Informationstyp basierend auf Mustern, Nachweisen (Stichwörtern wie  *Mitarbeiter*, *Abzeichen*, *ID* usw.), Zeichenabstand (wie nahe Nachweise sich an Zeichen in einem bestimmten Muster befinden) und Vertrauensstufen zu definieren. Solche benutzerdefinierten vertraulichen Informationstypen erfüllen die geschäftlichen Anforderungen vieler Organisationen.
+  [Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types) werden verwendet, um zu verhindern, dass vertrauliche Informationen versehentlich oder in unangemessener Weise freigegeben werden. Als Administrator können Sie das [Security & Compliance Center](https://docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type) oder [PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) verwenden, um einen benutzerdefinierten vertraulichen Informationstyp basierend auf Mustern, Nachweisen (Stichwörtern wie  *Mitarbeiter*, *Abzeichen*, *ID* usw.), Zeichenabstand (wie nahe Nachweise sich an Zeichen in einem bestimmten Muster befinden) und Vertrauensstufen zu definieren. Solche benutzerdefinierten vertraulichen Informationstypen erfüllen die geschäftlichen Anforderungen vieler Organisationen.
 
 Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp nutzen möchten, der genaue Datenwerte verwendet, anstatt nur mit generischen Mustern übereinzustimmen? Mit einer EDM-basierten Klassifizierung (genaue Datenübereinstimmung) können Sie einen benutzerdefinierten Informationstyp mit den folgenden Merkmalen erstellen:
 
@@ -39,11 +39,11 @@ Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp nutze
 
 ![EDM-basierte Klassifikation](media/EDMClassification.png)
 
-Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrauliche Informationstypen zu erstellen, die sich auf genaue Werte in einer Datenbank mit vertraulichen Informationen beziehen. Die Datenbank kann täglich oder wöchentlich aktualisiert werden und bis zu 10 Millionen Datenzeilen enthalten. Mitarbeiter, Patienten oder Kunden kommen und gehen und Datensätze ändern sich, aber Ihre benutzerdefinierten vertraulichen Informationstypen bleiben aktuell und anwendbar. Darüber hinaus können Sie EDM-basierte Klassifikation mit Richtlinien verwenden, z. B. [Richtlinien zur Verhinderung von Datenverlust](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies) (Data Loss Prevention, DLP) oder [Microsoft Cloud App Security-Dateirichtlinien](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+Die EDM-basierte Klassifikation ermöglicht es Ihnen, benutzerdefinierte vertrauliche Informationstypen zu erstellen, die sich auf genaue Werte in einer Datenbank mit vertraulichen Informationen beziehen. Die Datenbank kann täglich oder wöchentlich aktualisiert werden und bis zu 10 Millionen Datenzeilen enthalten. Mitarbeiter, Patienten oder Kunden kommen und gehen und Datensätze ändern sich, aber Ihre benutzerdefinierten vertraulichen Informationstypen bleiben aktuell und anwendbar. Darüber hinaus können Sie EDM-basierte Klassifikation mit Richtlinien verwenden, z. B. [Richtlinien zur Verhinderung von Datenverlust](https://docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies) (Data Loss Prevention, DLP) oder [Microsoft Cloud App Security-Dateirichtlinien](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
-Sie müssen ein globaler, Compliance- oder Exchange Online-Administrator sein, um die in diesem Artikel beschriebenen Aufgaben auszuführen. Weitere Informationen über DLP-Berechtigungen finden Sie unter [Berechtigungen](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies#permissions).
+Sie müssen ein globaler, Compliance- oder Exchange Online-Administrator sein, um die in diesem Artikel beschriebenen Aufgaben auszuführen. Weitere Informationen über DLP-Berechtigungen finden Sie unter [Berechtigungen](https://docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies#permissions).
 
 Nach allgemeiner Verfügbarkeit wird die EDM-basierte Klassifikation in folgenden Abonnements berücksichtigt:
 
@@ -58,7 +58,7 @@ Nach allgemeiner Verfügbarkeit wird die EDM-basierte Klassifikation in folgende
 |---------|---------|
 |[Teil 1: Einrichten der EDM-basierten Klassifizierung](#part-1-set-up-edm-based-classification)<br/><br/>(je nach Bedarf)<br/>- [Bearbeiten des Datenbankschemas](#editing-the-schema-for-edm-based-classification) <br/>- [Entfernen des Schemas](#removing-the-schema-for-edm-based-classification) |– Lesezugriff auf vertrauliche Daten<br/>– Datenbankschema im XML-Format (Beispiel)<br/>– Regelpaket im XML-Format (Beispiel)<br/>– Administratorberechtigungen für das Security & Compliance Center (mithilfe von PowerShell) |
 |[Teil 2: Indizieren und Hochladen vertraulicher Daten](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(je nach Bedarf)<br/>[Aktualisieren der Daten](#refreshing-your-sensitive-information-database) |– Benutzerdefinierte Sicherheitsgruppe und Benutzerkonto<br/>– Lokaler Administratorzugriff auf den Computer mit dem EDM-Upload-Agent<br/>– Lesezugriff auf vertrauliche Daten<br/>– Prozess und Zeitplan für die Datenaktualisierung|
-|[Teil 3: Verwenden der EDM-basierten Klassifizierung mit Ihren Microsoft Cloud Services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |– Office 365-Abonnement mit DLP<br/>– EDM-basiertes Klassifizierungsfeature aktiviert (in Vorschau) |
+|[Teil 3: Verwenden der EDM-basierten Klassifizierung mit Ihren Microsoft Cloud Services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |– Office 365-Abonnement mit DLP<br/>– EDM-basiertes Klassifizierungsfeature aktiviert |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>Teil 1: Einrichten der EDM-basierten Klassifizierung
 
@@ -483,13 +483,13 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 ## <a name="related-articles"></a>Verwandte Artikel
 
 
-  [Integrierte vertrauliche Informationstypen und wonach diese suchen](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+  [Integrierte vertrauliche Informationstypen und wonach diese suchen](https://docs.microsoft.com/de-DE/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
 
-  [Benutzerdefinierte vertrauliche Informationstypen](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types)
+  [Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types)
 
 
-  [Überblick über DLP-Richtlinien](https://review.docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies)
+  [Überblick über DLP-Richtlinien](https://docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
