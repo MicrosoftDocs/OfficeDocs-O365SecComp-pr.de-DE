@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Der Dateiplan-Manager bietet erweiterte Verwaltungsfunktionen für Aufbewahrungsbezeichnungen, Aufbewahrungsbezeichnungsrichtlinien und bietet eine integrierte Möglichkeit, Bezeichnungen und Bezeichnung-zu-Inhalt-Aktivitäten in Ihrem gesamten Inhaltslebenszyklus zu durchlaufen – von der Erstellung über die Zusammenarbeit, die Datensatzdeklaration, die Aufbewahrung hin zur Disposition.
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547970"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430012"
 ---
 # <a name="overview-of-file-plan-manager"></a>Übersicht über den Dateiplan-Manager
 
@@ -123,7 +123,28 @@ Laden Sie eine leere Vorlage herunter (oder beginnen Sie mit einem Export Ihres 
 
 ![Leere Vorlage eines Dateiplans, geöffnet in Excel](media/file-plan-blank-template.png)
 
-Füllen Sie die Vorlage aus (in Kürze verfügbar: Referenzinformationen zu gültigen Wertkombinationen für ein einzelne Aufbewahrungsbezeichnung).
+Füllen Sie die Vorlage aus. Diese Tabelle enthält gültige Werte.
+
+|**Eigenschaft**|**Typ**|**Gültige Werte**|
+|:-----|:-----|:-----|
+|LabelName|Zeichenfolge|Wenn der Wert Leerzeichen enthält, setzen Sie ihn in Anführungszeichen (").|
+|Comment|Zeichenfolge|Wenn der Wert Leerzeichen enthält, setzen Sie ihn in Anführungszeichen ("). |
+|Notes|Zeichenfolge|Custom|
+|IsRecordLabel|Zeichenfolge|$true: Die Bezeichnung ist eine Datensatzbezeichnung.</br>$false: Die Bezeichnung ist keine Datensatzbezeichnung. Dies ist der Standardwert.|
+|RetentionAction|Zeichenfolge|Delete</br>Keep</br>KeepAndDelete |
+|RetentionDuration|Zeichenfolge|Die Eigenschaft gibt die Anzahl der Tage an, die der Inhalt aufbewahrt werden soll. Gültige Werte sind:</br>Positive Ganzzahl.</br>Der Wert ist unbegrenzt.|
+|RetentionType|Zeichenfolge|Diese Eigenschaft gibt an, ob die Aufbewahrungsdauer aus dem Erstellungsdatum des Inhalts, dem Datum der Bezeichnung (Markierung) oder aus dem Datum der letzten Änderung berechnet wird. Gültige Werte sind:</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|Diese Eigenschaft gibt die E-Mail-Adresse des Bearbeiters für Aufbewahrungsaktionen vom Typ "Delete" und "KeepAndDelete" an. Mehrere E-Mail-Adressen können durch Kommas getrennt angegeben werden.|
+|ReferenceId|Zeichenfolge|Custom|
+|DepartmentName|Zeichenfolge|Custom|
+|Kategorie|Zeichenfolge|Custom|
+|SubCategory|Zeichenfolge|Custom|
+|AuthorityType|Zeichenfolge|Custom|
+|CitationName|Zeichenfolge|Custom|
+|CitationUrl|Zeichenfolge|Custom|
+|CitationJurisdiction|Zeichenfolge|Custom|
+|Regulatory|Zeichenfolge|Custom|
+|EventType|Zeichenfolge|Diese Eigenschaft gibt die Aufbewahrungsregel an, die der Bezeichnung zugeordnet ist. Sie können einen beliebigen Wert verwenden, der die Regel eindeutig identifiziert. Beispiel:</br>Name</br>Distinguished Name (DN)</br>GUID </br>Mit dem Cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/de-DE/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) können Sie die verfügbaren Aufbewahrungsregeln anzeigen.|
 
 ![Dateiplanvorlage mit ausgefüllten Informationen](media/file-plan-filled-out-template.png)
 
