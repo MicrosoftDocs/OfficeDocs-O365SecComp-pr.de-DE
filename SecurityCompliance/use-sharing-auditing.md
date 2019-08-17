@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Die Freigabe ist eine wichtige Aktivität in SharePoint Online und OneDrive für Unternehmen. Administratoren können jetzt die Freigabe Überwachung im Office 365 Überwachungsprotokoll verwenden, um Ressourcen zu identifizieren, die für Benutzer außerhalb Ihrer Organisation freigegeben wurden. '
-ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258568"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447362"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Überwachen der Freigabe für die Suche nach Ressourcen, die für externe Benutzer freigegeben wurden
 
@@ -53,9 +53,9 @@ Die Freigabe wird definiert, wenn ein Benutzer (der *Stell* Ende Benutzer) eine 
 
 - **AnonymousLinkUsed:** Wie der Name schon sagt, wird dieses Ereignis protokolliert, wenn ein anonymer Link für den Zugriff auf eine Ressource verwendet wird. 
 
-- **SecureLinkCreated:** Ein Benutzer hat einen "bestimmten Personen Link" erstellt, um eine Ressource für eine bestimmte Person freizugeben. Dieser Zielbenutzer kann jemand sein, der sich außerhalb Ihrer Organisation befindet.
+- **SecureLinkCreated:** Ein Benutzer hat einen "bestimmten Personen Link" erstellt, um eine Ressource für eine bestimmte Person freizugeben. Dieser Zielbenutzer kann jemand sein, der sich außerhalb Ihrer Organisation befindet. Die Person, für die die Ressource freigegeben wurde, wird im Überwachungseintrag für das **AddedToSecureLink** -Ereignis identifiziert. Die Zeitstempel für diese beiden Ereignisse sind nahezu identisch.
 
-- **AddedToSecureLink:** Ein Benutzer wurde einem bestimmten Personen Link hinzugefügt. Dieser Zielbenutzer kann jemand sein, der sich außerhalb Ihrer Organisation befindet.
+- **AddedToSecureLink:** Ein Benutzer wurde einem bestimmten Personen Link hinzugefügt. Verwenden Sie das Feld **TargetUserOrGroupName** in diesem Ereignis, um den Benutzer zu identifizieren, der dem entsprechenden Link für bestimmte Personen hinzugefügt wurde. Dieser Zielbenutzer kann jemand sein, der sich außerhalb Ihrer Organisation befindet.
 
 ## <a name="sharing-auditing-work-flow"></a>Freigabe Überwachungs Workflow
   
@@ -81,7 +81,7 @@ Wenn sich ein Benutzerkonto für den Zielbenutzer nicht im Verzeichnis befindet,
     
    - Wenn der Zielbenutzer die an Sie gesendete Freigabeeinladung annimmt (durch Klicken auf den Link in der Einladung), protokolliert SharePoint ein **SharingInvitationAccepted** -Ereignis und weist den Zielbenutzer Berechtigungen für den Zugriff auf die Ressource zu. Wenn dem Zielbenutzer ein anonymer Link gesendet wird, wird das **AnonymousLinkUsed** -Ereignis protokolliert, nachdem der Zielbenutzer den Link für den Zugriff auf die Ressource verwendet hat. Für sichere Links wird ein **** fileaccessed-Ereignis protokolliert, wenn ein externer Benutzer den Link für den Zugriff auf die Ressource verwendet.
 
-Weitere Informationen zum Zielbenutzer werden ebenfalls protokolliert, beispielsweise die Identität des Benutzers, an den die Einladung gerichtet ist, und der Benutzer, der die Einladung tatsächlich annimmt. In einigen Fällen können diese Benutzer (oder e-Mail-Adressen) unterschiedlich sein. 
+Weitere Informationen zum Zielbenutzer werden ebenfalls protokolliert, beispielsweise die Identität des Benutzers, an den die Einladung erfolgt, und der Benutzer, der die Einladung annimmt. In einigen Fällen können diese Benutzer (oder e-Mail-Adressen) unterschiedlich sein. 
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Vorgehensweise identifizieren von Ressourcen, die für externe Benutzer freigegeben sind
 
@@ -109,7 +109,7 @@ Der erste Schritt besteht darin, das Office 365 Überwachungsprotokoll nach Frei
     
 7. Wenn die Suche abgeschlossen ist und die Ergebnisse angezeigt werden, klicken Sie auf **Ergebnisse** \> exportieren **alle Ergebnisse herunterladen**.
     
-    Nachdem Sie die Option Exportieren ausgewählt haben, wird am unteren Rand des Fensters eine Meldung angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen oder zu speichern.
+    Nachdem Sie die Option Exportieren ausgewählt haben, werden Sie im unteren Bereich des Fensters aufgefordert, die CSV-Datei zu öffnen oder zu speichern.
     
 8. Klicken Sie auf Save **As** **Speichern** \> und speichern Sie die CSV-Datei in einem Ordner auf Ihrem lokalen Computer. 
 
