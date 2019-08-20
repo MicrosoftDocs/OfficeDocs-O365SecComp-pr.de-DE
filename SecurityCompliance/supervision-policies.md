@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informationen zu Aufsichtsrichtlinien in Office 365
-ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
-ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
+ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34694709"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165651"
 ---
 # <a name="supervision-policies-in-office-365"></a>Aufsichtsrichtlinien in Office 365
 
@@ -66,8 +66,7 @@ Sie erstellen Aufsichtsrichtlinien im Compliance Center. Diese Richtlinien defin
 Bevor Sie mit der Überwachung beginnen, müssen Sie ermitteln, wer Ihre Kommunikationen überprüfen muss. In der Richtlinie identifizieren Benutzer-e-Mail-Adressen einzelne Personen oder Gruppen von Personen, die überwacht werden sollen. Einige Beispiele für diese Gruppen sind Office 365 Gruppen, Exchange-basierte Verteilerlisten und Microsoft Teams-Kanäle. Sie können auch bestimmte Benutzer oder Gruppen von der Beaufsichtigung mit einer beaufsichtigten Gruppe oder einer Liste von Gruppen ausschließen.
 
 > [!IMPORTANT]
-> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein.
-Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein. Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Prüfer
 
@@ -76,6 +75,8 @@ Wenn Sie eine Aufsichtsrichtlinie erstellen, müssen Sie festlegen, wer die Übe
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Gruppen für beaufsichtigte Benutzer und Bearbeiter
 
 Um Ihr Setup zu vereinfachen, erstellen Sie Gruppen für Personen, die Ihre Kommunikation überprüfen müssen, sowie Gruppen für Personen, die diese Kommunikationen überprüfen. Wenn Sie Gruppen verwenden, benötigen Sie möglicherweise mehrere. Wenn Sie beispielsweise die Kommunikation zwischen zwei unterschiedlichen Personengruppen überwachen möchten oder wenn Sie eine Gruppe angeben möchten, die nicht überwacht wird.
+
+Wenn Sie eine Office 365 Gruppe für beaufsichtigte Benutzer auswählen, überwacht die Richtlinie den Inhalt des freigegebenen Office 365 Postfachs und der Microsoft Teams-Kanäle, die der Gruppe zugeordnet sind. Wenn Sie eine Verteilerliste auswählen, überwacht die Richtlinie einzelne Benutzerpostfächer.
 
 ### <a name="supported-communication-types"></a>Unterstützte Kommunikationstypen
 
@@ -123,24 +124,24 @@ Konfigurieren Sie benutzerdefinierte Keyword-Wörterbücher (oder Lexika), um ei
 
 #### <a name="offensive-language"></a>Anstößige Sprache
 
-Überwachen von gesendeten oder empfangenen e-Mail-Nachrichten in Ihrer Organisation für anstößige Sprachen Das Modell verwendet eine Kombination aus maschinellem lernen, künstlicher Intelligenz und Stichwörtern, um ungeeignete e-Mail-Nachrichten im Rahmen von Überwachungsanforderungen für Belästigung und Cyber-Mobbing zu identifizieren. Um anstößige Sprachen für andere Kommunikationen in Ihrer Organisation zu verhindern oder zu blockieren, erstellen Sie eine [Richtlinie](create-test-tune-dlp-policy.md) zur Verhinderung von Datenverlust, die ein [benutzerdefiniertes Stichwort Wörterbuch](create-a-keyword-dictionary.md) mit anstößigen Begriffen verwendet
+Überwachen von gesendeten oder empfangenen e-Mail-Nachrichten in Ihrer Organisation für anstößige Sprachen Das Modell verwendet eine Kombination aus maschinellem lernen, künstlicher Intelligenz und Stichwörtern, um die Sprache in e-Mail-Nachrichten zu identifizieren, die gegen Belästigung und Mobbing-Richtlinien verstoßen. Das Offensive Sprachmodell unterstützt derzeit englische Stichwörter und überwacht den Textkörper von e-Mail-Nachrichten.
 
-Das Offensive Sprachmodell unterstützt derzeit englische Stichwörter und überwacht den Textkörper von e-Mail-Nachrichten. Das Offensive Sprachmodell überwacht e-Mails nach dem Sentiment, das den folgenden Sprachtypen zugeordnet ist:
+> [!NOTE]
+> Erstellen Sie eine [Richtlinie](create-test-tune-dlp-policy.md) zur Verhinderung von Datenverlust mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) blockierter Ausdrücke, wenn Sie Folgendes benötigen:
+>
+> - Überwachen der Kommunikation von Microsoft Teams in Ihrer Organisation für anstößige Sprachen
+> - verhindern oder blockieren anstößiger Sprachen in der Kommunikation in Ihrer Organisation
+
+Beachten Sie, dass das Modell keine erschöpfende Liste mit anstößigen Sprachen bereitstellt. Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, das Modell nach eigenem Ermessen zu aktualisieren. Das Modell unterstützt Ihre Organisation möglicherweise bei der Überwachung anstößiger Sprache, aber das Modell ist nicht dazu gedacht, die einzige Möglichkeit zu bieten, diese Sprache zu überwachen oder zu adressieren. Ihre Organisation, nicht Microsoft, bleibt für alle Entscheidungen im Zusammenhang mit der Überwachung und Sperrung anstößiger Sprachen verantwortlich.
+
+Das Offensive Sprachmodell überwacht e-Mails nach dem Sentiment, das den folgenden Sprachtypen zugeordnet ist:
 
 |**Typ**|**Beschreibung**|
 |:-----|:-----|
-| **Weltlichkeiten** | Ausdrücke, die für die meisten Benutzer ungeeignet und peinlich sind. |
-| **Bögen** | Ausdrücke, die Kulturen und Ethnien angreifen. |
-| **Sticheleien** | Ausdrücke, die verhöhnen, verurteilen und lächerlich machen. |
-| **Verweise auf Handicaps** | Ausdrücke, die auf physische oder psychische Nachteile abzielen. |
-| **Schmutzige Sprache** | Ausdrücke, die auf sexuelle Interessen und den physikalischen Zustand der Reinheit abzielen. |
-| **Phobie** | Ausdrücke, die auf sexuelle Präferenzen abzielen. |
-| **Rassismus** | Ausdrücke, die auf Rasse und Ethnizität abzielen. |
-| **Extremismus** | Ausdrücke, die auf Religion und politische Ideologien Zielen. |
-| **Verschleiern** | Ausdrücke, für die die Bedeutung oder Aussprache identisch mit einem anderen beleidigenden Begriff ist. |
-| **Provokative Sprache** | Ausdrücke, die möglicherweise Ärger oder Gewalt verursachen. |
-| **Tabu** | Ausdrücke sind in höflichen gesellschaftlichen Kommunikationen in der Regel unangemessen. |
-| **Nicht verfeinerte Sprache** | Ausdrücke, die keine höflichen Umgangsformen aufweisen und möglicherweise hart und unhöflich sind. |
+| **Weltlichkeiten** | Ausdrücke, die die meisten Menschen in Verlegenheit bringen. |
+| **Bögen** | Ausdrücke, die Vorurteile gegen bestimmte Gruppen (z. b. Rasse, ethnische Zugehörigkeit, sexuelle Ausrichtung, Behinderung) Ausdrücken. |
+| **Sticheleien** | Ausdrücke, die verspotten, verurteilen, lächerlich machen oder potenziell Wut oder Gewalt verursachen könnten. |
+| **Getarnte Ausdrücke** | Ausdrücke, für die die Bedeutung oder Aussprache identisch mit einem anderen beleidigenden Begriff ist. |
 
 #### <a name="conditional-settings"></a>Bedingte Einstellungen
 
@@ -150,7 +151,7 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
   
 |**Bedingung**|**Verwendung**|
 |:-----|:-----|
-| **Nachricht wird von einer dieser Domänen empfangen**  <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in empfangene Nachrichten einzubeziehen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle e-Mails von einer bestimmten Domäne überwachen, aber Nachrichten ausschließen möchten, die keine Überprüfung (Newsletter, Ankündigungen usw.) benötigen, müssen Sie zwei Bedingungen konfigurieren: <br> -Eine **Nachricht wird von einer dieser Domänen Bedingungen empfangen** , die die Domäne definiert ("contoso.com") und <br> -Eine **Nachricht wird nicht von einer dieser Domänen Bedingungen empfangen** , die die e-Mail-Adresse ("Newsletter@contoso.com") ausschließen. |
+| **Nachricht wird von einer dieser Domänen empfangen**  <br><br> **Nachricht wird von keiner dieser Domänen empfangen** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in empfangene Nachrichten einzubeziehen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede eingegebene Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle e-Mails von einer bestimmten Domäne überwachen, aber Nachrichten ausschließen möchten, die keine Überprüfung (Newsletter, Ankündigungen usw.) benötigen, müssen Sie die Bedingung konfigurieren, dass eine **Nachricht nicht von einer dieser Domänen Bedingungen empfangen wird** , die die e-Mail-Adresse (Beispiel "Newsletter@contoso.com"). |
 | **Nachricht wird an eine dieser Domänen gesendet.**  <br><br> **Nachricht wird nicht an eine dieser Domänen gesendet** | Wenden Sie die Richtlinie an, um bestimmte Domänen oder e-Mail-Adressen in gesendete Nachrichten einzuschließen oder auszuschließen. Geben Sie jede Domäne oder e-Mail-Adresse ein, und trennen Sie mehrere Domänen oder e-Mail-Adressen durch ein Komma. Jede Domäne oder e-Mail-Adresse wird separat angewendet, nur eine Domäne oder e-Mail-Adresse muss für die Richtlinie gelten, die auf die Nachricht angewendet werden soll. <br><br> Wenn Sie alle an eine bestimmte Domäne gesendeten e-Mails überwachen möchten, jedoch gesendete Nachrichten ausschließen möchten, die nicht überprüft werden müssen, müssen Sie zwei Bedingungen konfigurieren: <br> -Eine **Nachricht wird an eine dieser Domänen Bedingungen gesendet** , die die Domäne definiert ("contoso.com") und <br> -Eine **Nachricht wird nicht an eine dieser Domänen Bedingungen gesendet** , die die e-Mail-Adresse ("Subscriptions@contoso.com") ausschließen. |
 | **Nachricht wird mit einer dieser Bezeichnungen klassifiziert.**  <br><br> **Nachricht ist nicht mit einer dieser Bezeichnungen klassifiziert** | So wenden Sie die Richtlinie an, wenn bestimmte Aufbewahrungs Bezeichnungen in einer Nachricht enthalten oder ausgeschlossen werden. Aufbewahrungs Bezeichnungen müssen separat konfiguriert werden, und die konfigurierten Beschriftungen werden als Teil dieser Bedingung ausgewählt. Jede ausgewählte Bezeichnung wird separat angewendet (nur eine dieser Bezeichnungen muss für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zum Konfigurieren von Aufbewahrungs Bezeichnungen finden Sie unter [Overview of Retention Labels](https://docs.microsoft.com/office365/securitycompliance/labels).|
 | **Nachricht enthält eines dieser Wörter**  <br><br> **Nachricht enthält keines dieser Wörter** | Um die Richtlinie anzuwenden, wenn bestimmte Wörter oder Ausdrücke in einer Nachricht enthalten oder ausgeschlossen werden, geben Sie jedes Wort oder jede Phrase in einer separaten Linie ein. Jede Zeile von Wörtern, die Sie eingeben, werden separat angewendet (nur eine dieser Zeilen muss für die Richtlinie gelten, die auf die Nachricht angewendet wird). Weitere Informationen zum Eingeben von Wörtern oder Ausdrücken finden Sie im nächsten Abschnitt [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
@@ -161,6 +162,8 @@ In der folgenden Tabelle werden die einzelnen Bedingungen näher erläutert.
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Übereinstimmende Wörter und Ausdrücke in E-Mails oder Anlagen
 <a name="Matchwords"></a> Jede wortlinie, die Sie eingeben, wird separat angewendet (es muss nur eine Linie angewendet werden, damit die Richtlinienbedingung auf die e-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung, **Nachricht enthält eines dieser Wörter**mit den Schlüsselwörtern "Banker" und "Insiderhandel" in separaten Zeilen. Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau übereinstimmen, die Sie eingeben.
+
+Um sowohl e-Mail-Nachrichten als auch Anlagen für dieselben Stichwörter zu überprüfen, erstellen Sie eine [Richtlinie](create-test-tune-dlp-policy.md) zur Verhinderung von Datenverlust mit einem [benutzerdefinierten Stichwort Wörterbuch](create-a-keyword-dictionary.md) für die zu überwachenden Ausdrücke. Diese Richtlinienkonfiguration identifiziert definierte Schlüsselwörter, die entweder in der e-Mail-Nachricht **oder** in der e-Mail-Anlage angezeigt werden. Unter Verwendung der standardmäßigen bedingten Richtlinieneinstellungen (*Nachricht enthält* eines dieser Wörter und *Anlage enthält*eines dieser Wörter) zum Identifizieren von Ausdrücken in Nachrichten und in Anlagen erfordert die Begriffe sind **sowohl** in der Nachricht als auch in der vorhanden Anlage.
   
 ##### <a name="enter-multiple-conditions"></a>Eingeben mehrerer Bedingungen
 

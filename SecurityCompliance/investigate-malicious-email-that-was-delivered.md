@@ -1,5 +1,5 @@
 ---
-title: Suchen und untersuchen von böswilligen e-Mails, die in Office 365, TIMailData-Inline, Sicherheitsvorfall, Vorfall, ATP PowerShell, e-Mail-Schadsoftware, kompromittierten Benutzern, e-Mail-Phishing, e-Mail-Schadsoftware, gesendet wurden
+title: Suchen und untersuchen schädlicher e-Mails, die in Office 365, TIMailData, Sicherheitsvorfall, Vorfall, ATP PowerShell, e-Mail-Schadsoftware, kompromittierten Benutzern, e-Mail-Phishing, e-Mail-Schadsoftware, e-Mail-Kopfzeilen, Kopfzeilen lesen, Öffnen von e-Mail-Kopfzeilen
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407944"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444869"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -40,9 +40,56 @@ Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
     
 ## <a name="dealing-with-suspicious-emails"></a>Umgang mit verdächtigen e-Mails
 
-Böswillige Angreifer senden möglicherweise e-Mails an Ihre Benutzer, um zu versuchen, Ihre Anmeldeinformationen zu Phishing und Zugriff auf Ihre Unternehmensgeheimnisse zu erhalten. Um dies zu verhindern, sollten Sie die Threat Protection-Dienste in Office 365 verwenden, einschließlich [Exchange Online Protection](eop/exchange-online-protection-overview.md) und [Advanced Threat Protection](office-365-atp.md). Es gibt jedoch Situationen, in denen ein Angreifer e-Mails an Benutzer senden kann, die eine URL enthalten, und diese URL erst später auf böswilligen Inhalt (Schadsoftware usw.) verweist. Alternativ erkennen Sie möglicherweise zu spät, dass ein Benutzer in Ihrer Organisation kompromittiert wurde, und während dieser Benutzer kompromittiert wurde, hat ein Angreifer dieses Konto verwendet, um e-Mails an andere Benutzer in Ihrem Unternehmen zu senden. Im Rahmen der Bereinigung beider Szenarien möchten Sie möglicherweise e-Mail-Nachrichten von Benutzer Posteingängen entfernen. In solchen Situationen können Sie [Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md) nutzen, um diese e-Mail-Nachrichten zu suchen und zu entfernen.
+Böswillige Angreifer senden möglicherweise e-Mails an Ihre Benutzer, um zu versuchen, Ihre Anmeldeinformationen zu Phishing und Zugriff auf Ihre Unternehmensgeheimnisse zu erhalten. Um dies zu verhindern, sollten Sie die Threat Protection-Dienste in Office 365 verwenden, einschließlich [Exchange Online Protection](eop/exchange-online-protection-overview.md) und [Advanced Threat Protection](office-365-atp.md). Es gibt jedoch Situationen, in denen ein Angreifer e-Mails an Benutzer senden kann, die eine URL enthalten, und diese URL erst später auf böswilligen Inhalt (Schadsoftware usw.) verweist. 
+
+Alternativ erkennen Sie möglicherweise zu spät, dass ein Benutzer in Ihrer Organisation kompromittiert wurde, und während dieser Benutzer kompromittiert wurde, hat ein Angreifer dieses Konto verwendet, um e-Mails an andere Benutzer in Ihrem Unternehmen zu senden. Im Rahmen der Bereinigung beider Szenarien möchten Sie möglicherweise e-Mail-Nachrichten von Benutzer Posteingängen entfernen. In solchen Situationen können Sie [Threat Explorer (oder Echtzeiterkennung)](threat-explorer.md) nutzen, um diese e-Mail-Nachrichten zu suchen und zu entfernen.
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>Wo nach dem Ausführen von Aktionen erneut weitergeleitete e-Mails abgelegt werden
+
+Wohin gehen also Problem-e-Mails, und welche Tools helfen Ermittlern zu verstehen, was mit Ihnen passiert ist? In den Feldern des Bedrohungs-Explorers werden Informationen zur Dekodierung von e-Mail-Problemen durch Administratoren gemeldet.
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>Anzeigen der e-Mail-Header und Herunterladen des e-Mail-Texts
+
+E-Mail- **Kopfzeilen Vorschau und der Download des e-Mail-Texts** sind hilfreiche Features für die e-Mail-Bedrohungs Verwaltung in Threat Explorer. Administratoren können Kopfzeilen und e-Mails nach Bedrohungen analysieren und herunterladen. Der Zugriff auf die Verwendung dieses Features wird durch rollenbasierte Zugriffssteuerung (Roles-Based Access Control, RBAC) gesteuert, um das Risiko der Gefährdung von e-Mail-Inhalten zu verringern.
+
+Eine neue *Rolle*mit dem Namen "Vorschau" muss in einer anderen Office 365 Rollengruppe (beispielsweise in sec-Vorgänge oder in der SEC-Verwaltung) hinzugefügt werden, um die Möglichkeit zum Herunterladen von e-Mails und der Vorschau von Kopfzeilen in der Ansicht "all-Email" zu gewähren.
+
+So zeigen Sie das Flyout mit Ihren e-Mail-Download-und e-Mail-Kopfzeilen Vorschauoptionen an: 
+
+1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu, und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. Dadurch gelangen Sie zum Security &amp; Compliance Center. 
+    
+2. Klicken Sie im linken Navigationsbereich auf **Threat Management** \> **Explorer**.
+
+3. Klicken Sie auf einen Betreff in der Tabelle Threat Explorer.
+
+Dadurch wird das Flyout geöffnet, in dem sowohl Kopfzeilen Vorschau-als auch e-Mail-Download Links positioniert sind.
+
+> [!IMPORTANT]
+> Verwenden Sie die folgenden Tabellen, die zusammen folgen. Man sagt Ihnen, dass die erforderliche RBAC, die andere, der Ort, an dem Rechte erteilt werden sollen.
+<p>
+
+|Aktivität  |RBAC-RoleGroup mit Zugriff |Rolle "Vorschau" erforderlich?  |
+|---------|---------|---------|
+|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Analysieren von Bedrohungen     |  Office 365 globaler Administrator<br> Sicherheits Administrator, <br> Sicherheits Leser      | Nein   |
+|Verwenden von Threat Explorer (und Echtzeiterkennung) zum Anzeigen von Kopfzeilen für e-Mails sowie zum Anzeigen von e-Mails in einer Vorschau und zum Herunterladen in Quarantäne    |     Office 365 globaler Administrator <br> Sicherheits Administrator, <br>Sicherheits Leser    |       Nein  |
+|Verwenden von Threat Explorer zum Anzeigen von Kopfzeilen und Herunterladen von e-Mails, die an Postfächer gesendet werden     |      Office 365 globaler Administrator <br>Sicherheits Administrator,<br> Sicherheits Leser, <br> Vorschau    |   Ja      |
+
+<br>
+
+|RBAC-RoleGroup  |Wo Benutzer Ihnen zugewiesen sind  |
+|---------|---------|
+| Globaler Administrator   | Office 365 Admin Center        |
+| Sicherheitsadministrator      |    Security & Compliance Center     |
+| Sicherheits Leser   |    Security & Compliance Center     |
+|      |    Security & Compliance Center     |
+
+
+> [!CAUTION]
+> Denken Sie daran, dass "Vorschau" eine Rolle und keine RoleGroup ist und diese Rolle anschließend einer RoleGroup hinzugefügt werden muss.
+
+![Bedrohungs-Explorer-Flyout mit Download-und Vorschau-Links auf der Seite.](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>Überprüfen der Übermittlungsaktion und des Speicherorts
 
 Threat Explorer bei der Echtzeiterkennung wurden die Felder Zustellungs Aktion und Zustellungs Speicherort an der Stelle des Zustellungs Status hinzugefügt. Dadurch wird ein vollständigeres Bild davon erzielt, wo Ihre e-Mails landen. Ein Teil des Ziels dieser Änderung besteht darin, die Suche für Sicherheitsleute einfacher zu machen, aber das Ergebnis ist, dass der Speicherort der Problem-e-Mails auf einen Blick zu erkennen ist.
 
@@ -67,7 +114,11 @@ Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, d
 - **Quarantine** – die e-Mail-Nachricht in Quarantäne und befindet sich nicht im Postfach eines Benutzers.
 - **Fehler** – die e-Mail konnte das Postfach nicht erreichen.
 - **Fallen gelassen** – die e-Mail wird irgendwo in der Nachrichtenübermittlung verloren.
+
+### <a name="view-the-timeline-of-your-email"></a>Anzeigen der Zeitachse Ihrer e-Mail
   
+ **E-Mail-Zeitachse** ein weiteres Feld in Threat Explorer wird auch für Administratoren einfacher zu jagen sein. Statt wertvolle Zeit zu verschwenden, um zu überprüfen, wo die e-Mail möglicherweise gegangen ist, wenn bei der Untersuchung eines Ereignisses mehrere Ereignisse bei oder nahe gleichzeitig in einer e-Mail auftreten, werden diese Ereignisse in einer Zeitachsenansicht angezeigt. Einige Ereignisse, die nach der Zustellung an Ihre e-Mails geschehen, werden in der Spalte*Spezial Aktion*erfasst. Durch das Kombinieren von Informationen aus der Zeitachse der e-Mail mit der speziellen Aktion, die für die e-Mail-Postzustellung erfolgt, erhalten Administratoren Einblicke in Richtlinien und die Bedrohungsbehandlung (beispielsweise, wohin die e-Mail weitergeleitet wurde, und in einigen Fällen was die abschließende Bewertung war).
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Suchen und löschen verdächtiger e-Mails, die zugestellt wurden
 
 > [!TIP]
