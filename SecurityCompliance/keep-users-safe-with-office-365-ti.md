@@ -1,5 +1,5 @@
 ---
-title: Schützen der Office 365 Benutzer mit Office 365 Untersuchung und Reaktionsfähigkeit von Bedrohungen
+title: Schützen Ihrer Organisation mit Office 365 Ermittlungs-und Reaktionsfunktionen für Bedrohungen
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 Bedrohungs Ermittlungs-und-Antwortfunktionen Ihrer Organisation dabei helfen können, Eindringlinge und Bedrohungen zu erkennen und Bedrohungen schnell zu verringern und wiederherzustellen.
-ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: baedfb1ff74117bd2ed36cdf4551f898d377a971
+ms.sourcegitcommit: 4fd64e1811ae96633035cbc9cab1dbef3cbba34d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478174"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484398"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Schützen der Office 365 Benutzer mit Office 365 Untersuchung und Reaktionsfähigkeit von Bedrohungen
+# <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Schützen Ihrer Organisation mit Office 365 Ermittlungs-und Reaktionsfunktionen für Bedrohungen
 
 ## <a name="overview"></a>Übersicht
 
