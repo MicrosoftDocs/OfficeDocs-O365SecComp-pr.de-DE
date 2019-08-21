@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: Mithilfe einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security &amp; Compliance Center können Sie vertrauliche Informationen in Office 365 identifizieren, überwachen und automatisch schützen.
-ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
-ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
+ms.openlocfilehash: 3b108e292e7c7942e471d345b11124beac52f369
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393915"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478244"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Verhinderung von Datenverlust – Übersicht
-
+<!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 > [!NOTE]
 > Kürzlich wurden Funktionen zur Verhinderung von Datenverlust zu den Microsoft Teams-Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 Advanced Compliance lizensiert sind. Sie sind als eigenständige Option verfügbar und in Office 365 E5 und Microsoft 365 E5 Compliance enthalten. Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
@@ -314,6 +314,7 @@ Aus diesen Gründen lautet die Anleitung zum Erstellen von Regeln mit unterschie
 ## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Bezeichnung als Bedingung in einer DLP-Richtlinie
 
 Sie können eine Bezeichnung erstellen und dann wie folgt damit vorgehen:
+<!-- what kind of label? -->
   
 - **Veröffentlichen**, damit Endbenutzer sie sehen und die Bezeichnung manuell auf Inhalte anwenden können. 
     
@@ -450,12 +451,14 @@ Nach der Erstellung einer DLP-Richtlinie im Security &amp; Compliance Center wir
 - Microsoft Teams-Kanälen und Chatnachrichten
     
 Nachdem die Richtlinie mit den richtigen Speicherorten synchronisiert wurde, werden Inhalte ausgewertet und Aktionen erzwungen.
+<!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Richtlinienauswertung in OneDrive for Business- und SharePoint Online-Websites
 
 Die Dokumente auf Ihren SharePoint Online- und OneDrive for Business-Websites ändern sich ständig: Sie werden erstellt, bearbeitet, freigegeben und vieles mehr. Dies hat zur Folge, dass Dokumente jederzeit mit einer DLP-Richtlinie in Konflikt geraten oder richtlinienkonform werden können. So kann beispielsweise eine Person ein Dokument, das keine vertraulichen Informationen enthält, auf die Teamwebsite hochladen und eine andere Person zu einem späteren Zeitpunkt das Dokument bearbeiten und diesem vertrauliche Informationen hinzufügen.
   
 Aus diesem Grund überprüfen DLP-Richtlinien Dokumente im Hintergrund regelmäßig auf Richtlinienübereinstimmungen. Sie können sich diesen Vorgang als asynchrone Richtlinienauswertung vorstellen.
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>Funktionsweise
  
@@ -463,7 +466,7 @@ Während Dokumente auf Websites hinzugefügt oder geändert werden, werden die I
   
 ![Diagramm, in dem dargestellt ist, wie eine DLP-Richtlinie Inhalte asynchron auswertet](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-Dokumente können jedoch nicht nur mit einer DLP-Richtlinie in Konflikt stehen, sondern es können auch Änderungen vorgenommen werden, die dazu führen, dass sie nun einer DLP-Richtlinie entsprechen. Wenn eine Person zum Beispiel einem Dokument Kreditkartennummern hinzufügt, kann dies dazu führen, dass die DLP-Richtlinie den Zugriff auf das Dokument automatisch sperrt. Wenn die Person jedoch später die vertraulichen Informationen entfernt, wird die Aktion (in diesem Fall die Sperre) automatisch entfernt, wenn das Dokument das nächste Mal anhand der Richtlinie ausgewertet wird.
+<!-- conflict with a DLP policy is bad wording --> Dokumente können jedoch nicht nur mit einer DLP-Richtlinie in Konflikt stehen, sondern es können auch Änderungen vorgenommen werden, die dazu führen, dass sie nun einer DLP-Richtlinie entsprechen. Wenn eine Person zum Beispiel einem Dokument Kreditkartennummern hinzufügt, kann dies dazu führen, dass die DLP-Richtlinie den Zugriff auf das Dokument automatisch sperrt. Wenn die Person jedoch später die vertraulichen Informationen entfernt, wird die Aktion (in diesem Fall die Sperre) automatisch entfernt, wenn das Dokument das nächste Mal anhand der Richtlinie ausgewertet wird.
   
 Eine DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen zu den Dateitypen, die standardmäßig durchforstet werden, finden Sie unter [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
@@ -475,12 +478,14 @@ Beim Verfassen einer Nachricht in Outlook können Richtlinientipps für den Benu
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Richtlinienauswertung in den Office-Desktopprogrammen
 
+<!-- same capability to identify sensitive information line conflates sensitive information types and such -->
 Excel, PowerPoint und Word enthalten dieselben Funktionen wie SharePoint Online und OneDrive for Business, um vertrauliche Informationen zu identifizieren und DLP-Richtlinien anzuwenden. Diese Office-Programme synchronisieren ihre DLP-Richtlinien direkt über den zentralen Richtlinienspeicher und bewerten dann kontinuierlich Inhalte anhand der DLP-Richtlinien, wenn Benutzer mit Dokumenten arbeiten, die von einem in einer DLP-Richtlinie enthaltenen Ort geöffnet werden.
   
 Die DLP-Richtlinienauswertung in Office wirkt sich nicht auf die Leistung der Programme oder die Produktivität der Mitarbeiter aus, die mit solchen Inhalten arbeiten. Wenn ein großes Dokument bearbeitet wird oder der Computer eines Benutzers ausgelastet ist, kann es möglicherweise einige Sekunden dauern, bis ein Richtlinientipp angezeigt wird.
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Richtlinienauswertung in Microsoft Teams
- 
+ <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
+
 Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Speicherort umfasst, wird diese Richtlinie von Office 365 Security &amp; Compliance Center mit Benutzerkonten sowie mit Microsoft Teams-Kanälen und -Chatnachrichten synchronisiert. Je nachdem, wie eine DLP-Richtlinie konfiguriert ist, kann bei dem Versuch, vertrauliche Informationen in einer Microsoft Teams-Chat- oder Kanalnachricht freizugeben, die entsprechende Nachricht blockiert oder widerrufen werden. Außerdem können Dokumente, die vertrauliche Informationen enthalten und für Gäste (externe Benutzer) freigegeben wurden, von diesen Benutzern nicht geöffnet werden. Weitere Informationen finden Sie unter [Verhinderung von Datenverlust und Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Berechtigungen

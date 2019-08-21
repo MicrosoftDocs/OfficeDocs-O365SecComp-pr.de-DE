@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Bei der Suche nach vertraulichen Informationen in Inhalten müssen Sie die in einer so genannten Regel enthaltenen Informationen beschreiben. DLP (Data Loss Prevention, Verhinderung von Datenverlust) umfasst Regeln für die gängigsten vertraulichen Informationstypen, das Sie sofort nutzen können. Um diese Regeln zu verwenden, müssen Sie sie in eine Richtlinie aufnehmen. Möglicherweise möchten Sie die integrierten Regeln an die spezifischen Anforderungen Ihrer Organisation anpassen. Zu diesem Zweck können Sie benutzerdefinierte vertrauliche Informationstypen erstellen. In diesem Thema erfahren Sie, wie Sie die XML-Datei anpassen, die die vorhandene Regelsammlung enthält, damit ein größerer Bereich potenzieller Kreditkarteninformationen erkannt wird.
-ms.openlocfilehash: 2944202bf0f44c1a46834dce580abaf4f04aa40b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 99a65e7862eb1657c73c77b526e3b82b7595d248
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230729"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478154"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -32,31 +32,36 @@ Dieses Beispiel können Sie auf weitere integrierte vertrauliche Informationstyp
 Zum Exportieren der XML-Datei müssen Sie [eine Verbindung mit dem Security and Compliance Center über Remote-PowerShell herstellen](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
   
 1. Geben Sie in PowerShell Folgendes ein, um die Regeln Ihrer Organisation anzuzeigen. Falls Sie keine eigenen Regeln erstellt haben, werden nur die integrierten Standardregeln mit der Bezeichnung „Microsoft-Regelpaket“ angezeigt.
-    
-     `Get-DlpSensitiveInformationTypeRulePackage`
-    
-2. Speichern Sie die Regeln Ihrer Organisation in einer Variablen, indem Sie Folgendes eingeben. Durch das Speichern in einer Variablen kann später problemlos auf die Daten in einem Format zugegriffen werden, das sich für Remote-PowerShell-Befehle eignet.
-    
-     `$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage`
+
+```powershell
+Get-DlpSensitiveInformationTypeRulePackage
+```    
+2. Speichern Sie die Regeln Ihrer Organisation in einer Variablen, indem Sie Folgendes eingeben.Durch das Speichern in einer Variablen kann später problemlos auf die Daten in einem Format zugegriffen werden, das sich für Remote-PowerShell-Befehle eignet.
+
+```powershell    
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+```
     
 3. Erstellen Sie eine formatierte XML-Datei mit all diesen Daten, indem Sie Folgendes eingeben. (`Set-content` ist der Teil des Cmdlets, das die XML-Daten in die Datei schreibt.) 
     
-     `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
-    
-    > [!IMPORTANT]
-    > Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist. `C:\custompath\` ist ein Platzhalter. 
+```powershell
+Set-Content -path C:\custompath\exportedRules.xml -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+```
+
+> [!IMPORTANT]
+> Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist. `C:\custompath\` ist ein Platzhalter. 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Suchen der Regel, die in der XML-Datei geändert werden soll
 
-Mit den obigen Cmdlets wurde die gesamte *Regelsammlung* exportiert, die die Standardregeln umfasst. Anschließend müssen Sie speziell nach der Regel für die Kreditkartennummer suchen, die Sie ändern möchten. 
+Die oben stehenden Cmdlets haben die gesamte *Regelsammlung* exportiert, einschließlich der von uns bereitgestellten Standardregeln. Als Nächstes müssen Sie speziell nach der Kreditkartennummern-Regel suchen, die Sie ändern möchten. 
   
 1. Verwenden Sie einen Texteditor, um die im vorherigen Abschnitt exportierte XML-Datei zu öffnen.
     
-2. Führen Sie einen Bildlauf bis zum Tag `<Rules>` durch, mit dem der Abschnitt beginnt, der die DLP-Regeln enthält. (Da diese XML-Datei die Informationen für die gesamte Regelsammlung enthält, sind am Anfang weitere Informationen enthalten, über die Sie hinweg blättern müssen, um zu den Regeln zu gelangen.) 
+2. Führen Sie einen Bildlauf bis zum Tag `<Rules>` durch, mit dem der Abschnitt beginnt, der die DLP-Regeln enthält.  Da diese XML-Datei die Informationen für die gesamte Regelsammlung enthält, sind am Anfang weitere Informationen enthalten, über die Sie hinweg blättern müssen, um zu den Regeln zu gelangen.
     
-3. Suchen Sie nach *Func_credit_card*, um die Regeldefinition für die Kreditkartennummer zu suchen. (In der XML-Datei dürfen Regelnamen keine Leerzeichen enthalten, sodass die Leerzeichen üblicherweise durch Unterstriche ersetzt und die Regelnamen manchmal abgekürzt werden. Ein Beispiel hierfür ist die Regel für die US-Sozialversicherungsnummer, die als "SSN" abgekürzt wird. Die XML-Datei der Kreditkartennummer-Regel sollte wie das folgende Codebeispiel aussehen. 
+3. Suchen Sie nach *Func_credit_card*, um die Regeldefinition für die Kreditkartennummer zu suchen. In der XML-Datei dürfen Regelnamen keine Leerzeichen enthalten, sodass die Leerzeichen üblicherweise durch Unterstriche ersetzt und die Regelnamen manchmal abgekürzt werden. Ein Beispiel hierfür ist die Regel für die US-Sozialversicherungsnummer, die als "SSN" abgekürzt wird. Die XML-Datei der Kreditkartennummer-Regel sollte wie das folgende Codebeispiel aussehen.
     
-  ```
+  ```xml
   <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085"
          patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
@@ -70,7 +75,7 @@ Mit den obigen Cmdlets wurde die gesamte *Regelsammlung* exportiert, die die Sta
       </Entity>
   ```
 
-Nachdem Sie die Regeldefinition für die Kreditkartennummer in der XML-Datei ermittelt haben, können Sie die XML-Datei der Regel an Ihre Anforderungen anpassen. (Eine Wiederholung zu den XML-Definitionen finden Sie am Ende dieses Themas unter [Glossar](#term-glossary).) 
+Nachdem Sie die Regeldefinition für die Kreditkartennummer in der XML-Datei ermittelt haben, können Sie die XML-Datei der Regel an Ihre Anforderungen anpassen. Eine Wiederholung zu den XML-Definitionen finden Sie am Ende dieses Themas unter [Glossar](#term-glossary).
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Ändern der XML-Datei und Erstellen eines neuen vertraulichen Informationstyps
 
@@ -78,7 +83,7 @@ Zuerst müssen Sie einen neuen vertraulichen Informationstyp erstellen, da Sie d
   
 Alle XML-Regeldefinitionen werden anhand der folgenden allgemeinen Vorlage erstellt. Sie müssen die XML-Definition der Kreditkartennummer in der Vorlage kopieren und einfügen, einige Werte ändern (beachten Sie die Platzhalter ". . ." im folgenden Beispiel) und anschließend die geänderte XML-Datei als neue Regel hochladen, die in Richtlinien verwendet werden kann.
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
@@ -105,9 +110,9 @@ Alle XML-Regeldefinitionen werden anhand der folgenden allgemeinen Vorlage erste
 </RulePackage>
 ```
 
-Sie verfügen nun über eine XML-Datei, die der Folgenden ähnelt. Da Regelpakete und Regeln anhand ihrer eindeutigen GUIDs identifiziert werden, müssen Sie zwei GUIDs generieren: eine für das Regelpaket und eine zum Ersetzen der GUID für die Kreditkartennummer-Regel. (Die GUID für die Entitäts-ID im folgenden Codebeispiel ist die für unsere integrierte Regeldefinition, die Sie durch eine neue GUID ersetzen müssen.) Es gibt verschiedene Wege zum Generieren von GUIDs. Sie können dies jedoch unkompliziert in PowerShell bewerkstelligen, indem Sie **[guid]::NewGuid()** eingeben. 
+Sie verfügen nun über eine XML-Datei, die der Folgenden ähnelt. Da Regelpakete und Regeln anhand ihrer eindeutigen GUIDs identifiziert werden, müssen Sie zwei GUIDs generieren: eine für das Regelpaket und eine zum Ersetzen der GUID für die Kreditkartennummer-Regel. Die GUID für die Entitäts-ID im folgenden Codebeispiel ist die für unsere integrierte Regeldefinition, die Sie durch eine neue GUID ersetzen müssen. GUIDs können auf verschiedene Arten generiert werden, besonders einfach ist es aber in PowerShell. Dort müssen Sie nur **[guid]::NewGuid()** eingeben. 
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id="8aac8390-e99f-4487-8d16-7f0cdee8defc">
@@ -147,9 +152,9 @@ Sie verfügen nun über eine XML-Datei, die der Folgenden ähnelt. Da Regelpaket
 
 ## <a name="remove-the-corroborative-evidence-requirement-from-a-sensitive-information-type"></a>Entfernen der Anforderung für einen bestätigenden Nachweis von einem vertraulichen Informationstyp
 
-Nachdem ein neuer vertraulicher Informationstyp erstellt wurde, den Sie in das Security &amp; Compliance Center hochladen können, besteht der nächste Schritte darin, spezifischere Angaben für die Regel festzulegen. Ändern Sie die Regel so, dass sie nur nach einer 16-stelligen Zahl sucht, die die Prüfsummenprüfung passiert, für die aber kein weiterer (bestätigender) Nachweis erforderlich ist (beispielsweise Schlüsselwörter). Hierfür müssen Sie den Teil der XML-Datei entfernen, der nach dem bestätigenden Nachweis sucht. Der bestätigende Nachweis ist sehr hilfreich bei der Verringerung falsch positiver Ergebnisse, da sich üblicherweise bestimmte Schlüsselwörter oder ein Ablaufdatum in der Nähe der Kreditkartennummer befinden. Wenn Sie den Nachweis entfernen, sollten Sie auch anpassen, wie sicher Sie sind, dass Sie eine Kreditkartennummer gefunden haben, indem Sie das `confidenceLevel` senken (in dem Beispiel ist dies 85).
+Nachdem Sie einen neuen vertraulichen Informationstyp erstellt haben, den Sie in das Security &amp; Compliance Center hochladen können, besteht der nächste Schritte darin, spezifischere Angaben für die Regel festzulegen. Ändern Sie die Regel so, dass sie nur nach einer 16-stelligen Zahl sucht, die die Prüfsummenprüfung besteht, für die aber kein weiterer (bestätigender) Nachweis erforderlich ist, beispielsweise Schlüsselwörter. Hierfür müssen Sie den Teil der XML-Datei entfernen, der nach dem bestätigenden Nachweis sucht. Der bestätigende Nachweis ist sehr hilfreich bei der Verringerung falsch positiver Ergebnisse. In diesem Falle befinden sich üblicherweise bestimmte Schlüsselwörter oder ein Ablaufdatum in der Nähe der Kreditkartennummer. Wenn Sie den Nachweis entfernen, sollten Sie auch anpassen, wie sicher Sie sind, dass Sie eine Kreditkartennummer gefunden haben, indem Sie den `confidenceLevel`-Wert senken (in dem Beispiel ist dies 85).
   
-```
+```xml
 <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="300"
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_credit_card" />
@@ -159,9 +164,9 @@ Nachdem ein neuer vertraulicher Informationstyp erstellt wurde, den Sie in das S
 
 ## <a name="look-for-keywords-that-are-specific-to-your-organization"></a>Suchen nach Schlüsselwörtern speziell für Ihre Organisation
 
-Sie möchten möglicherweise festlegen, dass der bestätigende Nachweis erforderlich ist, aber andere oder zusätzliche Schlüsselwörter angeben. Möglicherweise möchten Sie auch ändern, wo nach diesem Nachweis gesucht werden soll. Sie können das Attribut `patternsProximity` anpassen, um das Fenster für den bestätigenden Nachweis um die 16-stellige Zahl herum zu erweitern oder zu verkleinern. Um Ihre eigenen Schlüsselwörter hinzuzufügen, müssen Sie eine Schlüsselwortliste definieren und in Ihrer Regel darauf verweisen. Mit der folgenden XML-Datei werden die Schlüsselwörter "company card" (Firmenkarte) und "Contoso card" (Contoso-Karte) hinzugefügt, sodass jede Nachricht, die diese Phrasen im Umkreis von 150 Zeichen von einer Kreditkartennummer enthält, als Kreditkartennummer erkannt wird. 
+Sie möchten möglicherweise festlegen, dass der bestätigende Nachweis erforderlich ist, aber andere oder zusätzliche Schlüsselwörter angeben. Möglicherweise möchten Sie auch ändern, wo nach diesem Nachweis gesucht werden soll. Sie können das Attribut `patternsProximity` anpassen, um das Fenster für den bestätigenden Nachweis um die 16-stellige Zahl herum zu erweitern oder zu verkleinern. Um Ihre eigenen Schlüsselwörter hinzuzufügen, müssen Sie eine Schlüsselwortliste definieren und in Ihrer Regel darauf verweisen. Mit der folgenden XML-Datei werden die Schlüsselwörter "company card" (Firmenkarte) und "Contoso card" (Contoso-Karte) hinzugefügt, sodass jede Nachricht, die diese Phrasen im Umkreis von 150 Zeichen von einer Kreditkartennummer enthält, als Kreditkartennummer erkannt wird.
   
-```
+```xml
 <Rules>
 <! -- Modify the patternsProximity to be "150" rather than "300." -->
     <Entity id="db80b3da-0056-436e-b0ca-1f4cf7080d1f" patternsProximity="150" recommendedConfidence="85">
@@ -194,16 +199,20 @@ Zum Hochladen der Regel müssen Sie wie folgt vorgehen.
 2. [Herstellen einer Verbindung zum Security and Compliance Center mithilfe von Remote-PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 3. Geben Sie PowerShell Folgendes ein.
-    
-     `New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)`.
-    
-    > [!IMPORTANT]
-    > Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist. `C:\custompath\` ist ein Platzhalter. 
+
+```powershell    
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte).
+```
+> [!IMPORTANT]
+> Stellen Sie sicher, dass der Dateispeicherort verwendet wird, in dem das Regelpaket tatsächlich gespeichert ist. `C:\custompath\` ist ein Platzhalter. 
   
 4. Geben Sie zur Bestätigung Y ein, und drücken Sie die **EINGABETASTE**. 
-    
-5. Überprüfen Sie, ob die neue Regel hochgeladen wurde, indem Sie `Get-DlpSensitiveInformationType` eingeben. Daraufhin wird der Name der Regel angezeigt.
-    
+5. Überprüfen Sie, ob Ihre neue Regel hochgeladen wurde, sowie den Anzeigenamen, indem Sie Folgendes eingeben:
+
+```powershell
+Get-DlpSensitiveInformationType
+```
+
 Sie müssen die Regel einer DLP-Richtlinie hinzufügen, um damit zu beginnen, die Regel zum Erkennen vertraulicher Informationen zu verwenden. Informationen zum Hinzufügen einer Regel zu einer Richtlinie finden Sie unter [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md).
   
 ## <a name="term-glossary"></a>Glossar
@@ -216,7 +225,7 @@ Nachfolgend finden Sie Definitionen der Begriffe, die in diesem Verfahren vorkom
 |Funktionen|Die XML-Datei verweist auf `Func_credit_card`, eine Funktion im kompilierten Code. Funktionen dienen zur Ausführung komplexer regulärer Ausdrücke und prüfen, ob Prüfsummen mit den integrierten Regeln übereinstimmen. Da dies im Code geschieht, werden einige der Variablen nicht in der XML-Datei angezeigt.|
 |IdMatch|Dies ist die Kennung, die das Muster abgleichen möchte – beispielsweise eine Kreditkartennummer.|
 |Schlüsselwortliste|Die XML-Datei verweist außerdem auf `keyword_cc_verification` und `keyword_cc_name`. Dies sind Schlüsselwortlisten, anhand derer nach Übereinstimmungen mit dem Attribut `patternsProximity` für die Entität gesucht wird. Diese werden zurzeit nicht in der XML-Datei angezeigt.|
-|Muster|Das Muster enthält die Liste der Informationen, anhand derer der vertrauliche Informationstyp sucht. Hierzu zählen Schlüsselwörter, reguläre Ausdrücke und interne Funktionen (die Aufgaben ausführen, wie beispielsweise die Überprüfung von Prüfsummen). Vertrauliche Informationstypen können mehrere Muster mit eindeutigen Angaben zur Vertrauenswürdigkeit aufweisen. Dies ist nützlich, wenn ein vertraulicher Informationstyp erstellt wird, der eine hohe Vertrauenswürdigkeit zurückgibt, falls ein bestätigender Nachweis gefunden wurde, und der eine niedrige Vertrauenswürdigkeit zurückgibt, wenn nur ein geringer oder gar kein bestätigender Nachweis gefunden wurde.|
+|Muster|Das Muster enthält die Liste der Informationen, anhand derer der vertrauliche Informationstyp sucht. Hierzu zählen Schlüsselwörter, reguläre Ausdrücke und interne Funktionen, die Aufgaben ausführen, wie beispielsweise die Überprüfung von Prüfsummen. Vertrauliche Informationstypen können mehrere Muster mit eindeutigen Angaben zur Vertrauenswürdigkeit aufweisen. Dies ist nützlich, wenn ein vertraulicher Informationstyp erstellt wird, der eine hohe Vertrauenswürdigkeit zurückgibt, falls ein bestätigender Nachweis gefunden wurde, und der eine niedrige Vertrauenswürdigkeit zurückgibt, wenn nur ein geringer oder gar kein bestätigender Nachweis gefunden wurde.|
 |Pattern confidenceLevel|Dies ist die Vertrauensstufe, für die das DLP-Modul eine Übereinstimmung gefunden hat. Diese Vertrauensstufe wird einer Übereinstimmung für das Muster zugeordnet, wenn die Anforderungen des Musters erfüllt sind. Es handelt sich hierbei um das Maß an Vertrauenswürdigkeit, das Sie bei Verwendung von Exchange-E-Mail-Flussregeln (auch als Transportregeln bezeichnet) erwägen sollten.|
 |patternsProximity|Wird etwas gefunden, das wie ein Kreditkartennummer-Muster aussieht, handelt es sich bei dem Attribut `patternsProximity` um die Umgebung der Nummer, in der nach einem bestätigenden Nachweis gesucht wird.|
 |recommendedConfidence|Dies ist die Vertrauensstufe, die für diese Regel empfohlen wird. Die empfohlene Vertrauensstufe gilt für Entitäten und Affinitäten. Für Entitäten wird diese Zahl niemals anhand des Attributs `confidenceLevel` für das Muster ausgewertet. Es ist lediglich eine Empfehlung, die Ihnen bei der Auswahl einer Vertrauensstufe helfen soll, falls Sie eine solche zuweisen möchten. Für Affinitäten muss das Attribut `confidenceLevel` des Musters höher sein als die Zahl des Attributs `recommendedConfidence` für eine aufzurufende E-Mail-Flussregel-Aktion. Das Attribut `recommendedConfidence` ist die in E-Mail-Flussregeln verwendete Standardvertrauensstufe, die eine Aktion aufruft. Bei Bedarf können Sie stattdessen die aufzurufende E-Mail-Flussregel manuell basierend auf der Vertrauensstufe des Musters ändern.|
@@ -228,5 +237,3 @@ Nachfolgend finden Sie Definitionen der Begriffe, die in diesem Verfahren vorkom
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
     
 - [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
-    
-
