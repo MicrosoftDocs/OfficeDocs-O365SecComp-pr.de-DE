@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Ihre Organisation kann mit einem Microsoft-Partner zusammenarbeiten, um einen benutzerdefinierten Connector zum Importieren von drittanbieterdaten aus Datenquellen wie Salesforce Chatter, Yahoo Messenger oder jammern einzurichten. Auf diese Weise können Sie Daten aus Drittanbieter-Datenquellen in Office 365 archivieren, sodass Sie Office 365 Compliance-Features wie Legal Hold, Inhaltssuche und Aufbewahrungsrichtlinien verwenden können, um die Steuerung der drittanbieterdaten Ihrer Organisation zu verwalten.
-ms.openlocfilehash: 99596953ce0f18c0cd7220f0955d251dbccb0e37
-ms.sourcegitcommit: 372691a3a886e5cc299961032ee334aef26fb904
+ms.openlocfilehash: a22b4226efb582969072bbd92149080cca9b749c
+ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464698"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36473425"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Arbeiten mit einem Partner zum Archivieren von drittanbieterdaten in Office 365
 
@@ -71,7 +71,7 @@ In den folgenden Abschnitten werden die Microsoft-Partner (und die von Ihnen unt
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
-17a-4 LLC unterstützt die folgenden Drittanbieter-Datenquellen:
+die [17a-4 LLC](https://www.17a-4.com) unterstützt die folgenden Drittanbieter-Datenquellen:
   
 - BlackBerry
     
