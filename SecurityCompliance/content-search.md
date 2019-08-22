@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Verwenden Sie das Tool für die Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, um in Postfächern, SharePoint Online-Websites, OneDrive-Konten, Microsoft Teams, Office 365-Gruppen und Skype for Business-Unterhaltungen nach Inhalten zu suchen. Sie können Schlüsselwort-Suchabfragen und Suchbedingungen verwenden, um die Suchergebnisse einzugrenzen. Anschließend können Sie die Suchergebnisse in der Vorschau anzeigen und exportieren. Die Inhaltssuche ist außerdem ein effektives Tool zum Suchen nach Inhalten, die mit einem DSGVO-Antrag einer betroffenen Person in Zusammenhang stehen.
-ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
-ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473415"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493166"
 ---
 # <a name="content-search-in-office-365"></a>Inhaltssuche in Office 365
 
@@ -335,13 +335,13 @@ Folgende Dinge sollten beim Durchsuchen inaktiver Postfächer beachtet werden:
 
 Wenn die Exchange Online-Lizenz (oder die gesamte Office 365-Lizenz) aus einem Benutzerkonto in Office 365 oder in Azure Active Directory entfernt wird, wird das Postfach des betreffenden Benutzers zu einem *getrennten* Postfach. Dies bedeutet, dass das Postfach nicht mehr mit dem Benutzerkonto verknüpft ist. Beim Durchsuchen von getrennten Postfächern geschieht Folgendes:
 
-- Wenn die Lizenz aus einem Postfach entfernt wird, wird für das Postfach eine Nachfrist von 30 Tagen gesetzt. Während dieser Nachfrist können Sie das Postfach weiterhin mithilfe der Inhaltssuche durchsuchen.
+- Wenn die Lizenz aus einem Postfach entfernt wird, kann das Postfach nicht mehr durchsucht werden. 
 
-- Erfolgt für das Postfach innerhalb von 30 Tagen keine Neulizenzierung, wird es bei der nächsten Verarbeitung des Postfachs für die endgültige Löschung vorgemerkt und aus Office 365 entfernt. Abhängig davon, wann das Postfach verarbeitet wird, können Sie es u. U. nach Ablauf der 30-tägigen Nachfrist durchsuchen. Postfächer werden in der Regel alle sieben Tage verarbeitet. Nach der Verarbeitung wird das Postfach entfernt und kann nicht mehr durchsucht werden.
+- Schließt eine bestehende Inhaltssuche ein Postfach ein, aus dem die Lizenz entfernt wurde, werden bei erneuten Inhaltssuchen keine Suchergebnisse aus dem getrennten Postfach angezeigt.
 
-- Wenn eine bestehende Inhaltssuche ein Benutzerpostfach einschließt, aus dem die Lizenz entfernt wurde, wird dieses getrennte Postfach bei erneuten Suchen einbezogen, bis die Nachfrist von 30 Tagen abgelaufen ist. Nach Ablauf der Nachfrist und nachdem das Postfach entfernt wurde, wird es bei einer erneuten Suche nicht mehr einbezogen.
+- Wenn Sie das Cmdlet **New-ComplianceSearch** zum Erstellen einer Inhaltssuche verwenden, und ein getrenntes Postfach als Exchange-Inhaltsspeicherort für die Suche festlegen, gibt die Inhaltssuche keine Suchergebnisse aus dem getrennten Postfach zurück.
 
-- Wenn die Lizenz aus einem Postfach entfernt wurde, das für die Aufbewahrung gekennzeichnet wurde (mithilfe einer der [Aufbewahrungsfunktionen in Office 365](identify-a-hold-on-an-exchange-online-mailbox.md)), wird dieses Postfach auf unbestimmte Zeit aufbewahrt und bleibt auch nach der 30-tägigen Nachfrist durchsuchbar.
+Wenn Sie die Daten in einem getrennten Postfach beibehalten müssen, damit sie durchsuchbar sind, müssen Sie eine Aufbewahrung für das Postfach einrichten, bevor Sie die Lizenz entfernen. Dadurch bleiben die Daten erhalten und das getrennte Postfach durchsuchbar, bis die Aufbewahrung entfernt wird. Weitere Informationen zu Aufbewahrungen finden Sie unter [Identifizieren des Typs der Aufbewahrung für ein Exchange Online-Postfach](identify-a-hold-on-an-exchange-online-mailbox.md)
 
 ### <a name="previewing-search-results"></a>Vorschau der Suchergebnisse anzeigen
 
