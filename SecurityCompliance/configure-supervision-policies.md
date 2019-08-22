@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Einrichten von Aufsichts Überprüfungsrichtlinien zum Erfassen der Mitarbeiterkommunikation zur Überprüfung.
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168173"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490782"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation
 
@@ -29,7 +29,7 @@ Verwenden Sie Aufsichtsrichtlinien zum Erfassen von Mitarbeiter Kommunikationen 
 
 > [!NOTE]
 > Benutzer, die von Aufsichtsrichtlinien überwacht werden, müssen über eine Microsoft 365 E5-Konformitäts Lizenz, eine Office 365 Enterprise E3-Lizenz mit dem Add-on für die erweiterte Kompatibilität verfügen oder in einem Office 365 Enterprise E5-Abonnement enthalten sein.
-Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Wenn Sie über keinen vorhandenen Enterprise E5-Plan verfügen und die Überwachung testen möchten, können Sie [sich für eine Testversion von Office 365 Enterprise E5 anmelden](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Führen Sie die folgenden Schritte aus, um die Überwachung in Ihrer Office 365 Organisation einzurichten und zu verwenden:
   
@@ -99,6 +99,7 @@ Um beaufsichtigte Benutzer in großen Unternehmensorganisationen zu verwalten, m
     ```
 
 Weitere Informationen zum Einrichten von Gruppen finden Sie unter:
+
 - [Erstellen und Verwalten von Verteilergruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Verwalten von E-Mail-aktivierten Sicherheitsgruppen](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Übersicht über Office 365 Gruppen](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ Verwenden Sie einen Text-Editor (wie Notepad), um eine Datei zu erstellen, die d
 
     - Geben Sie der Richtlinie einen Namen und eine Beschreibung.
     - Wählen Sie die zu überwachenden Benutzer oder Gruppen aus, einschließlich der Auswahl von Benutzern oder Gruppen, die Sie ausschließen möchten.
-    - Definieren Sie die Bedingungen für die Aufsichtsrichtlinie.
+    - Definieren Sie die [Bedingungen](supervision-policies.md#ConditionalSettings)für die Aufsichtsrichtlinie. Sie können zwischen Nachrichtenadresse, Stichwort, Dateitypen und Größen Übereinstimmungsbedingungen wählen.
     - Wählen Sie aus, ob Sie vertrauliche Informationstypen einbeziehen möchten. Hier können Sie Standard-und benutzerdefinierte vertrauliche Informationstypen auswählen.
     - Wählen Sie aus, ob Sie das anstößige Sprachmodell aktivieren möchten. Dadurch wird eine ungeeignete Sprache erkannt, die im Textkörper von e-Mail-Nachrichten gesendet oder empfangen wird.
     - Definieren Sie den Prozentsatz der zu überprüfenden Kommunikation.
@@ -196,7 +197,7 @@ Zum Konfigurieren der Überprüfung für Outlook Desktop benötigen Sie die Adre
 > [!NOTE]
 > Wenn die Richtlinie von einer anderen Person erstellt wurde, müssen Sie diese Adresse abrufen, um das Add-in zu installieren.
 
- **So suchen Sie die Überwachungs Postfachadresse**
+**So suchen Sie die Überwachungs Postfachadresse**
   
 1. Melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation beim [Compliance Center](https://compliance.microsoft.com) an.
 

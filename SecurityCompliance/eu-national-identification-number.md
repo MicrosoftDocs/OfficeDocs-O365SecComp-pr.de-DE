@@ -3,19 +3,19 @@ title: EU-nationale Identifikationsnummer
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-nationale Identifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154458"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490772"
 ---
 # <a name="eu-national-identification-number"></a>EU-nationale Identifikationsnummer
 
@@ -59,7 +59,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 Österreichische Identitätsnummer
   
@@ -123,11 +123,11 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 EGN
   
-EGN
+EGN #
   
 Bulgarische Nationale Nummer
   
@@ -135,21 +135,21 @@ nationale Nummer
   
 social security number
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
 nationalnumber
   
-BNN
+BNN #
   
 BNN
   
 persönliche ID-Nummer
   
-personalidnumber#
+personalidnumber #
   
 единен граждански номер
   
@@ -157,7 +157,7 @@ edinen grazhdanski Nomen
   
 егн
   
-егн#
+егн #
   
 ## <a name="croatia"></a>Kroatien
 
@@ -197,7 +197,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 ID-Kartennummer
   
@@ -266,7 +266,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 persönlicher Identifikationscode
   
@@ -278,7 +278,7 @@ nationale Nummer
   
 persönliche ID-Nummer
   
-personalidnumber#
+personalidnumber #
   
 IK
   
@@ -350,7 +350,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 persönliche Identifikationsnummer
   
@@ -417,7 +417,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 persönliche öffentliche Dienstnummer
   
@@ -491,7 +491,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 persönlicher Code
   
@@ -501,7 +501,7 @@ persönliche Zertifikat Nummer
   
 Geschäftscode
   
-personalcodeno#
+personalcodeno #
   
 persönliche ID-Nummer
   
@@ -519,7 +519,7 @@ Dice ID personale
   
 Geschäftsjahr
   
-## <a name="italy"></a>Italien
+## <a name="latvia"></a>Lettland
 
 ### <a name="format"></a>Format
 
@@ -567,7 +567,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 persönlicher Code
   
@@ -575,7 +575,7 @@ persönliche Codenummer
   
 persönliche Zertifikat Nummer
   
-personalcodeno#
+personalcodeno #
   
 persönliche ID-Nummer
   
@@ -632,7 +632,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 persönlicher numerischer Code
   
@@ -642,7 +642,7 @@ Bürgerdienst Nummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno#
+uniqueidentityno #
   
 persönlicher Code.
   
@@ -697,23 +697,23 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 persönliche ID
   
 persönliche ID-Nummer
   
-personalidno#
+personalidno #
   
 eindeutige ID-Nummer
   
-personalidnumber#
+personalidnumber #
   
 eindeutiger ID-Schlüssel
   
 persönlicher ID-Code
   
-uniqueidkey#
+uniqueidkey #
   
 einzelner Code
   
@@ -727,11 +727,11 @@ ID personnelle
   
 Numéro-d'identification-Mitarbeiter
   
-idpersonnelle#
+idpersonnelle #
   
 persönliche identifikationsnummer
   
-eindeutigeid#
+eindeutigeid #
   
 ## <a name="malta"></a>Malta
 
@@ -778,7 +778,7 @@ Eine DLP-Richtlinie ist zu 65 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 persönlicher numerischer Code
   
@@ -788,7 +788,7 @@ Bürgerdienst Nummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno#
+uniqueidentityno #
   
 Kodiċi Numeri personali
   
@@ -839,7 +839,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 persönlicher numerischer Code
   
@@ -849,11 +849,11 @@ Bürgerdienst Nummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno#
+uniqueidentityno #
   
 BSN
   
-BSN
+BSN #
   
 Persoonlijke-numerieke-Code
   
@@ -912,7 +912,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 persönlicher numerischer Code
   
@@ -920,19 +920,19 @@ eindeutige Identifikationsnummer
   
 CNP
   
-CNP
+CNP #
   
 PIN
   
-PIN
+PIN #
   
 Versicherungsnummer
   
-insurancenumber#
+insurancenumber #
   
 eindeutige Identitätsnummer
   
-uniqueidentityno#
+uniqueidentityno #
   
 COD numerisch persönlich
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr identificare Personal
   
-număridentitate#
+număridentitate #
   
-codnumericpersonal#
+codnumericpersonal #
   
-numărpersonalunic#
+numărpersonalunic #
   
 ## <a name="slovakia"></a>Slowakei
 
@@ -993,7 +993,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 Geburtsnummer
   
@@ -1003,9 +1003,9 @@ persönliche Identifikationsnummer
   
 social security number
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
@@ -1013,7 +1013,7 @@ nationale Nummer
   
 persönliche ID-Nummer
   
-personalidnumber#
+personalidnumber #
   
 rč
   
@@ -1070,7 +1070,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 persönlicher numerischer Code
   
@@ -1080,7 +1080,7 @@ eindeutige Registrierungsnummer
   
 eindeutige Identitätsnummer
   
-uniqueidentityno#
+uniqueidentityno #
   
 eindeutige Master Bürgerzahl
   
@@ -1130,7 +1130,7 @@ Eine DLP-Richtlinie ist zu 75 % sicher, dass diese Art von vertraulichen Inform
 
 ### <a name="keywords"></a>Schlüsselwörter
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 DNI
   
@@ -1148,19 +1148,19 @@ persönliche Identität Nein
   
 eindeutige Identitätsnummer
   
-nationalidno#
+nationalidno #
   
-UniqueId
+UniqueId #
   
-DNI
+DNI #
   
-National-Nr.
+National-Nr. #
+  
+nie #
   
 nie
   
-nie
-  
-nienúmero#
+nienúmero #
   
 nie número
   
@@ -1172,9 +1172,9 @@ número Nacional Identidad
   
 DNI número
   
-dninúmero#
+dninúmero #
   
-identidadúnico#
+identidadúnico #
   
 ## <a name="sweden"></a>Schweden
 
