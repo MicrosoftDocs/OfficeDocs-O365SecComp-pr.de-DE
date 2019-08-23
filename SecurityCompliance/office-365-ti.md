@@ -3,7 +3,7 @@ title: Untersuchung von und Antwort auf Bedrohungen in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/20/2019
+ms.date: 08/22/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sicherheitsrisiken in Ihrer Organisation erforschen, auf Schadsoftware, Phishing und andere Angriffe reagieren können, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen. Indikatoren.
-ms.openlocfilehash: c99712553646a6ceff22005952289b2ca3e1dbf4
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478184"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566213"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen in Office 365
 
@@ -81,7 +81,7 @@ Im Rahmen des Angebots von Office 365 Advanced Threat Protection Plan 2 können 
 In Office 365 Advanced Threat Protection Plan 2 und Enterprise E5 sind Office 365 Funktionen zur Untersuchung und Reaktion von Bedrohungen enthalten. 
 
 > [!TIP]
-> Wenn Ihre Organisation über ein Office 365es Abonnement verfügt, das diese Ermittlungs-und Antwortfunktionen für Bedrohungen nicht enthält, können Sie diese zusammen mit Office 365 Advanced Threat Protection als Add-on erwerben. Weitere Informationen zu Planoptionen finden Sie unter [Office 365 Platform Service Description: Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) und [kaufen oder Bearbeiten eines Add-ons für Office 365 für Unternehmen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+> Wenn Ihre Organisation über ein Office 365es Abonnement verfügt, das diese Ermittlungs-und Antwortfunktionen für Bedrohungen nicht enthält, können Sie Office 365 Advanced Threat Protection Plan 2 als Add-on möglicherweise erwerben. Weitere Informationen zu Planoptionen finden Sie unter [Office 365 Advanced Threat Protection-Dienstbeschreibung](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) und [kaufen oder Bearbeiten eines Add-ons für Office 365 für Unternehmen](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. Wechseln Sie als globaler Office 365 Administrator zu, [https://admin.microsoft.com](https://admin.microsoft.com) und melden Sie sich mit Ihrem Arbeits-oder Schulkonto für Office 365 an. 
     

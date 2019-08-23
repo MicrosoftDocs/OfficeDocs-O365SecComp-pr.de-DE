@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Bedrohungs Ermittlungs-und-Antwortfunktionen böswillige e-Mails suchen und untersuchen.
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444869"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566223"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Suchen und untersuchen schädlicher e-Mails, die in Office 365 bereitgestellt wurden
 
@@ -88,6 +88,9 @@ Dadurch wird das Flyout geöffnet, in dem sowohl Kopfzeilen Vorschau-als auch e-
 > Denken Sie daran, dass "Vorschau" eine Rolle und keine RoleGroup ist und diese Rolle anschließend einer RoleGroup hinzugefügt werden muss.
 
 ![Bedrohungs-Explorer-Flyout mit Download-und Vorschau-Links auf der Seite.](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> Diese Funktion wird nicht für e-Mails angezeigt, die im Postfach eines Benutzers nicht gefunden wurden, was passieren kann, wenn eine e-Mail gelöscht oder die Zustellung fehlgeschlagen ist. Für Fälle, in denen e-Mails aus den Postfächern von Benutzern gelöscht wurden, wird den Administratoren ein Fehler angezeigt, in dem die Meldung "nicht gefundene e-Mails" erwähnt wird.
 
 ### <a name="check-the-delivery-action-and-location"></a>Überprüfen der Übermittlungsaktion und des Speicherorts
 
