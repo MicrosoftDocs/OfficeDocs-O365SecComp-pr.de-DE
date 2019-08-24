@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: Die Definition von E-Mail-Benutzern ist ein wichtiger Teil des Verwaltung des Exchange Online Protection-Diensts (EOP).
-ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 69ed6460966a399ac5b1e3cf71bd985917bec82c
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054727"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620489"
 ---
 # <a name="manage-mail-users-in-eop"></a>Verwalten von E-Mail-Benutzern in EOP
 
@@ -53,20 +53,20 @@ In diesem Abschnitt finden Sie weitere Informationen zum Verwalten von E-Mail-Be
   
 Rufen Sie die erforderlichen Berechtigungen ab, und bereiten Sie die Verzeichnissynchronisierung vor, wie unter [Vorbereiten der Verzeichnissynchronisierung](https://go.microsoft.com/fwlink/p/?LinkId=308908) beschrieben.
   
-### <a name="to-synchronize-user-directories"></a>So synchronisieren Sie Benutzerverzeichnisse
+### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>So synchronisieren Sie Benutzerverzeichnisse mit Azure Active Directory Connect (AAD Connect)
 
-1. Aktivieren Sie die Verzeichnissynchronisierung, wie unter [Aktivieren der Verzeichnissynchronisierung](https://go.microsoft.com/fwlink/p/?LinkId=308909) beschrieben.
-    
-2. Richten Sie den Computer für die Verzeichnissynchronisierung ein, wie unter [Einrichten des Computers für die Verzeichnissynchronisierung](http://go.microsoft.com/fwlink/p/?LinkId=308911) beschrieben.
-    
-3. Synchronisieren Sie die Verzeichnisse, wie unter [Synchronisieren der Verzeichnisse mithilfe des Konfigurations-Assistenten](http://go.microsoft.com/fwlink/?LinkId=308912) beschrieben.
-    
-    > [!IMPORTANT]
-    > Wenn Sie den Konfigurationsassistent für Azure Active Directory-Synchronisierungstool abschließen, wird in Ihrer Active Directory-Gesamtstruktur das Konto **MSOL_AD_SYNC** erstellt. Dieses Konto wird zum Lesen und Synchronisieren der lokalen Active Directory-Informationen verwendet. Damit die Verzeichnissynchronisierung ordnungsgemäß ausgeführt wird, müssen Sie sicherstellen, dass TCP 443 auf dem lokalen Verzeichnissynchronisierungsserver geöffnet ist. 
-  
-  4. Verwalten Sie die Verzeichnissynchronisierung, wie unter [Verwalten der Verzeichnissynchronisierung](http://go.microsoft.com/fwlink/p/?LinkId=308915) beschrieben.
-    
-  5. Überprüfen Sie, ob EOP korrekt synchronisiert. Navigieren Sie in der Exchange Admin Center zu **Empfänger** \> **Kontakte**, und vergewissern Sie sich, dass die Liste der Benutzer in Ihrer lokalen Umgebung korrekt synchronisiert wird. 
+Um Benutzer mit Azure Active Directory (AAD) zu synchronisieren, müssen Sie zunächst die **Verzeichnissynchronisierung aktivieren**, wie unter [Activate Directory Synchronization](https://go.microsoft.com/fwlink/p/?LinkId=308909)beschrieben.
+
+Im nächsten Schritt wird die Installation und Konfiguration eines lokalen Computers ausgeführt, um Aad Connect auszuführen (falls Sie noch nicht über einen verfügen – was sich vor der Zeit lohnt). Im folgenden Artikel erfahren Sie, wie Sie Ihre Konten lokal und Azure AD mit Aad Connect einrichten und synchronisieren.
+
+[Einrichten von Aad Connect, die ausdrückliche Möglichkeit.](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+
+Bevor Sie diese Aufgabe ausführen, stellen Sie sicher, dass [Sie die Voraussetzungen erfüllen] (https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites, und wählen Sie [den Installationstyp aus](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation). Der Link oben gepostet ist zu einem kurzen Artikel für Express-Installationen. Sie können auch Artikel zu [benutzerdefinierten Installationen](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom)oder zur [Pass-Through-Authentifizierung](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start) finden, wenn Sie benötigt werden.
+
+> [!IMPORTANT]
+> Wenn Sie den Konfigurationsassistent für Azure Active Directory-Synchronisierungstool abschließen, wird in Ihrer Active Directory-Gesamtstruktur das Konto **MSOL_AD_SYNC** erstellt. Dieses Konto wird zum Lesen und Synchronisieren der lokalen Active Directory-Informationen verwendet. Damit die Verzeichnissynchronisierung ordnungsgemäß funktioniert, stellen Sie sicher, dass TCP 443 auf Ihrem lokalen Verzeichnissynchronisierungsserver geöffnet ist. 
+
+Vergewissern Sie sich nach dem Konfigurieren der Synchronisierung, dass EoP ordnungsgemäß synchronisiert wird. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Empfänger** \> **Kontakte**, und vergewissern Sie sich, dass die Liste der Benutzer in Ihrer lokalen Umgebung korrekt synchronisiert wird.
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern über die Exchange Admin Center
 
