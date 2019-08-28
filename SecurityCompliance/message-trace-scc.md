@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048217"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643257"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -25,7 +25,7 @@ Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center folgt e-Mail-N
 Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert die Nachrichtenablaufverfolgung, die im Exchange Admin Center (EAC) zur Verfügung stand. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen über das geschehen mit ihren Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 > [!NOTE]
-> Der Grenzwert für die Anzahl der zurückgegebenen Nachrichten lautet 50.000. Wenn in der Konsole eine sehr umfangreiche Abfrage durchführen wird, überschreitet die Anzahl der HistoricalSearch-Cmdlet-Berichtsnachrichten die 240.000.
+>  Die Nachrichtenanzahl wird bei 50 000 angehalten, und der Bericht wird in der Konsole nur bis zu diesem Betrag wiedergegeben. Das Cmdlet Get-HistoricalSearch des PowerShell-Cmdlets zeigt die Anzahl der tatsächlichen Nachrichten an.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
@@ -320,7 +320,7 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **custom_data**: enthält Daten im Zusammenhang mit bestimmten Ereignistypen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
-#### <a name="customdata-values"></a>custom_data-Werte
+#### <a name="custom_data-values"></a>custom_data-Werte
 
 Das **custom_data** -Feld für `AGENTINFO` ein Ereignis wird von einer Vielzahl von Exchange Online-Agents verwendet, um Details zur Nachrichtenverarbeitung zu protokollieren. Einige der interessantesten Agents werden in den folgenden Abschnitten beschrieben.
 

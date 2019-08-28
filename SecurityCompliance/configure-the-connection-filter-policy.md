@@ -1,9 +1,9 @@
 ---
-title: Konfigurieren der Verbindungsfilterrichtlinie
+title: Konfigurieren der Verbindungsfilter Richtlinie, Zulassungsliste, Sperrliste
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Um sicherzustellen, dass e-Mails, die von vertrauenswürdigen Personen gesendet werden, nicht blockiert werden, können Sie die Verbindungsfilter Richtlinie verwenden, um eine Zulassungsliste (auch als Liste sicherer Absender bezeichnet) von IP-Adressen zu erstellen, denen Sie vertrauen. Sie können auch eine Liste blockierter Absender erstellen.
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600091"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643217"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Konfigurieren der Verbindungsfilterrichtlinie
  
 Die meisten von uns haben Freunde und Geschäftspartnern, denen wir vertrauen. Es kann ärgerlich sein, E-Mail dieser Absender in Ihrem Junk-E-Mail-Ordner zu finden oder festzustellen, dass sie vom Spamfilter gänzlich blockiert wurden. Wenn Sie sicherstellen möchten, dass von diesen vertrauenswürdigen Absendern gesendete E-Mail nicht blockiert wird, können Sie die Verbindungsfilterrichtlinie zum Erstellen einer Zulassungsliste (bzw. „Liste sicherer Absender") mit vertrauenswürdigen IP-Adressen nutzen. Sie können auch eine Liste blockierter Absender mit IP-Adressen (zumeist von Spammern) erstellen, von denen Sie nie wieder E-Mail-Nachrichten empfangen möchten.
   
+- Beachten Sie beim Nachdenken über *[Zulassungslisten](create-safe-sender-lists-in-office-365.md)*, dass sich Verbindungsfilter Richtlinien mit den vom Filter *zugelassenen vertrauenswürdigen Konten* befassen. Dies geschieht im Interesse einer genaueren Filterung weniger vertrauenswürdiger oder nicht vertrauenswürdiger e-Mail-Nachrichten, während Sie Ihre Anforderungen beibehalten. In einer Liste der zugelassenen Verbindungsfilter Richtlinie geht es um das Filtern nach den wenigen vertrauenswürdigen IPS aus einem weitaus größeren Konto-und IPS-Pool und um sicherzustellen, dass Ihre vertrauenswürdigen e-Mail-Adressen leichter zugänglich sind
+
+- Eine Verbindungsfilter Richtlinie zum Erstellen einer Sperrliste kann stattdessen als Abfangen von less-oder nicht vertrauenswürdigen Konten im Filter betrachtet werden.
+
  Weitere Antispameinstellungen, die für die gesamte Organisation gelten, finden Sie unter [Sicherstellen, dass eine Nachricht nicht als Spam gekennzeichnet wird](https://go.microsoft.com/fwlink/p/?LinkId=534224) oder [Blockieren von E-Mail-Spam mit dem Office 365-Spamfilter zum Verhindern von falsch negativen Ergebnissen](https://go.microsoft.com/fwlink/p/?LinkId=534225). Diese sind hilfreich, wenn Sie über die Steuerung auf Administratorebene verfügen und wenn Sie falsch positive Ergebnisse oder falsch negative Ergebnisse vermeiden möchten.
+
+> [!TIP]
+> Möglicherweise möchten Sie das Erstellen von [Allow-(oder Safe Sender)-](create-safe-sender-lists-in-office-365.md) und [Block Listen](create-block-sender-lists-in-office-365.md)unterbrechen und lesen.
   
 Im folgenden Video wird die Vorgehensweise zur Konfiguration der Verbindungsfilterrichtlinie gezeigt:
   
