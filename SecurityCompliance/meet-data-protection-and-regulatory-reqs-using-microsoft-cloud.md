@@ -1,7 +1,7 @@
 ---
 title: Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Der Compliance-Manager im Microsoft Service Trust Portal bietet Tools zum Aufzeichnen, Implementieren und Verwalten der Steuerelemente, damit Ihre Organisation die Sicherheits- und Datenschutzstandards der Branche (z. B. DSGVO, ISO 27001, ISO 27018 und HIPAA) für Microsoft-Clouddienste, z. B. Office 365 und Microsoft Azure, einhalten kann. Der Compliance-Manager hilft der Person, die für den Datenschutz und die Datenschutzstrategie für Ihre Organisation verantwortlich ist, bei der Verwaltung des Compliance- und Risikoabschätzungsprozesses.
-ms.openlocfilehash: 1c3bf4db5c2e1eabd431bc4d799c46ba8f41e97e
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: 6a06d69456ed1d42497f1d9f377252b079c6daba
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786710"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643317"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Verwenden des Compliance-Managers zur Erfüllung der Datenschutzanforderungen und der gesetzlichen Anforderungen bei der Verwendung von Microsoft-Clouddiensten
 
