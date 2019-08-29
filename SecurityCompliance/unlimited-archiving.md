@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Erfahren Sie mehr über die automatische Erweiterung der Archivierung in Office 365, die unbegrenzten Archivspeicher für Exchange Online Postfächer bereitstellt.
-ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: bf79ec35fe1ee55702f8a3715d62f102d1d88632
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231079"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658131"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Übersicht über die unbegrenzte Archivierung in Office 365
 
 In Office 365 bieten Archivpostfächer Benutzern zusätzlichen Postfachspeicher Platz. Nachdem das Archivpostfach eines Benutzers aktiviert wurde, ist ein zusätzlicher Speicher von bis zu 100 GB verfügbar. In der Vergangenheit, wenn das Speicherkontingent von 100 GB erreicht wurde, mussten sich Organisationen an Microsoft wenden, um zusätzlichen Speicherplatz für ein Archivpostfach anzufordern. Das ist nicht mehr der Fall.
 
-Das Feature für unbegrenzte Archivierung in Office 365 (als *automatisch expandierende Archivierung*bezeichnet) bietet eine unbegrenzte Menge an Speicherplatz in archivpostfächern. Wenn nun das Speicherkontingent im Archivpostfach erreicht wird, vergrößert Office 365 automatisch die Größe des Archivs, was bedeutet, dass Benutzern kein Postfachspeicher Platz mehr zur Verweilen ist und Administratoren keinen zusätzlichen Speicher für Archivpostfächer anfordern müssen. .
+Das Feature für unbegrenzte Archivierung in Office 365 (als *automatisch expandierende Archivierung*bezeichnet) bietet bis zu 1 TB zusätzlichen Speicherplatz in archivpostfächern. Wenn das Speicherkontingent im Archivpostfach erreicht wird, vergrößert Office 365 automatisch die Größe des Archivs, was bedeutet, dass Benutzern kein Postfachspeicher Platz mehr zur Verweilen ist und Administratoren keine zusätzlichen Speicher für Archivpostfächer anfordern müssen.
   
 Eine Schritt-für-Schritt-Anleitung zum Aktivieren der automatischen Erweiterung der Archivierung finden Sie unter [enable Unlimited Archiving in Office 365](enable-unlimited-archiving.md).
   
@@ -35,7 +35,7 @@ Eine Schritt-für-Schritt-Anleitung zum Aktivieren der automatischen Erweiterung
   
 ## <a name="how-auto-expanding-archiving-works"></a>Funktionsweise der automatisch expandierenden Archivierung
 
-Wie bereits erläutert, wird zusätzlicher Postfachspeicher Platz erstellt, wenn das Archivpostfach eines Benutzers aktiviert ist. Wenn die automatisch expandierende Archivierung aktiviert ist, überprüft Office 365 regelmäßig die Größe des Archivpostfachs. Wenn ein Archivpostfach seinen Speichergrenzwert erreicht, wird von Office 365 automatisch zusätzlicher Speicherplatz für das Archiv erstellt. Wenn der Benutzer diesen zusätzlichen Speicherplatz ausgibt, fügt Office 365 dem Archiv des Benutzers mehr Speicherplatz hinzu. Dieser Vorgang wird automatisch ausgeführt, was bedeutet, dass Administratoren keinen zusätzlichen Archivspeicher anfordern oder die automatisch erweiterte Archivierung verwalten müssen. 
+Wie bereits erläutert, wird zusätzlicher Postfachspeicher Platz erstellt, wenn das Archivpostfach eines Benutzers aktiviert ist. Wenn die automatisch expandierende Archivierung aktiviert ist, überprüft Office 365 regelmäßig die Größe des Archivpostfachs. Wenn ein Archivpostfach seinen Speichergrenzwert erreicht, wird von Office 365 automatisch zusätzlicher Speicherplatz für das Archivpostfach erstellt. Dieser zusätzliche Speicherplatz wird als zusätzliches *Archiv*bezeichnet. Wenn der Speicherplatz des Benutzers in einem zusätzlichen Archiv nicht mehr verfügbar ist, fügt Office 365 automatisch ein neues Zusatz Archiv hinzu. Office 365 werden maximal 20 zusätzliche Archive für insgesamt 1 TB zusätzlichen Speicherplatz hinzufügen. Dieser Vorgang wird automatisch durchgeführt, was bedeutet, dass Administratoren die automatisch expandierende Archivierung nicht verwalten müssen. 
   
 Hier finden Sie eine kurze Übersicht über den Prozess.
   
@@ -43,12 +43,15 @@ Hier finden Sie eine kurze Übersicht über den Prozess.
   
 1. Die Archivierung ist für ein Benutzerpostfach oder ein freigegebenes Postfach aktiviert. Ein Archivpostfach mit 100 GB Speicherplatz wird erstellt, und das Warn Kontingent für das Archivpostfach ist auf 90 GB festgelegt.
     
-2. Ein Administrator aktiviert die automatisch erweiterte Archivierung für das Postfach. Wenn das Archivpostfach (einschließlich des Ordners "Wiederherstellbare Elemente") dann 90 GB erreicht, wird es in ein automatisch expandierendes Archiv konvertiert, und Office 365 dem Archivspeicher Platz hinzugefügt. Beachten Sie, dass es bis zu 30 Tage dauern kann, bis der zusätzliche Speicherplatz bereitgestellt wird.
+2. Ein Administrator aktiviert die automatisch erweiterte Archivierung für das Postfach. Wenn das Archivpostfach (einschließlich des Ordners "refundable Items") 90 GB erreicht, wird es in ein automatisch expandierendes Archiv konvertiert, und Office 365 dem Archivspeicher Platz hinzugefügt. Beachten Sie, dass es bis zu 30 Tage dauern kann, bis der zusätzliche Speicherplatz bereitgestellt wird.
+
+> [!NOTE]
+> Wenn ein Postfach gespeichert oder einer Office 365 Aufbewahrungsrichtlinie zugewiesen ist, wird das Speicherkontingent für das Archiv maibox auf 110 GB erhöht, wenn die automatische Erweiterung der Archivierung aktiviert ist. Dementsprechend wird das Kontingent für die Archiv Warnung auf 100 GB erhöht.
     
-3. Bei Bedarf fügt Office 365 dem Archiv automatisch mehr Speicherplatz hinzu.
+3. Bei Bedarf wird bei Office 365 automatisch mehr Speicherplatz hinzugefügt. Wie bereits erwähnt, werden Office 365 bis zu 20 zusätzliche Archive hinzufügen, wobei maximal 1 TB zusätzlicher Archivspeicherplatz vorhanden ist.
   
 > [!IMPORTANT]
-> Wenn ein Postfach gespeichert oder einer Office 365 Aufbewahrungsrichtlinie zugewiesen ist, wird das Speicherkontingent für das Archiv maibox auf 110 GB erhöht, wenn die automatische Erweiterung der Archivierung aktiviert ist. Dementsprechend wird das Kontingent für die Archiv Warnung auf 100 GB erhöht.
+> Das automatisch expandierende Archiv wird nur für Postfächer unterstützt, die für einzelne Benutzer (oder freigegebene Postfächer) verwendet werden, wobei die Wachstumsrate nicht mehr als 1 GB pro Tag beträgt. Das Archivpostfach eines Benutzers ist nur für diesen Benutzer vorgesehen. Das Verwenden von Journaling, Transportregeln oder Regeln für die automatische Weiterleitung zum Kopieren von Nachrichten in ein Archivpostfach ist nicht zulässig. Microsoft behält sich das Recht vor, die uneingeschränkte Archivierung dann zu verweigern, wenn das Archivpostfach eines Benutzers zum Speichern von Archivdaten für andere Benutzer verwendet wird.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Was wird auf den zusätzlichen Archivspeicherplatz verschoben?
 

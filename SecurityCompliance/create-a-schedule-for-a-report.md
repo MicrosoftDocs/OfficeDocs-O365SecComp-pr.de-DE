@@ -3,7 +3,7 @@ title: Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,40 +14,58 @@ search.appverid:
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie im Security &amp; Compliance Center einen Zeitplan für einen Bericht einrichten.
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+description: Informationen zum Einrichten eines Zeitplans für einen Bericht im Security &amp; Compliance Center.
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077601"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658085"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Erstellen eines Zeitplans für einen Bericht im &amp; Security Compliance Center
 
-Im Security &amp; Compliance Center stehen mehrere [Berichte und](reports-and-insights-in-security-and-compliance.md) Einblicke zur Verfügung, mit deren Hilfe das Sicherheitsteam Ihrer Organisation Bedrohungen für Ihre Organisation abschwächen und beheben kann. Wenn Sie Mitglied des Sicherheitsteams Ihrer Organisation sind, können Sie einen Zeitplan für einen Bericht erstellen. Der von Ihnen erstellte Zeitplan kann einen benutzerdefinierten Zeitraum für Ihre Organisation aufweisen. 
+Im Security &amp; Compliance Center stehen mehrere [Berichte und](reports-and-insights-in-security-and-compliance.md) Einblicke zur Verfügung, mit denen das Sicherheitsteam Ihrer Organisation Bedrohungen für Ihre Organisation entschärfen und adressieren kann. Wenn Sie ein Mitglied des Sicherheitsteams Ihrer Organisation sind, können Sie einen Zeitplan für einen Bericht erstellen. Der von Ihnen erstellte Zeitplan kann einen benutzerdefinierten Datumsbereich für Ihre Organisation enthalten. 
   
 ## <a name="create-a-schedule-for-a-report"></a>Erstellen eines Zeitplans für einen Bericht
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen zum Ausführen dieser Aufgabe verfügen. Im Allgemeinen können Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheits Leser auf Berichte im Security &amp; Compliance Center zugreifen. Weitere Informationen zu Berechtigungen finden Sie unter [Permissions in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
-1. Wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zum **Dashboard**für **Berichte** \> .
+1. Wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> - **Dashboard**.
     
-2. Wählen Sie einen Bericht aus. Für dieses Beispiel wählen wir den Status Bericht für den Bedrohungsschutz aus.
+2. Wählen Sie einen der folgenden Berichte aus: 
+
+    - Übereinstimmungen mit DLP-Richtlinien
+    - Exchange-Transport Regel
+    - DLP-falsch positive Ergebnisse und Außerkraftsetzungen
+    - Office 365 ATP-Dateitypen
+    - Office 365-ATP-Nachrichten Disposition
+    - In e-Mail erkannte Schadsoftware
+    - Top-Schadsoftware
+    - Häufigste Absender und Empfänger
+    - Spoofing-Erkennungen
+    - Spamerkennungen
+    - Gesendete und empfangene e-Mails
+    - DLP-Vorfälle
+    - Verschlüsselungs Bericht
+
+    In diesem Beispiel wählen Sie den Bericht erweiterte Bedrohungsschutz-Dateitypen aus.
     
-3. Wählen Sie in der oberen linken Ecke des Berichts **+ Zeitplan erstellen**.
+3. Wählen Sie in der oberen linken Ecke des Berichts **+ Zeitplan erstellen**aus. 
     
-    ![Sie können einen Zeitplan für Berichte im Security &amp; Compliance Center erstellen.](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Zeitplan erstellen](media/atpfiletypes-createschedule.png)
+
+    (Hinweis: nicht alle Berichte haben die Schaltfläche **+ Create Schedule** .)
   
     Das Dialogfeld **Zeitplan erstellen** wird geöffnet. 
     
-4. Behalten Sie die Standardeinstellungen bei, wählen Sie **Zeitplan erstellen**aus, oder wählen Sie **Zeitplan anpassen**aus.
+4. Behalten Sie die Standardeinstellungen bei, und wählen Sie **Zeitplan erstellen**aus, oder wählen Sie **Zeitplan anpassen**aus.
     
     ![Sie können die Standardeinstellungen verwenden oder einen Berichtszeitplan anpassen.](media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
-    Wenn Sie den Berichtszeitplan anpassen möchten, können Sie die Häufigkeit des Berichts, die e-Mail-Adresse des Absenders und die e-Mail-Adresse eines Empfängers angeben. 
+    Wenn Sie Ihren Berichtszeitplan anpassen möchten, können Sie die Häufigkeit des Berichts, die e-Mail-Adresse des Absenders und die e-Mail-Adresse eines Empfängers angeben. 
     
-Nachdem Sie einen Zeitplan für einen Bericht erstellt haben, wird dieser Bericht automatisch per e-Mail an die e-Mail-Adressen von Empfängern zugestellt. 
+Nachdem Sie einen Zeitplan für einen Bericht erstellt haben, wird dieser Bericht automatisch per e-Mail an die e-Mail-Adressen der Empfänger gesendet. 
   
 ## <a name="related-topics"></a>Verwandte Themen
 

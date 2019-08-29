@@ -3,19 +3,19 @@ title: Häufig gestellte Fragen zur delegierten Verwaltung
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 12/9/2016
+ms.date: 8/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: Dieses Thema liefert häufig gestellte Fragen und Antworten für Microsoft-Partner und Wiederverkäufer, die delegierte Office 365-Verwaltungsaufgaben ausführen möchten, einschließlich der Verwaltung von Exchange Online Protection (EOP) für andere Mandanten (Unternehmen).
-ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 6de70859c7bcb5e735be8f29684c7fcd731f6ed5
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165641"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658111"
 ---
 # <a name="delegated-administration-faq"></a>Häufig gestellte Fragen zur delegierten Verwaltung
 
@@ -26,12 +26,12 @@ Dieses Thema liefert häufig gestellte Fragen und Antworten für Microsoft-Partn
 A. Wenn Sie ein Microsoft-Partner oder-Wiederverkäufer sind und sich als Microsoft Advisor angemeldet haben, können Sie die Berechtigung zum Verwalten des Mandanten im Admin Center anfordern. Dies wird als delegierte Administration bezeichnet und ermöglicht Ihnen die Verwaltung des Office 365-Mandanten (einschließlich EOP-Einstellungen), als wären Sie ein Administrator in ihrer Organisation. Die Schritte für die delegierte Verwaltung sind wie folgt:
   
 1. Registrieren Sie sich als [Microsoft Office 365 Advisor](https://aka.ms/cloudbenefits).
-    
-2. Registrieren Sie sich für die delegierte Verwaltung in Office 365. Bevor Sie mit der Verwaltung eines Kundenkontos beginnen können, muss der Kunde Sie als delegierten Administrator autorisieren. Um die Genehmigung des Kunden einzuholen, [senden Sie ihm zuerst ein Angebot für die delegierte Verwaltung](https://go.microsoft.com/fwlink/?LinkId=396829). (Sie können Ihrem Kunden die delegierte Verwaltung auch später anbieten.) 
-    
-3. Erstellen Sie das Delegierte Administratorkonto.
-    
-Rufen Sie die Website [Partner: Ihr Geschäft voranbringen und Verwalten Ihres Office 365-Partnerkontos](https://go.microsoft.com/fwlink/?LinkId=301485) auf, um weitere Informationen zum Einrichten der delegierten Verwaltung in Office 365 zu erhalten. 
+
+2. Registrieren Sie sich für die delegierte Verwaltung in Office 365. Bevor Sie mit der Verwaltung eines Kundenkontos beginnen können, muss der Kunde Sie als delegierten Administrator autorisieren. Um die Genehmigung des Kunden einzuholen, [senden Sie ihm zuerst ein Angebot für die delegierte Verwaltung](https://go.microsoft.com/fwlink/?LinkId=396829). (Sie können Ihrem Kunden die delegierte Verwaltung auch später anbieten.)
+
+3. Erstellen Sie das Delegierte Administratorkonto mit den Schritten unter [Hinzufügen oder Löschen eines delegierten Administrators](https://go.microsoft.com/fwlink/?LinkId=396831).
+
+Rufen Sie die Website [Partner: Ihr Geschäft voranbringen und Verwalten Ihres Office 365-Partnerkontos](https://go.microsoft.com/fwlink/?LinkId=301485) auf, um weitere Informationen zum Einrichten der delegierten Verwaltung in Office 365 zu erhalten.
   
  **F. Ich bin Kunde und kein Wiederverkäufer. Wie kann ich mich als delegierten Administrator für meine Untermandanten einrichten?**
   
@@ -43,6 +43,4 @@ A. Office 365 unterstützt diese Funktion derzeit nicht.
   
  **F. Ist eine konsolidierte Berichterstellung über meine Untermandanten hinweg möglich?**
   
-A. Konsolidierte Berichte über die Unternehmen, die Sie verwalten, stehen zurzeit nicht für die Micrsoft 365 Admin Center-Berichte zur Verfügung. Dies ist jedoch über die Remote-Windows PowerShell oder den [Webdienst für die Berichterstellung](https://go.microsoft.com/fwlink/?LinkId=279926) möglich. 
-  
-
+A. Die konsolidierte Berichterstellung über die Unternehmen, die Sie verwalten, steht derzeit nicht für die Microsoft 365 Admin Center-Berichte zur Verfügung. Sie können dies jedoch mithilfe der Remote Windows PowerShell oder des [Reporting-](https://go.microsoft.com/fwlink/?LinkId=279926)Webdiensts ausführen.

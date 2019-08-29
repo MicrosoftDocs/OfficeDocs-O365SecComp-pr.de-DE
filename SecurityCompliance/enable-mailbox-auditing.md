@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: Die postfachüberwachungsprotokollierung ist in Microsoft 365 (auch als standardmäßige postfachüberwachung oder postfachüberwachung aktiviert) standardmäßig aktiviert. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: Die postfachüberwachungsprotokollierung ist in Office 365 standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599921"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649910"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
-Ab Januar 2019 wird Microsoft die postfachüberwachungsprotokollierung standardmäßig für alle Microsoft 365-Organisationen aktivieren. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch protokolliert werden und dass die entsprechenden Post Fach Überwachungseinträge verfügbar sind, wenn Sie im postfachüberwachungsprotokoll nach diesen suchen. Bevor die postfachüberwachung standardmäßig aktiviert wurde, muss Sie für jedes Benutzerpostfach in Ihrer Organisation manuell aktiviert werden.
+Ab Januar 2019 wird Microsoft die postfachüberwachungsprotokollierung standardmäßig für alle Office 365 Organisationen aktivieren. Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch protokolliert werden und dass die entsprechenden Post Fach Überwachungseinträge verfügbar sind, wenn Sie im postfachüberwachungsprotokoll nach diesen suchen. Bevor die postfachüberwachung standardmäßig aktiviert wurde, muss Sie für jedes Benutzerpostfach in Ihrer Organisation manuell aktiviert werden.
 
 Hier sind einige Vorteile der postfachüberwachung standardmäßig aktiviert:
 
@@ -36,8 +36,8 @@ Hier sind einige Vorteile der postfachüberwachung standardmäßig aktiviert:
 
 - Sie verfügen über eine konsistente Überwachungsrichtlinie für Postfächer in Ihrer Organisation (da Sie die gleichen Aktionen für alle Postfächerüber Wachen).
 
-> [!TIP]
-> Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts Unternehmen, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen.
+> [!NOTE]
+>• Das wichtigste, was Sie über die Veröffentlichung der postfachüberwachung in der Standardeinstellung wissen sollten, ist: Sie müssen nichts tun, um die postfachüberwachung zu verwalten. Um weitere Informationen zu erhalten, die postfachüberwachung von den Standardeinstellungen anzupassen oder Sie ganz zu deaktivieren, kann Ihnen dieses Thema helfen. <br><br>• Auch wenn die postfachüberwachung standardmäßig aktiviert ist, können Sie feststellen, dass Post Fach Überwachungsereignisse für einige Benutzer in Überwachungsprotokoll suchen im Security #a0 Compliance Center oder über die API für die Office 365-Verwaltungsaktivität nicht gefunden werden. Weitere Informationen finden Sie im Abschnitt [Weitere Informationen](#more-information) in diesem Thema.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die postfachüberwachung standardmäßig aktiviert ist
 
@@ -334,7 +334,23 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Standardmäßig werden postfachüberwachungsprotokoll-Datensätze für 90 Tage aufbewahrt, bevor Sie gelöscht werden. Sie können die Verfallszeit für Überwachungsprotokolldatensätze mithilfe des *AuditLogAgeLimit* -Parameters im Cmdlet " **Satz-Postfach** " in Exchange Online PowerShell ändern. Durch Erhöhen dieses Werts können Sie jedoch nicht nach Ereignissen suchen, die älter als 90 Tage im Überwachungsprotokoll von Microsoft 365 sind.
+- Nur Benutzer mit E5-Lizenzen oder Postfächern, bei denen die postfachüberwachungsprotokollierung manuell von einem Administrator aktiviert wurde, geben postfachüberwachungsprotokoll Ereignisse in Überwachungsprotokoll suchen im Security #a0 Compliance Center oder über die Office 365-Verwaltungs Aktivitäts-API zurück.
+
+  Zum Abrufen von postfachüberwachungsprotokoll Einträgen für Benutzer ohne E5-Lizenzen haben Sie folgende Möglichkeiten:
+
+  - Verwenden Sie die folgenden Cmdlets in Exchange Online PowerShell:
+
+    - [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen.
+
+    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) , um das postfachüberwachungsprotokoll für bestimmte Benutzer zu durchsuchen und die Ergebnisse per e-Mail an angegebene Empfänger zu senden.
+
+  - Verwenden Sie das Exchange Admin Center (EAC) in Exchange Online, um folgende Aktionen durchführen zu können:
+
+    - [Exportieren von Postfachüberwachungsprotokollen](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [Ausführen eines Berichts zum Postfachzugriff durch Nicht-Besitzer](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- Standardmäßig werden postfachüberwachungsprotokoll-Datensätze für 90 Tage aufbewahrt, bevor Sie gelöscht werden. Sie können die Verfallszeit für Überwachungsprotokolldatensätze mithilfe des *AuditLogAgeLimit* -Parameters im Cmdlet " **Satz-Postfach** " in Exchange Online PowerShell ändern. Durch Erhöhen dieses Werts können Sie jedoch nicht nach Ereignissen suchen, die älter als 90 Tage im Office 365 Überwachungsprotokoll sind.
 
   Wenn Sie die Verfallszeit verlängern, müssen Sie das Cmdlet [Search-Mailbox auditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) in Exchange Online PowerShell verwenden, um das postfachüberwachungsprotokoll des Benutzers nach Datensätzen zu durchsuchen, die älter als 90 Tage sind.
 
@@ -361,6 +377,6 @@ Der Wert **true** gibt an, dass die postfachüberwachungsprotokollierung für de
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - Sie können nicht direkt auf einen Überwachungsprotokolleintrag im Ordner "refundable Items" zugreifen; Verwenden Sie stattdessen das Cmdlet **Search-Mailbox auditlog** , oder Durchsuchen Sie das Microsoft 365-Überwachungsprotokoll, um Post Fach Überwachungseinträge zu suchen und anzuzeigen.
+    - Sie können nicht direkt auf einen Überwachungsprotokolleintrag im Ordner "refundable Items" zugreifen; Verwenden Sie stattdessen das Cmdlet **Search-Mailbox auditlog** , oder Durchsuchen Sie das Office 365 Überwachungsprotokoll, um nach Post Fach Überwachungseinträgen zu suchen und anzuzeigen.
 
 - Wenn ein Postfach im Compliance Center aufbewahrt oder einer Aufbewahrungsrichtlinie zugewiesen wird, werden Überwachungsprotokolldatensätze weiterhin für die Dauer beibehalten, die von der *AuditLogAgeLimit* -Eigenschaft des Postfachs definiert ist (standardmäßig 90 Tage). Um Überwachungsprotokolldatensätze für Postfächer, die in der Warteschleife aufbewahrt werden, länger aufzubewahren, müssen Sie den *AuditLogAgeLimit* -Wert des Postfachs erweitern.

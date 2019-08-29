@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Der Microsoft Compliance-Manager ist ein kostenloses Workflow basiertes Risiko Bewertungstool im Microsoft-Dienst Vertrauensstellungs Portal. Mit dem Compliance-Manager können Sie behördliche Compliance-Aktivitäten im Zusammenhang mit Microsoft Cloud Services nachverfolgen, zuweisen und überprüfen.
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786650"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649960"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft Compliance Manager und die dsgvo
 
@@ -40,7 +40,7 @@ So suchen Sie nach einem Benutzerkonto
 
 2. Wenn Sie den Benutzernamen richtig eingegeben haben, wählen Sie **Suchen**aus.
 
-3. Für Benutzerkonten, die nicht zurückgegeben werden, wird auf der Seite "Benutzer nicht gefunden" angezeigt. Überprüfen Sie die e-Mail-Adressinformationen des Benutzers, und nehmen Sie bei Bedarf Korrekturen vor. Zum Wiederholen wählen Sie **Suchen**aus.
+3. Für Benutzerkonten, die nicht zurückgegeben werden, wird die Seite **Benutzer nicht gefunden**angezeigt. Überprüfen Sie die e-Mail-Adressinformationen des Benutzers, und nehmen Sie bei Bedarf Korrekturen vor. Zum Wiederholen wählen Sie **Suchen**aus.
 
 4. Für Benutzerkonten, die zurückgegeben werden, ändert sich der Text der Schaltfläche von **Suche** zu **Löschen**. Dies deutet darauf hin, dass das zurückgegebene Benutzerkonto der Betriebs Kontext für die zusätzlichen Funktionen ist und dass diese Funktionen für dieses Benutzerkonto gelten.
 
