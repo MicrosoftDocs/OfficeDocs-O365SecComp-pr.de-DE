@@ -235,50 +235,6 @@
 ## [Erkennen und Korrigieren von Outlook-Regeln und benutzerdefinierten Formularen für Einschleusungsangriffe in Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Reagieren auf ein angegriffenes E-Mail-Konto in Office 365](responding-to-a-compromised-email-account.md)
 
-# Verwalten der Datengovernance
-## [Importieren von Daten](importing-pst-files-to-office-365.md)
-### [Verwenden des Netzwerkuploads zum Importieren von PST-Dateien](use-network-upload-to-import-pst-files.md)
-### [Verwenden des Laufwerkversands zum Importieren von PST-Dateien](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [Verwenden des PST-Sammlungstools zum Suchen, Kopieren und Löschen von PST-Dateien](find-copy-and-delete-pst-files-in-your-organization.md)
-### [Filtern von Daten beim Importieren von PST-Dateien](filter-data-when-importing-pst-files.md)
-### [Verwenden des Netzwerkuploads zum Importieren RMS-verschlüsselter PST-Dateien](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [Häufig gestellte Fragen zum Importieren von PST-Dateien](faqimporting-pst-files-to-office-365.md)
-### [Archivieren von Drittanbieterdaten in Office 365](archiving-third-party-data.md)
-#### [Verwenden eines Beispiel-Connectors zum Archivieren von Facebook-Daten](archive-facebook-data-with-sample-connector.md)
-#### [Verwenden eines Beispiel-Connectors zum Archivieren von Twitter-Daten](archive-twitter-data-with-sample-connector.md)
-#### [Einrichten eines Connectors zum Archivieren von LinkedIn-Daten](archive-linkedin-data.md)
-#### [Einrichten eines Connectors zum Archivieren von Instant Bloomberg-Daten](archive-instant-bloomberg-data.md)
-#### [Arbeit mit einem Partner zum Archivieren von Drittanbieterdaten](work-with-partner-to-archive-third-party-data.md)
-## Speichern von Daten
-### [Aktivieren von Archivpostfächern](enable-archive-mailboxes.md)
-### [Übersicht über die unbeschränkte Archivierung](unlimited-archiving.md)
-### [Aktivieren der unbeschränkten Archivierung](enable-unlimited-archiving.md)
-### [Einrichten einer Richtlinie zum Archivieren und Löschen für Postfächer](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Aufbewahren von Daten
-### [Aufbewahrungsrichtlinien](retention-policies.md)
-### [Dateiplan-Manager](file-plan-manager.md)
-### [Aufbewahrungsbezeichnungen](labels.md)
-### [SEC Rule 17a-4 einhalten](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Erstellen und Veröffentlichen von Aufbewahrungsbeschriftungen mithilfe von PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Ereignisbasierte Aufbewahrung](event-driven-retention.md)
-### [Automatisieren der ereignisbasierten Aufbewahrung](automate-event-driven-retention.md)
-## [Freigeben von Daten](disposition-reviews.md)
-## Aufsichtskommunikation
-### [Aufsichtsrichtlinien](supervision-policies.md)
-### [Konfigurieren von Aufsichtsrichtlinien für Ihre Organisation](configure-supervision-policies.md)
-## [Verwalten inaktiver Postfächer](inactive-mailboxes-in-office-365.md)
-### [Erstellen und Verwalten inaktiver Postfächer](create-and-manage-inactive-mailboxes.md)
-### [Ändern der Aufbewahrungsdauer für ein inaktives Postfach](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Wiederherstellen eines inaktiven Postfachs](recover-an-inactive-mailbox.md)
-### [Rückspeichern eines inaktiven Postfachs](restore-an-inactive-mailbox.md)
-### [Löschen eines inaktiven Postfachs](delete-an-inactive-mailbox.md)
-## Überwachen der Datengovernance
-### [Anzeigen der Bezeichnungsaktivität für Dokumente](view-label-activity-for-documents.md)
-### [Anzeigen der Bezeichnungsnutzung mit der Analyse der Bezeichnungen](label-analytics.md)
-### [Anzeigen der Datengovernanceberichte](view-the-data-governance-reports.md)
-## Weitere Informationen zur Datengovernance
-### [Schauen Sie sich die Videos vom Microsoft-Team für Datengovernance an](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Suchen nach Inhalten](search-for-content.md)
 ## [Verwenden der Inhaltssuche](content-search.md)
 ### [Stichwortabfragen und Suchbedingungen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
@@ -441,7 +397,6 @@
 ### [Speichern von Bcc-Empfängern und Empfängern aus erweiterten Verteilergruppen](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [Verwalten von Datenuntersuchungen](datainvestigations/overview-data-investigations.md)
-## [Anmerkungen zu dieser Version](datainvestigations/data-investigations-release-notes.md)
 ## [Verwalten von Datenüberläufen](datainvestigations/manage-data-spillage-incidents.md)
 ## [Erstellen einer neuen Untersuchung](datainvestigations/create-new-investigation.md)
 ## [Zuweisen von Berechtigungen für Datenuntersuchungen](datainvestigations/permissions.md)
@@ -456,6 +411,7 @@
 ### [Anmerken und Überarbeiten von Dokumenten](datainvestigations/annotate-and-redact-documents.md)
 ### [Laden von Nicht-Office 365-Daten](datainvestigations/load-non-office365-data.md)
 ### [Beheben von Fehlern beim Verarbeiten von Daten](datainvestigations/error-remediation.md)
+### [Löschen von Elementen am ursprünglichen Speicherort](datainvestigations/delete-items-from-original-locations.md)
 
 ## [Durchführen von Analysen zur schnelleren Untersuchung](datainvestigations/run-analytics-to-investigate-faster.md)
 ### [E-Mail-Threading](datainvestigations/email-threading.md)
@@ -477,6 +433,7 @@
 ### [Schließen oder Löschen einer Untersuchung](datainvestigations/close-or-delete-investigation.md)
 
 ## Referenz zu Datenuntersuchungen
+### [Anmerkungen zu dieser Version](datainvestigations/data-investigations-release-notes.md)
 ### [Beschränkungen bei Datenuntersuchungen](datainvestigations/limits-datainvestigations.md)
 ### [Unterstützte Dateitypen](datainvestigations/supported-filetypes-datainvestigations.md)
 ### [Dokumentmetadatenfelder](datainvestigations/document-metadata-fields.md)
