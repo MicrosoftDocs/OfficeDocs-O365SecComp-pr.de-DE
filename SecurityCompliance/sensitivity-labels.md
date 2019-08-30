@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840887"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675456"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -237,7 +237,7 @@ Und wenn ein Benutzer versucht, mit Bezeichnungen versehene Inhalte auf einem US
 Bevor die Vertraulichkeitsbezeichnungen WIP verwenden können, müssen Sie zuerst die hier beschriebenen Voraussetzungen erfüllen: [Wie Windows Information Protection Dateien mit einer Vertraulichkeitsbezeichnung schützt](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). In diesem Thema werden die folgenden Voraussetzungen beschrieben:
 
 - Stellen Sie sicher, dass Windows 10, Version 1809 oder höher, ausgeführt wird.
-- [Einrichten von Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started), das Inhalte für einer Bezeichnung scannt und den entsprechenden WIP-Schutz anwendet. ATP führt einige Aktionen unabhängig von WIP aus, wie beispielsweise die Meldung von Anomalien.
+- [Einrichten von Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/), das Inhalte für einer Bezeichnung scannt und den entsprechenden WIP-Schutz anwendet. ATP führt einige Aktionen unabhängig von WIP aus, wie beispielsweise die Meldung von Anomalien.
 - Erstellen Sie eine WIP-Richtlinie (Windows Informationen Protection), die auf Endpunktgeräte angewendet wird:
     - [Erstellen einer WIP-Richtlinie (Windows Information Protection) mit MDM mithilfe des Azure-Portals für Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Erstellen und Bereitstellen einer WIP-Richtlinie (Windows Information Protection) mit System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
@@ -267,7 +267,7 @@ Weitere Informationen zum Microsoft Information Protection SDK finden Sie in der
 
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder Ihres Complianceteams, die Vertraulichkeitsbezeichnungen erstellen, benötigen Berechtigungen für das Microsoft 365 Compliance Center, das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diese Admin Center und kann den Compliance Officers und anderen Personen den Zugriff gewähren, ohne ihnen die Berechtigungen eines Mandantenadministrators zuzuweisen. Zu diesem Zweck wird empfohlen, zur Seite **Berechtigungen** der jeweiligen Admin Center zu wechseln und dann der Rollengruppe **Complianceadministrator** oder **Sicherheitsadministrator** Mitglieder hinzuzufügen.
+Mitglieder Ihres Complianceteams, die Vertraulichkeitzbezeichnungen erstellen, benötigen Berechtigungen für das Microsoft 365 Compliance Center, das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diese Admin Center und kann den Compliance Officers und anderen Personen den Zugriff gewähren, ohne ihnen die Berechtigungen eines Mandantenadministrators zuzuweisen. Zu diesem Zweck wird empfohlen, zur Seite **Berechtigungen** der jeweiligen Admin Center zu wechseln und dann der Rollengruppe **Complianceadministrator** oder **Sicherheitsadministrator** Mitglieder hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
