@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Office 365 Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
-ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
+ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302424"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675446"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -233,7 +233,7 @@ Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen di
   
 - Der **Region** -Parameter steuert keine Suche von Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Wenn Sie den Bereich, in dem Exchange-Postfächer durchsucht werden können, einschränken möchten, verwenden Sie den Parameter **Filters** beim Erstellen oder Ändern eines Such Berechtigungs Filters. 
     
-- Wenn es für einen eDiscovery-Manager erforderlich ist, in mehreren SharePoint-Regionen zu suchen, müssen Sie für diesen eDiscovery-Manager ein anderes Benutzerkonto erstellen, das im Such Berechtigungsfilter verwendet werden kann, um die Alternative Region anzugeben, in der die SharePoint Standorte oder OneDrive-Konten befinden sich.
+- Wenn es für einen eDiscovery-Manager erforderlich ist, in mehreren SharePoint-Regionen zu suchen, müssen Sie für diesen eDiscovery-Manager ein anderes Benutzerkonto erstellen, das im Such Berechtigungsfilter verwendet werden kann, um die Region anzugeben, in der die SharePoint-Websites oder OneDrive-Konten befinden sich. Weitere Informationen zum Einrichten dieser Einstellung finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint-Umgebung mit mehreren geografischen Inhalten" unter [Inhaltssuche in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der Parameter **Region** die Suche entweder an den Haupt-oder Satelliten Speicherort, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint-und OneDrive-Websites außerhalb der Region durchsucht, die im Such Berechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben. 
     
