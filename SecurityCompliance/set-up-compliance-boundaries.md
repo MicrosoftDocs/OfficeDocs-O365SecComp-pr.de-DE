@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Verwenden Sie Kompatibilitäts Grenzen zum Erstellen von logischen Grenzen in einer Office 365 Organisation, die die Benutzerinhalts Speicherorte steuern, die ein eDiscovery-Manager durchsuchen kann. Compliance-Grenzen verwenden Such Berechtigungs Filterung (auch als Compliance-Sicherheitsfilter bezeichnet), um zu steuern, welche Postfächer, SharePoint-Websites und OneDrive-Konten von bestimmten Benutzern durchsucht werden können.
-ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
-ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
+ms.openlocfilehash: d89c1c3cc5619e446e0f733c4839bd41b15dd877
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675446"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676875"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Einrichten von Compliance-Grenzen für eDiscovery-Untersuchungen in Office 365
 
@@ -78,7 +78,7 @@ Schließen Sie die folgenden Informationen ein, wenn Sie die Anforderung an den 
     
 - Der Name des Azure Active Directory-Attributs (aus Schritt 1)
     
-- Der folgende Titel oder die Beschreibung des Zwecks der Supportanforderung: "aktivieren Sie OneDrive für Unternehmen Synchronisierung mit Azure Active Directory für Compliance-Sicherheitsfilter". Dadurch wird die Anforderung an das Office 365 eDiscovery-Entwicklungsteam weitergeleitet, das die Anforderung implementiert.
+- Der folgende Titel oder die Beschreibung des Zwecks der Supportanforderung: "aktivieren Sie OneDrive für Unternehmen Synchronisierung mit Azure Active Directory für Compliance-Sicherheitsfilter". Dies erleichtert die Weiterleitung der Anforderung an das Office 365 eDiscovery-Entwicklungsteam, das die Anforderung implementiert.
     
 Nachdem die technische Änderung vorgenommen wurde und das Attribut mit OneDrive synchronisiert wurde, sendet der Microsoft-Support Ihnen die Buildnummer, in der die Änderung vorgenommen wurde, und ein geschätztes Bereitstellungsdatum. Der Bereitstellungsprozess dauert in der Regel 4 bis 6 Wochen, nachdem Sie die Supportanfrage gesendet haben.
   
@@ -120,9 +120,9 @@ Im folgenden finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
     
     -  `Mailbox`: Gibt die Postfächer an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Für Kompatibilitäts Grenzen ist *complianceattribute* das gleiche Attribut, das Sie in Schritt 1 identifiziert haben, und *Attribut* Wert gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer in einer bestimmten Agentur durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"`. 
     
-    -  `Site`: Gibt die OneDrive-Konten an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Verwenden Sie für den OneDrive-Filter die tatsächliche `ComplianceAttribute`Zeichenfolge. Dies entspricht dem Attribut, das Sie in Schritt 1 identifiziert haben und das mit OneDrive-Konten als Ergebnis der in Schritt 2 übermittelten Supportanforderung synchronisiert wird.  *Attributvalue* gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die OneDrive-Konten in einer bestimmten Agentur durchsuchen. Beispiel: `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Gibt die OneDrive-Konten an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Verwenden Sie für den OneDrive-Filter die tatsächliche `ComplianceAttribute`Zeichenfolge. Dies entspricht dem Attribut, das Sie in Schritt 1 identifiziert haben und das mit OneDrive-Konten als Ergebnis der in Schritt 2 übermittelten Supportanforderung synchronisiert wird. *Attributvalue* gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die OneDrive-Konten in einer bestimmten Agentur durchsuchen. Beispiel: `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-    -  `Site_Path`: Gibt die SharePoint-Websites an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Das *SharePointURL* gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Beachten Sie Beispiels `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"` Weise, `Site` dass `Site_Path` die und-Filter durch einen **-oder-** Operator verbunden sind.
+    -  `Site_Path`: Gibt die SharePoint-Websites an, die die im `Users` Parameter definierten Rollengruppen durchsuchen können. Die *SharePointURL* gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Zum Beispiel: `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Beachten Sie `Site` , `Site_Path` dass die und-Filter durch einen **-oder-** Operator verbunden sind.
     
      > [!NOTE]
      > Die Syntax für den `Filters` Parameter enthält eine *Filterliste*. Eine Filterliste ist ein Filter, der einen Post Fach Filter und einen Website Filter enthält, der durch ein Komma getrennt ist. Beachten Sie im vorherigen Beispiel, dass durch ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute**getrennt werden `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`:. Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden zwei Such Berechtigungsfilter aus der Liste Filter erstellt: ein Post Fach Filter und ein Website Filter. Eine Alternative zur Verwendung einer Filterliste besteht darin, zwei separate Such Berechtigungsfilter für jede Agentur zu erstellen: einen Such Berechtigungsfilter für das Postfachattribut und einen Filter für die Website Attribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Such Berechtigungsfilter ist eine Frage der Präferenz.
@@ -153,7 +153,6 @@ Der letzte Schritt besteht darin, einen eDiscovery-Fall im Security #a0 Complian
     
 - Wenn ein Mitglied der Rollengruppe, das einem Fall zugewiesen ist, eine mit dem Fall verknüpfte Suche ausführt, können die inhaltsspeicherorte in Ihrer Agentur nur durchsucht werden (Dies ist durch den Such Berechtigungsfilter definiert, den Sie in Schritt 4 erstellt haben).
 
-
 So erstellen Sie eine Anfrage und weisen Mitglieder zu:
     
 1. Wechseln Sie zur Seite **eDiscovery** im Security #a0 Compliance Center, und erstellen Sie einen Fall. 
@@ -172,7 +171,7 @@ So erstellen Sie eine Anfrage und weisen Mitglieder zu:
 
 Beachten Sie beim Verwalten von eDiscovery-Fällen und Untersuchungen zur Verwendung von Compliance-Grenzen die folgenden Einschränkungen.
   
-- Beim Erstellen und Durchführen einer Inhaltssuche können Sie inhaltsspeicherorte auswählen, die sich außerhalb Ihrer Agentur befinden. Aufgrund des Such Berechtigungs Filters werden Inhalte dieser Speicherorte jedoch nicht in die Suchergebnisse einbezogen.
+- Beim Erstellen und Durchführen einer Inhaltssuche können Sie inhaltsspeicherorte auswählen, die sich außerhalb Ihrer Agentur befinden. Aufgrund des Such Berechtigungs Filters sind jedoch Inhalte dieser Speicherorte nicht in den Suchergebnissen enthalten.
     
 - Compliance-Grenzen gelten nicht für Aufbewahrungen in eDiscovery-Fällen. Das bedeutet, dass ein eDiscovery-Manager in einer Agentur einen Benutzer in einer anderen Agentur in der Warteschleife platzieren kann. Die Konformitäts Grenze wird jedoch erzwungen, wenn der eDiscovery-Manager die inhaltsspeicherorte des Benutzers durchsucht, der in der Warteschleife gespeichert wurde. Das bedeutet, dass der eDiscovery-Manager nicht in der Lage ist, die inhaltsspeicherorte des Benutzers zu durchsuchen, obwohl er den Benutzer in der Warteschleife platzieren konnte.
     
@@ -198,7 +197,7 @@ Mit Such Berechtigungs filtern können Sie auch steuern, wohin Inhalte für den 
     
 - **Routen von Inhalts suchen:** Sie können die Inhaltssuche von SharePoint-Websites und OneDrive-Konten an ein Satellitendaten Center weiterleiten. Dies bedeutet, dass Sie den Speicherort des Rechenzentrums angeben können, in dem Suchvorgänge ausgeführt werden.
     
-    Verwenden Sie die folgenden Werte für die **Region** -Parameterwerte, um zu steuern, in welchem Datencenter die Inhaltssuche ausgeführt wird, wenn Sie SharePoint-Websites und OneDrive-Speicherorte durchsuchen. 
+    Verwenden Sie einen der folgenden Werte für den Parameter **Region** , um den Speicherort des Datencenters zu steuern, in dem Suchvorgänge beim Durchsuchen von SharePoint-Websites und OneDrive-Konten ausgeführt werden. 
   
     |**Übergebener Wert**|**Rechenzentrums-Routing Speicherorte für SharePoint**|
     |:-----|:-----|
@@ -214,10 +213,10 @@ Mit Such Berechtigungs filtern können Sie auch steuern, wohin Inhalte für den 
     |Lam  <br/> |Uns  <br/> |
     |||
 
-   Wenn Sie den Parameter **Region** nicht für einen Such Berechtigungsfilter angeben, wird die standardmäßige SharePoint-Region der Organisation durchsucht, dann werden Suchergebnisse in das nächstgelegene Datencenter exportiert.
+   Wenn Sie den **Region** -Parameter nicht für einen Such Berechtigungsfilter angeben, wird die standardmäßige SharePoint-Region der Organisation durchsucht. Suchergebnisse werden in das nächstgelegene Datencenter exportiert.
 
 > [!TIP]
-> Zur Vereinfachung des Konzepts steuert der **Region** -Parameter das Rechenzentrum, das zum Suchen von Inhalten in SharePoint und OneDrive verwendet wird. Dies gilt nicht für die Suche nach Inhalten in Exchange, da Exchange-Inhalts suchen nicht an den geografischen Standort von Rechenzentren gebunden sind. Außerdem kann der gleiche **Regions** Parameterwert auch das Rechenzentrum diktieren, durch das die Exporte weitergeleitet werden. Dies ist häufig erforderlich, um die Verlagerung von Daten über geografische Grenzen hinweg zu steuern.<br/><br/>Wenn Sie Advanced eDiscovery verwenden, ist die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort von Rechenzentren gebunden. Weitere Informationen zu Advanced eDiscovery finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](compliance20/overview-ediscovery-20.md).
+> Zur Vereinfachung des Konzepts steuert der **Region** -Parameter das Rechenzentrum, das zum Suchen von Inhalten in SharePoint und OneDrive verwendet wird. Dies gilt nicht für die Suche nach Inhalten in Exchange, da Exchange-Inhalts suchen nicht an den geografischen Standort von Rechenzentren gebunden sind. Außerdem kann der gleiche **Regions** Parameterwert auch das Rechenzentrum diktieren, durch das die Exporte weitergeleitet werden. Dies ist häufig erforderlich, um die Verlagerung von Daten über geografische Grenzen hinweg zu steuern.<br/><br/>Wenn Sie Advanced eDiscovery verwenden, ist die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort von Rechenzentren gebunden. Alle Rechenzentren werden durchsucht. Weitere Informationen zu Advanced eDiscovery finden Sie unter [Übersicht über die erweiterte eDiscovery-Lösung in Microsoft 365](compliance20/overview-ediscovery-20.md).
 
 Im folgenden finden Sie Beispiele für die Verwendung des **Region** -Parameters beim Erstellen von Such Berechtigungs Filtern nach Kompatibilitäts Grenzen. Dabei wird davon ausgegangen, dass sich die Fourth Coffee-Tochtergesellschaft in Nordamerika befindet und dass sich die Weinkellerei in Europa befindet. 
   
@@ -231,13 +230,13 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
    
 Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen die folgenden Aspekte.
   
-- Der **Region** -Parameter steuert keine Suche von Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Wenn Sie den Bereich, in dem Exchange-Postfächer durchsucht werden können, einschränken möchten, verwenden Sie den Parameter **Filters** beim Erstellen oder Ändern eines Such Berechtigungs Filters. 
+- Der **Region** -Parameter steuert keine Suche von Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Verwenden Sie zum Begrenzen des Bereichs, in dem Exchange-Postfächer durchsucht werden, den Parameter **Filters** beim Erstellen oder Ändern eines Such Berechtigungs Filters. 
     
-- Wenn es für einen eDiscovery-Manager erforderlich ist, in mehreren SharePoint-Regionen zu suchen, müssen Sie für diesen eDiscovery-Manager ein anderes Benutzerkonto erstellen, das im Such Berechtigungsfilter verwendet werden kann, um die Region anzugeben, in der die SharePoint-Websites oder OneDrive-Konten befinden sich. Weitere Informationen zum Einrichten dieser Einstellung finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint-Umgebung mit mehreren geografischen Inhalten" unter [Inhaltssuche in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- Wenn ein eDiscovery-Manager in mehreren SharePoint-Regionen durchsuchen muss, müssen Sie ein anderes Benutzerkonto erstellen, mit dem der eDiscovery-Manager im Such Berechtigungsfilter die Region angibt, in der die SharePoint-Websites oder OneDrive Konten befinden sich. Weitere Informationen zum Einrichten dieser Einstellung finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint-Umgebung mit mehreren geografischen Inhalten" unter [Inhaltssuche in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der Parameter **Region** die Suche entweder an den Haupt-oder Satelliten Speicherort, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint-und OneDrive-Websites außerhalb der Region durchsucht, die im Such Berechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben. 
     
-- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Office 365 Diensten, die Sie mithilfe des Inhalts Such Tools suchen können) in den Azure-Speicherort hochgeladen, in das Rechenzentrum, das durch den **Region** -Parameter angegeben wird. Auf diese Weise können Organisationen innerhalb der Compliance-Richtlinien bleiben, da Inhalte nicht über kontrollierte Grenzen hinweg exportiert werden können. Wenn im Such Berechtigungsfilter kein Bereich angegeben ist, wird der Inhalt in den Standardbereich der Organisation hochgeladen. 
+- Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Office 365 Diensten, die Sie mithilfe des Inhalts Such Tools durchsuchen können) in den Azure-Speicherort in der Liste hochgeladen. Rechenzentrum, das durch den **Region** -Parameter angegeben wird. Auf diese Weise können Organisationen innerhalb der Compliance-Richtlinien bleiben, da Inhalte nicht über kontrollierte Grenzen hinweg exportiert werden können. Wenn im Such Berechtigungsfilter kein Bereich angegeben ist, wird der Inhalt in den Standardbereich der Organisation hochgeladen. 
     
 - Sie können einen vorhandenen Such Berechtigungsfilter bearbeiten, um den Bereich hinzuzufügen oder zu ändern, indem Sie den folgenden Befehl ausführen:
 
@@ -253,7 +252,7 @@ Zum Erstellen, anzeigen und Ändern von Such Berechtigungs filtern müssen Sie M
   
  **Wenn ein eDiscovery-Manager mehreren Rollengruppen zugewiesen ist, die sich über mehrere Agenturen erstrecken, suchen Sie nach Inhalten in einer oder einer Agentur?**
   
-Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, mit denen die Suche auf eine bestimmte Agentur beschränkt wird. Wenn beispielsweise eine Organisation die **CustomAttribute10** -Eigenschaft für die Unterscheidung von Agenturen angegeben hat, können Sie die folgenden Informationen an Ihre Suchabfrage anfügen, um Postfächer und OneDrive-Konten `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`in einer bestimmten Agentur zu suchen:.
+Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche auf eine bestimmte Agentur einschränken. Wenn beispielsweise eine Organisation die **CustomAttribute10** -Eigenschaft für die Unterscheidung von Agenturen angegeben hat, können Sie die folgenden Informationen an Ihre Suchabfrage anfügen, um Postfächer und OneDrive-Konten `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`in einer bestimmten Agentur zu suchen:.
   
  **Was geschieht, wenn der Wert des Attributs, das als Kompatibilitätsattribut in einem Such Berechtigungsfilter verwendet wird, geändert wird?**
   

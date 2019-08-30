@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft bietet Hilfestellung für EoP in einer Vielzahl von Orten und Methoden, einschließlich selbst Unterstützung und unterstütztem Support.
-ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a60a45833eafd0151ac3a48ff67087b90bd50e31
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599661"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676763"
 ---
 # <a name="help-and-support-for-eop"></a>Hilfe und Support für EOP
 
@@ -48,40 +48,38 @@ Weitere Informationen dazu, wie Ihre Organisation ihre IT-Investitionen mit Prem
 ### <a name="ask-for-help-on-the-web"></a>Unterstützung im Internet
 
 1. Melden Sie sich beim Microsoft 365 Admin Center an.
-    
+
 2. Wechseln Sie zu **Support** \> **Kundensupport anfordern** \> **Neue Serviceanfrage**
-    
+
 3. Geben Sie in das Formular Informationen zu Ihrem Problem ein, suchen Sie nach Lösungen zu vorherigen Problemen oder fügen Sie Protokolle oder verknüpfte Dateien an.
-    
+
 ### <a name="ask-for-help-on-the-telephone"></a>Unterstützung per Telefon
 
 1. Melden Sie sich beim Microsoft 365 Admin Center an.
-    
+
 2. Wechseln Sie bei allgemeinen Problemen mit Produkten zu **Support** \> **Kundensupport anfordern** \> **Technischen Support anrufen**.
-    
+
     Bei Fragen vor dem Erwerb von EOP oder bei Fragen zur Abrechnung und zu Abonnements wechseln Sie zu **Support** \> **Kundensupport anfordern** \> **Support zur Abrechnung und zu Abonnements anrufen**.
-    
+
 3. Suchen Sie mithilfe des virtuellen Support-Assistenten für Office 365 nach der aktuellen Telefonnummer.
-    
+
 ## <a name="support-telephone-numbers"></a>Telefonnummern für den Support
 
 Microsoft bietet lokale oder gebührenfreie Telefonnummern für den Produktsupport weltweit. Viele dieser Supportcenter bieten während der Geschäftszeiten in Ihrer Landessprache oder rund um die Uhr an 365 Tagen im Jahr auf Englisch Unterstützung. Wenn Ihr Land in der folgenden Liste nicht aufgeführt ist, verwenden Sie den virtuellen Support-Assistenten für Office 365 wie oben beschrieben, um nach der Telefonnummer für Ihr Land zu suchen.
   
 |**Land oder Region**|**Fragen vor dem Kauf und zur Abrechnung**|**Fragen an den technischen Support**|
 |:-----|:-----|:-----|
-|Brasilien  <br/> |Gebührenfreie Rufnummer: 08007621146          Lokale Rufnummer: 1147001999  <br/> |Gleich  <br/> |
-|Frankreich  <br/> |Gebührenfreie Rufnummer: 0805 540 594           Lokale Rufnummer: 01 57 32 42 97  <br/> |Gleich  <br/> |
-|Deutschland  <br/> |Gebührenfreie Rufnummer: 0800 589 2332           Lokale Rufnummer: 069 380 789 508  <br/> |Gleich  <br/> |
-|Japan  <br/> |Gebührenfreie Rufnummer: 0120-628860          Lokale Rufnummer: 343326257  <br/> |Gebührenfreie Rufnummer: 0120-996680          Lokale Rufnummer: 357679793  <br/> |
-|Korea  <br/> |Gebührenfreie Rufnummer: 080-495-0880          Lokale Rufnummer: 234831937  <br/> |Gleich  <br/> |
-|Spanien  <br/> |Gebührenfreie Rufnummer: 900 814 197          Lokale Rufnummer: 912 718 160  <br/> |Gleich  <br/> |
-|Vereinigtes Königreich  <br/> |Gebührenfreie Rufnummer: 0800 032 6417          Lokale Rufnummer: 0203 450 6455  <br/> |Wie vorherige  <br/> |
-|Vereinigte Staaten  <br/> |Gebührenfreie Rufnummer: 1-877-913-2707  <br/> |Gebührenfreie Rufnummer: 1-800-865-9408  <br/> |
+|Brasilien|Gebührenfreie Telefonkosten: 08007621146 <br/> Lokal: 1147001999|Gleich|
+|Frankreich|Gebührenfreie Telefonkosten: 0805 540 594 <br/> Lokal: 01 57 32 42 97|Gleich|
+|Deutschland|Gebührenfreie Telefonkosten: 0800 589 2332 <br/>  Lokal: 069 380 789 508|Gleich|
+|Japan|Gebührenfreie Telefonkosten: 0120-628860 <br/> Lokal: 343326257|Gebührenfreie Telefonkosten: 0120-996680 <br/> Lokal: 357679793|
+|Korea|Gebührenfreie Telefonkosten: 080-495-0880 <br/> Lokal: 234831937|Gleich|
+|Spanien|Gebührenfreie Telefonkosten: 900 814 197 <br/> Lokal: 912 718 160|Gleich|
+|Vereinigtes Königreich|Gebührenfreie Telefonkosten: 0800 032 6417 <br/> Lokal: 0203 450 6455|Wie vorherige|
+|Vereinigte Staaten|Gebührenfreie Rufnummer: 1-877-913-2707|Gebührenfreie Rufnummer: 1-800-865-9408|
    
 ## <a name="for-more-information-about-eop-documentation"></a>Weitere Informationen zur EOP-Dokumentation
 
 [Copyrighthinweise für Drittanbieterprodukte](third-party-copyright-notices.md)
   
 [Barrierefreiheit für Personen mit Einschränkungen](accessibility-for-people-with-disabilities.md)
-  
-

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Die postfachüberwachungsprotokollierung ist in Office 365 standardmäßig aktiviert (wird standardmäßig auch als standardmäßige postfachüberwachung oder postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem postfachüberwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten für das Postfach suchen können.
-ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
-ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
+ms.openlocfilehash: 50be60e3ca863c6625693c1b4debce1217571002
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36649910"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676865"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -88,7 +88,7 @@ Anmeldetypen klassifizieren Sie den Benutzer, der die überwachten Aktionen für
 
     - In-Place-eDiscovery in Exchange Online.
 
-  - Auf das Postfach wird mithilfe des [Exchange Server MAPI-Editors](https://go.microsoft.com/fwlink/p/?linkId=204086)zugegriffen.
+  - Auf das Postfach wird mithilfe des Exchange Server MAPI-Editors zugegriffen.
 
 ### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>Postfachaktionen für Benutzerpostfächer und freigegebene Postfächer
 
