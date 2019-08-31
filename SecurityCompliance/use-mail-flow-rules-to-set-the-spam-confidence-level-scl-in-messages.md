@@ -14,12 +14,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Administratoren können erfahren, wie Sie die SCL-Bewertung von Nachrichten in Exchange Online Schutz festlegen.
-ms.openlocfilehash: 5ec92573a9ebd1789683d6fdd596747a0e082df0
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 91252932671ec81d7269bb4e5e5c7680baa13580
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601412"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699156"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Verwenden von Nachrichtenflussregeln zum Festlegen der SCL-Bewertung (Spam Confidence Level) in Nachrichten
 
@@ -31,7 +31,7 @@ Sie können eine e-Mail-Fluss Regel (auch als Transportregel bezeichnet) erstell
     
 - Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Nachrichtenfluss Regeln" in [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) oder [Feature Permissions in EoP](eop/feature-permissions-in-eop.md). 
     
-- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Tastenkombinationen im Exchange Admin Center**.
+- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
     
 ### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>So erstellen Sie eine Nachrichtenfluss Regel, die den SCL-Wert einer Nachricht festlegt
 

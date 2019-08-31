@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (EOP)-Administratoren, die mehrere Mandanten (Unternehmen) verwalten, Konfigurationseinstellungen für ihre Mandanten mithilfe von Windows PowerShell anwenden.
-ms.openlocfilehash: 7ef2ea5b93835a37683f73fa43549af4bab5d47e
-ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
+ms.openlocfilehash: 2886d2c1dd4dc2f324e8cc21babc3a9f4bf51e5f
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36676635"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699203"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Beispielskript für das Anwenden von EOP-Einstellungen für mehrere Mandanten
 
@@ -29,7 +29,7 @@ Mit dem folgenden Beispielskript können Microsoft Exchange Online Protection (E
 
 3. Geben Sie für jede Zeile in der CSV-Datei den Administratornamen des Mandanten in die Spalte "UserName" und das für diesen Mandanten auszuführende Cmdlet in die Spalte "Cmdlet" ein. Verwenden Sie beispielsweise admin@contoso.com und Get-AcceptedDomain.
 
-4. Kopieren Sie das Skript [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) in einen Editor wie Notepad, und speichern Sie die Datei dann an einem Speicherort (wie c:\scripts), an dem Sie PS1-Dateien leicht finden können.
+4. Kopieren Sie das Skript [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) in einen Editor wie Notepad, und speichern Sie die Datei dann an einem Speicherort (wie c:\scripts), an dem Sie PS1-Dateien leicht finden können.
 
 5. Führen Sie das Skript mit der folgenden Syntax aus:
 

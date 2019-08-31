@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Sie können Spambenachrichtigungen für Endbenutzer für die standardmäßige unternehmensweite Inhaltsfilterrichtlinie oder für benutzerdefinierte Inhaltsfilterrichtlinien, die auf Domänen angewendet werden, konfigurieren.
-ms.openlocfilehash: 8e2c2bd6b3e5a29beccaccea032f650936584a06
-ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
+ms.openlocfilehash: c1345ffdfec734d28d5c0e461602716e1fd6a0f2
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35628458"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699270"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer in EOP
   
@@ -50,7 +50,7 @@ Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
   
 Bevor Sie diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Informationen zu den von Ihnen benötigten Berechtigungen finden Sie unter "Antispam" im Thema [Featureberechtigungen in EOP](eop/feature-permissions-in-eop.md). 
   
-Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
+Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer über die Exchange-Verwaltungskonsole
 

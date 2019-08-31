@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 'Administratoren können die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.'
-ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
-ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
+ms.openlocfilehash: ad5e6e1f5e95b97cf9601890c11129f498fe95b9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36643257"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699223"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -25,7 +25,7 @@ Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center folgt e-Mail-N
 Die Nachrichtenablaufverfolgung im Security #a0 Compliance Center verbessert die Nachrichtenablaufverfolgung, die im Exchange Admin Center (EAC) zur Verfügung stand. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzer Fragen über das geschehen mit ihren Nachrichten effizient zu beantworten, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 > [!NOTE]
->  Die Nachrichtenanzahl wird bei 50 000 angehalten, und der Bericht wird in der Konsole nur bis zu diesem Betrag wiedergegeben. Das Cmdlet Get-HistoricalSearch des PowerShell-Cmdlets zeigt die Anzahl der tatsächlichen Nachrichten an.
+> Nur die ersten 50000-Nachrichten werden in den Ergebnissen angezeigt. Das Cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) in Exchange Online PowerShell oder Exchange Online Protection PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Nachrichtenablaufverfolgung öffnen
 
@@ -190,35 +190,39 @@ In der Ausgabe des Zusammenfassungsberichts können Sie mit einer der folgenden 
 
 Die Nachrichtenablauf Verfolgungs Details enthalten die folgenden zusätzlichen Informationen, die im Zusammenfassungsbericht nicht vorhanden sind:
 
-- **Nachrichten Ereignisse**: Dieser Abschnitt enthält Klassifikationen, mit denen die Aktionen kategorisiert werden, die der Dienst für Nachrichten ausführt. Einige der interessantesten Ereignisse, die auftreten können, sind:
+- **Nachrichten Ereignisse**: Dieser Abschnitt enthält Klassifikationen, mit denen die Aktionen kategorisiert werden, die der Dienst für Nachrichten ausführt. **Einige der interessantesten Ereignisse** , die auftreten können, sind:
 
-   - **Receive**: die Nachricht wurde vom Dienst empfangen.
+  - **Receive**: die Nachricht wurde vom Dienst empfangen.
 
-   - **Send**: die Nachricht wurde vom Dienst gesendet.
+  - **Send**: die Nachricht wurde vom Dienst gesendet.
 
-   - **Fehler**: die Nachricht konnte nicht zugestellt werden.
+  - **Fehler**: die Nachricht konnte nicht zugestellt werden.
 
-   - **Deliver**: die Nachricht wurde an ein Postfach übermittelt.
+  - **Deliver**: die Nachricht wurde an ein Postfach übermittelt.
 
-   - **Expand**: die Nachricht wurde an eine Verteilergruppe gesendet, die erweitert wurde.
+  - **Expand**: die Nachricht wurde an eine Verteilergruppe gesendet, die erweitert wurde.
 
-   - **Übertragung**: Empfänger wurden aufgrund von Inhaltskonvertierung, Nachrichtenempfänger Grenzwerten oder Agents zu einer gegabelten Nachricht verschoben.
+  - **Übertragung**: Empfänger wurden aufgrund von Inhaltskonvertierung, Nachrichtenempfänger Grenzwerten oder Agents zu einer gegabelten Nachricht verschoben.
 
-   - **Aufschieben**: die Nachrichtenzustellung wurde verschoben und kann später erneut versucht werden.
+  - **Aufschieben**: die Nachrichtenzustellung wurde verschoben und kann später erneut versucht werden.
 
-   - **Behoben**: die Nachricht wurde an eine neue Empfängeradresse basierend auf einem Active Directory Nachschlagen umgeleitet. Wenn dies geschieht, wird die ursprüngliche Empfängeradresse zusammen mit dem abschließenden Zustellungsstatus in der Nachrichtenablaufverfolgung einer separaten Zeile aufgeführt.
+  - **Behoben**: die Nachricht wurde an eine neue Empfängeradresse basierend auf einem Active Directory Nachschlagen umgeleitet. Wenn dies geschieht, wird die ursprüngliche Empfängeradresse zusammen mit dem abschließenden Zustellungsstatus in der Nachrichtenablaufverfolgung einer separaten Zeile aufgeführt.
 
-   Beachten Sie, dass selbst eine ereignislose Nachricht, die erfolgreich zugestellt wird, mehrere **Ereignis** Einträge in der Nachrichtenablaufverfolgung generiert.
+  Hinweise:
+
+  - Bei einer ereignisreichen Nachricht, die erfolgreich zugestellt wurde, werden mehrere **Ereignis** Einträge in der Nachrichtenablaufverfolgung generiert.
+
+  - Diese Liste ist nicht als erschöpfend zu verstehen. Beschreibungen von weiteren Ereignissen finden Sie unter [Ereignistypen im Nachrichtenverfolgungsprotokoll](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Beachten Sie, dass es sich bei diesem Link um ein Exchange Server (Lokales Exchange)-Thema handelt.
 
 - **Weitere Informationen**: Dieser Abschnitt enthält die folgenden Details:
 
-   - Nach **richten-ID**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Thema beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - Nach **richten-ID**: dieser Wert wird im Abschnitt nach [richten-ID](#message-id) weiter oben in diesem Thema beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-   - **Nachrichtengröße**
+  - **Nachrichtengröße**
 
-   - **Von IP**: die IP-Adresse des Computers, von dem die Nachricht gesendet wurde. Für ausgehende Nachrichten, die von Exchange Online gesendet wurden, wird kein Wert angegeben.
+  - **Von IP**: die IP-Adresse des Computers, von dem die Nachricht gesendet wurde. Für ausgehende Nachrichten, die von Exchange Online gesendet wurden, wird kein Wert angegeben.
 
-   - **In IP**: die IP-Adresse oder Adressen, bei denen der Dienst versucht hat, die Nachricht zuzustellen. Wenn die Nachricht mehrere Empfänger aufweist, werden diese angezeigt. Für eingehende Nachrichten, die an Exchange Online gesendet wurden, wird kein Wert angegeben.
+  - **In IP**: die IP-Adresse oder Adressen, bei denen der Dienst versucht hat, die Nachricht zuzustellen. Wenn die Nachricht mehrere Empfänger aufweist, werden diese angezeigt. Für eingehende Nachrichten, die an Exchange Online gesendet wurden, wird kein Wert angegeben.
 
 ### <a name="enhanced-summary-reports"></a>Erweiterte Zusammenfassungsberichte
 
@@ -230,11 +234,11 @@ Verfügbare (abgeschlossene) erweiterte Zusammenfassungsberichte stehen im Absch
 
 - **Recipient_status**: der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status für jeden im Format: \< *e-Mail-Adress*\>##\<*Status*\>angezeigt. Zum Beispiel:
 
-   - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
+  - **# #Receive, Send bedeutet,** dass die Nachricht vom Dienst empfangen und an das vorgesehene Ziel gesendet wurde.
 
-   - **# #Receive, Fail bedeutet,** dass die Nachricht vom Dienst empfangen wurde, die Zustellung an das vorgesehene Ziel jedoch fehlgeschlagen ist.
+  - **# #Receive, Fail bedeutet,** dass die Nachricht vom Dienst empfangen wurde, die Zustellung an das vorgesehene Ziel jedoch fehlgeschlagen ist.
 
-   - **# #Receive, Deliver bedeutet,** dass die Nachricht vom Dienst empfangen und an das Postfach des Empfängers übermittelt wurde.
+  - **# #Receive, Deliver bedeutet,** dass die Nachricht vom Dienst empfangen und an das Postfach des Empfängers übermittelt wurde.
 
 - **message_subject**: die ersten 256 Zeichen des **Betreff** -Felds der Nachricht.
 
@@ -268,17 +272,17 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **source_context**: zusätzliche Informationen, die dem Feld **Quelle** zugeordnet sind. Zum Beispiel:
 
-   - `Protocol Filter Agent`
+  - `Protocol Filter Agent`
 
-   - `3489061114359050000`
+  - `3489061114359050000`
 
 - **Quelle**: die Exchange Online Komponente, die für das Ereignis verantwortlich ist. Zum Beispiel:
 
-   - `AGENT`
+  - `AGENT`
 
-   - `MAILBOXRULE`
+  - `MAILBOXRULE`
 
-   - `SMTP`
+  - `SMTP`
 
 - **event_id**: Diese entsprechen den **Nachrichtenereignis** Werten, die im Abschnitt [verwandte Datensätze für diese Nachricht suchen](#find-related-records-for-this-message) erläutert werden.
 
@@ -292,27 +296,27 @@ Verfügbare (abgeschlossene) Erweiterte Berichte stehen im Abschnitt zum **Herun
 
 - **Referenz**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Zum Beispiel:
 
-   - **DSN**: enthält den Bericht Link, bei dem es sich um den **message_id** -Wert der Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn ein DSN im Anschluss an dieses Ereignis generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** -Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
+  - **DSN**: enthält den Bericht Link, bei dem es sich um den **message_id** -Wert der Benachrichtigung über den Zustellungsstatus (auch als DSN, Unzustellbarkeitsbericht, NDR oder Bounce-Nachricht bezeichnet) handelt, wenn ein DSN im Anschluss an dieses Ereignis generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den **message_id** -Wert der ursprünglichen Nachricht, für die der DSN generiert wurde.
 
-   - **Expand**: enthält den **related_recipient_address** -Wert der zugehörigen Nachrichten.
+  - **Expand**: enthält den **related_recipient_address** -Wert der zugehörigen Nachrichten.
 
-   - **Receive**: enthält möglicherweise den **message_id** -Wert der zugehörigen Nachricht, wenn die Nachricht von anderen Prozessen generiert wurde (beispielsweise Posteingangsregeln).
+  - **Receive**: enthält möglicherweise den **message_id** -Wert der zugehörigen Nachricht, wenn die Nachricht von anderen Prozessen generiert wurde (beispielsweise Posteingangsregeln).
 
-   - **Send**: enthält den **internal_message_id** -Wert aller DSN-Nachrichten.
+  - **Send**: enthält den **internal_message_id** -Wert aller DSN-Nachrichten.
 
-   - **Übertragung**: enthält den **internal_message_id** -Wert der Nachricht, die verzweigt wird (beispielsweisedurch Inhaltskonvertierung, Empfänger Grenzwerte für Nachrichten oder Agents).
+  - **Übertragung**: enthält den **internal_message_id** -Wert der Nachricht, die verzweigt wird (beispielsweisedurch Inhaltskonvertierung, Empfänger Grenzwerte für Nachrichten oder Agents).
 
-   - **MAILBOXRULE**: enthält den **internal_message_id** -Wert der eingehenden Nachricht, die bewirkt hat, dass die Posteingangsregel die ausgehende Nachricht generiert hat.
+  - **MAILBOXRULE**: enthält den **internal_message_id** -Wert der eingehenden Nachricht, die bewirkt hat, dass die Posteingangsregel die ausgehende Nachricht generiert hat.
 
-   Für andere Ereignistypen ist dieses Feld zumeist leer.
+    Für andere Ereignistypen ist dieses Feld zumeist leer.
 
 - **return_path**: die Absender-e-Mail-Adresse, die durch den Befehl **Mail from** angegeben wurde, der die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann es den Wert der NULL-Absenderadresse darstellen `<>`, dargestellt als.
 
 - **message_info**: zusätzliche Informationen zur Nachricht. Zum Beispiel:
 
-   - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Stunde `mm` , = Minute `ss` , = Sekunde `fff` , = Brüche einer Sekunde und `Z` bedeutet `Zulu`, was eine andere Möglichkeit zum bezeichnen von UTC ist.
+  - Der Nachrichtenursprung Datum-Uhrzeit in UTC für `DELIVER` und `SEND` Ereignisse. Das Datum-Uhrzeit der Erstellung ist die Uhrzeit, zu der die Nachricht zuerst in die Exchange Online Organisation eingegeben wurde. Die UTC-Datum-Uhrzeit wird im ISO 8601-Datum-Uhrzeit-Format `yyyy-mm-ddThh:mm:ss.fffZ`dargestellt: `yyyy` , wobei = `mm` Year, = `dd` month, = `T` Day, den Anfang der Zeitkomponente angibt `hh` , = Stunde `mm` , = Minute `ss` , = Sekunde `fff` , = Brüche einer Sekunde und `Z` bedeutet `Zulu`, was eine andere Möglichkeit zum bezeichnen von UTC ist.
 
-   - Authentifizierungsfehler. Beispielsweise können Sie den Wert `11a` und den Typ der Authentifizierung sehen, der beim Auftreten des Authentifizierungsfehlers verwendet wurde.
+  - Authentifizierungsfehler. Beispielsweise können Sie den Wert `11a` und den Typ der Authentifizierung sehen, der beim Auftreten des Authentifizierungsfehlers verwendet wurde.
 
 - **tenant_id**: ein GUID-Wert, der die Exchange Online Organisation darstellt (Beispiels `39238e87-b5ab-4ef6-a559-af54c6b07b42`Weise).
 

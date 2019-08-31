@@ -14,12 +14,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: Mit diesem Thema wird die Konfiguration von IRM für die Verwendung eines AD RMS-Servers erläutert.
-ms.openlocfilehash: 6f764ddf3604dcf0d6b28a37b56a498489c0769f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 1bfdde516b8c807e4805f8a827a26dda3d60d043
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600171"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699250"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Konfigurieren von IRM für die Verwendung eines lokalen AD RMS-Servers
   
@@ -40,7 +40,7 @@ Weitere Informationen zu IRM in Exchange Online finden Sie unter [Verwaltung von
     
 - Informationen zum Installieren und Konfigurieren von Windows PowerShell sowie zum Herstellen einer Verbindung mit dem Dienst finden Sie unter [Herstellen einer Verbindung mit Exchange Online mithilfe der Remote-PowerShell](http://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
     
-- Informationen zu Tastenkombinationen für die Verfahren in diesem Thema finden Sie unter **Keyboard shortcuts in Exchange 2013**.
+- Informationen zu Tastenkombinationen, die möglicherweise für die Verfahren in diesem Thema gelten, finden Sie unter [Tastenkombinationen für das Exchange Admin Center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
     
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie die Foren unter [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) oder [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
