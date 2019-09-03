@@ -25,8 +25,7 @@ ms.locfileid: "36478194"
 
 ## <a name="overview"></a>Übersicht
 
-
-  [Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types) werden verwendet, um zu verhindern, dass vertrauliche Informationen versehentlich oder in unangemessener Weise freigegeben werden. Als Administrator können Sie das [Security & Compliance Center](https://docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type) oder [PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) verwenden, um einen benutzerdefinierten vertraulichen Informationstyp basierend auf Mustern, Nachweisen (Stichwörtern wie  *Mitarbeiter*, *Abzeichen*, *ID* usw.), Zeichenabstand (wie nahe Nachweise sich an Zeichen in einem bestimmten Muster befinden) und Vertrauensstufen zu definieren. Solche benutzerdefinierten vertraulichen Informationstypen erfüllen die geschäftlichen Anforderungen vieler Organisationen.
+[Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types) werden verwendet, um zu verhindern, dass vertrauliche Informationen versehentlich oder in unangemessener Weise freigegeben werden. Als Administrator können Sie das [Security & Compliance Center](https://docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type) oder [PowerShell](https://docs.microsoft.com/de-DE/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) verwenden, um einen benutzerdefinierten vertraulichen Informationstyp basierend auf Mustern, Nachweisen (Stichwörtern wie  *Mitarbeiter*, *Abzeichen*, *ID* usw.), Zeichenabstand (wie nahe Nachweise sich an Zeichen in einem bestimmten Muster befinden) und Vertrauensstufen zu definieren. Solche benutzerdefinierten vertraulichen Informationstypen erfüllen die geschäftlichen Anforderungen vieler Organisationen.
 
 Was aber, wenn Sie einen benutzerdefinierten vertraulichen Informationstyp nutzen möchten, der genaue Datenwerte verwendet, anstatt nur mit generischen Mustern übereinzustimmen? Mit einer EDM-basierten Klassifizierung (genaue Datenübereinstimmung) können Sie einen benutzerdefinierten Informationstyp mit den folgenden Merkmalen erstellen:
 
@@ -187,8 +186,7 @@ Sie werden zu folgenden Bestätigungen aufgefordert:
 
 Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei und die edm.xml-Datei korrekt referenzieren. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
 
-- 
-  **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](https://docs.microsoft.com/de-DE/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
+- **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](https://docs.microsoft.com/de-DE/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
 
 - **Datenspeicher**: Dieses Feld gibt den zu verwendenden EDM-Nachschlage-Datenspeicher an. Sie geben einen Datenquellennamen eines konfigurierten EDM-Schemas an.
 
@@ -482,19 +480,15 @@ Vertrauliche EDM-Informationstypen für die folgenden Szenarien sind derzeit in 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
+[Integrierte vertrauliche Informationstypen und wonach diese suchen](https://docs.microsoft.com/de-DE/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [Integrierte vertrauliche Informationstypen und wonach diese suchen](https://docs.microsoft.com/de-DE/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [Benutzerdefinierte vertrauliche Informationstypen](https://docs.microsoft.com/de-DE/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [Überblick über DLP-Richtlinien](https://docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies)
+[Überblick über DLP-Richtlinien](https://docs.microsoft.com/de-DE/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/de-DE/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/de-DE/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Feedback
 GitHub-Feedback ist aktiviert, aber das Hinzufügen von Problemen ist nur auf der öffentlichen Website verfügbar.

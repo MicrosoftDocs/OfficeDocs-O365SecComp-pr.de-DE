@@ -81,22 +81,17 @@ Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API
 
 Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachungsprotokolls finden Sie unter:
 
--   
-  [Warnungsrichtlinien im Microsoft 365 Security oder Compliance Center](https://support.office.com/de-DE/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Warnungsrichtlinien im Microsoft 365 Security oder Compliance Center](https://support.office.com/de-DE/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
--   
-  [Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365](https://support.office.com/de-DE/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (Einführung)
+-   [Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365](https://support.office.com/de-DE/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (Einführung)
 
--   
-  [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://support.office.com/de-DE/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   [Aktivieren oder Deaktivieren der Office 365-Überwachungsprotokollsuche](https://support.office.com/de-DE/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   
-  [Durchsuchen des Überwachungsprotokolls](https://support.office.com/de-DE/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+-   [Durchsuchen des Überwachungsprotokolls](https://support.office.com/de-DE/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (Cmdlet) 
 
--   
-  [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](https://support.office.com/de-DE/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   [Detaillierte Eigenschaften im Office 365-Überwachungsprotokoll](https://support.office.com/de-DE/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -130,13 +125,11 @@ Hinweis: Aktivieren Sie unbedingt „Automatisch Dateien auf Azure Information P
 
 Weitere Informationen:
 
--   
-  [Bereitstellen von Cloud App Security](https://docs.microsoft.com/de-DE/cloud-app-security/getting-started-with-cloud-app-security)
+-   [Bereitstellen von Cloud App Security](https://docs.microsoft.com/de-DE/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
+-   [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/de-DE/cloud-platform/cloud-app-security)
 
--   
-  [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](https://docs.microsoft.com/de-DE/cloud-app-security/use-case-proxy-block-session-aad)
+-   [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](https://docs.microsoft.com/de-DE/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Beispieldatei und Aktivitätsrichtlinien zum Erkennen der Freigabe von personenbezogenen Daten
 

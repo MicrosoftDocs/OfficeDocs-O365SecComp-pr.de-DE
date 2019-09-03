@@ -47,14 +47,13 @@ Azure RMS wird auch bei den meisten berechtigenden Plänen automatisch aktiviert
 Weitere Informationen finden Sie unter:
 
 - Lesen Sie [Welche Abonnements benötige ich, um die neuen OME-Funktionen nutzen zu können?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities), um zu überprüfen, ob Ihr Abonnementplan Azure Information Protection umfasst (das Azure RMS-Funktionen beinhaltet).
-- Informationen zum Kauf eines berechtigenden Abonnements finden Sie unter [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/).  
+- Informationen zum Kauf eines berechtigenden Abonnements finden Sie unter [Azure Information Protection](https://azure.microsoft.com/de-DE/services/information-protection/).  
 
 ### <a name="manually-activating-azure-rights-management"></a>Manuelles Aktivieren von Azure Rights Management
 
 Wenn Sie Azure RMS deaktiviert haben oder wenn es aus irgendeinem Grund nicht automatisch aktiviert wurde, können Sie es hier manuell im aktivieren:
 
-- 
-  **Microsoft 365 Admin Center**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Admin Center](https://docs.microsoft.com/de-DE/azure/information-protection/activate-office365).
+- **Microsoft 365 Admin Center**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Admin Center](https://docs.microsoft.com/de-DE/azure/information-protection/activate-office365).
 - **Azure-Portal**: Anweisungen hierzu finden Sie unter [Aktivieren von Azure Rights Management im Azure-Portal](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure).
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Konfigurieren der Verwaltung Ihres Azure Information Protection-Mandantenschlüssels

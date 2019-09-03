@@ -98,10 +98,8 @@ Für den Zugriff auf ATP-Features im Security & Compliance Center müssen Sie ü
 |Rolle oder Rollengruppe  |Ressourcen mit mehr Informationen  |
 |---------|---------|
 |Globaler Office 365-Administrator |[Informationen zu Office 365-Administratorrollen](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Sicherheitsadministrator |
-  [Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online-Organisationsverwaltung |
-  [Berechtigungen in Exchange Online](https://docs.microsoft.com/de-DE/exchange/permissions-exo/permissions-exo) <br>und<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Sicherheitsadministrator |[Administratorrollenberechtigungen in Azure Active Directory](https://docs.microsoft.com/de-DE/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online-Organisationsverwaltung |[Berechtigungen in Exchange Online](https://docs.microsoft.com/de-DE/exchange/permissions-exo/permissions-exo) <br>und<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Weitere Informationen finden Sie unter:
 

@@ -81,12 +81,10 @@ Die PowerShell-Befehle für eingeschränkte Benutzer sind:
 
 [Auf ein kompromittiertes E-Mail-Konto reagieren](responding-to-a-compromised-email-account.md)
 
-
-  [Grundlegendes zu der Benachrichtigung über zum Senden von E-Mails gesperrte Benutzer](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies)
+[Grundlegendes zu der Benachrichtigung über zum Senden von E-Mails gesperrte Benutzer](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies)
 
 [Pool für besonders riskante Zustellungen für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
-
-  [Benachrichtigungsrichtlinien im Security & Compliance Center](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies)
+[Benachrichtigungsrichtlinien im Security & Compliance Center](https://docs.microsoft.com/de-DE/office365/securitycompliance/alert-policies)
