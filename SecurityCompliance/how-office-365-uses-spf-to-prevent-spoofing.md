@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: 'Zusammenfassung: Dieser Artikel beschreibt, wie Office 365 den Sender Policy Framework (SPF) TXT-Eintrag in DNS verwendet, um sicherzustellen, dass von Ihrer benutzerdefinierten Domäne gesendete Nachrichten von Ziel-E-Mail-Systemen als vertrauenswürdig eingestuft werden. Dies gilt für ausgehende E-Mail-Nachrichten von Office 365. Nachrichten, die von Office 365 an einen Empfänger in Office 365 gesendet werden, durchlaufen immer SPF.'
-ms.openlocfilehash: f872159280968227e88f8014117db28b88097075
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 41055f5eb2f3fe3e4e54f7b863b3739ec51c198a
+ms.sourcegitcommit: 8be0297950840e33dc693d139b69ee142edbed81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599221"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "36714014"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing
 
@@ -107,7 +107,7 @@ Zusätzlich zu den IP-Adressen können Sie auch Ihren SPF TXT-Eintrag zum Einsch
 IN TXT "v=spf1 include:contoso.net include:contoso.org -all"
 ```
 
-Wenn der empfangende Server diesen Eintrag in DNS findet, führt er ebenfalls eine DNS-Suche nach dem SPF TXT-Eintrag für „contoso.net" und dann für „contoso.org" durch. Wenn er eine zusätzliche „include"-Anweisung innerhalb der Einträge für „contoso.net" oder „contoso.org" findet, werden auch diese verfolgt. Um DOS-Angriffe zu verhindern, beträgt die maximale Anzahl von DNS-Suchen für eine einzelne E-Mail-Nachricht 10. Jede „include"-Anweisung stellt eine zusätzliche DNS-Suche dar. Wenn eine Nachricht das Limit von 10 überschreitet, schlägt die Nachricht für SPF fehl. Nachdem eine Nachricht dieses Limit erreicht, erhält der Absender je nach Konfiguration des empfangenden Server möglicherweise eine Meldung, die besagt, dass „zu viele Suchvorgänge" generiert wurden oder dass „die maximale Hop-Anzahl für die Nachricht überschritten" wurde. Tipps, zum Vermeiden dieses Problems finden Sie unter [Problembehandlung: Bewährte Methoden für SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+Wenn der empfangende Server diesen Eintrag in DNS sieht, führt er auch eine DNS-Suche für den SPF TXT-Eintrag für contoso.net und dann für contoso.org aus. Wenn eine zusätzliche include-Anweisung in den Datensätzen für contoso.net oder contoso.org gefunden wird, werden diese ebenfalls befolgt. Um DOS-Angriffe zu verhindern, beträgt die maximale Anzahl von DNS-Suchen für eine einzelne E-Mail-Nachricht 10. Jede „include“-Anweisung stellt eine zusätzliche DNS-Suche dar. Wenn eine Nachricht das Limit von 10 überschreitet, schlägt die Nachricht für SPF fehl. Sobald eine Nachricht diesen Grenzwert erreicht hat, kann der Absender abhängig von der Konfiguration des empfangenden Servers eine Meldung erhalten, die besagt, dass die Nachricht "zu viele Nachschlagevorgänge" generiert wurde oder dass die maximale Anzahl von Hops für die Nachricht überschritten wurde (was passieren kann, wenn die Lookups-Schleife und überschreitet das DNS-Timeout). Tipps, zum Vermeiden dieses Problems finden Sie unter [Problembehandlung: Bewährte Methoden für SPF in Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
   
 ## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>Anforderungen für Ihren SPF TXT-Eintrag und Office 365
 <a name="SPFReqsinO365"> </a>

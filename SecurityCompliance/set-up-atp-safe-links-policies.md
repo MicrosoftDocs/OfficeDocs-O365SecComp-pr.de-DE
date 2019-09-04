@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Richten Sie Richtlinien für sichere Links ein, um Ihre Organisation vor bösartigen Links in Word-, Excel-, PowerPoint-und Visio-Dateien sowie in e-Mail-Nachrichten zu schützen.
-ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: f33f351d9a4875a52854a239cf9f875be8e076d6
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230339"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717635"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Einrichten Office 365 Richtlinien für ATP-sichere Links
 
@@ -101,7 +101,7 @@ Nachdem Sie die Standardrichtlinie für ATP-sichere Links überprüft (oder bear
     
   - Wählen Sie **sichere Links auf Nachrichten anwenden, die innerhalb der Organisation gesendet** werden, wenn Sie sichere Links für Nachrichten aktivieren möchten, die zwischen Benutzern innerhalb Ihrer Organisation gesendet werden (empfohlen).
     
-  - Wählen Sie **nicht zulassen, dass Benutzer auf die ursprüngliche URL klicken**.
+  - Wählen Sie nicht zulassen, dass Benutzer auf die **ursprüngliche URL klicken** , wenn Sie nicht möchten, dass die einzelnen Benutzer eine über *Prüfung in Progress* oder Benachrichtigungen über *Blockierte URLs* außer Kraft setzen.
     
   - (Dies ist optional) Geben Sie im Abschnitt **folgende URLs nicht umschreiben** eine oder mehrere URLs an, die als sicher für Ihre Organisation betrachtet werden. (Weitere Informationen finden Sie unter [Einrichten einer benutzerdefinierten URL-Liste "nicht umschreiben" unter Verwendung von ATP-Sicherheits Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
     
