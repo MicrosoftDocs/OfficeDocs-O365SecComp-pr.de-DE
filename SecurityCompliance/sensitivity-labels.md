@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit Vertraulichkeitsbezeichnungen können Sie Ihre vertraulichen Inhalte klassifizieren und schützen, ohne dass die Produktivität Ihrer Mitarbeiter und deren Fähigkeit zur Zusammenarbeit behindert wird. Mithilfe von Vertraulichkeitsbezeichnungen können Sie Schutzeinstellungen wie Verschlüsselung oder Wasserzeichen für bezeichnete Inhalte erzwingen.
-ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
-ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
+ms.openlocfilehash: ce05fe8062cb0f651edc74101b11877c091eb6fb
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675456"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717705"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Übersicht über Vertraulichkeitsbezeichnungen
 
@@ -68,7 +68,7 @@ Jedem Inhaltselement kann eine Vertraulichkeitsbezeichnung zugewiesen werden. Be
 
 Nachdem eine Vertraulichkeitsbezeichnung auf eine E-Mail oder ein Dokument angewendet wurde, werden die Schutzeinstellungen für diese Bezeichnung auf den Inhalt erzwungen. Mit einer Vertraulichkeitsbezeichnung können Sie folgende Aktionen auslösen:
 
-- **Verschlüsseln** von E-Mails oder von E-Mails und Dokumenten. Sie können auswählen, welche Benutzer oder Gruppen zu welchen Aktionen berechtigt sind und wie lange. Beispielsweise können Sie auswählen, dass Benutzer in einer bestimmten Domäne außerhalb Ihrer Organisation für nur sieben Tage, nachdem die Inhalte bezeichnet wurden, zum Überprüfen des Inhalts berechtigt sind. Weitere Informationen finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md).
+- **Verschlüsseln** von E-Mails oder von E-Mails und Dokumenten. Sie können auswählen, welche Benutzer oder Gruppen zu welchen Aktionen berechtigt sind und wie lange. Beispielsweise können Sie auswählen, dass Benutzer in einer bestimmten Domäne außerhalb Ihrer Organisation für nur sieben Tage, nachdem die Inhalte bezeichnet wurden, zum Überprüfen des Inhalts berechtigt sind. Alternativ können Sie, anstatt Berechtigungen selbst zuzuweisen, Ihren Benutzern erlauben, Berechtigungen für Inhalte zuzuweisen, wenn sie die Bezeichnung auf diese anwenden. Weitere Informationen finden Sie unter [Einschränken des Zugriffs auf Inhalte mithilfe der Verschlüsselung in Vertraulichkeitsbezeichnungen](encryption-sensitivity-labels.md).
 
 - **Markieren Sie den Inhalt** durch Hinzufügen von benutzerdefinierten Wasserzeichen, Kopf- oder Fußzeilen für E-Mails oder Dokumente, die die Bezeichnung angewendet haben. Beachten Sie, dass Wasserzeichen nur auf Dokumente, und nicht auf E-Mails angewendet werden können, und auf 255 Zeichen beschränkt sind. Außerdem sind Kopf- und Fußzeilen auf 1024 Zeichen beschränkt (außer in Excel, wo sie auf 255 Zeichen oder weniger beschränkt sind. Dies ist davon abhängig, ob das Dokument andere Kopf- oder Fußzeilen enthält, bzw. von anderen Faktoren abhängig.)
 
@@ -267,7 +267,7 @@ Weitere Informationen zum Microsoft Information Protection SDK finden Sie in der
 
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder Ihres Complianceteams, die Vertraulichkeitzbezeichnungen erstellen, benötigen Berechtigungen für das Microsoft 365 Compliance Center, das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diese Admin Center und kann den Compliance Officers und anderen Personen den Zugriff gewähren, ohne ihnen die Berechtigungen eines Mandantenadministrators zuzuweisen. Zu diesem Zweck wird empfohlen, zur Seite **Berechtigungen** der jeweiligen Admin Center zu wechseln und dann der Rollengruppe **Complianceadministrator** oder **Sicherheitsadministrator** Mitglieder hinzuzufügen.
+Mitglieder Ihres Complianceteams, die Vertraulichkeitzbezeichnungen erstellen, benötigen Berechtigungen für das Microsoft 365 Compliance Center, das Microsoft 365 Security Center oder das Office 365 Security & Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diese Admin Center und kann Compliance Officer und anderen Personen Zugriff gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu erteilen. Zu diesem Zweck wird Folgendes empfohlen: Gehen Sie zur Seite **Berechtigungen** des jeweiligen Admin Centers und fügen Sie dann der Rollengruppe **Complianceadministrator** oder **Sicherheitsadministrator** Mitglieder hinzu.
 
 Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 

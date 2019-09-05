@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Übersicht über DOS-Angriffe (Denial of Service).
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622475"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761661"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Abwehr von Denial-of-Service-Angriffen in Office 365
 
@@ -34,7 +34,7 @@ Microsoft bietet eine vertrauenswürdige Infrastruktur für mehr als 200 Cloud-D
 - Skype
 - Xbox Live
 
-Als globale Organisation mit einer bedeutenden Internetpräsenz und vielen prominenten Interneteigenschaften, die Cloud-Dienste bereitstellen, ist Microsoft ein großes, gemeinsames Ziel für Hacker und andere böswillige Personen. Die Netzwerk Kommunikationsschicht zwischen Clients und der Microsoft-Cloud gehört zu den größten Zielen böswilliger Angriffe. Tatsächlich ist Microsoft ständig und dauerhaft unter irgendeiner Form von Netzwerk basiertem Cyber-Angriff. In diesem Sinne verwendet Microsoft umfassende Sicherheitsprinzipien zum Schutz seiner Cloud-Dienste und-Netzwerke. Ohne zuverlässige und beständige mildernde Systeme, die sich gegen diese Angriffe wehren, wären die Cloud-Dienste von Microsoft Offline und für Kunden nicht verfügbar.
+Als globale Organisation mit einer bedeutenden Internetpräsenz und vielen prominenten Interneteigenschaften, die Cloud-Dienste bereitstellen, ist Microsoft ein großes, gemeinsames Ziel für Hacker und andere böswillige Personen. Die Netzwerk Kommunikationsschicht zwischen Clients und der Microsoft-Cloud gehört zu den größten Zielen böswilliger Angriffe. Tatsächlich ist Microsoft ständig und dauerhaft unter irgendeiner Form von netzwerkbasierter Cyberangriff. In diesem Sinne verwendet Microsoft umfassende Sicherheitsprinzipien zum Schutz seiner Cloud-Dienste und-Netzwerke. Ohne zuverlässige und beständige mildernde Systeme, die sich gegen diese Angriffe wehren, wären die Cloud-Dienste von Microsoft Offline und für Kunden nicht verfügbar.
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Definition und Symptome von Denial-of-Service-Angriffen
 

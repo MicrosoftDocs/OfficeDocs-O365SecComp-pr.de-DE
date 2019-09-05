@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Startseite für den Schutz des Zugriffs auf O365-Daten und-Dienste
-ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852739"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761611"
 ---
 # <a name="protect-user-and-device-access"></a>Schutz von Benutzer- und Gerätezugriff
 
-Der Schutz des Zugriffs auf Ihre Office 365 Daten und-Dienste ist für die Verteidigung gegen Cyber-Angriffe und den Schutz vor Datenverlusten entscheidend. Derselbe Schutz kann auf andere SaaS-Anwendungen in Ihrer Umgebung und sogar auf lokale Anwendungen angewendet werden, die mit Azure Active Directory Application Proxy veröffentlicht werden.
+Der Schutz des Zugriffs auf Ihre Office 365 Daten und-Dienste ist für die Verteidigung gegen Cyberangriffe und den Schutz vor Datenverlusten entscheidend. Derselbe Schutz kann auf andere SaaS-Anwendungen in Ihrer Umgebung und sogar auf lokale Anwendungen angewendet werden, die mit Azure Active Directory Application Proxy veröffentlicht werden.
   
 ## <a name="step-1-review-recommendations"></a>Schritt 1: Überprüfen der Empfehlungen
 
@@ -31,7 +31,7 @@ Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Office 3
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Schritt 2: Schützen von Administratorkonten und Zugriff
-Die Administratorkonten, die Sie zum Verwalten Ihrer Office 365 Umgebung verwenden, umfassen erweiterte Berechtigungen. Dies sind wertvolle Ziele für Hacker und Cyber-Kriminelle. 
+Die Administratorkonten, die Sie zum Verwalten Ihrer Office 365 Umgebung verwenden, umfassen erweiterte Berechtigungen. Dies sind wertvolle Ziele für Hacker und cyberattackers. 
 
 Verwenden Sie zunächst Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für reguläre, nicht administrative Zwecke verfügen und bei Bedarf nur Ihr Administratorkonto verwenden, um eine Aufgabe abzuschließen, die ihrer Auftragsfunktion zugeordnet ist.
 
@@ -56,7 +56,7 @@ Mehrstufige Authentifizierung (MFA) und Richtlinien für bedingten Zugriff sind 
 - InTune-Geräte Konformität
 - Azure AD Identity Protection
 
-Implemetning InTune-Gerätekompatibilität erfordert die Geräteregistrierung. Durch die Verwaltung von Geräten können Sie sicherstellen, dass Sie ordnungsgemäß und kompatibel sind, bevor Sie Ihnen den Zugriff auf Ressourcen in Ihrer Umgebung ermöglichen. Siehe [Registrieren von Geräten für die Verwaltung in InTune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+Die Implementierung der InTune-Gerätekompatibilität erfordert die Geräteregistrierung. Durch die Verwaltung von Geräten können Sie sicherstellen, dass Sie ordnungsgemäß und kompatibel sind, bevor Sie Ihnen den Zugriff auf Ressourcen in Ihrer Umgebung ermöglichen. Siehe [Registrieren von Geräten für die Verwaltung in InTune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Schritt 4: Konfigurieren von SharePoint-Gerätezugriffs Richtlinien
 

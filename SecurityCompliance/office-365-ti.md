@@ -3,7 +3,7 @@ title: Untersuchung von und Antwort auf Bedrohungen in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/22/2019
+ms.date: 08/23/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,34 +15,30 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie mithilfe von Threat Intelligence-Funktionen in Office 365 Advanced Threat Protection Sicherheitsrisiken in Ihrer Organisation erforschen, auf Schadsoftware, Phishing und andere Angriffe reagieren können, die Office 365 in Ihrem Namen erkannt hat, und nach Bedrohungen suchen. Indikatoren.
-ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566213"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761651"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Untersuchung von und Antwort auf Bedrohungen in Office 365
 
 Untersuchung und Antwortfunktionen für Bedrohungen in [Office 365 Advanced Threat Protection](office-365-atp.md) helfen Sicherheitsanalysten und Administratoren, die Office 365 Benutzer Ihrer Organisation zu schützen, indem Sie:
   
-- Einfaches identifizieren, überwachen und verstehen von Angriffen
+- Einfaches identifizieren, überwachen und verstehen von Cyberangriffe
     
 - Unterstützung bei der schnellen Adressierung von Bedrohungen in Exchange Online, SharePoint Online, OneDrive für Unternehmen und Microsoft Teams
     
-- Bereitstellen von Einblicken und wissen, um Angriffe gegen Ihre Organisation zu verhindern
+- Bereitstellen von Einblicken und Wissen zur Unterstützung von Sicherheitsmaßnahmen beim verhindern von Cyberangriffe in Ihrer Organisation
 
 - Einsatz von [automatisierten Untersuchungen und Reaktionen](automated-investigation-response-office.md) auf kritische e-Mail-basierte Bedrohungen
     
-Lesen Sie diesen Artikel, um mehr über die Untersuchung und Reaktion von Bedrohungen sowie die ersten Schritte zu erfahren.
-  
-## <a name="threat-investigation-and-response-in-office-365"></a>Untersuchung und Reaktion auf Bedrohungen in Office 365
+Die Funktionen zur Ermittlung und Reaktion von Bedrohungen bieten Einblicke in Bedrohungen und zugehörige Reaktions Aktionen, die &amp; im Office 365 Security Compliance Center verfügbar sind. Diese Erkenntnisse können dazu beitragen, dass das Sicherheitsteam Ihrer Organisation Office 365 Benutzer vor e-Mail-oder dateibasierten Angriffen schützt. Die Funktionen helfen bei der Überwachung von Signalen und Sammeln von Daten aus mehreren Quellen wie Benutzeraktivität, Authentifizierung, e-Mail, kompromittierten PCs und Sicherheitsvorfällen. Entscheidungsträger im Unternehmen und Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheitsexperten können diese Informationen nutzen, um Bedrohungen gegen Office 365 Benutzer zu verstehen und darauf zu reagieren und geistiges Eigentum zu schützen.
 
-Untersuchung und Antwortfunktionen für Bedrohungen helfen, Einblicke in Bedrohungen und zugehörige Reaktions Aktionen zu gewinnen &amp; , die im Office 365 Security Compliance Center verfügbar sind. Diese Erkenntnisse können dazu beitragen, dass das Sicherheitsteam Ihrer Organisation Office 365 Benutzer vor e-Mail-oder dateibasierten Angriffen schützt. Die Funktionen helfen bei der Überwachung von Signalen und Sammeln von Daten aus mehreren Quellen wie Benutzeraktivität, Authentifizierung, e-Mail, kompromittierten PCs und Sicherheitsvorfällen. Entscheidungsträger im Unternehmen und Office 365 globale Administratoren, Sicherheitsadministratoren und Sicherheitsexperten können diese Informationen nutzen, um Bedrohungen gegen Office 365 Benutzer zu verstehen und darauf zu reagieren und Ihr geistiges Eigentum zu schützen.
+## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Kennenlernen von Bedrohungs Ermittlungs-und-Antwort Tools
 
-## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Kennenlernen des Bedrohungs Dashboards, des Explorers und der Vorfälle
-
-Die Untersuchung und Antwortfunktionen für Bedrohungen &amp; sind im Security Compliance Center als eine Reihe von Tools und Antwort Workflows verfügbar, einschließlich des [Threat](#threat-dashboard)-Dashboards, des [Explorers](#threat-explorer), der [Vorfälle](#incidents), des Angriffs [Simulators](attack-simulator.md)und [Automatische Untersuchung #a0 Antwort](automated-investigation-response-office.md).
+Die Untersuchung und Antwortfunktionen für Bedrohungen &amp; sind im Security Compliance Center als eine Reihe von Tools und Antwort Workflows verfügbar, einschließlich des [Threat-Dashboards](#threat-dashboard), des [Explorers](#threat-explorer), der [Vorfälle](#incidents), des [Angriffs Simulators](#attack-simulator)und [Automatische Untersuchung #a0 Antwort](automated-investigation-response-office.md).
   
 ### <a name="threat-dashboard"></a>Threat-Dashboard
 
@@ -51,6 +47,8 @@ Verwenden Sie das Threat-Dashboard (Dies wird auch als [Sicherheits Dashboard](s
 ![Threat-Dashboard](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 Um dieses Dashboard anzuzeigen und zu verwenden, wechseln Sie &amp; im Security Compliance Center zu **Threat Management** \> **Dashboard**.
+
+Weitere Informationen 
   
 ### <a name="threat-explorer"></a>Sicherheitsrisiken-Explorer
 
@@ -69,8 +67,16 @@ Verwenden Sie die Liste Vorfälle (Dies wird auch Untersuchungen genannt), um ei
 Um die Liste der aktuellen Vorfälle für Ihre Organisation anzuzeigen, wechseln Sie &amp; im Security Compliance Center zu **Threat Management** \> **Review** \> **Incidents**.
   
 ![Wählen Sie im &amp; Security Compliance Center die Option Threat \> Management Review aus.](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+
+### <a name="attack-simulator"></a>Angriffs Simulator
+
+Verwenden Sie den Angriffs Simulator zum Einrichten und ausführen realistischer Cyberangriffe in Ihrer Organisation, und identifizieren Sie gefährdete Personen, bevor sich ein echter Cyberangriff auf Ihr Unternehmen auswirkt. Weitere Informationen finden Sie unter [Attack Simulator in Office 365](attack-simulator.md).
+
+### <a name="automated-investigation-and-response"></a>Automatische Untersuchung und Reaktion
+
+Verwenden Sie automatisierte Ermittlungs-und Antwortfunktionen (Air), um Zeit und Aufwand beim Korrelieren von Inhalten, Geräten und gefährdeten Personen vor Bedrohungen in Ihrer Organisation zu sparen. Air-Prozesse können beginnen, wenn bestimmte Warnungen ausgelöst werden oder wenn Sie von Ihrem Sicherheits Betriebsteam gestartet werden. Weitere Informationen finden Sie unter [Automatische Untersuchung und Antwort (Air) mit Office 365](automated-investigation-response-office.md). 
   
-## <a name="learn-more-about-malware-and-threats"></a>Weitere Informationen zu Schadsoftware und Bedrohungen
+## <a name="threat-intelligence-widgets"></a>Threat Intelligence-Widgets
 
 Im Rahmen des Angebots von Office 365 Advanced Threat Protection Plan 2 können Sicherheitsanalysten Details zu einer bekannten Bedrohung überprüfen. Dies ist hilfreich, um zu ermitteln, ob zusätzliche vorbeugende Maßnahmen/Schritte ergriffen werden können, um die Benutzer zu schützen.
   

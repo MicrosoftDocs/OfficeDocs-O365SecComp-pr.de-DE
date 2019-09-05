@@ -1,9 +1,9 @@
 ---
 title: Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
-ms.author: chrfox
-author: chrfox
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Hier erfahren Sie, wie Sie e-Mail-Sicherheitsberichte für Ihre Organisation suchen und verwenden. E-Mail-Sicherheitsberichte sind im &amp; Security Compliance Center verfügbar.
-ms.openlocfilehash: 1e9d51c76b6df02c9d70626392a58c307ee214db
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 90b4ab2c9fafc5c882791a5471e7e5a24f5ae4bd
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230419"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761711"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Anzeigen von e-Mail-Sicherheits &amp; Berichten im Security Compliance Center
 
@@ -43,7 +43,7 @@ Ihre e-Mail-Sicherheitsberichte umfassen Folgendes:
 
 (**Neu!**) Im **Verschlüsselungs Bericht** werden Informationen über e-Mail-Nachrichten angezeigt, die entweder über die Richtlinien Ihrer Organisation oder durch Endbenutzer Steuerelemente verschlüsselt wurden. Das Sicherheitsteam Ihrer Organisation kann Informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien für vertrauliche e-Mail-Nachrichten proaktiv anzuwenden oder anzupassen.
 
-Um diesen Bericht anzuzeigen, wechseln Sie im Security #a0 Compliance Center zu **Berichte** \> - **Dashboard** \> -Verschlüsselungs **Bericht**.
+Um diesen Bericht anzuzeigen, wechseln Sie im Security #a0 Compliance Center zu **Berichte** \> - **Dashboard** \> - **Verschlüsselungs Bericht**.
 
 ![Verschlüsselungs Bericht](media/encryptionreport-defaultview.png) 
 
@@ -51,7 +51,7 @@ Wenn der Bericht zuerst geöffnet wird, werden Daten zu Verschlüsselungsmethode
 
 ![Filter für Verschlüsselungs Berichte](media/encryptionreport-filters.png)   
 
-Sie können auch das Menü **** aufschlüsseln nach verwenden, um Daten nach Verschlüsselungs Vorlage (oder Methode) anzuzeigen.
+Sie können auch das Menü **aufschlüsseln** nach verwenden, um Daten nach Verschlüsselungs Vorlage (oder Methode) anzuzeigen.
 
 ![Verschlüsselungsmethode oder-Vorlage](media/encryptionreport-breakdownby.png)
 
@@ -65,10 +65,10 @@ Mithilfe dieses Berichts kann das Sicherheits-und Compliance-Team Ihrer Organisa
 
 ## <a name="threat-protection-status-report"></a>Status Bericht über den Bedrohungsschutz
 
-Der **Status** Bericht zum Bedrohungsschutz ist ein intelligenter Bericht, in dem böswillige e-Mails angezeigt werden, die durch Exchange Online Schutz erkannt und blockiert wurden. Dieser Bericht ist hilfreich, um e-Mails anzuzeigen, die als Schadsoftware oder als Phishing-Versuch im Laufe der Zeit identifiziert wurden (bis zu 90 Tage), und es ermöglicht Sicherheitsadministratoren, Trends zu identifizieren oder zu bestimmen, ob Richtlinien angepasst werden müssen.
+Der **Status Bericht zum Bedrohungsschutz** ist ein intelligenter Bericht, in dem böswillige e-Mails angezeigt werden, die durch Exchange Online Schutz erkannt und blockiert wurden. Dieser Bericht ist hilfreich, um e-Mails anzuzeigen, die als Schadsoftware oder als Phishing-Versuch im Laufe der Zeit identifiziert wurden (bis zu 90 Tage), und es ermöglicht Sicherheitsadministratoren, Trends zu identifizieren oder zu bestimmen, ob Richtlinien angepasst werden müssen.
 
 > [!NOTE]
-> Ein Status Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Threat Protection-Status Bericht für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten, als EoP-Kunden möglicherweise sehen. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu schädlichen Dateien, die [in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden, eine ATP-spezifische Funktion. ([Weitere Informationen zu ATP-Berichten](view-reports-for-atp.md).)
+> Ein Status Bericht über den Bedrohungsschutz steht Kunden zur Verfügung, die entweder [Office 365 ATP](office-365-atp.md) oder [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP) haben; die Informationen, die im Threat Protection-Status Bericht für ATP-Kunden angezeigt werden, enthalten jedoch wahrscheinlich unterschiedliche Daten, als EoP-Kunden möglicherweise sehen. EoP-Kunden können beispielsweise Informationen über in e-Mails erkannte Schadsoftware anzeigen, aber keine Informationen zu [schädlichen Dateien, die in SharePoint Online, OneDrive oder Microsoft Teams erkannt](atp-for-spo-odb-and-teams.md)wurden, eine ATP-spezifische Funktion. ([Weitere Informationen zu ATP-Berichten](view-reports-for-atp.md).)
   
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> **Threat Protection Status**.
   
@@ -130,7 +130,7 @@ Unter dem Diagramm sehen Sie, wer die häufigsten e-Mail-Absender oder Empfänge
   
 ## <a name="spoof-detections-report"></a>Spoofing-Erkennungs Bericht
 
-Der Bericht **Spoof** -Erkennungen zeigt, wie viele gefälschte e-Mail-Nachrichten erkannt wurden und von denen, die als "gut" eingestuft wurden (Spoof-e-Mails wurden aus legitimen geschäftlichen Gründen ausgeführt). 
+Der Bericht **Spoof-Erkennungen** zeigt, wie viele gefälschte e-Mail-Nachrichten erkannt wurden und von denen, die als "gut" eingestuft wurden (Spoof-e-Mails wurden aus legitimen geschäftlichen Gründen ausgeführt). 
   
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Berichte** \> **** \> **-Spoofing-e-Mail-** Benachrichtigungen.
   
@@ -142,13 +142,13 @@ Klicken (oder tippen) Sie auf den Bericht, um ihn in einem neuen Browserfenster 
   
 ## <a name="spam-detections-report"></a>Spam Erkennungs Bericht
 
-Der **Spam Erkennungs** Bericht zeigt alle von Exchange Online blockierten Spam Inhalte an. 
+Der **Spam Erkennungs** Bericht zeigt alle von Exchange Online blockierten Spam Inhalte an. Nachrichten werden pro Nachricht und nicht pro Empfänger gezählt. Wenn beispielsweise eine e-Mail-Nachricht an 100-Empfänger in Ihrer Organisation gesendet wurde, wird Sie als eine Nachricht gezählt.
   
 Um diesen Bericht anzuzeigen, wechseln Sie [im &amp; Security Compliance Center](https://protection.office.com)zu **Reports** \> **Dashboard** \> - **Spam Erkennungen**.
   
 ![Um diesen Bericht anzuzeigen, wechseln Sie im &amp; Security Compliance Center zu Berichte \> Dashboard \> EoP Spam Erkennungen](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
-Wenn Sie den Mauszeiger über einen Tag im Diagramm bewegen, können Sie sehen, wie viele Elemente an diesem Tag blockiert wurden, und wie diese Elemente kategorisiert werden. Beispielsweise können Sie sehen, wie viele Spamnachrichten gefiltert wurden und wie viele Elemente von einer blockierten IP-Adresse (Internet Protocol) stammen.
+Wenn Sie den Mauszeiger über einen Tag im Diagramm bewegen, können Sie sehen, wie viele Elemente an diesem Tag blockiert wurden, und wie diese Elemente kategorisiert werden. Beispielsweise können Sie sehen, wie viele Spamnachrichten gefiltert wurden und wie viele Elemente von einer blockierten Internetprotokoll (IP) Adresse stammen.
   
 Klicken (oder tippen) Sie auf den Bericht, um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten können.
   
@@ -168,7 +168,7 @@ Wenn Sie den Mauszeiger über einen Tag im Diagramm bewegen, können Sie sehen, 
   
 Klicken (oder tippen) Sie auf den Bericht, um ihn in einem neuen Browserfenster zu öffnen, in dem Sie eine detailliertere Ansicht des Berichts erhalten können.
   
-Sie können die aufschlüsseln nach Liste verwenden, um Informationen nach Typ oder Richtung anzuzeigen (ein-und ausgehende). **** 
+Sie können die **aufschlüsseln** nach Liste verwenden, um Informationen nach Typ oder Richtung anzuzeigen (ein-und ausgehende). 
   
 ![Verwenden der Aufschlüsselung nach Liste zum Anzeigen von Informationen nach Typ oder Richtung](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
   

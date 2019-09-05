@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Zielseite für die Planung von Sicherheit und Compliance
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80e6215f1f4f5c04202f15e05622dfddae65d59b
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157507"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761621"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planen der Sicherheits &amp; Konformität in Office 365
 
@@ -39,7 +39,7 @@ Beachten Sie nach dem Einrichten Ihres Office 365-Abonnements Ihre Start Punktza
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Schritt 3: Planen des Zugriffsschutzes für Identität und Geräte
 
-Der Schutz des Zugriffs auf Ihre Office 365 Daten und-Dienste ist für die Verteidigung gegen Cyber-Angriffe und den Schutz vor Datenverlusten entscheidend.
+Der Schutz des Zugriffs auf Ihre Office 365 Daten und-Dienste ist für die Verteidigung gegen Cyberangriffe und den Schutz vor Datenverlusten entscheidend.
   
 - [Zugriffsschutz für Daten und Dienste in Office 365](protect-access-to-data-and-services.md)
     

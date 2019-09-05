@@ -13,20 +13,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Diese Lösung zeigt Ihnen, wie die häufigsten Angriffe auf die Cyber-Sicherheit in Office 365 Aussehen und wie Sie darauf reagieren können.
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: In dieser Lösung erfahren Sie, wie die häufigsten Cyber-Angriffe in Office 365 Aussehen und wie Sie darauf reagieren können.
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157676"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761671"
 ---
 # <a name="office-365-security-incident-response"></a>Reaktion auf Sicherheitsvorfälle in Office 365
 
- **Zusammenfassung:** In dieser Lösung erfahren Sie, welche Indikatoren für die häufigsten Angriffe auf die Cyber-Sicherheit in Office 365 gelten, wie Sie einen bestimmten Angriff positiv bestätigen und wie Sie darauf reagieren.
+ **Zusammenfassung:** In dieser Lösung erfahren Sie, welche Indikatoren für die häufigsten Cyber-Angriffe in Office 365 gelten, wie Sie einen bestimmten Angriff positiv bestätigen und wie Sie darauf reagieren.
   
 ## <a name="overview"></a>Übersicht
-Nicht alle Cyber-Angriffe können vereitelt werden. Angreifer suchen ständig nach neuen Schwächen in ihrer Defensiv Strategie, oder Sie nutzen alte. Wenn Sie wissen, wie ein Angriff erkannt werden kann, können Sie schneller darauf reagieren, wodurch die Dauer des Sicherheitsvorfalls verkürzt wird.
+Nicht alle Cyberangriffe können vereitelt werden. Angreifer suchen ständig nach neuen Schwächen in ihrer Defensiv Strategie, oder Sie nutzen alte. Wenn Sie wissen, wie ein Angriff erkannt werden kann, können Sie schneller darauf reagieren, wodurch die Dauer des Sicherheitsvorfalls verkürzt wird.
 
 Diese Artikelreihe hilft Ihnen zu verstehen, wie ein bestimmter Angriffs in Office 365 aussehen kann, und gibt Ihnen die Schritte, die Sie ergreifen können, um zu reagieren. Sie sind schnelle Einstiegspunkte für das Verständnis:
  
