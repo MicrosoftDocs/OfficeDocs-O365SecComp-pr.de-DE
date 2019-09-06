@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection umfasst sichere Anlagen, sichere Links, erweiterte Antiphishing-Tools, Berichterstellungstools und Threat Intelligence-Funktionen.
-ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d9dda9b19f601e26d01a18f7602f4fae3e0a0cb4
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231089"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761721"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -85,9 +85,9 @@ Office 365 ATP Plan 2 enthält erstklassige [Bedrohungsuntersuchung- und Antwort
 
 - [Angriffssimulator](attack-simulator.md) ermöglicht Ihnen das Ausführen realistischer Angriffsszenarien in Ihrer Organisation, um Sicherheitsrisiken zu erkennen. Zur Verfügung stehen Simulationen aktueller Angriffstypen, einschließlich eines [Anzeigename – Spear-Phishing-Angriffs](attack-simulator.md#display-name-spear-phishing-attack), eines [Kennwort-Spray-Angriffs](attack-simulator.md#password-spray-attack), eines [Brute-Force-Kennwortangriffs](attack-simulator.md#brute-force-password-attack) und vieles mehr.
     
-## <a name="save-time-with-automated-investigation-and-response"></a>Sparen Sie Zeit mit automatisierten Untersuchungen und Antworten
+## <a name="save-time-with-automated-investigation-and-response"></a>Zeit sparen mit automatisierten Untersuchungen und Antworten
 
-(**NEU!**) Bei der Untersuchung eines potenziellen Cyber-Angriffs ist Zeit ein extrem wichtiger Faktor. Je früher Sie Bedrohungen erkennen und eindämmen können, desto besser für Ihre Organisation. Office 365 ATP Plan 2 enthält nun [Automatisierte Untersuchung und Antwort (Automated Investigation and Response, AIR)](automated-investigation-response-office.md)-Funktionen. (Wenn Sie noch nicht über diese Funktionen verfügen, werden Sie sie bald mit ATP Plan 2 haben.) 
+(**NEU!**) Bei der Untersuchung eines potenziellen Cyberangriffs ist Zeit von äußerster Wichtigkeit. Je früher Sie Bedrohungen erkennen und eindämmen können, desto besser für Ihre Organisation. Office 365 ATP Plan 2 enthält nun [Automatisierte Untersuchung und Antwort (Automated Investigation and Response, AIR)](automated-investigation-response-office.md)-Funktionen. (Wenn Sie noch nicht über diese Funktionen verfügen, werden Sie sie bald mit ATP Plan 2 haben.) 
 
 AIR umfasst eine Reihe von Sicherheits-Playbooks, die automatisch gestartet werden können, z.B. wenn eine Benachrichtigung ausgelöst wird, oder manuell, z.B. aus einer Explorer-Ansicht. AIR spart Ihrem Team für Sicherheitsvorgänge Zeit und Mühe beim effektiven und effizienten Eindämmen von Bedrohungen. Weitere Informationen finden Sie unter [Automatisierte Untersuchung und Reaktion (AIR) mit Office 365](automated-investigation-response-office.md).
 
