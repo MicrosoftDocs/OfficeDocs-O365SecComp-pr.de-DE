@@ -4,7 +4,7 @@ keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bed
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: 2c64ea936170524811839db7c593d67bfe11a928
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
+ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36762023"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790929"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatisches untersuchen und reagieren auf Bedrohungen in Office 365
 
@@ -89,6 +89,12 @@ Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Office 36
 5. W?hlen Sie ein Element in der Liste aus. Ein Flyout mit Details zur Warnung und Links zu zusätzlichen Informationen und Aktionen wird geöffnet.
 
 6. Überprüfen Sie die Informationen im Flyout, und nehmen Sie abhängig von der jeweiligen Warnung eine Aktion vor, beispielsweise zum **Auflösen**, unter **drücken**oder **Benachrichtigen von Benutzern**. 
+
+    - **Resolve** entspricht dem Schließen einer Warnung.
+    
+    - Unter **drücken** bewirkt, dass eine Richtlinie Warnungen für einen bestimmten Zeitraum nicht auslöst
+    
+    - **Benutzer benachrichtigen** startet eine e-Mail mit bereits eingegebenen e-Mail-Adressen der Benutzer und ermöglicht es dem Team für Sicherheitsvorgänge, diesen Benutzern eine Nachricht zu geben. (Dies ähnelt dem Senden einer Nachricht an Empfänger mithilfe von [Threat Explorer](threat-explorer.md).)  
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Verwenden der API für die Office 365-Verwaltungsaktivität für benutzerdefinierte oder Drittanbieter-Berichtslösungen
 
