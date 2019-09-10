@@ -1,9 +1,9 @@
 ---
-title: Automatische Untersuchung und Reaktion (Air) in Office 365
+title: Automatische Vorfall Antwort (Air) in Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Erfahren Sie mehr über die automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection.
-ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+description: Erfahren Sie mehr über die Funktionen zur automatischen Vorfall Reaktion in Office 365 Advanced Threat Protection.
+ms.openlocfilehash: 84b68efe35ebefddf4770f491cc3be453a81f577
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761701"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822485"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Automatische Untersuchung und Reaktion (Air) in Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Automatische Vorfall Antwort (Air) in Office 365
 
-Mit den Funktionen für die automatische Untersuchung und Reaktion (in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Lesen Sie diesen Artikel, um einen Überblick über Air zu erhalten und um zu erfahren, wie Sie Ihre Organisation und ihre Sicherheitsteams bei der effektiveren und effizienteren Abwehr von Bedrohungen unterstützen können. Informationen zum Einstieg in die Verwendung von Air finden Sie unter [Automatisches untersuchen und reagieren auf Bedrohungen in Office 365](office-365-air.md).
+Mit den Funktionen der automatischen Vorfall Antwort (Air) (in [Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2) können Sie automatisierte Ermittlungsprozesse als Reaktion auf bekannte Bedrohungen ausführen, die heute vorhanden sind. Lesen Sie diesen Artikel, um einen Überblick über Air zu erhalten und um zu erfahren, wie Sie Ihre Organisation und ihre Sicherheitsteams bei der effektiveren und effizienteren Abwehr von Bedrohungen unterstützen können. Informationen zum Einstieg in die Verwendung von Air finden Sie unter [Automatisches untersuchen und reagieren auf Bedrohungen in Office 365](office-365-air.md).
 
 > [!NOTE]
 > Sie müssen ein globaler Administrator, Sicherheitsadministrator, Sicherheits Operator oder Sicherheits Leser sein, um die in diesem Artikel beschriebenen Aufgaben ausführen zu können. Weitere Informationen finden Sie unter [Microsoft 365 Security Center: Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
@@ -102,19 +102,22 @@ Sie können:
 - Anwenden von Filtern. Wählen Sie zwischen **Ermittlungstyp**, **Zeitbereich**, **Status**oder einer Kombination aus diesen aus.
 - Exportieren Sie die Daten in eine CSV-Datei.
 
-Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Während der Untersuchung wird der Status geändert, um anzugeben, ob Bedrohungen gefunden wurden und ob Aktionen genehmigt wurden. 
-- **Start**: die Untersuchung wird in Kürze in die Warteschlange eingereiht.
-- **Running**: die Untersuchung wurde gestartet und führt ihre Analyse durch
-- **Keine Bedrohungen gefunden**: die Untersuchung hat ihre Analyse abgeschlossen, und es wurden keine Bedrohungen gefunden.
-- **Beendet durch System**: die Untersuchung wurde nicht geschlossen und ist nach 7 Tagen abgelaufen.
-- **Ausstehende Aktion**: die Untersuchung hat Bedrohungen mit empfohlenen Aktionen gefunden
-- **Gefundene Bedrohungen**: die Untersuchung hat Bedrohungen festgestellt, aber für die Bedrohungen sind keine Aktionen in Air verfügbar.
-- **Behoben**: die Untersuchung wurde abgeschlossen und wurde vollständig korrigiert (alle Aktionen wurden genehmigt)
-- **Teilweise behoben**: die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt.
-- **Durch den Benutzer beendet**: ein Administrator hat die Untersuchung beendet
-- **Fehler: während**der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht.
-- In der **Warteschlange durch Drosselung**: die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung)
-- **Durch Drosselung beendet**: die Untersuchung konnte aufgrund der Untersuchung von Volumen-und System Verarbeitungs Einschränkungen nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen.
+Der unter Suchstatus gibt den Fortschritt der Analyse und der Aktionen an. Während der Untersuchung wird der Status geändert, um anzugeben, ob Bedrohungen gefunden wurden und ob Aktionen genehmigt wurden, wie in der folgenden Tabelle beschrieben:
+
+|Status | Beschreibung  |
+|----|----| 
+|**Wird gestartet**|Die Untersuchung wird in Kürze in die Warteschlange gestellt. |
+|**Wird ausgeführt** |Die Untersuchung wurde gestartet und führt die Analyse aus. |
+|**Keine Bedrohungen gefunden** |Die Untersuchung hat ihre Analyse abgeschlossen, und es wurden keine Bedrohungen gefunden. |
+|**Beendet von System** |Die Untersuchung wurde nach 7 Tagen nicht abgeschlossen und ist abgelaufen. |
+|**Ausstehende Aktion** |Die Untersuchung hat Bedrohungen mit empfohlenen Aktionen gefunden. |
+|**Gefundene Bedrohungen** |Die Untersuchung hat Bedrohungen festgestellt, aber für die Bedrohungen sind keine Aktionen in Air verfügbar. |
+|**Saniert** |Die Untersuchung wurde abgeschlossen und wurde vollständig behoben (alle Aktionen wurden genehmigt) |
+|**Teilweise behoben** |Die Untersuchung wurde abgeschlossen, und einige der empfohlenen Aktionen wurden genehmigt. |
+|**Durch den Benutzer beendet** |Ein Administrator hat die Untersuchung beendet |
+|**Fehlgeschlagen**|Während der Untersuchung ist ein Fehler aufgetreten, der verhindert, dass er eine Schlussfolgerung zu Bedrohungen erreicht. |
+|**Durch Drosselung in der Warteschlange**|Die Untersuchung wartet aufgrund von Einschränkungen der System Verarbeitung auf die Analyse (zum Schutz der Dienstleistung) |
+|**Durch Drosselung beendet**|Die Untersuchung konnte aufgrund von Einschränkungen bei der Untersuchung von Volumen und System Verarbeitung nicht rechtzeitig abgeschlossen werden. Sie können die Untersuchung erneut auslösen, indem Sie die e-Mail im Explorer auswählen und die Aktion untersuchen auswählen. |
 
 ### <a name="investigation-graph"></a>Unter Such Diagramm
 
@@ -270,7 +273,7 @@ Die Korrektur ist die letzte Phase des Textbuch. In dieser Phase werden korrektu
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Beispiel: ein Sicherheitsadministrator löst eine Untersuchung mit Threat Explorer aus.
 
-Zusätzlich zu den automatischen Untersuchungen, die durch eine Warnung ausgelöst werden, kann das Sicherheits Betriebsteam Ihrer Organisation eine automatische Untersuchung aus einer Ansicht in [Threat Explorer](use-explorer-in-security-and-compliance.md)auslösen.
+Zusätzlich zu den automatisierten Untersuchungen, die durch eine Warnung ausgelöst werden, kann das Sicherheits Betriebsteam Ihrer Organisation eine automatisierte Untersuchung aus einer Ansicht in [Threat Explorer](use-explorer-in-security-and-compliance.md)auslösen.
 
 Nehmen wir beispielsweise an, dass Sie Daten im Explorer zu vom Benutzer gemeldeten Nachrichten anzeigen. Sie können ein Element in der Ergebnisliste auswählen und dann auf über **prüfen**klicken.
 
@@ -280,7 +283,7 @@ Nehmen Sie als weiteres Beispiel an, dass Sie Daten zu e-Mail-Nachrichten anzeig
 
 ![Starten einer Untersuchung für Schadsoftware im Explorer](media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Ähnlich wie Textbuch, die durch eine Warnung ausgelöst werden, umfassen automatische Untersuchungen, die aus einer Ansicht im Explorer ausgelöst werden, eine Stamm Ermittlung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie Empfohlene Aktionen zur Minderung dieser Bedrohungen.
+Ähnlich wie Textbuch, die durch eine Warnung ausgelöst werden, umfassen automatisierte Untersuchungen, die aus einer Ansicht im Explorer ausgelöst werden, eine Stamm Ermittlung, Schritte zum Identifizieren und Korrelieren von Bedrohungen sowie Empfohlene Aktionen zur Minderung dieser Bedrohungen.
 
 ## <a name="how-to-get-air"></a>So erhalten Sie Luft
 

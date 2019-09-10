@@ -4,7 +4,7 @@ keywords: Luft, autoIR, ATP, automatisiert, Untersuchung, Antwort, Behebung, Bed
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/06/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Erste Schritte mit automatisierten Ermittlungs-und Antwortfunktionen in Office 365 Advanced Threat Protection-Plan 2.
-ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
-ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
+ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790929"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822495"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Automatisches untersuchen und reagieren auf Bedrohungen in Office 365
 
 ## <a name="overview"></a>Übersicht
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 enthält automatisierte Ermittlungs-und Antwortfunktionen (Air), mit denen Sie die Zeit und den Aufwand für Sicherheitsvorgänge im Umgang mit Warnungen und Bedrohungen speichern können. Lesen Sie diesen Artikel, um mit der Verwendung von Air-Funktionen in Office 365 zu beginnen. Weitere Informationen zur Funktionsweise von Air finden Sie unter [Automatische Untersuchung und Antwort (Air) mit Office 365](automated-investigation-response-office.md).
+[Office 365 Advanced Threat Protection](office-365-atp.md) Plan 2 enthält Funktionen für die automatische Vorfall Antwort (Air), mit denen Sie die Zeit und den Aufwand für Sicherheitsvorgänge im Umgang mit Warnungen und Bedrohungen speichern können. Lesen Sie diesen Artikel, um mit der Verwendung von Air-Funktionen in Office 365 zu beginnen. Weitere Informationen zur Funktionsweise von Air finden Sie unter [Automated Incident Response (Air) in Office 365](automated-investigation-response-office.md).
 
 Wenn bestimmte Warnungen ausgelöst werden, werden ein oder mehrere Sicherheits-Textbuch initiiert, und die automatische Untersuchung beginnt. Während und nach einem automatisierten Ermittlungsprozess können Administratoren und Sicherheitsteams folgende Aufgaben ausführen:
 
@@ -98,7 +98,7 @@ Bestimmte Arten von Warnungen lösen eine automatische Untersuchung in Office 36
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Verwenden der API für die Office 365-Verwaltungsaktivität für benutzerdefinierte oder Drittanbieter-Berichtslösungen
 
-Wenn Ihre Organisation eine benutzerdefinierte Berichtslösung oder eine Drittanbieter-Berichtslösung verwendet, können Sie Informationen zu automatisierten Untersuchungen in dieser Lösung mithilfe der API für die Office 365-Verwaltungsaktivität anzeigen.
+Wenn Ihre Organisation eine benutzerdefinierte oder Drittanbieter-Berichtslösung verwendet, können Sie Informationen zu automatisierten Untersuchungen in dieser Lösung mithilfe der API für die Office 365-Verwaltungsaktivität anzeigen.
 
 Verwenden Sie die folgenden Ressourcen, um dies einzurichten:
 
