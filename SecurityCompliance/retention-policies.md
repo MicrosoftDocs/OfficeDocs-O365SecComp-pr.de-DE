@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit einer Aufbewahrungsrichtlinie können Sie proaktiv entscheiden, ob Inhalte aufbewahrt, gelöscht oder beides, also aufbewahrt und dann gelöscht werden sollen, eine einzelne Richtlinie auf die gesamte Organisation oder nur auf bestimmte Speicherorte oder Benutzer anwenden und eine Richtlinie auf alle Inhalte oder nur auf bestimmte Bedingungen erfüllende Inhalte anwenden.
-ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: bb5c9a8c3c2443ff6913b3de1b88807d7530384e
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444895"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822505"
 ---
 # <a name="overview-of-retention-policies"></a>Übersicht über Aufbewahrungsrichtlinien
 
@@ -51,8 +51,8 @@ Schließlich müssen einige Organisationen ggf. Vorschriften einhalten, wie zum 
   
 Sie erstellen und verwalten Aufbewahrungsrichtlinien auf der:
 
-- Seite **Richtlinien** im Microsoft 365 Compliance Center.
-- Seite **Aufbewahrung** unter **Datengovernance** im Office 365 Security &amp; Compliance Center.
+- Seite **Richtlinien** im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/).
+- Seite **Aufbewahrung** unter **Datengovernance** im [Office 365 Security&amp; Compliance Center](https://protection.office.com/).
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funktionsweise einer Aufbewahrungsrichtlinie mit Inhalten
 
@@ -187,7 +187,7 @@ Eines der leistungsstärksten Features einer Aufbewahrungsrichtlinie ist, dass s
     
 - OneDrive-Konten
     
-- Office 365-Gruppen (gilt für Inhalte im Postfach, in der Website und den Dokumenten der Gruppe. Unterstützung für Inhalte in Planner, Yammer und CRM wird in Kürze verfügbar sein.)
+- Office 365-Gruppen (gilt für Inhalte in Postfach, Website, Dokumente der Gruppe)
     
 - Öffentliche Exchange-Ordner
     
@@ -198,6 +198,8 @@ Weitere wichtige Features einer organisationsweiten Aufbewahrungsrichtlinie sind
 - Es gibt keine Beschränkung für die Anzahl der Postfächer oder Websites, die in der Richtlinie enthalten sein können.
     
 - Bei Exchange erben alle neuen Postfächer, die nach der Anwendung der Richtlinie erstellt werden, die Richtlinie automatisch.
+
+
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Eine Richtlinie, die für ganze Speicherorte gilt
 
@@ -231,7 +233,7 @@ Beachten Sie, dass **Aufgezeichnete Unterhaltungen**, ein Ordner in Outlook, ein
 
 ### <a name="office-365-groups-locations"></a>Speicherorte von Office 365-Gruppen
 
-Um Inhalte für eine Office 365-Gruppe zu speichern, müssen Sie den Speicherort der Office 365-Gruppen verwenden. Obwohl eine Office 365-Gruppe über ein Exchange-Postfach verfügt, schließt eine Aufbewahrungsrichtlinie, die den gesamten Exchange-Speicherort umfasst, keine Inhalte in Office 365-Gruppenpostfächern ein. Eine Aufbewahrungsrichtlinie, die auf eine Office 365-Gruppe angewendet wird, umfasst das Postfach und die Website der Gruppe.
+Wenn Sie Inhalte für eine Office 365-Gruppe behalten möchten, müssen Sie den Speicherort der Office 365-Gruppen verwenden. Obwohl eine Office 365-Gruppe über ein Exchange-Postfach verfügt, schließt eine Aufbewahrungsrichtlinie, die den gesamten Exchange-Speicherort umfasst, keine Inhalte in Office 365-Gruppenpostfächern ein. Eine auf eine Office 365-Gruppe angewendete Aufbewahrungsrichtlinie umfasst sowohl das Gruppenpostfach als auch die Website. Eine auf eine Office 365-Gruppe angewendete Aufbewahrungsrichtlinie schützt die Ressourcen, die von einer Office 365-Gruppe erstellt wurde. Das umfasst ggf. auch Microsoft Teams.
 
 Darüber hinaus ist es nicht möglich, den Exchange-Speicherort zu verwenden, um ein bestimmtes Gruppenpostfach ein- oder auszuschließen. Obwohl der Exchange-Speicherort zunächst die Auswahl eines Gruppenpostfachs zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist. 
   
@@ -253,7 +255,7 @@ Wir arbeiten noch an der Aufbewahrung in Teams, und es werden in Zukunft weitere
     
 - **In Teams dauert das Bereinigen von aufbewahrten Inhalten bis zu 30 Tage** Eine auf Teams angewendete Aufbewahrungsrichtlinie löscht Inhalt aus allen relevanten Speicherorten. Nach der Einführung kann das Bereinigen von Inhalten anhand der Richtlinie bei Teams Clients jedoch bis zu 30 Tage dauern. Doch auch wenn Inhalte in den Teams Clients weiterhin angezeigt werden, werden diese Inhalte nach dem Ende des Aufbewahrungszeitraums nicht in der Inhaltssuche oder eDiscovery angezeigt. 
     
-In einem Team werden Dateien, die im Chat freigegeben wurden, im OneDrive-Konto des Benutzers gespeichert, der die Datei freigegeben hat. Dateien, die in Kanäle hochgeladen wurden, werden in der SharePoint-Website für das Team gespeichert. Wenn Sie Daten in einem Team aufbewahren oder löschen möchten, müssen Sie daher eine Aufbewahrungsrichtlinie erstellen, die an den SharePoint- und OneDrive-Speicherorten gilt. Wenn Sie eine Richtlinie für die Dateien von nur einem bestimmten Team anwenden möchten, können Sie die SharePoint-Website für das Team und die OneDrive-Konten der Benutzer in dem Team auswählen.
+In einem Team werden in einem Chat freigegebene Dateien im OneDrive-Konto des Benutzers gespeichert, der sie freigegeben hat. In Kanäle hochgeladene Dateien werden auf der SharePoint-Website für das Team gespeichert. Wenn Sie also Dateien in einem Team behalten oder löschen möchten, müssen Sie eine Aufbewahrungsrichtlinie erstellen, die insbesondere auf die SharePoint- und OneDrive-Speicherorte angewendet wird. Wenn Sie eine Richtlinie nur auf die Dateien eines bestimmten Teams anwenden möchten, können Sie die SharePoint-Website für das Team und die OneDrive-Konten der Benutzer im Team auswählen.
   
 Eine Aufbewahrungsrichtlinie, die für Teams gilt, kann die [Erhaltungssperre](#locking-a-retention-policy) nutzen.
   
@@ -339,6 +341,8 @@ Es gibt mehrere andere Features, die zuvor zum Aufbewahren oder Löschen von Inh
 - [Verwalten von eDiscovery-Fällen im Office 365 Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery-Sperre) 
     
 - [In-Situ-Speicher und Beweissicherungsverfahren](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery-Sperre) 
+
+- [Identifizieren des Haltebereichs für ein Exchange Online-Postfach](https://docs.microsoft.com/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox)
     
 - [Aufbewahrungstags und Aufbewahrungsrichtlinien](https://go.microsoft.com/fwlink/?linkid=846125), auch bekannt als [Messaging-Datensatzverwaltung](https://go.microsoft.com/fwlink/?linkid=846126) (Nur Löschen) 
     
@@ -364,11 +368,11 @@ In SharePoint-Websites verwenden Sie für die Aufbewahrung von Inhalten möglich
   
 ## <a name="what-happened-to-preservation-policies"></a>Was ist aus den Erhaltungsrichtlinien geworden?
 
-Wenn Sie bisher eine Erhaltungsrichtlinie verwendet haben, wurde diese Richtlinie automatisch in eine Aufbewahrungsrichtlinie umgewandelt, bei der nur die Aufbewahrungsaktion verwendet wird – mit der Richtlinie werden keine Inhalte gelöscht. Die Erhaltungsrichtlinie funktioniert weiterhin und erhält Ihre Inhalte, ohne dass Sie Änderungen vornehmen müssen. Sie finden diese Richtlinien auf der Seite **Richtlinien** im Microsoft 365 Compliance Center oder auf der Seite **Aufbewahrung** unter **Datengovernance** im Security &amp;Compliance Center. Sie können eine Erhaltungsrichtlinie bearbeiten, um den Aufbewahrungszeitraum zu ändern, jedoch keine anderen Änderungen vornehmen, z. B. keine Speicherorte hinzufügen oder entfernen. 
+Wenn Sie bisher eine Erhaltungsrichtlinie verwendet haben, wurde diese Richtlinie automatisch in eine Aufbewahrungsrichtlinie umgewandelt, bei der nur die Aufbewahrungsaktion verwendet wird – mit der Richtlinie werden keine Inhalte gelöscht. Die Erhaltungsrichtlinie funktioniert weiterhin und erhält Ihre Inhalte, ohne dass Sie Änderungen vornehmen müssen. Sie finden diese Richtlinien auf der Seite **Richtlinien** im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) oder auf der Seite **Aufbewahrung** unter **Datengovernance** im [Security&amp; Compliance Center](https://protection.office.com/). Sie können eine Erhaltungsrichtlinie bearbeiten, um den Aufbewahrungszeitraum zu ändern, jedoch keine anderen Änderungen vornehmen, z. B. keine Speicherorte hinzufügen oder entfernen. 
   
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder Ihres Compliance-Teams, die Aufbewahrungsrichtlinien erstellen sollen, benötigen Berechtigungen für das Security &amp; Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Speicherort und kann anderen Personen den Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, dass Sie zur Seite **Berechtigungen** des Security &amp; Compliance Center gehen, die Rollengruppe **Compliance-Administrator** bearbeiten und dieser Rollengruppe Mitglieder hinzufügen. 
+Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien erstellen sollen, benötigen Berechtigungen für das [Security&amp; Compliance Center](https://protection.office.com/). Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Speicherort und kann anderen Personen den Zugriff auf das [Security&amp; Compliance Center](https://protection.office.com/) gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu geben. Zu diesem Zweck wird empfohlen, dass Sie zur Seite **Berechtigungen** des [Security&amp; Compliance Centers](https://protection.office.com/) gehen, die Rollengruppe** Compliance-Administrator** bearbeiten und dieser Rollengruppe Mitglieder hinzufügen. 
   
 Weitere Informationen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security &amp; Compliance Center](grant-access-to-the-security-and-compliance-center.md).
   
@@ -385,5 +389,7 @@ Wenn Sie die Cmdlets für Aufbewahrungsrichtlinien verwenden möchten, müssen S
 ## <a name="more-information"></a>Weitere Informationen
 
 - [Übersicht über Bezeichnungen](labels.md)
+- [SharePoint Online-Beschränkungen](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limits und Spezifikationen für Microsoft Teams](https://docs.microsoft.com/de-DE/microsoftteams/limits-specifications-teams) 
     
 
