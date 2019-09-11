@@ -226,8 +226,8 @@
 ### [Funktionsweise von sicheren Anlagen in ATP](how-atp-safe-attachments-works.md)
 ### [Details zu dynamischer Bereitstellung und Vorschau](dynamic-delivery-and-previewing.md)
 ### [ATP für SharePoint, OneDrive und Microsoft Teams](atp-for-spo-odb-and-teams.md)
-### [Wie die Untersuchung von und Antwort auf Bedrohungen funktioniert](office-365-ti.md)
-### [Wie die automatische Untersuchung und Reaktion funktioniert](automated-investigation-response-office.md)
+### [So funktioniert die Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md)
+### [Funktionsweise der automatisierten Reaktion auf Sicherheitsvorfälle](automated-investigation-response-office.md)
 
 
 # Verwalten von Sicherheitsvorfällen
