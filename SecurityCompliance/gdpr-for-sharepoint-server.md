@@ -35,9 +35,7 @@ Der empfohlene grundlegende Ansatz für die von Benutzern erstellten Inhalte auf
 
 Die empfohlene Vorgehensweise für  Dateifreigaben, Websites und Bibliotheken von SharePoint und umfasst die folgenden Schritte:
 
-1.  
-  **
-  [Installieren und konfigurieren Sie den Azure Information Protection-Scanner.](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Installieren und konfigurieren Sie den Azure Information Protection-Scanner.](https://docs.microsoft.com/de-DE/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Entscheiden Sie, welche vertraulichen Datentypen Sie verwenden möchten.
 
