@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: In diesem Thema wird gezeigt, was eine DLP-Richtlinie (Data Loss Prevention) sucht, wenn der vertrauliche Informationstyp "EU-nationale Identifikationsnummer" erkannt wird. Dieser Typ vertraulicher Informationen definiert unterschiedliche Muster, Stichwörter und andere Beweise für jedes Land.
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
+ms.openlocfilehash: b784b7509eed899f9f03db96ee5e827b9bf70d2e
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36490772"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852747"
 ---
 # <a name="eu-national-identification-number"></a>EU-nationale Identifikationsnummer
 
@@ -1096,13 +1096,13 @@ EMŠO
 
 ### <a name="format"></a>Format
 
-Sieben Ziffern, gefolgt von einem Zeichen
+Acht Ziffern, gefolgt von einem Zeichen
   
 ### <a name="pattern"></a>Muster
 
-Sieben Ziffern, gefolgt von einem Zeichen
+Acht Ziffern, gefolgt von einem Zeichen
   
-- Sieben Ziffern 
+- Acht Ziffern
     
 - Eine Ziffer oder ein Buchstabe (ohne Berücksichtigung der Groß-/Kleinschreibung)
     
