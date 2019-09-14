@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Wir fügen dem Microsoft 365 Compliance Center ständig neue Features hinzu, um Probleme zu beheben, die wir kennen, und um Änderungen basierend auf Ihrem Feedback vorzunehmen. Finden Sie heraus, was wir bis zu diesem Monat gemacht haben.
-ms.openlocfilehash: 06c1292138ef7ca4c8421c169555454686ef8858
-ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
+ms.openlocfilehash: b3adf13fe662640c2dbc21eea6a48e2629a1113c
+ms.sourcegitcommit: 9fd606e8d912f4507fbcd9f1fcb9dfcfd20de08b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393334"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980431"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Neuerungen im Microsoft 365 Compliance Center
 
@@ -29,6 +29,12 @@ Wir fügen dem [Microsoft 365 Compliance Center](microsoft-365-compliance-center
 
 > [!TIP]
 > Möchten Sie wissen, was in anderen Admin Center passiert? Lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Neuerungen im SharePoint Admin Center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## <a name="august-2019"></a>August 2019
+
+### <a name="data-investigations"></a>Daten Untersuchungen
+
+Wenn Sie eine Daten Untersuchung durchführen, können Sie jetzt Elemente aus ihren ursprünglichen Speicherorten löschen. Dies bedeutet, dass Sie Elemente aus Exchange-Postfächern, SharePoint-Websites und OneDrive-Konten in Ihrer Organisation löschen können. Da Sie die Elemente als Beweismaterial gesammelt haben, werden Sie in den Beweis Sätzen Kopien davon erhalten, die Sie weiter untersuchen oder lediglich als Referenz beibehalten können. [Weitere Informationen](datainvestigations/delete-items-from-original-locations.md)
 
 ## <a name="july-2019"></a>Juli 2019
 
