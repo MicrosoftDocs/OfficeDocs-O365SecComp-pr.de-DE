@@ -2,6 +2,7 @@
 
 # Erste Schritte
 ## [Neuerungen im Compliance Center](whats-new.md)
+## [Neueste Aktualisierungen für Compliance-Inhalte](new-updated-compliance-content.md)
 ## [Inhaltsübersicht für die Sicherheit von Office 365](security-roadmap.md)
 ## [Konfigurieren Ihres Office 365-Mandanten für höhere Sicherheit](tenant-wide-setup-for-increased-security.md)
 ## [Das neue Microsoft 365 Security Center und das Microsoft 365 Compliance Center](microsoft-security-and-compliance.md)
